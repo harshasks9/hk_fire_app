@@ -1,0 +1,229 @@
+@import '@fontsource-variable/inter';
+@import '@fontsource-variable/fraunces';
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ---------------------------------------------------------------------------
+   Meridian design tokens
+   Light: warm paper + deep pine ink + brass accent.
+   Dark: deep evergreen ink surfaces.
+--------------------------------------------------------------------------- */
+:root {
+  --m-bg: #f4f3ee;
+  --m-bg2: #eceae2;
+  --m-surface: #fdfcfa;
+  --m-surface2: #f5f3ec;
+  --m-line: #e3e0d5;
+  --m-line2: #d3cfc0;
+  --m-ink: #1c2925;
+  --m-ink2: #55645e;
+  --m-ink3: #8b968f;
+  --m-brand: #17564a;
+  --m-brand2: #0e3f36;
+  --m-brand-soft: #e2ece7;
+  --m-brass: #9a7b3f;
+  --m-brass-soft: #f1e8d4;
+  --m-gain: #177a58;
+  --m-gain-soft: #e0efe6;
+  --m-loss: #b0492c;
+  --m-loss-soft: #f6e5dd;
+  --m-warn: #96690f;
+  --m-warn-soft: #f4ecd4;
+  --m-info: #2f6480;
+  --m-info-soft: #e1ecf1;
+  --m-violet: #6b5a8e;
+  --m-violet-soft: #eae5f2;
+  --m-invert: #fdfcfa;
+  --m-shadow: 0 1px 2px rgb(28 41 37 / 0.04), 0 4px 16px rgb(28 41 37 / 0.05);
+  --m-shadow-lg: 0 4px 8px rgb(28 41 37 / 0.05), 0 16px 40px rgb(28 41 37 / 0.12);
+  --m-chart-1: #17564a;
+  --m-chart-2: #9a7b3f;
+  --m-chart-3: #2f6480;
+  --m-chart-4: #b0492c;
+  --m-chart-5: #6b5a8e;
+  --m-chart-6: #5f7d46;
+  --m-chart-7: #8a5d74;
+  --m-chart-8: #4b6a66;
+}
+
+.dark {
+  --m-bg: #0c1411;
+  --m-bg2: #0a110f;
+  --m-surface: #131f1b;
+  --m-surface2: #182722;
+  --m-line: #24352f;
+  --m-line2: #31463f;
+  --m-ink: #e7ece8;
+  --m-ink2: #9fada6;
+  --m-ink3: #6b7a73;
+  --m-brand: #4fa08c;
+  --m-brand2: #6ab5a2;
+  --m-brand-soft: #16322b;
+  --m-brass: #c8a563;
+  --m-brass-soft: #2e2717;
+  --m-gain: #46a37f;
+  --m-gain-soft: #142e24;
+  --m-loss: #d4715a;
+  --m-loss-soft: #331d15;
+  --m-warn: #cfa245;
+  --m-warn-soft: #2f2712;
+  --m-info: #64a3c2;
+  --m-info-soft: #14272f;
+  --m-violet: #a191c4;
+  --m-violet-soft: #251f31;
+  --m-invert: #0c1411;
+  --m-shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 4px 16px rgb(0 0 0 / 0.25);
+  --m-shadow-lg: 0 4px 8px rgb(0 0 0 / 0.35), 0 16px 40px rgb(0 0 0 / 0.45);
+  --m-chart-1: #4fa08c;
+  --m-chart-2: #c8a563;
+  --m-chart-3: #64a3c2;
+  --m-chart-4: #d4715a;
+  --m-chart-5: #a191c4;
+  --m-chart-6: #8fae6d;
+  --m-chart-7: #bd85a3;
+  --m-chart-8: #7d9a95;
+}
+
+@theme inline {
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Fraunces Variable', ui-serif, Georgia, serif;
+
+  --color-bg: var(--m-bg);
+  --color-bg2: var(--m-bg2);
+  --color-surface: var(--m-surface);
+  --color-surface2: var(--m-surface2);
+  --color-line: var(--m-line);
+  --color-line2: var(--m-line2);
+  --color-ink: var(--m-ink);
+  --color-ink2: var(--m-ink2);
+  --color-ink3: var(--m-ink3);
+  --color-brand: var(--m-brand);
+  --color-brand2: var(--m-brand2);
+  --color-brand-soft: var(--m-brand-soft);
+  --color-brass: var(--m-brass);
+  --color-brass-soft: var(--m-brass-soft);
+  --color-gain: var(--m-gain);
+  --color-gain-soft: var(--m-gain-soft);
+  --color-loss: var(--m-loss);
+  --color-loss-soft: var(--m-loss-soft);
+  --color-warn: var(--m-warn);
+  --color-warn-soft: var(--m-warn-soft);
+  --color-info: var(--m-info);
+  --color-info-soft: var(--m-info-soft);
+  --color-violet: var(--m-violet);
+  --color-violet-soft: var(--m-violet-soft);
+  --color-invert: var(--m-invert);
+  --color-chart-1: var(--m-chart-1);
+  --color-chart-2: var(--m-chart-2);
+  --color-chart-3: var(--m-chart-3);
+  --color-chart-4: var(--m-chart-4);
+  --color-chart-5: var(--m-chart-5);
+  --color-chart-6: var(--m-chart-6);
+  --color-chart-7: var(--m-chart-7);
+  --color-chart-8: var(--m-chart-8);
+
+  --shadow-card: var(--m-shadow);
+  --shadow-pop: var(--m-shadow-lg);
+
+  --radius-card: 1rem;
+  --radius-ctl: 0.625rem;
+}
+
+/* Base ------------------------------------------------------------------- */
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  @apply bg-bg text-ink font-sans antialiased;
+  font-feature-settings: 'cv11', 'ss01';
+}
+
+.tnum {
+  font-variant-numeric: tabular-nums lining-nums;
+}
+
+.font-display {
+  font-variation-settings: 'SOFT' 40, 'WONK' 0;
+}
+
+/* Focus rings */
+:focus-visible {
+  outline: 2px solid var(--m-brand);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Thin scrollbars for internal panes */
+.scroll-thin {
+  scrollbar-width: thin;
+  scrollbar-color: var(--m-line2) transparent;
+}
+.scroll-thin::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.scroll-thin::-webkit-scrollbar-thumb {
+  background: var(--m-line2);
+  border-radius: 3px;
+}
+
+/* Reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Skeleton shimmer */
+@keyframes m-shimmer {
+  0% {
+    background-position: -400px 0;
+  }
+  100% {
+    background-position: 400px 0;
+  }
+}
+.skeleton {
+  @apply rounded-md;
+  background: linear-gradient(
+    90deg,
+    var(--m-surface2) 25%,
+    var(--m-line) 50%,
+    var(--m-surface2) 75%
+  );
+  background-size: 800px 100%;
+  animation: m-shimmer 1.4s linear infinite;
+}
+
+@keyframes m-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-up {
+  animation: m-fade-up 0.35s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes m-draw {
+  from {
+    stroke-dashoffset: var(--draw-len, 1200);
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Safe-area padding for mobile bottom nav */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0);
+}
