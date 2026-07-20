@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useApp } from '@/state/AppContext'
 import { Button } from '@/components/ui'
@@ -12,7 +12,10 @@ export default function SignIn() {
   const navigate = useNavigate()
   const [step, setStep] = useState<Step>('credentials')
   const [email, setEmail] = useState('harshasks@gmail.com')
-  const [password, setPassword] = useState('')
+  // Password is read from the DOM at submit time: browser/password-manager
+  // autofill paints a value without firing React onChange, so state alone
+  // would wrongly report the field as empty.
+  const passwordRef = useRef<HTMLInputElement>(null)
   const [code, setCode] = useState(['', '', '', '', '', ''])
   const [error, setError] = useState('')
   const [busy, setBusy] = useState(false)
@@ -27,7 +30,7 @@ export default function SignIn() {
 
   const submitCreds = (e: React.FormEvent) => {
     e.preventDefault()
-    if (!password) {
+    if (!passwordRef.current?.value) {
       setError('Enter your password — or use a passkey below.')
       return
     }
@@ -100,7 +103,7 @@ export default function SignIn() {
               </label>
               <label className="mt-3.5 block">
                 <span className="mb-1.5 block text-[12px] font-medium text-ink2">Password</span>
-                <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} autoComplete="current-password" placeholder="••••••••••••"
+                <input ref={passwordRef} type="password" onChange={() => setError('')} autoComplete="current-password" placeholder="••••••••••••"
                   className="h-11 w-full rounded-ctl border border-line bg-surface px-3.5 text-[14px] text-ink outline-none focus:border-brand" />
               </label>
               {error && <p role="alert" className="mt-2 text-[12px] text-loss">{error}</p>}
