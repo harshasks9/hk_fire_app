@@ -11,6 +11,7 @@ import { OPTION_STRATEGIES, STRATEGY_LABELS } from '@/data/options'
 import { convert } from '@/data/fx'
 import { fmtMoney, fmtNum, fmtPct, fmtDate, daysAgo } from '@/lib/format'
 import { Card, SectionHead, Badge, Delta, Button, ProvenanceChip, EmptyState, KV } from '@/components/ui'
+import { activeProvider } from '@/research/providers'
 import { AreaChart, RangeBar } from '@/components/charts'
 import { SuggestionCard } from '@/components/finance'
 import { Icon } from '@/components/icons'
@@ -81,6 +82,11 @@ export default function PositionDetail() {
             <Delta pct={dc} /> <span className="text-ink3">today</span>
             <Delta value={unrealized} currency={c} pct={cost > 0 ? (unrealized / cost) * 100 : 0} arrow={false} /> <span className="text-ink3">total</span>
           </div>
+          {activeProvider.getDossier(symbol!) && (
+            <Link to={`/research/${symbol}`} className="mt-1.5 inline-flex items-center gap-1 text-[12px] font-medium text-brand hover:underline">
+              <Icon name="book" size={12} /> Research dossier →
+            </Link>
+          )}
         </div>
       </div>
 

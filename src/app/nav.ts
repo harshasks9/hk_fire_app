@@ -33,6 +33,7 @@ export const PRO_NAV: NavGroup[] = [
     label: 'Invest',
     items: [
       { to: '/portfolio', label: 'Portfolio', icon: 'pie' },
+      { to: '/research', label: 'Research Lab', icon: 'book' },
       { to: '/income', label: 'Income', icon: 'coins' },
       { to: '/options', label: 'Options', icon: 'layers' },
       { to: '/watchlist', label: 'Watchlists', icon: 'eye' },
@@ -96,4 +97,5 @@ export const PAGE_TITLES: Record<string, { simple: string; pro: string }> = {
   '/reports': { simple: 'Reports', pro: 'Reports' },
   '/inbox': { simple: 'Needs Review', pro: 'Financial Inbox' },
   '/timeline': { simple: 'Your Financial Story', pro: 'Financial Memory' },
+  '/research': { simple: 'Research Lab', pro: 'Research Lab' },
 }

@@ -24,6 +24,9 @@ import ReportsPage from './pages/ReportsPage'
 import InboxPage from './pages/InboxPage'
 import TimelinePage from './pages/TimelinePage'
 import SettingsPage from './pages/SettingsPage'
+import ResearchLabPage from './pages/research/ResearchLabPage'
+import ResearchDossierPage from './pages/research/ResearchDossierPage'
+import ResearchComparePage from './pages/research/ResearchComparePage'
 
 export default function App() {
   const app = useApp()
@@ -72,6 +75,9 @@ export default function App() {
         <Route path="/inbox" element={<InboxPage />} />
         <Route path="/timeline" element={<TimelinePage />} />
         <Route path="/settings" element={<SettingsPage />} />
+        <Route path="/research" element={<ResearchLabPage />} />
+        <Route path="/research/compare" element={<ResearchComparePage />} />
+        <Route path="/research/:symbol" element={<ResearchDossierPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
     </Routes>
