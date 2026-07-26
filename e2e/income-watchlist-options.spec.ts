@@ -55,6 +55,23 @@ test.describe('Options', () => {
     await expect(page.getByText('Assignment likely')).toBeVisible()
   })
 
+  test('imported Moomoo trade log renders with statement figures and honest gaps', async ({ page }) => {
+    await boot(page, { mode: 'pro' })
+    await go(page, '/options')
+    await expect(page.getByText(/Your imported trades — Moomoo SG/)).toBeVisible()
+    // broker-verbatim numbers
+    await expect(page.getByText('$3,000.20')).toBeVisible() // net premium
+    await expect(page.getByText('5 of 6')).toBeVisible() // expired worthless
+    await expect(page.getByRole('cell', { name: /NVDA \$205 PUT/ })).toBeVisible()
+    // honest unknowns
+    await page.getByRole('button', { name: /data gaps/ }).click()
+    await expect(page.getByText(/Jul 2026 statement not uploaded/)).toBeVisible()
+    // real vs demo separation is explicit
+    await expect(page.getByText('Demo dataset below')).toBeVisible()
+    // LEAPS holdings with unknown basis
+    await expect(page.getByText(/\+10× OWL \$10 CALL/)).toBeVisible()
+  })
+
   test('Pro exposes legs, greeks, breakeven and the payoff diagram', async ({ page }) => {
     await boot(page, { mode: 'pro' })
     await go(page, '/options')
