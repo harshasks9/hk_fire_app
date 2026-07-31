@@ -19,6 +19,7 @@ export const SIMPLE_NAV: NavGroup[] = [
       { to: '/portfolio', label: 'Portfolio', icon: 'pie' },
       { to: '/income', label: 'Income', icon: 'coins' },
       { to: '/watchlist', label: 'Watchlist', icon: 'eye' },
+      { to: '/research/forensic', label: 'Forensic Memos', icon: 'peak' },
       { to: '/documents', label: 'Documents', icon: 'file' },
       { to: '/plan', label: 'Plan', icon: 'target' },
     ],
@@ -34,6 +35,7 @@ export const PRO_NAV: NavGroup[] = [
     items: [
       { to: '/portfolio', label: 'Portfolio', icon: 'pie' },
       { to: '/research', label: 'Research Lab', icon: 'book' },
+      { to: '/research/forensic', label: 'Forensic Memos', icon: 'peak' },
       { to: '/income', label: 'Income', icon: 'coins' },
       { to: '/options', label: 'Options', icon: 'layers' },
       { to: '/watchlist', label: 'Watchlists', icon: 'eye' },
@@ -98,4 +100,5 @@ export const PAGE_TITLES: Record<string, { simple: string; pro: string }> = {
   '/inbox': { simple: 'Needs Review', pro: 'Financial Inbox' },
   '/timeline': { simple: 'Your Financial Story', pro: 'Financial Memory' },
   '/research': { simple: 'Research Lab', pro: 'Research Lab' },
+  '/research/forensic': { simple: 'Forensic Memos', pro: 'Forensic Memos' },
 }

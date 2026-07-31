@@ -4,6 +4,7 @@ import { useApp } from '@/state/AppContext'
 import { coverageUniverse, seriesFor, loadWeights } from '@/research/providers'
 import { categoryScores, overallScore, dcfValue, classifyTrend, DEFAULT_WEIGHTS } from '@/research/engine'
 import { FRAMEWORKS } from '@/research/frameworks'
+import { FORENSIC_MEMOS } from '@/research/forensic'
 import { fmtDate, relDate } from '@/lib/format'
 import { Card, SectionHead, Badge, Button, EmptyState } from '@/components/ui'
 import { Icon } from '@/components/icons'
@@ -59,6 +60,40 @@ export default function ResearchLabPage() {
             model inference). No live data is being fetched. Connecting a licensed provider (see{' '}
             <span className="font-medium">docs/RESEARCH-LAB.md</span>) replaces this dataset without changing any analytics.
           </p>
+        </div>
+      </Card>
+
+      {/* Forensic memoranda — separately researched, separately sourced */}
+      <Card pad className="border-brand/30 bg-brand-soft/20">
+        <div className="flex flex-wrap items-start justify-between gap-4">
+          <div className="flex min-w-0 items-start gap-3">
+            <Icon name="peak" size={18} className="mt-0.5 shrink-0 text-brand" />
+            <div className="min-w-0">
+              <h2 className="text-[14.5px] font-semibold tracking-tight text-ink">
+                Forensic memoranda — alternative asset managers
+              </h2>
+              <p className="mt-1 max-w-2xl text-[12.5px] leading-relaxed text-ink2">
+                Adversarial investment-committee memoranda on <b className="text-ink">Blue Owl (NYSE: OWL)</b> and{' '}
+                <b className="text-ink">Patria (NASDAQ: PAX)</b>, each covering the latest reported quarter. Separate
+                from the sample-data research above: every figure is sourced to a company release or derived from one,
+                and tagged with a confidence tier.
+              </p>
+              <div className="mt-2.5 flex flex-wrap gap-1.5">
+                {FORENSIC_MEMOS.map((m) => (
+                  <Link key={m.symbol} to={`/research/forensic/${m.symbol.toLowerCase()}`}>
+                    <Badge tone="brand">
+                      {m.symbol} — {m.rating}
+                    </Badge>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+          <Link to="/research/forensic" className="shrink-0">
+            <Button variant="primary" size="sm" icon="chevronRight">
+              Open memoranda
+            </Button>
+          </Link>
         </div>
       </Card>
 

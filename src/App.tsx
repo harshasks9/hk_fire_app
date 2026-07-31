@@ -27,6 +27,8 @@ import SettingsPage from './pages/SettingsPage'
 import ResearchLabPage from './pages/research/ResearchLabPage'
 import ResearchDossierPage from './pages/research/ResearchDossierPage'
 import ResearchComparePage from './pages/research/ResearchComparePage'
+import ForensicIndexPage from './pages/research/ForensicIndexPage'
+import ForensicMemoPage from './pages/research/ForensicMemoPage'
 
 export default function App() {
   const app = useApp()
@@ -77,6 +79,8 @@ export default function App() {
         <Route path="/settings" element={<SettingsPage />} />
         <Route path="/research" element={<ResearchLabPage />} />
         <Route path="/research/compare" element={<ResearchComparePage />} />
+        <Route path="/research/forensic" element={<ForensicIndexPage />} />
+        <Route path="/research/forensic/:symbol" element={<ForensicMemoPage />} />
         <Route path="/research/:symbol" element={<ResearchDossierPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
