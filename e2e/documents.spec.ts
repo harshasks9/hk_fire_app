@@ -27,9 +27,10 @@ test.describe('Document intelligence', () => {
     await expect(page.getByText('O — cost basis (Oct 2023 lot)')).toBeVisible()
     await page.getByRole('button', { name: 'Keep existing' }).click()
     await expect(page.getByText('Kept existing')).toBeVisible()
-    // Approve the update
+    // The approval step is explicit that the demo walkthrough changes nothing
+    await expect(page.getByText('This demo walkthrough changes nothing')).toBeVisible()
     await page.getByRole('button', { name: 'Approve update' }).click()
-    await expect(page.getByText('Update applied')).toBeVisible()
+    await expect(page.getByText('Walkthrough complete')).toBeVisible()
     // Audit trail reflects the human decision
     await expect(page.getByText(/Approved update with 1 field decision/)).toBeVisible()
   })
@@ -51,7 +52,7 @@ test.describe('Financial inbox', () => {
     await expect(page.getByText('Conflicting cash balance — Fidelity •••7842')).toBeVisible()
     // high-severity issues arrive pre-expanded with their explanation
     await expect(page.getByText(/un-settled SCHD purchase/)).toBeVisible()
-    await page.getByRole('button', { name: 'Accept proposed' }).first().click()
+    await page.getByRole('button', { name: 'Mark resolved' }).first().click()
     await expect(page.getByText('Recently resolved')).toBeVisible()
   })
 

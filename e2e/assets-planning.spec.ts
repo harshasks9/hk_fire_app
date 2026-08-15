@@ -19,7 +19,8 @@ test.describe('Real estate & private investments', () => {
     await boot(page, { mode: 'pro' })
     await go(page, '/real-estate/prop-blr')
     await expect(page.getByText(/broker estimate from January 15, 2024/)).toBeVisible()
-    await expect(page.getByRole('button', { name: 'Request fresh valuation' })).toBeVisible()
+    // No dead "request valuation" button — the honest path is stated instead
+    await expect(page.getByText(/refresh it by adding a newer valuation record/)).toBeVisible()
   })
 
   test('syndication shows capital account, waterfall and NAV honesty note', async ({ page }) => {

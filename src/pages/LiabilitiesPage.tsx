@@ -36,7 +36,7 @@ export default function LiabilitiesPage() {
         <StatCard label="Total debt" value={fmtMoney(totals.balance, c, { compact: true })} sub={`${LIABILITIES.length} loans across 2 countries`} icon="scale" />
         <StatCard label="Monthly payments" value={fmtMoney(totals.monthlyPayment, c, { compact: true })} sub="P&I + interest-only PAL" icon="calendar" />
         <StatCard label="Blended rate" value={fmtPct(totals.weightedRate)} sub="92% fixed · 8% floating (PAL)" icon="receipt" />
-        <StatCard label="24-month trend" value={`−${fmtMoney(fmtTrendDelta(trend, c), c, { compact: true })}`} sub="Principal reduced — debt shrinking steadily" icon="trendUp" tone="gain" />
+        <StatCard label="24-month trend" value={`−${fmtMoney(fmtTrendDelta(trend, c), c, { compact: true })}`} sub="Illustrative sample series, not amortization history" icon="trendUp" tone="gain" />
       </div>
 
       <Card pad>

@@ -111,11 +111,10 @@ export default function SimpleHome() {
           {/* Plain-language change explanation */}
           <div className="mt-3 rounded-xl bg-surface2/70 p-3.5 text-[12.5px] leading-relaxed text-ink2">
             <span className="font-semibold text-ink">Why it changed: </span>
-            June added {fmtMoney(convert(38_200, 'USD', c), c, { compact: true })} — most of it ({fmtMoney(convert(31_900, 'USD', c), c, { compact: true })}) from
-            market gains in your US tech holdings, plus {fmtMoney(convert(4_800, 'USD', c), c, { compact: true })} of 401(k) and SIP contributions and{' '}
-            {fmtMoney(convert(1_500, 'USD', c), c, { compact: true })} of mortgage principal paid down. A slightly weaker rupee trimmed{' '}
-            {fmtMoney(convert(600, 'USD', c), c)} from India assets.
-            <Link to="/timeline" className="ml-1 font-medium text-brand hover:underline">See the full story →</Link>
+            the past month moved {fmtMoney(snap.monthChange, c, { compact: true })} — the same figure as the chart above, taken
+            from its last 30 points. A true source-by-source attribution (market vs contributions vs FX) needs
+            transaction-level records, which this sample household illustrates rather than computes.
+            <Link to="/timeline" className="ml-1 font-medium text-brand hover:underline">See the story →</Link>
           </div>
         </Card>
 
@@ -242,7 +241,7 @@ export default function SimpleHome() {
 
       {/* ---- Watchlist strip ---- */}
       <Card pad>
-        <SectionHead title="Watchlist" sub="Prices are 15-min delayed market data" right={<Link to="/watchlist" className="text-[12px] font-medium text-brand hover:underline">Manage →</Link>} />
+        <SectionHead title="Watchlist" sub="Sample prices and series — no market-data feed is connected" right={<Link to="/watchlist" className="text-[12px] font-medium text-brand hover:underline">Manage →</Link>} />
         <div className="scroll-thin -mx-1 flex gap-3 overflow-x-auto px-1 pb-1">
           {WATCHLIST.filter((w) => !app.removedWatch.includes(w.id)).map((w) => {
             const inst = anyInstrument(w.symbol)

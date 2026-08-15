@@ -12,6 +12,70 @@ export interface NavGroup {
   items: NavItem[]
 }
 
+/* --------------------------- personal (real data) --------------------------
+   Personal mode only shows surfaces that read the user's own records or the
+   verbatim imported broker datasets. Sample-household pages live in demo. */
+
+export const PERSONAL_SIMPLE_NAV: NavGroup[] = [
+  {
+    items: [
+      { to: '/', label: 'Home', icon: 'home' },
+      { to: '/balances', label: 'Net Worth', icon: 'pie' },
+      { to: '/income', label: 'Income', icon: 'coins' },
+      { to: '/watchlist', label: 'Watchlist', icon: 'eye' },
+      { to: '/documents', label: 'Import', icon: 'upload' },
+      { to: '/plan', label: 'Goals', icon: 'target' },
+    ],
+  },
+]
+
+export const PERSONAL_PRO_NAV: NavGroup[] = [
+  {
+    items: [{ to: '/', label: 'Overview', icon: 'grid' }],
+  },
+  {
+    label: 'Wealth',
+    items: [
+      { to: '/balances', label: 'Net Worth', icon: 'pie' },
+      { to: '/income', label: 'Income', icon: 'coins' },
+      { to: '/plan', label: 'Goals', icon: 'target' },
+      { to: '/scenarios', label: 'Projections', icon: 'compass' },
+    ],
+  },
+  {
+    label: 'Trading',
+    items: [
+      { to: '/trading-review', label: 'Trading Review', icon: 'trendUp' },
+      { to: '/options', label: 'Options', icon: 'layers' },
+      { to: '/research', label: 'Research Lab', icon: 'book' },
+      { to: '/watchlist', label: 'Watchlist', icon: 'eye' },
+    ],
+  },
+  {
+    label: 'Data',
+    items: [
+      { to: '/ledger', label: 'Ledger', icon: 'receipt' },
+      { to: '/documents', label: 'Import', icon: 'upload' },
+      { to: '/reports', label: 'Reports & Backup', icon: 'reportChart' },
+      { to: '/timeline', label: 'Activity', icon: 'clock' },
+    ],
+  },
+]
+
+export const PERSONAL_MOBILE_SIMPLE: NavItem[] = [
+  { to: '/', label: 'Home', icon: 'home' },
+  { to: '/balances', label: 'Net Worth', icon: 'pie' },
+  { to: '/income', label: 'Income', icon: 'coins' },
+]
+
+export const PERSONAL_MOBILE_PRO: NavItem[] = [
+  { to: '/', label: 'Overview', icon: 'grid' },
+  { to: '/balances', label: 'Net Worth', icon: 'pie' },
+  { to: '/ledger', label: 'Ledger', icon: 'receipt' },
+]
+
+/* ------------------------------ demo household ----------------------------- */
+
 export const SIMPLE_NAV: NavGroup[] = [
   {
     items: [
@@ -100,4 +164,13 @@ export const PAGE_TITLES: Record<string, { simple: string; pro: string }> = {
   '/inbox': { simple: 'Needs Review', pro: 'Financial Inbox' },
   '/timeline': { simple: 'Your Financial Story', pro: 'Financial Memory' },
   '/research': { simple: 'Research Lab', pro: 'Research Lab' },
+  '/balances': { simple: 'Net Worth', pro: 'Net Worth & Accounts' },
+  '/ledger': { simple: 'Ledger', pro: 'Transaction Ledger' },
+  '/settings': { simple: 'Settings', pro: 'Settings' },
 }
+
+/** Routes that only exist for the demo household — blocked in personal mode. */
+export const DEMO_ONLY_ROUTES = [
+  '/portfolio', '/position', '/real-estate', '/private', '/liabilities',
+  '/insurance', '/tax', '/inbox',
+]

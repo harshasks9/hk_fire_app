@@ -28,10 +28,21 @@ import TradingReviewPage from './pages/TradingReviewPage'
 import ResearchLabPage from './pages/research/ResearchLabPage'
 import ResearchDossierPage from './pages/research/ResearchDossierPage'
 import ResearchComparePage from './pages/research/ResearchComparePage'
+import BalancesPage from './pages/BalancesPage'
+import LedgerPage from './pages/LedgerPage'
+import ImportCenter from './pages/ImportCenter'
+import PersonalIncome from './pages/PersonalIncome'
+import PersonalWatchlist from './pages/PersonalWatchlist'
+import PersonalPlan from './pages/PersonalPlan'
+import PersonalReports from './pages/PersonalReports'
+import PersonalScenarios from './pages/PersonalScenarios'
+import PersonalTimeline from './pages/PersonalTimeline'
 
 export default function App() {
   const app = useApp()
   const location = useLocation()
+  const personal = app.dataMode === 'personal'
+  const demoOnly = (el: React.ReactElement) => (personal ? <Navigate to="/" replace /> : el)
 
   if (!app.authenticated && location.pathname !== '/auth') {
     return (
@@ -57,29 +68,35 @@ export default function App() {
       <Route path="/onboarding" element={<Onboarding />} />
       <Route element={<AppShell />}>
         <Route path="/" element={<HomePage />} />
-        <Route path="/portfolio" element={<PortfolioPage />} />
-        <Route path="/position/:symbol" element={<PositionDetail />} />
-        <Route path="/income" element={<IncomePage />} />
-        <Route path="/watchlist" element={<WatchlistPage />} />
-        <Route path="/documents" element={<DocumentsPage />} />
-        <Route path="/documents/review/:docId" element={<DocumentReview />} />
-        <Route path="/plan" element={<PlanPage />} />
+        {/* Personal-mode surfaces (canonical store) */}
+        <Route path="/balances" element={personal ? <BalancesPage /> : <Navigate to="/portfolio" replace />} />
+        <Route path="/ledger" element={personal ? <LedgerPage /> : <Navigate to="/" replace />} />
+        {/* Shared routes with mode-specific implementations */}
+        <Route path="/income" element={personal ? <PersonalIncome /> : <IncomePage />} />
+        <Route path="/watchlist" element={personal ? <PersonalWatchlist /> : <WatchlistPage />} />
+        <Route path="/documents" element={personal ? <ImportCenter /> : <DocumentsPage />} />
+        <Route path="/plan" element={personal ? <PersonalPlan /> : <PlanPage />} />
+        <Route path="/scenarios" element={personal ? <PersonalScenarios /> : <ScenariosPage />} />
+        <Route path="/reports" element={personal ? <PersonalReports /> : <ReportsPage />} />
+        <Route path="/timeline" element={personal ? <PersonalTimeline /> : <TimelinePage />} />
+        {/* Always-real surfaces */}
         <Route path="/options" element={<OptionsPage />} />
         <Route path="/trading-review" element={<TradingReviewPage />} />
-        <Route path="/real-estate" element={<RealEstatePage />} />
-        <Route path="/real-estate/:id" element={<PropertyDetail />} />
-        <Route path="/private" element={<PrivatePage />} />
-        <Route path="/liabilities" element={<LiabilitiesPage />} />
-        <Route path="/insurance" element={<InsurancePage />} />
-        <Route path="/tax" element={<TaxPage />} />
-        <Route path="/scenarios" element={<ScenariosPage />} />
-        <Route path="/reports" element={<ReportsPage />} />
-        <Route path="/inbox" element={<InboxPage />} />
-        <Route path="/timeline" element={<TimelinePage />} />
-        <Route path="/settings" element={<SettingsPage />} />
         <Route path="/research" element={<ResearchLabPage />} />
         <Route path="/research/compare" element={<ResearchComparePage />} />
         <Route path="/research/:symbol" element={<ResearchDossierPage />} />
+        <Route path="/settings" element={<SettingsPage />} />
+        {/* Demo-household-only routes — blocked in personal mode */}
+        <Route path="/portfolio" element={demoOnly(<PortfolioPage />)} />
+        <Route path="/position/:symbol" element={demoOnly(<PositionDetail />)} />
+        <Route path="/documents/review/:docId" element={demoOnly(<DocumentReview />)} />
+        <Route path="/real-estate" element={demoOnly(<RealEstatePage />)} />
+        <Route path="/real-estate/:id" element={demoOnly(<PropertyDetail />)} />
+        <Route path="/private" element={demoOnly(<PrivatePage />)} />
+        <Route path="/liabilities" element={demoOnly(<LiabilitiesPage />)} />
+        <Route path="/insurance" element={demoOnly(<InsurancePage />)} />
+        <Route path="/tax" element={demoOnly(<TaxPage />)} />
+        <Route path="/inbox" element={demoOnly(<InboxPage />)} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
     </Routes>

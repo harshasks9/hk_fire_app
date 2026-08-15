@@ -74,19 +74,23 @@ test.describe('Settings & theming', () => {
     await expect(page.locator('html')).not.toHaveClass(/dark/)
   })
 
-  test('security posture is explicit: MFA, passkey, sessions, encryption', async ({ page }) => {
+  test('privacy section states plain facts and offers no fake security', async ({ page }) => {
     await boot(page)
     await go(page, '/settings')
-    await expect(page.getByText('Two-factor authentication')).toBeVisible()
-    await expect(page.getByText('Passkey', { exact: true })).toBeVisible()
-    await expect(page.getByText('Active sessions')).toBeVisible()
+    await expect(page.getByText('Your data & privacy')).toBeVisible()
+    await expect(page.getByText(/stored in this browser only/)).toBeVisible()
+    await expect(page.getByText(/convenience gate for this device, not account security/)).toBeVisible()
+    // The old theater is gone
+    await expect(page.getByText('Two-factor authentication')).toHaveCount(0)
+    await expect(page.getByText('Active sessions')).toHaveCount(0)
+    await expect(page.getByText('Data encryption')).toHaveCount(0)
   })
 
-  test('sign out returns to the auth wall', async ({ page }) => {
+  test('lock app returns to the device-lock screen', async ({ page }) => {
     await boot(page)
     await go(page, '/settings')
-    await page.getByRole('button', { name: 'Sign out' }).click()
+    await page.getByRole('button', { name: 'Lock app' }).click()
     await expect(page).toHaveURL(/#\/auth/)
-    await expect(page.getByRole('heading', { name: 'Welcome back' })).toBeVisible()
+    await expect(page.getByText('Device lock only — data stays in this browser')).toBeVisible()
   })
 })

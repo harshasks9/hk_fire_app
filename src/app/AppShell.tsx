@@ -4,10 +4,17 @@ import { useApp } from '@/state/AppContext'
 import { cn } from '@/lib/cn'
 import { Icon } from '@/components/icons'
 import { Badge, Segmented } from '@/components/ui'
-import { MOBILE_NAV_PRO, MOBILE_NAV_SIMPLE, PAGE_TITLES, PRO_NAV, SIMPLE_NAV, type NavGroup } from './nav'
+import {
+  MOBILE_NAV_PRO, MOBILE_NAV_SIMPLE, PAGE_TITLES, PRO_NAV, SIMPLE_NAV,
+  PERSONAL_MOBILE_PRO, PERSONAL_MOBILE_SIMPLE, PERSONAL_PRO_NAV, PERSONAL_SIMPLE_NAV,
+  type NavGroup,
+} from './nav'
 import { MEMBERS, HOUSEHOLD } from '@/data/household'
 import { dataCompleteness } from '@/data/selectors'
 import { buildNotifications } from './notifications'
+import { buildPersonalNotifications } from './personalNotifications'
+import { useStore } from '@/store/useStore'
+import { setupStatus } from '@/store/selectors'
 import { SearchOverlay } from './SearchOverlay'
 import { NotificationCenter } from './NotificationCenter'
 import { CopilotDrawer } from './CopilotDrawer'
@@ -68,6 +75,39 @@ function SideNav({ groups, compact }: { groups: NavGroup[]; compact?: boolean })
   )
 }
 
+function PersonalSetupFooter({ compact }: { compact?: boolean }) {
+  const store = useStore()
+  const navigate = useNavigate()
+  const setup = setupStatus(store)
+  const done = 5 - Math.min(setup.nextSteps.length, 5)
+  const pct = Math.round((done / 5) * 100)
+  if (compact)
+    return (
+      <button onClick={() => navigate('/balances')} className="mx-auto mb-3 flex h-9 w-9 items-center justify-center rounded-full bg-surface2 text-ink2 hover:text-ink" title={`Setup ${pct}% complete`}>
+        <Icon name="pie" size={16} />
+      </button>
+    )
+  if (setup.nextSteps.length === 0)
+    return (
+      <div className="mx-3 mb-3 rounded-xl border border-line bg-surface2/60 p-3">
+        <div className="flex items-center gap-1.5 text-[11px] font-semibold text-ink2"><Icon name="check" size={12} className="text-gain" /> Data set up</div>
+        <div className="mt-1 text-[10.5px] text-ink3">All records have values. Keep balances fresh.</div>
+      </div>
+    )
+  return (
+    <button onClick={() => navigate('/balances')} className="mx-3 mb-3 rounded-xl border border-line bg-surface2/60 p-3 text-left transition-colors hover:bg-surface2">
+      <div className="flex items-center justify-between">
+        <span className="text-[11px] font-semibold text-ink2">Setup</span>
+        <span className="tnum text-[11px] font-semibold text-ink">{pct}%</span>
+      </div>
+      <div className="mt-1.5 h-1 overflow-hidden rounded-full bg-line">
+        <div className="h-full rounded-full bg-brand" style={{ width: `${pct}%` }} />
+      </div>
+      <div className="mt-1.5 text-[10.5px] leading-snug text-ink3">{setup.nextSteps[0]} →</div>
+    </button>
+  )
+}
+
 function DataHealthFooter({ compact }: { compact?: boolean }) {
   const dq = dataCompleteness()
   const navigate = useNavigate()
@@ -93,23 +133,46 @@ function DataHealthFooter({ compact }: { compact?: boolean }) {
 
 export default function AppShell() {
   const app = useApp()
+  const store = useStore()
   const location = useLocation()
   const navigate = useNavigate()
   const [moreOpen, setMoreOpen] = useState(false)
   const [memberOpen, setMemberOpen] = useState(false)
   const [curOpen, setCurOpen] = useState(false)
 
-  const groups = app.mode === 'simple' ? SIMPLE_NAV : PRO_NAV
+  const personal = app.dataMode === 'personal'
+  const groups = personal
+    ? (app.mode === 'simple' ? PERSONAL_SIMPLE_NAV : PERSONAL_PRO_NAV)
+    : (app.mode === 'simple' ? SIMPLE_NAV : PRO_NAV)
   const basePath = '/' + (location.pathname.split('/')[1] ?? '')
   const title = PAGE_TITLES[basePath]?.[app.mode] ?? ''
-  const notifs = useMemo(buildNotifications, [])
+  const notifs = useMemo(
+    () => (personal ? buildPersonalNotifications(store) : buildNotifications()),
+    [personal, store],
+  )
   const unread = notifs.filter((n) => !app.readNotifs.includes(n.id)).length
   const member = MEMBERS.find((m) => m.id === app.memberId)
+  const profileInitial = personal ? (store.profileName?.trim()[0]?.toUpperCase() ?? '•') : 'D'
 
   return (
-    <div className="flex min-h-dvh bg-bg">
+    <div className="flex min-h-dvh flex-col bg-bg">
+      {/* Demo banner — unmistakable whenever the demo dataset is active */}
+      {!personal && (
+        <div className="sticky top-0 z-40 flex items-center justify-center gap-3 bg-warn px-4 py-1.5 text-center">
+          <span className="text-[12px] font-semibold text-[#3b2f0a]">
+            Demo data — every number on screen belongs to a fictional household, not you.
+          </span>
+          <button
+            onClick={() => { app.setDataMode('personal'); navigate('/') }}
+            className="rounded-full border border-[#3b2f0a]/30 px-2.5 py-0.5 text-[11px] font-semibold text-[#3b2f0a] hover:bg-[#3b2f0a]/10"
+          >
+            Exit demo
+          </button>
+        </div>
+      )}
+      <div className="flex min-h-0 flex-1">
       {/* Desktop sidebar */}
-      <aside className="fixed inset-y-0 left-0 z-30 hidden w-[232px] flex-col border-r border-line bg-surface lg:flex">
+      <aside className={cn('fixed inset-y-0 left-0 z-30 hidden w-[232px] flex-col border-r border-line bg-surface lg:flex', !personal && 'top-[34px]')}>
         <div className="px-5 pb-3 pt-5"><BrandMark /></div>
         <div className="px-4 pb-2">
           <Segmented
@@ -121,11 +184,11 @@ export default function AppShell() {
           />
         </div>
         <SideNav groups={groups} />
-        <DataHealthFooter />
+        {personal ? <PersonalSetupFooter /> : <DataHealthFooter />}
       </aside>
 
       {/* Tablet rail */}
-      <aside className="fixed inset-y-0 left-0 z-30 hidden w-[64px] flex-col border-r border-line bg-surface md:flex lg:hidden">
+      <aside className={cn('fixed inset-y-0 left-0 z-30 hidden w-[64px] flex-col border-r border-line bg-surface md:flex lg:hidden', !personal && 'top-[34px]')}>
         <div className="flex justify-center px-2 pb-2 pt-4"><BrandMark compact /></div>
         <button
           onClick={() => app.setMode(app.mode === 'simple' ? 'pro' : 'simple')}
@@ -135,7 +198,7 @@ export default function AppShell() {
           {app.mode === 'simple' ? 'S' : 'Pro'}
         </button>
         <SideNav groups={groups} compact />
-        <DataHealthFooter compact />
+        {personal ? <PersonalSetupFooter compact /> : <DataHealthFooter compact />}
       </aside>
 
       {/* Main column */}
@@ -162,18 +225,19 @@ export default function AppShell() {
                 <Icon name="search" size={18} />
               </button>
 
-              {/* Upload */}
+              {/* Upload — personal mode goes to the real importer, demo opens the labeled simulation */}
               <button
-                onClick={() => app.setUploadOpen(true)}
+                onClick={() => (personal ? navigate('/documents') : app.setUploadOpen(true))}
                 className="hidden h-9 items-center gap-1.5 rounded-ctl bg-brand px-3 text-[12.5px] font-medium text-invert transition-colors hover:bg-brand2 sm:flex"
               >
                 <Icon name="upload" size={15} />
-                <span className="hidden lg:inline">Upload</span>
+                <span className="hidden lg:inline">{personal ? 'Import' : 'Upload'}</span>
               </button>
 
               <div className="mx-1 hidden h-6 w-px bg-line sm:block" />
 
-              {/* Household / member switcher */}
+              {/* Household / member switcher — the household is demo fiction */}
+              {!personal && (
               <div className="relative hidden sm:block">
                 <button
                   onClick={() => { setMemberOpen((v) => !v); setCurOpen(false) }}
@@ -210,6 +274,7 @@ export default function AppShell() {
                   </div>
                 )}
               </div>
+              )}
 
               {/* Currency */}
               <div className="relative hidden sm:block">
@@ -260,7 +325,7 @@ export default function AppShell() {
 
               {/* Profile */}
               <button onClick={() => navigate('/settings')} className="ml-0.5 flex h-8 w-8 items-center justify-center rounded-full bg-brand text-[12px] font-bold text-invert" aria-label="Account & security">
-                H
+                {profileInitial}
               </button>
             </div>
           </div>
@@ -275,19 +340,19 @@ export default function AppShell() {
       {/* Mobile bottom nav */}
       <nav className="pb-safe fixed inset-x-0 bottom-0 z-30 border-t border-line bg-surface/95 backdrop-blur-md md:hidden" aria-label="Mobile">
         <div className="grid grid-cols-5 items-center">
-          {(app.mode === 'simple' ? MOBILE_NAV_SIMPLE : MOBILE_NAV_PRO).slice(0, 2).map((it) => (
+          {(personal ? (app.mode === 'simple' ? PERSONAL_MOBILE_SIMPLE : PERSONAL_MOBILE_PRO) : app.mode === 'simple' ? MOBILE_NAV_SIMPLE : MOBILE_NAV_PRO).slice(0, 2).map((it) => (
             <MobileTab key={it.to} to={it.to} icon={it.icon} label={it.label} />
           ))}
           <div className="flex justify-center py-1.5">
             <button
-              onClick={() => app.setUploadOpen(true)}
+              onClick={() => (personal ? navigate('/documents') : app.setUploadOpen(true))}
               className="flex h-11 w-11 -translate-y-3 items-center justify-center rounded-full bg-brand text-invert shadow-pop"
-              aria-label="Upload a document"
+              aria-label={personal ? 'Import data' : 'Upload a document'}
             >
               <Icon name="upload" size={19} />
             </button>
           </div>
-          {(app.mode === 'simple' ? MOBILE_NAV_SIMPLE : MOBILE_NAV_PRO).slice(2, 3).map((it) => (
+          {(personal ? (app.mode === 'simple' ? PERSONAL_MOBILE_SIMPLE : PERSONAL_MOBILE_PRO) : app.mode === 'simple' ? MOBILE_NAV_SIMPLE : MOBILE_NAV_PRO).slice(2, 3).map((it) => (
             <MobileTab key={it.to} to={it.to} icon={it.icon} label={it.label} />
           ))}
           <button onClick={() => setMoreOpen(true)} className="flex flex-col items-center gap-0.5 py-2 text-ink2">
@@ -342,6 +407,8 @@ export default function AppShell() {
           </div>
         </div>
       )}
+
+      </div>
 
       {/* Global overlays */}
       <SearchOverlay />

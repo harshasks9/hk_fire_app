@@ -2,10 +2,13 @@ import React, { createContext, useCallback, useContext, useEffect, useMemo, useS
 import type { CurrencyCode, DocStage } from '@/data/types'
 
 export type Mode = 'simple' | 'pro'
+/** Which dataset the app runs on: the user's own records, or the labeled demo household. */
+export type DataMode = 'personal' | 'demo'
 export type DateRange = '1M' | '3M' | 'YTD' | '1Y' | 'ALL'
 
 interface AppState {
   mode: Mode
+  dataMode: DataMode
   theme: 'light' | 'dark'
   currency: CurrencyCode
   memberId?: string
@@ -28,6 +31,7 @@ interface AppState {
 
 interface AppApi extends AppState {
   setMode: (m: Mode) => void
+  setDataMode: (m: DataMode) => void
   toggleTheme: () => void
   setCurrency: (c: CurrencyCode) => void
   setMemberId: (id?: string) => void
@@ -61,6 +65,7 @@ function persisted<T>(key: string, fallback: T): T {
 
 export function AppProvider({ children }: { children: React.ReactNode }) {
   const [mode, setModeState] = useState<Mode>(() => persisted('mode', 'simple'))
+  const [dataMode, setDataModeState] = useState<DataMode>(() => persisted('dataMode', 'personal'))
   const [theme, setTheme] = useState<'light' | 'dark'>(() =>
     document.documentElement.classList.contains('dark') ? 'dark' : 'light',
   )
@@ -84,6 +89,11 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   const setMode = useCallback((m: Mode) => {
     setModeState(m)
     localStorage.setItem('meridian.mode', JSON.stringify(m))
+  }, [])
+
+  const setDataMode = useCallback((m: DataMode) => {
+    setDataModeState(m)
+    localStorage.setItem('meridian.dataMode', JSON.stringify(m))
   }, [])
 
   const setCurrency = useCallback((c: CurrencyCode) => {
@@ -158,15 +168,15 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
 
   const value = useMemo<AppApi>(
     () => ({
-      mode, theme, currency, memberId, dateRange, authenticated, onboarded,
+      mode, dataMode, theme, currency, memberId, dateRange, authenticated, onboarded,
       copilotOpen, searchOpen, uploadOpen, notifOpen, readNotifs,
       suggestionStatus, inboxStatus, removedWatch, addedToPortfolio, uploadSim, appliedDocs,
-      setMode, toggleTheme, setCurrency, setMemberId, setDateRange,
+      setMode, setDataMode, toggleTheme, setCurrency, setMemberId, setDateRange,
       setAuthenticated, setOnboarded, setCopilotOpen, setSearchOpen, setUploadOpen,
       setNotifOpen, markNotifRead, setSuggestionStatus, setInboxStatus,
       removeWatch, convertWatchToPosition, startUploadSim, setUploadSim, applyDoc,
     }),
-    [mode, theme, currency, memberId, dateRange, authenticated, onboarded, copilotOpen, searchOpen, uploadOpen, notifOpen, readNotifs, suggestionStatus, inboxStatus, removedWatch, addedToPortfolio, uploadSim, appliedDocs, setMode, toggleTheme, setCurrency, setMemberId, setDateRange, markNotifRead, setSuggestionStatus, setInboxStatus, removeWatch, convertWatchToPosition, startUploadSim, applyDoc],
+    [mode, dataMode, theme, currency, memberId, dateRange, authenticated, onboarded, copilotOpen, searchOpen, uploadOpen, notifOpen, readNotifs, suggestionStatus, inboxStatus, removedWatch, addedToPortfolio, uploadSim, appliedDocs, setMode, setDataMode, toggleTheme, setCurrency, setMemberId, setDateRange, markNotifRead, setSuggestionStatus, setInboxStatus, removeWatch, convertWatchToPosition, startUploadSim, applyDoc],
   )
 
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>

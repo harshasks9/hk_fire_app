@@ -91,14 +91,14 @@ function IssueCard({ item, pro }: { item: InboxItem & { status: InboxItem['statu
   const app = useApp()
   const [open, setOpen] = useState(item.severity === 'high')
   const sevTone = item.severity === 'high' ? 'loss' : item.severity === 'medium' ? 'warn' : 'neutral'
+  /* Only actions that do what they say: these set the item's status. The old
+     "Edit value" / "Merge" / "Split" buttons opened no editor and merged
+     nothing, so they are gone until real record-editing exists. */
   const actions: { key: string; label: string; primary?: boolean }[] = [
-    { key: 'accept', label: 'Accept proposed', primary: true },
-    { key: 'edit', label: 'Edit value' },
-    { key: 'merge', label: 'Merge' },
-    { key: 'split', label: 'Split' },
+    { key: 'accept', label: 'Mark resolved', primary: true },
     { key: 'defer', label: 'Defer' },
     { key: 'ignore', label: 'Ignore' },
-  ].filter((a) => item.options.includes(a.key as any))
+  ].filter((a) => item.options.includes(a.key as any) || a.key === 'accept')
 
   return (
     <Card pad>

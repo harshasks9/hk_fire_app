@@ -9,7 +9,11 @@ import { ACCOUNTS } from '@/data/household'
 import { PROPERTIES, SYNDICATIONS } from '@/data/realestate'
 import { DOCUMENTS } from '@/data/documents'
 import { WATCHLIST } from '@/data/watchlist'
-import { PAGE_TITLES } from './nav'
+import { PAGE_TITLES, PERSONAL_PRO_NAV } from './nav'
+import { useStore } from '@/store/useStore'
+import { ledgerSymbols } from '@/store/selectors'
+import type { StoreData } from '@/store/types'
+import { coverageUniverse } from '@/research/providers'
 
 interface Result {
   id: string
@@ -50,13 +54,48 @@ function buildIndex(): Result[] {
   return out
 }
 
+/* Personal index — only things that really exist: the user's records, their
+   ledger symbols, research coverage, and the personal-mode pages. */
+function buildPersonalIndex(store: StoreData): Result[] {
+  const out: Result[] = []
+  for (const a of store.accounts) {
+    out.push({ id: `a-${a.id}`, icon: 'wallet', title: a.name, sub: `Account · ${a.kind}`, to: '/balances', group: 'Your records' })
+  }
+  for (const a of store.assets) {
+    out.push({ id: `as-${a.id}`, icon: 'building', title: a.name, sub: `Asset · ${a.kind}`, to: '/balances', group: 'Your records' })
+  }
+  for (const l of store.liabilities) {
+    out.push({ id: `l-${l.id}`, icon: 'scale', title: l.name, sub: `Liability · ${l.kind}`, to: '/balances', group: 'Your records' })
+  }
+  for (const g of store.goals) {
+    out.push({ id: `g-${g.id}`, icon: 'target', title: g.name, sub: 'Goal', to: '/plan', group: 'Your records' })
+  }
+  for (const w of store.watchlist) {
+    out.push({ id: `w-${w.id}`, icon: 'eye', title: w.symbol, sub: 'Watchlist', to: '/watchlist', group: 'Watchlist' })
+  }
+  for (const s of ledgerSymbols(store).slice(0, 60)) {
+    out.push({ id: `ls-${s}`, icon: 'receipt', title: s, sub: 'In your ledger', to: '/ledger', group: 'Ledger symbols' })
+  }
+  for (const u of coverageUniverse()) {
+    if (u.tier !== 'none') out.push({ id: `r-${u.symbol}`, icon: 'book', title: `${u.symbol} research`, sub: 'Sample dossier', to: `/research/${u.symbol}`, group: 'Research' })
+  }
+  for (const g of PERSONAL_PRO_NAV) {
+    for (const it of g.items) {
+      out.push({ id: `pg-${it.to}`, icon: it.icon, title: it.label, sub: 'Page', to: it.to, group: 'Pages' })
+    }
+  }
+  return out
+}
+
 export function SearchOverlay() {
   const app = useApp()
+  const store = useStore()
   const navigate = useNavigate()
+  const personal = app.dataMode === 'personal'
   const [q, setQ] = useState('')
   const [sel, setSel] = useState(0)
   const inputRef = useRef<HTMLInputElement>(null)
-  const index = useMemo(buildIndex, [])
+  const index = useMemo(() => (personal ? buildPersonalIndex(store) : buildIndex()), [personal, store])
 
   useEffect(() => {
     if (app.searchOpen) {
@@ -70,7 +109,7 @@ export function SearchOverlay() {
 
   const results = q.trim()
     ? index.filter((r) => (r.title + ' ' + r.sub + ' ' + r.group).toLowerCase().includes(q.trim().toLowerCase())).slice(0, 12)
-    : index.filter((r) => ['Holdings', 'Real Estate'].includes(r.group)).slice(0, 8)
+    : index.filter((r) => (personal ? ['Your records', 'Pages'] : ['Holdings', 'Real Estate']).includes(r.group)).slice(0, 8)
 
   const go = (r: Result) => {
     app.setSearchOpen(false)

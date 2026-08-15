@@ -48,11 +48,7 @@ export default function OptionsPage() {
               <div className="text-[13.5px] font-semibold text-ink">
                 {u.strategy.underlying} {STRATEGY_LABELS[u.strategy.kind].toLowerCase()} expires in {u.daysToExpiry} day{u.daysToExpiry === 1 ? '' : 's'} — in the money
               </div>
-              <p className="text-[12px] leading-relaxed text-ink2">{u.actionNeeded}. If assigned, ~$23,500 of long-term gains would be realized (est. tax ≈ $3,500).</p>
-            </div>
-            <div className="flex gap-2">
-              <Button size="sm" variant="secondary">Roll to Aug $240</Button>
-              <Button size="sm" variant="ghost">Let it assign</Button>
+              <p className="text-[12px] leading-relaxed text-ink2">{u.actionNeeded}. Rolling or accepting assignment is a broker action — Meridian tracks the outcome, it can't place orders.</p>
             </div>
           </div>
         </Card>
@@ -60,10 +56,10 @@ export default function OptionsPage() {
 
       {/* Stats */}
       <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
-        <StatCard label="Premium collected 2026" value={fmtMoney(premiumYtd, c, { compact: true })} sub="10 credits across 4 underlyings" icon="coins" tone="gain" />
+        <StatCard label="Premium collected 2026" value={fmtMoney(premiumYtd, c, { compact: true })} sub={`Across ${OPTION_STRATEGIES.length} sample strategies`} icon="coins" tone="gain" />
         <StatCard label="Open strategy P&L" value={<Delta value={openPnl} currency="USD" arrow={false} className="font-display text-[22px]" />} sub="vs premium received at open" icon="layers" />
         <StatCard label="Collateral committed" value={fmtMoney(collateral, 'USD', { compact: true })} sub="Cash securing short puts" icon="lock" />
-        <StatCard label="Annualized premium yield" value="9.8%" sub="Estimate on collateral + covered shares" icon="trendUp" tone="warn" />
+        <StatCard label="Strategies tracked" value={`${strategies.length}`} sub={`${urgent.length} need${urgent.length === 1 ? 's' : ''} attention before expiry`} icon="trendUp" tone={urgent.length ? 'warn' : 'neutral'} />
       </div>
 
       {/* Strategies */}

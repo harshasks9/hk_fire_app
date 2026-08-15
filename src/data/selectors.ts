@@ -12,6 +12,7 @@ import { OPTION_STRATEGIES } from './options'
 import { PROPERTIES, SYNDICATIONS } from './realestate'
 import { LIABILITIES } from './liabilities'
 import { INCOME_EVENTS } from './income'
+import { INBOX_ITEMS } from './inbox'
 import { convert } from './fx'
 import { anyInstrument } from './watchlist'
 import { walkTo } from './rng'
@@ -221,9 +222,15 @@ export function netWorthSnapshot(display: CurrencyCode, f: Filters = {}): NetWor
   const assets = investable + cash + reValue + priv
   const total = assets - liab
   const dayChange = positions.reduce((s, r) => s + r.dayChange, 0)
-  // Month change: attribution consistent with the June timeline entry, scaled by filter share
-  const share = assets > 0 ? total / Math.max(total, 1) : 1
-  const monthChange = convert(38_200, 'USD', display) * (f.memberId ? 0.6 : 1) * share
+  // Month change: 30-day delta of the SAME 380-point sample series the
+  // net-worth chart renders (same walkTo seeds and length), so the headline
+  // and the chart can never disagree.
+  const invS = walkTo(investable + cash, 380, 501, 0.0062, 0.00075)
+  const reS = walkTo(reValue, 380, 502, 0.0009, 0.00045)
+  const pvS = walkTo(priv, 380, 503, 0.001, 0.0006)
+  const liS = walkTo(liab, 380, 504, 0.0002, -0.00009)
+  const at = (i: number) => invS[i] + reS[i] + pvS[i] - liS[i]
+  const monthChange = at(379) - at(349)
   return {
     total,
     assets,
@@ -606,7 +613,8 @@ export function dataCompleteness(): { pct: number; issues: number; verifiedPct: 
     good++
     if (l.source.provenance === 'verified') verified++
   }
-  return { pct: Math.round((good / total) * 100), issues: 6, verifiedPct: Math.round((verified / total) * 100) }
+  const issues = INBOX_ITEMS.filter((i) => i.status === 'open').length
+  return { pct: Math.round((good / total) * 100), issues, verifiedPct: Math.round((verified / total) * 100) }
 }
 
 /* -- Portfolio history (investable only) -------------------------------------------------- */

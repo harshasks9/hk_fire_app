@@ -76,7 +76,8 @@ test.describe('Global systems', () => {
     await boot(page)
     await go(page, '/')
     await page.getByRole('button', { name: 'Financial copilot' }).click()
-    await expect(page.getByText('Answers from your records')).toBeVisible()
+    // Demo mode is explicit about what these answers are
+    await expect(page.getByText('Demo data — sample answers')).toBeVisible()
     await page.getByRole('button', { name: 'What changed this month?' }).click()
     await expect(page.getByText('Facts — from records')).toBeVisible({ timeout: 5_000 })
     await expect(page.getByText('Estimates & forecasts')).toBeVisible()
@@ -89,6 +90,6 @@ test.describe('Global systems', () => {
     await page.getByRole('button', { name: 'Financial copilot' }).click()
     await page.getByPlaceholder(/What changed/).fill('xyzzy quux plugh')
     await page.getByRole('button', { name: 'Ask' }).click()
-    await expect(page.getByText(/couldn’t match that question to your records/)).toBeVisible({ timeout: 5_000 })
+    await expect(page.getByText(/couldn’t match that question/)).toBeVisible({ timeout: 5_000 })
   })
 })

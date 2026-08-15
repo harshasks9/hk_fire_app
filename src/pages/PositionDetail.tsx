@@ -94,7 +94,7 @@ export default function PositionDetail() {
         <Card className="lg:col-span-2" pad>
           <SectionHead
             title="Price"
-            sub={`${sym}${fmtNum(inst.price)} · prev close ${sym}${fmtNum(inst.prevClose)} · market data, 15-min delayed`}
+            sub={`${sym}${fmtNum(inst.price)} · prev close ${sym}${fmtNum(inst.prevClose)} · sample price series (no market feed)`}
           />
           <AreaChart data={hist} height={220} currency={inst.currency} summary={`${inst.symbol} price over the past year`} />
           {inst.fiftyTwoWeek && (

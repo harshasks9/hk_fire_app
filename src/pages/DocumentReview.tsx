@@ -168,8 +168,8 @@ export default function DocumentReview() {
               <Card pad>
                 <div className="flex flex-wrap items-center justify-between gap-3">
                   <p className="max-w-md text-[12px] leading-relaxed text-ink2">
-                    Approving updates {doc.positionsFound} positions and adds {doc.transactionsFound} transactions.
-                    Recorded portfolio value increases by <b className="tnum text-ink">$126,500</b>. Every change is reversible from the audit log.
+                    In the full pipeline, approving would update {doc.positionsFound} positions and add {doc.transactionsFound} transactions.
+                    <b> This demo walkthrough changes nothing</b> — the sample household stays exactly as it is.
                   </p>
                   <div className="flex gap-2">
                     <Button variant="ghost" onClick={() => navigate('/documents')}>Cancel</Button>
@@ -187,8 +187,8 @@ export default function DocumentReview() {
                 <div className="flex items-center gap-3">
                   <Icon name="check" size={20} className="text-gain" />
                   <div>
-                    <p className="text-[13.5px] font-semibold text-ink">Update applied</p>
-                    <p className="text-[12px] text-ink2">Your portfolio now reflects the June statement. The document is archived as a verified source.</p>
+                    <p className="text-[13.5px] font-semibold text-ink">Walkthrough complete</p>
+                    <p className="text-[12px] text-ink2">This is where the statement would become part of your records. The demo dataset is unchanged — the real importer lives in your own data.</p>
                   </div>
                   <Button className="ml-auto" variant="secondary" size="sm" onClick={() => navigate('/')}>Back to Home</Button>
                 </div>

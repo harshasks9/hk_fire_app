@@ -114,9 +114,8 @@ export default function PlanPage() {
                   <span className="font-semibold text-warn">Suggested adjustment: </span>{g.adjustment}
                 </div>
               )}
-              <div className="mt-2.5 flex items-center justify-between border-t border-line pt-2 text-[11px] text-ink3">
-                <span>Saving {fmtMoney(convert(g.monthlyContribution, g.currency, c), c, { compact: true })}/mo</span>
-                <button className="font-medium text-brand hover:underline">Adjust</button>
+              <div className="mt-2.5 border-t border-line pt-2 text-[11px] text-ink3">
+                Saving {fmtMoney(convert(g.monthlyContribution, g.currency, c), c, { compact: true })}/mo — demo goals are fixed; editable goals live in your own data
               </div>
             </Card>
           )

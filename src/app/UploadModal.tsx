@@ -37,12 +37,23 @@ export function UploadModal() {
   const start = (name: string) => app.startUploadSim(name)
 
   return (
-    <Modal open={app.uploadOpen} onClose={close} title="Upload a document" wide>
+    <Modal
+      open={app.uploadOpen}
+      onClose={close}
+      title={
+        <span className="flex items-center gap-2">
+          Upload a document
+          <Badge tone="warn" icon="alert">Simulated demo flow</Badge>
+        </span>
+      }
+      wide
+    >
       {!sim && (
         <>
           <p className="mb-4 text-[13px] leading-relaxed text-ink2">
-            Add any brokerage, tax, mortgage, bank, insurance, property or investment file. Meridian classifies it, extracts the
-            numbers, reconciles them against your records, and asks you before anything changes.
+            This walkthrough shows what the document pipeline will feel like — <strong>no file is actually read or
+            parsed</strong>, and nothing changes in any dataset. The real, working importer (Fidelity CSVs, parsed in your
+            browser) lives in your own data: Settings → Dataset → My data, then Import.
           </p>
           <div
             onDragOver={(e) => { e.preventDefault(); setDragOver(true) }}

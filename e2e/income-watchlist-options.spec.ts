@@ -32,7 +32,7 @@ test.describe('Watchlist', () => {
     await expect(page.getByText('AMD').first()).toBeVisible()
     await page.getByRole('button', { name: 'I bought it' }).first().click()
     await expect(page.getByRole('heading', { name: 'Add AMD to your portfolio' })).toBeVisible()
-    await expect(page.getByText(/thesis, entry criteria and notes transfer automatically/)).toBeVisible()
+    await expect(page.getByText(/Demo walkthrough — this marks the row as converted/)).toBeVisible()
     await page.getByRole('button', { name: 'Add position' }).click()
     await expect(page.getByText('In portfolio')).toBeVisible()
   })

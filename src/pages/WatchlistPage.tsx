@@ -26,12 +26,12 @@ export default function WatchlistPage() {
         <p className="text-[12.5px] text-ink2">
           {items.length} candidates tracked · {items.filter((w) => { const i = anyInstrument(w.symbol); return i && i.price <= w.targetPrice * 1.03 }).length} near target
         </p>
-        <Button size="sm" variant="primary" icon="plus" onClick={() => {}}>Add symbol</Button>
+        <span className="text-[11px] text-ink3">Demo list is fixed — your editable watchlist lives in your own data</span>
       </div>
 
       {items.length === 0 && (
         <Card>
-          <EmptyState icon="eye" title="Your watchlist is empty" body="Track investments you're considering. Set a target price, write entry criteria, and convert to a real position when you buy." action={<Button variant="primary" icon="plus">Add your first symbol</Button>} />
+          <EmptyState icon="eye" title="Your watchlist is empty" body="The demo watchlist is a fixed sample. Switch to your own data (Settings → Dataset) for a watchlist you can edit." />
         </Card>
       )}
 
@@ -71,10 +71,6 @@ export default function WatchlistPage() {
                 {inst.exDivDate && <div>Ex-div {fmtDate(inst.exDivDate, 'short')}</div>}
               </div>
               <div className="ml-auto flex items-center gap-2">
-                <span className="flex items-center gap-1.5 text-[11px] text-ink3">
-                  <Icon name="bell" size={12} />
-                  <Toggle checked={!!alerts[w.id]} onChange={(v) => setAlerts({ ...alerts, [w.id]: v })} label={`Price alert for ${w.symbol}`} />
-                </span>
                 {!converted ? (
                   <Button size="sm" variant="secondary" onClick={() => setConvertItem(w)}>I bought it</Button>
                 ) : (
@@ -156,7 +152,7 @@ function ConvertFlow({ w, onDone, onCancel }: { w: WatchlistItem; onDone: () => 
   return (
     <div className="space-y-4">
       <p className="text-[12.5px] leading-relaxed text-ink2">
-        Your thesis, entry criteria and notes transfer automatically — no re-entry. We'll flag it as user-entered until the next statement confirms it.
+        Demo walkthrough — this marks the row as converted for the session but creates no position. In your own data, holdings come from records you add or import.
       </p>
       <div className="grid grid-cols-2 gap-3">
         <label className="block">

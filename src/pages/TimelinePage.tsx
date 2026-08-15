@@ -70,7 +70,7 @@ export default function TimelinePage() {
           ))}
           </div>
         )}
-        {pro && <p className="mt-2 text-[10.5px] text-ink3">Attribution between arbitrary dates is approximate (calculated), based on monthly attribution records.</p>}
+        {pro && <p className="mt-2 text-[10.5px] text-ink3">The split shown is a fixed illustrative ratio over the sample series — real attribution needs monthly transaction records.</p>}
       </Card>
 
       {/* Filter chips */}

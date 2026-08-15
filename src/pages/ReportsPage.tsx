@@ -44,23 +44,13 @@ export default function ReportsPage() {
   }
 
   const REPORTS: ReportDef[] = [
-    { id: 'networth', title: 'Net worth statement', desc: 'Assets, liabilities and equity by category and owner', icon: 'wallet', mode: 'simple', formats: ['PDF', 'CSV'], build: () => { const s = netWorthSnapshot(c); return `Category,Value\nInvestable,${s.investable.toFixed(0)}\nCash,${s.cash.toFixed(0)}\nReal estate,${s.realEstateValue.toFixed(0)}\nPrivate,${s.privateValue.toFixed(0)}\nLiabilities,-${s.liabilities.toFixed(0)}\nNet worth,${s.total.toFixed(0)}` } },
-    { id: 'portfolio', title: 'Portfolio summary', desc: 'Positions, values, gains and allocation', icon: 'pie', mode: 'simple', formats: ['PDF', 'CSV', 'Excel'], build: holdingsCsv },
-    { id: 'income', title: 'Passive income report', desc: 'Received and projected income by stream and month', icon: 'coins', mode: 'simple', formats: ['PDF', 'CSV'], build: () => { const a = incomeAgg(c); return ['Month,Received,Expected'].concat(a.byMonth.map((m) => `${m.month},${m.received.toFixed(0)},${m.expected.toFixed(0)}`)).join('\n') } },
-    { id: 'realestate', title: 'Real estate report', desc: 'Values, equity, cash flow and obligations', icon: 'building', mode: 'simple', formats: ['PDF'] },
-    { id: 'liabilities', title: 'Liabilities report', desc: 'Balances, rates, payments, payoff dates', icon: 'scale', mode: 'simple', formats: ['PDF', 'CSV'] },
-    { id: 'goals', title: 'Goal progress', desc: 'Funding status and projections for each goal', icon: 'target', mode: 'simple', formats: ['PDF'] },
-    { id: 'annual', title: 'Annual financial review', desc: 'The complete year in one narrative document', icon: 'book', mode: 'simple', formats: ['PDF'] },
-    { id: 'holdings', title: 'Holdings detail', desc: 'Every position with account, basis and provenance', icon: 'reportChart', mode: 'pro', formats: ['CSV', 'Excel'], build: holdingsCsv },
+    /* Only reports that actually build a file exist here. Anything this build
+       can't produce is not shown as a card — no fake "Generated ✓". */
+    { id: 'networth', title: 'Net worth statement', desc: 'Assets, liabilities and equity by category', icon: 'wallet', mode: 'simple', formats: ['CSV'], build: () => { const s = netWorthSnapshot(c); return `Category,Value\nInvestable,${s.investable.toFixed(0)}\nCash,${s.cash.toFixed(0)}\nReal estate,${s.realEstateValue.toFixed(0)}\nPrivate,${s.privateValue.toFixed(0)}\nLiabilities,-${s.liabilities.toFixed(0)}\nNet worth,${s.total.toFixed(0)}` } },
+    { id: 'portfolio', title: 'Portfolio summary', desc: 'Positions, values, gains and allocation', icon: 'pie', mode: 'simple', formats: ['CSV'], build: holdingsCsv },
+    { id: 'income', title: 'Passive income report', desc: 'Received and projected income by stream and month', icon: 'coins', mode: 'simple', formats: ['CSV'], build: () => { const a = incomeAgg(c); return ['Month,Received,Expected'].concat(a.byMonth.map((m) => `${m.month},${m.received.toFixed(0)},${m.expected.toFixed(0)}`)).join('\n') } },
+    { id: 'holdings', title: 'Holdings detail', desc: 'Every position with account, basis and provenance', icon: 'reportChart', mode: 'pro', formats: ['CSV'], build: holdingsCsv },
     { id: 'lots', title: 'Tax lots', desc: 'Complete lot-level basis with acquisition dates', icon: 'receipt', mode: 'pro', formats: ['CSV'], build: lotsCsv },
-    { id: 'gains', title: 'Realized gains', desc: 'ST/LT gains with lot matching, both jurisdictions', icon: 'trendUp', mode: 'pro', formats: ['CSV', 'PDF'] },
-    { id: 'optionspl', title: 'Options P&L', desc: 'Premium by underlying, open risk, assignment log', icon: 'layers', mode: 'pro', formats: ['CSV'] },
-    { id: 'property', title: 'Property performance', desc: 'NOI, cap rate, CoC, DSCR per property', icon: 'building', mode: 'pro', formats: ['PDF', 'Excel'] },
-    { id: 'synd', title: 'Syndicated investments', desc: 'Capital account, distributions, IRR vs underwriting', icon: 'briefcase', mode: 'pro', formats: ['PDF'] },
-    { id: 'fx', title: 'Currency exposure', desc: 'Assets and income by currency with sensitivity', icon: 'compass', mode: 'pro', formats: ['CSV'] },
-    { id: 'leverage', title: 'Leverage report', desc: 'LTVs, covenants, rate mix, service coverage', icon: 'scale', mode: 'pro', formats: ['PDF'] },
-    { id: 'dq', title: 'Data quality audit', desc: 'Provenance, staleness and conflicts per record', icon: 'shield', mode: 'pro', formats: ['CSV'] },
-    { id: 'docaudit', title: 'Document audit trail', desc: 'Every upload, extraction and approval event', icon: 'file', mode: 'pro', formats: ['CSV'] },
   ]
 
   const visible = REPORTS.filter((r) => pro || r.mode === 'simple')
@@ -70,9 +60,8 @@ export default function ReportsPage() {
       <Card pad className="flex flex-wrap items-center justify-between gap-3">
         <div>
           <div className="text-[14px] font-semibold text-ink">Reports</div>
-          <p className="text-[12px] text-ink2">Point-in-time documents built from your records. Generated {fmtDate('2026-07-20', 'long')} in {c}.</p>
+          <p className="text-[12px] text-ink2">Point-in-time CSVs built from the demo dataset at the moment you click, in {c}.</p>
         </div>
-        {pro && <Button variant="secondary" size="sm" icon="plus">Custom report</Button>}
       </Card>
 
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -102,7 +91,10 @@ export default function ReportsPage() {
           </Card>
         ))}
       </div>
-      <p className="px-1 text-[11px] text-ink3">CSV downloads are produced from live records. PDF and Excel rendering use the same data pipeline (CSV provided in this build).</p>
+      <p className="px-1 text-[11px] text-ink3">
+        Every button above downloads a real file. PDF/Excel rendering and the removed report types (real estate, gains,
+        options P&L…) return when their data pipelines are real — they are not listed until then.
+      </p>
     </div>
   )
 }

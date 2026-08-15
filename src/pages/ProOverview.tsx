@@ -86,7 +86,7 @@ const MODULES: ModuleDef[] = [
             <span className="flex items-center gap-1.5"><span className="h-2 w-2 rounded-full bg-chart-2" />{BENCHMARKS.SP500.label} <b className="tnum">+{bench[bench.length - 1].toFixed(1)}%</b></span>
           </div>
           <PerfChart a={normPort} b={bench} />
-          <p className="mt-1 text-[11px] text-ink3">Time-weighted, net of fees, in {c}. MWR (money-weighted): +11.2% — differs due to contribution timing.</p>
+          <p className="mt-1 text-[11px] text-ink3">Illustrative sample series in {c} — real TWR/MWR need transaction-level history, which the demo household doesn't carry.</p>
         </>
       )
     },
@@ -488,6 +488,9 @@ export default function ProOverview() {
             <option key={a.id} value={a.id}>{a.institution} — {a.name}</option>
           ))}
         </select>
+        {accountId && (
+          <span className="text-[10.5px] text-ink3">Filters the allocation, sector, geography and currency modules; household-level modules stay unfiltered.</span>
+        )}
         <div className="flex gap-1 rounded-ctl border border-line bg-surface2 p-0.5">
           {(['1M', '3M', 'YTD', '1Y', 'ALL'] as const).map((r) => (
             <button key={r} onClick={() => app.setDateRange(r)} className={cn('rounded-[7px] px-2 py-1 text-[11px] font-medium', app.dateRange === r ? 'bg-surface text-ink shadow-card' : 'text-ink3 hover:text-ink')}>

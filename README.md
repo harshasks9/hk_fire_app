@@ -40,6 +40,24 @@ calculated / estimated / inferred`), source document id, as-of date, staleness a
 The UI renders this consistently via `ProvenanceChip`, `ConfidenceMeter` and `Freshness` — nothing
 relies on color alone.
 
+### Two datasets, never mixed
+
+**Personal mode (default)** runs on a canonical client-side store (`src/store/`): accounts, assets,
+liabilities, an imported transaction ledger, goals and a watchlist — persisted to this browser under
+a versioned envelope with JSON backup/restore. Every number on every personal screen derives from
+these records; missing data renders as *unavailable with instructions*, never as an invented value.
+The importer (`src/store/csv.ts`) parses Fidelity Accounts_History CSVs entirely in the browser:
+parse → review → dedupe against the ledger → commit, with per-batch undo.
+
+**Demo mode** is the fictional sample household, reachable only by explicit choice and framed by a
+permanent warning banner. It exists to show the interface fully populated. Routes that only make
+sense for the demo data (real-estate underwriting, insurance, tax sandbox…) are blocked in
+personal mode rather than rendered empty-but-fake.
+
+“Auth” is an honest device lock (optional passcode, SHA-256 hash stored locally) and says so on
+screen — no fake MFA, passkeys or encryption claims. The copilot is labeled as deterministic
+computation over records, not an AI model.
+
 ### Imported real datasets
 
 Two modules carry data imported from real broker records (identifiers masked, economics verbatim),

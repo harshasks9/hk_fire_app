@@ -1,93 +1,81 @@
 import { test, expect } from '@playwright/test'
 import { boot, go } from './helpers'
 
-test.describe('Authentication', () => {
-  test('unauthenticated visitors are redirected to sign-in', async ({ page }) => {
+test.describe('Device lock (honest auth)', () => {
+  test('unauthenticated visitors are redirected to the lock screen', async ({ page }) => {
     await boot(page, { auth: false })
     await go(page, '/')
     await expect(page).toHaveURL(/#\/auth/)
-    await expect(page.getByRole('heading', { name: 'Welcome back' })).toBeVisible()
+    // A fresh device gets the setup form, and the screen says exactly what it is
+    await expect(page.getByRole('heading', { name: 'Set up this device' })).toBeVisible()
+    await expect(page.getByText('Device lock only — data stays in this browser')).toBeVisible()
   })
 
-  test('password path requires MFA; empty password is rejected inline', async ({ page }) => {
-    await boot(page, { auth: false, onboarded: true })
+  test('first-run setup requires a name, stores it, and skips the demo tour', async ({ page }) => {
+    await boot(page, { auth: false, onboarded: false, dataMode: 'personal' })
     await go(page, '/auth')
-    await page.getByRole('button', { name: 'Continue' }).click()
-    await expect(page.getByRole('alert')).toContainText('password')
-    await page.getByLabel('Password').fill('correct-horse-battery')
-    await page.getByRole('button', { name: 'Continue' }).click()
-    await expect(page.getByRole('heading', { name: 'Two-factor check' })).toBeVisible()
-    for (let i = 0; i < 6; i++) await page.getByLabel(`Digit ${i + 1}`).fill(String(i + 1))
-    await page.getByRole('button', { name: /Verify & sign in/ }).click()
-    await expect(page.getByText('Net worth', { exact: false }).first()).toBeVisible()
+    await page.getByRole('button', { name: 'Start' }).click()
+    await expect(page.getByText('Enter a name — it only labels this space.')).toBeVisible()
+    await page.getByLabel(/Your name/i).fill('Harsha')
+    await page.getByRole('button', { name: 'Start' }).click()
+    // Straight to the personal dashboard — no fictional onboarding steps
+    await expect(page).toHaveURL(/#\/$/)
+    await expect(page.getByText(/Welcome, Harsha/)).toBeVisible()
   })
 
-  test('passkey sign-in for a new user lands in onboarding', async ({ page }) => {
-    await boot(page, { auth: false, onboarded: false })
+  test('a passcode set at setup is actually enforced on the next unlock', async ({ page }) => {
+    await boot(page, { auth: false, onboarded: false, dataMode: 'personal' })
     await go(page, '/auth')
-    await page.getByRole('button', { name: 'Sign in with passkey' }).click()
-    await expect(page.getByRole('heading', { name: "Let's build your financial picture" })).toBeVisible()
+    await page.getByLabel(/Your name/i).fill('Harsha')
+    await page.locator('input[type="password"]').first().fill('meridian1')
+    await page.locator('input[type="password"]').nth(1).fill('meridian1')
+    await page.getByRole('button', { name: 'Start' }).click()
+    await expect(page).toHaveURL(/#\/$/)
+
+    // Lock again from Settings, then verify the wrong passcode is rejected
+    await go(page, '/settings')
+    await page.getByRole('button', { name: 'Lock app' }).click()
+    await expect(page).toHaveURL(/#\/auth/)
+    await page.getByPlaceholder('Passcode').fill('wrong')
+    await page.getByRole('button', { name: 'Unlock' }).click()
+    await expect(page.getByText('That’s not the passcode set on this device.')).toBeVisible()
+    await page.getByPlaceholder('Passcode').fill('meridian1')
+    await page.getByRole('button', { name: 'Unlock' }).click()
+    await expect(page).toHaveURL(/#\/$/)
+  })
+
+  test('there are no fake security affordances on the lock screen', async ({ page }) => {
+    await boot(page, { auth: false })
+    await go(page, '/auth')
+    await expect(page.getByText(/passkey/i)).toHaveCount(0)
+    await expect(page.getByText(/two-factor|MFA/i)).toHaveCount(0)
+    await expect(page.getByText(/SOC 2|encrypted at rest/i)).toHaveCount(0)
   })
 })
 
-test.describe('Onboarding', () => {
-  test('full Simple-mode walk: one question per screen, ends on the dashboard', async ({ page }) => {
+test.describe('Onboarding (three real choices)', () => {
+  test('every choice takes effect: dataset, mode, currency', async ({ page }) => {
     await boot(page, { auth: true, onboarded: false })
     await go(page, '/onboarding')
+    await expect(page.getByRole('heading', { name: 'Welcome to Meridian' })).toBeVisible()
 
-    await expect(page.getByRole('heading', { name: "Let's build your financial picture" })).toBeVisible()
-    await page.getByRole('button', { name: 'Get started' }).click()
-
-    await expect(page.getByRole('heading', { name: 'Who is this workspace for?' })).toBeVisible()
-    await page.getByRole('button', { name: 'Continue' }).click()
-
-    await expect(page.getByRole('heading', { name: "What's your base currency?" })).toBeVisible()
-    await page.getByRole('button', { name: 'Continue' }).click()
-
-    await expect(page.getByRole('heading', { name: 'Where do you have financial ties?' })).toBeVisible()
-    await expect(page.getByText('NRI residency days')).toBeVisible() // US+IN combo callout
-    await page.getByRole('button', { name: 'Continue' }).click()
-
-    await expect(page.getByRole('heading', { name: 'What are you working toward?' })).toBeVisible()
-    await page.getByRole('button', { name: "Children's education" }).click()
-    await page.getByRole('button', { name: 'Continue' }).click()
-
-    await expect(page.getByRole('heading', { name: 'How do you think about risk?' })).toBeVisible()
-    await page.getByRole('button', { name: 'Continue' }).click()
-
-    await expect(page.getByRole('heading', { name: 'Any personal rules?' })).toBeVisible()
-    await page.getByRole('button', { name: 'Continue' }).click()
-
-    await expect(page.getByRole('heading', { name: 'Choose your experience' })).toBeVisible()
-    await page.getByRole('button', { name: 'Continue' }).click()
-
-    // Simple mode skips the Pro setup step entirely
-    await expect(page.getByRole('heading', { name: 'Where do you invest?' })).toBeVisible()
-    await page.getByRole('button', { name: 'Continue' }).click()
-
-    await expect(page.getByRole('heading', { name: 'Add your first statement' })).toBeVisible()
-    await page.getByRole('button', { name: 'Continue' }).click()
-
-    await expect(page.getByRole('heading', { name: 'Do you own property?' })).toBeVisible()
-    await page.getByRole('button', { name: 'Continue' }).click()
-
-    await expect(page.getByRole('heading', { name: 'Your workspace is ready' })).toBeVisible()
-    await page.getByRole('button', { name: 'Open my dashboard' }).click()
+    await page.getByRole('button', { name: /Demo household/ }).click()
+    await page.getByRole('button', { name: /^Pro/ }).click()
+    await page.getByRole('button', { name: /Indian Rupee/ }).click()
+    await page.getByRole('button', { name: 'Explore the demo' }).click()
 
     await expect(page).toHaveURL(/#\/$/)
-    await expect(page.getByText('Why it changed:')).toBeVisible({ timeout: 10_000 })
+    // Demo banner proves the dataset choice landed; INR symbol proves currency did
+    await expect(page.getByText('Demo data — every number on screen belongs to a fictional household')).toBeVisible()
+    await expect(page.getByText('₹').first()).toBeVisible()
   })
 
-  test('choosing Pro exposes the optional precision-setup step', async ({ page }) => {
+  test('choosing "My data" starts the empty personal workspace', async ({ page }) => {
     await boot(page, { auth: true, onboarded: false })
     await go(page, '/onboarding')
-    await page.getByRole('button', { name: 'Get started' }).click()
-    for (let i = 0; i < 6; i++) await page.getByRole('button', { name: 'Continue' }).click()
-    await expect(page.getByRole('heading', { name: 'Choose your experience' })).toBeVisible()
-    await page.getByRole('button', { name: /^Pro/ }).click()
-    await page.getByRole('button', { name: 'Continue' }).click()
-    await expect(page.getByRole('heading', { name: 'Pro setup' })).toBeVisible()
-    await expect(page.getByText('Cost-basis method')).toBeVisible()
-    await expect(page.getByText('Source precedence')).toBeVisible()
+    await page.getByRole('button', { name: /^My data/ }).click()
+    await page.getByRole('button', { name: 'Start with my data' }).click()
+    await expect(page).toHaveURL(/#\/$/)
+    await expect(page.getByText('This space is empty on purpose.')).toBeVisible()
   })
 })

@@ -3,37 +3,41 @@ import { Link } from 'react-router-dom'
 import { useApp } from '@/state/AppContext'
 import { Drawer, Badge } from '@/components/ui'
 import { Icon } from '@/components/icons'
-import { COPILOT_INTENTS, matchIntent, type CopilotAnswer } from './copilotEngine'
+import { COPILOT_INTENTS, type CopilotAnswer, type CopilotIntent } from './copilotEngine'
+import { PERSONAL_INTENTS } from './personalCopilot'
 
 interface Turn {
   q: string
   a: CopilotAnswer | null // null = no match
 }
 
+function bestIntent(intents: CopilotIntent[], query: string, mode: 'simple' | 'pro'): CopilotIntent | null {
+  const q = query.toLowerCase()
+  let best: { intent: CopilotIntent; score: number } | null = null
+  for (const intent of intents) {
+    if (intent.mode !== 'both' && intent.mode !== mode) continue
+    const score = intent.keywords.reduce((s, k) => s + (q.includes(k) ? 1 : 0), 0)
+    if (score > 0 && (!best || score > best.score)) best = { intent, score }
+  }
+  return best?.intent ?? null
+}
+
 export function CopilotDrawer() {
   const app = useApp()
+  const personal = app.dataMode === 'personal'
+  const intents = personal ? PERSONAL_INTENTS : COPILOT_INTENTS
   const [turns, setTurns] = useState<Turn[]>([])
   const [input, setInput] = useState('')
-  const [thinking, setThinking] = useState(false)
   const bodyRef = useRef<HTMLDivElement>(null)
 
+  /* Answers are computed synchronously from records — no simulated latency. */
   const ask = (q: string) => {
-    const intent = matchIntent(q, app.mode)
-    setThinking(true)
-    setTurns((t) => [...t, { q, a: null }])
-    setTimeout(() => {
-      setTurns((t) => {
-        const copy = [...t]
-        copy[copy.length - 1] = { q, a: intent ? intent.answer(app.currency) : null }
-        return copy
-      })
-      setThinking(false)
-      setTimeout(() => bodyRef.current?.scrollTo({ top: 1e6, behavior: 'smooth' }), 60)
-    }, 650)
+    const intent = bestIntent(intents, q, app.mode)
+    setTurns((t) => [...t, { q, a: intent ? intent.answer(app.currency) : null }])
     setTimeout(() => bodyRef.current?.scrollTo({ top: 1e6, behavior: 'smooth' }), 60)
   }
 
-  const suggestions = COPILOT_INTENTS.filter((i) => i.mode === 'both' || i.mode === app.mode).slice(0, app.mode === 'simple' ? 6 : 9)
+  const suggestions = intents.filter((i) => i.mode === 'both' || i.mode === app.mode).slice(0, app.mode === 'simple' ? 6 : 9)
 
   return (
     <Drawer
@@ -44,7 +48,9 @@ export function CopilotDrawer() {
         <span className="flex items-center gap-2">
           <Icon name="sparkles" size={16} className="text-brass" />
           Financial Copilot
-          <Badge tone="brass">Answers from your records</Badge>
+          {personal
+            ? <Badge tone="brass">Computed from your records</Badge>
+            : <Badge tone="warn">Demo data — sample answers</Badge>}
         </span>
       }
     >
@@ -53,7 +59,9 @@ export function CopilotDrawer() {
           {turns.length === 0 && (
             <div>
               <p className="mb-1 text-[13px] leading-relaxed text-ink2">
-                Ask about your finances. Every answer cites the underlying records and separates facts from estimates — nothing is invented.
+                {personal
+                  ? 'Deterministic answers computed from your records at the moment you ask — not an AI model. If data is missing, the answer says so instead of guessing.'
+                  : 'Sample answers over the fictional demo household. Some figures are authored narrative, not live computation.'}
               </p>
               <div className="mt-4 space-y-1.5">
                 {suggestions.map((s) => (
@@ -75,19 +83,11 @@ export function CopilotDrawer() {
               <div className="mb-2 flex justify-end">
                 <div className="max-w-[85%] rounded-2xl rounded-br-md bg-brand px-3.5 py-2 text-[13px] text-invert">{t.q}</div>
               </div>
-              {t.a === null && !thinking && (
+              {t.a === null && (
                 <AnswerShell>
                   <p className="text-[13px] leading-relaxed text-ink2">
-                    I can only answer from your recorded data, and I couldn’t match that question to your records. Try one of the suggested questions, or rephrase using an account, position or topic name.
+                    I can only answer from recorded data, and I couldn’t match that question. Try one of the suggested questions — they cover everything this copilot can compute.
                   </p>
-                </AnswerShell>
-              )}
-              {t.a === null && thinking && i === turns.length - 1 && (
-                <AnswerShell>
-                  <div className="flex items-center gap-2 text-[12.5px] text-ink3">
-                    <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-brass" />
-                    Reading your records…
-                  </div>
                 </AnswerShell>
               )}
               {t.a && (
@@ -165,7 +165,7 @@ export function CopilotDrawer() {
           <form
             onSubmit={(e) => {
               e.preventDefault()
-              if (input.trim() && !thinking) {
+              if (input.trim()) {
                 ask(input.trim())
                 setInput('')
               }
@@ -175,10 +175,10 @@ export function CopilotDrawer() {
             <input
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              placeholder={app.mode === 'simple' ? 'e.g. What changed this month?' : 'e.g. Show the tax impact of selling 20% of NVDA'}
+              placeholder={personal ? 'e.g. What income have I collected?' : app.mode === 'simple' ? 'e.g. What changed this month?' : 'e.g. Show the tax impact of selling 20% of NVDA'}
               className="h-10 flex-1 rounded-ctl border border-line bg-bg px-3 text-[13px] text-ink outline-none placeholder:text-ink3 focus:border-brand"
             />
-            <button type="submit" disabled={thinking || !input.trim()} className="flex h-10 w-10 items-center justify-center rounded-ctl bg-brand text-invert disabled:opacity-40" aria-label="Ask">
+            <button type="submit" disabled={!input.trim()} className="flex h-10 w-10 items-center justify-center rounded-ctl bg-brand text-invert disabled:opacity-40" aria-label="Ask">
               <Icon name="send" size={16} />
             </button>
           </form>

@@ -72,9 +72,9 @@ export default function PropertyDetail() {
           <div className="flex flex-wrap items-center gap-3">
             <Icon name="alert" size={18} className="shrink-0 text-warn" />
             <p className="min-w-0 flex-1 text-[12.5px] leading-relaxed text-ink2">
-              This valuation is a <b>broker estimate from {fmtDate(latest.date, 'long')}</b> at 55% confidence. Numbers derived from it (equity, net worth share) inherit that uncertainty.
+              This valuation is a <b>broker estimate from {fmtDate(latest.date, 'long')}</b> at 55% confidence. Numbers derived from it
+              (equity, net worth share) inherit that uncertainty — refresh it by adding a newer valuation record.
             </p>
-            <Button size="sm" variant="secondary" icon="refresh">Request fresh valuation</Button>
           </div>
         </Card>
       )}
