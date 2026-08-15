@@ -24,6 +24,7 @@ import ReportsPage from './pages/ReportsPage'
 import InboxPage from './pages/InboxPage'
 import TimelinePage from './pages/TimelinePage'
 import SettingsPage from './pages/SettingsPage'
+import TradingReviewPage from './pages/TradingReviewPage'
 import ResearchLabPage from './pages/research/ResearchLabPage'
 import ResearchDossierPage from './pages/research/ResearchDossierPage'
 import ResearchComparePage from './pages/research/ResearchComparePage'
@@ -64,6 +65,7 @@ export default function App() {
         <Route path="/documents/review/:docId" element={<DocumentReview />} />
         <Route path="/plan" element={<PlanPage />} />
         <Route path="/options" element={<OptionsPage />} />
+        <Route path="/trading-review" element={<TradingReviewPage />} />
         <Route path="/real-estate" element={<RealEstatePage />} />
         <Route path="/real-estate/:id" element={<PropertyDetail />} />
         <Route path="/private" element={<PrivatePage />} />

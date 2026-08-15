@@ -100,9 +100,12 @@ function ImportedTradesSection({ pro }: { pro: boolean }) {
               Extracted from your Mar–Jun 2026 Moomoo Singapore statements. Premiums, fees and outcomes are the broker's own figures. USD.
             </p>
           </div>
-          <button onClick={() => setShowGaps((v) => !v)} className="text-[12px] font-medium text-warn hover:underline">
-            {IMPORTED_DATA_GAPS.length} data gaps
-          </button>
+          <div className="flex shrink-0 items-center gap-3">
+            <Link to="/trading-review" className="text-[12px] font-medium text-brand hover:underline">Fidelity trading review →</Link>
+            <button onClick={() => setShowGaps((v) => !v)} className="text-[12px] font-medium text-warn hover:underline">
+              {IMPORTED_DATA_GAPS.length} data gaps
+            </button>
+          </div>
         </div>
         {showGaps && (
           <div className="fade-up mt-3 rounded-lg bg-warn-soft/60 p-3">

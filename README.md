@@ -40,6 +40,20 @@ calculated / estimated / inferred`), source document id, as-of date, staleness a
 The UI renders this consistently via `ProvenanceChip`, `ConfidenceMeter` and `Freshness` — nothing
 relies on color alone.
 
+### Imported real datasets
+
+Two modules carry data imported from real broker records (identifiers masked, economics verbatim),
+kept strictly separate from the sample household and always labeled:
+
+- `src/data/moomooOptionTrades.ts` — option orders transcribed from Moomoo SG monthly statements,
+  rendered at the top of **Options**.
+- `src/data/fidelityTrading.ts` — 14 months of Fidelity Accounts_History exports reduced to FIFO
+  round trips, an options cash-flow program (settled vs live contracts), a per-symbol rotation map
+  and computed strengths/weaknesses, rendered as the **Trading Review** page. Reconciliation is
+  pinned by `src/data/__tests__/fidelity-trading.test.ts`.
+
+Both modules state their data gaps explicitly instead of papering over them.
+
 ### Layout of the code
 
 ```
