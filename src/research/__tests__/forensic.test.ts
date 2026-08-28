@@ -264,3 +264,69 @@ describe('cross-memo consistency', () => {
     expect(owl.conclusions.map((c) => c.q)).toEqual(pax.conclusions.map((c) => c.q))
   })
 })
+
+/**
+ * The revalidation log is the part of a memo most exposed to motivated reasoning:
+ * it is written after the price has moved, by the author of the original call.
+ * These tests hold it to the same arithmetic the rest of the memo answers to.
+ */
+describe('revalidation', () => {
+  it('has been re-tested against data published since the original cut', () => {
+    for (const memo of FORENSIC_MEMOS) expect(memo.revalidation).toBeDefined()
+  })
+
+  for (const memo of FORENSIC_MEMOS.filter((m) => m.revalidation)) {
+    const r = memo.revalidation!
+    describe(memo.symbol, () => {
+      it('revalidates the cut the memo actually carries', () => {
+        expect(r.originalAsOf).toBe(memo.asOf)
+        expect(Date.parse(r.asOf)).toBeGreaterThan(Date.parse(r.originalAsOf))
+      })
+
+      it('quotes the live price and rating the rest of the memo is written against', () => {
+        expect(r.priceNow).toBeCloseTo(memo.price, 2)
+        expect(r.ratingNow).toBe(memo.rating)
+      })
+
+      it('quotes the probability-weighted value the scenarios actually produce', () => {
+        expect(r.weightedValue).toBeCloseTo(weightedValue(memo), 1)
+      })
+
+      it('records what did not move as well as what did', () => {
+        expect(r.changes.length).toBeGreaterThanOrEqual(3)
+        expect(r.unchanged.length).toBeGreaterThanOrEqual(3)
+        expect(r.triggerNote.length).toBeGreaterThan(120)
+        for (const c of r.changes) expect(c.note.length).toBeGreaterThan(20)
+      })
+
+      it('grades every prediction once a revalidation pass has run', () => {
+        for (const p of memo.predictions) {
+          expect(p.status).toBeDefined()
+          expect(p.statusNote!.length).toBeGreaterThan(20)
+        }
+      })
+    })
+  }
+
+  /**
+   * The invariant that the 28 August pass existed to enforce. A memo may not call a
+   * stock undervalued while quoting a price above its own probability-weighted value —
+   * which is exactly the state OWL was left in by the price move, and exactly what a
+   * loosely-set downgrade trigger would have allowed to stand.
+   */
+  it('never rates a memo undervalued while it trades above its own weighted value', () => {
+    for (const memo of FORENSIC_MEMOS) {
+      if (memo.price > weightedValue(memo)) {
+        expect(memo.rating).not.toMatch(/undervalued/i)
+      }
+    }
+  })
+
+  it('never rates a memo overvalued while it trades below its own weighted value', () => {
+    for (const memo of FORENSIC_MEMOS) {
+      if (memo.price < weightedValue(memo)) {
+        expect(memo.rating).not.toMatch(/overvalued/i)
+      }
+    }
+  })
+})

@@ -76,7 +76,7 @@ probabilities summing to one, a bear case that actually loses money, and monoton
 axes of each sensitivity grid. Cross-memo tests confirm shared peers are quoted identically in both
 and that both answer the same twelve questions.
 
-`e2e/forensic.spec.ts` (9 tests) covers navigation from both modes, full render of every section,
+`e2e/forensic.spec.ts` (10 tests) covers navigation from both modes, full render of every section,
 the quarter-table expansion, the unknown-ticker fallback, section jump-links (which are buttons,
 not anchors — an `href="#id"` would clobber the HashRouter route), and a responsive guard asserting
 zero horizontal page overflow at 390 / 768 / 1366 px.
@@ -87,3 +87,26 @@ zero horizontal page overflow at 390 / 768 / 1366 px.
 formatter, which rounds per-share values (`$0.22`) to `$0` and mislabels index points as dollars.
 `valueFormat` overrides formatting on both the axis and the tooltip; omitting it preserves the
 previous behaviour exactly, so no existing chart changed.
+
+## Revalidation
+
+Both memos were re-tested on 2026-08-28 against data published after their 2026-07-31 cut, following
+the protocol in §Revalidation of the prompt. The pass is stored on the memo as `revalidation` and
+rendered directly under the masthead, because a reader arriving at a month-old memo needs the delta
+before any conclusion below it.
+
+The result was asymmetric and worth recording. Neither company reported new results, and no operating
+figure in either memo deteriorated. Blue Owl re-rated 29.5% on a Q2 revenue beat, a guidance comment
+that was *already in the original memo*, and two sell-side target raises — carrying it from 9.3× to
+12.0× fee-related earnings, which is precisely the multiple recovery the base case had been waiting
+for, arriving before the redemption evidence it was conditioned on. That put the shares above their
+own probability-weighted value of $10.85, so the rating moved to fairly valued. Patria moved 2.6% and
+held its rating, with one genuinely unhelpful new fact: management now guides the FY2026 FRE margin to
+stay below its 58–60% target, which corroborates the memo's central diagnosis while sitting exactly on
+the 54.0% floor of its own first prediction.
+
+The pass also failed one of our own controls. The OWL downgrade trigger had been set at $13.50 — 23%
+above the base case and 24% above the weighted value — so it did not fire on a move that inverted the
+valuation. The trigger was reset and the error is disclosed in the memo rather than argued around.
+Two unit tests now enforce the invariant directly: no memo may be rated undervalued while trading
+above its own weighted value, or overvalued while trading below it.

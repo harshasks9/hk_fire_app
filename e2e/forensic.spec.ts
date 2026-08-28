@@ -99,13 +99,46 @@ test.describe('Forensic memoranda', () => {
     await boot(page, { mode: 'pro' })
     await go(page, '/research/forensic/owl')
 
+    // Scope to the quarter section by id: the revalidation log renders its own table
+    // above this one, so `table.first()` no longer resolves to the quarter table.
+    const quarter = page.locator('#quarter')
     const toggle = page.getByRole('button', { name: /Show all \d+/ })
     await expect(toggle).toBeVisible()
-    const before = await page.locator('table').first().locator('tbody tr').count()
+    const before = await quarter.locator('table').first().locator('tbody tr').count()
     await toggle.click()
-    const after = await page.locator('table').first().locator('tbody tr').count()
+    const after = await quarter.locator('table').first().locator('tbody tr').count()
     expect(after).toBeGreaterThan(before)
     await expect(page.getByRole('button', { name: 'Show fewer' })).toBeVisible()
+  })
+
+  test('the revalidation log leads the memo and reports both what moved and what did not', async ({ page }) => {
+    await boot(page, { mode: 'pro' })
+    await go(page, '/research/forensic/owl')
+
+    // The user-facing point of the pass: what changed, at the top, before any conclusion.
+    const panel = page.getByRole('heading', { name: /What changed since 2026-07-31/ })
+    await expect(panel).toBeVisible()
+
+    // A revalidation that only reported movement would be a sales document, not research.
+    await expect(page.getByText('What did not change')).toBeVisible()
+    await expect(page.getByText('Did our pre-committed triggers work?')).toBeVisible()
+
+    // OWL re-rated through its own weighted value, so the rating must have moved with it.
+    await expect(page.getByText('Rating changed').first()).toBeVisible()
+    await expect(page.getByText('Fairly valued').first()).toBeVisible()
+
+    // The revalidation panel must sit above the first section of the memo body.
+    const panelY = await panel.boundingBox().then((b) => b!.y)
+    const summaryY = await page
+      .getByRole('heading', { name: /Investment conclusion/ })
+      .boundingBox()
+      .then((b) => b!.y)
+    expect(panelY).toBeLessThan(summaryY)
+
+    // PAX held its rating on the same pass — the log must be able to say "nothing changed" too.
+    await go(page, '/research/forensic/pax')
+    await expect(page.getByText('Rating unchanged').first()).toBeVisible()
+    await expect(page.getByText('At threshold').first()).toBeVisible()
   })
 
   test('the page body never scrolls horizontally, at any width', async ({ page }) => {

@@ -188,11 +188,63 @@ export interface SensitivityGrid {
   values: number[][]
 }
 
+export type PredictionStatus =
+  | 'Too early'
+  | 'On track'
+  | 'At threshold'
+  | 'Off track'
+  | 'Resolved — correct'
+  | 'Resolved — wrong'
+
 export interface Prediction {
   claim: string
   threshold: string
   by: string
   ifWrong: string
+  /** Set only by a revalidation pass; absent on a first cut. */
+  status?: PredictionStatus
+  /** Why the status is what it is, with the figure that decided it. */
+  statusNote?: string
+}
+
+/** One line of the revalidation log. */
+export interface RevalidationChange {
+  /** What was re-checked */
+  item: string
+  /** Value as published at the original cut */
+  was: string
+  /** Value now */
+  now: string
+  /** Effect on the thesis, not on the share price */
+  impact: 'Supports' | 'Weakens' | 'Neutral' | 'Breaks'
+  tier: Tier
+  note: string
+}
+
+/**
+ * A dated re-test of a memo against data published after its original cut.
+ * Records what moved, what did not, and whether the rating survived — including
+ * the cases where our own pre-committed trigger turned out to be badly set.
+ */
+export interface Revalidation {
+  /** Date of this revalidation pass */
+  asOf: string
+  /** The cut being revalidated */
+  originalAsOf: string
+  /** One-line verdict, written to be read on its own */
+  verdict: string
+  ratingWas: Rating
+  ratingNow: Rating
+  priceWas: number
+  priceNow: number
+  /** Probability-weighted value at the time of the pass — the number the rating is tested against */
+  weightedValue: number
+  /** Most material first */
+  changes: RevalidationChange[]
+  /** What did not move. Guards against a log that only reports movement. */
+  unchanged: string[]
+  /** Honest account of whether the pre-committed rating triggers behaved */
+  triggerNote: string
 }
 
 export interface RiskRow {
@@ -223,6 +275,8 @@ export interface ForensicMemo {
   exchange: string
   /** Date the analysis was cut */
   asOf: string
+  /** Present once the memo has been re-tested against later data. */
+  revalidation?: Revalidation
   /** Latest reported period covered */
   latestPeriod: string
   /** One-line thesis */

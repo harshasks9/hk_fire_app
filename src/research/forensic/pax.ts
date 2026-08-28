@@ -12,6 +12,37 @@ export const PAX_MEMO: ForensicMemo = {
   exchange: 'NASDAQ',
   asOf: '2026-07-31',
   latestPeriod: 'Q2 2026 (reported 31 July 2026)',
+
+  revalidation: {
+    asOf: '2026-08-28',
+    originalAsOf: '2026-07-31',
+    verdict:
+      'Thesis intact, rating unchanged, and one genuinely uncomfortable new fact. The Q2 call confirmed the FRE margin at exactly 54.0% — the floor of our own prediction — and management now expects the full-year margin to stay below its 58–60% target. That is the memo\'s central diagnosis being corroborated by the company in its own words, which is supportive of the analysis and unhelpful to the outcome. Meanwhile the shares moved 2.6% while Blue Owl moved 29.5%, so the relative case has widened sharply.',
+    ratingWas: 'Moderately undervalued',
+    ratingNow: 'Moderately undervalued',
+    priceWas: 11.37,
+    priceNow: 11.66,
+    weightedValue: 14.82,
+    changes: [
+      { item: 'FY2026 FRE margin guidance', was: 'Margin assumed to stabilise at 54–56%', now: 'Management expects FY2026 margin to remain below the 58–60% target', impact: 'Weakens', tier: 'C', note: 'Named causes on the Q2 call: faster-than-expected integration of lower-margin acquisitions (WP Global Partners closing), FX, and continued platform investment. This is precisely the mechanism the memo argued was structural rather than temporary — the company has now said so itself.' },
+      { item: 'Q2 2026 FRE margin', was: '54.0% (our figure at cut)', now: '54.0% (confirmed on the call)', impact: 'Neutral', tier: 'A', note: 'Sits exactly on the ≥54.0% threshold of prediction 1. No cushion in either direction.' },
+      { item: 'Fundraising', was: '$2.3bn in Q2; $4.5bn YTD', now: 'On pace to exceed both the $7bn full-year target and the 2025 record of $7.7bn', impact: 'Supports', tier: 'C', note: 'The top of the funnel is working. The memo never disputed this — its argument is about what happens between fundraising and per-share earnings.' },
+      { item: 'New mandate', was: 'Not disclosed at cut', now: '$1bn multi-asset mandate from an existing sovereign wealth client', impact: 'Supports', tier: 'C', note: 'Organic, institutional, and won from an existing relationship — the highest-quality flow in the mix, and the kind that does not carry acquisition margin dilution.' },
+      { item: 'Share price', was: '$11.37', now: '$11.66 (26 Aug)', impact: 'Neutral', tier: 'C', note: '+2.6%. Against a probability-weighted value of $14.82, the shares remain roughly 27% below fair value — essentially where they started.' },
+      { item: 'Sell-side positioning', was: 'Not tracked at cut', now: 'JPMorgan $15→$17; BofA $14→$15; consensus ~$15.6–16.0', impact: 'Neutral', tier: 'C', note: 'Consensus sits above our own base case of $14.75. Recorded for completeness; it is not evidence, and the memo\'s scepticism is about conversion, which no price target tests.' },
+      { item: 'Relative position vs Blue Owl', was: 'PAX at a 17% discount to OWL on FRE', now: 'PAX at a 34% discount to OWL on FRE', impact: 'Supports', tier: 'B', note: '7.9× against 12.0×. The pair diverged by roughly 27 points in four weeks with no change in either company\'s fundamentals. If the pair trade in the index memo was right, it is now materially more right.' },
+    ],
+    unchanged: [
+      'FY2026 FRE guidance of $225–245m ($1.42–1.54 per share) — reaffirmed, not revised.',
+      'Fee-earning AUM $48.9bn, +32% year on year; fee-related earnings $57.1m, +24%.',
+      'Permanent capital at 22% of fee-earning AUM ($11bn).',
+      'Quarterly dividend of $0.1625, covered at roughly 51% of distributable earnings.',
+      'The five-year conversion record — DE per share $1.023 in 2021 against $1.270 in 2025 — which is the whole argument and which no single quarter can move.',
+      'Single-segment reporting, so the platform economics still cannot be independently verified.',
+    ],
+    triggerNote:
+      'Neither pre-committed trigger has fired and both were correctly set. The upgrade line sits below $9.00 and the downgrade above $16.00 without evidence of margin stabilising above 55%; at $11.66 the shares are between them, which is what a live thesis looks like. Note the asymmetry deliberately built into the downgrade trigger: it requires margin evidence as well as price, and the margin evidence has just moved against us. If the shares reached $16.00 on the current margin trajectory, that trigger would fire.',
+  },
   headline:
     'Five and a half years of relentless platform building that has produced almost no per-share earnings growth — a genuinely cheap stock whose discount is half deserved and half mistake.',
   rating: 'Moderately undervalued',
@@ -22,18 +53,18 @@ export const PAX_MEMO: ForensicMemo = {
     downgrade: 'Above $16.00 without evidence that FRE margin has stabilised above 55%.',
   },
 
-  price: 11.37,
-  priceAsOf: 'Early July 2026',
+  price: 11.66,
+  priceAsOf: '26 August 2026',
   dilutedShares: 158.4,
-  marketCap: 1.80,
+  marketCap: 1.85,
   netDebt: 0.25,
   dividendPs: 0.65,
-  dividendYieldPct: 5.72,
+  dividendYieldPct: 5.57,
 
   headlineStats: [
-    { label: 'Price / FY26E FRE per share', value: '7.7×', sub: '$11.37 ÷ $1.48 (guidance midpoint)', tier: 'B', tone: 'gain' },
-    { label: 'Price / DE per share', value: '8.9×', sub: '$11.37 ÷ $1.28 annualised', tier: 'B', tone: 'gain' },
-    { label: 'Dividend yield', value: '5.7%', sub: '$0.1625 per quarter', tier: 'A', tone: 'gain' },
+    { label: 'Price / FY26E FRE per share', value: '7.9×', sub: '$11.66 ÷ $1.48 (guidance midpoint)', tier: 'B', tone: 'gain' },
+    { label: 'Price / DE per share', value: '9.1×', sub: '$11.66 ÷ $1.28 annualised', tier: 'B', tone: 'gain' },
+    { label: 'Dividend yield', value: '5.6%', sub: '$0.1625 per quarter, reaffirmed for Q2 2026', tier: 'A', tone: 'gain' },
     { label: 'Dividend as % of DE', value: '51%', sub: 'Comfortably covered — unlike Blue Owl', tier: 'B', tone: 'gain' },
     { label: 'FRE growth', value: '+24%', sub: 'Q2 2026 YoY, $46.1m → $57.1m', tier: 'A', tone: 'gain' },
     { label: 'FRE margin', value: '54.0%', sub: 'Down from 58.9% in FY2025', tier: 'A', tone: 'loss' },
@@ -43,13 +74,13 @@ export const PAX_MEMO: ForensicMemo = {
 
   debate: {
     marketBelieves:
-      'That Patria is a well-run Latin American manager whose growth is bought rather than earned, and whose shareholders never see it. The evidence is on the tape: fee-earning AUM has compounded to $48.9bn, fee-related earnings have grown 135% since 2021, and the stock is 33% below its $17.00 IPO price. At 7.7× fee-related earnings — the cheapest listed alternative manager we can find — the market is saying that Patria converts fee growth into shareholder earnings so poorly that the fee growth barely matters.',
+      'That Patria is a well-run Latin American manager whose growth is bought rather than earned, and whose shareholders never see it. The evidence is on the tape: fee-earning AUM has compounded to $48.9bn, fee-related earnings have grown 135% since 2021, and the stock is 31% below its $17.00 IPO price. At 7.9× fee-related earnings — the cheapest listed alternative manager we can find — the market is saying that Patria converts fee growth into shareholder earnings so poorly that the fee growth barely matters.',
     mustGoRight:
-      'The conversion has to change. FRE must grow to the $225–245m guided for 2026 and beyond while the margin stabilises above 54%, the three 2026 acquisitions must integrate without further margin dilution, and performance-related earnings — absent for three years — must actually arrive from the maturing Infrastructure and Private Equity vintages. On those, $11.37 is materially too low.',
+      'The conversion has to change. FRE must grow to the $225–245m guided for 2026 and beyond while the margin stabilises above 54%, the three 2026 acquisitions must integrate without further margin dilution, and performance-related earnings — absent for three years — must actually arrive from the maturing Infrastructure and Private Equity vintages. On those, $11.66 is materially too low.',
     underestimated:
       'The fee stream itself is better than the price implies. FRE grew 24% year on year and 13% sequentially, fee-earning AUM 32%, and management raised $4.5bn in the first half against a full-year target it now expects to exceed. Patria is domiciled in the Cayman Islands with a very low effective tax rate, its dividend is covered at roughly half of distributable earnings, and it has no gated vehicles, no redemption queue and no leveraged balance sheet — the three things destroying sentiment in the US managers. It trades at a third of Ares\' multiple with a comparable FRE growth rate.',
     deRating:
-      'The five-year record is genuinely damning and it is not a mystery. Distributable earnings per share were $1.023 in 2021 and $1.270 in 2025 — a 5.5% annual growth rate over a period in which fee-related earnings grew 135% and the platform roughly quintupled. Every dollar of fee growth has been offset by the disappearance of performance income, by dilution of 2.8% a year, and now by an FRE margin falling 490bp as acquisitions consolidate. If that pattern holds, 7.7× is not cheap; it is the correct price for a business that grows everything except the number shareholders own.',
+      'The five-year record is genuinely damning and it is not a mystery. Distributable earnings per share were $1.023 in 2021 and $1.270 in 2025 — a 5.5% annual growth rate over a period in which fee-related earnings grew 135% and the platform roughly quintupled. Every dollar of fee growth has been offset by the disappearance of performance income, by dilution of 2.8% a year, and now by an FRE margin falling 490bp as acquisitions consolidate. If that pattern holds, 7.9× is not cheap; it is the correct price for a business that grows everything except the number shareholders own.',
     swingFactors: [
       'Whether the FRE margin stabilises. It fell from 58.9% (FY2025) to 54.0% (Q2 2026) — nearly five points — as acquired businesses consolidated at lower margins.',
       'Whether performance-related earnings return. Patria realised roughly $110m against a $180m 2023–2025 target; the entire 2021→2025 per-share stagnation traces to this line.',
@@ -118,7 +149,7 @@ export const PAX_MEMO: ForensicMemo = {
     { commitment: 'Performance-related earnings of $180m cumulative, 2023–2025', target: '$180m', actual: '≈$110m realised', status: 'Behind plan', note: 'A shortfall of roughly 40%. Management subsequently reframed to "$120–140m over the next three years", which is a target being rolled forward rather than met. This single line explains the per-share stagnation.', tier: 'C' },
     { commitment: 'FRE margin', target: 'Maintain ~57–60% through scaling', actual: '59% → 58.9% → 54.0% (Q2 2026)', status: 'Behind plan', note: 'Held for four years, then broke. Scale produced no operating leverage and acquisitions are now consuming margin.', tier: 'A' },
     { commitment: 'Per-share value creation', target: 'Implicit in every Investor Day', actual: 'DE per share $1.023 → $1.270 (+24% over four years)', status: 'Behind plan', note: 'FRE indexed to 250 against DE per share indexed to 125 (FY2021 = 100). Shareholders received exactly half the platform\'s progress.', tier: 'B' },
-    { commitment: 'Shareholder return since listing', target: '$17.00 IPO price, January 2021', actual: '$11.37 plus an estimated $3.0–3.4 of cumulative dividends', status: 'Behind plan', note: 'Approximately −13% to −16% total return over five and a half years, roughly −2.5% to −3% annualised. Tier D on the dividend accumulation.', tier: 'D' },
+    { commitment: 'Shareholder return since listing', target: '$17.00 IPO price, January 2021', actual: '$11.66 plus an estimated $3.2–3.6 of cumulative dividends', status: 'Behind plan', note: 'Approximately −13% to −16% total return over five and a half years, roughly −2.5% to −3% annualised. Tier D on the dividend accumulation.', tier: 'D' },
     { commitment: '$70bn target by end-2027', target: '$70bn', actual: '$48.9bn FEAUM at Q2 2026; $47.4bn pro-forma at YE2025', status: 'On track', note: 'Requires ~20% annual growth from here. Achievable at the current 32% rate — but note how much of that rate is acquired.', tier: 'C' },
   ],
 
@@ -217,7 +248,7 @@ export const PAX_MEMO: ForensicMemo = {
     { k: 'Share count at listing (derived)', v: '138.1m', tier: 'B', period: 'FY2021', note: 'Derived: DE $141.3m ÷ $1.023 per share.' },
     { k: 'Cumulative dilution since 2021', v: '+14.6%', tier: 'B', note: '≈2.8% a year, from acquisition equity (Moneda was ~60% stock) and compensation.' },
     { k: 'IPO offering', v: '34.6m Class A shares at $17.00', tier: 'A', period: 'January 2021', note: 'Priced above the range on Nasdaq; trading began 22 January 2021.' },
-    { k: 'Market capitalisation', v: '$1.80bn', tier: 'B', note: '$11.37 × 158.4m derived shares.' },
+    { k: 'Market capitalisation', v: '$1.85bn', tier: 'B', note: '$11.66 × 158.4m derived shares.' },
     { k: 'Non-controlling interests', v: 'Solis 49%, Bancolombia 49%', tier: 'A', note: 'Two consolidated platforms where roughly half the economics accrue outside the listed share.' },
     { k: 'Deferred acquisition consideration', v: 'abrdn: £20m + interest at year two, £20m at year three (performance-linked)', tier: 'A', note: 'Plus undisclosed deferred elements on Solis, RBR and WP Global.' },
     { k: 'Control structure', v: 'Founder-controlled dual class', tier: 'C', note: 'Cayman-domiciled with a founder-controlled voting structure. Alignment is high; minority protection is correspondingly low.' },
@@ -226,21 +257,21 @@ export const PAX_MEMO: ForensicMemo = {
     'Dilution here is slower than Blue Owl\'s in percentage terms but arguably more consequential, because it is attached to acquisitions whose return on consideration has been poor. The cleanest test available: Patria has issued roughly 20m shares (14.6%) and spent an identifiable ~$400m+ of cash on acquisitions since 2021, and distributable earnings per share rose from $1.023 to $1.270. Whatever the acquired platforms earn gross, the return on total consideration measured at the per-share line is in the low single digits. The consolidation of Solis and Bancolombia at 51% compounds this: fee-earning AUM is reported at 100% while roughly half the economics of those platforms accrue to the minority partner.',
 
   peers: [
-    { ticker: 'PAX', name: 'Patria Investments', marketCap: 1.80, fre: 235, freGrowthPct: 24, freMarginPct: 54.0, pFre: 7.7, divYieldPct: 5.7, permCapital: '22% of FEAUM', tier: 'B', note: 'Cheapest in the group on every multiple. Also the smallest, least liquid, least diversified geographically and thinnest on disclosure.' },
-    { ticker: 'OWL', name: 'Blue Owl Capital', marketCap: 14.67, fre: 1573, freGrowthPct: 9, freMarginPct: 58.5, pFre: 9.3, divYieldPct: 9.8, permCapital: '85% of fees', tier: 'B', note: 'The nearest comparison on cheapness. Better capital, worse liability structure, uncovered dividend. See the companion memo.' },
+    { ticker: 'PAX', name: 'Patria Investments', marketCap: 1.85, fre: 235, freGrowthPct: 24, freMarginPct: 54.0, pFre: 7.9, divYieldPct: 5.6, permCapital: '22% of FEAUM', tier: 'B', note: 'Cheapest in the group on every multiple, and now by a wider margin over Blue Owl than at the original cut. Also the smallest, least liquid, least diversified geographically and thinnest on disclosure.' },
+    { ticker: 'OWL', name: 'Blue Owl Capital', marketCap: 19.00, fre: 1573, freGrowthPct: 9, freMarginPct: 58.5, pFre: 12.0, divYieldPct: 7.6, permCapital: '85% of fees', tier: 'B', note: 'Better capital, worse liability structure, uncovered dividend — and no longer the nearest comparison on cheapness after re-rating 29.5% in August. See the companion memo.' },
     { ticker: 'ARES', name: 'Ares Management', marketCap: 42.14, fre: 1856, freGrowthPct: 26, freMarginPct: null, pFre: 22.7, divYieldPct: null, permCapital: 'High', tier: 'C', note: 'Q1 2026 FRE $464m (+26%); AUM $644bn. Almost identical FRE growth rate to Patria at three times the multiple — the clearest evidence of an emerging-market and scale discount.' },
     { ticker: 'TPG', name: 'TPG Inc.', marketCap: 15.92, fre: 988, freGrowthPct: 36, freMarginPct: 44, pFre: 16.1, divYieldPct: 5.4, permCapital: 'Lower', tier: 'C', note: 'Faster FRE growth but a 44% margin — ten points below Patria\'s already-depressed 54%. Trades at 2.1× Patria\'s multiple.' },
     { ticker: 'HLNE', name: 'Hamilton Lane', marketCap: null, fre: 345, freGrowthPct: 25, freMarginPct: 50, pFre: null, divYieldPct: 2.7, permCapital: 'Low', tier: 'C', note: 'The closest structural analogue: fee-centric, solutions-heavy, no balance sheet. FY2026 FRE $345m (+25%) on $142bn of AUM.' },
     { ticker: 'STEP', name: 'StepStone Group', marketCap: 5.47, fre: null, freGrowthPct: null, freMarginPct: null, pFre: null, divYieldPct: 2.6, permCapital: 'Low', tier: 'C', note: 'A $5.47bn market capitalisation for a private-markets solutions business — three times Patria\'s, on a broadly comparable fee model.' },
   ],
   peerNote:
-    'Patria grows fee-related earnings at 24% — within two points of Ares — at a 54% margin that exceeds TPG\'s 44%, and trades at 7.7× against their 22.7× and 16.1×. Three things justify a discount, and only three. Duration: 22% permanent capital against "high" for Ares. Geography and currency: Latin American markets, local-currency assets, and an exit environment that has been closed for years. Disclosure: a single reportable segment, which makes independent verification of platform economics impossible. What does *not* justify the discount is the growth rate, the margin, the dividend coverage, or the liability structure — on all four Patria is at or above the group. A warranted discount to Ares of 50–55% implies 10–11× FRE, against 7.7× on offer. A price/fee-earning-AUM cross-check says the same thing: Patria trades at 3.7% of fee-earning AUM against Blue Owl\'s 7.7%, but earns 0.87% on that capital against Blue Owl\'s 1.42% — adjusted for the fee rate, Patria is still the cheaper capital base.',
+    'Patria grows fee-related earnings at 24% — within two points of Ares — at a 54% margin that exceeds TPG\'s 44%, and trades at 7.9× against their 22.7× and 16.1×. Three things justify a discount, and only three. Duration: 22% permanent capital against "high" for Ares. Geography and currency: Latin American markets, local-currency assets, and an exit environment that has been closed for years. Disclosure: a single reportable segment, which makes independent verification of platform economics impossible. What does *not* justify the discount is the growth rate, the margin, the dividend coverage, or the liability structure — on all four Patria is at or above the group. A warranted discount to Ares of 50–55% implies 10–11× FRE, against 7.9× on offer. A price/fee-earning-AUM cross-check says the same thing: Patria trades at 3.8% of fee-earning AUM against Blue Owl\'s 10.0%, but earns 0.87% on that capital against Blue Owl\'s 1.42% — adjusted for the fee rate, Patria is still the cheaper capital base, and after Blue Owl\'s August re-rating it is cheaper by a wider margin than at the original cut.',
 
   valuation: [
     { name: 'A — Normalised FRE multiple', approach: 'FY2026E FRE per share of $1.48 (guidance midpoint $235m) × 9–13×, anchored on a 50–55% discount to Ares for duration, geography and disclosure.', low: 13.3, base: 16.3, high: 19.2, note: 'Uses company guidance rather than our own forecast, which is the most defensible input available. Weight 35%.' },
     { name: 'B — Distributable earnings / yield', approach: 'DE per share of $1.28 annualised × 9–12×; cross-checked against the $0.65 dividend at a 4.5–5.5% required yield.', low: 11.5, base: 13.4, high: 15.4, note: 'The sceptic\'s method, and deliberately so — it values what has actually reached shareholders rather than what the fee line promises. At a 5.5% required dividend yield the value is $11.82, barely above today\'s price. Weight 35%.' },
     { name: 'C — Sum of the parts', approach: 'Recurring FRE stream at 11×, plus haircut carry, plus balance sheet, less net debt, deferred consideration and non-controlling interests.', low: 12.1, base: 14.5, high: 17.2, note: 'The only method that explicitly charges Patria for the Solis and Bancolombia minorities and the abrdn earn-outs. Weight 30%.' },
-    { name: 'D — Price / fee-earning AUM (cross-check only)', approach: 'Market cap ÷ FEAUM = 3.7% ($1.80bn ÷ $48.9bn) against a blended fee rate of ~0.87%.', low: 0, base: 0, high: 0, note: 'Not used in the weighted value. Half of Blue Owl\'s 7.7% on a fee rate 40% lower — so on a fee-rate-adjusted basis Patria is roughly 20% cheaper still. Supportive, too crude to size on.' },
+    { name: 'D — Price / fee-earning AUM (cross-check only)', approach: 'Market cap ÷ FEAUM = 3.8% ($1.85bn ÷ $48.9bn) against a blended fee rate of ~0.87%.', low: 0, base: 0, high: 0, note: 'Not used in the weighted value. Roughly a third of Blue Owl\'s 10.0% on a fee rate 40% lower — so on a fee-rate-adjusted basis Patria is materially cheaper still, and more so than four weeks ago. Supportive, too crude to size on.' },
   ],
 
   sotp: [
@@ -255,10 +286,10 @@ export const PAX_MEMO: ForensicMemo = {
   implied: [
     { variable: 'Normalised FRE per share', impliedByPrice: '$1.04 at 11×', ourView: '$1.42–1.54 guided for FY2026', assessment: 'Aggressive' },
     { variable: 'DE per share growth', impliedByPrice: '≈0% in perpetuity at a 9% required return', ourView: '5.5% delivered over five years; 8–10% achievable if the margin stabilises', assessment: 'Aggressive' },
-    { variable: 'FRE multiple', impliedByPrice: '7.7×, a 66% discount to Ares', ourView: '10–11× warranted (a 50–55% discount)', assessment: 'Aggressive' },
+    { variable: 'FRE multiple', impliedByPrice: '7.9×, a 65% discount to Ares', ourView: '10–11× warranted (a 50–55% discount)', assessment: 'Aggressive' },
     { variable: 'FRE margin', impliedByPrice: 'Continued decline below 54%', ourView: 'Stabilises at 54–56% once the 2026 acquisitions annualise', assessment: 'Reasonable' },
     { variable: 'Performance-related earnings', impliedByPrice: 'Zero, permanently', ourView: 'Zero is too harsh, but the guided $120–140m deserves a 40% haircut given the reset', assessment: 'Reasonable' },
-    { variable: 'Dividend', impliedByPrice: 'A 5.7% yield implies doubt about growth, not about coverage', ourView: 'Covered at ~51% of DE with genuine retention capacity', assessment: 'Aggressive' },
+    { variable: 'Dividend', impliedByPrice: 'A 5.6% yield implies doubt about growth, not about coverage', ourView: 'Covered at ~51% of DE with genuine retention capacity', assessment: 'Aggressive' },
     { variable: 'Latin American exit markets', impliedByPrice: 'Closed indefinitely', ourView: 'Cyclically closed; the 2024 Aguas Pacifico realisation shows the carry is real when they open', assessment: 'Reasonable' },
   ],
 
@@ -285,7 +316,7 @@ export const PAX_MEMO: ForensicMemo = {
       name: 'Base',
       probability: 0.50,
       narrative:
-        'FY2026 FRE lands inside the $225–245m guidance and the margin stabilises at 54–56% as the acquisitions annualise. The acquisition cadence slows — the $70bn target is reached with more organic contribution than the last three years. Performance income returns at roughly two-thirds of the guided rate as the 2017–2019 Infrastructure vintages exit. FRE per share compounds at about 10% a year, dilution slows to under 2%, and the multiple re-rates modestly from 7.7× to 10.5× as a second and third year of double-digit per-share growth breaks the five-year pattern.',
+        'FY2026 FRE lands inside the $225–245m guidance and the margin stabilises at 54–56% as the acquisitions annualise. The acquisition cadence slows — the $70bn target is reached with more organic contribution than the last three years. Performance income returns at roughly two-thirds of the guided rate as the 2017–2019 Infrastructure vintages exit. FRE per share compounds at about 10% a year, dilution slows to under 2%, and the multiple re-rates modestly from 7.9× to 10.5× as a second and third year of double-digit per-share growth breaks the five-year pattern.',
       assumptions: [
         { k: 'Gross fundraising', v: '$9–11bn p.a.' },
         { k: 'Fee-earning AUM', v: '+15% CAGR, reaching the $70bn target around 2028' },
@@ -335,15 +366,15 @@ export const PAX_MEMO: ForensicMemo = {
 
   redTeam: {
     case:
-      'The entire bull case rests on a multiple re-rating that five and a half years of evidence says will not happen — and the evidence is not ambiguous. Distributable earnings per share were $1.023 in 2021 and $1.270 in 2025. Four years, 5.5% a year, over a period in which management quintupled the platform, completed seven acquisitions and grew fee-related earnings 135%. The stock is down 33% from its IPO price and total return is negative. Every year the story is that scale will bring operating leverage; the FRE margin was 59% in 2021 and is 54% today. Every year the story is that carry is about to arrive; the $180m three-year target produced $110m and was quietly reset to $120–140m over a *later* three years. Meanwhile the company reports one segment, so no outside investor can verify which vertical is earning what, or where five points of margin went. It consolidates Solis and Bancolombia at 51% — reporting 100% of their fee-earning AUM while owning half the economics — which flatters every AUM-based metric in the deck, including the $70bn target. And the business is a Latin American manager with dollar-reported revenue and local-currency assets, run by a founder-controlled dual-class structure that leaves minority holders no recourse if the acquisition cadence continues. 7.7× is not a discount waiting to close. It is the market correctly capitalising a management team that has demonstrated, repeatedly, that it will convert shareholder capital into AUM rather than into per-share earnings.',
+      'The entire bull case rests on a multiple re-rating that five and a half years of evidence says will not happen — and the evidence is not ambiguous. Distributable earnings per share were $1.023 in 2021 and $1.270 in 2025. Four years, 5.5% a year, over a period in which management quintupled the platform, completed seven acquisitions and grew fee-related earnings 135%. The stock is down 33% from its IPO price and total return is negative. Every year the story is that scale will bring operating leverage; the FRE margin was 59% in 2021 and is 54% today. Every year the story is that carry is about to arrive; the $180m three-year target produced $110m and was quietly reset to $120–140m over a *later* three years. Meanwhile the company reports one segment, so no outside investor can verify which vertical is earning what, or where five points of margin went. It consolidates Solis and Bancolombia at 51% — reporting 100% of their fee-earning AUM while owning half the economics — which flatters every AUM-based metric in the deck, including the $70bn target. And the business is a Latin American manager with dollar-reported revenue and local-currency assets, run by a founder-controlled dual-class structure that leaves minority holders no recourse if the acquisition cadence continues. 7.9× is not a discount waiting to close. It is the market correctly capitalising a management team that has demonstrated, repeatedly, that it will convert shareholder capital into AUM rather than into per-share earnings.',
     adjudication:
       'This is the stronger of the two red teams in this pair, and we accept most of it. The per-share record is exactly as stated and it is the reason Patria is sized at 1–2% rather than the 3–4% the raw multiple would suggest. We accept the carry-reset point in full and have haircut the guided range by 40%. We accept the consolidation point and have deducted $120m for the Solis and Bancolombia minorities in the sum-of-the-parts — very few sell-side models do. We accept that single-segment reporting is a legitimate, permanent component of the discount rather than a temporary one. Where we disagree is on what has actually changed. The 2021→2025 stagnation has a single dominant cause, and it is arithmetically identifiable: the DE/FRE conversion ratio fell from 164% to 99%, contributing −$0.83 per share against +$1.36 from fee growth. That collapse cannot repeat, because performance income is already at approximately zero — the ratio cannot fall another 65 points from 99%. From here, per-share DE growth converges on FRE per share growth minus dilution: roughly 12–14% less 2%, or 10–12%. The bear case correctly describes the last five years and incorrectly extrapolates the mechanism, because the mechanism has already fully played out. The margin is the live question, and it is the first kill criterion.',
   },
 
   predictions: [
-    { claim: 'FRE margin stabilises rather than continuing to fall', threshold: '≥54.0% in each of Q3 and Q4 2026', by: 'FY2026 results (February 2027)', ifWrong: 'Acquisitions are structurally lower-margin rather than temporarily dilutive; the FRE multiple in method A is too high and base case falls towards $12.' },
-    { claim: 'FY2026 FRE lands inside guidance', threshold: '$225–245m ($1.42–1.54 per share)', by: 'FY2026 results (February 2027)', ifWrong: 'A first guidance miss would confirm that acquired growth is not additive at the earnings line and would justify the market\'s scepticism outright.' },
-    { claim: 'Per-share distributable earnings finally break the five-year pattern', threshold: 'FY2027 DE per share ≥ $1.55 (+21% on FY2025)', by: 'FY2027 results (February 2028)', ifWrong: 'The conversion argument in our adjudication is wrong, the discount is permanent, and the position should be exited regardless of multiple.' },
+    { claim: 'FRE margin stabilises rather than continuing to fall', threshold: '≥54.0% in each of Q3 and Q4 2026', by: 'FY2026 results (February 2027)', ifWrong: 'Acquisitions are structurally lower-margin rather than temporarily dilutive; the FRE multiple in method A is too high and base case falls towards $12.', status: 'At threshold', statusNote: 'Q2 printed exactly 54.0% — on the line, with no cushion. Management has since guided the full-year margin to stay below its 58–60% target and named acquisition integration as the cause. The prediction is live and is the single most likely of the three to break. Resolves February 2027.' },
+    { claim: 'FY2026 FRE lands inside guidance', threshold: '$225–245m ($1.42–1.54 per share)', by: 'FY2026 results (February 2027)', ifWrong: 'A first guidance miss would confirm that acquired growth is not additive at the earnings line and would justify the market\'s scepticism outright.', status: 'On track', statusNote: 'Guidance of $225–245m reaffirmed at Q2 with FRE of $57.1m in the quarter and fundraising running ahead of target. Annualising Q2 alone gives $228m, inside the range at its lower end.' },
+    { claim: 'Per-share distributable earnings finally break the five-year pattern', threshold: 'FY2027 DE per share ≥ $1.55 (+21% on FY2025)', by: 'FY2027 results (February 2028)', ifWrong: 'The conversion argument in our adjudication is wrong, the discount is permanent, and the position should be exited regardless of multiple.', status: 'Too early', statusNote: 'Unchanged and untested — resolves February 2028. The margin guidance is a mild negative read-through, since FY2027 DE per share of $1.55 assumes the margin drag proves temporary.' },
   ],
 
   killCriteria: [
@@ -377,10 +408,10 @@ export const PAX_MEMO: ForensicMemo = {
     { q: 'How much growth since listing reached the public share?', a: 'Half, at best. Fee-related earnings indexed to 250 against distributable earnings per share at 125 (FY2021 = 100). In cash terms: FRE grew 135% and DE per share grew 24% over four years, or 5.5% a year. Including dividends, the total return since the $17.00 IPO is roughly −13% to −16%.' },
     { q: 'Has capital allocation been disciplined?', a: 'No. Seven acquisitions in five years, roughly 20m shares issued and $400m+ of identifiable cash consideration, delivered 5.5% annual per-share distributable earnings growth. The dividend has been covered twice over throughout, so the retention was genuine — it was deployed poorly. This is the central charge against management and it is supported by their own reported figures.' },
     { q: 'Does the latest quarter strengthen or weaken the thesis?', a: 'Both, and roughly in balance. FRE +24%, fee-earning AUM +32%, fundraising ahead of target and guidance reaffirmed — the operating quarter was strong. The 490bp margin decline to 54.0% is the third consecutive year of acquisitions diluting earning quality, and it is precisely the mechanism the bear case describes. Net: neutral to marginally negative.' },
-    { q: 'What does the price already assume?', a: '7.7× fee-related earnings — a 66% discount to Ares, which grows FRE at a nearly identical rate — implies roughly zero perpetual growth in distributable earnings per share, zero value for the guided $120–140m of carry, and continued margin erosion. The market is extrapolating the 2021–2025 conversion failure indefinitely.' },
+    { q: 'What does the price already assume?', a: '7.9× fee-related earnings — a 65% discount to Ares, which grows FRE at a nearly identical rate — implies roughly zero perpetual growth in distributable earnings per share, zero value for the guided $120–140m of carry, and continued margin erosion. The market is extrapolating the 2021–2025 conversion failure indefinitely.' },
     { q: 'Most defensible base-case value per share?', a: '$14.75. Weighted 35% on 11× normalised FRE of $1.48 ($16.28), 35% on 10.5× normalised DE of $1.28 ($13.44), and 30% on a sum-of-the-parts that charges for the minorities and the deferred consideration ($14.46).' },
     { q: 'Bear and bull values?', a: 'Bear $8.80 (30% probability) — the margin keeps falling, carry never arrives, an FX shock, 7× on flat earnings. Bull $24.00 (20%) — Latin American exits reopen, the conversion ratio recovers towards 120%, and the multiple closes half the gap to Hamilton Lane. Probability-weighted: $14.82, roughly 30% above the current price.' },
-    { q: 'Expected annualised return including dividends?', a: 'Probability-weighted, approximately 14% over five years and 15% over three. The base case returns roughly 18% annualised. Note the asymmetry: even the bear case only returns about −2% a year over five years, because the covered 5.7% dividend does most of the defensive work.' },
+    { q: 'Expected annualised return including dividends?', a: 'Probability-weighted, approximately 14% over five years and 15% over three. The base case returns roughly 18% annualised. Note the asymmetry: even the bear case only returns about −2% a year over five years, because the covered 5.6% dividend does most of the defensive work.' },
     { q: 'What would invalidate the thesis?', a: 'FRE margin below 52% for two consecutive quarters; a second reset of the performance-earnings target; another acquisition above $150m before per-share growth exceeds 10%; share count above 170m without matching DE per share; or fee-earning AUM falling in USD terms for two quarters.' },
     { q: 'Three KPIs to monitor each quarter?', a: 'FRE margin; year-on-year distributable earnings per share; realised performance-related earnings against the $120–140m three-year target.' },
   ],
@@ -411,7 +442,8 @@ export const PAX_MEMO: ForensicMemo = {
     { label: 'Acquisition terms — Moneda, Credit Suisse Brazil, Bancolombia, abrdn', publisher: 'Patria Investments press releases / Reuters', period: '2021–2024', tier: 'A' },
     { label: 'Solis, RBR REITs and WP Global — closings and fee-earning AUM added; $47.4bn pro-forma; $70bn target', publisher: 'Patria Q4 2025 earnings call', period: 'February 2026', tier: 'C' },
     { label: 'Q1 2026 results — total AUM $59.3bn', publisher: 'Patria Investments / 6-K (SEC)', period: 'Q1 2026', tier: 'C', url: 'https://www.sec.gov/Archives/edgar/data/0001825570/000162828026031676/patriareportsfirstquarte.htm' },
-    { label: 'Share price $11.37, market capitalisation ~$1.84bn, dividend yield 5.7%', publisher: 'Market data aggregators', period: 'Early July 2026', tier: 'C' },
+    { label: 'Share price $11.66, market capitalisation ~$1.85bn, dividend yield 5.6%', publisher: 'Market data aggregators', period: '26 August 2026', tier: 'C' },
+    { label: 'Q2 2026 earnings call transcript — FRE margin drivers, sovereign wealth mandate', publisher: 'Patria Investments / transcript providers', period: '7 August 2026', tier: 'C' },
     { label: 'Peer data — Ares, TPG, Hamilton Lane, StepStone', publisher: 'Company releases via secondary aggregators', period: 'Q1–Q2 2026', tier: 'C' },
   ],
 }

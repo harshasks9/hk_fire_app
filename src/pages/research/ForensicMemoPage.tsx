@@ -11,6 +11,7 @@ import {
   TIER_META,
   type Tier,
   type ForensicMemo,
+  type Revalidation,
 } from '@/research/forensic'
 import { Card, SectionHead, Badge, Button, Divider, type BadgeTone } from '@/components/ui'
 import { AreaChart, Waterfall, DonutRing, CHART_COLORS } from '@/components/charts'
@@ -43,6 +44,22 @@ const RATING_TONE: Record<string, BadgeTone> = {
   'Fairly valued': 'neutral',
   'Moderately overvalued': 'loss',
   'Materially overvalued': 'loss',
+}
+
+const IMPACT_TONE: Record<string, BadgeTone> = {
+  Supports: 'gain',
+  Weakens: 'warn',
+  Breaks: 'loss',
+  Neutral: 'neutral',
+}
+
+const PREDICTION_TONE: Record<string, BadgeTone> = {
+  'Too early': 'neutral',
+  'On track': 'gain',
+  'At threshold': 'warn',
+  'Off track': 'loss',
+  'Resolved — correct': 'gain',
+  'Resolved — wrong': 'loss',
 }
 
 const STATUS_TONE: Record<string, BadgeTone> = {
@@ -160,6 +177,146 @@ function Legend({ items }: { items: { label: string; color: string; dashed?: boo
 
 /* ------------------------------------------------------------------ page */
 
+/**
+ * The revalidation log — a dated re-test of the memo against data published after
+ * its original cut. Rendered at the top because a reader arriving at a month-old
+ * memo needs to know what has moved before they read a single conclusion.
+ */
+function RevalidationPanel({ r }: { r: Revalidation }) {
+  const ratingChanged = r.ratingWas !== r.ratingNow
+  const priceMovePct = ((r.priceNow - r.priceWas) / r.priceWas) * 100
+  const vsWeighted = ((r.priceNow - r.weightedValue) / r.weightedValue) * 100
+
+  return (
+    <Card pad className="border-brand/30 bg-brand-soft/20">
+      <div className="flex flex-wrap items-start justify-between gap-3">
+        <div className="min-w-0">
+          <div className="flex flex-wrap items-center gap-2">
+            <Icon name="refresh" size={15} className="shrink-0 text-brand" />
+            <h2 className="text-[15px] font-semibold tracking-tight text-ink">
+              What changed since {r.originalAsOf}
+            </h2>
+            <Badge tone="brand">Revalidated {r.asOf}</Badge>
+            {ratingChanged ? (
+              <Badge tone="warn" icon="alert">
+                Rating changed
+              </Badge>
+            ) : (
+              <Badge tone="neutral">Rating unchanged</Badge>
+            )}
+          </div>
+          <p className="mt-2 max-w-3xl text-[13px] leading-relaxed text-ink">{r.verdict}</p>
+        </div>
+      </div>
+
+      {/* the four numbers that decide the rating */}
+      <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
+        {[
+          { label: 'Price at cut', value: `$${r.priceWas.toFixed(2)}`, sub: r.originalAsOf, tone: 'neutral' as const },
+          {
+            label: 'Price now',
+            value: `$${r.priceNow.toFixed(2)}`,
+            sub: `${priceMovePct > 0 ? '+' : ''}${priceMovePct.toFixed(1)}%`,
+            tone: priceMovePct > 0 ? ('gain' as const) : ('loss' as const),
+          },
+          {
+            label: 'Probability-weighted value',
+            value: `$${r.weightedValue.toFixed(2)}`,
+            sub: 'unchanged by this pass',
+            tone: 'neutral' as const,
+          },
+          {
+            label: 'Price vs weighted value',
+            value: `${vsWeighted > 0 ? '+' : ''}${vsWeighted.toFixed(0)}%`,
+            sub: vsWeighted > 0 ? 'trading above fair value' : 'trading below fair value',
+            tone: vsWeighted > 0 ? ('loss' as const) : ('gain' as const),
+          },
+        ].map((x) => (
+          <div key={x.label} className="min-w-0 rounded-ctl border border-line bg-surface p-3">
+            <div className="text-[11px] leading-tight text-ink3">{x.label}</div>
+            <div
+              className={cn(
+                'tnum mt-1.5 text-[18px] font-semibold leading-none',
+                x.tone === 'gain' && 'text-gain',
+                x.tone === 'loss' && 'text-loss',
+                x.tone === 'neutral' && 'text-ink',
+              )}
+            >
+              {x.value}
+            </div>
+            <div className="mt-1 text-[11px] leading-snug text-ink3">{x.sub}</div>
+          </div>
+        ))}
+      </div>
+
+      {ratingChanged && (
+        <div className="mt-4 flex flex-wrap items-center gap-2 rounded-ctl border border-warn/30 bg-warn-soft/25 px-3 py-2.5 text-[12.5px] text-ink2">
+          <span className="text-ink3">Rating</span>
+          <Badge tone={RATING_TONE[r.ratingWas] ?? 'neutral'}>{r.ratingWas}</Badge>
+          <Icon name="chevronRight" size={13} className="shrink-0 text-ink3" />
+          <Badge tone={RATING_TONE[r.ratingNow] ?? 'neutral'}>{r.ratingNow}</Badge>
+        </div>
+      )}
+
+      {/* what moved */}
+      <div className="mt-5">
+        <div className="text-[11px] font-semibold uppercase tracking-wide text-ink3">What moved</div>
+        <TableWrap minW={720} className="mt-2">
+          <thead>
+            <tr>
+              <TH>Item</TH>
+              <TH>At the cut</TH>
+              <TH>Now</TH>
+              <TH>Effect on thesis</TH>
+            </tr>
+          </thead>
+          <tbody>
+            {r.changes.map((c) => (
+              <tr key={c.item}>
+                <TD className="font-medium text-ink">
+                  <span className="flex items-start gap-1.5">
+                    <span>{c.item}</span>
+                    <TierChip tier={c.tier} />
+                  </span>
+                  <span className="mt-1 block text-[11.5px] leading-snug text-ink3">{c.note}</span>
+                </TD>
+                <TD className="tnum whitespace-nowrap text-ink3">{c.was}</TD>
+                <TD className="tnum whitespace-nowrap text-ink">{c.now}</TD>
+                <TD>
+                  <Badge tone={IMPACT_TONE[c.impact] ?? 'neutral'}>{c.impact}</Badge>
+                </TD>
+              </tr>
+            ))}
+          </tbody>
+        </TableWrap>
+      </div>
+
+      {/* what did not move — guards against a log that only reports movement */}
+      <div className="mt-5 grid gap-4 md:grid-cols-2">
+        <div className="min-w-0">
+          <div className="text-[11px] font-semibold uppercase tracking-wide text-ink3">
+            What did not change
+          </div>
+          <ul className="mt-2 space-y-1.5">
+            {r.unchanged.map((u) => (
+              <li key={u} className="flex items-start gap-2 text-[12.5px] leading-relaxed text-ink2">
+                <Icon name="check" size={13} className="mt-0.5 shrink-0 text-ink3" />
+                <span>{u}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="min-w-0">
+          <div className="text-[11px] font-semibold uppercase tracking-wide text-ink3">
+            Did our pre-committed triggers work?
+          </div>
+          <p className="mt-2 text-[12.5px] leading-relaxed text-ink2">{r.triggerNote}</p>
+        </div>
+      </div>
+    </Card>
+  )
+}
+
 const SECTIONS = [
   { id: 'summary', label: 'Summary' },
   { id: 'debate', label: 'The debate' },
@@ -236,10 +393,16 @@ function Memo({ memo }: { memo: ForensicMemo }) {
                 {memo.name} <span className="text-ink3">({memo.exchange}: {memo.symbol})</span>
               </h1>
               <Badge tone={RATING_TONE[memo.rating] ?? 'neutral'}>{memo.rating}</Badge>
+              {memo.revalidation && (
+                <Badge tone="brand" icon="refresh">
+                  Revalidated {memo.revalidation.asOf}
+                </Badge>
+              )}
             </div>
             <p className="mt-2 max-w-3xl text-[14px] leading-relaxed text-ink">{memo.headline}</p>
             <p className="mt-2 text-[12px] text-ink3">
               Analysis cut {memo.asOf} · latest reported period: {memo.latestPeriod}
+              {memo.revalidation && ` · revalidated ${memo.revalidation.asOf} against data published since`}
             </p>
           </div>
           <div className="shrink-0 text-right">
@@ -279,6 +442,11 @@ function Memo({ memo }: { memo: ForensicMemo }) {
           ))}
         </div>
       </Card>
+
+      {/* ------------------------------------------------- revalidation log
+          Sits directly under the masthead: a reader arriving at a memo that was
+          cut weeks ago needs to see what has moved before any conclusion below. */}
+      {memo.revalidation && <RevalidationPanel r={memo.revalidation} />}
 
       {/* ---------------------------------------------------------- nav
           Buttons, not anchors: the app runs on a HashRouter, so an `href="#id"`
@@ -1180,7 +1348,15 @@ function Memo({ memo }: { memo: ForensicMemo }) {
                       <Badge tone="info">{p.by}</Badge>
                     </div>
                     <p className="tnum mt-1.5 text-[12px] text-brand">{p.threshold}</p>
-                    <p className="mt-1 text-[11.5px] leading-snug text-ink3">
+                    {p.status && (
+                      <div className="mt-2 rounded-ctl border border-line bg-surface p-2.5">
+                        <Badge tone={PREDICTION_TONE[p.status] ?? 'neutral'}>{p.status}</Badge>
+                        {p.statusNote && (
+                          <p className="mt-1.5 text-[11.5px] leading-snug text-ink2">{p.statusNote}</p>
+                        )}
+                      </div>
+                    )}
+                    <p className="mt-1.5 text-[11.5px] leading-snug text-ink3">
                       <b>If wrong: </b>
                       {p.ifWrong}
                     </p>

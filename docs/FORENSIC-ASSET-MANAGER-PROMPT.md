@@ -269,3 +269,38 @@ conclusion, show the arithmetic, challenge inconsistencies between filings, pres
 remarks and Q&A, and say clearly when the disclosure does not support a precise answer.
 
 Prose budget: no section over 700 words except the executive summary. Prefer a table to a paragraph.
+
+## Revalidation protocol
+
+A memo is a dated claim, and a dated claim that is never re-tested is a marketing document. When
+re-running a memo against data published after its cut, produce a **revalidation log** and place it
+at the top of the memo, above every conclusion it might change.
+
+The log must contain, in this order:
+
+1. **A one-line verdict** that can be read alone, stating whether the thesis survived and why.
+2. **The four numbers that decide the rating**: price at the cut, price now, the probability-weighted
+   value, and the price expressed as a percentage of that value.
+3. **What moved** — a table of item / value at cut / value now / effect on the thesis, each tiered.
+   Grade the effect on the *thesis*, not on the share price: a price rise that removes a discount is
+   `Weakens`, not `Supports`.
+4. **What did not move.** Mandatory. A log that reports only movement is a sales document. State
+   explicitly which operating figures are unchanged, and flag any information the market appears to
+   have re-rated on that was *already in the original memo* — that distinction separates new evidence
+   from sentiment.
+5. **A status on every prediction**: `Too early`, `On track`, `At threshold`, `Off track`,
+   `Resolved — correct`, or `Resolved — wrong`, each with the figure that decided it.
+6. **An audit of your own triggers.** State whether the pre-committed rating triggers fired. If the
+   rating changes while a trigger did *not* fire, say so and explain why the trigger was mis-set
+   rather than hiding behind its letter. A downgrade trigger set above the probability-weighted value
+   is not a discipline; it is a licence, and it should be reset in the same pass.
+
+Two rules govern the rating itself:
+
+- **A memo may not be rated undervalued while quoting a price above its own probability-weighted
+  value**, nor overvalued while trading below it. If price has moved through the valuation, the rating
+  moves with it — the scenarios do not get quietly marked up to preserve the call.
+- **Do not revise scenario targets on the basis of commentary alone.** Reported figures move targets;
+  management guidance, sell-side price targets and share-price momentum do not. If a guidance raise
+  would lift the base case, state the condition and the date on which it would be tested instead of
+  pre-emptively marking to it.

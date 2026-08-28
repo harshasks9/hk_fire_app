@@ -22,6 +22,12 @@ const RATING_TONE: Record<string, BadgeTone> = {
 }
 
 export default function ForensicIndexPage() {
+  // Latest revalidation date across the covered memos, if any have been re-tested.
+  const revalidatedOn = FORENSIC_MEMOS.map((m) => m.revalidation?.asOf)
+    .filter((d): d is string => Boolean(d))
+    .sort()
+    .at(-1)
+
   return (
     <div className="fade-up space-y-5 pb-10">
       <Card pad className="border-brand/30 bg-brand-soft/20">
@@ -44,6 +50,63 @@ export default function ForensicIndexPage() {
           </div>
         </div>
       </Card>
+
+      {/* What changed on the latest revalidation pass — shown before the memos,
+          because a reader landing here needs the delta before the conclusions. */}
+      {revalidatedOn && (
+        <Card pad className="border-brand/30 bg-brand-soft/20">
+          <div className="flex items-start gap-3">
+            <Icon name="refresh" size={16} className="mt-0.5 shrink-0 text-brand" />
+            <div className="min-w-0">
+              <div className="flex flex-wrap items-center gap-2">
+                <h2 className="text-[15px] font-semibold tracking-tight text-ink">
+                  Updated {revalidatedOn}
+                </h2>
+                <Badge tone="brand">Both memos revalidated</Badge>
+              </div>
+              <p className="mt-2 max-w-3xl text-[13px] leading-relaxed text-ink">
+                Both memos were re-tested against everything published since the 2026-07-31 cut. No operating figure in
+                either memo deteriorated, and neither company reported new results. What moved was price — and only on
+                one side.
+              </p>
+              <ul className="mt-3 space-y-2">
+                {FORENSIC_MEMOS.filter((m) => m.revalidation).map((m) => {
+                  const r = m.revalidation!
+                  const move = ((r.priceNow - r.priceWas) / r.priceWas) * 100
+                  const changed = r.ratingWas !== r.ratingNow
+                  return (
+                    <li key={m.symbol} className="rounded-ctl border border-line bg-surface p-3">
+                      <div className="flex flex-wrap items-center gap-2">
+                        <Link
+                          to={`/research/forensic/${m.symbol.toLowerCase()}`}
+                          className="text-[13px] font-semibold text-ink hover:text-brand"
+                        >
+                          {m.symbol}
+                        </Link>
+                        <span className={cn('tnum text-[12.5px] font-medium', move > 0 ? 'text-gain' : 'text-loss')}>
+                          {move > 0 ? '+' : ''}
+                          {move.toFixed(1)}%
+                        </span>
+                        <span className="tnum text-[12px] text-ink3">
+                          ${r.priceWas.toFixed(2)} → ${r.priceNow.toFixed(2)}
+                        </span>
+                        {changed ? (
+                          <Badge tone="warn" icon="alert">
+                            {r.ratingWas} → {r.ratingNow}
+                          </Badge>
+                        ) : (
+                          <Badge tone="neutral">Rating held</Badge>
+                        )}
+                      </div>
+                      <p className="mt-1.5 text-[12px] leading-relaxed text-ink2">{r.verdict}</p>
+                    </li>
+                  )
+                })}
+              </ul>
+            </div>
+          </div>
+        </Card>
+      )}
 
       <div className="grid gap-5 lg:grid-cols-2">
         {FORENSIC_MEMOS.map((m) => (
@@ -91,12 +154,18 @@ export default function ForensicIndexPage() {
           </table>
         </div>
         <p className="mt-4 rounded-ctl border border-line bg-surface2 p-4 text-[12.5px] leading-relaxed text-ink2">
-          <b className="text-ink">If forced to own one.</b> Patria, on the arithmetic — a wider discount, a dividend
-          covered twice over, no gated vehicles, and a per-share stagnation whose single dominant cause (a
-          distributable-earnings-to-fee-earnings ratio that fell from 164% to 99%) cannot repeat, because it has already
-          fully played out. Blue Owl owns the better franchise and the better fee rate, but it must both rebase a
-          dividend it has over-paid for two years and clear a redemption queue before the market will re-rate it. Own
-          both only if you accept that they share one macro exposure: the multiple the market pays for private-markets
+          <b className="text-ink">If forced to own one.</b> Patria — and after August, by a wider margin than when this
+          pair was first written. The original case was that Patria was the better arithmetic at a similar discount.
+          Blue Owl has since re-rated 29.5% while Patria moved 2.6%, so the discount is no longer similar: Patria trades
+          at 7.9× fee-related earnings against Blue Owl's 12.0×, a 34% gap where four weeks ago it was 17%. Nothing in
+          either business changed to justify that. Patria still offers a dividend covered twice over, no gated vehicles,
+          and a per-share stagnation whose single dominant cause (a distributable-earnings-to-fee-earnings ratio that
+          fell from 164% to 99%) cannot repeat, because it has already fully played out — set against one new and
+          genuinely unhelpful fact, that management now guides the FRE margin to stay below its 58–60% target for the
+          full year. Blue Owl still owns the better franchise and the better fee rate, but the market has now paid for
+          the re-rating in advance of the dividend rebase and the redemption queue clearing, which is why it is rated
+          fairly valued rather than cheap. Own both only if you accept that they share one macro exposure: the multiple
+          the market pays for private-markets
           fee streams.
         </p>
       </Card>
