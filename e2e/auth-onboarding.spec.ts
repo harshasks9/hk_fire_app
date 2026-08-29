@@ -9,23 +9,29 @@ test.describe('Authentication', () => {
     await expect(page.getByRole('heading', { name: 'Welcome back' })).toBeVisible()
   })
 
-  test('password path requires MFA; empty password is rejected inline', async ({ page }) => {
+  test('access key: empty and wrong keys are rejected inline, the right key signs in', async ({ page }) => {
     await boot(page, { auth: false, onboarded: true })
     await go(page, '/auth')
+
     await page.getByRole('button', { name: 'Continue' }).click()
-    await expect(page.getByRole('alert')).toContainText('password')
-    await page.getByLabel('Password').fill('correct-horse-battery')
+    await expect(page.getByRole('alert')).toContainText('access key')
+
+    // A wrong key must not open the workspace — the gate is weak, but it is a gate.
+    await page.getByLabel('Access key').fill('123456')
     await page.getByRole('button', { name: 'Continue' }).click()
-    await expect(page.getByRole('heading', { name: 'Two-factor check' })).toBeVisible()
-    for (let i = 0; i < 6; i++) await page.getByLabel(`Digit ${i + 1}`).fill(String(i + 1))
-    await page.getByRole('button', { name: /Verify & sign in/ }).click()
+    await expect(page.getByRole('alert')).toContainText('not right')
+    await expect(page.getByRole('heading', { name: 'Welcome back' })).toBeVisible()
+
+    await page.getByLabel('Access key').fill('888888')
+    await page.getByRole('button', { name: 'Continue' }).click()
     await expect(page.getByText('Net worth', { exact: false }).first()).toBeVisible()
   })
 
-  test('passkey sign-in for a new user lands in onboarding', async ({ page }) => {
+  test('a new user signing in with the access key lands in onboarding', async ({ page }) => {
     await boot(page, { auth: false, onboarded: false })
     await go(page, '/auth')
-    await page.getByRole('button', { name: 'Sign in with passkey' }).click()
+    await page.getByLabel('Access key').fill('888888')
+    await page.getByRole('button', { name: 'Continue' }).click()
     await expect(page.getByRole('heading', { name: "Let's build your financial picture" })).toBeVisible()
   })
 })

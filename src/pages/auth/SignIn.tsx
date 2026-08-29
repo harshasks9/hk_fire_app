@@ -2,50 +2,45 @@ import React, { useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useApp } from '@/state/AppContext'
 import { Button } from '@/components/ui'
-import { Icon } from '@/components/icons'
-import { cn } from '@/lib/cn'
 
-type Step = 'credentials' | 'mfa' | 'create'
+/**
+ * Shared access key for the workspace.
+ *
+ * This is a single client-side gate, not authentication: the key ships in the
+ * JavaScript bundle and anyone who can load the page can read it. It keeps a
+ * casual visitor out of a demo build; it does not protect anything, and no real
+ * secret should ever be placed behind it.
+ *
+ * Override per-deployment with VITE_ACCESS_KEY rather than editing this file.
+ */
+const ACCESS_KEY = (import.meta.env.VITE_ACCESS_KEY ?? '').trim() || '888888'
 
 export default function SignIn() {
   const app = useApp()
   const navigate = useNavigate()
-  const [step, setStep] = useState<Step>('credentials')
-  const [email, setEmail] = useState('harshasks@gmail.com')
-  // Password is read from the DOM at submit time: browser/password-manager
-  // autofill paints a value without firing React onChange, so state alone
-  // would wrongly report the field as empty.
-  const passwordRef = useRef<HTMLInputElement>(null)
-  const [code, setCode] = useState(['', '', '', '', '', ''])
+  // Read at submit time: password-manager autofill paints a value without
+  // firing React onChange, so component state alone can wrongly read as empty.
+  const keyRef = useRef<HTMLInputElement>(null)
   const [error, setError] = useState('')
   const [busy, setBusy] = useState(false)
 
-  const finish = () => {
+  const submit = (e: React.FormEvent) => {
+    e.preventDefault()
+    const entered = keyRef.current?.value.trim() ?? ''
+    if (!entered) {
+      setError('Enter your access key.')
+      return
+    }
+    if (entered !== ACCESS_KEY) {
+      setError('That key is not right. Try again.')
+      return
+    }
+    setError('')
     setBusy(true)
     setTimeout(() => {
       app.setAuthenticated(true)
       navigate(app.onboarded ? '/' : '/onboarding')
-    }, 600)
-  }
-
-  const submitCreds = (e: React.FormEvent) => {
-    e.preventDefault()
-    if (!passwordRef.current?.value) {
-      setError('Enter your password — or use a passkey below.')
-      return
-    }
-    setError('')
-    setStep('mfa')
-  }
-
-  const submitCode = (e: React.FormEvent) => {
-    e.preventDefault()
-    if (code.join('').length < 6) {
-      setError('Enter the 6-digit code from your authenticator app.')
-      return
-    }
-    setError('')
-    finish()
+    }, 400)
   }
 
   return (
@@ -92,81 +87,27 @@ export default function SignIn() {
             <span className="font-display text-[18px] font-semibold text-ink">Meridian</span>
           </div>
 
-          {step === 'credentials' && (
-            <form onSubmit={submitCreds} className="fade-up">
-              <h2 className="font-display text-[22px] font-semibold tracking-tight text-ink">Welcome back</h2>
-              <p className="mt-1 text-[13px] text-ink2">Sign in to your wealth workspace.</p>
-              <label className="mt-6 block">
-                <span className="mb-1.5 block text-[12px] font-medium text-ink2">Email</span>
-                <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} autoComplete="email"
-                  className="h-11 w-full rounded-ctl border border-line bg-surface px-3.5 text-[14px] text-ink outline-none focus:border-brand" />
-              </label>
-              <label className="mt-3.5 block">
-                <span className="mb-1.5 block text-[12px] font-medium text-ink2">Password</span>
-                <input ref={passwordRef} type="password" onChange={() => setError('')} autoComplete="current-password" placeholder="••••••••••••"
-                  className="h-11 w-full rounded-ctl border border-line bg-surface px-3.5 text-[14px] text-ink outline-none focus:border-brand" />
-              </label>
-              {error && <p role="alert" className="mt-2 text-[12px] text-loss">{error}</p>}
-              <Button type="submit" variant="primary" size="lg" className="mt-5 w-full" disabled={busy}>Continue</Button>
-              <Button type="button" variant="secondary" size="lg" icon="fingerprint" className="mt-2.5 w-full" onClick={finish}>
-                Sign in with passkey
-              </Button>
-              <p className="mt-6 text-center text-[12.5px] text-ink2">
-                New to Meridian?{' '}
-                <button type="button" onClick={() => setStep('create')} className="font-medium text-brand hover:underline">Create an account</button>
-              </p>
-            </form>
-          )}
-
-          {step === 'mfa' && (
-            <form onSubmit={submitCode} className="fade-up">
-              <button type="button" onClick={() => setStep('credentials')} className="mb-4 inline-flex items-center gap-1 text-[12.5px] text-ink2 hover:text-ink"><Icon name="chevronLeft" size={13} />Back</button>
-              <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-brand-soft text-brand"><Icon name="lock" size={20} /></div>
-              <h2 className="font-display text-[22px] font-semibold tracking-tight text-ink">Two-factor check</h2>
-              <p className="mt-1 text-[13px] text-ink2">Enter the 6-digit code from your authenticator app.</p>
-              <div className="mt-6 flex gap-2">
-                {code.map((d, i) => (
-                  <input
-                    key={i}
-                    id={`otp-${i}`}
-                    inputMode="numeric"
-                    maxLength={1}
-                    value={d}
-                    aria-label={`Digit ${i + 1}`}
-                    onChange={(e) => {
-                      const v = e.target.value.replace(/\D/g, '')
-                      const next = [...code]
-                      next[i] = v
-                      setCode(next)
-                      if (v && i < 5) document.getElementById(`otp-${i + 1}`)?.focus()
-                    }}
-                    className="tnum h-13 w-full rounded-ctl border border-line bg-surface text-center text-[20px] font-semibold text-ink outline-none focus:border-brand"
-                  />
-                ))}
-              </div>
-              {error && <p role="alert" className="mt-2 text-[12px] text-loss">{error}</p>}
-              <Button type="submit" variant="primary" size="lg" className="mt-5 w-full" disabled={busy}>{busy ? 'Verifying…' : 'Verify & sign in'}</Button>
-              <p className="mt-4 text-center text-[12px] text-ink3">Lost your device? Use a recovery code.</p>
-            </form>
-          )}
-
-          {step === 'create' && (
-            <form onSubmit={(e) => { e.preventDefault(); app.setOnboarded(false); finish() }} className="fade-up">
-              <button type="button" onClick={() => setStep('credentials')} className="mb-4 inline-flex items-center gap-1 text-[12.5px] text-ink2 hover:text-ink"><Icon name="chevronLeft" size={13} />Back</button>
-              <h2 className="font-display text-[22px] font-semibold tracking-tight text-ink">Create your workspace</h2>
-              <p className="mt-1 text-[13px] text-ink2">A few minutes now; a complete financial picture after your first upload.</p>
-              <label className="mt-6 block">
-                <span className="mb-1.5 block text-[12px] font-medium text-ink2">Email</span>
-                <input type="email" defaultValue={email} className="h-11 w-full rounded-ctl border border-line bg-surface px-3.5 text-[14px] text-ink outline-none focus:border-brand" />
-              </label>
-              <label className="mt-3.5 block">
-                <span className="mb-1.5 block text-[12px] font-medium text-ink2">Password</span>
-                <input type="password" placeholder="12+ characters" className="h-11 w-full rounded-ctl border border-line bg-surface px-3.5 text-[14px] text-ink outline-none focus:border-brand" />
-                <span className="mt-1 block text-[11px] text-ink3">You'll set up MFA and an optional passkey during onboarding.</span>
-              </label>
-              <Button type="submit" variant="primary" size="lg" className="mt-5 w-full" disabled={busy}>Create account</Button>
-            </form>
-          )}
+          <form onSubmit={submit} className="fade-up">
+            <h2 className="font-display text-[22px] font-semibold tracking-tight text-ink">Welcome back</h2>
+            <p className="mt-1 text-[13px] text-ink2">Enter your access key to open the workspace.</p>
+            <label className="mt-6 block">
+              <span className="mb-1.5 block text-[12px] font-medium text-ink2">Access key</span>
+              <input
+                ref={keyRef}
+                type="password"
+                inputMode="numeric"
+                autoComplete="one-time-code"
+                maxLength={32}
+                placeholder="••••••"
+                onChange={() => setError('')}
+                className="tnum h-11 w-full rounded-ctl border border-line bg-surface px-3.5 text-center text-[18px] tracking-[0.4em] text-ink outline-none focus:border-brand"
+              />
+            </label>
+            {error && <p role="alert" className="mt-2 text-[12px] text-loss">{error}</p>}
+            <Button type="submit" variant="primary" size="lg" className="mt-5 w-full" disabled={busy}>
+              {busy ? 'Opening…' : 'Continue'}
+            </Button>
+          </form>
         </div>
       </div>
     </div>
