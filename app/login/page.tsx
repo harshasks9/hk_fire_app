@@ -4,6 +4,18 @@ export default async function LoginPage({
   searchParams: Promise<{ error?: string; retry?: string }>
 }) {
   const params = await searchParams
+  const unconfigured = !process.env.SESSION_SECRET || !process.env.APP_PASSWORD
+  if (unconfigured) {
+    return (
+      <div className="mx-auto mt-16 max-w-sm">
+        <h1 className="mb-1 text-xl font-semibold">Five Delta</h1>
+        <p className="text-sm" style={{ color: 'var(--warn)' }} role="alert">
+          Not configured yet: set <code>SESSION_SECRET</code> and <code>APP_PASSWORD</code> (see the README) and
+          redeploy. The app stays locked until then.
+        </p>
+      </div>
+    )
+  }
   return (
     <div className="mx-auto mt-16 max-w-xs">
       <h1 className="mb-1 text-xl font-semibold">Five Delta</h1>

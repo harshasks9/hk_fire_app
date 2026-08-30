@@ -12,6 +12,16 @@ export async function middleware(req: NextRequest) {
   ) {
     return NextResponse.next()
   }
+  // Unconfigured deployment: fail closed, but to the login screen's notice, not a 500.
+  if (!process.env.SESSION_SECRET) {
+    if (pathname.startsWith('/api/')) {
+      return NextResponse.json({ error: 'SESSION_SECRET not configured' }, { status: 503 })
+    }
+    const url = req.nextUrl.clone()
+    url.pathname = '/login'
+    url.search = ''
+    return NextResponse.redirect(url)
+  }
   const token = req.cookies.get(SESSION_COOKIE)?.value
   if (await verifySessionToken(token)) return NextResponse.next()
   if (pathname.startsWith('/api/')) {

@@ -25,7 +25,12 @@ async function createDb(): Promise<Db> {
   const { PGlite } = await import('@electric-sql/pglite')
   const { drizzle } = await import('drizzle-orm/pglite')
   const path = await import('node:path')
-  const dataDir = process.env.PGLITE_DIR ?? path.join(process.cwd(), '.data', 'pglite')
+  // On Vercel without DATABASE_URL the only writable location is /tmp —
+  // ephemeral per instance, enough for the app to onboard instead of crash.
+  const fallbackDir = process.env.VERCEL
+    ? '/tmp/fivedelta-pglite'
+    : path.join(process.cwd(), '.data', 'pglite')
+  const dataDir = process.env.PGLITE_DIR ?? fallbackDir
   if (!process.env.PGLITE_MEMORY) {
     const fs = await import('node:fs')
     fs.mkdirSync(dataDir, { recursive: true })
