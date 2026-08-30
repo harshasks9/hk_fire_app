@@ -229,6 +229,22 @@ export async function setSetting(key: string, value: unknown): Promise<void> {
 /** True when the tickers table is empty — the empty database onboards, it doesn't crash. */
 export async function isDatabaseEmpty(): Promise<boolean> {
   const db = await getDb()
-  const rows = await db.select({ symbol: schema.tickers.symbol }).from(schema.tickers).limit(1)
-  return rows.length === 0
+  try {
+    const rows = await db.select({ symbol: schema.tickers.symbol }).from(schema.tickers).limit(1)
+    return rows.length === 0
+  } catch (err) {
+    // 42P01 undefined_table: the database exists but was never migrated.
+    // That is an empty database for onboarding purposes, not an outage.
+    if (isMissingRelation(err)) return true
+    throw err
+  }
+}
+
+function isMissingRelation(err: unknown): boolean {
+  let e: unknown = err
+  for (let depth = 0; depth < 4 && e != null; depth++) {
+    if (typeof e === 'object' && (e as { code?: unknown }).code === '42P01') return true
+    e = (e as { cause?: unknown }).cause
+  }
+  return false
 }

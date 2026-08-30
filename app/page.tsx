@@ -13,8 +13,10 @@ export default async function Home() {
     return (
       <EmptyState title="Nothing here yet.">
         <p>
-          The database is empty. Run <code>npm run db:seed</code> to load the universe, holdings and the 2026
-          record, then confirm your share counts in <Link href="/settings" style={{ color: 'var(--accent)' }}>Settings</Link>.
+          The database is empty or not yet migrated. From a checkout of this repo, run{' '}
+          <code>DATABASE_URL=… npm run db:migrate</code> then <code>DATABASE_URL=… npm run db:seed</code> to create
+          the tables and load the universe, holdings and the 2026 record — then confirm your share counts in{' '}
+          <Link href="/settings" style={{ color: 'var(--accent)' }}>Settings</Link>.
         </p>
       </EmptyState>
     )
