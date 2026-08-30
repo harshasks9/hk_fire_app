@@ -18,9 +18,15 @@ async function createDb(): Promise<Db> {
   if (url) {
     const { drizzle } = await import('drizzle-orm/postgres-js')
     const postgres = (await import('postgres')).default
+    const path = await import('node:path')
     // prepare:false keeps this compatible with transaction-mode poolers (Neon, pgbouncer).
     const client = postgres(url, { prepare: false, max: 5 })
-    return drizzle(client, { schema })
+    const db = drizzle(client, { schema })
+    // Single-user app: apply migrations on connect so a fresh database needs
+    // no CLI step. After the first run this is one cheap lookup per cold start.
+    const { migrate } = await import('drizzle-orm/postgres-js/migrator')
+    await migrate(db, { migrationsFolder: path.join(process.cwd(), 'drizzle') })
+    return db
   }
   const { PGlite } = await import('@electric-sql/pglite')
   const { drizzle } = await import('drizzle-orm/pglite')
