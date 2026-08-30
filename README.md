@@ -1,122 +1,133 @@
-# Meridian — Personal Wealth Operating System
+# Five Delta
 
-A production-quality foundation for a personal financial operating system: one place to understand
-**what you own, what you owe, what changed, why it changed, what income you're generating, what
-needs attention, and what to consider doing** — with every important value traceable to a source
-document.
+A private, single-user execution system for a weekly options income programme.
+**Adherence, not analysis.** The strategy already works; every dollar lost came
+from drift, novelty, rescue, or omission — so the app's job is to make executing
+the rule the path of least resistance and make deviating from it require
+deliberate, recorded effort.
 
-Built from the revised BRD and the Simple Mode / Pro Mode PRD.
+The app is boring four days a week, and that is the design.
 
-## Running it
+## The loop
+
+Everything routes through one state machine; the home screen is always the
+current state and nothing else.
+
+| State | When | What it shows |
+|---|---|---|
+| **HOLD** | Mon–Thu | Usually "Nothing to do." Live positions as rows with one chip each (`Healthy` / `Watch` / `Close now`). If an exit rule fires, HOLD is replaced by exactly one instruction and one button — no other action is offered. |
+| **WRITE** | Friday | A guided five-step sequence (close out → direction → tickets → limits → done) with a completion stamp. Steps cannot be skipped. A Friday that passes uncompleted is recorded as a **missed week** and counted on the scoreboard. |
+| **LOG** | after fills | Enter the actual fill (form or broker screenshot parsed by Gemini into an *editable* form — never saved without confirmation). Logging records the trade, recalibrates that name's IV from a real transacted price, and updates the scoreboard. Unlogged approved tickets nag after two sessions. |
+
+Other surfaces: the **Discipline Score** (cadence / rule / stop / capacity — four
+plain fractions; P&L one level down), the **deviation ledger** (rule said, what
+happened, the number), the **valuation gate** (five inputs, three required, side
+only — delta picks the strike), the **OWL concentration-exit sleeve**, and a
+**pro mode** per position that explains a decision already made and never opens
+a new one. There is no roll button, no chain browser, no screener.
+
+## Stack
+
+Next.js 15 (App Router) · TypeScript strict · Tailwind 4 · Drizzle ORM ·
+Postgres in production, embedded PGlite for local dev · Vitest ·
+Vercel (hosting + cron) · Gemini (fetch and narrate only — deterministic code
+in `lib/options.ts` computes every number) · CallMeBot WhatsApp (outbound only).
+
+Every modelled figure renders with a dotted underline and the tooltip
+"modelled — verify on the Fidelity chain."
+
+## Local development
 
 ```bash
 npm install
-npm run dev        # http://localhost:5173
-npm run build      # typecheck + production bundle
-npm run preview    # serve the production build
+npm run db:seed        # embedded PGlite in .data/ — no external DB needed
+SESSION_SECRET=dev APP_PASSWORD=dev npm run dev
 ```
 
-Sign in with any credentials (passkey button skips MFA), or walk through the full onboarding flow
-(Settings → "Replay onboarding").
+Tests (the math module is where correctness matters — the brief's regression
+`solveStrikeForDelta(513.53, 7/365, 0.27, 'call', 0.05, 2.5) → 547.5` is in
+`lib/options.test.ts`):
 
-## Product architecture
-
-### Two modes, one data model
-
-- **Simple Mode** — a calm daily briefing: net worth, what changed (in plain language), attention
-  items (max 5), recommended actions (max 3), portfolio, income, watchlist, plan.
-- **Pro Mode** — a complete wealth workstation: tax lots, TWR/MWR vs benchmark, options greeks and
-  payoff diagrams, real-estate underwriting (NOI, cap rate, CoC, DSCR, LTV, IRR), syndication
-  waterfalls, liability covenants, dual-jurisdiction tax, scenarios with Monte Carlo, reports,
-  data-lineage and a financial inbox.
-
-Both modes read the **same records through the same selectors** (`src/data/selectors.ts`).
-Switching modes never changes a number — only how much of the model is surfaced.
-
-### Provenance model
-
-Every material value carries a `SourceRef`: provenance (`verified / confirmed / imported / market /
-calculated / estimated / inferred`), source document id, as-of date, staleness and confidence.
-The UI renders this consistently via `ProvenanceChip`, `ConfidenceMeter` and `Freshness` — nothing
-relies on color alone.
-
-### Two datasets, never mixed
-
-**Personal mode (default)** runs on a canonical client-side store (`src/store/`): accounts, assets,
-liabilities, an imported transaction ledger, goals and a watchlist — persisted to this browser under
-a versioned envelope with JSON backup/restore. Every number on every personal screen derives from
-these records; missing data renders as *unavailable with instructions*, never as an invented value.
-The importer (`src/store/csv.ts`) parses Fidelity Accounts_History CSVs entirely in the browser:
-parse → review → dedupe against the ledger → commit, with per-batch undo.
-
-**Demo mode** is the fictional sample household, reachable only by explicit choice and framed by a
-permanent warning banner. It exists to show the interface fully populated. Routes that only make
-sense for the demo data (real-estate underwriting, insurance, tax sandbox…) are blocked in
-personal mode rather than rendered empty-but-fake.
-
-“Auth” is an honest device lock (optional passcode, SHA-256 hash stored locally) and says so on
-screen — no fake MFA, passkeys or encryption claims. The copilot is labeled as deterministic
-computation over records, not an AI model.
-
-### Imported real datasets
-
-Two modules carry data imported from real broker records (identifiers masked, economics verbatim),
-kept strictly separate from the sample household and always labeled:
-
-- `src/data/moomooOptionTrades.ts` — option orders transcribed from Moomoo SG monthly statements,
-  rendered at the top of **Options**.
-- `src/data/fidelityTrading.ts` — 14 months of Fidelity Accounts_History exports reduced to FIFO
-  round trips, an options cash-flow program (settled vs live contracts), a per-symbol rotation map
-  and computed strengths/weaknesses, rendered as the **Trading Review** page. Reconciliation is
-  pinned by `src/data/__tests__/fidelity-trading.test.ts`.
-
-Both modules state their data gaps explicitly instead of papering over them.
-
-### Layout of the code
-
-```
-src/
-  styles/index.css      Design tokens (light/dark), Tailwind v4 theme
-  data/                 Domain types, sample dataset, FX, selectors (the "backend")
-  components/           icons.tsx · ui.tsx (primitives) · charts.tsx (hand-built SVG chart kit)
-                        finance.tsx (SuggestionCard, StatCard, ObligationRow, Freshness)
-  state/AppContext.tsx  Mode, currency, member filter, notifications, upload simulation
-  app/                  Shell, nav, search, notification centre, copilot engine + drawer, upload
-  pages/                One file per screen; Simple/Pro variants share pages where they overlap
+```bash
+npm test
+npm run typecheck
 ```
 
-### Chart kit
+Reseed from scratch: `FORCE_RESEED=1 npm run db:seed`.
 
-Custom SVG charts (no chart library): area/line with tooltips, waterfall, donut, stacked bars,
-monthly bars, calendar, payoff diagrams, treemap, progress rings, range bars, stacked areas.
-Each is themed via CSS variables, works in dark mode, and includes an `aria-label` summary.
+## Environment variables
 
-### Sample data
+| Variable | Required | Where it comes from |
+|---|---|---|
+| `APP_PASSWORD` | yes | You choose it. Constant-time compared at login; 5 attempts / 15 min / IP. |
+| `SESSION_SECRET` | yes | `openssl rand -hex 32`. Signs the 30-day httpOnly SameSite=Lax cookie. |
+| `DATABASE_URL` | production | A Postgres connection string (Vercel Postgres / Neon / Supabase). Omit locally to use embedded PGlite. |
+| `GEMINI_API_KEY` | for live data | [Google AI Studio](https://aistudio.google.com/apikey). Server-side only. Without it, prices go stale (and say so) — nothing breaks, nothing pretends. |
+| `CALLMEBOT_PHONE` | for alerts | Your WhatsApp number in international format, e.g. `+6591234567`. |
+| `CALLMEBOT_APIKEY` | for alerts | Message "I allow callmebot to send me messages" to **+34 644 44 21 48** on WhatsApp; the bot replies with your API key. Docs: callmebot.com/blog/free-api-whatsapp-messages/ |
+| `CRON_SECRET` | production | `openssl rand -hex 24`. Vercel sends it as `Authorization: Bearer …` to the cron routes. |
+| `APP_URL` | recommended | `https://shar.hkfire.app` — used for deep links at the end of every WhatsApp message. |
 
-A realistic two-country household (USD base + INR): US brokerages, 401(k)/Roth, Zerodha demat,
-India mutual funds, RSUs, five option strategies, three properties (one with a deliberately stale
-valuation), two syndications with a pending capital call, four liabilities including a
-securities-backed line, seven insurance policies, ~200 generated income events, documents with an
-extraction/reconciliation pipeline, inbox issues, suggestions in four strict categories
-(observation / alert / opportunity / recommendation), timeline, goals and dual-jurisdiction tax.
+Rotating the Gemini key: create a new key in AI Studio, update `GEMINI_API_KEY`
+in Vercel → Settings → Environment Variables, redeploy, then delete the old key.
+The key never reaches the client; all Gemini calls run server-side and are
+logged to the `ai_calls` table (visible in Settings).
 
-Deterministic seeded randomness (`src/data/rng.ts`) keeps charts stable across reloads; the app's
-reference "today" is 2026-07-20.
+## Deploying to Vercel
 
-## Key decisions & assumptions
+1. Import the repo in Vercel (framework: Next.js — zero config; `vercel.json`
+   already declares the two crons: daily data job 21:15 UTC weekdays, WhatsApp
+   digest 21:45 UTC).
+2. Provision Postgres (Vercel Postgres/Neon) and set `DATABASE_URL` plus the
+   variables above.
+3. Run migrations and seed once:
+   ```bash
+   DATABASE_URL=... npm run db:migrate
+   DATABASE_URL=... npm run db:seed
+   ```
+4. Add the custom domain `shar.hkfire.app` to the project.
 
-- **Documents over screen-scraping.** The BRD's document-native positioning is the differentiator;
-  the upload → classify → extract → match → reconcile → review → apply pipeline is a first-class,
-  visible flow, and approval is always explicit.
-- **Copilot answers only from records.** The copilot drawer computes answers from live selectors,
-  cites records, separates facts / estimates / assumptions / missing data, and refuses questions it
-  can't ground.
-- **Recommendations are gated on data quality** (`missingData` renders an "Incomplete data" badge)
-  and every one carries what/why/impact/risks/tax/liquidity/confidence/alternatives plus supporting
-  records.
-- **Mode is remembered per device** (localStorage), as are currency, theme and dashboard layout.
-- **HashRouter** so the static build works from any host without rewrite rules.
-- **Mobile**: Simple Mode gets bottom navigation with a center upload action (capture in ≤3 taps);
-  Pro tables become horizontally scrollable panes; dense screens collapse to structured lists.
-- Monte Carlo, IRRs and projections are labelled estimates with stated simplifications — the UI
-  never presents a model output as a fact.
+### DNS records
+
+At your DNS provider for `hkfire.app`:
+
+| Type | Name | Value |
+|---|---|---|
+| CNAME | `shar` | `cname.vercel-dns.com` |
+
+(If the provider refuses a CNAME here, use an A record for `shar` →
+`76.76.21.21`.) Vercel provisions TLS automatically once the record resolves.
+
+## Data honesty
+
+- Seeded price history and holding marks are placeholders flagged as seeded
+  (no grounding URL) until the daily job replaces them with grounded quotes.
+  Realized vol uses grounded closes only.
+- Base rates are labelled "recent regime, small sample" with the window count,
+  because that is what they are.
+- The 2026 record is seeded from the facts stated in the build brief (the META
+  roll −$9,812, the SNOW outlier −$2,774, the August drift deltas, the Jan–Mar
+  MSFT episode, 3 missed weeks). Rows are flagged `seeded`; aggregates the
+  brief states (131/139, $86,457) live in settings as the baseline and are
+  never recomputed from the partial row set. Unknown dollar outcomes are
+  `null`, never guessed.
+- All share counts are unverified until confirmed in Settings → Holdings; every
+  equity-based limit says so until then.
+
+## What I would build next
+
+1. **A real E2 clock.** The stop rule is same-session; today the app can only
+   check at the daily cron and on page loads. A lightweight intraday check
+   (an extra cron at 15/30-minute intervals during market hours hitting the
+   same deterministic exit evaluation) turns E2 from "seen tonight" into
+   "seen in time to act", which is where the −$9,812 class of loss actually
+   lives.
+2. **Broker-statement import for the ledger.** The deviation ledger's power is
+   the resolved dollar column; parsing monthly statements (the Moomoo/Fidelity
+   formats already in the account) would fill `outcome_usd` without manual
+   entry and backfill the missing 2026 rows so the monthly process-vs-deviation
+   comparison stands on the full 139.
+3. **Rolling 12-month base rates.** The app accumulates grounded closes from
+   day one; once ~250 sessions exist, recompute breach base rates on a rolling
+   window and show regime drift (recent 45-window rate vs 12-month rate) — the
+   honest version of the disagreement check.
