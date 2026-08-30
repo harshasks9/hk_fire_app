@@ -2,6 +2,8 @@ import { isNotNull } from 'drizzle-orm'
 import { getDb, schema } from '@/lib/db'
 import { getSetting } from '@/lib/data'
 import { BackLink, Card, SectionTitle, money } from '@/components/ui'
+import { PageHelp } from '@/components/Explain'
+import { GLOSSARY } from '@/lib/glossary'
 
 export const dynamic = 'force-dynamic'
 
@@ -27,7 +29,9 @@ export default async function PnlPage() {
   return (
     <div>
       <BackLink href="/scoreboard">Scoreboard</BackLink>
-      <h1 className="mt-2 text-2xl font-semibold">P&L — the output</h1>
+      <h1 className="mt-2 text-2xl font-semibold">
+        P&L — the output <PageHelp entry={GLOSSARY.page_pnl} />
+      </h1>
       <p className="mt-1 text-sm" style={{ color: 'var(--muted)' }}>
         One comparison and nothing else. The arithmetic is the argument.
       </p>

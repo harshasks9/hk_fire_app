@@ -2,6 +2,8 @@ import { and, eq } from 'drizzle-orm'
 import { getDb, schema } from '@/lib/db'
 import { bandFromComposite, gateFromBand, BAND_LABELS } from '@/lib/valuation'
 import { BackLink, Card, Chip, SectionTitle, money } from '@/components/ui'
+import { PageHelp } from '@/components/Explain'
+import { GLOSSARY } from '@/lib/glossary'
 
 export const dynamic = 'force-dynamic'
 
@@ -37,7 +39,9 @@ export default async function BacktestPage() {
   return (
     <div>
       <BackLink href="/valuations">Valuation</BackLink>
-      <h1 className="mt-2 text-2xl font-semibold">The gate, run backwards over 2026</h1>
+      <h1 className="mt-2 text-2xl font-semibold">
+        The gate, run backwards over 2026 <PageHelp entry={GLOSSARY.page_backtest} />
+      </h1>
       <p className="mt-1 text-sm" style={{ color: 'var(--muted)' }}>
         Including where it would have been wrong. Jan–March: MSFT fell $505 → $357 and the book sold{' '}
         <strong>calls</strong> into the decline — eleven against three puts — then sold 1,472 shares at $357.47,

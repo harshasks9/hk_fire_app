@@ -3,6 +3,8 @@ import { getDb, schema } from '@/lib/db'
 import { formatExpiry } from '@/lib/exits'
 import LogForm from '@/components/LogForm'
 import { SectionTitle } from '@/components/ui'
+import { PageHelp } from '@/components/Explain'
+import { GLOSSARY } from '@/lib/glossary'
 
 export const dynamic = 'force-dynamic'
 
@@ -22,7 +24,9 @@ export default async function LogPage() {
 
   return (
     <div>
-      <h1 className="text-2xl font-semibold">Log a fill</h1>
+      <h1 className="text-2xl font-semibold">
+        Log a fill <PageHelp entry={GLOSSARY.page_log} />
+      </h1>
       <p className="mt-1 text-sm" style={{ color: 'var(--muted)' }}>
         The loop closes here. Enter the broker’s actual numbers — the modelled ones were never the trade.
       </p>

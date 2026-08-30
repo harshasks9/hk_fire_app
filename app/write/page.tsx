@@ -19,6 +19,8 @@ import {
   finishWeek,
 } from '@/lib/actions'
 import { Btn, Card, Chip, EmptyState, Modelled, SectionTitle, money, pct } from '@/components/ui'
+import { Explain, PageHelp } from '@/components/Explain'
+import { GLOSSARY } from '@/lib/glossary'
 
 export const dynamic = 'force-dynamic'
 
@@ -152,7 +154,9 @@ export default async function WritePage() {
   return (
     <div className="flex flex-col gap-6">
       <div>
-        <h1 className="text-2xl font-semibold">Write week {week.weekNumber % 100}</h1>
+        <h1 className="text-2xl font-semibold">
+          Write week {week.weekNumber % 100} <PageHelp entry={GLOSSARY.page_write} />
+        </h1>
         <p className="text-sm" style={{ color: 'var(--muted)' }}>
           Friday {week.fridayDate}. Five steps, in order, no skipping. Completion is stamped; a skipped Friday is a
           recorded miss.
@@ -293,11 +297,20 @@ export default async function WritePage() {
                   </Chip>
                 </div>
                 <p className="mt-1 text-sm tabular">
-                  <Modelled>credit {money(t.modelledCredit)}/contract</Modelled> ·{' '}
-                  <Modelled>delta {(Math.abs(t.modelledDelta) * 100).toFixed(1)}</Modelled>
-                  {t.obligation > 0 ? <> · obligation {money(t.obligation)}</> : null}
+                  <Explain entry={GLOSSARY.premium_credit}>credit</Explain>{' '}
+                  <Modelled>{money(t.modelledCredit)}/contract</Modelled> ·{' '}
+                  <Explain entry={GLOSSARY.delta}>delta</Explain>{' '}
+                  <Modelled>{(Math.abs(t.modelledDelta) * 100).toFixed(1)}</Modelled>
+                  {t.obligation > 0 ? (
+                    <>
+                      {' '}
+                      · <Explain entry={GLOSSARY.obligation}>obligation</Explain> {money(t.obligation)}
+                    </>
+                  ) : null}
                 </p>
-                <p className="mt-2 text-sm">{t.premortem}</p>
+                <p className="mt-2 text-sm">
+                  <Explain entry={GLOSSARY.pre_mortem}>Pre-mortem</Explain>: {t.premortem}
+                </p>
                 {t.baseRate != null && t.baseRateWindows != null ? (
                   <p className="mt-1 text-xs" style={{ color: 'var(--muted)' }}>
                     Base rate: recent regime, small sample — {t.baseRateWindows} overlapping windows, autocorrelated.

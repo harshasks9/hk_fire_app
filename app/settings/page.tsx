@@ -5,6 +5,8 @@ import { geminiConfigured, recentAiCalls } from '@/lib/gemini'
 import { recentAlerts, whatsappConfigured } from '@/lib/whatsapp'
 import { confirmHolding, testAlert } from '@/lib/actions'
 import { Btn, Card, Chip, SectionTitle, money } from '@/components/ui'
+import { PageHelp } from '@/components/Explain'
+import { GLOSSARY } from '@/lib/glossary'
 
 export const dynamic = 'force-dynamic'
 
@@ -27,7 +29,9 @@ export default async function SettingsPage() {
   return (
     <div>
       <div className="flex items-center justify-between">
-        <h1 className="text-2xl font-semibold">Settings</h1>
+        <h1 className="text-2xl font-semibold">
+          Settings <PageHelp entry={GLOSSARY.page_settings} />
+        </h1>
         <form method="post" action="/api/logout">
           <Btn>Sign out</Btn>
         </form>
