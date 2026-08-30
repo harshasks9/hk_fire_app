@@ -3,6 +3,8 @@ import { getHomeState } from '@/lib/state'
 import { closePosition, seedDatabase, startWriteSequence } from '@/lib/actions'
 import { formatExpiry } from '@/lib/exits'
 import { Btn, Card, Chip, EmptyState, Modelled, SectionTitle, money, pct } from '@/components/ui'
+import { Explain, PageHelp } from '@/components/Explain'
+import { GLOSSARY } from '@/lib/glossary'
 
 export const dynamic = 'force-dynamic'
 
@@ -57,11 +59,17 @@ export default async function Home() {
 
   return (
     <div>
+      <div className="mb-3 flex items-center justify-end">
+        <PageHelp entry={GLOSSARY.page_home} />
+      </div>
       {/* The L4 breach lives on the home screen from day one. */}
       {state.l4Detail ? (
         <Card tone="warn">
           <p className="text-sm">
-            <strong>Concentration limit L4 breached:</strong> {state.l4Detail}.{' '}
+            <strong>
+              <Explain entry={GLOSSARY.l_limits}>Concentration limit L4</Explain> breached:
+            </strong>{' '}
+            {state.l4Detail}.{' '}
             <Link href="/owl" style={{ color: 'var(--accent)' }}>
               The OWL exit sleeve is the plan →
             </Link>
@@ -137,7 +145,9 @@ export default async function Home() {
       ) : null}
 
       {/* Live positions, one chip each */}
-      <SectionTitle>Live positions</SectionTitle>
+      <SectionTitle>
+        Live positions <Explain entry={GLOSSARY.chips} />
+      </SectionTitle>
       {state.statuses.length === 0 ? (
         <EmptyState title="No open positions." />
       ) : (
@@ -167,7 +177,9 @@ export default async function Home() {
       )}
 
       {/* Discipline strip — adherence on the home screen, P&L one level down. */}
-      <SectionTitle>Discipline</SectionTitle>
+      <SectionTitle>
+        Discipline <Explain entry={GLOSSARY.page_scoreboard} />
+      </SectionTitle>
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
         {state.discipline.components.map((c) => (
           <Link key={c.key} href="/scoreboard">

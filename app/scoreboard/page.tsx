@@ -4,6 +4,15 @@ import { getDb, schema } from '@/lib/db'
 import { ruleTrend } from '@/lib/discipline'
 import { getSetting } from '@/lib/data'
 import { Card, EmptyState, SectionTitle, pct } from '@/components/ui'
+import { Explain, PageHelp } from '@/components/Explain'
+import { GLOSSARY } from '@/lib/glossary'
+
+const COMPONENT_GLOSSARY = {
+  cadence: GLOSSARY.cadence,
+  rule: GLOSSARY.rule_score,
+  stop: GLOSSARY.stop_score,
+  capacity: GLOSSARY.capacity,
+} as const
 
 export const dynamic = 'force-dynamic'
 
@@ -30,7 +39,9 @@ export default async function ScoreboardPage() {
 
   return (
     <div>
-      <h1 className="text-2xl font-semibold">Scoreboard</h1>
+      <h1 className="text-2xl font-semibold">
+        Scoreboard <PageHelp entry={GLOSSARY.page_scoreboard} />
+      </h1>
       <p className="mt-1 text-sm" style={{ color: 'var(--muted)' }}>
         Adherence is the input and it is entirely controlled. P&L is the output —{' '}
         <Link href="/scoreboard/pnl" style={{ color: 'var(--accent)' }}>
@@ -43,7 +54,9 @@ export default async function ScoreboardPage() {
         {state.discipline.components.map((c) => (
           <Card key={c.key}>
             <div className="flex flex-wrap items-baseline justify-between gap-2">
-              <p className="font-medium">{c.label}</p>
+              <p className="font-medium">
+                <Explain entry={COMPONENT_GLOSSARY[c.key]}>{c.label}</Explain>
+              </p>
               <p className="text-xl font-semibold tabular">
                 {c.value == null ? 'no data yet' : `${pct(c.value, 0)}`}
                 {c.denominator > 0 ? (
@@ -60,7 +73,9 @@ export default async function ScoreboardPage() {
         ))}
       </div>
 
-      <SectionTitle>Rule score by month — the drift detector</SectionTitle>
+      <SectionTitle>
+        Rule score by month — the drift detector <Explain entry={GLOSSARY.rule_score} />
+      </SectionTitle>
       <Card>
         {trend.length === 0 ? (
           <p className="text-sm" style={{ color: 'var(--muted)' }}>

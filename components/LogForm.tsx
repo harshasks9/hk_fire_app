@@ -2,6 +2,8 @@
 
 import { useState } from 'react'
 import { logFill } from '@/lib/actions'
+import { Explain } from '@/components/Explain'
+import { GLOSSARY } from '@/lib/glossary'
 
 export interface TicketOption {
   id: number
@@ -140,7 +142,9 @@ export default function LogForm({ tickets }: { tickets: TicketOption[] }) {
             </select>
           </div>
           <div>
-            <label htmlFor="strike" className="block text-sm font-medium">Strike</label>
+            <label htmlFor="strike" className="block text-sm font-medium">
+              <Explain entry={GLOSSARY.strike}>Strike</Explain>
+            </label>
             <input id="strike" name="strike" type="number" step="0.01" min="0.01" required value={fields.strike} onChange={set('strike')} className="mt-1 w-full" />
           </div>
           <div>
@@ -152,7 +156,9 @@ export default function LogForm({ tickets }: { tickets: TicketOption[] }) {
             <input id="lots" name="lots" type="number" step="1" min="1" required value={fields.lots} onChange={set('lots')} className="mt-1 w-full" />
           </div>
           <div>
-            <label htmlFor="creditPerContract" className="block text-sm font-medium">Credit $/contract</label>
+            <label htmlFor="creditPerContract" className="block text-sm font-medium">
+              <Explain entry={GLOSSARY.premium_credit}>Credit $/contract</Explain>
+            </label>
             <input id="creditPerContract" name="creditPerContract" type="number" step="0.01" min="0.01" required value={fields.creditPerContract} onChange={set('creditPerContract')} className="mt-1 w-full" />
           </div>
         </div>

@@ -7,6 +7,8 @@ import { setOwlTrimTarget } from '@/lib/actions'
 import { formatExpiry } from '@/lib/exits'
 import { nyParts } from '@/lib/week'
 import { Btn, Card, EmptyState, Modelled, SectionTitle, money, pct } from '@/components/ui'
+import { Explain, PageHelp } from '@/components/Explain'
+import { GLOSSARY } from '@/lib/glossary'
 
 export const dynamic = 'force-dynamic'
 
@@ -30,7 +32,9 @@ export default async function OwlPage() {
 
   return (
     <div>
-      <h1 className="text-2xl font-semibold">OWL — concentration exit</h1>
+      <h1 className="text-2xl font-semibold">
+        OWL — concentration exit <PageHelp entry={GLOSSARY.page_owl} />
+      </h1>
       <p className="mt-1 text-sm" style={{ color: 'var(--muted)' }}>
         Not income. At ~$12 with 50-cent strikes, a 7-day 5-delta call is worth about a dollar a contract — not a
         business. This sleeve is paid waiting: 30–45 DTE calls at 15–20 delta, where being called away trims a
@@ -57,13 +61,16 @@ export default async function OwlPage() {
       <SectionTitle>This cycle</SectionTitle>
       <Card>
         <p className="text-lg font-medium">
-          Write {formatExpiry(view.expiry)} ({view.dte} DTE) {view.strike.toFixed(2)} calls ×{cfg.lotsPerCycle}
+          Write {formatExpiry(view.expiry)} (<Explain entry={GLOSSARY.dte}>{view.dte} DTE</Explain>){' '}
+          {view.strike.toFixed(2)} <Explain entry={GLOSSARY.covered_call}>calls</Explain> ×{cfg.lotsPerCycle}
         </p>
         <p className="mt-2 text-sm tabular">
           <Modelled>credit {money(view.creditPerContract)}/contract</Modelled> ·{' '}
           <Modelled>{money(view.creditPerCycle)} per cycle</Modelled> ·{' '}
           <Modelled>≈{money(view.annualizedCredit)} a year</Modelled> ·{' '}
-          <Modelled>delta {(view.trimChance * 100).toFixed(0)}</Modelled>
+          <Explain entry={GLOSSARY.trim_chance}>
+            <Modelled>delta {(view.trimChance * 100).toFixed(0)}</Modelled>
+          </Explain>
         </p>
         <p className="mt-2 text-sm">
           If called away: {view.sharesTrimmedIfCalled.toLocaleString()} shares sold at ${view.strike.toFixed(2)} —{' '}

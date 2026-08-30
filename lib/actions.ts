@@ -279,6 +279,20 @@ export async function finishWeek(formData: FormData): Promise<void> {
 
 /* ------------------------------- valuation ------------------------------- */
 
+/** Map of the plain-language view options to the −1…+1 thesis scale. */
+const VIEW_SCALE: Record<string, number> = {
+  very_cheap: -0.8,
+  cheap: -0.4,
+  fair: 0,
+  expensive: 0.4,
+  very_expensive: 0.8,
+}
+
+/**
+ * Save a valuation snapshot from plain broker-page numbers (52-week low/high,
+ * analyst target, P/E now vs typical, yield now vs typical, own view). The
+ * abstract fractions the gate runs on are computed here, never typed by hand.
+ */
 export async function saveValuation(formData: FormData): Promise<void> {
   const db = await getDb()
   const symbol = String(formData.get('symbol'))
@@ -288,15 +302,47 @@ export async function saveValuation(formData: FormData): Promise<void> {
     const n = Number(v)
     return isFinite(n) ? n : null
   }
+
+  const raw = {
+    low52: num('low52'),
+    high52: num('high52'),
+    currentPrice: num('currentPrice'),
+    targetPrice: num('targetPrice'),
+    fwdPe: num('fwdPe'),
+    typicalPe: num('typicalPe'),
+    yieldNow: num('yieldNow'),
+    yieldTypical: num('yieldTypical'),
+    view: String(formData.get('view') ?? '').trim(),
+    viewWhy: String(formData.get('viewWhy') ?? '').trim(),
+  }
+
+  const { latestPrices: lp } = await import('./data')
+  const spot = raw.currentPrice ?? (await lp()).get(symbol)?.close ?? null
+
+  const v1 =
+    raw.low52 != null && raw.high52 != null && raw.high52 > raw.low52 && spot != null
+      ? Math.min(1, Math.max(0, (spot - raw.low52) / (raw.high52 - raw.low52)))
+      : null
+  const v2 = raw.targetPrice != null && spot != null && spot > 0 ? raw.targetPrice / spot - 1 : null
+  const v3 =
+    raw.fwdPe != null && raw.typicalPe != null && raw.typicalPe > 0 ? raw.fwdPe / raw.typicalPe - 1 : null
+  const v4 =
+    raw.yieldNow != null && raw.yieldTypical != null && raw.yieldTypical > 0
+      ? raw.yieldNow / raw.yieldTypical - 1
+      : null
+  const v5 = raw.view in VIEW_SCALE ? VIEW_SCALE[raw.view]! : null
+
   const inputs = {
-    v1RangePosition: num('v1'),
-    v2AnalystUpside: num('v2'),
-    v3PeVsMedian: num('v3'),
-    v4YieldVsMedian: num('v4'),
-    v5Thesis: num('v5'),
-    v5Rationale: String(formData.get('v5Rationale') ?? '').trim() || null,
+    v1RangePosition: v1,
+    v2AnalystUpside: v2,
+    v3PeVsMedian: v3,
+    v4YieldVsMedian: v4,
+    v5Thesis: v5,
+    v5Rationale: raw.viewWhy || null,
   }
   const res = computeValuation(inputs)
+  // Keep the raw numbers so the form prefills with what was actually typed.
+  await setSetting(`valuation_raw_${symbol}`, raw)
   await db.insert(schema.valuations).values({
     symbol,
     v1RangePosition: inputs.v1RangePosition,

@@ -2,6 +2,8 @@ import { desc, isNotNull } from 'drizzle-orm'
 import { getDb, schema } from '@/lib/db'
 import { resolveDeviation } from '@/lib/actions'
 import { Btn, Card, Chip, EmptyState, SectionTitle, money } from '@/components/ui'
+import { Explain, PageHelp } from '@/components/Explain'
+import { GLOSSARY } from '@/lib/glossary'
 
 export const dynamic = 'force-dynamic'
 
@@ -27,7 +29,9 @@ export default async function DeviationsPage() {
 
   return (
     <div>
-      <h1 className="text-2xl font-semibold">Deviation ledger</h1>
+      <h1 className="text-2xl font-semibold">
+        <Explain entry={GLOSSARY.deviation}>Deviation</Explain> ledger <PageHelp entry={GLOSSARY.page_deviations} />
+      </h1>
       <p className="mt-1 text-sm" style={{ color: 'var(--muted)' }}>
         What the rule said, what happened, and the number. Seven of the eight losing positions in the 2026 record
         were deviations of one kind or another.

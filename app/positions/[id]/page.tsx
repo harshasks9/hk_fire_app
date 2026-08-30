@@ -8,6 +8,8 @@ import { evaluatePosition, formatExpiry } from '@/lib/exits'
 import { daysBetween, nyParts } from '@/lib/week'
 import { geminiConfigured } from '@/lib/gemini'
 import { BackLink, Btn, Card, Chip, Modelled, SectionTitle, money, pct } from '@/components/ui'
+import { Explain, PageHelp } from '@/components/Explain'
+import { GLOSSARY } from '@/lib/glossary'
 
 export const dynamic = 'force-dynamic'
 
@@ -137,6 +139,7 @@ export default async function PositionPage({ params }: { params: Promise<{ id: s
       <BackLink href="/">Today</BackLink>
       <div className="mt-2 flex flex-wrap items-center gap-2">
         <h1 className="text-2xl font-semibold">{label}</h1>
+        <PageHelp entry={GLOSSARY.page_position} />
         {status ? (
           <Chip kind={status.chip}>{status.chip === 'healthy' ? 'Healthy' : status.chip === 'watch' ? 'Watch' : 'Close now'}</Chip>
         ) : (
@@ -168,7 +171,9 @@ export default async function PositionPage({ params }: { params: Promise<{ id: s
         </div>
       ) : null}
 
-      <SectionTitle>What the greeks mean here</SectionTitle>
+      <SectionTitle>
+        What the greeks mean here <Explain entry={GLOSSARY.greeks} />
+      </SectionTitle>
       <Card>
         {greeks && mid != null && spot != null ? (
           <dl className="grid gap-2 text-sm sm:grid-cols-2">
@@ -197,8 +202,14 @@ export default async function PositionPage({ params }: { params: Promise<{ id: s
         )}
         {mid != null ? (
           <p className="mt-3 text-sm tabular">
-            <Modelled>Modelled mid {money(mid)}/contract</Modelled> ={' '}
-            {(mid / p.creditPerContract).toFixed(2)}× credit. E1 at ≤0.2×; {p.type === 'call' ? 'E2' : 'E3'} at ≥3×.
+            <Explain entry={GLOSSARY.mid}>
+              <Modelled>Modelled mid {money(mid)}/contract</Modelled>
+            </Explain>{' '}
+            = {(mid / p.creditPerContract).toFixed(2)}× credit.{' '}
+            <Explain entry={GLOSSARY.e_rules}>
+              E1 at ≤0.2×; {p.type === 'call' ? 'E2' : 'E3'} at ≥3×
+            </Explain>
+            .
           </p>
         ) : null}
       </Card>
@@ -215,15 +226,20 @@ export default async function PositionPage({ params }: { params: Promise<{ id: s
             <ConeSvg closes={closes} spot={spot} vol={vol.blended} dte={Math.max(1, dte)} />
             {base ? (
               <p className="mt-2 text-sm">
-                The {pct(movePct ?? 0)} move to the strike happened in {base.breaches} of {base.windows} recent
-                5-day windows ({pct(base.rate)}) — <span style={{ color: 'var(--muted)' }}>{base.caveat}</span>.
+                The {pct(movePct ?? 0)} move to the strike{' '}
+                <Explain entry={GLOSSARY.base_rate}>
+                  happened in {base.breaches} of {base.windows} recent 5-day windows ({pct(base.rate)})
+                </Explain>{' '}
+                — <span style={{ color: 'var(--muted)' }}>{base.caveat}</span>.
               </p>
             ) : null}
           </Card>
         </>
       ) : null}
 
-      <SectionTitle>Assignment economics</SectionTitle>
+      <SectionTitle>
+        Assignment economics <Explain entry={GLOSSARY.assignment} />
+      </SectionTitle>
       <Card>
         {p.type === 'put' ? (
           <p className="text-sm tabular">
@@ -242,7 +258,9 @@ export default async function PositionPage({ params }: { params: Promise<{ id: s
         )}
       </Card>
 
-      <SectionTitle>Volatility — which number is in play</SectionTitle>
+      <SectionTitle>
+        Volatility — which number is in play <Explain entry={GLOSSARY.implied_vol} />
+      </SectionTitle>
       <Card>
         <ul className="text-sm tabular">
           <li>Blended (in play): <Modelled>{pct(vol.blended)}</Modelled> — source: {vol.source}{vol.asOf ? `, updated ${vol.asOf.toISOString().slice(0, 10)}` : ''}</li>
