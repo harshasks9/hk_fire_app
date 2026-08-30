@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { getHomeState } from '@/lib/state'
-import { closePosition, startWriteSequence } from '@/lib/actions'
+import { closePosition, seedDatabase, startWriteSequence } from '@/lib/actions'
 import { formatExpiry } from '@/lib/exits'
 import { Btn, Card, Chip, EmptyState, Modelled, SectionTitle, money, pct } from '@/components/ui'
 
@@ -13,10 +13,14 @@ export default async function Home() {
     return (
       <EmptyState title="Nothing here yet.">
         <p>
-          The database is empty or not yet migrated. From a checkout of this repo, run{' '}
-          <code>DATABASE_URL=… npm run db:migrate</code> then <code>DATABASE_URL=… npm run db:seed</code> to create
-          the tables and load the universe, holdings and the 2026 record — then confirm your share counts in{' '}
-          <Link href="/settings" style={{ color: 'var(--accent)' }}>Settings</Link>.
+          The database is empty. Load the universe, holdings and the 2026 record, then confirm your share counts
+          in <Link href="/settings" style={{ color: 'var(--accent)' }}>Settings</Link>.
+        </p>
+        <form action={seedDatabase} className="mt-4">
+          <Btn tone="primary">Load the seed data</Btn>
+        </form>
+        <p className="mt-3 text-xs">
+          (Equivalent CLI: <code>DATABASE_URL=… npm run db:seed</code>. Tables migrate automatically on connect.)
         </p>
       </EmptyState>
     )

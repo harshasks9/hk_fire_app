@@ -80,11 +80,10 @@ logged to the `ai_calls` table (visible in Settings).
    digest 21:45 UTC).
 2. Provision Postgres (Vercel Postgres/Neon) and set `DATABASE_URL` plus the
    variables above.
-3. Run migrations and seed once:
-   ```bash
-   DATABASE_URL=... npm run db:migrate
-   DATABASE_URL=... npm run db:seed
-   ```
+3. Migrations apply automatically when the app first connects to the
+   database, and the onboarding screen offers a one-click "Load the seed
+   data" button behind your login. (CLI equivalents, if you prefer:
+   `DATABASE_URL=... npm run db:migrate` and `DATABASE_URL=... npm run db:seed`.)
 4. Add the custom domain `shar.hkfire.app` to the project.
 
 ### DNS records

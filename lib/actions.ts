@@ -23,6 +23,17 @@ function revalidateAll() {
   }
 }
 
+/* ------------------------------ onboarding ------------------------------- */
+
+/** One-click seed from the onboarding screen. Only ever runs on an empty database. */
+export async function seedDatabase(): Promise<void> {
+  const { isDatabaseEmpty } = await import('./data')
+  if (!(await isDatabaseEmpty())) return
+  const { runSeed } = await import('./seed/run')
+  await runSeed({})
+  revalidateAll()
+}
+
 /* ------------------------------- positions ------------------------------- */
 
 /** "Mark as closed" — from the EXIT instruction or a position page. */
