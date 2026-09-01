@@ -1,0 +1,11 @@
+# Build and test output for the legacy Vite app.
+#
+# These rules lived in the repository-root .gitignore before the app moved
+# here; the root file was rewritten for the Next.js application and no longer
+# covers them, so they travel with the app they belong to.
+node_modules
+dist
+*.local
+.DS_Store
+test-results
+playwright-report
