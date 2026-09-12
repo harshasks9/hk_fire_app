@@ -337,18 +337,50 @@ async function touchEntityEmbedding(e: Entity) {
 
 /** Re-run the pipeline over every note (Settings → Rebuild index). */
 export async function reprocessAll(contextId?: string): Promise<number> {
-  const db = await getDb()
-  const rows = await db
-    .select({ id: schema.notes.id })
-    .from(schema.notes)
-    .where(contextId ? and(eq(schema.notes.contextId, contextId), sql`${schema.notes.deletedAt} is null`) : sql`${schema.notes.deletedAt} is null`)
-    .orderBy(schema.notes.createdAt)
+  let offset = 0
   let n = 0
-  for (const r of rows) {
-    await processNote(r.id).catch(() => undefined)
-    n++
+  while (true) {
+    const batch = await reprocessBatch({ contextId, offset, budgetMs: Infinity })
+    n += batch.processed
+    if (batch.next === null) return n
+    offset = batch.next
   }
-  return n
+}
+
+export interface ReprocessBatch {
+  processed: number
+  byModel: number
+  byLocal: number
+  total: number
+  /** Offset to continue from, or null when every note has been processed. */
+  next: number | null
+}
+
+/**
+  Re-run understanding for a slice of notes, oldest first, stopping once the time
+  budget is spent so callers (the Settings "Rebuild index" button) can loop with
+  `next` instead of hitting a serverless time limit. Notes are processed one at a
+  time so model rate limits are respected.
+*/
+export async function reprocessBatch(opts: { contextId?: string; offset?: number; budgetMs?: number; limit?: number }): Promise<ReprocessBatch> {
+  const db = await getDb()
+  const where = opts.contextId ? and(eq(schema.notes.contextId, opts.contextId), sql`${schema.notes.deletedAt} is null`) : sql`${schema.notes.deletedAt} is null`
+  const rows = await db.select({ id: schema.notes.id }).from(schema.notes).where(where).orderBy(schema.notes.createdAt, schema.notes.id)
+  const started = Date.now()
+  const budget = opts.budgetMs ?? 45_000
+  const offset = Math.max(0, opts.offset ?? 0)
+  const out: ReprocessBatch = { processed: 0, byModel: 0, byLocal: 0, total: rows.length, next: null }
+  for (let i = offset; i < rows.length; i++) {
+    if (out.processed > 0 && (Date.now() - started > budget || (opts.limit && out.processed >= opts.limit))) {
+      out.next = i
+      break
+    }
+    const r = await processNote(rows[i]!.id).catch(() => null)
+    out.processed++
+    if (r && r.provider !== 'local' && r.provider !== 'none') out.byModel++
+    else out.byLocal++
+  }
+  return out
 }
 
 export async function deleteDerived(noteId: string) {
