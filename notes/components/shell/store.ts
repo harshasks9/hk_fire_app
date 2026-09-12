@@ -14,10 +14,12 @@ export interface ShellState {
   panelSheet: boolean
   /** Template picker open (new note from template). */
   templatePickerOpen: boolean
+  /** A navigation is in flight (progress bar). */
+  navPending: boolean
 }
 
 const listeners = new Set<() => void>()
-let state: ShellState = { sidebarCollapsed: false, panelOpen: true, panelAvailable: false, commandOpen: false, commandQuery: '', captureOpen: false, theme: 'system', mobileMenuOpen: false, panelSheet: false, templatePickerOpen: false }
+let state: ShellState = { sidebarCollapsed: false, panelOpen: true, panelAvailable: false, commandOpen: false, commandQuery: '', captureOpen: false, theme: 'system', mobileMenuOpen: false, panelSheet: false, templatePickerOpen: false, navPending: false }
 
 function load() {
   if (typeof window === 'undefined') return

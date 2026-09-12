@@ -12,6 +12,7 @@ import { Search, PanelRight, Zap, Sparkles } from 'lucide-react'
 import { OfflineProvider } from '@/components/offline/OfflineProvider'
 import { OfflineBadge } from '@/components/offline/OfflineBadge'
 import { GlobalTemplatePicker } from '@/components/notes/TemplatePicker'
+import { NavProgress } from './NavProgress'
 import { cx } from '@/lib/util'
 
 export function AppShell({ sidebar, children, viewingAsAdmin }: { sidebar: SidebarProps; children: React.ReactNode; viewingAsAdmin?: { notebookName: string } | null }) {
@@ -48,6 +49,7 @@ export function AppShell({ sidebar, children, viewingAsAdmin }: { sidebar: Sideb
           </div>
         </div>
       </div>
+      <React.Suspense fallback={null}><NavProgress /></React.Suspense>
       <MobileNav />
       <CommandBar />
       <QuickCapture />

@@ -326,31 +326,34 @@ export async function getEntity(id: string): Promise<EntityDetail | null> {
   if (!entity || !(await inNotebook(entity.contextId))) return null
   const noteIds = (await db.select({ noteId: schema.noteEntities.noteId }).from(schema.noteEntities).where(eq(schema.noteEntities.entityId, id))).map((r) => r.noteId)
   const noteRows = noteIds.length ? await db.select().from(schema.notes).where(and(inArray(schema.notes.id, noteIds), live)).orderBy(desc(schema.notes.updatedAt)) : []
-  const notes = await attachEntities(noteRows)
-  const timeline = await db.select().from(schema.timelineEvents).where(eq(schema.timelineEvents.entityId, id)).orderBy(desc(schema.timelineEvents.occurredAt)).limit(60)
-  const taskRows = await db
-    .select({ t: schema.tasks, entityName: schema.entities.name, entityType: schema.entities.type, sourceTitle: schema.notes.title })
-    .from(schema.tasks)
-    .leftJoin(schema.entities, eq(schema.entities.id, schema.tasks.entityId))
-    .leftJoin(schema.notes, eq(schema.notes.id, schema.tasks.sourceNoteId))
-    .where(and(or(eq(schema.tasks.entityId, id), eq(schema.tasks.ownerEntityId, id), noteIds.length ? inArray(schema.tasks.sourceNoteId, noteIds) : sql`false`), inArray(schema.tasks.status, ['open', 'waiting', 'delegated'])))
-    .orderBy(sql`${schema.tasks.dueAt} asc nulls last`)
+  const [notes, timeline, taskRows, decisionRows, allLoops, factRows, changes, rels, co] = await Promise.all([
+    attachEntities(noteRows),
+    db.select().from(schema.timelineEvents).where(eq(schema.timelineEvents.entityId, id)).orderBy(desc(schema.timelineEvents.occurredAt)).limit(60),
+    db
+      .select({ t: schema.tasks, entityName: schema.entities.name, entityType: schema.entities.type, sourceTitle: schema.notes.title })
+      .from(schema.tasks)
+      .leftJoin(schema.entities, eq(schema.entities.id, schema.tasks.entityId))
+      .leftJoin(schema.notes, eq(schema.notes.id, schema.tasks.sourceNoteId))
+      .where(and(or(eq(schema.tasks.entityId, id), eq(schema.tasks.ownerEntityId, id), noteIds.length ? inArray(schema.tasks.sourceNoteId, noteIds) : sql`false`), inArray(schema.tasks.status, ['open', 'waiting', 'delegated'])))
+      .orderBy(sql`${schema.tasks.dueAt} asc nulls last`),
+    db
+      .select({ d: schema.decisions, revisions: sql<number>`(select count(*) from decision_revisions r where r.decision_id = ${schema.decisions.id})` })
+      .from(schema.decisions)
+      .where(or(eq(schema.decisions.topicEntityId, id), eq(schema.decisions.companyEntityId, id), noteIds.length ? inArray(schema.decisions.sourceNoteId, noteIds) : sql`false`, sql`${schema.decisions.id} in (select to_id from entity_relations where from_type = 'person' and from_id = ${id} and to_type = 'decision')`))
+      .orderBy(desc(schema.decisions.decidedAt)),
+    listOpenLoops(entity.contextId, { limit: 200 }),
+    db.select({ f: schema.facts, sourceTitle: schema.notes.title }).from(schema.facts).leftJoin(schema.notes, eq(schema.notes.id, schema.facts.sourceNoteId)).where(and(eq(schema.facts.entityId, id), isNull(schema.facts.supersededById))).orderBy(desc(schema.facts.observedAt)),
+    db.select().from(schema.changes).where(eq(schema.changes.entityId, id)).orderBy(desc(schema.changes.detectedAt)).limit(10),
+    db.select().from(schema.entityRelations).where(or(eq(schema.entityRelations.fromId, id), eq(schema.entityRelations.toId, id))),
+    noteIds.length
+      ? db.select({ entityId: schema.noteEntities.entityId, n: sql<number>`count(*)` }).from(schema.noteEntities).where(and(inArray(schema.noteEntities.noteId, noteIds), ne(schema.noteEntities.entityId, id))).groupBy(schema.noteEntities.entityId).orderBy(desc(sql`count(*)`)).limit(40)
+      : Promise.resolve([] as { entityId: string; n: number }[]),
+  ])
   const tasks = taskRows.map((r) => ({ ...r.t, entityName: r.entityName, entityType: r.entityType, sourceTitle: r.sourceTitle }))
-  const decisionRows = await db
-    .select({ d: schema.decisions, revisions: sql<number>`(select count(*) from decision_revisions r where r.decision_id = ${schema.decisions.id})` })
-    .from(schema.decisions)
-    .where(or(eq(schema.decisions.topicEntityId, id), eq(schema.decisions.companyEntityId, id), noteIds.length ? inArray(schema.decisions.sourceNoteId, noteIds) : sql`false`, sql`${schema.decisions.id} in (select to_id from entity_relations where from_type = 'person' and from_id = ${id} and to_type = 'decision')`))
-    .orderBy(desc(schema.decisions.decidedAt))
   const decisions = decisionRows.map((r) => ({ ...r.d, revisions: Number(r.revisions) }))
-  const loops = (await listOpenLoops(entity.contextId, { limit: 200 })).filter((l) => l.companyEntityId === id || l.counterpartyEntityId === id || (l.sourceNoteId && noteIds.includes(l.sourceNoteId)))
-  const facts = (await db.select({ f: schema.facts, sourceTitle: schema.notes.title }).from(schema.facts).leftJoin(schema.notes, eq(schema.notes.id, schema.facts.sourceNoteId)).where(and(eq(schema.facts.entityId, id), isNull(schema.facts.supersededById))).orderBy(desc(schema.facts.observedAt))).map((r) => ({ ...r.f, sourceTitle: r.sourceTitle }))
-  const changes = await db.select().from(schema.changes).where(eq(schema.changes.entityId, id)).orderBy(desc(schema.changes.detectedAt)).limit(10)
-  const rels = await db.select().from(schema.entityRelations).where(or(eq(schema.entityRelations.fromId, id), eq(schema.entityRelations.toId, id)))
+  const loops = allLoops.filter((l) => l.companyEntityId === id || l.counterpartyEntityId === id || (l.sourceNoteId && noteIds.includes(l.sourceNoteId)))
+  const facts = factRows.map((r) => ({ ...r.f, sourceTitle: r.sourceTitle }))
   const relatedIds = [...new Set(rels.flatMap((r) => [r.fromId, r.toId]).filter((x) => x !== id))]
-  // Co-mentioned entities from shared notes, weighted.
-  const co = noteIds.length
-    ? await db.select({ entityId: schema.noteEntities.entityId, n: sql<number>`count(*)` }).from(schema.noteEntities).where(and(inArray(schema.noteEntities.noteId, noteIds), ne(schema.noteEntities.entityId, id))).groupBy(schema.noteEntities.entityId).orderBy(desc(sql`count(*)`)).limit(40)
-    : []
   const allIds = [...new Set([...relatedIds, ...co.map((c) => c.entityId)])]
   const relatedEntities = allIds.length ? await db.select().from(schema.entities).where(inArray(schema.entities.id, allIds)) : []
   const weight = (e: Entity) => Number(co.find((c) => c.entityId === e.id)?.n ?? 0) + (relatedIds.includes(e.id) ? 5 : 0)
@@ -465,10 +468,12 @@ export async function getHomeData(contextId: string) {
 
 export async function sidebarData(contextId: string) {
   const db = await getDb()
-  const favorites = await db.select({ id: schema.notes.id, title: schema.notes.title, kind: schema.notes.kind }).from(schema.notes).where(and(eq(schema.notes.contextId, contextId), live, eq(schema.notes.favorite, true))).orderBy(desc(schema.notes.updatedAt)).limit(6)
-  const pinned = await db.select({ id: schema.entities.id, name: schema.entities.name, type: schema.entities.type }).from(schema.entities).where(and(eq(schema.entities.contextId, contextId), eq(schema.entities.pinned, true))).limit(6)
-  const recents = await db.select({ id: schema.notes.id, title: schema.notes.title, kind: schema.notes.kind }).from(schema.notes).where(and(eq(schema.notes.contextId, contextId), live)).orderBy(desc(schema.notes.updatedAt)).limit(6)
-  const inboxCount = await db.select({ n: sql<number>`count(*)` }).from(schema.notes).where(and(eq(schema.notes.contextId, contextId), live, or(eq(schema.notes.status, 'inbox'), eq(schema.notes.status, 'processing'))!))
+  const [favorites, pinned, recents, inboxCount] = await Promise.all([
+    db.select({ id: schema.notes.id, title: schema.notes.title, kind: schema.notes.kind }).from(schema.notes).where(and(eq(schema.notes.contextId, contextId), live, eq(schema.notes.favorite, true))).orderBy(desc(schema.notes.updatedAt)).limit(6),
+    db.select({ id: schema.entities.id, name: schema.entities.name, type: schema.entities.type }).from(schema.entities).where(and(eq(schema.entities.contextId, contextId), eq(schema.entities.pinned, true))).limit(6),
+    db.select({ id: schema.notes.id, title: schema.notes.title, kind: schema.notes.kind }).from(schema.notes).where(and(eq(schema.notes.contextId, contextId), live)).orderBy(desc(schema.notes.updatedAt)).limit(6),
+    db.select({ n: sql<number>`count(*)` }).from(schema.notes).where(and(eq(schema.notes.contextId, contextId), live, or(eq(schema.notes.status, 'inbox'), eq(schema.notes.status, 'processing'))!)),
+  ])
   return { favorites, pinned, recents, inboxCount: Number(inboxCount[0]?.n ?? 0) }
 }
 

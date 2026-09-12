@@ -1,4 +1,6 @@
 import Link from 'next/link'
+import { Suspense } from 'react'
+import { Skeleton } from '@/components/ui'
 import { Page } from '@/components/shell/AppShell'
 import { Section, Badge, Avatar } from '@/components/ui'
 import { Panel, PanelSection } from '@/components/shell/IntelligencePanel'
@@ -12,7 +14,6 @@ import { Share2 } from 'lucide-react'
 
 export async function EntityPage({ d }: { d: EntityDetail }) {
   const e = d.entity
-  const summary = await ensureEntitySummary(d)
   const isPerson = e.type === 'person'
   const isCompany = e.type === 'company'
   const promised = d.loops.filter((l) => l.kind === 'promised')
@@ -50,7 +51,9 @@ export async function EntityPage({ d }: { d: EntityDetail }) {
 
       <div className="mb-8 rounded-xl border border-dashed border-accent-soft-2 bg-accent-soft/40 px-4 py-3.5">
         <AiMark label={isPerson ? 'Relationship summary' : isCompany ? 'Executive summary' : 'Overview'} className="mb-1.5" />
-        <p className="text-[15px] leading-relaxed">{summary}</p>
+        <Suspense fallback={<div className="space-y-2"><Skeleton className="h-4 w-full" /><Skeleton className="h-4 w-11/12" /><Skeleton className="h-4 w-2/3" /></div>}>
+          <EntitySummary d={d} />
+        </Suspense>
       </div>
 
       {d.insights.length ? <Section title="Noticed">{d.insights.map((i) => <InsightRow key={i.id} insight={i} />)}</Section> : null}
@@ -157,4 +160,10 @@ export async function EntityPage({ d }: { d: EntityDetail }) {
       </Panel>
     </Page>
   )
+}
+
+/** Streams in after the rest of the page: uses the stored summary when fresh, otherwise asks the model. */
+async function EntitySummary({ d }: { d: EntityDetail }) {
+  const summary = await ensureEntitySummary(d)
+  return <p className="text-[15px] leading-relaxed">{summary}</p>
 }

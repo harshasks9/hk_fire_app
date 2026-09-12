@@ -4,7 +4,7 @@ import { Page } from '@/components/shell/AppShell'
 import { Section, EmptyState } from '@/components/ui'
 import { getActiveContext } from '@/lib/context'
 import { getHomeData } from '@/lib/queries'
-import { dailyBrief } from '@/lib/briefing'
+import { briefLines } from '@/lib/briefing'
 import { greeting, formatTime, isToday, formatDate } from '@/lib/util'
 import { Briefing } from '@/components/home/Briefing'
 import { InsightRow, LoopRow, MeetingRow, NoteRow, TaskRow, EntityIcon } from '@/components/entities'
@@ -15,7 +15,8 @@ export const dynamic = 'force-dynamic'
 export default async function Home() {
   const ctx = await getActiveContext()
   const userName = process.env.USER_NAME || 'Harsha'
-  const [h, brief] = await Promise.all([getHomeData(ctx.id), dailyBrief(ctx.id, userName)])
+  const h = await getHomeData(ctx.id)
+  const brief = { lines: briefLines(h) }
   const today = h.meetings.filter((m) => isToday(m.startsAt))
   const nextMeeting = h.meetings[0]
   const empty = h.noteCount === 0
