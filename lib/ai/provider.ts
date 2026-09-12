@@ -38,7 +38,7 @@ function lazyGemini(key: string): AIProvider {
   return cache.gemini
 }
 
-export async function aiModels(): Promise<{ generation: string; embedding: string; source: string } | null> {
+export async function aiModels(): Promise<{ generation: string; embedding: string; source: string; verified: boolean } | null> {
   const key = process.env.GEMINI_API_KEY
   if (!key || getProvider().name !== 'gemini') return null
   const { resolveGeminiModels } = await import('./gemini-models')
@@ -53,6 +53,6 @@ export function aiStatus() {
     isLLM: p.isLLM,
     anthropicConfigured: Boolean(process.env.ANTHROPIC_API_KEY),
     geminiConfigured: Boolean(process.env.GEMINI_API_KEY),
-    embeddings: process.env.GEMINI_API_KEY && process.env.AI_PROVIDER !== 'local' ? 'gemini-text-embedding-004' : 'local-hash-v1',
+    embeddings: process.env.GEMINI_API_KEY && process.env.AI_PROVIDER !== 'local' && process.env.EMBEDDINGS !== 'local' ? 'gemini (model discovered at runtime)' : 'local-hash-v1',
   }
 }

@@ -1,10 +1,10 @@
 /*
-  Embeddings. Gemini text-embedding-004 (768d) when configured; otherwise a
+  Embeddings. Gemini embeddings (768d, model discovered at runtime) when configured; otherwise a
   deterministic local embedding (hashed unigram+bigram features, L2 normalised,
   768d) so semantic search works everywhere and the vector column has one shape.
 */
 import type { EmbeddingProvider } from './types'
-import { resolveGeminiModels, invalidateGeminiModels } from './gemini-models'
+import { resolveGeminiModels, markGeminiModelUnavailable } from './gemini-models'
 import { logAiCall } from './log'
 
 export const EMBEDDING_DIMENSIONS = 768
@@ -95,7 +95,7 @@ export function geminiEmbeddingProvider(apiKey: string): EmbeddingProvider {
         return await run(model)
       } catch (err) {
         if ((err as { status?: number }).status !== 404) throw err
-        invalidateGeminiModels()
+        markGeminiModelUnavailable(model)
         return run((await resolveGeminiModels(apiKey, true)).embedding)
       }
     },
