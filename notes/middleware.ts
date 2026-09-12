@@ -4,7 +4,8 @@ import { SESSION_COOKIE, verifySessionToken } from './lib/auth'
 export async function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl
   if (!process.env.APP_PASSWORD) return NextResponse.next()
-  if (pathname === '/login' || pathname === '/api/login' || pathname === '/api/health' || pathname.startsWith('/api/cron/')) {
+  // Public: the login flow, health, cron, and the PWA files a browser fetches before (or without) a session.
+  if (pathname === '/login' || pathname === '/api/login' || pathname === '/api/health' || pathname.startsWith('/api/cron/') || pathname === '/sw.js' || pathname === '/manifest.json' || pathname.startsWith('/icons/')) {
     return NextResponse.next()
   }
   const token = req.cookies.get(SESSION_COOKIE)?.value
@@ -17,5 +18,5 @@ export async function middleware(req: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/((?!_next/static|_next/image|favicon.ico|icon.svg|manifest.json).*)'],
+  matcher: ['/((?!_next/static|_next/image|favicon.ico|icon.svg|manifest.json|sw.js|icons/).*)'],
 }
