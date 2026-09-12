@@ -201,7 +201,7 @@ function detectEntities(text: string, ctx: ExtractContext) {
       }
     }
     // Capitalised multi-word phrases that look like named initiatives → project/topic.
-    if (words.length >= 2 && words.length <= 4 && /(?:Program|Programme|Project|Initiative|Platform|Enterprise|Strategy|Plan|Launch|Pilot|POC|Rollout|Migration|Task Force)$/i.test(c.name)) {
+    if (words.length >= 2 && words.length <= 4 && /(?:Program|Programme|Project|Initiative|Platform|Enterprise|Strategy|Plan|Launch|Pilot|POC|Rollout|Migration|Task Force)$/i.test(c.name) && !new RegExp(`^(?:${PERSON_TITLES})\\b`).test(c.name)) {
       projects.set(lower, { name: c.name, excerpt: truncate(c.sentence, 240) })
     }
   }
