@@ -11,8 +11,8 @@ import { and, eq, inArray, sql, desc } from 'drizzle-orm'
 import { getDb, schema } from './db'
 import type { Entity, EntityType, Note, NoteSummary } from './db/schema'
 import { getProvider } from './ai/provider'
-import { getEmbeddingProvider } from './ai/embeddings'
-import { matchKnownEntities } from './ai/local'
+import { embedTexts } from './ai/embeddings'
+import { matchKnownEntities, localExtract } from './ai/local'
 import type { Extraction, KnownEntity } from './ai/types'
 import { chunkText, slugify, uid, truncate } from './util'
 import { jaccard, similarText } from './similarity'
@@ -121,13 +121,25 @@ export async function processNote(noteId: string): Promise<ProcessResult | null>
     const text = [note.title, note.contentText].filter(Boolean).join('\n\n')
     const known = await knownEntitiesFor(note.contextId)
     const ctx = { title: note.title || undefined, kind: note.kind, knownEntities: known, userName: USER_NAME }
-    const ex = text.trim().length < 3 ? null : await provider.extract(note.contentText || note.title, ctx)
+    let ex: Extraction | null = null
+    let usedProvider = provider.name
+    if (text.trim().length >= 3) {
+      try {
+        ex = await provider.extract(note.contentText || note.title, ctx)
+      } catch (err) {
+        // The model is unavailable (bad key, retired model, outage): fall back to local understanding so the note is still filed.
+        console.error('[pipeline] model extraction failed, using local extractor:', String(err).slice(0, 200))
+        ex = localExtract(note.contentText || note.title, ctx)
+        usedProvider = 'local'
+      }
+    }
+    result.provider = usedProvider
     if (!ex) {
       await db.update(schema.notes).set({ status: 'processed', aiProcessedAt: new Date(), summary: null }).where(eq(schema.notes.id, noteId))
       return result
     }
     // Precision layer: known entities matched deterministically are always included.
-    if (provider.isLLM) {
+    if (usedProvider !== 'local') {
       for (const m of matchKnownEntities(text, known)) {
         const bucket = m.entity.type === 'person' ? ex.people : m.entity.type === 'company' ? ex.companies : m.entity.type === 'topic' ? ex.topics : ex.projects
         if (!bucket.some((b) => b.name.toLowerCase() === m.entity.name.toLowerCase())) bucket.push({ name: m.entity.name, excerpt: m.excerpt })
@@ -288,7 +300,7 @@ export async function processNote(noteId: string): Promise<ProcessResult | null>
     }
 
     /* ------------------------------ summary ---------------------------- */
-    const summary = summaryFromExtraction(ex, provider.name)
+    const summary = summaryFromExtraction(ex, usedProvider)
     const longEnough = (note.contentText?.length ?? 0) > 240 || ex.actions.length > 0 || ex.decisions.length > 0
     await db.update(schema.notes).set({ summary: longEnough ? summary : null, status: 'processed', aiProcessedAt: new Date(), processingError: null }).where(eq(schema.notes.id, noteId))
     if (note.meetingId) await db.update(schema.meetings).set({ summary, updatedAt: new Date() }).where(eq(schema.meetings.id, note.meetingId))
@@ -311,12 +323,11 @@ function cleanTitle(s: string): string {
 
 export async function embedOwner(contextId: string, ownerType: 'note' | 'entity' | 'task' | 'decision' | 'meeting' | 'research', ownerId: string, text: string) {
   const db = await getDb()
-  const provider = getEmbeddingProvider()
   await db.delete(schema.embeddings).where(and(eq(schema.embeddings.ownerType, ownerType), eq(schema.embeddings.ownerId, ownerId)))
   const chunks = chunkText(text)
   if (chunks.length === 0) return
-  const vectors = await provider.embed(chunks)
-  await db.insert(schema.embeddings).values(chunks.map((c, i) => ({ id: uid('emb'), contextId, ownerType, ownerId, chunkIndex: i, text: c, embedding: vectors[i]!, provider: provider.name })))
+  const { vectors, provider } = await embedTexts(chunks)
+  await db.insert(schema.embeddings).values(chunks.map((c, i) => ({ id: uid('emb'), contextId, ownerType, ownerId, chunkIndex: i, text: c, embedding: vectors[i]!, provider })))
 }
 
 async function touchEntityEmbedding(e: Entity) {

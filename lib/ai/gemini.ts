@@ -4,12 +4,19 @@ import { emptyExtraction } from './types'
 import { extractionPrompt, SYSTEM_CHIEF_OF_STAFF } from './prompts'
 import { extractJson } from '../util'
 import { logAiCall } from './log'
+import { resolveGeminiModels, invalidateGeminiModels } from './gemini-models'
 
 const API = 'https://generativelanguage.googleapis.com/v1beta/models'
 
-export function geminiProvider(apiKey: string, model = process.env.GEMINI_MODEL || 'gemini-2.5-flash'): AIProvider {
-  async function call(prompt: string, opts: CompleteOptions): Promise<string> {
+export function geminiProvider(apiKey: string): AIProvider {
+  let model = process.env.GEMINI_MODEL || 'gemini-2.5-flash'
+  async function currentModel(): Promise<string> {
+    model = (await resolveGeminiModels(apiKey)).generation
+    return model
+  }
+  async function call(prompt: string, opts: CompleteOptions, retry = true): Promise<string> {
     const started = Date.now()
+    const model = await currentModel()
     const body: Record<string, unknown> = {
       systemInstruction: { parts: [{ text: opts.system ?? SYSTEM_CHIEF_OF_STAFF }] },
       contents: [{ role: 'user', parts: [{ text: prompt }] }],
@@ -24,6 +31,11 @@ export function geminiProvider(apiKey: string, model = process.env.GEMINI_MODEL 
     if (!res.ok) {
       const err = (await res.text()).slice(0, 300)
       await logAiCall({ provider: 'gemini', model, purpose: opts.purpose, inputChars: prompt.length, ok: false, error: `HTTP ${res.status}: ${err}`, durationMs: Date.now() - started })
+      if (res.status === 404 && retry) {
+        invalidateGeminiModels()
+        await resolveGeminiModels(apiKey, true)
+        return call(prompt, opts, false)
+      }
       throw new Error(`Gemini HTTP ${res.status}`)
     }
     const json = (await res.json()) as { candidates?: { content?: { parts?: { text?: string }[] } }[] }
@@ -34,7 +46,9 @@ export function geminiProvider(apiKey: string, model = process.env.GEMINI_MODEL 
 
   return {
     name: 'gemini',
-    model,
+    get model() {
+      return model
+    },
     isLLM: true,
     async extract(text: string, ctx: ExtractContext): Promise<Extraction> {
       const raw = await call(extractionPrompt(text, ctx), { json: true, purpose: 'extract', maxTokens: 8192 })
@@ -44,6 +58,7 @@ export function geminiProvider(apiKey: string, model = process.env.GEMINI_MODEL 
     complete: call,
     async *stream(prompt: string, opts: CompleteOptions) {
       const started = Date.now()
+      const model = await currentModel()
       const body = {
         systemInstruction: { parts: [{ text: opts.system ?? SYSTEM_CHIEF_OF_STAFF }] },
         contents: [{ role: 'user', parts: [{ text: prompt }] }],

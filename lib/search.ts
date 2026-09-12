@@ -1,7 +1,7 @@
 /* Hybrid search: exact keyword + semantic (pgvector) + entity match, grouped by type. */
 import { and, desc, eq, ilike, inArray, isNull, or, sql, cosineDistance } from 'drizzle-orm'
 import { getDb, schema } from './db'
-import { embedQuery } from './queries'
+import { queryVector } from './queries'
 import type { EntityType } from './db/schema'
 import { escapeRegExp, truncate } from './util'
 
@@ -74,10 +74,10 @@ export async function search(contextIds: string[], q: string, opts: { limit?: nu
   for (const r of research) add({ id: r.id, type: 'research', title: r.name, snippet: r.description ?? undefined, href: `/research/${r.id}`, score: 6, date: r.updatedAt, matchKind: 'keyword' })
 
   // Semantic
-  if (opts.semantic !== false) {
-    const v = await embedQuery(query)
-    const dist = cosineDistance(schema.embeddings.embedding, v)
-    const sem = await db.select({ ownerType: schema.embeddings.ownerType, ownerId: schema.embeddings.ownerId, text: schema.embeddings.text, d: dist }).from(schema.embeddings).where(ctx(schema.embeddings.contextId)).orderBy(dist).limit(24)
+  const qv = opts.semantic !== false ? await queryVector(contextIds, query) : null
+  if (qv) {
+    const dist = cosineDistance(schema.embeddings.embedding, qv.vector)
+    const sem = await db.select({ ownerType: schema.embeddings.ownerType, ownerId: schema.embeddings.ownerId, text: schema.embeddings.text, d: dist }).from(schema.embeddings).where(and(ctx(schema.embeddings.contextId), eq(schema.embeddings.provider, qv.provider))).orderBy(dist).limit(24)
     const noteIds = [...new Set(sem.filter((s) => s.ownerType === 'note').map((s) => s.ownerId))]
     const noteRows = noteIds.length ? await db.select({ id: schema.notes.id, title: schema.notes.title, kind: schema.notes.kind, updatedAt: schema.notes.updatedAt, meetingId: schema.notes.meetingId }).from(schema.notes).where(and(inArray(schema.notes.id, noteIds), isNull(schema.notes.deletedAt))) : []
     for (const s of sem) {
