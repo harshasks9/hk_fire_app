@@ -40,6 +40,10 @@ The owner wants to give the same system to other people — colleagues, family, 
 - **F11 — Automatic tags**: content-derived tags on every note for filtering and search, editable by the owner.
 - **F12 — Graph explorer**: an interactive view of how people, companies, topics, tags, notes, meetings and decisions connect, with focus mode from any item.
 
+- **F13 — Contexts and sample data**: the owner manages their own categories and can remove the demo dataset without losing their notes.
+- **F14 — Sheets and charts**: Excel-style calculations and charts inside notes.
+- **F15 — Numbers dashboard**: every extracted figure as tiles and trends.
+
 ### Out of scope (this release)
 - Real-time collaboration inside one note; shared notebooks with multiple concurrent editors.
 - Billing or metering for AI usage beyond visibility.

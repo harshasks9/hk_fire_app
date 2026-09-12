@@ -143,6 +143,16 @@ Record a meeting on your iPhone (Voice Memos, the Phone app's call recording, No
 - **Automatic tags** — every time AI reads a note it stores 4–12 lowercase tags (`notes.tags`): the model's own topical tags, the topics and projects it found, and signal tags such as `meeting`, `recording`, `decision`, `action-items`, `open-loop`, `numbers`, `risk`. Without a model, a vocabulary-based tagger runs instead. You can add your own tags on any note (kept across reprocessing) and remove suggested ones. Tags show on note rows, the note panel and meeting pages; the Notes page filters by tag; search understands `tag:pricing` / `#pricing` alone or combined with words; `/tags` is the tag cloud with a one-click backfill for notes written before tagging existed.
 - **Graph** — `/graph` is an interactive explorer over people, companies, topics, projects, tags, notes, meetings and decisions (`lib/graph.ts`, `GET /api/graph`). The overview shows the most-mentioned entities and tags linked by explicit relations, co-mentions and tag co-occurrence; *Focus here* (or *See in the graph* from any note, entity, meeting or tag) rebuilds the graph around one node, one or two hops deep. Pan, zoom, pinch, drag nodes to pin them, filter by type, search within the graph, click to inspect connections, double-click to open. Works at phone width.
 
+## Sheets, charts and the numbers dashboard
+
+- **Sheets in notes** — type `/sheet` in any note for a spreadsheet block (`lib/sheet/`, `components/sheet/`): A1-style cells, a formula bar, Excel-style formulas (`=SUM(B2:B4)`, `IF`, `SUMIF`/`COUNTIF`/`AVERAGEIF(S)`, `VLOOKUP`/`INDEX`/`MATCH`, `ROUND`, text functions, and finance: `PMT`, `FV`, `PV`, `NPV`, `IRR`, `NPER`, `CAGR`, `PCT`), per-column formats (number, integer, currency, percent), rows/columns on demand, and paste straight from Excel, Numbers or Google Sheets. Charts are added from the sheet toolbar (bar, line, area, pie) over any range: the first row becomes series names and the first column the labels, with hover tooltips, a legend and a table view. Sheets render read-only on share pages, and their computed values are part of the note's text, so search, AI and the numbers pipeline see them.
+- **Numbers dashboard** — `/numbers` turns every figure the pipeline extracted from notes and meetings into KPI tiles (current value, change since the previous observation, source link) and trend charts per measure with one series per person or company. Filter by who and by measure; `?all=1` spans contexts.
+
+## Contexts and sample data
+
+- **Contexts** (categories) are managed in Settings → Contexts: add (name, kind, description), rename, and remove. Removing one either moves everything it holds into another context (people and companies with the same name are merged) or deletes it all.
+- **Sample data** — the demo dataset the app ships with can be removed in Settings → Data → *Remove sample data*: sample notes, meetings, transcripts, research, decisions and everything derived from them go away, entities nothing refers to any more are dropped, and the samples never come back. Notes you wrote, and the contexts, stay.
+
 ## Notebooks for other people (admin)
 
 One deployment can host many private notebooks. The first account (the owner) is the platform **admin** and sees **Admin** in the sidebar:

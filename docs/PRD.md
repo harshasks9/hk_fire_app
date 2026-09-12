@@ -160,3 +160,24 @@ Goal: a recording made on a phone (or the transcript an app produced from it) be
 - H4. Client: animated force layout with auto-fit, pan/zoom/pinch, node dragging (pins), type filters with counts, in-graph search, hover highlighting, a detail panel listing every connection with its relation, *Focus here*, *Open*, double-click to open; URL reflects focus/types/depth.
 - H5. Entry points: sidebar *Graph*, command bar, *See in the graph* on notes, entity pages, meeting pages and the tags page.
 
+---
+
+## 15. Contexts and sample data (F13)
+
+- C1. Settings → Contexts: create (name, kind, description; slug derived, unique per notebook, at most 24), rename/describe, remove. Members cannot change contexts.
+- C2. Removing a context requires a choice: move everything to another context (all context-scoped rows re-pointed; entities of the same type and slug in the target are merged, mentions and references re-linked) or delete everything in it (no Trash). The last context cannot be removed; the active-context cookie is cleared so the app falls back.
+- C3. Settings → Data → *Remove sample data* (owner/admin only) deletes the sample notes and meetings by their seeded ids together with everything derived (tasks, decisions and revisions, commitments, facts and changes, timeline, mentions, attachments, sources, versions, share links, embeddings, transcripts), sample research projects (owner notes are unfiled, not deleted), then any entity no row refers to; insights and weekly reviews are cleared to rebuild. `settings.sampleData=false` is recorded and the seed marker stays so the bootstrap never re-seeds.
+
+## 16. Sheets and charts (F14)
+
+- S1. `/sheet` inserts an atomic editor block whose JSON (`rows`, `cols`, `cells` A1→raw text, `formats` per column, `charts`) lives in the note document; the block is draggable and removable.
+- S2. Formulas start with `=`: numbers (incl. `12%`, `1,200`, `$3.5M` literals), strings, booleans, cell and range references, `+ - * / ^ & % =` and comparisons, ~60 functions (math, statistics, text, logic, criteria, lookups, finance). Errors are `#DIV/0!`, `#REF!`, `#NAME?`, `#VALUE!`, `#CYCLE!`, `#N/A`, `#NUM!` and show their detail in the formula bar.
+- S3. Editing: click to select, type to start editing, Enter/Tab/arrows move, Escape cancels, Delete clears, paste of TSV/CSV fills a block and grows the grid, copy exports values as TSV; per-column display format.
+- S4. Charts: bar, line, area, pie over a range; header row and label column detected; categorical palette in fixed order (eight slots, extra series fold into the table view), thin marks with rounded data-ends, hairline grid, hover tooltip, legend for two or more series, table toggle; dark mode uses the dark palette.
+- S5. Projections: text (`Sheet: title` + computed rows) for search/AI, Markdown tables for export, read-only rendering on share pages.
+
+## 17. Numbers dashboard (F15)
+
+- Q1. `/numbers` groups extracted facts by entity and canonical label with their history (superseded values included, duplicates collapsed) and shows tiles (latest value, delta vs previous, date, source link) and one line chart per measure with entities as series.
+- Q2. Filters by entity, measure and text; `?all=1` spans every context; empty state explains where numbers come from and points at `/sheet`.
+

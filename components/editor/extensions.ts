@@ -1,6 +1,8 @@
 import { Node, Extension, mergeAttributes } from '@tiptap/core'
 import { Plugin, PluginKey, TextSelection } from '@tiptap/pm/state'
 import { Decoration, DecorationSet } from '@tiptap/pm/view'
+import { ReactNodeViewRenderer } from '@tiptap/react'
+import { SheetView } from '@/components/sheet/SheetView'
 
 declare module '@tiptap/core' {
   interface Commands<ReturnType> {
@@ -96,5 +98,44 @@ export const HighlightRange = Extension.create({
         return true
       },
     }
+  },
+})
+
+/* ------------------------------------------------------------------ sheet */
+declare module '@tiptap/core' {
+  interface Commands<ReturnType> {
+    sheet: { insertSheet: (sheet?: Record<string, unknown>) => ReturnType }
+  }
+}
+
+/** Spreadsheet block: a grid with Excel-style formulas and charts, stored as JSON in the node's attrs. */
+export const Sheet = Node.create({
+  name: 'sheet',
+  group: 'block',
+  atom: true,
+  draggable: true,
+  selectable: true,
+  addAttributes() {
+    return {
+      sheet: {
+        default: { rows: 8, cols: 5, cells: {}, formats: {}, charts: [] },
+        parseHTML: (el) => { try { return JSON.parse(el.getAttribute('data-sheet') || '{}') } catch { return {} } },
+        renderHTML: (attrs) => ({ 'data-sheet': JSON.stringify(attrs.sheet ?? {}) }),
+      },
+    }
+  },
+  parseHTML() {
+    return [{ tag: 'div[data-type="sheet"]' }]
+  },
+  renderHTML({ HTMLAttributes }) {
+    return ['div', mergeAttributes(HTMLAttributes, { 'data-type': 'sheet', class: 'hkn-sheet-html' })]
+  },
+  addCommands() {
+    return {
+      insertSheet: (sheet) => ({ chain }) => chain().insertContent([{ type: this.name, attrs: { sheet: sheet ?? { rows: 8, cols: 5, cells: {}, formats: {}, charts: [] } } }, { type: 'paragraph' }]).run(),
+    }
+  },
+  addNodeView() {
+    return ReactNodeViewRenderer(SheetView)
   },
 })
