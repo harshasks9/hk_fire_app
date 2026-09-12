@@ -4,7 +4,7 @@ import { Extension, type Editor, type Range } from '@tiptap/core'
 import Suggestion, { type SuggestionProps, type SuggestionKeyDownProps } from '@tiptap/suggestion'
 import { ReactRenderer } from '@tiptap/react'
 import tippy, { type Instance } from 'tippy.js'
-import { Heading1, Heading2, Heading3, List, ListOrdered, CheckSquare, Table, Image as ImageIcon, Paperclip, Quote, Code, Info, GitBranch, AtSign, CalendarDays, Minus, Sparkles, Wand2, ListChecks, LayoutTemplate } from 'lucide-react'
+import { Heading1, Heading2, Heading3, List, ListOrdered, CheckSquare, Table, Image as ImageIcon, Paperclip, Quote, Code, Info, GitBranch, AtSign, CalendarDays, Minus, Sparkles, Wand2, ListChecks, LayoutTemplate, Table2 } from 'lucide-react'
 import { cx } from '@/lib/util'
 
 export interface SlashItem { id: string; title: string; hint: string; icon: React.ComponentType<{ className?: string }>; keywords?: string; ai?: boolean; run: (editor: Editor, range: Range) => void }
@@ -19,6 +19,7 @@ export function slashItems(handlers: { upload: (kind: 'image' | 'file') => void;
     { id: 'bullets', title: 'Bullet list', hint: 'Simple list', icon: List, run: (e, r) => del(e, r).toggleBulletList().run() },
     { id: 'numbered', title: 'Numbered list', hint: 'Ordered list', icon: ListOrdered, run: (e, r) => del(e, r).toggleOrderedList().run() },
     { id: 'table', title: 'Table', hint: '3 × 3 table', icon: Table, run: (e, r) => del(e, r).insertTable({ rows: 3, cols: 3, withHeaderRow: true }).run() },
+    { id: 'sheet', title: 'Sheet', hint: 'Spreadsheet with formulas and charts', icon: Table2, keywords: 'spreadsheet excel formula calculation chart graph numbers', run: (e, r) => del(e, r).insertSheet().run() },
     { id: 'image', title: 'Image', hint: 'Upload or paste an image', icon: ImageIcon, keywords: 'picture screenshot photo', run: (e, r) => { del(e, r).run(); handlers.upload('image') } },
     { id: 'file', title: 'File', hint: 'Attach a document', icon: Paperclip, keywords: 'attachment pdf upload', run: (e, r) => { del(e, r).run(); handlers.upload('file') } },
     { id: 'quote', title: 'Quote', hint: 'Blockquote', icon: Quote, run: (e, r) => del(e, r).toggleBlockquote().run() },

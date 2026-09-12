@@ -1,5 +1,6 @@
 import * as React from 'react'
 import type { PMNode } from '@/lib/markdown'
+import { SheetStatic } from '@/components/sheet/SheetView'
 
 /** Read-only renderer for editor JSON, used by public share pages. Mirrors the editor's prose styling. */
 export function DocView({ doc }: { doc: PMNode }) {
@@ -51,6 +52,7 @@ function Block({ node }: { node: PMNode }) {
     case 'tableHeader': return <th>{kids}</th>
     case 'tableCell': return <td>{kids}</td>
     case 'callout': return <div className="callout" data-kind={String(node.attrs?.kind ?? 'info')}>{kids}</div>
+    case 'sheet': return <SheetStatic data={node.attrs?.sheet} />
     default: return node.content ? <div>{kids}</div> : <p><Inline nodes={[node]} /></p>
   }
 }

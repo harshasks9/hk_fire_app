@@ -2,7 +2,7 @@
 import * as React from 'react'
 import { Command } from 'cmdk'
 import { useRouter } from 'next/navigation'
-import { FileText, CalendarDays, Users, Building2, Hash, CheckSquare, GitBranch, FlaskConical, Sparkles, Search, Plus, Inbox, Home, Repeat, Settings, Mic, Zap, ArrowRight, Sun, Moon, Share2 } from 'lucide-react'
+import { FileText, CalendarDays, Users, Building2, Hash, CheckSquare, GitBranch, FlaskConical, Sparkles, Search, Plus, Inbox, Home, Repeat, Settings, Mic, Zap, ArrowRight, Sun, Moon, Share2, TrendingUp } from 'lucide-react'
 import { setShell, useShell } from './store'
 import { api } from '@/lib/client'
 import { createNoteAndOpen } from '@/lib/offline/notes-client'
@@ -70,6 +70,7 @@ export function CommandBar() {
     { id: 'topics', label: 'Go to Topics', icon: Hash, run: () => go('/topics') },
     { id: 'tags', label: 'Go to Tags', icon: Hash, run: () => go('/tags'), keywords: 'tag labels' },
     { id: 'graph', label: 'Open the graph', icon: Share2, run: () => go('/graph'), keywords: 'graph network map relationships' },
+    { id: 'numbers', label: 'Numbers dashboard', icon: TrendingUp, run: () => go('/numbers'), keywords: 'numbers metrics kpi figures charts dashboard' },
     { id: 'decisions', label: 'Go to Decisions', icon: GitBranch, run: () => go('/decisions') },
     { id: 'loops', label: 'Go to Open loops', icon: Repeat, run: () => go('/loops') },
     { id: 'research', label: 'Go to Research', icon: FlaskConical, run: () => go('/research') },

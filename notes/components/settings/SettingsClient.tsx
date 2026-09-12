@@ -6,7 +6,7 @@ import { ThemeToggle } from '@/components/shell/ThemeToggle'
 import { api } from '@/lib/client'
 import { Download, RefreshCw, Database, Trash2 } from 'lucide-react'
 
-export function SettingsClient({ settings }: { userName?: string; authEnabled?: boolean; settings: Record<string, unknown> }) {
+export function SettingsClient({ settings, sampleData = true, canEdit = true }: { userName?: string; authEnabled?: boolean; settings: Record<string, unknown>; sampleData?: boolean; canEdit?: boolean }) {
   const router = useRouter()
   const toast = useToast()
   const [busy, setBusy] = React.useState<string | null>(null)
@@ -14,6 +14,18 @@ export function SettingsClient({ settings }: { userName?: string; authEnabled?: 
   const [aiEnabled, setAiEnabled] = React.useState(settings.aiEnabled !== false)
   const save = async (patch: Record<string, unknown>) => { await api('/api/settings', { method: 'PATCH', json: patch }); router.refresh() }
   const [progress, setProgress] = React.useState<string | null>(null)
+  const [sample, setSample] = React.useState<{ notes: number; meetings: number } | null>(null)
+  React.useEffect(() => { if (sampleData) api<{ counts: { notes: number; meetings: number } }>('/api/admin/sample').then((r) => setSample(r.counts)).catch(() => setSample(null)) }, [sampleData])
+  const removeSample = async () => {
+    if (!confirm('Remove the sample dataset? Everything you wrote yourself stays. This cannot be undone.')) return
+    setBusy('sample')
+    try {
+      const r = await api<{ notes: number; meetings: number; entities: number }>('/api/admin/sample', { method: 'DELETE' })
+      toast.push({ text: `Removed ${r.notes} sample notes, ${r.meetings} meetings and ${r.entities} people/companies/topics`, tone: 'success' })
+      setSample(null)
+      router.refresh()
+    } catch (e) { toast.push({ text: String(e), tone: 'danger' }) } finally { setBusy(null) }
+  }
   const run = async (key: string, path: string, msg: string) => {
     setBusy(key)
     try { await api(path, { method: 'POST' }); toast.push({ text: msg, tone: 'success' }); router.refresh() } catch (e) { toast.push({ text: String(e), tone: 'danger' }) } finally { setBusy(null) }
@@ -61,8 +73,10 @@ export function SettingsClient({ settings }: { userName?: string; authEnabled?: 
         <div className="flex flex-wrap gap-2">
           <a href="/api/admin/export" className="inline-flex h-8 items-center gap-1.5 rounded-[9px] border border-border-2 bg-surface px-3 text-[13.5px] font-medium hover:bg-surface-2"><Download className="h-3.5 w-3.5" /> Export everything (JSON + Markdown)</a>
           <Button loading={busy === 'reindex'} onClick={reindex}><RefreshCw className="h-3.5 w-3.5" /> {progress ? `Rebuilding ${progress}` : 'Rebuild index'}</Button>
-          <Button variant="danger" loading={busy === 'reseed'} onClick={() => { if (confirm('Replace ALL data in this notebook with the sample dataset? This cannot be undone.')) run('reseed', '/api/admin/reseed', 'Sample data loaded') }}><Trash2 className="h-3.5 w-3.5" /> Reset to sample data</Button>
+          {canEdit && sampleData && sample && sample.notes > 0 ? <Button variant="danger" loading={busy === 'sample'} onClick={removeSample}><Trash2 className="h-3.5 w-3.5" /> Remove sample data ({sample.notes} notes)</Button> : null}
+          {canEdit ? <Button variant="ghost" loading={busy === 'reseed'} onClick={() => { if (confirm('Replace ALL data in this notebook with the sample dataset? This cannot be undone.')) run('reseed', '/api/admin/reseed', 'Sample data loaded') }}>Reset to sample data</Button> : null}
         </div>
+        {canEdit && sampleData && sample && sample.notes > 0 ? <p className="mt-2 text-[12.5px] text-fg-3">The demo notes, meetings, people and decisions that came with the app are still here. Removing them keeps everything you wrote and stops them from ever coming back.</p> : null}
         <p className="mt-2 flex items-center gap-1.5 text-[12.5px] text-fg-3"><Database className="h-3.5 w-3.5" /> Deleting a note removes its open extracted tasks and loops; history that other notes confirmed stays.</p>
       </section>
     </div>

@@ -3,6 +3,7 @@
   and exports. Covers the subset the editor produces: headings, paragraphs,
   bullet/ordered/task lists, quotes, code blocks, callouts, tables, marks.
 */
+import { normalizeSheet, sheetToMarkdown, sheetToText } from './sheet/model'
 export interface PMNode { type: string; attrs?: Record<string, unknown>; content?: PMNode[]; text?: string; marks?: { type: string; attrs?: Record<string, unknown> }[] }
 
 function inline(text: string): PMNode[] {
@@ -143,6 +144,10 @@ export function docToText(doc: unknown): string {
     if (n.type === 'listItem' && depth > 0) out.push('- ')
     if (n.type === 'callout' && n.attrs?.kind === 'decision') out.push('Decision: ')
     if (n.type === 'callout' && n.attrs?.kind === 'ai') out.push('[AI] ')
+    if (n.type === 'sheet') {
+      out.push(sheetToText(normalizeSheet(n.attrs?.sheet)) + '\n\n')
+      return
+    }
     for (const c of n.content ?? []) walk(c, depth + 1)
     if (n.type === 'tableCell' || n.type === 'tableHeader') out.push(' | ')
     if (block) out.push('\n')
@@ -200,6 +205,8 @@ export function docToMarkdown(doc: unknown): string {
         )
       case 'horizontalRule':
         return '---\n\n'
+      case 'sheet':
+        return sheetToMarkdown(normalizeSheet(n.attrs?.sheet))
       case 'image':
         return `![${n.attrs?.alt ?? ''}](${n.attrs?.src ?? ''})\n\n`
       default:

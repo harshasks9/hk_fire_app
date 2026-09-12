@@ -13,6 +13,9 @@ import { TokensSection } from '@/components/settings/TokensSection'
 import { TemplatesSection } from '@/components/settings/TemplatesSection'
 import { ImportSection } from '@/components/settings/ImportSection'
 import { SharingSection } from '@/components/settings/SharingSection'
+import { ContextsSection } from '@/components/settings/ContextsSection'
+import { getDb, schema } from '@/lib/db'
+import { sql, inArray, isNull, and } from 'drizzle-orm'
 import { headers } from 'next/headers'
 import { decryptSecret, maskSecret } from '@/lib/crypto'
 import { getActiveContext } from '@/lib/context'
@@ -27,6 +30,9 @@ export default async function SettingsPage() {
   const contexts = await getContexts()
   const s = await settingsData(contexts.map((c) => c.id), session?.notebookId ?? '', session?.user)
   const active = await getActiveContext()
+  const db = await getDb()
+  const noteCounts = new Map<string, number>()
+  if (contexts.length) for (const r of await db.select({ id: schema.notes.contextId, n: sql<number>`count(*)` }).from(schema.notes).where(and(inArray(schema.notes.contextId, contexts.map((c) => c.id)), isNull(schema.notes.deletedAt))).groupBy(schema.notes.contextId)) noteCounts.set(r.id, Number(r.n))
   const h = await headers()
   const host = h.get('x-forwarded-host') ?? h.get('host') ?? 'localhost:3000'
   const origin = `${h.get('x-forwarded-proto') ?? (host.startsWith('localhost') ? 'http' : 'https')}://${host}`
@@ -46,7 +52,7 @@ export default async function SettingsPage() {
       <div className="space-y-10">
         <AccountSection name={session?.user.name ?? ''} email={session?.user.email ?? null} role={session?.role ?? 'owner'} notebookName={session?.notebook.name ?? 'Primary'} authEnabled={authEnabled()} hasPassword={Boolean(session?.user.passwordHash)} />
         <AiSection settings={{ ...aiView }} canEdit={canEdit} />
-        <SettingsClient userName={s.user?.name ?? 'Harsha'} authEnabled={authEnabled()} settings={(s.user?.settings ?? {}) as Record<string, unknown>} />
+        <SettingsClient userName={s.user?.name ?? 'Harsha'} authEnabled={authEnabled()} settings={(s.user?.settings ?? {}) as Record<string, unknown>} sampleData={nbSettings.sampleData !== false} canEdit={canEdit} />
         <TemplatesSection />
         <ImportSection contexts={contexts.map((c) => ({ id: c.id, name: c.name }))} activeContextId={active.id} />
         <TokensSection origin={origin} />
@@ -56,13 +62,9 @@ export default async function SettingsPage() {
           <p className="text-[13.5px] text-fg-2">Deleted notes are kept for 30 days. <Link href="/trash" className="text-accent underline-offset-2 hover:underline">Open Trash</Link></p>
         </section>
       </div>
-      <section className="mt-10">
-        <h2 className="mb-3 text-[13px] font-semibold uppercase tracking-[0.06em] text-fg-2">Contexts</h2>
-        <ul className="divide-y divide-border rounded-xl border border-border">
-          {contexts.map((c) => <li key={c.id} className="flex items-center gap-3 px-4 py-2.5 text-[13.5px]"><span className={cx('h-2 w-2 rounded-full', dotFor(c.kind))} /><span className="w-24 font-medium">{c.name}</span><span className="flex-1 text-fg-2">{c.description}</span><Badge tone="outline">isolated retrieval</Badge></li>)}
-        </ul>
-        <p className="mt-2 text-[12.5px] text-fg-3">Each context has separate data boundaries and AI retrieval scope. Cross-context search only happens when you tick the box.</p>
-      </section>
+      <div className="mt-10">
+        <ContextsSection contexts={contexts.map((c) => ({ id: c.id, name: c.name, slug: c.slug, kind: c.kind, description: c.description, noteCount: noteCounts.get(c.id) ?? 0 }))} canEdit={canEdit} />
+      </div>
       <section className="mt-10">
         <h2 className="mb-3 text-[13px] font-semibold uppercase tracking-[0.06em] text-fg-2">Keyboard shortcuts</h2>
         <dl className="grid gap-x-8 gap-y-1.5 text-[13.5px] sm:grid-cols-2">{shortcuts.map(([k, v]) => <div key={k} className="flex items-center justify-between gap-3 border-b border-border py-1"><dt className="text-fg-2">{v}</dt><dd><kbd className="kbd">{k}</kbd></dd></div>)}</dl>

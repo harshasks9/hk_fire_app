@@ -14,7 +14,7 @@ import TableCell from '@tiptap/extension-table-cell'
 import TableHeader from '@tiptap/extension-table-header'
 import Mention from '@tiptap/extension-mention'
 import { Bold, Italic, Code, Link2, Sparkles, Wand2, Scissors, Lightbulb, ListChecks, GitBranch, MessageCircleQuestion, X, Check, ArrowDownToLine, Heading2, List, ListTodo, Quote, Undo2, Redo2, ImagePlus, SlashSquare, WifiOff } from 'lucide-react'
-import { Callout, HighlightRange } from './extensions'
+import { Callout, HighlightRange, Sheet } from './extensions'
 import { SlashCommand, slashItems, mentionSuggestion } from './SlashMenu'
 import { api } from '@/lib/client'
 import { cx, relativeTime } from '@/lib/util'
@@ -120,6 +120,7 @@ export function NoteEditor({ noteId, initialTitle, initialContent, highlight, re
       TableCell,
       Mention.configure({ HTMLAttributes: { class: 'mention' }, suggestion: { ...mentionSuggestion, command: ({ editor, range, props }) => { const p = props as { id: string; name: string }; editor.chain().focus().insertContentAt(range, [{ type: 'mention', attrs: { id: p.id, label: p.name } }, { type: 'text', text: ' ' }]).run() } }, renderText: ({ node }) => `@${node.attrs.label ?? node.attrs.id}`, renderHTML: ({ options, node }) => ['span', { ...options.HTMLAttributes, 'data-id': node.attrs.id }, `@${node.attrs.label ?? node.attrs.id}`] }),
       Callout,
+      Sheet,
       HighlightRange,
       SlashCommand(() => slashItems({
         upload: (kind) => { uploadKind.current = kind; fileInput.current?.click() },
