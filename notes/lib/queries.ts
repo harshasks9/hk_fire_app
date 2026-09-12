@@ -4,7 +4,7 @@ import { getDb, schema } from './db'
 import type { Commitment, Decision, Entity, EntityType, Fact, Meeting, Note, Task, TimelineEvent, Insight, Change, ResearchProject } from './db/schema'
 import { addDays, startOfDay } from './util'
 import { cosineDistance } from 'drizzle-orm'
-import { getEmbeddingProvider } from './ai/embeddings'
+import { embedQueryWith, localEmbeddingProvider } from './ai/embeddings'
 
 const live = isNull(schema.notes.deletedAt)
 
@@ -128,13 +128,13 @@ export async function relatedNotes(note: Note, entityIds: string[], limit = 6) {
     }
   }
   // Semantic neighbours
-  const mine = (await db.select({ embedding: schema.embeddings.embedding }).from(schema.embeddings).where(and(eq(schema.embeddings.ownerType, 'note'), eq(schema.embeddings.ownerId, note.id))).limit(1))[0]
+  const mine = (await db.select({ embedding: schema.embeddings.embedding, provider: schema.embeddings.provider }).from(schema.embeddings).where(and(eq(schema.embeddings.ownerType, 'note'), eq(schema.embeddings.ownerId, note.id))).limit(1))[0]
   if (mine) {
     const dist = cosineDistance(schema.embeddings.embedding, mine.embedding)
     const sem = await db
       .select({ ownerId: schema.embeddings.ownerId, d: dist })
       .from(schema.embeddings)
-      .where(and(eq(schema.embeddings.contextId, note.contextId), eq(schema.embeddings.ownerType, 'note'), ne(schema.embeddings.ownerId, note.id)))
+      .where(and(eq(schema.embeddings.contextId, note.contextId), eq(schema.embeddings.ownerType, 'note'), eq(schema.embeddings.provider, mine.provider), ne(schema.embeddings.ownerId, note.id)))
       .orderBy(dist)
       .limit(8)
     const ids = [...new Set(sem.map((s) => s.ownerId))]
@@ -498,7 +498,23 @@ export async function searchEntitiesByName(contextId: string, q: string, limit =
   return db.select({ id: schema.entities.id, name: schema.entities.name, type: schema.entities.type, attributes: schema.entities.attributes }).from(schema.entities).where(and(eq(schema.entities.contextId, contextId), q ? or(ilike(schema.entities.name, `%${q}%`), sql`exists (select 1 from jsonb_array_elements_text(${schema.entities.aliases}) a where a ilike ${'%' + q + '%'})`)! : sql`true`)).orderBy(desc(schema.entities.mentionCount)).limit(limit)
 }
 
-export async function embedQuery(q: string): Promise<number[]> {
-  const [v] = await getEmbeddingProvider().embed([q])
-  return v!
+/**
+ * Embed a query in the same vector space as the stored note embeddings for these
+ * contexts (the dominant provider), so similarity is meaningful. Returns null when
+ * no comparable vector can be produced; callers then skip semantic matching.
+ */
+export async function queryVector(contextIds: string[], q: string): Promise<{ vector: number[]; provider: string } | null> {
+  const db = await getDb()
+  const rows = await db
+    .select({ provider: schema.embeddings.provider, n: sql<number>`count(*)` })
+    .from(schema.embeddings)
+    .where(and(inArray(schema.embeddings.contextId, contextIds), eq(schema.embeddings.ownerType, 'note')))
+    .groupBy(schema.embeddings.provider)
+    .orderBy(desc(sql`count(*)`))
+  const candidates = rows.length ? rows.map((r) => r.provider) : [localEmbeddingProvider.name]
+  for (const provider of candidates) {
+    const vector = await embedQueryWith(provider, q)
+    if (vector) return { vector, provider }
+  }
+  return null
 }

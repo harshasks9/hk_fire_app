@@ -38,6 +38,13 @@ function lazyGemini(key: string): AIProvider {
   return cache.gemini
 }
 
+export async function aiModels(): Promise<{ generation: string; embedding: string; source: string } | null> {
+  const key = process.env.GEMINI_API_KEY
+  if (!key || getProvider().name !== 'gemini') return null
+  const { resolveGeminiModels } = await import('./gemini-models')
+  return resolveGeminiModels(key)
+}
+
 export function aiStatus() {
   const p = getProvider()
   return {

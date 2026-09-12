@@ -4,6 +4,8 @@
   768d) so semantic search works everywhere and the vector column has one shape.
 */
 import type { EmbeddingProvider } from './types'
+import { resolveGeminiModels, invalidateGeminiModels } from './gemini-models'
+import { logAiCall } from './log'
 
 export const EMBEDDING_DIMENSIONS = 768
 
@@ -65,33 +67,78 @@ export const localEmbeddingProvider: EmbeddingProvider = {
 
 export function geminiEmbeddingProvider(apiKey: string): EmbeddingProvider {
   return {
-    name: 'gemini-text-embedding-004',
+    name: 'gemini',
     dimensions: EMBEDDING_DIMENSIONS,
     async embed(texts) {
-      const out: number[][] = []
-      for (let i = 0; i < texts.length; i += 50) {
-        const batch = texts.slice(i, i + 50)
-        const res = await fetch('https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json', 'x-goog-api-key': apiKey },
-          body: JSON.stringify({
-            requests: batch.map((t) => ({ model: 'models/text-embedding-004', content: { parts: [{ text: t.slice(0, 8000) }] } })),
-          }),
-          signal: AbortSignal.timeout(30_000),
-        })
-        if (!res.ok) throw new Error(`Gemini embeddings HTTP ${res.status}`)
-        const json = (await res.json()) as { embeddings: { values: number[] }[] }
-        for (const e of json.embeddings) out.push(e.values)
+      const run = async (model: string) => {
+        const out: number[][] = []
+        for (let i = 0; i < texts.length; i += 50) {
+          const batch = texts.slice(i, i + 50)
+          const started = Date.now()
+          const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:batchEmbedContents`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'x-goog-api-key': apiKey },
+            body: JSON.stringify({ requests: batch.map((t) => ({ model: `models/${model}`, content: { parts: [{ text: t.slice(0, 8000) }] }, outputDimensionality: EMBEDDING_DIMENSIONS })) }),
+            signal: AbortSignal.timeout(30_000),
+          })
+          if (!res.ok) {
+            await logAiCall({ provider: 'gemini', model, purpose: 'embed', inputChars: batch.join('').length, ok: false, error: `HTTP ${res.status}: ${(await res.text()).slice(0, 200)}`, durationMs: Date.now() - started })
+            throw Object.assign(new Error(`Gemini embeddings HTTP ${res.status}`), { status: res.status })
+          }
+          const json = (await res.json()) as { embeddings: { values: number[] }[] }
+          for (const e of json.embeddings) out.push(normalize(e.values.slice(0, EMBEDDING_DIMENSIONS)))
+        }
+        return out
       }
-      return out
+      const model = (await resolveGeminiModels(apiKey)).embedding
+      try {
+        return await run(model)
+      } catch (err) {
+        if ((err as { status?: number }).status !== 404) throw err
+        invalidateGeminiModels()
+        return run((await resolveGeminiModels(apiKey, true)).embedding)
+      }
     },
   }
+}
+
+function normalize(v: number[]): number[] {
+  const padded = v.length < EMBEDDING_DIMENSIONS ? [...v, ...new Array(EMBEDDING_DIMENSIONS - v.length).fill(0)] : v
+  let n = 0
+  for (const x of padded) n += x * x
+  n = Math.sqrt(n) || 1
+  return padded.map((x) => x / n)
 }
 
 export function getEmbeddingProvider(): EmbeddingProvider {
   const key = process.env.GEMINI_API_KEY
   if (key && process.env.AI_PROVIDER !== 'local' && process.env.EMBEDDINGS !== 'local') return geminiEmbeddingProvider(key)
   return localEmbeddingProvider
+}
+
+/** Embed for storage: the configured provider, falling back to local vectors if the model is unavailable. */
+export async function embedTexts(texts: string[]): Promise<{ vectors: number[][]; provider: string }> {
+  const p = getEmbeddingProvider()
+  if (p.name === localEmbeddingProvider.name) return { vectors: await p.embed(texts), provider: p.name }
+  try {
+    return { vectors: await p.embed(texts), provider: p.name }
+  } catch {
+    return { vectors: await localEmbeddingProvider.embed(texts), provider: localEmbeddingProvider.name }
+  }
+}
+
+/** Embed a query with a specific stored provider so vectors are comparable. Returns null if that provider is unavailable. */
+export async function embedQueryWith(provider: string, text: string): Promise<number[] | null> {
+  if (provider === localEmbeddingProvider.name) return (await localEmbeddingProvider.embed([text]))[0]!
+  const key = process.env.GEMINI_API_KEY
+  if (provider === 'gemini' && key) {
+    try {
+      return (await geminiEmbeddingProvider(key).embed([text]))[0]!
+    } catch {
+      return null
+    }
+  }
+  return null
 }
 
 export function cosine(a: number[], b: number[]): number {

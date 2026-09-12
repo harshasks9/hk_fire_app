@@ -1,7 +1,7 @@
 import { Page } from '@/components/shell/AppShell'
 import { PageHeader, Badge } from '@/components/ui'
 import { settingsData } from '@/lib/queries'
-import { aiStatus } from '@/lib/ai/provider'
+import { aiStatus, aiModels } from '@/lib/ai/provider'
 import { dbMode, dbIsEphemeral } from '@/lib/db'
 import { authEnabled } from '@/lib/auth'
 import { getContexts } from '@/lib/context'
@@ -14,13 +14,14 @@ export const dynamic = 'force-dynamic'
 export default async function SettingsPage() {
   const [s, contexts] = await Promise.all([settingsData(), getContexts()])
   const ai = aiStatus()
+  const models = await aiModels().catch(() => null)
   const media = mediaCapabilities()
   const shortcuts = [['⌘K', 'Command bar / search'], ['⌘N', 'New note'], ['⌘⇧N', 'Quick capture'], ['⌥ Space', 'Quick capture (in app)'], ['⌘P', 'Search'], ['⌘↵', 'AI action on selection'], ['⌘\\', 'Toggle sidebar'], ['⌘.', 'Toggle intelligence panel'], ['/', 'Slash commands in editor · command bar elsewhere'], ['Esc', 'Close overlays']]
   return (
     <Page>
       <PageHeader title="Settings" subtitle="Privacy, AI, data and the keys under the hood." />
       <div className="mb-10 grid gap-3 sm:grid-cols-3">
-        <Card title="AI provider"><div className="text-[15px] font-medium">{ai.provider === 'local' ? 'Local heuristics' : ai.provider === 'anthropic' ? 'Anthropic' : 'Gemini'}</div><div className="text-[12.5px] text-fg-3">{ai.model} · embeddings: {ai.embeddings}</div>{ai.provider === 'local' ? <p className="mt-1.5 text-[12px] text-fg-2">Set <code className="rounded bg-surface-2 px-1">ANTHROPIC_API_KEY</code> or <code className="rounded bg-surface-2 px-1">GEMINI_API_KEY</code> for model-backed extraction, summaries and Q&A. Everything works without one.</p> : null}</Card>
+        <Card title="AI provider"><div className="text-[15px] font-medium">{ai.provider === 'local' ? 'Local heuristics' : ai.provider === 'anthropic' ? 'Anthropic' : 'Gemini'}</div><div className="text-[12.5px] text-fg-3">{models ? `${models.generation} · embeddings: ${models.embedding} (${models.source})` : `${ai.model} · embeddings: ${ai.embeddings}`}</div>{ai.provider === 'local' ? <p className="mt-1.5 text-[12px] text-fg-2">Set <code className="rounded bg-surface-2 px-1">ANTHROPIC_API_KEY</code> or <code className="rounded bg-surface-2 px-1">GEMINI_API_KEY</code> for model-backed extraction, summaries and Q&A. Everything works without one.</p> : null}</Card>
         <Card title="Database"><div className="text-[15px] font-medium">{dbMode() === 'postgres' ? 'Postgres + pgvector' : 'Embedded Postgres (PGlite + pgvector)'}</div><div className="text-[12.5px] text-fg-3">{s.counts.notes} notes · {s.counts.entities} entities · {s.counts.embeddings} vectors</div>{dbIsEphemeral() ? <Badge tone="warning" className="mt-1.5">Ephemeral demo storage — set DATABASE_URL to persist</Badge> : null}</Card>
         <Card title="Media"><div className="text-[13.5px]">Voice transcription: <strong>{media.serverTranscription ? 'server (Gemini)' : 'browser speech API'}</strong></div><div className="text-[13.5px]">Screenshot understanding: <strong>{media.imageUnderstanding ? 'on' : 'attach only'}</strong></div><div className="mt-1 text-[12px] text-fg-3">Email forwarding and calendar sync are defined as integration boundaries and will land in the Inbox.</div></Card>
       </div>

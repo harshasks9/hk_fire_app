@@ -1,4 +1,4 @@
-import { eq, sql } from 'drizzle-orm'
+import { and, eq, sql } from 'drizzle-orm'
 import { getDb, schema } from '../db'
 import { markdownToDoc, docToText } from '../markdown'
 import { uid, wordCount, slugify } from '../util'
@@ -13,7 +13,14 @@ function at(daysAgo: number, hour = 10): Date {
   return d
 }
 
+/** Fully seeded = the completion marker exists. A partial seed (interrupted mid-way) reports false and is completed idempotently. */
 export async function isSeeded(): Promise<boolean> {
+  const db = await getDb()
+  const rows = await db.select({ key: schema.appMeta.key }).from(schema.appMeta).where(eq(schema.appMeta.key, 'seeded'))
+  return rows.length > 0
+}
+
+async function hasContexts(): Promise<boolean> {
   const db = await getDb()
   const rows = await db.select({ n: sql<number>`count(*)` }).from(schema.contexts)
   return Number(rows[0]?.n ?? 0) > 0
@@ -22,32 +29,45 @@ export async function isSeeded(): Promise<boolean> {
 export async function runSeed(opts: { force?: boolean; log?: (s: string) => void } = {}): Promise<{ ok: boolean; notes: number }> {
   const db = await getDb()
   const log = opts.log ?? (() => undefined)
-  if (await isSeeded()) {
-    if (!opts.force) return { ok: true, notes: 0 }
+  if (await isSeeded() && !opts.force) return { ok: true, notes: 0 }
+  if (opts.force && (await hasContexts())) {
     log('wiping existing data')
     for (const t of [schema.aiCalls, schema.insights, schema.embeddings, schema.timelineEvents, schema.attachments, schema.sources, schema.researchProjects, schema.changes, schema.facts, schema.commitments, schema.decisionRevisions, schema.decisions, schema.tasks, schema.entityRelations, schema.noteEntities, schema.entities, schema.transcripts, schema.meetings, schema.notes, schema.contexts, schema.users, schema.appMeta]) {
       await db.delete(t)
     }
   }
   log('seeding')
-  await db.insert(schema.users).values({ id: USER.id, name: USER.name, email: USER.email, settings: { theme: 'system', aiProvider: 'auto', aiEnabled: true, proactiveInsights: true, dailyBriefHour: 7, defaultContext: 'work' } })
-  await db.insert(schema.contexts).values(CONTEXTS.map((c) => ({ id: c.id, slug: c.slug, name: c.name, kind: c.kind, description: c.description, position: c.position })))
+  // Every step below is idempotent so an interrupted seed can be completed on the next run without duplicating rows.
+  await db.insert(schema.users).values({ id: USER.id, name: USER.name, email: USER.email, settings: { theme: 'system', aiProvider: 'auto', aiEnabled: true, proactiveInsights: true, dailyBriefHour: 7, defaultContext: 'work' } }).onConflictDoNothing()
+  await db.insert(schema.contexts).values(CONTEXTS.map((c) => ({ id: c.id, slug: c.slug, name: c.name, kind: c.kind, description: c.description, position: c.position }))).onConflictDoNothing()
 
   const entityIds = new Map<string, string>()
   for (const e of ENTITIES) {
-    const id = uid('ent')
-    entityIds.set(`${e.ctx}:${e.type}:${e.name.toLowerCase()}`, id)
-    await db.insert(schema.entities).values({ id, contextId: e.ctx, type: e.type, name: e.name, slug: slugify(e.name), aliases: e.aliases ?? [], attributes: e.attributes ?? {}, pinned: e.pinned ?? false })
+    const slug = slugify(e.name)
+    await db.insert(schema.entities).values({ id: uid('ent'), contextId: e.ctx, type: e.type, name: e.name, slug, aliases: e.aliases ?? [], attributes: e.attributes ?? {}, pinned: e.pinned ?? false }).onConflictDoNothing()
+    const row = (await db.select({ id: schema.entities.id }).from(schema.entities).where(and(eq(schema.entities.contextId, e.ctx), eq(schema.entities.type, e.type), eq(schema.entities.slug, slug))))[0]
+    if (row) entityIds.set(`${e.ctx}:${e.type}:${e.name.toLowerCase()}`, row.id)
   }
   const findEntity = (ctx: string, type: string, name: string) => entityIds.get(`${ctx}:${type}:${name.toLowerCase()}`)
+  const safeEmbed = async (...args: Parameters<typeof embedOwner>) => {
+    try {
+      await embedOwner(...args)
+    } catch (err) {
+      log(`  embedding skipped: ${String(err).slice(0, 120)}`)
+    }
+  }
 
   for (const r of RESEARCH) {
-    await db.insert(schema.researchProjects).values({ id: r.id, contextId: r.ctx, name: r.name, slug: r.slug, description: r.description, question: r.question, synthesis: r.synthesis, synthesisUpdatedAt: at(1, 9), createdAt: at(30), updatedAt: at(1, 9) })
-    await embedOwner(r.ctx, 'research', r.id, `${r.name}\n${r.description}\n${r.question}\n${r.synthesis}`)
+    const inserted = await db.insert(schema.researchProjects).values({ id: r.id, contextId: r.ctx, name: r.name, slug: r.slug, description: r.description, question: r.question, synthesis: r.synthesis, synthesisUpdatedAt: at(1, 9), createdAt: at(30), updatedAt: at(1, 9) }).onConflictDoNothing().returning({ id: schema.researchProjects.id })
+    if (inserted.length) await safeEmbed(r.ctx, 'research', r.id, `${r.name}\n${r.description}\n${r.question}\n${r.synthesis}`)
   }
 
   const ordered = [...NOTES].sort((a, b) => b.daysAgo - a.daysAgo || (a.hour ?? 10) - (b.hour ?? 10))
+  const existingNoteIds = new Set((await db.select({ id: schema.notes.id }).from(schema.notes)).map((r) => r.id))
+  const newNotes: typeof ordered = []
   for (const n of ordered) {
+    if (existingNoteIds.has(n.id)) continue
+    newNotes.push(n)
     const createdAt = at(n.daysAgo, n.hour)
     let meetingId: string | undefined
     if (n.meeting) {
@@ -82,14 +102,17 @@ export async function runSeed(opts: { force?: boolean; log?: (s: string) => void
   for (const m of UPCOMING) {
     const startsAt = at(-m.daysAhead, m.hour)
     const id = m.id
-    await db.insert(schema.meetings).values({ id, contextId: m.ctx, title: m.title, startsAt, endsAt: new Date(startsAt.getTime() + m.durationMin * 60000), status: 'upcoming', location: m.location, companyEntityId: m.company ? findEntity(m.ctx, 'company', m.company) : undefined, createdAt: at(3), updatedAt: at(3) })
+    const inserted = await db.insert(schema.meetings).values({ id, contextId: m.ctx, title: m.title, startsAt, endsAt: new Date(startsAt.getTime() + m.durationMin * 60000), status: 'upcoming', location: m.location, companyEntityId: m.company ? findEntity(m.ctx, 'company', m.company) : undefined, createdAt: at(3), updatedAt: at(3) }).onConflictDoNothing().returning({ id: schema.meetings.id })
+    if (!inserted.length) continue
     for (const p of m.participants) {
       const pid = findEntity(m.ctx, 'person', p)
       if (pid) await db.insert(schema.entityRelations).values({ id: uid('rel'), contextId: m.ctx, fromType: 'person', fromId: pid, toType: 'meeting', toId: id, relation: 'attended' }).onConflictDoNothing()
     }
   }
 
+  const existingDecisionTitles = new Set((await db.select({ title: schema.decisions.title }).from(schema.decisions)).map((r) => r.title))
   for (const d of DECISIONS) {
+    if (existingDecisionTitles.has(d.title)) continue
     const id = uid('dec')
     const first = d.history[0]!
     const latestDecided = [...d.history].reverse().find((h) => h.kind === 'made' || h.kind === 'confirmed' || h.kind === 'modified') ?? first
@@ -101,11 +124,11 @@ export async function runSeed(opts: { force?: boolean; log?: (s: string) => void
       const target = (d.topic && findEntity(d.ctx, 'topic', d.topic)) || (d.company && findEntity(d.ctx, 'company', d.company))
       if (target) await db.insert(schema.timelineEvents).values({ id: uid('tl'), contextId: d.ctx, entityId: target, kind: 'decision', title: `${h.kind === 'proposed' ? 'Proposal' : h.kind === 'contradicted' ? 'Challenged' : h.kind === 'confirmed' ? 'Reconfirmed' : 'Decision'}: ${h.statement}`, occurredAt: at(h.daysAgo, 12), noteId: h.note, refId: `seed-dec:${id}:${h.daysAgo}` }).onConflictDoNothing()
     }
-    await embedOwner(d.ctx, 'decision', id, `${d.title}\n${latestDecided.statement}\n${d.context}\n${d.reasoning}`)
+    await safeEmbed(d.ctx, 'decision', id, `${d.title}\n${latestDecided.statement}\n${d.context}\n${d.reasoning}`)
   }
 
   let count = 0
-  for (const n of ordered) {
+  for (const n of newNotes) {
     log(`processing ${n.id}`)
     try {
       await processNote(n.id)
