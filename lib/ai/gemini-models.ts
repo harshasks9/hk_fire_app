@@ -8,6 +8,7 @@
     4. remember the working pair in app_meta so cold starts reuse it.
 */
 import { createHash } from 'node:crypto'
+import { quotaKind } from './gemini-retry'
 
 const API = 'https://generativelanguage.googleapis.com/v1beta/models'
 const META_KEY = 'gemini_models'
@@ -23,8 +24,20 @@ export interface ResolvedModels {
 export const EMBEDDING_PREFERENCE = ['gemini-embedding-001', 'text-embedding-004', 'gemini-embedding-2', 'gemini-embedding-latest', 'text-embedding-005']
 
 let cache: { key: string; models: ResolvedModels; at: number } | null = null
-/** Models that answered 404 in this process; never retried until the process restarts. */
-const unavailable = new Set<string>()
+/** Models that answered 404 (retired: kept for the process lifetime) or exhausted a daily quota (kept for a while), with expiry. */
+const unavailableUntil = new Map<string, number>()
+const unavailable = {
+  has: (m: string) => {
+    const t = unavailableUntil.get(m)
+    if (t === undefined) return false
+    if (Date.now() < t) return true
+    unavailableUntil.delete(m)
+    return false
+  },
+  add: (m: string, ttlMs = Number.POSITIVE_INFINITY) => unavailableUntil.set(m, ttlMs === Number.POSITIVE_INFINITY ? Number.MAX_SAFE_INTEGER : Date.now() + ttlMs),
+}
+/** How long a model whose daily free-tier quota is spent is skipped before being tried again. */
+export const QUOTA_SKIP_MS = 60 * 60_000
 
 interface ModelInfo { name: string; supportedGenerationMethods?: string[] }
 
@@ -42,9 +55,13 @@ export async function listGeminiModels(apiKey: string): Promise<ModelInfo[]> {
   return out
 }
 
-/** Mark a model as unusable for this key (called by providers when a call returns 404). */
-export function markGeminiModelUnavailable(model: string) {
-  unavailable.add(model)
+/**
+  Mark a model as unusable for this key: permanently for a 404 (retired or closed
+  to new users), or for `ttlMs` when its daily quota is exhausted, so the next
+  resolution moves to another model whose quota is separate.
+*/
+export function markGeminiModelUnavailable(model: string, ttlMs?: number) {
+  unavailable.add(model, ttlMs)
   cache = null
 }
 
@@ -81,7 +98,7 @@ export function rankEmbeddingModels(names: string[], env?: string): string[] {
   return uniq([...(env ? [env] : []), ...EMBEDDING_PREFERENCE.filter((p) => embeds.includes(p)), ...stable, ...previews]).filter((n) => !unavailable.has(n))
 }
 
-/** One-token generation call. true = usable, false = 404 (unavailable), null = other error (assume usable). */
+/** One-token generation call. true = usable, false = unavailable (404, or daily quota spent), null = other error (assume usable). */
 export async function probeGeneration(apiKey: string, model: string): Promise<boolean | null> {
   try {
     const res = await fetch(`${API}/${model}:generateContent`, {
@@ -91,7 +108,15 @@ export async function probeGeneration(apiKey: string, model: string): Promise<bo
       signal: AbortSignal.timeout(20_000),
     })
     if (res.ok) return true
-    return res.status === 404 ? false : null
+    if (res.status === 404) return false
+    if (res.status === 429) {
+      const body = await res.text().catch(() => '')
+      if (quotaKind(429, body) === 'daily') {
+        unavailable.add(model, QUOTA_SKIP_MS)
+        return false
+      }
+    }
+    return null
   } catch {
     return null
   }
@@ -116,7 +141,7 @@ async function firstUsable(candidates: string[], probe: (m: string) => Promise<b
   for (const m of candidates.slice(0, max)) {
     const r = await probe(m)
     if (r === false) {
-      unavailable.add(m)
+      if (!unavailable.has(m)) unavailable.add(m) // 404: retired for good (quota probes already set their own expiry)
       continue
     }
     return { model: m, verified: r === true }

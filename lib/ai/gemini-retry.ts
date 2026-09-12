@@ -18,17 +18,30 @@ export function suggestedDelayMs(res: Response, body: string, attempt: number): 
   return BACKOFF_MS[Math.min(attempt, BACKOFF_MS.length - 1)]!
 }
 
-export async function geminiFetch(url: string, init: RequestInit, opts: { maxWaitMs?: number; maxAttempts?: number } = {}): Promise<{ res: Response; errorText: string; attempts: number }> {
+/**
+  Classify a 429. Free-tier quotas are per model: a per-minute limit clears in
+  seconds (retry), a per-day limit does not (switch model for a while).
+*/
+export function quotaKind(status: number, body: string): 'daily' | 'minute' | null {
+  if (status !== 429) return null
+  if (/PerDay|per day|daily/i.test(body)) return 'daily'
+  return 'minute'
+}
+
+export interface GeminiFetchResult { res: Response; errorText: string; attempts: number; quota: 'daily' | 'minute' | null }
+
+export async function geminiFetch(url: string, init: RequestInit, opts: { maxWaitMs?: number; maxAttempts?: number } = {}): Promise<GeminiFetchResult> {
   const maxWait = opts.maxWaitMs ?? 45_000
   const maxAttempts = opts.maxAttempts ?? 4
   let waited = 0
   for (let attempt = 0; ; attempt++) {
     const res = await fetch(url, init)
-    if (res.ok) return { res, errorText: '', attempts: attempt + 1 }
+    if (res.ok) return { res, errorText: '', attempts: attempt + 1, quota: null }
     const errorText = await res.text().catch(() => '')
-    if (!RETRYABLE.has(res.status) || attempt + 1 >= maxAttempts) return { res, errorText, attempts: attempt + 1 }
+    const quota = quotaKind(res.status, errorText)
+    if (quota === 'daily' || !RETRYABLE.has(res.status) || attempt + 1 >= maxAttempts) return { res, errorText, attempts: attempt + 1, quota }
     const delay = Math.min(suggestedDelayMs(res, errorText, attempt), 30_000)
-    if (waited + delay > maxWait) return { res, errorText, attempts: attempt + 1 }
+    if (waited + delay > maxWait) return { res, errorText, attempts: attempt + 1, quota }
     await sleep(delay)
     waited += delay
   }

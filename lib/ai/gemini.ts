@@ -6,6 +6,7 @@ import { extractJson } from '../util'
 import { logAiCall } from './log'
 import { resolveGeminiModels, markGeminiModelUnavailable } from './gemini-models'
 import { geminiFetch } from './gemini-retry'
+import { QUOTA_SKIP_MS } from './gemini-models'
 
 const API = 'https://generativelanguage.googleapis.com/v1beta/models'
 
@@ -23,7 +24,7 @@ export function geminiProvider(apiKey: string): AIProvider {
       contents: [{ role: 'user', parts: [{ text: prompt }] }],
       generationConfig: { maxOutputTokens: opts.maxTokens ?? 8192, ...(opts.json ? { responseMimeType: 'application/json' } : {}) },
     }
-    const { res, errorText, attempts } = await geminiFetch(`${API}/${model}:generateContent`, {
+    const { res, errorText, attempts, quota } = await geminiFetch(`${API}/${model}:generateContent`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'x-goog-api-key': apiKey },
       body: JSON.stringify(body),
@@ -32,9 +33,10 @@ export function geminiProvider(apiKey: string): AIProvider {
     if (!res.ok) {
       const err = errorText.slice(0, 300)
       await logAiCall({ provider: 'gemini', model, purpose: opts.purpose, inputChars: prompt.length, ok: false, error: `HTTP ${res.status}${attempts > 1 ? ` after ${attempts} attempts` : ''}: ${err}`, durationMs: Date.now() - started })
-      if (res.status === 404 && retry) {
-        // Model gone for this key (retired, or closed to new users): pick the next usable one.
-        markGeminiModelUnavailable(model)
+      if ((res.status === 404 || quota === 'daily') && retry) {
+        // Model gone for this key (retired, or closed to new users) or its daily free-tier quota is spent:
+        // move to the next usable model, whose quota is separate.
+        markGeminiModelUnavailable(model, quota === 'daily' ? QUOTA_SKIP_MS : undefined)
         await resolveGeminiModels(apiKey, true)
         return call(prompt, opts, false)
       }
@@ -60,21 +62,29 @@ export function geminiProvider(apiKey: string): AIProvider {
     complete: call,
     async *stream(prompt: string, opts: CompleteOptions) {
       const started = Date.now()
-      const model = await currentModel()
       const body = {
         systemInstruction: { parts: [{ text: opts.system ?? SYSTEM_CHIEF_OF_STAFF }] },
         contents: [{ role: 'user', parts: [{ text: prompt }] }],
         generationConfig: { maxOutputTokens: opts.maxTokens ?? 8192 },
       }
-      const { res, errorText } = await geminiFetch(`${API}/${model}:streamGenerateContent?alt=sse`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'x-goog-api-key': apiKey },
-        body: JSON.stringify(body),
-        signal: AbortSignal.timeout(120_000),
-      }, { maxWaitMs: 20_000 })
+      const open = (m: string) =>
+        geminiFetch(`${API}/${m}:streamGenerateContent?alt=sse`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'x-goog-api-key': apiKey },
+          body: JSON.stringify(body),
+          signal: AbortSignal.timeout(120_000),
+        }, { maxWaitMs: 20_000 })
+      let model = await currentModel()
+      let { res, errorText, quota } = await open(model)
+      if ((res.status === 404 || quota === 'daily') && !res.ok) {
+        // Retired model or daily quota spent: switch models once and reopen the stream.
+        await logAiCall({ provider: 'gemini', model, purpose: opts.purpose, inputChars: prompt.length, ok: false, error: `HTTP ${res.status}: ${errorText.slice(0, 300)}`, durationMs: Date.now() - started })
+        markGeminiModelUnavailable(model, quota === 'daily' ? QUOTA_SKIP_MS : undefined)
+        model = (await resolveGeminiModels(apiKey, true)).generation
+        ;({ res, errorText, quota } = await open(model))
+      }
       if (!res.ok || !res.body) {
         await logAiCall({ provider: 'gemini', model, purpose: opts.purpose, inputChars: prompt.length, ok: false, error: `HTTP ${res.status}: ${errorText.slice(0, 300)}`, durationMs: Date.now() - started })
-        if (res.status === 404) markGeminiModelUnavailable(model)
         throw new Error(`Gemini HTTP ${res.status}`)
       }
       const reader = res.body.getReader()
