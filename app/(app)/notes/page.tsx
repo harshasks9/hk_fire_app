@@ -4,6 +4,7 @@ import { getActiveContext } from '@/lib/context'
 import { listNotes } from '@/lib/queries'
 import { NoteRow } from '@/components/entities'
 import { NewNoteButton } from '@/components/notes/NewNoteButton'
+import { NewFromTemplateButton } from '@/components/notes/TemplatePicker'
 import { NotesFilter } from '@/components/notes/NotesFilter'
 
 export const dynamic = 'force-dynamic'
@@ -15,7 +16,7 @@ export default async function NotesPage({ searchParams }: { searchParams: Promis
   const groups = groupByDay(notes)
   return (
     <Page>
-      <PageHeader title="Notes" subtitle={`${notes.length} in ${ctx.name}`} actions={<NewNoteButton />}>
+      <PageHeader title="Notes" subtitle={`${notes.length} in ${ctx.name}`} actions={<div className="flex flex-wrap gap-2"><NewFromTemplateButton /><NewNoteButton /></div>}>
         <div className="flex flex-wrap items-center justify-between gap-3">
           <LinkTabs active={view} tabs={[{ id: 'all', label: 'All', href: '/notes' }, { id: 'favorites', label: 'Favorites', href: '/notes?view=favorites' }, { id: 'meetings', label: 'Meetings', href: '/notes?view=meetings' }, { id: 'voice', label: 'Voice', href: '/notes?view=voice' }]} className="flex-1" />
           <NotesFilter initial={q ?? ''} view={view} />

@@ -18,8 +18,11 @@ import { chunkText, slugify, uid, truncate } from './util'
 import { jaccard, similarText } from './similarity'
 import { refreshInsights } from './insights'
 import { parseDueHint } from './dates'
+import { notebookOfContext, notebookOwnerName } from './tenant'
+import { notebookAiScope } from './ai/notebook-config'
+import { runWithAiScope } from './ai/scope'
 
-const USER_NAME = process.env.USER_NAME || 'Harsha'
+const DEFAULT_USER_NAME = process.env.USER_NAME || 'Harsha'
 
 export interface ProcessResult {
   noteId: string
@@ -115,6 +118,11 @@ export async function processNote(noteId: string): Promise<ProcessResult | null>
     return result
   }
   await db.update(schema.notes).set({ status: 'processing', processingError: null }).where(eq(schema.notes.id, noteId))
+  // Background work has no session: derive the notebook (and its AI keys / owner name) from the note itself.
+  const notebookId = await notebookOfContext(note.contextId)
+  const USER_NAME = notebookId ? await notebookOwnerName(notebookId) : DEFAULT_USER_NAME
+  const scope = notebookId ? await notebookAiScope(notebookId, USER_NAME) : { mode: 'shared' as const }
+  return runWithAiScope(scope, async () => {
   try {
     const provider = getProvider()
     result.provider = provider.name
@@ -315,6 +323,7 @@ export async function processNote(noteId: string): Promise<ProcessResult | null>
     await db.update(schema.notes).set({ status: 'processed', processingError: String(err).slice(0, 500), aiProcessedAt: new Date() }).where(eq(schema.notes.id, noteId))
     throw err
   }
+  })
 }
 
 function cleanTitle(s: string): string {
@@ -362,9 +371,9 @@ export interface ReprocessBatch {
   `next` instead of hitting a serverless time limit. Notes are processed one at a
   time so model rate limits are respected.
 */
-export async function reprocessBatch(opts: { contextId?: string; offset?: number; budgetMs?: number; limit?: number }): Promise<ReprocessBatch> {
+export async function reprocessBatch(opts: { contextId?: string; contextIds?: string[]; offset?: number; budgetMs?: number; limit?: number }): Promise<ReprocessBatch> {
   const db = await getDb()
-  const where = opts.contextId ? and(eq(schema.notes.contextId, opts.contextId), sql`${schema.notes.deletedAt} is null`) : sql`${schema.notes.deletedAt} is null`
+  const where = opts.contextId ? and(eq(schema.notes.contextId, opts.contextId), sql`${schema.notes.deletedAt} is null`) : opts.contextIds ? and(inArray(schema.notes.contextId, opts.contextIds.length ? opts.contextIds : ['__none__']), sql`${schema.notes.deletedAt} is null`) : sql`${schema.notes.deletedAt} is null`
   const rows = await db.select({ id: schema.notes.id }).from(schema.notes).where(where).orderBy(schema.notes.createdAt, schema.notes.id)
   const started = Date.now()
   const budget = opts.budgetMs ?? 45_000

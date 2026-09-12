@@ -5,7 +5,11 @@ export async function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl
   if (!process.env.APP_PASSWORD) return NextResponse.next()
   // Public: the login flow, health, cron, and the PWA files a browser fetches before (or without) a session.
-  if (pathname === '/login' || pathname === '/api/login' || pathname === '/api/health' || pathname.startsWith('/api/cron/') || pathname === '/sw.js' || pathname === '/manifest.json' || pathname.startsWith('/icons/')) {
+  if (pathname === '/login' || pathname === '/api/login' || pathname === '/api/health' || pathname.startsWith('/api/cron/') || pathname === '/sw.js' || pathname === '/manifest.json' || pathname.startsWith('/icons/') || pathname.startsWith('/invite/') || pathname.startsWith('/api/invite/') || pathname.startsWith('/s/') || pathname.startsWith('/api/share/')) {
+    return NextResponse.next()
+  }
+  // Capture tokens (shortcuts, automations) authenticate the request themselves.
+  if (pathname === '/api/capture' && req.headers.get('authorization')?.startsWith('Bearer ')) {
     return NextResponse.next()
   }
   const token = req.cookies.get(SESSION_COOKIE)?.value

@@ -1,3 +1,4 @@
+import { withNotebookAi } from './session'
 /* Hybrid search: exact keyword + semantic (pgvector) + entity match, grouped by type. */
 import { and, desc, eq, ilike, inArray, isNull, or, sql, cosineDistance } from 'drizzle-orm'
 import { getDb, schema } from './db'
@@ -37,6 +38,10 @@ export function highlight(text: string, q: string): string {
 }
 
 export async function search(contextIds: string[], q: string, opts: { limit?: number; semantic?: boolean } = {}): Promise<SearchResult> {
+  return withNotebookAi(() => searchInner(contextIds, q, opts))
+}
+
+async function searchInner(contextIds: string[], q: string, opts: { limit?: number; semantic?: boolean } = {}): Promise<SearchResult> {
   const db = await getDb()
   const query = q.trim()
   const hits = new Map<string, SearchHit>()

@@ -1,3 +1,4 @@
+import { withNotebookAi } from './session'
 /* Inline AI on a selection: rewrite, shorten, clarify, summarize, extract tasks/decisions, ask. */
 import { getProvider } from './ai/provider'
 import { localExtract } from './ai/local'
@@ -5,6 +6,10 @@ import type { RewriteMode } from './ai/types'
 import { sentences, truncate } from './util'
 
 export async function rewrite(mode: RewriteMode, text: string, opts: { question?: string; noteTitle?: string; context?: string; userName?: string } = {}): Promise<{ text: string; provider: string }> {
+  return withNotebookAi(() => rewriteInner(mode, text, opts))
+}
+
+async function rewriteInner(mode: RewriteMode, text: string, opts: { question?: string; noteTitle?: string; context?: string; userName?: string }): Promise<{ text: string; provider: string }> {
   const provider = getProvider()
   const instructions: Record<RewriteMode, string> = {
     rewrite: 'Rewrite the passage so it reads cleanly and professionally. Keep every fact. Return only the rewritten passage.',

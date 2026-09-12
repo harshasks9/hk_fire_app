@@ -12,10 +12,12 @@ export interface ShellState {
   mobileMenuOpen: boolean
   /** Intelligence panel shown as a bottom sheet (screens below xl). */
   panelSheet: boolean
+  /** Template picker open (new note from template). */
+  templatePickerOpen: boolean
 }
 
 const listeners = new Set<() => void>()
-let state: ShellState = { sidebarCollapsed: false, panelOpen: true, panelAvailable: false, commandOpen: false, commandQuery: '', captureOpen: false, theme: 'system', mobileMenuOpen: false, panelSheet: false }
+let state: ShellState = { sidebarCollapsed: false, panelOpen: true, panelAvailable: false, commandOpen: false, commandQuery: '', captureOpen: false, theme: 'system', mobileMenuOpen: false, panelSheet: false, templatePickerOpen: false }
 
 function load() {
   if (typeof window === 'undefined') return

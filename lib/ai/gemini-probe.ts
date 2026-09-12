@@ -20,8 +20,8 @@ function trim(s: string) {
   return s.replace(/\s+/g, ' ').slice(0, 900)
 }
 
-export async function probeGemini(): Promise<GeminiProbe> {
-  const key = process.env.GEMINI_API_KEY
+export async function probeGemini(apiKey?: string): Promise<GeminiProbe> {
+  const key = apiKey ?? process.env.GEMINI_API_KEY
   const env = { GEMINI_MODEL: process.env.GEMINI_MODEL, GEMINI_EMBEDDING_MODEL: process.env.GEMINI_EMBEDDING_MODEL, AI_PROVIDER: process.env.AI_PROVIDER }
   if (!key) return { configured: false, env, listModels: { status: 'skipped' } }
   const out: GeminiProbe = { configured: true, env, listModels: { status: 'pending' } }

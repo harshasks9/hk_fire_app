@@ -3,7 +3,8 @@ import { resolveContext } from '@/lib/context'
 import { addAttachment, addSource, createNote, fetchLinkPreview, scheduleProcessing } from '@/lib/notes'
 import { describeImage, transcribeAudio } from '@/lib/media'
 import { getDb, schema } from '@/lib/db'
-import { eq } from 'drizzle-orm'
+import { asc, eq } from 'drizzle-orm'
+import { resolveToken } from '@/lib/tokens'
 import { docToText, markdownToDoc } from '@/lib/markdown'
 import { wordCount } from '@/lib/util'
 export const dynamic = 'force-dynamic'
@@ -11,13 +12,38 @@ export const maxDuration = 60
 
 /** Quick capture: text, URL, screenshot/image, audio or file. AI does the filing. */
 export async function POST(req: NextRequest) {
-  const form = await req.formData()
-  const ctx = await resolveContext(String(form.get('contextId') ?? '') || undefined)
+  // Two ways in: the session cookie (the app itself) or a personal capture token (shortcuts, automations).
+  const bearer = req.headers.get('authorization')?.replace(/^Bearer\s+/i, '')
+  let form: FormData
+  if ((req.headers.get('content-type') ?? '').includes('application/json')) {
+    const j = (await req.json().catch(() => ({}))) as { text?: string; url?: string; context?: string; contextId?: string; capturedAt?: string }
+    form = new FormData()
+    form.set('text', [j.text ?? '', j.url ?? ''].filter(Boolean).join('\n').trim())
+    if (j.context) form.set('context', j.context)
+    if (j.contextId) form.set('contextId', j.contextId)
+    if (j.capturedAt) form.set('capturedAt', j.capturedAt)
+  } else {
+    form = await req.formData()
+  }
+  let ctx: Awaited<ReturnType<typeof resolveContext>>
+  if (bearer) {
+    const t = await resolveToken(bearer)
+    if (!t) return NextResponse.json({ error: 'Invalid or revoked token' }, { status: 401 })
+    const db0 = await getDb()
+    const all = await db0.select().from(schema.contexts).where(eq(schema.contexts.notebookId, t.notebook.id)).orderBy(asc(schema.contexts.position))
+    const wanted = String(form.get('context') ?? form.get('contextId') ?? '')
+    const picked = all.find((c) => c.slug === wanted || c.id === wanted) ?? all.find((c) => c.slug === 'work') ?? all[0]
+    if (!picked) return NextResponse.json({ error: 'This notebook has no contexts' }, { status: 400 })
+    ctx = picked
+  } else {
+    ctx = await resolveContext(String(form.get('contextId') ?? '') || undefined)
+  }
   const text = String(form.get('text') ?? '').trim()
   // Offline captures replay later; keep the moment they were written.
   const capturedAtRaw = String(form.get('capturedAt') ?? '')
   const capturedAt = capturedAtRaw && !Number.isNaN(Date.parse(capturedAtRaw)) ? new Date(capturedAtRaw) : undefined
   const files = form.getAll('files').filter((f): f is File => f instanceof File && f.size > 0)
+  if (!text && files.length === 0) return NextResponse.json({ error: 'Nothing to capture' }, { status: 400 })
   const urlMatch = text.match(/https?:\/\/\S+/)
   let kind: 'capture' | 'link' | 'screenshot' | 'voice' | 'document' = 'capture'
   let title = ''
@@ -31,7 +57,7 @@ export async function POST(req: NextRequest) {
     const comment = text.replace(urlMatch[0], '').trim()
     body = [comment, preview.description, preview.text ? `> ${preview.text.slice(0, 1200)}` : '', `Source: ${urlMatch[0]}`].filter(Boolean).join('\n\n')
   }
-  const id = await createNote({ contextId: ctx.id, title, markdown: body, kind, source: 'quick-capture', sourceUrl: urlMatch?.[0], status: 'inbox', createdAt: capturedAt })
+  const id = await createNote({ contextId: ctx.id, title, markdown: body, kind, source: bearer ? 'api' : 'quick-capture', sourceUrl: urlMatch?.[0], status: 'inbox', createdAt: capturedAt })
   if (urlMatch) await addSource(id, { kind: 'url', url: urlMatch[0], title })
 
   const extra: string[] = []

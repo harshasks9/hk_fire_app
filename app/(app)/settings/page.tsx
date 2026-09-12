@@ -5,17 +5,35 @@ import { aiStatus, aiModels } from '@/lib/ai/provider'
 import { dbMode, dbIsEphemeral } from '@/lib/db'
 import { authEnabled } from '@/lib/auth'
 import { getContexts } from '@/lib/context'
+import { getSession, withNotebookAi } from '@/lib/session'
 import { SettingsClient } from '@/components/settings/SettingsClient'
+import { AccountSection } from '@/components/settings/AccountSection'
+import { AiSection } from '@/components/settings/AiSection'
+import { TokensSection } from '@/components/settings/TokensSection'
+import { TemplatesSection } from '@/components/settings/TemplatesSection'
+import { ImportSection } from '@/components/settings/ImportSection'
+import { SharingSection } from '@/components/settings/SharingSection'
+import { headers } from 'next/headers'
+import { decryptSecret, maskSecret } from '@/lib/crypto'
+import { getActiveContext } from '@/lib/context'
+import Link from 'next/link'
 import { dotFor } from '@/lib/ui-helpers'
 import { relativeTime } from '@/lib/util'
 import { mediaCapabilities } from '@/lib/media'
 import { cx } from '@/lib/util'
 export const dynamic = 'force-dynamic'
 export default async function SettingsPage() {
-  const [s, contexts] = await Promise.all([settingsData(), getContexts()])
-  const ai = aiStatus()
-  const models = await aiModels().catch(() => null)
-  const media = mediaCapabilities()
+  const session = await getSession()
+  const contexts = await getContexts()
+  const s = await settingsData(contexts.map((c) => c.id), session?.notebookId ?? '', session?.user)
+  const active = await getActiveContext()
+  const h = await headers()
+  const host = h.get('x-forwarded-host') ?? h.get('host') ?? 'localhost:3000'
+  const origin = `${h.get('x-forwarded-proto') ?? (host.startsWith('localhost') ? 'http' : 'https')}://${host}`
+  const nbSettings = session?.notebook.settings ?? {}
+  const aiView = { aiMode: nbSettings.aiMode ?? 'shared', aiPreference: nbSettings.aiPreference ?? 'auto', anthropicKey: maskSecret(decryptSecret(nbSettings.anthropicKeyEnc)), geminiKey: maskSecret(decryptSecret(nbSettings.geminiKeyEnc)), allowShareLinks: nbSettings.allowShareLinks !== false, sharedKeys: { anthropic: Boolean(process.env.ANTHROPIC_API_KEY), gemini: Boolean(process.env.GEMINI_API_KEY) } } as const
+  const canEdit = session?.role !== 'member'
+  const { ai, models, media } = await withNotebookAi(async () => ({ ai: aiStatus(), models: await aiModels().catch(() => null), media: mediaCapabilities() }))
   const shortcuts = [['⌘K', 'Command bar / search'], ['⌘N', 'New note'], ['⌘⇧N', 'Quick capture'], ['⌥ Space', 'Quick capture (in app)'], ['⌘P', 'Search'], ['⌘↵', 'AI action on selection'], ['⌘\\', 'Toggle sidebar'], ['⌘.', 'Toggle intelligence panel'], ['/', 'Slash commands in editor · command bar elsewhere'], ['Esc', 'Close overlays']]
   return (
     <Page>
@@ -25,7 +43,19 @@ export default async function SettingsPage() {
         <Card title="Database"><div className="text-[15px] font-medium">{dbMode() === 'postgres' ? 'Postgres + pgvector' : 'Embedded Postgres (PGlite + pgvector)'}</div><div className="text-[12.5px] text-fg-3">{s.counts.notes} notes · {s.counts.entities} entities · {s.counts.embeddings} vectors</div>{dbIsEphemeral() ? <Badge tone="warning" className="mt-1.5">Ephemeral demo storage — set DATABASE_URL to persist</Badge> : null}</Card>
         <Card title="Media"><div className="text-[13.5px]">Voice transcription: <strong>{media.serverTranscription ? 'server (Gemini)' : 'browser speech API'}</strong></div><div className="text-[13.5px]">Screenshot understanding: <strong>{media.imageUnderstanding ? 'on' : 'attach only'}</strong></div><div className="mt-1 text-[12px] text-fg-3">Email forwarding and calendar sync are defined as integration boundaries and will land in the Inbox.</div></Card>
       </div>
-      <SettingsClient userName={s.user?.name ?? 'Harsha'} authEnabled={authEnabled()} settings={(s.user?.settings ?? {}) as Record<string, unknown>} />
+      <div className="space-y-10">
+        <AccountSection name={session?.user.name ?? ''} email={session?.user.email ?? null} role={session?.role ?? 'owner'} notebookName={session?.notebook.name ?? 'Primary'} authEnabled={authEnabled()} hasPassword={Boolean(session?.user.passwordHash)} />
+        <AiSection settings={{ ...aiView }} canEdit={canEdit} />
+        <SettingsClient userName={s.user?.name ?? 'Harsha'} authEnabled={authEnabled()} settings={(s.user?.settings ?? {}) as Record<string, unknown>} />
+        <TemplatesSection />
+        <ImportSection contexts={contexts.map((c) => ({ id: c.id, name: c.name }))} activeContextId={active.id} />
+        <TokensSection origin={origin} />
+        <SharingSection allowed={aiView.allowShareLinks} canEdit={canEdit} />
+        <section>
+          <h2 className="mb-3 text-[13px] font-semibold uppercase tracking-[0.06em] text-fg-2">Trash</h2>
+          <p className="text-[13.5px] text-fg-2">Deleted notes are kept for 30 days. <Link href="/trash" className="text-accent underline-offset-2 hover:underline">Open Trash</Link></p>
+        </section>
+      </div>
       <section className="mt-10">
         <h2 className="mb-3 text-[13px] font-semibold uppercase tracking-[0.06em] text-fg-2">Contexts</h2>
         <ul className="divide-y divide-border rounded-xl border border-border">

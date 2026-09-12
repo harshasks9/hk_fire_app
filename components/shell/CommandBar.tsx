@@ -52,6 +52,9 @@ export function CommandBar() {
   const isQuestion = result?.isQuestion || /\?$/.test(q) || /^(what|who|when|where|why|how|which|show|find|list)\b/i.test(q.trim())
   const commands = [
     { id: 'new-note', label: 'New note', icon: Plus, run: newNote, kbd: '⌘N', keywords: 'create write' },
+    { id: 'new-template', label: 'New note from template…', icon: FileText, run: () => { close(); setShell({ templatePickerOpen: true }) }, keywords: 'template meeting 1:1 decision review' },
+    { id: 'review', label: 'Weekly review', icon: Repeat, run: () => go('/review'), keywords: 'week retrospective' },
+    { id: 'trash', label: 'Trash', icon: Inbox, run: () => go('/trash'), keywords: 'deleted restore' },
     { id: 'quick', label: 'Quick capture', icon: Zap, run: () => { close(); setShell({ captureOpen: true }) }, kbd: '⌘⇧N', keywords: 'capture jot' },
     { id: 'voice', label: 'Record voice note', icon: Mic, run: () => go('/capture/voice'), keywords: 'audio record' },
     { id: 'live', label: 'Start live meeting', icon: CalendarDays, run: () => go('/meetings/live'), keywords: 'transcribe record meeting' },
