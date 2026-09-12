@@ -14,9 +14,37 @@ export function SettingsClient({ userName, authEnabled, settings }: { userName: 
   const [proactive, setProactive] = React.useState(settings.proactiveInsights !== false)
   const [aiEnabled, setAiEnabled] = React.useState(settings.aiEnabled !== false)
   const save = async (patch: Record<string, unknown>) => { await api('/api/settings', { method: 'PATCH', json: patch }); router.refresh() }
+  const [progress, setProgress] = React.useState<string | null>(null)
   const run = async (key: string, path: string, msg: string) => {
     setBusy(key)
     try { await api(path, { method: 'POST' }); toast.push({ text: msg, tone: 'success' }); router.refresh() } catch (e) { toast.push({ text: String(e), tone: 'danger' }) } finally { setBusy(null) }
+  }
+  // Re-analysis runs in resumable slices so it never trips the serverless time limit and respects model rate limits.
+  const reindex = async () => {
+    setBusy('reindex')
+    let offset = 0
+    let byModel = 0
+    let byLocal = 0
+    try {
+      while (true) {
+        const r = await api<{ processed: number; byModel: number; byLocal: number; total: number; next: number | null }>('/api/admin/reindex', { method: 'POST', json: { offset } })
+        byModel += r.byModel
+        byLocal += r.byLocal
+        if (r.next === null) {
+          const total = byModel + byLocal
+          toast.push({ text: byLocal === 0 ? `Re-analyzed ${total} notes` : `Re-analyzed ${total} notes (${byModel} with the model, ${byLocal} locally because the model was rate-limited; run again later to retry those)`, tone: byLocal === 0 ? 'success' : 'neutral' })
+          break
+        }
+        offset = r.next
+        setProgress(`${offset} of ${r.total} notes…`)
+      }
+      router.refresh()
+    } catch (e) {
+      toast.push({ text: String(e), tone: 'danger' })
+    } finally {
+      setBusy(null)
+      setProgress(null)
+    }
   }
   return (
     <div className="space-y-10">
@@ -43,7 +71,7 @@ export function SettingsClient({ userName, authEnabled, settings }: { userName: 
         <h2 className="mb-3 text-[13px] font-semibold uppercase tracking-[0.06em] text-fg-2">Data</h2>
         <div className="flex flex-wrap gap-2">
           <a href="/api/admin/export" className="inline-flex h-8 items-center gap-1.5 rounded-[9px] border border-border-2 bg-surface px-3 text-[13.5px] font-medium hover:bg-surface-2"><Download className="h-3.5 w-3.5" /> Export everything (JSON + Markdown)</a>
-          <Button loading={busy === 'reindex'} onClick={() => run('reindex', '/api/admin/reindex', 'Re-analyzed every note')}><RefreshCw className="h-3.5 w-3.5" /> Rebuild index</Button>
+          <Button loading={busy === 'reindex'} onClick={reindex}><RefreshCw className="h-3.5 w-3.5" /> {progress ? `Rebuilding ${progress}` : 'Rebuild index'}</Button>
           <Button variant="danger" loading={busy === 'reseed'} onClick={() => { if (confirm('Replace ALL data with the sample dataset? This cannot be undone.')) run('reseed', '/api/admin/reseed', 'Sample data loaded') }}><Trash2 className="h-3.5 w-3.5" /> Reset to sample data</Button>
         </div>
         <p className="mt-2 flex items-center gap-1.5 text-[12.5px] text-fg-3"><Database className="h-3.5 w-3.5" /> Deleting a note removes its open extracted tasks and loops; history that other notes confirmed stays.</p>

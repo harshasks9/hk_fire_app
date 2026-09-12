@@ -5,6 +5,7 @@
 */
 import type { EmbeddingProvider } from './types'
 import { resolveGeminiModels, markGeminiModelUnavailable } from './gemini-models'
+import { geminiFetch } from './gemini-retry'
 import { logAiCall } from './log'
 
 export const EMBEDDING_DIMENSIONS = 768
@@ -75,14 +76,14 @@ export function geminiEmbeddingProvider(apiKey: string): EmbeddingProvider {
         for (let i = 0; i < texts.length; i += 50) {
           const batch = texts.slice(i, i + 50)
           const started = Date.now()
-          const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:batchEmbedContents`, {
+          const { res, errorText } = await geminiFetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:batchEmbedContents`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json', 'x-goog-api-key': apiKey },
             body: JSON.stringify({ requests: batch.map((t) => ({ model: `models/${model}`, content: { parts: [{ text: t.slice(0, 8000) }] }, outputDimensionality: EMBEDDING_DIMENSIONS })) }),
             signal: AbortSignal.timeout(30_000),
-          })
+          }, { maxWaitMs: 30_000 })
           if (!res.ok) {
-            await logAiCall({ provider: 'gemini', model, purpose: 'embed', inputChars: batch.join('').length, ok: false, error: `HTTP ${res.status}: ${(await res.text()).slice(0, 200)}`, durationMs: Date.now() - started })
+            await logAiCall({ provider: 'gemini', model, purpose: 'embed', inputChars: batch.join('').length, ok: false, error: `HTTP ${res.status}: ${errorText.slice(0, 200)}`, durationMs: Date.now() - started })
             throw Object.assign(new Error(`Gemini embeddings HTTP ${res.status}`), { status: res.status })
           }
           const json = (await res.json()) as { embeddings: { values: number[] }[] }

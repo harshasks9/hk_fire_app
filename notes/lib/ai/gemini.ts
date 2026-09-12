@@ -5,6 +5,7 @@ import { extractionPrompt, SYSTEM_CHIEF_OF_STAFF } from './prompts'
 import { extractJson } from '../util'
 import { logAiCall } from './log'
 import { resolveGeminiModels, markGeminiModelUnavailable } from './gemini-models'
+import { geminiFetch } from './gemini-retry'
 
 const API = 'https://generativelanguage.googleapis.com/v1beta/models'
 
@@ -22,15 +23,15 @@ export function geminiProvider(apiKey: string): AIProvider {
       contents: [{ role: 'user', parts: [{ text: prompt }] }],
       generationConfig: { maxOutputTokens: opts.maxTokens ?? 8192, ...(opts.json ? { responseMimeType: 'application/json' } : {}) },
     }
-    const res = await fetch(`${API}/${model}:generateContent`, {
+    const { res, errorText, attempts } = await geminiFetch(`${API}/${model}:generateContent`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'x-goog-api-key': apiKey },
       body: JSON.stringify(body),
       signal: AbortSignal.timeout(90_000),
     })
     if (!res.ok) {
-      const err = (await res.text()).slice(0, 300)
-      await logAiCall({ provider: 'gemini', model, purpose: opts.purpose, inputChars: prompt.length, ok: false, error: `HTTP ${res.status}: ${err}`, durationMs: Date.now() - started })
+      const err = errorText.slice(0, 300)
+      await logAiCall({ provider: 'gemini', model, purpose: opts.purpose, inputChars: prompt.length, ok: false, error: `HTTP ${res.status}${attempts > 1 ? ` after ${attempts} attempts` : ''}: ${err}`, durationMs: Date.now() - started })
       if (res.status === 404 && retry) {
         // Model gone for this key (retired, or closed to new users): pick the next usable one.
         markGeminiModelUnavailable(model)
@@ -65,14 +66,14 @@ export function geminiProvider(apiKey: string): AIProvider {
         contents: [{ role: 'user', parts: [{ text: prompt }] }],
         generationConfig: { maxOutputTokens: opts.maxTokens ?? 8192 },
       }
-      const res = await fetch(`${API}/${model}:streamGenerateContent?alt=sse`, {
+      const { res, errorText } = await geminiFetch(`${API}/${model}:streamGenerateContent?alt=sse`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'x-goog-api-key': apiKey },
         body: JSON.stringify(body),
         signal: AbortSignal.timeout(120_000),
-      })
+      }, { maxWaitMs: 20_000 })
       if (!res.ok || !res.body) {
-        await logAiCall({ provider: 'gemini', model, purpose: opts.purpose, inputChars: prompt.length, ok: false, error: `HTTP ${res.status}`, durationMs: Date.now() - started })
+        await logAiCall({ provider: 'gemini', model, purpose: opts.purpose, inputChars: prompt.length, ok: false, error: `HTTP ${res.status}: ${errorText.slice(0, 300)}`, durationMs: Date.now() - started })
         if (res.status === 404) markGeminiModelUnavailable(model)
         throw new Error(`Gemini HTTP ${res.status}`)
       }
