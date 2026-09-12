@@ -75,7 +75,7 @@ All optional. Copy `.env.example` to `.env.local`.
 | `SESSION_SECRET` | Signs the 30-day session cookie (`openssl rand -hex 32`). |
 | `DATABASE_URL` | Postgres with the `vector` extension available (Neon, Supabase, Vercel Postgres). Unset = embedded PGlite; on Vercel that means ephemeral `/tmp` storage reseeded per instance. |
 | `ANTHROPIC_API_KEY` | Claude (`claude-opus-5` by default, `ANTHROPIC_MODEL` to change) for extraction, summaries, Q&A, generated outputs. |
-| `GEMINI_API_KEY` | Gemini (`gemini-2.5-flash`) as LLM, plus `text-embedding-004` embeddings, audio transcription and image understanding. |
+| `GEMINI_API_KEY` | Gemini as LLM plus Gemini embeddings, audio transcription and image understanding. Models are discovered at runtime (newest stable Flash that the key can actually call, `gemini-embedding-001` for vectors); set `GEMINI_MODEL` / `GEMINI_EMBEDDING_MODEL` to pin them. `/api/health?probe=ai` shows what was resolved. |
 | `AI_PROVIDER` | Force `anthropic`, `gemini` or `local`. Default: first configured key, else local. |
 | `USER_NAME` | Name used in greetings and as the default task owner (default `Harsha`). |
 | `HOME_COMPANY` | Your employer, excluded from "customer" counts in insights (default `Google Cloud`). |

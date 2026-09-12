@@ -4,12 +4,12 @@ import { emptyExtraction } from './types'
 import { extractionPrompt, SYSTEM_CHIEF_OF_STAFF } from './prompts'
 import { extractJson } from '../util'
 import { logAiCall } from './log'
-import { resolveGeminiModels, invalidateGeminiModels } from './gemini-models'
+import { resolveGeminiModels, markGeminiModelUnavailable } from './gemini-models'
 
 const API = 'https://generativelanguage.googleapis.com/v1beta/models'
 
 export function geminiProvider(apiKey: string): AIProvider {
-  let model = process.env.GEMINI_MODEL || 'gemini-2.5-flash'
+  let model = process.env.GEMINI_MODEL || 'gemini-flash-latest'
   async function currentModel(): Promise<string> {
     model = (await resolveGeminiModels(apiKey)).generation
     return model
@@ -32,7 +32,8 @@ export function geminiProvider(apiKey: string): AIProvider {
       const err = (await res.text()).slice(0, 300)
       await logAiCall({ provider: 'gemini', model, purpose: opts.purpose, inputChars: prompt.length, ok: false, error: `HTTP ${res.status}: ${err}`, durationMs: Date.now() - started })
       if (res.status === 404 && retry) {
-        invalidateGeminiModels()
+        // Model gone for this key (retired, or closed to new users): pick the next usable one.
+        markGeminiModelUnavailable(model)
         await resolveGeminiModels(apiKey, true)
         return call(prompt, opts, false)
       }
@@ -72,6 +73,7 @@ export function geminiProvider(apiKey: string): AIProvider {
       })
       if (!res.ok || !res.body) {
         await logAiCall({ provider: 'gemini', model, purpose: opts.purpose, inputChars: prompt.length, ok: false, error: `HTTP ${res.status}`, durationMs: Date.now() - started })
+        if (res.status === 404) markGeminiModelUnavailable(model)
         throw new Error(`Gemini HTTP ${res.status}`)
       }
       const reader = res.body.getReader()
