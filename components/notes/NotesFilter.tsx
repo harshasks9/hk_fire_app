@@ -15,7 +15,7 @@ export function NotesFilter({ initial, view }: { initial: string; view: string }
     return () => clearTimeout(t)
   }, [q, view, router])
   return (
-    <label className="flex h-8 items-center gap-2 rounded-lg border border-border px-2.5 text-[13px] text-fg-3 focus-within:border-accent">
+    <label className="flex h-8 items-center gap-2 rounded-lg border border-border px-2.5 text-[13px] text-fg-3 focus-within:border-accent pointer-coarse:h-10">
       <Search className="h-3.5 w-3.5" />
       <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Filter notes" className="w-36 bg-transparent text-fg outline-none placeholder:text-fg-3 sm:w-48" />
     </label>

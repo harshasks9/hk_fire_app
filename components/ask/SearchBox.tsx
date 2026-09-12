@@ -17,7 +17,7 @@ export function SearchBox({ initial, all, contextName }: { initial: string; all:
       </label>
       <label className="mt-2 inline-flex cursor-pointer items-center gap-2 text-[12.5px] text-fg-3">
         <input type="checkbox" checked={scope} onChange={(e) => setScope(e.target.checked)} className="h-3.5 w-3.5 rounded border-border-2 accent-[var(--accent)]" />
-        Search across all contexts <span className="text-fg-3">(default: {contextName} only — contexts never leak into each other unless you ask)</span>
+        Search across all contexts <span className="block text-fg-3 sm:inline">(default: {contextName} only — contexts never leak into each other unless you ask)</span>
       </label>
     </div>
   )

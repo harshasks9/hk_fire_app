@@ -118,3 +118,12 @@ Vercel project root directory: `notes`. No environment variables are required
 for the demo. For persistence add a Postgres `DATABASE_URL` (the `vector`
 extension is created by the first migration). Add the domain
 `notes.hkfire.app` to the project and a CNAME `notes → cname.vercel-dns.com`.
+
+
+## Mobile and offline
+
+Notes is an installable web app (PWA). On a phone, open notes.hkfire.app and use **Add to Home Screen**; it then launches full-screen with its own icon.
+
+- **Touch-first shell**: bottom navigation with a central capture button, a formatting bar in the editor (no keyboard shortcuts needed), the intelligence panel as a bottom sheet (✦ in the top bar), larger tap targets on touch screens, and 16px form fields so iOS never zooms the page.
+- **Works offline**: a service worker (`public/sw.js`) keeps every page you have opened readable without a connection and always keeps the offline notepad (`/offline`) available.
+- **Offline capture and editing**: quick captures, edits to existing notes and new notes written in the offline notepad are stored on the device (IndexedDB, `lib/offline/`) and replayed in order the moment the app is back online. Replays keep the original timestamp and context, and go through the same AI filing as anything else. The top bar shows how many changes are waiting; `/offline` lists them with retry and discard.

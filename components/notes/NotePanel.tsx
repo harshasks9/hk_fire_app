@@ -71,7 +71,7 @@ export function NotePanel({ d }: { d: NoteDetail }) {
                   <NoteKindIcon kind={r.kind} className="mt-[3px] h-3.5 w-3.5 shrink-0 text-fg-3" />
                   <span className="min-w-0">
                     <span className="block truncate text-[13px]">{r.title || 'Untitled'}</span>
-                    <span className="block text-[11.5px] text-fg-3">{r.reason} · {relativeTime(r.updatedAt)}</span>
+                    <span className="block text-[11.5px] text-fg-3" suppressHydrationWarning>{r.reason} · {relativeTime(r.updatedAt)}</span>
                   </span>
                 </Link>
               </li>

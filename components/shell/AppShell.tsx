@@ -8,22 +8,29 @@ import { PanelHost } from './IntelligencePanel'
 import { Shortcuts } from './Shortcuts'
 import { ToastProvider } from '@/components/ui'
 import { useShell, setShell } from './store'
-import { Search, PanelRight, Zap } from 'lucide-react'
+import { Search, PanelRight, Zap, Sparkles } from 'lucide-react'
+import { OfflineProvider } from '@/components/offline/OfflineProvider'
+import { OfflineBadge } from '@/components/offline/OfflineBadge'
 import { cx } from '@/lib/util'
 
 export function AppShell({ sidebar, children }: { sidebar: SidebarProps; children: React.ReactNode }) {
   const { panelAvailable, panelOpen } = useShell()
   return (
     <ToastProvider>
+      <OfflineProvider contextId={sidebar.active.id}>
       <div className="flex h-dvh w-full overflow-hidden">
         <Sidebar {...sidebar} />
         <div className="flex min-w-0 flex-1 flex-col">
           {/* Mobile top bar */}
-          <div className="flex h-12 shrink-0 items-center justify-between border-b border-border bg-surface px-3 md:hidden">
+          <div className="flex h-[calc(48px+env(safe-area-inset-top))] shrink-0 items-center justify-between border-b border-border bg-surface px-3 pt-[env(safe-area-inset-top)] md:hidden">
             <ContextSwitcher contexts={sidebar.contexts} active={sidebar.active} />
-            <div className="flex items-center gap-1">
-              <button className="rounded-md p-2 text-fg-2 hover:bg-surface-2" onClick={() => setShell({ captureOpen: true })} aria-label="Quick capture"><Zap className="h-4 w-4" /></button>
-              <button className="rounded-md p-2 text-fg-2 hover:bg-surface-2" onClick={() => setShell({ commandOpen: true })} aria-label="Search"><Search className="h-4 w-4" /></button>
+            <div className="flex items-center gap-0.5">
+              <OfflineBadge compact className="mr-1" />
+              {panelAvailable ? (
+                <button className="relative rounded-md p-2.5 text-accent hover:bg-surface-2 xl:hidden" onClick={() => setShell({ panelSheet: true })} aria-label="Open intelligence panel"><Sparkles className="h-[18px] w-[18px]" /></button>
+              ) : null}
+              <button className="rounded-md p-2.5 text-fg-2 hover:bg-surface-2" onClick={() => setShell({ captureOpen: true })} aria-label="Quick capture"><Zap className="h-[18px] w-[18px]" /></button>
+              <button className="rounded-md p-2.5 text-fg-2 hover:bg-surface-2" onClick={() => setShell({ commandOpen: true })} aria-label="Search"><Search className="h-[18px] w-[18px]" /></button>
             </div>
           </div>
           <div className="flex min-h-0 flex-1">
@@ -43,6 +50,7 @@ export function AppShell({ sidebar, children }: { sidebar: SidebarProps; childre
       <CommandBar />
       <QuickCapture />
       <Shortcuts />
+      </OfflineProvider>
     </ToastProvider>
   )
 }

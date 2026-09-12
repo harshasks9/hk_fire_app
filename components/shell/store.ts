@@ -10,10 +10,12 @@ export interface ShellState {
   captureOpen: boolean
   theme: 'system' | 'light' | 'dark'
   mobileMenuOpen: boolean
+  /** Intelligence panel shown as a bottom sheet (screens below xl). */
+  panelSheet: boolean
 }
 
 const listeners = new Set<() => void>()
-let state: ShellState = { sidebarCollapsed: false, panelOpen: true, panelAvailable: false, commandOpen: false, commandQuery: '', captureOpen: false, theme: 'system', mobileMenuOpen: false }
+let state: ShellState = { sidebarCollapsed: false, panelOpen: true, panelAvailable: false, commandOpen: false, commandQuery: '', captureOpen: false, theme: 'system', mobileMenuOpen: false, panelSheet: false }
 
 function load() {
   if (typeof window === 'undefined') return

@@ -36,7 +36,7 @@ export default async function Home() {
           <div className="grid gap-x-10 md:grid-cols-[1.4fr_1fr]">
             <div className="min-w-0">
               {today.length || h.meetings.length ? (
-                <Section title={today.length ? 'Today' : 'Coming up'} action={<Link href="/meetings" className="text-[12.5px] text-fg-3 hover:text-fg">All meetings</Link>}>
+                <Section title={today.length ? 'Today' : 'Coming up'} action={<Link href="/meetings" className="rounded-md text-[12.5px] text-fg-3 hover:text-fg pointer-coarse:px-2 pointer-coarse:py-2">All meetings</Link>}>
                   {(today.length ? today : h.meetings.slice(0, 3)).map((m) => (
                     <div key={m.id} className="flex items-center gap-2">
                       <div className="min-w-0 flex-1"><MeetingRow m={m} /></div>

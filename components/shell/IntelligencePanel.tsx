@@ -15,27 +15,55 @@ export function Panel({ children, title = 'Intelligence' }: { children: React.Re
   }, [])
   if (!host) return null
   return createPortal(
-    <div className="flex h-full flex-col">
+    <div className="flex min-h-0 flex-1 flex-col">
+      <div className="mx-auto mt-2 h-1 w-10 shrink-0 rounded-full bg-border-2 xl:hidden" aria-hidden />
       <div className="flex h-12 shrink-0 items-center justify-between border-b border-border px-4">
         <div className="flex items-center gap-1.5 text-[12.5px] font-semibold uppercase tracking-[0.06em] text-fg-2">
           <Sparkles className="h-3.5 w-3.5 text-accent" />
           {title}
         </div>
-        <button className="rounded-md p-1 text-fg-3 hover:bg-surface-2 hover:text-fg" onClick={() => setShell({ panelOpen: false })} title="Close panel (⌘.)" aria-label="Close panel">
+        <button className="rounded-md p-2 text-fg-3 hover:bg-surface-2 hover:text-fg xl:p-1" onClick={() => setShell({ panelOpen: false, panelSheet: false })} title="Close panel (⌘.)" aria-label="Close panel">
           <PanelRightClose className="h-4 w-4" />
         </button>
       </div>
-      <div className="min-h-0 flex-1 overflow-y-auto px-4 py-4">{children}</div>
+      <div className="min-h-0 flex-1 overflow-y-auto px-4 py-4 pb-[calc(16px+env(safe-area-inset-bottom))] xl:pb-4">{children}</div>
     </div>,
     host,
   )
 }
 
+/**
+  Hosts the intelligence panel: a docked right column on wide screens, a
+  swipe-away bottom sheet everywhere else (opened from the ✦ button in the
+  mobile top bar).
+*/
 export function PanelHost() {
-  const { panelOpen, panelAvailable } = useShell()
+  const { panelOpen, panelAvailable, panelSheet } = useShell()
   const visible = panelOpen && panelAvailable
+  const sheet = panelSheet && panelAvailable
+  React.useEffect(() => {
+    if (!sheet) return
+    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setShell({ panelSheet: false }) }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [sheet])
   return (
-    <aside id="intel-panel" className={cx('hidden shrink-0 border-l border-border bg-surface transition-[width] duration-200 xl:block', visible ? 'w-[var(--panel-w)]' : 'w-0 overflow-hidden border-l-0')} aria-label="Intelligence panel" />
+    <>
+      {sheet ? <div className="fixed inset-0 z-[60] bg-black/30 backdrop-blur-[2px] xl:hidden" onClick={() => setShell({ panelSheet: false })} aria-hidden /> : null}
+      <aside
+        id="intel-panel"
+        className={cx(
+          'bg-surface',
+          // Bottom sheet (below xl)
+          'fixed inset-x-0 bottom-0 z-[61] max-h-[85dvh] flex-col rounded-t-2xl border-t border-border shadow-pop',
+          sheet ? 'flex animate-up' : 'hidden',
+          // Docked column (xl and up)
+          'xl:static xl:z-auto xl:max-h-none xl:shrink-0 xl:flex-col xl:rounded-none xl:border-l xl:border-t-0 xl:shadow-none xl:transition-[width] xl:duration-200',
+          visible ? 'xl:flex xl:w-[var(--panel-w)]' : 'xl:hidden xl:w-0',
+        )}
+        aria-label="Intelligence panel"
+      />
+    </>
   )
 }
 

@@ -4,13 +4,15 @@ import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
 import { Home, FileText, Plus, Search, Inbox, Mic, Camera, Upload, CalendarDays, X, PenLine } from 'lucide-react'
 import { cx } from '@/lib/util'
-import { api } from '@/lib/client'
 import { setShell } from './store'
+import { createNoteAndOpen } from '@/lib/offline/notes-client'
+import { useOffline } from '@/lib/offline/sync'
 
 export function MobileNav() {
   const pathname = usePathname()
   const router = useRouter()
   const [open, setOpen] = React.useState(false)
+  const { online } = useOffline()
   const tabs = [
     { href: '/', label: 'Home', icon: Home },
     { href: '/notes', label: 'Notes', icon: FileText },
@@ -19,7 +21,7 @@ export function MobileNav() {
     { href: '/inbox', label: 'Inbox', icon: Inbox },
   ]
   const actions = [
-    { label: 'New note', icon: PenLine, run: async () => { const n = await api<{ id: string }>('/api/notes', { method: 'POST', json: {} }); router.push(`/notes/${n.id}`) } },
+    { label: online ? 'New note' : 'Offline note', icon: PenLine, run: () => createNoteAndOpen(router) },
     { label: 'Voice note', icon: Mic, run: () => router.push('/capture/voice') },
     { label: 'Camera', icon: Camera, run: () => setShell({ captureOpen: true }) },
     { label: 'Screenshot', icon: Upload, run: () => setShell({ captureOpen: true }) },

@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { getActiveContext } from '@/lib/context'
+import { resolveContext } from '@/lib/context'
 import { addAttachment, addSource, createNote, fetchLinkPreview, scheduleProcessing } from '@/lib/notes'
 import { describeImage, transcribeAudio } from '@/lib/media'
 import { getDb, schema } from '@/lib/db'
@@ -11,9 +11,12 @@ export const maxDuration = 60
 
 /** Quick capture: text, URL, screenshot/image, audio or file. AI does the filing. */
 export async function POST(req: NextRequest) {
-  const ctx = await getActiveContext()
   const form = await req.formData()
+  const ctx = await resolveContext(String(form.get('contextId') ?? '') || undefined)
   const text = String(form.get('text') ?? '').trim()
+  // Offline captures replay later; keep the moment they were written.
+  const capturedAtRaw = String(form.get('capturedAt') ?? '')
+  const capturedAt = capturedAtRaw && !Number.isNaN(Date.parse(capturedAtRaw)) ? new Date(capturedAtRaw) : undefined
   const files = form.getAll('files').filter((f): f is File => f instanceof File && f.size > 0)
   const urlMatch = text.match(/https?:\/\/\S+/)
   let kind: 'capture' | 'link' | 'screenshot' | 'voice' | 'document' = 'capture'
@@ -28,7 +31,7 @@ export async function POST(req: NextRequest) {
     const comment = text.replace(urlMatch[0], '').trim()
     body = [comment, preview.description, preview.text ? `> ${preview.text.slice(0, 1200)}` : '', `Source: ${urlMatch[0]}`].filter(Boolean).join('\n\n')
   }
-  const id = await createNote({ contextId: ctx.id, title, markdown: body, kind, source: 'quick-capture', sourceUrl: urlMatch?.[0], status: 'inbox' })
+  const id = await createNote({ contextId: ctx.id, title, markdown: body, kind, source: 'quick-capture', sourceUrl: urlMatch?.[0], status: 'inbox', createdAt: capturedAt })
   if (urlMatch) await addSource(id, { kind: 'url', url: urlMatch[0], title })
 
   const extra: string[] = []

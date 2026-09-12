@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation'
 import { FileText, CalendarDays, Users, Building2, Hash, CheckSquare, GitBranch, FlaskConical, Sparkles, Search, Plus, Inbox, Home, Repeat, Settings, Mic, Zap, ArrowRight, Sun, Moon } from 'lucide-react'
 import { setShell, useShell } from './store'
 import { api } from '@/lib/client'
+import { createNoteAndOpen } from '@/lib/offline/notes-client'
 import type { SearchResult } from '@/lib/search'
 import { cx } from '@/lib/util'
 
@@ -45,7 +46,7 @@ export function CommandBar() {
 
   const close = () => setShell({ commandOpen: false })
   const go = (href: string) => { close(); router.push(href) }
-  const newNote = async () => { close(); const n = await api<{ id: string }>('/api/notes', { method: 'POST', json: {} }); router.push(`/notes/${n.id}`) }
+  const newNote = async () => { close(); await createNoteAndOpen(router) }
 
   if (!commandOpen) return null
   const isQuestion = result?.isQuestion || /\?$/.test(q) || /^(what|who|when|where|why|how|which|show|find|list)\b/i.test(q.trim())

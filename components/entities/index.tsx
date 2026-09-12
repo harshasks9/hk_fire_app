@@ -80,7 +80,7 @@ export function TaskRow({ task, entityName, sourceTitle, showEntity = true, high
   const overdue = due && !done && due < new Date()
   return (
     <div className={cx('group flex items-start gap-2.5 rounded-lg px-2 py-1.5 row-hover', highlight && 'bg-accent-soft', compact ? '-mx-2' : '-mx-2')} id={`task-${task.id}`}>
-      <button onClick={toggle} className={cx('mt-[3px] flex h-4 w-4 shrink-0 items-center justify-center rounded-[5px] border transition', done ? 'border-accent bg-accent text-accent-fg' : 'border-border-2 hover:border-fg-3')} aria-label={done ? 'Mark open' : 'Mark done'}>
+      <button onClick={toggle} className={cx('mt-[3px] flex h-4 w-4 shrink-0 items-center justify-center rounded-[5px] border transition pointer-coarse:mt-0 pointer-coarse:h-6 pointer-coarse:w-6', done ? 'border-accent bg-accent text-accent-fg' : 'border-border-2 hover:border-fg-3')} aria-label={done ? 'Mark open' : 'Mark done'}>
         {done ? <Check className="h-3 w-3" /> : null}
       </button>
       <div className="min-w-0 flex-1">
@@ -97,9 +97,9 @@ export function TaskRow({ task, entityName, sourceTitle, showEntity = true, high
         </div>
       </div>
       {!done ? (
-        <div className="flex shrink-0 items-center gap-0.5 opacity-0 transition group-hover:opacity-100">
-          {status !== 'waiting' ? <button className="rounded px-1.5 py-0.5 text-[11px] text-fg-3 hover:bg-surface-3 hover:text-fg" onClick={() => setTo('waiting')}>Waiting</button> : <button className="rounded px-1.5 py-0.5 text-[11px] text-fg-3 hover:bg-surface-3 hover:text-fg" onClick={() => setTo('open')}>Open</button>}
-          <button className="rounded px-1.5 py-0.5 text-[11px] text-fg-3 hover:bg-surface-3 hover:text-danger" onClick={() => setTo('dropped')}>Drop</button>
+        <div className="flex shrink-0 items-center gap-0.5 opacity-0 transition group-hover:opacity-100 pointer-coarse:opacity-100">
+          {status !== 'waiting' ? <button className="rounded px-1.5 py-0.5 text-[11px] text-fg-3 hover:bg-surface-3 hover:text-fg pointer-coarse:px-2.5 pointer-coarse:py-1.5 pointer-coarse:text-[12.5px]" onClick={() => setTo('waiting')}>Waiting</button> : <button className="rounded px-1.5 py-0.5 text-[11px] text-fg-3 hover:bg-surface-3 hover:text-fg pointer-coarse:px-2.5 pointer-coarse:py-1.5 pointer-coarse:text-[12.5px]" onClick={() => setTo('open')}>Open</button>}
+          <button className="rounded px-1.5 py-0.5 text-[11px] text-fg-3 hover:bg-surface-3 hover:text-danger pointer-coarse:px-2.5 pointer-coarse:py-1.5 pointer-coarse:text-[12.5px]" onClick={() => setTo('dropped')}>Drop</button>
         </div>
       ) : null}
     </div>
@@ -134,9 +134,9 @@ export function LoopRow({ loop, showCompany = true, highlight }: { loop: { id: s
         </div>
       </div>
       {status === 'open' ? (
-        <div className="flex shrink-0 items-center gap-0.5 opacity-0 transition group-hover:opacity-100">
-          <button className="rounded px-1.5 py-0.5 text-[11px] text-fg-3 hover:bg-surface-3 hover:text-fg" onClick={() => set('resolved')}>Resolve</button>
-          <button className="rounded px-1.5 py-0.5 text-[11px] text-fg-3 hover:bg-surface-3 hover:text-fg" onClick={() => set('dismissed')}>Dismiss</button>
+        <div className="flex shrink-0 items-center gap-0.5 opacity-0 transition group-hover:opacity-100 pointer-coarse:opacity-100">
+          <button className="rounded px-1.5 py-0.5 text-[11px] text-fg-3 hover:bg-surface-3 hover:text-fg pointer-coarse:px-2.5 pointer-coarse:py-1.5 pointer-coarse:text-[12.5px]" onClick={() => set('resolved')}>Resolve</button>
+          <button className="rounded px-1.5 py-0.5 text-[11px] text-fg-3 hover:bg-surface-3 hover:text-fg pointer-coarse:px-2.5 pointer-coarse:py-1.5 pointer-coarse:text-[12.5px]" onClick={() => set('dismissed')}>Dismiss</button>
         </div>
       ) : (
         <button className="shrink-0 text-[11px] text-fg-3 hover:text-fg" onClick={() => set('open')}>Reopen</button>
@@ -164,7 +164,7 @@ export function InsightRow({ insight, compact }: { insight: { id: string; text: 
           </span>
         ) : null}
       </div>
-      <button className="shrink-0 rounded p-0.5 text-fg-3 opacity-0 transition hover:text-fg group-hover:opacity-100" title="Dismiss" onClick={async () => { setGone(true); await api(`/api/insights/${insight.id}`, { method: 'PATCH' }); router.refresh() }} aria-label="Dismiss">
+      <button className="shrink-0 rounded p-0.5 text-fg-3 opacity-0 transition hover:text-fg group-hover:opacity-100 pointer-coarse:p-1.5 pointer-coarse:opacity-100" title="Dismiss" onClick={async () => { setGone(true); await api(`/api/insights/${insight.id}`, { method: 'PATCH' }); router.refresh() }} aria-label="Dismiss">
         <X className="h-3.5 w-3.5" />
       </button>
     </div>
@@ -224,7 +224,7 @@ export function NoteRow({ note, showEntities = true, dense }: { note: { id: stri
           </div>
         ) : null}
       </div>
-      <span className="shrink-0 pt-0.5 text-[12px] tabular-nums text-fg-3">{relativeTime(note.updatedAt)}</span>
+      <span className="shrink-0 pt-0.5 text-[12px] tabular-nums text-fg-3" suppressHydrationWarning>{relativeTime(note.updatedAt)}</span>
     </Link>
   )
 }
@@ -306,7 +306,7 @@ export function AiSummary({ summary, defaultOpen = true, sourceNoteId, compact }
     <div className={cx('rounded-xl border border-dashed border-accent-soft-2 bg-accent-soft/40', compact ? 'px-3 py-2' : 'px-4 py-3')}>
       <button onClick={() => setOpen((o) => !o)} className="flex w-full items-center justify-between text-left">
         <span className="flex items-center gap-2 text-[12px] font-semibold uppercase tracking-[0.06em] text-accent"><Sparkles className="h-3.5 w-3.5" /> Summary</span>
-        <span className="text-[11.5px] text-fg-3">{summary.provider === 'local' ? 'heuristic' : summary.provider} · {relativeTime(summary.generatedAt)} · {open ? 'hide' : 'show'}</span>
+        <span className="text-[11.5px] text-fg-3" suppressHydrationWarning>{summary.provider === 'local' ? 'heuristic' : summary.provider} · {relativeTime(summary.generatedAt)} · {open ? 'hide' : 'show'}</span>
       </button>
       {open ? (
         <div className="mt-2 space-y-3">

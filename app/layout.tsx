@@ -9,7 +9,9 @@ export const metadata: Metadata = {
   description: 'Capture anything. Organize nothing. Find everything. Act on what matters.',
   applicationName: 'Notes',
   appleWebApp: { capable: true, title: 'Notes', statusBarStyle: 'default' },
-  icons: { icon: '/icon.svg' },
+  formatDetection: { telephone: false },
+  manifest: '/manifest.json',
+  icons: { icon: '/icon.svg', apple: '/icons/apple-touch-icon.png' },
 }
 
 export const viewport: Viewport = {
