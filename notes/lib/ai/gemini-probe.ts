@@ -17,7 +17,7 @@ export interface GeminiProbe {
 }
 
 function trim(s: string) {
-  return s.replace(/\s+/g, ' ').slice(0, 400)
+  return s.replace(/\s+/g, ' ').slice(0, 900)
 }
 
 export async function probeGemini(): Promise<GeminiProbe> {
