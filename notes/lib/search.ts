@@ -2,15 +2,30 @@ import { withNotebookAi } from './session'
 /* Hybrid search: exact keyword + semantic (pgvector) + entity match, grouped by type. */
 import { and, desc, eq, ilike, inArray, isNull, or, sql, cosineDistance } from 'drizzle-orm'
 import { getDb, schema } from './db'
+import { allTagsOf, hasTagSql, listTags, normalizeTag } from './tags'
 import { queryVector } from './queries'
 import type { EntityType } from './db/schema'
 import { escapeRegExp, truncate } from './util'
 
-export interface SearchHit { id: string; type: 'note' | 'meeting' | 'person' | 'company' | 'topic' | 'project' | 'task' | 'decision' | 'research' | 'commitment'; title: string; subtitle?: string; snippet?: string; href: string; score: number; date?: Date; matchKind: 'keyword' | 'semantic' | 'entity' | 'both' }
+export interface SearchHit { id: string; type: 'note' | 'meeting' | 'person' | 'company' | 'topic' | 'project' | 'task' | 'decision' | 'research' | 'commitment' | 'tag'; title: string; subtitle?: string; snippet?: string; href: string; score: number; date?: Date; matchKind: 'keyword' | 'semantic' | 'entity' | 'both' }
 
 export interface SearchResult { query: string; groups: { type: string; label: string; hits: SearchHit[] }[]; total: number; isQuestion: boolean }
 
-const GROUP_LABELS: Record<string, string> = { note: 'Notes', meeting: 'Meetings', person: 'People', company: 'Companies', topic: 'Topics', project: 'Projects', task: 'Tasks', decision: 'Decisions', research: 'Research', commitment: 'Open loops' }
+const GROUP_LABELS: Record<string, string> = { tag: 'Tags', note: 'Notes', meeting: 'Meetings', person: 'People', company: 'Companies', topic: 'Topics', project: 'Projects', task: 'Tasks', decision: 'Decisions', research: 'Research', commitment: 'Open loops' }
+
+/** Pull `tag:foo` / `#foo` filters out of a query. */
+export function parseTagQuery(q: string): { text: string; tags: string[] } {
+  const tags: string[] = []
+  const text = q
+    .replace(/(?:^|\s)(?:tag:|#)([\w][\w-]*)/gi, (_, t: string) => {
+      const n = normalizeTag(t)
+      if (n && !tags.includes(n)) tags.push(n)
+      return ' '
+    })
+    .replace(/\s+/g, ' ')
+    .trim()
+  return { text, tags }
+}
 
 export function looksLikeQuestion(q: string): boolean {
   const t = q.trim().toLowerCase()
@@ -43,7 +58,9 @@ export async function search(contextIds: string[], q: string, opts: { limit?: nu
 
 async function searchInner(contextIds: string[], q: string, opts: { limit?: number; semantic?: boolean } = {}): Promise<SearchResult> {
   const db = await getDb()
-  const query = q.trim()
+  const parsedQ = parseTagQuery(q)
+  const query = parsedQ.text
+  const tagFilter = parsedQ.tags
   const hits = new Map<string, SearchHit>()
   const add = (h: SearchHit) => {
     const key = `${h.type}:${h.id}`
@@ -54,16 +71,31 @@ async function searchInner(contextIds: string[], q: string, opts: { limit?: numb
       if (!ex.snippet && h.snippet) ex.snippet = h.snippet
     } else hits.set(key, h)
   }
+  const ctx = (col: import("drizzle-orm/pg-core").PgColumn) => inArray(col, contextIds)
+  // Tag-only query: every note carrying those tags, newest first.
+  if (!query && tagFilter.length) {
+    const rows = await db.select({ id: schema.notes.id, title: schema.notes.title, kind: schema.notes.kind, text: schema.notes.contentText, updatedAt: schema.notes.updatedAt, meetingId: schema.notes.meetingId, tags: schema.notes.tags, manualTags: schema.notes.manualTags }).from(schema.notes).where(and(ctx(schema.notes.contextId), isNull(schema.notes.deletedAt), ...tagFilter.map(hasTagSql))).orderBy(desc(schema.notes.updatedAt)).limit(opts.limit ?? 40)
+    for (const n of rows) add({ id: n.id, type: n.kind === 'meeting' ? 'meeting' : 'note', title: n.title || 'Untitled', subtitle: allTagsOf(n).map((t) => `#${t}`).join(' '), snippet: n.text.replace(/\s+/g, ' ').slice(0, 160), href: n.kind === 'meeting' && n.meetingId ? `/meetings/${n.meetingId}` : `/notes/${n.id}`, score: 5, date: n.updatedAt, matchKind: 'keyword' })
+    const all = [...hits.values()]
+    const groups = ['note', 'meeting'].map((type) => ({ type, label: GROUP_LABELS[type]!, hits: all.filter((h) => h.type === type) })).filter((g) => g.hits.length)
+    return { query: q.trim(), groups, total: all.length, isQuestion: false }
+  }
   if (!query) return { query, groups: [], total: 0, isQuestion: false }
   const like = `%${query}%`
-  const ctx = (col: import("drizzle-orm/pg-core").PgColumn) => inArray(col, contextIds)
+  const tagCond = tagFilter.map(hasTagSql)
+
+  // Tags whose name matches
+  if (!tagFilter.length && query.length >= 2) {
+    const tagRows = (await listTags(contextIds, { limit: 400 })).filter((t) => t.tag.includes(normalizeTag(query) ?? query.toLowerCase())).slice(0, 6)
+    for (const t of tagRows) add({ id: t.tag, type: 'tag', title: `#${t.tag}`, subtitle: `${t.count} ${t.count === 1 ? 'note' : 'notes'}`, href: `/notes?tag=${encodeURIComponent(t.tag)}`, score: 6 + (t.tag === query.toLowerCase() ? 6 : 0) + Math.min(t.count, 10) / 5, matchKind: 'keyword' })
+  }
 
   // Entities: name / alias
   const ents = await db.select().from(schema.entities).where(and(ctx(schema.entities.contextId), or(ilike(schema.entities.name, like), sql`exists (select 1 from jsonb_array_elements_text(${schema.entities.aliases}) a where a ilike ${like})`))).limit(12)
   for (const e of ents) add({ id: e.id, type: e.type, title: e.name, subtitle: e.attributes.role ? `${e.attributes.role}${e.attributes.company ? ' · ' + e.attributes.company : ''}` : e.attributes.status, href: entityHref(e.type, e.id), score: 10 + (e.name.toLowerCase() === query.toLowerCase() ? 10 : 0) + Math.min(e.mentionCount, 10) / 5, matchKind: 'entity' })
 
   // Notes keyword
-  const notes = await db.select({ id: schema.notes.id, title: schema.notes.title, kind: schema.notes.kind, text: schema.notes.contentText, updatedAt: schema.notes.updatedAt, meetingId: schema.notes.meetingId }).from(schema.notes).where(and(ctx(schema.notes.contextId), isNull(schema.notes.deletedAt), or(ilike(schema.notes.title, like), ilike(schema.notes.contentText, like)))).orderBy(desc(schema.notes.updatedAt)).limit(30)
+  const notes = await db.select({ id: schema.notes.id, title: schema.notes.title, kind: schema.notes.kind, text: schema.notes.contentText, updatedAt: schema.notes.updatedAt, meetingId: schema.notes.meetingId }).from(schema.notes).where(and(ctx(schema.notes.contextId), isNull(schema.notes.deletedAt), ...tagCond, or(ilike(schema.notes.title, like), ilike(schema.notes.contentText, like)))).orderBy(desc(schema.notes.updatedAt)).limit(30)
   for (const n of notes) {
     const titleHit = n.title.toLowerCase().includes(query.toLowerCase())
     add({ id: n.id, type: n.kind === 'meeting' ? 'meeting' : 'note', title: n.title || 'Untitled', snippet: snippetFor(n.text, query), href: n.kind === 'meeting' && n.meetingId ? `/meetings/${n.meetingId}` : `/notes/${n.id}`, score: 5 + (titleHit ? 4 : 0), date: n.updatedAt, matchKind: 'keyword' })
@@ -84,7 +116,7 @@ async function searchInner(contextIds: string[], q: string, opts: { limit?: numb
     const dist = cosineDistance(schema.embeddings.embedding, qv.vector)
     const sem = await db.select({ ownerType: schema.embeddings.ownerType, ownerId: schema.embeddings.ownerId, text: schema.embeddings.text, d: dist }).from(schema.embeddings).where(and(ctx(schema.embeddings.contextId), eq(schema.embeddings.provider, qv.provider))).orderBy(dist).limit(24)
     const noteIds = [...new Set(sem.filter((s) => s.ownerType === 'note').map((s) => s.ownerId))]
-    const noteRows = noteIds.length ? await db.select({ id: schema.notes.id, title: schema.notes.title, kind: schema.notes.kind, updatedAt: schema.notes.updatedAt, meetingId: schema.notes.meetingId }).from(schema.notes).where(and(inArray(schema.notes.id, noteIds), isNull(schema.notes.deletedAt))) : []
+    const noteRows = noteIds.length ? await db.select({ id: schema.notes.id, title: schema.notes.title, kind: schema.notes.kind, updatedAt: schema.notes.updatedAt, meetingId: schema.notes.meetingId }).from(schema.notes).where(and(inArray(schema.notes.id, noteIds), isNull(schema.notes.deletedAt), ...tagCond)) : []
     for (const s of sem) {
       const sim = 1 - Number(s.d)
       if (sim < 0.12) continue
@@ -104,12 +136,12 @@ async function searchInner(contextIds: string[], q: string, opts: { limit?: numb
     }
   }
   const all = [...hits.values()].sort((a, b) => b.score - a.score)
-  const order = ['note', 'meeting', 'person', 'company', 'topic', 'project', 'decision', 'task', 'commitment', 'research']
+  const order = ['tag', 'note', 'meeting', 'person', 'company', 'topic', 'project', 'decision', 'task', 'commitment', 'research']
   const groups = order
     .map((type) => ({ type, label: GROUP_LABELS[type]!, hits: all.filter((h) => h.type === type).slice(0, opts.limit ?? 8) }))
     .filter((g) => g.hits.length)
     .sort((a, b) => (b.hits[0]?.score ?? 0) - (a.hits[0]?.score ?? 0))
-  return { query, groups, total: all.length, isQuestion: looksLikeQuestion(query) }
+  return { query: q.trim(), groups, total: all.length, isQuestion: looksLikeQuestion(query) }
 }
 
 export function entityHref(type: EntityType, id: string): string {

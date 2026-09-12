@@ -2,7 +2,7 @@
 import * as React from 'react'
 import { Command } from 'cmdk'
 import { useRouter } from 'next/navigation'
-import { FileText, CalendarDays, Users, Building2, Hash, CheckSquare, GitBranch, FlaskConical, Sparkles, Search, Plus, Inbox, Home, Repeat, Settings, Mic, Zap, ArrowRight, Sun, Moon } from 'lucide-react'
+import { FileText, CalendarDays, Users, Building2, Hash, CheckSquare, GitBranch, FlaskConical, Sparkles, Search, Plus, Inbox, Home, Repeat, Settings, Mic, Zap, ArrowRight, Sun, Moon, Share2 } from 'lucide-react'
 import { setShell, useShell } from './store'
 import { api } from '@/lib/client'
 import { createNoteAndOpen } from '@/lib/offline/notes-client'
@@ -58,6 +58,7 @@ export function CommandBar() {
     { id: 'quick', label: 'Quick capture', icon: Zap, run: () => { close(); setShell({ captureOpen: true }) }, kbd: '⌘⇧N', keywords: 'capture jot' },
     { id: 'voice', label: 'Record voice note', icon: Mic, run: () => go('/capture/voice'), keywords: 'audio record' },
     { id: 'live', label: 'Start live meeting', icon: CalendarDays, run: () => go('/meetings/live'), keywords: 'transcribe record meeting' },
+    { id: 'import-recording', label: 'Import a meeting recording or transcript', icon: Mic, run: () => go('/meetings/import'), keywords: 'recording transcript iphone voice memo upload audio m4a' },
     { id: 'ask', label: 'Ask my notes', icon: Sparkles, run: () => go('/ask'), keywords: 'ai question' },
     { id: 'home', label: 'Go to Home', icon: Home, run: () => go('/') },
     { id: 'inbox', label: 'Go to Inbox', icon: Inbox, run: () => go('/inbox') },
@@ -67,6 +68,8 @@ export function CommandBar() {
     { id: 'people', label: 'Go to People', icon: Users, run: () => go('/people') },
     { id: 'companies', label: 'Go to Companies', icon: Building2, run: () => go('/companies') },
     { id: 'topics', label: 'Go to Topics', icon: Hash, run: () => go('/topics') },
+    { id: 'tags', label: 'Go to Tags', icon: Hash, run: () => go('/tags'), keywords: 'tag labels' },
+    { id: 'graph', label: 'Open the graph', icon: Share2, run: () => go('/graph'), keywords: 'graph network map relationships' },
     { id: 'decisions', label: 'Go to Decisions', icon: GitBranch, run: () => go('/decisions') },
     { id: 'loops', label: 'Go to Open loops', icon: Repeat, run: () => go('/loops') },
     { id: 'research', label: 'Go to Research', icon: FlaskConical, run: () => go('/research') },

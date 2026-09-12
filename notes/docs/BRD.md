@@ -35,6 +35,11 @@ The owner wants to give the same system to other people — colleagues, family, 
 10. **Weekly review** — what happened this week, with an AI narrative.
 11. **Admin usage dashboard and audit log** — per-notebook activity and an immutable record of admin actions.
 
+- **F10 — Meeting recordings from a phone**: the owner records meetings on an iPhone; the recording or its transcript is posted (app or Shortcut) and automatically becomes a structured meeting note in the right context, linked to prior meetings, people, open loops and decisions.
+
+- **F11 — Automatic tags**: content-derived tags on every note for filtering and search, editable by the owner.
+- **F12 — Graph explorer**: an interactive view of how people, companies, topics, tags, notes, meetings and decisions connect, with focus mode from any item.
+
 ### Out of scope (this release)
 - Real-time collaboration inside one note; shared notebooks with multiple concurrent editors.
 - Billing or metering for AI usage beyond visibility.

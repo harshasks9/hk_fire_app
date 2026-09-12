@@ -7,10 +7,12 @@ import { getMeeting } from '@/lib/queries'
 import { meetingPrep } from '@/lib/prep'
 import { MeetingDetailActions } from '@/components/meetings/MeetingDetailActions'
 import { Transcript } from '@/components/meetings/Transcript'
+import { IngestBanner } from '@/components/meetings/IngestBanner'
+import { TagChips } from '@/components/notes/TagChips'
 import { AiSummary, TaskRow, LoopRow, FactList, DecisionCard, MeetingRow, EntityChip } from '@/components/entities'
 import { AskInline } from '@/components/ask/AskInline'
 import { formatDate, formatTime, isToday } from '@/lib/util'
-import { MapPin, Users } from 'lucide-react'
+import { MapPin, Users, FileAudio, Share2 } from 'lucide-react'
 
 export const dynamic = 'force-dynamic'
 
@@ -32,6 +34,7 @@ export default async function MeetingPage({ params }: { params: Promise<{ id: st
               <span className={isToday(m.startsAt) ? 'font-medium text-accent' : ''}>{isToday(m.startsAt) ? 'Today' : formatDate(m.startsAt, { weekday: 'long', month: 'long', day: 'numeric' })} · {formatTime(m.startsAt)}{m.endsAt ? `–${formatTime(m.endsAt)}` : ''}</span>
               {m.location ? <span className="inline-flex items-center gap-1"><MapPin className="h-3 w-3" />{m.location}</span> : null}
               <Badge tone={m.status === 'live' ? 'danger' : m.status === 'upcoming' ? 'accent' : 'neutral'}>{m.status}</Badge>
+              <Link href={`/graph?focus=meeting:${m.id}`} className="inline-flex items-center gap-1 hover:text-fg"><Share2 className="h-3 w-3" /> graph</Link>
             </div>
             <h1 className="text-[28px] font-semibold leading-tight tracking-[-0.02em]">{m.title}</h1>
             <div className="mt-2 flex flex-wrap items-center gap-2">
@@ -40,11 +43,20 @@ export default async function MeetingPage({ params }: { params: Promise<{ id: st
                 <Link key={p.id} href={`/people/${p.id}`} className="inline-flex items-center gap-1.5 rounded-md border border-border px-1.5 py-0.5 text-[12px] font-medium text-fg-2 hover:bg-surface-2 hover:text-fg"><Avatar name={p.name} size={16} />{p.name}</Link>
               ))}
               {!m.participants.length ? <span className="inline-flex items-center gap-1 text-[12.5px] text-fg-3"><Users className="h-3.5 w-3.5" /> Participants are detected from notes</span> : null}
+              {note && (note.note.tags?.length || note.note.manualTags?.length) ? <TagChips tags={[...(note.note.manualTags ?? []), ...(note.note.tags ?? [])]} max={8} /> : null}
             </div>
           </div>
         </div>
         <div className="mt-4"><MeetingDetailActions meetingId={m.id} status={m.status} noteId={m.noteId} followUpEmail={m.followUpEmail} executiveReadout={m.executiveReadout} /></div>
       </header>
+
+      {m.ingestStatus && m.ingestStatus !== 'done' ? <IngestBanner initial={{ meetingId: m.id, noteId: m.noteId, title: m.title, status: m.ingestStatus, error: m.ingestError, stageAt: m.ingestStageAt?.toISOString() ?? null, hasRecording: Boolean(m.recordingAttachmentId) }} /> : null}
+      {m.recordingAttachmentId ? (
+        <div className="mb-6 flex flex-wrap items-center gap-3 rounded-xl border border-border px-4 py-3">
+          <span className="inline-flex items-center gap-1.5 text-[12.5px] font-medium text-fg-2"><FileAudio className="h-4 w-4 text-accent" /> Recording{m.durationSeconds ? <span className="text-fg-3"> · {Math.round(m.durationSeconds / 60)} min</span> : null}</span>
+          <audio controls preload="none" src={`/api/attachments/${m.recordingAttachmentId}`} className="h-9 min-w-0 flex-1" />
+        </div>
+      ) : null}
 
       {prep ? (
         <div className="mb-8 rounded-xl border border-dashed border-accent-soft-2 bg-accent-soft/40 px-5 py-4">
@@ -93,7 +105,11 @@ export default async function MeetingPage({ params }: { params: Promise<{ id: st
             {note.decisions.length ? <Section title="Decisions">{note.decisions.map((x) => <DecisionCard key={x.id} d={x} />)}</Section> : null}
             {note.tasks.length ? <Section title="Action items">{note.tasks.map((t) => <TaskRow key={t.id} task={t} sourceTitle={m.title} showEntity={false} />)}</Section> : null}
             {note.commitments.length ? <Section title="Questions & unresolved">{note.commitments.map((c) => <LoopRow key={c.id} loop={{ ...c, sourceTitle: m.title }} showCompany={false} />)}</Section> : null}
-            {d.transcript ? <Section title="Transcript"><Transcript segments={d.transcript.segments} text={d.transcript.text} /></Section> : null}
+            {d.transcript ? (
+              <Section title="Transcript" hint={Object.keys(d.transcript.speakerMap ?? {}).length ? `speakers identified: ${Object.entries(d.transcript.speakerMap).map(([k, v]) => `${k} → ${v}`).join(', ')}` : undefined}>
+                <Transcript segments={d.transcript.segments} text={d.transcript.text} />
+              </Section>
+            ) : null}
             <Section title="Notes" action={<Link href={`/notes/${note.note.id}`} className="text-[12.5px] text-accent hover:underline">Open in editor</Link>}>
               <div className="prose-static rounded-xl border border-border px-4 py-3 text-[14px] text-fg-2">
                 {note.note.contentText.split('\n').filter(Boolean).slice(0, 14).map((l, i) => <p key={i}>{l}</p>)}

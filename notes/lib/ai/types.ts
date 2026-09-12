@@ -25,10 +25,12 @@ export interface Extraction {
   questions: string[]
   dates: ExtractedDate[]
   opportunities: string[]
+  /** 4-8 lowercase kebab-case topical tags, e.g. pricing, hiring, q4-planning. */
+  tags: string[]
 }
 
 export const emptyExtraction = (): Extraction => ({
-  summary: [], keyPoints: [], people: [], companies: [], projects: [], topics: [], decisions: [], actions: [], numbers: [], commitments: [], risks: [], questions: [], dates: [], opportunities: [],
+  summary: [], keyPoints: [], people: [], companies: [], projects: [], topics: [], decisions: [], actions: [], numbers: [], commitments: [], risks: [], questions: [], dates: [], opportunities: [], tags: [],
 })
 
 export interface KnownEntity { id: string; name: string; type: 'person' | 'company' | 'project' | 'topic'; aliases: string[]; attributes?: Record<string, string | undefined> }

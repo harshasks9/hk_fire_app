@@ -6,6 +6,7 @@ import { docToText, markdownToDoc } from './markdown'
 import { uid, wordCount, truncate } from './util'
 import { processNote, deleteDerived } from './pipeline'
 import type { NoteKind } from './db/schema'
+import { normalizeTags } from './tags'
 
 export interface CreateNoteInput { contextId: string; title?: string; markdown?: string; contentJson?: unknown; kind?: NoteKind; source?: string; sourceUrl?: string; meetingId?: string; researchProjectId?: string; status?: 'inbox' | 'processed'; createdAt?: Date }
 
@@ -30,7 +31,7 @@ export function scheduleProcessing(noteId: string) {
   }
 }
 
-export async function updateNote(id: string, patch: { title?: string; contentJson?: unknown; favorite?: boolean; privacy?: 'normal' | 'private' | 'ai_excluded'; researchProjectId?: string | null; kind?: NoteKind; status?: 'inbox' | 'processed' | 'archived' }, opts: { process?: boolean } = {}) {
+export async function updateNote(id: string, patch: { title?: string; contentJson?: unknown; favorite?: boolean; privacy?: 'normal' | 'private' | 'ai_excluded'; researchProjectId?: string | null; kind?: NoteKind; status?: 'inbox' | 'processed' | 'archived'; manualTags?: string[]; tags?: string[] }, opts: { process?: boolean } = {}) {
   const db = await getDb()
   if (opts.process && patch.contentJson !== undefined) {
     // Version history: the state before the first processed edit is kept as the original.
@@ -50,6 +51,8 @@ export async function updateNote(id: string, patch: { title?: string; contentJso
   if (patch.researchProjectId !== undefined) set.researchProjectId = patch.researchProjectId
   if (patch.kind !== undefined) set.kind = patch.kind
   if (patch.status !== undefined) set.status = patch.status
+  if (patch.manualTags !== undefined) set.manualTags = normalizeTags(patch.manualTags).slice(0, 30)
+  if (patch.tags !== undefined) set.tags = normalizeTags(patch.tags).slice(0, 30)
   await db.update(schema.notes).set(set).where(eq(schema.notes.id, id))
   if (opts.process && patch.contentJson !== undefined) {
     // Version history: a processed save is a natural checkpoint.

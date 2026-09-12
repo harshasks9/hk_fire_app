@@ -1,7 +1,7 @@
 'use client'
 import * as React from 'react'
 import { useRouter } from 'next/navigation'
-import { Star, MoreHorizontal, Trash2, RefreshCw, EyeOff, Lock, Unlock, FlaskConical, Download, History, Globe, LayoutTemplate } from 'lucide-react'
+import { Star, MoreHorizontal, Trash2, RefreshCw, EyeOff, Lock, Unlock, FlaskConical, Download, History, Globe, LayoutTemplate, Share2 } from 'lucide-react'
 import { NoteHistory } from './NoteHistory'
 import { ShareDialog } from './ShareDialog'
 import { SaveTemplateDialog } from './SaveTemplateDialog'
@@ -35,6 +35,7 @@ export function NoteActions({ noteId, favorite, privacy, researchProjects, resea
           { label: 'Share read-only link…', icon: <Globe className="h-3.5 w-3.5" />, onSelect: () => setDialog('share') },
           { label: 'Version history…', icon: <History className="h-3.5 w-3.5" />, onSelect: () => setDialog('history') },
           { label: 'Save as template…', icon: <LayoutTemplate className="h-3.5 w-3.5" />, onSelect: () => setDialog('template') },
+          { label: 'See in the graph', icon: <Share2 className="h-3.5 w-3.5" />, href: `/graph?focus=note:${noteId}` },
           { label: 'Export (JSON)', icon: <Download className="h-3.5 w-3.5" />, href: `/api/notes/${noteId}` },
           { label: 'Move to Trash', icon: <Trash2 className="h-3.5 w-3.5" />, danger: true, onSelect: async () => { if (!confirm('Move this note to Trash? You can restore it within 30 days.')) return; await api(`/api/notes/${noteId}`, { method: 'DELETE' }); router.push('/notes'); router.refresh() } },
         ]}

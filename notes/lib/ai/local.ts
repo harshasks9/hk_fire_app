@@ -471,7 +471,38 @@ export function localExtract(text: string, ctx: ExtractContext): Extraction {
     const firstLine = body.split('\n').map(clean).find((l) => l.length > 3) ?? ''
     ex.title = truncate(stripTrailing(firstLine.replace(/^#+\s*/, '')), 80)
   }
+  ex.tags = localTags(body, ex)
   return ex
+}
+
+const TAG_HINTS: [RegExp, string][] = [
+  [/\b(pric(e|ing)|discount|quote|rate card)\b/i, 'pricing'],
+  [/\b(hir(e|ing)|recruit|candidate|interview|offer letter)\b/i, 'hiring'],
+  [/\b(renew(al)?|contract|commit(ment)?s? term)\b/i, 'renewal'],
+  [/\b(budget|forecast|revenue|arr|mrr|margin)\b/i, 'finance'],
+  [/\b(roadmap|launch|release|ship(ping)?|milestone)\b/i, 'roadmap'],
+  [/\b(bug|incident|outage|latency|downtime)\b/i, 'incident'],
+  [/\b(security|questionnaire|compliance|soc ?2|gdpr)\b/i, 'security'],
+  [/\b(legal|redline|msa|nda|signature)\b/i, 'legal'],
+  [/\b(design|mockup|prototype|ux)\b/i, 'design'],
+  [/\b(architecture|migration|infra(structure)?|api)\b/i, 'architecture'],
+  [/\b(customer|client|account)\b/i, 'customer'],
+  [/\b(poc|pilot|proof of concept|trial)\b/i, 'pilot'],
+  [/\b(okr|goals?|planning|quarter(ly)?|q[1-4])\b/i, 'planning'],
+  [/\b(1:1|one[- ]on[- ]one|career|feedback)\b/i, 'one-on-one'],
+  [/\b(health|doctor|workout|sleep)\b/i, 'health'],
+  [/\b(travel|flight|hotel|trip)\b/i, 'travel'],
+]
+
+/** Cheap topical tags: matched vocabulary plus the topics and projects already found. */
+export function localTags(text: string, ex: Extraction): string[] {
+  const out = new Set<string>()
+  for (const [re, tag] of TAG_HINTS) if (re.test(text)) out.add(tag)
+  for (const t of [...ex.topics, ...ex.projects]) {
+    const slug = t.name.toLowerCase().normalize('NFKD').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '')
+    if (slug && slug.length <= 32) out.add(slug)
+  }
+  return [...out].slice(0, 8)
 }
 
 export const localProvider: AIProvider = {

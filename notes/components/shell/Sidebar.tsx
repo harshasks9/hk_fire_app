@@ -2,7 +2,7 @@
 import * as React from 'react'
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
-import { Home, Inbox, FileText, CalendarDays, CheckSquare, Users, Hash, FlaskConical, Search, Sparkles, Settings, PanelLeftClose, PanelLeftOpen, Plus, Building2, Star, Clock, GitBranch, Repeat, ChevronsUpDown, Check, ShieldCheck, CalendarRange } from 'lucide-react'
+import { Home, Inbox, FileText, CalendarDays, CheckSquare, Users, Hash, FlaskConical, Search, Sparkles, Settings, PanelLeftClose, PanelLeftOpen, Plus, Building2, Star, Clock, GitBranch, Repeat, ChevronsUpDown, Check, ShieldCheck, CalendarRange, Tag, Share2 } from 'lucide-react'
 import { setShell, useShell } from './store'
 import { cx } from '@/lib/util'
 import { Avatar } from '@/components/ui'
@@ -31,12 +31,14 @@ const NAV = [
   { href: '/people', label: 'People', icon: Users },
   { href: '/companies', label: 'Companies', icon: Building2 },
   { href: '/topics', label: 'Topics', icon: Hash },
+  { href: '/tags', label: 'Tags', icon: Tag },
   { href: '/decisions', label: 'Decisions', icon: GitBranch },
   { href: '/loops', label: 'Open loops', icon: Repeat },
   { href: '/research', label: 'Research', icon: FlaskConical },
   { href: '/search', label: 'Search', icon: Search },
   { href: '/ask', label: 'Ask', icon: Sparkles },
   { href: '/review', label: 'Weekly review', icon: CalendarRange },
+  { href: '/graph', label: 'Graph', icon: Share2 },
 ]
 
 export function Sidebar(props: SidebarProps) {

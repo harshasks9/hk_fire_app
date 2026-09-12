@@ -2,6 +2,7 @@
 import * as React from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
+import { TagChips } from '@/components/notes/TagChips'
 import { Users, Building2, Hash, FolderKanban, FileText, CalendarDays, Mic, Zap, Link2, Image as ImageIcon, FileUp, Mail, Star, Check, ExternalLink, GitBranch, Repeat, CheckSquare, ArrowRight, Sparkles, X, TrendingUp } from 'lucide-react'
 import { Badge, Popover, AiMark, Button, useToast, Avatar } from '@/components/ui'
 import { api } from '@/lib/client'
@@ -207,7 +208,7 @@ export function Timeline({ events, limit = 12 }: { events: { id: string; kind: s
 }
 
 /* ---------------------------------------------------------------- notes list */
-export function NoteRow({ note, showEntities = true, dense }: { note: { id: string; title: string; kind: string; updatedAt: Date | string; preview: string; favorite?: boolean; status?: string; entities?: { id: string; name: string; type: EntityType }[]; wordCount?: number; source?: string }; showEntities?: boolean; dense?: boolean }) {
+export function NoteRow({ note, showEntities = true, dense }: { note: { id: string; title: string; kind: string; updatedAt: Date | string; preview: string; favorite?: boolean; status?: string; entities?: { id: string; name: string; type: EntityType }[]; wordCount?: number; source?: string; tags?: string[] }; showEntities?: boolean; dense?: boolean }) {
   return (
     <Link href={`/notes/${note.id}`} className={cx('group -mx-3 flex items-start gap-3 rounded-lg px-3 row-hover', dense ? 'py-2' : 'py-2.5')}>
       <NoteKindIcon kind={note.kind} className="mt-[3px] h-4 w-4 shrink-0 text-fg-3" />
@@ -218,9 +219,10 @@ export function NoteRow({ note, showEntities = true, dense }: { note: { id: stri
           {note.status === 'processing' || note.status === 'inbox' ? <Badge tone="accent">{note.status === 'processing' ? 'AI processing' : 'new'}</Badge> : null}
         </div>
         {!dense && note.preview ? <p className="mt-0.5 line-clamp-1 text-[13px] text-fg-2">{note.preview}</p> : null}
-        {showEntities && note.entities?.length ? (
+        {showEntities && (note.entities?.length || note.tags?.length) ? (
           <div className="mt-1.5 flex flex-wrap items-center gap-1">
-            {note.entities.slice(0, 4).map((e) => <span key={e.id} className="inline-flex items-center gap-1 rounded bg-surface-2 px-1.5 py-0.5 text-[11.5px] text-fg-2"><EntityIcon type={e.type} className="h-2.5 w-2.5 text-fg-3" />{e.name}</span>)}
+            {(note.entities ?? []).slice(0, 4).map((e) => <span key={e.id} className="inline-flex items-center gap-1 rounded bg-surface-2 px-1.5 py-0.5 text-[11.5px] text-fg-2"><EntityIcon type={e.type} className="h-2.5 w-2.5 text-fg-3" />{e.name}</span>)}
+            {note.tags?.length ? <TagChips tags={note.tags} max={4} plain /> : null}
           </div>
         ) : null}
       </div>

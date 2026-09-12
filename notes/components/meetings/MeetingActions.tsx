@@ -1,7 +1,7 @@
 'use client'
 import * as React from 'react'
 import { useRouter } from 'next/navigation'
-import { Radio, CalendarPlus } from 'lucide-react'
+import { Radio, CalendarPlus, FileAudio } from 'lucide-react'
 import { Button, Input, useToast } from '@/components/ui'
 import { api } from '@/lib/client'
 
@@ -22,6 +22,7 @@ export function MeetingActions() {
   }
   return (
     <div className="relative flex items-center gap-1.5">
+      <Button variant="secondary" size="md" onClick={() => router.push('/meetings/import')}><FileAudio className="h-4 w-4" /> Import recording</Button>
       <Button variant="secondary" size="md" onClick={() => setOpen((o) => !o)}><CalendarPlus className="h-4 w-4" /> Schedule</Button>
       <Button variant="primary" size="md" onClick={() => router.push('/meetings/live')}><Radio className="h-4 w-4" /> Live meeting</Button>
       {open ? (

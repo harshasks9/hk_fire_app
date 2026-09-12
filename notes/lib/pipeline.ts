@@ -13,7 +13,7 @@ import type { Entity, EntityType, Note, NoteSummary } from './db/schema'
 import { getProvider } from './ai/provider'
 import { embedTexts } from './ai/embeddings'
 import { matchKnownEntities, localExtract } from './ai/local'
-import type { Extraction, KnownEntity } from './ai/types'
+import { emptyExtraction, type Extraction, type KnownEntity } from './ai/types'
 import { chunkText, slugify, uid, truncate } from './util'
 import { jaccard, similarText } from './similarity'
 import { refreshInsights } from './insights'
@@ -21,6 +21,7 @@ import { parseDueHint } from './dates'
 import { notebookOfContext, notebookOwnerName } from './tenant'
 import { notebookAiScope } from './ai/notebook-config'
 import { runWithAiScope } from './ai/scope'
+import { deriveTags } from './tags'
 
 const DEFAULT_USER_NAME = process.env.USER_NAME || 'Harsha'
 
@@ -94,21 +95,36 @@ async function upsertTimeline(contextId: string, entityId: string, kind: string,
     .onConflictDoUpdate({ target: [schema.timelineEvents.entityId, schema.timelineEvents.kind, schema.timelineEvents.refId], set: { title, description: opts.description, occurredAt } })
 }
 
+/** Case-insensitive dedupe that keeps first occurrences (transcripts and structured notes repeat themselves). */
+function uniq(list: string[]): string[] {
+  const seen = new Set<string>()
+  return list.filter((s) => {
+    const k = s.trim().toLowerCase().replace(/[.!?]+$/, '')
+    if (!k || seen.has(k)) return false
+    seen.add(k)
+    return true
+  })
+}
+
 export function summaryFromExtraction(ex: Extraction, provider: string): NoteSummary {
   return {
-    summary: ex.summary.slice(0, 6),
-    keyPoints: ex.keyPoints.slice(0, 8),
-    decisions: ex.decisions.filter((d) => d.status !== 'proposed').map((d) => d.statement).slice(0, 6),
-    actions: ex.actions.map((a) => (a.owner ? `${a.owner}: ${a.title}` : a.title)).slice(0, 10),
-    risks: ex.risks.slice(0, 5),
-    numbers: ex.numbers.map((n) => `${n.entity ? n.entity + ' · ' : ''}${n.label}: ${n.value}`).slice(0, 8),
-    questions: ex.questions.slice(0, 5),
+    summary: uniq(ex.summary).slice(0, 6),
+    keyPoints: uniq(ex.keyPoints).slice(0, 8),
+    decisions: uniq(ex.decisions.filter((d) => d.status !== 'proposed').map((d) => d.statement)).slice(0, 6),
+    actions: uniq(ex.actions.map((a) => (a.owner ? `${a.owner}: ${a.title}` : a.title))).slice(0, 10),
+    risks: uniq(ex.risks).slice(0, 5),
+    numbers: uniq(ex.numbers.map((n) => `${n.entity ? n.entity + ' · ' : ''}${n.label}: ${n.value}`)).slice(0, 8),
+    questions: uniq(ex.questions).slice(0, 5),
     generatedAt: new Date().toISOString(),
     provider,
   }
 }
 
-export async function processNote(noteId: string): Promise<ProcessResult | null> {
+/**
+ * @param opts.extraction A ready-made extraction (e.g. from the recording structurer) so the note is filed
+ *   without a second model call. `opts.provider` names where it came from for the summary's provenance.
+ */
+export async function processNote(noteId: string, opts: { extraction?: Extraction; provider?: string } = {}): Promise<ProcessResult | null> {
   const db = await getDb()
   const note = (await db.select().from(schema.notes).where(eq(schema.notes.id, noteId)))[0]
   if (!note || note.deletedAt) return null
@@ -130,8 +146,11 @@ export async function processNote(noteId: string): Promise<ProcessResult | null>
     const known = await knownEntitiesFor(note.contextId)
     const ctx = { title: note.title || undefined, kind: note.kind, knownEntities: known, userName: USER_NAME }
     let ex: Extraction | null = null
-    let usedProvider = provider.name
-    if (text.trim().length >= 3) {
+    let usedProvider: string = provider.name
+    if (opts.extraction) {
+      ex = { ...emptyExtraction(), ...opts.extraction }
+      usedProvider = opts.provider ?? provider.name
+    } else if (text.trim().length >= 3) {
       try {
         ex = await provider.extract(note.contentText || note.title, ctx)
       } catch (err) {
@@ -310,7 +329,8 @@ export async function processNote(noteId: string): Promise<ProcessResult | null>
     /* ------------------------------ summary ---------------------------- */
     const summary = summaryFromExtraction(ex, usedProvider)
     const longEnough = (note.contentText?.length ?? 0) > 240 || ex.actions.length > 0 || ex.decisions.length > 0
-    await db.update(schema.notes).set({ summary: longEnough ? summary : null, status: 'processed', aiProcessedAt: new Date(), processingError: null }).where(eq(schema.notes.id, noteId))
+    const tags = deriveTags(ex, note)
+    await db.update(schema.notes).set({ summary: longEnough ? summary : null, tags, status: 'processed', aiProcessedAt: new Date(), processingError: null }).where(eq(schema.notes.id, noteId))
     if (note.meetingId) await db.update(schema.meetings).set({ summary, updatedAt: new Date() }).where(eq(schema.meetings.id, note.meetingId))
 
     /* ---------------------------- embeddings --------------------------- */
