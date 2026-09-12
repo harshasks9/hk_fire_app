@@ -16,7 +16,8 @@ const variants: Record<ButtonVariant, string> = {
   subtle: 'bg-surface-2 text-fg hover:bg-surface-3',
   danger: 'text-danger hover:bg-danger/10',
 }
-const sizes: Record<ButtonSize, string> = { sm: 'h-7 px-2.5 text-[13px]', md: 'h-8 px-3 text-[13.5px]', lg: 'h-10 px-4 text-[15px]', icon: 'h-8 w-8 p-0' }
+// Touch screens get taller targets (pointer-coarse) without changing the desktop density.
+const sizes: Record<ButtonSize, string> = { sm: 'h-7 px-2.5 text-[13px] pointer-coarse:h-9 pointer-coarse:px-3', md: 'h-8 px-3 text-[13.5px] pointer-coarse:h-10', lg: 'h-10 px-4 text-[15px] pointer-coarse:h-11', icon: 'h-8 w-8 p-0 pointer-coarse:h-10 pointer-coarse:w-10' }
 
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(function Button({ className, variant = 'secondary', size = 'md', loading, children, ...props }, ref) {
   return (
@@ -136,9 +137,9 @@ export function Divider({ className }: { className?: string }) {
 /* ---------------------------------------------------------------- Tabs (link-based) */
 export function LinkTabs({ tabs, active, className }: { tabs: { id: string; label: string; href: string; count?: number }[]; active: string; className?: string }) {
   return (
-    <nav className={cx('flex gap-1 overflow-x-auto border-b border-border', className)} aria-label="Views">
+    <nav className={cx('no-scrollbar -mx-5 flex gap-1 overflow-x-auto border-b border-border px-5 sm:mx-0 sm:px-0', className)} aria-label="Views">
       {tabs.map((t) => (
-        <Link key={t.id} href={t.href} className={cx('-mb-px flex items-center gap-1.5 whitespace-nowrap border-b-2 px-2.5 py-2 text-[13.5px] transition', active === t.id ? 'border-fg text-fg font-medium' : 'border-transparent text-fg-2 hover:text-fg')}>
+        <Link key={t.id} href={t.href} className={cx('-mb-px flex items-center gap-1.5 whitespace-nowrap border-b-2 px-2.5 py-2 text-[13.5px] transition pointer-coarse:py-2.5', active === t.id ? 'border-fg text-fg font-medium' : 'border-transparent text-fg-2 hover:text-fg')}>
           {t.label}
           {typeof t.count === 'number' && t.count > 0 ? <span className={cx('rounded px-1 text-[11px]', active === t.id ? 'bg-surface-3 text-fg-2' : 'bg-surface-2 text-fg-3')}>{t.count}</span> : null}
         </Link>

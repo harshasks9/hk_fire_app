@@ -2,7 +2,7 @@
 import { useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import { setShell } from './store'
-import { api } from '@/lib/client'
+import { createNoteAndOpen } from '@/lib/offline/notes-client'
 
 export function Shortcuts() {
   const router = useRouter()
@@ -19,11 +19,10 @@ export function Shortcuts() {
       if (e.altKey && (e.code === 'Space' || e.key === ' ')) { e.preventDefault(); setShell({ captureOpen: true }); return }
       if (mod && e.key.toLowerCase() === 'n' && !e.shiftKey) {
         e.preventDefault()
-        const n = await api<{ id: string }>('/api/notes', { method: 'POST', json: {} })
-        router.push(`/notes/${n.id}`)
+        await createNoteAndOpen(router)
         return
       }
-      if (e.key === 'Escape') { setShell({ commandOpen: false, captureOpen: false, mobileMenuOpen: false }) }
+      if (e.key === 'Escape') { setShell({ commandOpen: false, captureOpen: false, mobileMenuOpen: false, panelSheet: false }) }
       if (!mod && !typing && e.key === '/' ) { e.preventDefault(); setShell({ commandOpen: true, commandQuery: '' }) }
     }
     window.addEventListener('keydown', onKey)

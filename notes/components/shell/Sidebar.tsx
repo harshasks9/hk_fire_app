@@ -5,8 +5,10 @@ import { usePathname, useRouter } from 'next/navigation'
 import { Home, Inbox, FileText, CalendarDays, CheckSquare, Users, Hash, FlaskConical, Search, Sparkles, Settings, PanelLeftClose, PanelLeftOpen, Plus, Building2, Star, Clock, GitBranch, Repeat, ChevronsUpDown, Check } from 'lucide-react'
 import { setShell, useShell } from './store'
 import { cx } from '@/lib/util'
-import { api } from '@/lib/client'
 import { Avatar } from '@/components/ui'
+import { api } from '@/lib/client'
+import { createNoteAndOpen } from '@/lib/offline/notes-client'
+import { OfflineBadge } from '@/components/offline/OfflineBadge'
 
 export interface SidebarProps {
   contexts: { id: string; slug: string; name: string; kind: string }[]
@@ -40,10 +42,7 @@ export function Sidebar(props: SidebarProps) {
   const router = useRouter()
   const isActive = (href: string) => (href === '/' ? pathname === '/' : pathname.startsWith(href))
 
-  const newNote = async () => {
-    const n = await api<{ id: string }>('/api/notes', { method: 'POST', json: {} })
-    router.push(`/notes/${n.id}`)
-  }
+  const newNote = () => createNoteAndOpen(router)
 
   return (
     <nav className={cx('hidden h-dvh shrink-0 flex-col border-r border-border bg-surface transition-[width] duration-200 md:flex', collapsed ? 'w-[var(--sidebar-collapsed-w)]' : 'w-[var(--sidebar-w)]')} aria-label="Primary">
@@ -60,6 +59,7 @@ export function Sidebar(props: SidebarProps) {
           {!collapsed ? <span className="flex-1 text-left">New note</span> : null}
           {!collapsed ? <span className="kbd">⌘N</span> : null}
         </button>
+        {!collapsed ? <OfflineBadge className="mt-2 w-full justify-center" /> : null}
       </div>
 
       <div className="min-h-0 flex-1 overflow-y-auto px-2 pb-3">
@@ -145,7 +145,7 @@ export function ContextSwitcher({ contexts, active, className }: { contexts: Sid
   }
   return (
     <div ref={ref} className={cx('relative', className)}>
-      <button onClick={() => setOpen((o) => !o)} className="flex items-center gap-1.5 rounded-lg px-1.5 py-1 text-[13.5px] font-semibold hover:bg-surface-2" aria-haspopup="listbox" aria-expanded={open}>
+      <button onClick={() => setOpen((o) => !o)} className="flex items-center gap-1.5 rounded-lg px-1.5 py-1 text-[13.5px] font-semibold hover:bg-surface-2 pointer-coarse:min-h-10 pointer-coarse:px-2" aria-haspopup="listbox" aria-expanded={open}>
         <span className={cx('inline-block h-2 w-2 rounded-full', dotFor(active.kind))} />
         {active.name}
         <ChevronsUpDown className="h-3.5 w-3.5 text-fg-3" />

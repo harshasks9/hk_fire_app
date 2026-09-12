@@ -13,13 +13,14 @@ import TableRow from '@tiptap/extension-table-row'
 import TableCell from '@tiptap/extension-table-cell'
 import TableHeader from '@tiptap/extension-table-header'
 import Mention from '@tiptap/extension-mention'
-import { Bold, Italic, Code, Link2, Sparkles, Wand2, Scissors, Lightbulb, ListChecks, GitBranch, MessageCircleQuestion, X, Check, ArrowDownToLine } from 'lucide-react'
+import { Bold, Italic, Code, Link2, Sparkles, Wand2, Scissors, Lightbulb, ListChecks, GitBranch, MessageCircleQuestion, X, Check, ArrowDownToLine, Heading2, List, ListTodo, Quote, Undo2, Redo2, ImagePlus, SlashSquare, WifiOff } from 'lucide-react'
 import { Callout, HighlightRange } from './extensions'
 import { SlashCommand, slashItems, mentionSuggestion } from './SlashMenu'
 import { api } from '@/lib/client'
 import { cx, relativeTime } from '@/lib/util'
 import { useToast, Spinner, AiMark } from '@/components/ui'
 import type { RewriteMode } from '@/lib/ai/types'
+import { isNetworkError, pendingPatchFor, savePatchOffline, useOffline } from '@/lib/offline/sync'
 
 export interface NoteEditorProps {
   noteId: string
@@ -40,7 +41,8 @@ export function NoteEditor({ noteId, initialTitle, initialContent, highlight, re
   const router = useRouter()
   const toast = useToast()
   const [title, setTitle] = React.useState(initialTitle)
-  const [saveState, setSaveState] = React.useState<'idle' | 'saving' | 'saved'>('idle')
+  const [saveState, setSaveState] = React.useState<'idle' | 'saving' | 'saved' | 'offline'>('idle')
+  const { online } = useOffline()
   const [savedAt, setSavedAt] = React.useState<Date | null>(null)
   const [aiBusy, setAiBusy] = React.useState<string | null>(null)
   const [aiResult, setAiResult] = React.useState<AiResult | null>(null)
@@ -55,6 +57,13 @@ export function NoteEditor({ noteId, initialTitle, initialContent, highlight, re
 
   const persist = React.useCallback(async (patch: { title?: string; contentJson?: unknown }, process = false) => {
     setSaveState('saving')
+    const keepLocally = async () => {
+      // No network: keep the latest content on this device; it is replayed when the connection returns.
+      await savePatchOffline({ noteId, title: patch.title ?? titleValue.current, contentJson: patch.contentJson ?? editorRef.current?.getJSON() })
+      setSavedAt(new Date())
+      setSaveState('offline')
+    }
+    if (typeof navigator !== 'undefined' && !navigator.onLine) { await keepLocally(); return }
     try {
       await api(`/api/notes/${noteId}`, { method: 'PATCH', json: { ...patch, process } })
       const at = new Date()
@@ -63,6 +72,7 @@ export function NoteEditor({ noteId, initialTitle, initialContent, highlight, re
       onSaved?.(at)
       if (process) setTimeout(() => router.refresh(), 2500)
     } catch (e) {
+      if (isNetworkError(e)) { await keepLocally(); return }
       setSaveState('idle')
       toast.push({ text: `Save failed: ${String(e)}`, tone: 'danger' })
     }
@@ -141,6 +151,22 @@ export function NoteEditor({ noteId, initialTitle, initialContent, highlight, re
   })
   const editorRef = React.useRef<Editor | null>(null)
   editorRef.current = editor
+
+  // An edit made offline that has not synced yet is newer than what the server rendered: show it.
+  React.useEffect(() => {
+    if (!editor || readOnly) return
+    let alive = true
+    pendingPatchFor(noteId).then((p) => {
+      if (!alive || !p) return
+      editor.commands.setContent(p.contentJson as object, false)
+      setTitle(p.title)
+      titleValue.current = p.title
+      setSaveState('offline')
+      setSavedAt(new Date(p.updatedAt))
+    })
+    return () => { alive = false }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [editor, noteId])
 
   async function uploadFile(file: File) {
     if (!editorRef.current) return
@@ -228,18 +254,19 @@ export function NoteEditor({ noteId, initialTitle, initialContent, highlight, re
         placeholder="Untitled"
         rows={1}
         readOnly={readOnly}
-        className="w-full resize-none bg-transparent text-[30px] font-semibold leading-tight tracking-[-0.02em] outline-none placeholder:text-fg-3"
+        data-large
+        className="w-full resize-none bg-transparent text-[26px] font-semibold leading-tight tracking-[-0.02em] outline-none placeholder:text-fg-3 sm:text-[30px]"
       />
       <div className="mb-5 mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 text-[12.5px] text-fg-3">
         {meta}
-        <span className={cx('transition', saveState === 'saving' && 'text-fg-2')}>{saveState === 'saving' ? '· Saving…' : savedAt ? `· Saved ${relativeTime(savedAt)}` : ''}</span>
+        <span className={cx('transition', saveState === 'saving' && 'text-fg-2', saveState === 'offline' && 'text-warning')}>{saveState === 'saving' ? '· Saving…' : saveState === 'offline' ? <span className="inline-flex items-center gap-1"><WifiOff className="h-3 w-3" /> Saved on this device{online ? ' · syncing shortly' : ' · syncs when online'}</span> : savedAt ? `· Saved ${relativeTime(savedAt)}` : ''}</span>
         {aiBusy ? <span className="inline-flex items-center gap-1 text-accent"><Spinner className="h-3 w-3" /> AI working…</span> : null}
       </div>
       {summary ? <div className="mb-6">{summary}</div> : null}
 
       {editor ? (
         <BubbleMenu editor={editor} tippyOptions={{ duration: 120, placement: 'top', maxWidth: 'none' }} shouldShow={({ editor, from, to }) => from !== to && !editor.isActive('image') && !readOnly}>
-          <div className="flex items-center gap-0.5 rounded-xl border border-border bg-surface p-1 shadow-pop">
+          <div className="no-scrollbar flex max-w-[calc(100vw-24px)] items-center gap-0.5 overflow-x-auto rounded-xl border border-border bg-surface p-1 shadow-pop">
             <Tb active={editor.isActive('bold')} onClick={() => editor.chain().focus().toggleBold().run()} title="Bold"><Bold className="h-3.5 w-3.5" /></Tb>
             <Tb active={editor.isActive('italic')} onClick={() => editor.chain().focus().toggleItalic().run()} title="Italic"><Italic className="h-3.5 w-3.5" /></Tb>
             <Tb active={editor.isActive('code')} onClick={() => editor.chain().focus().toggleCode().run()} title="Code"><Code className="h-3.5 w-3.5" /></Tb>
@@ -264,6 +291,7 @@ export function NoteEditor({ noteId, initialTitle, initialContent, highlight, re
         </div>
       ) : null}
 
+      {editor && !readOnly ? <MobileToolbar editor={editor} onUpload={() => { uploadKind.current = 'image'; fileInput.current?.click() }} /> : null}
       <EditorContent editor={editor} />
 
       {aiResult ? (
@@ -282,6 +310,41 @@ export function NoteEditor({ noteId, initialTitle, initialContent, highlight, re
           <p className="mt-2 text-[11.5px] text-fg-3">Nothing changes in your note until you choose an action.</p>
         </div>
       ) : null}
+    </div>
+  )
+}
+
+/**
+  Formatting bar for phones and tablets, where there are no keyboard shortcuts.
+  Sticks to the top of the scroll area while the note is being edited; buttons
+  keep the editor focused so the on-screen keyboard stays open.
+*/
+function MobileToolbar({ editor, onUpload }: { editor: Editor; onUpload: () => void }) {
+  const [, force] = React.useReducer((n: number) => n + 1, 0)
+  React.useEffect(() => {
+    editor.on('transaction', force)
+    return () => { editor.off('transaction', force) }
+  }, [editor])
+  const keep = (e: React.MouseEvent) => e.preventDefault()
+  const B = ({ active, label, onClick, children }: { active?: boolean; label: string; onClick: () => void; children: React.ReactNode }) => (
+    <button type="button" onMouseDown={keep} onClick={onClick} aria-label={label} title={label} className={cx('flex h-10 w-10 shrink-0 items-center justify-center rounded-lg transition', active ? 'bg-surface-3 text-fg' : 'text-fg-2 active:bg-surface-2')}>
+      {children}
+    </button>
+  )
+  return (
+    <div className="no-scrollbar sticky top-0 z-20 -mx-5 mb-2 flex items-center gap-0.5 overflow-x-auto border-b border-border bg-bg/95 px-3 py-1 backdrop-blur md:hidden">
+      <B label="Bold" active={editor.isActive('bold')} onClick={() => editor.chain().focus().toggleBold().run()}><Bold className="h-[18px] w-[18px]" /></B>
+      <B label="Italic" active={editor.isActive('italic')} onClick={() => editor.chain().focus().toggleItalic().run()}><Italic className="h-[18px] w-[18px]" /></B>
+      <B label="Heading" active={editor.isActive('heading', { level: 2 })} onClick={() => editor.chain().focus().toggleHeading({ level: 2 }).run()}><Heading2 className="h-[18px] w-[18px]" /></B>
+      <B label="Bullet list" active={editor.isActive('bulletList')} onClick={() => editor.chain().focus().toggleBulletList().run()}><List className="h-[18px] w-[18px]" /></B>
+      <B label="Task list" active={editor.isActive('taskList')} onClick={() => editor.chain().focus().toggleTaskList().run()}><ListTodo className="h-[18px] w-[18px]" /></B>
+      <B label="Quote" active={editor.isActive('blockquote')} onClick={() => editor.chain().focus().toggleBlockquote().run()}><Quote className="h-[18px] w-[18px]" /></B>
+      <B label="Link" active={editor.isActive('link')} onClick={() => { const url = window.prompt('Link URL', editor.getAttributes('link').href ?? 'https://'); if (url === null) return; if (!url) editor.chain().focus().unsetLink().run(); else editor.chain().focus().setLink({ href: url }).run() }}><Link2 className="h-[18px] w-[18px]" /></B>
+      <B label="Add image" onClick={onUpload}><ImagePlus className="h-[18px] w-[18px]" /></B>
+      <B label="Commands" onClick={() => editor.chain().focus().insertContent('/').run()}><SlashSquare className="h-[18px] w-[18px]" /></B>
+      <span className="mx-1 h-5 w-px shrink-0 bg-border" />
+      <B label="Undo" onClick={() => editor.chain().focus().undo().run()}><Undo2 className="h-[18px] w-[18px]" /></B>
+      <B label="Redo" onClick={() => editor.chain().focus().redo().run()}><Redo2 className="h-[18px] w-[18px]" /></B>
     </div>
   )
 }

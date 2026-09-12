@@ -7,6 +7,7 @@ export async function api<T = unknown>(path: string, init: RequestInit & { json?
     headers: { ...(json !== undefined ? { 'Content-Type': 'application/json' } : {}), ...(headers ?? {}) },
     body: json !== undefined ? JSON.stringify(json) : rest.body,
   })
+  if (res.status === 503 && res.headers.get('x-hkn-offline')) throw Object.assign(new Error('You are offline'), { offline: true })
   if (!res.ok) {
     let msg = res.statusText
     try {

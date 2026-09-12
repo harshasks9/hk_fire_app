@@ -19,6 +19,15 @@ export async function getActiveContext(): Promise<Context> {
   return all.find((c) => c.slug === slug) ?? all.find((c) => c.slug === 'work') ?? all[0]!
 }
 
+/** The active context, unless the caller names one explicitly (offline replays carry the context they were written in). */
+export async function resolveContext(explicitId?: string | null): Promise<Context> {
+  if (explicitId) {
+    const c = await getContextById(explicitId)
+    if (c) return c
+  }
+  return getActiveContext()
+}
+
 export async function getContextById(id: string): Promise<Context | undefined> {
   const db = await getDb()
   return (await db.select().from(schema.contexts).where(eq(schema.contexts.id, id)))[0]

@@ -5,10 +5,12 @@ import { Paperclip, Mic, Link2, Image as ImageIcon, X, Zap } from 'lucide-react'
 import { setShell, useShell } from './store'
 import { useToast } from '@/components/ui'
 import { cx } from '@/lib/util'
+import { enqueueCapture, isNetworkError, useOffline } from '@/lib/offline/sync'
 
 /** Option/Alt+Space (inside the app) or ⌘⇧N. Type, paste a URL or image, drop a file, press Enter. Done. */
 export function QuickCapture() {
   const { captureOpen } = useShell()
+  const { online } = useOffline()
   const router = useRouter()
   const toast = useToast()
   const [text, setText] = React.useState('')
@@ -24,21 +26,28 @@ export function QuickCapture() {
 
   const close = () => setShell({ captureOpen: false })
 
+  const keepForLater = async () => {
+    await enqueueCapture({ text, files })
+    toast.push({ text: 'Saved on this device. It will be filed when you are back online.', tone: 'success' })
+    close()
+  }
+
   const submit = async () => {
     if (!text.trim() && !files.length) return
     setBusy(true)
     try {
+      if (!navigator.onLine) { await keepForLater(); return }
       const fd = new FormData()
       fd.set('text', text)
       for (const f of files) fd.append('files', f)
       const res = await fetch('/api/capture', { method: 'POST', body: fd })
       if (!res.ok) throw new Error('Capture failed')
-      const j = (await res.json()) as { id: string }
       toast.push({ text: 'Captured. AI is filing it.', tone: 'success' })
       close()
       router.refresh()
-      void j
     } catch (e) {
+      // The request never reached the server: keep it locally and replay later.
+      if (isNetworkError(e)) { await keepForLater(); return }
       toast.push({ text: String(e), tone: 'danger' })
     } finally {
       setBusy(false)
@@ -57,7 +66,7 @@ export function QuickCapture() {
     <div className="fixed inset-0 z-[95] flex items-start justify-center bg-black/20 px-3 pt-[16vh] backdrop-blur-[2px]" onMouseDown={close}>
       <div className="animate-pop w-full max-w-[560px] overflow-hidden rounded-2xl border border-border bg-surface shadow-pop" onMouseDown={(e) => e.stopPropagation()} onDragOver={(e) => e.preventDefault()} onDrop={(e) => { e.preventDefault(); setFiles((f) => [...f, ...Array.from(e.dataTransfer.files)]) }}>
         <div className="flex items-center justify-between px-4 pt-3">
-          <div className="flex items-center gap-1.5 text-[12px] font-semibold uppercase tracking-[0.06em] text-fg-3"><Zap className="h-3.5 w-3.5 text-accent" /> Quick capture</div>
+          <div className="flex items-center gap-1.5 text-[12px] font-semibold uppercase tracking-[0.06em] text-fg-3"><Zap className="h-3.5 w-3.5 text-accent" /> Quick capture{!online ? <span className="ml-1 rounded-full bg-warning/10 px-1.5 py-0.5 text-[10.5px] normal-case tracking-normal text-warning">offline · saves on device</span> : null}</div>
           <button onClick={close} className="rounded-md p-1 text-fg-3 hover:bg-surface-2 hover:text-fg" aria-label="Close"><X className="h-4 w-4" /></button>
         </div>
         <textarea
