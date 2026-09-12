@@ -32,6 +32,11 @@ export function scheduleProcessing(noteId: string) {
 
 export async function updateNote(id: string, patch: { title?: string; contentJson?: unknown; favorite?: boolean; privacy?: 'normal' | 'private' | 'ai_excluded'; researchProjectId?: string | null; kind?: NoteKind; status?: 'inbox' | 'processed' | 'archived' }, opts: { process?: boolean } = {}) {
   const db = await getDb()
+  if (opts.process && patch.contentJson !== undefined) {
+    // Version history: the state before the first processed edit is kept as the original.
+    const { ensureOriginalVersion } = await import('./versions')
+    await ensureOriginalVersion(id).catch(() => undefined)
+  }
   const set: Record<string, unknown> = { updatedAt: new Date() }
   if (patch.title !== undefined) set.title = patch.title
   if (patch.contentJson !== undefined) {
@@ -46,6 +51,11 @@ export async function updateNote(id: string, patch: { title?: string; contentJso
   if (patch.kind !== undefined) set.kind = patch.kind
   if (patch.status !== undefined) set.status = patch.status
   await db.update(schema.notes).set(set).where(eq(schema.notes.id, id))
+  if (opts.process && patch.contentJson !== undefined) {
+    // Version history: a processed save is a natural checkpoint.
+    const { snapshotNote } = await import('./versions')
+    await snapshotNote(id, 'save').catch(() => undefined)
+  }
   if (opts.process) {
     const row = (await db.select({ aiProcessedAt: schema.notes.aiProcessedAt, contentText: schema.notes.contentText }).from(schema.notes).where(eq(schema.notes.id, id)))[0]
     const recent = row?.aiProcessedAt && Date.now() - row.aiProcessedAt.getTime() < 8000

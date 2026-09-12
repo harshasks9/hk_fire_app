@@ -15,11 +15,43 @@ import {
   uniqueIndex,
   vector,
 } from 'drizzle-orm/pg-core'
+import { sql } from 'drizzle-orm'
 
 const id = () => text('id').primaryKey()
 const now = (name: string) => timestamp(name, { withTimezone: true }).notNull().defaultNow()
 
 /* --------------------------------- users --------------------------------- */
+
+/* ------------------------------- notebooks ------------------------------- */
+
+export type NotebookStatus = 'active' | 'disabled'
+export type AiMode = 'shared' | 'own' | 'local'
+
+export interface NotebookSettings {
+  /** shared = the deployment's keys; own = keys stored (encrypted) on the notebook; local = never call a model. */
+  aiMode?: AiMode
+  aiPreference?: 'auto' | 'anthropic' | 'gemini'
+  anthropicKeyEnc?: string
+  geminiKeyEnc?: string
+  allowShareLinks?: boolean
+  sampleData?: boolean
+}
+
+/** The unit of tenancy: every context (and everything under it) belongs to exactly one notebook. */
+export const notebooks = pgTable('notebooks', {
+  id: id(),
+  slug: text('slug').notNull().unique(),
+  name: text('name').notNull(),
+  ownerUserId: text('owner_user_id'),
+  status: text('status').$type<NotebookStatus>().notNull().default('active'),
+  settings: jsonb('settings').$type<NotebookSettings>().notNull().default({}),
+  createdAt: now('created_at'),
+  updatedAt: now('updated_at'),
+  lastActiveAt: timestamp('last_active_at', { withTimezone: true }),
+})
+
+export type UserRole = 'admin' | 'owner' | 'member'
+export type UserStatus = 'active' | 'disabled'
 
 export const users = pgTable('users', {
   id: id(),
@@ -27,7 +59,12 @@ export const users = pgTable('users', {
   email: text('email'),
   settings: jsonb('settings').$type<UserSettings>().notNull().default({}),
   createdAt: now('created_at'),
-})
+  notebookId: text('notebook_id'),
+  passwordHash: text('password_hash'),
+  role: text('role').$type<UserRole>().notNull().default('owner'),
+  status: text('status').$type<UserStatus>().notNull().default('active'),
+  lastLoginAt: timestamp('last_login_at', { withTimezone: true }),
+}, (t) => [index('users_notebook_idx').on(t.notebookId), uniqueIndex('users_email_lower_idx').on(sql`lower(${t.email})`)])
 
 export interface UserSettings {
   theme?: 'system' | 'light' | 'dark'
@@ -44,14 +81,15 @@ export type ContextKind = 'work' | 'personal' | 'finance' | 'family' | 'research
 
 export const contexts = pgTable('contexts', {
   id: id(),
-  slug: text('slug').notNull().unique(),
+  slug: text('slug').notNull(),
   name: text('name').notNull(),
   kind: text('kind').$type<ContextKind>().notNull(),
   description: text('description'),
   aiScope: text('ai_scope').$type<'isolated' | 'shared'>().notNull().default('isolated'),
   position: integer('position').notNull().default(0),
   createdAt: now('created_at'),
-})
+  notebookId: text('notebook_id').notNull().default('nb_default'),
+}, (t) => [uniqueIndex('contexts_notebook_slug_idx').on(t.notebookId, t.slug)])
 
 /* ---------------------------------- notes -------------------------------- */
 
@@ -482,6 +520,7 @@ export const aiCalls = pgTable('ai_calls', {
   error: text('error'),
   durationMs: integer('duration_ms'),
   createdAt: now('created_at'),
+  notebookId: text('notebook_id'),
 })
 
 /* --------------------------------- settings ------------------------------ */
@@ -492,6 +531,107 @@ export const appMeta = pgTable('app_meta', {
   updatedAt: now('updated_at'),
 })
 
+/* ------------------------------ platform tables ---------------------------- */
+
+/** Invitations to join a notebook; single use, expire after 7 days. */
+export const invites = pgTable('invites', {
+  id: id(),
+  notebookId: text('notebook_id').notNull(),
+  email: text('email'),
+  role: text('role').$type<UserRole>().notNull().default('member'),
+  tokenHash: text('token_hash').notNull().unique(),
+  createdBy: text('created_by'),
+  expiresAt: timestamp('expires_at', { withTimezone: true }).notNull(),
+  acceptedAt: timestamp('accepted_at', { withTimezone: true }),
+  acceptedUserId: text('accepted_user_id'),
+  createdAt: now('created_at'),
+}, (t) => [index('invites_notebook_idx').on(t.notebookId)])
+
+/** Personal capture tokens for shortcuts, automations and scripts. Only the hash is stored. */
+export const apiTokens = pgTable('api_tokens', {
+  id: id(),
+  notebookId: text('notebook_id').notNull(),
+  userId: text('user_id').notNull(),
+  label: text('label').notNull(),
+  tokenHash: text('token_hash').notNull().unique(),
+  prefix: text('prefix').notNull(),
+  lastUsedAt: timestamp('last_used_at', { withTimezone: true }),
+  revokedAt: timestamp('revoked_at', { withTimezone: true }),
+  createdAt: now('created_at'),
+}, (t) => [index('api_tokens_notebook_idx').on(t.notebookId)])
+
+/** Snapshots of a note's content, written on processed saves and before restores. */
+export const noteVersions = pgTable('note_versions', {
+  id: id(),
+  noteId: text('note_id').notNull(),
+  title: text('title').notNull().default(''),
+  contentJson: jsonb('content_json').notNull(),
+  contentText: text('content_text').notNull().default(''),
+  wordCount: integer('word_count').notNull().default(0),
+  reason: text('reason').$type<'save' | 'restore' | 'import' | 'manual' | 'original'>().notNull().default('save'),
+  createdAt: now('created_at'),
+}, (t) => [index('note_versions_note_idx').on(t.noteId, t.createdAt)])
+
+/** Public read-only links to a note. */
+export const shareLinks = pgTable('share_links', {
+  id: id(),
+  notebookId: text('notebook_id').notNull(),
+  noteId: text('note_id').notNull(),
+  tokenHash: text('token_hash').notNull().unique(),
+  token: text('token').notNull(),
+  createdBy: text('created_by'),
+  expiresAt: timestamp('expires_at', { withTimezone: true }),
+  revokedAt: timestamp('revoked_at', { withTimezone: true }),
+  views: integer('views').notNull().default(0),
+  lastViewedAt: timestamp('last_viewed_at', { withTimezone: true }),
+  createdAt: now('created_at'),
+}, (t) => [index('share_links_note_idx').on(t.noteId)])
+
+/** Note templates: built-in (notebook_id null) and per-notebook custom ones. */
+export const templates = pgTable('templates', {
+  id: id(),
+  notebookId: text('notebook_id'),
+  name: text('name').notNull(),
+  description: text('description'),
+  icon: text('icon'),
+  kind: text('kind').$type<NoteKind>().notNull().default('note'),
+  contentJson: jsonb('content_json').notNull(),
+  position: integer('position').notNull().default(0),
+  createdBy: text('created_by'),
+  createdAt: now('created_at'),
+  updatedAt: now('updated_at'),
+}, (t) => [index('templates_notebook_idx').on(t.notebookId)])
+
+/** Immutable record of administrative actions. */
+export const adminEvents = pgTable('admin_events', {
+  id: id(),
+  actorUserId: text('actor_user_id'),
+  actorName: text('actor_name'),
+  action: text('action').notNull(),
+  targetType: text('target_type'),
+  targetId: text('target_id'),
+  targetName: text('target_name'),
+  meta: jsonb('meta').$type<Record<string, unknown>>().notNull().default({}),
+  createdAt: now('created_at'),
+}, (t) => [index('admin_events_created_idx').on(t.createdAt)])
+
+/** Weekly review narratives, one per context and week. */
+export const weeklyReviews = pgTable('weekly_reviews', {
+  id: id(),
+  contextId: text('context_id').notNull(),
+  weekStart: text('week_start').notNull(),
+  narrative: text('narrative'),
+  provider: text('provider'),
+  facts: jsonb('facts').$type<unknown>(),
+  createdAt: now('created_at'),
+  updatedAt: now('updated_at'),
+}, (t) => [uniqueIndex('weekly_reviews_ctx_week_idx').on(t.contextId, t.weekStart)])
+
+export type Notebook = typeof notebooks.$inferSelect
+export type User = typeof users.$inferSelect
+export type Template = typeof templates.$inferSelect
+export type NoteVersion = typeof noteVersions.$inferSelect
+export type ShareLink = typeof shareLinks.$inferSelect
 export type Note = typeof notes.$inferSelect
 export type Meeting = typeof meetings.$inferSelect
 export type Entity = typeof entities.$inferSelect

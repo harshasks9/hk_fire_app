@@ -1,11 +1,16 @@
 /* The daily brief: a short narrative composed from the day's graph state. */
 import { getHomeData } from './queries'
 import { getProvider } from './ai/provider'
+import { withNotebookAi } from './session'
 import { formatDate, formatTime, isToday, pluralize } from './util'
 
 export interface Brief { lines: string[]; narrative: string | null; generatedAt: string }
 
 export async function dailyBrief(contextId: string, userName = 'Harsha'): Promise<Brief> {
+  return withNotebookAi(() => dailyBriefInner(contextId, userName))
+}
+
+async function dailyBriefInner(contextId: string, userName: string): Promise<Brief> {
   const h = await getHomeData(contextId)
   const lines: string[] = []
   const todays = h.meetings.filter((m) => isToday(m.startsAt))

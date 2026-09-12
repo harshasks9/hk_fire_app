@@ -7,6 +7,7 @@ import type { EmbeddingProvider } from './types'
 import { resolveGeminiModels, markGeminiModelUnavailable } from './gemini-models'
 import { geminiFetch } from './gemini-retry'
 import { logAiCall } from './log'
+import { effectiveKeys } from './scope'
 
 export const EMBEDDING_DIMENSIONS = 768
 
@@ -112,8 +113,8 @@ function normalize(v: number[]): number[] {
 }
 
 export function getEmbeddingProvider(): EmbeddingProvider {
-  const key = process.env.GEMINI_API_KEY
-  if (key && process.env.AI_PROVIDER !== 'local' && process.env.EMBEDDINGS !== 'local') return geminiEmbeddingProvider(key)
+  const keys = effectiveKeys()
+  if (keys.gemini && keys.preference !== 'local' && process.env.EMBEDDINGS !== 'local') return geminiEmbeddingProvider(keys.gemini)
   return localEmbeddingProvider
 }
 
@@ -131,7 +132,7 @@ export async function embedTexts(texts: string[]): Promise<{ vectors: number[][]
 /** Embed a query with a specific stored provider so vectors are comparable. Returns null if that provider is unavailable. */
 export async function embedQueryWith(provider: string, text: string): Promise<number[] | null> {
   if (provider === localEmbeddingProvider.name) return (await localEmbeddingProvider.embed([text]))[0]!
-  const key = process.env.GEMINI_API_KEY
+  const key = effectiveKeys().gemini
   if (provider === 'gemini' && key) {
     try {
       return (await geminiEmbeddingProvider(key).embed([text]))[0]!

@@ -1,3 +1,4 @@
+import { withNotebookAi } from './session'
 /* Meeting prep: everything you need before walking in, assembled from the graph. */
 import { and, desc, eq, inArray, lt, ne, or, sql } from 'drizzle-orm'
 import { getDb, schema } from './db'
@@ -23,6 +24,10 @@ export interface MeetingPrep {
 }
 
 export async function meetingPrep(meetingId: string): Promise<MeetingPrep | null> {
+  return withNotebookAi(() => meetingPrepInner(meetingId))
+}
+
+async function meetingPrepInner(meetingId: string): Promise<MeetingPrep | null> {
   const db = await getDb()
   const d = await getMeeting(meetingId)
   if (!d) return null

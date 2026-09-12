@@ -11,9 +11,10 @@ import { useShell, setShell } from './store'
 import { Search, PanelRight, Zap, Sparkles } from 'lucide-react'
 import { OfflineProvider } from '@/components/offline/OfflineProvider'
 import { OfflineBadge } from '@/components/offline/OfflineBadge'
+import { GlobalTemplatePicker } from '@/components/notes/TemplatePicker'
 import { cx } from '@/lib/util'
 
-export function AppShell({ sidebar, children }: { sidebar: SidebarProps; children: React.ReactNode }) {
+export function AppShell({ sidebar, children, viewingAsAdmin }: { sidebar: SidebarProps; children: React.ReactNode; viewingAsAdmin?: { notebookName: string } | null }) {
   const { panelAvailable, panelOpen } = useShell()
   return (
     <ToastProvider>
@@ -21,6 +22,7 @@ export function AppShell({ sidebar, children }: { sidebar: SidebarProps; childre
       <div className="flex h-dvh w-full overflow-hidden">
         <Sidebar {...sidebar} />
         <div className="flex min-w-0 flex-1 flex-col">
+          {viewingAsAdmin ? <AdminBanner notebookName={viewingAsAdmin.notebookName} /> : null}
           {/* Mobile top bar */}
           <div className="flex h-[calc(48px+env(safe-area-inset-top))] shrink-0 items-center justify-between border-b border-border bg-surface px-3 pt-[env(safe-area-inset-top)] md:hidden">
             <ContextSwitcher contexts={sidebar.contexts} active={sidebar.active} />
@@ -49,9 +51,20 @@ export function AppShell({ sidebar, children }: { sidebar: SidebarProps; childre
       <MobileNav />
       <CommandBar />
       <QuickCapture />
+      <GlobalTemplatePicker />
       <Shortcuts />
       </OfflineProvider>
     </ToastProvider>
+  )
+}
+
+function AdminBanner({ notebookName }: { notebookName: string }) {
+  const [busy, setBusy] = React.useState(false)
+  return (
+    <div className="flex shrink-0 items-center justify-between gap-2 border-b border-warning/40 bg-warning/10 px-3 py-1.5 text-[12.5px] text-warning">
+      <span>Viewing <strong>{notebookName}</strong> as admin. Anything you do here happens in their notebook.</span>
+      <button disabled={busy} className="rounded-md border border-warning/40 px-2 py-0.5 font-medium hover:bg-warning/10" onClick={async () => { setBusy(true); try { await fetch('/api/admin/leave', { method: 'POST' }); window.location.href = '/admin' } finally { setBusy(false) } }}>Back to my notebook</button>
+    </div>
   )
 }
 

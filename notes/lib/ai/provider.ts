@@ -5,11 +5,13 @@
 */
 import type { AIProvider } from './types'
 import { localProvider } from './local'
+import { effectiveKeys } from './scope'
 
 export function getProvider(): AIProvider {
-  const pref = process.env.AI_PROVIDER
-  const anthropicKey = process.env.ANTHROPIC_API_KEY
-  const geminiKey = process.env.GEMINI_API_KEY
+  const keys = effectiveKeys()
+  const pref = keys.preference
+  const anthropicKey = keys.anthropic
+  const geminiKey = keys.gemini
   if (pref === 'local') return localProvider
   if (pref === 'anthropic' && anthropicKey) return lazyAnthropic(anthropicKey)
   if (pref === 'gemini' && geminiKey) return lazyGemini(geminiKey)
@@ -18,28 +20,33 @@ export function getProvider(): AIProvider {
   return localProvider
 }
 
-const cache: { anthropic?: AIProvider; gemini?: AIProvider } = {}
+// Providers are cached per key so notebooks with their own keys never share an instance.
+const cache: { anthropic: Map<string, AIProvider>; gemini: Map<string, AIProvider> } = { anthropic: new Map(), gemini: new Map() }
 
 function lazyAnthropic(key: string): AIProvider {
-  if (!cache.anthropic) {
+  let p = cache.anthropic.get(key)
+  if (!p) {
     // eslint-disable-next-line @typescript-eslint/no-require-imports
     const { anthropicProvider } = require('./anthropic') as typeof import('./anthropic')
-    cache.anthropic = anthropicProvider(key)
+    p = anthropicProvider(key)
+    cache.anthropic.set(key, p)
   }
-  return cache.anthropic
+  return p
 }
 
 function lazyGemini(key: string): AIProvider {
-  if (!cache.gemini) {
+  let p = cache.gemini.get(key)
+  if (!p) {
     // eslint-disable-next-line @typescript-eslint/no-require-imports
     const { geminiProvider } = require('./gemini') as typeof import('./gemini')
-    cache.gemini = geminiProvider(key)
+    p = geminiProvider(key)
+    cache.gemini.set(key, p)
   }
-  return cache.gemini
+  return p
 }
 
 export async function aiModels(): Promise<{ generation: string; embedding: string; source: string; verified: boolean } | null> {
-  const key = process.env.GEMINI_API_KEY
+  const key = effectiveKeys().gemini
   if (!key || getProvider().name !== 'gemini') return null
   const { resolveGeminiModels } = await import('./gemini-models')
   return resolveGeminiModels(key)
@@ -51,8 +58,8 @@ export function aiStatus() {
     provider: p.name,
     model: p.model,
     isLLM: p.isLLM,
-    anthropicConfigured: Boolean(process.env.ANTHROPIC_API_KEY),
-    geminiConfigured: Boolean(process.env.GEMINI_API_KEY),
-    embeddings: process.env.GEMINI_API_KEY && process.env.AI_PROVIDER !== 'local' && process.env.EMBEDDINGS !== 'local' ? 'gemini (model discovered at runtime)' : 'local-hash-v1',
+    anthropicConfigured: Boolean(effectiveKeys().anthropic),
+    geminiConfigured: Boolean(effectiveKeys().gemini),
+    embeddings: effectiveKeys().gemini && effectiveKeys().preference !== 'local' && process.env.EMBEDDINGS !== 'local' ? 'gemini (model discovered at runtime)' : 'local-hash-v1',
   }
 }

@@ -21,6 +21,7 @@ import { cx, relativeTime } from '@/lib/util'
 import { useToast, Spinner, AiMark } from '@/components/ui'
 import type { RewriteMode } from '@/lib/ai/types'
 import { isNetworkError, pendingPatchFor, savePatchOffline, useOffline } from '@/lib/offline/sync'
+import { TemplatePicker } from '@/components/notes/TemplatePicker'
 
 export interface NoteEditorProps {
   noteId: string
@@ -48,6 +49,7 @@ export function NoteEditor({ noteId, initialTitle, initialContent, highlight, re
   const [aiResult, setAiResult] = React.useState<AiResult | null>(null)
   const [askOpen, setAskOpen] = React.useState(false)
   const [askQ, setAskQ] = React.useState('')
+  const [templatePicker, setTemplatePicker] = React.useState(false)
   const saveTimer = React.useRef<number | undefined>(undefined)
   const processTimer = React.useRef<number | undefined>(undefined)
   const fileInput = React.useRef<HTMLInputElement>(null)
@@ -127,6 +129,7 @@ export function NoteEditor({ noteId, initialTitle, initialContent, highlight, re
           if (kind === 'rewrite') runInlineAi('rewrite', editorRef.current, { whole: true })
           if (kind === 'actions') runInlineAi('extract_tasks', editorRef.current, { whole: true })
         },
+        template: () => setTemplatePicker(true),
       })),
     ],
     content: (initialContent as object) ?? { type: 'doc', content: [{ type: 'paragraph' }] },
@@ -292,6 +295,7 @@ export function NoteEditor({ noteId, initialTitle, initialContent, highlight, re
       ) : null}
 
       {editor && !readOnly ? <MobileToolbar editor={editor} onUpload={() => { uploadKind.current = 'image'; fileInput.current?.click() }} /> : null}
+      <TemplatePicker open={templatePicker} mode="insert" onClose={() => setTemplatePicker(false)} onInsert={(doc, t) => { const content = (doc as { content?: object[] }).content ?? []; editor?.chain().focus().insertContent(content).run(); if (t && !titleValue.current) onTitle(t) }} />
       <EditorContent editor={editor} />
 
       {aiResult ? (

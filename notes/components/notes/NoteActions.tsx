@@ -1,17 +1,21 @@
 'use client'
 import * as React from 'react'
 import { useRouter } from 'next/navigation'
-import { Star, MoreHorizontal, Trash2, RefreshCw, EyeOff, Lock, Unlock, FlaskConical, Download } from 'lucide-react'
+import { Star, MoreHorizontal, Trash2, RefreshCw, EyeOff, Lock, Unlock, FlaskConical, Download, History, Globe, LayoutTemplate } from 'lucide-react'
+import { NoteHistory } from './NoteHistory'
+import { ShareDialog } from './ShareDialog'
+import { SaveTemplateDialog } from './SaveTemplateDialog'
 import { Button, Menu, useToast } from '@/components/ui'
 import { api } from '@/lib/client'
 import { cx } from '@/lib/util'
 import { GenerateMenu } from '@/components/entities'
 
-export function NoteActions({ noteId, favorite, privacy, researchProjects, researchProjectId }: { noteId: string; favorite: boolean; privacy: string; researchProjects: { id: string; name: string }[]; researchProjectId: string | null }) {
+export function NoteActions({ noteId, favorite, privacy, researchProjects, researchProjectId, title }: { noteId: string; favorite: boolean; privacy: string; researchProjects: { id: string; name: string }[]; researchProjectId: string | null; title?: string }) {
   const router = useRouter()
   const toast = useToast()
   const [fav, setFav] = React.useState(favorite)
   const [busy, setBusy] = React.useState(false)
+  const [dialog, setDialog] = React.useState<'history' | 'share' | 'template' | null>(null)
   const patch = async (p: Record<string, unknown>) => { await api(`/api/notes/${noteId}`, { method: 'PATCH', json: p }); router.refresh() }
   return (
     <div className="flex items-center gap-1">
@@ -28,10 +32,16 @@ export function NoteActions({ noteId, favorite, privacy, researchProjects, resea
             : { label: 'Exclude from AI', icon: <EyeOff className="h-3.5 w-3.5" />, onSelect: () => patch({ privacy: 'ai_excluded' }) },
           privacy === 'private' ? { label: 'Unmark private', icon: <Unlock className="h-3.5 w-3.5" />, onSelect: () => patch({ privacy: 'normal' }) } : { label: 'Mark private', icon: <Lock className="h-3.5 w-3.5" />, onSelect: () => patch({ privacy: 'private' }) },
           ...(researchProjects.length ? [{ label: researchProjectId ? 'Remove from research project' : `Add to research: ${researchProjects[0]!.name}`, icon: <FlaskConical className="h-3.5 w-3.5" />, onSelect: () => patch({ researchProjectId: researchProjectId ? null : researchProjects[0]!.id }) }] : []),
+          { label: 'Share read-only link…', icon: <Globe className="h-3.5 w-3.5" />, onSelect: () => setDialog('share') },
+          { label: 'Version history…', icon: <History className="h-3.5 w-3.5" />, onSelect: () => setDialog('history') },
+          { label: 'Save as template…', icon: <LayoutTemplate className="h-3.5 w-3.5" />, onSelect: () => setDialog('template') },
           { label: 'Export (JSON)', icon: <Download className="h-3.5 w-3.5" />, href: `/api/notes/${noteId}` },
-          { label: 'Delete note', icon: <Trash2 className="h-3.5 w-3.5" />, danger: true, onSelect: async () => { if (!confirm('Delete this note? Extracted tasks and loops that are still open will be removed too.')) return; await api(`/api/notes/${noteId}`, { method: 'DELETE' }); router.push('/notes'); router.refresh() } },
+          { label: 'Move to Trash', icon: <Trash2 className="h-3.5 w-3.5" />, danger: true, onSelect: async () => { if (!confirm('Move this note to Trash? You can restore it within 30 days.')) return; await api(`/api/notes/${noteId}`, { method: 'DELETE' }); router.push('/notes'); router.refresh() } },
         ]}
       />
+      <NoteHistory noteId={noteId} open={dialog === 'history'} onClose={() => setDialog(null)} />
+      <ShareDialog noteId={noteId} open={dialog === 'share'} onClose={() => setDialog(null)} />
+      <SaveTemplateDialog noteId={noteId} open={dialog === 'template'} onClose={() => setDialog(null)} defaultName={title?.trim() || 'My template'} />
     </div>
   )
 }

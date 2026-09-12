@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { guardOwned } from '@/lib/api'
 import { getDb, schema } from '@/lib/db'
 import { eq } from 'drizzle-orm'
 import { createNote, scheduleProcessing } from '@/lib/notes'
@@ -6,6 +7,8 @@ import { generateOutput } from '@/lib/generate'
 export const maxDuration = 60
 export async function PATCH(req: NextRequest, { params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
+  const denied = await guardOwned('meeting', id)
+  if (denied) return denied
   const db = await getDb()
   const m = (await db.select().from(schema.meetings).where(eq(schema.meetings.id, id)))[0]
   if (!m) return NextResponse.json({ error: 'not found' }, { status: 404 })
@@ -26,6 +29,8 @@ export async function PATCH(req: NextRequest, { params }: { params: Promise<{ id
 }
 export async function DELETE(_: NextRequest, { params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
+  const denied = await guardOwned('meeting', id)
+  if (denied) return denied
   const db = await getDb()
   await db.delete(schema.meetings).where(eq(schema.meetings.id, id))
   return new NextResponse(null, { status: 204 })

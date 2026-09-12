@@ -1,3 +1,4 @@
+import { withNotebookAi } from './session'
 /* Entity overviews / relationship summaries, regenerated when the entity has new information. */
 import { eq } from 'drizzle-orm'
 import { getDb, schema } from './db'
@@ -6,6 +7,10 @@ import type { EntityDetail } from './queries'
 import { formatDate, pluralize } from './util'
 
 export async function ensureEntitySummary(d: EntityDetail, userName = 'Harsha'): Promise<string> {
+  return withNotebookAi(() => ensureEntitySummaryInner(d, userName))
+}
+
+async function ensureEntitySummaryInner(d: EntityDetail, userName: string): Promise<string> {
   const { entity } = d
   const stale = !entity.summary || !entity.summaryUpdatedAt || (entity.lastSeenAt && entity.lastSeenAt > entity.summaryUpdatedAt)
   if (!stale) return entity.summary!

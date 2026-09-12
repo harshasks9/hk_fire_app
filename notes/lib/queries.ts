@@ -5,6 +5,7 @@ import type { Commitment, Decision, Entity, EntityType, Fact, Meeting, Note, Tas
 import { addDays, startOfDay } from './util'
 import { cosineDistance } from 'drizzle-orm'
 import { embedQueryWith, localEmbeddingProvider } from './ai/embeddings'
+import { inNotebook } from './tenant'
 
 const live = isNull(schema.notes.deletedAt)
 
@@ -70,7 +71,7 @@ export interface NoteDetail {
 export async function getNote(id: string): Promise<NoteDetail | null> {
   const db = await getDb()
   const note = (await db.select().from(schema.notes).where(and(eq(schema.notes.id, id), live)))[0]
-  if (!note) return null
+  if (!note || !(await inNotebook(note.contextId))) return null
   const entities = await db
     .select({ e: schema.entities, excerpt: schema.noteEntities.excerpt })
     .from(schema.noteEntities)
@@ -189,7 +190,7 @@ export async function hydrateMeetings(rows: Meeting[]): Promise<MeetingListItem[
 export async function getMeeting(id: string) {
   const db = await getDb()
   const m = (await db.select().from(schema.meetings).where(eq(schema.meetings.id, id)))[0]
-  if (!m) return null
+  if (!m || !(await inNotebook(m.contextId))) return null
   const [item] = await hydrateMeetings([m])
   const note = m.noteId ? await getNote(m.noteId) : null
   const transcript = (await db.select().from(schema.transcripts).where(eq(schema.transcripts.meetingId, id)))[0] ?? null
@@ -320,7 +321,7 @@ export interface EntityDetail {
 export async function getEntity(id: string): Promise<EntityDetail | null> {
   const db = await getDb()
   const entity = (await db.select().from(schema.entities).where(eq(schema.entities.id, id)))[0]
-  if (!entity) return null
+  if (!entity || !(await inNotebook(entity.contextId))) return null
   const noteIds = (await db.select({ noteId: schema.noteEntities.noteId }).from(schema.noteEntities).where(eq(schema.noteEntities.entityId, id))).map((r) => r.noteId)
   const noteRows = noteIds.length ? await db.select().from(schema.notes).where(and(inArray(schema.notes.id, noteIds), live)).orderBy(desc(schema.notes.updatedAt)) : []
   const notes = await attachEntities(noteRows)
@@ -387,7 +388,7 @@ export async function listDecisions(contextId: string): Promise<DecisionListItem
 export async function getDecision(id: string) {
   const db = await getDb()
   const d = (await db.select().from(schema.decisions).where(eq(schema.decisions.id, id)))[0]
-  if (!d) return null
+  if (!d || !(await inNotebook(d.contextId))) return null
   const revisions = await db
     .select({ r: schema.decisionRevisions, sourceTitle: schema.notes.title })
     .from(schema.decisionRevisions)
@@ -424,7 +425,7 @@ export async function listResearch(contextId?: string) {
 export async function getResearch(id: string) {
   const db = await getDb()
   const project = (await db.select().from(schema.researchProjects).where(eq(schema.researchProjects.id, id)))[0]
-  if (!project) return null
+  if (!project || !(await inNotebook(project.contextId))) return null
   const notes = await listNotes(project.contextId, { researchProjectId: id, limit: 100 })
   const noteIds = notes.map((n) => n.id)
   const sources = noteIds.length ? await db.select().from(schema.sources).where(inArray(schema.sources.noteId, noteIds)) : []
@@ -471,19 +472,19 @@ export async function sidebarData(contextId: string) {
 
 /* ------------------------------------------------------------- settings */
 
-export async function settingsData() {
+export async function settingsData(contextIds: string[], notebookId: string, user: import('./db/schema').User | undefined) {
   const db = await getDb()
+  const ids = contextIds.length ? contextIds : ['__none__']
   const [notes, entities, tasks, decisions, commitments, facts, embeddings, calls] = await Promise.all([
-    db.select({ n: sql<number>`count(*)` }).from(schema.notes).where(live),
-    db.select({ n: sql<number>`count(*)` }).from(schema.entities),
-    db.select({ n: sql<number>`count(*)` }).from(schema.tasks),
-    db.select({ n: sql<number>`count(*)` }).from(schema.decisions),
-    db.select({ n: sql<number>`count(*)` }).from(schema.commitments),
-    db.select({ n: sql<number>`count(*)` }).from(schema.facts),
-    db.select({ n: sql<number>`count(*)` }).from(schema.embeddings),
-    db.select().from(schema.aiCalls).orderBy(desc(schema.aiCalls.createdAt)).limit(20),
+    db.select({ n: sql<number>`count(*)` }).from(schema.notes).where(and(live, inArray(schema.notes.contextId, ids))),
+    db.select({ n: sql<number>`count(*)` }).from(schema.entities).where(inArray(schema.entities.contextId, ids)),
+    db.select({ n: sql<number>`count(*)` }).from(schema.tasks).where(inArray(schema.tasks.contextId, ids)),
+    db.select({ n: sql<number>`count(*)` }).from(schema.decisions).where(inArray(schema.decisions.contextId, ids)),
+    db.select({ n: sql<number>`count(*)` }).from(schema.commitments).where(inArray(schema.commitments.contextId, ids)),
+    db.select({ n: sql<number>`count(*)` }).from(schema.facts).where(inArray(schema.facts.contextId, ids)),
+    db.select({ n: sql<number>`count(*)` }).from(schema.embeddings).where(inArray(schema.embeddings.contextId, ids)),
+    db.select().from(schema.aiCalls).where(eq(schema.aiCalls.notebookId, notebookId)).orderBy(desc(schema.aiCalls.createdAt)).limit(20),
   ])
-  const user = (await db.select().from(schema.users))[0]
   const meta = await db.select().from(schema.appMeta)
   return {
     user,

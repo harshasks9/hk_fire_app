@@ -4,12 +4,12 @@ import { Extension, type Editor, type Range } from '@tiptap/core'
 import Suggestion, { type SuggestionProps, type SuggestionKeyDownProps } from '@tiptap/suggestion'
 import { ReactRenderer } from '@tiptap/react'
 import tippy, { type Instance } from 'tippy.js'
-import { Heading1, Heading2, Heading3, List, ListOrdered, CheckSquare, Table, Image as ImageIcon, Paperclip, Quote, Code, Info, GitBranch, AtSign, CalendarDays, Minus, Sparkles, Wand2, ListChecks } from 'lucide-react'
+import { Heading1, Heading2, Heading3, List, ListOrdered, CheckSquare, Table, Image as ImageIcon, Paperclip, Quote, Code, Info, GitBranch, AtSign, CalendarDays, Minus, Sparkles, Wand2, ListChecks, LayoutTemplate } from 'lucide-react'
 import { cx } from '@/lib/util'
 
 export interface SlashItem { id: string; title: string; hint: string; icon: React.ComponentType<{ className?: string }>; keywords?: string; ai?: boolean; run: (editor: Editor, range: Range) => void }
 
-export function slashItems(handlers: { upload: (kind: 'image' | 'file') => void; ai: (kind: 'summary' | 'rewrite' | 'actions', range: Range) => void }): SlashItem[] {
+export function slashItems(handlers: { upload: (kind: 'image' | 'file') => void; ai: (kind: 'summary' | 'rewrite' | 'actions', range: Range) => void; template?: (range: Range) => void }): SlashItem[] {
   const del = (editor: Editor, range: Range) => editor.chain().focus().deleteRange(range)
   return [
     { id: 'h1', title: 'Heading 1', hint: 'Large section heading', icon: Heading1, keywords: 'title', run: (e, r) => del(e, r).setNode('heading', { level: 1 }).run() },
@@ -36,6 +36,7 @@ export function slashItems(handlers: { upload: (kind: 'image' | 'file') => void;
       { type: 'heading', attrs: { level: 2 }, content: [{ type: 'text', text: 'Actions' }] },
       { type: 'taskList', content: [{ type: 'taskItem', attrs: { checked: false }, content: [{ type: 'paragraph' }] }] },
     ]).run() },
+    { id: 'template', title: 'Template', hint: 'Insert one of your templates here', icon: LayoutTemplate, keywords: 'template insert structure', run: (e, r) => { del(e, r).run(); handlers.template?.(r) } },
     { id: 'divider', title: 'Divider', hint: 'Horizontal rule', icon: Minus, run: (e, r) => del(e, r).setHorizontalRule().run() },
     { id: 'ai-summary', title: 'AI summary', hint: 'Summarize this note inline', icon: Sparkles, ai: true, keywords: 'summarize', run: (e, r) => { del(e, r).run(); handlers.ai('summary', r) } },
     { id: 'ai-rewrite', title: 'AI rewrite', hint: 'Clean up the whole note', icon: Wand2, ai: true, run: (e, r) => { del(e, r).run(); handlers.ai('rewrite', r) } },

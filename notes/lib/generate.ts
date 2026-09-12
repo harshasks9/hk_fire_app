@@ -1,3 +1,4 @@
+import { withNotebookAi } from './session'
 /* Generated outputs (email, Slack, brief, memo…) from any note, meeting, company or topic. */
 import { getProvider } from './ai/provider'
 import type { OutputType } from './ai/types'
@@ -33,6 +34,10 @@ async function material(t: GenerateTarget): Promise<Material | null> {
 }
 
 export async function generateOutput(type: OutputType, target: GenerateTarget): Promise<{ text: string; provider: string; label: string }> {
+  return withNotebookAi(() => generateOutputInner(type, target))
+}
+
+async function generateOutputInner(type: OutputType, target: GenerateTarget): Promise<{ text: string; provider: string; label: string }> {
   const m = await material(target)
   const label = OUTPUT_TYPES.find((o) => o.id === type)?.label ?? type
   if (!m) return { text: 'Nothing to generate from.', provider: 'none', label }

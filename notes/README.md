@@ -127,3 +127,25 @@ Notes is an installable web app (PWA). On a phone, open notes.hkfire.app and use
 - **Touch-first shell**: bottom navigation with a central capture button, a formatting bar in the editor (no keyboard shortcuts needed), the intelligence panel as a bottom sheet (✦ in the top bar), larger tap targets on touch screens, and 16px form fields so iOS never zooms the page.
 - **Works offline**: a service worker (`public/sw.js`) keeps every page you have opened readable without a connection and always keeps the offline notepad (`/offline`) available.
 - **Offline capture and editing**: quick captures, edits to existing notes and new notes written in the offline notepad are stored on the device (IndexedDB, `lib/offline/`) and replayed in order the moment the app is back online. Replays keep the original timestamp and context, and go through the same AI filing as anything else. The top bar shows how many changes are waiting; `/offline` lists them with retry and discard.
+
+
+## Notebooks for other people (admin)
+
+One deployment can host many private notebooks. The first account (the owner) is the platform **admin** and sees **Admin** in the sidebar:
+
+- **Create a notebook** for someone: name, owner name and email, then either a one-time temporary password or an invite link (valid 7 days). Tick *Load sample data* to start them with the demo content instead of an empty notebook.
+- **Invite members** into an existing notebook, **reset passwords**, **disable/enable** or **delete** notebooks, and **enter** a notebook to see what its owner sees (shown with a banner and recorded).
+- The **audit log** records every administrative action; the usage cards show notes and AI calls per notebook.
+
+Every query, page, API and background job is scoped to one notebook: contexts belong to a notebook, so a user of notebook B gets *not found* for anything in notebook A, including search and Ask. Sign-in is email + password (leave the email blank to sign in as the owner with `APP_PASSWORD`, or set your own password in Settings → Account).
+
+## Platform features
+
+- **Bring your own AI keys** — Settings → *AI for this notebook*: use the deployment's shared keys, your own Anthropic/Gemini keys (encrypted at rest with `SESSION_SECRET`/`ENCRYPTION_KEY`), or run local-only. *Test this configuration* runs a real call.
+- **Capture from anywhere** — Settings → *Capture from anywhere* creates a token for `POST /api/capture` with `Authorization: Bearer hkn_…` (JSON or multipart), for iOS Shortcuts, Zapier or scripts. Captures land in the Inbox and are filed by AI.
+- **Templates** — seven built-ins (meeting notes, 1:1, decision record, weekly review, project brief, customer call, daily journal) plus your own (*Save as template* in a note's menu). *New note from template* on the Notes page or in the command bar; `/template` in the editor; `{{date}} {{time}} {{weekday}} {{title}} {{notebook}} {{name}}` placeholders.
+- **Version history** — every analyzed save keeps a version (the pre-edit state is kept as *original*); *Version history…* in a note's menu shows them with word deltas and one-click restore.
+- **Share links** — *Share read-only link…* creates a public `/s/<token>` page (7 days, 30 days or no expiry) with view counts and revocation; the notebook owner can turn public links off entirely in Settings → Sharing.
+- **Trash** — deleted notes wait 30 days in `/trash` with restore and delete-forever; the nightly cron purges older ones together with everything derived from them.
+- **Import** — Settings → Import takes Markdown/text files (front matter or first heading become the title, dates are preserved) and the app's own JSON export; duplicates are skipped and every note is analyzed.
+- **Weekly review** — `/review`: notes, meetings, decisions, changed numbers, actions closed/added/overdue, new people and companies and aging open loops for any week, plus an AI-written narrative from those facts only.

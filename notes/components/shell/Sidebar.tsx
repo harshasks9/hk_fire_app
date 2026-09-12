@@ -2,7 +2,7 @@
 import * as React from 'react'
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
-import { Home, Inbox, FileText, CalendarDays, CheckSquare, Users, Hash, FlaskConical, Search, Sparkles, Settings, PanelLeftClose, PanelLeftOpen, Plus, Building2, Star, Clock, GitBranch, Repeat, ChevronsUpDown, Check } from 'lucide-react'
+import { Home, Inbox, FileText, CalendarDays, CheckSquare, Users, Hash, FlaskConical, Search, Sparkles, Settings, PanelLeftClose, PanelLeftOpen, Plus, Building2, Star, Clock, GitBranch, Repeat, ChevronsUpDown, Check, ShieldCheck, CalendarRange } from 'lucide-react'
 import { setShell, useShell } from './store'
 import { cx } from '@/lib/util'
 import { Avatar } from '@/components/ui'
@@ -18,6 +18,8 @@ export interface SidebarProps {
   pinned: { id: string; name: string; type: string }[]
   inboxCount: number
   userName: string
+  isAdmin?: boolean
+  notebookName?: string
 }
 
 const NAV = [
@@ -34,6 +36,7 @@ const NAV = [
   { href: '/research', label: 'Research', icon: FlaskConical },
   { href: '/search', label: 'Search', icon: Search },
   { href: '/ask', label: 'Ask', icon: Sparkles },
+  { href: '/review', label: 'Weekly review', icon: CalendarRange },
 ]
 
 export function Sidebar(props: SidebarProps) {
@@ -114,13 +117,19 @@ export function Sidebar(props: SidebarProps) {
       </div>
 
       <div className={cx('border-t border-border p-2', collapsed && 'flex flex-col items-center gap-1')}>
+        {props.isAdmin ? (
+          <Link href="/admin" className={cx('flex items-center gap-2.5 rounded-lg px-2 py-1.5 text-[13.5px] text-fg-2 hover:bg-surface-2 hover:text-fg', pathname.startsWith('/admin') && 'bg-surface-2 text-fg', collapsed && 'justify-center px-0')} title="Admin">
+            <ShieldCheck className="h-4 w-4 text-fg-3" />
+            {!collapsed ? 'Admin' : null}
+          </Link>
+        ) : null}
         <Link href="/settings" className={cx('flex items-center gap-2.5 rounded-lg px-2 py-1.5 text-[13.5px] text-fg-2 hover:bg-surface-2 hover:text-fg', pathname.startsWith('/settings') && 'bg-surface-2 text-fg', collapsed && 'justify-center px-0')} title="Settings">
           <Settings className="h-4 w-4 text-fg-3" />
           {!collapsed ? 'Settings' : null}
         </Link>
         <Link href="/settings#account" className={cx('mt-0.5 flex items-center gap-2.5 rounded-lg px-2 py-1.5 text-[13.5px] text-fg-2 hover:bg-surface-2 hover:text-fg', collapsed && 'justify-center px-0')} title="Account">
           <Avatar name={props.userName} size={20} />
-          {!collapsed ? <span className="truncate">{props.userName}</span> : null}
+          {!collapsed ? <span className="min-w-0 flex-1 truncate">{props.userName}{props.notebookName && props.notebookName !== 'Primary' ? <span className="text-fg-3"> · {props.notebookName}</span> : null}</span> : null}
         </Link>
       </div>
     </nav>

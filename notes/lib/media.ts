@@ -1,12 +1,16 @@
 /* Media understanding boundary. With Gemini configured, images are described/OCR'd and audio is transcribed; otherwise these return null and the UI falls back to client-side transcription or a plain attachment. */
 import { logAiCall } from './ai/log'
+import { effectiveKeys } from './ai/scope'
+import { withNotebookAi } from './session'
+import { resolveGeminiModels } from './ai/gemini-models'
 
 const API = 'https://generativelanguage.googleapis.com/v1beta/models'
 
 async function gemini(parts: unknown[], purpose: string): Promise<string | null> {
-  const key = process.env.GEMINI_API_KEY
+  const keys = effectiveKeys()
+  const key = keys.preference === 'local' ? undefined : keys.gemini
   if (!key) return null
-  const model = process.env.GEMINI_MODEL || 'gemini-2.5-flash'
+  const model = (await resolveGeminiModels(key)).generation
   const started = Date.now()
   try {
     const res = await fetch(`${API}/${model}:generateContent`, { method: 'POST', headers: { 'Content-Type': 'application/json', 'x-goog-api-key': key }, body: JSON.stringify({ contents: [{ role: 'user', parts }] }), signal: AbortSignal.timeout(60_000) })
@@ -22,13 +26,15 @@ async function gemini(parts: unknown[], purpose: string): Promise<string | null>
 }
 
 export async function describeImage(bytes: Buffer, mime: string): Promise<string | null> {
-  return gemini([{ text: 'Transcribe all text in this image verbatim, then add one sentence describing what it shows. Plain text.' }, { inlineData: { mimeType: mime, data: bytes.toString('base64') } }], 'describe-image')
+  return withNotebookAi(() => gemini([{ text: 'Transcribe all text in this image verbatim, then add one sentence describing what it shows. Plain text.' }, { inlineData: { mimeType: mime, data: bytes.toString('base64') } }], 'describe-image'))
 }
 
 export async function transcribeAudio(bytes: Buffer, mime: string): Promise<string | null> {
-  return gemini([{ text: 'Transcribe this audio verbatim as plain text. If there are multiple speakers, prefix lines with "Speaker 1:", "Speaker 2:".' }, { inlineData: { mimeType: mime, data: bytes.toString('base64') } }], 'transcribe-audio')
+  return withNotebookAi(() => gemini([{ text: 'Transcribe this audio verbatim as plain text. If there are multiple speakers, prefix lines with "Speaker 1:", "Speaker 2:".' }, { inlineData: { mimeType: mime, data: bytes.toString('base64') } }], 'transcribe-audio'))
 }
 
 export function mediaCapabilities() {
-  return { serverTranscription: Boolean(process.env.GEMINI_API_KEY), imageUnderstanding: Boolean(process.env.GEMINI_API_KEY) }
+  const keys = effectiveKeys()
+  const on = Boolean(keys.gemini) && keys.preference !== 'local'
+  return { serverTranscription: on, imageUnderstanding: on }
 }

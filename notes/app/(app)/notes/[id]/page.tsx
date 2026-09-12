@@ -30,7 +30,7 @@ export default async function NotePage({ params, searchParams }: { params: Promi
   return (
     <Page width="narrow" className="pt-5">
       <div className="mb-1 flex items-center justify-end">
-        <NoteActions noteId={d.note.id} favorite={d.note.favorite} privacy={d.note.privacy} researchProjects={research.map((r) => ({ id: r.id, name: r.name }))} researchProjectId={d.note.researchProjectId} />
+        <NoteActions noteId={d.note.id} favorite={d.note.favorite} privacy={d.note.privacy} researchProjects={research.map((r) => ({ id: r.id, name: r.name }))} researchProjectId={d.note.researchProjectId} title={d.note.title} />
       </div>
       <NoteEditor
         noteId={d.note.id}

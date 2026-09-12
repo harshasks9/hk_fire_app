@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server'
 import { reprocessBatch } from '@/lib/pipeline'
+import { sessionContextIds } from '@/lib/tenant'
 export const maxDuration = 60
 
 /**
@@ -16,6 +17,6 @@ export async function POST(req: Request) {
   } catch {
     /* no body: start from the beginning */
   }
-  const batch = await reprocessBatch({ offset, budgetMs: 40_000 })
+  const batch = await reprocessBatch({ contextIds: await sessionContextIds(), offset, budgetMs: 40_000 })
   return NextResponse.json({ ok: true, ...batch })
 }

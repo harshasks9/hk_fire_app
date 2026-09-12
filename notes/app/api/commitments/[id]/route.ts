@@ -1,8 +1,11 @@
+import { guardOwned } from '@/lib/api'
 import { NextRequest, NextResponse } from 'next/server'
 import { getDb, schema } from '@/lib/db'
 import { eq } from 'drizzle-orm'
 export async function PATCH(req: NextRequest, { params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
+  const denied = await guardOwned('commitment', id)
+  if (denied) return denied
   const b = (await req.json()) as { status?: 'open' | 'resolved' | 'dismissed'; priority?: 'low' | 'normal' | 'high' | 'urgent' }
   const db = await getDb()
   const set: Record<string, unknown> = {}
