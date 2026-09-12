@@ -1,7 +1,11 @@
 'use client'
 import * as React from 'react'
 import { useRouter } from 'next/navigation'
-import { Plus, Copy, Check, KeyRound, Link2, Power, Trash2, LogIn, ChevronDown, ChevronRight, ShieldCheck, Users, BookOpen, Sparkles, AlertTriangle } from 'lucide-react'
+import { Plus, Copy, Check, KeyRound, Link2, Power, Trash2, LogIn, ChevronDown, ChevronRight, ShieldCheck, Users, BookOpen, Sparkles, AlertTriangle, UserPlus, Activity, DollarSign } from 'lucide-react'
+import { PeopleTab } from './PeopleTab'
+import { PlatformSettingsTab } from './PlatformSettingsTab'
+import type { PlatformSettings } from '@/lib/platform'
+import { PLANS } from '@/lib/plans-spec'
 import { Button, Badge, useToast, Spinner } from '@/components/ui'
 import { Dialog } from '@/components/ui/Dialog'
 import { api } from '@/lib/client'
@@ -9,7 +13,7 @@ import { cx, relativeTime } from '@/lib/util'
 
 type Member = { id: string; name: string; email: string | null; role: string; status: string; lastLoginAt: string | null }
 export interface NotebookRowVM {
-  notebook: { id: string; slug: string; name: string; status: string; ownerUserId: string | null; createdAt: string; updatedAt: string; lastActiveAt: string | null; settings: { aiMode?: string; sampleData?: boolean } }
+  notebook: { id: string; slug: string; name: string; status: string; ownerUserId: string | null; createdAt: string; updatedAt: string; lastActiveAt: string | null; plan: string; planExpiresAt: string | null; settings: { aiMode?: string; sampleData?: boolean } }
   owner: { id: string; name: string; email: string | null } | null
   members: Member[]
   pendingInvites: number
@@ -17,12 +21,14 @@ export interface NotebookRowVM {
   aiCalls7d: number
   aiFailed7d: number
 }
-interface Totals { notebooks: number; users: number; notes: number; aiCallsToday: number; aiCalls7d: number; aiFailed7d: number }
+interface Totals { notebooks: number; users: number; notes: number; aiCallsToday: number; aiCalls7d: number; aiFailed7d: number; signups7d: number; active7d: number; plans: Record<string, number>; mrr: number }
+type Tab = 'overview' | 'notebooks' | 'people' | 'settings'
 interface EventVM { id: string; actorName: string | null; action: string; targetType: string | null; targetName: string | null; meta: Record<string, unknown>; createdAt: string }
 
-export function AdminClient({ currentNotebookId, currentUserId, totals, notebooks, events }: { currentNotebookId: string; currentUserId: string; totals: Totals; notebooks: NotebookRowVM[]; events: EventVM[] }) {
+export function AdminClient({ currentNotebookId, currentUserId, totals, notebooks, events, platform, integrations }: { currentNotebookId: string; currentUserId: string; totals: Totals; notebooks: NotebookRowVM[]; events: EventVM[]; platform: PlatformSettings; integrations: { email: boolean; billing: boolean } }) {
   const router = useRouter()
   const toast = useToast()
+  const [tab, setTab] = React.useState<Tab>('overview')
   const [creating, setCreating] = React.useState(false)
   const [reveal, setReveal] = React.useState<{ title: string; lines: { label: string; value: string }[] } | null>(null)
   const [open, setOpen] = React.useState<string | null>(null)
@@ -33,18 +39,44 @@ export function AdminClient({ currentNotebookId, currentUserId, totals, notebook
     try { await fn(); router.refresh() } catch (e) { toast.push({ text: String((e as Error).message ?? e), tone: 'danger' }) } finally { setBusy(null) }
   }
 
+  const TABS: { id: Tab; label: string }[] = [{ id: 'overview', label: 'Overview' }, { id: 'notebooks', label: 'Notebooks' }, { id: 'people', label: 'People' }, { id: 'settings', label: 'Settings' }]
   return (
     <div className="space-y-8">
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
-        <Stat icon={<BookOpen className="h-4 w-4" />} label="Notebooks" value={totals.notebooks} />
-        <Stat icon={<Users className="h-4 w-4" />} label="People" value={totals.users} />
-        <Stat icon={<BookOpen className="h-4 w-4" />} label="Notes" value={totals.notes} />
-        <Stat icon={<Sparkles className="h-4 w-4" />} label="AI calls today" value={totals.aiCallsToday} />
-        <Stat icon={<Sparkles className="h-4 w-4" />} label="AI calls · 7d" value={totals.aiCalls7d} />
-        <Stat icon={<AlertTriangle className="h-4 w-4" />} label="AI failures · 7d" value={totals.aiFailed7d} tone={totals.aiFailed7d ? 'warning' : undefined} />
+      <div className="flex gap-1 overflow-x-auto border-b border-border">
+        {TABS.map((t) => <button key={t.id} onClick={() => setTab(t.id)} className={cx('-mb-px whitespace-nowrap border-b-2 px-3 py-2 text-[13.5px]', tab === t.id ? 'border-accent font-medium text-fg' : 'border-transparent text-fg-2 hover:text-fg')}>{t.label}</button>)}
       </div>
 
-      <section>
+      {tab === 'overview' ? (
+        <>
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
+            <Stat icon={<BookOpen className="h-4 w-4" />} label="Notebooks" value={totals.notebooks} />
+            <Stat icon={<Users className="h-4 w-4" />} label="People" value={totals.users} />
+            <Stat icon={<UserPlus className="h-4 w-4" />} label="Sign-ups · 7d" value={totals.signups7d} />
+            <Stat icon={<Activity className="h-4 w-4" />} label="Active notebooks · 7d" value={totals.active7d} />
+            <Stat icon={<BookOpen className="h-4 w-4" />} label="Notes" value={totals.notes} />
+            <Stat icon={<Sparkles className="h-4 w-4" />} label="AI calls today" value={totals.aiCallsToday} />
+            <Stat icon={<Sparkles className="h-4 w-4" />} label="AI calls · 7d" value={totals.aiCalls7d} />
+            <Stat icon={<AlertTriangle className="h-4 w-4" />} label="AI failures · 7d" value={totals.aiFailed7d} tone={totals.aiFailed7d ? 'warning' : undefined} />
+            <Stat icon={<DollarSign className="h-4 w-4" />} label="Paid notebooks" value={(totals.plans.pro ?? 0) + (totals.plans.team ?? 0)} />
+            <Stat icon={<DollarSign className="h-4 w-4" />} label="MRR (list price)" value={totals.mrr} prefix="$" />
+          </div>
+          <div className="grid gap-3 sm:grid-cols-3">
+            {(['free', 'pro', 'team'] as const).map((p) => <div key={p} className="rounded-xl border border-border bg-surface px-3 py-2.5 text-[13px]"><div className="text-[11.5px] uppercase tracking-[0.06em] text-fg-3">{PLANS[p].name} plan</div><div className="mt-0.5 text-[18px] font-semibold tabular-nums">{totals.plans[p] ?? 0} <span className="text-[12px] font-normal text-fg-3">notebooks</span></div></div>)}
+          </div>
+          <div className="flex flex-wrap gap-2 text-[12.5px]">
+            <Badge tone={platform.signupMode === 'open' ? 'success' : platform.signupMode === 'invite' ? 'warning' : 'danger'}>sign-ups: {platform.signupMode}</Badge>
+            <Badge tone={integrations.email ? 'success' : 'outline'}>email {integrations.email ? 'configured' : 'not configured (links shown in UI)'}</Badge>
+            <Badge tone={integrations.billing ? 'success' : 'outline'}>billing {integrations.billing ? 'Stripe' : 'manual plans'}</Badge>
+            <Badge tone={platform.requireEmailVerification ? 'accent' : 'outline'}>verification {platform.requireEmailVerification ? 'required' : 'optional'}</Badge>
+          </div>
+          <AuditLog events={events} />
+        </>
+      ) : null}
+
+      {tab === 'people' ? <PeopleTab currentUserId={currentUserId} /> : null}
+      {tab === 'settings' ? <PlatformSettingsTab initial={platform} integrations={integrations} /> : null}
+
+      {tab === 'notebooks' ? <section>
         <div className="mb-3 flex items-center justify-between gap-3">
           <h2 className="text-[13px] font-semibold uppercase tracking-[0.06em] text-fg-2">Notebooks</h2>
           <Button variant="primary" onClick={() => setCreating(true)}><Plus className="h-4 w-4" /> New notebook</Button>
@@ -59,6 +91,7 @@ export function AdminClient({ currentNotebookId, currentUserId, totals, notebook
                 <th className="px-3 py-2 text-right font-semibold">Notes</th>
                 <th className="px-3 py-2 text-right font-semibold">AI · 7d</th>
                 <th className="px-3 py-2 font-semibold">Last active</th>
+                <th className="px-3 py-2 font-semibold">Plan</th>
                 <th className="px-3 py-2 font-semibold">Status</th>
                 <th className="px-3 py-2" />
               </tr>
@@ -85,6 +118,7 @@ export function AdminClient({ currentNotebookId, currentUserId, totals, notebook
                       <td className="px-3 py-2.5 text-right tabular-nums">{r.notes}</td>
                       <td className="px-3 py-2.5 text-right tabular-nums">{r.aiCalls7d}{r.aiFailed7d ? <span className="text-warning"> · {r.aiFailed7d} failed</span> : null}</td>
                       <td className="px-3 py-2.5 text-fg-2" suppressHydrationWarning>{nb.lastActiveAt ? relativeTime(nb.lastActiveAt) : '—'}</td>
+                      <td className="px-3 py-2.5"><Badge tone={nb.plan === 'free' ? 'neutral' : 'accent'}>{nb.plan}</Badge>{nb.planExpiresAt ? <div className="text-[11px] text-fg-3" suppressHydrationWarning>until {new Date(nb.planExpiresAt).toLocaleDateString()}</div> : null}</td>
                       <td className="px-3 py-2.5">{nb.status === 'active' ? <Badge tone="success">active</Badge> : <Badge tone="danger">disabled</Badge>}</td>
                       <td className="px-3 py-2.5 text-right">
                         {!isCurrent ? <Button size="sm" variant="ghost" loading={busy === `enter:${nb.id}`} onClick={() => run(`enter:${nb.id}`, async () => { await api(`/api/admin/notebooks/${nb.id}/enter`, { method: 'POST' }); router.push('/') })} title="View this notebook as admin"><LogIn className="h-3.5 w-3.5" /> Enter</Button> : null}
@@ -92,7 +126,7 @@ export function AdminClient({ currentNotebookId, currentUserId, totals, notebook
                     </tr>
                     {expanded ? (
                       <tr className="border-b border-border bg-surface-2/40">
-                        <td colSpan={8} className="px-3 pb-4 pt-1">
+                        <td colSpan={9} className="px-3 pb-4 pt-1">
                           <NotebookDetail row={r} currentUserId={currentUserId} busy={busy} run={run} onReveal={setReveal} />
                         </td>
                       </tr>
@@ -103,26 +137,30 @@ export function AdminClient({ currentNotebookId, currentUserId, totals, notebook
             </tbody>
           </table>
         </div>
-      </section>
-
-      <section>
-        <h2 className="mb-3 text-[13px] font-semibold uppercase tracking-[0.06em] text-fg-2">Audit log</h2>
-        {events.length === 0 ? <p className="text-[13.5px] text-fg-3">No administrative actions yet.</p> : (
-          <ul className="divide-y divide-border rounded-xl border border-border bg-surface">
-            {events.map((e) => (
-              <li key={e.id} className="flex flex-wrap items-center gap-x-3 gap-y-0.5 px-3 py-2 text-[13px]">
-                <span className="w-24 shrink-0 text-[12px] text-fg-3" suppressHydrationWarning>{relativeTime(e.createdAt)}</span>
-                <ShieldCheck className="h-3.5 w-3.5 shrink-0 text-accent" />
-                <span><strong>{e.actorName ?? 'system'}</strong> · {describe(e)}</span>
-              </li>
-            ))}
-          </ul>
-        )}
-      </section>
+      </section> : null}
 
       {creating ? <CreateNotebookDialog onClose={() => setCreating(false)} onCreated={(r) => { setCreating(false); setReveal(r); router.refresh() }} /> : null}
       {reveal ? <RevealDialog data={reveal} onClose={() => setReveal(null)} /> : null}
     </div>
+  )
+}
+
+function AuditLog({ events }: { events: EventVM[] }) {
+  return (
+    <section>
+      <h2 className="mb-3 text-[13px] font-semibold uppercase tracking-[0.06em] text-fg-2">Audit log</h2>
+      {events.length === 0 ? <p className="text-[13.5px] text-fg-3">No administrative actions yet.</p> : (
+        <ul className="divide-y divide-border rounded-xl border border-border bg-surface">
+          {events.map((e) => (
+            <li key={e.id} className="flex flex-wrap items-center gap-x-3 gap-y-0.5 px-3 py-2 text-[13px]">
+              <span className="w-24 shrink-0 text-[12px] text-fg-3" suppressHydrationWarning>{relativeTime(e.createdAt)}</span>
+              <ShieldCheck className="h-3.5 w-3.5 shrink-0 text-accent" />
+              <span><strong>{e.actorName ?? 'system'}</strong> · {describe(e)}</span>
+            </li>
+          ))}
+        </ul>
+      )}
+    </section>
   )
 }
 
@@ -144,15 +182,25 @@ function describe(e: EventVM) {
     case 'user.enable': return `enabled account ${t}`
     case 'user.remove': return `removed account ${t}`
     case 'user.role': return `changed role of ${t} to ${m.role}`
+    case 'user.signup': return `signed up and created notebook ${t} (${(m as { plan?: string }).plan ?? 'free'} plan)`
+    case 'user.verify': return `marked ${t} as verified`
+    case 'user.unverify': return `marked ${t} as unverified`
+    case 'user.signout-all': return `signed ${t} out everywhere`
+    case 'user.delete-self': return `deleted their own account`
+    case 'invite.revoke': return `revoked an invitation${m.email ? ` for ${m.email}` : ''}`
+    case 'notebook.plan': return `set the plan of ${t} to ${(m as { plan?: string }).plan}`
+    case 'platform.settings': return `changed platform settings (${((m as { keys?: string[] }).keys ?? []).join(', ')})`
+    case 'billing.subscribed': return `subscription started for a notebook (${(m as { plan?: string }).plan})`
+    case 'billing.cancelled': return `subscription ended for ${t}`
     default: return `${e.action} ${t}`
   }
 }
 
-function Stat({ icon, label, value, tone }: { icon: React.ReactNode; label: string; value: number; tone?: 'warning' }) {
+function Stat({ icon, label, value, tone, prefix = '' }: { icon: React.ReactNode; label: string; value: number; tone?: 'warning'; prefix?: string }) {
   return (
     <div className="rounded-xl border border-border bg-surface px-3 py-2.5">
       <div className="flex items-center gap-1.5 text-[11.5px] uppercase tracking-[0.06em] text-fg-3">{icon} {label}</div>
-      <div className={cx('mt-0.5 text-[20px] font-semibold tabular-nums', tone === 'warning' && 'text-warning')}>{value}</div>
+      <div className={cx('mt-0.5 text-[20px] font-semibold tabular-nums', tone === 'warning' && 'text-warning')}>{prefix}{value.toLocaleString()}</div>
     </div>
   )
 }
@@ -196,6 +244,15 @@ function NotebookDetail({ row, currentUserId, busy, run, onReveal }: { row: Note
       <div>
         <h4 className="mb-1.5 text-[11.5px] font-semibold uppercase tracking-[0.06em] text-fg-3">Notebook</h4>
         <div className="rounded-lg border border-border bg-surface px-3 py-2.5 text-[13px]">
+          <div className="mb-3 flex flex-wrap items-center gap-2 border-b border-border pb-3">
+            <span className="text-fg-2">Plan</span>
+            <select value={nb.plan} disabled={busy === `plan:${nb.id}`} onChange={(e) => run(`plan:${nb.id}`, () => api(`/api/admin/notebooks/${nb.id}`, { method: 'PATCH', json: { plan: e.target.value } }))} className="h-8 rounded-lg border border-border bg-surface px-2 text-[12.5px]">
+              {(['free', 'pro', 'team'] as const).map((p) => <option key={p} value={p}>{PLANS[p].name}{PLANS[p].priceMonthly ? ` ($${PLANS[p].priceMonthly}/mo)` : ''}</option>)}
+            </select>
+            <span className="text-fg-2">until</span>
+            <input type="date" defaultValue={nb.planExpiresAt ? nb.planExpiresAt.slice(0, 10) : ''} onBlur={(e) => { const v = e.target.value; if ((v || null) !== (nb.planExpiresAt ? nb.planExpiresAt.slice(0, 10) : null)) run(`planx:${nb.id}`, () => api(`/api/admin/notebooks/${nb.id}`, { method: 'PATCH', json: { plan: nb.plan, planExpiresAt: v ? new Date(v + 'T23:59:59Z').toISOString() : null } })) }} className="h-8 rounded-lg border border-border bg-surface px-2 text-[12.5px]" />
+            <span className="text-[12px] text-fg-3">Blank = no expiry. Stripe subscriptions manage this themselves.</span>
+          </div>
           <div className="flex flex-wrap items-center gap-2">
             <Button size="sm" variant="ghost" disabled={primary} loading={busy === `nbstatus:${nb.id}`} onClick={() => run(`nbstatus:${nb.id}`, () => api(`/api/admin/notebooks/${nb.id}`, { method: 'PATCH', json: { status: nb.status === 'active' ? 'disabled' : 'active' } }))}><Power className="h-3.5 w-3.5" /> {nb.status === 'active' ? 'Disable notebook' : 'Enable notebook'}</Button>
             <span className="text-[12px] text-fg-3">Disabled notebooks keep their data but nobody can sign in or capture into them.</span>

@@ -14,8 +14,9 @@ import { OfflineBadge } from '@/components/offline/OfflineBadge'
 import { GlobalTemplatePicker } from '@/components/notes/TemplatePicker'
 import { NavProgress } from './NavProgress'
 import { cx } from '@/lib/util'
+import { AnnouncementBanner, VerifyBanner } from './Banners'
 
-export function AppShell({ sidebar, children, viewingAsAdmin }: { sidebar: SidebarProps; children: React.ReactNode; viewingAsAdmin?: { notebookName: string } | null }) {
+export function AppShell({ sidebar, children, viewingAsAdmin, announcement, verifyEmail }: { sidebar: SidebarProps; children: React.ReactNode; viewingAsAdmin?: { notebookName: string } | null; announcement?: string; verifyEmail?: string | null }) {
   const { panelAvailable, panelOpen } = useShell()
   return (
     <ToastProvider>
@@ -24,6 +25,8 @@ export function AppShell({ sidebar, children, viewingAsAdmin }: { sidebar: Sideb
         <Sidebar {...sidebar} />
         <div className="flex min-w-0 flex-1 flex-col">
           {viewingAsAdmin ? <AdminBanner notebookName={viewingAsAdmin.notebookName} /> : null}
+          {announcement ? <AnnouncementBanner text={announcement} /> : null}
+          {verifyEmail ? <VerifyBanner email={verifyEmail} /> : null}
           {/* Mobile top bar */}
           <div className="flex h-[calc(48px+env(safe-area-inset-top))] shrink-0 items-center justify-between border-b border-border bg-surface px-3 pt-[env(safe-area-inset-top)] md:hidden">
             <ContextSwitcher contexts={sidebar.contexts} active={sidebar.active} />

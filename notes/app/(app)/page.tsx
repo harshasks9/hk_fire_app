@@ -9,13 +9,17 @@ import { greeting, formatTime, isToday, formatDate } from '@/lib/util'
 import { Briefing } from '@/components/home/Briefing'
 import { InsightRow, LoopRow, MeetingRow, NoteRow, TaskRow, EntityIcon } from '@/components/entities'
 import { entityHref } from '@/lib/ui-helpers'
+import { getSession } from '@/lib/session'
+import { OnboardingChecklist } from '@/components/home/OnboardingChecklist'
+import { authEnabled } from '@/lib/auth'
 
 export const dynamic = 'force-dynamic'
 
 export default async function Home() {
-  const ctx = await getActiveContext()
-  const userName = process.env.USER_NAME || 'Harsha'
+  const [ctx, session] = await Promise.all([getActiveContext(), getSession()])
+  const userName = session?.user.name?.split(/\s+/)[0] || process.env.USER_NAME || 'there'
   const h = await getHomeData(ctx.id)
+  const fresh = Boolean(session) && !session!.notebook.settings.sampleData && h.noteCount < 5
   const brief = { lines: briefLines(h) }
   const today = h.meetings.filter((m) => isToday(m.startsAt))
   const nextMeeting = h.meetings[0]
@@ -28,8 +32,9 @@ export default async function Home() {
         <p className="mt-1 text-[14px] text-fg-2">{formatDate(new Date(), { weekday: 'long', month: 'long', day: 'numeric' })} · {ctx.name}{nextMeeting ? ` · next: ${nextMeeting.title} ${isToday(nextMeeting.startsAt) ? formatTime(nextMeeting.startsAt) : formatDate(nextMeeting.startsAt, { weekday: 'short' })}` : ''}</p>
       </div>
 
+      {fresh ? <OnboardingChecklist noteCount={h.noteCount} verified={!authEnabled() || !session?.user.email || Boolean(session?.user.emailVerifiedAt)} canInvite={session?.role !== 'member'} /> : null}
       {empty ? (
-        <EmptyState title="Nothing here yet" description="Capture anything — a thought, a link, a voice note, a meeting. Organization is automatic." action={<Link href="/notes" className="text-[13.5px] font-medium text-accent">Start writing →</Link>} />
+        fresh ? null : <EmptyState title="Nothing here yet" description="Capture anything — a thought, a link, a voice note, a meeting. Organization is automatic." action={<Link href="/notes" className="text-[13.5px] font-medium text-accent">Start writing →</Link>} />
       ) : (
         <>
           <div className="mb-8"><Briefing initialLines={brief.lines} /></div>

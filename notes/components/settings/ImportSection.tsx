@@ -34,7 +34,7 @@ export function ImportSection({ contexts, activeContextId }: { contexts: { id: s
     }
   }
   return (
-    <section>
+    <section id="import">
       <h2 className="mb-3 flex items-center gap-1.5 text-[13px] font-semibold uppercase tracking-[0.06em] text-fg-2"><FileUp className="h-3.5 w-3.5" /> Import</h2>
       <p className="mb-3 text-[13.5px] text-fg-2">Bring notes in from Markdown or text files (Obsidian, Bear, Apple Notes exports, plain files) or from this app's own export. Titles and dates come from front matter or the first heading; duplicates are skipped; every note is analyzed like a new capture.</p>
       <div className="flex flex-wrap items-center gap-2">

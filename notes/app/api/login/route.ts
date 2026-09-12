@@ -6,6 +6,7 @@ import { getDb, schema } from '@/lib/db'
 import { ensureReady } from '@/lib/bootstrap'
 import { ownerUser, loadNotebook, DEFAULT_NOTEBOOK_ID } from '@/lib/session'
 import { findUserByEmail } from '@/lib/notebooks'
+import { getPlatformSettings } from '@/lib/platform'
 
 /**
   Sign in with email + password. An empty email means the owner account: it
@@ -32,9 +33,13 @@ export async function POST(req: NextRequest) {
   if (!notebook) return NextResponse.json({ error: 'Notebook not found' }, { status: 403 })
   if (notebook.status !== 'active' && user.role !== 'admin') return NextResponse.json({ error: 'This notebook has been disabled. Contact the administrator.' }, { status: 403 })
 
+  const platform = await getPlatformSettings()
+  if (platform.requireEmailVerification && user.role !== 'admin' && user.email && !user.emailVerifiedAt) {
+    return NextResponse.json({ error: 'Confirm your email address first. Check your inbox for the confirmation link, or request a new one.', code: 'unverified', email: user.email }, { status: 403 })
+  }
   const db = await getDb()
   await db.update(schema.users).set({ lastLoginAt: new Date() }).where(eq(schema.users.id, user.id))
   const res = NextResponse.json({ ok: true, role: user.role })
-  res.cookies.set(SESSION_COOKIE, await createSessionToken({ u: user.id, n: notebook.id, r: user.role }), { httpOnly: true, sameSite: 'lax', secure: process.env.NODE_ENV === 'production', path: '/', maxAge: SESSION_DAYS * 86400 })
+  res.cookies.set(SESSION_COOKIE, await createSessionToken({ u: user.id, n: notebook.id, r: user.role, v: user.tokenVersion ?? 0 }), { httpOnly: true, sameSite: 'lax', secure: process.env.NODE_ENV === 'production', path: '/', maxAge: SESSION_DAYS * 86400 })
   return res
 }

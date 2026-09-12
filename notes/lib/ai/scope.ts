@@ -15,6 +15,8 @@ export interface AiScope {
   anthropicKey?: string
   geminiKey?: string
   ownerName?: string
+  /** true when the plan's monthly AI budget forced local mode */
+  budgetExhausted?: boolean
 }
 
 const als = new AsyncLocalStorage<AiScope>()
