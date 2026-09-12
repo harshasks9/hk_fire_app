@@ -9,7 +9,7 @@ export async function middleware(req: NextRequest) {
     return NextResponse.next()
   }
   // Capture tokens (shortcuts, automations) authenticate the request themselves.
-  if (pathname === '/api/capture' && req.headers.get('authorization')?.startsWith('Bearer ')) {
+  if ((pathname === '/api/capture' || pathname.startsWith('/api/recordings')) && req.headers.get('authorization')?.startsWith('Bearer ')) {
     return NextResponse.next()
   }
   const token = req.cookies.get(SESSION_COOKIE)?.value

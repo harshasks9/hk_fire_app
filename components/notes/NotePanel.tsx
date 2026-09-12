@@ -6,6 +6,7 @@ import { formatDate, relativeTime } from '@/lib/util'
 import type { NoteDetail } from '@/lib/queries'
 import { AskInline } from '@/components/ask/AskInline'
 import { Sparkles } from 'lucide-react'
+import { TagEditor } from './TagChips'
 
 export function NotePanel({ d }: { d: NoteDetail }) {
   const people = d.entities.filter((e) => e.type === 'person')
@@ -16,6 +17,9 @@ export function NotePanel({ d }: { d: NoteDetail }) {
     <Panel>
       {d.note.privacy === 'ai_excluded' ? <p className="mb-4 rounded-lg bg-surface-2 px-3 py-2 text-[12.5px] text-fg-2">AI is excluded from this note. Nothing is extracted or indexed for retrieval.</p> : null}
       {d.note.status === 'processing' ? <p className="mb-4 inline-flex items-center gap-1.5 text-[12.5px] text-accent"><Sparkles className="h-3.5 w-3.5 animate-pulse" /> Understanding this note…</p> : null}
+      <PanelSection title="Tags">
+        <TagEditor noteId={d.note.id} auto={d.note.tags ?? []} manual={d.note.manualTags ?? []} />
+      </PanelSection>
       {s?.summary.length ? (
         <PanelSection title="AI summary">
           <ul className="list-disc space-y-1 pl-4 text-[13px] leading-snug">{s.summary.slice(0, 4).map((x, i) => <li key={i}>{x}</li>)}</ul>

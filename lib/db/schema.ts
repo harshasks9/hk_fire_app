@@ -131,6 +131,10 @@ export const notes = pgTable(
     source: text('source').notNull().default('editor'),
     sourceUrl: text('source_url'),
     wordCount: integer('word_count').notNull().default(0),
+    /** Tags derived from the content by the pipeline (lowercase, kebab-case). */
+    tags: jsonb('tags').$type<string[]>().notNull().default([]),
+    /** Tags the owner added by hand; kept across reprocessing. */
+    manualTags: jsonb('manual_tags').$type<string[]>().notNull().default([]),
     aiProcessedAt: timestamp('ai_processed_at', { withTimezone: true }),
     processingError: text('processing_error'),
     createdAt: now('created_at'),
@@ -160,11 +164,20 @@ export const meetings = pgTable(
     summary: jsonb('summary').$type<NoteSummary | null>(),
     followUpEmail: text('follow_up_email'),
     executiveReadout: text('executive_readout'),
+    /** Recording ingest (phone recordings / uploaded transcripts): where the background job is. */
+    ingestStatus: text('ingest_status').$type<IngestStatus | null>(),
+    ingestError: text('ingest_error'),
+    ingestStageAt: timestamp('ingest_stage_at', { withTimezone: true }),
+    /** The audio attachment the meeting was built from, when there is one. */
+    recordingAttachmentId: text('recording_attachment_id'),
+    durationSeconds: doublePrecision('duration_seconds'),
     createdAt: now('created_at'),
     updatedAt: now('updated_at'),
   },
   (t) => [index('meetings_context_start').on(t.contextId, t.startsAt)],
 )
+
+export type IngestStatus = 'queued' | 'uploading' | 'transcribing' | 'structuring' | 'filing' | 'done' | 'failed'
 
 export interface TranscriptSegment {
   t: number // seconds from start
@@ -178,7 +191,11 @@ export const transcripts = pgTable('transcripts', {
   segments: jsonb('segments').$type<TranscriptSegment[]>().notNull().default([]),
   text: text('text').notNull().default(''),
   language: text('language').default('en'),
-  source: text('source').notNull().default('live'), // 'live' | 'upload' | 'seed'
+  source: text('source').notNull().default('live'), // 'live' | 'upload' | 'api' | 'recording' | 'seed'
+  /** Generic labels from diarization mapped to people, e.g. { "Speaker 1": "Harsha" }. */
+  speakerMap: jsonb('speaker_map').$type<Record<string, string>>().notNull().default({}),
+  attachmentId: text('attachment_id'),
+  durationSeconds: doublePrecision('duration_seconds'),
   createdAt: now('created_at'),
 })
 

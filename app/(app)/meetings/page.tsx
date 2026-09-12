@@ -14,7 +14,7 @@ export default async function MeetingsPage() {
     <Page>
       <PageHeader title="Meetings" subtitle="Every meeting becomes a summary, decisions, actions and context for the next one." actions={<MeetingActions />} />
       {upcoming.length === 0 && past.length === 0 ? (
-        <EmptyState title="No meetings yet" description="Start a live meeting to capture a running transcript, or paste a transcript into a note." />
+        <EmptyState title="No meetings yet" description="Import a recording from your phone, start a live meeting to capture a running transcript, or paste a transcript into a note." />
       ) : (
         <>
           <Section title="Upcoming" count={upcoming.length} hint="prep is generated automatically">

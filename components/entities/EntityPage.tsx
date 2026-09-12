@@ -8,6 +8,7 @@ import { ensureEntitySummary } from '@/lib/entity-summary'
 import type { EntityDetail } from '@/lib/queries'
 import { formatDate, pluralize } from '@/lib/util'
 import { AiMark } from '@/components/ui'
+import { Share2 } from 'lucide-react'
 
 export async function EntityPage({ d }: { d: EntityDetail }) {
   const e = d.entity
@@ -40,6 +41,7 @@ export async function EntityPage({ d }: { d: EntityDetail }) {
             </div>
           </div>
           <div className="flex items-center gap-1">
+            <Link href={`/graph?focus=${e.type}:${e.id}`} className="inline-flex h-8 items-center gap-1 rounded-[9px] border border-border px-2.5 text-[12.5px] text-fg-2 hover:bg-surface-2 hover:text-fg" title="See in the graph"><Share2 className="h-3.5 w-3.5" /> Graph</Link>
             <PinButton id={e.id} pinned={e.pinned} />
             <GenerateMenu target={{ type: 'entity', id: e.id }} />
           </div>

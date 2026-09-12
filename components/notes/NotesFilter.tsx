@@ -2,18 +2,19 @@
 import * as React from 'react'
 import { useRouter } from 'next/navigation'
 import { Search } from 'lucide-react'
-export function NotesFilter({ initial, view }: { initial: string; view: string }) {
+export function NotesFilter({ initial, view, tag }: { initial: string; view: string; tag?: string }) {
   const router = useRouter()
   const [q, setQ] = React.useState(initial)
   React.useEffect(() => {
     const t = setTimeout(() => {
       const p = new URLSearchParams()
       if (view !== 'all') p.set('view', view)
+      if (tag) p.set('tag', tag)
       if (q.trim()) p.set('q', q.trim())
       router.replace(`/notes${p.toString() ? `?${p}` : ''}`)
     }, 250)
     return () => clearTimeout(t)
-  }, [q, view, router])
+  }, [q, view, tag, router])
   return (
     <label className="flex h-8 items-center gap-2 rounded-lg border border-border px-2.5 text-[13px] text-fg-3 focus-within:border-accent pointer-coarse:h-10">
       <Search className="h-3.5 w-3.5" />

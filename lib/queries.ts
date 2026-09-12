@@ -1,6 +1,7 @@
 /* Read models for every screen. All scoped to a context unless stated. */
 import { and, asc, desc, eq, gte, inArray, isNull, lt, lte, or, sql, ilike, ne } from 'drizzle-orm'
 import { getDb, schema } from './db'
+import { allTagsOf, hasTagSql } from './tags'
 import type { Commitment, Decision, Entity, EntityType, Fact, Meeting, Note, Task, TimelineEvent, Insight, Change, ResearchProject } from './db/schema'
 import { addDays, startOfDay } from './util'
 import { cosineDistance } from 'drizzle-orm'
@@ -11,11 +12,12 @@ const live = isNull(schema.notes.deletedAt)
 
 /* --------------------------------------------------------------- notes */
 
-export interface NoteListItem { id: string; title: string; kind: Note['kind']; status: Note['status']; updatedAt: Date; createdAt: Date; favorite: boolean; preview: string; wordCount: number; entities: { id: string; name: string; type: EntityType }[]; source: string; summary: Note['summary'] }
+export interface NoteListItem { id: string; title: string; kind: Note['kind']; status: Note['status']; updatedAt: Date; createdAt: Date; favorite: boolean; preview: string; wordCount: number; entities: { id: string; name: string; type: EntityType }[]; source: string; summary: Note['summary']; tags: string[] }
 
-export async function listNotes(contextId: string, opts: { limit?: number; kind?: string; favorite?: boolean; q?: string; researchProjectId?: string; inbox?: boolean } = {}): Promise<NoteListItem[]> {
+export async function listNotes(contextId: string, opts: { limit?: number; kind?: string; favorite?: boolean; q?: string; researchProjectId?: string; inbox?: boolean; tag?: string } = {}): Promise<NoteListItem[]> {
   const db = await getDb()
   const conds = [eq(schema.notes.contextId, contextId), live]
+  if (opts.tag) conds.push(hasTagSql(opts.tag))
   if (opts.kind) conds.push(eq(schema.notes.kind, opts.kind as Note['kind']))
   if (opts.favorite) conds.push(eq(schema.notes.favorite, true))
   if (opts.researchProjectId) conds.push(eq(schema.notes.researchProjectId, opts.researchProjectId))
@@ -43,7 +45,7 @@ async function attachEntities(rows: Note[]): Promise<NoteListItem[]> {
   const byNote = new Map<string, { id: string; name: string; type: EntityType; m: number }[]>()
   for (const m of mentions) byNote.set(m.noteId, [...(byNote.get(m.noteId) ?? []), m])
   return rows.map((r) => ({
-    id: r.id, title: r.title, kind: r.kind, status: r.status, updatedAt: r.updatedAt, createdAt: r.createdAt, favorite: r.favorite, wordCount: r.wordCount, source: r.source, summary: r.summary,
+    id: r.id, title: r.title, kind: r.kind, status: r.status, updatedAt: r.updatedAt, createdAt: r.createdAt, favorite: r.favorite, wordCount: r.wordCount, source: r.source, summary: r.summary, tags: allTagsOf(r),
     preview: (r.summary?.summary[0] ?? r.contentText.replace(/\s+/g, ' ')).slice(0, 180),
     entities: (byNote.get(r.id) ?? []).sort((a, b) => order(a.type) - order(b.type) || b.m - a.m).slice(0, 4).map(({ id, name, type }) => ({ id, name, type })),
   }))

@@ -26,7 +26,8 @@ Return ONLY a JSON object with this exact shape (omit nothing; use empty arrays 
   "risks": ["..."],
   "questions": ["open / unresolved questions"],
   "dates": [{"label": "September close", "date": "YYYY-MM-DD if determinable", "excerpt": ""}],
-  "opportunities": ["..."]
+  "opportunities": ["..."],
+  "tags": ["4-8 short lowercase kebab-case tags for finding this note later: subject matter, activity and stage, e.g. 'pricing', 'hiring', 'q4-planning', 'customer-call', 'renewal', 'architecture'"]
 }
 
 Rules:

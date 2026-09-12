@@ -10,7 +10,7 @@ import { Sparkles } from 'lucide-react'
 
 export const dynamic = 'force-dynamic'
 
-const SOURCE_LABEL: Record<string, string> = { 'quick-capture': 'Quick capture', voice: 'Voice note', share: 'Shared link', upload: 'Upload', email: 'Email', transcript: 'Meeting transcript', seed: 'Sample' }
+const SOURCE_LABEL: Record<string, string> = { 'quick-capture': 'Quick capture', voice: 'Voice note', share: 'Shared link', upload: 'Upload', email: 'Email', transcript: 'Meeting transcript', recording: 'Meeting recording', 'recording:auto': 'Meeting recording', api: 'API capture', seed: 'Sample' }
 
 export default async function InboxPage() {
   const ctx = await getActiveContext()

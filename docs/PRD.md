@@ -124,3 +124,39 @@ Companion to `docs/BRD.md`. Requirement IDs are referenced from code comments an
 - N3. No secrets in logs; tokens and keys never appear in API responses after creation.
 - N4. All new pages work at phone width and inherit the offline shell (pages you open are readable offline; writes queue).
 - N5. Type-check, unit tests and a Playwright smoke test (create notebook → invite → sign in → isolation) pass before deploy.
+
+---
+
+## 12. Meeting recordings from a phone (F10)
+
+Goal: a recording made on a phone (or the transcript an app produced from it) becomes a structured meeting note in the right context, connected to what the notebook already knows, with no manual filing.
+
+- R1. Ways in: *Meetings → Import recording* in the app (audio up to 80 MB uploaded in 3 MB pieces; `.txt`, `.vtt`, `.srt`, `.json` or pasted transcripts) and `POST /api/recordings` for Shortcuts and automations (session cookie or capture token; JSON, multipart or a plain-text body). Both answer immediately with the meeting to open.
+- R2. Every job reports its stage on the meeting (`uploading → queued → transcribing → structuring → filing → done | failed`) with the error when it fails; the import page and the meeting page follow it live and offer *Try again*.
+- R3. Transcription (audio only): Gemini, diarized (`Speaker N`) with turn timestamps; recordings above the inline limit are sent through the Files API. Without a Gemini key the job fails with an actionable message; pasting the transcript always works.
+- R4. Transcript parsing without a model: speaker-labelled lines, timestamp prefixes, WebVTT, SRT, JSON and plain paragraphs. Speakers and times are preserved in the `transcripts` row.
+- R5. Context: an explicit context wins; otherwise the job scores the notebook's contexts by known people/companies mentioned and lets the model break ties, defaulting to Work.
+- R6. Prior knowledge fed to structuring: known entities of the context, the last meetings involving the mentioned people/companies, open loops, open tasks, earlier decisions and latest numbers about them.
+- R7. Structuring output (one model call, JSON): title, attendees with `speaker → name` and confidence, purpose, context links, summary, key points, decisions, action items with owner/due, open questions, numbers, risks, next steps, plus the standard extraction fields. Generic speaker labels are only renamed at confidence ≥ 0.6 and never become people.
+- R8. The note = structured sections (marked as generated) + `## Transcript` verbatim with resolved speaker names; the meeting gets the title, duration and end time; attendees become `attended` relations; the extraction is filed through the pipeline without a second model call.
+- R9. The recording is kept as an attachment (playable on the meeting page) and referenced from the transcript; the audio is never modified.
+- R10. Isolation: every recordings route verifies the meeting/attachment belongs to the caller's notebook; tokens only reach their own notebook.
+
+---
+
+## 13. Automatic tags (F11)
+
+- G1. The pipeline stores `notes.tags` (auto) and keeps `notes.manual_tags` (owner-added) separately; both are lowercase kebab-case, at most 32 characters, deduplicated; automatic tags are capped at 12.
+- G2. Sources of automatic tags, in order: the model's `tags` array in the extraction, topics and projects as slugs, then signal tags (`meeting`, `voice-note`, `link`, `screenshot`, `recording`, `decision`, `action-items`, `open-loop`, `numbers`, `risk`). The local extractor uses a vocabulary tagger.
+- G3. Notes page: `?tag=` filter, top-tag chip row with the active tag highlighted, tags on each row. Note panel: editable tags (add, remove suggested, remove own). Meeting page shows the note's tags.
+- G4. Search: `tag:x` and `#x` filters (repeatable) restrict keyword and semantic note hits; a tag-only query lists tagged notes newest first; tag names matching the query appear as a *Tags* group.
+- G5. `/tags`: every tag with counts, sized by frequency, linking to the filtered Notes page; a backfill control reprocesses untagged notes in slices until none remain.
+
+## 14. Graph explorer (F12)
+
+- H1. `GET /api/graph` returns nodes (`person`, `company`, `topic`, `project`, `tag`, `note`, `meeting`, `decision`) and edges for the active context (or all contexts), in overview or focus mode, capped (default 160 nodes, `truncated` flag).
+- H2. Overview: top entities by mentions and top tags; edges from explicit relations, co-mentions (≥2 shared notes) and tag↔entity co-occurrence (≥2 notes); notes, meetings and decisions are opt-in types.
+- H3. Focus: the seed node plus direct neighbours across all types (relations, mentions, tags, meetings, decisions, related notes by shared entities); depth 2 expands entity and tag neighbours with a per-node cap.
+- H4. Client: animated force layout with auto-fit, pan/zoom/pinch, node dragging (pins), type filters with counts, in-graph search, hover highlighting, a detail panel listing every connection with its relation, *Focus here*, *Open*, double-click to open; URL reflects focus/types/depth.
+- H5. Entry points: sidebar *Graph*, command bar, *See in the graph* on notes, entity pages, meeting pages and the tags page.
+

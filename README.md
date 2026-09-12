@@ -129,6 +129,20 @@ Notes is an installable web app (PWA). On a phone, open notes.hkfire.app and use
 - **Offline capture and editing**: quick captures, edits to existing notes and new notes written in the offline notepad are stored on the device (IndexedDB, `lib/offline/`) and replayed in order the moment the app is back online. Replays keep the original timestamp and context, and go through the same AI filing as anything else. The top bar shows how many changes are waiting; `/offline` lists them with retry and discard.
 
 
+## Meeting recordings from your phone
+
+Record a meeting on your iPhone (Voice Memos, the Phone app's call recording, Notes, Otter…) and the recording or its transcript becomes a **structured meeting note** filed into the right context and connected to everything already known about the people in it.
+
+- **Ways in**: *Meetings → Import recording* (drop an audio file up to 80 MB — uploaded in pieces — or a `.txt` / `.vtt` / `.srt` / `.json` transcript, or paste text); `POST /api/recordings` with a capture token from an iOS Shortcut, a script or an automation (JSON `{"transcript": "…"}` or multipart `audio=` / `transcript=`, optional `title`, `context`, `recordedAt`, `participants`, `notes`). Settings → *Capture from anywhere* has the Shortcut recipe.
+- **What happens** (`lib/recordings/`): the job is visible stage by stage — *transcribing* (Gemini, diarized and time-stamped; long files go through the Files API) → *structuring* → *filing*. Structuring picks the context from the known people and companies mentioned (a model tie-breaks), pulls in what the notebook already knows about them (previous meetings, open loops, open tasks, earlier decisions, latest numbers) and asks the model for one document: attendees with speaker identification, purpose, how it connects to prior meetings, summary, key points, decisions, action items with owners, open questions, numbers, risks and next steps. Filing sends the same extraction through the normal pipeline, so tasks, decisions, commitments, facts and timeline events land in the graph with excerpts from the transcript.
+- **What you get**: a meeting page with the recording (playable), the transcript with `Speaker 1 → Harsha` mapping, the AI summary, decisions, action items and open loops; the note itself keeps the structured sections on top and the verbatim transcript at the bottom. Nothing in the transcript is ever edited by AI. A failed job shows why and can be retried from the meeting page.
+- **Transcript formats** understood without a model: `Speaker 1:` / `Name:` lines, `[mm:ss]` prefixes, WebVTT (incl. `<v Name>`), SRT, JSON segment arrays and plain Voice Memos paragraphs.
+
+## Tags and the graph
+
+- **Automatic tags** — every time AI reads a note it stores 4–12 lowercase tags (`notes.tags`): the model's own topical tags, the topics and projects it found, and signal tags such as `meeting`, `recording`, `decision`, `action-items`, `open-loop`, `numbers`, `risk`. Without a model, a vocabulary-based tagger runs instead. You can add your own tags on any note (kept across reprocessing) and remove suggested ones. Tags show on note rows, the note panel and meeting pages; the Notes page filters by tag; search understands `tag:pricing` / `#pricing` alone or combined with words; `/tags` is the tag cloud with a one-click backfill for notes written before tagging existed.
+- **Graph** — `/graph` is an interactive explorer over people, companies, topics, projects, tags, notes, meetings and decisions (`lib/graph.ts`, `GET /api/graph`). The overview shows the most-mentioned entities and tags linked by explicit relations, co-mentions and tag co-occurrence; *Focus here* (or *See in the graph* from any note, entity, meeting or tag) rebuilds the graph around one node, one or two hops deep. Pan, zoom, pinch, drag nodes to pin them, filter by type, search within the graph, click to inspect connections, double-click to open. Works at phone width.
+
 ## Notebooks for other people (admin)
 
 One deployment can host many private notebooks. The first account (the owner) is the platform **admin** and sees **Admin** in the sidebar:

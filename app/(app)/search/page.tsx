@@ -6,7 +6,7 @@ import { search, highlight } from '@/lib/search'
 import { SearchBox } from '@/components/ask/SearchBox'
 import { EntityIcon, NoteKindIcon } from '@/components/entities'
 import { formatDate } from '@/lib/util'
-import { Sparkles, ArrowRight, CheckSquare, GitBranch, FlaskConical, Repeat } from 'lucide-react'
+import { Sparkles, ArrowRight, CheckSquare, GitBranch, FlaskConical, Repeat, Tag } from 'lucide-react'
 export const dynamic = 'force-dynamic'
 export default async function SearchPage({ searchParams }: { searchParams: Promise<{ q?: string; all?: string }> }) {
   const { q = '', all } = await searchParams
@@ -30,7 +30,7 @@ export default async function SearchPage({ searchParams }: { searchParams: Promi
               <h2 className="mb-1 text-[11.5px] font-semibold uppercase tracking-[0.06em] text-fg-3">{g.label} <span className="font-normal">{g.hits.length}</span></h2>
               <ul>
                 {g.hits.map((h) => {
-                  const Icon = h.type === 'task' ? CheckSquare : h.type === 'decision' ? GitBranch : h.type === 'research' ? FlaskConical : h.type === 'commitment' ? Repeat : null
+                  const Icon = h.type === 'task' ? CheckSquare : h.type === 'decision' ? GitBranch : h.type === 'research' ? FlaskConical : h.type === 'commitment' ? Repeat : h.type === 'tag' ? Tag : null
                   return (
                     <li key={h.type + h.id}>
                       <Link href={h.href} className="group -mx-3 flex items-start gap-3 rounded-lg px-3 py-2 row-hover">
