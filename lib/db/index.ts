@@ -12,18 +12,27 @@ export type Db = PostgresJsDatabase<typeof schema>
 
 const g = globalThis as unknown as { __hkNotesDb?: Promise<Db>; __hkNotesMode?: 'postgres' | 'pglite' }
 
+/** Connection string from DATABASE_URL, or the names the Vercel Postgres / Neon / Supabase integrations write. */
+export function databaseUrl(): string | undefined {
+  for (const k of ['DATABASE_URL', 'POSTGRES_URL', 'POSTGRES_PRISMA_URL', 'NEON_DATABASE_URL', 'DATABASE_URL_UNPOOLED', 'POSTGRES_URL_NON_POOLING', 'SUPABASE_DB_URL']) {
+    const v = process.env[k]
+    if (v && /^postgres(ql)?:\/\//.test(v)) return v
+  }
+  return undefined
+}
+
 export function dbMode(): 'postgres' | 'pglite' {
-  return process.env.DATABASE_URL ? 'postgres' : 'pglite'
+  return databaseUrl() ? 'postgres' : 'pglite'
 }
 
 export function dbIsEphemeral(): boolean {
-  return !process.env.DATABASE_URL && Boolean(process.env.VERCEL)
+  return !databaseUrl() && Boolean(process.env.VERCEL)
 }
 
 async function createDb(): Promise<Db> {
   const path = await import('node:path')
   const migrationsFolder = path.join(process.cwd(), 'drizzle')
-  const url = process.env.DATABASE_URL
+  const url = databaseUrl()
   if (url) {
     const { drizzle } = await import('drizzle-orm/postgres-js')
     const postgres = (await import('postgres')).default
