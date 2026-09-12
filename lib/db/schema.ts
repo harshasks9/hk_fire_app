@@ -27,6 +27,8 @@ const now = (name: string) => timestamp(name, { withTimezone: true }).notNull().
 export type NotebookStatus = 'active' | 'disabled'
 export type AiMode = 'shared' | 'own' | 'local'
 
+export type PlanId = 'free' | 'pro' | 'team'
+
 export interface NotebookSettings {
   /** shared = the deployment's keys; own = keys stored (encrypted) on the notebook; local = never call a model. */
   aiMode?: AiMode
@@ -48,6 +50,12 @@ export const notebooks = pgTable('notebooks', {
   createdAt: now('created_at'),
   updatedAt: now('updated_at'),
   lastActiveAt: timestamp('last_active_at', { withTimezone: true }),
+  /** Subscription plan (free/pro/team). Set by billing or by the platform admin. */
+  plan: text('plan').$type<PlanId>().notNull().default('free'),
+  /** When a paid plan lapses (manual grants, cancelled subscriptions). Null = does not expire. */
+  planExpiresAt: timestamp('plan_expires_at', { withTimezone: true }),
+  stripeCustomerId: text('stripe_customer_id'),
+  stripeSubscriptionId: text('stripe_subscription_id'),
 })
 
 export type UserRole = 'admin' | 'owner' | 'member'
@@ -64,6 +72,9 @@ export const users = pgTable('users', {
   role: text('role').$type<UserRole>().notNull().default('owner'),
   status: text('status').$type<UserStatus>().notNull().default('active'),
   lastLoginAt: timestamp('last_login_at', { withTimezone: true }),
+  emailVerifiedAt: timestamp('email_verified_at', { withTimezone: true }),
+  /** Bumped to invalidate every session of the user ("sign out everywhere", password reset). */
+  tokenVersion: integer('token_version').notNull().default(0),
 }, (t) => [index('users_notebook_idx').on(t.notebookId), uniqueIndex('users_email_lower_idx').on(sql`lower(${t.email})`)])
 
 export interface UserSettings {
@@ -563,6 +574,18 @@ export const invites = pgTable('invites', {
   acceptedUserId: text('accepted_user_id'),
   createdAt: now('created_at'),
 }, (t) => [index('invites_notebook_idx').on(t.notebookId)])
+
+/** Single-use, expiring tokens for email verification and password reset. Only the hash is stored. */
+export type AuthTokenKind = 'verify' | 'reset'
+export const authTokens = pgTable('auth_tokens', {
+  id: id(),
+  userId: text('user_id').notNull(),
+  kind: text('kind').$type<AuthTokenKind>().notNull(),
+  tokenHash: text('token_hash').notNull().unique(),
+  expiresAt: timestamp('expires_at', { withTimezone: true }).notNull(),
+  usedAt: timestamp('used_at', { withTimezone: true }),
+  createdAt: now('created_at'),
+}, (t) => [index('auth_tokens_user_idx').on(t.userId)])
 
 /** Personal capture tokens for shortcuts, automations and scripts. Only the hash is stored. */
 export const apiTokens = pgTable('api_tokens', {

@@ -19,6 +19,8 @@ The owner wants to give the same system to other people — colleagues, family, 
 | O4 | Nothing captured is ever lost | Deleted notes are recoverable for 30 days; every processed edit is versioned; imports and exports are lossless for text |
 | O5 | The product extends outside its own UI | Notes can be captured from shortcuts and automations, and shared read-only with people who do not have an account |
 | O6 | The owner can operate the system alone | Usage, health and an audit trail of administrative actions are visible in one admin console |
+| O7 | The product can be sold to strangers | A visitor can go from the landing page to a working notebook in under two minutes with no human involved; plans and quotas are enforced by the system; upgrades can be paid online |
+| O8 | Support load stays near zero | Email confirmation, password reset, member management and account deletion are all self-service |
 
 ## 3. Scope
 
@@ -43,6 +45,11 @@ The owner wants to give the same system to other people — colleagues, family, 
 - **F13 — Contexts and sample data**: the owner manages their own categories and can remove the demo dataset without losing their notes.
 - **F14 — Sheets and charts**: Excel-style calculations and charts inside notes.
 - **F15 — Numbers dashboard**: every extracted figure as tiles and trends.
+
+- **F16 — Self-service registration and recovery**: people create their own notebook, confirm their email and reset their password without the administrator.
+- **F17 — Plans, quotas and billing**: Free / Pro / Team with enforced quotas, a usage view, optional Stripe billing and manual plan grants.
+- **F18 — People in a notebook**: owners invite, manage and remove members themselves; anyone can delete their own account.
+- **F19 — Platform administration for a SaaS**: registration policy, default plan, announcements, a directory of every account and business metrics.
 
 ### Out of scope (this release)
 - Real-time collaboration inside one note; shared notebooks with multiple concurrent editors.

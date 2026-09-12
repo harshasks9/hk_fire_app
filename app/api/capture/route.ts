@@ -7,6 +7,9 @@ import { asc, eq } from 'drizzle-orm'
 import { resolveToken } from '@/lib/tokens'
 import { docToText, markdownToDoc } from '@/lib/markdown'
 import { wordCount } from '@/lib/util'
+import { assertQuota } from '@/lib/plans'
+import { apiError } from '@/lib/api'
+import { getSession } from '@/lib/session'
 export const dynamic = 'force-dynamic'
 export const maxDuration = 60
 
@@ -37,6 +40,12 @@ export async function POST(req: NextRequest) {
     ctx = picked
   } else {
     ctx = await resolveContext(String(form.get('contextId') ?? '') || undefined)
+  }
+  try {
+    const nb = bearer ? (await resolveToken(bearer))?.notebook : (await getSession())?.notebook
+    if (nb) await assertQuota(nb, 'notes')
+  } catch (e) {
+    return apiError(e)
   }
   const text = String(form.get('text') ?? '').trim()
   // Offline captures replay later; keep the moment they were written.

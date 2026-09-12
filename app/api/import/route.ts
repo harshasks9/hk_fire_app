@@ -5,6 +5,7 @@ import { apiError } from '@/lib/api'
 import { getContexts, resolveContext } from '@/lib/context'
 import { importNotes, type ImportFile } from '@/lib/import'
 import { processNote } from '@/lib/pipeline'
+import { assertQuota } from '@/lib/plans'
 export const dynamic = 'force-dynamic'
 export const maxDuration = 300
 
@@ -13,10 +14,11 @@ const MAX_BYTES = 25 * 1024 * 1024
 /** Import Markdown / text files or the app's JSON export into the active (or named) context. */
 export async function POST(req: NextRequest) {
   try {
-    await requireSession()
+    const s = await requireSession()
     const form = await req.formData()
     const files = form.getAll('files').filter((f): f is File => f instanceof File && f.size > 0)
     if (!files.length) return NextResponse.json({ error: 'No files' }, { status: 400 })
+    await assertQuota(s.notebook, 'notes', files.length)
     if (files.reduce((a, f) => a + f.size, 0) > MAX_BYTES) return NextResponse.json({ error: 'Too large: keep each import under 25 MB' }, { status: 413 })
     const contexts = await getContexts()
     const target = await resolveContext(String(form.get('contextId') ?? '') || undefined)

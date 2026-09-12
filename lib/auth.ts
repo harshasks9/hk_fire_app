@@ -41,6 +41,8 @@ export interface SessionPayload {
   r: 'admin' | 'owner' | 'member'
   /** the admin's home notebook when they have entered another one */
   h?: string
+  /** users.token_version at sign-in; a mismatch means "signed out everywhere" */
+  v?: number
   exp: number
 }
 

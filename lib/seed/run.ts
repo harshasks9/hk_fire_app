@@ -85,8 +85,8 @@ export async function runSeed(opts: { force?: boolean; log?: (s: string) => void
   log('seeding')
   if (nb === DEFAULT_NOTEBOOK.id) {
     // Fresh install: the Primary notebook and its owner, who is also the platform admin.
-    await db.insert(schema.users).values({ id: USER.id, name: USER.name, email: USER.email, notebookId: nb, role: 'admin', settings: { theme: 'system', aiProvider: 'auto', aiEnabled: true, proactiveInsights: true, dailyBriefHour: 7, defaultContext: 'work' } }).onConflictDoNothing()
-    await db.insert(schema.notebooks).values({ id: nb, slug: DEFAULT_NOTEBOOK.slug, name: DEFAULT_NOTEBOOK.name, ownerUserId: USER.id, settings: { sampleData: true } }).onConflictDoNothing()
+    await db.insert(schema.users).values({ id: USER.id, name: USER.name, email: USER.email, notebookId: nb, role: 'admin', emailVerifiedAt: new Date(), settings: { theme: 'system', aiProvider: 'auto', aiEnabled: true, proactiveInsights: true, dailyBriefHour: 7, defaultContext: 'work' } }).onConflictDoNothing()
+    await db.insert(schema.notebooks).values({ id: nb, slug: DEFAULT_NOTEBOOK.slug, name: DEFAULT_NOTEBOOK.name, ownerUserId: USER.id, plan: 'team', settings: { sampleData: true } }).onConflictDoNothing()
   }
   await ensureDefaultContexts(nb)
 

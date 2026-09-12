@@ -181,3 +181,41 @@ Goal: a recording made on a phone (or the transcript an app produced from it) be
 - Q1. `/numbers` groups extracted facts by entity and canonical label with their history (superseded values included, duplicates collapsed) and shows tiles (latest value, delta vs previous, date, source link) and one line chart per measure with entities as series.
 - Q2. Filters by entity, measure and text; `?all=1` spans every context; empty state explains where numbers come from and points at `/sheet`.
 
+
+---
+
+## 18. Self-service registration and account recovery (F16)
+
+**Goal:** anyone the platform allows can create their own notebook without the administrator, and can recover the account without support.
+
+- R1. `POST /api/signup` (name, email, password, optional sampleData) creates a notebook with the default contexts and an owner user, signs them in and sends a verification email; honours the platform's registration mode (open / invite / closed) and the default plan; rate-limited per IP; duplicate emails return 409.
+- R2. Passwords: 8–200 characters, not a repeated character or a top-guess; emails validated and stored lower-cased.
+- R3. Verification tokens are random, hashed at rest, single use and valid 24 h; `GET /api/auth/verify?token=` marks the address verified and lands in the app. A banner in the app shell offers *Resend*. When *require verification* is on, sign-in is refused until confirmed (with a resend link).
+- R4. `POST /api/auth/forgot` always answers the same; a reset link (1 h, single use) goes by email or, without email configured, is returned for the UI. `POST /api/auth/reset` sets the password, bumps the user's token version (every other session ends) and signs the browser in.
+- R5. Sessions carry the token version; *Sign out everywhere else* bumps it and re-issues the caller's cookie.
+- R6. Public pages `/welcome`, `/pricing`, `/signup`, `/forgot`, `/reset/<token>`, `/terms`, `/privacy`; a signed-out `/` redirects to `/welcome`; deep links still go to `/login?next=`.
+
+## 19. Plans, quotas and billing (F17)
+
+- P1. Plans Free / Pro / Team defined in `lib/plans-spec.ts` with quotas for notes, AI actions per month, recordings per month, attachment storage and people; `-1` = unlimited. A lapsed paid plan (`plan_expires_at` in the past) behaves as Free.
+- P2. Quotas are checked before content enters: notes (editor, voice, capture with session or token, import), attachments (upload and recordings, by size), recordings per month, and invitations (members + open invitations). Exceeding returns HTTP 402 with a message naming the plan and the way out.
+- P3. When the month's AI actions are used up the notebook's AI scope switches to the local provider (`budgetExhausted`) instead of failing; Settings shows the state.
+- P4. Settings → *Plan & usage* shows the plan in force, expiry, five usage bars (red at 100 %, amber at 80 %) and upgrade buttons; `GET /api/billing` backs it.
+- P5. Stripe: `POST /api/billing/checkout` (owner only) opens Checkout with the plan in metadata; `POST /api/billing/portal` opens the customer portal; `POST /api/billing/webhook` verifies the `Stripe-Signature` (v1, 5-minute tolerance) and applies `checkout.session.completed`, `customer.subscription.updated` and `.deleted` to the notebook's plan, expiry and ids. Without Stripe configured the buttons explain that the admin assigns plans.
+- P6. Admin can set any notebook's plan and optional expiry (`PATCH /api/admin/notebooks/:id {plan, planExpiresAt}`), logged as `notebook.plan`.
+
+## 20. People in a notebook (F18)
+
+- M1. Settings → *People* lists members (role, confirmation, last sign-in) and open invitations with seat usage against the plan.
+- M2. Owners invite by email or link (`POST /api/members`), revoke invitations, change roles (`PATCH /api/members/:id`) and remove members (`DELETE`); the owner and the platform admin cannot be removed; removal deletes the person's tokens, not the notes.
+- M3. Invitation emails are sent through the configured provider; otherwise the link is shown for copying. All actions are in the audit log.
+- M4. Account deletion (`POST /api/account/delete`, password + DELETE): an owner deletes the notebook and everyone in it; a member leaves; the platform admin's account is protected.
+
+## 21. Platform administration for a SaaS (F19)
+
+- S1. Admin → *Settings* stores platform settings in `app_meta` (`platform:settings`): registration mode, default plan, require verification, offer sample data, product name, support email, announcement. Applied on the next request, no deploy.
+- S2. Admin → *People*: every account with search; actions confirm email, reset password, sign out everywhere, disable/enable, remove.
+- S3. Admin → *Overview* adds sign-ups (7 d), active notebooks (7 d), plan mix, paid notebooks and list-price MRR, plus integration badges (email, billing, verification policy).
+- S4. New audit actions: `user.signup`, `user.verify`, `user.unverify`, `user.signout-all`, `user.delete-self`, `invite.revoke`, `notebook.plan`, `platform.settings`, `billing.subscribed`, `billing.cancelled`.
+- S5. The announcement shows to everyone as a dismissible banner; the verification banner shows to unconfirmed non-admin users.
+- S6. Home shows a first-week checklist for notebooks with fewer than five notes and no sample data.

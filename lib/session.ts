@@ -6,15 +6,17 @@
 import { cache } from 'react'
 import { cookies } from 'next/headers'
 import { and, asc, eq } from 'drizzle-orm'
-import { SESSION_COOKIE, authEnabled, readSessionToken } from './auth'
+import { SESSION_COOKIE, authEnabled, readSessionToken, type SessionPayload } from './auth'
 import { getDb, schema } from './db'
 import { ensureReady } from './bootstrap'
 import type { Notebook, User, UserRole } from './db/schema'
-import { scopeForNotebook } from './ai/notebook-config'
+import { scopeForNotebook, applyAiBudget } from './ai/notebook-config'
 import { currentAiScope, runWithAiScope, type AiScope } from './ai/scope'
 
 export interface Session {
   userId: string
+  /** the cookie payload, so routes that re-issue the cookie keep the same claims */
+  payload?: SessionPayload
   notebookId: string
   role: UserRole
   /** Set while a platform admin has entered another notebook. */
@@ -66,18 +68,20 @@ export const getSession = cache(async (): Promise<Session | null> => {
   if (!payload) return null
   const user = await loadUser(payload.u)
   if (!user || user.status !== 'active') return null
+  // "Sign out everywhere" and password resets bump the version; older cookies stop working.
+  if ((payload.v ?? 0) !== (user.tokenVersion ?? 0)) return null
   const notebook = await loadNotebook(payload.n)
   if (!notebook) return null
   // A non-admin can only act inside their own notebook, and only while it is active.
   if (user.role !== 'admin' && (user.notebookId !== notebook.id || notebook.status !== 'active')) return null
-  return { userId: user.id, notebookId: notebook.id, role: user.role, homeNotebookId: payload.h, user, notebook }
+  return { userId: user.id, payload, notebookId: notebook.id, role: user.role, homeNotebookId: payload.h, user, notebook }
 })
 
 /** The AI scope for the signed-in notebook (shared env keys when signed out or in a background job). */
 export async function sessionAiScope(): Promise<AiScope> {
   try {
     const s = await getSession()
-    return s ? scopeForNotebook(s.notebook, s.user.name) : { mode: 'shared' }
+    return s ? applyAiBudget(s.notebook, scopeForNotebook(s.notebook, s.user.name)) : { mode: 'shared' }
   } catch {
     return { mode: 'shared' }
   }

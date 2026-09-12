@@ -21,7 +21,7 @@ export async function POST(req: NextRequest, { params }: { params: Promise<{ tok
   try {
     const user = await acceptInvite(token, { name: body.name ?? '', email: body.email, password: body.password ?? '' })
     const res = NextResponse.json({ ok: true })
-    res.cookies.set(SESSION_COOKIE, await createSessionToken({ u: user.id, n: user.notebookId!, r: user.role }), { httpOnly: true, sameSite: 'lax', secure: process.env.NODE_ENV === 'production', path: '/', maxAge: SESSION_DAYS * 86400 })
+    res.cookies.set(SESSION_COOKIE, await createSessionToken({ u: user.id, n: user.notebookId!, r: user.role, v: user.tokenVersion ?? 0 }), { httpOnly: true, sameSite: 'lax', secure: process.env.NODE_ENV === 'production', path: '/', maxAge: SESSION_DAYS * 86400 })
     return res
   } catch (e) {
     return NextResponse.json({ error: String((e as Error).message ?? e) }, { status: 400 })

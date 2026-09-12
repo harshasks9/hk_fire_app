@@ -153,6 +153,22 @@ Record a meeting on your iPhone (Voice Memos, the Phone app's call recording, No
 - **Contexts** (categories) are managed in Settings → Contexts: add (name, kind, description), rename, and remove. Removing one either moves everything it holds into another context (people and companies with the same name are merged) or deletes it all.
 - **Sample data** — the demo dataset the app ships with can be removed in Settings → Data → *Remove sample data*: sample notes, meetings, transcripts, research, decisions and everything derived from them go away, entities nothing refers to any more are dropped, and the samples never come back. Notes you wrote, and the contexts, stay.
 
+## Running it as a SaaS
+
+The same deployment can be a multi-tenant product with self-service accounts. Everything below is on by default when `APP_PASSWORD` is set; nothing else is required.
+
+- **Public pages** — `/welcome` (landing), `/pricing`, `/signup`, `/login`, `/forgot`, `/reset/<token>`, `/terms`, `/privacy`. A signed-out visitor on `/` lands on `/welcome`.
+- **Registration** — name, email, password (8+, not guessable) and an optional sample dataset. Sign-up creates a private notebook with the default contexts, signs the person in and sends a confirmation email. Rate-limited per IP.
+- **Email verification** — a banner asks until the address is confirmed; the admin can require confirmation before sign-in (Admin → Settings). Password reset works from `/forgot` with single-use links valid for one hour; a reset signs every other device out.
+- **Sessions** — cookies carry a token version; *Sign out everywhere else* (Settings → Account) and password resets invalidate older cookies at once.
+- **Plans and quotas** — Free / Pro ($12) / Team ($39) with notes, AI actions per month, meeting recordings per month, attachments and people (see `lib/plans-spec.ts`). Quotas are enforced where content enters (notes, captures, imports, uploads, recordings, invitations) with a `402` and a plain message; when the month's AI actions are spent, analysis falls back to the local provider until the 1st. Settings → *Plan & usage* shows the bars.
+- **Billing** — Stripe Checkout and the customer portal when `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET` and `STRIPE_PRICE_PRO` / `STRIPE_PRICE_TEAM` are set (webhook: `POST /api/billing/webhook`). Without Stripe the admin assigns plans (with optional expiry) from Admin → Notebooks.
+- **People** — Settings → *People*: the owner invites by email (sent through Resend when configured, otherwise a link to copy), revokes invitations, changes roles and removes members within the plan's seat count.
+- **Account deletion** — Settings → Account → *Delete my account*: an owner takes the whole notebook with them; a member just leaves. Password and typing DELETE are required.
+- **Email** — `RESEND_API_KEY` + `EMAIL_FROM` send verification, reset and invitation emails. Without them every link is shown on screen and logged, so local development needs no mail provider.
+- **Platform admin** — `/admin` has four tabs: *Overview* (sign-ups, active notebooks, plan mix, list-price MRR, integrations, audit log), *Notebooks* (plan and expiry per notebook, enter, disable, delete, invite), *People* (search every account; confirm email, reset password, sign out everywhere, disable, remove) and *Settings* (registration open / invite only / closed, default plan, require verification, offer sample data, product name, support email, announcement banner).
+- **Onboarding** — a first-week checklist on Home for fresh notebooks, the announcement banner and the verification banner in the app shell.
+
 ## Notebooks for other people (admin)
 
 One deployment can host many private notebooks. The first account (the owner) is the platform **admin** and sees **Admin** in the sidebar:
