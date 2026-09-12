@@ -5,6 +5,7 @@ import { usePathname, useRouter } from 'next/navigation'
 import { Home, FileText, Plus, Search, Inbox, Mic, Camera, CalendarDays, X, PenLine, FileAudio } from 'lucide-react'
 import { cx } from '@/lib/util'
 import { setShell } from './store'
+import { startNavigation } from './NavProgress'
 import { createNoteAndOpen } from '@/lib/offline/notes-client'
 import { useOffline } from '@/lib/offline/sync'
 
@@ -22,10 +23,10 @@ export function MobileNav() {
   ]
   const actions = [
     { label: online ? 'New note' : 'Offline note', icon: PenLine, run: () => createNoteAndOpen(router) },
-    { label: 'Voice note', icon: Mic, run: () => router.push('/capture/voice') },
+    { label: 'Voice note', icon: Mic, run: () => { startNavigation(); router.push('/capture/voice') } },
     { label: 'Camera', icon: Camera, run: () => setShell({ captureOpen: true }) },
-    { label: 'Live meeting', icon: CalendarDays, run: () => router.push('/meetings/live') },
-    { label: 'Recording', icon: FileAudio, run: () => router.push('/meetings/import') },
+    { label: 'Live meeting', icon: CalendarDays, run: () => { startNavigation(); router.push('/meetings/live') } },
+    { label: 'Recording', icon: FileAudio, run: () => { startNavigation(); router.push('/meetings/import') } },
     { label: 'Quick note', icon: Plus, run: () => setShell({ captureOpen: true }) },
   ]
   return (

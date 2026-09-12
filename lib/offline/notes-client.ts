@@ -9,6 +9,8 @@ type Router = ReturnType<typeof useRouter>
 export async function createNoteAndOpen(router: Router, opts: { researchProjectId?: string } = {}): Promise<void> {
   if (typeof navigator === 'undefined' || navigator.onLine) {
     try {
+      const { startNavigation } = await import('@/components/shell/NavProgress')
+      startNavigation()
       const n = await api<{ id: string }>('/api/notes', { method: 'POST', json: opts })
       router.push(`/notes/${n.id}`)
       return

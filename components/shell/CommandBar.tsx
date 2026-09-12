@@ -4,6 +4,7 @@ import { Command } from 'cmdk'
 import { useRouter } from 'next/navigation'
 import { FileText, CalendarDays, Users, Building2, Hash, CheckSquare, GitBranch, FlaskConical, Sparkles, Search, Plus, Inbox, Home, Repeat, Settings, Mic, Zap, ArrowRight, Sun, Moon, Share2, TrendingUp } from 'lucide-react'
 import { setShell, useShell } from './store'
+import { startNavigation } from './NavProgress'
 import { api } from '@/lib/client'
 import { createNoteAndOpen } from '@/lib/offline/notes-client'
 import type { SearchResult } from '@/lib/search'
@@ -45,7 +46,7 @@ export function CommandBar() {
   }, [q, commandOpen])
 
   const close = () => setShell({ commandOpen: false })
-  const go = (href: string) => { close(); router.push(href) }
+  const go = (href: string) => { close(); startNavigation(); router.push(href) }
   const newNote = async () => { close(); await createNoteAndOpen(router) }
 
   if (!commandOpen) return null

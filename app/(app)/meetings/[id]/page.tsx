@@ -1,7 +1,8 @@
 import { notFound } from 'next/navigation'
+import { Suspense } from 'react'
 import Link from 'next/link'
 import { Page } from '@/components/shell/AppShell'
-import { Section, Badge, Avatar, AiMark } from '@/components/ui'
+import { Section, Badge, Avatar, AiMark, Skeleton } from '@/components/ui'
 import { Panel, PanelSection } from '@/components/shell/IntelligencePanel'
 import { getMeeting } from '@/lib/queries'
 import { meetingPrep } from '@/lib/prep'
@@ -22,7 +23,6 @@ export default async function MeetingPage({ params }: { params: Promise<{ id: st
   if (!d) notFound()
   const m = d.meeting
   const upcoming = m.status !== 'completed'
-  const prep = upcoming ? await meetingPrep(id) : null
   const note = d.note
   const summary = m.summary ?? note?.note.summary ?? null
   return (
@@ -58,40 +58,10 @@ export default async function MeetingPage({ params }: { params: Promise<{ id: st
         </div>
       ) : null}
 
-      {prep ? (
-        <div className="mb-8 rounded-xl border border-dashed border-accent-soft-2 bg-accent-soft/40 px-5 py-4">
-          <AiMark label="Meeting prep" className="mb-2" />
-          {prep.narrative ? <p className="mb-4 text-[15px] leading-relaxed">{prep.narrative}</p> : null}
-          <div className="grid gap-x-8 gap-y-4 sm:grid-cols-2">
-            <PrepBlock title="Who am I meeting?">
-              {prep.people.length ? prep.people.map((p) => <li key={p.id}><Link href={`/people/${p.id}`} className="font-medium hover:text-accent">{p.name}</Link>{p.attributes.role ? <span className="text-fg-2"> — {p.attributes.role}</span> : null}</li>) : <li className="text-fg-3">No participants listed yet.</li>}
-            </PrepBlock>
-            <PrepBlock title="What did we discuss last time?">
-              {prep.lastMeeting ? (<><li><Link href={`/meetings/${prep.lastMeeting.id}`} className="font-medium hover:text-accent">{prep.lastMeeting.title}</Link> <span className="text-fg-3">· {formatDate(prep.lastMeeting.startsAt)}</span></li>{prep.lastSummary.slice(0, 3).map((s, i) => <li key={i}>{s}</li>)}</>) : <li className="text-fg-3">First conversation on record.</li>}
-            </PrepBlock>
-            <PrepBlock title="What did they ask for?">
-              {prep.theyAsked.length ? prep.theyAsked.slice(0, 4).map((l) => <li key={l.id}>{l.text}</li>) : <li className="text-fg-3">Nothing outstanding.</li>}
-            </PrepBlock>
-            <PrepBlock title="What did I promise?">
-              {prep.iPromised.length ? prep.iPromised.slice(0, 4).map((l) => <li key={l.id} className={l.ageDays >= 5 ? 'text-danger' : ''}>{l.text} <span className="text-fg-3">· {l.ageDays}d</span></li>) : <li className="text-fg-3">Nothing open.</li>}
-            </PrepBlock>
-            <PrepBlock title="What remains unresolved?">
-              {prep.unresolved.length ? prep.unresolved.slice(0, 5).map((t) => <li key={t.id}>{t.owner}: {t.title}</li>) : <li className="text-fg-3">No open actions.</li>}
-            </PrepBlock>
-            <PrepBlock title="What changed since then?">
-              {prep.changes.length ? prep.changes.map((c) => <li key={c.id}>{c.description}</li>) : <li className="text-fg-3">No facts changed.</li>}
-              {prep.decisions.filter((x) => x.status !== 'active').map((x) => <li key={x.id}>Decision open: {x.title}</li>)}
-            </PrepBlock>
-            <PrepBlock title="What should I ask?">
-              {prep.questions.map((q, i) => <li key={i}>{q}</li>)}
-            </PrepBlock>
-            {prep.numbers.length ? (
-              <PrepBlock title="Numbers to have in hand">
-                {prep.numbers.map((n, i) => <li key={i}>{n.label}: <span className="font-medium tabular-nums">{n.value}</span></li>)}
-              </PrepBlock>
-            ) : null}
-          </div>
-        </div>
+      {upcoming ? (
+        <Suspense fallback={<div className="mb-8 rounded-xl border border-dashed border-accent-soft-2 bg-accent-soft/40 px-5 py-4"><AiMark label="Meeting prep" className="mb-2" /><div className="space-y-2"><Skeleton className="h-4 w-full" /><Skeleton className="h-4 w-5/6" /><Skeleton className="h-4 w-2/3" /></div></div>}>
+          <MeetingPrepSection meetingId={id} />
+        </Suspense>
       ) : null}
 
       {summary ? <div className="mb-8"><AiSummary summary={summary} /></div> : null}
@@ -144,5 +114,46 @@ function PrepBlock({ title, children }: { title: string; children: React.ReactNo
       <div className="mb-1 text-[11.5px] font-semibold uppercase tracking-[0.06em] text-fg-3">{title}</div>
       <ul className="space-y-0.5 text-[13.5px] leading-snug">{children}</ul>
     </div>
+  )
+}
+
+/** Prep streams in after the header so the page is usable while the model writes the narrative. */
+async function MeetingPrepSection({ meetingId }: { meetingId: string }) {
+  const prep = await meetingPrep(meetingId)
+  if (!prep) return null
+  return (
+        <div className="mb-8 rounded-xl border border-dashed border-accent-soft-2 bg-accent-soft/40 px-5 py-4">
+          <AiMark label="Meeting prep" className="mb-2" />
+          {prep.narrative ? <p className="mb-4 text-[15px] leading-relaxed">{prep.narrative}</p> : null}
+          <div className="grid gap-x-8 gap-y-4 sm:grid-cols-2">
+            <PrepBlock title="Who am I meeting?">
+              {prep.people.length ? prep.people.map((p) => <li key={p.id}><Link href={`/people/${p.id}`} className="font-medium hover:text-accent">{p.name}</Link>{p.attributes.role ? <span className="text-fg-2"> — {p.attributes.role}</span> : null}</li>) : <li className="text-fg-3">No participants listed yet.</li>}
+            </PrepBlock>
+            <PrepBlock title="What did we discuss last time?">
+              {prep.lastMeeting ? (<><li><Link href={`/meetings/${prep.lastMeeting.id}`} className="font-medium hover:text-accent">{prep.lastMeeting.title}</Link> <span className="text-fg-3">· {formatDate(prep.lastMeeting.startsAt)}</span></li>{prep.lastSummary.slice(0, 3).map((s, i) => <li key={i}>{s}</li>)}</>) : <li className="text-fg-3">First conversation on record.</li>}
+            </PrepBlock>
+            <PrepBlock title="What did they ask for?">
+              {prep.theyAsked.length ? prep.theyAsked.slice(0, 4).map((l) => <li key={l.id}>{l.text}</li>) : <li className="text-fg-3">Nothing outstanding.</li>}
+            </PrepBlock>
+            <PrepBlock title="What did I promise?">
+              {prep.iPromised.length ? prep.iPromised.slice(0, 4).map((l) => <li key={l.id} className={l.ageDays >= 5 ? 'text-danger' : ''}>{l.text} <span className="text-fg-3">· {l.ageDays}d</span></li>) : <li className="text-fg-3">Nothing open.</li>}
+            </PrepBlock>
+            <PrepBlock title="What remains unresolved?">
+              {prep.unresolved.length ? prep.unresolved.slice(0, 5).map((t) => <li key={t.id}>{t.owner}: {t.title}</li>) : <li className="text-fg-3">No open actions.</li>}
+            </PrepBlock>
+            <PrepBlock title="What changed since then?">
+              {prep.changes.length ? prep.changes.map((c) => <li key={c.id}>{c.description}</li>) : <li className="text-fg-3">No facts changed.</li>}
+              {prep.decisions.filter((x) => x.status !== 'active').map((x) => <li key={x.id}>Decision open: {x.title}</li>)}
+            </PrepBlock>
+            <PrepBlock title="What should I ask?">
+              {prep.questions.map((q, i) => <li key={i}>{q}</li>)}
+            </PrepBlock>
+            {prep.numbers.length ? (
+              <PrepBlock title="Numbers to have in hand">
+                {prep.numbers.map((n, i) => <li key={i}>{n.label}: <span className="font-medium tabular-nums">{n.value}</span></li>)}
+              </PrepBlock>
+            ) : null}
+          </div>
+        </div>
   )
 }

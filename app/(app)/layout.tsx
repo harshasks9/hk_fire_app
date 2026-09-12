@@ -1,4 +1,5 @@
 import { redirect } from 'next/navigation'
+import { after } from 'next/server'
 import { AppShell } from '@/components/shell/AppShell'
 import { getActiveContext, getContexts } from '@/lib/context'
 import { sidebarData } from '@/lib/queries'
@@ -13,7 +14,8 @@ export default async function Layout({ children }: { children: React.ReactNode }
   if (!session) redirect('/login')
   const [contexts, active] = await Promise.all([getContexts(), getActiveContext()])
   const side = await sidebarData(active.id)
-  void touchNotebook(session.notebookId)
+  // Keep the activity stamp out of the request's critical path.
+  after(() => touchNotebook(session.notebookId).catch(() => undefined))
   return (
     <AppShell
       sidebar={{ contexts, active, favorites: side.favorites, recents: side.recents, pinned: side.pinned, inboxCount: side.inboxCount, userName: session.user.name, isAdmin: session.role === 'admin', notebookName: session.notebook.name }}
