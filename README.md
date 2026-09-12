@@ -1,5 +1,9 @@
 # Five Delta
 
+> This repository also hosts **Notes** (notes.hkfire.app), an AI-native note-taking
+> and personal intelligence system, in [`notes/`](notes/README.md). It is a separate
+> Next.js app with its own Vercel project.
+
 A private, single-user execution system for a weekly options income programme.
 **Adherence, not analysis.** The strategy already works; every dollar lost came
 from drift, novelty, rescue, or omission — so the app's job is to make executing
