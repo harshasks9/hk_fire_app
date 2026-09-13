@@ -50,6 +50,9 @@ The owner wants to give the same system to other people — colleagues, family, 
 - **F17 — Free product**: no plans, quotas or billing; a fresh install starts empty and the demo dataset is removed from existing installations.
 - **F18 — People in a notebook**: owners invite, manage and remove members themselves; anyone can delete their own account.
 - **F19 — Platform administration for a SaaS**: registration policy, default plan, announcements, a directory of every account and business metrics.
+- **F20 — Delete everything**: an owner can empty the notebook, or delete everything created in a date range, with a preview and a password check; administrators can empty any notebook.
+- **F21 — Create, edit and delete everywhere**: nothing the AI extracts is read-only; every list and detail page supports adding, editing and deleting by hand.
+- **F22 — A usable spreadsheet**: the sheet block behaves like a spreadsheet (ranges, keyboard, clipboard, undo, fill, structure edits, resizing, full screen) and never leaks keystrokes into the surrounding note.
 
 ### Out of scope (this release)
 - Real-time collaboration inside one note; shared notebooks with multiple concurrent editors.

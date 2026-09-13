@@ -170,9 +170,9 @@ Goal: a recording made on a phone (or the transcript an app produced from it) be
 
 ## 16. Sheets and charts (F14)
 
-- S1. `/sheet` inserts an atomic editor block whose JSON (`rows`, `cols`, `cells` A1→raw text, `formats` per column, `charts`) lives in the note document; the block is draggable and removable.
+- S1. `/sheet` inserts an atomic editor block whose JSON (`rows`, `cols`, `cells` A1→raw text, `formats` and `widths` per column, `charts`) lives in the note document; the block is draggable and removable.
 - S2. Formulas start with `=`: numbers (incl. `12%`, `1,200`, `$3.5M` literals), strings, booleans, cell and range references, `+ - * / ^ & % =` and comparisons, ~60 functions (math, statistics, text, logic, criteria, lookups, finance). Errors are `#DIV/0!`, `#REF!`, `#NAME?`, `#VALUE!`, `#CYCLE!`, `#N/A`, `#NUM!` and show their detail in the formula bar.
-- S3. Editing: click to select, type to start editing, Enter/Tab/arrows move, Escape cancels, Delete clears, paste of TSV/CSV fills a block and grows the grid, copy exports values as TSV; per-column display format.
+- S3. Editing (spreadsheet behaviour, isolated from the note editor: no key, click or paste inside the grid reaches ProseMirror): arrows/Tab/Enter move, Enter or F2 or typing edits, Enter/Tab confirm and move (growing the sheet past the last row/column), Escape cancels, Shift+arrows / Shift+click / header clicks and drags select ranges, ⌘A selects all, Home/End/⌘-arrows jump, Delete clears the selection, ⌘C/⌘X/⌘V copy, cut and paste with relative-reference translation (external TSV/CSV parsed; a single value tiles over a selection), ⌘Z/⌘⇧Z/⌘Y local undo/redo, ⌘D/⌘R fill down/right, fill handle continues series (numbers, `Q1`, `Week 3`, months, weekdays) or repeats and translates formulas, right-click and toolbar menus insert/delete rows and columns (references rewritten; deleted ranges shrink, deleted cells become `#REF!`), sort by column, clear; column resize by dragging header edges (widths stored per column); formula bar edits the active cell and cell clicks/drags insert references while a formula is being typed; selection stats (sum, average, count) in the status bar; full-screen mode; arrowing past the top or bottom returns focus to the document.
 - S4. Charts: bar, line, area, pie over a range; header row and label column detected; categorical palette in fixed order (eight slots, extra series fold into the table view), thin marks with rounded data-ends, hairline grid, hover tooltip, legend for two or more series, table toggle; dark mode uses the dark palette.
 - S5. Projections: text (`Sheet: title` + computed rows) for search/AI, Markdown tables for export, read-only rendering on share pages.
 
@@ -216,3 +216,17 @@ Goal: a recording made on a phone (or the transcript an app produced from it) be
 - S4. New audit actions: `user.signup`, `user.verify`, `user.unverify`, `user.signout-all`, `user.delete-self`, `invite.revoke`, `platform.settings`.
 - S5. The announcement shows to everyone as a dismissible banner; the verification banner shows to unconfirmed non-admin users.
 - S6. Home shows a first-week checklist for notebooks with fewer than five notes and no sample data.
+
+## 22. Delete everything (F20)
+
+- W1. Settings → Danger zone offers two deletions for the notebook's content: everything, or everything created in a date range (from/to, inclusive). Both show a live preview of what will go (notes, meetings, people/companies/topics, tasks, loops, decisions, numbers, research, attachments) and require the account password plus the word DELETE.
+- W2. A range deletion removes the notes, meetings, tasks, loops, decisions (with revisions), numbers, changes, timeline entries and research projects created in the range, then only those people, companies and topics that no remaining note mentions. Insights, weekly reviews and cached briefs are dropped because they may quote removed content. Contexts, members, settings and API tokens stay.
+- W3. Platform administrators can empty any notebook from the admin console; the action is audited (`notebook.wipe`, `notebook.wipe-range`).
+- W4. One-time: release 0.6.2 emptied the Primary notebook once on first run, recorded in `app_meta` so it never repeats.
+
+## 23. Create, edit and delete everywhere (F21)
+
+- C1. Every list page has a per-row ⋯ menu with Edit and Delete and a header button to add by hand: tasks, open loops, decisions, meetings, people, companies, topics, research projects, numbers, tags (rename merges into an existing tag; remove strips it from every note). Detail pages carry the same menu; deleting from one returns to the list.
+- C2. Editors are one shared dialog driven by a field spec (text, textarea, date, datetime, select). Dates entered by hand are stored at noon local time (due dates at 17:00) so they do not slip a day across time zones.
+- C3. Routes: `POST/PATCH/DELETE` for entities, decisions (a manual decision gets a `made`/`proposed` revision), commitments, facts (numeric value parsed from `$7.6M`-style text), research, meetings (delete also removes transcripts, timeline entries, relations and embeddings and unlinks notes), tasks; `PATCH/DELETE /api/tags`. Deleting an entity removes its facts, relations, timeline and embeddings and nulls references on tasks, loops, decisions, meetings and insights; notes are never deleted by these actions.
+

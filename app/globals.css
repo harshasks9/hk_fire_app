@@ -371,6 +371,39 @@
   font-weight: 600;
   text-align: left;
 }
+/* The sheet block's grid is not a prose table: reset what the rules above impose. */
+.editor-prose .hkn-grid table {
+  border-collapse: separate;
+  width: auto;
+  font-size: 13px;
+  overflow: visible;
+  border-radius: 0;
+  margin: 0;
+}
+.editor-prose .hkn-grid th,
+.editor-prose .hkn-grid td {
+  padding: 0 6px;
+  vertical-align: middle;
+  min-width: 0;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent var(--border) var(--border) transparent;
+  font-weight: 400;
+  text-align: inherit;
+  background: none;
+}
+.editor-prose .hkn-grid th {
+  font-weight: 500;
+  text-align: center;
+}
+.hkn-grid td.text-right { text-align: right; }
+.hkn-grid td.text-left { text-align: left; }
+.hkn-grid .bg-surface-2, .editor-prose .hkn-grid th.bg-surface-2 { background: var(--surface-2); }
+.hkn-grid .bg-accent-soft, .editor-prose .hkn-grid th.bg-accent-soft { background: var(--accent-soft); }
+.hkn-grid .bg-accent, .editor-prose .hkn-grid th.bg-accent { background: var(--accent); }
+.hkn-grid td.border-t-accent { border-top-color: var(--accent); }
+.hkn-grid td.border-l-accent { border-left-color: var(--accent); }
+
 .editor-prose .selectedCell::after {
   content: '';
   position: absolute;
