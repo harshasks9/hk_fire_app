@@ -3,6 +3,7 @@ import { seedBuildUp, computeCost, round, areaSqft, perimeterFt, wallAreaSqft } 
 import { SCOPE_TEMPLATES, type TemplateItem } from "./scope-templates";
 import { MASTER_SCOPE } from "./master-scope";
 import { SPACES } from "./spaces";
+import { LEAD_WEEKS } from "../model/categories";
 
 /** Deterministic PRNG so the seeded project is identical on every load. */
 function hash(str: string): number {
@@ -141,13 +142,6 @@ const PROC_BY_STAGE: Record<string, string> = {
   installed: "installed",
   inspected: "verified",
   complete: "verified",
-};
-
-/** Lead times that actually matter on an Indian villa fit-out. */
-const LEAD_WEEKS: Partial<Record<Category, number>> = {
-  stone: 9, wardrobe: 10, kitchen: 12, "bespoke-furniture": 10, carpentry: 8,
-  "loose-furniture": 9, sanitaryware: 8, lighting: 7, curtains: 6, glass: 4,
-  av: 10, elevator: 14, automation: 8, appliances: 6, doors: 8, hvac: 4,
 };
 
 const PURCHASABLE: Category[] = [

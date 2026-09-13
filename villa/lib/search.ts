@@ -2,6 +2,7 @@ import type { ProjectState } from "./model/types";
 import { CATEGORY_LABEL, STAGE_LABEL } from "./model/types";
 import { forecastOf, openDecisions, upcomingPayments, isLate, rollup } from "./model/derive";
 import { inr } from "./model/costing";
+import { catLabel } from "./model/categories";
 
 /**
  * Universal search.
@@ -217,16 +218,16 @@ export function search(state: ProjectState, query: string): SearchHit[] {
     const sp = i.spaceId ? spaceById.get(i.spaceId) : undefined;
     add({
       kind: "item", id: i.id, title: i.title,
-      subtitle: `${sp?.name ?? "House-wide"} · ${CATEGORY_LABEL[i.category]} · ${STAGE_LABEL[i.stage]}`,
+      subtitle: `${sp?.name ?? "House-wide"} · ${catLabel(state, i.category)} · ${STAGE_LABEL[i.stage]}`,
       href: i.spaceId ? `/villa/${i.spaceId}?item=${i.id}` : `/costs?item=${i.id}`,
-    }, `${i.title} ${i.spec ?? ""} ${sp?.name ?? "house wide"} ${CATEGORY_LABEL[i.category]}`, 100);
+    }, `${i.title} ${i.spec ?? ""} ${sp?.name ?? "house wide"} ${catLabel(state, i.category)}`, 100);
   }
   for (const d of state.decisions) {
     add({ kind: "decision", id: d.id, title: d.title, subtitle: d.status.replace(/-/g, " "), href: `/decisions#${d.id}` },
       `${d.title} ${d.question} ${d.designerNote ?? ""}`, 110);
   }
   for (const v of state.vendors) {
-    add({ kind: "vendor", id: v.id, title: v.name, subtitle: v.trade.map((t) => CATEGORY_LABEL[t]).join(", "), href: `/vendors#${v.id}` },
+    add({ kind: "vendor", id: v.id, title: v.name, subtitle: v.trade.map((t) => catLabel(state, t)).join(", "), href: `/vendors#${v.id}` },
       `${v.name} ${v.trade.join(" ")} ${v.notes ?? ""}`, 105);
   }
   for (const n of state.notes) {

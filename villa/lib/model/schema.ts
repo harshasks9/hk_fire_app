@@ -26,7 +26,7 @@ export interface Field {
   /** Fixed choices. */
   options?: { value: string; label: string }[];
   /** Choices drawn from the project itself. */
-  source?: "spaces" | "vendors" | "items" | "people" | "decisions" | "designOptions" | "tasks";
+  source?: "spaces" | "vendors" | "items" | "people" | "decisions" | "designOptions" | "tasks" | "categories";
   hint?: string;
   required?: boolean;
   /** Shown as a column in the compact table, not just in the edit form. */
@@ -54,7 +54,7 @@ const opts = <T extends Record<string, string>>(m: T) =>
 const now = () => new Date().toISOString();
 
 const stageOptions = STAGES.map((s) => ({ value: s, label: STAGE_LABEL[s] }));
-const categoryOptions = opts(CATEGORY_LABEL);
+const categoryOptions = opts(CATEGORY_LABEL); // fallback only; the editor prefers state
 const unitOptions = opts(UNIT_LABEL);
 
 const FLOORS = [
@@ -73,6 +73,45 @@ const SPACE_KINDS = [
 ].map((k) => ({ value: k, label: k.replace(/-/g, " ") }));
 
 export const SCHEMAS: Record<CollectionKey, CollectionSchema> = {
+  /* --------------------------------------------------------- categories */
+  categories: {
+    key: "categories", label: "Categories", singular: "category", scope: "global",
+    deleteNote: "Scope items using it fall back to another category rather than breaking. Archiving is usually better — it hides the trade from pickers without touching history.",
+    fields: [
+      { key: "label", label: "Name", type: "text", required: true, inTable: true },
+      { key: "id", label: "Id", type: "text", required: true,
+        hint: "Used internally. Changing it on an existing category will orphan the items using it — prefer renaming the label." },
+      { key: "group", label: "Group", type: "select", required: true, inTable: true, options: [
+        { value: "shell", label: "Shell & civil" }, { value: "finishes", label: "Finishes" },
+        { value: "joinery", label: "Joinery & furniture" }, { value: "mep", label: "MEP & services" },
+        { value: "furnishing", label: "Soft furnishing & styling" }, { value: "outdoor", label: "Outdoor" },
+        { value: "systems", label: "Systems & safety" }, { value: "handover", label: "Handover" },
+      ] },
+      { key: "rate", label: "Indicative rate", type: "money", inTable: true,
+        hint: "A starting assumption used until a vendor quotes. Never presented as a market price." },
+      { key: "unit", label: "Unit", type: "select", options: unitOptions, inTable: true },
+      { key: "basis", label: "Quantity basis", type: "select",
+        hint: "How a default quantity is worked out from a room's dimensions.",
+        options: [
+          { value: "floor-area", label: "Floor area" }, { value: "wall-area", label: "Wall area" },
+          { value: "perimeter", label: "Perimeter" }, { value: "count", label: "Count" },
+          { value: "manual", label: "Enter by hand" },
+        ] },
+      { key: "wastagePct", label: "Wastage %", type: "percent" },
+      { key: "labourRate", label: "Labour / unit", type: "money" },
+      { key: "installationPct", label: "Installation %", type: "percent" },
+      { key: "freight", label: "Freight", type: "money" },
+      { key: "taxPct", label: "Tax %", type: "percent" },
+      { key: "leadTimeWeeks", label: "Lead time (weeks)", type: "number", inTable: true,
+        hint: "8 or more marks items in this trade as long-lead across the whole product." },
+      { key: "assumption", label: "What the rate assumes", type: "textarea" },
+      { key: "archived", label: "Archived", type: "bool", inTable: true,
+        hint: "Hidden from pickers; existing items keep it." },
+    ],
+    blank: ({ id }) => ({ id: `cat-${id.slice(-6)}`, label: "New category", group: "finishes", taxPct: 18, unit: "ls" }),
+    title: (r) => String(r.label ?? "Untitled category"),
+  },
+
   /* ------------------------------------------------------------- spaces */
   spaces: {
     key: "spaces", label: "Spaces", singular: "space", scope: "space",
@@ -117,7 +156,7 @@ export const SCHEMAS: Record<CollectionKey, CollectionSchema> = {
       { key: "title", label: "Title", type: "text", required: true, inTable: true },
       { key: "spaceId", label: "Room", type: "select", source: "spaces", inTable: true,
         hint: "Leave blank for house-wide scope." },
-      { key: "category", label: "Category", type: "select", options: categoryOptions, required: true, inTable: true },
+      { key: "category", label: "Category", type: "select", source: "categories", required: true, inTable: true },
       { key: "stage", label: "Stage", type: "select", options: stageOptions, required: true, inTable: true },
       { key: "spec", label: "Specification", type: "textarea" },
       { key: "owner", label: "Owner", type: "text", inTable: true },
@@ -315,7 +354,7 @@ export const SCHEMAS: Record<CollectionKey, CollectionSchema> = {
       { key: "title", label: "Title", type: "text", required: true, inTable: true },
       { key: "spaceId", label: "Room", type: "select", source: "spaces", required: true, inTable: true },
       { key: "description", label: "Description", type: "textarea" },
-      { key: "category", label: "Trade", type: "select", options: categoryOptions, inTable: true },
+      { key: "category", label: "Trade", type: "select", source: "categories", inTable: true },
       { key: "severity", label: "Severity", type: "select", inTable: true, options: [
         { value: "low", label: "Low" }, { value: "medium", label: "Medium" },
         { value: "high", label: "High" }, { value: "critical", label: "Critical" },

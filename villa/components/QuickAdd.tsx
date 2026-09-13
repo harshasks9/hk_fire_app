@@ -6,6 +6,7 @@ import { useProject, newId } from "@/lib/store";
 import { Sheet, Field, Eyebrow, NumberInput } from "./ui";
 import type { Severity, Category } from "@/lib/model/types";
 import { CATEGORY_LABEL } from "@/lib/model/types";
+import { categoryOptions } from "@/lib/model/categories";
 
 type Kind = "Idea" | "Photo" | "Note" | "Task" | "Decision" | "Expense" | "Issue" | "Product" | "Vendor" | "Document";
 
@@ -242,7 +243,7 @@ function QuickForm({
       {needsCategory && (
         <Field label="Category">
           <select className="input" value={category} onChange={(e) => setCategory(e.target.value as Category)}>
-            {Object.entries(CATEGORY_LABEL).map(([k, v]) => <option key={k} value={k}>{v}</option>)}
+            {categoryOptions(state).map((o) => <option key={o.value} value={o.value}>{o.label}</option>)}
           </select>
         </Field>
       )}

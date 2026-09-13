@@ -8,6 +8,7 @@ import { computeCost, inr, DEFAULT_RATES, round, areaSqft, perimeterFt, wallArea
 import { forecastOf } from "@/lib/model/derive";
 import { Sheet, Field, Eyebrow, NumberInput, StageChip, Chip, Money, Assumed, Tabs } from "./ui";
 import { Comments } from "./Comments";
+import { catLabel } from "@/lib/model/categories";
 
 const TABS = ["Cost", "Spec", "Procurement", "Discussion"] as const;
 type Tab = (typeof TABS)[number];
@@ -52,7 +53,7 @@ export function ItemSheet({
       }
     >
       <div className="flex flex-wrap items-center gap-2 mb-4 text-[12px] text-ink-3">
-        <Chip tone="ghost">{CATEGORY_LABEL[item.category]}</Chip>
+        <Chip tone="ghost">{catLabel(state, item.category)}</Chip>
         <span>{space?.name ?? "House-wide"}</span>
         {item.tags?.includes("critical") && <Chip tone="clay">Critical</Chip>}
         {item.tags?.includes("beyond-brief") && (

@@ -7,6 +7,7 @@ import { inr, computeCost } from "@/lib/model/costing";
 import { CATEGORY_LABEL, UNIT_LABEL, type ScopeItem, type FloorId } from "@/lib/model/types";
 import { FLOOR_META } from "@/lib/seed/spaces";
 import { Eyebrow, StageChip, Chip, NumberInput, Empty, Assumed } from "./ui";
+import { catLabel } from "@/lib/model/categories";
 
 /**
  * The BOQ.
@@ -117,7 +118,7 @@ export function BoqTable({ onOpen }: { onOpen: (i: ScopeItem) => void }) {
                       {Array.from(cats.entries()).map(([c, list]) => (
                         <div key={c}>
                           <div className="px-4 pt-2.5 pb-1">
-                            <Eyebrow>{CATEGORY_LABEL[c as keyof typeof CATEGORY_LABEL]}</Eyebrow>
+                            <Eyebrow>{catLabel(state, c as keyof typeof CATEGORY_LABEL)}</Eyebrow>
                           </div>
                           <div className="overflow-x-auto thin-scroll">
                             <table className="w-full text-[12.5px] min-w-[700px]">

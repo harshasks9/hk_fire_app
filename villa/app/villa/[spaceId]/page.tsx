@@ -8,7 +8,7 @@ import {
   spaceMetrics, rollup, itemsForSpace, byCategory, forecastOf, findGaps, bucketOf,
   COMPLETENESS_BUCKETS,
 } from "@/lib/model/derive";
-import { inr, dimsLabel, areaSqft, perimeterFt, computeCost, seedBuildUp } from "@/lib/model/costing";
+import { inr, dimsLabel, areaSqft, perimeterFt, computeCost } from "@/lib/model/costing";
 import { CATEGORY_LABEL, STAGE_LABEL, type ScopeItem, type Category } from "@/lib/model/types";
 import {
   PageTitle, Eyebrow, Stat, Bar, Chip, StageChip, Money, PhotoBlock, Tabs, Empty,
@@ -19,6 +19,7 @@ import { DecisionCard, OptionTile } from "@/components/DecisionCard";
 import { Comments } from "@/components/Comments";
 import { FloorPlan } from "@/components/FloorPlan";
 import { FLOOR_META } from "@/lib/seed/spaces";
+import { catLabel, categoryOptions, buildUpFromCategory } from "@/lib/model/categories";
 
 const TABS = [
   "Design", "Ideas", "Decisions", "Scope", "Cost", "Products",
@@ -352,7 +353,7 @@ function ScopeTab({ items, onOpen, spaceId }: { items: ScopeItem[]; onOpen: (i: 
       type: "create", on: "items",
       row: {
         id: newId("item"), title: newTitle.trim(), spaceId, category: newCat, stage: "not-started",
-        cost: seedBuildUp(newCat, space), ladder: {}, tags: [],
+        cost: buildUpFromCategory(state, newCat, space), ladder: {}, tags: [],
       },
     });
     setNewTitle("");
@@ -391,7 +392,7 @@ function ScopeTab({ items, onOpen, spaceId }: { items: ScopeItem[]; onOpen: (i: 
               onKeyDown={(e) => e.key === "Enter" && addItem()}
               placeholder="What else does this room need?" />
             <select className="input w-auto" value={newCat} onChange={(e) => setNewCat(e.target.value as Category)}>
-              {Object.entries(CATEGORY_LABEL).map(([k, v]) => <option key={k} value={k}>{v}</option>)}
+              {categoryOptions(state).map((o) => <option key={o.value} value={o.value}>{o.label}</option>)}
             </select>
             <button className="btn btn-accent btn-sm" onClick={addItem} disabled={!newTitle.trim()}>Add</button>
             <button className="btn btn-sm" onClick={() => setAdding(false)}>Cancel</button>
@@ -408,7 +409,7 @@ function ScopeTab({ items, onOpen, spaceId }: { items: ScopeItem[]; onOpen: (i: 
         {Array.from(grouped.entries()).map(([cat, list]) => (
           <div key={cat}>
             <div className="flex items-baseline justify-between mb-1.5">
-              <Eyebrow>{CATEGORY_LABEL[cat as Category]}</Eyebrow>
+              <Eyebrow>{catLabel(state, cat as Category)}</Eyebrow>
               <span className="text-[11px] text-ink-4 tnum">
                 {inr(list.reduce((a, i) => a + forecastOf(i), 0), { compact: true })}
               </span>
@@ -465,6 +466,7 @@ function ScopeTab({ items, onOpen, spaceId }: { items: ScopeItem[]; onOpen: (i: 
 }
 
 function CostTab({ items, rollupData }: { items: ScopeItem[]; rollupData: ReturnType<typeof rollup> }) {
+  const { state } = useProject();
   const grouped = byCategory(items.filter((i) => i.stage !== "not-applicable"));
   const rows = Array.from(grouped.entries())
     .map(([cat, list]) => ({
@@ -498,7 +500,7 @@ function CostTab({ items, rollupData }: { items: ScopeItem[]; rollupData: Return
           {rows.map((r) => (
             <div key={r.cat}>
               <div className="flex items-baseline justify-between text-[12.5px] mb-1">
-                <span className="text-ink-2">{CATEGORY_LABEL[r.cat]} <span className="text-ink-4 tnum">({r.n})</span></span>
+                <span className="text-ink-2">{catLabel(state, r.cat)} <span className="text-ink-4 tnum">({r.n})</span></span>
                 <span className="tnum">{inr(r.forecast)}</span>
               </div>
               <div className="flex h-[5px] rounded-full overflow-hidden bg-paper-3" style={{ width: `${(r.forecast / max) * 100}%`, minWidth: 20 }}>
@@ -595,7 +597,7 @@ function VendorsTab({ vendorIds, items }: { vendorIds: string[]; items: ScopeIte
             <div className="flex items-start justify-between gap-3">
               <div>
                 <div className="text-[15px]" style={{ fontFamily: "var(--font-display)" }}>{v.name}</div>
-                <div className="text-[11.5px] text-ink-3 mt-0.5">{v.trade.map((t) => CATEGORY_LABEL[t]).join(" · ")}</div>
+                <div className="text-[11.5px] text-ink-3 mt-0.5">{v.trade.map((t) => catLabel(state, t)).join(" · ")}</div>
               </div>
               <span className="tnum text-[13px]">{inr(mine.reduce((a, i) => a + forecastOf(i), 0), { compact: true })}</span>
             </div>
@@ -686,7 +688,7 @@ function IssuesTab({ snags }: { snags: any[] }) {
               <div className="flex flex-wrap items-center gap-2 mb-1.5">
                 <Chip tone={s.severity === "critical" || s.severity === "high" ? "rust" : "ochre"}>{s.severity}</Chip>
                 <Chip tone={s.status === "closed" ? "sage" : s.status === "open" ? "rust" : "slate"}>{s.status}</Chip>
-                <span className="text-[11px] text-ink-3">{CATEGORY_LABEL[s.category as Category]}</span>
+                <span className="text-[11px] text-ink-3">{catLabel(state, s.category as Category)}</span>
               </div>
               <div className="text-[14px]">{s.title}</div>
               {s.description && <p className="text-[12.5px] text-ink-3 mt-1 leading-relaxed">{s.description}</p>}

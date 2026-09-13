@@ -7,6 +7,7 @@ import { forecastOf, byCategory, itemsForSpace, projectFinance } from "@/lib/mod
 import { inr } from "@/lib/model/costing";
 import { CATEGORY_LABEL, type Category, type Scenario } from "@/lib/model/types";
 import { Eyebrow, Stat, Money, Bar, Chip, Assumed } from "./ui";
+import { catLabel } from "@/lib/model/categories";
 
 /**
  * The scenario planner.
@@ -103,7 +104,7 @@ export function ScenarioPlanner() {
               {catDelta.slice(0, 12).map((r) => (
                 <div key={r.cat}>
                   <div className="flex items-baseline justify-between text-[12.5px] mb-1">
-                    <span className="text-ink-2">{CATEGORY_LABEL[r.cat]}</span>
+                    <span className="text-ink-2">{catLabel(state, r.cat)}</span>
                     <span className="tnum" style={{ color: r.delta > 0 ? "#8d3a2c" : "#41603f" }}>
                       {r.delta > 0 ? "+" : ""}{inr(r.delta, { compact: true })}
                     </span>

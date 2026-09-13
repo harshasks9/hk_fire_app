@@ -16,6 +16,7 @@ import {
 import { ItemSheet } from "@/components/ItemSheet";
 import { ScenarioPlanner } from "@/components/ScenarioPlanner";
 import { BoqTable } from "@/components/BoqTable";
+import { catLabel } from "@/lib/model/categories";
 
 const TABS = ["Overview", "Drill-down", "BOQ", "Scenarios", "Payments"] as const;
 type Tab = (typeof TABS)[number];
@@ -140,7 +141,7 @@ function Overview() {
             {catRows.map((r) => (
               <div key={r.cat}>
                 <div className="flex items-baseline justify-between text-[12.5px] mb-1">
-                  <span className="text-ink-2">{CATEGORY_LABEL[r.cat]} <span className="text-ink-4 tnum">({r.n})</span></span>
+                  <span className="text-ink-2">{catLabel(state, r.cat)} <span className="text-ink-4 tnum">({r.n})</span></span>
                   <span className="tnum">{inr(r.forecast, { compact: true })}</span>
                 </div>
                 <Bar pct={(r.forecast / catMax) * 100} height={5} tone="#a8763f" />
@@ -192,7 +193,7 @@ function DrillDown({ onOpen }: { onOpen: (i: ScopeItem) => void }) {
           </button></>}
         {spaceId && <><span className="text-ink-4">/</span>
           <button onClick={() => setCat(null)} className="text-clay hover:underline">{state.spaces.find((s) => s.id === spaceId)?.name}</button></>}
-        {cat && <><span className="text-ink-4">/</span><span className="text-ink-2">{CATEGORY_LABEL[cat]}</span></>}
+        {cat && <><span className="text-ink-4">/</span><span className="text-ink-2">{catLabel(state, cat)}</span></>}
       </div>
 
       {!floor && (
@@ -234,7 +235,7 @@ function DrillDown({ onOpen }: { onOpen: (i: ScopeItem) => void }) {
         <div className="card divide-y divide-line">
           {cats.map((c) => (
             <button key={c.c} onClick={() => setCat(c.c)} className="w-full px-4 py-3 flex items-center justify-between gap-3 hover:bg-paper-2/60 text-left">
-              <span className="text-[13.5px]">{CATEGORY_LABEL[c.c]} <span className="text-ink-4 tnum text-[11.5px]">({c.n})</span></span>
+              <span className="text-[13.5px]">{catLabel(state, c.c)} <span className="text-ink-4 tnum text-[11.5px]">({c.n})</span></span>
               <span className="tnum text-[13.5px]">{inr(c.total)}</span>
             </button>
           ))}

@@ -6,7 +6,7 @@ import { useProject, newId, type CollectionKey } from "@/lib/store";
 import { SCHEMAS } from "@/lib/model/schema";
 import { FLOOR_META } from "@/lib/seed/spaces";
 import { SCOPE_TEMPLATES } from "@/lib/seed/scope-templates";
-import { seedBuildUp } from "@/lib/model/costing";
+import { buildUpFromCategory } from "@/lib/model/categories";
 import { rollup, itemsForFloor, itemsForSpace, houseWideItems } from "@/lib/model/derive";
 import { inr, dimsLabel, areaSqft } from "@/lib/model/costing";
 import type { FloorId, Space, ScopeItem, SpaceKind } from "@/lib/model/types";
@@ -281,7 +281,7 @@ function AddSpace({ floor, onClose }: { floor: FloorId; onClose: () => void }) {
           category: t.category,
           stage: "not-started",
           spec: t.spec,
-          cost: seedBuildUp(t.category, space, t.qty),
+          cost: buildUpFromCategory(state, t.category, space, t.qty),
           ladder: {},
           tags: t.critical ? ["critical"] : [],
         };

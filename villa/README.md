@@ -47,6 +47,7 @@ thinks to ask for it.
 | **Procurement** | Nine-state pipeline, with long-lead items given their own place because they are what moves handover. |
 | **Site** | Mobile-first capture. Pick the room once; everything files itself there. |
 | **Manage** | The editing console. Everything in the project, floor by floor — create, edit and delete across all sixteen collections, with references cleaned up on delete. |
+| **Admin** | Record counts, the category taxonomy and its rate card, backup and restore, and starting the project from scratch. |
 | **More** | Vendors & quotation comparison, notes, documents, and the completeness report. |
 
 ## Things worth knowing
@@ -60,6 +61,21 @@ upper-floor footprint is 45'10" × 45'2".
 and carries its `source`. Spaces the plans do not dimension — the gardens, the
 deck, the utility yard, circulation — carry no dimension at all, and their
 quantities start at 1 with a note that they must be measured on site.
+
+**The taxonomy is the project's, not the code's.** Categories are data, seeded
+from a built-in rate card and owned by the project from then on. Each one
+carries its indicative rate, unit, wastage, labour, tax, quantity basis and
+lead time — so the whole rate card is editable in one place under Admin, and a
+rate changed there is picked up by every item created afterwards. A trade can
+be archived (hidden from pickers, existing items untouched) or deleted (items
+fall back to another category rather than orphaning).
+
+**You can start from scratch.** Admin → Danger zone empties the project, with a
+per-collection choice of what to carry over — the taxonomy by default, since
+without a category list you cannot create a single scope item. Vendors, people,
+scenarios and settings are each optional. The dialog names exactly how many
+records will go, and asks you to type EMPTY. Back up and restore the whole
+project as JSON from Admin → Data.
 
 **Rates are assumptions, never quotations.** Where no vendor quote exists, the
 forecast uses an indicative Hyderabad rate for that category. Those rates carry
@@ -107,7 +123,7 @@ mention. These are in the model, marked *Added by the app*:
 ```bash
 npm install
 npm run dev        # http://localhost:3000
-npm test           # 58 tests over the model, workflow, seed and CRUD integrity
+npm test           # 70 tests over the model, workflow, seed and CRUD integrity
 npm run typecheck
 npm run build
 ```
@@ -132,6 +148,7 @@ lib/seed/build.ts        generates scope items and a coherent money ladder
 lib/seed/content.ts      curated ideas, options, decisions, quotes, snags, notes
 lib/plans/geometry.ts    floor-plate SVG geometry
 lib/search.ts            answers questions first, indexes everything else
+lib/model/categories.ts  the taxonomy and rate card, and the lookups over it
 lib/model/schema.ts      per-collection editable fields — one source for every form
 lib/store.tsx            reducer, uniform CRUD, delete cascades, persistence, roles
 ```

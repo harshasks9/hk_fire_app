@@ -3,6 +3,7 @@ import { SPACES } from "./spaces";
 import { buildItems, enforceLadderStage } from "./build";
 import { buildContent, PEOPLE, VENDORS } from "./content";
 import { round } from "../model/costing";
+import { BUILTIN_CATEGORIES } from "../model/categories";
 import { forecastOf } from "../model/derive";
 
 /**
@@ -155,6 +156,7 @@ export function buildProject(): ProjectState {
       currency: "INR",
       lastOwnerVisit: new Date("2026-09-08").toISOString(),
     },
+    categories: BUILTIN_CATEGORIES.map((c) => ({ ...c })),
     people: PEOPLE,
     spaces: SPACES,
     items,

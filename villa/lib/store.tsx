@@ -4,8 +4,9 @@ import React, { createContext, useContext, useEffect, useMemo, useReducer, useSt
 import type {
   ProjectState, ScopeItem, Stage, Idea, DesignOption, Comment, Decision, Task,
   Snag, Note, Space, Role, CostBuildUp, CostLadder, Payment, SiteUpdate,
-  Vendor, Quotation, Doc, Scenario, Person, ProjectMeta,
+  Vendor, Quotation, Doc, Scenario, Person, ProjectMeta, CategoryDef,
 } from "./model/types";
+import { BUILTIN_CATEGORIES } from "./model/categories";
 import { buildProject } from "./seed";
 
 const STORAGE_KEY = "villa-fitout:v1";
@@ -21,6 +22,7 @@ const STORAGE_KEY = "villa-fitout:v1";
  * uneditable the first time round.
  */
 export interface Collections {
+  categories: CategoryDef;
   spaces: Space;
   items: ScopeItem;
   ideas: Idea;
@@ -41,7 +43,7 @@ export interface Collections {
 export type CollectionKey = keyof Collections;
 
 export const COLLECTION_KEYS = [
-  "spaces", "items", "ideas", "options", "decisions", "comments", "vendors",
+  "categories", "spaces", "items", "ideas", "options", "decisions", "comments", "vendors",
   "quotations", "tasks", "snags", "notes", "payments", "docs", "siteUpdates",
   "scenarios", "people",
 ] as const;
@@ -53,6 +55,9 @@ export type Action =
   | { type: "reset" }
   | { type: "hydrate"; state: ProjectState }
   | { type: "meta/patch"; patch: Partial<ProjectMeta> }
+  /* data lifecycle */
+  | { type: "data/clear"; keep: KeepOptions }
+  | { type: "data/import"; state: ProjectState }
   /* uniform CRUD over any collection */
   | CreateAction
   | UpdateAction
@@ -89,6 +94,53 @@ export type Action =
   | { type: "space/add"; space: Space }
   | { type: "space/patch"; id: string; patch: Partial<Space> }
   | { type: "scenario/set"; id: string };
+
+/** What survives a wipe. Everything not listed here is emptied. */
+export interface KeepOptions {
+  /** The taxonomy and rate card — almost always worth keeping. */
+  categories?: boolean;
+  /** Names and roles. */
+  people?: boolean;
+  /** The vendor directory, which outlives any one project. */
+  vendors?: boolean;
+  /** Project name, address, budget, dates. */
+  settings?: boolean;
+  /** The three costing scenarios. */
+  scenarios?: boolean;
+}
+
+const BLANK_META: ProjectMeta = {
+  name: "New project",
+  address: "",
+  plotWidthFt: 0,
+  plotDepthFt: 0,
+  startDate: new Date().toISOString(),
+  targetHandover: new Date(Date.now() + 365 * 86400000).toISOString(),
+  originalBudget: 0,
+  contingencyPct: 7.5,
+  currency: "INR",
+  lastOwnerVisit: new Date().toISOString(),
+};
+
+/**
+ * An empty project you can actually start from.
+ *
+ * Wiping the content should not wipe the scaffolding: without a category list
+ * you cannot create a single scope item, so the taxonomy and rate card are kept
+ * by default. Everything else is a choice.
+ */
+export function emptyProject(current: ProjectState, keep: KeepOptions): ProjectState {
+  return {
+    meta: keep.settings ? current.meta : { ...BLANK_META, currency: current.meta.currency },
+    categories: keep.categories ? current.categories : BUILTIN_CATEGORIES.map((c) => ({ ...c })),
+    people: keep.people ? current.people : [],
+    vendors: keep.vendors ? current.vendors : [],
+    scenarios: keep.scenarios ? current.scenarios : [],
+    activeScenarioId: keep.scenarios ? current.activeScenarioId : undefined,
+    spaces: [], items: [], ideas: [], options: [], decisions: [], comments: [],
+    quotations: [], tasks: [], snags: [], notes: [], payments: [], docs: [], siteUpdates: [],
+  };
+}
 
 /** Rows in every collection carry a string `id`. */
 const rowsOf = (s: ProjectState, on: CollectionKey): { id: string }[] =>
@@ -180,6 +232,17 @@ function cascadeDelete(s: ProjectState, on: CollectionKey, id: string): ProjectS
     case "comments":
       // A deleted parent takes its replies with it.
       return { ...s, comments: s.comments.filter((c) => c.parentId !== id) };
+    case "categories": {
+      // Items keep working: they fall back to the first surviving category
+      // rather than pointing at a trade that no longer exists.
+      const fallback = s.categories.find((c) => c.id !== id && !c.archived)?.id;
+      return {
+        ...s,
+        items: s.items.map((i) => (i.category === id ? { ...i, category: fallback ?? i.category } : i)),
+        snags: s.snags.map((x) => (x.category === id ? { ...x, category: fallback ?? x.category } : x)),
+        vendors: s.vendors.map((v) => ({ ...v, trade: v.trade.filter((t) => t !== id) })),
+      };
+    }
     case "scenarios":
       return { ...s, activeScenarioId: s.activeScenarioId === id ? undefined : s.activeScenarioId };
     default:
@@ -210,6 +273,12 @@ export function reducer(s: ProjectState, a: Action): ProjectState {
 
     case "meta/patch":
       return { ...s, meta: { ...s.meta, ...a.patch } };
+
+    case "data/clear":
+      return emptyProject(s, a.keep);
+
+    case "data/import":
+      return a.state;
 
     /* ------------------------------------------------- uniform CRUD */
     case "create":
@@ -456,8 +525,17 @@ function load(): ProjectState | null {
     const raw = window.localStorage.getItem(STORAGE_KEY);
     if (!raw) return null;
     const parsed = JSON.parse(raw) as { v: number; state: ProjectState };
-    if (parsed.v !== 1 || !parsed.state?.items?.length) return null;
-    return parsed.state;
+    // Validate the SHAPE, not the contents. A project someone has deliberately
+    // emptied has zero items, and treating that as "nothing saved" would
+    // re-seed the sample villa over their fresh start on every reload.
+    if (parsed.v !== 1) return null;
+    const st = parsed.state;
+    if (!st || !Array.isArray(st.items) || !Array.isArray(st.spaces) || !st.meta) return null;
+    // A backup taken before the taxonomy moved into state still has to load.
+    if (!Array.isArray(st.categories) || !st.categories.length) {
+      st.categories = BUILTIN_CATEGORIES.map((c) => ({ ...c }));
+    }
+    return st;
   } catch {
     return null;
   }

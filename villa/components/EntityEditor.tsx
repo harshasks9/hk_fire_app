@@ -4,6 +4,7 @@ import React, { useMemo, useState } from "react";
 import { useProject, newId, type CollectionKey } from "@/lib/store";
 import { SCHEMAS, readField, writeField, type Field, type CollectionSchema } from "@/lib/model/schema";
 import { inr } from "@/lib/model/costing";
+import { categoryOptions } from "@/lib/model/categories";
 import { Eyebrow, Field as FieldShell, NumberInput, Sheet, Empty, Chip, fmtDay } from "./ui";
 import type { ProjectState } from "@/lib/model/types";
 
@@ -37,6 +38,8 @@ function optionsFor(f: Field, state: ProjectState): { value: string; label: stri
       return state.options.map((o) => ({ value: o.id, label: `${o.label} — ${o.headline}` }));
     case "tasks":
       return state.tasks.map((t) => ({ value: t.id, label: t.title }));
+    case "categories":
+      return categoryOptions(state);
     default:
       return [];
   }

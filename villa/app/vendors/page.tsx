@@ -8,6 +8,7 @@ import { inr } from "@/lib/model/costing";
 import { CATEGORY_LABEL, type Quotation } from "@/lib/model/types";
 import { PageTitle, Eyebrow, Chip, Empty, Tabs, Stat, fmtDay, Assumed } from "@/components/ui";
 import { Comments } from "@/components/Comments";
+import { catLabel } from "@/lib/model/categories";
 
 const TABS = ["Quotation comparison", "Directory"] as const;
 type Tab = (typeof TABS)[number];
@@ -77,7 +78,7 @@ export default function VendorsPage() {
                   <div className="flex items-start justify-between gap-3">
                     <div className="min-w-0">
                       <div className="text-[15px]" style={{ fontFamily: "var(--font-display)" }}>{v.name}</div>
-                      <div className="text-[11.5px] text-ink-3 mt-0.5">{v.trade.map((t) => CATEGORY_LABEL[t]).join(" · ")}</div>
+                      <div className="text-[11.5px] text-ink-3 mt-0.5">{v.trade.map((t) => catLabel(state, t)).join(" · ")}</div>
                     </div>
                     {v.rating && (
                       <span className="text-[12px] text-ochre shrink-0" title={`${v.rating} of 5`}>

@@ -144,7 +144,17 @@ export const STAGE_PROGRESS: Record<Stage, number> = {
   "not-applicable": 1,
 };
 
-export type Category =
+/**
+ * A category is an id, not a closed union.
+ *
+ * The list below seeds a new project, but it lives in project state from then
+ * on: a homeowner doing a sea-facing apartment has different trades from one
+ * doing a villa, and a taxonomy nailed into the type system cannot follow them.
+ * `BUILTIN_CATEGORIES` is the default rate card; `state.categories` is the truth.
+ */
+export type Category = string;
+
+type BuiltinCategory =
   | "civil"
   | "waterproofing"
   | "flooring"
@@ -189,7 +199,7 @@ export type Category =
   | "cleaning"
   | "handover";
 
-export const CATEGORY_LABEL: Record<Category, string> = {
+export const CATEGORY_LABEL: Record<BuiltinCategory, string> = {
   civil: "Civil & masonry",
   waterproofing: "Waterproofing",
   flooring: "Flooring",
@@ -237,6 +247,48 @@ export const CATEGORY_LABEL: Record<Category, string> = {
 
 /** Which trade must finish before this one can start. Drives the timeline. */
 export type Trade = Category;
+
+export type CategoryGroup =
+  | "shell" | "finishes" | "joinery" | "mep" | "furnishing" | "outdoor" | "systems" | "handover";
+
+export const CATEGORY_GROUP_LABEL: Record<CategoryGroup, string> = {
+  shell: "Shell & civil",
+  finishes: "Finishes",
+  joinery: "Joinery & furniture",
+  mep: "MEP & services",
+  furnishing: "Soft furnishing & styling",
+  outdoor: "Outdoor",
+  systems: "Systems & safety",
+  handover: "Handover",
+};
+
+/**
+ * A category and everything the app assumes about it.
+ *
+ * This is the rate card. Every indicative number the product uses when no
+ * vendor has quoted yet comes from here, which is why it is editable in one
+ * place rather than scattered through the code.
+ */
+export interface CategoryDef {
+  id: string;
+  label: string;
+  group: CategoryGroup;
+  /** Indicative supply rate. An assumption, never a quotation. */
+  rate?: number;
+  unit?: Unit;
+  wastagePct?: number;
+  labourRate?: number;
+  installationPct?: number;
+  freight?: number;
+  taxPct?: number;
+  /** How a default quantity is derived from a room's dimensions. */
+  basis?: "floor-area" | "wall-area" | "perimeter" | "count" | "manual";
+  /** Typical lead time; 8 weeks or more marks an item long-lead. */
+  leadTimeWeeks?: number;
+  assumption?: string;
+  /** Kept out of pickers without destroying the items already using it. */
+  archived?: boolean;
+}
 
 /* ----------------------------------------------------------- cost structure */
 
@@ -674,6 +726,8 @@ export interface ProjectMeta {
 
 export interface ProjectState {
   meta: ProjectMeta;
+  /** The project's own category taxonomy and rate card. */
+  categories: CategoryDef[];
   people: Person[];
   spaces: Space[];
   items: ScopeItem[];

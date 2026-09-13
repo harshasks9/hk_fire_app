@@ -3,6 +3,8 @@ import { buildProject } from "@/lib/seed";
 import { reducer, COLLECTION_KEYS, type CollectionKey } from "@/lib/store";
 import { SCHEMAS, readField, writeField } from "@/lib/model/schema";
 import type { ProjectState } from "@/lib/model/types";
+import { projectFinance, findGaps, openDecisions } from "@/lib/model/derive";
+import { search } from "@/lib/search";
 
 const base = buildProject();
 
@@ -83,21 +85,25 @@ describe("every collection is fully editable", () => {
   it("supports create, update and delete on every collection", () => {
     for (const k of COLLECTION_KEYS) {
       const schema = SCHEMAS[k];
+      // A schema may mint a friendlier id than the hint it is given — category
+      // ids are human-readable, for instance — so work from the id it returns.
       const row = schema.blank({ id: `test-${k}`, me: "Tester", state: base, spaceId: base.spaces[0].id });
+      const id = String(row.id);
+      expect(id, `blank() produced no id for ${k}`).toBeTruthy();
 
       const created = reducer(base, { type: "create", on: k, row } as never);
       const list = () => (created[k] as unknown as { id: string }[]);
       expect(list().length, `create failed on ${k}`).toBe((base[k] as unknown[]).length + 1);
-      expect(list().some((r) => r.id === `test-${k}`)).toBe(true);
+      expect(list().some((r) => r.id === id)).toBe(true);
 
-      const field = schema.fields.find((f) => f.type === "text" && !f.key.includes("."))!;
+      const field = schema.fields.find((f) => f.type === "text" && !f.key.includes(".") && f.key !== "id")!;
       const updated = reducer(created, {
-        type: "update", on: k, id: `test-${k}`, patch: { [field.key]: "Edited" },
+        type: "update", on: k, id, patch: { [field.key]: "Edited" },
       } as never);
-      const found = (updated[k] as unknown as Record<string, unknown>[]).find((r) => r.id === `test-${k}`)!;
+      const found = (updated[k] as unknown as Record<string, unknown>[]).find((r) => r.id === id)!;
       expect(readField(found, field.key), `update failed on ${k}.${field.key}`).toBe("Edited");
 
-      const removed = reducer(updated, { type: "remove", on: k, id: `test-${k}` });
+      const removed = reducer(updated, { type: "remove", on: k, id });
       expect((removed[k] as unknown[]).length, `delete failed on ${k}`).toBe((base[k] as unknown[]).length);
     }
   });
@@ -228,5 +234,130 @@ describe("nested field writes", () => {
   it("creates the parent object when it is missing", () => {
     const next = writeField({ id: "x" }, "dims.widthFt", 12);
     expect(readField(next, "dims.widthFt")).toBe(12);
+  });
+});
+
+/* ------------------------------------------------------- admin & lifecycle */
+
+import { emptyProject } from "@/lib/store";
+import { BUILTIN_CATEGORIES, catLabel, buildUpFromCategory, categoryUsage } from "@/lib/model/categories";
+import { SCOPE_TEMPLATES } from "@/lib/seed/scope-templates";
+import { MASTER_SCOPE } from "@/lib/seed/master-scope";
+
+describe("the category taxonomy", () => {
+  it("is seeded into the project rather than frozen in the type system", () => {
+    expect(base.categories.length).toBe(BUILTIN_CATEGORIES.length);
+    expect(base.categories.every((c) => c.id && c.label && c.group)).toBe(true);
+  });
+
+  it("covers every category the seeded scope actually uses", () => {
+    const known = new Set(base.categories.map((c) => c.id));
+    for (const i of base.items) {
+      expect(known.has(i.category), `scope item "${i.title}" uses unknown category "${i.category}"`).toBe(true);
+    }
+    for (const list of Object.values(SCOPE_TEMPLATES)) {
+      for (const t of list) expect(known.has(t.category), `template uses unknown category "${t.category}"`).toBe(true);
+    }
+    for (const m of MASTER_SCOPE) {
+      expect(known.has(m.category), `master scope uses unknown category "${m.category}"`).toBe(true);
+    }
+  });
+
+  it("never shows a raw id to the user", () => {
+    expect(catLabel(base, "flooring")).toBe("Flooring");
+    expect(catLabel(base, undefined)).toBe("—");
+    // An unknown id degrades to something readable rather than a slug.
+    expect(catLabel(base, "made-up-trade")).toBe("made up trade");
+  });
+
+  it("builds new items from the project's rate card, not the frozen defaults", () => {
+    const edited = reducer(base, {
+      type: "update", on: "categories", id: "flooring", patch: { rate: 999, unit: "sqft" },
+    } as never);
+    const space = edited.spaces.find((s) => s.dims)!;
+    expect(buildUpFromCategory(edited, "flooring", space).rate).toBe(999);
+    // and the untouched project is unaffected
+    expect(buildUpFromCategory(base, "flooring", space).rate).not.toBe(999);
+  });
+
+  it("moves items onto another category rather than orphaning them when one is deleted", () => {
+    const used = base.categories.find((c) => categoryUsage(base, c.id) > 0)!;
+    const after = reducer(base, { type: "remove", on: "categories", id: used.id });
+    expect(after.categories.some((c) => c.id === used.id)).toBe(false);
+    expect(after.items.some((i) => i.category === used.id)).toBe(false);
+    const known = new Set(after.categories.map((c) => c.id));
+    for (const i of after.items) expect(known.has(i.category)).toBe(true);
+  });
+
+  it("can be archived without touching the items already using it", () => {
+    const used = base.categories.find((c) => categoryUsage(base, c.id) > 0)!;
+    const after = reducer(base, { type: "update", on: "categories", id: used.id, patch: { archived: true } } as never);
+    expect(categoryUsage(after, used.id)).toBe(categoryUsage(base, used.id));
+  });
+});
+
+describe("starting from scratch", () => {
+  it("empties the project content", () => {
+    const after = reducer(base, { type: "data/clear", keep: { categories: true } });
+    expect(after.spaces).toHaveLength(0);
+    expect(after.items).toHaveLength(0);
+    expect(after.decisions).toHaveLength(0);
+    expect(after.snags).toHaveLength(0);
+    expect(after.notes).toHaveLength(0);
+    expect(after.payments).toHaveLength(0);
+    expect(danglingRefs(after)).toEqual([]);
+  });
+
+  it("keeps the taxonomy by default, because nothing can be created without it", () => {
+    const after = reducer(base, { type: "data/clear", keep: { categories: true } });
+    expect(after.categories.length).toBeGreaterThan(0);
+    // and a fresh scope item is still creatable
+    expect(() => buildUpFromCategory(after, after.categories[0].id)).not.toThrow();
+  });
+
+  it("restores the built-in rate card when the taxonomy is not kept", () => {
+    const after = reducer(base, { type: "data/clear", keep: {} });
+    expect(after.categories.length).toBe(BUILTIN_CATEGORIES.length);
+  });
+
+  it("honours each keep option independently", () => {
+    const kept = reducer(base, { type: "data/clear", keep: { vendors: true, people: true, settings: true, scenarios: true } });
+    expect(kept.vendors.length).toBe(base.vendors.length);
+    expect(kept.people.length).toBe(base.people.length);
+    expect(kept.scenarios.length).toBe(base.scenarios.length);
+    expect(kept.meta.originalBudget).toBe(base.meta.originalBudget);
+
+    const dropped = reducer(base, { type: "data/clear", keep: { categories: true } });
+    expect(dropped.vendors).toHaveLength(0);
+    expect(dropped.people).toHaveLength(0);
+    expect(dropped.scenarios).toHaveLength(0);
+    expect(dropped.meta.originalBudget).toBe(0);
+  });
+
+  it("leaves a project every derived figure can still be computed from", () => {
+    const after = reducer(base, { type: "data/clear", keep: { categories: true } });
+    const fin = projectFinance(after);
+    for (const [k, v] of Object.entries(fin)) {
+      if (typeof v === "number") {
+        expect(Number.isFinite(v), `projectFinance().${k} is ${v} on an empty project`).toBe(true);
+      }
+    }
+    expect(findGaps(after)).toEqual([]);
+    expect(openDecisions(after)).toEqual([]);
+    expect(search(after, "wardrobes").every((h) => h.title !== undefined)).toBe(true);
+  });
+
+  it("round-trips through export and import", () => {
+    const emptied = reducer(base, { type: "data/clear", keep: { categories: true } });
+    const json = JSON.parse(JSON.stringify({ v: 1, state: emptied }));
+    const restored = reducer(emptied, { type: "data/import", state: json.state });
+    expect(restored.categories.length).toBe(emptied.categories.length);
+    expect(restored.items).toHaveLength(0);
+
+    const full = JSON.parse(JSON.stringify({ v: 1, state: base }));
+    const back = reducer(emptied, { type: "data/import", state: full.state });
+    expect(back.items.length).toBe(base.items.length);
+    expect(back.spaces.length).toBe(base.spaces.length);
+    expect(danglingRefs(back)).toEqual([]);
   });
 });

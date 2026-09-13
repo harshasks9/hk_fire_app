@@ -10,6 +10,7 @@ import { FLOOR_META } from "@/lib/seed/spaces";
 import {
   PageTitle, Eyebrow, Chip, Empty, PhotoBlock, Stat, Tabs, Field, fmtDay, Sheet, Bar,
 } from "@/components/ui";
+import { categoryOptions } from "@/lib/model/categories";
 
 const TABS = ["Capture", "Snag list", "Progress"] as const;
 type Tab = (typeof TABS)[number];
@@ -269,7 +270,7 @@ function CaptureSheet({ action, room, onClose }: { action: Action | null; room: 
             </Field>
             <Field label="Trade">
               <select className="input" value={category} onChange={(e) => setCategory(e.target.value as Category)}>
-                {Object.entries(CATEGORY_LABEL).map(([k, v]) => <option key={k} value={k}>{v}</option>)}
+                {categoryOptions(state).map((o) => <option key={o.value} value={o.value}>{o.label}</option>)}
               </select>
             </Field>
             <Field label="Responsible vendor">

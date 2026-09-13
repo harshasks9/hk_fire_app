@@ -12,6 +12,8 @@ const LINKS = [
   { href: "/notes", title: "Project notes", blurb: "Meetings, site visits, calls and measurements — the project's memory, tagged to everything." },
   { href: "/documents", title: "Documents", blurb: "Drawings, quotes, POs, invoices, warranties and manuals." },
   { href: "/costs", title: "BOQ", blurb: "The bill of quantities, built automatically from approved scope." },
+  { href: "/admin", title: "Admin",
+    blurb: "Record counts, the category list and its rate card, backup and restore, and starting the project from scratch." },
   { href: "/more/completeness", title: "Completeness report", blurb: "Not what has been entered — what has not yet been thought about." },
   { href: "/costs", title: "Scenario planner", blurb: "Practical, Premium and No-compromise, and the specific trades between them." },
 ];
@@ -67,16 +69,7 @@ export default function MorePage() {
           replaced by a vendor quotation are indicative assumptions for a premium Hyderabad
           fit-out and are editable everywhere they appear.
         </p>
-        <button
-          className="btn btn-sm mt-4"
-          onClick={() => {
-            if (confirm("Reset the project back to its seeded state? Anything you have changed will be lost.")) {
-              dispatch({ type: "reset" });
-            }
-          }}
-        >
-          Reset to seeded project
-        </button>
+        <Link href="/admin" className="btn btn-sm mt-4">Admin, backup & reset</Link>
       </div>
     </div>
   );
