@@ -1,16 +1,16 @@
 "use client";
 
 import React, { useState } from "react";
-import { useProject, newId } from "@/lib/store";
+import { useProject, newId, useRevisions } from "@/lib/store";
 import type { ScopeItem, Stage, Unit } from "@/lib/model/types";
 import { STAGES, STAGE_LABEL, UNIT_LABEL, CATEGORY_LABEL } from "@/lib/model/types";
 import { computeCost, inr, DEFAULT_RATES, round, areaSqft, perimeterFt, wallAreaSqft } from "@/lib/model/costing";
 import { forecastOf } from "@/lib/model/derive";
-import { Sheet, Field, Eyebrow, NumberInput, StageChip, Chip, Money, Assumed, Tabs } from "./ui";
+import { Sheet, Field, Eyebrow, NumberInput, StageChip, Chip, Money, Assumed, Tabs, Avatar, Empty, fmtDate } from "./ui";
 import { Comments } from "./Comments";
 import { catLabel } from "@/lib/model/categories";
 
-const TABS = ["Cost", "Spec", "Procurement", "Discussion"] as const;
+const TABS = ["Cost", "Spec", "Procurement", "Discussion", "Changes"] as const;
 type Tab = (typeof TABS)[number];
 
 /**
@@ -332,6 +332,8 @@ export function ItemSheet({
                 <Comments targetType="item" targetId={item.id} />
               </div>
             )}
+
+            {tab === "Changes" && <ItemChanges itemId={item.id} />}
           </div>
         </>
       )}
@@ -397,6 +399,35 @@ function ProcurementPanel({ item }: { item: ScopeItem }) {
         <Field label="Invoice reference"><input className="input" value={p.invoiceRef ?? ""} onChange={(e) => patch({ invoiceRef: e.target.value })} /></Field>
         <Field label="Responsible"><input className="input" value={p.owner ?? ""} onChange={(e) => patch({ owner: e.target.value })} /></Field>
       </div>
+    </div>
+  );
+}
+
+/** Everything that has ever happened to this one item, newest first. */
+function ItemChanges({ itemId }: { itemId: string }) {
+  const { state } = useProject();
+  const { revisions, loading } = useRevisions({ itemId });
+  const list = revisions.slice().reverse();
+  if (!list.length) {
+    return <Empty title={loading ? "Loading…" : "No changes recorded on this item yet."} hint="Every edit from here on is listed with who made it and when." />;
+  }
+  return (
+    <div className="card divide-y divide-line">
+      {list.map((r) => {
+        const person = state.people.find((p) => p.id === r.byId || p.name === r.by);
+        return (
+          <div key={r.v} className="px-4 py-3 flex items-start gap-3">
+            <Avatar name={r.by || "?"} tone={person?.avatarTone} size={24} />
+            <div className="min-w-0 flex-1">
+              <div className="text-[13px] leading-relaxed">{r.summary}</div>
+              <div className="text-[11px] text-ink-3 mt-0.5">
+                <span className="font-medium text-ink-2">{r.by || "Unattributed"}</span> · {fmtDate(r.at)}{" "}
+                {new Date(r.at).toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit" })} · <span className="tnum">v{r.v}</span>
+              </div>
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 }

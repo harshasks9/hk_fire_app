@@ -82,6 +82,8 @@ export default function Home() {
         }
       />
 
+      {state.people.length === 0 && state.decisions.length === 0 && state.notes.length === 0 && <FirstRun />}
+
       {/* ------------------------------------------------ what needs me today */}
       <section className="mb-9">
         <Eyebrow className="mb-2.5">What needs me today</Eyebrow>
@@ -125,7 +127,7 @@ export default function Home() {
               label="Forecast final"
               value={<Money value={fin.forecast} compact />}
               tone={fin.budgetVariance > 0 ? "rust" : "sage"}
-              sub={`${fin.budgetVariance > 0 ? "+" : ""}${inr(fin.budgetVariance, { compact: true })} vs budget`}
+              sub={fin.originalBudget ? `${fin.budgetVariance > 0 ? "+" : ""}${inr(fin.budgetVariance, { compact: true })} vs budget` : "no budget set yet"}
               large
             />
             <Stat label="Committed" value={<Money value={fin.committed} compact />} sub={`${inr(fin.remainingCommitment, { compact: true })} still to pay`} large />
@@ -304,5 +306,42 @@ function Row({
         {rightSub && <div className="text-[10.5px] text-ink-3">{rightSub}</div>}
       </div>
     </div>
+  );
+}
+
+/**
+ * Shown while the project is still the empty twin. It points at the three
+ * things worth doing first, and disappears the moment any of them is done.
+ */
+function FirstRun() {
+  const { dispatch, storage } = useProject();
+  return (
+    <section className="card px-5 py-5 mb-8 animate-rise">
+      <Eyebrow>Starting out</Eyebrow>
+      <p className="text-[14px] leading-relaxed mt-1.5 max-w-2xl">
+        This is the villa with nothing filled in yet: every room from the drawings, each with its scope checklist
+        at &ldquo;not started&rdquo;. Three things make it yours.
+      </p>
+      <div className="grid sm:grid-cols-3 gap-2.5 mt-4">
+        <Link href="/admin?tab=People" className="card-quiet px-4 py-3 hover:border-ink-4 transition-colors">
+          <div className="text-[13.5px] font-medium">1. Add the people</div>
+          <div className="text-[12px] text-ink-3 mt-0.5 leading-snug">You, the designer, the contractors. Then pick yourself in the corner so changes carry your name.</div>
+        </Link>
+        <Link href="/sheet" className="card-quiet px-4 py-3 hover:border-ink-4 transition-colors">
+          <div className="text-[13.5px] font-medium">2. Fill in a room</div>
+          <div className="text-[12px] text-ink-3 mt-0.5 leading-snug">The Sheet is a spreadsheet of one room&rsquo;s scope — rates, owners, vendors, money. Paste from Excel if you have it.</div>
+        </Link>
+        <Link href="/manage" className="card-quiet px-4 py-3 hover:border-ink-4 transition-colors">
+          <div className="text-[13.5px] font-medium">3. Set the budget</div>
+          <div className="text-[12px] text-ink-3 mt-0.5 leading-snug">Project settings under Manage: budget, dates, address. The rate card is under Admin.</div>
+        </Link>
+      </div>
+      <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mt-4 text-[12px] text-ink-3">
+        <button className="text-clay hover:underline" onClick={() => {
+          if (confirm("Load the fully worked sample villa? It replaces this empty project; you can reset again from Admin.")) dispatch({ type: "reset", to: "sample" });
+        }}>Or load the sample villa to see it filled in</button>
+        {storage.mode === "browser" && <span>· Data is saved in this browser until a database is connected (Admin).</span>}
+      </div>
+    </section>
   );
 }

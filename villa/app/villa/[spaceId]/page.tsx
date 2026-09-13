@@ -9,7 +9,10 @@ import {
   COMPLETENESS_BUCKETS,
 } from "@/lib/model/derive";
 import { inr, dimsLabel, areaSqft, perimeterFt, computeCost } from "@/lib/model/costing";
-import { CATEGORY_LABEL, STAGE_LABEL, type ScopeItem, type Category } from "@/lib/model/types";
+import {
+  CATEGORY_LABEL, STAGE_LABEL, type ScopeItem, type Category, type Idea, type DesignOption,
+  type Decision, type Doc, type Task, type SiteUpdate, type Note, type Snag,
+} from "@/lib/model/types";
 import {
   PageTitle, Eyebrow, Stat, Bar, Chip, StageChip, Money, PhotoBlock, Tabs, Empty,
   Avatar, fmtDay, Swatch, BudgetBar, Field, Assumed,
@@ -210,11 +213,11 @@ export default function RoomPage() {
 /* ------------------------------------------------------------------- tabs */
 
 function DesignTab({
-  spaceId, options, ideas, decisions, docs,
-}: any) {
+  spaceId, options, decisions, docs,
+}: { spaceId: string; options: DesignOption[]; ideas: Idea[]; decisions: Decision[]; docs: Doc[] }) {
   const { state } = useProject();
   const space = state.spaces.find((s) => s.id === spaceId)!;
-  const renders = docs.filter((d: any) => d.kind === "render");
+  const renders = docs.filter((d) => d.kind === "render");
 
   return (
     <div className="space-y-7">
@@ -229,7 +232,7 @@ function DesignTab({
         <div>
           <Eyebrow className="mb-2.5">Design options on the table</Eyebrow>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-            {options.map((o: any) => <OptionTile key={o.id} option={o} recommended={o.designerRecommended} />)}
+            {options.map((o) => <OptionTile key={o.id} option={o} recommended={o.designerRecommended} />)}
           </div>
         </div>
       )}
@@ -238,7 +241,7 @@ function DesignTab({
         <div>
           <Eyebrow className="mb-2.5">Open decisions</Eyebrow>
           <div className="space-y-3">
-            {decisions.slice(0, 2).map((d: any) => <DecisionCard key={d.id} decision={d} />)}
+            {decisions.slice(0, 2).map((d) => <DecisionCard key={d.id} decision={d} />)}
           </div>
         </div>
       )}
@@ -247,7 +250,7 @@ function DesignTab({
         <div>
           <Eyebrow className="mb-2.5">Renders & drawings</Eyebrow>
           <div className="grid sm:grid-cols-3 gap-3">
-            {renders.map((d: any) => (
+            {renders.map((d) => (
               <div key={d.id}>
                 <PhotoBlock tone="#b9ada0" ratio="4 / 3" label={d.revision} />
                 <div className="text-[12px] mt-1.5">{d.title}</div>
@@ -268,7 +271,7 @@ function DesignTab({
   );
 }
 
-function IdeasTab({ spaceId, ideas, items }: any) {
+function IdeasTab({ ideas, items }: { spaceId: string; ideas: Idea[]; items: ScopeItem[] }) {
   const { state, dispatch, me } = useProject();
   const [text, setText] = useState("");
   const [target, setTarget] = useState(items[0]?.id ?? "");
@@ -302,12 +305,12 @@ function IdeasTab({ spaceId, ideas, items }: any) {
 
       {ideas.length ? (
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {ideas.map((idea: any) => {
+          {ideas.map((idea) => {
             const item = state.items.find((i) => i.id === idea.scopeItemId);
             return (
               <div key={idea.id} className="card overflow-hidden">
                 <div className="grid grid-cols-2 gap-px bg-line">
-                  {(idea.attachments.length ? idea.attachments : [{ id: "x", swatch: "#c3b6a4", label: "" }]).slice(0, 2).map((a: any) => (
+                  {(idea.attachments.length ? idea.attachments : [{ id: "x", swatch: "#c3b6a4", label: "" }]).slice(0, 2).map((a) => (
                     <PhotoBlock key={a.id} tone={a.swatch ?? "#c3b6a4"} ratio="1 / 1" label={a.label} className="rounded-none border-0" />
                   ))}
                 </div>
@@ -552,7 +555,7 @@ function ProductsTab({ items, onOpen }: { items: ScopeItem[]; onOpen: (i: ScopeI
   );
 }
 
-function TasksTab({ tasks }: { tasks: any[] }) {
+function TasksTab({ tasks }: { tasks: Task[] }) {
   const { dispatch } = useProject();
   if (!tasks.length) return <Empty title="No tasks against this room yet." />;
   return (
@@ -612,7 +615,7 @@ function VendorsTab({ vendorIds, items }: { vendorIds: string[]; items: ScopeIte
   );
 }
 
-function FilesTab({ docs }: { docs: any[] }) {
+function FilesTab({ docs }: { docs: Doc[] }) {
   if (!docs.length) return <Empty title="No documents filed against this room." hint="Drawings, quotes and warranties appear here automatically when they are tagged to this space." />;
   return (
     <div className="card divide-y divide-line">
@@ -630,7 +633,7 @@ function FilesTab({ docs }: { docs: any[] }) {
   );
 }
 
-function SiteTab({ updates, notes }: { updates: any[]; notes: any[] }) {
+function SiteTab({ updates, notes }: { updates: SiteUpdate[]; notes: Note[] }) {
   if (!updates.length && !notes.length) return <Empty title="No site record for this room yet." hint="Use Site mode on your phone to capture a photo and it files itself here." />;
   return (
     <div className="space-y-5">
@@ -662,7 +665,7 @@ function SiteTab({ updates, notes }: { updates: any[]; notes: any[] }) {
   );
 }
 
-function IssuesTab({ snags }: { snags: any[] }) {
+function IssuesTab({ snags }: { snags: Snag[] }) {
   const { state, dispatch, me } = useProject();
   if (!snags.length) return <Empty title="No snags raised in this room." />;
   const NEXT: Record<string, string> = { open: "assigned", assigned: "fixed", fixed: "verify", verify: "closed" };
@@ -673,7 +676,7 @@ function IssuesTab({ snags }: { snags: any[] }) {
           <div className="flex flex-col sm:flex-row gap-4">
             <div className="sm:w-40 shrink-0 grid grid-cols-2 sm:grid-cols-1 gap-2">
               <PhotoBlock tone={s.photoSwatch} ratio="4 / 3" label="Raised">
-                {s.pins?.map((p: any, i: number) => (
+                {s.pins?.map((p, i) => (
                   <span
                     key={i}
                     title={p.label}
@@ -701,7 +704,7 @@ function IssuesTab({ snags }: { snags: any[] }) {
               {s.status !== "closed" && (
                 <button
                   className="btn btn-sm mt-2.5"
-                  onClick={() => dispatch({ type: "snag/patch", id: s.id, patch: { status: NEXT[s.status] as any, ...(NEXT[s.status] === "closed" ? { closedAt: new Date().toISOString(), verifiedBy: me } : {}) } })}
+                  onClick={() => dispatch({ type: "snag/patch", id: s.id, patch: { status: NEXT[s.status] as Snag["status"], ...(NEXT[s.status] === "closed" ? { closedAt: new Date().toISOString(), verifiedBy: me } : {}) } })}
                 >
                   Move to {NEXT[s.status]}
                 </button>

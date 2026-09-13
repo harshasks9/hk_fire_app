@@ -6,6 +6,10 @@ import { findGaps, openSnags, projectFinance } from "@/lib/model/derive";
 import { PageTitle, Eyebrow, Chip } from "@/components/ui";
 
 const LINKS = [
+  { href: "/sheet", title: "Sheet",
+    blurb: "A spreadsheet of the scope: one room at a time, every line with its cost, owner, vendor and money — type straight in, or paste from Excel." },
+  { href: "/history", title: "History",
+    blurb: "Every change to the plan, who made it and when. Restore the project to any point." },
   { href: "/manage", title: "Manage the project",
     blurb: "Create, edit and delete anything in the villa — floor by floor, room by room, across all sixteen kinds of record." },
   { href: "/vendors", title: "Vendors & quotations", blurb: "Suppliers, and side-by-side quote comparison that flags when quotes are not like-for-like." },
@@ -17,6 +21,13 @@ const LINKS = [
   { href: "/more/completeness", title: "Completeness report", blurb: "Not what has been entered — what has not yet been thought about." },
   { href: "/costs", title: "Scenario planner", blurb: "Practical, Premium and No-compromise, and the specific trades between them." },
 ];
+
+/** 65.25 ft → 65′3″. Inches from the fraction, never typed by hand. */
+function plotLabel(ft: number): string {
+  const whole = Math.floor(ft);
+  const inches = Math.round((ft - whole) * 12);
+  return inches ? `${whole}′${inches}″` : `${whole}′0″`;
+}
 
 export default function MorePage() {
   const { state, dispatch, role, setRole } = useProject();
@@ -61,7 +72,9 @@ export default function MorePage() {
         <div className="text-[13px] text-ink-2 space-y-1.5 leading-relaxed">
           <div>{state.spaces.length} spaces · {state.items.length} scope items · {state.vendors.length} vendors</div>
           <div>Budget {new Intl.NumberFormat("en-IN", { style: "currency", currency: "INR", maximumFractionDigits: 0 }).format(fin.originalBudget)} · forecast {new Intl.NumberFormat("en-IN", { style: "currency", currency: "INR", maximumFractionDigits: 0 }).format(fin.forecast)}</div>
-          <div>Plot {state.meta.plotWidthFt}&prime;0&quot; × {state.meta.plotDepthFt}&prime;3&quot; · built footprint 45&prime;10&quot; × 45&prime;2&quot;</div>
+          {state.meta.plotWidthFt > 0 && state.meta.plotDepthFt > 0 && (
+            <div>Plot {plotLabel(state.meta.plotWidthFt)} × {plotLabel(state.meta.plotDepthFt)}</div>
+          )}
         </div>
         <p className="text-[11.5px] text-ink-3 mt-4 leading-relaxed max-w-2xl">
           All dimensions are transcribed from the architect&rsquo;s plans. Spaces the plans do not

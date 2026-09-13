@@ -1,9 +1,9 @@
-import type { ScopeItem, Space, Stage, Category, CostLadder } from "../model/types";
+import type { ScopeItem, Space, Stage, Category, CostLadder, ProjectState } from "../model/types";
 import { seedBuildUp, computeCost, round, areaSqft, perimeterFt, wallAreaSqft } from "../model/costing";
 import { SCOPE_TEMPLATES, type TemplateItem } from "./scope-templates";
 import { MASTER_SCOPE } from "./master-scope";
 import { SPACES } from "./spaces";
-import { LEAD_WEEKS } from "../model/categories";
+import { LEAD_WEEKS, buildUpFromCategory } from "../model/categories";
 
 /** Deterministic PRNG so the seeded project is identical on every load. */
 function hash(str: string): number {
@@ -228,5 +228,42 @@ export function buildItems(): ScopeItem[] {
     });
   });
 
+  return items;
+}
+
+/**
+ * The scope checklist with nothing filled in: one line per template item per
+ * room, quantities from the room's geometry, rates from the rate card, every
+ * line at "not started" with an empty ladder. No randomness — two people
+ * starting the same villa get the same twin.
+ */
+export function buildTwinItems(state: ProjectState): ScopeItem[] {
+  const items: ScopeItem[] = [];
+  for (const space of SPACES) {
+    const template = SCOPE_TEMPLATES[space.kind] ?? [];
+    const ceiling = space.ceilingHeightFt ?? 10;
+    template.forEach((t, n) => {
+      const id = `${space.id}--${slug(t.title)}-${n}`;
+      const cost = buildUpFromCategory(state, t.category, space, qtyFor(t, space, ceiling));
+      if (t.unit) cost.unit = t.unit;
+      const item: ScopeItem = {
+        id, title: t.title, spaceId: space.id, category: t.category, stage: "not-started",
+        spec: t.spec, cost, ladder: {}, seeded: true, tags: t.critical ? ["critical"] : [],
+      };
+      if (PURCHASABLE.includes(t.category)) {
+        item.procurement = { scopeItemId: id, status: "to-select", qty: t.basis === "count" ? cost.qty : undefined, leadTimeWeeks: LEAD_WEEKS[t.category] };
+      }
+      items.push(item);
+    });
+  }
+  MASTER_SCOPE.forEach((m, n) => {
+    const id = `house--${slug(m.title)}-${n}`;
+    const cost = buildUpFromCategory(state, m.category, undefined, m.qty ?? 1);
+    if (m.unit) cost.unit = m.unit;
+    items.push({
+      id, title: m.title, category: m.category, stage: "not-started", spec: m.spec, cost, ladder: {},
+      seeded: true, tags: [...(m.critical ? ["critical"] : []), ...(m.added ? ["beyond-brief"] : [])],
+    });
+  });
   return items;
 }

@@ -1,6 +1,6 @@
 import type { ProjectState, Scenario, ScopeItem } from "../model/types";
 import { SPACES } from "./spaces";
-import { buildItems, enforceLadderStage } from "./build";
+import { buildItems, buildTwinItems, enforceLadderStage } from "./build";
 import { buildContent, PEOPLE, VENDORS } from "./content";
 import { round } from "../model/costing";
 import { BUILTIN_CATEGORIES } from "../model/categories";
@@ -174,5 +174,40 @@ export function buildProject(): ProjectState {
     siteUpdates: content.siteUpdates,
     scenarios: SCENARIOS,
     activeScenarioId: "sc-premium",
+  };
+}
+
+/**
+ * The empty twin: the villa itself, and nothing that has happened in it.
+ *
+ * Every room from the drawings with its real dimensions, the category list
+ * and rate card, and each room's scope checklist at "not started" with
+ * quantities taken from the geometry. No people, no vendors, no ideas,
+ * decisions, tasks, money or notes — those are yours to enter. This is what
+ * a new project starts as; the sample villa is loaded deliberately.
+ */
+export function buildTwin(): ProjectState {
+  const categories = BUILTIN_CATEGORIES.map((c) => ({ ...c }));
+  return {
+    meta: {
+      name: "The Villa",
+      address: "",
+      plotWidthFt: 59,
+      plotDepthFt: 65.25,
+      startDate: new Date().toISOString(),
+      targetHandover: new Date(Date.now() + 365 * 86400000).toISOString(),
+      originalBudget: 0,
+      contingencyPct: 7.5,
+      currency: "INR",
+      lastOwnerVisit: new Date().toISOString(),
+    },
+    categories,
+    people: [],
+    spaces: SPACES.map((s) => ({ ...s })),
+    items: buildTwinItems({ categories } as ProjectState),
+    ideas: [], options: [], decisions: [], comments: [],
+    vendors: [], quotations: [], tasks: [], snags: [], notes: [], payments: [], docs: [], siteUpdates: [],
+    scenarios: [],
+    activeScenarioId: undefined,
   };
 }

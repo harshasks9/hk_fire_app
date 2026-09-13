@@ -36,7 +36,7 @@ const ACTIONS: { id: Action; label: string; sub: string; icon: string }[] = [
 export default function SitePage() {
   const { state, dispatch, me } = useProject();
   const [tab, setTab] = useState<Tab>("Capture");
-  const [room, setRoom] = useState<string>("gf-living");
+  const [room, setRoom] = useState<string>(() => state.spaces.find((s) => s.floor === "ground")?.id ?? state.spaces[0]?.id ?? "");
   const [action, setAction] = useState<Action | null>(null);
 
   const space = state.spaces.find((s) => s.id === room);

@@ -1,7 +1,8 @@
 "use client";
 
-import React, { useMemo, useRef, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { useProject, COLLECTION_KEYS, emptyProject, type CollectionKey, type KeepOptions } from "@/lib/store";
 import { SCHEMAS } from "@/lib/model/schema";
 import { groupedCategories, categoryUsage } from "@/lib/model/categories";
@@ -11,7 +12,7 @@ import { inr } from "@/lib/model/costing";
 import { PageTitle, Eyebrow, Tabs, Sheet, Field, Stat, Money, Chip, Empty, fmtDate } from "@/components/ui";
 import { EntityEditor } from "@/components/EntityEditor";
 
-const TABS = ["Overview", "Categories & rates", "Data", "Danger zone"] as const;
+const TABS = ["Overview", "People", "Categories & rates", "Data", "Danger zone"] as const;
 type Tab = (typeof TABS)[number];
 
 /**
@@ -23,8 +24,14 @@ type Tab = (typeof TABS)[number];
  * part of running a fit-out, and all of it is easy to regret.
  */
 export default function AdminPage() {
-  const { state } = useProject();
-  const [tab, setTab] = useState<Tab>("Overview");
+  return <React.Suspense><AdminInner /></React.Suspense>;
+}
+
+function AdminInner() {
+  const params = useSearchParams();
+  const wanted = params.get("tab") as Tab | null;
+  const [tab, setTab] = useState<Tab>(wanted && TABS.includes(wanted) ? wanted : "Overview");
+  useEffect(() => { if (wanted && TABS.includes(wanted)) setTab(wanted); }, [wanted]);
 
   return (
     <div>
@@ -33,6 +40,7 @@ export default function AdminPage() {
       <Tabs tabs={TABS} active={tab} onChange={setTab} />
       <div className="mt-6">
         {tab === "Overview" && <Overview />}
+        {tab === "People" && <PeopleTab />}
         {tab === "Categories & rates" && <CategoriesTab />}
         {tab === "Data" && <DataTab />}
         {tab === "Danger zone" && <DangerZone />}
@@ -44,7 +52,7 @@ export default function AdminPage() {
 /* ---------------------------------------------------------------- overview */
 
 function Overview() {
-  const { state } = useProject();
+  const { state, storage } = useProject();
   const fin = projectFinance(state);
 
   const rows = COLLECTION_KEYS.map((k) => ({
@@ -84,11 +92,94 @@ function Overview() {
         </div>
       </div>
 
-      <p className="text-[11.5px] text-ink-3 leading-relaxed max-w-2xl">
-        Everything is held in this browser&rsquo;s local storage, not on a server — so it is private to
-        this device and this browser profile, and clearing site data will remove it. Export a backup
-        from the Data tab before you do anything you might want to undo.
+      <StorageCard storage={storage} />
+    </div>
+  );
+}
+
+/** Where the data lives, in plain terms, and what to do about it. */
+function StorageCard({ storage }: { storage: ReturnType<typeof useProject>["storage"] }) {
+  if (storage.mode === "server") {
+    return (
+      <div className="card px-5 py-4">
+        <div className="flex items-center gap-2">
+          <Eyebrow>Storage</Eyebrow>
+          <Chip tone="sage">Database connected</Chip>
+        </div>
+        <p className="text-[12.5px] text-ink-2 mt-2 leading-relaxed max-w-2xl">
+          Every change goes to the shared database as it is made and is recorded in History with the name of
+          whoever made it. Currently at version <span className="tnum">{storage.version ?? 0}</span>
+          {storage.lastSyncAt ? `, last confirmed ${new Date(storage.lastSyncAt).toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit" })}` : ""}.
+          {storage.pending ? ` ${storage.pending} change${storage.pending === 1 ? "" : "s"} still on the way.` : ""}
+          {storage.error ? ` Last problem: ${storage.error}.` : ""}
+        </p>
+        <p className="text-[11.5px] text-ink-3 mt-2 leading-relaxed max-w-2xl">
+          Everyone who opens the address sees the same project. To require a password, set <code>APP_PASSWORD</code> on the host.
+          A copy is also kept in this browser so the app opens instantly and works offline until the next sync.
+        </p>
+      </div>
+    );
+  }
+  return (
+    <div className="card px-5 py-4" style={{ borderColor: "#e0c3ba" }}>
+      <div className="flex items-center gap-2">
+        <Eyebrow>Storage</Eyebrow>
+        <Chip tone="clay">This browser only</Chip>
+      </div>
+      <p className="text-[12.5px] text-ink-2 mt-2 leading-relaxed max-w-2xl">
+        No database is connected, so the project lives in this browser&rsquo;s local storage: private to this device
+        and profile, gone if site data is cleared, and invisible to the designer. Export a backup from the Data tab
+        before anything you might regret.
       </p>
+      <div className="text-[12.5px] text-ink-2 mt-3 leading-relaxed max-w-2xl">
+        <div className="font-medium">To share it and make it permanent</div>
+        <ol className="list-decimal ml-5 mt-1 space-y-0.5 text-ink-3 text-[12px]">
+          <li>Create a Postgres database — Neon or Vercel Postgres, the free tier is plenty.</li>
+          <li>On the host, add the environment variable <code>DATABASE_URL</code> with its connection string (and, optionally, <code>APP_PASSWORD</code>).</li>
+          <li>Redeploy. The tables create themselves on first request, and the first browser to open the app becomes the shared starting point — so open it from the device with the most complete data.</li>
+        </ol>
+      </div>
+    </div>
+  );
+}
+
+/* ------------------------------------------------------------------ people */
+
+/**
+ * Who is on the project. Designers, contractors, the family — anyone who
+ * will make a change or be named as an owner. Picking yourself here is what
+ * puts your name against the changes you make.
+ */
+function PeopleTab() {
+  const { state, meId, setMe } = useProject();
+  const active = state.people.filter((p) => !p.inactive);
+  const byRole = (r: string) => active.filter((p) => p.role === r).length;
+  return (
+    <div className="space-y-5">
+      <div className="card px-5 py-4 grid sm:grid-cols-[1fr_auto] gap-4 items-center">
+        <div>
+          <Eyebrow>I am</Eyebrow>
+          <p className="text-[12.5px] text-ink-3 mt-1 leading-relaxed">
+            Changes made from this device are recorded under this name. Each person picks themselves on their own device.
+          </p>
+        </div>
+        <select className="input w-full sm:w-64" value={meId ?? ""} onChange={(e) => setMe(e.target.value || undefined)}>
+          <option value="">Nobody chosen — just a view</option>
+          {active.map((p) => <option key={p.id} value={p.id}>{p.name}{p.title ? ` — ${p.title}` : ""}</option>)}
+        </select>
+      </div>
+
+      <div className="flex flex-wrap gap-x-5 gap-y-1 text-[12.5px] text-ink-3">
+        <span><strong className="text-ink font-medium tnum">{byRole("homeowner")}</strong> family</span>
+        <span><strong className="text-ink font-medium tnum">{byRole("designer")}</strong> designers</span>
+        <span><strong className="text-ink font-medium tnum">{byRole("vendor")}</strong> contractors &amp; vendors</span>
+        {state.people.length - active.length > 0 && <span>{state.people.length - active.length} inactive</span>}
+      </div>
+
+      {state.people.length === 0 && (
+        <Empty title="No one on the project yet." hint="Add yourself first, then the designer and the contractors. The role decides which view of the app they get." />
+      )}
+      <EntityEditor collection="people" rows={state.people as unknown as Record<string, unknown>[]} />
     </div>
   );
 }
@@ -308,17 +399,33 @@ function DangerZone() {
       </div>
 
       <div className="card px-5 py-5">
-        <Eyebrow>Restore the sample villa</Eyebrow>
+        <Eyebrow>Start again from the villa itself</Eyebrow>
         <p className="text-[12.5px] text-ink-3 mt-1.5 mb-3 leading-relaxed max-w-2xl">
-          Puts back the fully worked example — 57 spaces, 1,130 scope items, decisions, quotes and
+          The empty twin: every room from the drawings with its real dimensions and its scope checklist at
+          &ldquo;not started&rdquo;, the category list and rate card — and nobody, no vendors, no money, no
+          history. This is what a new project starts as.
+        </p>
+        <button className="btn" onClick={() => {
+          if (confirm("Replace everything with the empty twin of the villa? Your current project will be lost unless you have exported a backup.")) {
+            dispatch({ type: "reset" });
+          }
+        }}>
+          Reset to the empty twin
+        </button>
+      </div>
+
+      <div className="card px-5 py-5">
+        <Eyebrow>Load the sample villa</Eyebrow>
+        <p className="text-[12.5px] text-ink-3 mt-1.5 mb-3 leading-relaxed max-w-2xl">
+          The fully worked example — 57 spaces, 1,130 scope items, people, vendors, decisions, quotes and
           snags — replacing whatever is there now. Useful for seeing how a finished project reads.
         </p>
         <button className="btn" onClick={() => {
           if (confirm("Replace everything with the sample villa? Your current project will be lost unless you have exported a backup.")) {
-            dispatch({ type: "reset" });
+            dispatch({ type: "reset", to: "sample" });
           }
         }}>
-          Reset to the sample villa
+          Load the sample villa
         </button>
       </div>
 
