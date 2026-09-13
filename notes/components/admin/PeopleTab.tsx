@@ -7,7 +7,7 @@ import { Dialog } from '@/components/ui/Dialog'
 import { api } from '@/lib/client'
 import { relativeTime } from '@/lib/util'
 
-interface UserVM { id: string; name: string; email: string | null; role: string; status: string; verified: boolean; createdAt: string; lastLoginAt: string | null; notebookId: string | null; notebookName: string | null; notebookPlan: string | null; notebookStatus: string | null }
+interface UserVM { id: string; name: string; email: string | null; role: string; status: string; verified: boolean; createdAt: string; lastLoginAt: string | null; notebookId: string | null; notebookName: string | null; notebookStatus: string | null }
 
 /** Admin → People: every account on the platform with search and the per-account actions. */
 export function PeopleTab({ currentUserId }: { currentUserId: string }) {
@@ -37,7 +37,7 @@ export function PeopleTab({ currentUserId }: { currentUserId: string }) {
               {users.map((u) => (
                 <tr key={u.id} className="border-b border-border last:border-0">
                   <td className="px-3 py-2"><div className="font-medium">{u.name}{u.id === currentUserId ? <Badge tone="accent" className="ml-1.5">you</Badge> : null}{u.status !== 'active' ? <Badge tone="danger" className="ml-1.5">disabled</Badge> : null}</div><div className="text-[12px] text-fg-3">{u.email ?? 'no email'}</div></td>
-                  <td className="px-3 py-2">{u.notebookName ?? <span className="text-fg-3">—</span>}{u.notebookPlan ? <span className="ml-1 text-[12px] text-fg-3">· {u.notebookPlan}</span> : null}</td>
+                  <td className="px-3 py-2">{u.notebookName ?? <span className="text-fg-3">—</span>}</td>
                   <td className="px-3 py-2">{u.role}</td>
                   <td className="px-3 py-2">{u.verified ? <span className="inline-flex items-center gap-1 text-success"><MailCheck className="h-3.5 w-3.5" /> confirmed</span> : <span className="text-warning">unconfirmed</span>}</td>
                   <td className="px-3 py-2 text-fg-2" suppressHydrationWarning>{u.lastLoginAt ? relativeTime(u.lastLoginAt) : 'never'}</td>

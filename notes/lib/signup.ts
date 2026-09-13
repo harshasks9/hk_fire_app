@@ -63,13 +63,13 @@ export async function signUp(input: SignupInput): Promise<SignupResult> {
   const nbName = (input.notebookName ?? '').trim().slice(0, 80) || `${name.split(/\s+/)[0]}'s notebook`
   const slug = await uniqueSlug(nbName)
   const wantsSample = Boolean(input.sampleData) && settings.allowSampleData
-  await db.insert(schema.notebooks).values({ id: notebookId, slug, name: nbName, ownerUserId: userId, plan: settings.defaultPlan, settings: { aiMode: 'shared', allowShareLinks: true, sampleData: wantsSample } })
+  await db.insert(schema.notebooks).values({ id: notebookId, slug, name: nbName, ownerUserId: userId, settings: { aiMode: 'shared', allowShareLinks: true, sampleData: wantsSample } })
   await db.insert(schema.users).values({ id: userId, name, email, notebookId, role: 'owner', passwordHash: hashPassword(input.password), lastLoginAt: new Date(), settings: { ...DEFAULT_USER_SETTINGS } })
   await ensureDefaultContexts(notebookId)
   const user = (await db.select().from(schema.users).where(eq(schema.users.id, userId)))[0]!
   const notebook = (await db.select().from(schema.notebooks).where(eq(schema.notebooks.id, notebookId)))[0]!
   const verification = await sendVerification(user, input.origin)
-  await logAdminEvent({ id: userId, name }, 'user.signup', { type: 'notebook', id: notebookId, name: nbName }, { email, plan: settings.defaultPlan, sampleData: wantsSample, verificationSent: verification.email.sent })
+  await logAdminEvent({ id: userId, name }, 'user.signup', { type: 'notebook', id: notebookId, name: nbName }, { email, sampleData: wantsSample, verificationSent: verification.email.sent })
   return { user, notebook, verification: { required: settings.requireEmailVerification, ...verification } }
 }
 

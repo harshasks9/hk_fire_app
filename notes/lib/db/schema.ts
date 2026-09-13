@@ -27,8 +27,6 @@ const now = (name: string) => timestamp(name, { withTimezone: true }).notNull().
 export type NotebookStatus = 'active' | 'disabled'
 export type AiMode = 'shared' | 'own' | 'local'
 
-export type PlanId = 'free' | 'pro' | 'team'
-
 export interface NotebookSettings {
   /** shared = the deployment's keys; own = keys stored (encrypted) on the notebook; local = never call a model. */
   aiMode?: AiMode
@@ -50,12 +48,6 @@ export const notebooks = pgTable('notebooks', {
   createdAt: now('created_at'),
   updatedAt: now('updated_at'),
   lastActiveAt: timestamp('last_active_at', { withTimezone: true }),
-  /** Subscription plan (free/pro/team). Set by billing or by the platform admin. */
-  plan: text('plan').$type<PlanId>().notNull().default('free'),
-  /** When a paid plan lapses (manual grants, cancelled subscriptions). Null = does not expire. */
-  planExpiresAt: timestamp('plan_expires_at', { withTimezone: true }),
-  stripeCustomerId: text('stripe_customer_id'),
-  stripeSubscriptionId: text('stripe_subscription_id'),
 })
 
 export type UserRole = 'admin' | 'owner' | 'member'

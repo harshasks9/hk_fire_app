@@ -3,10 +3,8 @@ import * as React from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { field, primaryButton } from './PublicShell'
-import { PLANS } from '@/lib/plans-spec'
-import type { PlanId } from '@/lib/db/schema'
 
-export function SignupForm({ productName, allowSampleData, defaultPlan }: { productName: string; allowSampleData: boolean; defaultPlan: PlanId }) {
+export function SignupForm({ productName, allowSampleData }: { productName: string; allowSampleData: boolean }) {
   const router = useRouter()
   const [name, setName] = React.useState('')
   const [email, setEmail] = React.useState('')
@@ -34,11 +32,10 @@ export function SignupForm({ productName, allowSampleData, defaultPlan }: { prod
       </div>
     )
   }
-  const plan = PLANS[defaultPlan]
   return (
     <form onSubmit={submit} className="w-full max-w-[400px]">
       <h1 className="text-[22px] font-semibold tracking-[-0.02em]">Create your notebook</h1>
-      <p className="mb-5 mt-1 text-[13.5px] text-fg-2">Your own private {productName} workspace on the {plan.name} plan{plan.priceMonthly ? '' : ', free'}. No card needed.</p>
+      <p className="mb-5 mt-1 text-[13.5px] text-fg-2">Your own private {productName} workspace. Free, no card, no catch.</p>
       <label className="mb-1 block text-[12.5px] text-fg-2">Your name</label>
       <input autoFocus value={name} onChange={(e) => setName(e.target.value)} placeholder="Ada Lovelace" className={field} required autoComplete="name" />
       <label className="mb-1 mt-3 block text-[12.5px] text-fg-2">Email</label>

@@ -4,8 +4,6 @@ import { createNote, scheduleProcessing } from '@/lib/notes'
 import { listNotes } from '@/lib/queries'
 import { getSession } from '@/lib/session'
 import { getTemplate, renderTemplate } from '@/lib/templates'
-import { assertQuota } from '@/lib/plans'
-import { apiError } from '@/lib/api'
 export const dynamic = 'force-dynamic'
 
 export async function GET(req: NextRequest) {
@@ -17,8 +15,6 @@ export async function GET(req: NextRequest) {
 export async function POST(req: NextRequest) {
   const body = (await req.json().catch(() => ({}))) as { title?: string; markdown?: string; kind?: 'note' | 'meeting' | 'voice' | 'capture' | 'link' | 'document' | 'screenshot' | 'email'; researchProjectId?: string; process?: boolean; contextId?: string; createdAt?: string; source?: string; templateId?: string }
   const ctx = await resolveContext(body.contextId)
-  const session = await getSession()
-  if (session) { try { await assertQuota(session.notebook, 'notes') } catch (e) { return apiError(e) } }
   const createdAt = body.createdAt && !Number.isNaN(Date.parse(body.createdAt)) ? new Date(body.createdAt) : undefined
   let contentJson: unknown
   let title = body.title

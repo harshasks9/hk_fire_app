@@ -8,7 +8,7 @@ import { relativeTime } from '@/lib/util'
 import type { MemberView, PendingInviteView } from '@/lib/members'
 
 /** Settings → People: who is in the notebook, pending invitations, and inviting more (owner only). */
-export function MembersSection({ members, invites, limit, canManage, currentUserId, ownerUserId, emailConfigured }: { members: MemberView[]; invites: PendingInviteView[]; limit: number; canManage: boolean; currentUserId: string; ownerUserId: string | null; emailConfigured: boolean }) {
+export function MembersSection({ members, invites, canManage, currentUserId, ownerUserId, emailConfigured }: { members: MemberView[]; invites: PendingInviteView[]; canManage: boolean; currentUserId: string; ownerUserId: string | null; emailConfigured: boolean }) {
   const router = useRouter()
   const toast = useToast()
   const [email, setEmail] = React.useState('')
@@ -16,8 +16,6 @@ export function MembersSection({ members, invites, limit, canManage, currentUser
   const [busy, setBusy] = React.useState<string | null>(null)
   const [link, setLink] = React.useState<string | null>(null)
   const [copied, setCopied] = React.useState(false)
-  const seats = members.length + invites.length
-  const full = limit !== -1 && seats >= limit
   const run = async (key: string, fn: () => Promise<void>) => {
     setBusy(key)
     try { await fn(); router.refresh() } catch (e) { toast.push({ text: String((e as Error).message ?? e), tone: 'danger' }) } finally { setBusy(null) }
@@ -53,12 +51,11 @@ export function MembersSection({ members, invites, limit, canManage, currentUser
           </li>
         ))}
       </ul>
-      <p className="mt-2 text-[12.5px] text-fg-3">{seats} of {limit === -1 ? 'unlimited' : limit} {limit === 1 ? 'seat' : 'seats'} used{full && canManage ? ' · upgrade in Plan & usage to invite more' : ''}.</p>
       {canManage ? (
         <div className="mt-3 flex flex-wrap items-center gap-2">
           <input value={email} onChange={(e) => setEmail(e.target.value)} placeholder="email (optional: leave blank for a link)" type="email" className="h-9 min-w-[220px] flex-1 rounded-[9px] border border-border-2 bg-surface px-3 text-[13.5px] outline-none focus:border-accent" />
           <select value={role} onChange={(e) => setRole(e.target.value as 'member' | 'owner')} className="h-9 rounded-[9px] border border-border-2 bg-surface px-2 text-[13.5px]"><option value="member">member</option><option value="owner">owner</option></select>
-          <Button loading={busy === 'invite'} disabled={full} onClick={invite}>{email && emailConfigured ? <Mail className="h-3.5 w-3.5" /> : <Link2 className="h-3.5 w-3.5" />} {email && emailConfigured ? 'Send invitation' : 'Create invitation link'}</Button>
+          <Button loading={busy === 'invite'} onClick={invite}>{email && emailConfigured ? <Mail className="h-3.5 w-3.5" /> : <Link2 className="h-3.5 w-3.5" />} {email && emailConfigured ? 'Send invitation' : 'Create invitation link'}</Button>
         </div>
       ) : null}
       {link ? (
@@ -67,7 +64,7 @@ export function MembersSection({ members, invites, limit, canManage, currentUser
           <Button size="sm" onClick={async () => { try { await navigator.clipboard.writeText(link); setCopied(true); setTimeout(() => setCopied(false), 1500) } catch { /* ignore */ } }}>{copied ? <Check className="h-3.5 w-3.5" /> : <Copy className="h-3.5 w-3.5" />} {copied ? 'Copied' : 'Copy'}</Button>
         </div>
       ) : null}
-      {canManage ? <p className="mt-2 text-[12px] text-fg-3">Invitations are single use and valid for 7 days. Members see everything in the notebook; owners can also invite, change AI settings and the plan.</p> : null}
+      {canManage ? <p className="mt-2 text-[12px] text-fg-3">Invitations are single use and valid for 7 days. Members see everything in the notebook; owners can also invite people and change AI settings.</p> : null}
     </section>
   )
 }

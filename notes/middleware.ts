@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { SESSION_COOKIE, verifySessionToken } from './lib/auth'
 
 // Public: the marketing and account pages, the login/sign-up/recovery flows, health, cron, billing webhooks and the PWA files a browser fetches before (or without) a session.
-const PUBLIC_EXACT = new Set(['/login', '/signup', '/welcome', '/pricing', '/forgot', '/terms', '/privacy', '/api/login', '/api/signup', '/api/health', '/sw.js', '/manifest.json', '/api/billing/webhook'])
+const PUBLIC_EXACT = new Set(['/login', '/signup', '/welcome', '/forgot', '/terms', '/privacy', '/api/login', '/api/signup', '/api/health', '/sw.js', '/manifest.json'])
 const PUBLIC_PREFIXES = ['/api/cron/', '/icons/', '/invite/', '/api/invite/', '/s/', '/api/share/', '/reset/', '/api/auth/']
 
 export async function middleware(req: NextRequest) {

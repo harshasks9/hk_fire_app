@@ -1,7 +1,4 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { getSession } from '@/lib/session'
-import { assertQuota } from '@/lib/plans'
-import { apiError } from '@/lib/api'
 import { getActiveContext } from '@/lib/context'
 import { addAttachment, addSource, createNote, scheduleProcessing } from '@/lib/notes'
 import { transcribeAudio } from '@/lib/media'
@@ -29,8 +26,6 @@ export async function POST(req: NextRequest) {
     if (server && server.length > transcript.length * 0.5) transcript = server
   }
   const md = transcript ? `## Transcript\n\n${transcript}` : '_No speech was transcribed. The recording is attached._'
-  const session = await getSession()
-  if (session) { try { await assertQuota(session.notebook, 'notes') } catch (e) { return apiError(e) } }
   const id = await createNote({ contextId: ctx.id, title, markdown: md, kind: 'voice', source: 'voice', status: 'inbox' })
   if (bytes) {
     await addAttachment(id, { name: `voice-${Date.now()}.webm`, mime, bytes, durationSeconds: duration || undefined })

@@ -158,17 +158,6 @@ export async function deleteNotebook(notebookId: string, actor: { id: string; na
   await logAdminEvent(actor, 'notebook.delete', { type: 'notebook', id: notebookId, name: nb.name })
 }
 
-/** Assign a plan by hand (no billing needed); an expiry turns it into a time-limited grant. */
-export async function setNotebookPlan(notebookId: string, plan: string, planExpiresAt: Date | null | undefined, actor: { id: string; name: string }) {
-  const db = await getDb()
-  if (plan !== 'free' && plan !== 'pro' && plan !== 'team') throw Object.assign(new Error('Unknown plan'), { status: 400 })
-  if (planExpiresAt && Number.isNaN(planExpiresAt.getTime())) throw Object.assign(new Error('Bad expiry date'), { status: 400 })
-  const nb = (await db.select().from(schema.notebooks).where(eq(schema.notebooks.id, notebookId)))[0]
-  if (!nb) throw new Error('Notebook not found')
-  await db.update(schema.notebooks).set({ plan, ...(planExpiresAt === undefined ? {} : { planExpiresAt }), updatedAt: new Date() }).where(eq(schema.notebooks.id, notebookId))
-  await logAdminEvent(actor, 'notebook.plan', { type: 'notebook', id: notebookId, name: nb.name }, { plan, planExpiresAt: planExpiresAt?.toISOString() ?? null })
-}
-
 export async function renameNotebook(notebookId: string, name: string) {
   const db = await getDb()
   await db.update(schema.notebooks).set({ name: name.trim(), updatedAt: new Date() }).where(eq(schema.notebooks.id, notebookId))
@@ -225,14 +214,11 @@ export async function platformTotals() {
     db.select({ n: sql<number>`count(*)` }).from(schema.aiCalls).where(gte(schema.aiCalls.createdAt, weekAgo)),
     db.select({ n: sql<number>`count(*)` }).from(schema.aiCalls).where(and(gte(schema.aiCalls.createdAt, weekAgo), eq(schema.aiCalls.ok, false))),
   ])
-  const [signups7d, byPlan, active7d] = await Promise.all([
+  const [signups7d, active7d] = await Promise.all([
     db.select({ n: sql<number>`count(*)` }).from(schema.users).where(gte(schema.users.createdAt, weekAgo)),
-    db.select({ plan: schema.notebooks.plan, n: sql<number>`count(*)` }).from(schema.notebooks).groupBy(schema.notebooks.plan),
     db.select({ n: sql<number>`count(*)` }).from(schema.notebooks).where(gte(schema.notebooks.lastActiveAt, weekAgo)),
   ])
-  const plans = { free: 0, pro: 0, team: 0 } as Record<string, number>
-  for (const r of byPlan) plans[r.plan] = Number(r.n)
-  return { notebooks: Number(nb[0]?.n ?? 0), users: Number(users[0]?.n ?? 0), notes: Number(notes[0]?.n ?? 0), aiCallsToday: Number(callsDay[0]?.n ?? 0), aiCalls7d: Number(callsWeek[0]?.n ?? 0), aiFailed7d: Number(failedWeek[0]?.n ?? 0), signups7d: Number(signups7d[0]?.n ?? 0), active7d: Number(active7d[0]?.n ?? 0), plans, mrr: (plans.pro ?? 0) * 12 + (plans.team ?? 0) * 39 }
+  return { notebooks: Number(nb[0]?.n ?? 0), users: Number(users[0]?.n ?? 0), notes: Number(notes[0]?.n ?? 0), aiCallsToday: Number(callsDay[0]?.n ?? 0), aiCalls7d: Number(callsWeek[0]?.n ?? 0), aiFailed7d: Number(failedWeek[0]?.n ?? 0), signups7d: Number(signups7d[0]?.n ?? 0), active7d: Number(active7d[0]?.n ?? 0) }
 }
 
 export async function recentAdminEvents(limit = 200) {
