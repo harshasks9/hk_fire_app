@@ -4,11 +4,11 @@ import React, { useState } from "react";
 import { useProject, newId, useRevisions } from "@/lib/store";
 import type { ScopeItem, Stage, Unit } from "@/lib/model/types";
 import { STAGES, STAGE_LABEL, UNIT_LABEL, CATEGORY_LABEL } from "@/lib/model/types";
-import { computeCost, inr, DEFAULT_RATES, round, areaSqft, perimeterFt, wallAreaSqft } from "@/lib/model/costing";
+import { computeCost, inr, round, areaSqft, perimeterFt, wallAreaSqft } from "@/lib/model/costing";
 import { forecastOf } from "@/lib/model/derive";
 import { Sheet, Field, Eyebrow, NumberInput, StageChip, Chip, Money, Assumed, Tabs, Avatar, Empty, fmtDate } from "./ui";
 import { Comments } from "./Comments";
-import { catLabel } from "@/lib/model/categories";
+import { catLabel, catDef } from "@/lib/model/categories";
 
 const TABS = ["Cost", "Spec", "Procurement", "Discussion", "Changes"] as const;
 type Tab = (typeof TABS)[number];
@@ -32,7 +32,7 @@ export function ItemSheet({
   if (!item) return null;
   const space = state.spaces.find((s) => s.id === item.spaceId);
   const breakdown = computeCost(item.cost);
-  const rateDef = DEFAULT_RATES[item.category];
+  const rateDef = catDef(state, item.category);
   const decision = state.decisions.find((d) => d.scopeItemId === item.id);
   const ideas = state.ideas.filter((i) => i.scopeItemId === item.id);
   const options = state.options.filter((o) => o.scopeItemId === item.id);
