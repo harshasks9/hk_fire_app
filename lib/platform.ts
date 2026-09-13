@@ -5,15 +5,12 @@
 import { cache } from 'react'
 import { eq } from 'drizzle-orm'
 import { getDb, schema } from './db'
-import type { PlanId } from './db/schema'
 
 export type SignupMode = 'open' | 'invite' | 'closed'
 
 export interface PlatformSettings {
   /** open = anyone can register; invite = only invite links; closed = no new accounts at all. */
   signupMode: SignupMode
-  /** Plan a self-registered notebook starts on. */
-  defaultPlan: PlanId
   /** Block sign-in until the email address is verified (needs email sending configured). */
   requireEmailVerification: boolean
   /** Let people load the demo dataset when they register. */
@@ -30,7 +27,6 @@ export const PLATFORM_KEY = 'platform:settings'
 
 export const DEFAULT_PLATFORM_SETTINGS: PlatformSettings = {
   signupMode: 'open',
-  defaultPlan: 'free',
   requireEmailVerification: false,
   allowSampleData: true,
   announcement: '',
@@ -39,14 +35,12 @@ export const DEFAULT_PLATFORM_SETTINGS: PlatformSettings = {
 }
 
 const SIGNUP_MODES: SignupMode[] = ['open', 'invite', 'closed']
-const PLANS: PlanId[] = ['free', 'pro', 'team']
 
 /** Merge a stored (possibly partial or malformed) value with the defaults. */
 export function normalizePlatformSettings(raw: unknown): PlatformSettings {
   const r = (raw && typeof raw === 'object' ? raw : {}) as Partial<Record<keyof PlatformSettings, unknown>>
   return {
     signupMode: SIGNUP_MODES.includes(r.signupMode as SignupMode) ? (r.signupMode as SignupMode) : DEFAULT_PLATFORM_SETTINGS.signupMode,
-    defaultPlan: PLANS.includes(r.defaultPlan as PlanId) ? (r.defaultPlan as PlanId) : DEFAULT_PLATFORM_SETTINGS.defaultPlan,
     requireEmailVerification: typeof r.requireEmailVerification === 'boolean' ? r.requireEmailVerification : DEFAULT_PLATFORM_SETTINGS.requireEmailVerification,
     allowSampleData: typeof r.allowSampleData === 'boolean' ? r.allowSampleData : DEFAULT_PLATFORM_SETTINGS.allowSampleData,
     announcement: typeof r.announcement === 'string' ? r.announcement.slice(0, 300) : '',

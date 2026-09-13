@@ -4,11 +4,10 @@ import { useRouter } from 'next/navigation'
 import { Button, useToast } from '@/components/ui'
 import { api } from '@/lib/client'
 import type { PlatformSettings } from '@/lib/platform'
-import { PLANS } from '@/lib/plans-spec'
 import { cx } from '@/lib/util'
 
 /** Admin → Settings: who may register, what they start with, and what the platform says about itself. */
-export function PlatformSettingsTab({ initial, integrations }: { initial: PlatformSettings; integrations: { email: boolean; billing: boolean } }) {
+export function PlatformSettingsTab({ initial, integrations }: { initial: PlatformSettings; integrations: { email: boolean } }) {
   const router = useRouter()
   const toast = useToast()
   const [s, setS] = React.useState(initial)
@@ -31,8 +30,7 @@ export function PlatformSettingsTab({ initial, integrations }: { initial: Platfo
           {modes.map((m) => <label key={m.id} className={cx('flex cursor-pointer items-start gap-2 rounded-lg border p-2.5 text-[13px]', s.signupMode === m.id ? 'border-accent bg-accent-soft/40' : 'border-border')}><input type="radio" className="mt-0.5" checked={s.signupMode === m.id} onChange={() => setS({ ...s, signupMode: m.id })} /><span><strong>{m.title}</strong><br /><span className="text-fg-2">{m.text}</span></span></label>)}
         </div>
         <div className="mt-3 grid gap-3 sm:grid-cols-2">
-          <div><label className="mb-1 block text-[12.5px] text-fg-2">New notebooks start on</label><select value={s.defaultPlan} onChange={(e) => setS({ ...s, defaultPlan: e.target.value as PlatformSettings['defaultPlan'] })} className={field}>{(['free', 'pro', 'team'] as const).map((p) => <option key={p} value={p}>{PLANS[p].name}</option>)}</select></div>
-          <div className="space-y-1.5 pt-5 text-[13.5px]">
+          <div className="space-y-1.5 text-[13.5px]">
             <label className="flex items-center gap-2"><input type="checkbox" checked={s.requireEmailVerification} onChange={(e) => setS({ ...s, requireEmailVerification: e.target.checked })} /> Require a confirmed email before signing in</label>
             <label className="flex items-center gap-2"><input type="checkbox" checked={s.allowSampleData} onChange={(e) => setS({ ...s, allowSampleData: e.target.checked })} /> Offer the sample dataset at sign-up</label>
           </div>
@@ -51,7 +49,6 @@ export function PlatformSettingsTab({ initial, integrations }: { initial: Platfo
         <h3 className="mb-2 text-[13px] font-semibold uppercase tracking-[0.06em] text-fg-2">Integrations</h3>
         <ul className="space-y-1 text-[13.5px]">
           <li>Email: <strong>{integrations.email ? 'Resend configured' : 'not configured'}</strong> <span className="text-fg-3">· RESEND_API_KEY and EMAIL_FROM</span></li>
-          <li>Billing: <strong>{integrations.billing ? 'Stripe configured' : 'manual plans'}</strong> <span className="text-fg-3">· STRIPE_SECRET_KEY, STRIPE_WEBHOOK_SECRET, STRIPE_PRICE_PRO, STRIPE_PRICE_TEAM; webhook URL /api/billing/webhook</span></li>
         </ul>
       </div>
       <Button variant="primary" loading={busy} onClick={save}>Save settings</Button>

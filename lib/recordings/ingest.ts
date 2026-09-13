@@ -5,7 +5,6 @@
   sent, and hands off to the background job in ./process.
 */
 import { and, asc, eq, sql } from 'drizzle-orm'
-import { assertQuota } from '../plans'
 import { after, NextResponse, type NextRequest } from 'next/server'
 import { getSession } from '../session'
 import { resolveToken } from '../tokens'
@@ -74,14 +73,6 @@ export function defaultTitle(when: Date): string {
 
 export async function startRecording(input: StartInput): Promise<StartResult> {
   const db = await getDb()
-  // Plan quotas: one recording and one note per ingest.
-  const nb = (await db.select().from(schema.notebooks).where(eq(schema.notebooks.id, input.actor.notebookId)))[0]
-  if (nb) {
-    await assertQuota(nb, 'recordingsMonth')
-    await assertQuota(nb, 'notes')
-    if (input.audio) await assertQuota(nb, 'storageMB', input.audio.bytes.length / 1048576)
-    if (input.audioPlaceholder) await assertQuota(nb, 'storageMB', input.audioPlaceholder.size / 1048576)
-  }
   const all = await notebookContexts(input.actor.notebookId)
   const { context, auto } = chooseContext(all, input.context)
   if (!context) throw Object.assign(new Error('This notebook has no contexts'), { status: 400 })

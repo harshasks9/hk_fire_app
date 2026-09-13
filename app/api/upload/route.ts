@@ -1,7 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { guardOwned, apiError } from '@/lib/api'
-import { getSession } from '@/lib/session'
-import { assertQuota } from '@/lib/plans'
+import { guardOwned } from '@/lib/api'
 import { addAttachment } from '@/lib/notes'
 export const maxDuration = 30
 export async function POST(req: NextRequest) {
@@ -12,8 +10,6 @@ export async function POST(req: NextRequest) {
   const denied = await guardOwned('note', noteId)
   if (denied) return denied
   if (file.size > 6 * 1024 * 1024) return NextResponse.json({ error: 'File too large (max 6 MB in this deployment)' }, { status: 413 })
-  const session = await getSession()
-  if (session) { try { await assertQuota(session.notebook, 'storageMB', file.size / 1048576) } catch (e) { return apiError(e) } }
   const id = await addAttachment(noteId, { name: file.name, mime: file.type || 'application/octet-stream', bytes: Buffer.from(await file.arrayBuffer()) })
   return NextResponse.json({ id, url: `/api/attachments/${id}`, name: file.name, mime: file.type, size: file.size })
 }

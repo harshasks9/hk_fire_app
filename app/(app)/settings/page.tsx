@@ -14,13 +14,9 @@ import { TemplatesSection } from '@/components/settings/TemplatesSection'
 import { ImportSection } from '@/components/settings/ImportSection'
 import { SharingSection } from '@/components/settings/SharingSection'
 import { ContextsSection } from '@/components/settings/ContextsSection'
-import { PlanSection } from '@/components/settings/PlanSection'
 import { MembersSection } from '@/components/settings/MembersSection'
-import { effectivePlan, quotaLines, usageFor, PLANS } from '@/lib/plans'
-import { billingConfigured, priceFor } from '@/lib/billing'
 import { listMembers } from '@/lib/members'
 import { emailConfigured } from '@/lib/email'
-import { Suspense } from 'react'
 import { getDb, schema } from '@/lib/db'
 import { sql, inArray, isNull, and } from 'drizzle-orm'
 import { headers } from 'next/headers'
@@ -46,9 +42,7 @@ export default async function SettingsPage() {
   const nbSettings = session?.notebook.settings ?? {}
   const aiView = { aiMode: nbSettings.aiMode ?? 'shared', aiPreference: nbSettings.aiPreference ?? 'auto', anthropicKey: maskSecret(decryptSecret(nbSettings.anthropicKeyEnc)), geminiKey: maskSecret(decryptSecret(nbSettings.geminiKeyEnc)), allowShareLinks: nbSettings.allowShareLinks !== false, sharedKeys: { anthropic: Boolean(process.env.ANTHROPIC_API_KEY), gemini: Boolean(process.env.GEMINI_API_KEY) } } as const
   const canEdit = session?.role !== 'member'
-  const [usage, people] = session ? await Promise.all([usageFor(session.notebookId), listMembers(session.notebookId)]) : [null, null]
-  const plan = session ? effectivePlan(session.notebook) : 'free'
-  const planView = session && usage ? { plan, stored: (PLANS[session.notebook.plan] ? session.notebook.plan : 'free') as typeof plan, expiresAt: session.notebook.planExpiresAt?.toISOString() ?? null, lines: quotaLines(plan, usage), billing: { configured: billingConfigured(), pro: Boolean(priceFor('pro')), team: Boolean(priceFor('team')), portal: Boolean(session.notebook.stripeCustomerId) }, monthStart: usage.monthStart } : null
+  const people = session ? await listMembers(session.notebookId) : null
   const { ai, models, media } = await withNotebookAi(async () => ({ ai: aiStatus(), models: await aiModels().catch(() => null), media: mediaCapabilities() }))
   const shortcuts = [['⌘K', 'Command bar / search'], ['⌘N', 'New note'], ['⌘⇧N', 'Quick capture'], ['⌥ Space', 'Quick capture (in app)'], ['⌘P', 'Search'], ['⌘↵', 'AI action on selection'], ['⌘\\', 'Toggle sidebar'], ['⌘.', 'Toggle intelligence panel'], ['/', 'Slash commands in editor · command bar elsewhere'], ['Esc', 'Close overlays']]
   return (
@@ -61,8 +55,7 @@ export default async function SettingsPage() {
       </div>
       <div className="space-y-10">
         <AccountSection name={session?.user.name ?? ''} email={session?.user.email ?? null} role={session?.role ?? 'owner'} notebookName={session?.notebook.name ?? 'Primary'} authEnabled={authEnabled()} hasPassword={Boolean(session?.user.passwordHash)} verified={Boolean(session?.user.emailVerifiedAt) || !session?.user.email} isOwner={Boolean(session && (session.notebook.ownerUserId === session.userId || session.role === 'owner'))} />
-        {planView && authEnabled() ? <Suspense><PlanSection view={planView} canManage={canEdit} isAdmin={session?.role === 'admin'} /></Suspense> : null}
-        {people && session && authEnabled() ? <MembersSection members={people.members} invites={people.invites} limit={PLANS[plan].members} canManage={canEdit} currentUserId={session.userId} ownerUserId={session.notebook.ownerUserId} emailConfigured={emailConfigured()} /> : null}
+        {people && session && authEnabled() ? <MembersSection members={people.members} invites={people.invites} canManage={canEdit} currentUserId={session.userId} ownerUserId={session.notebook.ownerUserId} emailConfigured={emailConfigured()} /> : null}
         <AiSection settings={{ ...aiView }} canEdit={canEdit} />
         <SettingsClient userName={s.user?.name ?? 'Harsha'} authEnabled={authEnabled()} settings={(s.user?.settings ?? {}) as Record<string, unknown>} sampleData={nbSettings.sampleData !== false} canEdit={canEdit} />
         <TemplatesSection />

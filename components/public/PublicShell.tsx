@@ -8,7 +8,6 @@ export function PublicShell({ children, productName, signedIn, supportEmail, aut
         <div className="mx-auto flex h-14 w-full max-w-[1080px] items-center justify-between px-5 sm:px-8">
           <Link href="/welcome" className="flex items-center gap-2"><span className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent text-[14px] font-bold text-accent-fg">N</span><span className="text-[15px] font-semibold">{productName}</span></Link>
           <nav className="flex items-center gap-1 text-[13.5px]">
-            <Link href="/pricing" className="rounded-md px-2.5 py-1.5 text-fg-2 hover:bg-surface-2 hover:text-fg">Pricing</Link>
             {signedIn || !authEnabled ? (
               <Link href="/" className="ml-1 rounded-lg bg-accent px-3 py-1.5 font-medium text-accent-fg">Open my notebook</Link>
             ) : (
@@ -25,7 +24,6 @@ export function PublicShell({ children, productName, signedIn, supportEmail, aut
         <div className="mx-auto flex w-full max-w-[1080px] flex-wrap items-center justify-between gap-3 px-5 py-6 text-[12.5px] text-fg-3 sm:px-8">
           <span>© {new Date().getFullYear()} {productName}. Capture anything. Organize nothing. Find everything.</span>
           <span className="flex flex-wrap gap-4">
-            <Link href="/pricing" className="hover:text-fg">Pricing</Link>
             <Link href="/terms" className="hover:text-fg">Terms</Link>
             <Link href="/privacy" className="hover:text-fg">Privacy</Link>
             {supportEmail ? <a href={`mailto:${supportEmail}`} className="hover:text-fg">Support</a> : null}

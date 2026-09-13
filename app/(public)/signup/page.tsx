@@ -11,7 +11,7 @@ export default async function SignupPage() {
   if (settings.signupMode === 'invite') return <Closed title="Invitation only" text="Accounts on this deployment are created from invitation links. Ask the administrator, or the owner of the notebook you should join, to send you one." link={{ href: '/login', label: 'Already have an account? Sign in →' }} />
   return (
     <div className="flex items-center justify-center px-5 py-12">
-      <SignupForm productName={settings.productName} allowSampleData={settings.allowSampleData} defaultPlan={settings.defaultPlan} />
+      <SignupForm productName={settings.productName} allowSampleData={settings.allowSampleData} />
     </div>
   )
 }

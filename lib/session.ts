@@ -10,7 +10,7 @@ import { SESSION_COOKIE, authEnabled, readSessionToken, type SessionPayload } fr
 import { getDb, schema } from './db'
 import { ensureReady } from './bootstrap'
 import type { Notebook, User, UserRole } from './db/schema'
-import { scopeForNotebook, applyAiBudget } from './ai/notebook-config'
+import { scopeForNotebook } from './ai/notebook-config'
 import { currentAiScope, runWithAiScope, type AiScope } from './ai/scope'
 
 export interface Session {
@@ -81,7 +81,7 @@ export const getSession = cache(async (): Promise<Session | null> => {
 export async function sessionAiScope(): Promise<AiScope> {
   try {
     const s = await getSession()
-    return s ? applyAiBudget(s.notebook, scopeForNotebook(s.notebook, s.user.name)) : { mode: 'shared' }
+    return s ? scopeForNotebook(s.notebook, s.user.name) : { mode: 'shared' }
   } catch {
     return { mode: 'shared' }
   }

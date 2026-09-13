@@ -33,6 +33,21 @@ export function seedIdMapper(notebookId: string) {
   return (id: string) => (isDefault ? id : `${id}__${suffix}`)
 }
 
+/** The Primary notebook and its owner (the platform admin), created once on a fresh install. Idempotent. */
+export async function ensurePrimaryNotebook(): Promise<void> {
+  const db = await getDb()
+  await db.insert(schema.users).values({ id: USER.id, name: USER.name, email: USER.email, notebookId: DEFAULT_NOTEBOOK.id, role: 'admin', emailVerifiedAt: new Date(), settings: { theme: 'system', aiProvider: 'auto', aiEnabled: true, proactiveInsights: true, dailyBriefHour: 7, defaultContext: 'work' } }).onConflictDoNothing()
+  await db.insert(schema.notebooks).values({ id: DEFAULT_NOTEBOOK.id, slug: DEFAULT_NOTEBOOK.slug, name: DEFAULT_NOTEBOOK.name, ownerUserId: USER.id, settings: { sampleData: false } }).onConflictDoNothing()
+  await ensureDefaultContexts(DEFAULT_NOTEBOOK.id)
+}
+
+/** A fresh install starts empty: the Primary notebook exists, no sample content, and the seed marker says so. */
+export async function bootstrapEmpty(): Promise<void> {
+  const db = await getDb()
+  await ensurePrimaryNotebook()
+  await db.insert(schema.appMeta).values({ key: markerKey(DEFAULT_NOTEBOOK.id), value: { at: new Date().toISOString(), notes: 0, empty: true } }).onConflictDoNothing()
+}
+
 /** Create the five default contexts for a notebook (idempotent). */
 export async function ensureDefaultContexts(notebookId: string): Promise<void> {
   const db = await getDb()
@@ -83,12 +98,11 @@ export async function runSeed(opts: { force?: boolean; log?: (s: string) => void
     await wipeNotebookData(nb)
   }
   log('seeding')
-  if (nb === DEFAULT_NOTEBOOK.id) {
-    // Fresh install: the Primary notebook and its owner, who is also the platform admin.
-    await db.insert(schema.users).values({ id: USER.id, name: USER.name, email: USER.email, notebookId: nb, role: 'admin', emailVerifiedAt: new Date(), settings: { theme: 'system', aiProvider: 'auto', aiEnabled: true, proactiveInsights: true, dailyBriefHour: 7, defaultContext: 'work' } }).onConflictDoNothing()
-    await db.insert(schema.notebooks).values({ id: nb, slug: DEFAULT_NOTEBOOK.slug, name: DEFAULT_NOTEBOOK.name, ownerUserId: USER.id, plan: 'team', settings: { sampleData: true } }).onConflictDoNothing()
-  }
+  if (nb === DEFAULT_NOTEBOOK.id) await ensurePrimaryNotebook()
   await ensureDefaultContexts(nb)
+  // Loading the samples on purpose (Settings → Reset to sample data, or the sign-up checkbox) flags the notebook so they can be removed again.
+  const existing = (await db.select({ settings: schema.notebooks.settings }).from(schema.notebooks).where(eq(schema.notebooks.id, nb)))[0]
+  if (existing) await db.update(schema.notebooks).set({ settings: { ...(existing.settings ?? {}), sampleData: true }, updatedAt: new Date() }).where(eq(schema.notebooks.id, nb))
 
   const entityIds = new Map<string, string>()
   for (const e of ENTITIES) {

@@ -4,13 +4,12 @@ import { apiError } from '@/lib/api'
 import { getPlatformSettings, updatePlatformSettings, type PlatformSettings } from '@/lib/platform'
 import { logAdminEvent } from '@/lib/notebooks'
 import { emailConfigured } from '@/lib/email'
-import { billingConfigured } from '@/lib/billing'
 export const dynamic = 'force-dynamic'
 
 export async function GET() {
   try {
     await requireAdmin()
-    return NextResponse.json({ settings: await getPlatformSettings(), email: emailConfigured(), billing: billingConfigured() })
+    return NextResponse.json({ settings: await getPlatformSettings(), email: emailConfigured() })
   } catch (e) {
     return apiError(e)
   }

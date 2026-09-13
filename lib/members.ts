@@ -6,7 +6,6 @@
 import { and, asc, eq, gte, isNull, sql } from 'drizzle-orm'
 import { getDb, schema } from './db'
 import { createInvite, logAdminEvent, normalizeEmail } from './notebooks'
-import { assertQuota } from './plans'
 import { getPlatformSettings, appUrl } from './platform'
 import { inviteMessage, sendEmail, emailConfigured } from './email'
 import type { Notebook, UserRole } from './db/schema'
@@ -24,11 +23,10 @@ export async function listMembers(notebookId: string): Promise<{ members: Member
   }
 }
 
-/** Invite someone: checks the plan's people quota (members + open invitations), emails the link when possible. */
+/** Invite someone; the link is emailed when email is configured. */
 export async function inviteMember(nb: Notebook, input: { email?: string | null; role: 'member' | 'owner'; actor: { id: string; name: string }; origin?: string }): Promise<{ inviteUrl: string; expiresAt: Date; emailed: boolean }> {
   const email = normalizeEmail(input.email)
   const current = await listMembers(nb.id)
-  await assertQuota(nb, 'members', current.invites.length + 1)
   if (email && current.members.some((m) => (m.email ?? '').toLowerCase() === email)) throw Object.assign(new Error('That person is already in this notebook'), { status: 400 })
   const inv = await createInvite({ notebookId: nb.id, email, role: input.role, createdBy: input.actor.id })
   const inviteUrl = `${appUrl(input.origin)}/invite/${inv.token}`

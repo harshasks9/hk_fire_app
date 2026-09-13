@@ -2,14 +2,13 @@ import { NextRequest, NextResponse } from 'next/server'
 import { requireSession } from '@/lib/session'
 import { apiError } from '@/lib/api'
 import { inviteMember, listMembers } from '@/lib/members'
-import { PLANS, effectivePlan } from '@/lib/plans'
 export const dynamic = 'force-dynamic'
 
 export async function GET() {
   try {
     const s = await requireSession()
     const r = await listMembers(s.notebookId)
-    return NextResponse.json({ ...r, limit: PLANS[effectivePlan(s.notebook)].members, canManage: s.role !== 'member' })
+    return NextResponse.json({ ...r, canManage: s.role !== 'member' })
   } catch (e) {
     return apiError(e)
   }
