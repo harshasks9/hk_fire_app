@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+/*
+ * The villa's design language.
+ *
+ * Paper, ink and clay — not dashboard blue. Status colours are deliberately
+ * desaturated so that a screen full of them still reads calm; the only
+ * saturated colour in the system is the terracotta accent, and it is reserved
+ * for the single thing the user should look at on any given screen.
+ */
+
+@theme {
+  --color-paper: #faf8f5;
+  --color-paper-2: #f4f1ec;
+  --color-paper-3: #ece7df;
+  --color-card: #ffffff;
+  --color-ink: #241f1a;
+  --color-ink-2: #514941;
+  --color-ink-3: #857b70;
+  --color-ink-4: #b3a99d;
+  --color-line: #e3ddd3;
+  --color-line-2: #d3cabd;
+
+  --color-clay: #b0603a;
+  --color-clay-soft: #f2e2d9;
+  --color-sage: #5f7a5f;
+  --color-sage-soft: #e4ebe2;
+  --color-ochre: #ab8534;
+  --color-ochre-soft: #f5ecd8;
+  --color-rust: #a04a3c;
+  --color-rust-soft: #f6e1dc;
+  --color-slate: #5a6672;
+  --color-slate-soft: #e5e9ed;
+
+  --font-display: "Fraunces", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, monospace;
+}
+
+@layer base {
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-feature-settings: "cv02", "cv03", "cv04", "ss01";
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: #f0ddd2; }
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; letter-spacing: -0.015em; }
+  /* Numbers should line up in columns without dancing. */
+  .tnum { font-variant-numeric: tabular-nums; }
+  *:focus-visible { outline: 2px solid var(--color-clay); outline-offset: 2px; border-radius: 3px; }
+  input, select, textarea, button { font: inherit; color: inherit; }
+}
+
+@layer components {
+  .card {
+    background: var(--color-card);
+    border: 1px solid var(--color-line);
+    border-radius: 14px;
+  }
+  .card-quiet {
+    background: color-mix(in srgb, var(--color-card) 60%, transparent);
+    border: 1px solid var(--color-line);
+    border-radius: 14px;
+  }
+  /* The label typography used above every block of numbers. */
+  .eyebrow {
+    font-size: 10.5px;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: var(--color-ink-3);
+    font-weight: 550;
+  }
+  .hairline { border-top: 1px solid var(--color-line); }
+
+  .btn {
+    display: inline-flex; align-items: center; gap: 7px;
+    border-radius: 9px; padding: 8px 14px; font-size: 13.5px; font-weight: 500;
+    border: 1px solid var(--color-line-2); background: var(--color-card);
+    transition: background .15s ease, border-color .15s ease, transform .1s ease;
+    cursor: pointer; white-space: nowrap;
+  }
+  .btn:hover { background: var(--color-paper-2); border-color: var(--color-ink-4); }
+  .btn:active { transform: translateY(0.5px); }
+  .btn-primary {
+    background: var(--color-ink); color: var(--color-paper); border-color: var(--color-ink);
+  }
+  .btn-primary:hover { background: #3a332c; border-color: #3a332c; }
+  .btn-accent { background: var(--color-clay); color: #fff; border-color: var(--color-clay); }
+  .btn-accent:hover { background: #9c5333; border-color: #9c5333; }
+  .btn-sm { padding: 5px 10px; font-size: 12.5px; border-radius: 8px; }
+
+  .chip {
+    display: inline-flex; align-items: center; gap: 5px;
+    border-radius: 999px; padding: 3px 9px; font-size: 11.5px; font-weight: 500;
+    border: 1px solid transparent; white-space: nowrap;
+  }
+  .input {
+    border: 1px solid var(--color-line-2); background: var(--color-card);
+    border-radius: 9px; padding: 7px 10px; font-size: 13.5px; width: 100%;
+  }
+  .input:focus { outline: 2px solid var(--color-clay); outline-offset: -1px; border-color: transparent; }
+
+  /* Scrollbars that do not shout. */
+  .thin-scroll::-webkit-scrollbar { height: 7px; width: 7px; }
+  .thin-scroll::-webkit-scrollbar-thumb { background: var(--color-line-2); border-radius: 4px; }
+  .thin-scroll::-webkit-scrollbar-track { background: transparent; }
+}
+
+@layer utilities {
+  .animate-rise { animation: rise .32s cubic-bezier(.2,.7,.3,1) both; }
+  @keyframes rise { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: none; } }
+  .animate-fade { animation: fade .22s ease both; }
+  @keyframes fade { from { opacity: 0 } to { opacity: 1 } }
+  .animate-sheet { animation: sheet .26s cubic-bezier(.2,.7,.3,1) both; }
+  @keyframes sheet { from { opacity: 0; transform: translateY(14px) } to { opacity: 1; transform: none } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-rise, .animate-fade, .animate-sheet { animation: none; }
+    * { transition-duration: .01ms !important; }
+  }
+}
