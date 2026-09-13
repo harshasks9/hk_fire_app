@@ -6,6 +6,7 @@ import { Chart } from '@/components/sheet/Chart'
 import type { NumbersData, NumberSeries } from '@/lib/numbers'
 import { cx, formatDate } from '@/lib/util'
 import { entityHref } from '@/lib/tag-href'
+import { FactActions } from '@/components/crud/actions'
 
 function fmt(v: number, unit: string | null): string {
   const abs = Math.abs(v)
@@ -40,8 +41,8 @@ export function NumbersDashboard({ data }: { data: NumbersData }) {
           const pct = s.previous && s.previous.value !== 0 ? (s.latest.value - s.previous.value) / Math.abs(s.previous.value) : null
           const Icon = delta === null || delta === 0 ? Minus : delta > 0 ? TrendingUp : TrendingDown
           return (
-            <div key={`${s.entityId}|${s.label}`} className="rounded-xl border border-border bg-surface px-4 py-3">
-              <div className="flex items-center justify-between gap-2 text-[12px] text-fg-3"><span className="truncate">{s.label}</span><Link href={entityHref(s.entityType, s.entityId)} className="truncate hover:text-accent">{s.entityName}</Link></div>
+            <div key={`${s.entityId}|${s.label}`} className="group rounded-xl border border-border bg-surface px-4 py-3">
+              <div className="flex items-center gap-2 text-[12px] text-fg-3"><span className="truncate">{s.label}</span><Link href={entityHref(s.entityType, s.entityId)} className="ml-auto truncate hover:text-accent">{s.entityName}</Link><FactActions fact={{ id: s.latest.id, label: s.label, value: s.latest.display, unit: s.unit, observedAt: s.latest.at }} className="-my-1" /></div>
               <div className="mt-1 text-[24px] font-semibold tabular-nums tracking-[-0.02em]">{fmt(s.latest.value, s.unit)}</div>
               <div className="mt-0.5 flex items-center gap-1.5 text-[12px] text-fg-2">
                 {delta !== null ? <span className={cx('inline-flex items-center gap-0.5', delta > 0 ? 'text-success' : delta < 0 ? 'text-danger' : 'text-fg-3')}><Icon className="h-3.5 w-3.5" />{pct !== null ? `${pct > 0 ? '+' : ''}${(pct * 100).toFixed(pct > 1 ? 0 : 1)}%` : fmt(delta, s.unit)}</span> : <span className="text-fg-3">first observation</span>}

@@ -8,6 +8,7 @@ import { Badge, Popover, AiMark, Button, useToast, Avatar } from '@/components/u
 import { api } from '@/lib/client'
 import { cx, formatDate, formatDateTime, relativeTime, formatTime } from '@/lib/util'
 import type { EntityType } from '@/lib/db/schema'
+import { TaskActions, LoopActions, DecisionActions, MeetingActions, FactActions } from '@/components/crud/actions'
 
 /* ---------------------------------------------------------------- entity links */
 import { entityHref } from '@/lib/ui-helpers'
@@ -97,12 +98,15 @@ export function TaskRow({ task, entityName, sourceTitle, showEntity = true, high
           {task.aiGenerated !== false ? <AiMark label="" className="opacity-60" /> : null}
         </div>
       </div>
+      <div className="flex shrink-0 items-center gap-0.5">
       {!done ? (
-        <div className="flex shrink-0 items-center gap-0.5 opacity-0 transition group-hover:opacity-100 pointer-coarse:opacity-100">
+        <div className="flex items-center gap-0.5 opacity-0 transition group-hover:opacity-100 pointer-coarse:opacity-100">
           {status !== 'waiting' ? <button className="rounded px-1.5 py-0.5 text-[11px] text-fg-3 hover:bg-surface-3 hover:text-fg pointer-coarse:px-2.5 pointer-coarse:py-1.5 pointer-coarse:text-[12.5px]" onClick={() => setTo('waiting')}>Waiting</button> : <button className="rounded px-1.5 py-0.5 text-[11px] text-fg-3 hover:bg-surface-3 hover:text-fg pointer-coarse:px-2.5 pointer-coarse:py-1.5 pointer-coarse:text-[12.5px]" onClick={() => setTo('open')}>Open</button>}
           <button className="rounded px-1.5 py-0.5 text-[11px] text-fg-3 hover:bg-surface-3 hover:text-danger pointer-coarse:px-2.5 pointer-coarse:py-1.5 pointer-coarse:text-[12.5px]" onClick={() => setTo('dropped')}>Drop</button>
         </div>
       ) : null}
+      <TaskActions task={task} />
+      </div>
     </div>
   )
 }
@@ -134,14 +138,17 @@ export function LoopRow({ loop, showCompany = true, highlight }: { loop: { id: s
           <SourceHover sourceNoteId={loop.sourceNoteId} sourceTitle={loop.sourceTitle} excerpt={loop.sourceExcerpt} date={loop.detectedAt}>{loop.text}</SourceHover>
         </div>
       </div>
+      <div className="flex shrink-0 items-center gap-0.5">
       {status === 'open' ? (
-        <div className="flex shrink-0 items-center gap-0.5 opacity-0 transition group-hover:opacity-100 pointer-coarse:opacity-100">
+        <div className="flex items-center gap-0.5 opacity-0 transition group-hover:opacity-100 pointer-coarse:opacity-100">
           <button className="rounded px-1.5 py-0.5 text-[11px] text-fg-3 hover:bg-surface-3 hover:text-fg pointer-coarse:px-2.5 pointer-coarse:py-1.5 pointer-coarse:text-[12.5px]" onClick={() => set('resolved')}>Resolve</button>
           <button className="rounded px-1.5 py-0.5 text-[11px] text-fg-3 hover:bg-surface-3 hover:text-fg pointer-coarse:px-2.5 pointer-coarse:py-1.5 pointer-coarse:text-[12.5px]" onClick={() => set('dismissed')}>Dismiss</button>
         </div>
       ) : (
         <button className="shrink-0 text-[11px] text-fg-3 hover:text-fg" onClick={() => set('open')}>Reopen</button>
       )}
+      <LoopActions loop={loop} />
+      </div>
     </div>
   )
 }
@@ -236,7 +243,8 @@ export function MeetingRow({ m, showStatus }: { m: { id: string; title: string; 
   const start = new Date(m.startsAt)
   const today = new Date().toDateString() === start.toDateString()
   return (
-    <Link href={`/meetings/${m.id}`} className="group -mx-3 flex items-start gap-4 rounded-lg px-3 py-2.5 row-hover">
+    <div className="group -mx-3 flex items-start gap-2 rounded-lg px-3 py-2.5 row-hover">
+    <Link href={`/meetings/${m.id}`} className="flex min-w-0 flex-1 items-start gap-4">
       <div className="w-[84px] shrink-0 pt-0.5 text-[12.5px] tabular-nums text-fg-3">
         <div className={cx('font-medium', today && 'text-accent')}>{today ? 'Today' : formatDate(start, { weekday: 'short', month: 'short', day: 'numeric' })}</div>
         <div>{formatTime(start)}</div>
@@ -259,6 +267,8 @@ export function MeetingRow({ m, showStatus }: { m: { id: string; title: string; 
         {m.noteSummary ? <p className="mt-1 line-clamp-1 text-[13px] text-fg-2">{m.noteSummary}</p> : null}
       </div>
     </Link>
+    <MeetingActions meeting={m} className="mt-0.5" />
+    </div>
   )
 }
 
@@ -266,7 +276,8 @@ export function MeetingRow({ m, showStatus }: { m: { id: string; title: string; 
 export function DecisionCard({ d, compact }: { d: { id: string; title: string; statement: string; decidedAt: Date | string; status: string; revisions?: number; topicName?: string | null; companyName?: string | null; sourceNoteId?: string | null; sourceExcerpt?: string | null; sourceTitle?: string | null }; compact?: boolean }) {
   const tone = d.status === 'active' ? 'success' : d.status === 'revisited' || d.status === 'proposed' ? 'warning' : 'neutral'
   return (
-    <Link href={`/decisions/${d.id}`} className={cx('group -mx-3 block rounded-lg px-3 row-hover', compact ? 'py-2' : 'py-2.5')}>
+    <div className={cx('group relative -mx-3 rounded-lg px-3 row-hover', compact ? 'py-2' : 'py-2.5')}>
+    <Link href={`/decisions/${d.id}`} className="block pr-8">
       <div className="flex items-center gap-2">
         <GitBranch className="h-3.5 w-3.5 shrink-0 text-fg-3" />
         <span className="truncate text-[14px] font-medium group-hover:text-accent">{d.title}</span>
@@ -280,23 +291,26 @@ export function DecisionCard({ d, compact }: { d: { id: string; title: string; s
         {d.companyName ? <span>· {d.companyName}</span> : null}
       </div>
     </Link>
+    <DecisionActions decision={d} className={cx('absolute right-2', compact ? 'top-1.5' : 'top-2')} />
+    </div>
   )
 }
 
 /* ---------------------------------------------------------------- facts */
-export function FactList({ facts, showEntity }: { facts: { id: string; label: string; value: string; observedAt: Date | string; sourceNoteId: string | null; sourceExcerpt: string | null; sourceTitle?: string | null; entityName?: string }[]; showEntity?: boolean }) {
+export function FactList({ facts, showEntity }: { facts: { id: string; label: string; value: string; unit?: string | null; observedAt: Date | string; sourceNoteId: string | null; sourceExcerpt: string | null; sourceTitle?: string | null; entityName?: string }[]; showEntity?: boolean }) {
   if (!facts.length) return <p className="text-[13px] text-fg-3">No numbers captured yet.</p>
   return (
-    <dl className="grid grid-cols-[auto_1fr] gap-x-4 gap-y-1.5 text-[13.5px]">
+    <ul className="text-[13.5px]">
       {facts.map((f) => (
-        <React.Fragment key={f.id}>
-          <dt className="text-fg-2">{showEntity && f.entityName ? `${f.entityName} · ` : ''}{f.label}</dt>
-          <dd className="font-medium tabular-nums">
-            <SourceHover sourceNoteId={f.sourceNoteId} sourceTitle={f.sourceTitle} excerpt={f.sourceExcerpt} date={f.observedAt}>{f.value}</SourceHover>
-          </dd>
-        </React.Fragment>
+        <li key={f.id} className="group -mx-2 flex items-baseline gap-3 rounded-md px-2 py-1 row-hover">
+          <span className="min-w-0 truncate text-fg-2">{showEntity && f.entityName ? `${f.entityName} · ` : ''}{f.label}</span>
+          <span className="ml-auto shrink-0 font-medium tabular-nums">
+            <SourceHover sourceNoteId={f.sourceNoteId} sourceTitle={f.sourceTitle} excerpt={f.sourceExcerpt} date={f.observedAt} align="end">{f.value}</SourceHover>
+          </span>
+          <FactActions fact={f} className="-my-1 self-center" />
+        </li>
       ))}
-    </dl>
+    </ul>
   )
 }
 

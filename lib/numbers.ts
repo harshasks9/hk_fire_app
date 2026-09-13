@@ -6,7 +6,7 @@ import { and, desc, eq, inArray } from 'drizzle-orm'
 import { getDb, schema } from './db'
 import { canonicalLabel } from './ai/local'
 
-export interface NumberPoint { value: number; display: string; at: string; noteId: string | null; excerpt: string | null; current: boolean }
+export interface NumberPoint { id: string; value: number; display: string; at: string; noteId: string | null; excerpt: string | null; current: boolean }
 export interface NumberSeries { entityId: string; entityName: string; entityType: string; label: string; unit: string | null; points: NumberPoint[]; latest: NumberPoint; previous: NumberPoint | null }
 export interface NumbersData { series: NumberSeries[]; labels: string[]; entities: { id: string; name: string; type: string }[]; total: number }
 
@@ -25,7 +25,7 @@ export async function numbersFor(contextIds: string[], opts: { limit?: number } 
     if (f.numericValue === null || f.numericValue === undefined || !Number.isFinite(f.numericValue)) continue
     const label = canonicalLabel(f.label)
     const key = `${f.entityId}|${label.toLowerCase()}`
-    const point: NumberPoint = { value: f.numericValue, display: f.value, at: f.observedAt.toISOString(), noteId: f.sourceNoteId, excerpt: f.sourceExcerpt, current: !f.supersededById }
+    const point: NumberPoint = { id: f.id, value: f.numericValue, display: f.value, at: f.observedAt.toISOString(), noteId: f.sourceNoteId, excerpt: f.sourceExcerpt, current: !f.supersededById }
     const g = groups.get(key)
     if (g) g.points.push(point)
     else groups.set(key, { entityId: f.entityId, entityName, entityType, label, unit: f.unit, points: [point], latest: point, previous: null })
@@ -43,4 +43,12 @@ export async function numbersFor(contextIds: string[], opts: { limit?: number } 
   const labels = [...new Set(series.map((s) => s.label))].sort()
   const entities = [...new Map(series.map((s) => [s.entityId, { id: s.entityId, name: s.entityName, type: s.entityType }])).values()].sort((a, b) => a.name.localeCompare(b.name))
   return { series, labels, entities, total: rows.length }
+}
+
+/** Every person, company, topic and project in the contexts: the "about" choices when adding a number by hand. */
+export async function listEntityNames(contextIds: string[]): Promise<{ id: string; name: string; type: string }[]> {
+  if (!contextIds.length) return []
+  const db = await getDb()
+  const rows = await db.select({ id: schema.entities.id, name: schema.entities.name, type: schema.entities.type }).from(schema.entities).where(inArray(schema.entities.contextId, contextIds)).orderBy(schema.entities.name).limit(500)
+  return rows
 }

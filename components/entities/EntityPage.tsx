@@ -11,6 +11,7 @@ import type { EntityDetail } from '@/lib/queries'
 import { formatDate, pluralize } from '@/lib/util'
 import { AiMark } from '@/components/ui'
 import { Share2 } from 'lucide-react'
+import { EntityActions } from '@/components/crud/actions'
 
 export async function EntityPage({ d }: { d: EntityDetail }) {
   const e = d.entity
@@ -45,6 +46,7 @@ export async function EntityPage({ d }: { d: EntityDetail }) {
             <Link href={`/graph?focus=${e.type}:${e.id}`} className="inline-flex h-8 items-center gap-1 rounded-[9px] border border-border px-2.5 text-[12.5px] text-fg-2 hover:bg-surface-2 hover:text-fg" title="See in the graph"><Share2 className="h-3.5 w-3.5" /> Graph</Link>
             <PinButton id={e.id} pinned={e.pinned} />
             <GenerateMenu target={{ type: 'entity', id: e.id }} />
+            <EntityActions entity={{ id: e.id, type: e.type, name: e.name, attributes: e.attributes, aliases: e.aliases, summary: e.summary }} redirectTo={isPerson ? '/people' : isCompany ? '/companies' : '/topics'} always />
           </div>
         </div>
       </header>

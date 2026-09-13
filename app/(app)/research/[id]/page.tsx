@@ -6,6 +6,7 @@ import { getResearch } from '@/lib/queries'
 import { NoteRow, FactList, TaskRow, DecisionCard } from '@/components/entities'
 import { NewNoteButton } from '@/components/notes/NewNoteButton'
 import { Synthesize } from '@/components/notes/Synthesize'
+import { ResearchActions } from '@/components/crud/actions'
 import { AskInline } from '@/components/ask/AskInline'
 import { relativeTime } from '@/lib/util'
 export const dynamic = 'force-dynamic'
@@ -23,7 +24,7 @@ export default async function ResearchDetail({ params }: { params: Promise<{ id:
             <h1 className="text-[28px] font-semibold leading-tight tracking-[-0.02em]">{p.name}</h1>
             {p.question ? <p className="mt-1 text-[15px] text-fg-2">{p.question}</p> : p.description ? <p className="mt-1 text-[15px] text-fg-2">{p.description}</p> : null}
           </div>
-          <div className="flex items-center gap-1.5"><Synthesize id={p.id} hasSynthesis={Boolean(p.synthesis)} /><NewNoteButton researchProjectId={p.id} label="Add note" /></div>
+          <div className="flex items-center gap-1.5"><Synthesize id={p.id} hasSynthesis={Boolean(p.synthesis)} /><NewNoteButton researchProjectId={p.id} label="Add note" /><ResearchActions project={p} redirectTo="/research" always /></div>
         </div>
       </header>
       {p.synthesis ? (

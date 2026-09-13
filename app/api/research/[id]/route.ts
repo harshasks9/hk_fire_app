@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { guardOwned } from '@/lib/api'
 import { getDb, schema } from '@/lib/db'
-import { eq } from 'drizzle-orm'
+import { and, eq } from 'drizzle-orm'
 import { getResearch } from '@/lib/queries'
 import { getProvider } from '@/lib/ai/provider'
 import { withNotebookAi } from '@/lib/session'
@@ -40,4 +40,16 @@ export async function PATCH(req: NextRequest, { params }: { params: Promise<{ id
   }
   await db.update(schema.researchProjects).set(set).where(eq(schema.researchProjects.id, id))
   return NextResponse.json({ ok: true, synthesis: set.synthesis })
+}
+
+/** Delete the project. Notes filed under it stay, unfiled. */
+export async function DELETE(_: NextRequest, { params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params
+  const denied = await guardOwned('research', id)
+  if (denied) return denied
+  const db = await getDb()
+  await db.update(schema.notes).set({ researchProjectId: null }).where(eq(schema.notes.researchProjectId, id))
+  await db.delete(schema.embeddings).where(and(eq(schema.embeddings.ownerType, 'research'), eq(schema.embeddings.ownerId, id)))
+  await db.delete(schema.researchProjects).where(eq(schema.researchProjects.id, id))
+  return new NextResponse(null, { status: 204 })
 }

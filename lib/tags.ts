@@ -114,3 +114,27 @@ export async function untaggedNoteIds(contextIds: string[], limit = 20): Promise
   const rows = await db.select({ id: schema.notes.id }).from(schema.notes).where(where).orderBy(desc(schema.notes.updatedAt)).limit(limit)
   return { ids: rows.map((r) => r.id), remaining: total }
 }
+
+/** Rename a tag everywhere in the given contexts (both automatic and manual lists). Returns notes touched. */
+export async function renameTag(contextIds: string[], from: string, to: string): Promise<number> {
+  const db = await getDb()
+  const [f] = normalizeTags([from]); const [t] = normalizeTags([to])
+  if (!f || !t || !contextIds.length) return 0
+  const rows = await db.select({ id: schema.notes.id, tags: schema.notes.tags, manualTags: schema.notes.manualTags }).from(schema.notes).where(and(inArray(schema.notes.contextId, contextIds), hasTagSql(f)))
+  for (const n of rows) {
+    await db.update(schema.notes).set({ tags: normalizeTags(n.tags.map((x) => (x === f ? t : x))), manualTags: normalizeTags((n.manualTags ?? []).map((x) => (x === f ? t : x))) }).where(eq(schema.notes.id, n.id))
+  }
+  return rows.length
+}
+
+/** Remove a tag from every note in the given contexts. Returns notes touched. */
+export async function deleteTag(contextIds: string[], tag: string): Promise<number> {
+  const db = await getDb()
+  const [t] = normalizeTags([tag])
+  if (!t || !contextIds.length) return 0
+  const rows = await db.select({ id: schema.notes.id, tags: schema.notes.tags, manualTags: schema.notes.manualTags }).from(schema.notes).where(and(inArray(schema.notes.contextId, contextIds), hasTagSql(t)))
+  for (const n of rows) {
+    await db.update(schema.notes).set({ tags: n.tags.filter((x) => x !== t), manualTags: (n.manualTags ?? []).filter((x) => x !== t) }).where(eq(schema.notes.id, n.id))
+  }
+  return rows.length
+}
