@@ -1,0 +1,529 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --bg: #fafaf9;
+  --surface: #ffffff;
+  --surface-2: #f4f4f2;
+  --surface-3: #ececea;
+  --fg: #18181b;
+  --fg-2: #66666e;
+  --fg-3: #9a9aa2;
+  --border: #e9e9e6;
+  --border-2: #d9d9d5;
+  --accent: #5b5bd6;
+  --accent-hover: #4b4bc4;
+  --accent-fg: #ffffff;
+  --accent-soft: #eeeefb;
+  --accent-soft-2: #dcdcf6;
+  --danger: #d64545;
+  --warning: #c98a1b;
+  --success: #2e9a62;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 8px 24px -12px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 2px 6px rgba(0, 0, 0, 0.06), 0 24px 64px -24px rgba(0, 0, 0, 0.25);
+  --radius: 12px;
+  --sidebar-w: 232px;
+  --sidebar-collapsed-w: 56px;
+  --panel-w: 340px;
+  color-scheme: light;
+}
+
+.dark {
+  --bg: #0e0e10;
+  --surface: #151517;
+  --surface-2: #1b1b1e;
+  --surface-3: #232327;
+  --fg: #ededef;
+  --fg-2: #9b9ba3;
+  --fg-3: #67676f;
+  --border: #242428;
+  --border-2: #2f2f34;
+  --accent: #8f8ff2;
+  --accent-hover: #a4a4f6;
+  --accent-fg: #0e0e10;
+  --accent-soft: #1d1d33;
+  --accent-soft-2: #27274a;
+  --danger: #ef6b6b;
+  --warning: #e0a43a;
+  --success: #4fbd85;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 8px 24px -12px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 2px 6px rgba(0, 0, 0, 0.5), 0 24px 64px -24px rgba(0, 0, 0, 0.8);
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-fg: var(--fg);
+  --color-fg-2: var(--fg-2);
+  --color-fg-3: var(--fg-3);
+  --color-border: var(--border);
+  --color-border-2: var(--border-2);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-fg: var(--accent-fg);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-soft-2: var(--accent-soft-2);
+  --color-danger: var(--danger);
+  --color-warning: var(--warning);
+  --color-success: var(--success);
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-xl: 14px;
+  --shadow-soft: var(--shadow);
+  --shadow-pop: var(--shadow-lg);
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+
+  html {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: 'cv11', 'ss01', 'ss03', 'calt';
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-size: 15px;
+    line-height: 1.5;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: var(--accent-soft-2);
+  }
+
+  button,
+  input,
+  textarea {
+    font: inherit;
+    color: inherit;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+}
+
+/* Scrollbars: thin and quiet */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-2) transparent;
+}
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  background: var(--border-2);
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ------------------------------------------------------------ utilities */
+.hairline {
+  box-shadow: inset 0 0 0 1px var(--border);
+}
+.text-balance {
+  text-wrap: balance;
+}
+.animate-in {
+  animation: fade-in 180ms ease-out both;
+}
+.animate-up {
+  animation: fade-up 220ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+.animate-pop {
+  animation: pop 160ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes pop {
+  from { opacity: 0; transform: scale(0.985); }
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes shimmer {
+  0% { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
+}
+.skeleton {
+  background: linear-gradient(90deg, var(--surface-2) 0px, var(--surface-3) 200px, var(--surface-2) 400px);
+  background-size: 800px 100%;
+  animation: shimmer 1.4s linear infinite;
+  border-radius: 6px;
+}
+.kbd {
+  font-size: 11px;
+  line-height: 1;
+  padding: 3px 5px;
+  border-radius: 5px;
+  border: 1px solid var(--border-2);
+  background: var(--surface);
+  color: var(--fg-2);
+  font-family: var(--font-sans);
+  box-shadow: 0 1px 0 var(--border-2);
+}
+.ai-mark {
+  color: var(--accent);
+}
+.row-hover {
+  transition: background-color 120ms ease;
+}
+.row-hover:hover {
+  background: var(--surface-2);
+}
+
+/* ------------------------------------------------------------ editor */
+.editor-prose {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--fg);
+}
+.editor-prose > * + * {
+  margin-top: 0.75em;
+}
+.editor-prose p {
+  margin: 0;
+}
+.editor-prose h1 {
+  font-size: 1.6em;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  margin-top: 1.6em;
+}
+.editor-prose h2 {
+  font-size: 1.28em;
+  font-weight: 620;
+  letter-spacing: -0.015em;
+  line-height: 1.3;
+  margin-top: 1.5em;
+}
+.editor-prose h3 {
+  font-size: 1.08em;
+  font-weight: 620;
+  margin-top: 1.25em;
+}
+.editor-prose h1:first-child,
+.editor-prose h2:first-child,
+.editor-prose h3:first-child {
+  margin-top: 0;
+}
+.editor-prose ul,
+.editor-prose ol {
+  padding-left: 1.5em;
+}
+.editor-prose ul {
+  list-style: disc;
+}
+.editor-prose ol {
+  list-style: decimal;
+}
+.editor-prose li + li {
+  margin-top: 0.25em;
+}
+.editor-prose li > p {
+  margin: 0;
+}
+.editor-prose ul[data-type='taskList'] {
+  list-style: none;
+  padding-left: 0.1em;
+}
+.editor-prose ul[data-type='taskList'] li {
+  display: flex;
+  gap: 0.6em;
+  align-items: flex-start;
+}
+.editor-prose ul[data-type='taskList'] li > label {
+  margin-top: 0.35em;
+  flex: 0 0 auto;
+}
+.editor-prose ul[data-type='taskList'] li > label input {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 5px;
+  border: 1.5px solid var(--border-2);
+  background: var(--surface);
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  transition: all 120ms;
+}
+.editor-prose ul[data-type='taskList'] li > label input:checked {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+.editor-prose ul[data-type='taskList'] li > label input:checked::after {
+  content: '';
+  width: 9px;
+  height: 5px;
+  border-left: 2px solid var(--accent-fg);
+  border-bottom: 2px solid var(--accent-fg);
+  transform: rotate(-45deg) translate(1px, -1px);
+}
+.editor-prose ul[data-type='taskList'] li[data-checked='true'] > div {
+  color: var(--fg-3);
+  text-decoration: line-through;
+}
+.editor-prose ul[data-type='taskList'] li > div {
+  flex: 1 1 auto;
+}
+.editor-prose blockquote {
+  border-left: 2px solid var(--border-2);
+  padding-left: 1em;
+  color: var(--fg-2);
+}
+.editor-prose code {
+  font-family: var(--font-mono);
+  font-size: 0.88em;
+  background: var(--surface-2);
+  padding: 0.1em 0.35em;
+  border-radius: 5px;
+}
+.editor-prose pre {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  padding: 0.9em 1em;
+  border-radius: 10px;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 0.86em;
+  line-height: 1.55;
+}
+.editor-prose pre code {
+  background: none;
+  padding: 0;
+}
+.editor-prose hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 1.5em 0;
+}
+.editor-prose a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-color: var(--accent-soft-2);
+  text-underline-offset: 3px;
+}
+.editor-prose img {
+  max-width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+.editor-prose table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.94em;
+  table-layout: fixed;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.editor-prose th,
+.editor-prose td {
+  border: 1px solid var(--border);
+  padding: 0.45em 0.7em;
+  vertical-align: top;
+  min-width: 4em;
+  position: relative;
+}
+.editor-prose th {
+  background: var(--surface-2);
+  font-weight: 600;
+  text-align: left;
+}
+/* The sheet block's grid is not a prose table: reset what the rules above impose. */
+.editor-prose .hkn-grid table {
+  border-collapse: separate;
+  width: auto;
+  font-size: 13px;
+  overflow: visible;
+  border-radius: 0;
+  margin: 0;
+}
+.editor-prose .hkn-grid th,
+.editor-prose .hkn-grid td {
+  padding: 0 6px;
+  vertical-align: middle;
+  min-width: 0;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent var(--border) var(--border) transparent;
+  font-weight: 400;
+  text-align: inherit;
+  background: none;
+}
+.editor-prose .hkn-grid th {
+  font-weight: 500;
+  text-align: center;
+}
+.hkn-grid td.text-right { text-align: right; }
+.hkn-grid td.text-left { text-align: left; }
+.hkn-grid .bg-surface-2, .editor-prose .hkn-grid th.bg-surface-2 { background: var(--surface-2); }
+.hkn-grid .bg-accent-soft, .editor-prose .hkn-grid th.bg-accent-soft { background: var(--accent-soft); }
+.hkn-grid .bg-accent, .editor-prose .hkn-grid th.bg-accent { background: var(--accent); }
+.hkn-grid td.border-t-accent { border-top-color: var(--accent); }
+.hkn-grid td.border-l-accent { border-left-color: var(--accent); }
+
+.editor-prose .selectedCell::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--accent-soft);
+  opacity: 0.6;
+  pointer-events: none;
+}
+.editor-prose .column-resize-handle {
+  position: absolute;
+  right: -2px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--accent);
+  pointer-events: none;
+}
+.editor-prose .callout {
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  border-radius: 10px;
+  padding: 0.8em 1em 0.8em 2.4em;
+  position: relative;
+}
+.editor-prose .callout::before {
+  position: absolute;
+  left: 0.85em;
+  top: 0.85em;
+  font-size: 0.85em;
+}
+.editor-prose .callout[data-kind='info']::before { content: 'ℹ'; color: var(--fg-2); }
+.editor-prose .callout[data-kind='decision'] {
+  border-color: var(--accent-soft-2);
+  background: var(--accent-soft);
+}
+.editor-prose .callout[data-kind='decision']::before { content: '◆'; color: var(--accent); }
+.editor-prose .callout[data-kind='warning'] { border-color: color-mix(in srgb, var(--warning) 40%, transparent); }
+.editor-prose .callout[data-kind='warning']::before { content: '!'; color: var(--warning); font-weight: 700; }
+.editor-prose .callout[data-kind='ai'] {
+  border: 1px dashed var(--accent-soft-2);
+  background: color-mix(in srgb, var(--accent-soft) 60%, transparent);
+}
+.editor-prose .callout[data-kind='ai']::before { content: '✦'; color: var(--accent); }
+.editor-prose .callout[data-kind='ai']::after {
+  content: 'AI';
+  position: absolute;
+  right: 0.7em;
+  top: 0.5em;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  opacity: 0.8;
+}
+.editor-prose .callout > * + * {
+  margin-top: 0.4em;
+}
+.editor-prose .mention {
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-radius: 5px;
+  padding: 0.05em 0.3em;
+  font-weight: 500;
+}
+.editor-prose p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  color: var(--fg-3);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
+.editor-prose .ProseMirror-selectednode {
+  outline: 2px solid var(--accent-soft-2);
+  border-radius: 8px;
+}
+.ProseMirror {
+  outline: none;
+  min-height: 40vh;
+}
+.ProseMirror .search-highlight {
+  background: color-mix(in srgb, var(--warning) 28%, transparent);
+  border-radius: 3px;
+}
+.tippy-box {
+  background: transparent !important;
+}
+
+/* Rendered (read-only) note bodies reuse the editor prose */
+.prose-static {
+  font-size: 15px;
+  line-height: 1.65;
+}
+.prose-static ul { list-style: disc; padding-left: 1.4em; }
+.prose-static ol { list-style: decimal; padding-left: 1.4em; }
+.prose-static p + p { margin-top: 0.6em; }
+.prose-static h1, .prose-static h2, .prose-static h3 { font-weight: 620; margin-top: 1em; }
+.prose-static strong { font-weight: 620; }
+
+
+/* ------------------------------------------------------------ mobile / touch */
+.no-scrollbar { scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+
+/* iOS zooms the page when a focused field is under 16px. Keep fields at 16px on phones;
+   large editorial fields opt out with data-large. Unlayered on purpose so it beats utilities. */
+@media (pointer: coarse) and (max-width: 767px) {
+  input:not([type='checkbox']):not([type='radio']):not([type='range']):not([type='file']):not([data-large]),
+  select,
+  textarea:not([data-large]) {
+    font-size: 16px;
+  }
+}
+
+/* Standalone (installed) app: respect the notch and home indicator. */
+@supports (padding: env(safe-area-inset-bottom)) {
+  .safe-bottom { padding-bottom: env(safe-area-inset-bottom); }
+}
+
+/* A task's details are usually short: keep the editor compact so the files below stay in view. */
+.task-editor .editor-prose,
+.task-editor .ProseMirror {
+  min-height: 140px;
+}
