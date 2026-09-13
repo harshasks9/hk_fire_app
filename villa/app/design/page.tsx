@@ -3,6 +3,7 @@
 import React, { useMemo, useState } from "react";
 import Link from "next/link";
 import { useProject } from "@/lib/store";
+import { AddButton, RowActions, EntityLink, EmptyWithAdd } from "@/components/Entity";
 import { forecastOf } from "@/lib/model/derive";
 import { inr } from "@/lib/model/costing";
 import { PageTitle, Eyebrow, Empty, Tabs, PhotoBlock, Chip, Swatch, Avatar, fmtDay, Stat } from "@/components/ui";
@@ -56,13 +57,17 @@ export default function DesignPage() {
             : "The scheme as it stands: what has been proposed, what is being weighed, and what has been settled."
         }
         right={
-          <select className="input w-auto" value={floor} onChange={(e) => setFloor(e.target.value)}>
-            <option value="all">Whole villa</option>
-            <option value="ground">Ground floor</option>
-            <option value="first">First floor</option>
-            <option value="second">Second floor</option>
-            <option value="outdoor">Outdoor</option>
-          </select>
+          <div className="flex items-center gap-2 flex-wrap justify-end">
+            <select className="input w-auto" value={floor} onChange={(e) => setFloor(e.target.value)}>
+              <option value="all">Whole villa</option>
+              <option value="ground">Ground floor</option>
+              <option value="first">First floor</option>
+              <option value="second">Second floor</option>
+              <option value="outdoor">Outdoor</option>
+            </select>
+            <AddButton on="options" label="Add an option" />
+            <AddButton on="ideas" label="Add an idea" accent />
+          </div>
         }
       />
 
@@ -83,8 +88,9 @@ export default function DesignPage() {
                 const sp = spaceOf(idea.scopeItemId);
                 const a = idea.attachments[0];
                 return (
-                  <div key={idea.id} className="break-inside-avoid mb-3">
-                    <div className="card overflow-hidden">
+                  <div key={idea.id} className="break-inside-avoid mb-3 group">
+                    <div className="card overflow-hidden relative">
+                      <RowActions on="ideas" id={idea.id} className="absolute top-2 right-2 z-10" />
                       <PhotoBlock
                         tone={a?.swatch ?? "#c3b6a4"}
                         ratio={idea.attachments.length > 1 ? "3 / 4" : "4 / 3"}
@@ -105,7 +111,10 @@ export default function DesignPage() {
                 );
               })}
             </div>
-          ) : <Empty title="No ideas collected for this floor yet." />
+          ) : (
+            <EmptyWithAdd on="ideas" title="No ideas collected for this floor yet."
+              hint="References, swatches, tear sheets — anything that shows what a room should feel like before it is specified." />
+          )
         )}
 
         {tab === "Options" && (
@@ -137,7 +146,10 @@ export default function DesignPage() {
                 );
               })}
             </div>
-          ) : <Empty title="No options prepared for this floor yet." />
+          ) : (
+            <EmptyWithAdd on="options" title="No options prepared for this floor yet."
+              hint="An option is one costed way of doing an item, so that a decision is a choice between real alternatives rather than a yes or no." />
+          )
         )}
 
         {tab === "Revisions" && (
@@ -192,7 +204,10 @@ export default function DesignPage() {
                 );
               })}
             </div>
-          ) : <Empty title="No client feedback yet." />
+          ) : (
+            <EmptyWithAdd on="comments" title="No client feedback yet."
+              hint="Comments attach to an item or a design option, and stay with it as it moves through the workflow." />
+          )
         )}
       </div>
     </div>

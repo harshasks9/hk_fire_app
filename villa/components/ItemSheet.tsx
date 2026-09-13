@@ -8,6 +8,7 @@ import { computeCost, inr, round, areaSqft, perimeterFt, wallAreaSqft } from "@/
 import { forecastOf } from "@/lib/model/derive";
 import { Sheet, Field, Eyebrow, NumberInput, StageChip, Chip, Money, Assumed, Tabs, Avatar, Empty, fmtDate } from "./ui";
 import { Comments } from "./Comments";
+import { EntityLink, RowActions } from "./Entity";
 import { catLabel, catDef } from "@/lib/model/categories";
 
 const TABS = ["Cost", "Spec", "Procurement", "Discussion", "Changes"] as const;
@@ -54,7 +55,10 @@ export function ItemSheet({
     >
       <div className="flex flex-wrap items-center gap-2 mb-4 text-[12px] text-ink-3">
         <Chip tone="ghost">{catLabel(state, item.category)}</Chip>
-        <span>{space?.name ?? "House-wide"}</span>
+        {space ? <EntityLink on="spaces" id={space.id} label={space.name} /> : <span>House-wide</span>}
+        {item.vendorId && <>·<EntityLink on="vendors" id={item.vendorId} /></>}
+        {decision && <>·<EntityLink on="decisions" id={decision.id} label="the decision" /></>}
+        <span className="ml-auto"><RowActions on="items" id={item.id} always /></span>
         {item.tags?.includes("critical") && <Chip tone="clay">Critical</Chip>}
         {item.tags?.includes("beyond-brief") && (
           <Chip tone="slate" title="Added to the model because the villa needs it, though it was not in the original brief.">

@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { ProjectProvider } from "@/lib/store";
 import { Shell } from "@/components/Shell";
+import { EntityDialogs } from "@/components/Entity";
 
 export const metadata: Metadata = {
   title: "The Villa — interiors & fit-out",
@@ -29,7 +30,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         <ProjectProvider>
-          <Shell>{children}</Shell>
+          <EntityDialogs>
+            <Shell>{children}</Shell>
+          </EntityDialogs>
         </ProjectProvider>
       </body>
     </html>

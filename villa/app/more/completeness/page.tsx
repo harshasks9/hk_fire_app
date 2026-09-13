@@ -3,6 +3,7 @@
 import React, { useMemo, useState } from "react";
 import Link from "next/link";
 import { useProject } from "@/lib/store";
+import { EntityLink } from "@/components/Entity";
 import { findGaps, bucketOf, COMPLETENESS_BUCKETS, itemsForSpace, type GapSeverity } from "@/lib/model/derive";
 import { FLOOR_META } from "@/lib/seed/spaces";
 import { PageTitle, Eyebrow, Chip, Stat, Empty, Tabs } from "@/components/ui";
@@ -116,9 +117,11 @@ export default function CompletenessPage() {
                             <p className="text-[12px] mt-1.5" style={{ color: "#9c5333" }}>{g.action}</p>
                           )}
                         </div>
-                        {g.spaceId && g.scopeItemId && (
-                          <Link href={`/villa/${g.spaceId}?item=${g.scopeItemId}`} className="btn btn-sm shrink-0">Open</Link>
-                        )}
+                        {g.scopeItemId ? (
+                          <EntityLink on="items" id={g.scopeItemId} className="btn btn-sm shrink-0">Open</EntityLink>
+                        ) : g.spaceId ? (
+                          <EntityLink on="spaces" id={g.spaceId} className="btn btn-sm shrink-0">Open</EntityLink>
+                        ) : null}
                       </div>
                     </div>
                   ))}

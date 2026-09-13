@@ -109,7 +109,7 @@ export const SCHEMAS: Record<CollectionKey, CollectionSchema> = {
         hint: "Hidden from pickers; existing items keep it." },
     ],
     blank: ({ id }) => ({ id: `cat-${id.slice(-6)}`, label: "New category", group: "finishes", taxPct: 18, unit: "ls" }),
-    title: (r) => String(r.label ?? "Untitled category"),
+    title: (r) => String(r.label || "Untitled category"),
   },
 
   /* ------------------------------------------------------------- spaces */
@@ -145,7 +145,7 @@ export const SCHEMAS: Record<CollectionKey, CollectionSchema> = {
       { key: "note", label: "Note", type: "textarea" },
     ],
     blank: ({ id }) => ({ id, name: "New space", floor: "ground", kind: "bedroom" }),
-    title: (r) => String(r.name ?? "Untitled space"),
+    title: (r) => String(r.name || "Untitled space"),
   },
 
   /* -------------------------------------------------------------- items */
@@ -186,7 +186,7 @@ export const SCHEMAS: Record<CollectionKey, CollectionSchema> = {
       id, title: "New scope item", spaceId, category: "flooring", stage: "not-started",
       cost: { qty: 1, unit: "nos", rate: 0, taxPct: 18 }, ladder: {}, tags: [],
     }),
-    title: (r) => String(r.title ?? "Untitled item"),
+    title: (r) => String(r.title || "Untitled item"),
   },
 
   /* -------------------------------------------------------------- ideas */
@@ -205,7 +205,7 @@ export const SCHEMAS: Record<CollectionKey, CollectionSchema> = {
       id, title: "New idea", scopeItemId: state.items[0]?.id, attachments: [],
       createdBy: me, createdAt: now(),
     }),
-    title: (r) => String(r.title ?? "Untitled idea"),
+    title: (r) => String(r.title || "Untitled idea"),
   },
 
   /* ------------------------------------------------------------ options */
@@ -257,7 +257,7 @@ export const SCHEMAS: Record<CollectionKey, CollectionSchema> = {
       alternativeOptionIds: [], status: "awaiting-owner",
       history: [{ at: now(), by: me, action: "raised" }],
     }),
-    title: (r) => String(r.title ?? "Untitled decision"),
+    title: (r) => String(r.title || "Untitled decision"),
   },
 
   /* ----------------------------------------------------------- comments */
@@ -278,7 +278,7 @@ export const SCHEMAS: Record<CollectionKey, CollectionSchema> = {
     blank: ({ id, me, state }) => ({
       id, targetType: "item", targetId: state.items[0]?.id, author: me, body: "", createdAt: now(),
     }),
-    title: (r) => String(r.body ?? "").slice(0, 60) || "Empty comment",
+    title: (r) => String(r.body || "").slice(0, 60) || "Empty comment",
   },
 
   /* ------------------------------------------------------------ vendors */
@@ -295,7 +295,7 @@ export const SCHEMAS: Record<CollectionKey, CollectionSchema> = {
       { key: "notes", label: "Notes", type: "textarea" },
     ],
     blank: ({ id }) => ({ id, name: "New vendor", trade: [] }),
-    title: (r) => String(r.name ?? "Unnamed vendor"),
+    title: (r) => String(r.name || "Unnamed vendor"),
   },
 
   /* -------------------------------------------------------- quotations */
@@ -321,7 +321,7 @@ export const SCHEMAS: Record<CollectionKey, CollectionSchema> = {
       id, title: "New quotation", vendorId: state.vendors[0]?.id, scopeItemIds: [],
       receivedAt: now(), lines: [], total: 0, inclusions: [], exclusions: [],
     }),
-    title: (r) => String(r.title ?? "Untitled quotation"),
+    title: (r) => String(r.title || "Untitled quotation"),
   },
 
   /* -------------------------------------------------------------- tasks */
@@ -344,7 +344,7 @@ export const SCHEMAS: Record<CollectionKey, CollectionSchema> = {
       { key: "notes", label: "Notes", type: "textarea" },
     ],
     blank: ({ id, spaceId, me }) => ({ id, title: "New task", owner: me, spaceId, dependsOn: [], status: "todo" }),
-    title: (r) => String(r.title ?? "Untitled task"),
+    title: (r) => String(r.title || "Untitled task"),
   },
 
   /* -------------------------------------------------------------- snags */
@@ -376,7 +376,7 @@ export const SCHEMAS: Record<CollectionKey, CollectionSchema> = {
       id, title: "New snag", spaceId: spaceId ?? state.spaces[0]?.id, category: "flooring",
       severity: "medium", status: "open", raisedBy: me, raisedAt: now(), photoSwatch: "#bdb2a2",
     }),
-    title: (r) => String(r.title ?? "Untitled snag"),
+    title: (r) => String(r.title || "Untitled snag"),
   },
 
   /* -------------------------------------------------------------- notes */
@@ -401,7 +401,7 @@ export const SCHEMAS: Record<CollectionKey, CollectionSchema> = {
       id, title: "New note", body: "", kind: "observation", at: now(), author: me,
       spaceIds: spaceId ? [spaceId] : [], scopeItemIds: [], vendorIds: [], decisionIds: [], taskIds: [],
     }),
-    title: (r) => String(r.title ?? "Untitled note"),
+    title: (r) => String(r.title || "Untitled note"),
   },
 
   /* ----------------------------------------------------------- payments */
@@ -423,7 +423,7 @@ export const SCHEMAS: Record<CollectionKey, CollectionSchema> = {
       id, vendorId: state.vendors[0]?.id, scopeItemIds: [], label: "New payment",
       amount: 0, dueOn: now(), kind: "milestone",
     }),
-    title: (r) => String(r.label ?? "Untitled payment"),
+    title: (r) => String(r.label || "Untitled payment"),
   },
 
   /* ---------------------------------------------------------- documents */
@@ -448,7 +448,7 @@ export const SCHEMAS: Record<CollectionKey, CollectionSchema> = {
       id, title: "New document", kind: "render", spaceIds: spaceId ? [spaceId] : [],
       scopeItemIds: [], addedAt: now(), addedBy: me,
     }),
-    title: (r) => String(r.title ?? "Untitled document"),
+    title: (r) => String(r.title || "Untitled document"),
   },
 
   /* ------------------------------------------------------- site updates */
@@ -465,7 +465,7 @@ export const SCHEMAS: Record<CollectionKey, CollectionSchema> = {
     blank: ({ id, spaceId, me, state }) => ({
       id, spaceId: spaceId ?? state.spaces[0]?.id, at: now(), by: me, body: "", photoSwatch: "#c2b6a6",
     }),
-    title: (r) => String(r.body ?? "").slice(0, 60) || "Empty update",
+    title: (r) => String(r.body || "").slice(0, 60) || "Empty update",
   },
 
   /* ---------------------------------------------------------- scenarios */
@@ -477,7 +477,7 @@ export const SCHEMAS: Record<CollectionKey, CollectionSchema> = {
       { key: "note", label: "Note", type: "textarea" },
     ],
     blank: ({ id }) => ({ id, name: "New scenario", subtitle: "", overrides: {}, categoryMultipliers: {} }),
-    title: (r) => String(r.name ?? "Untitled scenario"),
+    title: (r) => String(r.name || "Untitled scenario"),
   },
 
   /* ------------------------------------------------------------- people */
@@ -497,7 +497,7 @@ export const SCHEMAS: Record<CollectionKey, CollectionSchema> = {
       { key: "avatarTone", label: "Avatar colour", type: "text", hint: "A hex colour." },
     ],
     blank: ({ id }) => ({ id, name: "", role: "designer", avatarTone: "#857b70" }),
-    title: (r) => String(r.name ?? "Unnamed"),
+    title: (r) => String(r.name || "Unnamed"),
   },
 };
 

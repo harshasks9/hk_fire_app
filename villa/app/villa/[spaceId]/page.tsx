@@ -21,6 +21,7 @@ import { ItemSheet } from "@/components/ItemSheet";
 import { DecisionCard, OptionTile } from "@/components/DecisionCard";
 import { Comments } from "@/components/Comments";
 import { FloorPlan } from "@/components/FloorPlan";
+import { AddButton, RowActions, EntityLink, EmptyWithAdd } from "@/components/Entity";
 import { FLOOR_META } from "@/lib/seed/spaces";
 import { catLabel, categoryOptions, buildUpFromCategory } from "@/lib/model/categories";
 
@@ -198,11 +199,11 @@ export default function RoomPage() {
         {tab === "Scope" && <ScopeTab items={items} onOpen={setOpenItem} spaceId={spaceId} />}
         {tab === "Cost" && <CostTab items={items} rollupData={r} />}
         {tab === "Products" && <ProductsTab items={products} onOpen={setOpenItem} />}
-        {tab === "Tasks" && <TasksTab tasks={tasks} />}
+        {tab === "Tasks" && <TasksTab tasks={tasks} spaceId={spaceId} />}
         {tab === "Vendors" && <VendorsTab vendorIds={vendorIds} items={items} />}
-        {tab === "Files" && <FilesTab docs={docs} />}
-        {tab === "Site photos" && <SiteTab updates={updates} notes={notes} />}
-        {tab === "Issues" && <IssuesTab snags={snags} />}
+        {tab === "Files" && <FilesTab docs={docs} spaceId={spaceId} />}
+        {tab === "Site photos" && <SiteTab updates={updates} notes={notes} spaceId={spaceId} />}
+        {tab === "Issues" && <IssuesTab snags={snags} spaceId={spaceId} />}
       </div>
 
       <ItemSheet item={openItem} open={!!openItem} onClose={() => setOpenItem(null)} />
@@ -443,19 +444,7 @@ function ScopeTab({ items, onOpen, spaceId }: { items: ScopeItem[]; onOpen: (i: 
                   </span>
                   <StageChip stage={i.stage} small />
                 </button>
-                <button
-                  aria-label={`Delete ${i.title}`}
-                  title="Delete this scope item"
-                  className="shrink-0 opacity-0 group-hover:opacity-100 focus:opacity-100 transition-opacity text-[11px] px-1.5 py-0.5 rounded hover:bg-rust-soft"
-                  style={{ color: "#8d3a2c" }}
-                  onClick={() => {
-                    if (confirm(`Delete "${i.title}"?\n\nPrefer marking it Not applicable — that keeps the record that it was considered. Deleting removes it and its ideas, options and decision for good.`)) {
-                      dispatch({ type: "remove", on: "items", id: i.id });
-                    }
-                  }}
-                >
-                  ✕
-                </button>
+                <RowActions on="items" id={i.id} />
                 </div>
               ))}
             </div>
@@ -559,13 +548,18 @@ function ProductsTab({ items, onOpen }: { items: ScopeItem[]; onOpen: (i: ScopeI
   );
 }
 
-function TasksTab({ tasks }: { tasks: Task[] }) {
+function TasksTab({ tasks, spaceId }: { tasks: Task[]; spaceId: string }) {
   const { dispatch } = useProject();
-  if (!tasks.length) return <Empty title="No tasks against this room yet." />;
+  if (!tasks.length) {
+    return <EmptyWithAdd on="tasks" prefill={{ spaceId }} title="No tasks against this room yet."
+      hint="Anything that has to happen here, in the order it has to happen. Tasks added here are already attached to this room." />;
+  }
   return (
+    <div>
+    <div className="flex justify-end mb-2"><AddButton on="tasks" prefill={{ spaceId }} label="Add a task" /></div>
     <div className="card divide-y divide-line">
       {tasks.map((t) => (
-        <div key={t.id} className="px-4 py-3 flex items-center gap-3">
+        <div key={t.id} className="px-4 py-3 flex items-center gap-3 group">
           <button
             onClick={() => dispatch({ type: "task/patch", id: t.id, patch: { status: t.status === "done" ? "todo" : "done" } })}
             className="shrink-0 rounded-md border transition-colors"
@@ -584,15 +578,20 @@ function TasksTab({ tasks }: { tasks: Task[] }) {
           </div>
           {t.status === "blocked" && <Chip tone="rust">Blocked</Chip>}
           <span className="text-[11.5px] text-ink-3 tnum shrink-0">{fmtDay(t.finish)}</span>
+          <RowActions on="tasks" id={t.id} />
         </div>
       ))}
+    </div>
     </div>
   );
 }
 
 function VendorsTab({ vendorIds, items }: { vendorIds: string[]; items: ScopeItem[] }) {
   const { state } = useProject();
-  if (!vendorIds.length) return <Empty title="No vendor awarded for this room yet." hint="Vendors appear here once scope is assigned to them." />;
+  if (!vendorIds.length) {
+    return <EmptyWithAdd on="vendors" title="No vendor awarded for this room yet."
+      hint="Vendors appear here once scope in this room is assigned to them — set the vendor on a scope item, or add the vendor first." />;
+  }
   return (
     <div className="space-y-3">
       {vendorIds.map((id) => {
@@ -600,13 +599,18 @@ function VendorsTab({ vendorIds, items }: { vendorIds: string[]; items: ScopeIte
         if (!v) return null;
         const mine = items.filter((i) => i.vendorId === id);
         return (
-          <div key={id} className="card px-4 py-4">
+          <div key={id} className="card px-4 py-4 group">
             <div className="flex items-start justify-between gap-3">
               <div>
-                <div className="text-[15px]" style={{ fontFamily: "var(--font-display)" }}>{v.name}</div>
+                <div className="text-[15px]" style={{ fontFamily: "var(--font-display)" }}>
+                  <EntityLink on="vendors" id={v.id} className="hover:text-clay">{v.name}</EntityLink>
+                </div>
                 <div className="text-[11.5px] text-ink-3 mt-0.5">{v.trade.map((t) => catLabel(state, t)).join(" · ")}</div>
               </div>
-              <span className="tnum text-[13px]">{inr(mine.reduce((a, i) => a + forecastOf(i), 0), { compact: true })}</span>
+              <div className="flex items-center gap-2 shrink-0">
+                <span className="tnum text-[13px]">{inr(mine.reduce((a, i) => a + forecastOf(i), 0), { compact: true })}</span>
+                <RowActions on="vendors" id={v.id} />
+              </div>
             </div>
             {v.notes && <p className="text-[12px] text-ink-3 mt-2 leading-relaxed">{v.notes}</p>}
             <div className="mt-2.5 flex flex-wrap gap-1.5">
@@ -619,35 +623,52 @@ function VendorsTab({ vendorIds, items }: { vendorIds: string[]; items: ScopeIte
   );
 }
 
-function FilesTab({ docs }: { docs: Doc[] }) {
-  if (!docs.length) return <Empty title="No documents filed against this room." hint="Drawings, quotes and warranties appear here automatically when they are tagged to this space." />;
+function FilesTab({ docs, spaceId }: { docs: Doc[]; spaceId: string }) {
+  if (!docs.length) {
+    return <EmptyWithAdd on="docs" prefill={{ spaceIds: [spaceId] }} title="No documents filed against this room."
+      hint="Drawings, quotes and warranties appear here automatically when they are tagged to this space." />;
+  }
   return (
+    <div>
+    <div className="flex justify-end mb-2"><AddButton on="docs" prefill={{ spaceIds: [spaceId] }} label="Add a document" /></div>
     <div className="card divide-y divide-line">
       {docs.map((d) => (
-        <div key={d.id} className="px-4 py-3 flex items-center gap-3">
+        <div key={d.id} className="px-4 py-3 flex items-center gap-3 group">
           <Chip tone="ghost">{d.kind.replace(/-/g, " ")}</Chip>
           <div className="min-w-0 flex-1">
             <div className="text-[13px] truncate">{d.title}</div>
             <div className="text-[11px] text-ink-3">{d.addedBy} · {fmtDay(d.addedAt)}</div>
           </div>
           {d.revision && <span className="text-[11px] text-ink-4 tnum">{d.revision}</span>}
+          <RowActions on="docs" id={d.id} />
         </div>
       ))}
+    </div>
     </div>
   );
 }
 
-function SiteTab({ updates, notes }: { updates: SiteUpdate[]; notes: Note[] }) {
-  if (!updates.length && !notes.length) return <Empty title="No site record for this room yet." hint="Use Site mode on your phone to capture a photo and it files itself here." />;
+function SiteTab({ updates, notes, spaceId }: { updates: SiteUpdate[]; notes: Note[]; spaceId: string }) {
+  if (!updates.length && !notes.length) {
+    return <EmptyWithAdd on="siteUpdates" prefill={{ spaceId }} title="No site record for this room yet."
+      hint="Use Site mode on your phone to capture a photo and it files itself here — or log one now." />;
+  }
   return (
     <div className="space-y-5">
+      <div className="flex justify-end gap-2">
+        <AddButton on="notes" prefill={{ spaceIds: [spaceId] }} label="Add a note" />
+        <AddButton on="siteUpdates" prefill={{ spaceId }} label="Log an update" />
+      </div>
       {updates.length > 0 && (
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {updates.map((u) => (
-            <div key={u.id}>
+            <div key={u.id} className="group">
               <PhotoBlock tone={u.photoSwatch} ratio="4 / 3" label={fmtDay(u.at)} />
               <p className="text-[12.5px] text-ink-2 mt-2 leading-relaxed">{u.body}</p>
-              <div className="text-[11px] text-ink-3 mt-1">{u.by}{u.progressPct !== undefined ? ` · ${u.progressPct}% complete` : ""}</div>
+              <div className="text-[11px] text-ink-3 mt-1 flex items-center justify-between gap-2">
+                <span>{u.by}{u.progressPct !== undefined ? ` · ${u.progressPct}% complete` : ""}</span>
+                <RowActions on="siteUpdates" id={u.id} />
+              </div>
             </div>
           ))}
         </div>
@@ -669,14 +690,18 @@ function SiteTab({ updates, notes }: { updates: SiteUpdate[]; notes: Note[] }) {
   );
 }
 
-function IssuesTab({ snags }: { snags: Snag[] }) {
+function IssuesTab({ snags, spaceId }: { snags: Snag[]; spaceId: string }) {
   const { state, dispatch, me } = useProject();
-  if (!snags.length) return <Empty title="No snags raised in this room." />;
+  if (!snags.length) {
+    return <EmptyWithAdd on="snags" prefill={{ spaceId }} title="No snags raised in this room."
+      hint="A snag is anything built or delivered that is not right yet. Raised here, it is already attached to this room." />;
+  }
   const NEXT: Record<string, string> = { open: "assigned", assigned: "fixed", fixed: "verify", verify: "closed" };
   return (
     <div className="space-y-3">
+      <div className="flex justify-end"><AddButton on="snags" prefill={{ spaceId }} label="Raise a snag" /></div>
       {snags.map((s) => (
-        <div key={s.id} className="card px-4 py-4">
+        <div key={s.id} className="card px-4 py-4 group">
           <div className="flex flex-col sm:flex-row gap-4">
             <div className="sm:w-40 shrink-0 grid grid-cols-2 sm:grid-cols-1 gap-2">
               <PhotoBlock tone={s.photoSwatch} ratio="4 / 3" label="Raised">
@@ -696,6 +721,8 @@ function IssuesTab({ snags }: { snags: Snag[] }) {
                 <Chip tone={s.severity === "critical" || s.severity === "high" ? "rust" : "ochre"}>{s.severity}</Chip>
                 <Chip tone={s.status === "closed" ? "sage" : s.status === "open" ? "rust" : "slate"}>{s.status}</Chip>
                 <span className="text-[11px] text-ink-3">{catLabel(state, s.category as Category)}</span>
+                {s.vendorId && <span className="text-[11px]"><EntityLink on="vendors" id={s.vendorId} /></span>}
+                <span className="ml-auto"><RowActions on="snags" id={s.id} /></span>
               </div>
               <div className="text-[14px]">{s.title}</div>
               {s.description && <p className="text-[12.5px] text-ink-3 mt-1 leading-relaxed">{s.description}</p>}
