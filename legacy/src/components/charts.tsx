@@ -68,6 +68,7 @@ export function AreaChart({
   showAxis = true,
   fill = true,
   summary,
+  valueFormat,
 }: {
   data: number[]
   labels?: string[] // same length; shown on hover + sparse x-axis
@@ -82,6 +83,9 @@ export function AreaChart({
   showAxis?: boolean
   fill?: boolean
   summary?: string
+  /** Overrides currency formatting on the axis and tooltip — for series that are not money
+   *  (index points) or whose magnitude the compact money formatter would round away (per-share cents). */
+  valueFormat?: (v: number) => string
 }) {
   const [ref, width] = useWidth()
   const [hover, setHover] = useState<number | null>(null)
@@ -129,7 +133,7 @@ export function AreaChart({
             <g key={t}>
               <line x1={padL} x2={width - padR} y1={y(t)} y2={y(t)} stroke="var(--m-line)" strokeDasharray="2 4" />
               <text x={padL - 6} y={y(t) + 3} textAnchor="end" fontSize="10" fill="var(--m-ink3)" className="tnum">
-                {fmtAxis(t, currency)}
+                {valueFormat ? valueFormat(t) : fmtAxis(t, currency)}
               </text>
             </g>
           ))}
@@ -164,11 +168,12 @@ export function AreaChart({
           {labels && <div className="text-ink3">{labels[hover]}</div>}
           <div className="tnum font-semibold text-ink">
             {seriesLabel && <span className="mr-1 font-normal text-ink2">{seriesLabel}</span>}
-            {fmtMoney(data[hover], currency, { compact: false })}
+            {valueFormat ? valueFormat(data[hover]) : fmtMoney(data[hover], currency, { compact: false })}
           </div>
           {compare && compare[hover] !== undefined && (
             <div className="tnum text-ink2">
-              {compareLabel ?? 'Compare'} {fmtMoney(compare[hover], currency)}
+              {compareLabel ?? 'Compare'}{' '}
+              {valueFormat ? valueFormat(compare[hover]) : fmtMoney(compare[hover], currency)}
             </div>
           )}
         </div>
