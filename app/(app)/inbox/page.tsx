@@ -1,9 +1,9 @@
 import Link from 'next/link'
 import { Page } from '@/components/shell/AppShell'
 import { PageHeader, EmptyState, Badge } from '@/components/ui'
-import { getActiveContext } from '@/lib/context'
+import { getActiveScope } from '@/lib/context'
 import { listNotes } from '@/lib/queries'
-import { NoteKindIcon, EntityIcon } from '@/components/entities'
+import { NoteKindIcon, EntityIcon, ContextBadge } from '@/components/entities'
 import { relativeTime } from '@/lib/util'
 import { InboxActions } from '@/components/notes/InboxActions'
 import { Sparkles } from 'lucide-react'
@@ -13,8 +13,8 @@ export const dynamic = 'force-dynamic'
 const SOURCE_LABEL: Record<string, string> = { 'quick-capture': 'Quick capture', voice: 'Voice note', share: 'Shared link', upload: 'Upload', email: 'Email', transcript: 'Meeting transcript', recording: 'Meeting recording', 'recording:auto': 'Meeting recording', api: 'API capture', seed: 'Sample' }
 
 export default async function InboxPage() {
-  const ctx = await getActiveContext()
-  const items = await listNotes(ctx.id, { inbox: true, limit: 80 })
+  const scope = await getActiveScope()
+  const items = await listNotes(scope.ids, { inbox: true, limit: 80 })
   return (
     <Page>
       <PageHeader title="Inbox" subtitle="Everything you capture lands here and is filed automatically. Nothing to triage — this is a record of what AI did." actions={<InboxActions />} />
@@ -29,6 +29,7 @@ export default async function InboxPage() {
                 <div className="min-w-0 flex-1">
                   <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
                     <Link href={`/notes/${n.id}`} className="text-[14.5px] font-medium hover:text-accent">{n.title || (n.preview ? n.preview.slice(0, 80) : 'Untitled')}</Link>
+                    {scope.all && scope.nameOf(n.contextId) ? <ContextBadge name={scope.nameOf(n.contextId)!} /> : null}
                     <span className="text-[12px] text-fg-3">{SOURCE_LABEL[n.source] ?? n.source} · {relativeTime(n.createdAt)}</span>
                     {n.status === 'inbox' || n.status === 'processing' ? <Badge tone="accent">{n.status === 'processing' ? 'AI processing…' : 'queued'}</Badge> : null}
                   </div>

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { Page } from '@/components/shell/AppShell'
 import { PageHeader, EmptyState } from '@/components/ui'
-import { getActiveContext } from '@/lib/context'
+import { getActiveScope } from '@/lib/context'
 import { listTags, untaggedNoteIds } from '@/lib/tags'
 import { TagBackfill } from '@/components/notes/TagBackfill'
 import { TagCloud } from '@/components/tags/TagCloud'
@@ -10,9 +10,10 @@ import { Share2 } from 'lucide-react'
 export const dynamic = 'force-dynamic'
 
 export default async function TagsPage() {
-  const ctx = await getActiveContext()
-  const tags = await listTags([ctx.id], { limit: 400 })
-  const { remaining } = await untaggedNoteIds([ctx.id], 1)
+  const scope = await getActiveScope()
+  const ctx = { name: scope.label }
+  const tags = await listTags(scope.ids, { limit: 400 })
+  const { remaining } = await untaggedNoteIds(scope.ids, 1)
   return (
     <Page>
       <PageHeader

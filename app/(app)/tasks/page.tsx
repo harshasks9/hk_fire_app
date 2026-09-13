@@ -1,6 +1,6 @@
 import { Page } from '@/components/shell/AppShell'
 import { PageHeader, EmptyState, LinkTabs } from '@/components/ui'
-import { getActiveContext } from '@/lib/context'
+import { getActiveScope } from '@/lib/context'
 import { listTasks, taskCounts, type TaskView } from '@/lib/queries'
 import { TaskRow } from '@/components/entities'
 import { NewTask } from '@/components/notes/NewTask'
@@ -9,7 +9,8 @@ export const dynamic = 'force-dynamic'
 
 export default async function TasksPage({ searchParams }: { searchParams: Promise<{ view?: string; highlight?: string }> }) {
   const { view = 'all', highlight } = await searchParams
-  const ctx = await getActiveContext()
+  const scope = await getActiveScope()
+  const ctx = { id: scope.ids }
   const v = (['today', 'week', 'overdue', 'waiting', 'delegated', 'completed', 'all'].includes(view) ? view : 'all') as TaskView
   const [tasks, counts] = await Promise.all([listTasks(ctx.id, v), taskCounts(ctx.id)])
   const byEntity = new Map<string, typeof tasks>()
@@ -19,7 +20,7 @@ export default async function TasksPage({ searchParams }: { searchParams: Promis
   }
   return (
     <Page>
-      <PageHeader title="Tasks" subtitle="Extracted from notes and meetings automatically. Each one stays linked to its source." actions={<NewTask />}>
+      <PageHeader title="Tasks" subtitle={`Extracted from notes and meetings automatically, or added by hand${scope.all ? ' · every context' : ''}. Open a task for details, files and a public link.`} actions={<NewTask />}>
         <LinkTabs active={v} tabs={[
           { id: 'today', label: 'Today', href: '/tasks?view=today', count: counts.today },
           { id: 'week', label: 'This week', href: '/tasks?view=week', count: counts.week },
@@ -36,7 +37,7 @@ export default async function TasksPage({ searchParams }: { searchParams: Promis
         [...byEntity.entries()].map(([name, list]) => (
           <section key={name} className="mb-6">
             <h2 className="mb-1 text-[11.5px] font-semibold uppercase tracking-[0.06em] text-fg-3">{name} <span className="font-normal text-fg-3">{list.length}</span></h2>
-            {list.map((t) => <TaskRow key={t.id} task={t} entityName={t.entityName} sourceTitle={t.sourceTitle} showEntity={false} highlight={highlight === t.id} />)}
+            {list.map((t) => <TaskRow key={t.id} task={t} entityName={t.entityName} sourceTitle={t.sourceTitle} showEntity={false} highlight={highlight === t.id} contextName={scope.all ? scope.nameOf(t.contextId) : undefined} />)}
           </section>
         ))
       )}

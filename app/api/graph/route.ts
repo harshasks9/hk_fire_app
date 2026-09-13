@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { apiError } from '@/lib/api'
-import { getActiveContext, getContexts } from '@/lib/context'
+import { getActiveScope } from '@/lib/context'
 import { buildGraph, GRAPH_TYPES, type GraphNodeType } from '@/lib/graph'
 export const dynamic = 'force-dynamic'
 
@@ -11,7 +11,8 @@ export const dynamic = 'force-dynamic'
 export async function GET(req: NextRequest) {
   try {
     const p = req.nextUrl.searchParams
-    const ids = p.get('all') === '1' ? (await getContexts()).map((c) => c.id) : [(await getActiveContext()).id]
+    const scope = await getActiveScope()
+    const ids = p.get('all') === '1' ? scope.contexts.map((c) => c.id) : scope.ids
     const types = (p.get('types') ?? '').split(',').map((s) => s.trim()).filter((s): s is GraphNodeType => (GRAPH_TYPES as string[]).includes(s))
     const f = p.get('focus')
     let focus: { type: GraphNodeType; id: string } | null = null

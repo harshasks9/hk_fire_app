@@ -1,5 +1,5 @@
 import { Suspense } from 'react'
-import { getActiveContext } from '@/lib/context'
+import { getActiveScope } from '@/lib/context'
 import { aiStatus } from '@/lib/ai/provider'
 import { AskClient } from '@/components/ask/AskClient'
 export const dynamic = 'force-dynamic'
@@ -9,11 +9,12 @@ const EXAMPLES: Record<string, string[]> = {
   default: ['What did I decide recently?', 'What is still waiting on someone else?', 'What changed this month?', 'What have I written about most?'],
 }
 export default async function AskPage() {
-  const ctx = await getActiveContext()
+  const scope = await getActiveScope()
+  const ctx = { name: scope.label, kind: scope.all ? 'default' : scope.active.kind }
   const ai = aiStatus()
   return (
     <Suspense>
-      <AskClient contextName={ctx.name} isLLM={ai.isLLM} examples={EXAMPLES[ctx.kind] ?? EXAMPLES.default!} />
+      <AskClient contextName={ctx.name} isLLM={ai.isLLM} examples={EXAMPLES[ctx.kind] ?? EXAMPLES.default!} allByDefault={scope.all} />
     </Suspense>
   )
 }

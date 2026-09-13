@@ -4,6 +4,7 @@
 */
 import { and, asc, desc, eq, gte, inArray, isNull, lt, lte } from 'drizzle-orm'
 import { getDb, schema } from './db'
+import { inCtx } from './queries'
 import { getProvider } from './ai/provider'
 import { withNotebookAi } from './session'
 import { uid, formatDate, startOfDay, addDays } from './util'
@@ -44,21 +45,22 @@ export interface WeekReview {
   narrative: { text: string; provider: string | null; updatedAt: Date } | null
 }
 
-export async function buildWeekReview(contextId: string, weekStart: Date): Promise<WeekReview> {
+export async function buildWeekReview(contextIds: string | string[], weekStart: Date, reviewKey?: string): Promise<WeekReview> {
+  const contextId = reviewKey ?? (typeof contextIds === 'string' ? contextIds : contextIds[0] ?? '')
   const db = await getDb()
   const from = weekStart
   const to = addDays(weekStart, 7)
   const inWeek = (col: import('drizzle-orm').Column) => and(gte(col, from), lt(col, to))
   const [notes, meetings, revisions, changes, tasksDone, tasksAdded, overdue, entities, loops, narr] = await Promise.all([
-    db.select({ id: schema.notes.id, title: schema.notes.title, kind: schema.notes.kind, createdAt: schema.notes.createdAt, wordCount: schema.notes.wordCount }).from(schema.notes).where(and(eq(schema.notes.contextId, contextId), isNull(schema.notes.deletedAt), inWeek(schema.notes.createdAt))).orderBy(asc(schema.notes.createdAt)),
-    db.select({ id: schema.meetings.id, title: schema.meetings.title, startsAt: schema.meetings.startsAt, status: schema.meetings.status }).from(schema.meetings).where(and(eq(schema.meetings.contextId, contextId), inWeek(schema.meetings.startsAt))).orderBy(asc(schema.meetings.startsAt)),
-    db.select({ id: schema.decisionRevisions.id, decisionId: schema.decisions.id, title: schema.decisions.title, statement: schema.decisionRevisions.statement, kind: schema.decisionRevisions.kind, occurredAt: schema.decisionRevisions.occurredAt }).from(schema.decisionRevisions).innerJoin(schema.decisions, eq(schema.decisions.id, schema.decisionRevisions.decisionId)).where(and(eq(schema.decisions.contextId, contextId), inWeek(schema.decisionRevisions.occurredAt))).orderBy(asc(schema.decisionRevisions.occurredAt)),
-    db.select({ id: schema.changes.id, description: schema.changes.description, detectedAt: schema.changes.detectedAt, entityName: schema.entities.name }).from(schema.changes).leftJoin(schema.entities, eq(schema.entities.id, schema.changes.entityId)).where(and(eq(schema.changes.contextId, contextId), inWeek(schema.changes.detectedAt))).orderBy(asc(schema.changes.detectedAt)),
-    db.select({ id: schema.tasks.id, title: schema.tasks.title, owner: schema.tasks.owner, completedAt: schema.tasks.completedAt }).from(schema.tasks).where(and(eq(schema.tasks.contextId, contextId), eq(schema.tasks.status, 'done'), inWeek(schema.tasks.completedAt))),
-    db.select({ id: schema.tasks.id, title: schema.tasks.title, owner: schema.tasks.owner, status: schema.tasks.status }).from(schema.tasks).where(and(eq(schema.tasks.contextId, contextId), inWeek(schema.tasks.createdAt))),
-    db.select({ id: schema.tasks.id, title: schema.tasks.title, owner: schema.tasks.owner, dueAt: schema.tasks.dueAt }).from(schema.tasks).where(and(eq(schema.tasks.contextId, contextId), inArray(schema.tasks.status, ['open', 'waiting', 'delegated']), lte(schema.tasks.dueAt, new Date(Math.min(Date.now(), to.getTime()))))).orderBy(asc(schema.tasks.dueAt)).limit(30),
-    db.select({ id: schema.entities.id, name: schema.entities.name, type: schema.entities.type }).from(schema.entities).where(and(eq(schema.entities.contextId, contextId), inArray(schema.entities.type, ['person', 'company']), inWeek(schema.entities.createdAt))),
-    db.select({ id: schema.commitments.id, text: schema.commitments.text, kind: schema.commitments.kind, createdAt: schema.commitments.detectedAt, noteId: schema.commitments.sourceNoteId }).from(schema.commitments).where(and(eq(schema.commitments.contextId, contextId), eq(schema.commitments.status, 'open'), lt(schema.commitments.detectedAt, addDays(to, -7)))).orderBy(asc(schema.commitments.detectedAt)).limit(20),
+    db.select({ id: schema.notes.id, title: schema.notes.title, kind: schema.notes.kind, createdAt: schema.notes.createdAt, wordCount: schema.notes.wordCount }).from(schema.notes).where(and(inCtx(schema.notes.contextId, contextIds), isNull(schema.notes.deletedAt), inWeek(schema.notes.createdAt))).orderBy(asc(schema.notes.createdAt)),
+    db.select({ id: schema.meetings.id, title: schema.meetings.title, startsAt: schema.meetings.startsAt, status: schema.meetings.status }).from(schema.meetings).where(and(inCtx(schema.meetings.contextId, contextIds), inWeek(schema.meetings.startsAt))).orderBy(asc(schema.meetings.startsAt)),
+    db.select({ id: schema.decisionRevisions.id, decisionId: schema.decisions.id, title: schema.decisions.title, statement: schema.decisionRevisions.statement, kind: schema.decisionRevisions.kind, occurredAt: schema.decisionRevisions.occurredAt }).from(schema.decisionRevisions).innerJoin(schema.decisions, eq(schema.decisions.id, schema.decisionRevisions.decisionId)).where(and(inCtx(schema.decisions.contextId, contextIds), inWeek(schema.decisionRevisions.occurredAt))).orderBy(asc(schema.decisionRevisions.occurredAt)),
+    db.select({ id: schema.changes.id, description: schema.changes.description, detectedAt: schema.changes.detectedAt, entityName: schema.entities.name }).from(schema.changes).leftJoin(schema.entities, eq(schema.entities.id, schema.changes.entityId)).where(and(inCtx(schema.changes.contextId, contextIds), inWeek(schema.changes.detectedAt))).orderBy(asc(schema.changes.detectedAt)),
+    db.select({ id: schema.tasks.id, title: schema.tasks.title, owner: schema.tasks.owner, completedAt: schema.tasks.completedAt }).from(schema.tasks).where(and(inCtx(schema.tasks.contextId, contextIds), eq(schema.tasks.status, 'done'), inWeek(schema.tasks.completedAt))),
+    db.select({ id: schema.tasks.id, title: schema.tasks.title, owner: schema.tasks.owner, status: schema.tasks.status }).from(schema.tasks).where(and(inCtx(schema.tasks.contextId, contextIds), inWeek(schema.tasks.createdAt))),
+    db.select({ id: schema.tasks.id, title: schema.tasks.title, owner: schema.tasks.owner, dueAt: schema.tasks.dueAt }).from(schema.tasks).where(and(inCtx(schema.tasks.contextId, contextIds), inArray(schema.tasks.status, ['open', 'waiting', 'delegated']), lte(schema.tasks.dueAt, new Date(Math.min(Date.now(), to.getTime()))))).orderBy(asc(schema.tasks.dueAt)).limit(30),
+    db.select({ id: schema.entities.id, name: schema.entities.name, type: schema.entities.type }).from(schema.entities).where(and(inCtx(schema.entities.contextId, contextIds), inArray(schema.entities.type, ['person', 'company']), inWeek(schema.entities.createdAt))),
+    db.select({ id: schema.commitments.id, text: schema.commitments.text, kind: schema.commitments.kind, createdAt: schema.commitments.detectedAt, noteId: schema.commitments.sourceNoteId }).from(schema.commitments).where(and(inCtx(schema.commitments.contextId, contextIds), eq(schema.commitments.status, 'open'), lt(schema.commitments.detectedAt, addDays(to, -7)))).orderBy(asc(schema.commitments.detectedAt)).limit(20),
     db.select().from(schema.weeklyReviews).where(and(eq(schema.weeklyReviews.contextId, contextId), eq(schema.weeklyReviews.weekStart, weekKey(weekStart)))),
   ])
   const n = narr[0]
@@ -102,12 +104,12 @@ export function localNarrative(r: WeekReview, userName: string): string {
   return parts.join(' ')
 }
 
-export async function generateNarrative(contextId: string, weekStart: Date, userName: string): Promise<{ text: string; provider: string }> {
-  return withNotebookAi(() => generateNarrativeInner(contextId, weekStart, userName))
+export async function generateNarrative(contextId: string, weekStart: Date, userName: string, contextIds?: string[]): Promise<{ text: string; provider: string }> {
+  return withNotebookAi(() => generateNarrativeInner(contextId, weekStart, userName, contextIds))
 }
 
-async function generateNarrativeInner(contextId: string, weekStart: Date, userName: string): Promise<{ text: string; provider: string }> {
-  const r = await buildWeekReview(contextId, weekStart)
+async function generateNarrativeInner(contextId: string, weekStart: Date, userName: string, contextIds?: string[]): Promise<{ text: string; provider: string }> {
+  const r = await buildWeekReview(contextIds ?? contextId, weekStart, contextId)
   const provider = getProvider()
   let text: string | null = null
   let used = provider.name

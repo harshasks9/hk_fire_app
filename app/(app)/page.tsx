@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { Page } from '@/components/shell/AppShell'
 import { Section, EmptyState } from '@/components/ui'
-import { getActiveContext } from '@/lib/context'
+import { getActiveScope } from '@/lib/context'
 import { getHomeData } from '@/lib/queries'
 import { briefLines } from '@/lib/briefing'
 import { greeting, formatTime, isToday, formatDate } from '@/lib/util'
@@ -16,7 +16,9 @@ import { authEnabled } from '@/lib/auth'
 export const dynamic = 'force-dynamic'
 
 export default async function Home() {
-  const [ctx, session] = await Promise.all([getActiveContext(), getSession()])
+  const [scope, session] = await Promise.all([getActiveScope(), getSession()])
+  const ctx = { id: scope.ids, name: scope.label }
+  const nameOf = (id: string) => (scope.all ? scope.nameOf(id) : undefined)
   const userName = session?.user.name?.split(/\s+/)[0] || process.env.USER_NAME || 'there'
   const h = await getHomeData(ctx.id)
   const fresh = Boolean(session) && !session!.notebook.settings.sampleData && h.noteCount < 5
@@ -37,7 +39,7 @@ export default async function Home() {
         fresh ? null : <EmptyState title="Nothing here yet" description="Capture anything — a thought, a link, a voice note, a meeting. Organization is automatic." action={<Link href="/notes" className="text-[13.5px] font-medium text-accent">Start writing →</Link>} />
       ) : (
         <>
-          <div className="mb-8"><Briefing initialLines={brief.lines} /></div>
+          <div className="mb-8"><Briefing initialLines={brief.lines} scopeAll={scope.all} /></div>
 
           <div className="grid gap-x-10 md:grid-cols-[1.4fr_1fr]">
             <div className="min-w-0">
@@ -45,7 +47,7 @@ export default async function Home() {
                 <Section title={today.length ? 'Today' : 'Coming up'} action={<Link href="/meetings" className="rounded-md text-[12.5px] text-fg-3 hover:text-fg pointer-coarse:px-2 pointer-coarse:py-2">All meetings</Link>}>
                   {(today.length ? today : h.meetings.slice(0, 3)).map((m) => (
                     <div key={m.id} className="flex items-center gap-2">
-                      <div className="min-w-0 flex-1"><MeetingRow m={m} /></div>
+                      <div className="min-w-0 flex-1"><MeetingRow m={m} contextName={nameOf(m.contextId)} /></div>
                       <Link href={`/meetings/${m.id}`} className="hidden shrink-0 items-center gap-1 rounded-md border border-border px-2 py-1 text-[12px] text-accent hover:bg-accent-soft sm:inline-flex">Prep <ArrowRight className="h-3 w-3" /></Link>
                     </div>
                   ))}
@@ -54,16 +56,16 @@ export default async function Home() {
 
               {h.overdue.length || h.dueSoon.length ? (
                 <Section title="Actions" count={h.overdue.length + h.dueSoon.length} action={<Link href="/tasks" className="text-[12.5px] text-fg-3 hover:text-fg">All tasks</Link>}>
-                  {[...h.overdue, ...h.dueSoon].slice(0, 6).map((t) => <TaskRow key={t.id} task={t} entityName={t.entityName} sourceTitle={t.sourceTitle} />)}
+                  {[...h.overdue, ...h.dueSoon].slice(0, 6).map((t) => <TaskRow key={t.id} task={t} entityName={t.entityName} sourceTitle={t.sourceTitle} contextName={nameOf(t.contextId)} />)}
                 </Section>
               ) : null}
 
               <Section title="Open loops" hint="commitments not yet resolved" action={<Link href="/loops" className="text-[12.5px] text-fg-3 hover:text-fg">All open loops</Link>}>
-                {h.loops.length ? h.loops.slice(0, 5).map((l) => <LoopRow key={l.id} loop={l} />) : <p className="text-[13.5px] text-fg-3">Nothing unresolved. Rare — enjoy it.</p>}
+                {h.loops.length ? h.loops.slice(0, 5).map((l) => <LoopRow key={l.id} loop={l} contextName={nameOf(l.contextId)} />) : <p className="text-[13.5px] text-fg-3">Nothing unresolved. Rare — enjoy it.</p>}
               </Section>
 
               <Section title="Continue where you left off" action={<Link href="/notes" className="text-[12.5px] text-fg-3 hover:text-fg">All notes</Link>}>
-                {h.recent.map((n) => <NoteRow key={n.id} note={n} />)}
+                {h.recent.map((n) => <NoteRow key={n.id} note={n} contextName={nameOf(n.contextId)} />)}
               </Section>
             </div>
 

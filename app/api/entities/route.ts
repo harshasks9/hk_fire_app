@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { and, eq } from 'drizzle-orm'
-import { getActiveContext, resolveContext } from '@/lib/context'
+import { getActiveScope, resolveContext } from '@/lib/context'
 import { searchEntitiesByName } from '@/lib/queries'
 import { getDb, schema } from '@/lib/db'
 import { slugify, uid } from '@/lib/util'
@@ -8,7 +8,7 @@ import { apiError } from '@/lib/api'
 export const dynamic = 'force-dynamic'
 
 export async function GET(req: NextRequest) {
-  const ctx = await getActiveContext()
+  const ctx = { id: (await getActiveScope()).ids }
   const q = req.nextUrl.searchParams.get('q') ?? ''
   return NextResponse.json(await searchEntitiesByName(ctx.id, q, 8))
 }

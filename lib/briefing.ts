@@ -12,8 +12,8 @@ export interface Brief { lines: string[]; narrative: string | null; generatedAt:
 /** How long a narrative stays valid when the facts behind it have not changed. */
 const NARRATIVE_TTL_MS = 6 * 60 * 60_000
 
-export async function dailyBrief(contextId: string, userName = 'Harsha'): Promise<Brief> {
-  return withNotebookAi(() => dailyBriefInner(contextId, userName))
+export async function dailyBrief(contextIds: string | string[], cacheKey: string, userName = 'Harsha'): Promise<Brief> {
+  return withNotebookAi(() => dailyBriefInner(contextIds, cacheKey, userName))
 }
 
 /** The factual lines only — no model call, so pages can render them instantly. */
@@ -33,13 +33,13 @@ export function briefLines(h: Awaited<ReturnType<typeof getHomeData>>): string[]
   return lines
 }
 
-async function dailyBriefInner(contextId: string, userName: string): Promise<Brief> {
-  const h = await getHomeData(contextId)
+async function dailyBriefInner(contextIds: string | string[], cacheKey: string, userName: string): Promise<Brief> {
+  const h = await getHomeData(contextIds)
   const lines = briefLines(h)
   const provider = getProvider()
   let narrative: string | null = null
   // The narrative is cached per context while the facts behind it stay the same.
-  const key = `brief:${contextId}`
+  const key = `brief:${cacheKey}`
   const fingerprint = sha256(lines.join('|') + provider.name).slice(0, 16)
   const db = await getDb()
   const cached = (await db.select().from(schema.appMeta).where(eq(schema.appMeta.key, key)))[0]

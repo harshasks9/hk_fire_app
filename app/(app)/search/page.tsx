@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { Page } from '@/components/shell/AppShell'
 import { PageHeader, EmptyState } from '@/components/ui'
-import { getActiveContext, getContexts } from '@/lib/context'
+import { getActiveScope } from '@/lib/context'
 import { search, highlight } from '@/lib/search'
 import { SearchBox } from '@/components/ask/SearchBox'
 import { EntityIcon, NoteKindIcon } from '@/components/entities'
@@ -10,13 +10,14 @@ import { Sparkles, ArrowRight, CheckSquare, GitBranch, FlaskConical, Repeat, Tag
 export const dynamic = 'force-dynamic'
 export default async function SearchPage({ searchParams }: { searchParams: Promise<{ q?: string; all?: string }> }) {
   const { q = '', all } = await searchParams
-  const ctx = await getActiveContext()
-  const ids = all === '1' ? (await getContexts()).map((c) => c.id) : [ctx.id]
+  const scope = await getActiveScope()
+  const ids = all === '1' ? scope.contexts.map((c) => c.id) : scope.ids
+  const ctx = { name: scope.label }
   const result = q ? await search(ids, q, { limit: 10 }) : null
   return (
     <Page>
       <PageHeader title="Search" subtitle="Exact keywords, meaning, people, companies, topics and questions — one box." />
-      <SearchBox initial={q} all={all === '1'} contextName={ctx.name} />
+      <SearchBox initial={q} all={all === '1' || scope.all} contextName={ctx.name} />
       {result && q ? (
         <div className="mt-6">
           {result.isQuestion ? (

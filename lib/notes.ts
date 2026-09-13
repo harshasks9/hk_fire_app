@@ -75,11 +75,13 @@ export async function softDeleteNote(id: string) {
   await deleteDerived(id)
 }
 
-export async function addAttachment(noteId: string, file: { name: string; mime: string; bytes: Buffer; durationSeconds?: number }): Promise<string> {
+/** Store a file against a note (string id) or a task ({ taskId }). */
+export async function addAttachment(owner: string | { noteId?: string; taskId?: string }, file: { name: string; mime: string; bytes: Buffer; durationSeconds?: number }): Promise<string> {
   const db = await getDb()
   const id = uid('att')
+  const o = typeof owner === 'string' ? { noteId: owner } : owner
   const data = file.bytes.length <= 6 * 1024 * 1024 ? file.bytes.toString('base64') : null
-  await db.insert(schema.attachments).values({ id, noteId, name: file.name, mime: file.mime, size: file.bytes.length, data, durationSeconds: file.durationSeconds })
+  await db.insert(schema.attachments).values({ id, noteId: o.noteId ?? null, taskId: o.taskId ?? null, name: file.name, mime: file.mime, size: file.bytes.length, data, durationSeconds: file.durationSeconds })
   return id
 }
 

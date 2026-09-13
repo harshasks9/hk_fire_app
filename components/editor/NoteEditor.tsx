@@ -25,6 +25,8 @@ import { TemplatePicker } from '@/components/notes/TemplatePicker'
 
 export interface NoteEditorProps {
   noteId: string
+  /** What the editor saves into: a note (default) or a task's details. */
+  target?: 'note' | 'task'
   initialTitle: string
   initialContent: unknown
   highlight?: string
@@ -38,7 +40,8 @@ export interface NoteEditorProps {
 
 type AiResult = { mode: RewriteMode; text: string; provider: string; from: number; to: number; top: number; left: number }
 
-export function NoteEditor({ noteId, initialTitle, initialContent, highlight, readOnly, onSaved, placeholder, meta, summary }: NoteEditorProps) {
+export function NoteEditor({ noteId, target = 'note', initialTitle, initialContent, highlight, readOnly, onSaved, placeholder, meta, summary }: NoteEditorProps) {
+  const isTask = target === 'task'
   const router = useRouter()
   const toast = useToast()
   const [title, setTitle] = React.useState(initialTitle)
@@ -65,27 +68,28 @@ export function NoteEditor({ noteId, initialTitle, initialContent, highlight, re
       setSavedAt(new Date())
       setSaveState('offline')
     }
-    if (typeof navigator !== 'undefined' && !navigator.onLine) { await keepLocally(); return }
+    if (typeof navigator !== 'undefined' && !navigator.onLine && !isTask) { await keepLocally(); return }
     try {
-      await api(`/api/notes/${noteId}`, { method: 'PATCH', json: { ...patch, process } })
+      if (isTask) await api(`/api/tasks/${noteId}`, { method: 'PATCH', json: { ...(patch.title !== undefined ? { title: patch.title } : {}), ...(patch.contentJson !== undefined ? { details: patch.contentJson } : {}) } })
+      else await api(`/api/notes/${noteId}`, { method: 'PATCH', json: { ...patch, process } })
       const at = new Date()
       setSavedAt(at)
       setSaveState('saved')
       onSaved?.(at)
       if (process) setTimeout(() => router.refresh(), 2500)
     } catch (e) {
-      if (isNetworkError(e)) { await keepLocally(); return }
+      if (isNetworkError(e) && !isTask) { await keepLocally(); return }
       setSaveState('idle')
       toast.push({ text: `Save failed: ${String(e)}`, tone: 'danger' })
     }
-  }, [noteId, onSaved, router, toast])
+  }, [noteId, isTask, onSaved, router, toast])
 
   const scheduleSave = React.useCallback((editor: Editor) => {
     window.clearTimeout(saveTimer.current)
     window.clearTimeout(processTimer.current)
     saveTimer.current = window.setTimeout(() => persist({ title: titleValue.current, contentJson: editor.getJSON() }), 700)
-    processTimer.current = window.setTimeout(() => persist({ title: titleValue.current, contentJson: editor.getJSON() }, true), 4000)
-  }, [persist])
+    if (!isTask) processTimer.current = window.setTimeout(() => persist({ title: titleValue.current, contentJson: editor.getJSON() }, true), 4000)
+  }, [persist, isTask])
 
   const runInlineAi = React.useCallback(async (mode: RewriteMode, editor: Editor, opts: { question?: string; whole?: boolean } = {}) => {
     const { from, to } = editor.state.selection
@@ -158,7 +162,7 @@ export function NoteEditor({ noteId, initialTitle, initialContent, highlight, re
 
   // An edit made offline that has not synced yet is newer than what the server rendered: show it.
   React.useEffect(() => {
-    if (!editor || readOnly) return
+    if (!editor || readOnly || isTask) return
     let alive = true
     pendingPatchFor(noteId).then((p) => {
       if (!alive || !p) return
@@ -175,13 +179,14 @@ export function NoteEditor({ noteId, initialTitle, initialContent, highlight, re
   async function uploadFile(file: File) {
     if (!editorRef.current) return
     const fd = new FormData()
-    fd.set('noteId', noteId)
+    fd.set(isTask ? 'taskId' : 'noteId', noteId)
     fd.set('file', file)
     try {
       const res = await fetch('/api/upload', { method: 'POST', body: fd })
       if (!res.ok) throw new Error((await res.json()).error ?? 'Upload failed')
       const j = (await res.json()) as { url: string; name: string; mime: string }
       if (j.mime.startsWith('image/')) editorRef.current.chain().focus().setImage({ src: j.url, alt: j.name }).run()
+      else if (isTask && (j.mime.startsWith('audio/') || j.mime.startsWith('video/'))) { /* players render in the attachments list below the details */ }
       else editorRef.current.chain().focus().insertContent(`<p><a href="${j.url}" target="_blank">📎 ${j.name}</a></p>`).run()
       router.refresh()
     } catch (e) {
@@ -232,7 +237,7 @@ export function NoteEditor({ noteId, initialTitle, initialContent, highlight, re
     window.clearTimeout(saveTimer.current)
     saveTimer.current = window.setTimeout(() => persist({ title: v, contentJson: editorRef.current?.getJSON() }, false), 600)
     window.clearTimeout(processTimer.current)
-    processTimer.current = window.setTimeout(() => persist({ title: v, contentJson: editorRef.current?.getJSON() }, true), 4000)
+    if (!isTask) processTimer.current = window.setTimeout(() => persist({ title: v, contentJson: editorRef.current?.getJSON() }, true), 4000)
   }
 
   const applyAi = (how: 'replace' | 'insert') => {
