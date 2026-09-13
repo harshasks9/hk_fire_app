@@ -15,6 +15,7 @@ import { ImportSection } from '@/components/settings/ImportSection'
 import { SharingSection } from '@/components/settings/SharingSection'
 import { ContextsSection } from '@/components/settings/ContextsSection'
 import { MembersSection } from '@/components/settings/MembersSection'
+import { DangerZone } from '@/components/settings/DangerZone'
 import { listMembers } from '@/lib/members'
 import { emailConfigured } from '@/lib/email'
 import { getDb, schema } from '@/lib/db'
@@ -66,6 +67,9 @@ export default async function SettingsPage() {
           <h2 className="mb-3 text-[13px] font-semibold uppercase tracking-[0.06em] text-fg-2">Trash</h2>
           <p className="text-[13.5px] text-fg-2">Deleted notes are kept for 30 days. <Link href="/trash" className="text-accent underline-offset-2 hover:underline">Open Trash</Link></p>
         </section>
+      </div>
+      <div className="mt-10">
+        <DangerZone canManage={canEdit} />
       </div>
       <div className="mt-10">
         <ContextsSection contexts={contexts.map((c) => ({ id: c.id, name: c.name, slug: c.slug, kind: c.kind, description: c.description, noteCount: noteCounts.get(c.id) ?? 0 }))} canEdit={canEdit} />

@@ -178,6 +178,8 @@ function describe(e: EventVM) {
     case 'user.unverify': return `marked ${t} as unverified`
     case 'user.signout-all': return `signed ${t} out everywhere`
     case 'user.delete-self': return `deleted their own account`
+    case 'notebook.wipe': return `deleted everything in ${t} (${(m as { notes?: number }).notes ?? 0} notes)`
+    case 'notebook.wipe-range': return `deleted a date range in ${t} (${(m as { notes?: number }).notes ?? 0} notes)`
     case 'invite.revoke': return `revoked an invitation${m.email ? ` for ${m.email}` : ''}`
     case 'platform.settings': return `changed platform settings (${((m as { keys?: string[] }).keys ?? []).join(', ')})`
     default: return `${e.action} ${t}`
@@ -235,6 +237,10 @@ function NotebookDetail({ row, currentUserId, busy, run, onReveal }: { row: Note
           <div className="flex flex-wrap items-center gap-2">
             <Button size="sm" variant="ghost" disabled={primary} loading={busy === `nbstatus:${nb.id}`} onClick={() => run(`nbstatus:${nb.id}`, () => api(`/api/admin/notebooks/${nb.id}`, { method: 'PATCH', json: { status: nb.status === 'active' ? 'disabled' : 'active' } }))}><Power className="h-3.5 w-3.5" /> {nb.status === 'active' ? 'Disable notebook' : 'Enable notebook'}</Button>
             <span className="text-[12px] text-fg-3">Disabled notebooks keep their data but nobody can sign in or capture into them.</span>
+          </div>
+          <div className="mt-3 flex flex-wrap items-center gap-2 border-t border-border pt-3">
+            <Button size="sm" variant="ghost" loading={busy === `wipe:${nb.id}`} onClick={() => { if (confirm(`Delete every note, meeting, person, number and decision in “${nb.name}”? The notebook, its contexts and members stay. This cannot be undone.`)) run(`wipe:${nb.id}`, async () => { const r = await api<{ notes: number; meetings: number; entities: number }>(`/api/admin/notebooks/${nb.id}/wipe`, { method: 'POST', json: { mode: 'all' } }); onReveal({ title: `Emptied “${nb.name}”`, lines: [{ label: 'Removed', value: `${r.notes} notes, ${r.meetings} meetings, ${r.entities} people/companies/topics` }] }) }) }}><Trash2 className="h-3.5 w-3.5" /> Empty notebook…</Button>
+            <span className="text-[12px] text-fg-3">Removes all content and keeps the notebook usable.</span>
           </div>
           {!primary ? (
             <div className="mt-3 border-t border-border pt-3">
