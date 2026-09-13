@@ -8,9 +8,11 @@ import { eq } from 'drizzle-orm'
 import { getDb, schema } from './db'
 import { isSeeded, bootstrapEmpty, DEFAULT_NOTEBOOK } from './seed/run'
 import { removeSampleData } from './seed/remove'
+import { wipeAll } from './wipe'
 
 const g = globalThis as unknown as { __hkNotesReady?: Promise<void> }
 const PURGE_KEY = 'demo-purged'
+const WIPE_KEY = 'content-wipe:2026-09-13'
 
 /**
   One-time cleanup for installations that were seeded with the demo content:
@@ -30,12 +32,30 @@ async function purgeDemoData(): Promise<void> {
   await db.insert(schema.appMeta).values({ key: PURGE_KEY, value: { at: new Date().toISOString(), result } }).onConflictDoNothing()
 }
 
+/**
+  One-time: the owner asked (13 Sep 2026) for every piece of content in the
+  Primary notebook to be removed, demo and own alike. Contexts and accounts stay.
+*/
+async function wipePrimaryOnce(): Promise<void> {
+  const db = await getDb()
+  const done = (await db.select({ key: schema.appMeta.key }).from(schema.appMeta).where(eq(schema.appMeta.key, WIPE_KEY)))[0]
+  if (done) return
+  const nb = (await db.select({ id: schema.notebooks.id }).from(schema.notebooks).where(eq(schema.notebooks.id, DEFAULT_NOTEBOOK.id)))[0]
+  let result: unknown = null
+  if (nb) {
+    result = await wipeAll(nb.id)
+    console.log('[bootstrap] emptied the Primary notebook', result)
+  }
+  await db.insert(schema.appMeta).values({ key: WIPE_KEY, value: { at: new Date().toISOString(), result } }).onConflictDoNothing()
+}
+
 export function ensureReady(): Promise<void> {
   if (!g.__hkNotesReady) {
     g.__hkNotesReady = (async () => {
       await getDb()
       if (!(await isSeeded())) await bootstrapEmpty()
       await purgeDemoData()
+      await wipePrimaryOnce()
     })().catch((err) => {
       g.__hkNotesReady = undefined
       throw err

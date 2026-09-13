@@ -89,7 +89,22 @@ export async function removeSampleData(notebookId: string): Promise<RemoveResult
   const rr = await db.delete(schema.researchProjects).where(and(inArray(schema.researchProjects.id, researchIds), inArray(schema.researchProjects.contextId, ctxIds))).returning({ id: schema.researchProjects.id })
   out.research = rr.length
 
-  // 4. Entities nothing refers to any more (people/companies/topics only ever come from notes).
+  out.entities = await removeOrphanEntities(ctxIds)
+
+  // 5. Observations were computed over the samples; they rebuild from real notes.
+  await db.delete(schema.insights).where(inArray(schema.insights.contextId, ctxIds))
+  await db.delete(schema.weeklyReviews).where(inArray(schema.weeklyReviews.contextId, ctxIds))
+
+  // 6. Remember that the owner chose real data over samples.
+  const nb = (await db.select().from(schema.notebooks).where(eq(schema.notebooks.id, notebookId)))[0]
+  if (nb) await db.update(schema.notebooks).set({ settings: { ...(nb.settings ?? {}), sampleData: false }, updatedAt: new Date() }).where(eq(schema.notebooks.id, notebookId))
+  return out
+}
+
+/** Delete people, companies, topics and projects nothing refers to any more (they only ever come from notes). Returns how many. */
+export async function removeOrphanEntities(ctxIds: string[]): Promise<number> {
+  const db = await getDb()
+  if (!ctxIds.length) return 0
   const referenced = new Set<string>()
   for (const r of await db.select({ id: schema.noteEntities.entityId }).from(schema.noteEntities).innerJoin(schema.entities, eq(schema.entities.id, schema.noteEntities.entityId)).where(inArray(schema.entities.contextId, ctxIds))) referenced.add(r.id)
   for (const r of await db.select({ a: schema.tasks.entityId, b: schema.tasks.ownerEntityId }).from(schema.tasks).where(inArray(schema.tasks.contextId, ctxIds))) { if (r.a) referenced.add(r.a); if (r.b) referenced.add(r.b) }
@@ -107,15 +122,8 @@ export async function removeSampleData(notebookId: string): Promise<RemoveResult
     await db.delete(schema.changes).where(inArray(schema.changes.entityId, orphans))
     await db.delete(schema.embeddings).where(and(eq(schema.embeddings.ownerType, 'entity'), inArray(schema.embeddings.ownerId, orphans)))
     const r = await db.delete(schema.entities).where(inArray(schema.entities.id, orphans)).returning({ id: schema.entities.id })
-    out.entities = r.length
+    return r.length
   }
-
-  // 5. Observations were computed over the samples; they rebuild from real notes.
-  await db.delete(schema.insights).where(inArray(schema.insights.contextId, ctxIds))
-  await db.delete(schema.weeklyReviews).where(inArray(schema.weeklyReviews.contextId, ctxIds))
-
-  // 6. Remember that the owner chose real data over samples.
-  const nb = (await db.select().from(schema.notebooks).where(eq(schema.notebooks.id, notebookId)))[0]
-  if (nb) await db.update(schema.notebooks).set({ settings: { ...(nb.settings ?? {}), sampleData: false }, updatedAt: new Date() }).where(eq(schema.notebooks.id, notebookId))
-  return out
+  return 0
 }
+
