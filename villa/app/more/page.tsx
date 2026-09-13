@@ -6,6 +6,8 @@ import { findGaps, openSnags, projectFinance } from "@/lib/model/derive";
 import { PageTitle, Eyebrow, Chip } from "@/components/ui";
 
 const LINKS = [
+  { href: "/villa/drawings", title: "Architect's drawings",
+    blurb: "The issued plans and the street elevation — the set every room, dimension and area in the app was read off." },
   { href: "/sheet", title: "Sheet",
     blurb: "A spreadsheet of the scope: one room at a time, every line with its cost, owner, vendor and money — type straight in, or paste from Excel." },
   { href: "/history", title: "History",

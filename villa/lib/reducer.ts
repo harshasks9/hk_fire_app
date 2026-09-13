@@ -102,6 +102,8 @@ export type Action =
 
 /** What survives a wipe. Everything not listed here is emptied. */
 export interface KeepOptions {
+  /** The villa itself. Its layout is fixed by the drawings, so it is not really data. */
+  spaces?: boolean;
   /** The taxonomy and rate card — almost always worth keeping. */
   categories?: boolean;
   /** Names and roles. */
@@ -130,9 +132,10 @@ const BLANK_META: ProjectMeta = {
 /**
  * An empty project you can actually start from.
  *
- * Wiping the content should not wipe the scaffolding: without a category list
- * you cannot create a single scope item, so the taxonomy and rate card are kept
- * by default. Everything else is a choice.
+ * Wiping the content should not wipe the scaffolding. Without a category list
+ * you cannot create a single scope item, and the villa's own rooms came off the
+ * architect's drawings rather than from anyone's typing — so the taxonomy and
+ * the house are both kept by default. Everything else is a choice.
  */
 export function emptyProject(current: ProjectState, keep: KeepOptions): ProjectState {
   return {
@@ -142,7 +145,8 @@ export function emptyProject(current: ProjectState, keep: KeepOptions): ProjectS
     vendors: keep.vendors ? current.vendors : [],
     scenarios: keep.scenarios ? current.scenarios : [],
     activeScenarioId: keep.scenarios ? current.activeScenarioId : undefined,
-    spaces: [], items: [], ideas: [], options: [], decisions: [], comments: [],
+    spaces: keep.spaces ? current.spaces : [],
+    items: [], ideas: [], options: [], decisions: [], comments: [],
     quotations: [], tasks: [], snags: [], notes: [], payments: [], docs: [], siteUpdates: [],
   };
 }

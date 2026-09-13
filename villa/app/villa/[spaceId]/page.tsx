@@ -216,6 +216,7 @@ function DesignTab({
   spaceId, options, decisions, docs,
 }: { spaceId: string; options: DesignOption[]; ideas: Idea[]; decisions: Decision[]; docs: Doc[] }) {
   const { state } = useProject();
+  const router = useRouter();
   const space = state.spaces.find((s) => s.id === spaceId)!;
   const renders = docs.filter((d) => d.kind === "render");
 
@@ -224,7 +225,10 @@ function DesignTab({
       <div>
         <Eyebrow className="mb-2.5">Where this room sits</Eyebrow>
         <div className="card px-4 py-4">
-          <FloorPlan floor={space.floor} overlay="completion" selectedId={spaceId} compact />
+          <FloorPlan
+            floor={space.floor} overlay="completion" selectedId={spaceId} compact
+            onSelect={(id) => { if (id && id !== spaceId) router.push(`/villa/${id}`); }}
+          />
         </div>
       </div>
 

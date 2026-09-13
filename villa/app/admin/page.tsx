@@ -330,7 +330,7 @@ function DataTab() {
 function DangerZone() {
   const { state, dispatch } = useProject();
   const [open, setOpen] = useState(false);
-  const [keep, setKeep] = useState<KeepOptions>({ categories: true, people: true, vendors: false, settings: false, scenarios: true });
+  const [keep, setKeep] = useState<KeepOptions>({ spaces: true, categories: true, people: true, vendors: false, settings: false, scenarios: true });
   const [typed, setTyped] = useState("");
 
   const preview = useMemo(() => emptyProject(state, keep), [state, keep]);
@@ -344,6 +344,7 @@ function DangerZone() {
   const totalLost = losing.reduce((a, r) => a + (r.before - r.after), 0);
 
   const KEEPS: { key: keyof KeepOptions; label: string; hint: string }[] = [
+    { key: "spaces", label: "The villa itself", hint: "Strongly recommended — the 57 rooms, floors and dimensions come from the architect's drawings, not from anything you typed." },
     { key: "categories", label: "Categories & rate card", hint: "Strongly recommended — without a category list you cannot create a single scope item." },
     { key: "people", label: "People", hint: "Names and roles." },
     { key: "vendors", label: "Vendors", hint: "Your supplier directory outlives any one project." },
