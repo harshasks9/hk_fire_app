@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { apiError } from '@/lib/api'
 import { getActiveContext, getContexts } from '@/lib/context'
-import { listTags, untaggedNoteIds } from '@/lib/tags'
+import { listTags, untaggedNoteIds, renameTag, deleteTag } from '@/lib/tags'
 import { processNote } from '@/lib/pipeline'
 export const dynamic = 'force-dynamic'
 export const maxDuration = 120
@@ -36,6 +36,32 @@ export async function POST(req: NextRequest) {
       done++
     }
     return NextResponse.json({ processed: done, remaining: Math.max(0, remaining - done) })
+  } catch (e) {
+    return apiError(e)
+  }
+}
+
+/** Rename a tag across the active context (or every context with ?all=1). */
+export async function PATCH(req: NextRequest) {
+  try {
+    const all = req.nextUrl.searchParams.get('all') === '1'
+    const ids = all ? (await getContexts()).map((c) => c.id) : [(await getActiveContext()).id]
+    const b = (await req.json().catch(() => ({}))) as { from?: string; to?: string }
+    if (!b.from || !b.to) return NextResponse.json({ error: 'from and to are required' }, { status: 400 })
+    return NextResponse.json({ ok: true, notes: await renameTag(ids, b.from, b.to) })
+  } catch (e) {
+    return apiError(e)
+  }
+}
+
+/** Remove a tag from every note in the active context (or every context with ?all=1). */
+export async function DELETE(req: NextRequest) {
+  try {
+    const all = req.nextUrl.searchParams.get('all') === '1'
+    const ids = all ? (await getContexts()).map((c) => c.id) : [(await getActiveContext()).id]
+    const tag = req.nextUrl.searchParams.get('tag') ?? ''
+    if (!tag) return NextResponse.json({ error: 'tag is required' }, { status: 400 })
+    return NextResponse.json({ ok: true, notes: await deleteTag(ids, tag) })
   } catch (e) {
     return apiError(e)
   }

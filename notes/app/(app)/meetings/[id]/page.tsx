@@ -47,7 +47,7 @@ export default async function MeetingPage({ params }: { params: Promise<{ id: st
             </div>
           </div>
         </div>
-        <div className="mt-4"><MeetingDetailActions meetingId={m.id} status={m.status} noteId={m.noteId} followUpEmail={m.followUpEmail} executiveReadout={m.executiveReadout} /></div>
+        <div className="mt-4"><MeetingDetailActions meetingId={m.id} status={m.status} noteId={m.noteId} followUpEmail={m.followUpEmail} executiveReadout={m.executiveReadout} meeting={{ title: m.title, startsAt: m.startsAt, endsAt: m.endsAt, location: m.location }} /></div>
       </header>
 
       {m.ingestStatus && m.ingestStatus !== 'done' ? <IngestBanner initial={{ meetingId: m.id, noteId: m.noteId, title: m.title, status: m.ingestStatus, error: m.ingestError, stageAt: m.ingestStageAt?.toISOString() ?? null, hasRecording: Boolean(m.recordingAttachmentId) }} /> : null}

@@ -3,6 +3,7 @@ import { PageHeader, EmptyState, Section } from '@/components/ui'
 import { getActiveContext } from '@/lib/context'
 import { listOpenLoops } from '@/lib/queries'
 import { LoopRow } from '@/components/entities'
+import { NewLoop } from '@/components/crud/editors'
 export const dynamic = 'force-dynamic'
 export default async function LoopsPage({ searchParams }: { searchParams: Promise<{ highlight?: string }> }) {
   const { highlight } = await searchParams
@@ -15,7 +16,7 @@ export default async function LoopsPage({ searchParams }: { searchParams: Promis
   const closed = loops.filter((l) => l.status !== 'open').slice(0, 20)
   return (
     <Page>
-      <PageHeader title="Open loops" subtitle="Commitments detected in your notes that have not been resolved: what you promised, what you are waiting on, what needs a follow-up." />
+      <PageHeader title="Open loops" subtitle="Commitments detected in your notes that have not been resolved: what you promised, what you are waiting on, what needs a follow-up. Add your own too." actions={<NewLoop />} />
       {open.length === 0 && closed.length === 0 ? <EmptyState title="No open loops" description='Phrases like "I’ll send you…", "waiting on pricing approval" or "let’s come back to…" are tracked here automatically.' /> : (
         <>
           <Section title="You promised" count={promised.length}>{promised.length ? promised.map((l) => <LoopRow key={l.id} loop={l} highlight={highlight === l.id} />) : <p className="text-[13.5px] text-fg-3">Nothing owed.</p>}</Section>

@@ -5,6 +5,7 @@ import { Section, Badge, Avatar } from '@/components/ui'
 import { getDecision } from '@/lib/queries'
 import { EntityChip, GenerateMenu, NoteRow, SourceHover } from '@/components/entities'
 import { DecisionStatus } from '@/components/notes/DecisionStatus'
+import { DecisionActions } from '@/components/crud/actions'
 import { formatDate } from '@/lib/util'
 import { GitBranch } from 'lucide-react'
 export const dynamic = 'force-dynamic'
@@ -20,7 +21,7 @@ export default async function DecisionPage({ params }: { params: Promise<{ id: s
         <div className="mb-1 flex items-center gap-2 text-[12.5px] text-fg-3"><GitBranch className="h-3.5 w-3.5" /> Decision · {formatDate(x.decidedAt, { month: 'long', day: 'numeric', year: 'numeric' })}</div>
         <div className="flex flex-wrap items-start justify-between gap-3">
           <h1 className="text-[28px] font-semibold leading-tight tracking-[-0.02em]">{x.title}</h1>
-          <div className="flex items-center gap-2"><DecisionStatus id={x.id} status={x.status} /><GenerateMenu target={{ type: 'decision', id: x.id }} /></div>
+          <div className="flex items-center gap-2"><DecisionStatus id={x.id} status={x.status} /><GenerateMenu target={{ type: 'decision', id: x.id }} /><DecisionActions decision={x} redirectTo="/decisions" always /></div>
         </div>
         <div className="mt-2 flex flex-wrap gap-1.5">
           {d.topic ? <EntityChip id={d.topic.id} name={d.topic.name} type="topic" /> : null}

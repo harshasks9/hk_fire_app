@@ -1,13 +1,15 @@
 'use client'
 import * as React from 'react'
 import { useRouter } from 'next/navigation'
-import { Radio, Mail, FileText, Trash2, MoreHorizontal, CheckCircle2 } from 'lucide-react'
+import { Radio, Mail, FileText, Trash2, MoreHorizontal, CheckCircle2, Pencil } from 'lucide-react'
 import { Button, Menu, useToast, Markdown, CopyButton, AiMark } from '@/components/ui'
 import { api } from '@/lib/client'
 import { GenerateMenu } from '@/components/entities'
+import { MeetingEditor } from '@/components/crud/editors'
 
-export function MeetingDetailActions({ meetingId, status, noteId, followUpEmail, executiveReadout }: { meetingId: string; status: string; noteId: string | null; followUpEmail: string | null; executiveReadout: string | null }) {
+export function MeetingDetailActions({ meetingId, status, noteId, followUpEmail, executiveReadout, meeting }: { meetingId: string; status: string; noteId: string | null; followUpEmail: string | null; executiveReadout: string | null; meeting?: { title: string; startsAt: Date | string; endsAt?: Date | string | null; location?: string | null } }) {
   const router = useRouter()
+  const [edit, setEdit] = React.useState(false)
   const toast = useToast()
   const [busy, setBusy] = React.useState<string | null>(null)
   const [outputs, setOutputs] = React.useState<{ followUp: string | null; readout: string | null }>({ followUp: followUpEmail, readout: executiveReadout })
@@ -39,10 +41,12 @@ export function MeetingDetailActions({ meetingId, status, noteId, followUpEmail,
         <GenerateMenu target={{ type: 'meeting', id: meetingId }} />
         <Menu trigger={<Button size="icon" variant="ghost"><MoreHorizontal className="h-4 w-4" /></Button>} items={[
           ...(status !== 'completed' ? [{ label: 'Mark completed', icon: <CheckCircle2 className="h-3.5 w-3.5" />, onSelect: async () => { await api(`/api/meetings/${meetingId}`, { method: 'PATCH', json: { status: 'completed', ensureNote: true } }); router.refresh() } }] : []),
+          ...(meeting ? [{ label: 'Edit details', icon: <Pencil className="h-3.5 w-3.5" />, onSelect: () => setEdit(true) }] : []),
           { label: 'Regenerate follow-up email', icon: <Mail className="h-3.5 w-3.5" />, onSelect: () => gen('follow_up') },
           { label: 'Delete meeting', icon: <Trash2 className="h-3.5 w-3.5" />, danger: true, onSelect: async () => { if (!confirm('Delete this meeting? Its notes remain.')) return; await api(`/api/meetings/${meetingId}`, { method: 'DELETE' }); router.push('/meetings'); router.refresh() } },
         ]} />
       </div>
+      {edit && meeting ? <MeetingEditor meeting={{ id: meetingId, ...meeting }} onClose={() => setEdit(false)} /> : null}
       {show && outputs[show] ? (
         <div className="animate-up mt-3 rounded-xl border border-dashed border-accent-soft-2 bg-surface p-4">
           <div className="mb-2 flex items-center justify-between"><AiMark label={show === 'followUp' ? 'Follow-up email' : 'Executive readout'} /><CopyButton text={outputs[show]!} /></div>
