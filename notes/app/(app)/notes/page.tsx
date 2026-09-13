@@ -1,6 +1,6 @@
 import { Page } from '@/components/shell/AppShell'
 import { PageHeader, EmptyState, LinkTabs } from '@/components/ui'
-import { getActiveContext } from '@/lib/context'
+import { getActiveScope } from '@/lib/context'
 import { listNotes } from '@/lib/queries'
 import { NoteRow } from '@/components/entities'
 import { NewNoteButton } from '@/components/notes/NewNoteButton'
@@ -14,9 +14,10 @@ export const dynamic = 'force-dynamic'
 
 export default async function NotesPage({ searchParams }: { searchParams: Promise<{ view?: string; q?: string; tag?: string }> }) {
   const { view = 'all', q, tag } = await searchParams
-  const ctx = await getActiveContext()
+  const scope = await getActiveScope()
+  const ctx = { id: scope.ids, name: scope.label }
   const notes = await listNotes(ctx.id, { limit: 200, favorite: view === 'favorites', kind: view === 'meetings' ? 'meeting' : view === 'voice' ? 'voice' : undefined, q, tag })
-  const topTags = await listTags([ctx.id], { limit: 18 })
+  const topTags = await listTags(scope.ids, { limit: 18 })
   const groups = groupByDay(notes)
   return (
     <Page>
@@ -39,7 +40,7 @@ export default async function NotesPage({ searchParams }: { searchParams: Promis
         groups.map((g) => (
           <section key={g.label} className="mb-6">
             <h2 className="mb-1 text-[11.5px] font-semibold uppercase tracking-[0.06em] text-fg-3">{g.label}</h2>
-            <div>{g.notes.map((n) => <NoteRow key={n.id} note={n} />)}</div>
+            <div>{g.notes.map((n) => <NoteRow key={n.id} note={n} contextName={scope.all ? scope.nameOf(n.contextId) : undefined} />)}</div>
           </section>
         ))
       )}

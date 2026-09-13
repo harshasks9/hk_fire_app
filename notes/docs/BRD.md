@@ -53,6 +53,8 @@ The owner wants to give the same system to other people — colleagues, family, 
 - **F20 — Delete everything**: an owner can empty the notebook, or delete everything created in a date range, with a preview and a password check; administrators can empty any notebook.
 - **F21 — Create, edit and delete everywhere**: nothing the AI extracts is read-only; every list and detail page supports adding, editing and deleting by hand.
 - **F22 — A usable spreadsheet**: the sheet block behaves like a spreadsheet (ranges, keyboard, clipboard, undo, fill, structure edits, resizing, full screen) and never leaks keystrokes into the surrounding note.
+- **F23 — All**: one view across Work, Finance, Research and every other context, with each item labelled by where it lives; writing still goes to a real context.
+- **F24 — Tasks with details and a public link**: a task can carry a full write-up with images, audio, video and files, and can be made visible to anyone with its link.
 
 ### Out of scope (this release)
 - Real-time collaboration inside one note; shared notebooks with multiple concurrent editors.

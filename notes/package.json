@@ -1,6 +1,6 @@
 {
   "name": "hk-notes",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "private": true,
   "description": "An AI-native note-taking and personal intelligence system. Capture anything. Organize nothing. Find everything. Act on what matters.",
   "scripts": {

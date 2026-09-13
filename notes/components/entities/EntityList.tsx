@@ -1,14 +1,14 @@
 import Link from 'next/link'
 import { Page } from '@/components/shell/AppShell'
 import { PageHeader, EmptyState, Avatar, Badge } from '@/components/ui'
-import { EntityIcon } from '@/components/entities'
+import { EntityIcon, ContextBadge } from '@/components/entities'
 import { EntityActions } from '@/components/crud/actions'
 import { NewEntity } from '@/components/crud/editors'
 import type { EntityListItem } from '@/lib/queries'
 import { relativeTime, pluralize } from '@/lib/util'
 import { Star } from 'lucide-react'
 
-export function EntityList({ title, subtitle, items, type, emptyText }: { title: string; subtitle?: string; items: EntityListItem[]; type: 'person' | 'company' | 'topic'; emptyText: string }) {
+export function EntityList({ title, subtitle, items, type, emptyText, contextNames }: { title: string; subtitle?: string; items: EntityListItem[]; type: 'person' | 'company' | 'topic'; emptyText: string; contextNames?: Record<string, string> }) {
   const href = (id: string) => (type === 'person' ? `/people/${id}` : type === 'company' ? `/companies/${id}` : `/topics/${id}`)
   return (
     <Page>
@@ -24,6 +24,7 @@ export function EntityList({ title, subtitle, items, type, emptyText }: { title:
                 <div className="min-w-0 flex-1">
                   <div className="flex items-center gap-2">
                     <span className="truncate text-[14.5px] font-medium group-hover:text-accent">{e.name}</span>
+                    {contextNames?.[e.contextId] ? <ContextBadge name={contextNames[e.contextId]!} /> : null}
                     {e.pinned ? <Star className="h-3 w-3 fill-warning text-warning" /> : null}
                     {e.attributes.status && type === 'company' ? <Badge tone={/risk|escalation/i.test(e.attributes.status) ? 'warning' : 'neutral'}>{e.attributes.status}</Badge> : null}
                   </div>

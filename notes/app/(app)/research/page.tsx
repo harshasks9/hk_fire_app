@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { Page } from '@/components/shell/AppShell'
 import { PageHeader, EmptyState, Badge } from '@/components/ui'
-import { getActiveContext, getContexts } from '@/lib/context'
+import { getActiveScope } from '@/lib/context'
 import { listResearch } from '@/lib/queries'
 import { NewResearch } from '@/components/notes/NewResearch'
 import { ResearchActions } from '@/components/crud/actions'
@@ -9,10 +9,10 @@ import { FlaskConical } from 'lucide-react'
 import { relativeTime, pluralize } from '@/lib/util'
 export const dynamic = 'force-dynamic'
 export default async function ResearchPage() {
-  const ctx = await getActiveContext()
-  const contexts = await getContexts()
+  const scope = await getActiveScope()
+  const contexts = scope.contexts
   // Research projects live in their own context but are reachable from every context.
-  const items = await listResearch(ctx.kind === 'research' ? ctx.id : undefined)
+  const items = await listResearch(!scope.all && scope.active.kind === 'research' ? scope.active.id : undefined)
   return (
     <Page>
       <PageHeader title="Research" subtitle="Long-running investigations. Notes, PDFs, links, screenshots and numbers are synthesized across the whole project." actions={<NewResearch />} />

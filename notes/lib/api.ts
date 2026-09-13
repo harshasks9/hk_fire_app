@@ -1,5 +1,5 @@
 /* Small helpers for route handlers: consistent error responses for auth failures. */
-import { NextResponse } from 'next/server'
+import { NextRequest, NextResponse } from 'next/server'
 import { AuthError } from './session'
 import { assertOwned } from './tenant'
 
@@ -23,4 +23,11 @@ export async function guardOwned(kind: Parameters<typeof assertOwned>[0], id: st
   } catch (e) {
     return apiError(e)
   }
+}
+
+/** The public origin of this request, honouring proxies (what share links are built from). */
+export function requestOrigin(req: NextRequest): string {
+  const host = req.headers.get('x-forwarded-host') ?? req.headers.get('host')
+  const proto = req.headers.get('x-forwarded-proto') ?? (host?.startsWith('localhost') ? 'http' : 'https')
+  return host ? `${proto}://${host}` : new URL(req.url).origin
 }

@@ -521,3 +521,9 @@
 @supports (padding: env(safe-area-inset-bottom)) {
   .safe-bottom { padding-bottom: env(safe-area-inset-bottom); }
 }
+
+/* A task's details are usually short: keep the editor compact so the files below stay in view. */
+.task-editor .editor-prose,
+.task-editor .ProseMirror {
+  min-height: 140px;
+}

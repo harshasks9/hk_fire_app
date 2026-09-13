@@ -10,13 +10,13 @@ import { formatDate } from '@/lib/util'
 
 interface Turn { q: string; answer: string; citations: Citation[]; provider?: string; done: boolean }
 
-export function AskClient({ contextName, isLLM, examples }: { contextName: string; isLLM: boolean; examples: string[] }) {
+export function AskClient({ contextName, isLLM, examples, allByDefault = false }: { contextName: string; isLLM: boolean; examples: string[]; allByDefault?: boolean }) {
   const params = useSearchParams()
   const router = useRouter()
   const [q, setQ] = React.useState('')
   const [turns, setTurns] = React.useState<Turn[]>([])
   const [busy, setBusy] = React.useState(false)
-  const [all, setAll] = React.useState(false)
+  const [all, setAll] = React.useState(allByDefault)
   const bottom = React.useRef<HTMLDivElement>(null)
   const started = React.useRef(false)
 

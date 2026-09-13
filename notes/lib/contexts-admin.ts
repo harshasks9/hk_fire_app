@@ -4,6 +4,7 @@
 */
 import { and, asc, eq, inArray, sql } from 'drizzle-orm'
 import { getDb, schema } from './db'
+import { deleteTaskExtras } from './tasks'
 import type { Context, ContextKind } from './db/schema'
 import { slugify, uid } from './util'
 
@@ -80,6 +81,7 @@ export async function deleteContext(notebookId: string, id: string, opts: { move
     return { deleted: id, movedTo: target.id, notes: notesCount }
   }
   const noteIds = (await db.select({ id: schema.notes.id }).from(schema.notes).where(eq(schema.notes.contextId, id))).map((r) => r.id)
+  await deleteTaskExtras((await db.select({ id: schema.tasks.id }).from(schema.tasks).where(eq(schema.tasks.contextId, id))).map((r) => r.id))
   const meetingIds = (await db.select({ id: schema.meetings.id }).from(schema.meetings).where(eq(schema.meetings.contextId, id))).map((r) => r.id)
   const decisionIds = (await db.select({ id: schema.decisions.id }).from(schema.decisions).where(eq(schema.decisions.contextId, id))).map((r) => r.id)
   if (noteIds.length) {

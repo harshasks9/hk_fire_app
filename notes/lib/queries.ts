@@ -1,6 +1,7 @@
 /* Read models for every screen. All scoped to a context unless stated. */
 import { and, asc, desc, eq, gte, inArray, isNull, lt, lte, or, sql, ilike, ne } from 'drizzle-orm'
 import { getDb, schema } from './db'
+import type { PgColumn } from 'drizzle-orm/pg-core'
 import { allTagsOf, hasTagSql } from './tags'
 import type { Commitment, Decision, Entity, EntityType, Fact, Meeting, Note, Task, TimelineEvent, Insight, Change, ResearchProject } from './db/schema'
 import { addDays, startOfDay } from './util'
@@ -8,15 +9,25 @@ import { cosineDistance } from 'drizzle-orm'
 import { embedQueryWith, localEmbeddingProvider } from './ai/embeddings'
 import { inNotebook } from './tenant'
 
+/** One context id, or several (the "All" view). */
+export type Ctx = string | string[]
+/** `contextId = ?` or `contextId in (...)`, whichever the scope needs. */
+export function inCtx(col: PgColumn, ids: Ctx) {
+  if (typeof ids === 'string') return eq(col, ids)
+  if (ids.length === 1) return eq(col, ids[0]!)
+  if (ids.length === 0) return sql`false`
+  return inArray(col, ids)
+}
+
 const live = isNull(schema.notes.deletedAt)
 
 /* --------------------------------------------------------------- notes */
 
-export interface NoteListItem { id: string; title: string; kind: Note['kind']; status: Note['status']; updatedAt: Date; createdAt: Date; favorite: boolean; preview: string; wordCount: number; entities: { id: string; name: string; type: EntityType }[]; source: string; summary: Note['summary']; tags: string[] }
+export interface NoteListItem { id: string; contextId: string; title: string; kind: Note['kind']; status: Note['status']; updatedAt: Date; createdAt: Date; favorite: boolean; preview: string; wordCount: number; entities: { id: string; name: string; type: EntityType }[]; source: string; summary: Note['summary']; tags: string[] }
 
-export async function listNotes(contextId: string, opts: { limit?: number; kind?: string; favorite?: boolean; q?: string; researchProjectId?: string; inbox?: boolean; tag?: string } = {}): Promise<NoteListItem[]> {
+export async function listNotes(contextId: Ctx, opts: { limit?: number; kind?: string; favorite?: boolean; q?: string; researchProjectId?: string; inbox?: boolean; tag?: string } = {}): Promise<NoteListItem[]> {
   const db = await getDb()
-  const conds = [eq(schema.notes.contextId, contextId), live]
+  const conds = [inCtx(schema.notes.contextId, contextId), live]
   if (opts.tag) conds.push(hasTagSql(opts.tag))
   if (opts.kind) conds.push(eq(schema.notes.kind, opts.kind as Note['kind']))
   if (opts.favorite) conds.push(eq(schema.notes.favorite, true))
@@ -45,7 +56,7 @@ async function attachEntities(rows: Note[]): Promise<NoteListItem[]> {
   const byNote = new Map<string, { id: string; name: string; type: EntityType; m: number }[]>()
   for (const m of mentions) byNote.set(m.noteId, [...(byNote.get(m.noteId) ?? []), m])
   return rows.map((r) => ({
-    id: r.id, title: r.title, kind: r.kind, status: r.status, updatedAt: r.updatedAt, createdAt: r.createdAt, favorite: r.favorite, wordCount: r.wordCount, source: r.source, summary: r.summary, tags: allTagsOf(r),
+    id: r.id, contextId: r.contextId, title: r.title, kind: r.kind, status: r.status, updatedAt: r.updatedAt, createdAt: r.createdAt, favorite: r.favorite, wordCount: r.wordCount, source: r.source, summary: r.summary, tags: allTagsOf(r),
     preview: (r.summary?.summary[0] ?? r.contentText.replace(/\s+/g, ' ')).slice(0, 180),
     entities: (byNote.get(r.id) ?? []).sort((a, b) => order(a.type) - order(b.type) || b.m - a.m).slice(0, 4).map(({ id, name, type }) => ({ id, name, type })),
   }))
@@ -159,9 +170,9 @@ export async function relatedNotes(note: Note, entityIds: string[], limit = 6) {
 
 export interface MeetingListItem extends Meeting { participants: { id: string; name: string }[]; company: { id: string; name: string } | null; noteSummary: string | null }
 
-export async function listMeetings(contextId: string): Promise<{ upcoming: MeetingListItem[]; past: MeetingListItem[] }> {
+export async function listMeetings(contextId: Ctx): Promise<{ upcoming: MeetingListItem[]; past: MeetingListItem[] }> {
   const db = await getDb()
-  const rows = await db.select().from(schema.meetings).where(eq(schema.meetings.contextId, contextId)).orderBy(desc(schema.meetings.startsAt))
+  const rows = await db.select().from(schema.meetings).where(inCtx(schema.meetings.contextId, contextId)).orderBy(desc(schema.meetings.startsAt))
   const items = await hydrateMeetings(rows)
   const now = new Date()
   return {
@@ -206,14 +217,14 @@ export async function getMeeting(id: string) {
 
 export type TaskView = 'today' | 'week' | 'overdue' | 'waiting' | 'delegated' | 'completed' | 'all'
 
-export interface TaskItem extends Task { entityName: string | null; entityType: EntityType | null; sourceTitle: string | null }
+export interface TaskItem extends Task { entityName: string | null; entityType: EntityType | null; sourceTitle: string | null; hasPublicLink: boolean }
 
-export async function listTasks(contextId: string, view: TaskView = 'all'): Promise<TaskItem[]> {
+export async function listTasks(contextId: Ctx, view: TaskView = 'all'): Promise<TaskItem[]> {
   const db = await getDb()
   const today = startOfDay()
   const tomorrow = addDays(today, 1)
   const weekEnd = addDays(today, 7)
-  const conds = [eq(schema.tasks.contextId, contextId)]
+  const conds = [inCtx(schema.tasks.contextId, contextId)]
   const openStatuses: Task['status'][] = ['open', 'waiting', 'delegated']
   switch (view) {
     case 'today':
@@ -238,20 +249,20 @@ export async function listTasks(contextId: string, view: TaskView = 'all'): Prom
       conds.push(inArray(schema.tasks.status, openStatuses))
   }
   const rows = await db
-    .select({ t: schema.tasks, entityName: schema.entities.name, entityType: schema.entities.type, sourceTitle: schema.notes.title })
+    .select({ t: schema.tasks, entityName: schema.entities.name, entityType: schema.entities.type, sourceTitle: schema.notes.title, hasPublicLink: sql<boolean>`exists (select 1 from share_links l where l.task_id = ${schema.tasks.id} and l.revoked_at is null and (l.expires_at is null or l.expires_at > now()))` })
     .from(schema.tasks)
     .leftJoin(schema.entities, eq(schema.entities.id, schema.tasks.entityId))
     .leftJoin(schema.notes, eq(schema.notes.id, schema.tasks.sourceNoteId))
     .where(and(...conds))
     .orderBy(view === 'completed' ? desc(schema.tasks.completedAt) : sql`${schema.tasks.dueAt} asc nulls last`, desc(schema.tasks.priority), desc(schema.tasks.createdAt))
     .limit(300)
-  return rows.map((r) => ({ ...r.t, entityName: r.entityName, entityType: r.entityType, sourceTitle: r.sourceTitle }))
+  return rows.map((r) => ({ ...r.t, entityName: r.entityName, entityType: r.entityType, sourceTitle: r.sourceTitle, hasPublicLink: Boolean(r.hasPublicLink) }))
 }
 
-export async function taskCounts(contextId: string) {
+export async function taskCounts(contextId: Ctx) {
   const db = await getDb()
   const today = startOfDay()
-  const open = await db.select({ status: schema.tasks.status, dueAt: schema.tasks.dueAt, priority: schema.tasks.priority }).from(schema.tasks).where(eq(schema.tasks.contextId, contextId))
+  const open = await db.select({ status: schema.tasks.status, dueAt: schema.tasks.dueAt, priority: schema.tasks.priority }).from(schema.tasks).where(inCtx(schema.tasks.contextId, contextId))
   const isOpen = (s: string) => s === 'open' || s === 'waiting' || s === 'delegated'
   return {
     today: open.filter((t) => isOpen(t.status) && ((t.dueAt && t.dueAt < addDays(today, 1)) || t.priority === 'urgent')).length,
@@ -268,14 +279,14 @@ export async function taskCounts(contextId: string) {
 
 export interface LoopItem extends Commitment { counterpartyName: string | null; companyName: string | null; sourceTitle: string | null; ageDays: number }
 
-export async function listOpenLoops(contextId: string, opts: { limit?: number; includeResolved?: boolean } = {}): Promise<LoopItem[]> {
+export async function listOpenLoops(contextId: Ctx, opts: { limit?: number; includeResolved?: boolean } = {}): Promise<LoopItem[]> {
   const db = await getDb()
   const cp = schema.entities
   const rows = await db
     .select({ c: schema.commitments, counterpartyName: sql<string | null>`(select name from entities where id = ${schema.commitments.counterpartyEntityId})`, companyName: sql<string | null>`(select name from entities where id = ${schema.commitments.companyEntityId})`, sourceTitle: schema.notes.title })
     .from(schema.commitments)
     .leftJoin(schema.notes, eq(schema.notes.id, schema.commitments.sourceNoteId))
-    .where(and(eq(schema.commitments.contextId, contextId), opts.includeResolved ? sql`true` : eq(schema.commitments.status, 'open')))
+    .where(and(inCtx(schema.commitments.contextId, contextId), opts.includeResolved ? sql`true` : eq(schema.commitments.status, 'open')))
     .orderBy(desc(schema.commitments.status), asc(schema.commitments.detectedAt))
     .limit(opts.limit ?? 100)
   void cp
@@ -291,9 +302,9 @@ function rank(l: LoopItem) {
 
 export interface EntityListItem extends Entity { noteCount: number; openTasks: number; company?: string; lastNoteTitle?: string }
 
-export async function listEntities(contextId: string, type: EntityType): Promise<EntityListItem[]> {
+export async function listEntities(contextId: Ctx, type: EntityType): Promise<EntityListItem[]> {
   const db = await getDb()
-  const rows = await db.select().from(schema.entities).where(and(eq(schema.entities.contextId, contextId), eq(schema.entities.type, type))).orderBy(desc(schema.entities.pinned), desc(schema.entities.lastSeenAt))
+  const rows = await db.select().from(schema.entities).where(and(inCtx(schema.entities.contextId, contextId), eq(schema.entities.type, type))).orderBy(desc(schema.entities.pinned), desc(schema.entities.lastSeenAt))
   if (!rows.length) return []
   const ids = rows.map((r) => r.id)
   const counts = await db.select({ entityId: schema.noteEntities.entityId, n: sql<number>`count(*)` }).from(schema.noteEntities).where(inArray(schema.noteEntities.entityId, ids)).groupBy(schema.noteEntities.entityId)
@@ -349,7 +360,7 @@ export async function getEntity(id: string): Promise<EntityDetail | null> {
       ? db.select({ entityId: schema.noteEntities.entityId, n: sql<number>`count(*)` }).from(schema.noteEntities).where(and(inArray(schema.noteEntities.noteId, noteIds), ne(schema.noteEntities.entityId, id))).groupBy(schema.noteEntities.entityId).orderBy(desc(sql`count(*)`)).limit(40)
       : Promise.resolve([] as { entityId: string; n: number }[]),
   ])
-  const tasks = taskRows.map((r) => ({ ...r.t, entityName: r.entityName, entityType: r.entityType, sourceTitle: r.sourceTitle }))
+  const tasks = taskRows.map((r) => ({ ...r.t, entityName: r.entityName, entityType: r.entityType, sourceTitle: r.sourceTitle, hasPublicLink: false }))
   const decisions = decisionRows.map((r) => ({ ...r.d, revisions: Number(r.revisions) }))
   const loops = allLoops.filter((l) => l.companyEntityId === id || l.counterpartyEntityId === id || (l.sourceNoteId && noteIds.includes(l.sourceNoteId)))
   const facts = factRows.map((r) => ({ ...r.f, sourceTitle: r.sourceTitle }))
@@ -379,13 +390,13 @@ export async function getEntity(id: string): Promise<EntityDetail | null> {
 
 export interface DecisionListItem extends Decision { topicName: string | null; companyName: string | null; revisions: number; sourceTitle: string | null }
 
-export async function listDecisions(contextId: string): Promise<DecisionListItem[]> {
+export async function listDecisions(contextId: Ctx): Promise<DecisionListItem[]> {
   const db = await getDb()
   const rows = await db
     .select({ d: schema.decisions, topicName: sql<string | null>`(select name from entities where id = ${schema.decisions.topicEntityId})`, companyName: sql<string | null>`(select name from entities where id = ${schema.decisions.companyEntityId})`, revisions: sql<number>`(select count(*) from decision_revisions r where r.decision_id = ${schema.decisions.id})`, sourceTitle: schema.notes.title })
     .from(schema.decisions)
     .leftJoin(schema.notes, eq(schema.notes.id, schema.decisions.sourceNoteId))
-    .where(eq(schema.decisions.contextId, contextId))
+    .where(inCtx(schema.decisions.contextId, contextId))
     .orderBy(desc(schema.decisions.updatedAt))
   return rows.map((r) => ({ ...r.d, topicName: r.topicName, companyName: r.companyName, revisions: Number(r.revisions), sourceTitle: r.sourceTitle }))
 }
@@ -442,19 +453,19 @@ export async function getResearch(id: string) {
 
 /* ---------------------------------------------------------------- home */
 
-export async function getHomeData(contextId: string) {
+export async function getHomeData(contextId: Ctx) {
   const db = await getDb()
   const now = new Date()
   const [meetingRows, tasks, loops, changes, insightRows, recentRows, favorites, activeEntities, recentNotesAll] = await Promise.all([
-    db.select().from(schema.meetings).where(and(eq(schema.meetings.contextId, contextId), gte(schema.meetings.startsAt, addDays(now, -0.2)), lte(schema.meetings.startsAt, addDays(now, 7)), ne(schema.meetings.status, 'completed'))).orderBy(asc(schema.meetings.startsAt)).limit(5),
+    db.select().from(schema.meetings).where(and(inCtx(schema.meetings.contextId, contextId), gte(schema.meetings.startsAt, addDays(now, -0.2)), lte(schema.meetings.startsAt, addDays(now, 7)), ne(schema.meetings.status, 'completed'))).orderBy(asc(schema.meetings.startsAt)).limit(5),
     listTasks(contextId, 'week'),
     listOpenLoops(contextId, { limit: 40 }),
-    db.select().from(schema.changes).where(and(eq(schema.changes.contextId, contextId), gte(schema.changes.detectedAt, addDays(now, -14)))).orderBy(desc(schema.changes.detectedAt)).limit(5),
-    db.select().from(schema.insights).where(and(eq(schema.insights.contextId, contextId), isNull(schema.insights.dismissedAt))).orderBy(desc(schema.insights.score), desc(schema.insights.createdAt)).limit(4),
-    db.select().from(schema.notes).where(and(eq(schema.notes.contextId, contextId), live, gte(schema.notes.updatedAt, addDays(now, -14)))).orderBy(desc(schema.notes.updatedAt)).limit(12),
-    db.select().from(schema.notes).where(and(eq(schema.notes.contextId, contextId), live, eq(schema.notes.favorite, true))).orderBy(desc(schema.notes.updatedAt)).limit(5),
-    db.select().from(schema.entities).where(and(eq(schema.entities.contextId, contextId), sql`${schema.entities.lastSeenAt} is not null`)).orderBy(desc(schema.entities.lastSeenAt), desc(schema.entities.mentionCount)).limit(30),
-    db.select({ id: schema.notes.id }).from(schema.notes).where(and(eq(schema.notes.contextId, contextId), live)),
+    db.select().from(schema.changes).where(and(inCtx(schema.changes.contextId, contextId), gte(schema.changes.detectedAt, addDays(now, -14)))).orderBy(desc(schema.changes.detectedAt)).limit(5),
+    db.select().from(schema.insights).where(and(inCtx(schema.insights.contextId, contextId), isNull(schema.insights.dismissedAt))).orderBy(desc(schema.insights.score), desc(schema.insights.createdAt)).limit(4),
+    db.select().from(schema.notes).where(and(inCtx(schema.notes.contextId, contextId), live, gte(schema.notes.updatedAt, addDays(now, -14)))).orderBy(desc(schema.notes.updatedAt)).limit(12),
+    db.select().from(schema.notes).where(and(inCtx(schema.notes.contextId, contextId), live, eq(schema.notes.favorite, true))).orderBy(desc(schema.notes.updatedAt)).limit(5),
+    db.select().from(schema.entities).where(and(inCtx(schema.entities.contextId, contextId), sql`${schema.entities.lastSeenAt} is not null`)).orderBy(desc(schema.entities.lastSeenAt), desc(schema.entities.mentionCount)).limit(30),
+    db.select({ id: schema.notes.id }).from(schema.notes).where(and(inCtx(schema.notes.contextId, contextId), live)),
   ])
   const meetings = await hydrateMeetings(meetingRows)
   const recent = (await attachEntities(recentRows)).sort((a, b) => (Number(b.favorite) + (b.summary ? 1 : 0) + b.wordCount / 800) - (Number(a.favorite) + (a.summary ? 1 : 0) + a.wordCount / 800)).slice(0, 5)
@@ -466,13 +477,13 @@ export async function getHomeData(contextId: string) {
 
 /* ------------------------------------------------------------- sidebar */
 
-export async function sidebarData(contextId: string) {
+export async function sidebarData(contextId: Ctx) {
   const db = await getDb()
   const [favorites, pinned, recents, inboxCount] = await Promise.all([
-    db.select({ id: schema.notes.id, title: schema.notes.title, kind: schema.notes.kind }).from(schema.notes).where(and(eq(schema.notes.contextId, contextId), live, eq(schema.notes.favorite, true))).orderBy(desc(schema.notes.updatedAt)).limit(6),
-    db.select({ id: schema.entities.id, name: schema.entities.name, type: schema.entities.type }).from(schema.entities).where(and(eq(schema.entities.contextId, contextId), eq(schema.entities.pinned, true))).limit(6),
-    db.select({ id: schema.notes.id, title: schema.notes.title, kind: schema.notes.kind }).from(schema.notes).where(and(eq(schema.notes.contextId, contextId), live)).orderBy(desc(schema.notes.updatedAt)).limit(6),
-    db.select({ n: sql<number>`count(*)` }).from(schema.notes).where(and(eq(schema.notes.contextId, contextId), live, or(eq(schema.notes.status, 'inbox'), eq(schema.notes.status, 'processing'))!)),
+    db.select({ id: schema.notes.id, title: schema.notes.title, kind: schema.notes.kind }).from(schema.notes).where(and(inCtx(schema.notes.contextId, contextId), live, eq(schema.notes.favorite, true))).orderBy(desc(schema.notes.updatedAt)).limit(6),
+    db.select({ id: schema.entities.id, name: schema.entities.name, type: schema.entities.type }).from(schema.entities).where(and(inCtx(schema.entities.contextId, contextId), eq(schema.entities.pinned, true))).limit(6),
+    db.select({ id: schema.notes.id, title: schema.notes.title, kind: schema.notes.kind }).from(schema.notes).where(and(inCtx(schema.notes.contextId, contextId), live)).orderBy(desc(schema.notes.updatedAt)).limit(6),
+    db.select({ n: sql<number>`count(*)` }).from(schema.notes).where(and(inCtx(schema.notes.contextId, contextId), live, or(eq(schema.notes.status, 'inbox'), eq(schema.notes.status, 'processing'))!)),
   ])
   return { favorites, pinned, recents, inboxCount: Number(inboxCount[0]?.n ?? 0) }
 }
@@ -501,9 +512,9 @@ export async function settingsData(contextIds: string[], notebookId: string, use
   }
 }
 
-export async function searchEntitiesByName(contextId: string, q: string, limit = 8) {
+export async function searchEntitiesByName(contextId: Ctx, q: string, limit = 8) {
   const db = await getDb()
-  return db.select({ id: schema.entities.id, name: schema.entities.name, type: schema.entities.type, attributes: schema.entities.attributes }).from(schema.entities).where(and(eq(schema.entities.contextId, contextId), q ? or(ilike(schema.entities.name, `%${q}%`), sql`exists (select 1 from jsonb_array_elements_text(${schema.entities.aliases}) a where a ilike ${'%' + q + '%'})`)! : sql`true`)).orderBy(desc(schema.entities.mentionCount)).limit(limit)
+  return db.select({ id: schema.entities.id, name: schema.entities.name, type: schema.entities.type, attributes: schema.entities.attributes }).from(schema.entities).where(and(inCtx(schema.entities.contextId, contextId), q ? or(ilike(schema.entities.name, `%${q}%`), sql`exists (select 1 from jsonb_array_elements_text(${schema.entities.aliases}) a where a ilike ${'%' + q + '%'})`)! : sql`true`)).orderBy(desc(schema.entities.mentionCount)).limit(limit)
 }
 
 /**

@@ -50,8 +50,10 @@ export async function contextOf(kind: Scoped, id: string): Promise<string | null
     case 'research': return pick(await db.select({ contextId: schema.researchProjects.contextId }).from(schema.researchProjects).where(eq(schema.researchProjects.id, id)))
     case 'fact': return pick(await db.select({ contextId: schema.facts.contextId }).from(schema.facts).where(eq(schema.facts.id, id)))
     case 'attachment': {
-      const r = (await db.select({ contextId: schema.notes.contextId }).from(schema.attachments).innerJoin(schema.notes, eq(schema.notes.id, schema.attachments.noteId)).where(eq(schema.attachments.id, id)))[0]
-      return r?.contextId ?? null
+      const a = (await db.select({ noteId: schema.attachments.noteId, taskId: schema.attachments.taskId }).from(schema.attachments).where(eq(schema.attachments.id, id)))[0]
+      if (!a) return null
+      if (a.taskId) return contextOf('task', a.taskId)
+      return a.noteId ? contextOf('note', a.noteId) : null
     }
     case 'template':
     case 'shareLink':

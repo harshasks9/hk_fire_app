@@ -1,6 +1,6 @@
 import { Page } from '@/components/shell/AppShell'
 import { PageHeader } from '@/components/ui'
-import { getActiveContext, getContexts } from '@/lib/context'
+import { getActiveScope } from '@/lib/context'
 import { numbersFor, listEntityNames } from '@/lib/numbers'
 import { NewFact } from '@/components/crud/editors'
 import { NumbersDashboard } from '@/components/numbers/NumbersDashboard'
@@ -9,8 +9,9 @@ export const dynamic = 'force-dynamic'
 
 export default async function NumbersPage({ searchParams }: { searchParams: Promise<{ all?: string }> }) {
   const { all } = await searchParams
-  const ctx = await getActiveContext()
-  const ids = all === '1' ? (await getContexts()).map((c) => c.id) : [ctx.id]
+  const scope = await getActiveScope()
+  const ids = all === '1' ? scope.contexts.map((c) => c.id) : scope.ids
+  const ctx = { name: all === '1' ? 'All' : scope.label }
   const [data, entities] = await Promise.all([numbersFor(ids), listEntityNames(ids)])
   return (
     <Page width="wide">

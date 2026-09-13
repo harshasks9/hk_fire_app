@@ -29,7 +29,7 @@ export function AppShell({ sidebar, children, viewingAsAdmin, announcement, veri
           {verifyEmail ? <VerifyBanner email={verifyEmail} /> : null}
           {/* Mobile top bar */}
           <div className="flex h-[calc(48px+env(safe-area-inset-top))] shrink-0 items-center justify-between border-b border-border bg-surface px-3 pt-[env(safe-area-inset-top)] md:hidden">
-            <ContextSwitcher contexts={sidebar.contexts} active={sidebar.active} />
+            <ContextSwitcher contexts={sidebar.contexts} active={sidebar.active} writeTo={sidebar.writeTo} />
             <div className="flex items-center gap-0.5">
               <OfflineBadge compact className="mr-1" />
               {panelAvailable ? (

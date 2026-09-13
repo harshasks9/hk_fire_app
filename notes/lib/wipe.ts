@@ -11,6 +11,7 @@
 import { and, eq, gte, inArray, lte, sql, count, type SQL } from 'drizzle-orm'
 import type { PgColumn, PgTable } from 'drizzle-orm/pg-core'
 import { getDb, schema } from './db'
+import { deleteTaskExtras } from './tasks'
 import { wipeNotebookData } from './seed/run'
 import { removeOrphanEntities } from './seed/remove'
 import { purgeNote } from './trash'
@@ -94,6 +95,8 @@ export async function wipeRange(notebookId: string, range: WipeRange): Promise<W
   }
 
   // Extracted rows created in the window, whatever note they came from.
+  const taskIds = (await db.select({ id: schema.tasks.id }).from(schema.tasks).where(and(inArray(schema.tasks.contextId, ids), within(schema.tasks.createdAt, range)))).map((r) => r.id)
+  await deleteTaskExtras(taskIds)
   await db.delete(schema.tasks).where(and(inArray(schema.tasks.contextId, ids), within(schema.tasks.createdAt, range)))
   await db.delete(schema.commitments).where(and(inArray(schema.commitments.contextId, ids), within(schema.commitments.detectedAt, range)))
   const decIds = (await db.select({ id: schema.decisions.id }).from(schema.decisions).where(and(inArray(schema.decisions.contextId, ids), within(schema.decisions.createdAt, range)))).map((r) => r.id)

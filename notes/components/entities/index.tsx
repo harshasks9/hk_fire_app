@@ -3,7 +3,7 @@ import * as React from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { TagChips } from '@/components/notes/TagChips'
-import { Users, Building2, Hash, FolderKanban, FileText, CalendarDays, Mic, Zap, Link2, Image as ImageIcon, FileUp, Mail, Star, Check, ExternalLink, GitBranch, Repeat, CheckSquare, ArrowRight, Sparkles, X, TrendingUp } from 'lucide-react'
+import { Users, Building2, Hash, FolderKanban, FileText, CalendarDays, Mic, Zap, Link2, Image as ImageIcon, FileUp, Mail, Star, Check, ExternalLink, GitBranch, Repeat, CheckSquare, ArrowRight, Sparkles, X, TrendingUp, AlignLeft, Globe } from 'lucide-react'
 import { Badge, Popover, AiMark, Button, useToast, Avatar } from '@/components/ui'
 import { api } from '@/lib/client'
 import { cx, formatDate, formatDateTime, relativeTime, formatTime } from '@/lib/util'
@@ -61,9 +61,14 @@ export function SourceHover({ sourceNoteId, sourceTitle, excerpt, date, children
   )
 }
 
+/** Which context an item belongs to; shown only while viewing All. */
+export function ContextBadge({ name }: { name: string }) {
+  return <span className="inline-flex shrink-0 items-center rounded border border-border px-1 py-px text-[10.5px] font-medium uppercase tracking-[0.04em] text-fg-3">{name}</span>
+}
+
 /* ---------------------------------------------------------------- tasks */
-export interface TaskRowProps { task: { id: string; title: string; owner: string; status: string; priority: string; dueAt: Date | string | null; sourceNoteId: string | null; sourceExcerpt: string | null; aiGenerated?: boolean; completedAt?: Date | string | null }; entityName?: string | null; sourceTitle?: string | null; showEntity?: boolean; highlight?: boolean; compact?: boolean }
-export function TaskRow({ task, entityName, sourceTitle, showEntity = true, highlight, compact }: TaskRowProps) {
+export interface TaskRowProps { task: { id: string; title: string; owner: string; status: string; priority: string; dueAt: Date | string | null; sourceNoteId: string | null; sourceExcerpt: string | null; aiGenerated?: boolean; completedAt?: Date | string | null; detailsText?: string; hasPublicLink?: boolean }; entityName?: string | null; sourceTitle?: string | null; showEntity?: boolean; highlight?: boolean; compact?: boolean; contextName?: string | null }
+export function TaskRow({ task, entityName, sourceTitle, showEntity = true, highlight, compact, contextName }: TaskRowProps) {
   const router = useRouter()
   const [status, setStatus] = React.useState(task.status)
   const done = status === 'done'
@@ -87,9 +92,13 @@ export function TaskRow({ task, entityName, sourceTitle, showEntity = true, high
       </button>
       <div className="min-w-0 flex-1">
         <div className={cx('text-[14px] leading-snug', done && 'text-fg-3 line-through')}>
-          <SourceHover sourceNoteId={task.sourceNoteId} sourceTitle={sourceTitle} excerpt={task.sourceExcerpt}>{task.title}</SourceHover>
+          <Link href={`/tasks/${task.id}`} className="hover:text-accent" title="Open the task">{task.title}</Link>
+          {task.sourceNoteId ? <SourceHover sourceNoteId={task.sourceNoteId} sourceTitle={sourceTitle} excerpt={task.sourceExcerpt}><span className="ml-1.5 align-middle text-[11px] text-fg-3">source</span></SourceHover> : null}
+          {task.detailsText ? <AlignLeft className="ml-1.5 inline h-3 w-3 align-middle text-fg-3" aria-label="Has details" /> : null}
+          {task.hasPublicLink ? <Globe className="ml-1 inline h-3 w-3 align-middle text-accent" aria-label="Public link" /> : null}
         </div>
         <div className="mt-0.5 flex flex-wrap items-center gap-x-2 gap-y-0.5 text-[12px] text-fg-3">
+          {contextName ? <ContextBadge name={contextName} /> : null}
           {task.owner && task.owner !== 'Harsha' && task.owner !== 'Me' ? <span className="inline-flex items-center gap-1"><Avatar name={task.owner} size={14} />{task.owner}</span> : null}
           {showEntity && entityName ? <span>{entityName}</span> : null}
           {due ? <span className={cx(overdue && 'font-medium text-danger')}>{overdue ? 'Overdue · ' : 'Due '}{formatDate(due)}</span> : null}
@@ -112,7 +121,7 @@ export function TaskRow({ task, entityName, sourceTitle, showEntity = true, high
 }
 
 /* ---------------------------------------------------------------- open loops */
-export function LoopRow({ loop, showCompany = true, highlight }: { loop: { id: string; text: string; kind: string; byWhom: string; status: string; detectedAt: Date | string; sourceNoteId: string | null; sourceExcerpt: string | null; dueHint?: string | null; companyName?: string | null; counterpartyName?: string | null; sourceTitle?: string | null; ageDays?: number; priority?: string }; showCompany?: boolean; highlight?: boolean }) {
+export function LoopRow({ loop, showCompany = true, highlight, contextName }: { loop: { id: string; text: string; kind: string; byWhom: string; status: string; detectedAt: Date | string; sourceNoteId: string | null; sourceExcerpt: string | null; dueHint?: string | null; companyName?: string | null; counterpartyName?: string | null; sourceTitle?: string | null; ageDays?: number; priority?: string }; showCompany?: boolean; highlight?: boolean; contextName?: string | null }) {
   const router = useRouter()
   const [status, setStatus] = React.useState(loop.status)
   const set = async (s: 'resolved' | 'dismissed' | 'open') => {
@@ -128,6 +137,7 @@ export function LoopRow({ loop, showCompany = true, highlight }: { loop: { id: s
       <Repeat className="mt-1 h-3.5 w-3.5 shrink-0 text-fg-3" />
       <div className="min-w-0 flex-1">
         <div className="flex flex-wrap items-center gap-1.5 text-[12px]">
+          {contextName ? <ContextBadge name={contextName} /> : null}
           <Badge tone={tone as 'accent' | 'warning' | 'neutral'}>{label}{loop.kind === 'waiting' && loop.byWhom && loop.byWhom !== 'Them' ? ` ${loop.byWhom}` : ''}</Badge>
           {showCompany && loop.companyName ? <span className="text-fg-3">{loop.companyName}</span> : null}
           {loop.counterpartyName && loop.kind !== 'waiting' ? <span className="text-fg-3">with {loop.counterpartyName}</span> : null}
@@ -215,13 +225,14 @@ export function Timeline({ events, limit = 12 }: { events: { id: string; kind: s
 }
 
 /* ---------------------------------------------------------------- notes list */
-export function NoteRow({ note, showEntities = true, dense }: { note: { id: string; title: string; kind: string; updatedAt: Date | string; preview: string; favorite?: boolean; status?: string; entities?: { id: string; name: string; type: EntityType }[]; wordCount?: number; source?: string; tags?: string[] }; showEntities?: boolean; dense?: boolean }) {
+export function NoteRow({ note, showEntities = true, dense, contextName }: { note: { id: string; title: string; kind: string; updatedAt: Date | string; preview: string; favorite?: boolean; status?: string; entities?: { id: string; name: string; type: EntityType }[]; wordCount?: number; source?: string; tags?: string[] }; showEntities?: boolean; dense?: boolean; contextName?: string | null }) {
   return (
     <Link href={`/notes/${note.id}`} className={cx('group -mx-3 flex items-start gap-3 rounded-lg px-3 row-hover', dense ? 'py-2' : 'py-2.5')}>
       <NoteKindIcon kind={note.kind} className="mt-[3px] h-4 w-4 shrink-0 text-fg-3" />
       <div className="min-w-0 flex-1">
         <div className="flex items-center gap-2">
           <span className="truncate text-[14.5px] font-medium">{note.title || 'Untitled'}</span>
+          {contextName ? <ContextBadge name={contextName} /> : null}
           {note.favorite ? <Star className="h-3 w-3 shrink-0 fill-warning text-warning" /> : null}
           {note.status === 'processing' || note.status === 'inbox' ? <Badge tone="accent">{note.status === 'processing' ? 'AI processing' : 'new'}</Badge> : null}
         </div>
@@ -239,7 +250,7 @@ export function NoteRow({ note, showEntities = true, dense }: { note: { id: stri
 }
 
 /* ---------------------------------------------------------------- meetings */
-export function MeetingRow({ m, showStatus }: { m: { id: string; title: string; startsAt: Date | string; endsAt?: Date | string | null; status: string; participants: { id: string; name: string }[]; company: { id: string; name: string } | null; noteSummary?: string | null; location?: string | null }; showStatus?: boolean }) {
+export function MeetingRow({ m, showStatus, contextName }: { m: { id: string; title: string; startsAt: Date | string; endsAt?: Date | string | null; status: string; participants: { id: string; name: string }[]; company: { id: string; name: string } | null; noteSummary?: string | null; location?: string | null }; showStatus?: boolean; contextName?: string | null }) {
   const start = new Date(m.startsAt)
   const today = new Date().toDateString() === start.toDateString()
   return (
@@ -252,6 +263,7 @@ export function MeetingRow({ m, showStatus }: { m: { id: string; title: string; 
       <div className="min-w-0 flex-1">
         <div className="flex items-center gap-2">
           <span className="truncate text-[14.5px] font-medium group-hover:text-accent">{m.title}</span>
+          {contextName ? <ContextBadge name={contextName} /> : null}
           {showStatus ? <Badge tone={m.status === 'live' ? 'danger' : m.status === 'upcoming' ? 'accent' : 'neutral'}>{m.status}</Badge> : null}
         </div>
         <div className="mt-0.5 flex flex-wrap items-center gap-x-2 gap-y-0.5 text-[12.5px] text-fg-3">
@@ -273,7 +285,7 @@ export function MeetingRow({ m, showStatus }: { m: { id: string; title: string; 
 }
 
 /* ---------------------------------------------------------------- decisions */
-export function DecisionCard({ d, compact }: { d: { id: string; title: string; statement: string; decidedAt: Date | string; status: string; revisions?: number; topicName?: string | null; companyName?: string | null; sourceNoteId?: string | null; sourceExcerpt?: string | null; sourceTitle?: string | null }; compact?: boolean }) {
+export function DecisionCard({ d, compact, contextName }: { d: { id: string; title: string; statement: string; decidedAt: Date | string; status: string; revisions?: number; topicName?: string | null; companyName?: string | null; sourceNoteId?: string | null; sourceExcerpt?: string | null; sourceTitle?: string | null }; compact?: boolean; contextName?: string | null }) {
   const tone = d.status === 'active' ? 'success' : d.status === 'revisited' || d.status === 'proposed' ? 'warning' : 'neutral'
   return (
     <div className={cx('group relative -mx-3 rounded-lg px-3 row-hover', compact ? 'py-2' : 'py-2.5')}>
@@ -281,6 +293,7 @@ export function DecisionCard({ d, compact }: { d: { id: string; title: string; s
       <div className="flex items-center gap-2">
         <GitBranch className="h-3.5 w-3.5 shrink-0 text-fg-3" />
         <span className="truncate text-[14px] font-medium group-hover:text-accent">{d.title}</span>
+        {contextName ? <ContextBadge name={contextName} /> : null}
         <Badge tone={tone as 'success' | 'warning' | 'neutral'}>{d.status}</Badge>
         {d.revisions && d.revisions > 1 ? <span className="text-[11.5px] text-fg-3">{d.revisions} revisions</span> : null}
       </div>

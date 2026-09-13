@@ -13,3 +13,12 @@ export async function GET(_: NextRequest, { params }: { params: Promise<{ id: st
   if (!a.data) return NextResponse.json({ error: 'no data' }, { status: 404 })
   return new NextResponse(Buffer.from(a.data, 'base64'), { headers: { 'Content-Type': a.mime, 'Content-Disposition': `inline; filename="${a.name}"`, 'Cache-Control': 'private, max-age=3600' } })
 }
+
+export async function DELETE(_: NextRequest, { params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params
+  const denied = await guardOwned('attachment', id)
+  if (denied) return denied
+  const db = await getDb()
+  await db.delete(schema.attachments).where(eq(schema.attachments.id, id))
+  return new NextResponse(null, { status: 204 })
+}

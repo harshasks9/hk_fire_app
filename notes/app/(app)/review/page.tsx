@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { Page } from '@/components/shell/AppShell'
 import { PageHeader, Badge } from '@/components/ui'
-import { getActiveContext } from '@/lib/context'
+import { getActiveScope } from '@/lib/context'
 import { buildWeekReview, parseWeekKey, weekKey } from '@/lib/review'
 import { ReviewNarrative } from '@/components/review/ReviewNarrative'
 import { addDays, formatDate, relativeTime } from '@/lib/util'
@@ -11,9 +11,11 @@ export const metadata = { title: 'Weekly review' }
 
 export default async function ReviewPage({ searchParams }: { searchParams: Promise<{ week?: string }> }) {
   const { week } = await searchParams
-  const ctx = await getActiveContext()
+  const scope = await getActiveScope()
+  const ctx = { name: scope.label }
   const start = parseWeekKey(week)
-  const r = await buildWeekReview(ctx.id, start)
+  const reviewKey = scope.all ? `all:${scope.active.notebookId}` : scope.active.id
+  const r = await buildWeekReview(scope.ids, start, reviewKey)
   const prev = weekKey(addDays(start, -7))
   const next = weekKey(addDays(start, 7))
   const isCurrent = weekKey(new Date()) === r.weekStart
@@ -31,7 +33,7 @@ export default async function ReviewPage({ searchParams }: { searchParams: Promi
           </div>
         }
       />
-      <ReviewNarrative contextId={ctx.id} week={r.weekStart} narrative={r.narrative ? { text: r.narrative.text, provider: r.narrative.provider, updatedAt: r.narrative.updatedAt.toISOString() } : null} empty={empty} />
+      <ReviewNarrative contextId={reviewKey} week={r.weekStart} narrative={r.narrative ? { text: r.narrative.text, provider: r.narrative.provider, updatedAt: r.narrative.updatedAt.toISOString() } : null} empty={empty} />
 
       <div className="mb-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
         <Stat label="Notes" value={r.notes.length} sub={`${r.notes.reduce((a, n) => a + n.wordCount, 0)} words`} />

@@ -12,7 +12,10 @@ import { OfflineBadge } from '@/components/offline/OfflineBadge'
 
 export interface SidebarProps {
   contexts: { id: string; slug: string; name: string; kind: string }[]
+  /** The selected context, or the virtual "All" entry. */
   active: { id: string; slug: string; name: string; kind: string }
+  /** Where new things go while "All" is selected. */
+  writeTo?: string
   favorites: { id: string; title: string; kind: string }[]
   recents: { id: string; title: string; kind: string }[]
   pinned: { id: string; name: string; type: string }[]
@@ -53,7 +56,7 @@ export function Sidebar(props: SidebarProps) {
   return (
     <nav className={cx('hidden h-dvh shrink-0 flex-col border-r border-border bg-surface transition-[width] duration-200 md:flex', collapsed ? 'w-[var(--sidebar-collapsed-w)]' : 'w-[var(--sidebar-w)]')} aria-label="Primary">
       <div className={cx('flex h-12 items-center', collapsed ? 'justify-center' : 'justify-between px-3')}>
-        {!collapsed ? <ContextSwitcher contexts={props.contexts} active={props.active} /> : null}
+        {!collapsed ? <ContextSwitcher contexts={props.contexts} active={props.active} writeTo={props.writeTo} /> : null}
         <button className="rounded-md p-1.5 text-fg-3 hover:bg-surface-2 hover:text-fg" onClick={() => setShell({ sidebarCollapsed: !collapsed })} title={collapsed ? 'Expand sidebar (⌘\\)' : 'Collapse sidebar (⌘\\)'} aria-label="Toggle sidebar">
           {collapsed ? <PanelLeftOpen className="h-4 w-4" /> : <PanelLeftClose className="h-4 w-4" />}
         </button>
@@ -139,7 +142,7 @@ export function Sidebar(props: SidebarProps) {
   )
 }
 
-export function ContextSwitcher({ contexts, active, className }: { contexts: SidebarProps['contexts']; active: SidebarProps['active']; className?: string }) {
+export function ContextSwitcher({ contexts, active, className, writeTo }: { contexts: SidebarProps['contexts']; active: SidebarProps['active']; className?: string; writeTo?: string }) {
   const [open, setOpen] = React.useState(false)
   const router = useRouter()
   const ref = React.useRef<HTMLDivElement>(null)
@@ -165,6 +168,13 @@ export function ContextSwitcher({ contexts, active, className }: { contexts: Sid
       {open ? (
         <div className="animate-pop absolute left-0 top-full z-50 mt-1 w-56 rounded-xl border border-border bg-surface p-1 shadow-pop" role="listbox">
           <div className="px-2 py-1 text-[11px] font-semibold uppercase tracking-[0.06em] text-fg-3">Context</div>
+          <button onClick={() => switchTo('all')} className="flex w-full items-center gap-2 rounded-lg px-2 py-1.5 text-left text-[13.5px] hover:bg-surface-2" role="option" aria-selected={active.id === 'all'}>
+            <span className={cx('inline-block h-2 w-2 rounded-full', dotFor('all'))} />
+            <span className="flex-1">All</span>
+            <span className="text-[11px] text-fg-3">every context</span>
+            {active.id === 'all' ? <Check className="h-3.5 w-3.5 text-accent" /> : null}
+          </button>
+          <div className="my-1 h-px bg-border" />
           {contexts.map((c) => (
             <button key={c.id} onClick={() => switchTo(c.slug)} className="flex w-full items-center gap-2 rounded-lg px-2 py-1.5 text-left text-[13.5px] hover:bg-surface-2" role="option" aria-selected={c.id === active.id}>
               <span className={cx('inline-block h-2 w-2 rounded-full', dotFor(c.kind))} />
@@ -172,7 +182,7 @@ export function ContextSwitcher({ contexts, active, className }: { contexts: Sid
               {c.id === active.id ? <Check className="h-3.5 w-3.5 text-accent" /> : null}
             </button>
           ))}
-          <div className="mt-1 border-t border-border px-2 pt-1.5 text-[11.5px] text-fg-3">Contexts keep data, permissions and AI retrieval separate.</div>
+          <div className="mt-1 border-t border-border px-2 pt-1.5 text-[11.5px] text-fg-3">{active.id === 'all' ? `Viewing everything. New notes and tasks go to ${writeTo ?? 'your last context'}.` : 'Contexts keep data, permissions and AI retrieval separate. All shows them together.'}</div>
         </div>
       ) : null}
     </div>

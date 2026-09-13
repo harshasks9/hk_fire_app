@@ -230,3 +230,16 @@ Goal: a recording made on a phone (or the transcript an app produced from it) be
 - C2. Editors are one shared dialog driven by a field spec (text, textarea, date, datetime, select). Dates entered by hand are stored at noon local time (due dates at 17:00) so they do not slip a day across time zones.
 - C3. Routes: `POST/PATCH/DELETE` for entities, decisions (a manual decision gets a `made`/`proposed` revision), commitments, facts (numeric value parsed from `$7.6M`-style text), research, meetings (delete also removes transcripts, timeline entries, relations and embeddings and unlinks notes), tasks; `PATCH/DELETE /api/tags`. Deleting an entity removes its facts, relations, timeline and embeddings and nulls references on tasks, loops, decisions, meetings and insights; notes are never deleted by these actions.
 
+## 24. All: one view across contexts (F22)
+
+- A1. The context switcher offers *All* above the real contexts. Selecting it sets the context cookie to `all` and remembers the previous context in a second cookie; `getActiveScope()` returns every context id for reads while `getActiveContext()` keeps returning the remembered context for writes, so every create path (notes, quick capture, voice, tasks, meetings, research, entities) keeps working unchanged.
+- A2. Every list query accepts one id or many (`inCtx` builds `=` or `in (...)`); Home, the sidebar, Notes, Inbox, Tasks, Loops, Decisions, Meetings, People/Companies/Topics, Tags, Numbers, Research, Search, Ask, Graph and the weekly review honour the scope. The daily brief and the weekly review narrative cache under `all:<notebook>` so the cross-context versions never overwrite a context's own.
+- A3. While *All* is selected, rows show a context badge; page subtitles read *All*; the switcher footer names where new items go.
+
+## 25. Task details, files and public links (F23)
+
+- T1. `tasks.details` (editor JSON) with `details_text` (projection). `/tasks/<id>` shows status, owner, due, priority, context, entity and source, then the editor bound to the task (autosave via `PATCH /api/tasks/<id>` with `details`), then *Files and media*.
+- T2. Attachments belong to a note **or** a task (`attachments.task_id`, `note_id` nullable). `POST /api/upload` takes `taskId` or `noteId`; `DELETE /api/attachments/<id>` removes one; images pasted or dropped into the details are stored the same way. Audio and video render as players; images as a gallery; other files as a list. Deleting a task removes its files and links; wipes and context deletion do the same.
+- T3. Share links belong to a note **or** a task (`share_links.task_id`). `GET/POST /api/tasks/<id>/share` mirror the note routes; `POST /api/tasks` accepts `detailsText` (plain text → document) and `public: true` (creates a never-expiring link and returns `shareUrl`). The public page `/s/<token>` renders a task (title, status, owner, due, priority, details, attachments) or a note; `/s/<token>/a/<attachmentId>` serves only attachments of that shared item, without counting a view, and stops working the moment the link is revoked or expired. The private `/api/attachments/<id>` route still requires a session.
+- T4. Task rows link to the task page and show a details icon and a globe when a live public link exists.
+

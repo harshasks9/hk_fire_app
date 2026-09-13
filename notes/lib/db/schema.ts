@@ -296,6 +296,9 @@ export const tasks = pgTable(
     priority: text('priority').$type<Priority>().notNull().default('normal'),
     aiGenerated: boolean('ai_generated').notNull().default(true),
     completedAt: timestamp('completed_at', { withTimezone: true }),
+    /** Rich details written by hand: editor JSON (images, files, tables, sheets) and its text projection. */
+    details: jsonb('details').$type<unknown>(),
+    detailsText: text('details_text').notNull().default(''),
     createdAt: now('created_at'),
     updatedAt: now('updated_at'),
   },
@@ -454,7 +457,9 @@ export const attachments = pgTable(
   'attachments',
   {
     id: id(),
-    noteId: text('note_id').notNull(),
+    /** Exactly one of noteId / taskId is set. */
+    noteId: text('note_id'),
+    taskId: text('task_id'),
     name: text('name').notNull(),
     mime: text('mime').notNull(),
     size: integer('size').notNull(),
@@ -464,7 +469,7 @@ export const attachments = pgTable(
     durationSeconds: doublePrecision('duration_seconds'),
     createdAt: now('created_at'),
   },
-  (t) => [index('attachments_note').on(t.noteId)],
+  (t) => [index('attachments_note').on(t.noteId), index('attachments_task').on(t.taskId)],
 )
 
 /* --------------------------------- timeline ------------------------------ */
@@ -608,7 +613,9 @@ export const noteVersions = pgTable('note_versions', {
 export const shareLinks = pgTable('share_links', {
   id: id(),
   notebookId: text('notebook_id').notNull(),
-  noteId: text('note_id').notNull(),
+  /** Exactly one of noteId / taskId is set. */
+  noteId: text('note_id'),
+  taskId: text('task_id'),
   tokenHash: text('token_hash').notNull().unique(),
   token: text('token').notNull(),
   createdBy: text('created_by'),
@@ -617,7 +624,7 @@ export const shareLinks = pgTable('share_links', {
   views: integer('views').notNull().default(0),
   lastViewedAt: timestamp('last_viewed_at', { withTimezone: true }),
   createdAt: now('created_at'),
-}, (t) => [index('share_links_note_idx').on(t.noteId)])
+}, (t) => [index('share_links_note_idx').on(t.noteId), index('share_links_task_idx').on(t.taskId)])
 
 /** Note templates: built-in (notebook_id null) and per-notebook custom ones. */
 export const templates = pgTable('templates', {
