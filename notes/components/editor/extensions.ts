@@ -136,6 +136,7 @@ export const Sheet = Node.create({
     }
   },
   addNodeView() {
-    return ReactNodeViewRenderer(SheetView)
+    // The grid owns every key, click and paste inside it; the document never sees them.
+    return ReactNodeViewRenderer(SheetView, { stopEvent: () => true })
   },
 })

@@ -10,6 +10,8 @@ export interface SheetData {
   cells: Cells
   /** Column letter → display format. */
   formats?: Record<string, CellFormat>
+  /** Column letter → width in px (unset columns use the default). */
+  widths?: Record<string, number>
   charts?: SheetChart[]
 }
 
@@ -17,11 +19,13 @@ export const DEFAULT_SHEET: SheetData = { rows: 8, cols: 5, cells: {}, formats: 
 
 export function normalizeSheet(raw: unknown): SheetData {
   const o = (raw && typeof raw === 'object' ? raw : {}) as Partial<SheetData>
-  const rows = Math.max(1, Math.min(500, Number(o.rows) || DEFAULT_SHEET.rows))
-  const cols = Math.max(1, Math.min(52, Number(o.cols) || DEFAULT_SHEET.cols))
+  const rows = Math.max(1, Math.min(1000, Number(o.rows) || DEFAULT_SHEET.rows))
+  const cols = Math.max(1, Math.min(104, Number(o.cols) || DEFAULT_SHEET.cols))
   const cells: Cells = {}
   for (const [k, v] of Object.entries(o.cells ?? {})) if (typeof v === 'string' && v !== '') cells[k.toUpperCase()] = v
-  return { title: typeof o.title === 'string' ? o.title : undefined, rows, cols, cells, formats: (o.formats ?? {}) as Record<string, CellFormat>, charts: Array.isArray(o.charts) ? (o.charts as SheetChart[]).filter((c) => c && typeof c.range === 'string') : [] }
+  const widths: Record<string, number> = {}
+  for (const [k, v] of Object.entries(o.widths ?? {})) if (typeof v === 'number' && v >= 40 && v <= 800) widths[k.toUpperCase()] = Math.round(v)
+  return { title: typeof o.title === 'string' ? o.title : undefined, rows, cols, cells, formats: (o.formats ?? {}) as Record<string, CellFormat>, widths, charts: Array.isArray(o.charts) ? (o.charts as SheetChart[]).filter((c) => c && typeof c.range === 'string') : [] }
 }
 
 export interface Series { name: string; values: (number | null)[] }
