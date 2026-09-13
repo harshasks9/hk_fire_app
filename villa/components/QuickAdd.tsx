@@ -45,6 +45,10 @@ export function QuickAdd() {
 
   const close = () => { setOpen(false); setKind(null); };
 
+  // The console already offers an explicit "Add" per collection; a floating
+  // second way in would only duplicate it and sit on top of the row actions.
+  if (pathname.startsWith("/manage")) return null;
+
   return (
     <>
       <button

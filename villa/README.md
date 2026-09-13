@@ -46,6 +46,7 @@ thinks to ask for it.
 | **Costs** | Seven money columns, drill-down from project to item, the BOQ, the scenario planner, and payments. |
 | **Procurement** | Nine-state pipeline, with long-lead items given their own place because they are what moves handover. |
 | **Site** | Mobile-first capture. Pick the room once; everything files itself there. |
+| **Manage** | The editing console. Everything in the project, floor by floor — create, edit and delete across all sixteen collections, with references cleaned up on delete. |
 | **More** | Vendors & quotation comparison, notes, documents, and the completeness report. |
 
 ## Things worth knowing
@@ -106,7 +107,7 @@ mention. These are in the model, marked *Added by the app*:
 ```bash
 npm install
 npm run dev        # http://localhost:3000
-npm test           # 42 tests over the model, workflow and seed
+npm test           # 58 tests over the model, workflow, seed and CRUD integrity
 npm run typecheck
 npm run build
 ```
@@ -131,7 +132,8 @@ lib/seed/build.ts        generates scope items and a coherent money ladder
 lib/seed/content.ts      curated ideas, options, decisions, quotes, snags, notes
 lib/plans/geometry.ts    floor-plate SVG geometry
 lib/search.ts            answers questions first, indexes everything else
-lib/store.tsx            reducer, persistence, role modes
+lib/model/schema.ts      per-collection editable fields — one source for every form
+lib/store.tsx            reducer, uniform CRUD, delete cascades, persistence, roles
 ```
 
 ## The seeded project

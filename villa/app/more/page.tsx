@@ -6,6 +6,8 @@ import { findGaps, openSnags, projectFinance } from "@/lib/model/derive";
 import { PageTitle, Eyebrow, Chip } from "@/components/ui";
 
 const LINKS = [
+  { href: "/manage", title: "Manage the project",
+    blurb: "Create, edit and delete anything in the villa — floor by floor, room by room, across all sixteen kinds of record." },
   { href: "/vendors", title: "Vendors & quotations", blurb: "Suppliers, and side-by-side quote comparison that flags when quotes are not like-for-like." },
   { href: "/notes", title: "Project notes", blurb: "Meetings, site visits, calls and measurements — the project's memory, tagged to everything." },
   { href: "/documents", title: "Documents", blurb: "Drawings, quotes, POs, invoices, warranties and manuals." },

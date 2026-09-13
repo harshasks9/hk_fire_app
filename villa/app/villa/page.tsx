@@ -35,6 +35,7 @@ export default function VillaPage() {
       <PageTitle
         title="The villa"
         sub="Every room in the house, already carrying its own scope. Click a floor, then a room."
+        right={<Link href="/manage" className="btn">Add or edit spaces</Link>}
       />
 
       <div className="grid lg:grid-cols-[240px_1fr] gap-6 items-start">

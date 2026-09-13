@@ -4,6 +4,7 @@ import React, { createContext, useContext, useEffect, useMemo, useReducer, useSt
 import type {
   ProjectState, ScopeItem, Stage, Idea, DesignOption, Comment, Decision, Task,
   Snag, Note, Space, Role, CostBuildUp, CostLadder, Payment, SiteUpdate,
+  Vendor, Quotation, Doc, Scenario, Person, ProjectMeta,
 } from "./model/types";
 import { buildProject } from "./seed";
 
@@ -11,14 +12,65 @@ const STORAGE_KEY = "villa-fitout:v1";
 
 /* ------------------------------------------------------------------ actions */
 
+/**
+ * Every collection that supports uniform create / update / delete.
+ *
+ * Typing them as a map means one set of three actions covers the whole project
+ * — no entity can quietly end up read-only because someone forgot to write its
+ * reducer case, which is exactly how vendors, quotations and documents became
+ * uneditable the first time round.
+ */
+export interface Collections {
+  spaces: Space;
+  items: ScopeItem;
+  ideas: Idea;
+  options: DesignOption;
+  decisions: Decision;
+  comments: Comment;
+  vendors: Vendor;
+  quotations: Quotation;
+  tasks: Task;
+  snags: Snag;
+  notes: Note;
+  payments: Payment;
+  docs: Doc;
+  siteUpdates: SiteUpdate;
+  scenarios: Scenario;
+  people: Person;
+}
+export type CollectionKey = keyof Collections;
+
+export const COLLECTION_KEYS = [
+  "spaces", "items", "ideas", "options", "decisions", "comments", "vendors",
+  "quotations", "tasks", "snags", "notes", "payments", "docs", "siteUpdates",
+  "scenarios", "people",
+] as const;
+
+type CreateAction = { [K in CollectionKey]: { type: "create"; on: K; row: Collections[K] } }[CollectionKey];
+type UpdateAction = { [K in CollectionKey]: { type: "update"; on: K; id: string; patch: Partial<Collections[K]> } }[CollectionKey];
+
 export type Action =
   | { type: "reset" }
   | { type: "hydrate"; state: ProjectState }
+  | { type: "meta/patch"; patch: Partial<ProjectMeta> }
+  /* uniform CRUD over any collection */
+  | CreateAction
+  | UpdateAction
+  | { type: "remove"; on: CollectionKey; id: string }
+  | { type: "removeMany"; on: CollectionKey; ids: string[] }
+  /* space-specific */
+  | { type: "space/delete"; id: string; withItems: boolean }
+  | { type: "space/merge"; fromId: string; intoId: string }
+  /* scope-item workflow — these carry business rules, not just field writes */
   | { type: "item/stage"; id: string; stage: Stage; naReason?: string }
   | { type: "item/patch"; id: string; patch: Partial<ScopeItem> }
   | { type: "item/cost"; id: string; cost: Partial<CostBuildUp> }
   | { type: "item/ladder"; id: string; ladder: Partial<CostLadder> }
   | { type: "item/add"; item: ScopeItem }
+  | { type: "item/duplicate"; id: string; newId: string }
+  | { type: "item/bulkStage"; ids: string[]; stage: Stage }
+  | { type: "item/move"; ids: string[]; spaceId?: string }
+  /* the design conversation */
   | { type: "idea/add"; idea: Idea }
   | { type: "idea/shortlist"; id: string }
   | { type: "option/add"; option: DesignOption }
@@ -26,6 +78,7 @@ export type Action =
   | { type: "comment/react"; id: string; emoji: string; by: string }
   | { type: "decision/add"; decision: Decision }
   | { type: "decision/act"; id: string; action: "approved" | "rejected" | "changes-requested" | "held"; by: string; note?: string; optionId?: string }
+  /* execution */
   | { type: "task/add"; task: Task }
   | { type: "task/patch"; id: string; patch: Partial<Task> }
   | { type: "snag/add"; snag: Snag }
@@ -36,6 +89,103 @@ export type Action =
   | { type: "space/add"; space: Space }
   | { type: "space/patch"; id: string; patch: Partial<Space> }
   | { type: "scenario/set"; id: string };
+
+/** Rows in every collection carry a string `id`. */
+const rowsOf = (s: ProjectState, on: CollectionKey): { id: string }[] =>
+  s[on] as unknown as { id: string }[];
+
+const setRows = (s: ProjectState, on: CollectionKey, rows: unknown[]): ProjectState =>
+  ({ ...s, [on]: rows }) as ProjectState;
+
+/**
+ * Deleting a row must not leave dangling references behind it.
+ * Each collection declares what else has to be cleaned up.
+ */
+/** Cascade the consequences of a deletion, then remove the row itself. */
+function removeRow(s: ProjectState, on: CollectionKey, id: string): ProjectState {
+  const cascaded = cascadeDelete(s, on, id);
+  return setRows(cascaded, on, rowsOf(cascaded, on).filter((r) => r.id !== id));
+}
+
+function cascadeDelete(s: ProjectState, on: CollectionKey, id: string): ProjectState {
+  switch (on) {
+    case "items": {
+      // Children are removed through their own cascades, not filtered out from
+      // under them — otherwise a note still points at a decision that is gone.
+      let next = s;
+      for (const x of s.ideas.filter((x) => x.scopeItemId === id)) next = removeRow(next, "ideas", x.id);
+      for (const x of s.options.filter((x) => x.scopeItemId === id)) next = removeRow(next, "options", x.id);
+      for (const x of s.decisions.filter((x) => x.scopeItemId === id)) next = removeRow(next, "decisions", x.id);
+      for (const x of s.comments.filter((c) => c.targetType === "item" && c.targetId === id)) {
+        next = removeRow(next, "comments", x.id);
+      }
+      s = next;
+      return {
+        ...s,
+        tasks: s.tasks.map((t) => (t.scopeItemId === id ? { ...t, scopeItemId: undefined } : t)),
+        snags: s.snags.map((x) => (x.scopeItemId === id ? { ...x, scopeItemId: undefined } : x)),
+        notes: s.notes.map((n) => ({ ...n, scopeItemIds: n.scopeItemIds.filter((x) => x !== id) })),
+        docs: s.docs.map((d) => ({ ...d, scopeItemIds: d.scopeItemIds.filter((x) => x !== id) })),
+        payments: s.payments.map((p) => ({ ...p, scopeItemIds: p.scopeItemIds.filter((x) => x !== id) })),
+        quotations: s.quotations
+          .map((q) => ({ ...q, scopeItemIds: q.scopeItemIds.filter((x) => x !== id), lines: q.lines.filter((l) => l.scopeItemId !== id) }))
+          .filter((q) => q.scopeItemIds.length > 0),
+      };
+    }
+    case "ideas":
+      return { ...s, comments: s.comments.filter((c) => !(c.targetType === "idea" && c.targetId === id)) };
+    case "options": {
+      const next = { ...s, comments: s.comments.filter((c) => !(c.targetType === "option" && c.targetId === id)) };
+      return {
+        ...next,
+        decisions: next.decisions.map((d) => ({
+          ...d,
+          recommendedOptionId: d.recommendedOptionId === id ? undefined : d.recommendedOptionId,
+          alternativeOptionIds: d.alternativeOptionIds.filter((x) => x !== id),
+        })),
+        items: next.items.map((i) => (i.chosenOptionId === id ? { ...i, chosenOptionId: undefined } : i)),
+      };
+    }
+    case "decisions":
+      return {
+        ...s,
+        comments: s.comments.filter((c) => !(c.targetType === "decision" && c.targetId === id)),
+        notes: s.notes.map((n) => ({ ...n, decisionIds: n.decisionIds.filter((x) => x !== id) })),
+      };
+    case "vendors":
+      return {
+        ...s,
+        items: s.items.map((i) => (i.vendorId === id ? { ...i, vendorId: undefined } : i)),
+        tasks: s.tasks.map((t) => (t.vendorId === id ? { ...t, vendorId: undefined } : t)),
+        snags: s.snags.map((x) => (x.vendorId === id ? { ...x, vendorId: undefined } : x)),
+        docs: s.docs.map((d) => (d.vendorId === id ? { ...d, vendorId: undefined } : d)),
+        notes: s.notes.map((n) => ({ ...n, vendorIds: n.vendorIds.filter((x) => x !== id) })),
+        quotations: s.quotations.filter((q) => q.vendorId !== id),
+        payments: s.payments.filter((p) => p.vendorId !== id),
+        comments: s.comments.filter(
+          (c) => !(c.targetType === "quote" && s.quotations.some((q) => q.vendorId === id && q.id === c.targetId)),
+        ),
+      };
+    case "quotations":
+      return { ...s, comments: s.comments.filter((c) => !(c.targetType === "quote" && c.targetId === id)) };
+    case "tasks":
+      return {
+        ...s,
+        tasks: s.tasks.map((t) => ({ ...t, dependsOn: t.dependsOn.filter((x) => x !== id) })),
+        notes: s.notes.map((n) => ({ ...n, taskIds: n.taskIds.filter((x) => x !== id) })),
+      };
+    case "snags":
+    case "notes":
+      return { ...s, comments: s.comments.filter((c) => !((c.targetType === "snag" || c.targetType === "note") && c.targetId === id)) };
+    case "comments":
+      // A deleted parent takes its replies with it.
+      return { ...s, comments: s.comments.filter((c) => c.parentId !== id) };
+    case "scenarios":
+      return { ...s, activeScenarioId: s.activeScenarioId === id ? undefined : s.activeScenarioId };
+    default:
+      return s;
+  }
+}
 
 const mapItem = (s: ProjectState, id: string, fn: (i: ScopeItem) => ScopeItem): ProjectState => ({
   ...s,
@@ -57,6 +207,93 @@ export function reducer(s: ProjectState, a: Action): ProjectState {
 
     case "hydrate":
       return a.state;
+
+    case "meta/patch":
+      return { ...s, meta: { ...s.meta, ...a.patch } };
+
+    /* ------------------------------------------------- uniform CRUD */
+    case "create":
+      return setRows(s, a.on, [...rowsOf(s, a.on), a.row as { id: string }]);
+
+    case "update":
+      return setRows(
+        s, a.on,
+        rowsOf(s, a.on).map((r) => (r.id === a.id ? { ...r, ...(a.patch as object) } : r)),
+      );
+
+    case "remove":
+      return removeRow(s, a.on, a.id);
+
+    case "removeMany": {
+      let next = s;
+      for (const id of a.ids) next = removeRow(next, a.on, id);
+      return next;
+    }
+
+    /* --------------------------------------------------------- spaces */
+    case "space/delete": {
+      const doomed = s.items.filter((i) => i.spaceId === a.id).map((i) => i.id);
+      let next = s;
+      if (a.withItems) {
+        for (const id of doomed) next = removeRow(next, "items", id);
+      } else {
+        // Keep the scope but let it fall back to house-wide rather than vanish.
+        next = { ...next, items: next.items.map((i) => (i.spaceId === a.id ? { ...i, spaceId: undefined } : i)) };
+      }
+      return {
+        ...next,
+        spaces: next.spaces.filter((x) => x.id !== a.id).map((x) => (x.parentId === a.id ? { ...x, parentId: undefined } : x)),
+        tasks: next.tasks.map((t) => (t.spaceId === a.id ? { ...t, spaceId: undefined } : t)),
+        snags: next.snags.filter((x) => x.spaceId !== a.id),
+        siteUpdates: next.siteUpdates.filter((u) => u.spaceId !== a.id),
+        notes: next.notes.map((n) => ({ ...n, spaceIds: n.spaceIds.filter((x) => x !== a.id) })),
+        docs: next.docs.map((d) => ({ ...d, spaceIds: d.spaceIds.filter((x) => x !== a.id) })),
+      };
+    }
+
+    /** Combine two spaces: everything belonging to `from` moves to `into`. */
+    case "space/merge": {
+      if (a.fromId === a.intoId) return s;
+      const re = (id?: string) => (id === a.fromId ? a.intoId : id);
+      const reList = (ids: string[]) => Array.from(new Set(ids.map((x) => (x === a.fromId ? a.intoId : x))));
+      return {
+        ...s,
+        spaces: s.spaces.filter((x) => x.id !== a.fromId).map((x) => ({ ...x, parentId: re(x.parentId) })),
+        items: s.items.map((i) => ({ ...i, spaceId: re(i.spaceId) })),
+        tasks: s.tasks.map((t) => ({ ...t, spaceId: re(t.spaceId) })),
+        snags: s.snags.map((x) => ({ ...x, spaceId: re(x.spaceId)! })),
+        siteUpdates: s.siteUpdates.map((u) => ({ ...u, spaceId: re(u.spaceId)! })),
+        notes: s.notes.map((n) => ({ ...n, spaceIds: reList(n.spaceIds) })),
+        docs: s.docs.map((d) => ({ ...d, spaceIds: reList(d.spaceIds) })),
+      };
+    }
+
+    case "item/duplicate": {
+      const src = s.items.find((i) => i.id === a.id);
+      if (!src) return s;
+      const copy: ScopeItem = {
+        ...src,
+        id: a.newId,
+        title: `${src.title} (copy)`,
+        seeded: false,
+        procurement: src.procurement ? { ...src.procurement, scopeItemId: a.newId } : undefined,
+      };
+      const at = s.items.findIndex((i) => i.id === a.id);
+      return { ...s, items: [...s.items.slice(0, at + 1), copy, ...s.items.slice(at + 1)] };
+    }
+
+    case "item/bulkStage": {
+      const ids = new Set(a.ids);
+      return {
+        ...s,
+        items: s.items.map((i) => (ids.has(i.id) ? { ...i, stage: a.stage } : i)),
+      };
+    }
+
+    case "item/move": {
+      const ids = new Set(a.ids);
+      return { ...s, items: s.items.map((i) => (ids.has(i.id) ? { ...i, spaceId: a.spaceId } : i)) };
+    }
 
     case "item/stage":
       return mapItem(s, a.id, (i) => ({

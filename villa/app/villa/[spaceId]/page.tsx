@@ -8,7 +8,7 @@ import {
   spaceMetrics, rollup, itemsForSpace, byCategory, forecastOf, findGaps, bucketOf,
   COMPLETENESS_BUCKETS,
 } from "@/lib/model/derive";
-import { inr, dimsLabel, areaSqft, perimeterFt, computeCost } from "@/lib/model/costing";
+import { inr, dimsLabel, areaSqft, perimeterFt, computeCost, seedBuildUp } from "@/lib/model/costing";
 import { CATEGORY_LABEL, STAGE_LABEL, type ScopeItem, type Category } from "@/lib/model/types";
 import {
   PageTitle, Eyebrow, Stat, Bar, Chip, StageChip, Money, PhotoBlock, Tabs, Empty,
@@ -104,6 +104,7 @@ export default function RoomPage() {
         <div>
           <PageTitle
             title={space.name}
+            right={<Link href="/manage" className="btn btn-sm">Edit this room</Link>}
             sub={
               space.dims
                 ? `${dimsLabel(space.dims)} · ${areaSqft(space.dims)} sq ft · ${perimeterFt(space.dims)} ft perimeter${space.note ? ` — ${space.note}` : ""}`
@@ -190,7 +191,7 @@ export default function RoomPage() {
             <Empty title="No decisions raised for this room yet." hint="A decision is created the moment the designer wants a choice made — from an idea, an option, or straight from a scope item." />
           )
         )}
-        {tab === "Scope" && <ScopeTab items={items} onOpen={setOpenItem} />}
+        {tab === "Scope" && <ScopeTab items={items} onOpen={setOpenItem} spaceId={spaceId} />}
         {tab === "Cost" && <CostTab items={items} rollupData={r} />}
         {tab === "Products" && <ProductsTab items={products} onOpen={setOpenItem} />}
         {tab === "Tasks" && <TasksTab tasks={tasks} />}
@@ -337,8 +338,26 @@ function IdeasTab({ spaceId, ideas, items }: any) {
   );
 }
 
-function ScopeTab({ items, onOpen }: { items: ScopeItem[]; onOpen: (i: ScopeItem) => void }) {
+function ScopeTab({ items, onOpen, spaceId }: { items: ScopeItem[]; onOpen: (i: ScopeItem) => void; spaceId: string }) {
+  const { state, dispatch } = useProject();
   const [showNA, setShowNA] = useState(false);
+  const [adding, setAdding] = useState(false);
+  const [newTitle, setNewTitle] = useState("");
+  const [newCat, setNewCat] = useState<Category>("flooring");
+
+  const space = state.spaces.find((s) => s.id === spaceId);
+  const addItem = () => {
+    if (!newTitle.trim()) return;
+    dispatch({
+      type: "create", on: "items",
+      row: {
+        id: newId("item"), title: newTitle.trim(), spaceId, category: newCat, stage: "not-started",
+        cost: seedBuildUp(newCat, space), ladder: {}, tags: [],
+      },
+    });
+    setNewTitle("");
+    setAdding(false);
+  };
   const grouped = byCategory(items.filter((i) => showNA || i.stage !== "not-applicable"));
   const na = items.filter((i) => i.stage === "not-applicable");
 
@@ -364,6 +383,27 @@ function ScopeTab({ items, onOpen }: { items: ScopeItem[]; onOpen: (i: ScopeItem
         </p>
       </div>
 
+      <div className="flex flex-wrap items-center gap-2 mb-4">
+        {adding ? (
+          <>
+            <input className="input w-auto flex-1 min-w-[180px]" autoFocus value={newTitle}
+              onChange={(e) => setNewTitle(e.target.value)}
+              onKeyDown={(e) => e.key === "Enter" && addItem()}
+              placeholder="What else does this room need?" />
+            <select className="input w-auto" value={newCat} onChange={(e) => setNewCat(e.target.value as Category)}>
+              {Object.entries(CATEGORY_LABEL).map(([k, v]) => <option key={k} value={k}>{v}</option>)}
+            </select>
+            <button className="btn btn-accent btn-sm" onClick={addItem} disabled={!newTitle.trim()}>Add</button>
+            <button className="btn btn-sm" onClick={() => setAdding(false)}>Cancel</button>
+          </>
+        ) : (
+          <>
+            <button className="btn btn-sm btn-accent" onClick={() => setAdding(true)}>Add a scope item</button>
+            <Link href="/manage" className="btn btn-sm">Bulk edit this floor</Link>
+          </>
+        )}
+      </div>
+
       <div className="space-y-4">
         {Array.from(grouped.entries()).map(([cat, list]) => (
           <div key={cat}>
@@ -375,10 +415,10 @@ function ScopeTab({ items, onOpen }: { items: ScopeItem[]; onOpen: (i: ScopeItem
             </div>
             <div className="card divide-y divide-line">
               {list.map((i) => (
+                <div key={i.id} className="group flex items-center gap-3 px-3.5 py-2.5 hover:bg-paper-2/60 transition-colors">
                 <button
-                  key={i.id}
                   onClick={() => onOpen(i)}
-                  className="w-full text-left px-3.5 py-2.5 hover:bg-paper-2/60 transition-colors flex items-center gap-3"
+                  className="flex-1 text-left flex items-center gap-3 min-w-0"
                 >
                   <div className="min-w-0 flex-1">
                     <div className="text-[13px] flex items-center gap-2">
@@ -395,6 +435,20 @@ function ScopeTab({ items, onOpen }: { items: ScopeItem[]; onOpen: (i: ScopeItem
                   </span>
                   <StageChip stage={i.stage} small />
                 </button>
+                <button
+                  aria-label={`Delete ${i.title}`}
+                  title="Delete this scope item"
+                  className="shrink-0 opacity-0 group-hover:opacity-100 focus:opacity-100 transition-opacity text-[11px] px-1.5 py-0.5 rounded hover:bg-rust-soft"
+                  style={{ color: "#8d3a2c" }}
+                  onClick={() => {
+                    if (confirm(`Delete "${i.title}"?\n\nPrefer marking it Not applicable — that keeps the record that it was considered. Deleting removes it and its ideas, options and decision for good.`)) {
+                      dispatch({ type: "remove", on: "items", id: i.id });
+                    }
+                  }}
+                >
+                  ✕
+                </button>
+                </div>
               ))}
             </div>
           </div>
