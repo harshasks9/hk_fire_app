@@ -5,6 +5,7 @@ import { listNotes } from '@/lib/queries'
 import { NoteRow } from '@/components/entities'
 import { NewNoteButton } from '@/components/notes/NewNoteButton'
 import { NewFromTemplateButton } from '@/components/notes/TemplatePicker'
+import { UploadDocumentsButton } from '@/components/notes/UploadDocuments'
 import { NotesFilter } from '@/components/notes/NotesFilter'
 import { TagChips } from '@/components/notes/TagChips'
 import { listTags } from '@/lib/tags'
@@ -16,14 +17,14 @@ export default async function NotesPage({ searchParams }: { searchParams: Promis
   const { view = 'all', q, tag } = await searchParams
   const scope = await getActiveScope()
   const ctx = { id: scope.ids, name: scope.label }
-  const notes = await listNotes(ctx.id, { limit: 200, favorite: view === 'favorites', kind: view === 'meetings' ? 'meeting' : view === 'voice' ? 'voice' : undefined, q, tag })
+  const notes = await listNotes(ctx.id, { limit: 200, favorite: view === 'favorites', kind: view === 'meetings' ? 'meeting' : view === 'voice' ? 'voice' : view === 'documents' ? 'document' : undefined, q, tag })
   const topTags = await listTags(scope.ids, { limit: 18 })
   const groups = groupByDay(notes)
   return (
     <Page>
-      <PageHeader title="Notes" subtitle={`${notes.length} in ${ctx.name}`} actions={<div className="flex flex-wrap gap-2"><NewFromTemplateButton /><NewNoteButton /></div>}>
+      <PageHeader title="Notes" subtitle={`${notes.length} in ${ctx.name}`} actions={<div className="flex flex-wrap gap-2"><UploadDocumentsButton /><NewFromTemplateButton /><NewNoteButton /></div>}>
         <div className="flex flex-wrap items-center justify-between gap-3">
-          <LinkTabs active={view} tabs={[{ id: 'all', label: 'All', href: '/notes' }, { id: 'favorites', label: 'Favorites', href: '/notes?view=favorites' }, { id: 'meetings', label: 'Meetings', href: '/notes?view=meetings' }, { id: 'voice', label: 'Voice', href: '/notes?view=voice' }]} className="flex-1" />
+          <LinkTabs active={view} tabs={[{ id: 'all', label: 'All', href: '/notes' }, { id: 'favorites', label: 'Favorites', href: '/notes?view=favorites' }, { id: 'meetings', label: 'Meetings', href: '/notes?view=meetings' }, { id: 'voice', label: 'Voice', href: '/notes?view=voice' }, { id: 'documents', label: 'Documents', href: '/notes?view=documents' }]} className="flex-1" />
           <NotesFilter initial={q ?? ''} view={view} tag={tag} />
         </div>
         {topTags.length ? (

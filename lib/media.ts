@@ -1,4 +1,4 @@
-/* Media understanding boundary. With Gemini configured, images are described/OCR'd and audio is transcribed; otherwise these return null and the UI falls back to client-side transcription or a plain attachment. */
+/* Media understanding boundary. With Gemini configured, images are described/OCR'd, documents without a text layer are read, and audio is transcribed; otherwise these return null and the UI falls back to client-side transcription or a plain attachment. */
 import { logAiCall } from './ai/log'
 import { effectiveKeys } from './ai/scope'
 import { withNotebookAi } from './session'
@@ -65,6 +65,22 @@ export async function transcribeMeetingAudio(bytes: Buffer, mime: string, opts: 
   if (!key) return null
   const mediaPart = bytes.length <= INLINE_LIMIT ? { inlineData: { mimeType: mime, data: bytes.toString('base64') } } : { fileData: { mimeType: mime, fileUri: await uploadToFilesApi(key, bytes, mime, opts.displayName ?? 'recording') } }
   return gemini([{ text: MEETING_PROMPT }, mediaPart], 'transcribe-meeting', { maxOutputTokens: 65536, timeoutMs: 280_000 })
+}
+
+const DOCUMENT_PROMPT = `Read this document and return its full text as Markdown.
+Keep the reading order, headings (as # / ## / ###), lists, and tables (as Markdown tables). Reproduce numbers, dates, names and amounts exactly as written; do not summarize, do not add commentary. For a form or a scanned letter, transcribe every field and its value. If a page is an image without text, write one line in italics describing it. Output Markdown only.`
+
+/**
+ * Read a document the deterministic parsers cannot (a scanned PDF, a photo of a page, a screenshot of a table).
+ * PDFs and images go to Gemini directly; larger files travel through the Files API. Null when no key is configured.
+ */
+export async function readDocumentWithModel(bytes: Buffer, mime: string, name = 'document'): Promise<string | null> {
+  return withNotebookAi(async () => {
+    const key = apiKey()
+    if (!key) return null
+    const part = bytes.length <= INLINE_LIMIT ? { inlineData: { mimeType: mime, data: bytes.toString('base64') } } : { fileData: { mimeType: mime, fileUri: await uploadToFilesApi(key, bytes, mime, name) } }
+    return gemini([{ text: DOCUMENT_PROMPT }, part], 'read-document', { maxOutputTokens: 65536, timeoutMs: 240_000 })
+  })
 }
 
 /** Resumable upload; returns the file URI once Gemini reports it ACTIVE. */

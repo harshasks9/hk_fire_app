@@ -1,6 +1,6 @@
 {
   "name": "hk-notes",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "private": true,
   "description": "An AI-native note-taking and personal intelligence system. Capture anything. Organize nothing. Find everything. Act on what matters.",
   "scripts": {
@@ -34,11 +34,14 @@
     "cmdk": "^1.1.1",
     "drizzle-orm": "^0.44.2",
     "lucide-react": "^0.544.0",
+    "mammoth": "^1.12.3",
     "next": "^15.5.0",
     "postgres": "^3.4.7",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "tippy.js": "^6.3.7"
+    "tippy.js": "^6.3.7",
+    "unpdf": "^1.8.1",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.11",

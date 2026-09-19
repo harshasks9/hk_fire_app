@@ -3,6 +3,7 @@ import * as React from 'react'
 import { useRouter } from 'next/navigation'
 import { Upload, FileUp } from 'lucide-react'
 import { Button, useToast } from '@/components/ui'
+import { setShell } from '@/components/shell/store'
 
 /** Import Markdown / text files or the app's JSON export into the active context. */
 export function ImportSection({ contexts, activeContextId }: { contexts: { id: string; name: string }[]; activeContextId: string }) {
@@ -37,6 +38,7 @@ export function ImportSection({ contexts, activeContextId }: { contexts: { id: s
     <section id="import">
       <h2 className="mb-3 flex items-center gap-1.5 text-[13px] font-semibold uppercase tracking-[0.06em] text-fg-2"><FileUp className="h-3.5 w-3.5" /> Import</h2>
       <p className="mb-3 text-[13.5px] text-fg-2">Bring notes in from Markdown or text files (Obsidian, Bear, Apple Notes exports, plain files) or from this app's own export. Titles and dates come from front matter or the first heading; duplicates are skipped; every note is analyzed like a new capture.</p>
+      <p className="mb-3 text-[13.5px] text-fg-2">PDFs, Word and Excel files, CSVs, web pages and scans or photos of documents go through <button type="button" onClick={() => setShell({ uploadOpen: true })} className="font-medium text-accent hover:underline">Upload documents</button>: the text is extracted (the model reads scans and images), each file becomes a note with the original attached, and AI files it.</p>
       <div className="flex flex-wrap items-center gap-2">
         <label className="inline-flex h-9 cursor-pointer items-center gap-1.5 rounded-[9px] border border-border-2 bg-surface px-3 text-[13.5px] font-medium hover:bg-surface-2"><Upload className="h-3.5 w-3.5" /> Choose files<input type="file" multiple accept=".md,.markdown,.txt,.json,text/markdown,text/plain,application/json" className="hidden" onChange={(e) => setFiles(Array.from(e.target.files ?? []))} /></label>
         <select value={ctx} onChange={(e) => setCtx(e.target.value)} className="h-9 rounded-[9px] border border-border-2 bg-surface px-2 text-[13.5px]">{contexts.map((c) => <option key={c.id} value={c.id}>into {c.name}</option>)}</select>

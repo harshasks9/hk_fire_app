@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { resolveContext } from '@/lib/context'
 import { addAttachment, addSource, createNote, fetchLinkPreview, scheduleProcessing } from '@/lib/notes'
 import { describeImage, transcribeAudio } from '@/lib/media'
+import { detectKind, extractDocument } from '@/lib/documents/extract'
 import { getDb, schema } from '@/lib/db'
 import { asc, eq } from 'drizzle-orm'
 import { resolveToken } from '@/lib/tokens'
@@ -74,15 +75,13 @@ export async function POST(req: NextRequest) {
       const t = await transcribeAudio(bytes, f.type)
       extra.push(t ? `## Transcript\n\n${t}` : `Audio attached: ${f.name}.`)
       await addSource(id, { kind: 'audio', title: f.name, extractedText: t ?? undefined })
-    } else if (/text\/|markdown|json|csv/.test(f.type) || /\.(md|txt|csv)$/i.test(f.name)) {
-      const t = bytes.toString('utf8').slice(0, 20000)
-      extra.push(`## ${f.name}\n\n${t}`)
-      kind = kind === 'capture' ? 'document' : kind
-      await addSource(id, { kind: 'file', title: f.name, extractedText: t })
     } else {
-      extra.push(`File attached: ${f.name} (${Math.round(f.size / 1024)} KB).`)
+      // PDF, Word, Excel, CSV, HTML and text: the text comes out here, so the capture is searchable and the pipeline sees it.
+      const ex = await extractDocument({ name: f.name || 'file', mime: f.type, bytes }, { ai: false })
+      if (!ex.empty) extra.push(`## ${ex.title || f.name}\n\n${ex.markdown.slice(0, 60000)}`)
+      else extra.push(`File attached: ${f.name} (${Math.round(f.size / 1024)} KB).${ex.warnings.length ? ' ' + ex.warnings[0] : ''}`)
       kind = kind === 'capture' ? 'document' : kind
-      await addSource(id, { kind: f.type === 'application/pdf' ? 'pdf' : 'file', title: f.name })
+      await addSource(id, { kind: detectKind(f.name, f.type) === 'pdf' ? 'pdf' : 'file', title: f.name, extractedText: ex.empty ? undefined : ex.markdown.slice(0, 100000) })
     }
   }
   if (extra.length || kind !== 'capture') {
