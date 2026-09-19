@@ -28,8 +28,8 @@ memos/
   index.ts        Registry + derived maths (weighted value, IRR, SOTP, AUM quality)
   memos.test.ts   The prompt's output contract as executable tests
 build.ts          Renders the memos to dist/ — index, one page per memo, methodology
-gate.ts           The shared-key gate (pure function over Request → Response)
-middleware.ts     Runs gate.ts at Vercel's edge in front of every request
+serve.ts          Local preview of dist/ with the gate in front (npm run serve)
+middleware.ts     The shared-key gate — Vercel runs it in front of every request
 docs/
   FORENSIC-ASSET-MANAGER-PROMPT.md   The versioned methodology (v2) the memos follow
   FORENSIC-MEMOS.md                  How the memos are structured, tiered and tested
@@ -56,3 +56,10 @@ the first two.
 The Five Delta options-execution app and the Meridian wealth OS that used to live in
 this repository were removed when the site was cut back to the memos. Both are intact in
 git history — the last commit carrying them is `589243a`.
+
+## The villa app
+
+`villa/` is unrelated to the memos: a separate Next.js application with its own
+`package.json`, tests and Vercel project (its `vercel.json` only builds when files under
+`villa/` change). It shares the repository and nothing else, and this site's build and
+tests leave it alone.

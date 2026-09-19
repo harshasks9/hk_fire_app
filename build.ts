@@ -859,6 +859,15 @@ export async function build(out = OUT): Promise<string[]> {
   await copyFile(join(HERE, 'docs', 'FORENSIC-ASSET-MANAGER-PROMPT.md'), join(out, 'methodology.md'))
   written.push('methodology.md')
   await put('robots.txt', 'User-agent: *\nDisallow: /\n')
+  await put(
+    '404.html',
+    shell({
+      title: 'Not found — HK Fire',
+      description: 'There is no page at this address.',
+      current: '404',
+      body: `<section class="card"><h1>Not found</h1><p style="margin-top:8px">There is no page at this address. The memos are listed on the <a href="/">index</a>.</p></section>`,
+    }),
+  )
   return written
 }
 

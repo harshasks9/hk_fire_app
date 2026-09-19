@@ -5,7 +5,7 @@
 import { createServer } from 'node:http'
 import { readFile, stat } from 'node:fs/promises'
 import { join, extname, normalize } from 'node:path'
-import { gate } from './gate.ts'
+import { gate } from './middleware.ts'
 
 const ROOT = join(import.meta.dirname, 'dist')
 const PORT = Number(process.env.PORT ?? 4173)

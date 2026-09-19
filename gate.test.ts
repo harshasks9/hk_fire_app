@@ -1,6 +1,6 @@
 import { describe, it } from 'node:test'
 import assert from 'node:assert/strict'
-import { gate, tokenFor, COOKIE, DEFAULT_KEY } from './gate.ts'
+import { gate, tokenFor, COOKIE, DEFAULT_KEY } from './middleware.ts'
 
 const KEY = '888888'
 const site = 'https://hk.hkfire.app'

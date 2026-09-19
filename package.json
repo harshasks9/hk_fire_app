@@ -13,6 +13,6 @@
     "serve": "npm run build && node --experimental-strip-types --disable-warning=ExperimentalWarning serve.ts"
   },
   "dependencies": {
-    "@vercel/edge": "^1.2.1"
+    "@vercel/functions": "^3.9.8"
   }
 }

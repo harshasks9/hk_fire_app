@@ -162,7 +162,7 @@ describe('build', () => {
   })
 
   it('writes an index, one folder per memo, the methodology and a robots file', async () => {
-    assert.deepEqual([...files].sort(), ['index.html', 'methodology.md', 'owl/index.html', 'pax/index.html', 'robots.txt'].sort())
+    assert.deepEqual([...files].sort(), ['404.html', 'index.html', 'methodology.md', 'owl/index.html', 'pax/index.html', 'robots.txt'].sort())
     for (const f of files) assert.ok((await stat(join(out, f))).size > 0, `${f} is empty`)
   })
 
