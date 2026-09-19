@@ -14,7 +14,7 @@ import TableCell from '@tiptap/extension-table-cell'
 import TableHeader from '@tiptap/extension-table-header'
 import Mention from '@tiptap/extension-mention'
 import { Bold, Italic, Code, Link2, Sparkles, Wand2, Scissors, Lightbulb, ListChecks, GitBranch, MessageCircleQuestion, X, Check, ArrowDownToLine, Heading2, List, ListTodo, Quote, Undo2, Redo2, ImagePlus, SlashSquare, WifiOff } from 'lucide-react'
-import { Callout, HighlightRange, Sheet } from './extensions'
+import { Callout, HighlightRange, ListTaskShortcut, Sheet } from './extensions'
 import { SlashCommand, slashItems, mentionSuggestion } from './SlashMenu'
 import { api } from '@/lib/client'
 import { cx, relativeTime } from '@/lib/util'
@@ -118,6 +118,7 @@ export function NoteEditor({ noteId, target = 'note', initialTitle, initialConte
       Image.configure({ allowBase64: true, inline: false }),
       TaskList,
       TaskItem.configure({ nested: true }),
+      ListTaskShortcut,
       Table.configure({ resizable: true }),
       TableRow,
       TableHeader,

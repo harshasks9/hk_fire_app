@@ -4,9 +4,9 @@ import { useRouter } from 'next/navigation'
 import { Button, useToast } from '@/components/ui'
 import { ThemeToggle } from '@/components/shell/ThemeToggle'
 import { api } from '@/lib/client'
-import { Download, RefreshCw, Database, Trash2 } from 'lucide-react'
+import { RefreshCw, Database, Trash2 } from 'lucide-react'
 
-export function SettingsClient({ settings, sampleData = true, canEdit = true }: { userName?: string; authEnabled?: boolean; settings: Record<string, unknown>; sampleData?: boolean; canEdit?: boolean }) {
+export function SettingsClient({ settings, sampleData = true, canEdit = true, exportSlot }: { userName?: string; authEnabled?: boolean; settings: Record<string, unknown>; sampleData?: boolean; canEdit?: boolean; exportSlot?: React.ReactNode }) {
   const router = useRouter()
   const toast = useToast()
   const [busy, setBusy] = React.useState<string | null>(null)
@@ -70,8 +70,8 @@ export function SettingsClient({ settings, sampleData = true, canEdit = true }: 
       </section>
       <section>
         <h2 className="mb-3 text-[13px] font-semibold uppercase tracking-[0.06em] text-fg-2">Data</h2>
+        {exportSlot ? <div className="mb-3">{exportSlot}<p className="mt-1.5 text-[12.5px] text-fg-3">Markdown files with front matter, attachments beside them and <code>data.json</code> with everything the AI extracted. Re-importable here, and readable in Obsidian, Bear or any editor. Single notes export from their ⋯ menu, including Word and PDF.</p></div> : null}
         <div className="flex flex-wrap gap-2">
-          <a href="/api/admin/export" className="inline-flex h-8 items-center gap-1.5 rounded-[9px] border border-border-2 bg-surface px-3 text-[13.5px] font-medium hover:bg-surface-2"><Download className="h-3.5 w-3.5" /> Export everything (JSON + Markdown)</a>
           <Button loading={busy === 'reindex'} onClick={reindex}><RefreshCw className="h-3.5 w-3.5" /> {progress ? `Rebuilding ${progress}` : 'Rebuild index'}</Button>
           {canEdit && sampleData && sample && sample.notes > 0 ? <Button variant="danger" loading={busy === 'sample'} onClick={removeSample}><Trash2 className="h-3.5 w-3.5" /> Remove sample data ({sample.notes} notes)</Button> : null}
           {canEdit ? <Button variant="ghost" loading={busy === 'reseed'} onClick={() => { if (confirm('Replace ALL data in this notebook with the sample dataset? This cannot be undone.')) run('reseed', '/api/admin/reseed', 'Sample data loaded') }}>Reset to sample data</Button> : null}

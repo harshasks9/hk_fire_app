@@ -12,6 +12,7 @@ import { AiSection } from '@/components/settings/AiSection'
 import { TokensSection } from '@/components/settings/TokensSection'
 import { TemplatesSection } from '@/components/settings/TemplatesSection'
 import { ImportSection } from '@/components/settings/ImportSection'
+import { ExportSection } from '@/components/settings/ExportSection'
 import { SharingSection } from '@/components/settings/SharingSection'
 import { ContextsSection } from '@/components/settings/ContextsSection'
 import { MembersSection } from '@/components/settings/MembersSection'
@@ -58,7 +59,7 @@ export default async function SettingsPage() {
         <AccountSection name={session?.user.name ?? ''} email={session?.user.email ?? null} role={session?.role ?? 'owner'} notebookName={session?.notebook.name ?? 'Primary'} authEnabled={authEnabled()} hasPassword={Boolean(session?.user.passwordHash)} verified={Boolean(session?.user.emailVerifiedAt) || !session?.user.email} isOwner={Boolean(session && (session.notebook.ownerUserId === session.userId || session.role === 'owner'))} />
         {people && session && authEnabled() ? <MembersSection members={people.members} invites={people.invites} canManage={canEdit} currentUserId={session.userId} ownerUserId={session.notebook.ownerUserId} emailConfigured={emailConfigured()} /> : null}
         <AiSection settings={{ ...aiView }} canEdit={canEdit} />
-        <SettingsClient userName={s.user?.name ?? 'Harsha'} authEnabled={authEnabled()} settings={(s.user?.settings ?? {}) as Record<string, unknown>} sampleData={nbSettings.sampleData !== false} canEdit={canEdit} />
+        <SettingsClient userName={s.user?.name ?? 'Harsha'} authEnabled={authEnabled()} settings={(s.user?.settings ?? {}) as Record<string, unknown>} sampleData={nbSettings.sampleData !== false} canEdit={canEdit} exportSlot={<ExportSection contexts={contexts.map((c) => ({ id: c.id, name: c.name, noteCount: noteCounts.get(c.id) ?? 0 }))} notebookName={session?.notebook.name ?? 'this notebook'} />} />
         <TemplatesSection />
         <ImportSection contexts={contexts.map((c) => ({ id: c.id, name: c.name }))} activeContextId={active.id} />
         <TokensSection origin={origin} />

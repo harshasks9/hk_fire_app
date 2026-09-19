@@ -1,4 +1,4 @@
-import { Node, Extension, mergeAttributes } from '@tiptap/core'
+import { Node, Extension, InputRule, mergeAttributes } from '@tiptap/core'
 import { Plugin, PluginKey, TextSelection } from '@tiptap/pm/state'
 import { Decoration, DecorationSet } from '@tiptap/pm/view'
 import { ReactNodeViewRenderer } from '@tiptap/react'
@@ -138,5 +138,27 @@ export const Sheet = Node.create({
   addNodeView() {
     // The grid owns every key, click and paste inside it; the document never sees them.
     return ReactNodeViewRenderer(SheetView, { stopEvent: () => true })
+  },
+})
+
+/**
+ * Typing `[ ] ` or `[x] ` at the start of a bullet or numbered item turns that item into a checklist item,
+ * the way people who write Markdown expect ("- [ ] send the plan"). TipTap's own rule only fires in a bare paragraph.
+ */
+export const ListTaskShortcut = Extension.create({
+  name: 'listTaskShortcut',
+  addInputRules() {
+    return [
+      new InputRule({
+        find: /^\[( |x|X)\]\s$/,
+        handler: ({ state, range, match, chain }) => {
+          const $from = state.selection.$from
+          const item = $from.depth >= 2 ? $from.node(-1) : null
+          if (!item || item.type.name !== 'listItem') return null
+          const checked = match[1] !== ' '
+          chain().deleteRange(range).liftListItem('listItem').toggleTaskList().updateAttributes('taskItem', { checked }).run()
+        },
+      }),
+    ]
   },
 })
