@@ -2,7 +2,7 @@
 import * as React from 'react'
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
-import { Home, Inbox, FileText, CalendarDays, CheckSquare, Users, Hash, FlaskConical, Search, Sparkles, Settings, PanelLeftClose, PanelLeftOpen, Plus, Building2, Star, Clock, GitBranch, Repeat, ChevronsUpDown, Check, ShieldCheck, CalendarRange, Tag, Share2, TrendingUp } from 'lucide-react'
+import { Home, Sun, Inbox, FileText, CalendarDays, CheckSquare, Users, Hash, FlaskConical, Search, Sparkles, Settings, PanelLeftClose, PanelLeftOpen, Plus, Building2, Star, Clock, GitBranch, Repeat, ChevronsUpDown, Check, ShieldCheck, CalendarRange, Tag, Share2, TrendingUp } from 'lucide-react'
 import { setShell, useShell } from './store'
 import { cx } from '@/lib/util'
 import { Avatar } from '@/components/ui'
@@ -27,6 +27,7 @@ export interface SidebarProps {
 
 const NAV = [
   { href: '/', label: 'Home', icon: Home },
+  { href: '/today', label: 'Today', icon: Sun },
   { href: '/inbox', label: 'Inbox', icon: Inbox },
   { href: '/notes', label: 'Notes', icon: FileText },
   { href: '/meetings', label: 'Meetings', icon: CalendarDays },

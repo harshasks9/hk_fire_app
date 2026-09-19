@@ -5,6 +5,7 @@ import { Star, MoreHorizontal, Trash2, RefreshCw, EyeOff, Lock, Unlock, FlaskCon
 import { NoteHistory } from './NoteHistory'
 import { ShareDialog } from './ShareDialog'
 import { SaveTemplateDialog } from './SaveTemplateDialog'
+import { ExportDialog } from './ExportDialog'
 import { Button, Menu, useToast } from '@/components/ui'
 import { api } from '@/lib/client'
 import { cx } from '@/lib/util'
@@ -15,7 +16,7 @@ export function NoteActions({ noteId, favorite, privacy, researchProjects, resea
   const toast = useToast()
   const [fav, setFav] = React.useState(favorite)
   const [busy, setBusy] = React.useState(false)
-  const [dialog, setDialog] = React.useState<'history' | 'share' | 'template' | null>(null)
+  const [dialog, setDialog] = React.useState<'history' | 'share' | 'template' | 'export' | null>(null)
   const patch = async (p: Record<string, unknown>) => { await api(`/api/notes/${noteId}`, { method: 'PATCH', json: p }); router.refresh() }
   return (
     <div className="flex items-center gap-1">
@@ -36,12 +37,13 @@ export function NoteActions({ noteId, favorite, privacy, researchProjects, resea
           { label: 'Version history…', icon: <History className="h-3.5 w-3.5" />, onSelect: () => setDialog('history') },
           { label: 'Save as template…', icon: <LayoutTemplate className="h-3.5 w-3.5" />, onSelect: () => setDialog('template') },
           { label: 'See in the graph', icon: <Share2 className="h-3.5 w-3.5" />, href: `/graph?focus=note:${noteId}` },
-          { label: 'Export (JSON)', icon: <Download className="h-3.5 w-3.5" />, href: `/api/notes/${noteId}` },
+          { label: 'Export… (Markdown, Word, PDF, HTML)', icon: <Download className="h-3.5 w-3.5" />, onSelect: () => setDialog('export') },
           { label: 'Move to Trash', icon: <Trash2 className="h-3.5 w-3.5" />, danger: true, onSelect: async () => { if (!confirm('Move this note to Trash? You can restore it within 30 days.')) return; await api(`/api/notes/${noteId}`, { method: 'DELETE' }); router.push('/notes'); router.refresh() } },
         ]}
       />
       <NoteHistory noteId={noteId} open={dialog === 'history'} onClose={() => setDialog(null)} />
       <ShareDialog noteId={noteId} open={dialog === 'share'} onClose={() => setDialog(null)} />
+      <ExportDialog noteId={noteId} open={dialog === 'export'} onClose={() => setDialog(null)} />
       <SaveTemplateDialog noteId={noteId} open={dialog === 'template'} onClose={() => setDialog(null)} defaultName={title?.trim() || 'My template'} />
     </div>
   )

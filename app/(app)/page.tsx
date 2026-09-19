@@ -31,7 +31,7 @@ export default async function Home() {
     <Page>
       <div className="mb-6">
         <h1 className="text-[30px] font-semibold tracking-[-0.02em]">{greeting()}, {userName}</h1>
-        <p className="mt-1 text-[14px] text-fg-2">{formatDate(new Date(), { weekday: 'long', month: 'long', day: 'numeric' })} · {ctx.name}{nextMeeting ? ` · next: ${nextMeeting.title} ${isToday(nextMeeting.startsAt) ? formatTime(nextMeeting.startsAt) : formatDate(nextMeeting.startsAt, { weekday: 'short' })}` : ''}</p>
+        <p className="mt-1 text-[14px] text-fg-2"><Link href="/today" className="hover:text-fg hover:underline">{formatDate(new Date(), { weekday: 'long', month: 'long', day: 'numeric' })}</Link> · {ctx.name}{nextMeeting ? ` · next: ${nextMeeting.title} ${isToday(nextMeeting.startsAt) ? formatTime(nextMeeting.startsAt) : formatDate(nextMeeting.startsAt, { weekday: 'short' })}` : ''} · <Link href="/today" className="text-accent hover:underline">Today’s page</Link></p>
       </div>
 
       {fresh ? <OnboardingChecklist noteCount={h.noteCount} verified={!authEnabled() || !session?.user.email || Boolean(session?.user.emailVerifiedAt)} canInvite={session?.role !== 'member'} /> : null}

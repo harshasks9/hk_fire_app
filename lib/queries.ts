@@ -43,7 +43,7 @@ export async function listNotes(contextId: Ctx, opts: { limit?: number; kind?: s
   return attachEntities(rows)
 }
 
-async function attachEntities(rows: Note[]): Promise<NoteListItem[]> {
+export async function attachEntities(rows: Note[]): Promise<NoteListItem[]> {
   const db = await getDb()
   const ids = rows.map((r) => r.id)
   const mentions = ids.length

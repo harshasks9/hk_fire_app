@@ -14,13 +14,20 @@ export interface ImportResult { created: { id: string; title: string }[]; skippe
 
 export interface ParsedNote { title: string; markdown: string; createdAt?: Date; contextSlug?: string; kind?: 'note' | 'meeting' | 'document' }
 
+/** Strips one pair of matching quotes and unescapes \" and \\ inside a double-quoted value (what our exporter writes). */
+function unquote(v: string): string {
+  if (v.length >= 2 && v.startsWith('"') && v.endsWith('"')) return v.slice(1, -1).replace(/\\(["\\])/g, '$1')
+  if (v.length >= 2 && v.startsWith("'") && v.endsWith("'")) return v.slice(1, -1)
+  return v.replace(/^["']|["']$/g, '')
+}
+
 export function parseFrontMatter(text: string): { data: Record<string, string>; body: string } {
   const m = /^---\r?\n([\s\S]*?)\r?\n---\r?\n?/.exec(text)
   if (!m) return { data: {}, body: text }
   const data: Record<string, string> = {}
   for (const line of m[1]!.split(/\r?\n/)) {
     const kv = /^([A-Za-z_][\w-]*)\s*:\s*(.*)$/.exec(line)
-    if (kv) data[kv[1]!.toLowerCase()] = kv[2]!.trim().replace(/^["']|["']$/g, '')
+    if (kv) data[kv[1]!.toLowerCase()] = unquote(kv[2]!.trim())
   }
   return { data, body: text.slice(m[0].length) }
 }

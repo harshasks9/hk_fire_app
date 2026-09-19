@@ -8,7 +8,7 @@ export interface PMNode { type: string; attrs?: Record<string, unknown>; content
 
 function inline(text: string): PMNode[] {
   const out: PMNode[] = []
-  const re = /(\*\*[^*]+\*\*|__[^_]+__|`[^`]+`|\[[^\]]+\]\([^)]+\)|\*[^*\n]+\*|_[^_\n]+_|@[A-Z][\w.-]+(?:\s[A-Z][\w.-]+)?|https?:\/\/[^\s)]+)/g
+  const re = /(\*\*[^*]+\*\*|__[^_]+__|`[^`]+`|!?\[[^\]]*\]\([^)]+\)|\*[^*\n]+\*|_[^_\n]+_|@[A-Z][\w.-]+(?:\s[A-Z][\w.-]+)?|https?:\/\/[^\s)]+)/g
   let last = 0
   let m: RegExpExecArray | null
   while ((m = re.exec(text))) {
@@ -16,9 +16,10 @@ function inline(text: string): PMNode[] {
     const tok = m[0]
     if (tok.startsWith('**') || tok.startsWith('__')) out.push({ type: 'text', text: tok.slice(2, -2), marks: [{ type: 'bold' }] })
     else if (tok.startsWith('`')) out.push({ type: 'text', text: tok.slice(1, -1), marks: [{ type: 'code' }] })
-    else if (tok.startsWith('[')) {
-      const mm = tok.match(/^\[([^\]]+)\]\(([^)]+)\)$/)!
-      out.push({ type: 'text', text: mm[1]!, marks: [{ type: 'link', attrs: { href: mm[2], target: '_blank' } }] })
+    else if (tok.startsWith('[') || tok.startsWith('![')) {
+      const mm = tok.match(/^!?\[([^\]]*)\]\(([^)]+)\)$/)!
+      const href = mm[2]!.replace(/\s+"[^"]*"$/, '')
+      out.push({ type: 'text', text: mm[1] || (tok.startsWith('!') ? 'image' : href), marks: [{ type: 'link', attrs: { href, target: '_blank' } }] })
     } else if (tok.startsWith('http')) out.push({ type: 'text', text: tok, marks: [{ type: 'link', attrs: { href: tok, target: '_blank' } }] })
     else if (tok.startsWith('@')) out.push({ type: 'text', text: tok })
     else out.push({ type: 'text', text: tok.slice(1, -1), marks: [{ type: 'italic' }] })
@@ -118,9 +119,16 @@ export function markdownToDoc(md: string): PMNode {
       i++
       continue
     }
+    const img = line.match(/^\s*!\[([^\]]*)\]\(([^)\s]+)(?:\s+"[^"]*")?\)\s*$/)
+    if (img) {
+      // The editor's images are block nodes, so a line that is only an image becomes one.
+      content.push({ type: 'image', attrs: { src: img[2]!, alt: img[1] ?? '' } })
+      i++
+      continue
+    }
     // paragraph: join consecutive plain lines
     const buf: string[] = []
-    while (i < lines.length && lines[i]!.trim() && !/^(#{1,3}\s|```|:::|>\s?|\s*[-*•]\s+|\s*\d+[.)]\s+|\||---)/.test(lines[i]!)) buf.push(lines[i++]!)
+    while (i < lines.length && lines[i]!.trim() && !/^(#{1,3}\s|```|:::|>\s?|\s*[-*•]\s+|\s*\d+[.)]\s+|\||---|\s*!\[[^\]]*\]\()/.test(lines[i]!)) buf.push(lines[i++]!)
     content.push(para(buf.join(' ')))
   }
   return { type: 'doc', content: content.length ? content : [{ type: 'paragraph' }] }
