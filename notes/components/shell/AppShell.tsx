@@ -12,6 +12,7 @@ import { Search, PanelRight, Zap, Sparkles } from 'lucide-react'
 import { OfflineProvider } from '@/components/offline/OfflineProvider'
 import { OfflineBadge } from '@/components/offline/OfflineBadge'
 import { GlobalTemplatePicker } from '@/components/notes/TemplatePicker'
+import { GlobalUploadDocuments } from '@/components/notes/UploadDocuments'
 import { NavProgress } from './NavProgress'
 import { cx } from '@/lib/util'
 import { AnnouncementBanner, VerifyBanner } from './Banners'
@@ -57,6 +58,7 @@ export function AppShell({ sidebar, children, viewingAsAdmin, announcement, veri
       <CommandBar />
       <QuickCapture />
       <GlobalTemplatePicker />
+      <GlobalUploadDocuments />
       <Shortcuts />
       </OfflineProvider>
     </ToastProvider>

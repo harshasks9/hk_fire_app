@@ -2,7 +2,7 @@
 import * as React from 'react'
 import { Command } from 'cmdk'
 import { useRouter } from 'next/navigation'
-import { FileText, CalendarDays, Users, Building2, Hash, CheckSquare, GitBranch, FlaskConical, Sparkles, Search, Plus, Inbox, Home, Repeat, Settings, Mic, Zap, ArrowRight, Sun, Moon, Share2, TrendingUp } from 'lucide-react'
+import { FileText, CalendarDays, Users, Building2, Hash, CheckSquare, GitBranch, FlaskConical, Sparkles, Search, Plus, Inbox, Home, Repeat, Settings, Mic, Zap, ArrowRight, Sun, Moon, Share2, TrendingUp, FileUp } from 'lucide-react'
 import { setShell, useShell } from './store'
 import { startNavigation } from './NavProgress'
 import { api } from '@/lib/client'
@@ -59,6 +59,7 @@ export function CommandBar() {
     { id: 'quick', label: 'Quick capture', icon: Zap, run: () => { close(); setShell({ captureOpen: true }) }, kbd: '⌘⇧N', keywords: 'capture jot' },
     { id: 'voice', label: 'Record voice note', icon: Mic, run: () => go('/capture/voice'), keywords: 'audio record' },
     { id: 'live', label: 'Start live meeting', icon: CalendarDays, run: () => go('/meetings/live'), keywords: 'transcribe record meeting' },
+    { id: 'upload-documents', label: 'Upload documents (PDF, Word, Excel, images)…', icon: FileUp, run: () => { close(); setShell({ uploadOpen: true }) }, keywords: 'upload pdf docx word excel xlsx csv scan image file document import extract' },
     { id: 'import-recording', label: 'Import a meeting recording or transcript', icon: Mic, run: () => go('/meetings/import'), keywords: 'recording transcript iphone voice memo upload audio m4a' },
     { id: 'ask', label: 'Ask my notes', icon: Sparkles, run: () => go('/ask'), keywords: 'ai question' },
     { id: 'home', label: 'Go to Home', icon: Home, run: () => go('/') },

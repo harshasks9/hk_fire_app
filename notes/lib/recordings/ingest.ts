@@ -5,6 +5,7 @@
   sent, and hands off to the background job in ./process.
 */
 import { and, asc, eq, sql } from 'drizzle-orm'
+import { appendAttachmentChunk, CHUNK_SIZE } from '../uploads'
 import { after, NextResponse, type NextRequest } from 'next/server'
 import { getSession } from '../session'
 import { resolveToken } from '../tokens'
@@ -15,8 +16,7 @@ import { uid } from '../util'
 import { parseTranscript, transcriptStats, transcriptToText } from './transcript'
 import { processRecording, setStage } from './process'
 
-/** Client-side chunk size for large audio. A multiple of 3 so base64 pieces concatenate cleanly. */
-export const CHUNK_SIZE = 3 * 1024 * 1024
+export { CHUNK_SIZE }
 /** Inline storage ceiling for a single recording (base64 in Postgres). */
 export const MAX_AUDIO_BYTES = 80 * 1024 * 1024
 export const AUDIO_MIMES = /^audio\/|^video\/(mp4|quicktime|x-m4a)|^application\/ogg/
@@ -115,13 +115,7 @@ export async function startRecording(input: StartInput): Promise<StartResult> {
 
 /** Append one base64 piece of a chunked upload. Pieces before the last must be a multiple of 3 bytes. */
 export async function appendChunk(attachmentId: string, bytes: Buffer, last: boolean): Promise<{ size: number }> {
-  if (!last && bytes.length % 3 !== 0) throw Object.assign(new Error('Chunk size must be a multiple of 3 bytes'), { status: 400 })
-  const db = await getDb()
-  const a = (await db.select({ size: schema.attachments.size }).from(schema.attachments).where(eq(schema.attachments.id, attachmentId)))[0]
-  if (!a) throw Object.assign(new Error('Upload not found'), { status: 404 })
-  if (a.size + bytes.length > MAX_AUDIO_BYTES) throw Object.assign(new Error('Recording too large'), { status: 413 })
-  await db.update(schema.attachments).set({ data: sql`coalesce(${schema.attachments.data}, '') || ${bytes.toString('base64')}`, size: sql`${schema.attachments.size} + ${bytes.length}` }).where(eq(schema.attachments.id, attachmentId))
-  return { size: a.size + bytes.length }
+  return appendAttachmentChunk(attachmentId, bytes, last, { maxBytes: MAX_AUDIO_BYTES, label: 'Recording' })
 }
 
 export async function finishUpload(meetingId: string, opts: { durationSeconds?: number } = {}): Promise<void> {

@@ -55,6 +55,7 @@ The owner wants to give the same system to other people — colleagues, family, 
 - **F22 — A usable spreadsheet**: the sheet block behaves like a spreadsheet (ranges, keyboard, clipboard, undo, fill, structure edits, resizing, full screen) and never leaks keystrokes into the surrounding note.
 - **F23 — All**: one view across Work, Finance, Research and every other context, with each item labelled by where it lives; writing still goes to a real context.
 - **F24 — Tasks with details and a public link**: a task can carry a full write-up with images, audio, video and files, and can be made visible to anyone with its link.
+- **F25 — Upload documents**: PDFs, Word and Excel files, CSVs, web pages, text and scans or photos of documents become notes automatically: the text is extracted (the model reads scans), the original stays attached, and the note is filed like anything written by hand.
 
 ### Out of scope (this release)
 - Real-time collaboration inside one note; shared notebooks with multiple concurrent editors.
