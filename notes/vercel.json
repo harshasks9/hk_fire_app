@@ -1,0 +1,5 @@
+{
+  "framework": "nextjs",
+  "ignoreCommand": "[ \"$VERCEL_PROJECT_ID\" = \"prj_nOLUIOMsYRP8bpSQ9QNkZksTvycc\" ]",
+  "crons": [{ "path": "/api/cron/daily-brief", "schedule": "0 22 * * *" }]
+}
