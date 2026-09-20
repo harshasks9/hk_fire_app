@@ -28,6 +28,8 @@ export default function VillaPage() {
   const [overlay, setOverlay] = useState<ViewKey>("completion");
   const [selected, setSelected] = useState<string | null>(null);
   const [exploded, setExploded] = useState(true);
+  const [base, setBase] = useState<"stylised" | "cad">("stylised");
+  const [cadGrid, setCadGrid] = useState(false);
 
   // On an untouched project every overlay reads zero, which says nothing. Open
   // on the drawing instead, until the reader chooses otherwise.
@@ -45,7 +47,7 @@ export default function VillaPage() {
     <div>
       <PageTitle
         title="The villa"
-        sub="Every room from the drawings, already carrying its own scope. Click a room in the model or the plan."
+        sub="Every room from the architect\u2019s drawings, already carrying its own scope. Read it as our redrawing or as the CAD itself, and click any room."
         right={<Link href="/villa/drawings" className="btn">Architect&rsquo;s drawings</Link>}
       />
 
@@ -103,7 +105,36 @@ export default function VillaPage() {
 
       {/* ------------------------------------------------------------- plan */}
       <div className="card px-3 sm:px-6 py-5">
-        <FloorPlan floor={floor} overlay={overlay} selectedId={selected} onSelect={setSelected} />
+        <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
+          <div className="flex items-center gap-1.5">
+            <span className="eyebrow mr-1">Drawn as</span>
+            {(["stylised", "cad"] as const).map((b) => (
+              <button
+                key={b}
+                onClick={() => setBase(b)}
+                title={b === "cad"
+                  ? "The architect's own CAD linework, straight from the DWG"
+                  : "The app's redrawing — simplified, textured, easier to read at a glance"}
+                className="rounded-lg px-2.5 py-1 text-[12px] font-medium transition-colors border"
+                style={{
+                  background: base === b ? "var(--color-ink)" : "var(--color-card)",
+                  color: base === b ? "var(--color-paper)" : "var(--color-ink-2)",
+                  borderColor: base === b ? "var(--color-ink)" : "var(--color-line)",
+                }}
+              >
+                {b === "cad" ? "Architect's CAD" : "Redrawing"}
+              </button>
+            ))}
+          </div>
+          {base === "cad" && (
+            <label className="flex items-center gap-1.5 text-[11.5px] text-ink-3 cursor-pointer">
+              <input type="checkbox" checked={cadGrid} onChange={(e) => setCadGrid(e.target.checked)} />
+              Column grid
+            </label>
+          )}
+        </div>
+        <FloorPlan floor={floor} overlay={overlay} selectedId={selected} onSelect={setSelected}
+          base={base} cadGrid={cadGrid} />
       </div>
 
       {/* -------------------------------------------------------- room list */}

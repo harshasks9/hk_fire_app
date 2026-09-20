@@ -8,6 +8,7 @@ import { spaceMetrics, overlayIntensity, type OverlayKey } from "@/lib/model/der
 import { dimsLabel, areaSqft, inr } from "@/lib/model/costing";
 import type { FloorId } from "@/lib/model/types";
 import { PlanDefs, Fixture, OpeningMark, finishFill, WALL_FILL } from "./PlanArt";
+import { CadLayer, useCad } from "./CadPlan";
 import { Bar, Chip } from "./ui";
 
 /**
@@ -61,18 +62,24 @@ export function mix(a: string, b: string, t: number): string {
 }
 
 export function FloorPlan({
-  floor, overlay, selectedId, onSelect, compact,
+  floor, overlay, selectedId, onSelect, compact, base = "stylised", cadGrid, cadText = true,
 }: {
   floor: FloorId;
   overlay: ViewKey;
   selectedId?: string | null;
   onSelect?: (spaceId: string | null) => void;
   compact?: boolean;
+  /** "cad" swaps the redrawing for the architect's own linework. */
+  base?: "stylised" | "cad";
+  cadGrid?: boolean;
+  cadText?: boolean;
 }) {
   const { state } = useProject();
   const uid = useId().replace(/:/g, "");
   const plan = planFor(floor);
   const [hover, setHover] = useState<string | null>(null);
+  const { cad, loading: cadLoading, failed: cadFailed } = useCad();
+  const onCad = base === "cad" && !!cad;
 
   const spaceById = useMemo(() => new Map(state.spaces.map((s) => [s.id, s])), [state.spaces]);
   const metrics = useMemo(() => {
@@ -110,25 +117,33 @@ export function FloorPlan({
               onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onSelect?.(r.spaceId); } }}
             >
               {/* floor finish */}
-              <rect x={x} y={y} width={w} height={h} rx={r.outdoor ? 3 : 1}
-                fill={finishFill(uid, r.finish)} opacity={dim ? 0.45 : 1} />
+              {!onCad && (
+                <rect x={x} y={y} width={w} height={h} rx={r.outdoor ? 3 : 1}
+                  fill={finishFill(uid, r.finish)} opacity={dim ? 0.45 : 1} />
+              )}
               {/* the data wash, laid over the drawing rather than replacing it */}
               {data && !dim && v > 0.02 && (
                 <rect x={x} y={y} width={w} height={h} rx={r.outdoor ? 3 : 1}
-                  fill={mix(from, to, v)} opacity={0.44} style={{ transition: "fill .35s ease, opacity .35s ease" }} />
+                  fill={mix(from, to, v)} opacity={onCad ? 0.3 : 0.44}
+                  style={{ transition: "fill .35s ease, opacity .35s ease" }} />
               )}
-              {/* fittings */}
-              <g opacity={dim ? 0.28 : 0.88} style={{ transition: "opacity .3s ease" }}>
-                {r.fit?.map((f, i) => <Fixture key={i} f={f} />)}
-              </g>
+              {/* fittings — the CAD carries its own, so ours stand down */}
+              {!onCad && (
+                <g opacity={dim ? 0.28 : 0.88} style={{ transition: "opacity .3s ease" }}>
+                  {r.fit?.map((f, i) => <Fixture key={i} f={f} />)}
+                </g>
+              )}
               {/* room line */}
               <rect x={x} y={y} width={w} height={h} rx={r.outdoor ? 3 : 1}
                 fill="none"
-                stroke={isOn ? "#b0603a" : r.outdoor ? "#b9b3a5" : WALL_FILL}
+                stroke={isOn ? "#b0603a" : onCad ? "transparent" : r.outdoor ? "#b9b3a5" : WALL_FILL}
                 strokeWidth={isOn ? 4.5 : r.outdoor ? 1.2 : WALL / 2}
                 style={{ transition: "stroke .15s ease, stroke-width .15s ease" }} />
-              <RoomLabel r={r} name={sp.name} dims={sp.dims ? dimsLabel(sp.dims) : undefined}
-                metric={data && label !== "—" ? label : undefined} dark={data && v > 0.78} dim={dim} />
+              {(!onCad || (data && label !== "—")) && (
+                <RoomLabel r={r} name={sp.name} dims={onCad ? undefined : sp.dims ? dimsLabel(sp.dims) : undefined}
+                  metric={data && label !== "—" ? label : undefined} dark={data && v > 0.78} dim={dim}
+                  nameless={onCad} />
+              )}
             </g>
           );
         };
@@ -171,23 +186,31 @@ export function FloorPlan({
         {rooms.filter(isSite).map((r) => renderRoom(r))}
 
         {/* ------------------------------------------------------ the plate */}
-        <g filter={`url(#${uid}-soft)`}>
-          <rect x={plan.plate.x} y={plan.plate.y} width={plan.plate.w} height={plan.plate.h} fill="#f1ede5" rx="1" />
+        <g filter={onCad ? undefined : `url(#${uid}-soft)`}>
+          <rect x={plan.plate.x} y={plan.plate.y} width={plan.plate.w} height={plan.plate.h}
+            fill={onCad ? "#fdfcf9" : "#f1ede5"} rx="1" />
         </g>
         {/* The exterior wall, drawn heavy the way a plan draws it. */}
-        <rect x={plan.plate.x} y={plan.plate.y} width={plan.plate.w} height={plan.plate.h}
-          fill="none" stroke={WALL_FILL} strokeWidth={WALL * 1.7} />
+        {!onCad && (
+          <rect x={plan.plate.x} y={plan.plate.y} width={plan.plate.w} height={plan.plate.h}
+            fill="none" stroke={WALL_FILL} strokeWidth={WALL * 1.7} />
+        )}
 
         {/* --------------------------------------------------------- rooms */}
         {rooms.filter((r) => !isSite(r)).map((r) => renderRoom(r))}
 
+        {/* -------------------------------------------- the architect's CAD */}
+        {onCad && cad && <CadLayer floor={floor} cad={cad} showGrid={cadGrid} showText={cadText} dim={floor === "outdoor"} />}
+
         {/* ------------------------------------------------------ openings */}
-        <g>{plan.openings.map((o, i) => <OpeningMark key={i} o={o} wall={WALL} />)}</g>
+        {!onCad && <g>{plan.openings.map((o, i) => <OpeningMark key={i} o={o} wall={WALL} />)}</g>}
 
         {/* the outer face of the wall, drawn last so nothing sits over it */}
-        <rect x={plan.plate.x - WALL * 0.85} y={plan.plate.y - WALL * 0.85}
-          width={plan.plate.w + WALL * 1.7} height={plan.plate.h + WALL * 1.7}
-          fill="none" stroke="#35302a" strokeWidth="1.3" />
+        {!onCad && (
+          <rect x={plan.plate.x - WALL * 0.85} y={plan.plate.y - WALL * 0.85}
+            width={plan.plate.w + WALL * 1.7} height={plan.plate.h + WALL * 1.7}
+            fill="none" stroke="#35302a" strokeWidth="1.3" />
+        )}
 
         {plan.plot && <NorthPoint x={plan.plot.w - 42} y={38} />}
       </svg>
@@ -195,7 +218,10 @@ export function FloorPlan({
       {active && <PeekCard spaceId={active} overlay={overlay} onClose={() => { onSelect?.(null); setHover(null); }} />}
 
       <div className="mt-3 flex flex-wrap items-center justify-between gap-3">
-        <p className="text-[11px] text-ink-3 leading-snug max-w-sm">{plan.caption}</p>
+        <p className="text-[11px] text-ink-3 leading-snug max-w-sm">
+          {plan.caption}
+          {base === "cad" && (cadLoading ? " · loading the CAD…" : cadFailed ? " · the CAD could not be loaded" : " · drawn from the architect's DWG")}
+        </p>
         {data && <Legend from={from} to={to} overlay={overlay as OverlayKey} />}
       </div>
     </div>
@@ -210,8 +236,8 @@ export function FloorPlan({
  * and the hover card carries the detail.
  */
 function RoomLabel({
-  r, name, dims, metric, dark, dim,
-}: { r: PlanRoom; name: string; dims?: string; metric?: string; dark: boolean; dim: boolean }) {
+  r, name, dims, metric, dark, dim, nameless,
+}: { r: PlanRoom; name: string; dims?: string; metric?: string; dark: boolean; dim: boolean; nameless?: boolean }) {
   const short = shortName(name, r.w * r.h < 16000);
   const big = r.w * r.h > 17000;
   const size = big ? 13 : 10.5;
@@ -221,6 +247,17 @@ function RoomLabel({
   const cy = r.y + r.h / 2 + (r.labelDy ?? 0);
   const lines = (big && dims ? 1 : 0) + (metric ? 1 : 0);
   const top = cy - lines * 6;
+  if (nameless) {
+    // The CAD names its own rooms; only the number we are overlaying is ours.
+    return metric ? (
+      <text x={cx} y={cy + 9} textAnchor="middle"
+        style={{ pointerEvents: "none", fontFamily: "var(--font-sans)", paintOrder: "stroke" }}
+        fill={dark ? "#ffffff" : "#3f3931"} stroke={dark ? "rgba(60,52,42,.35)" : "rgba(255,255,255,.85)"}
+        strokeWidth={2.4} strokeLinejoin="round" fontSize={big ? 12 : 10} fontWeight={700}>
+        {metric}
+      </text>
+    ) : null;
+  }
   return (
     <text
       textAnchor="middle" x={cx} y={top}
@@ -266,12 +303,23 @@ function shortName(n: string, small = false): string {
   return t.charAt(0).toUpperCase() + t.slice(1);
 }
 
+/**
+ * North is to the right.
+ *
+ * The plans are drawn the way the architect presents them, with the road at
+ * the bottom of the sheet — and the road is to the EAST, because this is the
+ * east-facing unit. So the sheet is the site turned a quarter turn: the top
+ * of the page is west and north lies to the right. The DWG settles it —
+ * the setbacks it dimensions are 1520 south, 2490 north, 2740 west, 3380 east.
+ */
 function NorthPoint({ x, y }: { x: number; y: number }) {
   return (
-    <g transform={`translate(${x} ${y})`} opacity="0.5">
+    <g transform={`translate(${x} ${y})`} opacity="0.55">
       <circle r="17" fill="#ffffff" stroke="#c4bbab" strokeWidth="1.2" />
-      <path d="M0 -12L5 4L0 0L-5 4Z" fill="#6f6558" />
-      <text y="-19" textAnchor="middle" fontSize="9" fill="#6f6558" fontWeight={700} style={{ fontFamily: "var(--font-sans)" }}>N</text>
+      <g transform="rotate(90)">
+        <path d="M0 -12L5 4L0 0L-5 4Z" fill="#6f6558" />
+      </g>
+      <text x="21" y="4" textAnchor="middle" fontSize="9" fill="#6f6558" fontWeight={700} style={{ fontFamily: "var(--font-sans)" }}>N</text>
     </g>
   );
 }

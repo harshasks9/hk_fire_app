@@ -119,7 +119,7 @@ export const GROUND: PlanFloor = {
   viewBox: "-14 -14 618 700",
   plot: { x: 0, y: 0, w: PLOT.w, h: PLOT.h },
   plate: PLATE,
-  caption: 'Ground floor · plot 59\'0" × 65\'3" · built plate 45\'10" × 45\'2" · road to the south',
+  caption: 'Ground floor · plot 59\'0" × 65\'3" · built plate 45\'10" × 45\'2" · east facing, road to the east',
   site: [
     { kind: "lawn", x: 0, y: 0, w: PLOT.w, h: ft(9) },
     { kind: "lawn", x: 0, y: ft(9), w: ft(5), h: ft(45, 2) },
@@ -254,7 +254,7 @@ export const FIRST: PlanFloor = {
   level: 1,
   viewBox: "26 66 506 500",
   plate: PLATE,
-  caption: 'First floor · 45\'10" × 45\'2" · master suite north-west, sit-out to the south',
+  caption: 'First floor · 45\'10" × 45\'2" · master suite to the west, sit-out over the porch',
   rooms: [
     {
       spaceId: "ff-master", x: 50, y: 90, w: 203, h: 143, finish: "wood", labelDy: 30,
@@ -347,7 +347,7 @@ export const SECOND: PlanFloor = {
   viewBox: "26 66 506 500",
   plate: PLATE,
   openToSky: [{ x: 332, y: 90, w: 176, h: 438 }],
-  caption: 'Second floor · theatre and guest suite to the west · 774 sq ft open terrace east',
+  caption: 'Second floor · theatre, bar lounge and guest suite west · open terrace to the north-east',
   rooms: [
     {
       spaceId: "sf-theatre", x: 50, y: 90, w: 203, h: 143, finish: "wood", labelDy: 26,
@@ -431,8 +431,27 @@ export const DRAWN = new Set(STACK.flatMap((f) => f.rooms.map((r) => r.spaceId))
 
 /** The original drawings, kept as they were issued. */
 export const DRAWINGS = [
-  { id: "ground", label: "Ground floor plan", src: "/plans/ground.webp", note: 'Plot 59\'0" × 65\'3". Road to the south.' },
+  { id: "ground", label: "Ground floor plan", src: "/plans/ground.webp", note: 'Plot 59\'0" × 65\'3". East facing — the porch and road are on the east, so north is to the right of the sheet.' },
   { id: "first", label: "First floor plan", src: "/plans/first.jpg", note: 'Built plate 45\'10" × 45\'2".' },
-  { id: "second", label: "Second floor plan", src: "/plans/second.jpg", note: 'Theatre, guest suite and the open terrace.' },
+  { id: "second", label: "Second floor plan", src: "/plans/second.jpg", note: 'Theatre / bar lounge, guest suite and the open terrace.' },
   { id: "elevation", label: "Street elevation", src: "/plans/elevation.webp", note: "The villa as rendered by the architect." },
 ] as const;
+
+/**
+ * The construction set the app is drawn from.
+ *
+ * The presentation plans above are what the family was sold; this is what is
+ * being built. Where the two disagree — four rooms, so far — this one wins,
+ * and the app says so on the room.
+ */
+export const CAD_SOURCE = {
+  file: "HALLMARK_IMPERIA_EAST_FACING SITE-06-03-20.dwg",
+  revised: "2023-03-06",
+  plotMm: [17980, 19890] as const,
+  blockMm: [13970, 13767] as const,
+  /** south, north, west, east */
+  setbacksMm: { south: 1520, north: 2490, west: 2740, east: 3380 },
+  facing: "east" as const,
+  /** Where north points on these sheets, in degrees clockwise from up. */
+  northDeg: 90,
+};
