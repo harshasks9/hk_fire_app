@@ -2,6 +2,9 @@
 
 import Link from "next/link";
 import { useProject } from "@/lib/store";
+import { currentPhase } from "@/lib/model/phases";
+import { purchaseList, purchaseTotals } from "@/lib/model/purchase";
+import { checklistSummaries, houseChecklist } from "@/lib/model/checklist";
 import {
   projectFinance, openDecisions, decisionUrgency, findGaps, longLeadItems,
   upcomingPayments, openSnags, isLate, daysBetween, forecastOf,
@@ -21,6 +24,13 @@ import {
 export default function Home() {
   const { state, role } = useProject();
   const fin = projectFinance(state);
+  const phase = currentPhase(state);
+  const buy = purchaseTotals(purchaseList(state));
+  const checkRooms = checklistSummaries(state);
+  const houseCl = houseChecklist(state);
+  const checklistOpen = checkRooms.reduce((a, x) => a + (x.total - x.done), 0) + (houseCl.total - houseCl.done);
+  const checklistCritical = checkRooms.reduce((a, x) => a + x.criticalOpen, 0) + houseCl.criticalOpen;
+  const leastComplete = [...checkRooms].sort((a, b) => a.pct - b.pct)[0];
   const decisions = openDecisions(state);
   const gaps = findGaps(state);
   const blockers = gaps.filter((g) => g.severity === "blocker");
@@ -193,6 +203,54 @@ export default function Home() {
               </div>
             ))}
             {!longLead.length && <div className="text-[12px] text-ink-3">No long-lead item is waiting on a decision.</div>}
+          </div>
+        </Link>
+      </section>
+
+      {/* ------------------------------------- phase, checklist and shopping */}
+      <section className="grid gap-4 sm:grid-cols-3 mb-9">
+        <Link href="/phases" className="card px-5 py-5 hover:border-ink-4 transition-colors">
+          <Eyebrow>Where we are</Eyebrow>
+          <div className="mt-2 text-[17px] leading-tight" style={{ fontFamily: "var(--font-display)" }}>
+            Phase {phase.phase.n} — {phase.phase.name}
+          </div>
+          <p className="text-[12px] text-ink-3 mt-1.5 leading-relaxed">{phase.phase.goal}</p>
+          <div className="text-[11.5px] text-ink-3 mt-2.5 tnum">
+            Indicative weeks {phase.phase.weeks[0]}–{phase.phase.weeks[1]} · all twelve phases →
+          </div>
+        </Link>
+
+        <Link href="/checklist" className="card px-5 py-5 hover:border-ink-4 transition-colors">
+          <Eyebrow>Not yet ticked off</Eyebrow>
+          <div className="mt-2 flex items-baseline gap-2">
+            <span className="tnum text-[30px] leading-none" style={{ fontFamily: "var(--font-display)", color: checklistCritical ? "#9c5333" : undefined }}>
+              {checklistOpen}
+            </span>
+            <span className="text-[12px] text-ink-3">checklist lines</span>
+          </div>
+          <div className="mt-3 space-y-1">
+            {checklistCritical > 0 && <div className="text-[12px] text-clay">{checklistCritical} of them critical</div>}
+            {leastComplete && (
+              <div className="text-[12px] text-ink-2 truncate">
+                Least complete: {leastComplete.name} at {Math.round(leastComplete.pct)}%
+              </div>
+            )}
+            {!checklistOpen && <div className="text-[12px] text-ink-3">Every room's checklist is clear.</div>}
+          </div>
+        </Link>
+
+        <Link href="/purchases" className="card px-5 py-5 hover:border-ink-4 transition-colors">
+          <Eyebrow>To buy</Eyebrow>
+          <div className="mt-2 flex items-baseline gap-2">
+            <span className="tnum text-[30px] leading-none" style={{ fontFamily: "var(--font-display)", color: buy.overdue ? "#8d3a2c" : undefined }}>
+              {buy.toOrder}
+            </span>
+            <span className="text-[12px] text-ink-3">ready to order</span>
+          </div>
+          <div className="mt-3 space-y-1">
+            <div className="text-[12px] text-ink-2">{inr(buy.toOrderValue, { compact: true })} approved and waiting</div>
+            {buy.undecided > 0 && <div className="text-[12px] text-ink-3">{buy.undecided} still to decide</div>}
+            {buy.overdue > 0 && <div className="text-[12px] text-rust">{buy.overdue} past their order-by date</div>}
           </div>
         </Link>
       </section>

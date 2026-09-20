@@ -4,8 +4,15 @@ import Link from "next/link";
 import { useProject } from "@/lib/store";
 import { findGaps, openSnags, projectFinance } from "@/lib/model/derive";
 import { PageTitle, Eyebrow, Chip } from "@/components/ui";
+import { feetLabel } from "@/lib/model/measure";
 
 const LINKS = [
+  { href: "/checklist", title: "Planning checklist",
+    blurb: "Every room's full list — including the boring, invisible, expensive lines. A line is never deleted, only marked not applicable with a reason." },
+  { href: "/phases", title: "Phases",
+    blurb: "Twelve phases in the order a fit-out actually runs, what happens in each, and what must be true before the next one starts." },
+  { href: "/purchases", title: "Purchase list",
+    blurb: "What somebody has to go and order, and by when. Separate from the BOQ: site work is excluded, because there is nothing to buy." },
   { href: "/villa/drawings", title: "Architect's drawings",
     blurb: "The issued plans and the street elevation — the set every room, dimension and area in the app was read off." },
   { href: "/sheet", title: "Sheet",
@@ -23,13 +30,6 @@ const LINKS = [
   { href: "/more/completeness", title: "Completeness report", blurb: "Not what has been entered — what has not yet been thought about." },
   { href: "/costs", title: "Scenario planner", blurb: "Practical, Premium and No-compromise, and the specific trades between them." },
 ];
-
-/** 65.25 ft → 65′3″. Inches from the fraction, never typed by hand. */
-function plotLabel(ft: number): string {
-  const whole = Math.floor(ft);
-  const inches = Math.round((ft - whole) * 12);
-  return inches ? `${whole}′${inches}″` : `${whole}′0″`;
-}
 
 export default function MorePage() {
   const { state, dispatch, role, setRole } = useProject();
@@ -75,7 +75,7 @@ export default function MorePage() {
           <div>{state.spaces.length} spaces · {state.items.length} scope items · {state.vendors.length} vendors</div>
           <div>Budget {new Intl.NumberFormat("en-IN", { style: "currency", currency: "INR", maximumFractionDigits: 0 }).format(fin.originalBudget)} · forecast {new Intl.NumberFormat("en-IN", { style: "currency", currency: "INR", maximumFractionDigits: 0 }).format(fin.forecast)}</div>
           {state.meta.plotWidthFt > 0 && state.meta.plotDepthFt > 0 && (
-            <div>Plot {plotLabel(state.meta.plotWidthFt)} × {plotLabel(state.meta.plotDepthFt)}</div>
+            <div>Plot {feetLabel(state.meta.plotWidthFt)} × {feetLabel(state.meta.plotDepthFt)}</div>
           )}
         </div>
         <p className="text-[11.5px] text-ink-3 mt-4 leading-relaxed max-w-2xl">

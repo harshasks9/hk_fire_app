@@ -8,7 +8,10 @@ import {
   spaceMetrics, rollup, itemsForSpace, byCategory, forecastOf, findGaps, bucketOf,
   COMPLETENESS_BUCKETS,
 } from "@/lib/model/derive";
-import { inr, dimsLabel, areaSqft, perimeterFt, computeCost } from "@/lib/model/costing";
+import { inr } from "@/lib/model/costing";
+import { measureLine, NOT_DIMENSIONED_NOTE } from "@/lib/model/measure";
+import { MeasureTable } from "@/components/Measure";
+import { roomChecklist, type Check } from "@/lib/model/checklist";
 import {
   CATEGORY_LABEL, STAGE_LABEL, type ScopeItem, type Category, type Idea, type DesignOption,
   type Decision, type Doc, type Task, type SiteUpdate, type Note, type Snag,
@@ -26,7 +29,7 @@ import { FLOOR_META } from "@/lib/seed/spaces";
 import { catLabel, categoryOptions, buildUpFromCategory } from "@/lib/model/categories";
 
 const TABS = [
-  "Design", "Ideas", "Decisions", "Scope", "Cost", "Products",
+  "Checklist", "Design", "Ideas", "Decisions", "Scope", "Cost", "Products",
   "Tasks", "Vendors", "Files", "Site photos", "Issues",
 ] as const;
 type Tab = (typeof TABS)[number];
@@ -44,7 +47,7 @@ export default function RoomPage() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const { state, role } = useProject();
-  const [tab, setTab] = useState<Tab>("Design");
+  const [tab, setTab] = useState<Tab>("Checklist");
   const [openItem, setOpenItem] = useState<ScopeItem | null>(null);
 
   const spaceId = decodeURIComponent(params.spaceId);
@@ -65,6 +68,7 @@ export default function RoomPage() {
   const docs = state.docs.filter((d) => d.spaceIds.includes(spaceId) || d.scopeItemIds.some((x) => itemIds.has(x)));
   const notes = state.notes.filter((n) => n.spaceIds.includes(spaceId));
   const gaps = useMemo(() => findGaps(state).filter((g) => g.spaceId === spaceId), [state, spaceId]);
+  const checklist = useMemo(() => roomChecklist(state, spaceId), [state, spaceId]);
   const products = items.filter((i) => i.procurement);
   const vendorIds = Array.from(new Set(items.map((i) => i.vendorId).filter(Boolean))) as string[];
 
@@ -89,6 +93,7 @@ export default function RoomPage() {
     .sort((a, b) => +new Date(a.finish!) - +new Date(b.finish!))[0];
 
   const counts: Partial<Record<Tab, number>> = {
+    Checklist: checklist ? checklist.total - checklist.done : undefined,
     Ideas: ideas.length, Decisions: decisions.length, Scope: r.live,
     Products: products.length, Tasks: tasks.filter((t) => t.status !== "done").length,
     Files: docs.length, "Site photos": updates.length, Issues: snags.filter((s) => s.status !== "closed").length,
@@ -110,17 +115,10 @@ export default function RoomPage() {
           <PageTitle
             title={space.name}
             right={<Link href="/manage" className="btn btn-sm">Edit this room</Link>}
-            sub={
-              space.dims
-                ? `${dimsLabel(space.dims)} · ${areaSqft(space.dims)} sq ft · ${perimeterFt(space.dims)} ft perimeter${space.note ? ` — ${space.note}` : ""}`
-                : space.note ?? "This space is not dimensioned on the architect's plan, so no area is assumed."
-            }
+            sub={measureLine(space, { perimeter: true }) + (space.note ? ` — ${space.note}` : "")}
           />
           {!space.dims && (
-            <p className="text-[11.5px] text-ink-3 -mt-3 mb-4 max-w-xl leading-relaxed">
-              Quantities here start at 1 and must be measured on site. Nothing has been
-              invented from a drawing that does not carry the number.
-            </p>
+            <p className="text-[11.5px] text-ink-3 -mt-3 mb-4 max-w-xl leading-relaxed">{NOT_DIMENSIONED_NOTE}</p>
           )}
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-4">
@@ -163,6 +161,7 @@ export default function RoomPage() {
             ratio="4 / 3"
             label={updates[0] ? `Site — ${fmtDay(updates[0].at)}` : "No site photo yet"}
           />
+          <div className="mt-3"><MeasureTable sp={space} /></div>
           {gaps.length > 0 && (
             <div className="card-quiet px-3.5 py-3 mt-3">
               <Eyebrow>Not yet thought about</Eyebrow>
@@ -187,6 +186,7 @@ export default function RoomPage() {
       <Tabs tabs={TABS} active={tab} onChange={setTab} counts={counts} />
 
       <div className="mt-6">
+        {tab === "Checklist" && <ChecklistTab spaceId={spaceId} />}
         {tab === "Design" && <DesignTab spaceId={spaceId} options={options} ideas={ideas} decisions={decisions} docs={docs} />}
         {tab === "Ideas" && <IdeasTab spaceId={spaceId} ideas={ideas} items={items} />}
         {tab === "Decisions" && (
@@ -744,6 +744,84 @@ function IssuesTab({ snags, spaceId }: { snags: Snag[]; spaceId: string }) {
           </div>
         </div>
       ))}
+    </div>
+  );
+}
+
+
+/* --------------------------------------------------------------- checklist */
+
+const MARK: Record<Check["state"], { mark: string; tone: string; label: string }> = {
+  done: { mark: "✓", tone: "#41603f", label: "Done" },
+  partial: { mark: "◐", tone: "#8a6a20", label: "Started" },
+  todo: { mark: "○", tone: "#9c5333", label: "Not yet" },
+  na: { mark: "–", tone: "#a9a196", label: "Not applicable" },
+};
+
+/**
+ * The room's own planning checklist, in the order a fit-out runs. The same
+ * list the /checklist overview shows, here beside the room it belongs to.
+ */
+function ChecklistTab({ spaceId }: { spaceId: string }) {
+  const { state } = useProject();
+  const [hideDone, setHideDone] = useState(false);
+  const [why, setWhy] = useState<string | null>(null);
+  const cl = useMemo(() => roomChecklist(state, spaceId), [state, spaceId]);
+  if (!cl) return null;
+
+  return (
+    <div>
+      <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
+        <div className="text-[12.5px] text-ink-3 tnum">
+          <strong className="text-ink font-medium">{cl.done} of {cl.total}</strong> checked
+          {cl.criticalOpen > 0 && <span className="text-clay"> · {cl.criticalOpen} critical outstanding</span>}
+        </div>
+        <div className="flex items-center gap-2">
+          <button className="btn btn-sm" onClick={() => setHideDone((v) => !v)}>
+            {hideDone ? "Show completed" : "Hide completed"}
+          </button>
+          <Link href="/checklist" className="btn btn-sm">All rooms →</Link>
+        </div>
+      </div>
+      <div className="mb-5"><Bar pct={cl.pct} height={5} /></div>
+
+      <div className="space-y-6">
+        {cl.sections.map((sec) => {
+          const checks = hideDone ? sec.checks.filter((c) => c.state !== "done") : sec.checks;
+          if (!checks.length) return null;
+          return (
+            <section key={sec.id}>
+              <div className="flex flex-wrap items-baseline justify-between gap-2">
+                <h3 className="text-[14.5px]" style={{ fontFamily: "var(--font-display)" }}>{sec.title}</h3>
+                <Link href={`/phases#${sec.phaseId}`} className="text-[11px] text-ink-3 tnum hover:text-clay">
+                  {sec.done} / {sec.total}
+                </Link>
+              </div>
+              <p className="text-[11.5px] text-ink-3 mt-1 mb-2 leading-relaxed max-w-3xl">{sec.blurb}</p>
+              <ul>
+                {checks.map((c) => {
+                  const m = MARK[c.state];
+                  const on = why === `${sec.id}-${c.id}`;
+                  return (
+                    <li key={c.id} className="border-b border-ink-6 last:border-0">
+                      <div className="flex items-start gap-2.5 py-1.5">
+                        <span className="text-[13px] leading-5 shrink-0 w-3.5 text-center" style={{ color: m.tone }} title={m.label}>{m.mark}</span>
+                        <button className="text-left min-w-0 flex-1" onClick={() => setWhy(on ? null : `${sec.id}-${c.id}`)}>
+                          <span className={`text-[12.5px] leading-snug ${c.state === "na" ? "text-ink-3 line-through" : c.state === "done" ? "text-ink-2" : ""}`}>{c.label}</span>
+                          {c.critical && c.state !== "done" && c.state !== "na" && <span className="ml-1.5"><Chip tone="clay">critical</Chip></span>}
+                          {c.detail && <span className="text-[11px] text-ink-3 ml-1.5 tnum">— {c.detail}</span>}
+                        </button>
+                        {c.href && <Link href={c.href} className="text-[11px] text-clay hover:underline shrink-0 mt-0.5">open →</Link>}
+                      </div>
+                      {on && c.why && <p className="text-[11.5px] text-ink-3 leading-relaxed pl-6 pb-2 pr-2 max-w-3xl">{c.why}</p>}
+                    </li>
+                  );
+                })}
+              </ul>
+            </section>
+          );
+        })}
+      </div>
     </div>
   );
 }

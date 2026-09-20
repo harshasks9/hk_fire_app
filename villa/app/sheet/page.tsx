@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useCallback, useMemo, useRef, useState } from "react";
+import { Dims } from "@/components/Measure";
 import Link from "next/link";
 import { useProject, newId } from "@/lib/store";
 import { activeCategories, catLabel, buildUpFromCategory } from "@/lib/model/categories";
@@ -185,6 +186,7 @@ export default function SheetPage() {
       <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mb-3 text-[12.5px] text-ink-3">
         <span className="tnum"><strong className="text-ink font-medium">{rows.length}</strong> rows</span>
         <span className="tnum"><strong className="text-ink font-medium">{inr(total, { compact: true })}</strong> forecast</span>
+        {space && <Dims sp={space} className="text-[12px]" />}
         {space && <Link href={`/villa/${space.id}`} className="text-clay hover:underline">Open workspace →</Link>}
         <button className="btn btn-sm ml-auto" onClick={() => { addRow(); setTimeout(() => focusCell(rows.length, 0), 30); }}>Add row</button>
       </div>

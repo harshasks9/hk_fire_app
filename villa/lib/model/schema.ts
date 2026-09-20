@@ -1,5 +1,5 @@
 import type { ProjectState } from "./types";
-import { dimsLabel, areaSqft } from "./costing";
+import { measureShort, measureSpace, mmLabel, areaLabel } from "./measure";
 import {
   STAGES, STAGE_LABEL, CATEGORY_LABEL, UNIT_LABEL
 } from "./types";
@@ -120,11 +120,7 @@ export const SCHEMAS: Record<CollectionKey, CollectionSchema> = {
       { key: "name", label: "Name", type: "text", required: true, inTable: true },
       { key: "floor", label: "Floor", type: "select", options: FLOORS, required: true, inTable: true },
       { key: "_size", label: "Size", type: "readonly", inTable: true,
-        compute: (row) => {
-          const d = row.dims as never;
-          const label = dimsLabel(d);
-          return label ? `${label} · ${areaSqft(d)} sq ft` : "not dimensioned";
-        } },
+        compute: (row) => measureShort(row as never) },
       { key: "kind", label: "Kind", type: "select", options: SPACE_KINDS, required: true, inTable: true,
         hint: "Decides which checklist a newly created space is born with." },
       { key: "parentId", label: "Part of", type: "select", source: "spaces",
@@ -141,7 +137,22 @@ export const SCHEMAS: Record<CollectionKey, CollectionSchema> = {
           { value: "unknown", label: "Unknown" },
         ],
         hint: "Never leave a site measurement labelled as a plan dimension." },
-      { key: "ceilingHeightFt", label: "Ceiling height (ft)", type: "number" },
+      { key: "ceilingHeightFt", label: "Ceiling height (ft)", type: "number",
+        hint: "Blank means the app assumes 10'0\" for wall area and volume." },
+      { key: "_mm", label: "In millimetres", type: "readonly", inTable: true,
+        compute: (row) => mmLabel((row as { dims?: never }).dims) ?? "—" },
+      { key: "_area", label: "Floor area", type: "readonly",
+        compute: (row) => areaLabel((row as { dims?: never }).dims) ?? "—" },
+      { key: "_perimeter", label: "Perimeter", type: "readonly",
+        compute: (row) => {
+          const m = measureSpace(row as never);
+          return m ? `${m.perimeterFt} rft · ${m.perimeterMm} mm` : "—";
+        } },
+      { key: "_wall", label: "Wall area (less 12% openings)", type: "readonly",
+        compute: (row) => {
+          const m = measureSpace(row as never);
+          return m ? `${m.wallSqft} sq ft at ${m.ceilingFt}'0"` : "—";
+        } },
       { key: "note", label: "Note", type: "textarea" },
     ],
     blank: ({ id }) => ({ id, name: "New space", floor: "ground", kind: "bedroom" }),

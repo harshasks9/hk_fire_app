@@ -13,30 +13,39 @@ import type { Role } from "@/lib/model/types";
 /**
  * Navigation.
  *
- * Nine destinations, never fifteen. Vendors, Notes, Documents, BOQ, the
+ * Eleven destinations, never twenty. Vendors, Notes, Documents, BOQ, the
  * completeness report and settings all live under More or inside the screen
  * they belong to — the command bar reaches anything else in two keystrokes.
+ *
+ * Plan and Buy earned their own places rather than living under More: the
+ * checklist is what you work through while planning, and the purchase list is
+ * what somebody carries around while ordering. Both are used on their own,
+ * repeatedly, by different people — which is the test for a nav entry.
  */
 const PRIMARY = [
   { href: "/", label: "Home", icon: "home" },
   { href: "/villa", label: "Villa", icon: "villa" },
+  { href: "/checklist", label: "Plan", icon: "checklist" },
   { href: "/design", label: "Design", icon: "design" },
   { href: "/decisions", label: "Decisions", icon: "decisions" },
   { href: "/timeline", label: "Timeline", icon: "timeline" },
   { href: "/costs", label: "Costs", icon: "costs" },
+  { href: "/purchases", label: "Buy", icon: "buy" },
   { href: "/procurement", label: "Procurement", icon: "procurement" },
   { href: "/site", label: "Site", icon: "site" },
   { href: "/more", label: "More", icon: "more" },
 ] as const;
 
 /** Mobile keeps five; the rest move under More. */
-const MOBILE = ["/", "/villa", "/decisions", "/site", "/more"];
+const MOBILE = ["/", "/villa", "/checklist", "/site", "/more"];
 
 function Icon({ name, active }: { name: string; active?: boolean }) {
   const s = { fill: "none", stroke: "currentColor", strokeWidth: active ? 1.85 : 1.6, strokeLinecap: "round" as const, strokeLinejoin: "round" as const };
   const p: Record<string, React.ReactNode> = {
     home: <><path d="M3 9.5 10 4l7 5.5" {...s} /><path d="M5 9v7h10V9" {...s} /></>,
     villa: <><path d="M3 16h14M4 16V8l6-4 6 4v8" {...s} /><path d="M8 16v-4h4v4" {...s} /></>,
+    checklist: <><path d="M3.5 5.5 5 7l2.5-2.5M3.5 10.5 5 12l2.5-2.5M3.5 15.5 5 17l2.5-2.5" {...s} /><path d="M10 6h6.5M10 11h6.5M10 16h4" {...s} /></>,
+    buy: <><path d="M3 4h2l2 8.5h7.5L16.5 6.5H6" {...s} /><circle cx="8" cy="16" r="1.3" {...s} /><circle cx="14" cy="16" r="1.3" {...s} /></>,
     design: <><circle cx="10" cy="10" r="6.5" {...s} /><path d="M10 3.5v13M3.5 10h13" {...s} /></>,
     decisions: <><path d="M4 10.5 8.5 15 16 5.5" {...s} /></>,
     timeline: <><path d="M3 6h10M3 10h14M3 14h7" {...s} /><circle cx="15" cy="6" r="1.6" {...s} /></>,
@@ -75,7 +84,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
   const fin = projectFinance(state);
 
   const nav = role === "vendor"
-    ? PRIMARY.filter((n) => ["/", "/villa", "/timeline", "/site", "/more"].includes(n.href))
+    ? PRIMARY.filter((n) => ["/", "/villa", "/checklist", "/timeline", "/site", "/more"].includes(n.href))
     : PRIMARY;
 
   const badge = (href: string) => (href === "/decisions" && decisions ? decisions : undefined);

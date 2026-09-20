@@ -5,7 +5,9 @@ import Link from "next/link";
 import { useProject } from "@/lib/store";
 import { planFor, isSite, WALL, type PlanRoom } from "@/lib/plans/geometry";
 import { spaceMetrics, overlayIntensity, type OverlayKey } from "@/lib/model/derive";
-import { dimsLabel, areaSqft, inr } from "@/lib/model/costing";
+import { inr } from "@/lib/model/costing";
+import { dimsLabel, measureShort } from "@/lib/model/measure";
+import { DimsShort } from "./Measure";
 import type { FloorId } from "@/lib/model/types";
 import { PlanDefs, Fixture, OpeningMark, finishFill, WALL_FILL } from "./PlanArt";
 import { CadLayer, useCad } from "./CadPlan";
@@ -332,14 +334,13 @@ function PeekCard({ spaceId, overlay, onClose }: { spaceId: string; overlay: Vie
   const sp = state.spaces.find((s) => s.id === spaceId);
   const m = spaceMetrics(state, spaceId);
   if (!sp) return null;
-  const area = areaSqft(sp.dims);
   return (
     <div className="absolute top-2 right-2 card px-4 py-3.5 shadow-xl max-w-[264px] animate-rise z-10" style={{ background: "rgba(255,253,250,.97)" }}>
       <div className="flex items-start justify-between gap-2">
         <div className="min-w-0">
           <div className="text-[15px] leading-tight" style={{ fontFamily: "var(--font-display)" }}>{sp.name}</div>
           <div className="text-[11px] text-ink-3 mt-0.5">
-            {sp.dims ? `${dimsLabel(sp.dims)} · ${area} sq ft` : "Not dimensioned on the plan"}
+            <DimsShort sp={sp} />
           </div>
         </div>
         <button onClick={onClose} className="text-ink-4 hover:text-ink text-[15px] leading-none shrink-0 -mt-0.5" aria-label="Close">×</button>

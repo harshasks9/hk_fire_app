@@ -8,7 +8,7 @@ import { FLOOR_META } from "@/lib/seed/spaces";
 import { SCOPE_TEMPLATES } from "@/lib/seed/scope-templates";
 import { buildUpFromCategory } from "@/lib/model/categories";
 import { rollup, itemsForFloor, itemsForSpace, houseWideItems } from "@/lib/model/derive";
-import { inr, dimsLabel, areaSqft } from "@/lib/model/costing";
+import { inr } from "@/lib/model/costing";
 import type { FloorId, Space, ScopeItem, SpaceKind } from "@/lib/model/types";
 import { PageTitle, Eyebrow, Tabs, Sheet, Field } from "@/components/ui";
 import { EntityEditor } from "@/components/EntityEditor";

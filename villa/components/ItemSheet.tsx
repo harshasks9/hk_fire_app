@@ -4,7 +4,9 @@ import React, { useState } from "react";
 import { useProject, newId, useRevisions } from "@/lib/store";
 import type { ScopeItem, Stage, Unit } from "@/lib/model/types";
 import { STAGES, STAGE_LABEL, UNIT_LABEL, CATEGORY_LABEL } from "@/lib/model/types";
-import { computeCost, inr, round, areaSqft, perimeterFt, wallAreaSqft } from "@/lib/model/costing";
+import { computeCost, inr, round } from "@/lib/model/costing";
+import { measureSpace } from "@/lib/model/measure";
+import { Dims } from "./Measure";
 import { forecastOf } from "@/lib/model/derive";
 import { Sheet, Field, Eyebrow, NumberInput, StageChip, Chip, Money, Assumed, Tabs, Avatar, Empty, fmtDate } from "./ui";
 import { Comments } from "./Comments";
@@ -56,6 +58,7 @@ export function ItemSheet({
       <div className="flex flex-wrap items-center gap-2 mb-4 text-[12px] text-ink-3">
         <Chip tone="ghost">{catLabel(state, item.category)}</Chip>
         {space ? <EntityLink on="spaces" id={space.id} label={space.name} /> : <span>House-wide</span>}
+        {space?.dims && <Dims sp={space} source={false} className="text-[11.5px]" />}
         {item.vendorId && <>·<EntityLink on="vendors" id={item.vendorId} /></>}
         {decision && <>·<EntityLink on="decisions" id={decision.id} label="the decision" /></>}
         <span className="ml-auto"><RowActions on="items" id={item.id} always /></span>
@@ -164,9 +167,9 @@ export function ItemSheet({
                     <div className="mt-3.5 flex flex-wrap gap-1.5 items-center">
                       <span className="text-[11px] text-ink-3">Use this room&rsquo;s:</span>
                       {([
-                        ["Floor area", areaSqft(space.dims), "sqft"],
-                        ["Wall area", wallAreaSqft(space.dims, space.ceilingHeightFt ?? 10), "sqft"],
-                        ["Perimeter", perimeterFt(space.dims), "rft"],
+                        ["Floor area", measureSpace(space)?.areaSqft, "sqft"],
+                        ["Wall area", measureSpace(space)?.wallSqft, "sqft"],
+                        ["Perimeter", measureSpace(space)?.perimeterFt, "rft"],
                       ] as const).map(([label, v, unit]) =>
                         v ? (
                           <button

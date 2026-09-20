@@ -3,6 +3,9 @@ import { CATEGORY_LABEL, STAGE_LABEL } from "./model/types";
 import { forecastOf, openDecisions, upcomingPayments, isLate, rollup } from "./model/derive";
 import { inr } from "./model/costing";
 import { catLabel } from "./model/categories";
+import { purchaseList, purchaseTotals } from "./model/purchase";
+import { checklistSummaries } from "./model/checklist";
+import { currentPhase } from "./model/phases";
 
 /**
  * Universal search.
@@ -196,6 +199,49 @@ export function search(state: ProjectState, query: string): SearchHit[] {
       answer: String(list.length),
       detail: list.slice(0, 4).map((d) => d.title).join(" · ") || "None.",
       href: "/decisions",
+    });
+  }
+
+  // "What do we still have to buy?"
+  if (/buy|purchase|order|shopping|procure/.test(q)) {
+    const lines = purchaseList(state);
+    const t = purchaseTotals(lines);
+    hits.push({
+      kind: "answer", id: "ans-buy", title: "Still to be bought",
+      answer: `${t.toOrder + t.undecided} lines`,
+      subtitle: `${t.toOrder} approved and ready to order (${inr(t.toOrderValue, { compact: true })}), ${t.undecided} not yet decided`,
+      detail: t.longLeadUnordered
+        ? `${t.longLeadUnordered} of them are long-lead and not yet on order — those are the ones that move the handover date.`
+        : "Nothing long-lead is outstanding.",
+      href: "/purchases", score: 1000,
+    });
+  }
+
+  // "What have we not thought about in <room>?"
+  if (/checklist|missing|forgotten|thought about|complete|left to do/.test(q)) {
+    const sums = checklistSummaries(state);
+    const worst = [...sums].sort((a, b) => a.pct - b.pct)[0];
+    const open = sums.reduce((a, x) => a + (x.total - x.done), 0);
+    if (worst) {
+      hits.push({
+        kind: "answer", id: "ans-checklist", title: "Planning checklist",
+        answer: `${open} lines open`,
+        subtitle: `Least complete: ${worst.name} at ${Math.round(worst.pct)}%`,
+        detail: worst.next ? `Next there: ${worst.next.label}` : undefined,
+        href: "/checklist", score: 1000,
+      });
+    }
+  }
+
+  // "What phase are we in / what happens next?"
+  if (/phase|stage of the project|what next|sequence|order of work/.test(q)) {
+    const p = currentPhase(state);
+    hits.push({
+      kind: "answer", id: "ans-phase", title: "Where the project is",
+      answer: `Phase ${p.phase.n} — ${p.phase.name}`,
+      subtitle: p.phase.goal,
+      detail: `Exit this phase when: ${p.phase.exit[0]}`,
+      href: "/phases", score: 1000,
     });
   }
 

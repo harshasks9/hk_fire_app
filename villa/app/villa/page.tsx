@@ -7,7 +7,9 @@ import { FloorPlan, OVERLAYS, type ViewKey } from "@/components/FloorPlan";
 import { VillaModel } from "@/components/VillaModel";
 import { FLOOR_META } from "@/lib/seed/spaces";
 import { rollup, itemsForFloor, spaceMetrics } from "@/lib/model/derive";
-import { inr, dimsLabel, areaSqft } from "@/lib/model/costing";
+import { inr } from "@/lib/model/costing";
+import { DimsShort } from "@/components/Measure";
+import { measureSpace } from "@/lib/model/measure";
 import type { FloorId } from "@/lib/model/types";
 import { PageTitle, Eyebrow, Bar, Chip } from "@/components/ui";
 
@@ -42,6 +44,10 @@ export default function VillaPage() {
   const pickOverlay = (k: ViewKey) => { chosen.current = true; setOverlay(k); };
 
   const spaces = state.spaces.filter((s) => s.floor === floor && !s.archived);
+
+  const floorArea = spaces.reduce((a, s2) => a + (measureSpace(s2)?.areaSqft ?? 0), 0);
+
+  const undimensioned = spaces.filter((s2) => !s2.dims).length;
 
   return (
     <div>
@@ -140,13 +146,16 @@ export default function VillaPage() {
       {/* -------------------------------------------------------- room list */}
       <div className="mt-6">
         <div className="flex items-end justify-between gap-3 mb-2.5">
-          <Eyebrow>{FLOOR_META[floor].label} — {spaces.length} spaces</Eyebrow>
+          <Eyebrow>
+            {FLOOR_META[floor].label} — {spaces.length} spaces
+            {floorArea > 0 && <> · {Math.round(floorArea)} sq ft dimensioned</>}
+            {undimensioned > 0 && <> · {undimensioned} not dimensioned</>}
+          </Eyebrow>
           <span className="text-[11.5px] text-ink-3 hidden sm:block">Every one already has its own scope checklist.</span>
         </div>
         <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-2.5">
           {spaces.map((s) => {
             const m = spaceMetrics(state, s.id);
-            const area = areaSqft(s.dims);
             return (
               <Link
                 key={s.id}
@@ -159,7 +168,7 @@ export default function VillaPage() {
                   <div className="min-w-0">
                     <div className="text-[13.5px] leading-snug">{s.name}</div>
                     <div className="text-[11px] text-ink-3 mt-0.5">
-                      {s.dims ? `${dimsLabel(s.dims)} · ${area} sq ft` : "Not dimensioned"}
+                      <DimsShort sp={s} />
                     </div>
                   </div>
                   <span className="tnum text-[12px] text-ink-3 shrink-0">{Math.round(m.completionPct)}%</span>

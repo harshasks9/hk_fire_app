@@ -54,8 +54,8 @@ export default function ProcurementPage() {
     <div>
       <PageTitle
         title="Procurement"
-        sub="What has been selected, ordered, delivered and installed — and what is going to be late if it is not decided this week."
-        right={<AddButton on="items" label="Add something to buy" accent />}
+        sub="What has been selected, ordered, delivered and installed — and what is going to be late if it is not decided this week. The list of what still has to be bought lives on its own, under Buy."
+        right={<><Link href="/purchases" className="btn btn-sm">Purchase list →</Link><AddButton on="items" label="Add something to buy" accent /></>}
       />
 
       <div className="card px-5 py-5 mb-6 grid grid-cols-2 sm:grid-cols-4 gap-4">
