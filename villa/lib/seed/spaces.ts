@@ -116,7 +116,10 @@ export const SPACES: Space[] = [
 
   /* -------------------------------------------------------------- second */
   { id: "sf-bed5", name: "Bedroom 5", floor: "second", kind: "bedroom",
-    dims: plan(18, 10, 12, 6), note: "South-west; opens toward the terrace." },
+    dims: plan(18, 10, 12, 6),
+    note: "5746 \u00d7 3820 on the construction drawing. South-EAST corner, not south-west as an earlier note said: " +
+      "the window faces east over the front setback and the slider opens north onto the terrace. " +
+      "Earmarked to become the home office." },
   { id: "sf-bed5-wic", name: "Bedroom 5 WIC", floor: "second", kind: "wic",
     dims: plan(7, 0, 10, 6), parentId: "sf-bed5" },
   { id: "sf-bed5-bath", name: "Bedroom 5 bathroom", floor: "second", kind: "bathroom",

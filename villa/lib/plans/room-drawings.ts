@@ -34,6 +34,40 @@ export interface RoomDrawing {
 
 export const ROOM_DRAWINGS: RoomDrawing[] = [
   {
+    id: "rd-office-layout",
+    spaceId: "sf-bed5",
+    label: "Home office \u2014 layouts A and B, and the point schedule",
+    src: "/drawings/office-layouts.png",
+    kind: "furniture",
+    revision: "Provisional",
+    by: "Harsha",
+    at: "2026-09-20",
+    note: "Bedroom 5 converted to a home office. Two arrangements compared at 1:50, plus the electrical and data point schedule.",
+    caveats: [
+      "Provisional \u2014 not for construction. Issued to settle the layout, not to build from.",
+      "Drawn in millimetres to match the construction set; the rest of the app reads feet and inches with millimetres alongside.",
+      "The room's own note said south-west. The DWG setbacks put it south-EAST: window east, slider north onto the terrace. Confirm with a compass on site.",
+    ],
+    facts: [
+      { k: "Room", v: "5746 \u00d7 3820 mm (18'10\" \u00d7 12'6\") \u00b7 21.95 m\u00b2 \u00b7 236 sq ft" },
+      { k: "Glazing", v: "East window ~2316 mm wide; north slider to the terrace ~2438 mm" },
+      { k: "Recommended layout", v: "A \u2014 desk facing east, back to a 4200 mm joinery wall, north light from the left" },
+      { k: "Desk", v: "1800 \u00d7 800 sit-stand at X 2700\u20134500, Y 2000\u20132800; monitor on an arm at 950 mm" },
+      { k: "Clearances", v: "900 behind the chair, 1020 east walkway, 1246 across the north end" },
+      { k: "Services", v: "Dedicated 20 A desk circuit, 4 UPS-backed sockets, 4 \u00d7 Cat6A, 2 \u00d7 25 mm spare conduit" },
+      { k: "Climate", v: "Top floor \u2014 roof insulation is the largest single gain. 1.5 TR slim ducted, under 35 dB(A) at the desk" },
+      { k: "Budget", v: "Fit-for-purpose \u20b913.45L \u00b7 recommended \u20b921.12L \u00b7 the \u20b912.0L estimate needs a defined cut list" },
+    ],
+    verify: [
+      "Compass bearing taken in the room \u2014 the whole daylight and heat strategy turns on it.",
+      "Entry door position, width and swing. The villa model carries no opening into this room, so the door on the drawing is assumed.",
+      "Finished ceiling height: the brief says ~10 ft, the villa model carries 11 ft. Decides whether ducted AC fits.",
+      "Both room diagonals, to establish whether the shell is square before joinery is scribed.",
+      "Column positions and any beam soffit drop across the joinery wall.",
+      "Road noise at the east window, listened to at 9 am and 6 pm, before deciding on the DGU upgrade.",
+    ],
+  },
+  {
     id: "rd-theatre-layout",
     spaceId: "sf-theatre",
     label: "Theatre layout & long section",
