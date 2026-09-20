@@ -23,15 +23,17 @@ no compiler, bundler or framework to install.
 ```
 memos/
   types.ts        ForensicMemo — the analytical template both subjects fill
-  owl.ts          Blue Owl memorandum (cut 2026-07-31, revalidated 2026-08-28)
-  pax.ts          Patria memorandum  (cut 2026-07-31, revalidated 2026-08-28)
+  owl.ts          Blue Owl memorandum (cut 2026-07-31, revalidated 2026-08-28 and 2026-09-20)
+  pax.ts          Patria memorandum  (cut 2026-07-31, revalidated 2026-08-28 and 2026-09-20)
+  owl.expansion.ts, pax.expansion.ts
+                  The v3 chapters — history, multiple history, peer group, yields (cut 2026-09-20)
   index.ts        Registry + derived maths (weighted value, IRR, SOTP, AUM quality)
   memos.test.ts   The prompt's output contract as executable tests
 build.ts          Renders the memos to dist/ — index, one page per memo, methodology
 serve.ts          Local preview of dist/ with the gate in front (npm run serve)
 middleware.ts     The shared-key gate — Vercel runs it in front of every request
 docs/
-  FORENSIC-ASSET-MANAGER-PROMPT.md   The versioned methodology (v2) the memos follow
+  FORENSIC-ASSET-MANAGER-PROMPT.md   The versioned methodology (v3) the memos follow, with changelogs
   FORENSIC-MEMOS.md                  How the memos are structured, tiered and tested
 ```
 

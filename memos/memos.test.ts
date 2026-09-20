@@ -323,3 +323,113 @@ describe('revalidation', () => {
     }
   })
 })
+
+/**
+ * v3 chapters. The expansion is the part of the memo most exposed to stale or
+ * fabricated data — every derived figure is recomputed here from its inputs, and every
+ * gap must be an explicit null, never a silently interpolated number.
+ */
+describe('expansion (methodology v3)', () => {
+  for (const memo of FORENSIC_MEMOS) {
+    describe(`${memo.symbol}`, () => {
+      const e = memo.expansion!
+
+      it('is present, dated on or after the latest revalidation, and carries every chapter', () => {
+        assert.ok(e)
+        assert.ok(e.asOf >= memo.revalidation!.asOf)
+        assert.ok(e.history.provenance.length >= 5)
+        assert.ok(e.history.promises.length >= 5)
+        assert.ok(e.history.acquisitions.length >= 3)
+        assert.ok(e.history.life.length >= 6)
+        assert.ok(e.history.regimes.length >= 4)
+        assert.ok(e.multiple.points.length >= 6)
+        assert.ok(e.multiple.decomposition.length >= 4)
+        assert.ok(e.multiple.technicals.length >= 3)
+        assert.ok(e.peers.rows.length >= 10)
+        assert.ok(e.peers.whatMarketPays.length >= 4)
+        assert.ok(e.yields.rows.length >= 8)
+        assert.ok(e.yields.buckets.length >= 3)
+        assert.ok(e.sources.length >= 8)
+        for (const v of [e.history.verdict, e.multiple.verdict, e.peers.verdict, e.yields.verdict]) assert.ok(v.length > 100)
+      })
+
+      it('keeps the record of passes in chronological order, each starting where the last ended', () => {
+        const passes = [...(memo.priorRevalidations ?? []), memo.revalidation!]
+        assert.ok(passes.length >= 2)
+        for (let i = 1; i < passes.length; i++) {
+          assert.ok(passes[i].asOf > passes[i - 1].asOf)
+          assert.equal(passes[i].since, passes[i - 1].asOf)
+          assert.equal(passes[i].ratingWas, passes[i - 1].ratingNow)
+          closeTo(passes[i].priceWas, passes[i - 1].priceNow, 2)
+          assert.equal(passes[i].originalAsOf, memo.asOf)
+        }
+        assert.equal(passes[0].since, memo.asOf)
+      })
+
+      it('ends the multiple history at the memo price and DE it states', () => {
+        const last = e.multiple.points[e.multiple.points.length - 1]
+        closeTo(last.price, memo.price, 2)
+        for (const p of e.multiple.points) {
+          assert.ok(p.price > 0 && p.dePs > 0)
+          assert.match(p.date, /^\d{4}-\d{2}-\d{2}$/)
+        }
+        for (let i = 1; i < e.multiple.points.length; i++) assert.ok(e.multiple.points[i].date > e.multiple.points[i - 1].date, 'points are dated in order')
+        assert.ok(e.multiple.earningsLineMultiple > 0)
+      })
+
+      it('ends the life table at the current price and never fabricates a gap', () => {
+        const life = e.history.life
+        closeTo(life[life.length - 1].price!, memo.price, 2)
+        for (const r of life) for (const v of [r.price, r.dePs, r.dividendPs, r.sharesM, r.aum]) if (v !== null) assert.ok(v > 0)
+        assert.ok(life.some((r) => r.price === null || r.dePs === null || r.note?.includes('not retriev')) || memo.symbol === 'OWL')
+      })
+
+      it('places the subject in its own wide peer table with figures matching the memo', () => {
+        const self = e.peers.rows.find((r) => r.ticker === memo.symbol)!
+        assert.ok(self && self.group === 'Subject')
+        closeTo(self.price!, memo.price, 2)
+        closeTo(self.marketCapBn!, memo.marketCap, 1)
+        closeTo(self.divYieldPct!, memo.dividendYieldPct, 0)
+        const narrow = memo.peers.find((p) => p.ticker === memo.symbol)!
+        assert.equal(self.freAnnualisedM, narrow.fre)
+        assert.equal(self.freGrowthPct, narrow.freGrowthPct)
+        for (const r of e.peers.rows) {
+          if (r.price !== null && r.marketCapBn !== null && r.freAnnualisedM !== null && r.pFre !== null) {
+            // P/FRE re-derived from market cap and annualised FRE, within a turn of rounding on tier-D rows
+            const derived = (r.marketCapBn * 1000) / r.freAnnualisedM
+            assert.ok(Math.abs(derived - r.pFre) < (r.tier === 'D' ? 1.0 : 0.6), `${r.ticker} P/FRE ${r.pFre} vs derived ${derived.toFixed(1)}`)
+          }
+        }
+      })
+
+      it('lists the fee-base slices summing to the whole and builds a required yield above the risk-free rate', () => {
+        const share = e.yields.buckets.reduce((a, b) => a + b.sharePct, 0)
+        closeTo(share, 100, 0)
+        const weighted = e.yields.buckets.reduce((a, b) => a + (b.sharePct * b.requiredYieldPct) / share, 0)
+        const sovereign = e.yields.rows.filter((r) => r.kind === 'sovereign').map((r) => r.yieldPct)
+        assert.ok(sovereign.length >= 1)
+        assert.ok(weighted > Math.min(...sovereign), 'required yield must exceed the lowest sovereign yield on the ladder')
+        assert.ok(e.yields.rows.some((r) => r.kind === 'subject'))
+        const deYieldRow = e.yields.rows.find((r) => r.kind === 'subject' && /distributable/i.test(r.instrument))!
+        closeTo(deYieldRow.yieldPct, (e.yields.dePs / memo.price) * 100, 0)
+        for (const r of e.yields.rows) assert.ok(r.yieldPct > 0 && r.yieldPct < 30)
+      })
+    })
+  }
+
+  it('quotes the same thirteen peers identically in both expansions', () => {
+    const owl = forensicMemo('OWL')!.expansion!
+    const pax = forensicMemo('PAX')!.expansion!
+    assert.equal(owl.peers.rows.length, pax.peers.rows.length)
+    for (const a of owl.peers.rows) {
+      const b = pax.peers.rows.find((r) => r.ticker === a.ticker)!
+      assert.ok(b, `${a.ticker} missing from PAX expansion`)
+      for (const k of ['price', 'marketCapBn', 'freAnnualisedM', 'freGrowthPct', 'freMarginPct', 'pFre', 'pDe', 'divYieldPct'] as const) {
+        assert.equal(a[k], b[k], `${a.ticker}.${k}`)
+      }
+      // The subject is its own group in its own memo and a business-model group in the other.
+      if (a.ticker === 'OWL') assert.equal(a.group, 'Subject')
+      if (a.ticker === 'PAX') assert.equal(b.group, 'Subject')
+    }
+  })
+})

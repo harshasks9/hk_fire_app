@@ -1,8 +1,10 @@
 import type { ForensicMemo } from './types.ts'
+import { OWL_EXPANSION } from './owl.expansion.ts'
 
 /**
  * Blue Owl Capital (NYSE: OWL) — forensic memorandum.
  * Cut as of 31 July 2026, one day after the Q2 2026 release (30 July 2026).
+ * Revalidated 28 August 2026 and again 20 September 2026 (methodology v3; see owl.expansion.ts for §19–22).
  *
  * Tier discipline (docs/FORENSIC-ASSET-MANAGER-PROMPT.md §1):
  *   A = quoted from a company release/filing/call · B = our arithmetic on tier-A inputs
@@ -16,69 +18,104 @@ export const OWL_MEMO: ForensicMemo = {
   latestPeriod: 'Q2 2026 (reported 30 July 2026)',
 
   revalidation: {
-    asOf: '2026-08-28',
+    asOf: '2026-09-20',
     originalAsOf: '2026-07-31',
+    since: '2026-08-28',
     verdict:
-      'Facts intact, discount gone. Every operating figure in the 30 July memo still stands and none has deteriorated — but the shares re-rated 29.5% in four weeks and now trade about 10% above our probability-weighted value. The rating falls to fairly valued because the mispricing was collected, not because the business got worse.',
-    ratingWas: 'Moderately undervalued',
-    ratingNow: 'Fairly valued',
-    priceWas: 9.35,
-    priceNow: 12.11,
+      'Round trip. The August re-rating that took the shares to $12.11 has fully reversed: at $9.88 the stock is back below where it stood on 30 July, and 9% below our unchanged probability-weighted value of $10.85. No operating figure has printed since the last pass — the next tender data and the Q3 results both arrive in late October — so this is again a revalidation of the price, not of the business. The pre-committed upgrade line ($10.50) fired around 11 September and the rating returns to moderately undervalued. One correction to our own record is disclosed below: the FY2022 dividend was $0.46, not $0.56.',
+    ratingWas: 'Fairly valued',
+    ratingNow: 'Moderately undervalued',
+    priceWas: 12.11,
+    priceNow: 9.88,
     weightedValue: 10.85,
     changes: [
-      { item: 'Share price', was: '$9.35 (30 Jul close)', now: '$12.11 (27 Aug)', impact: 'Weakens', tier: 'C', note: '+29.5% in four weeks, against a probability-weighted value of $10.85 that we have not changed. This single line is the revalidation.' },
-      { item: 'Price / LTM FRE', was: '9.3×', now: '12.0×', impact: 'Weakens', tier: 'B', note: 'Our base case explicitly called for "the multiple recovers from 9.3× to 12× FRE as the gate story leaves the tape". The multiple arrived; the gate story did not leave. The re-rating was paid ahead of the evidence, so the remaining case rests entirely on the earnings leg.' },
-      { item: 'Price vs probability-weighted value', was: '16% below', now: '10% above', impact: 'Weakens', tier: 'B', note: 'The inversion that forces the rating change. $10.85 weighted against $12.11 traded.' },
-      { item: 'Dividend yield', was: '9.8%', now: '7.6%', impact: 'Weakens', tier: 'B', note: 'Compressed by price alone. The declared dividend is unchanged at $0.92.' },
-      { item: 'Q2 2026 dividend vs distributable earnings', was: '$0.23 declared vs $0.22 earned (memo estimate)', now: '$0.23 declared vs $0.22 earned (confirmed)', impact: 'Neutral', tier: 'A', note: 'The central defect of the memo is exactly where it was: a 105% quarterly payout, a sixth consecutive period of distributing more than is earned. Nothing in the August move addressed it.' },
-      { item: 'Blue Owl BDCs repurchased own shares', was: 'Not disclosed at cut', now: '~$90m across the BDCs (5 Aug)', impact: 'Supports', tier: 'C', note: 'A direct, if small, response to the discount-and-redemption problem the memo identified. Roughly 2% of the quarterly tender obligation — a signal about intent rather than a solution.' },
-      { item: 'Manager balance sheet', was: '$3.9bn net debt, drifting up to fund the payout', now: '$750m senior notes issued; $1.0bn July 2026 notes repaid at par', impact: 'Supports', tier: 'C', note: 'A net ~$250m reduction. Runs against the bear mechanism — that the dividend would be defended with progressively more leverage — for at least one quarter.' },
-      { item: 'OTIC liquidity cover', was: 'Not quantified at cut', now: '$1.3bn, ≈9× its current tender obligation', impact: 'Supports', tier: 'C', note: 'The gated vehicle is capped, not distressed. Weakens the tail where a gate becomes a forced seller of underlying assets — the worst branch of our bear case.' },
-      { item: 'Sell-side positioning', was: 'Not tracked at cut', now: 'TD Cowen $13→$15 (6 Aug); Oppenheimer reiterates Buy (20 Aug); consensus ~$12.62', impact: 'Neutral', tier: 'C', note: 'Consensus now sits 4% above the traded price and 16% above our weighted value. Recorded because it explains the move, not because it is evidence.' },
+      { item: 'Share price', was: '$12.11 (27 Aug)', now: '$9.88 (18 Sep close)', impact: 'Supports', tier: 'C', note: '−18.4% in three weeks, giving back the whole of August\'s +29.5% and more. The 30 July cut price was $9.35. The market has now priced the same facts three different ways in eight weeks.' },
+      { item: 'Price vs probability-weighted value', was: '10% above', now: '9% below', impact: 'Supports', tier: 'B', note: '$10.85 weighted against $9.88 traded. The upgrade trigger set on 28 August ("below $10.50") fired on or about 11 September, when the reported market capitalisation of $16.46bn implied roughly $10.49 a share on 1,569m economic shares.' },
+      { item: 'Price / LTM FRE and Price / LTM DE', was: '12.0× / 13.9×', now: '9.8× / 11.4×', impact: 'Supports', tier: 'B', note: 'Back inside the range at which the original memo was written (9.3× / 10.7×). The full multiple history — from 30× at listing to 11× today — is now set out in section 20.' },
+      { item: 'Dividend yield', was: '7.6%', now: '9.3%', impact: 'Supports', tier: 'B', note: 'The declared $0.92 is unchanged; the yield is entirely price. Section 22 tests whether 9.3% on an uncovered payout is a return or a warning: on our reading, roughly 8.5% is the required yield for this capital base, so the shares are marginally cheap on yield alone before any growth.' },
+      { item: 'US rates', was: 'Fed funds 3.50–3.75%; 10-year ~4.9%', now: 'Fed funds 3.75–4.00% after a 25bp hike on 16 Sep; 10-year 5.01%, 2-year 4.74%', impact: 'Weakens', tier: 'C', note: 'A risk-free 10-year yield above 5% raises the hurdle for every yield-based method in this memo by roughly 10bp against August and compresses the equity risk premium that a 9.3% dividend yield is supposed to compensate for. It also raises Blue Owl\'s refinancing cost on the ~$3.9bn debt stack — although the sector\'s floating-rate loan books earn more. Net, a modest negative for the multiple and roughly neutral for FRE.' },
+      { item: 'Sell-side positioning', was: 'Consensus ~$12.62; TD Cowen $15', now: 'Average target $14.93 (from $16.40 in August); Barclays initiates Equal Weight / Hold (15 Sep); KBW Market Perform; FY2027 EPS estimates span $1.30–1.71', impact: 'Neutral', tier: 'C', note: 'Targets came down after the price did, which is the usual order. The 30% dispersion in FY2027 estimates is the useful number — it says the street has not agreed on whether the fee base is impaired, which is the same question this memo turns on.' },
+      { item: 'OBDC (listed BDC) Q2 2026', was: 'NAV $14.41; dividend cut flagged', now: 'NAV $14.26 (−1.0% QoQ); adjusted NII $0.34 vs $0.33 dividend; shares at $11.08, 0.78× NAV', impact: 'Neutral', tier: 'A', note: 'The listed sibling is now covering its rebased dividend by a cent, on a NAV that is still drifting down. A 22% discount to NAV on the public vehicle is the market\'s live read on the private-credit marks that the non-traded vehicles hold flat. Useful as a cross-check on OCIC\'s unchanged $9.11 NAV; not yet a resolution of the divergence flagged in section 8.' },
+      { item: 'Correction to our record: FY2022 dividend', was: '$0.56 (payout 93% of DE)', now: '$0.46 (payout 77% of DE)', impact: 'Neutral', tier: 'A', note: 'Our own error, found while assembling the full dividend history for section 19. The 2022 quarterly dividends were $0.10 / $0.11 / $0.12 / $0.13 — the fixed-dividend policy began in 2023 at $0.14 a quarter, a 22% step up, not a flat year. Corrected in the history and dividend-coverage tables. It does not change the finding: the dividend has exceeded distributable earnings since 2025 and the 2026 payout is 106% of LTM DE. It does mean the "held flat for a second year" language in the original memo was wrong, and we have removed it.' },
     ],
     unchanged: [
-      'Both OCIC and OTIC remain capped at 5% quarterly repurchases — the gates are still on.',
-      'OCIC repurchase requests 18.8% of shares and OTIC 38.1% (Q2 tender). No new tender data has printed since the cut; the next read is late October.',
-      'FRE margin 58.5%; LTM fee-related earnings per share $1.01; distributable earnings per share $0.87.',
-      '$31.1bn of AUM not yet paying fees, worth roughly $380m of future annual management fees.',
-      'Permanent capital at 85% of management fees, down from 93% in 2022.',
-      'FY2026 guidance, including management\'s stated expectation of beating consensus FRE and DE — which was already recorded in the 30 July cut and is therefore not new information behind the August move.',
+      'No Blue Owl operating data has been published since the 28 August pass. Q3 2026 results and the Q3 BDC tender data are due in late October, and every operating line in the memo — AUM $319.0bn, FPAUM $190.6bn, FRE margin 58.5%, LTM FRE $1.01 and DE $0.87 per share — is therefore exactly as it was.',
+      'Both OCIC and OTIC remain capped at 5% quarterly repurchases. The Q2 request rates (18.8% and 38.1%) are still the latest available.',
+      'Declared 2026 dividend $0.92 against LTM DE of $0.87; the Q3 dividend of $0.23 was declared on 30 July and is payable in November.',
+      'Probability-weighted value $10.85 — not revised. We changed no scenario input in either pass; the price moved through the value twice while the value stayed still.',
+      'All three falsifiable predictions remain "too early" — none has a data point before late October.',
+      'The $14.00 downgrade line and the sequential-deterioration clause set on 28 August stand.',
     ],
     triggerNote:
-      'Our pre-committed downgrade was "above $13.50 without a rebased dividend and two quarters of falling BDC repurchase requests". At $12.11 it has not fired, and we are downgrading anyway — so the trigger was wrong, and it is worth saying why rather than hiding behind it. A $13.50 downgrade line sat 23% above our own $11.00 base case and 24% above our $10.85 weighted value: it tolerated a quarter of overvaluation before requiring any action, which is not a discipline but a licence. The error was setting the trigger from the bull case instead of from the weighted value. It has been reset to $14.00 with a sequential-deterioration clause, and the rating is now tested against the weighted value directly.',
+      'This time the trigger worked as designed. The 28 August upgrade line was "below $10.50", set roughly 3% below the weighted value so that a return to undervalued status required a real discount rather than a rounding error; the shares crossed it around 11 September and closed at $9.88 on 18 September, a 9% discount to $10.85. The rating therefore moves back to moderately undervalued on the same facts that supported that rating on 30 July. We are explicitly not upgrading further: "materially undervalued" would need either a price below about $8.50 or an operating confirmation (the Q3 tender data) that has not printed. The downgrade line back to fairly valued is now the weighted value itself, $10.85, rather than a separate number — the August lesson was that a trigger set away from the weighted value is a licence, not a discipline.',
   },
+  priorRevalidations: [
+    {
+      asOf: '2026-08-28',
+      originalAsOf: '2026-07-31',
+      since: '2026-07-31',
+      verdict:
+        'Facts intact, discount gone. Every operating figure in the 30 July memo still stands and none has deteriorated — but the shares re-rated 29.5% in four weeks and now trade about 10% above our probability-weighted value. The rating falls to fairly valued because the mispricing was collected, not because the business got worse.',
+      ratingWas: 'Moderately undervalued',
+      ratingNow: 'Fairly valued',
+      priceWas: 9.35,
+      priceNow: 12.11,
+      weightedValue: 10.85,
+      changes: [
+        { item: 'Share price', was: '$9.35 (30 Jul close)', now: '$12.11 (27 Aug)', impact: 'Weakens', tier: 'C', note: '+29.5% in four weeks, against a probability-weighted value of $10.85 that we have not changed. This single line is the revalidation.' },
+        { item: 'Price / LTM FRE', was: '9.3×', now: '12.0×', impact: 'Weakens', tier: 'B', note: 'Our base case explicitly called for "the multiple recovers from 9.3× to 12× FRE as the gate story leaves the tape". The multiple arrived; the gate story did not leave. The re-rating was paid ahead of the evidence, so the remaining case rests entirely on the earnings leg.' },
+        { item: 'Price vs probability-weighted value', was: '16% below', now: '10% above', impact: 'Weakens', tier: 'B', note: 'The inversion that forces the rating change. $10.85 weighted against $12.11 traded.' },
+        { item: 'Dividend yield', was: '9.8%', now: '7.6%', impact: 'Weakens', tier: 'B', note: 'Compressed by price alone. The declared dividend is unchanged at $0.92.' },
+        { item: 'Q2 2026 dividend vs distributable earnings', was: '$0.23 declared vs $0.22 earned (memo estimate)', now: '$0.23 declared vs $0.22 earned (confirmed)', impact: 'Neutral', tier: 'A', note: 'The central defect of the memo is exactly where it was: a 105% quarterly payout, a sixth consecutive period of distributing more than is earned. Nothing in the August move addressed it.' },
+        { item: 'Blue Owl BDCs repurchased own shares', was: 'Not disclosed at cut', now: '~$90m across the BDCs (5 Aug)', impact: 'Supports', tier: 'C', note: 'A direct, if small, response to the discount-and-redemption problem the memo identified. Roughly 2% of the quarterly tender obligation — a signal about intent rather than a solution.' },
+        { item: 'Manager balance sheet', was: '$3.9bn net debt, drifting up to fund the payout', now: '$750m senior notes issued; $1.0bn July 2026 notes repaid at par', impact: 'Supports', tier: 'C', note: 'A net ~$250m reduction. Runs against the bear mechanism — that the dividend would be defended with progressively more leverage — for at least one quarter.' },
+        { item: 'OTIC liquidity cover', was: 'Not quantified at cut', now: '$1.3bn, ≈9× its current tender obligation', impact: 'Supports', tier: 'C', note: 'The gated vehicle is capped, not distressed. Weakens the tail where a gate becomes a forced seller of underlying assets — the worst branch of our bear case.' },
+        { item: 'Sell-side positioning', was: 'Not tracked at cut', now: 'TD Cowen $13→$15 (6 Aug); Oppenheimer reiterates Buy (20 Aug); consensus ~$12.62', impact: 'Neutral', tier: 'C', note: 'Consensus now sits 4% above the traded price and 16% above our weighted value. Recorded because it explains the move, not because it is evidence.' },
+      ],
+      unchanged: [
+        'Both OCIC and OTIC remain capped at 5% quarterly repurchases — the gates are still on.',
+        'OCIC repurchase requests 18.8% of shares and OTIC 38.1% (Q2 tender). No new tender data has printed since the cut; the next read is late October.',
+        'FRE margin 58.5%; LTM fee-related earnings per share $1.01; distributable earnings per share $0.87.',
+        '$31.1bn of AUM not yet paying fees, worth roughly $380m of future annual management fees.',
+        'Permanent capital at 85% of management fees, down from 93% in 2022.',
+        'FY2026 guidance, including management\'s stated expectation of beating consensus FRE and DE — which was already recorded in the 30 July cut and is therefore not new information behind the August move.',
+      ],
+      triggerNote:
+        'Our pre-committed downgrade was "above $13.50 without a rebased dividend and two quarters of falling BDC repurchase requests". At $12.11 it has not fired, and we are downgrading anyway — so the trigger was wrong, and it is worth saying why rather than hiding behind it. A $13.50 downgrade line sat 23% above our own $11.00 base case and 24% above our $10.85 weighted value: it tolerated a quarter of overvaluation before requiring any action, which is not a discipline but a licence. The error was setting the trigger from the bull case instead of from the weighted value. It has been reset to $14.00 with a sequential-deterioration clause, and the rating is now tested against the weighted value directly.',
+    },
+  ],
   headline:
-    'The re-rating our base case was waiting for arrived in four weeks — without the operational proof it was supposed to be waiting for. The impairment discount is now largely gone; the dividend problem is not.',
-  rating: 'Fairly valued',
+    'Eight weeks, one round trip, no new facts. The shares re-rated 29% in August without evidence and gave it all back in September without evidence; at $9.88 they are again 9% below our unchanged $10.85 weighted value. The discount is back; so is the uncovered dividend that is the reason it exists.',
+  rating: 'Moderately undervalued',
   horizon: '3–5 years',
-  positionSizing: 'Hold existing positions; no longer a buy at this price. New money waits for the dividend rebase or a move back below $10.50.',
+  positionSizing: '2–3% of a diversified equity book, rebuilt on the September retracement. The distribution is wide — a bear case that returns roughly −3% a year over five years — so this is a sized position, not a conviction one. Add only on evidence (Q3 tender data ≤16%), not on price.',
   ratingChangesAt: {
-    upgrade: 'Below $10.50, or on a rebased dividend plus two quarters of falling BDC repurchase requests — which would let the earnings leg carry the case without needing more multiple.',
-    downgrade: 'Above $14.00, or any quarter in which OCIC repurchase requests rise sequentially.',
+    upgrade: 'Below $8.50, or on Q3 2026 OCIC repurchase requests ≤16% of shares plus a rebased dividend — either of which would justify "materially undervalued".',
+    downgrade: 'Above $10.85 (the weighted value) without new operating evidence, or any quarter in which OCIC repurchase requests rise sequentially. Above $14.00 the rating goes to overvalued regardless.',
   },
 
-  price: 12.11,
-  priceAsOf: '27 August 2026',
+  price: 9.88,
+  priceAsOf: '18 September 2026 close',
   dilutedShares: 1569,
-  marketCap: 19.00,
+  marketCap: 15.50,
   netDebt: 3.9,
   dividendPs: 0.92,
-  dividendYieldPct: 7.60,
+  dividendYieldPct: 9.31,
 
   headlineStats: [
-    { label: 'Price / LTM FRE per share', value: '12.0×', sub: '$12.11 ÷ $1.01 — was 9.3× on 30 July', tier: 'B', tone: 'neutral' },
-    { label: 'Price / LTM DE per share', value: '13.9×', sub: '$12.11 ÷ $0.87', tier: 'B', tone: 'neutral' },
-    { label: 'Dividend yield', value: '7.6%', sub: '$0.92 declared for 2026 — was 9.8% on 30 July', tier: 'A', tone: 'warn' },
+    { label: 'Price / LTM FRE per share', value: '9.8×', sub: '$9.88 ÷ $1.01 — was 12.0× on 27 August, 9.3× on 30 July', tier: 'B', tone: 'gain' },
+    { label: 'Price / LTM DE per share', value: '11.4×', sub: '$9.88 ÷ $0.87 — was 13.9× on 27 August', tier: 'B', tone: 'gain' },
+    { label: 'Dividend yield', value: '9.3%', sub: '$0.92 declared for 2026 — was 7.6% on 27 August', tier: 'A', tone: 'warn' },
     { label: 'Dividend as % of LTM DE', value: '106%', sub: 'Uncovered for a second year', tier: 'B', tone: 'loss' },
     { label: 'Permanent capital', value: '85%', sub: 'of management fees, LTM to 31 Mar 2026 — was 93% in 2022', tier: 'A', tone: 'warn' },
     { label: 'FRE margin', value: '58.5%', sub: 'Q2 2026, in line with full-year guidance', tier: 'A', tone: 'gain' },
     { label: 'AUM not yet paying fees', value: '$31.1bn', sub: '≈ $380m of future annual management fees', tier: 'A', tone: 'gain' },
-    { label: 'Drawdown from peak', value: '−52%', sub: '$25.02 (Jan 2025) → $12.11', tier: 'B', tone: 'loss' },
+    { label: 'Drawdown from peak', value: '−61%', sub: '$25.02 (Jan 2025) → $9.88', tier: 'B', tone: 'loss' },
   ],
 
   debate: {
     marketBelieves:
-      'It believed — on 30 July — that Blue Owl was a leveraged bet on a private-credit cycle that had turned, and priced it at 9.3× fee-related earnings against 16–23× for Ares and TPG: not slower growth, but structural impairment. Through August the market changed its mind, at speed, and without new operating evidence. At 12.0× it now believes roughly what our base case believed: that the impairment is real but partial and the gates will clear. The disagreement that made this position is largely gone; what remains is a dividend the market still expects to be cut, and is right to.',
+      'It believed — on 30 July — that Blue Owl was a leveraged bet on a private-credit cycle that had turned, and priced it at 9.3× fee-related earnings against 16–23× for Ares and TPG: not slower growth, but structural impairment. Through August it changed its mind, at speed and without new operating evidence, and paid 12×. Through September it changed it back, again without a single operating data point, and now pays 9.8×. The honest reading is that the market does not have a view on the fee base; it has a view on the tape, and the tape has been the private-credit redemption headlines and a 10-year Treasury above 5%. The disagreement that made this position in July is back: the price again implies the impairment is structural, and we again think it is partial. What has not changed in either direction is the dividend, which the market still expects to be cut, and is right to.',
     mustGoRight:
       'Redemption requests must keep falling from the Q1 2026 peak, the $31.1bn of committed-but-unpaid capital must convert into the ~$380m of annual fees management says it will, and fee-related earnings must hold a 58%+ margin while it happens. On those three, the current price is comfortably beaten.',
     underestimated:
@@ -127,8 +164,8 @@ export const OWL_MEMO: ForensicMemo = {
 
   history: [
     { period: 'Listing (31 Mar 2021)', aum: 52.5, fpaum: null, frePs: null, dePs: null, freMarginPct: null, dividendPs: null, shares: null, tier: 'A', note: 'Owl Rock + Dyal combine via Altimar; trading began 20 May 2021. 91% of AUM described as permanent capital.' },
-    { period: 'FY2022', aum: 138.2, fpaum: 88.8, frePs: 0.62, dePs: 0.60, freMarginPct: null, dividendPs: 0.56, shares: null, tier: 'B', note: 'Per-share figures summed from quarterly releases (Q4 2022: FRE $0.16, DE $0.15). 93% of management fees from permanent capital.' },
-    { period: 'FY2023', aum: 165.7, fpaum: 102.7, frePs: 0.68, dePs: 0.62, freMarginPct: null, dividendPs: 0.56, shares: null, tier: 'B', note: 'Dividend held flat for a second year. 92% of management fees from permanent capital. Revenue $1.732bn (+26%).' },
+    { period: 'FY2022', aum: 138.2, fpaum: 88.8, frePs: 0.62, dePs: 0.60, freMarginPct: null, dividendPs: 0.46, shares: null, tier: 'B', note: 'Per-share figures summed from quarterly releases (Q4 2022: FRE $0.16, DE $0.15). Dividend $0.10 / $0.11 / $0.12 / $0.13 — corrected on 20 Sep 2026 from the $0.56 we originally stated. 93% of management fees from permanent capital.' },
+    { period: 'FY2023', aum: 165.7, fpaum: 102.7, frePs: 0.68, dePs: 0.62, freMarginPct: null, dividendPs: 0.56, shares: null, tier: 'B', note: 'Dividend moved to a fixed $0.14 a quarter (+22% on 2022) — the first year of the fixed-annual-dividend policy. 92% of management fees from permanent capital. Revenue $1.732bn (+26%).' },
     { period: 'FY2024', aum: 251.1, fpaum: 159.8, frePs: 0.86, dePs: 0.77, freMarginPct: null, dividendPs: 0.72, shares: null, tier: 'C', note: 'The acquisition year: Prima, Kuvare, Atalaya, IPI. Revenue $2.295bn (+33%). GAAP EPS $0.20.' },
     { period: 'FY2025', aum: 307.4, fpaum: 187.7, frePs: 0.96, dePs: 0.84, freMarginPct: 58.3, dividendPs: 0.90, shares: 1550, tier: 'A', note: '$56bn raised. Permanent capital down to 85% of management fees. Dividend exceeds DE for the first time.' },
     { period: 'Q2 2026 (LTM)', aum: 319.0, fpaum: 190.6, frePs: 1.01, dePs: 0.87, freMarginPct: 58.5, dividendPs: 0.92, shares: 1569, tier: 'B', note: 'LTM per-share figures summed from the four reported quarters; share count derived as $392.2m ÷ $0.25 (range 1,538–1,601m on cent-rounding).' },
@@ -156,7 +193,7 @@ export const OWL_MEMO: ForensicMemo = {
     { commitment: 'FRE growth', target: 'Compounding management-fee-led growth', actual: '+9% YoY in Q2 2026, from +14% in Q1', status: 'On track', note: 'Still growing through the worst private-credit tape since 2008 — genuinely creditable. The deceleration is the caveat, not the level.', tier: 'A' },
     { commitment: 'Margin expansion', target: 'Operating leverage on a scaling platform', actual: '58.5% FRE margin, up from 58.3% in Q1 2025', status: 'On track', note: 'Delivered, but the incremental gain is now ~10–30bp a year. Assume no further help from here.', tier: 'A' },
     { commitment: 'Capital-light, fee-centric model', target: 'Minimal balance-sheet risk', actual: '~$3.9bn debt; $250m Kuvare preferred; insurance-linked exposure added', status: 'Behind plan', note: 'The model has become less capital-light with every acquisition. Interest cost is now visible in the DE/FRE conversion ratio.', tier: 'C' },
-    { commitment: 'Growing dividend', target: 'Fixed annual dividend rising with expected DE', actual: '$0.56 → $0.56 → $0.72 → $0.90 → $0.92', status: 'Behind plan', note: 'Grown, but past coverage. 2025 payout was 107% of DE; 2026 guidance implies ~103%. The policy states the dividend is set on expected DE — expectations have been running ahead of delivery.', tier: 'B' },
+    { commitment: 'Growing dividend', target: 'Fixed annual dividend rising with expected DE', actual: '$0.46 → $0.56 → $0.72 → $0.90 → $0.92', status: 'Behind plan', note: 'Grown — doubled in four years — but past coverage. 2025 payout was 107% of DE; 2026 guidance implies ~103%. The policy states the dividend is set on expected DE — expectations have been running ahead of delivery.', tier: 'B' },
     { commitment: 'Per-share value creation', target: 'Growth reaching the public share', actual: 'AUM index 231 vs. DE/share index 145 (FY2022 = 100)', status: 'Behind plan', note: 'The central finding of this memo. Aggregate growth is real; per-share capture is roughly half of it.', tier: 'B' },
     { commitment: 'Manage dilution', target: 'Buybacks offsetting issuance', actual: '1.71m shares for $24.97m in Q1 2026; $78.58m completed under the 2025 authorisation', status: 'Behind plan', note: '$79m of buybacks against a ~1.57bn share count is ~0.5% — immaterial next to acquisition equity and SBC.', tier: 'C' },
   ],
@@ -233,15 +270,15 @@ export const OWL_MEMO: ForensicMemo = {
     'Two consecutive quarters of ~$4.7bn in combined requests against 5% caps. The improvement is real but the arithmetic is unforgiving: at a 5% quarterly cap, satisfying a 19% request rate takes roughly a year of full-cap redemptions, during which fee-paying AUM in those vehicles falls unless gross sales replace it. Management\'s most useful disclosure — that 90% of OCIC holders requested nothing, for a second quarter — says the pressure is concentrated rather than universal. That is genuinely reassuring about contagion and says nothing about the size of the queue already formed.',
 
   dividendCoverage: [
-    { year: 'FY2022', dePs: 0.60, dividendPs: 0.56, payoutPct: 93, note: 'Fixed-dividend policy adopted for 2023 onwards.' },
-    { year: 'FY2023', dePs: 0.62, dividendPs: 0.56, payoutPct: 90, note: 'Dividend held flat for a second year — the last year of genuine cushion.' },
+    { year: 'FY2022', dePs: 0.60, dividendPs: 0.46, payoutPct: 77, note: 'Quarterly dividends of $0.10 / $0.11 / $0.12 / $0.13 (corrected 20 Sep 2026 — we originally showed $0.56 / 93%). Fixed-dividend policy adopted for 2023 onwards.' },
+    { year: 'FY2023', dePs: 0.62, dividendPs: 0.56, payoutPct: 90, note: 'First year of the fixed $0.14 quarterly dividend, +22% on 2022 — and the last year of genuine cushion.' },
     { year: 'FY2024', dePs: 0.77, dividendPs: 0.72, payoutPct: 94, note: 'Dividend +29% against DE +24%.' },
     { year: 'FY2025', dePs: 0.84, dividendPs: 0.90, payoutPct: 107, note: 'First year of uncovered distribution. Dividend +25% against DE +9%.' },
     { year: 'FY2026E', dePs: 0.89, dividendPs: 0.92, payoutPct: 103, note: 'Uses consensus DE of $0.89; management guides to beat it. Even a beat to $0.92 leaves zero retained distributable earnings.' },
     { year: 'LTM Q2 2026', dePs: 0.87, dividendPs: 0.92, payoutPct: 106, note: 'The number that matters today.' },
   ],
   dividendNote:
-    'This is the most important table in the memo and it is not in any company presentation. Blue Owl\'s stated policy is to set a fixed annual dividend from *expected* distributable earnings — and expectations have run ahead of delivery for two consecutive years. A 7.6% headline yield on a payout that has exceeded DE since 2025 is not a return; it is a partial return of the retained-earnings cushion. The August re-rating compressed the yield without changing a single figure in this table — the payout is still 106% of LTM distributable earnings, and Q2 2026 declared $0.23 against $0.22 earned. Funding the gap with the ~$3.9bn debt stack raises interest expense, which lowers the DE/FRE conversion ratio, which widens the gap next year. Our base case assumes the dividend is rebased to roughly $0.72–0.78 (a 15–20% cut) at some point in the next four quarters. That is a positive for intrinsic value and will be reported as a negative.',
+    'This is the most important table in the memo and it is not in any company presentation. Blue Owl\'s stated policy is to set a fixed annual dividend from *expected* distributable earnings — and expectations have run ahead of delivery for two consecutive years. A 9.3% headline yield on a payout that has exceeded DE since 2025 is not a return; it is a partial return of the retained-earnings cushion. The August re-rating compressed the yield to 7.6% and the September retracement restored it, without changing a single figure in this table — the payout is still 106% of LTM distributable earnings, and Q2 2026 declared $0.23 against $0.22 earned. Funding the gap with the ~$3.9bn debt stack raises interest expense, which lowers the DE/FRE conversion ratio, which widens the gap next year. Our base case assumes the dividend is rebased to roughly $0.72–0.78 (a 15–20% cut) at some point in the next four quarters. That is a positive for intrinsic value and will be reported as a negative.',
 
   earningsBridge: [
     { label: 'FRE', value: 392.2 },
@@ -259,7 +296,7 @@ export const OWL_MEMO: ForensicMemo = {
     { k: 'Class D shares', v: '304.3m', tier: 'C', period: '6 Apr 2026', note: 'Ten-vote non-economic shares — the mechanism of principal control.' },
     { k: 'Fully diluted economic shares', v: '≈1,569m', tier: 'B', note: 'Derived: FRE $392.2m ÷ $0.25 per adjusted share. Cent-rounding gives a range of 1,538–1,601m.' },
     { k: 'Class A as % of economics', v: '≈43%', tier: 'B', note: '675.8m ÷ 1,569m. Public shareholders own well under half the economics and a small minority of the votes.' },
-    { k: 'Market capitalisation', v: '$19.00bn', tier: 'B', note: '$12.11 × 1,569m — on full economic shares, not Class A alone. Was $14.67bn at the 30 July cut; the share count is unchanged, so the entire move is price.' },
+    { k: 'Market capitalisation', v: '$15.50bn', tier: 'B', note: '$9.88 × 1,569m — on full economic shares, not Class A alone. Was $14.67bn at the 30 July cut and $19.00bn on 27 August; the share count is unchanged, so every move is price.' },
     { k: 'Buybacks', v: '$78.6m under the 2025 authorisation', tier: 'C', note: '1.71m shares for $24.97m in Q1 2026 — about 0.1% of shares outstanding.' },
     { k: 'Implied annual dilution', v: '~2–3%', tier: 'D', note: 'Cannot be pinned precisely: per-share metrics are disclosed to the cent, which admits anything from −3% to +5% on a single-quarter comparison. The multi-year direction is unambiguous.' },
     { k: 'Estimated SBC', v: '~$95m/quarter, ~24% of FRE', tier: 'D', note: 'Excluded from both FRE and DE.' },
@@ -268,21 +305,21 @@ export const OWL_MEMO: ForensicMemo = {
     'The structure does what SPAC-merged alternative managers\' structures usually do: the public Class A holder buys roughly 43% of the economics and effectively none of the control, and the per-share metrics the company reports are already spread across the full economic base — which is correct, and which is why aggregate growth headlines overstate what reaches the listed share. The tax receivable agreement is a further prior claim on cash as units exchange. We deduct an estimated $0.8bn for it in the sum-of-the-parts; we could not retrieve the disclosed balance and flag that as the largest single unverified item in our valuation.',
 
   peers: [
-    { ticker: 'OWL', name: 'Blue Owl Capital', marketCap: 19.00, fre: 1573, freGrowthPct: 9, freMarginPct: 58.5, pFre: 12.0, divYieldPct: 7.6, permCapital: '85% of fees', tier: 'B', note: 'Still the highest margin in the group and still the only one with gated flagship vehicles — but no longer conspicuously cheap after the August re-rating.' },
-    { ticker: 'ARES', name: 'Ares Management', marketCap: 42.14, fre: 1856, freGrowthPct: 26, freMarginPct: null, pFre: 22.7, divYieldPct: null, permCapital: 'High', tier: 'C', note: 'Q1 2026 FRE $464m (+26%); AUM $644bn; quarterly dividend $1.35 (+20% YoY). 66% credit in fee-earning assets — same exposure, 2.4× the multiple.' },
-    { ticker: 'TPG', name: 'TPG Inc.', marketCap: 15.92, fre: 988, freGrowthPct: 36, freMarginPct: 44, pFre: 16.1, divYieldPct: 5.4, permCapital: 'Lower', tier: 'C', note: 'Q1 2026 FRE $246.9m (+36%), 44% margin, AUM $306bn (+22%). Faster growth, materially worse margin.' },
-    { ticker: 'HLNE', name: 'Hamilton Lane', marketCap: null, fre: 345, freGrowthPct: 25, freMarginPct: 50, pFre: null, divYieldPct: 2.7, permCapital: 'Low', tier: 'C', note: 'FY2026 FRE $345m (+25%) on $687m fee revenue; AUM $142bn. Fee-only, no balance sheet — the cleanest comparison for fee-stream quality.' },
-    { ticker: 'STEP', name: 'StepStone Group', marketCap: 5.47, fre: null, freGrowthPct: null, freMarginPct: null, pFre: null, divYieldPct: 2.6, permCapital: 'Low', tier: 'C', note: 'Included for business-model relevance; FRE not retrievable from our accessible sources.' },
-    { ticker: 'PAX', name: 'Patria Investments', marketCap: 1.85, fre: 235, freGrowthPct: 24, freMarginPct: 54.0, pFre: 7.9, divYieldPct: 5.6, permCapital: '22% of FEAUM', tier: 'B', note: 'Now trades at a 34% discount to Blue Owl on FRE, against 17% four weeks ago — the pair has diverged sharply. See the companion memo.' },
+    { ticker: 'OWL', name: 'Blue Owl Capital', marketCap: 15.50, fre: 1573, freGrowthPct: 9, freMarginPct: 58.5, pFre: 9.8, divYieldPct: 9.3, permCapital: '85% of fees', tier: 'B', note: 'Highest margin in the group, the only one with gated flagship vehicles, the only one paying out more than it earns — and, after the September retracement, again the cheapest US name on every multiple. The wider 13-name comparison is in section 21.' },
+    { ticker: 'ARES', name: 'Ares Management', marketCap: 38, fre: 1964, freGrowthPct: 20, freMarginPct: null, pFre: 19.3, divYieldPct: 4.4, permCapital: 'High', tier: 'D', note: 'Q2 2026 FRE $491m (+20%), $1,964m annualised; dividend $1.35 a quarter. Price snapshots retrievable for mid-September ranged from $106 to $143 — we use a $124 midpoint and a $38bn market cap, hence tier D. 66% credit in fee-earning assets — same exposure, twice the multiple.' },
+    { ticker: 'TPG', name: 'TPG Inc.', marketCap: 19.5, fre: 1260, freGrowthPct: 43, freMarginPct: 50, pFre: 15.5, divYieldPct: 4.5, permCapital: 'Lower', tier: 'C', note: 'Q2 2026 FRE $315m (+43%), 50% margin, annualised $1,260m; AUM $306bn. Faster growth, still a worse margin than Blue Owl, and the multiple gap is 60% — up from 34% in August.' },
+    { ticker: 'HLNE', name: 'Hamilton Lane', marketCap: 5.29, fre: 496, freGrowthPct: 49, freMarginPct: null, pFre: 10.7, divYieldPct: 2.3, permCapital: 'Low', tier: 'C', note: 'FY2026 Q1 (June quarter) FRE $124m (+49%), annualised $496m; AUM $142bn. Fee-only, no balance sheet — the cleanest comparison for fee-stream quality, and the shares have been de-rated to 10.7× alongside the sector.' },
+    { ticker: 'STEP', name: 'StepStone Group', marketCap: 6.0, fre: 424, freGrowthPct: 30, freMarginPct: 39, pFre: 14.2, divYieldPct: 2.0, permCapital: 'Low', tier: 'C', note: 'FY2026 Q1 (June quarter) FRE $106m (+30%), 39% margin, annualised $424m. Now retrievable, where in July it was not.' },
+    { ticker: 'PAX', name: 'Patria Investments', marketCap: 1.77, fre: 228, freGrowthPct: 24, freMarginPct: 54.0, pFre: 7.5, divYieldPct: 5.8, permCapital: '22% of FEAUM', tier: 'B', note: '23% discount to Blue Owl on FRE — narrowed from 34% in August as Blue Owl fell further than Patria. Still the cheapest name in the group. See the companion memo.' },
   ],
   peerNote:
-    'Blue Owl trades at 12.0× fee-related earnings against 22.7× for Ares and 16.1× for TPG — while earning a higher FRE margin than either (58.5% vs. TPG\'s 44%) and holding a higher permanent-capital share. The discount is not explained by quality; it is explained by three things the peer table does not show. First, growth: 9% FRE growth against Ares\' 26% and TPG\'s 36%, and decelerating. Second, the liability side: neither Ares nor TPG has flagship vehicles fulfilling 27% of redemption requests. Third, the payout: Blue Owl is the only name in the group distributing more than it earns. A fair warranted position is a discount to Ares of 40–45% — roughly 12–13× FRE. Four weeks ago the shares sat at a 59% discount and that gap was the investment. At a 47% discount the shares now sit inside the warranted band, near its lower edge. The multiple argument has been collected; only the earnings argument is left.',
+    'Blue Owl trades at 9.8× fee-related earnings against roughly 19–23× for Ares and 15.5× for TPG — while earning a higher FRE margin than either (58.5% against TPG\'s 50%) and holding a higher permanent-capital share. The discount is not explained by quality; it is explained by three things the peer table does not show. First, growth: 9% FRE growth against Ares\' 20% and TPG\'s 43%, and decelerating. Second, the liability side: neither Ares nor TPG has flagship vehicles fulfilling 27% of redemption requests. Third, the payout: Blue Owl is the only name in the group distributing more than it earns. A fair warranted position is a discount to Ares of 40–45% — roughly 11–13× FRE on today\'s Ares multiple. On 30 July the shares sat at a 59% discount; on 27 August 47%, inside the warranted band; on 18 September they sit at roughly 50–57% again, depending on which Ares price snapshot one trusts. The multiple argument that was collected in August has been handed back. Section 21 widens this table to thirteen names and asks what, across the whole group, the market is actually paying for.',
 
   valuation: [
     { name: 'A — Normalised FRE multiple', approach: 'Normalised FRE per share $1.02 (LTM $1.01, consensus $1.02, management guiding to beat) × 11–14×, anchored on a 40–45% discount to Ares.', low: 11.2, base: 12.2, high: 14.3, note: 'The method that most favours Blue Owl, because FRE is the part of the business that is working. Weight 35%.' },
-    { name: 'B — Distributable earnings / yield', approach: 'Normalised DE per share $0.89 × 11–13×; cross-checked against a required DE yield of 8–9%.', low: 9.8, base: 10.7, high: 11.6, note: 'Captures the interest and tax burden the FRE multiple ignores. At a 9% required DE yield the value is $9.89 — now 18% below the market price, where four weeks ago it sat on top of it. The market has stopped valuing Blue Owl as a distressed yield instrument. Weight 35%.' },
+    { name: 'B — Distributable earnings / yield', approach: 'Normalised DE per share $0.89 × 11–13×; cross-checked against a required DE yield of 8–9%.', low: 9.8, base: 10.7, high: 11.6, note: 'Captures the interest and tax burden the FRE multiple ignores. At a 9% required DE yield the value is $9.89 — on top of the $9.88 market price, where on 27 August it sat 18% below it. The market is again valuing Blue Owl as a yield instrument and nothing more; section 22 sets out what yield the capital base actually requires. Weight 35%.' },
     { name: 'C — Sum of the parts', approach: 'Each platform at its own warranted multiple, less debt, TRA and other claims. Detailed below.', low: 8.4, base: 9.95, high: 12.1, note: 'The most conservative method and the most honest one: it refuses to pay a permanent-capital multiple for the redeemable Credit book. Weight 30%.' },
-    { name: 'D — Price / fee-paying AUM (cross-check only)', approach: 'Market cap ÷ FPAUM = 10.0% ($19.00bn ÷ $190.6bn), against a blended fee rate of ~1.42%.', low: 0, base: 0, high: 0, note: 'Not used in the weighted value. Ares trades near 10–11% of fee-earning AUM on a lower fee rate. Blue Owl has now closed into that band rather than sitting well below it, so this cross-check no longer argues for upside. Too crude to size a position on either way.' },
+    { name: 'D — Price / fee-paying AUM (cross-check only)', approach: 'Market cap ÷ FPAUM = 8.1% ($15.50bn ÷ $190.6bn), against a blended fee rate of ~1.42%.', low: 0, base: 0, high: 0, note: 'Not used in the weighted value. Ares trades near 9–11% of fee-earning AUM on a lower fee rate. Blue Owl is back below that band after sitting inside it in August, so the cross-check again argues for upside — mildly. Too crude to size a position on either way.' },
   ],
 
   sotp: [
@@ -297,11 +334,11 @@ export const OWL_MEMO: ForensicMemo = {
   ],
 
   implied: [
-    { variable: 'Normalised DE per share', impliedByPrice: '$0.78 at a 12× multiple', ourView: '$0.87 LTM, $0.89 consensus', assessment: 'Aggressive' },
-    { variable: 'Perpetual DE growth', impliedByPrice: '~3.8% forever (7.2% DE yield at an 11% required return)', ourView: '6–8% achievable on deployment of committed capital alone', assessment: 'Reasonable' },
+    { variable: 'Normalised DE per share', impliedByPrice: '$0.82 at a 12× multiple', ourView: '$0.87 LTM, $0.89 consensus', assessment: 'Aggressive' },
+    { variable: 'Perpetual DE growth', impliedByPrice: '~2.2% forever (8.8% DE yield at an 11% required return)', ourView: '6–8% achievable on deployment of committed capital alone', assessment: 'Aggressive' },
     { variable: 'Value of the $31.1bn not-yet-paying pool', impliedByPrice: 'Approximately zero', ourView: '≈$380m of annual fees, ~$0.24 of FRE per share, contracted', assessment: 'Aggressive' },
-    { variable: 'FRE multiple', impliedByPrice: '12.0×, a 47% discount to Ares', ourView: '12–13× warranted (40–45% discount)', assessment: 'Reasonable' },
-    { variable: 'Dividend sustainability', impliedByPrice: 'A cut is still priced — 7.6% yield versus a ~4% peer norm, though less emphatically than at 9.8%', ourView: 'A cut is likely and correct; we model a rebase to $0.72–0.78', assessment: 'Reasonable' },
+    { variable: 'FRE multiple', impliedByPrice: '9.8×, a roughly 50% discount to Ares', ourView: '11–13× warranted (40–45% discount)', assessment: 'Aggressive' },
+    { variable: 'Dividend sustainability', impliedByPrice: 'A cut is priced — 9.3% yield versus a ~4% peer norm and a ~8.5% required yield for this capital base', ourView: 'A cut is likely and correct; we model a rebase to $0.72–0.78', assessment: 'Reasonable' },
     { variable: 'FRE margin', impliedByPrice: 'Stable near 58%', ourView: 'Stable to +30bp; no further expansion assumed', assessment: 'Reasonable' },
     { variable: 'Fee-paying AUM trajectory', impliedByPrice: 'Flat to modestly declining', ourView: 'Grows on deployment even with zero net new wealth flows', assessment: 'Aggressive' },
   ],
@@ -330,7 +367,7 @@ export const OWL_MEMO: ForensicMemo = {
       name: 'Base',
       probability: 0.50,
       narrative:
-        'Redemptions keep decaying at the ~14% quarterly rate seen in Q2 and normalise through 2027. The $31.1bn deploys on schedule, adding ~$380m of annual fees. FRE grows 7–9% a year with the margin held near 58.5%. The dividend is rebased to ~$0.75 in 2027 — reported as bad news, correct for intrinsic value — restoring roughly $0.15 per share a year of retained distributable earnings and ending the leverage drift. The multiple recovers from 9.3× to 12× FRE as the gate story leaves the tape. That last step — and only that step — has already happened, in August, ahead of the evidence; the base case now rests entirely on the earnings leg delivering.',
+        'Redemptions keep decaying at the ~14% quarterly rate seen in Q2 and normalise through 2027. The $31.1bn deploys on schedule, adding ~$380m of annual fees. FRE grows 7–9% a year with the margin held near 58.5%. The dividend is rebased to ~$0.75 in 2027 — reported as bad news, correct for intrinsic value — restoring roughly $0.15 per share a year of retained distributable earnings and ending the leverage drift. The multiple recovers from 9.3× to 12× FRE as the gate story leaves the tape. That last step happened in August, ahead of the evidence, and un-happened in September; the base case is back to needing both legs, which is where it started.',
       assumptions: [
         { k: 'Gross fundraising', v: '$45–55bn p.a.' },
         { k: 'Net organic flows', v: 'Positive from 2027' },
@@ -382,7 +419,7 @@ export const OWL_MEMO: ForensicMemo = {
 
   redTeam: {
     case:
-      'The bull case here is a multiple argument dressed as a quality argument, and it ignores what a gated fund actually is. A perpetual vehicle fulfilling 27% of redemption requests is not permanent capital experiencing a wobble — it is a fund in an orderly run, and the only reason fee-paying AUM has not collapsed is that the contract prevents investors from leaving. That queue does not disappear; it re-presents every quarter, and each fulfilled dollar permanently removes a fee. Meanwhile Blue Owl is paying out more than it earns, has been for two years, and is funding the difference from a balance sheet that already carries ~$3.9bn of debt. The FRE margin the bulls celebrate is measured on a definition that excludes roughly $95m a quarter of equity compensation — add it back and the margin is nearer 44%, in line with TPG, and the "premium quality" argument evaporates. GAAP net income attributable to Class A was $11.4m. Eleven million dollars, against a $14.7bn market capitalisation, for a company whose public holders own 43% of the economics and effectively none of the votes. The market is not mispricing Blue Owl; it is finally pricing the difference between an adjusted metric and a shareholder\'s claim. And the "cheap versus Ares" comparison is exactly backwards: Ares grows FRE at 26% and Blue Owl at 9%, decelerating. A 59% discount for a third of the growth rate is not an opportunity, it is arithmetic.',
+      'The bull case here is a multiple argument dressed as a quality argument, and it ignores what a gated fund actually is. A perpetual vehicle fulfilling 27% of redemption requests is not permanent capital experiencing a wobble — it is a fund in an orderly run, and the only reason fee-paying AUM has not collapsed is that the contract prevents investors from leaving. That queue does not disappear; it re-presents every quarter, and each fulfilled dollar permanently removes a fee. Meanwhile Blue Owl is paying out more than it earns, has been for two years, and is funding the difference from a balance sheet that already carries ~$3.9bn of debt. The FRE margin the bulls celebrate is measured on a definition that excludes roughly $95m a quarter of equity compensation — add it back and the margin is nearer 44%, in line with TPG, and the "premium quality" argument evaporates. GAAP net income attributable to Class A was $11.4m. Eleven million dollars, against a $15.5bn market capitalisation, for a company whose public holders own 43% of the economics and effectively none of the votes. The market is not mispricing Blue Owl; it is finally pricing the difference between an adjusted metric and a shareholder\'s claim. And the "cheap versus Ares" comparison is exactly backwards: Ares grows FRE at 26% and Blue Owl at 9%, decelerating. A 59% discount for a third of the growth rate is not an opportunity, it is arithmetic.',
     adjudication:
       'We accept three of these points and they are why the position is 2–3% and not larger. The equity-compensation adjustment is the strongest: adding back ~$380m a year of SBC does compress the margin towards the peer group and does mean DE overstates the shareholder\'s cash claim — we have said so in the bridge and we do not net it out of the valuation. The dividend point is accepted in full; our base case requires a cut. The growth-rate point is accepted and is precisely why we warrant 12–13× rather than Ares\' 22.7×. We reject the run characterisation. A run is indiscriminate; this is concentrated — 90% of OCIC holders requested nothing, twice in a row — and requests fell 14% sequentially. And the GAAP net income argument proves too much: $11.4m to Class A is an artefact of the Operating Group partnership structure, which is exactly why this memo values 1,569m economic shares rather than 676m Class A shares. Value the whole economic entity and the GAAP figure stops being informative. The disagreement reduces to one testable question: does the repurchase-request rate keep falling? Two more quarters of decay settles it in our favour; a reversal settles it in the red team\'s, and is our first kill criterion.',
   },
@@ -390,7 +427,7 @@ export const OWL_MEMO: ForensicMemo = {
   predictions: [
     { claim: 'OCIC quarterly repurchase requests continue to decline', threshold: '≤16% of shares outstanding', by: 'Q3 2026 results (late October 2026)', ifWrong: 'The queue is re-presenting rather than clearing. Thesis is impaired; the bear case becomes the base case.', status: 'Too early', statusNote: 'No new tender data since the cut. The Q2 read of 18.8% (from 21.9%) was already in the memo — it was published 2 July, not in August. Reaching ≤16% needs a further 2.8pt fall, marginally less than the 3.1pt just delivered. Resolves late October.' },
     { claim: 'The dividend is rebased rather than defended with leverage', threshold: 'Declared annual dividend for 2027 of $0.70–0.80, or DE per share ≥ $0.92', by: 'Q4 2026 results (February 2027)', ifWrong: 'A third year of >100% payout funded by debt confirms capital-allocation indiscipline and removes the SOTP support.', status: 'Too early', statusNote: 'Q2 declared $0.23 against $0.22 earned — unchanged, and consistent with no rebase this early. One genuine August data point cuts in our favour: the manager repaid $1.0bn of notes with $750m of new issuance, so the payout gap was not funded with incremental leverage this quarter.' },
-    { claim: 'The not-yet-paying pool converts to fees on schedule', threshold: 'FRE per share ≥ $1.08 for FY2027', by: 'FY2027 results (February 2028)', ifWrong: 'The $380m of "contracted" future fees is softer than disclosed, and the deployment optionality we are paying nothing for is worth nothing.', status: 'Too early', statusNote: 'Unchanged and untested. Note the framing has shifted against us: at $9.35 we were paying nothing for this optionality, which was the margin of safety. At $12.11 we are paying something for it, so it now has to convert rather than merely exist.' },
+    { claim: 'The not-yet-paying pool converts to fees on schedule', threshold: 'FRE per share ≥ $1.08 for FY2027', by: 'FY2027 results (February 2028)', ifWrong: 'The $380m of "contracted" future fees is softer than disclosed, and the deployment optionality we are paying nothing for is worth nothing.', status: 'Too early', statusNote: 'Unchanged and untested. The framing shifted against us in August — at $12.11 we were paying for this optionality — and back in September: at $9.88 the pipeline is again priced at roughly nothing, which restores the margin of safety the original memo relied on.' },
   ],
 
   killCriteria: [
@@ -424,9 +461,9 @@ export const OWL_MEMO: ForensicMemo = {
     { q: 'How much growth since listing reached the public share?', a: 'Roughly half. From FY2022 to the LTM period, AUM indexed to 231 while DE per share indexed to 145. On fee-paying AUM specifically: +86% versus +40% DE per share — about 47 cents of per-share earnings per dollar of fee-paying capital added.' },
     { q: 'Has capital allocation been disciplined?', a: 'No, on two counts. The 2024 acquisition programme bought AUM at materially lower blended fee rates and diluted the permanent-capital mix from 92% to 85% of fees. And the dividend has exceeded distributable earnings since 2025 while buybacks totalled $79m — about 0.5% of the share count. Growth was purchased, and the distribution was over-promised.' },
     { q: 'Does the latest quarter strengthen or weaken the thesis?', a: 'Marginally strengthens it. FRE growth halving to 9% is the genuine negative and the FRE margin held. But redemption requests fell for the first time, the not-yet-paying pool grew to $31.1bn/$380m, and fee-paying AUM rose in a quarter when the wealth channel closed — which is exactly the inertia the bull case requires.' },
-    { q: 'What does the price already assume?', a: 'A 7.2% distributable-earnings yield implies roughly 3.8% perpetual growth at an 11% required return — up from the ~1.7% implied on 30 July. Against 6–8% achievable on deployment of committed capital alone that is still not demanding, but it is no longer the near-zero-growth assumption that made the original case. The price continues to assume the dividend is cut, correctly, and now assigns partial rather than zero value to the deployment pipeline.' },
+    { q: 'What does the price already assume?', a: 'An 8.8% distributable-earnings yield implies roughly 2.2% perpetual growth at an 11% required return — back near the ~1.7% implied on 30 July after the 3.8% briefly implied in August. Against 6–8% achievable on deployment of committed capital alone that is undemanding. The price assumes the dividend is cut, correctly, and again assigns close to zero value to the $31.1bn deployment pipeline.' },
     { q: 'Most defensible base-case value per share?', a: '$11.00. Weighted 35% on 12× normalised FRE of $1.02 ($12.24), 35% on 12× normalised DE of $0.89 ($10.68), and 30% on a sum-of-the-parts that refuses a permanent-capital multiple for the redeemable Credit book ($9.95).' },
-    { q: 'Bear and bull values?', a: 'Bear $6.50 (30% probability) — the queue does not clear, fee-paying AUM falls, the dividend goes to $0.50 and an 8× multiple applies. Bull $17.00 (20%) — the dislocation proves to be sentiment, FRE per share reaches $1.30 by 2028 and the multiple re-rates to 15×. Probability-weighted: $10.85 — which after the August move sits roughly 10% BELOW the current price of $12.11. That inversion, not any change in the operating figures, is why the rating moves to fairly valued.' },
+    { q: 'Bear and bull values?', a: 'Bear $6.50 (30% probability) — the queue does not clear, fee-paying AUM falls, the dividend goes to $0.50 and an 8× multiple applies. Bull $17.00 (20%) — the dislocation proves to be sentiment, FRE per share reaches $1.30 by 2028 and the multiple re-rates to 15×. Probability-weighted: $10.85 — roughly 10% ABOVE the current price of $9.88, after sitting 10% below the $12.11 August price. The rating has followed the price through the value twice; the value has not moved.' },
     { q: 'Expected annualised return including dividends?', a: 'Probability-weighted, approximately 11–12% over five years and 12–13% over three. The base case alone returns roughly 15–16% annualised; the bear case returns approximately −3% over five years, which is the relevant fact for sizing — this is a wide distribution, not a high-conviction compounder.' },
     { q: 'What would invalidate the thesis?', a: 'A sequential increase in OCIC or OTIC repurchase requests; permanent-capital fees falling below 80% of the total; a third year of uncovered dividend funded by debt; FRE margin below 55% for two quarters; or OCIC non-accruals above 2% of fair value.' },
     { q: 'Three KPIs to monitor each quarter?', a: 'BDC repurchase requests as a percentage of shares outstanding; AUM not yet paying fees and its associated fee estimate; dividend as a percentage of trailing distributable earnings per share.' },
@@ -461,7 +498,14 @@ export const OWL_MEMO: ForensicMemo = {
     { label: 'Private-wealth fundraising channel contraction in Q2', publisher: 'PitchBook', period: 'July 2026', tier: 'C' },
     { label: 'OBDC / OCIC credit metrics — non-accruals, PIK, NAV', publisher: 'Blue Owl Capital Corporation / AltsWire', period: 'Q1 2026', tier: 'C' },
     { label: 'Peer data — Ares, TPG, Hamilton Lane, StepStone', publisher: 'Company releases via secondary aggregators', period: 'Q1–Q2 2026', tier: 'C' },
-    { label: 'Share price $12.11 and market capitalisation', publisher: 'Market data aggregators', period: '27 August 2026', tier: 'C', },
+    { label: 'Share price $9.88 close; 52-week range $8.45–$25.02; market capitalisation', publisher: 'Market data aggregators', period: '18 September 2026', tier: 'C' },
+    { label: 'Share price $12.11 (28 August pass, retained for comparison)', publisher: 'Market data aggregators', period: '27 August 2026', tier: 'C' },
     { label: 'Share price $9.35 (original cut, retained for comparison)', publisher: 'Market data aggregators', period: '30 July 2026 close', tier: 'C' },
+    { label: 'OBDC Q2 2026 results — NAV $14.26, adjusted NII $0.34, dividend $0.33', publisher: 'Blue Owl Capital Corporation', period: 'August 2026', tier: 'A' },
+    { label: 'FOMC 16 Sep 2026 — target range 3.75–4.00%; Treasury 10-year 5.01%, 2-year 4.74%', publisher: 'Federal Reserve / US Treasury via market data', period: 'September 2026', tier: 'C' },
+    { label: 'Sell-side — Barclays initiation (15 Sep), KBW, consensus target $14.93, FY2027 EPS $1.30–1.71', publisher: 'Broker notes via secondary aggregators', period: 'September 2026', tier: 'C' },
+    { label: 'FY2022 quarterly dividends $0.10 / $0.11 / $0.12 / $0.13 (correction of our record)', publisher: 'Blue Owl Capital dividend history / 8-Ks', period: 'FY2022', tier: 'A' },
   ],
+
+  expansion: OWL_EXPANSION,
 }

@@ -8,6 +8,7 @@ import { renderMemoPage, renderIndexPage, build, esc } from './build.ts'
 const SECTION_IDS = [
   'summary', 'debate', 'quarter', 'trajectory', 'pershare', 'scorecard', 'segments', 'capital', 'quality',
   'ownership', 'peers', 'valuation', 'scenarios', 'redteam', 'risks', 'dashboard', 'conclusion', 'sources',
+  'history', 'multiple', 'peergroup', 'yields',
 ]
 
 /** Things that only appear in HTML when a template forgot a value. */
@@ -41,7 +42,7 @@ for (const memo of FORENSIC_MEMOS) {
       assert.match(html, /<meta name="robots" content="noindex, nofollow">/)
     })
 
-    it('renders all eighteen sections, in order, each linked from the section nav', () => {
+    it('renders all twenty-two sections, in order, each linked from the section nav', () => {
       let last = -1
       for (const id of SECTION_IDS) {
         const at = html.indexOf(`<section id="${id}"`)
@@ -59,6 +60,52 @@ for (const memo of FORENSIC_MEMOS) {
       assert.ok(html.includes(esc(memo.revalidation.verdict)))
       for (const c of memo.revalidation.changes) assert.ok(html.includes(esc(c.item)))
       for (const u of memo.revalidation.unchanged) assert.ok(html.includes(esc(u)))
+    })
+
+    it('labels the latest pass against the previous pass and keeps every earlier pass on the page, collapsed', () => {
+      const r = memo.revalidation!
+      assert.ok(r.since)
+      assert.ok(html.includes(`What changed since ${esc(r.since)}`))
+      assert.ok(html.includes('Price at last pass'))
+      const priors = memo.priorRevalidations ?? []
+      assert.ok(priors.length >= 1)
+      assert.equal(count(html, '<details class="pass">'), priors.length)
+      for (const p of priors) {
+        assert.ok(html.includes(`id="revalidation-${p.asOf}"`))
+        assert.ok(html.includes(esc(p.verdict)))
+        assert.ok(html.includes(esc(p.triggerNote)))
+      }
+      // The latest pass comes first; earlier passes follow it and precede the section nav.
+      const latest = html.indexOf('id="revalidation"')
+      const first = html.indexOf('<details class="pass">')
+      assert.ok(latest < first && first < html.indexOf('<nav class="secnav"'))
+    })
+
+    it('renders the four v3 chapters from the expansion data', () => {
+      const e = memo.expansion!
+      assert.ok(e)
+      for (const r of e.history.provenance) assert.ok(html.includes(esc(r.event)))
+      for (const r of e.history.promises) assert.ok(html.includes(esc(r.promise)))
+      for (const r of e.history.acquisitions) assert.ok(html.includes(esc(r.target)))
+      for (const r of e.history.life) assert.ok(html.includes(esc(r.period)))
+      for (const r of e.history.regimes) assert.ok(html.includes(esc(r.regime)))
+      for (const p of e.multiple.points) {
+        assert.ok(html.includes(esc(p.label)))
+        assert.ok(html.includes(`${(p.price / p.dePs).toFixed(1)}×`), `P/DE for ${p.label}`)
+      }
+      for (const d of e.multiple.decomposition) assert.ok(html.includes(esc(d.term)))
+      for (const t of e.multiple.technicals) assert.ok(html.includes(esc(t.indicator)))
+      for (const r of e.peers.rows) assert.ok(html.includes(esc(r.name)), `peer ${r.ticker}`)
+      for (const r of e.peers.whatMarketPays) assert.ok(html.includes(esc(r.factor)))
+      for (const r of e.yields.rows) assert.ok(html.includes(esc(r.instrument)))
+      for (const b of e.yields.buckets) assert.ok(html.includes(esc(b.bucket)))
+      for (const v of [e.history.verdict, e.multiple.verdict, e.peers.verdict, e.yields.verdict]) assert.ok(html.includes(esc(v)))
+      for (const src of e.sources) assert.ok(html.includes(esc(src.label)), `expansion source missing: ${src.label}`)
+      // The yield chapter's derived numbers are computed at render time, not typed in.
+      const share = e.yields.buckets.reduce((a, b) => a + b.sharePct, 0)
+      const weighted = e.yields.buckets.reduce((a, b) => a + (b.sharePct * b.requiredYieldPct) / share, 0)
+      assert.ok(html.includes(`${weighted.toFixed(1)}%`))
+      assert.ok(html.includes(`$${(e.yields.dePs / (weighted / 100)).toFixed(2)}`))
     })
 
     it('puts every source, prediction, kill criterion and conclusion on the page', () => {
@@ -96,14 +143,17 @@ for (const memo of FORENSIC_MEMOS) {
       assert.ok(html.includes('title="Reported — Quoted from a company release, filing or earnings call"'))
     })
 
-    it('draws the two trajectory charts as accessible inline SVG with both series labelled', () => {
-      assert.equal(count(html, '<svg '), 2)
-      assert.ok(html.includes('aria-label="'))
+    it('draws the five charts as accessible inline SVG with every point carrying a tooltip', () => {
+      // two trajectory charts, price vs earnings line, P/DE, and the peer scatter
+      assert.equal(count(html, '<svg '), 5)
+      assert.equal(count(html, 'role="img" aria-label="'), 5)
       assert.ok(html.includes('FRE per share'))
       assert.ok(html.includes('DE per share'))
       assert.ok(html.includes('DE/share index'))
-      // every data point has a native tooltip
-      assert.equal(count(html, '<circle '), 2 * (memo.trajectory.labels.length + memo.indexed.labels.length))
+      assert.ok(html.includes(`Earnings line, ${memo.expansion!.multiple.earningsLineMultiple}× DE`))
+      const points = memo.expansion!.multiple.points.length
+      const scatter = memo.expansion!.peers.rows.filter((r) => r.pFre !== null && r.freGrowthPct !== null).length
+      assert.equal(count(html, '<circle '), 2 * (memo.trajectory.labels.length + memo.indexed.labels.length) + 3 * points + scatter)
       assert.equal(count(html, '<circle '), count(html, '</title></circle>'))
     })
 
@@ -117,6 +167,7 @@ for (const memo of FORENSIC_MEMOS) {
       assert.equal(count(html, '<table'), count(html, '</table>'))
       assert.equal(count(html, '<section'), count(html, '</section>'))
       assert.equal(count(html, '<div'), count(html, '</div>'))
+      assert.equal(count(html, '<details'), count(html, '</details>'))
     })
   })
 }
@@ -130,11 +181,17 @@ describe('index page', () => {
     assert.ok(html.includes('href="/logout"'))
   })
 
-  it('shows the revalidation delta before the memo cards', () => {
-    const updated = html.indexOf('Updated 2026-08-28')
+  it('shows the revalidation delta and the v3 expansion panel before the memo cards', () => {
+    const updated = html.indexOf('Updated 2026-09-20')
     assert.ok(updated > 0)
     assert.ok(updated < html.indexOf('<article'))
     for (const m of FORENSIC_MEMOS) assert.ok(html.includes(esc(m.revalidation!.verdict)))
+    const expanded = html.indexOf('Expanded 2026-09-20')
+    assert.ok(expanded > updated && expanded < html.indexOf('<article'))
+    for (const m of FORENSIC_MEMOS) {
+      assert.ok(html.includes(esc(m.expansion!.yields.verdict)))
+      for (const id of ['history', 'multiple', 'peergroup', 'yields']) assert.ok(html.includes(`href="/${m.symbol.toLowerCase()}/#${id}"`))
+    }
   })
 
   it('renders the side-by-side table with a column per memo and the verdict paragraph', () => {
@@ -169,6 +226,9 @@ describe('build', () => {
   it('keeps crawlers out and ships the versioned prompt as the methodology', async () => {
     assert.equal(await readFile(join(out, 'robots.txt'), 'utf8'), 'User-agent: *\nDisallow: /\n')
     const method = await readFile(join(out, 'methodology.md'), 'utf8')
-    assert.match(method, /^# Forensic Investment Analysis — Listed Alternative Asset Manager \(v2\)/)
+    assert.match(method, /^# Forensic Investment Analysis — Listed Alternative Asset Manager \(v3\)/)
+    assert.ok(method.includes('### 13 · History'))
+    assert.ok(method.includes('### 16 · Comparison with bond yields'))
+    assert.ok(method.includes('Changelog'))
   })
 })

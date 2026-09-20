@@ -1,14 +1,30 @@
-# Forensic Investment Analysis — Listed Alternative Asset Manager (v2)
+# Forensic Investment Analysis — Listed Alternative Asset Manager (v3)
 
 A reusable, parameterised research prompt. `v1` was a 16-section brief written specifically for Blue
-Owl. `v2` generalises it, closes the analytical gaps that v1 left open, and makes the output
-contract checkable rather than aspirational.
+Owl. `v2` generalised it, closed the analytical gaps that v1 left open, and made the output
+contract checkable rather than aspirational. `v3` adds four chapters that v2 could not answer —
+where the company came from, what the market has historically paid per dollar of its earnings,
+where it sits in the whole listed group, and whether the equity is paid for the permanence it
+claims when measured against bonds — and extends the revalidation protocol to a chain of passes.
 
 **Parameters:** `{{TICKER}}` · `{{COMPANY}}` · `{{EXCHANGE}}` · `{{AS_OF_DATE}}`
 
 ---
 
-## What changed from v1, and why
+## Changelog
+
+### What changed from v2 to v3, and why
+
+| # | Gap in v2 | Fix in v3 |
+|---|---|---|
+| 1 | The historical model (§4) began at listing and the scorecard (§5) graded only the listing promises. A manager's listing is the *middle* of its story: the pre-listing record, the merger or IPO terms and the earn-outs shape everything after | **§13 History**: provenance from founding, the listing promises graded, every acquisition with its consideration and funding, a year-by-year listed life (price, DE, dividend, shares, AUM) and the rate regimes the price was responding to |
+| 2 | "Technical analysis" was excluded as noise — correctly for chart patterns, wrongly for the one technical that carries information: the multiple the market has paid per dollar of DE, over time | **§14 Multiple history**: dated price / DE pairs at every year-end, peak, trough and pass; the earnings line at a constant multiple; a total-return decomposition into earnings, multiple and dividends; a short chart-technicals panel that is recorded, never weighted |
+| 3 | The peer table (§10) took five or six names chosen for business-model relevance. That answers "is it cheap versus its nearest comparables?" but not "what does the market pay for, across the whole group?" | **§15 Peer group**: the full listed group — a dozen or more names in business-model groups — with growth, margin, duration, credit share and yield side by side, and a factor-by-factor answer to what is actually being paid for; take-privates recorded as the private-market bid |
+| 4 | "Permanent capital" was tested against the redemption record (§8) but never priced. Permanence is a duration claim, and duration is priced in the bond market every day | **§16 Yield comparison**: a yield ladder from the policy rate through sovereigns and corporate credit to the subject's own funds; a required yield built slice by slice from the fee base's real duration and liability terms; the zero-growth value that yield implies, against the price |
+| 5 | The revalidation protocol assumed one pass against one cut | The protocol now defines a **chain of passes**: each new pass measures against the previous pass, states the original cut, keeps every earlier pass on the page unchanged, and may not re-open a closed pass to improve its record |
+| 6 | An error found in an earlier pass had no defined home | **Corrections are revalidation items.** A mistake in the memo's own record is logged in the "what moved" table with the tier of the evidence that corrected it, marked `Neutral` if the finding stands, and fixed in place with a dated note |
+
+### What changed from v1 to v2, and why
 
 | # | Gap in v1 | Fix in v2 |
 |---|---|---|
@@ -243,6 +259,86 @@ diversified equity book, and the price at which the rating changes in each direc
 Be decisive about the *conclusion* and honest about the *precision*: a wide value range with a
 clear rating is correct; a narrow range you cannot defend is not.
 
+### 13 · History — from founding to today
+
+The listing is the middle of the story, not the beginning. Reconstruct the whole journey in five
+tables, each row tiered:
+
+- **Provenance.** The founding, the predecessor businesses, the anchor investors, the merger or IPO
+  terms (price, earn-outs, sponsor promotes), and the first two years of listed life. Each row ends
+  with *what it tells an investor now* — a reading, not a description.
+- **Listing promises, graded.** Every quantified promise in the listing documents and the first
+  investor day — permanent-capital share, payout ratio, margin, revenue projections, market
+  capitalisation — against what was delivered, with the same status vocabulary as §5.
+- **Acquisitions.** Target, close date, consideration, how it was funded (cash / stock / earn-out /
+  debt), AUM acquired. Then one paragraph: what was the aggregate consideration, and what did it buy
+  measured in incremental FRE per share?
+- **The listed life.** One row per year-end plus the listing and the current cut: price, DE per
+  share, dividend per share, diluted shares, total AUM. Where a year cannot be retrieved, leave the
+  cell empty and say so — an interpolated price is a fabrication.
+- **Regimes.** The rate and sentiment regime each year, what happened to the company inside it, and
+  the price move. The question is whether the share has ever traded on its own numbers or only on the
+  sector's.
+
+End with a verdict: how much of the journey reached the listed share, and whether the company has
+done what it said it would.
+
+### 14 · Multiple history — the technical analysis that carries information
+
+Price is what you pay; DE per share is what you get. The ratio over time is the only "technical"
+worth the name. Build it from dated price / DE-per-share pairs at every year-end, at the peak and
+trough, and at every memo pass — state the DE basis (fiscal year, annualised quarter or LTM) for each.
+
+Derive and chart the multiple and the DE yield at each point, and draw the price against an
+**earnings line** — DE per share capitalised at one constant multiple (use the base-case exit
+multiple) — so that the gap between price and line is the market's changing opinion, separated
+from the company's changing earnings.
+
+Decompose the total return since listing into three terms: the change in DE per share, the change
+in the multiple, and dividends received. Show each term's contribution so the reader can see
+whether the share has been an earnings story or a sentiment story.
+
+Then a short panel of chart technicals — position in the 52-week range, distance from the high,
+year-to-date move, the moving-average and RSI reads where retrievable. Record them, tier them,
+and do not weight them: the panel exists so that the committee is not surprised by what a trader
+will say, not because any of it enters the valuation.
+
+### 15 · The listed peer group — what the market is paying for
+
+Widen the §10 peer table to the whole listed group — the large diversified managers, the
+credit-heavy names, the solutions and secondaries platforms, and the regional peers — grouped by
+business model, with price, market capitalisation, annualised FRE, FRE growth, FRE margin, P/FRE,
+P/DE, dividend yield, permanent-capital share and credit share side by side. Chart FRE growth
+against P/FRE with the subject highlighted.
+
+Then answer, factor by factor, what the group's dispersion is explained by: growth, margin,
+duration, credit exposure, the presence of a gate, payout, geography, scale. For each, cite the
+evidence in the table and give a one-line verdict. A discount that survives every factor is
+either a mispricing or a signal about something the table does not measure — say which.
+
+Record any recent take-private or delisting in the group as the private-market bid: what was paid,
+at what premium, and what it implies for the listed multiples.
+
+### 16 · Comparison with bond yields — is the equity paid for its permanence?
+
+Permanent capital is a duration claim, and the bond market prices duration every day. Build a
+**yield ladder** as of the cut: the policy rate, the two- and ten-year sovereigns of the reporting
+currency (and of the operating currency where they differ), investment-grade and high-yield
+corporate indices by rating band, a private-credit income benchmark, the subject's own listed funds
+on price and on NAV, the peer dividend yields, and the subject's DE yield, FRE yield and dividend
+yield. Tier and date every rung.
+
+Then price the fee base slice by slice. For each platform or capital bucket state its share of
+management fees, its real duration, its liability terms (finite, perpetual, puttable, gated) and a
+**required yield built from the ladder** — a named bond benchmark plus stated spreads for
+liability risk, fee-rate risk and operating leverage. Weight by share to a required yield for the
+whole, capitalise DE per share at that yield with no growth, and set the result against the price.
+
+State the verdict plainly: at today's price, is the shareholder being paid a premium over bonds
+for the risks the liability side carries — or is the equity being valued as a bond it is not?
+A dividend yield above the required yield on an uncovered payout is not a premium; it is a
+warning, and the section must say so where it applies.
+
 ### Output contract
 
 Sections in order: 1 Executive summary (one page) · 2 Valuation and market-implied expectations ·
@@ -250,12 +346,18 @@ Sections in order: 1 Executive summary (one page) · 2 Valuation and market-impl
 economics · 7 Capital quality, both sides · 8 Investment performance and durability · 9 Earnings
 quality and the GAAP bridge · 10 Ownership, incentives, dilution · 11 Peers and valuation ·
 12 Scenarios · 13 Red team and adjudication · 14 Risks, predictions, kill criteria · 15 Monitoring
-dashboard · 16 Recommendation · Appendix: Confidence Ledger and unanswered questions for management.
+dashboard · 16 Recommendation · Appendix: Confidence Ledger and unanswered questions for management ·
+then the v3 chapters: 19 History · 20 Multiple history · 21 Peer group · 22 Yield comparison
+(numbered after the ledger so that a v2 memo's section numbers are unchanged).
 
 Required artefacts: historical table · per-share bridge · guidance scorecard · Management Narrative
 vs. Economic Reality · dividend-coverage table · AUM quality scorecard · redemption table where
 applicable · peer table · sum-of-the-parts · scenario and sensitivity tables · confidence ledger ·
-three falsifiable predictions · kill criteria.
+three falsifiable predictions · kill criteria · **v3:** provenance table · graded listing
+promises · acquisition table · listed-life table · regime table · dated price / DE pairs with the
+earnings-line chart · total-return decomposition · chart-technicals panel · wide peer table with the
+growth-versus-multiple chart · what-the-market-pays table · yield ladder · required-yield build by
+bucket with the zero-growth value.
 
 ### Standards
 
@@ -304,3 +406,21 @@ Two rules govern the rating itself:
   management guidance, sell-side price targets and share-price momentum do not. If a guidance raise
   would lift the base case, state the condition and the date on which it would be tested instead of
   pre-emptively marking to it.
+
+### A chain of passes (v3)
+
+A memo that is revalidated more than once carries a chain. Each new pass:
+
+1. **Measures against the previous pass**, not the original cut — the "was" column is the last
+   pass's "now" — and states both the original cut date and the date of the pass it follows.
+2. **Keeps every earlier pass on the page**, below the latest, unchanged. A pass is closed when the
+   next one opens; it may not be edited to improve its record. The reader must be able to see the
+   rating's whole path — including the passes where the trigger was wrong.
+3. **Starts where the last ended**: its opening rating and price equal the previous pass's closing
+   rating and price. A chain with a gap has been tampered with.
+4. **Logs corrections to the memo's own record** as items in the "what moved" table, with the tier
+   of the evidence that corrected them, marked `Neutral` if the underlying finding stands, and fixed
+   in place with a dated note where the error occurred.
+5. **Does not reprice on scheduled political events.** Elections, referendums and policy meetings are
+   priced by the market continuously; a memo that adds an election haircut is double-counting. If the
+   event changes a rate path or a fiscal fact, that enters the next pass as a rate or fiscal change.

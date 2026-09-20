@@ -231,6 +231,8 @@ export interface Revalidation {
   asOf: string
   /** The cut being revalidated */
   originalAsOf: string
+  /** When the "was" column refers to an earlier revalidation pass rather than the cut, its date. */
+  since?: string
   /** One-line verdict, written to be read on its own */
   verdict: string
   ratingWas: Rating
@@ -275,8 +277,12 @@ export interface ForensicMemo {
   exchange: string
   /** Date the analysis was cut */
   asOf: string
-  /** Present once the memo has been re-tested against later data. */
+  /** Present once the memo has been re-tested against later data — the latest pass. */
   revalidation?: Revalidation
+  /** Earlier passes, oldest first. Kept so the reader can see the rating's path, not just its last step. */
+  priorRevalidations?: Revalidation[]
+  /** The v3 chapters — history, multiple history, peers, yields. Absent on a v2 memo. */
+  expansion?: Expansion
   /** Latest reported period covered */
   latestPeriod: string
   /** One-line thesis */
@@ -345,4 +351,184 @@ export interface ForensicMemo {
   sources: Source[]
   /** Explicit statement of what we could and could not retrieve */
   sourceCaveat: string
+}
+
+/* ------------------------------------------------------------------ v3 expansion
+ * Four chapters added by prompt v3 (docs/FORENSIC-ASSET-MANAGER-PROMPT.md §13–16).
+ * Same tier discipline; derived series carry error bars in their notes.
+ */
+
+/** One event in the subject's pre-listing or listed history. */
+export interface ProvenanceRow {
+  when: string
+  event: string
+  /** What it tells an investor now — not a description, a reading */
+  evidence: string
+  tier: Tier
+}
+
+/** A promise made in listing materials or an investor day, graded. */
+export interface PromiseRow {
+  promise: string
+  /** Where it was made */
+  source: string
+  delivered: string
+  status: ScorecardRow['status']
+  tier: Tier
+  note?: string
+}
+
+export interface AcquisitionRow {
+  target: string
+  closed: string
+  consideration: string
+  funding: string
+  aumAcquired: string
+  tier: Tier
+  note?: string
+}
+
+/** The listed-life series, one row per year-end (plus listing and the current cut). */
+export interface LifeRow {
+  period: string
+  /** Share price, $ */
+  price: number | null
+  dePs: number | null
+  dividendPs: number | null
+  /** Fully diluted economic shares, millions */
+  sharesM: number | null
+  /** Total AUM, $bn */
+  aum: number | null
+  tier: Tier
+  note?: string
+}
+
+export interface RegimeRow {
+  period: string
+  regime: string
+  whatHappened: string
+  priceMove: string
+  tier: Tier
+}
+
+/** A dated price / earnings pair; the multiple and yield are derived at render time. */
+export interface MultiplePoint {
+  label: string
+  date: string
+  price: number
+  dePs: number
+  /** Which DE per share figure is paired with the price, e.g. "FY2024" or "LTM Q2 26" */
+  basis: string
+  tier: Tier
+  note?: string
+}
+
+export interface DecompRow {
+  term: string
+  from: string
+  to: string
+  contribution: string
+  effect: BridgeTerm['effect']
+  note: string
+}
+
+export interface TechnicalRow {
+  indicator: string
+  value: string
+  read: string
+  tier: Tier
+}
+
+export type PeerGroup = 'Subject' | 'Credit-heavy' | 'Buyout-heavy' | 'Solutions' | 'Latin America'
+
+/** The wide peer row — more columns than PeerRow, and a business-model group. */
+export interface PeerWideRow {
+  ticker: string
+  name: string
+  group: PeerGroup
+  price: number | null
+  marketCapBn: number | null
+  /** Annualised from the latest reported quarter unless the note says otherwise, $m */
+  freAnnualisedM: number | null
+  freGrowthPct: number | null
+  freMarginPct: number | null
+  pFre: number | null
+  /** Price to distributable (or adjusted net) earnings, annualised */
+  pDe: number | null
+  divYieldPct: number | null
+  permCapital: string
+  /** Credit as a share of fee-earning assets, where reported */
+  creditSharePct: number | null
+  tier: Tier
+  note: string
+}
+
+export interface MarketPaysRow {
+  factor: string
+  evidence: string
+  verdict: string
+}
+
+export type YieldKind = 'subject' | 'fund' | 'sovereign' | 'credit' | 'private' | 'peer'
+
+export interface YieldRow {
+  instrument: string
+  yieldPct: number
+  asOf: string
+  basis: string
+  kind: YieldKind
+  tier: Tier
+}
+
+/** A slice of the fee base with the required yield built up from bond benchmarks. Tier D throughout. */
+export interface BucketRow {
+  bucket: string
+  sharePct: number
+  duration: string
+  liability: string
+  requiredYieldPct: number
+  build: string
+}
+
+export interface Expansion {
+  /** Date the expansion chapters were cut */
+  asOf: string
+  history: {
+    provenance: ProvenanceRow[]
+    promises: PromiseRow[]
+    acquisitions: AcquisitionRow[]
+    acquisitionsNote: string
+    life: LifeRow[]
+    lifeNote: string
+    regimes: RegimeRow[]
+    verdict: string
+  }
+  multiple: {
+    /** The constant multiple the earnings line is drawn at, e.g. the base-case multiple */
+    earningsLineMultiple: number
+    points: MultiplePoint[]
+    pointsNote: string
+    decomposition: DecompRow[]
+    decompositionNote: string
+    technicals: TechnicalRow[]
+    technicalsNote: string
+    verdict: string
+  }
+  peers: {
+    rows: PeerWideRow[]
+    rowsNote: string
+    whatMarketPays: MarketPaysRow[]
+    delisting?: string
+    verdict: string
+  }
+  yields: {
+    rows: YieldRow[]
+    rowsNote: string
+    buckets: BucketRow[]
+    /** DE per share used for the bucket cross-check */
+    dePs: number
+    bucketNote: string
+    verdict: string
+  }
+  sources: Source[]
 }

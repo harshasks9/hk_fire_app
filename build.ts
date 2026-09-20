@@ -2,7 +2,7 @@
  * Renders the forensic memoranda to plain static HTML in dist/.
  *
  *   dist/index.html        the index — both memos, the revalidation delta, side by side
- *   dist/owl/index.html    one page per memo, eighteen sections, driven by the data model
+ *   dist/owl/index.html    one page per memo, twenty-two sections, driven by the data model
  *   dist/pax/index.html
  *   dist/methodology.md    the versioned prompt the memos follow
  *   dist/robots.txt        keep crawlers out; the pages sit behind a key anyway
@@ -25,6 +25,9 @@ import {
   type ForensicMemo,
   type Tier,
   type Revalidation,
+  type Expansion,
+  type PeerGroup,
+  type YieldKind,
 } from './memos/index.ts'
 
 const HERE = import.meta.dirname
@@ -226,6 +229,10 @@ const SECTIONS = [
   { id: 'dashboard', label: 'Dashboard' },
   { id: 'conclusion', label: 'Conclusion' },
   { id: 'sources', label: 'Sources' },
+  { id: 'history', label: 'History' },
+  { id: 'multiple', label: 'Multiple history' },
+  { id: 'peergroup', label: 'Peer group' },
+  { id: 'yields', label: 'Yield comparison' },
 ]
 
 const CSS = `
@@ -322,6 +329,16 @@ dl{margin:0}.qa{display:grid;gap:4px;padding:10px 0;border-bottom:1px solid colo
 .scen.Bull{border-color:color-mix(in srgb,var(--good) 30%,var(--line));background:color-mix(in srgb,var(--good-soft) 40%,var(--surface))}
 .foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;font-size:12px;color:var(--ink3);margin-top:8px}
 .memocard{display:flex;flex-direction:column;gap:12px}
+details.pass{margin:0 0 18px}details.pass>summary{cursor:pointer;list-style:none;font-size:12.5px;color:var(--ink2);padding:10px 14px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+details.pass>summary::-webkit-details-marker{display:none}details.pass>summary::before{content:"▸ ";color:var(--ink3)}details.pass[open]>summary::before{content:"▾ "}details.pass[open]>summary{border-radius:12px 12px 0 0;border-bottom:0}
+details.pass[open]>section{border-radius:0 0 12px 12px}
+.ladder{display:grid;gap:7px}.lrow{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr) 58px;gap:10px;align-items:center;font-size:12px}
+.lrow .ll{min-width:0}.lrow .lb{height:10px;border-radius:5px;background:var(--line);overflow:hidden}.lrow .lf{display:block;height:100%;border-radius:5px}
+.lrow .lv{text-align:right;color:var(--ink);font-weight:600}
+.lrow.self .ll{color:var(--blue)}.lrow.self .lv{color:var(--blue)}
+.lf.kind-subject{background:var(--s2)}.lf.kind-fund{background:var(--s4)}.lf.kind-sovereign{background:var(--ink3)}.lf.kind-credit{background:var(--s1)}.lf.kind-private{background:var(--s3)}.lf.kind-peer{background:var(--s5)}
+.sw{display:inline-block;width:10px;height:10px;border-radius:3px;vertical-align:-1px;margin-right:6px}
+@media(max-width:719px){.lrow{grid-template-columns:minmax(0,1fr) 58px}.lrow .lb{grid-column:1/-1;margin-top:-2px}}
 `.trim()
 
 function shell(o: { title: string; description: string; current: 'index' | string; body: string }): string {
@@ -355,18 +372,19 @@ ${o.body}
 
 /* ------------------------------------------------------------------ revalidation log */
 
-function revalidationPanel(r: Revalidation): string {
+function revalidationPanel(r: Revalidation, id = 'revalidation'): string {
   const ratingChanged = r.ratingWas !== r.ratingNow
   const move = ((r.priceNow - r.priceWas) / r.priceWas) * 100
   const vsW = ((r.priceNow - r.weightedValue) / r.weightedValue) * 100
+  const sinceDate = r.since ?? r.originalAsOf
   const four = [
-    { k: 'Price at cut', v: money(r.priceWas), s: r.originalAsOf, t: '' },
+    { k: r.since ? 'Price at last pass' : 'Price at cut', v: money(r.priceWas), s: sinceDate, t: '' },
     { k: 'Price now', v: money(r.priceNow), s: signed(move, 1), t: move > 0 ? 'good' : 'crit' },
     { k: 'Probability-weighted value', v: money(r.weightedValue), s: 'unchanged by this pass', t: '' },
     { k: 'Price vs weighted value', v: signed(vsW, 0), s: vsW > 0 ? 'trading above fair value' : 'trading below fair value', t: vsW > 0 ? 'crit' : 'good' },
   ]
-  return `<section class="card blue" id="revalidation">
-<div class="sh"><h2>What changed since ${esc(r.originalAsOf)} &nbsp;${badge(`Revalidated ${r.asOf}`, 'blue')} ${ratingChanged ? badge('Rating changed', 'warn') : badge('Rating unchanged')}</h2></div>
+  return `<section class="card blue" id="${esc(id)}">
+<div class="sh"><h2>What changed since ${esc(sinceDate)} &nbsp;${badge(`Revalidated ${r.asOf}`, 'blue')} ${ratingChanged ? badge('Rating changed', 'warn') : badge('Rating unchanged')}</h2>${r.since ? `<p class="sub">Original cut ${esc(r.originalAsOf)}; the "was" column is the ${esc(r.since)} pass. Earlier passes are kept below, unchanged.</p>` : ''}</div>
 <p class="lead">${esc(r.verdict)}</p>
 <div class="grid4" style="margin-top:14px">${four
     .map((x) => `<div class="box stat"><div class="k">${esc(x.k)}</div><div class="v tnum ${x.t}">${esc(x.v)}</div><div class="s">${esc(x.s)}</div></div>`)
@@ -375,7 +393,7 @@ ${ratingChanged ? `<p class="box warn" style="margin-top:14px"><span class="mute
 <h4 style="margin-top:18px">What moved</h4>
 <div class="tw"><table><thead><tr><th>Item</th><th>At the cut</th><th>Now</th><th>Effect on thesis</th></tr></thead><tbody>
 ${r.changes
-    .map((c) => `<tr><td class="k">${esc(c.item)}${tier(c.tier)}${noteLine(c.note)}</td><td class="tnum nw muted">${esc(c.was)}</td><td class="tnum nw k">${esc(c.now)}</td><td>${badge(c.impact, IMPACT_TONE[c.impact])}</td></tr>`)
+    .map((c) => `<tr><td class="k">${esc(c.item)}${tier(c.tier)}${noteLine(c.note)}</td><td class="tnum muted${c.was.length <= 28 ? ' nw' : ''}">${esc(c.was)}</td><td class="tnum k${c.now.length <= 28 ? ' nw' : ''}">${esc(c.now)}</td><td>${badge(c.impact, IMPACT_TONE[c.impact])}</td></tr>`)
     .join('\n')}
 </tbody></table></div>
 <div class="grid2" style="margin-top:18px">
@@ -383,6 +401,243 @@ ${r.changes
 <div><h4>Did our pre-committed triggers work?</h4><p class="small">${esc(r.triggerNote)}</p></div>
 </div>
 </section>`
+}
+
+/** Earlier passes, newest first, collapsed — the rating's path, not just its last step. */
+function priorPasses(passes: Revalidation[] | undefined): string {
+  if (!passes?.length) return ''
+  return [...passes]
+    .reverse()
+    .map((r) => `<details class="pass"><summary>Earlier pass — revalidated ${esc(r.asOf)} against the ${esc(r.since ?? r.originalAsOf)} cut: ${esc(r.ratingWas)} → ${esc(r.ratingNow)}, ${money(r.priceWas)} → ${money(r.priceNow)}</summary>${revalidationPanel(r, `revalidation-${r.asOf}`)}</details>`)
+    .join('\n')
+}
+
+/* ------------------------------------------------------------------ v3 chapters (19–22) */
+
+const GROUP_COLOR: Record<PeerGroup, string> = {
+  Subject: 'var(--s2)',
+  'Credit-heavy': 'var(--s1)',
+  'Buyout-heavy': 'var(--s3)',
+  Solutions: 'var(--s4)',
+  'Latin America': 'var(--s5)',
+}
+const KIND_LABEL: Record<YieldKind, string> = {
+  subject: 'The subject',
+  fund: "The subject's own fund",
+  sovereign: 'Sovereign / policy rate',
+  credit: 'Corporate credit index',
+  private: 'Private credit',
+  peer: 'Peer equity',
+}
+const pct = (v: number | null | undefined, d = 1) => (v === null || v === undefined ? '—' : `${v.toFixed(d)}%`)
+const mult = (v: number | null | undefined, d = 1) => (v === null || v === undefined ? '—' : `${v.toFixed(d)}×`)
+
+/** Scatter of the wide peer table: FRE growth against P/FRE, the subject enlarged. */
+function scatterChart(o: { points: { x: number; y: number; label: string; group: PeerGroup; self: boolean; title: string }[]; xLabel: string; yLabel: string; title: string }): string {
+  const W = 640
+  const H = 300
+  const P = { l: 46, r: 16, t: 14, b: 40 }
+  const pad = (vals: number[]) => {
+    let lo = Math.min(...vals)
+    let hi = Math.max(...vals)
+    const span = hi - lo || 1
+    lo -= span * 0.12
+    hi += span * 0.12
+    if (Math.min(...vals) >= 0 && lo < 0) lo = 0
+    return [lo, hi]
+  }
+  const [xlo, xhi] = pad(o.points.map((p) => p.x))
+  const [ylo, yhi] = pad(o.points.map((p) => p.y))
+  const x = (v: number) => P.l + ((v - xlo) / (xhi - xlo)) * (W - P.l - P.r)
+  const y = (v: number) => P.t + (1 - (v - ylo) / (yhi - ylo)) * (H - P.t - P.b)
+  const ticks = 4
+  const grid = Array.from({ length: ticks + 1 }, (_, i) => i / ticks)
+  const gridSvg = grid
+    .map((f) => {
+      const yv = ylo + (yhi - ylo) * f
+      const xv = xlo + (xhi - xlo) * f
+      return `<line x1="${P.l}" x2="${W - P.r}" y1="${y(yv).toFixed(1)}" y2="${y(yv).toFixed(1)}" class="grid"/>
+<text x="${P.l - 6}" y="${(y(yv) + 3.5).toFixed(1)}" text-anchor="end" class="ax">${yv.toFixed(0)}×</text>
+<text x="${x(xv).toFixed(1)}" y="${H - 22}" text-anchor="middle" class="ax">${xv.toFixed(0)}%</text>`
+    })
+    .join('\n')
+  const dots = o.points
+    .map((p) => {
+      const r = p.self ? 7 : 5
+      return `<circle cx="${x(p.x).toFixed(1)}" cy="${y(p.y).toFixed(1)}" r="${r}" fill="${GROUP_COLOR[p.group]}" stroke="${p.self ? 'var(--ink)' : 'var(--surface)'}" stroke-width="2"><title>${esc(p.title)}</title></circle>
+<text x="${(p.self ? x(p.x) : x(p.x) + r + 3).toFixed(1)}" y="${(p.self ? y(p.y) - r - 5 : y(p.y) + 4).toFixed(1)}" class="dl"${p.self ? ' font-weight="700" text-anchor="middle"' : ''}>${esc(p.label)}</text>`
+    })
+    .join('\n')
+  const legend = `<div class="legend">${(Object.keys(GROUP_COLOR) as PeerGroup[])
+    .filter((g) => o.points.some((p) => p.group === g))
+    .map((g) => `<span><i style="border-color:${GROUP_COLOR[g]}"></i>${esc(g)}</span>`)
+    .join('')}</div>`
+  return `<figure class="chart"><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(o.title)}" preserveAspectRatio="xMidYMid meet">
+${gridSvg}
+<text x="${W - P.r}" y="${H - 6}" text-anchor="end" class="ax">${esc(o.xLabel)} →</text>
+<text x="${P.l}" y="${P.t - 2}" text-anchor="start" class="ax">↑ ${esc(o.yLabel)}</text>
+${dots}
+</svg>${legend}</figure>`
+}
+
+function historySection(memo: ForensicMemo, e: Expansion): string {
+  const h = e.history
+  return section(
+    'history',
+    19,
+    'The whole journey — from founding to today',
+    `What the company said it would be, what it bought, and what the listed share received. Cut ${e.asOf}.`,
+    `<h4>Provenance — how the company came to exist</h4>
+<div class="tw"><table><thead><tr><th>When</th><th>Event</th><th>What it tells an investor now</th></tr></thead><tbody>
+${h.provenance.map((r) => `<tr><td class="nw k">${esc(r.when)}${tier(r.tier)}</td><td>${esc(r.event)}</td><td class="small">${esc(r.evidence)}</td></tr>`).join('\n')}
+</tbody></table></div>
+<h4 style="margin-top:22px">Listing promises, graded</h4>
+<div class="tw"><table><thead><tr><th>Promise</th><th>Where it was made</th><th>What was delivered</th><th>Status</th></tr></thead><tbody>
+${h.promises.map((r) => `<tr><td class="k">${esc(r.promise)}${tier(r.tier)}${noteLine(r.note)}</td><td class="small">${esc(r.source)}</td><td class="small">${esc(r.delivered)}</td><td>${badge(r.status, STATUS_TONE[r.status])}</td></tr>`).join('\n')}
+</tbody></table></div>
+<h4 style="margin-top:22px">Acquisitions — what was bought, with what</h4>
+<div class="tw"><table><thead><tr><th>Target</th><th>Closed</th><th>Consideration</th><th>Funding</th><th>AUM acquired</th></tr></thead><tbody>
+${h.acquisitions.map((r) => `<tr><td class="k">${esc(r.target)}${tier(r.tier)}${noteLine(r.note)}</td><td class="nw">${esc(r.closed)}</td><td class="tnum">${esc(r.consideration)}</td><td class="small">${esc(r.funding)}</td><td class="tnum">${esc(r.aumAcquired)}</td></tr>`).join('\n')}
+</tbody></table></div>
+<p class="small" style="margin-top:10px">${esc(h.acquisitionsNote)}</p>
+<h4 style="margin-top:22px">The listed life — price, earnings and dividend per share, by year</h4>
+<div class="tw"><table><thead><tr><th>Period</th><th class="r">Price</th><th class="r">DE / share</th><th class="r">Dividend / share</th><th class="r">P / DE</th><th class="r">Shares (m)</th><th class="r">AUM $bn</th></tr></thead><tbody>
+${h.life
+      .map((r) => {
+        const pde = r.price !== null && r.dePs ? r.price / r.dePs : null
+        return `<tr${r.period === h.life[h.life.length - 1].period ? ' class="self"' : ''}><td class="k">${esc(r.period)}${tier(r.tier)}${noteLine(r.note)}</td><td class="tnum r">${r.price === null ? '—' : money(r.price)}</td><td class="tnum r">${r.dePs === null ? '—' : money(r.dePs)}</td><td class="tnum r">${r.dividendPs === null ? '—' : money(r.dividendPs)}</td><td class="tnum r">${mult(pde)}</td><td class="tnum r">${r.sharesM === null ? '—' : r.sharesM.toLocaleString('en-US')}</td><td class="tnum r">${num(r.aum, 1)}</td></tr>`
+      })
+      .join('\n')}
+</tbody></table></div>
+<p class="small" style="margin-top:10px">${esc(h.lifeNote)}</p>
+<h4 style="margin-top:22px">Regimes — what the share price was responding to</h4>
+<div class="tw"><table><thead><tr><th>Period</th><th>Regime</th><th>What happened</th><th class="r">Price move</th></tr></thead><tbody>
+${h.regimes.map((r) => `<tr><td class="nw k">${esc(r.period)}${tier(r.tier)}</td><td class="k">${esc(r.regime)}</td><td class="small">${esc(r.whatHappened)}</td><td class="tnum r nw">${esc(r.priceMove)}</td></tr>`).join('\n')}
+</tbody></table></div>
+<div class="box blue" style="margin-top:18px"><h4>Verdict on the journey</h4><p>${esc(h.verdict)}</p></div>`,
+  )
+}
+
+function multipleSection(memo: ForensicMemo, e: Expansion): string {
+  const m = e.multiple
+  const labels = m.points.map((p) => p.label)
+  const priceChart = lineChart({
+    labels,
+    series: [
+      { name: 'Share price', values: m.points.map((p) => p.price), color: SERIES.platform },
+      { name: `Earnings line, ${m.earningsLineMultiple}× DE`, values: m.points.map((p) => +(p.dePs * m.earningsLineMultiple).toFixed(2)), color: SERIES.perShare, dashed: true },
+    ],
+    fmt: (v) => money(v, 0),
+    title: `${memo.symbol}: share price against distributable earnings per share capitalised at ${m.earningsLineMultiple}×`,
+    height: 240,
+  })
+  const pdeChart = lineChart({
+    labels,
+    series: [{ name: 'Price / DE per share', values: m.points.map((p) => +(p.price / p.dePs).toFixed(1)), color: SERIES.platform }],
+    fmt: (v) => `${v.toFixed(0)}×`,
+    title: `${memo.symbol}: price to distributable earnings per share at each dated point`,
+    height: 200,
+  })
+  return section(
+    'multiple',
+    20,
+    'Technical analysis on the earnings line — what the market has paid per dollar of DE',
+    'Price is what you pay; DE per share is what you get. The ratio, over time, is the only "technical" that carries information.',
+    `<div class="grid2">
+<div><div class="kv tiny"><span>Price vs. the earnings line</span><span class="tnum">${money(m.points[m.points.length - 1].price)} vs ${money(m.points[m.points.length - 1].dePs * m.earningsLineMultiple)}</span></div>${priceChart}</div>
+<div><div class="kv tiny"><span>Price / DE per share</span><span class="tnum">${mult(m.points[m.points.length - 1].price / m.points[m.points.length - 1].dePs)} now</span></div>${pdeChart}</div>
+</div>
+<p class="small" style="margin-top:10px">${esc(m.pointsNote)}</p>
+<div class="tw" style="margin-top:14px"><table><thead><tr><th>Point</th><th>Date</th><th class="r">Price</th><th class="r">DE / share</th><th>Basis</th><th class="r">P / DE</th><th class="r">DE yield</th></tr></thead><tbody>
+${m.points
+      .map((p, i) => `<tr${i === m.points.length - 1 ? ' class="self"' : ''}><td class="k">${esc(p.label)}${tier(p.tier)}${noteLine(p.note)}</td><td class="nw">${esc(p.date)}</td><td class="tnum r">${money(p.price)}</td><td class="tnum r">${money(p.dePs)}</td><td class="small nw">${esc(p.basis)}</td><td class="tnum r k">${mult(p.price / p.dePs)}</td><td class="tnum r">${pct((p.dePs / p.price) * 100)}</td></tr>`)
+      .join('\n')}
+</tbody></table></div>
+<h4 style="margin-top:22px">Total-return decomposition — how much was earnings, how much was the multiple</h4>
+${m.decomposition
+      .map((t) => `<div class="bridge ${t.effect === 'positive' ? 'pos' : t.effect === 'negative' ? 'neg' : ''}"><div style="min-width:0;flex:1"><div class="k">${esc(t.term)} <span class="muted tnum small">${esc(t.from)} → ${esc(t.to)}</span></div><div class="note">${esc(t.note)}</div></div><div class="val tnum">${esc(t.contribution)}</div></div>`)
+      .join('')}
+<p class="small" style="margin-top:10px">${esc(m.decompositionNote)}</p>
+<h4 style="margin-top:22px">Chart technicals — recorded, not weighted</h4>
+<div class="tw"><table><thead><tr><th>Indicator</th><th class="r">Value</th><th>Read</th></tr></thead><tbody>
+${m.technicals.map((t) => `<tr><td class="k nw">${esc(t.indicator)}${tier(t.tier)}</td><td class="tnum r nw">${esc(t.value)}</td><td class="small">${esc(t.read)}</td></tr>`).join('\n')}
+</tbody></table></div>
+<p class="small" style="margin-top:10px">${esc(m.technicalsNote)}</p>
+<div class="box blue" style="margin-top:18px"><h4>Verdict on the multiple</h4><p>${esc(m.verdict)}</p></div>`,
+  )
+}
+
+function peerGroupSection(memo: ForensicMemo, e: Expansion): string {
+  const pg = e.peers
+  const pts = pg.rows
+    .filter((r) => r.pFre !== null && r.freGrowthPct !== null)
+    .map((r) => ({ x: r.freGrowthPct!, y: r.pFre!, label: r.ticker, group: r.group, self: r.ticker === memo.symbol, title: `${r.name}: ${r.freGrowthPct}% FRE growth, ${r.pFre}× P/FRE` }))
+  const scatter = scatterChart({ points: pts, xLabel: 'FRE growth, latest quarter YoY', yLabel: 'Price / annualised FRE', title: `${memo.symbol} against thirteen listed alternative managers: FRE growth versus the multiple paid for it` })
+  const groups = [...new Set(pg.rows.map((r) => r.group))]
+  const rows = groups
+    .map((g) => {
+      const body = pg.rows
+        .filter((r) => r.group === g)
+        .map((r) => `<tr${r.ticker === memo.symbol ? ' class="self"' : ''}><td class="k"><span class="nw">${esc(r.ticker)}${tier(r.tier)}</span><div class="note">${esc(r.name)}</div>${noteLine(r.note)}</td><td class="tnum r">${r.price === null ? '—' : money(r.price)}</td><td class="tnum r">${num(r.marketCapBn, 1)}</td><td class="tnum r">${r.freAnnualisedM === null ? '—' : r.freAnnualisedM.toLocaleString('en-US')}</td><td class="tnum r">${pct(r.freGrowthPct, 0)}</td><td class="tnum r">${pct(r.freMarginPct, 0)}</td><td class="tnum r k">${mult(r.pFre)}</td><td class="tnum r">${mult(r.pDe)}</td><td class="tnum r">${pct(r.divYieldPct)}</td><td class="tnum r">${pct(r.creditSharePct, 0)}</td><td class="small">${esc(r.permCapital)}</td></tr>`)
+        .join('\n')
+      return `<tr><td colspan="11" style="padding-top:14px"><h4 style="margin:0"><span class="sw" style="background:${GROUP_COLOR[g]}"></span>${esc(g)}</h4></td></tr>\n${body}`
+    })
+    .join('\n')
+  return section(
+    'peergroup',
+    21,
+    'The listed alternative-manager group — thirteen names, one question',
+    'What does the market actually pay for: growth, margin, duration, or the absence of a gate?',
+    `${scatter}
+<div class="tw" style="margin-top:14px"><table style="min-width:900px"><thead><tr><th>Manager</th><th class="r">Price</th><th class="r">Mkt cap $bn</th><th class="r">FRE ann. $m</th><th class="r">FRE growth</th><th class="r">FRE margin</th><th class="r">P / FRE</th><th class="r">P / DE</th><th class="r">Div yield</th><th class="r">Credit share</th><th>Permanent capital</th></tr></thead><tbody>
+${rows}
+</tbody></table></div>
+<p class="small" style="margin-top:10px">${esc(pg.rowsNote)}</p>
+<h4 style="margin-top:22px">What the market is paying for — factor by factor</h4>
+<div class="tw"><table><thead><tr><th>Factor</th><th>Evidence across the group</th><th>Verdict</th></tr></thead><tbody>
+${pg.whatMarketPays.map((r) => `<tr><td class="k nw">${esc(r.factor)}</td><td class="small">${esc(r.evidence)}</td><td class="small" style="color:var(--ink)">${esc(r.verdict)}</td></tr>`).join('\n')}
+</tbody></table></div>
+${pg.delisting ? `<div class="box warn" style="margin-top:14px"><h4>The private-market bid — what a take-private says the assets are worth</h4><p class="small">${esc(pg.delisting)}</p></div>` : ''}
+<div class="box blue" style="margin-top:18px"><h4>Verdict on the peer group</h4><p>${esc(pg.verdict)}</p></div>`,
+  )
+}
+
+function yieldSection(memo: ForensicMemo, e: Expansion): string {
+  const y = e.yields
+  const rows = [...y.rows].sort((a, b) => b.yieldPct - a.yieldPct)
+  const top = rows[0].yieldPct
+  const ladder = rows
+    .map((r) => `<div class="lrow${r.kind === 'subject' ? ' self' : ''}"><div class="ll"><div class="k" style="font-size:12px">${esc(r.instrument)}${tier(r.tier)}</div><div class="note">${esc([r.basis, r.asOf].filter(Boolean).join(' · '))}</div></div><div class="lb"><span class="lf kind-${r.kind}" style="width:${((r.yieldPct / top) * 100).toFixed(1)}%"></span></div><div class="lv tnum">${pct(r.yieldPct, 2)}</div></div>`)
+    .join('\n')
+  const kinds = (Object.keys(KIND_LABEL) as YieldKind[]).filter((k) => y.rows.some((r) => r.kind === k))
+  const legend = `<div class="legend">${kinds.map((k) => `<span><span class="sw lf kind-${k}" style="border-radius:3px"></span>${esc(KIND_LABEL[k])}</span>`).join('')}</div>`
+  const totalShare = y.buckets.reduce((a, b) => a + b.sharePct, 0)
+  const weighted = y.buckets.reduce((a, b) => a + (b.sharePct * b.requiredYieldPct) / totalShare, 0)
+  const zeroGrowth = y.dePs / (weighted / 100)
+  const deYield = (y.dePs / memo.price) * 100
+  const vsPrice = ((zeroGrowth - memo.price) / memo.price) * 100
+  const stats = [
+    { k: 'DE yield at the current price', v: pct(deYield), s: `${money(y.dePs)} ÷ ${money(memo.price)}`, t: '' },
+    { k: 'Required yield, fee-base weighted', v: pct(weighted), s: `Σ share × required, tier D build`, t: '' },
+    { k: 'Zero-growth value at that yield', v: money(zeroGrowth), s: `${money(y.dePs)} ÷ ${pct(weighted)}`, t: '' },
+    { k: 'Versus the current price', v: signed(vsPrice, 0), s: vsPrice > 0 ? 'cheap on yield alone, before growth' : 'yield alone does not carry the price', t: vsPrice > 0 ? 'good' : 'crit' },
+  ]
+  return section(
+    'yields',
+    22,
+    'The bond-yield comparison — is the equity paid for the permanence it claims?',
+    'Permanent capital is a duration claim. Duration claims are priced in the bond market every day; this section borrows that price.',
+    `<div class="ladder">${ladder}</div>${legend}
+<p class="small" style="margin-top:12px">${esc(y.rowsNote)}</p>
+<h4 style="margin-top:22px">Required yield by slice of the fee base — built from the bond ladder</h4>
+<div class="tw"><table><thead><tr><th>Slice of the fee base</th><th class="r">Share</th><th>Duration</th><th>Liability side</th><th class="r">Required yield</th><th>Build</th></tr></thead><tbody>
+${y.buckets.map((b) => `<tr><td class="k">${esc(b.bucket)}${tier('D')}</td><td class="tnum r">${pct(b.sharePct)}</td><td class="small">${esc(b.duration)}</td><td class="small">${esc(b.liability)}</td><td class="tnum r k">${pct(b.requiredYieldPct)}</td><td class="small">${esc(b.build)}</td></tr>`).join('\n')}
+<tr class="tot"><td>Weighted</td><td class="tnum r">${pct(totalShare, 0)}</td><td></td><td></td><td class="tnum r">${pct(weighted)}</td><td class="small">Zero-growth value ${money(zeroGrowth)} on DE per share of ${money(y.dePs)}</td></tr>
+</tbody></table></div>
+<div class="grid4" style="margin-top:14px">${stats.map((x) => `<div class="box stat"><div class="k">${esc(x.k)}</div><div class="v tnum ${x.t}">${esc(x.v)}</div><div class="s">${esc(x.s)}</div></div>`).join('')}</div>
+<p class="small" style="margin-top:12px">${esc(y.bucketNote)}</p>
+<div class="box blue" style="margin-top:18px"><h4>Verdict against bonds</h4><p>${esc(y.verdict)}</p></div>`,
+  )
 }
 
 /* ------------------------------------------------------------------ memo page */
@@ -405,7 +660,7 @@ export function renderMemoPage(memo: ForensicMemo): string {
 <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;align-items:flex-start">
 <div style="min-width:0;flex:1 1 420px">
 <h1>${esc(memo.name)} <span class="muted">(${esc(memo.exchange)}: ${esc(memo.symbol)})</span></h1>
-<p style="margin:8px 0 0">${badge(memo.rating, RATING_TONE[memo.rating])} ${memo.revalidation ? badge(`Revalidated ${memo.revalidation.asOf}`, 'blue') : ''}</p>
+<p style="margin:8px 0 0">${badge(memo.rating, RATING_TONE[memo.rating])} ${memo.revalidation ? badge(`Revalidated ${memo.revalidation.asOf}`, 'blue') : ''} ${memo.expansion ? badge(`Expanded ${memo.expansion.asOf} · methodology v3`) : ''}</p>
 <p class="lead" style="margin-top:10px">${esc(memo.headline)}</p>
 <p class="tiny">Analysis cut ${esc(memo.asOf)} · latest reported period: ${esc(memo.latestPeriod)}${memo.revalidation ? ` · revalidated ${esc(memo.revalidation.asOf)} against data published since` : ''}</p>
 </div>
@@ -416,7 +671,8 @@ export function renderMemoPage(memo: ForensicMemo): string {
     .join('')}</div>
 </section>`
 
-  const nav = `<nav class="secnav" aria-label="Memo sections">${SECTIONS.map((s) => `<a href="#${s.id}">${esc(s.label)}</a>`).join('')}</nav>`
+  const V3_IDS = ['history', 'multiple', 'peergroup', 'yields']
+  const nav = `<nav class="secnav" aria-label="Memo sections">${SECTIONS.filter((s) => memo.expansion || !V3_IDS.includes(s.id)).map((s) => `<a href="#${s.id}">${esc(s.label)}</a>`).join('')}</nav>`
 
   const s1 = section(
     'summary',
@@ -731,10 +987,20 @@ ${memo.risks.map((r) => `<tr><td class="k">${esc(r.risk)}</td><td>${esc(r.mechan
 ${memo.sources
       .map((s) => `<tr><td style="color:var(--ink)">${s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.label)}</a>` : esc(s.label)}</td><td>${esc(s.publisher)}</td><td class="nw">${esc(s.period)}</td><td class="r">${tier(s.tier)}</td></tr>`)
       .join('\n')}
-</tbody></table></div>`,
+</tbody></table></div>
+${memo.expansion ? `<h4 style="margin-top:22px">Sources for chapters 19–22 (cut ${esc(memo.expansion.asOf)})</h4>
+<div class="tw"><table><thead><tr><th>Source</th><th>Publisher</th><th>Period</th><th class="r">Tier</th></tr></thead><tbody>
+${memo.expansion.sources
+      .map((s) => `<tr><td style="color:var(--ink)">${s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.label)}</a>` : esc(s.label)}</td><td>${esc(s.publisher)}</td><td class="nw">${esc(s.period)}</td><td class="r">${tier(s.tier)}</td></tr>`)
+      .join('\n')}
+</tbody></table></div>` : ''}`,
   )
 
-  const body = [integrity, masthead, memo.revalidation ? revalidationPanel(memo.revalidation) : '', nav, s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13, s14, s15, s16, s17, s18, `<p class="small"><a href="/">← All forensic memos</a></p>`].join('\n')
+  const v3 = memo.expansion
+    ? [historySection(memo, memo.expansion), multipleSection(memo, memo.expansion), peerGroupSection(memo, memo.expansion), yieldSection(memo, memo.expansion)]
+    : []
+
+  const body = [integrity, masthead, memo.revalidation ? revalidationPanel(memo.revalidation) : '', priorPasses(memo.priorRevalidations), nav, s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13, s14, s15, s16, s17, s18, ...v3, `<p class="small"><a href="/">← All forensic memos</a></p>`].join('\n')
 
   return shell({
     title: `${memo.symbol} — ${memo.name} · forensic memorandum`,
@@ -771,7 +1037,7 @@ const COMPARE_ROWS: { label: string; note?: string; get: (m: ForensicMemo) => st
   { label: 'Rating', get: (m) => m.rating },
 ]
 
-const IF_FORCED = `Patria — and after August, by a wider margin than when this pair was first written. The original case was that Patria was the better arithmetic at a similar discount. Blue Owl has since re-rated 29.5% while Patria moved 2.6%, so the discount is no longer similar: Patria trades at 7.9× fee-related earnings against Blue Owl's 12.0×, a 34% gap where four weeks ago it was 17%. Nothing in either business changed to justify that. Patria still offers a dividend covered twice over, no gated vehicles, and a per-share stagnation whose single dominant cause (a distributable-earnings-to-fee-earnings ratio that fell from 164% to 99%) cannot repeat, because it has already fully played out — set against one new and genuinely unhelpful fact, that management now guides the FRE margin to stay below its 58–60% target for the full year. Blue Owl still owns the better franchise and the better fee rate, but the market has now paid for the re-rating in advance of the dividend rebase and the redemption queue clearing, which is why it is rated fairly valued rather than cheap. Own both only if you accept that they share one macro exposure: the multiple the market pays for private-markets fee streams.`
+const IF_FORCED = `Patria, still — but by a narrower margin than in August, and for a reason worth stating. In August the answer was easy: Blue Owl had re-rated 29.5% on no evidence and Patria had not, so Patria was cheaper on every multiple and Blue Owl was fairly valued. In September Blue Owl gave the whole re-rating back, so both are again cheap in absolute terms — Patria at 7.5× fee-related earnings, Blue Owl at 9.8× — and both are again rated moderately undervalued. The remaining case for Patria is the one the original pair was built on: a dividend covered twice over, no gated vehicles, no leveraged balance sheet, and a per-share stagnation whose dominant cause (a distributable-to-fee-earnings ratio falling from 164% to 99%) has fully played out. Against that stand a consensus "Reduce", a margin management itself guides below target, and a Brazilian election in October. Blue Owl owns the better franchise and the better fee rate, and section 22 of its memo says the shares are marginally cheap on yield alone; but the dividend is still uncovered and the redemption queue still unquantified, and both must resolve in late October. The five-year evidence in the new history chapters cuts the same way for both: aggregate growth has been enormous and the listed share has received roughly half of it. Own both only if you accept that they share one macro exposure — the multiple the market pays for private-markets fee streams — which in the past eight weeks has moved 30% in each direction without a single operating data point.`
 
 function memoCard(memo: ForensicMemo): string {
   const upside = weightedUpsidePct(memo)
@@ -807,6 +1073,30 @@ export function renderIndexPage(memos: ForensicMemo[] = FORENSIC_MEMOS): string 
     .filter((d): d is string => Boolean(d))
     .sort()
     .at(-1)
+  const sinceOn = memos
+    .map((m) => m.revalidation?.since)
+    .filter((d): d is string => Boolean(d))
+    .sort()
+    .at(-1)
+  const expandedOn = memos
+    .map((m) => m.expansion?.asOf)
+    .filter((d): d is string => Boolean(d))
+    .sort()
+    .at(-1)
+
+  const expansion = expandedOn
+    ? `<section class="card"><div class="sh"><h2>Expanded ${esc(expandedOn)} &nbsp;${badge('Methodology v3', 'blue')}</h2><p class="sub">Four chapters added to each memo. The prompt is versioned; the v2 → v3 changelog is in the methodology.</p></div>
+<div class="grid4">
+<div class="box"><h4>19 · History</h4><p class="small">From founding to today: provenance, listing promises graded, every acquisition and what it was paid with, the listed life year by year, and the rate regimes the price was responding to.</p></div>
+<div class="box"><h4>20 · Multiple history</h4><p class="small">Price against DE per share at every dated point since listing, the P/DE series, a total-return decomposition into earnings and multiple, and a short chart-technicals panel recorded but not weighted.</p></div>
+<div class="box"><h4>21 · Peer group</h4><p class="small">Thirteen listed alternative managers in four business-model groups, FRE growth against the multiple paid, and a factor-by-factor answer to what the market is actually paying for.</p></div>
+<div class="box"><h4>22 · Yield comparison</h4><p class="small">A yield ladder from Treasuries through corporate credit to the subject's own fund, and a required yield built slice by slice from the fee base's real duration and liability terms.</p></div>
+</div>
+${memos
+        .filter((m) => m.expansion)
+        .map((m) => `<div class="box" style="margin-top:10px"><div style="display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center"><a href="/${m.symbol.toLowerCase()}/"><b>${esc(m.symbol)}</b></a><span class="small">${['history', 'multiple', 'peergroup', 'yields'].map((id, i) => `<a href="/${m.symbol.toLowerCase()}/#${id}">${19 + i} ${esc(SECTIONS.find((s) => s.id === id)!.label)}</a>`).join(' · ')}</span></div><p class="small" style="margin-top:6px">${esc(m.expansion!.yields.verdict)}</p></div>`)
+        .join('')}</section>`
+    : ''
 
   const intro = `<section class="card blue"><h1>Forensic memoranda — alternative asset managers</h1>
 <p style="margin-top:10px">Adversarial investment-committee memoranda on listed alternative asset managers, written to a single standard: value the business on manager economics — fee-paying capital, fee rates, fee-related earnings, distributable earnings, duration, dilution — and judge every claim against <b>what reached the listed share</b>, not what reached assets under management.</p>
@@ -814,7 +1104,7 @@ export function renderIndexPage(memos: ForensicMemo[] = FORENSIC_MEMOS): string 
 
   const reval = revalidatedOn
     ? `<section class="card blue"><h2>Updated ${esc(revalidatedOn)} &nbsp;${badge('Both memos revalidated', 'blue')}</h2>
-<p class="lead" style="margin-top:8px">Both memos were re-tested against everything published since the 2026-07-31 cut. No operating figure in either memo deteriorated, and neither company reported new results. What moved was price — and only on one side.</p>
+<p class="lead" style="margin-top:8px">Both memos were re-tested against everything published since the previous pass${sinceOn ? ` (${esc(sinceOn)})` : ''} and the original 2026-07-31 cut. Neither company has reported new results; the next operating evidence for both arrives in late October and early November. What moved was price, rates and the sell-side — and this time on both sides.</p>
 ${memos
         .filter((m) => m.revalidation)
         .map((m) => {
@@ -838,7 +1128,7 @@ ${COMPARE_ROWS.map((row) => `<tr><td>${esc(row.label)}${noteLine(row.note)}</td>
     title: 'HK Fire — forensic memoranda',
     description: 'Adversarial investment-committee memoranda on Blue Owl (OWL) and Patria (PAX).',
     current: 'index',
-    body: [intro, reval, cards, compare].join('\n'),
+    body: [intro, reval, expansion, cards, compare].join('\n'),
   })
 }
 
