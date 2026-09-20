@@ -12,6 +12,8 @@ import { inr } from "@/lib/model/costing";
 import { measureLine, NOT_DIMENSIONED_NOTE } from "@/lib/model/measure";
 import { MeasureTable } from "@/components/Measure";
 import { roomChecklist, type Check } from "@/lib/model/checklist";
+import { RoomDrawings } from "@/components/RoomDrawings";
+import { drawingsForSpace } from "@/lib/plans/room-drawings";
 import {
   CATEGORY_LABEL, STAGE_LABEL, type ScopeItem, type Category, type Idea, type DesignOption,
   type Decision, type Doc, type Task, type SiteUpdate, type Note, type Snag,
@@ -223,6 +225,7 @@ function DesignTab({
 
   return (
     <div className="space-y-7">
+      <RoomDrawings spaceId={spaceId} />
       <div>
         <Eyebrow className="mb-2.5">Where this room sits</Eyebrow>
         <div className="card px-4 py-4">
@@ -624,11 +627,14 @@ function VendorsTab({ vendorIds, items }: { vendorIds: string[]; items: ScopeIte
 }
 
 function FilesTab({ docs, spaceId }: { docs: Doc[]; spaceId: string }) {
-  if (!docs.length) {
+  const sheets = drawingsForSpace(spaceId);
+  if (!docs.length && !sheets.length) {
     return <EmptyWithAdd on="docs" prefill={{ spaceIds: [spaceId] }} title="No documents filed against this room."
       hint="Drawings, quotes and warranties appear here automatically when they are tagged to this space." />;
   }
   return (
+    <div className="space-y-5">
+    {sheets.length > 0 && <RoomDrawings spaceId={spaceId} />}
     <div>
     <div className="flex justify-end mb-2"><AddButton on="docs" prefill={{ spaceIds: [spaceId] }} label="Add a document" /></div>
     <div className="card divide-y divide-line">
@@ -640,9 +646,11 @@ function FilesTab({ docs, spaceId }: { docs: Doc[]; spaceId: string }) {
             <div className="text-[11px] text-ink-3">{d.addedBy} · {fmtDay(d.addedAt)}</div>
           </div>
           {d.revision && <span className="text-[11px] text-ink-4 tnum">{d.revision}</span>}
+          {d.url && <a href={d.url} target="_blank" rel="noreferrer" className="text-[11px] text-clay hover:underline shrink-0">open →</a>}
           <RowActions on="docs" id={d.id} />
         </div>
       ))}
+    </div>
     </div>
     </div>
   );

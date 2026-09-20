@@ -67,6 +67,10 @@ export default function DocumentsPage() {
                       </div>
                     </div>
                     {d.revision && <span className="chip shrink-0" style={{ background: "#f4f1ec", color: "#514941" }}>{d.revision}</span>}
+                    {d.url && (
+                      <a href={d.url} target="_blank" rel="noreferrer" className="text-[11.5px] text-clay hover:underline shrink-0"
+                        onClick={(e) => e.stopPropagation()}>open →</a>
+                    )}
                     <RowActions on="docs" id={d.id} />
                   </div>
                 ))}

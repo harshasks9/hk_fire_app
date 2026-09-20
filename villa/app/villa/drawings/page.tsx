@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { DRAWINGS } from "@/lib/plans/geometry";
 import { PageTitle, Eyebrow, Sheet } from "@/components/ui";
+import { ROOM_DRAWINGS } from "@/lib/plans/room-drawings";
+import { RoomDrawings } from "@/components/RoomDrawings";
 
 /**
  * The architect's drawings, as issued.
@@ -23,7 +25,7 @@ export default function DrawingsPage() {
       </div>
       <PageTitle
         title="Architect's drawings"
-        sub="The issued set the villa was built from. The app's room list and dimensions are taken from these — nothing here was invented."
+        sub="The issued set the villa was built from, plus the sheets drawn for a single room. The app's room list and dimensions are taken from these — nothing here was invented."
         right={<Link href="/villa" className="btn">Back to the model</Link>}
       />
 
@@ -42,6 +44,25 @@ export default function DrawingsPage() {
           </button>
         ))}
       </div>
+
+      {ROOM_DRAWINGS.length > 0 && (
+        <div className="mt-8">
+          <div className="flex items-end justify-between gap-3 mb-2.5">
+            <Eyebrow>Drawings for a single room</Eyebrow>
+            <span className="text-[11.5px] text-ink-3 hidden sm:block">Also shown inside the room they belong to.</span>
+          </div>
+          <div className="grid sm:grid-cols-2 gap-4">
+            {ROOM_DRAWINGS.map((d) => (
+              <div key={d.id}>
+                <RoomDrawings spaceId={d.spaceId} compact />
+                <Link href={`/villa/${d.spaceId}`} className="text-[11.5px] text-clay hover:underline mt-1.5 inline-block">
+                  Open the room →
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
       <div className="card px-5 py-4 mt-5 max-w-3xl">
         <Eyebrow>Source of record</Eyebrow>

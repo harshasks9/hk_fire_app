@@ -13,6 +13,9 @@ import {
   purchaseList, purchaseTotals, purchasesToCsv, groupPurchases, supplyOf, isBought, SUPPLY,
 } from "@/lib/model/purchase";
 import { CATEGORY_LABEL } from "@/lib/model/types";
+import { ROOM_DRAWINGS, drawingsForSpace } from "@/lib/plans/room-drawings";
+import { existsSync } from "node:fs";
+import { join } from "node:path";
 
 const project = buildProject();
 
@@ -275,5 +278,46 @@ describe("purchase list", () => {
     expect(rows.length).toBeGreaterThanOrEqual(lines.length + 1);
     const withComma = purchasesToCsv([{ ...lines[0], title: 'Sofa, three-seater "L"' }]);
     expect(withComma).toContain('"Sofa, three-seater ""L"""');
+  });
+});
+
+/* ---------------------------------------------------------- room drawings */
+
+describe("room drawings", () => {
+  it("files every sheet against a space that exists, with an asset that exists", () => {
+    for (const d of ROOM_DRAWINGS) {
+      expect(SPACES.some((s) => s.id === d.spaceId), `${d.id} → ${d.spaceId}`).toBe(true);
+      expect(d.src.startsWith("/")).toBe(true);
+      expect(existsSync(join(process.cwd(), "public", d.src))).toBe(true);
+    }
+  });
+
+  it("never lets a provisional sheet lose its caveats or its verify list", () => {
+    for (const d of ROOM_DRAWINGS) {
+      expect(d.caveats.length).toBeGreaterThan(0);
+      expect(d.verify.length).toBeGreaterThan(0);
+      expect(d.facts.length).toBeGreaterThan(0);
+      for (const f of d.facts) expect(f.v.length).toBeGreaterThan(0);
+    }
+  });
+
+  it("finds the theatre sheet from the theatre and nowhere else", () => {
+    const found = drawingsForSpace("sf-theatre");
+    expect(found).toHaveLength(1);
+    expect(found[0].id).toBe("rd-theatre-layout");
+    expect(drawingsForSpace("gf-kitchen")).toHaveLength(0);
+  });
+
+  it("is drawn to the shell the app already carries for the room", () => {
+    const theatre = SPACES.find((s) => s.id === "sf-theatre")!;
+    expect(dimsLabel(theatre.dims)).toBe(`20'4" × 14'4"`);
+    const shell = drawingsForSpace("sf-theatre")[0].facts.find((f) => f.k === "Shell")!;
+    expect(shell.v).toContain(`20'4" × 14'4"`);
+  });
+
+  it("also appears as a document row, linked to the same asset", () => {
+    const doc = project.docs.find((d) => d.url === "/drawings/theatre-layout.png");
+    expect(doc).toBeTruthy();
+    expect(doc!.spaceIds).toContain("sf-theatre");
   });
 });
