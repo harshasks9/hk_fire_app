@@ -4,6 +4,7 @@ import React, { useMemo, useState } from "react";
 import Link from "next/link";
 import { useProject, newId } from "@/lib/store";
 import { PageTitle, Eyebrow, Chip, Empty, Avatar, fmtDate, Field, Sheet } from "@/components/ui";
+import { AddButton, RowActions, EntityLink, EmptyWithAdd } from "@/components/Entity";
 import type { Note } from "@/lib/model/types";
 
 const KINDS: Note["kind"][] = ["meeting", "site-visit", "call", "vendor-meeting", "observation", "measurement", "idea", "follow-up"];
@@ -61,18 +62,22 @@ export default function NotesPage() {
         })}
       </div>
 
-      {!notes.length ? <Empty title="No notes match." /> : (
+      {!notes.length ? (
+        <EmptyWithAdd on="notes" title="No notes match."
+          hint="Meetings, site visits, calls and measurements. Tag a note to a room, a vendor or a decision and it shows up there too." />
+      ) : (
         <div className="space-y-3">
           {notes.map((n) => {
             const person = state.people.find((p) => p.name === n.author);
             return (
-              <div key={n.id} id={n.id} className="card px-4 sm:px-5 py-4 scroll-mt-24">
+              <div key={n.id} id={n.id} className="card px-4 sm:px-5 py-4 scroll-mt-24 group">
                 <div className="flex items-start gap-3">
                   <Avatar name={n.author} tone={person?.avatarTone} size={30} />
                   <div className="min-w-0 flex-1">
                     <div className="flex flex-wrap items-center gap-2">
                       <Chip tone="ghost">{KIND_LABEL[n.kind]}</Chip>
                       <span className="text-[11.5px] text-ink-3">{n.author} · {fmtDate(n.at)}</span>
+                      <span className="ml-auto"><RowActions on="notes" id={n.id} /></span>
                     </div>
                     <h3 className="text-[16px] mt-1.5">{n.title}</h3>
                     <p className="text-[13px] text-ink-2 mt-2 leading-relaxed whitespace-pre-wrap">{n.body}</p>
@@ -89,9 +94,16 @@ export default function NotesPage() {
                         {n.decisionIds.map((id) => (
                           <Link key={id} href={`/decisions#${id}`}><Chip tone="clay">{state.decisions.find((d) => d.id === id)?.title ?? "Decision"}</Chip></Link>
                         ))}
+                        {n.taskIds.map((id) => (
+                          <EntityLink key={id} on="tasks" id={id} className="">
+                            <Chip tone="ochre">{state.tasks.find((t) => t.id === id)?.title ?? "Task"}</Chip>
+                          </EntityLink>
+                        ))}
                         {n.scopeItemIds.map((id) => {
                           const it = state.items.find((i) => i.id === id);
-                          return it ? <Chip key={id} tone="ghost">{it.title}</Chip> : null;
+                          return it ? (
+                            <EntityLink key={id} on="items" id={id} className=""><Chip tone="ghost">{it.title}</Chip></EntityLink>
+                          ) : null;
                         })}
                       </div>
                     )}

@@ -4,8 +4,9 @@ import React, { useState } from "react";
 import { useProject } from "@/lib/store";
 import { openDecisions, decisionUrgency, forecastOf } from "@/lib/model/derive";
 import { inr } from "@/lib/model/costing";
-import { PageTitle, Eyebrow, Empty, Tabs, Stat, Chip, fmtDay } from "@/components/ui";
+import { PageTitle, Tabs, Stat, fmtDay } from "@/components/ui";
 import { DecisionCard } from "@/components/DecisionCard";
+import { AddButton, RowActions, EmptyWithAdd } from "@/components/Entity";
 
 const TABS = ["Needs my decision", "On hold", "Settled"] as const;
 type Tab = (typeof TABS)[number];
@@ -41,6 +42,7 @@ export default function DecisionsPage() {
             ? "Ranked by how soon it bites and how much rides on it. Each card has everything you need to answer it here."
             : "Nothing is waiting on you."
         }
+        right={<AddButton on="decisions" label="Raise a decision" accent />}
       />
 
       {waiting.length > 0 && (
@@ -73,14 +75,16 @@ export default function DecisionsPage() {
       <div className="mt-5 space-y-3">
         {list.length ? (
           list.map((d, i) => (
-            <div key={d.id} className="animate-rise" style={{ animationDelay: `${i * 40}ms` }}>
+            <div key={d.id} id={d.id} className="animate-rise scroll-mt-24 group relative" style={{ animationDelay: `${i * 40}ms` }}>
               <DecisionCard decision={d} expanded={i === 0 && tab === "Needs my decision"} />
+              <RowActions on="decisions" id={d.id} className="absolute top-3 right-3 z-10" />
             </div>
           ))
         ) : (
-          <Empty
+          <EmptyWithAdd
+            on="decisions"
             title={tab === "Needs my decision" ? "Nothing is waiting on you." : tab === "On hold" ? "Nothing is on hold." : "No decisions settled yet."}
-            hint={tab === "Needs my decision" ? "The designer has no open approval requests." : undefined}
+            hint={tab === "Needs my decision" ? "The designer has no open approval requests. You can still raise one yourself — anything the project is stuck on belongs here." : undefined}
           />
         )}
       </div>

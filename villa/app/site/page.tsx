@@ -11,6 +11,7 @@ import {
   PageTitle, Eyebrow, Chip, Empty, PhotoBlock, Stat, Tabs, Field, fmtDay, Sheet, Bar,
 } from "@/components/ui";
 import { categoryOptions } from "@/lib/model/categories";
+import { AddButton, RowActions, EntityLink, EmptyWithAdd } from "@/components/Entity";
 
 const TABS = ["Capture", "Snag list", "Progress"] as const;
 type Tab = (typeof TABS)[number];
@@ -36,7 +37,7 @@ const ACTIONS: { id: Action; label: string; sub: string; icon: string }[] = [
 export default function SitePage() {
   const { state, dispatch, me } = useProject();
   const [tab, setTab] = useState<Tab>("Capture");
-  const [room, setRoom] = useState<string>("gf-living");
+  const [room, setRoom] = useState<string>(() => state.spaces.find((s) => s.floor === "ground")?.id ?? state.spaces[0]?.id ?? "");
   const [action, setAction] = useState<Action | null>(null);
 
   const space = state.spaces.find((s) => s.id === room);
@@ -320,10 +321,13 @@ function SnagList() {
         ))}
       </div>
 
-      {!list.length ? <Empty title="Nothing here." /> : (
+      {!list.length ? (
+        <EmptyWithAdd on="snags" title="Nothing here."
+          hint="Snags raised on site land in this list, with the photo and the room they were raised in." />
+      ) : (
         <div className="space-y-3">
           {list.map((s) => (
-            <div key={s.id} id={s.id} className="card px-4 py-4 scroll-mt-24">
+            <div key={s.id} id={s.id} className="card px-4 py-4 scroll-mt-24 group">
               <div className="flex flex-col sm:flex-row gap-4">
                 <div className="sm:w-36 shrink-0 flex sm:block gap-2">
                   <PhotoBlock tone={s.photoSwatch} ratio="4 / 3" label="Raised" className="flex-1">
@@ -338,6 +342,8 @@ function SnagList() {
                   <div className="flex flex-wrap items-center gap-2 mb-1.5">
                     <Chip tone={s.severity === "critical" || s.severity === "high" ? "rust" : "ochre"}>{s.severity}</Chip>
                     <Chip tone={s.status === "closed" ? "sage" : s.status === "open" ? "rust" : "slate"}>{s.status}</Chip>
+                    {s.spaceId && <span className="text-[11px]"><EntityLink on="spaces" id={s.spaceId} /></span>}
+                    <span className="ml-auto"><RowActions on="snags" id={s.id} /></span>
                     <Link href={`/villa/${s.spaceId}`} className="text-[11.5px] text-ink-3 hover:text-clay">{spaceName(s.spaceId)}</Link>
                   </div>
                   <div className="text-[14.5px]">{s.title}</div>

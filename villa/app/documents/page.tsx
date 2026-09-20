@@ -3,7 +3,8 @@
 import React, { useMemo, useState } from "react";
 import Link from "next/link";
 import { useProject } from "@/lib/store";
-import { PageTitle, Eyebrow, Chip, Empty, fmtDay } from "@/components/ui";
+import { PageTitle, Eyebrow, Chip, fmtDay } from "@/components/ui";
+import { AddButton, RowActions, EntityLink, EmptyWithAdd } from "@/components/Entity";
 import type { Doc } from "@/lib/model/types";
 
 const GROUPS: { label: string; kinds: Doc["kind"][] }[] = [
@@ -37,6 +38,7 @@ export default function DocumentsPage() {
       <PageTitle
         title="Documents"
         sub="Everything filed. Most of the time you will meet these inside the room or the item they belong to rather than here."
+        right={<AddButton on="docs" label="Add a document" accent />}
       />
 
       <input className="input mb-5 max-w-md" placeholder="Search documents…" value={q} onChange={(e) => setQ(e.target.value)} />
@@ -50,24 +52,36 @@ export default function DocumentsPage() {
               <Eyebrow className="mb-2">{g.label}</Eyebrow>
               <div className="card divide-y divide-line">
                 {list.map((d) => (
-                  <div key={d.id} className="px-4 py-3 flex items-center gap-3">
+                  <div key={d.id} id={d.id} className="px-4 py-3 flex items-center gap-3 group scroll-mt-24">
                     <Chip tone="ghost">{d.kind.replace(/-/g, " ")}</Chip>
                     <div className="min-w-0 flex-1">
                       <div className="text-[13.5px] truncate">{d.title}</div>
-                      <div className="text-[11px] text-ink-3 truncate">
-                        {d.addedBy} · {fmtDay(d.addedAt)}
-                        {d.spaceIds.length > 0 && ` · ${d.spaceIds.map(spaceName).join(", ")}`}
-                        {d.vendorId && ` · ${state.vendors.find((v) => v.id === d.vendorId)?.name}`}
+                      <div className="text-[11px] text-ink-3 truncate flex flex-wrap items-center gap-x-1.5">
+                        <span>{d.addedBy} · {fmtDay(d.addedAt)}</span>
+                        {d.spaceIds.map((id) => (
+                          <React.Fragment key={id}>
+                            <span>·</span><EntityLink on="spaces" id={id} label={spaceName(id)} />
+                          </React.Fragment>
+                        ))}
+                        {d.vendorId && <><span>·</span><EntityLink on="vendors" id={d.vendorId} /></>}
                       </div>
                     </div>
                     {d.revision && <span className="chip shrink-0" style={{ background: "#f4f1ec", color: "#514941" }}>{d.revision}</span>}
+                    {d.url && (
+                      <a href={d.url} target="_blank" rel="noreferrer" className="text-[11.5px] text-clay hover:underline shrink-0"
+                        onClick={(e) => e.stopPropagation()}>open →</a>
+                    )}
+                    <RowActions on="docs" id={d.id} />
                   </div>
                 ))}
               </div>
             </div>
           );
         })}
-        {!filtered.length && <Empty title="No documents match." />}
+        {!filtered.length && (
+          <EmptyWithAdd on="docs" title={q ? "No documents match." : "Nothing filed yet."}
+            hint={q ? undefined : "Drawings, quotes, purchase orders, invoices, warranties and manuals all live here — and show up inside the room or item they belong to."} />
+        )}
       </div>
 
       <p className="text-[11.5px] text-ink-3 mt-6 leading-relaxed max-w-2xl">

@@ -5,6 +5,8 @@ import { useProject, newId, type CollectionKey } from "@/lib/store";
 import { SCHEMAS, readField, writeField, type Field, type CollectionSchema } from "@/lib/model/schema";
 import { inr } from "@/lib/model/costing";
 import { categoryOptions } from "@/lib/model/categories";
+import Link from "next/link";
+import { hrefFor } from "@/lib/model/links";
 import { Eyebrow, Field as FieldShell, NumberInput, Sheet, Empty, Chip, fmtDay } from "./ui";
 import type { ProjectState } from "@/lib/model/types";
 
@@ -159,6 +161,7 @@ export function EntityEditor({
                 </button>
                 <div className="mt-2.5 flex gap-2">
                   <button className="btn btn-sm flex-1 justify-center" onClick={() => { setEditing(r); setCreating(false); }}>Edit</button>
+                  <OpenLink collection={collection} id={String(r.id)} />
                   <button className="btn btn-sm" style={{ color: "#8d3a2c" }} onClick={() => setConfirmDelete(r)}>Delete</button>
                 </div>
               </div>
@@ -172,7 +175,7 @@ export function EntityEditor({
                   {cols.map((c) => (
                     <th key={c.key} className="text-left font-medium px-3 py-2">{c.label}</th>
                   ))}
-                  <th className="text-right font-medium px-3 py-2 w-[112px]">Actions</th>
+                  <th className="text-right font-medium px-3 py-2 w-[168px]">Actions</th>
                 </tr>
               </thead>
               <tbody>
@@ -190,6 +193,7 @@ export function EntityEditor({
                       </td>
                     ))}
                     <td className="px-3 py-2 text-right whitespace-nowrap">
+                      <OpenLink collection={collection} id={String(r.id)} className="mr-1.5" />
                       <button className="btn btn-sm" onClick={() => { setEditing(r); setCreating(false); }}>Edit</button>
                       <button className="btn btn-sm ml-1.5" style={{ color: "#8d3a2c" }} onClick={() => setConfirmDelete(r)}>Delete</button>
                     </td>
@@ -238,7 +242,15 @@ export function EntityEditor({
   );
 }
 
-function RowForm({
+/** From the console to wherever the record actually lives. */
+function OpenLink({ collection, id, className = "" }: { collection: CollectionKey; id: string; className?: string }) {
+  const { state } = useProject();
+  const href = hrefFor(collection, id, state);
+  if (!href) return null;
+  return <Link href={href} className={`btn btn-sm ${className}`} title="Open this where it lives">Open</Link>;
+}
+
+export function RowForm({
   schema, row, creating, onCancel, onSave,
 }: {
   schema: CollectionSchema;

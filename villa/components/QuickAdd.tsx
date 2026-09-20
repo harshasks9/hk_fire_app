@@ -2,7 +2,9 @@
 
 import React, { useMemo, useState } from "react";
 import { usePathname } from "next/navigation";
-import { useProject, newId } from "@/lib/store";
+import { useProject, newId, COLLECTION_KEYS, type CollectionKey } from "@/lib/store";
+import { useEntity } from "./Entity";
+import { SCHEMAS } from "@/lib/model/schema";
 import { Sheet, Field, Eyebrow, NumberInput } from "./ui";
 import type { Severity, Category } from "@/lib/model/types";
 import { CATEGORY_LABEL } from "@/lib/model/types";
@@ -29,8 +31,14 @@ const KINDS: { kind: Kind; hint: string }[] = [
  * Its only real trick is that it reads where you are. Standing in the master
  * bedroom and hitting + Idea should not ask you which room you mean.
  */
+/** The collections the ten shortcuts above do not already cover. */
+const OTHER: CollectionKey[] = COLLECTION_KEYS.filter(
+  (k) => !["ideas", "notes", "tasks", "decisions", "snags", "items", "vendors", "docs", "siteUpdates"].includes(k),
+) as CollectionKey[];
+
 export function QuickAdd() {
   const { state } = useProject();
+  const { create: createAny } = useEntity();
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [kind, setKind] = useState<Kind | null>(null);
@@ -86,6 +94,20 @@ export function QuickAdd() {
                   <div className="text-[11px] text-ink-3 leading-snug mt-0.5">{k.hint}</div>
                 </button>
               ))}
+            </div>
+
+            {/* Everything the ten shortcuts above do not cover, straight from
+                the schema — so no kind of record is unreachable from here. */}
+            <div className="hairline mt-5 pt-4">
+              <Eyebrow className="mb-2">Anything else</Eyebrow>
+              <div className="flex flex-wrap gap-1.5">
+                {OTHER.map((on) => (
+                  <button key={on} className="btn btn-sm"
+                    onClick={() => { close(); createAny(on, contextSpaceId ? { spaceId: contextSpaceId } : undefined); }}>
+                    {SCHEMAS[on].singular.replace(/^./, (c) => c.toUpperCase())}
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
         ) : (

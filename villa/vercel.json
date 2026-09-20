@@ -3,5 +3,5 @@
   "framework": "nextjs",
   "buildCommand": "next build",
   "installCommand": "npm install",
-  "ignoreCommand": "git diff --quiet HEAD^ HEAD -- ."
+  "ignoreCommand": "for p in $(git rev-list --parents -n1 HEAD | cut -d' ' -f2-); do git diff --quiet \"$p\" HEAD -- . || exit 1; done"
 }

@@ -7,6 +7,7 @@ import { inr, computeCost } from "@/lib/model/costing";
 import { CATEGORY_LABEL, UNIT_LABEL, type ScopeItem, type FloorId } from "@/lib/model/types";
 import { FLOOR_META } from "@/lib/seed/spaces";
 import { Eyebrow, StageChip, Chip, NumberInput, Empty, Assumed } from "./ui";
+import { RowActions, EntityLink } from "./Entity";
 import { catLabel } from "@/lib/model/categories";
 
 /**
@@ -132,6 +133,7 @@ export function BoqTable({ onOpen }: { onOpen: (i: ScopeItem) => void }) {
                                   <th className="text-right font-medium px-2 py-1.5">Labour</th>
                                   <th className="text-right font-medium px-2 py-1.5">Tax</th>
                                   <th className="text-right font-medium px-4 py-1.5">Total</th>
+                                  <th className="w-[86px]" />
                                 </tr>
                               </thead>
                               <tbody>
@@ -167,16 +169,20 @@ function BoqRow({ item, onOpen }: { item: ScopeItem; onOpen: (i: ScopeItem) => v
   const quoted = item.ladder.quoted ?? item.ladder.approved;
 
   return (
-    <tr className="border-t border-line/70 hover:bg-paper-2/50">
+    <tr className="border-t border-line/70 hover:bg-paper-2/50 group">
       <td className="px-4 py-2">
         <button onClick={() => onOpen(item)} className="text-left w-full">
           <div className="text-ink">{item.title}</div>
           {item.spec && <div className="text-[11px] text-ink-3 line-clamp-1">{item.spec}</div>}
           <div className="flex items-center gap-1.5 mt-1">
             <StageChip stage={item.stage} small />
-            {vendor && <span className="text-[10.5px] text-ink-3">{vendor.name}</span>}
           </div>
         </button>
+        {vendor && (
+          <div className="text-[10.5px] text-ink-3 mt-0.5">
+            <EntityLink on="vendors" id={vendor.id} />
+          </div>
+        )}
       </td>
       <td className="px-2 py-2 text-right">
         <input
@@ -197,6 +203,7 @@ function BoqRow({ item, onOpen }: { item: ScopeItem; onOpen: (i: ScopeItem) => v
       <td className="px-2 py-2 text-right tnum text-ink-2">{b.labour ? inr(b.labour, { compact: true }) : "—"}</td>
       <td className="px-2 py-2 text-right tnum text-ink-2">{b.tax ? inr(b.tax, { compact: true }) : "—"}</td>
       <td className="px-4 py-2 text-right tnum font-medium">{inr(forecastOf(item))}</td>
+      <td className="px-2 py-2 text-right"><RowActions on="items" id={item.id} /></td>
     </tr>
   );
 }

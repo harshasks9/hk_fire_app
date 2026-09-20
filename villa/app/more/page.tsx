@@ -4,8 +4,21 @@ import Link from "next/link";
 import { useProject } from "@/lib/store";
 import { findGaps, openSnags, projectFinance } from "@/lib/model/derive";
 import { PageTitle, Eyebrow, Chip } from "@/components/ui";
+import { feetLabel } from "@/lib/model/measure";
 
 const LINKS = [
+  { href: "/checklist", title: "Planning checklist",
+    blurb: "Every room's full list — including the boring, invisible, expensive lines. A line is never deleted, only marked not applicable with a reason." },
+  { href: "/phases", title: "Phases",
+    blurb: "Twelve phases in the order a fit-out actually runs, what happens in each, and what must be true before the next one starts." },
+  { href: "/purchases", title: "Purchase list",
+    blurb: "What somebody has to go and order, and by when. Separate from the BOQ: site work is excluded, because there is nothing to buy." },
+  { href: "/villa/drawings", title: "Architect's drawings",
+    blurb: "The issued plans and the street elevation — the set every room, dimension and area in the app was read off." },
+  { href: "/sheet", title: "Sheet",
+    blurb: "A spreadsheet of the scope: one room at a time, every line with its cost, owner, vendor and money — type straight in, or paste from Excel." },
+  { href: "/history", title: "History",
+    blurb: "Every change to the plan, who made it and when. Restore the project to any point." },
   { href: "/manage", title: "Manage the project",
     blurb: "Create, edit and delete anything in the villa — floor by floor, room by room, across all sixteen kinds of record." },
   { href: "/vendors", title: "Vendors & quotations", blurb: "Suppliers, and side-by-side quote comparison that flags when quotes are not like-for-like." },
@@ -61,7 +74,9 @@ export default function MorePage() {
         <div className="text-[13px] text-ink-2 space-y-1.5 leading-relaxed">
           <div>{state.spaces.length} spaces · {state.items.length} scope items · {state.vendors.length} vendors</div>
           <div>Budget {new Intl.NumberFormat("en-IN", { style: "currency", currency: "INR", maximumFractionDigits: 0 }).format(fin.originalBudget)} · forecast {new Intl.NumberFormat("en-IN", { style: "currency", currency: "INR", maximumFractionDigits: 0 }).format(fin.forecast)}</div>
-          <div>Plot {state.meta.plotWidthFt}&prime;0&quot; × {state.meta.plotDepthFt}&prime;3&quot; · built footprint 45&prime;10&quot; × 45&prime;2&quot;</div>
+          {state.meta.plotWidthFt > 0 && state.meta.plotDepthFt > 0 && (
+            <div>Plot {feetLabel(state.meta.plotWidthFt)} × {feetLabel(state.meta.plotDepthFt)}</div>
+          )}
         </div>
         <p className="text-[11.5px] text-ink-3 mt-4 leading-relaxed max-w-2xl">
           All dimensions are transcribed from the architect&rsquo;s plans. Spaces the plans do not

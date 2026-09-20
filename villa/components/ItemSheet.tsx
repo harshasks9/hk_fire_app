@@ -1,16 +1,19 @@
 "use client";
 
 import React, { useState } from "react";
-import { useProject, newId } from "@/lib/store";
+import { useProject, newId, useRevisions } from "@/lib/store";
 import type { ScopeItem, Stage, Unit } from "@/lib/model/types";
 import { STAGES, STAGE_LABEL, UNIT_LABEL, CATEGORY_LABEL } from "@/lib/model/types";
-import { computeCost, inr, DEFAULT_RATES, round, areaSqft, perimeterFt, wallAreaSqft } from "@/lib/model/costing";
+import { computeCost, inr, round } from "@/lib/model/costing";
+import { measureSpace } from "@/lib/model/measure";
+import { Dims } from "./Measure";
 import { forecastOf } from "@/lib/model/derive";
-import { Sheet, Field, Eyebrow, NumberInput, StageChip, Chip, Money, Assumed, Tabs } from "./ui";
+import { Sheet, Field, Eyebrow, NumberInput, StageChip, Chip, Money, Assumed, Tabs, Avatar, Empty, fmtDate } from "./ui";
 import { Comments } from "./Comments";
-import { catLabel } from "@/lib/model/categories";
+import { EntityLink, RowActions } from "./Entity";
+import { catLabel, catDef } from "@/lib/model/categories";
 
-const TABS = ["Cost", "Spec", "Procurement", "Discussion"] as const;
+const TABS = ["Cost", "Spec", "Procurement", "Discussion", "Changes"] as const;
 type Tab = (typeof TABS)[number];
 
 /**
@@ -32,7 +35,7 @@ export function ItemSheet({
   if (!item) return null;
   const space = state.spaces.find((s) => s.id === item.spaceId);
   const breakdown = computeCost(item.cost);
-  const rateDef = DEFAULT_RATES[item.category];
+  const rateDef = catDef(state, item.category);
   const decision = state.decisions.find((d) => d.scopeItemId === item.id);
   const ideas = state.ideas.filter((i) => i.scopeItemId === item.id);
   const options = state.options.filter((o) => o.scopeItemId === item.id);
@@ -54,7 +57,11 @@ export function ItemSheet({
     >
       <div className="flex flex-wrap items-center gap-2 mb-4 text-[12px] text-ink-3">
         <Chip tone="ghost">{catLabel(state, item.category)}</Chip>
-        <span>{space?.name ?? "House-wide"}</span>
+        {space ? <EntityLink on="spaces" id={space.id} label={space.name} /> : <span>House-wide</span>}
+        {space?.dims && <Dims sp={space} source={false} className="text-[11.5px]" />}
+        {item.vendorId && <>·<EntityLink on="vendors" id={item.vendorId} /></>}
+        {decision && <>·<EntityLink on="decisions" id={decision.id} label="the decision" /></>}
+        <span className="ml-auto"><RowActions on="items" id={item.id} always /></span>
         {item.tags?.includes("critical") && <Chip tone="clay">Critical</Chip>}
         {item.tags?.includes("beyond-brief") && (
           <Chip tone="slate" title="Added to the model because the villa needs it, though it was not in the original brief.">
@@ -160,9 +167,9 @@ export function ItemSheet({
                     <div className="mt-3.5 flex flex-wrap gap-1.5 items-center">
                       <span className="text-[11px] text-ink-3">Use this room&rsquo;s:</span>
                       {([
-                        ["Floor area", areaSqft(space.dims), "sqft"],
-                        ["Wall area", wallAreaSqft(space.dims, space.ceilingHeightFt ?? 10), "sqft"],
-                        ["Perimeter", perimeterFt(space.dims), "rft"],
+                        ["Floor area", measureSpace(space)?.areaSqft, "sqft"],
+                        ["Wall area", measureSpace(space)?.wallSqft, "sqft"],
+                        ["Perimeter", measureSpace(space)?.perimeterFt, "rft"],
                       ] as const).map(([label, v, unit]) =>
                         v ? (
                           <button
@@ -332,6 +339,8 @@ export function ItemSheet({
                 <Comments targetType="item" targetId={item.id} />
               </div>
             )}
+
+            {tab === "Changes" && <ItemChanges itemId={item.id} />}
           </div>
         </>
       )}
@@ -397,6 +406,35 @@ function ProcurementPanel({ item }: { item: ScopeItem }) {
         <Field label="Invoice reference"><input className="input" value={p.invoiceRef ?? ""} onChange={(e) => patch({ invoiceRef: e.target.value })} /></Field>
         <Field label="Responsible"><input className="input" value={p.owner ?? ""} onChange={(e) => patch({ owner: e.target.value })} /></Field>
       </div>
+    </div>
+  );
+}
+
+/** Everything that has ever happened to this one item, newest first. */
+function ItemChanges({ itemId }: { itemId: string }) {
+  const { state } = useProject();
+  const { revisions, loading } = useRevisions({ itemId });
+  const list = revisions.slice().reverse();
+  if (!list.length) {
+    return <Empty title={loading ? "Loading…" : "No changes recorded on this item yet."} hint="Every edit from here on is listed with who made it and when." />;
+  }
+  return (
+    <div className="card divide-y divide-line">
+      {list.map((r) => {
+        const person = state.people.find((p) => p.id === r.byId || p.name === r.by);
+        return (
+          <div key={r.v} className="px-4 py-3 flex items-start gap-3">
+            <Avatar name={r.by || "?"} tone={person?.avatarTone} size={24} />
+            <div className="min-w-0 flex-1">
+              <div className="text-[13px] leading-relaxed">{r.summary}</div>
+              <div className="text-[11px] text-ink-3 mt-0.5">
+                <span className="font-medium text-ink-2">{r.by || "Unattributed"}</span> · {fmtDate(r.at)}{" "}
+                {new Date(r.at).toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit" })} · <span className="tnum">v{r.v}</span>
+              </div>
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 }

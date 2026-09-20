@@ -3,6 +3,7 @@
 import React, { useMemo, useState } from "react";
 import Link from "next/link";
 import { useProject } from "@/lib/store";
+import { AddButton, RowActions, EntityLink, EmptyWithAdd } from "@/components/Entity";
 import { isLate, criticalTaskIds, daysBetween } from "@/lib/model/derive";
 import { PageTitle, Eyebrow, Chip, Empty, Stat, Tabs, fmtDay, relative } from "@/components/ui";
 import type { Task } from "@/lib/model/types";
@@ -78,6 +79,7 @@ export default function TimelinePage() {
       <PageTitle
         title="Timeline"
         sub="The order things have to happen in, and what is currently capable of moving handover."
+        right={<AddButton on="tasks" label="Add a task" accent />}
       />
 
       <div className="card px-5 py-5 mb-6 grid grid-cols-2 sm:grid-cols-4 gap-4">
@@ -227,7 +229,7 @@ function TaskRow({ t, critical, byId }: { t: Task; critical: boolean; byId: Map<
   const deps = t.dependsOn.map((d) => byId.get(d)).filter(Boolean) as Task[];
   const space = state.spaces.find((s) => s.id === t.spaceId);
   return (
-    <div className="px-4 py-3 flex items-start gap-3">
+    <div id={t.id} className="px-4 py-3 flex items-start gap-3 group scroll-mt-24">
       <button
         onClick={() => dispatch({ type: "task/patch", id: t.id, patch: { status: t.status === "done" ? "todo" : "done" } })}
         className="shrink-0 mt-0.5 rounded-md border transition-colors"
@@ -250,14 +252,23 @@ function TaskRow({ t, critical, byId }: { t: Task; critical: boolean; byId: Map<
         </div>
         <div className="text-[11.5px] text-ink-3 mt-0.5">
           {t.owner}
-          {space && <> · <Link href={`/villa/${space.id}`} className="hover:text-clay">{space.name}</Link></>}
-          {deps.length > 0 && <> · after {deps.map((d) => d.title).join(", ")}</>}
+          {space && <> · <EntityLink on="spaces" id={space.id} label={space.name} /></>}
+          {t.vendorId && <> · <EntityLink on="vendors" id={t.vendorId} /></>}
+          {t.scopeItemId && <> · <EntityLink on="items" id={t.scopeItemId} label="the item" /></>}
+          {deps.length > 0 && (
+            <> · after {deps.map((d, i) => (
+              <React.Fragment key={d.id}>{i > 0 && ", "}<EntityLink on="tasks" id={d.id} label={d.title} /></React.Fragment>
+            ))}</>
+          )}
         </div>
         {t.notes && <div className="text-[11.5px] text-ink-3 mt-1 italic">{t.notes}</div>}
       </div>
-      <div className="text-right shrink-0">
-        <div className="text-[12px] tnum" style={{ color: lateT ? "#8d3a2c" : undefined }}>{fmtDay(t.finish)}</div>
-        {t.finish && t.status !== "done" && <div className="text-[10.5px] text-ink-4">{relative(t.finish)}</div>}
+      <div className="text-right shrink-0 flex items-start gap-2">
+        <div>
+          <div className="text-[12px] tnum" style={{ color: lateT ? "#8d3a2c" : undefined }}>{fmtDay(t.finish)}</div>
+          {t.finish && t.status !== "done" && <div className="text-[10.5px] text-ink-4">{relative(t.finish)}</div>}
+        </div>
+        <RowActions on="tasks" id={t.id} />
       </div>
     </div>
   );

@@ -3,6 +3,7 @@
 import React, { useMemo, useState } from "react";
 import Link from "next/link";
 import { useProject } from "@/lib/store";
+import { AddButton, RowActions, EntityLink, EmptyWithAdd } from "@/components/Entity";
 import { forecastOf } from "@/lib/model/derive";
 import { inr } from "@/lib/model/costing";
 import { CATEGORY_LABEL, type Quotation } from "@/lib/model/types";
@@ -53,6 +54,12 @@ export default function VendorsPage() {
       <PageTitle
         title="Vendors & quotations"
         sub="Quotes normalised into the same rows, with the differences called out — because the cheapest number is rarely the cheapest deal."
+        right={
+          <div className="flex items-center gap-2">
+            <AddButton on="quotations" label="Log a quotation" />
+            <AddButton on="vendors" label="Add a vendor" accent />
+          </div>
+        }
       />
 
       <Tabs tabs={TABS} active={tab} onChange={setTab} counts={{ "Quotation comparison": state.quotations.length, Directory: state.vendors.length }} />
@@ -63,23 +70,33 @@ export default function VendorsPage() {
             <div className="space-y-8">
               {sets.map((g) => <Comparison key={g.key} title={g.title} quotes={g.quotes} />)}
             </div>
-          ) : <Empty title="No quotations received yet." />
+          ) : (
+            <EmptyWithAdd on="quotations" title="No quotations received yet."
+              hint="Log what a vendor has quoted and the comparison builds itself — including a warning when two quotes are not for the same thing." />
+          )
         )}
 
         {tab === "Directory" && (
           <div className="grid sm:grid-cols-2 gap-3">
+            {!state.vendors.length && (
+              <div className="sm:col-span-2">
+                <EmptyWithAdd on="vendors" title="No vendors yet."
+                  hint="The suppliers, contractors and fabricators you are buying from. A vendor here can be named on a quote, a purchase order, a task or a snag." />
+              </div>
+            )}
             {state.vendors.map((v) => {
               const items = state.items.filter((i) => i.vendorId === v.id);
               const value = items.reduce((a, i) => a + forecastOf(i), 0);
               const snags = state.snags.filter((s) => s.vendorId === v.id && s.status !== "closed");
               const tasks = state.tasks.filter((t) => t.vendorId === v.id && t.status !== "done");
               return (
-                <div key={v.id} id={v.id} className="card px-4 py-4 scroll-mt-24">
+                <div key={v.id} id={v.id} className="card px-4 py-4 scroll-mt-24 group">
                   <div className="flex items-start justify-between gap-3">
                     <div className="min-w-0">
                       <div className="text-[15px]" style={{ fontFamily: "var(--font-display)" }}>{v.name}</div>
                       <div className="text-[11.5px] text-ink-3 mt-0.5">{v.trade.map((t) => catLabel(state, t)).join(" · ")}</div>
                     </div>
+                    <RowActions on="vendors" id={v.id} />
                     {v.rating && (
                       <span className="text-[12px] text-ochre shrink-0" title={`${v.rating} of 5`}>
                         {"★".repeat(v.rating)}<span className="text-ink-4">{"★".repeat(5 - v.rating)}</span>
@@ -89,9 +106,21 @@ export default function VendorsPage() {
                   {v.notes && <p className="text-[12.5px] text-ink-3 mt-2 leading-relaxed">{v.notes}</p>}
                   <div className="flex flex-wrap gap-x-4 gap-y-1 mt-3 text-[11.5px] text-ink-3">
                     {value > 0 && <span className="tnum">{inr(value, { compact: true })} awarded</span>}
-                    {items.length > 0 && <span className="tnum">{items.length} items</span>}
-                    {tasks.length > 0 && <span className="tnum">{tasks.length} open tasks</span>}
-                    {snags.length > 0 && <span className="text-rust tnum">{snags.length} open snags</span>}
+                    {items.length > 0 && (
+                      <EntityLink on="items" id={items[0].id}>
+                        <span className="tnum">{items.length} item{items.length > 1 ? "s" : ""} →</span>
+                      </EntityLink>
+                    )}
+                    {tasks.length > 0 && (
+                      <EntityLink on="tasks" id={tasks[0].id}>
+                        <span className="tnum">{tasks.length} open task{tasks.length > 1 ? "s" : ""} →</span>
+                      </EntityLink>
+                    )}
+                    {snags.length > 0 && (
+                      <EntityLink on="snags" id={snags[0].id} className="text-rust hover:underline underline-offset-2">
+                        <span className="tnum">{snags.length} open snag{snags.length > 1 ? "s" : ""} →</span>
+                      </EntityLink>
+                    )}
                     {v.contact && <span>{v.contact}</span>}
                   </div>
                 </div>
@@ -126,7 +155,10 @@ function Comparison({ title, quotes }: { title: string; quotes: Quotation[] }) {
     <div>
       <div className="flex flex-wrap items-baseline justify-between gap-2 mb-3">
         <h2 className="text-[19px]">{title}</h2>
-        <span className="text-[12px] text-ink-3">{quotes.length} quotation{quotes.length > 1 ? "s" : ""}</span>
+        <div className="flex items-center gap-2">
+          <span className="text-[12px] text-ink-3">{quotes.length} quotation{quotes.length > 1 ? "s" : ""}</span>
+          <AddButton on="quotations" prefill={{ title, scopeItemIds: quotes[0]?.scopeItemIds ?? [] }} label="Add a quote here" />
+        </div>
       </div>
 
       {flagged.length > 0 && (
@@ -156,12 +188,17 @@ function Comparison({ title, quotes }: { title: string; quotes: Quotation[] }) {
         <div className="grid gap-3 min-w-max" style={{ gridTemplateColumns: `128px repeat(${quotes.length}, minmax(230px, 1fr))` }}>
           <div />
           {quotes.map((q) => (
-            <div key={q.id} className="card px-3.5 py-3" style={{ borderColor: q.recommended ? "var(--color-sage)" : undefined }}>
+            <div key={q.id} id={q.id} className="card px-3.5 py-3 group scroll-mt-24" style={{ borderColor: q.recommended ? "var(--color-sage)" : undefined }}>
               <div className="flex items-start justify-between gap-2">
-                <div className="text-[13.5px] font-medium leading-snug">{vendor(q.vendorId)?.name}</div>
+                <div className="text-[13.5px] font-medium leading-snug">
+                  <EntityLink on="vendors" id={q.vendorId} className="hover:text-clay">{vendor(q.vendorId)?.name ?? "Vendor"}</EntityLink>
+                </div>
                 {q.recommended && <Chip tone="sage">Recommended</Chip>}
               </div>
-              <div className="text-[11px] text-ink-3 mt-0.5">{q.title}</div>
+              <div className="text-[11px] text-ink-3 mt-0.5 flex items-start justify-between gap-2">
+                <span className="min-w-0">{q.title}</span>
+                <RowActions on="quotations" id={q.id} />
+              </div>
             </div>
           ))}
 

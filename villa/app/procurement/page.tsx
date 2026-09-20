@@ -3,6 +3,7 @@
 import React, { useMemo, useState } from "react";
 import Link from "next/link";
 import { useProject } from "@/lib/store";
+import { AddButton, EntityLink, RowActions } from "@/components/Entity";
 import { longLeadItems, forecastOf, daysBetween } from "@/lib/model/derive";
 import { inr } from "@/lib/model/costing";
 import { type ScopeItem, type ProcurementStatus } from "@/lib/model/types";
@@ -53,7 +54,8 @@ export default function ProcurementPage() {
     <div>
       <PageTitle
         title="Procurement"
-        sub="What has been selected, ordered, delivered and installed — and what is going to be late if it is not decided this week."
+        sub="What has been selected, ordered, delivered and installed — and what is going to be late if it is not decided this week. The list of what still has to be bought lives on its own, under Buy."
+        right={<><Link href="/purchases" className="btn btn-sm">Purchase list →</Link><AddButton on="items" label="Add something to buy" accent /></>}
       />
 
       <div className="card px-5 py-5 mb-6 grid grid-cols-2 sm:grid-cols-4 gap-4">
@@ -123,7 +125,9 @@ export default function ProcurementPage() {
                 const p = i.procurement!;
                 const risky = ["not-started", "idea", "options", "estimated", "discussion"].includes(i.stage);
                 return (
-                  <button key={i.id} onClick={() => setOpen(i)} className="w-full text-left px-4 py-3 flex items-center gap-3 hover:bg-paper-2/60">
+                  <div key={i.id} role="button" tabIndex={0} onClick={() => setOpen(i)}
+                    onKeyDown={(e) => { if (e.key === "Enter") setOpen(i); }}
+                    className="w-full text-left px-4 py-3 flex items-center gap-3 hover:bg-paper-2/60 cursor-pointer">
                     <div className="text-center shrink-0 w-12">
                       <div className="tnum text-[17px]" style={{ fontFamily: "var(--font-display)", color: risky ? "#8d3a2c" : "#514941" }}>
                         {p.leadTimeWeeks}
@@ -132,11 +136,13 @@ export default function ProcurementPage() {
                     </div>
                     <div className="min-w-0 flex-1">
                       <div className="text-[13.5px]">{p.product ?? i.title}</div>
-                      <div className="text-[11.5px] text-ink-3">{spaceName(i.spaceId)} · {PROC_LABEL[p.status]}</div>
+                      <div className="text-[11.5px] text-ink-3">
+                        <EntityLink on="spaces" id={i.spaceId} label={spaceName(i.spaceId)} /> · {PROC_LABEL[p.status]}
+                      </div>
                     </div>
                     {risky && <Chip tone="rust">Undecided</Chip>}
                     <span className="tnum text-[12.5px] shrink-0">{inr(forecastOf(i), { compact: true })}</span>
-                  </button>
+                  </div>
                 );
               })}
             </div>
@@ -150,11 +156,13 @@ export default function ProcurementPage() {
               const d = p.actualDelivery ?? p.expectedDelivery!;
               const late = !p.actualDelivery && new Date(d) < new Date();
               return (
-                <button key={i.id} onClick={() => setOpen(i)} className="w-full text-left px-4 py-3 flex items-center gap-3 hover:bg-paper-2/60">
+                <div key={i.id} role="button" tabIndex={0} onClick={() => setOpen(i)}
+                  onKeyDown={(e) => { if (e.key === "Enter") setOpen(i); }}
+                  className="w-full text-left px-4 py-3 flex items-center gap-3 hover:bg-paper-2/60 cursor-pointer">
                   <div className="min-w-0 flex-1">
                     <div className="text-[13.5px]">{p.product ?? i.title}</div>
                     <div className="text-[11.5px] text-ink-3">
-                      {spaceName(i.spaceId)}
+                      <EntityLink on="spaces" id={i.spaceId} label={spaceName(i.spaceId)} />
                       {p.storageLocation && ` · to ${p.storageLocation}`}
                       {p.installationDate && ` · install ${fmtDay(p.installationDate)}`}
                     </div>
@@ -166,7 +174,7 @@ export default function ProcurementPage() {
                     <div className="text-[12.5px] tnum">{fmtDay(d)}</div>
                     <div className="text-[10.5px] text-ink-3">{relative(d)}</div>
                   </div>
-                </button>
+                </div>
               );
             }) : <div className="px-4 py-8 text-center text-[13px] text-ink-3">No deliveries scheduled.</div>}
           </div>
@@ -178,19 +186,29 @@ export default function ProcurementPage() {
               const p = i.procurement!;
               const vendor = state.vendors.find((v) => v.id === (p.vendorId ?? i.vendorId));
               return (
-                <button key={i.id} onClick={() => setOpen(i)} className="card overflow-hidden text-left hover:border-ink-4 transition-colors">
-                  <PhotoBlock tone={p.swatch ?? "#c6bbab"} ratio="16 / 10" label={p.brand} />
-                  <div className="px-3.5 py-3">
-                    <div className="text-[13px] leading-snug line-clamp-2">{p.product ?? i.title}</div>
-                    <div className="text-[11px] text-ink-3 mt-0.5 truncate">{spaceName(i.spaceId)} · {vendor?.name ?? "no vendor"}</div>
+                <div key={i.id} className="card overflow-hidden text-left hover:border-ink-4 transition-colors group">
+                  <div role="button" tabIndex={0} onClick={() => setOpen(i)}
+                    onKeyDown={(e) => { if (e.key === "Enter") setOpen(i); }} className="cursor-pointer">
+                    <PhotoBlock tone={p.swatch ?? "#c6bbab"} ratio="16 / 10" label={p.brand} />
+                    <div className="px-3.5 pt-3">
+                      <div className="text-[13px] leading-snug line-clamp-2">{p.product ?? i.title}</div>
+                    </div>
+                  </div>
+                  <div className="px-3.5 pb-3">
+                    <div className="text-[11px] text-ink-3 mt-0.5 truncate">
+                      <EntityLink on="spaces" id={i.spaceId} label={spaceName(i.spaceId)} />
+                      {" · "}
+                      {vendor ? <EntityLink on="vendors" id={vendor.id} /> : "no vendor"}
+                    </div>
                     <div className="mt-2 flex items-center justify-between gap-2">
                       <Chip tone={["verified", "installed"].includes(p.status) ? "sage" : p.status === "to-select" ? "neutral" : "ochre"}>
                         {PROC_LABEL[p.status]}
                       </Chip>
                       <span className="tnum text-[12px]">{inr(forecastOf(i), { compact: true })}</span>
+                      <RowActions on="items" id={i.id} />
                     </div>
                   </div>
-                </button>
+                </div>
               );
             })}
           </div>

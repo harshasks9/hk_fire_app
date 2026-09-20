@@ -692,12 +692,22 @@ export interface ScopeItem {
 
 export type Role = "homeowner" | "designer" | "vendor";
 
+/**
+ * Someone on the project. Designers, contractors and the family all live here;
+ * the role decides which lens the app shows them and what they may approve.
+ */
 export interface Person {
   id: string;
   name: string;
   role: Role;
   firm?: string;
+  phone?: string;
+  email?: string;
+  /** What they do, in a few words — "lighting designer", "site engineer". */
+  title?: string;
   avatarTone?: string;
+  /** Off the project but kept for history. */
+  inactive?: boolean;
 }
 
 export interface Scenario {

@@ -27,6 +27,7 @@ export function DecisionCard({
 
   const item = state.items.find((i) => i.id === decision.scopeItemId);
   const space = state.spaces.find((s) => s.id === item?.spaceId);
+  const raisedBy = state.people.find((p) => p.name === decision.history[0]?.by);
   const options = state.options.filter((o) => o.scopeItemId === decision.scopeItemId);
   const recommended = options.find((o) => o.id === decision.recommendedOptionId);
   const overdue = decision.decideBy && new Date(decision.decideBy) < new Date() && decision.status === "awaiting-owner";
@@ -118,7 +119,10 @@ export function DecisionCard({
             <div className="mb-4">
               <Eyebrow className="mb-1.5">Designer&rsquo;s recommendation</Eyebrow>
               <div className="flex items-start gap-2.5">
-                <Avatar name="Ananya Rao" tone="#4A6A5C" />
+                <Avatar
+                  name={raisedBy?.name ?? decision.history[0]?.by ?? "Designer"}
+                  tone={raisedBy?.avatarTone}
+                />
                 <p className="text-[13px] text-ink-2 leading-relaxed flex-1">{decision.designerNote}</p>
               </div>
             </div>

@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { useProject } from "@/lib/store";
 import {
@@ -14,6 +15,7 @@ import {
   PageTitle, Eyebrow, Stat, Money, BudgetBar, Chip, Tabs, Empty, StageChip, fmtDay, Assumed, Bar,
 } from "@/components/ui";
 import { ItemSheet } from "@/components/ItemSheet";
+import { AddButton, RowActions, EntityLink, EmptyWithAdd } from "@/components/Entity";
 import { ScenarioPlanner } from "@/components/ScenarioPlanner";
 import { BoqTable } from "@/components/BoqTable";
 import { catLabel } from "@/lib/model/categories";
@@ -29,16 +31,37 @@ type Tab = (typeof TABS)[number];
  * → Item without ever changing screen.
  */
 export default function CostsPage() {
+  return <React.Suspense><CostsInner /></React.Suspense>;
+}
+
+const VIEW_TAB: Record<string, Tab> = { payments: "Payments", scenarios: "Scenarios", boq: "BOQ", drilldown: "Drill-down" };
+
+function CostsInner() {
   const { state } = useProject();
-  const [tab, setTab] = useState<Tab>("Overview");
+  const params = useSearchParams();
+  const [tab, setTab] = useState<Tab>(VIEW_TAB[params.get("view") ?? ""] ?? "Overview");
   const [openItem, setOpenItem] = useState<ScopeItem | null>(null);
   const fin = projectFinance(state);
+
+  // House-wide scope has no room to open in, so it opens here instead.
+  useEffect(() => {
+    const want = params.get("item");
+    if (!want) return;
+    const it = state.items.find((i) => i.id === want);
+    if (it) { setOpenItem(it); setTab("BOQ"); }
+  }, [params, state.items]);
 
   return (
     <div>
       <PageTitle
         title="Costs"
         sub="What was budgeted, what was estimated, what is committed, and what has actually been paid — kept as four different numbers, because they are."
+        right={
+          <div className="flex items-center gap-2">
+            <AddButton on="payments" label="Schedule a payment" />
+            <AddButton on="items" label="Add scope" accent />
+          </div>
+        }
       />
 
       <Tabs tabs={TABS} active={tab} onChange={setTab} />
@@ -285,10 +308,12 @@ function Payments() {
             const v = state.vendors.find((x) => x.id === p.vendorId);
             const late = new Date(p.dueOn) < new Date();
             return (
-              <div key={p.id} className="px-4 py-3 flex items-center gap-3">
+              <div key={p.id} id={p.id} className="px-4 py-3 flex items-center gap-3 group scroll-mt-24">
                 <div className="min-w-0 flex-1">
                   <div className="text-[13.5px]">{p.label}</div>
-                  <div className="text-[11.5px] text-ink-3">{v?.name} · {p.kind}</div>
+                  <div className="text-[11.5px] text-ink-3">
+                    {v ? <EntityLink on="vendors" id={v.id} /> : "No vendor"} · {p.kind}
+                  </div>
                 </div>
                 <div className="text-right shrink-0">
                   <div className="tnum text-[13.5px]">{inr(p.amount)}</div>
@@ -297,9 +322,14 @@ function Payments() {
                 <button className="btn btn-sm shrink-0" onClick={() => dispatch({ type: "payment/paid", id: p.id, on: new Date().toISOString() })}>
                   Mark paid
                 </button>
+                <RowActions on="payments" id={p.id} />
               </div>
             );
-          }) : <div className="px-4 py-6 text-[13px] text-ink-3">Nothing outstanding.</div>}
+          }) : (
+            <div className="px-4 py-6 text-center text-[13px] text-ink-3">
+              Nothing outstanding. <span className="inline-block ml-2 align-middle"><AddButton on="payments" label="Schedule a payment" /></span>
+            </div>
+          )}
         </div>
       </div>
 

@@ -1,520 +1,59 @@
 "use client";
 
 import React, { createContext, useContext, useEffect, useMemo, useReducer, useState } from "react";
-import type {
-  ProjectState, ScopeItem, Stage, Idea, DesignOption, Comment, Decision, Task,
-  Snag, Note, Space, Role, CostBuildUp, CostLadder, Payment, SiteUpdate,
-  Vendor, Quotation, Doc, Scenario, Person, ProjectMeta, CategoryDef,
-} from "./model/types";
+import type { ProjectState, Role } from "./model/types";
 import { BUILTIN_CATEGORIES } from "./model/categories";
-import { buildProject } from "./seed";
+import { reducer, type Action } from "./reducer";
+import { newJournal, append, describe, stateAt, EPOCH_ACTIONS, UNJOURNALED, type Journal, type Revision } from "./journal";
+import { buildProject, buildTwin } from "./seed";
+
+export * from "./reducer";
 
 const STORAGE_KEY = "villa-fitout:v1";
-
-/* ------------------------------------------------------------------ actions */
-
-/**
- * Every collection that supports uniform create / update / delete.
- *
- * Typing them as a map means one set of three actions covers the whole project
- * — no entity can quietly end up read-only because someone forgot to write its
- * reducer case, which is exactly how vendors, quotations and documents became
- * uneditable the first time round.
- */
-export interface Collections {
-  categories: CategoryDef;
-  spaces: Space;
-  items: ScopeItem;
-  ideas: Idea;
-  options: DesignOption;
-  decisions: Decision;
-  comments: Comment;
-  vendors: Vendor;
-  quotations: Quotation;
-  tasks: Task;
-  snags: Snag;
-  notes: Note;
-  payments: Payment;
-  docs: Doc;
-  siteUpdates: SiteUpdate;
-  scenarios: Scenario;
-  people: Person;
-}
-export type CollectionKey = keyof Collections;
-
-export const COLLECTION_KEYS = [
-  "categories", "spaces", "items", "ideas", "options", "decisions", "comments", "vendors",
-  "quotations", "tasks", "snags", "notes", "payments", "docs", "siteUpdates",
-  "scenarios", "people",
-] as const;
-
-type CreateAction = { [K in CollectionKey]: { type: "create"; on: K; row: Collections[K] } }[CollectionKey];
-type UpdateAction = { [K in CollectionKey]: { type: "update"; on: K; id: string; patch: Partial<Collections[K]> } }[CollectionKey];
-
-export type Action =
-  | { type: "reset" }
-  | { type: "hydrate"; state: ProjectState }
-  | { type: "meta/patch"; patch: Partial<ProjectMeta> }
-  /* data lifecycle */
-  | { type: "data/clear"; keep: KeepOptions }
-  | { type: "data/import"; state: ProjectState }
-  /* uniform CRUD over any collection */
-  | CreateAction
-  | UpdateAction
-  | { type: "remove"; on: CollectionKey; id: string }
-  | { type: "removeMany"; on: CollectionKey; ids: string[] }
-  /* space-specific */
-  | { type: "space/delete"; id: string; withItems: boolean }
-  | { type: "space/merge"; fromId: string; intoId: string }
-  /* scope-item workflow — these carry business rules, not just field writes */
-  | { type: "item/stage"; id: string; stage: Stage; naReason?: string }
-  | { type: "item/patch"; id: string; patch: Partial<ScopeItem> }
-  | { type: "item/cost"; id: string; cost: Partial<CostBuildUp> }
-  | { type: "item/ladder"; id: string; ladder: Partial<CostLadder> }
-  | { type: "item/add"; item: ScopeItem }
-  | { type: "item/duplicate"; id: string; newId: string }
-  | { type: "item/bulkStage"; ids: string[]; stage: Stage }
-  | { type: "item/move"; ids: string[]; spaceId?: string }
-  /* the design conversation */
-  | { type: "idea/add"; idea: Idea }
-  | { type: "idea/shortlist"; id: string }
-  | { type: "option/add"; option: DesignOption }
-  | { type: "comment/add"; comment: Comment }
-  | { type: "comment/react"; id: string; emoji: string; by: string }
-  | { type: "decision/add"; decision: Decision }
-  | { type: "decision/act"; id: string; action: "approved" | "rejected" | "changes-requested" | "held"; by: string; note?: string; optionId?: string }
-  /* execution */
-  | { type: "task/add"; task: Task }
-  | { type: "task/patch"; id: string; patch: Partial<Task> }
-  | { type: "snag/add"; snag: Snag }
-  | { type: "snag/patch"; id: string; patch: Partial<Snag> }
-  | { type: "note/add"; note: Note }
-  | { type: "payment/paid"; id: string; on: string }
-  | { type: "site/add"; update: SiteUpdate }
-  | { type: "space/add"; space: Space }
-  | { type: "space/patch"; id: string; patch: Partial<Space> }
-  | { type: "scenario/set"; id: string };
-
-/** What survives a wipe. Everything not listed here is emptied. */
-export interface KeepOptions {
-  /** The taxonomy and rate card — almost always worth keeping. */
-  categories?: boolean;
-  /** Names and roles. */
-  people?: boolean;
-  /** The vendor directory, which outlives any one project. */
-  vendors?: boolean;
-  /** Project name, address, budget, dates. */
-  settings?: boolean;
-  /** The three costing scenarios. */
-  scenarios?: boolean;
-}
-
-const BLANK_META: ProjectMeta = {
-  name: "New project",
-  address: "",
-  plotWidthFt: 0,
-  plotDepthFt: 0,
-  startDate: new Date().toISOString(),
-  targetHandover: new Date(Date.now() + 365 * 86400000).toISOString(),
-  originalBudget: 0,
-  contingencyPct: 7.5,
-  currency: "INR",
-  lastOwnerVisit: new Date().toISOString(),
-};
-
-/**
- * An empty project you can actually start from.
- *
- * Wiping the content should not wipe the scaffolding: without a category list
- * you cannot create a single scope item, so the taxonomy and rate card are kept
- * by default. Everything else is a choice.
- */
-export function emptyProject(current: ProjectState, keep: KeepOptions): ProjectState {
-  return {
-    meta: keep.settings ? current.meta : { ...BLANK_META, currency: current.meta.currency },
-    categories: keep.categories ? current.categories : BUILTIN_CATEGORIES.map((c) => ({ ...c })),
-    people: keep.people ? current.people : [],
-    vendors: keep.vendors ? current.vendors : [],
-    scenarios: keep.scenarios ? current.scenarios : [],
-    activeScenarioId: keep.scenarios ? current.activeScenarioId : undefined,
-    spaces: [], items: [], ideas: [], options: [], decisions: [], comments: [],
-    quotations: [], tasks: [], snags: [], notes: [], payments: [], docs: [], siteUpdates: [],
-  };
-}
-
-/** Rows in every collection carry a string `id`. */
-const rowsOf = (s: ProjectState, on: CollectionKey): { id: string }[] =>
-  s[on] as unknown as { id: string }[];
-
-const setRows = (s: ProjectState, on: CollectionKey, rows: unknown[]): ProjectState =>
-  ({ ...s, [on]: rows }) as ProjectState;
-
-/**
- * Deleting a row must not leave dangling references behind it.
- * Each collection declares what else has to be cleaned up.
- */
-/** Cascade the consequences of a deletion, then remove the row itself. */
-function removeRow(s: ProjectState, on: CollectionKey, id: string): ProjectState {
-  const cascaded = cascadeDelete(s, on, id);
-  return setRows(cascaded, on, rowsOf(cascaded, on).filter((r) => r.id !== id));
-}
-
-function cascadeDelete(s: ProjectState, on: CollectionKey, id: string): ProjectState {
-  switch (on) {
-    case "items": {
-      // Children are removed through their own cascades, not filtered out from
-      // under them — otherwise a note still points at a decision that is gone.
-      let next = s;
-      for (const x of s.ideas.filter((x) => x.scopeItemId === id)) next = removeRow(next, "ideas", x.id);
-      for (const x of s.options.filter((x) => x.scopeItemId === id)) next = removeRow(next, "options", x.id);
-      for (const x of s.decisions.filter((x) => x.scopeItemId === id)) next = removeRow(next, "decisions", x.id);
-      for (const x of s.comments.filter((c) => c.targetType === "item" && c.targetId === id)) {
-        next = removeRow(next, "comments", x.id);
-      }
-      s = next;
-      return {
-        ...s,
-        tasks: s.tasks.map((t) => (t.scopeItemId === id ? { ...t, scopeItemId: undefined } : t)),
-        snags: s.snags.map((x) => (x.scopeItemId === id ? { ...x, scopeItemId: undefined } : x)),
-        notes: s.notes.map((n) => ({ ...n, scopeItemIds: n.scopeItemIds.filter((x) => x !== id) })),
-        docs: s.docs.map((d) => ({ ...d, scopeItemIds: d.scopeItemIds.filter((x) => x !== id) })),
-        payments: s.payments.map((p) => ({ ...p, scopeItemIds: p.scopeItemIds.filter((x) => x !== id) })),
-        quotations: s.quotations
-          .map((q) => ({ ...q, scopeItemIds: q.scopeItemIds.filter((x) => x !== id), lines: q.lines.filter((l) => l.scopeItemId !== id) }))
-          .filter((q) => q.scopeItemIds.length > 0),
-      };
-    }
-    case "ideas":
-      return { ...s, comments: s.comments.filter((c) => !(c.targetType === "idea" && c.targetId === id)) };
-    case "options": {
-      const next = { ...s, comments: s.comments.filter((c) => !(c.targetType === "option" && c.targetId === id)) };
-      return {
-        ...next,
-        decisions: next.decisions.map((d) => ({
-          ...d,
-          recommendedOptionId: d.recommendedOptionId === id ? undefined : d.recommendedOptionId,
-          alternativeOptionIds: d.alternativeOptionIds.filter((x) => x !== id),
-        })),
-        items: next.items.map((i) => (i.chosenOptionId === id ? { ...i, chosenOptionId: undefined } : i)),
-      };
-    }
-    case "decisions":
-      return {
-        ...s,
-        comments: s.comments.filter((c) => !(c.targetType === "decision" && c.targetId === id)),
-        notes: s.notes.map((n) => ({ ...n, decisionIds: n.decisionIds.filter((x) => x !== id) })),
-      };
-    case "vendors":
-      return {
-        ...s,
-        items: s.items.map((i) => (i.vendorId === id ? { ...i, vendorId: undefined } : i)),
-        tasks: s.tasks.map((t) => (t.vendorId === id ? { ...t, vendorId: undefined } : t)),
-        snags: s.snags.map((x) => (x.vendorId === id ? { ...x, vendorId: undefined } : x)),
-        docs: s.docs.map((d) => (d.vendorId === id ? { ...d, vendorId: undefined } : d)),
-        notes: s.notes.map((n) => ({ ...n, vendorIds: n.vendorIds.filter((x) => x !== id) })),
-        quotations: s.quotations.filter((q) => q.vendorId !== id),
-        payments: s.payments.filter((p) => p.vendorId !== id),
-        comments: s.comments.filter(
-          (c) => !(c.targetType === "quote" && s.quotations.some((q) => q.vendorId === id && q.id === c.targetId)),
-        ),
-      };
-    case "quotations":
-      return { ...s, comments: s.comments.filter((c) => !(c.targetType === "quote" && c.targetId === id)) };
-    case "tasks":
-      return {
-        ...s,
-        tasks: s.tasks.map((t) => ({ ...t, dependsOn: t.dependsOn.filter((x) => x !== id) })),
-        notes: s.notes.map((n) => ({ ...n, taskIds: n.taskIds.filter((x) => x !== id) })),
-      };
-    case "snags":
-    case "notes":
-      return { ...s, comments: s.comments.filter((c) => !((c.targetType === "snag" || c.targetType === "note") && c.targetId === id)) };
-    case "comments":
-      // A deleted parent takes its replies with it.
-      return { ...s, comments: s.comments.filter((c) => c.parentId !== id) };
-    case "categories": {
-      // Items keep working: they fall back to the first surviving category
-      // rather than pointing at a trade that no longer exists.
-      const fallback = s.categories.find((c) => c.id !== id && !c.archived)?.id;
-      return {
-        ...s,
-        items: s.items.map((i) => (i.category === id ? { ...i, category: fallback ?? i.category } : i)),
-        snags: s.snags.map((x) => (x.category === id ? { ...x, category: fallback ?? x.category } : x)),
-        vendors: s.vendors.map((v) => ({ ...v, trade: v.trade.filter((t) => t !== id) })),
-      };
-    }
-    case "scenarios":
-      return { ...s, activeScenarioId: s.activeScenarioId === id ? undefined : s.activeScenarioId };
-    default:
-      return s;
-  }
-}
-
-const mapItem = (s: ProjectState, id: string, fn: (i: ScopeItem) => ScopeItem): ProjectState => ({
-  ...s,
-  items: s.items.map((i) => (i.id === id ? fn(i) : i)),
-});
-
-/**
- * The workflow lives here.
- *
- * Approving a decision does not just stamp the decision — it moves the scope
- * item it belongs to onto the next stage and records the chosen option against
- * it. That is the mechanism by which one object travels the whole pipeline
- * instead of being re-created in a BOQ module.
- */
-export function reducer(s: ProjectState, a: Action): ProjectState {
-  switch (a.type) {
-    case "reset":
-      return buildProject();
-
-    case "hydrate":
-      return a.state;
-
-    case "meta/patch":
-      return { ...s, meta: { ...s.meta, ...a.patch } };
-
-    case "data/clear":
-      return emptyProject(s, a.keep);
-
-    case "data/import":
-      return a.state;
-
-    /* ------------------------------------------------- uniform CRUD */
-    case "create":
-      return setRows(s, a.on, [...rowsOf(s, a.on), a.row as { id: string }]);
-
-    case "update":
-      return setRows(
-        s, a.on,
-        rowsOf(s, a.on).map((r) => (r.id === a.id ? { ...r, ...(a.patch as object) } : r)),
-      );
-
-    case "remove":
-      return removeRow(s, a.on, a.id);
-
-    case "removeMany": {
-      let next = s;
-      for (const id of a.ids) next = removeRow(next, a.on, id);
-      return next;
-    }
-
-    /* --------------------------------------------------------- spaces */
-    case "space/delete": {
-      const doomed = s.items.filter((i) => i.spaceId === a.id).map((i) => i.id);
-      let next = s;
-      if (a.withItems) {
-        for (const id of doomed) next = removeRow(next, "items", id);
-      } else {
-        // Keep the scope but let it fall back to house-wide rather than vanish.
-        next = { ...next, items: next.items.map((i) => (i.spaceId === a.id ? { ...i, spaceId: undefined } : i)) };
-      }
-      return {
-        ...next,
-        spaces: next.spaces.filter((x) => x.id !== a.id).map((x) => (x.parentId === a.id ? { ...x, parentId: undefined } : x)),
-        tasks: next.tasks.map((t) => (t.spaceId === a.id ? { ...t, spaceId: undefined } : t)),
-        snags: next.snags.filter((x) => x.spaceId !== a.id),
-        siteUpdates: next.siteUpdates.filter((u) => u.spaceId !== a.id),
-        notes: next.notes.map((n) => ({ ...n, spaceIds: n.spaceIds.filter((x) => x !== a.id) })),
-        docs: next.docs.map((d) => ({ ...d, spaceIds: d.spaceIds.filter((x) => x !== a.id) })),
-      };
-    }
-
-    /** Combine two spaces: everything belonging to `from` moves to `into`. */
-    case "space/merge": {
-      if (a.fromId === a.intoId) return s;
-      const re = (id?: string) => (id === a.fromId ? a.intoId : id);
-      const reList = (ids: string[]) => Array.from(new Set(ids.map((x) => (x === a.fromId ? a.intoId : x))));
-      return {
-        ...s,
-        spaces: s.spaces.filter((x) => x.id !== a.fromId).map((x) => ({ ...x, parentId: re(x.parentId) })),
-        items: s.items.map((i) => ({ ...i, spaceId: re(i.spaceId) })),
-        tasks: s.tasks.map((t) => ({ ...t, spaceId: re(t.spaceId) })),
-        snags: s.snags.map((x) => ({ ...x, spaceId: re(x.spaceId)! })),
-        siteUpdates: s.siteUpdates.map((u) => ({ ...u, spaceId: re(u.spaceId)! })),
-        notes: s.notes.map((n) => ({ ...n, spaceIds: reList(n.spaceIds) })),
-        docs: s.docs.map((d) => ({ ...d, spaceIds: reList(d.spaceIds) })),
-      };
-    }
-
-    case "item/duplicate": {
-      const src = s.items.find((i) => i.id === a.id);
-      if (!src) return s;
-      const copy: ScopeItem = {
-        ...src,
-        id: a.newId,
-        title: `${src.title} (copy)`,
-        seeded: false,
-        procurement: src.procurement ? { ...src.procurement, scopeItemId: a.newId } : undefined,
-      };
-      const at = s.items.findIndex((i) => i.id === a.id);
-      return { ...s, items: [...s.items.slice(0, at + 1), copy, ...s.items.slice(at + 1)] };
-    }
-
-    case "item/bulkStage": {
-      const ids = new Set(a.ids);
-      return {
-        ...s,
-        items: s.items.map((i) => (ids.has(i.id) ? { ...i, stage: a.stage } : i)),
-      };
-    }
-
-    case "item/move": {
-      const ids = new Set(a.ids);
-      return { ...s, items: s.items.map((i) => (ids.has(i.id) ? { ...i, spaceId: a.spaceId } : i)) };
-    }
-
-    case "item/stage":
-      return mapItem(s, a.id, (i) => ({
-        ...i,
-        stage: a.stage,
-        naReason: a.stage === "not-applicable" ? a.naReason ?? i.naReason ?? "Marked not applicable." : undefined,
-      }));
-
-    case "item/patch":
-      return mapItem(s, a.id, (i) => ({ ...i, ...a.patch }));
-
-    case "item/cost":
-      return mapItem(s, a.id, (i) => ({ ...i, cost: { ...i.cost, ...a.cost } }));
-
-    case "item/ladder":
-      return mapItem(s, a.id, (i) => ({ ...i, ladder: { ...i.ladder, ...a.ladder } }));
-
-    case "item/add":
-      return { ...s, items: [...s.items, a.item] };
-
-    case "idea/add": {
-      const next = { ...s, ideas: [a.idea, ...s.ideas] };
-      // An idea against untouched scope moves it to "Idea" — the first step of the flow.
-      return mapItem(next, a.idea.scopeItemId, (i) =>
-        i.stage === "not-started" ? { ...i, stage: "idea" } : i,
-      );
-    }
-
-    case "idea/shortlist":
-      return { ...s, ideas: s.ideas.map((i) => (i.id === a.id ? { ...i, shortlisted: !i.shortlisted } : i)) };
-
-    case "option/add": {
-      const next = { ...s, options: [...s.options, a.option] };
-      return mapItem(next, a.option.scopeItemId, (i) =>
-        ["not-started", "idea"].includes(i.stage) ? { ...i, stage: "options" } : i,
-      );
-    }
-
-    case "comment/add": {
-      const next = { ...s, comments: [...s.comments, a.comment] };
-      if (a.comment.targetType === "option" || a.comment.targetType === "idea") {
-        const target =
-          a.comment.targetType === "option"
-            ? s.options.find((o) => o.id === a.comment.targetId)?.scopeItemId
-            : s.ideas.find((i) => i.id === a.comment.targetId)?.scopeItemId;
-        if (target) {
-          return mapItem(next, target, (i) =>
-            ["options", "estimated"].includes(i.stage) ? { ...i, stage: "discussion" } : i,
-          );
-        }
-      }
-      return next;
-    }
-
-    case "comment/react":
-      return {
-        ...s,
-        comments: s.comments.map((c) => {
-          if (c.id !== a.id) return c;
-          const r = { ...(c.reactions ?? {}) };
-          const who = r[a.emoji] ?? [];
-          r[a.emoji] = who.includes(a.by) ? who.filter((x) => x !== a.by) : [...who, a.by];
-          if (!r[a.emoji].length) delete r[a.emoji];
-          return { ...c, reactions: r };
-        }),
-      };
-
-    case "decision/add": {
-      const next = { ...s, decisions: [...s.decisions, a.decision] };
-      return mapItem(next, a.decision.scopeItemId, (i) => ({ ...i, stage: "discussion" }));
-    }
-
-    case "decision/act": {
-      const d = s.decisions.find((x) => x.id === a.id);
-      if (!d) return s;
-      const statusMap = {
-        approved: "approved", rejected: "rejected",
-        "changes-requested": "changes-requested", held: "on-hold",
-      } as const;
-      const next: ProjectState = {
-        ...s,
-        decisions: s.decisions.map((x) =>
-          x.id !== a.id
-            ? x
-            : {
-                ...x,
-                status: statusMap[a.action],
-                history: [
-                  ...x.history,
-                  { at: new Date().toISOString(), by: a.by, action: a.action, note: a.note, optionId: a.optionId },
-                ],
-              },
-        ),
-      };
-      if (a.action !== "approved") return next;
-      // Approval is the moment the item becomes real: it enters the BOQ carrying
-      // the chosen option's price as its approved cost.
-      const optionId = a.optionId ?? d.recommendedOptionId;
-      const option = s.options.find((o) => o.id === optionId);
-      return mapItem(next, d.scopeItemId, (i) => ({
-        ...i,
-        stage: "approved",
-        chosenOptionId: optionId,
-        spec: option ? `${option.headline} — ${option.description}` : i.spec,
-        ladder: { ...i.ladder, approved: option?.estimate ?? i.ladder.approved ?? i.ladder.designerEstimate },
-      }));
-    }
-
-    case "task/add":
-      return { ...s, tasks: [...s.tasks, a.task] };
-
-    case "task/patch":
-      return { ...s, tasks: s.tasks.map((t) => (t.id === a.id ? { ...t, ...a.patch } : t)) };
-
-    case "snag/add":
-      return { ...s, snags: [a.snag, ...s.snags] };
-
-    case "snag/patch":
-      return { ...s, snags: s.snags.map((x) => (x.id === a.id ? { ...x, ...a.patch } : x)) };
-
-    case "note/add":
-      return { ...s, notes: [a.note, ...s.notes] };
-
-    case "payment/paid":
-      return { ...s, payments: s.payments.map((p) => (p.id === a.id ? { ...p, paidOn: a.on } : p)) };
-
-    case "site/add":
-      return { ...s, siteUpdates: [a.update, ...s.siteUpdates] };
-
-    case "space/add":
-      return { ...s, spaces: [...s.spaces, a.space] };
-
-    case "space/patch":
-      return { ...s, spaces: s.spaces.map((x) => (x.id === a.id ? { ...x, ...a.patch } : x)) };
-
-    case "scenario/set":
-      return { ...s, activeScenarioId: a.id };
-
-    default:
-      return s;
-  }
-}
 
 /* ------------------------------------------------------------------ context */
 
 interface Ctx {
   state: ProjectState;
   dispatch: React.Dispatch<Action>;
+  /** The lens the app is showing — follows the current person's role. */
   role: Role;
   setRole: (r: Role) => void;
+  /** Display name of whoever is using the app right now. */
   me: string;
+  /** The person record behind `me`, if one has been chosen. */
+  meId?: string;
+  setMe: (personId?: string) => void;
   hydrated: boolean;
+  /** Every change to the plan since the journal began. */
+  journal: Journal;
+  /** Roll the project back to how it stood after revision `v`. Recorded as a revision itself. */
+  restoreTo: (v: number) => Promise<void>;
+  /** Where the data actually lives right now. */
+  storage: StorageStatus;
+  /** Offer the shared password to a locked server. */
+  unlock: (password: string) => Promise<boolean>;
+}
+
+export interface StorageStatus {
+  mode: "browser" | "server" | "unknown";
+  /** Server version, when synced. */
+  version?: number;
+  lastSyncAt?: string;
+  error?: string;
+  /** Changes made here that the server has not yet accepted. */
+  pending?: number;
+  /** The server wants the shared password before it will talk. */
+  locked?: boolean;
+}
+
+/** One change waiting to go to the server. */
+interface Outbound {
+  action: Action;
+  by: string;
+  byId?: string;
+  summary: string;
+  touches: Revision["touches"];
 }
 
 const ProjectCtx = createContext<Ctx | null>(null);
@@ -541,38 +80,252 @@ function load(): ProjectState | null {
   }
 }
 
+const JOURNAL_KEY = STORAGE_KEY + ":journal";
+
+function loadJournal(): Journal | null {
+  if (typeof window === "undefined") return null;
+  try {
+    const raw = window.localStorage.getItem(JOURNAL_KEY);
+    if (!raw) return null;
+    const j = JSON.parse(raw) as Journal;
+    if (!j?.base || !Array.isArray(j.revisions)) return null;
+    return j;
+  } catch {
+    return null;
+  }
+}
+
 export function ProjectProvider({ children }: { children: React.ReactNode }) {
-  // Always render the seeded project first so server and client agree, then
-  // swap in saved work after mount. Avoids a hydration mismatch.
-  const [state, dispatch] = useReducer(reducer, undefined, buildProject);
+  // Always render the empty twin first so server and client agree, then swap
+  // in saved work after mount. Avoids a hydration mismatch.
+  const [state, rawDispatch] = useReducer(reducer, undefined, buildTwin);
+  const [journal, setJournal] = useState<Journal>(() => newJournal(buildTwin()));
   const [hydrated, setHydrated] = useState(false);
   const [role, setRoleState] = useState<Role>("homeowner");
+  const [meId, setMeIdState] = useState<string | undefined>(undefined);
+  const [storage, setStorage] = useState<StorageStatus>({ mode: "unknown" });
+
+  // The reducer is only ever reached through here, so nothing changes the plan
+  // without a line in the journal saying who did it and what it was.
+  const stateRef = React.useRef(state);
+  stateRef.current = state;
+  const meRef = React.useRef({ me: "", meId: undefined as string | undefined });
+  // A one-shot caption for the next epoch action, so a restore says which version it went back to.
+  const labelRef = React.useRef<string | null>(null);
+
+  // ---- server sync -------------------------------------------------------
+  // Changes apply locally first and go to the server in order. The server
+  // accepts an action only against the version it was made on; if someone
+  // else got there first we take their state, replay what is still pending
+  // here on top of it, and carry on. Nothing is lost on either side.
+  const sync = React.useRef({
+    mode: "unknown" as StorageStatus["mode"],
+    version: 0,
+    queue: [] as Outbound[],
+    draining: false,
+    locked: false,
+    backoff: 0,
+  });
+
+  const setSyncStatus = React.useCallback((patch: Partial<StorageStatus>) => {
+    setStorage((st) => ({ ...st, mode: sync.current.mode, version: sync.current.version, pending: sync.current.queue.length, ...patch }));
+  }, []);
+
+  const adopt = React.useCallback((serverState: ProjectState, version: number) => {
+    sync.current.version = version;
+    rawDispatch({ type: "hydrate", state: serverState });
+    setJournal(newJournal(serverState));
+    // Replay what is still waiting here on top of what the server has.
+    for (const o of sync.current.queue) rawDispatch(o.action);
+    setSyncStatus({ lastSyncAt: new Date().toISOString(), error: undefined });
+  }, [setSyncStatus]);
+
+  const drain = React.useCallback(async () => {
+    const c = sync.current;
+    if (c.draining || c.mode !== "server" || c.locked) return;
+    c.draining = true;
+    try {
+      while (c.queue.length) {
+        const o = c.queue[0];
+        const body: Record<string, unknown> = { base: c.version, ...o };
+        let res: Response;
+        try {
+          res = await fetch("/api/project/actions", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(body) });
+        } catch {
+          // Offline. Keep the change and try again shortly.
+          c.backoff = Math.min((c.backoff || 4000) * 2, 60000);
+          setSyncStatus({ error: "offline" });
+          setTimeout(() => { c.draining = false; void drain(); }, c.backoff);
+          return;
+        }
+        if (res.status === 401) { c.locked = true; setSyncStatus({ locked: true }); return; }
+        if (res.status === 409) {
+          const { head } = (await res.json()) as { head: { version: number; state: ProjectState } };
+          adopt(head.state, head.version);
+          continue; // same action, now against the new version
+        }
+        if (!res.ok) {
+          c.backoff = Math.min((c.backoff || 4000) * 2, 60000);
+          setSyncStatus({ error: `server ${res.status}` });
+          setTimeout(() => { c.draining = false; void drain(); }, c.backoff);
+          return;
+        }
+        const { version } = (await res.json()) as { version: number };
+        c.version = version;
+        c.backoff = 0;
+        c.queue.shift();
+        setSyncStatus({ lastSyncAt: new Date().toISOString(), error: undefined });
+      }
+    } finally {
+      c.draining = false;
+    }
+  }, [adopt, setSyncStatus]);
+
+  const enqueue = React.useCallback((o: Outbound) => {
+    if (sync.current.mode !== "server") return;
+    sync.current.queue.push(o);
+    setSyncStatus({});
+    void drain();
+  }, [drain, setSyncStatus]);
+
+  const dispatch = React.useCallback((a: Action) => {
+    if (UNJOURNALED.has(a.type)) { rawDispatch(a); return; }
+    if (EPOCH_ACTIONS.has(a.type)) {
+      // A wipe, reset or import is a new beginning, not a change to record.
+      const next = reducer(stateRef.current, a);
+      setJournal(newJournal(next));
+      rawDispatch(a);
+      const label = labelRef.current ?? (a.type === "reset" ? (a.to === "sample" ? "Loaded the sample villa" : "Reset to the empty twin")
+        : a.type === "data/clear" ? "Emptied the project" : "Imported a project file");
+      labelRef.current = null;
+      enqueue({ action: a, by: meRef.current.me, byId: meRef.current.meId, summary: label, touches: {} });
+      return;
+    }
+    const before = stateRef.current;
+    const { summary, touches } = describe(before, a);
+    const rev = { at: new Date().toISOString(), by: meRef.current.me, byId: meRef.current.meId, action: a, summary, touches };
+    setJournal((j) => append(j, rev));
+    rawDispatch(a);
+    enqueue({ action: a, by: rev.by, byId: rev.byId, summary, touches });
+  }, [enqueue]);
+
+  // Ask the server what it has. Called on mount, on focus, and every so often.
+  const pull = React.useCallback(async (first = false) => {
+    const c = sync.current;
+    if (c.locked && !first) return;
+    let res: Response;
+    try {
+      res = await fetch(`/api/project${c.mode === "server" ? `?v=${c.version}` : ""}`, { cache: "no-store" });
+    } catch {
+      if (first) { c.mode = "browser"; setSyncStatus({ error: "offline" }); }
+      return;
+    }
+    const data = (await res.json()) as {
+      mode: "browser" | "server"; locked?: boolean; unchanged?: boolean; version?: number;
+      project?: { version: number; state: ProjectState } | null;
+    };
+    if (data.mode === "browser") { c.mode = "browser"; setSyncStatus({}); return; }
+    c.mode = "server";
+    if (data.locked && !data.project) { c.locked = true; setSyncStatus({ locked: true }); return; }
+    c.locked = false;
+    if (data.unchanged) { setSyncStatus({ lastSyncAt: new Date().toISOString(), locked: false }); return; }
+    if (data.project === null) {
+      // First arrival: what this browser has becomes the project.
+      const r = await fetch("/api/project", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ state: stateRef.current }) });
+      if (r.ok) {
+        const { project } = (await r.json()) as { project: { version: number; state: ProjectState } };
+        adopt(project.state, project.version);
+      }
+      return;
+    }
+    if (data.project) {
+      if (c.queue.length && !first) return; // ours will 409 and reconcile if needed
+      adopt(data.project.state, data.project.version);
+      void drain();
+    }
+  }, [adopt, drain, setSyncStatus]);
 
   useEffect(() => {
     const saved = load();
-    if (saved) dispatch({ type: "hydrate", state: saved });
+    if (saved) rawDispatch({ type: "hydrate", state: saved });
+    const j = loadJournal();
+    setJournal(j ?? newJournal(saved ?? stateRef.current));
     setHydrated(true);
     const r = window.localStorage.getItem(STORAGE_KEY + ":role") as Role | null;
     if (r) setRoleState(r);
+    const m = window.localStorage.getItem(STORAGE_KEY + ":me");
+    if (m) setMeIdState(m);
+    void pull(true);
+    const onFocus = () => { if (document.visibilityState === "visible") void pull(); };
+    document.addEventListener("visibilitychange", onFocus);
+    window.addEventListener("focus", onFocus);
+    const t = setInterval(() => void pull(), 45000);
+    return () => { document.removeEventListener("visibilitychange", onFocus); window.removeEventListener("focus", onFocus); clearInterval(t); };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
     if (!hydrated) return;
     try {
       window.localStorage.setItem(STORAGE_KEY, JSON.stringify({ v: 1, state }));
+      window.localStorage.setItem(JOURNAL_KEY, JSON.stringify(journal));
     } catch {
       /* quota or private mode — the app still works, it just will not remember. */
     }
-  }, [state, hydrated]);
+  }, [state, journal, hydrated]);
+
+  const restoreTo = React.useCallback(async (v: number) => {
+    // Restoring is itself a change: it lands as a new revision on top, so the
+    // history stays linear and nothing that happened is ever erased.
+    if (sync.current.mode === "server") {
+      const r = await fetch(`/api/project/state?v=${v}`, { cache: "no-store" });
+      if (!r.ok) { setSyncStatus({ error: "restore failed" }); return; }
+      const { state: target } = (await r.json()) as { state: ProjectState };
+      labelRef.current = `Restored the project to how it stood at v${v}`;
+      dispatch({ type: "data/import", state: target });
+      return;
+    }
+    labelRef.current = `Restored the project to how it stood at v${v}`;
+    dispatch({ type: "data/import", state: stateAt(journal, v) });
+  }, [journal, dispatch, setSyncStatus]);
+
+  const unlock = React.useCallback(async (password: string) => {
+    const r = await fetch("/api/auth", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ password }) });
+    if (!r.ok) return false;
+    sync.current.locked = false;
+    setSyncStatus({ locked: false });
+    await pull(true);
+    void drain();
+    return true;
+  }, [pull, drain, setSyncStatus]);
 
   const setRole = (r: Role) => {
     setRoleState(r);
     try { window.localStorage.setItem(STORAGE_KEY + ":role", r); } catch { /* ignore */ }
   };
 
-  const me = role === "homeowner" ? "Harsha" : role === "designer" ? "Ananya Rao" : "Vendor";
+  const setMe = (id?: string) => {
+    setMeIdState(id);
+    try {
+      if (id) window.localStorage.setItem(STORAGE_KEY + ":me", id);
+      else window.localStorage.removeItem(STORAGE_KEY + ":me");
+    } catch { /* ignore */ }
+    // Choosing a person also chooses the lens: a contractor sees the contractor view.
+    const p = state.people.find((x) => x.id === id);
+    if (p) setRole(p.role);
+  };
 
-  const value = useMemo(() => ({ state, dispatch, role, setRole, me, hydrated }), [state, role, hydrated, me]);
+  // Whoever is signed in, by name; otherwise the role, so an unattributed
+  // change still says something truthful rather than a fabricated person.
+  const person = state.people.find((p) => p.id === meId);
+  const me = person?.name ?? (role === "homeowner" ? "Homeowner" : role === "designer" ? "Designer" : "Contractor");
+  meRef.current = { me, meId };
+
+  const value = useMemo(
+    () => ({ state, dispatch, role, setRole, me, meId, setMe, hydrated, journal, restoreTo, storage, unlock }),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [state, role, hydrated, me, meId, journal, restoreTo, storage, unlock],
+  );
   return <ProjectCtx.Provider value={value}>{children}</ProjectCtx.Provider>;
 }
 
@@ -589,6 +342,36 @@ export function useSpace(spaceId: string) {
   return state.spaces.find((s) => s.id === spaceId);
 }
 
-export function newId(prefix: string): string {
-  return `${prefix}-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 7)}`;
+/**
+ * The change history, oldest first, from wherever it is kept: the server
+ * when there is one (so everyone's changes appear), otherwise this browser's
+ * journal.
+ */
+export function useRevisions(filter: { itemId?: string; spaceId?: string } = {}): { revisions: Revision[]; startedAt: string; loading: boolean } {
+  const { journal, storage } = useProject();
+  const [remote, setRemote] = useState<Revision[] | null>(null);
+  const [loading, setLoading] = useState(false);
+  const server = storage.mode === "server" && !storage.locked;
+  const { itemId, spaceId } = filter;
+  useEffect(() => {
+    if (!server) { setRemote(null); return; }
+    let live = true;
+    setLoading(true);
+    const p = new URLSearchParams();
+    if (itemId) p.set("itemId", itemId);
+    if (spaceId) p.set("spaceId", spaceId);
+    fetch(`/api/project/revisions?${p}`, { cache: "no-store" })
+      .then((r) => (r.ok ? r.json() : { revisions: [] }))
+      .then((d: { revisions: Revision[] }) => { if (live) setRemote(d.revisions.slice().reverse()); })
+      .catch(() => { if (live) setRemote([]); })
+      .finally(() => { if (live) setLoading(false); });
+    return () => { live = false; };
+  }, [server, storage.version, itemId, spaceId]);
+
+  if (server) {
+    return { revisions: remote ?? [], startedAt: remote?.[0]?.at ?? new Date().toISOString(), loading };
+  }
+  const local = journal.revisions.filter((r) => (!itemId || r.touches.itemId === itemId) && (!spaceId || r.touches.spaceId === spaceId));
+  return { revisions: local, startedAt: journal.startedAt, loading: false };
 }
+

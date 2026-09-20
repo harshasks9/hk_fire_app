@@ -14,35 +14,34 @@ import type { CostBuildUp, Category, Unit, Dimensions, Space } from "./types";
  *     never as market pricing.
  */
 
+/**
+ * Geometry lives in `./measure` — one module owns every number with a unit, so
+ * a room reads the same on the plan, the card, the sheet and the BOQ. These
+ * re-exports keep costing a single import for the screens that price off area.
+ */
+export {
+  MM_PER_FT,
+  SQM_PER_SQFT,
+  OPENING_ALLOWANCE_PCT,
+  DEFAULT_CEILING_FT,
+  dimsToFeet,
+  measure,
+  measureSpace,
+  measureLine,
+  measureShort,
+  areaSqft,
+  perimeterFt,
+  wallAreaSqft,
+  dimsLabel,
+  ftIn,
+  round,
+  NOT_DIMENSIONED,
+  SOURCE_LABEL,
+} from "./measure";
+
+import { areaSqft, perimeterFt, wallAreaSqft, round } from "./measure";
+
 export const FT_PER_M = 3.28084;
-
-export function dimsToFeet(d: Dimensions): { w: number; l: number } {
-  return { w: d.widthFt + d.widthIn / 12, l: d.lengthFt + d.lengthIn / 12 };
-}
-
-export function areaSqft(d?: Dimensions): number | undefined {
-  if (!d) return undefined;
-  const { w, l } = dimsToFeet(d);
-  return round(w * l, 1);
-}
-
-export function perimeterFt(d?: Dimensions): number | undefined {
-  if (!d) return undefined;
-  const { w, l } = dimsToFeet(d);
-  return round(2 * (w + l), 1);
-}
-
-/** Wall area less a nominal allowance for openings. Ceiling height required. */
-export function wallAreaSqft(d?: Dimensions, ceilingHeightFt = 10, openingAllowancePct = 12): number | undefined {
-  const p = perimeterFt(d);
-  if (p === undefined) return undefined;
-  return round(p * ceilingHeightFt * (1 - openingAllowancePct / 100), 1);
-}
-
-export function round(n: number, dp = 0): number {
-  const f = 10 ** dp;
-  return Math.round(n * f) / f;
-}
 
 /* -------------------------------------------------------------- the build-up */
 
@@ -368,13 +367,4 @@ export function inr(n: number | undefined, opts: { compact?: boolean; blank?: st
 function trimZeros(n: number): string {
   const r = n >= 100 ? n.toFixed(0) : n >= 10 ? n.toFixed(1) : n.toFixed(2);
   return r.replace(/\.?0+$/, "");
-}
-
-export function ftIn(ft: number, inch: number): string {
-  return inch ? `${ft}'${inch}"` : `${ft}'0"`;
-}
-
-export function dimsLabel(d?: Dimensions): string | undefined {
-  if (!d) return undefined;
-  return `${ftIn(d.widthFt, d.widthIn)} × ${ftIn(d.lengthFt, d.lengthIn)}`;
 }
