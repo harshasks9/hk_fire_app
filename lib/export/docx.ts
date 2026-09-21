@@ -3,7 +3,7 @@
   handed in as bytes so this can run anywhere (server route, tests).
 */
 import {
-  AlignmentType, BorderStyle, Document, ExternalHyperlink, HeadingLevel, ImageRun, LevelFormat, Packer, Paragraph, ShadingType, Table, TableCell, TableRow, TextRun, WidthType,
+  AlignmentType, BorderStyle, Document, ExternalHyperlink, HeadingLevel, ImageRun, LevelFormat, Packer, Paragraph, ShadingType, Table, TableCell, TableRow, TextRun, UnderlineType, WidthType,
   type IParagraphOptions, type IRunOptions, type ParagraphChild,
 } from 'docx'
 import type { PMNode } from '../markdown'
@@ -64,6 +64,7 @@ function runs(nodes: PMNode[] | undefined, ctx: Ctx, base: { bold?: boolean; ita
   for (const n of nodes ?? []) {
     if (n.type === 'hardBreak') { out.push(new TextRun({ break: 1 })); continue }
     if (n.type === 'mention') { out.push(new TextRun({ text: `@${String(n.attrs?.label ?? n.attrs?.id ?? '')}`, color: '2F6FED', ...base })); continue }
+    if (n.type === 'noteLink') { out.push(new TextRun({ text: String(n.attrs?.label ?? ''), color: '2F6FED', underline: { type: UnderlineType.DOTTED }, ...base })); continue }
     if (n.type === 'image') { const img = imageRun(n, ctx); if (img) out.push(img); continue }
     if (n.type !== 'text') continue
     const opts: { -readonly [K in keyof IRunOptions]: IRunOptions[K] } = { text: n.text ?? '', ...base }

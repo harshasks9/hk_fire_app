@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { resolveContext } from '@/lib/context'
-import { addAttachment, addSource, createNote, fetchLinkPreview, scheduleProcessing } from '@/lib/notes'
+import { addAttachment, addSource, createNote, scheduleProcessing } from '@/lib/notes'
+import { clipToNote } from '@/lib/clip'
 import { describeImage, transcribeAudio } from '@/lib/media'
 import { detectKind, extractDocument } from '@/lib/documents/extract'
 import { getDb, schema } from '@/lib/db'
@@ -51,15 +52,19 @@ export async function POST(req: NextRequest) {
   let body = text
   const db = await getDb()
 
+  let id: string
   if (urlMatch && text.replace(urlMatch[0], '').trim().length < 200) {
+    // A link with at most a short comment: clip the page (headline, byline, readable article) rather than a preview.
     kind = 'link'
-    const preview = await fetchLinkPreview(urlMatch[0])
-    title = preview.title
     const comment = text.replace(urlMatch[0], '').trim()
-    body = [comment, preview.description, preview.text ? `> ${preview.text.slice(0, 1200)}` : '', `Source: ${urlMatch[0]}`].filter(Boolean).join('\n\n')
+    const clipped = await clipToNote({ contextId: ctx.id, url: urlMatch[0], comment, source: bearer ? 'api' : 'quick-capture', createdAt: capturedAt })
+    id = clipped.id
+    title = clipped.title
+    body = clipped.markdown
+  } else {
+    id = await createNote({ contextId: ctx.id, title, markdown: body, kind, source: bearer ? 'api' : 'quick-capture', sourceUrl: urlMatch?.[0], status: 'inbox', createdAt: capturedAt })
+    if (urlMatch) await addSource(id, { kind: 'url', url: urlMatch[0], title })
   }
-  const id = await createNote({ contextId: ctx.id, title, markdown: body, kind, source: bearer ? 'api' : 'quick-capture', sourceUrl: urlMatch?.[0], status: 'inbox', createdAt: capturedAt })
-  if (urlMatch) await addSource(id, { kind: 'url', url: urlMatch[0], title })
 
   const extra: string[] = []
   for (const f of files) {

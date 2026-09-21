@@ -58,6 +58,8 @@ The owner wants to give the same system to other people — colleagues, family, 
 - **F25 — Upload documents**: PDFs, Word and Excel files, CSVs, web pages, text and scans or photos of documents become notes automatically: the text is extracted (the model reads scans), the original stays attached, and the note is filed like anything written by hand.
 - **F26 — Today**: one page per day with the journal (an ordinary note created on demand, edited in place), the schedule, what is due and what got done, what was captured, decided and changed, in the reader's own time zone.
 - **F27 — Export**: any note as Markdown, Word, PDF (print), a self-contained web page, a zip with attachments or JSON; a context or the whole notebook as a zip of Markdown files with attachments and the structured data, all readable without the app and re-importable.
+- **F28 — Web clipper**: a page shared from a phone, sent by the bookmarklet or pasted into quick capture becomes a note with the readable article inside (headline, byline, text, tables), the reader's selection and comment, and the source, then is filed like any capture.
+- **F29 — Links between notes**: `[[` links any note to another with autocomplete or by title; every note shows what links to it and where it is mentioned without a link; links survive export and import and appear in the graph.
 
 ### Out of scope (this release)
 - Real-time collaboration inside one note; shared notebooks with multiple concurrent editors.

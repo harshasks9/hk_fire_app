@@ -17,6 +17,8 @@ brief — with every AI statement traceable to the note it came from.
 | Say "I'll send the enablement plan" | Tracks an **open loop** and nudges when it goes stale |
 | Open an upcoming meeting | Generates prep: who, last time, what they asked, what you promised, unresolved items, what changed, what to ask |
 | Ask "What did we decide about marketplace caps?" | Retrieves the relevant passages (pgvector + keywords), answers **only** from them, and cites each source; clicking a citation opens the exact passage |
+| Share an article from your phone, or click the bookmarklet on a page | Clips the readable article (headline, byline, text, tables) into a note with the source, then files it like any capture |
+| Type `[[Q4 plan]]` in a note | Links the two notes; the Q4 plan shows who links to it and where else it is mentioned without a link |
 
 Everything works with **no API keys** through a deterministic local
 understanding layer. Add `ANTHROPIC_API_KEY` or `GEMINI_API_KEY` and the same
@@ -161,6 +163,19 @@ Record a meeting on your iPhone (Voice Memos, the Phone app's call recording, No
 - **The journal is a note** — *Start today's entry* creates an ordinary note (`source: daily`, keyed by `sourceUrl: daily:YYYY-MM-DD`) in the current context, edited in place with the full editor and filed by the AI like any other note, so people, decisions and tasks you mention land where they belong. It opens as a normal note too, exports and imports like one, and a custom template whose name starts with *Daily*, *Journal* or *Today* becomes its starting body (else `## Notes` / `## Tomorrow`).
 - **Your day, not the server's** — the browser tells the app its time zone (cookie `hkn_tz`), and day boundaries follow it (`lib/today.ts`).
 
+## Clip the web
+
+- **Share sheet** — install Notes as an app (Android and desktop Chrome) and it appears in the system *Share* sheet (`share_target` in the manifest): sharing a page from any app opens `/clip`, which files it on its own when nothing needs adding. iPhone has no share target for web apps; a two-step Shortcut (*Receive URLs* → *Open URL* `/clip?url=`) or a capture token posting to `/api/clip` does the same.
+- **Bookmarklet** — Settings → *Clip web pages* has a *Clip to Notes* button to drag to the bookmarks bar (or copy). On any page it opens a small `/clip` popup with the address, the page title and the text you selected, plus a box for your own note; *Clip* files it and the popup closes.
+- **What gets saved** (`lib/clip/`) — the page is fetched server-side and the readable part extracted without a headless browser: the `<article>` or `<main>` when there is one, otherwise the densest paragraph block; navigation, sidebars, sharing widgets, comments, footers and scripts are dropped; relative links are made absolute; headings, lists, emphasis, links and tables become Markdown. The note gets the headline as title, a byline (author · date · site), your note, the selection as a quote, the article under *Article*, and a *Source* line; the URL is recorded as a source with the extracted text. Pages that cannot be read (login walls, 404s, timeouts, PDFs) still become a note with the link, and the clipper says why.
+- **Quick capture too** — pasting a link into quick capture (or posting one to `/api/capture`) now clips the page the same way instead of keeping a 1,200-character preview. `POST /api/clip { url, title?, comment?, selection?, context? }` accepts the session cookie or a capture token. Local and private addresses are refused unless `CLIP_ALLOW_PRIVATE=1` (development).
+
+## Links between notes
+
+- **`[[` to link** — type `[[` in the editor and pick a note from the notebook-wide list (most recent first, exact and prefix title matches on top), or keep typing and choose *New note “…”* to create and link it in one go. `[[Title]]` typed out in full works too, as does `/link`. Links are inline chips (`noteLink` nodes with the target's id and label); clicking one opens the note, and clicking an unresolved one creates it.
+- **Linked from** — the intelligence panel on a note lists every note that links to it, with the sentence around the link, and the notes it links to. **Unlinked mentions** lists notes that say the title without linking; *Link* turns the first mention into a link in that note.
+- **Kept in sync** — on every save the document's links are mirrored into `note_links` (migration 0007), unresolved links are resolved by title inside the notebook, and the graph shows *links to* edges between notes. Markdown export writes `[[Title]]`; import resolves it (including links to notes that arrive later in the same import); HTML, Word and share pages show the label.
+
 ## Export
 
 - **Any note, any format** — *Export…* in a note's ⋯ menu: **Markdown** (`.md`, front matter with title, created, updated, context, tags), **Word** (`.docx`: headings, lists, checklists, tables, sheets with computed values, images, callouts), **PDF** (a clean print view opens with the print dialog ready: *Save as PDF*), **web page** (`.html`, self-contained with the images embedded), **everything** (`.zip`: Markdown, HTML, the attachments as files and the note's JSON) and **data** (`.json`, the note plus what the AI extracted). `GET /api/notes/<id>/export?format=md|html|docx|zip|json` (`&print=1` for the print view) does the same for scripts.
@@ -212,7 +227,7 @@ Every query, page, API and background job is scoped to one notebook: contexts be
 - **Bring your own AI keys** — Settings → *AI for this notebook*: use the deployment's shared keys, your own Anthropic/Gemini keys (encrypted at rest with `SESSION_SECRET`/`ENCRYPTION_KEY`), or run local-only. *Test this configuration* runs a real call.
 - **Capture from anywhere** — Settings → *Capture from anywhere* creates a token for `POST /api/capture` with `Authorization: Bearer hkn_…` (JSON or multipart), for iOS Shortcuts, Zapier or scripts. Captures land in the Inbox and are filed by AI.
 - **Templates** — seven built-ins (meeting notes, 1:1, decision record, weekly review, project brief, customer call, daily journal) plus your own (*Save as template* in a note's menu). *New note from template* on the Notes page or in the command bar; `/template` in the editor; `{{date}} {{time}} {{weekday}} {{title}} {{notebook}} {{name}}` placeholders.
-- **Markdown habits in the editor** — typing `[ ] ` or `[x] ` at the start of a bullet or numbered item turns it into a checklist item, so `- [ ] send the plan` works the way it does in Obsidian or Notion.
+- **Markdown habits in the editor** — typing `[ ] ` or `[x] ` at the start of a bullet or numbered item turns it into a checklist item, so `- [ ] send the plan` works the way it does in Obsidian or Notion; `[[Title]]` links a note the same way.
 - **Version history** — every analyzed save keeps a version (the pre-edit state is kept as *original*); *Version history…* in a note's menu shows them with word deltas and one-click restore.
 - **Share links** — *Share read-only link…* creates a public `/s/<token>` page (7 days, 30 days or no expiry) with view counts and revocation; the notebook owner can turn public links off entirely in Settings → Sharing.
 - **Trash** — deleted notes wait 30 days in `/trash` with restore and delete-forever; the nightly cron purges older ones together with everything derived from them.

@@ -32,6 +32,7 @@ function inline(nodes: PMNode[] | undefined, o: HtmlOptions): string {
 function inlineNode(n: PMNode, o: HtmlOptions): string {
   if (n.type === 'hardBreak') return '<br>'
   if (n.type === 'mention') return `<span class="mention">@${escapeHtml(String(n.attrs?.label ?? n.attrs?.id ?? ''))}</span>`
+  if (n.type === 'noteLink') return `<span class="note-link"${n.attrs?.id ? ` data-note-id="${escapeHtml(String(n.attrs.id))}"` : ''}>${escapeHtml(String(n.attrs?.label ?? ''))}</span>`
   if (n.type === 'image') return image(n, o)
   if (n.type !== 'text') return ''
   let el = escapeHtml(n.text ?? '')
@@ -141,7 +142,7 @@ article table { border-collapse: collapse; width: 100%; font-size: 14px; } artic
 article table.sheet th { color: var(--fg-3); font-weight: 500; font-size: 12px; text-align: center; } article table.sheet td.num { text-align: right; font-variant-numeric: tabular-nums; } article figure.sheet figcaption { font-weight: 600; margin-bottom: 6px; }
 article .callout { border: 1px solid var(--border); border-radius: 10px; padding: 10px 14px; background: var(--soft); } article .callout-decision { border-color: #c9d8ff; background: #f2f6ff; } article .callout-warning { border-color: #f3d9a4; background: #fff8e8; }
 article .callout-label { font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--fg-3); margin-bottom: 4px; }
-article .mention { color: var(--accent); font-weight: 500; }
+article .mention { color: var(--accent); font-weight: 500; } article .note-link { color: var(--accent); text-decoration: underline dotted; text-underline-offset: 2px; }
 .attachments { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 14px; } .attachments h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--fg-3); margin: 0 0 8px; }
 footer { margin-top: 48px; padding-top: 14px; border-top: 1px solid var(--border); color: var(--fg-3); font-size: 12px; }
 @media print { main { max-width: none; padding: 0; } footer { display: none; } body { font-size: 12.5pt; } a { color: inherit; } }

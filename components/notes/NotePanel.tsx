@@ -7,6 +7,7 @@ import type { NoteDetail } from '@/lib/queries'
 import { AskInline } from '@/components/ask/AskInline'
 import { Sparkles } from 'lucide-react'
 import { TagEditor } from './TagChips'
+import { LinksPanel } from './LinksPanel'
 
 export function NotePanel({ d }: { d: NoteDetail }) {
   const people = d.entities.filter((e) => e.type === 'person')
@@ -66,6 +67,7 @@ export function NotePanel({ d }: { d: NoteDetail }) {
           <div className="text-[12px] text-fg-3">{formatDate(d.meeting.startsAt, { weekday: 'short', month: 'short', day: 'numeric' })}</div>
         </PanelSection>
       ) : null}
+      <LinksPanel noteId={d.note.id} title={d.note.title} links={d.links} />
       {d.related.length ? (
         <PanelSection title="Related notes">
           <ul className="space-y-1">

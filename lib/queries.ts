@@ -8,6 +8,7 @@ import { addDays, startOfDay } from './util'
 import { cosineDistance } from 'drizzle-orm'
 import { embedQueryWith, localEmbeddingProvider } from './ai/embeddings'
 import { inNotebook } from './tenant'
+import { noteLinksFor, type NoteLinks } from './links'
 
 /** One context id, or several (the "All" view). */
 export type Ctx = string | string[]
@@ -79,6 +80,7 @@ export interface NoteDetail {
   attachments: { id: string; name: string; mime: string; size: number; durationSeconds: number | null }[]
   sources: { id: string; kind: string; title: string | null; url: string | null; domain: string | null }[]
   research: ResearchProject | null
+  links: NoteLinks
 }
 
 export async function getNote(id: string): Promise<NoteDetail | null> {
@@ -108,7 +110,7 @@ export async function getNote(id: string): Promise<NoteDetail | null> {
   const allDecisions = [...decisions, ...revised.map((r) => r.d).filter((d) => !decisions.some((x) => x.id === d.id))]
   const meeting = note.meetingId ? ((await db.select().from(schema.meetings).where(eq(schema.meetings.id, note.meetingId)))[0] ?? null) : null
   const research = note.researchProjectId ? ((await db.select().from(schema.researchProjects).where(eq(schema.researchProjects.id, note.researchProjectId)))[0] ?? null) : null
-  const related = await relatedNotes(note, entities.map((e) => e.e.id))
+  const [related, links] = await Promise.all([relatedNotes(note, entities.map((e) => e.e.id)), noteLinksFor(note)])
   const titleLower = note.title.toLowerCase()
   const inTitle = (e: Entity) => (titleLower.includes(e.name.toLowerCase()) || e.aliases.some((a) => titleLower.includes(a.toLowerCase())) ? 1 : 0)
   return {
@@ -116,7 +118,7 @@ export async function getNote(id: string): Promise<NoteDetail | null> {
     entities: entities.map((r) => ({ ...r.e, excerpt: r.excerpt })).sort((a, b) => order(a.type) - order(b.type) || inTitle(b) - inTitle(a) || b.mentionCount - a.mentionCount),
     tasks, decisions: allDecisions, commitments,
     facts: facts.map((r) => ({ ...r.f, entityName: r.entityName })),
-    changes, related, meeting, attachments, sources, research,
+    changes, related, meeting, attachments, sources, research, links,
   }
 }
 

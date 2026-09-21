@@ -4,7 +4,7 @@ import { Extension, type Editor, type Range } from '@tiptap/core'
 import Suggestion, { type SuggestionProps, type SuggestionKeyDownProps } from '@tiptap/suggestion'
 import { ReactRenderer } from '@tiptap/react'
 import tippy, { type Instance } from 'tippy.js'
-import { Heading1, Heading2, Heading3, List, ListOrdered, CheckSquare, Table, Image as ImageIcon, Paperclip, Quote, Code, Info, GitBranch, AtSign, CalendarDays, Minus, Sparkles, Wand2, ListChecks, LayoutTemplate, Table2 } from 'lucide-react'
+import { Heading1, Heading2, Heading3, List, ListOrdered, CheckSquare, Table, Image as ImageIcon, Paperclip, Quote, Code, Info, GitBranch, AtSign, CalendarDays, Minus, Sparkles, Wand2, ListChecks, LayoutTemplate, Table2, Link2 } from 'lucide-react'
 import { cx } from '@/lib/util'
 
 export interface SlashItem { id: string; title: string; hint: string; icon: React.ComponentType<{ className?: string }>; keywords?: string; ai?: boolean; run: (editor: Editor, range: Range) => void }
@@ -27,6 +27,7 @@ export function slashItems(handlers: { upload: (kind: 'image' | 'file') => void;
     { id: 'callout', title: 'Callout', hint: 'Highlighted note', icon: Info, run: (e, r) => del(e, r).insertContent({ type: 'callout', attrs: { kind: 'info' }, content: [{ type: 'paragraph' }] }).run() },
     { id: 'decision', title: 'Decision', hint: 'Record a decision (tracked with history)', icon: GitBranch, keywords: 'decide agreed', run: (e, r) => del(e, r).insertContent({ type: 'callout', attrs: { kind: 'decision' }, content: [{ type: 'paragraph', content: [{ type: 'text', text: 'Decision: ' }] }] }).run() },
     { id: 'person', title: 'Person', hint: 'Mention someone with @', icon: AtSign, keywords: 'mention people', run: (e, r) => del(e, r).insertContent('@').run() },
+    { id: 'note-link', title: 'Link to note', hint: 'Connect another note with [[', icon: Link2, keywords: 'wiki link backlink connect reference note', run: (e, r) => del(e, r).insertContent('[[').run() },
     { id: 'meeting', title: 'Meeting', hint: 'Meeting note template', icon: CalendarDays, keywords: 'agenda attendees', run: (e, r) => del(e, r).insertContent([
       { type: 'heading', attrs: { level: 2 }, content: [{ type: 'text', text: 'Attendees' }] },
       { type: 'paragraph' },

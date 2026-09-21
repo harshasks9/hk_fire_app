@@ -239,6 +239,20 @@ export const entities = pgTable(
   (t) => [uniqueIndex('entities_ctx_type_slug').on(t.contextId, t.type, t.slug), index('entities_type').on(t.type)],
 )
 
+/** A [[link]] from one note to another, maintained from the document on every save. */
+export const noteLinks = pgTable(
+  'note_links',
+  {
+    id: id(),
+    fromNoteId: text('from_note_id').notNull(),
+    toNoteId: text('to_note_id').notNull(),
+    /** The text the link shows (usually the target's title at the time of writing). */
+    label: text('label').notNull().default(''),
+    createdAt: now('created_at'),
+  },
+  (t) => [uniqueIndex('note_links_pair').on(t.fromNoteId, t.toNoteId), index('note_links_to').on(t.toNoteId)],
+)
+
 /** Mention of an entity inside a note, with the passage it was found in. */
 export const noteEntities = pgTable(
   'note_entities',
@@ -672,6 +686,7 @@ export type Template = typeof templates.$inferSelect
 export type NoteVersion = typeof noteVersions.$inferSelect
 export type ShareLink = typeof shareLinks.$inferSelect
 export type Note = typeof notes.$inferSelect
+export type NoteLink = typeof noteLinks.$inferSelect
 export type Meeting = typeof meetings.$inferSelect
 export type Entity = typeof entities.$inferSelect
 export type Task = typeof tasks.$inferSelect

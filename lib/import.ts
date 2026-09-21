@@ -8,6 +8,7 @@ import { getDb, schema } from './db'
 import { createNote } from './notes'
 import { docToText, markdownToDoc } from './markdown'
 import { sha256 } from './crypto'
+import { extractNoteLinks, syncNoteLinks } from './links'
 
 export interface ImportFile { name: string; text: string; lastModified?: number }
 export interface ImportResult { created: { id: string; title: string }[]; skipped: { name: string; reason: string }[] }
@@ -79,6 +80,7 @@ function fingerprint(title: string, text: string, day: string) {
 export async function importNotes(input: { files: ImportFile[]; contexts: { id: string; slug: string }[]; defaultContextId: string }): Promise<ImportResult> {
   const db = await getDb()
   const result: ImportResult = { created: [], skipped: [] }
+  const pending: { id: string; contextId: string }[] = []
   const ctxIds = input.contexts.map((c) => c.id)
   const existing = ctxIds.length ? await db.select({ title: schema.notes.title, contentText: schema.notes.contentText, createdAt: schema.notes.createdAt }).from(schema.notes).where(and(inArray(schema.notes.contextId, ctxIds))) : []
   const seen = new Set(existing.map((n) => fingerprint(n.title, n.contentText, n.createdAt.toISOString().slice(0, 10))))
@@ -96,7 +98,15 @@ export async function importNotes(input: { files: ImportFile[]; contexts: { id: 
       const contextId = (n.contextSlug && input.contexts.find((c) => c.slug === n.contextSlug)?.id) || input.defaultContextId
       const id = await createNote({ contextId, title: n.title, contentJson: doc, kind: n.kind ?? 'note', source: 'import', status: 'inbox', createdAt })
       result.created.push({ id, title: n.title })
+      if (extractNoteLinks(doc).some((l) => !l.id)) pending.push({ id, contextId })
     }
+  }
+  // Second pass: [[links]] to notes that arrived later in the same import resolve now.
+  for (const p of pending) {
+    const row = (await db.select({ contentJson: schema.notes.contentJson }).from(schema.notes).where(eq(schema.notes.id, p.id)))[0]
+    if (!row?.contentJson) continue
+    const r = await syncNoteLinks(p.id, p.contextId, row.contentJson)
+    if (r.changed) await db.update(schema.notes).set({ contentJson: r.doc }).where(eq(schema.notes.id, p.id))
   }
   return result
 }

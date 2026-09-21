@@ -5,6 +5,7 @@
 import { and, asc, eq, inArray, sql } from 'drizzle-orm'
 import { getDb, schema } from './db'
 import { deleteTaskExtras } from './tasks'
+import { deleteLinksOf } from './links'
 import type { Context, ContextKind } from './db/schema'
 import { slugify, uid } from './util'
 
@@ -88,6 +89,7 @@ export async function deleteContext(notebookId: string, id: string, opts: { move
     await db.delete(schema.attachments).where(inArray(schema.attachments.noteId, noteIds))
     await db.delete(schema.sources).where(inArray(schema.sources.noteId, noteIds))
     await db.delete(schema.noteEntities).where(inArray(schema.noteEntities.noteId, noteIds))
+    await deleteLinksOf(noteIds)
     await db.delete(schema.noteVersions).where(inArray(schema.noteVersions.noteId, noteIds))
     await db.delete(schema.shareLinks).where(inArray(schema.shareLinks.noteId, noteIds))
   }

@@ -10,6 +10,7 @@ import { SettingsClient } from '@/components/settings/SettingsClient'
 import { AccountSection } from '@/components/settings/AccountSection'
 import { AiSection } from '@/components/settings/AiSection'
 import { TokensSection } from '@/components/settings/TokensSection'
+import { ClipperSection } from '@/components/settings/ClipperSection'
 import { TemplatesSection } from '@/components/settings/TemplatesSection'
 import { ImportSection } from '@/components/settings/ImportSection'
 import { ExportSection } from '@/components/settings/ExportSection'
@@ -62,6 +63,7 @@ export default async function SettingsPage() {
         <SettingsClient userName={s.user?.name ?? 'Harsha'} authEnabled={authEnabled()} settings={(s.user?.settings ?? {}) as Record<string, unknown>} sampleData={nbSettings.sampleData !== false} canEdit={canEdit} exportSlot={<ExportSection contexts={contexts.map((c) => ({ id: c.id, name: c.name, noteCount: noteCounts.get(c.id) ?? 0 }))} notebookName={session?.notebook.name ?? 'this notebook'} />} />
         <TemplatesSection />
         <ImportSection contexts={contexts.map((c) => ({ id: c.id, name: c.name }))} activeContextId={active.id} />
+        <ClipperSection origin={origin} />
         <TokensSection origin={origin} />
         <SharingSection allowed={aiView.allowShareLinks} canEdit={canEdit} />
         <section>

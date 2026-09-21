@@ -13,7 +13,7 @@ export async function middleware(req: NextRequest) {
     return NextResponse.next()
   }
   // Capture tokens (shortcuts, automations) authenticate the request themselves.
-  if ((pathname === '/api/capture' || pathname === '/api/documents' || pathname.startsWith('/api/recordings')) && req.headers.get('authorization')?.startsWith('Bearer ')) {
+  if ((pathname === '/api/capture' || pathname === '/api/clip' || pathname === '/api/documents' || pathname.startsWith('/api/recordings')) && req.headers.get('authorization')?.startsWith('Bearer ')) {
     return NextResponse.next()
   }
   const token = req.cookies.get(SESSION_COOKIE)?.value
@@ -27,7 +27,8 @@ export async function middleware(req: NextRequest) {
     return NextResponse.redirect(url)
   }
   url.pathname = '/login'
-  url.search = pathname && pathname !== '/' ? `?next=${encodeURIComponent(pathname)}` : ''
+  // The query string travels along so a shared page (/clip?url=…) survives the sign-in.
+  url.search = pathname && pathname !== '/' ? `?next=${encodeURIComponent(pathname + req.nextUrl.search)}` : ''
   return NextResponse.redirect(url)
 }
 

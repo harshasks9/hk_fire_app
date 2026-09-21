@@ -3,17 +3,20 @@ import { and, eq, sql } from 'drizzle-orm'
 import { after } from 'next/server'
 import { getDb, schema } from './db'
 import { docToText, markdownToDoc } from './markdown'
-import { uid, wordCount, truncate } from './util'
+import { uid, wordCount } from './util'
 import { processNote, deleteDerived } from './pipeline'
 import type { NoteKind } from './db/schema'
 import { normalizeTags } from './tags'
+import { extractNoteLinks, syncNoteLinks } from './links'
 
 export interface CreateNoteInput { contextId: string; title?: string; markdown?: string; contentJson?: unknown; kind?: NoteKind; source?: string; sourceUrl?: string; meetingId?: string; researchProjectId?: string; status?: 'inbox' | 'processed'; createdAt?: Date }
 
 export async function createNote(input: CreateNoteInput): Promise<string> {
   const db = await getDb()
   const id = uid('note')
-  const doc = input.contentJson ?? markdownToDoc(input.markdown ?? '')
+  let doc = input.contentJson ?? markdownToDoc(input.markdown ?? '')
+  // [[Links]] typed or imported by title get their ids now; the link table mirrors the document.
+  if (extractNoteLinks(doc).length) doc = (await syncNoteLinks(id, input.contextId, doc)).doc as object
   const text = docToText(doc)
   const now = input.createdAt ?? new Date()
   await db.insert(schema.notes).values({ id, contextId: input.contextId, title: input.title ?? '', kind: input.kind ?? 'note', status: input.status ?? 'processed', contentJson: doc, contentText: text, wordCount: wordCount(text), source: input.source ?? 'editor', sourceUrl: input.sourceUrl, meetingId: input.meetingId, researchProjectId: input.researchProjectId, createdAt: now, updatedAt: now })
@@ -41,8 +44,13 @@ export async function updateNote(id: string, patch: { title?: string; contentJso
   const set: Record<string, unknown> = { updatedAt: new Date() }
   if (patch.title !== undefined) set.title = patch.title
   if (patch.contentJson !== undefined) {
-    const text = docToText(patch.contentJson)
-    set.contentJson = patch.contentJson
+    let doc = patch.contentJson
+    if (extractNoteLinks(doc).length || (await hasLinkRows(id))) {
+      const ctx = (await db.select({ contextId: schema.notes.contextId }).from(schema.notes).where(eq(schema.notes.id, id)))[0]
+      if (ctx) doc = (await syncNoteLinks(id, ctx.contextId, doc)).doc as object
+    }
+    const text = docToText(doc)
+    set.contentJson = doc
     set.contentText = text
     set.wordCount = wordCount(text)
   }
@@ -67,6 +75,11 @@ export async function updateNote(id: string, patch: { title?: string; contentJso
       scheduleProcessing(id)
     }
   }
+}
+
+async function hasLinkRows(noteId: string): Promise<boolean> {
+  const db = await getDb()
+  return (await db.select({ id: schema.noteLinks.id }).from(schema.noteLinks).where(eq(schema.noteLinks.fromNoteId, noteId)).limit(1)).length > 0
 }
 
 export async function softDeleteNote(id: string) {
@@ -94,30 +107,6 @@ export async function addSource(noteId: string, s: { kind: 'url' | 'file' | 'ima
     domain = undefined
   }
   await db.insert(schema.sources).values({ id: uid('src'), noteId, kind: s.kind, title: s.title, url: s.url, domain, extractedText: s.extractedText })
-}
-
-/** Fetch a page's title + a text excerpt for link captures. Best effort, short timeout. */
-export async function fetchLinkPreview(url: string): Promise<{ title: string; description: string; text: string }> {
-  try {
-    const res = await fetch(url, { signal: AbortSignal.timeout(6000), headers: { 'User-Agent': 'Mozilla/5.0 (compatible; HKNotes/1.0)' } })
-    const html = await res.text()
-    const title = html.match(/<title[^>]*>([^<]*)<\/title>/i)?.[1]?.trim() ?? url
-    const description = html.match(/<meta[^>]+(?:name|property)=["'](?:description|og:description)["'][^>]+content=["']([^"']*)["']/i)?.[1]?.trim() ?? ''
-    const text = html
-      .replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>|<nav[\s\S]*?<\/nav>|<footer[\s\S]*?<\/footer>/gi, ' ')
-      .replace(/<[^>]+>/g, ' ')
-      .replace(/&nbsp;|&#160;/g, ' ')
-      .replace(/&amp;/g, '&')
-      .replace(/\s+/g, ' ')
-      .trim()
-    return { title: decodeEntities(title), description: decodeEntities(description), text: truncate(text, 4000) }
-  } catch {
-    return { title: url, description: '', text: '' }
-  }
-}
-
-function decodeEntities(s: string) {
-  return s.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'")
 }
 
 export async function createMeetingWithNote(input: { contextId: string; title: string; startsAt: Date; endsAt?: Date; location?: string; notesMarkdown?: string; transcript?: { t: number; speaker: string; text: string }[]; participants?: string[]; status?: 'upcoming' | 'live' | 'completed'; meetingId?: string }) {
