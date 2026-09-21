@@ -194,6 +194,13 @@ async function expand(b: Builder, contextIds: string[], n: GNode, perKind = 40):
     }
     const decs = await db.select().from(schema.decisions).where(eq(schema.decisions.sourceNoteId, rawId))
     for (const d of decs) link(decisionNode(d), 'decided here')
+    // Notes this one links to, and notes that link here.
+    if (b.types.has('note')) {
+      const outgoing = await db.select({ n: schema.notes }).from(schema.noteLinks).innerJoin(schema.notes, eq(schema.notes.id, schema.noteLinks.toNoteId)).where(and(eq(schema.noteLinks.fromNoteId, rawId), isNull(schema.notes.deletedAt))).limit(perKind)
+      for (const { n: o } of outgoing) link(noteNode(o), 'links to', 2)
+      const incoming = await db.select({ n: schema.notes }).from(schema.noteLinks).innerJoin(schema.notes, eq(schema.notes.id, schema.noteLinks.fromNoteId)).where(and(eq(schema.noteLinks.toNoteId, rawId), isNull(schema.notes.deletedAt))).limit(perKind)
+      for (const { n: o } of incoming) link(noteNode(o), 'linked from', 2)
+    }
     // Related notes through shared entities.
     const entIds = ents.map((x) => x.e.id)
     if (entIds.length && b.types.has('note')) {
@@ -289,6 +296,10 @@ async function connect(b: Builder, contextIds: string[]) {
     if (entityIds.length) {
       const ne = await db.select().from(schema.noteEntities).where(and(inArray(schema.noteEntities.noteId, noteIds), inArray(schema.noteEntities.entityId, entityIds)))
       for (const r of ne) { const c = key(r.entityId); if (c) b.edge(nid('note', r.noteId), c, 'mentions') }
+    }
+    if (noteIds.length > 1) {
+      const nl = await db.select().from(schema.noteLinks).where(and(inArray(schema.noteLinks.fromNoteId, noteIds), inArray(schema.noteLinks.toNoteId, noteIds)))
+      for (const l of nl) b.edge(nid('note', l.fromNoteId), nid('note', l.toNoteId), 'links to', 2)
     }
     for (const n of notes) {
       for (const t of allTagsOf(n)) if (tags.includes(t)) b.edge(nid('note', n.id), nid('tag', t), 'tagged')

@@ -1,4 +1,4 @@
-import { and, eq, inArray, sql } from 'drizzle-orm'
+import { and, eq, inArray, sql, or } from 'drizzle-orm'
 import { getDb, schema } from '../db'
 import { markdownToDoc, docToText } from '../markdown'
 import { uid, wordCount, slugify } from '../util'
@@ -67,6 +67,7 @@ export async function wipeNotebookData(notebookId: string, opts: { keepContexts?
     await db.delete(schema.attachments).where(inArray(schema.attachments.noteId, noteIds))
     await db.delete(schema.sources).where(inArray(schema.sources.noteId, noteIds))
     await db.delete(schema.noteEntities).where(inArray(schema.noteEntities.noteId, noteIds))
+    await db.delete(schema.noteLinks).where(or(inArray(schema.noteLinks.fromNoteId, noteIds), inArray(schema.noteLinks.toNoteId, noteIds)))
     await db.delete(schema.noteVersions).where(inArray(schema.noteVersions.noteId, noteIds))
     await db.delete(schema.shareLinks).where(inArray(schema.shareLinks.noteId, noteIds))
   }

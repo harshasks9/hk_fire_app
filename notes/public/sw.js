@@ -8,7 +8,7 @@
     IndexedDB and replays them (see lib/offline/sync.ts). A Background Sync
     event just wakes the app up to do that.
 */
-const VERSION = 'hkn-v3'
+const VERSION = 'hkn-v4'
 const STATIC = VERSION + '-static'
 const PAGES = VERSION + '-pages'
 const API = VERSION + '-api'

@@ -3,6 +3,7 @@ import { and, eq, inArray, isNotNull, lt } from 'drizzle-orm'
 import { getDb, schema } from './db'
 import { deleteDerived } from './pipeline'
 import { scheduleProcessing } from './notes'
+import { deleteLinksOf } from './links'
 
 export const TRASH_DAYS = 30
 
@@ -27,6 +28,7 @@ export async function purgeNote(id: string) {
   await db.delete(schema.sources).where(eq(schema.sources.noteId, id))
   await db.delete(schema.noteVersions).where(eq(schema.noteVersions.noteId, id))
   await db.delete(schema.shareLinks).where(eq(schema.shareLinks.noteId, id))
+  await deleteLinksOf([id])
   await db.delete(schema.tasks).where(eq(schema.tasks.sourceNoteId, id))
   await db.delete(schema.commitments).where(eq(schema.commitments.sourceNoteId, id))
   await db.delete(schema.facts).where(eq(schema.facts.sourceNoteId, id))

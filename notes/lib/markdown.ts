@@ -6,9 +6,14 @@
 import { normalizeSheet, sheetToMarkdown, sheetToText } from './sheet/model'
 export interface PMNode { type: string; attrs?: Record<string, unknown>; content?: PMNode[]; text?: string; marks?: { type: string; attrs?: Record<string, unknown> }[] }
 
+/** A [[wiki link]] to another note. `id` is null until the title is resolved (on save, or when clicked). */
+export function noteLinkNode(label: string, id: string | null = null): PMNode {
+  return { type: 'noteLink', attrs: { id, label: label.trim() } }
+}
+
 function inline(text: string): PMNode[] {
   const out: PMNode[] = []
-  const re = /(\*\*[^*]+\*\*|__[^_]+__|`[^`]+`|!?\[[^\]]*\]\([^)]+\)|\*[^*\n]+\*|_[^_\n]+_|@[A-Z][\w.-]+(?:\s[A-Z][\w.-]+)?|https?:\/\/[^\s)]+)/g
+  const re = /(\*\*[^*]+\*\*|__[^_]+__|`[^`]+`|\[\[[^\[\]\n]+\]\]|!?\[[^\]]*\]\([^)]+\)|\*[^*\n]+\*|_[^_\n]+_|@[A-Z][\w.-]+(?:\s[A-Z][\w.-]+)?|https?:\/\/[^\s)]+)/g
   let last = 0
   let m: RegExpExecArray | null
   while ((m = re.exec(text))) {
@@ -16,6 +21,7 @@ function inline(text: string): PMNode[] {
     const tok = m[0]
     if (tok.startsWith('**') || tok.startsWith('__')) out.push({ type: 'text', text: tok.slice(2, -2), marks: [{ type: 'bold' }] })
     else if (tok.startsWith('`')) out.push({ type: 'text', text: tok.slice(1, -1), marks: [{ type: 'code' }] })
+    else if (tok.startsWith('[[')) out.push(noteLinkNode(tok.slice(2, -2)))
     else if (tok.startsWith('[') || tok.startsWith('![')) {
       const mm = tok.match(/^!?\[([^\]]*)\]\(([^)]+)\)$/)!
       const href = mm[2]!.replace(/\s+"[^"]*"$/, '')
@@ -138,6 +144,7 @@ export function docToText(doc: unknown): string {
   const node = doc as PMNode | null | undefined
   if (!node) return ''
   const out: string[] = []
+  let inCell = 0
   const walk = (n: PMNode, depth: number) => {
     if (n.type === 'text') {
       out.push(n.text ?? '')
@@ -145,6 +152,10 @@ export function docToText(doc: unknown): string {
     }
     if (n.type === 'hardBreak') {
       out.push('\n')
+      return
+    }
+    if (n.type === 'mention' || n.type === 'noteLink') {
+      out.push(String(n.attrs?.label ?? n.attrs?.id ?? ''))
       return
     }
     const block = ['paragraph', 'heading', 'listItem', 'taskItem', 'blockquote', 'codeBlock', 'callout', 'tableRow', 'horizontalRule'].includes(n.type)
@@ -156,9 +167,12 @@ export function docToText(doc: unknown): string {
       out.push(sheetToText(normalizeSheet(n.attrs?.sheet)) + '\n\n')
       return
     }
+    const cell = n.type === 'tableCell' || n.type === 'tableHeader'
+    if (cell) inCell++
     for (const c of n.content ?? []) walk(c, depth + 1)
-    if (n.type === 'tableCell' || n.type === 'tableHeader') out.push(' | ')
-    if (block) out.push('\n')
+    if (cell) { inCell--; out.push(' | ') }
+    // Inside a table cell, paragraphs stay on the row's line so a row reads "Q4 | 3% |".
+    if (block && !(inCell && n.type === 'paragraph')) out.push('\n')
     if (n.type === 'paragraph' && depth === 1) out.push('\n')
   }
   walk(node, 0)
@@ -173,6 +187,7 @@ export function docToMarkdown(doc: unknown): string {
       .map((n) => {
         if (n.type === 'hardBreak') return '\n'
         if (n.type === 'mention') return `@${n.attrs?.label ?? n.attrs?.id ?? ''}`
+        if (n.type === 'noteLink') return `[[${n.attrs?.label ?? ''}]]`
         let t = n.text ?? ''
         for (const m of n.marks ?? []) {
           if (m.type === 'bold') t = `**${t}**`

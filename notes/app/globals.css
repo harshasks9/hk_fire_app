@@ -468,6 +468,20 @@
   padding: 0.05em 0.3em;
   font-weight: 500;
 }
+.editor-prose .note-link,
+.share-prose .note-link {
+  color: var(--accent);
+  text-decoration: underline dotted;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  border-radius: 4px;
+  padding: 0 0.1em;
+  cursor: pointer;
+  font-weight: 500;
+}
+.editor-prose .note-link:hover { background: var(--accent-soft); }
+.editor-prose .note-link.note-link-unresolved { color: var(--fg-2); text-decoration-style: dashed; }
+.editor-prose .note-link.ProseMirror-selectednode { outline: 2px solid var(--accent); outline-offset: 1px; }
 .editor-prose p.is-editor-empty:first-child::before {
   content: attr(data-placeholder);
   color: var(--fg-3);

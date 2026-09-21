@@ -21,6 +21,7 @@ function Inline({ nodes, base }: { nodes?: PMNode[]; base: Base }) {
 function InlineNode({ node, base }: { node: PMNode; base: Base }) {
   if (node.type === 'hardBreak') return <br />
   if (node.type === 'mention') return <span className="mention">@{String(node.attrs?.label ?? node.attrs?.id ?? '')}</span>
+  if (node.type === 'noteLink') return <span className="note-link">{String(node.attrs?.label ?? '')}</span>
   if (node.type === 'image') return <img src={rewrite(String(node.attrs?.src ?? ''), base)} alt={String(node.attrs?.alt ?? '')} className="max-w-full rounded-lg" />
   if (node.type !== 'text') return null
   let el: React.ReactNode = node.text ?? ''

@@ -2,7 +2,7 @@
 import * as React from 'react'
 import { Command } from 'cmdk'
 import { useRouter } from 'next/navigation'
-import { FileText, CalendarDays, Users, Building2, Hash, CheckSquare, GitBranch, FlaskConical, Sparkles, Search, Plus, Inbox, Home, Repeat, Settings, Mic, Zap, ArrowRight, Sun, Moon, Share2, TrendingUp, FileUp } from 'lucide-react'
+import { FileText, CalendarDays, Users, Building2, Hash, CheckSquare, GitBranch, FlaskConical, Sparkles, Search, Plus, Inbox, Home, Repeat, Settings, Mic, Zap, ArrowRight, Sun, Moon, Share2, TrendingUp, FileUp, Scissors } from 'lucide-react'
 import { setShell, useShell } from './store'
 import { startNavigation } from './NavProgress'
 import { api } from '@/lib/client'
@@ -64,6 +64,7 @@ export function CommandBar() {
     { id: 'ask', label: 'Ask my notes', icon: Sparkles, run: () => go('/ask'), keywords: 'ai question' },
     { id: 'home', label: 'Go to Home', icon: Home, run: () => go('/') },
     { id: 'today', label: 'Today: journal, schedule, due', icon: Sun, run: () => go('/today'), keywords: 'today daily note journal day schedule due' },
+    { id: 'clip', label: 'Clip a web page', icon: Scissors, run: () => go('/clip'), keywords: 'clip clipper web page article url link save bookmark' },
     { id: 'inbox', label: 'Go to Inbox', icon: Inbox, run: () => go('/inbox') },
     { id: 'notes', label: 'Go to Notes', icon: FileText, run: () => go('/notes') },
     { id: 'meetings', label: 'Go to Meetings', icon: CalendarDays, run: () => go('/meetings') },

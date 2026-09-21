@@ -16,6 +16,7 @@ import Mention from '@tiptap/extension-mention'
 import { Bold, Italic, Code, Link2, Sparkles, Wand2, Scissors, Lightbulb, ListChecks, GitBranch, MessageCircleQuestion, X, Check, ArrowDownToLine, Heading2, List, ListTodo, Quote, Undo2, Redo2, ImagePlus, SlashSquare, WifiOff } from 'lucide-react'
 import { Callout, HighlightRange, ListTaskShortcut, Sheet } from './extensions'
 import { SlashCommand, slashItems, mentionSuggestion } from './SlashMenu'
+import { NoteLink } from './NoteLink'
 import { api } from '@/lib/client'
 import { cx, relativeTime } from '@/lib/util'
 import { useToast, Spinner, AiMark } from '@/components/ui'
@@ -124,6 +125,22 @@ export function NoteEditor({ noteId, target = 'note', initialTitle, initialConte
       TableHeader,
       TableCell,
       Mention.configure({ HTMLAttributes: { class: 'mention' }, suggestion: { ...mentionSuggestion, command: ({ editor, range, props }) => { const p = props as { id: string; name: string }; editor.chain().focus().insertContentAt(range, [{ type: 'mention', attrs: { id: p.id, label: p.name } }, { type: 'text', text: ' ' }]).run() } }, renderText: ({ node }) => `@${node.attrs.label ?? node.attrs.id}`, renderHTML: ({ options, node }) => ['span', { ...options.HTMLAttributes, 'data-id': node.attrs.id }, `@${node.attrs.label ?? node.attrs.id}`] }),
+      NoteLink.configure({
+        currentNoteId: isTask ? null : noteId,
+        createNote: async (title) => { try { const r = await api<{ id: string }>('/api/links', { method: 'POST', json: { title } }); return r.id } catch { return null } },
+        onClick: async ({ id, label, editor: ed }) => {
+          if (id) { router.push(`/notes/${id}`); return }
+          try {
+            const r = await api<{ id: string; created: boolean }>('/api/links', { method: 'POST', json: { title: label } })
+            ed.commands.resolveNoteLink(label, r.id)
+            await persist({ title: titleValue.current, contentJson: ed.getJSON() })
+            toast.push({ text: r.created ? `Created “${label}”` : `Opening “${label}”`, tone: 'success' })
+            router.push(`/notes/${r.id}`)
+          } catch (e) {
+            toast.push({ text: String(e), tone: 'danger' })
+          }
+        },
+      }),
       Callout,
       Sheet,
       HighlightRange,

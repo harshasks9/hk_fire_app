@@ -18,7 +18,7 @@ function LoginForm() {
     setBusy(true); setError(''); setUnverified(null)
     const res = await fetch('/api/login', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email, password }) })
     setBusy(false)
-    if (res.ok) { router.push(params.get('next') || '/'); router.refresh(); return }
+    if (res.ok) { const next = params.get('next') ?? ''; router.push(next.startsWith('/') && !next.startsWith('//') ? next : '/'); router.refresh(); return }
     const j = (await res.json().catch(() => ({}))) as { error?: string; code?: string; email?: string }
     setError(j.error ?? 'Sign-in failed')
     if (j.code === 'unverified') setUnverified(j.email ?? email)
