@@ -100,6 +100,8 @@ export type Action =
   | { type: "space/patch"; id: string; patch: Partial<Space> }
   /** A fact about the building corrected in the model, carried into a saved project. */
   | { type: "space/correct"; id: string; patch: Partial<Space>; why: string }
+  /** Choose one of a room's layouts, or clear the choice. */
+  | { type: "space/layout"; id: string; layoutId?: string; name?: string }
   | { type: "scenario/set"; id: string };
 
 /** What survives a wipe. Everything not listed here is emptied. */
@@ -505,6 +507,9 @@ export function reducer(s: ProjectState, a: Action): ProjectState {
 
     case "space/add":
       return { ...s, spaces: [...s.spaces, a.space] };
+
+    case "space/layout":
+      return { ...s, spaces: s.spaces.map((x) => (x.id === a.id ? { ...x, layoutId: a.layoutId } : x)) };
 
     case "space/patch":
     case "space/correct":

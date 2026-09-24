@@ -13,6 +13,9 @@ import { measureLine, NOT_DIMENSIONED_NOTE } from "@/lib/model/measure";
 import { MeasureTable } from "@/components/Measure";
 import { roomChecklist, type Check } from "@/lib/model/checklist";
 import { RoomDrawings } from "@/components/RoomDrawings";
+import { LayoutsPanel } from "@/components/LayoutsPanel";
+import { designFor } from "@/lib/design";
+import { roomLens } from "@/lib/model/lens";
 import { drawingsForSpace } from "@/lib/plans/room-drawings";
 import {
   CATEGORY_LABEL, STAGE_LABEL, type ScopeItem, type Category, type Idea, type DesignOption,
@@ -31,7 +34,7 @@ import { FLOOR_META } from "@/lib/seed/spaces";
 import { catLabel, categoryOptions, buildUpFromCategory } from "@/lib/model/categories";
 
 const TABS = [
-  "Checklist", "Design", "Ideas", "Decisions", "Scope", "Cost", "Products",
+  "Layouts", "Checklist", "Design", "Ideas", "Decisions", "Scope", "Cost", "Products",
   "Tasks", "Vendors", "Files", "Site photos", "Issues",
 ] as const;
 type Tab = (typeof TABS)[number];
@@ -48,8 +51,10 @@ export default function RoomPage() {
   const params = useParams<{ spaceId: string }>();
   const searchParams = useSearchParams();
   const router = useRouter();
-  const { state, role } = useProject();
-  const [tab, setTab] = useState<Tab>("Checklist");
+  const { state, role, meId } = useProject();
+  const hasLayouts = !!designFor(decodeURIComponent(params.spaceId));
+  const [tab, setTab] = useState<Tab>(hasLayouts ? "Layouts" : "Checklist");
+  const tabs = hasLayouts ? TABS : TABS.filter((t) => t !== "Layouts");
   const [openItem, setOpenItem] = useState<ScopeItem | null>(null);
 
   const spaceId = decodeURIComponent(params.spaceId);
@@ -77,15 +82,20 @@ export default function RoomPage() {
   const children = state.spaces.filter((s) => s.parentId === spaceId);
   const parent = space?.parentId ? state.spaces.find((s) => s.id === space.parentId) : undefined;
 
-  // Deep link: /villa/ff-master?item=xyz opens that item directly.
+  // Deep link: /villa/ff-master?item=xyz opens that item directly; ?tab=Layouts opens a tab.
   React.useEffect(() => {
+    const t = searchParams.get("tab") as Tab | null;
+    if (t && (TABS as readonly string[]).includes(t) && (t !== "Layouts" || hasLayouts)) setTab(t);
     const want = searchParams.get("item");
     if (want) {
       const it = state.items.find((i) => i.id === want);
       if (it) { setOpenItem(it); setTab("Scope"); }
     }
-  }, [searchParams, state.items]);
+  }, [searchParams, state.items, hasLayouts]);
 
+  if (space && !roomLens(state, role, meId)(space.id)) {
+    return <Empty title="Not one of your rooms." hint="Your view is limited to the rooms assigned to you under Admin → People." />;
+  }
   if (!space) {
     return <Empty title="That space is not in the villa." hint="It may have been renamed or removed." />;
   }
@@ -95,6 +105,7 @@ export default function RoomPage() {
     .sort((a, b) => +new Date(a.finish!) - +new Date(b.finish!))[0];
 
   const counts: Partial<Record<Tab, number>> = {
+    Layouts: designFor(spaceId)?.layouts.length,
     Checklist: checklist ? checklist.total - checklist.done : undefined,
     Ideas: ideas.length, Decisions: decisions.length, Scope: r.live,
     Products: products.length, Tasks: tasks.filter((t) => t.status !== "done").length,
@@ -185,9 +196,10 @@ export default function RoomPage() {
         </div>
       </div>
 
-      <Tabs tabs={TABS} active={tab} onChange={setTab} counts={counts} />
+      <Tabs tabs={tabs} active={tab} onChange={setTab} counts={counts} />
 
       <div className="mt-6">
+        {tab === "Layouts" && <LayoutsPanel spaceId={spaceId} />}
         {tab === "Checklist" && <ChecklistTab spaceId={spaceId} />}
         {tab === "Design" && <DesignTab spaceId={spaceId} options={options} ideas={ideas} decisions={decisions} docs={docs} />}
         {tab === "Ideas" && <IdeasTab spaceId={spaceId} ideas={ideas} items={items} />}

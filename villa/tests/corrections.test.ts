@@ -14,7 +14,7 @@ function oldProject(): ProjectState {
     let x: Space = { ...s };
     for (const c of olds) {
       const v = c.from[0];
-      if (v === null) delete (x as Record<string, unknown>)[c.field];
+      if (v === null) delete (x as unknown as Record<string, unknown>)[c.field];
       else x = { ...x, [c.field]: v } as Space;
     }
     return x;

@@ -6,6 +6,7 @@ import { useProject } from "@/lib/store";
 import { roomChecklist, houseChecklist, checklistSummaries, type Checklist, type Check } from "@/lib/model/checklist";
 import { FLOOR_META } from "@/lib/seed/spaces";
 import { DimsShort } from "@/components/Measure";
+import { roomLens } from "@/lib/model/lens";
 import { PageTitle, Eyebrow, Chip, Stat, Bar, Empty } from "@/components/ui";
 import type { FloorId } from "@/lib/model/types";
 
@@ -27,11 +28,14 @@ const STATE_MARK: Record<Check["state"], { mark: string; tone: string; label: st
 };
 
 export default function ChecklistPage() {
-  const { state } = useProject();
+  const { state, role, meId } = useProject();
   const [open, setOpen] = useState<string | null>(null);
   const [hideDone, setHideDone] = useState(false);
 
-  const summaries = useMemo(() => checklistSummaries(state), [state]);
+  const summaries = useMemo(() => {
+    const sees = roomLens(state, role, meId);
+    return checklistSummaries(state).filter((s) => sees(s.spaceId));
+  }, [state, role, meId]);
   const house = useMemo(() => houseChecklist(state), [state]);
   const active: Checklist | undefined = useMemo(
     () => (open === "house" ? house : open ? roomChecklist(state, open) : undefined),

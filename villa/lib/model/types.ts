@@ -74,6 +74,8 @@ export interface Space {
   /** Ceiling height in feet — editable, blank until confirmed on site. */
   ceilingHeightFt?: number;
   archived?: boolean;
+  /** The layout chosen for this room, by id (`${spaceId}:${key}`). Blank until someone chooses. */
+  layoutId?: string;
 }
 
 /* ------------------------------------------------- the scope item lifecycle */
@@ -599,6 +601,8 @@ export interface Note {
   vendorIds: string[];
   decisionIds: string[];
   taskIds: string[];
+  /** Room layouts this note is about. */
+  layoutIds?: string[];
   /** Things this note spawned, so a conversation never evaporates. */
   spawned?: { kind: "task" | "decision" | "snag" | "procurement" | "follow-up"; id: string; label: string }[];
 }
@@ -708,6 +712,8 @@ export interface Person {
   avatarTone?: string;
   /** Off the project but kept for history. */
   inactive?: boolean;
+  /** For a contractor: the only rooms they see. Empty means every room. */
+  spaceIds?: string[];
 }
 
 export interface Scenario {

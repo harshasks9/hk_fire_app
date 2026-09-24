@@ -9,6 +9,7 @@ import { FLOOR_META } from "@/lib/seed/spaces";
 import { rollup, itemsForFloor, spaceMetrics } from "@/lib/model/derive";
 import { inr } from "@/lib/model/costing";
 import { DimsShort } from "@/components/Measure";
+import { roomLens } from "@/lib/model/lens";
 import { measureSpace } from "@/lib/model/measure";
 import type { FloorId } from "@/lib/model/types";
 import { PageTitle, Eyebrow, Bar, Chip } from "@/components/ui";
@@ -25,7 +26,8 @@ const FLOORS: FloorId[] = ["ground", "first", "second", "outdoor"];
  * nobody should ever have to type a room into this app.
  */
 export default function VillaPage() {
-  const { state, hydrated } = useProject();
+  const { state, hydrated, role, meId } = useProject();
+  const sees = roomLens(state, role, meId);
   const [floor, setFloor] = useState<FloorId>("ground");
   const [overlay, setOverlay] = useState<ViewKey>("completion");
   const [selected, setSelected] = useState<string | null>(null);
@@ -43,7 +45,7 @@ export default function VillaPage() {
   }, [hydrated, state.items]);
   const pickOverlay = (k: ViewKey) => { chosen.current = true; setOverlay(k); };
 
-  const spaces = state.spaces.filter((s) => s.floor === floor && !s.archived);
+  const spaces = state.spaces.filter((s) => s.floor === floor && !s.archived && sees(s.id));
 
   const floorArea = spaces.reduce((a, s2) => a + (measureSpace(s2)?.areaSqft ?? 0), 0);
 

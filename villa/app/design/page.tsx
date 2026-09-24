@@ -9,8 +9,10 @@ import { inr } from "@/lib/model/costing";
 import { PageTitle, Eyebrow, Empty, Tabs, PhotoBlock, Chip, Swatch, Avatar, fmtDay, Stat } from "@/components/ui";
 import { OptionTile, DecisionCard } from "@/components/DecisionCard";
 import { Comments } from "@/components/Comments";
+import { LayoutsOverview } from "@/components/LayoutsOverview";
+import { DESIGNS } from "@/lib/design";
 
-const TABS = ["Moodboard", "Options", "Revisions", "Client feedback"] as const;
+const TABS = ["Layouts", "Moodboard", "Options", "Revisions", "Client feedback"] as const;
 type Tab = (typeof TABS)[number];
 
 /**
@@ -22,7 +24,7 @@ type Tab = (typeof TABS)[number];
  */
 export default function DesignPage() {
   const { state, role } = useProject();
-  const [tab, setTab] = useState<Tab>("Moodboard");
+  const [tab, setTab] = useState<Tab>("Layouts");
   const [floor, setFloor] = useState<string>("all");
 
   const spaceById = useMemo(() => new Map(state.spaces.map((s) => [s.id, s])), [state.spaces]);
@@ -78,9 +80,10 @@ export default function DesignPage() {
         <Stat label="Drawings" value={renders.length} sub="renders and technical" />
       </div>
 
-      <Tabs tabs={TABS} active={tab} onChange={setTab} counts={{ Moodboard: ideas.length, Options: options.length, Revisions: renders.length, "Client feedback": feedback.length }} />
+      <Tabs tabs={TABS} active={tab} onChange={setTab} counts={{ Layouts: DESIGNS.length, Moodboard: ideas.length, Options: options.length, Revisions: renders.length, "Client feedback": feedback.length }} />
 
       <div className="mt-6">
+        {tab === "Layouts" && <LayoutsOverview floor={floor} />}
         {tab === "Moodboard" && (
           ideas.length ? (
             <div className="columns-2 md:columns-3 lg:columns-4 gap-3 [column-fill:_balance]">

@@ -1,5 +1,6 @@
 import type { ProjectState } from "./types";
 import { measureShort, measureSpace, mmLabel, areaLabel } from "./measure";
+import { layoutById } from "../design";
 import {
   STAGES, STAGE_LABEL, CATEGORY_LABEL, UNIT_LABEL
 } from "./types";
@@ -139,6 +140,11 @@ export const SCHEMAS: Record<CollectionKey, CollectionSchema> = {
         hint: "Never leave a site measurement labelled as a plan dimension." },
       { key: "ceilingHeightFt", label: "Ceiling height (ft)", type: "number",
         hint: "Blank means the app assumes 10'0\" for wall area and volume." },
+      { key: "_layout", label: "Chosen layout", type: "readonly", inTable: true,
+        compute: (row) => {
+          const l = layoutById((row as { layoutId?: string }).layoutId);
+          return l ? `${l.key} \u2014 ${l.name}` : "\u2014";
+        } },
       { key: "_mm", label: "In millimetres", type: "readonly", inTable: true,
         compute: (row) => mmLabel((row as { dims?: never }).dims) ?? "—" },
       { key: "_area", label: "Floor area", type: "readonly",
@@ -407,6 +413,7 @@ export const SCHEMAS: Record<CollectionKey, CollectionSchema> = {
       { key: "spaceIds", label: "Rooms", type: "tags", hint: "Space ids, one per line." },
       { key: "vendorIds", label: "Vendors", type: "tags", hint: "Vendor ids, one per line." },
       { key: "scopeItemIds", label: "Scope items", type: "tags", hint: "Item ids, one per line." },
+      { key: "layoutIds", label: "Room layouts", type: "tags", hint: "Layout ids, one per line — for example gf-living:A." },
     ],
     blank: ({ id, spaceId, me }) => ({
       id, title: "New note", body: "", kind: "observation", at: now(), author: me,
@@ -506,6 +513,8 @@ export const SCHEMAS: Record<CollectionKey, CollectionSchema> = {
       { key: "email", label: "Email", type: "text" },
       { key: "inactive", label: "Inactive", type: "bool", hint: "Keeps their name on old changes but takes them out of the pickers." },
       { key: "avatarTone", label: "Avatar colour", type: "text", hint: "A hex colour." },
+      { key: "spaceIds", label: "Rooms", type: "tags",
+        hint: "For a contractor: the only rooms they see, as space ids one per line (for example gf-kitchen). Blank means every room. A lens, not a lock." },
     ],
     blank: ({ id }) => ({ id, name: "", role: "designer", avatarTone: "#857b70" }),
     title: (r) => String(r.name || "Unnamed"),
