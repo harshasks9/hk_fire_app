@@ -98,6 +98,8 @@ export type Action =
   | { type: "site/add"; update: SiteUpdate }
   | { type: "space/add"; space: Space }
   | { type: "space/patch"; id: string; patch: Partial<Space> }
+  /** A fact about the building corrected in the model, carried into a saved project. */
+  | { type: "space/correct"; id: string; patch: Partial<Space>; why: string }
   | { type: "scenario/set"; id: string };
 
 /** What survives a wipe. Everything not listed here is emptied. */
@@ -505,6 +507,7 @@ export function reducer(s: ProjectState, a: Action): ProjectState {
       return { ...s, spaces: [...s.spaces, a.space] };
 
     case "space/patch":
+    case "space/correct":
       return { ...s, spaces: s.spaces.map((x) => (x.id === a.id ? { ...x, ...a.patch } : x)) };
 
     case "scenario/set":

@@ -227,13 +227,13 @@ function Plate({
   );
 }
 
-/** The floor's name and headline numbers, floating off its west corner. */
+/** The floor's name and headline numbers, floating off its south-east corner. */
 function FloorTag({
   plan, state, lit, onClick,
 }: { plan: PlanFloor; state: ReturnType<typeof useProject>["state"]; lit: boolean; onClick: () => void }) {
   const r = rollup(itemsForFloor(state, plan.floor), state.decisions);
   const p = plan.plate;
-  // anchored off the plot's west corner so the three tags line up in a column
+  // anchored off the plot's south-east corner so the three tags line up in a column
   const x = px(0, PLOT.h) - 12;
   const y = py(p.x, p.y + p.h) - 6;
   const label = plan.floor === "ground" ? "Ground floor" : plan.floor === "first" ? "First floor" : "Second floor";

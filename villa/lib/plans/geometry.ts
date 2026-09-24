@@ -9,8 +9,9 @@ import type { FloorId } from "../model/types";
  * alongside it in `public/plans` and shown under Villa → Drawings; this file is
  * the machine-readable twin of them.
  *
- * UNITS are tenths of a foot, and the ORIGIN is the north-west corner of the
- * plot for every floor. That matters: because all three floors share one
+ * UNITS are tenths of a foot, and the ORIGIN is the south-west corner of the
+ * plot for every floor. The sheets are drawn road-down, so +x runs north and
+ * +y runs east: the bottom of every sheet is the east, road side. That matters: because all three floors share one
  * origin, the plates stack correctly in the isometric model without any
  * per-floor fudging, and a room on the second floor sits exactly above the one
  * that carries its structure on the ground.
@@ -68,7 +69,7 @@ export interface Opening {
   /** Length along the wall. */
   len: number;
   dir: "h" | "v";
-  /** Which way a door swings open: +1 is south/east of the wall, -1 north/west. */
+  /** Which way a door swings open: +1 is towards +x or +y (north or east of the wall), -1 south or west. */
   swing?: 1 | -1;
   /** Which end the door is hinged on. */
   hinge?: 0 | 1;
@@ -133,7 +134,7 @@ export const GROUND: PlanFloor = {
     { kind: "road", x: 0, y: PLOT.h + 12, w: PLOT.w, h: 48 },
   ],
   rooms: [
-    // ---- north band: the accessible guest suite, and the living room
+    // ---- west band: the grandparents' suite (south-west) and the living room (north-west)
     {
       spaceId: "gf-bedroom", x: 50, y: 90, w: 150, h: 143, finish: "wood", labelDy: 34,
       fit: [
@@ -161,7 +162,7 @@ export const GROUND: PlanFloor = {
         { t: "run", x: 346, y: 272, w: 84, h: 16, kind: "counter" },
       ],
     },
-    // ---- west band: services and the maid's room
+    // ---- south band: services and the helper's room
     { spaceId: "gf-maid-bath", x: 50, y: 243, w: 40, h: 75, finish: "tile", fit: [{ t: "wc", x: 54, y: 286, face: "e" }, { t: "basin", x: 54, y: 249, face: "e" }] },
     { spaceId: "gf-powder", x: 95, y: 243, w: 75, h: 35, finish: "tile", fit: [{ t: "wc", x: 99, y: 250, face: "e" }, { t: "basin", x: 140, y: 247, face: "s" }] },
     {
@@ -189,9 +190,9 @@ export const GROUND: PlanFloor = {
       ],
     },
     { spaceId: "gf-foyer", x: 385, y: 405, w: 60, h: 85, finish: "stone", labelDy: 6 },
-    // ---- south band: the kitchens
+    // ---- east band: the kitchen \u2014 one room since the dividing wall came out
     {
-      spaceId: "gf-wet-kitchen", x: 50, y: 410, w: 75, h: 128, finish: "tile",
+      spaceId: "gf-wet-kitchen", x: 50, y: 410, w: 80, h: 128, finish: "tile",
       fit: [{ t: "run", x: 52, y: 412, w: 14, h: 124, kind: "counter" }, { t: "run", x: 66, y: 520, w: 57, h: 16, kind: "counter" }],
     },
     {
@@ -218,17 +219,17 @@ export const GROUND: PlanFloor = {
     { spaceId: "out-entrance-landscape", x: 514, y: 96, w: 62, h: 132, finish: "grass", outdoor: true, fit: [{ t: "tree", x: 546, y: 150, r: 22 }] },
   ],
   openings: [
-    // north elevation
+    // west elevation
     { k: "window", x: 92, y: 90, len: 56, dir: "h" },
     { k: "window", x: 360, y: 90, len: 92, dir: "h" },
-    // east elevation — the living room opening to the deck
+    // north elevation — the living room opening to the deck
     { k: "slider", x: 508, y: 118, len: 70, dir: "v" },
     { k: "slider", x: 508, y: 214, len: 70, dir: "v" },
-    // west elevation
+    // south elevation
     { k: "window", x: 50, y: 116, len: 62, dir: "v" },
     { k: "window", x: 50, y: 340, len: 48, dir: "v" },
     { k: "window", x: 50, y: 436, len: 66, dir: "v" },
-    // south elevation
+    // east elevation, to the road
     { k: "window", x: 150, y: 538, len: 74, dir: "h" },
     { k: "slider", x: 288, y: 508, len: 74, dir: "h" },
     // the front door, off the porch
@@ -240,7 +241,6 @@ export const GROUND: PlanFloor = {
     { k: "door", x: 90, y: 252, len: 26, dir: "v", swing: 1, hinge: 0 },
     { k: "door", x: 96, y: 325, len: 30, dir: "h", swing: -1, hinge: 0 },
     { k: "door", x: 176, y: 410, len: 32, dir: "h", swing: -1, hinge: 0 },
-    { k: "door", x: 125, y: 452, len: 30, dir: "v", swing: 1, hinge: 0 },
     { k: "arch", x: 332, y: 150, len: 84, dir: "v" },
     { k: "arch", x: 300, y: 392, len: 54, dir: "h" },
     { k: "arch", x: 385, y: 430, len: 44, dir: "v" },
@@ -254,7 +254,7 @@ export const FIRST: PlanFloor = {
   level: 1,
   viewBox: "26 66 506 500",
   plate: PLATE,
-  caption: 'First floor · 45\'10" × 45\'2" · master suite to the west, sit-out over the porch',
+  caption: 'First floor · 45\'10" × 45\'2" · master suite to the south-west, family lounge and sit-out to the north-east',
   rooms: [
     {
       spaceId: "ff-master", x: 50, y: 90, w: 203, h: 143, finish: "wood", labelDy: 30,
@@ -347,7 +347,7 @@ export const SECOND: PlanFloor = {
   viewBox: "26 66 506 500",
   plate: PLATE,
   openToSky: [{ x: 332, y: 90, w: 176, h: 438 }],
-  caption: 'Second floor · theatre, bar lounge and guest suite west · open terrace to the north-east',
+  caption: 'Second floor · theatre to the south-west, office to the south-east, open terrace to the north',
   rooms: [
     {
       spaceId: "sf-theatre", x: 50, y: 90, w: 203, h: 143, finish: "wood", labelDy: 26,

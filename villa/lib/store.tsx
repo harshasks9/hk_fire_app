@@ -5,6 +5,7 @@ import type { ProjectState, Role } from "./model/types";
 import { BUILTIN_CATEGORIES } from "./model/categories";
 import { reducer, type Action } from "./reducer";
 import { newJournal, append, describe, stateAt, EPOCH_ACTIONS, UNJOURNALED, type Journal, type Revision } from "./journal";
+import { pendingCorrections } from "./seed/corrections";
 import { buildProject, buildTwin } from "./seed";
 
 export * from "./reducer";
@@ -203,7 +204,9 @@ export function ProjectProvider({ children }: { children: React.ReactNode }) {
     }
     const before = stateRef.current;
     const { summary, touches } = describe(before, a);
-    const rev = { at: new Date().toISOString(), by: meRef.current.me, byId: meRef.current.meId, action: a, summary, touches };
+    // A correction to the villa model is the model's doing, not whoever happens to be signed in.
+    const system = a.type === "space/correct";
+    const rev = { at: new Date().toISOString(), by: system ? "Villa model" : meRef.current.me, byId: system ? undefined : meRef.current.meId, action: a, summary, touches };
     setJournal((j) => append(j, rev));
     rawDispatch(a);
     enqueue({ action: a, by: rev.by, byId: rev.byId, summary, touches });
@@ -273,6 +276,20 @@ export function ProjectProvider({ children }: { children: React.ReactNode }) {
       /* quota or private mode — the app still works, it just will not remember. */
     }
   }, [state, journal, hydrated]);
+
+  // Carry corrections to the villa model into a project saved before them.
+  // Waits until we know where the project lives, so in server mode they are
+  // applied to the server's copy and recorded in its history, once.
+  const corrected = React.useRef(false);
+  useEffect(() => {
+    if (!hydrated || corrected.current) return;
+    if (storage.mode !== "browser" && storage.mode !== "server") return;
+    if (storage.locked) return;
+    corrected.current = true;
+    for (const c of pendingCorrections(stateRef.current)) {
+      dispatch({ type: "space/correct", id: c.id, patch: c.patch, why: c.why });
+    }
+  }, [hydrated, storage.mode, storage.locked, dispatch]);
 
   const restoreTo = React.useCallback(async (v: number) => {
     // Restoring is itself a change: it lands as a new revision on top, so the

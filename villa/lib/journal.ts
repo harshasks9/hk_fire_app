@@ -242,6 +242,10 @@ export function describe(before: ProjectState, a: Action): { summary: string; to
       const changes = diff(sp as unknown as Record<string, unknown>, a.patch as Record<string, unknown>);
       return { summary: `Edited space “${sp?.name ?? "?"}”${changes.length ? ` — ${changes.join("; ")}` : ""}`, touches: t({ spaceId: a.id, collection: "spaces", id: a.id }) };
     }
+    case "space/correct": {
+      const sp = before.spaces.find((x) => x.id === a.id);
+      return { summary: `Corrected \u201c${sp?.name ?? "?"}\u201d in the villa model \u2014 ${a.why}`, touches: t({ spaceId: a.id, collection: "spaces", id: a.id }) };
+    }
     case "space/delete": {
       const sp = before.spaces.find((x) => x.id === a.id);
       const n = before.items.filter((i) => i.spaceId === a.id).length;

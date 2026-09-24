@@ -50,13 +50,17 @@ describe("cost build-up", () => {
 describe("the villa as drawn", () => {
   it("carries every space named in the brief", () => {
     const names = SPACES.map((s) => s.name.toLowerCase());
-    for (const expected of [
+    // Two rooms in the brief have since changed: the wet kitchen's wall came
+    // down, and Bedroom 5 became the office. Both are still carried, renamed.
+    const NOW: Record<string, string> = { "wet kitchen": "kitchen — hot end", "bedroom 5": "home office" };
+    for (const brief of [
       "master bedroom", "master wic", "master bathroom", "bedroom 3", "bedroom 4", "bedroom 5",
       "home theatre", "puja room", "bar counter", "laundry", "open terrace", "kitchen",
       "wet kitchen", "utility", "maid room", "powder room", "drawing room", "main living room",
       "dining room", "double-height foyer", "family lounge",
     ]) {
-      expect(names.some((n) => n.includes(expected)), `missing ${expected}`).toBe(true);
+      const expected = NOW[brief] ?? brief;
+      expect(names.some((n) => n.includes(expected)), `missing ${brief}`).toBe(true);
     }
   });
 
