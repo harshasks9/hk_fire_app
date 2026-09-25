@@ -105,7 +105,9 @@ const designs: RoomDesign[] = [
     ignoreOpenings: [
       { edge: "right", at: 1300, why: THEATRE_WALL },
     ],
-    assumedOpenings: [{ kind: "door", edge: "bottom", from: 4300, to: 5200, swingIn: false }],
+    // At floor level in the cross-aisle, just in front of the riser — not beside it, where you would step
+    // straight onto a 0.40 m platform in the dark.
+    assumedOpenings: [{ kind: "door", edge: "bottom", from: 3250, to: 4150, swingIn: false }],
     layouts: [
       L("sf-theatre", "A", {
         name: "The 7.2.4 layout from the theatre sheet",
@@ -126,14 +128,14 @@ const designs: RoomDesign[] = [
         pros: ["The layout already worked out on the theatre sheet", "Six seats, every one with a clear sightline"],
         cons: ["The dearest room in the house per square foot", "A dedicated room — it doesn't double as anything else"],
         costDelta: 0,
-        assumptions: [THEATRE_WALL, "The acoustic door is on the east wall, as the theatre sheet assumes. Verify on site."],
+        assumptions: [THEATRE_WALL, "The acoustic door is on the east wall at floor level, just in front of the riser, opening outward. Verify on site."],
       }),
       L("sf-theatre", "B", {
         name: "A lounge theatre: one row, no riser",
         idea: "One big modular sofa facing a 110-inch screen, with a drinks counter at the back — a family room that happens to have a great screen.",
         pieces: [
           { kind: "screen", x: 520, y: 750, w: 80, d: 2440, label: "110-inch screen, 2.44 m wide" },
-          sofaLen(3000, 300, 3600, "right", 1000, "Modular sofa 3600 × 1000, chaise ends"),
+          sofaLen(3000, 300, 3300, "right", 1000, "Modular sofa 3300 × 1000, chaise ends"),
           { kind: "ottoman", x: 2200, y: 1400, w: 600, d: 1200, label: "Ottoman 1200 × 600" },
           counter(5587, 300, 1800, "right", "Drinks counter 1800 × 600, fridge under"),
         ],
