@@ -12,18 +12,18 @@ import { DimsShort } from "@/components/Measure";
 import { roomLens } from "@/lib/model/lens";
 import { measureSpace } from "@/lib/model/measure";
 import type { FloorId } from "@/lib/model/types";
-import { PageTitle, Eyebrow, Bar, Chip } from "@/components/ui";
+import { PageTitle, Chip, Section } from "@/components/ui";
+import { Icon } from "@/components/Icon";
 
 const FLOORS: FloorId[] = ["ground", "first", "second", "outdoor"];
 
 /**
- * The villa.
+ * The rooms.
  *
- * The model at the top is the house itself — three plates you can turn the
- * data on and off over, and click straight into. Below it the same floor is
- * drawn flat and at full size. Both are the same geometry, taken from the
- * architect's plans, and both are pre-populated: the layout is fixed, so
- * nobody should ever have to type a room into this app.
+ * Pick a floor, and everything on the page follows it: the plan drawn flat
+ * and at size, the house as a model beside it, and the rooms as tiles below.
+ * Every room is already here from the architect's plans, each carrying its
+ * own scope — nobody should ever have to type a room into this app.
  */
 export default function VillaPage() {
   const { state, hydrated, role, meId } = useProject();
@@ -43,171 +43,140 @@ export default function VillaPage() {
     chosen.current = true;
     if (!state.items.some((i) => i.stage !== "not-started")) setOverlay("none");
   }, [hydrated, state.items]);
-  const pickOverlay = (k: ViewKey) => { chosen.current = true; setOverlay(k); };
 
   const spaces = state.spaces.filter((s) => s.floor === floor && !s.archived && sees(s.id));
-
   const floorArea = spaces.reduce((a, s2) => a + (measureSpace(s2)?.areaSqft ?? 0), 0);
-
   const undimensioned = spaces.filter((s2) => !s2.dims).length;
+  const hint = OVERLAYS.find((o) => o.key === overlay)?.hint;
 
   return (
     <div>
       <PageTitle
-        title="The villa"
-        sub="Every room from the architect\u2019s drawings, already carrying its own scope. Read it as our redrawing or as the CAD itself, and click any room."
-        right={<Link href="/villa/drawings" className="btn">Architect&rsquo;s drawings</Link>}
+        title="Rooms"
+        sub="Every room from the architect’s drawings, each already carrying its own scope. Pick a floor, then open any room."
+        right={<Link href="/villa/drawings" className="btn"><Icon name="drawings" size={17} /> Architect&rsquo;s drawings</Link>}
       />
 
-      {/* ------------------------------------------------------------ model */}
-      <div className="card px-3 sm:px-5 pt-4 pb-3 mb-5 overflow-hidden" style={{ background: "linear-gradient(170deg,#fffdfa,#f6f2eb)" }}>
-        <div className="flex flex-wrap items-center justify-between gap-2 mb-1">
-          <Eyebrow>The house, floor by floor</Eyebrow>
-          <div className="flex items-center gap-1.5">
-            <button onClick={() => setExploded((v) => !v)} className="btn btn-sm" title="Pull the floors apart or stack them">
-              {exploded ? "Stack" : "Pull apart"}
-            </button>
-          </div>
-        </div>
-        <VillaModel
-          floor={floor} overlay={overlay} selectedId={selected} exploded={exploded}
-          onFloor={(f) => setFloor(f)} onSelect={setSelected}
-        />
-      </div>
-
-      {/* ------------------------------------------------ floor + overlay bar */}
-      <div className="flex flex-wrap items-center gap-1.5 mb-2.5">
-        {FLOORS.map((f) => {
-          const r = rollup(itemsForFloor(state, f), state.decisions);
-          const on = f === floor;
-          return (
-            <button
-              key={f}
-              onClick={() => { setFloor(f); setSelected(null); }}
-              className="rounded-xl px-3 py-1.5 text-[12.5px] font-medium transition-all border flex items-center gap-2"
-              style={{
-                background: on ? "var(--color-ink)" : "var(--color-card)",
-                color: on ? "var(--color-paper)" : "var(--color-ink-2)",
-                borderColor: on ? "var(--color-ink)" : "var(--color-line)",
-              }}
-            >
-              {FLOOR_META[f].label}
-              <span className="tnum text-[11px]" style={{ opacity: 0.7 }}>{Math.round(r.completionPct)}%</span>
-            </button>
-          );
-        })}
-      </div>
-
-      <div className="flex flex-wrap items-center gap-1.5 mb-1.5">
-        <span className="eyebrow mr-1">Read as</span>
-        {OVERLAYS.filter((o) => o.group === "status").map((o) => (
-          <OverlayBtn key={o.key} o={o} active={overlay === o.key} onClick={() => pickOverlay(o.key)} />
-        ))}
-      </div>
-      <div className="flex flex-wrap items-center gap-1.5 mb-4">
-        <span className="eyebrow mr-1">Services</span>
-        {OVERLAYS.filter((o) => o.group === "services").map((o) => (
-          <OverlayBtn key={o.key} o={o} active={overlay === o.key} onClick={() => pickOverlay(o.key)} />
-        ))}
-      </div>
-
-      {/* ------------------------------------------------------------- plan */}
-      <div className="card px-3 sm:px-6 py-5">
-        <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
-          <div className="flex items-center gap-1.5">
-            <span className="eyebrow mr-1">Drawn as</span>
-            {(["stylised", "cad"] as const).map((b) => (
-              <button
-                key={b}
-                onClick={() => setBase(b)}
-                title={b === "cad"
-                  ? "The architect's own CAD linework, straight from the DWG"
-                  : "The app's redrawing — simplified, textured, easier to read at a glance"}
-                className="rounded-lg px-2.5 py-1 text-[12px] font-medium transition-colors border"
-                style={{
-                  background: base === b ? "var(--color-ink)" : "var(--color-card)",
-                  color: base === b ? "var(--color-paper)" : "var(--color-ink-2)",
-                  borderColor: base === b ? "var(--color-ink)" : "var(--color-line)",
-                }}
-              >
-                {b === "cad" ? "Architect's CAD" : "Redrawing"}
-              </button>
-            ))}
-          </div>
-          {base === "cad" && (
-            <label className="flex items-center gap-1.5 text-[11.5px] text-ink-3 cursor-pointer">
-              <input type="checkbox" checked={cadGrid} onChange={(e) => setCadGrid(e.target.checked)} />
-              Column grid
-            </label>
-          )}
-        </div>
-        <FloorPlan floor={floor} overlay={overlay} selectedId={selected} onSelect={setSelected}
-          base={base} cadGrid={cadGrid} />
-      </div>
-
-      {/* -------------------------------------------------------- room list */}
-      <div className="mt-6">
-        <div className="flex items-end justify-between gap-3 mb-2.5">
-          <Eyebrow>
-            {FLOOR_META[floor].label} — {spaces.length} spaces
-            {floorArea > 0 && <> · {Math.round(floorArea)} sq ft dimensioned</>}
-            {undimensioned > 0 && <> · {undimensioned} not dimensioned</>}
-          </Eyebrow>
-          <span className="text-[11.5px] text-ink-3 hidden sm:block">Every one already has its own scope checklist.</span>
-        </div>
-        <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-2.5">
-          {spaces.map((s) => {
-            const m = spaceMetrics(state, s.id);
+      {/* ------------------------------------------------ floor + colour by */}
+      <div className="flex flex-wrap items-end justify-between gap-3 mb-4">
+        <div className="flex gap-1.5 overflow-x-auto -mx-1 px-1 pb-1" role="group" aria-label="Floor" style={{ scrollbarWidth: "none" }}>
+          {FLOORS.map((f) => {
+            const r = rollup(itemsForFloor(state, f), state.decisions);
+            const on = f === floor;
             return (
-              <Link
-                key={s.id}
-                href={`/villa/${s.id}`}
-                onMouseEnter={() => setSelected(s.id)}
-                onMouseLeave={() => setSelected(null)}
-                className="card px-3.5 py-3 hover:border-ink-4 transition-colors"
-              >
-                <div className="flex items-start justify-between gap-2">
-                  <div className="min-w-0">
-                    <div className="text-[13.5px] leading-snug">{s.name}</div>
-                    <div className="text-[11px] text-ink-3 mt-0.5">
-                      <DimsShort sp={s} />
-                    </div>
-                  </div>
-                  <span className="tnum text-[12px] text-ink-3 shrink-0">{Math.round(m.completionPct)}%</span>
-                </div>
-                <div className="mt-2"><Bar pct={m.completionPct} height={4} /></div>
-                <div className="mt-2 flex flex-wrap items-center gap-1.5">
-                  <span className="text-[11px] text-ink-3 tnum">{m.liveCount} items</span>
-                  <span className="text-[11px] text-ink-4">·</span>
-                  <span className="text-[11px] text-ink-3 tnum">{inr(m.forecast, { compact: true })}</span>
-                  {m.decisionsOpen > 0 && <Chip tone="clay">{m.decisionsOpen} to decide</Chip>}
-                  {m.snagsOpen > 0 && <Chip tone="rust">{m.snagsOpen} snag{m.snagsOpen > 1 ? "s" : ""}</Chip>}
-                  {m.procurementRisk > 0 && <Chip tone="ochre">{m.procurementRisk} at risk</Chip>}
-                </div>
-              </Link>
+              <button key={f} className="pill shrink-0" aria-pressed={on}
+                onClick={() => { setFloor(f); setSelected(null); }}>
+                {FLOOR_META[f].label}
+                <span className="count">{Math.round(r.completionPct)}%</span>
+              </button>
             );
           })}
         </div>
+        <label className="flex items-center gap-2 text-[13px] text-ink-3">
+          <span className="shrink-0">Colour rooms by</span>
+          <select className="input w-auto min-w-[180px]" value={overlay}
+            onChange={(e) => { chosen.current = true; setOverlay(e.target.value as ViewKey); }}>
+            <optgroup label="Status">
+              {OVERLAYS.filter((o) => o.group === "status").map((o) => <option key={o.key} value={o.key}>{o.key === "none" ? "Nothing — just the plan" : o.label}</option>)}
+            </optgroup>
+            <optgroup label="Services">
+              {OVERLAYS.filter((o) => o.group === "services").map((o) => <option key={o.key} value={o.key}>{o.label}</option>)}
+            </optgroup>
+          </select>
+        </label>
       </div>
-    </div>
-  );
-}
 
-function OverlayBtn({
-  o, active, onClick,
-}: { o: { key: ViewKey; label: string; hint: string }; active: boolean; onClick: () => void }) {
-  return (
-    <button
-      onClick={onClick}
-      title={o.hint}
-      className="rounded-lg px-2.5 py-1 text-[12px] font-medium transition-colors border"
-      style={{
-        background: active ? "var(--color-clay)" : "var(--color-card)",
-        color: active ? "#fff" : "var(--color-ink-2)",
-        borderColor: active ? "var(--color-clay)" : "var(--color-line)",
-      }}
-    >
-      {o.label}
-    </button>
+      {/* ------------------------------------------------- plan + room list */}
+      <div className="grid xl:grid-cols-[minmax(0,1.6fr)_minmax(300px,1fr)] gap-4 mb-10 items-start">
+        <div className="card px-3 sm:px-5 pt-4 pb-4">
+          <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
+            <div>
+              <h2 className="text-[16px]">{FLOOR_META[floor].label}</h2>
+              {overlay !== "none" && hint && <p className="text-[13px] text-ink-3">{hint}</p>}
+            </div>
+            <div className="flex items-center gap-2">
+              {base === "cad" && (
+                <label className="flex items-center gap-1.5 text-[13px] text-ink-3 cursor-pointer">
+                  <input type="checkbox" checked={cadGrid} onChange={(e) => setCadGrid(e.target.checked)} />
+                  Column grid
+                </label>
+              )}
+              <div className="flex gap-1" role="group" aria-label="Drawn as">
+                {(["stylised", "cad"] as const).map((b) => (
+                  <button key={b} className="pill" aria-pressed={base === b} onClick={() => setBase(b)}
+                    title={b === "cad" ? "The architect's own CAD linework, straight from the DWG" : "The app's redrawing — simplified and easier to read"}>
+                    {b === "cad" ? "CAD" : "Redrawing"}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+          <FloorPlan floor={floor} overlay={overlay} selectedId={selected} onSelect={setSelected} base={base} cadGrid={cadGrid} />
+        </div>
+
+        {/* The rooms on this floor, beside the plan: hover one to find it. */}
+        <div className="card overflow-hidden xl:sticky xl:top-6">
+          <div className="px-4 pt-4 pb-3 border-b border-line">
+            <h2 className="text-[16px]">{spaces.length} rooms</h2>
+            <p className="text-[13px] text-ink-3 tnum">
+              {floorArea > 0 && <>{Math.round(floorArea).toLocaleString("en-IN")} sq ft dimensioned</>}
+              {undimensioned > 0 && <> · {undimensioned} not dimensioned</>}
+            </p>
+          </div>
+          <ul className="divide-y divide-line xl:max-h-[calc(100dvh-180px)] xl:overflow-y-auto thin-scroll">
+            {spaces.map((s) => {
+              const m = spaceMetrics(state, s.id);
+              const on = selected === s.id;
+              return (
+                <li key={s.id}>
+                  <Link
+                    href={`/villa/${s.id}`}
+                    onMouseEnter={() => setSelected(s.id)}
+                    onMouseLeave={() => setSelected(null)}
+                    onFocus={() => setSelected(s.id)}
+                    onBlur={() => setSelected(null)}
+                    className={`flex items-center gap-3 px-4 py-3 transition-colors group ${on ? "bg-paper" : "hover:bg-paper"}`}
+                  >
+                    <span className="min-w-0 flex-1">
+                      <span className="flex items-baseline justify-between gap-2">
+                        <span className="text-[14.5px] font-semibold leading-snug truncate group-hover:text-accent-strong">{s.name}</span>
+                        <span className="tnum text-[12.5px] text-ink-3 shrink-0">{Math.round(m.completionPct)}%</span>
+                      </span>
+                      <span className="block text-[12.5px] text-ink-3 mt-0.5 truncate">
+                        <DimsShort sp={s} /> · {m.liveCount} items · {inr(m.forecast, { compact: true })}
+                      </span>
+                      {(m.decisionsOpen > 0 || m.snagsOpen > 0 || m.procurementRisk > 0) && (
+                        <span className="mt-1.5 flex flex-wrap gap-1">
+                          {m.decisionsOpen > 0 && <Chip tone="accent" small>{m.decisionsOpen} to decide</Chip>}
+                          {m.snagsOpen > 0 && <Chip tone="bad" small>{m.snagsOpen} snag{m.snagsOpen > 1 ? "s" : ""}</Chip>}
+                          {m.procurementRisk > 0 && <Chip tone="warn" small>{m.procurementRisk} at risk</Chip>}
+                        </span>
+                      )}
+                    </span>
+                    <Icon name="chevron-right" size={16} className="text-ink-4 shrink-0 group-hover:text-ink" />
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </div>
+
+      {/* ------------------------------------------------------------ model */}
+      <Section
+        title="The house, floor by floor"
+        action={
+          <button onClick={() => setExploded((v) => !v)} className="btn btn-sm" aria-pressed={!exploded}>
+            {exploded ? "Stack the floors" : "Pull them apart"}
+          </button>
+        }
+      >
+        <div className="card px-3 sm:px-5 pt-3 pb-2 overflow-hidden">
+          <p className="text-[13px] text-ink-3 mb-1">Click a floor to switch to it; the colours follow &ldquo;Colour rooms by&rdquo;.</p>
+          <VillaModel floor={floor} overlay={overlay} selectedId={selected} exploded={exploded}
+            onFloor={(f) => { setFloor(f); setSelected(null); }} onSelect={setSelected} />
+        </div>
+      </Section>
+    </div>
   );
 }

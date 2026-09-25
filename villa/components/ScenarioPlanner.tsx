@@ -3,10 +3,10 @@
 import React, { useMemo, useState } from "react";
 import { useProject } from "@/lib/store";
 import { SCENARIOS, TRADE_OFFS, scenarioForecast, scenarioTotal } from "@/lib/seed";
-import { forecastOf, byCategory, itemsForSpace, projectFinance } from "@/lib/model/derive";
+import { byCategory, itemsForSpace } from "@/lib/model/derive";
 import { inr } from "@/lib/model/costing";
-import { CATEGORY_LABEL, type Category, type Scenario } from "@/lib/model/types";
-import { Eyebrow, Stat, Money, Bar, Chip, Assumed } from "./ui";
+import { type Category, type Scenario } from "@/lib/model/types";
+import { Bar, Chip, Assumed, Section, Empty } from "./ui";
 import { catLabel } from "@/lib/model/categories";
 
 /**
@@ -22,8 +22,7 @@ export function ScenarioPlanner() {
   const [active, setActive] = useState<string>("sc-premium");
   const [room, setRoom] = useState<string>("");
 
-  const live = state.items.filter((i) => i.stage !== "not-applicable");
-  const fin = projectFinance(state);
+  const live = useMemo(() => state.items.filter((i) => i.stage !== "not-applicable"), [state.items]);
 
   const totals = useMemo(
     () => SCENARIOS.map((s) => ({ s, total: scenarioTotal(live, s) })),
@@ -31,27 +30,35 @@ export function ScenarioPlanner() {
   );
   const baseline = totals.find((t) => t.s.id === "sc-premium")!.total;
   const current = totals.find((t) => t.s.id === active)!;
+  const top = Math.max(...totals.map((t) => t.total), 1);
 
   // Where the difference between this scenario and the baseline actually sits.
   const catDelta = useMemo(() => {
     const grouped = byCategory(live);
+    const base = SCENARIOS.find((s) => s.id === "sc-premium");
     const rows: { cat: Category; base: number; now: number; delta: number }[] = [];
     for (const [cat, list] of grouped) {
-      const base = list.reduce((a, i) => a + scenarioForecast(i, SCENARIOS.find((s) => s.id === "sc-premium")), 0);
+      const b = list.reduce((a, i) => a + scenarioForecast(i, base), 0);
       const now = list.reduce((a, i) => a + scenarioForecast(i, current.s), 0);
-      if (Math.abs(now - base) > 1000) rows.push({ cat, base, now, delta: now - base });
+      if (Math.abs(now - b) > 1000) rows.push({ cat, base: b, now, delta: now - b });
     }
     return rows.sort((a, b) => Math.abs(b.delta) - Math.abs(a.delta));
   }, [live, current.s]);
 
   const maxDelta = Math.max(...catDelta.map((r) => Math.abs(r.delta)), 1);
 
+  if (!live.length) {
+    return (
+      <Empty icon="compare" title="Nothing to compare yet."
+        hint="Scenarios re-price the project's scope at different spend levels. Add scope to the rooms and the three versions appear here." />
+    );
+  }
+
   return (
-    <div className="space-y-7">
+    <div>
       {/* ------------------------------------------------------- the three */}
-      <div>
-        <Eyebrow className="mb-2.5">Three versions of the same villa</Eyebrow>
-        <div className="grid md:grid-cols-3 gap-3">
+      <Section title="Three versions of the same villa">
+        <div className="grid md:grid-cols-3 gap-3" role="group" aria-label="Choose a scenario">
           {totals.map(({ s, total }) => {
             const on = s.id === active;
             const delta = total - baseline;
@@ -59,100 +66,97 @@ export function ScenarioPlanner() {
               <button
                 key={s.id}
                 onClick={() => setActive(s.id)}
-                className="card text-left px-4 py-4 transition-all"
-                style={{
-                  borderColor: on ? "var(--color-clay)" : "var(--color-line)",
-                  boxShadow: on ? "0 2px 14px rgba(176,96,58,.12)" : undefined,
-                }}
+                aria-pressed={on}
+                className={`card card-link text-left px-4 py-4 ${on ? "border-accent ring-1 ring-accent" : ""}`}
               >
-                <div className="flex items-baseline justify-between gap-2">
-                  <span className="text-[16px]" style={{ fontFamily: "var(--font-display)" }}>{s.name}</span>
-                  {s.id === "sc-premium" && <Chip tone="ghost">as designed</Chip>}
+                <div className="flex items-center justify-between gap-2">
+                  <span className="text-[16px] font-semibold leading-snug">{s.name}</span>
+                  {s.id === "sc-premium" ? <Chip tone="ghost">As designed</Chip> : on ? <Chip tone="accent">Showing</Chip> : null}
                 </div>
-                <div className="text-[11.5px] text-ink-3 mt-0.5">{s.subtitle}</div>
-                <div className="tnum text-[26px] mt-3 leading-none" style={{ fontFamily: "var(--font-display)" }}>
+                <div className="text-[13px] text-ink-3 mt-0.5 leading-snug">{s.subtitle}</div>
+                <div className="text-[26px] font-semibold tracking-[-0.02em] mt-3 leading-none">
                   {inr(total, { compact: true })}
                 </div>
-                {delta !== 0 && (
-                  <div className="text-[12px] mt-1.5 tnum" style={{ color: delta > 0 ? "#8d3a2c" : "#41603f" }}>
-                    {delta > 0 ? "+" : ""}{inr(delta, { compact: true })} vs as designed
-                  </div>
-                )}
+                <div className={`text-[13px] mt-1.5 tnum ${delta > 0 ? "text-bad" : delta < 0 ? "text-good" : "text-ink-3"}`}>
+                  {delta === 0 ? "The baseline" : `${delta > 0 ? "+" : ""}${inr(delta, { compact: true })} against as designed`}
+                </div>
                 <div className="mt-3">
-                  <Bar pct={(total / Math.max(...totals.map((t) => t.total))) * 100} height={5} tone={on ? "#b0603a" : "#a39684"} />
+                  <Bar pct={(total / top) * 100} height={5} tone={on ? "var(--color-accent)" : "var(--color-line-2)"} label={`${s.name} against the most expensive version`} />
                 </div>
               </button>
             );
           })}
         </div>
-        <p className="text-[12.5px] text-ink-2 mt-3 leading-relaxed max-w-3xl">{current.s.note}</p>
-        <p className="text-[11px] text-ink-3 mt-2 leading-relaxed max-w-3xl">
+        <p className="text-[14px] text-ink-2 mt-4 leading-relaxed max-w-3xl">{current.s.note}</p>
+        <p className="text-[12.5px] text-ink-3 mt-2 leading-relaxed max-w-3xl">
           Money already committed on a purchase order is never scenarioed away — those
           items hold their real value in every version. The rest moves on{" "}
           <Assumed note="Category-level multipliers over the current forecast. They model the shape of the trade, not a quotation.">
             modelled multipliers
           </Assumed>.
         </p>
-      </div>
+      </Section>
 
       {/* ------------------------------------------------- where it goes */}
       {catDelta.length > 0 && (
-        <div>
-          <Eyebrow className="mb-2.5">Where the difference sits — {current.s.name} vs as designed</Eyebrow>
-          <div className="card px-4 sm:px-5 py-4">
-            <div className="space-y-2.5">
+        <Section title={<>Where the difference sits <span className="text-ink-3 font-normal">— {current.s.name} against as designed</span></>}>
+          <div className="card px-4 sm:px-5 py-5">
+            <ul className="space-y-3">
               {catDelta.slice(0, 12).map((r) => (
-                <div key={r.cat}>
-                  <div className="flex items-baseline justify-between text-[12.5px] mb-1">
-                    <span className="text-ink-2">{catLabel(state, r.cat)}</span>
-                    <span className="tnum" style={{ color: r.delta > 0 ? "#8d3a2c" : "#41603f" }}>
+                <li key={r.cat}>
+                  <div className="flex items-baseline justify-between gap-3 text-[13.5px] mb-1.5">
+                    <span className="text-ink-2 min-w-0 truncate">{catLabel(state, r.cat)}</span>
+                    <span className={`tnum shrink-0 ${r.delta > 0 ? "text-bad" : "text-good"}`}>
                       {r.delta > 0 ? "+" : ""}{inr(r.delta, { compact: true })}
                     </span>
                   </div>
-                  <div className="flex items-center">
+                  <div className="flex items-center" aria-hidden>
                     <div className="w-1/2 flex justify-end">
                       {r.delta < 0 && (
-                        <div className="h-[6px] rounded-l-full" style={{ width: `${(Math.abs(r.delta) / maxDelta) * 100}%`, background: "#7d9a7a" }} />
+                        <div className="h-[6px] rounded-l-full bg-good/70" style={{ width: `${(Math.abs(r.delta) / maxDelta) * 100}%` }} />
                       )}
                     </div>
                     <div className="w-px h-3 bg-line-2" />
                     <div className="w-1/2">
                       {r.delta > 0 && (
-                        <div className="h-[6px] rounded-r-full" style={{ width: `${(Math.abs(r.delta) / maxDelta) * 100}%`, background: "#c98b78" }} />
+                        <div className="h-[6px] rounded-r-full bg-bad/60" style={{ width: `${(Math.abs(r.delta) / maxDelta) * 100}%` }} />
                       )}
                     </div>
                   </div>
-                </div>
+                </li>
               ))}
+            </ul>
+            <div className="mt-4 flex flex-wrap gap-x-4 gap-y-1 text-[12.5px] text-ink-3">
+              <span className="inline-flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-good/70" /> Saves money</span>
+              <span className="inline-flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-bad/60" /> Costs more</span>
             </div>
           </div>
-        </div>
+        </Section>
       )}
 
       {/* ------------------------------------------------------- trade-offs */}
-      <div>
-        <Eyebrow className="mb-1">The specific trades</Eyebrow>
-        <p className="text-[12.5px] text-ink-3 mb-3 leading-relaxed max-w-2xl">
+      <Section title="The specific trades">
+        <p className="text-[14px] text-ink-3 -mt-1 mb-4 leading-relaxed max-w-2xl">
           Each of these shows what it costs in one room and what it costs across the whole
           villa. The second number is usually the one that changes the answer.
         </p>
         <div className="space-y-3">
-          {TRADE_OFFS.map((t) => <TradeOff key={t.id} t={t} room={room} setRoom={setRoom} />)}
+          {TRADE_OFFS.map((t) => <TradeOff key={t.id} t={t} live={live} room={room} setRoom={setRoom} />)}
         </div>
-      </div>
+      </Section>
     </div>
   );
 }
 
 function TradeOff({
-  t, room, setRoom,
+  t, live, room, setRoom,
 }: {
   t: (typeof TRADE_OFFS)[number];
+  live: ReturnType<typeof useProject>["state"]["items"];
   room: string;
   setRoom: (s: string) => void;
 }) {
   const { state } = useProject();
-  const live = state.items.filter((i) => i.stage !== "not-applicable");
 
   const asScenario = (mult: Record<string, number>): Scenario => ({
     id: "tmp", name: "", subtitle: "", overrides: {},
@@ -178,29 +182,29 @@ function TradeOff({
     .sort((x, y) => Math.abs(y.b - y.a) - Math.abs(x.b - x.a));
 
   const sel = touched.find((x) => x.space.id === room) ?? touched[0];
+  const selectId = `trade-room-${t.id}`;
 
   return (
     <div className="card px-4 sm:px-5 py-4">
-      <div className="flex flex-wrap items-baseline justify-between gap-2">
-        <h3 className="text-[15px]">{t.label}</h3>
-        <span className="text-[12px] text-ink-3">{t.question}</span>
+      <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
+        <h3 className="text-[15.5px]">{t.label}</h3>
+        <span className="text-[13px] text-ink-3">{t.question}</span>
       </div>
 
       <div className="grid sm:grid-cols-2 gap-3 mt-3.5">
-        {[["a", t.a, aWhole], ["b", t.b, bWhole]].map(([k, side, whole]) => {
-          const s = side as typeof t.a;
+        {([["a", t.a, aWhole], ["b", t.b, bWhole]] as const).map(([k, side, whole]) => {
           const isB = k === "b";
           return (
-            <div key={k as string} className="rounded-xl px-3.5 py-3" style={{ background: isB ? "#f7f0ea" : "#f2f3ef" }}>
-              <div className="text-[13px] font-medium">{s.label}</div>
-              <div className="tnum text-[19px] mt-1.5" style={{ fontFamily: "var(--font-display)" }}>
-                {inr(whole as number, { compact: true })}
+            <div key={k} className={`rounded-xl px-4 py-3 ${isB ? "bg-accent-soft" : "bg-paper-2"}`}>
+              <div className="text-[14px] font-medium">{side.label}</div>
+              <div className="text-[20px] font-semibold tracking-[-0.02em] mt-1.5 leading-tight">
+                {inr(whole, { compact: true })}
               </div>
-              <div className="text-[10.5px] text-ink-3">whole project</div>
+              <div className="text-[12.5px] text-ink-3">whole project</div>
               {sel && (
-                <div className="mt-2 pt-2 border-t border-line/70">
-                  <div className="tnum text-[13.5px]">{inr(isB ? sel.b : sel.a, { compact: true })}</div>
-                  <div className="text-[10.5px] text-ink-3">in {sel.space.name}</div>
+                <div className="mt-2.5 pt-2.5 border-t border-line-2/60">
+                  <div className="tnum text-[14px]">{inr(isB ? sel.b : sel.a, { compact: true })}</div>
+                  <div className="text-[12.5px] text-ink-3">in {sel.space.name}</div>
                 </div>
               )}
             </div>
@@ -208,19 +212,22 @@ function TradeOff({
         })}
       </div>
 
-      <div className="mt-3 flex flex-wrap items-center justify-between gap-2">
-        <span className="text-[12.5px] tnum" style={{ color: wholeDelta > 0 ? "#8d3a2c" : "#41603f" }}>
-          {t.b.label} costs {wholeDelta > 0 ? "+" : ""}{inr(wholeDelta, { compact: true })} more across the villa
-          {sel && <> · {inr((sel.b - sel.a), { compact: true })} in {sel.space.name}</>}
+      <div className="mt-3 flex flex-wrap items-center justify-between gap-x-3 gap-y-2">
+        <span className={`text-[13.5px] tnum ${wholeDelta > 0 ? "text-bad" : "text-good"}`}>
+          {t.b.label} {wholeDelta >= 0 ? `costs ${inr(wholeDelta, { compact: true })} more` : `saves ${inr(-wholeDelta, { compact: true })}`} across the villa
+          {sel && <> · {inr(sel.b - sel.a, { compact: true })} in {sel.space.name}</>}
         </span>
         {touched.length > 1 && (
-          <select className="input w-auto text-[12px]" value={sel?.space.id ?? ""} onChange={(e) => setRoom(e.target.value)}>
-            {touched.slice(0, 12).map((x) => <option key={x.space.id} value={x.space.id}>{x.space.name}</option>)}
-          </select>
+          <label htmlFor={selectId} className="flex items-center gap-2 text-[13px] text-ink-3">
+            Room
+            <select id={selectId} className="input w-auto min-h-[34px] py-1 text-[13.5px]" value={sel?.space.id ?? ""} onChange={(e) => setRoom(e.target.value)}>
+              {touched.slice(0, 12).map((x) => <option key={x.space.id} value={x.space.id}>{x.space.name}</option>)}
+            </select>
+          </label>
         )}
       </div>
 
-      <p className="text-[12px] text-ink-3 mt-2.5 leading-relaxed">{t.note}</p>
+      <p className="text-[13px] text-ink-3 mt-2.5 leading-relaxed">{t.note}</p>
     </div>
   );
 }

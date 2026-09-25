@@ -10,7 +10,8 @@ import { buildUpFromCategory } from "@/lib/model/categories";
 import { rollup, itemsForFloor, itemsForSpace, houseWideItems } from "@/lib/model/derive";
 import { inr } from "@/lib/model/costing";
 import type { FloorId, Space, ScopeItem, SpaceKind } from "@/lib/model/types";
-import { PageTitle, Eyebrow, Tabs, Sheet, Field } from "@/components/ui";
+import { PageTitle, Tabs, Sheet, Field, NumberInput, useToast, fmtDate } from "@/components/ui";
+import { Icon } from "@/components/Icon";
 import { EntityEditor } from "@/components/EntityEditor";
 
 type Scope = FloorId | "house";
@@ -63,6 +64,10 @@ export default function ManagePage() {
   const [addSpace, setAddSpace] = useState(false);
   const [merge, setMerge] = useState<Space | null>(null);
   const [showMeta, setShowMeta] = useState(false);
+  // /manage?settings=1 opens the project settings — Home links here to set the budget.
+  React.useEffect(() => {
+    if (new URLSearchParams(window.location.search).get("settings")) setShowMeta(true);
+  }, []);
 
   const isHouse = scope === "house";
   const groups = isHouse ? GLOBAL_GROUPS : FLOOR_GROUPS;
@@ -135,17 +140,22 @@ export default function ManagePage() {
     ? rollup(houseWideItems(state), state.decisions)
     : rollup(itemsForFloor(state, scope as FloorId), state.decisions);
 
+  const room = roomFilter ? state.spaces.find((s) => s.id === roomFilter) : undefined;
+
   return (
     <div>
-      <div className="text-[12px] text-ink-3 mb-3"><Link href="/more" className="hover:text-clay">More</Link> / Manage</div>
       <PageTitle
-        title="Manage the project"
-        sub="Everything in the villa, floor by floor. Deleting cleans up whatever pointed at it."
-        right={<button className="btn" onClick={() => setShowMeta(true)}>Project settings</button>}
+        title="Manage"
+        sub="Create, edit and delete anything in the project, floor by floor. Deleting something also cleans up whatever pointed at it."
+        right={
+          <button className="btn" onClick={() => setShowMeta(true)}>
+            <Icon name="admin" size={16} /> Project settings
+          </button>
+        }
       />
 
       {/* ------------------------------------------------------ floor rail */}
-      <div className="flex flex-wrap gap-1.5 mb-4">
+      <div className="flex flex-wrap gap-2 mb-4" role="group" aria-label="Floor">
         {SCOPES.map((s) => {
           const on = s.id === scope;
           const n = s.id === "house"
@@ -154,36 +164,37 @@ export default function ManagePage() {
           return (
             <button
               key={s.id}
+              aria-pressed={on}
               onClick={() => { setScope(s.id); setRoomFilter(""); }}
-              className="rounded-lg px-3 py-1.5 text-[13px] font-medium border transition-colors"
-              style={{
-                background: on ? "var(--color-ink)" : "var(--color-card)",
-                color: on ? "var(--color-paper)" : "var(--color-ink-2)",
-                borderColor: on ? "var(--color-ink)" : "var(--color-line)",
-              }}
+              className="pill"
+              title={s.id === "house" ? `${n} house-wide scope items` : `${n} rooms`}
             >
               {s.label}
-              <span className="ml-1.5 tnum text-[11px] opacity-65">{n}</span>
+              <span className="count">{n}</span>
             </button>
           );
         })}
       </div>
 
-      <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mb-5 text-[12.5px] text-ink-3">
-        <span className="tnum"><strong className="text-ink font-medium">{r.live}</strong> scope items</span>
-        <span className="tnum"><strong className="text-ink font-medium">{inr(r.forecast, { compact: true })}</strong> forecast</span>
-        <span className="tnum"><strong className="text-ink font-medium">{Math.round(r.completionPct)}%</strong> complete</span>
-        {r.notApplicable > 0 && <span className="tnum">{r.notApplicable} not applicable</span>}
+      <div className="flex flex-wrap items-center gap-x-5 gap-y-1.5 mb-5 text-[13.5px] text-ink-3">
+        <span><strong className="text-ink font-semibold tnum">{r.live}</strong> scope items</span>
+        <span><strong className="text-ink font-semibold tnum">{inr(r.forecast, { compact: true })}</strong> forecast</span>
+        <span><strong className="text-ink font-semibold tnum">{Math.round(r.completionPct)}%</strong> complete</span>
+        {r.notApplicable > 0 && <span><span className="tnum">{r.notApplicable}</span> not applicable</span>}
         {r.decisionsOutstanding > 0 && (
-          <span className="tnum" style={{ color: "#9c5333" }}>{r.decisionsOutstanding} awaiting decision</span>
+          <Link href="/decisions" className="inline-flex items-center gap-1.5 text-warn font-medium hover:underline">
+            <Icon name="decisions" size={15} />
+            <span className="tnum">{r.decisionsOutstanding}</span> awaiting a decision
+          </Link>
         )}
       </div>
 
       {/* ------------------------------------------------------ room filter */}
       {!isHouse && (
-        <div className="flex flex-wrap items-center gap-2 mb-4">
+        <div className="flex flex-wrap items-center gap-2 mb-5">
           <select
-            className="input w-auto flex-1 min-w-[190px]"
+            className="input w-auto flex-1 min-w-[200px] sm:max-w-[360px]"
+            aria-label="Room"
             value={roomFilter}
             onChange={(e) => setRoomFilter(e.target.value)}
           >
@@ -194,21 +205,26 @@ export default function ManagePage() {
               </option>
             ))}
           </select>
-          <button className="btn btn-sm" onClick={() => setAddSpace(true)}>Add a space</button>
-          {roomFilter && (
+          {room && (
             <>
-              <Link href={`/villa/${roomFilter}`} className="btn btn-sm">Open workspace</Link>
-              <button className="btn btn-sm" onClick={() => setMerge(state.spaces.find((s) => s.id === roomFilter) ?? null)}>
-                Combine
+              <Link href={`/villa/${room.id}`} className="btn btn-sm">
+                <Icon name="open" size={15} /> Open {room.name}
+              </Link>
+              <button className="btn btn-sm" onClick={() => setMerge(room)}>
+                <Icon name="compare" size={15} /> Combine…
               </button>
             </>
           )}
+          <button className="btn btn-sm sm:ml-auto" onClick={() => setAddSpace(true)} title="A new room, born with the checklist its kind implies">
+            <Icon name="plus" size={15} strokeWidth={2} /> Add a room with its checklist
+          </button>
         </div>
       )}
 
       <Tabs
         tabs={groups.map((g) => g.label)}
         active={group.label}
+        label="Kind of record"
         onChange={(label) => {
           const g = groups.find((x) => x.label === label);
           if (g) setTab(g.keys[0]);
@@ -216,17 +232,9 @@ export default function ManagePage() {
       />
 
       {group.keys.length > 1 && (
-        <div className="flex flex-wrap gap-1.5 mt-3">
+        <div className="flex flex-wrap gap-2 mt-4" role="group" aria-label={group.label}>
           {group.keys.map((k) => (
-            <button
-              key={k}
-              onClick={() => setTab(k)}
-              className="chip"
-              style={{
-                background: k === activeTab ? "#f2e2d9" : "#f4f1ec",
-                color: k === activeTab ? "#9c5333" : "#857b70",
-              }}
-            >
+            <button key={k} onClick={() => setTab(k)} className="pill" aria-pressed={k === activeTab}>
               {SCHEMAS[k].label}
             </button>
           ))}
@@ -242,7 +250,7 @@ export default function ManagePage() {
       </div>
 
       {addSpace && <AddSpace floor={scope as FloorId} onClose={() => setAddSpace(false)} />}
-      {merge && <MergeSpace from={merge} onClose={() => { setMerge(null); setRoomFilter(""); }} />}
+      {merge && <MergeSpace from={merge} onClose={() => setMerge(null)} onDone={() => { setMerge(null); setRoomFilter(""); }} />}
       {showMeta && <ProjectSettings onClose={() => setShowMeta(false)} />}
     </div>
   );
@@ -256,15 +264,19 @@ export default function ManagePage() {
  */
 function AddSpace({ floor, onClose }: { floor: FloorId; onClose: () => void }) {
   const { state, dispatch } = useProject();
+  const toast = useToast();
   const [name, setName] = useState("");
+  const [tried, setTried] = useState(false);
   const [kind, setKind] = useState<SpaceKind>("bedroom");
   const [withScope, setWithScope] = useState(true);
   const [wFt, setWFt] = useState(0); const [wIn, setWIn] = useState(0);
   const [lFt, setLFt] = useState(0); const [lIn, setLIn] = useState(0);
 
   const template = SCOPE_TEMPLATES[kind] ?? [];
+  const floorName = FLOOR_META[floor].label.toLowerCase();
 
   const create = () => {
+    setTried(true);
     if (!name.trim()) return;
     const id = newId("space");
     const space: Space = {
@@ -272,10 +284,11 @@ function AddSpace({ floor, onClose }: { floor: FloorId; onClose: () => void }) {
       dims: wFt || lFt ? { widthFt: wFt, widthIn: wIn, lengthFt: lFt, lengthIn: lIn, source: "site-measured" } : undefined,
     };
     dispatch({ type: "create", on: "spaces", row: space });
+    const n = withScope ? template.length : 0;
     if (withScope) {
-      template.forEach((t, n) => {
+      template.forEach((t, i) => {
         const item: ScopeItem = {
-          id: `${id}--${n}`,
+          id: `${id}--${i}`,
           title: t.title,
           spaceId: id,
           category: t.category,
@@ -289,130 +302,213 @@ function AddSpace({ floor, onClose }: { floor: FloorId; onClose: () => void }) {
         dispatch({ type: "create", on: "items", row: item });
       });
     }
+    toast(n ? `${space.name} added with ${n} scope items` : `${space.name} added`);
     onClose();
   };
 
   return (
-    <Sheet open onClose={onClose} title={`Add a space to the ${FLOOR_META[floor].label.toLowerCase()}`}>
-      <div className="space-y-4">
-        <Field label="Name *">
-          <input className="input" value={name} onChange={(e) => setName(e.target.value)} autoFocus placeholder="Guest bedroom, store, pooja niche…" />
+    <Sheet
+      open onClose={onClose} title={`Add a room to the ${floorName}`}
+      description="A new room arrives with the checklist its kind implies, like every room from the drawings."
+      footer={
+        <div className="flex flex-wrap gap-2 justify-end">
+          <button className="btn" onClick={onClose}>Cancel</button>
+          <button className="btn btn-primary" onClick={create}>
+            <Icon name="plus" size={15} strokeWidth={2} /> Add room{withScope && template.length ? ` and ${template.length} items` : ""}
+          </button>
+        </div>
+      }
+    >
+      <form className="space-y-4" onSubmit={(e) => { e.preventDefault(); create(); }}>
+        <Field label="Name" required error={tried && !name.trim() ? "Give the room a name, like “Guest bedroom”." : undefined}>
+          <input
+            className="input" value={name} onChange={(e) => setName(e.target.value)} data-autofocus
+            aria-invalid={tried && !name.trim()} placeholder="Guest bedroom, store, pooja niche…"
+          />
         </Field>
-        <Field label="Kind" hint="This decides which checklist the room is born with.">
-          <select className="input" value={kind} onChange={(e) => setKind(e.target.value as SpaceKind)}>
+        <Field label="Kind" hint="Decides which checklist the room starts with.">
+          <select className="input capitalize" value={kind} onChange={(e) => setKind(e.target.value as SpaceKind)}>
             {Object.keys(SCOPE_TEMPLATES).map((k) => (
               <option key={k} value={k}>{k.replace(/-/g, " ")}</option>
             ))}
           </select>
         </Field>
-        <div className="grid grid-cols-4 gap-2">
-          <Field label="Width ft"><input className="input tnum" type="number" value={wFt} onChange={(e) => setWFt(+e.target.value)} /></Field>
-          <Field label="in"><input className="input tnum" type="number" value={wIn} onChange={(e) => setWIn(+e.target.value)} /></Field>
-          <Field label="Length ft"><input className="input tnum" type="number" value={lFt} onChange={(e) => setLFt(+e.target.value)} /></Field>
-          <Field label="in"><input className="input tnum" type="number" value={lIn} onChange={(e) => setLIn(+e.target.value)} /></Field>
-        </div>
-        <p className="text-[11.5px] text-ink-3 leading-relaxed">
-          Leave the dimensions at zero if you have not measured it. They will be recorded as a site
-          measurement rather than a plan dimension, and quantities will start at 1.
-        </p>
-        <label className="flex items-start gap-2.5 text-[13px] cursor-pointer">
-          <input type="checkbox" checked={withScope} onChange={(e) => setWithScope(e.target.checked)} className="mt-0.5" />
+        <fieldset>
+          <legend className="text-[13px] font-semibold text-ink-2 mb-1.5">Size</legend>
+          <div className="grid grid-cols-2 gap-3">
+            <FtIn label="Width" ft={wFt} inch={wIn} onFt={setWFt} onIn={setWIn} />
+            <FtIn label="Length" ft={lFt} inch={lIn} onFt={setLFt} onIn={setLIn} />
+          </div>
+          <p className="text-[13px] text-ink-3 mt-2 leading-relaxed">
+            Leave at zero if it has not been measured — quantities then start at 1. Anything entered is
+            recorded as a site measurement, not a plan dimension.
+          </p>
+        </fieldset>
+        <label className="flex items-start gap-2.5 text-[14px] cursor-pointer rounded-lg bg-paper-2 px-3.5 py-3">
+          <input type="checkbox" checked={withScope} onChange={(e) => setWithScope(e.target.checked)} className="mt-0.5 shrink-0" />
           <span>
-            Pre-populate its scope checklist
-            <span className="block text-[11.5px] text-ink-3">
-              {template.length} items for a {kind.replace(/-/g, " ")}, so the new room is not a blank page either.
+            <span className="font-medium">Start it with a scope checklist</span>
+            <span className="block text-[13px] text-ink-3 mt-0.5">
+              {template.length} items for a {kind.replace(/-/g, " ")}, so the new room is not a blank page.
             </span>
           </span>
         </label>
-        <button className="btn btn-accent w-full justify-center" onClick={create} disabled={!name.trim()}>
-          Create space{withScope && template.length ? ` and ${template.length} scope items` : ""}
-        </button>
-      </div>
+        <button type="submit" hidden aria-hidden tabIndex={-1} />
+      </form>
     </Sheet>
+  );
+}
+
+function FtIn({
+  label, ft, inch, onFt, onIn,
+}: { label: string; ft: number; inch: number; onFt: (n: number) => void; onIn: (n: number) => void }) {
+  return (
+    <div>
+      <div className="text-[13px] text-ink-3 mb-1">{label}</div>
+      <div className="flex gap-1.5">
+        <NumberInput value={ft} onChange={onFt} suffix="ft" className="flex-1 min-w-0" />
+        <NumberInput value={inch} onChange={onIn} suffix="in" className="flex-1 min-w-0" />
+      </div>
+    </div>
   );
 }
 
 /* --------------------------------------------------------- combine spaces */
 
-function MergeSpace({ from, onClose }: { from: Space; onClose: () => void }) {
+function MergeSpace({ from, onClose, onDone }: { from: Space; onClose: () => void; onDone: () => void }) {
   const { state, dispatch } = useProject();
+  const toast = useToast();
   const [into, setInto] = useState("");
   const candidates = state.spaces.filter((s) => s.id !== from.id);
   const moving = itemsForSpace(state, from.id).length;
+  const target = state.spaces.find((s) => s.id === into);
 
   return (
-    <Sheet open onClose={onClose} title={`Combine ${from.name} into another space`}>
-      <p className="text-[13px] text-ink-2 leading-relaxed mb-4">
-        Everything belonging to <strong className="font-medium">{from.name}</strong> — {moving} scope
-        item{moving === 1 ? "" : "s"}, plus its tasks, snags, site updates, notes and documents — moves to
-        the space you choose. {from.name} is then removed. Nothing is deleted.
-      </p>
-      <Field label="Combine into">
-        <select className="input" value={into} onChange={(e) => setInto(e.target.value)}>
-          <option value="">Choose a space…</option>
-          {candidates.map((s) => (
-            <option key={s.id} value={s.id}>{s.name} — {FLOOR_META[s.floor].label}</option>
-          ))}
-        </select>
-      </Field>
-      <button
-        className="btn btn-accent w-full justify-center mt-4"
-        disabled={!into}
-        onClick={() => { dispatch({ type: "space/merge", fromId: from.id, intoId: into }); onClose(); }}
-      >
-        Combine
-      </button>
+    <Sheet
+      open onClose={onClose} title={`Combine ${from.name} into another space`}
+      footer={
+        <div className="flex flex-wrap gap-2 justify-end">
+          <button className="btn" onClick={onClose}>Cancel</button>
+          <button
+            className="btn btn-primary"
+            disabled={!into}
+            onClick={() => {
+              dispatch({ type: "space/merge", fromId: from.id, intoId: into });
+              toast(`${from.name} combined into ${target?.name ?? "the chosen space"}`);
+              onDone();
+            }}
+          >
+            {target ? `Combine into ${target.name}` : "Combine"}
+          </button>
+        </div>
+      }
+    >
+      <div className="space-y-4">
+        <p className="text-[14.5px] text-ink-2 leading-relaxed">
+          Everything belonging to <strong className="font-semibold text-ink">{from.name}</strong> — {moving} scope
+          item{moving === 1 ? "" : "s"}, plus its tasks, snags, site updates, notes and documents — moves to
+          the space you choose. {from.name} itself is then removed; nothing else is deleted.
+        </p>
+        <Field label="Combine into">
+          <select className="input" value={into} onChange={(e) => setInto(e.target.value)}>
+            <option value="">Choose a space…</option>
+            {candidates.map((s) => (
+              <option key={s.id} value={s.id}>{s.name} — {FLOOR_META[s.floor].label}</option>
+            ))}
+          </select>
+        </Field>
+      </div>
     </Sheet>
   );
 }
 
 /* -------------------------------------------------------- project settings */
 
+/**
+ * The project's own facts. Budget comes first because it is what people come
+ * here for — Home's "Set the budget" lands straight on it.
+ */
 function ProjectSettings({ onClose }: { onClose: () => void }) {
   const { state, dispatch } = useProject();
   const m = state.meta;
   const set = (patch: Partial<typeof m>) => dispatch({ type: "meta/patch", patch });
+  // A cleared date field must not blank the project's dates.
+  const setDate = (key: "startDate" | "targetHandover" | "lastOwnerVisit", v: string) => {
+    if (!v) return;
+    const d = new Date(v);
+    if (!Number.isNaN(+d)) set({ [key]: d.toISOString() });
+  };
+  const contingency = m.originalBudget * (m.contingencyPct / 100);
 
   return (
-    <Sheet open onClose={onClose} title="Project settings" wide>
-      <div className="grid sm:grid-cols-2 gap-3.5">
-        <Field label="Project name">
-          <input className="input" value={m.name} onChange={(e) => set({ name: e.target.value })} />
-        </Field>
-        <Field label="Address">
-          <input className="input" value={m.address} onChange={(e) => set({ address: e.target.value })} />
-        </Field>
-        <Field label="Plot width (ft)">
-          <input className="input tnum" type="number" value={m.plotWidthFt} onChange={(e) => set({ plotWidthFt: +e.target.value })} />
-        </Field>
-        <Field label="Plot depth (ft)">
-          <input className="input tnum" type="number" value={m.plotDepthFt} onChange={(e) => set({ plotDepthFt: +e.target.value })} />
-        </Field>
-        <Field label="Start date">
-          <input type="date" className="input" value={m.startDate.slice(0, 10)}
-            onChange={(e) => set({ startDate: new Date(e.target.value).toISOString() })} />
-        </Field>
-        <Field label="Target handover">
-          <input type="date" className="input" value={m.targetHandover.slice(0, 10)}
-            onChange={(e) => set({ targetHandover: new Date(e.target.value).toISOString() })} />
-        </Field>
-        <Field label="Original budget" hint="Everything on the dashboard is measured against this.">
-          <input className="input tnum" type="number" value={m.originalBudget}
-            onChange={(e) => set({ originalBudget: +e.target.value })} />
-        </Field>
-        <Field label="Contingency %">
-          <input className="input tnum" type="number" value={m.contingencyPct}
-            onChange={(e) => set({ contingencyPct: +e.target.value })} />
-        </Field>
-        <Field label="Last owner visit" hint="Drives the “since you were last here” list on the dashboard.">
-          <input type="date" className="input" value={m.lastOwnerVisit.slice(0, 10)}
-            onChange={(e) => set({ lastOwnerVisit: new Date(e.target.value).toISOString() })} />
-        </Field>
+    <Sheet
+      open onClose={onClose} title="Project settings" wide
+      description="Changes save as you type."
+      footer={
+        <div className="flex justify-end">
+          <button className="btn btn-primary" onClick={onClose}>Done</button>
+        </div>
+      }
+    >
+      <div className="space-y-7">
+        <section aria-labelledby="ps-money">
+          <h3 id="ps-money" className="eyebrow mb-3">Budget</h3>
+          <div className="grid sm:grid-cols-2 gap-4">
+            <Field
+              label="Budget"
+              hint={m.originalBudget
+                ? `${inr(m.originalBudget)} — Home and Costs measure everything against this.`
+                : "Not set yet. Home and Costs measure everything against this."}
+            >
+              <NumberInput id="ps-budget" value={m.originalBudget || undefined} onChange={(n) => set({ originalBudget: n })} prefix="₹" />
+            </Field>
+            <Field
+              label="Contingency"
+              hint={m.originalBudget ? `${inr(contingency, { compact: true })} held back for surprises.` : "A share of the budget held back for surprises."}
+            >
+              <NumberInput value={m.contingencyPct} onChange={(n) => set({ contingencyPct: n })} suffix="% of budget" />
+            </Field>
+          </div>
+        </section>
+
+        <section aria-labelledby="ps-dates">
+          <h3 id="ps-dates" className="eyebrow mb-3">Dates</h3>
+          <div className="grid sm:grid-cols-2 gap-4">
+            <Field label="Start date">
+              <input type="date" className="input" value={m.startDate.slice(0, 10)} onChange={(e) => setDate("startDate", e.target.value)} />
+            </Field>
+            <Field label="Target handover" hint={`Currently ${fmtDate(m.targetHandover)}.`}>
+              <input type="date" className="input" value={m.targetHandover.slice(0, 10)} onChange={(e) => setDate("targetHandover", e.target.value)} />
+            </Field>
+            <Field label="Last owner visit" hint="Home lists everything that changed since this date.">
+              <input type="date" className="input" value={m.lastOwnerVisit.slice(0, 10)} onChange={(e) => setDate("lastOwnerVisit", e.target.value)} />
+            </Field>
+          </div>
+        </section>
+
+        <section aria-labelledby="ps-site">
+          <h3 id="ps-site" className="eyebrow mb-3">The project</h3>
+          <div className="grid sm:grid-cols-2 gap-4">
+            <Field label="Project name">
+              <input className="input" value={m.name} onChange={(e) => set({ name: e.target.value })} />
+            </Field>
+            <Field label="Address">
+              <input className="input" value={m.address} onChange={(e) => set({ address: e.target.value })} />
+            </Field>
+            <Field label="Plot width">
+              <NumberInput value={m.plotWidthFt} onChange={(n) => set({ plotWidthFt: n })} suffix="ft" />
+            </Field>
+            <Field label="Plot depth">
+              <NumberInput value={m.plotDepthFt} onChange={(n) => set({ plotDepthFt: n })} suffix="ft" />
+            </Field>
+          </div>
+        </section>
+
+        <p className="text-[13px] text-ink-3 leading-relaxed">
+          To start over, go to <Link href="/admin?tab=Danger%20zone" className="link">Settings → Danger zone</Link>.
+          Every change here is also in <Link href="/history" className="link">History</Link>.
+        </p>
       </div>
-      <p className="text-[11.5px] text-ink-3 mt-4 leading-relaxed">
-        Changes save as you type and persist in this browser. “Reset to seeded project” under More
-        puts everything back.
-      </p>
     </Sheet>
   );
 }

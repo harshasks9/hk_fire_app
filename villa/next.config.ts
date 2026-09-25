@@ -5,6 +5,8 @@ const nextConfig: NextConfig = {
   serverExternalPackages: ["@electric-sql/pglite", "postgres"],
   reactStrictMode: true,
   typedRoutes: false,
+  // The dev badge sits on top of the sidebar footer; the build output says the same thing.
+  devIndicators: false,
 };
 
 export default nextConfig;

@@ -1,5 +1,6 @@
 "use client";
 
+import React, { useState } from "react";
 import Link from "next/link";
 import { useProject } from "@/lib/store";
 import { currentPhase } from "@/lib/model/phases";
@@ -7,22 +8,23 @@ import { purchaseList, purchaseTotals } from "@/lib/model/purchase";
 import { checklistSummaries, houseChecklist } from "@/lib/model/checklist";
 import {
   projectFinance, openDecisions, decisionUrgency, findGaps, longLeadItems,
-  upcomingPayments, openSnags, isLate, daysBetween, forecastOf,
+  upcomingPayments, openSnags, isLate, daysBetween,
 } from "@/lib/model/derive";
 import { inr } from "@/lib/model/costing";
 import {
-  PageTitle, Eyebrow, Stat, Money, Chip, BudgetBar, Bar, Avatar, fmtDay, relative, Empty,
+  PageTitle, Stat, Money, BudgetBar, Bar, Avatar, fmtDay, relative, Empty, Section, LegendDot, BAR, Confirm, useToast,
 } from "@/components/ui";
+import { Icon } from "@/components/Icon";
 
 /**
  * Home.
  *
- * One question first — what needs me today — and everything else below the
- * fold. The test this screen has to pass: ignore the project for a week, come
- * back, and understand what changed in under a minute.
+ * One question first — what needs me today — and everything else below it.
+ * The test this screen has to pass: ignore the project for a week, come back,
+ * and understand what changed in under a minute.
  */
 export default function Home() {
-  const { state, role } = useProject();
+  const { state, role, me, meId } = useProject();
   const fin = projectFinance(state);
   const phase = currentPhase(state);
   const buy = purchaseTotals(purchaseList(state));
@@ -48,7 +50,7 @@ export default function Home() {
   const recent = [
     ...state.siteUpdates.map((u) => ({ at: u.at, who: u.by, what: `${spaceName(u.spaceId)} — ${u.body}`, href: "/site" })),
     ...state.comments.map((c) => ({ at: c.createdAt, who: c.author, what: c.body, href: "/design" })),
-    ...state.notes.map((n) => ({ at: n.at, who: n.author, what: n.title, href: "/notes" })),
+    ...state.notes.map((n) => ({ at: n.at, who: n.author, what: n.title, href: `/notes#${n.id}` })),
   ]
     .filter((x) => new Date(x.at) >= sinceVisit)
     .sort((a, b) => +new Date(b.at) - +new Date(a.at))
@@ -56,350 +58,282 @@ export default function Home() {
 
   const attention = [
     ...decisions.slice(0, 3).map((d) => ({
-      kind: "Decision" as const,
-      title: d.title,
-      why: d.consequence ?? d.question,
-      when: d.decideBy,
-      href: `/decisions#${d.id}`,
-      tone: "clay" as const,
+      kind: "Decision", icon: "decisions", title: d.title, why: d.consequence ?? d.question, when: d.decideBy,
+      href: `/decisions#${d.id}`, tone: "accent" as const,
       urgency: decisionUrgency(d, state.items.find((i) => i.id === d.scopeItemId)),
     })),
     ...blockers.slice(0, 2).map((g) => ({
-      kind: "Blocker" as const, title: g.title, why: g.detail, when: undefined,
-      href: g.spaceId ? `/villa/${g.spaceId}` : "/more/completeness", tone: "rust" as const, urgency: 85,
+      kind: "Blocker", icon: "alert", title: g.title, why: g.detail, when: undefined as string | undefined,
+      href: g.spaceId ? `/villa/${g.spaceId}` : "/more/completeness", tone: "bad" as const, urgency: 85,
     })),
     ...critical.slice(0, 2).map((s) => ({
-      kind: "Snag" as const, title: `${spaceName(s.spaceId)} — ${s.title}`, why: s.description ?? "",
-      when: s.dueBy, href: "/site", tone: "rust" as const, urgency: 80,
+      kind: "Snag", icon: "flag", title: `${spaceName(s.spaceId)} — ${s.title}`, why: s.description ?? "",
+      when: s.dueBy, href: "/site", tone: "bad" as const, urgency: 80,
     })),
     ...payments.slice(0, 2).map((p) => ({
-      kind: "Payment" as const, title: p.label, why: `${inr(p.amount)} due to ${state.vendors.find((v) => v.id === p.vendorId)?.name ?? "vendor"}.`,
-      when: p.dueOn, href: "/costs?view=payments", tone: "ochre" as const, urgency: 70,
+      kind: "Payment", icon: "rupee", title: p.label, why: `${inr(p.amount)} due to ${state.vendors.find((v) => v.id === p.vendorId)?.name ?? "vendor"}.`,
+      when: p.dueOn, href: "/costs?view=payments", tone: "warn" as const, urgency: 70,
     })),
   ].sort((a, b) => b.urgency - a.urgency).slice(0, 5);
+
+  const person = state.people.find((p) => p.id === meId);
+  const firstName = person ? person.name.split(" ")[0] : undefined;
+  const today = new Date().toLocaleDateString("en-IN", { weekday: "long", day: "numeric", month: "long" });
+  const coming = state.items
+    .filter((i) => i.procurement?.expectedDelivery && daysBetween(new Date(), i.procurement.expectedDelivery) <= 30 && daysBetween(new Date(), i.procurement.expectedDelivery) >= -7)
+    .slice(0, 3);
+  const noBudget = !fin.originalBudget;
 
   return (
     <div>
       <PageTitle
-        title={greeting(role)}
+        eyebrow={today}
+        title={greeting(role, firstName)}
         sub={
           attention.length
-            ? `${attention.length} thing${attention.length === 1 ? "" : "s"} need you. Everything else is running.`
-            : "Nothing needs you right now. The project is running."
-        }
-        right={
-          <Link href="/villa" className="btn btn-primary">Open the villa</Link>
+            ? `${attention.length} thing${attention.length === 1 ? " needs" : "s need"} you. Everything else is moving.`
+            : "Nothing needs you right now. The project is moving."
         }
       />
 
-      {state.people.length === 0 && state.decisions.length === 0 && state.notes.length === 0 && <FirstRun />}
+      {state.people.length === 0 && state.decisions.length === 0 && state.notes.length <= 1 && <FirstRun />}
 
       {/* ------------------------------------------------ what needs me today */}
-      <section className="mb-9">
-        <Eyebrow className="mb-2.5">What needs me today</Eyebrow>
+      <Section
+        title={<span className="inline-flex items-center gap-2">Needs you {attention.length > 0 && <span className="tnum text-[12px] font-mono rounded bg-ink text-[#f2f1ed] px-1.5 py-px">{attention.length}</span>}</span>}
+        action={gaps.length ? { href: "/more/completeness", label: `All ${gaps.length} gaps` } : undefined}
+      >
         {attention.length === 0 ? (
-          <Empty title="Nothing is waiting on you." hint="The designer has no open approval requests and nothing is overdue." />
+          <Empty icon="check" title="Nothing is waiting on you." hint="No approval requests are open and nothing is overdue." />
         ) : (
-          <div className="space-y-2">
-            {attention.map((a, i) => (
-              <Link key={i} href={a.href} className="card block px-4 py-3.5 hover:border-ink-4 transition-colors animate-rise" style={{ animationDelay: `${i * 35}ms` }}>
-                <div className="flex items-start gap-3">
-                  <Chip tone={a.tone}>{a.kind}</Chip>
-                  <div className="min-w-0 flex-1">
-                    <div className="text-[14.5px] leading-snug">{a.title}</div>
-                    <div className="text-[12.5px] text-ink-3 mt-1 leading-relaxed line-clamp-2">{a.why}</div>
-                  </div>
-                  {a.when && (
-                    <div className="text-right shrink-0">
-                      <div className="text-[11px] text-ink-3">{fmtDay(a.when)}</div>
-                      <div className="text-[10.5px]" style={{ color: new Date(a.when) < new Date() ? "#8d3a2c" : "#857b70" }}>
-                        {relative(a.when)}
-                      </div>
-                    </div>
-                  )}
-                </div>
-              </Link>
-            ))}
+          <div className="card divide-y divide-line overflow-hidden">
+            {attention.map((a, i) => {
+              const overdue = a.when && new Date(a.when) < new Date();
+              return (
+                <Link key={i} href={a.href} className="flex items-start gap-3.5 px-4 sm:px-5 py-4 hover:bg-paper transition-colors group">
+                  <span className="mt-0.5 w-9 h-9 rounded-full flex items-center justify-center shrink-0"
+                    style={{ background: `var(--color-${a.tone}-soft)`, color: `var(--color-${a.tone === "accent" ? "accent-strong" : a.tone})` }}>
+                    <Icon name={a.icon} size={18} />
+                  </span>
+                  <span className="min-w-0 flex-1">
+                    <span className="eyebrow block" style={{ color: `var(--color-${a.tone === "accent" ? "accent" : a.tone})` }}>{a.kind}</span>
+                    <span className="block text-[15.5px] font-semibold leading-snug mt-0.5">{a.title}</span>
+                    {a.why && <span className="block text-[14px] text-ink-3 mt-0.5 leading-relaxed line-clamp-2">{a.why}</span>}
+                  </span>
+                  {a.when ? (
+                    <span className="text-right shrink-0 hidden sm:block">
+                      <span className="block text-[13px] text-ink-2 tnum">{fmtDay(a.when)}</span>
+                      <span className={`block text-[12px] ${overdue ? "text-bad font-semibold" : "text-ink-3"}`}>{relative(a.when)}</span>
+                    </span>
+                  ) : null}
+                  <Icon name="chevron-right" size={18} className="text-ink-4 mt-2.5 shrink-0 group-hover:text-ink transition-colors" />
+                </Link>
+              );
+            })}
           </div>
         )}
-      </section>
+      </Section>
 
       {/* --------------------------------------------------------- the money */}
-      <section className="mb-9">
-        <div className="flex items-end justify-between gap-3 mb-2.5">
-          <Eyebrow>Where the money is</Eyebrow>
-          <Link href="/costs" className="text-[12px] text-clay hover:underline">Full breakdown →</Link>
-        </div>
+      <Section title="Money" action={{ href: "/costs", label: "Full breakdown" }}>
         <div className="card px-5 py-5">
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-5 mb-5">
-            <Stat label="Original budget" value={<Money value={fin.originalBudget} compact />} large />
+          {noBudget && (
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 rounded-lg bg-accent-soft px-4 py-3 mb-5">
+              <Icon name="info" size={18} className="text-accent-strong shrink-0" />
+              <p className="text-[14px] text-ink-2 flex-1 min-w-[220px] leading-snug">
+                <strong className="font-semibold text-ink">No budget set yet.</strong>{" "}
+                The forecast below is the sum of today&rsquo;s estimates — set a budget to see how it compares.
+              </p>
+              <Link href="/manage?settings=1" className="btn btn-sm">Set the budget</Link>
+            </div>
+          )}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-5 gap-y-6 mb-6">
+            <Stat label="Budget" value={noBudget ? "Not set" : <Money value={fin.originalBudget} compact />} large />
             <Stat
               label="Forecast final"
               value={<Money value={fin.forecast} compact />}
-              tone={fin.budgetVariance > 0 ? "rust" : "sage"}
-              sub={fin.originalBudget ? `${fin.budgetVariance > 0 ? "+" : ""}${inr(fin.budgetVariance, { compact: true })} vs budget` : "no budget set yet"}
+              tone={!noBudget ? (fin.budgetVariance > 0 ? "bad" : "good") : undefined}
+              sub={!noBudget ? `${fin.budgetVariance > 0 ? "+" : ""}${inr(fin.budgetVariance, { compact: true })} against budget` : "the sum of every estimate"}
               large
             />
             <Stat label="Committed" value={<Money value={fin.committed} compact />} sub={`${inr(fin.remainingCommitment, { compact: true })} still to pay`} large />
-            <Stat label="Paid" value={<Money value={fin.paid} compact />} sub={`${fin.paidPct}% of budget`} large />
+            <Stat label="Paid" value={<Money value={fin.paid} compact />} sub={noBudget ? "so far" : `${fin.paidPct}% of budget`} large />
           </div>
           <BudgetBar paid={fin.paid} committed={fin.committed} forecast={fin.forecast} budget={fin.originalBudget} />
-          <div className="mt-3 flex flex-wrap gap-4 text-[11.5px] text-ink-3">
-            <LegendDot color="#41603f" label={`Paid ${inr(fin.paid, { compact: true })}`} />
-            <LegendDot color="#7d9a7a" label={`Committed ${inr(fin.remainingCommitment, { compact: true })}`} />
-            <LegendDot color={fin.forecast > fin.originalBudget ? "#d3a08f" : "#c8c0b2"} label={`Uncommitted ${inr(fin.uncommittedEstimate, { compact: true })}`} />
-            <LegendDot color="#241f1a" label={`Budget line ${inr(fin.originalBudget, { compact: true })}`} />
-            <span className="ml-auto">Contingency left {inr(fin.contingencyRemaining, { compact: true })} of {inr(fin.contingency, { compact: true })}</span>
+          <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1.5 text-[12.5px] text-ink-3">
+            <LegendDot color={BAR.paid} label={`Paid ${inr(fin.paid, { compact: true })}`} />
+            <LegendDot color={BAR.committed} label={`Committed ${inr(fin.remainingCommitment, { compact: true })}`} />
+            <LegendDot color={!noBudget && fin.forecast > fin.originalBudget ? BAR.over : BAR.forecast} label={`Still an estimate ${inr(fin.uncommittedEstimate, { compact: true })}`} />
+            {!noBudget && <span className="sm:ml-auto">Contingency left {inr(fin.contingencyRemaining, { compact: true })} of {inr(fin.contingency, { compact: true })}</span>}
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* ------------------------------------------------------ the programme */}
-      <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 mb-9">
-        <div className="card px-5 py-5">
-          <Eyebrow>Progress</Eyebrow>
-          <div className="mt-2 flex items-baseline gap-2">
-            <span className="tnum text-[30px] leading-none" style={{ fontFamily: "var(--font-display)" }}>
-              {Math.round(fin.completionPct)}%
-            </span>
-            <span className="text-[12px] text-ink-3">complete</span>
-          </div>
-          <div className="mt-3"><Bar pct={fin.completionPct} /></div>
-          <div className="mt-3 text-[12px] text-ink-3">
-            {daysToHandover > 0
-              ? <>{daysToHandover} days to target handover, {fmtDay(state.meta.targetHandover)}.</>
-              : <>Target handover has passed.</>}
-          </div>
+      <Section title="The project at a glance">
+        <div className="card grid sm:grid-cols-2 lg:grid-cols-3 overflow-hidden [&>*]:border-line [&>*]:border-b sm:[&>*:nth-child(odd)]:border-r lg:[&>*]:border-r lg:[&>*:nth-child(3n)]:border-r-0 lg:[&>*:nth-last-child(-n+3)]:border-b-0">
+          <Tile href="/phases" label="Where we are" value={`Phase ${phase.phase.n}`}
+            line={phase.phase.name} foot={`Weeks ${phase.phase.weeks[0]}–${phase.phase.weeks[1]} of the programme`} />
+          <Tile href="/checklist" label="Checklist" value={checklistOpen.toLocaleString("en-IN")} unit="lines open"
+            tone={checklistCritical ? "accent" : undefined}
+            line={checklistCritical ? `${checklistCritical} of them critical` : "Every room's checklist is clear."}
+            foot={leastComplete ? `Least done: ${leastComplete.name}, ${Math.round(leastComplete.pct)}%` : undefined} />
+          <Tile href="/timeline" label="Schedule" value={String(lateTasks.length)} unit={lateTasks.length === 1 ? "late task" : "late tasks"}
+            tone={lateTasks.length ? "bad" : undefined}
+            line={lateTasks.length ? lateTasks[0].title : "Everything is on or ahead of its date."}
+            foot={daysToHandover > 0 ? `${daysToHandover} days to handover, ${fmtDay(state.meta.targetHandover)}` : "Target handover has passed"} />
+          <Tile href="/procurement" label="Long-lead, undecided" value={String(longLead.length)} unit="items"
+            tone={longLead.length ? "warn" : undefined}
+            line={longLead.length ? longLead.slice(0, 2).map((i) => i.title).join(", ") : "No long-lead item is waiting on a decision."}
+            foot={longLead.length ? "Decide these first — they set the handover date" : undefined} />
+          <Tile href="/purchases" label="Ready to order" value={String(buy.toOrder)} unit="lines"
+            tone={buy.overdue ? "bad" : undefined}
+            line={`${inr(buy.toOrderValue, { compact: true })} approved and waiting`}
+            foot={buy.overdue ? `${buy.overdue} past their order-by date` : buy.undecided ? `${buy.undecided} still to decide` : undefined} />
+          <Tile href="/site" label="Open snags" value={String(snags.length)} unit={snags.length === 1 ? "snag" : "snags"}
+            tone={critical.length ? "bad" : undefined}
+            line={snags.length ? `${critical.length} critical` : "No open snags."}
+            foot={<span className="inline-flex items-center gap-2 w-full"><Bar pct={fin.completionPct} height={4} label="Work complete" /> <span className="tnum shrink-0">{Math.round(fin.completionPct)}% done</span></span>} />
         </div>
-
-        <Link href="/timeline" className="card px-5 py-5 hover:border-ink-4 transition-colors">
-          <Eyebrow>Schedule</Eyebrow>
-          <div className="mt-2 flex items-baseline gap-2">
-            <span className="tnum text-[30px] leading-none" style={{ fontFamily: "var(--font-display)", color: lateTasks.length ? "#8d3a2c" : undefined }}>
-              {lateTasks.length}
-            </span>
-            <span className="text-[12px] text-ink-3">late task{lateTasks.length === 1 ? "" : "s"}</span>
-          </div>
-          <div className="mt-3 space-y-1">
-            {lateTasks.slice(0, 3).map((t) => (
-              <div key={t.id} className="text-[12px] text-ink-2 truncate">· {t.title}</div>
-            ))}
-            {!lateTasks.length && <div className="text-[12px] text-ink-3">Everything is on or ahead of its date.</div>}
-          </div>
-        </Link>
-
-        <Link href="/procurement" className="card px-5 py-5 hover:border-ink-4 transition-colors">
-          <Eyebrow>Critical procurement</Eyebrow>
-          <div className="mt-2 flex items-baseline gap-2">
-            <span className="tnum text-[30px] leading-none" style={{ fontFamily: "var(--font-display)", color: longLead.length ? "#a8763f" : undefined }}>
-              {longLead.length}
-            </span>
-            <span className="text-[12px] text-ink-3">long-lead, undecided</span>
-          </div>
-          <div className="mt-3 space-y-1">
-            {longLead.slice(0, 3).map((i) => (
-              <div key={i.id} className="text-[12px] text-ink-2 truncate">
-                · {i.title} <span className="text-ink-4">{i.procurement?.leadTimeWeeks}w</span>
-              </div>
-            ))}
-            {!longLead.length && <div className="text-[12px] text-ink-3">No long-lead item is waiting on a decision.</div>}
-          </div>
-        </Link>
-      </section>
-
-      {/* ------------------------------------- phase, checklist and shopping */}
-      <section className="grid gap-4 sm:grid-cols-3 mb-9">
-        <Link href="/phases" className="card px-5 py-5 hover:border-ink-4 transition-colors">
-          <Eyebrow>Where we are</Eyebrow>
-          <div className="mt-2 text-[17px] leading-tight" style={{ fontFamily: "var(--font-display)" }}>
-            Phase {phase.phase.n} — {phase.phase.name}
-          </div>
-          <p className="text-[12px] text-ink-3 mt-1.5 leading-relaxed">{phase.phase.goal}</p>
-          <div className="text-[11.5px] text-ink-3 mt-2.5 tnum">
-            Indicative weeks {phase.phase.weeks[0]}–{phase.phase.weeks[1]} · all twelve phases →
-          </div>
-        </Link>
-
-        <Link href="/checklist" className="card px-5 py-5 hover:border-ink-4 transition-colors">
-          <Eyebrow>Not yet ticked off</Eyebrow>
-          <div className="mt-2 flex items-baseline gap-2">
-            <span className="tnum text-[30px] leading-none" style={{ fontFamily: "var(--font-display)", color: checklistCritical ? "#9c5333" : undefined }}>
-              {checklistOpen}
-            </span>
-            <span className="text-[12px] text-ink-3">checklist lines</span>
-          </div>
-          <div className="mt-3 space-y-1">
-            {checklistCritical > 0 && <div className="text-[12px] text-clay">{checklistCritical} of them critical</div>}
-            {leastComplete && (
-              <div className="text-[12px] text-ink-2 truncate">
-                Least complete: {leastComplete.name} at {Math.round(leastComplete.pct)}%
-              </div>
-            )}
-            {!checklistOpen && <div className="text-[12px] text-ink-3">Every room's checklist is clear.</div>}
-          </div>
-        </Link>
-
-        <Link href="/purchases" className="card px-5 py-5 hover:border-ink-4 transition-colors">
-          <Eyebrow>To buy</Eyebrow>
-          <div className="mt-2 flex items-baseline gap-2">
-            <span className="tnum text-[30px] leading-none" style={{ fontFamily: "var(--font-display)", color: buy.overdue ? "#8d3a2c" : undefined }}>
-              {buy.toOrder}
-            </span>
-            <span className="text-[12px] text-ink-3">ready to order</span>
-          </div>
-          <div className="mt-3 space-y-1">
-            <div className="text-[12px] text-ink-2">{inr(buy.toOrderValue, { compact: true })} approved and waiting</div>
-            {buy.undecided > 0 && <div className="text-[12px] text-ink-3">{buy.undecided} still to decide</div>}
-            {buy.overdue > 0 && <div className="text-[12px] text-rust">{buy.overdue} past their order-by date</div>}
-          </div>
-        </Link>
-      </section>
+      </Section>
 
       {/* ------------------------------------------------------------- rows */}
-      <div className="grid gap-4 lg:grid-cols-2 mb-9">
-        <div className="card px-5 py-5">
-          <div className="flex items-center justify-between mb-3">
-            <Eyebrow>Deliveries & payments this month</Eyebrow>
-            <Link href="/procurement" className="text-[11.5px] text-clay hover:underline">All →</Link>
-          </div>
-          <div className="space-y-2.5">
-            {state.items
-              .filter((i) => i.procurement?.expectedDelivery && daysBetween(new Date(), i.procurement.expectedDelivery) <= 30 && daysBetween(new Date(), i.procurement.expectedDelivery) >= -7)
-              .slice(0, 3)
-              .map((i) => (
-                <Row key={i.id} left={i.title} sub={`${spaceName(i.spaceId)} · ${i.procurement?.brand ?? ""}`} right={fmtDay(i.procurement!.expectedDelivery)} tone="sage" />
-              ))}
-            {payments.slice(0, 4).map((p) => (
-              <Row key={p.id} left={p.label} sub={state.vendors.find((v) => v.id === p.vendorId)?.name} right={inr(p.amount, { compact: true })} rightSub={fmtDay(p.dueOn)} tone={new Date(p.dueOn) < new Date() ? "rust" : undefined} />
+      <div className="grid gap-x-8 lg:grid-cols-2">
+        <Section title="Coming up in 30 days" action={{ href: "/procurement", label: "Procurement" }}>
+          <div className="card divide-y divide-line">
+            {coming.map((i) => (
+              <Row key={i.id} icon="procurement" left={i.title} sub={`${spaceName(i.spaceId)}${i.procurement?.brand ? ` · ${i.procurement.brand}` : ""}`} right={fmtDay(i.procurement!.expectedDelivery)} rightSub="delivery" />
             ))}
-            {!payments.length && <div className="text-[12.5px] text-ink-3">Nothing due in the next 30 days.</div>}
+            {payments.slice(0, 4).map((p) => (
+              <Row key={p.id} icon="rupee" left={p.label} sub={state.vendors.find((v) => v.id === p.vendorId)?.name} right={inr(p.amount, { compact: true })} rightSub={fmtDay(p.dueOn)} bad={new Date(p.dueOn) < new Date()} />
+            ))}
+            {!payments.length && !coming.length && <div className="px-4 py-6 text-[14px] text-ink-3">No deliveries or payments due in the next 30 days.</div>}
           </div>
-        </div>
+        </Section>
 
-        <div className="card px-5 py-5">
-          <div className="flex items-center justify-between mb-3">
-            <Eyebrow>Open snags</Eyebrow>
-            <Link href="/site" className="text-[11.5px] text-clay hover:underline">Snag list →</Link>
+        <Section title={`Since ${me && person ? "you were" : "the owner was"} last here`} action={{ href: "/history", label: "History" }}>
+          <div className="card divide-y divide-line">
+            {recent.length ? recent.map((r, i) => {
+              const who = state.people.find((p) => p.name === r.who);
+              return (
+                <Link key={i} href={r.href} className="flex items-start gap-3 px-4 py-3 hover:bg-paper transition-colors">
+                  <Avatar name={r.who} tone={who?.avatarTone} />
+                  <div className="min-w-0 flex-1 text-[14px] text-ink-2 leading-snug line-clamp-2">
+                    <span className="font-semibold text-ink">{r.who}</span> · {r.what}
+                  </div>
+                  <div className="text-[12px] text-ink-3 shrink-0 tnum">{fmtDay(r.at)}</div>
+                </Link>
+              );
+            }) : (
+              <div className="px-4 py-6 text-[14px] text-ink-3">Nothing new since {fmtDay(state.meta.lastOwnerVisit)}.</div>
+            )}
           </div>
-          {snags.length ? (
-            <div className="space-y-2.5">
-              {snags.slice(0, 5).map((s) => (
-                <Row
-                  key={s.id}
-                  left={s.title}
-                  sub={`${spaceName(s.spaceId)} · ${s.status}`}
-                  right={s.severity}
-                  tone={s.severity === "critical" || s.severity === "high" ? "rust" : "ochre"}
-                />
-              ))}
-            </div>
-          ) : (
-            <div className="text-[12.5px] text-ink-3">No open snags.</div>
-          )}
-        </div>
+        </Section>
       </div>
 
-      {/* ------------------------------------------------ since your last visit */}
-      <section>
-        <div className="flex items-end justify-between gap-3 mb-2.5">
-          <Eyebrow>Since you were last here — {fmtDay(state.meta.lastOwnerVisit)}</Eyebrow>
-          <Link href="/design" className="text-[12px] text-clay hover:underline">Designer activity →</Link>
-        </div>
-        <div className="card divide-y divide-line">
-          {recent.length ? recent.map((r, i) => {
-            const person = state.people.find((p) => p.name === r.who);
-            return (
-              <Link key={i} href={r.href} className="flex items-start gap-3 px-4 py-3 hover:bg-paper-2/60 transition-colors">
-                <Avatar name={r.who} tone={person?.avatarTone} />
-                <div className="min-w-0 flex-1">
-                  <div className="text-[12.5px] text-ink-2 leading-relaxed line-clamp-2">
-                    <span className="font-medium text-ink">{r.who}</span> · {r.what}
-                  </div>
-                </div>
-                <div className="text-[11px] text-ink-4 shrink-0">{fmtDay(r.at)}</div>
-              </Link>
-            );
-          }) : (
-            <div className="px-4 py-6 text-[12.5px] text-ink-3">Nothing new since your last visit.</div>
-          )}
-        </div>
-      </section>
-
-      <p className="mt-8 text-[11px] text-ink-4 leading-relaxed max-w-2xl">
-        Figures shown are the project&rsquo;s working numbers. Rates that have not yet been
-        replaced by a vendor quotation are indicative assumptions and are editable
-        everywhere they appear — they are never market quotations.
+      <p className="text-[12.5px] text-ink-3 leading-relaxed max-w-2xl">
+        Figures are the project&rsquo;s working numbers. A rate that has not yet been replaced by a vendor
+        quotation is an indicative assumption, editable wherever it appears — never a market quotation.
       </p>
     </div>
   );
 }
 
-function greeting(role: string): string {
+function greeting(role: string, name?: string): string {
+  if (role === "vendor") return name ? `Today on site, ${name}` : "Today on site";
   const h = new Date().getHours();
   const t = h < 12 ? "Good morning" : h < 17 ? "Good afternoon" : "Good evening";
-  return role === "designer" ? `${t}, Ananya` : role === "vendor" ? "Today on site" : `${t}, Harsha`;
+  return name ? `${t}, ${name}` : t;
 }
 
-function LegendDot({ color, label }: { color: string; label: string }) {
+function Tile({
+  href, label, value, unit, line, foot, tone,
+}: { href: string; label: string; value: string; unit?: string; line: string; foot?: React.ReactNode; tone?: "accent" | "bad" | "warn" }) {
   return (
-    <span className="inline-flex items-center gap-1.5">
-      <span className="rounded-full" style={{ width: 7, height: 7, background: color }} />
-      {label}
-    </span>
+    <Link href={href} className="block px-5 py-5 hover:bg-paper transition-colors group">
+      <div className="flex items-center justify-between">
+        <span className="eyebrow">{label}</span>
+        <Icon name="arrow-right" size={15} className="text-ink-4 group-hover:text-ink transition-colors" />
+      </div>
+      <div className="mt-2.5 flex items-baseline gap-2 min-w-0">
+        <span className="text-[28px] leading-none font-semibold tracking-[-0.02em]" style={{ color: tone ? `var(--color-${tone})` : undefined }}>{value}</span>
+        {unit && <span className="text-[14px] text-ink-3">{unit}</span>}
+      </div>
+      <div className="text-[14px] text-ink-2 mt-2 leading-snug line-clamp-2">{line}</div>
+      {foot && <div className="text-[12.5px] text-ink-3 mt-1.5 leading-snug">{foot}</div>}
+    </Link>
   );
 }
 
 function Row({
-  left, sub, right, rightSub, tone,
-}: { left: string; sub?: string; right?: string; rightSub?: string; tone?: "sage" | "rust" | "ochre" }) {
-  const color = tone === "rust" ? "#8d3a2c" : tone === "ochre" ? "#8a6a20" : tone === "sage" ? "#41603f" : undefined;
+  icon, left, sub, right, rightSub, bad,
+}: { icon: string; left: string; sub?: string; right?: string; rightSub?: string; bad?: boolean }) {
   return (
-    <div className="flex items-start justify-between gap-3">
-      <div className="min-w-0">
-        <div className="text-[13px] text-ink truncate">{left}</div>
-        {sub && <div className="text-[11px] text-ink-3 truncate">{sub}</div>}
+    <div className="flex items-start gap-3 px-4 py-3">
+      <span className="mt-0.5 text-ink-3 shrink-0"><Icon name={icon} size={17} /></span>
+      <div className="min-w-0 flex-1">
+        <div className="text-[14px] text-ink truncate">{left}</div>
+        {sub && <div className="text-[12.5px] text-ink-3 truncate">{sub}</div>}
       </div>
       <div className="text-right shrink-0">
-        {right && <div className="text-[12.5px] tnum font-medium" style={{ color }}>{right}</div>}
-        {rightSub && <div className="text-[10.5px] text-ink-3">{rightSub}</div>}
+        {right && <div className={`text-[14px] tnum font-semibold ${bad ? "text-bad" : ""}`}>{right}</div>}
+        {rightSub && <div className="text-[12px] text-ink-3">{rightSub}</div>}
       </div>
     </div>
   );
 }
 
 /**
- * Shown while the project is still the empty twin. It points at the three
- * things worth doing first, and disappears the moment any of them is done.
+ * Shown while the project is still the empty twin. Three things make it
+ * yours; each ticks itself off as it is done, and the card goes when all are.
  */
 function FirstRun() {
-  const { dispatch, storage } = useProject();
+  const { state, dispatch, storage } = useProject();
+  const toast = useToast();
+  const [ask, setAsk] = useState(false);
+  const steps = [
+    { done: state.people.length > 0, href: "/admin?tab=People", title: "Add the people", body: "You, the designer, the contractors — then pick yourself, so changes carry your name." },
+    { done: state.items.some((i) => i.vendorId || i.ladder?.quoted || i.ladder?.approved), href: "/sheet", title: "Fill in a room", body: "The Sheet is one room's scope as a spreadsheet — rates, owners, vendors. Paste from Excel if you have it." },
+    { done: state.meta.originalBudget > 0, href: "/manage?settings=1", title: "Set the budget", body: "Budget, dates and address, in project settings." },
+  ];
+  const left = steps.filter((s) => !s.done).length;
+  if (!left) return null;
   return (
-    <section className="card px-5 py-5 mb-8 animate-rise">
-      <Eyebrow>Starting out</Eyebrow>
-      <p className="text-[14px] leading-relaxed mt-1.5 max-w-2xl">
-        This is the villa with nothing filled in yet: every room from the drawings, each with its scope checklist
-        at &ldquo;not started&rdquo;. Three things make it yours.
+    <section className="card px-5 sm:px-6 py-5 mb-10 animate-rise">
+      <div className="flex flex-wrap items-baseline justify-between gap-2">
+        <h2 className="text-[17px]">Make this project yours</h2>
+        <span className="text-[13px] text-ink-3 tnum">{3 - left} of 3 done</span>
+      </div>
+      <p className="text-[14px] text-ink-3 leading-relaxed mt-1 max-w-2xl">
+        Every room from the drawings is already here, each with its checklist at &ldquo;not started&rdquo;.
       </p>
-      <div className="grid sm:grid-cols-3 gap-2.5 mt-4">
-        <Link href="/admin?tab=People" className="card-quiet px-4 py-3 hover:border-ink-4 transition-colors">
-          <div className="text-[13.5px] font-medium">1. Add the people</div>
-          <div className="text-[12px] text-ink-3 mt-0.5 leading-snug">You, the designer, the contractors. Then pick yourself in the corner so changes carry your name.</div>
-        </Link>
-        <Link href="/sheet" className="card-quiet px-4 py-3 hover:border-ink-4 transition-colors">
-          <div className="text-[13.5px] font-medium">2. Fill in a room</div>
-          <div className="text-[12px] text-ink-3 mt-0.5 leading-snug">The Sheet is a spreadsheet of one room&rsquo;s scope — rates, owners, vendors, money. Paste from Excel if you have it.</div>
-        </Link>
-        <Link href="/manage" className="card-quiet px-4 py-3 hover:border-ink-4 transition-colors">
-          <div className="text-[13.5px] font-medium">3. Set the budget</div>
-          <div className="text-[12px] text-ink-3 mt-0.5 leading-snug">Project settings under Manage: budget, dates, address. The rate card is under Admin.</div>
-        </Link>
+      <ol className="grid sm:grid-cols-3 gap-2.5 mt-4">
+        {steps.map((s, i) => (
+          <li key={s.title}>
+            <Link href={s.href} className={`h-full flex gap-3 rounded-xl border px-4 py-3.5 transition-colors ${s.done ? "border-line bg-paper" : "border-line-2 hover:border-ink-4 hover:bg-paper"}`}>
+              <span className={`w-6 h-6 rounded-full shrink-0 flex items-center justify-center text-[12px] font-semibold ${s.done ? "bg-good text-white" : "border border-line-2 text-ink-3"}`}>
+                {s.done ? <Icon name="check" size={14} strokeWidth={2.2} /> : i + 1}
+              </span>
+              <span className="min-w-0">
+                <span className={`block text-[14.5px] font-semibold ${s.done ? "text-ink-3 line-through decoration-ink-4" : ""}`}>{s.title}</span>
+                <span className="block text-[13px] text-ink-3 mt-0.5 leading-snug">{s.body}</span>
+              </span>
+            </Link>
+          </li>
+        ))}
+      </ol>
+      <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mt-4 text-[13px] text-ink-3">
+        <button className="link" onClick={() => setAsk(true)}>Or load the sample villa to see it filled in</button>
+        {storage.mode === "browser" && <span>Saved in this browser until a database is connected.</span>}
       </div>
-      <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mt-4 text-[12px] text-ink-3">
-        <button className="text-clay hover:underline" onClick={() => {
-          if (confirm("Load the fully worked sample villa? It replaces this empty project; you can reset again from Admin.")) dispatch({ type: "reset", to: "sample" });
-        }}>Or load the sample villa to see it filled in</button>
-        {storage.mode === "browser" && <span>· Data is saved in this browser until a database is connected (Admin).</span>}
-      </div>
+      <Confirm
+        open={ask} title="Load the sample villa?" confirmLabel="Load the sample" danger={false}
+        onCancel={() => setAsk(false)}
+        onConfirm={() => { dispatch({ type: "reset", to: "sample" }); setAsk(false); toast("Sample villa loaded"); }}
+      >
+        <p>It replaces this project with a fully worked example, so you can see every screen filled in.</p>
+        <p>You can start again from an empty villa at any time under Settings → Danger zone.</p>
+      </Confirm>
     </section>
   );
 }

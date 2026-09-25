@@ -1,15 +1,16 @@
 "use client";
 
-import React, { useCallback, useMemo, useRef, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Dims } from "@/components/Measure";
 import Link from "next/link";
 import { useProject, newId } from "@/lib/store";
-import { activeCategories, catLabel, buildUpFromCategory } from "@/lib/model/categories";
+import { activeCategories, buildUpFromCategory } from "@/lib/model/categories";
 import { STAGES, STAGE_LABEL, UNIT_LABEL, type ScopeItem, type Stage, type Unit } from "@/lib/model/types";
 import { forecastOf } from "@/lib/model/derive";
 import { inr } from "@/lib/model/costing";
 import { FLOOR_META } from "@/lib/seed/spaces";
-import { PageTitle, Eyebrow, Chip, Empty } from "@/components/ui";
+import { PageTitle, Empty, Confirm, useToast } from "@/components/ui";
+import { Icon } from "@/components/Icon";
 
 /**
  * The sheet.
@@ -30,22 +31,26 @@ type ColKey =
 interface Col { key: ColKey; label: string; w: number; kind: "text" | "select" | "number" | "money" | "readonly" }
 
 const COLS: Col[] = [
-  { key: "title", label: "Item", w: 220, kind: "text" },
-  { key: "category", label: "Category", w: 150, kind: "select" },
-  { key: "stage", label: "Stage", w: 130, kind: "select" },
-  { key: "owner", label: "Owner", w: 120, kind: "text" },
-  { key: "vendorId", label: "Vendor", w: 160, kind: "select" },
-  { key: "cost.qty", label: "Qty", w: 70, kind: "number" },
-  { key: "cost.unit", label: "Unit", w: 80, kind: "select" },
-  { key: "cost.rate", label: "Rate", w: 100, kind: "money" },
-  { key: "forecast", label: "Forecast", w: 110, kind: "readonly" },
-  { key: "ladder.designerEstimate", label: "Estimate", w: 110, kind: "money" },
-  { key: "ladder.approved", label: "Approved", w: 110, kind: "money" },
-  { key: "ladder.committed", label: "Committed", w: 110, kind: "money" },
-  { key: "ladder.paid", label: "Paid", w: 100, kind: "money" },
-  { key: "procurement.leadTimeWeeks", label: "Lead wk", w: 80, kind: "number" },
-  { key: "notes", label: "Notes", w: 220, kind: "text" },
+  { key: "title", label: "Item", w: 230, kind: "text" },
+  { key: "category", label: "Category", w: 160, kind: "select" },
+  { key: "stage", label: "Stage", w: 140, kind: "select" },
+  { key: "owner", label: "Owner", w: 130, kind: "text" },
+  { key: "vendorId", label: "Vendor", w: 170, kind: "select" },
+  { key: "cost.qty", label: "Qty", w: 76, kind: "number" },
+  { key: "cost.unit", label: "Unit", w: 100, kind: "select" },
+  { key: "cost.rate", label: "Rate ₹", w: 110, kind: "money" },
+  { key: "forecast", label: "Forecast", w: 120, kind: "readonly" },
+  { key: "ladder.designerEstimate", label: "Estimate ₹", w: 120, kind: "money" },
+  { key: "ladder.approved", label: "Approved ₹", w: 120, kind: "money" },
+  { key: "ladder.committed", label: "Committed ₹", w: 124, kind: "money" },
+  { key: "ladder.paid", label: "Paid ₹", w: 110, kind: "money" },
+  { key: "procurement.leadTimeWeeks", label: "Lead (wk)", w: 96, kind: "number" },
+  { key: "notes", label: "Notes", w: 240, kind: "text" },
 ];
+
+/** The gutter column that holds each row's delete button. */
+const GUTTER = 44;
+const FLOORS = ["outdoor", "ground", "first", "second"] as const;
 
 const get = (i: ScopeItem, k: ColKey): unknown => {
   if (k === "forecast") return forecastOf(i);
@@ -54,12 +59,18 @@ const get = (i: ScopeItem, k: ColKey): unknown => {
   return b ? (v as Record<string, unknown> | undefined)?.[b] : v;
 };
 
+const isEditable = (el: EventTarget | null) =>
+  el instanceof HTMLInputElement || el instanceof HTMLTextAreaElement || el instanceof HTMLSelectElement ||
+  (el instanceof HTMLElement && el.isContentEditable);
+
 export default function SheetPage() {
   const { state, dispatch } = useProject();
+  const toast = useToast();
   const [scope, setScope] = useState<string>(state.spaces[0]?.id ?? "house");
   const [focus, setFocus] = useState<{ r: number; c: number } | null>(null);
-  const [pasteMsg, setPasteMsg] = useState<string | null>(null);
+  const [doomed, setDoomed] = useState<ScopeItem | null>(null);
   const tableRef = useRef<HTMLTableElement>(null);
+  const gridRef = useRef<HTMLDivElement>(null);
 
   const space = state.spaces.find((s) => s.id === scope);
   const rows = useMemo(
@@ -67,6 +78,19 @@ export default function SheetPage() {
     [state.items, scope],
   );
   const total = rows.reduce((a, i) => a + forecastOf(i), 0);
+
+  // Every room in picker order, so the arrows step through the house floor by floor.
+  const order = useMemo(
+    () => ["house", ...FLOORS.flatMap((f) => state.spaces.filter((s) => s.floor === f).map((s) => s.id))],
+    [state.spaces],
+  );
+  const at = order.indexOf(scope);
+  const step = (d: number) => {
+    const next = order[at + d];
+    if (next) { setScope(next); setFocus(null); }
+  };
+  const nameOf = (id?: string) => (id === "house" ? "House-wide" : state.spaces.find((s) => s.id === id)?.name ?? "");
+  const where = space?.name ?? "house-wide scope";
 
   /* ------------------------------------------------------------ writes */
   const write = useCallback((item: ScopeItem, k: ColKey, raw: string) => {
@@ -109,6 +133,12 @@ export default function SheetPage() {
     setFocus({ r, c });
   };
 
+  const addAndFocus = () => {
+    addRow();
+    const r = rows.length;
+    setTimeout(() => focusCell(r, 0), 40);
+  };
+
   const onKey = (e: React.KeyboardEvent, r: number, c: number) => {
     const last = rows.length - 1;
     const editable = (ci: number) => COLS[ci].kind !== "readonly";
@@ -122,21 +152,20 @@ export default function SheetPage() {
     } else if (e.key === "Enter") {
       e.preventDefault();
       if (r < last) focusCell(r + 1, c);
-      else { addRow(); setTimeout(() => focusCell(r + 1, 0), 30); }
+      else { addRow(); setTimeout(() => focusCell(r + 1, 0), 40); }
     } else if (e.key === "ArrowDown" && !(e.target instanceof HTMLSelectElement)) {
       e.preventDefault(); if (r < last) focusCell(r + 1, c);
     } else if (e.key === "ArrowUp" && !(e.target instanceof HTMLSelectElement)) {
       e.preventDefault(); if (r > 0) focusCell(r - 1, c);
     } else if (e.key === "Escape") {
       (e.target as HTMLElement).blur();
+      setFocus(null);
     }
   };
 
   /* -------------------------------------------------------------- paste */
-  const onPaste = (e: React.ClipboardEvent) => {
-    const text = e.clipboardData.getData("text/plain");
-    if (!text.includes("\t") && !text.includes("\n")) return; // a single cell — let the input take it
-    e.preventDefault();
+  const pasteRows = useCallback((text: string): boolean => {
+    if (!text.includes("\t") && !text.includes("\n")) return false; // a single cell — let the input take it
     const lines = text.split(/\r?\n/).map((l) => l.trimEnd()).filter(Boolean);
     const cats = activeCategories(state);
     const findCat = (s: string) => {
@@ -162,82 +191,194 @@ export default function SheetPage() {
       });
       made++;
     }
-    setPasteMsg(`Added ${made} row${made === 1 ? "" : "s"} from the clipboard.`);
-    setTimeout(() => setPasteMsg(null), 4000);
-  };
+    toast(made
+      ? `Added ${made} row${made === 1 ? "" : "s"} to ${space?.name ?? "house-wide scope"} from the clipboard`
+      : "Nothing to add — every pasted line was missing an item name", { tone: made ? "good" : "bad" });
+    return true;
+  }, [state, space, scope, dispatch, toast]);
+
+  // Paste works anywhere on the page that is not a text field outside the grid,
+  // so an empty room can be filled straight from Excel too.
+  useEffect(() => {
+    const onPaste = (e: ClipboardEvent) => {
+      const inGrid = !!gridRef.current && e.target instanceof Node && gridRef.current.contains(e.target);
+      if (!inGrid && isEditable(e.target)) return;
+      const text = e.clipboardData?.getData("text/plain") ?? "";
+      if (pasteRows(text)) e.preventDefault();
+    };
+    document.addEventListener("paste", onPaste);
+    return () => document.removeEventListener("paste", onPaste);
+  }, [pasteRows]);
+
+  const minWidth = COLS.reduce((a, c) => a + c.w, GUTTER);
 
   return (
     <div>
       <PageTitle
         title="Sheet"
-        sub="Pick a room and type. Tab moves across, Enter moves down, Enter on the last row adds one. Paste from a spreadsheet to add many at once."
+        sub="One room's scope as a spreadsheet. Tab moves across, Enter moves down, and Enter on the last row adds a new one. Paste from Excel to add many rows at once."
         right={
-          <select className="input w-auto" value={scope} onChange={(e) => setScope(e.target.value)}>
-            <option value="house">House-wide</option>
-            {(["outdoor", "ground", "first", "second"] as const).map((f) => (
-              <optgroup key={f} label={FLOOR_META[f].label}>
-                {state.spaces.filter((s) => s.floor === f).map((s) => <option key={s.id} value={s.id}>{s.name}</option>)}
-              </optgroup>
-            ))}
-          </select>
+          <button className="btn btn-primary" onClick={addAndFocus}>
+            <Icon name="plus" size={16} strokeWidth={2} /> Add row
+          </button>
         }
       />
 
-      <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mb-3 text-[12.5px] text-ink-3">
-        <span className="tnum"><strong className="text-ink font-medium">{rows.length}</strong> rows</span>
-        <span className="tnum"><strong className="text-ink font-medium">{inr(total, { compact: true })}</strong> forecast</span>
-        {space && <Dims sp={space} className="text-[12px]" />}
-        {space && <Link href={`/villa/${space.id}`} className="text-clay hover:underline">Open workspace →</Link>}
-        <button className="btn btn-sm ml-auto" onClick={() => { addRow(); setTimeout(() => focusCell(rows.length, 0), 30); }}>Add row</button>
+      {/* --------------------------------------------------------- room picker */}
+      <div className="card px-4 sm:px-5 py-4 mb-4 flex flex-wrap items-end gap-x-6 gap-y-3">
+        <div className="min-w-0 flex-1 basis-[300px]">
+          <label htmlFor="sheet-room" className="eyebrow block mb-1.5">Room</label>
+          <div className="flex items-center gap-1.5">
+            <button className="btn btn-icon shrink-0" onClick={() => step(-1)} disabled={at <= 0}
+              aria-label={at > 0 ? `Previous room: ${nameOf(order[at - 1])}` : "Previous room"}>
+              <Icon name="chevron-left" size={18} />
+            </button>
+            <select
+              id="sheet-room"
+              className="input flex-1 min-w-0 text-[16px] font-semibold"
+              value={scope}
+              onChange={(e) => { setScope(e.target.value); setFocus(null); }}
+            >
+              <option value="house">House-wide (no room)</option>
+              {FLOORS.map((f) => (
+                <optgroup key={f} label={FLOOR_META[f].label}>
+                  {state.spaces.filter((s) => s.floor === f).map((s) => <option key={s.id} value={s.id}>{s.name}</option>)}
+                </optgroup>
+              ))}
+            </select>
+            <button className="btn btn-icon shrink-0" onClick={() => step(1)} disabled={at < 0 || at >= order.length - 1}
+              aria-label={at >= 0 && at < order.length - 1 ? `Next room: ${nameOf(order[at + 1])}` : "Next room"}>
+              <Icon name="chevron-right" size={18} />
+            </button>
+          </div>
+        </div>
+        <dl className="flex flex-wrap items-end gap-x-6 gap-y-2">
+          <div>
+            <dt className="eyebrow">Rows</dt>
+            <dd className="text-[18px] font-semibold mt-0.5 tnum">{rows.length}</dd>
+          </div>
+          <div>
+            <dt className="eyebrow">Forecast</dt>
+            <dd className="text-[18px] font-semibold mt-0.5 tnum">{inr(total, { compact: true })}</dd>
+          </div>
+          {space && (
+            <div className="min-w-0">
+              <dt className="eyebrow">Size</dt>
+              <dd className="text-[13.5px] text-ink-2 mt-1"><Dims sp={space} mm={false} /></dd>
+            </div>
+          )}
+        </dl>
+        {space && (
+          <Link href={`/villa/${space.id}`} className="link text-[13.5px] inline-flex items-center gap-1 sm:ml-auto self-center">
+            Open {space.name} <Icon name="arrow-right" size={14} />
+          </Link>
+        )}
       </div>
 
-      {pasteMsg && <div className="card-quiet px-3.5 py-2 mb-3 text-[12.5px] text-ink-2">{pasteMsg}</div>}
-
+      {/* ---------------------------------------------------------------- grid */}
       {!rows.length ? (
         <Empty
-          title={`Nothing in ${space?.name ?? "house-wide scope"} yet.`}
-          hint="Click “Add row”, or paste rows from a spreadsheet: Item, Category, Qty, Unit, Rate, Owner, Vendor, Notes — tab-separated."
+          icon="sheet"
+          title={`Nothing in ${where} yet.`}
+          hint={<>Add the first row and start typing, or copy rows from a spreadsheet and press <kbd>Ctrl</kbd> <kbd>V</kbd> anywhere on this page.</>}
+          action={
+            <button className="btn btn-primary btn-sm" onClick={addAndFocus}>
+              <Icon name="plus" size={15} strokeWidth={2} /> Add the first row
+            </button>
+          }
         />
       ) : (
-        <div className="card overflow-auto thin-scroll" style={{ maxHeight: "70vh" }} onPaste={onPaste}>
-          <table ref={tableRef} className="text-[12.5px] border-separate border-spacing-0" style={{ minWidth: COLS.reduce((a, c) => a + c.w, 40) }}>
-            <thead className="sticky top-0 z-10">
+        <div ref={gridRef} className="card overflow-auto thin-scroll max-h-[70vh]" role="region" aria-label={`Scope of ${where}`}>
+          <table ref={tableRef} className="border-separate border-spacing-0 text-[13.5px]" style={{ minWidth }}>
+            <thead>
               <tr>
-                <th className="sticky left-0 z-20 bg-paper-2 border-b border-r border-line w-[34px]" />
-                {COLS.map((c) => (
-                  <th key={c.key} className="text-left font-medium text-[10.5px] uppercase tracking-wider text-ink-3 bg-paper-2 border-b border-line px-2 py-2" style={{ minWidth: c.w }}>
+                <th scope="col" className="sticky top-0 left-0 z-30 bg-paper-2 border-b border-r border-line" style={{ width: GUTTER, minWidth: GUTTER }}>
+                  <span className="sr-only">Delete</span>
+                </th>
+                {COLS.map((c, ci) => (
+                  <th
+                    key={c.key}
+                    scope="col"
+                    className={`sticky top-0 bg-paper-2 border-b border-line px-2.5 py-2.5 eyebrow whitespace-nowrap ${c.kind === "number" || c.kind === "money" || c.kind === "readonly" ? "text-right" : "text-left"} ${ci === 0 ? "sm:left-[44px] z-30 border-r" : "z-20"} ${focus?.c === ci ? "text-ink" : ""}`}
+                    style={{ minWidth: c.w, width: c.w }}
+                  >
                     {c.label}
                   </th>
                 ))}
               </tr>
             </thead>
             <tbody>
-              {rows.map((item, r) => (
-                <tr key={item.id} className="group">
-                  <td className="sticky left-0 z-[5] bg-card border-b border-r border-line text-center align-middle">
-                    <button
-                      title="Delete row"
-                      className="text-[11px] text-ink-4 hover:text-rust px-1"
-                      onClick={() => { if (confirm(`Delete “${item.title}”?`)) dispatch({ type: "remove", on: "items", id: item.id }); }}
-                    >✕</button>
-                  </td>
-                  {COLS.map((col, c) => (
-                    <td key={col.key} className="border-b border-line p-0 align-middle" style={{ background: focus?.r === r && focus?.c === c ? "#fdf6f1" : undefined }}>
-                      <Cell item={item} col={col} r={r} c={c} onKey={onKey} write={write} onFocus={() => setFocus({ r, c })} />
+              {rows.map((item, r) => {
+                const rowOn = focus?.r === r;
+                return (
+                  <tr key={item.id} className="group">
+                    <td className={`sticky left-0 z-10 border-b border-r border-line text-center align-middle ${rowOn ? "bg-accent-soft" : "bg-card"}`}>
+                      <button
+                        className="btn btn-ghost btn-icon btn-sm text-ink-3 hover:text-bad lg:opacity-60 lg:group-hover:opacity-100 focus-visible:opacity-100"
+                        aria-label={`Delete row ${r + 1}: ${item.title}`}
+                        title="Delete row"
+                        onClick={() => setDoomed(item)}
+                      >
+                        <Icon name="trash" size={16} />
+                      </button>
                     </td>
-                  ))}
-                </tr>
-              ))}
+                    {COLS.map((col, c) => {
+                      const on = rowOn && focus?.c === c;
+                      return (
+                        <td
+                          key={col.key}
+                          className={`border-b border-line p-0 align-middle ${c === 0 ? "sm:sticky sm:left-[44px] z-[5] border-r" : ""} ${on ? "bg-card" : rowOn ? "bg-accent-soft" : c === 0 ? "bg-card" : ""}`}
+                        >
+                          <Cell item={item} col={col} r={r} c={c} onKey={onKey} write={write} onFocus={() => setFocus({ r, c })} />
+                        </td>
+                      );
+                    })}
+                  </tr>
+                );
+              })}
             </tbody>
           </table>
+          <button
+            className="sticky left-0 w-full text-left px-4 py-2.5 text-[13.5px] text-ink-3 hover:text-ink hover:bg-paper-2 inline-flex items-center gap-2 border-t border-line"
+            onClick={addAndFocus}
+          >
+            <Icon name="plus" size={15} /> Add a row to {where}
+          </button>
         </div>
       )}
 
-      <p className="text-[11.5px] text-ink-3 mt-3 leading-relaxed max-w-3xl">
-        Forecast is computed, never typed: the hardest number available wins (paid → committed → approved → estimate → qty × rate).
-        Paste columns in this order — <span className="font-mono">Item, Category, Qty, Unit, Rate, Owner, Vendor, Notes</span> — and
-        blanks are fine; category and vendor are matched by name.
-      </p>
+      <div className="mt-4 grid gap-1.5 text-[13px] text-ink-3 leading-relaxed max-w-3xl">
+        <p>
+          <strong className="font-semibold text-ink-2">Forecast is worked out, never typed:</strong> the firmest number
+          wins — paid, then committed, approved, estimate, and finally qty × rate.
+        </p>
+        <p>
+          <strong className="font-semibold text-ink-2">Pasting from Excel:</strong> columns in the order{" "}
+          <span className="font-mono text-[12.5px] text-ink-2">Item, Category, Qty, Unit, Rate, Owner, Vendor, Notes</span>.
+          Blanks are fine; category and vendor are matched by name.
+        </p>
+      </div>
+
+      <Confirm
+        open={!!doomed}
+        title="Delete this row?"
+        confirmLabel="Delete row"
+        onCancel={() => setDoomed(null)}
+        onConfirm={() => {
+          if (!doomed) return;
+          dispatch({ type: "remove", on: "items", id: doomed.id });
+          toast(`Deleted “${doomed.title}”`);
+          setDoomed(null);
+          setFocus(null);
+        }}
+      >
+        {doomed && (
+          <p>
+            <strong className="font-semibold text-ink">{doomed.title}</strong> is removed from {where}, along with
+            anything that pointed at it. You can bring it back from History.
+          </p>
+        )}
+      </Confirm>
     </div>
   );
 }
@@ -252,10 +393,17 @@ function Cell({
 }) {
   const { state } = useProject();
   const v = get(item, col.key);
-  const base = "w-full h-[34px] px-2 bg-transparent outline-none focus:bg-white focus:ring-1 focus:ring-clay/60 rounded-none";
+  const label = `${col.label.replace(" ₹", "")}, row ${r + 1}`;
+  const base =
+    "w-full h-[38px] px-2.5 bg-transparent text-ink outline-none rounded-none " +
+    "focus:bg-card focus:shadow-[inset_0_0_0_2px_var(--color-accent)]";
 
   if (col.kind === "readonly") {
-    return <div className="h-[34px] px-2 flex items-center tnum text-ink-2 bg-paper-2/40">{inr(Number(v) || 0)}</div>;
+    return (
+      <div className="h-[38px] px-2.5 flex items-center justify-end tnum text-ink-2 bg-paper-2/60" title="Worked out from the figures in this row">
+        {inr(Number(v) || 0)}
+      </div>
+    );
   }
   if (col.kind === "select") {
     const opts =
@@ -266,7 +414,8 @@ function Cell({
     return (
       <select
         data-cell={`${r}-${c}`}
-        className={`${base} appearance-none text-[12.5px]`}
+        aria-label={label}
+        className={`${base} appearance-none cursor-pointer`}
         value={String(v ?? "")}
         onChange={(e) => write(item, col.key, e.target.value)}
         onKeyDown={(e) => onKey(e, r, c)}
@@ -280,6 +429,7 @@ function Cell({
   return (
     <CommitInput
       dataCell={`${r}-${c}`}
+      label={label}
       className={`${base} ${col.kind !== "text" ? "tnum text-right" : ""}`}
       value={v === undefined || v === null ? "" : String(v)}
       numeric={col.kind !== "text"}
@@ -291,9 +441,9 @@ function Cell({
 }
 
 function CommitInput({
-  dataCell, className, value, numeric, onCommit, onKeyDown, onFocus,
+  dataCell, label, className, value, numeric, onCommit, onKeyDown, onFocus,
 }: {
-  dataCell: string; className: string; value: string; numeric: boolean;
+  dataCell: string; label: string; className: string; value: string; numeric: boolean;
   onCommit: (raw: string) => void; onKeyDown: (e: React.KeyboardEvent) => void; onFocus: () => void;
 }) {
   const [draft, setDraft] = useState(value);
@@ -303,6 +453,7 @@ function CommitInput({
   return (
     <input
       data-cell={dataCell}
+      aria-label={label}
       className={className}
       inputMode={numeric ? "decimal" : undefined}
       value={draft}

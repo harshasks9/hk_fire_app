@@ -194,11 +194,11 @@ export const SOURCE_NOTE: Record<MeasureSource, string> = {
     "Provenance unrecorded. Confirm where this number came from before ordering against it.",
 };
 
-export const SOURCE_TONE: Record<MeasureSource, "sage" | "slate" | "ochre" | "clay"> = {
-  "site-measured": "sage",
-  "architect-plan": "slate",
-  estimated: "ochre",
-  unknown: "clay",
+export const SOURCE_TONE: Record<MeasureSource, "good" | "info" | "warn" | "accent"> = {
+  "site-measured": "good",
+  "architect-plan": "info",
+  estimated: "warn",
+  unknown: "accent",
 };
 
 /** True once a dimension is safe to cut joinery or stone against. */

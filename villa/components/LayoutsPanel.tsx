@@ -8,9 +8,10 @@ import { designFor, recommendedOf } from "@/lib/design";
 import type { Layout, RoomDesign } from "@/lib/design/types";
 import type { Note } from "@/lib/model/types";
 import { inr } from "@/lib/model/costing";
+import { Icon } from "./Icon";
 import { RoomLayout, pieceList } from "./RoomLayout";
 import { RowActions } from "./Entity";
-import { Chip, Eyebrow, relative } from "./ui";
+import { Chip, Eyebrow, relative, useToast } from "./ui";
 
 /**
  * A room's layouts, side by side.
@@ -28,9 +29,9 @@ export function LayoutsPanel({ spaceId }: { spaceId: string }) {
   if (design.spaceId !== spaceId) {
     const host = state.spaces.find((s) => s.id === design.spaceId);
     return (
-      <div className="card-quiet px-4 py-4 text-[13px] text-ink-2 leading-relaxed">
+      <div className="card-quiet px-4 py-4 text-[14px] text-ink-2 leading-relaxed">
         This is part of one room now: its layouts are drawn with the whole{" "}
-        <Link href={`/villa/${design.spaceId}?tab=Layouts`} className="text-clay hover:underline">{host?.name ?? "room"}</Link>.
+        <Link href={`/villa/${design.spaceId}?tab=Layouts`} className="text-accent hover:underline">{host?.name ?? "room"}</Link>.
       </div>
     );
   }
@@ -39,28 +40,34 @@ export function LayoutsPanel({ spaceId }: { spaceId: string }) {
 
 function Panel({ design }: { design: RoomDesign }) {
   const { state, dispatch } = useProject();
+  const toast = useToast();
   const space = state.spaces.find((s) => s.id === design.spaceId);
   const chosenId = space?.layoutId;
   const rec = recommendedOf(design);
   const chosen = design.layouts.find((l) => l.id === chosenId);
 
-  const choose = (l?: Layout) =>
+  const choose = (l?: Layout) => {
+    const before = chosen;
     dispatch({ type: "space/layout", id: design.spaceId, layoutId: l?.id, name: l?.name });
+    toast(l ? `Layout ${l.key} chosen for ${space?.name ?? "this room"}` : "Choice cleared", {
+      action: { label: "Undo", run: () => dispatch({ type: "space/layout", id: design.spaceId, layoutId: before?.id, name: before?.name }) },
+    });
+  };
 
   return (
     <div>
       <div className="flex flex-wrap items-start justify-between gap-3 mb-4">
-        <p className="text-[13px] text-ink-2 leading-relaxed max-w-3xl">{design.brief}</p>
+        <p className="text-[14px] text-ink-2 leading-relaxed max-w-3xl">{design.brief}</p>
         <div className="shrink-0">
           {chosen
-            ? <Chip tone="clay">Chosen: {chosen.key} — {chosen.name}</Chip>
+            ? <Chip tone="accent">Chosen: {chosen.key} — {chosen.name}</Chip>
             : <Chip tone="neutral">Not chosen yet · I recommend {rec.key}</Chip>}
         </div>
       </div>
 
       {design.ignoreOpenings?.map((g) => (
-        <p key={g.edge + g.at} className="text-[11.5px] text-ink-3 mb-3 leading-relaxed">
-          <span className="text-clay">Note on the plan:</span> {g.why}
+        <p key={g.edge + g.at} className="text-[12.5px] text-ink-3 mb-3 leading-relaxed">
+          <span className="text-accent">Note on the plan:</span> {g.why}
         </p>
       ))}
 
@@ -70,9 +77,9 @@ function Panel({ design }: { design: RoomDesign }) {
           {design.layouts.map((l) => (
             <a key={l.id} href={`#layout-${l.key}`}
               className="card px-2 pt-2 pb-1.5 shrink-0 hover:border-ink-4 transition-colors"
-              style={{ width: 150, borderColor: l.id === chosenId ? "var(--color-clay)" : undefined }}>
+              style={{ width: 150, borderColor: l.id === chosenId ? "var(--color-accent)" : undefined }}>
               <RoomLayout design={design} layout={l} compact maxHeight={120} />
-              <div className="text-[11px] mt-1 leading-tight truncate">
+              <div className="text-[12.5px] mt-1 leading-tight truncate">
                 <strong className="font-semibold">{l.key}</strong> {l.name}
               </div>
             </a>
@@ -87,7 +94,7 @@ function Panel({ design }: { design: RoomDesign }) {
         ))}
       </div>
 
-      <p className="text-[11px] text-ink-3 mt-5 leading-relaxed max-w-3xl">
+      <p className="text-[12.5px] text-ink-3 mt-5 leading-relaxed max-w-3xl">
         Drawn to scale on the room as the villa model has it, road-down with north to the right. Walls, windows and doors
         come from the plan; anything dashed in clay is assumed and needs checking on site. Costs are indicative differences
         against layout A, not quotes.
@@ -106,61 +113,61 @@ function LayoutCard({ design, layout: l, chosen, onChoose }: { design: RoomDesig
   const [showPieces, setShowPieces] = useState(false);
   return (
     <section id={`layout-${l.key}`} className="card px-4 sm:px-5 py-4 scroll-mt-24"
-      style={chosen ? { borderColor: "var(--color-clay)", boxShadow: "0 0 0 1px var(--color-clay)" } : undefined}>
+      style={chosen ? { borderColor: "var(--color-accent)", boxShadow: "0 0 0 1px var(--color-accent)" } : undefined}>
       <header className="flex flex-wrap items-start justify-between gap-2 mb-3">
         <div className="min-w-0">
           <div className="flex flex-wrap items-center gap-2">
-            <span className="inline-flex items-center justify-center w-6 h-6 rounded-full text-[12px] font-semibold"
-              style={{ background: chosen ? "var(--color-clay)" : "#efe9df", color: chosen ? "#fff" : "#514941" }}>{l.key}</span>
-            <h3 className="text-[16px] leading-snug" style={{ fontFamily: "var(--font-display)" }}>{l.name}</h3>
+            <span className="inline-flex items-center justify-center w-6 h-6 rounded-full text-[13px] font-semibold"
+              style={{ background: chosen ? "var(--color-accent)" : "var(--color-paper-2)", color: chosen ? "#fff" : "var(--color-ink-2)" }}>{l.key}</span>
+            <h3 className="text-[16px] leading-snug">{l.name}</h3>
           </div>
           <div className="flex flex-wrap gap-1.5 mt-1.5">
-            {l.recommended && <Chip tone="sage">Recommended</Chip>}
-            {chosen && <Chip tone="clay">Chosen</Chip>}
+            {l.recommended && <Chip tone="good">Recommended</Chip>}
+            {chosen && <Chip tone="accent">Chosen</Chip>}
             <Chip tone="ghost">{costLine(l)}</Chip>
           </div>
         </div>
-        <button onClick={onChoose} className={chosen ? "btn btn-sm" : "btn btn-sm btn-primary"}>
-          {chosen ? "Chosen — undo" : "Choose this layout"}
+        <button onClick={onChoose} className="btn btn-sm" aria-pressed={chosen}>
+          {chosen ? <><Icon name="close" size={14} /> Undo choice</> : <><Icon name="check" size={15} strokeWidth={2} /> Choose this layout</>}
         </button>
       </header>
 
-      <div className="rounded-lg overflow-hidden" style={{ background: "#fffdfa" }}>
+      <div className="rounded-lg overflow-hidden border border-line" style={{ background: "#fffdfa" }}>
         <RoomLayout design={design} layout={l} maxHeight={560} />
       </div>
 
-      <p className="text-[13px] text-ink-2 mt-3 leading-relaxed">{l.idea}</p>
+      <p className="text-[14px] text-ink-2 mt-3 leading-relaxed">{l.idea}</p>
 
       <div className="grid sm:grid-cols-2 gap-3 mt-3">
         <div>
           <Eyebrow>Good at</Eyebrow>
           <ul className="mt-1.5 space-y-1">
-            {l.pros.map((p) => <li key={p} className="text-[12px] text-ink-2 leading-snug flex gap-1.5"><span className="text-sage shrink-0">+</span><span>{p}</span></li>)}
+            {l.pros.map((p) => <li key={p} className="text-[13px] text-ink-2 leading-snug flex gap-1.5"><span className="text-good shrink-0">+</span><span>{p}</span></li>)}
           </ul>
         </div>
         <div>
           <Eyebrow>Costs you</Eyebrow>
           <ul className="mt-1.5 space-y-1">
-            {l.cons.map((c) => <li key={c} className="text-[12px] text-ink-2 leading-snug flex gap-1.5"><span className="text-clay shrink-0">−</span><span>{c}</span></li>)}
+            {l.cons.map((c) => <li key={c} className="text-[13px] text-ink-2 leading-snug flex gap-1.5"><span className="text-accent shrink-0">−</span><span>{c}</span></li>)}
           </ul>
         </div>
       </div>
 
       {l.assumptions?.length ? (
         <div className="card-quiet px-3 py-2 mt-3">
-          <div className="text-[11px] text-clay font-medium">Assumes</div>
+          <div className="text-[12.5px] text-accent font-medium">Assumes</div>
           <ul className="mt-0.5 space-y-0.5">
-            {l.assumptions.map((a) => <li key={a} className="text-[11.5px] text-ink-3 leading-snug">{a}</li>)}
+            {l.assumptions.map((a) => <li key={a} className="text-[12.5px] text-ink-3 leading-snug">{a}</li>)}
           </ul>
         </div>
       ) : null}
 
-      <button className="text-[11.5px] text-clay hover:underline mt-3" onClick={() => setShowPieces((v) => !v)}>
+      <button className="text-[12.5px] text-accent hover:underline mt-3" onClick={() => setShowPieces((v) => !v)}>
         {showPieces ? "Hide" : "What's in it"} ({pieceList(l).length})
       </button>
       {showPieces && (
         <ul className="mt-1.5 grid sm:grid-cols-2 gap-x-4 gap-y-0.5">
-          {pieceList(l).map((p) => <li key={p} className="text-[11.5px] text-ink-3 leading-snug">· {p}</li>)}
+          {pieceList(l).map((p) => <li key={p} className="text-[12.5px] text-ink-3 leading-snug">· {p}</li>)}
         </ul>
       )}
 
@@ -172,6 +179,7 @@ function LayoutCard({ design, layout: l, chosen, onChoose }: { design: RoomDesig
 /** Notes under one layout: anyone on the project, attributed and dated, kept in the history. */
 function LayoutNotes({ layout, spaceId }: { layout: Layout; spaceId: string }) {
   const { state, dispatch, me } = useProject();
+  const toast = useToast();
   const [draft, setDraft] = useState("");
   const notes = useMemo(
     () => state.notes.filter((n) => n.layoutIds?.includes(layout.id)).sort((a, b) => b.at.localeCompare(a.at)),
@@ -195,6 +203,7 @@ function LayoutNotes({ layout, spaceId }: { layout: Layout; spaceId: string }) {
     };
     dispatch({ type: "create", on: "notes", row });
     setDraft("");
+    toast(`Note added to layout ${layout.key}`);
   }
 
   return (
@@ -204,9 +213,9 @@ function LayoutNotes({ layout, spaceId }: { layout: Layout; spaceId: string }) {
         <ul className="mt-2 space-y-2.5">
           {notes.map((n) => (
             <li key={n.id} className="group">
-              <p className="text-[12.5px] text-ink-2 leading-relaxed whitespace-pre-wrap">{n.body}</p>
+              <p className="text-[13.5px] text-ink-2 leading-relaxed whitespace-pre-wrap">{n.body}</p>
               <div className="flex items-center justify-between gap-2 mt-0.5">
-                <span className="text-[11px] text-ink-3">{n.author || "Someone"} · {relative(n.at)}</span>
+                <span className="text-[12.5px] text-ink-3">{n.author || "Someone"} · {relative(n.at)}</span>
                 <RowActions on="notes" id={n.id} />
               </div>
             </li>
@@ -214,8 +223,8 @@ function LayoutNotes({ layout, spaceId }: { layout: Layout; spaceId: string }) {
         </ul>
       )}
       <div className="mt-2.5 flex flex-col sm:flex-row gap-2">
-        <textarea
-          className="input text-[12.5px] flex-1 min-h-[42px]"
+        <textarea aria-label={`A note on layout ${layout.key}`}
+          className="input text-[13.5px] flex-1 min-h-[42px]"
           rows={2}
           placeholder={`A note on layout ${layout.key} — as ${me}`}
           value={draft}

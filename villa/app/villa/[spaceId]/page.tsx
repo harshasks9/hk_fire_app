@@ -9,9 +9,9 @@ import {
   COMPLETENESS_BUCKETS,
 } from "@/lib/model/derive";
 import { inr } from "@/lib/model/costing";
-import { measureLine, NOT_DIMENSIONED_NOTE } from "@/lib/model/measure";
-import { MeasureTable } from "@/components/Measure";
-import { roomChecklist, type Check } from "@/lib/model/checklist";
+import { MeasureTable, DimsShort } from "@/components/Measure";
+import { roomChecklist } from "@/lib/model/checklist";
+import { ChecklistBody } from "@/components/Checklist";
 import { RoomDrawings } from "@/components/RoomDrawings";
 import { LayoutsPanel } from "@/components/LayoutsPanel";
 import { designFor } from "@/lib/design";
@@ -23,21 +23,26 @@ import {
 } from "@/lib/model/types";
 import {
   PageTitle, Eyebrow, Stat, Bar, Chip, StageChip, Money, PhotoBlock, Tabs, Empty,
-  Avatar, fmtDay, Swatch, BudgetBar, Field, Assumed,
+  fmtDay, BudgetBar, Assumed, Section, LegendDot, BAR, useToast,
 } from "@/components/ui";
+import { Icon } from "@/components/Icon";
 import { ItemSheet } from "@/components/ItemSheet";
 import { DecisionCard, OptionTile } from "@/components/DecisionCard";
 import { Comments } from "@/components/Comments";
 import { FloorPlan } from "@/components/FloorPlan";
-import { AddButton, RowActions, EntityLink, EmptyWithAdd } from "@/components/Entity";
+import { AddButton, RowActions, EntityLink, EmptyWithAdd, useEntity } from "@/components/Entity";
 import { FLOOR_META } from "@/lib/seed/spaces";
 import { catLabel, categoryOptions, buildUpFromCategory } from "@/lib/model/categories";
 
-const TABS = [
-  "Layouts", "Checklist", "Design", "Ideas", "Decisions", "Scope", "Cost", "Products",
-  "Tasks", "Vendors", "Files", "Site photos", "Issues",
-] as const;
+const TABS = ["Layouts", "Checklist", "Design", "Decisions", "Scope", "Cost", "On site"] as const;
 type Tab = (typeof TABS)[number];
+
+/** Old tab names still work in links: each now lives inside one of the seven. */
+const ALIAS: Record<string, { tab: Tab; sub?: string }> = {
+  Ideas: { tab: "Design" }, Products: { tab: "Scope", sub: "buy" }, Vendors: { tab: "Cost" },
+  Tasks: { tab: "On site", sub: "tasks" }, Files: { tab: "On site", sub: "files" },
+  "Site photos": { tab: "On site", sub: "photos" }, Issues: { tab: "On site", sub: "issues" },
+};
 
 /**
  * The room workspace.
@@ -50,10 +55,11 @@ type Tab = (typeof TABS)[number];
 export default function RoomPage() {
   const params = useParams<{ spaceId: string }>();
   const searchParams = useSearchParams();
-  const router = useRouter();
   const { state, role, meId } = useProject();
+  const { edit } = useEntity();
   const hasLayouts = !!designFor(decodeURIComponent(params.spaceId));
   const [tab, setTab] = useState<Tab>(hasLayouts ? "Layouts" : "Checklist");
+  const [sub, setSub] = useState<string | undefined>(undefined);
   const tabs = hasLayouts ? TABS : TABS.filter((t) => t !== "Layouts");
   const [openItem, setOpenItem] = useState<ScopeItem | null>(null);
 
@@ -84,8 +90,9 @@ export default function RoomPage() {
 
   // Deep link: /villa/ff-master?item=xyz opens that item directly; ?tab=Layouts opens a tab.
   React.useEffect(() => {
-    const t = searchParams.get("tab") as Tab | null;
-    if (t && (TABS as readonly string[]).includes(t) && (t !== "Layouts" || hasLayouts)) setTab(t);
+    const t = searchParams.get("tab");
+    if (t && (TABS as readonly string[]).includes(t) && (t !== "Layouts" || hasLayouts)) setTab(t as Tab);
+    else if (t && ALIAS[t]) { setTab(ALIAS[t].tab); setSub(ALIAS[t].sub); }
     const want = searchParams.get("item");
     if (want) {
       const it = state.items.find((i) => i.id === want);
@@ -94,133 +101,201 @@ export default function RoomPage() {
   }, [searchParams, state.items, hasLayouts]);
 
   if (space && !roomLens(state, role, meId)(space.id)) {
-    return <Empty title="Not one of your rooms." hint="Your view is limited to the rooms assigned to you under Admin → People." />;
+    return <Empty icon="lock" title="Not one of your rooms." hint="Your view is limited to the rooms assigned to you under Settings → People."
+      action={<Link href="/villa" className="btn btn-sm">Back to rooms</Link>} />;
   }
   if (!space) {
-    return <Empty title="That space is not in the villa." hint="It may have been renamed or removed." />;
+    return <Empty icon="villa" title="That room isn’t in the villa." hint="It may have been renamed or removed."
+      action={<Link href="/villa" className="btn btn-sm">See all rooms</Link>} />;
   }
 
   const nextMilestone = tasks
     .filter((t) => t.status !== "done" && t.finish)
     .sort((a, b) => +new Date(a.finish!) - +new Date(b.finish!))[0];
 
+  const openTasks = tasks.filter((t) => t.status !== "done").length;
+  const openSnags = snags.filter((s) => s.status !== "closed").length;
   const counts: Partial<Record<Tab, number>> = {
     Layouts: designFor(spaceId)?.layouts.length,
     Checklist: checklist ? checklist.total - checklist.done : undefined,
-    Ideas: ideas.length, Decisions: decisions.length, Scope: r.live,
-    Products: products.length, Tasks: tasks.filter((t) => t.status !== "done").length,
-    Files: docs.length, "Site photos": updates.length, Issues: snags.filter((s) => s.status !== "closed").length,
-    Vendors: vendorIds.length,
+    Design: ideas.length + options.length || undefined,
+    Decisions: decisions.length, Scope: r.live,
+    "On site": openSnags + openTasks + updates.length + docs.length || undefined,
   };
+  const pick = (t: Tab) => { setTab(t); setSub(undefined); };
 
   return (
     <div>
-      <div className="flex items-center gap-2 text-[12px] text-ink-3 mb-3">
-        <Link href="/villa" className="hover:text-clay">Villa</Link>
-        <span>/</span>
-        <span>{FLOOR_META[space.floor].label}</span>
-        {parent && <><span>/</span><Link href={`/villa/${parent.id}`} className="hover:text-clay">{parent.name}</Link></>}
-      </div>
+      <PageTitle
+        eyebrow={
+          <span className="inline-flex flex-wrap items-center gap-1.5">
+            <Link href="/villa" className="hover:text-ink">Rooms</Link>
+            <span aria-hidden>/</span>
+            <span>{FLOOR_META[space.floor].label}</span>
+            {parent && <><span aria-hidden>/</span><Link href={`/villa/${parent.id}`} className="hover:text-ink">{parent.name}</Link></>}
+          </span>
+        }
+        title={space.name}
+        sub={space.note}
+        right={
+          <button className="btn" onClick={() => edit("spaces", space.id)}>
+            <Icon name="edit" size={16} /> Edit room
+          </button>
+        }
+      />
 
       {/* ------------------------------------------------------------ header */}
-      <div className="grid lg:grid-cols-[minmax(0,1fr)_300px] gap-5 mb-7">
-        <div>
-          <PageTitle
-            title={space.name}
-            right={<Link href="/manage" className="btn btn-sm">Edit this room</Link>}
-            sub={measureLine(space, { perimeter: true }) + (space.note ? ` — ${space.note}` : "")}
-          />
-          {!space.dims && (
-            <p className="text-[11.5px] text-ink-3 -mt-3 mb-4 max-w-xl leading-relaxed">{NOT_DIMENSIONED_NOTE}</p>
-          )}
-
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-4">
-            <Stat label="Complete" value={`${Math.round(m.completionPct)}%`} />
+      <div className="grid lg:grid-cols-[minmax(0,1fr)_320px] gap-5 mb-8">
+        <div className="min-w-0 space-y-4">
+          <div className="card stat-strip">
+            <Stat label="Complete" value={`${Math.round(m.completionPct)}%`} sub={`${r.live} scope lines`} />
             <Stat label="Forecast" value={<Money value={r.forecast} compact />} sub={r.approvedBudget ? `budget ${inr(r.approvedBudget, { compact: true })}` : "no approved budget yet"} />
             <Stat
               label="Awaiting you"
-              value={openDec.length || "—"}
-              tone={openDec.length ? "clay" : undefined}
+              value={openDec.length || "None"}
+              tone={openDec.length ? "accent" : undefined}
               sub={openDec.length ? openDec[0].title : "nothing outstanding"}
             />
             <Stat
-              label="Next"
-              value={nextMilestone ? fmtDay(nextMilestone.finish) : "—"}
+              label="Next date"
+              value={nextMilestone ? fmtDay(nextMilestone.finish) : "None"}
               sub={nextMilestone?.title ?? "nothing scheduled"}
             />
           </div>
 
-          <BudgetBar paid={r.paid} committed={r.committed} forecast={r.forecast} budget={r.approvedBudget} />
-          <div className="mt-2 text-[11.5px] text-ink-3">
-            {inr(r.paid, { compact: true })} paid · {inr(r.remainingCommitment, { compact: true })} committed and unpaid ·{" "}
-            {inr(r.uncommittedEstimate, { compact: true })} still an estimate
+          <div>
+            <BudgetBar paid={r.paid} committed={r.committed} forecast={r.forecast} budget={r.approvedBudget} />
+            <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-[12.5px] text-ink-3">
+              <LegendDot color={BAR.paid} label={`${inr(r.paid, { compact: true })} paid`} />
+              <LegendDot color={BAR.committed} label={`${inr(r.remainingCommitment, { compact: true })} committed, unpaid`} />
+              <LegendDot color={BAR.forecast} label={`${inr(r.uncommittedEstimate, { compact: true })} still an estimate`} />
+            </div>
           </div>
 
-          {children.length > 0 && (
-            <div className="mt-4 flex flex-wrap items-center gap-2">
-              <span className="text-[11.5px] text-ink-3">Part of this suite:</span>
-              {children.map((c) => (
-                <Link key={c.id} href={`/villa/${c.id}`} className="chip" style={{ background: "#f1ede7", color: "#514941" }}>
-                  {c.name}
+          {gaps.length > 0 && (
+            <div className="card px-4 py-3.5">
+              <div className="eyebrow">Not yet thought about</div>
+              <ul className="mt-2 space-y-1.5">
+                {gaps.slice(0, 3).map((g) => (
+                  <li key={g.id} className="text-[13px] leading-snug flex gap-2">
+                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full shrink-0" style={{ background: g.severity === "blocker" ? "var(--color-bad)" : g.severity === "risk" ? "var(--color-warn)" : "var(--color-ink-4)" }} />
+                    <span className="text-ink-2">{g.title.replace(`${space.name} — `, "")}</span>
+                  </li>
+                ))}
+              </ul>
+              {gaps.length > 3 && (
+                <Link href="/more/completeness" className="link text-[13px] mt-2 inline-flex items-center gap-1">
+                  {gaps.length - 3} more <Icon name="arrow-right" size={13} />
                 </Link>
+              )}
+            </div>
+          )}
+          {children.length > 0 && (
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="text-[13px] text-ink-3">Part of this room:</span>
+              {children.map((c) => (
+                <Link key={c.id} href={`/villa/${c.id}`} className="pill">{c.name}</Link>
               ))}
             </div>
           )}
         </div>
 
-        <div>
-          <PhotoBlock
-            tone={updates[0]?.photoSwatch ?? "#c9bfae"}
-            ratio="4 / 3"
-            label={updates[0] ? `Site — ${fmtDay(updates[0].at)}` : "No site photo yet"}
-          />
-          <div className="mt-3"><MeasureTable sp={space} /></div>
-          {gaps.length > 0 && (
-            <div className="card-quiet px-3.5 py-3 mt-3">
-              <Eyebrow>Not yet thought about</Eyebrow>
-              <div className="mt-2 space-y-1.5">
-                {gaps.slice(0, 3).map((g) => (
-                  <div key={g.id} className="text-[11.5px] leading-snug">
-                    <span style={{ color: g.severity === "blocker" ? "#8d3a2c" : g.severity === "risk" ? "#a8763f" : "#857b70" }}>●</span>{" "}
-                    <span className="text-ink-2">{g.title.replace(`${space.name} — `, "")}</span>
-                  </div>
-                ))}
-              </div>
-              {gaps.length > 3 && (
-                <Link href="/more/completeness" className="text-[11px] text-clay mt-2 inline-block hover:underline">
-                  {gaps.length - 3} more →
-                </Link>
-              )}
-            </div>
+        <aside className="space-y-3 min-w-0">
+          {updates[0] && (
+            <PhotoBlock tone={updates[0].photoSwatch ?? "#c9bfae"} ratio="16 / 9" label={`Site — ${fmtDay(updates[0].at)}`} className="hidden lg:block" />
           )}
-        </div>
+          <div className="hidden lg:block"><MeasureTable sp={space} /></div>
+          {/* On a phone the measurements fold into one line, so the tabs stay near the top. */}
+          <details className="lg:hidden card group">
+            <summary className="list-none cursor-pointer px-4 py-3 flex items-center justify-between gap-3">
+              <span className="min-w-0">
+                <span className="eyebrow block">Measurements</span>
+                <span className="block text-[14px] text-ink-2 truncate mt-0.5"><DimsShort sp={space} /></span>
+              </span>
+              <Icon name="chevron-down" size={18} className="text-ink-3 transition-transform group-open:rotate-180 shrink-0" />
+            </summary>
+            <div className="px-1 pb-1"><MeasureTable sp={space} /></div>
+          </details>
+        </aside>
       </div>
 
-      <Tabs tabs={tabs} active={tab} onChange={setTab} counts={counts} />
+      <Tabs tabs={tabs} active={tab} onChange={pick} counts={counts} label={`${space.name} sections`} />
 
-      <div className="mt-6">
+      <div className="mt-6" role="tabpanel" aria-label={tab}>
         {tab === "Layouts" && <LayoutsPanel spaceId={spaceId} />}
         {tab === "Checklist" && <ChecklistTab spaceId={spaceId} />}
-        {tab === "Design" && <DesignTab spaceId={spaceId} options={options} ideas={ideas} decisions={decisions} docs={docs} />}
-        {tab === "Ideas" && <IdeasTab spaceId={spaceId} ideas={ideas} items={items} />}
+        {tab === "Design" && (
+          <div className="space-y-10">
+            <DesignTab spaceId={spaceId} options={options} ideas={ideas} decisions={decisions} docs={docs} />
+            <Section title={`Ideas${ideas.length ? ` · ${ideas.length}` : ""}`}>
+              <IdeasTab spaceId={spaceId} ideas={ideas} items={items} />
+            </Section>
+          </div>
+        )}
         {tab === "Decisions" && (
           decisions.length ? (
             <div className="space-y-3">{decisions.map((d) => <DecisionCard key={d.id} decision={d} />)}</div>
           ) : (
-            <Empty title="No decisions raised for this room yet." hint="A decision is created the moment the designer wants a choice made — from an idea, an option, or straight from a scope item." />
+            <Empty icon="decisions" title="No decisions raised for this room yet." hint="A decision is created the moment the designer wants a choice made — from an idea, an option, or straight from a scope item." />
           )
         )}
-        {tab === "Scope" && <ScopeTab items={items} onOpen={setOpenItem} spaceId={spaceId} />}
-        {tab === "Cost" && <CostTab items={items} rollupData={r} />}
-        {tab === "Products" && <ProductsTab items={products} onOpen={setOpenItem} />}
-        {tab === "Tasks" && <TasksTab tasks={tasks} spaceId={spaceId} />}
-        {tab === "Vendors" && <VendorsTab vendorIds={vendorIds} items={items} />}
-        {tab === "Files" && <FilesTab docs={docs} spaceId={spaceId} />}
-        {tab === "Site photos" && <SiteTab updates={updates} notes={notes} spaceId={spaceId} />}
-        {tab === "Issues" && <IssuesTab snags={snags} spaceId={spaceId} />}
+        {tab === "Scope" && (
+          <SubNav
+            value={sub ?? "all"} onChange={setSub}
+            items={[{ key: "all", label: "All scope", n: r.live }, { key: "buy", label: "Things to buy", n: products.length }]}
+          >
+            {(sub ?? "all") === "all" ? <ScopeTab items={items} onOpen={setOpenItem} spaceId={spaceId} /> : <ProductsTab items={products} onOpen={setOpenItem} />}
+          </SubNav>
+        )}
+        {tab === "Cost" && (
+          <div className="space-y-10">
+            <CostTab items={items} rollupData={r} />
+            <Section title={`Vendors on this room${vendorIds.length ? ` · ${vendorIds.length}` : ""}`}>
+              <VendorsTab vendorIds={vendorIds} items={items} />
+            </Section>
+          </div>
+        )}
+        {tab === "On site" && (() => {
+          const firstWithSomething = openSnags ? "issues" : openTasks ? "tasks" : updates.length || notes.length ? "photos" : docs.length ? "files" : "issues";
+          const cur = sub ?? firstWithSomething;
+          return (
+            <SubNav
+              value={cur} onChange={setSub}
+              items={[
+                { key: "issues", label: "Snags", n: openSnags },
+                { key: "tasks", label: "Tasks", n: openTasks },
+                { key: "photos", label: "Photos & notes", n: updates.length + notes.length },
+                { key: "files", label: "Files", n: docs.length },
+              ]}
+            >
+              {cur === "issues" && <IssuesTab snags={snags} spaceId={spaceId} />}
+              {cur === "tasks" && <TasksTab tasks={tasks} spaceId={spaceId} />}
+              {cur === "photos" && <SiteTab updates={updates} notes={notes} spaceId={spaceId} />}
+              {cur === "files" && <FilesTab docs={docs} spaceId={spaceId} />}
+            </SubNav>
+          );
+        })()}
       </div>
 
       <ItemSheet item={openItem} open={!!openItem} onClose={() => setOpenItem(null)} />
+    </div>
+  );
+}
+
+/** A second level of navigation inside a tab — pills, not more tabs. */
+function SubNav({
+  value, onChange, items, children,
+}: { value: string; onChange: (v: string) => void; items: { key: string; label: string; n?: number }[]; children: React.ReactNode }) {
+  return (
+    <div>
+      <div className="flex gap-1.5 overflow-x-auto pb-1 mb-5 -mx-1 px-1" role="group" aria-label="Show" style={{ scrollbarWidth: "none" }}>
+        {items.map((it) => (
+          <button key={it.key} className="pill shrink-0" aria-pressed={value === it.key} onClick={() => onChange(it.key)}>
+            {it.label}{it.n !== undefined && <span className="count">{it.n}</span>}
+          </button>
+        ))}
+      </div>
+      {children}
     </div>
   );
 }
@@ -273,8 +348,8 @@ function DesignTab({
             {renders.map((d) => (
               <div key={d.id}>
                 <PhotoBlock tone="#b9ada0" ratio="4 / 3" label={d.revision} />
-                <div className="text-[12px] mt-1.5">{d.title}</div>
-                <div className="text-[10.5px] text-ink-3">{d.addedBy} · {fmtDay(d.addedAt)}</div>
+                <div className="text-[13px] mt-1.5">{d.title}</div>
+                <div className="text-[12px] text-ink-3">{d.addedBy} · {fmtDay(d.addedAt)}</div>
               </div>
             ))}
           </div>
@@ -311,16 +386,16 @@ function IdeasTab({ ideas, items }: { spaceId: string; ideas: Idea[]; items: Sco
 
   return (
     <div>
-      <div className="card px-4 py-3.5 mb-5">
+      <div className="card px-4 py-4 mb-5">
         <Eyebrow className="mb-2">Add an idea</Eyebrow>
         <div className="flex flex-col sm:flex-row gap-2">
-          <input className="input" value={text} onChange={(e) => setText(e.target.value)} placeholder="Paste a link, describe a reference, name a material…" />
-          <select className="input sm:w-64" value={target} onChange={(e) => setTarget(e.target.value)}>
+          <input className="input" aria-label="The idea" value={text} onChange={(e) => setText(e.target.value)} placeholder="Paste a link, describe a reference, name a material…" />
+          <select className="input sm:w-64" aria-label="Against which scope line" value={target} onChange={(e) => setTarget(e.target.value)}>
             {items.map((i: ScopeItem) => <option key={i.id} value={i.id}>{i.title}</option>)}
           </select>
-          <button className="btn btn-accent shrink-0" onClick={add} disabled={!text.trim()}>Add</button>
+          <button className="btn btn-primary shrink-0" onClick={add} disabled={!text.trim()}><Icon name="plus" size={15} strokeWidth={2} /> Add idea</button>
         </div>
-        <p className="text-[11px] text-ink-3 mt-2">Every idea attaches to a piece of scope, so it can become an option and then a decision without being retyped.</p>
+        <p className="text-[12.5px] text-ink-3 mt-2">Every idea attaches to a piece of scope, so it can become an option and then a decision without being retyped.</p>
       </div>
 
       {ideas.length ? (
@@ -335,14 +410,14 @@ function IdeasTab({ ideas, items }: { spaceId: string; ideas: Idea[]; items: Sco
                   ))}
                 </div>
                 <div className="px-3.5 py-3">
-                  <div className="text-[13.5px] leading-snug">{idea.title}</div>
-                  {idea.body && <p className="text-[12px] text-ink-3 mt-1.5 leading-relaxed">{idea.body}</p>}
+                  <div className="text-[14.5px] leading-snug">{idea.title}</div>
+                  {idea.body && <p className="text-[13px] text-ink-3 mt-1.5 leading-relaxed">{idea.body}</p>}
                   <div className="mt-2 flex items-center justify-between gap-2">
-                    <span className="text-[11px] text-ink-4 truncate">{item?.title}</span>
+                    <span className="text-[12.5px] text-ink-4 truncate">{item?.title}</span>
                     <button
                       onClick={() => dispatch({ type: "idea/shortlist", id: idea.id })}
-                      className="chip shrink-0"
-                      style={{ background: idea.shortlisted ? "#f2e2d9" : "#f4f1ec", color: idea.shortlisted ? "#9c5333" : "#857b70" }}
+                      className={`chip shrink-0 border ${idea.shortlisted ? "bg-accent-soft text-accent-strong border-transparent" : "bg-card text-ink-3 border-line-2 hover:text-ink"}`}
+                      aria-pressed={!!idea.shortlisted}
                     >
                       {idea.shortlisted ? "★ Shortlisted" : "☆ Shortlist"}
                     </button>
@@ -396,12 +471,12 @@ function ScopeTab({ items, onOpen, spaceId }: { items: ScopeItem[]; onOpen: (i: 
         <div className="flex flex-wrap gap-x-5 gap-y-2">
           {buckets.map((b) => (
             <div key={b.key}>
-              <div className="tnum text-[17px]" style={{ fontFamily: "var(--font-display)" }}>{b.n}</div>
-              <div className="text-[10.5px] text-ink-3">{b.label}</div>
+              <div className="text-[20px] font-semibold leading-none">{b.n}</div>
+              <div className="text-[12px] text-ink-3">{b.label}</div>
             </div>
           ))}
         </div>
-        <p className="text-[11.5px] text-ink-3 mt-3 leading-relaxed">
+        <p className="text-[12.5px] text-ink-3 mt-3 leading-relaxed">
           This checklist was pre-populated the moment the room existed. Items are never deleted —
           anything not needed is marked <em>Not applicable</em> with a reason, which is how you prove later that it was considered.
         </p>
@@ -410,19 +485,19 @@ function ScopeTab({ items, onOpen, spaceId }: { items: ScopeItem[]; onOpen: (i: 
       <div className="flex flex-wrap items-center gap-2 mb-4">
         {adding ? (
           <>
-            <input className="input w-auto flex-1 min-w-[180px]" autoFocus value={newTitle}
+            <input className="input w-auto flex-1 min-w-[180px]" autoFocus aria-label="New scope line" value={newTitle}
               onChange={(e) => setNewTitle(e.target.value)}
               onKeyDown={(e) => e.key === "Enter" && addItem()}
               placeholder="What else does this room need?" />
-            <select className="input w-auto" value={newCat} onChange={(e) => setNewCat(e.target.value as Category)}>
+            <select className="input w-auto" aria-label="Category" value={newCat} onChange={(e) => setNewCat(e.target.value as Category)}>
               {categoryOptions(state).map((o) => <option key={o.value} value={o.value}>{o.label}</option>)}
             </select>
-            <button className="btn btn-accent btn-sm" onClick={addItem} disabled={!newTitle.trim()}>Add</button>
+            <button className="btn btn-primary btn-sm" onClick={addItem} disabled={!newTitle.trim()}>Add line</button>
             <button className="btn btn-sm" onClick={() => setAdding(false)}>Cancel</button>
           </>
         ) : (
           <>
-            <button className="btn btn-sm btn-accent" onClick={() => setAdding(true)}>Add a scope item</button>
+            <button className="btn btn-sm btn-primary" onClick={() => setAdding(true)}><Icon name="plus" size={15} strokeWidth={2} /> Add a scope line</button>
             <Link href="/manage" className="btn btn-sm">Bulk edit this floor</Link>
           </>
         )}
@@ -433,28 +508,28 @@ function ScopeTab({ items, onOpen, spaceId }: { items: ScopeItem[]; onOpen: (i: 
           <div key={cat}>
             <div className="flex items-baseline justify-between mb-1.5">
               <Eyebrow>{catLabel(state, cat as Category)}</Eyebrow>
-              <span className="text-[11px] text-ink-4 tnum">
+              <span className="text-[12.5px] text-ink-4 tnum">
                 {inr(list.reduce((a, i) => a + forecastOf(i), 0), { compact: true })}
               </span>
             </div>
             <div className="card divide-y divide-line">
               {list.map((i) => (
-                <div key={i.id} className="group flex items-center gap-3 px-3.5 py-2.5 hover:bg-paper-2/60 transition-colors">
+                <div key={i.id} className="group flex items-center gap-3 px-3.5 py-2.5 hover:bg-paper transition-colors">
                 <button
                   onClick={() => onOpen(i)}
                   className="flex-1 text-left flex items-center gap-3 min-w-0"
                 >
                   <div className="min-w-0 flex-1">
-                    <div className="text-[13px] flex items-center gap-2">
+                    <div className="text-[14px] flex items-center gap-2">
                       <span className={i.stage === "not-applicable" ? "line-through text-ink-4" : ""}>{i.title}</span>
-                      {i.tags?.includes("critical") && <span className="text-clay text-[10px]" title="Critical for this room">●</span>}
+                      {i.tags?.includes("critical") && <Chip tone="accent" small>critical</Chip>}
                     </div>
-                    {i.spec && <div className="text-[11px] text-ink-3 truncate mt-0.5">{i.spec}</div>}
+                    {i.spec && <div className="text-[12.5px] text-ink-3 truncate mt-0.5">{i.spec}</div>}
                     {i.stage === "not-applicable" && i.naReason && (
-                      <div className="text-[11px] text-ink-4 mt-0.5 italic">{i.naReason}</div>
+                      <div className="text-[12.5px] text-ink-4 mt-0.5 italic">{i.naReason}</div>
                     )}
                   </div>
-                  <span className="tnum text-[12px] text-ink-3 shrink-0 hidden sm:block">
+                  <span className="tnum text-[13px] text-ink-3 shrink-0 hidden sm:block">
                     {i.stage === "not-applicable" ? "—" : inr(forecastOf(i), { compact: true })}
                   </span>
                   <StageChip stage={i.stage} small />
@@ -493,14 +568,14 @@ function CostTab({ items, rollupData }: { items: ScopeItem[]; rollupData: Return
 
   return (
     <div>
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 card px-5 py-5 mb-4">
+      <div className="card stat-strip mb-4">
         <Stat label="Initial estimate" value={<Money value={rollupData.initialEstimate} compact />} />
         <Stat label="Approved" value={<Money value={rollupData.approvedBudget} compact />} />
         <Stat label="Committed" value={<Money value={rollupData.committed} compact />} />
         <Stat
           label="Forecast"
           value={<Money value={rollupData.forecast} compact />}
-          tone={rollupData.variance > 0 ? "rust" : "sage"}
+          tone={rollupData.variance > 0 ? "bad" : "good"}
           sub={`${rollupData.variance > 0 ? "+" : ""}${inr(rollupData.variance, { compact: true })} vs approved`}
         />
       </div>
@@ -510,19 +585,19 @@ function CostTab({ items, rollupData }: { items: ScopeItem[]; rollupData: Return
         <div className="space-y-2.5">
           {rows.map((r) => (
             <div key={r.cat}>
-              <div className="flex items-baseline justify-between text-[12.5px] mb-1">
+              <div className="flex items-baseline justify-between text-[13.5px] mb-1">
                 <span className="text-ink-2">{catLabel(state, r.cat)} <span className="text-ink-4 tnum">({r.n})</span></span>
                 <span className="tnum">{inr(r.forecast)}</span>
               </div>
               <div className="flex h-[5px] rounded-full overflow-hidden bg-paper-3" style={{ width: `${(r.forecast / max) * 100}%`, minWidth: 20 }}>
-                <div style={{ width: `${r.forecast ? (r.paid / r.forecast) * 100 : 0}%`, background: "#41603f" }} />
-                <div style={{ width: `${r.forecast ? (Math.max(0, r.committed - r.paid) / r.forecast) * 100 : 0}%`, background: "#7d9a7a" }} />
-                <div className="flex-1" style={{ background: "#c8c0b2" }} />
+                <div style={{ width: `${r.forecast ? (r.paid / r.forecast) * 100 : 0}%`, background: BAR.paid }} />
+                <div style={{ width: `${r.forecast ? (Math.max(0, r.committed - r.paid) / r.forecast) * 100 : 0}%`, background: BAR.committed }} />
+                <div className="flex-1" style={{ background: BAR.forecast }} />
               </div>
             </div>
           ))}
         </div>
-        <p className="text-[11px] text-ink-3 mt-4 leading-relaxed">
+        <p className="text-[12.5px] text-ink-3 mt-4 leading-relaxed">
           Dark green is paid, light green is committed but unpaid, grey is still an{" "}
           <Assumed>estimate</Assumed>.
         </p>
@@ -544,16 +619,16 @@ function ProductsTab({ items, onOpen }: { items: ScopeItem[]; onOpen: (i: ScopeI
           <button key={i.id} onClick={() => onOpen(i)} className="card overflow-hidden text-left hover:border-ink-4 transition-colors">
             <PhotoBlock tone={p.swatch ?? "#c6bbab"} ratio="16 / 10" label={p.brand} />
             <div className="px-3.5 py-3">
-              <div className="text-[13px] leading-snug">{p.product ?? i.title}</div>
-              <div className="text-[11px] text-ink-3 mt-0.5 truncate">{vendor?.name ?? "No vendor yet"}</div>
+              <div className="text-[14px] leading-snug">{p.product ?? i.title}</div>
+              <div className="text-[12.5px] text-ink-3 mt-0.5 truncate">{vendor?.name ?? "No vendor yet"}</div>
               <div className="mt-2 flex items-center justify-between gap-2">
-                <Chip tone={p.status === "verified" || p.status === "installed" ? "sage" : p.status === "to-select" ? "neutral" : "ochre"}>
+                <Chip tone={p.status === "verified" || p.status === "installed" ? "good" : p.status === "to-select" ? "neutral" : "warn"}>
                   {p.status.replace(/-/g, " ")}
                 </Chip>
-                <span className="tnum text-[12px]">{inr(p.orderAmount ?? forecastOf(i), { compact: true })}</span>
+                <span className="tnum text-[13px]">{inr(p.orderAmount ?? forecastOf(i), { compact: true })}</span>
               </div>
               {(p.leadTimeWeeks ?? 0) >= 8 && (
-                <div className="text-[10.5px] text-clay mt-1.5">{p.leadTimeWeeks} week lead — order early</div>
+                <div className="text-[12px] text-accent mt-1.5">{p.leadTimeWeeks} week lead — order early</div>
               )}
             </div>
           </button>
@@ -579,20 +654,20 @@ function TasksTab({ tasks, spaceId }: { tasks: Task[]; spaceId: string }) {
             onClick={() => dispatch({ type: "task/patch", id: t.id, patch: { status: t.status === "done" ? "todo" : "done" } })}
             className="shrink-0 rounded-md border transition-colors"
             style={{
-              width: 17, height: 17,
-              background: t.status === "done" ? "#5f7a5f" : "transparent",
-              borderColor: t.status === "done" ? "#5f7a5f" : "var(--color-line-2)",
+              width: 20, height: 20,
+              background: t.status === "done" ? "var(--color-good)" : "transparent",
+              borderColor: t.status === "done" ? "var(--color-good)" : "var(--color-ink-4)",
             }}
             aria-label={t.status === "done" ? "Mark not done" : "Mark done"}
           >
             {t.status === "done" && <svg viewBox="0 0 16 16" width="15" height="15"><path d="m4 8 3 3 5-6" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>}
           </button>
           <div className="min-w-0 flex-1">
-            <div className={`text-[13px] ${t.status === "done" ? "line-through text-ink-4" : ""}`}>{t.title}</div>
-            <div className="text-[11px] text-ink-3">{t.owner}{t.notes ? ` · ${t.notes}` : ""}</div>
+            <div className={`text-[14px] ${t.status === "done" ? "line-through text-ink-4" : ""}`}>{t.title}</div>
+            <div className="text-[12.5px] text-ink-3">{t.owner}{t.notes ? ` · ${t.notes}` : ""}</div>
           </div>
-          {t.status === "blocked" && <Chip tone="rust">Blocked</Chip>}
-          <span className="text-[11.5px] text-ink-3 tnum shrink-0">{fmtDay(t.finish)}</span>
+          {t.status === "blocked" && <Chip tone="bad">Blocked</Chip>}
+          <span className="text-[12.5px] text-ink-3 tnum shrink-0">{fmtDay(t.finish)}</span>
           <RowActions on="tasks" id={t.id} />
         </div>
       ))}
@@ -617,17 +692,17 @@ function VendorsTab({ vendorIds, items }: { vendorIds: string[]; items: ScopeIte
           <div key={id} className="card px-4 py-4 group">
             <div className="flex items-start justify-between gap-3">
               <div>
-                <div className="text-[15px]" style={{ fontFamily: "var(--font-display)" }}>
-                  <EntityLink on="vendors" id={v.id} className="hover:text-clay">{v.name}</EntityLink>
+                <div className="text-[15px]" >
+                  <EntityLink on="vendors" id={v.id} className="hover:text-accent">{v.name}</EntityLink>
                 </div>
-                <div className="text-[11.5px] text-ink-3 mt-0.5">{v.trade.map((t) => catLabel(state, t)).join(" · ")}</div>
+                <div className="text-[12.5px] text-ink-3 mt-0.5">{v.trade.map((t) => catLabel(state, t)).join(" · ")}</div>
               </div>
               <div className="flex items-center gap-2 shrink-0">
-                <span className="tnum text-[13px]">{inr(mine.reduce((a, i) => a + forecastOf(i), 0), { compact: true })}</span>
+                <span className="tnum text-[14px]">{inr(mine.reduce((a, i) => a + forecastOf(i), 0), { compact: true })}</span>
                 <RowActions on="vendors" id={v.id} />
               </div>
             </div>
-            {v.notes && <p className="text-[12px] text-ink-3 mt-2 leading-relaxed">{v.notes}</p>}
+            {v.notes && <p className="text-[13px] text-ink-3 mt-2 leading-relaxed">{v.notes}</p>}
             <div className="mt-2.5 flex flex-wrap gap-1.5">
               {mine.slice(0, 6).map((i) => <Chip key={i.id} tone="ghost">{i.title}</Chip>)}
             </div>
@@ -654,11 +729,11 @@ function FilesTab({ docs, spaceId }: { docs: Doc[]; spaceId: string }) {
         <div key={d.id} className="px-4 py-3 flex items-center gap-3 group">
           <Chip tone="ghost">{d.kind.replace(/-/g, " ")}</Chip>
           <div className="min-w-0 flex-1">
-            <div className="text-[13px] truncate">{d.title}</div>
-            <div className="text-[11px] text-ink-3">{d.addedBy} · {fmtDay(d.addedAt)}</div>
+            <div className="text-[14px] truncate">{d.title}</div>
+            <div className="text-[12.5px] text-ink-3">{d.addedBy} · {fmtDay(d.addedAt)}</div>
           </div>
-          {d.revision && <span className="text-[11px] text-ink-4 tnum">{d.revision}</span>}
-          {d.url && <a href={d.url} target="_blank" rel="noreferrer" className="text-[11px] text-clay hover:underline shrink-0">open →</a>}
+          {d.revision && <span className="text-[12.5px] text-ink-4 tnum">{d.revision}</span>}
+          {d.url && <a href={d.url} target="_blank" rel="noreferrer" className="link text-[13px] shrink-0 inline-flex items-center gap-1">Open <Icon name="open" size={13} /></a>}
           <RowActions on="docs" id={d.id} />
         </div>
       ))}
@@ -684,8 +759,8 @@ function SiteTab({ updates, notes, spaceId }: { updates: SiteUpdate[]; notes: No
           {updates.map((u) => (
             <div key={u.id} className="group">
               <PhotoBlock tone={u.photoSwatch} ratio="4 / 3" label={fmtDay(u.at)} />
-              <p className="text-[12.5px] text-ink-2 mt-2 leading-relaxed">{u.body}</p>
-              <div className="text-[11px] text-ink-3 mt-1 flex items-center justify-between gap-2">
+              <p className="text-[13.5px] text-ink-2 mt-2 leading-relaxed">{u.body}</p>
+              <div className="text-[12.5px] text-ink-3 mt-1 flex items-center justify-between gap-2">
                 <span>{u.by}{u.progressPct !== undefined ? ` · ${u.progressPct}% complete` : ""}</span>
                 <RowActions on="siteUpdates" id={u.id} />
               </div>
@@ -698,9 +773,9 @@ function SiteTab({ updates, notes, spaceId }: { updates: SiteUpdate[]; notes: No
           <Eyebrow className="mb-2">Notes mentioning this room</Eyebrow>
           <div className="card divide-y divide-line">
             {notes.map((n) => (
-              <Link key={n.id} href={`/notes#${n.id}`} className="block px-4 py-3 hover:bg-paper-2/60">
-                <div className="text-[13px]">{n.title}</div>
-                <div className="text-[11px] text-ink-3">{n.author} · {fmtDay(n.at)}</div>
+              <Link key={n.id} href={`/notes#${n.id}`} className="block px-4 py-3 hover:bg-paper">
+                <div className="text-[14px]">{n.title}</div>
+                <div className="text-[12.5px] text-ink-3">{n.author} · {fmtDay(n.at)}</div>
               </Link>
             ))}
           </div>
@@ -730,7 +805,7 @@ function IssuesTab({ snags, spaceId }: { snags: Snag[]; spaceId: string }) {
                     key={i}
                     title={p.label}
                     className="absolute rounded-full ring-2 ring-white"
-                    style={{ left: `${p.x * 100}%`, top: `${p.y * 100}%`, width: 13, height: 13, background: "#b0603a", transform: "translate(-50%,-50%)" }}
+                    style={{ left: `${p.x * 100}%`, top: `${p.y * 100}%`, width: 13, height: 13, background: "var(--color-accent)", transform: "translate(-50%,-50%)" }}
                   />
                 ))}
               </PhotoBlock>
@@ -738,15 +813,15 @@ function IssuesTab({ snags, spaceId }: { snags: Snag[]; spaceId: string }) {
             </div>
             <div className="min-w-0 flex-1">
               <div className="flex flex-wrap items-center gap-2 mb-1.5">
-                <Chip tone={s.severity === "critical" || s.severity === "high" ? "rust" : "ochre"}>{s.severity}</Chip>
-                <Chip tone={s.status === "closed" ? "sage" : s.status === "open" ? "rust" : "slate"}>{s.status}</Chip>
-                <span className="text-[11px] text-ink-3">{catLabel(state, s.category as Category)}</span>
-                {s.vendorId && <span className="text-[11px]"><EntityLink on="vendors" id={s.vendorId} /></span>}
+                <Chip tone={s.severity === "critical" || s.severity === "high" ? "bad" : "warn"}>{s.severity}</Chip>
+                <Chip tone={s.status === "closed" ? "good" : s.status === "open" ? "bad" : "info"}>{s.status}</Chip>
+                <span className="text-[12.5px] text-ink-3">{catLabel(state, s.category as Category)}</span>
+                {s.vendorId && <span className="text-[12.5px]"><EntityLink on="vendors" id={s.vendorId} /></span>}
                 <span className="ml-auto"><RowActions on="snags" id={s.id} /></span>
               </div>
               <div className="text-[14px]">{s.title}</div>
-              {s.description && <p className="text-[12.5px] text-ink-3 mt-1 leading-relaxed">{s.description}</p>}
-              <div className="text-[11px] text-ink-3 mt-2">
+              {s.description && <p className="text-[13.5px] text-ink-3 mt-1 leading-relaxed">{s.description}</p>}
+              <div className="text-[12.5px] text-ink-3 mt-2">
                 Raised by {s.raisedBy} on {fmtDay(s.raisedAt)}
                 {s.vendorId && ` · ${state.vendors.find((v) => v.id === s.vendorId)?.name}`}
                 {s.dueBy && ` · due ${fmtDay(s.dueBy)}`}
@@ -771,77 +846,24 @@ function IssuesTab({ snags, spaceId }: { snags: Snag[]; spaceId: string }) {
 
 /* --------------------------------------------------------------- checklist */
 
-const MARK: Record<Check["state"], { mark: string; tone: string; label: string }> = {
-  done: { mark: "✓", tone: "#41603f", label: "Done" },
-  partial: { mark: "◐", tone: "#8a6a20", label: "Started" },
-  todo: { mark: "○", tone: "#9c5333", label: "Not yet" },
-  na: { mark: "–", tone: "#a9a196", label: "Not applicable" },
-};
-
 /**
  * The room's own planning checklist, in the order a fit-out runs. The same
- * list the /checklist overview shows, here beside the room it belongs to.
+ * list the Checklist page shows, here beside the room it belongs to.
  */
 function ChecklistTab({ spaceId }: { spaceId: string }) {
   const { state } = useProject();
-  const [hideDone, setHideDone] = useState(false);
-  const [why, setWhy] = useState<string | null>(null);
   const cl = useMemo(() => roomChecklist(state, spaceId), [state, spaceId]);
   if (!cl) return null;
-
   return (
     <div>
       <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
-        <div className="text-[12.5px] text-ink-3 tnum">
-          <strong className="text-ink font-medium">{cl.done} of {cl.total}</strong> checked
-          {cl.criticalOpen > 0 && <span className="text-clay"> · {cl.criticalOpen} critical outstanding</span>}
+        <div className="text-[14px] text-ink-3 tnum">
+          <strong className="text-ink font-semibold">{cl.done} of {cl.total}</strong> checked
+          {cl.criticalOpen > 0 && <span className="text-accent-strong"> · {cl.criticalOpen} critical outstanding</span>}
         </div>
-        <div className="flex items-center gap-2">
-          <button className="btn btn-sm" onClick={() => setHideDone((v) => !v)}>
-            {hideDone ? "Show completed" : "Hide completed"}
-          </button>
-          <Link href="/checklist" className="btn btn-sm">All rooms →</Link>
-        </div>
+        <Link href="/checklist" className="btn btn-sm">All rooms <Icon name="arrow-right" size={14} /></Link>
       </div>
-      <div className="mb-5"><Bar pct={cl.pct} height={5} /></div>
-
-      <div className="space-y-6">
-        {cl.sections.map((sec) => {
-          const checks = hideDone ? sec.checks.filter((c) => c.state !== "done") : sec.checks;
-          if (!checks.length) return null;
-          return (
-            <section key={sec.id}>
-              <div className="flex flex-wrap items-baseline justify-between gap-2">
-                <h3 className="text-[14.5px]" style={{ fontFamily: "var(--font-display)" }}>{sec.title}</h3>
-                <Link href={`/phases#${sec.phaseId}`} className="text-[11px] text-ink-3 tnum hover:text-clay">
-                  {sec.done} / {sec.total}
-                </Link>
-              </div>
-              <p className="text-[11.5px] text-ink-3 mt-1 mb-2 leading-relaxed max-w-3xl">{sec.blurb}</p>
-              <ul>
-                {checks.map((c) => {
-                  const m = MARK[c.state];
-                  const on = why === `${sec.id}-${c.id}`;
-                  return (
-                    <li key={c.id} className="border-b border-ink-6 last:border-0">
-                      <div className="flex items-start gap-2.5 py-1.5">
-                        <span className="text-[13px] leading-5 shrink-0 w-3.5 text-center" style={{ color: m.tone }} title={m.label}>{m.mark}</span>
-                        <button className="text-left min-w-0 flex-1" onClick={() => setWhy(on ? null : `${sec.id}-${c.id}`)}>
-                          <span className={`text-[12.5px] leading-snug ${c.state === "na" ? "text-ink-3 line-through" : c.state === "done" ? "text-ink-2" : ""}`}>{c.label}</span>
-                          {c.critical && c.state !== "done" && c.state !== "na" && <span className="ml-1.5"><Chip tone="clay">critical</Chip></span>}
-                          {c.detail && <span className="text-[11px] text-ink-3 ml-1.5 tnum">— {c.detail}</span>}
-                        </button>
-                        {c.href && <Link href={c.href} className="text-[11px] text-clay hover:underline shrink-0 mt-0.5">open →</Link>}
-                      </div>
-                      {on && c.why && <p className="text-[11.5px] text-ink-3 leading-relaxed pl-6 pb-2 pr-2 max-w-3xl">{c.why}</p>}
-                    </li>
-                  );
-                })}
-              </ul>
-            </section>
-          );
-        })}
-      </div>
+      <ChecklistBody list={cl} />
     </div>
   );
 }

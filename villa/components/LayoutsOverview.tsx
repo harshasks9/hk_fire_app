@@ -35,11 +35,11 @@ export function LayoutsOverview({ floor = "all" }: { floor?: string }) {
 
   return (
     <div>
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
+      <div className="card stat-strip mb-8">
         <Stat label="Rooms laid out" value={rows.length} />
         <Stat label="Layouts to choose from" value={layouts} />
-        <Stat label="Chosen" value={`${chosenCount} / ${rows.length}`} tone={chosenCount < rows.length ? undefined : "sage"} />
-        <Stat label="Notes on layouts" value={notes || "—"} />
+        <Stat label="Chosen" value={`${chosenCount} of ${rows.length}`} tone={chosenCount < rows.length ? undefined : "good"} />
+        <Stat label="Notes on layouts" value={notes || "None yet"} />
       </div>
 
       {floors.map((f) => {
@@ -47,25 +47,25 @@ export function LayoutsOverview({ floor = "all" }: { floor?: string }) {
         if (!here.length) return null;
         return (
           <section key={f} className="mb-7">
-            <Eyebrow className="mb-2.5">{FLOOR_META[f].label}</Eyebrow>
+            <h2 className="text-[16px] mb-3">{FLOOR_META[f].label}</h2>
             <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-3">
               {here.map(({ d, space, chosen, shown, notes: n }) => (
                 <Link key={d.spaceId} href={`/villa/${d.spaceId}?tab=Layouts`}
-                  className="card px-3.5 pt-3 pb-3 hover:border-ink-4 transition-colors flex flex-col"
-                  style={chosen ? { borderColor: "var(--color-clay)" } : undefined}>
+                  className="card card-link px-4 pt-3.5 pb-3.5 flex flex-col group"
+                  style={chosen ? { borderColor: "var(--color-accent)" } : undefined}>
                   <div className="flex items-start justify-between gap-2">
                     <div className="min-w-0">
-                      <div className="text-[14px] leading-snug" style={{ fontFamily: "var(--font-display)" }}>{space!.name}</div>
-                      <div className="text-[11px] text-ink-3 mt-0.5"><DimsShort sp={space!} /></div>
+                      <div className="text-[15px] font-semibold leading-snug group-hover:text-accent-strong">{space!.name}</div>
+                      <div className="text-[12.5px] text-ink-3 mt-0.5"><DimsShort sp={space!} /></div>
                     </div>
-                    <span className="text-[11px] text-ink-3 shrink-0">{d.layouts.length} options</span>
+                    <span className="text-[12.5px] text-ink-3 shrink-0">{d.layouts.length} options</span>
                   </div>
                   <div className="mt-2 rounded-md overflow-hidden flex-1 flex items-center" style={{ background: "#fffdfa" }}>
                     <RoomLayout design={d} layout={shown} compact maxHeight={220} />
                   </div>
                   <div className="mt-2 flex flex-wrap items-center gap-1.5">
                     {chosen
-                      ? <Chip tone="clay">Chosen {chosen.key} — {chosen.name}</Chip>
+                      ? <Chip tone="accent">Chosen {chosen.key} — {chosen.name}</Chip>
                       : <Chip tone="neutral">Recommended {shown.key} · not chosen</Chip>}
                     {n > 0 && <Chip tone="ghost">{n} note{n > 1 ? "s" : ""}</Chip>}
                   </div>
@@ -82,10 +82,10 @@ export function LayoutsOverview({ floor = "all" }: { floor?: string }) {
           {Object.entries(NO_LAYOUT).filter(([id]) => sees(id)).map(([id, why]) => {
             const s = state.spaces.find((x) => x.id === id);
             if (!s) return null;
-            return <li key={id} className="text-[12px] text-ink-2 leading-snug"><Link href={`/villa/${id}`} className="hover:text-clay">{s.name}</Link> <span className="text-ink-3">— {why}</span></li>;
+            return <li key={id} className="text-[13px] text-ink-2 leading-snug"><Link href={`/villa/${id}`} className="hover:text-accent">{s.name}</Link> <span className="text-ink-3">— {why}</span></li>;
           })}
         </ul>
-        <p className="text-[11.5px] text-ink-3 mt-2 leading-relaxed">
+        <p className="text-[12.5px] text-ink-3 mt-2 leading-relaxed">
           Stairs, lifts, corridors and the gardens are designed as part of the whole-house concept rather than as rooms.
         </p>
       </div>

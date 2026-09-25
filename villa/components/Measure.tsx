@@ -40,19 +40,19 @@ export function Dims({
   if (!m) return <span className={`text-ink-3 ${className}`}>{NOT_DIMENSIONED}</span>;
   return (
     <span className={`inline-flex flex-wrap items-center gap-x-2 gap-y-1 ${className}`}>
-      <span className="tabular-nums">{dimsLabel(m.dims)}</span>
+      <span className="tnum">{dimsLabel(m.dims)}</span>
       <span className="text-ink-3">·</span>
-      <span className="tabular-nums">{m.areaSqft} sq ft</span>
+      <span className="tnum">{m.areaSqft} sq ft</span>
       {mm && (
         <>
           <span className="text-ink-3">·</span>
-          <span className="tabular-nums text-ink-3">{m.widthMm} × {m.lengthMm} mm</span>
+          <span className="tnum text-ink-3">{m.widthMm} × {m.lengthMm} mm</span>
         </>
       )}
       {perimeter && (
         <>
           <span className="text-ink-3">·</span>
-          <span className="tabular-nums text-ink-3">{m.perimeterFt} rft perimeter</span>
+          <span className="tnum text-ink-3">{m.perimeterFt} rft perimeter</span>
         </>
       )}
       {source && <SourceChip sp={sp} small />}
@@ -65,7 +65,7 @@ export function DimsShort({ sp, className = "" }: { sp?: Sp; className?: string 
   const m = measureSpace(sp);
   if (!m) return <span className={`text-ink-3 ${className}`}>{NOT_DIMENSIONED}</span>;
   return (
-    <span className={`tabular-nums ${className}`}>
+    <span className={`tnum ${className}`}>
       {dimsLabel(m.dims)} · {m.areaSqft} sq ft
     </span>
   );
@@ -89,27 +89,27 @@ export function MeasureTable({ sp, title = "Measurements" }: { sp?: Sp; title?: 
   const m = measureSpace(sp);
   if (!m) {
     return (
-      <div className="card-quiet px-3.5 py-3">
+      <div className="card px-4 py-3.5">
         <Eyebrow>{title}</Eyebrow>
-        <p className="text-[11.5px] text-ink-3 mt-2 leading-relaxed">{NOT_DIMENSIONED_NOTE}</p>
+        <p className="text-[12.5px] text-ink-3 mt-2 leading-relaxed">{NOT_DIMENSIONED_NOTE}</p>
       </div>
     );
   }
   return (
-    <div className="card-quiet px-3.5 py-3">
+    <div className="card px-4 py-3.5">
       <div className="flex items-center justify-between gap-2 mb-2">
         <Eyebrow>{title}</Eyebrow>
         <SourceChip sp={sp} />
       </div>
       <dl className="space-y-1">
         {ROWS.map((r) => (
-          <div key={r.k} className="flex items-baseline justify-between gap-3 text-[12px]" title={r.note}>
+          <div key={r.k} className="flex items-baseline justify-between gap-3 text-[13px]" title={r.note}>
             <dt className="text-ink-3 shrink-0">{r.k}</dt>
-            <dd className="tabular-nums text-right">{r.get(m)}</dd>
+            <dd className="tnum text-right">{r.get(m)}</dd>
           </div>
         ))}
       </dl>
-      <p className="text-[11px] text-ink-3 mt-2.5 leading-relaxed">
+      <p className="text-[12.5px] text-ink-3 mt-2.5 leading-relaxed">
         {SOURCE_NOTE[m.source]}
         {m.ceilingAssumed && " Ceiling height is the app's 10'0\" assumption until it is confirmed on site."}
       </p>

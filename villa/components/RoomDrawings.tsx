@@ -31,11 +31,11 @@ export function RoomDrawings({ spaceId, compact }: { spaceId: string; compact?: 
             </div>
             <div className="px-4 py-3">
               <div className="flex flex-wrap items-center gap-2">
-                <span className="text-[14px]" style={{ fontFamily: "var(--font-display)" }}>{d.label}</span>
-                {d.revision && <Chip tone="ochre">{d.revision}</Chip>}
+                <span className="text-[14px]">{d.label}</span>
+                {d.revision && <Chip tone="warn">{d.revision}</Chip>}
               </div>
-              <p className="text-[11.5px] text-ink-3 mt-1 leading-snug">{d.note}</p>
-              <div className="text-[11px] text-ink-4 mt-1.5">{d.by} · {fmtDay(d.at)} · {d.verify.length} items to verify on site</div>
+              <p className="text-[12.5px] text-ink-3 mt-1 leading-snug">{d.note}</p>
+              <div className="text-[12.5px] text-ink-4 mt-1.5">{d.by} · {fmtDay(d.at)} · {d.verify.length} items to verify on site</div>
             </div>
           </button>
         ))}
@@ -56,21 +56,21 @@ function DrawingDetail({ d }: { d: RoomDrawing }) {
         <img src={d.src} alt={d.label} className="w-full h-auto rounded-lg border border-ink-6" />
       </a>
       <div className="flex flex-wrap items-center gap-2 mt-2">
-        {d.revision && <Chip tone="ochre">{d.revision}</Chip>}
-        <span className="text-[11.5px] text-ink-3">{d.by} · {fmtDay(d.at)}</span>
-        <a href={d.src} target="_blank" rel="noreferrer" className="text-[11.5px] text-clay hover:underline ml-auto">
+        {d.revision && <Chip tone="warn">{d.revision}</Chip>}
+        <span className="text-[12.5px] text-ink-3">{d.by} · {fmtDay(d.at)}</span>
+        <a href={d.src} target="_blank" rel="noreferrer" className="text-[12.5px] text-accent hover:underline ml-auto">
           Open full size →
         </a>
       </div>
 
-      <p className="text-[12.5px] text-ink-2 mt-3 leading-relaxed">{d.note}</p>
+      <p className="text-[13.5px] text-ink-2 mt-3 leading-relaxed">{d.note}</p>
 
       <div className="grid lg:grid-cols-2 gap-3 mt-4">
         <div className="card-quiet px-3.5 py-3">
           <Eyebrow>What the sheet settles</Eyebrow>
           <dl className="mt-2 space-y-1.5">
             {d.facts.map((f) => (
-              <div key={f.k} className="text-[11.5px] leading-snug">
+              <div key={f.k} className="text-[12.5px] leading-snug">
                 <dt className="text-ink-3 inline">{f.k}: </dt>
                 <dd className="inline text-ink-2">{f.v}</dd>
               </div>
@@ -79,12 +79,12 @@ function DrawingDetail({ d }: { d: RoomDrawing }) {
         </div>
 
         <div>
-          <div className="card-quiet px-3.5 py-3" style={{ borderColor: "#e4c8bf" }}>
+          <div className="card-quiet px-3.5 py-3" style={{ borderColor: "var(--color-accent)" }}>
             <Eyebrow>Verify on site before ordering</Eyebrow>
             <ul className="mt-2 space-y-1.5">
               {d.verify.map((v) => (
-                <li key={v} className="text-[11.5px] text-ink-2 leading-snug flex gap-1.5">
-                  <span className="text-clay shrink-0">□</span><span>{v}</span>
+                <li key={v} className="text-[12.5px] text-ink-2 leading-snug flex gap-1.5">
+                  <span className="text-accent shrink-0">□</span><span>{v}</span>
                 </li>
               ))}
             </ul>
@@ -93,7 +93,7 @@ function DrawingDetail({ d }: { d: RoomDrawing }) {
             <Eyebrow>Read this drawing knowing</Eyebrow>
             <ul className="mt-2 space-y-1.5">
               {d.caveats.map((c) => (
-                <li key={c} className="text-[11.5px] text-ink-3 leading-relaxed">· {c}</li>
+                <li key={c} className="text-[12.5px] text-ink-3 leading-relaxed">· {c}</li>
               ))}
             </ul>
           </div>

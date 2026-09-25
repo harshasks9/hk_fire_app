@@ -238,17 +238,18 @@ function FloorTag({
   const y = py(p.x, p.y + p.h) - 6;
   const label = plan.floor === "ground" ? "Ground floor" : plan.floor === "first" ? "First floor" : "Second floor";
   return (
-    <g onClick={onClick} style={{ cursor: "pointer" }} opacity={lit ? 1 : 0.66}>
+    <g onClick={onClick} style={{ cursor: "pointer" }} opacity={lit ? 1 : 0.7} role="button" tabIndex={0} aria-label={`Show the ${label.toLowerCase()}`} aria-pressed={lit}
+      onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onClick(); } }}>
       <line x1={x + 8} y1={y - 4} x2={px(p.x, p.y + p.h) - 4} y2={y + 4} stroke="#cdc3b2" strokeWidth="1.2" />
-      <circle cx={px(p.x, p.y + p.h) - 2} cy={y + 5} r="2.6" fill={lit ? "#b0603a" : "#c2b7a6"} />
+      <circle cx={px(p.x, p.y + p.h) - 2} cy={y + 5} r="2.6" fill={lit ? "#8a672b" : "#c2b7a6"} />
       <text x={x} y={y} textAnchor="end" style={{ fontFamily: "var(--font-sans)", paintOrder: "stroke" }}
-        stroke="rgba(255,255,255,.85)" strokeWidth="3.2" strokeLinejoin="round" fill="#3f3931">
-        <tspan x={x} fontSize="17" fontWeight={lit ? 700 : 550}>{label}</tspan>
-        <tspan x={x} dy="17" fontSize="13.5" fill="#7b7164" fontWeight={500}>
+        stroke="rgba(255,255,255,.85)" strokeWidth="5" strokeLinejoin="round" fill="#1b211e">
+        <tspan x={x} fontSize="28" fontWeight={lit ? 700 : 550}>{label}</tspan>
+        <tspan x={x} dy="26" fontSize="21" fill="#58625d" fontWeight={500}>
           {Math.round(r.completionPct)}% · {inr(r.forecast, { compact: true })}
         </tspan>
         {r.decisionsOutstanding > 0 && (
-          <tspan x={x} dy="16" fontSize="13" fill="#b0603a" fontWeight={600}>{r.decisionsOutstanding} to decide</tspan>
+          <tspan x={x} dy="24" fontSize="20" fill="#8a672b" fontWeight={600}>{r.decisionsOutstanding} to decide</tspan>
         )}
       </text>
     </g>

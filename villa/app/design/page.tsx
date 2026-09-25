@@ -60,7 +60,7 @@ export default function DesignPage() {
         }
         right={
           <div className="flex items-center gap-2 flex-wrap justify-end">
-            <select className="input w-auto" value={floor} onChange={(e) => setFloor(e.target.value)}>
+            <select className="input w-auto" aria-label="Floor" value={floor} onChange={(e) => setFloor(e.target.value)}>
               <option value="all">Whole villa</option>
               <option value="ground">Ground floor</option>
               <option value="first">First floor</option>
@@ -73,16 +73,16 @@ export default function DesignPage() {
         }
       />
 
-      <div className="card px-5 py-5 mb-6 grid grid-cols-2 sm:grid-cols-4 gap-4">
-        <Stat label="Ideas" value={ideas.length} sub="collected against scope" />
-        <Stat label="Options" value={options.length} sub="costed alternatives" />
-        <Stat label="Awaiting client" value={awaiting.length} tone={awaiting.length ? "clay" : undefined} sub="approval requests open" />
-        <Stat label="Drawings" value={renders.length} sub="renders and technical" />
-      </div>
 
       <Tabs tabs={TABS} active={tab} onChange={setTab} counts={{ Layouts: DESIGNS.length, Moodboard: ideas.length, Options: options.length, Revisions: renders.length, "Client feedback": feedback.length }} />
 
       <div className="mt-6">
+        {awaiting.length > 0 && tab !== "Layouts" && (
+          <div className="flex items-center gap-2 rounded-lg bg-accent-soft px-4 py-3 mb-5 text-[14px] text-ink-2">
+            <strong className="font-semibold text-ink">{awaiting.length} awaiting the client.</strong>
+            <Link href="/decisions" className="link ml-auto">Open decisions</Link>
+          </div>
+        )}
         {tab === "Layouts" && <LayoutsOverview floor={floor} />}
         {tab === "Moodboard" && (
           ideas.length ? (
@@ -101,12 +101,12 @@ export default function DesignPage() {
                         className="rounded-none border-0"
                       />
                       <div className="px-3 py-2.5">
-                        <div className="text-[12.5px] leading-snug">{idea.title}</div>
+                        <div className="text-[13.5px] leading-snug">{idea.title}</div>
                         <div className="flex items-center justify-between gap-2 mt-1.5">
                           {sp ? (
-                            <Link href={`/villa/${sp.id}`} className="text-[10.5px] text-ink-3 hover:text-clay truncate">{sp.name}</Link>
-                          ) : <span className="text-[10.5px] text-ink-4">House-wide</span>}
-                          {idea.shortlisted && <span className="text-clay text-[11px]">★</span>}
+                            <Link href={`/villa/${sp.id}`} className="text-[12px] text-ink-3 hover:text-accent truncate">{sp.name}</Link>
+                          ) : <span className="text-[12px] text-ink-4">House-wide</span>}
+                          {idea.shortlisted && <span className="text-accent text-[12.5px]">★</span>}
                         </div>
                       </div>
                     </div>
@@ -136,8 +136,8 @@ export default function DesignPage() {
                         <h3 className="text-[17px] mt-0.5">{item?.title}</h3>
                       </div>
                       <div className="flex items-center gap-2">
-                        {dec && <Chip tone={dec.status === "approved" ? "sage" : "clay"}>{dec.status.replace(/-/g, " ")}</Chip>}
-                        <span className="text-[12px] text-ink-3 tnum">
+                        {dec && <Chip tone={dec.status === "approved" ? "good" : "accent"}>{dec.status.replace(/-/g, " ")}</Chip>}
+                        <span className="text-[13px] text-ink-3 tnum">
                           {inr(Math.min(...set.map((o) => o.estimate ?? 0)), { compact: true })} – {inr(Math.max(...set.map((o) => o.estimate ?? 0)), { compact: true })}
                         </span>
                       </div>
@@ -161,18 +161,18 @@ export default function DesignPage() {
               <div key={d.id} className="px-4 py-3.5 flex items-center gap-3">
                 <Chip tone="ghost">{d.kind.replace(/-/g, " ")}</Chip>
                 <div className="min-w-0 flex-1">
-                  <div className="text-[13.5px] truncate">{d.title}</div>
-                  <div className="text-[11px] text-ink-3">
+                  <div className="text-[14.5px] truncate">{d.title}</div>
+                  <div className="text-[12.5px] text-ink-3">
                     {d.addedBy} · {fmtDay(d.addedAt)}
                     {d.spaceIds.length > 0 && ` · ${d.spaceIds.map((s) => spaceById.get(s)?.name).filter(Boolean).join(", ")}`}
                   </div>
                 </div>
                 {d.revision && (
-                  <span className="chip" style={{ background: "#f4f1ec", color: "#514941" }}>{d.revision}</span>
+                  <Chip tone="neutral">{d.revision}</Chip>
                 )}
               </div>
             ))}
-            <div className="px-4 py-3 text-[11.5px] text-ink-3">
+            <div className="px-4 py-3 text-[12.5px] text-ink-3">
               Every revision is kept. A superseded drawing is never overwritten — it moves down the list.
             </div>
           </div>
@@ -195,12 +195,12 @@ export default function DesignPage() {
                       <Avatar name={c.author} tone={person?.avatarTone} size={30} />
                       <div className="min-w-0 flex-1">
                         <div className="flex flex-wrap items-baseline gap-2">
-                          <span className="text-[13px] font-medium">{c.author}</span>
-                          <span className="text-[11px] text-ink-4">{fmtDay(c.createdAt)}</span>
-                          {sp && <Link href={`/villa/${sp.id}`} className="text-[11px] text-clay hover:underline">{sp.name}</Link>}
+                          <span className="text-[14px] font-medium">{c.author}</span>
+                          <span className="text-[12.5px] text-ink-4">{fmtDay(c.createdAt)}</span>
+                          {sp && <Link href={`/villa/${sp.id}`} className="text-[12.5px] text-accent hover:underline">{sp.name}</Link>}
                           {(target as any)?.headline && <Chip tone="ghost">{(target as any).headline}</Chip>}
                         </div>
-                        <p className="text-[13px] text-ink-2 leading-relaxed mt-1.5">{c.body}</p>
+                        <p className="text-[14px] text-ink-2 leading-relaxed mt-1.5">{c.body}</p>
                       </div>
                     </div>
                   </div>

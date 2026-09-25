@@ -43,17 +43,17 @@ export const OVERLAYS: { key: ViewKey; label: string; group: "status" | "service
 
 /** Warm ramps, so a full plan never reads as a traffic-light dashboard. */
 export const RAMPS: Record<string, [string, string]> = {
-  completion: ["#e9e3d8", "#5f7a5f"],
-  budget: ["#efe7d9", "#a8763f"],
-  overrun: ["#eee7dd", "#a04a3c"],
-  decisions: ["#efe8dd", "#b0603a"],
-  procurement: ["#efe8dd", "#a04a3c"],
-  issues: ["#efe8dd", "#8d3a2c"],
-  electrical: ["#eee9e0", "#7a6a3a"],
-  lighting: ["#f0e9dc", "#ab8534"],
-  automation: ["#eae9e6", "#5a6672"],
-  furniture: ["#eee9e0", "#8a6a4a"],
-  hvac: ["#e9ecee", "#5a7682"],
+  completion: ["#e7e5de", "#3d6a4c"],
+  budget: ["#ebe6da", "#8a672b"],
+  overrun: ["#ece6e0", "#a03a2a"],
+  decisions: ["#ece6da", "#8a672b"],
+  procurement: ["#ece6e0", "#a03a2a"],
+  issues: ["#ece6e0", "#a03a2a"],
+  electrical: ["#ebe8df", "#6f6436"],
+  lighting: ["#eee8da", "#a0802f"],
+  automation: ["#e7e9ea", "#37607c"],
+  furniture: ["#ebe7df", "#7a5c3e"],
+  hvac: ["#e5eaec", "#3f6b78"],
 };
 
 export function mix(a: string, b: string, t: number): string {
@@ -355,8 +355,8 @@ function PeekCard({ spaceId, overlay, onClose }: { spaceId: string; overlay: Vie
       </div>
       {(m.snagsOpen > 0 || m.procurementRisk > 0) && (
         <div className="mt-2 flex flex-wrap gap-1.5">
-          {m.snagsOpen > 0 && <Chip tone="rust">{m.snagsOpen} snag{m.snagsOpen > 1 ? "s" : ""}</Chip>}
-          {m.procurementRisk > 0 && <Chip tone="ochre">{m.procurementRisk} at risk</Chip>}
+          {m.snagsOpen > 0 && <Chip tone="bad">{m.snagsOpen} snag{m.snagsOpen > 1 ? "s" : ""}</Chip>}
+          {m.procurementRisk > 0 && <Chip tone="warn">{m.procurementRisk} at risk</Chip>}
         </div>
       )}
       {sp.note && <p className="text-[11.5px] text-ink-3 leading-snug mt-2.5">{sp.note}</p>}

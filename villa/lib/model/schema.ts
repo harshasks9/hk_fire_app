@@ -27,7 +27,7 @@ export interface Field {
   /** Fixed choices. */
   options?: { value: string; label: string }[];
   /** Choices drawn from the project itself. */
-  source?: "spaces" | "vendors" | "items" | "people" | "decisions" | "designOptions" | "tasks" | "categories";
+  source?: "spaces" | "vendors" | "items" | "people" | "decisions" | "designOptions" | "tasks" | "categories" | "layouts";
   hint?: string;
   required?: boolean;
   /** Shown as a column in the compact table, not just in the edit form. */
@@ -304,7 +304,7 @@ export const SCHEMAS: Record<CollectionKey, CollectionSchema> = {
     deleteNote: "Their quotations and scheduled payments go too; awarded scope falls back to unassigned.",
     fields: [
       { key: "name", label: "Name", type: "text", required: true, inTable: true },
-      { key: "trade", label: "Trades", type: "tags", inTable: true, hint: "Category keys, one per line." },
+      { key: "trade", label: "Trades", type: "tags", source: "categories", inTable: true, hint: "The trades they take on." },
       { key: "contact", label: "Contact", type: "text", inTable: true },
       { key: "phone", label: "Phone", type: "text" },
       { key: "city", label: "City", type: "text" },
@@ -357,7 +357,7 @@ export const SCHEMAS: Record<CollectionKey, CollectionSchema> = {
       { key: "start", label: "Start", type: "date" },
       { key: "finish", label: "Finish", type: "date", inTable: true },
       { key: "milestone", label: "Milestone", type: "bool", inTable: true },
-      { key: "dependsOn", label: "Depends on", type: "tags", hint: "Task ids, one per line." },
+      { key: "dependsOn", label: "Depends on", type: "tags", source: "tasks", hint: "Tasks that have to finish before this one can start." },
       { key: "notes", label: "Notes", type: "textarea" },
     ],
     blank: ({ id, spaceId, me }) => ({ id, title: "New task", owner: me, spaceId, dependsOn: [], status: "todo" }),
@@ -410,10 +410,10 @@ export const SCHEMAS: Record<CollectionKey, CollectionSchema> = {
       { key: "author", label: "Author", type: "text", inTable: true },
       { key: "at", label: "Date", type: "date", inTable: true },
       { key: "body", label: "Body", type: "textarea", required: true },
-      { key: "spaceIds", label: "Rooms", type: "tags", hint: "Space ids, one per line." },
-      { key: "vendorIds", label: "Vendors", type: "tags", hint: "Vendor ids, one per line." },
-      { key: "scopeItemIds", label: "Scope items", type: "tags", hint: "Item ids, one per line." },
-      { key: "layoutIds", label: "Room layouts", type: "tags", hint: "Layout ids, one per line — for example gf-living:A." },
+      { key: "spaceIds", label: "Rooms", type: "tags", source: "spaces" },
+      { key: "vendorIds", label: "Vendors", type: "tags", source: "vendors" },
+      { key: "scopeItemIds", label: "Scope items", type: "tags", source: "items" },
+      { key: "layoutIds", label: "Room layouts", type: "tags", source: "layouts" },
     ],
     blank: ({ id, spaceId, me }) => ({
       id, title: "New note", body: "", kind: "observation", at: now(), author: me,
@@ -435,7 +435,7 @@ export const SCHEMAS: Record<CollectionKey, CollectionSchema> = {
       ] },
       { key: "dueOn", label: "Due", type: "date", inTable: true },
       { key: "paidOn", label: "Paid", type: "date", inTable: true },
-      { key: "scopeItemIds", label: "Scope items", type: "tags", hint: "Item ids, one per line." },
+      { key: "scopeItemIds", label: "Scope items", type: "tags", source: "items" },
     ],
     blank: ({ id, state }) => ({
       id, vendorId: state.vendors[0]?.id, scopeItemIds: [], label: "New payment",
@@ -459,8 +459,8 @@ export const SCHEMAS: Record<CollectionKey, CollectionSchema> = {
       { key: "addedBy", label: "Added by", type: "text", inTable: true },
       { key: "addedAt", label: "Added", type: "date", inTable: true },
       { key: "url", label: "Link", type: "text" },
-      { key: "spaceIds", label: "Rooms", type: "tags", hint: "Space ids, one per line." },
-      { key: "scopeItemIds", label: "Scope items", type: "tags", hint: "Item ids, one per line." },
+      { key: "spaceIds", label: "Rooms", type: "tags", source: "spaces" },
+      { key: "scopeItemIds", label: "Scope items", type: "tags", source: "items" },
     ],
     blank: ({ id, spaceId, me }) => ({
       id, title: "New document", kind: "render", spaceIds: spaceId ? [spaceId] : [],
@@ -513,8 +513,8 @@ export const SCHEMAS: Record<CollectionKey, CollectionSchema> = {
       { key: "email", label: "Email", type: "text" },
       { key: "inactive", label: "Inactive", type: "bool", hint: "Keeps their name on old changes but takes them out of the pickers." },
       { key: "avatarTone", label: "Avatar colour", type: "text", hint: "A hex colour." },
-      { key: "spaceIds", label: "Rooms", type: "tags",
-        hint: "For a contractor: the only rooms they see, as space ids one per line (for example gf-kitchen). Blank means every room. A lens, not a lock." },
+      { key: "spaceIds", label: "Rooms", type: "tags", source: "spaces",
+        hint: "For a contractor: the only rooms they see. Leave empty for every room. A lens, not a lock." },
     ],
     blank: ({ id }) => ({ id, name: "", role: "designer", avatarTone: "#857b70" }),
     title: (r) => String(r.name || "Unnamed"),

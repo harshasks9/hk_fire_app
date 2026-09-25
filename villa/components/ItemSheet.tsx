@@ -55,16 +55,16 @@ export function ItemSheet({
         </div>
       }
     >
-      <div className="flex flex-wrap items-center gap-2 mb-4 text-[12px] text-ink-3">
+      <div className="flex flex-wrap items-center gap-2 mb-4 text-[13px] text-ink-3">
         <Chip tone="ghost">{catLabel(state, item.category)}</Chip>
         {space ? <EntityLink on="spaces" id={space.id} label={space.name} /> : <span>House-wide</span>}
-        {space?.dims && <Dims sp={space} source={false} className="text-[11.5px]" />}
+        {space?.dims && <Dims sp={space} source={false} className="text-[12.5px]" />}
         {item.vendorId && <>·<EntityLink on="vendors" id={item.vendorId} /></>}
         {decision && <>·<EntityLink on="decisions" id={decision.id} label="the decision" /></>}
         <span className="ml-auto"><RowActions on="items" id={item.id} always /></span>
-        {item.tags?.includes("critical") && <Chip tone="clay">Critical</Chip>}
+        {item.tags?.includes("critical") && <Chip tone="accent">Critical</Chip>}
         {item.tags?.includes("beyond-brief") && (
-          <Chip tone="slate" title="Added to the model because the villa needs it, though it was not in the original brief.">
+          <Chip tone="info" title="Added to the model because the villa needs it, though it was not in the original brief.">
             Added by the app
           </Chip>
         )}
@@ -73,14 +73,14 @@ export function ItemSheet({
       {item.stage === "not-applicable" ? (
         <div className="card-quiet px-4 py-4 mb-5">
           <Eyebrow>Marked not applicable</Eyebrow>
-          <p className="text-[13px] text-ink-2 mt-1.5 leading-relaxed">{item.naReason}</p>
+          <p className="text-[14px] text-ink-2 mt-1.5 leading-relaxed">{item.naReason}</p>
           <button
             className="btn btn-sm mt-3"
             onClick={() => dispatch({ type: "item/stage", id: item.id, stage: "not-started" })}
           >
             Bring it back into scope
           </button>
-          <p className="text-[11px] text-ink-4 mt-2.5 leading-relaxed">
+          <p className="text-[12.5px] text-ink-4 mt-2.5 leading-relaxed">
             Nothing is ever deleted. Keeping it here is the proof that it was considered.
           </p>
         </div>
@@ -94,7 +94,7 @@ export function ItemSheet({
                 <button
                   key={s}
                   onClick={() => dispatch({ type: "item/stage", id: item.id, stage: s as Stage })}
-                  className="rounded-lg px-2.5 py-1 text-[11.5px] border transition-colors"
+                  className="rounded-lg px-2.5 py-1 text-[12.5px] border transition-colors"
                   style={{
                     background: item.stage === s ? "var(--color-ink)" : "transparent",
                     color: item.stage === s ? "var(--color-paper)" : "var(--color-ink-3)",
@@ -117,10 +117,10 @@ export function ItemSheet({
                   <div className="flex items-baseline justify-between gap-3 mb-3.5">
                     <Eyebrow>Cost build-up</Eyebrow>
                     <div className="text-right">
-                      <div className="tnum text-[22px] leading-none" style={{ fontFamily: "var(--font-display)" }}>
+                      <div className="tnum text-[22px] leading-none">
                         {inr(breakdown.total)}
                       </div>
-                      <div className="text-[10.5px] text-ink-3 mt-1">calculated, not typed</div>
+                      <div className="text-[12px] text-ink-3 mt-1">calculated, not typed</div>
                     </div>
                   </div>
 
@@ -165,7 +165,7 @@ export function ItemSheet({
 
                   {space?.dims && (
                     <div className="mt-3.5 flex flex-wrap gap-1.5 items-center">
-                      <span className="text-[11px] text-ink-3">Use this room&rsquo;s:</span>
+                      <span className="text-[12.5px] text-ink-3">Use this room&rsquo;s:</span>
                       {([
                         ["Floor area", measureSpace(space)?.areaSqft, "sqft"],
                         ["Wall area", measureSpace(space)?.wallSqft, "sqft"],
@@ -184,7 +184,7 @@ export function ItemSheet({
                     </div>
                   )}
 
-                  <div className="hairline mt-4 pt-3.5 space-y-1.5 text-[12.5px]">
+                  <div className="hairline mt-4 pt-3.5 space-y-1.5 text-[13.5px]">
                     <Line label={`Base — ${item.cost.qty} ${UNIT_LABEL[item.cost.unit]} × ${inr(item.cost.rate)}`} v={breakdown.base} />
                     {breakdown.wastage > 0 && <Line label={`Wastage ${item.cost.wastagePct}%`} v={breakdown.wastage} />}
                     {breakdown.labour > 0 && <Line label="Labour" v={breakdown.labour} />}
@@ -199,7 +199,7 @@ export function ItemSheet({
                   </div>
 
                   {(item.cost.assumption || rateDef) && (
-                    <p className="text-[11px] text-ink-3 mt-3 leading-relaxed">
+                    <p className="text-[12.5px] text-ink-3 mt-3 leading-relaxed">
                       <Assumed note="This is the app's starting assumption. Overwrite it with a real quotation.">
                         Assumption
                       </Assumed>
@@ -211,7 +211,7 @@ export function ItemSheet({
                 {/* ------------------------------------------- the ladder */}
                 <div className="card px-4 py-4 mt-3">
                   <Eyebrow className="mb-1">Budget → estimate → commit → actual</Eyebrow>
-                  <p className="text-[11.5px] text-ink-3 mb-3.5 leading-relaxed">
+                  <p className="text-[12.5px] text-ink-3 mb-3.5 leading-relaxed">
                     Seven separate numbers, because &ldquo;what we thought&rdquo;, &ldquo;what they quoted&rdquo;,
                     &ldquo;what we agreed&rdquo; and &ldquo;what we paid&rdquo; are four different things.
                   </p>
@@ -236,9 +236,9 @@ export function ItemSheet({
                   <div className="hairline mt-4 pt-3 flex items-baseline justify-between">
                     <div>
                       <div className="eyebrow">Forecast final cost</div>
-                      <div className="text-[10.5px] text-ink-4 mt-0.5">The hardest number available wins.</div>
+                      <div className="text-[12px] text-ink-4 mt-0.5">The hardest number available wins.</div>
                     </div>
-                    <span className="tnum text-[19px]" style={{ fontFamily: "var(--font-display)" }}>
+                    <span className="tnum text-[19px]">
                       {inr(forecastOf(item))}
                     </span>
                   </div>
@@ -294,7 +294,7 @@ export function ItemSheet({
 
                 <div className="card-quiet px-4 py-3.5">
                   <Eyebrow>Not needed here?</Eyebrow>
-                  <p className="text-[12px] text-ink-3 mt-1.5 mb-2.5 leading-relaxed">
+                  <p className="text-[13px] text-ink-3 mt-1.5 mb-2.5 leading-relaxed">
                     Mark it not applicable rather than deleting it. It stays visible with your reason,
                     which is how you prove later that it was considered and not forgotten.
                   </p>
@@ -326,7 +326,7 @@ export function ItemSheet({
             {tab === "Discussion" && (
               <div>
                 {(ideas.length > 0 || options.length > 0 || decision) && (
-                  <div className="card-quiet px-4 py-3 mb-4 text-[12.5px] text-ink-2">
+                  <div className="card-quiet px-4 py-3 mb-4 text-[13.5px] text-ink-2">
                     This item already carries{" "}
                     {[
                       ideas.length ? `${ideas.length} idea${ideas.length > 1 ? "s" : ""}` : "",
@@ -369,7 +369,7 @@ function ProcurementPanel({ item }: { item: ScopeItem }) {
   if (!p) {
     return (
       <div className="card-quiet px-4 py-5 text-center">
-        <p className="text-[13px] text-ink-2">This is a works item rather than something you buy.</p>
+        <p className="text-[14px] text-ink-2">This is a works item rather than something you buy.</p>
         <button className="btn btn-sm mt-3" onClick={() => patch({})}>Track it as a purchase anyway</button>
       </div>
     );
@@ -426,8 +426,8 @@ function ItemChanges({ itemId }: { itemId: string }) {
           <div key={r.v} className="px-4 py-3 flex items-start gap-3">
             <Avatar name={r.by || "?"} tone={person?.avatarTone} size={24} />
             <div className="min-w-0 flex-1">
-              <div className="text-[13px] leading-relaxed">{r.summary}</div>
-              <div className="text-[11px] text-ink-3 mt-0.5">
+              <div className="text-[14px] leading-relaxed">{r.summary}</div>
+              <div className="text-[12.5px] text-ink-3 mt-0.5">
                 <span className="font-medium text-ink-2">{r.by || "Unattributed"}</span> · {fmtDate(r.at)}{" "}
                 {new Date(r.at).toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit" })} · <span className="tnum">v{r.v}</span>
               </div>

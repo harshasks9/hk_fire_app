@@ -80,9 +80,9 @@ export const BUY_STATUS_LABEL: Record<BuyStatus, string> = {
   "in-transit": "In transit", delivered: "Delivered", installed: "Installed",
 };
 
-export const BUY_STATUS_TONE: Record<BuyStatus, "clay" | "ochre" | "slate" | "sage" | "neutral"> = {
-  undecided: "clay", "to-order": "ochre", ordered: "slate",
-  "in-transit": "slate", delivered: "sage", installed: "sage",
+export const BUY_STATUS_TONE: Record<BuyStatus, "accent" | "warn" | "info" | "good" | "neutral"> = {
+  undecided: "accent", "to-order": "warn", ordered: "info",
+  "in-transit": "info", delivered: "good", installed: "good",
 };
 
 export interface PurchaseLine {

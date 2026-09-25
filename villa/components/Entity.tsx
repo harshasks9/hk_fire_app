@@ -6,14 +6,15 @@ import { useProject, newId, type CollectionKey } from "@/lib/store";
 import { SCHEMAS } from "@/lib/model/schema";
 import { hrefFor, labelFor } from "@/lib/model/links";
 import { RowForm } from "./EntityEditor";
-import { Sheet } from "./ui";
+import { Sheet, Empty, useToast } from "./ui";
+import { Icon } from "./Icon";
 
 /**
  * Create, edit and delete — from wherever you happen to be standing.
  *
  * Every record in the project can be changed from the screen you are already
- * on, rather than only from the console under More. The form, its fields and
- * its validation all come from the same schema the console uses, so there is
+ * on, rather than only from the console. The form, its fields and its
+ * validation all come from the same schema the console uses, so there is
  * exactly one definition of what a vendor or a snag is and no screen can drift
  * from it. The dialog lives at the root of the app, so a card three levels
  * deep can open it without carrying any state of its own.
@@ -36,8 +37,11 @@ export function useEntity(): EntityCtx {
   return c;
 }
 
+const cap = (s: string) => s.replace(/^./, (c) => c.toUpperCase());
+
 export function EntityDialogs({ children }: { children: React.ReactNode }) {
   const { state, dispatch, me } = useProject();
+  const toast = useToast();
   const [form, setForm] = useState<{ on: CollectionKey; row: Record<string, unknown>; creating: boolean } | null>(null);
   const [doomed, setDoomed] = useState<{ on: CollectionKey; id: string } | null>(null);
 
@@ -63,6 +67,7 @@ export function EntityDialogs({ children }: { children: React.ReactNode }) {
     if (!form) return;
     if (form.creating) dispatch({ type: "create", on: form.on, row } as never);
     else dispatch({ type: "update", on: form.on, id: String(row.id), patch: row } as never);
+    toast(form.creating ? `${cap(SCHEMAS[form.on].singular)} created` : "Changes saved");
     setForm(null);
   };
 
@@ -85,23 +90,30 @@ export function EntityDialogs({ children }: { children: React.ReactNode }) {
         />
       )}
       {doomed && schema && (
-        <Sheet open onClose={() => setDoomed(null)} title={`Delete this ${schema.singular}?`}>
-          <p className="text-[14px] text-ink mb-2">{doomedRow ? schema.title(doomedRow, state) : ""}</p>
-          {schema.deleteNote && <p className="text-[12.5px] text-ink-3 leading-relaxed mb-3">{schema.deleteNote}</p>}
-          <p className="text-[12px] text-ink-3 leading-relaxed mb-4">
-            References to it elsewhere in the project are cleaned up automatically, so nothing is left
-            pointing at something that no longer exists. This cannot be undone.
+        <Sheet
+          open onClose={() => setDoomed(null)} title={`Delete this ${schema.singular}?`}
+          footer={
+            <div className="flex gap-2 justify-end">
+              <button className="btn" onClick={() => setDoomed(null)} data-autofocus>Keep it</button>
+              <button
+                className="btn btn-danger"
+                onClick={() => {
+                  dispatch({ type: "remove", on: doomed.on, id: doomed.id });
+                  toast(`${cap(schema.singular)} deleted`);
+                  setDoomed(null);
+                }}
+              >
+                Delete {schema.singular}
+              </button>
+            </div>
+          }
+        >
+          <p className="text-[15px] font-semibold text-ink mb-2">{doomedRow ? schema.title(doomedRow, state) : ""}</p>
+          {schema.deleteNote && <p className="text-[14px] text-ink-2 leading-relaxed mb-2">{schema.deleteNote}</p>}
+          <p className="text-[13.5px] text-ink-3 leading-relaxed">
+            Anything elsewhere that points at it is cleaned up, so nothing is left pointing at something that no longer exists.
+            Deleting can&rsquo;t be undone here, but History can restore the project to before it.
           </p>
-          <div className="flex gap-2">
-            <button className="btn flex-1 justify-center" onClick={() => setDoomed(null)}>Keep it</button>
-            <button
-              className="btn flex-1 justify-center"
-              style={{ background: "#a04a3c", color: "#fff", borderColor: "#a04a3c" }}
-              onClick={() => { dispatch({ type: "remove", on: doomed.on, id: doomed.id }); setDoomed(null); }}
-            >
-              Delete {schema.singular}
-            </button>
-          </div>
         </Sheet>
       )}
     </Ctx.Provider>
@@ -120,7 +132,7 @@ export function EntityLink({
   const href = hrefFor(on, id, state);
   if (!href) return <>{text}</>;
   return (
-    <Link href={href} className={className ?? "text-clay hover:underline underline-offset-2"}>
+    <Link href={href} className={className ?? "link"}>
       {text}
     </Link>
   );
@@ -128,30 +140,31 @@ export function EntityLink({
 
 /**
  * Edit and delete for one row, kept quiet until the row is hovered so that a
- * list of forty things does not read as a list of eighty buttons.
+ * list of forty things does not read as a list of eighty buttons. On touch
+ * screens, where there is no hover, they are always shown.
  */
 export function RowActions({
   on, id, className = "", always,
 }: { on: CollectionKey; id: string; className?: string; always?: boolean }) {
   const { edit, remove } = useEntity();
+  const noun = SCHEMAS[on].singular;
   return (
     <span
-      className={`inline-flex items-center gap-1 shrink-0 ${always ? "" : "opacity-0 group-hover:opacity-100 focus-within:opacity-100"} transition-opacity ${className}`}
+      className={`inline-flex items-center gap-0.5 shrink-0 ${always ? "" : "[@media(hover:hover)]:opacity-0 group-hover:opacity-100 focus-within:opacity-100"} transition-opacity ${className}`}
     >
       <button
-        className="btn btn-sm"
-        title={`Edit this ${SCHEMAS[on].singular}`}
+        className="btn btn-ghost btn-icon btn-sm bg-card/80"
+        title={`Edit this ${noun}`} aria-label={`Edit this ${noun}`}
         onClick={(e) => { e.preventDefault(); e.stopPropagation(); edit(on, id); }}
       >
-        Edit
+        <Icon name="edit" size={16} />
       </button>
       <button
-        className="btn btn-sm"
-        title={`Delete this ${SCHEMAS[on].singular}`}
-        style={{ color: "#a04a3c" }}
+        className="btn btn-ghost btn-icon btn-sm btn-danger-quiet bg-card/80"
+        title={`Delete this ${noun}`} aria-label={`Delete this ${noun}`}
         onClick={(e) => { e.preventDefault(); e.stopPropagation(); remove(on, id); }}
       >
-        ✕
+        <Icon name="trash" size={16} />
       </button>
     </span>
   );
@@ -159,14 +172,15 @@ export function RowActions({
 
 /** "Add a vendor", wherever vendors are being looked at. */
 export function AddButton({
-  on, prefill, label, className = "btn btn-sm", accent,
+  on, prefill, label, className, accent,
 }: { on: CollectionKey; prefill?: Record<string, unknown>; label?: string; className?: string; accent?: boolean }) {
   const { create } = useEntity();
   return (
     <button
-      className={accent ? "btn btn-accent btn-sm" : className}
+      className={className ?? (accent ? "btn btn-primary btn-sm" : "btn btn-sm")}
       onClick={() => create(on, prefill)}
     >
+      <Icon name="plus" size={15} strokeWidth={2} />
       {label ?? `Add ${SCHEMAS[on].singular}`}
     </button>
   );
@@ -174,13 +188,7 @@ export function AddButton({
 
 /** An empty list is a dead end unless it offers the way out of being empty. */
 export function EmptyWithAdd({
-  on, prefill, title, hint,
-}: { on: CollectionKey; prefill?: Record<string, unknown>; title: string; hint?: string }) {
-  return (
-    <div className="card-quiet px-5 py-8 text-center">
-      <div className="text-[14px] text-ink-2">{title}</div>
-      {hint && <div className="text-[12.5px] text-ink-3 mt-1.5 max-w-md mx-auto leading-relaxed">{hint}</div>}
-      <div className="mt-3.5"><AddButton on={on} prefill={prefill} accent /></div>
-    </div>
-  );
+  on, prefill, title, hint, icon,
+}: { on: CollectionKey; prefill?: Record<string, unknown>; title: string; hint?: string; icon?: string }) {
+  return <Empty title={title} hint={hint} icon={icon} action={<AddButton on={on} prefill={prefill} accent />} />;
 }

@@ -93,14 +93,14 @@ function Bubble({
       <Avatar name={c.author} tone={person?.avatarTone} size={26} />
       <div className="min-w-0 flex-1">
         <div className="flex items-baseline gap-2">
-          <span className="text-[12.5px] font-medium">{c.author}</span>
-          {person?.firm && <span className="text-[10.5px] text-ink-4">{person.firm}</span>}
-          <span className="text-[10.5px] text-ink-4">{fmtDay(c.createdAt)}</span>
+          <span className="text-[13.5px] font-medium">{c.author}</span>
+          {person?.firm && <span className="text-[12.5px] text-ink-3">{person.firm}</span>}
+          <span className="text-[12.5px] text-ink-3">{fmtDay(c.createdAt)}</span>
         </div>
-        <div className="text-[13px] text-ink-2 leading-relaxed mt-0.5 whitespace-pre-wrap">
+        <div className="text-[14px] text-ink-2 leading-relaxed mt-0.5 whitespace-pre-wrap">
           {body.map((part, i) =>
             part.startsWith("@") ? (
-              <span key={i} className="text-clay font-medium">{part}</span>
+              <span key={i} className="text-accent font-medium">{part}</span>
             ) : (
               <React.Fragment key={i}>{part}</React.Fragment>
             ),
@@ -114,21 +114,21 @@ function Bubble({
               title={who.join(", ")}
               className="chip"
               style={{
-                background: who.includes(me) ? "#f2e2d9" : "#f4f1ec",
-                color: "#514941", fontSize: 11,
+                background: who.includes(me) ? "var(--color-accent-soft)" : "var(--color-paper-2)",
+                color: "var(--color-ink-2)", fontSize: 12.5,
               }}
             >
               {e} <span className="tnum">{who.length}</span>
             </button>
           ))}
-          <div className="opacity-0 group-hover:opacity-100 focus-within:opacity-100 transition-opacity flex items-center gap-1">
+          <div className="[@media(hover:hover)]:opacity-0 group-hover:opacity-100 focus-within:opacity-100 transition-opacity flex items-center gap-1">
             {["👍", "❤️", "🤔"].map((e) => (
-              <button key={e} onClick={() => onReact(c.id, e)} className="text-[13px] px-1 rounded hover:bg-paper-2" aria-label={`React ${e}`}>
+              <button key={e} onClick={() => onReact(c.id, e)} className="text-[14px] px-1 rounded hover:bg-paper-2" aria-label={`React ${e}`}>
                 {e}
               </button>
             ))}
             {onReply && (
-              <button onClick={onReply} className="text-[11px] text-ink-3 px-1.5 rounded hover:bg-paper-2">Reply</button>
+              <button onClick={onReply} className="text-[12.5px] text-ink-3 px-1.5 rounded hover:bg-paper-2">Reply</button>
             )}
           </div>
         </div>
@@ -143,8 +143,9 @@ function Composer({
   return (
     <div className="flex items-end gap-2">
       <textarea
-        className="input resize-y min-h-[38px] py-2"
+        className="input resize-y min-h-[40px] py-2"
         rows={1}
+        aria-label={placeholder}
         value={value}
         onChange={(e) => onChange(e.target.value)}
         onKeyDown={(e) => {
@@ -153,7 +154,7 @@ function Composer({
         placeholder={placeholder}
       />
       {onCancel && <button className="btn btn-sm" onClick={onCancel}>Cancel</button>}
-      <button className="btn btn-sm btn-primary" onClick={onPost} disabled={!value.trim()}>Post</button>
+      <button className="btn btn-sm btn-primary" onClick={onPost} disabled={!value.trim()} title="Post (Ctrl+Enter)">Post</button>
     </div>
   );
 }

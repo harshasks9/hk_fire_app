@@ -46,19 +46,19 @@ export default function DecisionsPage() {
       />
 
       {waiting.length > 0 && (
-        <div className="card px-5 py-5 mb-6 grid grid-cols-2 sm:grid-cols-4 gap-4">
-          <Stat label="Waiting on you" value={waiting.length} tone={overdue ? "rust" : "clay"} large />
-          <Stat label="Overdue" value={overdue || "—"} tone={overdue ? "rust" : undefined} large />
+        <div className="card stat-strip mb-8">
+          <Stat label="Waiting on you" value={waiting.length} tone={overdue ? "bad" : "accent"} large />
+          <Stat label="Overdue" value={overdue || "None"} tone={overdue ? "bad" : undefined} large />
           <Stat
             label="Cost at stake"
             value={`${totalDelta >= 0 ? "+" : ""}${inr(totalDelta, { compact: true })}`}
             sub="against current assumptions"
-            tone={totalDelta > 0 ? "rust" : "sage"}
+            tone={totalDelta > 0 ? "bad" : "good"}
             large
           />
           <Stat
             label="Soonest deadline"
-            value={soonest ? fmtDay(soonest.decideBy) : "—"}
+            value={soonest ? fmtDay(soonest.decideBy) : "None set"}
             sub={soonest?.title}
             large
           />
@@ -66,23 +66,24 @@ export default function DecisionsPage() {
       )}
 
       <Tabs
+        label="Decisions"
         tabs={TABS}
         active={tab}
         onChange={setTab}
         counts={{ "Needs my decision": waiting.length, "On hold": held.length, Settled: settled.length }}
       />
 
-      <div className="mt-5 space-y-3">
+      <div className="mt-6 space-y-3">
         {list.length ? (
           list.map((d, i) => (
-            <div key={d.id} id={d.id} className="animate-rise scroll-mt-24 group relative" style={{ animationDelay: `${i * 40}ms` }}>
-              <DecisionCard decision={d} expanded={i === 0 && tab === "Needs my decision"} />
-              <RowActions on="decisions" id={d.id} className="absolute top-3 right-3 z-10" />
+            <div key={d.id} className="animate-rise group" style={{ animationDelay: `${i * 40}ms` }}>
+              <DecisionCard decision={d} expanded={i === 0 && tab === "Needs my decision"} actions={<RowActions on="decisions" id={d.id} />} />
             </div>
           ))
         ) : (
           <EmptyWithAdd
             on="decisions"
+            icon={tab === "Needs my decision" ? "check" : "decisions"}
             title={tab === "Needs my decision" ? "Nothing is waiting on you." : tab === "On hold" ? "Nothing is on hold." : "No decisions settled yet."}
             hint={tab === "Needs my decision" ? "The designer has no open approval requests. You can still raise one yourself — anything the project is stuck on belongs here." : undefined}
           />
