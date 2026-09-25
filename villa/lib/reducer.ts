@@ -102,6 +102,7 @@ export type Action =
   | { type: "space/correct"; id: string; patch: Partial<Space>; why: string }
   /** Choose one of a room's layouts, or clear the choice. */
   | { type: "space/layout"; id: string; layoutId?: string; name?: string }
+  | { type: "space/spec"; id: string; key: string; value?: "done" | "na"; label?: string }
   | { type: "scenario/set"; id: string };
 
 /** What survives a wipe. Everything not listed here is emptied. */
@@ -510,6 +511,17 @@ export function reducer(s: ProjectState, a: Action): ProjectState {
 
     case "space/layout":
       return { ...s, spaces: s.spaces.map((x) => (x.id === a.id ? { ...x, layoutId: a.layoutId } : x)) };
+
+    case "space/spec":
+      return {
+        ...s,
+        spaces: s.spaces.map((x) => {
+          if (x.id !== a.id) return x;
+          const next = { ...(x.specChecks ?? {}) };
+          if (a.value) next[a.key] = a.value; else delete next[a.key];
+          return { ...x, specChecks: next };
+        }),
+      };
 
     case "space/patch":
     case "space/correct":

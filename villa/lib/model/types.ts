@@ -76,6 +76,8 @@ export interface Space {
   archived?: boolean;
   /** The layout chosen for this room, by id (`${spaceId}:${key}`). Blank until someone chooses. */
   layoutId?: string;
+  /** Material-spec checklist ticks for the room, by spec line id (see lib/specs). */
+  specChecks?: Record<string, "done" | "na">;
 }
 
 /* ------------------------------------------------- the scope item lifecycle */

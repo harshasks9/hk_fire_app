@@ -14,6 +14,8 @@ import { roomChecklist } from "@/lib/model/checklist";
 import { ChecklistBody } from "@/components/Checklist";
 import { RoomDrawings } from "@/components/RoomDrawings";
 import { LayoutsPanel } from "@/components/LayoutsPanel";
+import { SpecChecklist } from "@/components/SpecChecklist";
+import { specFor, specProgress } from "@/lib/specs";
 import { designFor } from "@/lib/design";
 import { roomLens } from "@/lib/model/lens";
 import { drawingsForSpace } from "@/lib/plans/room-drawings";
@@ -34,7 +36,7 @@ import { AddButton, RowActions, EntityLink, EmptyWithAdd, useEntity } from "@/co
 import { FLOOR_META } from "@/lib/seed/spaces";
 import { catLabel, categoryOptions, buildUpFromCategory } from "@/lib/model/categories";
 
-const TABS = ["Layouts", "Checklist", "Design", "Decisions", "Scope", "Cost", "On site"] as const;
+const TABS = ["Layouts", "Specification", "Checklist", "Design", "Decisions", "Scope", "Cost", "On site"] as const;
 type Tab = (typeof TABS)[number];
 
 /** Old tab names still work in links: each now lives inside one of the seven. */
@@ -60,7 +62,8 @@ export default function RoomPage() {
   const hasLayouts = !!designFor(decodeURIComponent(params.spaceId));
   const [tab, setTab] = useState<Tab>(hasLayouts ? "Layouts" : "Checklist");
   const [sub, setSub] = useState<string | undefined>(undefined);
-  const tabs = hasLayouts ? TABS : TABS.filter((t) => t !== "Layouts");
+  const spec = specFor(decodeURIComponent(params.spaceId));
+  const tabs = TABS.filter((t) => (t !== "Layouts" || hasLayouts) && (t !== "Specification" || !!spec));
   const [openItem, setOpenItem] = useState<ScopeItem | null>(null);
 
   const spaceId = decodeURIComponent(params.spaceId);
@@ -91,13 +94,14 @@ export default function RoomPage() {
   // Deep link: /villa/ff-master?item=xyz opens that item directly; ?tab=Layouts opens a tab.
   React.useEffect(() => {
     const t = searchParams.get("tab");
-    if (t && (TABS as readonly string[]).includes(t) && (t !== "Layouts" || hasLayouts)) setTab(t as Tab);
+    if (t && (tabs as readonly string[]).includes(t)) setTab(t as Tab);
     else if (t && ALIAS[t]) { setTab(ALIAS[t].tab); setSub(ALIAS[t].sub); }
     const want = searchParams.get("item");
     if (want) {
       const it = state.items.find((i) => i.id === want);
       if (it) { setOpenItem(it); setTab("Scope"); }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchParams, state.items, hasLayouts]);
 
   if (space && !roomLens(state, role, meId)(space.id)) {
@@ -117,6 +121,7 @@ export default function RoomPage() {
   const openSnags = snags.filter((s) => s.status !== "closed").length;
   const counts: Partial<Record<Tab, number>> = {
     Layouts: designFor(spaceId)?.layouts.length,
+    Specification: spec ? specProgress(spec, space?.specChecks).total - specProgress(spec, space?.specChecks).done : undefined,
     Checklist: checklist ? checklist.total - checklist.done : undefined,
     Design: ideas.length + options.length || undefined,
     Decisions: decisions.length, Scope: r.live,
@@ -223,6 +228,7 @@ export default function RoomPage() {
 
       <div className="mt-6" role="tabpanel" aria-label={tab}>
         {tab === "Layouts" && <LayoutsPanel spaceId={spaceId} />}
+        {tab === "Specification" && spec && <SpecChecklist spec={spec} />}
         {tab === "Checklist" && <ChecklistTab spaceId={spaceId} />}
         {tab === "Design" && (
           <div className="space-y-10">

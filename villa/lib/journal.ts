@@ -252,6 +252,18 @@ export function describe(before: ProjectState, a: Action): { summary: string; to
         touches: t({ spaceId: a.id, collection: "spaces", id: a.id }),
       };
     }
+    case "space/spec": {
+      const sp = before.spaces.find((x) => x.id === a.id);
+      const what = a.label ? `\u201c${a.label}\u201d` : a.key;
+      return {
+        summary: a.value === "done"
+          ? `Ticked off ${what} in the ${sp?.name ?? "room"} specification`
+          : a.value === "na"
+            ? `Marked ${what} not applicable in the ${sp?.name ?? "room"} specification`
+            : `Reopened ${what} in the ${sp?.name ?? "room"} specification`,
+        touches: t({ spaceId: a.id, collection: "spaces", id: a.id }),
+      };
+    }
     case "space/correct": {
       const sp = before.spaces.find((x) => x.id === a.id);
       return { summary: `Corrected \u201c${sp?.name ?? "?"}\u201d in the villa model \u2014 ${a.why}`, touches: t({ spaceId: a.id, collection: "spaces", id: a.id }) };
