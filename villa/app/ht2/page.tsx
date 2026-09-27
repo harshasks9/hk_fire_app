@@ -1,10 +1,10 @@
 import { HtApp } from "@/components/ht/HtApp";
 import { HtDataProvider } from "@/components/ht/data";
-import { HT_DATA } from "@/lib/ht/htData";
+import { HT2_DATA } from "@/lib/ht2/data";
 
-export default function HomeTheaterRoom() {
+export default function HomeTheaterRoomIndia() {
   return (
-    <HtDataProvider data={HT_DATA}>
+    <HtDataProvider data={HT2_DATA}>
       <HtApp />
     </HtDataProvider>
   );

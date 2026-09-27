@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import { AUDIO_FLOW, VIDEO_FLOW, EDGE_LABEL, type EdgeKind, type FlowEdge, type FlowNode } from "@/lib/ht/system";
-import { byId } from "@/lib/ht/catalog";
+import { EDGE_LABEL, type EdgeKind, type FlowEdge, type FlowNode } from "@/lib/ht/system";
+import { useHt } from "./data";
 import { GROUP_COLOR, Hit, Toggles } from "./bits";
 
 const EDGE_COLOR: Record<EdgeKind, string> = {
@@ -27,6 +27,7 @@ function Diagram({ flow, kinds, onPick, labels, height, title }: {
   flow: { nodes: FlowNode[]; edges: FlowEdge[] };
   kinds: Kinds; onPick: (c: string) => void; labels: boolean; height: number; title: string;
 }) {
+  const { byId } = useHt();
   const [hover, setHover] = useState<string | null>(null);
   const byNode = new Map(flow.nodes.map((n) => [n.id, n]));
   const w = (n: FlowNode) => n.w ?? NODE_W;
@@ -105,6 +106,8 @@ function Diagram({ flow, kinds, onPick, labels, height, title }: {
 const KIND_ITEMS: { id: EdgeKind; label: string; color: string }[] = (Object.keys(EDGE_LABEL) as EdgeKind[]).map((k) => ({ id: k, label: EDGE_LABEL[k], color: EDGE_COLOR[k] }));
 
 export function FlowView({ onPick }: { onPick: (c: string) => void }) {
+  const { flows, flowNotes } = useHt();
+  const AUDIO_FLOW = flows.audio, VIDEO_FLOW = flows.video;
   const [kinds, setKinds] = useState<Kinds>({ hdmi: true, line: true, speaker: true, sub: true, network: true, trigger: true, power: true, light: true });
   const [labels, setLabels] = useState(false);
   const toggle = (k: EdgeKind) => setKinds((s) => ({ ...s, [k]: !s[k] }));
@@ -132,15 +135,7 @@ export function FlowView({ onPick }: { onPick: (c: string) => void }) {
       </div>
 
       <div className="grid md:grid-cols-3 gap-4">
-        <Note title="HDMI path">
-          Every source goes into the Denon, never straight to the projector, so audio always bitstreams and there is one video path to debug. One 15 m fibre HDMI (directional, labelled at both ends) runs through the ceiling void to the rear shelf; a second is pulled as a spare before the ceiling closes.
-        </Note>
-        <Note title="Subwoofer outputs">
-          The Denon&rsquo;s four sub outputs are set independently by Dirac Bass Control and go to one amplifier channel each. The high-pass (12–15 Hz) and limiter for each sealed 18&Prime; live in the amplifiers&rsquo; DSP, not the Denon.
-        </Note>
-        <Note title="Power & triggers">
-          The Denon&rsquo;s 12 V trigger wakes the Buckeye and the sequenced PDU, and the PDU brings the sub amps up last and drops them first — no thump. The rack and projector run through the online UPS; the sub amps sit on their own 20 A circuit, off the UPS.
-        </Note>
+        {flowNotes.map((n) => <Note key={n.title} title={n.title}>{n.body}</Note>)}
       </div>
     </div>
   );

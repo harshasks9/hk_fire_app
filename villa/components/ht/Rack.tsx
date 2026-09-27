@@ -1,15 +1,15 @@
 "use client";
 
 import React, { useState } from "react";
-import { RACK, RACK_U, rackPower, PROJECTOR_WATTS, type RackUnit } from "@/lib/ht/system";
-import { byId } from "@/lib/ht/catalog";
+import { type RackUnit } from "@/lib/ht/system";
+import { useHt } from "./data";
 import { GROUP_COLOR, Hit } from "./bits";
 
 const UH = 24;
 
 export function RackView({ onPick }: { onPick: (c: string) => void }) {
   const [hover, setHover] = useState<RackUnit | null>(null);
-  const p = rackPower();
+  const { rack: RACK, rackUnits: RACK_U, power: p, projectorWatts: PROJECTOR_WATTS, byId } = useHt();
   const W = 440, left = 46, top = 20;
   const height = top * 2 + RACK_U * UH;
   const y = (u: number, h: number) => top + (RACK_U - (u + h - 1)) * UH;
@@ -18,7 +18,7 @@ export function RackView({ onPick }: { onPick: (c: string) => void }) {
     <div className="grid lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] gap-6">
       <div className="card p-4 sm:p-6">
         <div className="flex items-baseline justify-between mb-4 gap-3">
-          <h3 className="text-[17px] font-semibold">27U rack, front view</h3>
+          <h3 className="text-[17px] font-semibold">{RACK_U}U rack, front view</h3>
           <span className="t3 text-[12.5px]">Click any unit</span>
         </div>
         <svg viewBox={`0 0 ${W + left + 30} ${height}`} className="w-full h-auto max-w-[560px] mx-auto block" role="img" aria-label="AV rack elevation">
@@ -87,7 +87,7 @@ export function RackView({ onPick }: { onPick: (c: string) => void }) {
             <span style={{ width: `${((p.peak - p.typ) / p.capacity) * 100}%`, background: "var(--qualified)", opacity: 0.7 }} />
           </div>
           <p className="t2 text-[13.5px] leading-relaxed mt-3">
-            On the UPS: the Denon, the Buckeye, the sources, the switch, the fans and the projector ({PROJECTOR_WATTS[1]} W, by its own circuit to the rear shelf). Peak is {Math.round((p.peak / p.capacity) * 100)}% of the UPS&rsquo;s 2.7 kW.
+            On the UPS: {RACK.filter((r) => r.ups && r.watts && r.kind !== "power").map((r) => r.label).join(", ")} and the projector ({PROJECTOR_WATTS[1]} W, by its own circuit to the rear shelf). Peak is {Math.round((p.peak / p.capacity) * 100)}% of the UPS&rsquo;s {(p.capacity / 1000).toFixed(1)} kW.
             The two sub amps (up to {(p.subsPeak / 1000).toFixed(1)} kW in bursts) run from the sequenced PDU on a dedicated 20 A circuit, <strong className="text-[var(--text)]">not</strong> through the UPS.
           </p>
         </div>
@@ -95,7 +95,7 @@ export function RackView({ onPick }: { onPick: (c: string) => void }) {
         <div className="card p-5">
           <div className="eyebrow mb-3">Heat & airflow</div>
           <p className="t2 text-[13.5px] leading-relaxed">
-            A loud film puts about <strong className="text-[var(--text)]">{Math.round(p.heatW / 100) * 100} W</strong> (~{Math.round(p.heatBtu / 100) * 100} BTU/h) into the closet. Air enters low through the perforated front door, rises through the 1U gaps above the Denon, the Buckeye and each sub amp, and leaves through the thermostatic fan tray at U27. In a Hyderabad summer the closet itself needs an exhaust fan to outside or a small split AC; a temperature alert at the top of the rack is cheap insurance.
+            A loud film puts about <strong className="text-[var(--text)]">{Math.round(p.heatW / 100) * 100} W</strong> (~{Math.round(p.heatBtu / 100) * 100} BTU/h) into the closet. Air enters low through the perforated front door, rises through the 1U gaps above each hot unit, and leaves through the thermostatic fan tray at the top. In a Hyderabad summer the closet itself needs an exhaust fan to outside or a small split AC; a temperature alert at the top of the rack is cheap insurance.
           </p>
         </div>
 
@@ -103,7 +103,7 @@ export function RackView({ onPick }: { onPick: (c: string) => void }) {
           <div className="eyebrow mb-3">Cable management</div>
           <ul className="t2 text-[13.5px] leading-relaxed space-y-2 list-disc pl-5">
             <li>Speaker, sub and HDMI runs enter at the top through the patch panel (U24) and drop down the rear left rail; power runs down the rear right rail, so signal and mains never share a bundle.</li>
-            <li>A service loop long enough to slide the Denon forward without unplugging anything.</li>
+            <li>A service loop long enough to slide the receiver forward without unplugging anything.</li>
             <li>Every cable labelled at both ends: channel name, run length, and for the fibre HDMI the direction (SOURCE → DISPLAY).</li>
             <li>Star earth at the rack: neutral-to-earth under 2 V, measured before handover.</li>
           </ul>

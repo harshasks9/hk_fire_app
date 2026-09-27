@@ -2,10 +2,11 @@
 
 import React, { useMemo, useRef, useState } from "react";
 import {
-  STUDIES, SUB_KEYS, evaluate, frontier, knee, bestUnder, steps, moves, sameWeights, costByCat, CAT_LABEL,
-  type Study, type Point, type Weights, type Dim, type Cat,
+  SUB_KEYS, evaluate, frontier, knee, bestUnder, steps, moves, sameWeights, costByCat,
+  type Study, type Point, type Weights, type Dim,
 } from "@/lib/ht/pareto";
-import { systemTotal, formatINR } from "@/lib/ht/catalog";
+import { formatINR } from "@/lib/ht/catalog";
+import { useHt } from "./data";
 import { Hit, Seg } from "./bits";
 
 const L = 1e5;
@@ -18,17 +19,18 @@ const BAD = "#ef7a64";
 const lakh = (n: number, p = 1) => `₹${(n / L).toFixed(p)} L`;
 
 export function ParetoView() {
-  const [studyId, setStudyId] = useState<"A" | "B">("A");
+  const { studies: STUDIES, total, budgetCap } = useHt();
+  const [studyId, setStudyId] = useState<string>(STUDIES[0].id);
   const study = STUDIES.find((s) => s.id === studyId)!;
-  const [weightsBy, setWeightsBy] = useState<Record<string, Weights>>({ A: STUDIES[0].weights, B: STUDIES[1].weights });
+  const [weightsBy, setWeightsBy] = useState<Record<string, Weights>>(Object.fromEntries(STUDIES.map((s) => [s.id, s.weights])));
   const weights = weightsBy[studyId];
   const setWeights = (w: Weights) => setWeightsBy((s) => ({ ...s, [studyId]: w }));
-  const [selBy, setSelBy] = useState<Record<string, string[]>>({ A: ["C05", "C16", "C19"], B: ["C10", "C13", "C18"] });
+  const [selBy, setSelBy] = useState<Record<string, string[]>>(Object.fromEntries(STUDIES.map((s) => [s.id, s.defaultSel])));
   const sel = selBy[studyId];
   const setSel = (ids: string[]) => setSelBy((s) => ({ ...s, [studyId]: ids }));
-  const [budgetBy, setBudgetBy] = useState<Record<string, number>>({ A: 38 * L, B: 30 * L });
+  const [budgetBy, setBudgetBy] = useState<Record<string, number>>(Object.fromEntries(STUDIES.map((s) => [s.id, s.defaultBudget])));
   const budget = budgetBy[studyId];
-  const [band, setBand] = useState(true);
+  const [band, setBand] = useState(STUDIES[0].configs.length <= 60);
   const [focus, setFocus] = useState(false);
   const [hl, setHl] = useState<{ dim: Dim; value: string } | null>(null);
 
@@ -40,15 +42,17 @@ export function ParetoView() {
   const byId = (id: string) => pts.find((p) => p.id === id)!;
 
   const toggle = (id: string) => setSel(sel.includes(id) ? sel.filter((x) => x !== id) : [...sel, id].slice(-3));
-  const switchStudy = (id: "A" | "B") => { setStudyId(id); setHl(null); };
+  const switchStudy = (id: string) => { setStudyId(id); setHl(null); setBand(STUDIES.find((s) => s.id === id)!.configs.length <= 60); };
+  const cap = study.cap ?? budgetCap;
+  const underCap = cap ? pts.filter((p) => p.cost < cap).length : 0;
 
   return (
     <div className="space-y-6">
       {/* study switch + room fit */}
       <div className="grid grid-cols-1 lg:grid-cols-[auto_minmax(0,1fr)] gap-4 items-stretch">
         <div className="flex flex-col gap-2">
-          <Seg label="Study" value={studyId} onChange={switchStudy} options={STUDIES.map((s) => ({ id: s.id, label: `Study ${s.id} · ${s.configs.length} systems` }))} />
-          <span className="t3 text-[12px] px-1">{study.id === "A" ? "From your uploaded report" : "From the study pasted with it"}</span>
+          {STUDIES.length > 1 && <Seg label="Study" value={studyId} onChange={switchStudy} options={STUDIES.map((s) => ({ id: s.id, label: s.title }))} />}
+          <span className="t3 text-[12px] px-1">{study.short}</span>
         </div>
         <div className="card-flat px-4 py-3 flex items-start gap-3" style={{ borderColor: study.fitsRoom ? "rgba(127,196,154,.35)" : "rgba(230,184,90,.4)" }}>
           <span className="verdict shrink-0 mt-0.5" style={{ color: study.fitsRoom ? "var(--agree)" : "var(--qualified)" }}>{study.fitsRoom ? "Fits this room" : "Different room"}</span>
@@ -61,7 +65,7 @@ export function ParetoView() {
         <Tile k="Systems modelled" v={`${pts.length}`} sub={`${front.length} on the frontier · ${pts.length - front.length} dominated`} />
         <Tile k={isDefault ? "Study's knee" : "Knee at your weights"} v={`${k.id} · ${lakh(k.cost)}`} sub={`${study.scoreName} ${k.score}`} accent onClick={() => toggle(k.id)} />
         <Tile k={`Best at ${lakh(budget, 0)}`} v={best ? `${best.id} · ${best.score}` : "—"} sub={best ? lakh(best.cost) : "Nothing fits"} onClick={best ? () => toggle(best.id) : undefined} />
-        <Tile k="Current /ht pick" v={lakh(systemTotal())} sub="Not scored by either study" />
+        {cap ? <Tile k="Hard cap" v={lakh(cap, 0)} sub={`${underCap} of ${pts.length} systems fit under it`} /> : <Tile k="Current /ht pick" v={lakh(total)} sub="Not scored by either study" />}
       </div>
 
       {/* chart + controls */}
@@ -78,7 +82,7 @@ export function ParetoView() {
             </div>
           </div>
           <div className="scroll-x"><div className="min-w-[640px]">
-            <Scatter study={study} pts={pts} front={front} k={k} best={best} budget={budget} sel={sel} onToggle={toggle} band={band} hl={hl} isDefault={isDefault} focus={focus} />
+            <Scatter study={study} pts={pts} front={front} k={k} best={best} budget={budget} sel={sel} onToggle={toggle} band={band} hl={hl} isDefault={isDefault} focus={focus} mark={cap ? { cost: cap, label: `₹${cap / L} L hard cap`, cap: true } : { cost: total, label: "current /ht pick" }} />
           </div></div>
           <ChartKey />
         </div>
@@ -140,11 +144,13 @@ export function ParetoView() {
       {/* table */}
       <details className="card overflow-hidden group">
         <summary className="cursor-pointer list-none px-5 py-4 flex items-center justify-between">
-          <span className="text-[15px] font-semibold">All {pts.length} systems as a table</span>
+          <span className="text-[15px] font-semibold">{pts.length > 60 ? `The ${front.length} frontier systems as a table` : `All ${pts.length} systems as a table`}</span>
           <span className="t3 text-[13px] group-open:rotate-180 transition-transform">▾</span>
         </summary>
         <AllTable study={study} pts={pts} sel={sel} onToggle={toggle} />
       </details>
+
+      {study.robustness && <Robust r={study.robustness} />}
 
       <div className="card-flat p-5">
         <div className="eyebrow mb-2">The study&rsquo;s verdict</div>
@@ -155,11 +161,43 @@ export function ParetoView() {
   );
 }
 
+/* ============================================================= robustness */
+
+function Robust({ r }: { r: NonNullable<Study["robustness"]> }) {
+  return (
+    <div className="card p-5">
+      <div className="eyebrow mb-1">How sure is this?</div>
+      <h3 className="text-[16px] font-semibold">Which choice wins across {r.samples} perturbed runs</h3>
+      <p className="t2 text-[13.5px] leading-relaxed mt-1 max-w-3xl">{r.note}</p>
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-5 mt-4">
+        {r.dims.map((d) => (
+          <div key={d.label} className="min-w-0">
+            <div className="text-[12.5px] t3 mb-2">{d.label}</div>
+            <ul className="space-y-1.5">
+              {d.rows.map((row) => (
+                <li key={row.label} className="grid grid-cols-[minmax(0,1fr)_88px_44px] items-center gap-2 text-[13px]">
+                  <span className={`truncate ${row.pick ? "font-semibold" : "t2"}`} title={row.label}>{row.label}</span>
+                  <span className="h-2 rounded-sm bg-[var(--card-3)] overflow-hidden">
+                    <span className="block h-full rounded-sm" style={{ width: `${row.share}%`, background: row.pick ? "var(--brass)" : "var(--text-3)" }} />
+                  </span>
+                  <span className="num text-right t2">{row.share.toFixed(0)}%</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+      <p className="t3 text-[12.5px] leading-relaxed mt-4">{r.risk}</p>
+    </div>
+  );
+}
+
 /* ================================================================ scatter */
 
-function Scatter({ study, pts: allPts, front, k, best, budget, sel, onToggle, band, hl, isDefault, focus }: {
+function Scatter({ study, pts: allPts, front, k, best, budget, sel, onToggle, band, hl, isDefault, focus, mark }: {
   study: Study; pts: Point[]; front: Point[]; k: Point; best?: Point; budget: number; sel: string[];
   onToggle: (id: string) => void; band: boolean; hl: { dim: Dim; value: string } | null; isDefault: boolean; focus: boolean;
+  mark: { cost: number; label: string; cap?: boolean };
 }) {
   // "Zoom to the knee" keeps the steep part of the curve and a little beyond it.
   const zoomMax = Math.max(k.cost * 1.35, (study.id === "A" ? 48 : 42) * L);
@@ -176,7 +214,8 @@ function Scatter({ study, pts: allPts, front, k, best, budget, sel, onToggle, ba
   const xt = []; for (let v = Math.ceil(x0 / xStep) * xStep; v <= x1; v += xStep) xt.push(v);
   const yt = []; for (let v = Math.ceil(y0 / yStep) * yStep; v <= y1; v += yStep) yt.push(v);
   const severe = isDefault ? study.severeFrom : k.cost;
-  const rec = systemTotal();
+  const rec = mark.cost;
+  const dense = pts.length > 60;
   const lit = (p: Point) => !hl || p.dims[hl.dim] === hl.value;
 
   const vf = front.filter((p) => p.cost <= x1 * L);
@@ -227,8 +266,8 @@ function Scatter({ study, pts: allPts, front, k, best, budget, sel, onToggle, ba
         {/* current app pick, cost only */}
         {rec >= x0 * L && rec <= x1 * L && (
           <g>
-            <line x1={X(rec)} x2={X(rec)} y1={m.t + 22} y2={H - m.b} stroke="var(--g-picture)" strokeDasharray="2 5" opacity={0.7} />
-            <text x={X(rec) + 5} y={H - m.b - 26} fontSize={10.5} fill="var(--g-picture)">current /ht pick</text>
+            <line x1={X(rec)} x2={X(rec)} y1={m.t} y2={H - m.b} stroke={mark.cap ? BAD : "var(--g-picture)"} strokeDasharray={mark.cap ? "6 3" : "2 5"} strokeWidth={mark.cap ? 1.8 : 1} opacity={mark.cap ? 0.9 : 0.7} />
+            <text x={X(rec) + 5} y={mark.cap ? m.t + 30 : H - m.b - 26} fontSize={11} fontWeight={mark.cap ? 600 : 400} fill={mark.cap ? BAD : "var(--g-picture)"}>{mark.label}</text>
           </g>
         )}
 
@@ -237,16 +276,37 @@ function Scatter({ study, pts: allPts, front, k, best, budget, sel, onToggle, ba
           <line key={`u${p.id}`} x1={X(p.cost)} x2={X(p.cost)} y1={Y(p.score + study.uncertainty)} y2={Y(p.score - study.uncertainty)} stroke={p.pareto ? BRASS : MUTED} strokeOpacity={lit(p) ? 0.28 : 0.06} strokeWidth={2} strokeLinecap="round" />
         ))}
 
-        {/* points */}
-        {order.map((p) => {
+        {/* points: in a dense cloud, the dominated ones are drawn as one quiet layer and hovered by proximity */}
+        {dense && (
+          <g pointerEvents="none">
+            {pts.filter((p) => !p.pareto && !sel.includes(p.id)).map((p) => (
+              <circle key={p.id} cx={X(p.cost)} cy={Y(p.score)} r={2.6} fill={lit(p) ? (hl ? "#e8e6df" : "#5d636c") : "#2a2f36"} opacity={lit(p) ? 0.85 : 0.5} />
+            ))}
+          </g>
+        )}
+        {dense && (
+          <rect x={m.l} y={m.t} width={W - m.l - m.r} height={H - m.t - m.b} fill="transparent"
+            onMouseMove={(e) => {
+              const r = (e.currentTarget.ownerSVGElement as SVGSVGElement).getBoundingClientRect();
+              const mx = ((e.clientX - r.left) / r.width) * W, my = ((e.clientY - r.top) / r.height) * H;
+              let best: Point | null = null, bd = 144;
+              for (const p of pts) { const d = (X(p.cost) - mx) ** 2 + (Y(p.score) - my) ** 2; if (d < bd) { bd = d; best = p; } }
+              setHover(best);
+            }}
+            onMouseLeave={() => setHover(null)}
+            onClick={() => { if (hover) onToggle(hover.id); }}
+            style={{ cursor: hover ? "pointer" : "default" }}
+          />
+        )}
+        {(dense ? order.filter((p) => p.pareto || sel.includes(p.id)) : order).map((p) => {
           const si = sel.indexOf(p.id);
           const on = lit(p);
           return (
             <Hit key={p.id} label={`${p.id}: ${lakh(p.cost)}, ${study.scoreName} ${p.score}${p.pareto ? ", on the frontier" : ", dominated"}. ${si >= 0 ? "Selected" : "Select to compare"}`} onClick={() => onToggle(p.id)}>
               <g onMouseEnter={() => setHover(p)} onMouseLeave={() => setHover(null)} onFocus={() => setHover(p)} onBlur={() => setHover(null)} opacity={on ? 1 : 0.18}>
-                <circle cx={X(p.cost)} cy={Y(p.score)} r={14} fill="transparent" />
+                <circle cx={X(p.cost)} cy={Y(p.score)} r={dense && !p.pareto ? 7 : 14} fill="transparent" />
                 {si >= 0 && <circle cx={X(p.cost)} cy={Y(p.score)} r={11.5} fill="none" stroke={SEL[si]} strokeWidth={2.5} />}
-                <circle className="hit-body" cx={X(p.cost)} cy={Y(p.score)} r={p.pareto ? 6 : 5}
+                <circle className="hit-body" cx={X(p.cost)} cy={Y(p.score)} r={p.pareto ? 6 : dense ? 3.5 : 5}
                   fill={p.pareto ? BRASS : "#15181c"} stroke={p.pareto ? "#15181c" : MUTED} strokeWidth={p.pareto ? 2 : 1.6} />
                 {hl && on && <circle cx={X(p.cost)} cy={Y(p.score)} r={8.5} fill="none" stroke="#fff" strokeOpacity={0.7} strokeWidth={1} />}
               </g>
@@ -401,7 +461,7 @@ function Moves({ study, pts }: { study: Study; pts: Point[] }) {
                 <span className="absolute top-0 bottom-0 w-px bg-[rgba(255,255,255,0.25)]" style={{ left: "50%" }} />
                 <span className="absolute top-0 h-full rounded-[4px]" style={{ left: pos ? "50%" : `${50 - w}%`, width: `${Math.max(w, 0.8)}%`, background: pos ? BRASS : BAD, opacity: pos ? 1 : 0.8 }} />
               </div>
-              <div className="t3 text-[11.5px] mt-1 mono">{m.pairs.map((p) => `${p[0]}→${p[1]}`).join(", ")} · +{lakh(m.dCost)} · {m.dScore >= 0 ? "+" : ""}{m.dScore}</div>
+              <div className="t3 text-[11.5px] mt-1 mono">{m.pairs.length > 3 ? `${m.pairs.length} pairs, e.g. ${m.pairs[0][0]}→${m.pairs[0][1]}` : m.pairs.map((p) => `${p[0]}→${p[1]}`).join(", ")} · +{lakh(m.dCost)} · {m.dScore >= 0 ? "+" : ""}{m.dScore}</div>
             </div>
           );
         })}
@@ -436,9 +496,10 @@ function Compare({ study, sel, onRemove, weights }: { study: Study; sel: Point[]
   const total = SUB_KEYS.reduce((a, k) => a + weights[k], 0) || 1;
   const lo = Math.min(50, ...sel.flatMap((p) => SUB_KEYS.map((k) => p.sub[k]))) ;
   const dims = Object.keys(study.dimLabels) as Dim[];
-  const cats = Object.keys(CAT_LABEL) as Cat[];
-  const hasParts = sel.every((p) => p.parts);
-  const catMax = hasParts ? Math.max(...sel.flatMap((p) => cats.map((c) => costByCat(p.parts!)[c]))) : 1;
+  const catLabels = study.catLabels ?? {};
+  const cats = Object.keys(catLabels);
+  const hasParts = !!study.prices && sel.every((p) => p.parts);
+  const catMax = hasParts ? Math.max(...sel.flatMap((p) => cats.map((c) => costByCat(p.parts!, study.prices)[c] ?? 0))) : 1;
 
   return (
     <section className="space-y-4">
@@ -524,10 +585,10 @@ function Compare({ study, sel, onRemove, weights }: { study: Study; sel: Point[]
           <div className="space-y-4">
             {cats.map((c) => (
               <div key={c} className="grid sm:grid-cols-[200px_minmax(0,1fr)] gap-x-4 gap-y-1.5">
-                <div className="text-[13px]">{CAT_LABEL[c]}</div>
+                <div className="text-[13px]">{catLabels[c]}</div>
                 <div className="space-y-1">
                   {sel.map((p, i) => {
-                    const v = costByCat(p.parts!)[c];
+                    const v = costByCat(p.parts!, study.prices)[c] ?? 0;
                     return (
                       <div key={p.id} className="flex items-center gap-2">
                         <span className="h-[10px] rounded-[4px]" style={{ width: `${Math.max((v / catMax) * 80, 0.6)}%`, background: SEL[i] }} />
@@ -557,7 +618,8 @@ function Compare({ study, sel, onRemove, weights }: { study: Study; sel: Point[]
 }
 
 function AllTable({ study, pts, sel, onToggle }: { study: Study; pts: Point[]; sel: string[]; onToggle: (id: string) => void }) {
-  const rows = [...pts].sort((a, b) => a.cost - b.cost);
+  const many = pts.length > 60;
+  const rows = [...pts].filter((p) => !many || p.pareto || sel.includes(p.id)).sort((a, b) => a.cost - b.cost);
   return (
     <div className="scroll-x border-t hair">
       <table className="ht-table min-w-[900px]">

@@ -1,28 +1,33 @@
 "use client";
 
 import React from "react";
-import { CATALOG, recommended, systemTotal, formatINR, byId } from "@/lib/ht/catalog";
-import { SCENARIOS, LOW_RETURN, EVALUATOR_REBALANCE } from "@/lib/ht/system";
+import { recommended, formatINR } from "@/lib/ht/catalog";
+import { useHt } from "./data";
 import { GROUP_LABEL, type Group } from "@/lib/ht/types";
 import { GROUP_COLOR } from "./bits";
 
 export function BudgetView({ onPick }: { onPick: (c: string) => void }) {
-  const total = systemTotal();
+  const { catalog: CATALOG, byId, total, scenarios: SCENARIOS, lowReturn: LOW_RETURN, rebalance: reb, budgetCap, contingency, budgetNote } = useHt();
   const groups = (Object.keys(GROUP_LABEL) as Group[]).map((g) => ({
     g, sum: CATALOG.filter((c) => c.group === g).reduce((a, c) => a + recommended(c).price, 0),
   }));
-  const reb = EVALUATOR_REBALANCE;
-  const net = [...reb.cut, ...reb.add].reduce((a, m) => a + m.delta, 0);
+  const net = reb ? [...reb.cut, ...reb.add].reduce((a, m) => a + m.delta, 0) : 0;
 
   return (
     <div className="space-y-10">
       <div className="card p-5 sm:p-6">
         <div className="flex flex-wrap items-end justify-between gap-3">
           <div>
-            <div className="eyebrow mb-1">Recommended system, AV equipment only</div>
+            <div className="eyebrow mb-1">Recommended system, AV equipment only{budgetCap ? ` · cap ${formatINR(budgetCap)}` : ""}</div>
             <div className="text-[34px] font-semibold num tracking-[-0.02em]">{formatINR(total)}</div>
+            {contingency ? (
+              <div className="t2 text-[13px] mt-1 num">
+                + {formatINR(contingency)} contingency = <span className="font-semibold">{formatINR(total + contingency)}</span>
+                {budgetCap ? <span className="t3"> · {formatINR(budgetCap - total - contingency)} under the cap</span> : null}
+              </div>
+            ) : null}
           </div>
-          <p className="t3 text-[13px] max-w-md">Room construction (isolation, treatment, baffle wall, HVAC, electrical) is separate. Figures marked est. need a live quote.</p>
+          <p className="t3 text-[13px] max-w-md">{budgetNote ?? "Room construction (isolation, treatment, baffle wall, HVAC, electrical) is separate. Figures marked est. need a live quote."}</p>
         </div>
         <div className="bar !h-4 mt-5">
           {groups.map(({ g, sum }) => <span key={g} style={{ width: `${(sum / total) * 100}%`, background: GROUP_COLOR[g] }} title={`${GROUP_LABEL[g]} ${formatINR(sum)}`} />)}
@@ -65,6 +70,7 @@ export function BudgetView({ onPick }: { onPick: (c: string) => void }) {
         })}
       </div>
 
+      {reb && (
       <div className="card p-5 sm:p-6 border-[rgba(239,122,100,0.25)]">
         <div className="eyebrow mb-2" style={{ color: "var(--disagree)" }}>The evaluator&rsquo;s rebalance · same money, better result</div>
         <p className="text-[15px] leading-relaxed max-w-3xl">{reb.note}</p>
@@ -78,6 +84,7 @@ export function BudgetView({ onPick }: { onPick: (c: string) => void }) {
         </div>
         <p className="t3 text-[13px] mt-3">Net change: {formatINR(net, { sign: true })}. The picture improves for every seat, and row 1 loses the wides.</p>
       </div>
+      )}
 
       <div>
         <h3 className="text-[19px] font-semibold mb-1">Where spending more changes little</h3>

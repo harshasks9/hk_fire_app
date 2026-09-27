@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import { byId, recommended, formatINR } from "@/lib/ht/catalog";
+import { recommended, formatINR } from "@/lib/ht/catalog";
+import { useHt } from "./data";
 import { BUY_LABEL, GROUP_LABEL, REVIEW_Q, type Option } from "@/lib/ht/types";
 import { Est, GROUP_COLOR, Seg, TierTag, Verdict } from "./bits";
 
@@ -14,6 +15,7 @@ export function Detail({ id, onClose, compare, onCompare, onOpenCompare }: {
   onCompare: (component: string, optionId: string) => void;
   onOpenCompare: () => void;
 }) {
+  const { byId } = useHt();
   const c = byId(id);
   const rec = recommended(c);
   const [tab, setTab] = useState<Tab>("overview");

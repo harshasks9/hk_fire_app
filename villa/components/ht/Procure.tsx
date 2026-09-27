@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import { formatINR, byId } from "@/lib/ht/catalog";
-import { procurementGroups, IMPORT_RULES, MARKET_PRICES, DO_NOT_IMPORT, OPPORTUNISTIC } from "@/lib/ht/system";
+import { formatINR } from "@/lib/ht/catalog";
+import { useHt } from "./data";
 import { BUY_LABEL, type Buy } from "@/lib/ht/types";
 import { Est, GROUP_COLOR } from "./bits";
 
@@ -11,7 +11,7 @@ const FLAG: Record<Buy, string> = {
 };
 
 export function ProcureView({ onPick }: { onPick: (c: string) => void }) {
-  const groups = procurementGroups();
+  const { procurement: groups, importRules: IMPORT_RULES, marketPrices: MARKET_PRICES, doNotImport: DO_NOT_IMPORT, opportunistic: OPPORTUNISTIC, byId } = useHt();
   const total = groups.reduce((a, g) => a + g.lines.reduce((b, l) => b + l.option.price, 0), 0);
   const india = groups.find((g) => g.buy === "india")!.lines.reduce((b, l) => b + l.option.price, 0);
 

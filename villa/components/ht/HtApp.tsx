@@ -2,8 +2,9 @@
 
 import React, { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
-import { systemTotal, formatINR } from "@/lib/ht/catalog";
-import { H } from "@/lib/ht/geometry";
+import { formatINR } from "@/lib/ht/catalog";
+import { useHt } from "./data";
+import { AssumptionsView } from "./Assumptions";
 import { Detail } from "./Detail";
 import { Overview, RoomTab } from "./Overview";
 import { FlowView } from "./Flow";
@@ -16,6 +17,7 @@ import { Section } from "./bits";
 
 const TABS = [
   { id: "overview", label: "System" },
+  { id: "assumptions", label: "Assumptions tested" },
   { id: "pareto", label: "Pareto options" },
   { id: "room", label: "Room" },
   { id: "flow", label: "Signal flow" },
@@ -26,26 +28,19 @@ const TABS = [
 ] as const;
 type TabId = (typeof TABS)[number]["id"];
 
-const HEAD: Record<Exclude<TabId, "overview">, { eyebrow: string; title: string; sub: string }> = {
-  pareto: { eyebrow: "Pareto options", title: "Every complete system, cost against performance", sub: "Two independent studies of whole-system options. Find the frontier and its knee, set a budget, re-weight what matters to you, see what each single upgrade buys, and compare any three systems side by side." },
-  room: { eyebrow: "Room views", title: "Where everything goes, to the centimetre", sub: `Plan, front and side elevations and a 3D model at the revised ${H.toFixed(2)} m ceiling. Turn layers on and off; click any speaker, sub, the screen or the projector.` },
-  flow: { eyebrow: "Signal flow", title: "Every cable, from source to seat", sub: "HDMI, line level, speaker runs, subwoofer outputs, Ethernet, 12 V triggers and power — with cable types, lengths and where each box lives." },
-  rack: { eyebrow: "AV rack", title: "The 27U rack, unit by unit", sub: "Physical order, vent gaps, power budget, heat and cable management. Click a unit for its product details." },
-  compare: { eyebrow: "Compare", title: "Put two or three options side by side", sub: "Price, output, distortion, directivity, bass, HDR, blacks, room correction, reliability, warranty and import — each as a plain statement of the difference." },
-  budget: { eyebrow: "Budget impact", title: "What more money actually buys", sub: "Where the next ₹2 L, ₹5 L and ₹10 L make the biggest difference — and where spending more changes almost nothing." },
-  buy: { eyebrow: "Procurement", title: "What to buy, and where", sub: "Organised by country, with the saving thresholds for imports and the list of things never to import." },
-};
-
 export function HtApp() {
+  const d = useHt();
+  const tabs = TABS.filter((t) => t.id !== "assumptions" || d.assumptions?.length);
+  const HEAD = d.heads;
   const [tab, setTab] = useState<TabId>("overview");
   const [open, setOpen] = useState<string | null>(null);
-  const [compare, setCompare] = useState<{ component: string; ids: string[] }>({ component: "projector", ids: ["jvc-nz700", "jvc-nz500", "jvc-nz800"] });
+  const [compare, setCompare] = useState<{ component: string; ids: string[] }>(d.compareDefault);
 
   // Keep the tab in the URL hash so a view can be shared or reloaded.
   useEffect(() => {
     const read = () => {
       const h = window.location.hash.replace("#", "") as TabId;
-      if (TABS.some((t) => t.id === h)) setTab(h);
+      if (tabs.some((t) => t.id === h)) setTab(h);
     };
     read();
     window.addEventListener("hashchange", read);
@@ -80,19 +75,19 @@ export function HtApp() {
       <header className="ht-top">
         <div className="mx-auto max-w-[1400px] px-4 sm:px-8">
           <div className="flex items-center justify-between gap-4 pt-3.5">
-            <button className="flex items-center gap-3 min-w-0" onClick={() => go("overview")} aria-label="Home Theater Room — system overview">
+            <button className="flex items-center gap-3 min-w-0" onClick={() => go("overview")} aria-label={`${d.title} — system overview`}>
               <span className="w-8 h-8 rounded-lg flex items-center justify-center shrink-0" style={{ background: "linear-gradient(135deg, #d6b06a, #8a672b)" }} aria-hidden>
                 <svg width="16" height="16" viewBox="0 0 16 16"><rect x="2" y="3" width="12" height="7" rx="1" fill="#16130c" /><rect x="5" y="12" width="6" height="1.6" rx=".8" fill="#16130c" /></svg>
               </span>
               <span className="text-left min-w-0">
-                <span className="block text-[15px] font-semibold tracking-[-0.01em] leading-tight">Home Theater Room</span>
-                <span className="block text-[11.5px] t3 truncate">Villa 14 · 9.4.6 · {formatINR(systemTotal())} est.</span>
+                <span className="block text-[15px] font-semibold tracking-[-0.01em] leading-tight">{d.title}</span>
+                <span className="block text-[11.5px] t3 truncate">{d.tagline} · {formatINR(d.total)} est.</span>
               </span>
             </button>
-            <Link href="/villa/sf-theatre" className="btn btn-ghost btn-sm">Villa app ↗</Link>
+            <Link href={d.backLink.href} className="btn btn-ghost btn-sm">{d.backLink.label}</Link>
           </div>
           <nav className="tabs mt-1.5 -mx-2" role="tablist" aria-label="Views">
-            {TABS.map((t) => (
+            {tabs.map((t) => (
               <button key={t.id} role="tab" aria-selected={tab === t.id} className="tab" onClick={() => go(t.id)}>{t.label}</button>
             ))}
           </nav>
@@ -105,6 +100,7 @@ export function HtApp() {
         ) : (
           <div className="pt-8 sm:pt-10">
             <Section eyebrow={HEAD[tab].eyebrow} title={HEAD[tab].title} sub={HEAD[tab].sub}>
+              {tab === "assumptions" && <AssumptionsView />}
               {tab === "pareto" && <ParetoView />}
               {tab === "room" && <RoomTab onPick={onPick} active={open} />}
               {tab === "flow" && <FlowView onPick={onPick} />}
@@ -116,7 +112,7 @@ export function HtApp() {
           </div>
         )}
         <footer className="mt-16 pt-6 border-t hair t3 text-[12.5px] leading-relaxed max-w-4xl">
-          Prices are landed estimates at ₹96/USD (late September 2026); items marked est. could not be checked against a live listing. Measurements come from Audio Science Review, Erin&rsquo;s Audio Corner, spinorama.org, data-bass, Audioholics, Projector Central, Projector Reviews and Simple Home Cinema, via their published reviews. Room geometry and acoustics are computed from the finished dimensions; confirm on site before ordering.
+          {d.footer}
         </footer>
       </main>
 

@@ -41,8 +41,10 @@ export interface Config {
 
 export interface Callout { id: string; tag: string; dx: number; dy: number; anchor?: "start" | "end" | "middle" }
 
+export interface PriceItem { name: string; price: number; cat: string; est?: boolean; source?: string }
+
 export interface Study {
-  id: "A" | "B";
+  id: string;
   title: string;
   short: string;
   scoreName: string;
@@ -62,6 +64,22 @@ export interface Study {
   describe: Record<string, string>;
   configs: Config[];
   verdict: string;
+  /** Itemised prices for `parts`, and the categories they roll up into. */
+  prices?: Record<string, PriceItem>;
+  catLabels?: Record<string, string>;
+  defaultSel: string[];
+  defaultBudget: number;
+  /** A hard spending cap to draw on the chart. */
+  cap?: number;
+  /** When set, `configs` is sent empty and regenerated in the browser by this named generator. */
+  gen?: string;
+  /** How often each choice wins when the model's constants and prices are perturbed together. */
+  robustness?: {
+    samples: number;
+    note: string;
+    dims: { label: string; rows: { label: string; share: number; pick?: boolean }[] }[];
+    risk: string;
+  };
 }
 
 const L = 1e5;
@@ -116,7 +134,7 @@ const A_NOTES: Record<string, Partial<Config>> = {
 export const STUDY_A: Study = {
   id: "A",
   title: "Study A · 30 configurations",
-  short: "A",
+  short: "From your uploaded report · scored for this room",
   scoreName: "EPI",
   labels: { dialogue: "Dialogue & dynamics", bass: "Bass & six-seat evenness", immersion: "Imaging & immersion", hdr: "HDR & black level", upgrade: "Upgradeability & reliability", synergy: "System synergy" },
   weights: { dialogue: 18, bass: 22, immersion: 18, hdr: 22, upgrade: 8, synergy: 12 },
@@ -155,12 +173,14 @@ export const STUDY_A: Study = {
     ...A_NOTES[id],
   })),
   verdict: "Build C16 (₹34 L) for rational spending, or C19 (₹37.5 L) if picture matters enough for ₹3.5 L more. Past ~₹45 L each lakh buys very little.",
+  defaultSel: ["C05", "C16", "C19"],
+  defaultBudget: 38 * L,
 };
 
 /* ================================================================ Study B */
 
 /** Unit prices in rupees (INR incl. GST). INS and ACT are priced per lakh of allowance. */
-export const B_PRICES: Record<string, { name: string; price: number; cat: "processing" | "speakers" | "subs" | "picture" | "room"; est?: boolean }> = {
+export const B_PRICES: Record<string, PriceItem> = {
   X38: { name: "Denon AVR-X3800H", price: 110000, cat: "processing", est: true },
   X48: { name: "Denon AVR-X4800H", price: 146500, cat: "processing" },
   X68: { name: "Denon AVC-X6800H", price: 239800, cat: "processing" },
@@ -287,20 +307,20 @@ function catSig(parts: Record<string, number>, cat: Cat) {
     .join(" + ");
 }
 
-export function partsCost(parts: Record<string, number>) {
-  return Object.entries(parts).reduce((a, [k, q]) => a + B_PRICES[k].price * q, 0);
+export function partsCost(parts: Record<string, number>, prices: Record<string, PriceItem> = B_PRICES) {
+  return Object.entries(parts).reduce((a, [k, q]) => a + prices[k].price * q, 0);
 }
 
-export function costByCat(parts: Record<string, number>): Record<Cat, number> {
-  const out = { processing: 0, speakers: 0, subs: 0, picture: 0, room: 0 } as Record<Cat, number>;
-  for (const [k, q] of Object.entries(parts)) out[B_PRICES[k].cat] += B_PRICES[k].price * q;
+export function costByCat(parts: Record<string, number>, prices: Record<string, PriceItem> = B_PRICES): Record<string, number> {
+  const out: Record<string, number> = {};
+  for (const [k, q] of Object.entries(parts)) out[prices[k].cat] = (out[prices[k].cat] ?? 0) + prices[k].price * q;
   return out;
 }
 
 export const STUDY_B: Study = {
   id: "B",
   title: "Study B · 27 configurations",
-  short: "B",
+  short: "From the study pasted with it · a different room",
   scoreName: "Score",
   labels: { dialogue: "Dialogue & dynamics", bass: "Bass & seat consistency", immersion: "Imaging & immersion", hdr: "HDR & black level", upgrade: "Upgradeability & reliability", synergy: "System synergy" },
   weights: { dialogue: 20, bass: 20, immersion: 20, hdr: 25, upgrade: 5, synergy: 10 },
@@ -332,6 +352,10 @@ export const STUDY_B: Study = {
     },
   })),
   verdict: "Build C13 (₹28 L) if the ₹4.3 L A1H price holds in writing; C18 (₹37.5 L) is its 90% point. Never accept a DLP or 3LCD projector in a black room when an NZ500 costs within ₹1 L.",
+  prices: B_PRICES,
+  catLabels: CAT_LABEL,
+  defaultSel: ["C10", "C13", "C18"],
+  defaultBudget: 30 * L,
 };
 
 export const STUDIES = [STUDY_A, STUDY_B];
@@ -393,15 +417,23 @@ export interface Move {
  */
 export function moves(pts: Point[], dims: Dim[]): Move[] {
   const map = new Map<string, { dim: Dim; from: string; to: string; pairs: [string, string][]; dc: number[]; ds: number[] }>();
-  for (const a of pts) for (const b of pts) {
-    if (a === b || b.cost <= a.cost) continue;
-    const diff = dims.filter((d) => (a.dims[d] ?? "") !== (b.dims[d] ?? ""));
-    if (diff.length !== 1) continue;
-    const d = diff[0];
-    const key = `${d}|${a.dims[d]}|${b.dims[d]}`;
-    const m = map.get(key) ?? { dim: d, from: a.dims[d] ?? "", to: b.dims[d] ?? "", pairs: [], dc: [], ds: [] };
-    m.pairs.push([a.id, b.id]); m.dc.push(b.cost - a.cost); m.ds.push(b.score - a.score);
-    map.set(key, m);
+  // Group systems that are identical except in one dimension; every pair in a group is a single swap.
+  for (const d of dims) {
+    const groups = new Map<string, Point[]>();
+    for (const p of pts) {
+      const key = dims.filter((x) => x !== d).map((x) => p.dims[x] ?? "").join("|");
+      const g = groups.get(key);
+      if (g) g.push(p); else groups.set(key, [p]);
+    }
+    for (const g of groups.values()) {
+      for (const a of g) for (const b of g) {
+        if (a === b || b.cost <= a.cost || (a.dims[d] ?? "") === (b.dims[d] ?? "")) continue;
+        const key = `${d}|${a.dims[d]}|${b.dims[d]}`;
+        const m = map.get(key) ?? { dim: d, from: a.dims[d] ?? "", to: b.dims[d] ?? "", pairs: [], dc: [], ds: [] };
+        m.pairs.push([a.id, b.id]); m.dc.push(b.cost - a.cost); m.ds.push(b.score - a.score);
+        map.set(key, m);
+      }
+    }
   }
   return [...map.values()].map((m) => {
     const dCost = m.dc.reduce((x, y) => x + y, 0) / m.dc.length;

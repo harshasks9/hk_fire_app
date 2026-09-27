@@ -1,7 +1,8 @@
 "use client";
 
 import React from "react";
-import { CATALOG, byId, recommended, formatINR } from "@/lib/ht/catalog";
+import { recommended, formatINR } from "@/lib/ht/catalog";
+import { useHt } from "./data";
 import { ATTR_LABEL, BUY_LABEL, GROUP_LABEL, type Attr, type Group, type Option } from "@/lib/ht/types";
 import { Est, GROUP_COLOR, TierTag } from "./bits";
 
@@ -26,6 +27,7 @@ export function CompareView({ state, setState, onPick }: {
   setState: (s: { component: string; ids: string[] }) => void;
   onPick: (c: string) => void;
 }) {
+  const { catalog: CATALOG, byId } = useHt();
   const c = byId(state.component);
   const rec = recommended(c);
   const chosen = state.ids.map((id) => c.options.find((o) => o.id === id)).filter(Boolean) as typeof c.options;

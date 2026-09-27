@@ -90,6 +90,9 @@ export interface Marker {
   x: number; y: number; z: number;
   /** Which wall it sits on, for elevations. */
   on?: "front" | "left" | "right" | "rear" | "ceiling" | "floor" | "riser";
+  /** Cabinet extent for front speakers drawn in elevation (m). */
+  bottom?: number;
+  top?: number;
 }
 
 const TOP_Y = [1.1, 3.36];

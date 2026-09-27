@@ -56,7 +56,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
   const canAdd = !pathname.startsWith("/manage");
 
   // The Home Theater Room is its own full-screen tool, with its own dark frame.
-  if (pathname === "/ht" || pathname.startsWith("/ht/")) return <>{children}</>;
+  if (/^\/ht2?(\/|$)/.test(pathname)) return <>{children}</>;
 
   return (
     <div className="min-h-dvh flex flex-col lg:flex-row">

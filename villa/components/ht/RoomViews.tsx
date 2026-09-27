@@ -2,10 +2,11 @@
 
 import React, { useMemo, useRef, useState } from "react";
 import {
-  ROOM, H, STAGE, SCREEN, RISER, ROWS, DOOR, PROJECTOR, MARKERS, SUB_SIZE, SEATED,
+  ROOM, H, STAGE, SCREEN, RISER, ROWS, DOOR, PROJECTOR, SUB_SIZE, SEATED,
   sightline, elevation, projectorStudy, type Marker,
 } from "@/lib/ht/geometry";
 import { Hit } from "./bits";
+import { useHt } from "./data";
 
 export type Layer = "speakers" | "atmos" | "subs" | "treatment" | "hvac" | "dims" | "sight";
 export type Layers = Record<Layer, boolean>;
@@ -121,6 +122,7 @@ function Speaker({ cx, cy, m, active, onPick, r = 11 }: { cx: number; cy: number
 /* ================================================================== plan */
 
 export function PlanView({ layers, active, onPick, closet = true }: ViewProps & { closet?: boolean }) {
+  const { markers: MARKERS, acoustics, rackUnits } = useHt();
   const S = 100;
   const pad = { l: 56, t: 78, r: 40, b: closet ? 170 : 70 };
   const W = ROOM.W, L = ROOM.L;
@@ -147,7 +149,19 @@ export function PlanView({ layers, active, onPick, closet = true }: ViewProps & 
       <text x={X((DOOR.x0 + DOOR.x1) / 2)} y={Y(0) + wall + 0.55 * S} textAnchor="middle" fontSize={10.5} fill="var(--text-3)">Door opens out</text>
 
       {/* treatment */}
-      {layers.treatment && (
+      {layers.treatment && acoustics && (
+        <g>
+          <rect x={X(0)} y={Y(W)} width={0.12 * S} height={W * S} fill="url(#h-absorb)" />
+          <polygon points={`${X(0)},${Y(W)} ${X(0.6)},${Y(W)} ${X(0)},${Y(W - 0.6)}`} fill="url(#h-trap)" stroke={T.trap} strokeOpacity={0.6} />
+          <polygon points={`${X(0)},${Y(0)} ${X(0.6)},${Y(0)} ${X(0)},${Y(0.6)}`} fill="url(#h-trap)" stroke={T.trap} strokeOpacity={0.6} />
+          <rect x={X(1.6)} y={Y(W)} width={(L - 0.4 - 1.6) * S} height={0.1 * S} fill="url(#h-absorb)" />
+          <rect x={X(1.6)} y={Y(0.1)} width={(DOOR.x0 - 1.6) * S} height={0.1 * S} fill="url(#h-absorb)" />
+          <rect x={X(DOOR.x1 + 0.1)} y={Y(0.1)} width={(L - 0.4 - DOOR.x1 - 0.1) * S} height={0.1 * S} fill="url(#h-absorb)" />
+          <rect x={X(L - 0.15)} y={Y(W)} width={0.15 * S} height={W * S} fill="url(#h-absorb)" />
+          <text x={X(L - 0.2)} y={Y(W / 2)} textAnchor="middle" fontSize={10} fill={T.absorb} transform={`rotate(-90 ${X(L - 0.2)} ${Y(W / 2)})`} dy={-6}>100–150 mm wool</text>
+        </g>
+      )}
+      {layers.treatment && !acoustics && (
         <g>
           <rect x={X(0)} y={Y(W)} width={0.12 * S} height={W * S} fill="url(#h-absorb)" />
           <polygon points={`${X(0)},${Y(W)} ${X(0.5)},${Y(W)} ${X(0)},${Y(W - 0.5)}`} fill="url(#h-trap)" stroke={T.trap} strokeOpacity={0.6} />
@@ -247,7 +261,7 @@ export function PlanView({ layers, active, onPick, closet = true }: ViewProps & 
           {Array.from({ length: 6 }).map((_, i) => (
             <rect key={i} x={X(4.35) + 16} y={Y(0) + wall + 44 + i * 12} width={1.4 * S - 32} height={8} rx={2} fill="var(--g-infrastructure)" opacity={0.18 + (i % 3) * 0.12} />
           ))}
-          <text x={X(5.05)} y={Y(0) + wall + 34 + 0.95 * S + 16} textAnchor="middle" fontSize={11} fill="var(--g-infrastructure)" fontWeight={600}>AV closet · 27U rack</text>
+          <text x={X(5.05)} y={Y(0) + wall + 34 + 0.95 * S + 16} textAnchor="middle" fontSize={11} fill="var(--g-infrastructure)" fontWeight={600}>AV closet · {rackUnits}U rack</text>
         </Hit>
       )}
       {closet && (
@@ -277,6 +291,7 @@ export function PlanView({ layers, active, onPick, closet = true }: ViewProps & 
 /* ======================================================== front elevation */
 
 export function FrontView({ layers, active, onPick }: ViewProps) {
+  const { markers: MARKERS } = useHt();
   const S = 120;
   const pad = { l: 84, t: 36, r: 90, b: 40 };
   const W = ROOM.W;
@@ -307,11 +322,11 @@ export function FrontView({ layers, active, onPick }: ViewProps) {
       {/* LCR and subs behind the screen */}
       {layers.speakers && lcr.map((m) => (
         <Hit key={m.id} label={`${m.label} speaker — open details`} onClick={() => onPick("lcr")}>
-          <rect className="hit-body" x={X(m.y) - 0.1375 * S} y={Z(1.4)} width={0.275 * S} height={0.635 * S} rx={4} fill="#2a2415" stroke={T.spk} strokeDasharray={is("lcr") ? undefined : "4 3"} strokeWidth={is("lcr") ? 2 : 1} />
-          <circle cx={X(m.y)} cy={Z(1.32)} r={5} fill={T.spk} />
-          <circle cx={X(m.y)} cy={Z(1.1)} r={10} fill="none" stroke={T.spk} opacity={0.6} />
-          <circle cx={X(m.y)} cy={Z(0.9)} r={10} fill="none" stroke={T.spk} opacity={0.6} />
-          <text x={X(m.y)} y={Z(1.4) - 6} textAnchor="middle" fontSize={10} fill={T.spk} fontWeight={700}>{m.label}</text>
+          <rect className="hit-body" x={X(m.y) - 0.1375 * S} y={Z(m.top ?? 1.4)} width={0.275 * S} height={((m.top ?? 1.4) - (m.bottom ?? 0.765)) * S} rx={4} fill="#2a2415" stroke={T.spk} strokeDasharray={is("lcr") ? undefined : "4 3"} strokeWidth={is("lcr") ? 2 : 1} />
+          <circle cx={X(m.y)} cy={Z(m.z)} r={5} fill={T.spk} />
+          <circle cx={X(m.y)} cy={Z(m.z - 0.22)} r={10} fill="none" stroke={T.spk} opacity={0.6} />
+          <circle cx={X(m.y)} cy={Z(m.z - 0.42)} r={10} fill="none" stroke={T.spk} opacity={0.6} />
+          <text x={X(m.y)} y={Z(m.top ?? 1.4) - 6} textAnchor="middle" fontSize={10} fill={T.spk} fontWeight={700}>{m.label}</text>
         </Hit>
       ))}
       {layers.subs && MARKERS.filter((m) => m.role === "sub" && m.x < 1).map((m) => (
@@ -337,7 +352,7 @@ export function FrontView({ layers, active, onPick }: ViewProps) {
       {layers.atmos && [MARKERS.find((m) => m.id === "Ltf")!, MARKERS.find((m) => m.id === "Rtf")!].map((m) => (
         <Hit key={m.id} label="Atmos overheads — open details" onClick={() => onPick("atmos")}>
           <rect className="hit-body" x={X(m.y) - 18} y={Z(H)} width={36} height={7} rx={2} fill={T.top} />
-          <text x={X(m.y)} y={Z(H) - 8} textAnchor="middle" fontSize={10} fill={T.top}>3 overheads</text>
+          <text x={X(m.y)} y={Z(H) - 8} textAnchor="middle" fontSize={10} fill={T.top}>{MARKERS.filter((t) => t.role === "top" && t.label.startsWith(m.label[0])).length} overheads</text>
         </Hit>
       ))}
 
@@ -355,8 +370,8 @@ export function FrontView({ layers, active, onPick }: ViewProps) {
           <Dim x1={X(W) + 36} y1={Z(0)} x2={X(W) + 36} y2={Z(SCREEN.bottom)} label={SCREEN.bottom.toFixed(2)} vertical />
           <Dim x1={X(W) + 36} y1={Z(SCREEN.bottom)} x2={X(W) + 36} y2={Z(SCREEN.top)} label={SCREEN.height.toFixed(2)} vertical />
           <Dim x1={X(W) + 36} y1={Z(SCREEN.top)} x2={X(W) + 36} y2={Z(H)} label={`${Math.round((H - SCREEN.top) * 1000)} mm`} vertical />
-          <Dim x1={X(0) - 36} y1={Z(0)} x2={X(0) - 36} y2={Z(1.32)} label="" vertical />
-          <text x={X(0) - 44} y={Z(0.66)} fontSize={11} fill="var(--text-2)" textAnchor="middle" transform={`rotate(-90 ${X(0) - 44} ${Z(0.66)})`} className="svg-mono">tweeters 1.32</text>
+          <Dim x1={X(0) - 36} y1={Z(0)} x2={X(0) - 36} y2={Z(lcr[0].z)} label="" vertical />
+          <text x={X(0) - 44} y={Z(lcr[0].z / 2)} fontSize={11} fill="var(--text-2)" textAnchor="middle" transform={`rotate(-90 ${X(0) - 44} ${Z(lcr[0].z / 2)})`} className="svg-mono">tweeters {lcr[0].z.toFixed(2)}</text>
           <Dim x1={X(SCREEN.left)} y1={Z(SCREEN.bottom) + 16} x2={X(SCREEN.right)} y2={Z(SCREEN.bottom) + 16} label={`${SCREEN.width.toFixed(2)} m`} off={24} />
         </g>
       )}
@@ -369,6 +384,8 @@ export function FrontView({ layers, active, onPick }: ViewProps) {
 /* ========================================================= side elevation */
 
 export function SideView({ layers, active, onPick }: ViewProps) {
+  const { markers: MARKERS, acoustics } = useHt();
+  const lcrM = MARKERS.find((m) => m.role === "lcr")!;
   const S = 100;
   const pad = { l: 40, t: 70, r: 70, b: 56 };
   const L = ROOM.L;
@@ -401,7 +418,17 @@ export function SideView({ layers, active, onPick }: ViewProps) {
       <rect x={X(0)} y={Z(H)} width={L * S} height={H * S} fill="var(--room-floor)" />
 
       {/* treatment on the left wall */}
-      {layers.treatment && (
+      {layers.treatment && acoustics && (
+        <g>
+          <rect x={X(0)} y={Z(H)} width={0.12 * S} height={H * S} fill="url(#h-absorb)" />
+          <rect x={X(0)} y={Z(H)} width={0.5 * S} height={H * S} fill="url(#h-trap)" opacity={0.5} />
+          <rect x={X(1.6)} y={Z(1.9)} width={(DOOR.x0 - 1.6) * S} height={1.0 * S} fill="url(#h-absorb)" rx={3} />
+          <rect x={X(DOOR.x1 + 0.1)} y={Z(2.2)} width={(L - 0.25 - DOOR.x1 - 0.1) * S} height={1.0 * S} fill="url(#h-absorb)" rx={3} />
+          <rect x={X(L) - 0.15 * S} y={Z(2.2)} width={0.15 * S} height={1.6 * S} fill="url(#h-absorb)" />
+          <text x={X(2.8)} y={Z(1.9) + 14} textAnchor="middle" fontSize={10} fill={T.absorb}>50 mm on a 50 mm gap</text>
+        </g>
+      )}
+      {layers.treatment && !acoustics && (
         <g>
           <rect x={X(0)} y={Z(H)} width={0.12 * S} height={H * S} fill="url(#h-absorb)" />
           <rect x={X(0.6)} y={Z(2.2)} width={3.6 * S} height={1.6 * S} fill="url(#h-absorb)" rx={3} />
@@ -464,8 +491,8 @@ export function SideView({ layers, active, onPick }: ViewProps) {
       {/* LCR + front subs */}
       {layers.speakers && (
         <Hit label="L/C/R — open details" onClick={() => onPick("lcr")}>
-          <rect className="hit-body" x={X(0.1)} y={Z(1.4)} width={0.4 * S} height={0.635 * S} rx={4} fill="#2a2415" stroke={T.spk} strokeWidth={is("lcr") ? 2 : 1} />
-          <text x={X(0.3)} y={Z(1.4) - 6} textAnchor="middle" fontSize={10} fill={T.spk} fontWeight={700}>LCR</text>
+          <rect className="hit-body" x={X(0.1)} y={Z(lcrM.top ?? 1.4)} width={0.4 * S} height={((lcrM.top ?? 1.4) - (lcrM.bottom ?? 0.765)) * S} rx={4} fill="#2a2415" stroke={T.spk} strokeWidth={is("lcr") ? 2 : 1} />
+          <text x={X(0.3)} y={Z(lcrM.top ?? 1.4) - 6} textAnchor="middle" fontSize={10} fill={T.spk} fontWeight={700}>LCR</text>
         </Hit>
       )}
       {layers.subs && (
@@ -564,6 +591,7 @@ function shade(hex: string, k: number) {
 }
 
 export function View3D({ layers, active, onPick }: ViewProps) {
+  const { markers: MARKERS } = useHt();
   const [yaw, setYaw] = useState(0.62);
   const [pitch, setPitch] = useState(0.52);
   const drag = useRef<{ x: number; y: number; yaw: number; pitch: number } | null>(null);
@@ -596,7 +624,7 @@ export function View3D({ layers, active, onPick }: ViewProps) {
       f.push(...box(m.x - SUB_SIZE.d / 2, m.y - SUB_SIZE.w / 2, m.z, m.x + SUB_SIZE.d / 2, m.y + SUB_SIZE.w / 2, m.z + SUB_SIZE.h, "#5a3322", { component: "subs", label: m.label, stroke: T.sub }));
     }
     return f;
-  }, [layers.speakers, layers.atmos, layers.subs, L, W]);
+  }, [layers.speakers, layers.atmos, layers.subs, L, W, MARKERS]);
 
   const S = 78;
   const cx = 360, cy = 250;

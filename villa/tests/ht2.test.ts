@@ -1,0 +1,135 @@
+import { describe, expect, it } from "vitest";
+import { recommended } from "@/lib/ht/catalog";
+import { evaluate, frontier } from "@/lib/ht/pareto";
+import { ROOM, SCREEN } from "@/lib/ht/geometry";
+import { allBuilt, allConfigs, bassAtSeats, costOf, idOf, row2Level, CAP, RECOMMENDED_ID, SUBS, WEIGHTS } from "@/lib/ht2/model";
+import { P, FIXED } from "@/lib/ht2/prices";
+import { CATALOG2 } from "@/lib/ht2/catalog";
+import { MARKERS2, RACK2, RACK2_U, AUDIO2, VIDEO2, SCENARIOS2, LOW_RETURN2, CHAINS2 } from "@/lib/ht2/system";
+import { ASSUMPTIONS } from "@/lib/ht2/assumptions";
+import { ROBUST, recRisk } from "@/lib/ht2/robust";
+import { HT2_DATA, STUDY2 } from "@/lib/ht2/data";
+
+const ids = new Set(CATALOG2.map((c) => c.id));
+const catalogTotal = CATALOG2.reduce((a, c) => a + recommended(c).price, 0);
+const rec = allBuilt().find((b) => idOf(b) === RECOMMENDED_ID)!;
+
+describe("/ht2 budget", () => {
+  it("keeps the recommended system, with its ₹1 L contingency, strictly under ₹30 L", () => {
+    expect(costOf(rec.parts)).toBeLessThan(CAP);
+    expect(FIXED.CTG).toBe(1);
+    expect(P.CTG.price).toBe(100000);
+  });
+
+  it("prices the catalog's recommended parts to the same rupee as the model, contingency aside", () => {
+    expect(catalogTotal + P.CTG.price).toBe(costOf(rec.parts));
+    expect(HT2_DATA.contingency).toBe(P.CTG.price);
+  });
+
+  it("stays under the cap even at the NZ500's full list price", () => {
+    expect(costOf(rec.parts) - P.NZ5.price + 649000).toBeLessThan(CAP);
+  });
+
+  it("has a price for every part the model uses", () => {
+    for (const b of allBuilt()) for (const k of Object.keys(b.parts)) expect(P[k], k).toBeDefined();
+  });
+});
+
+describe("/ht2 model", () => {
+  const study = STUDY2;
+  const pts = evaluate(study, WEIGHTS);
+  const front = frontier(pts);
+
+  it("enumerates every combination once", () => {
+    const configs = allConfigs();
+    expect(new Set(configs.map((c) => c.id)).size).toBe(configs.length);
+    expect(configs.length).toBe(4 * 6 * 9 * 4 * 4);
+  });
+
+  it("puts the recommendation on the frontier", () => {
+    expect(front.map((p) => p.id)).toContain(RECOMMENDED_ID);
+  });
+
+  it("recommends the system that wins most often when constants and prices are perturbed", () => {
+    expect(ROBUST.wins[0].id).toBe(RECOMMENDED_ID);
+    expect(recRisk.breaks).toBeLessThan(5);
+  });
+
+  it("reaches reference −8 dB or better in row 2 with the KEF fronts, and more with the Klipsch", () => {
+    expect(row2Level(rec)).toBeGreaterThan(96);
+    const klipsch = allBuilt().find((b) => idOf(b) === RECOMMENDED_ID.replace("S3", "S4"))!;
+    expect(row2Level(klipsch)).toBeGreaterThan(row2Level(rec) + 3);
+  });
+
+  it("meets the bass need at 20, 25 and 31.5 Hz with the mixed sealed-rear array", () => {
+    const b8 = SUBS.find((s) => s.id === "B8")!;
+    const need = [115, 118, 118];
+    bassAtSeats(b8).forEach((lvl, i) => expect(lvl).toBeGreaterThanOrEqual(need[i]));
+  });
+
+  it("names callouts and a knee that exist", () => {
+    for (const c of study.callouts) expect(pts.find((p) => p.id === c.id), c.id).toBeDefined();
+    expect(pts.find((p) => p.id === study.knee)).toBeDefined();
+  });
+});
+
+describe("/ht2 room and rack", () => {
+  it("places every marker on a catalog component, inside the room", () => {
+    for (const m of MARKERS2) {
+      expect(ids.has(m.component), m.id).toBe(true);
+      expect(m.x).toBeGreaterThanOrEqual(0);
+      expect(m.x).toBeLessThanOrEqual(ROOM.L);
+      expect(m.y).toBeGreaterThanOrEqual(0);
+      expect(m.y).toBeLessThanOrEqual(ROOM.W);
+    }
+  });
+
+  it("keeps the front subs clear of the L and R stands", () => {
+    const lr = MARKERS2.filter((m) => m.id === "L" || m.id === "R");
+    const subs = MARKERS2.filter((m) => m.role === "sub" && m.x < 1);
+    for (const s of subs) for (const m of lr) expect(Math.abs(s.y - m.y), `${s.id}/${m.id}`).toBeGreaterThan(0.36);
+  });
+
+  it("keeps L and R within the picture's width", () => {
+    const [l, r] = ["L", "R"].map((id) => MARKERS2.find((m) => m.id === id)!);
+    expect(l.y).toBeGreaterThan(SCREEN.left - 0.2);
+    expect(r.y).toBeLessThan(SCREEN.right + 0.2);
+  });
+
+  it("fills the rack with no overlaps", () => {
+    const used = new Set<number>();
+    for (const r of RACK2) for (let u = r.u; u < r.u + r.h; u++) {
+      expect(used.has(u), `U${u}`).toBe(false);
+      used.add(u);
+    }
+    expect(Math.max(...used)).toBeLessThanOrEqual(RACK2_U);
+    expect(used.size).toBe(RACK2_U);
+    for (const r of RACK2) if (r.component) expect(ids.has(r.component), r.label).toBe(true);
+  });
+
+  it("wires flows between real nodes and real components", () => {
+    for (const f of [AUDIO2, VIDEO2]) {
+      const nodes = new Set(f.nodes.map((n) => n.id));
+      for (const e of f.edges) { expect(nodes.has(e.from), e.from).toBe(true); expect(nodes.has(e.to), e.to).toBe(true); }
+      for (const n of f.nodes) if (n.component) expect(ids.has(n.component), n.id).toBe(true);
+    }
+  });
+
+  it("points every scenario, low-return row and chain step at a component", () => {
+    for (const s of SCENARIOS2) for (const m of s.moves) expect(ids.has(m.component), m.to).toBe(true);
+    for (const r of LOW_RETURN2) expect(ids.has(r.component), r.move).toBe(true);
+    for (const c of CHAINS2) for (const [id] of c.steps) expect(ids.has(id), id).toBe(true);
+  });
+
+  it("has unique assumption ids", () => {
+    expect(new Set(ASSUMPTIONS.map((a) => a.id)).size).toBe(ASSUMPTIONS.length);
+  });
+});
+
+describe("/ht2 page weight", () => {
+  it("sends the generated systems as a recipe, not as data", () => {
+    const size = JSON.stringify(HT2_DATA).length;
+    expect(HT2_DATA.studies[0].configs).toHaveLength(0);
+    expect(size).toBeLessThan(250_000);
+  });
+});

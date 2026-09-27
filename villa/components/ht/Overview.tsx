@@ -1,10 +1,11 @@
 "use client";
 
 import React, { useState } from "react";
-import { CATALOG, recommended, systemTotal, formatINR } from "@/lib/ht/catalog";
+import { recommended, formatINR } from "@/lib/ht/catalog";
+import { useHt } from "./data";
 import { GROUP_LABEL, type Group } from "@/lib/ht/types";
 import {
-  ROOM, H, SCREEN, ROWS, MARKERS, PROJECTOR, ceilingImpact, viewingAngle, screenDistance,
+  ROOM, H, SCREEN, ROWS, PROJECTOR, viewingAngle, screenDistance,
   throwDistance, throwRatio, lensShift, sightline, elevation, nits, panelArea, absorptionNeeded, axialModes, schroeder, volume,
 } from "@/lib/ht/geometry";
 import { GROUP_COLOR, Section, Seg, Toggles, Verdict } from "./bits";
@@ -15,25 +16,22 @@ type Go = (tab: string) => void;
 /* ============================================================== overview */
 
 export function Overview({ onPick, go, active }: { onPick: (c: string) => void; go: Go; active: string | null }) {
-  const total = systemTotal();
+  const { catalog: CATALOG, total, hero, impact, chains, rebalance } = useHt();
   const pushback = CATALOG.filter((c) => c.review.verdict !== "agree").sort((a, b) => (a.review.verdict === "disagree" ? -1 : 0) - (b.review.verdict === "disagree" ? -1 : 0));
   const groups = Object.keys(GROUP_LABEL) as Group[];
-  const impact = ceilingImpact();
 
   return (
     <div>
       {/* hero */}
       <section className="pt-8 sm:pt-12 pb-10">
-        <div className="eyebrow mb-3">Villa 14 · second floor · south-west corner · Hyderabad</div>
+        <div className="eyebrow mb-3">{hero.eyebrow}</div>
         <h1 className="text-[34px] sm:text-[52px] leading-[1.02] font-semibold tracking-[-0.03em] max-w-4xl">
-          A 9.4.6 private cinema on a 120-inch screen, <span className="brass">tuned for six seats</span>, not one.
+          {hero.lead}<span className="brass">{hero.accent}</span>{hero.tail}
         </h1>
-        <p className="t2 text-[16px] sm:text-[17px] leading-relaxed mt-5 max-w-3xl">
-          Arendal THX fronts behind an acoustically transparent screen. Four sealed 18-inch subwoofers placed to cancel the room&rsquo;s bass modes. A JVC native-4K laser projector on the rear wall. A Denon A1H with Dirac Live Bass Control and ART. Everything below is recalculated for the finished ceiling at <strong className="text-[var(--text)]">{H.toFixed(2)} m</strong>, 8 inches lower than planned.
-        </p>
+        <p className="t2 text-[16px] sm:text-[17px] leading-relaxed mt-5 max-w-3xl">{hero.body}</p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-8">
           <Kpi k="AV equipment" v={formatINR(total)} sub="Recommended system, est." />
-          <Kpi k="Channels" v="9.4.6" sub="7.4.6 on the evaluator's leaner build" />
+          {hero.kpis.map((x) => <Kpi key={x.k} {...x} />)}
           <Kpi k="Screen" v={`120″ · ${viewingAngle(screenDistance(0))}°`} sub={`Row 1 · ${viewingAngle(screenDistance(1))}° from row 2`} />
           <Kpi k="Ceiling" v={`${H.toFixed(2)} m`} sub="−203 mm from 2.75 m" accent />
         </div>
@@ -42,11 +40,11 @@ export function Overview({ onPick, go, active }: { onPick: (c: string) => void; 
       {/* system map */}
       <Section eyebrow="The whole system" title="Where everything goes" sub="Every speaker, sub, the screen, the projector and the rack. Click anything to open its details, alternatives and the evaluator's review."
         right={<button className="btn" onClick={() => go("room")}>Open the room views →</button>}>
-        <div className="grid xl:grid-cols-[minmax(0,1.45fr)_minmax(0,1fr)] gap-4">
+        <div className="grid grid-cols-1 xl:grid-cols-[minmax(0,1.45fr)_minmax(0,1fr)] gap-4">
           <div className="card p-3 sm:p-5">
             <div className="scroll-x"><div className="min-w-[620px]"><PlanView layers={{ ...ALL_LAYERS, treatment: false, dims: false }} active={active} onPick={onPick} /></div></div>
             <Legend />
-            <Chains onPick={onPick} />
+            <Chains chains={chains} onPick={onPick} />
           </div>
           <div className="card p-2 sm:p-3">
             {groups.map((g) => (
@@ -79,8 +77,8 @@ export function Overview({ onPick, go, active }: { onPick: (c: string) => void; 
 
       {/* evaluator */}
       <Section eyebrow="AV Evaluator" title="Where the independent evaluator pushes back"
-        sub="A second opinion on every recommendation. It agrees on the fundamentals — four subs, JVC, Dirac, Hypex — and challenges these."
-        right={<button className="btn" onClick={() => go("budget")}>See the evaluator&rsquo;s rebalance →</button>}>
+        sub="A second opinion on every recommendation: where it agrees, and where it qualifies or challenges the choice."
+        right={<button className="btn" onClick={() => go("budget")}>{rebalance ? <>See the evaluator&rsquo;s rebalance →</> : "See the budget →"}</button>}>
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-3">
           {pushback.map((c) => (
             <button key={c.id} onClick={() => onPick(c.id)} className="card p-5 text-left lift flex flex-col">
@@ -123,7 +121,7 @@ export function Overview({ onPick, go, active }: { onPick: (c: string) => void; 
           {[
             { t: "room", h: "Room views", p: "Plan, front and side elevations and a 3D model, with speaker angles, sightlines, treatment zones and HVAC." },
             { t: "flow", h: "Signal flow", p: "Every HDMI path, speaker run, sub output, network link, trigger and power feed, with cable types and lengths." },
-            { t: "rack", h: "AV rack", p: "The 27U rack unit by unit: vent gaps, power budget, heat load and cable management." },
+            { t: "rack", h: "AV rack", p: "The rack unit by unit: vent gaps, power budget, heat load and cable management." },
             { t: "compare", h: "Compare", p: "Put two or three options side by side: price, output, directivity, blacks, warranty, import — and what you'd notice." },
             { t: "budget", h: "Budget impact", p: "What +₹2 L, +₹5 L and +₹10 L buy, and where more money changes nothing." },
             { t: "buy", h: "Procurement", p: "What to buy in India, what to import from where, the saving thresholds, and what never to import." },
@@ -149,13 +147,7 @@ function Kpi({ k, v, sub, accent }: { k: string; v: string; sub: string; accent?
   );
 }
 
-const CHAINS: { t: string; steps: [string, string][] }[] = [
-  { t: "Sound", steps: [["streamer", "Apple TV · UB820"], ["avr", "Denon A1H + Dirac"], ["amps", "Buckeye · NX6000D"], ["lcr", "9 speakers · 6 overheads · 4 subs"]] },
-  { t: "Picture", steps: [["streamer", "Apple TV · UB820"], ["avr", "Denon A1H"], ["projector", "JVC NZ700"], ["screen", "120″ Seymour XD"]] },
-  { t: "Power", steps: [["ups", "Dedicated circuits"], ["ups", "3 kVA online UPS"], ["ups", "Sequenced PDU"], ["rack", "27U rack, closet"]] },
-];
-
-function Chains({ onPick }: { onPick: (c: string) => void }) {
+function Chains({ chains: CHAINS, onPick }: { chains: { t: string; steps: [string, string][] }[]; onPick: (c: string) => void }) {
   return (
     <div className="mt-5 pt-4 border-t hair space-y-2.5">
       {CHAINS.map((c) => (
@@ -197,6 +189,7 @@ function Legend() {
 type ViewId = "plan" | "front" | "side" | "3d";
 
 export function RoomTab({ onPick, active }: { onPick: (c: string) => void; active: string | null }) {
+  const { markers: MARKERS, acoustics } = useHt();
   const [view, setView] = useState<ViewId>("plan");
   const [layers, setLayers] = useState<Layers>(ALL_LAYERS);
   const toggle = (l: Layer) => setLayers((s) => ({ ...s, [l]: !s[l] }));
@@ -204,7 +197,7 @@ export function RoomTab({ onPick, active }: { onPick: (c: string) => void; activ
   const tops = MARKERS.filter((m) => m.role === "top" && m.label.startsWith("L"));
 
   return (
-    <div className="grid xl:grid-cols-[minmax(0,1fr)_380px] gap-5">
+    <div className="grid grid-cols-1 xl:grid-cols-[minmax(0,1fr)_380px] gap-5">
       <div className="min-w-0">
         <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
           <Seg label="View" value={view} onChange={setView} options={[
@@ -222,12 +215,12 @@ export function RoomTab({ onPick, active }: { onPick: (c: string) => void; activ
         </div>
         {layers.treatment && (
           <div className="flex flex-wrap gap-x-5 gap-y-2 mt-3 px-1">
-            {[
+            {(acoustics?.legend ?? [
               ["#4fa79c", "Absorption: front wall 100–150 mm, first reflections 50–100 mm, ceiling clouds"],
               ["#a898f2", "Hybrid: slotted oak over absorption, rear half"],
               ["#d6b06a", "Diffusion: above 1.9 m on the rear wall and rear side walls"],
               ["#e5825a", "Bass traps: front corners, rear ceiling corner"],
-            ].map(([c, l]) => <span key={l} className="flex items-center gap-2 text-[12px] t2"><span className="w-3 h-3 rounded-sm" style={{ background: c, opacity: 0.8 }} />{l}</span>)}
+            ]).map(([c, l]) => <span key={l} className="flex items-center gap-2 text-[12px] t2"><span className="w-3 h-3 rounded-sm" style={{ background: c, opacity: 0.8 }} />{l}</span>)}
           </div>
         )}
       </div>
@@ -248,7 +241,7 @@ export function RoomTab({ onPick, active }: { onPick: (c: string) => void; activ
             <dt>Row 2 sightline</dt><dd>{Math.round(sl.clearance * 1000)} mm over upright row-1 heads</dd>
             <dt>Throw</dt><dd>{throwDistance()} m · ratio {throwRatio()} (1.34–2.14)</dd>
             <dt>Lens</dt><dd>{PROJECTOR.lensZ.toFixed(2)} m · {Math.round(lensShift() * 100)}% shift (max 70%)</dd>
-            <dt>HDR on screen</dt><dd>~{nits(1450)} nits NZ700 · ~{nits(1700)} NZ800 (est.)</dd>
+            <dt>HDR on screen</dt><dd>~{nits(1400)}–{nits(1700)} nits from a JVC at this throw (est.)</dd>
           </dl>
         </div>
         <div className="card p-5">
@@ -269,12 +262,12 @@ export function RoomTab({ onPick, active }: { onPick: (c: string) => void; activ
               })}
             </tbody>
           </table>
-          <p className="t3 text-[12.5px] leading-relaxed mt-3">Dolby asks for 30–55° for front and rear tops and 65–100° overhead. Row 1 gets textbook angles. Row 2 hears the rear pair almost straight overhead at 1.0 m, so it&rsquo;s level-trimmed in calibration.</p>
+          <p className="t3 text-[12.5px] leading-relaxed mt-3">Dolby asks for 30–55° for top-front and top-rear speakers and 65–100° for top-middle. With the lower ceiling, row 2 sits only about 1.0 m below the overheads, so levels are trimmed from row-2 measurements in calibration.</p>
         </div>
         <div className="card p-5">
           <div className="eyebrow mb-3">Acoustics</div>
           <dl className="kv">
-            <dt>Target RT60</dt><dd>0.25–0.35 s, 500 Hz–2 kHz</dd>
+            <dt>Target RT60</dt><dd>{acoustics?.target ?? "0.25–0.35 s, 500 Hz–2 kHz"}</dd>
             <dt>Absorption needed</dt><dd>{absorptionNeeded()} m² sabins</dd>
             <dt>Broadband panel</dt><dd>~{panelArea()} m² at α≈0.9</dd>
             <dt>Length modes</dt><dd>{axialModes(ROOM.L).join(", ")} Hz</dd>
