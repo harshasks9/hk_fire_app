@@ -11,10 +11,12 @@ import { RackView } from "./Rack";
 import { CompareView } from "./Compare";
 import { BudgetView } from "./Budget";
 import { ProcureView } from "./Procure";
+import { ParetoView } from "./Pareto";
 import { Section } from "./bits";
 
 const TABS = [
   { id: "overview", label: "System" },
+  { id: "pareto", label: "Pareto options" },
   { id: "room", label: "Room" },
   { id: "flow", label: "Signal flow" },
   { id: "rack", label: "Rack" },
@@ -25,6 +27,7 @@ const TABS = [
 type TabId = (typeof TABS)[number]["id"];
 
 const HEAD: Record<Exclude<TabId, "overview">, { eyebrow: string; title: string; sub: string }> = {
+  pareto: { eyebrow: "Pareto options", title: "Every complete system, cost against performance", sub: "Two independent studies of whole-system options. Find the frontier and its knee, set a budget, re-weight what matters to you, see what each single upgrade buys, and compare any three systems side by side." },
   room: { eyebrow: "Room views", title: "Where everything goes, to the centimetre", sub: `Plan, front and side elevations and a 3D model at the revised ${H.toFixed(2)} m ceiling. Turn layers on and off; click any speaker, sub, the screen or the projector.` },
   flow: { eyebrow: "Signal flow", title: "Every cable, from source to seat", sub: "HDMI, line level, speaker runs, subwoofer outputs, Ethernet, 12 V triggers and power — with cable types, lengths and where each box lives." },
   rack: { eyebrow: "AV rack", title: "The 27U rack, unit by unit", sub: "Physical order, vent gaps, power budget, heat and cable management. Click a unit for its product details." },
@@ -102,6 +105,7 @@ export function HtApp() {
         ) : (
           <div className="pt-8 sm:pt-10">
             <Section eyebrow={HEAD[tab].eyebrow} title={HEAD[tab].title} sub={HEAD[tab].sub}>
+              {tab === "pareto" && <ParetoView />}
               {tab === "room" && <RoomTab onPick={onPick} active={open} />}
               {tab === "flow" && <FlowView onPick={onPick} />}
               {tab === "rack" && <RackView onPick={onPick} />}
