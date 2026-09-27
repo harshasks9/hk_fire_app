@@ -106,16 +106,16 @@ const designs: RoomDesign[] = [
       { edge: "right", at: 1300, why: THEATRE_WALL },
     ],
     // At floor level in the cross-aisle, just in front of the riser — not beside it, where you would step
-    // straight onto a 0.40 m platform in the dark.
+    // straight onto a 0.45 m platform in the dark.
     assumedOpenings: [{ kind: "door", edge: "bottom", from: 3250, to: 4150, swingIn: false }],
     layouts: [
       L("sf-theatre", "A", {
         name: "The 7.2.4 layout from the theatre sheet",
-        idea: "A 120-inch acoustically transparent screen on the south wall, three recliners at floor level and three more on a 0.40 m riser — transcribed from the provisional theatre drawing.",
+        idea: "A 120-inch acoustically transparent screen on the south wall, three recliners at floor level and three more on a 0.45 m riser (raised 50 mm when the ceiling came down 8 inches).",
         recommended: true,
         pieces: [
           zone(120, 120, 480, 4119, "Stage: L/C/R and two subs"),
-          zone(4157, 120, 1860, 4119, "Riser +0.40 m, filled with mineral wool"),
+          zone(4157, 120, 1860, 4119, "Riser +0.45 m, filled with mineral wool"),
           { kind: "screen", x: 520, y: 645, w: 80, d: 2660, label: "120-inch AT screen, 2.66 m wide" },
           { kind: "recliner", x: 2850, y: 500, w: 1000, d: 950, back: "right", label: "Recliner 950 × 1000" },
           { kind: "recliner", x: 2850, y: 1500, w: 1000, d: 950, back: "right", label: "Recliner 950 × 1000" },

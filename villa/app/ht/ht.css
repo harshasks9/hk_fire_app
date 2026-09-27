@@ -1,0 +1,202 @@
+/* Home Theater Room — a dark, theatre-lit tool that sits outside the villa app's shell. */
+
+.ht {
+  --bg: #0a0b0d;
+  --bg-2: #0f1114;
+  --card: #14171b;
+  --card-2: #1a1e23;
+  --card-3: #21262d;
+  --line: rgba(255, 255, 255, 0.075);
+  --line-2: rgba(255, 255, 255, 0.14);
+  --text: #eceae4;
+  --text-2: #b4b7bc;
+  --text-3: #80858d;
+  --brass: #d6b06a;
+  --brass-2: #f0cf8e;
+  --brass-soft: rgba(214, 176, 106, 0.13);
+
+  --g-speakers: #d6b06a;
+  --g-bass: #e5825a;
+  --g-picture: #67bde0;
+  --g-electronics: #a898f2;
+  --g-infrastructure: #7fc49a;
+
+  --agree: #7fc49a;
+  --qualified: #e6b85a;
+  --disagree: #ef7a64;
+
+  --room-floor: #111418;
+  --room-wall: #2b313a;
+  --room-line: #3b434e;
+  --seat: #262c34;
+  --seat-line: #3a424d;
+
+  min-height: 100dvh;
+  background:
+    radial-gradient(1200px 600px at 70% -200px, rgba(214, 176, 106, 0.07), transparent 60%),
+    radial-gradient(900px 500px at -10% 10%, rgba(103, 189, 224, 0.05), transparent 60%),
+    var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.ht ::selection { background: rgba(214, 176, 106, 0.35); }
+.ht :focus-visible { outline: 2px solid var(--brass); outline-offset: 2px; border-radius: 6px; }
+
+.ht .mono { font-family: var(--font-mono); letter-spacing: 0; }
+.ht .eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+.ht .t2 { color: var(--text-2); }
+.ht .t3 { color: var(--text-3); }
+.ht .brass { color: var(--brass); }
+.ht .num { font-variant-numeric: lining-nums tabular-nums; }
+
+/* ------------------------------------------------------------- surfaces */
+
+.ht .card {
+  background: linear-gradient(180deg, var(--card-2), var(--card));
+  border: 1px solid var(--line);
+  border-radius: 16px;
+}
+.ht .card-flat { background: var(--card); border: 1px solid var(--line); border-radius: 14px; }
+.ht .well { background: var(--bg-2); border: 1px solid var(--line); border-radius: 12px; }
+.ht .hair { border-color: var(--line); }
+
+.ht .lift { transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease; }
+.ht .lift:hover { border-color: var(--line-2); transform: translateY(-1px); }
+
+/* --------------------------------------------------------------- header */
+
+.ht .ht-top {
+  position: sticky; top: 0; z-index: 40;
+  background: rgba(10, 11, 13, 0.82);
+  backdrop-filter: saturate(140%) blur(14px);
+  -webkit-backdrop-filter: saturate(140%) blur(14px);
+  border-bottom: 1px solid var(--line);
+}
+.ht .tabs { display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; }
+.ht .tabs::-webkit-scrollbar { display: none; }
+.ht .tab {
+  position: relative;
+  flex: none;
+  padding: 14px 14px 13px;
+  font-size: 14px; font-weight: 500;
+  color: var(--text-3);
+  transition: color 0.15s;
+}
+.ht .tab:hover { color: var(--text); }
+.ht .tab[aria-selected="true"] { color: var(--text); }
+.ht .tab[aria-selected="true"]::after {
+  content: ""; position: absolute; left: 12px; right: 12px; bottom: -1px; height: 2px;
+  background: var(--brass); border-radius: 2px;
+}
+
+/* -------------------------------------------------------------- controls */
+
+.ht .btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  height: 36px; padding: 0 14px;
+  border-radius: 10px;
+  border: 1px solid var(--line-2);
+  background: var(--card-2);
+  color: var(--text);
+  font-size: 13.5px; font-weight: 500;
+  transition: background 0.15s, border-color 0.15s;
+  white-space: nowrap;
+}
+.ht .btn:hover { background: var(--card-3); }
+.ht .btn-brass { background: var(--brass); border-color: var(--brass); color: #16130c; }
+.ht .btn-brass:hover { background: var(--brass-2); }
+.ht .btn-ghost { background: transparent; border-color: transparent; color: var(--text-2); }
+.ht .btn-ghost:hover { background: var(--card-2); color: var(--text); }
+.ht .btn-sm { height: 30px; padding: 0 10px; font-size: 12.5px; border-radius: 8px; }
+
+.ht .seg { display: inline-flex; padding: 3px; gap: 2px; background: var(--bg-2); border: 1px solid var(--line); border-radius: 12px; }
+.ht .seg button { height: 32px; padding: 0 12px; border-radius: 9px; font-size: 13px; color: var(--text-3); font-weight: 500; white-space: nowrap; }
+.ht .seg button:hover { color: var(--text); }
+.ht .seg button[aria-pressed="true"] { background: var(--card-3); color: var(--text); box-shadow: 0 1px 0 rgba(255,255,255,0.05) inset; }
+
+.ht .chip {
+  display: inline-flex; align-items: center; gap: 6px;
+  height: 24px; padding: 0 9px;
+  border-radius: 999px;
+  font-size: 11.5px; font-weight: 500;
+  border: 1px solid var(--line-2);
+  color: var(--text-2);
+  white-space: nowrap;
+}
+.ht .toggle {
+  display: inline-flex; align-items: center; gap: 7px;
+  height: 30px; padding: 0 11px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  font-size: 12.5px; color: var(--text-3);
+  transition: all 0.15s;
+}
+.ht .toggle .dot { width: 8px; height: 8px; border-radius: 99px; background: currentColor; opacity: 0.35; }
+.ht .toggle[aria-pressed="true"] { color: var(--text); border-color: var(--line-2); background: var(--card-2); }
+.ht .toggle[aria-pressed="true"] .dot { opacity: 1; }
+
+.ht .verdict { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; letter-spacing: 0.01em; }
+.ht .verdict::before { content: ""; width: 7px; height: 7px; border-radius: 99px; background: currentColor; }
+.ht .v-agree { color: var(--agree); }
+.ht .v-qualified { color: var(--qualified); }
+.ht .v-disagree { color: var(--disagree); }
+
+.ht .tier { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase; padding: 3px 7px; border-radius: 6px; border: 1px solid; }
+.ht .tier-recommended { color: var(--brass); border-color: rgba(214,176,106,0.45); background: var(--brass-soft); }
+.ht .tier-alternative { color: var(--text-2); border-color: var(--line-2); }
+.ht .tier-step-up { color: var(--g-picture); border-color: rgba(103,189,224,0.4); background: rgba(103,189,224,0.08); }
+.ht .tier-reference { color: var(--g-electronics); border-color: rgba(168,152,242,0.4); background: rgba(168,152,242,0.08); }
+.ht .tier-avoid { color: var(--disagree); border-color: rgba(239,122,100,0.4); background: rgba(239,122,100,0.07); }
+
+/* ---------------------------------------------------------------- drawer */
+
+.ht-scrim { position: fixed; inset: 0; z-index: 60; background: rgba(0,0,0,0.55); backdrop-filter: blur(2px); animation: ht-fade 0.18s ease; }
+.ht-drawer {
+  position: fixed; z-index: 61; top: 0; right: 0; bottom: 0;
+  width: min(620px, 100vw);
+  background: #0e1013;
+  border-left: 1px solid var(--line-2);
+  box-shadow: -30px 0 80px rgba(0,0,0,0.5);
+  display: flex; flex-direction: column;
+  animation: ht-slide 0.24s cubic-bezier(.2,.8,.2,1);
+}
+@keyframes ht-slide { from { transform: translateX(24px); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes ht-fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes ht-rise { from { transform: translateY(6px); opacity: 0; } to { transform: none; opacity: 1; } }
+.ht .rise { animation: ht-rise 0.3s ease both; }
+
+/* ------------------------------------------------------------------- svg */
+
+.ht svg text { font-family: var(--font-sans); }
+.ht .svg-mono { font-family: var(--font-mono) !important; }
+.ht .hit { cursor: pointer; }
+.ht .hit:focus { outline: none; }
+.ht .hit:focus-visible .hit-ring, .ht .hit:hover .hit-ring { opacity: 1; }
+.ht .hit-ring { opacity: 0; transition: opacity 0.15s; }
+.ht .hit:hover .hit-body { filter: brightness(1.25); }
+
+.ht .kv { display: grid; grid-template-columns: minmax(120px, 0.9fr) minmax(0, 1.6fr); gap: 4px 14px; }
+.ht .kv > dt { color: var(--text-3); font-size: 13px; }
+.ht .kv > dd { color: var(--text); font-size: 13.5px; }
+
+.ht .ht-table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+.ht .ht-table th { text-align: left; font-weight: 500; color: var(--text-3); font-size: 12px; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+.ht .ht-table td { padding: 11px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.ht .ht-table tr:last-child td { border-bottom: 0; }
+
+.ht .scroll-x { overflow-x: auto; scrollbar-width: thin; }
+
+.ht .bar { height: 10px; border-radius: 99px; background: var(--bg-2); overflow: hidden; display: flex; }
+.ht .bar > span { display: block; height: 100%; }
+
+@media (prefers-reduced-motion: reduce) {
+  .ht *, .ht-drawer, .ht-scrim { animation: none !important; transition: none !important; }
+}

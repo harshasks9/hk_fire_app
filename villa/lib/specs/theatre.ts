@@ -30,7 +30,8 @@ export const THEATRE_SPEC: RoomSpec = {
     { k: "Sound kept in", v: "At least 50 dB lower in the home office than in the theatre, measured with pink noise" },
     { k: "Background noise", v: "NC 25 or lower (about 30 dB(A)) at the seats, with the AC running on its normal setting" },
     { k: "Climate in the room", v: "22–25 °C, relative humidity 45–55%, all year, including the monsoon" },
-    { k: "Screen", v: "120\" 16:9 acoustically transparent, 2.66 m wide, bottom edge at +0.95 m" },
+    { k: "Finished ceiling", v: "About 2.55 m — 8 in (203 mm) lower than first drawn. Nothing may hang over the riser walkway" },
+    { k: "Screen", v: "120\" 16:9 acoustically transparent, 2.66 m wide, bottom edge at +0.90 m, top at 2.39 m" },
     { k: "AV earth", v: "Dedicated earth; resistance of 1 Ω or less as measured; neutral-to-earth under 2 V at the rack" },
     { k: "Power to AV", v: "Online double-conversion UPS with a surge protection device upstream; no AV directly on raw mains" },
   ],
@@ -157,7 +158,7 @@ export const THEATRE_SPEC: RoomSpec = {
           avoid: "MR-grade plywood, plain MDF, particle board.",
         },
         {
-          id: "riser", title: "Riser: 0.40 m, damped and decoupled", critical: true, when: "before-ceiling",
+          id: "riser", title: "Riser: 0.45 m, damped and decoupled", critical: true, when: "before-ceiling",
           spec: "A treated-timber or GI frame on rubber pads, the cavity filled with mineral wool, and a deck of two layers of 18 mm BWP with staggered joints. It must carry at least 300 kg per recliner position. Nosings are lit and the edges carpeted.",
           verify: "Walk on it before carpeting: there should be no drumming or creaking. Check the step height and nosing contrast for safe use in the dark.",
           avoid: "A single 12 mm deck over an empty frame, which drums with every footstep and every bass note.",

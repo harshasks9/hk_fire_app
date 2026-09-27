@@ -55,6 +55,9 @@ export function Shell({ children }: { children: React.ReactNode }) {
   const handover = new Date(state.meta.targetHandover).toLocaleDateString("en-IN", { month: "short", year: "numeric" });
   const canAdd = !pathname.startsWith("/manage");
 
+  // The Home Theater Room is its own full-screen tool, with its own dark frame.
+  if (pathname === "/ht" || pathname.startsWith("/ht/")) return <>{children}</>;
+
   return (
     <div className="min-h-dvh flex flex-col lg:flex-row">
       <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:z-[70] focus:top-3 focus:left-3 btn btn-primary">Skip to content</a>

@@ -32,6 +32,7 @@ export const NAV: NavGroup[] = [
       { href: "/villa", label: "Rooms", icon: "villa", blurb: "Every room, floor by floor, with its plan and scope.", vendor: true },
       { href: "/design", label: "Design", icon: "design", blurb: "Layouts, moodboards, options and client feedback." },
       { href: "/villa/drawings", label: "Drawings", icon: "drawings", blurb: "The architect's issued plans and elevation.", vendor: true },
+      { href: "/ht", label: "Home theater", icon: "layout", blurb: "The theatre's room, system, rack, alternatives and where to buy." },
     ],
   },
   {
