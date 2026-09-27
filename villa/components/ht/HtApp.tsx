@@ -5,6 +5,7 @@ import Link from "next/link";
 import { formatINR } from "@/lib/ht/catalog";
 import { useHt } from "./data";
 import { AssumptionsView } from "./Assumptions";
+import { AddonsView } from "./Addons";
 import { Detail } from "./Detail";
 import { Overview, RoomTab } from "./Overview";
 import { FlowView } from "./Flow";
@@ -19,6 +20,7 @@ const TABS = [
   { id: "overview", label: "System" },
   { id: "assumptions", label: "Assumptions tested" },
   { id: "pareto", label: "Pareto options" },
+  { id: "addons", label: "Add-ons" },
   { id: "room", label: "Room" },
   { id: "flow", label: "Signal flow" },
   { id: "rack", label: "Rack" },
@@ -30,7 +32,7 @@ type TabId = (typeof TABS)[number]["id"];
 
 export function HtApp() {
   const d = useHt();
-  const tabs = TABS.filter((t) => t.id !== "assumptions" || d.assumptions?.length);
+  const tabs = TABS.filter((t) => (t.id !== "assumptions" || d.assumptions?.length) && (t.id !== "addons" || d.addons));
   const HEAD = d.heads;
   const [tab, setTab] = useState<TabId>("overview");
   const [open, setOpen] = useState<string | null>(null);
@@ -102,6 +104,7 @@ export function HtApp() {
             <Section eyebrow={HEAD[tab].eyebrow} title={HEAD[tab].title} sub={HEAD[tab].sub}>
               {tab === "assumptions" && <AssumptionsView />}
               {tab === "pareto" && <ParetoView />}
+              {tab === "addons" && <AddonsView onPick={onPick} />}
               {tab === "room" && <RoomTab onPick={onPick} active={open} />}
               {tab === "flow" && <FlowView onPick={onPick} />}
               {tab === "rack" && <RackView onPick={onPick} />}

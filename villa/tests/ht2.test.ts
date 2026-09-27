@@ -133,3 +133,39 @@ describe("/ht2 page weight", () => {
     expect(size).toBeLessThan(250_000);
   });
 });
+
+describe("/ht2 add-ons", async () => {
+  const { ADDONS, basket, singles, ladder } = await import("@/lib/ht2/addons");
+
+  it("starts from the recommended system at the same cost and score", () => {
+    const b = basket([]);
+    expect(b.cost).toBe(costOf(rec.parts));
+    expect(b.score).toBeCloseTo(b.base.score, 1);
+  });
+
+  it("points every add-on at a catalog component, with unique ids", () => {
+    expect(new Set(ADDONS.map((a) => a.id)).size).toBe(ADDONS.length);
+    for (const a of ADDONS) expect(ids.has(a.component), a.id).toBe(true);
+  });
+
+  it("prices each add-on as the difference it makes to the whole system", () => {
+    const base = basket([]).cost;
+    for (const s of singles()) expect(s.cost, s.id).toBe(basket([s.id]).cost - base);
+  });
+
+  it("scores the external amp through the model: more row-2 headroom, better dialogue", () => {
+    const amp = singles().find((s) => s.id === "amp")!;
+    expect(amp.dSub.dialogue).toBeGreaterThan(1);
+    expect(amp.cost).toBe(P.BA3.price);
+  });
+
+  it("never combines two add-ons that replace the same part", () => {
+    const steps = ladder().steps.map((s) => s.id);
+    expect(steps.filter((id) => id === "rearSB2" || id === "pb4").length).toBeLessThanOrEqual(1);
+  });
+
+  it("finds a best-first set that fits the headroom with the contingency intact", () => {
+    const fit = ladder().steps.filter((s) => s.cost < CAP);
+    expect(fit.length).toBeGreaterThan(0);
+  });
+});

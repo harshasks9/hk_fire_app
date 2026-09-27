@@ -49,6 +49,8 @@ export interface HtDataset {
   opportunistic: Partial<Record<string, string>>;
   studies: Study[];
   heads: Record<string, HeadCopy>;
+  /** Show the add-ons planner (small upgrades to the recommended room). */
+  addons?: boolean;
   /** Extra tabs, e.g. the assumptions audit on /ht2. */
   assumptions?: Assumption[];
   budgetCap?: number;

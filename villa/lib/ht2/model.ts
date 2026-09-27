@@ -154,6 +154,9 @@ export type Knobs = Record<string, number>;
 export const row2Level = (b: Built, k: Knobs = {}) =>
   b.spk.sens + (k[`sens:${b.spk.id}`] ?? 0) + 10 * log10(b.lcrAmp ? EXT_AMP_WATTS : b.proc.watts) - LOSS.row2 - AT_LOSS;
 
+/** Peak level of the L/C/R at row 1, dB. */
+export const row1Level = (b: Built, k: Knobs = {}) => row2Level(b, k) + LOSS.row2 - LOSS.row1;
+
 /**
  * Array output at the seats per frequency: pressure sum of the subs, plus
  * room gain, less what joint optimisation gives up — front and rear pairs
