@@ -20,7 +20,7 @@ const TABS = [
   { id: "overview", label: "System" },
   { id: "assumptions", label: "Assumptions tested" },
   { id: "pareto", label: "Pareto options" },
-  { id: "addons", label: "Add-ons" },
+  { id: "addons", label: "Room build & add-ons" },
   { id: "room", label: "Room" },
   { id: "flow", label: "Signal flow" },
   { id: "rack", label: "Rack" },

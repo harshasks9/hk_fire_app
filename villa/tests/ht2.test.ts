@@ -169,3 +169,24 @@ describe("/ht2 add-ons", async () => {
     expect(fit.length).toBeGreaterThan(0);
   });
 });
+
+describe("/ht2 room build", async () => {
+  const { SURFACES, SEQUENCE } = await import("@/lib/ht2/build");
+
+  it("numbers each surface once and describes it fully", () => {
+    expect(new Set(SURFACES.map((s) => s.id)).size).toBe(SURFACES.length);
+    expect(SURFACES.map((s) => s.n).sort((a, b) => a - b)).toEqual(SURFACES.map((_, i) => i + 1));
+    for (const s of SURFACES) {
+      expect(s.acoustics.length, s.id).toBeGreaterThan(0);
+      expect(s.layers.length, s.id).toBeGreaterThan(0);
+      expect(s.verify.length, s.id).toBeGreaterThan(0);
+      expect(s.cost.hi, s.id).toBeGreaterThanOrEqual(s.cost.lo);
+      for (const l of s.layers) expect(l.mm, l.name).toBeGreaterThanOrEqual(0);
+    }
+  });
+
+  it("puts every build step on a real surface", () => {
+    const ids = new Set(SURFACES.map((s) => s.id));
+    for (const st of SEQUENCE) for (const it of st.items) expect(ids.has(it.surface), it.t).toBe(true);
+  });
+});

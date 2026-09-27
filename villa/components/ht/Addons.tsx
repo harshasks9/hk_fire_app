@@ -4,7 +4,8 @@ import React, { useMemo, useState } from "react";
 import type { Subs } from "@/lib/ht/pareto";
 import { ADDONS, AREA_LABEL, TIMING_LABEL, basket, singles, ladder, CAP, CONTINGENCY, type AddOn, type Area } from "@/lib/ht2/addons";
 import { build, row1Level, row2Level, PICTURE, SPEAKERS, SUBS, PROCESSING, TREATMENT, RECOMMENDED } from "@/lib/ht2/model";
-import { Hit } from "./bits";
+import { Hit, Seg } from "./bits";
+import { RoomBuild } from "./RoomBuild";
 
 const L = 1e5;
 /** Area colours: the three-slot categorical set, validated all-pairs against the dark card surface. */
@@ -20,6 +21,18 @@ const byId = (id: string) => ADDONS.find((a) => a.id === id)!;
 const SUB_LABEL: Record<keyof Subs, string> = { dialogue: "Dialogue", bass: "Bass", immersion: "Immersion", hdr: "Picture", synergy: "Synergy", upgrade: "Upgrade" };
 
 export function AddonsView({ onPick }: { onPick: (c: string) => void }) {
+  const [view, setView] = useState<"build" | "addons">("build");
+  return (
+    <div className="space-y-6">
+      <Seg label="View" value={view} onChange={setView} options={[
+        { id: "build", label: "Room build, surface by surface" }, { id: "addons", label: "Add-ons planner" },
+      ]} />
+      {view === "build" ? <RoomBuild onPick={onPick} /> : <Planner onPick={onPick} />}
+    </div>
+  );
+}
+
+function Planner({ onPick }: { onPick: (c: string) => void }) {
   const single = useMemo(singles, []);
   const lad = useMemo(() => ladder(), []);
   const [sel, setSel] = useState<string[]>([]);
