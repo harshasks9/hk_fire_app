@@ -33,6 +33,10 @@ export interface Config {
   dims: Partial<Record<Dim, string>>;
   /** Itemised components, Study B only: code → quantity. */
   parts?: Record<string, number>;
+  /** A reference system from outside the study (e.g. one seen in a video): drawn and scored, never part of the frontier. */
+  ref?: string;
+  /** Where to put a reference point's short label on the chart, if anywhere. */
+  refTag?: { text: string; dx: number; dy: number; anchor: "start" | "end" };
   tier?: string;
   rationale?: string;
   tradeoffs?: string;
@@ -71,6 +75,15 @@ export interface Study {
   defaultBudget: number;
   /** A hard spending cap to draw on the chart. */
   cap?: number;
+  /** A reference system scored part by part: each part swapped into the recommendation, and the whole thing. */
+  reference?: {
+    title: string;
+    note: string;
+    base: { cost: number; score: number };
+    rows: { id: string; part: string; replaces: string; cost: number; dCost: number; score: number; dScore: number; dSub: Subs; note: string }[];
+    unpriced: { part: string; why: string }[];
+    prices: { name: string; price: number; source?: string; est?: boolean }[];
+  };
   /** When set, `configs` is sent empty and regenerated in the browser by this named generator. */
   gen?: string;
   /** How often each choice wins when the model's constants and prices are perturbed together. */
@@ -372,8 +385,10 @@ export interface Point extends Config { score: number; pareto: boolean }
 export function evaluate(study: Study, w: Weights): Point[] {
   const pts = study.configs.map((c) => ({ ...c, score: score(c.sub, w), pareto: false }));
   // Strictly dominated: another option costs no more and scores at least as much, better on one.
+  // Reference systems are scored and shown, but they neither join the frontier nor push study systems off it.
+  const study_ = pts.filter((q) => !q.ref);
   for (const p of pts) {
-    p.pareto = !pts.some((q) => q !== p && q.cost <= p.cost && q.score >= p.score && (q.cost < p.cost || q.score > p.score));
+    p.pareto = !p.ref && !study_.some((q) => q !== p && q.cost <= p.cost && q.score >= p.score && (q.cost < p.cost || q.score > p.score));
   }
   return pts;
 }
@@ -390,7 +405,7 @@ export function knee(front: Point[]) {
 }
 
 export function bestUnder(pts: Point[], budget: number) {
-  return pts.filter((p) => p.cost <= budget).sort((a, b) => b.score - a.score || a.cost - b.cost)[0];
+  return pts.filter((p) => !p.ref && p.cost <= budget).sort((a, b) => b.score - a.score || a.cost - b.cost)[0];
 }
 
 /** Points gained per ₹1 lakh for each step along the frontier. */
@@ -421,6 +436,7 @@ export function moves(pts: Point[], dims: Dim[]): Move[] {
   for (const d of dims) {
     const groups = new Map<string, Point[]>();
     for (const p of pts) {
+      if (p.ref) continue;
       const key = dims.filter((x) => x !== d).map((x) => p.dims[x] ?? "").join("|");
       const g = groups.get(key);
       if (g) g.push(p); else groups.set(key, [p]);

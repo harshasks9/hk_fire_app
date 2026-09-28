@@ -10,6 +10,7 @@ import {
   MARKET2, DO_NOT_IMPORT2, OPPORTUNISTIC2, CHAINS2,
 } from "./system";
 import { ASSUMPTIONS } from "./assumptions";
+import { referenceConfigs, referenceTable, PRICED } from "./reference";
 
 const L = 1e5;
 const lakh = (v: number) => `₹${(v / L).toFixed(2)} L`;
@@ -28,11 +29,24 @@ const menu: Record<string, { id: string; label: string; short: string }[]> = { p
 const pick: Record<string, string> = { picture: RECOMMENDED_ID.slice(0, 2), speakers: RECOMMENDED_ID.slice(2, 4), subs: RECOMMENDED_ID.slice(4, 6), processing: RECOMMENDED_ID.slice(6, 8), extras: RECOMMENDED_ID.slice(8, 10) };
 const dimTitle: Record<string, string> = { picture: "Projector", speakers: "Speakers", subs: "Subwoofers", processing: "Processing", extras: "Acoustic treatment" };
 
+const REF = referenceTable();
+const refVideo = REF.rows[0];
+
 export const STUDY2 = makeStudy(configs, {
+  configs: [...configs, ...referenceConfigs()],
   knee: RECOMMENDED_ID,
+  reference: {
+    title: "The theatre from the video, scored part by part",
+    note: `Each of its parts swapped into the recommended system on its own, then the whole system — all scored by the same room model, in this room, at Indian dealer prices. Its 200″ screen can't fit the 4.13 m wall, so the whole-system score keeps the 120″ screen. As built here it lands at ${lakh(refVideo.cost)} and ${refVideo.score.toFixed(1)}, against ${lakh(REF.base.cost)} and ${REF.base.score.toFixed(1)} for the recommendation.`,
+    base: { cost: REF.base.cost, score: REF.base.score },
+    rows: REF.rows,
+    unpriced: REF.unpriced,
+    prices: PRICED.map((p) => ({ name: p.name, price: p.price, source: p.source, est: p.est })),
+  },
   callouts: [
+    { id: "REF-VIDEO", tag: "Video theatre (reference)", dx: 12, dy: 18, anchor: "start" },
     { id: RECOMMENDED_ID, tag: "Recommended", dx: -14, dy: -20, anchor: "end" },
-    { id: valueKnee.id, tag: "Value knee", dx: 12, dy: 24, anchor: "start" },
+    { id: valueKnee.id, tag: "Value knee", dx: -12, dy: 20, anchor: "end" },
     ...(edge.id !== RECOMMENDED_ID ? [{ id: edge.id, tag: "Best at the cap (no margin)", dx: 12, dy: -14, anchor: "start" as const }] : []),
     { id: nz700.id, tag: "Same with NZ700 (over the cap)", dx: 12, dy: 24, anchor: "start" },
   ],

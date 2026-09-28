@@ -41,6 +41,15 @@ export const P: Record<string, PriceItem> = {
   PB2P: { name: "SVS PB-2000 Pro", price: 218500, cat: "subs", source: "AVStore list; dealers discount" },
   SB2P: { name: "SVS SB-2000 Pro (sealed)", price: 189500, cat: "subs", source: "AVStore" },
 
+  /* the reference theatre from the video (not in the study's menus) */
+  XW50: { name: "Sony VPL-XW5000ES", price: 430000, cat: "picture", source: "AV Shack ₹4.30 L (backordered); ₹4.85–5.5 L VPLAK" },
+  TH3: { name: "Focal Theva N°3 (pair)", price: 290000, cat: "speakers", source: "VPLAK ₹2.90 L a pair" },
+  F100: { name: "Focal 100 ICW6 in-wall / in-ceiling (each)", price: 41000, cat: "speakers", source: "Focal Naim India ₹41,000" },
+  AV77: { name: "Marantz AV7706 pre-processor", price: 282000, cat: "processing", est: true, source: "₹2.55–3.53 L across dealers (IndiaMART, TradeIndia, Ooberpad); discontinued, succeeded by the AV10" },
+  MM87: { name: "Marantz MM8077 7-channel amp", price: 219000, cat: "processing", source: "ProHiFi ₹2.19 L (₹2.10–3.25 L across dealers)" },
+  MM75: { name: "Marantz MM7055 5-channel amp", price: 119800, cat: "processing", source: "VPLAK ₹1.20 L (MRP ₹1.57 L)" },
+  CRS: { name: "Crestron theatre control (processor, keypad, programming)", price: 300000, cat: "room", est: true, source: "₹1.5–5 L for one theatre room (installer guides)" },
+
   /* room, sources and infrastructure — the same in every system */
   ATV: { name: "Apple TV 4K 128 GB", price: 31900, cat: "room", source: "Apple India" },
   UB8: { name: "Panasonic DP-UB820", price: 98000, cat: "room", source: "AVStore" },

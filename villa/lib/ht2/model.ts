@@ -311,6 +311,8 @@ export function monteCarlo(samples = 250, seed = 20260927): Robustness {
   const r = mulberry32(seed);
   const g = () => Math.sqrt(-2 * Math.log(1 - r())) * Math.cos(2 * Math.PI * r());
   const built = allBuilt();
+  /** Only parts the study uses get a price draw, so reference-only prices never change the random stream. */
+  const used = new Set(built.flatMap((b) => Object.keys(b.parts)));
   const nominal = built.map((b) => ({ b, id: idOf(b), cost: costOf(b.parts), score: overall(scoreOf(b)) }));
   const bestUnder = Math.max(...nominal.filter((x) => x.cost < CAP).map((x) => x.score));
   const cands = nominal.filter((x) => x.cost < CAP * 1.08 && x.score >= bestUnder - 4);
@@ -327,7 +329,7 @@ export function monteCarlo(samples = 250, seed = 20260927): Robustness {
     for (const m of Object.keys(OUT)) k[`out:${m}`] = 1.5 * g();
     for (const t of TREATMENT) k[`trt:${t.id}`] = 0.3 * g();
     const e: Record<string, number> = {};
-    for (const [key, item] of Object.entries(P)) if (key !== "CTG") e[key] = (item.est ? 0.12 : 0.04) * g();
+    for (const [key, item] of Object.entries(P)) if (key !== "CTG" && used.has(key)) e[key] = (item.est ? 0.12 : 0.04) * g();
 
     let best: { id: string; v: number } | null = null;
     for (const c of cands) {

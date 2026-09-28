@@ -7,6 +7,7 @@ import type { RackUnit } from "@/lib/ht/system";
 import { recommended } from "@/lib/ht/catalog";
 import type { Config } from "@/lib/ht/pareto";
 import { allConfigs as ht2Configs } from "@/lib/ht2/model";
+import { referenceConfigs } from "@/lib/ht2/reference";
 
 const Ctx = createContext<HtDataset | null>(null);
 
@@ -14,7 +15,7 @@ const Ctx = createContext<HtDataset | null>(null);
  * Studies with thousands of generated systems arrive without them (they
  * would add megabytes to the page) and are rebuilt here from the same model.
  */
-const GENERATORS: Record<string, () => Config[]> = { ht2: ht2Configs };
+const GENERATORS: Record<string, () => Config[]> = { ht2: () => [...ht2Configs(), ...referenceConfigs()] };
 
 export function HtDataProvider({ data, children }: { data: HtDataset; children: React.ReactNode }) {
   const value = useMemo(

@@ -15,6 +15,8 @@ const SEL = ["#3987e5", "#d95926", "#199e70"];
 const BRASS = "#d6b06a";
 const MUTED = "#80858d";
 const BAD = "#ef7a64";
+/** Reference systems: violet diamonds — shape and hue both differ from the study's points and the selection rings. */
+const REF = "#9085e9";
 
 const lakh = (n: number, p = 1) => `₹${(n / L).toFixed(p)} L`;
 
@@ -44,7 +46,11 @@ export function ParetoView() {
   const toggle = (id: string) => setSel(sel.includes(id) ? sel.filter((x) => x !== id) : [...sel, id].slice(-3));
   const switchStudy = (id: string) => { setStudyId(id); setHl(null); setBand(STUDIES.find((s) => s.id === id)!.configs.length <= 60); };
   const cap = study.cap ?? budgetCap;
-  const underCap = cap ? pts.filter((p) => p.cost < cap).length : 0;
+  const [showRefs, setShowRefs] = useState(true);
+  const own = pts.filter((p) => !p.ref);
+  const hasRefs = own.length < pts.length;
+  const shown = showRefs ? pts : own;
+  const underCap = cap ? own.filter((p) => p.cost < cap).length : 0;
 
   return (
     <div className="space-y-6">
@@ -62,10 +68,10 @@ export function ParetoView() {
 
       {/* headline numbers */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
-        <Tile k="Systems modelled" v={`${pts.length}`} sub={`${front.length} on the frontier · ${pts.length - front.length} dominated`} />
+        <Tile k="Systems modelled" v={`${own.length}`} sub={`${front.length} on the frontier · ${own.length - front.length} dominated${hasRefs ? ` · ${pts.length - own.length} reference points` : ""}`} />
         <Tile k={isDefault ? "Study's knee" : "Knee at your weights"} v={`${k.id} · ${lakh(k.cost)}`} sub={`${study.scoreName} ${k.score}`} accent onClick={() => toggle(k.id)} />
         <Tile k={`Best at ${lakh(budget, 0)}`} v={best ? `${best.id} · ${best.score}` : "—"} sub={best ? lakh(best.cost) : "Nothing fits"} onClick={best ? () => toggle(best.id) : undefined} />
-        {cap ? <Tile k="Hard cap" v={lakh(cap, 0)} sub={`${underCap} of ${pts.length} systems fit under it`} /> : <Tile k="Current /ht pick" v={lakh(total)} sub="Not scored by either study" />}
+        {cap ? <Tile k="Hard cap" v={lakh(cap, 0)} sub={`${underCap} of ${own.length} systems fit under it`} /> : <Tile k="Current /ht pick" v={lakh(total)} sub="Not scored by either study" />}
       </div>
 
       {/* chart + controls */}
@@ -79,12 +85,13 @@ export function ParetoView() {
             <div className="flex flex-wrap gap-1.5">
               <button className="toggle" aria-pressed={focus} onClick={() => setFocus((v) => !v)}><span className="dot" />Zoom to the knee</button>
               <button className="toggle" aria-pressed={band} onClick={() => setBand((v) => !v)}><span className="dot" />±{study.uncertainty} uncertainty</button>
+              {hasRefs && <button className="toggle" aria-pressed={showRefs} onClick={() => setShowRefs((v) => !v)}><span className="dot" />Video theatre</button>}
             </div>
           </div>
           <div className="scroll-x"><div className="min-w-[640px]">
-            <Scatter study={study} pts={pts} front={front} k={k} best={best} budget={budget} sel={sel} onToggle={toggle} band={band} hl={hl} isDefault={isDefault} focus={focus} mark={cap ? { cost: cap, label: `₹${cap / L} L hard cap`, cap: true } : { cost: total, label: "current /ht pick" }} />
+            <Scatter study={study} pts={shown} front={front} k={k} best={best} budget={budget} sel={sel} onToggle={toggle} band={band} hl={hl} isDefault={isDefault} focus={focus} mark={cap ? { cost: cap, label: `₹${cap / L} L hard cap`, cap: true } : { cost: total, label: "current /ht pick" }} />
           </div></div>
-          <ChartKey />
+          <ChartKey refs={hasRefs && showRefs} />
         </div>
 
         <div className="space-y-4">
@@ -93,7 +100,7 @@ export function ParetoView() {
             <div className="text-[26px] font-semibold num tracking-[-0.02em]">{lakh(budget, 0)}</div>
             <input
               type="range" className="w-full mt-3 accent-[#d6b06a]" aria-label="Budget in lakh"
-              min={Math.floor(Math.min(...pts.map((p) => p.cost)) / L)} max={Math.ceil(Math.max(...pts.map((p) => p.cost)) / L)} step={0.5}
+              min={Math.floor(Math.min(...own.map((p) => p.cost)) / L)} max={Math.ceil(Math.max(...own.map((p) => p.cost)) / L)} step={0.5}
               value={budget / L} onChange={(e) => setBudgetBy((s) => ({ ...s, [studyId]: Number(e.target.value) * L }))}
             />
             {best && (
@@ -123,6 +130,8 @@ export function ParetoView() {
           </div>
         </div>
       </div>
+
+      {study.reference && <Reference r={study.reference} onPick={(id) => { setShowRefs(true); toggle(id); }} sel={sel} />}
 
       {/* returns */}
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-4">
@@ -157,6 +166,86 @@ export function ParetoView() {
         <p className="text-[15px] leading-relaxed">{study.verdict}</p>
         <p className="t3 text-[12.5px] leading-relaxed mt-3">{study.common} Scores are modelled judgements anchored to published measurements, not tests in this room: treat anything within ±{study.uncertainty} as a tie.</p>
       </div>
+    </div>
+  );
+}
+
+/* ============================================================== reference */
+
+function Reference({ r, onPick, sel }: { r: NonNullable<Study["reference"]>; onPick: (id: string) => void; sel: string[] }) {
+  const cols: [keyof Point["sub"], string][] = [["dialogue", "Dialogue"], ["bass", "Bass"], ["immersion", "Immersion"], ["hdr", "Picture"], ["synergy", "Synergy"], ["upgrade", "Upgrade"]];
+  const tint = (v: number) => (!v ? "transparent" : v > 0 ? `rgba(57,135,229,${Math.min(0.85, 0.18 + (Math.abs(v) / 16) * 0.67)})` : `rgba(230,103,103,${Math.min(0.85, 0.18 + (Math.abs(v) / 16) * 0.67)})`);
+  const sgn = (v: number, p = 1) => `${v > 0 ? "+" : v < 0 ? "−" : "±"}${Math.abs(v).toFixed(p)}`;
+  return (
+    <div className="card p-4 sm:p-5">
+      <div className="flex items-center gap-2"><svg width="14" height="14"><path d="M7 1 L13 7 L7 13 L1 7 Z" fill={REF} /></svg><div className="eyebrow">Reference</div></div>
+      <h3 className="text-[16px] font-semibold mt-1">{r.title}</h3>
+      <p className="t2 text-[13.5px] leading-relaxed mt-1 max-w-4xl">{r.note}</p>
+      <div className="scroll-x mt-4">
+        <table className="w-full min-w-[980px] text-[12.5px] border-separate" style={{ borderSpacing: "2px" }}>
+          <thead>
+            <tr className="t3 text-left">
+              <th className="font-normal py-1.5 pr-3">Their part</th>
+              <th className="font-normal pr-3">Replaces</th>
+              <th className="font-normal text-right pr-3">Cost</th>
+              <th className="font-normal text-right pr-3">Score</th>
+              {cols.map(([k, l]) => <th key={k} className="font-normal text-center w-[68px]">{l}</th>)}
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="t2">
+              <td className="py-1.5 pr-3 font-medium text-[var(--text)]">The recommendation</td>
+              <td className="pr-3 t3">—</td>
+              <td className="text-right num pr-3">{lakh(r.base.cost)}</td>
+              <td className="text-right num pr-3">{r.base.score.toFixed(1)}</td>
+              {cols.map(([k]) => <td key={k} className="text-center t3">·</td>)}
+            </tr>
+            {r.rows.map((row) => (
+              <tr key={row.id} className={sel.includes(row.id) ? "bg-[var(--card-2)]" : ""}>
+                <td className="py-1.5 pr-3">
+                  <button className={`text-left hover:underline flex items-center gap-2 ${row.id === "REF-VIDEO" ? "font-semibold" : ""}`} onClick={() => onPick(row.id)}>
+                    <svg width="10" height="10" className="shrink-0"><path d="M5 0 L10 5 L5 10 L0 5 Z" fill={REF} /></svg>{row.part}
+                  </button>
+                </td>
+                <td className="pr-3 t3">{row.replaces}</td>
+                <td className="text-right num pr-3 whitespace-nowrap">{lakh(row.cost)} <span className="t3">{sgn(row.dCost / L, 2)} L</span></td>
+                <td className="text-right num pr-3 whitespace-nowrap">{row.score.toFixed(1)} <span style={{ color: row.dScore < 0 ? BAD : row.dScore > 0 ? "var(--agree)" : "var(--text-3)" }}>{sgn(row.dScore)}</span></td>
+                {cols.map(([k]) => (
+                  <td key={k} className="text-center num rounded-[4px] h-8" style={{ background: tint(row.dSub[k]) }}>
+                    {row.dSub[k] ? sgn(row.dSub[k]) : <span className="t3">·</span>}
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <ul className="mt-4 space-y-2">
+        {r.rows.map((row) => (
+          <li key={row.id} className="text-[13px] leading-relaxed flex gap-2">
+            <svg width="10" height="10" className="shrink-0 mt-[5px]"><path d="M5 0 L10 5 L5 10 L0 5 Z" fill={REF} /></svg>
+            <span><span className="font-medium">{row.part}.</span> <span className="t2">{row.note}</span></span>
+          </li>
+        ))}
+        {r.unpriced.map((u) => (
+          <li key={u.part} className="text-[13px] leading-relaxed flex gap-2">
+            <span className="shrink-0 w-[10px] t3">×</span>
+            <span><span className="font-medium">{u.part}.</span> <span className="t2">{u.why}</span></span>
+          </li>
+        ))}
+      </ul>
+      <details className="mt-4">
+        <summary className="cursor-pointer t3 text-[12.5px]">Indian prices used for the reference parts</summary>
+        <ul className="mt-2 space-y-1 text-[12.5px]">
+          {r.prices.map((p) => (
+            <li key={p.name} className="grid grid-cols-[minmax(0,1fr)_90px] sm:grid-cols-[260px_90px_minmax(0,1fr)] gap-x-3">
+              <span className="t2">{p.name}</span>
+              <span className="num text-right">{lakh(p.price, 2)}{p.est ? " est." : ""}</span>
+              <span className="t3 hidden sm:block">{p.source}</span>
+            </li>
+          ))}
+        </ul>
+      </details>
     </div>
   );
 }
@@ -279,7 +368,7 @@ function Scatter({ study, pts: allPts, front, k, best, budget, sel, onToggle, ba
         {/* points: in a dense cloud, the dominated ones are drawn as one quiet layer and hovered by proximity */}
         {dense && (
           <g pointerEvents="none">
-            {pts.filter((p) => !p.pareto && !sel.includes(p.id)).map((p) => (
+            {pts.filter((p) => !p.pareto && !p.ref && !sel.includes(p.id)).map((p) => (
               <circle key={p.id} cx={X(p.cost)} cy={Y(p.score)} r={2.6} fill={lit(p) ? (hl ? "#e8e6df" : "#5d636c") : "#2a2f36"} opacity={lit(p) ? 0.85 : 0.5} />
             ))}
           </g>
@@ -298,16 +387,31 @@ function Scatter({ study, pts: allPts, front, k, best, budget, sel, onToggle, ba
             style={{ cursor: hover ? "pointer" : "default" }}
           />
         )}
-        {(dense ? order.filter((p) => p.pareto || sel.includes(p.id)) : order).map((p) => {
+        {/* reference swaps: a thin line from the recommendation to each single-part swap */}
+        {(() => {
+          const base = pts.find((q) => q.id === study.defaultSel[0]);
+          return base && pts.filter((p) => p.ref && p.id !== "REF-VIDEO").map((p) => (
+            <line key={`rl${p.id}`} x1={X(base.cost)} y1={Y(base.score)} x2={X(p.cost)} y2={Y(p.score)} stroke={REF} strokeOpacity={0.85} strokeWidth={1.5} strokeDasharray="4 3" pointerEvents="none" />
+          ));
+        })()}
+        {pts.filter((p) => p.refTag).map((p) => (
+          <text key={`rt${p.id}`} x={X(p.cost) + p.refTag!.dx} y={Y(p.score) + p.refTag!.dy} textAnchor={p.refTag!.anchor} fontSize={11} fill="#c9c3f5" stroke="#15181c" strokeWidth={4} paintOrder="stroke" pointerEvents="none">{p.refTag!.text}</text>
+        ))}
+        {(dense ? order.filter((p) => p.pareto || p.ref || sel.includes(p.id)) : order).map((p) => {
           const si = sel.indexOf(p.id);
           const on = lit(p);
+          const cx = X(p.cost), cy = Y(p.score);
           return (
-            <Hit key={p.id} label={`${p.id}: ${lakh(p.cost)}, ${study.scoreName} ${p.score}${p.pareto ? ", on the frontier" : ", dominated"}. ${si >= 0 ? "Selected" : "Select to compare"}`} onClick={() => onToggle(p.id)}>
-              <g onMouseEnter={() => setHover(p)} onMouseLeave={() => setHover(null)} onFocus={() => setHover(p)} onBlur={() => setHover(null)} opacity={on ? 1 : 0.18}>
-                <circle cx={X(p.cost)} cy={Y(p.score)} r={dense && !p.pareto ? 7 : 14} fill="transparent" />
-                {si >= 0 && <circle cx={X(p.cost)} cy={Y(p.score)} r={11.5} fill="none" stroke={SEL[si]} strokeWidth={2.5} />}
-                <circle className="hit-body" cx={X(p.cost)} cy={Y(p.score)} r={p.pareto ? 6 : dense ? 3.5 : 5}
+            <Hit key={p.id} label={`${p.ref ?? p.id}: ${lakh(p.cost)}, ${study.scoreName} ${p.score}${p.ref ? ", reference" : p.pareto ? ", on the frontier" : ", dominated"}. ${si >= 0 ? "Selected" : "Select to compare"}`} onClick={() => onToggle(p.id)}>
+              <g onMouseEnter={() => setHover(p)} onMouseLeave={() => setHover(null)} onFocus={() => setHover(p)} onBlur={() => setHover(null)} opacity={on || p.ref ? 1 : 0.18}>
+                <circle cx={cx} cy={cy} r={dense && !p.pareto && !p.ref ? 7 : 14} fill="transparent" />
+                {si >= 0 && <circle cx={cx} cy={cy} r={11.5} fill="none" stroke={SEL[si]} strokeWidth={2.5} />}
+                {p.ref ? (
+                  <path className="hit-body" d={`M ${cx} ${cy - 7} L ${cx + 7} ${cy} L ${cx} ${cy + 7} L ${cx - 7} ${cy} Z`} fill={REF} stroke="#15181c" strokeWidth={1.5} />
+                ) : (
+                <circle className="hit-body" cx={cx} cy={cy} r={p.pareto ? 6 : dense ? 3.5 : 5}
                   fill={p.pareto ? BRASS : "#15181c"} stroke={p.pareto ? "#15181c" : MUTED} strokeWidth={p.pareto ? 2 : 1.6} />
+                )}
                 {hl && on && <circle cx={X(p.cost)} cy={Y(p.score)} r={8.5} fill="none" stroke="#fff" strokeOpacity={0.7} strokeWidth={1} />}
               </g>
             </Hit>
@@ -341,8 +445,8 @@ function Scatter({ study, pts: allPts, front, k, best, budget, sel, onToggle, ba
           style={{ left: `${Math.min(X(hover.cost) / W, 0.68) * 100}%`, top: `${(Y(hover.score) / H) * 100}%`, transform: Y(hover.score) / H < 0.45 ? "translate(14px, 16px)" : "translate(14px, calc(-100% - 12px))", background: "#101216" }}
         >
           <div className="flex items-center justify-between gap-2">
-            <span className="mono text-[12px] t2">{hover.id} · {hover.layout}</span>
-            <span className="text-[11.5px]" style={{ color: hover.pareto ? BRASS : MUTED }}>{hover.pareto ? "on the frontier" : "dominated"}</span>
+            <span className="mono text-[12px] t2">{hover.ref ?? hover.id} · {hover.layout}</span>
+            <span className="text-[11.5px]" style={{ color: hover.ref ? REF : hover.pareto ? BRASS : MUTED }}>{hover.ref ? "reference" : hover.pareto ? "on the frontier" : "dominated"}</span>
           </div>
           <div className="text-[13.5px] font-medium leading-snug mt-1.5">{hover.name}</div>
           <div className="flex gap-4 mt-2 text-[13px]">
@@ -356,9 +460,10 @@ function Scatter({ study, pts: allPts, front, k, best, budget, sel, onToggle, ba
   );
 }
 
-function ChartKey() {
+function ChartKey({ refs }: { refs?: boolean }) {
   return (
     <div className="flex flex-wrap gap-x-5 gap-y-2 px-1 pt-3 text-[12px] t2">
+      {refs && <span className="flex items-center gap-2"><svg width="14" height="14"><path d="M7 1 L13 7 L7 13 L1 7 Z" fill={REF} stroke="#15181c" strokeWidth="1.5" /></svg>Video theatre: whole system, and each of its parts swapped into the recommendation</span>}
       <span className="flex items-center gap-2"><svg width="14" height="14"><circle cx="7" cy="7" r="5.5" fill={BRASS} stroke="#15181c" strokeWidth="2" /></svg>On the frontier</span>
       <span className="flex items-center gap-2"><svg width="14" height="14"><circle cx="7" cy="7" r="4.5" fill="none" stroke={MUTED} strokeWidth="1.6" /></svg>Dominated — something cheaper scores as well</span>
       <span className="flex items-center gap-2"><svg width="18" height="14"><line x1="1" x2="17" y1="7" y2="7" stroke={BRASS} strokeWidth="2" /></svg>Frontier</span>
