@@ -2,12 +2,12 @@ import { describe, expect, it } from "vitest";
 import { recommended } from "@/lib/ht/catalog";
 import { evaluate, frontier } from "@/lib/ht/pareto";
 import { ROOM, SCREEN } from "@/lib/ht/geometry";
-import { allBuilt, allConfigs, bassAtSeats, costOf, idOf, row2Level, CAP, RECOMMENDED_ID, SUBS, WEIGHTS } from "@/lib/ht2/model";
+import { allBuilt, allConfigs, bassAtSeats, costOf, idOf, row2Level, CAP, RECOMMENDED_ID, SUBS, WEIGHTS, PICTURE, SPEAKERS, PROCESSING, TREATMENT } from "@/lib/ht2/model";
 import { P, FIXED } from "@/lib/ht2/prices";
 import { CATALOG2 } from "@/lib/ht2/catalog";
 import { MARKERS2, RACK2, RACK2_U, AUDIO2, VIDEO2, SCENARIOS2, LOW_RETURN2, CHAINS2 } from "@/lib/ht2/system";
 import { ASSUMPTIONS } from "@/lib/ht2/assumptions";
-import { ROBUST, recRisk } from "@/lib/ht2/robust";
+import { ROBUST, ROBUST_PICK, MAX_BREAK, recRisk } from "@/lib/ht2/robust";
 import { HT2_DATA, STUDY2 } from "@/lib/ht2/data";
 
 const ids = new Set(CATALOG2.map((c) => c.id));
@@ -43,16 +43,21 @@ describe("/ht2 model", () => {
   it("enumerates every combination once", () => {
     const configs = allConfigs();
     expect(new Set(configs.map((c) => c.id)).size).toBe(configs.length);
-    expect(configs.length).toBe(4 * 6 * 9 * 4 * 4);
+    expect(configs.length).toBe(PICTURE.length * SPEAKERS.length * SUBS.length * PROCESSING.length * TREATMENT.length);
+    expect(configs.length).toBe(6300);
   });
 
   it("puts the recommendation on the frontier", () => {
     expect(front.map((p) => p.id)).toContain(RECOMMENDED_ID);
   });
 
-  it("recommends the system that wins most often when constants and prices are perturbed", () => {
-    expect(ROBUST.wins[0].id).toBe(RECOMMENDED_ID);
-    expect(recRisk.breaks).toBeLessThan(5);
+  it("recommends the most frequent winner among systems that almost never break the cap", () => {
+    expect(ROBUST_PICK.id).toBe(RECOMMENDED_ID);
+    expect(recRisk.breaks).toBeLessThanOrEqual(MAX_BREAK);
+    for (const w of ROBUST.wins) {
+      if (w.share <= ROBUST_PICK.share) break;
+      expect(ROBUST.risk[w.id].breaks, w.id).toBeGreaterThan(MAX_BREAK);
+    }
   });
 
   it("reaches reference −8 dB or better in row 2 with the KEF fronts, and more with the Klipsch", () => {

@@ -2,7 +2,7 @@ import type { Config, Subs } from "@/lib/ht/pareto";
 import {
   build, toConfig, scoreOf, overall, costOf, row2Level, bassAtSeats, idOf,
   PICTURE, SPEAKERS, SUBS, PROCESSING, TREATMENT, RECOMMENDED,
-  type Projector, type Speakers, type Processing, type Built,
+  type Built,
 } from "./model";
 import { P } from "./prices";
 
@@ -12,29 +12,17 @@ import { P } from "./prices";
  * MM8077 + MM7055 amps, a Sony XW5000, a 200″ 1.4-gain woven screen and
  * Crestron control.
  *
- * Its parts are scored by the same room model as the study, in this room,
- * but kept out of the study's menus: they sit on the chart as reference
- * points and never move the frontier or the recommendation. The 200″
- * screen can't fit a 4.13 m wall, so the reference keeps the 120″ screen.
+ * Its projector, speakers and processor are menu options in the study, so
+ * they compete like any other choice; these labelled reference points show
+ * each part swapped into the recommendation, and the whole system with its
+ * Crestron control. The 200″ screen can't fit a 4.13 m wall, so the
+ * reference keeps the 120″ screen.
  */
 
-export const XW5000: Projector = { id: "PX", label: "Sony XW5000", short: "XW5000", parts: { XW50: 1 }, hdr: 69 };
-
-export const FOCAL: Speakers = {
-  id: "SX", label: "Focal Theva N3 + 100 ICW6 · 7.x.4", short: "Focal Theva", parts: { TH3: 1.5, F100: 8 },
-  // 91 dB rated; no published measurement found, so spec less 2 dB.
-  sens: 89, clarity: 80, immersion: 81, layout: "7.x.4", horn: false,
-  // 0.39 m deep and rear-ported, like the RP-6000F II: fits the stage with the baffle.
-  deep: false,
-  // In-wall surrounds: nothing over the aisles.
-  boxy: false,
-};
-
-export const MARANTZ: Processing = {
-  id: "AX", label: "Marantz AV7706 + MM8077 + MM7055", short: "Marantz separates", parts: { AV77: 1, MM87: 1, MM75: 1 },
-  // 12 channels of 140–150 W amplification; Audyssey XT32 only, two sub outputs.
-  amps: 12, watts: 190, dirac: false, upgrade: 74,
-};
+const pick = <T extends { id: string }>(xs: T[], id: string) => xs.find((x) => x.id === id)!;
+export const XW5000 = pick(PICTURE, "P5");
+export const FOCAL = pick(SPEAKERS, "S7");
+export const MARANTZ = pick(PROCESSING, "A5");
 
 const find = <T extends { id: string }>(xs: T[], id: string) => xs.find((x) => x.id === id)!;
 const rec = () => ({

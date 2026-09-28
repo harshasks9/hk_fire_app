@@ -65,14 +65,14 @@ export const ADDONS: AddOn[] = [
   },
   {
     id: "rearSB2", component: "subs", name: "SVS SB-2000 Pro at the rear instead of SB-1000 Pro", short: "Bigger sealed rear subs", area: "bass", group: "subs",
-    cost: 2 * (P.SB2P.price - P.SB1P.price), est: false, priceNote: "₹1,89,500 each at AVStore, less the two SB-1000 Pro", timing: "plug-in", rows: [2, 2],
+    cost: 2 * (P.SB2P.price - P.SB1P.price), est: false, priceNote: "₹1,31,950 each at HiFi Fever, less the two SB-1000 Pro", timing: "plug-in", rows: [2, 2],
     model: { sub: "B9" },
     what: "+2 dB across 20–31.5 Hz from the same sealed boxes on the slab (0.36 m cube): the array goes from just meeting reference at 20 Hz to clearing it.",
     caveat: "Only audible in the deepest, loudest scenes.",
   },
   {
     id: "pb4", component: "subs", name: "Two more PB-1000 Pro instead of the sealed rear pair", short: "4× PB-1000 Pro", area: "bass", group: "subs",
-    cost: 2 * (P.PB1P.price - P.SB1P.price), est: false, priceNote: "₹1,46,600 each, less the two SB-1000 Pro", timing: "plug-in", rows: [1, 1],
+    cost: 2 * (P.PB1P.price - P.SB1P.price), est: false, priceNote: "₹1,08,900 each at VPLAK, less the two SB-1000 Pro", timing: "plug-in", rows: [1, 1],
     model: { sub: "B6" },
     what: "+4 dB at 20 Hz — the most output per rupee.",
     caveat: "Ported boxes on the riser half a metre from row-2 ears: port noise and riser buzz. The model docks it for that; only with a filled riser.",
@@ -97,13 +97,6 @@ export const ADDONS: AddOn[] = [
     judged: { bass: 0.7, synergy: 1 },
     what: "A hollow timber riser is a drum under row 2: filled and decoupled, it stops ringing at 40–100 Hz and stops the rear subs shaking it.",
     caveat: "Only while the riser is being built.",
-  },
-  {
-    id: "treatPro", component: "treatment", name: "Specialist-built treatment, measured", short: "Specialist-built treatment", area: "sound",
-    cost: P.TC.price - P.TD.price, est: true, priceNote: "₹2.6 L vs ₹1.4 L carpenter-built (est.)", timing: "build", rows: [1, 1],
-    model: { trt: "T3" },
-    what: "The same thick-absorber spec, built by a specialist with fibre containment and a before-and-after RT60 report.",
-    caveat: "The spec does the work; this buys finish and certainty.",
   },
   {
     id: "velvet", component: "treatment", name: "Black velvet on the front third: ceiling and side walls", short: "Black velvet front third", area: "picture",

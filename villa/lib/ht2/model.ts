@@ -34,6 +34,7 @@ export const PICTURE: Projector[] = [
   { id: "P2", label: "Sony XW5100 (Bravia 7)", short: "Bravia 7", parts: { XW51: 1 }, hdr: 72 },
   { id: "P3", label: "JVC NZ500", short: "NZ500", parts: { NZ5: 1 }, hdr: 84 },
   { id: "P4", label: "JVC NZ700", short: "NZ700", parts: { NZ7: 1 }, hdr: 89 },
+  { id: "P5", label: "Sony XW5000", short: "XW5000", parts: { XW50: 1 }, hdr: 69 },
 ];
 
 export interface Speakers extends Choice {
@@ -56,6 +57,8 @@ export const SPEAKERS: Speakers[] = [
   { id: "S4", label: "Klipsch RP-6000F II · 7.x.4", short: "Klipsch RP-6000F", parts: { K6F: 1.5, K5S: 2, KCI: 4 }, sens: 90.5, clarity: 80, immersion: 80, layout: "7.x.4", horn: true, deep: false, boxy: false },
   { id: "S5", label: "Klipsch RP-8000F II · 7.x.4", short: "Klipsch RP-8000F", parts: { K8F: 1.5, K5S: 2, KCI: 4 }, sens: 91.7, clarity: 81, immersion: 80, layout: "7.x.4", horn: true, deep: true, boxy: false },
   { id: "S6", label: "Klipsch RP-6000F II · 5.x.4", short: "Klipsch 5.x.4", parts: { K6F: 1.5, K5S: 1, KCI: 4 }, sens: 90.5, clarity: 80, immersion: 72, layout: "5.x.4", horn: true, deep: false, boxy: false },
+  // Rated 91 dB with no published measurement: spec less 2 dB. 0.39 m deep, rear-ported: fits the stage with the baffle. In-wall surrounds.
+  { id: "S7", label: "Focal Theva N3 + 100 ICW6 · 7.x.4", short: "Focal Theva", parts: { TH3: 1.5, F100: 8 }, sens: 89, clarity: 80, immersion: 81, layout: "7.x.4", horn: false, deep: false, boxy: false },
 ];
 
 /** Estimated CEA-2010 output (2 m RMS) at 20, 25 and 31.5 Hz, per sub. */
@@ -99,17 +102,23 @@ export const SUBS: Subwoofers[] = [
   subs("B9", "2× SVS PB-1000 Pro front + 2× SB-2000 Pro rear (sealed)", "2× PB-1000 + 2× SB-2000", "PB1P", "SB2P", true, false),
 ];
 
-export interface Processing extends Choice { amps: number; watts: number; dirac: boolean; upgrade: number }
+export interface Processing extends Choice {
+  amps: number; watts: number; dirac: boolean; upgrade: number;
+  /** Independently delayed and EQ'd subwoofer outputs. */
+  subOuts: number;
+}
 /**
  * watts: dynamic power per channel with the mains high-passed at 80 Hz and
  * two or three channels peaking together — how films actually load an AVR —
  * not the all-channels-driven worst case.
  */
 export const PROCESSING: Processing[] = [
-  { id: "A1", label: "Denon X3800H (Audyssey only)", short: "X3800H, Audyssey", parts: { X38: 1 }, amps: 9, watts: 105, dirac: false, upgrade: 66 },
-  { id: "A2", label: "Denon X3800H + Dirac", short: "X3800H + Dirac", parts: { X38: 1, DRC: 1 }, amps: 9, watts: 105, dirac: true, upgrade: 70 },
-  { id: "A3", label: "Denon X6800H + Dirac", short: "X6800H + Dirac", parts: { X68: 1, DRC: 1 }, amps: 11, watts: 140, dirac: true, upgrade: 78 },
-  { id: "A4", label: "Denon A1H + Dirac", short: "A1H + Dirac", parts: { A1H: 1, DRC: 1 }, amps: 15, watts: 150, dirac: true, upgrade: 82 },
+  { id: "A1", label: "Denon X3800H (Audyssey only)", short: "X3800H, Audyssey", parts: { X38: 1 }, amps: 9, watts: 105, dirac: false, upgrade: 66, subOuts: 4 },
+  { id: "A2", label: "Denon X3800H + Dirac", short: "X3800H + Dirac", parts: { X38: 1, DRC: 1 }, amps: 9, watts: 105, dirac: true, upgrade: 70, subOuts: 4 },
+  { id: "A3", label: "Denon X6800H + Dirac", short: "X6800H + Dirac", parts: { X68: 1, DRC: 1 }, amps: 11, watts: 140, dirac: true, upgrade: 78, subOuts: 4 },
+  { id: "A4", label: "Denon A1H + Dirac", short: "A1H + Dirac", parts: { A1H: 1, DRC: 1 }, amps: 15, watts: 150, dirac: true, upgrade: 82, subOuts: 4 },
+  // Pre-pro + 7- and 5-channel power amps: 140–150 W a channel. Audyssey XT32 only (no Dirac upgrade), two sub outputs. Discontinued.
+  { id: "A5", label: "Marantz AV7706 + MM8077 + MM7055", short: "Marantz separates", parts: { AV77: 1, MM87: 1, MM75: 1 }, amps: 12, watts: 190, dirac: false, upgrade: 74, subOuts: 2 },
 ];
 const EXT_AMP_WATTS = 200;
 
@@ -197,6 +206,7 @@ export function scoreOf(b: Built, k: Knobs = {}): Subs {
   if (b.proc.amps - (b.spk.layout === "7.x.4" ? 11 : 9) >= 4) synergy -= 1; // channels paid for, unused
   if (b.spk.deep) synergy -= 2;                          // towers too deep for the stage: ports plugged, crowding the subs
   if (b.sub.portedRear) synergy -= 2;                    // port noise and riser buzz at arm's length from row 2
+  if (b.sub.n > b.proc.subOuts) synergy -= 2;            // four subs paired onto two outputs: front and rear can't be set apart
   if (b.spk.boxy) synergy -= 1;                          // deep surround boxes over the aisles at head height
 
   return { dialogue: clamp(dialogue), bass: clamp(bass), immersion: clamp(immersion), hdr: clamp(hdr), upgrade: clamp(upgrade), synergy: clamp(synergy) };
@@ -247,7 +257,7 @@ export function allBuilt(): Built[] {
 export const allConfigs = (): Config[] => allBuilt().map(toConfig);
 
 /** The system /ht2 recommends. */
-export const RECOMMENDED = { pic: "P3", spk: "S3", sub: "B8", proc: "A3", trt: "T2" };
+export const RECOMMENDED = { pic: "P3", spk: "S3", sub: "B8", proc: "A3", trt: "T3" };
 export const RECOMMENDED_ID = `${RECOMMENDED.pic}${RECOMMENDED.spk}${RECOMMENDED.sub}${RECOMMENDED.proc}${RECOMMENDED.trt}`;
 
 export const CAP = 30 * L;

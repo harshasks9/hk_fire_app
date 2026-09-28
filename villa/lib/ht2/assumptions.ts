@@ -1,5 +1,5 @@
 import type { Assumption } from "@/lib/ht/dataset";
-import { ROBUST, recRisk, recWinShare, dimShare } from "./robust";
+import { ROBUST, recRisk, recWinShare, dimShare, MAX_BREAK } from "./robust";
 
 const pct = (v: number) => `${Math.round(v)}%`;
 
@@ -13,17 +13,21 @@ export const ASSUMPTIONS: Assumption[] = [
   /* ------------------------------------------------------------ method */
   { id: "a-method", area: "How this was checked", verdict: "changed",
     claim: "One scoring run is enough to pick a system.",
-    reasoning: `Review correction: the model's constants are judgements (±2–3 points), and half the prices are estimates. The first draft rejected upgrades on gaps smaller than that error. Now the constants and prices are perturbed together ${ROBUST.samples} times; a system is chosen by how often it wins with the ₹1 L contingency intact, not by the edge of a single run.`,
-    numbers: `The recommended system is the single most frequent winner (${pct(recWinShare)} of runs, across ${ROBUST.candidates} contenders) · NZ500 ${pct(dimShare("picture", "P3"))} · X6800H + Dirac ${pct(dimShare("processing", "A3"))} · sealed rear subs ${pct(dimShare("subs", "B8"))}` },
+    reasoning: `Review correction: the model's constants are judgements (±2–3 points), and half the prices are estimates. The first draft rejected upgrades on gaps smaller than that error. Now the constants and prices are perturbed together ${ROBUST.samples} times; a system is chosen by how often it wins with the ₹1 L contingency intact, not by the edge of a single run. Rerun correction: winning most often on its own rewards systems parked at the cap — the most frequent winner of the rerun broke ₹30 L in ${pct(ROBUST.risk[ROBUST.wins[0].id]?.breaks ?? 0)} of runs — so the rule is now the most frequent winner among systems that break the cap in no more than ${MAX_BREAK}% of runs.`,
+    numbers: `Recommended: ${pct(recWinShare)} of runs, the most of any system inside the ${MAX_BREAK}% rule, across ${ROBUST.candidates} contenders · NZ500 ${pct(dimShare("picture", "P3"))} · X6800H + Dirac ${pct(dimShare("processing", "A3"))} · specialist-built treatment ${pct(dimShare("extras", "T3"))}` },
+  { id: "a-rerun", area: "How this was checked", verdict: "changed",
+    claim: "The first price list and menu are good enough.",
+    reasoning: `Rerun: prices were re-checked at Indian dealers (the SVS subs came down — PB-1000 Pro ₹1.09 L at VPLAK, SB-1000 Pro ₹85k, SB-2000 Pro ₹1.32 L — and the Sony XW5100 to ₹5.08 L), and the parts of a reference theatre from a video joined the menus as real options: Focal Theva N3 with Focal in-wall surrounds, 2× PB-2000 Pro, Marantz AV7706 with MM8077 + MM7055, and the Sony XW5000. ${ROBUST.candidates} contenders out of 6,300 systems. The video's parts won almost nothing (Focal ${pct(dimShare("speakers", "S7"))}, Sony XW5000 and Marantz 0%). The cheaper subs freed ₹0.85 L, and the analysis spends it on having the treatment built and measured by a specialist.`,
+    numbers: "Recommendation: same hardware, treatment specialist-built · ₹29.02 L with contingency, 84.0" },
   { id: "a-sources", area: "How this was checked", verdict: "changed",
     claim: "Retail reviews (e.g. Audio Advice) confirm the choices.",
-    reasoning: "They were meant to be a cross-check, but this build environment's network policy blocked audioadvice.com and the web-search quota was used up by the price research. The review therefore leaned on published measurements — Erin's Audio Corner, Audio Science Review, Projector Central, CEA-2010 sub data — and first-principles acoustics. Retailer reviews sell what they stock; measurements are the better evidence anyway, but a listening audition at a Hyderabad dealer is still worth an afternoon." },
+    reasoning: "They were meant to be a cross-check, but this build environment's network policy blocks audioadvice.com (and several Indian dealer sites; prices came from search listings instead). The review therefore leaned on published measurements — Erin's Audio Corner, Audio Science Review, Projector Central, CEA-2010 sub data — and first-principles acoustics. Retailer reviews sell what they stock; measurements are the better evidence anyway, but a listening audition at a Hyderabad dealer is still worth an afternoon." },
 
   /* ------------------------------------------------------------ money */
   { id: "a-cap", area: "Money", verdict: "changed",
     claim: "₹28.4 L is safely under ₹30 L.",
-    reasoning: "Review correction: the first draft left 5% headroom and costed the NZ500 at a forum quote (₹4.19–5.0 L) that is probably grey stock without JVC India warranty. The system is now costed at a warranted ₹5.75 L, Dirac at card forex plus 18% IGST, and carries a ₹1 L contingency inside the cap — so the planned spend is ₹27.7 L.",
-    numbers: `₹28.67 L with contingency · NZ500 at full list ₹29.41 L · chance the spend eats into the contingency ${pct(recRisk.eats)}, breaks the cap ${pct(recRisk.breaks)}` },
+    reasoning: "Review correction: the first draft left 5% headroom and costed the NZ500 at a forum quote (₹4.19–5.0 L) that is probably grey stock without JVC India warranty. The system is now costed at a warranted ₹5.75 L, Dirac at card forex plus 18% IGST, and carries a ₹1 L contingency inside the cap — so the planned spend is ₹28.0 L.",
+    numbers: `₹29.02 L with contingency · NZ500 at full list ₹29.76 L · chance the spend eats into the contingency ${pct(recRisk.eats)}, breaks the cap ${pct(recRisk.breaks)}` },
   { id: "a-import", area: "Money", verdict: "rejected",
     claim: "Buying abroad saves money.",
     reasoning: "Everything recommended is sold in India with an Indian warranty; Indian street prices for Denon, JVC, KEF and SVS sit at or below US prices after conversion, and baggage duty is 35% above ₹75,000. The only overseas purchase is the Dirac licence, online." },
@@ -34,7 +38,7 @@ export const ASSUMPTIONS: Assumption[] = [
   /* ------------------------------------------------------------ the room */
   { id: "a-treat", area: "Room acoustics", verdict: "changed",
     claim: "Acoustic treatment is a room-construction cost, and any 'package' will do.",
-    reasoning: "It is inside the ₹30 L cap now. Review correction: the draft said 'contractor package', and in India that usually means 9–12 mm PET panels and foam, which work only above ~1 kHz. Row-2 ears are 0.57 m from the rear wall, so the rear-wall reflection cancels around 150 Hz — only 100–150 mm of wool there removes it. The spec (48 kg/m³ wool, 50 mm panels on 50 mm gaps, RT60 0.25–0.35 s from 125 Hz to 4 kHz, measured) goes into the contract.",
+    reasoning: "It is inside the ₹30 L cap now. Review correction: the draft said 'contractor package', and in India that usually means 9–12 mm PET panels and foam, which work only above ~1 kHz. Row-2 ears are 0.57 m from the rear wall, so the rear-wall reflection cancels around 150 Hz — only 100–150 mm of wool there removes it. The spec (48 kg/m³ wool, 50 mm panels on 50 mm gaps, RT60 0.25–0.35 s from 125 Hz to 4 kHz, measured) goes into the contract. Rerun: the recommendation now has a specialist build it and measure it (₹2.6 L est.), with the carpenter-built version (₹1.4 L, −0.4) as the first cut if prices come in high.",
     numbers: "343 / (2 × 1.14 m) ≈ 150 Hz notch · RT60 ≈ 0.6 s bare" },
   { id: "a-height", area: "Room acoustics", verdict: "kept",
     claim: "The lowered ceiling changes the bass.",
@@ -85,7 +89,7 @@ export const ASSUMPTIONS: Assumption[] = [
   /* ------------------------------------------------------------ bass */
   { id: "a-subs-n", area: "Bass", verdict: "kept",
     claim: "Four subwoofers, not two.",
-    reasoning: "Two rows, one of them against the rear wall where the 28 Hz length mode peaks. Harman's multi-sub work (Welti) shows four subs cut seat-to-seat variation far more than two. Dropping to two costs 3.6 points for ₹1.8 L saved — the worst cut available.",
+    reasoning: "Two rows, one of them against the rear wall where the 28 Hz length mode peaks. Harman's multi-sub work (Welti) shows four subs cut seat-to-seat variation far more than two. Dropping to two costs 3.6 points for ₹1.7 L saved — the worst cut available.",
     numbers: "Length modes 28.3 / 56.7 / 85 Hz · width 41.5 Hz" },
   { id: "a-bass-model", area: "Bass", verdict: "changed",
     claim: "Four subs sum perfectly, and 20 Hz is all that matters.",
@@ -93,7 +97,7 @@ export const ASSUMPTIONS: Assumption[] = [
     numbers: "Recommended array ≈ 116 / 119 / 120.5 dB vs 115 / 118 / 118 needed" },
   { id: "a-rear-subs", area: "Bass", verdict: "changed",
     claim: "Rear subs can be the same ported model, on the riser.",
-    reasoning: "Review correction: a ported 12″ sub 0.5 m from row-2 ears puts port noise and distortion at arm's length, and it drums a hollow timber riser. The rear pair is now the sealed SB-1000 Pro, standing on the slab through cutouts in the riser. It is ₹1.1 L cheaper than two more PB-1000 Pro, and the front ported pair carries the deep bass." },
+    reasoning: "Review correction: a ported 12″ sub 0.5 m from row-2 ears puts port noise and distortion at arm's length, and it drums a hollow timber riser. The rear pair is now the sealed SB-1000 Pro, standing on the slab through cutouts in the riser. It is ₹0.48 L cheaper than two more PB-1000 Pro, which score only 0.2 higher despite 4 dB more at 20 Hz, and the front ported pair carries the deep bass." },
   { id: "a-diy", area: "Bass", verdict: "rejected",
     claim: "DIY 18″ subs are the value king.",
     reasoning: "In India the 18″ drivers you can buy locally are pro-audio designs (Lavoce, B&C), tuned for 40 Hz and up. They need large ported boxes and heavy EQ to reach 20 Hz, and the boxes don't fit this room." },
@@ -112,10 +116,10 @@ export const ASSUMPTIONS: Assumption[] = [
   /* ------------------------------------------------------------ picture */
   { id: "a-jvc", area: "Picture", verdict: "kept",
     claim: "JVC's native contrast is worth it over Sony or Epson.",
-    reasoning: `In a black room, native contrast is the picture. Even at a warranted ₹5.75 L, the NZ500 won ${pct(dimShare("picture", "P3"))} of the Monte Carlo runs. The Sony XW5100 saves ₹0.45 L and scores 3 points lower.` },
+    reasoning: `In a black room, native contrast is the picture. Even at a warranted ₹5.75 L, the NZ500 won ${pct(dimShare("picture", "P3"))} of the Monte Carlo runs. The Sony XW5100 saves ₹0.67 L and scores 3.1 points lower; the XW5000 from the video saves ₹1.45 L and scores 3.9 lower.` },
   { id: "a-nz700", area: "Picture", verdict: "rejected",
     claim: "The NZ700 fits under ₹30 L.",
-    reasoning: "At ~₹9.5 L (list ₹10.7 L) it adds 1.3 points for ₹3.75 L and puts the system at ₹32.4 L. Fitting it means two subs or no treatment, both larger losses. It's the first upgrade if the cap rises." },
+    reasoning: "At ~₹9.5 L (list ₹10.7 L) it adds 1.3 points for ₹3.75 L and puts the system at ₹32.8 L. Fitting it means two subs or no treatment, both larger losses. It's the first upgrade if the cap rises." },
   { id: "a-woven", area: "Picture", verdict: "changed",
     claim: "An imported Seymour screen is needed.",
     reasoning: "A 120″ Seymour lands at about ₹4 L with freight and duty. Grandview's woven AT is stocked by AV-Vision in Hyderabad at an estimated ₹0.6–1.2 L. View a sample at 2.9 m with the projector first; if the weave shows, the Elite Aeon AcousticPro UHD is the local fallback." },

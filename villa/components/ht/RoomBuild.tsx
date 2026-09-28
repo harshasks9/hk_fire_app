@@ -92,7 +92,7 @@ export function RoomBuild({ onPick }: { onPick: (c: string) => void }) {
         <h3 className="text-[16px] font-semibold">What the room itself costs</h3>
         <p className="t2 text-[13.5px] leading-relaxed mt-1 max-w-3xl">Construction around the AV system, estimated for Hyderabad — outside the ₹30 L AV cap. Each bar is a low–high range; all are estimates, so get three quotes.</p>
         <CostRanges onSel={setSel} sel={sel} />
-        <p className="t3 text-[12.5px] mt-3">Room construction: {lakhs(outside[0])}–{lakhs(outside[1])} L on top of the AV system. Already inside the AV budget, and not counted here: the baffle wall and plinths (₹0.6 L), the treatment panels and absorbers (₹1.4 L), the hush box (₹25k) and the earth pit (₹15k).</p>
+        <p className="t3 text-[12.5px] mt-3">Room construction: {lakhs(outside[0])}–{lakhs(outside[1])} L on top of the AV system. Already inside the AV budget, and not counted here: the baffle wall and plinths (₹0.6 L), the specialist-built treatment panels and absorbers (₹2.6 L), the hush box (₹25k) and the earth pit (₹15k).</p>
       </div>
     </div>
   );

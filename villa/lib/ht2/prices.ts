@@ -9,7 +9,7 @@ import type { PriceItem } from "@/lib/ht/pareto";
 export const P: Record<string, PriceItem> = {
   /* picture */
   LS12: { name: "Epson EH-LS12000B", price: 449000, cat: "picture", source: "AVStore sale" },
-  XW51: { name: "Sony VPL-XW5100 (Bravia Projector 7)", price: 530000, cat: "picture", source: "VPLAK / AVStore" },
+  XW51: { name: "Sony VPL-XW5100 (Bravia Projector 7)", price: 507800, cat: "picture", source: "AV Shack ₹5.08 L (VPLAK ₹5.30 L, MRP ₹6.5 L)" },
   NZ5: { name: "JVC DLA-NZ500", price: 575000, cat: "picture", est: true, source: "List ₹6.49–6.59 L; ~11% authorised-dealer discount assumed. Forum quotes of ₹4.19–5.0 L may be grey stock without JVC India warranty" },
   NZ7: { name: "JVC DLA-NZ700", price: 950000, cat: "picture", est: true, source: "List ₹10.7 L (SH Digital); ~11% authorised-dealer discount assumed" },
   GVW: { name: "Grandview Prestige fixed frame, AW6 woven AT, 120″ 16:9", price: 100000, cat: "room", est: true, source: "AV-Vision Hyderabad — price on request" },
@@ -36,12 +36,12 @@ export const P: Record<string, PriceItem> = {
   /* subwoofers */
   SPL12: { name: "Klipsch SPL-120", price: 76300, cat: "subs", source: "VPLAK" },
   SPL15: { name: "Klipsch SPL-150", price: 128900, cat: "subs", source: "VPLAK" },
-  SB1P: { name: "SVS SB-1000 Pro", price: 90000, cat: "subs", source: "₹82k (HTE sale) – ₹99.5k (AVStore)" },
-  PB1P: { name: "SVS PB-1000 Pro", price: 146600, cat: "subs", source: "Audio Visual Kart (ProHiFi ₹1.56 L)" },
+  SB1P: { name: "SVS SB-1000 Pro", price: 85000, cat: "subs", source: "ProHiFi ₹85,000 (₹82k HTE sale; VPLAK ₹1.0 L)" },
+  PB1P: { name: "SVS PB-1000 Pro", price: 108900, cat: "subs", source: "VPLAK ₹1,08,900 (MRP ₹1.56 L; HTE ₹1.22 L)" },
   PB2P: { name: "SVS PB-2000 Pro", price: 218500, cat: "subs", source: "AVStore list; dealers discount" },
-  SB2P: { name: "SVS SB-2000 Pro (sealed)", price: 189500, cat: "subs", source: "AVStore" },
+  SB2P: { name: "SVS SB-2000 Pro (sealed)", price: 131950, cat: "subs", source: "HiFi Fever ₹1,31,950 (AVStore/ProHiFi ₹1.90 L)" },
 
-  /* the reference theatre from the video (not in the study's menus) */
+  /* from the theatre in the video — now menu options */
   XW50: { name: "Sony VPL-XW5000ES", price: 430000, cat: "picture", source: "AV Shack ₹4.30 L (backordered); ₹4.85–5.5 L VPLAK" },
   TH3: { name: "Focal Theva N°3 (pair)", price: 290000, cat: "speakers", source: "VPLAK ₹2.90 L a pair" },
   F100: { name: "Focal 100 ICW6 in-wall / in-ceiling (each)", price: 41000, cat: "speakers", source: "Focal Naim India ₹41,000" },

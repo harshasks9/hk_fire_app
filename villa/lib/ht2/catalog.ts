@@ -1,5 +1,6 @@
 import type { Component, Option } from "@/lib/ht/types";
 import { P } from "./prices";
+import { dimShare } from "./robust";
 
 /**
  * The /ht2 system: a movie-first theatre under ₹30 L, every part sold in India
@@ -82,6 +83,12 @@ export const CATALOG2: Component[] = [
         specs: [["Type", "Bookshelf, waveguide"], ["Sensitivity", "~85 dB"]],
         perf: "The cheapest credible front stage; small woofers and limited headroom in a two-row room.",
         attrs: { spl: "Limited", fit: "Only if the budget is gone" },
+      },
+      {
+        id: "focal-theva", tier: "alternative", name: "3× Focal Theva N3 + Focal 100 ICW6 surrounds and tops", price: p("TH3", 1.5), priceNote: "₹2.90 L a pair at VPLAK; the package adds 8× 100 ICW6 at ₹41,000 each (Focal Naim India)", buy: "india",
+        specs: [["Drivers", "3-way: Al/Mg inverted-dome tweeter, 6.5″ Slatefiber mid, 2× 6.5″ woofers"], ["Sensitivity", "91 dB rated (no published measurement)"], ["Depth", "0.39 m, rear port"]],
+        perf: "The front stage from the theatre video. More sensitive than the KEF and the surrounds go in the wall — nothing over the aisles — but the in-walls are a different line from the Theva, and the package costs ₹2.28 L more for −0.2 in the model. Won 2% of Monte Carlo runs.",
+        attrs: { spl: "~99 dB at row 2 (est.)", fit: "In-wall surrounds; costs more" },
       },
       {
         id: "jbl-scl", tier: "reference", name: "JBL Synthesis SCL-4 / SCL-6", price: 840000, priceNote: "SCL-4 ₹2.8 L listed (each?); SCL-6 on quote (est.)", est: true, buy: "india",
@@ -186,11 +193,11 @@ export const CATALOG2: Component[] = [
   {
     id: "subs", name: "Subwoofers", group: "bass", qty: 4,
     placement: "Front pair: SVS PB-1000 Pro in the baffle cavity at 1.25 m and 2.90 m from the left wall, turned sideways so their 0.51 m depth runs along the wall — clear of the L and R stands. Rear pair: sealed SB-1000 Pro in the riser's rear corners, standing on the slab through cutouts so they can't drum the hollow riser. Each on its own Denon sub output, set by Dirac Bass Control.",
-    why: "Front and rear subs cancel the 28 Hz length mode that makes row 2 boom and row 1 thin; the front pair near the quarter points tames the 41.5 Hz width mode. The review changed the rear pair: a ported sub 0.5 m from row-2 ears puts port noise within arm's length and drums a timber riser. Small sealed boxes fix both, and ₹1.1 L cheaper. Modelled at 20, 25 and 31.5 Hz with pressure-vessel gain and a 3 dB loss for joint optimisation, the mixed array reaches ~116 / 119 / 120.5 dB against a 115–118 dB need.",
-    upgrade: "The same array with SB-2000 Pro at the rear (+₹2.0 L) or four PB-1000 Pro (+₹1.1 L): +0.2–0.3 points each, and either breaks the contingency.",
+    why: "Front and rear subs cancel the 28 Hz length mode that makes row 2 boom and row 1 thin; the front pair near the quarter points tames the 41.5 Hz width mode. The review changed the rear pair: a ported sub 0.5 m from row-2 ears puts port noise within arm's length and drums a timber riser. Small sealed boxes fix both, and they cost ₹0.48 L less than two more PB-1000 Pro. Modelled at 20, 25 and 31.5 Hz with pressure-vessel gain and a 3 dB loss for joint optimisation, the mixed array reaches ~116 / 119 / 120.5 dB against a 115–118 dB need.",
+    upgrade: "The same array with SB-2000 Pro at the rear (+₹0.94 L, +0.3) or four PB-1000 Pro (+₹0.48 L, +0.2): both eat into the contingency, so only once every other price is in writing.",
     options: [
       {
-        id: "mixed-sealed", tier: "recommended", name: "2× SVS PB-1000 Pro (front) + 2× SB-1000 Pro (rear, sealed)", price: p("PB1P", 2) + p("SB1P", 2), priceNote: "PB-1000 Pro ₹1,46,600 each (Audio Visual Kart); SB-1000 Pro ₹82k–99.5k each", buy: "india",
+        id: "mixed-sealed", tier: "recommended", name: "2× SVS PB-1000 Pro (front) + 2× SB-1000 Pro (rear, sealed)", price: p("PB1P", 2) + p("SB1P", 2), priceNote: "PB-1000 Pro ₹1,08,900 each (VPLAK; MRP ₹1.56 L); SB-1000 Pro ₹85,000 each (ProHiFi)", buy: "india",
         specs: [["Front", "12″ ported, 325 W — ~104 dB at 20 Hz each (est.)"], ["Rear", "12″ sealed, 325 W, 0.33 m cube — ~92 dB at 20 Hz each (est.)"], ["Array at the seats", "~116 / 119 / 120.5 dB at 20 / 25 / 31.5 Hz (est.)"], ["Control", "SVS app: PEQ, phase, room gain"]],
         perf: "The baseline.",
         importNote: "AVStore is SVS's official partner; 5-year Indian warranty.",
@@ -198,24 +205,24 @@ export const CATALOG2: Component[] = [
         attrs: { spl: "~116 dB at 20 Hz with room gain (est.)", bass: "Ported front, sealed rear", distortion: "Low within its limits", reliability: "Good", warranty: "SVS India, 5 years", import: "None", fit: "Rear pair fits riser cutouts" },
       },
       {
-        id: "4pb1000", tier: "alternative", name: "4× SVS PB-1000 Pro", price: p("PB1P", 4), priceNote: "₹1,46,600 each at Audio Visual Kart", buy: "india",
+        id: "4pb1000", tier: "alternative", name: "4× SVS PB-1000 Pro", price: p("PB1P", 4), priceNote: "₹1,08,900 each at VPLAK", buy: "india",
         specs: [["Array at the seats", "~120 / 122 / 123 dB (est.)"]],
-        perf: "The first draft's pick. 4 dB more at 20 Hz, but ported subs on the riser beside row 2 bring port noise and riser buzz. +₹1.1 L, and it uses up the contingency.",
+        perf: "The first draft's pick. 4 dB more at 20 Hz, but ported subs on the riser beside row 2 bring port noise and riser buzz. +₹0.48 L for +0.2 — a tie; only with a filled riser.",
         attrs: { spl: "~120 dB at 20 Hz (est.)", fit: "Only with a solid, filled riser" },
       },
       {
-        id: "sealed-2000", tier: "step-up", name: "2× PB-1000 Pro + 2× SB-2000 Pro (sealed)", price: p("PB1P", 2) + p("SB2P", 2), priceNote: "SB-2000 Pro ₹1,89,500 each (AVStore)", buy: "india",
+        id: "sealed-2000", tier: "step-up", name: "2× PB-1000 Pro + 2× SB-2000 Pro (sealed)", price: p("PB1P", 2) + p("SB2P", 2), priceNote: "SB-2000 Pro ₹1,31,950 each (HiFi Fever; ₹1.90 L at AVStore)", buy: "india",
         specs: [["Rear", "12″ sealed, 500 W, 0.36 m cube"], ["Array", "~118 / 121 / 122.5 dB (est.)"]],
-        perf: "The reviewer's suggestion: 2 dB more with the same sealed rear. +₹2.0 L — first in line if the cap rises.",
+        perf: "The reviewer's suggestion: 2 dB more with the same sealed rear. +₹0.94 L for +0.3 — first in line once prices are in writing.",
       },
       {
         id: "4spl150", tier: "alternative", name: "4× Klipsch SPL-150", price: p("SPL15", 4), priceNote: "₹1,28,900 each at VPLAK", buy: "india",
         specs: [["Driver", "15″ ported, 400 W"], ["Array", "~116 / 121 / 124 dB (est.)"]],
-        perf: "More at 25–31.5 Hz, no app EQ, and still ported at the riser. +₹0.4 L.",
+        perf: "More at 25–31.5 Hz, no app EQ, and still ported at the riser. +₹1.28 L for −0.2.",
         attrs: { warranty: "Klipsch India", fit: "Ported rear pair" },
       },
       {
-        id: "4sb1000", tier: "alternative", name: "4× SVS SB-1000 Pro (sealed)", price: p("SB1P", 4), priceNote: "₹82k–99.5k each", buy: "india",
+        id: "4sb1000", tier: "alternative", name: "4× SVS SB-1000 Pro (sealed)", price: p("SB1P", 4), priceNote: "₹85,000 each (ProHiFi)", buy: "india",
         specs: [["Array", "~108 / 114 / 117 dB (est.)"]],
         perf: "Compact and tight, but 7 dB short at 20 Hz at reference. Fine if you watch quietly.",
         attrs: { fit: "Quiet listeners" },
@@ -246,7 +253,7 @@ export const CATALOG2: Component[] = [
   {
     id: "projector", name: "Projector", group: "picture", qty: 1,
     placement: "On a shelf on the rear wall in a lined, ventilated hush box, lens at 2.40 m, centred: 5.02 m throw, ratio 1.89 (NZ500 zoom 1.35–2.16), 50% vertical lens shift (limit ±70%).",
-    why: "In a black room, native contrast decides the picture. Measured native contrast per lakh: NZ500 ~5,000:1 at a warranted price, Sony XW5100 ~2,700:1, Epson ~1,100:1. It won 90% of the Monte Carlo runs; the NZ700 won the rest, only when the other prices fell.",
+    why: `In a black room, native contrast decides the picture. Measured native contrast per lakh: NZ500 ~5,000:1 at a warranted price, Sony XW5100 ~2,700:1, Epson ~1,100:1. It won ${Math.round(dimShare("picture", "P3"))}% of the Monte Carlo runs; the NZ700 won the rest, only when the other prices fell.`,
     upgrade: "NZ700 (list ₹10.7 L) when the cap allows: +1.3 points for about ₹3.75 L.",
     options: [
       {
@@ -258,15 +265,15 @@ export const CATALOG2: Component[] = [
         attrs: { measured: "Native ~23–40k:1", hdr: "~105 nits on 120″ (est.) with Frame Adapt HDR", black: "Deep", reliability: "Sealed laser engine", warranty: "JVC India, 3 years", import: "None", fit: "Throw 1.89 mid-zoom" },
       },
       {
-        id: "xw5100", tier: "alternative", name: "Sony VPL-XW5100 (Bravia Projector 7)", price: p("XW51"), priceNote: "₹5.30–5.99 L (VPLAK, AVStore); launch ₹6.5 L", buy: "india",
+        id: "xw5100", tier: "alternative", name: "Sony VPL-XW5100 (Bravia Projector 7)", price: p("XW51"), priceNote: "₹5.08 L at AV Shack (₹5.30 L VPLAK; MRP ₹6.5 L)", buy: "india",
         specs: [["Native contrast", "~13–15k:1 measured"], ["Brightness", "~1,800 lm (Reference)"]],
         perf: "Excellent processing and motion, but visibly lighter blacks in every letterboxed film. Costs more.",
         attrs: { black: "About 2.5× lighter than the NZ500", hdr: "Good", warranty: "Sony India 3 yr, laser 3 yr / 5,000 h", fit: "Better with some room light" },
       },
       {
-        id: "xw5000", tier: "alternative", name: "Sony VPL-XW5000ES", price: 430000, priceNote: "₹4.30 L at AV Shack (backordered); ₹4.85–5.5 L VPLAK", buy: "india",
+        id: "xw5000", tier: "alternative", name: "Sony VPL-XW5000ES", price: p("XW50"), priceNote: "₹4.30 L at AV Shack (backordered); ₹4.85–5.5 L VPLAK", buy: "india",
         specs: [["Native contrast", "~8.7–13k:1 measured"]],
-        perf: "Cheaper but greyer still; availability uncertain.",
+        perf: "The projector in the theatre video. ₹1.45 L cheaper and 3.9 points lower in the model: about a third of the NZ500's native contrast. Won no Monte Carlo runs.",
         attrs: { black: "Grey in a black room" },
       },
       {
@@ -291,7 +298,7 @@ export const CATALOG2: Component[] = [
       right: "Yes.", overkill: "No.", under: "No for SDR; HDR at ~105 nits is good for projection.",
       better: "No at this price in India.", premium: "NZ700's +₹3.75 L buys 1.3 points; not inside the cap.",
       notice: "Against Sony/Epson: every dark scene.", elsewhere: "No.",
-      integrator: "They'd get the NZ500 price in writing with the warranty (even at full list the system is ₹29.4 L with the contingency intact) and build a damped hush box, open at the front, with ducted intake and exhaust — the chassis is 0.9 m above row-2 heads, and Hyderabad summers are hot.",
+      integrator: "They'd get the NZ500 price in writing with the warranty (even at full list the system is ₹29.8 L with the contingency intact) and build a damped hush box, open at the front, with ducted intake and exhaust — the chassis is 0.9 m above row-2 heads, and Hyderabad summers are hot.",
     },
   },
 
@@ -369,6 +376,11 @@ export const CATALOG2: Component[] = [
         id: "cinema50", tier: "alternative", name: "Marantz Cinema 50 + 2-channel amp", price: 226000 + 60000, priceNote: "₹2.26 L (MRP ₹3.0 L) + amp (est.)", est: true, buy: "india",
         specs: [["Channels", "11.4 processing, 9 amps"], ["Room correction", "Full Dirac options"]],
         perf: "Warmer voicing, same platform; needs extra amplification for 7.x.4.",
+      },
+      {
+        id: "marantz-sep", tier: "avoid", name: "Marantz AV7706 + MM8077 + MM7055", price: p("AV77") + p("MM87") + p("MM75"), priceNote: "₹2.55–3.53 L + ₹2.19 L + ₹1.20 L across Indian dealers (est.)", est: true, buy: "india",
+        specs: [["Channels", "11.2 processing, 12 × 140–150 W"], ["Room correction", "Audyssey XT32 only — no Dirac upgrade"], ["Sub outputs", "Two"]],
+        perf: "The electronics from the theatre video. +1.3 dB at row 2, but no Dirac and only two independent sub outputs, so four subs can't be optimised together: ₹2.98 L more for −2.0 in the model. Discontinued — old stock only.",
       },
       {
         id: "a1h", tier: "reference", name: "Denon AVC-A1H", price: 429800, priceNote: "₹4,29,800 at VPLAK", buy: "india",
@@ -458,14 +470,14 @@ export const CATALOG2: Component[] = [
     id: "treatment", name: "Acoustic treatment", group: "infrastructure", qty: 1, qtyLabel: "To a written spec",
     placement: "Rear wall: 100–150 mm of 48 kg/m³ mineral wool, full width from 0.6 to 2.2 m, behind row 2. Side walls: 50 mm panels on a 50 mm air gap at the first reflections for both rows. Front wall: the black baffle cavity filled with wool. Front corners: floor-to-ceiling 150 mm traps. No ceiling clouds where the in-ceiling speakers go.",
     why: "Untreated, this room would ring for about 0.6 s. Row-2 ears are ~0.57 m from the rear wall, so the reflection arrives 1.14 m late and cancels around 150 Hz — a notch no room correction can fill. Only thick absorption at the rear wall removes it. The review's point: 'treatment packages' sold in India are usually 9–12 mm PET panels and foam, which work only above ~1 kHz, dull the treble and leave the mid-bass untouched. So the spec is written into the contract, with a measured RT60 of 0.25–0.35 s, flat from 125 Hz to 4 kHz, before and after.",
-    upgrade: "Specialist-built and measured (+₹1.2 L) for finish and a guaranteed result; rear-wall diffusion above 1.9 m later.",
+    upgrade: "Rear-wall diffusion above 1.9 m later, if row 1 wants a more open sound.",
     options: [
-      { id: "spec-diy", tier: "recommended", name: "Thick absorbers to a written spec, carpenter-built", price: p("TD"), priceNote: "Rockwool/Twiga 48 kg/m³ ~₹245/m² per 50 mm; AT fabric ₹440–480/m; carpentry (est.)", est: true, buy: "india", specs: [["Rear wall", "100–150 mm wool, ~7 m²"], ["Reflections", "50 mm on a 50 mm gap, ~10 m²"], ["Target", "RT60 0.25–0.35 s, 125 Hz–4 kHz, measured with the UMIK-1 in REW"]], perf: "The baseline.", attrs: { fit: "Right" } },
-      { id: "spec-pro", tier: "step-up", name: "The same spec, specialist-built and measured", price: p("TC"), priceNote: "₹350–600/sq ft installed (est.)", est: true, buy: "india", specs: [["Adds", "Finish, fibre containment, before-and-after RT60 report"]], perf: "+0.4 in the model for ₹1.2 L; it eats the contingency, so only once prices are in writing." },
+      { id: "spec-pro", tier: "recommended", name: "Thick absorbers to a written spec, specialist-built and measured", price: p("TC"), priceNote: "₹350–600/sq ft installed (est.)", est: true, buy: "india", specs: [["Rear wall", "100–150 mm wool, ~7 m²"], ["Reflections", "50 mm on a 50 mm gap, ~10 m²"], ["Target", "RT60 0.25–0.35 s, 125 Hz–4 kHz, measured before and after in REW"], ["Adds", "Finish, fibre containment, a written RT60 report"]], perf: "The baseline.", attrs: { fit: "Right" } },
+      { id: "spec-diy", tier: "alternative", name: "The same spec, carpenter-built", price: p("TD"), priceNote: "Rockwool/Twiga 48 kg/m³ ~₹245/m² per 50 mm; AT fabric ₹440–480/m; carpentry (est.)", est: true, buy: "india", specs: [["Risk", "Finish and fibre containment; you measure it yourself with the UMIK-1"]], perf: "−₹1.2 L for −0.4 in the model: the first cut if prices come in high. Most of the acoustic result, if the carpenter follows the spec." },
       { id: "thin-pet", tier: "avoid", name: "Typical 'acoustic package' (9–12 mm PET panels, foam traps)", price: p("TP"), priceNote: "₹250–400/sq ft installed (est.)", est: true, buy: "india", specs: [["Works above", "~1 kHz only"]], perf: "Costs more than the spec'd build and is worse: dull treble, boomy mid-bass, the 150 Hz notch untouched." },
       { id: "none-t", tier: "avoid", name: "No treatment", price: 0, priceNote: "—", buy: "india", specs: [["RT60", "~0.6 s (est.)"]], perf: "Boomy, bright, smeared dialogue: −4 points in the model." },
     ],
-    review: { verdict: "agree", headline: "Non-negotiable — and only if the spec is in the contract.", right: "Yes.", overkill: "No.", under: "No.", better: "The specialist-built version if the budget allows.", premium: "Carpenter vs specialist: ₹1.2 L for finish and certainty.", notice: "Yes — everything sounds clearer, especially row 2.", elsewhere: "No.", integrator: "They'd measure RT60 before and after, in REW, and not pay the final instalment until it's in range." },
+    review: { verdict: "agree", headline: "Non-negotiable — and only if the spec is in the contract.", right: "Yes.", overkill: "No.", under: "No.", better: "No — the carpenter-built version is the fallback, not an upgrade.", premium: "Specialist vs carpenter: ₹1.2 L for finish, containment and a guaranteed, measured result.", notice: "Yes — everything sounds clearer, especially row 2.", elsewhere: "No.", integrator: "They'd measure RT60 before and after, in REW, and not pay the final instalment until it's in range." },
   },
   {
     id: "ups", name: "UPS & power", group: "infrastructure", qty: 1, qtyLabel: "UPS + PDU + surge",

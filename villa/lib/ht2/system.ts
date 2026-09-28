@@ -117,14 +117,14 @@ const L = 1e5;
 
 export const SCENARIOS2: Scenario[] = [
   {
-    amount: 233000,
-    title: "The ₹2.3 L margin",
-    summary: "₹1 L is contingency and stays untouched until every estimate is a written quote. The other ₹1.3 L is real headroom — spend it on the room, not the boxes.",
+    amount: 198500,
+    title: "The ₹2.0 L margin",
+    summary: "₹1 L is contingency and stays untouched until every estimate is a written quote. The other ₹0.98 L is real headroom — spend it on the room, not the boxes.",
     moves: [
-      { component: "treatment", to: "The same treatment spec, specialist-built and measured", delta: 120000, est: true, what: "+0.4 in the model: finish, fibre containment and a guaranteed RT60." },
-      { component: "treatment", to: "Deeper traps in the rear ceiling corners", delta: 40000, est: true, room: true, what: "Tighter decay around the 67 Hz height mode both rows share." },
+      { component: "treatment", to: "Black velvet on the front third of the ceiling and side walls", delta: 35000, est: true, room: true, what: "+0.39 in the model: the JVC's blacks survive bright scenes. The best value of any add-on." },
+      { component: "treatment", to: "Fill and decouple the riser", delta: 30000, est: true, room: true, what: "+0.26: row 2's floor stops drumming. Only while the riser is being built." },
     ],
-    alt: "If prices come in high, cut in this order: the UB820 for a Zidoo (−₹0.43 L, grey area), the Polk Reserve speaker package (−₹2.1 L, −1.6 points). Never drop to two subs (−3.6 points) and never skip treatment (−4.1).",
+    alt: "If prices come in high, cut in this order: carpenter-built treatment to the same spec (−₹1.2 L, −0.4), the UB820 for a Zidoo (−₹0.43 L, grey area), the Polk Reserve speaker package (−₹2.1 L, −1.6). Never drop to two subs (−3.6) and never skip treatment (−4.5).",
   },
   {
     amount: 5 * L,
@@ -132,29 +132,32 @@ export const SCENARIOS2: Scenario[] = [
     summary: "Put it into the picture first.",
     moves: [
       { component: "projector", to: "JVC NZ700 instead of the NZ500", delta: 375000, est: true, what: "Deeper blacks and a better lens: +1.3 in the model, visible in every dark scene." },
-      { component: "subs", to: "SB-2000 Pro at the rear instead of SB-1000 Pro", delta: 199000, what: "+2 dB at 20 Hz, same sealed rear." },
+      { component: "subs", to: "SB-2000 Pro at the rear instead of SB-1000 Pro", delta: 93900, what: "+2 dB at 20 Hz from the same sealed boxes: +0.3." },
     ],
     alt: "Do not fit the NZ700 inside ₹30 L by dropping to two subs or skipping treatment: both cost more points than the projector adds.",
   },
   {
     amount: 10 * L,
     title: "If the cap were ₹40 L",
-    summary: "Picture, then bass headroom, then the room.",
+    summary: "Picture, then the room, then the extras.",
     moves: [
-      { component: "projector", to: "JVC NZ700", delta: 375000, est: true, what: "Blacks and HDR." },
-      { component: "subs", to: "SB-2000 Pro at the rear", delta: 199000, what: "+2 dB at 20 Hz." },
-      { component: "treatment", to: "Specialist-built treatment + rear-wall diffusion", delta: 250000, est: true, room: true, what: "A guaranteed decay target and a more open sound in row 1." },
-      { component: "atmos", to: "Six overheads + 2-channel amp", delta: 110000, est: true, what: "Row 2 gets overhead effects of its own." },
+      { component: "projector", to: "JVC NZ700", delta: 375000, est: true, what: "Blacks and HDR: +1.3." },
+      { component: "subs", to: "SB-2000 Pro at the rear", delta: 93900, what: "+2 dB at 20 Hz: +0.3." },
+      { component: "treatment", to: "Velvet, a filled riser and rear corner traps", delta: 105000, est: true, room: true, what: "+0.9 together: contrast, a quiet riser and tighter bass decay." },
+      { component: "subs", to: "Tactile transducers under all six seats", delta: 60000, est: true, what: "Bass you feel at normal levels: +0.44 (judgement)." },
+      { component: "atmos", to: "Six overheads + 2-channel amp", delta: 109000, est: true, what: "Row 2 gets overhead effects of its own: +0.3." },
     ],
   },
 ];
 
 export const LOW_RETURN2 = [
   { component: "avr", move: "Denon A1H instead of the X6800H", delta: "+₹1.9 L", why: "Four more channels you won't use under a 2.55 m ceiling: +0.2 in the model." },
-  { component: "subs", move: "4× PB-1000 Pro instead of the sealed rear pair", delta: "+₹1.1 L", why: "+0.2 in the model, eats the contingency, and puts port noise beside row 2." },
-  { component: "subs", move: "4× PB-2000 Pro", delta: "+₹4.0 L", why: "Headroom the room doesn't need: +0.2. Breaks the cap." },
-  { component: "projector", move: "Sony Bravia 7 instead of the NZ500", delta: "−₹0.45 L", why: "Saves a little and scores 3 points lower: lighter blacks in every dark scene." },
-  { component: "treatment", move: "A typical 'acoustic package' of thin PET panels", delta: "+₹0.1 L", why: "Costs more than the spec'd build and scores 2 points lower." },
+  { component: "avr", move: "Marantz AV7706 + MM8077 + MM7055 (the video's electronics)", delta: "+₹3.0 L", why: "More amplifier power, but no Dirac and two sub outputs: −2.0 in the model." },
+  { component: "lcr", move: "Focal Theva N3 package (the video's speakers)", delta: "+₹2.3 L", why: "In-wall surrounds and more sensitivity, but a mixed-line package: −0.2 — a tie at a higher price." },
+  { component: "subs", move: "4× PB-1000 Pro instead of the sealed rear pair", delta: "+₹0.48 L", why: "+0.2 in the model, eats the contingency, and puts port noise beside row 2." },
+  { component: "subs", move: "4× PB-2000 Pro", delta: "+₹4.9 L", why: "Headroom the room doesn't need: +0.2. Breaks the cap." },
+  { component: "projector", move: "Sony Bravia 7 instead of the NZ500", delta: "−₹0.67 L", why: "Saves a little and scores 3.1 points lower: lighter blacks in every dark scene." },
+  { component: "treatment", move: "A typical 'acoustic package' of thin PET panels", delta: "−₹1.1 L", why: "Scores 2.5 lower — and costs more than the carpenter-built version of the real spec." },
   { component: "lcr", move: "Klipsch RP-8000F II towers", delta: "+₹0.5 L", why: "Too deep for the stage; ~1 dB over the RP-6000F II above 80 Hz." },
   { component: "cabling", move: "Audiophile cables or a Furman conditioner", delta: "+₹0.6–5 L", why: "No audible difference; the online UPS already regulates." },
 ];
@@ -164,7 +167,7 @@ export const LOW_RETURN2 = [
 export const IMPORT_RULES2 = [
   { k: "Everything recommended is sold in India", v: "With an Indian warranty, through authorised dealers. The only thing bought abroad is the Dirac licence, online, in USD." },
   { k: "Why not import", v: "Baggage duty is 35% above the ₹75,000 allowance; Indian street prices for Denon, JVC and SVS already sit at or below US prices after conversion; and warranties are regional." },
-  { k: "Get it in writing", v: "The NZ500 is budgeted at ₹5.75 L — a warranted authorised-dealer price, not the ₹4.19–5.0 L forum quotes, which may be grey stock. The Grandview screen (price on request), the Dirac licence (USD, card forex + 18% IGST) and the treatment build are the other estimates. The ₹1 L contingency covers them; at NZ500 full list the system is still ₹29.4 L." },
+  { k: "Get it in writing", v: "The NZ500 is budgeted at ₹5.75 L — a warranted authorised-dealer price, not the ₹4.19–5.0 L forum quotes, which may be grey stock. The Grandview screen (price on request), the Dirac licence (USD, card forex + 18% IGST) and the treatment build are the other estimates. The ₹1 L contingency covers them; at NZ500 full list the system is still ₹29.8 L." },
   { k: "Where to ask in Hyderabad", v: "AV-Vision India (JVC, Grandview), Cinebels (Klipsch), Ojas Home Cinema, AV Central, Edomotics; online: VPLAK, AV Shack, AVStore (SVS partner), ProHiFi, Audio Visual Kart." },
   { k: "Dealer discounts", v: "Street prices run 8–25% under MRP; AV Shack and VPLAK listings are often the floor to negotiate from." },
 ];
@@ -181,9 +184,9 @@ export const MARKET2: Record<string, MarketPrice[]> = {
     { market: "india", local: "₹2,79,000", inr: 279000, note: "AVStore" },
   ],
   subs: [
-    { market: "india", local: "₹1,46,600", inr: 146600, note: "Audio Visual Kart, per sub" },
-    { market: "india", local: "₹1,55,500", inr: 155500, note: "ProHiFi, per sub" },
-    { market: "india", local: "₹82,000–99,500", inr: 90000, note: "SB-1000 Pro, per sub (HTE sale – AVStore)" },
+    { market: "india", local: "₹1,08,900", inr: 108900, note: "PB-1000 Pro, VPLAK" },
+    { market: "india", local: "₹1,55,500", inr: 155500, note: "PB-1000 Pro, AVStore / ProHiFi list" },
+    { market: "india", local: "₹85,000", inr: 85000, note: "SB-1000 Pro, ProHiFi" },
   ],
   lcr: [
     { market: "india", local: "₹1,24,800 / pair", inr: 124800, note: "KEF Q Concerto Meta, VPLAK offer" },

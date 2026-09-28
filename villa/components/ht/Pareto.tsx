@@ -356,7 +356,7 @@ function Scatter({ study, pts: allPts, front, k, best, budget, sel, onToggle, ba
         {rec >= x0 * L && rec <= x1 * L && (
           <g>
             <line x1={X(rec)} x2={X(rec)} y1={m.t} y2={H - m.b} stroke={mark.cap ? BAD : "var(--g-picture)"} strokeDasharray={mark.cap ? "6 3" : "2 5"} strokeWidth={mark.cap ? 1.8 : 1} opacity={mark.cap ? 0.9 : 0.7} />
-            <text x={X(rec) + 5} y={mark.cap ? m.t + 30 : H - m.b - 26} fontSize={11} fontWeight={mark.cap ? 600 : 400} fill={mark.cap ? BAD : "var(--g-picture)"}>{mark.label}</text>
+            <text x={X(rec) + 5} y={mark.cap ? H - m.b - 8 : H - m.b - 26} fontSize={11} fontWeight={mark.cap ? 600 : 400} fill={mark.cap ? BAD : "var(--g-picture)"}>{mark.label}</text>
           </g>
         )}
 
