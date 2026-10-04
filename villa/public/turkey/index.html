@@ -1,0 +1,1542 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0C5D62">
+<meta name="robots" content="noindex">
+<link rel="manifest" href="/turkey/manifest.webmanifest">
+<link rel="icon" href="/turkey/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/turkey/icon.svg">
+<meta name="apple-mobile-web-app-capable" content="yes">
+</head>
+<body>
+<!--APP-->
+<title>Turkey Family Trip</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&display=swap">
+<style>
+/* Layout: one phone-width column, sticky clock header, bottom tab bar; cards are days, bookings and lists. */
+:root{
+  --cream:#FBF6EC; --card:#FFFDF8; --sand:#EFE2C8; --sand-2:#E3D2B0;
+  --sea:#0C5D62; --sea-2:#11777C; --sea-soft:#D7ECEA;
+  --terra:#B9502A; --terra-soft:#F6DFD3;
+  --ink:#1C2627; --ink-2:#4A5859; --ink-3:#6B7776; --line:#E2D5BC;
+  --good:#2A7A4B; --good-soft:#DCEFE2; --warn:#9A6212; --warn-soft:#F8EACB; --bad:#B0352A; --bad-soft:#F7DCD7;
+  --on-sea:#FFFFFF; --shadow:0 1px 2px rgba(60,40,10,.08),0 4px 14px rgba(60,40,10,.06);
+  --f-display:"Bricolage Grotesque","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --f-body:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --r:14px; --toph:80px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --cream:#0E1819; --card:#162425; --sand:#1F2F2F; --sand-2:#2A3B3A;
+  --sea:#4CC0BA; --sea-2:#6FD0CA; --sea-soft:#173B3B;
+  --terra:#EE8A62; --terra-soft:#3A2419;
+  --ink:#F3EBDD; --ink-2:#C4CCC8; --ink-3:#9AA6A3; --line:#2B3D3C;
+  --good:#6FCB94; --good-soft:#163525; --warn:#E8B45C; --warn-soft:#3A2D12; --bad:#F08A7E; --bad-soft:#3D1D1A;
+  --on-sea:#06201F; --shadow:none; color-scheme:dark;
+}}
+:root[data-theme="dark"]{
+  --cream:#0E1819; --card:#162425; --sand:#1F2F2F; --sand-2:#2A3B3A;
+  --sea:#4CC0BA; --sea-2:#6FD0CA; --sea-soft:#173B3B;
+  --terra:#EE8A62; --terra-soft:#3A2419;
+  --ink:#F3EBDD; --ink-2:#C4CCC8; --ink-3:#9AA6A3; --line:#2B3D3C;
+  --good:#6FCB94; --good-soft:#163525; --warn:#E8B45C; --warn-soft:#3A2D12; --bad:#F08A7E; --bad-soft:#3D1D1A;
+  --on-sea:#06201F; --shadow:none; color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{background:var(--cream);color:var(--ink)}
+body{margin:0;font:17px/1.45 var(--f-body);-webkit-text-size-adjust:100%}
+button,input,select,textarea{font:inherit;color:inherit}
+a{color:var(--sea)}
+h1,h2,h3{font-family:var(--f-display);line-height:1.15;margin:0;text-wrap:balance;letter-spacing:-.01em}
+h1{font-size:1.7rem;font-weight:800}
+h2{font-size:1.3rem;font-weight:700}
+h3{font-size:1.05rem;font-weight:700}
+p{margin:0}
+:focus-visible{outline:3px solid var(--terra);outline-offset:2px;border-radius:6px}
+.tnum{font-variant-numeric:tabular-nums}
+
+/* header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--sea);color:var(--on-sea)}
+.top-in{max-width:680px;margin:0 auto;padding:10px 16px 8px;display:flex;align-items:center;gap:10px}
+.brand{font-family:var(--f-display);font-weight:800;font-size:1.15rem;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.clocks{font-size:.82rem;line-height:1.2;text-align:right;opacity:.95}
+.clocks b{font-variant-numeric:tabular-nums}
+.kidsbtn{border:0;background:var(--terra);color:#fff;font-weight:700;border-radius:999px;padding:8px 12px;min-height:40px;cursor:pointer}
+.tile-band{height:12px;background:var(--terra);-webkit-mask:var(--tile) 0 0/24px 12px repeat-x;mask:var(--tile) 0 0/24px 12px repeat-x;opacity:.9}
+:root{--tile:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 12'%3E%3Cpath d='M12 0l3 3h4v4l3 3-3 2h-4l-3-2-3 2H5L2 10l3-3V3h4z' fill='%23000'/%3E%3C/svg%3E")}
+.syncbar{max-width:680px;margin:0 auto;padding:0 16px 6px;font-size:.78rem;display:flex;gap:8px;align-items:center;opacity:.95}
+.dot{width:8px;height:8px;border-radius:50%;background:#F4C27A;display:inline-block}
+.dot.live{background:#8EE3B0}.dot.err{background:#FF9E8E}
+
+main{max-width:680px;margin:0 auto;padding-inline:16px;padding-block:14px 110px;display:grid;grid-template-columns:minmax(0,1fr);gap:14px}
+main>*{min-width:0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px;box-shadow:var(--shadow);min-width:0}
+.card.flat{box-shadow:none}
+.sea{background:var(--sea);color:var(--on-sea);border-color:transparent}
+.sea a{color:inherit}
+.sea .btn.ghost{color:var(--on-sea);border-color:var(--on-sea)}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.col{display:grid;gap:8px}
+.spread{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.grow{flex:1;min-width:0}
+.muted{color:var(--ink-2)}
+.small{font-size:.86rem}
+.tiny{font-size:.76rem;color:var(--ink-3)}
+.eyebrow{font-size:.74rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--terra)}
+.sea .eyebrow{color:var(--sand)}
+.big{font-family:var(--f-display);font-weight:800;font-size:2.6rem;line-height:1;font-variant-numeric:tabular-nums}
+hr.sep{border:0;border-top:1px solid var(--line);margin:4px 0}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:44px;padding:8px 14px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--ink);font-weight:700;cursor:pointer;text-decoration:none;font-size:.95rem}
+.btn.pri{background:var(--sea);border-color:var(--sea);color:var(--on-sea)}
+.btn.terra{background:var(--terra);border-color:var(--terra);color:#fff}
+.btn.ghost{background:transparent}
+.btn.sm{min-height:38px;padding:6px 10px;font-size:.86rem;border-radius:10px}
+.btn.danger{color:var(--bad);border-color:var(--bad)}
+.btn.block{width:100%}
+.btn[disabled]{opacity:.5;cursor:default}
+.iconbtn{min-width:44px;min-height:44px;border:0;background:transparent;border-radius:10px;cursor:pointer;color:var(--ink-2);font-size:1.15rem}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:999px;font-size:.78rem;font-weight:700;background:var(--sand);color:var(--ink);white-space:nowrap}
+.chip.good{background:var(--good-soft);color:var(--good)}
+.chip.warn{background:var(--warn-soft);color:var(--warn)}
+.chip.bad{background:var(--bad-soft);color:var(--bad)}
+.chip.sea{background:var(--sea-soft);color:var(--sea)}
+.chip.terra{background:var(--terra-soft);color:var(--terra)}
+.seg{min-width:0;display:flex;gap:4px;background:var(--sand);padding:4px;border-radius:12px;overflow-x:auto}
+.seg button{flex:1;border:0;background:transparent;border-radius:9px;min-height:40px;padding:6px 10px;font-weight:700;cursor:pointer;color:var(--ink-2);white-space:nowrap}
+.seg button[aria-pressed="true"]{background:var(--card);color:var(--ink);box-shadow:var(--shadow)}
+.scrollx{overflow-x:auto;-webkit-overflow-scrolling:touch}
+
+/* alerts */
+.alert{display:flex;gap:10px;align-items:flex-start;padding:11px 12px;border-radius:12px;background:var(--warn-soft);color:var(--ink);border:1px solid transparent}
+.alert b{color:var(--warn)}
+.alert.bad{background:var(--bad-soft)}.alert.bad b{color:var(--bad)}
+.alert.info{background:var(--sea-soft)}.alert.info b{color:var(--sea)}
+.alert.good{background:var(--good-soft)}.alert.good b{color:var(--good)}
+.alert .ic{font-size:1.2rem;line-height:1.2}
+
+/* itinerary */
+.daynav{position:sticky;top:calc(env(safe-area-inset-top,0px) + var(--toph));z-index:10;background:var(--cream);padding-block:6px;margin-inline:-16px;padding-inline:16px}
+.daynav .seg{background:var(--sand)}
+.dayhead{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:center}
+.datebox{width:58px;text-align:center;border-radius:12px;background:var(--terra);color:#fff;padding:6px 0;font-family:var(--f-display)}
+.datebox .d{font-size:1.6rem;font-weight:800;line-height:1}
+.datebox .w{font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.hero{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:16/7;max-width:100%;background:var(--sand-2)}
+.hero img,.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.hero .cap{position:absolute;left:8px;bottom:6px;font-size:.7rem;color:#fff;text-shadow:0 1px 2px #000}
+.ph{width:100%;height:100%;display:grid;place-items:center;background:var(--sea-soft);color:var(--sea);font-family:var(--f-display);font-weight:800;font-size:1.3rem;position:relative}
+.ph::before{content:"";position:absolute;inset:0;background:var(--sea);opacity:.12;-webkit-mask:var(--tile) 0 0/24px 12px repeat;mask:var(--tile) 0 0/24px 12px repeat}
+.block-h{font-size:.74rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);margin-top:6px;display:flex;align-items:center;gap:8px}
+.block-h::after{content:"";flex:1;border-top:1px dashed var(--line)}
+.stops{display:grid;gap:0;min-height:12px;list-style:none;margin:0;padding:0}
+.stop{display:grid;grid-template-columns:28px 48px 1fr;gap:10px;align-items:start;padding:9px 0;border-bottom:1px solid var(--line)}
+.stop:last-child{border-bottom:0}
+.stop.done .sname{text-decoration:line-through;color:var(--ink-3)}
+.stop.skipped{opacity:.55}
+.grip{cursor:grab;color:var(--ink-3);display:grid;place-items:center;height:44px;touch-action:none;user-select:none;font-size:1.1rem}
+.thumb{width:48px;height:48px;border-radius:10px;overflow:hidden;background:var(--sand-2)}
+.thumb .ph{font-size:.9rem}
+.sname{font-weight:700}
+.stime{font-variant-numeric:tabular-nums;font-weight:700;color:var(--sea);margin-right:6px}
+.sacts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+.travel{font-size:.8rem;color:var(--ink-3);padding:2px 0 2px 38px}
+.travel a{color:var(--ink-3)}
+.sortable-ghost{opacity:.35}
+.sortable-chosen{background:var(--sea-soft)}
+.outfit{background:var(--terra-soft);border-radius:12px;padding:10px 12px}
+.outfit b{color:var(--terra)}
+
+/* lists */
+.list{display:grid}
+.li{display:flex;gap:10px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line);min-width:0}
+.li:last-child{border-bottom:0}
+.check{width:26px;height:26px;accent-color:var(--sea);flex:none}
+.bar{height:10px;border-radius:999px;background:var(--sand);overflow:hidden;position:relative}
+.bar i{display:block;height:100%;background:var(--sea);border-radius:999px}
+.bar i.over{background:var(--bad)}
+.bar .plan{position:absolute;top:-3px;bottom:-3px;width:2px;background:var(--ink)}
+
+table.cmp{border-collapse:collapse;min-width:520px;width:100%;font-size:.9rem}
+table.cmp th,table.cmp td{border-bottom:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}
+table.cmp th{position:sticky;left:0;background:var(--card);font-size:.78rem;color:var(--ink-3);text-transform:uppercase;letter-spacing:.05em;width:110px}
+table.cmp td.chosen{background:var(--good-soft)}
+
+.tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.tilebtn{display:grid;gap:4px;text-align:left;padding:14px;border-radius:var(--r);border:1px solid var(--line);background:var(--card);cursor:pointer;min-height:92px;box-shadow:var(--shadow)}
+.tilebtn .t{font-family:var(--f-display);font-weight:700;font-size:1.05rem}
+.tilebtn .s{font-size:.8rem;color:var(--ink-3)}
+
+/* bottom tabs */
+.tabs{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--card);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px)}
+.tabs-in{max-width:680px;margin:0 auto;display:grid;grid-template-columns:repeat(6,1fr)}
+.tab{border:0;background:transparent;min-height:60px;display:grid;place-items:center;gap:0;font-size:.72rem;font-weight:700;color:var(--ink-3);cursor:pointer;padding:6px 0}
+.tab svg{width:24px;height:24px}
+.tab[aria-current="page"]{color:var(--sea)}
+.tab[aria-current="page"] svg{stroke:var(--sea)}
+
+/* sheet */
+.scrim{position:fixed;inset:0;background:rgba(10,20,20,.45);z-index:50;display:flex;align-items:flex-end;justify-content:center}
+.sheet{background:var(--card);width:100%;max-width:680px;max-height:92%;overflow:auto;border-radius:18px 18px 0 0;padding:16px 16px calc(20px + env(safe-area-inset-bottom,0px));display:grid;gap:12px}
+.field{display:grid;gap:4px}
+.field label{font-size:.82rem;font-weight:700;color:var(--ink-2)}
+.field input,.field select,.field textarea,.inp{width:100%;min-height:46px;border:1px solid var(--line);border-radius:10px;background:var(--cream);padding:9px 11px}
+.field textarea{min-height:90px;resize:vertical}
+.field .hint{font-size:.76rem;color:var(--ink-3)}
+.field .err{font-size:.8rem;color:var(--bad);font-weight:700}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:84px;z-index:60;background:var(--ink);color:var(--cream);padding:10px 16px;border-radius:12px;font-weight:700;max-width:90vw}
+
+/* kids */
+.kids{font-family:var(--f-display)}
+.kids .adv{font-size:1.45rem;font-weight:700;line-height:1.25}
+.spot{display:grid;grid-template-columns:1fr auto auto;gap:8px;align-items:center;padding:8px 0;border-bottom:1px dashed var(--line)}
+.spot:last-child{border-bottom:0}
+.kbox{width:46px;height:46px;border-radius:12px;border:2px solid var(--sea);background:transparent;font-size:1.3rem;cursor:pointer;color:var(--sea)}
+.kbox[aria-pressed="true"]{background:var(--sea);color:var(--on-sea)}
+.phrase{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line)}
+.phrase .tr{font-family:var(--f-display);font-weight:800;font-size:1.2rem;color:var(--sea)}
+.bigshow{position:fixed;inset:0;z-index:70;background:var(--sea);color:var(--on-sea);display:grid;place-items:center;text-align:center;padding:24px;cursor:pointer}
+.bigshow .w{font-family:var(--f-display);font-weight:800;font-size:clamp(2.2rem,11vw,5rem);line-height:1.05}
+
+/* print */
+.printview{position:fixed;inset:0;z-index:80;background:#fff;color:#111;overflow:auto;padding:20px 16px 60px}
+.printview h1,.printview h2{color:#0C5D62}
+.printview .pday{border-top:2px solid #B9502A;padding-top:8px;margin-top:16px;break-inside:avoid}
+.printview ul{padding-left:18px;margin:6px 0}
+.printview .noprint{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+@media print{.printview .noprint{display:none}.printview{position:static;padding:0}body>*:not(.printview){display:none!important}}
+@media (prefers-reduced-motion:no-preference){.sheet{animation:up .18s ease-out}@keyframes up{from{transform:translateY(24px);opacity:.6}to{transform:none;opacity:1}}}
+@media (max-width:380px){.tab{font-size:.66rem}.big{font-size:2.2rem}.grid2{grid-template-columns:1fr}}
+</style>
+
+<header class="top" id="top">
+  <div class="top-in">
+    <div class="brand" id="brand">Turkey trip</div>
+    <div class="clocks" id="clocks"></div>
+    <button class="kidsbtn" data-a="go" data-tab="kids" aria-label="Open kids corner">Kids</button>
+  </div>
+  <div class="syncbar" id="syncbar"></div>
+  <div class="tile-band" aria-hidden="true"></div>
+</header>
+<main id="main" aria-live="polite"></main>
+<nav class="tabs" aria-label="Sections"><div class="tabs-in" id="tabs"></div></nav>
+<div id="layer"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.6/Sortable.min.js"></script>
+<script>
+"use strict";
+/* ================================================================ seed: the family's plan
+ * Everything below comes from the plan the family gave, plus researched facts that are
+ * labelled with their source and date. Prices, times and confirmation numbers that the
+ * plan does not give are left empty and show as "TBD". Every seeded record has u: 0, so
+ * any edit on either phone wins over the seed.
+ */
+const DAYS = ['2026-10-17','2026-10-18','2026-10-19','2026-10-20','2026-10-21','2026-10-22','2026-10-23'];
+const BLOCKS = [['morning','Morning'],['afternoon','Afternoon'],['evening','Evening']];
+const PEOPLE = [['a1','Adult 1'],['a2','Adult 2'],['k9','Kid (9)'],['k7','Kid (7)']];
+const CURRENCIES = ['SGD','TRY','EUR','USD','INR'];
+const STATUSES = ['idea','shortlisted','quoted','booked','paid','cancelled'];
+const BOOK_CATS = ['Flights','Hotels','Balloon','Domestic flights','Day tour','Hammam','Transfers','Tickets','Other'];
+const EXP_CATS = ['Flights','Hotels','Balloon','Tours & tickets','Transport','Food','Shopping','Hammam & spa','Other'];
+const PACK_CATS = ['Clothes','Toiletries','Documents','Electronics','Meds','Kids’ stuff'];
+
+/* Places: what Maps should search for, which Wikipedia article supplies the photo,
+ * the weekdays each is closed (0 = Sunday), and facts. Opening facts checked Oct 2026
+ * against istanbul.com and operator pages; re-check before you go. */
+const PLACES = {
+  ist_airport:{n:'Istanbul Airport',q:'Istanbul Airport IST',w:'Istanbul_Airport'},
+  hotel_ist:{n:'JW Marriott Istanbul Bosphorus',q:'JW Marriott Hotel Istanbul Bosphorus Karaköy',w:'Karaköy',
+    fact:'Karaköy is one of the oldest neighbourhoods in Istanbul. Genoese traders ran it as a walled colony in the 1300s; Galata Tower was part of their walls.'},
+  ortakoy:{n:'Ortaköy waterfront',q:'Ortaköy Mosque Istanbul',w:'Ortaköy_Mosque',
+    fact:'Ortaköy Mosque (1856) sits right under the Bosphorus Bridge, which joins Europe to Asia.',
+    kids:'Stand by the water and wave at Asia — it’s the other side of the Bosphorus! Try a kumpir: a giant baked potato stuffed with toppings you choose.'},
+  blue_mosque:{n:'Blue Mosque (Sultan Ahmed Mosque)',q:'Sultan Ahmed Mosque',w:'Sultan_Ahmed_Mosque',
+    hours:'Free. Closes to visitors during the five daily prayers, and longest around Friday midday prayer. Cover shoulders and knees; women cover hair; shoes off.',
+    fact:'Built 1609–1616. More than 20,000 hand-made İznik tiles, mostly blue, give it its nickname.',
+    kids:'Count the minarets — most mosques have one, two or four. This one has six!'},
+  hagia_sophia:{n:'Hagia Sophia',q:'Hagia Sophia Grand Mosque',w:'Hagia_Sophia',
+    hours:'Foreign visitors: €25 per person (2026), upper gallery only; the ground floor is for worship. Same dress code as the Blue Mosque.',
+    fact:'Finished in 537 AD. For almost a thousand years it was the biggest cathedral in the world; it has been a church, a mosque, a museum and a mosque again.',
+    kids:'Its dome is 55 metres high — taller than a 15-storey building. Look for the giant round shields with golden writing.'},
+  hippodrome:{n:'Hippodrome (Sultanahmet Square)',q:'Hippodrome of Constantinople',w:'Hippodrome_of_Constantinople',
+    fact:'Up to 100,000 people once watched chariot races here. The Egyptian obelisk is about 3,500 years old — far older than the city.',
+    kids:'Find the obelisk covered in Egyptian picture-writing (hieroglyphs). It was carried here by ship from Egypt over 1,600 years ago.'},
+  basilica_cistern:{n:'Basilica Cistern',q:'Basilica Cistern Istanbul',w:'Basilica_Cistern',
+    hours:'Day entry 1,950 TL for foreign visitors (2026); evening session costs more. Card or Istanbulkart only, no cash.',
+    fact:'An underground water tank built in 532 for Emperor Justinian, held up by 336 columns.',
+    kids:'Find the two Medusa heads at the bottom of the columns — one is upside down and one is on its side. Nobody knows for sure why!'},
+  topkapi:{n:'Topkapı Palace',q:'Topkapı Palace Museum',w:'Topkapı_Palace',closed:[2],
+    hours:'Closed Tuesdays. 9:00–18:00 (last entry 17:00) through December. Harem is a separate ticket.',
+    fact:'Home of the Ottoman sultans for about 400 years.',
+    kids:'See the Spoonmaker’s Diamond (86 carats). The legend says a fisherman found it in a rubbish heap and swapped it for three wooden spoons.'},
+  grand_bazaar:{n:'Grand Bazaar',q:'Grand Bazaar Istanbul',w:'Grand_Bazaar,_Istanbul',closed:[0],
+    hours:'Closed Sundays and on religious holidays. Mon–Sat about 8:30–19:00; free entry.',
+    fact:'One of the oldest and largest covered markets in the world: about 60 streets and 4,000 shops.',
+    kids:'It’s a maze! Pick a gate number when you go in and see if you can find your way back to it.'},
+  spice_bazaar:{n:'Spice Bazaar',q:'Spice Bazaar Eminönü',w:'Spice_Bazaar',
+    kids:'Smell the spices and try lokum (Turkish delight). Ask for a piece of pomegranate lokum.'},
+  hammam:{n:'Hammam (Turkish bath)',q:'Kılıç Ali Paşa Hamamı',w:'Hammam',
+    hours:'Kılıç Ali Paşa (Tophane, near the hotel) runs separate women’s and men’s sessions; children 4–12 pay a fee and get no scrub. For all four together, ask the hotel spa about a private hammam.',
+    fact:'Turkish baths go back to Roman steam baths. You warm up on a hot marble stone, then get scrubbed and soaped.'},
+  dolmabahce:{n:'Dolmabahçe Palace',q:'Dolmabahçe Palace',w:'Dolmabahçe_Palace',closed:[1],
+    hours:'Closed Mondays. Tue–Sun 9:00–17:00. About 2,000 TL (~€40) for foreign visitors (mid-2026); official tickets at millisaraylar.gov.tr.',
+    fact:'Finished in 1856. Its crystal chandelier, a gift from Queen Victoria, weighs about 4.5 tonnes.',
+    kids:'Atatürk, founder of modern Turkey, died here at 9:05 on 10 November 1938. Many clocks in the palace are still stopped at 9:05.'},
+  galataport:{n:'Galataport & Karaköy waterfront',q:'Galataport Istanbul',w:'Galataport'},
+  galata_tower:{n:'Galata Tower',q:'Galata Tower',w:'Galata_Tower',
+    kids:'A legend says that in the 1600s a man named Hezârfen Ahmed Çelebi strapped on wings, jumped from this tower and glided all the way to Asia.'},
+  nav_airport:{n:'Nevşehir Kapadokya Airport (NAV)',q:'Nevşehir Kapadokya Airport',w:'Nevşehir_Kapadokya_Airport'},
+  asr_airport:{n:'Kayseri Airport (ASR)',q:'Kayseri Erkilet Airport',w:'Kayseri_Erkilet_Airport'},
+  goreme:{n:'Göreme',q:'Göreme Nevşehir',w:'Göreme',
+    fact:'Millions of years ago volcanoes covered this land in ash. The soft rock was easy to carve, so people dug homes, churches and whole hotels into it.',
+    kids:'Tonight you sleep in a cave! People have lived in these rock rooms for over a thousand years.'},
+  sunset_point:{n:'Göreme sunset viewpoint',q:'Sunset Point Göreme',w:'Göreme_National_Park'},
+  balloon:{n:'Hot-air balloon flight',q:'Göreme balloon launch',w:'Cappadocia',
+    fact:'On a calm morning well over a hundred balloons can be in the sky at sunrise. Pilots steer only up and down; the wind does the rest.',
+    kids:'Balloons fly because hot air is lighter than cold air. That’s why they fly at dawn, when the air is cool and still.'},
+  goreme_oam:{n:'Göreme Open Air Museum',q:'Göreme Open Air Museum',w:'Göreme_National_Park',
+    fact:'A valley of rock-cut churches painted about 1,000 years ago. The Dark Church’s paintings stayed bright because so little light gets in.',
+    kids:'Look up inside the churches: the painted ceilings are carved out of solid rock.'},
+  pasabag:{n:'Paşabağ (Monks’ Valley)',q:'Paşabağ Monks Valley',w:'Fairy_chimney',
+    fact:'Fairy chimneys form when wind and rain wear away soft volcanic rock under a harder cap stone, like stone mushrooms.',
+    kids:'A monk called Simeon once lived alone inside one of these chimneys. Can you guess which one?'},
+  devrent:{n:'Devrent (Imagination) Valley',q:'Devrent Valley',w:'Fairy_chimney',
+    kids:'This is Imagination Valley. Find the rock shaped like a camel, then find your own animal shapes.'},
+  avanos:{n:'Avanos',q:'Avanos Nevşehir',w:'Avanos',
+    fact:'Avanos sits on the Kızılırmak, the “Red River”, the longest river entirely inside Turkey. Its red clay has been made into pottery for thousands of years.',
+    kids:'Ask to try the potter’s wheel — the potters kick the wheel round with their foot!'},
+  uchisar:{n:'Uçhisar Castle',q:'Uçhisar Castle',w:'Uçhisar',
+    fact:'Uçhisar Castle is a giant rock full of rooms and tunnels, and the highest point in the area.'},
+  kadikoy_ferry:{n:'Ferry to Kadıköy',q:'Karaköy ferry pier',w:'Kadıköy',
+    kids:'You’re sailing from Europe to Asia! Seagulls follow the ferry — watch them catch bits of simit in the air.'},
+  kadikoy:{n:'Kadıköy market',q:'Kadıköy Çarşı',w:'Kadıköy'},
+  bull:{n:'Bull Statue & Bahariye Street',q:'Kadıköy Boğa Heykeli',w:'Kadıköy',
+    kids:'The bronze bull was made in France in the 1860s and has stood in Kadıköy since 1990. People meet friends “at the bull”.'},
+  moda:{n:'Moda & waterfront promenade',q:'Moda Sahili Kadıköy',w:'Moda,_Kadıköy'},
+  istinyepark:{n:'İstinyePark',q:'İstinyePark Istanbul',w:'İstinyePark'},
+  bosphorus:{n:'Bosphorus',q:'Bosphorus Beşiktaş',w:'Bosphorus',
+    fact:'The Bosphorus is a 31 km strait that splits Istanbul between Europe and Asia.'},
+};
+const WEEKDAY = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+
+function S_(id, day, block, ord, name, o = {}) {
+  return { id, u: 0, day, block, ord, name, time: '', pk: '', notes: '', status: 'planned', tags: [], travel: '', moved: '', ...o };
+}
+
+function seedDoc() {
+  const c = { kv:{}, days:{}, stops:{}, bookings:{}, options:{}, outfits:{}, packing:{}, expenses:{}, budget:{}, todos:{}, docs:{}, contacts:{}, spots:{} };
+  const add = (coll, r) => { c[coll][r.id] = { u: 0, ...r }; };
+
+  add('kv', { id: 'home', v: 'SGD' });
+  add('kv', { id: 'names', v: { a1: 'Adult 1', a2: 'Adult 2', k9: 'Kid (9)', k7: 'Kid (7)' } });
+  add('kv', { id: 'heights', v: { k9: null, k7: null } });
+  // Value of one unit in SGD. TRY from OFX, 1 Sep 2026 (1 SGD = 37.91 TRY); the others are rough. Edit before you go.
+  add('kv', { id: 'rates', v: { SGD: 1, TRY: 0.02638, EUR: 1.50, USD: 1.29, INR: 0.0152 }, asOf: 'TRY: OFX 1 Sep 2026. EUR/USD/INR: rough, update.' });
+  add('kv', { id: 'balloonDay', v: '2026-10-20' });
+
+  const days = [
+    ['2026-10-17','Arrive Istanbul','Land, check in, Bosphorus sunset','We fly to Istanbul and watch the sun set over the water between Europe and Asia.','ortakoy'],
+    ['2026-10-18','Old Istanbul + Hammam','The main historic day','Today we explore a 1,500-year-old church, a mosque with six towers and a secret underground water palace.','hagia_sophia'],
+    ['2026-10-19','Bazaar → Cappadocia','Grand Bazaar, then fly to the cave hotel','We get lost in a giant market, then fly to a land of fairy chimneys and sleep in a cave.','grand_bazaar'],
+    ['2026-10-20','Cappadocia big day','Balloon at sunrise, North/Red tour','We fly in a hot-air balloon at sunrise and explore valleys full of stone mushrooms.','balloon'],
+    ['2026-10-21','Kadıköy & Moda','Fly back, ferry to the Asian side','We sail from Europe to Asia on a ferry and visit the famous bronze bull.','kadikoy_ferry'],
+    ['2026-10-22','Resort, palace & shopping','Deliberately light','Pool morning, a palace full of chandeliers, then shopping for treats.','dolmabahce'],
+    ['2026-10-23','Fly home','3:00 AM departure','A very early start: we fly home with our heads full of adventures.','ist_airport'],
+  ];
+  for (const [id, title, theme, kids, hero] of days) add('days', { id, title, theme, kids, hero, notes: '' });
+
+  const st = (...a) => { const r = S_(...a); c.stops[r.id] = r; };
+  // Sat 17
+  st('s01','2026-10-17','afternoon',1,'Land in Istanbul',{time:'14:00',pk:'ist_airport',tags:['flight'],notes:'Arrival 2:00 PM. Check the ticket for IST or SAW. Keep the hotel address handy for the driver.'});
+  st('s02','2026-10-17','afternoon',2,'Transfer to hotel & check in',{pk:'hotel_ist',travel:'≈ 60–90 min by road from IST, depending on traffic'});
+  st('s03','2026-10-17','afternoon',3,'Relax at the hotel',{pk:'hotel_ist'});
+  st('s04','2026-10-17','evening',1,'Ortaköy & Bosphorus waterfront — sunset',{pk:'ortakoy',travel:'≈ 20–30 min by taxi along the Bosphorus',notes:'Sunset is around 18:30. Kids: kumpir and waffles on the waterfront.'});
+  st('s05','2026-10-17','evening',2,'Dinner',{pk:'ortakoy'});
+  // Sun 18
+  st('s06','2026-10-18','morning',1,'Blue Mosque',{pk:'blue_mosque',tags:['mosque','walk'],travel:'≈ 15 min by T1 tram (Karaköy → Sultanahmet) or taxi',notes:'Go early, before the midday prayer. Scarves on.'});
+  st('s07','2026-10-18','morning',2,'Hagia Sophia',{pk:'hagia_sophia',tags:['mosque','walk'],travel:'≈ 5 min walk across the square'});
+  st('s08','2026-10-18','morning',3,'Hippodrome',{pk:'hippodrome',tags:['walk'],travel:'≈ 3 min walk'});
+  st('s09','2026-10-18','afternoon',1,'Lunch in Sultanahmet',{});
+  st('s10','2026-10-18','afternoon',2,'Basilica Cistern',{pk:'basilica_cistern',tags:['walk'],travel:'≈ 5 min walk'});
+  st('s11','2026-10-18','afternoon',3,'Topkapı Palace',{pk:'topkapi',tags:['walk'],travel:'≈ 10 min walk',notes:'Give it 2–3 hours. If the kids are flagging, move it to Monday morning (it’s closed Tuesdays).'});
+  st('s12','2026-10-18','evening',1,'Evening hammam',{pk:'hammam',tags:['swim'],notes:'Public hammams split men and women. Book the hotel spa’s private hammam if you want all four together.'});
+  // Mon 19
+  st('s13','2026-10-19','morning',1,'Grand Bazaar',{pk:'grand_bazaar',tags:['walk'],travel:'≈ 15 min by tram or taxi',moved:'Moved here from Sun 18: the Grand Bazaar is closed on Sundays.'});
+  st('s14','2026-10-19','morning',2,'Bosphorus waterfront (Karaköy / Galataport)',{pk:'galataport'});
+  st('s15','2026-10-19','afternoon',1,'Lunch',{});
+  st('s16','2026-10-19','afternoon',2,'Fly Istanbul → Cappadocia',{pk:'nav_airport',tags:['flight'],notes:'Flight TBD. NAV is ≈ 40–50 min from Göreme; Kayseri (ASR) is ≈ 70–90 min. Leave the hotel about 2½–3 hours before departure.'});
+  st('s17','2026-10-19','evening',1,'Check in to the cave hotel',{pk:'goreme'});
+  st('s18','2026-10-19','evening',2,'Sunset viewpoint',{pk:'sunset_point'});
+  st('s19','2026-10-19','evening',3,'Cave-hotel dinner',{pk:'goreme'});
+  // Tue 20
+  st('s20','2026-10-20','morning',1,'Hot-air balloon',{pk:'balloon',tags:['balloon','cold'],notes:'Pickup time TBD — operators usually collect about an hour before sunrise (≈ 7:00). Warm layers.'});
+  st('s21','2026-10-20','morning',2,'Breakfast & rest at the hotel',{pk:'goreme'});
+  st('s22','2026-10-20','afternoon',1,'Göreme Open Air Museum',{pk:'goreme_oam',tags:['walk']});
+  st('s23','2026-10-20','afternoon',2,'Fairy chimneys — Paşabağ / Monks’ Valley',{pk:'pasabag',tags:['walk']});
+  st('s24','2026-10-20','afternoon',3,'Devrent Valley',{pk:'devrent'});
+  st('s25','2026-10-20','afternoon',4,'Avanos',{pk:'avanos'});
+  st('s26','2026-10-20','afternoon',5,'Uçhisar viewpoint / castle',{pk:'uchisar'});
+  st('s27','2026-10-20','evening',1,'Sunset viewpoint',{pk:'sunset_point'});
+  st('s28','2026-10-20','evening',2,'Dinner at the cave hotel',{pk:'goreme'});
+  // Wed 21
+  st('s29','2026-10-21','morning',1,'Sleep in / relaxed breakfast',{pk:'goreme',tags:['backup'],notes:'This is also the balloon backup slot.'});
+  st('s30','2026-10-21','morning',2,'Fly Cappadocia → Istanbul',{pk:'nav_airport',tags:['flight'],notes:'Flight TBD. Book one leaving no earlier than about 12:00, so a balloon moved to this morning still works.'});
+  st('s31','2026-10-21','afternoon',1,'Ferry to Kadıköy',{pk:'kadikoy_ferry',tags:['walk'],travel:'≈ 20 min ferry from Karaköy or Eminönü'});
+  st('s32','2026-10-21','afternoon',2,'Kadıköy market',{pk:'kadikoy',tags:['walk']});
+  st('s33','2026-10-21','afternoon',3,'Bull Statue & Bahariye Street',{pk:'bull',travel:'≈ 5 min walk'});
+  st('s34','2026-10-21','afternoon',4,'Moda, waterfront promenade, cafés & ice cream',{pk:'moda',travel:'≈ 15 min walk'});
+  st('s35','2026-10-21','evening',1,'Sunset at Moda',{pk:'moda'});
+  st('s36','2026-10-21','evening',2,'Ferry back to the European side',{pk:'kadikoy_ferry'});
+  // Thu 22
+  st('s37','2026-10-22','morning',1,'Sleep in & hotel breakfast',{pk:'hotel_ist'});
+  st('s38','2026-10-22','morning',2,'Pool & spa',{pk:'hotel_ist',tags:['swim']});
+  st('s39','2026-10-22','morning',3,'Dolmabahçe Palace (optional)',{pk:'dolmabahce',travel:'≈ 10 min by taxi from Karaköy',moved:'Moved here from Mon 19: Dolmabahçe is closed on Mondays.'});
+  st('s40','2026-10-22','afternoon',1,'İstinyePark shopping',{pk:'istinyepark',travel:'≈ 30–45 min by taxi',notes:'Clothes, shoes, cosmetics, Turkish and luxury brands, kids’ shopping.'});
+  st('s41','2026-10-22','evening',1,'Back to the hotel & pack',{pk:'hotel_ist'});
+  st('s42','2026-10-22','evening',2,'Final Istanbul dinner',{});
+  // Fri 23
+  st('s43','2026-10-23','morning',1,'Leave hotel',{time:'03:00',pk:'hotel_ist',tags:['flight'],notes:'Settle the bill and pack the car the night before.'});
+  st('s44','2026-10-23','morning',2,'Arrive at the airport',{time:'03:45',pk:'ist_airport',tags:['flight']});
+  st('s45','2026-10-23','morning',3,'Flight home',{time:'06:00',pk:'ist_airport',tags:['flight']});
+
+  const B = (id, o) => add('bookings', { id, cat:'Other', title:'', provider:'', date:'', time:'', status:'idea', price:null, cur:'EUR', priceNote:'', conf:'', contact:'', link:'', terms:'', notes:'', prio:null, group:'', ...o });
+  B('b01',{cat:'Balloon',title:'Hot-air balloon (4 people)',date:'2026-10-20',status:'shortlisted',prio:1,group:'balloon',notes:'Preferred Tue 20 Oct; the only realistic backup is Wed 21 Oct morning. Compare rescheduling terms.'});
+  B('b02',{cat:'Hotels',title:'Cappadocia cave hotel (2 nights)',date:'2026-10-19',status:'idea',prio:2,group:'capHotel',notes:'Check in Mon 19, check out Wed 21. Preferred area Göreme. Ask about a family room or connecting rooms, airport transfer, and an early balloon-morning breakfast.'});
+  B('b03',{cat:'Domestic flights',title:'Istanbul → Cappadocia',date:'2026-10-19',status:'idea',prio:3,cur:'TRY',notes:'Afternoon. Prefer NAV (Nevşehir) over ASR (Kayseri) for the shorter drive. Domestic baggage allowances can be lower; pack light for Cappadocia.'});
+  B('b04',{cat:'Domestic flights',title:'Cappadocia → Istanbul',date:'2026-10-21',status:'idea',prio:3,cur:'TRY',notes:'Book a departure no earlier than about 12:00 so the balloon backup morning still works.'});
+  B('b05',{cat:'Day tour',title:'North / Red Cappadocia tour',date:'2026-10-20',status:'idea',prio:4,notes:'Göreme Open Air Museum, Paşabağ/Monks’ Valley, Devrent, Avanos, Uçhisar. A private tour lets you pace it for the kids after the early balloon start.'});
+  B('b06',{cat:'Flights',title:'Flight to Istanbul',date:'2026-10-17',time:'14:00',status:'booked',notes:'Arrival time from the plan. Add airline, flight number and confirmation. Change the status if not booked yet.'});
+  B('b07',{cat:'Flights',title:'Flight home from Istanbul',date:'2026-10-23',time:'06:00',status:'booked',notes:'Departure time from the plan. Add airline, flight number and confirmation.'});
+  B('b08',{cat:'Hotels',title:'JW Marriott Istanbul Bosphorus — stay 1',provider:'JW Marriott Istanbul Bosphorus',date:'2026-10-17',status:'shortlisted',notes:'Nights of 17 and 18 Oct. Ask to store big bags while you are in Cappadocia.'});
+  B('b09',{cat:'Hotels',title:'JW Marriott Istanbul Bosphorus — stay 2',provider:'JW Marriott Istanbul Bosphorus',date:'2026-10-21',status:'shortlisted',notes:'Nights of 21 and 22 Oct; you leave at 3:00 AM on the 23rd, so settle the bill the night before.'});
+  B('b10',{cat:'Hammam',title:'Evening hammam',date:'2026-10-18',status:'idea',notes:'Confirm children’s policy and whether sessions are split by gender. Option: the hotel spa’s private hammam.'});
+  B('b11',{cat:'Transfers',title:'Airport → hotel on arrival',date:'2026-10-17',time:'14:00',status:'idea'});
+  B('b12',{cat:'Transfers',title:'Cappadocia airport → Göreme hotel',date:'2026-10-19',status:'idea',notes:'Many cave hotels arrange this; ask when booking.'});
+  B('b13',{cat:'Transfers',title:'Göreme hotel → Cappadocia airport',date:'2026-10-21',status:'idea'});
+  B('b14',{cat:'Transfers',title:'Hotel → airport at 3:00 AM',date:'2026-10-23',time:'03:00',status:'idea',notes:'Pre-book; taxis at 3 AM are not guaranteed.'});
+
+  const O = (id, o) => add('options', { id, group:'', name:'', rank:null, basket:'', duration:'', price:null, cur:'EUR', per:'person', minHeight:null, minAge:'', resched:'', area:'', room:'', cancel:'', link:'', contact:'', quote:'to ask', notes:'', chosen:false, ...o });
+  O('o01',{group:'balloon',rank:1,name:'Royal Balloon — Queen Plus',basket:'16-person',duration:'60 min',resched:'TBD — ask for weather rescheduling to 21 Oct in writing',notes:'Top choice if the quote is reasonable.'});
+  O('o02',{group:'balloon',rank:2,name:'Butterfly Balloons',basket:'16–20 person (ask for 16)',duration:'60 min or more',resched:'TBD — ask',notes:'Try for the 16-person basket.'});
+  O('o03',{group:'balloon',rank:3,name:'Voyager Balloons — Comfort',basket:'16-person',duration:'75 min',price:330,cur:'EUR',per:'person',minHeight:137,resched:'Strongest next-morning weather rescheduling of the three (per your notes). Get it in writing.',notes:'Minimum height 137 cm — check both kids.'});
+  O('o11',{group:'capHotel',name:'Museum Hotel',area:'Uçhisar (≈ 10 min drive to Göreme)'});
+  O('o12',{group:'capHotel',name:'Cappadocia Cave Resort & Spa',area:'Uçhisar — confirm'});
+  O('o13',{group:'capHotel',name:'Zara Cave Hotel',area:'TBD — confirm'});
+  O('o14',{group:'capHotel',name:'Artemis Cave Suites',area:'TBD — confirm'});
+  O('o15',{group:'capHotel',name:'Carus Cappadocia',area:'TBD — confirm'});
+
+  const OF = (id, day, person, pieces, o = {}) => add('outfits', { id, day, person, pieces, note:'', suggested:false, ...o });
+  const P = (n, cat = 'Clothes') => ({ n, cat });
+  OF('f01','2026-10-17','a1',[P('Black off-shoulder top'),P('Denim skirt'),P('Black pumps'),P('Camel/taupe coat (optional)'),P('Gold accessories')]);
+  OF('f02','2026-10-18','a1',[P('Blue tunic (co-ord)'),P('Blue wide-leg pants (co-ord)'),P('Ivory/cream scarf'),P('Comfortable walking shoes')],{note:'Scarf on for the Blue Mosque and Hagia Sophia. Walking shoes added: lots of cobbles today.'});
+  OF('f03','2026-10-19','a1',[P('Pink peplum top'),P('Jeans'),P('Cream/white sneakers'),P('Camel/taupe light jacket')]);
+  OF('f04','2026-10-20','a1',[P('Thermal base layer'),P('Warm sweater or fleece'),P('Puffer or warm jacket'),P('Comfortable trousers'),P('Closed walking shoes'),P('Beanie & gloves')],{suggested:true,note:'Suggested: dawn at the balloon launch is close to freezing; the afternoon tour is mild. Peel off layers.'});
+  OF('f05','2026-10-21','a1',[P('Ivory kurta/tunic'),P('Teal/emerald wide-leg pants'),P('Gold earrings'),P('Ivory/gold juttis'),P('Ivory structured bag')]);
+  OF('f06','2026-10-22','a1',[P('Swimwear'),P('Comfortable shopping outfit')],{suggested:true,note:'Suggested: pool and spa in the morning, then shopping.'});
+  OF('f07','2026-10-23','a1',[P('Comfortable travel outfit')],{suggested:true});
+  for (const k of ['k9','k7']) {
+    OF('f20'+k,'2026-10-20',k,[P('Thermal top'),P('Fleece'),P('Warm jacket'),P('Beanie & gloves'),P('Sneakers')],{suggested:true,note:'Suggested for the balloon dawn.'});
+    OF('f18'+k,'2026-10-18',k,[P('Trousers or skirt below the knee'),P('T-shirt with sleeves'),P('Light jacket'),P('Comfy sneakers')],{suggested:true,note:'Suggested: covered knees and shoulders for the mosques.'});
+  }
+
+  let pk = 0;
+  const K = (person, cat, name, qty = 1) => add('packing', { id: 'p' + String(++pk).padStart(3, '0'), person, cat, name, qty, packed: false });
+  K('a1','Documents','Passports (all four)'); K('a1','Documents','Visa / e-Visa printouts (if needed)'); K('a1','Documents','Travel insurance details');
+  K('a1','Documents','Flight & hotel confirmations (offline copies)'); K('a1','Documents','Balloon voucher'); K('a2','Documents','Cards + some Turkish lira cash');
+  K('a2','Electronics','Phone chargers'); K('a2','Electronics','Power bank'); K('a2','Electronics','Plug adapter (Turkey uses type C/F, 230 V)'); K('a2','Electronics','Kids’ headphones');
+  K('a1','Meds','Children’s paracetamol / ibuprofen'); K('a1','Meds','Motion-sickness tablets (ferry, balloon, minibus)'); K('a1','Meds','Plasters & antiseptic'); K('a1','Meds','Any prescriptions'); K('a1','Meds','Sunscreen');
+  for (const [p] of PEOPLE) { K(p,'Toiletries','Toothbrush & toiletries'); K(p,'Clothes','Swimwear (hammam / pool)'); K(p,'Clothes','Warm layer for balloon dawn'); K(p,'Clothes','Comfortable walking shoes'); K(p,'Clothes','Pyjamas'); }
+  K('a1','Clothes','Scarf for mosques'); K('a2','Clothes','Scarf or shawl for mosques');
+  for (const p of ['k9','k7']) { K(p,'Kids’ stuff','Small backpack'); K(p,'Kids’ stuff','Water bottle'); K(p,'Kids’ stuff','Book or activity pad for flights'); }
+  K('a2','Kids’ stuff','Snacks for the 3:00 AM airport run');
+
+  for (const cat of EXP_CATS) add('budget', { id: 'cat:' + cat, planned: null });
+
+  const T = (id, text, o = {}) => add('todos', { id, text, due: '', owner: '', done: false, ...o });
+  T('t01','Get balloon quotes from Royal (Queen Plus) and Butterfly; ask each for weather-rescheduling terms to 21 Oct');
+  T('t02','Measure both kids’ heights (Voyager needs 137 cm) and enter them in the Balloon planner');
+  T('t03','Book the Cappadocia hotel (after the balloon)');
+  T('t04','Book domestic flights: IST → NAV Mon 19 afternoon; NAV → IST Wed 21 no earlier than about 12:00');
+  T('t05','Check visa rules for each passport (evisa.gov.tr is the official site)');
+  T('t06','Decide on the hammam: public (split by gender) or the hotel spa’s private one');
+  T('t07','Pre-book the 3:00 AM airport transfer for Fri 23');
+  T('t08','Download offline Google Maps for Istanbul and Cappadocia');
+  T('t09','Buy Istanbulkart transit cards on arrival (trams, ferries; also accepted at the Cistern)');
+
+  const D = (id, kind, title, o = {}) => add('docs', { id, kind, title, who: '', ref: '', link: '', expiry: '', notes: '', ...o });
+  for (const [p, n] of PEOPLE) D('d_pp_' + p, 'Passport', 'Passport — ' + n, { who: p, notes: 'Check it is valid well past 23 Oct 2026.' });
+  D('d_visa','Visa','Visa / e-Visa',{notes:'Rules depend on the passport. Use only the official site, evisa.gov.tr.'});
+  D('d_ins','Insurance','Travel insurance',{notes:'Add the policy’s last 4 digits and the 24-hour assistance number.'});
+  D('d_fl','Flight','International flight tickets');
+  D('d_htl1','Hotel','JW Marriott Istanbul Bosphorus confirmation');
+  D('d_htl2','Hotel','Cappadocia hotel confirmation');
+  D('d_bal','Booking','Balloon booking voucher');
+
+  const C = (id, label, value, o = {}) => add('contacts', { id, label, value, notes: '', ...o });
+  C('c01','Emergency (ambulance, police, fire)','112',{notes:'Single emergency number across Turkey.'});
+  C('c02','JW Marriott Istanbul Bosphorus','',{notes:'Address and phone: TBD — copy from the confirmation.'});
+  C('c03','Cappadocia hotel','',{notes:'TBD after booking.'});
+  C('c04','Embassy / consulate','',{notes:'Add your embassy in Ankara or consulate in Istanbul for your passports.'});
+  C('c05','Travel insurance 24-hour line','');
+  C('c06','Balloon operator','',{notes:'TBD after booking.'});
+
+  const SP = (id, name, where) => add('spots', { id, name, where, k9: false, k7: false });
+  SP('x01','A cat of Istanbul','Everywhere in Istanbul'); SP('x02','A fairy chimney','Cappadocia'); SP('x03','A hot-air balloon','Cappadocia, at dawn');
+  SP('x04','A ferry','The Bosphorus'); SP('x05','The Bull Statue','Kadıköy'); SP('x06','Six minarets on one mosque','Blue Mosque');
+  SP('x07','An upside-down Medusa head','Basilica Cistern'); SP('x08','An evil-eye bead (nazar)','Bazaars'); SP('x09','A simit cart','Istanbul streets');
+  SP('x10','The camel-shaped rock','Devrent Valley'); SP('x11','A potter’s wheel','Avanos'); SP('x12','An ice-cream seller doing tricks','Istanbul');
+  SP('x13','A seagull catching food','On the ferry'); SP('x14','A tulip on a tile','Mosques & palaces');
+
+  return { schema: 1, trip: 'turkey-2026', c };
+}
+
+/* Ideas the family can add with one tap. */
+const IDEAS = [
+  { id:'i01', name:'Galata Tower', pk:'galata_tower', day:'2026-10-17', block:'evening', why:'A short walk uphill from the hotel; the view at dusk is the classic Istanbul panorama.' },
+  { id:'i02', name:'Spice Bazaar', pk:'spice_bazaar', day:'2026-10-19', block:'morning', why:'Ten minutes downhill from the Grand Bazaar; easy to pair with it on Monday.' },
+  { id:'i03', name:'Bosphorus public ferry ride', pk:'bosphorus', day:'2026-10-22', block:'afternoon', why:'A cheap, kid-pleasing way to see the palaces and bridges from the water.' },
+  { id:'i04', name:'Pottery wheel workshop in Avanos', pk:'avanos', day:'2026-10-20', block:'afternoon', why:'Kids 7–9 love it; ask the tour to stop at a workshop that lets children try.' },
+  { id:'i05', name:'Underground city (Kaymaklı or Derinkuyu)', pk:'', q:'Derinkuyu Underground City', day:'2026-10-20', block:'afternoon', why:'Tunnels eight levels deep that once hid thousands of people. Not on the North/Red route; swap it in if the kids would rather do tunnels than valleys.' },
+  { id:'i06', name:'Turkish ice-cream show (Maraş dondurma)', pk:'', q:'Maraş dondurma Istanbul', day:'2026-10-21', block:'afternoon', why:'The sellers play tricks with the cone before handing it over.' },
+  { id:'i07', name:'Sunset horse ride in the valleys', pk:'', q:'Göreme horse riding', day:'2026-10-19', block:'evening', why:'Gentle guided rides suit beginners; ask the hotel.' },
+  { id:'i08', name:'Simit on the ferry, feed the seagulls', pk:'kadikoy_ferry', day:'2026-10-21', block:'afternoon', why:'The seagulls catch bits of simit in mid-air.' },
+];
+
+/* What was changed from the original plan, and why. */
+const CHANGES = [
+  { t:'Grand Bazaar moved from Sun 18 to Mon 19 morning', why:'The Grand Bazaar is closed every Sunday.' },
+  { t:'Dolmabahçe Palace moved from Mon 19 to Thu 22 morning (optional)', why:'Dolmabahçe is closed every Monday. Thursday keeps the pool and shopping and adds a 10-minute hop to the palace.' },
+  { t:'Return flight on Wed 21: book one leaving no earlier than about 12:00', why:'Wed 21 morning is the only balloon backup. Balloons land about 8:00–8:30; you need time to get back, check out and drive to the airport.' },
+  { t:'Istanbul hotel split into two stays (17–19 and 21–23)', why:'You spend the nights of 19 and 20 in Cappadocia. Ask the hotel to hold big bags so you fly to Cappadocia light.' },
+  { t:'Hammam: check children and gender sessions', why:'Traditional hammams run separate women’s and men’s sessions, so a family would split up. A hotel-spa private hammam keeps you together.' },
+];
+
+const PHRASES = [
+  ['Merhaba','mehr-ha-BAH','Hello'],['Teşekkür ederim','teh-shek-KEWR eh-deh-reem','Thank you'],['Lütfen','LEWT-fen','Please'],
+  ['Evet / Hayır','eh-VET / HA-yuhr','Yes / No'],['Ne kadar?','neh ka-DAR','How much?'],['Tuvalet nerede?','too-va-LET neh-reh-DEH','Where is the bathroom?'],
+  ['Acısız olsun, lütfen','ah-juh-SUHZ ol-SOON, LEWT-fen','No spice, please'],['Su, lütfen','soo, LEWT-fen','Water, please'],
+  ['Yardım edin!','yar-DUHM eh-DEEN','Help!'],['Hesap, lütfen','heh-SAHP, LEWT-fen','The bill, please'],
+  ['Çocuk menüsü var mı?','cho-JOOK meh-new-SEW var muh','Is there a kids’ menu?'],['Affedersiniz','af-feh-DEHR-see-neez','Excuse me / sorry'],
+  ['Günaydın','gew-nai-DUHN','Good morning'],['Güle güle','gew-LEH gew-LEH','Goodbye (said by the one staying)'],
+  ['Bir, iki, üç','beer, ee-KEE, ewch','One, two, three'],['Dondurma','don-DOOR-mah','Ice cream'],['Kedi','keh-DEE','Cat'],['Balon','ba-LON','Balloon'],
+];
+
+const READING = [
+  { t:'Nasreddin Hodja stories', w:'Short, funny Turkish folk tales about a wise and silly teacher. Read one each night of the trip.' },
+  { t:'“The Hungry Coat” by Demi', w:'A picture book retelling a Nasreddin Hodja tale about judging people by their clothes.' },
+  { t:'The legend of Medusa', w:'Read the Greek myth before the Basilica Cistern, then find her two stone heads.' },
+  { t:'How volcanoes make fairy chimneys', w:'Look up a simple explainer on erosion before Cappadocia; spot the cap stones on the real ones.' },
+  { t:'Kedi (2016 documentary)', w:'A gentle film about Istanbul’s street cats; watch it before the trip and look for them everywhere.' },
+];
+/* ================================================================ basics */
+const $ = (s, r = document) => r.querySelector(s);
+const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
+const clone = (x) => JSON.parse(JSON.stringify(x));
+const pad = (n) => String(n).padStart(2, '0');
+const uid = (p) => p + Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
+const ID_OK = /^[A-Za-z0-9_\-.~:@+]{1,120}$/;
+const IN_FRAME = (() => { try { return window.self !== window.top; } catch { return true; } })();
+const LS = {
+  get(k) { try { const v = localStorage.getItem(k); return v == null ? null : JSON.parse(v); } catch { return null; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); return true; } catch { return false; } },
+  del(k) { try { localStorage.removeItem(k); } catch {} },
+};
+const H = 3600e3;
+const WD3 = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+const MON = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const LAND_UTC = Date.UTC(2026, 9, 17, 11, 0); // Sat 17 Oct 14:00 Istanbul (UTC+3)
+const TAGS = [['mosque','Mosque visit'],['walk','Lots of walking'],['swim','Swimwear'],['balloon','Balloon'],['cold','Cold start'],['flight','Flight / airport'],['backup','Balloon backup slot']];
+const CAPPA = (day, block) => day === '2026-10-20' || (day === '2026-10-19' && block === 'evening') || (day === '2026-10-21' && block === 'morning');
+
+/* ================================================================ time (Istanbul is UTC+3 all year, Singapore UTC+8) */
+function now() {
+  const sim = LS.get('tk_sim');
+  if (sim && typeof sim.at === 'number') return sim.at + (Date.now() - sim.set);
+  return Date.now();
+}
+function ist(ms) { const d = new Date(ms + 3 * H); return { date: d.toISOString().slice(0, 10), min: d.getUTCHours() * 60 + d.getUTCMinutes() }; }
+function clock(ms, off) { const d = new Date(ms + off * H); return pad(d.getUTCHours()) + ':' + pad(d.getUTCMinutes()); }
+function dow(iso) { return new Date(iso + 'T12:00:00Z').getUTCDay(); }
+function dayLabel(iso, long) { if (!iso) return 'No date'; const d = new Date(iso + 'T12:00:00Z'); if (isNaN(d)) return iso; return (long ? WEEKDAY : WD3)[d.getUTCDay()] + ' ' + d.getUTCDate() + ' ' + MON[d.getUTCMonth()]; }
+function toMin(t) { const m = /^(\d{1,2}):(\d{2})$/.exec(t || ''); return m ? +m[1] * 60 + +m[2] : null; }
+function t12(t) { const m = toMin(t); if (m == null) return ''; let h = Math.floor(m / 60); const ap = h < 12 ? 'AM' : 'PM'; h = h % 12 || 12; return h + ':' + pad(m % 60) + ' ' + ap; }
+function sgtOf(day, t) { const m = toMin(t); if (m == null || !day) return ''; const [y, mo, d] = day.split('-').map(Number); return t12(clock(Date.UTC(y, mo - 1, d) + m * 60e3 - 3 * H, 8)); }
+
+/* ================================================================ the trip document */
+let DOC = seedDoc();
+const SEED_COLLS = Object.keys(DOC.c);
+const UI = { tab: LS.get('tk_tab') || 'today', sub: null, packSub: 'outfits', packWho: 'all', todoWho: 'all', kidsDay: null, bookFilter: 'open' };
+if (!['today','plan','book','pack','money','more','kids'].includes(UI.tab)) UI.tab = 'today';
+
+const all = (coll) => Object.values(DOC.c[coll] || {}).filter((r) => r && !r.del);
+const get = (coll, id) => { const r = DOC.c[coll]?.[id]; return r && !r.del ? r : null; };
+const kv = (id, d) => { const r = get('kv', id); return r ? r.v : d; };
+const setKv = (id, v) => put('kv', { ...(get('kv', id) || { id }), v });
+const nm = (p) => (kv('names', {})[p] || PEOPLE.find((x) => x[0] === p)?.[1] || p);
+
+function put(coll, rec) {
+  const r = { ...clone(rec), u: Math.max(Date.now(), (DOC.c[coll]?.[rec.id]?.u || 0) + 1) };
+  (DOC.c[coll] ||= {})[r.id] = r;
+  saveLocal();
+  Sync.queue(coll, r);
+  schedule();
+  return r;
+}
+function remove(coll, id) { put(coll, { id, del: true }); }
+
+/** Merge records from another copy (a saved local copy, an import). Newer wins. Returns changed [coll, id] pairs. */
+function mergeIn(other) {
+  const changed = [];
+  for (const [coll, recs] of Object.entries(other?.c || {})) {
+    if (!ID_OK.test(coll) || !recs || typeof recs !== 'object') continue;
+    const tgt = (DOC.c[coll] ||= {});
+    for (const [id, r] of Object.entries(recs)) {
+      if (!r || typeof r !== 'object' || typeof r.u !== 'number' || !ID_OK.test(id)) continue;
+      if (!tgt[id] || r.u > tgt[id].u) { tgt[id] = { ...clone(r), id }; changed.push([coll, id]); }
+    }
+  }
+  return changed;
+}
+
+let storageOk = true;
+function saveLocal() {
+  const ok = LS.set('tk_doc', DOC);
+  if (ok !== storageOk) { storageOk = ok; renderSync(); }
+}
+
+/* ================================================================ sync: the artifact's shared store, when this page runs inside one */
+const Sync = {
+  db: null, mode: 'local', readOnly: false, err: '', pending: new Map(), busy: false,
+  dirty: LS.get('tk_dirty') || {}, seen: new Set(),
+  queue(coll, rec) {
+    const key = coll + '/' + rec.id;
+    this.dirty[key] = 1; LS.set('tk_dirty', this.dirty);
+    if (this.db && !this.readOnly) { this.pending.set(key, [coll, rec.id, 0]); this.flush(); }
+    renderSync();
+  },
+  async flush() {
+    if (this.busy) return;
+    this.busy = true;
+    while (this.pending.size) {
+      const [key, [coll, id, tries]] = this.pending.entries().next().value;
+      this.pending.delete(key);
+      const rec = DOC.c[coll]?.[id];
+      if (!rec) continue;
+      try {
+        await this.db.collection('trip_' + coll).doc(id).set(clone(rec));
+        if (DOC.c[coll][id] === rec) delete this.dirty[key];
+        this.err = '';
+      } catch (e) {
+        const code = e?.code || 'unavailable';
+        if (code === 'invalid_argument' || code === 'not_granted') { this.readOnly = true; this.pending.clear(); }
+        else if (code === 'unavailable' && tries < 1) { await new Promise((r) => setTimeout(r, 600 + Math.random() * 900)); this.pending.set(key, [coll, id, tries + 1]); }
+        else this.err = code === 'quota_exceeded' ? 'The shared store is full. Export a backup.' : 'Some changes have not reached the shared copy yet.';
+      }
+      renderSync();
+    }
+    LS.set('tk_dirty', this.dirty);
+    this.busy = false;
+    renderSync();
+  },
+  async init() {
+    if (!window.claude || typeof window.claude.use !== 'function') return;
+    let db = null;
+    try { db = await window.claude.use('db'); } catch { db = null; }
+    if (!db) return;
+    this.db = db; this.mode = 'shared'; renderSync();
+    for (const coll of SEED_COLLS) {
+      try {
+        db.collection('trip_' + coll).onSnapshot((snap) => {
+          let changed = false;
+          for (const ch of snap.docChanges()) {
+            if (ch.type === 'removed') continue;
+            const body = ch.doc.data();
+            if (!body || typeof body.u !== 'number') continue;
+            const id = ch.doc.id, cur = DOC.c[coll]?.[id];
+            if (!cur || body.u > cur.u) { (DOC.c[coll] ||= {})[id] = { ...clone(body), id }; changed = true; }
+          }
+          if (!snap.metadata.fromCache && !this.seen.has(coll)) { this.seen.add(coll); if (this.seen.size === SEED_COLLS.length) this.pushDirty(); }
+          if (changed) { saveLocal(); schedule(); }
+        }, (e) => { if (e?.code === 'revoked') { this.mode = 'local'; this.db = null; } this.err = 'Live updates paused.'; renderSync(); });
+      } catch { this.err = 'Live updates unavailable.'; }
+    }
+  },
+  /** Changes made on this phone while it was offline or before the shared copy loaded. */
+  pushDirty() {
+    for (const key of Object.keys(this.dirty)) { const [coll, id] = key.split('/'); if (DOC.c[coll]?.[id]) this.pending.set(key, [coll, id, 0]); }
+    this.flush();
+  },
+};
+
+/* ================================================================ derived facts */
+const blockIdx = (b) => Math.max(0, BLOCKS.findIndex((x) => x[0] === b));
+const BLOCK_START = { morning: 0, afternoon: 12 * 60, evening: 17 * 60 };
+const stopCmp = (a, b) => blockIdx(a.block) - blockIdx(b.block) || (a.ord ?? 0) - (b.ord ?? 0);
+const stopsOf = (day) => all('stops').filter((s) => s.day === day).sort(stopCmp);
+const place = (s) => PLACES[s.pk] || null;
+function mapsQ(s) { return s.q || place(s)?.q || (s.name + (CAPPA(s.day, s.block) ? ' Göreme Cappadocia' : ' Istanbul')); }
+const mapsUrl = (q) => 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(q);
+const routeUrl = (a, b) => 'https://www.google.com/maps/dir/?api=1&origin=' + encodeURIComponent(a) + '&destination=' + encodeURIComponent(b);
+
+function closedConflicts(day) {
+  const out = [];
+  for (const s of all('stops')) {
+    if (day && s.day !== day) continue;
+    if (s.status === 'skipped') continue;
+    const p = place(s);
+    if (p?.closed?.includes(dow(s.day))) out.push({ s, msg: `${p.n} is closed on ${WEEKDAY[dow(s.day)]}s. Move “${s.name}” to another day.` });
+  }
+  return out;
+}
+function dayTags(day) { return new Set(stopsOf(day).filter((s) => s.status !== 'skipped').flatMap((s) => s.tags || [])); }
+function walkCount(day) { return stopsOf(day).filter((s) => s.status !== 'skipped' && (s.tags || []).includes('walk')).length; }
+function returnFlight() { return all('bookings').find((b) => b.cat === 'Domestic flights' && b.date === '2026-10-21'); }
+function balloonBooking() { return all('bookings').find((b) => b.group === 'balloon') || null; }
+function heightFlags(o) {
+  const h = kv('heights', {});
+  if (!o.minHeight) return [{ lvl: 'warn', t: 'Ask for the minimum height and age' }];
+  return ['k9', 'k7'].map((k) => h[k] == null || h[k] === ''
+    ? { lvl: 'warn', t: `Enter ${nm(k)}’s height` }
+    : +h[k] < o.minHeight ? { lvl: 'bad', t: `${nm(k)} (${h[k]} cm) is under ${o.minHeight} cm` } : { lvl: 'good', t: `${nm(k)} meets ${o.minHeight} cm` });
+}
+
+/** Reminders for one day: scarves, shoes, swimwear, warm layers, early departures. */
+function dayReminders(day) {
+  const tags = dayTags(day), out = [];
+  if (tags.has('mosque')) out.push(['warn', 'Carry scarves for mosque visits', 'Cover shoulders and knees; women cover hair; shoes come off at the door.']);
+  if (walkCount(day) >= 3) out.push(['info', 'Comfortable shoes today', 'Old City cobbles and lots of walking.']);
+  if (tags.has('swim')) out.push(['info', 'Pack swimwear', 'Hammam or pool today.']);
+  if (tags.has('balloon') || tags.has('cold')) out.push(['warn', 'Warm layers for the early balloon morning', 'Dawn in Cappadocia in late October is close to freezing. Beanies and gloves for the kids.']);
+  const flights = stopsOf(day).filter((s) => (s.tags || []).includes('flight') && s.time && toMin(s.time) < 6 * 60);
+  if (flights.length) out.push(['bad', `Leave hotel ${t12(flights[0].time)} ${WEEKDAY[dow(day)]}`, 'Set two alarms. Settle the hotel bill and load the car the night before.']);
+  for (const c of closedConflicts(day)) out.push(['bad', 'Closed that day', c.msg]);
+  return out;
+}
+
+/** Banner alerts for the Today screen. */
+function todayAlerts(p) {
+  const out = [];
+  const inTrip = DAYS.includes(p.date);
+  const tomorrow = DAYS[DAYS.indexOf(p.date) + 1];
+  if (inTrip) {
+    for (const r of dayReminders(p.date)) out.push(r);
+    if (tomorrow) {
+      if (dayTags(tomorrow).has('balloon')) {
+        const b = balloonBooking();
+        out.push(['warn', 'Balloon pickup tomorrow — check the weather', `Confirm the pickup time with ${b?.provider || 'the operator'}${b?.time ? ' (' + t12(b.time) + ')' : ''}. Lay out warm layers tonight and go to bed early.`]);
+      }
+      const early = stopsOf(tomorrow).find((s) => s.time && toMin(s.time) < 6 * 60);
+      if (early) out.push(['bad', `Leave hotel ${t12(early.time)} ${WEEKDAY[dow(tomorrow)]}`, 'Pack tonight, settle the bill, and check the transfer is booked.']);
+      if (dayTags(tomorrow).has('mosque')) out.push(['info', 'Tomorrow: mosque visits', 'Put scarves in the day bag tonight.']);
+    }
+  } else if (p.date < DAYS[0]) {
+    const daysLeft = Math.ceil((LAND_UTC - now()) / (24 * H));
+    for (const b of all('bookings').filter((b) => b.prio && !['booked','paid','cancelled'].includes(b.status)).sort((a, b) => a.prio - b.prio).slice(0, 2)) {
+      out.push([daysLeft < 21 ? 'bad' : 'warn', `${b.title}: not booked yet`, `Priority ${b.prio} of 4. ${daysLeft} days to go.`]);
+    }
+    for (const c of closedConflicts()) out.push(['bad', 'Closed-day clash', `${dayLabel(c.s.day)}: ${c.msg}`]);
+  }
+  const rf = returnFlight();
+  if (rf && rf.time && toMin(rf.time) < 12 * 60 && p.date <= '2026-10-21') out.push(['bad', 'Return flight on Wed 21 is before noon', 'That leaves no time for the balloon backup morning. Look for a later flight.']);
+  const chosen = all('options').find((o) => o.group === 'balloon' && o.chosen);
+  if (chosen) for (const f of heightFlags(chosen).filter((f) => f.lvl === 'bad')) out.push(['bad', 'Balloon height limit', `${chosen.name}: ${f.t}.`]);
+  return out;
+}
+
+function toBook() {
+  return all('bookings').filter((b) => !['booked','paid','cancelled'].includes(b.status))
+    .sort((a, b) => (a.prio ?? 9) - (b.prio ?? 9) || (a.date || '9').localeCompare(b.date || '9')).slice(0, 5);
+}
+
+/* money */
+function rate(cur) { const r = kv('rates', {}); return typeof r[cur] === 'number' && r[cur] > 0 ? r[cur] : null; }
+function toHome(amt, cur) { const a = rate(cur), b = rate(kv('home', 'SGD')); return amt == null || amt === '' || a == null || b == null ? null : (+amt * a) / b; }
+function money(v, cur) {
+  if (v == null || isNaN(v)) return 'TBD';
+  try { return new Intl.NumberFormat('en', { style: 'currency', currency: cur, maximumFractionDigits: cur === 'TRY' || cur === 'INR' ? 0 : 2 }).format(v); }
+  catch { return cur + ' ' + Math.round(v); }
+}
+
+/* packing: outfit pieces roll up into the list */
+const slug = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 60) || 'x';
+function outfitItems() {
+  const map = new Map();
+  for (const o of all('outfits').sort((a, b) => a.day.localeCompare(b.day))) {
+    for (const p of o.pieces || []) {
+      if (!p?.n) continue;
+      const id = 'op-' + o.person + '-' + slug(p.n);
+      if (!map.has(id)) map.set(id, { id, person: o.person, cat: p.cat || 'Clothes', name: p.n, qty: 1, days: [], derived: true });
+      map.get(id).days.push(o.day);
+    }
+  }
+  for (const it of map.values()) it.packed = !!get('packing', it.id)?.packed;
+  return [...map.values()];
+}
+function packItems() { return [...all('packing').filter((r) => !r.derived), ...outfitItems()]; }
+
+/* ================================================================ images: Wikipedia lead photos, fetched once and cached */
+const IMG = LS.get('tk_img') || {};
+const inflight = {};
+function phHtml() { return '<div class="ph" aria-hidden="true"></div>'; }
+function imgBox(w, label, cls) { return `<div class="${cls}" ${w ? `data-wiki="${esc(w)}"` : ''} data-label="${esc(label)}">${phHtml(label)}${cls === 'hero' && w ? '<span class="cap" hidden>Photo: Wikipedia</span>' : ''}</div>`; }
+function fetchWiki(w) {
+  if (inflight[w]) return inflight[w];
+  return (inflight[w] = fetch('https://en.wikipedia.org/api/rest_v1/page/summary/' + encodeURIComponent(w))
+    .then((r) => (r.ok ? r.json() : r.status === 404 ? {} : null))
+    .then((j) => { if (j == null) return null; const src = j.thumbnail?.source || null; IMG[w] = src || false; LS.set('tk_img', IMG); return src; })
+    .catch(() => null));
+}
+function setImg(el, src) {
+  if (el.querySelector('img')) return;
+  const img = new Image();
+  img.alt = el.dataset.label || ''; img.loading = 'lazy'; img.decoding = 'async';
+  const wide = el.classList.contains('hero') ? src.replace(/\/(\d+)px-/, '/800px-') : src;
+  img.onload = () => { const ph = el.querySelector('.ph'); if (ph) ph.remove(); el.prepend(img); const c = el.querySelector('.cap'); if (c) c.hidden = false; };
+  img.onerror = () => { if (img.src !== src) img.src = src; };
+  img.src = wide;
+}
+function hydrateImages(root) {
+  root.querySelectorAll('[data-wiki]').forEach((el) => {
+    const w = el.dataset.wiki;
+    if (IMG[w]) setImg(el, IMG[w]);
+    else if (IMG[w] !== false) fetchWiki(w).then((src) => { if (src) setImg(el, src); });
+  });
+}
+
+/* ================================================================ rendering */
+let raf = 0;
+function schedule() { if (!raf) raf = requestAnimationFrame(() => { raf = 0; render(); }); }
+const ICON = {
+  today: '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',
+  plan: '<rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4M7 13h4M7 17h8"/>',
+  book: '<path d="M3 8a2 2 0 0 0 2-2h14a2 2 0 0 0 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 0-2 2H5a2 2 0 0 0-2-2v-2a2 2 0 0 0 0-4z"/><path d="M14 6v12" stroke-dasharray="2 2"/>',
+  pack: '<rect x="4" y="7" width="16" height="14" rx="2"/><path d="M9 7V4h6v3M4 12h16"/>',
+  money: '<circle cx="12" cy="12" r="9"/><path d="M15 9.5c-.5-1-1.6-1.5-3-1.5-1.7 0-3 .9-3 2s1.3 1.7 3 2 3 .9 3 2-1.3 2-3 2c-1.4 0-2.5-.5-3-1.5M12 6v12"/>',
+  more: '<circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/>',
+};
+const TABS = [['today','Today'],['plan','Itinerary'],['book','Bookings'],['pack','Pack'],['money','Budget'],['more','More']];
+
+function render() {
+  const main = $('#main');
+  $('#tabs').innerHTML = TABS.map(([k, l]) => `<button class="tab" data-a="go" data-tab="${k}" ${UI.tab === k ? 'aria-current="page"' : ''}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICON[k]}</svg>${l}</button>`).join('');
+  const views = { today: vToday, plan: vPlan, book: vBook, pack: vPack, money: vMoney, more: vMore, kids: vKids };
+  const y = window.scrollY;
+  main.innerHTML = (views[UI.tab] || vToday)();
+  window.scrollTo(0, y);
+  hydrateImages(main);
+  if (UI.tab === 'plan') wireSortable();
+  renderClocks(); renderSync();
+}
+function renderClocks() {
+  const n = now();
+  const sim = LS.get('tk_sim') ? ' <span title="Simulated time">(sim)</span>' : '';
+  $('#clocks').innerHTML = `Istanbul <b>${clock(n, 3)}</b>${sim}<br>Singapore <b>${clock(n, 8)}</b>`;
+  const top = $('#top'); if (top) document.documentElement.style.setProperty('--toph', top.offsetHeight + 'px');
+}
+function renderSync() {
+  const el = $('#syncbar'); if (!el) return;
+  const n = Object.keys(Sync.dirty).length;
+  let dot = '', txt = '';
+  if (!storageOk) { dot = 'err'; txt = 'This phone could not save. Export a backup from More → Sync & backup.'; }
+  else if (Sync.mode === 'shared' && Sync.readOnly) { dot = 'err'; txt = 'View only: ask the trip owner to make you a Contributor to edit.'; }
+  else if (Sync.mode === 'shared') { dot = Sync.err ? 'err' : n ? '' : 'live'; txt = Sync.err || (n ? `Shared · sending ${n} change${n > 1 ? 's' : ''}…` : 'Shared with your family · live'); }
+  else txt = 'Saved on this phone. Share with Export in More.';
+  el.innerHTML = `<span class="dot ${dot}"></span><span>${esc(txt)}</span>`;
+}
+
+/* small builders */
+const chip = (t, tone = '') => `<span class="chip ${tone}">${esc(t)}</span>`;
+const STATUS_TONE = { idea: '', shortlisted: 'sea', quoted: 'warn', booked: 'good', paid: 'good', cancelled: 'bad', planned: '', done: 'good', skipped: 'bad' };
+const alertHtml = ([tone, title, body]) => `<div class="alert ${tone}" role="status"><div><b>${esc(title)}</b>${body ? `<div class="small">${esc(body)}</div>` : ''}</div></div>`;
+const btn = (label, a, data = {}, cls = '') => `<button class="btn ${cls}" data-a="${a}" ${Object.entries(data).map(([k, v]) => `data-${k}="${esc(v)}"`).join(' ')}>${label}</button>`;
+
+/* ================================================================ Today */
+function vToday() {
+  const n = now(), p = ist(n);
+  const alerts = todayAlerts(p).map(alertHtml).join('');
+  if (p.date < DAYS[0]) {
+    const ms = Math.max(0, LAND_UTC - n), d = Math.floor(ms / (24 * H)), h = Math.floor((ms % (24 * H)) / H);
+    const next = toBook();
+    const packed = packItems(), done = packed.filter((x) => x.packed).length;
+    const todos = all('todos').filter((t) => !t.done);
+    return `
+<section class="card sea"><div class="eyebrow">Countdown</div>
+  <div class="row" style="align-items:baseline;gap:14px;margin-top:6px"><span class="big">${d}</span><span>days</span><span class="big">${h}</span><span>hours</span></div>
+  <p style="margin-top:8px">until you land in Istanbul: <b>Sat 17 Oct, 2:00 PM</b> Istanbul time (${sgtOf('2026-10-17','14:00')} in Singapore).</p></section>
+${alerts}
+<section class="card"><div class="spread"><h2>Next ${next.length} to book</h2>${btn('All bookings','go',{tab:'book'},'sm ghost')}</div>
+  <p class="tiny" style="margin-top:2px">Priority order: 1 Balloon → 2 Cappadocia hotel → 3 Domestic flights → 4 Day tour</p>
+  <div class="list" style="margin-top:6px">${next.map((b) => `<button class="li" style="all:unset;display:flex;gap:10px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line);cursor:pointer;width:100%" data-a="editBooking" data-id="${b.id}">
+    <span class="chip ${b.prio ? 'terra' : ''}" style="min-width:34px;justify-content:center">${b.prio || '–'}</span>
+    <span class="grow"><b>${esc(b.title)}</b><br><span class="tiny">${esc(dayLabel(b.date))}${b.provider ? ' · ' + esc(b.provider) : ''}</span></span>${chip(b.status, STATUS_TONE[b.status])}</button>`).join('') || '<p class="muted">Everything is booked.</p>'}</div>
+  ${btn('Open balloon planner','sub',{sub:'balloon'},'block pri')}</section>
+<section class="grid2">
+  <button class="tilebtn" data-a="go" data-tab="pack"><span class="t">${done}/${packed.length} packed</span><span class="s">Packing list from outfits + essentials</span></button>
+  <button class="tilebtn" data-a="sub" data-sub="todos"><span class="t">${todos.length} to-dos open</span><span class="s">${esc(todos[0]?.text.slice(0, 60) || 'All done')}</span></button>
+</section>
+<section class="card"><h2>The week at a glance</h2><div class="list" style="margin-top:6px">${DAYS.map((d) => { const day = get('days', d) || {}; const warn = closedConflicts(d).length; return `<button style="all:unset;display:flex;gap:12px;align-items:center;padding:9px 0;border-bottom:1px solid var(--line);cursor:pointer;width:100%" data-a="jump" data-day="${d}"><span class="chip sea" style="min-width:74px;justify-content:center">${dayLabel(d)}</span><span class="grow"><b>${esc(day.title || '')}</b><br><span class="tiny">${esc(day.theme || '')}</span></span>${warn ? chip('clash', 'bad') : ''}</button>`; }).join('')}</div></section>`;
+  }
+  if (DAYS.includes(p.date)) return vTodayLive(p, alerts);
+  const total = all('expenses').reduce((s, e) => s + (toHome(e.amt, e.cur) || 0), 0);
+  return `<section class="card sea"><div class="eyebrow">Welcome home</div><h1 style="margin-top:6px">Teşekkürler, Türkiye</h1><p style="margin-top:8px">You logged ${all('expenses').length} expenses totalling ${money(total, kv('home', 'SGD'))}.</p></section>${alerts}`;
+}
+
+function vTodayLive(p, alerts) {
+  const day = get('days', p.date) || {};
+  const list = stopsOf(p.date).filter((s) => s.status !== 'skipped');
+  const pending = list.filter((s) => s.status !== 'done');
+  const eff = (s) => toMin(s.time) ?? BLOCK_START[s.block] ?? 0;
+  const cur = pending[0] && eff(pending[0]) <= p.min ? pending[0] : null;
+  const rest = cur ? pending.slice(1) : pending;
+  const next = rest[0], later = rest.slice(1);
+  const doneN = list.length - pending.length;
+  const outfit = all('outfits').filter((o) => o.day === p.date);
+  const stopCard = (s, label, primary) => {
+    if (!s) return '';
+    const prev = list[list.indexOf(s) - 1];
+    return `<section class="card ${primary ? 'sea' : ''}"><div class="eyebrow">${label}</div>
+      <div class="row" style="margin-top:8px;align-items:flex-start;flex-wrap:nowrap">${imgBox(place(s)?.w, s.name, 'thumb')}
+      <div class="grow"><h2>${s.time ? `<span class="tnum">${t12(s.time)}</span> · ` : ''}${esc(s.name)}</h2>
+      ${s.travel ? `<p class="small" style="margin-top:4px">Getting there: ${esc(s.travel)}</p>` : ''}
+      ${s.notes ? `<p class="small" style="margin-top:4px">${esc(s.notes)}</p>` : ''}
+      ${place(s)?.hours ? `<p class="small" style="margin-top:4px;opacity:.9">${esc(place(s).hours)}</p>` : ''}</div></div>
+      <div class="sacts" style="margin-top:10px"><a class="btn sm ${primary ? 'terra' : 'pri'}" href="${mapsUrl(mapsQ(s))}" target="_blank" rel="noopener">Directions</a>
+      ${prev ? `<a class="btn sm" href="${routeUrl(mapsQ(prev), mapsQ(s))}" target="_blank" rel="noopener">Route from ${esc(prev.name.slice(0, 18))}</a>` : ''}
+      ${btn('Done', 'status', { id: s.id, v: 'done' }, 'sm')}${btn('Skip', 'status', { id: s.id, v: 'skipped' }, 'sm ghost')}</div></section>`;
+  };
+  return `
+<section class="card flat" style="padding:0;overflow:hidden">${imgBox(PLACES[day.hero]?.w, day.title, 'hero')}
+  <div style="padding:12px 14px"><div class="eyebrow">Day ${DAYS.indexOf(p.date) + 1} of 7 · ${dayLabel(p.date, true)}</div><h1 style="margin-top:4px">${esc(day.title || '')}</h1>
+  ${outfit.length ? `<p class="small" style="margin-top:6px">Wearing: ${outfit.map((o) => `<b>${esc(nm(o.person))}</b> ${esc((o.pieces || []).map((x) => x.n).join(', '))}`).join(' · ')}</p>` : ''}</div></section>
+${alerts}
+${stopCard(cur, 'Now', true)}
+${stopCard(next, cur ? 'Next' : 'Up next', !cur)}
+<section class="card"><div class="spread"><h2>Later today</h2><span class="tiny">${doneN} done</span></div>
+  <div class="list">${later.map((s) => `<div class="li"><span class="stime">${s.time ? t12(s.time) : BLOCKS[blockIdx(s.block)][1]}</span><span class="grow">${esc(s.name)}${s.travel ? `<br><span class="tiny">${esc(s.travel)}</span>` : ''}</span><a class="btn sm ghost" href="${mapsUrl(mapsQ(s))}" target="_blank" rel="noopener">Map</a></div>`).join('') || '<p class="muted small">Nothing else planned. Enjoy it.</p>'}</div>
+  ${btn('Open the full day', 'jump', { day: p.date }, 'block')}</section>
+<section class="card"><div class="eyebrow">For the kids</div><p style="margin-top:6px">${esc(day.kids || '')}</p>${btn('Kids corner', 'go', { tab: 'kids' }, 'sm')}</section>`;
+}
+
+/* ================================================================ Itinerary */
+function vPlan() {
+  const p = ist(now());
+  return `<div class="daynav"><div class="seg" role="group" aria-label="Jump to day">${DAYS.map((d) => `<button data-a="jump" data-day="${d}" aria-pressed="${d === p.date}">${WD3[dow(d)]} ${+d.slice(8)}</button>`).join('')}</div></div>
+<div class="row">${btn('+ Add stop', 'addStop', { day: DAYS.includes(p.date) ? p.date : DAYS[0] }, 'pri')}${btn('Print / share', 'print', {}, '')}${btn('Ideas to add', 'sub', { sub: 'ideas' }, 'ghost')}</div>
+<p class="tiny">Drag ≡ to reorder or move a stop to another day. Tap a stop to edit it.</p>
+${DAYS.map(dayCard).join('')}`;
+}
+function dayCard(d) {
+  const day = get('days', d) || { id: d };
+  const stops = stopsOf(d);
+  const outfits = all('outfits').filter((o) => o.day === d).sort((a, b) => PEOPLE.findIndex((x) => x[0] === a.person) - PEOPLE.findIndex((x) => x[0] === b.person));
+  const rem = dayReminders(d);
+  return `<section class="card" id="day-${d}" style="scroll-margin-top:calc(var(--toph,80px) + 60px)">
+  <div class="dayhead"><div class="datebox"><div class="w">${WD3[dow(d)]}</div><div class="d">${+d.slice(8)}</div><div class="w">Oct</div></div>
+  <div style="min-width:0"><h2>${esc(day.title || dayLabel(d, true))}</h2><p class="small muted">${esc(day.theme || '')}</p></div></div>
+  <div style="margin-top:10px">${imgBox(PLACES[day.hero]?.w, day.title, 'hero')}</div>
+  ${rem.length ? `<div class="chips" style="margin-top:10px">${rem.map(([t, title]) => chip(title, t === 'info' ? 'sea' : t)).join('')}</div>` : ''}
+  ${closedConflicts(d).map((c) => alertHtml(['bad', 'Closed that day', c.msg])).join('')}
+  ${BLOCKS.map(([b, label]) => `<div class="block-h">${label}</div><ul class="stops" data-day="${d}" data-block="${b}">${stops.filter((s) => s.block === b).map((s, i, arr) => stopRow(s, arr[i - 1] || null)).join('')}</ul>`).join('')}
+  <div class="outfit" style="margin-top:10px"><div class="spread"><b>Outfits</b>${btn('+ Outfit', 'addOutfit', { day: d }, 'sm ghost')}</div>
+    ${outfits.length ? outfits.map((o) => `<button style="all:unset;display:block;cursor:pointer;padding:4px 0" data-a="editOutfit" data-id="${o.id}"><span class="small"><b>${esc(nm(o.person))}${o.suggested ? ' · suggested' : ''}:</b> ${esc((o.pieces || []).map((x) => x.n).join(', ') || 'TBD')}</span></button>`).join('') : '<p class="small muted">No outfit planned yet.</p>'}</div>
+  ${day.notes ? `<p class="small" style="margin-top:10px;white-space:pre-wrap"><b>Notes:</b> ${esc(day.notes)}</p>` : ''}
+  <div class="row" style="margin-top:10px">${btn('+ Stop', 'addStop', { day: d }, 'sm')}${btn(day.notes ? 'Edit notes' : 'Add notes', 'dayNotes', { day: d }, 'sm ghost')}${btn('Kids view', 'kidsDay', { day: d }, 'sm ghost')}</div>
+</section>`;
+}
+function stopRow(s, prev) {
+  const p = place(s);
+  return `<li class="stop ${s.status}" data-id="${s.id}">
+  <span class="grip" aria-hidden="true">≡</span>
+  ${imgBox(p?.w, s.name, 'thumb')}
+  <div style="min-width:0">
+    ${s.travel ? `<div class="tiny">↓ ${esc(s.travel)}${prev ? ` · <a href="${routeUrl(mapsQ(prev), mapsQ(s))}" target="_blank" rel="noopener">route</a>` : ''}</div>` : ''}
+    <button style="all:unset;cursor:pointer;display:block" data-a="editStop" data-id="${s.id}"><span class="sname">${s.time ? `<span class="stime">${t12(s.time)}</span>` : ''}${esc(s.name)}</span>
+    ${s.moved ? `<div class="tiny" style="color:var(--terra)">${esc(s.moved)}</div>` : ''}
+    ${s.notes ? `<div class="small muted">${esc(s.notes)}</div>` : ''}</button>
+    <div class="sacts"><a class="btn sm" href="${mapsUrl(mapsQ(s))}" target="_blank" rel="noopener">Directions</a>
+    <button class="btn sm ${s.status === 'done' ? 'pri' : ''}" data-a="cycle" data-id="${s.id}" aria-label="Status: ${s.status}. Tap to change">${s.status === 'done' ? '✓ Done' : s.status === 'skipped' ? 'Skipped' : 'Planned'}</button>
+    ${(s.tags || []).filter((t) => t !== 'backup').map((t) => chip(TAGS.find((x) => x[0] === t)?.[1] || t, 'sea')).join('')}</div>
+  </div></li>`;
+}
+function wireSortable() {
+  if (!window.Sortable) return;
+  document.querySelectorAll('ul.stops').forEach((ul) => {
+    window.Sortable.create(ul, {
+      group: 'stops', handle: '.grip', animation: 150, delay: 80, delayOnTouchOnly: true,
+      onEnd: (e) => {
+        const to = e.to, ids = [...to.children].map((li) => li.dataset.id);
+        ids.forEach((id, i) => {
+          const s = get('stops', id); if (!s) return;
+          if (s.day !== to.dataset.day || s.block !== to.dataset.block || s.ord !== i + 1) put('stops', { ...s, day: to.dataset.day, block: to.dataset.block, ord: i + 1 });
+        });
+        if (e.from !== to) [...e.from.children].forEach((li, i) => { const s = get('stops', li.dataset.id); if (s && s.ord !== i + 1) put('stops', { ...s, ord: i + 1 }); });
+        schedule();
+      },
+    });
+  });
+}
+
+/* ================================================================ Bookings */
+function vBook() {
+  if (UI.sub === 'compare-balloon' || UI.sub === 'compare-capHotel') return vCompare(UI.sub.slice(8));
+  const f = UI.bookFilter;
+  const list = all('bookings').filter((b) => f === 'all' || (f === 'open' ? !['booked','paid','cancelled'].includes(b.status) : ['booked','paid'].includes(b.status)));
+  const prio = list.filter((b) => b.prio).sort((a, b) => a.prio - b.prio || (a.date || '').localeCompare(b.date || ''));
+  const rest = list.filter((b) => !b.prio).sort((a, b) => (a.date || '9').localeCompare(b.date || '9'));
+  const counts = STATUSES.map((s) => [s, all('bookings').filter((b) => b.status === s).length]).filter(([, n]) => n);
+  return `<section class="card"><h2>Bookings</h2><div class="chips" style="margin-top:8px">${counts.map(([s, n]) => chip(`${n} ${s}`, STATUS_TONE[s])).join('')}</div>
+  <div class="row" style="margin-top:10px">${btn('Compare balloons', 'sub', { sub: 'compare-balloon' }, 'pri sm')}${btn('Compare Cappadocia hotels', 'sub', { sub: 'compare-capHotel' }, 'sm')}${btn('Balloon planner', 'sub', { sub: 'balloon' }, 'sm ghost')}</div></section>
+<div class="seg" role="group" aria-label="Filter">${[['open','To book'],['done','Booked'],['all','All']].map(([k, l]) => `<button data-a="bookFilter" data-v="${k}" aria-pressed="${f === k}">${l}</button>`).join('')}</div>
+${prio.length ? `<div class="eyebrow">In priority order</div>${prio.map(bookingCard).join('')}` : ''}
+${rest.length ? `<div class="eyebrow">Everything else</div>${rest.map(bookingCard).join('')}` : ''}
+${!list.length ? '<p class="muted">Nothing here.</p>' : ''}
+${btn('+ Add booking', 'addBooking', {}, 'pri block')}`;
+}
+function bookingCard(b) {
+  const home = kv('home', 'SGD'), h = toHome(b.price, b.cur);
+  return `<button class="card" style="text-align:left;cursor:pointer;display:grid;gap:6px;width:100%" data-a="editBooking" data-id="${b.id}">
+  <div class="spread"><span class="eyebrow">${b.prio ? 'Priority ' + b.prio + ' · ' : ''}${esc(b.cat)}</span>${chip(b.status, STATUS_TONE[b.status])}</div>
+  <h3>${esc(b.title)}</h3>
+  <div class="small muted">${esc(dayLabel(b.date))}${b.time ? ' · ' + t12(b.time) : ''}${b.provider ? ' · ' + esc(b.provider) : ''}</div>
+  <div class="small"><b>${b.price != null && b.price !== '' ? money(+b.price, b.cur) : 'Price TBD'}</b>${b.price != null && b.price !== '' && b.cur !== home && h != null ? ` <span class="muted">≈ ${money(h, home)}</span>` : ''}${b.priceNote ? ` <span class="tiny">(${esc(b.priceNote)})</span>` : ''}${b.conf ? ` · Ref ${esc(b.conf)}` : ''}</div>
+  ${b.terms ? `<div class="tiny">Terms: ${esc(b.terms)}</div>` : ''}${b.notes ? `<div class="tiny">${esc(b.notes)}</div>` : ''}
+</button>`;
+}
+function vCompare(group) {
+  const opts = all('options').filter((o) => o.group === group).sort((a, b) => (a.rank ?? 99) - (b.rank ?? 99) || a.name.localeCompare(b.name));
+  const isB = group === 'balloon';
+  const price = (o) => o.price != null && o.price !== '' ? `${money(+o.price, o.cur)} / ${o.per}${o.per === 'person' ? `<br><span class="tiny">${money(o.price * 4, o.cur)} for 4</span>` : o.per === 'night' ? `<br><span class="tiny">${money(o.price * 2, o.cur)} for 2 nights</span>` : ''}` : 'TBD';
+  const rows = isB ? [
+    ['Your rank', (o) => o.rank ?? '–'], ['Basket', (o) => esc(o.basket || 'TBD')], ['Flight time', (o) => esc(o.duration || 'TBD')], ['Price', price],
+    ['Min height', (o) => `${o.minHeight ? o.minHeight + ' cm' : 'Ask'}<div class="chips" style="margin-top:4px">${heightFlags(o).map((f) => chip(f.t, f.lvl)).join('')}</div>`],
+    ['Min age', (o) => esc(o.minAge || 'Ask')], ['Weather reschedule ★', (o) => `<b>${esc(o.resched || 'TBD')}</b>`], ['Quote', (o) => esc(o.quote || '')], ['Notes', (o) => esc(o.notes || '')],
+  ] : [
+    ['Area', (o) => esc(o.area || 'TBD')], ['Room for 4', (o) => esc(o.room || 'TBD')], ['Price', price], ['Cancellation', (o) => esc(o.cancel || 'TBD')], ['Quote', (o) => esc(o.quote || '')], ['Notes', (o) => esc(o.notes || '')],
+  ];
+  return `<div class="row">${btn('← Bookings', 'sub', { sub: '' }, 'sm ghost')}</div>
+<section class="card"><h2>${isB ? 'Balloon operators' : 'Cappadocia hotels'}</h2>
+<p class="small muted" style="margin-top:4px">${isB ? 'Preferred Tue 20 Oct; the only backup is Wed 21 Oct morning, so the weather-rescheduling terms (★) matter most.' : 'Preferred area: Göreme — walkable, restaurants, tours, cave-hotel atmosphere.'}</p></section>
+<div class="card scrollx" style="padding:0"><table class="cmp"><thead><tr><th></th>${opts.map((o) => `<td class="${o.chosen ? 'chosen' : ''}"><b>${esc(o.name)}</b>${o.chosen ? '<br>' + chip('chosen', 'good') : ''}</td>`).join('')}</tr></thead>
+<tbody>${rows.map(([l, f]) => `<tr><th>${l}</th>${opts.map((o) => `<td class="${o.chosen ? 'chosen' : ''}">${f(o)}</td>`).join('')}</tr>`).join('')}
+<tr><th></th>${opts.map((o) => `<td class="${o.chosen ? 'chosen' : ''}"><div class="col">${o.link ? `<a class="btn sm" href="${esc(o.link)}" target="_blank" rel="noopener">Website</a>` : ''}${btn('Edit', 'editOption', { id: o.id }, 'sm')}${btn(o.chosen ? 'Picked' : 'Pick this one', 'pick', { id: o.id }, 'sm ' + (o.chosen ? '' : 'pri'))}</div></td>`).join('')}</tr></tbody></table></div>
+${btn('+ Add option', 'addOption', { group }, 'block')}`;
+}
+
+/* ================================================================ Balloon planner */
+function vBalloon() {
+  const bday = kv('balloonDay', '2026-10-20');
+  const h = kv('heights', {});
+  const ops = all('options').filter((o) => o.group === 'balloon').sort((a, b) => (a.rank ?? 99) - (b.rank ?? 99));
+  const b = balloonBooking();
+  const rf = returnFlight();
+  const rfMin = toMin(rf?.time);
+  const moved = bday === '2026-10-21';
+  return `<div class="row">${btn('← More', 'sub', { sub: '' }, 'sm ghost')}</div>
+<section class="card sea"><div class="eyebrow">Balloon planner</div><h1 style="margin-top:4px">${moved ? 'Moved to Wed 21 Oct' : 'Tue 20 Oct at sunrise'}</h1>
+  <p style="margin-top:8px">Preferred <b>Tue 20 Oct</b>. The only realistic backup is <b>Wed 21 Oct morning</b>: by Thursday you are back in Istanbul. That is why weather-rescheduling terms are the key comparison.</p>
+  <p class="small" style="margin-top:6px">Status: <b>${esc(b?.status || 'TBD')}</b>${b?.provider ? ' with ' + esc(b.provider) : ''}${b?.time ? ' · pickup ' + t12(b.time) : ' · pickup time TBD'}</p></section>
+<section class="card"><h2>Kids’ heights</h2><p class="small muted">Checked against each operator’s minimum.</p>
+  <div class="grid2" style="margin-top:8px">${['k9', 'k7'].map((k) => `<div class="field"><label for="h_${k}">${esc(nm(k))} (cm)</label><input id="h_${k}" class="inp" type="number" inputmode="numeric" min="80" max="200" value="${h[k] ?? ''}" data-c="height" data-k="${k}" placeholder="e.g. 132"></div>`).join('')}</div></section>
+<section class="card"><div class="spread"><h2>Operators</h2>${btn('Compare side by side', 'sub', { sub: 'compare-balloon' }, 'sm')}</div>
+  <div class="list">${ops.map((o) => `<div class="li" style="align-items:flex-start"><div class="grow"><b>${o.rank ? o.rank + '. ' : ''}${esc(o.name)}</b>${o.chosen ? ' ' + chip('chosen', 'good') : ''}
+    <div class="small muted">${esc(o.basket || 'Basket TBD')} · ${esc(o.duration || 'duration TBD')} · ${o.price != null && o.price !== '' ? money(+o.price, o.cur) + '/' + o.per : 'price TBD'} · min height ${o.minHeight ? o.minHeight + ' cm' : 'ask'}</div>
+    <div class="small">Rescheduling: ${esc(o.resched || 'TBD')}</div>
+    <div class="chips" style="margin-top:4px">${heightFlags(o).map((f) => chip(f.t, f.lvl)).join('')}</div></div>${btn('Edit', 'editOption', { id: o.id }, 'sm')}</div>`).join('')}</div></section>
+<section class="card"><h2>If Tuesday’s flight is cancelled</h2>
+  ${moved ? `<div class="alert info" style="margin-top:8px"><div><b>The balloon is now on Wed 21 Oct morning.</b><div class="small">Here is what shifts on Wednesday:</div></div></div>
+  <ul class="small" style="margin:8px 0 0;padding-left:18px;display:grid;gap:6px">
+    <li>“Sleep in / relaxed breakfast” is marked skipped; pickup is about an hour before sunrise.</li>
+    <li>Balloons land around 8:00–8:30; back at the hotel about 9:30. Allow 40–90 min to the airport plus check-in.</li>
+    <li><b>Cappadocia → Istanbul flight: ${rf?.time ? t12(rf.time) : 'time TBD'}.</b> ${rfMin == null ? 'Book one leaving no earlier than about 12:00.' : rfMin < 12 * 60 ? '<span style="color:var(--bad);font-weight:700">Too early for the backup — look for a later flight.</span>' : '<span style="color:var(--good);font-weight:700">Works with the backup.</span>'}</li>
+    <li>Ask the hotel for a late checkout or luggage hold.</li>
+    <li>Tuesday morning is now free: sleep in and start the tour later.</li></ul>
+  <div style="margin-top:10px">${btn('Undo: back to Tue 20', 'moveBalloon', { to: '2026-10-20' }, 'block')}</div>`
+  : `<p class="small" style="margin-top:6px">One tap moves the balloon to Wed 21 Oct morning, skips the sleep-in, and shows what shifts.</p>
+  <p class="small" style="margin-top:6px">Return flight on Wed 21: <b>${rf?.time ? t12(rf.time) : 'time TBD'}</b>${rfMin != null && rfMin < 12 * 60 ? ' — <span style="color:var(--bad);font-weight:700">too early for the backup</span>' : ''}</p>
+  <div style="margin-top:10px">${btn('Balloon cancelled → move to Wed 21', 'moveBalloon', { to: '2026-10-21' }, 'terra block')}</div>`}
+</section>
+<section class="card"><h2>Good to know</h2><ul class="small" style="margin:6px 0 0;padding-left:18px;display:grid;gap:6px">
+  <li>Flights get a go or no-go from the aviation authority early each morning, based on wind. Cancellations are routine, which is why a backup morning matters.</li>
+  <li>Many operators do not take children under 6, and some set a minimum height so a child can see over the basket and take the landing position.</li>
+  <li>Get the rescheduling and refund terms in writing before you pay.</li>
+  <li>Expect near-freezing air at the launch site; it warms up fast once the sun is up.</li></ul></section>`;
+}
+function moveBalloon(to) {
+  for (const s of all('stops').filter((s) => (s.tags || []).includes('balloon'))) put('stops', { ...s, day: to, block: 'morning', ord: 0 });
+  const b = balloonBooking(); if (b) put('bookings', { ...b, date: to });
+  setKv('balloonDay', to);
+  const sleep = all('stops').find((s) => s.day === '2026-10-21' && (s.tags || []).includes('backup'));
+  if (sleep) put('stops', { ...sleep, status: to === '2026-10-21' ? 'skipped' : 'planned' });
+  toast(to === '2026-10-21' ? 'Balloon moved to Wed 21 Oct' : 'Balloon back on Tue 20 Oct');
+}
+
+/* ================================================================ Pack */
+function vPack() {
+  const sub = UI.packSub;
+  return `<div class="seg" role="group" aria-label="Packing view">${[['outfits','Outfits by day'],['list','Packing list']].map(([k, l]) => `<button data-a="packSub" data-v="${k}" aria-pressed="${sub === k}">${l}</button>`).join('')}</div>
+${smartReminders()}
+${sub === 'outfits' ? vOutfits() : vPackList()}`;
+}
+function smartReminders() {
+  const items = packItems().map((i) => i.name.toLowerCase());
+  const has = (re) => items.some((n) => re.test(n));
+  const days = (tag) => DAYS.filter((d) => tag === 'walk' ? walkCount(d) >= 3 : dayTags(d).has(tag)).map((d) => dayLabel(d));
+  const rules = [
+    ['mosque', 'Scarf for mosque days', /scarf|shawl/, 'Scarf or shawl for mosques', 'a1'],
+    ['balloon', 'Warm layers for the balloon dawn', /warm|fleece|thermal|puffer/, 'Warm layer for balloon dawn', 'a1'],
+    ['swim', 'Swimwear for hammam and pool', /swim/, 'Swimwear (hammam / pool)', 'a1'],
+    ['walk', 'Comfortable shoes for walking days', /shoe|sneaker|trainer/, 'Comfortable walking shoes', 'a1'],
+  ];
+  const rows = rules.map(([tag, title, re, item, who]) => { const ds = days(tag); if (!ds.length) return ''; const ok = has(re);
+    return `<div class="li"><span class="grow"><b>${title}</b><br><span class="tiny">${ds.join(', ')}</span></span>${ok ? chip('in the list', 'good') : btn('Add', 'addPack', { name: item, person: who, cat: 'Clothes' }, 'sm')}</div>`; }).join('');
+  return rows ? `<section class="card"><h3>Smart reminders</h3><div class="list">${rows}</div></section>` : '';
+}
+function vOutfits() {
+  return DAYS.map((d) => {
+    const os = all('outfits').filter((o) => o.day === d);
+    return `<section class="card"><div class="spread"><h3>${dayLabel(d, true)}</h3>${btn('+ Outfit', 'addOutfit', { day: d }, 'sm ghost')}</div>
+    <p class="tiny">${esc(get('days', d)?.title || '')}</p>
+    ${os.map((o) => `<button style="all:unset;display:block;cursor:pointer;padding:8px 0;border-top:1px solid var(--line);width:100%" data-a="editOutfit" data-id="${o.id}">
+      <div class="spread"><b>${esc(nm(o.person))}</b>${o.suggested ? chip('suggested', 'terra') : ''}</div>
+      <div class="chips" style="margin-top:6px">${(o.pieces || []).map((p) => chip(p.n)).join('') || '<span class="tiny">TBD</span>'}</div>
+      ${o.note ? `<p class="tiny" style="margin-top:4px">${esc(o.note)}</p>` : ''}</button>`).join('') || '<p class="small muted" style="margin-top:6px">No outfit yet.</p>'}</section>`;
+  }).join('');
+}
+function vPackList() {
+  const who = UI.packWho;
+  const items = packItems().filter((i) => who === 'all' || i.person === who);
+  const done = items.filter((i) => i.packed).length;
+  const pct = items.length ? Math.round((done / items.length) * 100) : 0;
+  return `<div class="seg" role="group" aria-label="Person">${[['all','Everyone'], ...PEOPLE].map(([k, l]) => `<button data-a="packWho" data-v="${k}" aria-pressed="${who === k}">${esc(k === 'all' ? l : nm(k))}</button>`).join('')}</div>
+<section class="card"><div class="spread"><b>${done} of ${items.length} packed</b><span class="tiny">${pct}%</span></div><div class="bar" style="margin-top:8px"><i style="width:${pct}%"></i></div></section>
+${PACK_CATS.map((cat) => { const xs = items.filter((i) => i.cat === cat).sort((a, b) => a.person.localeCompare(b.person) || a.name.localeCompare(b.name)); if (!xs.length) return '';
+  return `<section class="card"><h3>${cat}</h3><div class="list">${xs.map((i) => `<label class="li" style="cursor:pointer"><input type="checkbox" class="check" data-c="pack" data-id="${i.id}" data-derived="${i.derived ? 1 : ''}" ${i.packed ? 'checked' : ''}>
+  <span class="grow" style="${i.packed ? 'text-decoration:line-through;color:var(--ink-3)' : ''}">${esc(i.name)}${i.qty > 1 ? ' ×' + i.qty : ''}<br><span class="tiny">${esc(nm(i.person))}${i.derived ? ' · from outfits: ' + i.days.map((d) => WD3[dow(d)]).join(', ') : ''}</span></span>
+  ${i.derived ? '' : `<button class="iconbtn" data-a="editPack" data-id="${i.id}" aria-label="Edit ${esc(i.name)}">✎</button>`}</label>`).join('')}</div></section>`; }).join('')}
+${btn('+ Add item', 'addPack', { person: who === 'all' ? 'a1' : who }, 'pri block')}`;
+}
+
+/* ================================================================ Budget */
+function vMoney() {
+  const home = kv('home', 'SGD');
+  const ex = all('expenses').sort((a, b) => (b.day || '').localeCompare(a.day || '') || b.u - a.u);
+  const sum = (xs) => xs.reduce((s, e) => s + (toHome(e.amt, e.cur) || 0), 0);
+  const missing = ex.filter((e) => toHome(e.amt, e.cur) == null).length;
+  const committed = all('bookings').filter((b) => ['booked','paid'].includes(b.status) && b.price != null && b.price !== '');
+  const plannedTotal = EXP_CATS.reduce((s, c) => s + (+get('budget', 'cat:' + c)?.planned || 0), 0);
+  const actual = sum(ex);
+  const barRow = (label, act, plan, a, d) => { const max = Math.max(act, plan || 0, 1); return `<button style="all:unset;display:grid;gap:4px;padding:8px 0;cursor:pointer;width:100%" data-a="${a}" data-k="${esc(d)}"><div class="spread small"><b>${esc(label)}</b><span class="tnum">${money(act, home)} <span class="muted">/ ${plan ? money(plan, home) : 'set plan'}</span></span></div><div class="bar"><i class="${plan && act > plan ? 'over' : ''}" style="width:${(act / max) * 100}%"></i>${plan ? `<span class="plan" style="left:${(plan / max) * 100}%"></span>` : ''}</div></button>`; };
+  return `<section class="card sea"><div class="spread"><div><div class="eyebrow">Spent so far</div><div class="big" style="margin-top:4px">${money(actual, home)}</div></div>
+  <label class="small">Home currency<br><select class="inp" style="min-height:40px;margin-top:4px;color:var(--ink)" data-c="home">${CURRENCIES.map((c) => `<option ${c === home ? 'selected' : ''}>${c}</option>`).join('')}</select></label></div>
+  <p class="small" style="margin-top:6px">Planned ${plannedTotal ? money(plannedTotal, home) : 'not set'} · committed bookings ${money(committed.reduce((s, b) => s + (toHome(b.price, b.cur) || 0), 0), home)}</p></section>
+${missing ? alertHtml(['warn', `${missing} expense${missing > 1 ? 's' : ''} need an exchange rate`, 'Set the rate under Exchange rates below.']) : ''}
+${btn('+ Log expense', 'addExpense', {}, 'terra block')}
+<section class="card"><h2>By category</h2><p class="tiny">Tap a row to set its planned budget (${home}).</p>${EXP_CATS.map((c) => barRow(c, sum(ex.filter((e) => e.cat === c)), +get('budget', 'cat:' + c)?.planned || 0, 'planBudget', 'cat:' + c)).join('')}</section>
+<section class="card"><h2>By day</h2>${['', ...DAYS].map((d) => barRow(d ? dayLabel(d) : 'Before the trip', sum(ex.filter((e) => (e.day || '') === d)), +get('budget', 'day:' + (d || 'pre'))?.planned || 0, 'planBudget', 'day:' + (d || 'pre'))).join('')}</section>
+<section class="card"><h2>Expenses</h2><div class="list">${ex.map((e) => { const h = toHome(e.amt, e.cur); return `<button class="li" style="all:unset;display:flex;gap:10px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line);cursor:pointer;width:100%" data-a="editExpense" data-id="${e.id}"><span class="grow"><b>${esc(e.note || e.cat)}</b><br><span class="tiny">${esc(e.cat)} · ${esc(e.day ? dayLabel(e.day) : 'Before trip')} · paid by ${esc(nm(e.who))}</span></span><span class="tnum" style="text-align:right"><b>${money(+e.amt, e.cur)}</b>${e.cur !== home ? `<br><span class="tiny">${h == null ? 'rate?' : money(h, home)}</span>` : ''}</span></button>`; }).join('') || '<p class="small muted">No expenses yet. Log the first one with the button above.</p>'}</div></section>
+<section class="card"><h2>Exchange rates</h2><p class="tiny">Value of 1 unit in SGD. ${esc(get('kv', 'rates')?.asOf || '')} No live rates are fetched; edit these.</p>
+  <div class="grid2" style="margin-top:8px">${CURRENCIES.filter((c) => c !== 'SGD').map((c) => `<div class="field"><label for="r_${c}">1 ${c} = ? SGD</label><input id="r_${c}" class="inp" type="number" inputmode="decimal" step="any" value="${rate(c) ?? ''}" data-c="rate" data-k="${c}"></div>`).join('')}</div></section>`;
+}
+
+/* ================================================================ More */
+function vMore() {
+  const subs = { balloon: vBalloon, docs: vDocs, sos: vSos, phrases: vPhrases, todos: vTodos, ideas: vIdeas, sync: vSync };
+  if (UI.sub && subs[UI.sub]) return subs[UI.sub]();
+  const t = (sub, title, s, a = 'sub') => `<button class="tilebtn" data-a="${a}" data-sub="${sub}" data-tab="${sub}"><span class="t">${title}</span><span class="s">${s}</span></button>`;
+  return `<h1>More</h1><div class="tiles">
+  ${t('balloon', 'Balloon planner', 'Heights, operators, the 21 Oct backup')}
+  ${t('kids', 'Kids corner', 'Adventures, facts, spot-it', 'go')}
+  ${t('todos', 'To-dos', `${all('todos').filter((x) => !x.done).length} open`)}
+  ${t('docs', 'Documents', 'Passports, visas, insurance, tickets')}
+  ${t('sos', 'Emergency', '112, hotels, embassy')}
+  ${t('phrases', 'Turkish phrases', 'With pronunciation')}
+  ${t('ideas', 'Ideas & changes', 'What we moved and why; things to add')}
+  ${t('sync', 'Sync & backup', 'Share with your spouse, export, import')}
+  </div>${btn('Print / share the itinerary', 'print', {}, 'block')}`;
+}
+const back = () => btn('← More', 'sub', { sub: '' }, 'sm ghost');
+
+function vDocs() {
+  const ds = all('docs').sort((a, b) => a.kind.localeCompare(b.kind) || a.title.localeCompare(b.title));
+  return `<div class="row">${back()}</div><h1>Documents</h1>
+${alertHtml(['info', 'References and notes only', 'Never store full passport or card numbers here. Use the last 4 characters and where the original lives.'])}
+${ds.map((d) => `<button class="card" style="text-align:left;cursor:pointer;display:grid;gap:4px;width:100%" data-a="editDoc" data-id="${d.id}"><div class="spread"><span class="eyebrow">${esc(d.kind)}</span>${d.ref || d.link ? chip('saved', 'good') : chip('TBD')}</div><h3>${esc(d.title)}</h3>
+<div class="small muted">${d.ref ? 'Ref …' + esc(d.ref) + ' · ' : ''}${d.expiry ? 'Expires ' + esc(d.expiry) + ' · ' : ''}${esc(d.notes)}</div>${d.link ? `<a class="small" href="${esc(d.link)}" target="_blank" rel="noopener">Open link</a>` : ''}</button>`).join('')}
+${btn('+ Add document', 'addDoc', {}, 'pri block')}`;
+}
+function vSos() {
+  const cs = all('contacts');
+  return `<div class="row">${back()}</div>
+<section class="card" style="background:var(--bad);color:#fff;border:0"><div class="eyebrow" style="color:#fff">Emergency in Turkey</div><div class="big" style="margin-top:6px">112</div><p class="small" style="margin-top:6px">Ambulance, police and fire. Free from any phone.</p><a class="btn" style="margin-top:10px" href="tel:112">Call 112</a></section>
+${cs.map((c) => `<section class="card"><div class="spread"><h3>${esc(c.label)}</h3>${btn('Edit', 'editContact', { id: c.id }, 'sm ghost')}</div>
+<p class="tnum" style="margin-top:4px;user-select:all;font-size:1.1rem">${esc(c.value || 'TBD')}</p>${c.notes ? `<p class="small muted">${esc(c.notes)}</p>` : ''}
+${c.value ? `<div class="row" style="margin-top:8px">${btn('Copy', 'copy', { text: c.value }, 'sm')}${/^[+\d][\d\s()-]{2,}$/.test(c.value) ? `<a class="btn sm" href="tel:${esc(c.value.replace(/[^\d+]/g, ''))}">Call</a>` : ''}</div>` : ''}</section>`).join('')}
+${btn('+ Add contact', 'addContact', {}, 'pri block')}
+<section class="card"><h3>Show this to a taxi driver</h3><p class="small muted">Your hotel name, large. Tap to show full screen.</p>${btn('JW Marriott Istanbul Bosphorus, Karaköy', 'show', { tr: 'JW Marriott Istanbul Bosphorus', en: 'Karaköy, Beyoğlu, İstanbul' }, 'block')}</section>`;
+}
+function vPhrases() {
+  return `<div class="row">${back()}</div><h1>Turkish for families</h1><p class="small muted">Tap Show to hold the phrase up to someone; Say plays it on phones that have a Turkish voice.</p>
+<section class="card">${PHRASES.map(([tr, pr, en]) => `<div class="phrase"><div><div class="tr">${esc(tr)}</div><div class="small">${esc(pr)}</div><div class="tiny">${esc(en)}</div></div><div class="col">${btn('Show', 'show', { tr, en }, 'sm')}${btn('Say', 'say', { tr }, 'sm ghost')}</div></div>`).join('')}</section>
+<p class="tiny">Turkish letters: ç = ch, ş = sh, ı (no dot) = the “uh” in “button”, ö/ü as in German, ğ lengthens the vowel before it.</p>`;
+}
+function vTodos() {
+  const w = UI.todoWho;
+  const ts = all('todos').filter((t) => w === 'all' || (t.owner || '') === (w === 'either' ? '' : w)).sort((a, b) => (a.done - b.done) || (a.due || '9').localeCompare(b.due || '9'));
+  return `<div class="row">${back()}</div><h1>To-dos</h1>
+<div class="seg" role="group" aria-label="Owner">${[['all','All'],['a1',nm('a1')],['a2',nm('a2')],['either','Either']].map(([k, l]) => `<button data-a="todoWho" data-v="${k}" aria-pressed="${w === k}">${esc(l)}</button>`).join('')}</div>
+<section class="card"><div class="list">${ts.map((t) => `<div class="li"><input type="checkbox" class="check" data-c="todo" data-id="${t.id}" ${t.done ? 'checked' : ''} aria-label="Done"><button style="all:unset;cursor:pointer;flex:1;min-width:0" data-a="editTodo" data-id="${t.id}"><span style="${t.done ? 'text-decoration:line-through;color:var(--ink-3)' : ''}">${esc(t.text)}</span><br><span class="tiny">${t.owner ? esc(nm(t.owner)) : 'Either adult'}${t.due ? ' · due ' + esc(dayLabel(t.due)) : ''}</span></button></div>`).join('') || '<p class="muted small">Nothing here.</p>'}</div></section>
+${btn('+ Add to-do', 'addTodo', {}, 'pri block')}`;
+}
+function vIdeas() {
+  return `<div class="row">${back()}</div><h1>Ideas & changes</h1>
+<section class="card"><h2>What we changed in your plan</h2><div class="list">${CHANGES.map((c) => `<div class="li" style="display:block"><b>${esc(c.t)}</b><p class="small muted">${esc(c.why)}</p></div>`).join('')}</div></section>
+<section class="card"><h2>Kid-friendly ideas to add</h2><div class="list">${IDEAS.map((i) => { const added = all('stops').some((s) => s.idea === i.id);
+  return `<div class="li" style="align-items:flex-start">${imgBox(PLACES[i.pk]?.w, i.name, 'thumb')}<div class="grow"><b>${esc(i.name)}</b><p class="small muted">${esc(i.why)}</p><p class="tiny">Suggested: ${dayLabel(i.day)}, ${i.block}</p></div>${added ? chip('added', 'good') : btn('Add', 'addIdea', { id: i.id }, 'sm')}</div>`; }).join('')}</div></section>`;
+}
+function vSync() {
+  const shared = Sync.mode === 'shared';
+  return `<div class="row">${back()}</div><h1>Sync & backup</h1>
+<section class="card">${shared ? `<h2>Shared and live</h2><p class="small" style="margin-top:6px">This trip lives in this page’s shared store. Every change either of you makes appears on the other phone within seconds. To add your spouse, open the page’s Share menu and give them <b>Contributor</b> access (or Editor).</p>`
+  : `<h2>Saved on this phone</h2><p class="small" style="margin-top:6px">Changes are stored in this browser only. To share: export the trip, send the file to your spouse, and they import it. Imports merge record by record, newest edit wins, so nothing is lost when you both edit.</p>`}</section>
+<section class="card"><h2>Export</h2><div class="row" style="margin-top:8px">${btn('Save as JSON file', 'exportFile', {}, 'pri')}${btn('Copy JSON', 'exportCopy', {}, '')}</div></section>
+<section class="card"><h2>Import</h2><p class="small muted">Choose a file or paste JSON. It merges into this trip.</p>
+  <input type="file" id="importFile" accept="application/json,.json" class="inp" style="margin-top:8px" data-c="importFile">
+  <textarea id="importText" class="inp" style="margin-top:8px;min-height:90px" placeholder="…or paste the JSON here"></textarea>
+  <div style="margin-top:8px">${btn('Merge pasted JSON', 'importPaste', {}, '')}</div></section>
+<section class="card"><h2>Names</h2><div class="grid2" style="margin-top:8px">${PEOPLE.map(([k]) => `<div class="field"><label for="n_${k}">${PEOPLE.find((x) => x[0] === k)[1]}</label><input id="n_${k}" class="inp" value="${esc(nm(k))}" data-c="name" data-k="${k}"></div>`).join('')}</div></section>
+<section class="card"><h2>Preview a day of the trip</h2><p class="small muted">Pretend it is a given Istanbul date and time, to see the Today screen as it will look. Only this phone.</p>
+  <div class="grid2" style="margin-top:8px"><div class="field"><label for="simDay">Day</label><select id="simDay" class="inp">${DAYS.map((d) => `<option value="${d}">${dayLabel(d)}</option>`).join('')}</select></div><div class="field"><label for="simTime">Istanbul time</label><input id="simTime" class="inp" type="time" value="10:00"></div></div>
+  <div class="row" style="margin-top:8px">${btn('Preview', 'simSet', {}, 'pri sm')}${btn('Back to real time', 'simClear', {}, 'sm')}</div></section>
+<section class="card"><h2>Appearance</h2><div class="seg" style="margin-top:8px" role="group" aria-label="Theme">${[['','System'],['light','Light'],['dark','Dark']].map(([k, l]) => `<button data-a="theme" data-v="${k}" aria-pressed="${(LS.get('tk_theme') || '') === k}">${l}</button>`).join('')}</div></section>
+<section class="card"><h2>Reset this phone</h2><p class="small muted">Clears this phone’s saved copy and reloads the original plan.${shared ? ' The shared copy is not affected.' : ' Export first if you want to keep your changes.'}</p><div style="margin-top:8px">${btn('Reset this phone', 'reset', {}, 'danger sm')}</div></section>`;
+}
+
+/* ================================================================ Kids corner */
+const kidMark = (k) => { const n = nm(k); return n === PEOPLE.find((x) => x[0] === k)[1] ? k.slice(1) : n.slice(0, 2); };
+function vKids() {
+  const p = ist(now());
+  const d = UI.kidsDay || (DAYS.includes(p.date) ? p.date : DAYS[0]);
+  const day = get('days', d) || {};
+  const places = [...new Set(stopsOf(d).map((s) => s.pk).filter((k) => PLACES[k]?.kids || PLACES[k]?.fact))];
+  const spots = all('spots');
+  const count = (k) => spots.filter((s) => s[k]).length;
+  return `<div class="kids">
+<div class="seg" role="group" aria-label="Day">${DAYS.map((x) => `<button data-a="kidsDay" data-day="${x}" aria-pressed="${x === d}">${WD3[dow(x)]} ${+x.slice(8)}</button>`).join('')}</div>
+<section class="card sea" style="margin-top:12px"><div class="eyebrow">${dayLabel(d, true)} · today’s adventure</div><p class="adv" style="margin-top:8px">${esc(day.kids || '')}</p></section>
+${places.map((k) => { const pl = PLACES[k]; return `<section class="card" style="display:grid;gap:10px">${imgBox(pl.w, pl.n, 'hero')}<h2>${esc(pl.n)}</h2>${pl.kids ? `<p style="font-family:var(--f-body)"><b style="color:var(--terra)">Did you know?</b> ${esc(pl.kids)}</p>` : ''}${pl.fact ? `<p class="small muted" style="font-family:var(--f-body)">${esc(pl.fact)}</p>` : ''}</section>`; }).join('')}
+<section class="card"><div class="spread"><h2>Spot it!</h2><span class="small">${esc(nm('k9'))} ${count('k9')} · ${esc(nm('k7'))} ${count('k7')} of ${spots.length}</span></div>
+<div style="margin-top:6px">${spots.map((s) => `<div class="spot"><div><b>${esc(s.name)}</b><div class="tiny" style="font-family:var(--f-body)">${esc(s.where || '')}</div></div>${['k9', 'k7'].map((k) => `<button class="kbox" data-a="spot" data-id="${s.id}" data-k="${k}" aria-pressed="${!!s[k]}" aria-label="${esc(nm(k))} spotted ${esc(s.name)}">${s[k] ? '✓' : esc(kidMark(k))}</button>`).join('')}</div>`).join('')}</div>
+${btn('+ Add something to spot', 'addSpot', {}, 'sm')}</section>
+<section class="card"><h2>Read before you go</h2><div class="list">${READING.map((r) => `<div class="li" style="display:block"><b>${esc(r.t)}</b><p class="small muted" style="font-family:var(--f-body)">${esc(r.w)}</p></div>`).join('')}</div></section>
+<section class="card"><h2>Say it in Turkish</h2><div class="list">${PHRASES.filter(([, , en]) => /Hello|Thank|Ice|Cat|Balloon|One/.test(en)).map(([tr, pr, en]) => `<div class="phrase"><div><div class="tr">${esc(tr)}</div><div class="small" style="font-family:var(--f-body)">${esc(pr)} · ${esc(en)}</div></div>${btn('Say', 'say', { tr }, 'sm')}</div>`).join('')}</div></section>
+</div>`;
+}
+
+/* ================================================================ sheets (editors) */
+function fieldHtml(f, v) {
+  const id = 'f_' + f.k;
+  let input;
+  if (f.t === 'textarea') input = `<textarea id="${id}" ${f.ph ? `placeholder="${esc(f.ph)}"` : ''}>${esc(v ?? '')}</textarea>`;
+  else if (f.t === 'select') input = `<select id="${id}">${f.opts.map(([val, l]) => `<option value="${esc(val)}" ${String(v ?? '') === String(val) ? 'selected' : ''}>${esc(l)}</option>`).join('')}</select>`;
+  else if (f.t === 'tags') input = `<div class="chips" id="${id}">${f.opts.map(([val, l]) => `<label class="chip" style="cursor:pointer;padding:8px 10px"><input type="checkbox" value="${esc(val)}" ${(v || []).includes(val) ? 'checked' : ''}> ${esc(l)}</label>`).join('')}</div>`;
+  else input = `<input id="${id}" type="${f.t || 'text'}" ${f.t === 'number' ? 'inputmode="decimal" step="any"' : ''} value="${esc(v ?? '')}" ${f.ph ? `placeholder="${esc(f.ph)}"` : ''}>`;
+  return `<div class="field"><label for="${id}">${esc(f.l)}</label>${input}${f.hint ? `<div class="hint">${esc(f.hint)}</div>` : ''}<div class="err" id="e_${f.k}"></div></div>`;
+}
+function fieldsHtml(fields, rec) { return fields.map((f) => Array.isArray(f) ? `<div class="grid2">${f.map((x) => fieldHtml(x, rec[x.k])).join('')}</div>` : fieldHtml(f, rec[f.k])).join(''); }
+function readFields(fields) {
+  const out = {};
+  for (const f of fields.flat()) {
+    const el = $('#f_' + f.k); if (!el) continue;
+    if (f.t === 'tags') out[f.k] = [...el.querySelectorAll('input:checked')].map((i) => i.value);
+    else if (f.t === 'number') out[f.k] = el.value === '' ? null : Number(el.value);
+    else out[f.k] = el.value.trim();
+  }
+  return out;
+}
+function sheet({ title, fields = [], rec = {}, extra = '', onSave, onDelete, validate, saveLabel = 'Save' }) {
+  $('#layer').innerHTML = `<div class="scrim" id="scrim"><div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sh-t">
+  <div class="spread"><h2 id="sh-t">${esc(title)}</h2><button class="iconbtn" id="sh-x" aria-label="Close">✕</button></div>
+  ${fieldsHtml(fields, rec)}${extra}
+  <div class="row" style="margin-top:4px">${onDelete ? '<button class="btn danger" id="sh-del">Delete</button>' : ''}<span class="grow"></span><button class="btn" id="sh-c">Cancel</button>${onSave ? `<button class="btn pri" id="sh-s">${esc(saveLabel)}</button>` : ''}</div></div></div>`;
+  const close = () => { $('#layer').innerHTML = ''; };
+  $('#scrim').addEventListener('click', (e) => { if (e.target.id === 'scrim') close(); });
+  $('#sh-x').onclick = close; $('#sh-c').onclick = close;
+  if (onSave) $('#sh-s').onclick = () => {
+    const v = readFields(fields);
+    document.querySelectorAll('.sheet .err').forEach((e) => (e.textContent = ''));
+    const errs = validate ? validate(v) : {};
+    if (errs && Object.keys(errs).length) { for (const [k, m] of Object.entries(errs)) { const e = $('#e_' + k); if (e) e.textContent = m; } return; }
+    onSave(v); close();
+  };
+  if (onDelete) { const d = $('#sh-del'); d.onclick = () => { if (d.dataset.armed) { onDelete(); close(); } else { d.dataset.armed = 1; d.textContent = 'Tap again to delete'; } }; }
+  const first = $('.sheet input, .sheet select, .sheet textarea'); if (first && !('ontouchstart' in window)) first.focus();
+}
+const dayOpts = (none) => [...(none ? [['', none]] : []), ...DAYS.map((d) => [d, dayLabel(d, true)])];
+const personOpts = () => PEOPLE.map(([k]) => [k, nm(k)]);
+const placeOpts = () => [['', 'None / custom'], ...Object.entries(PLACES).map(([k, p]) => [k, p.n])];
+const looksLikeFullNumber = (s) => /\d[\d\s-]{8,}\d/.test(s || '') || /\b[A-Z]{1,2}\d{6,}\b/i.test(s || '');
+
+function editStop(id, preset = {}) {
+  const s = id ? get('stops', id) : { id: uid('s'), day: DAYS[0], block: 'morning', ord: 99, name: '', time: '', pk: '', q: '', notes: '', status: 'planned', tags: [], travel: '', ...preset };
+  const F = [{ k: 'name', l: 'Stop name' }, [{ k: 'day', l: 'Day', t: 'select', opts: dayOpts() }, { k: 'block', l: 'Part of day', t: 'select', opts: BLOCKS }],
+    [{ k: 'time', l: 'Time (optional)', t: 'time' }, { k: 'status', l: 'Status', t: 'select', opts: [['planned','Planned'],['done','Done'],['skipped','Skipped']] }],
+    { k: 'pk', l: 'Place (for directions, photo and facts)', t: 'select', opts: placeOpts() },
+    { k: 'q', l: 'Custom Maps search', hint: 'Used for Directions when no place is picked, or to override it.' },
+    { k: 'travel', l: 'Getting here from the previous stop', ph: 'e.g. ≈ 10 min walk' }, { k: 'notes', l: 'Notes', t: 'textarea' }, { k: 'tags', l: 'Reminders', t: 'tags', opts: TAGS }];
+  const extra = id ? `<div class="row">${btn('↑ Earlier', 'nudge', { id: s.id, d: -1 }, 'sm')}${btn('↓ Later', 'nudge', { id: s.id, d: 1 }, 'sm')}</div>` : '';
+  sheet({ title: id ? 'Edit stop' : 'Add stop', fields: F, rec: s, extra,
+    validate: (v) => (v.name ? {} : { name: 'Give the stop a name.' }),
+    onSave: (v) => { const cur = get('stops', s.id) || s; const moved = cur.day !== v.day || cur.block !== v.block; const ord = moved || !id ? Math.max(0, ...stopsOf(v.day).filter((x) => x.block === v.block && x.id !== s.id).map((x) => x.ord || 0)) + 1 : cur.ord; put('stops', { ...cur, ...v, ord }); toast(id ? 'Saved' : 'Stop added'); },
+    onDelete: id ? () => { remove('stops', s.id); toast('Stop deleted'); } : null });
+}
+function nudge(id, d) {
+  const s = get('stops', id); if (!s) return;
+  const sib = stopsOf(s.day).filter((x) => x.block === s.block);
+  const i = sib.findIndex((x) => x.id === id), j = i + d;
+  if (j < 0 || j >= sib.length) return toast(d < 0 ? 'Already first' : 'Already last');
+  [sib[i], sib[j]] = [sib[j], sib[i]];
+  sib.forEach((x, k) => { if (x.ord !== k + 1) put('stops', { ...x, ord: k + 1 }); });
+  toast('Moved');
+}
+function editBooking(id) {
+  const b = id ? get('bookings', id) : { id: uid('b'), cat: 'Other', title: '', status: 'idea', cur: 'EUR', price: null, date: '', time: '', prio: null, group: '' };
+  const F = [{ k: 'title', l: 'What' }, [{ k: 'cat', l: 'Category', t: 'select', opts: BOOK_CATS.map((c) => [c, c]) }, { k: 'status', l: 'Status', t: 'select', opts: STATUSES.map((s) => [s, s]) }],
+    { k: 'provider', l: 'Provider' }, [{ k: 'date', l: 'Date', t: 'date' }, { k: 'time', l: 'Time', t: 'time' }],
+    [{ k: 'price', l: 'Price (total)', t: 'number' }, { k: 'cur', l: 'Currency', t: 'select', opts: CURRENCIES.map((c) => [c, c]) }], { k: 'priceNote', l: 'Price note', ph: 'e.g. €330 × 4 people' },
+    { k: 'conf', l: 'Confirmation number' }, { k: 'contact', l: 'Contact / phone' }, { k: 'link', l: 'Link', t: 'url' },
+    { k: 'terms', l: 'Cancellation & rescheduling terms', t: 'textarea' }, { k: 'notes', l: 'Notes', t: 'textarea' },
+    { k: 'prio', l: 'Booking priority', t: 'select', opts: [['', 'None'], ['1', '1 — Balloon'], ['2', '2 — Cappadocia hotel'], ['3', '3 — Domestic flights'], ['4', '4 — Day tour']] }];
+  sheet({ title: id ? 'Edit booking' : 'Add booking', fields: F, rec: { ...b, prio: b.prio ?? '' },
+    validate: (v) => { const e = {}; if (!v.title) e.title = 'Say what this booking is.'; if (/\b\d{13,19}\b/.test((v.conf || '').replace(/[\s-]/g, ''))) e.conf = 'That looks like a card number. Store the booking reference only.'; return e; },
+    onSave: (v) => { put('bookings', { ...(get('bookings', b.id) || b), ...v, prio: v.prio ? +v.prio : null }); toast('Saved'); },
+    onDelete: id ? () => { remove('bookings', b.id); toast('Deleted'); } : null });
+}
+function editOption(id, group) {
+  const o = id ? get('options', id) : { id: uid('o'), group, name: '', cur: 'EUR', per: group === 'balloon' ? 'person' : 'night', quote: 'to ask' };
+  const g = o.group;
+  const common = [[{ k: 'price', l: 'Price', t: 'number' }, { k: 'cur', l: 'Currency', t: 'select', opts: CURRENCIES.map((c) => [c, c]) }],
+    { k: 'per', l: 'Price is per', t: 'select', opts: [['person','person'],['night','night'],['total','total']] }];
+  const F = g === 'balloon'
+    ? [{ k: 'name', l: 'Operator' }, [{ k: 'rank', l: 'Your rank', t: 'number' }, { k: 'quote', l: 'Quote', t: 'select', opts: [['to ask','to ask'],['asked','asked'],['quoted','quoted'],['declined','declined']] }],
+      [{ k: 'basket', l: 'Basket size' }, { k: 'duration', l: 'Flight time' }], ...common, [{ k: 'minHeight', l: 'Min height (cm)', t: 'number' }, { k: 'minAge', l: 'Min age' }],
+      { k: 'resched', l: 'Weather rescheduling terms', t: 'textarea' }, { k: 'link', l: 'Link', t: 'url' }, { k: 'contact', l: 'Contact' }, { k: 'notes', l: 'Notes', t: 'textarea' }]
+    : [{ k: 'name', l: 'Hotel' }, { k: 'area', l: 'Area' }, { k: 'room', l: 'Room for 4' }, ...common, { k: 'quote', l: 'Quote', t: 'select', opts: [['to ask','to ask'],['asked','asked'],['quoted','quoted'],['declined','declined']] },
+      { k: 'cancel', l: 'Cancellation terms', t: 'textarea' }, { k: 'link', l: 'Link', t: 'url' }, { k: 'contact', l: 'Contact' }, { k: 'notes', l: 'Notes', t: 'textarea' }];
+  sheet({ title: id ? 'Edit option' : 'Add option', fields: F, rec: o, validate: (v) => (v.name ? {} : { name: 'Name it.' }),
+    onSave: (v) => { put('options', { ...(get('options', o.id) || o), ...v }); toast('Saved'); },
+    onDelete: id ? () => { remove('options', o.id); toast('Deleted'); } : null });
+}
+function pick(id) {
+  const o = get('options', id); if (!o) return;
+  for (const x of all('options').filter((x) => x.group === o.group)) if (!!x.chosen !== (x.id === id)) put('options', { ...x, chosen: x.id === id });
+  const b = all('bookings').find((x) => x.group === o.group);
+  if (b) {
+    const has = o.price != null && o.price !== '';
+    const mult = o.per === 'person' ? 4 : o.per === 'night' ? 2 : 1;
+    put('bookings', { ...b, provider: o.name, status: ['booked','paid'].includes(b.status) ? b.status : 'booked',
+      price: has ? o.price * mult : b.price, cur: has ? o.cur : b.cur,
+      priceNote: has && mult > 1 ? `${money(+o.price, o.cur)} × ${mult} ${o.per === 'person' ? 'people' : 'nights'}` : b.priceNote,
+      terms: o.resched || o.cancel || b.terms, link: o.link || b.link, contact: o.contact || b.contact });
+  }
+  toast(`${o.name} picked and marked booked`);
+}
+function editOutfit(id, day) {
+  const o = id ? get('outfits', id) : { id: uid('f'), day: day || DAYS[0], person: 'a1', pieces: [], note: '', suggested: false };
+  const rec = { ...o, piecesText: (o.pieces || []).map((p) => (p.cat && p.cat !== 'Clothes' ? `${p.n} | ${p.cat}` : p.n)).join('\n') };
+  const F = [[{ k: 'day', l: 'Day', t: 'select', opts: dayOpts() }, { k: 'person', l: 'Who', t: 'select', opts: personOpts() }],
+    { k: 'piecesText', l: 'Pieces, one per line', t: 'textarea', hint: 'Each piece goes on the packing list. Add “| Toiletries” etc. to file it under another category.' }, { k: 'note', l: 'Note', t: 'textarea' }];
+  sheet({ title: id ? 'Edit outfit' : 'Add outfit', fields: F, rec,
+    onSave: (v) => { const pieces = v.piecesText.split('\n').map((l) => l.trim()).filter(Boolean).map((l) => { const [n, c] = l.split('|').map((x) => x.trim()); return { n, cat: PACK_CATS.includes(c) ? c : 'Clothes' }; });
+      const { piecesText, ...rest } = v; put('outfits', { ...(get('outfits', o.id) || o), ...rest, pieces, suggested: false }); toast('Outfit saved'); },
+    onDelete: id ? () => { remove('outfits', o.id); toast('Deleted'); } : null });
+}
+function editPack(id, preset = {}) {
+  const i = id ? get('packing', id) : { id: uid('p'), person: 'a1', cat: 'Clothes', name: '', qty: 1, packed: false, ...preset };
+  const F = [{ k: 'name', l: 'Item' }, [{ k: 'person', l: 'Whose', t: 'select', opts: personOpts() }, { k: 'cat', l: 'Category', t: 'select', opts: PACK_CATS.map((c) => [c, c]) }], { k: 'qty', l: 'How many', t: 'number' }];
+  sheet({ title: id ? 'Edit item' : 'Add item', fields: F, rec: i, validate: (v) => (v.name ? {} : { name: 'Name the item.' }),
+    onSave: (v) => { put('packing', { ...(get('packing', i.id) || i), ...v, qty: v.qty || 1 }); toast('Saved'); },
+    onDelete: id ? () => { remove('packing', i.id); toast('Removed'); } : null });
+}
+function editExpense(id) {
+  const p = ist(now());
+  const e = id ? get('expenses', id) : { id: uid('e'), amt: null, cur: LS.get('tk_lastCur') || 'TRY', cat: 'Food', who: LS.get('tk_lastWho') || 'a1', day: DAYS.includes(p.date) ? p.date : '', note: '' };
+  const F = [[{ k: 'amt', l: 'Amount', t: 'number' }, { k: 'cur', l: 'Currency', t: 'select', opts: CURRENCIES.map((c) => [c, c]) }],
+    [{ k: 'cat', l: 'Category', t: 'select', opts: EXP_CATS.map((c) => [c, c]) }, { k: 'who', l: 'Paid by', t: 'select', opts: [['a1', nm('a1')], ['a2', nm('a2')]] }],
+    { k: 'day', l: 'Day', t: 'select', opts: dayOpts('Before the trip') }, { k: 'note', l: 'What for', ph: 'e.g. Lunch in Sultanahmet' }];
+  sheet({ title: id ? 'Edit expense' : 'Log expense', fields: F, rec: e, validate: (v) => (v.amt > 0 ? {} : { amt: 'Enter an amount above zero.' }),
+    onSave: (v) => { LS.set('tk_lastCur', v.cur); LS.set('tk_lastWho', v.who); put('expenses', { ...(get('expenses', e.id) || e), ...v }); toast('Expense logged'); },
+    onDelete: id ? () => { remove('expenses', e.id); toast('Deleted'); } : null });
+}
+function planBudget(k) {
+  const r = get('budget', k) || { id: k, planned: null };
+  const label = k.startsWith('cat:') ? k.slice(4) : k === 'day:pre' ? 'Before the trip' : dayLabel(k.slice(4), true);
+  sheet({ title: 'Planned: ' + label, fields: [{ k: 'planned', l: `Planned amount (${kv('home', 'SGD')})`, t: 'number' }], rec: r,
+    onSave: (v) => { put('budget', { ...r, planned: v.planned }); toast('Plan saved'); } });
+}
+function editDoc(id) {
+  const d = id ? get('docs', id) : { id: uid('d'), kind: 'Other', title: '', who: '', ref: '', link: '', expiry: '', notes: '' };
+  const F = [{ k: 'title', l: 'Title' }, [{ k: 'kind', l: 'Type', t: 'select', opts: ['Passport','Visa','Insurance','Flight','Hotel','Booking','Other'].map((x) => [x, x]) }, { k: 'who', l: 'For', t: 'select', opts: [['', 'Family'], ...personOpts()] }],
+    { k: 'ref', l: 'Reference — last 4 characters only', ph: 'e.g. 4821' }, { k: 'expiry', l: 'Expiry date', t: 'date' }, { k: 'link', l: 'Link (email, drive, booking page)', t: 'url' }, { k: 'notes', l: 'Notes', t: 'textarea', ph: 'Where the original is kept, what to check' }];
+  sheet({ title: id ? 'Edit document' : 'Add document', fields: F, rec: d,
+    validate: (v) => { const e = {}; if (!v.title) e.title = 'Give it a title.'; if (v.ref.length > 6 || looksLikeFullNumber(v.ref)) e.ref = 'Store only the last 4 characters, never the full number.'; if (looksLikeFullNumber(v.notes)) e.notes = 'This looks like a full passport or card number. Remove it.'; return e; },
+    onSave: (v) => { put('docs', { ...(get('docs', d.id) || d), ...v }); toast('Saved'); },
+    onDelete: id ? () => { remove('docs', d.id); toast('Deleted'); } : null });
+}
+function editContact(id) {
+  const c = id ? get('contacts', id) : { id: uid('c'), label: '', value: '', notes: '' };
+  sheet({ title: id ? 'Edit contact' : 'Add contact', fields: [{ k: 'label', l: 'Who' }, { k: 'value', l: 'Phone or address' }, { k: 'notes', l: 'Notes', t: 'textarea' }], rec: c,
+    validate: (v) => (v.label ? {} : { label: 'Say who this is.' }),
+    onSave: (v) => { put('contacts', { ...(get('contacts', c.id) || c), ...v }); toast('Saved'); },
+    onDelete: id ? () => { remove('contacts', c.id); toast('Deleted'); } : null });
+}
+function editTodo(id) {
+  const t = id ? get('todos', id) : { id: uid('t'), text: '', due: '', owner: '', done: false, notes: '' };
+  sheet({ title: id ? 'Edit to-do' : 'Add to-do', fields: [{ k: 'text', l: 'To-do', t: 'textarea' }, [{ k: 'due', l: 'Due', t: 'date' }, { k: 'owner', l: 'Owner', t: 'select', opts: [['', 'Either'], ['a1', nm('a1')], ['a2', nm('a2')]] }], { k: 'notes', l: 'Notes', t: 'textarea' }], rec: t,
+    validate: (v) => (v.text ? {} : { text: 'Write the to-do.' }),
+    onSave: (v) => { put('todos', { ...(get('todos', t.id) || t), ...v }); toast('Saved'); },
+    onDelete: id ? () => { remove('todos', t.id); toast('Deleted'); } : null });
+}
+function dayNotes(d) {
+  const day = get('days', d) || { id: d, title: '', theme: '', kids: '', notes: '' };
+  sheet({ title: dayLabel(d, true), fields: [{ k: 'title', l: 'Title' }, { k: 'theme', l: 'One-line theme' }, { k: 'notes', l: 'Notes for the day', t: 'textarea' }, { k: 'kids', l: 'Kids’ adventure sentence', t: 'textarea' }], rec: day,
+    onSave: (v) => { put('days', { ...(get('days', d) || day), ...v }); toast('Saved'); } });
+}
+
+/* ================================================================ print / share */
+function itineraryText() {
+  const lines = ['TURKEY FAMILY TRIP — 17–23 Oct 2026', ''];
+  for (const d of DAYS) {
+    const day = get('days', d) || {};
+    lines.push(`${dayLabel(d, true).toUpperCase()} — ${day.title || ''}`);
+    for (const [b, l] of BLOCKS) { const xs = stopsOf(d).filter((s) => s.block === b && s.status !== 'skipped'); if (xs.length) lines.push(`  ${l}: ` + xs.map((s) => (s.time ? t12(s.time) + ' ' : '') + s.name).join('; ')); }
+    for (const o of all('outfits').filter((o) => o.day === d)) lines.push(`  Outfit (${nm(o.person)}): ${(o.pieces || []).map((p) => p.n).join(', ')}`);
+    if (day.notes) lines.push('  Notes: ' + day.notes);
+    lines.push('');
+  }
+  lines.push('BOOKINGS');
+  for (const b of all('bookings').sort((a, b) => (a.date || '9').localeCompare(b.date || '9'))) lines.push(`  ${dayLabel(b.date)} — ${b.title}: ${b.status}${b.provider ? ', ' + b.provider : ''}${b.conf ? ', ref ' + b.conf : ''}`);
+  lines.push('', 'Emergency in Turkey: 112');
+  return lines.join('\n');
+}
+function openPrint() {
+  const el = document.createElement('div');
+  el.className = 'printview'; el.id = 'printview';
+  el.innerHTML = `<div class="noprint">${!IN_FRAME ? '<button class="btn pri" id="pv-print">Print</button>' : ''}<button class="btn" id="pv-copy">Copy as text</button>${navigator.share && !IN_FRAME ? '<button class="btn" id="pv-share">Share</button>' : ''}<button class="btn" id="pv-close">Close</button></div>
+  <h1>Turkey family trip</h1><p>17–23 October 2026 · Istanbul & Cappadocia · Emergency: 112</p>
+  ${DAYS.map((d) => { const day = get('days', d) || {}; return `<div class="pday"><h2>${dayLabel(d, true)} — ${esc(day.title || '')}</h2>
+    ${BLOCKS.map(([b, l]) => { const xs = stopsOf(d).filter((s) => s.block === b && s.status !== 'skipped'); return xs.length ? `<b>${l}</b><ul>${xs.map((s) => `<li>${s.time ? `<b>${t12(s.time)}</b> ` : ''}${esc(s.name)}${s.notes ? ` — <i>${esc(s.notes)}</i>` : ''}</li>`).join('')}</ul>` : ''; }).join('')}
+    ${all('outfits').filter((o) => o.day === d).map((o) => `<p><b>Outfit (${esc(nm(o.person))}):</b> ${esc((o.pieces || []).map((p) => p.n).join(', '))}</p>`).join('')}
+    ${day.notes ? `<p><b>Notes:</b> ${esc(day.notes)}</p>` : ''}</div>`; }).join('')}
+  <div class="pday"><h2>Bookings</h2><ul>${all('bookings').sort((a, b) => (a.date || '9').localeCompare(b.date || '9')).map((b) => `<li>${dayLabel(b.date)} — <b>${esc(b.title)}</b>: ${esc(b.status)}${b.provider ? ', ' + esc(b.provider) : ''}${b.conf ? ', ref ' + esc(b.conf) : ''}</li>`).join('')}</ul></div>`;
+  document.body.appendChild(el);
+  const close = () => el.remove();
+  $('#pv-close').onclick = close;
+  if ($('#pv-print')) $('#pv-print').onclick = () => window.print();
+  $('#pv-copy').onclick = () => copyText(itineraryText());
+  if ($('#pv-share')) $('#pv-share').onclick = () => navigator.share({ title: 'Turkey trip', text: itineraryText() }).catch(() => {});
+}
+
+/* ================================================================ export / import */
+async function exportFile() {
+  const data = JSON.stringify(DOC);
+  const name = 'turkey-trip-' + new Date().toISOString().slice(0, 16).replace(/[-:T]/g, '') + '.json';
+  let dl = null;
+  if (window.claude?.use) { try { dl = await window.claude.use('downloads'); } catch { dl = null; } }
+  if (dl) { try { await dl.save({ filename: name, data }); toast('Saved'); } catch (e) { toast(e?.code === 'declined' ? 'Not saved' : 'Saving is not available here; use Copy JSON.'); } return; }
+  if (!IN_FRAME) { const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([data], { type: 'application/json' })); a.download = name; document.body.appendChild(a); a.click(); a.remove(); return; }
+  copyText(data);
+}
+function importText(txt) {
+  let j; try { j = JSON.parse(txt); } catch { return toast('That is not valid JSON.'); }
+  if (!j || j.trip !== 'turkey-2026' || !j.c) return toast('That file is not a Turkey trip export.');
+  const changed = mergeIn(j);
+  for (const [coll, id] of changed) Sync.queue(coll, DOC.c[coll][id]);
+  saveLocal(); schedule();
+  toast(changed.length ? `Merged ${changed.length} change${changed.length > 1 ? 's' : ''}` : 'Already up to date');
+}
+function copyText(t) {
+  const fallback = () => { const ta = document.createElement('textarea'); ta.value = t; ta.style.position = 'fixed'; ta.style.top = '0'; document.body.appendChild(ta); ta.select(); let ok = false; try { ok = document.execCommand('copy'); } catch {} ta.remove(); toast(ok ? 'Copied' : 'Select and copy manually'); };
+  try { navigator.clipboard.writeText(t).then(() => toast('Copied'), fallback); } catch { fallback(); }
+}
+let toastT = 0;
+function toast(msg) {
+  let el = $('#toast'); if (!el) { el = document.createElement('div'); el.id = 'toast'; el.className = 'toast'; el.setAttribute('role', 'status'); document.body.appendChild(el); }
+  el.textContent = msg; el.hidden = false; clearTimeout(toastT); toastT = setTimeout(() => (el.hidden = true), 2200);
+}
+function showBig(tr, en) {
+  const el = document.createElement('div'); el.className = 'bigshow'; el.setAttribute('role', 'dialog');
+  el.innerHTML = `<div><div class="w">${esc(tr)}</div><p style="margin-top:16px;font-size:1.2rem">${esc(en || '')}</p><p class="small" style="margin-top:24px;opacity:.8">Tap anywhere to close</p></div>`;
+  el.onclick = () => el.remove(); document.body.appendChild(el);
+}
+function say(tr) {
+  try { const u = new SpeechSynthesisUtterance(tr); u.lang = 'tr-TR'; u.rate = 0.85; speechSynthesis.cancel(); speechSynthesis.speak(u); } catch { toast('This phone cannot speak Turkish here.'); }
+}
+function applyTheme() { const t = LS.get('tk_theme') || ''; if (t) document.documentElement.setAttribute('data-theme', t); else document.documentElement.removeAttribute('data-theme'); }
+
+/* ================================================================ events */
+const ACT = {
+  go: (d) => { UI.tab = d.tab; UI.sub = null; LS.set('tk_tab', d.tab); window.scrollTo(0, 0); render(); },
+  sub: (d) => { if ((d.sub || '').startsWith('compare')) UI.tab = 'book'; else if (d.sub === 'balloon' || ['docs','sos','phrases','todos','ideas','sync'].includes(d.sub)) UI.tab = 'more'; UI.sub = d.sub || null; window.scrollTo(0, 0); render(); },
+  jump: (d) => { if (UI.tab !== 'plan') { UI.tab = 'plan'; UI.sub = null; render(); } requestAnimationFrame(() => $('#day-' + d.day)?.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' })); },
+  addStop: (d) => editStop(null, { day: d.day }), editStop: (d) => editStop(d.id), nudge: (d) => { nudge(d.id, +d.d); $('#layer').innerHTML = ''; },
+  cycle: (d) => { const s = get('stops', d.id); if (s) put('stops', { ...s, status: { planned: 'done', done: 'skipped', skipped: 'planned' }[s.status] || 'planned' }); },
+  status: (d) => { const s = get('stops', d.id); if (s) put('stops', { ...s, status: d.v }); },
+  dayNotes: (d) => dayNotes(d.day), kidsDay: (d) => { UI.kidsDay = d.day; UI.tab = 'kids'; window.scrollTo(0, 0); render(); },
+  addOutfit: (d) => editOutfit(null, d.day), editOutfit: (d) => editOutfit(d.id),
+  addBooking: () => editBooking(null), editBooking: (d) => editBooking(d.id), bookFilter: (d) => { UI.bookFilter = d.v; render(); },
+  editOption: (d) => editOption(d.id), addOption: (d) => editOption(null, d.group), pick: (d) => pick(d.id),
+  moveBalloon: (d) => moveBalloon(d.to),
+  packSub: (d) => { UI.packSub = d.v; render(); }, packWho: (d) => { UI.packWho = d.v; render(); },
+  addPack: (d) => d.name ? (put('packing', { id: uid('p'), person: d.person || 'a1', cat: d.cat || 'Clothes', name: d.name, qty: 1, packed: false }), toast('Added to the list')) : editPack(null, { person: d.person || 'a1' }),
+  editPack: (d) => editPack(d.id),
+  addExpense: () => editExpense(null), editExpense: (d) => editExpense(d.id), planBudget: (d) => planBudget(d.k),
+  addDoc: () => editDoc(null), editDoc: (d) => editDoc(d.id), addContact: () => editContact(null), editContact: (d) => editContact(d.id),
+  addTodo: () => editTodo(null), editTodo: (d) => editTodo(d.id), todoWho: (d) => { UI.todoWho = d.v; render(); },
+  addIdea: (d) => { const i = IDEAS.find((x) => x.id === d.id); if (!i) return; const ord = Math.max(0, ...stopsOf(i.day).filter((x) => x.block === i.block).map((x) => x.ord || 0)) + 1;
+    put('stops', { id: uid('s'), idea: i.id, day: i.day, block: i.block, ord, name: i.name, time: '', pk: i.pk || '', q: i.q || '', notes: i.why, status: 'planned', tags: [], travel: '', moved: '' }); toast(`Added to ${dayLabel(i.day)}`); },
+  spot: (d) => { const s = get('spots', d.id); if (s) put('spots', { ...s, [d.k]: !s[d.k] }); },
+  addSpot: () => sheet({ title: 'Add something to spot', fields: [{ k: 'name', l: 'What to spot' }, { k: 'where', l: 'Where' }], rec: {}, validate: (v) => (v.name ? {} : { name: 'What should they look for?' }), onSave: (v) => { put('spots', { id: uid('x'), ...v, k9: false, k7: false }); toast('Added'); } }),
+  print: () => openPrint(), copy: (d) => copyText(d.text), show: (d) => showBig(d.tr, d.en), say: (d) => say(d.tr),
+  exportFile: () => exportFile(), exportCopy: () => copyText(JSON.stringify(DOC)),
+  importPaste: () => { const t = $('#importText')?.value || ''; if (t.trim()) importText(t); else toast('Paste the JSON first.'); },
+  simSet: () => { const d = $('#simDay').value, t = $('#simTime').value || '10:00'; const [y, m, dd] = d.split('-').map(Number); const at = Date.UTC(y, m - 1, dd) + toMin(t) * 60e3 - 3 * H; LS.set('tk_sim', { at, set: Date.now() }); UI.tab = 'today'; UI.sub = null; render(); toast('Previewing ' + dayLabel(d) + ' ' + t); },
+  simClear: () => { LS.del('tk_sim'); render(); toast('Back to real time'); },
+  theme: (d) => { LS.set('tk_theme', d.v); applyTheme(); render(); },
+  reset: (d, el) => { if (!el.dataset.armed) { el.dataset.armed = 1; el.textContent = 'Tap again to reset'; return; } LS.del('tk_doc'); LS.del('tk_dirty'); location.reload(); },
+};
+document.addEventListener('click', (e) => {
+  const el = e.target.closest('[data-a]'); if (!el) return;
+  const f = ACT[el.dataset.a]; if (!f) return;
+  e.preventDefault(); f(el.dataset, el, e);
+});
+document.addEventListener('change', (e) => {
+  const el = e.target; const c = el.dataset?.c; if (!c) return;
+  if (c === 'pack') { const id = el.dataset.id; const cur = get('packing', id); if (el.dataset.derived) put('packing', { id, derived: true, packed: el.checked }); else if (cur) put('packing', { ...cur, packed: el.checked }); }
+  else if (c === 'todo') { const t = get('todos', el.dataset.id); if (t) put('todos', { ...t, done: el.checked }); }
+  else if (c === 'height') { const h = { ...kv('heights', {}) }; h[el.dataset.k] = el.value === '' ? null : Math.round(+el.value); setKv('heights', h); }
+  else if (c === 'home') setKv('home', el.value);
+  else if (c === 'rate') { const r = { ...kv('rates', {}) }; const v = +el.value; if (el.value === '' || v > 0) { r[el.dataset.k] = el.value === '' ? null : v; setKv('rates', r); } else toast('Rates must be above zero.'); }
+  else if (c === 'name') { const n = { ...kv('names', {}) }; n[el.dataset.k] = el.value.trim() || PEOPLE.find((x) => x[0] === el.dataset.k)[1]; setKv('names', n); }
+  else if (c === 'importFile') { const f = el.files?.[0]; if (!f) return; const r = new FileReader(); r.onload = () => importText(String(r.result)); r.onerror = () => toast('Could not read that file.'); r.readAsText(f); el.value = ''; }
+});
+
+/* ================================================================ start */
+(function start() {
+  applyTheme();
+  const saved = LS.get('tk_doc');
+  if (saved?.c) mergeIn(saved);
+  if (!LS.set('tk_probe', 1)) storageOk = false;
+  render();
+  Sync.init();
+  setInterval(() => { renderClocks(); if (UI.tab === 'today' && !$('#layer').innerHTML && !$('#printview')) render(); }, 60e3);
+  window.addEventListener('resize', renderClocks);
+  if (!IN_FRAME && 'serviceWorker' in navigator && location.protocol === 'https:' && location.pathname.startsWith('/turkey')) navigator.serviceWorker.register('/turkey/sw.js', { scope: '/turkey/' }).catch(() => {});
+})();
+</script>
+<!--/APP-->
+</body>
+</html>

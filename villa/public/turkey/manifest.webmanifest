@@ -1,0 +1,10 @@
+{
+  "name": "Turkey Family Trip",
+  "short_name": "Turkey trip",
+  "start_url": "/turkey/index.html",
+  "scope": "/turkey/",
+  "display": "standalone",
+  "background_color": "#FBF6EC",
+  "theme_color": "#0C5D62",
+  "icons": [{ "src": "/turkey/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}

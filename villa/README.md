@@ -118,6 +118,15 @@ mention. These are in the model, marked *Added by the app*:
 - As-built drawings photographed before concealed work closes; defect liability
   period and retention release agreed and dated
 
+## The Turkey trip planner
+
+`public/turkey/` is unrelated to the villa: a self-contained family trip planner
+for Istanbul and Cappadocia (17–23 Oct 2026), served at `/turkey`. It is one
+HTML file with no build step. Data is kept in the browser and moves between
+phones as a JSON export/import that merges record by record (newest edit wins);
+`sw.js` keeps it working offline once loaded. It touches no villa code and no
+database.
+
 ## Running it
 
 ```bash
