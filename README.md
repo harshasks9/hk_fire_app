@@ -1,5 +1,9 @@
 # HK Fire — forensic memoranda
 
+> This repository also hosts **Notes** (notes.hkfire.app), an AI-native note-taking
+> and personal intelligence system, in [`notes/`](notes/README.md). It is a separate
+> Next.js app with its own Vercel project, deployed from the `notes-vercel` branch.
+
 Two adversarial investment-committee memoranda on listed alternative asset managers —
 **Blue Owl (NYSE: OWL)** and **Patria (NASDAQ: PAX)** — published as plain static pages
 behind a single shared key.
