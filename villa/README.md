@@ -127,6 +127,14 @@ phones as a JSON export/import that merges record by record (newest edit wins);
 `sw.js` keeps it working offline once loaded. It touches no villa code and no
 database.
 
+## The workation report
+
+`public/workation/index.html` is also unrelated to the villa: a static research
+report for a December 2026 Southeast Asia trip, served at `/workation` with
+`noindex`. It is generated from `travel-research/travel-research-report.md` by
+`python3 travel-research/build_web_page.py` (needs `pip install markdown`);
+regenerate it rather than editing the HTML by hand.
+
 ## Running it
 
 ```bash
