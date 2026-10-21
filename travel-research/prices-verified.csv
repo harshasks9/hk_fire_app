@@ -1,0 +1,43 @@
+item,category,dates,party,price_usd,includes,room_or_fare_detail,source,retrieved,status
+Trisara Phuket,hotel,2026-12-18 to 2026-12-20 (2n),2A,4648,taxes and fees,cheapest available unit (category not shown),Expedia search_hotels h1096979,2026-10-21,V1
+COMO Point Yamu,hotel,2026-12-18 to 2026-12-20 (2n),2A,934,taxes and fees,cheapest available unit,Expedia search_hotels h7007196,2026-10-21,V1
+Anantara Layan,hotel,2026-12-18 to 2026-12-20 (2n),2A,2592,taxes and fees,cheapest available unit,Expedia search_hotels h6758147,2026-10-21,V1
+Keemala,hotel,2026-12-18 to 2026-12-20 (2n),2A,2309,taxes and fees,cheapest available unit,Expedia search_hotels h10507369,2026-10-21,V1
+Banyan Tree Phuket,hotel,2026-12-18 to 2026-12-20 (2n),2A,2214,taxes and fees,cheapest available unit,Expedia search_hotels h22639,2026-10-21,V1
+Sri Panwa,hotel,2026-12-18 to 2026-12-20 (2n),2A,1053,taxes and fees,cheapest available unit,Expedia search_hotels h1590509,2026-10-21,V1
+Four Seasons Bangkok,hotel,2026-12-20 to 2026-12-24 (4n),2A,4027,taxes and fees,cheapest available unit,Expedia search_hotels h36476332,2026-10-21,V1
+Capella Bangkok,hotel,2026-12-20 to 2026-12-24 (4n),2A,6206,taxes and fees,cheapest available unit,Expedia search_hotels h33096855,2026-10-21,V1
+Mandarin Oriental Bangkok,hotel,2026-12-20 to 2026-12-24 (4n),2A,4763,taxes and fees,cheapest available unit,Expedia search_hotels h13953,2026-10-21,V1
+Rosewood Bangkok,hotel,2026-12-20 to 2026-12-24 (4n),2A,2213,taxes and fees,cheapest available unit,Expedia search_hotels h29356006,2026-10-21,V1
+The Peninsula Bangkok,hotel,2026-12-20 to 2026-12-24 (4n),2A,2101,taxes and fees,cheapest available unit,Expedia search_hotels h81071,2026-10-21,V1
+Park Hyatt Bangkok,hotel,2026-12-20 to 2026-12-24 (4n),2A,2080,taxes and fees,cheapest available unit,Expedia search_hotels h17405012,2026-10-21,V1
+Four Seasons Bangkok,hotel,2026-12-18 to 2026-12-24 (6n),2A,5953,taxes and fees,cheapest available unit,Expedia (hotels research agent),2026-10-21,V1
+Capella Bangkok,hotel,2026-12-18 to 2026-12-24 (6n),2A,9813,taxes and fees,entry Riverfront Premier 61 m2 (E),Expedia (hotels research agent),2026-10-21,V1
+Rosewood Bangkok,hotel,2026-12-18 to 2026-12-24 (6n),2A,2865,taxes and fees,cheapest available unit,Expedia (hotels research agent),2026-10-21,V1
+Trisara Phuket,hotel,2026-12-18 to 2026-12-24 (6n),2A,11327,taxes and fees,cheapest available unit,Expedia (hotels research agent),2026-10-21,V1
+COMO Point Yamu,hotel,2026-12-18 to 2026-12-24 (6n),2A,3270,taxes and fees,cheapest available unit,Expedia (hotels research agent),2026-10-21,V1
+InterContinental Phuket,hotel,2026-12-18 to 2026-12-24 (6n),2A,5767,taxes and fees,cheapest available unit,Expedia (hotels research agent),2026-10-21,V1
+Sri Panwa,hotel,2026-12-18 to 2026-12-24 (6n),2A,2974,taxes and fees,cheapest available unit,Expedia (hotels research agent),2026-10-21,V1
+Anantara Layan,hotel,2026-12-18 to 2026-12-24 (6n),2A,12994,taxes and fees,cheapest available unit,Expedia (hotels research agent),2026-10-21,V1
+Four Seasons Langkawi,hotel,2026-12-18 to 2026-12-24 (6n),2A,6900,taxes and fees,cheapest available unit,Expedia (hotels research agent),2026-10-21,V1
+St. Regis Langkawi,hotel,2026-12-18 to 2026-12-24 (6n),2A,6104,taxes and fees,cheapest available unit,Expedia (hotels research agent),2026-10-21,V1
+Regent Phu Quoc,hotel,2026-12-18 to 2026-12-24 (6n),2A,5081,taxes and fees,cheapest available unit,Expedia (hotels research agent),2026-10-21,V1
+Sofitel Angkor Phokeethra,hotel,2026-12-24 to 2026-12-28 (4n),2A+2C(9;7),3955,taxes and fees,unit priced for family (category not shown),Expedia (Siem Reap agent) h788289,2026-10-21,V1
+Sofitel Angkor Phokeethra,hotel,2026-12-24 to 2026-12-28 (4n),2A,2142,taxes and fees,cheapest available unit,Expedia (Siem Reap agent) h788289,2026-10-21,V1
+Park Hyatt Siem Reap,hotel,2026-12-24 to 2026-12-28 (4n),2A,2312,taxes and fees,cheapest available unit,Expedia (Siem Reap agent) h1287692,2026-10-21,V1
+Sokha Angkor Resort,hotel,2026-12-24 to 2026-12-28 (4n),2A+2C(9;7),956,taxes and fees,unit priced for family,Expedia (Siem Reap agent),2026-10-21,V1
+MH602+MH786 SIN-KUL-HKT,flight,2026-12-18,2A,852.00,taxes; 25kg,06:20-09:50,Expedia search_flights,2026-10-21,V1
+SQ740 SIN-HKT,flight,2026-12-18,2A,1317.40,taxes; Economy Flexi 30kg,18:35-19:35,Expedia search_flights,2026-10-21,V1
+AI6655 (=IX976) HYD-HKT,flight,2026-12-18,2A,571.32,taxes; Eco Value 25kg,06:15-11:40,Expedia search_flights,2026-10-21,V1
+TG402 SIN-BKK,flight,2026-12-18,2A,852.40,taxes; Flexi 2x23kg,08:15-09:35,Expedia search_flights,2026-10-21,V1
+6E1509 HYD-BKK,flight,2026-12-18,2A,464.00,taxes; 1 bag,09:20-14:30,Expedia search_flights,2026-10-21,V1
+TG212 HKT-BKK,flight,2026-12-20,2A,229.80,taxes; Flexi 23kg,16:05-17:35,Expedia search_flights,2026-10-21,V1
+PG903 BKK-SAI,flight,2026-12-24,2A,452.20,taxes; 20kg; nonrefundable,07:55-09:15,Expedia search_flights,2026-10-21,V1
+PG270 HKT-BKK + PG905 BKK-SAI (two tickets),flight,2026-12-24,2A,854.00,taxes; 20kg,07:45-12:40 self-transfer,Expedia search_flights (legs V1; combination E),2026-10-21,V1 legs
+TG330+PG903 HYD-BKK-SAI,flight,2026-12-24 (dep 01:30),2A+2C(9;7),2200.24,taxes; Flexi 2x23kg; single ticket,01:30-09:15,Expedia search_flights,2026-10-21,V1
+TG330+PG905 HYD-BKK-SAI,flight,2026-12-24 (dep 01:30),2A+2C(9;7),2821.84,taxes; Full Flexi; single ticket,01:30-12:40,Expedia search_flights,2026-10-21,V1
+6E2257+6E1655 HYD-CCU-SAI,flight,2026-12-23 to 24,2A+2C(9;7),1432.00,taxes; Flexi 1 bag,21:50-08:00,Expedia search_flights,2026-10-21,V1
+6E1656+6E6908 SAI-CCU-HYD,flight,2026-12-28,2A+2C(9;7),1196.00,taxes; Flexi 1 bag,09:00-17:15,Expedia search_flights,2026-10-21,V1
+6E1656+6E6908 SAI-CCU-HYD,flight,2026-12-28,2A,538.00,taxes; Saver 1 bag,09:00-17:15,Expedia search_flights,2026-10-21,V1
+PG908+TG329 SAI-BKK-HYD,flight,2026-12-28,2A+2C(9;7),2742.80,taxes; Full Flexi,19:25-23:55,Expedia search_flights,2026-10-21,V1
+6E1510 BKK-HYD,flight,2026-12-31,2A,436.00,taxes,15:30-17:50,Expedia search_flights,2026-10-21,V1
