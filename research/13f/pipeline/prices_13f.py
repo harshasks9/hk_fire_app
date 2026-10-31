@@ -44,7 +44,7 @@ def main() -> None:
         p = pd.read_parquet(f, columns=["cik", "CUSIP", "shares", "value", "filing_date"])
         period = pd.Timestamp(f.stem)
         qe = quarter_end(period)
-        if period != qe:          # off-cycle report dates (a few filers) are folded into the quarter they belong to
+        if period != qe or period < pd.Timestamp("2013-06-30"):   # off-cycle or mistyped report dates are skipped
             continue
         p = p[(p["shares"] > 0) & (p["value"] > 0) & p["CUSIP"].notna()].copy()
         p["px"] = p["value"] / p["shares"]
@@ -72,19 +72,22 @@ def main() -> None:
             m = m[m["shares"] != m["shares_prev"]].copy()
             m["ratio"] = m["shares"] / m["shares_prev"]
             med = m.groupby("CUSIP")["ratio"].median()
-            hit = np.isclose(med.values[:, None], SPLIT_RATIOS[None, :], rtol=0.02)
+            # holders trade during the quarter, so individual ratios scatter around the split factor; the median
+            # across hundreds of holders is tight (AAPL 4:1 in 2020Q3: median 3.9, IQR 3.6–4.05 across 3,295 holders)
+            hit = np.isclose(med.values[:, None], SPLIT_RATIOS[None, :], rtol=0.05)
             cand = med[hit.any(axis=1)]
             factors = pd.Series(SPLIT_RATIOS[hit[hit.any(axis=1)].argmax(axis=1)], index=cand.index)
             if len(cand):
                 mm = m[m["CUSIP"].isin(cand.index)].copy()
                 mm["factor"] = mm["CUSIP"].map(factors)
-                mm["ok"] = np.isclose(mm["ratio"], mm["factor"], rtol=0.02)
+                mm["ok"] = np.isclose(mm["ratio"], mm["factor"], rtol=0.15)
                 st = mm.groupby("CUSIP").agg(support=("ok", "mean"), n=("ok", "size"), px_prev=("px", "median"))
                 st = st.join(n_common).join(factors.rename("factor"))
                 st["px_now"] = agg["price"].reindex(st.index)
-                st = st[(st["support"] >= 0.6) & (st["n"] >= 5) & (st["n"] >= 0.5 * st["n_common"].fillna(1))]
+                st = st[(st["support"] >= 0.5) & (st["n"] >= 5) & (st["n"] >= 0.8 * st["n_common"].fillna(1))]
+                st = st[(st["factor"] >= 2) | (st["factor"] <= 0.5) | (st["n"] >= 20)]
                 ratio = (st["px_prev"] / st["px_now"]) / st["factor"]
-                st = st[ratio.between(0.5, 2.0)]
+                st = st[ratio.between(0.6, 1.6)]
                 for cusip, r in st.iterrows():
                     splits.append({"CUSIP": cusip, "period_from": prev_qe, "period_to": qe, "factor": float(r["factor"]), "support": float(r["support"]), "n": int(r["n"])})
         prev, prev_qe = p, qe

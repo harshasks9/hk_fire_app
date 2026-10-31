@@ -22,21 +22,22 @@ from pathlib import Path
 import numpy as np, pandas as pd
 from config import DERIVED_DIR, SECURITY_MASTER
 
-def membership(sm: pd.DataFrame, themes: pd.DataFrame, rules: pd.DataFrame) -> pd.DataFrame:
+def membership(names: pd.DataFrame, sm: pd.DataFrame | None, themes: pd.DataFrame, rules: pd.DataFrame) -> pd.DataFrame:
+    """names: (CUSIP, issuer) as reported in 13F filings — the regex rules run on those, so the taxonomy does not
+    depend on the ticker mapping. Curated ticker lists are resolved through the security master where it exists."""
     rows = []
-    tick = sm.dropna(subset=["ticker"]).copy(); tick["ticker"] = tick["ticker"].str.upper()
-    for _, t in themes.iterrows():
-        for tk in str(t["example_tickers"]).split(";"):
-            tk = tk.strip().upper()
-            if not tk:
-                continue
-            for _, s in tick[tick["ticker"] == tk].iterrows():
-                rows.append({"cusip": s["cusip"], "ticker": tk, "theme": t["theme"], "source": "curated"})
+    if sm is not None:
+        tick = sm.dropna(subset=["ticker"]).copy(); tick["ticker"] = tick["ticker"].str.upper()
+        for _, t in themes.iterrows():
+            for tk in str(t["example_tickers"]).split(";"):
+                tk = tk.strip().upper()
+                for _, s_ in tick[tick["ticker"] == tk].iterrows():
+                    rows.append({"cusip": s_["cusip"], "issuer": s_.get("figi_name"), "theme": t["theme"], "source": "curated"})
     for _, r in rules.iterrows():
         pat = re.compile(r["issuer_regex"], re.I)
-        hit = sm[sm["figi_name"].fillna("").str.contains(pat)]
-        for _, s in hit.iterrows():
-            rows.append({"cusip": s["cusip"], "ticker": s["ticker"], "theme": r["theme"], "source": "rule:" + r["issuer_regex"]})
+        hit = names[names["issuer"].fillna("").str.contains(pat)]
+        for _, s_ in hit.iterrows():
+            rows.append({"cusip": s_["CUSIP"], "issuer": s_["issuer"], "theme": r["theme"], "source": "rule"})
     m = pd.DataFrame(rows).drop_duplicates(["cusip", "theme"])
     m["attribution"] = 1.0 / m.groupby("cusip")["theme"].transform("count")
     return m
@@ -67,9 +68,10 @@ def theme_quarter(h: pd.DataFrame, m: pd.DataFrame) -> pd.DataFrame:
 
 def main() -> None:
     base = Path(__file__).resolve().parents[1] / "data"
-    sm = pd.read_parquet(SECURITY_MASTER)
+    names = pd.read_parquet(DERIVED_DIR / "universe_cusips.parquet")
+    sm = pd.read_parquet(SECURITY_MASTER) if SECURITY_MASTER.exists() else None
     themes = pd.read_csv(base / "themes.csv"); rules = pd.read_csv(base / "theme_rules.csv")
-    m = membership(sm, themes, rules)
+    m = membership(names, sm, themes, rules)
     m.to_parquet(DERIVED_DIR / "theme_membership.parquet", index=False)
     h = pd.read_parquet(DERIVED_DIR / "holdings_m.parquet")
     h = h[(h["universe_a"] == "1") & ~h["category"].isin(["Quantitative and systematic", "Broad institutional and passive"])]
