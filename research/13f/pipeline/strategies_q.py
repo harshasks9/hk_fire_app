@@ -115,10 +115,10 @@ def build_targets(name: str, em: pd.DataFrame, es: pd.DataFrame, panel: pd.DataF
             top = g.groupby("CUSIP")["weight"].max().nlargest(30); sel[E] = {c: 1.0 for c in top.index}
         return sel, 4
     if name == "I":
-        A = es.set_index(["E", "CUSIP"])["consensus_buy"].rename("A")
+        A = es.groupby(["E", "CUSIP"])["consensus_buy"].max().rename("A")       # late filings can map two report periods to one execution quarter
         B = em[em["status"] == "new"].groupby(["E", "CUSIP"])["weight"].max().rename("B")
         D = em[em["status"] == "increased"].groupby(["E", "CUSIP"])["consecutive_adds"].max().rename("D")
-        Ee = es.set_index(["E", "CUSIP"])["ownership_accel"].rename("E")
+        Ee = es.groupby(["E", "CUSIP"])["ownership_accel"].max().rename("E")
         z = pd.concat([A, B, D, Ee], axis=1).fillna(0)
         z = z.groupby(level=0).transform(lambda s: (s - s.mean()) / (s.std() if s.std() > 0 else 1))
         z["score"] = z.sum(axis=1)
