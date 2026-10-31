@@ -25,13 +25,18 @@ from bt_quarterly import load_panel, BENCH_CUSIP, cluster_tstat
 OUT = OUTPUT_DIR / "themes"; OUT.mkdir(parents=True, exist_ok=True)
 CASES = {"cloud_computing": "2013–2021", "ecommerce": "2013–2021", "semis_packaging": "2016–2024", "energy_commodities": "2020–2022", "ai_compute": "2022–2026", "healthcare_innovation_obesity": "2022–2025", "nuclear": "2023–2026", "datacenter_power_cooling": "2023–2026"}
 
-def theme_returns(panel: pd.DataFrame, memb: pd.DataFrame) -> pd.DataFrame:
+def theme_returns(panel: pd.DataFrame, memb: pd.DataFrame, holders: pd.DataFrame, aggval: pd.DataFrame) -> pd.DataFrame:
+    """Equal-weight quarterly return of a theme's members, each quarter restricted to members that pass the
+    institutional-coverage screen in the previous quarter (≥ 5 holders, ≥ $50m held) so unreliable micro-cap
+    prices cannot drive the theme series."""
     rets = panel.pct_change()
+    ok = ((holders >= 5) & (aggval >= 5e7)).shift(1).fillna(False)
     rows = {}
     for th, d in memb.groupby("theme"):
         cols = [c for c in d["cusip"].unique() if c in panel.columns]
         if cols:
-            rows[th] = rets[cols].mean(axis=1)      # equal-weight across members with a price that quarter
+            r = rets[cols].where(ok[cols])
+            rows[th] = r.mean(axis=1)
     return pd.DataFrame(rows)
 
 def stages(tq: pd.DataFrame) -> pd.DataFrame:
@@ -48,7 +53,7 @@ def stages(tq: pd.DataFrame) -> pd.DataFrame:
 def main() -> None:
     panel, holders, aggval = load_panel()
     memb = pd.read_parquet(DERIVED_DIR / "theme_membership.parquet"); tq = pd.read_parquet(DERIVED_DIR / "theme_quarter.parquet")
-    tr = theme_returns(panel, memb)
+    tr = theme_returns(panel, memb, holders, aggval)
     spy = panel[BENCH_CUSIP["SPY"]].pct_change()
     tq = stages(tq)
     # forward theme returns from the first quarter end after availability
@@ -75,7 +80,8 @@ def main() -> None:
     cases = []
     for th in CASES:
         d = tq[tq["theme"] == th].sort_values("period")
-        sig = d[(d["n_holders"] >= 3) & (d["net_buyers"] > 0)]
+        # the first observable *acceleration* signal: the theme enters stage 2 or 3 (needs four quarters of history)
+        sig = d[(d["period"] >= "2014-06-30") & d["stage"].isin([2, 3])]
         if sig.empty:
             continue
         first = sig.iloc[0]; i = int(first["entry_pos"])
@@ -85,7 +91,7 @@ def main() -> None:
             return (1 + spy.iloc[i + 1:i + k + 1]).prod() - 1 if i + k < len(periods) else np.nan
         peak = d.loc[d["n_holders"].idxmax()]
         cases.append({"theme": th, "cycle": CASES[th], "first_signal_period": first["period"].date(), "first_signal_public": pd.Timestamp(first["available_ts"]).date(),
-                      "investable_entry": periods[i].date() if i < len(periods) else None, "holders_at_signal": int(first["n_holders"]),
+                      "investable_entry": periods[i].date() if i < len(periods) else None, "holders_at_signal": int(first["n_holders"]), "stage_at_signal": int(first["stage"]), "d_breadth_4q_at_signal": first["d_breadth_4q"],
                       "ret_6m": fwd(2), "ret_12m": fwd(4), "ret_24m": fwd(8), "ret_36m": fwd(12), "spy_6m": spyf(2), "spy_12m": spyf(4), "spy_24m": spyf(8), "spy_36m": spyf(12),
                       "peak_breadth": int(peak["n_holders"]), "peak_breadth_period": peak["period"].date(),
                       "stage_now": int(d.iloc[-1]["stage"]), "breadth_now": int(d.iloc[-1]["n_holders"])})

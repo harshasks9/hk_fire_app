@@ -10,6 +10,7 @@ public information. Filers that did not file for a quarter get NaN for that quar
 Output: DERIVED_DIR/copy_returns_all_filers.parquet (cik, period, copy_ret_q, trailing_8q_copy_return, n_names)
 """
 from __future__ import annotations
+from pathlib import Path
 import numpy as np, pandas as pd
 from config import DERIVED_DIR, PRICES_DIR
 
@@ -25,7 +26,9 @@ def main() -> None:
     el["avail"] = pd.to_datetime(el["filing_date"]) + pd.Timedelta(days=1)
     periods = panel.index
     el["entry_pos"] = periods.searchsorted(el["avail"].values, side="right")
-    el = el[(el["entry_pos"] < len(periods) - 1) & el["eligible"]]
+    universe = pd.read_csv(Path(__file__).resolve().parents[1] / "data" / "universe.csv", dtype=str)
+    in_universe = el["cik"].isin(universe["cik"].str.zfill(10))
+    el = el[(el["entry_pos"] < len(periods) - 1) & (el["eligible"] | in_universe)]   # every eligible filer plus every universe manager
     out = []
     for f in sorted(POS_DIR.glob("*.parquet")):
         period = pd.Timestamp(f.stem)
