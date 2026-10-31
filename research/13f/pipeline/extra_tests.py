@@ -64,7 +64,7 @@ def skill_tests(panel, ffq) -> list[pd.DataFrame]:
     from bt_quarterly import cluster_tstat
     rows = []
     for sc, g in cq.groupby("style_change"):
-        t, p, n = cluster_tstat(g["fwd4_xs"], g["period"])
+        _m, t, _n = cluster_tstat(g["fwd4_xs"], g["period"])
         rows.append({"signal": "S15_manager_copy_return_after_style_change", "style_change": sc, "horizon": "12m", "measure": "copy_xs_spy_next4q", "n": len(g), "n_periods": g["period"].nunique(), "mean": g["fwd4_xs"].mean(), "median": g["fwd4_xs"].median(), "win_rate": (g["fwd4_xs"] > 0).mean(), "t_cluster": t})
     t15 = pd.DataFrame(rows); t15.to_csv(OUTPUT_DIR / "event_study" / "S15_manager_copy_return_after_style_change_all.csv", index=False); tabs.append(t15)
     return tabs

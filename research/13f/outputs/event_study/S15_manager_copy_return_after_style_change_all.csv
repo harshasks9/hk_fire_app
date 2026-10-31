@@ -1,0 +1,4 @@
+signal,style_change,horizon,measure,n,n_periods,mean,median,win_rate,t_cluster
+S15_manager_copy_return_after_style_change,hyperactive_q,12m,copy_xs_spy_next4q,556,44,-0.02281771838543547,-0.028791655119531634,0.4352517985611511,-0.6954873574255316
+S15_manager_copy_return_after_style_change,normal,12m,copy_xs_spy_next4q,2999,49,0.01126746979566828,-0.012866818897021126,0.47149049683227745,0.447983919133418
+S15_manager_copy_return_after_style_change,quiet_q,12m,copy_xs_spy_next4q,156,42,0.15645168530028183,0.020093404375678248,0.5576923076923077,1.1438861125403992
