@@ -109,7 +109,10 @@ def build_targets(name: str, em: pd.DataFrame, es: pd.DataFrame, panel: pd.DataF
     if name == "H":
         if sector_hit is None:
             return {}, 4
-        new = em[em["status"] == "new"].merge(sector_hit, on=["manager_id", "period", "ff49"], how="inner")
+        from bt_core import cusip_to_ticker
+        sec = pd.read_parquet(DERIVED_DIR / "sector_map.parquet").set_index("ticker")["ff49"]
+        em = em.assign(ff49=em["CUSIP"].map(cusip_to_ticker()).map(sec))
+        new = em[(em["status"] == "new") & em["ff49"].notna()].merge(sector_hit, on=["manager_id", "period", "ff49"], how="inner")
         new = new[(new["hit_rate"] >= 0.6) & (new["n_events"] >= 10)]
         for E, g in new.groupby("E"):
             top = g.groupby("CUSIP")["weight"].max().nlargest(30); sel[E] = {c: 1.0 for c in top.index}

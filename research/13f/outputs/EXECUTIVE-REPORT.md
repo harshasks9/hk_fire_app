@@ -27,7 +27,7 @@ What the evidence says:
    accumulation into a ≥ 40 % six-month drawdown (+11.6 % mean but −6.0 % median; +25 % in training,
    −1 % in the test window), and collective distribution as an avoidance signal (−5.8 % in the test window,
    t = −4.4, but zero in training). Thirty-three are rejected.
-3. **No strategy beats the index after costs.** Of ten pre-specified strategies and three portfolio designs,
+3. **No strategy beats the index after costs.** Of ten pre-specified strategies (A–J) and three portfolio designs,
    only "theme rotation" shows excess return (+11.8 % a year, alpha t = 2.7) — and it is the one strategy
    whose inputs (the theme taxonomy) were written in 2026 with full knowledge of which themes worked. We
    report it and discount it entirely. The passive "own what they own" baseline trails SPY by 2.8 % a year
@@ -271,7 +271,34 @@ past did slightly worse afterwards than those whose buys worked worst; divergenc
 unskilled holders carries no information either. A sudden burst of activity (S15) is weakly associated with
 better new positions in that quarter but not with better subsequent performance for the manager.
 
-### 3.7 Out of sample, costs of being wrong, and the leaderboard (Part 10)
+### 3.7 Industry specialisation and industry-relative returns (S10b)
+
+With the CUSIP → ticker → SIC → Fama-French-49 map (3,839 of 4,165 equity tickers mapped; the unmapped
+remainder is mostly delisted and foreign lines, and performs worst), two further pre-specified questions can be
+answered.
+
+| Test | Bucket | n | mean | median | win | t |
+|---|---|---|---|---|---|---|
+| New positions by the manager's point-in-time industry hit rate | specialist industry (hit rate ≥ 60 %, ≥ 10 prior events) | 4,738 | +1.6 % | −5.4 % | 42 % | 0.45 |
+| | non-specialist industry | 27,632 | −0.2 % | −6.8 % | 35 % | −0.08 |
+| | insufficient history | 15,573 | +1.6 % | −2.5 % | 44 % | 1.03 |
+| | unmapped security | 32,892 | −4.8 % | −8.8 % | 36 % | −2.71 |
+| Sector specialists (Baker Bros, Perceptive, RA Capital, Hall, Lewis) | new positions in their home industry | 1,018 | +2.5 % | −17.0 % | 34 % | 0.36 |
+| | outside it | 1,057 | −4.9 % | −11.0 % | 36 % | −1.87 |
+
+A manager's past success in an industry does not make its next pick in that industry better (specialist vs
+non-specialist: +1.6 % vs −0.2 %, neither significant), and Strategy H built on that rule trails SPY. The
+biotech specialists' home-industry picks have a positive mean and a −17 % median: the specialist premium, where
+it exists, is the lottery profile of the industry, not a hit rate.
+
+**Industry-relative returns** (12-month return in excess of the stock's FF49 industry, mapped events only):
+new positions −1.2 % (t = −1.0); new positions ≥ 5 % +3.6 % (t = 1.6); conviction adds +1.1 %; consensus 10+
+buyers +1.2 % (t = 0.6) — most of the mega-cap consensus result is the industry, not the stock; collective
+distribution **−2.6 % (t = −2.8)** — the one avoidance signal that survives industry adjustment on the full sample;
+contrarian accumulation +15.5 % (t = 2.7, median −1.0 %); top-10 exits −2.0 %. Table:
+`outputs/event_study/industry_relative_all.csv`.
+
+### 3.8 Out of sample, costs of being wrong, and the leaderboard (Part 10)
 
 `outputs/leaderboard.csv` ranks all 37 pre-specified 12-month tests. **Validated: 0. Promising but
 unproven: 4. Rejected: 33.** Nothing survives the FDR correction (the smallest p among right-direction tests is 0.085). The
@@ -297,7 +324,7 @@ value at the rebalance, 20 bp per side. Base run: `outputs/strategies/summary_ba
 | E | emerging ownership (≤ 3 → ≥ +2 holders), hold 4q | 7.5 % | 11.8 % | −4.4 % | 0.33 | −52 % | −3.9 % (−1.7) | 2.0× |
 | F | contrarian smart money (≥ 20 % drawdown), hold 4q | 7.5 % | 11.8 % | −4.3 % | 0.33 | −50 % | +0.4 % (0.1) | 1.6× |
 | G | theme rotation (top-3 themes by net buyers), hold 1q | 24.3 % | 12.4 % | +11.8 % | 0.81 | −48 % | +8.7 % (2.7) | 2.4× |
-| H | specialist-manager signal by industry | not run — sector map pending (see §10) | | | | | | |
+| H | specialist-manager signal (new positions only in industries where the manager's point-in-time hit rate ≥ 60 %), hold 4q | 12.0 % | 12.4 % | −0.5 % | 0.48 | −48 % | −2.4 % (−0.7) | 1.2× |
 | I | ensemble z-score of A, B, D, E, hold 2q | 12.3 % | 12.4 % | −0.1 % | 0.58 | −39 % | −1.4 % (−0.7) | 1.7× |
 | J | A minus collective-distribution names | 9.9 % | 11.8 % | −1.9 % | 0.47 | −47 % | −2.3 % (−1.1) | 1.5× |
 | Passive | everything they own, value-weighted, 200 names | 9.6 % | 12.4 % | −2.8 % | 0.52 | −34 % | **−4.1 % (−4.1)** | 0.6× |
@@ -331,7 +358,54 @@ Reading the table:
 
 ### 4.1 Sensitivities (Part 5.5)
 
-<!-- SENSITIVITIES -->
+**Out of sample.** The training window (executions ≤ 2020-12-31) and the untouched test window (≥ 2021-03-31)
+tell the whole story:
+
+| Strategy | Train excess CAGR | Train Sharpe | Test excess CAGR | Test Sharpe | Test max DD |
+|---|---|---|---|---|---|
+| A consensus | +3.7 % | 0.84 | −5.8 % | 0.26 | −46 % |
+| B conviction new | +0.5 % | 0.71 | −8.0 % | 0.16 | −31 % |
+| C best manager | −2.4 % | 0.40 | −15.8 % | −0.20 | −28 % |
+| D multi-quarter | +4.1 % | 0.68 | −9.7 % | 0.07 | −39 % |
+| E emerging ownership | −2.7 % | 0.46 | −14.1 % | −0.06 | −52 % |
+| F contrarian | −2.0 % | 0.45 | −16.4 % | −0.19 | −58 % |
+| G theme rotation | +13.6 % | 1.03 | +9.4 % | 0.62 | −48 % |
+| I ensemble | +1.2 % | 0.73 | −2.6 % | 0.40 | −39 % |
+| J A minus distribution | +2.4 % | 0.76 | −8.0 % | 0.18 | −47 % |
+| Passive baseline | −1.2 % | 0.65 | −5.0 % | 0.33 | −34 % |
+
+Three of the manager-based strategies (A, D, J) beat SPY by 2–4 % a year in the training window with
+Sharpe ratios of 0.7–0.8 — numbers that would have justified a product. Every one of them lost 6–10 % a year
+to the index in the five and a half years that followed, and the "emerging ownership" and contrarian rules
+lost 14–16 % a year. Had the parameters been tuned on the full sample, the training-window results would
+have looked better still; this is what the reserved test window exists to expose.
+
+**Costs** (per side, full sample, excess CAGR vs SPY): at 10 / 20 / 40 / 80 bp Strategy A returns −0.2 / −0.5 /
+−1.0 / −2.1 %; B −0.8 / −1.2 / −2.1 / −3.7 %; I +0.3 / −0.1 / −0.9 / −2.6 %; the passive baseline −2.7 / −2.8 /
+−3.1 / −3.6 %. Turnover of 110–240 % a year makes every strategy cost-sensitive; none is positive at any cost
+level except G.
+
+**Lag.** Delaying execution by a further quarter *does not hurt* — D goes from −1.5 % to +1.7 %, I from
+−0.1 % to +3.1 %, F from −4.3 % to −0.2 %, A and B are unchanged. If the filings carried time-sensitive
+information, a quarter's extra delay would be costly; its absence confirms that whatever the 13F conveys has
+no measurable half-life at quarterly resolution, and that the differences between variants are noise.
+
+**Excluding the 50 largest names** at each rebalance (by 13F-held value) makes every strategy worse (A −3.6 %,
+E −6.1 %, F −5.4 %, J −3.9 % a year): the little the consensus strategies captured came from the mega-caps the
+managers crowded into, not from discovery lower down the capitalisation range.
+
+**Excluding the ten largest qualifying managers** (Berkshire, Dodge & Cox, Jennison, Baillie Gifford, Harris,
+Artisan, First Eagle, GQG, TCI, Coatue) changes nothing of substance: A −1.2 %, B −1.0 %, D −2.6 %, I −1.4 %,
+J −2.3 % a year. The consensus signals are not carried by the most-followed names.
+
+**Universe B (point-in-time managers, no hindsight in selection).** Run on the B-static universe (top 100
+eligible filers by scale each quarter) the consensus strategies are worse than on Universe A: A −2.1 %, E −6.7 %,
+J −4.0 % a year. On the B-perf universe (top 100 by trailing two-year copy return — the rule an investor
+"following the best managers" would actually apply) they are worse still: A −7.4 % (alpha −8.4 %, t = −4.3),
+E −5.1 %, J −7.5 %. Universe A's modest advantage over B is the size of the selection bias in a hand-picked
+universe of famous managers; the B-perf result is the cost of chasing manager performance, measured a
+second way (§5 measures it at the manager level, Strategy C a third).
+
 
 ---
 
@@ -528,10 +602,10 @@ managers; (4) a longer history.
 
 ## 10. Open items and limitations
 
-* **Strategy H and industry specialisation (S10b)** require the CUSIP → ticker → SIC map; the OpenFIGI
-  mapping of 27,287 CUSIPs was still running at the time of writing (rate-limited to 250 per minute without
-  a key). The code path (`sector_map.py`, the sector hit-rate in `scorecard.py`, Strategy H) is complete and
-  runs unchanged once the map exists.
+* **Industry mapping covers 3,839 tickers.** OpenFIGI resolved 9,440 of 27,287 CUSIPs to a current ticker
+  (the rest are options, debt, units and foreign lines); 326 mapped tickers have no SIC code on EDGAR. Delisted
+  names rarely have a current ticker, so the industry-relative tables under-represent failures and are reported
+  with their mapped share.
 * No daily horizons; no dividends; no short side; quarterly execution only (§1.3).
 * Theme membership is hindsight (§6). A point-in-time taxonomy would have to be reconstructed from
   contemporaneous sources quarter by quarter; nothing in the SEC data supports that.
@@ -558,7 +632,7 @@ validation bar, and the best-looking candidates are right-tail lotteries or hind
 
 **What to treat as risk flags (reliability: moderate for the test window, unproven overall):**
 * **collective distribution** (≥ 3 sellers, net ≤ −2 among qualifying managers): −5.8 % (t = −4.4) in
-  2021–26; today's list is led by TSMC, Alphabet, Broadcom, Applied Materials, Spotify, Shopify, Uber;
+  2021–26 and −2.6 % (t = −2.8) against the stock's own industry on the full sample; today's list is led by TSMC, Alphabet, Broadcom, Applied Materials, Spotify, Shopify, Uber;
 * **very large single-name bets** (> 10 % of a book) by any manager;
 * **theme breadth in distribution** (stage 5): cloud, cybersecurity, banks, EM consumption, enterprise AI
   software, streaming.

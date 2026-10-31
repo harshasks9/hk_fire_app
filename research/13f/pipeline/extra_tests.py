@@ -69,14 +69,60 @@ def skill_tests(panel, ffq) -> list[pd.DataFrame]:
     t15 = pd.DataFrame(rows); t15.to_csv(OUTPUT_DIR / "event_study" / "S15_manager_copy_return_after_style_change_all.csv", index=False); tabs.append(t15)
     return tabs
 
+def sector_tests(panel, ffq) -> list[pd.DataFrame]:
+    """S10b specialist-industry test and industry-relative (FF49) excess returns; needs sector_map + manager_sector_hitrate."""
+    from bt_core import cusip_to_ticker
+    from config import FACTORS_DIR
+    sec = pd.read_parquet(DERIVED_DIR / "sector_map.parquet").set_index("ticker")
+    c2t = cusip_to_ticker()
+    M = pd.read_parquet(DERIVED_DIR / "events_manager_returns_all.parquet"); S = pd.read_parquet(DERIVED_DIR / "events_stock_returns_all.parquet")
+    for d in (M, S):
+        d["ff49"] = d["CUSIP"].map(c2t).map(sec["ff49"]); d["ff49_name"] = d["CUSIP"].map(c2t).map(sec["ff49_name"])
+    # industry-relative returns: quarterly compounded FF49 industry returns, 4-quarter forward from entry
+    ind = pd.read_parquet(FACTORS_DIR / "ind49_daily.parquet").set_index("date")   # already decimal (factors.py converts)
+    indq = (1 + ind).groupby(ind.index.to_period("Q")).prod() - 1; indq.index = indq.index.to_timestamp(how="end").normalize()
+    names = {i + 1: c for i, c in enumerate(indq.columns)}   # FF49 numbering is 1..49 in the daily file's column order
+    ind4 = (1 + indq).rolling(4).apply(np.prod, raw=True).shift(-4) - 1    # return over the 4 quarters after the index date
+    for d in (M, S):
+        col = d["ff49"].map(names); ok = col.notna() & d["entry_period"].isin(ind4.index)
+        d["ind_12m"] = np.nan
+        d.loc[ok, "ind_12m"] = ind4.reindex(d.loc[ok, "entry_period"]).values[np.arange(ok.sum()), pd.Index(indq.columns).get_indexer(col[ok])]
+        d["xi_12m"] = d["fwd_12m"] - d["ind_12m"]
+    tabs = []
+    hr = pd.read_parquet(DERIVED_DIR / "manager_sector_hitrate.parquet")
+    Mn = M[(M["status"] == "new")].merge(hr.rename(columns={"period": "period"}), on=["manager_id", "period", "ff49"], how="left")
+    Mn["specialist"] = np.select([Mn["ff49"].isna(), (Mn["hit_rate"] >= 0.6) & (Mn["n_events"] >= 10), Mn["n_events"] >= 10], ["unmapped", "specialist_industry", "non_specialist_industry"], default="insufficient_history")
+    tabs.append(run_table(Mn, ["specialist"], "S10b_new_positions_by_industry_specialisation", panel, ffq, alpha=False))
+    # sector specialists in their own sector vs outside (category-level)
+    sp = M[(M["category"] == "Sector specialist") & (M["status"] == "new") & M["ff49_name"].notna()]
+    home = sp.groupby("manager_id")["ff49_name"].agg(lambda x: x.value_counts().index[0])
+    sp = sp.assign(home_sector=lambda d: np.where(d["ff49_name"] == d["manager_id"].map(home), "home_sector", "outside"))
+    tabs.append(run_table(sp, ["home_sector"], "S10b_sector_specialists_home_vs_outside", panel, ffq, alpha=False))
+    # industry-relative view of the headline signals
+    rows = []
+    from bt_quarterly import cluster_tstat
+    sets = {"S1 new positions": M[M["status"] == "new"], "S1 new ≥ 5 %": M[(M["status"] == "new") & (M["weight"] >= 0.05)], "S2 conviction adds": M[M["conviction_add"]],
+            "S4 consensus 10+": S[S["consensus_buy"] >= 10], "S4 consensus 5–9": S[S["consensus_buy"].between(5, 9)], "S7 collective distribution": S[S["collective_distribution"]],
+            "S8 contrarian ≤ −40 %": M[M["status"].isin(["new", "increased"]) & (M["ret_6m_prior"] <= -0.4)], "S6 top-10 exits": M[M["exit_top10"]]}
+    for k, d in sets.items():
+        d = d.dropna(subset=["xi_12m"])
+        if len(d) < 30:
+            continue
+        _m, t, n = cluster_tstat(d["xi_12m"], d["entry_period"])
+        rows.append({"signal": k, "measure": "xs_ff49_industry", "horizon": "12m", "n": len(d), "n_periods": n, "mean": d["xi_12m"].mean(), "median": d["xi_12m"].median(), "win_rate": (d["xi_12m"] > 0).mean(), "t_cluster": t,
+                     "mean_xs_spy_same_events": d["xs_12m"].mean(), "mapped_share": len(d) / len(sets[k])})
+    ti = pd.DataFrame(rows); ti.to_csv(OUTPUT_DIR / "event_study" / "industry_relative_all.csv", index=False); tabs.append(ti)
+    return tabs
+
 def strategy_extra() -> pd.DataFrame:
     from strategies_q import run
     names = ["A", "B", "D", "E", "F", "I", "J"]
     tabs = [run(names, tag="lag1", lag_q=1), run(names, tag="exTop50", exclude_top_n=50)]
     sc = pd.read_csv(OUTPUT_DIR / "scorecard" / "manager_scorecard.csv")
     beh = pd.read_parquet(DERIVED_DIR / "manager_summary.parquet")
-    big = beh[beh["manager_id"].isin(sc.loc[sc["universe_a"].astype(str) == "1", "manager_id"])].nlargest(10, "latest_value")["manager_id"].tolist()
-    print("dropping the 10 largest Universe A managers:", big)
+    qual = sc[(sc["universe_a"].astype(str) == "1") & ~sc["category"].isin(["Broad institutional and passive", "Quantitative and systematic"])]["manager_id"]
+    big = beh[beh["manager_id"].isin(qual)].nlargest(10, "latest_value")["manager_id"].tolist()   # the most-followed = the largest qualifying (non-control) managers
+    print("dropping the 10 largest qualifying Universe A managers:", big)
     tabs.append(run(names, tag="exTop10Mgrs", exclude_managers=big))
     if (DERIVED_DIR / "events_stock_B.parquet").exists():
         esb = pd.read_parquet(DERIVED_DIR / "events_stock_B.parquet")
@@ -95,6 +141,12 @@ if __name__ == "__main__":
         v = allt[(allt["measure"].isin(["xs_spy", "copy_xs_spy_next4q"])) & (allt["horizon"] == "12m")]
         keys = [c for c in ["skill", "divergence", "style_change"] if c in v.columns]
         print(v[["signal"] + keys + ["n", "n_periods", "mean", "median", "win_rate", "t_cluster"]].to_string(index=False, float_format=lambda x: f"{x:.3f}"))
+    if what == "sectors":
+        panel, holders, aggval = load_panel(); ffq = quarterly_factors()
+        for t in sector_tests(panel, ffq):
+            v = t[(t["horizon"] == "12m") & t["measure"].isin(["xs_spy", "xs_ff49_industry"])]
+            keys = [c for c in ["specialist", "home_sector"] if c in v.columns]
+            print(v[["signal"] + keys + ["measure", "n", "n_periods", "mean", "median", "win_rate", "t_cluster"]].to_string(index=False, float_format=lambda x: f"{x:.3f}"))
     if what in ("strategies", "all"):
         t = strategy_extra()
         print(t[["strategy", "tag", "cagr", "excess_cagr", "sharpe", "max_dd", "alpha_ann", "alpha_t", "annual_turnover"]].to_string(index=False, float_format=lambda x: f"{x:.3f}"))

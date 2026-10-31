@@ -71,7 +71,9 @@ def main() -> None:
     u = pd.read_csv(Path(__file__).resolve().parents[1] / "data" / "universe.csv", dtype=str)
     beh = pd.read_parquet(DERIVED_DIR / "manager_summary.parquet")
     sc = pd.read_csv(O / "scorecard" / "manager_scorecard.csv") if (O / "scorecard" / "manager_scorecard.csv").exists() else pd.DataFrame(columns=["manager_id"])
-    db = u.merge(beh.drop(columns=["manager", "category"], errors="ignore"), on="manager_id", how="left").merge(sc.drop(columns=["manager", "category", "universe_a", "defunct_control"], errors="ignore"), on="manager_id", how="left")
+    beh = beh.drop(columns=["manager", "category", "first_period", "last_period"], errors="ignore")
+    sc = sc[["manager_id"] + [c for c in sc.columns if c not in u.columns and c not in beh.columns]]   # scorecard-only fields (no duplicated behaviour columns)
+    db = u.merge(beh, on="manager_id", how="left").merge(sc, on="manager_id", how="left")
     db.to_csv(O / "manager_database.csv", index=False)
     # dashboard
     tq = pd.read_csv(O / "themes" / "theme_stage_quarter.csv", parse_dates=["period"]) if (O / "themes" / "theme_stage_quarter.csv").exists() else None
