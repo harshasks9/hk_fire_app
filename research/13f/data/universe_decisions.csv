@@ -1,0 +1,107 @@
+manager_id,manager,category,ciks,universe_a,defunct_control,people,rationale
+berkshire,Berkshire Hathaway,Concentrated fundamental,0001067983,1,0,Warren Buffett; Todd Combs; Ted Weschler,Most-followed 13F; multi-decade record; extreme concentration
+pershing,Pershing Square,Activist,0001336528;0002026053,1,0,Bill Ackman,Concentrated activist; large public following. Pershing Square Inc. (parent) files from 2025Q2; the subsidiary's last 13F-HR is 2026Q1
+baupost,Baupost Group,Value and distressed,0001061768,1,0,Seth Klarman,Value/distressed; long record
+greenlight,Greenlight Capital / DME Capital,Value and distressed,0001079114;0001489933,1,0,David Einhorn,Value long/short; filings move to DME Capital Management LP from 2024Q1
+thirdpoint,Third Point,Activist,0001040273,1,0,Daniel Loeb,Event-driven activist
+appaloosa,Appaloosa,Global macro and tactical,0001006438;0001656456,1,0,David Tepper,Macro-tactical equity; Appaloosa Management LP to 2015Q4 then Appaloosa LP
+duquesne,Duquesne Family Office,Global macro and tactical,0001536411,1,0,Stanley Druckenmiller,Macro; widely followed
+scion,Scion Asset Management,Value and distressed,0001649339,1,0,Michael Burry,Contrarian value; files from 2015Q4; last filing 2025Q3
+lonepine,Lone Pine Capital,Growth and technology,0001061165,1,0,Stephen Mandel; Kelly Granat; David Craver,Tiger cub growth
+viking,Viking Global Investors,Concentrated fundamental,0001103804,1,0,Andreas Halvorsen,Tiger cub fundamental L/S
+tigerglobal,Tiger Global Management,Growth and technology,0001167483,1,0,Chase Coleman,Growth/tech crossover
+coatue,Coatue Management,Growth and technology,0001135730,1,0,Philippe Laffont,Tech specialist
+maverick,Maverick Capital,Concentrated fundamental,0000934639,1,0,Lee Ainslie,Tiger cub
+glenview,Glenview Capital Management,Concentrated fundamental,0001138995,1,0,Larry Robbins,Healthcare-heavy fundamental
+akre,Akre Capital Management,Concentrated fundamental,0001112520,1,0,Chuck Akre; John Neff; Chris Cerrone,Compounder selector
+ruane,Ruane Cunniff & Goldfarb (Sequoia),Concentrated fundamental,0000728014;0001720792,1,0,Sequoia Fund team,Long-horizon concentrated; entity converted Inc → L.P. in 2018
+tweedy,Tweedy Browne,Value and distressed,0000732905,1,0,Tweedy Browne partners,Graham value
+fairholme,Fairholme Capital,Value and distressed,0001056831,1,0,Bruce Berkowitz,Concentrated contrarian value
+markel,Markel Group,Concentrated fundamental,0001096343,1,0,Tom Gayner,Insurer compounder portfolio
+dailyjournal,Daily Journal,Concentrated fundamental,0000783412,1,0,Charlie Munger (to 2023),Munger portfolio; four stocks
+abrams,Abrams Capital Management,Concentrated fundamental,0001358706,1,0,David Abrams,Concentrated value
+altimeter,Altimeter Capital,Growth and technology,0001541617,1,0,Brad Gerstner,Tech crossover
+gates,Gates Foundation Trust,Concentrated fundamental,0001166559,1,0,Michael Larson,Concentrated long-horizon (Berkshire-seeded)
+soros,Soros Fund Management,Global macro and tactical,0001029160,1,0,Dawn Fitzpatrick; George Soros,Macro
+icahn,Icahn Capital,Activist,0000921669,1,0,Carl Icahn,Activist
+elliott,Elliott,Activist,0001048445;0001791786,1,0,Paul Singer; Jesse Cohn,Activist; Elliott Management Corp to 2020Q3 then Elliott Investment Management L.P.
+starboard,Starboard Value,Activist,0001517137,1,0,Jeff Smith,Activist
+valueact,ValueAct,Activist,0001418814,1,0,Mason Morfit,Constructive activist
+trian,Trian Fund Management,Activist,0001345471,1,0,Nelson Peltz,Activist
+jana,Jana Partners,Activist,0001159159;0001998597,1,0,Barry Rosenstein; Scott Ostfeld,Activist; new filing entity from 2023Q3
+sachemhead,Sachem Head Capital,Activist,0001582090,1,0,Scott Ferguson,Activist
+corvex,Corvex Management,Activist,0001535472,1,0,Keith Meister,Activist
+tci,TCI Fund Management,Activist,0001647251,1,0,Chris Hohn,Concentrated engaged investor; files from 2015Q2
+bailliegifford,Baillie Gifford,Growth and technology,0001088875,1,0,Baillie Gifford partners,Long-horizon growth
+ark,ARK Investment Management,Growth and technology,0001697748,1,0,Cathie Wood,Disruptive growth; files from 2016Q4
+whalerock,Whale Rock Capital,Growth and technology,0001387322,1,0,Alex Sacerdote,Tech specialist
+lightstreet,Light Street Capital,Growth and technology,0001569049,1,0,Glen Kacher,Tech specialist
+dragoneer,Dragoneer Investment Group,Growth and technology,0001602189,1,0,Marc Stad,Growth crossover; files from 2014Q4
+d1,D1 Capital Partners,Growth and technology,0001747057,1,0,Daniel Sundheim,Growth crossover; files from 2018Q4
+durable,Durable Capital Partners,Growth and technology,0001798849,1,0,Henry Ellenbogen,Growth; files from 2019Q4
+polen,Polen Capital,Growth and technology,0001034524,1,0,Polen team,Quality growth
+sands,Sands Capital,Growth and technology,0001020066,1,0,Sands team,Growth
+jennison,Jennison Associates,Growth and technology,0000053417,1,0,Jennison team,Large growth institution
+gqg,GQG Partners,Growth and technology,0001697233,1,0,Rajiv Jain,Quality growth; files from 2016Q4
+artisan,Artisan Partners,Growth and technology,0001466153,1,0,Artisan teams,Multi-boutique growth
+bridgewater,Bridgewater Associates,Global macro and tactical,0001350694,1,0,Ray Dalio; Bob Prince; Greg Jensen,Macro; largest hedge fund
+tudor,Tudor Investment,Global macro and tactical,0000923093,1,0,Paul Tudor Jones,Macro
+moore,Moore Capital Management,Global macro and tactical,0001448574,1,0,Louis Bacon,Macro
+caxton,Caxton Associates,Global macro and tactical,0000872573;0002051323,1,0,Andrew Law,Macro; entity change 2025Q1
+paulson,Paulson & Co,Global macro and tactical,0001035674,1,0,John Paulson,Event/macro
+point72,Point72 Asset Management,Quantitative and systematic,0001603466;0001451928,1,0,Steve Cohen,Multi-strategy platform (control); SAC Capital Advisors to 2015Q3
+millennium,Millennium Management,Quantitative and systematic,0001273087,1,0,Izzy Englander,Multi-strategy platform (control)
+citadel,Citadel Advisors,Quantitative and systematic,0001423053,1,0,Ken Griffin,Multi-strategy platform (control)
+deshaw,D. E. Shaw,Quantitative and systematic,0001009207,1,0,D. E. Shaw group,Quant (control)
+rentech,Renaissance Technologies,Quantitative and systematic,0001037389,1,0,Jim Simons (to 2024),Quant (control)
+twosigma,Two Sigma Investments,Quantitative and systematic,0001179392,1,0,Two Sigma,Quant (control)
+aqr,AQR Capital Management,Quantitative and systematic,0001167557,1,0,Cliff Asness,Factor quant (control)
+balyasny,Balyasny Asset Management,Quantitative and systematic,0001218710,1,0,Dmitry Balyasny,Multi-strategy platform (control)
+marshallwace,Marshall Wace,Quantitative and systematic,0001318757,1,0,Marshall Wace,Systematic L/S (control)
+mangroup,Man Group,Quantitative and systematic,0001637460,1,0,Man Group,Systematic (control); files as Man Group plc from 2018Q1
+oaktree,Oaktree Capital Management,Value and distressed,0000949509,1,0,Howard Marks,Distressed/value
+davis,Davis Selected Advisers,Value and distressed,0001036325,1,0,Chris Davis,Long-horizon value
+dodgecox,Dodge & Cox,Value and distressed,0000200217,1,0,Dodge & Cox,Value institution
+harris,Harris Associates,Value and distressed,0000813917,1,0,Bill Nygren,Oakmark value
+southeastern,Southeastern Asset Management,Value and distressed,0000807985,1,0,Mason Hawkins; Staley Cates,Longleaf value
+fpa,First Pacific Advisors,Value and distressed,0001377581,1,0,Steven Romick,Contrarian value
+pzena,Pzena Investment Management,Value and distressed,0001027796,1,0,Richard Pzena,Deep value
+hotchkis,Hotchkis & Wiley,Value and distressed,0001164833,1,0,Hotchkis & Wiley,Deep value
+dalal,Dalal Street (Pabrai),Value and distressed,0001549575,1,0,Mohnish Pabrai,Concentrated value
+yacktman,Yacktman Asset Management,Value and distressed,0000905567,1,0,Yacktman,Quality value
+firsteagle,First Eagle Investment Management,Value and distressed,0001325447,1,0,First Eagle,Global value
+eagle,Eagle Capital Management,Concentrated fundamental,0000945631,1,0,Eagle Capital,Concentrated quality
+gardnerrusso,Gardner Russo & Quinn,Concentrated fundamental,0000860643,1,0,Tom Russo,Global consumer compounders
+farallon,Farallon Capital Management,Concentrated fundamental,0000909661,1,0,Andrew Spokes,Multi-strategy fundamental
+eminence,Eminence Capital,Concentrated fundamental,0001107310,1,0,Ricky Sandler,Fundamental L/S
+hound,Hound Partners,Concentrated fundamental,0001353316,1,0,Jonathan Auerbach,Tiger cub
+bravewarrior,Brave Warrior Advisors,Concentrated fundamental,0001553733,1,0,Glenn Greenberg,Concentrated
+punchcard,Punch Card Management,Concentrated fundamental,0001631664,1,0,Norbert Lou,Ultra-concentrated; files from 2014Q4
+cantillon,Cantillon Capital Management,Concentrated fundamental,0001279936,1,0,William von Mueffling,Quality concentrated
+egerton,Egerton Capital,Concentrated fundamental,0001581811,1,0,John Armitage,Concentrated global
+soroban,Soroban Capital Partners,Concentrated fundamental,0001517857,1,0,Eric Mandelblatt,Concentrated fundamental
+steadfast,Steadfast Capital Management,Concentrated fundamental,0001214822,1,0,Robert Pitts,Concentrated fundamental
+pennant,Pennant,Concentrated fundamental,0001168664;0001759176,1,0,Alan Fournier,Concentrated; Pennant Capital to 2018Q3 then Pennant Investors
+selectequity,Select Equity Group,Concentrated fundamental,0001592643,1,0,George Loening,Quality concentrated
+lindselltrain,Lindsell Train,Concentrated fundamental,0001484150,1,0,Nick Train; Michael Lindsell,Ultra-low-turnover compounders
+fundsmith,Fundsmith,Concentrated fundamental,0001569205,1,0,Terry Smith,Quality compounders
+ako,AKO Capital,Concentrated fundamental,0001376879,1,0,Nicolai Tangen (to 2020); Patrick Hargreaves,Quality compounders; files from 2016Q4
+bakerbros,Baker Bros. Advisors,Sector specialist,0001263508,1,0,Julian Baker; Felix Baker,Biotech specialist
+racapital,RA Capital Management,Sector specialist,0001346824,1,0,Peter Kolchinsky,Biotech specialist
+perceptive,Perceptive Advisors,Sector specialist,0001224962,1,0,Joseph Edelman,Biotech specialist
+orbimed,OrbiMed Advisors,Sector specialist,0001055951,1,0,OrbiMed,Healthcare specialist
+deerfield,Deerfield Management,Sector specialist,0001009258,1,0,James Flynn,Healthcare specialist
+vanguard,Vanguard Group,Broad institutional and passive,0000102909,1,0,Index,Passive control
+blackrock,BlackRock,Broad institutional and passive,0001364742,1,0,Index + active,Passive-heavy control (BlackRock Inc. entity to 2024Q2)
+statestreet,State Street,Broad institutional and passive,0000093751,1,0,Index,Passive control
+fmr,FMR (Fidelity),Broad institutional and passive,0000315066,1,0,Active mutual funds,Large active institution
+capitalworld,Capital World Investors,Broad institutional and passive,0001422849,1,0,Capital Group,Large active institution
+trowe,T. Rowe Price,Broad institutional and passive,0000080255,1,0,Active funds,Large active institution
+wellington,Wellington Management,Broad institutional and passive,0000902219,1,0,Active,Large active institution
+geode,Geode Capital Management,Broad institutional and passive,0001214717,1,0,Index,Passive control
+melvin,Melvin Capital,Growth and technology,0001628110,0,1,Gabe Plotkin,Defunct 2022 — survivorship control
+omega,Omega Advisors,Value and distressed,0000898202,0,1,Leon Cooperman,Converted to family office 2018 — survivorship control
+passport,Passport Capital,Global macro and tactical,0001352428,0,1,John Burbank,Closed 2019 — survivorship control
+blueridge,Blue Ridge Capital,Concentrated fundamental,0001062589,0,1,John Griffin,Closed 2017 — survivorship control
+tigermgmt,Tiger Management,Concentrated fundamental,0001027451,0,1,Julian Robertson,Seeding entity; ceased 2024 — control
+discovery,Discovery Capital Management,Global macro and tactical,0001389507,0,1,Rob Citrone,Tiger cub macro — supplementary

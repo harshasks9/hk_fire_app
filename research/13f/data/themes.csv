@@ -1,0 +1,24 @@
+theme,parent_group,description,example_tickers
+ai_compute,Technology,GPU/accelerator compute and AI servers,NVDA;AMD;SMCI;DELL;AVGO
+semis_packaging,Technology,Semiconductor equipment and advanced packaging,ASML;AMAT;LRCX;KLAC;TSM;ACLS;ENTG
+ai_networking_memory,Technology,Optical/Ethernet networking and HBM/memory for AI,ANET;MU;COHR;LITE;CIEN;CRDO;ALAB
+datacenter_power_cooling,Industrials,Power equipment and cooling for data centres,VRT;ETN;PWR;GEV;MOD;NVT;HUBB
+enterprise_ai_software,Technology,Enterprise AI software and automation,MSFT;PLTR;NOW;CRM;SNOW;DDOG;MDB;AI
+cybersecurity,Technology,Cybersecurity,CRWD;PANW;FTNT;ZS;S;CYBR;OKTA;NET
+robotics_automation,Industrials,Robotics and industrial automation,ROK;TER;ISRG;SYM;ABB;KEYS
+electrification_grid,Industrials,Electrification and grid infrastructure,ETN;QUANTA;PWR;GEV;AME;ENPH;FSLR;FLNC;ARRY
+nuclear,Energy,Nuclear fuel and reactors,CEG;VST;CCJ;BWXT;OKLO;SMR;LEU;NNE
+defense_aerospace,Industrials,Defense and aerospace,LMT;RTX;GD;NOC;LHX;HWM;TDG;RKLB;KTOS
+healthcare_innovation_obesity,Healthcare,GLP-1 obesity therapeutics and healthcare innovation,LLY;NVO;VKTX;AMGN;ISRG;VRTX
+digital_payments_fin_infra,Financials,Digital payments and financial infrastructure,V;MA;PYPL;SQ;FI;FIS;ADYEN;AFRM;TOST
+consumer_internet,Communication,Consumer internet platforms,META;GOOGL;AMZN;NFLX;UBER;ABNB;DASH;SPOT;PDD
+energy_commodities,Energy,"Oil, gas, mining and commodity producers",XOM;CVX;COP;OXY;FCX;SLB;EOG
+em_consumption,Consumer,Emerging-market consumption,BABA;PDD;MELI;NU;SE;TCEHY;HDB
+digital_assets_infra,Financials,Digital-asset infrastructure,COIN;MSTR;MARA;RIOT;CLSK;HOOD;GLXY
+cloud_computing,Technology,Cloud infrastructure and SaaS (historical cycle 2013–2021),AMZN;MSFT;CRM;NOW;WDAY;TWLO;OKTA;ZS
+ecommerce,Consumer,E-commerce platforms and enablers (historical cycle),AMZN;SHOP;MELI;ETSY;W;CHWY;JD;BABA
+streaming_media,Communication,Streaming and digital media,NFLX;DIS;ROKU;SPOT;WBD
+managed_care_health_services,Healthcare,Managed care and health services,UNH;ELV;CI;HUM;CVS;CNC
+homebuilders_housing,Consumer,Homebuilders and housing,DHI;LEN;NVR;PHM;TOL;HD;LOW
+banks_rates,Financials,Banks and rate-sensitive financials,JPM;BAC;WFC;C;USB;PNC;SCHW
+biotech_platform,Healthcare,Biotech platforms and gene/cell therapy,MRNA;BNTX;CRSP;NTLA;REGN;ALNY;BMRN
