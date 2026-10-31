@@ -61,7 +61,7 @@ def main() -> None:
     section("Current — top 20 accumulation", "current/top20_accumulation.csv")
     section("Current — top 20 distribution", "current/top20_distribution.csv")
     section("Current — disagreements", "current/disagreements.csv")
-    for f in sorted((O / "event_study").glob("S*_*.csv")):
+    for f in sorted((O / "event_study").glob("S*_all.csv")):
         if "by_manager" in f.name:
             continue
         d = pd.read_csv(f); d = d[d["measure"].isin(["xs_spy", "ff6_alpha_ann"])]

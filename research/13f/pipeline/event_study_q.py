@@ -24,7 +24,7 @@ def attach_prior_returns(ev: pd.DataFrame, panel: pd.DataFrame) -> pd.DataFrame:
     ev["ret_6m_prior"] = ret(2, 0); ev["mom_12_1"] = ret(4, 1)
     return ev
 
-def run_table(ev: pd.DataFrame, by, name: str, panel, ffq, alpha: bool = True, worst_case: pd.DataFrame | None = None) -> pd.DataFrame:
+def run_table(ev: pd.DataFrame, by, name: str, panel, ffq, alpha: bool = True, worst_case: pd.DataFrame | None = None, sample: str = "all") -> pd.DataFrame:
     t = summarize(ev, by)
     if worst_case is not None and len(worst_case):
         w = summarize(worst_case, by); w["measure"] = w["measure"] + "_worstcase_delist"
@@ -42,7 +42,7 @@ def run_table(ev: pd.DataFrame, by, name: str, panel, ffq, alpha: bool = True, w
                              "beta_mkt": a.get("beta_mkt"), "beta_smb": a.get("beta_smb"), "beta_hml": a.get("beta_hml"), "beta_mom": a.get("beta_mom"), "r2": a.get("r2")})
         t = pd.concat([t, pd.DataFrame(rows)], ignore_index=True)
     t.insert(0, "signal", name)
-    t.to_csv(OUT / f"{name}.csv", index=False)
+    t.to_csv(OUT / f"{name}_{sample}.csv", index=False)
     return t
 
 def main(sample: str = "all") -> None:
@@ -58,34 +58,34 @@ def main(sample: str = "all") -> None:
         Mw = Mw[Mw["entry_period"] <= cut] if sample == "train" else Mw[Mw["entry_period"] > cut]
     M.to_parquet(DERIVED_DIR / f"events_manager_returns_{sample}.parquet", index=False)
     tabs = []
-    tabs.append(run_table(M[M["status"] == "new"], ["new_weight_bucket"], "S1_new_position_by_weight", panel, ffq, worst_case=Mw[Mw["status"] == "new"]))
+    tabs.append(run_table(M[M["status"] == "new"], ["new_weight_bucket"], "S1_new_position_by_weight", panel, ffq, worst_case=Mw[Mw["status"] == "new"], sample=sample))
     sel = M["conviction_add"] | ((M["status"] == "new") & (M["weight"] >= 0.01))
-    tabs.append(run_table(M[sel].assign(kind=lambda d: np.where(d["conviction_add"], "conviction_add", "new_ge1pct")), ["kind"], "S2_conviction_add_vs_new", panel, ffq))
+    tabs.append(run_table(M[sel].assign(kind=lambda d: np.where(d["conviction_add"], "conviction_add", "new_ge1pct")), ["kind"], "S2_conviction_add_vs_new", panel, ffq, sample=sample))
     acc = M[M["status"].isin(["new", "increased"])].assign(consec=lambda d: pd.cut(d["consecutive_adds"], [0, 1, 2, 3, 99], labels=["1", "2", "3", "4+"]))
-    tabs.append(run_table(acc, ["consec"], "S3_consecutive_accumulation", panel, ffq))
+    tabs.append(run_table(acc, ["consec"], "S3_consecutive_accumulation", panel, ffq, sample=sample))
     ex = M[M["status"] == "exited"].assign(kind=lambda d: np.where(d["exit_top10"], "exit_top10", "exit_other"))
-    tabs.append(run_table(ex, ["kind"], "S6_exits", panel, ffq, worst_case=Mw[Mw["status"] == "exited"].assign(kind=lambda d: np.where(d["exit_top10"], "exit_top10", "exit_other"))))
+    tabs.append(run_table(ex, ["kind"], "S6_exits", panel, ffq, worst_case=Mw[Mw["status"] == "exited"].assign(kind=lambda d: np.where(d["exit_top10"], "exit_top10", "exit_other")), sample=sample))
     contr = M[M["status"].isin(["new", "increased"]) & M["ret_6m_prior"].notna()].assign(drawdown=lambda d: pd.cut(d["ret_6m_prior"], [-1.01, -0.4, -0.2, 0, 0.2, 100], labels=["≤−40%", "−40..−20%", "−20..0%", "0..20%", ">20%"]))
-    tabs.append(run_table(contr, ["drawdown"], "S8_contrarian_accumulation", panel, ffq))
+    tabs.append(run_table(contr, ["drawdown"], "S8_contrarian_accumulation", panel, ffq, sample=sample))
     live = M[M["status"] != "exited"].assign(bucket=lambda d: np.where(d["top5"], "top5", "rest"))
-    tabs.append(run_table(live, ["bucket"], "S9_top5_vs_rest", panel, ffq, alpha=False))
+    tabs.append(run_table(live, ["bucket"], "S9_top5_vs_rest", panel, ffq, alpha=False, sample=sample))
     mom = M[M["status"].isin(["new", "increased"]) & M["mom_12_1"].notna()].copy()
     mom["mom_tercile"] = mom.groupby("period")["mom_12_1"].transform(lambda s: pd.qcut(s.rank(method="first"), 3, labels=["low", "mid", "high"]) if len(s) >= 3 else pd.Series(index=s.index, dtype="object"))
-    tabs.append(run_table(mom, ["mom_tercile"], "S14_accumulation_by_momentum", panel, ffq, alpha=False))
-    tabs.append(run_table(M[M["status"].isin(["new", "increased"])], ["category"], "S10_by_manager_category", panel, ffq, alpha=False))
-    tabs.append(run_table(M[M["status"].isin(["new", "increased"])], ["manager_id"], "S10_by_manager", panel, ffq, alpha=False))
+    tabs.append(run_table(mom, ["mom_tercile"], "S14_accumulation_by_momentum", panel, ffq, alpha=False, sample=sample))
+    tabs.append(run_table(M[M["status"].isin(["new", "increased"])], ["category"], "S10_by_manager_category", panel, ffq, alpha=False, sample=sample))
+    tabs.append(run_table(M[M["status"].isin(["new", "increased"])], ["manager_id"], "S10_by_manager", panel, ffq, alpha=False, sample=sample))
     # stock-level
     S = forward_returns(es, panel); S = attach_prior_returns(S, panel)
     if sample != "all":
         S = S[S["entry_period"] <= cut] if sample == "train" else S[S["entry_period"] > cut]
     S.to_parquet(DERIVED_DIR / f"events_stock_returns_{sample}.parquet", index=False)
     cons = S[S["consensus_buy"] >= 1].assign(buyers=lambda d: pd.cut(d["consensus_buy"], [0, 1, 2, 4, 9, 999], labels=["1", "2", "3–4", "5–9", "10+"]))
-    tabs.append(run_table(cons, ["buyers"], "S4_consensus_buyers", panel, ffq))
-    tabs.append(run_table(S[S["early_candidate"]], None, "S5_early_candidates", panel, ffq))
-    tabs.append(run_table(S[S["collective_distribution"]], None, "S7_collective_distribution", panel, ffq))
+    tabs.append(run_table(cons, ["buyers"], "S4_consensus_buyers", panel, ffq, sample=sample))
+    tabs.append(run_table(S[S["early_candidate"]], None, "S5_early_candidates", panel, ffq, sample=sample))
+    tabs.append(run_table(S[S["collective_distribution"]], None, "S7_collective_distribution", panel, ffq, sample=sample))
     accel = S.assign(accel=lambda d: pd.cut(d["ownership_accel"], [-99, -3, -1, 0, 1, 2, 99], labels=["≤−3", "−2..−1", "0", "+1", "+2", "≥+3"]))
-    tabs.append(run_table(accel, ["accel"], "S11_ownership_acceleration", panel, ffq, alpha=False))
-    tabs.append(run_table(S[S["crowded"]], None, "S12_crowded", panel, ffq))
+    tabs.append(run_table(accel, ["accel"], "S11_ownership_acceleration", panel, ffq, alpha=False, sample=sample))
+    tabs.append(run_table(S[S["crowded"]], None, "S12_crowded", panel, ffq, sample=sample))
     allt = pd.concat(tabs, ignore_index=True); allt["sample"] = sample
     allt.to_csv(OUT / f"all_signals_{sample}.csv", index=False)
     keys = [c for c in ["new_weight_bucket", "kind", "consec", "buyers", "drawdown", "bucket", "accel", "mom_tercile", "category"] if c in allt.columns]
