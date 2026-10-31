@@ -9,7 +9,7 @@ from __future__ import annotations
 import sys
 import numpy as np, pandas as pd
 from config import DERIVED_DIR, OUTPUT_DIR
-from bt_quarterly import load_panel, quarterly_factors, forward_returns, summarize, calendar_time_returns, factor_alpha_q, HORIZONS_Q
+from bt_quarterly import load_panel, quarterly_factors, forward_returns, summarize, calendar_time_returns, factor_alpha_q, covered, HORIZONS_Q
 
 OUT = OUTPUT_DIR / "event_study"; OUT.mkdir(parents=True, exist_ok=True)
 ALPHA_HOLD = {"3m": 1, "6m": 2, "12m": 4}
@@ -50,8 +50,8 @@ def main(sample: str = "all") -> None:
     em = pd.read_parquet(DERIVED_DIR / "events_manager.parquet"); es = pd.read_parquet(DERIVED_DIR / "events_stock.parquet")
     print(f"panel {panel.shape}; manager events priced {em.CUSIP.isin(panel.columns).mean():.1%}, stock-periods priced {es.CUSIP.isin(panel.columns).mean():.1%}")
     q = em[(em["universe_a"] == "1") & ~em["is_control"]].copy()
-    M = forward_returns(q, panel); M = attach_prior_returns(M, panel)
-    Mw = forward_returns(q, panel, worst_case_delist=True)
+    M = covered(forward_returns(q, panel)); M = attach_prior_returns(M, panel)
+    Mw = covered(forward_returns(q, panel, worst_case_delist=True))
     if sample != "all":   # 'train' (entry ≤ 2020-12-31) or 'test' (entry ≥ 2021-03-31) for the out-of-sample protocol
         cut = pd.Timestamp("2020-12-31")
         M = M[M["entry_period"] <= cut] if sample == "train" else M[M["entry_period"] > cut]
@@ -75,7 +75,7 @@ def main(sample: str = "all") -> None:
     tabs.append(run_table(M[M["status"].isin(["new", "increased"])], ["category"], "S10_by_manager_category", panel, ffq, alpha=False, sample=sample))
     tabs.append(run_table(M[M["status"].isin(["new", "increased"])], ["manager_id"], "S10_by_manager", panel, ffq, alpha=False, sample=sample))
     # stock-level
-    S = forward_returns(es, panel); S = attach_prior_returns(S, panel)
+    S = covered(forward_returns(es, panel)); S = attach_prior_returns(S, panel)
     if sample != "all":
         S = S[S["entry_period"] <= cut] if sample == "train" else S[S["entry_period"] > cut]
     S.to_parquet(DERIVED_DIR / f"events_stock_returns_{sample}.parquet", index=False)

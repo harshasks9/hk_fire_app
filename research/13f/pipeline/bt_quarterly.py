@@ -24,6 +24,9 @@ from config import PRICES_DIR, FACTORS_DIR, DERIVED_DIR
 
 BENCH_CUSIP = {"SPY": "78462F103", "QQQ": "46090E103", "RSP": "78355W106", "IWM": "464287655"}
 HORIZONS_Q = {"3m": 1, "6m": 2, "12m": 4, "24m": 8, "36m": 12}
+MAX_PLAUSIBLE_RETURN = 20.0
+COVERAGE: tuple[pd.DataFrame, pd.DataFrame] | None = None   # (holders, aggval) panels, set by load_panel
+MIN_HOLDERS, MIN_AGG_VALUE = 5, 5e7                           # coverage screen used by every event table
 
 def load_panel() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     px = pd.read_parquet(PRICES_DIR / "prices_13f_adj.parquet")
@@ -31,6 +34,8 @@ def load_panel() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     panel = px.pivot(index="period", columns="CUSIP", values="adj_price").sort_index()
     holders = raw.pivot(index="period", columns="CUSIP", values="n_holders").reindex(panel.index)
     aggval = raw.pivot(index="period", columns="CUSIP", values="agg_value").reindex(panel.index)
+    global COVERAGE
+    COVERAGE = (holders, aggval)
     return panel, holders, aggval
 
 def quarterly_factors() -> pd.DataFrame:
@@ -57,6 +62,12 @@ def forward_returns(events: pd.DataFrame, panel: pd.DataFrame, horizons=HORIZONS
     p0 = arr[row, col]
     ev["entry_price"] = p0
     ev = ev[np.isfinite(p0)].copy(); col = col[np.isfinite(p0)]; row = row[np.isfinite(p0)]; p0 = p0[np.isfinite(p0)]
+    # institutional coverage at entry (all 13F filers): the liquidity / price-reliability screen
+    if COVERAGE is not None:
+        hold, aggv = COVERAGE
+        hc = pd.Index(hold.columns).get_indexer(ev["CUSIP"]); ok = hc >= 0
+        ev["n_holders_entry"] = np.where(ok, hold.values[row, np.where(ok, hc, 0)], np.nan)
+        ev["agg_value_entry"] = np.where(ok, aggv.values[row, np.where(ok, hc, 0)], np.nan)
     bcol = {k: pd.Index(panel.columns).get_loc(c) for k, c in BENCH_CUSIP.items() if c in panel.columns}
     # last observed price index per column (for truncation / delisting handling)
     last_obs = pd.Series(np.where(np.isfinite(arr), np.arange(len(periods))[:, None], -1).max(axis=0), index=panel.columns)
@@ -72,6 +83,7 @@ def forward_returns(events: pd.DataFrame, panel: pd.DataFrame, horizons=HORIZONS
         if worst_case_delist:
             fwd = np.where(trunc & (lo < rr), -1.0, fwd)
         fwd = np.where(valid, fwd, np.nan)
+        fwd = np.where(fwd > MAX_PLAUSIBLE_RETURN, np.nan, fwd)      # a >20× move on quarterly implied prices is a data error (undetected reverse split / unit change), not a return
         ev[f"fwd_{name}"] = fwd; ev[f"trunc_{name}"] = trunc & valid
         for b, bc in bcol.items():
             ev[f"{b.lower()}_{name}"] = np.where(valid, arr[rr, bc] / arr[row, bc] - 1, np.nan)
@@ -79,6 +91,10 @@ def forward_returns(events: pd.DataFrame, panel: pd.DataFrame, horizons=HORIZONS
         ev[f"xq_{name}"] = ev[f"fwd_{name}"] - ev.get(f"qqq_{name}", np.nan)
         ev[f"xe_{name}"] = ev[f"fwd_{name}"] - ev.get(f"rsp_{name}", np.nan)
     return ev
+
+def covered(ev: pd.DataFrame) -> pd.DataFrame:
+    """Events whose security had ≥ MIN_HOLDERS 13F holders and ≥ MIN_AGG_VALUE of 13F-reported value at entry."""
+    return ev[(ev["n_holders_entry"] >= MIN_HOLDERS) & (ev["agg_value_entry"] >= MIN_AGG_VALUE)].copy()
 
 def cluster_tstat(x: pd.Series, cluster: pd.Series) -> tuple[float, float, int]:
     df = pd.DataFrame({"x": x, "c": cluster}).dropna()
@@ -109,8 +125,9 @@ def summarize(ev: pd.DataFrame, by: list[str] | None, horizons=HORIZONS_Q, clust
                     continue
                 m, t, nc = cluster_tstat(g[col], g[cluster_col])
                 lo, hi = block_bootstrap_ci(g[col], g[cluster_col]) if lab == "xs_spy" else (np.nan, np.nan)
+                x = g[col].dropna(); mw = x.clip(x.quantile(0.01), x.quantile(0.99)).mean() if len(x) > 20 else x.mean()
                 rows.append({**base, "horizon": name, "measure": lab, "n": int(g[col].notna().sum()), "n_periods": nc,
-                             "mean": m, "median": g[col].median(), "win_rate": (g[col] > 0).mean() if g[col].notna().any() else np.nan,
+                             "mean": m, "mean_winsor": mw, "median": g[col].median(), "win_rate": (g[col] > 0).mean() if g[col].notna().any() else np.nan,
                              "t_cluster": t, "ci_lo": lo, "ci_hi": hi, "p10": g[col].quantile(0.10), "p90": g[col].quantile(0.90),
                              "truncated_share": g[f"trunc_{name}"].mean() if f"trunc_{name}" in g else np.nan})
     return pd.DataFrame(rows)
