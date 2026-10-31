@@ -10,13 +10,14 @@ Availability = EDGAR acceptance timestamp when known (filing_acceptance), else t
 (events_stock.parquet) for the columns the strategies use: DERIVED_DIR/events_stock_B.parquet.
 """
 from __future__ import annotations
+import sys
 import numpy as np, pandas as pd
 from config import DERIVED_DIR
 
 POS = DERIVED_DIR / "filer_positions"
 
-def main() -> None:
-    ub = pd.read_parquet(DERIVED_DIR / "universe_b_static.parquet"); ub["cik"] = ub["cik"].astype(str).str.zfill(10)
+def main(variant: str = "static") -> None:
+    ub = pd.read_parquet(DERIVED_DIR / f"universe_b_{variant}.parquet"); ub["cik"] = ub["cik"].astype(str).str.zfill(10)
     ub = ub[ub["rank"] <= 100]
     acc = pd.read_parquet(DERIVED_DIR / "filing_acceptance.parquet")[["accession", "acceptance_ts_et"]].drop_duplicates("accession")
     splits = pd.read_parquet(DERIVED_DIR / "splits_13f.parquet")
@@ -61,8 +62,8 @@ def main() -> None:
     s["buyers_net"] = s["n_new"] + s["n_increased"] - s["n_reduced"] - s["n_exited"]
     s["consensus_buy"] = s["n_new"] + s["n_increased"]; s["ownership_accel"] = s["n_holders"] - s["n_holders_prev"]
     s["collective_distribution"] = (s["n_reduced"] + s["n_exited"] >= 3) & (s["buyers_net"] <= -2)
-    s.to_parquet(DERIVED_DIR / "events_stock_B.parquet", index=False)
+    s.to_parquet(DERIVED_DIR / ("events_stock_B.parquet" if variant == "static" else f"events_stock_B{variant}.parquet"), index=False)
     print(f"{len(s):,} stock-quarters; consensus ≥5: {(s.consensus_buy >= 5).sum():,}")
 
 if __name__ == "__main__":
-    main()
+    main(sys.argv[1] if len(sys.argv) > 1 else "static")

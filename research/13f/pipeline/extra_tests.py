@@ -81,6 +81,8 @@ def strategy_extra() -> pd.DataFrame:
     if (DERIVED_DIR / "events_stock_B.parquet").exists():
         esb = pd.read_parquet(DERIVED_DIR / "events_stock_B.parquet")
         tabs.append(run(["A", "E", "J"], tag="universeB", es_override=esb))
+    if (DERIVED_DIR / "events_stock_Bperf.parquet").exists():   # the performance-chasing variant (top 100 by trailing copy return)
+        tabs.append(run(["A", "E", "J"], tag="universeBperf", es_override=pd.read_parquet(DERIVED_DIR / "events_stock_Bperf.parquet")))
     t = pd.concat(tabs, ignore_index=True); t.to_csv(OUT / "strategy_sensitivities_extra.csv", index=False)
     return t
 
