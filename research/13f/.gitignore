@@ -1,0 +1,8 @@
+# large data lives in $HK13F_DATA (default research/13f/data/) — only small reference files are tracked
+data/sec/
+data/prices/
+data/factors/
+data/derived/
+data/security_master.parquet
+data/*.duckdb
+__pycache__/
