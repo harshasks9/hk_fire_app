@@ -129,6 +129,33 @@ def build_targets(name: str, em: pd.DataFrame, es: pd.DataFrame, panel: pd.DataF
         for E, g in es[es["consensus_buy"] >= 2].groupby("E"):
             top = g[~g["collective_distribution"]].nlargest(30, ["consensus_buy", "n_holders"]); sel[E] = {c: 1.0 for c in top["CUSIP"]}
         return sel, 2
+    # ---- Part 9 portfolio designs (pre-specified rules; evaluated like the strategies)
+    if name == "PA":   # long-term compounders: held ≥ 8 quarters by ≥ 3 managers, at least one of them top-5; ranked by long holders; hold 4q
+        lh = em[(em["status"] != "exited") & (em["quarters_held"] >= 8)]
+        agg = lh.groupby(["E", "CUSIP"]).agg(n_long=("manager_id", "nunique"), any_top5=("top5", "max"), wsum=("weight", "sum")).reset_index()
+        agg = agg[(agg["n_long"] >= 3) & agg["any_top5"]]
+        for E, g in agg.groupby("E"):
+            top = g.nlargest(30, ["n_long", "wsum"]); sel[E] = {c: 1.0 for c in top["CUSIP"]}
+        return sel, 4
+    if name == "PB":   # accumulation + momentum: ≥ 3 qualifying buyers and positive 12-1 momentum at the report date; hold 2q
+        mom = em.dropna(subset=["mom_12_1"]).groupby(["E", "CUSIP"])["mom_12_1"].first().rename("mom").reset_index()
+        e = es.merge(mom, on=["E", "CUSIP"], how="inner")
+        e = e[(e["consensus_buy"] >= 3) & (e["mom"] > 0)]
+        for E, g in e.groupby("E"):
+            top = g.nlargest(30, ["consensus_buy", "mom"]); sel[E] = {c: 1.0 for c in top["CUSIP"]}
+        return sel, 2
+    if name == "PC":   # thematic: themes in adoption stage 2–3 (early adoption / acceleration); own their most-held names; hold 2q
+        tsq = OUTPUT_DIR / "themes" / "theme_stage_quarter.csv"
+        if not tsq.exists():
+            return {}, 2
+        tq = pd.read_csv(tsq, parse_dates=["period", "available_ts"]); tq["E"] = exec_periods(tq["available_ts"], periods); tq = tq.dropna(subset=["E"])
+        memb = pd.read_parquet(DERIVED_DIR / "theme_membership.parquet")
+        for E, g in tq[tq["stage"].isin([2, 3])].groupby("E"):
+            names_ = memb[memb["theme"].isin(g["theme"])]["cusip"].unique()
+            held = es[(es["E"] == E) & es["CUSIP"].isin(names_)].nlargest(30, ["n_holders", "consensus_buy"])
+            if len(held):
+                sel[E] = {c: 1.0 for c in held["CUSIP"]}
+        return sel, 2
     if name == "PASSIVE":
         for E, g in es.groupby("E"):
             top = g.nlargest(200, "sum_value"); sel[E] = dict(zip(top["CUSIP"], top["sum_value"]))
