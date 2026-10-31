@@ -135,10 +135,39 @@ def build_targets(name: str, em: pd.DataFrame, es: pd.DataFrame, panel: pd.DataF
         return sel, 1
     raise ValueError(name)
 
-def run(names: list[str], cost_bps: float = 20.0, tag: str = "base", start: str | None = None, end: str | None = None) -> pd.DataFrame:
+def stock_events_from_manager(em: pd.DataFrame) -> pd.DataFrame:
+    """Rebuild the stock-level consensus table from a (possibly filtered) manager-event table — used for the
+    'drop the 10 most-followed managers' sensitivity. Mirrors signals.stock_events for the columns the strategies use."""
+    q = em.copy(); live = q[q["status"] != "exited"]
+    g = q.groupby(["CUSIP", "period"])
+    s = pd.DataFrame({
+        "available_ts": g["available_ts"].max(),
+        "n_holders": live.groupby(["CUSIP", "period"]).size(),
+        "n_new": g["status"].apply(lambda x: (x == "new").sum()), "n_increased": g["status"].apply(lambda x: (x == "increased").sum()),
+        "n_reduced": g["status"].apply(lambda x: (x == "reduced").sum()), "n_exited": g["status"].apply(lambda x: (x == "exited").sum()),
+        "sum_value": live.groupby(["CUSIP", "period"])["value"].sum(),
+    }).reset_index()
+    s[["n_holders", "sum_value"]] = s[["n_holders", "sum_value"]].fillna(0)
+    s = s.sort_values(["CUSIP", "period"]); s["q"] = s["period"].dt.year * 4 + (s["period"].dt.month - 1) // 3
+    prev = s[["CUSIP", "q", "n_holders"]].copy(); prev["q"] += 1
+    s = s.merge(prev.rename(columns={"n_holders": "n_holders_prev"}), on=["CUSIP", "q"], how="left"); s["n_holders_prev"] = s["n_holders_prev"].fillna(0)
+    s["buyers_net"] = s["n_new"] + s["n_increased"] - s["n_reduced"] - s["n_exited"]
+    s["consensus_buy"] = s["n_new"] + s["n_increased"]; s["ownership_accel"] = s["n_holders"] - s["n_holders_prev"]
+    s["collective_distribution"] = (s["n_reduced"] + s["n_exited"] >= 3) & (s["buyers_net"] <= -2)
+    return s
+
+def run(names: list[str], cost_bps: float = 20.0, tag: str = "base", start: str | None = None, end: str | None = None,
+        lag_q: int = 0, exclude_top_n: int = 0, exclude_managers: list[str] | None = None, es_override: pd.DataFrame | None = None,
+        em_override: pd.DataFrame | None = None) -> pd.DataFrame:
+    """Sensitivities: lag_q delays every execution by lag_q quarters; exclude_top_n drops the n largest names by
+    13F-held value at each rebalance; exclude_managers drops those manager_ids from the manager events and rebuilds
+    the stock-level consensus without them; es_override/em_override substitute other universes' event tables."""
     panel, holders, aggval = load_panel(); ffq = quarterly_factors()
-    em = pd.read_parquet(DERIVED_DIR / "events_manager_returns_all.parquet")
-    es = pd.read_parquet(DERIVED_DIR / "events_stock_returns_all.parquet")
+    em = pd.read_parquet(DERIVED_DIR / "events_manager_returns_all.parquet") if em_override is None else em_override
+    es = pd.read_parquet(DERIVED_DIR / "events_stock_returns_all.parquet") if es_override is None else es_override
+    if exclude_managers:
+        em = em[~em["manager_id"].isin(exclude_managers)]
+        es = stock_events_from_manager(em)
     themes_q = pd.read_parquet(DERIVED_DIR / "theme_quarter.parquet") if (DERIVED_DIR / "theme_quarter.parquet").exists() else None
     copy_ret = pd.read_parquet(DERIVED_DIR / "copy_returns_all_filers.parquet") if (DERIVED_DIR / "copy_returns_all_filers.parquet").exists() else None
     sector_hit = pd.read_parquet(DERIVED_DIR / "manager_sector_hitrate.parquet") if (DERIVED_DIR / "manager_sector_hitrate.parquet").exists() else None
@@ -148,10 +177,13 @@ def run(names: list[str], cost_bps: float = 20.0, tag: str = "base", start: str 
         sel, hq = build_targets(name, em, es, panel, themes_q, copy_ret, sector_hit)
         if not sel:
             rows.append({"strategy": name, "note": "no selections (missing input)"}); continue
+        if lag_q:
+            idx = panel.index
+            sel = {idx[idx.get_loc(E) + lag_q]: b for E, b in sel.items() if idx.get_loc(E) + lag_q < len(idx)}
         if start or end:
             sel = {E: b for E, b in sel.items() if (not start or E >= pd.Timestamp(start)) and (not end or E <= pd.Timestamp(end))}
         targets = hold(sel, hq, panel.index)
-        res = simulate_quarterly(targets, panel, aggval, cost_bps=cost_bps, max_weight=0.10, max_names=50 if name != "PASSIVE" else 200)
+        res = simulate_quarterly(targets, panel, aggval, cost_bps=cost_bps, max_weight=0.10, max_names=50 if name != "PASSIVE" else 200, exclude_top_n=exclude_top_n)
         nav = res["nav"]
         if end:
             nav = nav[nav.index <= pd.Timestamp(end) + pd.offsets.QuarterEnd(hq)]

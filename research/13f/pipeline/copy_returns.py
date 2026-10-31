@@ -41,7 +41,9 @@ def main() -> None:
         # weight by value, return over the quarter after entry (entry_pos → entry_pos+1)
         pos["ret"] = rets.values[np.clip(pos["entry_pos"].values + 1, 0, len(periods) - 1), pd.Index(panel.columns).get_indexer(pos["CUSIP"])] if True else np.nan
         pos.loc[pd.Index(panel.columns).get_indexer(pos["CUSIP"]) < 0, "ret"] = np.nan
-        pos = pos[pos["ret"].notna()]
+        pos = pos[pos["ret"].notna() & (pos["value"] > 0)]   # zero-value lines carry no weight (and would break the average)
+        if pos.empty:
+            continue
         g = pos.groupby(["cik", "entry_pos"])
         r = (g.apply(lambda d: np.average(d["ret"], weights=d["value"])).rename("copy_ret_q")).reset_index()
         r["n_names"] = g.size().values

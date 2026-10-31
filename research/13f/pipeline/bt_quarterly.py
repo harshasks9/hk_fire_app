@@ -163,7 +163,8 @@ def factor_alpha_q(port_q: pd.Series, ffq: pd.DataFrame, min_obs: int = 12) -> d
             "beta_rmw": beta[4], "beta_cma": beta[5], "beta_mom": beta[6], "r2": 1 - resid.var() / y.var() if y.var() > 0 else np.nan, "quarters": int(n)}
 
 def simulate_quarterly(targets: dict[pd.Timestamp, dict[str, float]], panel: pd.DataFrame, aggval: pd.DataFrame | None = None,
-                       cost_bps: float = 20.0, max_weight: float = 0.10, max_names: int = 50, min_agg_value: float = 2e8) -> dict:
+                       cost_bps: float = 20.0, max_weight: float = 0.10, max_names: int = 50, min_agg_value: float = 2e8,
+                       exclude_top_n: int = 0) -> dict:
     """Quarterly-rebalanced long-only portfolio. targets: {execution quarter end: {CUSIP: weight}}; weights are
     applied at that quarter end's price, drift until the next rebalance, costs charged on turnover.
     min_agg_value: liquidity proxy — total 13F-reported value of the name at the rebalance (≥ $200m default)."""
@@ -181,6 +182,8 @@ def simulate_quarterly(targets: dict[pd.Timestamp, dict[str, float]], panel: pd.
             tgt = tgt[panel.loc[t].reindex(tgt.index).notna()]
             if aggval is not None and min_agg_value:
                 tgt = tgt[aggval.loc[t].reindex(tgt.index).fillna(0) >= min_agg_value]
+            if aggval is not None and exclude_top_n:   # sensitivity: drop the n largest names by 13F-held value at this rebalance
+                tgt = tgt[~tgt.index.isin(aggval.loc[t].nlargest(exclude_top_n).index)]
             tgt = tgt.sort_values(ascending=False).head(max_names)
             if len(tgt):
                 tgt = tgt / tgt.sum(); tgt = tgt.clip(upper=max_weight); tgt = tgt / tgt.sum()
