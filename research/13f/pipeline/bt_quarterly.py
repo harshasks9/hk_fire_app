@@ -118,20 +118,18 @@ def summarize(ev: pd.DataFrame, by: list[str] | None, horizons=HORIZONS_Q, clust
 def calendar_time_returns(ev: pd.DataFrame, panel: pd.DataFrame, hold_q: int) -> pd.Series:
     """Equal-weight calendar-time quarterly portfolio: each event held hold_q quarters from entry; weights reset
     each quarter across active events (the standard Jaffe–Mandelker construction). Returns a quarterly series."""
-    rets = panel.pct_change()
-    periods = panel.index
-    acc = pd.Series(0.0, index=periods); cnt = pd.Series(0.0, index=periods)
-    col = pd.Index(panel.columns).get_indexer(ev["CUSIP"]); row = ev["entry_pos"].values
-    r = rets.values
-    for i in range(len(ev)):
-        for k in range(1, hold_q + 1):
-            t = row[i] + k
-            if t >= len(periods):
-                break
-            v = r[t, col[i]]
-            if np.isfinite(v):
-                acc.iloc[t] += v; cnt.iloc[t] += 1
-    return (acc / cnt.replace(0, np.nan)).dropna()
+    rets = panel.pct_change().values
+    n_periods = len(panel.index)
+    col = pd.Index(panel.columns).get_indexer(ev["CUSIP"]).astype(int); row = ev["entry_pos"].values.astype(int)
+    acc = np.zeros(n_periods); cnt = np.zeros(n_periods)
+    for k in range(1, hold_q + 1):
+        t = row + k
+        ok = t < n_periods
+        v = rets[t[ok], col[ok]]
+        fin = np.isfinite(v)
+        np.add.at(acc, t[ok][fin], v[fin]); np.add.at(cnt, t[ok][fin], 1.0)
+    out = pd.Series(np.where(cnt > 0, acc / np.where(cnt > 0, cnt, 1), np.nan), index=panel.index)
+    return out.dropna()
 
 def factor_alpha_q(port_q: pd.Series, ffq: pd.DataFrame, min_obs: int = 12) -> dict:
     x = ffq.reindex(port_q.index).dropna(); y = port_q.reindex(x.index) - x["RF"]
