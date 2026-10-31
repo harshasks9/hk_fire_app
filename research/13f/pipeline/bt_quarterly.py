@@ -34,6 +34,10 @@ def load_panel() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     panel = px.pivot(index="period", columns="CUSIP", values="adj_price").sort_index()
     holders = raw.pivot(index="period", columns="CUSIP", values="n_holders").reindex(panel.index)
     aggval = raw.pivot(index="period", columns="CUSIP", values="agg_value").reindex(panel.index)
+    # Delisting rule: a quarter-end "price" implied by fewer than MIN_HOLDERS filers is not a market price — after an
+    # acquisition or delisting one or two stale lines keep reporting the CUSIP (audit note 13). Such quarters are
+    # blanked, so forward returns truncate at the last covered price and strategies carry the name at that price.
+    panel = panel.where(holders.reindex(columns=panel.columns).fillna(0) >= MIN_HOLDERS)
     global COVERAGE
     COVERAGE = (holders, aggval)
     return panel, holders, aggval
