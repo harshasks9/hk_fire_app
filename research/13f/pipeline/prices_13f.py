@@ -51,13 +51,10 @@ def main() -> None:
         # prefer large positions (small rounding error); fall back to all when a name has few large holders
         big = p[p["value"] >= 2e5]
         g_big = big.groupby("CUSIP")
-        rows = []
-        for cusip, d in g_big:
-            if len(d) >= 3:
-                rows.append((cusip, wmedian(d["px"].values, d["value"].values), len(d)))
-        px_big = pd.DataFrame(rows, columns=["CUSIP", "price", "n_used"]).set_index("CUSIP")
+        px_big = g_big["px"].agg(price="median", n_used="size")
+        px_big = px_big[px_big["n_used"] >= 3]
         g_all = p.groupby("CUSIP")
-        px_all = g_all.apply(lambda d: wmedian(d["px"].values, d["value"].values)).rename("price_all")
+        px_all = g_all["px"].median().rename("price_all")
         agg = pd.DataFrame({"n_holders": g_all.size(), "agg_value": g_all["value"].sum(), "price_all": px_all}).join(px_big, how="left")
         agg["price"] = agg["price"].fillna(agg["price_all"]); agg["n_used"] = agg["n_used"].fillna(agg["n_holders"])
         # drop names whose holders disagree wildly (bad units / bad CUSIPs): interquartile ratio > 3
@@ -94,20 +91,26 @@ def main() -> None:
         print(qe.date(), len(agg), flush=True)
     px = pd.concat(out, ignore_index=True)
     px = px[px["dispersion"].fillna(1) < 3]
-    px.to_parquet(PRICES_DIR / "prices_13f.parquet", index=False)
     sp = pd.DataFrame(splits)
     sp.to_parquet(DERIVED_DIR / "splits_13f.parquet", index=False)
-    # split-adjust to the latest share basis: adj_price(t) = price(t) / Π_{splits after t} factor
-    px = px.sort_values(["CUSIP", "period"])
-    cum = sp.sort_values(["CUSIP", "period_to"]).groupby("CUSIP").apply(lambda d: d.set_index("period_to")["factor"]).rename("f")
-    adj = []
-    for cusip, d in px.groupby("CUSIP"):
-        fac = sp[sp["CUSIP"] == cusip] if len(sp) else sp
-        a = d["price"].values.copy()
-        for r in fac.itertuples():
-            a[d["period"].values < np.datetime64(r.period_to)] /= r.factor
-        adj.append(pd.DataFrame({"CUSIP": cusip, "period": d["period"].values, "adj_price": a}))
-    pd.concat(adj, ignore_index=True).to_parquet(PRICES_DIR / "prices_13f_adj.parquet", index=False)
+    # split-adjust to the latest share basis: adj_price(t) = price(t) / Π_{splits with period_to > t} factor
+    px = px.sort_values(["CUSIP", "period"]).reset_index(drop=True)
+    px["adj_price"] = px["price"]
+    if len(sp):
+        for cusip, d in sp.groupby("CUSIP"):
+            mask = px["CUSIP"] == cusip
+            for r in d.itertuples():
+                px.loc[mask & (px["period"] < r.period_to), "adj_price"] /= r.factor
+    # isolated spikes (bad units in a thinly-held quarter): |log change| > 1.6 both against the previous and the next
+    # observation, with no split recorded — set to NaN rather than let a 5× phantom return through
+    lr = np.log(px["adj_price"])
+    g = px.groupby("CUSIP")["adj_price"]
+    d_prev = (lr - np.log(g.shift(1))).abs(); d_next = (np.log(g.shift(-1)) - lr).abs()
+    spike = (d_prev > 1.6) & (d_next > 1.6)
+    px.loc[spike, "adj_price"] = np.nan
+    px["spike"] = spike
+    px.to_parquet(PRICES_DIR / "prices_13f.parquet", index=False)
+    px[["CUSIP", "period", "adj_price"]].to_parquet(PRICES_DIR / "prices_13f_adj.parquet", index=False)
     print(f"{len(px):,} CUSIP-quarters, {px.CUSIP.nunique():,} CUSIPs, {len(sp)} splits detected")
     for c, name in [("78462F103", "SPY"), ("46090E103", "QQQ"), ("037833100", "AAPL"), ("67066G104", "NVDA")]:
         s = px[px.CUSIP == c].set_index("period")["price"]
