@@ -4317,7 +4317,8 @@
     "source": "src:gretil",
     "locator": "ViP 2.7.17",
     "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+    "quote": "bhuvarlokas tu so 'py ukto dvitīyo munisattama"
    },
    {
     "source": "src:kirfel-1920"
@@ -4343,9 +4344,10 @@
   "sources": [
    {
     "source": "src:gretil",
-    "locator": "ViP 2.7.18–19",
+    "locator": "ViP 2.7.18",
     "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+    "quote": "dhruvasūryāntaraṃ yat tu niyutāni caturdaśa / svarlokaḥ so 'pi gadito"
    },
    {
     "source": "src:kirfel-1920"
@@ -4390,13 +4392,14 @@
   "iast": "Jana",
   "aliases": [],
   "subtype": "cosmological place",
-  "summary": "One of the seven upper worlds of Purāṇic cosmology: the world above Maharloka, of Brahmā's mind-born sons.",
+  "summary": "One of the seven upper worlds of Purāṇic cosmology: the world above Maharloka, of Brahmā's mind-born sons (Sanandana and others).",
   "sources": [
    {
     "source": "src:gretil",
     "locator": "ViP 2.7.13",
     "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+    "quote": "dve koṭī tu jano loko yatra te brahmaṇaḥ sutāḥ"
    },
    {
     "source": "src:kirfel-1920"
@@ -4768,7 +4771,7 @@
    },
    {
     "source": "src:gretil",
-    "locator": "BhP 5.26.7, 5.26.10",
+    "locator": "BhP 5.26.6, 5.26.10",
     "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
    },
@@ -4798,7 +4801,7 @@
    },
    {
     "source": "src:gretil",
-    "locator": "BhP 5.26.7, 5.26.15",
+    "locator": "BhP 5.26.6",
     "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
    },
@@ -4828,7 +4831,7 @@
    },
    {
     "source": "src:gretil",
-    "locator": "BhP 5.26.7, 5.26.18",
+    "locator": "BhP 5.26.6, 5.26.17",
     "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
    },
@@ -4858,7 +4861,7 @@
    },
    {
     "source": "src:gretil",
-    "locator": "BhP 5.26.7, 5.26.22",
+    "locator": "BhP 5.26.6, 5.26.21",
     "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
    },
@@ -4882,7 +4885,7 @@
   "sources": [
    {
     "source": "src:gretil",
-    "locator": "BhP 5.26.7, 5.26.13",
+    "locator": "BhP 5.26.6, 5.26.12",
     "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
    },
@@ -4906,7 +4909,7 @@
   "sources": [
    {
     "source": "src:gretil",
-    "locator": "BhP 5.26.7–8",
+    "locator": "BhP 5.26.6–7",
     "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt",
     "quote": "tāmisro 'ndhatāmisro rauravo mahārauravaḥ kumbhīpākaḥ"
@@ -4931,7 +4934,7 @@
   "sources": [
    {
     "source": "src:gretil",
-    "locator": "BhP 5.26.7, 5.26.9",
+    "locator": "BhP 5.26.6, 5.26.8",
     "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
    },
@@ -5056,6 +5059,478 @@
   "status": "verified-online",
   "agent": "purana",
   "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:kalki-purana",
+  "type": "text",
+  "name": "Kalki Purāṇa",
+  "iast": "Kalkipurāṇa",
+  "devanagari": "कल्किपुराणम्",
+  "subtype": "Upapurāṇa",
+  "summary": "A late Upapurāṇa narrating the future birth of Kalki in the village of Śambhala to Viṣṇuyaśas and Sumati, his education by Paraśurāma, his marriage and his destruction of the Kali age; probably composed in Bengal in the mid-second millennium CE.",
+  "details": "Rocher (1986, p. 183) places it among the late Upapurāṇas, likely of Bengal origin. It expands the brief Kalki prophecies of the Viṣṇu (4.24) and Bhāgavata (12.2) into a full narrative.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "composition",
+    "label": "c. 1500–1700 CE",
+    "certainty": "estimated",
+    "basis": "content and manuscript evidence",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "locator": "citing Doniger",
+      "url": "https://en.wikipedia.org/wiki/Kalki_Purana"
+     }
+    ],
+    "start": 1500,
+    "end": 1700,
+    "view": "Doniger (via Wikipedia pointer)"
+   },
+   {
+    "system": "material",
+    "event": "earliest-manuscript",
+    "label": "18th c. CE (manuscript colophons)",
+    "certainty": "estimated",
+    "basis": "manuscript colophons",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "locator": "article (pointer only)",
+      "url": "https://en.wikipedia.org/wiki/Kalki_Purana"
+     }
+    ],
+    "start": 1700,
+    "end": 1800,
+    "view": "terminus ante quem (reference pointer)"
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "Kalki P 1.2 (prathama aṃśa, adhy. 2)",
+    "edition": "Kalki Purāṇa; Sanskrit Wikisource e-text (vulgate)",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%95%E0%A4%B2%E0%A5%8D%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A8",
+    "quote": "śambhale viṣṇuyaśaso gṛhe prādurbhavāmy aham"
+   },
+   {
+    "source": "src:rocher-1986",
+    "locator": "p. 183"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "article (pointer only)",
+    "url": "https://en.wikipedia.org/wiki/Kalki_Purana"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:saura-purana",
+  "type": "text",
+  "name": "Saura Purāṇa",
+  "iast": "Saurapurāṇa",
+  "subtype": "Upapurāṇa",
+  "traditions": [
+   "trad:shaiva"
+  ],
+  "summary": "A Śaiva Upapurāṇa despite its name ('of the Sun'), spoken by Sūrya; it praises Vārāṇasī and its liṅgas and includes Purūravas and Urvaśī (ch. 31). Hazra dated it between c. 950 and 1050 CE in north-western India.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "composition",
+    "label": "c. 950–1050 CE",
+    "certainty": "estimated",
+    "basis": "internal evidence (sectarian content, borrowings)",
+    "sources": [
+     {
+      "source": "src:hazra-upapuranas",
+      "locator": "vol. I"
+     },
+     {
+      "source": "src:wikipedia",
+      "locator": "article (pointer only)",
+      "url": "https://en.wikipedia.org/wiki/Saura_Purana"
+     }
+    ],
+    "start": 950,
+    "end": 1050,
+    "view": "Hazra"
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:hazra-upapuranas",
+    "locator": "vol. I (Saura and Vaiṣṇava Upapurāṇas)"
+   },
+   {
+    "source": "src:rocher-1986",
+    "locator": "pp. 220–221"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "article (pointer only)",
+    "url": "https://en.wikipedia.org/wiki/Saura_Purana"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:ekamra-purana",
+  "type": "text",
+  "name": "Ekāmra Purāṇa",
+  "iast": "Ekāmrapurāṇa",
+  "subtype": "Upapurāṇa / sthala-purāṇa",
+  "summary": "Odia-region Upapurāṇa (a sthala-purāṇa) glorifying Ekāmra-kṣetra — Bhubaneswar — and its Śiva as Kṛttivāsa (the Liṅgarāja), with the Bindusāgara tank and the surrounding shrines.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "composition",
+    "label": "c. 11th–13th c. CE (later than the Liṅgarāja temple's foundation)",
+    "certainty": "disputed",
+    "basis": "dependence on the developed temple complex; not checked against a scholarly dating",
+    "sources": [
+     {
+      "source": "src:rocher-1986"
+     }
+    ],
+    "start": 1000,
+    "end": 1300,
+    "view": "recall; to be checked against Hazra vol. II and Rocher"
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:hazra-upapuranas",
+    "locator": "vol. II"
+   },
+   {
+    "source": "src:rocher-1986"
+   },
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "purana",
+  "openQuestions": [
+   "Hazra's and Rocher's datings of the Ekāmra Purāṇa were not consulted directly; the range given is a placeholder awaiting that check."
+  ],
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:kashi-khanda",
+  "type": "text",
+  "name": "Kāśīkhaṇḍa (Skanda Purāṇa 4)",
+  "iast": "Kāśīkhaṇḍa",
+  "devanagari": "काशीखण्ड",
+  "subtype": "khaṇḍa / māhātmya",
+  "summary": "The fourth khaṇḍa of the printed Skanda Purāṇa, a hundred-chapter māhātmya of Kāśī (Vārāṇasī) as Śiva's royal city where death brings liberation, cataloguing its liṅgas, tīrthas and guardian deities; it reached its present form around the mid-13th century.",
+  "details": "Eck (1982) uses the Kāśīkhaṇḍa as the principal Sanskrit guide to Banaras' sacred geography. The Wikisource index lists 100 adhyāyas; the opening verses salute Gaṇeśa and Kāśī, 'the royal city of the enemy of Tripura' (4.1.2).",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "redaction (present form)",
+    "label": "c. mid-13th c. CE",
+    "certainty": "estimated",
+    "basis": "references and dependence on the medieval sacred topography of Vārāṇasī",
+    "sources": [
+     {
+      "source": "src:parry-1994",
+      "locator": "p. 272"
+     },
+     {
+      "source": "src:wikipedia",
+      "locator": "article (pointer only)",
+      "url": "https://en.wikipedia.org/wiki/Skanda_Purana"
+     }
+    ],
+    "start": 1200,
+    "end": 1300,
+    "view": "Parry 1994 (via Wikipedia pointer)"
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "SkP 4.1.2",
+    "edition": "Skanda Purāṇa, Kāśīkhaṇḍa; Sanskrit Wikisource e-text (vulgate)",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AA_%28%E0%A4%95%E0%A4%BE%E0%A4%B6%E0%A5%80%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A6%E0%A5%A6%E0%A5%A7",
+    "quote": "sā kāśī tripurārirājanagarī pāyādapāyājjagat"
+   },
+   {
+    "source": "src:sa-wikisource",
+    "locator": "SkP 4 (index: 100 adhyāyas)",
+    "edition": "Skanda Purāṇa; Sanskrit Wikisource e-text (vulgate)",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AA_%28%E0%A4%95%E0%A4%BE%E0%A4%B6%E0%A5%80%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29"
+   },
+   {
+    "source": "src:eck-1982"
+   },
+   {
+    "source": "src:parry-1994",
+    "locator": "p. 272"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "article (pointer only)",
+    "url": "https://en.wikipedia.org/wiki/Skanda_Purana"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:reva-khanda-vayu",
+  "type": "text",
+  "name": "Revākhaṇḍa (printed as Skanda Purāṇa 5.3; assigned to the Vāyu Purāṇa)",
+  "iast": "Revākhaṇḍa",
+  "subtype": "khaṇḍa / māhātmya",
+  "summary": "The 232-chapter Revākhaṇḍa, a māhātmya of the Narmadā (Revā) and its tīrthas from Amarakaṇṭaka and Oṃkāra to the sea, printed since 1910 as Skanda Purāṇa 5.3; its GRETIL editor, J. Neuss, argues from the manuscripts that it originally belonged to the Vāyu Purāṇa.",
+  "details": "The GRETIL e-text (Neuss, proof-read by O. Hellwig) follows the Veṅkaṭeśvara edition (1910) but notes that 'all available manuscriptual evidence' assigns it to the Vāyupurāṇa. It describes the Narmadā pilgrimage (parikramā), e.g. Oṃkāra and Amareśvara at Amarakaṇṭaka (RKV 21.24–26; 230.15).",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "RKV 1–232 (GRETIL header note by J. Neuss)",
+    "edition": "Revākhaṇḍa printed as SkP 5.3 (Veṅkaṭeśvara 1910); GRETIL e-text by J. Neuss, who assigns it to the Vāyupurāṇa",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_revAkhANDa-of-the-vAyupurANa-rkv.txt"
+   },
+   {
+    "source": "src:neuss-2012"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "The attribution concerns transmission; the text's date is not established here.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:reva-khanda-skanda",
+  "type": "text",
+  "name": "Revākhaṇḍa of the Skanda Purāṇa (116 chapters)",
+  "iast": "Revākhaṇḍa",
+  "subtype": "khaṇḍa / māhātmya",
+  "summary": "A shorter, 116-chapter Revākhaṇḍa of the Narmadā that its editor regards as the genuine Skanda Purāṇa Revākhaṇḍa, absent from the printed Skanda Purāṇa; it gives special place to Oṃkāra (e.g. RKS 47, 'oṃkāramahimānuvarṇana').",
+  "details": "Edited from the Hoshangabad edition of Oṅkārānanda Giri (Bṛhat Śrīnarmadāpurāṇam Revākhaṇḍam, 1994).",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "RKS 1–116 (GRETIL header note by J. Neuss)",
+    "edition": "Skandapurāṇa Revākhaṇḍa (ed. Oṅkārānanda Giri, Hoshangabad 1994); GRETIL e-text by J. Neuss",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_skandapurANa-revAkhaNDa-rks.txt",
+    "quote": "iti śrīskandapurāṇe revākhaṇḍe oṃkāramahimānuvarṇano nāma saptacatvāriṃśo 'dhyāyaḥ"
+   },
+   {
+    "source": "src:neuss-2012"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "claim:revakhanda-vayu",
+  "type": "claim",
+  "name": "The 232-chapter Revākhaṇḍa printed as Skanda Purāṇa 5.3 belongs to the Vāyu Purāṇa",
+  "summary": "According to its GRETIL editor Jürgen Neuss, all available manuscripts assign the long Revākhaṇḍa printed by the Veṅkaṭeśvara Press (1910) as Skanda Purāṇa 5.3 to the Vāyu Purāṇa; a distinct 116-chapter Revākhaṇḍa is the Skanda's own.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "GRETIL header (contributor's note)",
+    "edition": "Revākhaṇḍa printed as SkP 5.3 (Veṅkaṭeśvara 1910); GRETIL e-text by J. Neuss, who assigns it to the Vāyupurāṇa",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_revAkhANDa-of-the-vAyupurANa-rkv.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "GRETIL header (contributor's note)",
+    "edition": "Skandapurāṇa Revākhaṇḍa (ed. Oṅkārānanda Giri, Hoshangabad 1994); GRETIL e-text by J. Neuss",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_skandapurANa-revAkhaNDa-rks.txt"
+   },
+   {
+    "source": "src:neuss-2012"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "Reported on the editor's authority; the manuscript survey itself was not re-examined.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:venkatachala-mahatmya",
+  "type": "text",
+  "name": "Veṅkaṭācala Māhātmya (Skanda Purāṇa 2.1)",
+  "iast": "Veṅkaṭācalamāhātmya",
+  "subtype": "māhātmya / sthala-purāṇa",
+  "summary": "The first section of the Vaiṣṇavakhaṇḍa of the printed Skanda Purāṇa, forty chapters glorifying the Veṅkaṭa hill (Tirumala) and its lord Śrīnivāsa/Veṅkaṭeśvara, opening with Nārada's vision of Yajñavarāha on Meru.",
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "SkP 2.1 (index: 40 adhyāyas)",
+    "edition": "Skanda Purāṇa, Vaiṣṇavakhaṇḍa; Sanskrit Wikisource e-text (vulgate)",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A8_%28%E0%A4%B5%E0%A5%88%E0%A4%B7%E0%A5%8D%E0%A4%A3%E0%A4%B5%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%B5%E0%A5%87%E0%A4%99%E0%A5%8D%E0%A4%95%E0%A4%9F%E0%A4%BE%E0%A4%9A%E0%A4%B2%E0%A4%AE%E0%A4%BE%E0%A4%B9%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A5%8D%E0%A4%AF%E0%A4%AE%E0%A5%8D"
+   },
+   {
+    "source": "src:sa-wikisource",
+    "locator": "SkP 2.1.1 colophon",
+    "edition": "Skanda Purāṇa; Sanskrit Wikisource e-text (vulgate)",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A8_%28%E0%A4%B5%E0%A5%88%E0%A4%B7%E0%A5%8D%E0%A4%A3%E0%A4%B5%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%B5%E0%A5%87%E0%A4%99%E0%A5%8D%E0%A4%95%E0%A4%9F%E0%A4%BE%E0%A4%9A%E0%A4%B2%E0%A4%AE%E0%A4%BE%E0%A4%B9%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A5%8D%E0%A4%AF%E0%A4%AE%E0%A5%8D/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A6%E0%A5%A7",
+    "quote": "dvitīye vaiṣṇavakhaṇḍe śrīveṃkaṭācalamāhātmye dharaṇīvarāhasaṃvāde"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "openQuestions": [
+   "No scholarly date was located; the Tirumala temple's own inscriptions (from the 9th–10th c.) and the māhātmya's relation to the Tamil and Telugu temple traditions need comparison."
+  ],
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:purushottama-kshetra-mahatmya",
+  "type": "text",
+  "name": "Puruṣottamakṣetra (Jagannātha) Māhātmya (Skanda Purāṇa 2.2)",
+  "iast": "Puruṣottamakṣetra",
+  "subtype": "māhātmya",
+  "summary": "Part of the printed Skanda Purāṇa: the second section of the Vaiṣṇavakhaṇḍa, glorifying Puruṣottama-kṣetra (Puri) and Jagannātha, including the story of King Indradyumna and the wooden image.",
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "SkP 2 (index: puruṣottamajagannāthamāhātmyam)",
+    "edition": "Skanda Purāṇa, Vaiṣṇavakhaṇḍa; Sanskrit Wikisource e-text (vulgate)",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A8_%28%E0%A4%B5%E0%A5%88%E0%A4%B7%E0%A5%8D%E0%A4%A3%E0%A4%B5%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:badarikashrama-mahatmya",
+  "type": "text",
+  "name": "Badarikāśrama Māhātmya (Skanda Purāṇa 2.3)",
+  "iast": "Badarikāśrama Māhātmya",
+  "subtype": "māhātmya",
+  "summary": "Part of the printed Skanda Purāṇa: the third section of the Vaiṣṇavakhaṇḍa, glorifying Badarī, the hermitage of Nara and Nārāyaṇa in the Himālaya.",
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "SkP 2 (index: badarikāśramamāhātmyam)",
+    "edition": "Skanda Purāṇa, Vaiṣṇavakhaṇḍa; Sanskrit Wikisource e-text (vulgate)",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A8_%28%E0%A4%B5%E0%A5%88%E0%A4%B7%E0%A5%8D%E0%A4%A3%E0%A4%B5%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:ayodhya-mahatmya",
+  "type": "text",
+  "name": "Ayodhyā Māhātmya (Skanda Purāṇa 2.8)",
+  "iast": "Ayodhyā Māhātmya",
+  "subtype": "māhātmya",
+  "summary": "Part of the printed Skanda Purāṇa: the eighth section of the Vaiṣṇavakhaṇḍa, a guide to the tīrthas of Ayodhyā, critically edited and dated by Hans Bakker.",
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "SkP 2 (index: ayodhyāmāhātmyam)",
+    "edition": "Skanda Purāṇa, Vaiṣṇavakhaṇḍa; Sanskrit Wikisource e-text (vulgate)",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A8_%28%E0%A4%B5%E0%A5%88%E0%A4%B7%E0%A5%8D%E0%A4%A3%E0%A4%B5%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29"
+   },
+   {
+    "source": "src:bakker-1986"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "psg:matsya-103-112",
+  "type": "passage",
+  "name": "Matsya Purāṇa 103–112 (Prayāga-māhātmya)",
+  "iast": "Prayāgamāhātmya",
+  "aliases": [
+   "Prayāga-māhātmya (Matsya)"
+  ],
+  "subtype": "māhātmya",
+  "summary": "Ten chapters of the Matsya Purāṇa in which Mārkaṇḍeya tells Yudhiṣṭhira the glory of Prayāga, the confluence of Gaṅgā and Yamunā: bathing, dying and giving there bring liberation.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 103.1–112.21",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt",
+    "quote": "ataḥ paraṃ pravakṣyāmi prayāgasyopavarṇanam"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:gaya-mahatmya",
+  "type": "text",
+  "name": "Gayā Māhātmya (Vāyu Purāṇa 105–112)",
+  "iast": "Gayāmāhātmya",
+  "subtype": "māhātmya",
+  "summary": "Māhātmya of Gayā, the pilgrimage centre for śrāddha offerings to the ancestors: the asura Gaya, on whose body the gods' sacrifice is performed, and Viṣṇu's footprint (Viṣṇupada) that pins him down. Transmitted as the last chapters of the Vāyu Purāṇa; critically edited by Claude Jacques (1962).",
+  "sources": [
+   {
+    "source": "src:jacques-1962"
+   },
+   {
+    "source": "src:kane-hod",
+    "locator": "vol. IV (Gayā)"
+   },
+   {
+    "source": "src:rocher-1986"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "purana",
+  "openQuestions": [
+   "Jacques' and Kane's datings of the Gayā-māhātmya were not consulted directly; no date is asserted here."
+  ],
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:vamana-saromahatmya",
+  "type": "text",
+  "name": "Saromāhātmya of the Vāmana Purāṇa (Kurukṣetra-māhātmya)",
+  "iast": "Saromāhātmya",
+  "subtype": "māhātmya",
+  "summary": "A māhātmya of the lake (saras) and tīrthas of Kurukṣetra, inserted after chapter 23 of the Vāmana Purāṇa in A. S. Gupta's edition: Kuru's ploughing, the Sarasvatī, and Śiva as Sthāṇu at Sthāṇvīśvara (Thanesar).",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "VāmP Saromāhātmya 1.12–14; 23.15",
+    "edition": "Vāmana Purāṇa Saromāhātmya (A. S. Gupta ed. 1967, inserted after adhy. 23); GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_vAmanapurANasaromAhAtmya.txt",
+    "quote": "karuṇā ca yataḥ kṛṣṭaṃ kurukṣetraṃ tataḥ smṛtam"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
   "lastVerified": "2026-11-08"
  }
 ]

@@ -2656,58 +2656,6 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "person:vallabha",
-  "type": "person",
-  "name": "Vallabha (Vallabhācārya)",
-  "iast": "Vallabhācārya",
-  "aliases": [
-   "Vallabhacharya",
-   "Vallabha Dīkṣita",
-   "Mahāprabhujī"
-  ],
-  "traditions": [
-   "trad:pushtimarg"
-  ],
-  "roles": [
-   "ācārya",
-   "founder"
-  ],
-  "summary": "Telugu brāhmaṇ teacher (1478–1530) who founded the Puṣṭimārga (“path of grace”) devoted to the child Kṛṣṇa as Śrīnāthjī of Govardhana, and taught Śuddhādvaita (“pure non-dualism”) in his commentaries on the Brahmasūtra (Aṇubhāṣya) and the Bhāgavata (Subodhinī).",
-  "dates": [
-   {
-    "system": "scholarly-textual",
-    "event": "life",
-    "start": 1478,
-    "end": 1530,
-    "label": "1478–1530",
-    "certainty": "estimated",
-    "basis": "sect chronology",
-    "sources": [
-     {
-      "source": "src:wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Vallabha"
-     },
-     {
-      "source": "src:barz-1976"
-     }
-    ]
-   }
-  ],
-  "sources": [
-   {
-    "source": "src:barz-1976"
-   },
-   {
-    "source": "src:wikipedia",
-    "url": "https://en.wikipedia.org/wiki/Vallabha"
-   }
-  ],
-  "confidence": "high",
-  "status": "reference-checked",
-  "agent": "regional",
-  "lastVerified": "2026-11-08"
- },
- {
   "id": "person:vitthalanatha",
   "type": "person",
   "name": "Viṭṭhalnāth (Gusāiṃjī)",
@@ -5056,55 +5004,6 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Haridasa"
-   }
-  ],
-  "confidence": "high",
-  "status": "reference-checked",
-  "agent": "regional",
-  "lastVerified": "2026-11-08"
- },
- {
-  "id": "person:vyasatirtha",
-  "type": "person",
-  "name": "Vyāsatīrtha",
-  "iast": "Vyāsatīrtha",
-  "aliases": [
-   "Vyasaraja",
-   "Chandrikacharya"
-  ],
-  "traditions": [
-   "trad:haridasa"
-  ],
-  "roles": [
-   "philosopher",
-   "pontiff",
-   "poet"
-  ],
-  "summary": "Mādhva (Dvaita) philosopher and pontiff (1447–1539), rājaguru of the Vijayanagara court under Kṛṣṇadevarāya, author of the polemical Nyāyāmṛta, Tarkatāṇḍava and Tātparyacandrikā, and patron and teacher of the Haridāsas Purandaradāsa and Kanakadāsa.",
-  "dates": [
-   {
-    "system": "scholarly-textual",
-    "event": "life",
-    "start": 1447,
-    "end": 1539,
-    "label": "1447–1539",
-    "certainty": "estimated",
-    "basis": "Mādhva records",
-    "sources": [
-     {
-      "source": "src:wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Vyasatirtha"
-     }
-    ]
-   }
-  ],
-  "sources": [
-   {
-    "source": "src:sharma-bnk-1981"
-   },
-   {
-    "source": "src:wikipedia",
-    "url": "https://en.wikipedia.org/wiki/Vyasatirtha"
    }
   ],
   "confidence": "high",

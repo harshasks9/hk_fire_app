@@ -682,6 +682,35 @@
   "agent": "vedic"
  },
  {
+  "id": "src:gretil-natyashastra",
+  "type": "primary-text",
+  "title": "Bharata: Nāṭyaśāstra (GRETIL e-text)",
+  "author": "ascribed to Bharata",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bharata-nATyazAstra.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text: input P. Dadegaonkar, S. Krishnapur, H. Bakshi; source edition not stated; bhn_chapter.verse numbering.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:ghosh-1950",
+  "type": "translation",
+  "title": "The Nāṭyaśāstra: A Treatise on Hindu Dramaturgy and Histrionics Ascribed to Bharata-Muni, vol. I (chs. 1–27; vol. II, 1961)",
+  "author": "Manomohan Ghosh",
+  "year": "1950",
+  "publisher": "Royal Asiatic Society of Bengal",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:pollock-2016",
+  "type": "translation",
+  "title": "A Rasa Reader: Classical Indian Aesthetics",
+  "author": "Sheldon Pollock",
+  "year": "2016",
+  "publisher": "Columbia University Press",
+  "agent": "vedic"
+ },
+ {
   "id": "src:larson-bhattacharya-1987",
   "type": "scholarly-book",
   "title": "Sāṃkhya: A Dualist Tradition in Indian Philosophy (Encyclopedia of Indian Philosophies, vol. IV)",

@@ -949,7 +949,7 @@
  },
  {
   "id": "vedic:r2-44",
-  "s": "person:jiva-gosvami",
+  "s": "person:jiva-goswami",
   "p": "CENTRAL_TO",
   "o": "trad:achintya-bhedabheda",
   "qualifiers": {
@@ -1480,7 +1480,7 @@
  },
  {
   "id": "vedic:r2-77",
-  "s": "text:shat-sandarbha",
+  "s": "text:sat-sandarbha",
   "p": "CENTRAL_TO",
   "o": "trad:achintya-bhedabheda",
   "evidenceClass": 5,
@@ -1541,21 +1541,6 @@
  },
  {
   "id": "vedic:r2-81",
-  "s": "text:bhaktirasamritasindhu",
-  "p": "CENTRAL_TO",
-  "o": "trad:gaudiya",
-  "evidenceClass": 5,
-  "sources": [
-   {
-    "source": "src:gupta-2007"
-   }
-  ],
-  "confidence": "high",
-  "status": "source-checked",
-  "agent": "vedic"
- },
- {
-  "id": "vedic:r2-82",
   "s": "text:subodhini",
   "p": "CENTRAL_TO",
   "o": "trad:pushtimarg",
@@ -1570,7 +1555,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-83",
+  "id": "vedic:r2-82",
   "s": "text:yuktidipika",
   "p": "COMMENTARY_ON",
   "o": "text:samkhya-karika",
@@ -1591,7 +1576,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-84",
+  "id": "vedic:r2-83",
   "s": "text:samkhya-tattva-kaumudi",
   "p": "COMMENTARY_ON",
   "o": "text:samkhya-karika",
@@ -1606,7 +1591,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-85",
+  "id": "vedic:r2-84",
   "s": "text:samkhya-pravachana-bhashya",
   "p": "COMMENTARY_ON",
   "o": "text:samkhya-sutra",
@@ -1624,7 +1609,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-86",
+  "id": "vedic:r2-85",
   "s": "text:yoga-bhashya",
   "p": "COMMENTARY_ON",
   "o": "text:yoga-sutra",
@@ -1648,7 +1633,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-87",
+  "id": "vedic:r2-86",
   "s": "text:tattvavaisharadi",
   "p": "COMMENTARY_ON",
   "o": "text:yoga-bhashya",
@@ -1663,7 +1648,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-88",
+  "id": "vedic:r2-87",
   "s": "text:rajamartanda",
   "p": "COMMENTARY_ON",
   "o": "text:yoga-sutra",
@@ -1678,7 +1663,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-89",
+  "id": "vedic:r2-88",
   "s": "text:yoga-varttika",
   "p": "COMMENTARY_ON",
   "o": "text:yoga-bhashya",
@@ -1696,7 +1681,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-90",
+  "id": "vedic:r2-89",
   "s": "text:nyaya-bhashya",
   "p": "COMMENTARY_ON",
   "o": "text:nyaya-sutra",
@@ -1717,7 +1702,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-91",
+  "id": "vedic:r2-90",
   "s": "text:nyaya-varttika",
   "p": "COMMENTARY_ON",
   "o": "text:nyaya-bhashya",
@@ -1732,7 +1717,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-92",
+  "id": "vedic:r2-91",
   "s": "text:nyaya-varttika-tatparyatika",
   "p": "COMMENTARY_ON",
   "o": "text:nyaya-varttika",
@@ -1747,7 +1732,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-93",
+  "id": "vedic:r2-92",
   "s": "text:padarthadharmasamgraha",
   "p": "COMMENTARY_ON",
   "o": "text:vaisheshika-sutra",
@@ -1766,7 +1751,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-94",
+  "id": "vedic:r2-93",
   "s": "text:shabara-bhashya",
   "p": "COMMENTARY_ON",
   "o": "text:mimamsa-sutra",
@@ -1787,7 +1772,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-95",
+  "id": "vedic:r2-94",
   "s": "text:shlokavarttika",
   "p": "COMMENTARY_ON",
   "o": "text:shabara-bhashya",
@@ -1808,7 +1793,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-96",
+  "id": "vedic:r2-95",
   "s": "text:tantravarttika",
   "p": "COMMENTARY_ON",
   "o": "text:shabara-bhashya",
@@ -1826,7 +1811,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-97",
+  "id": "vedic:r2-96",
   "s": "text:brihati",
   "p": "COMMENTARY_ON",
   "o": "text:shabara-bhashya",
@@ -1841,7 +1826,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-98",
+  "id": "vedic:r2-97",
   "s": "text:prakaranapanchika",
   "p": "DERIVED_FROM",
   "o": "text:brihati",
@@ -1856,7 +1841,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-99",
+  "id": "vedic:r2-98",
   "s": "text:shastradipika",
   "p": "COMMENTARY_ON",
   "o": "text:mimamsa-sutra",
@@ -1871,7 +1856,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-100",
+  "id": "vedic:r2-99",
   "s": "text:shankara-brahmasutra-bhashya",
   "p": "COMMENTARY_ON",
   "o": "text:brahma-sutra",
@@ -1891,7 +1876,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-101",
+  "id": "vedic:r2-100",
   "s": "text:bhaskara-brahmasutra-bhashya",
   "p": "COMMENTARY_ON",
   "o": "text:brahma-sutra",
@@ -1910,7 +1895,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-102",
+  "id": "vedic:r2-101",
   "s": "text:shribhashya",
   "p": "COMMENTARY_ON",
   "o": "text:brahma-sutra",
@@ -1928,7 +1913,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-103",
+  "id": "vedic:r2-102",
   "s": "text:madhva-brahmasutra-bhashya",
   "p": "COMMENTARY_ON",
   "o": "text:brahma-sutra",
@@ -1943,7 +1928,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-104",
+  "id": "vedic:r2-103",
   "s": "text:anuvyakhyana",
   "p": "COMMENTARY_ON",
   "o": "text:brahma-sutra",
@@ -1969,7 +1954,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-105",
+  "id": "vedic:r2-104",
   "s": "text:vedanta-parijata-saurabha",
   "p": "COMMENTARY_ON",
   "o": "text:brahma-sutra",
@@ -1984,7 +1969,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-106",
+  "id": "vedic:r2-105",
   "s": "text:vedanta-kaustubha",
   "p": "COMMENTARY_ON",
   "o": "text:vedanta-parijata-saurabha",
@@ -1999,7 +1984,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-107",
+  "id": "vedic:r2-106",
   "s": "text:anubhashya-vallabha",
   "p": "COMMENTARY_ON",
   "o": "text:brahma-sutra",
@@ -2014,7 +1999,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-108",
+  "id": "vedic:r2-107",
   "s": "text:govinda-bhashya",
   "p": "COMMENTARY_ON",
   "o": "text:brahma-sutra",
@@ -2030,7 +2015,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-109",
+  "id": "vedic:r2-108",
   "s": "text:panchapadika",
   "p": "COMMENTARY_ON",
   "o": "text:shankara-brahmasutra-bhashya",
@@ -2045,7 +2030,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-110",
+  "id": "vedic:r2-109",
   "s": "text:bhamati",
   "p": "COMMENTARY_ON",
   "o": "text:shankara-brahmasutra-bhashya",
@@ -2067,7 +2052,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-111",
+  "id": "vedic:r2-110",
   "s": "text:nyayasudha",
   "p": "COMMENTARY_ON",
   "o": "text:anuvyakhyana",
@@ -2088,7 +2073,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-112",
+  "id": "vedic:r2-111",
   "s": "text:shankara-gita-bhashya",
   "p": "COMMENTARY_ON",
   "o": "text:bhagavad-gita",
@@ -2107,7 +2092,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-113",
+  "id": "vedic:r2-112",
   "s": "text:ramanuja-gita-bhashya",
   "p": "COMMENTARY_ON",
   "o": "text:bhagavad-gita",
@@ -2129,7 +2114,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-114",
+  "id": "vedic:r2-113",
   "s": "text:gitarthasamgraha",
   "p": "COMMENTARY_ON",
   "o": "text:bhagavad-gita",
@@ -2150,7 +2135,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-115",
+  "id": "vedic:r2-114",
   "s": "text:shankara-bhashya-taittiriya",
   "p": "COMMENTARY_ON",
   "o": "text:taittiriya-upanishad",
@@ -2169,7 +2154,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-116",
+  "id": "vedic:r2-115",
   "s": "text:shankara-bhashya-chandogya",
   "p": "COMMENTARY_ON",
   "o": "text:chandogya-upanishad",
@@ -2185,7 +2170,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-117",
+  "id": "vedic:r2-116",
   "s": "text:shankara-bhashya-katha",
   "p": "COMMENTARY_ON",
   "o": "text:katha-upanishad",
@@ -2201,7 +2186,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-118",
+  "id": "vedic:r2-117",
   "s": "text:shankara-bhashya-mandukya",
   "p": "COMMENTARY_ON",
   "o": "text:mandukya-upanishad",
@@ -2220,7 +2205,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-119",
+  "id": "vedic:r2-118",
   "s": "text:shankara-bhashya-mandukya",
   "p": "COMMENTARY_ON",
   "o": "text:mandukya-karika",
@@ -2239,7 +2224,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-120",
+  "id": "vedic:r2-119",
   "s": "text:mandukya-karika",
   "p": "COMMENTARY_ON",
   "o": "text:mandukya-upanishad",
@@ -2264,7 +2249,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-121",
+  "id": "vedic:r2-120",
   "s": "text:mitakshara",
   "p": "COMMENTARY_ON",
   "o": "text:yajnavalkya-smriti",
@@ -2286,7 +2271,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-122",
+  "id": "vedic:r2-121",
   "s": "text:manubhashya",
   "p": "COMMENTARY_ON",
   "o": "text:manusmriti",
@@ -2304,7 +2289,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-123",
+  "id": "vedic:r2-122",
   "s": "text:subodhini",
   "p": "COMMENTARY_ON",
   "o": "text:bhagavata-purana",
@@ -2319,32 +2304,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-124",
-  "s": "text:shat-sandarbha",
-  "p": "DERIVED_FROM",
-  "o": "text:bhagavata-purana",
-  "qualifiers": {
-   "note": "a systematic theology arranged as an exposition of the Bhāgavata (Bhāgavata-sandarbha)"
-  },
-  "evidenceClass": 5,
-  "sources": [
-   {
-    "source": "src:gupta-2007"
-   },
-   {
-    "source": "src:gretil-satsandarbha",
-    "locator": "Tattvasandarbha opening (quotes BhP 11.5.32)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_jiva-gosvami-satsamdarbha.txt",
-    "edition": "GRETIL e-text (GRETIL e-text interleaving Baladeva Vidyābhūṣaṇa’s ṭīkā (marked “bd:”))",
-    "quote": "kṛṣṇa-varṇaṃ tviṣākṛṣṇaṃ sāṅgopāṅgāstra-pārṣadam"
-   }
-  ],
-  "confidence": "high",
-  "status": "source-checked",
-  "agent": "vedic"
- },
- {
-  "id": "vedic:r2-125",
+  "id": "vedic:r2-123",
   "s": "text:samkhya-sutra",
   "p": "DERIVED_FROM",
   "o": "text:samkhya-karika",
@@ -2360,7 +2320,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-126",
+  "id": "vedic:r2-124",
   "s": "text:brahma-sutra",
   "p": "DERIVED_FROM",
   "o": "text:mimamsa-sutra",
@@ -2381,7 +2341,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-127",
+  "id": "vedic:r2-125",
   "s": "text:vedantasara",
   "p": "DERIVED_FROM",
   "o": "text:shankara-brahmasutra-bhashya",
@@ -2397,7 +2357,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-128",
+  "id": "vedic:r2-126",
   "s": "text:jivanmuktiviveka",
   "p": "DERIVED_FROM",
   "o": "text:yoga-sutra",
@@ -2416,7 +2376,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-129",
+  "id": "vedic:r2-127",
   "s": "text:samkhya-karika",
   "p": "COMPOSED_BY",
   "o": "person:ishvarakrishna",
@@ -2440,7 +2400,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-130",
+  "id": "vedic:r2-128",
   "s": "text:samkhya-sutra",
   "p": "ATTRIBUTED_TO",
   "o": "char:kapila",
@@ -2460,7 +2420,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-131",
+  "id": "vedic:r2-129",
   "s": "text:tattvasamasa",
   "p": "ATTRIBUTED_TO",
   "o": "char:kapila",
@@ -2479,7 +2439,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-132",
+  "id": "vedic:r2-130",
   "s": "text:samkhya-tattva-kaumudi",
   "p": "COMPOSED_BY",
   "o": "person:vacaspati-mishra",
@@ -2498,7 +2458,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-133",
+  "id": "vedic:r2-131",
   "s": "text:samkhya-pravachana-bhashya",
   "p": "COMPOSED_BY",
   "o": "person:vijnanabhikshu",
@@ -2513,7 +2473,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-134",
+  "id": "vedic:r2-132",
   "s": "text:yoga-varttika",
   "p": "COMPOSED_BY",
   "o": "person:vijnanabhikshu",
@@ -2528,7 +2488,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-135",
+  "id": "vedic:r2-133",
   "s": "text:yoga-sutra",
   "p": "ATTRIBUTED_TO",
   "o": "person:patanjali-yogasutra",
@@ -2551,7 +2511,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-136",
+  "id": "vedic:r2-134",
   "s": "text:yoga-bhashya",
   "p": "ATTRIBUTED_TO",
   "o": "person:vyasa-yogabhashya",
@@ -2574,7 +2534,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-137",
+  "id": "vedic:r2-135",
   "s": "text:yoga-bhashya",
   "p": "ATTRIBUTED_TO",
   "o": "person:patanjali-yogasutra",
@@ -2596,7 +2556,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-138",
+  "id": "vedic:r2-136",
   "s": "text:tattvavaisharadi",
   "p": "COMPOSED_BY",
   "o": "person:vacaspati-mishra",
@@ -2611,7 +2571,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-139",
+  "id": "vedic:r2-137",
   "s": "text:rajamartanda",
   "p": "COMPOSED_BY",
   "o": "person:bhoja-paramara",
@@ -2632,7 +2592,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-140",
+  "id": "vedic:r2-138",
   "s": "text:hatha-yoga-pradipika",
   "p": "COMPOSED_BY",
   "o": "person:svatmarama",
@@ -2647,7 +2607,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-141",
+  "id": "vedic:r2-139",
   "s": "text:nyaya-sutra",
   "p": "ATTRIBUTED_TO",
   "o": "person:akshapada-gautama",
@@ -2665,7 +2625,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-142",
+  "id": "vedic:r2-140",
   "s": "text:nyaya-bhashya",
   "p": "COMPOSED_BY",
   "o": "person:vatsyayana-pakshilasvamin",
@@ -2680,7 +2640,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-143",
+  "id": "vedic:r2-141",
   "s": "text:nyaya-varttika",
   "p": "COMPOSED_BY",
   "o": "person:uddyotakara",
@@ -2695,7 +2655,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-144",
+  "id": "vedic:r2-142",
   "s": "text:nyaya-varttika-tatparyatika",
   "p": "COMPOSED_BY",
   "o": "person:vacaspati-mishra",
@@ -2710,7 +2670,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-145",
+  "id": "vedic:r2-143",
   "s": "text:nyaya-kusumanjali",
   "p": "COMPOSED_BY",
   "o": "person:udayana",
@@ -2725,7 +2685,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-146",
+  "id": "vedic:r2-144",
   "s": "text:tattvacintamani",
   "p": "COMPOSED_BY",
   "o": "person:gangesha",
@@ -2740,7 +2700,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-147",
+  "id": "vedic:r2-145",
   "s": "text:tarkasamgraha",
   "p": "COMPOSED_BY",
   "o": "person:annambhatta",
@@ -2764,7 +2724,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-148",
+  "id": "vedic:r2-146",
   "s": "text:vaisheshika-sutra",
   "p": "ATTRIBUTED_TO",
   "o": "person:kanada",
@@ -2789,7 +2749,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-149",
+  "id": "vedic:r2-147",
   "s": "text:padarthadharmasamgraha",
   "p": "COMPOSED_BY",
   "o": "person:prashastapada",
@@ -2811,7 +2771,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-150",
+  "id": "vedic:r2-148",
   "s": "text:mimamsa-sutra",
   "p": "ATTRIBUTED_TO",
   "o": "person:jaimini",
@@ -2829,7 +2789,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-151",
+  "id": "vedic:r2-149",
   "s": "text:shabara-bhashya",
   "p": "COMPOSED_BY",
   "o": "person:shabara",
@@ -2844,7 +2804,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-152",
+  "id": "vedic:r2-150",
   "s": "text:shlokavarttika",
   "p": "COMPOSED_BY",
   "o": "person:kumarila",
@@ -2862,7 +2822,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-153",
+  "id": "vedic:r2-151",
   "s": "text:tantravarttika",
   "p": "COMPOSED_BY",
   "o": "person:kumarila",
@@ -2877,7 +2837,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-154",
+  "id": "vedic:r2-152",
   "s": "text:brihati",
   "p": "COMPOSED_BY",
   "o": "person:prabhakara",
@@ -2892,7 +2852,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-155",
+  "id": "vedic:r2-153",
   "s": "text:prakaranapanchika",
   "p": "COMPOSED_BY",
   "o": "person:shalikanatha",
@@ -2907,7 +2867,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-156",
+  "id": "vedic:r2-154",
   "s": "text:shastradipika",
   "p": "COMPOSED_BY",
   "o": "person:parthasarathi-mishra",
@@ -2922,7 +2882,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-157",
+  "id": "vedic:r2-155",
   "s": "text:brahmasiddhi",
   "p": "COMPOSED_BY",
   "o": "person:mandana-mishra",
@@ -2940,7 +2900,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-158",
+  "id": "vedic:r2-156",
   "s": "text:brahma-sutra",
   "p": "ATTRIBUTED_TO",
   "o": "person:badarayana",
@@ -2965,7 +2925,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-159",
+  "id": "vedic:r2-157",
   "s": "text:mandukya-karika",
   "p": "ATTRIBUTED_TO",
   "o": "person:gaudapada",
@@ -2986,7 +2946,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-160",
+  "id": "vedic:r2-158",
   "s": "text:shankara-brahmasutra-bhashya",
   "p": "COMPOSED_BY",
   "o": "person:shankara",
@@ -3005,7 +2965,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-161",
+  "id": "vedic:r2-159",
   "s": "text:upadeshasahasri",
   "p": "COMPOSED_BY",
   "o": "person:shankara",
@@ -3027,7 +2987,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-162",
+  "id": "vedic:r2-160",
   "s": "text:shankara-gita-bhashya",
   "p": "ATTRIBUTED_TO",
   "o": "person:shankara",
@@ -3043,7 +3003,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-163",
+  "id": "vedic:r2-161",
   "s": "text:shankara-bhashya-taittiriya",
   "p": "ATTRIBUTED_TO",
   "o": "person:shankara",
@@ -3059,7 +3019,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-164",
+  "id": "vedic:r2-162",
   "s": "text:shankara-bhashya-chandogya",
   "p": "ATTRIBUTED_TO",
   "o": "person:shankara",
@@ -3075,7 +3035,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-165",
+  "id": "vedic:r2-163",
   "s": "text:shankara-bhashya-katha",
   "p": "ATTRIBUTED_TO",
   "o": "person:shankara",
@@ -3091,7 +3051,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-166",
+  "id": "vedic:r2-164",
   "s": "text:shankara-bhashya-mandukya",
   "p": "ATTRIBUTED_TO",
   "o": "person:shankara",
@@ -3114,7 +3074,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-167",
+  "id": "vedic:r2-165",
   "s": "text:vivekachudamani",
   "p": "ATTRIBUTED_TO",
   "o": "person:shankara",
@@ -3137,7 +3097,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-168",
+  "id": "vedic:r2-166",
   "s": "text:naishkarmyasiddhi",
   "p": "COMPOSED_BY",
   "o": "person:sureshvara",
@@ -3152,7 +3112,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-169",
+  "id": "vedic:r2-167",
   "s": "text:panchapadika",
   "p": "COMPOSED_BY",
   "o": "person:padmapada",
@@ -3167,7 +3127,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-170",
+  "id": "vedic:r2-168",
   "s": "text:bhamati",
   "p": "COMPOSED_BY",
   "o": "person:vacaspati-mishra",
@@ -3182,7 +3142,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-171",
+  "id": "vedic:r2-169",
   "s": "text:panchadashi",
   "p": "ATTRIBUTED_TO",
   "o": "person:vidyaranya",
@@ -3205,7 +3165,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-172",
+  "id": "vedic:r2-170",
   "s": "text:jivanmuktiviveka",
   "p": "COMPOSED_BY",
   "o": "person:vidyaranya",
@@ -3221,7 +3181,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-173",
+  "id": "vedic:r2-171",
   "s": "text:sarvadarshanasamgraha",
   "p": "ATTRIBUTED_TO",
   "o": "person:vidyaranya",
@@ -3246,7 +3206,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-174",
+  "id": "vedic:r2-172",
   "s": "text:vedantasara",
   "p": "COMPOSED_BY",
   "o": "person:sadananda",
@@ -3262,7 +3222,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-175",
+  "id": "vedic:r2-173",
   "s": "text:siddhantabindu",
   "p": "COMPOSED_BY",
   "o": "person:madhusudana-sarasvati",
@@ -3277,7 +3237,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-176",
+  "id": "vedic:r2-174",
   "s": "text:advaitasiddhi",
   "p": "COMPOSED_BY",
   "o": "person:madhusudana-sarasvati",
@@ -3292,7 +3252,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-177",
+  "id": "vedic:r2-175",
   "s": "text:bhaskara-brahmasutra-bhashya",
   "p": "COMPOSED_BY",
   "o": "person:bhaskara-vedantin",
@@ -3308,7 +3268,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-178",
+  "id": "vedic:r2-176",
   "s": "text:shribhashya",
   "p": "COMPOSED_BY",
   "o": "person:ramanuja",
@@ -3326,7 +3286,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-179",
+  "id": "vedic:r2-177",
   "s": "text:vedarthasamgraha",
   "p": "COMPOSED_BY",
   "o": "person:ramanuja",
@@ -3344,7 +3304,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-180",
+  "id": "vedic:r2-178",
   "s": "text:ramanuja-gita-bhashya",
   "p": "COMPOSED_BY",
   "o": "person:ramanuja",
@@ -3359,7 +3319,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-181",
+  "id": "vedic:r2-179",
   "s": "text:gitarthasamgraha",
   "p": "COMPOSED_BY",
   "o": "person:yamuna",
@@ -3374,7 +3334,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-182",
+  "id": "vedic:r2-180",
   "s": "text:siddhitraya",
   "p": "COMPOSED_BY",
   "o": "person:yamuna",
@@ -3389,7 +3349,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-183",
+  "id": "vedic:r2-181",
   "s": "text:tattvamuktakalapa",
   "p": "COMPOSED_BY",
   "o": "person:vedanta-deshika",
@@ -3405,7 +3365,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-184",
+  "id": "vedic:r2-182",
   "s": "text:nyayaparishuddhi",
   "p": "COMPOSED_BY",
   "o": "person:vedanta-deshika",
@@ -3427,7 +3387,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-185",
+  "id": "vedic:r2-183",
   "s": "text:madhva-brahmasutra-bhashya",
   "p": "COMPOSED_BY",
   "o": "person:madhva",
@@ -3442,7 +3402,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-186",
+  "id": "vedic:r2-184",
   "s": "text:anuvyakhyana",
   "p": "COMPOSED_BY",
   "o": "person:madhva",
@@ -3466,7 +3426,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-187",
+  "id": "vedic:r2-185",
   "s": "text:mahabharata-tatparya-nirnaya",
   "p": "COMPOSED_BY",
   "o": "person:madhva",
@@ -3489,7 +3449,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-188",
+  "id": "vedic:r2-186",
   "s": "text:nyayasudha",
   "p": "COMPOSED_BY",
   "o": "person:jayatirtha",
@@ -3504,7 +3464,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-189",
+  "id": "vedic:r2-187",
   "s": "text:nyayamrita",
   "p": "COMPOSED_BY",
   "o": "person:vyasatirtha",
@@ -3522,7 +3482,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-190",
+  "id": "vedic:r2-188",
   "s": "text:tarkatandava",
   "p": "COMPOSED_BY",
   "o": "person:vyasatirtha",
@@ -3537,7 +3497,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-191",
+  "id": "vedic:r2-189",
   "s": "text:vedanta-parijata-saurabha",
   "p": "ATTRIBUTED_TO",
   "o": "person:nimbarka",
@@ -3555,7 +3515,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-192",
+  "id": "vedic:r2-190",
   "s": "text:dashashloki",
   "p": "ATTRIBUTED_TO",
   "o": "person:nimbarka",
@@ -3573,7 +3533,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-193",
+  "id": "vedic:r2-191",
   "s": "text:vedanta-kaustubha",
   "p": "ATTRIBUTED_TO",
   "o": "person:shrinivasa-nimbarki",
@@ -3591,7 +3551,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-194",
+  "id": "vedic:r2-192",
   "s": "text:anubhashya-vallabha",
   "p": "COMPOSED_BY",
   "o": "person:vallabha",
@@ -3606,7 +3566,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-195",
+  "id": "vedic:r2-193",
   "s": "text:anubhashya-vallabha",
   "p": "COMPOSED_BY",
   "o": "person:vitthalanatha",
@@ -3624,7 +3584,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-196",
+  "id": "vedic:r2-194",
   "s": "text:subodhini",
   "p": "COMPOSED_BY",
   "o": "person:vallabha",
@@ -3639,35 +3599,12 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-197",
-  "s": "text:shat-sandarbha",
-  "p": "COMPOSED_BY",
-  "o": "person:jiva-gosvami",
-  "evidenceClass": 1,
-  "sources": [
-   {
-    "source": "src:gretil-satsandarbha",
-    "locator": "Tattvasandarbha 5",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_jiva-gosvami-satsamdarbha.txt",
-    "edition": "GRETIL e-text (GRETIL e-text interleaving Baladeva Vidyābhūṣaṇa’s ṭīkā (marked “bd:”))",
-    "quote": "paryālocyātha paryāyaṃ kṛtvā likhati jīvakaḥ"
-   },
-   {
-    "source": "src:gupta-2007"
-   }
-  ],
-  "confidence": "high",
-  "status": "verified-online",
-  "agent": "vedic",
-  "lastVerified": "2026-11-08"
- },
- {
-  "id": "vedic:r2-198",
-  "s": "text:shat-sandarbha",
+  "id": "vedic:r2-195",
+  "s": "text:sat-sandarbha",
   "p": "ATTRIBUTED_TO",
-  "o": "person:gopala-bhatta",
+  "o": "person:gopala-bhatta-goswami",
   "qualifiers": {
-   "text": "text:shat-sandarbha",
+   "text": "text:sat-sandarbha",
    "note": "according to Tattvasandarbha 4–5, Gopāla Bhaṭṭa wrote the first draft, which Jīva rearranged"
   },
   "evidenceClass": 1,
@@ -3686,7 +3623,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-199",
+  "id": "vedic:r2-196",
   "s": "text:govinda-bhashya",
   "p": "COMPOSED_BY",
   "o": "person:baladeva-vidyabhushana",
@@ -3701,28 +3638,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-200",
-  "s": "text:bhaktirasamritasindhu",
-  "p": "COMPOSED_BY",
-  "o": "person:rupa-gosvami",
-  "evidenceClass": 5,
-  "sources": [
-   {
-    "source": "src:gupta-2007"
-   },
-   {
-    "source": "src:gretil-bhaktirasamritasindhu",
-    "locator": "BRS (whole)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rUpagosvAmin-haribhaktirasAmRtasindhu.txt",
-    "edition": "GRETIL e-text"
-   }
-  ],
-  "confidence": "high",
-  "status": "source-checked",
-  "agent": "vedic"
- },
- {
-  "id": "vedic:r2-201",
+  "id": "vedic:r2-197",
   "s": "text:vakyapadiya",
   "p": "COMPOSED_BY",
   "o": "person:bhartrhari",
@@ -3737,7 +3653,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-202",
+  "id": "vedic:r2-198",
   "s": "text:arthashastra",
   "p": "ATTRIBUTED_TO",
   "o": "person:kautilya",
@@ -3759,7 +3675,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-203",
+  "id": "vedic:r2-199",
   "s": "text:mitakshara",
   "p": "COMPOSED_BY",
   "o": "person:vijnaneshvara",
@@ -3777,7 +3693,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-204",
+  "id": "vedic:r2-200",
   "s": "text:dayabhaga",
   "p": "COMPOSED_BY",
   "o": "person:jimutavahana",
@@ -3792,7 +3708,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-205",
+  "id": "vedic:r2-201",
   "s": "text:manubhashya",
   "p": "COMPOSED_BY",
   "o": "person:medhatithi",
@@ -3807,7 +3723,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-206",
+  "id": "vedic:r2-202",
   "s": "text:yajnavalkya-smriti",
   "p": "ATTRIBUTED_TO",
   "o": "char:yajnavalkya",
@@ -3832,7 +3748,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-207",
+  "id": "vedic:r2-203",
   "s": "text:narada-smriti",
   "p": "ATTRIBUTED_TO",
   "o": "char:narada",
@@ -3851,7 +3767,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-208",
+  "id": "vedic:r2-204",
   "s": "text:parashara-smriti",
   "p": "ATTRIBUTED_TO",
   "o": "char:parashara",
@@ -3874,7 +3790,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-209",
+  "id": "vedic:r2-205",
   "s": "text:vasishtha-dharma-sutra",
   "p": "ATTRIBUTED_TO",
   "o": "char:vasishtha",
@@ -3891,7 +3807,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-210",
+  "id": "vedic:r2-206",
   "s": "text:chandahshastra",
   "p": "ATTRIBUTED_TO",
   "o": "person:pingala",
@@ -3906,7 +3822,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-211",
+  "id": "vedic:r2-207",
   "s": "text:vedanga-jyotisha",
   "p": "ATTRIBUTED_TO",
   "o": "person:lagadha",
@@ -3930,7 +3846,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-212",
+  "id": "vedic:r2-208",
   "s": "text:apastamba-shrauta-sutra",
   "p": "ATTRIBUTED_TO",
   "o": "person:apastamba",
@@ -3952,7 +3868,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-213",
+  "id": "vedic:r2-209",
   "s": "text:apastamba-grihya-sutra",
   "p": "ATTRIBUTED_TO",
   "o": "person:apastamba",
@@ -3974,7 +3890,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-214",
+  "id": "vedic:r2-210",
   "s": "text:apastamba-dharma-sutra",
   "p": "ATTRIBUTED_TO",
   "o": "person:apastamba",
@@ -3996,7 +3912,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-215",
+  "id": "vedic:r2-211",
   "s": "text:apastamba-shulba-sutra",
   "p": "ATTRIBUTED_TO",
   "o": "person:apastamba",
@@ -4018,7 +3934,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-216",
+  "id": "vedic:r2-212",
   "s": "text:baudhayana-shrauta-sutra",
   "p": "ATTRIBUTED_TO",
   "o": "person:baudhayana",
@@ -4040,7 +3956,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-217",
+  "id": "vedic:r2-213",
   "s": "text:baudhayana-dharma-sutra",
   "p": "ATTRIBUTED_TO",
   "o": "person:baudhayana",
@@ -4062,7 +3978,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-218",
+  "id": "vedic:r2-214",
   "s": "text:baudhayana-shulba-sutra",
   "p": "ATTRIBUTED_TO",
   "o": "person:baudhayana",
@@ -4084,7 +4000,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-219",
+  "id": "vedic:r2-215",
   "s": "text:ashvalayana-shrauta-sutra",
   "p": "ATTRIBUTED_TO",
   "o": "person:ashvalayana",
@@ -4102,7 +4018,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-220",
+  "id": "vedic:r2-216",
   "s": "text:ashvalayana-grihya-sutra",
   "p": "ATTRIBUTED_TO",
   "o": "person:ashvalayana",
@@ -4120,7 +4036,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-221",
+  "id": "vedic:r2-217",
   "s": "text:katyayana-shrauta-sutra",
   "p": "ATTRIBUTED_TO",
   "o": "person:katyayana",
@@ -4141,7 +4057,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-222",
+  "id": "vedic:r2-218",
   "s": "text:vajasaneyi-pratishakhya",
   "p": "ATTRIBUTED_TO",
   "o": "person:katyayana",
@@ -4162,7 +4078,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-223",
+  "id": "vedic:r2-219",
   "s": "text:paniniya-shiksha",
   "p": "ATTRIBUTED_TO",
   "o": "person:panini",
@@ -4178,7 +4094,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-224",
+  "id": "vedic:r2-220",
   "s": "char:kapila",
   "p": "TEACHER_OF",
   "o": "person:asuri",
@@ -4209,7 +4125,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-225",
+  "id": "vedic:r2-221",
   "s": "person:asuri",
   "p": "TEACHER_OF",
   "o": "person:panchashikha",
@@ -4232,7 +4148,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-226",
+  "id": "vedic:r2-222",
   "s": "person:gaudapada",
   "p": "TEACHER_OF",
   "o": "person:govinda-bhagavatpada",
@@ -4254,7 +4170,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-227",
+  "id": "vedic:r2-223",
   "s": "person:govinda-bhagavatpada",
   "p": "TEACHER_OF",
   "o": "person:shankara",
@@ -4276,7 +4192,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-228",
+  "id": "vedic:r2-224",
   "s": "person:shankara",
   "p": "TEACHER_OF",
   "o": "person:sureshvara",
@@ -4294,7 +4210,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-229",
+  "id": "vedic:r2-225",
   "s": "person:shankara",
   "p": "TEACHER_OF",
   "o": "person:padmapada",
@@ -4312,7 +4228,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-230",
+  "id": "vedic:r2-226",
   "s": "person:kumarila",
   "p": "TEACHER_OF",
   "o": "person:prabhakara",
@@ -4335,7 +4251,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-231",
+  "id": "vedic:r2-227",
   "s": "person:kumarila",
   "p": "TEACHER_OF",
   "o": "person:mandana-mishra",
@@ -4356,7 +4272,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-232",
+  "id": "vedic:r2-228",
   "s": "person:yamuna",
   "p": "TEACHER_OF",
   "o": "person:ramanuja",
@@ -4383,7 +4299,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-233",
+  "id": "vedic:r2-229",
   "s": "person:nimbarka",
   "p": "TEACHER_OF",
   "o": "person:shrinivasa-nimbarki",
@@ -4401,76 +4317,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-234",
-  "s": "person:vallabha",
-  "p": "PARENT_OF",
-  "o": "person:vitthalanatha",
-  "evidenceClass": 5,
-  "sources": [
-   {
-    "source": "src:barz-1976"
-   }
-  ],
-  "confidence": "high",
-  "status": "source-checked",
-  "agent": "vedic"
- },
- {
-  "id": "vedic:r2-235",
-  "s": "person:vallabha",
-  "p": "TEACHER_OF",
-  "o": "person:vitthalanatha",
-  "evidenceClass": 5,
-  "sources": [
-   {
-    "source": "src:barz-1976"
-   }
-  ],
-  "confidence": "medium",
-  "status": "source-checked",
-  "agent": "vedic"
- },
- {
-  "id": "vedic:r2-236",
-  "s": "person:chaitanya",
-  "p": "TEACHER_OF",
-  "o": "person:rupa-gosvami",
-  "qualifiers": {
-   "tradition": "trad:gaudiya",
-   "note": "instruction at Prayāga in the Caitanya Caritāmṛta"
-  },
-  "evidenceClass": 6,
-  "sources": [
-   {
-    "source": "src:gupta-2007",
-    "locator": "ch. 1"
-   },
-   {
-    "source": "src:dimock-stewart-1999"
-   }
-  ],
-  "confidence": "medium",
-  "status": "source-checked",
-  "agent": "vedic"
- },
- {
-  "id": "vedic:r2-237",
-  "s": "person:rupa-gosvami",
-  "p": "TEACHER_OF",
-  "o": "person:jiva-gosvami",
-  "evidenceClass": 5,
-  "sources": [
-   {
-    "source": "src:gupta-2007",
-    "locator": "ch. 1"
-   }
-  ],
-  "confidence": "medium",
-  "status": "source-checked",
-  "agent": "vedic"
- },
- {
-  "id": "vedic:r2-238",
+  "id": "vedic:r2-230",
   "s": "person:vyasatirtha",
   "p": "TEACHER_OF",
   "o": "person:krishnadevaraya",
@@ -4488,7 +4335,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-239",
+  "id": "vedic:r2-231",
   "s": "person:patanjali-yogasutra",
   "p": "IDENTIFIED_WITH",
   "o": "person:patanjali-grammarian",
@@ -4511,7 +4358,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-240",
+  "id": "vedic:r2-232",
   "s": "person:mandana-mishra",
   "p": "IDENTIFIED_WITH",
   "o": "person:sureshvara",
@@ -4534,7 +4381,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-241",
+  "id": "vedic:r2-233",
   "s": "person:badarayana",
   "p": "IDENTIFIED_WITH",
   "o": "char:vyasa",
@@ -4559,7 +4406,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-242",
+  "id": "vedic:r2-234",
   "s": "person:vyasa-yogabhashya",
   "p": "IDENTIFIED_WITH",
   "o": "char:vyasa",
@@ -4581,7 +4428,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-243",
+  "id": "vedic:r2-235",
   "s": "claim:patanjali-identity",
   "p": "CONCERNS",
   "o": "person:patanjali-yogasutra",
@@ -4600,7 +4447,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-244",
+  "id": "vedic:r2-236",
   "s": "claim:patanjali-identity",
   "p": "CONCERNS",
   "o": "person:patanjali-grammarian",
@@ -4619,7 +4466,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-245",
+  "id": "vedic:r2-237",
   "s": "claim:patanjali-identity",
   "p": "CONCERNS",
   "o": "text:yoga-sutra",
@@ -4638,7 +4485,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-246",
+  "id": "vedic:r2-238",
   "s": "claim:yogasutra-bhashya-single-work",
   "p": "CONCERNS",
   "o": "text:yoga-sutra",
@@ -4657,7 +4504,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-247",
+  "id": "vedic:r2-239",
   "s": "claim:yogasutra-bhashya-single-work",
   "p": "CONCERNS",
   "o": "text:yoga-bhashya",
@@ -4676,7 +4523,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-248",
+  "id": "vedic:r2-240",
   "s": "claim:yogasutra-bhashya-single-work",
   "p": "CONCERNS",
   "o": "person:patanjali-yogasutra",
@@ -4695,7 +4542,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-249",
+  "id": "vedic:r2-241",
   "s": "claim:mandana-sureshvara-identity",
   "p": "CONCERNS",
   "o": "person:mandana-mishra",
@@ -4714,7 +4561,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-250",
+  "id": "vedic:r2-242",
   "s": "claim:mandana-sureshvara-identity",
   "p": "CONCERNS",
   "o": "person:sureshvara",
@@ -4733,7 +4580,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-251",
+  "id": "vedic:r2-243",
   "s": "claim:vivekachudamani-authorship",
   "p": "CONCERNS",
   "o": "text:vivekachudamani",
@@ -4753,7 +4600,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-252",
+  "id": "vedic:r2-244",
   "s": "claim:vivekachudamani-authorship",
   "p": "CONCERNS",
   "o": "person:shankara",
@@ -4773,7 +4620,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-253",
+  "id": "vedic:r2-245",
   "s": "claim:nimbarka-date",
   "p": "CONCERNS",
   "o": "person:nimbarka",
@@ -4792,7 +4639,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-254",
+  "id": "vedic:r2-246",
   "s": "claim:nimbarka-date",
   "p": "CONCERNS",
   "o": "text:vedanta-parijata-saurabha",
@@ -4811,7 +4658,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-255",
+  "id": "vedic:r2-247",
   "s": "text:yoga-bhashya",
   "p": "SUPPORTS",
   "o": "claim:yogasutra-bhashya-single-work",
@@ -4835,7 +4682,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-256",
+  "id": "vedic:r2-248",
   "s": "claim:yogasutra-bhashya-single-work",
   "p": "CONTRADICTS",
   "o": "claim:patanjali-identity",
@@ -4851,7 +4698,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-257",
+  "id": "vedic:r2-249",
   "s": "text:brahmasiddhi",
   "p": "CONTRADICTS",
   "o": "claim:mandana-sureshvara-identity",
@@ -4871,7 +4718,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-258",
+  "id": "vedic:r2-250",
   "s": "text:upadeshasahasri",
   "p": "CONTRADICTS",
   "o": "claim:vivekachudamani-authorship",
@@ -4888,7 +4735,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-259",
+  "id": "vedic:r2-251",
   "s": "text:vedanta-parijata-saurabha",
   "p": "SUPPORTS",
   "o": "claim:nimbarka-date",
@@ -4910,7 +4757,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-260",
+  "id": "vedic:r2-252",
   "s": "person:badarayana",
   "p": "MENTIONED_IN",
   "o": "text:mimamsa-sutra",
@@ -4930,7 +4777,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-261",
+  "id": "vedic:r2-253",
   "s": "person:badarayana",
   "p": "MENTIONED_IN",
   "o": "text:brahma-sutra",
@@ -4953,7 +4800,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-262",
+  "id": "vedic:r2-254",
   "s": "person:jaimini",
   "p": "MENTIONED_IN",
   "o": "text:brahma-sutra",
@@ -4973,7 +4820,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-263",
+  "id": "vedic:r2-255",
   "s": "person:ishvarakrishna",
   "p": "MENTIONED_IN",
   "o": "text:samkhya-karika",
@@ -4993,7 +4840,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-264",
+  "id": "vedic:r2-256",
   "s": "person:panchashikha",
   "p": "MENTIONED_IN",
   "o": "text:samkhya-karika",
@@ -5013,7 +4860,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-265",
+  "id": "vedic:r2-257",
   "s": "person:asuri",
   "p": "MENTIONED_IN",
   "o": "text:samkhya-karika",
@@ -5033,7 +4880,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-266",
+  "id": "vedic:r2-258",
   "s": "person:asuri",
   "p": "MENTIONED_IN",
   "o": "text:yoga-bhashya",
@@ -5053,7 +4900,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-267",
+  "id": "vedic:r2-259",
   "s": "person:kanada",
   "p": "MENTIONED_IN",
   "o": "text:padarthadharmasamgraha",
@@ -5073,7 +4920,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-268",
+  "id": "vedic:r2-260",
   "s": "person:yamuna",
   "p": "MENTIONED_IN",
   "o": "text:vedarthasamgraha",
@@ -5093,7 +4940,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-269",
+  "id": "vedic:r2-261",
   "s": "person:yamuna",
   "p": "MENTIONED_IN",
   "o": "text:ramanuja-gita-bhashya",
@@ -5113,7 +4960,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-270",
+  "id": "vedic:r2-262",
   "s": "person:lagadha",
   "p": "MENTIONED_IN",
   "o": "text:vedanga-jyotisha",
@@ -5133,10 +4980,10 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-271",
-  "s": "person:gopala-bhatta",
+  "id": "vedic:r2-263",
+  "s": "person:gopala-bhatta-goswami",
   "p": "MENTIONED_IN",
-  "o": "text:shat-sandarbha",
+  "o": "text:sat-sandarbha",
   "qualifiers": {
    "note": "named as “a Bhaṭṭa”; the identification with Gopāla Bhaṭṭa is Baladeva’s gloss"
   },
@@ -5156,10 +5003,10 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-272",
+  "id": "vedic:r2-264",
   "s": "person:madhva",
   "p": "MENTIONED_IN",
-  "o": "text:shat-sandarbha",
+  "o": "text:sat-sandarbha",
   "qualifiers": {
    "note": "in Baladeva’s commentary (marked bd:), not in Jīva’s verse"
   },
@@ -5179,7 +5026,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-273",
+  "id": "vedic:r2-265",
   "s": "trad:samkhya",
   "p": "MENTIONED_IN",
   "o": "text:arthashastra",
@@ -5199,7 +5046,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-274",
+  "id": "vedic:r2-266",
   "s": "trad:yoga-darshana",
   "p": "MENTIONED_IN",
   "o": "text:arthashastra",
@@ -5220,7 +5067,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-275",
+  "id": "vedic:r2-267",
   "s": "trad:lokayata",
   "p": "MENTIONED_IN",
   "o": "text:arthashastra",
@@ -5240,7 +5087,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-276",
+  "id": "vedic:r2-268",
   "s": "psg:arthashastra-1-2-10",
   "p": "PART_OF",
   "o": "text:arthashastra",
@@ -5259,7 +5106,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-277",
+  "id": "vedic:r2-269",
   "s": "trad:samkhya",
   "p": "MENTIONED_IN",
   "o": "psg:bs-2-2",
@@ -5282,7 +5129,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-278",
+  "id": "vedic:r2-270",
   "s": "trad:vaisheshika",
   "p": "MENTIONED_IN",
   "o": "psg:bs-2-2",
@@ -5305,7 +5152,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-279",
+  "id": "vedic:r2-271",
   "s": "trad:jain",
   "p": "MENTIONED_IN",
   "o": "psg:bs-2-2",
@@ -5328,7 +5175,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-280",
+  "id": "vedic:r2-272",
   "s": "trad:pashupata",
   "p": "MENTIONED_IN",
   "o": "psg:bs-2-2",
@@ -5351,7 +5198,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-281",
+  "id": "vedic:r2-273",
   "s": "trad:pancharatra",
   "p": "MENTIONED_IN",
   "o": "psg:bs-2-2",
@@ -5383,7 +5230,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-282",
+  "id": "vedic:r2-274",
   "s": "trad:buddhist",
   "p": "MENTIONED_IN",
   "o": "psg:bs-2-2",
@@ -5406,7 +5253,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-283",
+  "id": "vedic:r2-275",
   "s": "psg:bs-2-2",
   "p": "PART_OF",
   "o": "text:brahma-sutra",
@@ -5425,7 +5272,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-284",
+  "id": "vedic:r2-276",
   "s": "psg:bs-1-1-1-4",
   "p": "PART_OF",
   "o": "text:brahma-sutra",
@@ -5445,7 +5292,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-285",
+  "id": "vedic:r2-277",
   "s": "text:brahma-sutra",
   "p": "CONTRADICTS",
   "o": "text:samkhya-karika",
@@ -5468,7 +5315,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-286",
+  "id": "vedic:r2-278",
   "s": "text:brahma-sutra",
   "p": "CONTRADICTS",
   "o": "text:vaisheshika-sutra",
@@ -5491,7 +5338,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-287",
+  "id": "vedic:r2-279",
   "s": "text:vedarthasamgraha",
   "p": "CONTRADICTS",
   "o": "text:shankara-brahmasutra-bhashya",
@@ -5514,7 +5361,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-288",
+  "id": "vedic:r2-280",
   "s": "text:vedarthasamgraha",
   "p": "CONTRADICTS",
   "o": "text:bhaskara-brahmasutra-bhashya",
@@ -5537,7 +5384,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-289",
+  "id": "vedic:r2-281",
   "s": "text:bhaskara-brahmasutra-bhashya",
   "p": "CONTRADICTS",
   "o": "text:shankara-brahmasutra-bhashya",
@@ -5556,7 +5403,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-290",
+  "id": "vedic:r2-282",
   "s": "text:advaitasiddhi",
   "p": "CONTRADICTS",
   "o": "text:nyayamrita",
@@ -5574,7 +5421,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-291",
+  "id": "vedic:r2-283",
   "s": "text:nyayamrita",
   "p": "CONTRADICTS",
   "o": "text:shankara-brahmasutra-bhashya",
@@ -5593,7 +5440,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-292",
+  "id": "vedic:r2-284",
   "s": "text:tarkatandava",
   "p": "CONTRADICTS",
   "o": "text:tattvacintamani",
@@ -5608,7 +5455,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-293",
+  "id": "vedic:r2-285",
   "s": "text:nyaya-kusumanjali",
   "p": "CONTRADICTS",
   "o": "text:shlokavarttika",
@@ -5627,7 +5474,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-294",
+  "id": "vedic:r2-286",
   "s": "text:advaitasiddhi",
   "p": "REFERS_TO_TEXT",
   "o": "text:nyayamrita",
@@ -5642,7 +5489,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-295",
+  "id": "vedic:r2-287",
   "s": "text:anuvyakhyana",
   "p": "REFERS_TO_TEXT",
   "o": "text:brahma-sutra",
@@ -5662,7 +5509,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-296",
+  "id": "vedic:r2-288",
   "s": "text:mimamsa-sutra",
   "p": "REFERS_TO_TEXT",
   "o": "col:vedic-samhitas",
@@ -5685,7 +5532,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-297",
+  "id": "vedic:r2-289",
   "s": "concept:pramana",
   "p": "MENTIONED_IN",
   "o": "text:nyaya-sutra",
@@ -5708,7 +5555,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-298",
+  "id": "vedic:r2-290",
   "s": "concept:pramana",
   "p": "MENTIONED_IN",
   "o": "text:samkhya-karika",
@@ -5731,7 +5578,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-299",
+  "id": "vedic:r2-291",
   "s": "concept:pramana",
   "p": "MENTIONED_IN",
   "o": "text:yoga-sutra",
@@ -5754,7 +5601,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-300",
+  "id": "vedic:r2-292",
   "s": "concept:prakriti",
   "p": "MENTIONED_IN",
   "o": "text:samkhya-karika",
@@ -5774,7 +5621,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-301",
+  "id": "vedic:r2-293",
   "s": "concept:purusha-samkhya",
   "p": "MENTIONED_IN",
   "o": "text:samkhya-karika",
@@ -5794,7 +5641,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-302",
+  "id": "vedic:r2-294",
   "s": "concept:purusha-samkhya",
   "p": "MENTIONED_IN",
   "o": "text:yoga-sutra",
@@ -5817,7 +5664,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-303",
+  "id": "vedic:r2-295",
   "s": "concept:guna",
   "p": "MENTIONED_IN",
   "o": "text:samkhya-karika",
@@ -5837,7 +5684,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-304",
+  "id": "vedic:r2-296",
   "s": "concept:tattvas-samkhya",
   "p": "MENTIONED_IN",
   "o": "text:samkhya-karika",
@@ -5857,7 +5704,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-305",
+  "id": "vedic:r2-297",
   "s": "concept:tattvas-samkhya",
   "p": "MENTIONED_IN",
   "o": "text:tattvasamasa",
@@ -5877,7 +5724,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-306",
+  "id": "vedic:r2-298",
   "s": "concept:satkaryavada",
   "p": "MENTIONED_IN",
   "o": "text:samkhya-karika",
@@ -5897,7 +5744,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-307",
+  "id": "vedic:r2-299",
   "s": "concept:kaivalya",
   "p": "MENTIONED_IN",
   "o": "text:yoga-sutra",
@@ -5917,7 +5764,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-308",
+  "id": "vedic:r2-300",
   "s": "concept:kaivalya",
   "p": "MENTIONED_IN",
   "o": "text:samkhya-karika",
@@ -5937,7 +5784,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-309",
+  "id": "vedic:r2-301",
   "s": "concept:samadhi",
   "p": "MENTIONED_IN",
   "o": "text:yoga-sutra",
@@ -5957,7 +5804,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-310",
+  "id": "vedic:r2-302",
   "s": "concept:samadhi",
   "p": "MENTIONED_IN",
   "o": "text:yoga-bhashya",
@@ -5977,7 +5824,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-311",
+  "id": "vedic:r2-303",
   "s": "concept:ashtanga-yoga",
   "p": "MENTIONED_IN",
   "o": "psg:ys-2-29",
@@ -5997,7 +5844,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-312",
+  "id": "vedic:r2-304",
   "s": "concept:klesha",
   "p": "MENTIONED_IN",
   "o": "text:yoga-sutra",
@@ -6017,7 +5864,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-313",
+  "id": "vedic:r2-305",
   "s": "concept:ishvara",
   "p": "MENTIONED_IN",
   "o": "text:yoga-sutra",
@@ -6037,7 +5884,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-314",
+  "id": "vedic:r2-306",
   "s": "concept:ishvara",
   "p": "MENTIONED_IN",
   "o": "text:padarthadharmasamgraha",
@@ -6057,7 +5904,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-315",
+  "id": "vedic:r2-307",
   "s": "concept:ishvara",
   "p": "MENTIONED_IN",
   "o": "text:nyaya-sutra",
@@ -6078,7 +5925,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-316",
+  "id": "vedic:r2-308",
   "s": "concept:ishvara",
   "p": "MENTIONED_IN",
   "o": "text:nyaya-kusumanjali",
@@ -6093,7 +5940,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-317",
+  "id": "vedic:r2-309",
   "s": "concept:padartha",
   "p": "MENTIONED_IN",
   "o": "text:padarthadharmasamgraha",
@@ -6113,7 +5960,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-318",
+  "id": "vedic:r2-310",
   "s": "concept:padartha",
   "p": "MENTIONED_IN",
   "o": "text:tarkasamgraha",
@@ -6133,7 +5980,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-319",
+  "id": "vedic:r2-311",
   "s": "concept:paramanu",
   "p": "MENTIONED_IN",
   "o": "text:vaisheshika-sutra",
@@ -6156,7 +6003,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-320",
+  "id": "vedic:r2-312",
   "s": "concept:paramanu",
   "p": "MENTIONED_IN",
   "o": "psg:bs-2-2",
@@ -6179,7 +6026,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-321",
+  "id": "vedic:r2-313",
   "s": "concept:apaurusheyatva",
   "p": "MENTIONED_IN",
   "o": "psg:ms-1-1-1-5",
@@ -6202,7 +6049,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-322",
+  "id": "vedic:r2-314",
   "s": "concept:apurva",
   "p": "MENTIONED_IN",
   "o": "text:shabara-bhashya",
@@ -6220,7 +6067,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-323",
+  "id": "vedic:r2-315",
   "s": "concept:maya",
   "p": "MENTIONED_IN",
   "o": "text:mandukya-karika",
@@ -6240,7 +6087,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-324",
+  "id": "vedic:r2-316",
   "s": "concept:maya",
   "p": "MENTIONED_IN",
   "o": "text:shvetashvatara-upanishad",
@@ -6259,7 +6106,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-325",
+  "id": "vedic:r2-317",
   "s": "concept:avidya",
   "p": "MENTIONED_IN",
   "o": "text:yoga-sutra",
@@ -6279,7 +6126,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-326",
+  "id": "vedic:r2-318",
   "s": "concept:avidya",
   "p": "MENTIONED_IN",
   "o": "text:shankara-brahmasutra-bhashya",
@@ -6298,7 +6145,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-327",
+  "id": "vedic:r2-319",
   "s": "concept:adhyasa",
   "p": "MENTIONED_IN",
   "o": "text:shankara-brahmasutra-bhashya",
@@ -6320,7 +6167,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-328",
+  "id": "vedic:r2-320",
   "s": "concept:adhyasa",
   "p": "MENTIONED_IN",
   "o": "text:panchapadika",
@@ -6335,7 +6182,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-329",
+  "id": "vedic:r2-321",
   "s": "concept:vivarta",
   "p": "MENTIONED_IN",
   "o": "text:vedantasara",
@@ -6351,7 +6198,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-330",
+  "id": "vedic:r2-322",
   "s": "concept:lila",
   "p": "MENTIONED_IN",
   "o": "text:brahma-sutra",
@@ -6371,7 +6218,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-331",
+  "id": "vedic:r2-323",
   "s": "concept:lila",
   "p": "MENTIONED_IN",
   "o": "text:mandukya-karika",
@@ -6394,7 +6241,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-332",
+  "id": "vedic:r2-324",
   "s": "concept:jiva",
   "p": "MENTIONED_IN",
   "o": "text:mahabharata-tatparya-nirnaya",
@@ -6414,7 +6261,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-333",
+  "id": "vedic:r2-325",
   "s": "concept:jivanmukti",
   "p": "MENTIONED_IN",
   "o": "text:samkhya-karika",
@@ -6437,7 +6284,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-334",
+  "id": "vedic:r2-326",
   "s": "concept:jivanmukti",
   "p": "MENTIONED_IN",
   "o": "text:jivanmuktiviveka",
@@ -6453,7 +6300,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-335",
+  "id": "vedic:r2-327",
   "s": "concept:viveka",
   "p": "MENTIONED_IN",
   "o": "text:yoga-sutra",
@@ -6473,7 +6320,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-336",
+  "id": "vedic:r2-328",
   "s": "concept:viveka",
   "p": "MENTIONED_IN",
   "o": "text:shankara-brahmasutra-bhashya",
@@ -6493,7 +6340,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-337",
+  "id": "vedic:r2-329",
   "s": "concept:sadhana-chatushtaya",
   "p": "MENTIONED_IN",
   "o": "text:shankara-brahmasutra-bhashya",
@@ -6513,7 +6360,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-338",
+  "id": "vedic:r2-330",
   "s": "concept:sadhana-chatushtaya",
   "p": "MENTIONED_IN",
   "o": "text:vedantasara",
@@ -6529,7 +6376,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-339",
+  "id": "vedic:r2-331",
   "s": "concept:sharira-shariri-bhava",
   "p": "MENTIONED_IN",
   "o": "text:vedarthasamgraha",
@@ -6549,7 +6396,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-340",
+  "id": "vedic:r2-332",
   "s": "concept:panchabheda",
   "p": "MENTIONED_IN",
   "o": "text:mahabharata-tatparya-nirnaya",
@@ -6569,7 +6416,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-341",
+  "id": "vedic:r2-333",
   "s": "concept:panchabheda",
   "p": "MENTIONED_IN",
   "o": "text:anuvyakhyana",
@@ -6589,7 +6436,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-342",
+  "id": "vedic:r2-334",
   "s": "concept:sphota",
   "p": "MENTIONED_IN",
   "o": "text:vakyapadiya",
@@ -6604,7 +6451,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-343",
+  "id": "vedic:r2-335",
   "s": "concept:bhakti",
   "p": "MENTIONED_IN",
   "o": "psg:svu-6-23",
@@ -6622,7 +6469,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-344",
+  "id": "vedic:r2-336",
   "s": "concept:bhakti",
   "p": "MENTIONED_IN",
   "o": "text:ashtadhyayi",
@@ -6643,10 +6490,10 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-345",
+  "id": "vedic:r2-337",
   "s": "concept:bhakti",
   "p": "MENTIONED_IN",
-  "o": "text:bhaktirasamritasindhu",
+  "o": "text:bhaktirasamrtasindhu",
   "evidenceClass": 5,
   "sources": [
    {
@@ -6658,7 +6505,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-346",
+  "id": "vedic:r2-338",
   "s": "concept:turiya",
   "p": "MENTIONED_IN",
   "o": "text:mandukya-upanishad",
@@ -6678,7 +6525,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-347",
+  "id": "vedic:r2-339",
   "s": "concept:turiya",
   "p": "MENTIONED_IN",
   "o": "text:mandukya-karika",
@@ -6701,7 +6548,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-348",
+  "id": "vedic:r2-340",
   "s": "concept:ahimsa",
   "p": "MENTIONED_IN",
   "o": "text:yoga-sutra",
@@ -6721,7 +6568,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-349",
+  "id": "vedic:r2-341",
   "s": "concept:ashrama",
   "p": "MENTIONED_IN",
   "o": "text:apastamba-dharma-sutra",
@@ -6741,7 +6588,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-350",
+  "id": "vedic:r2-342",
   "s": "concept:ashrama",
   "p": "MENTIONED_IN",
   "o": "text:gautama-dharma-sutra",
@@ -6761,7 +6608,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-351",
+  "id": "vedic:r2-343",
   "s": "concept:ashrama",
   "p": "MENTIONED_IN",
   "o": "text:baudhayana-dharma-sutra",
@@ -6781,7 +6628,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-352",
+  "id": "vedic:r2-344",
   "s": "concept:ashrama",
   "p": "MENTIONED_IN",
   "o": "text:jabala-upanishad",
@@ -6800,7 +6647,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-353",
+  "id": "vedic:r2-345",
   "s": "concept:samskara",
   "p": "MENTIONED_IN",
   "o": "text:ashvalayana-grihya-sutra",
@@ -6815,7 +6662,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-354",
+  "id": "vedic:r2-346",
   "s": "concept:samskara",
   "p": "MENTIONED_IN",
   "o": "text:paraskara-grihya-sutra",
@@ -6830,7 +6677,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-355",
+  "id": "vedic:r2-347",
   "s": "concept:vyavahara",
   "p": "MENTIONED_IN",
   "o": "text:narada-smriti",
@@ -6850,7 +6697,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-356",
+  "id": "vedic:r2-348",
   "s": "concept:vyavahara",
   "p": "MENTIONED_IN",
   "o": "text:yajnavalkya-smriti",
@@ -6871,7 +6718,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-357",
+  "id": "vedic:r2-349",
   "s": "concept:daya",
   "p": "MENTIONED_IN",
   "o": "psg:yajnavalkya-2-121",
@@ -6891,7 +6738,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-358",
+  "id": "vedic:r2-350",
   "s": "concept:daya",
   "p": "MENTIONED_IN",
   "o": "text:mitakshara",
@@ -6911,7 +6758,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-359",
+  "id": "vedic:r2-351",
   "s": "concept:daya",
   "p": "MENTIONED_IN",
   "o": "text:dayabhaga",
@@ -6926,7 +6773,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-360",
+  "id": "vedic:r2-352",
   "s": "concept:daya",
   "p": "MENTIONED_IN",
   "o": "text:manusmriti",
@@ -6948,7 +6795,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-361",
+  "id": "vedic:r2-353",
   "s": "psg:yajnavalkya-2-121",
   "p": "PART_OF",
   "o": "text:yajnavalkya-smriti",
@@ -6967,7 +6814,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-362",
+  "id": "vedic:r2-354",
   "s": "concept:mahavakya",
   "p": "CENTRAL_TO",
   "o": "trad:advaita-vedanta",
@@ -6982,7 +6829,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-363",
+  "id": "vedic:r2-355",
   "s": "concept:mahavakya",
   "p": "DERIVED_FROM",
   "o": "psg:cu-6-8-7",
@@ -7006,7 +6853,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-364",
+  "id": "vedic:r2-356",
   "s": "concept:mahavakya",
   "p": "DERIVED_FROM",
   "o": "psg:bu-1-4",
@@ -7030,7 +6877,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-365",
+  "id": "vedic:r2-357",
   "s": "concept:mahavakya",
   "p": "DERIVED_FROM",
   "o": "psg:mandukya-1-12",
@@ -7054,7 +6901,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-366",
+  "id": "vedic:r2-358",
   "s": "concept:mahavakya",
   "p": "DERIVED_FROM",
   "o": "text:aitareya-upanishad",
@@ -7077,7 +6924,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-367",
+  "id": "vedic:r2-359",
   "s": "concept:saccidananda",
   "p": "IDENTIFIED_WITH",
   "o": "concept:brahman",
@@ -7100,7 +6947,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-368",
+  "id": "vedic:r2-360",
   "s": "concept:kaivalya",
   "p": "IDENTIFIED_WITH",
   "o": "concept:moksha",
@@ -7122,7 +6969,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-369",
+  "id": "vedic:r2-361",
   "s": "concept:avidya",
   "p": "IDENTIFIED_WITH",
   "o": "concept:maya",
@@ -7145,7 +6992,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-370",
+  "id": "vedic:r2-362",
   "s": "concept:guna",
   "p": "PART_OF",
   "o": "concept:prakriti",
@@ -7167,7 +7014,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-371",
+  "id": "vedic:r2-363",
   "s": "concept:prakriti",
   "p": "PART_OF",
   "o": "concept:tattvas-samkhya",
@@ -7182,7 +7029,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-372",
+  "id": "vedic:r2-364",
   "s": "concept:purusha-samkhya",
   "p": "PART_OF",
   "o": "concept:tattvas-samkhya",
@@ -7197,7 +7044,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-373",
+  "id": "vedic:r2-365",
   "s": "concept:samadhi",
   "p": "PART_OF",
   "o": "concept:ashtanga-yoga",
@@ -7215,7 +7062,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-374",
+  "id": "vedic:r2-366",
   "s": "concept:ahimsa",
   "p": "PART_OF",
   "o": "concept:ashtanga-yoga",
@@ -7236,7 +7083,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-375",
+  "id": "vedic:r2-367",
   "s": "concept:viveka",
   "p": "PART_OF",
   "o": "concept:sadhana-chatushtaya",
@@ -7254,7 +7101,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-376",
+  "id": "vedic:r2-368",
   "s": "concept:prakriti",
   "p": "CENTRAL_TO",
   "o": "trad:samkhya",
@@ -7269,7 +7116,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-377",
+  "id": "vedic:r2-369",
   "s": "concept:purusha-samkhya",
   "p": "CENTRAL_TO",
   "o": "trad:samkhya",
@@ -7284,7 +7131,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-378",
+  "id": "vedic:r2-370",
   "s": "concept:guna",
   "p": "CENTRAL_TO",
   "o": "trad:samkhya",
@@ -7299,7 +7146,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-379",
+  "id": "vedic:r2-371",
   "s": "concept:satkaryavada",
   "p": "CENTRAL_TO",
   "o": "trad:samkhya",
@@ -7314,7 +7161,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-380",
+  "id": "vedic:r2-372",
   "s": "concept:tattvas-samkhya",
   "p": "CENTRAL_TO",
   "o": "trad:samkhya",
@@ -7329,7 +7176,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-381",
+  "id": "vedic:r2-373",
   "s": "concept:kaivalya",
   "p": "CENTRAL_TO",
   "o": "trad:samkhya",
@@ -7344,7 +7191,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-382",
+  "id": "vedic:r2-374",
   "s": "concept:kaivalya",
   "p": "CENTRAL_TO",
   "o": "trad:yoga-darshana",
@@ -7359,7 +7206,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-383",
+  "id": "vedic:r2-375",
   "s": "concept:ashtanga-yoga",
   "p": "CENTRAL_TO",
   "o": "trad:yoga-darshana",
@@ -7374,7 +7221,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-384",
+  "id": "vedic:r2-376",
   "s": "concept:klesha",
   "p": "CENTRAL_TO",
   "o": "trad:yoga-darshana",
@@ -7389,7 +7236,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-385",
+  "id": "vedic:r2-377",
   "s": "concept:samadhi",
   "p": "CENTRAL_TO",
   "o": "trad:yoga-darshana",
@@ -7404,7 +7251,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-386",
+  "id": "vedic:r2-378",
   "s": "concept:ishvara",
   "p": "CENTRAL_TO",
   "o": "trad:yoga-darshana",
@@ -7419,7 +7266,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-387",
+  "id": "vedic:r2-379",
   "s": "concept:pramana",
   "p": "CENTRAL_TO",
   "o": "trad:nyaya",
@@ -7434,7 +7281,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-388",
+  "id": "vedic:r2-380",
   "s": "concept:ishvara",
   "p": "CENTRAL_TO",
   "o": "trad:nyaya",
@@ -7449,7 +7296,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-389",
+  "id": "vedic:r2-381",
   "s": "concept:padartha",
   "p": "CENTRAL_TO",
   "o": "trad:vaisheshika",
@@ -7464,7 +7311,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-390",
+  "id": "vedic:r2-382",
   "s": "concept:paramanu",
   "p": "CENTRAL_TO",
   "o": "trad:vaisheshika",
@@ -7479,7 +7326,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-391",
+  "id": "vedic:r2-383",
   "s": "concept:apurva",
   "p": "CENTRAL_TO",
   "o": "trad:mimamsa",
@@ -7494,7 +7341,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-392",
+  "id": "vedic:r2-384",
   "s": "concept:apaurusheyatva",
   "p": "CENTRAL_TO",
   "o": "trad:mimamsa",
@@ -7509,7 +7356,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-393",
+  "id": "vedic:r2-385",
   "s": "concept:maya",
   "p": "CENTRAL_TO",
   "o": "trad:advaita-vedanta",
@@ -7524,7 +7371,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-394",
+  "id": "vedic:r2-386",
   "s": "concept:avidya",
   "p": "CENTRAL_TO",
   "o": "trad:advaita-vedanta",
@@ -7539,7 +7386,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-395",
+  "id": "vedic:r2-387",
   "s": "concept:adhyasa",
   "p": "CENTRAL_TO",
   "o": "trad:advaita-vedanta",
@@ -7554,7 +7401,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-396",
+  "id": "vedic:r2-388",
   "s": "concept:vivarta",
   "p": "CENTRAL_TO",
   "o": "trad:advaita-vedanta",
@@ -7569,7 +7416,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-397",
+  "id": "vedic:r2-389",
   "s": "concept:jivanmukti",
   "p": "CENTRAL_TO",
   "o": "trad:advaita-vedanta",
@@ -7584,7 +7431,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-398",
+  "id": "vedic:r2-390",
   "s": "concept:sadhana-chatushtaya",
   "p": "CENTRAL_TO",
   "o": "trad:advaita-vedanta",
@@ -7599,7 +7446,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-399",
+  "id": "vedic:r2-391",
   "s": "concept:sharira-shariri-bhava",
   "p": "CENTRAL_TO",
   "o": "trad:vishishtadvaita",
@@ -7614,7 +7461,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-400",
+  "id": "vedic:r2-392",
   "s": "concept:panchabheda",
   "p": "CENTRAL_TO",
   "o": "trad:dvaita",
@@ -7629,7 +7476,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-401",
+  "id": "vedic:r2-393",
   "s": "concept:bhakti",
   "p": "CENTRAL_TO",
   "o": "trad:vishishtadvaita",
@@ -7644,7 +7491,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-402",
+  "id": "vedic:r2-394",
   "s": "concept:bhakti",
   "p": "CENTRAL_TO",
   "o": "trad:dvaita",
@@ -7659,7 +7506,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-403",
+  "id": "vedic:r2-395",
   "s": "concept:bhakti",
   "p": "CENTRAL_TO",
   "o": "trad:achintya-bhedabheda",
@@ -7674,7 +7521,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-404",
+  "id": "vedic:r2-396",
   "s": "concept:bhakti",
   "p": "CENTRAL_TO",
   "o": "trad:shuddhadvaita",
@@ -7689,7 +7536,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-405",
+  "id": "vedic:r2-397",
   "s": "concept:lila",
   "p": "CENTRAL_TO",
   "o": "trad:shuddhadvaita",
@@ -7704,7 +7551,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-406",
+  "id": "vedic:r2-398",
   "s": "concept:lila",
   "p": "CENTRAL_TO",
   "o": "trad:achintya-bhedabheda",
@@ -7719,7 +7566,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-407",
+  "id": "vedic:r2-399",
   "s": "concept:sphota",
   "p": "CENTRAL_TO",
   "o": "col:vyakarana",
@@ -7737,7 +7584,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-408",
+  "id": "vedic:r2-400",
   "s": "col:shiksha",
   "p": "PART_OF",
   "o": "col:vedangas",
@@ -7759,7 +7606,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-409",
+  "id": "vedic:r2-401",
   "s": "col:vyakarana",
   "p": "PART_OF",
   "o": "col:vedangas",
@@ -7781,7 +7628,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-410",
+  "id": "vedic:r2-402",
   "s": "col:chandas",
   "p": "PART_OF",
   "o": "col:vedangas",
@@ -7803,7 +7650,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-411",
+  "id": "vedic:r2-403",
   "s": "col:jyotisha",
   "p": "PART_OF",
   "o": "col:vedangas",
@@ -7825,7 +7672,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-412",
+  "id": "vedic:r2-404",
   "s": "col:sutras",
   "p": "PART_OF",
   "o": "col:vedangas",
@@ -7850,7 +7697,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-413",
+  "id": "vedic:r2-405",
   "s": "col:shrauta-sutras",
   "p": "PART_OF",
   "o": "col:sutras",
@@ -7869,7 +7716,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-414",
+  "id": "vedic:r2-406",
   "s": "col:grihya-sutras",
   "p": "PART_OF",
   "o": "col:sutras",
@@ -7888,7 +7735,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-415",
+  "id": "vedic:r2-407",
   "s": "col:dharma-sutras",
   "p": "PART_OF",
   "o": "col:sutras",
@@ -7907,7 +7754,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-416",
+  "id": "vedic:r2-408",
   "s": "col:shulba-sutras",
   "p": "PART_OF",
   "o": "col:sutras",
@@ -7926,7 +7773,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-417",
+  "id": "vedic:r2-409",
   "s": "col:dharma-sutras",
   "p": "PART_OF",
   "o": "col:dharmashastra",
@@ -7949,7 +7796,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-418",
+  "id": "vedic:r2-410",
   "s": "text:rigveda-pratishakhya",
   "p": "PART_OF",
   "o": "col:shiksha",
@@ -7964,7 +7811,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-419",
+  "id": "vedic:r2-411",
   "s": "text:taittiriya-pratishakhya",
   "p": "PART_OF",
   "o": "col:shiksha",
@@ -7979,7 +7826,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-420",
+  "id": "vedic:r2-412",
   "s": "text:vajasaneyi-pratishakhya",
   "p": "PART_OF",
   "o": "col:shiksha",
@@ -7994,7 +7841,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-421",
+  "id": "vedic:r2-413",
   "s": "text:atharva-pratishakhya",
   "p": "PART_OF",
   "o": "col:shiksha",
@@ -8009,7 +7856,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-422",
+  "id": "vedic:r2-414",
   "s": "text:paniniya-shiksha",
   "p": "PART_OF",
   "o": "col:shiksha",
@@ -8024,7 +7871,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-423",
+  "id": "vedic:r2-415",
   "s": "text:ashtadhyayi",
   "p": "PART_OF",
   "o": "col:vyakarana",
@@ -8039,7 +7886,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-424",
+  "id": "vedic:r2-416",
   "s": "text:mahabhashya",
   "p": "PART_OF",
   "o": "col:vyakarana",
@@ -8054,7 +7901,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-425",
+  "id": "vedic:r2-417",
   "s": "text:vakyapadiya",
   "p": "PART_OF",
   "o": "col:vyakarana",
@@ -8069,7 +7916,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-426",
+  "id": "vedic:r2-418",
   "s": "text:chandahshastra",
   "p": "PART_OF",
   "o": "col:chandas",
@@ -8084,7 +7931,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-427",
+  "id": "vedic:r2-419",
   "s": "text:vedanga-jyotisha",
   "p": "PART_OF",
   "o": "col:jyotisha",
@@ -8107,7 +7954,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-428",
+  "id": "vedic:r2-420",
   "s": "text:apastamba-shrauta-sutra",
   "p": "PART_OF",
   "o": "col:shrauta-sutras",
@@ -8122,7 +7969,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-429",
+  "id": "vedic:r2-421",
   "s": "text:baudhayana-shrauta-sutra",
   "p": "PART_OF",
   "o": "col:shrauta-sutras",
@@ -8137,7 +7984,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-430",
+  "id": "vedic:r2-422",
   "s": "text:katyayana-shrauta-sutra",
   "p": "PART_OF",
   "o": "col:shrauta-sutras",
@@ -8152,7 +7999,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-431",
+  "id": "vedic:r2-423",
   "s": "text:ashvalayana-shrauta-sutra",
   "p": "PART_OF",
   "o": "col:shrauta-sutras",
@@ -8167,7 +8014,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-432",
+  "id": "vedic:r2-424",
   "s": "text:shankhayana-shrauta-sutra",
   "p": "PART_OF",
   "o": "col:shrauta-sutras",
@@ -8182,7 +8029,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-433",
+  "id": "vedic:r2-425",
   "s": "text:ashvalayana-grihya-sutra",
   "p": "PART_OF",
   "o": "col:grihya-sutras",
@@ -8197,7 +8044,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-434",
+  "id": "vedic:r2-426",
   "s": "text:paraskara-grihya-sutra",
   "p": "PART_OF",
   "o": "col:grihya-sutras",
@@ -8212,7 +8059,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-435",
+  "id": "vedic:r2-427",
   "s": "text:apastamba-grihya-sutra",
   "p": "PART_OF",
   "o": "col:grihya-sutras",
@@ -8227,7 +8074,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-436",
+  "id": "vedic:r2-428",
   "s": "text:apastamba-dharma-sutra",
   "p": "PART_OF",
   "o": "col:dharma-sutras",
@@ -8247,7 +8094,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-437",
+  "id": "vedic:r2-429",
   "s": "text:gautama-dharma-sutra",
   "p": "PART_OF",
   "o": "col:dharma-sutras",
@@ -8267,7 +8114,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-438",
+  "id": "vedic:r2-430",
   "s": "text:baudhayana-dharma-sutra",
   "p": "PART_OF",
   "o": "col:dharma-sutras",
@@ -8287,7 +8134,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-439",
+  "id": "vedic:r2-431",
   "s": "text:vasishtha-dharma-sutra",
   "p": "PART_OF",
   "o": "col:dharma-sutras",
@@ -8307,7 +8154,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-440",
+  "id": "vedic:r2-432",
   "s": "text:baudhayana-shulba-sutra",
   "p": "PART_OF",
   "o": "col:shulba-sutras",
@@ -8322,7 +8169,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-441",
+  "id": "vedic:r2-433",
   "s": "text:apastamba-shulba-sutra",
   "p": "PART_OF",
   "o": "col:shulba-sutras",
@@ -8337,7 +8184,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-442",
+  "id": "vedic:r2-434",
   "s": "text:yajnavalkya-smriti",
   "p": "PART_OF",
   "o": "col:dharmashastra",
@@ -8355,7 +8202,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-443",
+  "id": "vedic:r2-435",
   "s": "text:narada-smriti",
   "p": "PART_OF",
   "o": "col:dharmashastra",
@@ -8373,7 +8220,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-444",
+  "id": "vedic:r2-436",
   "s": "text:parashara-smriti",
   "p": "PART_OF",
   "o": "col:dharmashastra",
@@ -8391,7 +8238,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-445",
+  "id": "vedic:r2-437",
   "s": "text:vishnu-smriti",
   "p": "PART_OF",
   "o": "col:dharmashastra",
@@ -8409,7 +8256,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-446",
+  "id": "vedic:r2-438",
   "s": "text:katyayana-smriti",
   "p": "PART_OF",
   "o": "col:dharmashastra",
@@ -8427,7 +8274,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-447",
+  "id": "vedic:r2-439",
   "s": "text:mitakshara",
   "p": "PART_OF",
   "o": "col:dharmashastra",
@@ -8445,7 +8292,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-448",
+  "id": "vedic:r2-440",
   "s": "text:dayabhaga",
   "p": "PART_OF",
   "o": "col:dharmashastra",
@@ -8463,7 +8310,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-449",
+  "id": "vedic:r2-441",
   "s": "text:manubhashya",
   "p": "PART_OF",
   "o": "col:dharmashastra",
@@ -8481,7 +8328,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-450",
+  "id": "vedic:r2-442",
   "s": "text:apastamba-shrauta-sutra",
   "p": "PART_OF",
   "o": "text:taittiriya-samhita",
@@ -8499,7 +8346,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-451",
+  "id": "vedic:r2-443",
   "s": "text:baudhayana-shrauta-sutra",
   "p": "PART_OF",
   "o": "text:taittiriya-samhita",
@@ -8517,7 +8364,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-452",
+  "id": "vedic:r2-444",
   "s": "text:katyayana-shrauta-sutra",
   "p": "PART_OF",
   "o": "text:shukla-yajurveda",
@@ -8535,7 +8382,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-453",
+  "id": "vedic:r2-445",
   "s": "text:ashvalayana-shrauta-sutra",
   "p": "PART_OF",
   "o": "text:rigveda",
@@ -8553,7 +8400,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-454",
+  "id": "vedic:r2-446",
   "s": "text:shankhayana-shrauta-sutra",
   "p": "PART_OF",
   "o": "text:rigveda",
@@ -8571,7 +8418,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-455",
+  "id": "vedic:r2-447",
   "s": "text:ashvalayana-grihya-sutra",
   "p": "PART_OF",
   "o": "text:rigveda",
@@ -8589,7 +8436,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-456",
+  "id": "vedic:r2-448",
   "s": "text:paraskara-grihya-sutra",
   "p": "PART_OF",
   "o": "text:shukla-yajurveda",
@@ -8607,7 +8454,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-457",
+  "id": "vedic:r2-449",
   "s": "text:rigveda-pratishakhya",
   "p": "PART_OF",
   "o": "text:rigveda",
@@ -8625,7 +8472,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-458",
+  "id": "vedic:r2-450",
   "s": "text:taittiriya-pratishakhya",
   "p": "PART_OF",
   "o": "text:taittiriya-samhita",
@@ -8643,7 +8490,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-459",
+  "id": "vedic:r2-451",
   "s": "text:vajasaneyi-pratishakhya",
   "p": "PART_OF",
   "o": "text:shukla-yajurveda",
@@ -8661,7 +8508,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-460",
+  "id": "vedic:r2-452",
   "s": "text:atharva-pratishakhya",
   "p": "PART_OF",
   "o": "text:atharvaveda",
@@ -8679,7 +8526,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-461",
+  "id": "vedic:r2-453",
   "s": "text:rigveda-pratishakhya",
   "p": "DERIVED_FROM",
   "o": "text:rigveda",
@@ -8703,7 +8550,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-462",
+  "id": "vedic:r2-454",
   "s": "text:dayabhaga",
   "p": "CONTRADICTS",
   "o": "text:mitakshara",
@@ -8725,7 +8572,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-463",
+  "id": "vedic:r2-455",
   "s": "text:yajnavalkya-smriti",
   "p": "DERIVED_FROM",
   "o": "text:manusmriti",
@@ -8746,7 +8593,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-464",
+  "id": "vedic:r2-456",
   "s": "text:narada-smriti",
   "p": "DERIVED_FROM",
   "o": "text:manusmriti",
@@ -8761,7 +8608,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-465",
+  "id": "vedic:r2-457",
   "s": "text:vishnu-smriti",
   "p": "DERIVED_FROM",
   "o": "text:manusmriti",
@@ -8779,7 +8626,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-466",
+  "id": "vedic:r2-458",
   "s": "text:maitrayaniya-upanishad",
   "p": "PART_OF",
   "o": "col:upanishads",
@@ -8801,7 +8648,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-467",
+  "id": "vedic:r2-459",
   "s": "text:mahanarayana-upanishad",
   "p": "PART_OF",
   "o": "col:upanishads",
@@ -8823,7 +8670,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-468",
+  "id": "vedic:r2-460",
   "s": "text:jabala-upanishad",
   "p": "PART_OF",
   "o": "col:upanishads",
@@ -8845,7 +8692,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-469",
+  "id": "vedic:r2-461",
   "s": "text:paramahamsa-upanishad",
   "p": "PART_OF",
   "o": "col:upanishads",
@@ -8867,7 +8714,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-470",
+  "id": "vedic:r2-462",
   "s": "text:aruneya-upanishad",
   "p": "PART_OF",
   "o": "col:upanishads",
@@ -8889,7 +8736,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-471",
+  "id": "vedic:r2-463",
   "s": "text:kaivalya-upanishad",
   "p": "PART_OF",
   "o": "col:upanishads",
@@ -8911,7 +8758,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-472",
+  "id": "vedic:r2-464",
   "s": "text:atharvashiras-upanishad",
   "p": "PART_OF",
   "o": "col:upanishads",
@@ -8933,7 +8780,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-473",
+  "id": "vedic:r2-465",
   "s": "text:garbha-upanishad",
   "p": "PART_OF",
   "o": "col:upanishads",
@@ -8955,7 +8802,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-474",
+  "id": "vedic:r2-466",
   "s": "text:brahmabindu-upanishad",
   "p": "PART_OF",
   "o": "col:upanishads",
@@ -8977,7 +8824,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-475",
+  "id": "vedic:r2-467",
   "s": "text:nadabindu-upanishad",
   "p": "PART_OF",
   "o": "col:upanishads",
@@ -8999,7 +8846,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-476",
+  "id": "vedic:r2-468",
   "s": "text:amritabindu-upanishad",
   "p": "PART_OF",
   "o": "col:upanishads",
@@ -9021,7 +8868,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-477",
+  "id": "vedic:r2-469",
   "s": "text:hamsa-upanishad",
   "p": "PART_OF",
   "o": "col:upanishads",
@@ -9043,7 +8890,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-478",
+  "id": "vedic:r2-470",
   "s": "text:paingala-upanishad",
   "p": "PART_OF",
   "o": "col:upanishads",
@@ -9065,7 +8912,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-479",
+  "id": "vedic:r2-471",
   "s": "text:subala-upanishad",
   "p": "PART_OF",
   "o": "col:upanishads",
@@ -9087,7 +8934,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-480",
+  "id": "vedic:r2-472",
   "s": "text:vajrasuchi-upanishad",
   "p": "PART_OF",
   "o": "col:upanishads",
@@ -9109,7 +8956,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-481",
+  "id": "vedic:r2-473",
   "s": "text:nrisimha-tapaniya-upanishad",
   "p": "PART_OF",
   "o": "col:upanishads",
@@ -9131,7 +8978,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-482",
+  "id": "vedic:r2-474",
   "s": "text:rama-tapaniya-upanishad",
   "p": "PART_OF",
   "o": "col:upanishads",
@@ -9153,7 +9000,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-483",
+  "id": "vedic:r2-475",
   "s": "text:gopala-tapani-upanishad",
   "p": "PART_OF",
   "o": "col:upanishads",
@@ -9175,7 +9022,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-484",
+  "id": "vedic:r2-476",
   "s": "text:ganapati-atharvashirsha",
   "p": "PART_OF",
   "o": "col:upanishads",
@@ -9197,7 +9044,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-485",
+  "id": "vedic:r2-477",
   "s": "text:muktika-upanishad",
   "p": "PART_OF",
   "o": "col:upanishads",
@@ -9219,7 +9066,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-486",
+  "id": "vedic:r2-478",
   "s": "text:shivasamkalpa-upanishad",
   "p": "PART_OF",
   "o": "col:upanishads",
@@ -9241,7 +9088,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-487",
+  "id": "vedic:r2-479",
   "s": "text:nadabindu-upanishad",
   "p": "PART_OF",
   "o": "col:yoga-upanishads",
@@ -9262,7 +9109,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-488",
+  "id": "vedic:r2-480",
   "s": "text:amritabindu-upanishad",
   "p": "PART_OF",
   "o": "col:yoga-upanishads",
@@ -9283,7 +9130,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-489",
+  "id": "vedic:r2-481",
   "s": "text:hamsa-upanishad",
   "p": "PART_OF",
   "o": "col:yoga-upanishads",
@@ -9304,7 +9151,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-490",
+  "id": "vedic:r2-482",
   "s": "text:brahmabindu-upanishad",
   "p": "PART_OF",
   "o": "col:yoga-upanishads",
@@ -9325,7 +9172,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-491",
+  "id": "vedic:r2-483",
   "s": "text:jabala-upanishad",
   "p": "PART_OF",
   "o": "col:sannyasa-upanishads",
@@ -9344,7 +9191,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-492",
+  "id": "vedic:r2-484",
   "s": "text:paramahamsa-upanishad",
   "p": "PART_OF",
   "o": "col:sannyasa-upanishads",
@@ -9363,7 +9210,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-493",
+  "id": "vedic:r2-485",
   "s": "text:aruneya-upanishad",
   "p": "PART_OF",
   "o": "col:sannyasa-upanishads",
@@ -9382,7 +9229,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-494",
+  "id": "vedic:r2-486",
   "s": "text:nrisimha-tapaniya-upanishad",
   "p": "PART_OF",
   "o": "col:vaishnava-upanishads",
@@ -9402,7 +9249,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-495",
+  "id": "vedic:r2-487",
   "s": "text:rama-tapaniya-upanishad",
   "p": "PART_OF",
   "o": "col:vaishnava-upanishads",
@@ -9422,7 +9269,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-496",
+  "id": "vedic:r2-488",
   "s": "text:gopala-tapani-upanishad",
   "p": "PART_OF",
   "o": "col:vaishnava-upanishads",
@@ -9442,7 +9289,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-497",
+  "id": "vedic:r2-489",
   "s": "text:atharvashiras-upanishad",
   "p": "PART_OF",
   "o": "col:shaiva-upanishads",
@@ -9462,7 +9309,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-498",
+  "id": "vedic:r2-490",
   "s": "text:kaivalya-upanishad",
   "p": "PART_OF",
   "o": "col:shaiva-upanishads",
@@ -9482,7 +9329,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-499",
+  "id": "vedic:r2-491",
   "s": "col:yoga-upanishads",
   "p": "PART_OF",
   "o": "col:upanishads",
@@ -9501,7 +9348,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-500",
+  "id": "vedic:r2-492",
   "s": "col:sannyasa-upanishads",
   "p": "PART_OF",
   "o": "col:upanishads",
@@ -9520,7 +9367,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-501",
+  "id": "vedic:r2-493",
   "s": "col:vaishnava-upanishads",
   "p": "PART_OF",
   "o": "col:upanishads",
@@ -9539,7 +9386,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-502",
+  "id": "vedic:r2-494",
   "s": "col:shaiva-upanishads",
   "p": "PART_OF",
   "o": "col:upanishads",
@@ -9558,7 +9405,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-503",
+  "id": "vedic:r2-495",
   "s": "concept:muktika-canon",
   "p": "MENTIONED_IN",
   "o": "text:muktika-upanishad",
@@ -9579,8 +9426,200 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-504",
+  "id": "vedic:r2-496",
   "s": "text:kaivalya-upanishad",
+  "p": "MENTIONED_IN",
+  "o": "text:muktika-upanishad",
+  "qualifiers": {
+   "note": "listed in the Muktikā canon of 108"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:deussen-1897",
+    "locator": "Muktikā list, pp. 556–558 (as cited on Wikipedia)"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "pointer",
+    "url": "https://en.wikipedia.org/wiki/Muktik%C4%81"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "vedic"
+ },
+ {
+  "id": "vedic:r2-497",
+  "s": "text:jabala-upanishad",
+  "p": "MENTIONED_IN",
+  "o": "text:muktika-upanishad",
+  "qualifiers": {
+   "note": "listed in the Muktikā canon of 108"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:deussen-1897",
+    "locator": "Muktikā list, pp. 556–558 (as cited on Wikipedia)"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "pointer",
+    "url": "https://en.wikipedia.org/wiki/Muktik%C4%81"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "vedic"
+ },
+ {
+  "id": "vedic:r2-498",
+  "s": "text:paingala-upanishad",
+  "p": "MENTIONED_IN",
+  "o": "text:muktika-upanishad",
+  "qualifiers": {
+   "note": "listed in the Muktikā canon of 108"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:deussen-1897",
+    "locator": "Muktikā list, pp. 556–558 (as cited on Wikipedia)"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "pointer",
+    "url": "https://en.wikipedia.org/wiki/Muktik%C4%81"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "vedic"
+ },
+ {
+  "id": "vedic:r2-499",
+  "s": "text:hamsa-upanishad",
+  "p": "MENTIONED_IN",
+  "o": "text:muktika-upanishad",
+  "qualifiers": {
+   "note": "listed in the Muktikā canon of 108"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:deussen-1897",
+    "locator": "Muktikā list, pp. 556–558 (as cited on Wikipedia)"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "pointer",
+    "url": "https://en.wikipedia.org/wiki/Muktik%C4%81"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "vedic"
+ },
+ {
+  "id": "vedic:r2-500",
+  "s": "text:atharvashiras-upanishad",
+  "p": "MENTIONED_IN",
+  "o": "text:muktika-upanishad",
+  "qualifiers": {
+   "note": "listed in the Muktikā canon of 108"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:deussen-1897",
+    "locator": "Muktikā list, pp. 556–558 (as cited on Wikipedia)"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "pointer",
+    "url": "https://en.wikipedia.org/wiki/Muktik%C4%81"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "vedic"
+ },
+ {
+  "id": "vedic:r2-501",
+  "s": "text:garbha-upanishad",
+  "p": "MENTIONED_IN",
+  "o": "text:muktika-upanishad",
+  "qualifiers": {
+   "note": "listed in the Muktikā canon of 108"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:deussen-1897",
+    "locator": "Muktikā list, pp. 556–558 (as cited on Wikipedia)"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "pointer",
+    "url": "https://en.wikipedia.org/wiki/Muktik%C4%81"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "vedic"
+ },
+ {
+  "id": "vedic:r2-502",
+  "s": "text:brahmabindu-upanishad",
+  "p": "MENTIONED_IN",
+  "o": "text:muktika-upanishad",
+  "qualifiers": {
+   "note": "listed in the Muktikā canon of 108"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:deussen-1897",
+    "locator": "Muktikā list, pp. 556–558 (as cited on Wikipedia)"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "pointer",
+    "url": "https://en.wikipedia.org/wiki/Muktik%C4%81"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "vedic"
+ },
+ {
+  "id": "vedic:r2-503",
+  "s": "text:nadabindu-upanishad",
+  "p": "MENTIONED_IN",
+  "o": "text:muktika-upanishad",
+  "qualifiers": {
+   "note": "listed in the Muktikā canon of 108"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:deussen-1897",
+    "locator": "Muktikā list, pp. 556–558 (as cited on Wikipedia)"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "pointer",
+    "url": "https://en.wikipedia.org/wiki/Muktik%C4%81"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "vedic"
+ },
+ {
+  "id": "vedic:r2-504",
+  "s": "text:amritabindu-upanishad",
   "p": "MENTIONED_IN",
   "o": "text:muktika-upanishad",
   "qualifiers": {
@@ -9604,198 +9643,6 @@
  },
  {
   "id": "vedic:r2-505",
-  "s": "text:jabala-upanishad",
-  "p": "MENTIONED_IN",
-  "o": "text:muktika-upanishad",
-  "qualifiers": {
-   "note": "listed in the Muktikā canon of 108"
-  },
-  "evidenceClass": 1,
-  "sources": [
-   {
-    "source": "src:deussen-1897",
-    "locator": "Muktikā list, pp. 556–558 (as cited on Wikipedia)"
-   },
-   {
-    "source": "src:wikipedia",
-    "locator": "pointer",
-    "url": "https://en.wikipedia.org/wiki/Muktik%C4%81"
-   }
-  ],
-  "confidence": "medium",
-  "status": "reference-checked",
-  "agent": "vedic"
- },
- {
-  "id": "vedic:r2-506",
-  "s": "text:paingala-upanishad",
-  "p": "MENTIONED_IN",
-  "o": "text:muktika-upanishad",
-  "qualifiers": {
-   "note": "listed in the Muktikā canon of 108"
-  },
-  "evidenceClass": 1,
-  "sources": [
-   {
-    "source": "src:deussen-1897",
-    "locator": "Muktikā list, pp. 556–558 (as cited on Wikipedia)"
-   },
-   {
-    "source": "src:wikipedia",
-    "locator": "pointer",
-    "url": "https://en.wikipedia.org/wiki/Muktik%C4%81"
-   }
-  ],
-  "confidence": "medium",
-  "status": "reference-checked",
-  "agent": "vedic"
- },
- {
-  "id": "vedic:r2-507",
-  "s": "text:hamsa-upanishad",
-  "p": "MENTIONED_IN",
-  "o": "text:muktika-upanishad",
-  "qualifiers": {
-   "note": "listed in the Muktikā canon of 108"
-  },
-  "evidenceClass": 1,
-  "sources": [
-   {
-    "source": "src:deussen-1897",
-    "locator": "Muktikā list, pp. 556–558 (as cited on Wikipedia)"
-   },
-   {
-    "source": "src:wikipedia",
-    "locator": "pointer",
-    "url": "https://en.wikipedia.org/wiki/Muktik%C4%81"
-   }
-  ],
-  "confidence": "medium",
-  "status": "reference-checked",
-  "agent": "vedic"
- },
- {
-  "id": "vedic:r2-508",
-  "s": "text:atharvashiras-upanishad",
-  "p": "MENTIONED_IN",
-  "o": "text:muktika-upanishad",
-  "qualifiers": {
-   "note": "listed in the Muktikā canon of 108"
-  },
-  "evidenceClass": 1,
-  "sources": [
-   {
-    "source": "src:deussen-1897",
-    "locator": "Muktikā list, pp. 556–558 (as cited on Wikipedia)"
-   },
-   {
-    "source": "src:wikipedia",
-    "locator": "pointer",
-    "url": "https://en.wikipedia.org/wiki/Muktik%C4%81"
-   }
-  ],
-  "confidence": "medium",
-  "status": "reference-checked",
-  "agent": "vedic"
- },
- {
-  "id": "vedic:r2-509",
-  "s": "text:garbha-upanishad",
-  "p": "MENTIONED_IN",
-  "o": "text:muktika-upanishad",
-  "qualifiers": {
-   "note": "listed in the Muktikā canon of 108"
-  },
-  "evidenceClass": 1,
-  "sources": [
-   {
-    "source": "src:deussen-1897",
-    "locator": "Muktikā list, pp. 556–558 (as cited on Wikipedia)"
-   },
-   {
-    "source": "src:wikipedia",
-    "locator": "pointer",
-    "url": "https://en.wikipedia.org/wiki/Muktik%C4%81"
-   }
-  ],
-  "confidence": "medium",
-  "status": "reference-checked",
-  "agent": "vedic"
- },
- {
-  "id": "vedic:r2-510",
-  "s": "text:brahmabindu-upanishad",
-  "p": "MENTIONED_IN",
-  "o": "text:muktika-upanishad",
-  "qualifiers": {
-   "note": "listed in the Muktikā canon of 108"
-  },
-  "evidenceClass": 1,
-  "sources": [
-   {
-    "source": "src:deussen-1897",
-    "locator": "Muktikā list, pp. 556–558 (as cited on Wikipedia)"
-   },
-   {
-    "source": "src:wikipedia",
-    "locator": "pointer",
-    "url": "https://en.wikipedia.org/wiki/Muktik%C4%81"
-   }
-  ],
-  "confidence": "medium",
-  "status": "reference-checked",
-  "agent": "vedic"
- },
- {
-  "id": "vedic:r2-511",
-  "s": "text:nadabindu-upanishad",
-  "p": "MENTIONED_IN",
-  "o": "text:muktika-upanishad",
-  "qualifiers": {
-   "note": "listed in the Muktikā canon of 108"
-  },
-  "evidenceClass": 1,
-  "sources": [
-   {
-    "source": "src:deussen-1897",
-    "locator": "Muktikā list, pp. 556–558 (as cited on Wikipedia)"
-   },
-   {
-    "source": "src:wikipedia",
-    "locator": "pointer",
-    "url": "https://en.wikipedia.org/wiki/Muktik%C4%81"
-   }
-  ],
-  "confidence": "medium",
-  "status": "reference-checked",
-  "agent": "vedic"
- },
- {
-  "id": "vedic:r2-512",
-  "s": "text:amritabindu-upanishad",
-  "p": "MENTIONED_IN",
-  "o": "text:muktika-upanishad",
-  "qualifiers": {
-   "note": "listed in the Muktikā canon of 108"
-  },
-  "evidenceClass": 1,
-  "sources": [
-   {
-    "source": "src:deussen-1897",
-    "locator": "Muktikā list, pp. 556–558 (as cited on Wikipedia)"
-   },
-   {
-    "source": "src:wikipedia",
-    "locator": "pointer",
-    "url": "https://en.wikipedia.org/wiki/Muktik%C4%81"
-   }
-  ],
-  "confidence": "medium",
-  "status": "reference-checked",
-  "agent": "vedic"
- },
- {
-  "id": "vedic:r2-513",
   "s": "text:paramahamsa-upanishad",
   "p": "MENTIONED_IN",
   "o": "text:muktika-upanishad",
@@ -9819,7 +9666,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-514",
+  "id": "vedic:r2-506",
   "s": "text:aruneya-upanishad",
   "p": "MENTIONED_IN",
   "o": "text:muktika-upanishad",
@@ -9843,7 +9690,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-515",
+  "id": "vedic:r2-507",
   "s": "text:subala-upanishad",
   "p": "MENTIONED_IN",
   "o": "text:muktika-upanishad",
@@ -9867,7 +9714,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-516",
+  "id": "vedic:r2-508",
   "s": "text:vajrasuchi-upanishad",
   "p": "MENTIONED_IN",
   "o": "text:muktika-upanishad",
@@ -9891,7 +9738,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-517",
+  "id": "vedic:r2-509",
   "s": "text:nrisimha-tapaniya-upanishad",
   "p": "MENTIONED_IN",
   "o": "text:muktika-upanishad",
@@ -9915,7 +9762,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-518",
+  "id": "vedic:r2-510",
   "s": "text:rama-tapaniya-upanishad",
   "p": "MENTIONED_IN",
   "o": "text:muktika-upanishad",
@@ -9939,7 +9786,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-519",
+  "id": "vedic:r2-511",
   "s": "text:gopala-tapani-upanishad",
   "p": "MENTIONED_IN",
   "o": "text:muktika-upanishad",
@@ -9963,7 +9810,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-520",
+  "id": "vedic:r2-512",
   "s": "text:maitrayaniya-upanishad",
   "p": "MENTIONED_IN",
   "o": "text:muktika-upanishad",
@@ -9987,7 +9834,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-521",
+  "id": "vedic:r2-513",
   "s": "text:ganapati-atharvashirsha",
   "p": "MENTIONED_IN",
   "o": "text:muktika-upanishad",
@@ -10011,7 +9858,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-522",
+  "id": "vedic:r2-514",
   "s": "text:mahanarayana-upanishad",
   "p": "PART_OF",
   "o": "text:taittiriya-aranyaka",
@@ -10032,7 +9879,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-523",
+  "id": "vedic:r2-515",
   "s": "text:maitrayaniya-upanishad",
   "p": "PART_OF",
   "o": "text:yajurveda",
@@ -10050,7 +9897,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-524",
+  "id": "vedic:r2-516",
   "s": "text:shivasamkalpa-upanishad",
   "p": "DERIVED_FROM",
   "o": "text:shukla-yajurveda",
@@ -10076,7 +9923,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-525",
+  "id": "vedic:r2-517",
   "s": "text:kaivalya-upanishad",
   "p": "PART_OF",
   "o": "text:atharvaveda",
@@ -10098,7 +9945,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-526",
+  "id": "vedic:r2-518",
   "s": "text:atharvashiras-upanishad",
   "p": "PART_OF",
   "o": "text:atharvaveda",
@@ -10120,7 +9967,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-527",
+  "id": "vedic:r2-519",
   "s": "text:garbha-upanishad",
   "p": "PART_OF",
   "o": "text:atharvaveda",
@@ -10142,7 +9989,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-528",
+  "id": "vedic:r2-520",
   "s": "text:brahmabindu-upanishad",
   "p": "PART_OF",
   "o": "text:atharvaveda",
@@ -10164,7 +10011,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-529",
+  "id": "vedic:r2-521",
   "s": "text:nadabindu-upanishad",
   "p": "PART_OF",
   "o": "text:atharvaveda",
@@ -10186,7 +10033,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-530",
+  "id": "vedic:r2-522",
   "s": "text:nrisimha-tapaniya-upanishad",
   "p": "PART_OF",
   "o": "text:atharvaveda",
@@ -10209,7 +10056,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-531",
+  "id": "vedic:r2-523",
   "s": "text:rama-tapaniya-upanishad",
   "p": "PART_OF",
   "o": "text:atharvaveda",
@@ -10232,7 +10079,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-532",
+  "id": "vedic:r2-524",
   "s": "text:gopala-tapani-upanishad",
   "p": "PART_OF",
   "o": "text:atharvaveda",
@@ -10255,7 +10102,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-533",
+  "id": "vedic:r2-525",
   "s": "text:ganapati-atharvashirsha",
   "p": "PART_OF",
   "o": "text:atharvaveda",
@@ -10278,7 +10125,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-534",
+  "id": "vedic:r2-526",
   "s": "text:jabala-upanishad",
   "p": "PART_OF",
   "o": "text:shukla-yajurveda",
@@ -10300,7 +10147,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-535",
+  "id": "vedic:r2-527",
   "s": "text:paramahamsa-upanishad",
   "p": "PART_OF",
   "o": "text:shukla-yajurveda",
@@ -10322,7 +10169,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-536",
+  "id": "vedic:r2-528",
   "s": "text:subala-upanishad",
   "p": "PART_OF",
   "o": "text:shukla-yajurveda",
@@ -10344,7 +10191,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-537",
+  "id": "vedic:r2-529",
   "s": "text:paingala-upanishad",
   "p": "PART_OF",
   "o": "text:shukla-yajurveda",
@@ -10366,7 +10213,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-538",
+  "id": "vedic:r2-530",
   "s": "text:hamsa-upanishad",
   "p": "PART_OF",
   "o": "text:shukla-yajurveda",
@@ -10388,7 +10235,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-539",
+  "id": "vedic:r2-531",
   "s": "text:aruneya-upanishad",
   "p": "PART_OF",
   "o": "text:samaveda",
@@ -10410,7 +10257,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-540",
+  "id": "vedic:r2-532",
   "s": "text:vajrasuchi-upanishad",
   "p": "PART_OF",
   "o": "text:samaveda",
@@ -10432,7 +10279,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-541",
+  "id": "vedic:r2-533",
   "s": "deity:rudra",
   "p": "APPEARS_IN",
   "o": "text:atharvashiras-upanishad",
@@ -10455,7 +10302,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-542",
+  "id": "vedic:r2-534",
   "s": "deity:shiva",
   "p": "APPEARS_IN",
   "o": "text:kaivalya-upanishad",
@@ -10478,7 +10325,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-543",
+  "id": "vedic:r2-535",
   "s": "deity:brahma",
   "p": "APPEARS_IN",
   "o": "text:kaivalya-upanishad",
@@ -10501,7 +10348,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-544",
+  "id": "vedic:r2-536",
   "s": "deity:narasimha",
   "p": "APPEARS_IN",
   "o": "text:nrisimha-tapaniya-upanishad",
@@ -10524,7 +10371,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-545",
+  "id": "vedic:r2-537",
   "s": "char:rama",
   "p": "APPEARS_IN",
   "o": "text:rama-tapaniya-upanishad",
@@ -10547,7 +10394,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-546",
+  "id": "vedic:r2-538",
   "s": "char:krishna",
   "p": "APPEARS_IN",
   "o": "text:gopala-tapani-upanishad",
@@ -10570,7 +10417,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-547",
+  "id": "vedic:r2-539",
   "s": "deity:ganesha",
   "p": "APPEARS_IN",
   "o": "text:ganapati-atharvashirsha",
@@ -10588,7 +10435,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-548",
+  "id": "vedic:r2-540",
   "s": "char:rama",
   "p": "APPEARS_IN",
   "o": "text:muktika-upanishad",
@@ -10611,7 +10458,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-549",
+  "id": "vedic:r2-541",
   "s": "char:hanuman",
   "p": "APPEARS_IN",
   "o": "text:muktika-upanishad",
@@ -10634,7 +10481,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-550",
+  "id": "vedic:r2-542",
   "s": "deity:narayana",
   "p": "APPEARS_IN",
   "o": "text:subala-upanishad",
@@ -10657,7 +10504,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-551",
+  "id": "vedic:r2-543",
   "s": "deity:narayana",
   "p": "APPEARS_IN",
   "o": "text:mahanarayana-upanishad",
@@ -10675,7 +10522,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-552",
+  "id": "vedic:r2-544",
   "s": "char:yajnavalkya",
   "p": "APPEARS_IN",
   "o": "text:paingala-upanishad",
@@ -10698,7 +10545,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-553",
+  "id": "vedic:r2-545",
   "s": "char:yajnavalkya",
   "p": "APPEARS_IN",
   "o": "text:jabala-upanishad",
@@ -10720,7 +10567,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-554",
+  "id": "vedic:r2-546",
   "s": "trad:pashupata",
   "p": "DERIVED_FROM",
   "o": "text:atharvashiras-upanishad",
@@ -10741,7 +10588,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-555",
+  "id": "vedic:r2-547",
   "s": "text:maitrayaniya-upanishad",
   "p": "DERIVED_FROM",
   "o": "trad:samkhya",
@@ -10763,7 +10610,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-556",
+  "id": "vedic:r2-548",
   "s": "person:vidyaranya",
   "p": "MEMBER_OF",
   "o": "pol:vijayanagara",
@@ -10787,7 +10634,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-557",
+  "id": "vedic:r2-549",
   "s": "person:vyasatirtha",
   "p": "MEMBER_OF",
   "o": "pol:vijayanagara",
@@ -10805,58 +10652,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-558",
-  "s": "person:jiva-gosvami",
-  "p": "ASSOCIATED_WITH",
-  "o": "place:vrindavan",
-  "qualifiers": {
-   "note": "lived and wrote at Vṛndāvana; founded the Rādhā-Dāmodara temple"
-  },
-  "evidenceClass": 6,
-  "sources": [
-   {
-    "source": "src:gupta-2007",
-    "locator": "ch. 1"
-   }
-  ],
-  "confidence": "high",
-  "status": "source-checked",
-  "agent": "vedic"
- },
- {
-  "id": "vedic:r2-559",
-  "s": "person:rupa-gosvami",
-  "p": "ASSOCIATED_WITH",
-  "o": "place:vrindavan",
-  "evidenceClass": 6,
-  "sources": [
-   {
-    "source": "src:gupta-2007",
-    "locator": "ch. 1"
-   }
-  ],
-  "confidence": "high",
-  "status": "source-checked",
-  "agent": "vedic"
- },
- {
-  "id": "vedic:r2-560",
-  "s": "person:gopala-bhatta",
-  "p": "ASSOCIATED_WITH",
-  "o": "place:vrindavan",
-  "evidenceClass": 6,
-  "sources": [
-   {
-    "source": "src:gupta-2007",
-    "locator": "ch. 1"
-   }
-  ],
-  "confidence": "medium",
-  "status": "source-checked",
-  "agent": "vedic"
- },
- {
-  "id": "vedic:r2-561",
+  "id": "vedic:r2-550",
   "s": "person:vacaspati-mishra",
   "p": "ASSOCIATED_WITH",
   "o": "place:mithila",
@@ -10876,7 +10672,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-562",
+  "id": "vedic:r2-551",
   "s": "person:udayana",
   "p": "ASSOCIATED_WITH",
   "o": "place:mithila",
@@ -10891,7 +10687,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-563",
+  "id": "vedic:r2-552",
   "s": "person:gangesha",
   "p": "ASSOCIATED_WITH",
   "o": "place:mithila",
@@ -10906,7 +10702,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-564",
+  "id": "vedic:r2-553",
   "s": "person:madhusudana-sarasvati",
   "p": "ASSOCIATED_WITH",
   "o": "place:kashi",
@@ -10921,7 +10717,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-565",
+  "id": "vedic:r2-554",
   "s": "person:yamuna",
   "p": "ASSOCIATED_WITH",
   "o": "temple:srirangam",
@@ -10940,7 +10736,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-566",
+  "id": "vedic:r2-555",
   "s": "person:vedanta-deshika",
   "p": "ASSOCIATED_WITH",
   "o": "temple:varadaraja-kanchi",
@@ -10963,7 +10759,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-567",
+  "id": "vedic:r2-556",
   "s": "person:kanada",
   "p": "ASSOCIATED_WITH",
   "o": "place:mithila",
@@ -10983,7 +10779,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-568",
+  "id": "vedic:r2-557",
   "s": "deity:vishnu",
   "p": "CENTRAL_TO",
   "o": "trad:vishishtadvaita",
@@ -11001,7 +10797,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-569",
+  "id": "vedic:r2-558",
   "s": "deity:vishnu",
   "p": "CENTRAL_TO",
   "o": "trad:dvaita",
@@ -11027,7 +10823,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-570",
+  "id": "vedic:r2-559",
   "s": "deity:narayana",
   "p": "APPEARS_IN",
   "o": "text:anuvyakhyana",
@@ -11050,7 +10846,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "vedic:r2-571",
+  "id": "vedic:r2-560",
   "s": "char:krishna",
   "p": "CENTRAL_TO",
   "o": "trad:achintya-bhedabheda",
@@ -11068,7 +10864,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-572",
+  "id": "vedic:r2-561",
   "s": "char:krishna",
   "p": "CENTRAL_TO",
   "o": "trad:shuddhadvaita",
@@ -11086,7 +10882,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-573",
+  "id": "vedic:r2-562",
   "s": "char:krishna",
   "p": "CENTRAL_TO",
   "o": "trad:dvaitadvaita",
@@ -11104,7 +10900,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-574",
+  "id": "vedic:r2-563",
   "s": "char:radha",
   "p": "CENTRAL_TO",
   "o": "trad:dvaitadvaita",
@@ -11122,7 +10918,7 @@
   "agent": "vedic"
  },
  {
-  "id": "vedic:r2-575",
+  "id": "vedic:r2-564",
   "s": "deity:vishnu",
   "p": "APPEARS_IN",
   "o": "text:vedarthasamgraha",
@@ -11137,6 +10933,381 @@
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAnuja-vedArthasaMgraha.txt",
     "edition": "GRETIL e-text (input Sadanori Ishitobi; section numbers RVas_n)",
     "quote": "nirmalānantakalyāṇanidhaye viṣṇave namaḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "vedic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "vedic:r2-565",
+  "s": "text:natyashastra",
+  "p": "ATTRIBUTED_TO",
+  "o": "person:bharata-natyashastra",
+  "qualifiers": {
+   "tradition": "Nāṭyaśāstra tradition"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:ghosh-1950",
+    "locator": "Introduction"
+   },
+   {
+    "source": "src:gretil-natyashastra",
+    "locator": "NŚ 1 (frame)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bharata-nATyazAstra.txt",
+    "edition": "GRETIL e-text (input P. Dadegaonkar, S. Krishnapur, H. Bakshi; source edition not stated; bhn_chapter.verse numbering)"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "vedic"
+ },
+ {
+  "id": "vedic:r2-566",
+  "s": "text:natyashastra",
+  "p": "DERIVED_FROM",
+  "o": "text:rigveda",
+  "qualifiers": {
+   "text": "text:natyashastra",
+   "note": "the text’s own account: Brahmā took recitation (pāṭhya) from this Veda"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:gretil-natyashastra",
+    "locator": "NŚ 1.17",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bharata-nATyazAstra.txt",
+    "edition": "GRETIL e-text (input P. Dadegaonkar, S. Krishnapur, H. Bakshi; source edition not stated; bhn_chapter.verse numbering)",
+    "quote": "jagrāha pāṭhyamṛgvedātsāmabhyo gītameva ca"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "competing": "A mythic self-legitimation, not a historical derivation.",
+  "agent": "vedic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "vedic:r2-567",
+  "s": "text:natyashastra",
+  "p": "DERIVED_FROM",
+  "o": "text:samaveda",
+  "qualifiers": {
+   "text": "text:natyashastra",
+   "note": "the text’s own account: Brahmā took song (gīta) from this Veda"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:gretil-natyashastra",
+    "locator": "NŚ 1.17",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bharata-nATyazAstra.txt",
+    "edition": "GRETIL e-text (input P. Dadegaonkar, S. Krishnapur, H. Bakshi; source edition not stated; bhn_chapter.verse numbering)",
+    "quote": "jagrāha pāṭhyamṛgvedātsāmabhyo gītameva ca"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "competing": "A mythic self-legitimation, not a historical derivation.",
+  "agent": "vedic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "vedic:r2-568",
+  "s": "text:natyashastra",
+  "p": "DERIVED_FROM",
+  "o": "text:yajurveda",
+  "qualifiers": {
+   "text": "text:natyashastra",
+   "note": "the text’s own account: Brahmā took acting (abhinaya) from this Veda"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:gretil-natyashastra",
+    "locator": "NŚ 1.17",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bharata-nATyazAstra.txt",
+    "edition": "GRETIL e-text (input P. Dadegaonkar, S. Krishnapur, H. Bakshi; source edition not stated; bhn_chapter.verse numbering)",
+    "quote": "jagrāha pāṭhyamṛgvedātsāmabhyo gītameva ca"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "competing": "A mythic self-legitimation, not a historical derivation.",
+  "agent": "vedic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "vedic:r2-569",
+  "s": "text:natyashastra",
+  "p": "DERIVED_FROM",
+  "o": "text:atharvaveda",
+  "qualifiers": {
+   "text": "text:natyashastra",
+   "note": "the text’s own account: Brahmā took rasa from this Veda"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:gretil-natyashastra",
+    "locator": "NŚ 1.17",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bharata-nATyazAstra.txt",
+    "edition": "GRETIL e-text (input P. Dadegaonkar, S. Krishnapur, H. Bakshi; source edition not stated; bhn_chapter.verse numbering)",
+    "quote": "jagrāha pāṭhyamṛgvedātsāmabhyo gītameva ca"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "competing": "A mythic self-legitimation, not a historical derivation.",
+  "agent": "vedic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "vedic:r2-570",
+  "s": "text:natyashastra",
+  "p": "REFERS_TO_TEXT",
+  "o": "col:vedic-samhitas",
+  "qualifiers": {
+   "note": "drama as a “fifth Veda” open to all classes, since the Vedas may not be recited to śūdras"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-natyashastra",
+    "locator": "NŚ 1.12",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bharata-nATyazAstra.txt",
+    "edition": "GRETIL e-text (input P. Dadegaonkar, S. Krishnapur, H. Bakshi; source edition not stated; bhn_chapter.verse numbering)",
+    "quote": "na vedavyavahāro 'yaṃ saṃśrāvyaḥ śūdrajātiṣu"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "vedic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "vedic:r2-571",
+  "s": "deity:brahma",
+  "p": "APPEARS_IN",
+  "o": "text:natyashastra",
+  "qualifiers": {
+   "role": "creator of the nāṭyaveda"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-natyashastra",
+    "locator": "NŚ 1.15–18",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bharata-nATyazAstra.txt",
+    "edition": "GRETIL e-text (input P. Dadegaonkar, S. Krishnapur, H. Bakshi; source edition not stated; bhn_chapter.verse numbering)",
+    "quote": "nāṭyākhyaṃ pañcamaṃ vedaṃ setihāsaṃ karomyaham"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "vedic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "vedic:r2-572",
+  "s": "deity:indra",
+  "p": "APPEARS_IN",
+  "o": "text:natyashastra",
+  "qualifiers": {
+   "role": "leader of the gods who request drama"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-natyashastra",
+    "locator": "NŚ 1.11–19",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bharata-nATyazAstra.txt",
+    "edition": "GRETIL e-text (input P. Dadegaonkar, S. Krishnapur, H. Bakshi; source edition not stated; bhn_chapter.verse numbering)",
+    "quote": "utpādya nāṭyavedaṃ tu brahmovāca sureśvaram"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "vedic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "vedic:r2-573",
+  "s": "deity:shiva",
+  "p": "APPEARS_IN",
+  "o": "text:natyashastra",
+  "qualifiers": {
+   "role": "originator of dance (tāṇḍava), taught through Taṇḍu"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-natyashastra",
+    "locator": "NŚ 4.17–18",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bharata-nATyazAstra.txt",
+    "edition": "GRETIL e-text (input P. Dadegaonkar, S. Krishnapur, H. Bakshi; source edition not stated; bhn_chapter.verse numbering)",
+    "quote": "tatastaṇḍuṃ samāhūya proktavān bhuvaneśvaraḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "vedic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "vedic:r2-574",
+  "s": "concept:karanas",
+  "p": "MENTIONED_IN",
+  "o": "text:natyashastra",
+  "qualifiers": {
+   "note": "defines the 108 karaṇas"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-natyashastra",
+    "locator": "NŚ 4.55",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bharata-nATyazAstra.txt",
+    "edition": "GRETIL e-text (input P. Dadegaonkar, S. Krishnapur, H. Bakshi; source edition not stated; bhn_chapter.verse numbering)",
+    "quote": "aṣṭottaraśataṃ hyetatkaraṇānāṃ mayoditam"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "vedic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "vedic:r2-575",
+  "s": "concept:rasa",
+  "p": "MENTIONED_IN",
+  "o": "text:natyashastra",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-natyashastra",
+    "locator": "NŚ 6.15",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bharata-nATyazAstra.txt",
+    "edition": "GRETIL e-text (input P. Dadegaonkar, S. Krishnapur, H. Bakshi; source edition not stated; bhn_chapter.verse numbering)",
+    "quote": "śṛṅgārahāsyakaruṇā raudravīrabhayānakāḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "vedic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "vedic:r2-576",
+  "s": "text:abhinavabharati",
+  "p": "COMMENTARY_ON",
+  "o": "text:natyashastra",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:pollock-2016"
+   },
+   {
+    "source": "src:sanderson-1988"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "vedic"
+ },
+ {
+  "id": "vedic:r2-577",
+  "s": "text:abhinavabharati",
+  "p": "COMPOSED_BY",
+  "o": "person:abhinavagupta",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:sanderson-1988"
+   },
+   {
+    "source": "src:pollock-2016"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "vedic"
+ },
+ {
+  "id": "vedic:r2-578",
+  "s": "concept:rasa",
+  "p": "MENTIONED_IN",
+  "o": "text:abhinavabharati",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:pollock-2016"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "vedic"
+ },
+ {
+  "id": "vedic:r2-579",
+  "s": "text:bhaktirasamrtasindhu",
+  "p": "DERIVED_FROM",
+  "o": "text:natyashastra",
+  "qualifiers": {
+   "note": "adapts the rasa categories (vibhāva, anubhāva, vyabhicārin, sthāyibhāva) to devotion"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:gupta-2007"
+   },
+   {
+    "source": "src:pollock-2016"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "vedic"
+ },
+ {
+  "id": "vedic:r2-580",
+  "s": "concept:rasa",
+  "p": "CENTRAL_TO",
+  "o": "trad:gaudiya",
+  "qualifiers": {
+   "note": "bhakti-rasa"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:gupta-2007"
+   },
+   {
+    "source": "src:gretil-bhaktirasamritasindhu",
+    "locator": "BRS (whole)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rUpagosvAmin-haribhaktirasAmRtasindhu.txt",
+    "edition": "GRETIL e-text"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "vedic"
+ },
+ {
+  "id": "vedic:r2-581",
+  "s": "psg:natyashastra-1-12-17",
+  "p": "PART_OF",
+  "o": "text:natyashastra",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-natyashastra",
+    "locator": "NŚ 1.12–17",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bharata-nATyazAstra.txt",
+    "edition": "GRETIL e-text (input P. Dadegaonkar, S. Krishnapur, H. Bakshi; source edition not stated; bhn_chapter.verse numbering)"
    }
   ],
   "confidence": "high",

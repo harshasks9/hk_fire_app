@@ -2571,7 +2571,8 @@
   "iast": "Vyāsatīrtha",
   "devanagari": "व्यासतीर्थ",
   "aliases": [
-   "Vyāsarāja"
+   "Vyāsarāja",
+   "Vyasaraja"
   ],
   "traditions": [
    "trad:dvaita"
@@ -2580,7 +2581,7 @@
    "philosopher",
    "commentator"
   ],
-  "summary": "Dvaita dialectician and rājaguru at the Vijayanagara court under Kṛṣṇadevarāya, author of the Nyāyāmṛta (against Advaita), Tarkatāṇḍava (against Nyāya) and Tātparyacandrikā; patron of the Haridāsa poets.",
+  "summary": "Dvaita dialectician and rājaguru at the Vijayanagara court under Kṛṣṇadevarāya, author of the Nyāyāmṛta (against Advaita), Tarkatāṇḍava (against Nyāya) and Tātparyacandrikā; patron and teacher of the Haridāsa poets Purandaradāsa and Kanakadāsa.",
   "dates": [
    {
     "system": "scholarly-textual",
@@ -2595,7 +2596,19 @@
      {
       "source": "src:stoker-2016",
       "locator": "Introduction"
-     },
+     }
+    ]
+   },
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1447,
+    "end": 1539,
+    "label": "1447–1539 CE",
+    "certainty": "estimated",
+    "basis": "Mādhva maṭha records",
+    "view": "Mādhva tradition (as on Wikipedia)",
+    "sources": [
      {
       "source": "src:wikipedia",
       "locator": "Vyasatirtha",
@@ -2732,7 +2745,7 @@
  {
   "id": "person:vallabha",
   "type": "person",
-  "name": "Vallabha",
+  "name": "Vallabha (Vallabhācārya)",
   "iast": "Vallabhācārya",
   "devanagari": "वल्लभ",
   "aliases": [
@@ -2747,7 +2760,7 @@
    "philosopher",
    "ācārya"
   ],
-  "summary": "Telugu brahmin teacher (1479–1531) who founded the Puṣṭimārga and its Śuddhādvaita Vedānta, author of the Aṇubhāṣya on the Brahma Sūtra, the Subodhinī on the Bhāgavata Purāṇa and the Ṣoḍaśagrantha.",
+  "summary": "Telugu brahmin teacher who founded the Puṣṭimārga (“path of grace”) devoted to the child Kṛṣṇa as Śrīnāthjī of Govardhana and its Śuddhādvaita Vedānta; author of the Aṇubhāṣya on the Brahma Sūtra, the Subodhinī on the Bhāgavata Purāṇa and the Ṣoḍaśagrantha.",
   "dates": [
    {
     "system": "scholarly-textual",
@@ -2756,12 +2769,24 @@
     "end": 1531,
     "label": "1479–1531 CE",
     "certainty": "estimated",
-    "basis": "sampradāya records (Vikrama dates) accepted by most scholars",
+    "basis": "sampradāya records (Vikrama dates)",
     "view": "Barz",
     "sources": [
      {
       "source": "src:barz-1976"
-     },
+     }
+    ]
+   },
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1478,
+    "end": 1530,
+    "label": "1478–1530 CE",
+    "certainty": "estimated",
+    "basis": "sampradāya records as converted on Wikipedia",
+    "view": "alternative conversion",
+    "sources": [
      {
       "source": "src:wikipedia",
       "locator": "Vallabha",
@@ -2781,206 +2806,6 @@
   "confidence": "high",
   "status": "source-checked",
   "agent": "vedic"
- },
- {
-  "id": "person:vitthalanatha",
-  "type": "person",
-  "name": "Viṭṭhalanātha",
-  "iast": "Viṭṭhalanātha",
-  "aliases": [
-   "Gusāīṃjī"
-  ],
-  "traditions": [
-   "trad:pushtimarg",
-   "trad:shuddhadvaita"
-  ],
-  "roles": [
-   "philosopher",
-   "commentator"
-  ],
-  "summary": "Younger son and successor of Vallabha (1516–1586) who organised Puṣṭimārga worship, completed his father’s Aṇubhāṣya and, by sampradāya tradition, chose the eight poets of the aṣṭachāp.",
-  "dates": [
-   {
-    "system": "scholarly-textual",
-    "event": "life",
-    "start": 1516,
-    "end": 1586,
-    "label": "1516–1586 CE",
-    "certainty": "estimated",
-    "basis": "sampradāya records",
-    "view": "Barz",
-    "sources": [
-     {
-      "source": "src:barz-1976"
-     }
-    ]
-   }
-  ],
-  "sources": [
-   {
-    "source": "src:barz-1976"
-   },
-   {
-    "source": "src:hawley-1984"
-   }
-  ],
-  "confidence": "medium",
-  "status": "source-checked",
-  "agent": "vedic"
- },
- {
-  "id": "person:rupa-gosvami",
-  "type": "person",
-  "name": "Rūpa Gosvāmī",
-  "iast": "Rūpa Gosvāmī",
-  "devanagari": "रूप गोस्वामी",
-  "traditions": [
-   "trad:gaudiya"
-  ],
-  "roles": [
-   "theologian",
-   "poet"
-  ],
-  "summary": "Gauḍīya theologian of Vṛndāvana, disciple of Caitanya, whose Bhaktirasāmṛtasindhu and Ujjvalanīlamaṇi recast Sanskrit aesthetics (rasa) as a theology of devotion; uncle and teacher of Jīva Gosvāmī.",
-  "dates": [
-   {
-    "system": "scholarly-textual",
-    "event": "life",
-    "start": 1490,
-    "end": 1564,
-    "label": "c. 1490–1564 CE",
-    "certainty": "estimated",
-    "basis": "dated colophons of his works and Gauḍīya tradition",
-    "view": "Gupta; Dimock",
-    "sources": [
-     {
-      "source": "src:gupta-2007",
-      "locator": "ch. 1"
-     },
-     {
-      "source": "src:dimock-stewart-1999"
-     }
-    ]
-   }
-  ],
-  "sources": [
-   {
-    "source": "src:gupta-2007"
-   },
-   {
-    "source": "src:gretil-bhaktirasamritasindhu",
-    "locator": "Bhaktirasāmṛtasindhu",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rUpagosvAmin-haribhaktirasAmRtasindhu.txt",
-    "edition": "GRETIL e-text"
-   }
-  ],
-  "confidence": "medium",
-  "status": "source-checked",
-  "agent": "vedic"
- },
- {
-  "id": "person:jiva-gosvami",
-  "type": "person",
-  "name": "Jīva Gosvāmī",
-  "iast": "Jīva Gosvāmī",
-  "devanagari": "जीव गोस्वामी",
-  "traditions": [
-   "trad:gaudiya",
-   "trad:achintya-bhedabheda"
-  ],
-  "roles": [
-   "theologian",
-   "philosopher"
-  ],
-  "summary": "Gauḍīya Vaiṣṇava philosopher of Vṛndāvana, nephew and pupil of Rūpa and Sanātana Gosvāmī, whose six Sandarbhas (Ṣaṭsandarbha) and Sarvasaṃvādinī systematise Caitanya’s theology as acintya-bhedābheda.",
-  "dates": [
-   {
-    "system": "scholarly-textual",
-    "event": "life",
-    "start": 1511,
-    "end": 1596,
-    "label": "1511–1596 CE",
-    "certainty": "disputed",
-    "basis": "Gauḍīya records",
-    "view": "one view",
-    "sources": [
-     {
-      "source": "src:wikipedia",
-      "locator": "Jiva Goswami",
-      "url": "https://en.wikipedia.org/wiki/Jiva_Goswami"
-     },
-     {
-      "source": "src:gupta-2007",
-      "locator": "ch. 1"
-     }
-    ]
-   },
-   {
-    "system": "scholarly-textual",
-    "event": "life",
-    "start": 1533,
-    "end": 1618,
-    "label": "1533–1618 CE",
-    "certainty": "disputed",
-    "basis": "Gauḍīya records",
-    "view": "another view",
-    "sources": [
-     {
-      "source": "src:wikipedia",
-      "locator": "Jiva Goswami",
-      "url": "https://en.wikipedia.org/wiki/Jiva_Goswami"
-     }
-    ]
-   }
-  ],
-  "sources": [
-   {
-    "source": "src:gupta-2007"
-   },
-   {
-    "source": "src:gretil-satsandarbha",
-    "locator": "Tattvasandarbha 5",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_jiva-gosvami-satsamdarbha.txt",
-    "edition": "GRETIL e-text (GRETIL e-text interleaving Baladeva Vidyābhūṣaṇa’s ṭīkā (marked “bd:”))",
-    "quote": "kṛtvā likhati jīvakaḥ"
-   }
-  ],
-  "confidence": "high",
-  "status": "verified-online",
-  "agent": "vedic",
-  "lastVerified": "2026-11-08"
- },
- {
-  "id": "person:gopala-bhatta",
-  "type": "person",
-  "name": "Gopāla Bhaṭṭa Gosvāmī",
-  "iast": "Gopāla Bhaṭṭa",
-  "traditions": [
-   "trad:gaudiya"
-  ],
-  "roles": [
-   "theologian"
-  ],
-  "summary": "South Indian Gauḍīya Gosvāmī of Vṛndāvana, said in Jīva’s Tattvasandarbha (verse 4) to have drafted the work from earlier Vaiṣṇava writings before Jīva rearranged it; Baladeva’s gloss names Madhva among those “old Vaiṣṇavas”.",
-  "sources": [
-   {
-    "source": "src:gretil-satsandarbha",
-    "locator": "Tattvasandarbha 4",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_jiva-gosvami-satsamdarbha.txt",
-    "edition": "GRETIL e-text (GRETIL e-text interleaving Baladeva Vidyābhūṣaṇa’s ṭīkā (marked “bd:”))",
-    "quote": "ko'pi tad-bāndhavo bhaṭṭo dakṣiṇa-dvija-vaṃśajaḥ"
-   },
-   {
-    "source": "src:gupta-2007"
-   },
-   {
-    "source": "src:okita-2014"
-   }
-  ],
-  "confidence": "medium",
-  "status": "verified-online",
-  "agent": "vedic",
-  "lastVerified": "2026-11-08"
  },
  {
   "id": "person:baladeva-vidyabhushana",
@@ -5709,66 +5534,6 @@
   "agent": "vedic"
  },
  {
-  "id": "text:shat-sandarbha",
-  "type": "text",
-  "name": "Ṣaṭsandarbha",
-  "iast": "Ṣaṭsandarbha (Bhāgavatasandarbha)",
-  "devanagari": "षट्सन्दर्भ",
-  "subtype": "theological treatise (six parts)",
-  "traditions": [
-   "trad:gaudiya",
-   "trad:achintya-bhedabheda"
-  ],
-  "summary": "Jīva Gosvāmī’s six “arrangements” on the Bhāgavata Purāṇa — Tattva-, Bhagavat-, Paramātma-, Kṛṣṇa-, Bhakti- and Prīti-sandarbha — the systematic theology of Gauḍīya Vaiṣṇavism; the Tattvasandarbha says it was reworked by Jīva from a draft by Gopāla Bhaṭṭa.",
-  "dates": [
-   {
-    "system": "scholarly-textual",
-    "event": "composition",
-    "start": 1550,
-    "end": 1600,
-    "label": "second half of the 16th c. CE",
-    "certainty": "estimated",
-    "basis": "life of Jīva Gosvāmī",
-    "view": "Gupta",
-    "sources": [
-     {
-      "source": "src:gupta-2007",
-      "locator": "ch. 1"
-     }
-    ]
-   }
-  ],
-  "attributes": {
-   "parts": [
-    "Tattvasandarbha",
-    "Bhagavatsandarbha",
-    "Paramātmasandarbha",
-    "Kṛṣṇasandarbha",
-    "Bhaktisandarbha",
-    "Prītisandarbha"
-   ]
-  },
-  "sources": [
-   {
-    "source": "src:gretil-satsandarbha",
-    "locator": "Tattvasandarbha 4–5",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_jiva-gosvami-satsamdarbha.txt",
-    "edition": "GRETIL e-text (GRETIL e-text interleaving Baladeva Vidyābhūṣaṇa’s ṭīkā (marked “bd:”))",
-    "quote": "paryālocyātha paryāyaṃ kṛtvā likhati jīvakaḥ"
-   },
-   {
-    "source": "src:gupta-2007"
-   },
-   {
-    "source": "src:okita-2014"
-   }
-  ],
-  "confidence": "high",
-  "status": "verified-online",
-  "agent": "vedic",
-  "lastVerified": "2026-11-08"
- },
- {
   "id": "text:govinda-bhashya",
   "type": "text",
   "name": "Govinda-bhāṣya",
@@ -5791,32 +5556,6 @@
    }
   ],
   "confidence": "high",
-  "status": "source-checked",
-  "agent": "vedic"
- },
- {
-  "id": "text:bhaktirasamritasindhu",
-  "type": "text",
-  "name": "Bhaktirasāmṛtasindhu",
-  "iast": "Bhaktirasāmṛtasindhu",
-  "devanagari": "भक्तिरसामृतसिन्धु",
-  "subtype": "theology / aesthetics",
-  "traditions": [
-   "trad:gaudiya"
-  ],
-  "summary": "Rūpa Gosvāmī’s “Ocean of the nectar of the rasa of devotion” (1541), which recasts Sanskrit rasa theory as a typology of devotion to Kṛṣṇa.",
-  "sources": [
-   {
-    "source": "src:gretil-bhaktirasamritasindhu",
-    "locator": "Bhaktirasāmṛtasindhu (whole)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rUpagosvAmin-haribhaktirasAmRtasindhu.txt",
-    "edition": "GRETIL e-text"
-   },
-   {
-    "source": "src:gupta-2007"
-   }
-  ],
-  "confidence": "medium",
   "status": "source-checked",
   "agent": "vedic"
  },
@@ -9633,5 +9372,263 @@
   "confidence": "low",
   "status": "disputed",
   "agent": "vedic"
+ },
+ {
+  "id": "text:natyashastra",
+  "type": "text",
+  "name": "Nāṭyaśāstra",
+  "iast": "Nāṭyaśāstra",
+  "devanagari": "नाट्यशास्त्र",
+  "aliases": [
+   "Natyashastra",
+   "Bharata’s Nāṭyaśāstra",
+   "Nāṭyaveda (as the text calls its subject)"
+  ],
+  "subtype": "śāstra (dramaturgy, dance, music)",
+  "traditions": [],
+  "summary": "The treatise on drama, dance and music ascribed to the sage Bharata, which presents theatre as a “fifth Veda” created by Brahmā for all social classes from elements of the four Vedas, and which first formulates the theory of rasa and the 108 karaṇas of dance later carved on South Indian temples.",
+  "details": "In chapter 1 the gods, led by Indra, ask Brahmā for a pastime to be both seen and heard; since the Vedas may not be recited to śūdras, he is to create “another Veda, a fifth, for all the classes” (NŚ 1.11–12). Brahmā makes the nāṭyaveda “from the limbs of the four Vedas”, taking recitation from the Ṛgveda, song from the Sāmans, gesture and acting from the Yajurveda and rasa from the Atharvaveda (1.16–17). The first performance is followed by the building of a protected playhouse (nāṭyamaṇḍapa, 1.82–83), described in chapter 2.\n\nChapter 4 tells how Śiva had his attendant Taṇḍu teach Bharata the dance, hence called tāṇḍava, and defines “these hundred and eight karaṇas” (4.55); the karaṇa reliefs of the Bṛhadīśvara temple at Thanjavur and the gopuras of Chidambaram depict them (`concept:karanas`). Chapter 6 lists eight rasas (6.15) and gives in prose the rasa-sūtra — “rasa arises from the conjunction of determinants, consequents and transitory states” — which Abhinavagupta’s Abhinavabhāratī (c. 1000) made the basis of Indian aesthetics and which Rūpa Gosvāmī transposed to devotion. Pāṇini (4.3.110) already knows “actors’ sūtras” (naṭasūtra) of Śilālin, an earlier dramaturgical tradition.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "compilation (first complete version)",
+    "start": -200,
+    "end": 200,
+    "label": "c. 200 BCE – 200 CE",
+    "certainty": "estimated",
+    "basis": "references in other literature; language; relation to early drama",
+    "view": "majority of scholars (e.g. Lidova; Mehta, as cited on Wikipedia)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "locator": "Natya Shastra — dating",
+      "url": "https://en.wikipedia.org/wiki/Natya_Shastra"
+     },
+     {
+      "source": "src:ghosh-1950",
+      "locator": "Introduction"
+     }
+    ]
+   },
+   {
+    "system": "scholarly-textual",
+    "event": "composition (wider range of estimates)",
+    "start": -500,
+    "end": 500,
+    "label": "c. 500 BCE – 500 CE (range of estimates)",
+    "certainty": "disputed",
+    "basis": "layered text; prose and verse mixed; Kane posits changes between the 3rd and 8th c. CE",
+    "view": "range (Dace; Kane, as cited on Wikipedia)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "locator": "Natya Shastra — dating",
+      "url": "https://en.wikipedia.org/wiki/Natya_Shastra"
+     },
+     {
+      "source": "src:kane-hod"
+     }
+    ]
+   },
+   {
+    "system": "reception",
+    "event": "commentary by Abhinavagupta (Abhinavabhāratī)",
+    "start": 975,
+    "end": 1025,
+    "label": "c. 1000 CE",
+    "certainty": "estimated",
+    "basis": "Abhinavagupta’s dated works",
+    "view": "Sanderson",
+    "sources": [
+     {
+      "source": "src:sanderson-1988"
+     },
+     {
+      "source": "src:pollock-2016"
+     }
+    ]
+   },
+   {
+    "system": "reception",
+    "event": "manuscripts inscribed on UNESCO’s Memory of the World Register (with the Bhagavad Gītā)",
+    "start": 2025,
+    "end": 2025,
+    "label": "2025",
+    "certainty": "estimated",
+    "basis": "UNESCO announcement as reported on Wikipedia",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "locator": "Natya Shastra",
+      "url": "https://en.wikipedia.org/wiki/Natya_Shastra"
+     }
+    ]
+   },
+   {
+    "system": "traditional",
+    "event": "composition",
+    "label": "revealed by Brahmā as the fifth Veda and taught to Bharata (NŚ 1)",
+    "certainty": "disputed",
+    "basis": "the text’s own frame story",
+    "view": "traditional",
+    "sources": [
+     {
+      "source": "src:gretil-natyashastra",
+      "locator": "NŚ 1.12–18",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bharata-nATyazAstra.txt",
+      "edition": "GRETIL e-text (input P. Dadegaonkar, S. Krishnapur, H. Bakshi; source edition not stated; bhn_chapter.verse numbering)"
+     }
+    ]
+   }
+  ],
+  "attributes": {
+   "chapters": "36 or 37 (recensions differ)",
+   "language": "Sanskrit (verse with some prose)",
+   "commentaries": [
+    "Abhinavabhāratī (Abhinavagupta)"
+   ]
+  },
+  "sources": [
+   {
+    "source": "src:gretil-natyashastra",
+    "locator": "NŚ 1.12; 1.17; 4.55; 6.15",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bharata-nATyazAstra.txt",
+    "edition": "GRETIL e-text (input P. Dadegaonkar, S. Krishnapur, H. Bakshi; source edition not stated; bhn_chapter.verse numbering)",
+    "quote": "tasmātsṛjāparaṃ vedaṃ pañcamaṃ sārvavarṇikam"
+   },
+   {
+    "source": "src:gretil-ashtadhyayi",
+    "locator": "P. 4.3.110 (naṭasūtras of Śilālin)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_pANini-aSTAdhyAyI.txt",
+    "edition": "GRETIL e-text",
+    "quote": "pārāśarya-śilālibhyāṃ bhikṣu-naṭasūtrayoḥ"
+   },
+   {
+    "source": "src:ghosh-1950"
+   },
+   {
+    "source": "src:pollock-2016"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "Natya Shastra",
+    "url": "https://en.wikipedia.org/wiki/Natya_Shastra"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "limits": "The fifth-Veda origin is the text’s own mythic frame, recorded as tradition; the text is composite and its date is an estimate.",
+  "agent": "vedic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:bharata-natyashastra",
+  "type": "person",
+  "name": "Bharata (author of the Nāṭyaśāstra)",
+  "iast": "Bharata Muni",
+  "devanagari": "भरत मुनि",
+  "aliases": [
+   "Bharata Muni",
+   "Bharatamuni"
+  ],
+  "roles": [
+   "sage (traditional author)"
+  ],
+  "summary": "The sage to whom the Nāṭyaśāstra is ascribed and who, in its frame story, receives the nāṭyaveda from Brahmā and stages the first performance with his hundred sons; whether one historical author lies behind the name is unknown.",
+  "sources": [
+   {
+    "source": "src:gretil-natyashastra",
+    "locator": "NŚ 1.24–26 (Bharata’s sons)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bharata-nATyazAstra.txt",
+    "edition": "GRETIL e-text (input P. Dadegaonkar, S. Krishnapur, H. Bakshi; source edition not stated; bhn_chapter.verse numbering)",
+    "quote": "jaṭilambaṣṭakau caiva taṇḍumagniśikhaṃ tathā"
+   },
+   {
+    "source": "src:ghosh-1950",
+    "locator": "Introduction"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "limits": "Distinct from the epic Bharatas (`char:bharata-ramayana`, `char:bharata-dauhshanti`); no biography is known.",
+  "agent": "vedic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:abhinavabharati",
+  "type": "text",
+  "name": "Abhinavabhāratī",
+  "iast": "Abhinavabhāratī",
+  "devanagari": "अभिनवभारती",
+  "subtype": "commentary",
+  "traditions": [
+   "trad:kashmir-shaivism"
+  ],
+  "summary": "Abhinavagupta’s commentary on the Nāṭyaśāstra (c. 1000 CE), the only surviving early commentary, whose reading of the rasa-sūtra — rasa as a universalised tasting of emotion by the sensitive spectator — became the classical theory of Indian aesthetics.",
+  "sources": [
+   {
+    "source": "src:pollock-2016"
+   },
+   {
+    "source": "src:sanderson-1988"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "Natya Shastra — commentaries",
+    "url": "https://en.wikipedia.org/wiki/Natya_Shastra"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "vedic"
+ },
+ {
+  "id": "psg:natyashastra-1-12-17",
+  "type": "passage",
+  "name": "Nāṭyaśāstra 1.11–18 (the fifth Veda)",
+  "subtype": "verses",
+  "summary": "The origin story of drama: the gods ask Brahmā for a pastime to be seen and heard and open to all classes; he composes the nāṭyaveda, “a fifth Veda with the itihāsa”, from recitation, song, acting and rasa taken from the four Vedas.",
+  "sources": [
+   {
+    "source": "src:gretil-natyashastra",
+    "locator": "NŚ 1.11–18",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bharata-nATyazAstra.txt",
+    "edition": "GRETIL e-text (input P. Dadegaonkar, S. Krishnapur, H. Bakshi; source edition not stated; bhn_chapter.verse numbering)",
+    "quote": "yajurvedādabhinayān rasānātharvaṇādapi"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "vedic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "concept:rasa",
+  "type": "concept",
+  "name": "Rasa (aesthetic relish)",
+  "iast": "rasa",
+  "devanagari": "रस",
+  "aliases": [
+   "aesthetic emotion",
+   "navarasa"
+  ],
+  "subtype": "aesthetics",
+  "summary": "The “taste” or relish of an emotion evoked in a cultivated spectator. The Nāṭyaśāstra lists eight rasas — erotic, comic, compassionate, furious, heroic, fearful, odious and marvellous (6.15) — and states that rasa arises from the conjunction of determinants, consequents and transitory states; later theory added a ninth, the tranquil (śānta), and Gauḍīya theology made devotion (bhakti) itself a rasa.",
+  "sources": [
+   {
+    "source": "src:gretil-natyashastra",
+    "locator": "NŚ 6.15; prose after 6.31",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bharata-nATyazAstra.txt",
+    "edition": "GRETIL e-text (input P. Dadegaonkar, S. Krishnapur, H. Bakshi; source edition not stated; bhn_chapter.verse numbering)",
+    "quote": "vibhāvānubhāvavyabhicārisaṃyogādrasaniṣpattiḥ"
+   },
+   {
+    "source": "src:pollock-2016"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "vedic",
+  "lastVerified": "2026-11-08"
  }
 ]

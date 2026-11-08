@@ -31,6 +31,15 @@
   "agent": "purana"
  },
  {
+  "id": "src:thapan-1997",
+  "type": "scholarly-book",
+  "title": "Understanding Gaṇapati: Insights into the Dynamics of a Cult",
+  "author": "Anita Raina Thapan",
+  "year": "1997",
+  "publisher": "Manohar, New Delhi",
+  "agent": "purana"
+ },
+ {
   "id": "src:winternitz-1898",
   "type": "journal-article",
   "title": "Gaṇeśa in the Mahābhārata",
@@ -67,6 +76,33 @@
   "agent": "purana"
  },
  {
+  "id": "src:neuss-2012",
+  "type": "scholarly-book",
+  "title": "Narmadāparikramā – Circumambulation of the Narmadā River: On the Tradition of a Unique Hindu Pilgrimage",
+  "author": "Jürgen Neuss",
+  "year": "2012",
+  "publisher": "Brill, Leiden (Brill's Indological Library 42)",
+  "agent": "purana"
+ },
+ {
+  "id": "src:jacques-1962",
+  "type": "primary-text",
+  "title": "Gayā Māhātmya: édition critique, traduction française et introduction",
+  "author": "Claude Jacques",
+  "year": "1962",
+  "publisher": "Institut Français d'Indologie, Pondichéry",
+  "agent": "purana"
+ },
+ {
+  "id": "src:stietencron-1966",
+  "type": "scholarly-book",
+  "title": "Indische Sonnenpriester: Sāmba und die Śākadvīpīya-Brāhmaṇa",
+  "author": "Heinrich von Stietencron",
+  "year": "1966",
+  "publisher": "Otto Harrassowitz, Wiesbaden",
+  "agent": "purana"
+ },
+ {
   "id": "src:sukthankar-1933",
   "type": "primary-text",
   "title": "Prolegomena to the Ādiparvan (The Mahābhārata: For the First Time Critically Edited, vol. 1)",
@@ -100,6 +136,33 @@
   "author": "Yuvraj Krishan",
   "year": "1999",
   "publisher": "Motilal Banarsidass, Delhi",
+  "agent": "purana"
+ },
+ {
+  "id": "src:parry-1994",
+  "type": "scholarly-book",
+  "title": "Death in Banaras",
+  "author": "Jonathan P. Parry",
+  "year": "1994",
+  "publisher": "Cambridge University Press",
+  "agent": "purana"
+ },
+ {
+  "id": "src:bailey-1995",
+  "type": "translation",
+  "title": "Gaṇeśapurāṇa, Part I: Upāsanākhaṇḍa. Introduction, Translation, Notes and Index",
+  "author": "Gregory Bailey",
+  "year": "1995",
+  "publisher": "Otto Harrassowitz, Wiesbaden",
+  "agent": "purana"
+ },
+ {
+  "id": "src:bakker-1986",
+  "type": "scholarly-book",
+  "title": "Ayodhyā (Groningen Oriental Studies 1; with a critical edition of the Ayodhyāmāhātmya)",
+  "author": "Hans Bakker",
+  "year": "1986",
+  "publisher": "Egbert Forsten, Groningen",
   "agent": "purana"
  }
 ]

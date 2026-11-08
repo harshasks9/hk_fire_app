@@ -1,1 +1,325 @@
-[]
+[
+ {
+  "id": "cmp:dipavali-reasons",
+  "title": "Why lamps at Dīpāvalī?",
+  "subject": "trad:dipavali",
+  "question": "What reason, if any, does each source give for the lamps and rites of Dīpāvalī?",
+  "rows": [
+   {
+    "text": "text:bhavishya-purana",
+    "locator": "Bhaviṣyottara 140 (as summarised by Kane)",
+    "statement": "The Bhaviṣyottara’s Dīpāvalī chapter prescribes a lamp “for Naraka” and tarpaṇa to Yama on the 14th, Lakṣmī’s worship and the driving out of Alakṣmī on the new moon, and on the next day the king’s proclamation “today is the sovereignty of Bali” and the worship of Bali as the future Indra. Several reasons are thus combined in one text.",
+    "sources": [
+     {
+      "source": "src:kane-hds-5-1",
+      "locator": "vol. V pt. 1, pp. 196–204 (Bhaviṣyottara ch. 140, vv. 14–29, 47–73)",
+      "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:bhagavata-purana",
+    "locator": "BhP 10.59.21",
+    "statement": "Kṛṣṇa kills Naraka (Bhauma), king of Prāgjyotiṣa, cutting off his head with the discus, and frees the women he held captive; the Purāṇa connects the deed with no festival or lamps.",
+    "sources": [
+     {
+      "source": "src:gretil-bhp-etext",
+      "locator": "BhP 10.59.2–21",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/sa_bhAgavatapurANa.xml"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:mahabhashya",
+    "locator": "on Pāṇini 3.1.26 (as cited by Kane)",
+    "statement": "The story of Bali’s binding by Viṣṇu was recited and staged — one who does so is said to “make Bali bound” (Baliṃ bandhayati) — but no seasonal festival is named.",
+    "sources": [
+     {
+      "source": "src:kane-hds-5-1",
+      "locator": "vol. V pt. 1, p. 203 (Mahābhāṣya on Pāṇini 3.1.26)",
+      "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:mahabharata",
+    "locator": "Anuśāsanaparvan 98.51 (vulgate, as cited by Kane)",
+    "statement": "A verse of the Anuśāsanaparvan says the giver of lamps “shines in heaven like a row of lamps” (dīpamāleva rājate); some writers took this as a reference to Dīvālī, which Kane thinks unclear.",
+    "sources": [
+     {
+      "source": "src:kane-hds-5-1",
+      "locator": "vol. V pt. 1, p. 207 (Anuśāsana 98.51, vulgate numbering)",
+      "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:valmiki-ramayana",
+    "locator": "VR (CE) 6.112–116",
+    "statement": "The Critical Edition narrates Rāma’s return to Ayodhyā and his consecration; oil lamps are mentioned only among the furnishings brought in the preparations (6.116.43). No festival of lamps for the return appears in the constituted text.",
+    "sources": [
+     {
+      "source": "src:gretil-vr-ce",
+      "locator": "VR (CE) 6.112–116 (6.116.43 tailapradīpān)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/sa_rAmAyaNa.xml"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:ramcharitmanas",
+    "locator": "RCM Uttarakāṇḍa, before dohā 3; after dohā 26",
+    "statement": "Ayodhyā adorns itself on learning of Rāma’s coming; in the description of his reign “jewel-lamps shine in every house” (gṛha gṛha prati mani dīpa birājahiṃ) — a picture of the city’s splendour, not a festival or its reason.",
+    "sources": [
+     {
+      "source": "src:manas-sanskritdocuments",
+      "locator": "RCM Uttarakāṇḍa, caupāīs before dohā 3 and after dohā 26",
+      "url": "https://sanskritdocuments.org/doc_z_otherlang_hindi/manas7_i.html"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:krittivasi-ramayana",
+    "locator": "—",
+    "statement": "(No Dīpāvalī reason.) Bengal keeps the new-moon night as Kālī Pūjā; Kane notes that in Bengal Kālī is worshipped on this day.",
+    "sources": [
+     {
+      "source": "src:kane-hds-5-1",
+      "locator": "vol. V pt. 1, p. 200",
+      "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+     }
+    ],
+    "status": "reference-checked"
+   }
+  ],
+  "note": "Kane (1958, p. 207) also records B. A. Gupte’s list of legends attached to the days of Dīvālī — the killing of Narakāsura, Bali’s loss of his empire, and the crowning of Rāma and of Vikrama — and the Jain observance of Mahāvīra’s nirvāṇa is kept on the same night (Jinasena’s Harivaṃśapurāṇa of 783 CE is usually cited; not checked here). The Nīlamata Purāṇa (vv. 505–510) calls the new-moon night Sukhasuptikā. The rows show that the north Indian “return of Rāma” explanation is not found in the Rāma texts checked, while the Naraka, Lakṣmī and Bali reasons are found together in the Sanskrit festival literature. The Kṛttivāsa row is a placeholder for Bengal and is not a statement about that text.",
+  "agent": "regional"
+ },
+ {
+  "id": "cmp:onam-mahabali-vs-puranic-bali",
+  "title": "Mahābali of Onam and the Purāṇic Bali",
+  "subject": "char:bali",
+  "question": "Who is Bali (or the hero of the festival), how does he lose the earth, and what does he receive?",
+  "rows": [
+   {
+    "text": "text:shatapatha-brahmana",
+    "locator": "ŚB 1.2.5.1–9",
+    "statement": "No Bali: the asuras divide the earth and agree to give the gods as much as the dwarf Viṣṇu (the sacrifice) lies upon — “vāmano ha viṣṇur āsa”; the gods thereby win the whole earth.",
+    "sources": [
+     {
+      "source": "src:gretil-shatapatha",
+      "locator": "ŚB 1.2.5.1–9",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/1_veda/2_bra/satapath/sb_01_u.htm"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:bhagavata-purana",
+    "locator": "BhP 8.22.31–35",
+    "statement": "Bali, grandson of Prahlāda, gives Vāmana three steps; bound and humbled, he is sent to Sutala, a realm “desired even by the gods”, where Viṣṇu promises to guard him and remain always present, and he will be Indra in the Sāvarṇi manvantara.",
+    "sources": [
+     {
+      "source": "src:gretil-bhp-etext",
+      "locator": "BhP 8.22.31–35; 8.13.12–13",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/sa_bhAgavatapurANa.xml"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:bhavishya-purana",
+    "locator": "Bhaviṣyottara 140.47–73 (as summarised by Kane)",
+    "statement": "On Balipratipadā (Kārttika śukla 1) the king and householders worship an image of Bali with his queen Vindhyāvalī as “son of Virocana … the future Indra”; the day is “the dominion of Bali”, when lamps make Lakṣmī stable.",
+    "sources": [
+     {
+      "source": "src:kane-hds-5-1",
+      "locator": "vol. V pt. 1, pp. 201–204 (Bhaviṣyottara 140.47–73)",
+      "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:maduraikkanci",
+    "locator": "ll. 590–591",
+    "statement": "The Ōṇam festival of Pāṇḍya Madurai is “the good day of Ōṇam that belongs to Māyōṉ of the golden garland, who overcame the crowding asuras” — the festival is Viṣṇu’s, and no returning asura king is mentioned.",
+    "sources": [
+     {
+      "source": "src:maduraikkanci-pm",
+      "locator": "Maduraikkāñci, lines 590–591",
+      "url": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0071.html"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:bijak",
+    "locator": "Śabda 8.5 (Ahmad Shah’s numbering)",
+    "statement": "Kabīr denies the story as a deed of the true Lord: “In the form of a dwarf he did not tempt Bali: that which tempts is Maya.”",
+    "sources": [
+     {
+      "source": "src:shah-1917",
+      "locator": "Śabda 8.5",
+      "quote": "In the form of a dwarf he did not tempt Bali: that which tempts is Maya.",
+      "url": "https://archive.org/details/dli.bengal.10689.13036"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "note": "The Kerala Onam legend — Mahābali (Māvēli) as a just asura king of a golden age of equality, pressed down by Vāmana and allowed to visit his people once a year — is the living tradition of the festival (trad:onam; Thrikkakara Vāmanamūrti temple). None of the texts above tells of an annual homecoming; the Bhāgavata’s Sutala, where Viṣṇu guards Bali, and the Bhaviṣyottara’s one-day “dominion of Bali” at Dīpāvalī are the nearest Sanskrit parallels. Kerala tradition is not ranked against them.",
+  "agent": "regional"
+ },
+ {
+  "id": "cmp:kabir-rama-vs-tulsidas-rama",
+  "title": "Kabīr’s Rām and Tulsīdās’s Rām",
+  "subject": "char:rama",
+  "question": "Is Rām the son of Daśaratha, and how is the formless (nirguṇa) related to the embodied (saguṇa)?",
+  "rows": [
+   {
+    "text": "text:bijak",
+    "locator": "Śabda 109.2; Śabda 8.7 (Ahmad Shah)",
+    "statement": "The true Rām is not the son of Daśaratha: “The three worlds know the son of Dasaratha. The secret of Rama’s name is other than this.” The Maker did not take avatāras: he “did not wed Sita: nor build a bridge of stone across the sea. This Raghunath they serve; but he who serves him is but blind.”",
+    "sources": [
+     {
+      "source": "src:shah-1917",
+      "locator": "Śabda 109.2; Śabda 8.7",
+      "quote": "The three worlds know the son of Dasaratha. The secret of Rama’s name is other than this.",
+      "url": "https://archive.org/details/dli.bengal.10689.13036"
+     },
+     {
+      "source": "src:hess-singh-1983"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:bijak",
+    "locator": "Ramainī 54 (Ahmad Shah)",
+    "statement": "The avatāras themselves are Māyā and mortal: “In Mathura died Krishna the cowherd: one by one died the ten avatars.”",
+    "sources": [
+     {
+      "source": "src:shah-1917",
+      "locator": "Ramainī 54",
+      "url": "https://archive.org/details/dli.bengal.10689.13036"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:ramcharitmanas",
+    "locator": "RCM Bāla 114–118",
+    "statement": "Śiva rebukes Pārvatī for suggesting that the Rāma of the Vedas is someone other than the prince: those who say so are deluded. “There is no difference between saguṇa and aguṇa … the formless, invisible, unborn becomes saguṇa through the love of devotees”; and “he whom the Vedas sing and sages meditate on — that same is Daśaratha’s son, lord of Kosala, for the devotees’ sake.”",
+    "sources": [
+     {
+      "source": "src:manas-sanskritdocuments",
+      "locator": "RCM Bālakāṇḍa, dohā 114 and caupāīs after dohās 115 and 118",
+      "url": "https://sanskritdocuments.org/doc_z_otherlang_hindi/manas1_i.html"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:valmiki-ramayana",
+    "locator": "VR (CE) 1.17.6–9",
+    "statement": "Rāma is born to Kausalyā as “half of Viṣṇu” (viṣṇor ardham), with Bharata, Lakṣmaṇa and Śatrughna as further portions — an incarnational account in narrative form, without a doctrine of the nirguṇa.",
+    "sources": [
+     {
+      "source": "src:gretil-vr-ce",
+      "locator": "VR (CE) 1.17.6–9",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/sa_rAmAyaNa.xml"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "note": "Read together, the Bījak denies precisely what the Mānas affirms. Tulsīdās’s insistence (Bāla 114–118) that the Vedic Brahman and Daśaratha’s son are one is often read by scholars as answering the nirguṇa Sants, though the Mānas names no opponent. The Bījak quotations are from Ahmad Shah’s 1917 translation; numbering differs in other editions.",
+  "agent": "regional"
+ },
+ {
+  "id": "cmp:durga-puja-vs-devi-mahatmya",
+  "title": "The Durgā Pūjā story and the Devī Māhātmya",
+  "subject": "trad:durga-puja",
+  "question": "Who first worshipped the Goddess in autumn, in what form, and why?",
+  "rows": [
+   {
+    "text": "text:devi-mahatmya",
+    "locator": "DM 12.11–12; 13.6–9 (MkP 92–93 in the GRETIL numbering)",
+    "statement": "The frame story: king Suratha and the merchant Samādhi, taught by the sage Medhas, make an earthen image of the Goddess on a river sandbank and worship her with flowers, incense, fire and their own blood for three years until she appears. The Goddess herself promises that whoever hears this māhātmya at “the great annual worship performed in autumn” (śaratkāle mahāpūjā … vārṣikī) will be freed from all troubles.",
+    "sources": [
+     {
+      "source": "src:mkp-gretil",
+      "locator": "MkP 93.6–9 (= DM 13.6–9) and 92.11–12 (= DM 12.11–12)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:krittivasi-ramayana",
+    "locator": "Laṅkākāṇḍa (canto not checked)",
+    "statement": "Rāma, unable to defeat Rāvaṇa, invokes the Goddess out of season (akāla-bodhana) in autumn and offers 108 blue lotuses; when one is missing he prepares to offer his own lotus-like eye, and the pleased Goddess grants him victory. Bengali tradition presents this as the origin of the autumn Durgā Pūjā.",
+    "sources": [
+     {
+      "source": "src:mcdermott-2011"
+     },
+     {
+      "source": "src:smith-wl-1988"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Durga_Puja"
+     }
+    ],
+    "status": "reference-checked"
+   },
+   {
+    "text": "text:kalika-purana",
+    "locator": "chapters on the Durgā-pūjā (not checked)",
+    "statement": "The Kālikā prescribes the great autumn worship of Durgā and its animal sacrifices; Kane’s summary of the Purāṇic material connects the autumn worship with the gods’ aid to Rāma, Rāvaṇa being killed on a day of the bright half of Āśvina.",
+    "sources": [
+     {
+      "source": "src:kane-hds-5-1",
+      "locator": "vol. V pt. 1, ch. IX, pp. 156–161",
+      "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+     }
+    ],
+    "status": "reference-checked"
+   },
+   {
+    "text": "text:valmiki-ramayana",
+    "locator": "VR (CE) 6.97",
+    "statement": "Before the final duel Rāma receives Brahmā’s weapon and is reminded by Mātali to use it; the Critical Edition’s constituted text contains no worship of Durgā and no Ādityahṛdaya hymn (the latter is in the vulgate).",
+    "sources": [
+     {
+      "source": "src:gretil-vr-ce",
+      "locator": "VR (CE) 6.97.1–21; text search for ādityahṛdaya",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/sa_rAmAyaNa.xml"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:durgabhaktitarangini",
+    "locator": "—",
+    "statement": "Vidyāpati’s manual and other Bengal–Mithilā digests (Śūlapāṇi, Raghunandana) codify the domestic and congregational rite that UNESCO describes in its modern Kolkata form.",
+    "sources": [
+     {
+      "source": "src:kane-hds-5-1",
+      "locator": "vol. V pt. 1, p. 155",
+      "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "note": "The Devī Māhātmya gives the clay image and the autumn worship but not Rāma; the Bengali Rāma story gives Rāma but not Suratha. UNESCO’s description of the Kolkata festival (clay images from Gaṅgā clay, eyes painted on Mahālayā, immersion on the tenth day) matches both, without adjudicating origins.",
+  "agent": "regional"
+ }
+]

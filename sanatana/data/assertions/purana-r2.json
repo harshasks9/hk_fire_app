@@ -16971,7 +16971,7 @@
   "sources": [
    {
     "source": "src:gretil",
-    "locator": "ViP 2.7.18–19",
+    "locator": "ViP 2.7.18",
     "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
    }
@@ -17425,12 +17425,36 @@
  },
  {
   "id": "purana:r2-775",
+  "s": "char:maya-asura",
+  "p": "LOCATED_AT",
+  "o": "place:talatala",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "note": "Maya, lord of Tripura, dwells in Talātala (the Śiva Purāṇa gives him Vitala instead, 2.5.12)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.24.28",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt",
+    "quote": "talātale mayo nāma dānavendras tri-purādhipatir"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-776",
   "s": "place:naraka",
   "p": "PART_OF",
   "o": "concept:fourteen-lokas",
   "qualifiers": {
    "text": "text:bhagavata-purana",
-   "note": "below the netherworlds, in the south"
+   "note": "between the three worlds, in the south, above the waters"
   },
   "evidenceClass": 1,
   "sources": [
@@ -17447,7 +17471,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "purana:r2-776",
+  "id": "purana:r2-777",
   "s": "place:naraka",
   "p": "ASSOCIATED_WITH",
   "o": "deity:yama",
@@ -17458,7 +17482,7 @@
   "sources": [
    {
     "source": "src:gretil",
-    "locator": "BhP 5.26.6",
+    "locator": "BhP 5.26.5–6",
     "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
    }
@@ -17469,7 +17493,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "purana:r2-777",
+  "id": "purana:r2-778",
   "s": "place:raurava",
   "p": "PART_OF",
   "o": "place:naraka",
@@ -17491,7 +17515,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "purana:r2-778",
+  "id": "purana:r2-779",
   "s": "place:raurava",
   "p": "PART_OF",
   "o": "place:naraka",
@@ -17502,7 +17526,7 @@
   "sources": [
    {
     "source": "src:gretil",
-    "locator": "BhP 5.26.7, 5.26.10",
+    "locator": "BhP 5.26.6, 5.26.10",
     "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
    }
@@ -17513,7 +17537,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "purana:r2-779",
+  "id": "purana:r2-780",
   "s": "place:asipatravana",
   "p": "PART_OF",
   "o": "place:naraka",
@@ -17535,7 +17559,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "purana:r2-780",
+  "id": "purana:r2-781",
   "s": "place:asipatravana",
   "p": "PART_OF",
   "o": "place:naraka",
@@ -17546,7 +17570,7 @@
   "sources": [
    {
     "source": "src:gretil",
-    "locator": "BhP 5.26.7, 5.26.15",
+    "locator": "BhP 5.26.6",
     "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
    }
@@ -17557,7 +17581,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "purana:r2-781",
+  "id": "purana:r2-782",
   "s": "place:krimibhojana",
   "p": "PART_OF",
   "o": "place:naraka",
@@ -17579,7 +17603,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "purana:r2-782",
+  "id": "purana:r2-783",
   "s": "place:krimibhojana",
   "p": "PART_OF",
   "o": "place:naraka",
@@ -17590,7 +17614,7 @@
   "sources": [
    {
     "source": "src:gretil",
-    "locator": "BhP 5.26.7, 5.26.18",
+    "locator": "BhP 5.26.6, 5.26.17",
     "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
    }
@@ -17601,7 +17625,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "purana:r2-783",
+  "id": "purana:r2-784",
   "s": "place:vaitarani-naraka",
   "p": "PART_OF",
   "o": "place:naraka",
@@ -17623,7 +17647,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "purana:r2-784",
+  "id": "purana:r2-785",
   "s": "place:vaitarani-naraka",
   "p": "PART_OF",
   "o": "place:naraka",
@@ -17634,29 +17658,7 @@
   "sources": [
    {
     "source": "src:gretil",
-    "locator": "BhP 5.26.7, 5.26.22",
-    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
-   }
-  ],
-  "confidence": "high",
-  "status": "verified-online",
-  "agent": "purana",
-  "lastVerified": "2026-11-08"
- },
- {
-  "id": "purana:r2-785",
-  "s": "place:kumbhipaka",
-  "p": "PART_OF",
-  "o": "place:naraka",
-  "qualifiers": {
-   "text": "text:bhagavata-purana"
-  },
-  "evidenceClass": 1,
-  "sources": [
-   {
-    "source": "src:gretil",
-    "locator": "BhP 5.26.7, 5.26.13",
+    "locator": "BhP 5.26.6, 5.26.21",
     "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
    }
@@ -17668,7 +17670,7 @@
  },
  {
   "id": "purana:r2-786",
-  "s": "place:tamisra",
+  "s": "place:kumbhipaka",
   "p": "PART_OF",
   "o": "place:naraka",
   "qualifiers": {
@@ -17678,7 +17680,7 @@
   "sources": [
    {
     "source": "src:gretil",
-    "locator": "BhP 5.26.7–8",
+    "locator": "BhP 5.26.6, 5.26.12",
     "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
    }
@@ -17690,7 +17692,7 @@
  },
  {
   "id": "purana:r2-787",
-  "s": "place:andhatamisra",
+  "s": "place:tamisra",
   "p": "PART_OF",
   "o": "place:naraka",
   "qualifiers": {
@@ -17700,7 +17702,7 @@
   "sources": [
    {
     "source": "src:gretil",
-    "locator": "BhP 5.26.7, 5.26.9",
+    "locator": "BhP 5.26.6–7",
     "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
    }
@@ -17712,6 +17714,28 @@
  },
  {
   "id": "purana:r2-788",
+  "s": "place:andhatamisra",
+  "p": "PART_OF",
+  "o": "place:naraka",
+  "qualifiers": {
+   "text": "text:bhagavata-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.26.6, 5.26.8",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-789",
   "s": "place:vaikuntha",
   "p": "ASSOCIATED_WITH",
   "o": "deity:vishnu",
@@ -17733,7 +17757,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "purana:r2-789",
+  "id": "purana:r2-790",
   "s": "place:goloka",
   "p": "ASSOCIATED_WITH",
   "o": "char:krishna",
@@ -17755,7 +17779,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "purana:r2-790",
+  "id": "purana:r2-791",
   "s": "place:goloka",
   "p": "ASSOCIATED_WITH",
   "o": "char:radha",
@@ -17774,7 +17798,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "purana:r2-791",
+  "id": "purana:r2-792",
   "s": "place:goloka",
   "p": "CENTRAL_TO",
   "o": "trad:gaudiya",
@@ -17792,7 +17816,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "purana:r2-792",
+  "id": "purana:r2-793",
   "s": "place:shvetadvipa",
   "p": "MENTIONED_IN",
   "o": "psg:mbh-narayaniya",
@@ -17811,7 +17835,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "purana:r2-793",
+  "id": "purana:r2-794",
   "s": "place:shvetadvipa",
   "p": "LOCATED_AT",
   "o": "place:kshirasagara",
@@ -17834,7 +17858,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "purana:r2-794",
+  "id": "purana:r2-795",
   "s": "place:shvetadvipa",
   "p": "ASSOCIATED_WITH",
   "o": "deity:narayana",
@@ -17849,6 +17873,915 @@
   ],
   "confidence": "high",
   "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-796",
+  "s": "text:kalki-purana",
+  "p": "PART_OF",
+  "o": "col:upapuranas",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:rocher-1986",
+    "locator": "p. 183"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-797",
+  "s": "narr:kalki-advent",
+  "p": "NARRATED_IN",
+  "o": "text:kalki-purana",
+  "qualifiers": {
+   "note": "the fullest narrative version; born in Śambhala"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "Kalki P 1.2",
+    "edition": "Kalki Purāṇa; Sanskrit Wikisource e-text (vulgate)",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%95%E0%A4%B2%E0%A5%8D%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A8",
+    "quote": "sumatyāṃ viṣṇuyaśasā garbham ādhatta vaiṣṇavam"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-798",
+  "s": "char:kalki",
+  "p": "APPEARS_IN",
+  "o": "text:kalki-purana",
+  "qualifiers": {
+   "role": "protagonist"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "Kalki P 1.2",
+    "edition": "Kalki Purāṇa; Sanskrit Wikisource e-text (vulgate)",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%95%E0%A4%B2%E0%A5%8D%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A8",
+    "quote": "kalkiṃ kalka-vināśārtham āvirbhūtaṃ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-799",
+  "s": "char:vishnuyashas",
+  "p": "PARENT_OF",
+  "o": "char:kalki",
+  "qualifiers": {
+   "text": "text:kalki-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "Kalki P 1.2",
+    "edition": "Kalki Purāṇa; Sanskrit Wikisource e-text (vulgate)",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%95%E0%A4%B2%E0%A5%8D%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A8"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-800",
+  "s": "place:shambhala",
+  "p": "MENTIONED_IN",
+  "o": "text:kalki-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "Kalki P 1.2",
+    "edition": "Kalki Purāṇa; Sanskrit Wikisource e-text (vulgate)",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%95%E0%A4%B2%E0%A5%8D%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A8",
+    "quote": "śambhala-grāmam āviveśa parātmakaḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-801",
+  "s": "text:kalki-purana",
+  "p": "DERIVED_FROM",
+  "o": "text:bhagavata-purana",
+  "qualifiers": {
+   "note": "expands the Kalki prophecy of BhP 12.2 (and ViP 4.24)"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:rocher-1986",
+    "locator": "p. 183"
+   }
+  ],
+  "confidence": "low",
+  "status": "recall",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-802",
+  "s": "text:saura-purana",
+  "p": "PART_OF",
+  "o": "col:upapuranas",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:hazra-upapuranas",
+    "locator": "vol. I"
+   },
+   {
+    "source": "src:rocher-1986",
+    "locator": "pp. 220–221"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-803",
+  "s": "text:saura-purana",
+  "p": "CENTRAL_TO",
+  "o": "trad:shaiva",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:rocher-1986",
+    "locator": "pp. 220–221"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-804",
+  "s": "place:kashi",
+  "p": "MENTIONED_IN",
+  "o": "text:saura-purana",
+  "qualifiers": {
+   "note": "praises Vārāṇasī and its liṅgas"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:rocher-1986",
+    "locator": "pp. 220–221"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "article (pointer only)",
+    "url": "https://en.wikipedia.org/wiki/Saura_Purana"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-805",
+  "s": "narr:pururavas-urvashi",
+  "p": "NARRATED_IN",
+  "o": "text:saura-purana",
+  "qualifiers": {
+   "note": "chapter 31 (as reported)"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:rocher-1986",
+    "locator": "pp. 220–221"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "article (pointer only)",
+    "url": "https://en.wikipedia.org/wiki/Saura_Purana"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-806",
+  "s": "text:ekamra-purana",
+  "p": "PART_OF",
+  "o": "col:upapuranas",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:rocher-1986"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-807",
+  "s": "temple:lingaraja",
+  "p": "ASSOCIATED_WITH",
+  "o": "text:ekamra-purana",
+  "qualifiers": {
+   "note": "the māhātmya of Ekāmra-kṣetra (Bhubaneswar) whose chief shrine is the Liṅgarāja (Kṛttivāsa)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:eck-2012"
+   },
+   {
+    "source": "src:rocher-1986"
+   }
+  ],
+  "confidence": "high",
+  "status": "recall",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-808",
+  "s": "text:kashi-khanda",
+  "p": "PART_OF",
+  "o": "text:skanda-purana",
+  "qualifiers": {
+   "note": "as the fourth khaṇḍa of the printed (Veṅkaṭeśvara) Skanda Purāṇa"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "SkP 4.1 (colophon/heading)",
+    "edition": "Skanda Purāṇa; Sanskrit Wikisource e-text (vulgate)",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AA_%28%E0%A4%95%E0%A4%BE%E0%A4%B6%E0%A5%80%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A6%E0%A5%A6%E0%A5%A7"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-809",
+  "s": "place:kashi",
+  "p": "MENTIONED_IN",
+  "o": "text:kashi-khanda",
+  "qualifiers": {
+   "note": "the subject of the whole khaṇḍa"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "SkP 4.1.2",
+    "edition": "Skanda Purāṇa; Sanskrit Wikisource e-text (vulgate)",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AA_%28%E0%A4%95%E0%A4%BE%E0%A4%B6%E0%A5%80%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A6%E0%A5%A6%E0%A5%A7"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-810",
+  "s": "temple:kashi-vishwanath",
+  "p": "ASSOCIATED_WITH",
+  "o": "text:kashi-khanda",
+  "qualifiers": {
+   "note": "Viśveśvara's liṅga and its tradition are glorified in the Kāśīkhaṇḍa"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:eck-1982"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-811",
+  "s": "text:kashi-khanda",
+  "p": "CENTRAL_TO",
+  "o": "trad:shaiva",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:eck-1982"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-812",
+  "s": "text:reva-khanda-vayu",
+  "p": "PART_OF",
+  "o": "text:skanda-purana",
+  "qualifiers": {
+   "note": "as printed (SkP 5.3); colophons name the Skanda Purāṇa"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "RKV colophons (as printed)",
+    "edition": "Revākhaṇḍa printed as SkP 5.3 (Veṅkaṭeśvara 1910); GRETIL e-text by J. Neuss, who assigns it to the Vāyupurāṇa",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_revAkhANDa-of-the-vAyupurANa-rkv.txt"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-813",
+  "s": "text:reva-khanda-vayu",
+  "p": "PART_OF",
+  "o": "text:vayu-purana",
+  "qualifiers": {
+   "note": "original attribution per manuscript evidence (Neuss)"
+  },
+  "evidenceClass": 2,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "GRETIL header: contributor's note",
+    "edition": "Revākhaṇḍa printed as SkP 5.3 (Veṅkaṭeśvara 1910); GRETIL e-text by J. Neuss, who assigns it to the Vāyupurāṇa",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_revAkhANDa-of-the-vAyupurANa-rkv.txt"
+   },
+   {
+    "source": "src:neuss-2012"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-814",
+  "s": "text:reva-khanda-skanda",
+  "p": "PART_OF",
+  "o": "text:skanda-purana",
+  "evidenceClass": 2,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "GRETIL header: contributor's note",
+    "edition": "Skandapurāṇa Revākhaṇḍa (ed. Oṅkārānanda Giri, Hoshangabad 1994); GRETIL e-text by J. Neuss",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_skandapurANa-revAkhaNDa-rks.txt"
+   },
+   {
+    "source": "src:neuss-2012"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-815",
+  "s": "claim:revakhanda-vayu",
+  "p": "CONCERNS",
+  "o": "text:reva-khanda-vayu",
+  "evidenceClass": 2,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "GRETIL header",
+    "edition": "Revākhaṇḍa printed as SkP 5.3 (Veṅkaṭeśvara 1910); GRETIL e-text by J. Neuss, who assigns it to the Vāyupurāṇa",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_revAkhANDa-of-the-vAyupurANa-rkv.txt"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-816",
+  "s": "temple:omkareshwar",
+  "p": "MENTIONED_IN",
+  "o": "text:reva-khanda-vayu",
+  "qualifiers": {
+   "note": "Oṃkāra tīrtha on the Narmadā"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "RKV 21.26; 230.15",
+    "edition": "Revākhaṇḍa printed as SkP 5.3 (Veṅkaṭeśvara 1910); GRETIL e-text by J. Neuss, who assigns it to the Vāyupurāṇa",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_revAkhANDa-of-the-vAyupurANa-rkv.txt",
+    "quote": "tathaivauṃkāramāhātmyam amarakaṇṭakīrtanam"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-817",
+  "s": "temple:omkareshwar",
+  "p": "MENTIONED_IN",
+  "o": "text:reva-khanda-skanda",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "RKS 34; 47",
+    "edition": "Skandapurāṇa Revākhaṇḍa (ed. Oṅkārānanda Giri, Hoshangabad 1994); GRETIL e-text by J. Neuss",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_skandapurANa-revAkhaNDa-rks.txt",
+    "quote": "iti śrīskandapurāṇe revākhaṇḍe oṃkāramahimānuvarṇano nāma saptacatvāriṃśo 'dhyāyaḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-818",
+  "s": "temple:omkareshwar",
+  "p": "ASSOCIATED_WITH",
+  "o": "text:reva-khanda-skanda",
+  "qualifiers": {
+   "note": "the khaṇḍa's oṃkāra-māhātmya"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "RKS 47",
+    "edition": "Skandapurāṇa Revākhaṇḍa (ed. Oṅkārānanda Giri, Hoshangabad 1994); GRETIL e-text by J. Neuss",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_skandapurANa-revAkhaNDa-rks.txt"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-819",
+  "s": "text:venkatachala-mahatmya",
+  "p": "PART_OF",
+  "o": "text:skanda-purana",
+  "qualifiers": {
+   "note": "Vaiṣṇavakhaṇḍa, first section (Veṅkaṭeśvara ed.)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "SkP 2.1.1 colophon",
+    "edition": "Skanda Purāṇa; Sanskrit Wikisource e-text (vulgate)",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A8_%28%E0%A4%B5%E0%A5%88%E0%A4%B7%E0%A5%8D%E0%A4%A3%E0%A4%B5%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%B5%E0%A5%87%E0%A4%99%E0%A5%8D%E0%A4%95%E0%A4%9F%E0%A4%BE%E0%A4%9A%E0%A4%B2%E0%A4%AE%E0%A4%BE%E0%A4%B9%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A5%8D%E0%A4%AF%E0%A4%AE%E0%A5%8D/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A6%E0%A5%A7"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-820",
+  "s": "temple:tirumala",
+  "p": "ASSOCIATED_WITH",
+  "o": "text:venkatachala-mahatmya",
+  "qualifiers": {
+   "note": "the māhātmya of the Veṅkaṭa hill"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "SkP 2.1",
+    "edition": "Skanda Purāṇa; Sanskrit Wikisource e-text (vulgate)",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A8_%28%E0%A4%B5%E0%A5%88%E0%A4%B7%E0%A5%8D%E0%A4%A3%E0%A4%B5%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%B5%E0%A5%87%E0%A4%99%E0%A5%8D%E0%A4%95%E0%A4%9F%E0%A4%BE%E0%A4%9A%E0%A4%B2%E0%A4%AE%E0%A4%BE%E0%A4%B9%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A5%8D%E0%A4%AF%E0%A4%AE%E0%A5%8D"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-821",
+  "s": "deity:venkateshvara",
+  "p": "MENTIONED_IN",
+  "o": "text:venkatachala-mahatmya",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "SkP 2.1.1 colophon",
+    "edition": "Skanda Purāṇa; Sanskrit Wikisource e-text (vulgate)",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A8_%28%E0%A4%B5%E0%A5%88%E0%A4%B7%E0%A5%8D%E0%A4%A3%E0%A4%B5%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%B5%E0%A5%87%E0%A4%99%E0%A5%8D%E0%A4%95%E0%A4%9F%E0%A4%BE%E0%A4%9A%E0%A4%B2%E0%A4%AE%E0%A4%BE%E0%A4%B9%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A5%8D%E0%A4%AF%E0%A4%AE%E0%A5%8D/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A6%E0%A5%A7",
+    "quote": "śrīveṃkaṭācalamāhātmye"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-822",
+  "s": "deity:varaha",
+  "p": "APPEARS_IN",
+  "o": "text:venkatachala-mahatmya",
+  "qualifiers": {
+   "role": "Yajñavarāha, whose dialogue with the Earth frames the māhātmya"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "SkP 2.1.1 (heading: nāradasya sumeruśikharasthayajñavarāhadarśanam)",
+    "edition": "Skanda Purāṇa; Sanskrit Wikisource e-text (vulgate)",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A8_%28%E0%A4%B5%E0%A5%88%E0%A4%B7%E0%A5%8D%E0%A4%A3%E0%A4%B5%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%B5%E0%A5%87%E0%A4%99%E0%A5%8D%E0%A4%95%E0%A4%9F%E0%A4%BE%E0%A4%9A%E0%A4%B2%E0%A4%AE%E0%A4%BE%E0%A4%B9%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A5%8D%E0%A4%AF%E0%A4%AE%E0%A5%8D/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A6%E0%A5%A7"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-823",
+  "s": "text:purushottama-kshetra-mahatmya",
+  "p": "PART_OF",
+  "o": "text:skanda-purana",
+  "qualifiers": {
+   "note": "Vaiṣṇavakhaṇḍa (Veṅkaṭeśvara ed.)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "SkP 2 (index: puruṣottamajagannāthamāhātmyam)",
+    "edition": "Skanda Purāṇa, Vaiṣṇavakhaṇḍa; Sanskrit Wikisource e-text (vulgate)",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A8_%28%E0%A4%B5%E0%A5%88%E0%A4%B7%E0%A5%8D%E0%A4%A3%E0%A4%B5%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-824",
+  "s": "temple:jagannath-puri",
+  "p": "ASSOCIATED_WITH",
+  "o": "text:purushottama-kshetra-mahatmya",
+  "qualifiers": {
+   "note": "the place this māhātmya glorifies"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "SkP 2 (index: puruṣottamajagannāthamāhātmyam)",
+    "edition": "Skanda Purāṇa, Vaiṣṇavakhaṇḍa; Sanskrit Wikisource e-text (vulgate)",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A8_%28%E0%A4%B5%E0%A5%88%E0%A4%B7%E0%A5%8D%E0%A4%A3%E0%A4%B5%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-825",
+  "s": "text:badarikashrama-mahatmya",
+  "p": "PART_OF",
+  "o": "text:skanda-purana",
+  "qualifiers": {
+   "note": "Vaiṣṇavakhaṇḍa (Veṅkaṭeśvara ed.)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "SkP 2 (index: badarikāśramamāhātmyam)",
+    "edition": "Skanda Purāṇa, Vaiṣṇavakhaṇḍa; Sanskrit Wikisource e-text (vulgate)",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A8_%28%E0%A4%B5%E0%A5%88%E0%A4%B7%E0%A5%8D%E0%A4%A3%E0%A4%B5%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-826",
+  "s": "temple:badrinath",
+  "p": "ASSOCIATED_WITH",
+  "o": "text:badarikashrama-mahatmya",
+  "qualifiers": {
+   "note": "the place this māhātmya glorifies"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "SkP 2 (index: badarikāśramamāhātmyam)",
+    "edition": "Skanda Purāṇa, Vaiṣṇavakhaṇḍa; Sanskrit Wikisource e-text (vulgate)",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A8_%28%E0%A4%B5%E0%A5%88%E0%A4%B7%E0%A5%8D%E0%A4%A3%E0%A4%B5%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-827",
+  "s": "text:ayodhya-mahatmya",
+  "p": "PART_OF",
+  "o": "text:skanda-purana",
+  "qualifiers": {
+   "note": "Vaiṣṇavakhaṇḍa (Veṅkaṭeśvara ed.)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "SkP 2 (index: ayodhyāmāhātmyam)",
+    "edition": "Skanda Purāṇa, Vaiṣṇavakhaṇḍa; Sanskrit Wikisource e-text (vulgate)",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A8_%28%E0%A4%B5%E0%A5%88%E0%A4%B7%E0%A5%8D%E0%A4%A3%E0%A4%B5%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-828",
+  "s": "place:ayodhya",
+  "p": "ASSOCIATED_WITH",
+  "o": "text:ayodhya-mahatmya",
+  "qualifiers": {
+   "note": "the place this māhātmya glorifies"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "SkP 2 (index: ayodhyāmāhātmyam)",
+    "edition": "Skanda Purāṇa, Vaiṣṇavakhaṇḍa; Sanskrit Wikisource e-text (vulgate)",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A8_%28%E0%A4%B5%E0%A5%88%E0%A4%B7%E0%A5%8D%E0%A4%A3%E0%A4%B5%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-829",
+  "s": "psg:matsya-103-112",
+  "p": "PART_OF",
+  "o": "text:matsya-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 103–112",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-830",
+  "s": "place:prayaga",
+  "p": "MENTIONED_IN",
+  "o": "psg:matsya-103-112",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 103.1–25; 112.6",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt",
+    "quote": "prayāgaṃ smarate nityaṃ sa yāti paramaṃ padam"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-831",
+  "s": "char:markandeya",
+  "p": "TEACHES_IN",
+  "o": "psg:matsya-103-112",
+  "qualifiers": {
+   "role": "narrator to Yudhiṣṭhira"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 103",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-832",
+  "s": "text:gaya-mahatmya",
+  "p": "PART_OF",
+  "o": "text:vayu-purana",
+  "qualifiers": {
+   "note": "Vāyu Purāṇa 105–112 in the printed editions"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:jacques-1962"
+   },
+   {
+    "source": "src:rocher-1986"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-833",
+  "s": "temple:vishnupad-gaya",
+  "p": "ASSOCIATED_WITH",
+  "o": "text:gaya-mahatmya",
+  "qualifiers": {
+   "note": "the Viṣṇupada footprint that holds the asura Gaya down"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:jacques-1962"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-834",
+  "s": "text:vamana-saromahatmya",
+  "p": "PART_OF",
+  "o": "text:vamana-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "GRETIL header (inserted after adhy. 23)",
+    "edition": "Vāmana Purāṇa Saromāhātmya (A. S. Gupta ed. 1967, inserted after adhy. 23); GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_vAmanapurANasaromAhAtmya.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-835",
+  "s": "place:kurukshetra",
+  "p": "MENTIONED_IN",
+  "o": "text:vamana-saromahatmya",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "VāmP Saromāhātmya 1.13; 12.6–16",
+    "edition": "Vāmana Purāṇa Saromāhātmya (A. S. Gupta ed. 1967, inserted after adhy. 23); GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_vAmanapurANasaromAhAtmya.txt",
+    "quote": "brahmavediḥ kurukṣetraṃ puṇyaṃ sānnihitaṃ saraḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-836",
+  "s": "text:ganesha-purana",
+  "p": "ASSOCIATED_WITH",
+  "o": "temple:mayureshwar-morgaon",
+  "qualifiers": {
+   "note": "Morgaon's Mayūreśvara is the Gaṇeśa Purāṇa's Mayūreśvara avatāra (Krīḍākhaṇḍa)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:thapan-1997"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "article (pointer only)",
+    "url": "https://en.wikipedia.org/wiki/Ganesha_Purana"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-837",
+  "s": "text:samba-purana",
+  "p": "ASSOCIATED_WITH",
+  "o": "temple:konark",
+  "qualifiers": {
+   "note": "Sāmba's sun-worship and the Śākadvīpīya priests; Koṇārka named among Sāmba's sun-shrines in later tradition"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:stietencron-1966"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "article (pointer only)",
+    "url": "https://en.wikipedia.org/wiki/Samba_Purana"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-838",
+  "s": "place:shakadvipa",
+  "p": "MENTIONED_IN",
+  "o": "text:samba-purana",
+  "qualifiers": {
+   "note": "the Maga priests brought from Śākadvīpa to serve the Sun"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:stietencron-1966"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "purana",
   "lastVerified": "2026-11-08"
  }

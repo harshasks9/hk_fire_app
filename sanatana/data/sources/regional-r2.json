@@ -57,15 +57,6 @@
   "agent": "regional"
  },
  {
-  "id": "src:barz-1976",
-  "type": "scholarly-book",
-  "title": "The Bhakti Sect of Vallabhācārya",
-  "author": "Richard Barz",
-  "year": "1976",
-  "publisher": "Thomson Press, Faridabad",
-  "agent": "regional"
- },
- {
   "id": "src:de-1961",
   "type": "scholarly-book",
   "title": "Early History of the Vaiṣṇava Faith and Movement in Bengal (2nd ed.)",
@@ -481,6 +472,91 @@
   "url": "https://archive.org/details/kalangwan-sastra-jawa-kuno-selayang-pandang-1983",
   "urlChecked": true,
   "notes": "archive.org full text read on 2026-11-08 for the Wirāṭaparwa epilogue (pp. 109–110), the Bhāratayuddha chronogram and patron (pp. 339–341) and the chapter list.",
+  "agent": "regional"
+ },
+ {
+  "id": "src:kamban-pm",
+  "type": "primary-text",
+  "title": "Kamba Rāmāyaṇam (Irāmāvatāram), Unicode e-text by kāṇṭam and paṭalam",
+  "author": "Project Madurai",
+  "year": "ongoing",
+  "publisher": "Project Madurai",
+  "url": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0455.html",
+  "urlChecked": true,
+  "notes": "Āraṇiya kāṇṭam part 2 (pmuni0455: paṭalams 3.7–3.11, verses 3164–3809) and Yuttha kāṇṭam parts 5–6 (pmuni0561_02: paṭalams 6.33–6.39) checked on 2026-11-08. Verse references are kāṇṭam.paṭalam.verse as given in the e-text, with the continuous verse number.",
+  "agent": "regional"
+ },
+ {
+  "id": "src:cilappatikaram-pm",
+  "type": "primary-text",
+  "title": "Cilappatikāram of Iḷaṅkō Aṭikaḷ, Unicode e-text (Maturaik kāṇṭam and Vañcik kāṇṭam)",
+  "author": "Project Madurai",
+  "year": "ongoing",
+  "publisher": "Project Madurai",
+  "url": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0111_01.html",
+  "urlChecked": true,
+  "notes": "Canto 17 (Āycciyar kuravai, pmuni0111_01) and canto 24 (Kuṉṟak kuravai, pmuni0111_02) checked on 2026-11-08.",
+  "agent": "regional"
+ },
+ {
+  "id": "src:tiruppavai-pm",
+  "type": "primary-text",
+  "title": "Nālāyira Divya Prabandham: Tiruppāvai of Āṇṭāḷ (verses 474–503 in the 4000 numbering), Unicode e-text",
+  "author": "Project Madurai",
+  "year": "ongoing",
+  "publisher": "Project Madurai",
+  "url": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0005_02.html",
+  "urlChecked": true,
+  "notes": "Tiruppāvai 18–20 (NDP 491–493) checked on 2026-11-08.",
+  "agent": "regional"
+ },
+ {
+  "id": "src:paripatal-pm",
+  "type": "primary-text",
+  "title": "Paripāṭal (with Paripāṭal tiraṭṭu), Unicode e-text",
+  "author": "Project Madurai",
+  "year": "ongoing",
+  "publisher": "Project Madurai",
+  "url": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0087.html",
+  "urlChecked": true,
+  "notes": "Poem headings (Tirumāl, Cevvēḷ, Vaiyai) and the Cevvēḷ poems checked on 2026-11-08.",
+  "agent": "regional"
+ },
+ {
+  "id": "src:tirumurukarruppatai-pm",
+  "type": "primary-text",
+  "title": "Tirumurukāṟṟuppaṭai of Nakkīrar, Unicode e-text",
+  "author": "Project Madurai",
+  "year": "ongoing",
+  "publisher": "Project Madurai",
+  "url": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0067.html",
+  "urlChecked": true,
+  "notes": "Lines on the six faces (c. ll. 91–102) and twelve hands checked on 2026-11-08.",
+  "agent": "regional"
+ },
+ {
+  "id": "src:vedabase-cc",
+  "type": "translation",
+  "title": "Śrī Caitanya-caritāmṛta of Kṛṣṇadāsa Kavirāja, with translation and purports (online edition)",
+  "author": "A. C. Bhaktivedanta Swami Prabhupāda (trans.)",
+  "year": "1974–75 (online)",
+  "publisher": "Bhaktivedanta Book Trust (vedabase.io)",
+  "url": "https://vedabase.io/en/library/cc/",
+  "urlChecked": true,
+  "notes": "Ādi-līlā 4 checked on 2026-11-08; verse numbering is that of the BBT edition.",
+  "agent": "regional"
+ },
+ {
+  "id": "src:shah-1917",
+  "type": "translation",
+  "title": "The Bijak of Kabir, translated into English according to his edited Hindi text published in 1911",
+  "author": "Ahmad Shah (trans.)",
+  "year": "1917 (reprint, Asian Publication Services, New Delhi)",
+  "publisher": "Hamirpur, 1917; reprint New Delhi",
+  "url": "https://archive.org/details/dli.bengal.10689.13036",
+  "urlChecked": true,
+  "license": "public domain in many jurisdictions (1917 translation)",
+  "notes": "archive.org scan read on 2026-11-08: Śabda 8 (the ten avatāras as Māyā), Śabda 109 (the son of Daśaratha) and Ramainī 54. Numbering is Ahmad Shah’s.",
   "agent": "regional"
  }
 ]

@@ -63,6 +63,24 @@
   "agent": "temple"
  },
  {
+  "id": "src:haberman-1994",
+  "type": "scholarly-book",
+  "title": "Journey Through the Twelve Forests: An Encounter with Krishna",
+  "author": "David L. Haberman",
+  "year": "1994",
+  "publisher": "Oxford University Press, New York",
+  "agent": "temple"
+ },
+ {
+  "id": "src:haberman-2006",
+  "type": "scholarly-book",
+  "title": "River of Love in an Age of Pollution: The Yamuna River of Northern India",
+  "author": "David L. Haberman",
+  "year": "2006",
+  "publisher": "University of California Press, Berkeley",
+  "agent": "temple"
+ },
+ {
   "id": "src:kak-1933",
   "type": "scholarly-book",
   "title": "Ancient Monuments of Kashmir",
@@ -207,6 +225,15 @@
   "agent": "temple"
  },
  {
+  "id": "src:feldhaus-1995",
+  "type": "scholarly-book",
+  "title": "Water and Womanhood: Religious Meanings of Rivers in Maharashtra",
+  "author": "Anne Feldhaus",
+  "year": "1995",
+  "publisher": "Oxford University Press, New York",
+  "agent": "temple"
+ },
+ {
   "id": "src:feldhaus-2003",
   "type": "scholarly-book",
   "title": "Connected Places: Region, Pilgrimage, and Geographical Imagination in India",
@@ -258,6 +285,15 @@
   "author": "Asha Kalia",
   "year": "1982",
   "publisher": "Abhinav Publications, New Delhi",
+  "agent": "temple"
+ },
+ {
+  "id": "src:williams-rb-2001",
+  "type": "scholarly-book",
+  "title": "An Introduction to Swaminarayan Hinduism",
+  "author": "Raymond Brady Williams",
+  "year": "2001",
+  "publisher": "Cambridge University Press",
   "agent": "temple"
  },
  {

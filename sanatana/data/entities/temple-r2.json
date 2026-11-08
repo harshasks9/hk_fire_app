@@ -13393,7 +13393,7 @@
     "start": 781,
     "end": 1143,
     "label": "781–1143 CE",
-    "certainty": "secure",
+    "certainty": "estimated",
     "basis": "series of dated Cham inscriptions as reported",
     "sources": [
      {
@@ -14144,6 +14144,1278 @@
   "status": "reference-checked",
   "agent": "temple",
   "limits": "The surviving-structure dates are partly from recall.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:baps-neasden",
+  "type": "temple",
+  "name": "BAPS Shri Swaminarayan Mandir, Neasden",
+  "iast": "Śrī Svāminārāyaṇa Mandira",
+  "aliases": [
+   "Neasden Temple",
+   "BAPS Shri Swaminarayan Mandir London"
+  ],
+  "subtype": "diaspora stone temple (śikharabaddha mandir)",
+  "traditions": [
+   "trad:vaishnava"
+  ],
+  "summary": "Carved-stone temple of the BAPS Svāminārāyaṇa organisation in Neasden, London — the first traditional Hindu stone temple in Europe — built from November 1992 and opened in August 1995 under Pramukh Swami Maharaj, using Bulgarian limestone and Indian and Italian marble carved in India and assembled without structural steel.",
+  "details": "Some 26,300 carved stone pieces, shipped from India, make up the temple; an adjoining havelī has carved wood. Raymond Brady Williams’s work describes BAPS as a transnational Gujarati Vaiṣṇava movement whose temples anchor diaspora communities.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "construction",
+    "start": 1992,
+    "end": 1995,
+    "label": "1992–1995 (opened August 1995)",
+    "certainty": "secure",
+    "basis": "documented construction and opening",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/BAPS_Shri_Swaminarayan_Mandir_London"
+     },
+     {
+      "source": "src:williams-rb-2001"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 51.5475,
+   "lon": -0.26167,
+   "precision": "exact",
+   "label": "Neasden, London, United Kingdom",
+   "country": "United Kingdom"
+  },
+  "attributes": {
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 0 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/BAPS_Shri_Swaminarayan_Mandir_London"
+   },
+   {
+    "source": "src:williams-rb-2001"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/BAPS_Shri_Swaminarayan_Mandir_London"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q1402606"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "A modern diaspora temple; its significance is institutional and communal.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:akshardham-delhi",
+  "type": "temple",
+  "name": "Swaminarayan Akshardham, Delhi",
+  "iast": "Akṣaradhāma",
+  "aliases": [
+   "Akshardham Temple, Delhi"
+  ],
+  "subtype": "temple and cultural campus",
+  "traditions": [
+   "trad:vaishnava"
+  ],
+  "summary": "Large BAPS temple-and-exhibition campus on the Yamuna floodplain in Delhi, created under Pramukh Swami Maharaj and consecrated on 6 November 2005; its carved sandstone and marble central monument houses an image of Svāminārāyaṇa.",
+  "details": "The monument measures about 91 × 91 m and is surrounded by 108 small shrines. The project had been planned since 1968 (Yogiji Maharaj’s vision); its location on the Yamuna floodplain made it the subject of environmental litigation and a 2004 amendment to clearance rules.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "consecration",
+    "start": 2005,
+    "end": 2005,
+    "label": "6 November 2005",
+    "certainty": "secure",
+    "basis": "documented consecration",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Swaminarayan_Akshardham_(Delhi)"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 28.6125,
+   "lon": 77.27722,
+   "precision": "exact",
+   "label": "Delhi, India",
+   "country": "India"
+  },
+  "attributes": {
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 8 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Swaminarayan_Akshardham_(Delhi)"
+   },
+   {
+    "source": "src:williams-rb-2001"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Swaminarayan_Akshardham_(Delhi)"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q1849858"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "A modern temple; floodplain controversy recorded neutrally.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:akshardham-robbinsville",
+  "type": "temple",
+  "name": "BAPS Swaminarayan Akshardham, Robbinsville",
+  "iast": "Akṣaradhāma",
+  "aliases": [
+   "Akshardham New Jersey"
+  ],
+  "subtype": "diaspora stone temple",
+  "traditions": [
+   "trad:vaishnava"
+  ],
+  "summary": "BAPS temple in Robbinsville, New Jersey, built between 2015 and 2023 and dedicated in October 2023, the largest Hindu temple in the Western Hemisphere; its construction involved a 2021 lawsuit over the labour conditions of artisans brought from India.",
+  "details": "The campus was initiated in 1984 by Pramukh Swami Maharaj. The central shrine honours Svāminārāyaṇa and Guṇātītānanda Svāmī, with shrines of Rādhā-Kṛṣṇa, Veṅkaṭeśvara-Padmāvatī, Sītā-Rāma and Śiva-Pārvatī. The labour lawsuit filed in 2021 is reported here without assessment (recall).",
+  "dates": [
+   {
+    "system": "material",
+    "event": "construction",
+    "start": 2015,
+    "end": 2023,
+    "label": "2015–2023 (dedicated October 2023)",
+    "certainty": "secure",
+    "basis": "documented construction period",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Swaminarayan_Akshardham_(Robbinsville)"
+     }
+    ]
+   }
+  ],
+  "attributes": {
+   "coordinates": "40.25417, -74.57778 (Wikipedia {{coord}} and Wikidata P625 agree within 0 m); not plotted — outside the map range accepted by the dataset validator",
+   "locationLabel": "Robbinsville, New Jersey, United States — United States"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Swaminarayan_Akshardham_(Robbinsville)"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Swaminarayan_Akshardham_(Robbinsville)"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q17510290"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "A modern temple; the labour dispute is recorded from recall without assessment.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:sv-temple-pittsburgh",
+  "type": "temple",
+  "name": "Sri Venkateswara Temple, Penn Hills (Pittsburgh)",
+  "iast": "Śrī Veṅkaṭeśvara",
+  "aliases": [
+   "S.V. Temple Pittsburgh"
+  ],
+  "subtype": "diaspora Āgamic temple",
+  "traditions": [
+   "trad:vaishnava",
+   "trad:srivaishnava"
+  ],
+  "summary": "Temple of Veṅkaṭeśvara in Penn Hills near Pittsburgh, modelled on Tirumala and consecrated on 8 June 1977 with help from the Tirumala Tirupati Devasthanams and the Andhra Pradesh endowments department — the first Hindu temple in the United States built by Indian immigrants.",
+  "details": "Groundbreaking was on 17 April 1975. Joanne Waghorne’s study of diaspora temples treats such Āgamic temples as transplanting South Indian ritual into a suburban middle-class setting; the temple is a pilgrimage centre for Hindus of the American north-east and mid-west.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "consecration",
+    "start": 1975,
+    "end": 1977,
+    "label": "begun 1975; consecrated 8 June 1977",
+    "certainty": "secure",
+    "basis": "documented dates",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sri_Venkateswara_Temple,_Pittsburgh"
+     }
+    ]
+   }
+  ],
+  "attributes": {
+   "coordinates": "40.441, -79.80518 (Wikipedia {{coord}} and Wikidata P625 agree within 23 m); not plotted — outside the map range accepted by the dataset validator",
+   "locationLabel": "Penn Hills, Pennsylvania, United States — United States"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Sri_Venkateswara_Temple,_Pittsburgh"
+   },
+   {
+    "source": "src:waghorne-2004"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Sri_Venkateswara_Temple,_Pittsburgh"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q85802837"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "A modern temple; “first” claims depend on definitions (the Flushing Gaṇeśa temple was consecrated a month later).",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:ganesh-temple-flushing",
+  "type": "temple",
+  "name": "Sri Maha Vallabha Ganapati Devasthanam, Flushing",
+  "iast": "Mahāvallabha Gaṇapati",
+  "aliases": [
+   "Ganesh Temple, Flushing",
+   "Hindu Temple Society of North America"
+  ],
+  "subtype": "diaspora Āgamic temple",
+  "traditions": [
+   "trad:smarta"
+  ],
+  "summary": "Gaṇeśa temple in Flushing, Queens, New York, managed by the Hindu Temple Society of North America (founded 1970) and consecrated on 4 July 1977 — among the first Hindu temples built by Indian immigrants in the United States.",
+  "details": "Built in South Indian Āgamic style with craftsmen from India; Uma Mysorekar has led the society since 1994. The temple was a focus of the “milk-drinking Gaṇeśa” phenomenon of September 1995.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "consecration",
+    "start": 1977,
+    "end": 1977,
+    "label": "4 July 1977",
+    "certainty": "secure",
+    "basis": "documented consecration",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hindu_Temple_Society_of_North_America"
+     }
+    ]
+   }
+  ],
+  "attributes": {
+   "coordinates": "40.75275, -73.81683 (Wikipedia {{coord}} and Wikidata P625 agree within 23 m); not plotted — outside the map range accepted by the dataset validator",
+   "locationLabel": "Flushing, Queens, New York City, United States — United States"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hindu_Temple_Society_of_North_America"
+   },
+   {
+    "source": "src:waghorne-2004"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Hindu_Temple_Society_of_North_America"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q14706374"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "A modern temple.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:ganga-talao",
+  "type": "temple",
+  "name": "Ganga Talao (Grand Bassin), Mauritius",
+  "iast": "Gaṅgā Tālāb",
+  "aliases": [
+   "Grand Bassin",
+   "Ganga Talab"
+  ],
+  "subtype": "sacred lake with shrines",
+  "traditions": [
+   "trad:shaiva"
+  ],
+  "summary": "Crater lake in southern Mauritius made a Hindu tīrtha after a priest of Triolet, Jhummun Giri, dreamed in 1887 (or the 1890s) that its waters flowed from the Gaṅgā; Gaṅgā water was poured into it in 1972, it was declared a sacred lake in 1998, and the Mahāśivarātri pilgrimage draws hundreds of thousands.",
+  "details": "The pilgrimage gave descendants of the half-million indentured labourers brought to Mauritius in the 19th century a way to “bathe in sacred waters once more”. Patrick Eisenlohr’s ethnography describes the Śivarātri pilgrimage as central to Mauritian Hindu identity. Shrines line the shore, and a 33 m statue of Śiva (Maṅgal Mahādev) stands at the entrance (2007, recall).",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "revelation to Jhummun Giri; first pilgrimage from Triolet",
+    "start": 1887,
+    "end": 1898,
+    "label": "1887 or 1890s",
+    "certainty": "disputed",
+    "basis": "as reported (sources differ)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ganga_Talao"
+     }
+    ]
+   },
+   {
+    "system": "material",
+    "event": "surviving-structure",
+    "start": 1972,
+    "end": 2007,
+    "label": "shrines and statue, 1970s–2007",
+    "certainty": "estimated",
+    "basis": "reported Gaṅgā-water ceremony (1972) and recall for the statue",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ganga_Talao"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": -20.41806,
+   "lon": 57.49194,
+   "precision": "exact",
+   "label": "Grand Bassin, Savanne district, Mauritius",
+   "country": "Mauritius"
+  },
+  "attributes": {
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 1 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ganga_Talao"
+   },
+   {
+    "source": "src:eisenlohr-2006"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Ganga_Talao"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q2338515"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "temple",
+  "limits": "The connection with the Gaṅgā is a devotional identification; the tīrtha is a 19th-century creation.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:temple-in-the-sea",
+  "type": "temple",
+  "name": "Temple in the Sea (Sewdass Sadhu Shiv Mandir), Trinidad",
+  "iast": "Sewdāsa Sādhu Śiva Mandira",
+  "aliases": [
+   "Temple in the Sea",
+   "Waterloo Temple"
+  ],
+  "subtype": "diaspora shrine",
+  "traditions": [
+   "trad:shaiva"
+  ],
+  "summary": "Small Śiva temple on a causeway in the Gulf of Paria at Waterloo, Trinidad, built single-handedly from 1947 to 1952 by Sewdass Sadhu, an indentured labourer from India, after he was refused land; rebuilt and reopened in 1995 for the 150th anniversary of Indian indentured arrival.",
+  "details": "Sadhu (b. 1901) first built on estate land, from which he was evicted, and then carried stones and sand by bicycle to extend a platform into the sea. After his death in 1970 the temple decayed; Randolph Rampersad, a descendant of indentured labourers, led its reconstruction, opened in 1995. Images of Śiva, Durgā, Gaṇeśa, Hanumān and Kṛṣṇa are installed.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "construction",
+    "start": 1947,
+    "end": 1952,
+    "label": "1947–1952 (original)",
+    "certainty": "estimated",
+    "basis": "as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Temple_in_the_Sea"
+     }
+    ]
+   },
+   {
+    "system": "material",
+    "event": "surviving-structure",
+    "start": 1995,
+    "end": 1995,
+    "label": "1995 rebuilding",
+    "certainty": "estimated",
+    "basis": "as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Temple_in_the_Sea"
+     }
+    ]
+   }
+  ],
+  "attributes": {
+   "coordinates": "10.48169, -61.47553 (Wikipedia {{coord}} and Wikidata P625 agree within 1 m); not plotted — outside the map range accepted by the dataset validator",
+   "locationLabel": "Waterloo, Carapichaima, Trinidad and Tobago — Trinidad and Tobago"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Temple_in_the_Sea"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Temple_in_the_Sea"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q27964107"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "A modern shrine; its significance is as a memorial of indenture.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:baps-abu-dhabi",
+  "type": "temple",
+  "name": "BAPS Hindu Mandir, Abu Dhabi",
+  "iast": "Hindu Mandira",
+  "aliases": [
+   "BAPS Hindu Mandir Abu Dhabi"
+  ],
+  "subtype": "diaspora stone temple",
+  "traditions": [
+   "trad:vaishnava"
+  ],
+  "summary": "First traditional carved-stone Hindu temple in Abu Dhabi, on land granted by the UAE government in 2015, consecrated by Mahant Swami Maharaj on 14 February 2024; the largest Hindu temple in West Asia, with over two million visitors in its first year.",
+  "details": "Pramukh Swami Maharaj envisioned a temple in the region during a 1997 visit to Sharjah. Its seven spires are said to represent the seven emirates (recall).",
+  "dates": [
+   {
+    "system": "material",
+    "event": "consecration",
+    "start": 2024,
+    "end": 2024,
+    "label": "14 February 2024",
+    "certainty": "secure",
+    "basis": "documented consecration",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/BAPS_Hindu_Mandir_Abu_Dhabi"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 24.6165,
+   "lon": 54.73186,
+   "precision": "exact",
+   "label": "Abu Mureikha, Abu Dhabi, United Arab Emirates",
+   "country": "United Arab Emirates"
+  },
+  "attributes": {
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 0 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/BAPS_Hindu_Mandir_Abu_Dhabi"
+   },
+   {
+    "source": "src:williams-rb-2001"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/BAPS_Hindu_Mandir_Abu_Dhabi"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q48734707"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "A modern temple.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:yamuna-river",
+  "type": "place",
+  "name": "Yamunā river",
+  "iast": "Yamunā",
+  "devanagari": "यमुना",
+  "aliases": [
+   "Yamuna",
+   "Jamuna",
+   "Kālindī"
+  ],
+  "subtype": "river",
+  "summary": "Sacred river of northern India rising at Yamunotri and joining the Gaṅgā at Prayāga; personified as the goddess Yamunā, sister of Yama, it is the river of Kṛṣṇa’s Braj (Mathurā and Vṛndāvana) and is named in the Ṛgveda’s river hymn.",
+  "details": "Ṛgveda 10.75.5 (the Nadīstuti) invokes “Gaṅgā, Yamunā, Sarasvatī, Śutudrī …”. In the Bhāgavata and Harivaṃśa the Yamunā is the river of Kṛṣṇa’s childhood (Kāliya, the rāsa). David Haberman’s study documents both the river’s theology in Braj and its severe modern pollution.",
+  "location": {
+   "lat": 25.4225,
+   "lon": 81.8875,
+   "precision": "region",
+   "label": "Confluence with the Gaṅgā at Prayagraj, Uttar Pradesh, India (representative point)",
+   "country": "India"
+  },
+  "attributes": {
+   "coordinateSource": "representative sacred point; coordinate from the Wikipedia article {{coord}} (title) or Wikidata P625 of the river"
+  },
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Yamuna"
+   },
+   {
+    "source": "src:eck-2012"
+   },
+   {
+    "source": "src:haberman-2006"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates",
+    "url": "https://en.wikipedia.org/wiki/Yamuna"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "A river record stands for the sacred river as a whole; the point is representative only. Textual praise and pilgrimage practice are evidence of reverence, not of particular events.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:sarayu-river",
+  "type": "place",
+  "name": "Sarayū river (Ghaghara at Ayodhyā)",
+  "iast": "Sarayū",
+  "devanagari": "सरयू",
+  "aliases": [
+   "Sarayu",
+   "Saryu",
+   "Ghaghara",
+   "Karnali"
+  ],
+  "subtype": "river",
+  "summary": "The river on which Ayodhyā stands in the Rāmāyaṇa, identified with the lower Ghaghara (Karnali), locally called Saryu or Sarayū at Ayodhyā; Rāma enters its waters at the end of the Uttarakāṇḍa.",
+  "details": "The Vālmīki Rāmāyaṇa sets Kosala and Ayodhyā on the Sarayū’s bank (Bālakāṇḍa, opening sargas). A separate Sarju river in Kumaon (Uttarakhand), a tributary of the Śāradā, shares the name; the Ayodhyā river is the Ghaghara. The Ṛgveda also names a Sarayu (recall: RV 4.30.18), whose identification is uncertain.",
+  "location": {
+   "lat": 26.8,
+   "lon": 82.2,
+   "precision": "region",
+   "label": "Ayodhya, Uttar Pradesh, India (representative point)",
+   "country": "India"
+  },
+  "attributes": {
+   "coordinateSource": "representative point at Ayodhya (approximate city centre); the Ghaghara article confirms the river is called Saryu/Sarayu at Ayodhya"
+  },
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ghaghara"
+   },
+   {
+    "source": "src:eck-2012"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "states the Ghaghara is locally called Saryu or Sarayu in Ayodhya",
+    "url": "https://en.wikipedia.org/wiki/Ghaghara"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "A river record stands for the sacred river as a whole; the point is representative only. Textual praise and pilgrimage practice are evidence of reverence, not of particular events.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:narmada-river",
+  "type": "place",
+  "name": "Narmadā river",
+  "iast": "Narmadā",
+  "devanagari": "नर्मदा",
+  "aliases": [
+   "Narmada",
+   "Rewa",
+   "Revā"
+  ],
+  "subtype": "river",
+  "summary": "West-flowing river of central India rising at Amarkantak and reaching the Gulf of Khambhat, regarded as among the holiest rivers (some say its sight purifies as bathing in the Gaṅgā does); pilgrims perform a months-long circumambulation (parikramā) of its whole length.",
+  "details": "Smooth stones from its bed (bāṇaliṅgas) are prized as natural liṅgas. Oṃkāreśvara and Maheśvar stand on its banks; the Narmadā-māhātmya of the Purāṇas (e.g. in the Matsya and Skanda) glorifies it (passages not verified here).",
+  "location": {
+   "lat": 21.65111,
+   "lon": 72.81194,
+   "precision": "region",
+   "label": "Mouth near Bharuch, Gujarat, India (representative point)",
+   "country": "India"
+  },
+  "attributes": {
+   "coordinateSource": "representative sacred point; coordinate from the Wikipedia article {{coord}} (title) or Wikidata P625 of the river"
+  },
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Narmada_River"
+   },
+   {
+    "source": "src:eck-2012"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates",
+    "url": "https://en.wikipedia.org/wiki/Narmada_River"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "A river record stands for the sacred river as a whole; the point is representative only. Textual praise and pilgrimage practice are evidence of reverence, not of particular events.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:godavari-river",
+  "type": "place",
+  "name": "Godāvarī river",
+  "iast": "Godāvarī",
+  "devanagari": "गोदावरी",
+  "aliases": [
+   "Godavari",
+   "Dakshina Ganga"
+  ],
+  "subtype": "river",
+  "summary": "Longest river of peninsular India, rising at Brahmagiri near Trimbak (Tryambakeśvara) and flowing east to the Bay of Bengal; called “Dakṣiṇa Gaṅgā”, its banks at Nashik (Pañcavaṭī) are a Kumbha Melā site and the setting of Rāma’s forest exile.",
+  "details": "Anne Feldhaus’s study shows how the Godāvarī is imagined in Maharashtra as a goddess and as the Gaṅgā brought south by the sage Gautama. The Puṣkaram festival is held every twelve years at Rajahmundry.",
+  "location": {
+   "lat": 17.0,
+   "lon": 81.8,
+   "precision": "region",
+   "label": "Rajahmundry, Andhra Pradesh, India (representative point)",
+   "country": "India"
+  },
+  "attributes": {
+   "coordinateSource": "representative sacred point; coordinate from the Wikipedia article {{coord}} (title) or Wikidata P625 of the river"
+  },
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Godavari_River"
+   },
+   {
+    "source": "src:eck-2012"
+   },
+   {
+    "source": "src:feldhaus-1995"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates",
+    "url": "https://en.wikipedia.org/wiki/Godavari_River"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "A river record stands for the sacred river as a whole; the point is representative only. Textual praise and pilgrimage practice are evidence of reverence, not of particular events.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:kaveri-river",
+  "type": "place",
+  "name": "Kāverī river",
+  "iast": "Kāverī",
+  "devanagari": "कावेरी",
+  "aliases": [
+   "Kaveri",
+   "Cauvery",
+   "Ponni"
+  ],
+  "subtype": "river",
+  "summary": "Sacred river of the far south, rising at Talakaveri in Kodagu and reaching the sea at Poompuhar; its delta holds many of the great Cōḻa and Tēvāram temples, and the island-temple cities of Srirangapatna and Srirangam.",
+  "details": "Tradition makes the river a goddess released from Agastya’s water-pot. Tamil literature (the Cilappatikāram) celebrates the river and the Cōḻa port at its mouth.",
+  "location": {
+   "lat": 11.37035,
+   "lon": 79.8281,
+   "precision": "region",
+   "label": "Delta near Poompuhar, Tamil Nadu, India (representative point)",
+   "country": "India"
+  },
+  "attributes": {
+   "coordinateSource": "Wikidata P625 for the river (mouth); the Wikipedia {{coord}} gives the source at Talakaveri"
+  },
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kaveri"
+   },
+   {
+    "source": "src:eck-2012"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q216239"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "A river record stands for the sacred river as a whole; the point is representative only. Textual praise and pilgrimage practice are evidence of reverence, not of particular events.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:krishna-river",
+  "type": "place",
+  "name": "Kṛṣṇā river",
+  "iast": "Kṛṣṇā",
+  "devanagari": "कृष्णा",
+  "aliases": [
+   "Krishna",
+   "Krishnaveni"
+  ],
+  "subtype": "river",
+  "summary": "River of the Deccan rising at Mahabaleshwar and flowing east to the Bay of Bengal; Śrīśailam stands above its gorge and Vijayawada’s Kanaka Durgā on its bank, and twelve-yearly Puṣkaram festivals are held on it.",
+  "location": {
+   "lat": 15.735,
+   "lon": 80.92,
+   "precision": "region",
+   "label": "Mouth near Hamsaladeevi, Andhra Pradesh, India (representative point)",
+   "country": "India"
+  },
+  "attributes": {
+   "coordinateSource": "representative sacred point; coordinate from the Wikipedia article {{coord}} (title) or Wikidata P625 of the river"
+  },
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Krishna_River"
+   },
+   {
+    "source": "src:eck-2012"
+   },
+   {
+    "source": "src:feldhaus-1995"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates",
+    "url": "https://en.wikipedia.org/wiki/Krishna_River"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "A river record stands for the sacred river as a whole; the point is representative only. Textual praise and pilgrimage practice are evidence of reverence, not of particular events.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:sindhu-river",
+  "type": "place",
+  "name": "Sindhu (Indus) river",
+  "iast": "Sindhu",
+  "devanagari": "सिन्धु",
+  "aliases": [
+   "Indus",
+   "Sindhu"
+  ],
+  "subtype": "river",
+  "summary": "The Indus, the great river of the Ṛgveda (where “sindhu” also means river in general), rising near Mount Kailāsa and flowing through Ladakh and Pakistan to the Arabian Sea; the name gave rise to “Hindu” and “India” through Persian and Greek.",
+  "details": "The Nadīstuti (Ṛgveda 10.75) praises the Sindhu above all rivers. The Sindhu Darshan festival at Leh (since 1997) is a modern Indian celebration of the river.",
+  "location": {
+   "lat": 23.995,
+   "lon": 67.435,
+   "precision": "region",
+   "label": "Indus delta, Sindh, Pakistan (representative point)",
+   "country": "Pakistan"
+  },
+  "attributes": {
+   "coordinateSource": "representative sacred point; coordinate from the Wikipedia article {{coord}} (title) or Wikidata P625 of the river"
+  },
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Indus_River"
+   },
+   {
+    "source": "src:eck-2012"
+   },
+   {
+    "source": "src:jamison-brereton-2014"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates",
+    "url": "https://en.wikipedia.org/wiki/Indus_River"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "A river record stands for the sacred river as a whole; the point is representative only. Textual praise and pilgrimage practice are evidence of reverence, not of particular events.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:brahmaputra-river",
+  "type": "place",
+  "name": "Brahmaputra river",
+  "iast": "Brahmaputra",
+  "devanagari": "ब्रह्मपुत्र",
+  "aliases": [
+   "Brahmaputra",
+   "Lauhitya",
+   "Yarlung Tsangpo"
+  ],
+  "subtype": "river",
+  "summary": "Great river of Tibet, Assam and Bangladesh — one of the few Indian rivers personified as male (“son of Brahmā”) — whose valley holds Kāmākhyā, Umānanda and the Hajo shrines; bathing at Parashuram Kund on its upper course is a major pilgrimage.",
+  "details": "The Kālikā Purāṇa tells of the river as a son of Brahmā and the sage Śantanu’s wife Amoghā, and of Paraśurāma cleansing his axe in it (recall).",
+  "location": {
+   "lat": 26.20072,
+   "lon": 91.74683,
+   "precision": "region",
+   "label": "Guwahati, Assam, India (representative point)",
+   "country": "India"
+  },
+  "attributes": {
+   "coordinateSource": "Wikidata P625 for the river (a point at Guwahati)"
+  },
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Brahmaputra_River"
+   },
+   {
+    "source": "src:eck-2012"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q45403"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "A river record stands for the sacred river as a whole; the point is representative only. Textual praise and pilgrimage practice are evidence of reverence, not of particular events.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:tungabhadra-river",
+  "type": "place",
+  "name": "Tuṅgabhadrā river",
+  "iast": "Tuṅgabhadrā",
+  "devanagari": "तुङ्गभद्रा",
+  "aliases": [
+   "Tungabhadra",
+   "Pampa"
+  ],
+  "subtype": "river",
+  "summary": "River of Karnataka formed by the Tuṅgā (on which Śṛṅgeri stands) and the Bhadrā, flowing past Hampi, where tradition places Rāma’s Kiṣkindhā and the Pampā lake, to join the Kṛṣṇā near Alampur.",
+  "location": {
+   "lat": 15.88861,
+   "lon": 78.16417,
+   "precision": "region",
+   "label": "Confluence with the Kṛṣṇā near Alampur, Telangana / Andhra Pradesh, India (representative point)",
+   "country": "India"
+  },
+  "attributes": {
+   "coordinateSource": "representative sacred point; coordinate from the Wikipedia article {{coord}} (title) or Wikidata P625 of the river"
+  },
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tungabhadra_River"
+   },
+   {
+    "source": "src:eck-2012"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates",
+    "url": "https://en.wikipedia.org/wiki/Tungabhadra_River"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "A river record stands for the sacred river as a whole; the point is representative only. Textual praise and pilgrimage practice are evidence of reverence, not of particular events.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:kshipra-river",
+  "type": "place",
+  "name": "Kṣiprā (Shipra) river",
+  "iast": "Kṣiprā",
+  "devanagari": "क्षिप्रा",
+  "aliases": [
+   "Shipra",
+   "Sipra"
+  ],
+  "subtype": "river",
+  "summary": "River of the Malwa plateau on whose east bank Ujjain stands; the twelve-yearly Siṃhastha Kumbha Melā is held on its ghāṭs, and it is revered as a river goddess.",
+  "location": {
+   "lat": 23.18278,
+   "lon": 75.77722,
+   "precision": "region",
+   "label": "Ujjain, Madhya Pradesh, India (representative point)",
+   "country": "India"
+  },
+  "attributes": {
+   "coordinateSource": "representative point at Ujjain (Wikidata P625 of the city, Q200119); the river article confirms Ujjain is on its east bank"
+  },
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Shipra_River"
+   },
+   {
+    "source": "src:eck-2012"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q200119"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "Ujjain on the east bank",
+    "url": "https://en.wikipedia.org/wiki/Shipra_River"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "A river record stands for the sacred river as a whole; the point is representative only. Textual praise and pilgrimage practice are evidence of reverence, not of particular events.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:arunachala",
+  "type": "place",
+  "name": "Aruṇācala hill",
+  "iast": "Aruṇācala",
+  "devanagari": "अरुणाचल",
+  "aliases": [
+   "Arunachala",
+   "Annamalai",
+   "Arunagiri"
+  ],
+  "subtype": "sacred mountain",
+  "summary": "Hill of about 814 m at Tiruvannamalai held to be Śiva himself as a column of fire (the fire-liṅga of the Pañca Bhūta set), circumambulated by pilgrims (giri-pradakṣiṇa) and lit by the great Kārttikai Dīpam beacon each year; also linked with the 20th-century sage Ramaṇa Maharṣi.",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "Tēvāram hymns on Aṇṇāmalai",
+    "start": 600,
+    "end": 899,
+    "label": "7th–9th c.",
+    "certainty": "estimated",
+    "basis": "Tēvāram corpus (recall)",
+    "sources": [
+     {
+      "source": "src:peterson-1989"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 12.24111,
+   "lon": 79.05722,
+   "precision": "exact",
+   "label": "Tiruvannamalai, Tamil Nadu, India",
+   "country": "India"
+  },
+  "attributes": {
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 0 m"
+  },
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Arunachala"
+   },
+   {
+    "source": "src:eck-2012"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Arunachala"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q2008024"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The identification of the hill with Śiva is religious tradition.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:govardhan-hill",
+  "type": "place",
+  "name": "Govardhana hill",
+  "iast": "Govardhana",
+  "devanagari": "गोवर्धन",
+  "aliases": [
+   "Govardhan",
+   "Giriraj",
+   "Mount Govardhana"
+  ],
+  "subtype": "sacred hill",
+  "summary": "Low sandstone ridge about 8 km long west of Mathurā in Braj, identified with the mountain Kṛṣṇa lifted to shelter the cowherds from Indra’s rain; worshipped as a natural form of Kṛṣṇa (Giriraj) and circumambulated by pilgrims on a 21 km path.",
+  "details": "Its stones (govardhana-śilā) are worshipped as Kṛṣṇa. Puṣṭimārga tradition holds that the image of Śrīnāthjī emerged from the hill before its removal to Nathdwara in 1669–72. David Haberman’s ethnography of the Braj pilgrimage describes the hill’s worship.",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "Kṛṣṇa lifts Govardhana (Harivaṃśa, Bhāgavata)",
+    "start": 300,
+    "end": 900,
+    "label": "narrated in the Harivaṃśa and Bhāgavata Purāṇa",
+    "certainty": "disputed",
+    "basis": "dating of the texts (scholarly)",
+    "sources": [
+     {
+      "source": "src:haberman-1994"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 27.51054,
+   "lon": 77.47611,
+   "precision": "approximate",
+   "label": "Govardhan, Mathura district, Uttar Pradesh, India",
+   "country": "India"
+  },
+  "attributes": {
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 differ by 5.2 km; Wikipedia value used"
+  },
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Govardhan_Hill"
+   },
+   {
+    "source": "src:haberman-1994"
+   },
+   {
+    "source": "src:entwistle-1987"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Govardhan_Hill"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q1027764"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The identification with the mountain of the Kṛṣṇa narrative is religious tradition.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:srisailam-hill",
+  "type": "place",
+  "name": "Śrīparvata (Śrīśailam hills)",
+  "iast": "Śrīparvata",
+  "devanagari": "श्रीपर्वत",
+  "aliases": [
+   "Srisailam",
+   "Sriparvata",
+   "Śrīśaila"
+  ],
+  "subtype": "sacred mountain",
+  "summary": "Forested Nallamala hills above the Kṛṣṇā gorge in Andhra Pradesh, the “Śrīparvata” of Sanskrit literature, sacred to Śiva as Mallikārjuna and to the goddess Bhramarāmbā; in early medieval sources a famous centre of Tantric ascetics.",
+  "location": {
+   "lat": 16.0833,
+   "lon": 78.8667,
+   "precision": "approximate",
+   "label": "Srisailam, Nandyal district, Andhra Pradesh, India",
+   "country": "India"
+  },
+  "attributes": {
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 differ by 1.0 km; Wikipedia value used"
+  },
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Srisailam"
+   },
+   {
+    "source": "src:eck-2012"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Srisailam"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q2269015"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The identification of literary Śrīparvata with Srisailam is standard but rests on textual geography.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:kanchipuram",
+  "type": "place",
+  "name": "Kāñcī (Kanchipuram)",
+  "iast": "Kāñcī",
+  "devanagari": "काञ्ची",
+  "aliases": [
+   "Kanchipuram",
+   "Kanchi",
+   "Conjeevaram"
+  ],
+  "subtype": "tīrtha city",
+  "summary": "Ancient city in Tamil Nadu, capital of the Pallavas, one of the Sapta Purī and a city of both Śaiva and Vaiṣṇava temples (Śiva Kāñcī and Viṣṇu Kāñcī), with the Kāmākṣī temple and the Kāñcī Kāmakoṭi maṭha.",
+  "details": "Xuanzang visited Kāñcī in the 7th century. Its temples include the Kailāsanātha (Pallava, c. 700), Vaikuṇṭha Perumāḷ, Ekāmbareśvara (the earth liṅga) and Varadarāja.",
+  "location": {
+   "lat": 12.83201,
+   "lon": 79.70366,
+   "precision": "region",
+   "label": "Kanchipuram, Tamil Nadu, India",
+   "country": "India"
+  },
+  "attributes": {
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 465 m"
+  },
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kanchipuram"
+   },
+   {
+    "source": "src:eck-2012"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Kanchipuram"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q212332"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "Sapta Purī status is religious tradition.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:ujjain",
+  "type": "place",
+  "name": "Ujjayinī (Ujjain)",
+  "iast": "Ujjayinī",
+  "devanagari": "उज्जयिनी",
+  "aliases": [
+   "Ujjain",
+   "Avantikā",
+   "Avanti"
+  ],
+  "subtype": "tīrtha city",
+  "summary": "Ancient city on the Kṣiprā in Malwa — Avantikā of the Sapta Purī — seat of the Mahākāla jyotirliṅga, the prime meridian of classical Indian astronomy, and site of the twelve-yearly Siṃhastha Kumbha Melā.",
+  "details": "Capital of Avanti in the early historic period and associated in tradition with Vikramāditya; Kālidāsa’s Meghadūta praises the city and its Mahākāla temple.",
+  "location": {
+   "lat": 23.17,
+   "lon": 75.79,
+   "precision": "region",
+   "label": "Ujjain, Madhya Pradesh, India",
+   "country": "India"
+  },
+  "attributes": {
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 differ by 1.9 km; Wikipedia value used"
+  },
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ujjain"
+   },
+   {
+    "source": "src:eck-2012"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Ujjain"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q200119"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "Sapta Purī status and the Vikramāditya association are tradition.",
   "lastVerified": "2026-11-08"
  }
 ]

@@ -1574,7 +1574,7 @@
   "qualifiers": {
    "note": "World Heritage Site since 2014"
   },
-  "evidenceClass": 4,
+  "evidenceClass": 5,
   "sources": [
    {
     "source": "src:wikipedia",
@@ -10553,7 +10553,7 @@
   "qualifiers": {
    "note": "Buddhist shrines in the same complex"
   },
-  "evidenceClass": 4,
+  "evidenceClass": 5,
   "sources": [
    {
     "source": "src:wikipedia",
@@ -10643,5 +10643,1450 @@
   "confidence": "low",
   "status": "recall",
   "agent": "temple"
+ },
+ {
+  "id": "temple:r2-523",
+  "s": "char:krishna",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:baps-neasden",
+  "qualifiers": {
+   "note": "with Rādhā"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/BAPS_Shri_Swaminarayan_Mandir_London"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-524",
+  "s": "char:rama",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:baps-neasden",
+  "qualifiers": {
+   "note": "with Sītā"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/BAPS_Shri_Swaminarayan_Mandir_London"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-525",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:baps-neasden",
+  "qualifiers": {
+   "note": "with Pārvatī"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/BAPS_Shri_Swaminarayan_Mandir_London"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-526",
+  "s": "char:krishna",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:akshardham-delhi",
+  "qualifiers": {
+   "note": "with Rādhā"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Swaminarayan_Akshardham_(Delhi)"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-527",
+  "s": "char:rama",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:akshardham-delhi",
+  "qualifiers": {
+   "note": "with Sītā"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Swaminarayan_Akshardham_(Delhi)"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-528",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:akshardham-delhi",
+  "qualifiers": {
+   "note": "with Pārvatī"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Swaminarayan_Akshardham_(Delhi)"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-529",
+  "s": "temple:akshardham-delhi",
+  "p": "LOCATED_AT",
+  "o": "place:yamuna-river",
+  "qualifiers": {
+   "note": "on the floodplain"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Swaminarayan_Akshardham_(Delhi)"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-530",
+  "s": "char:krishna",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:akshardham-robbinsville",
+  "qualifiers": {
+   "note": "with Rādhā"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Swaminarayan_Akshardham_(Robbinsville)"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-531",
+  "s": "deity:venkateshvara",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:akshardham-robbinsville",
+  "qualifiers": {
+   "note": "with Padmāvatī"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Swaminarayan_Akshardham_(Robbinsville)"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-532",
+  "s": "char:rama",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:akshardham-robbinsville",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Swaminarayan_Akshardham_(Robbinsville)"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-533",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:akshardham-robbinsville",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Swaminarayan_Akshardham_(Robbinsville)"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-534",
+  "s": "deity:venkateshvara",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:sv-temple-pittsburgh",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Sri_Venkateswara_Temple,_Pittsburgh"
+   },
+   {
+    "source": "src:waghorne-2004"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-535",
+  "s": "temple:sv-temple-pittsburgh",
+  "p": "DERIVED_FROM",
+  "o": "temple:tirumala",
+  "qualifiers": {
+   "note": "modelled on the Tirumala temple and its rituals"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Sri_Venkateswara_Temple,_Pittsburgh"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-536",
+  "s": "deity:ganesha",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:ganesh-temple-flushing",
+  "qualifiers": {
+   "note": "as Mahā Vallabha Gaṇapati"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hindu_Temple_Society_of_North_America"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-537",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:ganga-talao",
+  "qualifiers": {
+   "note": "Mahāśivarātri pilgrimage"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ganga_Talao"
+   },
+   {
+    "source": "src:eisenlohr-2006"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-538",
+  "s": "temple:ganga-talao",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:ganga-river",
+  "qualifiers": {
+   "note": "lake identified with the Gaṅgā; Gaṅgā water added in 1972"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ganga_Talao"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-539",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:temple-in-the-sea",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Temple_in_the_Sea"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-540",
+  "s": "deity:durga",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:temple-in-the-sea",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Temple_in_the_Sea"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-541",
+  "s": "char:hanuman",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:temple-in-the-sea",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Temple_in_the_Sea"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-542",
+  "s": "char:krishna",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:baps-abu-dhabi",
+  "qualifiers": {
+   "note": "among the deities installed (recall)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/BAPS_Hindu_Mandir_Abu_Dhabi"
+   }
+  ],
+  "confidence": "low",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:r2-543",
+  "s": "char:rama",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:baps-abu-dhabi",
+  "qualifiers": {
+   "note": "among the deities installed (recall)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/BAPS_Hindu_Mandir_Abu_Dhabi"
+   }
+  ],
+  "confidence": "low",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:r2-544",
+  "s": "place:yamuna-river",
+  "p": "MENTIONED_IN",
+  "o": "text:rigveda",
+  "qualifiers": {
+   "note": "Nadīstuti hymn"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:jamison-brereton-2014",
+    "locator": "RV 10.75.5"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-545",
+  "s": "deity:yamuna",
+  "p": "IDENTIFIED_WITH",
+  "o": "place:yamuna-river",
+  "qualifiers": {
+   "tradition": "Hindu devotional tradition",
+   "note": "the river personified as goddess"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:haberman-2006"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-546",
+  "s": "place:yamuna-river",
+  "p": "ASSOCIATED_WITH",
+  "o": "narr:kaliya",
+  "qualifiers": {
+   "note": "Kāliya subdued in a pool of the Yamunā"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Yamuna"
+   },
+   {
+    "source": "src:haberman-2006"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-547",
+  "s": "place:yamuna-river",
+  "p": "LOCATED_AT",
+  "o": "place:prayaga",
+  "qualifiers": {
+   "note": "joins the Gaṅgā at Prayāga"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Yamuna"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-548",
+  "s": "place:yamuna-river",
+  "p": "ASSOCIATED_WITH",
+  "o": "temple:yamunotri",
+  "qualifiers": {
+   "note": "source shrine"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Yamuna"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-549",
+  "s": "place:sarayu-river",
+  "p": "MENTIONED_IN",
+  "o": "text:valmiki-ramayana",
+  "qualifiers": {
+   "note": "Ayodhyā on the Sarayū bank"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:vr-critical-edition",
+    "locator": "VR (CE) 1.5 (Bālakāṇḍa, description of Kosala)"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:r2-550",
+  "s": "place:sarayu-river",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:ayodhya",
+  "qualifiers": {
+   "note": "Ayodhyā lies on its bank"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ghaghara"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-551",
+  "s": "place:sarayu-river",
+  "p": "ASSOCIATED_WITH",
+  "o": "narr:rama-ascension",
+  "qualifiers": {
+   "note": "Rāma enters the Sarayū (Uttarakāṇḍa)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ghaghara"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-552",
+  "s": "temple:omkareshwar",
+  "p": "LOCATED_AT",
+  "o": "place:narmada-river",
+  "qualifiers": {
+   "note": "island shrine in the Narmadā"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-553",
+  "s": "place:narmada-river",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:amarkantak",
+  "qualifiers": {
+   "note": "source of the river"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Narmada_River"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-554",
+  "s": "place:narmada-river",
+  "p": "ASSOCIATED_WITH",
+  "o": "deity:shiva",
+  "qualifiers": {
+   "note": "bāṇaliṅgas from its bed (tradition)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Narmada_River"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-555",
+  "s": "place:godavari-river",
+  "p": "ASSOCIATED_WITH",
+  "o": "temple:trimbakeshwar",
+  "qualifiers": {
+   "note": "source of the Godāvarī at Brahmagiri near the temple"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Godavari_River"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-556",
+  "s": "place:godavari-river",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:panchavati",
+  "qualifiers": {
+   "note": "Pañcavaṭī on its bank at Nashik (tradition)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Godavari_River"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-557",
+  "s": "place:godavari-river",
+  "p": "ASSOCIATED_WITH",
+  "o": "char:gautama-ahalya",
+  "qualifiers": {
+   "note": "Gautama brings the Gaṅgā south as the Godāvarī (tradition)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Godavari_River"
+   },
+   {
+    "source": "src:feldhaus-1995"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-558",
+  "s": "temple:srirangam",
+  "p": "LOCATED_AT",
+  "o": "place:kaveri-river",
+  "qualifiers": {
+   "note": "river-island temple"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-559",
+  "s": "temple:jambukeswarar",
+  "p": "LOCATED_AT",
+  "o": "place:kaveri-river",
+  "qualifiers": {
+   "note": "on Srirangam island"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-560",
+  "s": "place:kaveri-river",
+  "p": "ASSOCIATED_WITH",
+  "o": "char:agastya",
+  "qualifiers": {
+   "note": "released from Agastya’s pot (tradition)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kaveri"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-561",
+  "s": "temple:srisailam",
+  "p": "LOCATED_AT",
+  "o": "place:krishna-river",
+  "qualifiers": {
+   "note": "above the Kṛṣṇā gorge"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-562",
+  "s": "place:krishna-river",
+  "p": "ASSOCIATED_WITH",
+  "o": "temple:alampur-navabrahma",
+  "qualifiers": {
+   "note": "Alampur near the Tuṅgabhadrā–Kṛṣṇā confluence"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Krishna_River"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-563",
+  "s": "place:sindhu-river",
+  "p": "MENTIONED_IN",
+  "o": "text:rigveda",
+  "qualifiers": {
+   "note": "praised in the Nadīstuti"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:jamison-brereton-2014",
+    "locator": "RV 10.75"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-564",
+  "s": "place:sindhu-river",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:kailasa",
+  "qualifiers": {
+   "note": "rises near Mount Kailāsa"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Indus_River"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-565",
+  "s": "place:brahmaputra-river",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:kamarupa",
+  "qualifiers": {
+   "note": "the Kāmarūpa region of the Brahmaputra valley"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Brahmaputra_River"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-566",
+  "s": "place:brahmaputra-river",
+  "p": "ASSOCIATED_WITH",
+  "o": "text:kalika-purana",
+  "qualifiers": {
+   "note": "origin legend (recall)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Brahmaputra_River"
+   }
+  ],
+  "confidence": "low",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:r2-567",
+  "s": "place:tungabhadra-river",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:hampi",
+  "qualifiers": {
+   "note": "Hampi lies on its south bank"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tungabhadra_River"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-568",
+  "s": "place:tungabhadra-river",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:kishkindha",
+  "qualifiers": {
+   "note": "Kiṣkindhā identified with the Hampi area (tradition)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tungabhadra_River"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-569",
+  "s": "place:tungabhadra-river",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:pampa",
+  "qualifiers": {
+   "note": "Pampā identified with a lake near the river (tradition)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tungabhadra_River"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-570",
+  "s": "place:kshipra-river",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:ujjain",
+  "qualifiers": {
+   "note": "Ujjain on its east bank; Siṃhastha Kumbha"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Shipra_River"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-571",
+  "s": "temple:arunachaleswarar",
+  "p": "LOCATED_AT",
+  "o": "place:arunachala",
+  "qualifiers": {
+   "note": "at the foot of the hill"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-572",
+  "s": "place:arunachala",
+  "p": "ASSOCIATED_WITH",
+  "o": "deity:shiva",
+  "qualifiers": {
+   "note": "the hill is Śiva as a column of fire (tradition)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Arunachala"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-573",
+  "s": "place:arunachala",
+  "p": "ASSOCIATED_WITH",
+  "o": "narr:lingodbhava",
+  "qualifiers": {
+   "note": "the fiery liṅga of Brahmā and Viṣṇu’s contest, located here by Tamil tradition"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Arunachala"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-574",
+  "s": "place:govardhan-hill",
+  "p": "ASSOCIATED_WITH",
+  "o": "narr:govardhana",
+  "qualifiers": {
+   "note": "identified as the hill Kṛṣṇa lifted"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Govardhan_Hill"
+   },
+   {
+    "source": "src:haberman-1994"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-575",
+  "s": "place:govardhan-hill",
+  "p": "ASSOCIATED_WITH",
+  "o": "char:krishna",
+  "qualifiers": {
+   "note": "worshipped as a natural form of Kṛṣṇa"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Govardhan_Hill"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-576",
+  "s": "place:govardhan-hill",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:mathura",
+  "qualifiers": {
+   "note": "in the Braj region around Mathurā"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Govardhan_Hill"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-577",
+  "s": "temple:srisailam",
+  "p": "LOCATED_AT",
+  "o": "place:srisailam-hill",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-578",
+  "s": "place:kanchipuram",
+  "p": "MEMBER_OF",
+  "o": "concept:sapta-puri",
+  "qualifiers": {
+   "note": "as Kāñcī"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "article states the membership",
+    "url": "https://en.wikipedia.org/wiki/Kanchipuram"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "list article includes this site",
+    "url": "https://en.wikipedia.org/wiki/Sapta_Puri"
+   },
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-579",
+  "s": "temple:kailasanatha-kanchi",
+  "p": "LOCATED_AT",
+  "o": "place:kanchipuram",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-580",
+  "s": "temple:varadaraja-kanchi",
+  "p": "LOCATED_AT",
+  "o": "place:kanchipuram",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-581",
+  "s": "temple:ekambareswarar-kanchi",
+  "p": "LOCATED_AT",
+  "o": "place:kanchipuram",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-582",
+  "s": "temple:vaikuntha-perumal-kanchi",
+  "p": "LOCATED_AT",
+  "o": "place:kanchipuram",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-583",
+  "s": "place:kanchipuram",
+  "p": "ASSOCIATED_WITH",
+  "o": "pol:pallava",
+  "qualifiers": {
+   "note": "Pallava capital"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kanchipuram"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-584",
+  "s": "place:ujjain",
+  "p": "MEMBER_OF",
+  "o": "concept:sapta-puri",
+  "qualifiers": {
+   "note": "as Avantikā"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "article states the membership",
+    "url": "https://en.wikipedia.org/wiki/Ujjain"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "list article includes this site",
+    "url": "https://en.wikipedia.org/wiki/Sapta_Puri"
+   },
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-585",
+  "s": "temple:mahakaleshwar",
+  "p": "LOCATED_AT",
+  "o": "place:ujjain",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-586",
+  "s": "place:ujjain",
+  "p": "LOCATED_AT",
+  "o": "place:kshipra-river",
+  "qualifiers": {
+   "note": "on the east bank"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ujjain"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-587",
+  "s": "place:ujjain",
+  "p": "ASSOCIATED_WITH",
+  "o": "person:kalidasa",
+  "qualifiers": {
+   "note": "praises Ujjayinī and Mahākāla in the Meghadūta"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ujjain"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:r2-588",
+  "s": "place:ayodhya",
+  "p": "MEMBER_OF",
+  "o": "concept:sapta-puri",
+  "qualifiers": {
+   "note": "as Ayodhyā"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "article states the membership",
+    "url": "https://en.wikipedia.org/wiki/Sapta_Puri"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "list article includes this site",
+    "url": "https://en.wikipedia.org/wiki/Sapta_Puri"
+   },
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-589",
+  "s": "place:mathura",
+  "p": "MEMBER_OF",
+  "o": "concept:sapta-puri",
+  "qualifiers": {
+   "note": "as Mathurā"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "article states the membership",
+    "url": "https://en.wikipedia.org/wiki/Sapta_Puri"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "list article includes this site",
+    "url": "https://en.wikipedia.org/wiki/Sapta_Puri"
+   },
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-590",
+  "s": "place:kashi",
+  "p": "MEMBER_OF",
+  "o": "concept:sapta-puri",
+  "qualifiers": {
+   "note": "as Kāśī"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "article states the membership",
+    "url": "https://en.wikipedia.org/wiki/Sapta_Puri"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "list article includes this site",
+    "url": "https://en.wikipedia.org/wiki/Sapta_Puri"
+   },
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-591",
+  "s": "place:dvaraka",
+  "p": "MEMBER_OF",
+  "o": "concept:sapta-puri",
+  "qualifiers": {
+   "note": "as Dvārakā (Dvāravatī)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "article states the membership",
+    "url": "https://en.wikipedia.org/wiki/Sapta_Puri"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "list article includes this site",
+    "url": "https://en.wikipedia.org/wiki/Sapta_Puri"
+   },
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-592",
+  "s": "temple:kedarnath",
+  "p": "MEMBER_OF",
+  "o": "concept:panch-kedar",
+  "qualifiers": {
+   "note": "first of the five (hump of the bull-form Śiva)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "article states the membership",
+    "url": "https://en.wikipedia.org/wiki/Panch_Kedar"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "list article includes this site",
+    "url": "https://en.wikipedia.org/wiki/Panch_Kedar"
+   },
+   {
+    "source": "src:bhardwaj-1973"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-593",
+  "s": "place:mahamaham-tank",
+  "p": "LOCATED_AT",
+  "o": "place:kaveri-river",
+  "qualifiers": {
+   "note": "Kāverī delta (Kumbakonam)"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
  }
 ]
