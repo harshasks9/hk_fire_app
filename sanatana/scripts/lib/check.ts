@@ -157,6 +157,17 @@ export function checkDataset(ds: Dataset): { issues: Issue[]; entities: Map<stri
     if (e.image && (!e.image.license || !e.image.page || !e.image.credit)) issues.push({ severity: 'error', file, id: e.id, message: 'image without licence/page/credit' })
   }
 
+  // possible duplicates: two records of the same type whose names fold to the same key
+  const byKey = new Map<string, string>()
+  const foldName = (x: string) => x.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim()
+  for (const e of entities.values()) {
+    if (!e.name || e._file === 'core-registry') continue
+    const key = `${e.type}|${foldName(e.name)}`
+    const prior = byKey.get(key)
+    if (prior && prior !== e.id) issues.push({ severity: 'warn', file: e._file, id: e.id, message: `possible duplicate of ${prior} (same type and name) — merge, or disambiguate the name` })
+    else byKey.set(key, e.id)
+  }
+
   // assertions
   const assertions: (Assertion & { _file: string })[] = []
   const seen = new Set<string>()

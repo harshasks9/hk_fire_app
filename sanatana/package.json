@@ -18,7 +18,8 @@
     "seed:core": "node --experimental-strip-types --disable-warning=ExperimentalWarning scripts/seed-core.ts",
     "seed:sources": "node --experimental-strip-types --disable-warning=ExperimentalWarning scripts/seed-sources.ts",
     "seed:discoveries": "node --experimental-strip-types --disable-warning=ExperimentalWarning scripts/seed-discoveries.ts",
-    "apply:verification": "node --experimental-strip-types --disable-warning=ExperimentalWarning scripts/apply-verification.ts"
+    "apply:verification": "node --experimental-strip-types --disable-warning=ExperimentalWarning scripts/apply-verification.ts",
+    "find": "node --experimental-strip-types --disable-warning=ExperimentalWarning scripts/find.ts"
   },
   "dependencies": {
     "cytoscape": "^3.34.4",

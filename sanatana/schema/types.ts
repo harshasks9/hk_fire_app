@@ -368,6 +368,7 @@ export const AGENTS = {
   regional: 'Regional Traditions & Living Heritage Researcher',
   material: 'Archaeology, Inscriptions & Material Evidence Researcher',
   temple: 'Temple & Sacred Geography Researcher',
+  iconography: 'Iconography & Temple-Architecture Researcher',
   verifier: 'Independent Verification & Editorial Review',
 } as const
 export type AgentId = keyof typeof AGENTS
