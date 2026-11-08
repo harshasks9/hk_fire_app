@@ -1,6 +1,6 @@
 import { describe, it } from 'node:test'
 import assert from 'node:assert/strict'
-import { gate, tokenFor, COOKIE, DEFAULT_KEY } from './middleware.ts'
+import { gate, tokenFor, COOKIE, DEFAULT_KEY, sanatanaRoute, SANATANA_HOST } from './middleware.ts'
 
 const KEY = '888888'
 const site = 'https://hk.hkfire.app'
@@ -92,5 +92,30 @@ describe('gate', () => {
   it('never redirects off-site after a successful key', async () => {
     const res = await gate(post('//evil.example', KEY), KEY)
     assert.equal(res?.headers.get('location'), '/')
+  })
+})
+
+describe('sanatana routing', () => {
+  const u = (s: string) => new URL(s)
+  it('serves /sanatana/ publicly on the main host', () => {
+    assert.deepEqual(sanatanaRoute(u(site + '/sanatana/')), { public: true, rewriteTo: '/sanatana/index.html' })
+    assert.deepEqual(sanatanaRoute(u(site + '/sanatana')), { public: true, rewriteTo: '/sanatana/index.html' })
+    assert.deepEqual(sanatanaRoute(u(site + '/sanatana/assets/app.js')), { public: true })
+    assert.deepEqual(sanatanaRoute(u(site + '/sanatana/data/graph.json')), { public: true })
+  })
+  it('keeps the memos behind the gate on the main host', () => {
+    for (const p of ['/', '/owl/', '/pax/', '/methodology.md', '/sanatana-not/', '/sanatanaa']) assert.deepEqual(sanatanaRoute(u(site + p)), { public: false }, p)
+    assert.deepEqual(sanatanaRoute(u(site + '/sanatana/../owl/')), { public: false })
+    assert.deepEqual(sanatanaRoute(u(site + '/sanatana/%2e%2e/owl/')), { public: false })
+  })
+  it('maps every path on the Sanatana host into /sanatana/, so memos are unreachable there', () => {
+    const h = `https://${SANATANA_HOST}`
+    assert.deepEqual(sanatanaRoute(u(h + '/')), { public: true, rewriteTo: '/sanatana/index.html' })
+    assert.deepEqual(sanatanaRoute(u(h + '/owl/')), { public: true, rewriteTo: '/sanatana/owl/' })
+    assert.deepEqual(sanatanaRoute(u(h + '/sanatana/assets/app.js')), { public: true })
+  })
+  it('still gates the memos when a request is not for Sanatana', async () => {
+    const res = await gate(new Request(site + '/owl/'), KEY)
+    assert.equal(res?.status, 401)
   })
 })

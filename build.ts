@@ -10,7 +10,7 @@
  * No runtime, no framework: every chart is an inline SVG drawn here, every table is a
  * table, and the CSS is one block at the top of each page. `npm run build`.
  */
-import { mkdir, writeFile, copyFile, rm } from 'node:fs/promises'
+import { mkdir, writeFile, copyFile, rm, cp, stat } from 'node:fs/promises'
 import { join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import {
@@ -1161,7 +1161,20 @@ export async function build(out = OUT): Promise<string[]> {
   return written
 }
 
+/**
+ * Sanatana, the public knowledge-graph site (sanatana/), is served from this deployment at
+ * /sanatana/ and at sanatana.hkfire.app (see middleware.ts). Its committed build, made by
+ * `npm run publish:villa` in sanatana/ with base /sanatana/, is copied in unchanged.
+ */
+export async function copySanatana(out = OUT): Promise<boolean> {
+  const from = join(HERE, 'villa', 'public', 'sanatana')
+  try { await stat(join(from, 'index.html')) } catch { return false }
+  await cp(from, join(out, 'sanatana'), { recursive: true })
+  return true
+}
+
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const files = await build()
   console.log(`dist/ — ${files.length} files:\n  ${files.join('\n  ')}`)
+  if (await copySanatana()) console.log('dist/sanatana/ — Sanatana knowledge graph (public)')
 }

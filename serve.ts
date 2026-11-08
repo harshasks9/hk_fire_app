@@ -5,7 +5,7 @@
 import { createServer } from 'node:http'
 import { readFile, stat } from 'node:fs/promises'
 import { join, extname, normalize } from 'node:path'
-import { gate } from './middleware.ts'
+import { gate, sanatanaRoute } from './middleware.ts'
 
 const ROOT = join(import.meta.dirname, 'dist')
 const PORT = Number(process.env.PORT ?? 4173)
@@ -27,7 +27,9 @@ createServer(async (req, res) => {
     body: body && req.method !== 'GET' && req.method !== 'HEAD' ? body : undefined,
   })
 
-  const intercepted = await gate(fetchReq)
+  const route = sanatanaRoute(url)
+  if (route.rewriteTo) url.pathname = route.rewriteTo
+  const intercepted = route.public ? undefined : await gate(fetchReq)
   if (intercepted) {
     // The browser drops Secure cookies over plain http; strip the flag for localhost only.
     const headers = new Headers(intercepted.headers)

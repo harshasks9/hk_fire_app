@@ -14,12 +14,34 @@
  * It keeps casual eyes off the memos. It is not real security: anyone the key is
  * shared with can share it on, and the pages are served in full once past the gate.
  */
-import { next } from '@vercel/functions'
+import { next, rewrite } from '@vercel/functions'
 
 export const config = { matcher: '/(.*)', runtime: 'nodejs' }
 
 export default async function middleware(req: Request): Promise<Response> {
+  const url = new URL(req.url)
+  const route = sanatanaRoute(url)
+  if (route.rewriteTo) return rewrite(new URL(route.rewriteTo + url.search, req.url))
+  if (route.public) return next()
   return (await gate(req)) ?? next()
+}
+
+/**
+ * Sanatana — the public knowledge-graph site built in sanatana/ — is served from this
+ * deployment under /sanatana/ and at its own host. It is public by design; the key gate
+ * keeps guarding everything else. On the Sanatana host every path is mapped into
+ * /sanatana/, so the memos are never reachable there.
+ */
+export const SANATANA_HOST = 'sanatana.hkfire.app'
+export function sanatanaRoute(url: URL): { public: boolean; rewriteTo?: string } {
+  const inPrefix = url.pathname === '/sanatana' || url.pathname.startsWith('/sanatana/')
+  const index = url.pathname === '/sanatana' || url.pathname === '/sanatana/'
+  if (url.hostname === SANATANA_HOST) {
+    if (url.pathname === '/' || index) return { public: true, rewriteTo: '/sanatana/index.html' }
+    return inPrefix ? { public: true } : { public: true, rewriteTo: `/sanatana${url.pathname}` }
+  }
+  if (index) return { public: true, rewriteTo: '/sanatana/index.html' }
+  return { public: inPrefix }
 }
 
 export const DEFAULT_KEY = '888888'
