@@ -4836,12 +4836,13 @@
   "sources": [
    {
     "source": "src:wikipedia",
+    "locator": "Tēvāram patikams of Campantar and Cuntarar on Tirukkōṇamalai (as stated on the page)",
     "url": "https://en.wikipedia.org/wiki/Koneswaram_Temple"
    }
   ],
   "confidence": "medium",
   "status": "verified-online",
-  "rationale": "Hymn-level locator not verified.",
+  "rationale": "Patikam-level locator (Tirumuṟai volume and decad) not verified.",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },

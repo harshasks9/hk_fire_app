@@ -1677,7 +1677,7 @@
    },
    {
     "system": "material",
-    "event": "renovation",
+    "event": "occupation and recovery of images",
     "start": 1646,
     "end": 1653,
     "label": "1646–1653 CE Dutch occupation and recovery of the images",
@@ -2434,7 +2434,7 @@
    "trad:shaiva-siddhanta"
   ],
   "summary": "Śiva temple on the Svarṇamukhī river worshipped as the air (vāyu) liṅga among the five element shrines and associated with the hunter-saint Kaṇṇappa; it is sung in the Tēvāram.",
-  "details": "The name combines śrī (spider), kāḷa (serpent) and hasti (elephant), three animal devotees of the temple legend. The main structure is credited to Rājendra Cōḻa I (11th c.), with gopuras of Kulōttuṅga I and large Vijayanagara additions under Kṛṣṇadevarāya (a gopura of 1516).",
+  "details": "The name combines śrī (spider), kāḷa (serpent) and hasti (elephant), three animal devotees of the temple legend. The main structure is credited to Rājendra Cōḻa I (11th c.), with gopuras of Kulōttuṅga I and large Vijayanagara-period additions.",
   "dates": [
    {
     "system": "traditional",
@@ -5689,7 +5689,7 @@
    },
    {
     "system": "material",
-    "event": "renovation",
+    "event": "reconstruction",
     "start": 1565,
     "end": 1565,
     "label": "1565 CE reconstruction by Chilarai under Naranārāyaṇa",
@@ -6210,7 +6210,7 @@
    },
    {
     "system": "material",
-    "event": "renovation",
+    "event": "destruction",
     "start": 1026,
     "end": 1026,
     "label": "January 1026 CE: raid of Mahmud of Ghazni",
@@ -6464,7 +6464,7 @@
    "trad:saura"
   ],
   "summary": "Caulukya (Solaṅkī) temple of Sūrya at Modhera with a stepped tank (Sūrya Kuṇḍa) and a detached dance hall; its shrine was built in the reign of Bhīma I, shortly after 1026–27 CE.",
-  "details": "An inscription on the cella wall reads Vikrama Saṃvat 1083 (1026–27 CE); it is placed upside down and is read by most scholars as marking destruction or the start of construction rather than a dedication. The dance hall and tank were added later, perhaps under Karṇa I. The temple is ASI-protected and not in worship.",
+  "details": "An upside-down inscription “Vikrama Saṃvat 1083” (1026–27 CE), carelessly incised on a block of the cella’s western wall, is the only date found; because it is inverted it is taken as evidence that the cella was destroyed and reconstructed, and the date coincides with Mahmud of Ghazni’s campaign in Gujarat. The dance hall and tank were added later, perhaps under Karṇa I. The temple is ASI-protected and not in worship.",
   "dates": [
    {
     "system": "material",
@@ -6566,7 +6566,7 @@
    },
    {
     "system": "material",
-    "event": "renovation",
+    "event": "destruction",
     "start": 1234,
     "end": 1235,
     "label": "1234–35 CE destruction during Iltutmish’s raid",
@@ -6867,7 +6867,7 @@
    "trad:vaishnava"
   ],
   "summary": "Temple of Rāma in Ayodhya, Uttar Pradesh, built in the Nāgara (Māru-Gurjara) style after the Supreme Court of India’s judgment of 9 November 2019 and consecrated (prāṇa-pratiṣṭhā) on 22 January 2024; many Hindus regard the site as Rāma’s birthplace (Rāma Janmabhūmi).",
-  "details": "The site was previously occupied by the Babri Masjid, a mosque built around 1528–29 under the Mughal emperor Babur and demolished in 1992. In its 2019 judgment the Supreme Court awarded the disputed land for the construction of a temple by a trust and directed that alternative land be allotted for a mosque (at Dhannipur). Construction under the Shri Ram Janmbhoomi Teerth Kshetra trust began after a bhūmi-pūjana in August 2020. The principal image consecrated in 2024 is the child Rāma (Bālak Rām); the earlier Rām Lallā Virājmān image of 1949 is also kept in the sanctum.",
+  "details": "The site was previously occupied by the Babri Masjid, a mosque built around 1528–29 by a general of the Mughal emperor Babur and demolished on 6 December 1992. In its 2019 judgment the Supreme Court awarded the disputed land for the construction of a temple by a trust and directed that alternative land be allotted for a mosque (at Dhannipur). Construction under the Shri Ram Janmbhoomi Teerth Kshetra trust began after a bhūmi-pūjana in August 2020. The principal image consecrated in 2024 is the child Rāma (Bālak Rām); the earlier Rām Lallā Virājmān image (installed in 1949) is retained in the temple.",
   "dates": [
    {
     "system": "traditional",
@@ -7002,7 +7002,7 @@
    },
    {
     "system": "material",
-    "event": "renovation",
+    "event": "flood damage and restoration",
     "start": 2013,
     "end": 2013,
     "label": "June 2013: temple survived flash flood; subsequent restoration",
@@ -7370,7 +7370,7 @@
    },
    {
     "system": "material",
-    "event": "renovation",
+    "event": "destruction",
     "start": 1389,
     "end": 1413,
     "label": "destroyed under Sultan Sikandar (r. 1389–1413)",
@@ -7582,7 +7582,7 @@
    },
    {
     "system": "material",
-    "event": "renovation",
+    "event": "earthquake damage and reconstruction",
     "start": 2015,
     "end": 2020,
     "label": "2015 earthquake damage and five-year reconstruction",
@@ -7813,7 +7813,7 @@
    },
    {
     "system": "material",
-    "event": "renovation",
+    "event": "destruction",
     "start": 1622,
     "end": 1624,
     "label": "1622–1624 CE destruction by the Portuguese",
