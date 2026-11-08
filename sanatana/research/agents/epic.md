@@ -46,12 +46,12 @@ Chapter/verse counts quoted below are my counts from those files.
   51 passages (7 kāṇḍas, 18 parvans, 3 HV parvans, 23 episodes), 20 places, 8 lineages, 5 texts,
   1 collection, 1 deity (`deity:dharma`), 1 concept, 1 claim (`claim:lanka-sri-lanka-identification`).
 - **Assertions (1,144):** PARTICIPANT_IN 347, PARENT_OF 117, NARRATED_IN 98, PRECEDES 69,
-  APPEARS_IN 63, PART_OF 58, MEMBER_OF 57, OCCURS_AT 46, SIBLING_OF 44, SPOUSE_OF 42, SLAYS 28,
+  APPEARS_IN 63, PART_OF 58, MEMBER_OF 57, OCCURS_AT 46, SIBLING_OF 44, SPOUSE_OF 41, SLAYS 28,
   AVATARA_OF 23, TEACHER_OF 18, ASSOCIATED_WITH 17, ADVERSARY_OF 15, ALLY_OF 14, BLESSES 12,
   CURSES 11, IDENTIFIED_WITH 9, ADOPTIVE_PARENT_OF 9, RETELLS 8 … (above the 500–800 target because
   every participant/kinship edge carries its own verified locator; the count is not padded with
   unverified edges).
-- Status: 1,084 verified-online, 37 source-checked, 17 recall, 6 disputed. Evidence class: 1 (textual)
+- Status: 1,083 verified-online, 39 source-checked, 16 recall, 6 disputed. Evidence class: 1 (textual)
   1,092; 5: 23; 6: 23; 7: 4; 2: 1; 3: 1.
 - **Most connected:** char:krishna (63), char:rama (58), text:mahabharata (48), char:arjuna (46),
   text:valmiki-ramayana (34), char:yudhishthira, char:bhima, char:karna, narr:kurukshetra-war,
@@ -91,8 +91,8 @@ the location link on the Naimisharanya article. All are `precision: approximate`
 - **Rāmopākhyāna's relation to Vālmīki** (`epic:` DERIVED_FROM, status disputed).
 - **Ganguli (vulgate) section numbers** for the disrobing and the Urvaśī episode could not be checked
   (sacred-texts.com blocks automated fetching); left as "section not checked".
-- Recall-only items (17): e.g. Droṇa as teacher of all princes (1.121–123 range), Balarāma teaching the
-  mace (9.33–34), Śalya's recruitment details now verified but Śatrughna founding Mathurā not checked;
+- Recall-only items (16): e.g. Droṇa as teacher of all princes (1.121–123 range), Balarāma teaching the
+  mace (9.33–34), Śatrughna founding Mathurā (not checked);
   Paümacariya/Adhyātma/Kampaṉ rows in the comparisons; Laṅkā's central-India proposals (Kibe?).
 - **Laṅkā** is kept separate from Sri Lanka; the identification is a `claim` entity with SUPPORTS edges
   and stated alternatives.
