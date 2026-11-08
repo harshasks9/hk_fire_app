@@ -30,13 +30,30 @@ export interface Attestation {
 const TEXTUAL = new Set(['APPEARS_IN', 'MENTIONED_IN', 'NARRATED_IN', 'TEACHES_IN'])
 const RECEPTION_COLS = new Set(['col:regional-retellings', 'col:bhakti-literature', 'col:southeast-asian', 'col:agamas-tantras'])
 
+/**
+ * Which identified figures may lend their attestations to this one. The rule keeps
+ * historical precursors and variants (Vāsudeva and Kṛṣṇa Devakīputra for Kṛṣṇa; Rudra
+ * and Oesho for Śiva; Naṭarāja as a form of Śiva) and refuses theological equations
+ * that would absorb another major deity's entire record (Kṛṣṇa = Viṣṇu in the
+ * Bhāgavata; Śiva = Viṣṇu in the Skanda Purāṇa; Rāma = Brahman): those are assertions
+ * about theology, not evidence that the record mentions this figure.
+ *   - never through a concept, and never into a hub record (degree ≥ 60)
+ *   - IDENTIFIED_WITH only when the identification is textual, scholarly or disputed
+ *     (classes 1, 5, 7) — devotional identifications (class 6) are not followed
+ *   - FORM_OF only inward (forms of X), and never from a larger record than X
+ */
 export function identityCircle(store: Store, id: string): { node: GNode; edge?: GEdge }[] {
-  const out: { node: GNode; edge?: GEdge }[] = [{ node: store.byId.get(id)! }]
+  const self = store.byId.get(id)!
+  const out: { node: GNode; edge?: GEdge }[] = [{ node: self }]
+  const seen = new Set([id])
   for (const x of store.neighbours(id)) {
     const p = x.edge.p
-    if (p === 'IDENTIFIED_WITH' || (p === 'FORM_OF' && x.dir === 'in')) out.push({ node: x.other, edge: x.edge })
+    const o = x.other
+    if (seen.has(o.id) || o.type === 'concept' || o.m.degree >= 60) continue
+    const ok = (p === 'IDENTIFIED_WITH' && [1, 5, 7].includes(x.edge.evidenceClass)) || (p === 'FORM_OF' && x.dir === 'in' && o.m.degree <= self.m.degree)
+    if (ok) { seen.add(o.id); out.push({ node: o, edge: x.edge }) }
   }
-  return out.filter((x) => x.node)
+  return out
 }
 
 function textLane(store: Store, textId: string): Lane {

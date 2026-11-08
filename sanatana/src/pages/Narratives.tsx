@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { useStore } from '../data/store.tsx'
+import { useStore, type GNode } from '../data/store.tsx'
 import { entityHref } from '../app/router.ts'
 import { EntityLink, Glyph } from '../components/ui.tsx'
 import { fold } from '../lib/search.ts'
@@ -12,10 +12,11 @@ export function Narratives() {
   const rows = useMemo(() => store.real.filter((n) => n.type === 'narrative').map((n) => {
     const nb = store.neighbours(n.id)
     const texts = new Set(nb.filter((x) => x.dir === 'out' && (x.edge.p === 'NARRATED_IN' || x.edge.p === 'MENTIONED_IN')).map((x) => (store.textOf(x.other.id) ?? x.other).id))
-    const depictions = nb.filter((x) => x.edge.p === 'DEPICTED_IN').map((x) => x.other)
-    const people = nb.filter((x) => x.edge.p === 'PARTICIPANT_IN').map((x) => x.other)
-    const places = nb.filter((x) => x.edge.p === 'OCCURS_AT').map((x) => x.other)
-    const derived = nb.filter((x) => x.edge.p === 'DERIVED_FROM').map((x) => x.other)
+    const uniq = (xs: GNode[]) => [...new Map(xs.map((x) => [x.id, x])).values()]
+    const depictions = uniq(nb.filter((x) => x.edge.p === 'DEPICTED_IN').map((x) => x.other))
+    const people = uniq(nb.filter((x) => x.edge.p === 'PARTICIPANT_IN').map((x) => x.other))
+    const places = uniq(nb.filter((x) => x.edge.p === 'OCCURS_AT').map((x) => x.other))
+    const derived = uniq(nb.filter((x) => x.edge.p === 'DERIVED_FROM' && x.dir === 'out').map((x) => x.other))
     return { n, texts: [...texts], depictions, people, places, derived, cmp: store.comparisonsFor(n.id).length }
   }), [store])
   const list = rows

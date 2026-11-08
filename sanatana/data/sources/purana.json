@@ -163,15 +163,6 @@
   "agent": "purana"
  },
  {
-  "id": "src:mann-2012",
-  "type": "scholarly-book",
-  "title": "The Rise of Mahāsena: The Transformation of Skanda-Kārttikeya in North India from the Kuṣāṇa to Gupta Empires",
-  "author": "Richard D. Mann",
-  "year": "2012",
-  "publisher": "Brill",
-  "agent": "purana"
- },
- {
   "id": "src:gonzalez-reimann-2002",
   "type": "scholarly-book",
   "title": "The Mahābhārata and the Yugas: India's Great Epic Poem and the Hindu System of World Ages",
@@ -347,15 +338,6 @@
   "author": "J. N. Banerjea",
   "year": "1956",
   "publisher": "University of Calcutta",
-  "agent": "purana"
- },
- {
-  "id": "src:clothey-1978",
-  "type": "scholarly-book",
-  "title": "The Many Faces of Murukan: The History and Meaning of a South Indian God",
-  "author": "Fred W. Clothey",
-  "year": "1978",
-  "publisher": "Mouton",
   "agent": "purana"
  },
  {

@@ -66,8 +66,12 @@ export function MapView({ points, selected, onSelect, height = 560, dark = false
     const fitPts = fitTo === 'points' && points.length
       ? { type: 'MultiPoint', coordinates: points.map((x) => [x.lon, x.lat]) }
       : { type: 'MultiPoint', coordinates: [[63, 6], [97, 36], [123, -9], [72, -1]] }
-    if (fitTo === 'points' && points.length === 1) {
-      p.center([0, points[0].lat]).rotate([-points[0].lon, 0]).scale(2600).translate([size.w / 2, size.h / 2])
+    const lons = points.map((x) => x.lon), lats = points.map((x) => x.lat)
+    const tight = points.length > 0 && Math.max(...lons) - Math.min(...lons) < 1.5 && Math.max(...lats) - Math.min(...lats) < 1.5
+    if (fitTo === 'points' && tight) {
+      // one place (or several at the same site): centre on it at a regional scale
+      const lon = (Math.max(...lons) + Math.min(...lons)) / 2, lat = (Math.max(...lats) + Math.min(...lats)) / 2
+      p.rotate([-lon, 0]).center([0, lat]).scale(Math.min(size.w, size.h) * 4.2).translate([size.w / 2, size.h / 2])
     } else {
       p.fitExtent([[24, 24], [size.w - 24, size.h - 24]], fitPts as GeoPermissibleObjects)
     }
@@ -88,7 +92,7 @@ export function MapView({ points, selected, onSelect, height = 560, dark = false
     const pt = points.find((p) => p.id === selected)
     if (!pt) return
     const xy = projection([pt.lon, pt.lat])
-    if (!xy) return
+    if (!xy || !Number.isFinite(xy[0]) || !Number.isFinite(xy[1])) return
     const k = Math.max(t.k, 3.2)
     const target = zoomIdentity.translate(size.w / 2 - xy[0] * k, size.h / 2 - xy[1] * k).scale(k)
     select(svg.current).transition().duration(650).call(zoomer.current.transform, target)

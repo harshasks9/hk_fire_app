@@ -15,7 +15,7 @@ export function Texts({ route }: { route: Route }) {
     const cols = store.real.filter((n) => n.type === 'collection').sort((a, b) => (ORDER.indexOf(a.id) + 1 || 99) - (ORDER.indexOf(b.id) + 1 || 99))
     const assigned = new Set<string>()
     const out = cols.map((c) => {
-      const texts = (store.inc.get(c.id) ?? []).filter((e) => e.p === 'PART_OF').map((e) => store.byId.get(e.s)).filter((t): t is GNode => !!t && t.type === 'text')
+      const texts = [...new Map((store.inc.get(c.id) ?? []).filter((e) => e.p === 'PART_OF').map((e) => store.byId.get(e.s)).filter((t): t is GNode => !!t && t.type === 'text').map((t) => [t.id, t])).values()]
       texts.forEach((t) => assigned.add(t.id))
       return { c, texts: texts.sort((a, b) => (store.dateOf(a.id)?.start ?? 9999) - (store.dateOf(b.id)?.start ?? 9999)) }
     })

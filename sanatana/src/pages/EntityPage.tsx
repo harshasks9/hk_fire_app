@@ -91,7 +91,7 @@ export function EntityPage({ id }: { id: string }) {
 
   const textual = rels.filter((r) => TEXTUAL.has(r.edge.p) && r.dir === 'out')
   const contents = rels.filter((r) => TEXTUAL.has(r.edge.p) && r.dir === 'in')
-  const passages = rels.filter((r) => r.edge.p === 'PART_OF' && r.dir === 'in')
+  const passages = [...new Map(rels.filter((r) => r.edge.p === 'PART_OF' && r.dir === 'in').map((r) => [r.other.id, r])).values()]
   const comparisons = store.comparisonsFor(n.id)
   const claims = rels.filter((r) => r.other.type === 'claim')
   const isFigure = ['character', 'deity'].includes(n.type)

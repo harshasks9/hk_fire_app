@@ -6626,7 +6626,8 @@
   "status": "source-checked",
   "agent": "purana",
   "limits": "Traditional sacred geography; identification of individual pīṭhas with sites is a matter of local tradition.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "subtype": "pilgrimage network"
  },
  {
   "id": "concept:tirtha",
@@ -6667,7 +6668,8 @@
   "status": "recall",
   "agent": "purana",
   "limits": "A traditional grouping; site identifications vary for several of the twelve.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "subtype": "pilgrimage network"
  },
  {
   "id": "concept:vyuha",
@@ -7544,7 +7546,7 @@
   "summary": "The Ganges, personified as the goddess Gaṅgā; Purāṇic geography traces her descent from Viṣṇu's foot through the heavens to Śiva's hair and the earth.",
   "location": {
    "lat": 25.3,
-   "lon": 83.0,
+   "lon": 83,
    "precision": "region",
    "label": "Ganges basin, northern India",
    "country": "India"
@@ -7574,7 +7576,7 @@
   "summary": "The river praised in the Ṛgveda and remembered in later texts as disappearing in the desert (at Vinaśana) and flowing invisibly to join the Gaṅgā and Yamunā at Prayāga; its identification with the Ghaggar–Hakra is debated.",
   "location": {
    "lat": 29.5,
-   "lon": 75.0,
+   "lon": 75,
    "precision": "region",
    "label": "Ghaggar–Hakra basin (identification debated), Haryana/Rajasthan, India",
    "country": "India"

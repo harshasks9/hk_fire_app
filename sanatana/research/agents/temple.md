@@ -11,7 +11,7 @@ Generator (scratch, not part of the dataset): `scratchpad/temple-agent/scripts/b
 1. **The founding story and the date of the building usually disagree, and the gap is often more than a thousand years.** Each of the 103 temples carries at least one `material` DateClaim with a `basis`. 45 carry a separate `traditional` founding legend.
    - Many of the most "ancient" pilgrimage temples stand in fabric from the 18th–20th centuries: Somanātha (1951), Kāśī Viśvanātha (1780), Tryambakeśvara (1755–86), Mahākāleśvara (18th c.), Kōṇēsvaram (1952), Kālīghāṭ (1809), Badrīnātha (after 1803).
    - Many of the securely dated early fabrics are modest or ruined: Udayagiri Cave 6 (401/402), Changu Narayan pillar (464), Bādāmi Cave 3 (578), Meguti (634/5).
-2. **Of the 15 temples that claim a jyotirliṅga, 9 have their main standing fabric dated after 1700.** Four of the twelve list positions have rival claimant temples: Vaidyanātha, Nāgeśa, Bhīmaśaṅkara and Oṃkāra/Amaleśvara. These are recorded as `disputed` memberships and in `claim:jyotirlinga-site-identifications`.
+2. **Of the 15 temples that claim a jyotirliṅga, at least 7 have main standing fabric from 1700 or later, and probably 2 more (Oṃkāreśvara, Deoghar).** Four of the twelve list positions have rival claimant temples: Vaidyanātha, Nāgeśa, Bhīmaśaṅkara and Oṃkāra/Amaleśvara. These are recorded as `disputed` memberships and in `claim:jyotirlinga-site-identifications`.
 3. **Pilgrimage networks are recorded as edges.** There are 91 `MEMBER_OF` edges from temples to 8 networks: jyotirliṅga, Śakti Pīṭha, Divya Deśam, Pāṭal Peṟṟa Talam, Char Dham, Chota Char Dham, Pañca Bhūta and Āṟupaṭai Vīṭu. 85 of them were confirmed against the temple's Wikipedia text by keyword. Six are `disputed` or `recall`.
 4. **Contested dates are kept as competing DateClaims, not merged:**
    - Muṇḍeśvarī: 108 CE (ASI plaque) vs 570–636 CE (palaeography) vs a possible 16th–17th-c. shrine. See `claim:mundeshwari-108-ce`.
@@ -25,7 +25,7 @@ Generator (scratch, not part of the dataset): `scratchpad/temple-agent/scripts/b
 
 | Type | Count | Notes |
 |---|---|---|
-| temple | 103 | 40 owned core ids (38 temples incl. Gudimallam) + 65 new; India 86, Nepal 4, Indonesia 3, Cambodia 3, Sri Lanka 2, Pakistan 2, Laos, Vietnam, Malaysia 1 each |
+| temple | 103 | 37 owned core temple ids + 66 new; India 86, Nepal 4, Indonesia 3, Cambodia 3, Sri Lanka 2, Pakistan 2, Laos, Vietnam, Malaysia 1 each |
 | person | 32 | patrons (e.g. `person:rajaraja-i`, `person:ahilyabai-holkar`, `person:lokamahadevi`, `person:chilarai`) |
 | polity | 15 | new dynasties not in the registry (`pol:hoysala`, `pol:kakatiya`, `pol:pandya`, `pol:koch`, `pol:chaulukya`, `pol:paramara`, `pol:karkota`, `pol:somavamshi`, `pol:holkar-indore` …) |
 | deity | 6 | owned `deity:nataraja`, `deity:jagannatha`, `deity:venkateshvara`; new `deity:minakshi`, `deity:ranganatha`, `deity:yamuna` |
@@ -138,7 +138,7 @@ Generator (scratch, not part of the dataset): `scratchpad/temple-agent/scripts/b
 2. **Conquest carried architecture between capitals.** The Pallava Narasiṃhavarman I took Vātāpi c. 642. A century later Vikramāditya II took Kanchi, and his queen Lokamahādevī's Virūpākṣa at Pattadakal (c. 740–745) follows the Kanchi Kailāsanātha's Drāviḍa design.
    - Ids: `temple:virupaksha-pattadakal` DERIVED_FROM `temple:kailasanatha-kanchi`, `person:lokamahadevi`, `person:vikramaditya-ii`.
    - Caveat: the stylistic dependence is a scholarly argument (class 5).
-3. **The jyotirliṅga network is a list without fixed places.** Four of the twelve positions have rival claimant temples. Most claimant temples are 18th–20th-century buildings.
+3. **The jyotirliṅga network is a list without fixed places.** Four of the twelve positions have rival claimant temples. At least 7 of the 15 claimant temples are buildings of 1700 or later.
    - Ids: `claim:jyotirlinga-site-identifications`, `temple:baidyanath-deoghar`, `temple:parli-vaijnath`, `temple:nageshwar-dwarka`, `temple:aundha-nagnath`, `temple:jageshwar`.
    - Caveat: a late building does not mean a late cult.
 4. **The "oldest functioning temple" (Muṇḍeśvarī, 108 CE) rests on reading an inscription whose era is not stated.** Palaeography puts it at 570–636 CE, and the shrine itself may be early modern.
