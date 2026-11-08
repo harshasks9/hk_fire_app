@@ -126,7 +126,7 @@ export default function Atlas({ route }: { route: Route }) {
         <button className="btn" onClick={reset}>Reset filters</button>
       </aside>
       <div className="relative">
-        <MapView points={points} selected={selected} onSelect={setSelected} height="calc(100vh - 56px)" dark label="Atlas of temples, sites and findspots" />
+        <MapView points={points} selected={selected} onSelect={setSelected} height="calc(100vh - 56px)" dark label="Atlas of temples, sites and findspots" padRight={selected ? 400 : 0} />
         {sel ? <Detail n={sel} onClose={() => setSelected(null)} /> : null}
         <details className="absolute left-3 top-3 max-w-[340px] rounded-xl border border-night-rule bg-night-2/95 text-[12.5px]">
           <summary className="px-3 py-2 cursor-pointer">List view ({visible.length})</summary>

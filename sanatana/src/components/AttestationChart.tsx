@@ -63,7 +63,7 @@ export function AttestationChart({ id, includeIdentified = true, cursor, dark = 
         ))}
         {laid.map((l) => (
           <g key={l.lane.id}>
-            <text x={0} y={l.top + 10} fontSize={11} fontWeight={600} fill={ink}>{l.lane.label.split(' ').slice(0, 3).join(' ')}</text>
+            <text x={0} y={l.top + 10} fontSize={11} fontWeight={600} fill={ink}>{l.lane.label}</text>
             <text x={0} y={l.top + 23} fontSize={9.5} fill={ink3}>{l.placed.length} item{l.placed.length === 1 ? '' : 's'}</text>
             {l.placed.map(({ it, r, x0, x1 }) => {
               const later = cursor !== undefined && cursor !== null && it.start > cursor

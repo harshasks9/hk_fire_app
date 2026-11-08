@@ -33,7 +33,7 @@ export interface MapPoint {
   sub?: string
 }
 
-export function MapView({ points, selected, onSelect, height = 560, dark = false, fitTo, children, label = 'Map', showLabels = 'selected' }: {
+export function MapView({ points, selected, onSelect, height = 560, dark = false, fitTo, children, label = 'Map', showLabels = 'selected', padRight = 0 }: {
   points: MapPoint[]
   selected?: string | null
   onSelect?: (id: string | null) => void
@@ -43,6 +43,8 @@ export function MapView({ points, selected, onSelect, height = 560, dark = false
   children?: ReactNode
   label?: string
   showLabels?: 'none' | 'selected' | 'all'
+  /** width covered by an overlay panel on the right, so a focused point is centred in the visible part */
+  padRight?: number
 }) {
   const [geo, setGeo] = useState<GeoJSON.FeatureCollection | null>(null)
   const [size, setSize] = useState({ w: 800, h: 560 })
@@ -94,9 +96,10 @@ export function MapView({ points, selected, onSelect, height = 560, dark = false
     const xy = projection([pt.lon, pt.lat])
     if (!xy || !Number.isFinite(xy[0]) || !Number.isFinite(xy[1])) return
     const k = Math.max(t.k, 3.2)
-    const target = zoomIdentity.translate(size.w / 2 - xy[0] * k, size.h / 2 - xy[1] * k).scale(k)
+    const cx = Math.max(120, (size.w - padRight) / 2)
+    const target = zoomIdentity.translate(cx - xy[0] * k, size.h / 2 - xy[1] * k).scale(k)
     select(svg.current).transition().duration(650).call(zoomer.current.transform, target)
-  }, [selected]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [selected, size.w, size.h]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const land = dark ? '#20264a' : 'var(--land)'
   const stroke = dark ? '#39417a' : 'var(--land-stroke)'

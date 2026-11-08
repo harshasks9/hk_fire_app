@@ -120,7 +120,7 @@ export function gatherAttestations(store: Store, id: string, includeIdentified =
 
 export const LANES: { id: Lane; label: string; blurb: string }[] = [
   { id: 'text', label: 'Sanskrit & canonical texts', blurb: 'Dated by scholarly estimates of composition (passages inherit their text’s range).' },
-  { id: 'reception', label: 'Regional, devotional & later retellings', blurb: 'Vernacular, bhakti, Southeast Asian and later Sanskrit works.' },
-  { id: 'material', label: 'Dated objects, inscriptions & structures', blurb: 'Material chronology: inscriptions, coins, sculptures, surviving temple fabric, manuscripts.' },
-  { id: 'tradition', label: 'Traditional associations with dated sites', blurb: 'A site the tradition associates with the figure; the date is the surviving structure’s, not the association’s.' },
+  { id: 'reception', label: 'Regional & later retellings', blurb: 'Vernacular, bhakti, Southeast Asian and later Sanskrit works.' },
+  { id: 'material', label: 'Dated objects & structures', blurb: 'Material chronology: inscriptions, coins, sculptures, surviving temple fabric, manuscripts.' },
+  { id: 'tradition', label: 'Traditional site links', blurb: 'A site the tradition associates with the figure; the date is the surviving structure’s, not the association’s.' },
 ]

@@ -107,6 +107,7 @@ export default function Explore({ route }: { route: Route }) {
   const elements = useMemo<ElementDefinition[]>(() => {
     const els: ElementDefinition[] = []
     const ids = new Set<string>()
+    const labelled = new Set([...real].sort((a, b) => b.m.degree - a.m.degree).slice(0, 45).map((n) => n.id))
     if (mode === 'universe') {
       for (const n of real) if (passNode(n)) ids.add(n.id)
     } else {
@@ -124,7 +125,9 @@ export default function Explore({ route }: { route: Route }) {
       }
       const n = byId.get(id)!
       const fam = FAMILY_BY_ID[n.family]
-      els.push({ group: 'nodes', data: { id, label: n.name.replace(/\s*\((.*)\)\s*$/, ''), size: 9 + Math.sqrt(n.m.degree) * 3.2, color: fam.dark, shape: fam.shape, fam: n.family } })
+      const name = n.name.replace(/\s*\((.*)\)\s*$/, '')
+      const universe = mode === 'universe'
+      els.push({ group: 'nodes', data: { id, label: !universe || labelled.has(id) ? name : '', full: name, size: universe ? 4 + Math.sqrt(n.m.degree) * 1.7 : 9 + Math.sqrt(n.m.degree) * 3.2, color: fam.dark, shape: fam.shape, fam: n.family } })
     }
     const seen = new Set<string>()
     for (const e of store.edges) {
@@ -158,6 +161,7 @@ export default function Explore({ route }: { route: Route }) {
         { selector: 'edge[dashed = 1]', style: { 'line-style': 'dashed', 'line-dash-pattern': [3, 3] } as never },
         { selector: 'edge[hubEdge = 1]', style: { 'line-color': '#d6a957', opacity: 0.35, width: 1.2 } as never },
         { selector: '.faded', style: { opacity: 0.12 } },
+        { selector: 'node.hover', style: { label: 'data(full)', 'font-size': 12, 'z-index': 99 } as never },
         { selector: 'edge.hl', style: { 'line-color': '#d6a957', opacity: 0.95, width: 1.6, 'curve-style': 'bezier', label: 'data(label)', 'font-size': 8, color: '#d6c9a8', 'text-rotation': 'autorotate', 'text-background-color': '#12162b', 'text-background-opacity': 0.85, 'text-background-padding': '2px' } as never },
         { selector: 'node.sel', style: { 'border-width': 3, 'border-color': '#f3ead8', 'underlay-opacity': 0.35 } as never },
         { selector: 'edge.esel', style: { 'line-color': '#f3ead8', width: 2.4, opacity: 1 } as never },
@@ -175,12 +179,13 @@ export default function Explore({ route }: { route: Route }) {
     cy.on('tap', 'edge', (ev) => { const eid = ev.target.data('eid'); if (eid) { setEdgeSel(eid); setSelected(null) } })
     cy.on('tap', (ev) => { if (ev.target === cy) { setSelected(null); setEdgeSel(null) } })
     cy.on('mouseover', 'node', (ev) => {
+      ev.target.addClass('hover')
       const nb = ev.target.closedNeighborhood()
       cy.elements().not(nb).addClass('faded')
       nb.edges().addClass('hl')
       container.current!.style.cursor = 'pointer'
     })
-    cy.on('mouseout', 'node', () => { cy.elements().removeClass('faded'); cy.edges().removeClass('hl'); container.current!.style.cursor = 'default' })
+    cy.on('mouseout', 'node', () => { cy.nodes().removeClass('hover'); cy.elements().removeClass('faded'); cy.edges().removeClass('hl'); container.current!.style.cursor = 'default' })
     return () => cy.destroy()
   }, [])
   const expandRef = useRef(expand)
@@ -208,17 +213,19 @@ export default function Explore({ route }: { route: Route }) {
       cy.layout({ name: 'circle', radius: Math.min(cy.width(), cy.height()) * 0.3, startAngle: -Math.PI / 2, animate: true, animationDuration: 500, fit: false, stop: () => { cy.fit(undefined, 80); cap() } } as never).run()
       return
     }
+    cy.edges().style('opacity', mode === 'universe' ? 0.16 : 0.5)
     const layout = cy.layout({
       name: 'fcose',
-      quality: n > 400 ? 'draft' : 'default',
+      quality: 'default',
       randomize: mode === 'universe',
       animate: n < 400,
       animationDuration: 600,
-      nodeRepulsion: () => (mode === 'universe' ? 6500 : 9000),
-      idealEdgeLength: () => (mode === 'universe' ? 55 : 85),
-      nodeSeparation: 60,
-      gravity: 0.25,
-      numIter: n > 400 ? 1500 : 2500,
+      nodeRepulsion: () => (mode === 'universe' ? 14000 : 9000),
+      idealEdgeLength: () => (mode === 'universe' ? 70 : 85),
+      nodeSeparation: mode === 'universe' ? 45 : 60,
+      gravity: mode === 'universe' ? 0.12 : 0.25,
+      gravityRange: 3.8,
+      numIter: 2500,
       packComponents: true,
       fit: true,
       padding: 40,
