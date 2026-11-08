@@ -13,6 +13,9 @@ import type { Family } from '../data/store.tsx'
 import { Glyph } from './ui.tsx'
 import { FAMILY_BY_ID } from '../lib/meta.ts'
 
+/** the basemap and projection cover South, Southeast and Central Asia; diaspora sites elsewhere are listed, not distorted onto it */
+const onMap = (p: { lat: number; lon: number }) => p.lon >= 40 && p.lon <= 140 && p.lat >= -15 && p.lat <= 50
+
 let basemapPromise: Promise<GeoJSON.FeatureCollection> | null = null
 function loadBasemap() {
   basemapPromise ??= fetch(`${import.meta.env.BASE_URL}data/basemap.json`).then((r) => r.json())
@@ -65,7 +68,7 @@ export function MapView({ points, selected, onSelect, height = 560, dark = false
 
   const projection = useMemo(() => {
     const p = geoConicConformal().parallels([10, 30]).rotate([-82, 0])
-    const inAsia = points.filter((x) => x.lon >= 40 && x.lon <= 140 && x.lat >= -15 && x.lat <= 50)
+    const inAsia = points.filter(onMap)
     const fitPts = fitTo === 'points' && inAsia.length
       ? { type: 'MultiPoint', coordinates: inAsia.map((x) => [x.lon, x.lat]) }
       : { type: 'MultiPoint', coordinates: [[63, 6], [97, 36], [123, -9], [72, -1]] }
@@ -93,7 +96,7 @@ export function MapView({ points, selected, onSelect, height = 560, dark = false
   useEffect(() => {
     if (!selected || !svg.current || !zoomer.current) return
     const pt = points.find((p) => p.id === selected)
-    if (!pt) return
+    if (!pt || !onMap(pt)) return
     const xy = projection([pt.lon, pt.lat])
     if (!xy || !Number.isFinite(xy[0]) || !Number.isFinite(xy[1])) return
     const k = Math.max(t.k, 3.2)
@@ -108,8 +111,6 @@ export function MapView({ points, selected, onSelect, height = 560, dark = false
   const ink = dark ? '#ece4d3' : 'var(--ink)'
   const halo = dark ? '#12162b' : 'var(--bg)'
   const z = (fn: (k: number) => number) => () => { if (svg.current && zoomer.current) select(svg.current).transition().duration(300).call(zoomer.current.scaleBy, fn(1)) }
-  // the basemap and projection cover South, Southeast and Central Asia; diaspora sites elsewhere are listed, not distorted onto it
-  const onMap = (p: MapPoint) => p.lon >= 40 && p.lon <= 140 && p.lat >= -15 && p.lat <= 50
   const offMap = points.filter((p) => !onMap(p))
   const sorted = points.filter(onMap).sort((a, b) => (a.id === selected ? 1 : 0) - (b.id === selected ? 1 : 0))
 
@@ -161,7 +162,7 @@ export function MapView({ points, selected, onSelect, height = 560, dark = false
       {offMap.length ? (
         <div className="absolute left-3 bottom-7 max-w-[260px] rounded-lg px-3 py-2 text-[11.5px]" style={{ background: dark ? 'rgba(26,31,58,0.92)' : 'var(--panel)', border: `1px solid ${dark ? 'var(--night-rule)' : 'var(--rule)'}`, color: ink }}>
           <div className="font-semibold mb-1">Beyond this map ({offMap.length})</div>
-          <ul className="space-y-0.5">{offMap.slice(0, 6).map((p) => <li key={p.id}><button className="text-left hover:underline" onClick={() => onSelect?.(p.id)}>{p.label}</button></li>)}</ul>
+          <ul className="space-y-0.5">{offMap.slice(0, 6).map((p) => <li key={p.id}><button className={`text-left hover:underline ${p.id === selected ? 'font-semibold' : ''}`} aria-current={p.id === selected || undefined} onClick={() => onSelect?.(p.id)}>{p.id === selected ? '▸ ' : ''}{p.label}</button></li>)}</ul>
           {offMap.length > 6 ? <div className="opacity-70 mt-0.5">+{offMap.length - 6} more in the list view</div> : null}
         </div>
       ) : null}
