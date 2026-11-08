@@ -1,0 +1,80 @@
+/**
+ * Seed bibliography (orchestrator). Each agent adds its own domain sources in
+ * data/sources/<agent>.json. Only works whose existence is not in doubt are listed;
+ * URLs are given only for online corpora and institutional portals.
+ */
+import { writeFileSync } from 'node:fs'
+import { join } from 'node:path'
+import type { Source, SourceType } from '../schema/types.ts'
+
+type R = [id: string, type: SourceType, title: string, author: string, year: string, publisher: string, url?: string, notes?: string]
+const rows: R[] = [
+  // primary corpora & editions
+  ['src:gretil', 'primary-text', 'GRETIL — Göttingen Register of Electronic Texts in Indian Languages', 'Göttingen State and University Library', 'ongoing', 'SUB Göttingen', 'https://gretil.sub.uni-goettingen.de/', 'E-texts of Sanskrit editions; each file names its underlying printed edition.'],
+  ['src:vedic-heritage-portal', 'institutional', 'Vedic Heritage Portal', 'Indira Gandhi National Centre for the Arts / Ministry of Culture', 'ongoing', 'Government of India', 'https://vedicheritage.gov.in/'],
+  ['src:mbh-critical-edition', 'primary-text', 'The Mahābhārata: For the First Time Critically Edited', 'V. S. Sukthankar, S. K. Belvalkar, P. L. Vaidya et al. (eds.)', '1933–1966', 'Bhandarkar Oriental Research Institute, Poona', undefined, 'The BORI Critical Edition (CE). Locators "MBh (CE) parvan.adhyāya.verse" refer to it.'],
+  ['src:vr-critical-edition', 'primary-text', 'The Vālmīki-Rāmāyaṇa: Critical Edition', 'G. H. Bhatt and U. P. Shah (gen. eds.)', '1960–1975', 'Oriental Institute, Baroda', undefined, 'Locators "VR (CE) kāṇḍa.sarga.verse" refer to it.'],
+  ['src:harivamsha-ce', 'primary-text', 'The Harivaṃśa: Being the Khila or Supplement to the Mahābhārata, Critically Edited', 'P. L. Vaidya (ed.)', '1969–1971', 'Bhandarkar Oriental Research Institute, Poona'],
+  // translations (public domain flagged)
+  ['src:griffith-rv', 'translation', 'The Hymns of the Rigveda', 'Ralph T. H. Griffith', '1889–1892', 'E. J. Lazarus, Benares', 'https://www.sacred-texts.com/hin/rigveda/index.htm', 'Public domain. Quotations from Griffith are used for short excerpts only; his readings are dated.'],
+  ['src:jamison-brereton-2014', 'translation', 'The Rigveda: The Earliest Religious Poetry of India', 'Stephanie W. Jamison and Joel P. Brereton', '2014', 'Oxford University Press'],
+  ['src:olivelle-1996', 'translation', 'Upaniṣads (Oxford World’s Classics)', 'Patrick Olivelle', '1996', 'Oxford University Press'],
+  ['src:olivelle-1998', 'translation', 'The Early Upaniṣads: Annotated Text and Translation', 'Patrick Olivelle', '1998', 'Oxford University Press'],
+  ['src:eggeling-sb', 'translation', 'The Śatapatha-Brāhmaṇa (Sacred Books of the East 12, 26, 41, 43, 44)', 'Julius Eggeling', '1882–1900', 'Clarendon Press, Oxford', 'https://www.sacred-texts.com/hin/sbr/index.htm', 'Public domain.'],
+  ['src:goldman-vr', 'translation', 'The Rāmāyaṇa of Vālmīki: An Epic of Ancient India (7 vols.)', 'Robert P. Goldman (gen. ed.), Sally J. Sutherland Goldman et al.', '1984–2017', 'Princeton University Press', undefined, 'Translation of the Baroda Critical Edition with extensive introductions on dating and recensions.'],
+  ['src:griffith-ramayan', 'translation', 'The Rámáyan of Válmíki', 'Ralph T. H. Griffith', '1870–1874', 'Trübner, London / E. J. Lazarus, Benares', 'https://www.sacred-texts.com/hin/rama/index.htm', 'Public domain; translates a vulgate (not the critical) text.'],
+  ['src:ganguli-mbh', 'translation', 'The Mahabharata of Krishna-Dwaipayana Vyasa', 'Kisari Mohan Ganguli', '1883–1896', 'Bharata Press, Calcutta', 'https://www.sacred-texts.com/hin/maha/index.htm', 'Public domain; translates the vulgate (Bombay/Calcutta) text, so chapter numbers differ from the Critical Edition.'],
+  ['src:van-buitenen-mbh', 'translation', 'The Mahābhārata, vols. 1–3', 'J. A. B. van Buitenen', '1973–1978', 'University of Chicago Press'],
+  ['src:wilson-vp', 'translation', 'The Vishńu Puráńa: A System of Hindu Mythology and Tradition', 'H. H. Wilson', '1840', 'John Murray, London', 'https://www.sacred-texts.com/hin/vp/index.htm', 'Public domain.'],
+  ['src:coburn-1984', 'scholarly-book', 'Devī-Māhātmya: The Crystallization of the Goddess Tradition', 'Thomas B. Coburn', '1984', 'Motilal Banarsidass, Delhi'],
+  ['src:bryant-2007', 'scholarly-book', 'Krishna: A Sourcebook', 'Edwin F. Bryant (ed.)', '2007', 'Oxford University Press'],
+  // scholarship — literature & chronology
+  ['src:macdonell-1897', 'scholarly-book', 'Vedic Mythology', 'A. A. Macdonell', '1897', 'Karl J. Trübner, Strassburg'],
+  ['src:witzel-1997', 'journal-article', 'The Development of the Vedic Canon and its Schools: The Social and Political Milieu', 'Michael Witzel', '1997', 'in M. Witzel (ed.), Inside the Texts, Beyond the Texts (Harvard Oriental Series, Opera Minora 2), Cambridge MA'],
+  ['src:brockington-1998', 'scholarly-book', 'The Sanskrit Epics', 'John Brockington', '1998', 'Brill, Leiden'],
+  ['src:hiltebeitel-2001', 'scholarly-book', 'Rethinking the Mahābhārata: A Reader’s Guide to the Education of the Dharma King', 'Alf Hiltebeitel', '2001', 'University of Chicago Press'],
+  ['src:rocher-1986', 'scholarly-book', 'The Purāṇas (A History of Indian Literature, vol. II, fasc. 3)', 'Ludo Rocher', '1986', 'Otto Harrassowitz, Wiesbaden'],
+  ['src:hazra-1940', 'scholarly-book', 'Studies in the Purāṇic Records on Hindu Rites and Customs', 'R. C. Hazra', '1940', 'University of Dacca'],
+  ['src:flood-1996', 'scholarly-book', 'An Introduction to Hinduism', 'Gavin Flood', '1996', 'Cambridge University Press'],
+  ['src:singh-2008', 'scholarly-book', 'A History of Ancient and Early Medieval India: From the Stone Age to the 12th Century', 'Upinder Singh', '2008', 'Pearson Longman, Delhi'],
+  ['src:pollock-2006', 'scholarly-book', 'The Language of the Gods in the World of Men: Sanskrit, Culture, and Power in Premodern India', 'Sheldon Pollock', '2006', 'University of California Press'],
+  ['src:richman-1991', 'scholarly-book', 'Many Rāmāyaṇas: The Diversity of a Narrative Tradition in South Asia', 'Paula Richman (ed.)', '1991', 'University of California Press'],
+  ['src:ramanujan-1991', 'journal-article', 'Three Hundred Rāmāyaṇas: Five Examples and Three Thoughts on Translation', 'A. K. Ramanujan', '1991', 'in P. Richman (ed.), Many Rāmāyaṇas, University of California Press, pp. 22–49'],
+  ['src:lutgendorf-1991', 'scholarly-book', 'The Life of a Text: Performing the Rāmcaritmānas of Tulsidas', 'Philip Lutgendorf', '1991', 'University of California Press'],
+  ['src:lutgendorf-2007', 'scholarly-book', 'Hanuman’s Tale: The Messages of a Divine Monkey', 'Philip Lutgendorf', '2007', 'Oxford University Press'],
+  ['src:hardy-1983', 'scholarly-book', 'Viraha-Bhakti: The Early History of Kṛṣṇa Devotion in South India', 'Friedhelm Hardy', '1983', 'Oxford University Press, Delhi'],
+  ['src:peterson-1989', 'scholarly-book', 'Poems to Śiva: The Hymns of the Tamil Saints', 'Indira Viswanathan Peterson', '1989', 'Princeton University Press'],
+  ['src:kramrisch-1981', 'scholarly-book', 'The Presence of Śiva', 'Stella Kramrisch', '1981', 'Princeton University Press'],
+  ['src:bakker-2014', 'scholarly-book', 'The World of the Skandapurāṇa', 'Hans T. Bakker', '2014', 'Brill, Leiden'],
+  ['src:skandapurana-vol1', 'primary-text', 'The Skandapurāṇa, Volume I: Adhyāyas 1–25', 'R. Adriaensen, H. T. Bakker and H. Isaacson (eds.)', '1998', 'Egbert Forsten, Groningen', undefined, 'Critical edition based on the Nepalese manuscripts, including the one dated 810 CE.'],
+  ['src:sanderson-2009', 'journal-article', 'The Śaiva Age: The Rise and Dominance of Śaivism during the Early Medieval Period', 'Alexis Sanderson', '2009', 'in S. Einoo (ed.), Genesis and Development of Tantrism, Institute of Oriental Culture, University of Tokyo, pp. 41–349'],
+  ['src:kane-hod', 'scholarly-book', 'History of Dharmaśāstra (5 vols.)', 'P. V. Kane', '1930–1962', 'Bhandarkar Oriental Research Institute, Poona'],
+  // art, archaeology, epigraphy
+  ['src:srinivasan-1975', 'journal-article', 'The So-Called Proto-Śiva Seal from Mohenjo-Daro: An Iconological Assessment', 'Doris Srinivasan', '1975–76', 'Archives of Asian Art 29: 47–58'],
+  ['src:srinivasan-1997', 'scholarly-book', 'Many Heads, Arms and Eyes: Origin, Meaning and Form of Multiplicity in Indian Art', 'Doris Meth Srinivasan', '1997', 'Brill, Leiden'],
+  ['src:marshall-1931', 'excavation-report', 'Mohenjo-daro and the Indus Civilization', 'John Marshall (ed.)', '1931', 'Arthur Probsthain, London'],
+  ['src:possehl-2002', 'scholarly-book', 'The Indus Civilization: A Contemporary Perspective', 'Gregory L. Possehl', '2002', 'AltaMira Press'],
+  ['src:williams-1982', 'scholarly-book', 'The Art of Gupta India: Empire and Province', 'Joanna Gottfried Williams', '1982', 'Princeton University Press'],
+  ['src:harle-1994', 'scholarly-book', 'The Art and Architecture of the Indian Subcontinent (2nd ed.)', 'J. C. Harle', '1994', 'Yale University Press'],
+  ['src:michell-1977', 'scholarly-book', 'The Hindu Temple: An Introduction to its Meaning and Forms', 'George Michell', '1977', 'Paul Elek, London'],
+  ['src:dehejia-1990', 'scholarly-book', 'Art of the Imperial Cholas', 'Vidya Dehejia', '1990', 'Columbia University Press'],
+  ['src:sircar-1965', 'epigraphic-corpus', 'Select Inscriptions Bearing on Indian History and Civilization, vol. I (2nd ed.)', 'D. C. Sircar', '1965', 'University of Calcutta'],
+  ['src:schlingloff-1969', 'journal-article', 'The Oldest Extant Parvan-List of the Mahābhārata', 'Dieter Schlingloff', '1969', 'Journal of the American Oriental Society 89 (2): 334–338'],
+  ['src:lal-1955', 'excavation-report', 'Excavation at Hastināpura and Other Explorations in the Upper Gaṅgā and Sutlej Basins, 1950–52', 'B. B. Lal', '1954–55', 'Ancient India 10–11: 5–151'],
+  ['src:jaiswal-1981', 'scholarly-book', 'The Origin and Development of Vaiṣṇavism (2nd ed.)', 'Suvira Jaiswal', '1981', 'Munshiram Manoharlal, Delhi'],
+  // institutions & reference
+  ['src:unesco-whc', 'institutional', 'UNESCO World Heritage List', 'UNESCO World Heritage Centre', 'ongoing', 'UNESCO', 'https://whc.unesco.org/en/list/'],
+  ['src:asi', 'institutional', 'Archaeological Survey of India', 'Archaeological Survey of India', 'ongoing', 'Ministry of Culture, Government of India', 'https://asi.nic.in/'],
+  ['src:namami', 'institutional', 'National Mission for Manuscripts', 'National Mission for Manuscripts', 'ongoing', 'Ministry of Culture, Government of India', 'https://www.namami.gov.in/'],
+  ['src:museums-of-india', 'institutional', 'Museums of India — National Portal and Digital Repository', 'Ministry of Culture, Government of India', 'ongoing', 'Government of India', 'https://www.museumsofindia.gov.in/'],
+  ['src:wikipedia', 'reference', 'Wikipedia', 'Wikipedia contributors', 'ongoing', 'Wikimedia Foundation', 'https://en.wikipedia.org/', 'Starting point only. Never the sole support for a contested claim.'],
+  ['src:wikimedia-commons', 'reference', 'Wikimedia Commons', 'Wikimedia contributors', 'ongoing', 'Wikimedia Foundation', 'https://commons.wikimedia.org/', 'Images; licence recorded per file.'],
+]
+const out: Source[] = rows.map(([id, type, title, author, year, publisher, url, notes]) => {
+  const s: Source = { id, type, title, author, year, publisher, agent: 'orchestrator' }
+  if (url) s.url = url
+  if (notes) s.notes = notes
+  return s
+})
+writeFileSync(join(import.meta.dirname, '..', 'data', 'sources', 'orchestrator.json'), JSON.stringify(out, null, 1) + '\n')
+console.log(`seed sources: ${out.length}`)

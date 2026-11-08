@@ -1,0 +1,522 @@
+[
+ {
+  "id": "src:gretil",
+  "type": "primary-text",
+  "title": "GRETIL — Göttingen Register of Electronic Texts in Indian Languages",
+  "author": "Göttingen State and University Library",
+  "year": "ongoing",
+  "publisher": "SUB Göttingen",
+  "agent": "orchestrator",
+  "url": "https://gretil.sub.uni-goettingen.de/",
+  "notes": "E-texts of Sanskrit editions; each file names its underlying printed edition."
+ },
+ {
+  "id": "src:vedic-heritage-portal",
+  "type": "institutional",
+  "title": "Vedic Heritage Portal",
+  "author": "Indira Gandhi National Centre for the Arts / Ministry of Culture",
+  "year": "ongoing",
+  "publisher": "Government of India",
+  "agent": "orchestrator",
+  "url": "https://vedicheritage.gov.in/"
+ },
+ {
+  "id": "src:mbh-critical-edition",
+  "type": "primary-text",
+  "title": "The Mahābhārata: For the First Time Critically Edited",
+  "author": "V. S. Sukthankar, S. K. Belvalkar, P. L. Vaidya et al. (eds.)",
+  "year": "1933–1966",
+  "publisher": "Bhandarkar Oriental Research Institute, Poona",
+  "agent": "orchestrator",
+  "notes": "The BORI Critical Edition (CE). Locators \"MBh (CE) parvan.adhyāya.verse\" refer to it."
+ },
+ {
+  "id": "src:vr-critical-edition",
+  "type": "primary-text",
+  "title": "The Vālmīki-Rāmāyaṇa: Critical Edition",
+  "author": "G. H. Bhatt and U. P. Shah (gen. eds.)",
+  "year": "1960–1975",
+  "publisher": "Oriental Institute, Baroda",
+  "agent": "orchestrator",
+  "notes": "Locators \"VR (CE) kāṇḍa.sarga.verse\" refer to it."
+ },
+ {
+  "id": "src:harivamsha-ce",
+  "type": "primary-text",
+  "title": "The Harivaṃśa: Being the Khila or Supplement to the Mahābhārata, Critically Edited",
+  "author": "P. L. Vaidya (ed.)",
+  "year": "1969–1971",
+  "publisher": "Bhandarkar Oriental Research Institute, Poona",
+  "agent": "orchestrator"
+ },
+ {
+  "id": "src:griffith-rv",
+  "type": "translation",
+  "title": "The Hymns of the Rigveda",
+  "author": "Ralph T. H. Griffith",
+  "year": "1889–1892",
+  "publisher": "E. J. Lazarus, Benares",
+  "agent": "orchestrator",
+  "url": "https://www.sacred-texts.com/hin/rigveda/index.htm",
+  "notes": "Public domain. Quotations from Griffith are used for short excerpts only; his readings are dated."
+ },
+ {
+  "id": "src:jamison-brereton-2014",
+  "type": "translation",
+  "title": "The Rigveda: The Earliest Religious Poetry of India",
+  "author": "Stephanie W. Jamison and Joel P. Brereton",
+  "year": "2014",
+  "publisher": "Oxford University Press",
+  "agent": "orchestrator"
+ },
+ {
+  "id": "src:olivelle-1996",
+  "type": "translation",
+  "title": "Upaniṣads (Oxford World’s Classics)",
+  "author": "Patrick Olivelle",
+  "year": "1996",
+  "publisher": "Oxford University Press",
+  "agent": "orchestrator"
+ },
+ {
+  "id": "src:olivelle-1998",
+  "type": "translation",
+  "title": "The Early Upaniṣads: Annotated Text and Translation",
+  "author": "Patrick Olivelle",
+  "year": "1998",
+  "publisher": "Oxford University Press",
+  "agent": "orchestrator"
+ },
+ {
+  "id": "src:eggeling-sb",
+  "type": "translation",
+  "title": "The Śatapatha-Brāhmaṇa (Sacred Books of the East 12, 26, 41, 43, 44)",
+  "author": "Julius Eggeling",
+  "year": "1882–1900",
+  "publisher": "Clarendon Press, Oxford",
+  "agent": "orchestrator",
+  "url": "https://www.sacred-texts.com/hin/sbr/index.htm",
+  "notes": "Public domain."
+ },
+ {
+  "id": "src:goldman-vr",
+  "type": "translation",
+  "title": "The Rāmāyaṇa of Vālmīki: An Epic of Ancient India (7 vols.)",
+  "author": "Robert P. Goldman (gen. ed.), Sally J. Sutherland Goldman et al.",
+  "year": "1984–2017",
+  "publisher": "Princeton University Press",
+  "agent": "orchestrator",
+  "notes": "Translation of the Baroda Critical Edition with extensive introductions on dating and recensions."
+ },
+ {
+  "id": "src:griffith-ramayan",
+  "type": "translation",
+  "title": "The Rámáyan of Válmíki",
+  "author": "Ralph T. H. Griffith",
+  "year": "1870–1874",
+  "publisher": "Trübner, London / E. J. Lazarus, Benares",
+  "agent": "orchestrator",
+  "url": "https://www.sacred-texts.com/hin/rama/index.htm",
+  "notes": "Public domain; translates a vulgate (not the critical) text."
+ },
+ {
+  "id": "src:ganguli-mbh",
+  "type": "translation",
+  "title": "The Mahabharata of Krishna-Dwaipayana Vyasa",
+  "author": "Kisari Mohan Ganguli",
+  "year": "1883–1896",
+  "publisher": "Bharata Press, Calcutta",
+  "agent": "orchestrator",
+  "url": "https://www.sacred-texts.com/hin/maha/index.htm",
+  "notes": "Public domain; translates the vulgate (Bombay/Calcutta) text, so chapter numbers differ from the Critical Edition."
+ },
+ {
+  "id": "src:van-buitenen-mbh",
+  "type": "translation",
+  "title": "The Mahābhārata, vols. 1–3",
+  "author": "J. A. B. van Buitenen",
+  "year": "1973–1978",
+  "publisher": "University of Chicago Press",
+  "agent": "orchestrator"
+ },
+ {
+  "id": "src:wilson-vp",
+  "type": "translation",
+  "title": "The Vishńu Puráńa: A System of Hindu Mythology and Tradition",
+  "author": "H. H. Wilson",
+  "year": "1840",
+  "publisher": "John Murray, London",
+  "agent": "orchestrator",
+  "url": "https://www.sacred-texts.com/hin/vp/index.htm",
+  "notes": "Public domain."
+ },
+ {
+  "id": "src:coburn-1984",
+  "type": "scholarly-book",
+  "title": "Devī-Māhātmya: The Crystallization of the Goddess Tradition",
+  "author": "Thomas B. Coburn",
+  "year": "1984",
+  "publisher": "Motilal Banarsidass, Delhi",
+  "agent": "orchestrator"
+ },
+ {
+  "id": "src:bryant-2007",
+  "type": "scholarly-book",
+  "title": "Krishna: A Sourcebook",
+  "author": "Edwin F. Bryant (ed.)",
+  "year": "2007",
+  "publisher": "Oxford University Press",
+  "agent": "orchestrator"
+ },
+ {
+  "id": "src:macdonell-1897",
+  "type": "scholarly-book",
+  "title": "Vedic Mythology",
+  "author": "A. A. Macdonell",
+  "year": "1897",
+  "publisher": "Karl J. Trübner, Strassburg",
+  "agent": "orchestrator"
+ },
+ {
+  "id": "src:witzel-1997",
+  "type": "journal-article",
+  "title": "The Development of the Vedic Canon and its Schools: The Social and Political Milieu",
+  "author": "Michael Witzel",
+  "year": "1997",
+  "publisher": "in M. Witzel (ed.), Inside the Texts, Beyond the Texts (Harvard Oriental Series, Opera Minora 2), Cambridge MA",
+  "agent": "orchestrator"
+ },
+ {
+  "id": "src:brockington-1998",
+  "type": "scholarly-book",
+  "title": "The Sanskrit Epics",
+  "author": "John Brockington",
+  "year": "1998",
+  "publisher": "Brill, Leiden",
+  "agent": "orchestrator"
+ },
+ {
+  "id": "src:hiltebeitel-2001",
+  "type": "scholarly-book",
+  "title": "Rethinking the Mahābhārata: A Reader’s Guide to the Education of the Dharma King",
+  "author": "Alf Hiltebeitel",
+  "year": "2001",
+  "publisher": "University of Chicago Press",
+  "agent": "orchestrator"
+ },
+ {
+  "id": "src:rocher-1986",
+  "type": "scholarly-book",
+  "title": "The Purāṇas (A History of Indian Literature, vol. II, fasc. 3)",
+  "author": "Ludo Rocher",
+  "year": "1986",
+  "publisher": "Otto Harrassowitz, Wiesbaden",
+  "agent": "orchestrator"
+ },
+ {
+  "id": "src:hazra-1940",
+  "type": "scholarly-book",
+  "title": "Studies in the Purāṇic Records on Hindu Rites and Customs",
+  "author": "R. C. Hazra",
+  "year": "1940",
+  "publisher": "University of Dacca",
+  "agent": "orchestrator"
+ },
+ {
+  "id": "src:flood-1996",
+  "type": "scholarly-book",
+  "title": "An Introduction to Hinduism",
+  "author": "Gavin Flood",
+  "year": "1996",
+  "publisher": "Cambridge University Press",
+  "agent": "orchestrator"
+ },
+ {
+  "id": "src:singh-2008",
+  "type": "scholarly-book",
+  "title": "A History of Ancient and Early Medieval India: From the Stone Age to the 12th Century",
+  "author": "Upinder Singh",
+  "year": "2008",
+  "publisher": "Pearson Longman, Delhi",
+  "agent": "orchestrator"
+ },
+ {
+  "id": "src:pollock-2006",
+  "type": "scholarly-book",
+  "title": "The Language of the Gods in the World of Men: Sanskrit, Culture, and Power in Premodern India",
+  "author": "Sheldon Pollock",
+  "year": "2006",
+  "publisher": "University of California Press",
+  "agent": "orchestrator"
+ },
+ {
+  "id": "src:richman-1991",
+  "type": "scholarly-book",
+  "title": "Many Rāmāyaṇas: The Diversity of a Narrative Tradition in South Asia",
+  "author": "Paula Richman (ed.)",
+  "year": "1991",
+  "publisher": "University of California Press",
+  "agent": "orchestrator"
+ },
+ {
+  "id": "src:ramanujan-1991",
+  "type": "journal-article",
+  "title": "Three Hundred Rāmāyaṇas: Five Examples and Three Thoughts on Translation",
+  "author": "A. K. Ramanujan",
+  "year": "1991",
+  "publisher": "in P. Richman (ed.), Many Rāmāyaṇas, University of California Press, pp. 22–49",
+  "agent": "orchestrator"
+ },
+ {
+  "id": "src:lutgendorf-1991",
+  "type": "scholarly-book",
+  "title": "The Life of a Text: Performing the Rāmcaritmānas of Tulsidas",
+  "author": "Philip Lutgendorf",
+  "year": "1991",
+  "publisher": "University of California Press",
+  "agent": "orchestrator"
+ },
+ {
+  "id": "src:lutgendorf-2007",
+  "type": "scholarly-book",
+  "title": "Hanuman’s Tale: The Messages of a Divine Monkey",
+  "author": "Philip Lutgendorf",
+  "year": "2007",
+  "publisher": "Oxford University Press",
+  "agent": "orchestrator"
+ },
+ {
+  "id": "src:hardy-1983",
+  "type": "scholarly-book",
+  "title": "Viraha-Bhakti: The Early History of Kṛṣṇa Devotion in South India",
+  "author": "Friedhelm Hardy",
+  "year": "1983",
+  "publisher": "Oxford University Press, Delhi",
+  "agent": "orchestrator"
+ },
+ {
+  "id": "src:peterson-1989",
+  "type": "scholarly-book",
+  "title": "Poems to Śiva: The Hymns of the Tamil Saints",
+  "author": "Indira Viswanathan Peterson",
+  "year": "1989",
+  "publisher": "Princeton University Press",
+  "agent": "orchestrator"
+ },
+ {
+  "id": "src:kramrisch-1981",
+  "type": "scholarly-book",
+  "title": "The Presence of Śiva",
+  "author": "Stella Kramrisch",
+  "year": "1981",
+  "publisher": "Princeton University Press",
+  "agent": "orchestrator"
+ },
+ {
+  "id": "src:bakker-2014",
+  "type": "scholarly-book",
+  "title": "The World of the Skandapurāṇa",
+  "author": "Hans T. Bakker",
+  "year": "2014",
+  "publisher": "Brill, Leiden",
+  "agent": "orchestrator"
+ },
+ {
+  "id": "src:skandapurana-vol1",
+  "type": "primary-text",
+  "title": "The Skandapurāṇa, Volume I: Adhyāyas 1–25",
+  "author": "R. Adriaensen, H. T. Bakker and H. Isaacson (eds.)",
+  "year": "1998",
+  "publisher": "Egbert Forsten, Groningen",
+  "agent": "orchestrator",
+  "notes": "Critical edition based on the Nepalese manuscripts, including the one dated 810 CE."
+ },
+ {
+  "id": "src:sanderson-2009",
+  "type": "journal-article",
+  "title": "The Śaiva Age: The Rise and Dominance of Śaivism during the Early Medieval Period",
+  "author": "Alexis Sanderson",
+  "year": "2009",
+  "publisher": "in S. Einoo (ed.), Genesis and Development of Tantrism, Institute of Oriental Culture, University of Tokyo, pp. 41–349",
+  "agent": "orchestrator"
+ },
+ {
+  "id": "src:kane-hod",
+  "type": "scholarly-book",
+  "title": "History of Dharmaśāstra (5 vols.)",
+  "author": "P. V. Kane",
+  "year": "1930–1962",
+  "publisher": "Bhandarkar Oriental Research Institute, Poona",
+  "agent": "orchestrator"
+ },
+ {
+  "id": "src:srinivasan-1975",
+  "type": "journal-article",
+  "title": "The So-Called Proto-Śiva Seal from Mohenjo-Daro: An Iconological Assessment",
+  "author": "Doris Srinivasan",
+  "year": "1975–76",
+  "publisher": "Archives of Asian Art 29: 47–58",
+  "agent": "orchestrator"
+ },
+ {
+  "id": "src:srinivasan-1997",
+  "type": "scholarly-book",
+  "title": "Many Heads, Arms and Eyes: Origin, Meaning and Form of Multiplicity in Indian Art",
+  "author": "Doris Meth Srinivasan",
+  "year": "1997",
+  "publisher": "Brill, Leiden",
+  "agent": "orchestrator"
+ },
+ {
+  "id": "src:marshall-1931",
+  "type": "excavation-report",
+  "title": "Mohenjo-daro and the Indus Civilization",
+  "author": "John Marshall (ed.)",
+  "year": "1931",
+  "publisher": "Arthur Probsthain, London",
+  "agent": "orchestrator"
+ },
+ {
+  "id": "src:possehl-2002",
+  "type": "scholarly-book",
+  "title": "The Indus Civilization: A Contemporary Perspective",
+  "author": "Gregory L. Possehl",
+  "year": "2002",
+  "publisher": "AltaMira Press",
+  "agent": "orchestrator"
+ },
+ {
+  "id": "src:williams-1982",
+  "type": "scholarly-book",
+  "title": "The Art of Gupta India: Empire and Province",
+  "author": "Joanna Gottfried Williams",
+  "year": "1982",
+  "publisher": "Princeton University Press",
+  "agent": "orchestrator"
+ },
+ {
+  "id": "src:harle-1994",
+  "type": "scholarly-book",
+  "title": "The Art and Architecture of the Indian Subcontinent (2nd ed.)",
+  "author": "J. C. Harle",
+  "year": "1994",
+  "publisher": "Yale University Press",
+  "agent": "orchestrator"
+ },
+ {
+  "id": "src:michell-1977",
+  "type": "scholarly-book",
+  "title": "The Hindu Temple: An Introduction to its Meaning and Forms",
+  "author": "George Michell",
+  "year": "1977",
+  "publisher": "Paul Elek, London",
+  "agent": "orchestrator"
+ },
+ {
+  "id": "src:dehejia-1990",
+  "type": "scholarly-book",
+  "title": "Art of the Imperial Cholas",
+  "author": "Vidya Dehejia",
+  "year": "1990",
+  "publisher": "Columbia University Press",
+  "agent": "orchestrator"
+ },
+ {
+  "id": "src:sircar-1965",
+  "type": "epigraphic-corpus",
+  "title": "Select Inscriptions Bearing on Indian History and Civilization, vol. I (2nd ed.)",
+  "author": "D. C. Sircar",
+  "year": "1965",
+  "publisher": "University of Calcutta",
+  "agent": "orchestrator"
+ },
+ {
+  "id": "src:schlingloff-1969",
+  "type": "journal-article",
+  "title": "The Oldest Extant Parvan-List of the Mahābhārata",
+  "author": "Dieter Schlingloff",
+  "year": "1969",
+  "publisher": "Journal of the American Oriental Society 89 (2): 334–338",
+  "agent": "orchestrator"
+ },
+ {
+  "id": "src:lal-1955",
+  "type": "excavation-report",
+  "title": "Excavation at Hastināpura and Other Explorations in the Upper Gaṅgā and Sutlej Basins, 1950–52",
+  "author": "B. B. Lal",
+  "year": "1954–55",
+  "publisher": "Ancient India 10–11: 5–151",
+  "agent": "orchestrator"
+ },
+ {
+  "id": "src:jaiswal-1981",
+  "type": "scholarly-book",
+  "title": "The Origin and Development of Vaiṣṇavism (2nd ed.)",
+  "author": "Suvira Jaiswal",
+  "year": "1981",
+  "publisher": "Munshiram Manoharlal, Delhi",
+  "agent": "orchestrator"
+ },
+ {
+  "id": "src:unesco-whc",
+  "type": "institutional",
+  "title": "UNESCO World Heritage List",
+  "author": "UNESCO World Heritage Centre",
+  "year": "ongoing",
+  "publisher": "UNESCO",
+  "agent": "orchestrator",
+  "url": "https://whc.unesco.org/en/list/"
+ },
+ {
+  "id": "src:asi",
+  "type": "institutional",
+  "title": "Archaeological Survey of India",
+  "author": "Archaeological Survey of India",
+  "year": "ongoing",
+  "publisher": "Ministry of Culture, Government of India",
+  "agent": "orchestrator",
+  "url": "https://asi.nic.in/"
+ },
+ {
+  "id": "src:namami",
+  "type": "institutional",
+  "title": "National Mission for Manuscripts",
+  "author": "National Mission for Manuscripts",
+  "year": "ongoing",
+  "publisher": "Ministry of Culture, Government of India",
+  "agent": "orchestrator",
+  "url": "https://www.namami.gov.in/"
+ },
+ {
+  "id": "src:museums-of-india",
+  "type": "institutional",
+  "title": "Museums of India — National Portal and Digital Repository",
+  "author": "Ministry of Culture, Government of India",
+  "year": "ongoing",
+  "publisher": "Government of India",
+  "agent": "orchestrator",
+  "url": "https://www.museumsofindia.gov.in/"
+ },
+ {
+  "id": "src:wikipedia",
+  "type": "reference",
+  "title": "Wikipedia",
+  "author": "Wikipedia contributors",
+  "year": "ongoing",
+  "publisher": "Wikimedia Foundation",
+  "agent": "orchestrator",
+  "url": "https://en.wikipedia.org/",
+  "notes": "Starting point only. Never the sole support for a contested claim."
+ },
+ {
+  "id": "src:wikimedia-commons",
+  "type": "reference",
+  "title": "Wikimedia Commons",
+  "author": "Wikimedia contributors",
+  "year": "ongoing",
+  "publisher": "Wikimedia Foundation",
+  "agent": "orchestrator",
+  "url": "https://commons.wikimedia.org/",
+  "notes": "Images; licence recorded per file."
+ }
+]

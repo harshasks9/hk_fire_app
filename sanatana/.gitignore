@@ -1,0 +1,6 @@
+node_modules
+dist
+dist-villa
+*.tsbuildinfo
+.vercel
+public/data

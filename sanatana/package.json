@@ -1,0 +1,58 @@
+{
+  "name": "sanatana-knowledge-graph",
+  "version": "0.1.0",
+  "private": true,
+  "description": "SANATANA — The Living Knowledge Graph: a provenance-first interactive atlas of Hindu literature, narrative, temples and material evidence.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.6"
+  },
+  "scripts": {
+    "validate": "node --experimental-strip-types --disable-warning=ExperimentalWarning scripts/validate.ts",
+    "graph": "node --experimental-strip-types --disable-warning=ExperimentalWarning scripts/build-graph.ts",
+    "dev": "npm run graph && vite",
+    "build": "npm run graph && tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "node --experimental-strip-types --disable-warning=ExperimentalWarning --test scripts/*.test.ts",
+    "publish:villa": "npm run build && node --experimental-strip-types --disable-warning=ExperimentalWarning scripts/publish-villa.ts",
+    "seed:core": "node --experimental-strip-types --disable-warning=ExperimentalWarning scripts/seed-core.ts",
+    "seed:sources": "node --experimental-strip-types --disable-warning=ExperimentalWarning scripts/seed-sources.ts"
+  },
+  "dependencies": {
+    "cytoscape": "^3.34.4",
+    "cytoscape-fcose": "^2.2.0",
+    "d3-force": "^3.0.1",
+    "d3-geo": "^3.1.2",
+    "d3-scale": "^4.0.3",
+    "d3-selection": "^3.0.1",
+    "d3-transition": "^3.0.2",
+    "d3-zoom": "^3.0.1",
+    "lucide-react": "^1.70.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "topojson-client": "^3.1.0",
+    "world-atlas": "^2.0.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.5",
+    "@types/cytoscape": "^3.21.9",
+    "@types/d3-force": "^3.0.10",
+    "@types/d3-geo": "^3.1.1",
+    "@types/d3-scale": "^4.0.9",
+    "@types/d3-selection": "^3.0.12",
+    "@types/d3-transition": "^3.0.9",
+    "@types/d3-zoom": "^3.0.9",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/topojson-client": "^3.1.5",
+    "@vitejs/plugin-react": "^6.2.1",
+    "graphology": "^0.26.0",
+    "graphology-communities-louvain": "^2.0.2",
+    "graphology-metrics": "^2.4.2",
+    "graphology-types": "^0.24.8",
+    "tailwindcss": "^4.3.5",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.6"
+  }
+}

@@ -1,0 +1,3876 @@
+[
+ {
+  "id": "col:vedic-samhitas",
+  "type": "collection",
+  "name": "Vedic Saṃhitās",
+  "owner": "vedic",
+  "iast": "Vedasaṃhitā",
+  "devanagari": "वेदसंहिता",
+  "aliases": [
+   "Four Vedas"
+  ]
+ },
+ {
+  "id": "col:brahmanas",
+  "type": "collection",
+  "name": "Brāhmaṇas",
+  "owner": "vedic",
+  "iast": "Brāhmaṇa",
+  "devanagari": "ब्राह्मण"
+ },
+ {
+  "id": "col:aranyakas",
+  "type": "collection",
+  "name": "Āraṇyakas",
+  "owner": "vedic",
+  "iast": "Āraṇyaka",
+  "devanagari": "आरण्यक"
+ },
+ {
+  "id": "col:upanishads",
+  "type": "collection",
+  "name": "Upaniṣads",
+  "owner": "vedic",
+  "iast": "Upaniṣad",
+  "devanagari": "उपनिषद्",
+  "aliases": [
+   "Upanishads",
+   "Vedanta"
+  ]
+ },
+ {
+  "id": "col:vedangas",
+  "type": "collection",
+  "name": "Vedāṅgas",
+  "owner": "vedic",
+  "iast": "Vedāṅga",
+  "devanagari": "वेदाङ्ग"
+ },
+ {
+  "id": "col:sutras",
+  "type": "collection",
+  "name": "Kalpa Sūtras",
+  "owner": "vedic",
+  "iast": "Kalpasūtra",
+  "devanagari": "कल्पसूत्र",
+  "aliases": [
+   "Śrauta, Gṛhya and Dharma Sūtras"
+  ]
+ },
+ {
+  "id": "text:rigveda",
+  "type": "text",
+  "name": "Rigveda",
+  "owner": "vedic",
+  "iast": "Ṛgveda",
+  "devanagari": "ऋग्वेद",
+  "aliases": [
+   "Rig Veda",
+   "Ṛgvedasaṃhitā"
+  ]
+ },
+ {
+  "id": "text:samaveda",
+  "type": "text",
+  "name": "Samaveda",
+  "owner": "vedic",
+  "iast": "Sāmaveda",
+  "devanagari": "सामवेद",
+  "aliases": [
+   "Sama Veda"
+  ]
+ },
+ {
+  "id": "text:yajurveda",
+  "type": "text",
+  "name": "Yajurveda",
+  "owner": "vedic",
+  "iast": "Yajurveda",
+  "devanagari": "यजुर्वेद",
+  "aliases": [
+   "Yajur Veda"
+  ]
+ },
+ {
+  "id": "text:shukla-yajurveda",
+  "type": "text",
+  "name": "Śukla Yajurveda (Vājasaneyi Saṃhitā)",
+  "owner": "vedic",
+  "iast": "Śuklayajurveda",
+  "devanagari": "शुक्लयजुर्वेद",
+  "aliases": [
+   "White Yajurveda",
+   "Vajasaneyi Samhita"
+  ]
+ },
+ {
+  "id": "text:taittiriya-samhita",
+  "type": "text",
+  "name": "Taittirīya Saṃhitā (Kṛṣṇa Yajurveda)",
+  "owner": "vedic",
+  "iast": "Taittirīyasaṃhitā",
+  "devanagari": "तैत्तिरीयसंहिता",
+  "aliases": [
+   "Black Yajurveda",
+   "Krishna Yajurveda"
+  ]
+ },
+ {
+  "id": "text:atharvaveda",
+  "type": "text",
+  "name": "Atharvaveda",
+  "owner": "vedic",
+  "iast": "Atharvaveda",
+  "devanagari": "अथर्ववेद",
+  "aliases": [
+   "Atharva Veda"
+  ]
+ },
+ {
+  "id": "text:shatapatha-brahmana",
+  "type": "text",
+  "name": "Śatapatha Brāhmaṇa",
+  "owner": "vedic",
+  "iast": "Śatapathabrāhmaṇa",
+  "devanagari": "शतपथब्राह्मण",
+  "aliases": [
+   "Shatapatha Brahmana"
+  ]
+ },
+ {
+  "id": "text:aitareya-brahmana",
+  "type": "text",
+  "name": "Aitareya Brāhmaṇa",
+  "owner": "vedic",
+  "iast": "Aitareyabrāhmaṇa",
+  "devanagari": "ऐतरेयब्राह्मण"
+ },
+ {
+  "id": "text:taittiriya-aranyaka",
+  "type": "text",
+  "name": "Taittirīya Āraṇyaka",
+  "owner": "vedic",
+  "iast": "Taittirīyāraṇyaka",
+  "devanagari": "तैत्तिरीयारण्यक"
+ },
+ {
+  "id": "text:brihadaranyaka-upanishad",
+  "type": "text",
+  "name": "Bṛhadāraṇyaka Upaniṣad",
+  "owner": "vedic",
+  "iast": "Bṛhadāraṇyakopaniṣad",
+  "devanagari": "बृहदारण्यकोपनिषद्",
+  "aliases": [
+   "Brihadaranyaka Upanishad"
+  ]
+ },
+ {
+  "id": "text:chandogya-upanishad",
+  "type": "text",
+  "name": "Chāndogya Upaniṣad",
+  "owner": "vedic",
+  "iast": "Chāndogyopaniṣad",
+  "devanagari": "छान्दोग्योपनिषद्",
+  "aliases": [
+   "Chandogya Upanishad"
+  ]
+ },
+ {
+  "id": "text:taittiriya-upanishad",
+  "type": "text",
+  "name": "Taittirīya Upaniṣad",
+  "owner": "vedic",
+  "iast": "Taittirīyopaniṣad",
+  "devanagari": "तैत्तिरीयोपनिषद्"
+ },
+ {
+  "id": "text:aitareya-upanishad",
+  "type": "text",
+  "name": "Aitareya Upaniṣad",
+  "owner": "vedic",
+  "iast": "Aitareyopaniṣad",
+  "devanagari": "ऐतरेयोपनिषद्"
+ },
+ {
+  "id": "text:kaushitaki-upanishad",
+  "type": "text",
+  "name": "Kauṣītaki Upaniṣad",
+  "owner": "vedic",
+  "iast": "Kauṣītakyupaniṣad",
+  "devanagari": "कौषीतकि उपनिषद्"
+ },
+ {
+  "id": "text:kena-upanishad",
+  "type": "text",
+  "name": "Kena Upaniṣad",
+  "owner": "vedic",
+  "iast": "Kenopaniṣad",
+  "devanagari": "केनोपनिषद्"
+ },
+ {
+  "id": "text:katha-upanishad",
+  "type": "text",
+  "name": "Kaṭha Upaniṣad",
+  "owner": "vedic",
+  "iast": "Kaṭhopaniṣad",
+  "devanagari": "कठोपनिषद्",
+  "aliases": [
+   "Katha Upanishad"
+  ]
+ },
+ {
+  "id": "text:isha-upanishad",
+  "type": "text",
+  "name": "Īśā Upaniṣad",
+  "owner": "vedic",
+  "iast": "Īśopaniṣad",
+  "devanagari": "ईशोपनिषद्",
+  "aliases": [
+   "Isha Upanishad",
+   "Isavasya"
+  ]
+ },
+ {
+  "id": "text:mundaka-upanishad",
+  "type": "text",
+  "name": "Muṇḍaka Upaniṣad",
+  "owner": "vedic",
+  "iast": "Muṇḍakopaniṣad",
+  "devanagari": "मुण्डकोपनिषद्"
+ },
+ {
+  "id": "text:prashna-upanishad",
+  "type": "text",
+  "name": "Praśna Upaniṣad",
+  "owner": "vedic",
+  "iast": "Praśnopaniṣad",
+  "devanagari": "प्रश्नोपनिषद्"
+ },
+ {
+  "id": "text:mandukya-upanishad",
+  "type": "text",
+  "name": "Māṇḍūkya Upaniṣad",
+  "owner": "vedic",
+  "iast": "Māṇḍūkyopaniṣad",
+  "devanagari": "माण्डूक्योपनिषद्"
+ },
+ {
+  "id": "text:shvetashvatara-upanishad",
+  "type": "text",
+  "name": "Śvetāśvatara Upaniṣad",
+  "owner": "vedic",
+  "iast": "Śvetāśvataropaniṣad",
+  "devanagari": "श्वेताश्वतरोपनिषद्",
+  "aliases": [
+   "Shvetashvatara Upanishad"
+  ]
+ },
+ {
+  "id": "text:ashtadhyayi",
+  "type": "text",
+  "name": "Aṣṭādhyāyī of Pāṇini",
+  "owner": "vedic",
+  "iast": "Aṣṭādhyāyī",
+  "devanagari": "अष्टाध्यायी",
+  "aliases": [
+   "Panini grammar"
+  ]
+ },
+ {
+  "id": "text:mahabhashya",
+  "type": "text",
+  "name": "Mahābhāṣya of Patañjali",
+  "owner": "vedic",
+  "iast": "Mahābhāṣya",
+  "devanagari": "महाभाष्य"
+ },
+ {
+  "id": "text:nirukta",
+  "type": "text",
+  "name": "Nirukta of Yāska",
+  "owner": "vedic",
+  "iast": "Nirukta",
+  "devanagari": "निरुक्त"
+ },
+ {
+  "id": "deity:indra",
+  "type": "deity",
+  "name": "Indra",
+  "owner": "vedic",
+  "iast": "Indra",
+  "devanagari": "इन्द्र",
+  "aliases": [
+   "Śakra",
+   "Purandara",
+   "Maghavan"
+  ]
+ },
+ {
+  "id": "deity:agni",
+  "type": "deity",
+  "name": "Agni",
+  "owner": "vedic",
+  "iast": "Agni",
+  "devanagari": "अग्नि"
+ },
+ {
+  "id": "deity:soma",
+  "type": "deity",
+  "name": "Soma",
+  "owner": "vedic",
+  "iast": "Soma",
+  "devanagari": "सोम"
+ },
+ {
+  "id": "deity:varuna",
+  "type": "deity",
+  "name": "Varuṇa",
+  "owner": "vedic",
+  "iast": "Varuṇa",
+  "devanagari": "वरुण",
+  "aliases": [
+   "Varuna"
+  ]
+ },
+ {
+  "id": "deity:mitra",
+  "type": "deity",
+  "name": "Mitra",
+  "owner": "vedic",
+  "iast": "Mitra",
+  "devanagari": "मित्र"
+ },
+ {
+  "id": "deity:surya",
+  "type": "deity",
+  "name": "Sūrya",
+  "owner": "vedic",
+  "iast": "Sūrya",
+  "devanagari": "सूर्य",
+  "aliases": [
+   "Surya",
+   "Savitṛ (related)",
+   "Āditya"
+  ]
+ },
+ {
+  "id": "deity:ushas",
+  "type": "deity",
+  "name": "Uṣas",
+  "owner": "vedic",
+  "iast": "Uṣas",
+  "devanagari": "उषस्",
+  "aliases": [
+   "Ushas",
+   "Dawn"
+  ]
+ },
+ {
+  "id": "deity:rudra",
+  "type": "deity",
+  "name": "Rudra",
+  "owner": "vedic",
+  "iast": "Rudra",
+  "devanagari": "रुद्र"
+ },
+ {
+  "id": "deity:prajapati",
+  "type": "deity",
+  "name": "Prajāpati",
+  "owner": "vedic",
+  "iast": "Prajāpati",
+  "devanagari": "प्रजापति"
+ },
+ {
+  "id": "deity:yama",
+  "type": "deity",
+  "name": "Yama",
+  "owner": "vedic",
+  "iast": "Yama",
+  "devanagari": "यम"
+ },
+ {
+  "id": "deity:vayu",
+  "type": "deity",
+  "name": "Vāyu",
+  "owner": "vedic",
+  "iast": "Vāyu",
+  "devanagari": "वायु",
+  "aliases": [
+   "Vayu",
+   "Vāta"
+  ]
+ },
+ {
+  "id": "deity:ashvins",
+  "type": "deity",
+  "name": "Aśvins",
+  "owner": "vedic",
+  "iast": "Aśvinau",
+  "devanagari": "अश्विनौ",
+  "aliases": [
+   "Ashvins",
+   "Nāsatyas"
+  ]
+ },
+ {
+  "id": "deity:aditi",
+  "type": "deity",
+  "name": "Aditi",
+  "owner": "vedic",
+  "iast": "Aditi",
+  "devanagari": "अदिति"
+ },
+ {
+  "id": "deity:sarasvati",
+  "type": "deity",
+  "name": "Sarasvatī",
+  "owner": "vedic",
+  "iast": "Sarasvatī",
+  "devanagari": "सरस्वती",
+  "aliases": [
+   "Saraswati",
+   "Vāc (related)"
+  ]
+ },
+ {
+  "id": "char:vasishtha",
+  "type": "character",
+  "name": "Vasiṣṭha",
+  "owner": "vedic",
+  "iast": "Vasiṣṭha",
+  "devanagari": "वसिष्ठ",
+  "aliases": [
+   "Vashistha",
+   "Vasishta"
+  ]
+ },
+ {
+  "id": "char:vishvamitra",
+  "type": "character",
+  "name": "Viśvāmitra",
+  "owner": "vedic",
+  "iast": "Viśvāmitra",
+  "devanagari": "विश्वामित्र",
+  "aliases": [
+   "Vishwamitra"
+  ]
+ },
+ {
+  "id": "char:agastya",
+  "type": "character",
+  "name": "Agastya",
+  "owner": "vedic",
+  "iast": "Agastya",
+  "devanagari": "अगस्त्य",
+  "aliases": [
+   "Akattiyar (Tamil)"
+  ]
+ },
+ {
+  "id": "char:angiras",
+  "type": "character",
+  "name": "Aṅgiras",
+  "owner": "vedic",
+  "iast": "Aṅgiras",
+  "devanagari": "अङ्गिरस्"
+ },
+ {
+  "id": "char:bhrigu",
+  "type": "character",
+  "name": "Bhṛgu",
+  "owner": "vedic",
+  "iast": "Bhṛgu",
+  "devanagari": "भृगु"
+ },
+ {
+  "id": "char:atri",
+  "type": "character",
+  "name": "Atri",
+  "owner": "vedic",
+  "iast": "Atri",
+  "devanagari": "अत्रि"
+ },
+ {
+  "id": "char:yajnavalkya",
+  "type": "character",
+  "name": "Yājñavalkya",
+  "owner": "vedic",
+  "iast": "Yājñavalkya",
+  "devanagari": "याज्ञवल्क्य"
+ },
+ {
+  "id": "char:gargi",
+  "type": "character",
+  "name": "Gārgī Vācaknavī",
+  "owner": "vedic",
+  "iast": "Gārgī Vācaknavī",
+  "devanagari": "गार्गी वाचक्नवी",
+  "aliases": [
+   "Gargi"
+  ]
+ },
+ {
+  "id": "char:maitreyi",
+  "type": "character",
+  "name": "Maitreyī",
+  "owner": "vedic",
+  "iast": "Maitreyī",
+  "devanagari": "मैत्रेयी"
+ },
+ {
+  "id": "char:uddalaka-aruni",
+  "type": "character",
+  "name": "Uddālaka Āruṇi",
+  "owner": "vedic",
+  "iast": "Uddālaka Āruṇi",
+  "devanagari": "उद्दालक आरुणि"
+ },
+ {
+  "id": "char:shvetaketu",
+  "type": "character",
+  "name": "Śvetaketu",
+  "owner": "vedic",
+  "iast": "Śvetaketu",
+  "devanagari": "श्वेतकेतु"
+ },
+ {
+  "id": "char:satyakama",
+  "type": "character",
+  "name": "Satyakāma Jābāla",
+  "owner": "vedic",
+  "iast": "Satyakāma Jābāla",
+  "devanagari": "सत्यकाम जाबाल"
+ },
+ {
+  "id": "char:janaka-videha",
+  "type": "character",
+  "name": "Janaka of Videha (Upaniṣadic king)",
+  "owner": "vedic",
+  "iast": "Janaka Vaideha",
+  "devanagari": "जनक वैदेह",
+  "aliases": [
+   "Janaka (Bṛhadāraṇyaka)"
+  ]
+ },
+ {
+  "id": "char:nachiketas",
+  "type": "character",
+  "name": "Naciketas",
+  "owner": "vedic",
+  "iast": "Naciketas",
+  "devanagari": "नचिकेतस्",
+  "aliases": [
+   "Nachiketa"
+  ]
+ },
+ {
+  "id": "char:ghora-angirasa",
+  "type": "character",
+  "name": "Ghora Āṅgirasa",
+  "owner": "vedic",
+  "iast": "Ghora Āṅgirasa",
+  "devanagari": "घोर आङ्गिरस"
+ },
+ {
+  "id": "char:krishna-devakiputra",
+  "type": "character",
+  "name": "Kṛṣṇa Devakīputra (Chāndogya)",
+  "owner": "vedic",
+  "iast": "Kṛṣṇa Devakīputra",
+  "devanagari": "कृष्ण देवकीपुत्र"
+ },
+ {
+  "id": "char:pururavas",
+  "type": "character",
+  "name": "Purūravas",
+  "owner": "vedic",
+  "iast": "Purūravas",
+  "devanagari": "पुरूरवस्"
+ },
+ {
+  "id": "char:urvashi",
+  "type": "character",
+  "name": "Urvaśī",
+  "owner": "vedic",
+  "iast": "Urvaśī",
+  "devanagari": "उर्वशी",
+  "aliases": [
+   "Urvashi"
+  ]
+ },
+ {
+  "id": "char:vritra",
+  "type": "character",
+  "name": "Vṛtra",
+  "owner": "vedic",
+  "iast": "Vṛtra",
+  "devanagari": "वृत्र",
+  "aliases": [
+   "Vritra"
+  ]
+ },
+ {
+  "id": "char:shunahshepa",
+  "type": "character",
+  "name": "Śunaḥśepa",
+  "owner": "vedic",
+  "iast": "Śunaḥśepa",
+  "devanagari": "शुनःशेप"
+ },
+ {
+  "id": "char:sarama",
+  "type": "character",
+  "name": "Saramā",
+  "owner": "vedic",
+  "iast": "Saramā",
+  "devanagari": "सरमा"
+ },
+ {
+  "id": "concept:brahman",
+  "type": "concept",
+  "name": "Brahman",
+  "owner": "vedic",
+  "iast": "brahman",
+  "devanagari": "ब्रह्मन्"
+ },
+ {
+  "id": "concept:atman",
+  "type": "concept",
+  "name": "Ātman",
+  "owner": "vedic",
+  "iast": "ātman",
+  "devanagari": "आत्मन्",
+  "aliases": [
+   "Atman",
+   "Self"
+  ]
+ },
+ {
+  "id": "concept:rta",
+  "type": "concept",
+  "name": "Ṛta",
+  "owner": "vedic",
+  "iast": "ṛta",
+  "devanagari": "ऋत",
+  "aliases": [
+   "Rita",
+   "cosmic order"
+  ]
+ },
+ {
+  "id": "concept:yajna",
+  "type": "concept",
+  "name": "Yajña",
+  "owner": "vedic",
+  "iast": "yajña",
+  "devanagari": "यज्ञ",
+  "aliases": [
+   "sacrifice",
+   "Vedic ritual"
+  ]
+ },
+ {
+  "id": "concept:om",
+  "type": "concept",
+  "name": "Om",
+  "owner": "vedic",
+  "iast": "oṃ",
+  "devanagari": "ॐ",
+  "aliases": [
+   "Aum",
+   "Praṇava"
+  ]
+ },
+ {
+  "id": "concept:karma",
+  "type": "concept",
+  "name": "Karma",
+  "owner": "vedic",
+  "iast": "karman",
+  "devanagari": "कर्म"
+ },
+ {
+  "id": "concept:samsara",
+  "type": "concept",
+  "name": "Saṃsāra",
+  "owner": "vedic",
+  "iast": "saṃsāra",
+  "devanagari": "संसार"
+ },
+ {
+  "id": "concept:moksha",
+  "type": "concept",
+  "name": "Mokṣa",
+  "owner": "vedic",
+  "iast": "mokṣa",
+  "devanagari": "मोक्ष",
+  "aliases": [
+   "liberation",
+   "mukti"
+  ]
+ },
+ {
+  "id": "narr:indra-vritra",
+  "type": "narrative",
+  "name": "Indra slays Vṛtra",
+  "owner": "vedic",
+  "iast": "Vṛtravadha",
+  "devanagari": "वृत्रवध"
+ },
+ {
+  "id": "narr:three-strides",
+  "type": "narrative",
+  "name": "The three strides of Vishnu",
+  "owner": "vedic",
+  "iast": "Trivikrama",
+  "devanagari": "त्रिविक्रम"
+ },
+ {
+  "id": "narr:purusha-sacrifice",
+  "type": "narrative",
+  "name": "The sacrifice of Puruṣa",
+  "owner": "vedic",
+  "iast": "Puruṣasūkta",
+  "devanagari": "पुरुषसूक्त",
+  "aliases": [
+   "Purusha Sukta"
+  ]
+ },
+ {
+  "id": "narr:nasadiya",
+  "type": "narrative",
+  "name": "The Nāsadīya creation hymn",
+  "owner": "vedic",
+  "iast": "Nāsadīyasūkta",
+  "devanagari": "नासदीयसूक्त"
+ },
+ {
+  "id": "narr:manu-fish",
+  "type": "narrative",
+  "name": "Manu and the fish (the flood)",
+  "owner": "vedic",
+  "iast": "Matsya-Manu",
+  "devanagari": "मनु-मत्स्य"
+ },
+ {
+  "id": "narr:pururavas-urvashi",
+  "type": "narrative",
+  "name": "Purūravas and Urvaśī",
+  "owner": "vedic"
+ },
+ {
+  "id": "narr:sarama-panis",
+  "type": "narrative",
+  "name": "Saramā and the Paṇis",
+  "owner": "vedic"
+ },
+ {
+  "id": "narr:shunahshepa",
+  "type": "narrative",
+  "name": "The story of Śunaḥśepa",
+  "owner": "vedic"
+ },
+ {
+  "id": "narr:nachiketas-yama",
+  "type": "narrative",
+  "name": "Naciketas and Yama",
+  "owner": "vedic"
+ },
+ {
+  "id": "narr:tat-tvam-asi",
+  "type": "narrative",
+  "name": "Uddālaka teaches Śvetaketu: “tat tvam asi”",
+  "owner": "vedic",
+  "devanagari": "तत् त्वम् असि"
+ },
+ {
+  "id": "narr:uma-haimavati",
+  "type": "narrative",
+  "name": "Umā Haimavatī reveals Brahman to the gods",
+  "owner": "vedic"
+ },
+ {
+  "id": "narr:janaka-court-debate",
+  "type": "narrative",
+  "name": "The debates at Janaka’s court",
+  "owner": "vedic"
+ },
+ {
+  "id": "trad:vedic-srauta",
+  "type": "tradition",
+  "name": "Vedic Śrauta ritual tradition",
+  "owner": "vedic",
+  "iast": "śrauta",
+  "devanagari": "श्रौत"
+ },
+ {
+  "id": "trad:advaita-vedanta",
+  "type": "tradition",
+  "name": "Advaita Vedānta",
+  "owner": "vedic",
+  "iast": "Advaita Vedānta",
+  "devanagari": "अद्वैत वेदान्त"
+ },
+ {
+  "id": "person:panini",
+  "type": "person",
+  "name": "Pāṇini",
+  "owner": "vedic",
+  "iast": "Pāṇini",
+  "devanagari": "पाणिनि"
+ },
+ {
+  "id": "person:patanjali-grammarian",
+  "type": "person",
+  "name": "Patañjali (grammarian)",
+  "owner": "vedic",
+  "iast": "Patañjali",
+  "devanagari": "पतञ्जलि"
+ },
+ {
+  "id": "person:yaska",
+  "type": "person",
+  "name": "Yāska",
+  "owner": "vedic",
+  "iast": "Yāska",
+  "devanagari": "यास्क"
+ },
+ {
+  "id": "person:sayana",
+  "type": "person",
+  "name": "Sāyaṇa",
+  "owner": "vedic",
+  "iast": "Sāyaṇa",
+  "devanagari": "सायण"
+ },
+ {
+  "id": "person:shankara",
+  "type": "person",
+  "name": "Ādi Śaṅkara",
+  "owner": "vedic",
+  "iast": "Śaṅkara",
+  "devanagari": "शङ्कर",
+  "aliases": [
+   "Shankaracharya"
+  ]
+ },
+ {
+  "id": "col:itihasa",
+  "type": "collection",
+  "name": "Itihāsa (the epics)",
+  "owner": "epic",
+  "iast": "Itihāsa",
+  "devanagari": "इतिहास"
+ },
+ {
+  "id": "text:valmiki-ramayana",
+  "type": "text",
+  "name": "Vālmīki Rāmāyaṇa",
+  "owner": "epic",
+  "iast": "Vālmīkirāmāyaṇa",
+  "devanagari": "वाल्मीकि रामायण",
+  "aliases": [
+   "Ramayana"
+  ]
+ },
+ {
+  "id": "text:mahabharata",
+  "type": "text",
+  "name": "Mahābhārata",
+  "owner": "epic",
+  "iast": "Mahābhārata",
+  "devanagari": "महाभारत",
+  "aliases": [
+   "Mahabharata",
+   "Jaya",
+   "Bhārata"
+  ]
+ },
+ {
+  "id": "text:bhagavad-gita",
+  "type": "text",
+  "name": "Bhagavad Gītā",
+  "owner": "epic",
+  "iast": "Bhagavadgītā",
+  "devanagari": "भगवद्गीता",
+  "aliases": [
+   "Gita",
+   "Bhagavad Gita"
+  ]
+ },
+ {
+  "id": "text:harivamsha",
+  "type": "text",
+  "name": "Harivaṃśa",
+  "owner": "epic",
+  "iast": "Harivaṃśa",
+  "devanagari": "हरिवंश",
+  "aliases": [
+   "Harivamsa"
+  ]
+ },
+ {
+  "id": "text:ramopakhyana",
+  "type": "text",
+  "name": "Rāmopākhyāna (Mahābhārata)",
+  "owner": "epic",
+  "iast": "Rāmopākhyāna",
+  "devanagari": "रामोपाख्यान"
+ },
+ {
+  "id": "char:rama",
+  "type": "character",
+  "name": "Rāma",
+  "owner": "epic",
+  "iast": "Rāma",
+  "devanagari": "राम",
+  "aliases": [
+   "Ram",
+   "Ramachandra",
+   "Raghava",
+   "Dasharathi"
+  ]
+ },
+ {
+  "id": "char:sita",
+  "type": "character",
+  "name": "Sītā",
+  "owner": "epic",
+  "iast": "Sītā",
+  "devanagari": "सीता",
+  "aliases": [
+   "Sita",
+   "Janaki",
+   "Vaidehi",
+   "Maithili"
+  ]
+ },
+ {
+  "id": "char:lakshmana",
+  "type": "character",
+  "name": "Lakṣmaṇa",
+  "owner": "epic",
+  "iast": "Lakṣmaṇa",
+  "devanagari": "लक्ष्मण",
+  "aliases": [
+   "Lakshman"
+  ]
+ },
+ {
+  "id": "char:bharata-ramayana",
+  "type": "character",
+  "name": "Bharata (brother of Rāma)",
+  "owner": "epic",
+  "iast": "Bharata",
+  "devanagari": "भरत"
+ },
+ {
+  "id": "char:shatrughna",
+  "type": "character",
+  "name": "Śatrughna",
+  "owner": "epic",
+  "iast": "Śatrughna",
+  "devanagari": "शत्रुघ्न"
+ },
+ {
+  "id": "char:hanuman",
+  "type": "character",
+  "name": "Hanumān",
+  "owner": "epic",
+  "iast": "Hanumat",
+  "devanagari": "हनुमान्",
+  "aliases": [
+   "Hanuman",
+   "Anjaneya",
+   "Maruti",
+   "Bajrangbali",
+   "Hanumantha"
+  ]
+ },
+ {
+  "id": "char:ravana",
+  "type": "character",
+  "name": "Rāvaṇa",
+  "owner": "epic",
+  "iast": "Rāvaṇa",
+  "devanagari": "रावण",
+  "aliases": [
+   "Ravan",
+   "Dashanana",
+   "Lankeshvara"
+  ]
+ },
+ {
+  "id": "char:vibhishana",
+  "type": "character",
+  "name": "Vibhīṣaṇa",
+  "owner": "epic",
+  "iast": "Vibhīṣaṇa",
+  "devanagari": "विभीषण"
+ },
+ {
+  "id": "char:sugriva",
+  "type": "character",
+  "name": "Sugrīva",
+  "owner": "epic",
+  "iast": "Sugrīva",
+  "devanagari": "सुग्रीव"
+ },
+ {
+  "id": "char:vali",
+  "type": "character",
+  "name": "Vālin",
+  "owner": "epic",
+  "iast": "Vālin",
+  "devanagari": "वालि",
+  "aliases": [
+   "Vali",
+   "Bali (vānara)"
+  ]
+ },
+ {
+  "id": "char:jatayu",
+  "type": "character",
+  "name": "Jaṭāyu",
+  "owner": "epic",
+  "iast": "Jaṭāyu",
+  "devanagari": "जटायु"
+ },
+ {
+  "id": "char:dasharatha",
+  "type": "character",
+  "name": "Daśaratha",
+  "owner": "epic",
+  "iast": "Daśaratha",
+  "devanagari": "दशरथ"
+ },
+ {
+  "id": "char:kaikeyi",
+  "type": "character",
+  "name": "Kaikeyī",
+  "owner": "epic",
+  "iast": "Kaikeyī",
+  "devanagari": "कैकेयी"
+ },
+ {
+  "id": "char:kausalya",
+  "type": "character",
+  "name": "Kausalyā",
+  "owner": "epic",
+  "iast": "Kausalyā",
+  "devanagari": "कौसल्या"
+ },
+ {
+  "id": "char:janaka",
+  "type": "character",
+  "name": "Janaka (father of Sītā)",
+  "owner": "epic",
+  "iast": "Janaka",
+  "devanagari": "जनक",
+  "aliases": [
+   "Sīradhvaja Janaka"
+  ]
+ },
+ {
+  "id": "char:valmiki",
+  "type": "character",
+  "name": "Vālmīki",
+  "owner": "epic",
+  "iast": "Vālmīki",
+  "devanagari": "वाल्मीकि"
+ },
+ {
+  "id": "char:kumbhakarna",
+  "type": "character",
+  "name": "Kumbhakarṇa",
+  "owner": "epic",
+  "iast": "Kumbhakarṇa",
+  "devanagari": "कुम्भकर्ण"
+ },
+ {
+  "id": "char:indrajit",
+  "type": "character",
+  "name": "Indrajit",
+  "owner": "epic",
+  "iast": "Indrajit",
+  "devanagari": "इन्द्रजित्",
+  "aliases": [
+   "Meghanāda"
+  ]
+ },
+ {
+  "id": "char:shurpanakha",
+  "type": "character",
+  "name": "Śūrpaṇakhā",
+  "owner": "epic",
+  "iast": "Śūrpaṇakhā",
+  "devanagari": "शूर्पणखा"
+ },
+ {
+  "id": "char:ahalya",
+  "type": "character",
+  "name": "Ahalyā",
+  "owner": "epic",
+  "iast": "Ahalyā",
+  "devanagari": "अहल्या"
+ },
+ {
+  "id": "char:shabari",
+  "type": "character",
+  "name": "Śabarī",
+  "owner": "epic",
+  "iast": "Śabarī",
+  "devanagari": "शबरी"
+ },
+ {
+  "id": "char:lava",
+  "type": "character",
+  "name": "Lava",
+  "owner": "epic",
+  "iast": "Lava",
+  "devanagari": "लव"
+ },
+ {
+  "id": "char:kusha",
+  "type": "character",
+  "name": "Kuśa",
+  "owner": "epic",
+  "iast": "Kuśa",
+  "devanagari": "कुश"
+ },
+ {
+  "id": "char:krishna",
+  "type": "character",
+  "name": "Kṛṣṇa",
+  "owner": "epic",
+  "iast": "Kṛṣṇa",
+  "devanagari": "कृष्ण",
+  "aliases": [
+   "Krishna",
+   "Vāsudeva",
+   "Govinda",
+   "Keśava",
+   "Mādhava",
+   "Kanhaiya",
+   "Kannan (Tamil)"
+  ]
+ },
+ {
+  "id": "char:vyasa",
+  "type": "character",
+  "name": "Vyāsa",
+  "owner": "epic",
+  "iast": "Vyāsa",
+  "devanagari": "व्यास",
+  "aliases": [
+   "Kṛṣṇa Dvaipāyana",
+   "Veda Vyasa"
+  ]
+ },
+ {
+  "id": "char:bhishma",
+  "type": "character",
+  "name": "Bhīṣma",
+  "owner": "epic",
+  "iast": "Bhīṣma",
+  "devanagari": "भीष्म",
+  "aliases": [
+   "Devavrata",
+   "Gāṅgeya"
+  ]
+ },
+ {
+  "id": "char:yudhishthira",
+  "type": "character",
+  "name": "Yudhiṣṭhira",
+  "owner": "epic",
+  "iast": "Yudhiṣṭhira",
+  "devanagari": "युधिष्ठिर",
+  "aliases": [
+   "Dharmarāja"
+  ]
+ },
+ {
+  "id": "char:bhima",
+  "type": "character",
+  "name": "Bhīma",
+  "owner": "epic",
+  "iast": "Bhīmasena",
+  "devanagari": "भीम",
+  "aliases": [
+   "Bhimasena",
+   "Vṛkodara"
+  ]
+ },
+ {
+  "id": "char:arjuna",
+  "type": "character",
+  "name": "Arjuna",
+  "owner": "epic",
+  "iast": "Arjuna",
+  "devanagari": "अर्जुन",
+  "aliases": [
+   "Pārtha",
+   "Dhanañjaya",
+   "Savyasācin"
+  ]
+ },
+ {
+  "id": "char:nakula",
+  "type": "character",
+  "name": "Nakula",
+  "owner": "epic",
+  "iast": "Nakula",
+  "devanagari": "नकुल"
+ },
+ {
+  "id": "char:sahadeva",
+  "type": "character",
+  "name": "Sahadeva",
+  "owner": "epic",
+  "iast": "Sahadeva",
+  "devanagari": "सहदेव"
+ },
+ {
+  "id": "char:draupadi",
+  "type": "character",
+  "name": "Draupadī",
+  "owner": "epic",
+  "iast": "Draupadī",
+  "devanagari": "द्रौपदी",
+  "aliases": [
+   "Pāñcālī",
+   "Kṛṣṇā",
+   "Yājñasenī"
+  ]
+ },
+ {
+  "id": "char:karna",
+  "type": "character",
+  "name": "Karṇa",
+  "owner": "epic",
+  "iast": "Karṇa",
+  "devanagari": "कर्ण",
+  "aliases": [
+   "Rādheya",
+   "Vasuṣeṇa"
+  ]
+ },
+ {
+  "id": "char:duryodhana",
+  "type": "character",
+  "name": "Duryodhana",
+  "owner": "epic",
+  "iast": "Duryodhana",
+  "devanagari": "दुर्योधन",
+  "aliases": [
+   "Suyodhana"
+  ]
+ },
+ {
+  "id": "char:duhshasana",
+  "type": "character",
+  "name": "Duḥśāsana",
+  "owner": "epic",
+  "iast": "Duḥśāsana",
+  "devanagari": "दुःशासन",
+  "aliases": [
+   "Dushasana"
+  ]
+ },
+ {
+  "id": "char:drona",
+  "type": "character",
+  "name": "Droṇa",
+  "owner": "epic",
+  "iast": "Droṇa",
+  "devanagari": "द्रोण",
+  "aliases": [
+   "Dronacharya"
+  ]
+ },
+ {
+  "id": "char:ashvatthama",
+  "type": "character",
+  "name": "Aśvatthāman",
+  "owner": "epic",
+  "iast": "Aśvatthāman",
+  "devanagari": "अश्वत्थामा",
+  "aliases": [
+   "Ashwatthama"
+  ]
+ },
+ {
+  "id": "char:vidura",
+  "type": "character",
+  "name": "Vidura",
+  "owner": "epic",
+  "iast": "Vidura",
+  "devanagari": "विदुर"
+ },
+ {
+  "id": "char:kunti",
+  "type": "character",
+  "name": "Kuntī",
+  "owner": "epic",
+  "iast": "Kuntī",
+  "devanagari": "कुन्ती",
+  "aliases": [
+   "Pṛthā"
+  ]
+ },
+ {
+  "id": "char:gandhari",
+  "type": "character",
+  "name": "Gāndhārī",
+  "owner": "epic",
+  "iast": "Gāndhārī",
+  "devanagari": "गान्धारी"
+ },
+ {
+  "id": "char:dhritarashtra",
+  "type": "character",
+  "name": "Dhṛtarāṣṭra",
+  "owner": "epic",
+  "iast": "Dhṛtarāṣṭra",
+  "devanagari": "धृतराष्ट्र"
+ },
+ {
+  "id": "char:pandu",
+  "type": "character",
+  "name": "Pāṇḍu",
+  "owner": "epic",
+  "iast": "Pāṇḍu",
+  "devanagari": "पाण्डु"
+ },
+ {
+  "id": "char:madri",
+  "type": "character",
+  "name": "Mādrī",
+  "owner": "epic",
+  "iast": "Mādrī",
+  "devanagari": "माद्री"
+ },
+ {
+  "id": "char:shakuni",
+  "type": "character",
+  "name": "Śakuni",
+  "owner": "epic",
+  "iast": "Śakuni",
+  "devanagari": "शकुनि"
+ },
+ {
+  "id": "char:balarama",
+  "type": "character",
+  "name": "Balarāma",
+  "owner": "epic",
+  "iast": "Balarāma",
+  "devanagari": "बलराम",
+  "aliases": [
+   "Baladeva",
+   "Saṅkarṣaṇa",
+   "Halāyudha"
+  ]
+ },
+ {
+  "id": "char:abhimanyu",
+  "type": "character",
+  "name": "Abhimanyu",
+  "owner": "epic",
+  "iast": "Abhimanyu",
+  "devanagari": "अभिमन्यु"
+ },
+ {
+  "id": "char:subhadra",
+  "type": "character",
+  "name": "Subhadrā",
+  "owner": "epic",
+  "iast": "Subhadrā",
+  "devanagari": "सुभद्रा"
+ },
+ {
+  "id": "char:shantanu",
+  "type": "character",
+  "name": "Śantanu",
+  "owner": "epic",
+  "iast": "Śantanu",
+  "devanagari": "शन्तनु"
+ },
+ {
+  "id": "char:satyavati",
+  "type": "character",
+  "name": "Satyavatī",
+  "owner": "epic",
+  "iast": "Satyavatī",
+  "devanagari": "सत्यवती"
+ },
+ {
+  "id": "char:drupada",
+  "type": "character",
+  "name": "Drupada",
+  "owner": "epic",
+  "iast": "Drupada",
+  "devanagari": "द्रुपद"
+ },
+ {
+  "id": "char:shikhandi",
+  "type": "character",
+  "name": "Śikhaṇḍin",
+  "owner": "epic",
+  "iast": "Śikhaṇḍin",
+  "devanagari": "शिखण्डी"
+ },
+ {
+  "id": "char:ekalavya",
+  "type": "character",
+  "name": "Ekalavya",
+  "owner": "epic",
+  "iast": "Ekalavya",
+  "devanagari": "एकलव्य"
+ },
+ {
+  "id": "char:jarasandha",
+  "type": "character",
+  "name": "Jarāsandha",
+  "owner": "epic",
+  "iast": "Jarāsandha",
+  "devanagari": "जरासन्ध"
+ },
+ {
+  "id": "char:shishupala",
+  "type": "character",
+  "name": "Śiśupāla",
+  "owner": "epic",
+  "iast": "Śiśupāla",
+  "devanagari": "शिशुपाल"
+ },
+ {
+  "id": "char:sanjaya",
+  "type": "character",
+  "name": "Sañjaya",
+  "owner": "epic",
+  "iast": "Sañjaya",
+  "devanagari": "सञ्जय"
+ },
+ {
+  "id": "char:ghatotkacha",
+  "type": "character",
+  "name": "Ghaṭotkaca",
+  "owner": "epic",
+  "iast": "Ghaṭotkaca",
+  "devanagari": "घटोत्कच"
+ },
+ {
+  "id": "char:parikshit",
+  "type": "character",
+  "name": "Parīkṣit",
+  "owner": "epic",
+  "iast": "Parīkṣit",
+  "devanagari": "परीक्षित्"
+ },
+ {
+  "id": "char:janamejaya",
+  "type": "character",
+  "name": "Janamejaya",
+  "owner": "epic",
+  "iast": "Janamejaya",
+  "devanagari": "जनमेजय"
+ },
+ {
+  "id": "char:vaishampayana",
+  "type": "character",
+  "name": "Vaiśampāyana",
+  "owner": "epic",
+  "iast": "Vaiśampāyana",
+  "devanagari": "वैशम्पायन"
+ },
+ {
+  "id": "char:devaki",
+  "type": "character",
+  "name": "Devakī",
+  "owner": "epic",
+  "iast": "Devakī",
+  "devanagari": "देवकी"
+ },
+ {
+  "id": "char:vasudeva-father",
+  "type": "character",
+  "name": "Vasudeva (father of Kṛṣṇa)",
+  "owner": "epic",
+  "iast": "Vasudeva Ānakadundubhi",
+  "devanagari": "वसुदेव",
+  "aliases": [
+   "Anakadundubhi"
+  ]
+ },
+ {
+  "id": "char:nanda",
+  "type": "character",
+  "name": "Nanda",
+  "owner": "epic",
+  "iast": "Nanda",
+  "devanagari": "नन्द"
+ },
+ {
+  "id": "char:yashoda",
+  "type": "character",
+  "name": "Yaśodā",
+  "owner": "epic",
+  "iast": "Yaśodā",
+  "devanagari": "यशोदा"
+ },
+ {
+  "id": "char:kamsa",
+  "type": "character",
+  "name": "Kaṃsa",
+  "owner": "epic",
+  "iast": "Kaṃsa",
+  "devanagari": "कंस",
+  "aliases": [
+   "Kansa"
+  ]
+ },
+ {
+  "id": "char:rukmini",
+  "type": "character",
+  "name": "Rukmiṇī",
+  "owner": "epic",
+  "iast": "Rukmiṇī",
+  "devanagari": "रुक्मिणी"
+ },
+ {
+  "id": "char:pradyumna",
+  "type": "character",
+  "name": "Pradyumna",
+  "owner": "epic",
+  "iast": "Pradyumna",
+  "devanagari": "प्रद्युम्न"
+ },
+ {
+  "id": "char:nala",
+  "type": "character",
+  "name": "Nala",
+  "owner": "epic",
+  "iast": "Nala",
+  "devanagari": "नल"
+ },
+ {
+  "id": "char:damayanti",
+  "type": "character",
+  "name": "Damayantī",
+  "owner": "epic",
+  "iast": "Damayantī",
+  "devanagari": "दमयन्ती"
+ },
+ {
+  "id": "char:savitri",
+  "type": "character",
+  "name": "Sāvitrī",
+  "owner": "epic",
+  "iast": "Sāvitrī",
+  "devanagari": "सावित्री"
+ },
+ {
+  "id": "char:shakuntala",
+  "type": "character",
+  "name": "Śakuntalā",
+  "owner": "epic",
+  "iast": "Śakuntalā",
+  "devanagari": "शकुन्तला"
+ },
+ {
+  "id": "concept:dharma",
+  "type": "concept",
+  "name": "Dharma",
+  "owner": "epic",
+  "iast": "dharma",
+  "devanagari": "धर्म"
+ },
+ {
+  "id": "narr:rama-exile",
+  "type": "narrative",
+  "name": "Rāma’s exile",
+  "owner": "epic",
+  "iast": "vanavāsa",
+  "devanagari": "वनवास"
+ },
+ {
+  "id": "narr:sita-svayamvara",
+  "type": "narrative",
+  "name": "The breaking of Śiva’s bow and Sītā’s marriage",
+  "owner": "epic"
+ },
+ {
+  "id": "narr:abduction-of-sita",
+  "type": "narrative",
+  "name": "The abduction of Sītā",
+  "owner": "epic",
+  "iast": "Sītāharaṇa",
+  "devanagari": "सीताहरण"
+ },
+ {
+  "id": "narr:hanuman-lanka",
+  "type": "narrative",
+  "name": "Hanumān’s leap and search in Laṅkā",
+  "owner": "epic"
+ },
+ {
+  "id": "narr:setu-bandha",
+  "type": "narrative",
+  "name": "The building of the bridge to Laṅkā",
+  "owner": "epic",
+  "iast": "Setubandha",
+  "devanagari": "सेतुबन्ध",
+  "aliases": [
+   "Rama Setu"
+  ]
+ },
+ {
+  "id": "narr:lanka-war",
+  "type": "narrative",
+  "name": "The war in Laṅkā and the death of Rāvaṇa",
+  "owner": "epic"
+ },
+ {
+  "id": "narr:sita-ordeal",
+  "type": "narrative",
+  "name": "Sītā’s ordeal by fire",
+  "owner": "epic",
+  "iast": "Agniparīkṣā",
+  "devanagari": "अग्निपरीक्षा"
+ },
+ {
+  "id": "narr:sita-banishment",
+  "type": "narrative",
+  "name": "The banishment of Sītā and her return to the earth",
+  "owner": "epic"
+ },
+ {
+  "id": "narr:dice-game",
+  "type": "narrative",
+  "name": "The dice game",
+  "owner": "epic",
+  "iast": "dyūta",
+  "devanagari": "द्यूत"
+ },
+ {
+  "id": "narr:draupadi-humiliation",
+  "type": "narrative",
+  "name": "The humiliation of Draupadī in the assembly hall",
+  "owner": "epic"
+ },
+ {
+  "id": "narr:draupadi-svayamvara",
+  "type": "narrative",
+  "name": "Draupadī’s svayaṃvara",
+  "owner": "epic"
+ },
+ {
+  "id": "narr:house-of-lac",
+  "type": "narrative",
+  "name": "The house of lac",
+  "owner": "epic",
+  "iast": "Lākṣāgṛha",
+  "devanagari": "लाक्षागृह"
+ },
+ {
+  "id": "narr:kurukshetra-war",
+  "type": "narrative",
+  "name": "The Kurukṣetra war",
+  "owner": "epic",
+  "devanagari": "कुरुक्षेत्र युद्ध"
+ },
+ {
+  "id": "narr:gita-discourse",
+  "type": "narrative",
+  "name": "Kṛṣṇa’s discourse to Arjuna (the Gītā)",
+  "owner": "epic"
+ },
+ {
+  "id": "narr:destruction-of-yadavas",
+  "type": "narrative",
+  "name": "The destruction of the Yādavas and Kṛṣṇa’s death",
+  "owner": "epic",
+  "iast": "Mausala",
+  "devanagari": "मौसल"
+ },
+ {
+  "id": "narr:krishna-birth",
+  "type": "narrative",
+  "name": "The birth of Kṛṣṇa",
+  "owner": "epic",
+  "iast": "Kṛṣṇajanma",
+  "devanagari": "कृष्णजन्म"
+ },
+ {
+  "id": "narr:govardhana",
+  "type": "narrative",
+  "name": "Kṛṣṇa lifts Mount Govardhana",
+  "owner": "epic",
+  "devanagari": "गोवर्धन"
+ },
+ {
+  "id": "narr:kaliya",
+  "type": "narrative",
+  "name": "Kṛṣṇa subdues the serpent Kāliya",
+  "owner": "epic",
+  "devanagari": "कालिय"
+ },
+ {
+  "id": "narr:kamsa-vadha",
+  "type": "narrative",
+  "name": "The killing of Kaṃsa",
+  "owner": "epic",
+  "iast": "Kaṃsavadha",
+  "devanagari": "कंसवध"
+ },
+ {
+  "id": "narr:nala-damayanti",
+  "type": "narrative",
+  "name": "Nala and Damayantī",
+  "owner": "epic"
+ },
+ {
+  "id": "narr:savitri-satyavan",
+  "type": "narrative",
+  "name": "Sāvitrī and Satyavān",
+  "owner": "epic"
+ },
+ {
+  "id": "lin:kuru",
+  "type": "lineage",
+  "name": "The Kuru lineage",
+  "owner": "epic",
+  "iast": "Kuru",
+  "devanagari": "कुरु"
+ },
+ {
+  "id": "lin:pandavas",
+  "type": "lineage",
+  "name": "The Pāṇḍavas",
+  "owner": "epic",
+  "iast": "Pāṇḍava",
+  "devanagari": "पाण्डव"
+ },
+ {
+  "id": "lin:kauravas",
+  "type": "lineage",
+  "name": "The Kauravas",
+  "owner": "epic",
+  "iast": "Kaurava",
+  "devanagari": "कौरव"
+ },
+ {
+  "id": "lin:yadava",
+  "type": "lineage",
+  "name": "The Yādavas / Vṛṣṇis",
+  "owner": "epic",
+  "iast": "Yādava",
+  "devanagari": "यादव",
+  "aliases": [
+   "Vrishni",
+   "Vṛṣṇi"
+  ]
+ },
+ {
+  "id": "place:ayodhya",
+  "type": "place",
+  "name": "Ayodhyā",
+  "owner": "epic",
+  "iast": "Ayodhyā",
+  "devanagari": "अयोध्या",
+  "aliases": [
+   "Saketa"
+  ]
+ },
+ {
+  "id": "place:mithila",
+  "type": "place",
+  "name": "Mithilā",
+  "owner": "epic",
+  "iast": "Mithilā",
+  "devanagari": "मिथिला",
+  "aliases": [
+   "Videha",
+   "Janakpur"
+  ]
+ },
+ {
+  "id": "place:lanka-narrative",
+  "type": "place",
+  "name": "Laṅkā (in the Rāmāyaṇa)",
+  "owner": "epic",
+  "iast": "Laṅkā",
+  "devanagari": "लङ्का"
+ },
+ {
+  "id": "place:kishkindha",
+  "type": "place",
+  "name": "Kiṣkindhā",
+  "owner": "epic",
+  "iast": "Kiṣkindhā",
+  "devanagari": "किष्किन्धा"
+ },
+ {
+  "id": "place:chitrakuta",
+  "type": "place",
+  "name": "Citrakūṭa",
+  "owner": "epic",
+  "iast": "Citrakūṭa",
+  "devanagari": "चित्रकूट"
+ },
+ {
+  "id": "place:panchavati",
+  "type": "place",
+  "name": "Pañcavaṭī",
+  "owner": "epic",
+  "iast": "Pañcavaṭī",
+  "devanagari": "पञ्चवटी"
+ },
+ {
+  "id": "place:dandaka",
+  "type": "place",
+  "name": "Daṇḍaka forest",
+  "owner": "epic",
+  "iast": "Daṇḍakāraṇya",
+  "devanagari": "दण्डकारण्य"
+ },
+ {
+  "id": "place:hastinapura",
+  "type": "place",
+  "name": "Hastināpura",
+  "owner": "epic",
+  "iast": "Hastināpura",
+  "devanagari": "हस्तिनापुर"
+ },
+ {
+  "id": "place:indraprastha",
+  "type": "place",
+  "name": "Indraprastha",
+  "owner": "epic",
+  "iast": "Indraprastha",
+  "devanagari": "इन्द्रप्रस्थ"
+ },
+ {
+  "id": "place:kurukshetra",
+  "type": "place",
+  "name": "Kurukṣetra",
+  "owner": "epic",
+  "iast": "Kurukṣetra",
+  "devanagari": "कुरुक्षेत्र"
+ },
+ {
+  "id": "place:dvaraka",
+  "type": "place",
+  "name": "Dvārakā",
+  "owner": "epic",
+  "iast": "Dvārakā",
+  "devanagari": "द्वारका",
+  "aliases": [
+   "Dwarka",
+   "Dvaravati"
+  ]
+ },
+ {
+  "id": "place:mathura",
+  "type": "place",
+  "name": "Mathurā",
+  "owner": "epic",
+  "iast": "Mathurā",
+  "devanagari": "मथुरा",
+  "aliases": [
+   "Methora (Greek)"
+  ]
+ },
+ {
+  "id": "place:vrindavan",
+  "type": "place",
+  "name": "Vṛndāvana",
+  "owner": "epic",
+  "iast": "Vṛndāvana",
+  "devanagari": "वृन्दावन",
+  "aliases": [
+   "Vrindavan",
+   "Brindaban"
+  ]
+ },
+ {
+  "id": "place:naimisha",
+  "type": "place",
+  "name": "Naimiṣa forest",
+  "owner": "epic",
+  "iast": "Naimiṣāraṇya",
+  "devanagari": "नैमिषारण्य"
+ },
+ {
+  "id": "col:mahapuranas",
+  "type": "collection",
+  "name": "Mahāpurāṇas",
+  "owner": "purana",
+  "iast": "Mahāpurāṇa",
+  "devanagari": "महापुराण",
+  "aliases": [
+   "Eighteen Puranas"
+  ]
+ },
+ {
+  "id": "col:upapuranas",
+  "type": "collection",
+  "name": "Upapurāṇas",
+  "owner": "purana",
+  "iast": "Upapurāṇa",
+  "devanagari": "उपपुराण"
+ },
+ {
+  "id": "col:dharmashastra",
+  "type": "collection",
+  "name": "Dharmaśāstra",
+  "owner": "purana",
+  "iast": "Dharmaśāstra",
+  "devanagari": "धर्मशास्त्र",
+  "aliases": [
+   "Smṛti"
+  ]
+ },
+ {
+  "id": "text:vishnu-purana",
+  "type": "text",
+  "name": "Viṣṇu Purāṇa",
+  "owner": "purana",
+  "iast": "Viṣṇupurāṇa",
+  "devanagari": "विष्णुपुराण"
+ },
+ {
+  "id": "text:bhagavata-purana",
+  "type": "text",
+  "name": "Bhāgavata Purāṇa",
+  "owner": "purana",
+  "iast": "Bhāgavatapurāṇa",
+  "devanagari": "भागवतपुराण",
+  "aliases": [
+   "Srimad Bhagavatam"
+  ]
+ },
+ {
+  "id": "text:shiva-purana",
+  "type": "text",
+  "name": "Śiva Purāṇa",
+  "owner": "purana",
+  "iast": "Śivapurāṇa",
+  "devanagari": "शिवपुराण"
+ },
+ {
+  "id": "text:vayu-purana",
+  "type": "text",
+  "name": "Vāyu Purāṇa",
+  "owner": "purana",
+  "iast": "Vāyupurāṇa",
+  "devanagari": "वायुपुराण"
+ },
+ {
+  "id": "text:linga-purana",
+  "type": "text",
+  "name": "Liṅga Purāṇa",
+  "owner": "purana",
+  "iast": "Liṅgapurāṇa",
+  "devanagari": "लिङ्गपुराण"
+ },
+ {
+  "id": "text:skanda-purana",
+  "type": "text",
+  "name": "Skanda Purāṇa",
+  "owner": "purana",
+  "iast": "Skandapurāṇa",
+  "devanagari": "स्कन्दपुराण"
+ },
+ {
+  "id": "text:markandeya-purana",
+  "type": "text",
+  "name": "Mārkaṇḍeya Purāṇa",
+  "owner": "purana",
+  "iast": "Mārkaṇḍeyapurāṇa",
+  "devanagari": "मार्कण्डेयपुराण"
+ },
+ {
+  "id": "text:devi-mahatmya",
+  "type": "text",
+  "name": "Devī Māhātmya",
+  "owner": "purana",
+  "iast": "Devīmāhātmya",
+  "devanagari": "देवीमाहात्म्य",
+  "aliases": [
+   "Durga Saptashati",
+   "Chandi Path"
+  ]
+ },
+ {
+  "id": "text:brahmanda-purana",
+  "type": "text",
+  "name": "Brahmāṇḍa Purāṇa",
+  "owner": "purana",
+  "iast": "Brahmāṇḍapurāṇa",
+  "devanagari": "ब्रह्माण्डपुराण"
+ },
+ {
+  "id": "text:matsya-purana",
+  "type": "text",
+  "name": "Matsya Purāṇa",
+  "owner": "purana",
+  "iast": "Matsyapurāṇa",
+  "devanagari": "मत्स्यपुराण"
+ },
+ {
+  "id": "text:kurma-purana",
+  "type": "text",
+  "name": "Kūrma Purāṇa",
+  "owner": "purana",
+  "iast": "Kūrmapurāṇa",
+  "devanagari": "कूर्मपुराण"
+ },
+ {
+  "id": "text:vamana-purana",
+  "type": "text",
+  "name": "Vāmana Purāṇa",
+  "owner": "purana",
+  "iast": "Vāmanapurāṇa",
+  "devanagari": "वामनपुराण"
+ },
+ {
+  "id": "text:varaha-purana",
+  "type": "text",
+  "name": "Varāha Purāṇa",
+  "owner": "purana",
+  "iast": "Varāhapurāṇa",
+  "devanagari": "वराहपुराण"
+ },
+ {
+  "id": "text:garuda-purana",
+  "type": "text",
+  "name": "Garuḍa Purāṇa",
+  "owner": "purana",
+  "iast": "Garuḍapurāṇa",
+  "devanagari": "गरुडपुराण"
+ },
+ {
+  "id": "text:padma-purana",
+  "type": "text",
+  "name": "Padma Purāṇa",
+  "owner": "purana",
+  "iast": "Padmapurāṇa",
+  "devanagari": "पद्मपुराण"
+ },
+ {
+  "id": "text:agni-purana",
+  "type": "text",
+  "name": "Agni Purāṇa",
+  "owner": "purana",
+  "iast": "Agnipurāṇa",
+  "devanagari": "अग्निपुराण"
+ },
+ {
+  "id": "text:brahma-purana",
+  "type": "text",
+  "name": "Brahma Purāṇa",
+  "owner": "purana",
+  "iast": "Brahmapurāṇa",
+  "devanagari": "ब्रह्मपुराण"
+ },
+ {
+  "id": "text:brahmavaivarta-purana",
+  "type": "text",
+  "name": "Brahmavaivarta Purāṇa",
+  "owner": "purana",
+  "iast": "Brahmavaivartapurāṇa",
+  "devanagari": "ब्रह्मवैवर्तपुराण"
+ },
+ {
+  "id": "text:narada-purana",
+  "type": "text",
+  "name": "Nārada Purāṇa",
+  "owner": "purana",
+  "iast": "Nāradapurāṇa",
+  "devanagari": "नारदपुराण"
+ },
+ {
+  "id": "text:bhavishya-purana",
+  "type": "text",
+  "name": "Bhaviṣya Purāṇa",
+  "owner": "purana",
+  "iast": "Bhaviṣyapurāṇa",
+  "devanagari": "भविष्यपुराण"
+ },
+ {
+  "id": "text:devi-bhagavata-purana",
+  "type": "text",
+  "name": "Devī Bhāgavata Purāṇa",
+  "owner": "purana",
+  "iast": "Devībhāgavatapurāṇa",
+  "devanagari": "देवीभागवतपुराण"
+ },
+ {
+  "id": "text:manusmriti",
+  "type": "text",
+  "name": "Manusmṛti",
+  "owner": "purana",
+  "iast": "Manusmṛti",
+  "devanagari": "मनुस्मृति",
+  "aliases": [
+   "Mānava Dharmaśāstra",
+   "Laws of Manu"
+  ]
+ },
+ {
+  "id": "deity:vishnu",
+  "type": "deity",
+  "name": "Viṣṇu",
+  "owner": "purana",
+  "iast": "Viṣṇu",
+  "devanagari": "विष्णु",
+  "aliases": [
+   "Vishnu",
+   "Nārāyaṇa",
+   "Hari"
+  ]
+ },
+ {
+  "id": "deity:shiva",
+  "type": "deity",
+  "name": "Śiva",
+  "owner": "purana",
+  "iast": "Śiva",
+  "devanagari": "शिव",
+  "aliases": [
+   "Shiva",
+   "Mahādeva",
+   "Maheśvara",
+   "Śaṅkara",
+   "Paśupati"
+  ]
+ },
+ {
+  "id": "deity:brahma",
+  "type": "deity",
+  "name": "Brahmā",
+  "owner": "purana",
+  "iast": "Brahmā",
+  "devanagari": "ब्रह्मा",
+  "aliases": [
+   "Brahma (creator)"
+  ]
+ },
+ {
+  "id": "deity:devi",
+  "type": "deity",
+  "name": "Devī (the Goddess)",
+  "owner": "purana",
+  "iast": "Devī",
+  "devanagari": "देवी",
+  "aliases": [
+   "Mahādevī",
+   "Śakti"
+  ]
+ },
+ {
+  "id": "deity:durga",
+  "type": "deity",
+  "name": "Durgā",
+  "owner": "purana",
+  "iast": "Durgā",
+  "devanagari": "दुर्गा",
+  "aliases": [
+   "Mahiṣāsuramardinī",
+   "Caṇḍikā"
+  ]
+ },
+ {
+  "id": "deity:parvati",
+  "type": "deity",
+  "name": "Pārvatī",
+  "owner": "purana",
+  "iast": "Pārvatī",
+  "devanagari": "पार्वती",
+  "aliases": [
+   "Umā",
+   "Gaurī"
+  ]
+ },
+ {
+  "id": "deity:lakshmi",
+  "type": "deity",
+  "name": "Lakṣmī",
+  "owner": "purana",
+  "iast": "Lakṣmī",
+  "devanagari": "लक्ष्मी",
+  "aliases": [
+   "Śrī"
+  ]
+ },
+ {
+  "id": "deity:kali",
+  "type": "deity",
+  "name": "Kālī",
+  "owner": "purana",
+  "iast": "Kālī",
+  "devanagari": "काली"
+ },
+ {
+  "id": "deity:ganesha",
+  "type": "deity",
+  "name": "Gaṇeśa",
+  "owner": "purana",
+  "iast": "Gaṇeśa",
+  "devanagari": "गणेश",
+  "aliases": [
+   "Ganapati",
+   "Vināyaka",
+   "Pillaiyar (Tamil)"
+  ]
+ },
+ {
+  "id": "deity:skanda",
+  "type": "deity",
+  "name": "Skanda",
+  "owner": "purana",
+  "iast": "Skanda",
+  "devanagari": "स्कन्द",
+  "aliases": [
+   "Kārttikeya",
+   "Kumāra",
+   "Subrahmaṇya",
+   "Mahāsena"
+  ]
+ },
+ {
+  "id": "deity:ganga",
+  "type": "deity",
+  "name": "Gaṅgā",
+  "owner": "purana",
+  "iast": "Gaṅgā",
+  "devanagari": "गङ्गा",
+  "aliases": [
+   "Ganga"
+  ]
+ },
+ {
+  "id": "deity:narayana",
+  "type": "deity",
+  "name": "Nārāyaṇa",
+  "owner": "purana",
+  "iast": "Nārāyaṇa",
+  "devanagari": "नारायण"
+ },
+ {
+  "id": "deity:matsya",
+  "type": "deity",
+  "name": "Matsya",
+  "owner": "purana",
+  "iast": "Matsya",
+  "devanagari": "मत्स्य"
+ },
+ {
+  "id": "deity:kurma",
+  "type": "deity",
+  "name": "Kūrma",
+  "owner": "purana",
+  "iast": "Kūrma",
+  "devanagari": "कूर्म"
+ },
+ {
+  "id": "deity:varaha",
+  "type": "deity",
+  "name": "Varāha",
+  "owner": "purana",
+  "iast": "Varāha",
+  "devanagari": "वराह"
+ },
+ {
+  "id": "deity:narasimha",
+  "type": "deity",
+  "name": "Narasiṃha",
+  "owner": "purana",
+  "iast": "Narasiṃha",
+  "devanagari": "नरसिंह",
+  "aliases": [
+   "Narasimha",
+   "Nrisimha"
+  ]
+ },
+ {
+  "id": "deity:vamana",
+  "type": "deity",
+  "name": "Vāmana",
+  "owner": "purana",
+  "iast": "Vāmana",
+  "devanagari": "वामन",
+  "aliases": [
+   "Trivikrama"
+  ]
+ },
+ {
+  "id": "char:parashurama",
+  "type": "character",
+  "name": "Paraśurāma",
+  "owner": "purana",
+  "iast": "Paraśurāma",
+  "devanagari": "परशुराम",
+  "aliases": [
+   "Bhārgava Rāma"
+  ]
+ },
+ {
+  "id": "char:kalki",
+  "type": "character",
+  "name": "Kalki",
+  "owner": "purana",
+  "iast": "Kalkin",
+  "devanagari": "कल्कि"
+ },
+ {
+  "id": "char:prahlada",
+  "type": "character",
+  "name": "Prahlāda",
+  "owner": "purana",
+  "iast": "Prahlāda",
+  "devanagari": "प्रह्लाद"
+ },
+ {
+  "id": "char:hiranyakashipu",
+  "type": "character",
+  "name": "Hiraṇyakaśipu",
+  "owner": "purana",
+  "iast": "Hiraṇyakaśipu",
+  "devanagari": "हिरण्यकशिपु"
+ },
+ {
+  "id": "char:hiranyaksha",
+  "type": "character",
+  "name": "Hiraṇyākṣa",
+  "owner": "purana",
+  "iast": "Hiraṇyākṣa",
+  "devanagari": "हिरण्याक्ष"
+ },
+ {
+  "id": "char:bali",
+  "type": "character",
+  "name": "Bali (Mahābali)",
+  "owner": "purana",
+  "iast": "Bali",
+  "devanagari": "बलि",
+  "aliases": [
+   "Mahabali",
+   "Maveli (Kerala)"
+  ]
+ },
+ {
+  "id": "char:dhruva",
+  "type": "character",
+  "name": "Dhruva",
+  "owner": "purana",
+  "iast": "Dhruva",
+  "devanagari": "ध्रुव"
+ },
+ {
+  "id": "char:markandeya",
+  "type": "character",
+  "name": "Mārkaṇḍeya",
+  "owner": "purana",
+  "iast": "Mārkaṇḍeya",
+  "devanagari": "मार्कण्डेय"
+ },
+ {
+  "id": "char:narada",
+  "type": "character",
+  "name": "Nārada",
+  "owner": "purana",
+  "iast": "Nārada",
+  "devanagari": "नारद"
+ },
+ {
+  "id": "char:daksha",
+  "type": "character",
+  "name": "Dakṣa",
+  "owner": "purana",
+  "iast": "Dakṣa",
+  "devanagari": "दक्ष"
+ },
+ {
+  "id": "char:sati",
+  "type": "character",
+  "name": "Satī",
+  "owner": "purana",
+  "iast": "Satī",
+  "devanagari": "सती",
+  "aliases": [
+   "Dākṣāyaṇī"
+  ]
+ },
+ {
+  "id": "char:mahishasura",
+  "type": "character",
+  "name": "Mahiṣāsura",
+  "owner": "purana",
+  "iast": "Mahiṣāsura",
+  "devanagari": "महिषासुर"
+ },
+ {
+  "id": "char:manu",
+  "type": "character",
+  "name": "Manu (Vaivasvata)",
+  "owner": "purana",
+  "iast": "Manu Vaivasvata",
+  "devanagari": "मनु",
+  "aliases": [
+   "Satyavrata (Bhāgavata)"
+  ]
+ },
+ {
+  "id": "char:bhagiratha",
+  "type": "character",
+  "name": "Bhagīratha",
+  "owner": "purana",
+  "iast": "Bhagīratha",
+  "devanagari": "भगीरथ"
+ },
+ {
+  "id": "char:sagara",
+  "type": "character",
+  "name": "Sagara",
+  "owner": "purana",
+  "iast": "Sagara",
+  "devanagari": "सगर"
+ },
+ {
+  "id": "char:harishchandra",
+  "type": "character",
+  "name": "Hariścandra",
+  "owner": "purana",
+  "iast": "Hariścandra",
+  "devanagari": "हरिश्चन्द्र"
+ },
+ {
+  "id": "char:yayati",
+  "type": "character",
+  "name": "Yayāti",
+  "owner": "purana",
+  "iast": "Yayāti",
+  "devanagari": "ययाति"
+ },
+ {
+  "id": "char:gajendra",
+  "type": "character",
+  "name": "Gajendra",
+  "owner": "purana",
+  "iast": "Gajendra",
+  "devanagari": "गजेन्द्र"
+ },
+ {
+  "id": "concept:avatara",
+  "type": "concept",
+  "name": "Avatāra",
+  "owner": "purana",
+  "iast": "avatāra",
+  "devanagari": "अवतार",
+  "aliases": [
+   "avatar",
+   "incarnation",
+   "descent"
+  ]
+ },
+ {
+  "id": "concept:yuga",
+  "type": "concept",
+  "name": "Yuga",
+  "owner": "purana",
+  "iast": "yuga",
+  "devanagari": "युग"
+ },
+ {
+  "id": "concept:kalpa",
+  "type": "concept",
+  "name": "Kalpa",
+  "owner": "purana",
+  "iast": "kalpa",
+  "devanagari": "कल्प"
+ },
+ {
+  "id": "concept:pancha-lakshana",
+  "type": "concept",
+  "name": "Pañcalakṣaṇa (five marks of a Purāṇa)",
+  "owner": "purana",
+  "iast": "pañcalakṣaṇa",
+  "devanagari": "पञ्चलक्षण"
+ },
+ {
+  "id": "narr:samudra-manthana",
+  "type": "narrative",
+  "name": "The churning of the ocean",
+  "owner": "purana",
+  "iast": "Samudramanthana",
+  "devanagari": "समुद्रमन्थन",
+  "aliases": [
+   "Kṣīrasāgaramanthana"
+  ]
+ },
+ {
+  "id": "narr:varaha-earth",
+  "type": "narrative",
+  "name": "Varāha raises the Earth",
+  "owner": "purana"
+ },
+ {
+  "id": "narr:narasimha-prahlada",
+  "type": "narrative",
+  "name": "Narasiṃha and Prahlāda",
+  "owner": "purana"
+ },
+ {
+  "id": "narr:vamana-bali",
+  "type": "narrative",
+  "name": "Vāmana and Bali",
+  "owner": "purana"
+ },
+ {
+  "id": "narr:daksha-yajna",
+  "type": "narrative",
+  "name": "The destruction of Dakṣa’s sacrifice",
+  "owner": "purana",
+  "iast": "Dakṣayajña",
+  "devanagari": "दक्षयज्ञ"
+ },
+ {
+  "id": "narr:birth-of-skanda",
+  "type": "narrative",
+  "name": "The birth of Skanda",
+  "owner": "purana"
+ },
+ {
+  "id": "narr:mahishasura-slaying",
+  "type": "narrative",
+  "name": "The Goddess slays Mahiṣāsura",
+  "owner": "purana",
+  "iast": "Mahiṣāsuravadha",
+  "devanagari": "महिषासुरवध"
+ },
+ {
+  "id": "narr:lingodbhava",
+  "type": "narrative",
+  "name": "The appearance of the fiery liṅga (Liṅgodbhava)",
+  "owner": "purana",
+  "iast": "Liṅgodbhava",
+  "devanagari": "लिङ्गोद्भव"
+ },
+ {
+  "id": "narr:gajendra-moksha",
+  "type": "narrative",
+  "name": "The liberation of Gajendra",
+  "owner": "purana",
+  "iast": "Gajendramokṣa",
+  "devanagari": "गजेन्द्रमोक्ष"
+ },
+ {
+  "id": "narr:dhruva",
+  "type": "narrative",
+  "name": "The story of Dhruva",
+  "owner": "purana"
+ },
+ {
+  "id": "narr:descent-of-ganga",
+  "type": "narrative",
+  "name": "The descent of the Gaṅgā",
+  "owner": "purana",
+  "iast": "Gaṅgāvataraṇa",
+  "devanagari": "गङ्गावतरण"
+ },
+ {
+  "id": "narr:matsya-flood",
+  "type": "narrative",
+  "name": "The Matsya avatāra and the flood",
+  "owner": "purana"
+ },
+ {
+  "id": "narr:shakti-pitha-origin",
+  "type": "narrative",
+  "name": "Satī’s body and the origin of the Śakti Pīṭhas",
+  "owner": "purana"
+ },
+ {
+  "id": "lin:suryavamsha",
+  "type": "lineage",
+  "name": "Solar dynasty (Sūryavaṃśa / Ikṣvāku)",
+  "owner": "purana",
+  "iast": "Sūryavaṃśa",
+  "devanagari": "सूर्यवंश",
+  "aliases": [
+   "Ikshvaku",
+   "Raghuvamsha"
+  ]
+ },
+ {
+  "id": "lin:chandravamsha",
+  "type": "lineage",
+  "name": "Lunar dynasty (Candravaṃśa / Aila)",
+  "owner": "purana",
+  "iast": "Candravaṃśa",
+  "devanagari": "चन्द्रवंश",
+  "aliases": [
+   "Somavamsha",
+   "Aila"
+  ]
+ },
+ {
+  "id": "place:kashi",
+  "type": "place",
+  "name": "Kāśī (Vārāṇasī)",
+  "owner": "purana",
+  "iast": "Kāśī",
+  "devanagari": "काशी",
+  "aliases": [
+   "Varanasi",
+   "Benares",
+   "Banaras",
+   "Avimukta"
+  ]
+ },
+ {
+  "id": "place:prayaga",
+  "type": "place",
+  "name": "Prayāga",
+  "owner": "purana",
+  "iast": "Prayāga",
+  "devanagari": "प्रयाग",
+  "aliases": [
+   "Prayagraj",
+   "Allahabad"
+  ]
+ },
+ {
+  "id": "place:kailasa",
+  "type": "place",
+  "name": "Mount Kailāsa",
+  "owner": "purana",
+  "iast": "Kailāsa",
+  "devanagari": "कैलास",
+  "aliases": [
+   "Kailash"
+  ]
+ },
+ {
+  "id": "place:ganga-river",
+  "type": "place",
+  "name": "Gaṅgā river",
+  "owner": "purana",
+  "iast": "Gaṅgā",
+  "devanagari": "गङ्गा",
+  "aliases": [
+   "Ganges"
+  ]
+ },
+ {
+  "id": "place:sarasvati-river",
+  "type": "place",
+  "name": "Sarasvatī river (Vedic)",
+  "owner": "purana",
+  "iast": "Sarasvatī",
+  "devanagari": "सरस्वती"
+ },
+ {
+  "id": "trad:vaishnava",
+  "type": "tradition",
+  "name": "Vaiṣṇava traditions",
+  "owner": "purana",
+  "iast": "Vaiṣṇava",
+  "devanagari": "वैष्णव",
+  "aliases": [
+   "Vaishnavism"
+  ]
+ },
+ {
+  "id": "trad:shaiva",
+  "type": "tradition",
+  "name": "Śaiva traditions",
+  "owner": "purana",
+  "iast": "Śaiva",
+  "devanagari": "शैव",
+  "aliases": [
+   "Shaivism"
+  ]
+ },
+ {
+  "id": "trad:shakta",
+  "type": "tradition",
+  "name": "Śākta traditions",
+  "owner": "purana",
+  "iast": "Śākta",
+  "devanagari": "शाक्त",
+  "aliases": [
+   "Shaktism"
+  ]
+ },
+ {
+  "id": "trad:smarta",
+  "type": "tradition",
+  "name": "Smārta tradition",
+  "owner": "purana",
+  "iast": "Smārta",
+  "devanagari": "स्मार्त"
+ },
+ {
+  "id": "trad:bhagavata",
+  "type": "tradition",
+  "name": "Early Bhāgavata (Vāsudeva) devotion",
+  "owner": "purana",
+  "iast": "Bhāgavata",
+  "devanagari": "भागवत"
+ },
+ {
+  "id": "trad:pashupata",
+  "type": "tradition",
+  "name": "Pāśupata Śaivism",
+  "owner": "purana",
+  "iast": "Pāśupata",
+  "devanagari": "पाशुपत"
+ },
+ {
+  "id": "trad:saura",
+  "type": "tradition",
+  "name": "Saura (Sun) worship",
+  "owner": "purana",
+  "iast": "Saura",
+  "devanagari": "सौर"
+ },
+ {
+  "id": "trad:ganapatya",
+  "type": "tradition",
+  "name": "Gāṇapatya",
+  "owner": "purana",
+  "iast": "Gāṇapatya",
+  "devanagari": "गाणपत्य"
+ },
+ {
+  "id": "col:agamas-tantras",
+  "type": "collection",
+  "name": "Āgamas and Tantras",
+  "owner": "regional",
+  "iast": "Āgama / Tantra",
+  "devanagari": "आगम / तन्त्र"
+ },
+ {
+  "id": "col:bhakti-literature",
+  "type": "collection",
+  "name": "Devotional (bhakti) literature",
+  "owner": "regional",
+  "iast": "bhakti",
+  "devanagari": "भक्ति"
+ },
+ {
+  "id": "col:regional-retellings",
+  "type": "collection",
+  "name": "Regional and vernacular retellings",
+  "owner": "regional"
+ },
+ {
+  "id": "col:southeast-asian",
+  "type": "collection",
+  "name": "Southeast Asian adaptations",
+  "owner": "regional"
+ },
+ {
+  "id": "text:kamba-ramayanam",
+  "type": "text",
+  "name": "Kamba Rāmāyaṇam (Irāmāvatāram)",
+  "owner": "regional",
+  "iast": "Irāmāvatāram",
+  "aliases": [
+   "Kambaramayanam",
+   "Ramavataram"
+  ]
+ },
+ {
+  "id": "text:ramcharitmanas",
+  "type": "text",
+  "name": "Rāmcaritmānas",
+  "owner": "regional",
+  "iast": "Rāmacaritamānasa",
+  "devanagari": "रामचरितमानस",
+  "aliases": [
+   "Ramcharitmanas",
+   "Manas"
+  ]
+ },
+ {
+  "id": "text:krittivasi-ramayana",
+  "type": "text",
+  "name": "Kṛttivāsī Rāmāyaṇa",
+  "owner": "regional",
+  "iast": "Śrīrāma Pāñcālī",
+  "aliases": [
+   "Krittibasi Ramayan"
+  ]
+ },
+ {
+  "id": "text:adhyatma-ramayana",
+  "type": "text",
+  "name": "Adhyātma Rāmāyaṇa",
+  "owner": "regional",
+  "iast": "Adhyātmarāmāyaṇa",
+  "devanagari": "अध्यात्मरामायण"
+ },
+ {
+  "id": "text:tevaram",
+  "type": "text",
+  "name": "Tēvāram",
+  "owner": "regional",
+  "iast": "Tēvāram",
+  "aliases": [
+   "Thevaram"
+  ]
+ },
+ {
+  "id": "text:divya-prabandham",
+  "type": "text",
+  "name": "Nālāyira Divya Prabandham",
+  "owner": "regional",
+  "iast": "Nālāyira Divya Prabandham",
+  "aliases": [
+   "Divya Prabandham",
+   "4000 Divya Prabandham"
+  ]
+ },
+ {
+  "id": "text:periya-puranam",
+  "type": "text",
+  "name": "Periya Purāṇam",
+  "owner": "regional",
+  "iast": "Periya Purāṇam",
+  "aliases": [
+   "Tiruttondar Puranam"
+  ]
+ },
+ {
+  "id": "text:gita-govinda",
+  "type": "text",
+  "name": "Gītagovinda",
+  "owner": "regional",
+  "iast": "Gītagovinda",
+  "devanagari": "गीतगोविन्द",
+  "aliases": [
+   "Gita Govinda"
+  ]
+ },
+ {
+  "id": "text:jnaneshwari",
+  "type": "text",
+  "name": "Jñāneśvarī",
+  "owner": "regional",
+  "iast": "Jñāneśvarī",
+  "devanagari": "ज्ञानेश्वरी",
+  "aliases": [
+   "Dnyaneshwari",
+   "Bhavartha Deepika"
+  ]
+ },
+ {
+  "id": "text:kakawin-ramayana",
+  "type": "text",
+  "name": "Kakawin Rāmāyaṇa (Old Javanese)",
+  "owner": "regional",
+  "aliases": [
+   "Ramayana Kakawin"
+  ]
+ },
+ {
+  "id": "text:ramakien",
+  "type": "text",
+  "name": "Ramakien (Thai)",
+  "owner": "regional",
+  "aliases": [
+   "Rammakian"
+  ]
+ },
+ {
+  "id": "text:reamker",
+  "type": "text",
+  "name": "Reamker (Khmer)",
+  "owner": "regional",
+  "aliases": [
+   "Ramakerti"
+  ]
+ },
+ {
+  "id": "text:paumacariya",
+  "type": "text",
+  "name": "Paumacariya of Vimalasūri (Jain)",
+  "owner": "regional",
+  "iast": "Paumacariya",
+  "devanagari": "पउमचरिय"
+ },
+ {
+  "id": "text:dasaratha-jataka",
+  "type": "text",
+  "name": "Dasaratha Jātaka (Buddhist)",
+  "owner": "regional",
+  "iast": "Dasaratha Jātaka",
+  "aliases": [
+   "Jataka 461"
+  ]
+ },
+ {
+  "id": "text:silappatikaram",
+  "type": "text",
+  "name": "Cilappatikāram",
+  "owner": "regional",
+  "iast": "Cilappatikāram",
+  "aliases": [
+   "Silappatikaram"
+  ]
+ },
+ {
+  "id": "char:radha",
+  "type": "character",
+  "name": "Rādhā",
+  "owner": "regional",
+  "iast": "Rādhā",
+  "devanagari": "राधा",
+  "aliases": [
+   "Radhika"
+  ]
+ },
+ {
+  "id": "deity:murugan",
+  "type": "deity",
+  "name": "Murukaṉ (Tamil)",
+  "owner": "regional",
+  "iast": "Murukaṉ",
+  "aliases": [
+   "Murugan",
+   "Ceyon",
+   "Seyon"
+  ]
+ },
+ {
+  "id": "trad:pancharatra",
+  "type": "tradition",
+  "name": "Pāñcarātra",
+  "owner": "regional",
+  "iast": "Pāñcarātra",
+  "devanagari": "पाञ्चरात्र"
+ },
+ {
+  "id": "trad:shaiva-siddhanta",
+  "type": "tradition",
+  "name": "Śaiva Siddhānta",
+  "owner": "regional",
+  "iast": "Śaivasiddhānta",
+  "devanagari": "शैवसिद्धान्त"
+ },
+ {
+  "id": "trad:srivaishnava",
+  "type": "tradition",
+  "name": "Śrīvaiṣṇava",
+  "owner": "regional",
+  "iast": "Śrīvaiṣṇava",
+  "devanagari": "श्रीवैष्णव"
+ },
+ {
+  "id": "trad:gaudiya",
+  "type": "tradition",
+  "name": "Gauḍīya Vaiṣṇava",
+  "owner": "regional",
+  "iast": "Gauḍīya",
+  "devanagari": "गौडीय"
+ },
+ {
+  "id": "trad:virashaiva",
+  "type": "tradition",
+  "name": "Vīraśaiva / Liṅgāyata",
+  "owner": "regional",
+  "iast": "Vīraśaiva",
+  "devanagari": "वीरशैव",
+  "aliases": [
+   "Lingayat"
+  ]
+ },
+ {
+  "id": "trad:kashmir-shaivism",
+  "type": "tradition",
+  "name": "Kashmir Śaivism (Trika)",
+  "owner": "regional",
+  "iast": "Trika",
+  "devanagari": "त्रिक"
+ },
+ {
+  "id": "trad:jain",
+  "type": "tradition",
+  "name": "Jain tradition",
+  "owner": "regional",
+  "iast": "Jaina",
+  "devanagari": "जैन"
+ },
+ {
+  "id": "trad:buddhist",
+  "type": "tradition",
+  "name": "Buddhist tradition",
+  "owner": "regional",
+  "iast": "Bauddha",
+  "devanagari": "बौद्ध"
+ },
+ {
+  "id": "person:kambar",
+  "type": "person",
+  "name": "Kampaṉ (Kambar)",
+  "owner": "regional",
+  "iast": "Kampaṉ",
+  "aliases": [
+   "Kamban"
+  ]
+ },
+ {
+  "id": "person:tulsidas",
+  "type": "person",
+  "name": "Tulsīdās",
+  "owner": "regional",
+  "iast": "Tulasīdāsa",
+  "devanagari": "तुलसीदास"
+ },
+ {
+  "id": "person:krittibas",
+  "type": "person",
+  "name": "Kṛttibās Ojhā",
+  "owner": "regional",
+  "iast": "Kṛttibāsa Ojhā",
+  "aliases": [
+   "Krittibas"
+  ]
+ },
+ {
+  "id": "person:jayadeva",
+  "type": "person",
+  "name": "Jayadeva",
+  "owner": "regional",
+  "iast": "Jayadeva",
+  "devanagari": "जयदेव"
+ },
+ {
+  "id": "person:jnaneshwar",
+  "type": "person",
+  "name": "Jñāneśvar",
+  "owner": "regional",
+  "iast": "Jñāneśvara",
+  "devanagari": "ज्ञानेश्वर",
+  "aliases": [
+   "Dnyaneshwar"
+  ]
+ },
+ {
+  "id": "person:andal",
+  "type": "person",
+  "name": "Āṇṭāḷ",
+  "owner": "regional",
+  "iast": "Āṇṭāḷ",
+  "aliases": [
+   "Andal",
+   "Godā"
+  ]
+ },
+ {
+  "id": "person:nammalvar",
+  "type": "person",
+  "name": "Nammāḻvār",
+  "owner": "regional",
+  "iast": "Nammāḻvār",
+  "aliases": [
+   "Nammalvar",
+   "Shatakopa"
+  ]
+ },
+ {
+  "id": "person:appar",
+  "type": "person",
+  "name": "Appar (Tirunāvukkaracar)",
+  "owner": "regional",
+  "iast": "Appar",
+  "aliases": [
+   "Tirunavukkarasar"
+  ]
+ },
+ {
+  "id": "person:sambandar",
+  "type": "person",
+  "name": "Campantar (Tiruñāṉacampantar)",
+  "owner": "regional",
+  "iast": "Campantar",
+  "aliases": [
+   "Sambandar"
+  ]
+ },
+ {
+  "id": "person:sundarar",
+  "type": "person",
+  "name": "Cuntarar",
+  "owner": "regional",
+  "iast": "Cuntarar",
+  "aliases": [
+   "Sundarar"
+  ]
+ },
+ {
+  "id": "person:ramanuja",
+  "type": "person",
+  "name": "Rāmānuja",
+  "owner": "regional",
+  "iast": "Rāmānuja",
+  "devanagari": "रामानुज"
+ },
+ {
+  "id": "person:chaitanya",
+  "type": "person",
+  "name": "Caitanya",
+  "owner": "regional",
+  "iast": "Caitanya",
+  "devanagari": "चैतन्य"
+ },
+ {
+  "id": "person:basava",
+  "type": "person",
+  "name": "Basava",
+  "owner": "regional",
+  "iast": "Basavaṇṇa",
+  "aliases": [
+   "Basavanna"
+  ]
+ },
+ {
+  "id": "person:vimalasuri",
+  "type": "person",
+  "name": "Vimalasūri",
+  "owner": "regional",
+  "iast": "Vimalasūri",
+  "devanagari": "विमलसूरि"
+ },
+ {
+  "id": "deity:vasudeva",
+  "type": "deity",
+  "name": "Vāsudeva (deity of early inscriptions)",
+  "owner": "material",
+  "iast": "Vāsudeva",
+  "devanagari": "वासुदेव",
+  "aliases": [
+   "Bhagavat Vāsudeva"
+  ]
+ },
+ {
+  "id": "deity:sankarshana",
+  "type": "deity",
+  "name": "Saṅkarṣaṇa (deity of early inscriptions)",
+  "owner": "material",
+  "iast": "Saṅkarṣaṇa",
+  "devanagari": "सङ्कर्षण"
+ },
+ {
+  "id": "ins:heliodorus",
+  "type": "inscription",
+  "name": "Heliodorus pillar inscription, Besnagar",
+  "owner": "material",
+  "aliases": [
+   "Garuda pillar",
+   "Khamba Baba"
+  ]
+ },
+ {
+  "id": "ins:hathibada-ghosundi",
+  "type": "inscription",
+  "name": "Hāthībāḍā–Ghosuṇḍī inscriptions",
+  "owner": "material",
+  "aliases": [
+   "Ghosundi inscription"
+  ]
+ },
+ {
+  "id": "ins:nanaghat",
+  "type": "inscription",
+  "name": "Nāṇeghāṭ inscription of Nāganikā",
+  "owner": "material",
+  "aliases": [
+   "Naneghat"
+  ]
+ },
+ {
+  "id": "ins:mora-well",
+  "type": "inscription",
+  "name": "Mora well inscription (Mathurā)",
+  "owner": "material",
+  "aliases": [
+   "Vrishni heroes inscription"
+  ]
+ },
+ {
+  "id": "ins:aihole-ravikirti",
+  "type": "inscription",
+  "name": "Aihole inscription of Pulakeśin II (Ravikīrti)",
+  "owner": "material",
+  "aliases": [
+   "Aihole prashasti"
+  ]
+ },
+ {
+  "id": "ins:shivagrha",
+  "type": "inscription",
+  "name": "Śivagṛha inscription (856 CE)",
+  "owner": "material",
+  "aliases": [
+   "Siwagrha"
+  ]
+ },
+ {
+  "id": "ins:changu-narayan-manadeva",
+  "type": "inscription",
+  "name": "Changu Narayan pillar inscription of Mānadeva",
+  "owner": "material"
+ },
+ {
+  "id": "art:agathocles-coins",
+  "type": "artifact",
+  "name": "Coins of Agathocles with Saṅkarṣaṇa and Vāsudeva",
+  "owner": "material"
+ },
+ {
+  "id": "art:pashupati-seal",
+  "type": "artifact",
+  "name": "“Paśupati” seal, Mohenjo-daro",
+  "owner": "material",
+  "aliases": [
+   "Proto-Shiva seal",
+   "Seal 420"
+  ]
+ },
+ {
+  "id": "art:gudimallam-linga",
+  "type": "artifact",
+  "name": "Gudimallam liṅga",
+  "owner": "material"
+ },
+ {
+  "id": "art:udayagiri-varaha",
+  "type": "artifact",
+  "name": "Varāha relief, Udayagiri Cave 5",
+  "owner": "material"
+ },
+ {
+  "id": "art:wima-kadphises-coin",
+  "type": "artifact",
+  "name": "Gold coins of Wima Kadphises with a deity and bull",
+  "owner": "material",
+  "aliases": [
+   "Oesho coin"
+  ]
+ },
+ {
+  "id": "art:chola-nataraja",
+  "type": "artifact",
+  "name": "Chola bronze Naṭarāja (museum example)",
+  "owner": "material"
+ },
+ {
+  "id": "ms:spitzer",
+  "type": "manuscript",
+  "name": "Spitzer manuscript",
+  "owner": "material",
+  "aliases": [
+   "Turfan",
+   "Kizil"
+  ]
+ },
+ {
+  "id": "ms:skandapurana-810",
+  "type": "manuscript",
+  "name": "Skandapurāṇa manuscript dated 810 CE (Kathmandu)",
+  "owner": "material"
+ },
+ {
+  "id": "ms:rigveda-bori",
+  "type": "manuscript",
+  "name": "Rigveda manuscripts at BORI (Memory of the World)",
+  "owner": "material"
+ },
+ {
+  "id": "site:mohenjo-daro",
+  "type": "site",
+  "name": "Mohenjo-daro",
+  "owner": "material",
+  "aliases": [
+   "Moenjodaro"
+  ]
+ },
+ {
+  "id": "site:besnagar",
+  "type": "site",
+  "name": "Besnagar (Vidiśā)",
+  "owner": "material",
+  "iast": "Vidiśā",
+  "devanagari": "विदिशा",
+  "aliases": [
+   "Vidisha"
+  ]
+ },
+ {
+  "id": "site:hastinapura-excavation",
+  "type": "site",
+  "name": "Hastinapur excavations (1950–52)",
+  "owner": "material"
+ },
+ {
+  "id": "site:ai-khanoum",
+  "type": "site",
+  "name": "Aï Khanoum",
+  "owner": "material"
+ },
+ {
+  "id": "site:dwarka-offshore",
+  "type": "site",
+  "name": "Dwarka offshore explorations",
+  "owner": "material"
+ },
+ {
+  "id": "claim:proto-shiva",
+  "type": "claim",
+  "name": "The “proto-Śiva” interpretation of the Paśupati seal",
+  "owner": "material"
+ },
+ {
+  "id": "claim:dwarka-submerged",
+  "type": "claim",
+  "name": "The claim that offshore remains at Dwarka are Kṛṣṇa’s city",
+  "owner": "material"
+ },
+ {
+  "id": "claim:rama-setu-built",
+  "type": "claim",
+  "name": "The claim that Adam’s Bridge is a man-made structure",
+  "owner": "material"
+ },
+ {
+  "id": "claim:megasthenes-herakles",
+  "type": "claim",
+  "name": "Megasthenes’ “Herakles” of the Sourasenoi as Kṛṣṇa",
+  "owner": "material"
+ },
+ {
+  "id": "claim:krishna-devakiputra-identity",
+  "type": "claim",
+  "name": "Chāndogya’s Kṛṣṇa Devakīputra as the epic Kṛṣṇa",
+  "owner": "material"
+ },
+ {
+  "id": "inst:bori",
+  "type": "institution",
+  "name": "Bhandarkar Oriental Research Institute, Pune",
+  "owner": "material",
+  "aliases": [
+   "BORI"
+  ]
+ },
+ {
+  "id": "inst:asi",
+  "type": "institution",
+  "name": "Archaeological Survey of India",
+  "owner": "material",
+  "aliases": [
+   "ASI"
+  ]
+ },
+ {
+  "id": "inst:unesco",
+  "type": "institution",
+  "name": "UNESCO World Heritage Centre",
+  "owner": "material"
+ },
+ {
+  "id": "inst:national-museum-delhi",
+  "type": "institution",
+  "name": "National Museum, New Delhi",
+  "owner": "material"
+ },
+ {
+  "id": "inst:national-archives-nepal",
+  "type": "institution",
+  "name": "National Archives, Kathmandu",
+  "owner": "material"
+ },
+ {
+  "id": "pol:indo-greek",
+  "type": "polity",
+  "name": "Indo-Greek kingdoms",
+  "owner": "material"
+ },
+ {
+  "id": "pol:shunga",
+  "type": "polity",
+  "name": "Śuṅga dynasty",
+  "owner": "material",
+  "iast": "Śuṅga",
+  "devanagari": "शुङ्ग"
+ },
+ {
+  "id": "pol:satavahana",
+  "type": "polity",
+  "name": "Sātavāhana dynasty",
+  "owner": "material",
+  "iast": "Sātavāhana",
+  "devanagari": "सातवाहन"
+ },
+ {
+  "id": "pol:kushan",
+  "type": "polity",
+  "name": "Kuṣāṇa empire",
+  "owner": "material",
+  "iast": "Kuṣāṇa",
+  "devanagari": "कुषाण",
+  "aliases": [
+   "Kushan"
+  ]
+ },
+ {
+  "id": "pol:gupta",
+  "type": "polity",
+  "name": "Gupta empire",
+  "owner": "material",
+  "iast": "Gupta",
+  "devanagari": "गुप्त"
+ },
+ {
+  "id": "pol:licchavi-nepal",
+  "type": "polity",
+  "name": "Licchavi kingdom of Nepal",
+  "owner": "material"
+ },
+ {
+  "id": "pol:chalukya-badami",
+  "type": "polity",
+  "name": "Cālukyas of Bādāmi",
+  "owner": "material",
+  "iast": "Cālukya",
+  "devanagari": "चालुक्य"
+ },
+ {
+  "id": "pol:pallava",
+  "type": "polity",
+  "name": "Pallava dynasty",
+  "owner": "material",
+  "iast": "Pallava",
+  "devanagari": "पल्लव"
+ },
+ {
+  "id": "pol:rashtrakuta",
+  "type": "polity",
+  "name": "Rāṣṭrakūṭa dynasty",
+  "owner": "material",
+  "iast": "Rāṣṭrakūṭa",
+  "devanagari": "राष्ट्रकूट"
+ },
+ {
+  "id": "pol:chola",
+  "type": "polity",
+  "name": "Cōḻa dynasty",
+  "owner": "material",
+  "iast": "Cōḻa",
+  "aliases": [
+   "Chola"
+  ]
+ },
+ {
+  "id": "pol:medang",
+  "type": "polity",
+  "name": "Medang (Mataram) kingdom, Java",
+  "owner": "material"
+ },
+ {
+  "id": "pol:khmer",
+  "type": "polity",
+  "name": "Khmer empire",
+  "owner": "material"
+ },
+ {
+  "id": "pol:chandela",
+  "type": "polity",
+  "name": "Candela dynasty",
+  "owner": "material",
+  "iast": "Candela",
+  "devanagari": "चन्देल",
+  "aliases": [
+   "Chandela"
+  ]
+ },
+ {
+  "id": "pol:eastern-ganga",
+  "type": "polity",
+  "name": "Eastern Gaṅga dynasty",
+  "owner": "material"
+ },
+ {
+  "id": "pol:vijayanagara",
+  "type": "polity",
+  "name": "Vijayanagara empire",
+  "owner": "material"
+ },
+ {
+  "id": "person:heliodorus",
+  "type": "person",
+  "name": "Heliodorus (Heliodoros), son of Dion",
+  "owner": "material"
+ },
+ {
+  "id": "person:chandragupta-ii",
+  "type": "person",
+  "name": "Candragupta II",
+  "owner": "material",
+  "iast": "Candragupta",
+  "devanagari": "चन्द्रगुप्त"
+ },
+ {
+  "id": "person:pulakeshin-ii",
+  "type": "person",
+  "name": "Pulakeśin II",
+  "owner": "material",
+  "iast": "Pulakeśin",
+  "devanagari": "पुलकेशिन्"
+ },
+ {
+  "id": "person:ravikirti",
+  "type": "person",
+  "name": "Ravikīrti",
+  "owner": "material",
+  "iast": "Ravikīrti",
+  "devanagari": "रविकीर्ति"
+ },
+ {
+  "id": "person:megasthenes",
+  "type": "person",
+  "name": "Megasthenes",
+  "owner": "material"
+ },
+ {
+  "id": "person:john-marshall",
+  "type": "person",
+  "name": "John Marshall",
+  "owner": "material"
+ },
+ {
+  "id": "person:bb-lal",
+  "type": "person",
+  "name": "B. B. Lal",
+  "owner": "material"
+ },
+ {
+  "id": "person:sr-rao",
+  "type": "person",
+  "name": "S. R. Rao",
+  "owner": "material"
+ },
+ {
+  "id": "person:vs-sukthankar",
+  "type": "person",
+  "name": "V. S. Sukthankar",
+  "owner": "material"
+ },
+ {
+  "id": "deity:nataraja",
+  "type": "deity",
+  "name": "Naṭarāja (Śiva as lord of dance)",
+  "owner": "temple",
+  "iast": "Naṭarāja",
+  "devanagari": "नटराज",
+  "aliases": [
+   "Ananda Tandava",
+   "Adavallan (Tamil)"
+  ]
+ },
+ {
+  "id": "deity:jagannatha",
+  "type": "deity",
+  "name": "Jagannātha",
+  "owner": "temple",
+  "iast": "Jagannātha",
+  "devanagari": "जगन्नाथ"
+ },
+ {
+  "id": "deity:venkateshvara",
+  "type": "deity",
+  "name": "Veṅkaṭeśvara",
+  "owner": "temple",
+  "iast": "Veṅkaṭeśvara",
+  "devanagari": "वेङ्कटेश्वर",
+  "aliases": [
+   "Balaji",
+   "Srinivasa"
+  ]
+ },
+ {
+  "id": "temple:brihadisvara",
+  "type": "temple",
+  "name": "Bṛhadīśvara temple, Thanjavur",
+  "owner": "temple",
+  "aliases": [
+   "Rajarajeswaram",
+   "Big Temple",
+   "Peruvudaiyar Kovil"
+  ]
+ },
+ {
+  "id": "temple:kailasa-ellora",
+  "type": "temple",
+  "name": "Kailāsa temple (Ellora Cave 16)",
+  "owner": "temple",
+  "aliases": [
+   "Kailasanatha Ellora"
+  ]
+ },
+ {
+  "id": "temple:elephanta",
+  "type": "temple",
+  "name": "Elephanta Caves (Cave 1)",
+  "owner": "temple",
+  "aliases": [
+   "Gharapuri"
+  ]
+ },
+ {
+  "id": "temple:mamallapuram",
+  "type": "temple",
+  "name": "Group of Monuments at Mamallapuram",
+  "owner": "temple",
+  "aliases": [
+   "Mahabalipuram"
+  ]
+ },
+ {
+  "id": "temple:shore-temple",
+  "type": "temple",
+  "name": "Shore Temple, Mamallapuram",
+  "owner": "temple"
+ },
+ {
+  "id": "temple:virupaksha-pattadakal",
+  "type": "temple",
+  "name": "Virūpākṣa temple, Pattadakal",
+  "owner": "temple",
+  "aliases": [
+   "Lokeshvara"
+  ]
+ },
+ {
+  "id": "temple:virupaksha-hampi",
+  "type": "temple",
+  "name": "Virūpākṣa temple, Hampi",
+  "owner": "temple"
+ },
+ {
+  "id": "temple:hazara-rama",
+  "type": "temple",
+  "name": "Hazāra Rāma temple, Hampi",
+  "owner": "temple"
+ },
+ {
+  "id": "temple:deogarh-dashavatara",
+  "type": "temple",
+  "name": "Daśāvatāra temple, Deogarh",
+  "owner": "temple"
+ },
+ {
+  "id": "temple:udayagiri-caves",
+  "type": "temple",
+  "name": "Udayagiri caves (Vidiśā)",
+  "owner": "temple"
+ },
+ {
+  "id": "temple:nachna-parvati",
+  "type": "temple",
+  "name": "Pārvatī temple, Nachna",
+  "owner": "temple"
+ },
+ {
+  "id": "temple:kandariya-mahadeva",
+  "type": "temple",
+  "name": "Kandarīya Mahādeva temple, Khajuraho",
+  "owner": "temple"
+ },
+ {
+  "id": "temple:lakshmana-khajuraho",
+  "type": "temple",
+  "name": "Lakṣmaṇa temple, Khajuraho",
+  "owner": "temple"
+ },
+ {
+  "id": "temple:konark",
+  "type": "temple",
+  "name": "Sun Temple, Konark",
+  "owner": "temple",
+  "aliases": [
+   "Konarak",
+   "Black Pagoda"
+  ]
+ },
+ {
+  "id": "temple:jagannath-puri",
+  "type": "temple",
+  "name": "Jagannātha temple, Puri",
+  "owner": "temple"
+ },
+ {
+  "id": "temple:lingaraja",
+  "type": "temple",
+  "name": "Liṅgarāja temple, Bhubaneswar",
+  "owner": "temple"
+ },
+ {
+  "id": "temple:kashi-vishwanath",
+  "type": "temple",
+  "name": "Kāśī Viśvanātha temple, Varanasi",
+  "owner": "temple"
+ },
+ {
+  "id": "temple:somnath",
+  "type": "temple",
+  "name": "Somanātha temple, Prabhas Patan",
+  "owner": "temple"
+ },
+ {
+  "id": "temple:meenakshi",
+  "type": "temple",
+  "name": "Mīnākṣī–Sundareśvara temple, Madurai",
+  "owner": "temple"
+ },
+ {
+  "id": "temple:srirangam",
+  "type": "temple",
+  "name": "Śrī Raṅganāthasvāmī temple, Srirangam",
+  "owner": "temple"
+ },
+ {
+  "id": "temple:chidambaram",
+  "type": "temple",
+  "name": "Naṭarāja temple, Chidambaram",
+  "owner": "temple",
+  "aliases": [
+   "Thillai"
+  ]
+ },
+ {
+  "id": "temple:tirumala",
+  "type": "temple",
+  "name": "Veṅkaṭeśvara temple, Tirumala",
+  "owner": "temple"
+ },
+ {
+  "id": "temple:kailasanatha-kanchi",
+  "type": "temple",
+  "name": "Kailāsanātha temple, Kanchipuram",
+  "owner": "temple"
+ },
+ {
+  "id": "temple:badami-caves",
+  "type": "temple",
+  "name": "Bādāmi cave temples",
+  "owner": "temple"
+ },
+ {
+  "id": "temple:meguti-aihole",
+  "type": "temple",
+  "name": "Meguti Jain temple, Aihole",
+  "owner": "temple"
+ },
+ {
+  "id": "temple:durga-aihole",
+  "type": "temple",
+  "name": "Durgā temple, Aihole",
+  "owner": "temple"
+ },
+ {
+  "id": "temple:kamakhya",
+  "type": "temple",
+  "name": "Kāmākhyā temple, Guwahati",
+  "owner": "temple"
+ },
+ {
+  "id": "temple:pashupatinath",
+  "type": "temple",
+  "name": "Paśupatinātha temple, Kathmandu",
+  "owner": "temple"
+ },
+ {
+  "id": "temple:changu-narayan",
+  "type": "temple",
+  "name": "Changu Narayan temple",
+  "owner": "temple"
+ },
+ {
+  "id": "temple:prambanan",
+  "type": "temple",
+  "name": "Prambanan (Candi Rara Jonggrang)",
+  "owner": "temple"
+ },
+ {
+  "id": "temple:angkor-wat",
+  "type": "temple",
+  "name": "Angkor Wat",
+  "owner": "temple"
+ },
+ {
+  "id": "temple:rameshwaram",
+  "type": "temple",
+  "name": "Rāmanāthasvāmī temple, Rameswaram",
+  "owner": "temple"
+ },
+ {
+  "id": "temple:dwarkadhish",
+  "type": "temple",
+  "name": "Dvārakādhīśa temple, Dwarka",
+  "owner": "temple"
+ },
+ {
+  "id": "temple:gudimallam",
+  "type": "temple",
+  "name": "Paraśurāmeśvara temple, Gudimallam",
+  "owner": "temple"
+ },
+ {
+  "id": "temple:mahakaleshwar",
+  "type": "temple",
+  "name": "Mahākāleśvara temple, Ujjain",
+  "owner": "temple"
+ },
+ {
+  "id": "temple:kedarnath",
+  "type": "temple",
+  "name": "Kedāranātha temple",
+  "owner": "temple"
+ },
+ {
+  "id": "temple:badrinath",
+  "type": "temple",
+  "name": "Badrīnātha temple",
+  "owner": "temple"
+ },
+ {
+  "id": "place:adams-bridge",
+  "type": "place",
+  "name": "Adam’s Bridge (Rāma Setu)",
+  "owner": "temple",
+  "aliases": [
+   "Rama Setu",
+   "Ram Sethu"
+  ]
+ },
+ {
+  "id": "place:hampi",
+  "type": "place",
+  "name": "Hampi",
+  "owner": "temple"
+ },
+ {
+  "id": "place:rameswaram-island",
+  "type": "place",
+  "name": "Rameswaram (Pamban island)",
+  "owner": "temple"
+ }
+]

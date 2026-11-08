@@ -1,0 +1,317 @@
+@import "tailwindcss";
+
+/*
+ * Design system — a museum reading room by day, a night sky for the explorers.
+ * Parchment, ink, antique gold and muted saffron; deep indigo for the graph,
+ * the time machine and the night theme. Every colour is a token so the two
+ * themes swap in one place.
+ */
+:root {
+  color-scheme: light;
+  --bg: #f6f0e4;
+  --bg-2: #efe6d4;
+  --panel: #fbf8f1;
+  --ink: #221e1a;
+  --ink-2: #4f4840;
+  --ink-3: #7c7368;
+  --rule: #ddd1bb;
+  --rule-2: #cbbd9f;
+  --gold: #9a7232;
+  --gold-soft: #d6a957;
+  --saffron: #c4652a;
+  --accent-bg: #f0e2c6;
+  --night: #12162b;
+  --night-2: #1a1f3a;
+  --night-3: #252b4d;
+  --night-ink: #ece4d3;
+  --night-ink-2: #b9b3c9;
+  --night-rule: #343b63;
+  --land: #e7dcc5;
+  --land-stroke: #c9b994;
+  --sea: #f2ead9;
+  --focus: #c4652a;
+  /* categorical families — reference palette, validated (light) */
+  --f-material: #2a78d6;
+  --f-deity: #eb6834;
+  --f-geography: #1baf7a;
+  --f-literature: #eda100;
+  --f-figure: #e87ba4;
+  --f-history: #008300;
+  --f-narrative: #6250d6;
+  --f-claim: #e34948;
+  /* evidence classes */
+  --ev-1: #2a78d6;
+  --ev-2: #1c5cab;
+  --ev-3: #6250d6;
+  --ev-4: #1baf7a;
+  --ev-5: #9a7232;
+  --ev-6: #c4652a;
+  --ev-7: #d03b3b;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #12162b;
+    --bg-2: #171c36;
+    --panel: #1a1f3a;
+    --ink: #ece4d3;
+    --ink-2: #c9c1b1;
+    --ink-3: #9a93a8;
+    --rule: #2c3358;
+    --rule-2: #3a426d;
+    --gold: #d6a957;
+    --gold-soft: #d6a957;
+    --saffron: #e08a4f;
+    --accent-bg: #252b4d;
+    --land: #20264a;
+    --land-stroke: #39417a;
+    --sea: #14182f;
+    --f-material: #3987e5;
+    --f-deity: #d95926;
+    --f-geography: #199e70;
+    --f-literature: #c98500;
+    --f-figure: #d55181;
+    --f-history: #008300;
+    --f-narrative: #9085e9;
+    --f-claim: #e66767;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #12162b;
+  --bg-2: #171c36;
+  --panel: #1a1f3a;
+  --ink: #ece4d3;
+  --ink-2: #c9c1b1;
+  --ink-3: #9a93a8;
+  --rule: #2c3358;
+  --rule-2: #3a426d;
+  --gold: #d6a957;
+  --gold-soft: #d6a957;
+  --saffron: #e08a4f;
+  --accent-bg: #252b4d;
+  --land: #20264a;
+  --land-stroke: #39417a;
+  --sea: #14182f;
+  --f-material: #3987e5;
+  --f-deity: #d95926;
+  --f-geography: #199e70;
+  --f-literature: #c98500;
+  --f-figure: #d55181;
+  --f-history: #008300;
+  --f-narrative: #9085e9;
+  --f-claim: #e66767;
+}
+
+@theme {
+  --font-display: "Cormorant Garamond", "Iowan Old Style", Georgia, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-deva: "Noto Serif Devanagari", "Kohinoor Devanagari", serif;
+  --color-bg: var(--bg);
+  --color-bg-2: var(--bg-2);
+  --color-panel: var(--panel);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-rule: var(--rule);
+  --color-rule-2: var(--rule-2);
+  --color-gold: var(--gold);
+  --color-gold-soft: var(--gold-soft);
+  --color-saffron: var(--saffron);
+  --color-accent-bg: var(--accent-bg);
+  --color-night: var(--night);
+  --color-night-2: var(--night-2);
+  --color-night-3: var(--night-3);
+  --color-night-ink: var(--night-ink);
+  --color-night-ink-2: var(--night-ink-2);
+  --color-night-rule: var(--night-rule);
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+body {
+  min-height: 100vh;
+}
+::selection {
+  background: color-mix(in srgb, var(--gold-soft) 45%, transparent);
+}
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+.deva {
+  font-family: var(--font-deva);
+}
+.display {
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+}
+.eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  font-weight: 600;
+}
+.prose-museum p {
+  margin: 0 0 0.9em;
+  line-height: 1.7;
+  color: var(--ink-2);
+}
+.hairline {
+  border-color: var(--rule);
+}
+.card {
+  background: var(--panel);
+  border: 1px solid var(--rule);
+  border-radius: 14px;
+}
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border: 1px solid var(--rule-2);
+  border-radius: 999px;
+  padding: 0.15rem 0.6rem;
+  font-size: 0.75rem;
+  color: var(--ink-2);
+  background: var(--panel);
+  white-space: nowrap;
+}
+.chip[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--bg);
+  border-color: var(--ink);
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  border-radius: 999px;
+  padding: 0.45rem 0.95rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid var(--rule-2);
+  background: var(--panel);
+  color: var(--ink);
+  transition: background 0.15s, border-color 0.15s;
+}
+.btn:hover {
+  border-color: var(--gold);
+}
+.btn-primary {
+  background: var(--ink);
+  color: var(--bg);
+  border-color: var(--ink);
+}
+.btn-primary:hover {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: #fff;
+}
+.night .btn {
+  background: var(--night-2);
+  color: var(--night-ink);
+  border-color: var(--night-rule);
+}
+.night .btn:hover {
+  border-color: var(--gold-soft);
+}
+.night .chip {
+  background: var(--night-2);
+  color: var(--night-ink-2);
+  border-color: var(--night-rule);
+}
+.night .chip[aria-pressed="true"] {
+  background: var(--night-ink);
+  color: var(--night);
+  border-color: var(--night-ink);
+}
+.link {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--rule-2);
+  text-underline-offset: 3px;
+}
+.link:hover {
+  text-decoration-color: var(--gold);
+  color: var(--gold);
+}
+select.field,
+input.field {
+  background: var(--panel);
+  border: 1px solid var(--rule-2);
+  border-radius: 8px;
+  padding: 0.35rem 0.6rem;
+  font-size: 0.85rem;
+  color: var(--ink);
+}
+.night select.field,
+.night input.field {
+  background: var(--night-2);
+  border-color: var(--night-rule);
+  color: var(--night-ink);
+}
+input[type="range"] {
+  accent-color: var(--gold-soft);
+}
+.scroll-thin {
+  scrollbar-width: thin;
+  scrollbar-color: var(--rule-2) transparent;
+}
+.night .scroll-thin {
+  scrollbar-color: var(--night-rule) transparent;
+}
+.ornament {
+  height: 10px;
+  background:
+    radial-gradient(circle at 50% 50%, var(--gold) 1.6px, transparent 2px) center / 18px 10px repeat-x;
+  opacity: 0.5;
+}
+.fade-in {
+  animation: fade 0.35s ease both;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .fade-in {
+    animation: none;
+  }
+}
+table.data {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+table.data th {
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  border-bottom: 1px solid var(--rule-2);
+  padding: 0.5rem 0.6rem;
+}
+table.data td {
+  border-bottom: 1px solid var(--rule);
+  padding: 0.6rem;
+  vertical-align: top;
+  color: var(--ink-2);
+}
