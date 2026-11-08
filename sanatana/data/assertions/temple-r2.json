@@ -12088,5 +12088,1238 @@
   "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-594",
+  "s": "deity:ayyappa",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:sabarimala",
+  "qualifiers": {
+   "note": "as Dharmaśāstā / Ayyappan"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Sabarimala_Temple"
+   },
+   {
+    "source": "src:sekar-1992"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-595",
+  "s": "deity:shani",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:dharbaranyeswarar-thirunallar",
+  "qualifiers": {
+   "note": "Śani shrine (Navagraha seat)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tirunallar_Dharbaranyeswarar_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-596",
+  "s": "deity:ketu",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:naganathaswamy-keezhaperumpallam",
+  "qualifiers": {
+   "note": "Ketu (Navagraha seat)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Nagannathaswamy_Temple,_Keelaperumpallam"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-597",
+  "s": "deity:mangala",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:vaitheeswaran-koil",
+  "qualifiers": {
+   "note": "Aṅgāraka (Navagraha seat)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Vaitheeswaran_Koil"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-598",
+  "s": "deity:brihaspati",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:apatsahayesvarar-alangudi",
+  "qualifiers": {
+   "note": "Guru (Navagraha seat), worshipped through Dakṣiṇāmūrti"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Apatsahayesvarar_Temple,_Alangudi"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-599",
+  "s": "deity:dakshinamurti",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:apatsahayesvarar-alangudi",
+  "qualifiers": {
+   "note": "as Guru"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Apatsahayesvarar_Temple,_Alangudi"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-600",
+  "s": "deity:navagraha",
+  "p": "ASSOCIATED_WITH",
+  "o": "concept:navagraha-temples",
+  "qualifiers": {
+   "note": "the nine grahas of the circuit"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Navagraha_temples"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-601",
+  "s": "deity:somaskanda",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:thyagaraja-tiruvarur",
+  "qualifiers": {
+   "note": "Tyāgarāja is a Somāskanda image"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Thyagaraja_Temple,_Tiruvarur"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-602",
+  "s": "deity:anantashayana",
+  "p": "DEPICTED_IN",
+  "o": "temple:budhanilkantha",
+  "qualifiers": {
+   "note": "colossal Jalaśayana image"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Budhanilkantha_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-603",
+  "s": "deity:anantashayana",
+  "p": "DEPICTED_IN",
+  "o": "temple:phanom-rung",
+  "qualifiers": {
+   "note": "Nārāyaṇa lintel"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Phanom_Rung_Historical_Park"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-604",
+  "s": "deity:anantashayana",
+  "p": "DEPICTED_IN",
+  "o": "place:kbal-spean",
+  "qualifiers": {
+   "note": "riverbed reliefs"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kbal_Spean"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-605",
+  "s": "deity:anantashayana",
+  "p": "DEPICTED_IN",
+  "o": "temple:rani-ki-vav",
+  "qualifiers": {
+   "note": "Śeṣaśāyī Viṣṇu at the well end"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Rani_ki_Vav"
+   }
+  ],
+  "confidence": "low",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-606",
+  "s": "deity:trivikrama",
+  "p": "DEPICTED_IN",
+  "o": "temple:prasat-kravan",
+  "qualifiers": {
+   "note": "brick relief in the central tower"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Prasat_Kravan"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-607",
+  "s": "deity:lakulisha",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:eklingji",
+  "qualifiers": {
+   "note": "Lakulīśa temple of 971 in the complex (recall)"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Eklingji"
+   }
+  ],
+  "confidence": "low",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:r2-608",
+  "s": "deity:chaturmukhalinga",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:eklingji",
+  "qualifiers": {
+   "note": "four-faced liṅga of Ekaliṅga"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Eklingji"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-609",
+  "s": "deity:chaturmukhalinga",
+  "p": "DEPICTED_IN",
+  "o": "temple:unakoti",
+  "qualifiers": {
+   "note": "inscribed caturmukha liṅga"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Unakoti"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-610",
+  "s": "deity:panchamukhalinga",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:baroli",
+  "qualifiers": {
+   "note": "five-faced liṅga of the Ghaṭeśvara temple"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Baroli_Temples"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-611",
+  "s": "deity:umamaheshvara",
+  "p": "DEPICTED_IN",
+  "o": "temple:madan-kamdev",
+  "qualifiers": {
+   "note": "Umā-Maheśvara images"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Madan_Kamdev"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-612",
+  "s": "deity:bhairava",
+  "p": "DEPICTED_IN",
+  "o": "temple:unakoti",
+  "qualifiers": {
+   "note": "Unakotīśvara Kāla Bhairava head"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Unakoti"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-613",
+  "s": "deity:panchamukha-hanuman",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:panchmukhi-hanuman-karachi",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Panchmukhi_Hanuman_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-614",
+  "s": "deity:govardhanadhara",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:shrinathji-nathdwara",
+  "qualifiers": {
+   "note": "Śrīnāthjī"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Shrinathji_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-615",
+  "s": "deity:lakshmi-narayana",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:lakshmi-narayan-chamba",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Chamba,_Himachal_Pradesh"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-616",
+  "s": "deity:mahishasuramardini",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:biraja-jajpur",
+  "qualifiers": {
+   "note": "two-armed Mahiṣamardinī"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Biraja_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-617",
+  "s": "deity:mahishasuramardini",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:po-nagar",
+  "qualifiers": {
+   "note": "image of the goddess"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Po_Nagar"
+   }
+  ],
+  "confidence": "low",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-618",
+  "s": "temple:udupi-krishna",
+  "p": "ASSOCIATED_WITH",
+  "o": "person:madhva",
+  "qualifiers": {
+   "note": "founded by Madhvācārya (Dvaita tradition)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Udupi_Sri_Krishna_Matha"
+   },
+   {
+    "source": "src:sharma-bnk-1981"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-619",
+  "s": "temple:udupi-krishna",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:dvaita",
+  "qualifiers": {
+   "note": "seat of the Dvaita maṭhas"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Udupi_Sri_Krishna_Matha"
+   },
+   {
+    "source": "src:sharma-bnk-1981"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-620",
+  "s": "temple:udupi-krishna",
+  "p": "ASSOCIATED_WITH",
+  "o": "person:kanaka-dasa",
+  "qualifiers": {
+   "note": "Kanakadāsa’s window (Kanakana kiṇḍi) (tradition)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Udupi_Sri_Krishna_Matha"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-621",
+  "s": "temple:shrinathji-nathdwara",
+  "p": "ASSOCIATED_WITH",
+  "o": "person:vallabha",
+  "qualifiers": {
+   "note": "Vallabha instituted the worship of Śrīnāthjī (Puṣṭimārga tradition)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Shrinathji_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-622",
+  "s": "temple:vidyashankara-sringeri",
+  "p": "ASSOCIATED_WITH",
+  "o": "person:vidyaranya",
+  "qualifiers": {
+   "note": "temple linked by tradition with Vidyāraṇya"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Sringeri"
+   }
+  ],
+  "confidence": "low",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:r2-623",
+  "s": "temple:govind-dev-vrindavan",
+  "p": "ASSOCIATED_WITH",
+  "o": "person:rupa-goswami",
+  "qualifiers": {
+   "note": "image rediscovered by Rūpa Gosvāmī (Gauḍīya tradition)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Govind_Dev_Ji_Temple"
+   },
+   {
+    "source": "src:case-1996"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-624",
+  "s": "temple:govind-dev-vrindavan",
+  "p": "ASSOCIATED_WITH",
+  "o": "person:jiva-goswami",
+  "qualifiers": {
+   "note": "manager under Akbar’s farmān of 1568"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Govind_Dev_Ji_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-625",
+  "s": "temple:bhadrachalam",
+  "p": "COMMISSIONED_BY",
+  "o": "person:bhadrachala-ramadasu",
+  "qualifiers": {
+   "note": "built by Kañcarla Gopanna (Bhakta Rāmadāsu)"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Sita_Ramachandraswamy_Temple,_Bhadrachalam"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-626",
+  "s": "temple:thyagaraja-tiruvarur",
+  "p": "ASSOCIATED_WITH",
+  "o": "person:tyagaraja",
+  "qualifiers": {
+   "note": "birthplace of the composer Tyāgarāja (recall)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Thyagaraja_Temple,_Tiruvarur"
+   }
+  ],
+  "confidence": "low",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:r2-627",
+  "s": "temple:kataragama",
+  "p": "ASSOCIATED_WITH",
+  "o": "person:arunagirinathar",
+  "qualifiers": {
+   "note": "first literary attestation as a Murukaṉ shrine (Tiruppukaḻ)"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kataragama_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-628",
+  "s": "temple:sabarimala",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:sabarimala-pilgrimage",
+  "qualifiers": {
+   "note": "the pilgrimage"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Sabarimala_Temple"
+   },
+   {
+    "source": "src:sekar-1992"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-629",
+  "s": "temple:vitthala-pandharpur",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:pandharpur-wari",
+  "qualifiers": {
+   "note": "goal of the vārī"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Vithoba_Temple"
+   },
+   {
+    "source": "src:dhere-2011"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-630",
+  "s": "temple:chamundeshwari-mysore",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:mysore-dasara",
+  "qualifiers": {
+   "note": "goddess of the Mysore Dasarā"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Chamundeshwari_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-631",
+  "s": "temple:govindajee-imphal",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:sankirtana-manipur",
+  "qualifiers": {
+   "note": "centre of Manipuri saṅkīrtana and rāsa"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Shree_Govindajee_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-632",
+  "s": "temple:ganga-talao",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:grand-bassin-pilgrimage",
+  "qualifiers": {
+   "note": "Mahāśivarātri pilgrimage"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ganga_Talao"
+   },
+   {
+    "source": "src:eisenlohr-2006"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-633",
+  "s": "temple:ganga-talao",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:mauritian-hinduism",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ganga_Talao"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-634",
+  "s": "temple:temple-in-the-sea",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:indo-caribbean-hinduism",
+  "qualifiers": {
+   "note": "memorial of indenture"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Temple_in_the_Sea"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-635",
+  "s": "temple:sri-mahamariamman-kl",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:malaysian-hinduism",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Sri_Maha_Mariamman_Temple,_Kuala_Lumpur"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-636",
+  "s": "temple:sri-mahamariamman-kl",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:thaipusam",
+  "qualifiers": {
+   "note": "Taipūcam chariot procession to Batu Caves (recall)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Sri_Maha_Mariamman_Temple,_Kuala_Lumpur"
+   }
+  ],
+  "confidence": "low",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:r2-637",
+  "s": "temple:baps-neasden",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:baps",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/BAPS_Shri_Swaminarayan_Mandir_London"
+   },
+   {
+    "source": "src:williams-rb-2001"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-638",
+  "s": "temple:baps-neasden",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:british-hindu-temple-movement",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/BAPS_Shri_Swaminarayan_Mandir_London"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-639",
+  "s": "temple:akshardham-delhi",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:baps",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Swaminarayan_Akshardham_(Delhi)"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-640",
+  "s": "temple:akshardham-robbinsville",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:baps",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Swaminarayan_Akshardham_(Robbinsville)"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-641",
+  "s": "temple:akshardham-robbinsville",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:american-hindu-temple-movement",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Swaminarayan_Akshardham_(Robbinsville)"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-642",
+  "s": "temple:sv-temple-pittsburgh",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:american-hindu-temple-movement",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Sri_Venkateswara_Temple,_Pittsburgh"
+   },
+   {
+    "source": "src:waghorne-2004"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-643",
+  "s": "temple:ganesh-temple-flushing",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:american-hindu-temple-movement",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hindu_Temple_Society_of_North_America"
+   },
+   {
+    "source": "src:waghorne-2004"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-644",
+  "s": "temple:baps-abu-dhabi",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:baps",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/BAPS_Hindu_Mandir_Abu_Dhabi"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-645",
+  "s": "person:swaminarayan",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:baps-neasden",
+  "qualifiers": {
+   "tradition": "trad:baps",
+   "note": "venerated by BAPS as the highest manifestation of Puruṣottama"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/BAPS_Shri_Swaminarayan_Mandir_London"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-646",
+  "s": "person:swaminarayan",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:akshardham-delhi",
+  "qualifiers": {
+   "tradition": "trad:baps",
+   "note": "venerated by BAPS as the highest manifestation of Puruṣottama"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Swaminarayan_Akshardham_(Delhi)"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-647",
+  "s": "person:swaminarayan",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:akshardham-robbinsville",
+  "qualifiers": {
+   "tradition": "trad:baps",
+   "note": "venerated by BAPS as the highest manifestation of Puruṣottama"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Swaminarayan_Akshardham_(Robbinsville)"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-648",
+  "s": "person:swaminarayan",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:baps-abu-dhabi",
+  "qualifiers": {
+   "tradition": "trad:baps",
+   "note": "venerated by BAPS as the highest manifestation of Puruṣottama"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/BAPS_Hindu_Mandir_Abu_Dhabi"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-649",
+  "s": "place:haridwar",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:kumbh-mela",
+  "qualifiers": {
+   "note": "one of the four Kumbha Melā sites"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Haridwar"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-650",
+  "s": "place:ujjain",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:kumbh-mela",
+  "qualifiers": {
+   "note": "Siṃhastha Kumbha Melā on the Kṣiprā"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ujjain"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-651",
+  "s": "place:godavari-river",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:kumbh-mela",
+  "qualifiers": {
+   "note": "Nashik–Trimbak Kumbha Melā"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Godavari_River"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-652",
+  "s": "ins:po-nagar-satyavarman",
+  "p": "INSCRIBED_AT",
+  "o": "temple:po-nagar",
+  "qualifiers": {
+   "note": "stele of 781/784 recording the restoration"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Po_Nagar"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-653",
+  "s": "ins:sdok-kak-thom",
+  "p": "REFERS_TO",
+  "o": "temple:phnom-bakheng",
+  "qualifiers": {
+   "note": "Vāmaśiva sets up a liṅga on Yaśodharagiri — identification of the mountain with Phnom Bakheng is argued"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Phnom_Bakheng"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-654",
+  "s": "temple:bujang-valley-candi",
+  "p": "LOCATED_AT",
+  "o": "site:bujang-valley",
+  "qualifiers": {
+   "note": "candi within the Bujang Valley archaeological complex"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bujang_Valley"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-655",
+  "s": "temple:mahabaleshwar-gokarna",
+  "p": "BUILT_DURING",
+  "o": "pol:kadamba",
+  "qualifiers": {
+   "note": "attribution to Mayūravarman claimed in the reference; unsupported"
+  },
+  "evidenceClass": 7,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mahabaleshwar_Temple,_Gokarna"
+   }
+  ],
+  "confidence": "low",
+  "status": "disputed",
+  "agent": "temple"
  }
 ]

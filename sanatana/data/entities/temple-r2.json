@@ -14340,9 +14340,8 @@
   "name": "Bujang Valley candi (Kedah)",
   "iast": "Bujang",
   "aliases": [
-   "Bujang Valley",
-   "Lembah Bujang",
-   "Candi Bukit Batu Pahat"
+   "Candi Bukit Batu Pahat",
+   "Lembah Bujang candi"
   ],
   "subtype": "archaeological temple complex",
   "traditions": [
@@ -15498,8 +15497,7 @@
   "iast": "Tuṅgabhadrā",
   "devanagari": "तुङ्गभद्रा",
   "aliases": [
-   "Tungabhadra",
-   "Pampa"
+   "Tungabhadra"
   ],
   "subtype": "river",
   "summary": "River of Karnataka formed by the Tuṅgā (on which Śṛṅgeri stands) and the Bhadrā, flowing past Hampi, where tradition places Rāma’s Kiṣkindhā and the Pampā lake, to join the Kṛṣṇā near Alampur.",
