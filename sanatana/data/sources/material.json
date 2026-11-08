@@ -1,0 +1,477 @@
+[
+ {
+  "id": "src:salomon-1998",
+  "type": "scholarly-book",
+  "title": "Indian Epigraphy: A Guide to the Study of Inscriptions in Sanskrit, Prakrit, and the Other Indo-Aryan Languages",
+  "author": "Richard Salomon",
+  "year": "1998",
+  "publisher": "Oxford University Press, New York",
+  "agent": "material"
+ },
+ {
+  "id": "src:fleet-1888",
+  "type": "epigraphic-corpus",
+  "title": "Corpus Inscriptionum Indicarum, vol. III: Inscriptions of the Early Gupta Kings and their Successors",
+  "author": "John Faithfull Fleet",
+  "year": "1888",
+  "publisher": "Superintendent of Government Printing, Calcutta",
+  "notes": "Standard edition of the Gupta-period inscriptions (Udayagiri, Eran, Gangdhar, Mandasor, Meharauli). Item numbers are given only where verified.",
+  "agent": "material"
+ },
+ {
+  "id": "src:luders-janert-1961",
+  "type": "epigraphic-corpus",
+  "title": "Mathurā Inscriptions: Unpublished Papers",
+  "author": "Heinrich Lüders; ed. Klaus Ludwig Janert",
+  "year": "1961",
+  "publisher": "Vandenhoeck & Ruprecht, Göttingen (Abhandlungen der Akademie der Wissenschaften in Göttingen, Phil.-Hist. Kl., 3. Folge, Nr. 47)",
+  "notes": "Edition used for the Mora well inscription (p. 301, per the Wikimedia Commons file record).",
+  "agent": "material"
+ },
+ {
+  "id": "src:quintanilla-2007",
+  "type": "scholarly-book",
+  "title": "History of Early Stone Sculpture at Mathura, ca. 150 BCE – 100 CE",
+  "author": "Sonya Rhie Quintanilla",
+  "year": "2007",
+  "publisher": "Brill, Leiden",
+  "agent": "material"
+ },
+ {
+  "id": "src:bhandarkar-ei22",
+  "type": "epigraphic-corpus",
+  "title": "Edition of the Hāthībāḍā (Nagari) Brāhmī inscription, Epigraphia Indica vol. XXII, pp. 198–205",
+  "author": "D. R. Bhandarkar",
+  "year": "1933–34",
+  "publisher": "Archaeological Survey of India",
+  "notes": "Volume and pages verified via the Wikipedia citation; the article title is not reproduced here because it was not checked.",
+  "agent": "material"
+ },
+ {
+  "id": "src:bopearachchi-1991",
+  "type": "catalogue",
+  "title": "Monnaies gréco-bactriennes et indo-grecques: catalogue raisonné",
+  "author": "Osmund Bopearachchi",
+  "year": "1991",
+  "publisher": "Bibliothèque nationale, Paris",
+  "agent": "material"
+ },
+ {
+  "id": "src:audouin-bernard-1974",
+  "type": "journal-article",
+  "title": "Trésor de monnaies indiennes et indo-grecques d'Aï Khanoum (Afghanistan). II. Les monnaies indo-grecques",
+  "author": "Rémy Audouin and Paul Bernard",
+  "year": "1974",
+  "publisher": "Revue numismatique, 6e série, 16",
+  "notes": "Publication of the 1970 Aï Khanoum hoard including the Indian-standard drachms of Agathocles. Bibliographic details supplied from recall; not checked online.",
+  "agent": "material"
+ },
+ {
+  "id": "src:rosenfield-1967",
+  "type": "scholarly-book",
+  "title": "The Dynastic Arts of the Kushans",
+  "author": "John M. Rosenfield",
+  "year": "1967",
+  "publisher": "University of California Press, Berkeley",
+  "agent": "material"
+ },
+ {
+  "id": "src:sims-williams-cribb-1996",
+  "type": "journal-article",
+  "title": "A New Bactrian Inscription of Kanishka the Great",
+  "author": "Nicholas Sims-Williams and Joe Cribb",
+  "year": "1995–96",
+  "publisher": "Silk Road Art and Archaeology 4: 75–142",
+  "notes": "Edition of the Rabatak inscription.",
+  "agent": "material"
+ },
+ {
+  "id": "src:jongeward-cribb-2015",
+  "type": "catalogue",
+  "title": "Kushan, Kushano-Sasanian, and Kidarite Coins: A Catalogue of Coins from the American Numismatic Society",
+  "author": "David Jongeward and Joe Cribb",
+  "year": "2015",
+  "publisher": "American Numismatic Society, New York",
+  "notes": "Source of the Kushan regnal chronology (e.g. Wima Kadphises c. 113–127 CE) as cited on Wikipedia.",
+  "agent": "material"
+ },
+ {
+  "id": "src:vats-1952",
+  "type": "excavation-report",
+  "title": "The Gupta Temple at Deogarh (Memoirs of the Archaeological Survey of India 70)",
+  "author": "Madho Sarup Vats",
+  "year": "1952",
+  "publisher": "Archaeological Survey of India, Delhi",
+  "agent": "material"
+ },
+ {
+  "id": "src:cunningham-1880",
+  "type": "excavation-report",
+  "title": "Report of Tours in Bundelkhand and Malwa, 1874–75 and 1876–77 (Archaeological Survey of India Reports, vol. X)",
+  "author": "Alexander Cunningham",
+  "year": "1880",
+  "publisher": "Office of the Superintendent of Government Printing, Calcutta",
+  "agent": "material"
+ },
+ {
+  "id": "src:cunningham-1854",
+  "type": "scholarly-book",
+  "title": "The Bhilsa Topes; or, Buddhist Monuments of Central India",
+  "author": "Alexander Cunningham",
+  "year": "1854",
+  "publisher": "Smith, Elder & Co., London",
+  "notes": "Early publication of Udayagiri inscriptions (cited by Dharmalekha for Cave 6).",
+  "agent": "material"
+ },
+ {
+  "id": "src:franco-2004",
+  "type": "primary-text",
+  "title": "The Spitzer Manuscript: The Oldest Philosophical Manuscript in Sanskrit (2 vols.)",
+  "author": "Eli Franco",
+  "year": "2004",
+  "publisher": "Verlag der Österreichischen Akademie der Wissenschaften, Vienna",
+  "agent": "material"
+ },
+ {
+  "id": "src:brockington-2010",
+  "type": "journal-article",
+  "title": "The Spitzer Manuscript and the Mahābhārata",
+  "author": "John Brockington",
+  "year": "2010",
+  "publisher": "in E. Franco and M. Zin (eds.), From Turfan to Ajanta: Festschrift for Dieter Schlingloff, Lumbini International Research Institute",
+  "notes": "Bibliographic details from recall.",
+  "agent": "material"
+ },
+ {
+  "id": "src:unesco-mow-rigveda",
+  "type": "institutional",
+  "title": "Memory of the World Register: Rigveda (nomination form, India)",
+  "author": "Government of India / National Mission for Manuscripts, for the Bhandarkar Oriental Research Institute",
+  "year": "2006–2007",
+  "publisher": "UNESCO",
+  "url": "https://media.unesco.org/sites/default/files/webform/mow001/india_rigveda.pdf",
+  "urlChecked": true,
+  "notes": "Nomination file: 30 manuscripts (1 birch bark in Śāradā, 29 paper in Devanāgarī); oldest dated No. 5/1882-83 (1464 AD); register page https://www.unesco.org/en/memory-world/rigveda gives registration year 2007.",
+  "agent": "material"
+ },
+ {
+  "id": "src:ram-karna-ei11",
+  "type": "epigraphic-corpus",
+  "title": "Dadhimati-Mata Inscription of the time of Dhruhlana; [Gupta-]Samvat 289 (Epigraphia Indica vol. XI, no. 31)",
+  "author": "Pandit Ram Karna",
+  "year": "1911–12",
+  "publisher": "Archaeological Survey of India (ed. E. Hultzsch)",
+  "url": "https://jainqq.org/pagetext/samaysar/032565/350",
+  "urlChecked": true,
+  "notes": "Scanned page checked online: lines 11–12 contain a verse identified as a quotation from the Devī-Māhātmya.",
+  "agent": "material"
+ },
+ {
+  "id": "src:kielhorn-ei6",
+  "type": "epigraphic-corpus",
+  "title": "Aihole Inscription of Pulikesin II; Saka-Samvat 556 (Epigraphia Indica vol. VI)",
+  "author": "Franz Kielhorn",
+  "year": "1900–01",
+  "publisher": "Archaeological Survey of India (ed. E. Hultzsch)",
+  "notes": "Revised text and translation; earlier editions by J. F. Fleet (1876, 1879). Public domain.",
+  "agent": "material"
+ },
+ {
+  "id": "src:de-casparis-1956",
+  "type": "epigraphic-corpus",
+  "title": "Prasasti Indonesia II: Selected Inscriptions from the 7th to the 9th Century A.D.",
+  "author": "J. G. de Casparis",
+  "year": "1956",
+  "publisher": "Masa Baru, Bandung",
+  "notes": "Includes the Śivagṛha inscription of 856 CE.",
+  "agent": "material"
+ },
+ {
+  "id": "src:siddham",
+  "type": "epigraphic-corpus",
+  "title": "SIDDHAM: The Asian Inscription Database",
+  "author": "Michael Willis et al.",
+  "year": "ongoing",
+  "publisher": "British Museum / ERC project",
+  "url": "https://siddham.network/",
+  "urlChecked": true,
+  "agent": "material"
+ },
+ {
+  "id": "src:dharmalekha",
+  "type": "epigraphic-corpus",
+  "title": "Dharmalekha: Texts and Translations of Inscriptions",
+  "author": "Dharmalekha project",
+  "year": "ongoing",
+  "url": "https://dharmalekha.info/",
+  "urlChecked": true,
+  "agent": "material"
+ },
+ {
+  "id": "src:willis-2009",
+  "type": "scholarly-book",
+  "title": "The Archaeology of Hindu Ritual: Temples and the Establishment of the Gods",
+  "author": "Michael Willis",
+  "year": "2009",
+  "publisher": "Cambridge University Press",
+  "agent": "material"
+ },
+ {
+  "id": "src:gaur-2004",
+  "type": "journal-article",
+  "title": "An ancient harbour at Dwarka: Study based on the recent underwater explorations",
+  "author": "A. S. Gaur, Sundaresh and Sila Tripati",
+  "year": "2004",
+  "publisher": "Current Science 86 (9): 1256–1260",
+  "url": "https://www.ancientportsantiques.com/wp-content/uploads/Documents/PLACES/IndOc-Gulf/GujaratDwarka-Gaur2004.pdf",
+  "urlChecked": false,
+  "agent": "material"
+ },
+ {
+  "id": "src:rao-1999",
+  "type": "scholarly-book",
+  "title": "The Lost City of Dvārakā",
+  "author": "S. R. Rao",
+  "year": "1999",
+  "publisher": "National Institute of Oceanography, Goa / Aditya Prakashan, New Delhi",
+  "agent": "material"
+ },
+ {
+  "id": "src:lal-1981",
+  "type": "journal-article",
+  "title": "The Two Indian Epics vis-à-vis Archaeology",
+  "author": "B. B. Lal",
+  "year": "1981",
+  "publisher": "Antiquity 55: 27–34",
+  "notes": "Bibliographic details from recall.",
+  "agent": "material"
+ },
+ {
+  "id": "src:singh-2004",
+  "type": "journal-article",
+  "title": "Cults and Shrines in Early Historical Mathura (c. 200 BC–AD 200)",
+  "author": "Upinder Singh",
+  "year": "2004",
+  "publisher": "World Archaeology 36 (3): 378–398",
+  "agent": "material"
+ },
+ {
+  "id": "src:srinivasan-1979",
+  "type": "journal-article",
+  "title": "Early Vaiṣṇava Imagery: Caturvyūha and Variant Forms",
+  "author": "Doris Srinivasan",
+  "year": "1979",
+  "publisher": "Archives of Asian Art 32: 39–54",
+  "agent": "material"
+ },
+ {
+  "id": "src:hiltebeitel-1978",
+  "type": "journal-article",
+  "title": "The Indus Valley “Proto-Śiva”, Reexamined through Reflections on the Goddess, the Buffalo, and the Symbolism of vāhanas",
+  "author": "Alf Hiltebeitel",
+  "year": "1978",
+  "publisher": "Anthropos 73: 767–797",
+  "agent": "material"
+ },
+ {
+  "id": "src:sullivan-1964",
+  "type": "journal-article",
+  "title": "A Re-examination of the Religion of the Indus Civilization",
+  "author": "Herbert P. Sullivan",
+  "year": "1964",
+  "publisher": "History of Religions 4 (1): 115–125",
+  "agent": "material"
+ },
+ {
+  "id": "src:mackay-1938",
+  "type": "excavation-report",
+  "title": "Further Excavations at Mohenjo-daro (2 vols.)",
+  "author": "E. J. H. Mackay",
+  "year": "1938",
+  "publisher": "Government of India Press, Delhi",
+  "notes": "Mackay numbered the 'Paśupati' seal 420.",
+  "agent": "material"
+ },
+ {
+  "id": "src:ngmcp",
+  "type": "institutional",
+  "title": "Nepalese-German Manuscript Cataloguing Project (NGMCP)",
+  "author": "Universität Hamburg / National Archives, Kathmandu",
+  "year": "ongoing",
+  "notes": "Microfilm B 11/4 of NAK 2-229 (Skandapurāṇa, cited on Wikipedia).",
+  "agent": "material"
+ },
+ {
+  "id": "src:collins-1988",
+  "type": "scholarly-book",
+  "title": "The Iconography and Ritual of Śiva at Elephanta",
+  "author": "Charles Dillard Collins",
+  "year": "1988",
+  "publisher": "State University of New York Press, Albany",
+  "agent": "material"
+ },
+ {
+  "id": "src:mccrindle-1877",
+  "type": "translation",
+  "title": "Ancient India as Described by Megasthenês and Arrian",
+  "author": "J. W. McCrindle",
+  "year": "1877",
+  "publisher": "Thacker, Spink & Co., Calcutta / Trübner, London",
+  "license": "public domain",
+  "notes": "Translation of the Megasthenes fragments and Arrian's Indica.",
+  "agent": "material"
+ },
+ {
+  "id": "src:robson-arrian-1933",
+  "type": "translation",
+  "title": "Arrian, Indica (Loeb Classical Library, Anabasis of Alexander vol. II)",
+  "author": "E. Iliff Robson (trans.)",
+  "year": "1933",
+  "publisher": "Harvard University Press / Heinemann",
+  "url": "https://sourcebooks.web.fordham.edu/ancient/arrian-bookVIII-India.asp",
+  "urlChecked": true,
+  "notes": "Fordham Ancient History Sourcebook text checked online for the Heracles/Surasenian passage in chapter 8. Not quoted (copyright status not assumed).",
+  "agent": "material"
+ },
+ {
+  "id": "src:dahlquist-1962",
+  "type": "scholarly-book",
+  "title": "Megasthenes and Indian Religion: A Study in Motives and Types",
+  "author": "Allan Dahlquist",
+  "year": "1962",
+  "publisher": "Almqvist & Wiksell, Stockholm",
+  "notes": "Argues that Megasthenes' Herakles corresponds to Indra rather than Kṛṣṇa.",
+  "agent": "material"
+ },
+ {
+  "id": "src:scroll-2022-ram-setu",
+  "type": "reference",
+  "title": "Why a chain of limestone shoals between India and Sri Lanka has led to a political brawl",
+  "author": "Scroll.in staff",
+  "year": "2022",
+  "publisher": "Scroll.in",
+  "url": "https://scroll.in/article/1040538/why-a-chain-of-limestone-shoals-between-india-and-sri-lanka-has-led-to-a-political-brawl",
+  "urlChecked": false,
+  "notes": "Reports the December 2022 Rajya Sabha reply on Adam's Bridge (via search snippet).",
+  "agent": "material"
+ },
+ {
+  "id": "src:levi-1905",
+  "type": "scholarly-book",
+  "title": "Le Népal: étude historique d'un royaume hindou (3 vols.)",
+  "author": "Sylvain Lévi",
+  "year": "1905–1908",
+  "publisher": "Ernest Leroux, Paris",
+  "agent": "material"
+ },
+ {
+  "id": "src:indraji-buhler-1885",
+  "type": "epigraphic-corpus",
+  "title": "Twenty-three Inscriptions from Nepal",
+  "author": "Bhagvanlal Indraji and Georg Bühler",
+  "year": "1885",
+  "publisher": "Bombay",
+  "notes": "First publication of the Changu Narayan pillar inscription, per Wikipedia.",
+  "agent": "material"
+ },
+ {
+  "id": "src:dhavalikar-2003",
+  "type": "scholarly-book",
+  "title": "Ellora",
+  "author": "M. K. Dhavalikar",
+  "year": "2003",
+  "publisher": "Oxford University Press, New Delhi",
+  "agent": "material"
+ },
+ {
+  "id": "src:kaimal-1994",
+  "type": "journal-article",
+  "title": "Playful Ambiguity and Political Authority in the Large Relief at Māmallapuram",
+  "author": "Padma Kaimal",
+  "year": "1994",
+  "publisher": "Ars Orientalis 24: 1–27",
+  "agent": "material"
+ },
+ {
+  "id": "src:hinduism-today-1991",
+  "type": "reference",
+  "title": "British Courts Free Siva Icon",
+  "author": "Hinduism Today",
+  "year": "1991",
+  "publisher": "Hinduism Today (May 1991)",
+  "url": "https://hinduismtoday.com/magazine/may-1991/1991-05-british-courts-free-siva-icon/",
+  "urlChecked": false,
+  "notes": "Content known from search snippet: Court of Appeal ruling of 12 February 1991 that the Pathur Nataraja should return to Tamil Nadu.",
+  "agent": "material"
+ },
+ {
+  "id": "src:bumper-1991",
+  "type": "reference",
+  "title": "Bumper Development Corporation Ltd v Commissioner of Police of the Metropolis [1991] 1 WLR 1362 (Court of Appeal)",
+  "author": "Court of Appeal of England and Wales",
+  "year": "1991",
+  "publisher": "Weekly Law Reports",
+  "notes": "Law report citation supplied from recall.",
+  "agent": "material"
+ },
+ {
+  "id": "src:himal-nataraja",
+  "type": "reference",
+  "title": "Non-resident Nataraja",
+  "publisher": "Himal Southasian",
+  "url": "https://www.himalmag.com/non-resident-nataraja/",
+  "urlChecked": true,
+  "agent": "material"
+ },
+ {
+  "id": "src:cgu-cpdr",
+  "type": "institutional",
+  "title": "Cultural Property Disputes Resource: Indian Sivapuram Nataraja Bronze Statue",
+  "author": "Claremont Graduate University",
+  "year": "ongoing",
+  "url": "https://research.cgu.edu/cultural-property-disputes-resource/?p=723",
+  "urlChecked": true,
+  "agent": "material"
+ },
+ {
+  "id": "src:cma-open-access",
+  "type": "catalogue",
+  "title": "Cleveland Museum of Art — Collection Online and Open Access API",
+  "author": "Cleveland Museum of Art",
+  "year": "ongoing",
+  "url": "https://openaccess-api.clevelandart.org/",
+  "urlChecked": true,
+  "notes": "Records checked: 1930.331, 1977.62, 1973.106, 1999.225; images CC0.",
+  "agent": "material"
+ },
+ {
+  "id": "src:cma-krishna-reinstalled",
+  "type": "institutional",
+  "title": "Krishna Reinstalled",
+  "author": "Cleveland Museum of Art",
+  "year": "2024",
+  "url": "https://clevelandart.org/articles/krishna-reinstalled",
+  "urlChecked": false,
+  "agent": "material"
+ },
+ {
+  "id": "src:anu-archive-krishna-giridhara",
+  "type": "catalogue",
+  "title": "Krishna Giridara, 5th cent. A.D. Bharat Kala Bhavan, Benares (photograph record)",
+  "author": "Australian National University Archives",
+  "url": "https://openresearch-repository.anu.edu.au/entities/anuarchivesitem/744ad55d-4d9a-4b78-a6e5-ac7d211596f8",
+  "urlChecked": false,
+  "notes": "Record title seen in search results only.",
+  "agent": "material"
+ },
+ {
+  "id": "src:rijksmuseum-collection",
+  "type": "catalogue",
+  "title": "Rijksmuseum Collection Online",
+  "author": "Rijksmuseum, Amsterdam",
+  "year": "ongoing",
+  "url": "https://www.rijksmuseum.nl/en/collection/AK-MAK-187",
+  "urlChecked": true,
+  "agent": "material"
+ }
+]
