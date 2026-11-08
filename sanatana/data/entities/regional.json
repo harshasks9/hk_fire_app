@@ -1,0 +1,2732 @@
+[
+  {
+    "id": "col:agamas-tantras",
+    "type": "collection",
+    "name": "Āgamas and Tantras",
+    "iast": "Āgama / Tantra",
+    "subtype": "scriptural corpus",
+    "traditions": [
+      "trad:shaiva-siddhanta",
+      "trad:pancharatra",
+      "trad:kashmir-shaivism"
+    ],
+    "summary": "The large body of post-Vedic scriptures (Āgama, Tantra, Saṃhitā) of the Śaiva, Vaiṣṇava Pāñcarātra and Śākta traditions, which regulate initiation, mantra, temple building, image worship, festivals and yoga.",
+    "details": "The corpus is not one canon but several: the Śaiva Mantramārga (Siddhānta and the non-dualist Bhairava/Kaula streams), the Vaiṣṇava Pāñcarātra Saṃhitās (traditionally 108), the Vaikhānasa texts, and Śākta Tantras. Sanderson (2009) describes the early medieval period as a “Śaiva Age” in which these ritual systems, and the royal and temple institutions that used them, spread across South and Southeast Asia.\n\nThe earliest surviving Śaiva tantra is generally taken to be the Niśvāsatattvasaṃhitā, whose oldest layer its editors place c. 450–550 CE. Most Pāñcarātra saṃhitās are later and their dates are disputed. In South Indian temple practice the Śaiva Āgamas (traditionally 28) and selected Pāñcarātra saṃhitās remain the ritual authorities.",
+    "dates": [
+      {
+        "system": "scholarly-textual",
+        "event": "composition of the surviving corpus",
+        "start": 450,
+        "end": 1400,
+        "label": "c. 5th–14th c. CE",
+        "certainty": "estimated",
+        "basis": "manuscript dating, cross-citation and internal evidence",
+        "view": "Sanderson; Goodall et al.",
+        "sources": [
+          {
+            "source": "src:sanderson-2009"
+          },
+          {
+            "source": "src:goodall-2015"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "source": "src:sanderson-2009"
+      },
+      {
+        "source": "src:goudriaan-gupta-1981"
+      },
+      {
+        "source": "src:flood-1996",
+        "locator": "ch. 7"
+      }
+    ],
+    "confidence": "high",
+    "status": "recall",
+    "agent": "regional",
+    "limits": "A collection label: dates and authority differ sharply between sub-corpora; traditional claims of eternal or divine origin are recorded as tradition, not as dates."
+  },
+  {
+    "id": "col:bhakti-literature",
+    "type": "collection",
+    "name": "Devotional (bhakti) literature",
+    "iast": "bhakti",
+    "devanagari": "भक्ति",
+    "subtype": "literary corpus",
+    "summary": "Devotional poetry, song and hagiography addressed to Śiva, Viṣṇu/Kṛṣṇa/Rāma, the Goddess and other deities in Tamil, Kannada, Telugu, Marathi, Hindi dialects, Bengali, Assamese, Odia, Gujarati, Kashmiri and other languages, from the Tamil saints of c. 6th–9th c. onward.",
+    "details": "Treated here as an umbrella for regionally distinct corpora with their own canons (Nālāyira Divya Prabandham, Tirumurai, Vārkarī abhaṅgas, Vīraśaiva vacanas, Sūrsāgar, the Assamese Kīrtana Ghoṣā…). The common label is a modern scholarly one; each tradition defines its own corpus and authority.",
+    "dates": [
+      {
+        "system": "scholarly-textual",
+        "event": "composition (Tamil beginnings to early-modern North India)",
+        "start": 550,
+        "end": 1700,
+        "label": "c. 6th–17th c. CE",
+        "certainty": "estimated",
+        "basis": "internal evidence, inscriptions, manuscript colophons",
+        "view": "general scholarly",
+        "sources": [
+          {
+            "source": "src:flood-1996"
+          },
+          {
+            "source": "src:peterson-1989"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "source": "src:flood-1996",
+        "locator": "ch. 6"
+      },
+      {
+        "source": "src:hawley-juergensmeyer-1988"
+      },
+      {
+        "source": "src:peterson-1989"
+      },
+      {
+        "source": "src:hardy-1983"
+      },
+      {
+        "source": "src:cutler-1987"
+      }
+    ],
+    "confidence": "high",
+    "status": "recall",
+    "agent": "regional",
+    "limits": "“Bhakti movement” as a single pan-Indian wave is a scholarly construct that some historians question; the dates are ranges for disparate corpora."
+  },
+  {
+    "id": "col:regional-retellings",
+    "type": "collection",
+    "name": "Regional and vernacular retellings",
+    "subtype": "literary corpus",
+    "summary": "Tellings of the Rāma and Bhārata narratives (and of Purāṇic material) in Indian languages, in later Sanskrit, and in Jain and Buddhist traditions. Each telling is recorded as a work with its own date, author and theology, not as a deviation from an original.",
+    "details": "Ramanujan’s essay “Three Hundred Rāmāyaṇas” proposed speaking of many “tellings” sharing a pool of signifiers rather than of versions of a single Ur-text, a framing taken up in Richman (ed.) 1991. This collection follows that approach: RETELLS / DERIVED_FROM edges record documented literary dependence only, and differences are recorded in Comparison tables rather than as errors.",
+    "sources": [
+      {
+        "source": "src:richman-1991"
+      },
+      {
+        "source": "src:ramanujan-1991"
+      },
+      {
+        "source": "src:pollock-2006"
+      }
+    ],
+    "confidence": "high",
+    "status": "recall",
+    "agent": "regional",
+    "limits": "Membership in this collection says nothing about relative “authenticity”; Jain and Buddhist tellings are included as members of the Rāma narrative tradition, not as Hindu texts."
+  },
+  {
+    "id": "col:southeast-asian",
+    "type": "collection",
+    "name": "Southeast Asian adaptations",
+    "subtype": "literary and performance corpus",
+    "summary": "Rāma and other Indic narratives as written, carved, recited and performed in Java, Bali, Cambodia, Thailand, Laos, Myanmar and the Malay world, from the Old Javanese Kakawin Rāmāyaṇa (late 9th–early 10th c.) to the Thai Ramakien of Rama I (1797–1807).",
+    "details": "These tellings are often Buddhist (Lao Phra Lak Phra Lam is framed as a jātaka), Islamic-framed (some Malay Hikayat Seri Rama versions) or court-ritual (Thai and Khmer royal drama). Characters are renamed and re-characterised: Rāvaṇa becomes Thotsakan (Thai) or Krong Reap (Khmer), Sītā is sometimes Rāvaṇa’s daughter, and Hanumān is an amorous hero who fathers a son with the mermaid Suvannamaccha.",
+    "dates": [
+      {
+        "system": "scholarly-textual",
+        "event": "composition of the surviving literary tellings",
+        "start": 856,
+        "end": 1807,
+        "label": "c. 856 – 1807 CE",
+        "certainty": "estimated",
+        "basis": "Robson’s dating of the Kakawin; Rama I’s Ramakien",
+        "sources": [
+          {
+            "source": "src:robson-2015"
+          },
+          {
+            "source": "src:wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Ramakien"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "source": "src:raghavan-1980"
+      },
+      {
+        "source": "src:iyengar-1983"
+      },
+      {
+        "source": "src:richman-1991"
+      }
+    ],
+    "confidence": "high",
+    "status": "recall",
+    "agent": "regional",
+    "limits": "Temple reliefs (Prambanan, Angkor Wat) attest the circulation of the story but do not by themselves show which telling the sculptors followed."
+  },
+  {
+    "id": "text:kamba-ramayanam",
+    "type": "text",
+    "name": "Kamba Rāmāyaṇam (Irāmāvatāram)",
+    "scripts": [
+      {
+        "lang": "ta",
+        "script": "Taml",
+        "text": "கம்பராமாயணம்"
+      }
+    ],
+    "subtype": "Tamil epic (kāppiyam)",
+    "traditions": [
+      "trad:vaishnava",
+      "trad:srivaishnava"
+    ],
+    "summary": "The Tamil Rāma epic of the poet Kampaṉ, in six kāṇṭams of viruttam verse (c. 10,500 stanzas in the standard edition), dated variously between the 9th and 12th centuries. It is the most celebrated Tamil telling and is shaped by Tamil poetics and Śrīvaiṣṇava devotion.",
+    "details": "Kampaṉ names his patron, Caṭaiyappa Vaḷḷal of Tiruveṇṇainallūr, at intervals in the poem. The standard text is the edition prepared by a committee of the Kamban Kazhagam (1976) which set aside many interpolated verses; the seventh book (Uttara kāṇṭam) is attributed to Oṭṭakkūttar, not Kampaṉ.\n\nAmong the episodes that distinguish the telling: Rāma and Sītā glimpse each other in Mithilā before the breaking of the bow; in the Āraṇya kāṇṭam Rāvaṇa does not touch Sītā but lifts her away with the earth on which her hermitage stands; and Rāvaṇa is given tragic grandeur. Temple tradition holds that the poem was first publicly recited (araṅkēṟṟam) at the Raṅganātha temple, Srirangam.",
+    "dates": [
+      {
+        "system": "traditional",
+        "event": "first public recital (araṅkēṟṟam)",
+        "label": "Śaka 807 (≈ 885 CE), per an anonymous traditional verse",
+        "certainty": "disputed",
+        "basis": "traditional verse giving a Śaka year; widely doubted",
+        "view": "traditional verse",
+        "sources": [
+          {
+            "source": "src:zvelebil-1974"
+          },
+          {
+            "source": "src:wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Kambar_(poet)"
+          }
+        ]
+      },
+      {
+        "system": "scholarly-textual",
+        "event": "composition",
+        "start": 1100,
+        "end": 1200,
+        "label": "12th c. CE",
+        "certainty": "disputed",
+        "basis": "references to Rāmānuja’s era, patron identification, language",
+        "view": "majority of modern scholars",
+        "sources": [
+          {
+            "source": "src:hart-heifetz-1988",
+            "locator": "Introduction"
+          },
+          {
+            "source": "src:zvelebil-1974"
+          },
+          {
+            "source": "src:wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Ramavataram"
+          }
+        ]
+      },
+      {
+        "system": "scholarly-textual",
+        "event": "composition",
+        "start": 800,
+        "end": 900,
+        "label": "9th c. CE",
+        "certainty": "disputed",
+        "basis": "acceptance of the traditional verse",
+        "view": "minority view of some Tamil scholars",
+        "sources": [
+          {
+            "source": "src:zvelebil-1974"
+          }
+        ]
+      }
+    ],
+    "attributes": {
+      "language": "Tamil",
+      "metre": "viruttam",
+      "author": "Kampaṉ",
+      "standard edition": "Kamban Kazhagam, Madras, 1976",
+      "books": "6 (Uttara kāṇṭam by Oṭṭakkūttar)"
+    },
+    "sources": [
+      {
+        "source": "src:hart-heifetz-1988",
+        "locator": "Introduction"
+      },
+      {
+        "source": "src:zvelebil-1974"
+      },
+      {
+        "source": "src:richman-1991"
+      },
+      {
+        "source": "src:wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Ramavataram"
+      }
+    ],
+    "confidence": "medium",
+    "status": "recall",
+    "agent": "regional",
+    "openQuestions": [
+      "Which external evidence (inscription, datable citation) gives the firmest terminus ante quem for Kampaṉ?"
+    ]
+  },
+  {
+    "id": "text:ramcharitmanas",
+    "type": "text",
+    "name": "Rāmcaritmānas",
+    "subtype": "Awadhi epic (kāvya)",
+    "traditions": [
+      "trad:vaishnava",
+      "trad:ramanandi"
+    ],
+    "summary": "Tulsīdās’s Awadhi Rāma epic in seven kāṇḍs of caupāī–dohā verse, begun at Ayodhyā in Saṃvat 1631 (1574 CE) according to the poem itself. It is the dominant Rāma text of North India and the basis of the Rāmlīlā.",
+    "details": "The poem is framed as a set of nested dialogues: Śiva to Pārvatī, the crow-sage Kākabhuśuṇḍi to Garuḍa, and Yājñavalkya to Bharadvāja. Its theology presents Rāma as the supreme Brahman who takes on a human līlā; following the Adhyātma Rāmāyaṇa, it has Sītā enter the fire before the abduction and leave her reflection (pratibimba) to be carried off, and the fire-ordeal burns the reflection (Laṅkākāṇḍa chand before dohā 109).\n\nThe text states its own starting date: “saṃbata soraha sai ekatīsā … naumī bhauma bāra madhu māsā, avadhapurīṃ yaha carita prakāsā” — the year 1631, on the ninth, a Tuesday, in the month Madhu (Caitra), at Ayodhyā. This is Rāmanavamī, Rāma’s birthday.",
+    "dates": [
+      {
+        "system": "scholarly-textual",
+        "event": "composition begun (internal statement)",
+        "start": 1574,
+        "end": 1574,
+        "label": "1574 CE (Saṃvat 1631, Caitra śukla 9)",
+        "certainty": "secure",
+        "basis": "date stated in the poem itself (Bālakāṇḍa)",
+        "view": "internal statement",
+        "sources": [
+          {
+            "source": "src:manas-sanskritdocuments",
+            "locator": "Bālakāṇḍa, caupāīs before dohā 34",
+            "quote": "संबत सोरह सै एकतीसा। करउँ कथा हरि पद धरि सीसा ॥ नौमी भौम बार मधु मासा। अवधपुरीं यह चरित प्रकासा ॥",
+            "url": "https://sanskritdocuments.org/doc_z_otherlang_hindi/manas1_i.html"
+          },
+          {
+            "source": "src:lutgendorf-1991"
+          }
+        ]
+      },
+      {
+        "system": "scholarly-textual",
+        "event": "completion",
+        "start": 1574,
+        "end": 1580,
+        "label": "c. 1576–77 CE (traditional: 2 years 7 months after starting)",
+        "certainty": "estimated",
+        "basis": "hagiographic tradition",
+        "view": "traditional / Lutgendorf",
+        "sources": [
+          {
+            "source": "src:lutgendorf-1991"
+          }
+        ]
+      }
+    ],
+    "attributes": {
+      "language": "Awadhi",
+      "metre": "caupāī with dohā, soraṭhā and chand",
+      "kāṇḍs": "7",
+      "author": "Tulsīdās"
+    },
+    "sources": [
+      {
+        "source": "src:manas-sanskritdocuments",
+        "locator": "Bālakāṇḍa, caupāīs before dohā 34",
+        "url": "https://sanskritdocuments.org/doc_z_otherlang_hindi/manas1_i.html"
+      },
+      {
+        "source": "src:lutgendorf-1991"
+      },
+      {
+        "source": "src:hill-1952"
+      },
+      {
+        "source": "src:wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Ramcharitmanas"
+      }
+    ],
+    "confidence": "high",
+    "status": "verified-online",
+    "agent": "regional",
+    "limits": "The internal date fixes when composition began, not when the text reached its received form; the oldest manuscripts and their dates were not checked in this session.",
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "text:krittivasi-ramayana",
+    "type": "text",
+    "name": "Kṛttivāsī Rāmāyaṇa",
+    "scripts": [
+      {
+        "lang": "bn",
+        "script": "Beng",
+        "text": "কৃত্তিবাসী রামায়ণ"
+      }
+    ],
+    "subtype": "Middle Bengali pā̃cālī",
+    "traditions": [
+      "trad:vaishnava"
+    ],
+    "summary": "The Bengali Rāma narrative (Śrīrām Pā̃cālī) attributed to Kṛttibās Ojhā, composed probably in the 15th century in the pā̃cālī form for recitation and singing, and the most widely read Rāmāyaṇa in Bengal.",
+    "details": "The received text has been heavily reworked by singers and editors; it was first printed at the Serampore Mission Press (1803). It keeps Vālmīki’s overall plot while adding localised episodes — popularly, Rāma’s out-of-season worship of Durgā (akāla-bodhana) before the final battle, and the devotion of Rāvaṇa’s side characters such as Taraṇīsen — which are central to its Bengali reception.",
+    "dates": [
+      {
+        "system": "scholarly-textual",
+        "event": "composition",
+        "start": 1400,
+        "end": 1500,
+        "label": "15th c. CE (if the popular identification of the poet is correct)",
+        "certainty": "disputed",
+        "basis": "autobiographical verses in some manuscripts; identification of the Gauḍa king named",
+        "view": "W. L. Smith / general",
+        "sources": [
+          {
+            "source": "src:smith-wl-1988"
+          },
+          {
+            "source": "src:wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Krittivasi_Ramayan"
+          }
+        ]
+      },
+      {
+        "system": "reception",
+        "event": "first printed edition (Serampore Mission Press)",
+        "start": 1802,
+        "end": 1803,
+        "label": "1803",
+        "certainty": "estimated",
+        "basis": "imprint",
+        "sources": [
+          {
+            "source": "src:wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Krittivasi_Ramayan"
+          }
+        ]
+      }
+    ],
+    "attributes": {
+      "language": "Middle Bengali",
+      "form": "pā̃cālī (payār couplets)"
+    },
+    "sources": [
+      {
+        "source": "src:smith-wl-1988"
+      },
+      {
+        "source": "src:sen-1960"
+      },
+      {
+        "source": "src:wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Krittivasi_Ramayan"
+      }
+    ],
+    "confidence": "medium",
+    "status": "recall",
+    "agent": "regional",
+    "limits": "The printed vulgate reflects centuries of performance; episodes popularly ascribed to Kṛttibās may be later accretions."
+  },
+  {
+    "id": "text:adhyatma-ramayana",
+    "type": "text",
+    "name": "Adhyātma Rāmāyaṇa",
+    "subtype": "Sanskrit Rāma narrative (Purāṇic māhātmya)",
+    "traditions": [
+      "trad:vaishnava",
+      "trad:ramanandi"
+    ],
+    "summary": "A Sanskrit Rāma narrative in seven kāṇḍas presented as a Śiva–Pārvatī dialogue within the Brahmāṇḍa Purāṇa, re-reading the story through Advaita Vedānta: Rāma is the supreme Brahman and events are his līlā. Dated to roughly the 13th–15th c.",
+    "details": "The work is c. 65 chapters (about 4,500 verses). Its best-known innovation is the māyā-Sītā: Rāma, knowing what is to come, asks Sītā to enter the fire and leave an illusory double, who is the one Rāvaṇa carries off; at the fire-ordeal the double vanishes and Agni restores the real Sītā. The text deeply influenced Tulsīdās’s Rāmcaritmānas and was rendered into Malayalam by Eḻuttacchaṉ. Tradition also links it to Rāmānanda.",
+    "dates": [
+      {
+        "system": "scholarly-textual",
+        "event": "composition",
+        "start": 1300,
+        "end": 1500,
+        "label": "c. 13th–15th c. CE",
+        "certainty": "estimated",
+        "basis": "doctrinal content, citations, relation to Rāmānandī circles",
+        "view": "Rocher",
+        "sources": [
+          {
+            "source": "src:rocher-1986",
+            "locator": "pp. 157–159"
+          },
+          {
+            "source": "src:wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Adhyatma_Ramayana"
+          }
+        ]
+      },
+      {
+        "system": "traditional",
+        "event": "authorship",
+        "label": "part of the Brahmāṇḍa Purāṇa, by Vyāsa (traditional)",
+        "certainty": "disputed",
+        "basis": "self-presentation of the text",
+        "view": "traditional",
+        "sources": [
+          {
+            "source": "src:rocher-1986"
+          }
+        ]
+      }
+    ],
+    "attributes": {
+      "language": "Sanskrit",
+      "kāṇḍas": "7",
+      "chapters": "c. 65"
+    },
+    "sources": [
+      {
+        "source": "src:rocher-1986",
+        "locator": "pp. 157–159"
+      },
+      {
+        "source": "src:whaling-1980"
+      },
+      {
+        "source": "src:doniger-1999"
+      },
+      {
+        "source": "src:wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Adhyatma_Ramayana"
+      }
+    ],
+    "confidence": "medium",
+    "status": "recall",
+    "agent": "regional",
+    "openQuestions": [
+      "Exact sarga locators for the māyā-Sītā episode in a named edition (recalled as Araṇyakāṇḍa 7)."
+    ]
+  },
+  {
+    "id": "text:tevaram",
+    "type": "text",
+    "name": "Tēvāram",
+    "scripts": [
+      {
+        "lang": "ta",
+        "script": "Taml",
+        "text": "தேவாரம்"
+      }
+    ],
+    "subtype": "hymn collection (patikam)",
+    "traditions": [
+      "trad:shaiva",
+      "trad:shaiva-siddhanta"
+    ],
+    "summary": "The Tamil Śaiva hymns (patikams) of Campantar, Appar and Cuntarar (7th–8th c.), forming the first seven books of the Tirumurai; about 796 hymns survive. The hymns praise Śiva at named temples, which tradition counts as the 275 Pāṭal Peṟṟa Talams.",
+    "details": "Books 1–3 are Campantar’s (c. 383–384 hymns), 4–6 Appar’s (c. 313), 7 Cuntarar’s (c. 100). According to the Tirumuṟai Kaṇṭa Purāṇam tradition, the Cōḻa king Rājarāja I sought the hymns and Nampi Āṇṭār Nampi found palm-leaf manuscripts, partly eaten by white ants, in a sealed chamber of the Chidambaram temple; Nampi then arranged them by musical mode (paṇ). The hymns are still sung by hereditary ōtuvār singers in Tamil Śaiva temples.",
+    "dates": [
+      {
+        "system": "scholarly-textual",
+        "event": "composition",
+        "start": 600,
+        "end": 850,
+        "label": "c. 7th–8th c. CE",
+        "certainty": "estimated",
+        "basis": "synchronisms with Pallava and Pāṇḍya kings named in hagiography; internal evidence",
+        "view": "Peterson; Zvelebil",
+        "sources": [
+          {
+            "source": "src:peterson-1989"
+          },
+          {
+            "source": "src:wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Tevaram"
+          }
+        ]
+      },
+      {
+        "system": "scholarly-textual",
+        "event": "composition",
+        "start": 550,
+        "end": 900,
+        "label": "c. 6th–9th c. CE",
+        "certainty": "estimated",
+        "basis": "broader range",
+        "view": "Prentiss (6th–8th); Champakalakshmi (7th–9th)",
+        "sources": [
+          {
+            "source": "src:prentiss-1999"
+          },
+          {
+            "source": "src:champakalakshmi-2011"
+          }
+        ]
+      },
+      {
+        "system": "scholarly-textual",
+        "event": "compilation (Nampi Āṇṭār Nampi)",
+        "start": 985,
+        "end": 1100,
+        "label": "late 10th–11th c. CE",
+        "certainty": "estimated",
+        "basis": "tradition linking the recovery to Rājarāja I (r. 985–1014)",
+        "sources": [
+          {
+            "source": "src:peterson-1989"
+          },
+          {
+            "source": "src:wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Tevaram"
+          }
+        ]
+      }
+    ],
+    "attributes": {
+      "language": "Tamil",
+      "books": "Tirumurai 1–7",
+      "hymns": "c. 796 (c. 8,284 stanzas)"
+    },
+    "sources": [
+      {
+        "source": "src:peterson-1989"
+      },
+      {
+        "source": "src:prentiss-1999"
+      },
+      {
+        "source": "src:zvelebil-1974"
+      },
+      {
+        "source": "src:wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Tevaram"
+      }
+    ],
+    "confidence": "high",
+    "status": "recall",
+    "agent": "regional",
+    "limits": "The recovery story is a later traditional account; it does not by itself date the compilation."
+  },
+  {
+    "id": "text:divya-prabandham",
+    "type": "text",
+    "name": "Nālāyira Divya Prabandham",
+    "scripts": [
+      {
+        "lang": "ta",
+        "script": "Taml",
+        "text": "நாலாயிர திவ்ய பிரபந்தம்"
+      }
+    ],
+    "subtype": "hymn collection",
+    "traditions": [
+      "trad:srivaishnava",
+      "trad:vaishnava"
+    ],
+    "summary": "The “Four Thousand Sacred Compositions”: Tamil hymns of the twelve Āḻvārs (c. 6th–9th c.) praising Viṣṇu at named shrines, compiled by Nāthamuni in the 9th–10th century. Śrīvaiṣṇavas regard it as a Tamil Veda and recite it in temple worship.",
+    "details": "The collection includes Āṇṭāḷ’s Tiruppāvai and Nācciyār Tirumoḻi and Nammāḻvār’s Tiruvāymoḻi (1,102 verses). The shrines praised in the hymns are counted by tradition as the 108 Divya Deśams. Śrīvaiṣṇava hagiography holds that Nāthamuni recovered the hymns after reciting Madhurakavi’s Kaṇṇinuṇ Ciṟuttāmpu at Kurukūr until Nammāḻvār appeared to him.",
+    "dates": [
+      {
+        "system": "scholarly-textual",
+        "event": "composition of the hymns",
+        "start": 550,
+        "end": 900,
+        "label": "c. 6th–9th c. CE",
+        "certainty": "estimated",
+        "basis": "internal references, relation to Pallava-period Tamil",
+        "view": "Hardy; Zvelebil",
+        "sources": [
+          {
+            "source": "src:hardy-1983"
+          },
+          {
+            "source": "src:zvelebil-1974"
+          }
+        ]
+      },
+      {
+        "system": "scholarly-textual",
+        "event": "compilation (Nāthamuni)",
+        "start": 850,
+        "end": 1000,
+        "label": "9th–10th c. CE",
+        "certainty": "estimated",
+        "basis": "guru-paramparā chronology",
+        "sources": [
+          {
+            "source": "src:wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Nalayira_Divya_Prabandham"
+          },
+          {
+            "source": "src:wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Nathamuni"
+          }
+        ]
+      }
+    ],
+    "attributes": {
+      "language": "Tamil",
+      "verses": "c. 4,000",
+      "poets": "12 Āḻvārs"
+    },
+    "sources": [
+      {
+        "source": "src:hardy-1983"
+      },
+      {
+        "source": "src:narayanan-1994"
+      },
+      {
+        "source": "src:carman-narayanan-1989"
+      },
+      {
+        "source": "src:wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Nalayira_Divya_Prabandham"
+      }
+    ],
+    "confidence": "high",
+    "status": "recall",
+    "agent": "regional"
+  },
+  {
+    "id": "text:periya-puranam",
+    "type": "text",
+    "name": "Periya Purāṇam",
+    "scripts": [
+      {
+        "lang": "ta",
+        "script": "Taml",
+        "text": "பெரிய புராணம்"
+      }
+    ],
+    "aliases": [
+      "Tiruttoṇṭar Purāṇam"
+    ],
+    "subtype": "hagiography (purāṇam)",
+    "traditions": [
+      "trad:shaiva",
+      "trad:shaiva-siddhanta"
+    ],
+    "summary": "Cēkkiḻār’s 12th-century Tamil hagiography of the sixty-three Śaiva saints (Nāyaṉmār), composed at the Cōḻa court of Kulōttuṅka II and placed as the twelfth and last book of the Tirumurai.",
+    "details": "It expands the list of devotees in Cuntarar’s Tiruttoṇṭattokai and Nampi Āṇṭār Nampi’s Tiruttoṇṭar Tiruvantāti into full narratives. Tradition holds that Kulōttuṅka II asked his minister Cēkkiḻār to write it to wean him from the Jain epic Cīvaka Cintāmaṇi, and that it was first recited at Chidambaram.",
+    "dates": [
+      {
+        "system": "scholarly-textual",
+        "event": "composition",
+        "start": 1133,
+        "end": 1150,
+        "label": "12th c. CE (reign of Kulōttuṅka II, 1133–1150)",
+        "certainty": "estimated",
+        "basis": "regnal synchronism from tradition and internal references",
+        "sources": [
+          {
+            "source": "src:zvelebil-1974"
+          },
+          {
+            "source": "src:wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Periya_Puranam"
+          }
+        ]
+      }
+    ],
+    "attributes": {
+      "language": "Tamil",
+      "author": "Cēkkiḻār",
+      "Tirumurai": "book 12",
+      "saints": "63"
+    },
+    "sources": [
+      {
+        "source": "src:peterson-1989"
+      },
+      {
+        "source": "src:zvelebil-1974"
+      },
+      {
+        "source": "src:wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Periya_Puranam"
+      }
+    ],
+    "confidence": "high",
+    "status": "recall",
+    "agent": "regional",
+    "limits": "A hagiography composed four to five centuries after most of its subjects; it is evidence for 12th-century Śaiva memory, not a contemporary record of the saints."
+  },
+  {
+    "id": "text:gita-govinda",
+    "type": "text",
+    "name": "Gītagovinda",
+    "devanagari": "गीतगोविन्द",
+    "subtype": "Sanskrit gīti-kāvya",
+    "traditions": [
+      "trad:vaishnava",
+      "trad:gaudiya"
+    ],
+    "summary": "Jayadeva’s 12th-century Sanskrit lyrical poem in twelve cantos (24 songs, aṣṭapadī) on the love, separation and reunion of Rādhā and Kṛṣṇa. It is the first major Sanskrit work centred on Rādhā and is sung nightly in the Jagannātha temple, Puri.",
+    "details": "The opening hymn on the ten avatāras (daśāvatāra) includes Balarāma and the Buddha. The poem was taken up as ritual song (sevā) in the Puri temple and as a foundational text in Gauḍīya and other Kṛṣṇa traditions, and inspired a large painting tradition. Jayadeva’s birthplace “Kindubilva” is claimed for Kenduli (Birbhum, Bengal), Kenduli Sasan (Odisha) and a village in Mithilā.",
+    "dates": [
+      {
+        "system": "scholarly-textual",
+        "event": "composition",
+        "start": 1150,
+        "end": 1210,
+        "label": "12th c. CE (late)",
+        "certainty": "estimated",
+        "basis": "tradition of Jayadeva at the court of Lakṣmaṇasena; manuscript and commentary history",
+        "view": "Miller",
+        "sources": [
+          {
+            "source": "src:miller-1977",
+            "locator": "Introduction"
+          },
+          {
+            "source": "src:wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Gita_Govinda"
+          }
+        ]
+      }
+    ],
+    "attributes": {
+      "language": "Sanskrit",
+      "cantos": "12",
+      "songs": "24 prabandhas (aṣṭapadīs)",
+      "author": "Jayadeva"
+    },
+    "sources": [
+      {
+        "source": "src:miller-1977"
+      },
+      {
+        "source": "src:wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Gita_Govinda"
+      },
+      {
+        "source": "src:wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Jayadeva"
+      }
+    ],
+    "confidence": "high",
+    "status": "recall",
+    "agent": "regional"
+  },
+  {
+    "id": "text:jnaneshwari",
+    "type": "text",
+    "name": "Jñāneśvarī",
+    "devanagari": "ज्ञानेश्वरी",
+    "aliases": [
+      "Bhāvārthadīpikā"
+    ],
+    "subtype": "vernacular commentary (ṭīkā)",
+    "traditions": [
+      "trad:varkari"
+    ],
+    "summary": "Jñānadeva’s Marathi ovī commentary (Bhāvārthadīpikā) on the Bhagavad Gītā in eighteen chapters, completed in Śaka 1212 (1290 CE) according to its colophon. It is the foundational scripture of the Vārkarī tradition and among the earliest major works of Marathi literature.",
+    "details": "The colophon places the work “on the bank of the Godāvarī” in the ancient pañcakrośa kṣetra where Śrī Mahālayā dwells — traditionally identified with Nevāsā — during the reign of Śrī Rāmacandra “of the Yadu line” (the Yādava king Rāmacandra), written by Jñānadeva, disciple of Nivṛttinātha, with Saccidānanda Bābā as scribe. An appended verse records that Eknāth produced a corrected text in Śaka 1506 (1584 CE) because variant readings had crept in.",
+    "dates": [
+      {
+        "system": "scholarly-textual",
+        "event": "composition (colophon)",
+        "start": 1290,
+        "end": 1290,
+        "label": "Śaka 1212 (1290 CE)",
+        "certainty": "secure",
+        "basis": "colophon with regnal reference to the Yādava king Rāmacandra",
+        "sources": [
+          {
+            "source": "src:jnaneshwari-sanskritdocuments",
+            "locator": "Jñ 18.1805, 18.1811",
+            "quote": "शके बाराशतें बारोत्तरें| तैं टीका केली ज्ञानेश्वरें| सच्चिदानंदबाबा आदरें| लेखकु जाहला",
+            "url": "https://sanskritdocuments.org/marathi/dndAs/dn18_unic.html"
+          },
+          {
+            "source": "src:pradhan-lambert-1967"
+          }
+        ]
+      },
+      {
+        "system": "reception",
+        "event": "Eknāth’s corrected edition",
+        "start": 1584,
+        "end": 1584,
+        "label": "Śaka 1506 (1584 CE), Tāraṇa saṃvatsara",
+        "certainty": "secure",
+        "basis": "verse appended to the text",
+        "sources": [
+          {
+            "source": "src:jnaneshwari-sanskritdocuments",
+            "locator": "verse after Jñ 18.1811",
+            "quote": "श्रीशके पंधराशें साहोत्तरीं| तारणनामसंवत्सरीं| एकाजनार्दनें अत्यादरीं| गीता- ज्ञानेश्वरी प्रतिशुद्ध केली",
+            "url": "https://sanskritdocuments.org/marathi/dndAs/dn18_unic.html"
+          }
+        ]
+      }
+    ],
+    "attributes": {
+      "language": "Old Marathi",
+      "metre": "ovī",
+      "verses": "c. 9,000 ovīs",
+      "chapters": "18"
+    },
+    "sources": [
+      {
+        "source": "src:jnaneshwari-sanskritdocuments",
+        "locator": "Jñ 18.1803–1811",
+        "url": "https://sanskritdocuments.org/marathi/dndAs/dn18_unic.html"
+      },
+      {
+        "source": "src:pradhan-lambert-1967"
+      },
+      {
+        "source": "src:wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Dnyaneshwari"
+      }
+    ],
+    "confidence": "high",
+    "status": "verified-online",
+    "agent": "regional",
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "text:kakawin-ramayana",
+    "type": "text",
+    "name": "Kakawin Rāmāyaṇa (Old Javanese)",
+    "subtype": "kakawin (Old Javanese kāvya)",
+    "summary": "The Old Javanese Rāmāyaṇa in kakawin (Indic-metre court poetry), the longest kakawin of the Hindu-Buddhist period, composed in Central Java c. 856–930 CE. Its first half closely follows the Sanskrit Bhaṭṭikāvya rather than Vālmīki.",
+    "details": "The poem is anonymous in the manuscripts; Balinese tradition names a poet Yogīśvara. It belongs to the period of the Medang (Mataram) kingdom, which also built the Prambanan temple compound with its Rāmāyaṇa reliefs; whether the reliefs follow this poem or another telling has been debated since Stutterheim (1925). The text survives in Balinese manuscripts and is still recited in Bali.",
+    "dates": [
+      {
+        "system": "scholarly-textual",
+        "event": "composition",
+        "start": 856,
+        "end": 930,
+        "label": "c. 856 – c. 930 CE",
+        "certainty": "estimated",
+        "basis": "linguistic and historical evidence; links with Medang court culture",
+        "view": "Robson",
+        "sources": [
+          {
+            "source": "src:robson-2015"
+          },
+          {
+            "source": "src:wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Kakawin_Ramayana"
+          }
+        ]
+      }
+    ],
+    "attributes": {
+      "language": "Old Javanese",
+      "metre": "kakawin (Indic quantitative metres)",
+      "model text": "Bhaṭṭikāvya (first half)",
+      "manuscripts": "Balinese lontar"
+    },
+    "sources": [
+      {
+        "source": "src:robson-2015"
+      },
+      {
+        "source": "src:hooykaas-1955"
+      },
+      {
+        "source": "src:zoetmulder-1974"
+      },
+      {
+        "source": "src:wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Kakawin_Ramayana"
+      }
+    ],
+    "confidence": "high",
+    "status": "recall",
+    "agent": "regional"
+  },
+  {
+    "id": "text:ramakien",
+    "type": "text",
+    "name": "Ramakien (Thai)",
+    "scripts": [
+      {
+        "lang": "th",
+        "script": "Thai",
+        "text": "รามเกียรติ์"
+      }
+    ],
+    "subtype": "court epic (bot lakhon)",
+    "traditions": [
+      "trad:buddhist"
+    ],
+    "summary": "The Thai national Rāma epic. Earlier Ayutthaya-period versions were largely lost in 1767; the canonical recension was compiled under King Rama I (Phutthayotfa Chulalok) in 1797–1807, partly written by the king, and a shorter version for dance-drama was made under Rama II.",
+    "details": "Phra Ram is an incarnation of Phra Narai (Nārāyaṇa) and Nang Sida of Lakshmi; Thotsakan (Rāvaṇa) is Sida’s father in this telling, who sets her adrift because of an ill omen, after which she is raised by King Chanok (Janaka). Hanuman is a brilliant, amorous white monkey who fathers Macchanu with the mermaid Suvannamaccha. The Ramakien is painted in the galleries of Wat Phra Kaew, Bangkok, and performed in khon masked drama.",
+    "dates": [
+      {
+        "system": "scholarly-textual",
+        "event": "compilation of the Rama I recension",
+        "start": 1797,
+        "end": 1807,
+        "label": "1797–1807 CE",
+        "certainty": "secure",
+        "basis": "court records of Rama I’s reign",
+        "view": "Thai court record (some sources give 1799–1807)",
+        "sources": [
+          {
+            "source": "src:olsson-1968"
+          },
+          {
+            "source": "src:wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Ramakien"
+          }
+        ]
+      },
+      {
+        "system": "scholarly-textual",
+        "event": "earlier Ayutthaya versions",
+        "start": 1600,
+        "end": 1767,
+        "label": "Ayutthaya period, before 1767",
+        "certainty": "estimated",
+        "basis": "fragmentary survivals after the sack of Ayutthaya",
+        "sources": [
+          {
+            "source": "src:wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Ramakien"
+          }
+        ]
+      }
+    ],
+    "attributes": {
+      "language": "Thai",
+      "patron": "Rama I (r. 1782–1809)"
+    },
+    "sources": [
+      {
+        "source": "src:olsson-1968"
+      },
+      {
+        "source": "src:raghavan-1980"
+      },
+      {
+        "source": "src:wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Ramakien"
+      }
+    ],
+    "confidence": "high",
+    "status": "recall",
+    "agent": "regional"
+  },
+  {
+    "id": "text:reamker",
+    "type": "text",
+    "name": "Reamker (Khmer)",
+    "scripts": [
+      {
+        "lang": "km",
+        "script": "Khmr",
+        "text": "រាមកេរ្តិ៍"
+      }
+    ],
+    "aliases": [
+      "Rāmakerti"
+    ],
+    "subtype": "Khmer epic",
+    "traditions": [
+      "trad:buddhist"
+    ],
+    "summary": "The Khmer Rāma epic (Rāmakerti, “Glory of Rāma”), whose surviving text dates from the 16th–17th c. (first part) and later centuries. It recasts the story in Theravāda Buddhist terms and is a mainstay of Cambodian court dance and Lkhon Khol masked theatre.",
+    "details": "Characters: Preah Ream (Rāma), Neang Seda (Sītā), Preah Leak (Lakṣmaṇa), Krong Reap (Rāvaṇa), Hanuman. The surviving first part does not narrate Rāvaṇa’s death; the second part includes Seda’s second exile and her descent into the earth. The encounter of Hanuman and the mermaid Sovann Maccha is a favourite episode. Rāma narratives were carved at Angkor (e.g. Angkor Wat, 12th c.) centuries before the surviving Reamker text.",
+    "dates": [
+      {
+        "system": "scholarly-textual",
+        "event": "composition of the surviving first part",
+        "start": 1500,
+        "end": 1700,
+        "label": "16th–17th c. CE",
+        "certainty": "estimated",
+        "basis": "language and manuscript evidence",
+        "view": "Pou",
+        "sources": [
+          {
+            "source": "src:pou-1977"
+          },
+          {
+            "source": "src:wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Reamker"
+          }
+        ]
+      }
+    ],
+    "attributes": {
+      "language": "Middle Khmer"
+    },
+    "sources": [
+      {
+        "source": "src:pou-1977"
+      },
+      {
+        "source": "src:jacob-1986"
+      },
+      {
+        "source": "src:wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Reamker"
+      }
+    ],
+    "confidence": "high",
+    "status": "recall",
+    "agent": "regional",
+    "limits": "Angkorian reliefs show the Rāma story was known in the Khmer world; they are not evidence for the Reamker text, which is later."
+  },
+  {
+    "id": "text:paumacariya",
+    "type": "text",
+    "name": "Paumacariya of Vimalasūri (Jain)",
+    "devanagari": "पउमचरिय",
+    "aliases": [
+      "Paumacariyam",
+      "Padmacarita (Prakrit)"
+    ],
+    "subtype": "Jain purāṇa (carita)",
+    "traditions": [
+      "trad:jain"
+    ],
+    "summary": "The earliest Jain telling of the Rāma story, in Mahārāṣṭrī Prakrit, by Vimalasūri. Its own colophon dates it 530 (variant 520) years after Mahāvīra’s nirvāṇa; scholars disagree on how to convert this and many place the work between the 1st and 5th centuries CE.",
+    "details": "Rāma is “Pauma” (Padma). The work rationalises the story for Jain readers: rākṣasas and vānaras are human vidyādhara clans (the monkey is a banner emblem), Rāvaṇa is a learned Jain devotee who is not literally ten-headed, and in keeping with the Jain pattern of Baladeva, Vāsudeva and Prativāsudeva it is Lakṣmaṇa, not Rāma, who kills Rāvaṇa. Rāma ends as a Jain monk and attains liberation; Rāvaṇa is to become a future tīrthaṅkara. The frame has King Śreṇika asking Gautama how the popular tellings — monkeys defeating rākṣasas, Kumbhakarṇa sleeping six months — can be true, so the work presents itself as a corrective telling.",
+    "dates": [
+      {
+        "system": "traditional",
+        "event": "composition (colophon)",
+        "label": "530 (var. 520) years after Mahāvīra’s nirvāṇa",
+        "certainty": "disputed",
+        "basis": "praśasti at the end of the text",
+        "view": "the text’s own statement",
+        "sources": [
+          {
+            "source": "src:chandra-paumacariyam",
+            "locator": "p. 39",
+            "url": "https://jainqq.org/pagetext/Critical_Study_Of_Paumacariyam/022643/39"
+          }
+        ]
+      },
+      {
+        "system": "scholarly-textual",
+        "event": "composition (colophon read on the traditional Vīra era)",
+        "start": 3,
+        "end": 4,
+        "label": "c. 4 CE",
+        "certainty": "disputed",
+        "basis": "colophon converted with Vīra-nirvāṇa 527/526 BCE",
+        "view": "Leumann",
+        "sources": [
+          {
+            "source": "src:chandra-paumacariyam",
+            "locator": "p. 39",
+            "url": "https://jainqq.org/pagetext/Critical_Study_Of_Paumacariyam/022643/39"
+          }
+        ]
+      },
+      {
+        "system": "scholarly-textual",
+        "event": "composition (colophon read on Jacobi’s nirvāṇa date)",
+        "start": 53,
+        "end": 63,
+        "label": "c. 53–63 CE",
+        "certainty": "disputed",
+        "basis": "colophon converted with Jacobi’s later Vīra-nirvāṇa",
+        "view": "Jacobi",
+        "sources": [
+          {
+            "source": "src:chandra-paumacariyam",
+            "locator": "p. 39",
+            "url": "https://jainqq.org/pagetext/Critical_Study_Of_Paumacariyam/022643/39"
+          }
+        ]
+      },
+      {
+        "system": "scholarly-textual",
+        "event": "composition",
+        "start": 100,
+        "end": 500,
+        "label": "c. 1st–5th c. CE (not later than the 3rd c. in the commonest view)",
+        "certainty": "disputed",
+        "basis": "language, metre, content; terminus ante quem the Kuvalayamālā of 778 CE",
+        "view": "various scholars",
+        "sources": [
+          {
+            "source": "src:kulkarni-1990"
+          },
+          {
+            "source": "src:wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Vimalsuri"
+          }
+        ]
+      }
+    ],
+    "attributes": {
+      "language": "Mahārāṣṭrī Prakrit",
+      "author": "Vimalasūri",
+      "first external reference": "Uddyotanasūri’s Kuvalayamālā (778 CE)"
+    },
+    "sources": [
+      {
+        "source": "src:chandra-paumacariyam",
+        "locator": "p. 39",
+        "url": "https://jainqq.org/pagetext/Critical_Study_Of_Paumacariyam/022643/39"
+      },
+      {
+        "source": "src:kulkarni-1990"
+      },
+      {
+        "source": "src:jacobi-1914"
+      },
+      {
+        "source": "src:ramanujan-1991"
+      },
+      {
+        "source": "src:wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Vimalsuri"
+      }
+    ],
+    "confidence": "high",
+    "status": "disputed",
+    "agent": "regional",
+    "limits": "A Jain work: it belongs to the Rāma narrative tradition but is not a Hindu scripture, and its corrective framing is a Jain literary strategy, not evidence about an “original” Rāmāyaṇa."
+  },
+  {
+    "id": "text:dasaratha-jataka",
+    "type": "text",
+    "name": "Dasaratha Jātaka (Buddhist)",
+    "aliases": [
+      "Jātaka 461",
+      "Dasaratha-jātaka"
+    ],
+    "subtype": "jātaka (Buddhist birth story)",
+    "traditions": [
+      "trad:buddhist"
+    ],
+    "summary": "Jātaka no. 461 of the Pali canon’s Jātaka collection: a birth-story in which Rāma-paṇḍita, the Bodhisatta, his brother Lakkhaṇa and their sister Sītā, children of King Dasaratha of Bārāṇasī, live twelve years in the Himalaya. There is no abduction and no Rāvaṇa.",
+    "details": "Dasaratha sends his children away to protect them from a second queen who wants the throne for her son Bharata; he dies in the ninth year, but Rāma-paṇḍita keeps to his father’s twelve-year term and sends his sandals to rule in his place. On their return Sītā is made queen consort and Rāma reigns sixteen thousand years. In the closing identification the Buddha says that Suddhodana was Dasaratha, the mother of Rāhula was Sītā, Ānanda was Bharata, and “I myself was Rāmapaṇḍita.”\n\nThe verse (gāthā) portion is older than the prose commentary in which the narrative is told; whether the story preserves an older form of the Rāma legend than Vālmīki’s (Weber’s view) or is a Buddhist reworking (the more common view) is disputed.",
+    "dates": [
+      {
+        "system": "scholarly-textual",
+        "event": "gāthā verses",
+        "start": -300,
+        "end": 200,
+        "label": "c. 3rd c. BCE – 2nd c. CE",
+        "certainty": "disputed",
+        "basis": "canonical status of jātaka verses",
+        "view": "general scholarly",
+        "sources": [
+          {
+            "source": "src:richman-1991"
+          },
+          {
+            "source": "src:brockington-1998"
+          }
+        ]
+      },
+      {
+        "system": "scholarly-textual",
+        "event": "prose commentary (Jātakaṭṭhakathā)",
+        "start": 400,
+        "end": 500,
+        "label": "c. 5th c. CE",
+        "certainty": "estimated",
+        "basis": "redaction of the Pali commentaries",
+        "view": "general scholarly",
+        "sources": [
+          {
+            "source": "src:brockington-1998"
+          }
+        ]
+      }
+    ],
+    "attributes": {
+      "language": "Pali",
+      "collection": "Jātaka (Khuddaka Nikāya) with Jātakaṭṭhakathā"
+    },
+    "sources": [
+      {
+        "source": "src:fausboll-1871",
+        "url": "https://ancient-buddhist-texts.net/English-Texts/Jataka/461.htm"
+      },
+      {
+        "source": "src:cowell-jataka",
+        "locator": "vol. IV, no. 461"
+      },
+      {
+        "source": "src:richman-1991"
+      },
+      {
+        "source": "src:wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Dasaratha_Jataka"
+      }
+    ],
+    "confidence": "high",
+    "status": "verified-online",
+    "agent": "regional",
+    "limits": "A Buddhist text; it is part of the Rāma narrative tradition but not a Hindu text. Its relative age vis-à-vis Vālmīki is unresolved.",
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "text:silappatikaram",
+    "type": "text",
+    "name": "Cilappatikāram",
+    "scripts": [
+      {
+        "lang": "ta",
+        "script": "Taml",
+        "text": "சிலப்பதிகாரம்"
+      }
+    ],
+    "subtype": "Tamil epic (kāppiyam)",
+    "summary": "The Tamil epic of Kaṇṇaki and Kōvalaṉ attributed to Iḷaṅkō Aṭikaḷ, in three books set in the Cōḻa, Pāṇḍya and Cēra capitals, probably composed around the 5th–6th century. It contains early Tamil depictions of Kṛṣṇa, Murukaṉ and Koṟṟavai worship.",
+    "details": "Kōvalaṉ is executed in Madurai on a false charge of stealing the queen’s anklet; Kaṇṇaki proves his innocence, curses and burns the city, and is deified as the goddess Pattiṉi. The epic’s set-piece songs include the hunters’ song to Koṟṟavai, the cowherdesses’ round-dance (āycciyar kuravai) in which girls enact Kṛṣṇa, Balarāma and Piññai, and the hill-people’s dance for Murukaṉ (kuṉṟakkuravai). The attribution to the Cēra prince-ascetic Iḷaṅkō rests on a later prologue; the author is often thought to have been Jain, but the poem honours Vedic, Vaiṣṇava, Śaiva and Jain religion alike.",
+    "dates": [
+      {
+        "system": "scholarly-textual",
+        "event": "composition",
+        "start": 450,
+        "end": 600,
+        "label": "c. 5th–6th c. CE",
+        "certainty": "disputed",
+        "basis": "weekday/astronomical reference, Pāṇḍya portrayal, language",
+        "view": "Zvelebil (not before 5th–6th c.); Mahadevan (450–550)",
+        "sources": [
+          {
+            "source": "src:zvelebil-1974"
+          },
+          {
+            "source": "src:wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Silappatikaram"
+          }
+        ]
+      },
+      {
+        "system": "scholarly-textual",
+        "event": "composition",
+        "start": 150,
+        "end": 250,
+        "label": "c. 2nd c. CE",
+        "certainty": "disputed",
+        "basis": "identification of the Gajabāhu synchronism",
+        "view": "Ramachandra Dikshitar (1939)",
+        "sources": [
+          {
+            "source": "src:wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Silappatikaram"
+          }
+        ]
+      }
+    ],
+    "attributes": {
+      "language": "Tamil",
+      "books": "3 (Pukār, Maturai, Vañci kāṇṭams)",
+      "cantos": "30"
+    },
+    "sources": [
+      {
+        "source": "src:parthasarathy-1993"
+      },
+      {
+        "source": "src:zvelebil-1974"
+      },
+      {
+        "source": "src:wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Silappatikaram"
+      }
+    ],
+    "confidence": "high",
+    "status": "recall",
+    "agent": "regional"
+  },
+  {
+    "id": "char:radha",
+    "type": "character",
+    "name": "Rādhā",
+    "devanagari": "राधा",
+    "traditions": [
+      "trad:gaudiya",
+      "trad:vaishnava"
+    ],
+    "roles": [
+      "gopī",
+      "beloved of Kṛṣṇa",
+      "goddess (in later theology)"
+    ],
+    "summary": "The cowherd beloved of Kṛṣṇa. She is not named in the Bhāgavata Purāṇa; the earliest datable literary mentions are scattered Prakrit and Sanskrit verses (Gāhā Sattasaī, 9th-c. poetics), she becomes the heroine of Jayadeva’s Gītagovinda (12th c.), and the supreme goddess of the Brahmavaivarta Purāṇa and Gauḍīya theology.",
+    "details": "Her development is a clear case of a figure growing across texts. (1) A single Gāhā Sattasaī verse addresses Kṛṣṇa about Rādhā (date of the anthology disputed, before 640 CE); (2) 9th–10th-c. poetics (Ānandavardhana’s Dhvanyāloka, Bhaṭṭa Nārāyaṇa’s Veṇīsaṃhāra) cite verses about her; (3) the Bhāgavata’s rāsa narrative has Kṛṣṇa vanish with one unnamed favoured gopī, whom later commentators identify as Rādhā; (4) the Gītagovinda makes her love the poem’s subject; (5) the Brahmavaivarta Purāṇa (extant version c. 15th–16th c., Bengal) makes her Kṛṣṇa’s eternal śakti in Goloka; (6) Gauḍīya theologians call her Kṛṣṇa’s hlādinī-śakti and regard Caitanya as Rādhā and Kṛṣṇa in one body.\n\nThe Tamil cowherd beloved Piññai (Nappiṉṉai) of the Cilappatikāram and the Āḻvārs is a separate figure; some scholars see her as a southern parallel or precursor (Hardy 1983).",
+    "dates": [
+      {
+        "system": "reception",
+        "event": "earliest literary mention (Gāhā Sattasaī verse)",
+        "start": 200,
+        "end": 640,
+        "label": "before 640 CE (anthology dated 1st–7th c.; disputed)",
+        "certainty": "disputed",
+        "basis": "date of the anthology; Bāṇa cites it in the 7th c.",
+        "view": "Khoroche & Tieken (3rd–4th c.); Sternbach (2nd–4th c.)",
+        "sources": [
+          {
+            "source": "src:khoroche-tieken-2009"
+          },
+          {
+            "source": "src:wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Gaha_Sattasai"
+          }
+        ]
+      },
+      {
+        "system": "reception",
+        "event": "central heroine of the Gītagovinda",
+        "start": 1150,
+        "end": 1210,
+        "label": "late 12th c. CE",
+        "certainty": "estimated",
+        "basis": "date of Jayadeva",
+        "sources": [
+          {
+            "source": "src:miller-1977"
+          }
+        ]
+      },
+      {
+        "system": "reception",
+        "event": "supreme goddess in the extant Brahmavaivarta Purāṇa",
+        "start": 1400,
+        "end": 1600,
+        "label": "c. 15th–16th c. CE",
+        "certainty": "disputed",
+        "basis": "date of the extant recension",
+        "view": "Rocher; Hazra",
+        "sources": [
+          {
+            "source": "src:brown-1974"
+          },
+          {
+            "source": "src:rocher-1986"
+          },
+          {
+            "source": "src:wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Brahma_Vaivarta_Purana"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "source": "src:miller-1977",
+        "locator": "Introduction"
+      },
+      {
+        "source": "src:brown-1974"
+      },
+      {
+        "source": "src:hardy-1983"
+      },
+      {
+        "source": "src:bryant-2007"
+      },
+      {
+        "source": "src:wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Radha"
+      }
+    ],
+    "confidence": "high",
+    "status": "recall",
+    "agent": "regional",
+    "openQuestions": [
+      "Verse number of the Gāhā Sattasaī Rādhā verse in a named edition (often cited as 1.89 in Weber’s numbering — unverified)."
+    ]
+  },
+  {
+    "id": "deity:murugan",
+    "type": "deity",
+    "name": "Murukaṉ (Tamil)",
+    "scripts": [
+      {
+        "lang": "ta",
+        "script": "Taml",
+        "text": "முருகன்"
+      }
+    ],
+    "aliases": [
+      "Cēyōṉ",
+      "Cevvēḷ",
+      "Vēlaṉ",
+      "Kumaraṉ",
+      "Subrahmaṇya"
+    ],
+    "traditions": [
+      "trad:shaiva"
+    ],
+    "roles": [
+      "deity",
+      "god of the kuṟiñci (hill) landscape"
+    ],
+    "summary": "The Tamil god of the hills, Cēyōṉ (“the red one”) of the Tolkāppiyam, praised in the Paripāṭal and Tirumurukāṟṟuppaṭai. From the late Caṅkam period he converges with the northern Skanda-Kārttikeya; the two are kept as separate ids here, joined by an IDENTIFIED_WITH assertion.",
+    "details": "The Tolkāppiyam assigns Cēyōṉ to the kuṟiñci (hill) landscape alongside Māyōṉ (forest-pasture), Vēntaṉ (riverine farmland) and Varuṇaṉ (seashore) — the medieval commentator Nacciṉārkkiṉiyar glosses Cēyōṉ as “red Murukaṉ.” Early poetry knows him as Vēlaṉ, the spear-bearer, worshipped in possession dances (veṟiyāṭṭu). By the Tirumurukāṟṟuppaṭai and the Paripāṭal (c. 3rd–6th c.) he has the six faces and twelve arms, the Kṛttikā birth and the war against Cūr (Śūrapadma) of northern Skanda mythology. His Tamil consort Vaḷḷi, a hunter girl, stands beside Teyvāṉai (Devasenā), Indra’s daughter.\n\nThe Tirumurukāṟṟuppaṭai names six places of the god; later tradition identifies these with six temples, the āṟupaṭai vīṭu (Tiruparaṅkuṉṟam, Tiruccentūr, Paḻaṉi, Cuvāmimalai, Tiruttaṇi, Paḻamutircōlai). The identification of the poem’s sites with these six shrines is itself a traditional reading.",
+    "dates": [
+      {
+        "system": "reception",
+        "event": "earliest Tamil attestation (Tolkāppiyam Poruḷatikāram)",
+        "start": 100,
+        "end": 500,
+        "label": "c. 1st–5th c. CE (layer disputed)",
+        "certainty": "disputed",
+        "basis": "dating of Tolkāppiyam book 3",
+        "view": "Zvelebil; Takahashi",
+        "sources": [
+          {
+            "source": "src:zvelebil-1973"
+          },
+          {
+            "source": "src:wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Tolkāppiyam"
+          }
+        ]
+      },
+      {
+        "system": "reception",
+        "event": "convergence with Skanda evident in Tamil poetry",
+        "start": 200,
+        "end": 600,
+        "label": "c. 3rd–6th c. CE",
+        "certainty": "estimated",
+        "basis": "Skanda motifs in Paripāṭal and Tirumurukāṟṟuppaṭai",
+        "view": "Zvelebil; Clothey",
+        "sources": [
+          {
+            "source": "src:zvelebil-1973"
+          },
+          {
+            "source": "src:clothey-1978"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "source": "src:zvelebil-1973"
+      },
+      {
+        "source": "src:clothey-1978"
+      },
+      {
+        "source": "src:tolkappiyam-pm",
+        "locator": "Poruḷatikāram, Akattiṇaiyiyal 5",
+        "url": "https://projectmadurai.org/pm_etexts/utf8/pmuni0500_01.html"
+      },
+      {
+        "source": "src:wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Kartikeya"
+      }
+    ],
+    "confidence": "high",
+    "status": "verified-online",
+    "agent": "regional",
+    "limits": "Tamil Murukaṉ and Sanskrit Skanda are distinct in origin; their identification is historical convergence plus theological identification, not a single original deity.",
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "trad:pancharatra",
+    "type": "tradition",
+    "name": "Pāñcarātra",
+    "devanagari": "पाञ्चरात्र",
+    "subtype": "Vaiṣṇava ritual tradition (āgama)",
+    "summary": "The Vaiṣṇava ritual and theological tradition of the Pāñcarātra Saṃhitās, centred on Vāsudeva-Nārāyaṇa and the doctrine of four emanations (vyūha: Vāsudeva, Saṅkarṣaṇa, Pradyumna, Aniruddha). It governs worship in many South Indian Vaiṣṇava temples, including Srirangam.",
+    "details": "The name appears already in the Nārāyaṇīya section of the Mahābhārata’s Śāntiparvan. Tradition counts 108 saṃhitās, though more than 200 titles are known; the Sāttvata, Pauṣkara and Jayākhya are called the “three gems.” Rāmānuja and Yāmuna defended the Vedic validity of Pāñcarātra against critics. Temple practice: according to the tradition, Srirangam follows the Pārameśvara Saṃhitā, Melkote the Īśvara Saṃhitā and the Varadarāja temple at Kanchipuram the Jayākhya.",
+    "dates": [
+      {
+        "system": "reception",
+        "event": "surviving early saṃhitās",
+        "start": 600,
+        "end": 1000,
+        "label": "c. 7th–10th c. CE (disputed)",
+        "certainty": "disputed",
+        "basis": "textual borrowing from Śaiva tantras, citations",
+        "view": "Sanderson; Matsubara",
+        "sources": [
+          {
+            "source": "src:sanderson-2009"
+          },
+          {
+            "source": "src:matsubara-1994"
+          }
+        ]
+      },
+      {
+        "system": "reception",
+        "event": "surviving early saṃhitās",
+        "start": 300,
+        "end": 800,
+        "label": "before c. 800 CE",
+        "certainty": "disputed",
+        "basis": "Schrader’s early dating",
+        "view": "Schrader",
+        "sources": [
+          {
+            "source": "src:schrader-1916"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "source": "src:schrader-1916"
+      },
+      {
+        "source": "src:smith-1975"
+      },
+      {
+        "source": "src:matsubara-1994"
+      },
+      {
+        "source": "src:sanderson-2009"
+      },
+      {
+        "source": "src:wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Pancharatra"
+      }
+    ],
+    "confidence": "high",
+    "status": "recall",
+    "agent": "regional"
+  },
+  {
+    "id": "trad:shaiva-siddhanta",
+    "type": "tradition",
+    "name": "Śaiva Siddhānta",
+    "devanagari": "शैवसिद्धान्त",
+    "subtype": "Śaiva theological school",
+    "summary": "The dualist, Veda-congruent school of the Śaiva Mantramārga, based on the Siddhānta Āgamas (traditionally 28), systematised by Kashmirian exegetes (Sadyojyoti, Bhaṭṭa Nārāyaṇakaṇṭha, Bhaṭṭa Rāmakaṇṭha) and later by Aghoraśiva at Chidambaram. In Tamil it fused with the Tirumurai hymns through Meykaṇṭār’s Civañāṉapōtam (13th c.).",
+    "details": "Sanderson (2009) traces the rise of the Siddhānta and its ritual (initiation, daily worship, temple consecration) as the institutional backbone of early medieval Śaivism across India, Cambodia and Java. The Tamil Śaiva Siddhānta of the Meykaṇṭār lineage claims the Tirumurai poets as its saints; the relation between this Tamil school and the older pan-Indian Sanskrit Siddhānta is a subject of scholarship.",
+    "dates": [
+      {
+        "system": "reception",
+        "event": "earliest surviving Siddhānta scripture (Niśvāsa)",
+        "start": 450,
+        "end": 550,
+        "label": "c. 450–550 CE",
+        "certainty": "estimated",
+        "basis": "editors’ dating of the Niśvāsa Mūlasūtra",
+        "view": "Goodall et al.",
+        "sources": [
+          {
+            "source": "src:goodall-2015"
+          }
+        ]
+      },
+      {
+        "system": "reception",
+        "event": "Kashmirian systematisation",
+        "start": 900,
+        "end": 1000,
+        "label": "10th c. CE",
+        "certainty": "estimated",
+        "basis": "dated exegetes",
+        "view": "Sanderson",
+        "sources": [
+          {
+            "source": "src:sanderson-2009"
+          }
+        ]
+      },
+      {
+        "system": "reception",
+        "event": "Tamil Śaiva Siddhānta (Meykaṇṭār)",
+        "start": 1200,
+        "end": 1300,
+        "label": "13th c. CE",
+        "certainty": "estimated",
+        "basis": "guru lineage, inscriptions",
+        "sources": [
+          {
+            "source": "src:zvelebil-1974"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "source": "src:sanderson-2009"
+      },
+      {
+        "source": "src:davis-1991"
+      },
+      {
+        "source": "src:goodall-2015"
+      },
+      {
+        "source": "src:wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Shaiva_Siddhanta"
+      }
+    ],
+    "confidence": "high",
+    "status": "recall",
+    "agent": "regional"
+  },
+  {
+    "id": "trad:srivaishnava",
+    "type": "tradition",
+    "name": "Śrīvaiṣṇava",
+    "devanagari": "श्रीवैष्णव",
+    "subtype": "Vaiṣṇava sampradāya",
+    "summary": "The South Indian Vaiṣṇava tradition that joins the Tamil hymns of the Āḻvārs (as a “Tamil Veda”) with Sanskrit Vedānta (Viśiṣṭādvaita) and Pāñcarātra temple ritual, centred on Viṣṇu with Śrī (Lakṣmī). Its ācāryas include Nāthamuni, Yāmuna, Rāmānuja and Vedānta Deśika.",
+    "details": "The tradition calls its dual heritage ubhaya-vedānta (Sanskrit and Tamil Vedas). Its great temples are Srirangam, Tirumala–Tirupati, Kanchipuram and Melkote; the Divya Prabandham is recited in their liturgy. From the 14th c. it divided into the Vaṭakalai and Teṉkalai schools.",
+    "dates": [
+      {
+        "system": "reception",
+        "event": "formation from Nāthamuni to Rāmānuja",
+        "start": 900,
+        "end": 1150,
+        "label": "c. 10th–12th c. CE",
+        "certainty": "estimated",
+        "basis": "guru-paramparā and inscriptions",
+        "sources": [
+          {
+            "source": "src:carman-1974"
+          },
+          {
+            "source": "src:narayanan-1994"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "source": "src:carman-1974"
+      },
+      {
+        "source": "src:narayanan-1994"
+      },
+      {
+        "source": "src:carman-narayanan-1989"
+      }
+    ],
+    "confidence": "high",
+    "status": "recall",
+    "agent": "regional"
+  },
+  {
+    "id": "trad:gaudiya",
+    "type": "tradition",
+    "name": "Gauḍīya Vaiṣṇava",
+    "devanagari": "गौडीय",
+    "subtype": "Vaiṣṇava sampradāya",
+    "summary": "The Bengal Vaiṣṇava tradition stemming from Caitanya (1486–1534), centred on the love of Rādhā and Kṛṣṇa, with a theology elaborated by the Gosvāmīs of Vṛndāvana and a hagiographic canon including Kṛṣṇadāsa Kavirāja’s Caitanya Caritāmṛta.",
+    "details": "The Bhāgavata Purāṇa is its principal scripture; Jayadeva’s Gītagovinda and Bengali songs of Caṇḍīdās and Vidyāpati were loved by Caitanya. The Gosvāmīs (Rūpa, Sanātana, Jīva and others) systematised a theology of devotional rasa and of Rādhā as Kṛṣṇa’s hlādinī-śakti. Caitanya is regarded by followers as Kṛṣṇa, and as Rādhā and Kṛṣṇa combined.",
+    "dates": [
+      {
+        "system": "reception",
+        "event": "formation",
+        "start": 1500,
+        "end": 1620,
+        "label": "early 16th – early 17th c. CE",
+        "certainty": "estimated",
+        "basis": "Caitanya’s life; dates of Gosvāmī works and the Caitanya Caritāmṛta",
+        "sources": [
+          {
+            "source": "src:dimock-stewart-1999"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "source": "src:dimock-stewart-1999"
+      },
+      {
+        "source": "src:bryant-2007"
+      },
+      {
+        "source": "src:wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Chaitanya_Mahaprabhu"
+      }
+    ],
+    "confidence": "high",
+    "status": "recall",
+    "agent": "regional"
+  },
+  {
+    "id": "trad:virashaiva",
+    "type": "tradition",
+    "name": "Vīraśaiva / Liṅgāyata",
+    "devanagari": "वीरशैव",
+    "aliases": [
+      "Lingayat",
+      "Liṅgāyata"
+    ],
+    "subtype": "Śaiva bhakti tradition",
+    "summary": "The Kannada-speaking Śaiva tradition associated with Basava (12th c.) and the vacana poets (Allama Prabhu, Akka Mahādēvi and others), marked by wearing the personal iṣṭaliṅga, devotion to Śiva alone, and — in the vacanas — criticism of caste, temple ritual and Brahmanical sacrifice.",
+    "details": "Whether Basava founded the tradition or reshaped an existing one is debated (Michael 1992). The relation between the names “Vīraśaiva” and “Liṅgāyata” is also contested in modern Karnataka; both are recorded as aliases without taking sides. The vacanas were written down long after Basava’s time.",
+    "dates": [
+      {
+        "system": "reception",
+        "event": "formative period (Basava and the vacanakāras at Kalyāṇa)",
+        "start": 1150,
+        "end": 1200,
+        "label": "12th c. CE",
+        "certainty": "estimated",
+        "basis": "Kalacuri inscriptions; vacana tradition",
+        "sources": [
+          {
+            "source": "src:michael-1992"
+          },
+          {
+            "source": "src:wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Basava"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "source": "src:ramanujan-1973"
+      },
+      {
+        "source": "src:michael-1992"
+      },
+      {
+        "source": "src:wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Basava"
+      }
+    ],
+    "confidence": "high",
+    "status": "recall",
+    "agent": "regional"
+  },
+  {
+    "id": "trad:kashmir-shaivism",
+    "type": "tradition",
+    "name": "Kashmir Śaivism (Trika)",
+    "devanagari": "त्रिक",
+    "subtype": "Śaiva tantric theology",
+    "summary": "The non-dualist Śaiva traditions of Kashmir — Trika, Krama, Spanda and the Pratyabhijñā philosophy of Somānanda and Utpaladeva — culminating in Abhinavagupta (c. 975–1025) and Kṣemarāja.",
+    "details": "Sanderson stresses that “Kashmir Śaivism” is a modern umbrella for several Kashmirian Śaiva systems, including Kashmirian Śaiva Siddhānta, which was dualist. The fourteenth-century Kashmiri poet Lal Ded (Lallā) is associated by later tradition with Trika thought.",
+    "dates": [
+      {
+        "system": "reception",
+        "event": "classical period",
+        "start": 850,
+        "end": 1050,
+        "label": "c. 9th–11th c. CE",
+        "certainty": "estimated",
+        "basis": "dated works of Utpaladeva and Abhinavagupta",
+        "sources": [
+          {
+            "source": "src:sanderson-1988"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "source": "src:sanderson-1988"
+      },
+      {
+        "source": "src:sanderson-2009"
+      },
+      {
+        "source": "src:dyczkowski-1988"
+      }
+    ],
+    "confidence": "high",
+    "status": "recall",
+    "agent": "regional"
+  },
+  {
+    "id": "trad:jain",
+    "type": "tradition",
+    "name": "Jain tradition",
+    "devanagari": "जैन",
+    "subtype": "religion",
+    "summary": "The Jain religion, here recorded chiefly as the source of its own Rāma and Kṛṣṇa tellings (Vimalasūri’s Paumacariya, Raviṣeṇa’s Padmapurāṇa, Svayambhū’s Paumacariu, Guṇabhadra’s Uttarapurāṇa, Hemacandra) and of Jain poets in Kannada and Tamil such as Pampa.",
+    "details": "In Jain universal history Rāma, Lakṣmaṇa and Rāvaṇa are the eighth Baladeva, Vāsudeva and Prativāsudeva among the sixty-three “illustrious persons” (śalākāpuruṣa); Kṛṣṇa is likewise a Vāsudeva. Jain tellings therefore differ systematically from Hindu ones (e.g. Lakṣmaṇa kills Rāvaṇa). Tagging a work trad:jain records its tradition; it does not make it a deviant Hindu text.",
+    "sources": [
+      {
+        "source": "src:dundas-2002"
+      },
+      {
+        "source": "src:kulkarni-1990"
+      }
+    ],
+    "confidence": "high",
+    "status": "recall",
+    "agent": "regional"
+  },
+  {
+    "id": "trad:buddhist",
+    "type": "tradition",
+    "name": "Buddhist tradition",
+    "devanagari": "बौद्ध",
+    "subtype": "religion",
+    "summary": "The Buddhist religion, here recorded as the source of the Dasaratha Jātaka, of the Mahāyāna Laṅkāvatāra Sūtra’s frame story with Rāvaṇa, and of the Theravāda-framed Rāma tellings of mainland Southeast Asia (Lao Phra Lak Phra Lam as a jātaka; Khmer Reamker; Thai Ramakien).",
+    "details": "In these tellings Rāma is often a bodhisatta, a previous birth of the Buddha, and Rāvaṇa may be compared with Devadatta or Māra. They are part of the Rāma narrative tradition, not Hindu texts.",
+    "sources": [
+      {
+        "source": "src:richman-1991"
+      },
+      {
+        "source": "src:sahai-1996"
+      },
+      {
+        "source": "src:raghavan-1980"
+      }
+    ],
+    "confidence": "high",
+    "status": "recall",
+    "agent": "regional"
+  },
+  {
+    "id": "person:kambar",
+    "type": "person",
+    "name": "Kampaṉ (Kambar)",
+    "scripts": [
+      {
+        "lang": "ta",
+        "script": "Taml",
+        "text": "கம்பர்"
+      }
+    ],
+    "traditions": [
+      "trad:srivaishnava"
+    ],
+    "roles": [
+      "poet"
+    ],
+    "summary": "Tamil poet, author of the Irāmāvatāram (Kamba Rāmāyaṇam), patronised by Caṭaiyappa Vaḷḷal of Tiruveṇṇainallūr. His date is disputed between the 9th and the 12th century, with most modern scholars favouring the 12th.",
+    "details": "Tradition places his birth at Tiruvaḻuntūr in the Cōḻa country and has him honoured by a Cōḻa king with the title Kavicakravarti. Temple tradition holds that his epic was first recited at Srirangam. Other works attributed to him include poems in praise of Nammāḻvār (Caṭakōpar Antāti) and of the plough (Ēr Eḻupatu); these attributions are traditional.",
+    "dates": [
+      {
+        "system": "scholarly-textual",
+        "event": "floruit",
+        "start": 1100,
+        "end": 1250,
+        "label": "12th c. CE (c. 1180–1250 in one reconstruction)",
+        "certainty": "disputed",
+        "basis": "patron and internal references",
+        "view": "majority view",
+        "sources": [
+          {
+            "source": "src:zvelebil-1974"
+          },
+          {
+            "source": "src:wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Kambar_(poet)"
+          }
+        ]
+      },
+      {
+        "system": "traditional",
+        "event": "floruit",
+        "label": "9th c. CE (Śaka 807 verse)",
+        "certainty": "disputed",
+        "basis": "traditional verse",
+        "view": "traditional",
+        "sources": [
+          {
+            "source": "src:zvelebil-1974"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "source": "src:hart-heifetz-1988",
+        "locator": "Introduction"
+      },
+      {
+        "source": "src:zvelebil-1974"
+      },
+      {
+        "source": "src:wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Kambar_(poet)"
+      }
+    ],
+    "confidence": "medium",
+    "status": "recall",
+    "agent": "regional"
+  },
+  {
+    "id": "person:tulsidas",
+    "type": "person",
+    "name": "Tulsīdās",
+    "devanagari": "तुलसीदास",
+    "traditions": [
+      "trad:vaishnava",
+      "trad:ramanandi"
+    ],
+    "roles": [
+      "poet",
+      "devotee"
+    ],
+    "summary": "Awadhi and Braj poet (d. 1623), author of the Rāmcaritmānas (begun 1574), the Vinaya Patrikā, Kavitāvalī and other Rāma-devotional works; he lived in Ayodhyā and above all in Kāśī (Vārāṇasī).",
+    "details": "Hagiography (e.g. Priyādās’s commentary on Nābhādās’s Bhaktamāl) tells of his marriage, renunciation and visions of Hanumān; the Hanumān Cālīsā is attributed to him by tradition, an attribution some scholars question. He is claimed by the Rāmānandī order.",
+    "dates": [
+      {
+        "system": "scholarly-textual",
+        "event": "floruit (dated work)",
+        "start": 1574,
+        "end": 1623,
+        "label": "1574 (Mānas begun) – 1623 CE (death)",
+        "certainty": "estimated",
+        "basis": "internal date of the Mānas; death year in tradition widely accepted",
+        "view": "scholarly",
+        "sources": [
+          {
+            "source": "src:lutgendorf-1991"
+          },
+          {
+            "source": "src:manas-sanskritdocuments",
+            "locator": "Bālakāṇḍa 34",
+            "url": "https://sanskritdocuments.org/doc_z_otherlang_hindi/manas1_i.html"
+          }
+        ]
+      },
+      {
+        "system": "traditional",
+        "event": "birth",
+        "label": "Saṃvat 1554 (1497 CE) per some hagiographies; c. 1532 in common scholarly estimates",
+        "certainty": "disputed",
+        "basis": "hagiographic tradition",
+        "view": "traditional vs scholarly",
+        "sources": [
+          {
+            "source": "src:lutgendorf-1991"
+          },
+          {
+            "source": "src:mcgregor-1984"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "source": "src:lutgendorf-1991"
+      },
+      {
+        "source": "src:mcgregor-1984"
+      },
+      {
+        "source": "src:wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Ramcharitmanas"
+      }
+    ],
+    "confidence": "high",
+    "status": "recall",
+    "agent": "regional"
+  },
+  {
+    "id": "person:krittibas",
+    "type": "person",
+    "name": "Kṛttibās Ojhā",
+    "aliases": [
+      "Krittivasa"
+    ],
+    "traditions": [
+      "trad:vaishnava"
+    ],
+    "roles": [
+      "poet"
+    ],
+    "summary": "Bengali poet to whom the Śrīrām Pā̃cālī (Kṛttivāsī Rāmāyaṇa) is attributed; tradition places him at Phuliyā on the Bhāgīrathī and in the 15th century, though the identification of the king he mentions is disputed.",
+    "dates": [
+      {
+        "system": "scholarly-textual",
+        "event": "floruit",
+        "start": 1380,
+        "end": 1500,
+        "label": "late 14th – 15th c. CE",
+        "certainty": "disputed",
+        "basis": "autobiographical verses of uncertain authenticity",
+        "sources": [
+          {
+            "source": "src:smith-wl-1988"
+          },
+          {
+            "source": "src:wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Krittivasi_Ramayan"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "source": "src:smith-wl-1988"
+      },
+      {
+        "source": "src:sen-1960"
+      },
+      {
+        "source": "src:wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Krittivasi_Ramayan"
+      }
+    ],
+    "confidence": "medium",
+    "status": "recall",
+    "agent": "regional"
+  },
+  {
+    "id": "person:jayadeva",
+    "type": "person",
+    "name": "Jayadeva",
+    "devanagari": "जयदेव",
+    "traditions": [
+      "trad:vaishnava"
+    ],
+    "roles": [
+      "poet"
+    ],
+    "summary": "Sanskrit poet of the late 12th century, author of the Gītagovinda; tradition makes him a poet at the court of Lakṣmaṇasena of Bengal, and both Bengal and Odisha claim his birthplace “Kindubilva.” Two hymns attributed to him are in the Sikh Ādi Granth.",
+    "details": "Odia tradition links him to Puri and to his wife Padmāvatī, a temple dancer; early commentators and modern scholars do not support the Padmāvatī story. Sixteenth-century texts call him a native of Utkala.",
+    "dates": [
+      {
+        "system": "scholarly-textual",
+        "event": "floruit",
+        "start": 1150,
+        "end": 1210,
+        "label": "late 12th c. CE",
+        "certainty": "estimated",
+        "basis": "court of Lakṣmaṇasena (r. c. 1178–1206) per tradition",
+        "view": "Miller",
+        "sources": [
+          {
+            "source": "src:miller-1977"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "source": "src:miller-1977",
+        "locator": "Introduction"
+      },
+      {
+        "source": "src:wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Jayadeva"
+      }
+    ],
+    "confidence": "high",
+    "status": "recall",
+    "agent": "regional"
+  },
+  {
+    "id": "person:jnaneshwar",
+    "type": "person",
+    "name": "Jñāneśvar",
+    "devanagari": "ज्ञानेश्वर",
+    "aliases": [
+      "Jñānadeva",
+      "Dnyandev"
+    ],
+    "traditions": [
+      "trad:varkari"
+    ],
+    "roles": [
+      "poet-saint",
+      "commentator"
+    ],
+    "summary": "Marathi poet-saint (traditionally 1275–1296), disciple of his elder brother Nivṛttinātha, author of the Jñāneśvarī (1290) and the Amṛtānubhava, and revered as a founder of the Vārkarī tradition of Viṭṭhala devotion.",
+    "details": "In the colophon he calls himself “Jñānadeva, son (disciple) of Śrī Nivṛttinātha, born of the line of Maheśa” (i.e. in Nivṛtti’s Nātha lineage). Tradition holds that he entered living samādhi at Āḷandī in 1296.",
+    "dates": [
+      {
+        "system": "traditional",
+        "event": "life",
+        "start": 1275,
+        "end": 1296,
+        "label": "1275–1296 CE (traditional)",
+        "certainty": "estimated",
+        "basis": "hagiography; colophon date 1290 falls within it",
+        "view": "traditional",
+        "sources": [
+          {
+            "source": "src:pradhan-lambert-1967"
+          },
+          {
+            "source": "src:wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Dnyaneshwari"
+          }
+        ]
+      },
+      {
+        "system": "scholarly-textual",
+        "event": "dated work",
+        "start": 1290,
+        "end": 1290,
+        "label": "1290 CE (Jñāneśvarī)",
+        "certainty": "secure",
+        "basis": "colophon",
+        "sources": [
+          {
+            "source": "src:jnaneshwari-sanskritdocuments",
+            "locator": "Jñ 18.1811",
+            "url": "https://sanskritdocuments.org/marathi/dndAs/dn18_unic.html"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "source": "src:pradhan-lambert-1967"
+      },
+      {
+        "source": "src:jnaneshwari-sanskritdocuments",
+        "locator": "Jñ 18.1806",
+        "url": "https://sanskritdocuments.org/marathi/dndAs/dn18_unic.html"
+      },
+      {
+        "source": "src:wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Dnyaneshwari"
+      }
+    ],
+    "confidence": "high",
+    "status": "verified-online",
+    "agent": "regional",
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "person:andal",
+    "type": "person",
+    "name": "Āṇṭāḷ",
+    "scripts": [
+      {
+        "lang": "ta",
+        "script": "Taml",
+        "text": "ஆண்டாள்"
+      }
+    ],
+    "aliases": [
+      "Kōtai",
+      "Godā",
+      "Cūṭikkoṭutta Nācciyār"
+    ],
+    "traditions": [
+      "trad:srivaishnava"
+    ],
+    "roles": [
+      "poet-saint",
+      "Āḻvār"
+    ],
+    "summary": "The only woman among the twelve Āḻvārs, foster-daughter of Periyāḻvār at Śrīvilliputtūr, author of the Tiruppāvai (30 verses) and Nācciyār Tirumoḻi (143 verses in the standard count); she is usually dated to the 8th–9th century.",
+    "details": "Hagiography tells that Periyāḻvār found her as an infant under a tulasī plant in the temple garden, that she wore the garland meant for the god before it was offered (hence “she who gave the garland she had worn”), and that she was united with Raṅganātha at Srirangam. The Tiruppāvai is sung during the month of Mārkaḻi; its name survives, with that of Māṇikkavācakar’s Tiruvempāvai, in the Thai royal Brahman ceremony Triyampawai–Trippawai.",
+    "dates": [
+      {
+        "system": "scholarly-textual",
+        "event": "floruit",
+        "start": 700,
+        "end": 900,
+        "label": "c. 8th–9th c. CE",
+        "certainty": "estimated",
+        "basis": "relation to Periyāḻvār and Pāṇḍya synchronisms",
+        "view": "scholarly",
+        "sources": [
+          {
+            "source": "src:venkatesan-2010"
+          },
+          {
+            "source": "src:hardy-1983"
+          },
+          {
+            "source": "src:wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Andal"
+          }
+        ]
+      },
+      {
+        "system": "traditional",
+        "event": "birth",
+        "label": "early Kali-yuga (Śrīvaiṣṇava hagiography)",
+        "certainty": "disputed",
+        "basis": "guru-paramparā tradition",
+        "view": "traditional",
+        "sources": [
+          {
+            "source": "src:wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Andal"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "source": "src:venkatesan-2010"
+      },
+      {
+        "source": "src:dehejia-1990b"
+      },
+      {
+        "source": "src:hardy-1983"
+      },
+      {
+        "source": "src:wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Andal"
+      }
+    ],
+    "confidence": "high",
+    "status": "recall",
+    "agent": "regional"
+  },
+  {
+    "id": "person:nammalvar",
+    "type": "person",
+    "name": "Nammāḻvār",
+    "scripts": [
+      {
+        "lang": "ta",
+        "script": "Taml",
+        "text": "நம்மாழ்வார்"
+      }
+    ],
+    "aliases": [
+      "Caṭakōpaṉ",
+      "Shatakopa",
+      "Māṟaṉ",
+      "Parāṅkuśa"
+    ],
+    "traditions": [
+      "trad:srivaishnava"
+    ],
+    "roles": [
+      "poet-saint",
+      "Āḻvār"
+    ],
+    "summary": "The foremost Āḻvār (Caṭakōpaṉ, Māṟaṉ) of Kurukūr (Āḻvārtirunagari) in the far south of Tamil Nadu, author of the Tiruvāymoḻi (1,102 verses) and three shorter works; scholars date him to the 8th–9th century.",
+    "details": "His works: Tiruvāymoḻi (1,102 verses), Tiruviruttam (100), Tiruvāciriyam (7) and Periya Tiruvantāti (87). Śrīvaiṣṇavas regard the four as Tamil counterparts of the four Vedas. Hagiography says he sat in silent meditation in a tamarind tree until his disciple Madhurakavi came to him.",
+    "dates": [
+      {
+        "system": "scholarly-textual",
+        "event": "floruit",
+        "start": 750,
+        "end": 900,
+        "label": "c. 8th–9th c. CE",
+        "certainty": "estimated",
+        "basis": "linguistic and historical evidence",
+        "view": "scholarly",
+        "sources": [
+          {
+            "source": "src:hardy-1983"
+          },
+          {
+            "source": "src:ramanujan-1981"
+          },
+          {
+            "source": "src:wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Nammalvar"
+          }
+        ]
+      },
+      {
+        "system": "traditional",
+        "event": "birth",
+        "label": "early Kali-yuga (tradition gives 3059 BCE)",
+        "certainty": "disputed",
+        "basis": "guru-paramparā tradition",
+        "view": "traditional",
+        "sources": [
+          {
+            "source": "src:wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Nammalvar"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "source": "src:ramanujan-1981"
+      },
+      {
+        "source": "src:carman-narayanan-1989"
+      },
+      {
+        "source": "src:hardy-1983"
+      },
+      {
+        "source": "src:wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Nammalvar"
+      }
+    ],
+    "confidence": "high",
+    "status": "recall",
+    "agent": "regional"
+  },
+  {
+    "id": "person:appar",
+    "type": "person",
+    "name": "Appar (Tirunāvukkaracar)",
+    "aliases": [
+      "Tirunavukkarasar",
+      "Nāvukkaracar"
+    ],
+    "traditions": [
+      "trad:shaiva"
+    ],
+    "roles": [
+      "poet-saint",
+      "Nāyaṉār"
+    ],
+    "summary": "Tamil Śaiva poet-saint of the 7th century, author of Tirumurai books 4–6. The Periya Purāṇam tells that he was first a Jain monk named Dharmasena, returned to Śaivism, and brought the Pallava king Mahendravarman I back to Śiva.",
+    "dates": [
+      {
+        "system": "scholarly-textual",
+        "event": "floruit",
+        "start": 600,
+        "end": 680,
+        "label": "7th c. CE",
+        "certainty": "estimated",
+        "basis": "synchronism with Mahendravarman I in hagiography",
+        "sources": [
+          {
+            "source": "src:peterson-1989"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "source": "src:peterson-1989"
+      },
+      {
+        "source": "src:zvelebil-1974"
+      },
+      {
+        "source": "src:wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Tevaram"
+      }
+    ],
+    "confidence": "high",
+    "status": "recall",
+    "agent": "regional"
+  },
+  {
+    "id": "person:sambandar",
+    "type": "person",
+    "name": "Campantar (Tiruñāṉacampantar)",
+    "aliases": [
+      "Sambandar",
+      "Tirugnana Sambandar"
+    ],
+    "traditions": [
+      "trad:shaiva"
+    ],
+    "roles": [
+      "poet-saint",
+      "Nāyaṉār"
+    ],
+    "summary": "Tamil Śaiva child-poet of Cīrkāḻi (7th c.), author of Tirumurai books 1–3 — the largest share of the Tēvāram. The Periya Purāṇam narrates his contest with Jain monks at Madurai and the return of the Pāṇḍya king to Śaivism.",
+    "dates": [
+      {
+        "system": "scholarly-textual",
+        "event": "floruit",
+        "start": 620,
+        "end": 680,
+        "label": "7th c. CE",
+        "certainty": "estimated",
+        "basis": "synchronism with Appar and Pāṇḍya Neṭumāṟaṉ in hagiography",
+        "sources": [
+          {
+            "source": "src:peterson-1989"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "source": "src:peterson-1989"
+      },
+      {
+        "source": "src:zvelebil-1974"
+      },
+      {
+        "source": "src:wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Tevaram"
+      }
+    ],
+    "confidence": "high",
+    "status": "recall",
+    "agent": "regional",
+    "limits": "The Madurai contest is a hagiographic narrative (12th c.); it is evidence of later Śaiva–Jain polemic, not a contemporary record."
+  },
+  {
+    "id": "person:sundarar",
+    "type": "person",
+    "name": "Cuntarar",
+    "aliases": [
+      "Sundarar",
+      "Cuntaramūrtti",
+      "Nampi Ārūraṉ"
+    ],
+    "traditions": [
+      "trad:shaiva"
+    ],
+    "roles": [
+      "poet-saint",
+      "Nāyaṉār"
+    ],
+    "summary": "Tamil Śaiva poet-saint of the 8th century (Cuntaramūrtti), author of Tirumurai book 7; his Tiruttoṇṭattokai lists the devotees whom the Periya Purāṇam later expanded into the sixty-three Nāyaṉmār. Tradition calls him the “friend of Śiva” and links him to Tiruvārūr.",
+    "dates": [
+      {
+        "system": "scholarly-textual",
+        "event": "floruit",
+        "start": 700,
+        "end": 830,
+        "label": "8th – early 9th c. CE",
+        "certainty": "estimated",
+        "basis": "internal references to earlier saints and to Pallava-period kings",
+        "sources": [
+          {
+            "source": "src:peterson-1989"
+          },
+          {
+            "source": "src:wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Tevaram"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "source": "src:peterson-1989"
+      },
+      {
+        "source": "src:zvelebil-1974"
+      },
+      {
+        "source": "src:wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Tevaram"
+      }
+    ],
+    "confidence": "high",
+    "status": "recall",
+    "agent": "regional"
+  },
+  {
+    "id": "person:ramanuja",
+    "type": "person",
+    "name": "Rāmānuja",
+    "devanagari": "रामानुज",
+    "aliases": [
+      "Rāmānujācārya",
+      "Uṭaiyavar",
+      "Emperumāṉār"
+    ],
+    "traditions": [
+      "trad:srivaishnava",
+      "trad:pancharatra"
+    ],
+    "roles": [
+      "ācārya",
+      "theologian"
+    ],
+    "summary": "Śrīvaiṣṇava ācārya and Vedāntin of Śrīperumbudūr, chief exponent of Viśiṣṭādvaita and author of the Śrībhāṣya; he reorganised worship at Srirangam and, during a sojourn in the Hoysala country, at Melkote. Traditional dates are 1017–1137; many scholars prefer 1077–1157.",
+    "dates": [
+      {
+        "system": "traditional",
+        "event": "life",
+        "start": 1017,
+        "end": 1137,
+        "label": "1017–1137 CE (traditional, 120 years)",
+        "certainty": "disputed",
+        "basis": "Śrīvaiṣṇava hagiography",
+        "view": "traditional",
+        "sources": [
+          {
+            "source": "src:carman-1974"
+          },
+          {
+            "source": "src:wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Ramanuja"
+          }
+        ]
+      },
+      {
+        "system": "scholarly-textual",
+        "event": "life",
+        "start": 1077,
+        "end": 1157,
+        "label": "1077–1157 CE",
+        "certainty": "disputed",
+        "basis": "temple records and external literature",
+        "view": "Carman and others",
+        "sources": [
+          {
+            "source": "src:carman-1974"
+          },
+          {
+            "source": "src:wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Ramanuja"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "source": "src:carman-1974"
+      },
+      {
+        "source": "src:wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Ramanuja"
+      }
+    ],
+    "confidence": "high",
+    "status": "recall",
+    "agent": "regional"
+  },
+  {
+    "id": "person:chaitanya",
+    "type": "person",
+    "name": "Caitanya",
+    "devanagari": "चैतन्य",
+    "aliases": [
+      "Caitanya Mahāprabhu",
+      "Gaurāṅga",
+      "Viśvambhara Miśra"
+    ],
+    "traditions": [
+      "trad:gaudiya"
+    ],
+    "roles": [
+      "saint",
+      "avatāra (in Gauḍīya belief)"
+    ],
+    "summary": "Bengali Vaiṣṇava saint (1486–1534), born at Navadvīpa, who spent his last two decades at Puri; the Gauḍīya tradition regards him as Kṛṣṇa, and as Rādhā and Kṛṣṇa in one body. The eight-verse Śikṣāṣṭaka is the only work accepted as his.",
+    "dates": [
+      {
+        "system": "scholarly-textual",
+        "event": "life",
+        "start": 1486,
+        "end": 1534,
+        "label": "1486–1534 CE",
+        "certainty": "secure",
+        "basis": "hagiographies and regnal synchronisms (Pratāparudra of Odisha)",
+        "sources": [
+          {
+            "source": "src:dimock-stewart-1999"
+          },
+          {
+            "source": "src:wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Chaitanya_Mahaprabhu"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "source": "src:dimock-stewart-1999"
+      },
+      {
+        "source": "src:wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Chaitanya_Mahaprabhu"
+      }
+    ],
+    "confidence": "high",
+    "status": "recall",
+    "agent": "regional"
+  },
+  {
+    "id": "person:basava",
+    "type": "person",
+    "name": "Basava",
+    "aliases": [
+      "Basavaṇṇa",
+      "Basaveśvara"
+    ],
+    "traditions": [
+      "trad:virashaiva"
+    ],
+    "roles": [
+      "poet",
+      "minister",
+      "reformer"
+    ],
+    "summary": "Kannada Śaiva poet and minister at the Kalacuri court of Bijjala II at Kalyāṇa (12th c.), whose vacanas, addressed to Kūḍalasaṅgamadēva, are central to the Vīraśaiva / Liṅgāyata tradition.",
+    "details": "The vacanas attributed to him reject caste distinctions, temple worship and sacrifice in favour of devotion and the personal liṅga; tradition credits him with the Anubhava Maṇṭapa assembly of devotees. The vacana collections were compiled long after his death, so individual attributions are uncertain.",
+    "dates": [
+      {
+        "system": "scholarly-textual",
+        "event": "life",
+        "start": 1131,
+        "end": 1196,
+        "label": "1131–1196 CE (one common dating)",
+        "certainty": "disputed",
+        "basis": "Kalacuri synchronism; hagiographies",
+        "view": "one reconstruction",
+        "sources": [
+          {
+            "source": "src:wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Basava"
+          }
+        ]
+      },
+      {
+        "system": "scholarly-textual",
+        "event": "floruit",
+        "start": 1150,
+        "end": 1170,
+        "label": "mid-12th c. CE (minister of Bijjala II)",
+        "certainty": "estimated",
+        "basis": "Kalacuri regnal synchronism",
+        "sources": [
+          {
+            "source": "src:michael-1992"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "source": "src:ramanujan-1973"
+      },
+      {
+        "source": "src:michael-1992"
+      },
+      {
+        "source": "src:wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Basava"
+      }
+    ],
+    "confidence": "high",
+    "status": "recall",
+    "agent": "regional"
+  },
+  {
+    "id": "person:vimalasuri",
+    "type": "person",
+    "name": "Vimalasūri",
+    "devanagari": "विमलसूरि",
+    "traditions": [
+      "trad:jain"
+    ],
+    "roles": [
+      "monk",
+      "poet"
+    ],
+    "summary": "Jain (Śvetāmbara) monk-poet, author of the Prakrit Paumacariya, the earliest surviving Jain Rāma narrative. His date depends on the disputed reading of his colophon (530 years after Mahāvīra) and is placed by scholars anywhere from the 1st to the 5th century CE.",
+    "dates": [
+      {
+        "system": "scholarly-textual",
+        "event": "floruit",
+        "start": 1,
+        "end": 500,
+        "label": "c. 1st–5th c. CE",
+        "certainty": "disputed",
+        "basis": "see text:paumacariya",
+        "sources": [
+          {
+            "source": "src:chandra-paumacariyam",
+            "url": "https://jainqq.org/pagetext/Critical_Study_Of_Paumacariyam/022643/39"
+          },
+          {
+            "source": "src:wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Vimalsuri"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "source": "src:chandra-paumacariyam",
+        "locator": "p. 39",
+        "url": "https://jainqq.org/pagetext/Critical_Study_Of_Paumacariyam/022643/39"
+      },
+      {
+        "source": "src:kulkarni-1990"
+      },
+      {
+        "source": "src:wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Vimalsuri"
+      }
+    ],
+    "confidence": "medium",
+    "status": "disputed",
+    "agent": "regional"
+  }
+]

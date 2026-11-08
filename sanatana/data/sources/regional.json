@@ -1,0 +1,768 @@
+[
+  {
+    "id": "src:zvelebil-1973",
+    "type": "scholarly-book",
+    "title": "The Smile of Murugan: On Tamil Literature of South India",
+    "author": "Kamil V. Zvelebil",
+    "year": "1973",
+    "publisher": "E. J. Brill, Leiden",
+    "agent": "regional"
+  },
+  {
+    "id": "src:zvelebil-1974",
+    "type": "scholarly-book",
+    "title": "Tamil Literature (A History of Indian Literature, vol. X, fasc. 1)",
+    "author": "Kamil V. Zvelebil",
+    "year": "1974",
+    "publisher": "Otto Harrassowitz, Wiesbaden",
+    "agent": "regional"
+  },
+  {
+    "id": "src:clothey-1978",
+    "type": "scholarly-book",
+    "title": "The Many Faces of Murukaṉ: The History and Meaning of a South Indian God",
+    "author": "Fred W. Clothey",
+    "year": "1978",
+    "publisher": "Mouton, The Hague",
+    "agent": "regional"
+  },
+  {
+    "id": "src:mann-2012",
+    "type": "scholarly-book",
+    "title": "The Rise of Mahāsena: The Transformation of Skanda-Kārttikeya in North India from the Kuṣāṇa to Gupta Empires",
+    "author": "Richard D. Mann",
+    "year": "2012",
+    "publisher": "Brill, Leiden",
+    "agent": "regional"
+  },
+  {
+    "id": "src:hart-heifetz-1988",
+    "type": "translation",
+    "title": "The Forest Book of the Rāmāyaṇa of Kampaṉ",
+    "author": "George L. Hart and Hank Heifetz (trans.)",
+    "year": "1988",
+    "publisher": "University of California Press, Berkeley",
+    "url": "https://resolve.cambridge.org/core/journals/journal-of-the-royal-asiatic-society/article/forest-book-of-the-ramayana-of-kampan-translated-with-annotation-and-introduction-by-george-l-hart-and-hank-heifetz-pp-ix-402-errata-slip-berkeley-etc-university-of-california-press-1988-us-3500/DF85CDDDA5054A78BD05DE598FCEF82D",
+    "urlChecked": false,
+    "notes": "Translation of the Āraṇya kāṇṭam with an introduction on Kampaṉ’s date and poetics. URL is a JRAS review record found by search (bibliographic confirmation only).",
+    "agent": "regional"
+  },
+  {
+    "id": "src:ramanujan-1981",
+    "type": "translation",
+    "title": "Hymns for the Drowning: Poems for Viṣṇu by Nammāḻvār",
+    "author": "A. K. Ramanujan (trans.)",
+    "year": "1981",
+    "publisher": "Princeton University Press",
+    "agent": "regional"
+  },
+  {
+    "id": "src:ramanujan-1973",
+    "type": "translation",
+    "title": "Speaking of Śiva",
+    "author": "A. K. Ramanujan (trans.)",
+    "year": "1973",
+    "publisher": "Penguin Books, Harmondsworth",
+    "notes": "Translations of Vīraśaiva vacanas of Basavaṇṇa, Dēvara Dāsimayya, Mahādēviyakka and Allama Prabhu.",
+    "agent": "regional"
+  },
+  {
+    "id": "src:carman-narayanan-1989",
+    "type": "scholarly-book",
+    "title": "The Tamil Veda: Piḷḷāṉ’s Interpretation of the Tiruvāymoḻi",
+    "author": "John Carman and Vasudha Narayanan",
+    "year": "1989",
+    "publisher": "University of Chicago Press",
+    "agent": "regional"
+  },
+  {
+    "id": "src:carman-1974",
+    "type": "scholarly-book",
+    "title": "The Theology of Rāmānuja: An Essay in Interreligious Understanding",
+    "author": "John B. Carman",
+    "year": "1974",
+    "publisher": "Yale University Press, New Haven",
+    "agent": "regional"
+  },
+  {
+    "id": "src:narayanan-1994",
+    "type": "scholarly-book",
+    "title": "The Vernacular Veda: Revelation, Recitation, and Ritual",
+    "author": "Vasudha Narayanan",
+    "year": "1994",
+    "publisher": "University of South Carolina Press, Columbia",
+    "agent": "regional"
+  },
+  {
+    "id": "src:venkatesan-2010",
+    "type": "translation",
+    "title": "The Secret Garland: Āṇṭāḷ’s Tiruppāvai and Nācciyār Tirumoḻi",
+    "author": "Archana Venkatesan (trans.)",
+    "year": "2010",
+    "publisher": "Oxford University Press, New York",
+    "agent": "regional"
+  },
+  {
+    "id": "src:dehejia-1990b",
+    "type": "translation",
+    "title": "Āṇṭāḷ and Her Path of Love: Poems of a Woman Saint from South India",
+    "author": "Vidya Dehejia",
+    "year": "1990",
+    "publisher": "State University of New York Press, Albany",
+    "agent": "regional"
+  },
+  {
+    "id": "src:parthasarathy-1993",
+    "type": "translation",
+    "title": "The Cilappatikāram of Iḷaṅkō Aṭikaḷ: An Epic of South India",
+    "author": "R. Parthasarathy (trans.)",
+    "year": "1993",
+    "publisher": "Columbia University Press, New York",
+    "agent": "regional"
+  },
+  {
+    "id": "src:yocum-1982",
+    "type": "scholarly-book",
+    "title": "Hymns to the Dancing Śiva: A Study of Māṇikkavācakar’s Tiruvācakam",
+    "author": "Glenn E. Yocum",
+    "year": "1982",
+    "publisher": "Heritage Publishers, New Delhi",
+    "agent": "regional"
+  },
+  {
+    "id": "src:shulman-1980",
+    "type": "scholarly-book",
+    "title": "Tamil Temple Myths: Sacrifice and Divine Marriage in the South Indian Śaiva Tradition",
+    "author": "David Dean Shulman",
+    "year": "1980",
+    "publisher": "Princeton University Press",
+    "agent": "regional"
+  },
+  {
+    "id": "src:prentiss-1999",
+    "type": "scholarly-book",
+    "title": "The Embodiment of Bhakti",
+    "author": "Karen Pechilis Prentiss",
+    "year": "1999",
+    "publisher": "Oxford University Press, New York",
+    "agent": "regional"
+  },
+  {
+    "id": "src:champakalakshmi-2011",
+    "type": "scholarly-book",
+    "title": "Religion, Tradition, and Ideology: Pre-colonial South India",
+    "author": "R. Champakalakshmi",
+    "year": "2011",
+    "publisher": "Oxford University Press, New Delhi",
+    "agent": "regional"
+  },
+  {
+    "id": "src:cutler-1987",
+    "type": "scholarly-book",
+    "title": "Songs of Experience: The Poetics of Tamil Devotion",
+    "author": "Norman Cutler",
+    "year": "1987",
+    "publisher": "Indiana University Press, Bloomington",
+    "agent": "regional"
+  },
+  {
+    "id": "src:harman-1989",
+    "type": "scholarly-book",
+    "title": "The Sacred Marriage of a Hindu Goddess",
+    "author": "William P. Harman",
+    "year": "1989",
+    "publisher": "Indiana University Press, Bloomington",
+    "agent": "regional"
+  },
+  {
+    "id": "src:tolkappiyam-pm",
+    "type": "primary-text",
+    "title": "Tolkāppiyam, Poruḷatikāram, with the commentary of Nacciṉārkkiṉiyar (Unicode e-text)",
+    "author": "Project Madurai",
+    "year": "ongoing",
+    "publisher": "Project Madurai",
+    "url": "https://projectmadurai.org/pm_etexts/utf8/pmuni0500_01.html",
+    "urlChecked": true,
+    "notes": "Akattiṇaiyiyal sūtra 5 (Māyōṉ, Cēyōṉ, Vēntaṉ, Varuṇaṉ and the four landscapes) checked in this e-text on 2026-11-08.",
+    "agent": "regional"
+  },
+  {
+    "id": "src:manas-sanskritdocuments",
+    "type": "primary-text",
+    "title": "Śrī Rāmacaritamānasa of Tulasīdāsa (Devanāgarī e-text, one file per kāṇḍa)",
+    "author": "sanskritdocuments.org",
+    "year": "ongoing",
+    "publisher": "sanskritdocuments.org",
+    "url": "https://sanskritdocuments.org/doc_z_otherlang_hindi/manas1_i.html",
+    "urlChecked": true,
+    "notes": "Follows the common (Gita Press-style) dohā numbering. Bālakāṇḍa date verse, Araṇyakāṇḍa reflection-Sītā verses, Laṅkākāṇḍa fire-ordeal chand and Uttarakāṇḍa 120 checked on 2026-11-08.",
+    "agent": "regional"
+  },
+  {
+    "id": "src:jnaneshwari-sanskritdocuments",
+    "type": "primary-text",
+    "title": "Jñāneśvarī (Bhāvārthadīpikā) of Jñānadeva, Marathi e-text, adhyāya 18",
+    "author": "sanskritdocuments.org",
+    "year": "ongoing",
+    "publisher": "sanskritdocuments.org",
+    "url": "https://sanskritdocuments.org/marathi/dndAs/dn18_unic.html",
+    "urlChecked": true,
+    "notes": "Colophon ovīs 18.1803–1811 (Śaka 1212, King Rāmacandra, scribe Saccidānanda) and the appended verse on Eknāth’s corrected text (Śaka 1506) checked on 2026-11-08.",
+    "agent": "regional"
+  },
+  {
+    "id": "src:hill-1952",
+    "type": "translation",
+    "title": "The Holy Lake of the Acts of Rāma: An English Translation of Tulasī Dās’s Rāmacaritamānasa",
+    "author": "W. D. P. Hill",
+    "year": "1952",
+    "publisher": "Oxford University Press, Bombay",
+    "agent": "regional"
+  },
+  {
+    "id": "src:mcgregor-1984",
+    "type": "scholarly-book",
+    "title": "Hindi Literature from Its Beginnings to the Nineteenth Century (A History of Indian Literature, vol. VIII, fasc. 6)",
+    "author": "R. S. McGregor",
+    "year": "1984",
+    "publisher": "Otto Harrassowitz, Wiesbaden",
+    "agent": "regional"
+  },
+  {
+    "id": "src:whaling-1980",
+    "type": "scholarly-book",
+    "title": "The Rise of the Religious Significance of Rāma",
+    "author": "Frank Whaling",
+    "year": "1980",
+    "publisher": "Motilal Banarsidass, Delhi",
+    "agent": "regional"
+  },
+  {
+    "id": "src:hawley-1984",
+    "type": "scholarly-book",
+    "title": "Sūr Dās: Poet, Singer, Saint",
+    "author": "John Stratton Hawley",
+    "year": "1984",
+    "publisher": "University of Washington Press, Seattle",
+    "agent": "regional"
+  },
+  {
+    "id": "src:bryant-hawley-2015",
+    "type": "translation",
+    "title": "Sur’s Ocean: Poems from the Early Tradition",
+    "author": "Kenneth E. Bryant (ed.) and John Stratton Hawley (trans.)",
+    "year": "2015",
+    "publisher": "Murty Classical Library of India, Harvard University Press",
+    "agent": "regional"
+  },
+  {
+    "id": "src:hawley-juergensmeyer-1988",
+    "type": "scholarly-book",
+    "title": "Songs of the Saints of India",
+    "author": "John Stratton Hawley and Mark Juergensmeyer",
+    "year": "1988",
+    "publisher": "Oxford University Press, New York",
+    "agent": "regional"
+  },
+  {
+    "id": "src:pradhan-lambert-1967",
+    "type": "translation",
+    "title": "Jñāneshvari (Bhāvārthadīpikā), 2 vols.",
+    "author": "V. G. Pradhan (trans.), H. M. Lambert (ed.)",
+    "year": "1967–1969",
+    "publisher": "George Allen & Unwin, London",
+    "agent": "regional"
+  },
+  {
+    "id": "src:dhere-2011",
+    "type": "scholarly-book",
+    "title": "Rise of a Folk God: Vitthal of Pandharpur",
+    "author": "R. C. Dhere (trans. Anne Feldhaus)",
+    "year": "2011",
+    "publisher": "Oxford University Press, New York",
+    "agent": "regional"
+  },
+  {
+    "id": "src:novetzke-2008",
+    "type": "scholarly-book",
+    "title": "Religion and Public Memory: A Cultural History of Saint Namdev in India",
+    "author": "Christian Lee Novetzke",
+    "year": "2008",
+    "publisher": "Columbia University Press, New York",
+    "agent": "regional"
+  },
+  {
+    "id": "src:chitre-1991",
+    "type": "translation",
+    "title": "Says Tuka: Selected Poetry of Tukaram",
+    "author": "Dilip Chitre (trans.)",
+    "year": "1991",
+    "publisher": "Penguin Books, New Delhi",
+    "agent": "regional"
+  },
+  {
+    "id": "src:schomer-mcleod-1987",
+    "type": "scholarly-book",
+    "title": "The Sants: Studies in a Devotional Tradition of India",
+    "author": "Karine Schomer and W. H. McLeod (eds.)",
+    "year": "1987",
+    "publisher": "Berkeley Religious Studies Series / Motilal Banarsidass, Delhi",
+    "agent": "regional"
+  },
+  {
+    "id": "src:miller-1977",
+    "type": "translation",
+    "title": "Love Song of the Dark Lord: Jayadeva’s Gītagovinda",
+    "author": "Barbara Stoler Miller (ed. and trans.)",
+    "year": "1977",
+    "publisher": "Columbia University Press, New York",
+    "agent": "regional"
+  },
+  {
+    "id": "src:brown-1974",
+    "type": "scholarly-book",
+    "title": "God as Mother: A Feminine Theology in India. An Historical and Theological Study of the Brahmavaivarta Purāṇa",
+    "author": "Cheever Mackenzie Brown",
+    "year": "1974",
+    "publisher": "Claude Stark, Hartford, Vermont",
+    "agent": "regional"
+  },
+  {
+    "id": "src:dimock-stewart-1999",
+    "type": "translation",
+    "title": "Caitanya Caritāmṛta of Kṛṣṇadāsa Kavirāja: A Translation and Commentary (Harvard Oriental Series 56)",
+    "author": "Edward C. Dimock Jr. (trans.), Tony K. Stewart (ed.)",
+    "year": "1999",
+    "publisher": "Harvard University Press, Cambridge MA",
+    "agent": "regional"
+  },
+  {
+    "id": "src:smith-wl-1988",
+    "type": "scholarly-book",
+    "title": "Rāmāyaṇa Traditions in Eastern India: Assam, Bengal, Orissa",
+    "author": "William L. Smith",
+    "year": "1988",
+    "publisher": "University of Stockholm (Stockholm Studies in Indian Languages and Culture 2)",
+    "agent": "regional"
+  },
+  {
+    "id": "src:neog-1965",
+    "type": "scholarly-book",
+    "title": "Early History of the Vaiṣṇava Faith and Movement in Assam: Śaṅkaradeva and His Times",
+    "author": "Maheswar Neog",
+    "year": "1965",
+    "publisher": "Gauhati University",
+    "agent": "regional"
+  },
+  {
+    "id": "src:sen-1960",
+    "type": "scholarly-book",
+    "title": "History of Bengali Literature",
+    "author": "Sukumar Sen",
+    "year": "1960",
+    "publisher": "Sahitya Akademi, New Delhi",
+    "agent": "regional"
+  },
+  {
+    "id": "src:hoskote-2011",
+    "type": "translation",
+    "title": "I, Lalla: The Poems of Lal Dĕd",
+    "author": "Ranjit Hoskote (trans.)",
+    "year": "2011",
+    "publisher": "Penguin Classics, New Delhi",
+    "agent": "regional"
+  },
+  {
+    "id": "src:grierson-barnett-1920",
+    "type": "translation",
+    "title": "Lallā-Vākyāni, or The Wise Sayings of Lal Dĕd, a Mystic Poetess of Ancient Kashmir",
+    "author": "George Grierson and Lionel D. Barnett",
+    "year": "1920",
+    "publisher": "Royal Asiatic Society, London",
+    "agent": "regional"
+  },
+  {
+    "id": "src:pollock-2003",
+    "type": "scholarly-book",
+    "title": "Literary Cultures in History: Reconstructions from South Asia",
+    "author": "Sheldon Pollock (ed.)",
+    "year": "2003",
+    "publisher": "University of California Press, Berkeley",
+    "notes": "Chapters on Kannada (D. R. Nagaraj), Telugu (V. Narayana Rao), Malayalam (R. Freeman), Hindi (R. S. McGregor), Bengali, Tamil and other literary cultures.",
+    "agent": "regional"
+  },
+  {
+    "id": "src:richman-2008",
+    "type": "scholarly-book",
+    "title": "Ramayana Stories in Modern South India: An Anthology",
+    "author": "Paula Richman (ed.)",
+    "year": "2008",
+    "publisher": "Indiana University Press, Bloomington",
+    "agent": "regional"
+  },
+  {
+    "id": "src:michael-1992",
+    "type": "scholarly-book",
+    "title": "The Origins of Vīraśaiva Sects",
+    "author": "R. Blake Michael",
+    "year": "1992",
+    "publisher": "Motilal Banarsidass, Delhi",
+    "agent": "regional"
+  },
+  {
+    "id": "src:richmond-1990",
+    "type": "scholarly-book",
+    "title": "Indian Theatre: Traditions of Performance",
+    "author": "Farley P. Richmond, Darius L. Swann and Phillip B. Zarrilli (eds.)",
+    "year": "1990",
+    "publisher": "University of Hawaii Press, Honolulu",
+    "agent": "regional"
+  },
+  {
+    "id": "src:zarrilli-2000",
+    "type": "scholarly-book",
+    "title": "Kathakali Dance-Drama: Where Gods and Demons Come to Play",
+    "author": "Phillip B. Zarrilli",
+    "year": "2000",
+    "publisher": "Routledge, London",
+    "agent": "regional"
+  },
+  {
+    "id": "src:doniger-1999",
+    "type": "scholarly-book",
+    "title": "Splitting the Difference: Gender and Myth in Ancient Greece and India",
+    "author": "Wendy Doniger",
+    "year": "1999",
+    "publisher": "University of Chicago Press",
+    "agent": "regional"
+  },
+  {
+    "id": "src:grierson-1926",
+    "type": "journal-article",
+    "title": "On the Adbhuta-Rāmāyaṇa",
+    "author": "George A. Grierson",
+    "year": "1926",
+    "publisher": "Bulletin of the School of Oriental Studies 4 (1)",
+    "agent": "regional"
+  },
+  {
+    "id": "src:jaiswal-1993",
+    "type": "journal-article",
+    "title": "Historical Evolution of the Ram Legend",
+    "author": "Suvira Jaiswal",
+    "year": "1993",
+    "publisher": "Social Scientist 21 (3–4)",
+    "agent": "regional"
+  },
+  {
+    "id": "src:khoroche-tieken-2009",
+    "type": "translation",
+    "title": "Poems on Life and Love in Ancient India: Hāla’s Sattasaī",
+    "author": "Peter Khoroche and Herman Tieken (trans.)",
+    "year": "2009",
+    "publisher": "State University of New York Press, Albany",
+    "agent": "regional"
+  },
+  {
+    "id": "src:iyengar-1983",
+    "type": "scholarly-book",
+    "title": "Asian Variations in Ramayana",
+    "author": "K. R. Srinivasa Iyengar (ed.)",
+    "year": "1983",
+    "publisher": "Sahitya Akademi, New Delhi",
+    "agent": "regional"
+  },
+  {
+    "id": "src:jacobi-1914",
+    "type": "primary-text",
+    "title": "Paumacariya of Vimalasūri (Prakrit text)",
+    "author": "Hermann Jacobi (ed.)",
+    "year": "1914",
+    "publisher": "Jaina Dharma Prasaraka Sabha, Bhavnagar",
+    "notes": "Second edition revised by Muni Puṇyavijaya, Prakrit Text Society, Varanasi (1962). Not consulted directly in this session.",
+    "agent": "regional"
+  },
+  {
+    "id": "src:chandra-paumacariyam",
+    "type": "scholarly-book",
+    "title": "A Critical Study of Paumacariyam",
+    "author": "K. R. Chandra",
+    "publisher": "Research Institute of Prakrit, Jainology and Ahimsa, Vaishali",
+    "url": "https://jainqq.org/pagetext/Critical_Study_Of_Paumacariyam/022643/39",
+    "urlChecked": true,
+    "notes": "p. 39 (online page) discusses the colophon date (530 or 520 years after Mahāvīra’s nirvāṇa), Jacobi’s and Leumann’s readings and the Kuvalayamālā (778 CE) as first external reference. Year of publication not confirmed online.",
+    "agent": "regional"
+  },
+  {
+    "id": "src:kulkarni-1990",
+    "type": "scholarly-book",
+    "title": "The Story of Rāma in Jain Literature",
+    "author": "V. M. Kulkarni",
+    "year": "1990",
+    "publisher": "Saraswati Pustak Bhandar, Ahmedabad",
+    "agent": "regional"
+  },
+  {
+    "id": "src:dundas-2002",
+    "type": "scholarly-book",
+    "title": "The Jains (2nd ed.)",
+    "author": "Paul Dundas",
+    "year": "2002",
+    "publisher": "Routledge, London",
+    "agent": "regional"
+  },
+  {
+    "id": "src:fausboll-1871",
+    "type": "translation",
+    "title": "The Dasaratha-Jātaka, Being the Buddhist Story of King Rāma",
+    "author": "V. Fausbøll (ed. and trans.)",
+    "year": "1871",
+    "publisher": "Copenhagen",
+    "url": "https://ancient-buddhist-texts.net/English-Texts/Jataka/461.htm",
+    "urlChecked": true,
+    "license": "public domain",
+    "notes": "Text checked in the online reproduction at ancient-buddhist-texts.net on 2026-11-08.",
+    "agent": "regional"
+  },
+  {
+    "id": "src:cowell-jataka",
+    "type": "translation",
+    "title": "The Jātaka, or Stories of the Buddha’s Former Births, vol. IV (trans. W. H. D. Rouse)",
+    "author": "E. B. Cowell (ed.)",
+    "year": "1901",
+    "publisher": "Cambridge University Press",
+    "url": "https://www.sacred-texts.com/bud/j4/index.htm",
+    "urlChecked": false,
+    "license": "public domain",
+    "notes": "No. 461 Dasaratha-Jātaka. sacred-texts.com returned HTTP 403 to automated fetch in this session.",
+    "agent": "regional"
+  },
+  {
+    "id": "src:suzuki-1932",
+    "type": "translation",
+    "title": "The Laṅkāvatāra Sūtra: A Mahāyāna Text",
+    "author": "D. T. Suzuki (trans.)",
+    "year": "1932",
+    "publisher": "George Routledge & Sons, London",
+    "license": "public domain in some jurisdictions",
+    "agent": "regional"
+  },
+  {
+    "id": "src:robson-2015",
+    "type": "translation",
+    "title": "The Old Javanese Rāmāyaṇa: A New English Translation with an Introduction and Notes",
+    "author": "Stuart Robson",
+    "year": "2015",
+    "publisher": "Research Institute for Languages and Cultures of Asia and Africa (ILCAA), Tokyo",
+    "notes": "Dating “between 856 and about 930” quoted from Robson via Wikipedia; edition not consulted directly.",
+    "agent": "regional"
+  },
+  {
+    "id": "src:hooykaas-1955",
+    "type": "scholarly-book",
+    "title": "The Old-Javanese Rāmāyaṇa Kakawin, with Special Reference to the Problem of Interpolation in Kakawins",
+    "author": "C. Hooykaas",
+    "year": "1955",
+    "publisher": "Martinus Nijhoff, ’s-Gravenhage (VKI 16)",
+    "agent": "regional"
+  },
+  {
+    "id": "src:zoetmulder-1974",
+    "type": "scholarly-book",
+    "title": "Kalangwan: A Survey of Old Javanese Literature",
+    "author": "P. J. Zoetmulder",
+    "year": "1974",
+    "publisher": "Martinus Nijhoff, The Hague",
+    "agent": "regional"
+  },
+  {
+    "id": "src:stutterheim-1925",
+    "type": "scholarly-book",
+    "title": "Rāma-Legenden und Rāma-Reliefs in Indonesien",
+    "author": "Willem F. Stutterheim",
+    "year": "1925",
+    "publisher": "Georg Müller, München",
+    "notes": "English translation: Rāma-Legends and Rāma-Reliefs in Indonesia, IGNCA / Abhinav, New Delhi, 1989.",
+    "agent": "regional"
+  },
+  {
+    "id": "src:pou-1977",
+    "type": "translation",
+    "title": "Rāmakerti (XVIe–XVIIe siècles)",
+    "author": "Saveros Pou (trans.)",
+    "year": "1977",
+    "publisher": "École française d’Extrême-Orient, Paris",
+    "agent": "regional"
+  },
+  {
+    "id": "src:jacob-1986",
+    "type": "translation",
+    "title": "Reamker (Rāmakerti): The Cambodian Version of the Rāmāyaṇa",
+    "author": "Judith M. Jacob (trans.)",
+    "year": "1986",
+    "publisher": "Royal Asiatic Society, London",
+    "agent": "regional"
+  },
+  {
+    "id": "src:olsson-1968",
+    "type": "translation",
+    "title": "The Ramakien: A Prose Translation of the Thai Ramayana",
+    "author": "Ray A. Olsson",
+    "year": "1968",
+    "publisher": "Praepittaya, Bangkok",
+    "agent": "regional"
+  },
+  {
+    "id": "src:mcgovern-2017",
+    "type": "journal-article",
+    "title": "Balancing the Foreign and the Familiar in the Articulation of Kingship: The Royal Court Brahmans of Thailand",
+    "author": "Nathan McGovern",
+    "year": "2017",
+    "publisher": "Journal of Southeast Asian Studies 48 (2): 283–303",
+    "url": "https://www.cambridge.org/core/journals/journal-of-southeast-asian-studies/article/balancing-the-foreign-and-the-familiar-in-the-articulation-of-kingship-the-royal-court-brahmans-of-thailand/5079FDD2067B360E4CC0A67DE6B1C42F",
+    "urlChecked": true,
+    "notes": "DOI 10.1017/S002246341700008X. Checked 2026-11-08 for the Triyampawai–Trippawai ceremony and its Tamil hymn names.",
+    "agent": "regional"
+  },
+  {
+    "id": "src:ikram-1980",
+    "type": "primary-text",
+    "title": "Hikayat Sri Rama: Suntingan Naskah Disertai Telaah Amanat dan Struktur",
+    "author": "Achadiati Ikram",
+    "year": "1980",
+    "publisher": "Universitas Indonesia, Jakarta",
+    "notes": "Critical edition based on Bodleian MS Laud Or. 291 (pre-1633), per the Malay Concordance Project bibliography (search result; not opened).",
+    "agent": "regional"
+  },
+  {
+    "id": "src:raghavan-1980",
+    "type": "scholarly-book",
+    "title": "The Ramayana Tradition in Asia",
+    "author": "V. Raghavan (ed.)",
+    "year": "1980",
+    "publisher": "Sahitya Akademi, New Delhi",
+    "notes": "Papers of the International Seminar on the Ramayana Tradition in Asia, New Delhi, 1975.",
+    "agent": "regional"
+  },
+  {
+    "id": "src:sahai-1996",
+    "type": "scholarly-book",
+    "title": "The Rama Jataka in Laos: A Study in the Phra Lak Phra Lam (2 vols.)",
+    "author": "Sachchidanand Sahai",
+    "year": "1996",
+    "publisher": "B. R. Publishing, Delhi",
+    "agent": "regional"
+  },
+  {
+    "id": "src:brandon-1967",
+    "type": "scholarly-book",
+    "title": "Theatre in Southeast Asia",
+    "author": "James R. Brandon",
+    "year": "1967",
+    "publisher": "Harvard University Press, Cambridge MA",
+    "agent": "regional"
+  },
+  {
+    "id": "src:unesco-ich",
+    "type": "institutional",
+    "title": "UNESCO Intangible Cultural Heritage — Lists and Register of Good Safeguarding Practices",
+    "author": "UNESCO",
+    "year": "ongoing",
+    "publisher": "UNESCO",
+    "url": "https://ich.unesco.org/en/lists",
+    "urlChecked": true,
+    "notes": "Element pages for Rāmlīlā, Kūṭiyāṭṭam, Wayang, Royal Ballet of Cambodia and Khon checked 2026-11-08.",
+    "agent": "regional"
+  },
+  {
+    "id": "src:schrader-1916",
+    "type": "scholarly-book",
+    "title": "Introduction to the Pāñcarātra and the Ahirbudhnya Saṃhitā",
+    "author": "F. Otto Schrader",
+    "year": "1916",
+    "publisher": "Adyar Library, Madras",
+    "agent": "regional"
+  },
+  {
+    "id": "src:smith-1975",
+    "type": "scholarly-book",
+    "title": "A Descriptive Bibliography of the Printed Texts of the Pāñcarātrāgama (2 vols.)",
+    "author": "H. Daniel Smith",
+    "year": "1975–1980",
+    "publisher": "Oriental Institute, Baroda",
+    "agent": "regional"
+  },
+  {
+    "id": "src:krishnamacharya-1931",
+    "type": "primary-text",
+    "title": "Jayākhyasaṃhitā (Gaekwad’s Oriental Series 54)",
+    "author": "Embar Krishnamacharya (ed.)",
+    "year": "1931",
+    "publisher": "Oriental Institute, Baroda",
+    "notes": "With a foreword by B. Bhattacharyya arguing for an early date.",
+    "agent": "regional"
+  },
+  {
+    "id": "src:matsubara-1994",
+    "type": "scholarly-book",
+    "title": "Pāñcarātra Saṃhitās and Early Vaiṣṇava Theology",
+    "author": "Mitsunori Matsubara",
+    "year": "1994",
+    "publisher": "Motilal Banarsidass, Delhi",
+    "agent": "regional"
+  },
+  {
+    "id": "src:goodall-2015",
+    "type": "primary-text",
+    "title": "The Niśvāsatattvasaṃhitā: The Earliest Surviving Śaiva Tantra, vol. 1",
+    "author": "Dominic Goodall, Alexis Sanderson, Harunaga Isaacson et al. (eds.)",
+    "year": "2015",
+    "publisher": "Institut Français de Pondichéry / EFEO / Universität Hamburg (Collection Indologie 128)",
+    "agent": "regional"
+  },
+  {
+    "id": "src:hatley-2007",
+    "type": "scholarly-book",
+    "title": "The Brahmayāmalatantra and Early Śaiva Cult of Yoginīs",
+    "author": "Shaman Hatley",
+    "year": "2007",
+    "publisher": "PhD dissertation, University of Pennsylvania",
+    "agent": "regional"
+  },
+  {
+    "id": "src:davis-1991",
+    "type": "scholarly-book",
+    "title": "Ritual in an Oscillating Universe: Worshipping Śiva in Medieval India",
+    "author": "Richard H. Davis",
+    "year": "1991",
+    "publisher": "Princeton University Press",
+    "agent": "regional"
+  },
+  {
+    "id": "src:sanderson-1988",
+    "type": "journal-article",
+    "title": "Śaivism and the Tantric Traditions",
+    "author": "Alexis Sanderson",
+    "year": "1988",
+    "publisher": "in S. Sutherland et al. (eds.), The World’s Religions, Routledge, London, pp. 660–704",
+    "agent": "regional"
+  },
+  {
+    "id": "src:goudriaan-gupta-1981",
+    "type": "scholarly-book",
+    "title": "Hindu Tantric and Śākta Literature (A History of Indian Literature, vol. II, fasc. 2)",
+    "author": "Teun Goudriaan and Sanjukta Gupta",
+    "year": "1981",
+    "publisher": "Otto Harrassowitz, Wiesbaden",
+    "agent": "regional"
+  },
+  {
+    "id": "src:dyczkowski-1988",
+    "type": "scholarly-book",
+    "title": "The Canon of the Śaivāgama and the Kubjikā Tantras of the Western Kaula Tradition",
+    "author": "Mark S. G. Dyczkowski",
+    "year": "1988",
+    "publisher": "State University of New York Press, Albany",
+    "agent": "regional"
+  }
+]
