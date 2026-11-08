@@ -11421,5 +11421,2729 @@
   "agent": "temple",
   "limits": "Fabric undated; the textual citations are as reported, not verified.",
   "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:budhanilkantha",
+  "type": "temple",
+  "name": "Budhānīlakaṇṭha, Kathmandu valley",
+  "iast": "Budhānīlakaṇṭha",
+  "aliases": [
+   "Budhanilkantha Temple",
+   "Narayanthan",
+   "Jalashayana Narayana"
+  ],
+  "subtype": "open-air tank shrine",
+  "traditions": [
+   "trad:vaishnava"
+  ],
+  "summary": "Open-air shrine at the foot of Shivapuri hill north of Kathmandu where a colossal stone Viṣṇu lies on the coils of Śeṣa in a tank; the image is generally assigned to the Licchavi period (7th c.), and by tradition Nepal’s kings did not look upon it.",
+  "details": "The sleeping Viṣṇu (Jalaśayana Nārāyaṇa) is about 5 m long, carved from a single stone. Legend tells of farmers striking it with a plough; another tradition says King Pratāp Malla (1641–74) saw in a vision that a king who looked on it would die, so the Shah kings avoided it. Newar Buddhists also venerate the image. The name (“old blue-throat”) recalls Śiva, who is said to be reflected in the water.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "sculpture",
+    "start": 600,
+    "end": 699,
+    "label": "7th c. (Licchavi)",
+    "certainty": "estimated",
+    "basis": "style; the reference says “more than 1,400 years old”",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Budhanilkantha_Temple"
+     },
+     {
+      "source": "src:slusser-1982"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 27.77806,
+   "lon": 85.36222,
+   "precision": "approximate",
+   "label": "Budhanilkantha, Kathmandu district, Nepal",
+   "country": "Nepal"
+  },
+  "attributes": {
+   "coordinateSource": "Wikidata P625 only"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Budhanilkantha_Temple"
+   },
+   {
+    "source": "src:slusser-1982"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q1001415"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The date is for the sculpture, not the modern enclosure; the royal taboo is tradition.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:guhyeshwari",
+  "type": "temple",
+  "name": "Guhyeśvarī temple, Kathmandu",
+  "iast": "Guhyeśvarī",
+  "aliases": [
+   "Guheswari",
+   "Gujeshwari"
+  ],
+  "subtype": "structural temple",
+  "traditions": [
+   "trad:shakta"
+  ],
+  "summary": "Tantric goddess temple on the Bāgmatī about 1 km east of Paśupatinātha, revered as a Śakti pīṭha (the place of Satī’s secret parts or knees in different lists); renovated by Pratāp Malla in the 17th century.",
+  "details": "The goddess is worshipped in a water-filled hollow under an open canopy; the temple is closed to non-Hindus. The reference states that the Devī Bhāgavata Purāṇa includes it in its list of sacred places of the Goddess (locator not verified). It is paired with Paśupatinātha in Kathmandu’s ritual landscape.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "renovation",
+    "start": 1641,
+    "end": 1674,
+    "label": "17th c. (Pratāp Malla)",
+    "certainty": "estimated",
+    "basis": "as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Guhyeshwari_Temple"
+     },
+     {
+      "source": "src:slusser-1982"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 27.71111,
+   "lon": 85.35333,
+   "precision": "exact",
+   "label": "Pashupati area, Kathmandu, Nepal",
+   "country": "Nepal"
+  },
+  "attributes": {
+   "unesco": "within the Paśupati monument zone of the Kathmandu Valley — UNESCO World Heritage property (inscribed 1979)",
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 0 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Guhyeshwari_Temple"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Guhyeshwari_Temple"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q5615319"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The renovation date is as reported; the pīṭha identification and list-placement vary by text.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:dakshinkali",
+  "type": "temple",
+  "name": "Dakṣiṇkālī temple",
+  "iast": "Dakṣiṇakālī",
+  "aliases": [
+   "Dakshinkali Temple"
+  ],
+  "subtype": "structural temple",
+  "traditions": [
+   "trad:shakta"
+  ],
+  "summary": "Open-air Kālī shrine in a ravine south of Kathmandu at Pharping, famous for animal sacrifices (especially at Dasaĩ); the goddess is shown with her right foot on Śiva’s chest.",
+  "details": "Tradition credits the shrine to a 17th-century Malla king (Pratāp Malla) after a dream; this is recall and not in the reference consulted.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "surviving-structure",
+    "start": 1600,
+    "end": 1999,
+    "label": "undated (17th-c. foundation traditionally claimed)",
+    "certainty": "disputed",
+    "basis": "no dates in the reference consulted",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Dakshinkali_Temple"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 27.58333,
+   "lon": 85.25,
+   "precision": "approximate",
+   "label": "Pharping, Kathmandu valley, Nepal",
+   "country": "Nepal"
+  },
+  "attributes": {
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 0 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Dakshinkali_Temple"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Dakshinkali_Temple"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q5210100"
+   }
+  ],
+  "confidence": "low",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The foundation date is not established; animal sacrifice is a living practice recorded here neutrally.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:manakamana",
+  "type": "temple",
+  "name": "Manakāmanā temple, Gorkha",
+  "iast": "Manakāmanā",
+  "aliases": [
+   "Manakamana Temple"
+  ],
+  "subtype": "structural temple",
+  "traditions": [
+   "trad:shakta"
+  ],
+  "summary": "Two-tiered pagoda temple of the wish-granting goddess Manakāmanā (a form of Bhagavatī) on a ridge above the Trishuli–Marsyangdi confluence in Gorkha district, founded by tradition in 1678 by the priest Arman Rayamajhi; a cable car has served it since 1998 (recall).",
+  "details": "Legend links the goddess to the queen of Rām Śāh of Gorkha, whose devotee Lakhan Thāpa became the first priest. Prithvī Nārāyaṇ Śāh set up an endowment for the temple in 1764–65; an inscription records a gold-plated gate in 1802–03; the temple began to lean after the 1934 and 1988 earthquakes.",
+  "dates": [
+   {
+    "system": "traditional",
+    "event": "founding (tradition)",
+    "label": "the goddess and the queen of Rām Śāh (legend)",
+    "certainty": "estimated",
+    "basis": "temple tradition (sthala-purāṇa / local narrative); not a historical date",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Manakamana_Temple"
+     }
+    ]
+   },
+   {
+    "system": "material",
+    "event": "construction",
+    "start": 1678,
+    "end": 1678,
+    "label": "1678 (founding by Arman Rayamajhi, as reported)",
+    "certainty": "estimated",
+    "basis": "as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Manakamana_Temple"
+     }
+    ]
+   },
+   {
+    "system": "material",
+    "event": "dated additions",
+    "start": 1764,
+    "end": 1803,
+    "label": "1764–65 endowment; 1802–03 golden gate",
+    "certainty": "estimated",
+    "basis": "inscriptions as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Manakamana_Temple"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 27.9045,
+   "lon": 84.58425,
+   "precision": "exact",
+   "label": "Manakamana, Gorkha district, Nepal",
+   "country": "Nepal"
+  },
+  "attributes": {
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 508 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Manakamana_Temple"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Manakamana_Temple"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q2385286"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The 17th-century date and legend are as reported; the cable-car date is recall.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:nyatapola",
+  "type": "temple",
+  "name": "Nyātāpola temple, Bhaktapur",
+  "iast": "Nyātāpola",
+  "aliases": [
+   "Nyatapola Temple",
+   "Ṅātāpola"
+  ],
+  "subtype": "structural temple",
+  "traditions": [
+   "trad:shakta"
+  ],
+  "summary": "Five-tiered pagoda of the goddess Siddhilakṣmī in Taumadhi square, Bhaktapur — the tallest temple in Nepal (c. 30 m) — built in six months in 1702 for King Bhūpatīndra Malla; it survived the 1934 and 2015 earthquakes.",
+  "details": "Pairs of guardian figures — wrestlers, elephants, lions, griffins and goddesses — flank the stairway, each said to be ten times stronger than the pair below. The sanctum image is hidden from the public. No foundation inscription has been found on the temple; a damaged inscription naming it was found reused as a step in Bhaktapur Durbar Square.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "construction",
+    "start": 1702,
+    "end": 1702,
+    "label": "1702 CE (25 January–26 June)",
+    "certainty": "secure",
+    "basis": "chronicle dates as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nyatapola_Temple"
+     },
+     {
+      "source": "src:slusser-1982"
+     },
+     {
+      "source": "src:gutschow-2011"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 27.67139,
+   "lon": 85.42861,
+   "precision": "exact",
+   "label": "Taumadhi Square, Bhaktapur, Nepal",
+   "country": "Nepal"
+  },
+  "attributes": {
+   "unesco": "Bhaktapur Durbar Square monument zone of the Kathmandu Valley — UNESCO World Heritage property (inscribed 1979)",
+   "height": "c. 30–33 m",
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 68 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Nyatapola_Temple"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Nyatapola_Temple"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q1513892"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The dating rests on chronicle evidence, since the temple’s own inscription is lost.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:krishna-mandir-patan",
+  "type": "temple",
+  "name": "Kṛṣṇa Mandir, Patan",
+  "iast": "Kṛṣṇa Mandira",
+  "aliases": [
+   "Krishna Mandir",
+   "Chyasim Deval"
+  ],
+  "subtype": "structural temple",
+  "traditions": [
+   "trad:vaishnava"
+  ],
+  "summary": "Stone śikhara temple of Kṛṣṇa in Patan Durbar Square built in the 17th century (1637) by King Siddhinarasiṃha Malla, whose upper-storey friezes illustrate the Mahābhārata and Rāmāyaṇa with Newari captions; damaged in 2015 and restored by 2018.",
+  "details": "The temple, with Rukmiṇī and Satyabhāmā beside Kṛṣṇa, is a rare Nepalese example of a North Indian stone śikhara surrounded by pavilions. Slusser discusses its epic friezes; the 1637 year is from recall (the reference gives only the century).",
+  "dates": [
+   {
+    "system": "material",
+    "event": "construction",
+    "start": 1637,
+    "end": 1637,
+    "label": "1637 CE (Siddhinarasiṃha Malla)",
+    "certainty": "estimated",
+    "basis": "reign of Siddhinarasiṃha (century in the reference; year from recall)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Krishna_Mandir,_Patan"
+     },
+     {
+      "source": "src:slusser-1982"
+     }
+    ]
+   },
+   {
+    "system": "material",
+    "event": "renovation",
+    "start": 2015,
+    "end": 2018,
+    "label": "restored 2018 after the 2015 earthquake",
+    "certainty": "estimated",
+    "basis": "as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Krishna_Mandir,_Patan"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 27.67361,
+   "lon": 85.325,
+   "precision": "exact",
+   "label": "Patan Durbar Square, Lalitpur, Nepal",
+   "country": "Nepal"
+  },
+  "attributes": {
+   "unesco": "Patan Durbar Square monument zone of the Kathmandu Valley — UNESCO World Heritage property (inscribed 1979)",
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 8 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Krishna_Mandir,_Patan"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Krishna_Mandir,_Patan"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q13183200"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The exact year is from recall; the friezes show the epics, not events.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:taleju-kathmandu",
+  "type": "temple",
+  "name": "Taleju temple, Kathmandu",
+  "iast": "Taleju",
+  "aliases": [
+   "Taleju Bhawani Temple"
+  ],
+  "subtype": "structural temple",
+  "traditions": [
+   "trad:shakta"
+  ],
+  "summary": "Three-roofed temple of Taleju Bhavānī, tutelary goddess of the Malla kings, built in 1564 by Mahendra Malla in Hanumān Ḍhokā (Kathmandu Durbar Square); it is opened to the public only once a year, at Dasaĩ.",
+  "details": "Taleju is identified with Durgā or Kālikā in Newar Hindu practice and with Tārā in Newar and Tibetan Buddhism; the Kumārī, the living goddess, is her embodiment. A 17th-century necklace inscribed with Pratāp Malla’s name, removed to the palace museum in 1970, left Nepal and is now in the Art Institute of Chicago.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "construction",
+    "start": 1564,
+    "end": 1564,
+    "label": "1564 CE (Mahendra Malla)",
+    "certainty": "estimated",
+    "basis": "as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Taleju_Temple,_Kathmandu"
+     },
+     {
+      "source": "src:slusser-1982"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 27.70487,
+   "lon": 85.30801,
+   "precision": "exact",
+   "label": "Hanuman Dhoka, Kathmandu Durbar Square, Kathmandu, Nepal",
+   "country": "Nepal"
+  },
+  "attributes": {
+   "unesco": "Hanumān Ḍhokā monument zone of the Kathmandu Valley — UNESCO World Heritage property (inscribed 1979)",
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 0 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Taleju_Temple,_Kathmandu"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Taleju_Temple,_Kathmandu"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q83776242"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The year is as reported in a reference work; Taleju’s theology is plural and is recorded as such.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:nallur-kandaswamy",
+  "type": "temple",
+  "name": "Nallūr Kantacuvāmi temple, Jaffna",
+  "iast": "Nallūr Kantacuvāmi",
+  "aliases": [
+   "Nallur Kandaswamy Kovil",
+   "Nallur Murugan"
+  ],
+  "subtype": "structural temple",
+  "traditions": [
+   "trad:shaiva"
+  ],
+  "summary": "Murukaṉ temple at Nallur, Jaffna, where the god is worshipped as the spear (vēl); the Yālppāṇa Vaipava Mālai records earlier temples of the Jaffna kings, the third destroyed by the Portuguese in 1624, and the present temple was built in 1734 under Dutch rule by Ragunātha Māppāṇa Mudaliyār.",
+  "details": "The reference gives a foundation in 948 CE and successive rebuildings: a temple of the Jaffna kingdom period, its destruction by Filipe de Oliveira in 1624, and the 1734 temple on a new site. Post-1890 custodians added a bell tower (1899), granite paving (1902) and an enclosing wall (1909). The 25-day annual festival is the largest in Jaffna.",
+  "dates": [
+   {
+    "system": "traditional",
+    "event": "founding (chronicle tradition)",
+    "label": "founded in 948 CE (Yālppāṇa Vaipava Mālai, as reported)",
+    "certainty": "estimated",
+    "basis": "temple tradition (sthala-purāṇa / local narrative); not a historical date",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nallur_Kandaswamy_temple"
+     }
+    ]
+   },
+   {
+    "system": "reception",
+    "event": "destruction by the Portuguese",
+    "start": 1624,
+    "end": 1624,
+    "label": "1624",
+    "certainty": "estimated",
+    "basis": "as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nallur_Kandaswamy_temple"
+     },
+     {
+      "source": "src:pathmanathan-1978"
+     }
+    ]
+   },
+   {
+    "system": "material",
+    "event": "surviving-structure",
+    "start": 1734,
+    "end": 1909,
+    "label": "1734 rebuilding, with additions 1899–1909",
+    "certainty": "estimated",
+    "basis": "as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nallur_Kandaswamy_temple"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 9.6745,
+   "lon": 80.0293,
+   "precision": "exact",
+   "label": "Nallur, Jaffna, Sri Lanka",
+   "country": "Sri Lanka"
+  },
+  "attributes": {
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 52 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Nallur_Kandaswamy_temple"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Nallur_Kandaswamy_temple"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q2607851"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The earlier history rests on an 18th-century chronicle; the standing temple dates from 1734.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:kataragama",
+  "type": "temple",
+  "name": "Kataragama devālaya complex",
+  "iast": "Katiragāmam",
+  "aliases": [
+   "Kataragama Maha Devale",
+   "Kathirkamam"
+  ],
+  "subtype": "shrine complex",
+  "traditions": [
+   "trad:shaiva",
+   "trad:buddhist"
+  ],
+  "summary": "Shrine complex in the jungle of southern Sri Lanka of the god Kataragama — a Buddhist guardian deity and, for Hindus, Murukaṉ (Skanda) — venerated by Buddhists, Hindus, Muslims and Vedda; its annual Esala festival and fire-walking are major pilgrimages.",
+  "details": "The village appears in the Mahāvaṃsa (5th c.); the first literary reference to Kataragama as a sacred place of Skanda-Murukaṉ is in Aruṇakirinātar’s 15th-century Tiruppukaḻ, and the Pali Jinakālamālī (16th c.) names the god as a guardian of the island. S. Pathmanathan places the Tamil identification between the 13th and 15th centuries. Gananath Obeyesekere has studied the rise of ecstatic bhakti and fire-walking here in the 20th century. The main shrine and the nearby Kiri Vehera stupa are under Buddhist management.",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "village named in the Mahāvaṃsa",
+    "start": 400,
+    "end": 499,
+    "label": "5th c. (Mahāvaṃsa)",
+    "certainty": "estimated",
+    "basis": "as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kataragama_Temple"
+     }
+    ]
+   },
+   {
+    "system": "reception",
+    "event": "first attestation as a Murukaṉ shrine (Aruṇakirinātar)",
+    "start": 1400,
+    "end": 1499,
+    "label": "15th c.",
+    "certainty": "estimated",
+    "basis": "as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kataragama_Temple"
+     }
+    ]
+   },
+   {
+    "system": "material",
+    "event": "surviving-structure",
+    "start": 1900,
+    "end": 2000,
+    "label": "modern shrine buildings (recall)",
+    "certainty": "estimated",
+    "basis": "recall",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kataragama_Temple"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 6.41667,
+   "lon": 81.33333,
+   "precision": "approximate",
+   "label": "Kataragama, Monaragala district, Sri Lanka",
+   "country": "Sri Lanka"
+  },
+  "attributes": {
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 1 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kataragama_Temple"
+   },
+   {
+    "source": "src:obeyesekere-1978"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Kataragama_Temple"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q15234273"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The shrine’s founding legends (Duṭugämuṇu; Skanda’s marriage to Vaḷḷi) are tradition; the identification of the god differs by community.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:ketheeswaram",
+  "type": "temple",
+  "name": "Tirukkētīsvaram temple, Mannar",
+  "iast": "Tirukkētīsvaram",
+  "aliases": [
+   "Ketheeswaram temple",
+   "Thiruketheeswaram"
+  ],
+  "subtype": "structural temple",
+  "traditions": [
+   "trad:shaiva"
+  ],
+  "summary": "Śiva temple near the ancient port of Māntai (Mannar), one of the five ancient īśvarams of Sri Lanka and a Tēvāram shrine sung by Campantar and Cuntarar; long ruined after the Portuguese period, it was rebuilt from 1903 by the Nāṭṭukkōṭṭai Nakarattār of Tamil Nadu.",
+  "details": "Māntai is described as a great port in classical Tamil literature, and Hugh Nevill (1887) wrote of a renowned shrine there “symbolized by a single stone”. Claims that the temple existed before 600 BCE are traditional. With Kōṇēsvaram, Naguleswaram, Tenavaram and Munneswaram it forms the Pañca Īśvaram.",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "Tēvāram hymns (Campantar, Cuntarar)",
+    "start": 600,
+    "end": 899,
+    "label": "7th–9th c.",
+    "certainty": "estimated",
+    "basis": "as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ketheeswaram_temple"
+     }
+    ]
+   },
+   {
+    "system": "material",
+    "event": "surviving-structure",
+    "start": 1903,
+    "end": 1960,
+    "label": "rebuilt from 1903 (Nakarattār)",
+    "certainty": "estimated",
+    "basis": "as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ketheeswaram_temple"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 8.95786,
+   "lon": 79.963,
+   "precision": "approximate",
+   "label": "Manthai, Mannar district, Sri Lanka",
+   "country": "Sri Lanka"
+  },
+  "attributes": {
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 differ by 4.9 km; Wikipedia value used"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ketheeswaram_temple"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Ketheeswaram_temple"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q6395391"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The present temple is 20th-century; very early dates are tradition.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:seetha-amman",
+  "type": "temple",
+  "name": "Sītā Amman temple, Sita Eliya",
+  "iast": "Sītā Amman",
+  "aliases": [
+   "Seetha Amman Temple",
+   "Ashok Vatika temple"
+  ],
+  "subtype": "structural temple",
+  "traditions": [
+   "trad:vaishnava"
+  ],
+  "summary": "Small temple at Sita Eliya near Nuwara Eliya, Sri Lanka, identified by local tradition with the Aśoka grove where Rāvaṇa held Sītā captive; established in the late 20th century and completed in the early 21st, after old images were found by the stream about a century ago.",
+  "details": "Pilgrims, many from India, point to marks on rocks by the stream as Hanumān’s footprints. The identification of the Rāmāyaṇa’s Laṅkā with Sri Lanka is itself a contested traditional identification (see claim:lanka-sri-lanka-identification).",
+  "dates": [
+   {
+    "system": "traditional",
+    "event": "sacred-site identification",
+    "label": "site of Sītā’s captivity in the Aśoka grove (local tradition)",
+    "certainty": "estimated",
+    "basis": "temple tradition (sthala-purāṇa / local narrative); not a historical date",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Seetha_Amman_Temple"
+     }
+    ]
+   },
+   {
+    "system": "material",
+    "event": "construction",
+    "start": 1975,
+    "end": 2010,
+    "label": "late 20th–early 21st c.",
+    "certainty": "estimated",
+    "basis": "as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Seetha_Amman_Temple"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 6.9332,
+   "lon": 80.8105,
+   "precision": "approximate",
+   "label": "Sita Eliya, Nuwara Eliya district, Sri Lanka",
+   "country": "Sri Lanka"
+  },
+  "attributes": {
+   "coordinateSource": "Wikipedia {{coord}} only (no Wikidata P625 to cross-check)"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Seetha_Amman_Temple"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Seetha_Amman_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "A modern temple marking a traditional identification; it is not evidence for the Rāmāyaṇa’s geography.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:sharada-peeth",
+  "type": "temple",
+  "name": "Śāradā Pīṭha (ruins), Neelum valley",
+  "iast": "Śāradāpīṭha",
+  "aliases": [
+   "Sharada Peeth",
+   "Sharda temple"
+  ],
+  "subtype": "ruined temple",
+  "traditions": [
+   "trad:shakta"
+  ],
+  "summary": "Ruined Kashmiri stone temple of the goddess Śāradā at Sharda in the Neelum valley (Pakistan-administered Kashmir), from the 6th to 12th centuries one of the most famous temple-centres of learning in South Asia; described by Al-Bīrūnī and Kalhaṇa, and a pilgrimage site for Kashmiri Paṇḍits until 1947.",
+  "details": "The Nīlamata Purāṇa is the earliest text to mention it; by the 8th century pilgrims came from as far as Bengal, and in the 11th century Al-Bīrūnī described its venerated wooden image. Jonarāja records a visit by Sultan Zayn al-ʿĀbidīn in 1422, and Abu’l Faẓl described it in the 16th century. The Śāradā script takes its name from the goddess. Since 1947 the site has been across the Line of Control, and Kashmiri Hindu groups have campaigned for a pilgrim corridor.",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "earliest textual mention (Nīlamata Purāṇa)",
+    "start": 500,
+    "end": 799,
+    "label": "6th–8th c.",
+    "certainty": "estimated",
+    "basis": "dating of the Nīlamata as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sharada_Peeth"
+     }
+    ]
+   },
+   {
+    "system": "reception",
+    "event": "Al-Bīrūnī’s description",
+    "start": 1017,
+    "end": 1030,
+    "label": "c. 1030",
+    "certainty": "estimated",
+    "basis": "as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sharada_Peeth"
+     },
+     {
+      "source": "src:sachau-1910"
+     }
+    ]
+   },
+   {
+    "system": "material",
+    "event": "surviving-structure",
+    "start": 700,
+    "end": 1000,
+    "label": "ruined Kashmiri stone temple (8th–10th c., recall)",
+    "certainty": "estimated",
+    "basis": "Kashmiri architectural style (recall); not dated in the reference",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sharada_Peeth"
+     },
+     {
+      "source": "src:stein-1900"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 34.79194,
+   "lon": 74.19,
+   "precision": "approximate",
+   "label": "Sharda, Neelum valley, Azad Jammu and Kashmir (Pakistan-administered Kashmir)",
+   "country": "Pakistan"
+  },
+  "attributes": {
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 31 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Sharada_Peeth"
+   },
+   {
+    "source": "src:stein-1900"
+   },
+   {
+    "source": "src:sachau-1910"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Sharada_Peeth"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q3765487"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The ruin is not closely dated; its fame is attested textually from the early medieval period.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:panchmukhi-hanuman-karachi",
+  "type": "temple",
+  "name": "Pañcamukhī Hanumān temple, Karachi",
+  "iast": "Pañcamukhī Hanumān",
+  "aliases": [
+   "Shri Panchmukhi Hanuman Mandir"
+  ],
+  "subtype": "structural temple",
+  "traditions": [
+   "trad:vaishnava"
+  ],
+  "summary": "Hanumān temple in Karachi, Pakistan, declared protected heritage under the Sindh Cultural Heritage (Preservation) Act 1994; tradition says Rāma visited the site in exile and that the five-faced image of Hanumān was found in the ground here, and the temple is popularly claimed to be about 1,500 years old.",
+  "details": "Excavations during renovation around 2019 reportedly uncovered old images (recall). Part of the temple land was lost to encroachment, according to the reference.",
+  "dates": [
+   {
+    "system": "traditional",
+    "event": "founding (tradition)",
+    "label": "Rāma visited the site in exile (tradition); c. 1,500 years old (popular claim)",
+    "certainty": "estimated",
+    "basis": "temple tradition (sthala-purāṇa / local narrative); not a historical date",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Panchmukhi_Hanuman_Temple"
+     }
+    ]
+   },
+   {
+    "system": "material",
+    "event": "surviving-structure",
+    "start": 1800,
+    "end": 2020,
+    "label": "present building (19th–21st c., not dated in the reference)",
+    "certainty": "disputed",
+    "basis": "the 1,500-year claim is not supported by evidence in the reference",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Panchmukhi_Hanuman_Temple"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 24.86061,
+   "lon": 67.02058,
+   "precision": "approximate",
+   "label": "Karachi, Sindh, Pakistan",
+   "country": "Pakistan"
+  },
+  "attributes": {
+   "coordinateSource": "Wikipedia {{coord}} only (no Wikidata P625 to cross-check)"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Panchmukhi_Hanuman_Temple"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Panchmukhi_Hanuman_Temple"
+   }
+  ],
+  "confidence": "low",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The antiquity claim is popular tradition; the building is undated.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:phnom-bakheng",
+  "type": "temple",
+  "name": "Phnom Bakheng, Angkor",
+  "iast": "Yaśodharagiri",
+  "aliases": [
+   "Phnom Bakheng",
+   "Yasodharagiri"
+  ],
+  "subtype": "temple-mountain",
+  "traditions": [
+   "trad:shaiva"
+  ],
+  "summary": "Five-tiered temple-mountain of Śiva on a natural hill at Angkor, the state temple of Yaśovarman I (r. 889–c. 910) at the centre of his new capital Yaśodharapura; later converted to Buddhist use.",
+  "details": "The Sdok Kak Thom inscription (1052) says that when Yaśovarman became king his guru Vāmaśiva set up a liṅga on Śrī Yaśodharagiri, a mountain “equal in beauty to the king of mountains”; scholars once applied this to the Bayon but now identify it with Phnom Bakheng. Its 108 surrounding towers have been read as an “astronomical calendar in stone” (Paul Wheatley).",
+  "dates": [
+   {
+    "system": "material",
+    "event": "construction",
+    "start": 889,
+    "end": 910,
+    "label": "late 9th–early 10th c. (Yaśovarman I)",
+    "certainty": "estimated",
+    "basis": "regnal attribution; Sdok Kak Thom inscription (1052) identification argued by scholars",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Phnom_Bakheng"
+     },
+     {
+      "source": "src:jacques-freeman-1997"
+     },
+     {
+      "source": "src:jacques-lafond-2007"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 13.42418,
+   "lon": 103.85601,
+   "precision": "exact",
+   "label": "Angkor, Siem Reap province, Cambodia",
+   "country": "Cambodia"
+  },
+  "attributes": {
+   "unesco": "part of Angkor — UNESCO World Heritage property (inscribed 1992)",
+   "architecture": "Bakheng style temple-mountain",
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 42 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Phnom_Bakheng"
+   },
+   {
+    "source": "src:jacques-freeman-1997"
+   },
+   {
+    "source": "src:jacques-lafond-2007"
+   },
+   {
+    "source": "src:coedes-1968"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Phnom_Bakheng"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q578075"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "temple",
+  "limits": "The identification with Yaśodharagiri rests on a later inscription interpreted by scholars.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:baphuon",
+  "type": "temple",
+  "name": "Baphuon, Angkor Thom",
+  "iast": "Baphuon",
+  "aliases": [
+   "Baphuon",
+   "Svarṇādri (golden mountain)"
+  ],
+  "subtype": "temple-mountain",
+  "traditions": [
+   "trad:shaiva",
+   "trad:buddhist"
+  ],
+  "summary": "Three-tiered sandstone temple-mountain of Śiva of the mid-11th century in Angkor Thom, long credited to Udayādityavarman II (recent research argues for Sūryavarman I); a reclining Buddha was built onto its western face c. 1430–40, and the EFEO completed its anastylosis in 2011.",
+  "details": "The temple, called the “golden mountain” in inscriptions, was dismantled for reinforcement by the École française d’Extrême-Orient from 1960 until the civil war halted work in 1970; the project restarted in 1995–96 under Pascal Royère and the reassembled temple reopened in 2011. Its narrative relief panels include Rāmāyaṇa and Mahābhārata scenes.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "construction",
+    "start": 1040,
+    "end": 1066,
+    "label": "mid-11th c.",
+    "certainty": "disputed",
+    "basis": "traditionally Udayādityavarman II (r. 1050–1066); recent work argues for Sūryavarman I",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Baphuon"
+     },
+     {
+      "source": "src:jacques-freeman-1997"
+     }
+    ]
+   },
+   {
+    "system": "reception",
+    "event": "Buddhist conversion: reclining Buddha added",
+    "start": 1430,
+    "end": 1440,
+    "label": "c. 1430–1440",
+    "certainty": "estimated",
+    "basis": "as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Baphuon"
+     }
+    ]
+   },
+   {
+    "system": "reception",
+    "event": "anastylosis (EFEO)",
+    "start": 1995,
+    "end": 2011,
+    "label": "1995–2011",
+    "certainty": "estimated",
+    "basis": "as reported (earlier phase 1960–70)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Baphuon"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 13.44361,
+   "lon": 103.85583,
+   "precision": "exact",
+   "label": "Angkor Thom, Siem Reap province, Cambodia",
+   "country": "Cambodia"
+  },
+  "attributes": {
+   "unesco": "part of Angkor — UNESCO World Heritage property (inscribed 1992)",
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 41 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Baphuon"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Baphuon"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q790118"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The patron is disputed; the reliefs attest epic narratives in 11th-century Cambodia.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:prasat-thom-koh-ker",
+  "type": "temple",
+  "name": "Prasat Thom, Koh Ker",
+  "iast": "Liṅgapura",
+  "aliases": [
+   "Koh Ker",
+   "Prasat Thom",
+   "Chok Gargyar"
+  ],
+  "subtype": "temple-mountain",
+  "traditions": [
+   "trad:shaiva"
+  ],
+  "summary": "Seven-tiered pyramid and temple complex at Koh Ker (ancient Liṅgapura / Chok Gargyar), capital of the Khmer king Jayavarman IV (r. 928–941) and his son Harṣavarman II until 944; the Koh Ker site was inscribed as a UNESCO World Heritage Site in 2023.",
+  "details": "More than 180 sanctuaries lie in the protected area, many still uncleared of mines. Jayavarman IV, who married a half-sister of Yaśovarman I, ruled from Koh Ker rather than Angkor; colossal sculptures from the site — some looted in the civil-war period and since returned from foreign collections — define the “Koh Ker style”.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "construction",
+    "start": 921,
+    "end": 944,
+    "label": "c. 921–944",
+    "certainty": "estimated",
+    "basis": "inscriptions and regnal chronology; the reference gives 921",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Koh_Ker"
+     },
+     {
+      "source": "src:jacques-freeman-1997"
+     }
+    ]
+   },
+   {
+    "system": "reception",
+    "event": "UNESCO World Heritage inscription",
+    "start": 2023,
+    "end": 2023,
+    "label": "2023 (no. 1667)",
+    "certainty": "estimated",
+    "basis": "reference infobox and Wikidata P757",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Koh_Ker"
+     },
+     {
+      "source": "src:wikidata",
+      "locator": "P757 World Heritage Site ID",
+      "url": "https://www.wikidata.org/wiki/Q1778458"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 13.775,
+   "lon": 104.54722,
+   "precision": "approximate",
+   "label": "Koh Ker, Preah Vihear province, Cambodia",
+   "country": "Cambodia"
+  },
+  "attributes": {
+   "unesco": "Koh Ker: Archaeological Site of Ancient Lingapura or Chok Gargyar — inscribed 2023, no. 1667 (Wikidata P757)",
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 differ by 2.8 km; Wikipedia value used"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Koh_Ker"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Koh_Ker"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q1778458"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "Coordinates are for the Koh Ker site; the UNESCO page itself could not be fetched (blocked).",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:sambor-prei-kuk",
+  "type": "temple",
+  "name": "Sambor Prei Kuk (Īśānapura)",
+  "iast": "Īśānapura",
+  "aliases": [
+   "Sambor Prei Kuk",
+   "Isanapura"
+  ],
+  "subtype": "temple city (ruins)",
+  "traditions": [
+   "trad:shaiva",
+   "trad:vaishnava"
+  ],
+  "summary": "Pre-Angkorian temple city in Kampong Thom province, identified with Īśānapura, capital of the Chenla king Īśānavarman I (r. c. 616–637); its brick sanctuaries, including octagonal towers with “flying palace” reliefs, are among the earliest Khmer temples. UNESCO World Heritage Site (2017).",
+  "details": "Īśānavarman I sent an embassy to the Sui court in 616–617, and an inscription of his reign calls him “king of kings, who rules over Suvarṇabhūmi”. The main temple (Prasat Sambor, group N) is attributed to him on the basis of an inscription. The last important king at Īśānapura was Jayavarman I.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "construction",
+    "start": 600,
+    "end": 699,
+    "label": "7th c. (Īśānavarman I and successors)",
+    "certainty": "estimated",
+    "basis": "inscriptions and regnal chronology",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sambor_Prei_Kuk"
+     },
+     {
+      "source": "src:jacques-lafond-2007"
+     },
+     {
+      "source": "src:coedes-1968"
+     }
+    ]
+   },
+   {
+    "system": "reception",
+    "event": "UNESCO World Heritage inscription",
+    "start": 2017,
+    "end": 2017,
+    "label": "2017 (no. 1532)",
+    "certainty": "estimated",
+    "basis": "reference infobox and Wikidata P757",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sambor_Prei_Kuk"
+     },
+     {
+      "source": "src:wikidata",
+      "locator": "P757 World Heritage Site ID",
+      "url": "https://www.wikidata.org/wiki/Q1818746"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 12.87083,
+   "lon": 105.04306,
+   "precision": "exact",
+   "label": "Sambor Prei Kuk, Kampong Thom province, Cambodia",
+   "country": "Cambodia"
+  },
+  "attributes": {
+   "unesco": "Temple Zone of Sambor Prei Kuk, Archaeological Site of Ancient Ishanapura — inscribed 2017, no. 1532 (Wikidata P757)",
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 514 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Sambor_Prei_Kuk"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Sambor_Prei_Kuk"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q1818746"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The identification with Īśānapura is the standard scholarly view; the UNESCO page could not be fetched.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:prasat-kravan",
+  "type": "temple",
+  "name": "Prasat Kravan, Angkor",
+  "iast": "Prasat Kravan",
+  "aliases": [
+   "Prasat Kravan"
+  ],
+  "subtype": "structural temple",
+  "traditions": [
+   "trad:vaishnava"
+  ],
+  "summary": "Five brick towers on a common terrace south of Srah Srang at Angkor, dedicated to Viṣṇu in 921 according to a doorjamb inscription; the interior brick reliefs show Viṣṇu striding (Trivikrama), on Garuḍa, eight-armed, and Lakṣmī.",
+  "details": "The temple was founded by high officials, under Harṣavarman I or Īśānavarman II, rather than by a king. Cleared in the 1930s by Henri Marchal and Georges Trouvé, it was restored by the EFEO in 1962–66 (recall), when its brickwork was partly replaced.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "consecration",
+    "start": 921,
+    "end": 921,
+    "label": "921 CE",
+    "certainty": "secure",
+    "basis": "dated doorjamb inscription, as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Prasat_Kravan"
+     },
+     {
+      "source": "src:jacques-freeman-1997"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 13.41972,
+   "lon": 103.89972,
+   "precision": "exact",
+   "label": "Angkor, Siem Reap province, Cambodia",
+   "country": "Cambodia"
+  },
+  "attributes": {
+   "unesco": "part of Angkor — UNESCO World Heritage property (inscribed 1992)",
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 8 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Prasat_Kravan"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Prasat_Kravan"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q1075833"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The inscription dates the dedication; the reliefs depict Vaiṣṇava iconography, not events.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:bakong",
+  "type": "temple",
+  "name": "Bakong, Roluos",
+  "iast": "Bakong",
+  "aliases": [
+   "Bakong"
+  ],
+  "subtype": "temple-mountain",
+  "traditions": [
+   "trad:shaiva"
+  ],
+  "summary": "Earliest sandstone temple-mountain of the Khmer empire, the state temple of Indravarman I at Hariharālaya (Roluos), dedicated to Śiva in 881; its central tower was rebuilt in the 12th century in the Angkor Wat style.",
+  "details": "The five-tiered pyramid stands in three concentric enclosures and two moats (c. 900 × 700 m); the liṅga was called Indreśvara. The Roluos group also includes Preah Ko (879) and Lolei (893).",
+  "dates": [
+   {
+    "system": "material",
+    "event": "consecration",
+    "start": 881,
+    "end": 881,
+    "label": "881 CE (Indravarman I)",
+    "certainty": "secure",
+    "basis": "foundation stele, as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bakong"
+     },
+     {
+      "source": "src:jacques-freeman-1997"
+     }
+    ]
+   },
+   {
+    "system": "material",
+    "event": "renovation",
+    "start": 1100,
+    "end": 1199,
+    "label": "12th-c. central tower",
+    "certainty": "estimated",
+    "basis": "Angkor Wat style",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bakong"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 13.33599,
+   "lon": 103.97412,
+   "precision": "exact",
+   "label": "Roluos, Siem Reap province, Cambodia",
+   "country": "Cambodia"
+  },
+  "attributes": {
+   "unesco": "part of Angkor — UNESCO World Heritage property (inscribed 1992)",
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 1 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bakong"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Bakong"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q788982"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The date rests on the foundation inscription as summarised; the tower is a later replacement.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:kbal-spean",
+  "type": "place",
+  "name": "Kbal Spean (river of a thousand liṅgas)",
+  "iast": "Kbal Spean",
+  "aliases": [
+   "Kbal Spean",
+   "Valley of a Thousand Lingas"
+  ],
+  "subtype": "riverbed sanctuary (rock carvings)",
+  "traditions": [
+   "trad:shaiva",
+   "trad:vaishnava"
+  ],
+  "summary": "Stretch of the Stung Kbal Spean stream on the Kulen hills north-east of Angkor whose sandstone bed and banks are carved with rows of liṅgas and reliefs of Viṣṇu Anantaśāyin, Śiva and Umā, and Brahmā; carved in the 11th–12th centuries, so that the water flowing to Angkor was sanctified.",
+  "details": "The thousand liṅgas are attributed to a minister of Sūryavarman I in the 11th century, and an inscription records that Udayādityavarman II consecrated a golden liṅga here in 1059. The site was found by the ethnologist Jean Boulbet in 1969 and became safely accessible again from 1989.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "carving",
+    "start": 1000,
+    "end": 1199,
+    "label": "11th–12th c.",
+    "certainty": "estimated",
+    "basis": "inscriptions and style as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kbal_Spean"
+     },
+     {
+      "source": "src:jacques-lafond-2007"
+     }
+    ]
+   },
+   {
+    "system": "material",
+    "event": "dated inscription",
+    "start": 1059,
+    "end": 1059,
+    "label": "1059 CE golden liṅga (Udayādityavarman II)",
+    "certainty": "estimated",
+    "basis": "as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kbal_Spean"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 13.70836,
+   "lon": 104.02558,
+   "precision": "approximate",
+   "label": "Kulen hills, Siem Reap province, Cambodia",
+   "country": "Cambodia"
+  },
+  "attributes": {
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 differ by 2.6 km; Wikipedia value used"
+  },
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kbal_Spean"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Kbal_Spean"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q1092603"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The reliefs show Purāṇic imagery in stone; the date range is approximate.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:phanom-rung",
+  "type": "temple",
+  "name": "Prasat Phanom Rung",
+  "iast": "Phanom Rung",
+  "aliases": [
+   "Prasat Hin Phanom Rung",
+   "Phanom Rung Historical Park"
+  ],
+  "subtype": "structural temple",
+  "traditions": [
+   "trad:shaiva"
+  ],
+  "summary": "Khmer sanctuary of Śiva on the rim of an extinct volcano in Buriram province, Thailand, built between the 10th and 13th centuries; its Nārāyaṇa lintel (Viṣṇu Anantaśāyin), stolen in the 1960s and held by the Art Institute of Chicago from 1967, was returned in 1988 after a public campaign.",
+  "details": "A processional causeway lined with lotus-bud posts and nāga bridges leads to the main tower, whose principal phase (early 12th c.) is associated with the local ruler Narendrāditya (recall). Lintels show the dancing Śiva and the five yogīs. The Thai Fine Arts Department restored the complex from 1971 to 1988, and the park opened on 21 May 1988. The “Phra Narai” lintel, displayed in Chicago as “the Birth of Brahma with Reclining Vishnu on a Makara”, was returned that year and reinstalled over the eastern entrance.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "construction",
+    "start": 900,
+    "end": 1299,
+    "label": "10th–13th c. (main tower early 12th c.)",
+    "certainty": "estimated",
+    "basis": "style and inscriptions as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Phanom_Rung_Historical_Park"
+     },
+     {
+      "source": "src:siribhadra-moore-1992"
+     },
+     {
+      "source": "src:freeman-1996"
+     }
+    ]
+   },
+   {
+    "system": "reception",
+    "event": "return of the Nārāyaṇa lintel from Chicago",
+    "start": 1988,
+    "end": 1988,
+    "label": "1988",
+    "certainty": "secure",
+    "basis": "documented restitution",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Phanom_Rung_Historical_Park"
+     }
+    ]
+   },
+   {
+    "system": "reception",
+    "event": "restoration by the Fine Arts Department",
+    "start": 1971,
+    "end": 1988,
+    "label": "1971–1988",
+    "certainty": "estimated",
+    "basis": "as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Phanom_Rung_Historical_Park"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 14.5325,
+   "lon": 102.94167,
+   "precision": "exact",
+   "label": "Phanom Rung, Buriram province, Thailand",
+   "country": "Thailand"
+  },
+  "attributes": {
+   "famousObject": "Phra Narai (Nārāyaṇa) lintel — Viṣṇu Anantaśāyin, returned 1988",
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 157 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Phanom_Rung_Historical_Park"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Phanom_Rung_Historical_Park"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q2084809"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The return of the lintel is a modern heritage event; the attribution of the main phase to Narendrāditya is from recall.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:phimai",
+  "type": "temple",
+  "name": "Prasat Phimai",
+  "iast": "Vimāya",
+  "aliases": [
+   "Prasat Hin Phimai",
+   "Phimai Historical Park"
+  ],
+  "subtype": "structural temple",
+  "traditions": [
+   "trad:buddhist"
+  ],
+  "summary": "Largest Khmer sanctuary in Thailand, at Phimai (ancient Vimāyapura) in Nakhon Ratchasima, built in the late 11th–12th centuries as a Mahāyāna Buddhist temple but carrying Hindu narrative lintels, including Rāmāyaṇa and Kṛṣṇa scenes.",
+  "details": "Although the Khmer court was then largely Hindu, the Khorat region had been Buddhist since the 7th century, and Phimai was built for the Buddhist Vajrasattva/Trailokyavijaya cult. Its lintels and pediments nonetheless show the Rāmāyaṇa battle scenes and episodes of Kṛṣṇa (recall). Étienne Aymonier inventoried the ruins in 1901, and the site was gazetted in 1936.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "construction",
+    "start": 1080,
+    "end": 1199,
+    "label": "late 11th–12th c.",
+    "certainty": "estimated",
+    "basis": "style (Baphuon to Bayon)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Phimai_Historical_Park"
+     },
+     {
+      "source": "src:siribhadra-moore-1992"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 15.22083,
+   "lon": 102.49389,
+   "precision": "exact",
+   "label": "Phimai, Nakhon Ratchasima province, Thailand",
+   "country": "Thailand"
+  },
+  "attributes": {
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 18 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Phimai_Historical_Park"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Phimai_Historical_Park"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q1413851"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "A Buddhist temple: Hindu narrative imagery here shows the shared repertoire of Khmer art, not Hindu worship at the site.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:devasathan",
+  "type": "temple",
+  "name": "Devasathan (Royal Brahmin office), Bangkok",
+  "iast": "Devasthāna",
+  "aliases": [
+   "Devasathan",
+   "Thewasathan",
+   "Royal Brahmin Office"
+  ],
+  "subtype": "royal Brahmanical shrine",
+  "traditions": [
+   "trad:shaiva",
+   "trad:vaishnava"
+  ],
+  "summary": "Hindu shrine complex near Wat Suthat in Bangkok, founded in 1784 by King Rama I as the seat of the court Brahmins (phram), who trace their lineage to Rameswaram and perform royal ceremonies such as the Triyampawai–Trippawai swing festival.",
+  "details": "The complex has shrines of Śiva (Īśvara), Gaṇeśa and Viṣṇu (Nārāyaṇa); the Giant Swing (Sao Chingcha) outside was used in the Triyampawai rite until 1935.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "construction",
+    "start": 1784,
+    "end": 1784,
+    "label": "1784 CE",
+    "certainty": "estimated",
+    "basis": "as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Devasathan"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 13.75254,
+   "lon": 100.50061,
+   "precision": "exact",
+   "label": "Phra Nakhon district, Bangkok, Thailand",
+   "country": "Thailand"
+  },
+  "attributes": {
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 31 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Devasathan"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Devasathan"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q1206639"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The shrines’ current buildings may be later rebuildings; the Rameswaram lineage is court tradition.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:nathlaung-kyaung",
+  "type": "temple",
+  "name": "Nathlaung Kyaung, Bagan",
+  "iast": "Nathlaung Kyaung",
+  "aliases": [
+   "Nat Hlaung Kyaung"
+  ],
+  "subtype": "structural temple",
+  "traditions": [
+   "trad:vaishnava"
+  ],
+  "summary": "Brick Viṣṇu temple inside the old city walls of Bagan, the only surviving Hindu temple among Bagan’s thousands of Buddhist monuments, built in the 10th or 11th century (under Anawrahta or earlier), probably for Indian merchants and artisans.",
+  "details": "Niches once held images of Viṣṇu’s avatāras; the main image was removed in the 19th century and is now in Berlin (recall). A Tamil inscription at Myinkaba (“Myekapa” in the reference) records gifts to another Viṣṇu temple at Pagan, confirming a Vaiṣṇava community there.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "construction",
+    "start": 931,
+    "end": 1077,
+    "label": "10th–11th c.",
+    "certainty": "estimated",
+    "basis": "style; attributed to the reign of Anawrahta or Nyaung-u Sawrahan",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nathlaung_Kyaung_Temple"
+     },
+     {
+      "source": "src:strachan-1989"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 21.16897,
+   "lon": 94.86274,
+   "precision": "exact",
+   "label": "Old Bagan, Mandalay Region, Myanmar",
+   "country": "Myanmar"
+  },
+  "attributes": {
+   "unesco": "within the Bagan World Heritage property (inscribed 2019, recall)",
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 1 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Nathlaung_Kyaung_Temple"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Nathlaung_Kyaung_Temple"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q3336294"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The date is approximate; the Berlin image is from recall.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:po-nagar",
+  "type": "temple",
+  "name": "Po Nagar, Nha Trang",
+  "iast": "Po Nagar",
+  "aliases": [
+   "Ponagar",
+   "Tháp Bà Po Nagar",
+   "Thiên Y Thánh Mẫu"
+  ],
+  "subtype": "structural temple",
+  "traditions": [
+   "trad:shakta"
+  ],
+  "summary": "Cham temple complex on a hill at Nha Trang dedicated to Yan Po Nagar, goddess of the land, identified with Bhagavatī and Mahiṣāsuramardinī; founded before 781, with inscriptions recording royal gifts from 781 to 1143 and standing brick towers mainly of the 11th–13th centuries.",
+  "details": "A stele of 781 says King Satyavarman restored the sanctuary after raiders burned it; Indravarman III ordered a gold statue of Bhagavatī in 918, which the Khmer Rājendravarman II took in 950, and Jaya Indravarman I replaced it in stone in 965. Further gifts are dated 1050, 1084, 1141 and 1143. Vietnamese worshippers venerate the goddess as Thiên Y Thánh Mẫu.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "dated inscriptions",
+    "start": 781,
+    "end": 1143,
+    "label": "781–1143 CE",
+    "certainty": "secure",
+    "basis": "series of dated Cham inscriptions as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Po_Nagar"
+     },
+     {
+      "source": "src:hardy-cucarzi-zolese-2009"
+     }
+    ]
+   },
+   {
+    "system": "material",
+    "event": "surviving-structure",
+    "start": 1000,
+    "end": 1299,
+    "label": "mainly 11th–13th c. towers",
+    "certainty": "estimated",
+    "basis": "style (the reference gives mid-10th–13th c.)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Po_Nagar"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 12.26528,
+   "lon": 109.19556,
+   "precision": "exact",
+   "label": "Nha Trang, Khánh Hòa province, Vietnam",
+   "country": "Vietnam"
+  },
+  "attributes": {
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 1 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Po_Nagar"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Po_Nagar"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q600269"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The inscriptions date gifts and restorations; the towers are later than the foundation.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:penataran",
+  "type": "temple",
+  "name": "Penataran temple complex, Blitar",
+  "iast": "Palah",
+  "aliases": [
+   "Candi Panataran",
+   "Candi Penataran",
+   "Palah"
+  ],
+  "subtype": "temple complex",
+  "traditions": [
+   "trad:shaiva"
+  ],
+  "summary": "Largest Hindu temple complex in East Java, begun in 1197 in the Kediri period and enlarged under Majapahit (dated temple 1369); its main terrace carries Rāmāyaṇa reliefs and its second terrace the Kṛṣṇāyana, in the flat wayang-like East Javanese style.",
+  "details": "The Nāgarakṛtāgama (1365) names it Palah and describes Hayam Wuruk’s visits; it was the state temple of Majapahit. The Rāmāyaṇa relief follows the Hanumān episodes in Laṅkā; the Kṛṣṇāyana reliefs illustrate Triguṇa’s Old Javanese poem. Ann Kinney’s study of East Javanese temple art covers the complex. It was placed on Indonesia’s UNESCO Tentative List in 1995.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "construction",
+    "start": 1197,
+    "end": 1454,
+    "label": "1197–15th c.",
+    "certainty": "estimated",
+    "basis": "dated buildings and chronograms (1197 start; dated temple 1369)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Penataran"
+     },
+     {
+      "source": "src:kinney-2003"
+     }
+    ]
+   },
+   {
+    "system": "material",
+    "event": "dated temple",
+    "start": 1369,
+    "end": 1369,
+    "label": "1369 CE",
+    "certainty": "secure",
+    "basis": "dated building in the complex, as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Penataran"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": -8.01611,
+   "lon": 112.20917,
+   "precision": "exact",
+   "label": "Penataran, Blitar Regency, East Java, Indonesia",
+   "country": "Indonesia"
+  },
+  "attributes": {
+   "unesco": "UNESCO Tentative List (1995)",
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 0 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Penataran"
+   },
+   {
+    "source": "src:kinney-2003"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Penataran"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q2491478"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "temple",
+  "limits": "The reliefs illustrate Old Javanese literary versions of the epics, not Vālmīki directly.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:gedong-songo",
+  "type": "temple",
+  "name": "Gedong Songo temples",
+  "iast": "Gedong Songo",
+  "aliases": [
+   "Gedong Songo"
+  ],
+  "subtype": "temple group",
+  "traditions": [
+   "trad:shaiva"
+  ],
+  "summary": "Group of small 8th–9th-century Śaiva candi set in five clusters on the slopes of Mount Ungaran in Central Java, among the earliest Hindu temples of Java; an inscription of 1382 shows they were still active in the Majapahit period.",
+  "details": "The nine temples (“gedong songo”) are dedicated to Śiva and Pārvatī. Scholars have debated whether their form came from Indian models through pilgrims (Bosch) or local adaptation. Dutch archaeologists rediscovered them in the 19th century.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "construction",
+    "start": 700,
+    "end": 899,
+    "label": "8th–9th c.",
+    "certainty": "estimated",
+    "basis": "style",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gedong_Songo"
+     },
+     {
+      "source": "src:dumarcay-1986"
+     }
+    ]
+   },
+   {
+    "system": "material",
+    "event": "dated inscription",
+    "start": 1382,
+    "end": 1382,
+    "label": "1382 CE",
+    "certainty": "estimated",
+    "basis": "as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gedong_Songo"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": -7.2085,
+   "lon": 110.34178,
+   "precision": "exact",
+   "label": "Bandungan, Semarang Regency, Central Java, Indonesia",
+   "country": "Indonesia"
+  },
+  "attributes": {
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 12 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Gedong_Songo"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Gedong_Songo"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q2574009"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "Stylistic dating.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:sukuh",
+  "type": "temple",
+  "name": "Candi Sukuh",
+  "iast": "Sukuh",
+  "aliases": [
+   "Candi Sukuh"
+  ],
+  "subtype": "terraced pyramid temple",
+  "traditions": [
+   "trad:shaiva"
+  ],
+  "summary": "Fifteenth-century terraced pyramid temple on the slope of Mount Lawu in Central Java, consecrated c. 1437 by a chronogram at its gate, with distinctive reliefs on birth, fertility and the Garuḍeya story — among the last Hindu temples built in Java before Islamisation.",
+  "details": "Its stepped form recalls Mesoamerican pyramids only superficially; it follows the late Majapahit return to indigenous mountain sanctuaries. Thomas Raffles visited it in 1815. A 1.82 m liṅga with an inscription from its summit is in the National Museum of Indonesia.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "consecration",
+    "start": 1437,
+    "end": 1437,
+    "label": "c. 1437 CE",
+    "certainty": "estimated",
+    "basis": "chronogram at the western gate, as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sukuh"
+     },
+     {
+      "source": "src:kinney-2003"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": -7.62722,
+   "lon": 111.13111,
+   "precision": "exact",
+   "label": "Berjo, Karanganyar Regency, Central Java, Indonesia",
+   "country": "Indonesia"
+  },
+  "attributes": {
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 21 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Sukuh"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Sukuh"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q3101506"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The chronogram reading dates the gate; other parts may differ.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:tanah-lot",
+  "type": "temple",
+  "name": "Pura Tanah Lot, Bali",
+  "iast": "Tanah Lot",
+  "aliases": [
+   "Pura Tanah Lot",
+   "Pura Pakendungan"
+  ],
+  "subtype": "sea temple (pura segara)",
+  "traditions": [
+   "trad:shaiva"
+  ],
+  "summary": "Balinese sea temple on an offshore rock at Beraban, Tabanan, reachable on foot at low tide, attributed by tradition to the 16th-century priest Dang Hyang Nirārtha; one of the chain of sea temples guarding Bali’s coast.",
+  "details": "Nirārtha, a Śaiva priest from Majapahit Java, is said to have rested here and told local fishermen to build a shrine to the sea gods. A Japanese government loan in the 1980s–90s funded the stabilisation of the eroding rock.",
+  "dates": [
+   {
+    "system": "traditional",
+    "event": "founding (tradition)",
+    "label": "founded by Dang Hyang Nirārtha (16th c., tradition)",
+    "certainty": "estimated",
+    "basis": "temple tradition (sthala-purāṇa / local narrative); not a historical date",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tanah_Lot"
+     }
+    ]
+   },
+   {
+    "system": "material",
+    "event": "surviving-structure",
+    "start": 1500,
+    "end": 2000,
+    "label": "Balinese shrines repeatedly renewed; rock stabilised in the late 20th c.",
+    "certainty": "estimated",
+    "basis": "Balinese pura are periodically rebuilt; no dated fabric reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tanah_Lot"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": -8.62107,
+   "lon": 115.08716,
+   "precision": "exact",
+   "label": "Beraban, Tabanan Regency, Bali, Indonesia",
+   "country": "Indonesia"
+  },
+  "attributes": {
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 46 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tanah_Lot"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Tanah_Lot"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q515253"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The Nirārtha foundation is tradition; the shrines are periodically renewed.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:ulun-danu-bratan",
+  "type": "temple",
+  "name": "Pura Ulun Danu Bratan, Bali",
+  "iast": "Ulun Danu Bratan",
+  "aliases": [
+   "Pura Bratan",
+   "Pura Ulun Danu Beratan"
+  ],
+  "subtype": "lake (water) temple",
+  "traditions": [
+   "trad:shaiva"
+  ],
+  "summary": "Water temple on Lake Bratan in the Bali highlands, built in 1633 according to the reference, for the lake goddess Dewi Danu; the lake feeds the irrigation societies (subak) downstream, whose smaller water temples depend on it.",
+  "details": "The meru shrines stand on small islands at the lake edge. J. Stephen Lansing’s work on Balinese water temples explains how such temples coordinate irrigation (his main case is the related Ulun Danu Batur).",
+  "dates": [
+   {
+    "system": "material",
+    "event": "construction",
+    "start": 1633,
+    "end": 1663,
+    "label": "1633 (text) or 1663 (category) in the reference",
+    "certainty": "disputed",
+    "basis": "reference inconsistent",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Pura_Ulun_Danu_Bratan"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": -8.27528,
+   "lon": 115.16639,
+   "precision": "exact",
+   "label": "Lake Bratan, Bedugul, Tabanan Regency, Bali, Indonesia",
+   "country": "Indonesia"
+  },
+  "attributes": {
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 520 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Pura_Ulun_Danu_Bratan"
+   },
+   {
+    "source": "src:lansing-1991"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Pura_Ulun_Danu_Bratan"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q2220851"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The foundation year is inconsistently given; Balinese shrines are periodically rebuilt.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:tirta-empul",
+  "type": "temple",
+  "name": "Pura Tirta Empul, Tampaksiring",
+  "iast": "Tirta Empul",
+  "aliases": [
+   "Tirta Empul Temple"
+  ],
+  "subtype": "spring (water) temple",
+  "traditions": [
+   "trad:shaiva"
+  ],
+  "summary": "Balinese water temple founded around a holy spring in 962 CE in the Warmadewa period, whose bathing pools (petirtaan) are used for ritual purification (melukat); a source of the Pakerisan river.",
+  "details": "Balinese legend tells that Indra created the spring to revive his army poisoned by the demon king Mayadanawa. President Sukarno had a villa built above the temple for a visit in 1954.",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "foundation around the spring",
+    "start": 962,
+    "end": 962,
+    "label": "962 CE (Warmadewa period)",
+    "certainty": "estimated",
+    "basis": "as reported (inscriptional date, recall of source)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tirta_Empul"
+     }
+    ]
+   },
+   {
+    "system": "material",
+    "event": "surviving-structure",
+    "start": 1900,
+    "end": 2000,
+    "label": "shrines and pools in their present form (repeatedly renewed)",
+    "certainty": "estimated",
+    "basis": "Balinese periodic rebuilding; 20th-c. restoration (recall)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tirta_Empul"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": -8.41639,
+   "lon": 115.31472,
+   "precision": "exact",
+   "label": "Tampaksiring, Gianyar Regency, Bali, Indonesia",
+   "country": "Indonesia"
+  },
+  "attributes": {
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 31 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tirta_Empul"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Tirta_Empul"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q7809287"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The 962 foundation date is reported; the pools and shrines have been rebuilt many times.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:bujang-valley-candi",
+  "type": "temple",
+  "name": "Bujang Valley candi (Kedah)",
+  "iast": "Bujang",
+  "aliases": [
+   "Bujang Valley",
+   "Lembah Bujang",
+   "Candi Bukit Batu Pahat"
+  ],
+  "subtype": "archaeological temple complex",
+  "traditions": [
+   "trad:shaiva",
+   "trad:buddhist"
+  ],
+  "summary": "Remains of brick and laterite Hindu and Buddhist shrines (candi) in the Bujang Valley of Kedah, Malaysia, part of a trading complex of the 5th–14th centuries; the reconstructed Candi Bukit Batu Pahat is the best-known Śaiva shrine.",
+  "details": "Excavations from the 1930s onward, and Alastair Lamb’s reconstruction of Candi Bukit Batu Pahat (1959–60, recall), revealed shrines of Indian type; since 2008 the Universiti Sains Malaysia has explored the Sungai Batu iron-smelting and jetty sites, claimed to go back to the early centuries CE. Ptolemy’s “Golden Chersonese” and Chinese sources attest the region’s early trade.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "construction",
+    "start": 400,
+    "end": 1399,
+    "label": "5th–14th c. (complex)",
+    "certainty": "estimated",
+    "basis": "excavated material and style, as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bujang_Valley"
+     },
+     {
+      "source": "src:guy-2014"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 5.73778,
+   "lon": 100.414,
+   "precision": "region",
+   "label": "Merbok, Kedah, Malaysia",
+   "country": "Malaysia"
+  },
+  "attributes": {
+   "coordinateNote": "coordinates are for the Bujang Valley archaeological area",
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 63 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bujang_Valley"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Bujang_Valley"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q3181128"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "Dates for individual shrines are debated, and early dates claimed for Sungai Batu are contested.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:sri-mahamariamman-kl",
+  "type": "temple",
+  "name": "Sri Mahamariamman temple, Kuala Lumpur",
+  "iast": "Śrī Mahāmāriyamman",
+  "aliases": [
+   "Sri Maha Mariamman Temple"
+  ],
+  "subtype": "structural temple",
+  "traditions": [
+   "trad:shakta"
+  ],
+  "summary": "Oldest Hindu temple in Kuala Lumpur, founded in 1873 by K. Thamboosamy Pillai as a family shrine, moved in 1885 to its Jalan Bandar site and rebuilt in brick in 1887; the present temple was completed in 1968 with a five-tiered gopura (1972) and consecrated in 1973.",
+  "details": "The temple stores the silver chariot that carries Murukaṉ to Batu Caves each Taipūcam (recall), linking it to temple:batu-caves, which Thamboosamy Pillai also founded.",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "founded as a family shrine",
+    "start": 1873,
+    "end": 1873,
+    "label": "1873",
+    "certainty": "estimated",
+    "basis": "as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sri_Maha_Mariamman_Temple,_Kuala_Lumpur"
+     }
+    ]
+   },
+   {
+    "system": "material",
+    "event": "surviving-structure",
+    "start": 1968,
+    "end": 1973,
+    "label": "1968 building; 1972 gopura; consecrated 1973",
+    "certainty": "estimated",
+    "basis": "as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sri_Maha_Mariamman_Temple,_Kuala_Lumpur"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 3.14333,
+   "lon": 101.69639,
+   "precision": "exact",
+   "label": "Jalan Bandar, Kuala Lumpur, Malaysia",
+   "country": "Malaysia"
+  },
+  "attributes": {
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 43 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Sri_Maha_Mariamman_Temple,_Kuala_Lumpur"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Sri_Maha_Mariamman_Temple,_Kuala_Lumpur"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q7586152"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "Diaspora temple; dates are documented.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:sri-mariamman-singapore",
+  "type": "temple",
+  "name": "Sri Mariamman temple, Singapore",
+  "iast": "Śrī Māriyamman",
+  "aliases": [
+   "Sri Mariamman Temple"
+  ],
+  "subtype": "structural temple",
+  "traditions": [
+   "trad:shakta"
+  ],
+  "summary": "Singapore’s oldest Hindu temple, on South Bridge Road in Chinatown, founded by Naraina Pillai, who built a simple wood-and-attap shrine there by 1827 after receiving the site in 1823; a gazetted National Monument and the setting of the annual fire-walking (Thimithi) festival.",
+  "details": "Farquhar had allowed Pillai a site near Stamford Canal in 1821, which the 1822 Jackson Plan reserved for other uses. The Hindu Endowments Board, which manages the temple, states that the principal image is the one Pillai installed in 1827. The present brick temple and gopura date from the 19th century onward (rebuilt c. 1843 and extended later, recall).",
+  "dates": [
+   {
+    "system": "material",
+    "event": "construction",
+    "start": 1827,
+    "end": 1827,
+    "label": "1827 (first wooden temple)",
+    "certainty": "estimated",
+    "basis": "as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sri_Mariamman_Temple,_Singapore"
+     }
+    ]
+   },
+   {
+    "system": "material",
+    "event": "surviving-structure",
+    "start": 1843,
+    "end": 1936,
+    "label": "brick temple from c. 1843; gopura and later additions (recall)",
+    "certainty": "estimated",
+    "basis": "recall",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sri_Mariamman_Temple,_Singapore"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 1.28261,
+   "lon": 103.84528,
+   "precision": "exact",
+   "label": "South Bridge Road, Chinatown, Singapore",
+   "country": "Singapore"
+  },
+  "attributes": {
+   "protection": "National Monument of Singapore (no. 6 per the reference infobox; gazetted 1973, recall)",
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 31 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Sri_Mariamman_Temple,_Singapore"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Sri_Mariamman_Temple,_Singapore"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q2428845"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The surviving-structure dates are partly from recall.",
+  "lastVerified": "2026-11-08"
  }
 ]

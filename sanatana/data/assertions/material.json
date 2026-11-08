@@ -434,12 +434,19 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Heliodorus_pillar"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, no. 2, p. 89 n. 5: \"Cf. Mbh., V, 43, 22\" for dama, tyāga, apramāda",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan, OCR read)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Sircar's note to Part II of the Besnagar text draws the parallel."
  },
  {
   "id": "material:20",
@@ -447,7 +454,7 @@
   "p": "CONCERNS",
   "o": "text:mahabharata",
   "qualifiers": {
-   "note": "Strīparvan (MBh book 11) parallel proposed; CE verse not verified"
+   "note": "Sircar cites Mbh (vulgate) 5.43.22 (Udyogaparvan) for the triad dama–tyāga–apramāda; others propose a Strīparvan verse. CE locator not verified."
   },
   "evidenceClass": 5,
   "sources": [
@@ -458,12 +465,19 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Krishna"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, no. 2, p. 89 n. 5: \"Cf. Mbh., V, 43, 22\" (vulgate numbering); also Dhammapada II.1",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan, OCR read)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
    }
   ],
   "confidence": "medium",
-  "status": "recall",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: The proposed parallel and its vulgate locator were read in Sircar 1965; the Critical Edition locator still needs checking."
  },
  {
   "id": "material:21",
@@ -3996,12 +4010,22 @@
    },
    {
     "source": "src:fleet-1888"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Eran Boar Inscription, lines 1–8",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00099"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 36"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Edition URL added (DHARMA bibliography lists Fleet 1888 no. 36)."
  },
  {
   "id": "material:182",
@@ -5306,12 +5330,18 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Kumaragupta_I"
+   },
+   {
+    "source": "src:allan-1914",
+    "locator": "§ 101 (Peacock type)",
+    "url": "https://archive.org/details/dli.csl.5234"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Allan lists the Peacock type among Kumāragupta I's gold types."
  },
  {
   "id": "material:241",
@@ -5326,12 +5356,18 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Kumaragupta_I"
+   },
+   {
+    "source": "src:allan-1914",
+    "locator": "§ 101: \"the reverse the god Karttikeya riding his peacock Paravani\"",
+    "url": "https://archive.org/details/dli.csl.5234"
    }
   ],
-  "confidence": "medium",
-  "status": "reference-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Allan identifies the reverse figure as Kārttikeya on his peacock, against earlier readings of a female figure."
  },
  {
   "id": "material:242",
@@ -5346,12 +5382,18 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Kumaragupta_I"
+   },
+   {
+    "source": "src:allan-1914",
+    "locator": "§ 151 (legend of the Peacock type, ending …mahendrakumāraḥ; reading partly uncertain)",
+    "url": "https://archive.org/details/dli.csl.5234"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Allan reads the legend as ending in \"mahendrakumāraḥ\" (Mahendra being Kumāragupta's title) while calling the rest uncertain."
  },
  {
   "id": "material:243",
@@ -5363,12 +5405,23 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Kumaragupta_I"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Bhitari pillar, line 5–6 (genealogy: Kumāragupta son of Candragupta and Dhruvadevī)",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00036"
+   },
+   {
+    "source": "src:allan-1914",
+    "locator": "Kumāragupta I types",
+    "url": "https://archive.org/details/dli.csl.5234"
    }
   ],
-  "confidence": "medium",
-  "status": "reference-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Gupta genealogy in the Bhitari inscription."
  },
  {
   "id": "material:244",
@@ -5636,12 +5689,22 @@
    },
    {
     "source": "src:fleet-1888"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Gangdhar inscription of Mayūrākṣaka",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00076"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 17"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Edition URL added (DHARMA: first edited in Fleet 1888)."
  },
  {
   "id": "material:256",
@@ -7363,12 +7426,18 @@
    },
    {
     "source": "src:kielhorn-ei6"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "bibliography: Kielhorn 1900–1901, EI 6, pp. 1–12",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSBadamiCalukya00005"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Edition URL added."
  },
  {
   "id": "material:339",
@@ -7523,12 +7592,18 @@
    },
    {
     "source": "src:indraji-buhler-1885"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "bibliography: Indraji & Bühler 1881, pp. 1–4",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham02001"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Edition URL added."
  },
  {
   "id": "material:345",

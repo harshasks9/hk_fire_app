@@ -40,6 +40,33 @@
   "agent": "purana"
  },
  {
+  "id": "src:jaini-1979",
+  "type": "scholarly-book",
+  "title": "The Jaina Path of Purification",
+  "author": "Padmanabh S. Jaini",
+  "year": "1979",
+  "publisher": "University of California Press / Motilal Banarsidass",
+  "agent": "purana"
+ },
+ {
+  "id": "src:kirfel-1920",
+  "type": "scholarly-book",
+  "title": "Die Kosmographie der Inder nach den Quellen dargestellt",
+  "author": "Willibald Kirfel",
+  "year": "1920",
+  "publisher": "Kurt Schroeder, Bonn and Leipzig",
+  "agent": "purana"
+ },
+ {
+  "id": "src:gombrich-1975",
+  "type": "scholarly-book",
+  "title": "Ancient Indian Cosmology (in C. Blacker and M. Loewe, eds., Ancient Cosmologies, pp. 110–142)",
+  "author": "Richard F. Gombrich",
+  "year": "1975",
+  "publisher": "George Allen & Unwin, London",
+  "agent": "purana"
+ },
+ {
   "id": "src:sukthankar-1933",
   "type": "primary-text",
   "title": "Prolegomena to the Ādiparvan (The Mahābhārata: For the First Time Critically Edited, vol. 1)",

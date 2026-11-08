@@ -2580,5 +2580,2482 @@
   "status": "reference-checked",
   "agent": "purana",
   "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:mohini-amrita",
+  "type": "narrative",
+  "name": "Mohinī distributes the nectar",
+  "iast": "Mohinī-avatāra",
+  "summary": "When the asuras seize the nectar produced by the churning, Viṣṇu takes the form of an enchanting woman; the infatuated asuras let her divide it, and she gives it all to the gods. Rāhu, disguised among the gods, is beheaded by the discus.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 8.8.41–8.9.29",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ViP 1.9.107",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 1.16.39–1.17.8",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b01/b01c016.htm"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:mohini-shiva",
+  "type": "narrative",
+  "name": "Śiva and Mohinī",
+  "iast": "Mohinī-darśana",
+  "summary": "Śiva asks Viṣṇu to show him the enchantress form; seeing Mohinī playing with a ball he loses his composure and pursues her, his seed falling to earth where it becomes gold and silver; Viṣṇu then praises Śiva's mastery of māyā (Bhāgavata).",
+  "details": "Śaiva and South Indian traditions develop the union further into the birth of Śāstā/Ayyappan (Hariharaputra), a motif not in the Bhāgavata chapter.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 8.12.1–47",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:hayagriva-origin",
+  "type": "narrative",
+  "name": "How Viṣṇu came to have a horse's head (Hayagrīva)",
+  "iast": "Hayagrīva-avatāra",
+  "summary": "Versions differ: the Nārāyaṇīya has Viṣṇu assume the horse-headed form to recover the Vedas stolen by Madhu and Kaiṭabha; the Devī Bhāgavata says that a termite, sent by the gods, gnawed the bowstring on which the sleeping Viṣṇu rested his head, the string snapped and beheaded him, and a horse's head was fitted so he could kill the horse-headed demon Hayagrīva.",
+  "sources": [
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 12.335.24–64",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b12/b12c335.htm"
+   },
+   {
+    "source": "src:sa-wikisource",
+    "locator": "DBhP 1.5",
+    "edition": "Devī Bhāgavata Purāṇa (vulgate); Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A5%80%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A4%B5%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A4%83_%E0%A5%A6%E0%A5%A7/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A6%E0%A5%AB"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:anasuya",
+  "type": "character",
+  "name": "Anasūyā",
+  "iast": "Anasūyā",
+  "devanagari": "अनसूया",
+  "roles": [
+   "ṛṣi's wife",
+   "pativratā"
+  ],
+  "summary": "Wife of the sage Atri, proverbial for chastity, mother of Dattātreya, Durvāsas and Soma, born of portions of Viṣṇu, Śiva and Brahmā (Bhāgavata).",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 4.1.15–33",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt",
+    "quote": "atreḥ patny anasūyā trīñ jajñe suyaśasaḥ sutān"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:dattatreya-birth",
+  "type": "narrative",
+  "name": "The birth of Dattātreya, Durvāsas and Soma to Atri and Anasūyā",
+  "iast": "Dattātreya-janma",
+  "summary": "Atri performs austerities for a son like the Lord of the world; Brahmā, Viṣṇu and Śiva appear together and are born as his sons by Anasūyā — Soma from Brahmā's portion, Datta from Viṣṇu's, Durvāsas from Śiva's (Bhāgavata).",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 4.1.15–33",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "MkP 16–17",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:kardama",
+  "type": "character",
+  "name": "Kardama",
+  "iast": "Kardama",
+  "roles": [
+   "prajāpati",
+   "ṛṣi"
+  ],
+  "summary": "Prajāpati who marries Devahūti, daughter of Svāyambhuva Manu; their son is Kapila (Bhāgavata).",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 3.21–24",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:devahuti",
+  "type": "character",
+  "name": "Devahūti",
+  "iast": "Devahūti",
+  "roles": [
+   "disciple"
+  ],
+  "summary": "Daughter of Svāyambhuva Manu, wife of Kardama and mother of Kapila, to whom Kapila teaches devotional Sāṃkhya (Bhāgavata 3.25–33).",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 3.24.5; 3.33.1–37",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:kapila-devahuti",
+  "type": "narrative",
+  "name": "Kapila teaches his mother Devahūti",
+  "iast": "Kapilagītā / Kapilopadeśa",
+  "aliases": [
+   "Kapila Gītā"
+  ],
+  "summary": "Born to Kardama and Devahūti, Kapila — counted an avatāra — teaches his mother a devotional (bhakti-oriented) Sāṃkhya and yoga, and she attains liberation (Bhāgavata 3.24–33).",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 3.24–33",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:nabhi",
+  "type": "character",
+  "name": "Nābhi",
+  "iast": "Nābhi",
+  "roles": [
+   "king"
+  ],
+  "summary": "King of Ajanābha/Himavarṣa, grandson of Priyavrata, husband of Merudevī and father of Ṛṣabha in the Viṣṇu and Bhāgavata Purāṇas (and in Jain tradition, the last kulakara and father of Ṛṣabha).",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.1.16–27",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.3–4",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:bharata-rishabhaputra",
+  "type": "character",
+  "name": "Bharata (son of Ṛṣabha; Jaḍa Bharata)",
+  "iast": "Bharata",
+  "aliases": [
+   "Jaḍa Bharata",
+   "Jaḍabharata"
+  ],
+  "roles": [
+   "king",
+   "ascetic"
+  ],
+  "summary": "Eldest son of Ṛṣabha after whom, in the Viṣṇu and Bhāgavata Purāṇas, Bhāratavarṣa is named; he renounces the throne, is reborn as a deer through attachment to a fawn, and then as the outwardly dull (jaḍa) brāhmaṇa who teaches King Rahūgaṇa.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.1.27–33; 2.13–16",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.4.9; 5.7–14",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "Distinct from Bharata son of Śakuntalā (char:bharata-dauhshanti), whom the Mahābhārata makes the eponym of the Bhāratas; the texts give competing eponyms.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:rishabhanatha",
+  "type": "character",
+  "name": "Ṛṣabhanātha (first Jain tīrthaṅkara)",
+  "iast": "Ṛṣabha / Ṛṣabhanātha",
+  "aliases": [
+   "Ādinātha",
+   "Ṛṣabhadeva"
+  ],
+  "traditions": [
+   "trad:jain"
+  ],
+  "roles": [
+   "tīrthaṅkara"
+  ],
+  "summary": "In Jain tradition, Ṛṣabha (Ādinātha), the first of the twenty-four tīrthaṅkaras of the present age, son of the kulakara Nābhi and Marudevī, who teaches humanity the arts and renounces kingship.",
+  "sources": [
+   {
+    "source": "src:jaini-1979"
+   },
+   {
+    "source": "src:dundas-2002"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "article (pointer only)",
+    "url": "https://en.wikipedia.org/wiki/Rishabhanatha"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "purana",
+  "limits": "Kept separate from the Bhāgavata's Ṛṣabha: the shared names (Nābhi, Marudevī/Merudevī, Bharata) are textual parallels, not an identity the Jain sources accept.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:rishabha-renunciation",
+  "type": "narrative",
+  "name": "Ṛṣabha's rule and renunciation (Bhāgavata Purāṇa)",
+  "iast": "Ṛṣabhacarita",
+  "summary": "Ṛṣabha, son of Nābhi and Merudevī and a descent of Viṣṇu, rules Ajanābha, gives the kingdom to Bharata, and wanders as a naked avadhūta until his body burns in a forest fire; the Bhāgavata adds that a king of Koṅka-Veṅka-Kuṭaka, Arhat, hearing of him, will spread a heterodox path in the Kali age.",
+  "details": "BhP 5.6.9 is commonly read as an allusion to Jainism (the Arhat of Koṅka-Veṅka-Kuṭaka in southern Karnataka); Jaini and Dundas discuss the Hindu appropriation of Ṛṣabha. The Viṣṇu Purāṇa gives only the genealogy and Bharata's accession.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.3–6",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.1.26–33",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:jada-bharata",
+  "type": "narrative",
+  "name": "Bharata reborn as a deer and as Jaḍa Bharata",
+  "iast": "Jaḍabharatopākhyāna",
+  "summary": "King Bharata retires to the forest, becomes attached to an orphaned fawn and is reborn a deer; reborn again as a brāhmaṇa he feigns dullness, is pressed into carrying King Rahūgaṇa's palanquin, and teaches the king non-dual knowledge.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.13–16",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.7–14",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:vena",
+  "type": "character",
+  "name": "Vena",
+  "iast": "Vena",
+  "devanagari": "वेन",
+  "roles": [
+   "king"
+  ],
+  "summary": "Wicked king, son of Aṅga, who forbids sacrifice and is killed by the sages; from his churned body come the Niṣāda and then Pṛthu (Viṣṇu and Bhāgavata Purāṇas).",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 1.13.7–39",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 4.13–14",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "deity:bhudevi",
+  "type": "deity",
+  "name": "Bhūmi (the Earth, Pṛthivī)",
+  "iast": "Bhūmi / Pṛthivī / Bhūdevī",
+  "devanagari": "भूमि",
+  "aliases": [
+   "Pṛthivī",
+   "Bhūdevī",
+   "Bhū",
+   "Dharā",
+   "Medinī",
+   "Vasuṃdharā"
+  ],
+  "roles": [
+   "goddess"
+  ],
+  "summary": "The Earth personified as a goddess, who flees from Pṛthu as a cow and yields her milk when he makes Manu the calf; also the mother of Naraka and, in Vaiṣṇava theology, a consort of Viṣṇu (Bhūdevī).",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 1.13.70–90",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 4.17–18",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:prithu-milks-earth",
+  "type": "narrative",
+  "name": "Pṛthu milks the Earth",
+  "iast": "Pṛthu-dohana",
+  "summary": "Born from the churned arm of the dead king Vena, Pṛthu finds the earth withholding her produce; she flees as a cow, he pursues her with his bow, and she agrees to give milk if a calf is provided. With Svāyambhuva Manu as calf he milks out the crops; other beings milk her with their own calves and vessels. The earth is named Pṛthivī after him.",
+  "details": "The milking motif goes back to the Atharvaveda (Virāj milked by various beings, AV 8.10) and is told in the Mahābhārata's Ṣoḍaśarājika; the Purāṇic accounts attach it to the first consecrated king.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 1.13.7–94",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 4.13–23",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:ajamila",
+  "type": "character",
+  "name": "Ajāmila",
+  "iast": "Ajāmila",
+  "devanagari": "अजामिल",
+  "roles": [
+   "brāhmaṇa",
+   "devotee"
+  ],
+  "summary": "Fallen brāhmaṇa of Kānyakubja who, dying, calls out to his son named Nārāyaṇa; Viṣṇu's messengers rescue him from Yama's, demonstrating the power of the divine name (Bhāgavata 6.1–2).",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 6.1.21–6.2.49",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt",
+    "quote": "kānyakubje dvijaḥ kaściddāsīpatirajāmilaḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:ajamila",
+  "type": "narrative",
+  "name": "Ajāmila saved by the name 'Nārāyaṇa'",
+  "iast": "Ajāmilopākhyāna",
+  "summary": "Ajāmila, a brāhmaṇa who has abandoned his duties for a slave-woman, calls out his youngest son's name 'Nārāyaṇa' at death; Viṣṇu's attendants stop Yama's messengers, arguing that even an inadvertent utterance of the name removes sin. Ajāmila repents and attains Vaikuṇṭha.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 6.1.20–6.3.35",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:ambarisha",
+  "type": "character",
+  "name": "Ambarīṣa (son of Nābhāga)",
+  "iast": "Ambarīṣa",
+  "devanagari": "अम्बरीष",
+  "roles": [
+   "king",
+   "devotee"
+  ],
+  "summary": "Ikṣvāku king and devotee of Viṣṇu; when Durvāsas, offended that Ambarīṣa broke his Dvādaśī fast before the sage's return, sends a demon against him, Viṣṇu's discus Sudarśana pursues Durvāsas through the worlds until he begs the king's pardon (Bhāgavata 9.4–5).",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.4.13–9.5.28",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:ambarisha-durvasas",
+  "type": "narrative",
+  "name": "Ambarīṣa, Durvāsas and the discus",
+  "iast": "Ambarīṣopākhyāna",
+  "summary": "At the end of his Dvādaśī vow King Ambarīṣa sips water before the delayed sage Durvāsas returns; the angry sage creates a fiery being to kill him; Viṣṇu's discus destroys it and chases Durvāsas through the three worlds, until Viṣṇu tells him to seek the forgiveness of his devotee.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.4.15–9.5.28",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:jaya-vijaya",
+  "type": "character",
+  "name": "Jaya and Vijaya (Viṣṇu's door-keepers)",
+  "iast": "Jaya, Vijaya",
+  "roles": [
+   "door-keepers",
+   "pārṣada"
+  ],
+  "summary": "Twin door-keepers of Vaikuṇṭha who bar the child-sages Sanaka and his brothers and are cursed to three demonic births — as Hiraṇyakaśipu and Hiraṇyākṣa, Rāvaṇa and Kumbhakarṇa, and Śiśupāla and Dantavakra — each time slain by Viṣṇu (Bhāgavata).",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 3.15.26–3.16.37; 7.1.35–46",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:four-kumaras",
+  "type": "character",
+  "name": "The four Kumāras (Sanaka, Sanandana, Sanātana, Sanatkumāra)",
+  "iast": "Sanaka, Sanandana, Sanātana, Sanatkumāra",
+  "aliases": [
+   "Sanakādi",
+   "Catuḥsana"
+  ],
+  "roles": [
+   "ṛṣi",
+   "avatāra (BhP)"
+  ],
+  "summary": "Mind-born sons of Brahmā who remain eternal children and celibate sages; in the Bhāgavata they curse Jaya and Vijaya and are counted the first descent of Viṣṇu (BhP 1.3.6).",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 1.3.6; 3.15.12–36; 7.1.35–37",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:dantavakra",
+  "type": "character",
+  "name": "Dantavakra",
+  "iast": "Dantavakra",
+  "aliases": [
+   "Dantavaktra"
+  ],
+  "roles": [
+   "king",
+   "antagonist"
+  ],
+  "summary": "King of Karūṣa, ally of Śiśupāla and enemy of Kṛṣṇa, who kills him; the Bhāgavata makes him and Śiśupāla the third birth of Jaya and Vijaya.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.78.1–15; 7.1.45–46",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:jaya-vijaya-curse",
+  "type": "narrative",
+  "name": "The curse of Jaya and Vijaya",
+  "iast": "Jaya-Vijaya-śāpa",
+  "summary": "Sanaka and his brothers, appearing as naked boys, are stopped at the gate of Vaikuṇṭha by Jaya and Vijaya; they curse the door-keepers to be born as asuras. Viṣṇu accepts the curse but promises their return: after three births as his enemies, each ended by him, they rejoin him.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 3.15.12–3.16.37; 7.1.35–46",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:trishanku-svarga",
+  "type": "narrative",
+  "name": "Triśaṅku's heaven",
+  "iast": "Triśaṅku-svarga",
+  "summary": "King Satyavrata (Triśaṅku), wanting to ascend to heaven in his body, is refused by Vasiṣṭha and cursed into a caṇḍāla by Vasiṣṭha's sons; Viśvāmitra, whose family Triśaṅku had fed in a famine (Harivaṃśa), sends him up by his own power; thrown down by Indra, he is held head-down in a new heaven Viśvāmitra creates.",
+  "sources": [
+   {
+    "source": "src:vr-critical-edition",
+    "locator": "VR (CE) 1.56–59",
+    "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
+   },
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 9.85–10.19",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.13–14",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.7.5–6",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:vasishtha-cow",
+  "type": "character",
+  "name": "Vasiṣṭha's wish-granting cow (Śabalā / Nandinī)",
+  "iast": "Śabalā / Nandinī",
+  "aliases": [
+   "Kāmadhenu (as type)",
+   "Śabalā",
+   "Nandinī"
+  ],
+  "roles": [
+   "divine cow"
+  ],
+  "summary": "The wish-fulfilling cow of the sage Vasiṣṭha whose seizure by King Viśvāmitra starts their feud; Vālmīki calls her Śabalā, the Mahābhārata Nandinī (daughter of Surabhi); she produces armies that defeat the king.",
+  "sources": [
+   {
+    "source": "src:vr-critical-edition",
+    "locator": "VR (CE) 1.51–53",
+    "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
+   },
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 1.165.9–40",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b01/b01c165.htm"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "The texts name the cow differently; Kāmadhenu/Surabhi as the mother of cows is a related but distinct figure in some texts.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:vishvamitra-vasishtha-cow",
+  "type": "narrative",
+  "name": "Viśvāmitra tries to seize Vasiṣṭha's cow",
+  "iast": "Vasiṣṭha-Viśvāmitra-virodha",
+  "summary": "King Viśvāmitra, hosted by Vasiṣṭha from his wish-granting cow, tries to take her; she produces armies that crush his forces, and Vasiṣṭha's brahmanic power defeats his weapons. Humiliated, Viśvāmitra undertakes austerities to become a brahmarṣi — the origin of a lasting feud.",
+  "details": "Vālmīki (1.51–64) uses the feud as Viśvāmitra's biography; the Mahābhārata (1.164–165) frames it within the Kalmāṣapāda and Vasiṣṭha stories. Their rivalry continues in the Hariścandra story and the āḍi–baka battle of the Mārkaṇḍeya Purāṇa (7–9). In the Ṛgveda both are poets of Sudās (RV 3.53; 7.33).",
+  "sources": [
+   {
+    "source": "src:vr-critical-edition",
+    "locator": "VR (CE) 1.51–64",
+    "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
+   },
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 1.165",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b01/b01c165.htm"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:adi-baka-battle",
+  "type": "narrative",
+  "name": "The battle of Vasiṣṭha and Viśvāmitra as two birds (āḍi and baka)",
+  "iast": "Āḍibaka-yuddha",
+  "summary": "Enraged that Viśvāmitra has ruined Hariścandra and killed his sons, Vasiṣṭha curses him to become a baka (heron); Viśvāmitra curses Vasiṣṭha to become an āḍi bird; their fight shakes the worlds until Brahmā restores and reconciles them (Mārkaṇḍeya Purāṇa 9).",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 9.1–32",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:shaibya",
+  "type": "character",
+  "name": "Śaibyā (wife of Hariścandra)",
+  "iast": "Śaibyā",
+  "aliases": [
+   "Tārāmatī (South Indian name)",
+   "Candramatī"
+  ],
+  "roles": [
+   "queen"
+  ],
+  "summary": "Queen of Hariścandra, sold into servitude with her son Rohitāśva when the king keeps his word to Viśvāmitra (Mārkaṇḍeya Purāṇa).",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 7–8",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt",
+    "quote": "śaivyayānugato duḥ khī bhāryayā balāputrayā"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:harishchandra-trial",
+  "type": "narrative",
+  "name": "Hariścandra's ordeal of truth",
+  "iast": "Hariścandropākhyāna",
+  "summary": "To keep a promise to Viśvāmitra, King Hariścandra gives up his kingdom, sells his wife Śaibyā and son Rohitāśva and himself becomes the servant of a caṇḍāla at the cremation ground; when his wife brings their dead son there, the gods (Dharma, Indra) reveal the test and restore them.",
+  "details": "The Mārkaṇḍeya Purāṇa (7–8) is the classic Sanskrit telling; the Devī Bhāgavata (7.18–27) retells it. The Aitareya Brāhmaṇa's older Hariścandra is the king who vows his son to Varuṇa (narr:shunahshepa); the Bhāgavata (9.7.7–23) tells that version.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 7.1–8.270",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:holika-burning",
+  "type": "narrative",
+  "name": "Holikā and Prahlāda",
+  "iast": "Holikā-dahana",
+  "summary": "In the legend told for Holī, Holikā, sister of Hiraṇyakaśipu and immune to fire, sits in a pyre with the child Prahlāda to burn him; she burns and he survives. The Nārada Purāṇa's festival rubric names Holikā 'a rākṣasī who frightened Prahlāda', burned in the Phālguna full-moon bonfire — or, 'in another opinion', the burning of Kāma.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "NārP 1.124.76–81",
+    "edition": "GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_nAradapurANa.txt"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "article (pointer only)",
+    "url": "https://en.wikipedia.org/wiki/Holika"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "The pyre-and-immunity plot is popular tradition; the checked Sanskrit Purāṇic passage gives only the identification of Holikā as a rākṣasī hostile to Prahlāda, inside a festival rite. The Viṣṇu and Bhāgavata Purāṇas' Prahlāda narratives do not contain Holikā.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:bhumandala",
+  "type": "place",
+  "name": "Bhūmaṇḍala (the earth-disc of seven continents)",
+  "iast": "Bhūmaṇḍala",
+  "aliases": [
+   "Bhūloka",
+   "the seven dvīpas (saptadvīpā vasumatī)"
+  ],
+  "subtype": "cosmological place",
+  "summary": "In Purāṇic cosmography the flat, circular earth: seven ring-shaped continents (dvīpas), each twice the size of the last, separated by seven oceans, with Mount Meru at the centre of Jambudvīpa and the Lokāloka mountain at the rim.",
+  "details": "The Viṣṇu (2.2–4), Bhāgavata (5.16–20) and Matsya (113–123) give the system with different orders of continents and oceans (see cmp:dvipa-lists). Gombrich (1975) and Kirfel (1920) treat the Purāṇic and parallel Jain and Buddhist cosmographies comparatively.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.2.5–7; 2.4.1–98",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.16–20",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:jambudvipa",
+  "type": "place",
+  "name": "Jambudvīpa",
+  "iast": "Jambudvīpa",
+  "subtype": "cosmological place",
+  "summary": "One of the seven continents (dvīpas) of Purāṇic cosmography: the central, innermost continent, named after its giant jambū (rose-apple) tree, with Meru at its centre; Bhāratavarṣa is its southern division.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.2.7–20",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+    "quote": "jambūdvīpaḥ samastānām eteṣāṃ madhyasaṃsthitaḥ"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.16.1–5",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:plakshadvipa",
+  "type": "place",
+  "name": "Plakṣadvīpa",
+  "iast": "Plakṣadvīpa",
+  "subtype": "cosmological place",
+  "summary": "One of the seven continents (dvīpas) of Purāṇic cosmography: the second continent in the Viṣṇu and Bhāgavata lists, named after its plakṣa (fig) tree; absent from the Matsya list.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.4.1–21",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.20.2–6",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:shalmalidvipa",
+  "type": "place",
+  "name": "Śālmalidvīpa",
+  "iast": "Śālmala / Śālmalidvīpa",
+  "subtype": "cosmological place",
+  "summary": "One of the seven continents (dvīpas) of Purāṇic cosmography: continent named after its śālmali (silk-cotton) tree; third in the Viṣṇu and Bhāgavata lists, fifth in the Matsya.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.4.21–33",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.20.7–12",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:kushadvipa",
+  "type": "place",
+  "name": "Kuśadvīpa",
+  "iast": "Kuśadvīpa",
+  "subtype": "cosmological place",
+  "summary": "One of the seven continents (dvīpas) of Purāṇic cosmography: continent named after its clump of kuśa grass; fourth in the Viṣṇu and Bhāgavata lists, third in the Matsya.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.4.34–45",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.20.13–17",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:kraunchadvipa",
+  "type": "place",
+  "name": "Krauñcadvīpa",
+  "iast": "Krauñcadvīpa",
+  "subtype": "cosmological place",
+  "summary": "One of the seven continents (dvīpas) of Purāṇic cosmography: continent named after Mount Krauñca; fifth in the Viṣṇu and Bhāgavata lists, fourth in the Matsya.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.4.46–57",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.20.18–23",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:shakadvipa",
+  "type": "place",
+  "name": "Śākadvīpa",
+  "iast": "Śākadvīpa",
+  "subtype": "cosmological place",
+  "summary": "One of the seven continents (dvīpas) of Purāṇic cosmography: continent named after its śāka (teak) tree, whose inhabitants worship Viṣṇu in the form of the Sun (ViP 2.4.70); later tradition derives the Śākadvīpīya (Maga) brāhmaṇa sun-priests from it; second in the Matsya list.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.4.58–71",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+    "quote": "śākadvīpe tu tair viṣṇuḥ sūryarūpadharo mune"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.20.24–28",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:pushkaradvipa",
+  "type": "place",
+  "name": "Puṣkaradvīpa",
+  "iast": "Puṣkaradvīpa",
+  "subtype": "cosmological place",
+  "summary": "One of the seven continents (dvīpas) of Purāṇic cosmography: the outermost continent, divided by the ring-mountain Mānasottara and named after its great lotus (puṣkara), Brahmā's seat.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.4.72–93",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.20.29–33",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:gomedakadvipa",
+  "type": "place",
+  "name": "Gomedakadvīpa",
+  "iast": "Gomedaka",
+  "subtype": "cosmological place",
+  "summary": "In the Matsya Purāṇa's cosmography, the sixth continent (named after Mount Gomeda), which takes the place of Plakṣadvīpa in the Viṣṇu and Bhāgavata lists.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 123.1–5",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt",
+    "quote": "gomedakaṃ pravakṣyāmi ṣaṣṭhaṃ dvīpaṃ tapodhanāḥ"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:lavanoda",
+  "type": "place",
+  "name": "Lavaṇoda (the Salt Ocean)",
+  "iast": "Lavaṇoda",
+  "subtype": "cosmological place",
+  "summary": "One of the seven ring-oceans of Purāṇic cosmography: the salt ocean surrounding Jambudvīpa. The texts differ on which continent it encircles.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.2.6; 2.4.1",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.20.2",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 122.3",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:ikshurasoda",
+  "type": "place",
+  "name": "Ikṣurasoda (the Ocean of Sugarcane Juice)",
+  "iast": "Ikṣurasoda",
+  "subtype": "cosmological place",
+  "summary": "One of the seven ring-oceans of Purāṇic cosmography: the ocean of sugarcane juice. The texts differ on which continent it encircles.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.4.24",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.20.6",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 123.4",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:suroda",
+  "type": "place",
+  "name": "Suroda (the Ocean of Wine)",
+  "iast": "Suroda",
+  "subtype": "cosmological place",
+  "summary": "One of the seven ring-oceans of Purāṇic cosmography: the ocean of surā (wine/liquor). The texts differ on which continent it encircles.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.4.33–34",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.20.7–13",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 122.104; 123.1",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:ghritoda",
+  "type": "place",
+  "name": "Ghṛtoda (the Ocean of Clarified Butter)",
+  "iast": "Ghṛtoda / Sarpis",
+  "subtype": "cosmological place",
+  "summary": "One of the seven ring-oceans of Purāṇic cosmography: the ocean of ghee. The texts differ on which continent it encircles.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.4.45",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.20.13–18",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 122.76–79",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:dadhimandoda",
+  "type": "place",
+  "name": "Dadhimaṇḍoda (the Ocean of Curds/Whey)",
+  "iast": "Dadhimaṇḍoda",
+  "subtype": "cosmological place",
+  "summary": "One of the seven ring-oceans of Purāṇic cosmography: the ocean of curd-water. The texts differ on which continent it encircles.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.4.57–58",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.20.24–29",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 122.92",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:svadudaka",
+  "type": "place",
+  "name": "Svādūdaka (the Ocean of Sweet Water)",
+  "iast": "Svādūdaka / Jala",
+  "subtype": "cosmological place",
+  "summary": "One of the seven ring-oceans of Purāṇic cosmography: the outermost ocean of fresh water, beyond which lies the golden land and the Lokāloka range. The texts differ on which continent it encircles.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.4.86",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.20.29",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 123.18",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:mount-meru",
+  "type": "place",
+  "name": "Mount Meru (Sumeru)",
+  "iast": "Meru / Sumeru",
+  "devanagari": "मेरु",
+  "aliases": [
+   "Sumeru",
+   "Kanakaparvata"
+  ],
+  "subtype": "cosmological place",
+  "summary": "The golden cosmic mountain at the centre of Jambudvīpa and of the earth-disc, around which the sun and stars revolve; the Viṣṇu Purāṇa gives it a height of 84,000 yojanas above ground and 16,000 below, 32,000 wide at the top and 16,000 at the base, like the pericarp of the earth-lotus.",
+  "details": "Four buttress mountains stand around it — Mandara (east), Gandhamādana (south), Vipula (west) and Supārśva (north) — each bearing a giant tree (ViP 2.2.17–18). The Ilāvṛta varṣa surrounds it. Meru is shared with Buddhist and Jain cosmologies, and temple architecture (the śikhara; Angkor's central towers) is often read as its image.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.2.7–10",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+    "quote": "caturaśītisāhasro yojanair asya cocchrayaḥ"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.16.7–28",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:gombrich-1975"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:bharatavarsha",
+  "type": "place",
+  "name": "Bhāratavarṣa",
+  "iast": "Bhāratavarṣa",
+  "subtype": "cosmological place",
+  "summary": "One of the nine varṣas (regions) of Jambudvīpa: the southern varṣa of Jambudvīpa, 'north of the ocean and south of the Himālaya, where the descendants of Bharata live' (ViP 2.3.1), the only 'land of action' (karmabhūmi); the Viṣṇu and Bhāgavata Purāṇas name it after Bharata son of Ṛṣabha, the Mahābhārata's genealogy after Bharata son of Śakuntalā.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.2.13; 2.3.1–28",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+    "quote": "uttaraṃ yat samudrasya himādreś caiva dakṣiṇam / varṣaṃ tad bhārataṃ nāma bhāratī yatra saṃtatiḥ"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.19.9–31",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:kimpurusha-varsha",
+  "type": "place",
+  "name": "Kiṃpuruṣavarṣa",
+  "iast": "Kiṃpuruṣa",
+  "subtype": "cosmological place",
+  "summary": "One of the nine varṣas (regions) of Jambudvīpa: the varṣa north of Bhārata, where (in the Bhāgavata) Hanumān worships Rāma.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.2.13",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.19.1–8",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:harivarsha",
+  "type": "place",
+  "name": "Harivarṣa",
+  "iast": "Harivarṣa",
+  "subtype": "cosmological place",
+  "summary": "One of the nine varṣas (regions) of Jambudvīpa: the third southern varṣa, where (in the Bhāgavata) Prahlāda worships Viṣṇu as Narasiṃha.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.2.13",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.18.7–14",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:ilavrita-varsha",
+  "type": "place",
+  "name": "Ilāvṛtavarṣa",
+  "iast": "Ilāvṛta",
+  "subtype": "cosmological place",
+  "summary": "One of the nine varṣas (regions) of Jambudvīpa: the central varṣa around Meru, where (in the Bhāgavata) Śiva is the only male and worships Saṅkarṣaṇa.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.2.15–16",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.17.15–24",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:ramyaka-varsha",
+  "type": "place",
+  "name": "Ramyakavarṣa",
+  "iast": "Ramyaka",
+  "subtype": "cosmological place",
+  "summary": "One of the nine varṣas (regions) of Jambudvīpa: a northern varṣa, where (in the Bhāgavata) Manu worships the Fish (Matsya).",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.2.14",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.18.24–28",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:hiranmaya-varsha",
+  "type": "place",
+  "name": "Hiraṇmayavarṣa",
+  "iast": "Hiraṇmaya",
+  "subtype": "cosmological place",
+  "summary": "One of the nine varṣas (regions) of Jambudvīpa: a northern varṣa, where (in the Bhāgavata) Aryaman worships the Tortoise (Kūrma).",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.2.14",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.18.29–33",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:uttarakuru",
+  "type": "place",
+  "name": "Uttarakuru",
+  "iast": "Uttarāḥ Kuravaḥ",
+  "subtype": "cosmological place",
+  "summary": "One of the nine varṣas (regions) of Jambudvīpa: the northernmost varṣa, a land of long-lived, happy people, where (in the Bhāgavata) the Earth worships the Boar (Varāha).",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.2.14",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.18.34–39",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:bhadrashva-varsha",
+  "type": "place",
+  "name": "Bhadrāśvavarṣa",
+  "iast": "Bhadrāśva",
+  "subtype": "cosmological place",
+  "summary": "One of the nine varṣas (regions) of Jambudvīpa: the varṣa east of Meru, where (in the Bhāgavata) Bhadraśravas worships Viṣṇu as Hayaśīrṣa (Hayagrīva).",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.2.23",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.18.1–6",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:ketumala-varsha",
+  "type": "place",
+  "name": "Ketumālavarṣa",
+  "iast": "Ketumāla",
+  "subtype": "cosmological place",
+  "summary": "One of the nine varṣas (regions) of Jambudvīpa: the varṣa west of Meru, where (in the Bhāgavata) Viṣṇu is worshipped in the form of Kāmadeva.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.2.23",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.18.15–23",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:manasottara",
+  "type": "place",
+  "name": "Mānasottara (the ring-mountain of Puṣkaradvīpa)",
+  "iast": "Mānasottara",
+  "subtype": "cosmological place",
+  "summary": "Circular mountain dividing Puṣkaradvīpa into an inner and outer half, over which the sun's chariot runs in the Bhāgavata's astronomy.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.4.74–80",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+    "quote": "mānasottarasaṃjño vai madhyato valayākṛtiḥ"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.20.30; 5.21.7",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:lokaloka",
+  "type": "place",
+  "name": "Lokāloka (the world/no-world mountain)",
+  "iast": "Lokāloka",
+  "subtype": "cosmological place",
+  "summary": "The ring-mountain at the edge of the earth-disc, beyond the ocean of sweet water and a golden land, dividing the lit world (loka) from the unlit (aloka).",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.4.94–98",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+    "quote": "lokālokas tataḥ śailo yojanāyutavistṛtaḥ"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.20.34–42",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "concept:fourteen-lokas",
+  "type": "concept",
+  "name": "The fourteen worlds (caturdaśa-bhuvana)",
+  "iast": "caturdaśa bhuvanāni",
+  "aliases": [
+   "Caturdaśa-bhuvana",
+   "the fourteen lokas"
+  ],
+  "subtype": "cosmological scheme",
+  "summary": "The Purāṇic vertical cosmos of seven upper worlds — Bhūr (earth), Bhuvar, Svar, Mahar, Jana, Tapas and Satya — and seven netherworlds (pātālas/talas), whose names differ between texts.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.5.2; 2.7.1–20",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.24.7; 2.1.26–28",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:bhurloka",
+  "type": "place",
+  "name": "Bhūrloka (the earth)",
+  "iast": "Bhūr",
+  "aliases": [],
+  "subtype": "cosmological place",
+  "summary": "One of the seven upper worlds of Purāṇic cosmology: the earth, as far as sun and moon illumine it.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.7.16",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+    "quote": "sa bhūrlokaḥ samākhyāto"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:bhuvarloka",
+  "type": "place",
+  "name": "Bhuvarloka (the atmosphere)",
+  "iast": "Bhuvar",
+  "aliases": [],
+  "subtype": "cosmological place",
+  "summary": "One of the seven upper worlds of Purāṇic cosmology: the region between earth and sun, of the siddhas and munis.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.7.17",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:svarloka",
+  "type": "place",
+  "name": "Svarloka (Svarga, heaven)",
+  "iast": "Svar / Svarga",
+  "aliases": [
+   "Svarga",
+   "Svar"
+  ],
+  "subtype": "cosmological place",
+  "summary": "One of the seven upper worlds of Purāṇic cosmology: the heaven of the gods between the sun and the pole star (Dhruva).",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.7.18–19",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:maharloka",
+  "type": "place",
+  "name": "Maharloka",
+  "iast": "Mahar",
+  "aliases": [],
+  "subtype": "cosmological place",
+  "summary": "One of the seven upper worlds of Purāṇic cosmology: the world above the pole star, home of beings who live through a kalpa.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.7.12",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+    "quote": "dhruvād ūrdhvaṃ maharloko yatra te kalpavāsinaḥ"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:janaloka",
+  "type": "place",
+  "name": "Janaloka",
+  "iast": "Jana",
+  "aliases": [],
+  "subtype": "cosmological place",
+  "summary": "One of the seven upper worlds of Purāṇic cosmology: the world above Maharloka, of Brahmā's mind-born sons.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.7.13",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:tapoloka",
+  "type": "place",
+  "name": "Tapoloka",
+  "iast": "Tapas",
+  "aliases": [],
+  "subtype": "cosmological place",
+  "summary": "One of the seven upper worlds of Purāṇic cosmology: the world of the ascetic Vairājas, four times higher above Janaloka.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.7.14",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+    "quote": "caturguṇottare cordhvaṃ janalokāt tapaḥ smṛtaḥ"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:satyaloka",
+  "type": "place",
+  "name": "Satyaloka (Brahmaloka)",
+  "iast": "Satya / Brahmaloka",
+  "aliases": [
+   "Brahmaloka",
+   "Satya"
+  ],
+  "subtype": "cosmological place",
+  "summary": "One of the seven upper worlds of Purāṇic cosmology: the highest world, Brahmā's, from which there is no rebirth.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.7.15",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+    "quote": "apunarmārakā yatra brahmaloko hi sa smṛtaḥ"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:atala",
+  "type": "place",
+  "name": "Atala",
+  "iast": "Atala",
+  "subtype": "cosmological place",
+  "summary": "One of the seven netherworlds (pātālas/talas); paradisal subterranean realms of daityas, dānavas and nāgas.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.5.2",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+    "quote": "atalaṃ vitalaṃ caiva nitalaṃ ca gabhastimat / mahākhyaṃ sutalaṃ cāgryaṃ pātālaṃ cāpi saptamam"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.24.7, 5.24.16",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt",
+    "quote": "atalaṃ vitalaṃ sutalaṃ talātalaṃ mahātalaṃ rasātalaṃ pātālam"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:vitala",
+  "type": "place",
+  "name": "Vitala",
+  "iast": "Vitala",
+  "subtype": "cosmological place",
+  "summary": "One of the seven netherworlds (pātālas/talas); paradisal subterranean realms of daityas, dānavas and nāgas.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.5.2",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.24.7, 5.24.17",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:nitala",
+  "type": "place",
+  "name": "Nitala",
+  "iast": "Nitala",
+  "subtype": "cosmological place",
+  "summary": "One of the seven netherworlds (pātālas/talas) (Viṣṇu Purāṇa list only); paradisal subterranean realms of daityas, dānavas and nāgas.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.5.2",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:gabhastimat",
+  "type": "place",
+  "name": "Gabhastimat",
+  "iast": "Gabhastimat",
+  "subtype": "cosmological place",
+  "summary": "One of the seven netherworlds (pātālas/talas) (Viṣṇu Purāṇa list only); paradisal subterranean realms of daityas, dānavas and nāgas.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.5.2",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:mahatala",
+  "type": "place",
+  "name": "Mahātala",
+  "iast": "Mahātala",
+  "subtype": "cosmological place",
+  "summary": "One of the seven netherworlds (pātālas/talas); paradisal subterranean realms of daityas, dānavas and nāgas.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.5.2 (as mahākhya)",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.24.7, 5.24.29",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:sutala",
+  "type": "place",
+  "name": "Sutala",
+  "iast": "Sutala",
+  "subtype": "cosmological place",
+  "summary": "One of the seven netherworlds (pātālas/talas); paradisal subterranean realms of daityas, dānavas and nāgas. In the Bhāgavata, Bali dwells in Sutala after Vāmana's three strides.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.5.2",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.24.7, 5.24.18–27",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:talatala",
+  "type": "place",
+  "name": "Talātala",
+  "iast": "Talātala",
+  "subtype": "cosmological place",
+  "summary": "One of the seven netherworlds (pātālas/talas) (Bhāgavata list only); paradisal subterranean realms of daityas, dānavas and nāgas.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.24.7, 5.24.28",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:rasatala",
+  "type": "place",
+  "name": "Rasātala",
+  "iast": "Rasātala",
+  "subtype": "cosmological place",
+  "summary": "One of the seven netherworlds (pātālas/talas) (Bhāgavata list only); paradisal subterranean realms of daityas, dānavas and nāgas. Often used generically for the underworld, e.g. where Varāha finds the sunken earth.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.24.7, 5.24.30",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:patala",
+  "type": "place",
+  "name": "Pātāla (the netherworlds)",
+  "iast": "Pātāla",
+  "aliases": [
+   "Saptapātāla",
+   "bila-svarga"
+  ],
+  "subtype": "cosmological place",
+  "summary": "The seven subterranean worlds below the earth, 'more delightful than heaven' (Nārada's report, ViP 2.5.5), with Śeṣa beneath them; also the name of the lowest of the seven.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.5.1–20",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+    "quote": "svarlokād api ramyāṇi pātālānīti nāradaḥ"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.24.7–31",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:naraka",
+  "type": "place",
+  "name": "Naraka (the hells)",
+  "iast": "naraka",
+  "devanagari": "नरक",
+  "aliases": [
+   "Narakas",
+   "Yamaloka (in part)"
+  ],
+  "subtype": "cosmological place",
+  "summary": "The places of punishment below the netherworlds and above the waters, ruled by Yama, where sinners suffer for set periods before rebirth; the Viṣṇu Purāṇa names some twenty-eight with the sins that lead to each, the Bhāgavata twenty-eight (or twenty-one).",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.6.1–50",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.26.1–40",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system. Not to be confused with the asura Naraka (char:narakasura).",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:raurava",
+  "type": "place",
+  "name": "Raurava",
+  "iast": "Raurava",
+  "subtype": "cosmological place",
+  "summary": "One of the named hells (narakas): for liars (ViP) / for those who harm living beings, who are attacked by ruru creatures (BhP).",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.6.2, 2.6.7",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+    "quote": "yaś cānyad anṛtaṃ vakti sa naro yāti rauravam"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.26.7, 5.26.10",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:asipatravana",
+  "type": "place",
+  "name": "Asipatravana (the sword-leaf forest)",
+  "iast": "Asipatravana",
+  "subtype": "cosmological place",
+  "summary": "One of the named hells (narakas): a forest whose leaves are swords.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.6.3, 2.6.26",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.26.7, 5.26.15",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:krimibhojana",
+  "type": "place",
+  "name": "Kṛmibhojana",
+  "iast": "Kṛmibhojana",
+  "subtype": "cosmological place",
+  "summary": "One of the named hells (narakas): where the sinner is eaten by worms or must eat them.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.6.3, 2.6.15",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.26.7, 5.26.18",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:vaitarani-naraka",
+  "type": "place",
+  "name": "Vaitaraṇī (the hell-river)",
+  "iast": "Vaitaraṇī",
+  "subtype": "cosmological place",
+  "summary": "One of the named hells (narakas): a river of filth, blood and pus at the border of Yama's realm.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 2.6.3, 2.6.24",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.26.7, 5.26.22",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:kumbhipaka",
+  "type": "place",
+  "name": "Kumbhīpāka",
+  "iast": "Kumbhīpāka",
+  "subtype": "cosmological place",
+  "summary": "One of the named hells (narakas): where those who cook living creatures are boiled in oil.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.26.7, 5.26.13",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:tamisra",
+  "type": "place",
+  "name": "Tāmisra",
+  "iast": "Tāmisra",
+  "subtype": "cosmological place",
+  "summary": "One of the named hells (narakas): the first hell of the Bhāgavata, of darkness, for those who seize another's wealth, wife or children.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.26.7–8",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt",
+    "quote": "tāmisro 'ndhatāmisro rauravo mahārauravaḥ kumbhīpākaḥ"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:andhatamisra",
+  "type": "place",
+  "name": "Andhatāmisra",
+  "iast": "Andhatāmisra",
+  "subtype": "cosmological place",
+  "summary": "One of the named hells (narakas): 'blinding darkness', for those who deceive a husband or wife.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 5.26.7, 5.26.9",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:vaikuntha",
+  "type": "place",
+  "name": "Vaikuṇṭha (Viṣṇu's world)",
+  "iast": "Vaikuṇṭha",
+  "devanagari": "वैकुण्ठ",
+  "aliases": [
+   "Viṣṇuloka",
+   "Paramapada (Śrīvaiṣṇava)"
+  ],
+  "subtype": "cosmological place",
+  "summary": "The world of Viṣṇu, beyond the cosmos, attained by his devotees; the Bhāgavata describes its gates guarded by Jaya and Vijaya (3.15). In the Viṣṇu Purāṇa 'Vaikuṇṭha' is still chiefly a name of Viṣṇu himself (born of Vikuṇṭhā in the Cākṣuṣa manvantara, 3.1.41).",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 3.15.13–26; 6.2.44–49",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ViP 3.1.41",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+    "quote": "vikuṇṭhāyām asau jajñe vaikuṇṭhair daivataiḥ saha"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:goloka",
+  "type": "place",
+  "name": "Goloka (Kṛṣṇa's cow-world)",
+  "iast": "Goloka",
+  "devanagari": "गोलोक",
+  "subtype": "cosmological place",
+  "summary": "The highest heaven of Kṛṣṇa and Rādhā above Vaikuṇṭha in later Kṛṣṇaite Purāṇas (Brahmavaivarta, Nārada), absent from the Bhāgavata.",
+  "details": "The Nārada Purāṇa (1.83) describes Rādhā as dwelling eternally in Goloka; the Brahmāṇḍa (2.43.29, in its late Paraśurāma section) has Kṛṣṇa return to Goloka with Rādhā. The Brahmavaivarta's Goloka (Brahmakhaṇḍa) was not checked. Gauḍīya theology later systematises it.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "NārP 1.83.11–48",
+    "edition": "GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_nAradapurANa.txt",
+    "quote": "golokavāsinī sā tu nityā kṛṣṇasahāyinī"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BndP 2.43.29",
+    "edition": "Venkatesvara Press ed.; GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_brahmANDapurANa.txt"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "article (pointer only)",
+    "url": "https://en.wikipedia.org/wiki/Goloka"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:shvetadvipa",
+  "type": "place",
+  "name": "Śvetadvīpa (the White Island)",
+  "iast": "Śvetadvīpa",
+  "devanagari": "श्वेतद्वीप",
+  "subtype": "cosmological place",
+  "summary": "Island in the north of the Milk Ocean inhabited by white, radiant devotees of Nārāyaṇa, visited by Nārada in the Nārāyaṇīya; the Bhāgavata calls it Viṣṇu's beloved abode beside the Milk Ocean.",
+  "details": "Older scholarship speculated about foreign (even Christian) influence behind the Śvetadvīpa episode; that view is now generally rejected and the episode is read within Pāñcarātra theology.",
+  "sources": [
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 12.323.23–26",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b12/b12c323.htm"
+   },
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 12.331.13–44",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b12/b12c331.htm"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 8.4.18",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt",
+    "quote": "kṣīrodaṃ me priyaṃ dhāma śvetadvīpaṃ ca bhāsvaram"
+   },
+   {
+    "source": "src:kirfel-1920"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "A place in Purāṇic cosmography, not a geographical location; it has no coordinates, and its dimensions are those the texts state within their own system.",
+  "lastVerified": "2026-11-08"
  }
 ]

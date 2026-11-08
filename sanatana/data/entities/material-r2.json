@@ -2044,29 +2044,6 @@
  {
   "agent": "material",
   "lastVerified": "2026-11-08",
-  "id": "inst:guimet",
-  "type": "institution",
-  "name": "Musée national des arts asiatiques – Guimet, Paris",
-  "summary": "French national museum of Asian art, holding Khmer and Cham sculpture brought to France in the colonial period, including the Harihara of Asram Maha Rosei.",
-  "location": {
-   "lat": 48.8651,
-   "lon": 2.2936,
-   "precision": "exact",
-   "label": "Paris, France",
-   "country": "France"
-  },
-  "sources": [
-   {
-    "source": "src:wikipedia",
-    "url": "https://en.wikipedia.org/wiki/Guimet_Museum"
-   }
-  ],
-  "status": "reference-checked",
-  "confidence": "medium"
- },
- {
-  "agent": "material",
-  "lastVerified": "2026-11-08",
   "id": "inst:bangkok-national-museum",
   "type": "institution",
   "name": "Bangkok National Museum",
@@ -2185,29 +2162,6 @@
    },
    {
     "source": "src:seyller-1999"
-   }
-  ],
-  "status": "reference-checked",
-  "confidence": "medium"
- },
- {
-  "agent": "material",
-  "lastVerified": "2026-11-08",
-  "id": "inst:cambridge-university-library",
-  "type": "institution",
-  "name": "Cambridge University Library",
-  "summary": "Research library of the University of Cambridge, whose Sanskrit collection includes early Nepalese palm-leaf manuscripts acquired by Daniel Wright in the 1870s.",
-  "location": {
-   "lat": 52.2049,
-   "lon": 0.1084,
-   "precision": "exact",
-   "label": "Cambridge, UK",
-   "country": "United Kingdom"
-  },
-  "sources": [
-   {
-    "source": "src:wikipedia",
-    "url": "https://en.wikipedia.org/wiki/Cambridge_University_Library"
    }
   ],
   "status": "reference-checked",
@@ -7071,6 +7025,7 @@
   "type": "manuscript",
   "evidenceClass": 2,
   "status": "reference-checked",
+  "limits": "Production history as summarised in secondary literature; the manuscript is not openly published, and its folio count is reported inconsistently.",
   "id": "ms:razmnama-jaipur",
   "name": "Imperial Razmnāma of Akbar (City Palace Museum, Jaipur)",
   "summary": "Akbar's own illustrated copy of the Persian Mahābhārata, made c. 1584–86 (preface dated 1588) by imperial painters including Basāwan, Daswanth and Lāl, now in the Maharaja Sawai Man Singh II Museum, Jaipur. It has some 169–176 paintings (counts differ); 147 were reproduced by Hendley in 1883–84.",
@@ -7101,7 +7056,6 @@
     "url": "https://en.wikipedia.org/wiki/Razmnama"
    }
   ],
-  "limits": "Production history as summarised in secondary literature; the manuscript is not openly published, and its folio count is reported inconsistently.",
   "confidence": "medium"
  },
  {
@@ -7110,6 +7064,7 @@
   "type": "manuscript",
   "evidenceClass": 2,
   "status": "reference-checked",
+  "limits": "A dispersed manuscript; the count of paintings and the whereabouts of all leaves are not fully known.",
   "id": "ms:razmnama-1598",
   "name": "Razmnāma of 1598–99 (dispersed second copy)",
   "summary": "Second illustrated Razmnāma made at the Mughal court in 1598–99 with about 161 paintings, divided in 1921 and dispersed; its last five parts are British Library Or. 12076 and other leaves are in museums including the Victoria and Albert Museum.",
@@ -7146,7 +7101,6 @@
     "url": "https://collections.vam.ac.uk/item/O112323/"
    }
   ],
-  "limits": "A dispersed manuscript; the count of paintings and the whereabouts of all leaves are not fully known.",
   "confidence": "medium"
  },
  {
@@ -7245,6 +7199,7 @@
   "type": "manuscript",
   "evidenceClass": 2,
   "status": "verified-online",
+  "limits": "An illustrated copy witnesses how the text was read and pictured when it was made; it is evidence of reception, not of the narrated events. Dating and holdings as given by the cited catalogue or study.",
   "id": "ms:harivamsha-persian-c1590",
   "name": "Illustrated Persian Harivaṃśa of c. 1590 (dispersed)",
   "summary": "Illustrated Mughal copy of the Persian Harivaṃśa, completed about 1590 (probably at Lahore) and later dispersed; some leaves were given ornate borders for an album, probably in 18th-century Lucknow. The V&A holds six folios.",
@@ -7369,6 +7324,7 @@
   "type": "manuscript",
   "evidenceClass": 2,
   "status": "reference-checked",
+  "limits": "Not openly published; dates and painting count not verified.",
   "id": "ms:akbar-ramayana-jaipur",
   "name": "Akbar's imperial Persian Rāmāyaṇa (City Palace Museum, Jaipur)",
   "summary": "Imperial illustrated copy of the Persian Rāmāyaṇa made for Akbar (c. 1588–91), kept with the Razmnāma in the former Jaipur royal collection.",
@@ -7397,7 +7353,6 @@
     "url": "https://en.wikipedia.org/wiki/City_Palace,_Jaipur"
    }
   ],
-  "limits": "Not openly published; dates and painting count not verified.",
   "confidence": "medium"
  },
  {
@@ -7406,6 +7361,7 @@
   "type": "manuscript",
   "evidenceClass": 2,
   "status": "reference-checked",
+  "limits": "Colophon not checked directly.",
   "id": "ms:hamida-banu-ramayana",
   "name": "Rāmāyaṇa of Ḥamīda Bānū Begum (Museum of Islamic Art, Doha)",
   "summary": "Illustrated Persian Rāmāyaṇa made for Akbar's mother Ḥamīda Bānū Begum, completed in 1594, now in the Museum of Islamic Art, Doha (some folios dispersed).",
@@ -7438,7 +7394,6 @@
     "source": "src:seyller-1999"
    }
   ],
-  "limits": "Colophon not checked directly.",
   "confidence": "medium"
  },
  {
@@ -7447,6 +7402,7 @@
   "type": "manuscript",
   "evidenceClass": 2,
   "status": "reference-checked",
+  "limits": "An illustrated copy witnesses how the text was read and pictured when it was made; it is evidence of reception, not of the narrated events. Dating and holdings as given by the cited catalogue or study.",
   "id": "ms:freer-ramayana",
   "name": "Freer Rāmāyaṇa of ʿAbd al-Raḥīm Khān-i Khānān",
   "summary": "Illustrated Persian Rāmāyaṇa made c. 1597–1605 for the Mughal general and poet ʿAbd al-Raḥīm Khān-i Khānān by painters of his own atelier, now in the Freer Gallery of Art, Washington.",
@@ -7483,6 +7439,7 @@
   "type": "manuscript",
   "evidenceClass": 2,
   "status": "reference-checked",
+  "limits": "A 17th-century court reading of Vālmīki in pictures.",
   "id": "ms:mewar-ramayana",
   "name": "Mewar Rāmāyaṇa of Jagat Singh I (1649–53)",
   "aliases": [
@@ -7524,7 +7481,6 @@
     "source": "src:losty-2008"
    }
   ],
-  "limits": "A 17th-century court reading of Vālmīki in pictures.",
   "confidence": "medium"
  },
  {
@@ -7583,6 +7539,7 @@
   "type": "manuscript",
   "evidenceClass": 2,
   "status": "verified-online",
+  "limits": "An illustrated copy witnesses how the text was read and pictured when it was made; it is evidence of reception, not of the narrated events. Dating and holdings as given by the cited catalogue or study.",
   "id": "ms:basohli-gita-govinda-1730",
   "name": "Gīta Govinda of 1730 painted by Manaku",
   "summary": "Series of paintings of Jayadeva's Gīta Govinda in the Basohli style, commissioned in 1730 for a lady patron probably named Mālinī and painted by Manaku of Guler; the leaves are dispersed (examples in the V&A).",
@@ -7761,6 +7718,7 @@
   "type": "manuscript",
   "evidenceClass": 2,
   "status": "verified-online",
+  "limits": "An illustrated copy witnesses how the text was read and pictured when it was made; it is evidence of reception, not of the narrated events. Dating and holdings as given by the cited catalogue or study.",
   "id": "ms:shangri-ramayana",
   "name": "Shangri Rāmāyaṇa (dispersed Pahari series)",
   "summary": "Large dispersed Rāmāyaṇa series of about 1690–1725 from the Punjab hills, named after the Shangri branch of the Kulu royal family that owned it; several distinct styles are distinguished (Style II leaves are attributed by the Met to Bahu/Jammu and Mankot). Leaves are in the Cleveland, Metropolitan and other museums.",
@@ -8162,6 +8120,7 @@
   "type": "manuscript",
   "evidenceClass": 2,
   "status": "verified-online",
+  "limits": "An illustrated copy witnesses how the text was read and pictured when it was made; it is evidence of reception, not of the narrated events. Dating and holdings as given by the cited catalogue or study.",
   "id": "ms:large-basohli-bhagavata",
   "name": "\"Large Basohli\" Bhāgavata Purāṇa (dispersed)",
   "summary": "Dispersed large-format Bhāgavata Purāṇa series from the Punjab hills of about 1760–65, with figures set against boldly contrasting coloured grounds.",
@@ -8248,6 +8207,7 @@
   "type": "manuscript",
   "evidenceClass": 2,
   "status": "verified-online",
+  "limits": "Whether all the leaves now attributed to \"the\" dispersed early Bhāgavata belong to a single manuscript is debated.",
   "id": "ms:early-rajput-bhagavata",
   "name": "Early Rajput dispersed Bhāgavata Purāṇa (c. 1520–40)",
   "summary": "Early illustrated Bhāgavata Purāṇa from the Delhi–Agra region, c. 1520–40, in the pre-Mughal \"Caurapañcāśikā\" style, with Sanskrit text above horizontal paintings; leaves are now dispersed among the Cleveland, Metropolitan and Art Institute of Chicago museums and others.",
@@ -8296,7 +8256,6 @@
     "url": "https://www.artic.edu/artworks/14849"
    }
   ],
-  "limits": "Whether all the leaves now attributed to \"the\" dispersed early Bhāgavata belong to a single manuscript is debated.",
   "confidence": "medium"
  },
  {
@@ -8441,5 +8400,357 @@
   "status": "reference-checked",
   "limits": "The Wikipedia article consulted does not itemise the Rāmāyaṇa scenes; subject list and dating rely on secondary reports.",
   "confidence": "medium"
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "person:eugen-hultzsch",
+  "type": "person",
+  "name": "Eugen Hultzsch",
+  "roles": [
+   "epigraphist"
+  ],
+  "summary": "German Indologist (1857–1927), Government Epigraphist of Madras, who founded the South Indian Inscriptions series and edited the Kūram and Kasakudi plates (SII I–II).",
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSIIv02p0i0073"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Eugen_Hultzsch"
+   }
+  ],
+  "status": "reference-checked",
+  "confidence": "medium"
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "person:h-krishna-sastri",
+  "type": "person",
+  "name": "H. Krishna Sastri",
+  "roles": [
+   "epigraphist"
+  ],
+  "summary": "Indian epigraphist (1870–1945) who edited SII II part V (Velurpalaiyam plates) and SII III part III (Tiruvālaṅkāṭu plates) and later served as Government Epigraphist.",
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSIIv02p0i0098"
+   },
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSTamilNadu01005"
+   }
+  ],
+  "status": "reference-checked",
+  "confidence": "medium"
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "person:ta-gopinatha-rao",
+  "type": "person",
+  "name": "T. A. Gopinatha Rao",
+  "roles": [
+   "epigraphist"
+  ],
+  "summary": "Indian archaeologist and epigraphist (1872–1919) of Travancore, author of Elements of Hindu Iconography, who edited the Anbil plates of Sundara Cōḻa in EI XV.",
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSTamilNadu01003"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/T._A._Gopinatha_Rao"
+   }
+  ],
+  "status": "reference-checked",
+  "confidence": "medium"
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "person:jph-vogel",
+  "type": "person",
+  "name": "J. Ph. Vogel",
+  "roles": [
+   "epigraphist"
+  ],
+  "summary": "Dutch Indologist (1871–1958) who catalogued the Mathurā museum (1910) and edited the earliest Sanskrit inscriptions of Borneo (Kutai yūpas, 1918) and Java (1925).",
+  "sources": [
+   {
+    "source": "src:vogel-1918"
+   },
+   {
+    "source": "src:vogel-1925"
+   },
+   {
+    "source": "src:vogel-1910"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Jean_Philippe_Vogel"
+   }
+  ],
+  "status": "reference-checked",
+  "confidence": "medium"
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "person:george-coedes",
+  "type": "person",
+  "name": "George Cœdès",
+  "roles": [
+   "epigraphist"
+  ],
+  "summary": "French epigraphist and historian (1886–1969) of the EFEO, editor of the Inscriptions du Cambodge, who with Pierre Dupont published the Sdok Kak Thom stele (1943) and edited the Vat Luang Kau stele (1956).",
+  "sources": [
+   {
+    "source": "src:coedes-dupont-1943"
+   },
+   {
+    "source": "src:coedes-1956-vat-luong-kau"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/George_C%C5%93d%C3%A8s"
+   }
+  ],
+  "status": "reference-checked",
+  "confidence": "medium"
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "person:louis-finot",
+  "type": "person",
+  "name": "Louis Finot",
+  "roles": [
+   "epigraphist"
+  ],
+  "summary": "French Indologist (1864–1935), first director of the EFEO, who published the Mỹ Sơn stele of Bhadravarman I in 1902.",
+  "sources": [
+   {
+    "source": "src:finot-1902"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Louis_Finot"
+   }
+  ],
+  "status": "reference-checked",
+  "confidence": "medium"
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "person:dc-sircar",
+  "type": "person",
+  "name": "D. C. Sircar",
+  "roles": [
+   "epigraphist"
+  ],
+  "summary": "Indian epigraphist and historian (1907–1985), Government Epigraphist for India, whose Select Inscriptions Bearing on Indian History and Civilization (vol. I, 2nd edn 1965) is the standard reader of early Indian inscriptions.",
+  "sources": [
+   {
+    "source": "src:sircar-1965",
+    "locator": "title page",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Dines_Chandra_Sircar"
+   }
+  ],
+  "status": "verified-online",
+  "confidence": "medium"
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "person:naravarman-aulikara",
+  "type": "person",
+  "name": "Naravarman (Aulikara)",
+  "iast": "Naravarman",
+  "roles": [
+   "king"
+  ],
+  "summary": "Early Aulikara king of Daśapura (Mandsaur), son of Siṃhavarman and grandson of Jayavarman, named in the Mandsaur inscription of Kṛta year 461 (404/405 CE); father of Viśvavarman of the Gangdhar inscription.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "floruit",
+    "start": 404,
+    "end": 405,
+    "label": "Kṛta (Mālava) year 461 = 404/405 CE",
+    "certainty": "secure",
+    "basis": "dated inscription",
+    "sources": [
+     {
+      "source": "src:dharmalekha",
+      "locator": "fragment A, vv. 1–8",
+      "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00017"
+     },
+     {
+      "source": "src:sircar-1965",
+      "locator": "bk. III (text of fragment A)",
+      "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+      "url": "https://archive.org/details/dli.calcutta.11040"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "fragment A, vv. 1–8",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00017"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III (text of fragment A)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "status": "verified-online",
+  "confidence": "high"
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "ins:mandsaur-naravarman",
+  "type": "inscription",
+  "name": "Mandsaur inscription of the time of Naravarman (Kṛta year 461)",
+  "subtype": "stone inscription (two fragments)",
+  "summary": "Sanskrit verse inscription dated in the Kṛta (Mālava) era year 461 (404/405 CE), in the reign of the Aulikara king Naravarman. It opens with homage to the thousand-headed Puruṣa of immeasurable self who sleeps on the waters of the four oceans — Viṣṇu in the Puruṣasūkta idiom and the Anantaśayana image.",
+  "attributes": {
+   "language": "Sanskrit",
+   "era": "Kṛta / Mālava (= Vikrama) year 461",
+   "editions": [
+    "Shastri 1913–14",
+    "Bhandarkar et al. 1981 no. 14",
+    "Sircar 1965 (fragment A)"
+   ]
+  },
+  "dates": [
+   {
+    "system": "material",
+    "event": "inscription",
+    "start": 404,
+    "end": 405,
+    "label": "Kṛta year 461, Āśvayuja śukla 5 = 404/405 CE",
+    "certainty": "secure",
+    "basis": "dated inscription",
+    "sources": [
+     {
+      "source": "src:dharmalekha",
+      "locator": "fragment A, vv. 1–8",
+      "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00017"
+     },
+     {
+      "source": "src:sircar-1965",
+      "locator": "bk. III (text of fragment A)",
+      "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+      "url": "https://archive.org/details/dli.calcutta.11040"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 24.07,
+   "lon": 75.07,
+   "precision": "approximate",
+   "label": "Mandsaur, Madhya Pradesh, India",
+   "country": "India"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "fragment A, vv. 1–8",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00017"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III (text of fragment A)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mandsaur"
+   }
+  ],
+  "status": "verified-online",
+  "confidence": "high",
+  "limits": "Dates the invocation of a cosmic sleeping Puruṣa-Viṣṇu to 404/405 CE; it does not describe a specific image."
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "inst:schoyen-collection",
+  "type": "institution",
+  "name": "The Schøyen Collection (Oslo and London)",
+  "summary": "Private manuscript collection formed by Martin Schøyen, with an online catalogue that includes South Asian palm-leaf manuscripts.",
+  "sources": [
+   {
+    "source": "src:schoyen-collection"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Sch%C3%B8yen_Collection"
+   }
+  ],
+  "status": "reference-checked",
+  "confidence": "medium"
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "ms:devi-mahatmya-schoyen-2174",
+  "type": "manuscript",
+  "name": "Devīmāhātmya palm-leaf manuscript, Schøyen Collection MS 2174",
+  "summary": "Palm-leaf manuscript of the Devīmāhātmya in 32 folios in early Bhujimol script, with one miniature and carved wooden covers painted with ten miniatures, attributed to Nepal or Bihar in the 11th century. The catalogue says it \"seems to be the oldest surviving copy of the text\".",
+  "attributes": {
+   "repository": "The Schøyen Collection",
+   "shelfmark": "MS 2174",
+   "material": "palm leaf, 32 ff., 5 × 31 cm",
+   "script": "early Bhujimol",
+   "provenance": "a monastery in Nepal; Sam Fogg catalogue 17 (1996), p. 40"
+  },
+  "dates": [
+   {
+    "system": "material",
+    "event": "earliest-manuscript",
+    "start": 1000,
+    "end": 1100,
+    "label": "11th century CE",
+    "certainty": "estimated",
+    "basis": "palaeography and style as given by the collection (basis not stated)",
+    "sources": [
+     {
+      "source": "src:schoyen-collection",
+      "locator": "MS 2174",
+      "url": "https://www.schoyencollection.com/23-religions/living-religions/23-16-hinduism/puranas/ms-2174"
+     }
+    ]
+   }
+  ],
+  "evidenceClass": 2,
+  "sources": [
+   {
+    "source": "src:schoyen-collection",
+    "locator": "MS 2174",
+    "url": "https://www.schoyencollection.com/23-religions/living-religions/23-16-hinduism/puranas/ms-2174"
+   }
+  ],
+  "status": "verified-online",
+  "confidence": "medium",
+  "limits": "Undated manuscript dated by a private collection's catalogue; the \"oldest\" claim is the catalogue's and has not been compared with Nepalese archival holdings (NGMCP). It is in any case four centuries later than the 608 CE inscriptional quotation."
  }
 ]

@@ -596,5 +596,258 @@
   ],
   "note": "Courtright (1985) reads the beheading-and-restoration plot as the dominant later form; the Matsya and Liṅga versions without a beheading are generally considered earlier, but none of these chapters is securely dated.",
   "agent": "purana"
+ },
+ {
+  "id": "cmp:narasimha-cause",
+  "title": "What provokes the Narasiṃha manifestation?",
+  "subject": "narr:narasimha-prahlada",
+  "question": "Why does Viṣṇu appear as the man-lion, and what is Prahlāda's role?",
+  "rows": [
+   {
+    "text": "text:harivamsha",
+    "locator": "HV (CE) 31.31–67",
+    "statement": "Hiraṇyakaśipu, made invulnerable by Brahmā's boon, oppresses the gods; at their plea Viṣṇu enters his hall as Narasiṃha and tears him apart. Prahlāda plays no part.",
+    "sources": [
+     {
+      "source": "src:harivamsha-ce",
+      "locator": "HV (CE) 31.31–67",
+      "edition": "Vaidya CE (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:matsya-purana",
+    "locator": "MatsP 161–163",
+    "statement": "Brahmā's boon and the gods' appeal again provide the cause; when the man-lion enters the court, Prahlāda alone sees with divine sight that it is the god and warns his father; Narasiṃha kills Hiraṇyakaśipu with his claws.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "MatsP 161.10–163.94",
+      "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:vishnu-purana",
+    "locator": "ViP 1.16–20",
+    "statement": "The cause is the persecution of Prahlāda for his devotion (poison, serpents, elephants, fire, the sea); the killing by Narasiṃha is only alluded to afterwards (1.20.32).",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "ViP 1.17–20; 1.20.32",
+      "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+      "quote": "pitary uparatiṃ nīte narasiṃhasvarūpiṇā"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:bhagavata-purana",
+    "locator": "BhP 7.1–10",
+    "statement": "Framed by the curse of Jaya and Vijaya; Hiraṇyakaśipu seeks revenge for Hiraṇyākṣa, wins Brahmā's boon (7.3.35–38), persecutes Prahlāda, and Narasiṃha emerges from a pillar to prove Prahlāda's word that the Lord is everywhere (7.8.17–29).",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "BhP 7.1–10",
+      "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:kurma-purana",
+    "locator": "KūrmP 1.15.50–62",
+    "statement": "Narasiṃha appears in Hiraṇyakaśipu's city; the king sends his son Prahlāda to kill him; Prahlāda fights, is defeated, then recognises Vāsudeva and urges his father and Hiraṇyākṣa to submit.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "KūrmP 1.15.50–62",
+      "edition": "GRETIL e-text",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kUrmapurANa.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:linga-purana",
+    "locator": "LiP 1.95–96",
+    "statement": "Narasiṃha kills Hiraṇyakaśipu but his fury threatens the worlds; Śiva assumes the Śarabha form and subdues him.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "LiP 1.95–96",
+      "edition": "Venkatesvara Press ed. (Bombay 1906), rev. O. Hellwig after Calcutta 1960; GRETIL e-text",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_liGgapurANa1-108.txt"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "note": "Prahlāda's persecution as the trigger is a Vaiṣṇava devotional development (ViP, BhP); the Harivaṃśa and Matsya keep the older deva–asura frame of a boon-proud tyrant.",
+  "agent": "purana"
+ },
+ {
+  "id": "cmp:hayagriva-origin",
+  "title": "How Viṣṇu acquires the horse's head",
+  "subject": "deity:hayagriva",
+  "question": "Why does Viṣṇu take the horse-headed form?",
+  "rows": [
+   {
+    "text": "psg:mbh-narayaniya",
+    "locator": "MBh (CE) 12.335.24–64",
+    "statement": "To recover the Vedas stolen by Madhu and Kaiṭabha he assumes the horse-headed form, retrieves them from the underworld, and then kills the demons.",
+    "sources": [
+     {
+      "source": "src:mbh-critical-edition",
+      "locator": "MBh (CE) 12.335.24–64",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b12/b12c335.htm"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:bhagavata-purana",
+    "locator": "BhP 7.9.37; 8.24.8–57",
+    "statement": "Hayaśiras kills Madhu and Kaiṭabha (7.9.37); separately, a demon named Hayagrīva steals the Vedas and is killed by the Fish (8.24).",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "BhP 7.9.37; 8.24.8–57",
+      "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:devi-bhagavata-purana",
+    "locator": "DBhP 1.5",
+    "statement": "A termite created by Brahmā gnaws the bowstring on which the sleeping Viṣṇu rests his chin; the string snaps and cuts off his head; the Goddess has a horse's head fitted so that he can kill the demon Hayagrīva, who could die only at a horse-headed being's hands.",
+    "sources": [
+     {
+      "source": "src:sa-wikisource",
+      "locator": "DBhP 1.5.1–25",
+      "edition": "Devī Bhāgavata Purāṇa (vulgate); Sanskrit Wikisource e-text",
+      "url": "https://sa.wikisource.org/wiki/%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A5%80%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A4%B5%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A4%83_%E0%A5%A6%E0%A5%A7/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A6%E0%A5%AB"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "agent": "purana"
+ },
+ {
+  "id": "cmp:dvipa-lists",
+  "title": "The seven continents and seven oceans in the Viṣṇu, Bhāgavata and Matsya Purāṇas",
+  "subject": "place:bhumandala",
+  "question": "In what order do the continents (dvīpas) and their encircling oceans run outward from Jambudvīpa?",
+  "rows": [
+   {
+    "text": "text:vishnu-purana",
+    "locator": "ViP 2.2.5–6; 2.4",
+    "statement": "Jambu (salt) — Plakṣa (sugarcane juice) — Śālmala (wine) — Kuśa (ghee) — Krauñca (curds) — Śāka (milk) — Puṣkara (fresh water); then the golden land and Lokāloka.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "ViP 2.2.5–6; 2.4.1–98",
+      "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+      "quote": "lavaṇekṣusurāsarpirdadhidugdhajalaiḥ samam"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:bhagavata-purana",
+    "locator": "BhP 5.20",
+    "statement": "Jambu (salt) — Plakṣa (sugarcane juice) — Śālmali (wine) — Kuśa (ghee) — Krauñca (milk) — Śāka (curds) — Puṣkara (fresh water); Mānasottara divides Puṣkara; then Lokāloka. The milk and curd oceans are reversed relative to the Viṣṇu Purāṇa.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "BhP 5.20.2–34",
+      "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:matsya-purana",
+    "locator": "MatsP 121–123",
+    "statement": "Jambu (salt) — Śāka (milk) — Kuśa (ghee) — Krauñca (curds) — Śālmala (wine) — Gomedaka (sugarcane juice) — Puṣkara (fresh water). No Plakṣa: a Gomedaka continent appears sixth.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "MatsP 122.1–123.46",
+      "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt",
+      "quote": "gomedakaṃ pravakṣyāmi ṣaṣṭhaṃ dvīpaṃ tapodhanāḥ"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "note": "Kirfel (1920) groups such variants into recensional families of the Purāṇic 'bhuvanakośa'; all agree on Jambudvīpa at the centre, Puṣkara outermost and seven oceans of different liquids.",
+  "agent": "purana"
+ },
+ {
+  "id": "cmp:patala-lists",
+  "title": "The names of the seven netherworlds (pātālas/talas)",
+  "subject": "place:patala",
+  "question": "What are the seven worlds below the earth called?",
+  "rows": [
+   {
+    "text": "text:vishnu-purana",
+    "locator": "ViP 2.5.2",
+    "statement": "Atala, Vitala, Nitala, Gabhastimat, Mahākhya (Mahātala), Sutala, Pātāla.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "ViP 2.5.2",
+      "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+      "quote": "atalaṃ vitalaṃ caiva nitalaṃ ca gabhastimat / mahākhyaṃ sutalaṃ cāgryaṃ pātālaṃ cāpi saptamam"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:bhagavata-purana",
+    "locator": "BhP 5.24.7",
+    "statement": "Atala, Vitala, Sutala, Talātala, Mahātala, Rasātala, Pātāla; each is described with its inhabitants (Bali in Sutala, Maya in Talātala, the nāgas in Pātāla).",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "BhP 5.24.7–31",
+      "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt",
+      "quote": "atalaṃ vitalaṃ sutalaṃ talātalaṃ mahātalaṃ rasātalaṃ pātālam"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:bhagavata-purana",
+    "locator": "BhP 2.1.26–27",
+    "statement": "In the cosmic body of the Lord (virāṭ), the netherworlds are his feet, ankles and shanks: Pātāla, Rasātala, Mahātala, Talātala…",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "BhP 2.1.26–27",
+      "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "agent": "purana"
  }
 ]

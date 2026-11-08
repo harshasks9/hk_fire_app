@@ -7042,20 +7042,27 @@
   "type": "text",
   "name": "Maharadia Lawana (Maranao)",
   "iast": "Maharadia Lawana",
+  "aliases": [
+   "Maharadya Lawana"
+  ],
   "subtype": "folk epic (Maranao)",
-  "summary": "A Maranao story from Mindanao (Philippines) in which the hero is Maharadia Lawana — Rāvaṇa — a prince banished for mischief who wins immortality, abducts the wife of Radia Mangandiri (Rāma), and is defeated with the help of Mangandiri’s brother Laksamana, who in this telling is born a monkey; recorded and published by Juan R. Francisco in 1969 as a localised, Islamised descendant of the Rāma story.",
+  "summary": "A Maranao epic song from the Lake Lanao region of Mindanao (Philippines) whose hero is Maharadia Lawana — Rāvaṇa — to whom the gods grant immortality; a local, Islamised telling of the Rāma story. Juan R. Francisco heard it sung by Maranao bards in 1968 and published an English rendering with the Maranao scholar Nagasura Madale (1969), arguing that the story reached the Philippines between the 17th and 19th centuries through Javanese and Malay contacts.",
   "dates": [
    {
     "system": "reception",
-    "event": "recording and publication by Francisco",
+    "event": "recorded by Francisco from Maranao bards",
     "start": 1968,
     "end": 1969,
-    "label": "collected 1968, published 1969",
+    "label": "heard 1968; published 1969",
     "certainty": "estimated",
     "basis": "publication history",
     "sources": [
      {
       "source": "src:francisco-1969"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Maharadia_Lawana"
      }
     ]
    }
@@ -7070,8 +7077,522 @@
    }
   ],
   "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "limits": "The plot and character correspondences were not checked against Francisco’s text in this round.",
+  "openQuestions": [
+   "Reference summaries disagree on whether Maharadia Lawana is presented as a monkey-king or as the Rāvaṇa figure abducting the heroine; Francisco 1969 should be consulted."
+  ],
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:mauritian-hinduism",
+  "type": "tradition",
+  "name": "Hinduism in Mauritius",
+  "aliases": [
+   "Mauritian Hinduism"
+  ],
+  "subtype": "diaspora tradition",
+  "summary": "The Hindu traditions of Mauritius, brought by indentured labourers from Bihar, eastern Uttar Pradesh, Tamil Nadu, Andhra and Maharashtra from the 1830s; Hindus are the largest religious group (about 48% in the 2022 census), the only Hindu plurality in Africa. Its signature observances are the Mahāśivarātri pilgrimage to Ganga Talao (Grand Bassin), Thaipusam and Tamil kāvaṭi, and the Bhojpuri Geet-Gawai.",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "arrival of indentured labourers (British Mauritius)",
+    "start": 1834,
+    "end": 1920,
+    "label": "1834–c. 1920",
+    "certainty": "estimated",
+    "basis": "colonial indenture records as summarised",
+    "sources": [
+     {
+      "source": "src:younger-2010"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hinduism_in_Mauritius"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:eisenlohr-2006"
+   },
+   {
+    "source": "src:younger-2010"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hinduism_in_Mauritius"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:grand-bassin-pilgrimage",
+  "type": "tradition",
+  "name": "Grand Bassin (Ganga Talao) pilgrimage",
+  "aliases": [
+   "Ganga Talao pilgrimage",
+   "Maha Shivaratri pilgrimage (Mauritius)"
+  ],
+  "subtype": "pilgrimage",
+  "summary": "The Mahāśivarātri pilgrimage of Mauritian Hindus, many walking from across the island carrying decorated kāṁvaṛ, to the crater lake Grand Bassin, renamed Ganga Talao and ritually linked with the Gaṅgā; the island’s largest Hindu festival and, for Eisenlohr, a “cultural touchstone” of Indo-Mauritian identity.",
+  "location": {
+   "lat": -20.4183,
+   "lon": 57.4925,
+   "precision": "approximate",
+   "label": "Grand Bassin, Savanne district",
+   "country": "Mauritius"
+  },
+  "sources": [
+   {
+    "source": "src:eisenlohr-2006"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ganga_Talao"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:indo-caribbean-hinduism",
+  "type": "tradition",
+  "name": "Indo-Caribbean Hinduism",
+  "aliases": [
+   "Caribbean Hinduism"
+  ],
+  "subtype": "diaspora tradition",
+  "summary": "The Hinduism of the descendants of Indian indentured labourers in Trinidad and Tobago (from 1845), British Guiana/Guyana (from 1838) and Suriname (from 1873), largely of Bhojpuri-speaking north Indian origin: Sanātanī temple and pandit organisations, Rāmāyaṇ (Mānas) recitation and Rāmlīlā, Phagwah (Holī) and Divālī as public festivals. Guyana has the highest proportion of Hindus in the Western Hemisphere.",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "arrival of the first indentured labourers in Trinidad (Fatel Razack, 30 May 1845)",
+    "start": 1845,
+    "end": 1845,
+    "label": "30 May 1845",
+    "certainty": "secure",
+    "basis": "ship records; Indian Arrival Day",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Fatel_Razack"
+     }
+    ]
+   },
+   {
+    "system": "reception",
+    "event": "indentured migration to the Caribbean (Guyana 1838 – c. 1917)",
+    "start": 1838,
+    "end": 1917,
+    "label": "1838–1917",
+    "certainty": "estimated",
+    "basis": "colonial indenture records as summarised",
+    "sources": [
+     {
+      "source": "src:younger-2010"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:vertovec-1992"
+   },
+   {
+    "source": "src:younger-2010"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hinduism_in_Trinidad_and_Tobago"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hinduism_in_Guyana"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hinduism_in_Suriname"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "inst:sanatan-dharma-maha-sabha",
+  "type": "institution",
+  "name": "Sanatan Dharma Maha Sabha (Trinidad and Tobago)",
+  "aliases": [
+   "Maha Sabha",
+   "SDMS"
+  ],
+  "subtype": "religious organisation",
+  "summary": "The largest Hindu organisation of Trinidad and Tobago, formed in 1952 when Bhadase Sagan Maraj merged two Sanātanī bodies; it runs some 150 mandirs, over fifty schools and broadcast media.",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "formation",
+    "start": 1952,
+    "end": 1952,
+    "label": "1952",
+    "certainty": "estimated",
+    "basis": "organisation history",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sanatan_Dharma_Maha_Sabha"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:vertovec-1992"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Sanatan_Dharma_Maha_Sabha"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:trinidad-ramleela",
+  "type": "tradition",
+  "name": "Rāmlīlā of Trinidad",
+  "aliases": [
+   "Ramleela (Trinidad)"
+  ],
+  "subtype": "performance tradition (diaspora)",
+  "summary": "Open-air village performances of the Rāma story in Trinidad, based on Tulsīdās’s Mānas and staged by Indo-Trinidadian communities from the late nineteenth century, culminating in the burning of Rāvaṇa’s effigy around Dussehra.",
+  "sources": [
+   {
+    "source": "src:vertovec-1992"
+   },
+   {
+    "source": "src:younger-2010"
+   }
+  ],
+  "confidence": "medium",
   "status": "recall",
   "agent": "regional",
-  "limits": "Plot details are from secondary summaries and await a check of Francisco’s text; the route of transmission (via Malay Hikayat Seri Rama) is a scholarly inference."
+  "limits": "The date of the first Trinidad Rāmlīlā (often said to be the 1880s) was not verified."
+ },
+ {
+  "id": "trad:phagwah",
+  "type": "tradition",
+  "name": "Phagwah (Caribbean Holī)",
+  "aliases": [
+   "Phagwa",
+   "Holi Phagwa"
+  ],
+  "subtype": "festival (diaspora)",
+  "summary": "The Caribbean form of Holī among Indo-Guyanese, Indo-Trinidadians and Indo-Surinamese, named from the Bhojpuri month Phāgun, with chowtal singing and the throwing of coloured water (abeer); a public holiday in Guyana and Suriname.",
+  "sources": [
+   {
+    "source": "src:younger-2010"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Holi"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:indo-fijian-hinduism",
+  "type": "tradition",
+  "name": "Hinduism in Fiji",
+  "aliases": [
+   "Indo-Fijian Hinduism",
+   "Fiji Sanatan Dharm"
+  ],
+  "subtype": "diaspora tradition",
+  "summary": "The Hinduism of Indo-Fijians, descendants of indentured labourers brought to the sugar plantations between 1879 and 1916; about a quarter of Fiji’s population (24% in 2017). Rāmāyaṇ maṇḍalīs reciting the Mānas, Sanātanī and Ārya Samāj organisations and south Indian fire-walking are among its institutions; Kelly (1991) studies its colonial-era politics of virtue.",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "indentured migration to Fiji",
+    "start": 1879,
+    "end": 1916,
+    "label": "1879–1916",
+    "certainty": "estimated",
+    "basis": "colonial records as summarised",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hinduism_in_Fiji"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:kelly-1991"
+   },
+   {
+    "source": "src:younger-2010"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hinduism_in_Fiji"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:malaysian-hinduism",
+  "type": "tradition",
+  "name": "Hinduism in Malaysia",
+  "aliases": [
+   "Malaysian Hinduism"
+  ],
+  "subtype": "diaspora tradition",
+  "summary": "The Hinduism of Malaysia’s Indian (mostly Tamil) community, about 6% of the population (2020), formed largely by nineteenth- and early twentieth-century labour migration to the plantations; its great public festival is Thaipusam at Batu Caves near Kuala Lumpur, with its 43-metre Murukaṉ statue.",
+  "sources": [
+   {
+    "source": "src:collins-1997"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hinduism_in_Malaysia"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Batu_Caves"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:south-african-hinduism",
+  "type": "tradition",
+  "name": "Hinduism in South Africa",
+  "subtype": "diaspora tradition",
+  "summary": "The Hinduism of Indian South Africans, mainly in KwaZulu-Natal, descended chiefly from indentured labourers brought to Natal from 1860 to 1911 and from later “passenger” migrants; Tamil, Telugu, Hindi- and Gujarati-speaking traditions coexist, with fire-walking festivals for Draupadī and Kāvaṭi for Murukaṉ.",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "indentured migration to Natal",
+    "start": 1860,
+    "end": 1911,
+    "label": "1860–1911",
+    "certainty": "estimated",
+    "basis": "colonial records as summarised",
+    "sources": [
+     {
+      "source": "src:younger-2010"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hinduism_in_South_Africa"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:younger-2010"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hinduism_in_South_Africa"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:british-hindu-temple-movement",
+  "type": "tradition",
+  "name": "Hindu temple-building in Britain",
+  "aliases": [
+   "British Hinduism"
+  ],
+  "subtype": "diaspora religious movement",
+  "summary": "The growth of British Hindu congregations from converted houses and halls in the 1960s–70s, after migration from India and East Africa, to purpose-built temples such as the BAPS Shri Swaminarayan Mandir at Neasden (1995) and many regional and sectarian mandirs; the temples belong to the temple records, this record to the community movement.",
+  "sources": [
+   {
+    "source": "src:vertovec-2000"
+   },
+   {
+    "source": "src:williams-2001"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hinduism_in_the_United_Kingdom"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:american-hindu-temple-movement",
+  "type": "tradition",
+  "name": "Hindu temple-building in the United States",
+  "aliases": [
+   "American Hinduism (temple movement)"
+  ],
+  "subtype": "diaspora religious movement",
+  "summary": "The establishment of temples by Indian professionals who arrived after the 1965 Immigration Act — among the first the Ganesha temple of the Hindu Temple Society of North America in Flushing, New York, and the Sri Venkateswara temple at Penn Hills, Pittsburgh (both consecrated 1977) — often built by south Indian craftsmen on Āgamic plans and serving pan-Hindu congregations.",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "first purpose-built immigrant temples consecrated",
+    "start": 1977,
+    "end": 1977,
+    "label": "1977",
+    "certainty": "estimated",
+    "basis": "temple histories as summarised by Eck and Waghorne",
+    "view": "Eck; Waghorne",
+    "sources": [
+     {
+      "source": "src:eck-2001"
+     },
+     {
+      "source": "src:waghorne-2004"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:waghorne-2004"
+   },
+   {
+    "source": "src:eck-2001"
+   },
+   {
+    "source": "src:williams-1988"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hindu_Temple_Society_of_North_America"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "limits": "Which temple was “first” depends on definition (consecration, construction, earlier Vedanta Society buildings).",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:iskcon",
+  "type": "tradition",
+  "name": "ISKCON (International Society for Krishna Consciousness)",
+  "aliases": [
+   "ISKCON",
+   "Hare Krishna movement"
+  ],
+  "subtype": "Gauḍīya Vaiṣṇava movement",
+  "traditions": [
+   "trad:gaudiya"
+  ],
+  "summary": "A Gauḍīya Vaiṣṇava movement founded in New York on 13 July 1966 by A. C. Bhaktivedanta Swami Prabhupāda, which spread the chanting of the Hare Kṛṣṇa mantra, Caitanya’s theology and his own translations of the Gītā and Bhāgavata among Western converts and later the Indian diaspora; its headquarters are at Māyāpur, West Bengal. It holds Ratha Yātrās in cities worldwide.",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "foundation in New York",
+    "start": 1966,
+    "end": 1966,
+    "label": "13 July 1966",
+    "certainty": "secure",
+    "basis": "incorporation record as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/International_Society_for_Krishna_Consciousness"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:rochford-1985"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/International_Society_for_Krishna_Consciousness"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:bhaktivedanta-swami",
+  "type": "person",
+  "name": "A. C. Bhaktivedanta Swami Prabhupāda",
+  "aliases": [
+   "Prabhupada",
+   "Srila Prabhupada",
+   "Abhay Charan De"
+  ],
+  "traditions": [
+   "trad:gaudiya",
+   "trad:iskcon"
+  ],
+  "roles": [
+   "founder",
+   "teacher",
+   "translator"
+  ],
+  "summary": "Bengali Gauḍīya Vaiṣṇava teacher (1896–1977), initiated in the Gauḍīya Maṭh line of Bhaktisiddhānta Sarasvatī, who sailed to New York in 1965 aged 69 and founded ISKCON in 1966; his English translations and commentaries on the Bhagavad Gītā, Bhāgavata Purāṇa and Caitanya Caritāmṛta became the movement’s scriptures.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1896,
+    "end": 1977,
+    "label": "1896–1977",
+    "certainty": "secure",
+    "basis": "biographical record",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/A._C._Bhaktivedanta_Swami_Prabhupada"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:rochford-1985"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/A._C._Bhaktivedanta_Swami_Prabhupada"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
  }
 ]

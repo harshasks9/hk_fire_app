@@ -163,15 +163,6 @@
  },
  {
   "agent": "material",
-  "id": "src:pou-2001",
-  "type": "epigraphic-corpus",
-  "title": "Nouvelles inscriptions du Cambodge, vols II et III",
-  "author": "Saveros Pou",
-  "year": "2001",
-  "publisher": "École française d'Extrême-Orient, Paris"
- },
- {
-  "agent": "material",
   "id": "src:majumdar-1927-champa",
   "type": "scholarly-book",
   "title": "Champa (Ancient Indian Colonies in the Far East, vol. I)",
@@ -179,16 +170,6 @@
   "year": "1927",
   "publisher": "Punjab Sanskrit Book Depot, Lahore",
   "notes": "Bibliographic details from recall."
- },
- {
-  "agent": "material",
-  "id": "src:griffiths-2013-satyavarman",
-  "type": "journal-article",
-  "title": "The Problem of the Ancient Name Java and the Role of Satyavarman in Southeast Asian International Relations Around the Turn of the Ninth Century CE",
-  "author": "Arlo Griffiths",
-  "year": "2013",
-  "publisher": "Archipel 85, pp. 43–81",
-  "notes": "Bibliographic details from recall; cited only for the Po Nagar Satyavarman record, status kept at reference-checked."
  },
  {
   "agent": "material",
@@ -351,5 +332,14 @@
   "year": "1936",
   "publisher": "British Museum, London",
   "notes": "Standard catalogue of Yaudheya, Audumbara, Kuṇinda and Ujjayinī coins; cited from recall for type descriptions, so dependent assertions are not marked verified."
+ },
+ {
+  "agent": "material",
+  "id": "src:schoyen-collection",
+  "type": "catalogue",
+  "title": "The Schøyen Collection — online catalogue",
+  "publisher": "The Schøyen Collection, Oslo and London",
+  "url": "https://www.schoyencollection.com/",
+  "urlChecked": true
  }
 ]

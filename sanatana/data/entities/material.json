@@ -266,6 +266,12 @@
    },
    {
     "source": "src:jaiswal-1981"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, ch. I, no. 2, pp. 88–89 (Besnagar Garuḍa pillar inscription; Lüders List no. 669)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan, OCR read)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
    }
   ],
   "confidence": "high",
@@ -347,6 +353,16 @@
    },
    {
     "source": "src:jaiswal-1981"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, ch. I, no. 3, pp. 90–91 (Ghosuṇḍī stone inscription; Lüders List no. 6)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan, OCR read)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   },
+   {
+    "source": "src:luders-1912",
+    "locator": "no. 6 (per Sircar)"
    }
   ],
   "confidence": "high",
@@ -466,6 +482,16 @@
    },
    {
     "source": "src:salomon-1998"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, no. 82, pp. 192–197 (Nāṇeghāṭ cave inscription; Lüders List no. 1112)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan, OCR read)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   },
+   {
+    "source": "src:luders-1912",
+    "locator": "no. 1112 (per Sircar)"
    }
   ],
   "confidence": "high",
@@ -551,6 +577,16 @@
    },
    {
     "source": "src:srinivasan-1979"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, no. 26A, p. 122 (Mora well inscription of the time of Śoḍāsa)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan, OCR read)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   },
+   {
+    "source": "src:vogel-1910",
+    "locator": "p. 184, no. Q.1 (per Sircar)"
    }
   ],
   "confidence": "high",
@@ -726,6 +762,12 @@
    },
    {
     "source": "src:luders-janert-1961"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, no. 26B, p. 123 (Mathurā stone inscription of the time of Śoḍāsa)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan, OCR read)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
    }
   ],
   "confidence": "high",
@@ -1772,6 +1814,15 @@
    },
    {
     "source": "src:willis-2009"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Udayagiri Cave 8 inscription, vv. 1–5",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00014"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 6"
    }
   ],
   "confidence": "high",
@@ -1837,6 +1888,15 @@
    },
    {
     "source": "src:willis-2009"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Mehrauli iron pillar inscription, v. 3 (line 6)",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00015"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 32"
    }
   ],
   "confidence": "high",
@@ -2019,6 +2079,15 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Toramana"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Eran Boar Inscription, lines 1–8",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00099"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 36"
    }
   ],
   "confidence": "high",
@@ -2081,6 +2150,15 @@
    },
    {
     "source": "src:fleet-1888"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Eran Pillar Inscription of the time of Budhagupta, lines 1–9",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00045"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 19"
    }
   ],
   "confidence": "high",
@@ -2607,6 +2685,11 @@
    },
    {
     "source": "src:singh-2008"
+   },
+   {
+    "source": "src:allan-1914",
+    "locator": "§ 101 (Peacock type), § 151 (legend)",
+    "url": "https://archive.org/details/dli.csl.5234"
    }
   ],
   "confidence": "high",
@@ -2759,6 +2842,15 @@
    {
     "source": "src:siddham",
     "url": "https://siddham.network/object/ob00069/"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Gangdhar inscription of Mayūrākṣaka",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00076"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 17"
    }
   ],
   "confidence": "high",
@@ -2851,6 +2943,15 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Mandsaur"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Mandsaur stone inscription of the silk weavers",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00040"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 18"
    }
   ],
   "confidence": "high",
@@ -3538,6 +3639,16 @@
    },
    {
     "source": "src:pollock-2006"
+   },
+   {
+    "source": "src:kielhorn-ei6",
+    "locator": "EI VI, pp. 1–12, vv. 1–37",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSBadamiCalukya00005"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Kielhorn's translation, vv. 1–37",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSBadamiCalukya00005"
    }
   ],
   "confidence": "high",
@@ -3637,6 +3748,25 @@
    },
    {
     "source": "src:siddham"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "east shaft",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham02001"
+   },
+   {
+    "source": "src:gnoli-1956",
+    "locator": "no. 1, pp. 1–4"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "north shaft",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham02002"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "west shaft",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham02003"
    }
   ],
   "confidence": "medium",

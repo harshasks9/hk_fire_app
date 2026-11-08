@@ -1,0 +1,1306 @@
+[
+ {
+  "id": "src:gretil-yogasutra",
+  "type": "primary-text",
+  "title": "Patañjali: Yogasūtra (GRETIL e-text)",
+  "author": "Patañjali; input Philipp A. Maas",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_pataJjali-yogasUtra.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text: sūtras extracted by P. A. Maas from Āgāśe’s edition (Ānandāśrama Sanskrit Series 47, 1904).",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-yogabhashya",
+  "type": "primary-text",
+  "title": "Pātañjalayogaśāstra: Yogasūtra with Bhāṣya (GRETIL e-text)",
+  "author": "Patañjali (sūtra) and the Bhāṣya ascribed to Vyāsa; input Philipp A. Maas",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_pataJjali-yogasUtra-with-bhASya.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text: Pātañjalayogaśāstra, input P. A. Maas, ed. Āgāśe 1904. Chapter colophons read “iti śrīpātañjale sāṃkhyapravacane yogaśāstre … vyāsabhāṣye”.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-samkhyakarika",
+  "type": "primary-text",
+  "title": "Īśvarakṛṣṇa: Sāṃkhyakārikā (GRETIL e-text)",
+  "author": "Īśvarakṛṣṇa; input Ferenc Ruzsa",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_IzvarakRSNa-sAMkhyakArikA.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text: input F. Ruzsa 1998, collating Solomon, Takakusu, Wilson and others.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-yuktidipika",
+  "type": "primary-text",
+  "title": "Yuktidīpikā (GRETIL e-text)",
+  "author": "anonymous; input Dhaval Patel",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_yuktidIpikA.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text. Source: Shiv Kumar and D. N. Bhargava (eds.), 2 vols., Delhi 1990–92.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-samkhyasutra",
+  "type": "primary-text",
+  "title": "Kapila: Sāṃkhyasūtra (GRETIL e-text)",
+  "author": "ascribed to Kapila; Sansknet project",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kapila-sAMkhyasUtra.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-tattvasamasa",
+  "type": "primary-text",
+  "title": "Tattvasamāsa (GRETIL e-text, four versions)",
+  "author": "ascribed to Kapila",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_tattvasamAsa-4versions.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-nyayasutra",
+  "type": "primary-text",
+  "title": "Gautama (Akṣapāda): Nyāyasūtra (GRETIL e-text)",
+  "author": "Sansknet project",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_gautama-nyAyasUtra.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text: Sansknet e-text (not proof-read); numbering of that file.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-nyayabhashya",
+  "type": "primary-text",
+  "title": "Nyāyasūtra with Vātsyāyana’s Bhāṣya (GRETIL e-text)",
+  "author": "Vātsyāyana Pakṣilasvāmin; input Indology Student Team, University of Tokyo",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_gautama-nyAyasUtra-comm.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text. Source: ed. Taranatha Nyaya-Tarkatirtha, Calcutta 1936–44 (Calcutta Sanskrit Series 18–19).",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-vaisheshika-sutra",
+  "type": "primary-text",
+  "title": "Kaṇāda: Vaiśeṣikasūtra (GRETIL e-text)",
+  "author": "Kaṇāda; input Nozawa Masanobu",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kaNAda-vaizeSikasUtra.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text: input Nozawa Masanobu; numbering of that file.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-prashastapada",
+  "type": "primary-text",
+  "title": "Praśastapāda: Padārthadharmasaṃgraha (GRETIL e-text)",
+  "author": "Praśastapāda; input Muneo Tokunaga and Muroya",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_prazastapAda-pAdArthadharmasaMgraha.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text: ed. V. P. Dvivedin, Benares 1895 (Vizianagram Sanskrit Series 6).",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-mimamsa-sutra",
+  "type": "primary-text",
+  "title": "Jaimini: Mīmāṃsāsūtra (GRETIL e-text)",
+  "author": "Jaimini; Sansknet project",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_jaimini-mImAMsAsUtra.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text: based on B. D. Basu’s edition, Allahabad 1923–25.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-shabara",
+  "type": "primary-text",
+  "title": "Mīmāṃsāsūtra 1–7 with Śabara’s Bhāṣya (GRETIL e-text)",
+  "author": "Śabarasvāmin; input Andreas Pohlus",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_jaimini-mImAMsAsUtra-1-7-comm.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text. Collated from six editions (see file header).",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-shlokavarttika",
+  "type": "primary-text",
+  "title": "Kumārila Bhaṭṭa: Mīmāṃsāślokavārttika with Sucaritamiśra’s Kāśikā, partial (GRETIL e-text)",
+  "author": "Kumārila Bhaṭṭa; Sansknet project",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kumArila-mImAMsazlokavArttika-comm.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text: partial (5.4–5.9), with Sucaritamiśra’s Kāśikā; not proof-read.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-prakaranapanchika",
+  "type": "primary-text",
+  "title": "Śālikanātha Miśra: Prakaraṇapañcikā with commentary (GRETIL e-text)",
+  "author": "Śālikanātha Miśra; Sansknet project",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_zAlikanAthamizra-prakaraNapaJcikA-comm.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-shastradipika",
+  "type": "primary-text",
+  "title": "Pārthasārathi Miśra: Śāstradīpikā (GRETIL e-text)",
+  "author": "Pārthasārathi Miśra; Sansknet project",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_pArthasArathimizra-zAstradIpikA.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-brahmasutra",
+  "type": "primary-text",
+  "title": "Bādarāyaṇa: Brahmasūtra (GRETIL e-texts: Sansknet text and the text extracted from Śaṅkara’s commentary)",
+  "author": "ascribed to Bādarāyaṇa; Sansknet project",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bAdarAyaNa-brahmasUtra-alt.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text: sūtra text extracted from Śaṅkara’s commentary (555 sūtras); Śaṅkara’s numbering. Two GRETIL files: sa_bAdarAyaNa-brahmasUtra.txt (545 sūtras) and sa_bAdarAyaNa-brahmasUtra-alt.txt (555 sūtras, Śaṅkara’s division). Counts made from the files on 2026-11-08.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-bs-shankara",
+  "type": "primary-text",
+  "title": "Śaṅkara: Brahmasūtrabhāṣya (Śārīrakamīmāṃsābhāṣya) (GRETIL e-text)",
+  "author": "Śaṅkara; Sansknet project",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bAdarAyaNa-brahmasUtra-comm.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text: Sansknet e-text of the Śārīrakamīmāṃsābhāṣya (begins at sūtra 1.1.1; the adhyāsa preamble is not in this file).",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-bhamati",
+  "type": "primary-text",
+  "title": "Vācaspati Miśra: Bhāmatī (GRETIL e-text)",
+  "author": "Vācaspati Miśra; Sansknet project",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_vAcaspatimizra-bhAmati.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-brahmasiddhi",
+  "type": "primary-text",
+  "title": "Maṇḍana Miśra: Brahmasiddhi (GRETIL e-text)",
+  "author": "Maṇḍana Miśra; input Diwakar Acharya",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mandanamizra-brahmasiddhi.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text. Source: ed. S. Kuppuswami Sastri, Madras 1937 (Madras Government Oriental Series 4).",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-gaudapada-karika",
+  "type": "primary-text",
+  "title": "Gauḍapāda: Āgamaśāstra (Māṇḍūkyakārikā) (GRETIL e-text)",
+  "author": "Gauḍapāda; input Peter Schreiner",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_gauDapAda-AgamazAstra.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text: input P. Schreiner, based on V. G. Apte’s edition.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-vedarthasamgraha",
+  "type": "primary-text",
+  "title": "Rāmānuja: Vedārthasaṃgraha (GRETIL e-text)",
+  "author": "Rāmānuja; input Sadanori Ishitobi",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAnuja-vedArthasaMgraha.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text: input Sadanori Ishitobi; section numbers RVas_n.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-ramanuja-gitabhashya",
+  "type": "primary-text",
+  "title": "Rāmānuja: Bhagavadgītābhāṣya (GRETIL e-text)",
+  "author": "Rāmānuja; input Sadanori Ishitobi",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAnuja-bhagavadgItAbhASya.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-anuvyakhyana",
+  "type": "primary-text",
+  "title": "Madhva (Ānandatīrtha): Anuvyākhyāna (GRETIL e-text)",
+  "author": "Madhva; Sansknet project",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mAdhva-anuvyAkhyAna.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-mbh-tatparya-nirnaya",
+  "type": "primary-text",
+  "title": "Madhva (Ānandatīrtha): Mahābhāratatātparyanirṇaya (GRETIL e-text)",
+  "author": "Madhva; input via Dvaita.net",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mAdhva-mahAbhAratatAtparyanirNaya.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text: Dvaita.net input via GRETIL.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-nyayasudha",
+  "type": "primary-text",
+  "title": "Jayatīrtha: Nyāyasudhā (GRETIL e-text)",
+  "author": "Jayatīrtha; Sansknet project",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_jayatIrtha-nyAyasudhA.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-tarkatandava",
+  "type": "primary-text",
+  "title": "Vyāsatīrtha: Tarkatāṇḍava with commentary (GRETIL e-text)",
+  "author": "Vyāsatīrtha",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_vyAsatIrtha-tarkatANDava-comm.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-satsandarbha",
+  "type": "primary-text",
+  "title": "Jīva Gosvāmī: Ṣaṭsandarbha (Bhāgavatasandarbha) with Baladeva’s ṭīkā (GRETIL e-text)",
+  "author": "Jīva Gosvāmī; Baladeva Vidyābhūṣaṇa (ṭīkā)",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_jiva-gosvami-satsamdarbha.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text: GRETIL e-text interleaving Baladeva Vidyābhūṣaṇa’s ṭīkā (marked “bd:”).",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-upadeshasahasri",
+  "type": "primary-text",
+  "title": "Śaṅkara: Upadeśasāhasrī (GRETIL e-text of Mayeda’s critical edition)",
+  "author": "Śaṅkara; input Ivan Andrijanić",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_zaMkara-upadezasAhasrI.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text. Source: Sengaku Mayeda, Śaṅkara’s Upadeśasāhasrī, vol. I, Tokyo 1973 (repr. Delhi 2006).",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-vivekachudamani",
+  "type": "primary-text",
+  "title": "Vivekacūḍāmaṇi ascribed to Śaṅkara (GRETIL e-text)",
+  "author": "ascribed to Śaṅkara",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_zaMkara-vivekacuDAmaNi.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-siddhantabindu",
+  "type": "primary-text",
+  "title": "Madhusūdana Sarasvatī: Siddhāntabindu (GRETIL e-text)",
+  "author": "Madhusūdana Sarasvatī; input Takahiro Kato",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_madhusUdanasarasvatI-siddhAntabindu.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text. Source: ed. P. C. Divanji, Baroda 1933.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-nyayakusumanjali",
+  "type": "primary-text",
+  "title": "Udayana: Nyāyakusumāñjali (GRETIL e-text)",
+  "author": "Udayana; Sansknet project",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_udayana-nyAyakusumAJjali.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-tattvacintamani",
+  "type": "primary-text",
+  "title": "Gaṅgeśa: Tattvacintāmaṇi, Śabdakhaṇḍa (GRETIL e-text)",
+  "author": "Gaṅgeśa; Sansknet project",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_gAGgeza-tattvacintAmaNizabdakhANDa.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text: Śabdakhaṇḍa only (Sansknet).",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-tarkasamgraha",
+  "type": "primary-text",
+  "title": "Annaṃbhaṭṭa: Tarkasaṃgraha (GRETIL e-text)",
+  "author": "Annaṃbhaṭṭa; input Takuya Ono",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_annaMbhatta-tarkasaMgraha.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-vedanga-jyotisha",
+  "type": "primary-text",
+  "title": "Lagadha: Ṛgveda-Vedāṅgajyotiṣa (GRETIL e-text)",
+  "author": "ascribed to Lagadha",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_lagadha-RgvedavedAGgajyotiSa.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text: Ṛk recension; source given as K. V. Sarma (INSA).",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-apastamba-dharmasutra",
+  "type": "primary-text",
+  "title": "Āpastamba-Dharmasūtra (GRETIL e-text)",
+  "author": "input Yasuke Ikari",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_ApastambadharmasUtra.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text: based on Bühler’s edition (3rd ed. 1932); praśna.paṭala.khaṇḍa.sūtra numbering.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-gautama-dharmasutra",
+  "type": "primary-text",
+  "title": "Gautama-Dharmasūtra (GRETIL e-text)",
+  "author": "input Nobuyuki Watase",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_gautama-dharmasUtra.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text: based on Gokhale’s edition, Pune 1910 (Stenzler numbering).",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-baudhayana-dharmasutra",
+  "type": "primary-text",
+  "title": "Baudhāyana-Dharmasūtra (GRETIL e-text)",
+  "author": "input Masato Fujii and Mieko Kajihara",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_baudhAyanadharmasUtra.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-vasishtha-dharmasutra",
+  "type": "primary-text",
+  "title": "Vāsiṣṭha-Dharmasūtra (GRETIL e-text)",
+  "author": "input M. Fushimi",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_vAsiSThadharmasUtra.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text. Source: Vasiṣṭhadharmaśāstra, Bombay Sanskrit and Prakrit Series 23.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-ashvalayana-grihya",
+  "type": "primary-text",
+  "title": "Āśvalāyana-Gṛhyasūtra (GRETIL e-text)",
+  "author": "input Muneo Tokunaga",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_AzvalAyanagRhyasUtra.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text. Source: A. F. Stenzler, Abhandlungen für die Kunde des Morgenlandes 3.4 (1864).",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-ashvalayana-shrauta",
+  "type": "primary-text",
+  "title": "Āśvalāyana-Śrautasūtra (GRETIL e-text)",
+  "author": "input Muneo Tokunaga",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_AzvalAyanazrautasUtra.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text. Source: ed. Rāmanārāyaṇa Vidyāratna, Calcutta 1864–74 (Bibliotheca Indica 49).",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-shankhayana-shrauta",
+  "type": "primary-text",
+  "title": "Śāṅkhāyana-Śrautasūtra (GRETIL e-text)",
+  "author": "input Muneo Tokunaga",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_zAGkhAyanazrautasUtra.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text. Source: ed. Alfred Hillebrandt, Calcutta 1885–99 (Bibliotheca Indica 99).",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-apastamba-shulba",
+  "type": "primary-text",
+  "title": "Āpastamba-Śulbasūtra (GRETIL e-text)",
+  "author": "Sansknet project",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_ApastambazulbasUtra.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-yajnavalkya-smriti",
+  "type": "primary-text",
+  "title": "Yājñavalkyasmṛti (GRETIL e-text)",
+  "author": "input Muneo Tokunaga, checked by Yasuke Ikari",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_yAjJavalkyasmRti.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text: Mitākṣarā text, ed. N. R. Acharya, Bombay 1949.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-mitakshara",
+  "type": "primary-text",
+  "title": "Vijñāneśvara: Mitākṣarā on the Yājñavalkyasmṛti (GRETIL e-text)",
+  "author": "input Donald R. Davis Jr., Amy Hyne-Sutherland, Nikola Rajić",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_vijJAnezvara-mitAkSarA.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text. Sources: ed. N. R. Acharya, Bombay 1949; ed. U. C. Pandeya.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-narada-smriti",
+  "type": "primary-text",
+  "title": "Nāradasmṛti (GRETIL e-text)",
+  "author": "input Richard W. Lariviere, ed. Yasuke Ikari",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_nAradasmRti.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text: Lariviere’s critical edition, Philadelphia 1989.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-parashara-smriti",
+  "type": "primary-text",
+  "title": "Parāśarasmṛti (Ācāra and Prāyaścitta) (GRETIL e-text)",
+  "author": "input Muneo Tokunaga",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_parAzarasmRti-AcAra-prAyazcitta.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text. Source: ed. Vāman Śāstri Islāmpurkar, Bombay 1893 (Bombay Sanskrit Series 47), with Mādhava’s commentary.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-vishnu-smriti",
+  "type": "primary-text",
+  "title": "Viṣṇusmṛti (GRETIL e-text)",
+  "author": "input I. Shima",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNusmRti.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text. Source: ed. V. Krishnamacharya, Madras 1964 (Adyar Library Series 93).",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-katyayana-smriti",
+  "type": "primary-text",
+  "title": "Kātyāyanasmṛti (GRETIL e-text)",
+  "author": "input Akihiko Akamatsu",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAtyAyanasmRti.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-kaivalya",
+  "type": "primary-text",
+  "title": "Kaivalya-Upaniṣad (GRETIL e-text)",
+  "author": "original input Anshuman Pandey",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kaivalyopaniSad.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text: ed. Rāmamaya Tarkaratna, The Atharvana Upanishads, Calcutta 1872.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-atharvashiras",
+  "type": "primary-text",
+  "title": "Atharvaśiras-Upaniṣad (GRETIL e-text)",
+  "author": "input Oliver Hellwig",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_zira-upaniSad.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text: ed. Rāmamaya Tarkaratna, 1872.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-garbha",
+  "type": "primary-text",
+  "title": "Garbha-Upaniṣad (GRETIL e-text)",
+  "author": "input Oliver Hellwig",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_garbhopaniSad.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text: ed. Rāmamaya Tarkaratna, 1872.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-brahmabindu",
+  "type": "primary-text",
+  "title": "Brahmabindu-Upaniṣad (GRETIL e-text)",
+  "author": "input Oliver Hellwig",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_brahmabindUpaniSad.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text: ed. Rāmamaya Tarkaratna, 1872.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-nadabindu",
+  "type": "primary-text",
+  "title": "Nādabindu-Upaniṣad (GRETIL e-text)",
+  "author": "input Oliver Hellwig",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_nAdabindUpaniSad.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text: ed. Rāmamaya Tarkaratna, 1872.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-shivasamkalpa",
+  "type": "primary-text",
+  "title": "Śivasaṃkalpa-Upaniṣad (GRETIL e-text)",
+  "author": "input Maximilian Mehner",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_zivasaMkalpopaniSad.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text: ed. I. Scheftelowitz, ZDMG 75 (1921).",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-arthashastra",
+  "type": "primary-text",
+  "title": "Kauṭilya: Arthaśāstra (GRETIL e-text)",
+  "author": "ascribed to Kauṭilya",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kauTilya-arthazAstra.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text: Kangle’s edition, 2nd ed. Bombay 1969.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-hathayogapradipika",
+  "type": "primary-text",
+  "title": "Svātmārāma: Haṭhayogapradīpikā (GRETIL e-text)",
+  "author": "Svātmārāma",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_svAtmArAma-haThayogapradIpikA.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-ashtavakragita",
+  "type": "primary-text",
+  "title": "Aṣṭāvakragītā (GRETIL e-text)",
+  "author": "anonymous; input John Richards",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-yamuna-gitarthasamgraha",
+  "type": "primary-text",
+  "title": "Yāmuna: Gītārthasaṃgraha (GRETIL e-text)",
+  "author": "Yāmuna",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_yAmuna-gItArthasaMgraha.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-nyayaparishuddhi",
+  "type": "primary-text",
+  "title": "Veṅkaṭanātha (Vedānta Deśika): Nyāyapariśuddhi, partial (GRETIL e-text)",
+  "author": "Veṅkaṭanātha",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_veGkaTanAtha-nyAyaparizuddhibhUmikA-13-5.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-bhaktirasamritasindhu",
+  "type": "primary-text",
+  "title": "Rūpa Gosvāmī: Bhaktirasāmṛtasindhu (GRETIL e-text)",
+  "author": "Rūpa Gosvāmī",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rUpagosvAmin-haribhaktirasAmRtasindhu.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-rv-padapatha",
+  "type": "primary-text",
+  "title": "Ṛgveda-Saṃhitā Padapāṭha (GRETIL e-text)",
+  "author": "ascribed to Śākalya",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_RgvedasaMhitApadapATha.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gretil-samkhyasara",
+  "type": "primary-text",
+  "title": "Vijñānabhikṣu: Sāṃkhyasāra (GRETIL e-text)",
+  "author": "Vijñānabhikṣu",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_vijJAnabhikSu-sAMkhyasAra.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:larson-bhattacharya-1987",
+  "type": "scholarly-book",
+  "title": "Sāṃkhya: A Dualist Tradition in Indian Philosophy (Encyclopedia of Indian Philosophies, vol. IV)",
+  "author": "Gerald James Larson and Ram Shankar Bhattacharya (eds.)",
+  "year": "1987",
+  "publisher": "Princeton University Press",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:larson-bhattacharya-2008",
+  "type": "scholarly-book",
+  "title": "Yoga: India’s Philosophy of Meditation (Encyclopedia of Indian Philosophies, vol. XII)",
+  "author": "Gerald James Larson and Ram Shankar Bhattacharya (eds.)",
+  "year": "2008",
+  "publisher": "Motilal Banarsidass",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:potter-1977",
+  "type": "scholarly-book",
+  "title": "Indian Metaphysics and Epistemology: The Tradition of Nyāya-Vaiśeṣika up to Gaṅgeśa (Encyclopedia of Indian Philosophies, vol. II)",
+  "author": "Karl H. Potter (ed.)",
+  "year": "1977",
+  "publisher": "Princeton University Press",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:potter-1981",
+  "type": "scholarly-book",
+  "title": "Advaita Vedānta up to Śaṃkara and His Pupils (Encyclopedia of Indian Philosophies, vol. III)",
+  "author": "Karl H. Potter (ed.)",
+  "year": "1981",
+  "publisher": "Princeton University Press",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:potter-bhattacharyya-1993",
+  "type": "scholarly-book",
+  "title": "Indian Philosophical Analysis: Nyāya-Vaiśeṣika from Gaṅgeśa to Raghunātha Śiromaṇi (Encyclopedia of Indian Philosophies, vol. VI)",
+  "author": "Karl H. Potter and Sibajiban Bhattacharyya (eds.)",
+  "year": "1993",
+  "publisher": "Princeton University Press",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:maas-2006",
+  "type": "scholarly-book",
+  "title": "Samādhipāda: Das erste Kapitel des Pātañjalayogaśāstra zum ersten Mal kritisch ediert",
+  "author": "Philipp André Maas",
+  "year": "2006",
+  "publisher": "Shaker (Aachen)",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:maas-2013",
+  "type": "journal-article",
+  "title": "A Concise Historiography of Classical Yoga Philosophy (in Eli Franco (ed.), Periodization and Historiography of Indian Philosophy, pp. 53–90)",
+  "author": "Philipp A. Maas",
+  "year": "2013",
+  "publisher": "Sammlung de Nobili, Universität Wien",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:bronkhorst-1981",
+  "type": "journal-article",
+  "title": "Yoga and Seśvara Sāṃkhya (Journal of Indian Philosophy 9, pp. 309–320)",
+  "author": "Johannes Bronkhorst",
+  "year": "1981",
+  "publisher": "Journal of Indian Philosophy",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:bryant-2009",
+  "type": "translation",
+  "title": "The Yoga Sūtras of Patañjali: A New Edition, Translation, and Commentary",
+  "author": "Edwin F. Bryant",
+  "year": "2009",
+  "publisher": "North Point Press",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:white-2014",
+  "type": "scholarly-book",
+  "title": "The Yoga Sutra of Patanjali: A Biography",
+  "author": "David Gordon White",
+  "year": "2014",
+  "publisher": "Princeton University Press",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:woods-1914",
+  "type": "translation",
+  "title": "The Yoga-System of Patañjali (Harvard Oriental Series 17)",
+  "author": "James Haughton Woods",
+  "year": "1914",
+  "publisher": "Harvard University Press",
+  "notes": "Public domain; translates the sūtras, Vyāsa’s Bhāṣya and Vācaspati Miśra’s Tattvavaiśāradī.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:mallinson-singleton-2017",
+  "type": "scholarly-book",
+  "title": "Roots of Yoga",
+  "author": "James Mallinson and Mark Singleton",
+  "year": "2017",
+  "publisher": "Penguin Classics",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:frauwallner-1973",
+  "type": "scholarly-book",
+  "title": "History of Indian Philosophy, 2 vols. (trans. V. M. Bedekar from Geschichte der indischen Philosophie, 1953–56)",
+  "author": "Erich Frauwallner",
+  "year": "1973",
+  "publisher": "Motilal Banarsidass",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:dasgupta-1922",
+  "type": "scholarly-book",
+  "title": "A History of Indian Philosophy, 5 vols.",
+  "author": "Surendranath Dasgupta",
+  "year": "1922–1955",
+  "publisher": "Cambridge University Press",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:hiriyanna-1932",
+  "type": "scholarly-book",
+  "title": "Outlines of Indian Philosophy",
+  "author": "M. Hiriyanna",
+  "year": "1932",
+  "publisher": "George Allen & Unwin",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:halbfass-1988",
+  "type": "scholarly-book",
+  "title": "India and Europe: An Essay in Understanding",
+  "author": "Wilhelm Halbfass",
+  "year": "1988",
+  "publisher": "State University of New York Press",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:nicholson-2010",
+  "type": "scholarly-book",
+  "title": "Unifying Hinduism: Philosophy and Identity in Indian Intellectual History",
+  "author": "Andrew J. Nicholson",
+  "year": "2010",
+  "publisher": "Columbia University Press",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:king-1999",
+  "type": "scholarly-book",
+  "title": "Indian Philosophy: An Introduction to Hindu and Buddhist Thought",
+  "author": "Richard King",
+  "year": "1999",
+  "publisher": "Edinburgh University Press",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:matilal-1986",
+  "type": "scholarly-book",
+  "title": "Perception: An Essay on Classical Indian Theories of Knowledge",
+  "author": "Bimal Krishna Matilal",
+  "year": "1986",
+  "publisher": "Clarendon Press",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:phillips-2012",
+  "type": "scholarly-book",
+  "title": "Epistemology in Classical India: The Knowledge Sources of the Nyāya School",
+  "author": "Stephen H. Phillips",
+  "year": "2012",
+  "publisher": "Routledge",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:ingalls-1951",
+  "type": "scholarly-book",
+  "title": "Materials for the Study of Navya-Nyāya Logic (Harvard Oriental Series 40)",
+  "author": "Daniel H. H. Ingalls",
+  "year": "1951",
+  "publisher": "Harvard University Press",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:clooney-1990",
+  "type": "scholarly-book",
+  "title": "Thinking Ritually: Rediscovering the Pūrva Mīmāṃsā of Jaimini",
+  "author": "Francis X. Clooney",
+  "year": "1990",
+  "publisher": "De Nobili Research Library (Vienna)",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:jha-1942",
+  "type": "scholarly-book",
+  "title": "Pūrva-Mīmāṃsā in Its Sources",
+  "author": "Ganganatha Jha",
+  "year": "1942",
+  "publisher": "Benares Hindu University",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:kataoka-2011",
+  "type": "scholarly-book",
+  "title": "Kumārila on Truth, Omniscience, and Killing, 2 parts",
+  "author": "Kei Kataoka",
+  "year": "2011",
+  "publisher": "Austrian Academy of Sciences Press",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:thibaut-sbe34",
+  "type": "translation",
+  "title": "The Vedânta-Sûtras with the Commentary by Śaṅkarâkârya (Sacred Books of the East 34 and 38)",
+  "author": "George Thibaut",
+  "year": "1890–1896",
+  "publisher": "Clarendon Press",
+  "url": "https://www.sacred-texts.com/hin/sbe34/index.htm",
+  "urlChecked": false,
+  "notes": "Public domain.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:thibaut-sbe48",
+  "type": "translation",
+  "title": "The Vedânta-Sûtras with the Commentary of Râmânuja (Sacred Books of the East 48)",
+  "author": "George Thibaut",
+  "year": "1904",
+  "publisher": "Clarendon Press",
+  "url": "https://www.sacred-texts.com/hin/sbe48/index.htm",
+  "urlChecked": false,
+  "notes": "Public domain.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:nakamura-1983",
+  "type": "scholarly-book",
+  "title": "A History of Early Vedānta Philosophy, Part One",
+  "author": "Hajime Nakamura",
+  "year": "1983",
+  "publisher": "Motilal Banarsidass",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:comans-2000",
+  "type": "scholarly-book",
+  "title": "The Method of Early Advaita Vedānta: A Study of Gauḍapāda, Śaṅkara, Sureśvara and Padmapāda",
+  "author": "Michael Comans",
+  "year": "2000",
+  "publisher": "Motilal Banarsidass",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:king-1995",
+  "type": "scholarly-book",
+  "title": "Early Advaita Vedānta and Buddhism: The Mahāyāna Context of the Gauḍapādīya-kārikā",
+  "author": "Richard King",
+  "year": "1995",
+  "publisher": "State University of New York Press",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:thrasher-1993",
+  "type": "scholarly-book",
+  "title": "The Advaita Vedānta of Brahma-siddhi",
+  "author": "Allen Wright Thrasher",
+  "year": "1993",
+  "publisher": "Motilal Banarsidass",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:bader-2000",
+  "type": "scholarly-book",
+  "title": "Conquest of the Four Quarters: Traditional Accounts of the Life of Śaṅkara",
+  "author": "Jonathan Bader",
+  "year": "2000",
+  "publisher": "Aditya Prakashan",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:fort-2007",
+  "type": "scholarly-book",
+  "title": "Jīvanmukti in Transformation: Embodied Liberation in Advaita and Neo-Vedanta",
+  "author": "Andrew O. Fort",
+  "year": "2007",
+  "publisher": "State University of New York Press",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:rambachan-1991",
+  "type": "scholarly-book",
+  "title": "Accomplishing the Accomplished: The Vedas as a Source of Valid Knowledge in Śaṅkara",
+  "author": "Anantanand Rambachan",
+  "year": "1991",
+  "publisher": "University of Hawaii Press",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:sharma-bnk-1960",
+  "type": "scholarly-book",
+  "title": "History of the Dvaita School of Vedānta and Its Literature, 2 vols.",
+  "author": "B. N. Krishnamurti Sharma",
+  "year": "1960–1961",
+  "publisher": "Booksellers’ Publishing Co. (Bombay); repr. Motilal Banarsidass",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:lipner-1986",
+  "type": "scholarly-book",
+  "title": "The Face of Truth: A Study of Meaning and Metaphysics in the Vedāntic Theology of Rāmānuja",
+  "author": "Julius J. Lipner",
+  "year": "1986",
+  "publisher": "Macmillan / State University of New York Press",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:van-buitenen-1956",
+  "type": "translation",
+  "title": "Rāmānuja’s Vedārthasaṃgraha: Introduction, Critical Edition and Annotated Translation",
+  "author": "J. A. B. van Buitenen",
+  "year": "1956",
+  "publisher": "Deccan College Postgraduate and Research Institute (Poona)",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gupta-2007",
+  "type": "scholarly-book",
+  "title": "The Chaitanya Vaishnava Vedanta of Jiva Gosvami: When Knowledge Meets Devotion",
+  "author": "Ravi M. Gupta",
+  "year": "2007",
+  "publisher": "Routledge",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:okita-2014",
+  "type": "scholarly-book",
+  "title": "Hindu Theology in Early Modern South Asia: The Rise of Devotionalism and the Politics of Genealogy",
+  "author": "Kiyokazu Okita",
+  "year": "2014",
+  "publisher": "Oxford University Press",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:stoker-2016",
+  "type": "scholarly-book",
+  "title": "Polemics and Patronage in the City of Victory: Vyasatirtha, Hindu Sectarianism, and the Sixteenth-Century Vijayanagara Court",
+  "author": "Valerie Stoker",
+  "year": "2016",
+  "publisher": "University of California Press",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:barz-1976",
+  "type": "scholarly-book",
+  "title": "The Bhakti Sect of Vallabhācārya",
+  "author": "Richard Barz",
+  "year": "1976",
+  "publisher": "Thomson Press (Faridabad)",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:bose-1940",
+  "type": "translation",
+  "title": "Vedānta-Pārijāta-Saurabha of Nimbārka and Vedānta-Kaustubha of Śrīnivāsa, 3 vols.",
+  "author": "Roma Bose",
+  "year": "1940–1943",
+  "publisher": "Royal Asiatic Society of Bengal",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:ramnarace-2014",
+  "type": "scholarly-book",
+  "title": "Rādhā-Kṛṣṇa’s Vedāntic Debut: Chronology and Rationalisation in the Nimbārka Sampradāya (PhD thesis)",
+  "author": "Vijay Ramnarace",
+  "year": "2014",
+  "publisher": "University of Edinburgh",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:olivelle-1999",
+  "type": "translation",
+  "title": "Dharmasūtras: The Law Codes of Ancient India (Oxford World’s Classics)",
+  "author": "Patrick Olivelle",
+  "year": "1999",
+  "publisher": "Oxford University Press",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:olivelle-2000",
+  "type": "translation",
+  "title": "Dharmasūtras: The Law Codes of Āpastamba, Gautama, Baudhāyana, and Vasiṣṭha (annotated text and translation)",
+  "author": "Patrick Olivelle",
+  "year": "2000",
+  "publisher": "Motilal Banarsidass",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:olivelle-1993",
+  "type": "scholarly-book",
+  "title": "The Āśrama System: The History and Hermeneutics of a Religious Institution",
+  "author": "Patrick Olivelle",
+  "year": "1993",
+  "publisher": "Oxford University Press",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:olivelle-1992",
+  "type": "translation",
+  "title": "The Saṃnyāsa Upaniṣads: Hindu Scriptures on Asceticism and Renunciation",
+  "author": "Patrick Olivelle",
+  "year": "1992",
+  "publisher": "Oxford University Press",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:olivelle-2013",
+  "type": "translation",
+  "title": "King, Governance, and Law in Ancient India: Kauṭilya’s Arthaśāstra",
+  "author": "Patrick Olivelle",
+  "year": "2013",
+  "publisher": "Oxford University Press",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:lingat-1973",
+  "type": "scholarly-book",
+  "title": "The Classical Law of India (trans. J. Duncan M. Derrett)",
+  "author": "Robert Lingat",
+  "year": "1973",
+  "publisher": "University of California Press",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:lariviere-1989",
+  "type": "translation",
+  "title": "The Nāradasmṛti: Critically Edited with an Introduction, Annotated Translation, and Appendices",
+  "author": "Richard W. Lariviere",
+  "year": "1989",
+  "publisher": "University of Pennsylvania (Studies on South Asia 4–5)",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:rocher-2002",
+  "type": "translation",
+  "title": "Jīmūtavāhana’s Dāyabhāga: The Hindu Law of Inheritance in Bengal",
+  "author": "Ludo Rocher",
+  "year": "2002",
+  "publisher": "Oxford University Press",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:davis-2010",
+  "type": "scholarly-book",
+  "title": "The Spirit of Hindu Law",
+  "author": "Donald R. Davis Jr.",
+  "year": "2010",
+  "publisher": "Cambridge University Press",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:deussen-1897",
+  "type": "translation",
+  "title": "Sechzig Upanishad’s des Veda",
+  "author": "Paul Deussen",
+  "year": "1897",
+  "publisher": "F. A. Brockhaus (Leipzig)",
+  "notes": "English trans. V. M. Bedekar and G. B. Palsule, Sixty Upaniṣads of the Veda, Delhi 1980.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:sprockhoff-1976",
+  "type": "scholarly-book",
+  "title": "Saṃnyāsa: Quellenstudien zur Askese im Hinduismus",
+  "author": "Joachim Friedrich Sprockhoff",
+  "year": "1976",
+  "publisher": "Franz Steiner (Wiesbaden)",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:bouy-1994",
+  "type": "scholarly-book",
+  "title": "Les Nātha-yogin et les Upaniṣads",
+  "author": "Christian Bouy",
+  "year": "1994",
+  "publisher": "De Boccard (Paris)",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:van-buitenen-1962",
+  "type": "scholarly-book",
+  "title": "The Maitrāyaṇīya Upaniṣad: A Critical Essay",
+  "author": "J. A. B. van Buitenen",
+  "year": "1962",
+  "publisher": "Mouton (The Hague)",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:varenne-1960",
+  "type": "translation",
+  "title": "La Mahā Nārāyaṇa Upaniṣad, 2 vols.",
+  "author": "Jean Varenne",
+  "year": "1960",
+  "publisher": "De Boccard (Paris)",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:sarma-1985",
+  "type": "translation",
+  "title": "Vedāṅga Jyotiṣa of Lagadha in its Ṛk and Yajus Recensions (trans. T. S. Kuppanna Sastry; critically edited by K. V. Sarma)",
+  "author": "T. S. Kuppanna Sastry and K. V. Sarma",
+  "year": "1985",
+  "publisher": "Indian National Science Academy",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:plofker-2009",
+  "type": "scholarly-book",
+  "title": "Mathematics in India",
+  "author": "Kim Plofker",
+  "year": "2009",
+  "publisher": "Princeton University Press",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:van-nooten-1993",
+  "type": "journal-article",
+  "title": "Binary Numbers in Indian Antiquity (Journal of Indian Philosophy 21, pp. 31–50)",
+  "author": "B. van Nooten",
+  "year": "1993",
+  "publisher": "Journal of Indian Philosophy",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gonda-1977",
+  "type": "scholarly-book",
+  "title": "The Ritual Sūtras (A History of Indian Literature, vol. I, fasc. 2)",
+  "author": "Jan Gonda",
+  "year": "1977",
+  "publisher": "Otto Harrassowitz",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:allen-1953",
+  "type": "scholarly-book",
+  "title": "Phonetics in Ancient India",
+  "author": "W. Sidney Allen",
+  "year": "1953",
+  "publisher": "Oxford University Press",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:deshpande-1997",
+  "type": "translation",
+  "title": "Śaunakīyā Caturādhyāyikā: A Prātiśākhya of the Śaunakīya Atharvaveda (Harvard Oriental Series 52)",
+  "author": "Madhav M. Deshpande",
+  "year": "1997",
+  "publisher": "Harvard University Press",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:cowell-gough-1882",
+  "type": "translation",
+  "title": "The Sarva-darśana-saṃgraha, or Review of the Different Systems of Hindu Philosophy, by Mádhava Áchárya",
+  "author": "E. B. Cowell and A. E. Gough",
+  "year": "1882",
+  "publisher": "Trübner (London)",
+  "notes": "Public domain.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:bhattacharya-2009",
+  "type": "scholarly-book",
+  "title": "Studies on the Cārvāka/Lokāyata",
+  "author": "Ramkrishna Bhattacharya",
+  "year": "2009",
+  "publisher": "Società Editrice Fiorentina",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:iyer-1969",
+  "type": "scholarly-book",
+  "title": "Bhartṛhari: A Study of the Vākyapadīya in the Light of the Ancient Commentaries",
+  "author": "K. A. Subramania Iyer",
+  "year": "1969",
+  "publisher": "Deccan College (Poona)",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:matilal-1977",
+  "type": "scholarly-book",
+  "title": "Nyāya-Vaiśeṣika (A History of Indian Literature, vol. VI, fasc. 2)",
+  "author": "Bimal Krishna Matilal",
+  "year": "1977",
+  "publisher": "Otto Harrassowitz",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:gupta-sanjukta-2006",
+  "type": "scholarly-book",
+  "title": "Advaita Vedānta and Vaiṣṇavism: The Philosophy of Madhusūdana Sarasvatī",
+  "author": "Sanjukta Gupta",
+  "year": "2006",
+  "publisher": "Routledge",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:kuppuswami-1937",
+  "type": "primary-text",
+  "title": "Brahmasiddhi by Ācārya Maṇḍanamiśra, with Commentary by Śaṅkhapāṇi (Madras Government Oriental Manuscripts Series 4)",
+  "author": "S. Kuppuswami Sastri (ed.)",
+  "year": "1937",
+  "publisher": "Government Press, Madras",
+  "notes": "The editor’s introduction argues that Maṇḍana and Sureśvara were different persons.",
+  "agent": "vedic"
+ }
+]

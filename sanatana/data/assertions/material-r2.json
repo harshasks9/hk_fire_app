@@ -1715,27 +1715,6 @@
  },
  {
   "id": "material:r2-66",
-  "s": "person:rajendra-i",
-  "p": "MEMBER_OF",
-  "o": "pol:chola",
-  "evidenceClass": 3,
-  "sources": [
-   {
-    "source": "src:dharmalekha",
-    "url": "https://dharmalekha.info/texts/DHARMA_INSTamilNadu01005"
-   },
-   {
-    "source": "src:sii-3",
-    "locator": "no. 205"
-   }
-  ],
-  "confidence": "high",
-  "status": "verified-online",
-  "agent": "material",
-  "lastVerified": "2026-11-08"
- },
- {
-  "id": "material:r2-67",
   "s": "ins:tiruvalangadu-plates",
   "p": "REFERS_TO",
   "o": "char:manu",
@@ -1764,7 +1743,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-68",
+  "id": "material:r2-67",
   "s": "ins:tiruvalangadu-plates",
   "p": "REFERS_TO",
   "o": "char:ikshvaku",
@@ -1792,7 +1771,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-69",
+  "id": "material:r2-68",
   "s": "ins:tiruvalangadu-plates",
   "p": "REFERS_TO",
   "o": "lin:suryavamsha",
@@ -1818,7 +1797,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-70",
+  "id": "material:r2-69",
   "s": "ins:anbil-plates",
   "p": "COMMISSIONED_BY",
   "o": "person:sundara-chola",
@@ -1839,7 +1818,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-71",
+  "id": "material:r2-70",
   "s": "person:sundara-chola",
   "p": "MEMBER_OF",
   "o": "pol:chola",
@@ -1860,7 +1839,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-72",
+  "id": "material:r2-71",
   "s": "person:sundara-chola",
   "p": "PARENT_OF",
   "o": "person:rajaraja-i",
@@ -1881,7 +1860,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-73",
+  "id": "material:r2-72",
   "s": "ins:anbil-plates",
   "p": "REFERS_TO",
   "o": "lin:suryavamsha",
@@ -1906,7 +1885,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-74",
+  "id": "material:r2-73",
   "s": "ins:uttaramerur-sabha",
   "p": "INSCRIBED_AT",
   "o": "site:uttaramerur",
@@ -1927,7 +1906,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-75",
+  "id": "material:r2-74",
   "s": "ins:uttaramerur-sabha",
   "p": "REFERS_TO",
   "o": "person:parantaka-i",
@@ -1948,7 +1927,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-76",
+  "id": "material:r2-75",
   "s": "site:uttaramerur",
   "p": "BUILT_DURING",
   "o": "pol:pallava",
@@ -1971,7 +1950,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-77",
+  "id": "material:r2-76",
   "s": "ins:khajuraho-lakshmana",
   "p": "INSCRIBED_AT",
   "o": "temple:lakshmana-khajuraho",
@@ -1992,7 +1971,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-78",
+  "id": "material:r2-77",
   "s": "ins:khajuraho-lakshmana",
   "p": "COMMISSIONED_BY",
   "o": "person:yashovarman-chandela",
@@ -2013,7 +1992,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-79",
+  "id": "material:r2-78",
   "s": "ins:khajuraho-lakshmana",
   "p": "REFERS_TO",
   "o": "deity:vishnu",
@@ -2037,7 +2016,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-80",
+  "id": "material:r2-79",
   "s": "ins:belur-vishnuvardhana-1117",
   "p": "INSCRIBED_AT",
   "o": "temple:chennakeshava-belur",
@@ -2058,7 +2037,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-81",
+  "id": "material:r2-80",
   "s": "ins:belur-vishnuvardhana-1117",
   "p": "COMMISSIONED_BY",
   "o": "person:vishnuvardhana-hoysala",
@@ -2079,7 +2058,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-82",
+  "id": "material:r2-81",
   "s": "ins:belur-vishnuvardhana-1117",
   "p": "REFERS_TO",
   "o": "deity:vishnu",
@@ -2103,7 +2082,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-83",
+  "id": "material:r2-82",
   "s": "ins:mahakuta-pillar",
   "p": "COMMISSIONED_BY",
   "o": "person:mangalesha",
@@ -2124,7 +2103,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-84",
+  "id": "material:r2-83",
   "s": "ins:mahakuta-pillar",
   "p": "REFERS_TO",
   "o": "deity:shiva",
@@ -2148,7 +2127,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-85",
+  "id": "material:r2-84",
   "s": "person:mangalesha",
   "p": "DEVOTEE_OF",
   "o": "deity:shiva",
@@ -2173,7 +2152,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-86",
+  "id": "material:r2-85",
   "s": "ins:kutai-yupa",
   "p": "FOUND_AT",
   "o": "site:muara-kaman",
@@ -2197,7 +2176,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-87",
+  "id": "material:r2-86",
   "s": "ins:kutai-yupa",
   "p": "COMMISSIONED_BY",
   "o": "person:mulavarman",
@@ -2221,7 +2200,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-88",
+  "id": "material:r2-87",
   "s": "ins:kutai-yupa",
   "p": "REFERS_TO",
   "o": "person:kundungga",
@@ -2248,7 +2227,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-89",
+  "id": "material:r2-88",
   "s": "ins:kutai-yupa",
   "p": "REFERS_TO",
   "o": "concept:yajna",
@@ -2275,7 +2254,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-90",
+  "id": "material:r2-89",
   "s": "ins:kutai-yupa",
   "p": "REFERS_TO",
   "o": "trad:vedic-srauta",
@@ -2300,7 +2279,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-91",
+  "id": "material:r2-90",
   "s": "person:mulavarman",
   "p": "MEMBER_OF",
   "o": "pol:kutai",
@@ -2324,7 +2303,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-92",
+  "id": "material:r2-91",
   "s": "ins:kutai-yupa",
   "p": "HELD_AT",
   "o": "inst:national-museum-indonesia",
@@ -2342,7 +2321,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-93",
+  "id": "material:r2-92",
   "s": "ins:ciaruteun",
   "p": "INSCRIBED_AT",
   "o": "site:ciaruteun",
@@ -2362,7 +2341,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-94",
+  "id": "material:r2-93",
   "s": "ins:ciaruteun",
   "p": "COMMISSIONED_BY",
   "o": "person:purnavarman",
@@ -2382,7 +2361,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-95",
+  "id": "material:r2-94",
   "s": "ins:ciaruteun",
   "p": "REFERS_TO",
   "o": "deity:vishnu",
@@ -2405,7 +2384,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-96",
+  "id": "material:r2-95",
   "s": "ins:ciaruteun",
   "p": "REFERS_TO",
   "o": "narr:three-strides",
@@ -2426,7 +2405,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-97",
+  "id": "material:r2-96",
   "s": "person:purnavarman",
   "p": "MEMBER_OF",
   "o": "pol:tarumanagara",
@@ -2446,7 +2425,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-98",
+  "id": "material:r2-97",
   "s": "ins:tugu",
   "p": "FOUND_AT",
   "o": "site:tugu-jakarta",
@@ -2470,7 +2449,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-99",
+  "id": "material:r2-98",
   "s": "ins:tugu",
   "p": "COMMISSIONED_BY",
   "o": "person:purnavarman",
@@ -2494,7 +2473,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-100",
+  "id": "material:r2-99",
   "s": "ins:tugu",
   "p": "HELD_AT",
   "o": "inst:national-museum-indonesia",
@@ -2514,7 +2493,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-101",
+  "id": "material:r2-100",
   "s": "ins:canggal",
   "p": "FOUND_AT",
   "o": "site:gunung-wukir",
@@ -2536,7 +2515,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-102",
+  "id": "material:r2-101",
   "s": "ins:canggal",
   "p": "COMMISSIONED_BY",
   "o": "person:sanjaya-mataram",
@@ -2558,7 +2537,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-103",
+  "id": "material:r2-102",
   "s": "ins:canggal",
   "p": "REFERS_TO",
   "o": "deity:shiva",
@@ -2584,7 +2563,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-104",
+  "id": "material:r2-103",
   "s": "ins:canggal",
   "p": "REFERS_TO",
   "o": "deity:ganga",
@@ -2609,7 +2588,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-105",
+  "id": "material:r2-104",
   "s": "person:sanjaya-mataram",
   "p": "MEMBER_OF",
   "o": "pol:medang",
@@ -2630,7 +2609,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-106",
+  "id": "material:r2-105",
   "s": "ins:dinoyo-kanjuruhan",
   "p": "FOUND_AT",
   "o": "site:dinoyo",
@@ -2651,7 +2630,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-107",
+  "id": "material:r2-106",
   "s": "ins:dinoyo-kanjuruhan",
   "p": "COMMISSIONED_BY",
   "o": "person:gajayana",
@@ -2672,7 +2651,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-108",
+  "id": "material:r2-107",
   "s": "ins:dinoyo-kanjuruhan",
   "p": "REFERS_TO",
   "o": "char:agastya",
@@ -2697,7 +2676,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-109",
+  "id": "material:r2-108",
   "s": "ins:dinoyo-kanjuruhan",
   "p": "HELD_AT",
   "o": "inst:national-museum-indonesia",
@@ -2721,7 +2700,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-110",
+  "id": "material:r2-109",
   "s": "person:gajayana",
   "p": "DEVOTEE_OF",
   "o": "char:agastya",
@@ -2746,7 +2725,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-111",
+  "id": "material:r2-110",
   "s": "ins:sdok-kak-thom",
   "p": "FOUND_AT",
   "o": "site:sdok-kak-thom",
@@ -2771,7 +2750,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-112",
+  "id": "material:r2-111",
   "s": "ins:sdok-kak-thom",
   "p": "HELD_AT",
   "o": "inst:bangkok-national-museum",
@@ -2788,7 +2767,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-113",
+  "id": "material:r2-112",
   "s": "ins:sdok-kak-thom",
   "p": "REFERS_TO",
   "o": "person:udayadityavarman-ii",
@@ -2812,7 +2791,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-114",
+  "id": "material:r2-113",
   "s": "ins:sdok-kak-thom",
   "p": "REFERS_TO",
   "o": "person:jayavarman-ii",
@@ -2837,7 +2816,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-115",
+  "id": "material:r2-114",
   "s": "ins:sdok-kak-thom",
   "p": "REFERS_TO",
   "o": "person:shivakaivalya",
@@ -2862,7 +2841,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-116",
+  "id": "material:r2-115",
   "s": "ins:sdok-kak-thom",
   "p": "REFERS_TO",
   "o": "deity:shiva",
@@ -2887,7 +2866,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-117",
+  "id": "material:r2-116",
   "s": "ins:sdok-kak-thom",
   "p": "REFERS_TO",
   "o": "deity:vishnu",
@@ -2912,7 +2891,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-118",
+  "id": "material:r2-117",
   "s": "ins:sdok-kak-thom",
   "p": "REFERS_TO",
   "o": "deity:lakshmi",
@@ -2936,7 +2915,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-119",
+  "id": "material:r2-118",
   "s": "person:udayadityavarman-ii",
   "p": "MEMBER_OF",
   "o": "pol:khmer",
@@ -2957,7 +2936,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-120",
+  "id": "material:r2-119",
   "s": "person:jayavarman-ii",
   "p": "MEMBER_OF",
   "o": "pol:khmer",
@@ -2974,7 +2953,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-121",
+  "id": "material:r2-120",
   "s": "person:shivakaivalya",
   "p": "SERVES",
   "o": "person:jayavarman-ii",
@@ -3002,7 +2981,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-122",
+  "id": "material:r2-121",
   "s": "claim:devaraja-royal-cult",
   "p": "CONCERNS",
   "o": "ins:sdok-kak-thom",
@@ -3019,7 +2998,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-123",
+  "id": "material:r2-122",
   "s": "claim:devaraja-royal-cult",
   "p": "CONCERNS",
   "o": "person:jayavarman-ii",
@@ -3036,7 +3015,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-124",
+  "id": "material:r2-123",
   "s": "ins:sdok-kak-thom",
   "p": "SUPPORTS",
   "o": "claim:devaraja-royal-cult",
@@ -3063,7 +3042,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-125",
+  "id": "material:r2-124",
   "s": "ins:vat-luang-kau-devanika",
   "p": "FOUND_AT",
   "o": "site:vat-luang-kau",
@@ -3085,7 +3064,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-126",
+  "id": "material:r2-125",
   "s": "ins:vat-luang-kau-devanika",
   "p": "COMMISSIONED_BY",
   "o": "person:devanika",
@@ -3107,7 +3086,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-127",
+  "id": "material:r2-126",
   "s": "ins:vat-luang-kau-devanika",
   "p": "REFERS_TO",
   "o": "place:kurukshetra",
@@ -3132,7 +3111,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-128",
+  "id": "material:r2-127",
   "s": "ins:vat-luang-kau-devanika",
   "p": "REFERS_TO",
   "o": "char:yudhishthira",
@@ -3157,7 +3136,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-129",
+  "id": "material:r2-128",
   "s": "ins:vat-luang-kau-devanika",
   "p": "REFERS_TO",
   "o": "char:arjuna",
@@ -3182,7 +3161,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-130",
+  "id": "material:r2-129",
   "s": "ins:vat-luang-kau-devanika",
   "p": "REFERS_TO",
   "o": "place:naimisha",
@@ -3207,7 +3186,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-131",
+  "id": "material:r2-130",
   "s": "ins:vat-luang-kau-devanika",
   "p": "REFERS_TO",
   "o": "place:prabhasa",
@@ -3232,7 +3211,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-132",
+  "id": "material:r2-131",
   "s": "ins:vat-luang-kau-devanika",
   "p": "REFERS_TO",
   "o": "deity:brahma",
@@ -3257,7 +3236,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-133",
+  "id": "material:r2-132",
   "s": "ins:vat-luang-kau-devanika",
   "p": "REFERS_TO",
   "o": "deity:vishnu",
@@ -3282,7 +3261,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-134",
+  "id": "material:r2-133",
   "s": "ins:vat-luang-kau-devanika",
   "p": "REFERS_TO",
   "o": "deity:shiva",
@@ -3307,7 +3286,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-135",
+  "id": "material:r2-134",
   "s": "ins:vat-luang-kau-devanika",
   "p": "REFERS_TO_TEXT",
   "o": "text:mahabharata",
@@ -3330,7 +3309,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-136",
+  "id": "material:r2-135",
   "s": "person:devanika",
   "p": "MEMBER_OF",
   "o": "pol:chenla",
@@ -3351,7 +3330,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-137",
+  "id": "material:r2-136",
   "s": "ins:my-son-bhadravarman",
   "p": "FOUND_AT",
   "o": "temple:my-son",
@@ -3376,7 +3355,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-138",
+  "id": "material:r2-137",
   "s": "ins:my-son-bhadravarman",
   "p": "COMMISSIONED_BY",
   "o": "person:bhadravarman-i",
@@ -3398,7 +3377,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-139",
+  "id": "material:r2-138",
   "s": "ins:my-son-bhadravarman",
   "p": "REFERS_TO",
   "o": "deity:shiva",
@@ -3423,7 +3402,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-140",
+  "id": "material:r2-139",
   "s": "ins:my-son-bhadravarman",
   "p": "REFERS_TO",
   "o": "deity:parvati",
@@ -3448,7 +3427,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-141",
+  "id": "material:r2-140",
   "s": "ins:my-son-bhadravarman",
   "p": "REFERS_TO",
   "o": "deity:agni",
@@ -3470,7 +3449,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-142",
+  "id": "material:r2-141",
   "s": "person:bhadravarman-i",
   "p": "MEMBER_OF",
   "o": "pol:champa",
@@ -3492,32 +3471,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-143",
-  "s": "deity:shiva",
-  "p": "WORSHIPPED_AT",
-  "o": "temple:my-son",
-  "qualifiers": {
-   "note": "as Bhadreśvara, founded by Bhadravarman"
-  },
-  "evidenceClass": 3,
-  "sources": [
-   {
-    "source": "src:dharmalekha",
-    "locator": "lines A1–B3",
-    "url": "https://dharmalekha.info/texts/DHARMA_INSCIC00072"
-   },
-   {
-    "source": "src:finot-1902",
-    "locator": "pp. 187–191"
-   }
-  ],
-  "confidence": "high",
-  "status": "verified-online",
-  "agent": "material",
-  "lastVerified": "2026-11-08"
- },
- {
-  "id": "material:r2-144",
+  "id": "material:r2-142",
   "s": "ins:po-nagar-satyavarman",
   "p": "COMMISSIONED_BY",
   "o": "person:satyavarman-champa",
@@ -3534,7 +3488,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-145",
+  "id": "material:r2-143",
   "s": "person:satyavarman-champa",
   "p": "MEMBER_OF",
   "o": "pol:champa",
@@ -3551,7 +3505,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-146",
+  "id": "material:r2-144",
   "s": "ins:po-nagar-satyavarman",
   "p": "REFERS_TO",
   "o": "deity:shiva",
@@ -3571,7 +3525,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-147",
+  "id": "material:r2-145",
   "s": "ins:vo-canh",
   "p": "FOUND_AT",
   "o": "site:vo-canh",
@@ -3588,7 +3542,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-148",
+  "id": "material:r2-146",
   "s": "ins:vo-canh",
   "p": "HELD_AT",
   "o": "inst:national-museum-vietnamese-history",
@@ -3605,7 +3559,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-149",
+  "id": "material:r2-147",
   "s": "claim:vo-canh-earliest",
   "p": "CONCERNS",
   "o": "ins:vo-canh",
@@ -3622,7 +3576,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-150",
+  "id": "material:r2-148",
   "s": "ins:vo-canh",
   "p": "SUPPORTS",
   "o": "claim:vo-canh-earliest",
@@ -3641,7 +3595,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-151",
+  "id": "material:r2-149",
   "s": "person:chandragupta-i",
   "p": "SPOUSE_OF",
   "o": "person:kumaradevi",
@@ -3664,7 +3618,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-152",
+  "id": "material:r2-150",
   "s": "person:chandragupta-i",
   "p": "PARENT_OF",
   "o": "person:samudragupta",
@@ -3682,7 +3636,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-153",
+  "id": "material:r2-151",
   "s": "person:chandragupta-i",
   "p": "MEMBER_OF",
   "o": "pol:gupta",
@@ -3700,7 +3654,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-154",
+  "id": "material:r2-152",
   "s": "art:samudragupta-standard-coins",
   "p": "COMMISSIONED_BY",
   "o": "person:samudragupta",
@@ -3718,7 +3672,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-155",
+  "id": "material:r2-153",
   "s": "deity:garuda",
   "p": "DEPICTED_IN",
   "o": "art:samudragupta-standard-coins",
@@ -3736,7 +3690,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-156",
+  "id": "material:r2-154",
   "s": "art:samudragupta-standard-coins",
   "p": "INTERPRETED_AS",
   "o": "deity:lakshmi",
@@ -3756,7 +3710,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-157",
+  "id": "material:r2-155",
   "s": "art:samudragupta-ashvamedha-coins",
   "p": "COMMISSIONED_BY",
   "o": "person:samudragupta",
@@ -3774,7 +3728,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-158",
+  "id": "material:r2-156",
   "s": "art:samudragupta-ashvamedha-coins",
   "p": "REFERS_TO",
   "o": "concept:yajna",
@@ -3795,7 +3749,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-159",
+  "id": "material:r2-157",
   "s": "art:samudragupta-ashvamedha-coins",
   "p": "REFERS_TO",
   "o": "trad:vedic-srauta",
@@ -3813,7 +3767,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-160",
+  "id": "material:r2-158",
   "s": "art:chandragupta-i-kumaradevi-coins",
   "p": "REFERS_TO",
   "o": "person:chandragupta-i",
@@ -3831,7 +3785,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-161",
+  "id": "material:r2-159",
   "s": "art:chandragupta-i-kumaradevi-coins",
   "p": "REFERS_TO",
   "o": "person:kumaradevi",
@@ -3849,7 +3803,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-162",
+  "id": "material:r2-160",
   "s": "art:chandragupta-i-kumaradevi-coins",
   "p": "COMMISSIONED_BY",
   "o": "person:samudragupta",
@@ -3868,7 +3822,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-163",
+  "id": "material:r2-161",
   "s": "art:chandragupta-i-kumaradevi-coins",
   "p": "INTERPRETED_AS",
   "o": "deity:lakshmi",
@@ -3887,7 +3841,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-164",
+  "id": "material:r2-162",
   "s": "art:chandragupta-i-kumaradevi-coins",
   "p": "INTERPRETED_AS",
   "o": "deity:durga",
@@ -3906,7 +3860,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-165",
+  "id": "material:r2-163",
   "s": "art:skandagupta-king-lakshmi-coins",
   "p": "COMMISSIONED_BY",
   "o": "person:skandagupta",
@@ -3924,7 +3878,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-166",
+  "id": "material:r2-164",
   "s": "art:skandagupta-king-lakshmi-coins",
   "p": "INTERPRETED_AS",
   "o": "deity:lakshmi",
@@ -3943,7 +3897,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-167",
+  "id": "material:r2-165",
   "s": "art:kumaragupta-ashvamedha-coins",
   "p": "COMMISSIONED_BY",
   "o": "person:kumaragupta-i",
@@ -3961,7 +3915,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-168",
+  "id": "material:r2-166",
   "s": "art:kumaragupta-ashvamedha-coins",
   "p": "REFERS_TO",
   "o": "concept:yajna",
@@ -3982,7 +3936,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-169",
+  "id": "material:r2-167",
   "s": "art:huvishka-skanda-coins",
   "p": "COMMISSIONED_BY",
   "o": "person:huvishka",
@@ -4002,7 +3956,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-170",
+  "id": "material:r2-168",
   "s": "person:huvishka",
   "p": "MEMBER_OF",
   "o": "pol:kushan",
@@ -4019,7 +3973,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-171",
+  "id": "material:r2-169",
   "s": "deity:skanda",
   "p": "DEPICTED_IN",
   "o": "art:huvishka-skanda-coins",
@@ -4042,7 +3996,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-172",
+  "id": "material:r2-170",
   "s": "art:vasudeva-i-coin-cma",
   "p": "HELD_AT",
   "o": "inst:cleveland-museum",
@@ -4060,7 +4014,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-173",
+  "id": "material:r2-171",
   "s": "art:vasudeva-i-coin-cma",
   "p": "COMMISSIONED_BY",
   "o": "person:vasudeva-i-kushan",
@@ -4078,7 +4032,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-174",
+  "id": "material:r2-172",
   "s": "person:vasudeva-i-kushan",
   "p": "MEMBER_OF",
   "o": "pol:kushan",
@@ -4095,7 +4049,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-175",
+  "id": "material:r2-173",
   "s": "art:vasudeva-i-coin-cma",
   "p": "REFERS_TO",
   "o": "deity:oesho",
@@ -4113,7 +4067,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-176",
+  "id": "material:r2-174",
   "s": "art:yaudheya-karttikeya-coins",
   "p": "COMMISSIONED_BY",
   "o": "pol:yaudheya",
@@ -4130,7 +4084,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-177",
+  "id": "material:r2-175",
   "s": "deity:skanda",
   "p": "DEPICTED_IN",
   "o": "art:yaudheya-karttikeya-coins",
@@ -4150,7 +4104,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-178",
+  "id": "material:r2-176",
   "s": "ins:junagadh-rudradaman",
   "p": "REFERS_TO",
   "o": "pol:yaudheya",
@@ -4175,7 +4129,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-179",
+  "id": "material:r2-177",
   "s": "ins:allahabad-pillar-samudragupta",
   "p": "REFERS_TO",
   "o": "pol:yaudheya",
@@ -4200,7 +4154,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-180",
+  "id": "material:r2-178",
   "s": "art:audumbara-dharaghosha-coin",
   "p": "COMMISSIONED_BY",
   "o": "pol:audumbara",
@@ -4217,7 +4171,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-181",
+  "id": "material:r2-179",
   "s": "char:vishvamitra",
   "p": "DEPICTED_IN",
   "o": "art:audumbara-dharaghosha-coin",
@@ -4240,7 +4194,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-182",
+  "id": "material:r2-180",
   "s": "art:audumbara-mahadeva-coins",
   "p": "COMMISSIONED_BY",
   "o": "pol:audumbara",
@@ -4257,7 +4211,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-183",
+  "id": "material:r2-181",
   "s": "art:audumbara-mahadeva-coins",
   "p": "REFERS_TO",
   "o": "deity:shiva",
@@ -4277,7 +4231,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-184",
+  "id": "material:r2-182",
   "s": "deity:nandin",
   "p": "DEPICTED_IN",
   "o": "art:audumbara-mahadeva-coins",
@@ -4295,7 +4249,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-185",
+  "id": "material:r2-183",
   "s": "art:aic-kushan-mahishasuramardini",
   "p": "HELD_AT",
   "o": "inst:art-institute-chicago",
@@ -4316,7 +4270,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-186",
+  "id": "material:r2-184",
   "s": "deity:durga",
   "p": "DEPICTED_IN",
   "o": "art:aic-kushan-mahishasuramardini",
@@ -4337,7 +4291,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-187",
+  "id": "material:r2-185",
   "s": "narr:mahishasura-slaying",
   "p": "DEPICTED_IN",
   "o": "art:aic-kushan-mahishasuramardini",
@@ -4358,7 +4312,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-188",
+  "id": "material:r2-186",
   "s": "art:aic-kushan-karttikeya",
   "p": "HELD_AT",
   "o": "inst:art-institute-chicago",
@@ -4379,7 +4333,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-189",
+  "id": "material:r2-187",
   "s": "deity:skanda",
   "p": "DEPICTED_IN",
   "o": "art:aic-kushan-karttikeya",
@@ -4400,7 +4354,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-190",
+  "id": "material:r2-188",
   "s": "art:aic-early-ganesha-mathura",
   "p": "HELD_AT",
   "o": "inst:art-institute-chicago",
@@ -4421,7 +4375,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-191",
+  "id": "material:r2-189",
   "s": "deity:ganesha",
   "p": "DEPICTED_IN",
   "o": "art:aic-early-ganesha-mathura",
@@ -4442,7 +4396,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-192",
+  "id": "material:r2-190",
   "s": "art:met-gupta-ekamukhalinga",
   "p": "HELD_AT",
   "o": "inst:met-museum",
@@ -4463,7 +4417,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-193",
+  "id": "material:r2-191",
   "s": "deity:shiva",
   "p": "DEPICTED_IN",
   "o": "art:met-gupta-ekamukhalinga",
@@ -4484,7 +4438,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-194",
+  "id": "material:r2-192",
   "s": "art:met-gupta-terracotta-vishnu",
   "p": "HELD_AT",
   "o": "inst:met-museum",
@@ -4505,7 +4459,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-195",
+  "id": "material:r2-193",
   "s": "deity:vishnu",
   "p": "DEPICTED_IN",
   "o": "art:met-gupta-terracotta-vishnu",
@@ -4526,7 +4480,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-196",
+  "id": "material:r2-194",
   "s": "art:met-gupta-krishna-keshi",
   "p": "HELD_AT",
   "o": "inst:met-museum",
@@ -4547,7 +4501,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-197",
+  "id": "material:r2-195",
   "s": "char:krishna",
   "p": "DEPICTED_IN",
   "o": "art:met-gupta-krishna-keshi",
@@ -4568,7 +4522,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-198",
+  "id": "material:r2-196",
   "s": "art:cma-vishnu-head-vidisha",
   "p": "HELD_AT",
   "o": "inst:cleveland-museum",
@@ -4589,7 +4543,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-199",
+  "id": "material:r2-197",
   "s": "deity:vishnu",
   "p": "DEPICTED_IN",
   "o": "art:cma-vishnu-head-vidisha",
@@ -4610,7 +4564,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-200",
+  "id": "material:r2-198",
   "s": "art:cma-gupta-vishnu-475",
   "p": "HELD_AT",
   "o": "inst:cleveland-museum",
@@ -4631,7 +4585,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-201",
+  "id": "material:r2-199",
   "s": "deity:vishnu",
   "p": "DEPICTED_IN",
   "o": "art:cma-gupta-vishnu-475",
@@ -4652,7 +4606,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-202",
+  "id": "material:r2-200",
   "s": "art:cma-mathura-vishnu-late-gupta",
   "p": "HELD_AT",
   "o": "inst:cleveland-museum",
@@ -4673,7 +4627,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-203",
+  "id": "material:r2-201",
   "s": "deity:vishnu",
   "p": "DEPICTED_IN",
   "o": "art:cma-mathura-vishnu-late-gupta",
@@ -4694,7 +4648,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-204",
+  "id": "material:r2-202",
   "s": "art:cma-ganga-mathura",
   "p": "HELD_AT",
   "o": "inst:cleveland-museum",
@@ -4715,7 +4669,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-205",
+  "id": "material:r2-203",
   "s": "deity:ganga",
   "p": "DEPICTED_IN",
   "o": "art:cma-ganga-mathura",
@@ -4736,7 +4690,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-206",
+  "id": "material:r2-204",
   "s": "art:cma-kashmir-karttikeya",
   "p": "HELD_AT",
   "o": "inst:cleveland-museum",
@@ -4757,7 +4711,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-207",
+  "id": "material:r2-205",
   "s": "deity:skanda",
   "p": "DEPICTED_IN",
   "o": "art:cma-kashmir-karttikeya",
@@ -4778,7 +4732,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-208",
+  "id": "material:r2-206",
   "s": "art:aic-durga-mp-6c",
   "p": "HELD_AT",
   "o": "inst:art-institute-chicago",
@@ -4799,7 +4753,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-209",
+  "id": "material:r2-207",
   "s": "deity:durga",
   "p": "DEPICTED_IN",
   "o": "art:aic-durga-mp-6c",
@@ -4817,7 +4771,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-210",
+  "id": "material:r2-208",
   "s": "narr:mahishasura-slaying",
   "p": "DEPICTED_IN",
   "o": "art:aic-durga-mp-6c",
@@ -4835,7 +4789,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-211",
+  "id": "material:r2-209",
   "s": "art:met-pala-durga",
   "p": "HELD_AT",
   "o": "inst:met-museum",
@@ -4856,7 +4810,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-212",
+  "id": "material:r2-210",
   "s": "deity:durga",
   "p": "DEPICTED_IN",
   "o": "art:met-pala-durga",
@@ -4874,7 +4828,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-213",
+  "id": "material:r2-211",
   "s": "narr:mahishasura-slaying",
   "p": "DEPICTED_IN",
   "o": "art:met-pala-durga",
@@ -4892,7 +4846,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-214",
+  "id": "material:r2-212",
   "s": "art:vam-hoysala-durga",
   "p": "HELD_AT",
   "o": "inst:vam",
@@ -4913,7 +4867,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-215",
+  "id": "material:r2-213",
   "s": "deity:durga",
   "p": "DEPICTED_IN",
   "o": "art:vam-hoysala-durga",
@@ -4934,7 +4888,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-216",
+  "id": "material:r2-214",
   "s": "narr:mahishasura-slaying",
   "p": "DEPICTED_IN",
   "o": "art:vam-hoysala-durga",
@@ -4952,7 +4906,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-217",
+  "id": "material:r2-215",
   "s": "art:met-gaja-lakshmi-kashmir",
   "p": "HELD_AT",
   "o": "inst:met-museum",
@@ -4973,7 +4927,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-218",
+  "id": "material:r2-216",
   "s": "deity:lakshmi",
   "p": "DEPICTED_IN",
   "o": "art:met-gaja-lakshmi-kashmir",
@@ -4994,7 +4948,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-219",
+  "id": "material:r2-217",
   "s": "art:met-chola-parvati",
   "p": "HELD_AT",
   "o": "inst:met-museum",
@@ -5015,7 +4969,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-220",
+  "id": "material:r2-218",
   "s": "deity:parvati",
   "p": "DEPICTED_IN",
   "o": "art:met-chola-parvati",
@@ -5036,7 +4990,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-221",
+  "id": "material:r2-219",
   "s": "art:met-somaskanda",
   "p": "HELD_AT",
   "o": "inst:met-museum",
@@ -5057,7 +5011,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-222",
+  "id": "material:r2-220",
   "s": "deity:shiva",
   "p": "DEPICTED_IN",
   "o": "art:met-somaskanda",
@@ -5078,7 +5032,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-223",
+  "id": "material:r2-221",
   "s": "deity:parvati",
   "p": "DEPICTED_IN",
   "o": "art:met-somaskanda",
@@ -5099,7 +5053,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-224",
+  "id": "material:r2-222",
   "s": "deity:skanda",
   "p": "DEPICTED_IN",
   "o": "art:met-somaskanda",
@@ -5120,7 +5074,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-225",
+  "id": "material:r2-223",
   "s": "art:aic-somaskanda-vijayanagara",
   "p": "HELD_AT",
   "o": "inst:art-institute-chicago",
@@ -5141,7 +5095,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-226",
+  "id": "material:r2-224",
   "s": "deity:shiva",
   "p": "DEPICTED_IN",
   "o": "art:aic-somaskanda-vijayanagara",
@@ -5159,7 +5113,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-227",
+  "id": "material:r2-225",
   "s": "deity:parvati",
   "p": "DEPICTED_IN",
   "o": "art:aic-somaskanda-vijayanagara",
@@ -5177,7 +5131,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-228",
+  "id": "material:r2-226",
   "s": "deity:skanda",
   "p": "DEPICTED_IN",
   "o": "art:aic-somaskanda-vijayanagara",
@@ -5195,7 +5149,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-229",
+  "id": "material:r2-227",
   "s": "art:met-chola-hanuman",
   "p": "HELD_AT",
   "o": "inst:met-museum",
@@ -5216,7 +5170,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-230",
+  "id": "material:r2-228",
   "s": "char:hanuman",
   "p": "DEPICTED_IN",
   "o": "art:met-chola-hanuman",
@@ -5237,7 +5191,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-231",
+  "id": "material:r2-229",
   "s": "art:aic-kaliyadamana-bronze",
   "p": "HELD_AT",
   "o": "inst:art-institute-chicago",
@@ -5258,7 +5212,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-232",
+  "id": "material:r2-230",
   "s": "char:krishna",
   "p": "DEPICTED_IN",
   "o": "art:aic-kaliyadamana-bronze",
@@ -5276,7 +5230,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-233",
+  "id": "material:r2-231",
   "s": "narr:kaliya",
   "p": "DEPICTED_IN",
   "o": "art:aic-kaliyadamana-bronze",
@@ -5294,7 +5248,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-234",
+  "id": "material:r2-232",
   "s": "char:kaliya",
   "p": "DEPICTED_IN",
   "o": "art:aic-kaliyadamana-bronze",
@@ -5312,7 +5266,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-235",
+  "id": "material:r2-233",
   "s": "art:aic-varaha-rajasthan",
   "p": "HELD_AT",
   "o": "inst:art-institute-chicago",
@@ -5333,7 +5287,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-236",
+  "id": "material:r2-234",
   "s": "deity:varaha",
   "p": "DEPICTED_IN",
   "o": "art:aic-varaha-rajasthan",
@@ -5351,7 +5305,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-237",
+  "id": "material:r2-235",
   "s": "narr:varaha-earth",
   "p": "DEPICTED_IN",
   "o": "art:aic-varaha-rajasthan",
@@ -5369,7 +5323,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-238",
+  "id": "material:r2-236",
   "s": "art:cma-pala-vishnu-bronze",
   "p": "HELD_AT",
   "o": "inst:cleveland-museum",
@@ -5390,7 +5344,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-239",
+  "id": "material:r2-237",
   "s": "deity:vishnu",
   "p": "DEPICTED_IN",
   "o": "art:cma-pala-vishnu-bronze",
@@ -5411,7 +5365,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-240",
+  "id": "material:r2-238",
   "s": "art:cma-pala-ekamukhalinga",
   "p": "HELD_AT",
   "o": "inst:cleveland-museum",
@@ -5432,7 +5386,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-241",
+  "id": "material:r2-239",
   "s": "deity:shiva",
   "p": "DEPICTED_IN",
   "o": "art:cma-pala-ekamukhalinga",
@@ -5453,7 +5407,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-242",
+  "id": "material:r2-240",
   "s": "art:met-hoysala-keshava",
   "p": "HELD_AT",
   "o": "inst:met-museum",
@@ -5474,7 +5428,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-243",
+  "id": "material:r2-241",
   "s": "deity:vishnu",
   "p": "DEPICTED_IN",
   "o": "art:met-hoysala-keshava",
@@ -5495,7 +5449,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-244",
+  "id": "material:r2-242",
   "s": "art:met-hoysala-keshava",
   "p": "INTERPRETED_AS",
   "o": "temple:chennakeshava-belur",
@@ -5514,7 +5468,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-245",
+  "id": "material:r2-243",
   "s": "art:met-harihara-preangkor",
   "p": "HELD_AT",
   "o": "inst:met-museum",
@@ -5535,7 +5489,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-246",
+  "id": "material:r2-244",
   "s": "deity:shiva",
   "p": "DEPICTED_IN",
   "o": "art:met-harihara-preangkor",
@@ -5556,7 +5510,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-247",
+  "id": "material:r2-245",
   "s": "deity:vishnu",
   "p": "DEPICTED_IN",
   "o": "art:met-harihara-preangkor",
@@ -5577,7 +5531,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-248",
+  "id": "material:r2-246",
   "s": "art:met-cambodia-ganesha",
   "p": "HELD_AT",
   "o": "inst:met-museum",
@@ -5598,7 +5552,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-249",
+  "id": "material:r2-247",
   "s": "deity:ganesha",
   "p": "DEPICTED_IN",
   "o": "art:met-cambodia-ganesha",
@@ -5616,7 +5570,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-250",
+  "id": "material:r2-248",
   "s": "art:cma-preangkor-ganesha",
   "p": "HELD_AT",
   "o": "inst:cleveland-museum",
@@ -5637,7 +5591,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-251",
+  "id": "material:r2-249",
   "s": "deity:ganesha",
   "p": "DEPICTED_IN",
   "o": "art:cma-preangkor-ganesha",
@@ -5655,7 +5609,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-252",
+  "id": "material:r2-250",
   "s": "art:aic-angkor-durga",
   "p": "HELD_AT",
   "o": "inst:art-institute-chicago",
@@ -5676,7 +5630,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-253",
+  "id": "material:r2-251",
   "s": "deity:durga",
   "p": "DEPICTED_IN",
   "o": "art:aic-angkor-durga",
@@ -5694,7 +5648,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-254",
+  "id": "material:r2-252",
   "s": "narr:mahishasura-slaying",
   "p": "DEPICTED_IN",
   "o": "art:aic-angkor-durga",
@@ -5712,7 +5666,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-255",
+  "id": "material:r2-253",
   "s": "art:phnom-da-vishnu",
   "p": "FOUND_AT",
   "o": "site:phnom-da",
@@ -5729,7 +5683,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-256",
+  "id": "material:r2-254",
   "s": "art:phnom-da-vishnu",
   "p": "HELD_AT",
   "o": "inst:national-museum-cambodia",
@@ -5750,7 +5704,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-257",
+  "id": "material:r2-255",
   "s": "deity:vishnu",
   "p": "DEPICTED_IN",
   "o": "art:phnom-da-vishnu",
@@ -5770,7 +5724,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-258",
+  "id": "material:r2-256",
   "s": "art:prasat-andet-harihara",
   "p": "HELD_AT",
   "o": "inst:national-museum-cambodia",
@@ -5787,7 +5741,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-259",
+  "id": "material:r2-257",
   "s": "deity:shiva",
   "p": "DEPICTED_IN",
   "o": "art:prasat-andet-harihara",
@@ -5807,7 +5761,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-260",
+  "id": "material:r2-258",
   "s": "deity:vishnu",
   "p": "DEPICTED_IN",
   "o": "art:prasat-andet-harihara",
@@ -5827,7 +5781,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-261",
+  "id": "material:r2-259",
   "s": "art:ahichchhatra-ganga-yamuna",
   "p": "FOUND_AT",
   "o": "site:ahichchhatra",
@@ -5844,7 +5798,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-262",
+  "id": "material:r2-260",
   "s": "art:ahichchhatra-ganga-yamuna",
   "p": "HELD_AT",
   "o": "inst:national-museum-delhi",
@@ -5861,7 +5815,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-263",
+  "id": "material:r2-261",
   "s": "deity:ganga",
   "p": "DEPICTED_IN",
   "o": "art:ahichchhatra-ganga-yamuna",
@@ -5881,7 +5835,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-264",
+  "id": "material:r2-262",
   "s": "deity:yamuna",
   "p": "DEPICTED_IN",
   "o": "art:ahichchhatra-ganga-yamuna",
@@ -5901,7 +5855,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-265",
+  "id": "material:r2-263",
   "s": "site:sonkh",
   "p": "DOCUMENTED_BY",
   "o": "person:herbert-hartel",
@@ -5917,7 +5871,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-266",
+  "id": "material:r2-264",
   "s": "site:sonkh",
   "p": "DOCUMENTED_BY",
   "o": "inst:museum-indische-kunst-berlin",
@@ -5933,7 +5887,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-267",
+  "id": "material:r2-265",
   "s": "site:sonkh",
   "p": "LOCATED_AT",
   "o": "place:mathura",
@@ -5953,7 +5907,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-268",
+  "id": "material:r2-266",
   "s": "site:sringaverapura-excavation",
   "p": "LOCATED_AT",
   "o": "place:shringaverapura",
@@ -5971,7 +5925,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-269",
+  "id": "material:r2-267",
   "s": "site:sringaverapura-excavation",
   "p": "DOCUMENTED_BY",
   "o": "person:bb-lal",
@@ -5987,7 +5941,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-270",
+  "id": "material:r2-268",
   "s": "site:sringaverapura-excavation",
   "p": "DOCUMENTED_BY",
   "o": "person:kn-dikshit",
@@ -6003,7 +5957,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-271",
+  "id": "material:r2-269",
   "s": "site:sringaverapura-excavation",
   "p": "DOCUMENTED_BY",
   "o": "inst:asi",
@@ -6019,7 +5973,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-272",
+  "id": "material:r2-270",
   "s": "claim:ramayana-sites-archaeology",
   "p": "CONCERNS",
   "o": "text:valmiki-ramayana",
@@ -6035,7 +5989,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-273",
+  "id": "material:r2-271",
   "s": "claim:ramayana-sites-archaeology",
   "p": "CONCERNS",
   "o": "place:shringaverapura",
@@ -6051,7 +6005,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-274",
+  "id": "material:r2-272",
   "s": "site:sringaverapura-excavation",
   "p": "SUPPORTS",
   "o": "claim:ramayana-sites-archaeology",
@@ -6069,7 +6023,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-275",
+  "id": "material:r2-273",
   "s": "claim:ramayana-sites-archaeology",
   "p": "CONCERNS",
   "o": "person:bb-lal",
@@ -6086,7 +6040,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-276",
+  "id": "material:r2-274",
   "s": "site:bhagwanpura",
   "p": "DOCUMENTED_BY",
   "o": "person:jp-joshi",
@@ -6102,7 +6056,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-277",
+  "id": "material:r2-275",
   "s": "site:bhagwanpura",
   "p": "DOCUMENTED_BY",
   "o": "inst:asi",
@@ -6118,7 +6072,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-278",
+  "id": "material:r2-276",
   "s": "site:bhagwanpura",
   "p": "LOCATED_AT",
   "o": "place:kurukshetra",
@@ -6138,7 +6092,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-279",
+  "id": "material:r2-277",
   "s": "site:bhagwanpura",
   "p": "CONTRADICTS",
   "o": "claim:pgw-mahabharata",
@@ -6160,7 +6114,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-280",
+  "id": "material:r2-278",
   "s": "site:ahichchhatra",
   "p": "DOCUMENTED_BY",
   "o": "inst:asi",
@@ -6177,7 +6131,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-281",
+  "id": "material:r2-279",
   "s": "site:ahichchhatra",
   "p": "ASSOCIATED_WITH",
   "o": "lin:pancala",
@@ -6195,7 +6149,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-282",
+  "id": "material:r2-280",
   "s": "site:kausambi",
   "p": "DOCUMENTED_BY",
   "o": "person:gr-sharma",
@@ -6211,7 +6165,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-283",
+  "id": "material:r2-281",
   "s": "site:kausambi",
   "p": "DOCUMENTED_BY",
   "o": "inst:university-of-allahabad",
@@ -6227,7 +6181,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-284",
+  "id": "material:r2-282",
   "s": "claim:kausambi-shyenaciti",
   "p": "CONCERNS",
   "o": "site:kausambi",
@@ -6244,7 +6198,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-285",
+  "id": "material:r2-283",
   "s": "claim:kausambi-shyenaciti",
   "p": "CONCERNS",
   "o": "trad:vedic-srauta",
@@ -6261,7 +6215,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-286",
+  "id": "material:r2-284",
   "s": "site:kausambi",
   "p": "SUPPORTS",
   "o": "claim:kausambi-shyenaciti",
@@ -6279,7 +6233,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-287",
+  "id": "material:r2-285",
   "s": "inst:allahabad-museum",
   "p": "LOCATED_AT",
   "o": "place:prayaga",
@@ -6296,7 +6250,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-288",
+  "id": "material:r2-286",
   "s": "site:bujang-valley",
   "p": "DOCUMENTED_BY",
   "o": "person:quaritch-wales",
@@ -6313,7 +6267,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-289",
+  "id": "material:r2-287",
   "s": "deity:shiva",
   "p": "WORSHIPPED_AT",
   "o": "site:bujang-valley",
@@ -6333,7 +6287,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-290",
+  "id": "material:r2-288",
   "s": "site:oc-eo",
   "p": "DOCUMENTED_BY",
   "o": "person:louis-malleret",
@@ -6349,7 +6303,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-291",
+  "id": "material:r2-289",
   "s": "site:oc-eo",
   "p": "DOCUMENTED_BY",
   "o": "inst:efeo",
@@ -6365,7 +6319,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-292",
+  "id": "material:r2-290",
   "s": "site:oc-eo",
   "p": "ASSOCIATED_WITH",
   "o": "pol:funan",
@@ -6386,7 +6340,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-293",
+  "id": "material:r2-291",
   "s": "site:phnom-da",
   "p": "ASSOCIATED_WITH",
   "o": "pol:funan",
@@ -6408,7 +6362,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-294",
+  "id": "material:r2-292",
   "s": "site:ayodhya-2003-excavation",
   "p": "LOCATED_AT",
   "o": "place:ayodhya",
@@ -6425,7 +6379,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-295",
+  "id": "material:r2-293",
   "s": "site:ayodhya-2003-excavation",
   "p": "DOCUMENTED_BY",
   "o": "inst:asi",
@@ -6445,7 +6399,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-296",
+  "id": "material:r2-294",
   "s": "site:ayodhya-2003-excavation",
   "p": "DOCUMENTED_BY",
   "o": "person:br-mani",
@@ -6468,7 +6422,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-297",
+  "id": "material:r2-295",
   "s": "claim:ayodhya-temple-beneath-mosque",
   "p": "CONCERNS",
   "o": "site:ayodhya-2003-excavation",
@@ -6485,7 +6439,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-298",
+  "id": "material:r2-296",
   "s": "claim:ayodhya-temple-beneath-mosque",
   "p": "CONCERNS",
   "o": "place:ayodhya",
@@ -6502,7 +6456,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-299",
+  "id": "material:r2-297",
   "s": "claim:ayodhya-temple-beneath-mosque",
   "p": "CONCERNS",
   "o": "temple:ram-mandir-ayodhya",
@@ -6519,7 +6473,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-300",
+  "id": "material:r2-298",
   "s": "site:ayodhya-2003-excavation",
   "p": "SUPPORTS",
   "o": "claim:ayodhya-temple-beneath-mosque",
@@ -6541,7 +6495,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-301",
+  "id": "material:r2-299",
   "s": "site:ayodhya-2003-excavation",
   "p": "CONTRADICTS",
   "o": "claim:ayodhya-temple-beneath-mosque",
@@ -6560,7 +6514,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-302",
+  "id": "material:r2-300",
   "s": "person:akbar",
   "p": "MEMBER_OF",
   "o": "pol:mughal",
@@ -6577,7 +6531,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-303",
+  "id": "material:r2-301",
   "s": "person:hamida-banu-begum",
   "p": "PARENT_OF",
   "o": "person:akbar",
@@ -6594,7 +6548,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-304",
+  "id": "material:r2-302",
   "s": "person:jagat-singh-i-mewar",
   "p": "MEMBER_OF",
   "o": "pol:guhila-mewar",
@@ -6611,7 +6565,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-305",
+  "id": "material:r2-303",
   "s": "text:razmnama",
   "p": "TRANSLATION_OF",
   "o": "text:mahabharata",
@@ -6633,7 +6587,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-306",
+  "id": "material:r2-304",
   "s": "text:razmnama",
   "p": "COMMISSIONED_BY",
   "o": "person:akbar",
@@ -6650,7 +6604,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-307",
+  "id": "material:r2-305",
   "s": "text:harivamsha-persian",
   "p": "TRANSLATION_OF",
   "o": "text:harivamsha",
@@ -6668,7 +6622,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-308",
+  "id": "material:r2-306",
   "s": "text:harivamsha-persian",
   "p": "PART_OF",
   "o": "text:razmnama",
@@ -6689,7 +6643,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-309",
+  "id": "material:r2-307",
   "s": "text:ramayana-persian-akbar",
   "p": "TRANSLATION_OF",
   "o": "text:valmiki-ramayana",
@@ -6705,7 +6659,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-310",
+  "id": "material:r2-308",
   "s": "text:ramayana-persian-akbar",
   "p": "COMMISSIONED_BY",
   "o": "person:akbar",
@@ -6721,7 +6675,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-311",
+  "id": "material:r2-309",
   "s": "ms:razmnama-jaipur",
   "p": "WITNESS_OF",
   "o": "text:razmnama",
@@ -6738,7 +6692,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-312",
+  "id": "material:r2-310",
   "s": "ms:razmnama-jaipur",
   "p": "HELD_AT",
   "o": "inst:city-palace-jaipur-museum",
@@ -6755,7 +6709,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-313",
+  "id": "material:r2-311",
   "s": "ms:razmnama-jaipur",
   "p": "COMMISSIONED_BY",
   "o": "person:akbar",
@@ -6772,7 +6726,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-314",
+  "id": "material:r2-312",
   "s": "ms:razmnama-1598",
   "p": "WITNESS_OF",
   "o": "text:razmnama",
@@ -6789,7 +6743,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-315",
+  "id": "material:r2-313",
   "s": "ms:razmnama-1598",
   "p": "HELD_AT",
   "o": "inst:british-library",
@@ -6809,7 +6763,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-316",
+  "id": "material:r2-314",
   "s": "art:vam-razmnama-vyasa-shuka",
   "p": "HELD_AT",
   "o": "inst:vam",
@@ -6830,7 +6784,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-317",
+  "id": "material:r2-315",
   "s": "art:vam-razmnama-vyasa-shuka",
   "p": "PART_OF",
   "o": "ms:razmnama-1598",
@@ -6848,7 +6802,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-318",
+  "id": "material:r2-316",
   "s": "char:vyasa",
   "p": "DEPICTED_IN",
   "o": "art:vam-razmnama-vyasa-shuka",
@@ -6869,7 +6823,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-319",
+  "id": "material:r2-317",
   "s": "art:vam-razmnama-vyasa-shuka",
   "p": "COMMISSIONED_BY",
   "o": "person:banwari-khurd",
@@ -6890,7 +6844,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-320",
+  "id": "material:r2-318",
   "s": "art:vam-razmnama-duryodhana-shalya",
   "p": "HELD_AT",
   "o": "inst:vam",
@@ -6911,7 +6865,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-321",
+  "id": "material:r2-319",
   "s": "art:vam-razmnama-duryodhana-shalya",
   "p": "PART_OF",
   "o": "ms:razmnama-1598",
@@ -6929,7 +6883,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-322",
+  "id": "material:r2-320",
   "s": "char:duryodhana",
   "p": "DEPICTED_IN",
   "o": "art:vam-razmnama-duryodhana-shalya",
@@ -6947,7 +6901,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-323",
+  "id": "material:r2-321",
   "s": "char:shalya",
   "p": "DEPICTED_IN",
   "o": "art:vam-razmnama-duryodhana-shalya",
@@ -6965,7 +6919,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-324",
+  "id": "material:r2-322",
   "s": "char:karna",
   "p": "DEPICTED_IN",
   "o": "art:vam-razmnama-duryodhana-shalya",
@@ -6986,7 +6940,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-325",
+  "id": "material:r2-323",
   "s": "art:vam-razmnama-duryodhana-shalya",
   "p": "COMMISSIONED_BY",
   "o": "person:kamal-mughal-painter",
@@ -7007,7 +6961,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-326",
+  "id": "material:r2-324",
   "s": "ms:harivamsha-persian-c1590",
   "p": "WITNESS_OF",
   "o": "text:harivamsha-persian",
@@ -7025,7 +6979,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-327",
+  "id": "material:r2-325",
   "s": "art:vam-harivamsha-arjuna-trees",
   "p": "HELD_AT",
   "o": "inst:vam",
@@ -7046,7 +7000,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-328",
+  "id": "material:r2-326",
   "s": "art:vam-harivamsha-arjuna-trees",
   "p": "PART_OF",
   "o": "ms:harivamsha-persian-c1590",
@@ -7064,7 +7018,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-329",
+  "id": "material:r2-327",
   "s": "char:krishna",
   "p": "DEPICTED_IN",
   "o": "art:vam-harivamsha-arjuna-trees",
@@ -7085,7 +7039,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-330",
+  "id": "material:r2-328",
   "s": "narr:damodara-binding",
   "p": "DEPICTED_IN",
   "o": "art:vam-harivamsha-arjuna-trees",
@@ -7103,7 +7057,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-331",
+  "id": "material:r2-329",
   "s": "art:vam-harivamsha-andhaka",
   "p": "HELD_AT",
   "o": "inst:vam",
@@ -7124,7 +7078,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-332",
+  "id": "material:r2-330",
   "s": "art:vam-harivamsha-andhaka",
   "p": "PART_OF",
   "o": "ms:harivamsha-persian-c1590",
@@ -7142,7 +7096,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-333",
+  "id": "material:r2-331",
   "s": "deity:shiva",
   "p": "DEPICTED_IN",
   "o": "art:vam-harivamsha-andhaka",
@@ -7160,7 +7114,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-334",
+  "id": "material:r2-332",
   "s": "char:andhaka",
   "p": "DEPICTED_IN",
   "o": "art:vam-harivamsha-andhaka",
@@ -7178,7 +7132,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-335",
+  "id": "material:r2-333",
   "s": "narr:andhaka-slaying",
   "p": "DEPICTED_IN",
   "o": "art:vam-harivamsha-andhaka",
@@ -7196,7 +7150,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-336",
+  "id": "material:r2-334",
   "s": "ms:akbar-ramayana-jaipur",
   "p": "WITNESS_OF",
   "o": "text:ramayana-persian-akbar",
@@ -7212,7 +7166,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-337",
+  "id": "material:r2-335",
   "s": "ms:akbar-ramayana-jaipur",
   "p": "HELD_AT",
   "o": "inst:city-palace-jaipur-museum",
@@ -7228,7 +7182,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-338",
+  "id": "material:r2-336",
   "s": "ms:akbar-ramayana-jaipur",
   "p": "COMMISSIONED_BY",
   "o": "person:akbar",
@@ -7244,7 +7198,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-339",
+  "id": "material:r2-337",
   "s": "ms:hamida-banu-ramayana",
   "p": "WITNESS_OF",
   "o": "text:ramayana-persian-akbar",
@@ -7261,7 +7215,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-340",
+  "id": "material:r2-338",
   "s": "ms:hamida-banu-ramayana",
   "p": "HELD_AT",
   "o": "inst:museum-islamic-art-doha",
@@ -7281,7 +7235,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-341",
+  "id": "material:r2-339",
   "s": "ms:hamida-banu-ramayana",
   "p": "COMMISSIONED_BY",
   "o": "person:hamida-banu-begum",
@@ -7298,7 +7252,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-342",
+  "id": "material:r2-340",
   "s": "ms:freer-ramayana",
   "p": "WITNESS_OF",
   "o": "text:ramayana-persian-akbar",
@@ -7314,7 +7268,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-343",
+  "id": "material:r2-341",
   "s": "ms:freer-ramayana",
   "p": "HELD_AT",
   "o": "inst:freer-gallery",
@@ -7330,7 +7284,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-344",
+  "id": "material:r2-342",
   "s": "ms:mewar-ramayana",
   "p": "WITNESS_OF",
   "o": "text:valmiki-ramayana",
@@ -7351,7 +7305,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-345",
+  "id": "material:r2-343",
   "s": "ms:mewar-ramayana",
   "p": "COMMISSIONED_BY",
   "o": "person:jagat-singh-i-mewar",
@@ -7372,7 +7326,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-346",
+  "id": "material:r2-344",
   "s": "ms:mewar-ramayana",
   "p": "COMMISSIONED_BY",
   "o": "person:sahib-din",
@@ -7396,7 +7350,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-347",
+  "id": "material:r2-345",
   "s": "ms:mewar-ramayana",
   "p": "HELD_AT",
   "o": "inst:british-library",
@@ -7417,7 +7371,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-348",
+  "id": "material:r2-346",
   "s": "art:met-mewar-ramayana-search",
   "p": "HELD_AT",
   "o": "inst:met-museum",
@@ -7438,7 +7392,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-349",
+  "id": "material:r2-347",
   "s": "char:rama",
   "p": "DEPICTED_IN",
   "o": "art:met-mewar-ramayana-search",
@@ -7456,7 +7410,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-350",
+  "id": "material:r2-348",
   "s": "char:lakshmana",
   "p": "DEPICTED_IN",
   "o": "art:met-mewar-ramayana-search",
@@ -7474,7 +7428,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-351",
+  "id": "material:r2-349",
   "s": "narr:abduction-of-sita",
   "p": "DEPICTED_IN",
   "o": "art:met-mewar-ramayana-search",
@@ -7495,7 +7449,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-352",
+  "id": "material:r2-350",
   "s": "ms:basohli-gita-govinda-1730",
   "p": "WITNESS_OF",
   "o": "text:gita-govinda",
@@ -7513,7 +7467,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-353",
+  "id": "material:r2-351",
   "s": "ms:basohli-gita-govinda-1730",
   "p": "COMMISSIONED_BY",
   "o": "person:manaku",
@@ -7534,7 +7488,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-354",
+  "id": "material:r2-352",
   "s": "art:vam-basohli-gita-govinda",
   "p": "HELD_AT",
   "o": "inst:vam",
@@ -7555,7 +7509,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-355",
+  "id": "material:r2-353",
   "s": "art:vam-basohli-gita-govinda",
   "p": "PART_OF",
   "o": "ms:basohli-gita-govinda-1730",
@@ -7573,7 +7527,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-356",
+  "id": "material:r2-354",
   "s": "char:radha",
   "p": "DEPICTED_IN",
   "o": "art:vam-basohli-gita-govinda",
@@ -7591,7 +7545,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-357",
+  "id": "material:r2-355",
   "s": "char:krishna",
   "p": "DEPICTED_IN",
   "o": "art:vam-basohli-gita-govinda",
@@ -7609,7 +7563,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-358",
+  "id": "material:r2-356",
   "s": "art:vam-basohli-gita-govinda",
   "p": "COMMISSIONED_BY",
   "o": "person:manaku",
@@ -7630,7 +7584,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-359",
+  "id": "material:r2-357",
   "s": "art:met-tehri-garhwal-gita-govinda",
   "p": "HELD_AT",
   "o": "inst:met-museum",
@@ -7651,7 +7605,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-360",
+  "id": "material:r2-358",
   "s": "char:krishna",
   "p": "DEPICTED_IN",
   "o": "art:met-tehri-garhwal-gita-govinda",
@@ -7669,7 +7623,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-361",
+  "id": "material:r2-359",
   "s": "deity:yamuna",
   "p": "DEPICTED_IN",
   "o": "art:met-tehri-garhwal-gita-govinda",
@@ -7690,7 +7644,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-362",
+  "id": "material:r2-360",
   "s": "art:met-tehri-garhwal-gita-govinda",
   "p": "REFERS_TO_TEXT",
   "o": "text:gita-govinda",
@@ -7708,7 +7662,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-363",
+  "id": "material:r2-361",
   "s": "art:cma-mewar-gita-govinda",
   "p": "HELD_AT",
   "o": "inst:cleveland-museum",
@@ -7729,7 +7683,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-364",
+  "id": "material:r2-362",
   "s": "char:radha",
   "p": "DEPICTED_IN",
   "o": "art:cma-mewar-gita-govinda",
@@ -7747,7 +7701,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-365",
+  "id": "material:r2-363",
   "s": "char:krishna",
   "p": "DEPICTED_IN",
   "o": "art:cma-mewar-gita-govinda",
@@ -7765,7 +7719,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-366",
+  "id": "material:r2-364",
   "s": "art:cma-mewar-gita-govinda",
   "p": "REFERS_TO_TEXT",
   "o": "text:gita-govinda",
@@ -7783,7 +7737,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-367",
+  "id": "material:r2-365",
   "s": "ms:shangri-ramayana",
   "p": "WITNESS_OF",
   "o": "text:valmiki-ramayana",
@@ -7802,7 +7756,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-368",
+  "id": "material:r2-366",
   "s": "art:cma-shangri-dasharatha-kaikeyi",
   "p": "HELD_AT",
   "o": "inst:cleveland-museum",
@@ -7823,7 +7777,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-369",
+  "id": "material:r2-367",
   "s": "art:cma-shangri-dasharatha-kaikeyi",
   "p": "PART_OF",
   "o": "ms:shangri-ramayana",
@@ -7841,7 +7795,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-370",
+  "id": "material:r2-368",
   "s": "char:dasharatha",
   "p": "DEPICTED_IN",
   "o": "art:cma-shangri-dasharatha-kaikeyi",
@@ -7859,7 +7813,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-371",
+  "id": "material:r2-369",
   "s": "char:kaikeyi",
   "p": "DEPICTED_IN",
   "o": "art:cma-shangri-dasharatha-kaikeyi",
@@ -7877,7 +7831,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-372",
+  "id": "material:r2-370",
   "s": "art:cma-shangri-rishyashringa",
   "p": "HELD_AT",
   "o": "inst:cleveland-museum",
@@ -7898,7 +7852,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-373",
+  "id": "material:r2-371",
   "s": "art:cma-shangri-rishyashringa",
   "p": "PART_OF",
   "o": "ms:shangri-ramayana",
@@ -7916,7 +7870,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-374",
+  "id": "material:r2-372",
   "s": "char:rishyashringa",
   "p": "DEPICTED_IN",
   "o": "art:cma-shangri-rishyashringa",
@@ -7934,7 +7888,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-375",
+  "id": "material:r2-373",
   "s": "art:cma-shangri-shurpanakha",
   "p": "HELD_AT",
   "o": "inst:cleveland-museum",
@@ -7955,7 +7909,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-376",
+  "id": "material:r2-374",
   "s": "art:cma-shangri-shurpanakha",
   "p": "PART_OF",
   "o": "ms:shangri-ramayana",
@@ -7973,7 +7927,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-377",
+  "id": "material:r2-375",
   "s": "char:shurpanakha",
   "p": "DEPICTED_IN",
   "o": "art:cma-shangri-shurpanakha",
@@ -7991,7 +7945,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-378",
+  "id": "material:r2-376",
   "s": "char:ravana",
   "p": "DEPICTED_IN",
   "o": "art:cma-shangri-shurpanakha",
@@ -8009,7 +7963,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-379",
+  "id": "material:r2-377",
   "s": "narr:shurpanakha-mutilation",
   "p": "DEPICTED_IN",
   "o": "art:cma-shangri-shurpanakha",
@@ -8030,7 +7984,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-380",
+  "id": "material:r2-378",
   "s": "art:cma-shangri-golden-deer",
   "p": "HELD_AT",
   "o": "inst:cleveland-museum",
@@ -8051,7 +8005,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-381",
+  "id": "material:r2-379",
   "s": "art:cma-shangri-golden-deer",
   "p": "PART_OF",
   "o": "ms:shangri-ramayana",
@@ -8069,7 +8023,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-382",
+  "id": "material:r2-380",
   "s": "char:sita",
   "p": "DEPICTED_IN",
   "o": "art:cma-shangri-golden-deer",
@@ -8087,7 +8041,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-383",
+  "id": "material:r2-381",
   "s": "char:rama",
   "p": "DEPICTED_IN",
   "o": "art:cma-shangri-golden-deer",
@@ -8105,7 +8059,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-384",
+  "id": "material:r2-382",
   "s": "narr:golden-deer",
   "p": "DEPICTED_IN",
   "o": "art:cma-shangri-golden-deer",
@@ -8123,7 +8077,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-385",
+  "id": "material:r2-383",
   "s": "char:maricha",
   "p": "DEPICTED_IN",
   "o": "art:cma-shangri-golden-deer",
@@ -8144,7 +8098,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-386",
+  "id": "material:r2-384",
   "s": "art:met-shangri-pavarasana",
   "p": "HELD_AT",
   "o": "inst:met-museum",
@@ -8165,7 +8119,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-387",
+  "id": "material:r2-385",
   "s": "art:met-shangri-pavarasana",
   "p": "PART_OF",
   "o": "ms:shangri-ramayana",
@@ -8183,7 +8137,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-388",
+  "id": "material:r2-386",
   "s": "char:rama",
   "p": "DEPICTED_IN",
   "o": "art:met-shangri-pavarasana",
@@ -8201,7 +8155,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-389",
+  "id": "material:r2-387",
   "s": "char:lakshmana",
   "p": "DEPICTED_IN",
   "o": "art:met-shangri-pavarasana",
@@ -8219,7 +8173,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-390",
+  "id": "material:r2-388",
   "s": "art:cma-burnt-ramayana-jatayu",
   "p": "HELD_AT",
   "o": "inst:cleveland-museum",
@@ -8240,7 +8194,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-391",
+  "id": "material:r2-389",
   "s": "char:jatayu",
   "p": "DEPICTED_IN",
   "o": "art:cma-burnt-ramayana-jatayu",
@@ -8258,7 +8212,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-392",
+  "id": "material:r2-390",
   "s": "char:ravana",
   "p": "DEPICTED_IN",
   "o": "art:cma-burnt-ramayana-jatayu",
@@ -8276,7 +8230,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-393",
+  "id": "material:r2-391",
   "s": "narr:jatayu-fight",
   "p": "DEPICTED_IN",
   "o": "art:cma-burnt-ramayana-jatayu",
@@ -8294,7 +8248,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-394",
+  "id": "material:r2-392",
   "s": "art:cma-burnt-ramayana-jatayu",
   "p": "REFERS_TO_TEXT",
   "o": "text:valmiki-ramayana",
@@ -8315,7 +8269,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-395",
+  "id": "material:r2-393",
   "s": "art:met-kangra-bharadvaja",
   "p": "HELD_AT",
   "o": "inst:met-museum",
@@ -8336,7 +8290,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-396",
+  "id": "material:r2-394",
   "s": "char:rama",
   "p": "DEPICTED_IN",
   "o": "art:met-kangra-bharadvaja",
@@ -8354,7 +8308,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-397",
+  "id": "material:r2-395",
   "s": "char:sita",
   "p": "DEPICTED_IN",
   "o": "art:met-kangra-bharadvaja",
@@ -8372,7 +8326,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-398",
+  "id": "material:r2-396",
   "s": "char:lakshmana",
   "p": "DEPICTED_IN",
   "o": "art:met-kangra-bharadvaja",
@@ -8390,7 +8344,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-399",
+  "id": "material:r2-397",
   "s": "char:bharadvaja",
   "p": "DEPICTED_IN",
   "o": "art:met-kangra-bharadvaja",
@@ -8408,7 +8362,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-400",
+  "id": "material:r2-398",
   "s": "ms:large-basohli-bhagavata",
   "p": "WITNESS_OF",
   "o": "text:bhagavata-purana",
@@ -8426,7 +8380,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-401",
+  "id": "material:r2-399",
   "s": "art:cma-basohli-pradyumna-shambara",
   "p": "HELD_AT",
   "o": "inst:cleveland-museum",
@@ -8447,7 +8401,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-402",
+  "id": "material:r2-400",
   "s": "art:cma-basohli-pradyumna-shambara",
   "p": "PART_OF",
   "o": "ms:large-basohli-bhagavata",
@@ -8465,7 +8419,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-403",
+  "id": "material:r2-401",
   "s": "char:pradyumna",
   "p": "DEPICTED_IN",
   "o": "art:cma-basohli-pradyumna-shambara",
@@ -8483,7 +8437,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-404",
+  "id": "material:r2-402",
   "s": "ms:early-rajput-bhagavata",
   "p": "WITNESS_OF",
   "o": "text:bhagavata-purana",
@@ -8501,7 +8455,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-405",
+  "id": "material:r2-403",
   "s": "art:cma-early-bhagavata-nanda",
   "p": "HELD_AT",
   "o": "inst:cleveland-museum",
@@ -8522,7 +8476,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-406",
+  "id": "material:r2-404",
   "s": "art:cma-early-bhagavata-nanda",
   "p": "PART_OF",
   "o": "ms:early-rajput-bhagavata",
@@ -8540,7 +8494,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-407",
+  "id": "material:r2-405",
   "s": "char:nanda",
   "p": "DEPICTED_IN",
   "o": "art:cma-early-bhagavata-nanda",
@@ -8558,7 +8512,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-408",
+  "id": "material:r2-406",
   "s": "art:aic-early-bhagavata-vasudeva",
   "p": "HELD_AT",
   "o": "inst:art-institute-chicago",
@@ -8579,7 +8533,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-409",
+  "id": "material:r2-407",
   "s": "art:aic-early-bhagavata-vasudeva",
   "p": "PART_OF",
   "o": "ms:early-rajput-bhagavata",
@@ -8597,7 +8551,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-410",
+  "id": "material:r2-408",
   "s": "char:krishna",
   "p": "DEPICTED_IN",
   "o": "art:aic-early-bhagavata-vasudeva",
@@ -8618,7 +8572,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-411",
+  "id": "material:r2-409",
   "s": "char:vasudeva-father",
   "p": "DEPICTED_IN",
   "o": "art:aic-early-bhagavata-vasudeva",
@@ -8636,7 +8590,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-412",
+  "id": "material:r2-410",
   "s": "art:mattancherry-murals",
   "p": "REFERS_TO_TEXT",
   "o": "text:valmiki-ramayana",
@@ -8654,7 +8608,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-413",
+  "id": "material:r2-411",
   "s": "art:mattancherry-murals",
   "p": "DOCUMENTED_BY",
   "o": "inst:asi",
@@ -8674,7 +8628,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "material:r2-414",
+  "id": "material:r2-412",
   "s": "char:rama",
   "p": "DEPICTED_IN",
   "o": "art:mattancherry-murals",
@@ -8687,6 +8641,1112 @@
   ],
   "confidence": "medium",
   "status": "reference-checked",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-413",
+  "s": "ins:junagadh-rudradaman",
+  "p": "DOCUMENTED_BY",
+  "o": "person:franz-kielhorn",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, no. 67 (bibliography: Kielhorn, EI VIII, pp. 42ff.)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-414",
+  "s": "ins:junagadh-rudradaman",
+  "p": "DOCUMENTED_BY",
+  "o": "person:dc-sircar",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, no. 67",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-415",
+  "s": "ins:junagadh-rudradaman",
+  "p": "DOCUMENTED_BY",
+  "o": "person:georg-buhler",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, no. 67 (bibliography: Bhagwanlal Indraji and Bühler, Ind. Ant. VII)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-416",
+  "s": "ins:allahabad-pillar-samudragupta",
+  "p": "DOCUMENTED_BY",
+  "o": "person:jf-fleet",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "bibliography: re-edited in Fleet 1888",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00001"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 1"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-417",
+  "s": "ins:bhitari-skandagupta",
+  "p": "DOCUMENTED_BY",
+  "o": "person:jf-fleet",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "bibliography",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00036"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 13"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-418",
+  "s": "ins:junagadh-skandagupta",
+  "p": "DOCUMENTED_BY",
+  "o": "person:jf-fleet",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "bibliography: critically edited in Fleet 1888",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00032"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 14"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-419",
+  "s": "ins:bilsad-kumaragupta",
+  "p": "DOCUMENTED_BY",
+  "o": "person:jf-fleet",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "bibliography",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00019"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 10"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-420",
+  "s": "ins:bilsad-kumaragupta",
+  "p": "DOCUMENTED_BY",
+  "o": "person:alexander-cunningham",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "bibliography: first noticed in Cunningham 1880, pp. 17–21",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00019"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-421",
+  "s": "ins:mathura-pilaster-candragupta-ii",
+  "p": "DOCUMENTED_BY",
+  "o": "person:dr-bhandarkar",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "bibliography: first edited in Bhandarkar 1931–1932",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00008"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-422",
+  "s": "ins:talagunda-pillar",
+  "p": "DOCUMENTED_BY",
+  "o": "person:franz-kielhorn",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "bibliography: Kielhorn 1905–1906",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham01050"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-423",
+  "s": "ins:kuram-plates",
+  "p": "DOCUMENTED_BY",
+  "o": "person:eugen-hultzsch",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "bibliography: Hultzsch 1890 (SII 1.151)",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSPallava00046"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-424",
+  "s": "ins:kasakudi-plates",
+  "p": "DOCUMENTED_BY",
+  "o": "person:eugen-hultzsch",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSIIv02p0i0073"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-425",
+  "s": "ins:velurpalaiyam-plates",
+  "p": "DOCUMENTED_BY",
+  "o": "person:h-krishna-sastri",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSIIv02p0i0098"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-426",
+  "s": "ins:tiruvalangadu-plates",
+  "p": "DOCUMENTED_BY",
+  "o": "person:h-krishna-sastri",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSTamilNadu01005"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-427",
+  "s": "ins:anbil-plates",
+  "p": "DOCUMENTED_BY",
+  "o": "person:ta-gopinatha-rao",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSTamilNadu01003"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-428",
+  "s": "ins:khajuraho-lakshmana",
+  "p": "DOCUMENTED_BY",
+  "o": "person:franz-kielhorn",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:kielhorn-ei1-khajuraho"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-429",
+  "s": "ins:kutai-yupa",
+  "p": "DOCUMENTED_BY",
+  "o": "person:jph-vogel",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:vogel-1918"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-430",
+  "s": "ins:ciaruteun",
+  "p": "DOCUMENTED_BY",
+  "o": "person:jph-vogel",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:vogel-1925"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ciaruteun_inscription"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-431",
+  "s": "ins:tugu",
+  "p": "DOCUMENTED_BY",
+  "o": "person:jph-vogel",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "bibliography: Vogel 1925",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSIDENKTugu"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-432",
+  "s": "ins:dinoyo-kanjuruhan",
+  "p": "DOCUMENTED_BY",
+  "o": "person:jg-de-casparis",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "bibliography: de Casparis 1941",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSIDENKKanjuruhan"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-433",
+  "s": "ins:sdok-kak-thom",
+  "p": "DOCUMENTED_BY",
+  "o": "person:george-coedes",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "bibliography: first edited by Cœdès and Dupont 1943",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSCIK00235"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-434",
+  "s": "ins:vat-luang-kau-devanika",
+  "p": "DOCUMENTED_BY",
+  "o": "person:george-coedes",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "bibliography: first edited by Cœdès 1956",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSCIK00365"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-435",
+  "s": "ins:my-son-bhadravarman",
+  "p": "DOCUMENTED_BY",
+  "o": "person:louis-finot",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "bibliography: first published in Finot 1902",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSCIC00072"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-436",
+  "s": "ins:udayagiri-cave6",
+  "p": "DOCUMENTED_BY",
+  "o": "inst:dharma-project",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "digital critical edition",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00009"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-437",
+  "s": "ins:udayagiri-cave8",
+  "p": "DOCUMENTED_BY",
+  "o": "inst:dharma-project",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "digital critical edition",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00014"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-438",
+  "s": "ins:delhi-iron-pillar",
+  "p": "DOCUMENTED_BY",
+  "o": "inst:dharma-project",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "digital critical edition",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00015"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-439",
+  "s": "ins:eran-toramana",
+  "p": "DOCUMENTED_BY",
+  "o": "inst:dharma-project",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "digital critical edition",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00099"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-440",
+  "s": "ins:eran-budhagupta",
+  "p": "DOCUMENTED_BY",
+  "o": "inst:dharma-project",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "digital critical edition",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00045"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-441",
+  "s": "ins:gangdhar",
+  "p": "DOCUMENTED_BY",
+  "o": "inst:dharma-project",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "digital critical edition",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00076"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-442",
+  "s": "ins:mandasor-silk-weavers",
+  "p": "DOCUMENTED_BY",
+  "o": "inst:dharma-project",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "digital critical edition",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-443",
+  "s": "ins:aihole-ravikirti",
+  "p": "DOCUMENTED_BY",
+  "o": "inst:dharma-project",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "digital critical edition",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSBadamiCalukya00005"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-444",
+  "s": "ins:changu-narayan-manadeva",
+  "p": "DOCUMENTED_BY",
+  "o": "inst:dharma-project",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "digital critical edition",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham02001"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-445",
+  "s": "ins:allahabad-pillar-samudragupta",
+  "p": "DOCUMENTED_BY",
+  "o": "inst:dharma-project",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "digital critical edition",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00001"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-446",
+  "s": "ins:bhitari-skandagupta",
+  "p": "DOCUMENTED_BY",
+  "o": "inst:dharma-project",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "digital critical edition",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00036"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-447",
+  "s": "ins:junagadh-skandagupta",
+  "p": "DOCUMENTED_BY",
+  "o": "inst:dharma-project",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "digital critical edition",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00032"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-448",
+  "s": "ins:mathura-pilaster-candragupta-ii",
+  "p": "DOCUMENTED_BY",
+  "o": "inst:dharma-project",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "digital critical edition",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00008"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-449",
+  "s": "ins:bilsad-kumaragupta",
+  "p": "DOCUMENTED_BY",
+  "o": "inst:dharma-project",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "digital critical edition",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00019"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-450",
+  "s": "ins:talagunda-pillar",
+  "p": "DOCUMENTED_BY",
+  "o": "inst:dharma-project",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "digital critical edition",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham01050"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-451",
+  "s": "ins:canggal",
+  "p": "DOCUMENTED_BY",
+  "o": "inst:dharma-project",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "digital critical edition",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSIDENKCanggal"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-452",
+  "s": "ins:dinoyo-kanjuruhan",
+  "p": "DOCUMENTED_BY",
+  "o": "inst:dharma-project",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "digital critical edition",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSIDENKKanjuruhan"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-453",
+  "s": "ins:sdok-kak-thom",
+  "p": "DOCUMENTED_BY",
+  "o": "inst:dharma-project",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "digital critical edition",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSCIK00235"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-454",
+  "s": "ins:vat-luang-kau-devanika",
+  "p": "DOCUMENTED_BY",
+  "o": "inst:dharma-project",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "digital critical edition",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSCIK00365"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-455",
+  "s": "ins:my-son-bhadravarman",
+  "p": "DOCUMENTED_BY",
+  "o": "inst:dharma-project",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "digital critical edition",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSCIC00072"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-456",
+  "s": "ins:tugu",
+  "p": "DOCUMENTED_BY",
+  "o": "inst:dharma-project",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "digital critical edition",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSIDENKTugu"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-457",
+  "s": "ins:udayagiri-cave8",
+  "p": "DOCUMENTED_BY",
+  "o": "person:alexander-cunningham",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "bibliography: first noticed in Cunningham 1880, pp. 51–52",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00014"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-458",
+  "s": "ins:eran-budhagupta",
+  "p": "DOCUMENTED_BY",
+  "o": "person:jf-fleet",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "bibliography",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00045"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 19"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-459",
+  "s": "ins:mandasor-silk-weavers",
+  "p": "DOCUMENTED_BY",
+  "o": "person:jf-fleet",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "bibliography",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00040"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 18"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-460",
+  "s": "ins:delhi-iron-pillar",
+  "p": "DOCUMENTED_BY",
+  "o": "person:jf-fleet",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "bibliography",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00015"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 32"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-461",
+  "s": "ins:mandsaur-naravarman",
+  "p": "FOUND_AT",
+  "o": "site:mandasor",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "fragment A, vv. 1–8",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00017"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III (text of fragment A)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-462",
+  "s": "ins:mandsaur-naravarman",
+  "p": "REFERS_TO",
+  "o": "person:naravarman-aulikara",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "fragment A, vv. 1–8",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00017"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III (text of fragment A)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-463",
+  "s": "ins:mandsaur-naravarman",
+  "p": "REFERS_TO",
+  "o": "deity:vishnu",
+  "qualifiers": {
+   "role": "invocation",
+   "note": "\"sahasra-śirase tasmai puruṣāyāmitātmane catuḥ-samudra-paryaṅka-toya-nidrālave namaḥ\" (v. 1)"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "fragment A, vv. 1–8",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00017"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III (text of fragment A)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-464",
+  "s": "ins:mandsaur-naravarman",
+  "p": "REFERS_TO",
+  "o": "deity:shesha",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "fragment A, vv. 1–8",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00017"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III (text of fragment A)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "low",
+  "status": "verified-online",
+  "rationale": "The \"ocean-couch\" sleeper evokes the Anantaśayana form; Śeṣa is not named.",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-465",
+  "s": "person:naravarman-aulikara",
+  "p": "PARENT_OF",
+  "o": "person:vishvavarman",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "Gangdhar inscription, line 3 (naravarma-nṛpa) and vv. 5–6",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00076"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-466",
+  "s": "person:naravarman-aulikara",
+  "p": "MEMBER_OF",
+  "o": "pol:aulikara",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00017"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Aulikara_dynasty"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "rationale": "The dynastic name Aulikara comes from other records of the family; it is not in this inscription.",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-467",
+  "s": "ins:gangdhar",
+  "p": "REFERS_TO",
+  "o": "person:naravarman-aulikara",
+  "qualifiers": {
+   "note": "father of Viśvavarman"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "line 3",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00076"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-468",
+  "s": "ms:devi-mahatmya-schoyen-2174",
+  "p": "WITNESS_OF",
+  "o": "text:devi-mahatmya",
+  "evidenceClass": 2,
+  "sources": [
+   {
+    "source": "src:schoyen-collection",
+    "locator": "MS 2174",
+    "url": "https://www.schoyencollection.com/23-religions/living-religions/23-16-hinduism/puranas/ms-2174"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-469",
+  "s": "ms:devi-mahatmya-schoyen-2174",
+  "p": "HELD_AT",
+  "o": "inst:schoyen-collection",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:schoyen-collection",
+    "locator": "MS 2174",
+    "url": "https://www.schoyencollection.com/23-religions/living-religions/23-16-hinduism/puranas/ms-2174"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-470",
+  "s": "deity:devi",
+  "p": "DEPICTED_IN",
+  "o": "ms:devi-mahatmya-schoyen-2174",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:schoyen-collection",
+    "locator": "MS 2174 (one miniature; ten on the covers)",
+    "url": "https://www.schoyencollection.com/23-religions/living-religions/23-16-hinduism/puranas/ms-2174"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "rationale": "The catalogue mentions miniatures on the leaf and covers; their subjects were not itemised.",
   "agent": "material",
   "lastVerified": "2026-11-08"
  }

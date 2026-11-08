@@ -126,12 +126,39 @@
   "agent": "temple"
  },
  {
+  "id": "src:freeman-1996",
+  "type": "scholarly-book",
+  "title": "A Guide to Khmer Temples in Thailand and Laos",
+  "author": "Michael Freeman",
+  "year": "1996",
+  "publisher": "River Books, Bangkok",
+  "agent": "temple"
+ },
+ {
+  "id": "src:siribhadra-moore-1992",
+  "type": "scholarly-book",
+  "title": "Palaces of the Gods: Khmer Art and Architecture in Thailand",
+  "author": "Smitthi Siribhadra and Elizabeth Moore",
+  "year": "1992",
+  "publisher": "River Books, Bangkok",
+  "agent": "temple"
+ },
+ {
   "id": "src:strachan-1989",
   "type": "scholarly-book",
   "title": "Pagan: Art and Architecture of Old Burma",
   "author": "Paul Strachan",
   "year": "1989",
   "publisher": "Kiscadale, Whiting Bay",
+  "agent": "temple"
+ },
+ {
+  "id": "src:hardy-cucarzi-zolese-2009",
+  "type": "scholarly-book",
+  "title": "Champa and the Archaeology of Mỹ Sơn (Vietnam)",
+  "author": "Andrew Hardy, Mauro Cucarzi and Patrizia Zolese (eds)",
+  "year": "2009",
+  "publisher": "NUS Press, Singapore",
   "agent": "temple"
  },
  {
@@ -234,12 +261,39 @@
   "agent": "temple"
  },
  {
+  "id": "src:obeyesekere-1978",
+  "type": "journal-article",
+  "title": "The Fire-Walkers of Kataragama: The Rise of Bhakti Religiosity in Buddhist Sri Lanka",
+  "author": "Gananath Obeyesekere",
+  "year": "1978",
+  "publisher": "Journal of Asian Studies 37 (3): 457–476",
+  "agent": "temple"
+ },
+ {
   "id": "src:pathmanathan-1978",
   "type": "scholarly-book",
   "title": "The Kingdom of Jaffna, Part 1 (circa A.D. 1250–1450)",
   "author": "S. Pathmanathan",
   "year": "1978",
   "publisher": "Colombo",
+  "agent": "temple"
+ },
+ {
+  "id": "src:sachau-1910",
+  "type": "translation",
+  "title": "Alberuni's India (2 vols.)",
+  "author": "Edward C. Sachau (trans.)",
+  "year": "1910",
+  "publisher": "Kegan Paul, Trench, Trübner, London",
+  "agent": "temple"
+ },
+ {
+  "id": "src:gutschow-2011",
+  "type": "scholarly-book",
+  "title": "Architecture of the Newars: A History of Building Typologies and Details in Nepal (3 vols.)",
+  "author": "Niels Gutschow",
+  "year": "2011",
+  "publisher": "Serindia, Chicago",
   "agent": "temple"
  },
  {
@@ -267,6 +321,15 @@
   "author": "Cynthia Ann Humes",
   "year": "1996",
   "publisher": "University of California Press, Berkeley",
+  "agent": "temple"
+ },
+ {
+  "id": "src:lansing-1991",
+  "type": "scholarly-book",
+  "title": "Priests and Programmers: Technologies of Power in the Engineered Landscape of Bali",
+  "author": "J. Stephen Lansing",
+  "year": "1991",
+  "publisher": "Princeton University Press",
   "agent": "temple"
  }
 ]

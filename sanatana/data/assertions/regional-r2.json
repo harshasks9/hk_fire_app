@@ -8572,17 +8572,22 @@
   "p": "DERIVED_FROM",
   "o": "text:hikayat-seri-rama",
   "qualifiers": {
-   "note": "Francisco and others derive it through Malay tradition"
+   "note": "Francisco derives it through Javanese and Malay contact; the Malay Hikayat is the nearest documented relative"
   },
   "evidenceClass": 5,
   "sources": [
    {
     "source": "src:francisco-1969"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Maharadia_Lawana"
    }
   ],
   "confidence": "low",
-  "status": "recall",
-  "agent": "regional"
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
  },
  {
   "id": "regional:r2-463",
@@ -8605,12 +8610,160 @@
   "p": "APPEARS_IN",
   "o": "text:maharadia-lawana",
   "qualifiers": {
-   "role": "protagonist (as Maharadia Lawana)"
+   "role": "title hero (as Maharadia Lawana)"
   },
   "evidenceClass": 5,
   "sources": [
    {
     "source": "src:francisco-1969"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Maharadia_Lawana"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-465",
+  "s": "trad:grand-bassin-pilgrimage",
+  "p": "PART_OF",
+  "o": "trad:mauritian-hinduism",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ganga_Talao"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-466",
+  "s": "trad:grand-bassin-pilgrimage",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:maha-shivaratri",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ganga_Talao"
+   },
+   {
+    "source": "src:eisenlohr-2006"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-467",
+  "s": "deity:shiva",
+  "p": "CENTRAL_TO",
+  "o": "trad:grand-bassin-pilgrimage",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ganga_Talao"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-468",
+  "s": "trad:grand-bassin-pilgrimage",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:ganga-river",
+  "qualifiers": {
+   "note": "the lake is treated as joined to the Gaṅgā (Ganga Talao)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:eisenlohr-2006"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-469",
+  "s": "trad:grand-bassin-pilgrimage",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:kanwar-yatra",
+  "qualifiers": {
+   "note": "pilgrims carry kāṁvaṛ-like decorated frames"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:eisenlohr-2006"
+   }
+  ],
+  "confidence": "low",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-470",
+  "s": "trad:thaipusam",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:mauritian-hinduism",
+  "qualifiers": {
+   "note": "Tamil Mauritians keep Thaipusam with kāvaṭi"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:younger-2010"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-471",
+  "s": "trad:geet-gawai",
+  "p": "PART_OF",
+  "o": "trad:mauritian-hinduism",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/bhojpuri-folk-songs-in-mauritius-geet-gawai-01178"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-472",
+  "s": "text:ramcharitmanas",
+  "p": "CENTRAL_TO",
+  "o": "trad:indo-caribbean-hinduism",
+  "qualifiers": {
+   "note": "the Mānas (“Ramayan”) is the principal scripture of Sanātanī Hindus in Trinidad"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:vertovec-1992"
    }
   ],
   "confidence": "high",
@@ -8618,39 +8771,374 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-465",
-  "s": "char:rama",
-  "p": "APPEARS_IN",
-  "o": "text:maharadia-lawana",
-  "qualifiers": {
-   "role": "as Radia Mangandiri"
-  },
+  "id": "regional:r2-473",
+  "s": "inst:sanatan-dharma-maha-sabha",
+  "p": "CENTRAL_TO",
+  "o": "trad:indo-caribbean-hinduism",
   "evidenceClass": 5,
   "sources": [
    {
-    "source": "src:francisco-1969"
+    "source": "src:vertovec-1992"
    }
   ],
-  "confidence": "medium",
-  "status": "recall",
+  "confidence": "high",
+  "status": "source-checked",
   "agent": "regional"
  },
  {
-  "id": "regional:r2-466",
-  "s": "char:lakshmana",
-  "p": "APPEARS_IN",
-  "o": "text:maharadia-lawana",
-  "qualifiers": {
-   "role": "as Laksamana, born a monkey"
-  },
+  "id": "regional:r2-474",
+  "s": "trad:trinidad-ramleela",
+  "p": "DERIVED_FROM",
+  "o": "trad:ramlila",
   "evidenceClass": 5,
   "sources": [
    {
-    "source": "src:francisco-1969"
+    "source": "src:vertovec-1992"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-475",
+  "s": "trad:trinidad-ramleela",
+  "p": "PART_OF",
+  "o": "trad:indo-caribbean-hinduism",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:vertovec-1992"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-476",
+  "s": "trad:trinidad-ramleela",
+  "p": "ASSOCIATED_WITH",
+  "o": "text:ramcharitmanas",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:vertovec-1992"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-477",
+  "s": "trad:phagwah",
+  "p": "DERIVED_FROM",
+  "o": "trad:holi",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:younger-2010"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-478",
+  "s": "trad:phagwah",
+  "p": "PART_OF",
+  "o": "trad:indo-caribbean-hinduism",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:younger-2010"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-479",
+  "s": "text:ramcharitmanas",
+  "p": "CENTRAL_TO",
+  "o": "trad:indo-fijian-hinduism",
+  "qualifiers": {
+   "note": "recited in Rāmāyaṇ maṇḍalīs"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kelly-1991"
+   },
+   {
+    "source": "src:younger-2010"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-480",
+  "s": "trad:thaipusam",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:malaysian-hinduism",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:collins-1997"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-481",
+  "s": "temple:batu-caves",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:malaysian-hinduism",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Batu_Caves"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-482",
+  "s": "trad:baps",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:british-hindu-temple-movement",
+  "qualifiers": {
+   "note": "the Neasden mandir (1995) as its emblem"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:williams-2001"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-483",
+  "s": "deity:venkateshvara",
+  "p": "CENTRAL_TO",
+  "o": "trad:american-hindu-temple-movement",
+  "qualifiers": {
+   "note": "the Pittsburgh Venkateśvara temple modelled on Tirumala"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:waghorne-2004"
    }
   ],
   "confidence": "medium",
-  "status": "recall",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-484",
+  "s": "deity:ganesha",
+  "p": "CENTRAL_TO",
+  "o": "trad:american-hindu-temple-movement",
+  "qualifiers": {
+   "note": "the Flushing Gaṇeśa temple"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hindu_Temple_Society_of_North_America"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-485",
+  "s": "trad:iskcon",
+  "p": "DERIVED_FROM",
+  "o": "trad:gaudiya",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:rochford-1985"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-486",
+  "s": "char:krishna",
+  "p": "CENTRAL_TO",
+  "o": "trad:iskcon",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:rochford-1985"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-487",
+  "s": "person:chaitanya",
+  "p": "CENTRAL_TO",
+  "o": "trad:iskcon",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:rochford-1985"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-488",
+  "s": "trad:iskcon",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:ratha-yatra-puri",
+  "qualifiers": {
+   "note": "ISKCON Ratha Yātrās in cities worldwide modelled on Puri’s"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/International_Society_for_Krishna_Consciousness"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-489",
+  "s": "trad:iskcon",
+  "p": "ASSOCIATED_WITH",
+  "o": "text:bhagavata-purana",
+  "qualifiers": {
+   "note": "Prabhupāda’s translation and commentary are central texts"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:rochford-1985"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-490",
+  "s": "person:bhaktivedanta-swami",
+  "p": "CENTRAL_TO",
+  "o": "trad:iskcon",
+  "qualifiers": {
+   "note": "founder"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:rochford-1985"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-491",
+  "s": "person:bhaktivedanta-swami",
+  "p": "DEVOTEE_OF",
+  "o": "char:krishna",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:rochford-1985"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-492",
+  "s": "trad:dipavali",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:indo-caribbean-hinduism",
+  "qualifiers": {
+   "note": "Divālī is a national holiday in Trinidad and Tobago, Guyana and Suriname; Divali Nagar in Trinidad"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:younger-2010"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-493",
+  "s": "trad:dipavali",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:malaysian-hinduism",
+  "qualifiers": {
+   "note": "Deepavali is a public holiday in Malaysia"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hinduism_in_Malaysia"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-494",
+  "s": "trad:chhath",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:mauritian-hinduism",
+  "qualifiers": {
+   "note": "kept by Bhojpuri-speaking Mauritians"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:younger-2010"
+   }
+  ],
+  "confidence": "low",
+  "status": "source-checked",
   "agent": "regional"
  }
 ]

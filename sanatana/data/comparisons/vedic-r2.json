@@ -1,0 +1,945 @@
+[
+ {
+  "id": "cmp:darshanas-on-the-self",
+  "title": "What is the self? Six darśanas and three Vedāntas",
+  "subject": "concept:atman",
+  "question": "What is the self (ātman / puruṣa / jīva), how many selves are there, and is consciousness its essence?",
+  "rows": [
+   {
+    "text": "text:samkhya-karika",
+    "locator": "SK 17–19",
+    "statement": "The self (puruṣa) exists because aggregates serve another, someone must experience and oversee, and activity aims at isolation; selves are many, since birth, death and faculties are allotted to each separately; the self is a witness, isolated, indifferent, a seer and not an agent.",
+    "sources": [
+     {
+      "source": "src:gretil-samkhyakarika",
+      "locator": "SK 18–19",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_IzvarakRSNa-sAMkhyakArikA.txt",
+      "edition": "GRETIL e-text (input F. Ruzsa 1998, collating Solomon, Takakusu, Wilson and others)",
+      "quote": "puruṣa-bahutvaṃ siddhaṃ"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:yoga-sutra",
+    "locator": "YS 1.3; 2.20",
+    "statement": "The self is the seer, pure seeing only; though pure it beholds the mind’s contents; in the stilled mind the seer abides in its own nature.",
+    "sources": [
+     {
+      "source": "src:gretil-yogasutra",
+      "locator": "YS 2.20",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_pataJjali-yogasUtra.txt",
+      "edition": "GRETIL e-text (sūtras extracted by P. A. Maas from Āgāśe’s edition (Ānandāśrama Sanskrit Series 47, 1904))",
+      "quote": "draṣṭā dṛśimātraḥ śuddho 'pi pratyayānupaśyaḥ"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:nyaya-sutra",
+    "locator": "NS 1.1.10",
+    "statement": "The self is known by its marks — desire, aversion, effort, pleasure, pain and cognition — so cognition is a quality the self has, not its nature.",
+    "sources": [
+     {
+      "source": "src:gretil-nyayasutra",
+      "locator": "NS 1.1.10",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_gautama-nyAyasUtra.txt",
+      "edition": "GRETIL e-text (Sansknet e-text (not proof-read); numbering of that file)",
+      "quote": "icchādveṣaprayatnasukhaduḥkhajñānāni ātmanaḥ liṅgam iti"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:vaisheshika-sutra",
+    "locator": "VS 3.2.4; 3.2.16",
+    "statement": "Breath, blinking, life, mental motion, sense-modification, pleasure, pain, desire, aversion and effort are marks of the self; selves are many because their situations differ.",
+    "sources": [
+     {
+      "source": "src:gretil-vaisheshika-sutra",
+      "locator": "VS 3.2.4; 3.2.16",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kaNAda-vaizeSikasUtra.txt",
+      "edition": "GRETIL e-text (input Nozawa Masanobu; numbering of that file)",
+      "quote": "prāṇāpānanimeṣonmeṣajīvanamanogatīndriyāntaravikārāḥ sukhaduḥkhe icchādveṣau prayatnaś cety ātmaliṅgāni"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:shabara-bhashya",
+    "locator": "ŚBh on MS 1.1.5",
+    "statement": "Against those who deny a self, Śabara argues that “we apprehend the self through desire”, since one desires only what one has experienced before — the self is a lasting experiencer who reaps the fruits of ritual acts.",
+    "sources": [
+     {
+      "source": "src:gretil-shabara",
+      "locator": "ŚBh 1.1.5",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_jaimini-mImAMsAsUtra-1-7-comm.txt",
+      "edition": "GRETIL e-text",
+      "quote": "icchayātmānam upalabhāmahe"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:shankara-brahmasutra-bhashya",
+    "locator": "BSBh 1.1.1–4 (passim)",
+    "statement": "The individual self is in reality identical with brahman, pure consciousness; its apparent individuality and agency arise from superimposition and ignorance.",
+    "sources": [
+     {
+      "source": "src:thibaut-sbe34",
+      "locator": "I.1.1–4"
+     },
+     {
+      "source": "src:mayeda-1992",
+      "locator": "Introduction"
+     }
+    ],
+    "status": "source-checked"
+   },
+   {
+    "text": "text:vedarthasamgraha",
+    "locator": "RVas 65",
+    "statement": "Selves are real, eternal and many; together with matter they are the body of brahman, which “has everything as its body” — distinct as a body from its soul, yet inseparable.",
+    "sources": [
+     {
+      "source": "src:gretil-vedarthasamgraha",
+      "locator": "RVas 65",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAnuja-vedArthasaMgraha.txt",
+      "edition": "GRETIL e-text (input Sadanori Ishitobi; section numbers RVas_n)",
+      "quote": "sarvaśarīraṃ brahme"
+     },
+     {
+      "source": "src:carman-1974"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:mahabharata-tatparya-nirnaya",
+    "locator": "MBTN 1.68–70",
+    "statement": "The difference of selves from God and from one another is real and eternal; selves are dependent on Viṣṇu, who alone is independent.",
+    "sources": [
+     {
+      "source": "src:gretil-mbh-tatparya-nirnaya",
+      "locator": "MBTN 1.68",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mAdhva-mahAbhAratatAtparyanirNaya.txt",
+      "edition": "GRETIL e-text (Dvaita.net input via GRETIL)",
+      "quote": "satyā jīveśayorbhidā satyo mitho jīvabhedaḥ"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:shat-sandarbha",
+    "locator": "Bhagavat-sandarbha (GRETIL e-text)",
+    "statement": "Selves belong to the Lord’s marginal (taṭasthā) energy, one with and different from him in an inconceivable way.",
+    "sources": [
+     {
+      "source": "src:gretil-satsandarbha",
+      "locator": "Bhagavat-sandarbha",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_jiva-gosvami-satsamdarbha.txt",
+      "edition": "GRETIL e-text (GRETIL e-text interleaving Baladeva Vidyābhūṣaṇa’s ṭīkā (marked “bd:”))",
+      "quote": "antaraṅgā bahiraṅgā taṭasthā ca"
+     },
+     {
+      "source": "src:gupta-2007"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "note": "Sāṅkhya, Yoga, Nyāya, Vaiśeṣika and Mīmāṃsā all hold that selves are many and eternal but disagree on whether consciousness is the self’s essence (Sāṅkhya–Yoga) or a quality it acquires (Nyāya–Vaiśeṣika). The three Vedāntas then disagree on the self’s relation to brahman: identity, body–soul inseparability, or eternal difference. The rows are not harmonised.",
+  "agent": "vedic"
+ },
+ {
+  "id": "cmp:brahman-and-the-world",
+  "title": "How is brahman related to the world?",
+  "subject": "concept:brahman",
+  "question": "Is the world real, and how does it relate to brahman?",
+  "rows": [
+   {
+    "text": "text:brahma-sutra",
+    "locator": "BS 1.1.2; 2.1.14; 2.1.33",
+    "statement": "Brahman is that from which the origin, maintenance and dissolution of this world proceed; the effect is non-different from the cause, “as shown by the word ārambhaṇa and others”; creation is mere play, as in the world.",
+    "sources": [
+     {
+      "source": "src:gretil-brahmasutra",
+      "locator": "BS 1.1.2; 2.1.14; 2.1.33",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bAdarAyaNa-brahmasUtra-alt.txt",
+      "edition": "GRETIL e-text (sūtra text extracted from Śaṅkara’s commentary (555 sūtras); Śaṅkara’s numbering)",
+      "quote": "tadananyatvam ārambhaṇaśabdādibhyaḥ"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:mandukya-karika",
+    "locator": "GK 1.17; 2.32; 3.48",
+    "statement": "Duality is mere māyā; non-duality is the highest truth; nothing is ever originated — “no self is born”.",
+    "sources": [
+     {
+      "source": "src:gretil-gaudapada-karika",
+      "locator": "GK 1.17; 3.48",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_gauDapAda-AgamazAstra.txt",
+      "edition": "GRETIL e-text (input P. Schreiner, based on V. G. Apte’s edition)",
+      "quote": "na kaścij jāyate jīvaḥ saṃbhavo 'sya na vidyate"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:shankara-brahmasutra-bhashya",
+    "locator": "BSBh 2.1.14",
+    "statement": "Śaṅkara reads “non-different” as: the effect has no reality apart from the cause; the manifold world is a product of name and form projected by ignorance, real only from the empirical standpoint.",
+    "sources": [
+     {
+      "source": "src:thibaut-sbe34",
+      "locator": "II.1.14"
+     },
+     {
+      "source": "src:potter-1981"
+     }
+    ],
+    "status": "source-checked"
+   },
+   {
+    "text": "text:bhaskara-brahmasutra-bhashya",
+    "locator": "passim",
+    "statement": "Brahman really transforms into the world (pariṇāma); difference and non-difference are both real, the difference of selves being due to limiting adjuncts.",
+    "sources": [
+     {
+      "source": "src:nicholson-2010",
+      "locator": "ch. 2"
+     }
+    ],
+    "status": "source-checked"
+   },
+   {
+    "text": "text:vedarthasamgraha",
+    "locator": "RVas 2; 59; 65",
+    "statement": "The world is real and is brahman’s body; Rāmānuja rejects the Advaita view that brahman itself is ignorant and wanders in saṃsāra, and judges bhedābheda even worse.",
+    "sources": [
+     {
+      "source": "src:gretil-vedarthasamgraha",
+      "locator": "RVas 59",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAnuja-vedArthasaMgraha.txt",
+      "edition": "GRETIL e-text (input Sadanori Ishitobi; section numbers RVas_n)",
+      "quote": "brahmājñānapakṣād api pāpīyān ayaṃ bhedābhedapakṣaḥ"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:mahabharata-tatparya-nirnaya",
+    "locator": "MBTN 1.68–70",
+    "statement": "The world is real (“satyaṃ ca jagad īdṛśam”); the stream of the world, endowed with five differences, is real, and the five differences are eternal.",
+    "sources": [
+     {
+      "source": "src:gretil-mbh-tatparya-nirnaya",
+      "locator": "MBTN 1.69–70",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mAdhva-mahAbhAratatAtparyanirNaya.txt",
+      "edition": "GRETIL e-text (Dvaita.net input via GRETIL)",
+      "quote": "jagatpravāhaḥ satyo"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:vedanta-parijata-saurabha",
+    "locator": "passim",
+    "statement": "The world and selves are naturally (svābhāvika) both different and non-different from brahman, as effects from a cause and parts from a whole.",
+    "sources": [
+     {
+      "source": "src:bose-1940"
+     }
+    ],
+    "status": "source-checked"
+   },
+   {
+    "text": "text:anubhashya-vallabha",
+    "locator": "passim",
+    "statement": "Brahman becomes the world without itself changing (avikṛta-pariṇāma); the world is real and “pure”, untouched by māyā.",
+    "sources": [
+     {
+      "source": "src:barz-1976"
+     },
+     {
+      "source": "src:wikipedia",
+      "locator": "Shuddhadvaita",
+      "url": "https://en.wikipedia.org/wiki/Shuddhadvaita"
+     }
+    ],
+    "status": "reference-checked"
+   },
+   {
+    "text": "text:shat-sandarbha",
+    "locator": "Bhagavat-sandarbha",
+    "statement": "The world is the real product of the Lord’s external (bahiraṅgā) energy; energies are one with and different from their possessor in a way that is inconceivable — “inconceivability is the making-possible of the impossible”.",
+    "sources": [
+     {
+      "source": "src:gretil-satsandarbha",
+      "locator": "Bhagavat-sandarbha",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_jiva-gosvami-satsamdarbha.txt",
+      "edition": "GRETIL e-text (GRETIL e-text interleaving Baladeva Vidyābhūṣaṇa’s ṭīkā (marked “bd:”))",
+      "quote": "durghaṭa- ghaṭatvaṃ hy acintyatvam"
+     },
+     {
+      "source": "src:gupta-2007"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "note": "All schools comment on the same sūtras (BS 1.1.2; 2.1.14) yet disagree on whether the world is an appearance (Gauḍapāda, Śaṅkara), a real transformation (Bhāskara, Vallabha), the body of brahman (Rāmānuja), or a real, dependent and different reality (Madhva).",
+  "agent": "vedic"
+ },
+ {
+  "id": "cmp:authority-of-the-veda",
+  "title": "Why is the Veda authoritative — or is it?",
+  "subject": "col:vedic-samhitas",
+  "question": "On what ground, if any, is the Veda a valid means of knowledge?",
+  "rows": [
+   {
+    "text": "text:mimamsa-sutra",
+    "locator": "MS 1.1.2; 1.1.5; 1.1.27–30",
+    "statement": "Dharma is known by Vedic injunction; the word–meaning relation is original, so the Veda is an independent authority needing nothing else; names like Kāṭhaka mark expounders, not authors.",
+    "sources": [
+     {
+      "source": "src:gretil-mimamsa-sutra",
+      "locator": "MS 1.1.5",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_jaimini-mImAMsAsUtra.txt",
+      "edition": "GRETIL e-text (based on B. D. Basu’s edition, Allahabad 1923–25)",
+      "quote": "autpattikas tu śabdasyārthena saṃbandhas"
+     },
+     {
+      "source": "src:gretil-mimamsa-sutra",
+      "locator": "MS 1.1.30",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_jaimini-mImAMsAsUtra.txt",
+      "edition": "GRETIL e-text (based on B. D. Basu’s edition, Allahabad 1923–25)",
+      "quote": "ākhyā pravacanāt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:shabara-bhashya",
+    "locator": "ŚBh on MS 1.1.4",
+    "statement": "Perception grasps only what is present; inference, comparison and postulation are based on perception and so cannot reveal dharma either — only the Veda can.",
+    "sources": [
+     {
+      "source": "src:gretil-shabara",
+      "locator": "ŚBh 1.1.4",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_jaimini-mImAMsAsUtra-1-7-comm.txt",
+      "edition": "GRETIL e-text",
+      "quote": "pratyakṣapūrvakatvāc cānumānopamānārthāpattīnām apy akāraṇatvam"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:nyaya-sutra",
+    "locator": "NS 2.1.69 (2.1.68 in other numberings)",
+    "statement": "The Veda is valid like spells and medicine, “because of the validity of the reliable speaker” (āpta) — authority derives from a trustworthy author.",
+    "sources": [
+     {
+      "source": "src:gretil-nyayasutra",
+      "locator": "NS 2.1.69",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_gautama-nyAyasUtra.txt",
+      "edition": "GRETIL e-text (Sansknet e-text (not proof-read); numbering of that file)",
+      "quote": "mantrāyurvedaprāmāṇyavat ca tatprāmāṇyam, āptaprāmāṇyāt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:vaisheshika-sutra",
+    "locator": "VS 1.1.3; 6.1.1",
+    "statement": "The authority of the Veda follows from its being “his” word; the composition of sentences in the Veda presupposes intelligence.",
+    "sources": [
+     {
+      "source": "src:gretil-vaisheshika-sutra",
+      "locator": "VS 1.1.3; 6.1.1",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kaNAda-vaizeSikasUtra.txt",
+      "edition": "GRETIL e-text (input Nozawa Masanobu; numbering of that file)",
+      "quote": "buddhipūrvā vākyakṛtir vede"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:samkhya-karika",
+    "locator": "SK 2; 4–6",
+    "statement": "Vedic ritual means are “like the visible means” — impure, marked by decay and excess; reliable testimony is a means of knowledge for what is beyond perception and inference.",
+    "sources": [
+     {
+      "source": "src:gretil-samkhyakarika",
+      "locator": "SK 2",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_IzvarakRSNa-sAMkhyakArikA.txt",
+      "edition": "GRETIL e-text (input F. Ruzsa 1998, collating Solomon, Takakusu, Wilson and others)",
+      "quote": "dṛṣṭavad ānuśravikaḥ sa hy a-viśuddhi kṣayā'tiśaya-yuktaḥ"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:yoga-sutra",
+    "locator": "YS 1.7",
+    "statement": "Testimony (āgama) is one of three means of valid knowledge, with perception and inference.",
+    "sources": [
+     {
+      "source": "src:gretil-yogasutra",
+      "locator": "YS 1.7",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_pataJjali-yogasUtra.txt",
+      "edition": "GRETIL e-text (sūtras extracted by P. A. Maas from Āgāśe’s edition (Ānandāśrama Sanskrit Series 47, 1904))",
+      "quote": "pratyakṣānumānāgamāḥ pramāṇāni"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:shankara-brahmasutra-bhashya",
+    "locator": "BSBh 1.1.3",
+    "statement": "Brahman is the source of the Ṛgveda and other scriptures, which only an omniscient being could produce; and brahman is known only through scripture.",
+    "sources": [
+     {
+      "source": "src:gretil-bs-shankara",
+      "locator": "BSBh 1.1.3",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bAdarAyaNa-brahmasUtra-comm.txt",
+      "edition": "GRETIL e-text (Sansknet e-text of the Śārīrakamīmāṃsābhāṣya (begins at sūtra 1.1.1; the adhyāsa preamble is not in this file))",
+      "quote": "mahata ṛgvedādeḥ śāstrasyānekavidyāsthānopabṛṃhitasya"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:arthashastra",
+    "locator": "AŚ 1.2.10",
+    "statement": "Lokāyata is counted with Sāṅkhya and Yoga as a form of investigative reasoning; later doxographies present the Cārvākas as rejecting Vedic authority altogether.",
+    "sources": [
+     {
+      "source": "src:gretil-arthashastra",
+      "locator": "AŚ 1.2.10",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kauTilya-arthazAstra.txt",
+      "edition": "GRETIL e-text (Kangle’s edition, 2nd ed. Bombay 1969)",
+      "quote": "sāṃkhyaṃ yogo lokāyataṃ ca"
+     },
+     {
+      "source": "src:bhattacharya-2009"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "note": "Mīmāṃsā makes the Veda authoritative because it has no author; Nyāya and Vaiśeṣika because it has a reliable (for later Nyāya, divine) author; Advaita because brahman is both its source and its sole object. Sāṅkhya accepts testimony but devalues Vedic ritual. Not harmonised.",
+  "agent": "vedic"
+ },
+ {
+  "id": "cmp:darshanas-on-liberation",
+  "title": "What is liberation, and how is it reached?",
+  "subject": "concept:moksha",
+  "question": "What is the highest goal according to each school, and what brings it about?",
+  "rows": [
+   {
+    "text": "text:samkhya-karika",
+    "locator": "SK 62–68",
+    "statement": "No self is bound or released; prakṛti is. From practice of the principles arises the complete knowledge “I am not, nothing is mine, there is no I”; the knower lives on like a spinning potter’s wheel, and at death attains final, absolute isolation (kaivalya).",
+    "sources": [
+     {
+      "source": "src:gretil-samkhyakarika",
+      "locator": "SK 64",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_IzvarakRSNa-sAMkhyakArikA.txt",
+      "edition": "GRETIL e-text (input F. Ruzsa 1998, collating Solomon, Takakusu, Wilson and others)",
+      "quote": "nā 'smi na me nā 'ham ity a-pariśeṣam"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:yoga-sutra",
+    "locator": "YS 2.26; 4.34",
+    "statement": "Unwavering discriminative insight is the means of release; kaivalya is the return of the guṇas, their purpose fulfilled, or the power of consciousness established in its own nature.",
+    "sources": [
+     {
+      "source": "src:gretil-yogasutra",
+      "locator": "YS 4.34",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_pataJjali-yogasUtra.txt",
+      "edition": "GRETIL e-text (sūtras extracted by P. A. Maas from Āgāśe’s edition (Ānandāśrama Sanskrit Series 47, 1904))",
+      "quote": "puruṣārthaśūnyānāṃ guṇānāṃ pratiprasavaḥ kaivalyaṃ"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:nyaya-sutra",
+    "locator": "NS 1.1.2; 1.1.22",
+    "statement": "Release (apavarga) follows the successive removal of false knowledge, faults, activity, birth and suffering; it is absolute freedom from suffering.",
+    "sources": [
+     {
+      "source": "src:gretil-nyayasutra",
+      "locator": "NS 1.1.22",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_gautama-nyAyasUtra.txt",
+      "edition": "GRETIL e-text (Sansknet e-text (not proof-read); numbering of that file)",
+      "quote": "tadatyantavimokṣaḥ apavargaḥ"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:vaisheshika-sutra",
+    "locator": "VS 1.1.2; 5.2.19",
+    "statement": "Dharma brings prosperity and the highest good; mokṣa is the absence of conjunction (of self and body) and of further birth once the unseen force is spent.",
+    "sources": [
+     {
+      "source": "src:gretil-vaisheshika-sutra",
+      "locator": "VS 5.2.19",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kaNAda-vaizeSikasUtra.txt",
+      "edition": "GRETIL e-text (input Nozawa Masanobu; numbering of that file)",
+      "quote": "tadabhāve saṃyogābhāvo 'prādurbhāvaḥ sa mokṣaḥ"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:mimamsa-sutra",
+    "locator": "MS 1.1.1–2",
+    "statement": "The inquiry concerns dharma, the purpose known by injunction; the Sūtra’s concern is the fruit of rites (e.g. heaven), and liberation became a Mīmāṃsā theme only with later authors such as Kumārila.",
+    "sources": [
+     {
+      "source": "src:gretil-mimamsa-sutra",
+      "locator": "MS 1.1.2",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_jaimini-mImAMsAsUtra.txt",
+      "edition": "GRETIL e-text (based on B. D. Basu’s edition, Allahabad 1923–25)",
+      "quote": "codanālakṣaṇo 'rtho dharmaḥ"
+     },
+     {
+      "source": "src:jha-1942"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:shankara-brahmasutra-bhashya",
+    "locator": "BSBh 1.1.1",
+    "statement": "Knowledge of brahman, whose fruit is the highest good, depends on no further act; ritual results are impermanent (CU 8.1.6 quoted); the qualified seeker needs discrimination, detachment, calm and desire for release.",
+    "sources": [
+     {
+      "source": "src:gretil-bs-shankara",
+      "locator": "BSBh 1.1.1",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bAdarAyaNa-brahmasUtra-comm.txt",
+      "edition": "GRETIL e-text (Sansknet e-text of the Śārīrakamīmāṃsābhāṣya (begins at sūtra 1.1.1; the adhyāsa preamble is not in this file))",
+      "quote": "niḥśreyasaphalaṃ tu brahmavijñānaṃ na cānuṣṭhānāntarāpekṣam"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:shribhashya",
+    "locator": "Śrībhāṣya 1.1.1; 4.4",
+    "statement": "Liberation is attained by meditative devotion (bhakti) grounded in knowledge and by the Lord’s grace; the released self enjoys brahman’s bliss in its own distinct form.",
+    "sources": [
+     {
+      "source": "src:thibaut-sbe48",
+      "locator": "I.1.1; IV.4"
+     },
+     {
+      "source": "src:carman-1974"
+     }
+    ],
+    "status": "source-checked"
+   },
+   {
+    "text": "text:anuvyakhyana",
+    "locator": "Anuv 1.1.11–12",
+    "statement": "Viṣṇu is the object of the inquiry; one is released only through his grace (prasāda), which follows the knowledge arising from inquiry.",
+    "sources": [
+     {
+      "source": "src:gretil-anuvyakhyana",
+      "locator": "Anuv 1.1.12",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mAdhva-anuvyAkhyAna.txt",
+      "edition": "GRETIL e-text",
+      "quote": "tatprasādādeva mucyate"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:mahabharata-tatparya-nirnaya",
+    "locator": "MBTN 1.81",
+    "statement": "Liberation comes from knowing the five differences, Viṣṇu’s faultlessness and the excellence of his qualities — “and not otherwise”.",
+    "sources": [
+     {
+      "source": "src:gretil-mbh-tatparya-nirnaya",
+      "locator": "MBTN 1.81",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mAdhva-mahAbhAratatAtparyanirNaya.txt",
+      "edition": "GRETIL e-text (Dvaita.net input via GRETIL)",
+      "quote": "pañcabhedāṃ śca vijñāya viṣṇoḥ svābhedameva ca"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:bhaktirasamritasindhu",
+    "locator": "passim",
+    "statement": "The highest goal is loving devotion (prema) to Kṛṣṇa, savoured as a rasa, which the Gauḍīyas place above liberation itself.",
+    "sources": [
+     {
+      "source": "src:gupta-2007"
+     },
+     {
+      "source": "src:gretil-bhaktirasamritasindhu",
+      "locator": "BRS (whole)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rUpagosvAmin-haribhaktirasAmRtasindhu.txt",
+      "edition": "GRETIL e-text"
+     }
+    ],
+    "status": "source-checked"
+   }
+  ],
+  "note": "The schools differ on whether liberation is isolation of consciousness (Sāṅkhya–Yoga), cessation of suffering (Nyāya–Vaiśeṣika), realised identity (Advaita), or loving communion by grace (theistic Vedānta). Not harmonised.",
+  "agent": "vedic"
+ },
+ {
+  "id": "cmp:brahma-sutra-1-1-1-4",
+  "title": "How Śaṅkara, Rāmānuja and Madhva read Brahma Sūtra 1.1.1–4",
+  "subject": "psg:bs-1-1-1-4",
+  "question": "What do “then, therefore” (1.1.1) and “because scripture is its source” (1.1.3) mean, and what is the brahman being inquired into?",
+  "rows": [
+   {
+    "text": "text:brahma-sutra",
+    "locator": "BS 1.1.1–4",
+    "statement": "athāto brahmajijñāsā — janmādyasya yataḥ — śāstrayonitvāt — tat tu samanvayāt (the bare sūtras, open to all readings).",
+    "sources": [
+     {
+      "source": "src:gretil-brahmasutra",
+      "locator": "BS 1.1.1–4",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bAdarAyaNa-brahmasUtra-alt.txt",
+      "edition": "GRETIL e-text (sūtra text extracted from Śaṅkara’s commentary (555 sūtras); Śaṅkara’s numbering)",
+      "quote": "śāstrayonitvāt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:shankara-brahmasutra-bhashya",
+    "locator": "BSBh 1.1.1; 1.1.3",
+    "statement": "“Then” means after the fourfold qualification, not after the study of ritual: inquiry into brahman is possible even before inquiry into dharma. 1.1.3 has two senses: brahman is the source of the Veda, and brahman is known only through the Veda.",
+    "sources": [
+     {
+      "source": "src:gretil-bs-shankara",
+      "locator": "BSBh 1.1.1",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bAdarAyaNa-brahmasUtra-comm.txt",
+      "edition": "GRETIL e-text (Sansknet e-text of the Śārīrakamīmāṃsābhāṣya (begins at sūtra 1.1.1; the adhyāsa preamble is not in this file))",
+      "quote": "dharmajijñāsāyāḥ prāgapyadhītavedāntasya brahmajijñāsopapatteḥ"
+     },
+     {
+      "source": "src:gretil-bs-shankara",
+      "locator": "BSBh 1.1.3",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bAdarAyaNa-brahmasUtra-comm.txt",
+      "edition": "GRETIL e-text (Sansknet e-text of the Śārīrakamīmāṃsābhāṣya (begins at sūtra 1.1.1; the adhyāsa preamble is not in this file))",
+      "quote": "yoniḥ kāraṇaṃbrahma"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:shribhashya",
+    "locator": "Śrībhāṣya 1.1.1",
+    "statement": "“Then” means after acquiring knowledge of works (the Pūrva Mīmāṃsā): the two Mīmāṃsās form one śāstra. Brahman is the highest Person, free from all imperfection, with infinite auspicious qualities; the long “great discussion” on this sūtra refutes Advaita’s attributeless brahman and its doctrine of ignorance.",
+    "sources": [
+     {
+      "source": "src:thibaut-sbe48",
+      "locator": "I.1.1"
+     },
+     {
+      "source": "src:carman-1974"
+     }
+    ],
+    "status": "source-checked"
+   },
+   {
+    "text": "text:anuvyakhyana",
+    "locator": "Anuv 1.1.1–12",
+    "statement": "The Sūtra was composed by Hari as Vyāsa at the request of Brahmā, Śiva and others; brahman is Nārāyaṇa, “whose sole body is the fullness of qualities”, the meaning of Om and of all the Veda; the inquiry leads to release through his grace.",
+    "sources": [
+     {
+      "source": "src:gretil-anuvyakhyana",
+      "locator": "Anuv 1.1.1; 1.1.3; 1.1.9",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mAdhva-anuvyAkhyAna.txt",
+      "edition": "GRETIL e-text",
+      "quote": "sa eva brahmaśabdārtho nārāyaṇapadoditaḥ"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "note": "Śaṅkara detaches Vedānta from prior ritual study; Rāmānuja binds Pūrva and Uttara Mīmāṃsā into one discipline; Madhva makes the Sūtra Viṣṇu’s own revelation. The Śrībhāṣya row relies on Thibaut’s translation because the GRETIL Śrībhāṣya file could not be retrieved.",
+  "agent": "vedic"
+ },
+ {
+  "id": "cmp:number-of-pramanas",
+  "title": "How many means of valid knowledge?",
+  "subject": "concept:pramana",
+  "question": "Which pramāṇas does each school accept?",
+  "rows": [
+   {
+    "text": "text:samkhya-karika",
+    "locator": "SK 4",
+    "statement": "Three: perception, inference and reliable testimony, since all other means are included in these.",
+    "sources": [
+     {
+      "source": "src:gretil-samkhyakarika",
+      "locator": "SK 4",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_IzvarakRSNa-sAMkhyakArikA.txt",
+      "edition": "GRETIL e-text (input F. Ruzsa 1998, collating Solomon, Takakusu, Wilson and others)",
+      "quote": "tri-vidhaṃ pramāṇam iṣṭaṃ"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:yoga-sutra",
+    "locator": "YS 1.7",
+    "statement": "Three: perception, inference and testimony (āgama).",
+    "sources": [
+     {
+      "source": "src:gretil-yogasutra",
+      "locator": "YS 1.7",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_pataJjali-yogasUtra.txt",
+      "edition": "GRETIL e-text (sūtras extracted by P. A. Maas from Āgāśe’s edition (Ānandāśrama Sanskrit Series 47, 1904))",
+      "quote": "pratyakṣānumānāgamāḥ pramāṇāni"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:nyaya-sutra",
+    "locator": "NS 1.1.3",
+    "statement": "Four: perception, inference, comparison (upamāna) and verbal testimony.",
+    "sources": [
+     {
+      "source": "src:gretil-nyayasutra",
+      "locator": "NS 1.1.3",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_gautama-nyAyasUtra.txt",
+      "edition": "GRETIL e-text (Sansknet e-text (not proof-read); numbering of that file)",
+      "quote": "pratyakṣānumānopamānaśabdāḥ pramāṇāni"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:padarthadharmasamgraha",
+    "locator": "PDhS (section on cognition)",
+    "statement": "Vaiśeṣika recognises two, perception and inference, treating testimony and comparison as forms of inference.",
+    "sources": [
+     {
+      "source": "src:potter-1977",
+      "locator": "pp. 282–303"
+     },
+     {
+      "source": "src:matilal-1986"
+     }
+    ],
+    "status": "source-checked"
+   },
+   {
+    "text": "text:shabara-bhashya",
+    "locator": "ŚBh on MS 1.1.4–5",
+    "statement": "Śabara names perception, inference, comparison, postulation (arthāpatti) and verbal testimony, and treats absence (abhāva) as well.",
+    "sources": [
+     {
+      "source": "src:gretil-shabara",
+      "locator": "ŚBh 1.1.4",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_jaimini-mImAMsAsUtra-1-7-comm.txt",
+      "edition": "GRETIL e-text",
+      "quote": "pratyakṣapūrvakatvāc cānumānopamānārthāpattīnām"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:prakaranapanchika",
+    "locator": "passim",
+    "statement": "Prābhākara Mīmāṃsā accepts five, rejecting non-apprehension (anupalabdhi) as a separate means.",
+    "sources": [
+     {
+      "source": "src:jha-1942"
+     }
+    ],
+    "status": "source-checked"
+   },
+   {
+    "text": "text:shlokavarttika",
+    "locator": "ŚV (chapters on the pramāṇas)",
+    "statement": "Bhāṭṭa Mīmāṃsā accepts six: perception, inference, testimony, comparison, postulation and non-apprehension; Advaita later adopts the same six.",
+    "sources": [
+     {
+      "source": "src:jha-1942"
+     },
+     {
+      "source": "src:kataoka-2011"
+     }
+    ],
+    "status": "source-checked"
+   },
+   {
+    "text": "text:arthashastra",
+    "locator": "AŚ 1.2.10",
+    "statement": "The Lokāyata, here a branch of ānvīkṣikī, is known from later sources as accepting perception alone.",
+    "sources": [
+     {
+      "source": "src:bhattacharya-2009"
+     }
+    ],
+    "status": "source-checked"
+   }
+  ],
+  "agent": "vedic"
+ },
+ {
+  "id": "cmp:inheritance-mitakshara-dayabhaga",
+  "title": "When does a son acquire ownership of family property?",
+  "subject": "concept:daya",
+  "question": "Do heirs own ancestral property from birth, or only on the owner’s death?",
+  "rows": [
+   {
+    "text": "text:manusmriti",
+    "locator": "Manu 9.104",
+    "statement": "After the death of father and mother the brothers, coming together, should divide the paternal estate equally, “for they have no power over it while the two are alive”.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "Manu 9.104",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_manusmRti.txt",
+      "quote": "bhajeran paitṛkaṃ riktham anīśās te hi jīvatoḥ"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:yajnavalkya-smriti",
+    "locator": "YSm 2.121",
+    "statement": "In land acquired by the grandfather, a corporate holding or movables, the ownership of father and son is equal.",
+    "sources": [
+     {
+      "source": "src:gretil-yajnavalkya-smriti",
+      "locator": "YSm 2.121",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_yAjJavalkyasmRti.txt",
+      "edition": "GRETIL e-text (Mitākṣarā text, ed. N. R. Acharya, Bombay 1949)",
+      "quote": "tatra syāt sadṛśaṃ svāmyaṃ pituḥ putrasya caiva hi"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:mitakshara",
+    "locator": "Mit. on YSm 2.114 ff.",
+    "statement": "Ownership is a matter of worldly usage, and “in the world the ownership of sons and others by birth itself is well established”; partition only divides what is already jointly owned.",
+    "sources": [
+     {
+      "source": "src:gretil-mitakshara",
+      "locator": "Mit. on YSm 2.114 ff.",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_vijJAnezvara-mitAkSarA.txt",
+      "edition": "GRETIL e-text",
+      "quote": "loke ca putrādīnāṃ janmanaiva svatvaṃ prasiddhataraṃ nāpahnavam arhati"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:dayabhaga",
+    "locator": "Dāyabhāga ch. 1",
+    "statement": "Sons acquire ownership only on the father’s death (or fall or renunciation); until then the father is sole owner and may dispose even of ancestral property.",
+    "sources": [
+     {
+      "source": "src:rocher-2002",
+      "locator": "Introduction and ch. 1"
+     },
+     {
+      "source": "src:kane-hod",
+      "locator": "vol. III"
+     }
+    ],
+    "status": "source-checked"
+   }
+  ],
+  "note": "Colonial courts applied the Mitākṣarā outside Bengal and the Dāyabhāga in Bengal; the Manu row is earlier than both and is cited by each in its own way.",
+  "agent": "vedic"
+ },
+ {
+  "id": "cmp:asrama-choice-or-sequence",
+  "title": "Are the āśramas alternatives or stages?",
+  "subject": "concept:ashrama",
+  "question": "How do the Dharma Sūtras present the orders of life?",
+  "rows": [
+   {
+    "text": "text:apastamba-dharma-sutra",
+    "locator": "ĀpDh 2.9.21.1–2",
+    "statement": "There are four āśramas — householder, residence at the teacher’s house, the silent ascetic and the forest-dweller; living in any of them as taught, one reaches peace.",
+    "sources": [
+     {
+      "source": "src:gretil-apastamba-dharmasutra",
+      "locator": "ĀpDh 2.9.21.1",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_ApastambadharmasUtra.txt",
+      "edition": "GRETIL e-text (based on Bühler’s edition (3rd ed. 1932); praśna.paṭala.khaṇḍa.sūtra numbering)",
+      "quote": "catvāra āśramā gārhasthyam ācārya.kulaṃ maunaṃ vānaprasthyam iti"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:gautama-dharma-sutra",
+    "locator": "GDh 3.1; 3.36",
+    "statement": "Some allow a choice among the āśramas; but the teachers hold that there is only one, because householdership is directly enjoined in the Veda.",
+    "sources": [
+     {
+      "source": "src:gretil-gautama-dharmasutra",
+      "locator": "GDh 3.1",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_gautama-dharmasUtra.txt",
+      "edition": "GRETIL e-text (based on Gokhale’s edition, Pune 1910 (Stenzler numbering))",
+      "quote": "tasyāśramavikalpam eke bruvate"
+     },
+     {
+      "source": "src:gretil-gautama-dharmasutra",
+      "locator": "GDh 3.36",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_gautama-dharmasUtra.txt",
+      "edition": "GRETIL e-text (based on Gokhale’s edition, Pune 1910 (Stenzler numbering))",
+      "quote": "ekāśramyaṃ tv ācāryāḥ pratyakṣavidhānād"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:baudhayana-dharma-sutra",
+    "locator": "BDh 2.6.11.27",
+    "statement": "The teachers hold there is a single āśrama, because the others do not produce offspring.",
+    "sources": [
+     {
+      "source": "src:gretil-baudhayana-dharmasutra",
+      "locator": "BDh 2.6.11.27",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_baudhAyanadharmasUtra.txt",
+      "edition": "GRETIL e-text",
+      "quote": "aikāśramyaṃ tv ācāryā"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:jabala-upanishad",
+    "locator": "Jābāla Up. 4",
+    "statement": "One may renounce directly from studentship, from the household or from the forest — renunciation need not wait for the later stages.",
+    "sources": [
+     {
+      "source": "src:olivelle-1992",
+      "locator": "Jābāla Upaniṣad"
+     },
+     {
+      "source": "src:olivelle-1993"
+     }
+    ],
+    "status": "source-checked"
+   }
+  ],
+  "note": "Olivelle (1993) reads these passages as evidence that the āśramas were originally alternative lifelong vocations, later reorganised into the sequential “four stages”.",
+  "agent": "vedic"
+ }
+]
