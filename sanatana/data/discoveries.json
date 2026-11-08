@@ -261,6 +261,15 @@
    },
    {
     "source": "src:fleet-1888"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Gangdhar inscription of Mayūrākṣaka",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00076"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 17"
    }
   ]
  },
@@ -1027,8 +1036,8 @@
  {
   "id": "disc:legend-vs-fabric",
   "kicker": "Temples",
-  "title": "22 of the 41 temples with founding legends stand in buildings dated after 1500 CE",
-  "body": "Of the 41 temples in the atlas whose tradition gives a founding story, 22 stand in a main building dated after 1500 CE (counting the surviving structure, or the latest construction where a site was rebuilt; renovations do not count) — among them Kāśī Viśvanātha temple (1780), Kālīghāṭ temple (1798), Viṣṇupada temple (1787), Badrīnātha temple (1803). Across all 97 dated temples, 12 have a main building from before 600 CE by this rule, and several of those — Deogarh, Udayagiri, Bhitargaon, Tigawa — are monuments no longer in regular worship.\n\nMany of the places most central to living practice have been rebuilt repeatedly, while some of the oldest fabric survives where worship lapsed. The atlas therefore keeps two dates on every temple: the tradition’s and the building’s.",
+  "title": "41 of the 67 temples with founding legends stand in buildings dated after 1500 CE",
+  "body": "Of the 67 temples in the atlas whose tradition gives a founding story, 41 stand in a main building dated after 1500 CE (counting the surviving structure, or the latest construction where a site was rebuilt; renovations do not count) — among them Kāśī Viśvanātha temple (1780), Kālīghāṭ temple (1798), Viṣṇupada temple (1787), Badrīnātha temple (1803). Across all 238 dated temples, 16 have a main building from before 600 CE by this rule, and several of those — Deogarh, Udayagiri, Bhitargaon, Tigawa — are monuments no longer in regular worship.\n\nMany of the places most central to living practice have been rebuilt repeatedly, while some of the oldest fabric survives where worship lapsed. The atlas therefore keeps two dates on every temple: the tradition’s and the building’s.",
   "entities": [
    "temple:kashi-vishwanath",
    "temple:somnath",
@@ -1166,11 +1175,29 @@
    "material:188"
   ],
   "confidence": "medium",
-  "caveat": "The family link for the Budhagupta pillar rests on an edition cited from recall (material:188).",
+  "caveat": "The pillar names Mātṛviṣṇu and his younger brother Dhanyaviṣṇu (lines 7–9 of the edition, now verified); continuity of a cult under a new overlord says nothing about the overlord’s own religion.",
   "sources": [
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Eran_boar_inscription_of_Toramana"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Eran Boar Inscription, lines 1–8",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00099"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 36"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Eran Pillar Inscription of the time of Budhagupta, lines 1–9",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00045"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 19"
    },
    {
     "source": "src:fleet-1888"
@@ -1215,6 +1242,407 @@
    },
    {
     "source": "src:jacques-freeman-1997"
+   }
+  ]
+ },
+ {
+  "id": "disc:onam-mayon",
+  "kicker": "Living heritage",
+  "title": "In the oldest Tamil poem that names it, Ōṇam is the festival of Māyōṉ — not of Mahābali",
+  "body": "The Caṅkam poem Maduraikkāñci (lines 590–591) calls Ōṇam the festival of Māyōṉ, the dark god of the Tamil landscapes later identified with Viṣṇu. The story most Keralites tell today — the return of the generous king Mahābali, sent below by Vāmana — is the festival’s later and now dominant tradition.\n\nThe graph keeps both: an early textual attestation of the festival’s god, and the living association with Bali, each with its own evidence class.",
+  "entities": [
+   "trad:onam",
+   "deity:mayon",
+   "char:bali",
+   "narr:vamana-bali",
+   "deity:vamana"
+  ],
+  "assertions": [
+   "regional:r2-97",
+   "regional:r2-94",
+   "regional:r2-95"
+  ],
+  "confidence": "medium",
+  "caveat": "The date of the Maduraikkāñci is itself disputed, and a single poem does not show what the festival meant everywhere; the Mahābali association is recorded as tradition (class 6), not as a later invention.",
+  "sources": [
+   {
+    "source": "src:maduraikkanci-pm",
+    "locator": "Maduraikkāñci, lines 590–591",
+    "url": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0071.html"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Onam"
+   }
+  ]
+ },
+ {
+  "id": "disc:holi-two-stories",
+  "kicker": "Living heritage",
+  "title": "One Purāṇic passage already gives Holī two origin stories",
+  "body": "Nārada Purāṇa 1.124 describes the Holī rite and names Holikā, the demoness who tried to burn the child Prahlāda, as the figure whose burning it re-enacts; the same passage also ties the night to Śiva burning Kāma. A Bhaviṣyottara text quoted by the medieval digest-writer Hemādri gives a third figure, the ogress Ḍhauṇḍhā.\n\nThe festival’s explanations were plural from the start of the textual record, and the graph links each one to the passage that gives it.",
+  "entities": [
+   "trad:holi",
+   "narr:holika-burning",
+   "char:holika",
+   "char:prahlada",
+   "narr:kama-dahana",
+   "text:narada-purana",
+   "text:bhavishya-purana"
+  ],
+  "assertions": [
+   "purana:r2-647",
+   "purana:r2-651",
+   "purana:r2-652",
+   "purana:r2-653",
+   "regional:r2-36"
+  ],
+  "confidence": "high",
+  "caveat": "The Nārada Purāṇa is late and layered, so the passage dates the explanation only loosely; it does not date the festival, which may be older than any text that explains it.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "NārP 1.124.76–81",
+    "edition": "GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_nAradapurANa.txt",
+    "quote": "holikā rākṣasī ceyaṃ prahlādabhayadāyinī"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "article (pointer only)",
+    "url": "https://en.wikipedia.org/wiki/Holika"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "NārP 1.124.81",
+    "edition": "GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_nAradapurANa.txt",
+    "quote": "saṃvatsarasya dāho 'yaṃ kāmadāho matāntare"
+   },
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 238: Bhaviṣyottara ch. 132, quoted by Hemādri",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ]
+ },
+ {
+  "id": "disc:kalidasa-source",
+  "kicker": "Literary history",
+  "title": "Kālidāsa names his source: the Raghuvaṃśa points to Vālmīki’s Rāmāyaṇa",
+  "body": "Cantos 10–15 of the Raghuvaṃśa retell the Rāma story, and at 15.63–64 the poem names Vālmīki’s work as the account it follows. It is one of the earliest explicit acknowledgements of the Vālmīki Rāmāyaṇa by a datable author.\n\nWith the Aihole inscription of 634 CE, which names Kālidāsa, it brackets the Rāmāyaṇa’s standing as a classic in the mid-first millennium.",
+  "entities": [
+   "text:raghuvamsha",
+   "text:valmiki-ramayana",
+   "person:kalidasa",
+   "ins:aihole-ravikirti"
+  ],
+  "assertions": [
+   "epic:r2-3",
+   "epic:r2-4",
+   "material:333"
+  ],
+  "confidence": "high",
+  "caveat": "Kālidāsa’s own date is disputed (usually c. 4th–5th c. CE); the citation shows the text he knew existed, not which recension it was.",
+  "sources": [
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 15.63–64",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt",
+    "quote": "vṛttaṃ rāmasya vālmīkeḥ kṛtis tau kiṃnarasvanau"
+   },
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 15.63",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt",
+    "quote": "atha prācetasopajñaṃ rāmāyaṇam itas tataḥ"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Aihole_inscription"
+   },
+   {
+    "source": "src:kielhorn-ei6",
+    "quote": "attained to the fame of Kâḷidâsa and of Bhâravi"
+   }
+  ]
+ },
+ {
+  "id": "disc:revakhanda-vayu",
+  "kicker": "Textual criticism",
+  "title": "A book printed as part of the Skanda Purāṇa belongs, by its manuscripts, to the Vāyu Purāṇa",
+  "body": "The Revā-khaṇḍa — the glorification of the Narmadā printed as Skanda Purāṇa 5.3 — survives in two different works. One, according to the manuscript evidence assembled by its editor, belongs to the Vāyu Purāṇa, though printed editions place it in the Skanda. The graph keeps both texts and both attributions.\n\nThe Purāṇas are open, layered collections; the boundaries of “a Purāṇa” are themselves a product of manuscripts and printers.",
+  "entities": [
+   "text:reva-khanda-vayu",
+   "text:reva-khanda-skanda",
+   "text:skanda-purana",
+   "text:vayu-purana"
+  ],
+  "assertions": [
+   "purana:r2-812",
+   "purana:r2-813",
+   "purana:r2-814"
+  ],
+  "confidence": "medium",
+  "caveat": "This rests on the editor’s note in the e-text and the manuscript study it reports; the printed colophons still name the Skanda Purāṇa.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "RKV colophons (as printed)",
+    "edition": "Revākhaṇḍa printed as SkP 5.3 (Veṅkaṭeśvara 1910); GRETIL e-text by J. Neuss, who assigns it to the Vāyupurāṇa",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_revAkhANDa-of-the-vAyupurANa-rkv.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "GRETIL header: contributor's note",
+    "edition": "Revākhaṇḍa printed as SkP 5.3 (Veṅkaṭeśvara 1910); GRETIL e-text by J. Neuss, who assigns it to the Vāyupurāṇa",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_revAkhANDa-of-the-vAyupurANa-rkv.txt"
+   },
+   {
+    "source": "src:neuss-2012"
+   }
+  ]
+ },
+ {
+  "id": "disc:vaisheshika-categories",
+  "kicker": "Philosophy",
+  "title": "The six categories of Vaiśeṣika are stated in Praśastapāda, not in the critically edited sūtras",
+  "body": "Vaiśeṣika is known for its six categories (padārthas) — substance, quality, action, universal, particularity and inherence. In the e-text of the Vaiśeṣika Sūtra used here, no sūtra lists all six; they are set out by Praśastapāda (c. 6th c. CE), who also opens his work with homage to Īśvara.\n\nThe classical system, in other words, is partly the commentator’s.",
+  "entities": [
+   "trad:vaisheshika",
+   "text:vaisheshika-sutra",
+   "text:padarthadharmasamgraha",
+   "person:prashastapada",
+   "concept:padartha",
+   "concept:ishvara"
+  ],
+  "assertions": [
+   "vedic:r2-309",
+   "vedic:r2-306",
+   "vedic:r2-92",
+   "vedic:r2-147"
+  ],
+  "confidence": "medium",
+  "caveat": "Recensions of the sūtras differ: the commonly printed text (with Śaṅkara Miśra’s commentary) has a sūtra listing six categories, which the critically edited recension lacks. The finding is about that recension.",
+  "sources": [
+   {
+    "source": "src:gretil-prashastapada",
+    "locator": "PDhS 2.1",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_prazastapAda-pAdArthadharmasaMgraha.txt",
+    "edition": "GRETIL e-text (ed. V. P. Dvivedin, Benares 1895 (Vizianagram Sanskrit Series 6))",
+    "quote": "dravyaguṇakarmasāmānyaviśeṣasamavāyānām.ṣaṇṇām.padārthānām"
+   },
+   {
+    "source": "src:gretil-prashastapada",
+    "locator": "PDhS 1.1; 2.1",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_prazastapAda-pAdArthadharmasaMgraha.txt",
+    "edition": "GRETIL e-text (ed. V. P. Dvivedin, Benares 1895 (Vizianagram Sanskrit Series 6))",
+    "quote": "tac.ceśvaracodanābhivyaktād.dharmād.eva"
+   },
+   {
+    "source": "src:potter-1977",
+    "locator": "p. 282"
+   },
+   {
+    "source": "src:potter-1977"
+   },
+   {
+    "source": "src:gretil-prashastapada",
+    "locator": "PDhS title",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_prazastapAda-pAdArthadharmasaMgraha.txt",
+    "edition": "GRETIL e-text (ed. V. P. Dvivedin, Benares 1895 (Vizianagram Sanskrit Series 6))",
+    "quote": "praśastapādabhāṣyam"
+   }
+  ]
+ },
+ {
+  "id": "disc:bharatayuddha-1157",
+  "kicker": "Southeast Asia",
+  "title": "Java dated its own Mahābhārata: the Bhāratayuddha was finished in 1157",
+  "body": "The Old Javanese poem Bhāratayuddha, a free recasting of the epic’s war books, gives its own date by a chronogram (1157 CE). Mpu Sedah began it and Mpu Panuluh completed it for King Jayabhaya of Kediri. An earlier Old Javanese prose rendering of the Virāṭaparvan records a recital in 996.\n\nFew Sanskrit retellings of the epic can be dated so exactly as this Javanese one.",
+  "entities": [
+   "text:bharatayuddha",
+   "person:mpu-sedah",
+   "person:mpu-panuluh",
+   "person:jayabhaya",
+   "text:mahabharata",
+   "narr:kurukshetra-war"
+  ],
+  "assertions": [
+   "regional:r2-435",
+   "regional:r2-436",
+   "regional:r2-437",
+   "regional:r2-438"
+  ],
+  "confidence": "high",
+  "caveat": "A chronogram dates the poem’s completion as the poets state it; the Javanese version reshapes the story and is not a translation.",
+  "sources": [
+   {
+    "source": "src:zoetmulder-1983",
+    "locator": "pp. 339–340 (prologue)",
+    "url": "https://archive.org/details/kalangwan-sastra-jawa-kuno-selayang-pandang-1983"
+   },
+   {
+    "source": "src:zoetmulder-1983",
+    "locator": "p. 340 (epilogue)",
+    "url": "https://archive.org/details/kalangwan-sastra-jawa-kuno-selayang-pandang-1983"
+   },
+   {
+    "source": "src:zoetmulder-1983",
+    "locator": "pp. 339–341",
+    "url": "https://archive.org/details/kalangwan-sastra-jawa-kuno-selayang-pandang-1983"
+   },
+   {
+    "source": "src:zoetmulder-1983",
+    "locator": "ch. on Bhāratayuddha",
+    "url": "https://archive.org/details/kalangwan-sastra-jawa-kuno-selayang-pandang-1983"
+   },
+   {
+    "source": "src:zoetmulder-1974"
+   }
+  ]
+ },
+ {
+  "id": "disc:bhasa",
+  "kicker": "Literary history",
+  "title": "Thirteen plays found in Kerala in 1909 are “Bhāsa’s” by argument, not by signature",
+  "body": "The Trivandrum plays, published from manuscripts found in Kerala in the early 20th century, include the epic dramas Ūrubhaṅga, Dūtavākya, Karṇabhāra and the Pratimā and Abhiṣeka plays. They are attributed to Bhāsa, the dramatist Kālidāsa and Bāṇa (c. 640 CE) praise; the plays themselves do not name an author.\n\nThe graph records the attribution as a debated claim with the evidence for and against, while still connecting each play to the epic episodes it dramatises.",
+  "entities": [
+   "claim:bhasa-trivandrum-authorship",
+   "person:bhasa",
+   "text:urubhanga",
+   "col:trivandrum-plays"
+  ],
+  "assertions": [
+   "epic:r2-80",
+   "epic:r2-81",
+   "epic:r2-102",
+   "epic:r2-103"
+  ],
+  "confidence": "medium",
+  "caveat": "Many scholars accept the attribution for some or all of the plays; others think they are later Kerala stage versions. The dataset does not decide.",
+  "sources": [
+   {
+    "source": "src:ganapati-sastri-1912"
+   },
+   {
+    "source": "src:tieken-1993"
+   },
+   {
+    "source": "src:pusalker-1940"
+   },
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Ūrubhaṅga, seg. 0.1",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/UBh.html",
+    "quote": "nāndyante tataḥ praviśati sūtradhāraḥ"
+   },
+   {
+    "source": "src:gretil-harshacarita",
+    "locator": "Harṣacarita intro v. 1.15",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bANa-harSacarita.txt",
+    "quote": "sūtra-dhāra-kṛtârambhair"
+   },
+   {
+    "source": "src:keith-1924"
+   }
+  ]
+ },
+ {
+  "id": "disc:gangadhara-udayagiri",
+  "kicker": "Iconography",
+  "title": "Śiva receiving the Gaṅgā is carved at Udayagiri a century before Elephanta",
+  "body": "The Gaṅgādhara form — Śiva catching the descending Gaṅgā in his hair — is best known from the great panel in Elephanta Cave 1 (6th c.). In the graph its earliest dated representation is beside the doorway of Udayagiri Cave 6, in the early 5th century under Candragupta II.\n\nLinking each iconographic form to its earliest dated image turns the story’s spread into a visible sequence.",
+  "entities": [
+   "deity:gangadhara",
+   "temple:udayagiri-caves",
+   "temple:elephanta",
+   "narr:descent-of-ganga",
+   "deity:shiva"
+  ],
+  "assertions": [
+   "iconography:691",
+   "iconography:47"
+  ],
+  "confidence": "medium",
+  "caveat": "The identification of the Udayagiri figure rests on art-historical description checked against reference works; earliest dated in the graph is not earliest made.",
+  "sources": [
+   {
+    "source": "src:williams-1982"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "cave-by-cave description",
+    "url": "https://en.wikipedia.org/wiki/Udayagiri_Caves"
+   },
+   {
+    "source": "src:collins-1988"
+   },
+   {
+    "source": "src:berkson-1983"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Elephanta_Caves"
+   }
+  ]
+ },
+ {
+  "id": "disc:varuna-mount",
+  "kicker": "Iconography",
+  "title": "The two oldest image manuals disagree on Varuṇa’s mount",
+  "body": "Varāhamihira’s Bṛhat Saṃhitā (6th c.) and the Agni Purāṇa’s image chapters agree closely on many prescriptions — the eight-armed Viṣṇu’s weapons almost word for word — but give Varuṇa different mounts: a goose in one, the sea-creature makara in the other.\n\nIconography was prescribed by texts, and the texts themselves varied; the comparison table sets them side by side.",
+  "entities": [
+   "deity:varuna",
+   "char:makara",
+   "text:agni-purana"
+  ],
+  "assertions": [
+   "iconography:280"
+  ],
+  "confidence": "medium",
+  "caveat": "Both texts are layered and their image chapters are hard to date; images in stone follow neither text consistently.",
+  "sources": [
+   {
+    "source": "src:ap-gretil",
+    "locator": "AP 51.15 (Mitra ed., GRETIL)",
+    "quote": "makare varuṇaḥ pāśī",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_agnipurANa.txt"
+   },
+   {
+    "source": "src:gretil"
+   }
+  ]
+ },
+ {
+  "id": "disc:devi-mahatmya-manuscript",
+  "kicker": "Manuscripts",
+  "title": "The oldest Devī Māhātmya manuscript in the graph is four centuries younger than its verse in stone",
+  "body": "A palm-leaf manuscript of the Devī Māhātmya in the Schøyen Collection (MS 2174) dates to the 11th century. A verse of the same hymn was already carved in the Dadhimatī Mātā inscription of 608 CE.\n\nFor many Purāṇic texts the stone record is older than any surviving manuscript — another reason the atlas keeps textual, manuscript and epigraphic dates apart.",
+  "entities": [
+   "ms:devi-mahatmya-schoyen-2174",
+   "text:devi-mahatmya",
+   "ins:dadhimati-mata"
+  ],
+  "assertions": [
+   "material:r2-468",
+   "material:267"
+  ],
+  "confidence": "high",
+  "caveat": "A collection catalogue dates the manuscript; older manuscripts may survive in collections not yet catalogued online.",
+  "sources": [
+   {
+    "source": "src:schoyen-collection",
+    "locator": "MS 2174",
+    "url": "https://www.schoyencollection.com/23-religions/living-religions/23-16-hinduism/puranas/ms-2174"
+   },
+   {
+    "source": "src:ram-karna-ei11",
+    "locator": "EI XI no. 31, lines 11–12"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Devi_Mahatmya"
    }
   ]
  },
