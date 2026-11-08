@@ -116,14 +116,14 @@ function Literature({ subject }: { subject?: string }) {
   const store = useStore()
   const clock = useClock(-1200)
   const [col, setCol] = useState('')
-  const texts = useMemo(() => store.real.filter((n) => n.type === 'text' && store.dateOf(n.id)), [store])
+  const texts = useMemo(() => store.real.filter((n) => n.type === 'text' && store.dateOf(n.id, 'scholarly-textual', 'earliest')), [store])
   const cols = useMemo(() => store.real.filter((n) => n.type === 'collection'), [store])
   const rows = texts
     .filter((t) => !col || t.m.corpora.includes(col))
-    .sort((a, b) => store.dateOf(a.id)!.start! - store.dateOf(b.id)!.start!)
+    .sort((a, b) => store.dateOf(a.id, 'scholarly-textual', 'earliest')!.start! - store.dateOf(b.id, 'scholarly-textual', 'earliest')!.start!)
   const lo = -1700, hi = 2026
   const x = (y: number) => `${((Math.max(lo, Math.min(hi, y)) - lo) / (hi - lo)) * 100}%`
-  const begun = rows.filter((t) => store.dateOf(t.id)!.start! <= clock.year)
+  const begun = rows.filter((t) => store.dateOf(t.id, 'scholarly-textual', 'earliest')!.start! <= clock.year)
   const surely = rows.filter((t) => { const ds = (t.dates ?? []).filter((d) => d.system === 'scholarly-textual' && typeof d.end === 'number'); return ds.length && Math.max(...ds.map((d) => d.end!)) <= clock.year })
   const markers = useMemo(() => {
     const m = new Map<string, { y: number; node: GNode; kind: string }[]>()
@@ -150,7 +150,7 @@ function Literature({ subject }: { subject?: string }) {
           <ul className="max-h-[62vh] overflow-auto scroll-thin">
             {rows.map((t) => {
               const ds = (t.dates ?? []).filter((d) => d.system === 'scholarly-textual' && typeof d.start === 'number')
-              const on = store.dateOf(t.id)!.start! <= clock.year
+              const on = store.dateOf(t.id, 'scholarly-textual', 'earliest')!.start! <= clock.year
               return (
                 <li key={t.id} className="grid grid-cols-[34%_1fr] items-center gap-2 py-1 border-b border-night-rule/50" style={{ opacity: on ? 1 : 0.28, transition: 'opacity .3s' }}>
                   <a href={entityHref(t.id)} className="truncate text-[12.5px] hover:underline" title={t.name}>{t.name}</a>
@@ -169,7 +169,7 @@ function Literature({ subject }: { subject?: string }) {
           <div><span className="display text-3xl font-semibold">{begun.length}</span> works had begun to take shape <span className="text-night-ink-2">by the earliest scholarly estimate</span></div>
           <div><span className="display text-3xl font-semibold">{surely.length}</span> were complete <span className="text-night-ink-2">even by the latest estimate</span></div>
           <p className="text-[12px] text-night-ink-2 leading-relaxed">The two counts bracket the uncertainty instead of hiding it. Composition estimates rest on language, metre, internal references and external citations; they are revised as scholarship moves.</p>
-          <div className="text-[12px]"><div className="text-night-ink-2 mb-1">Newest by earliest estimate:</div>{begun.slice(-6).reverse().map((t) => <div key={t.id}><a className="hover:underline" href={entityHref(t.id)}>{t.name}</a> <span className="text-night-ink-2">{store.dateOf(t.id)!.label}</span></div>)}</div>
+          <div className="text-[12px]"><div className="text-night-ink-2 mb-1">Newest by earliest estimate:</div>{begun.slice(-6).reverse().map((t) => <div key={t.id}><a className="hover:underline" href={entityHref(t.id)}>{t.name}</a> <span className="text-night-ink-2">{store.dateOf(t.id, 'scholarly-textual', 'earliest')!.label}</span></div>)}</div>
         </div>
       </div>
     </div>

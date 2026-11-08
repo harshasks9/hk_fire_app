@@ -128,18 +128,60 @@ export function SourceCite({ r }: { r: SourceRef }) {
   )
 }
 
-export function SourceList({ refs, max = 6 }: { refs: SourceRef[]; max?: number }) {
+/** Cites a list of references, grouping several locators in the same source into one line. */
+export function SourceList({ refs, max = 6, compact = false }: { refs: SourceRef[]; max?: number; compact?: boolean }) {
   const [all, setAll] = useState(false)
-  const list = all ? refs : refs.slice(0, max)
+  const groups: SourceRef[][] = []
+  for (const r of refs) {
+    const g = groups.find((x) => x[0].source === r.source && x[0].edition === r.edition)
+    if (g) g.push(r)
+    else groups.push([r])
+  }
+  const list = all ? groups : groups.slice(0, max)
   return (
     <ul className="space-y-1.5">
-      {list.map((r, i) => (
-        <li key={i}><SourceCite r={r} /></li>
+      {list.map((g, i) => (
+        <li key={i}><SourceGroup refs={g} compact={compact} /></li>
       ))}
-      {refs.length > max && !all ? (
-        <li><button className="text-xs link" onClick={() => setAll(true)}>+ {refs.length - max} more sources</button></li>
+      {groups.length > max && !all ? (
+        <li><button className="text-xs link" onClick={() => setAll(true)}>+ {groups.length - max} more sources</button></li>
       ) : null}
     </ul>
+  )
+}
+
+function shortAuthor(a?: string): string | undefined {
+  if (!a) return undefined
+  const first = a.split(/[;,]| and /)[0].trim()
+  return first.length > 46 ? first.slice(0, 44) + '…' : first
+}
+
+function SourceGroup({ refs, compact }: { refs: SourceRef[]; compact: boolean }) {
+  const { sourceById } = useStore()
+  const s = sourceById.get(refs[0].source)
+  const url = refs[0].url ?? s?.url
+  const year = s?.year?.replace(/\s*\(.*\)\s*$/, '')
+  const locs = refs.map((r) => r.locator).filter(Boolean) as string[]
+  const quotes = refs.map((r) => r.quote).filter(Boolean) as string[]
+  return (
+    <span className="text-[12.5px] text-ink-2 leading-snug" title={s ? `${s.author ?? ''} — ${s.title}${s.publisher ? `. ${s.publisher}` : ''}${s.year ? `, ${s.year}` : ''}` : refs[0].source}>
+      {s ? (
+        <>
+          <span className="font-medium text-ink">{shortAuthor(s.author) ?? s.title}{year ? ` (${year})` : ''}</span>
+          {s.author && !compact ? <span className="italic">, {s.title.length > 90 ? s.title.slice(0, 88) + '…' : s.title}</span> : null}
+        </>
+      ) : (
+        <span className="text-ink-3">{refs[0].source}</span>
+      )}
+      {locs.length ? <span className="ml-1 font-mono text-[11.5px] text-ink">· {locs.join(' · ')}</span> : null}
+      {refs[0].edition ? <span className="ml-1 text-ink-3">({refs[0].edition})</span> : null}
+      {url ? (
+        <a href={url} target="_blank" rel="noreferrer" className="ml-1 inline-flex items-center text-gold hover:underline" aria-label="Open source in a new tab">
+          <ExternalLink size={11} />
+        </a>
+      ) : null}
+      {quotes.map((q, i) => <span key={i} className="block mt-1 pl-2 border-l-2 italic text-ink-2" style={{ borderColor: 'var(--gold-soft)' }}>“{q}”</span>)}
+    </span>
   )
 }
 

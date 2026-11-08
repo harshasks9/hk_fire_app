@@ -28,7 +28,7 @@ export function ComparisonTable({ c, compact = false }: { c: Comparison; compact
                     {d ? <div className="text-[11px] text-ink-3 mt-0.5">{d.label}</div> : null}
                   </td>
                   <td className="!text-ink leading-relaxed">{r.statement}</td>
-                  {compact ? null : <td><StatusBadge status={r.status} /><div className="mt-1"><SourceList refs={r.sources} max={2} /></div></td>}
+                  {compact ? null : <td><StatusBadge status={r.status} /><div className="mt-1"><SourceList refs={r.sources} max={2} compact /></div></td>}
                 </tr>
               )
             })}

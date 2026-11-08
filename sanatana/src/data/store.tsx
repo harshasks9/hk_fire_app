@@ -66,7 +66,7 @@ export interface Store extends GraphData {
   neighbours: (id: string) => { edge: GEdge; other: GNode; dir: 'out' | 'in' }[]
   search: SearchIndex
   /** first numeric date of a system on an entity, or on its parent text for passages */
-  dateOf: (id: string, system?: DateClaim['system']) => DateClaim | undefined
+  dateOf: (id: string, system?: DateClaim['system'], mode?: 'conservative' | 'earliest') => DateClaim | undefined
   /** parent text of a passage (via PART_OF) */
   textOf: (id: string) => GNode | undefined
   real: GNode[]
@@ -97,8 +97,10 @@ function index(data: GraphData): Store {
     for (const e of out.get(id) ?? []) if (e.p === 'PART_OF') { const t = textOf(e.o, seen); if (t) return t }
     return undefined
   }
-  const dateOf = (id: string, system: DateClaim['system'] = 'scholarly-textual') => {
-    const pick = (n?: GNode) => (n?.dates ?? []).filter((d) => d.system === system && typeof d.start === 'number').sort((a, b) => a.start! - b.start!)[0]
+  /** For texts the default is the most conservative recorded scholarly view (latest start), so a
+   *  single early minority estimate never sets a text's displayed date; `earliest` is explicit. */
+  const dateOf = (id: string, system: DateClaim['system'] = 'scholarly-textual', mode: 'conservative' | 'earliest' = system === 'scholarly-textual' ? 'conservative' : 'earliest') => {
+    const pick = (n?: GNode) => (n?.dates ?? []).filter((d) => d.system === system && typeof d.start === 'number').sort((a, b) => (mode === 'earliest' ? a.start! - b.start! : b.start! - a.start!))[0]
     const n = byId.get(id)
     return pick(n) ?? (n?.type === 'passage' ? pick(textOf(id)) : undefined)
   }
