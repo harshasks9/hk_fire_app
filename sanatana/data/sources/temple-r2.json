@@ -1,0 +1,146 @@
+[
+ {
+  "id": "src:bhardwaj-1973",
+  "type": "scholarly-book",
+  "title": "Hindu Places of Pilgrimage in India: A Study in Cultural Geography",
+  "author": "Surinder Mohan Bhardwaj",
+  "year": "1973",
+  "publisher": "University of California Press, Berkeley",
+  "agent": "temple"
+ },
+ {
+  "id": "src:michell-1989",
+  "type": "scholarly-book",
+  "title": "The Penguin Guide to the Monuments of India, vol. 1: Buddhist, Jain, Hindu",
+  "author": "George Michell",
+  "year": "1989",
+  "publisher": "Viking / Penguin, London",
+  "agent": "temple"
+ },
+ {
+  "id": "src:dehejia-1986",
+  "type": "scholarly-book",
+  "title": "Yoginī Cult and Temples: A Tantric Tradition",
+  "author": "Vidya Dehejia",
+  "year": "1986",
+  "publisher": "National Museum, New Delhi",
+  "agent": "temple"
+ },
+ {
+  "id": "src:mccutchion-1972",
+  "type": "scholarly-book",
+  "title": "Late Mediaeval Temples of Bengal: Origins and Classification",
+  "author": "David J. McCutchion",
+  "year": "1972",
+  "publisher": "The Asiatic Society, Calcutta",
+  "agent": "temple"
+ },
+ {
+  "id": "src:asher-1992",
+  "type": "scholarly-book",
+  "title": "Architecture of Mughal India (The New Cambridge History of India I.4)",
+  "author": "Catherine B. Asher",
+  "year": "1992",
+  "publisher": "Cambridge University Press",
+  "agent": "temple"
+ },
+ {
+  "id": "src:case-1996",
+  "type": "scholarly-book",
+  "title": "Govindadeva: A Dialogue in Stone",
+  "author": "Margaret H. Case (ed.)",
+  "year": "1996",
+  "publisher": "Indira Gandhi National Centre for the Arts, New Delhi",
+  "agent": "temple"
+ },
+ {
+  "id": "src:kak-1933",
+  "type": "scholarly-book",
+  "title": "Ancient Monuments of Kashmir",
+  "author": "Ram Chandra Kak",
+  "year": "1933",
+  "publisher": "The India Society, London",
+  "agent": "temple"
+ },
+ {
+  "id": "src:goetz-1955",
+  "type": "scholarly-book",
+  "title": "The Early Wooden Temples of Chamba",
+  "author": "Hermann Goetz",
+  "year": "1955",
+  "publisher": "E. J. Brill, Leiden",
+  "agent": "temple"
+ },
+ {
+  "id": "src:erndl-1993",
+  "type": "scholarly-book",
+  "title": "Victory to the Mother: The Hindu Goddess of Northwest India in Myth, Ritual, and Symbol",
+  "author": "Kathleen M. Erndl",
+  "year": "1993",
+  "publisher": "Oxford University Press, New York",
+  "agent": "temple"
+ },
+ {
+  "id": "src:kinney-2003",
+  "type": "scholarly-book",
+  "title": "Worshiping Siva and Buddha: The Temple Art of East Java",
+  "author": "Ann R. Kinney, with Marijke J. Klokke and Lydia Kieven",
+  "year": "2003",
+  "publisher": "University of Hawai‘i Press, Honolulu",
+  "agent": "temple"
+ },
+ {
+  "id": "src:jacques-lafond-2007",
+  "type": "scholarly-book",
+  "title": "The Khmer Empire: Cities and Sanctuaries from the 5th to the 13th Century",
+  "author": "Claude Jacques and Philippe Lafond",
+  "year": "2007",
+  "publisher": "River Books, Bangkok",
+  "agent": "temple"
+ },
+ {
+  "id": "src:strachan-1989",
+  "type": "scholarly-book",
+  "title": "Pagan: Art and Architecture of Old Burma",
+  "author": "Paul Strachan",
+  "year": "1989",
+  "publisher": "Kiscadale, Whiting Bay",
+  "agent": "temple"
+ },
+ {
+  "id": "src:barrett-1974",
+  "type": "scholarly-book",
+  "title": "Early Cola Architecture and Sculpture, 866–1014 A.D.",
+  "author": "Douglas Barrett",
+  "year": "1974",
+  "publisher": "Faber and Faber, London",
+  "agent": "temple"
+ },
+ {
+  "id": "src:cousens-1926",
+  "type": "excavation-report",
+  "title": "The Chalukyan Architecture of the Kanarese Districts (Archaeological Survey of India, New Imperial Series 42)",
+  "author": "Henry Cousens",
+  "year": "1926",
+  "publisher": "Government of India, Calcutta",
+  "agent": "temple"
+ },
+ {
+  "id": "src:feldhaus-2003",
+  "type": "scholarly-book",
+  "title": "Connected Places: Region, Pilgrimage, and Geographical Imagination in India",
+  "author": "Anne Feldhaus",
+  "year": "2003",
+  "publisher": "Palgrave Macmillan, New York",
+  "agent": "temple"
+ },
+ {
+  "id": "src:pathmanathan-1978",
+  "type": "scholarly-book",
+  "title": "The Kingdom of Jaffna, Part 1 (circa A.D. 1250–1450)",
+  "author": "S. Pathmanathan",
+  "year": "1978",
+  "publisher": "Colombo",
+  "agent": "temple"
+ }
+]

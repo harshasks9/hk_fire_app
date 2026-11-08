@@ -1,0 +1,2194 @@
+[
+ {
+  "id": "material:r2-1",
+  "s": "ins:junagadh-rudradaman",
+  "p": "INSCRIBED_AT",
+  "o": "site:girnar-junagadh",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, no. 67, pp. 175–180 (Junagarh rock inscription of Rudradāman I, year 72; Lüders List no. 965)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "rationale": "Sircar gives the findspot at the gorge leading to the Girnar valley near Junagadh.",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-2",
+  "s": "ins:junagadh-rudradaman",
+  "p": "COMMISSIONED_BY",
+  "o": "person:rudradaman-i",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, no. 67, pp. 175–180 (Junagarh rock inscription of Rudradāman I, year 72; Lüders List no. 965)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "rationale": "Record of Rudradāman, dated in his year 72.",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-3",
+  "s": "person:rudradaman-i",
+  "p": "MEMBER_OF",
+  "o": "pol:western-kshatrapa",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, no. 67, pp. 175–180 (Junagarh rock inscription of Rudradāman I, year 72; Lüders List no. 965)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "rationale": "Grandson of the king Mahākṣatrapa Caṣṭana and son of Jayadāman (line 4).",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-4",
+  "s": "ins:junagadh-rudradaman",
+  "p": "REFERS_TO",
+  "o": "person:chandragupta-maurya",
+  "qualifiers": {
+   "note": "the lake was made by his rāṣṭriya, the Vaiśya Puṣyagupta (line 8)"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, no. 67, pp. 175–180 (Junagarh rock inscription of Rudradāman I, year 72; Lüders List no. 965)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "rationale": "Line 8 of Sircar's text: mauryasya rājñaḥ candraguptasya rāṣṭriyeṇa vaiśyena puṣyaguptena kāritam.",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-5",
+  "s": "ins:junagadh-rudradaman",
+  "p": "REFERS_TO",
+  "o": "person:ashoka",
+  "qualifiers": {
+   "note": "conduits added by the Yavana king Tuṣāspha for Aśoka the Maurya (line 8)"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, no. 67, pp. 175–180 (Junagarh rock inscription of Rudradāman I, year 72; Lüders List no. 965)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-6",
+  "s": "person:chandragupta-maurya",
+  "p": "MEMBER_OF",
+  "o": "pol:maurya",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, no. 67, pp. 175–180 (Junagarh rock inscription of Rudradāman I, year 72; Lüders List no. 965)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-7",
+  "s": "person:ashoka",
+  "p": "MEMBER_OF",
+  "o": "pol:maurya",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, no. 67, pp. 175–180 (Junagarh rock inscription of Rudradāman I, year 72; Lüders List no. 965)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-8",
+  "s": "ins:allahabad-pillar-samudragupta",
+  "p": "COMMISSIONED_BY",
+  "o": "person:samudragupta",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00001"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 1"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III, no. 2",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-9",
+  "s": "ins:allahabad-pillar-samudragupta",
+  "p": "REFERS_TO",
+  "o": "person:samudragupta",
+  "qualifiers": {
+   "note": "genealogy in line 28–29: great-grandson of Gupta, grandson of Ghaṭotkaca, son of Candragupta and the Licchavi daughter Kumāradevī"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00001"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 1"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III, no. 2",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-10",
+  "s": "person:samudragupta",
+  "p": "MEMBER_OF",
+  "o": "pol:gupta",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00001"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 1"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III, no. 2",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-11",
+  "s": "person:harishena",
+  "p": "SERVES",
+  "o": "person:samudragupta",
+  "qualifiers": {
+   "role": "sāndhivigrahika, kumārāmātya, mahādaṇḍanāyaka"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00001"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 1"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III, no. 2",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-12",
+  "s": "ins:allahabad-pillar-samudragupta",
+  "p": "COMMISSIONED_BY",
+  "o": "person:harishena",
+  "qualifiers": {
+   "role": "composer of the kāvya"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00001"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 1"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III, no. 2",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "rationale": "\"etac ca kāvyam … hariṣeṇasya\" (lines 31–32).",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-13",
+  "s": "ins:allahabad-pillar-samudragupta",
+  "p": "REFERS_TO",
+  "o": "deity:shiva",
+  "qualifiers": {
+   "note": "as Paśupati, in a simile of the Gaṅgā escaping his matted locks (v. 9)"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00001"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 1"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III, no. 2",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-14",
+  "s": "ins:allahabad-pillar-samudragupta",
+  "p": "REFERS_TO",
+  "o": "deity:ganga",
+  "qualifiers": {
+   "note": "simile (v. 9)"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00001"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 1"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III, no. 2",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-15",
+  "s": "ins:allahabad-pillar-samudragupta",
+  "p": "REFERS_TO",
+  "o": "char:kubera",
+  "qualifiers": {
+   "note": "king equal to Dhanada, Varuṇa, Indra and Antaka (line 26)"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00001"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 1"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III, no. 2",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-16",
+  "s": "ins:allahabad-pillar-samudragupta",
+  "p": "REFERS_TO",
+  "o": "deity:indra",
+  "qualifiers": {
+   "note": "king compared to Indra (line 26)"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00001"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 1"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III, no. 2",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-17",
+  "s": "ins:allahabad-pillar-samudragupta",
+  "p": "REFERS_TO",
+  "o": "deity:varuna",
+  "qualifiers": {
+   "note": "king compared to Varuṇa (line 26)"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00001"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 1"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III, no. 2",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-18",
+  "s": "ins:allahabad-pillar-samudragupta",
+  "p": "INSCRIBED_AT",
+  "o": "place:prayaga",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00001"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 1"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III, no. 2",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Allahabad_Pillar"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "rationale": "The pillar stands in the Allahabad Fort; its original location (Kauśāmbī has been proposed) is debated.",
+  "competing": "Many scholars think the Aśokan pillar was moved to Allahabad from Kauśāmbī.",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-19",
+  "s": "ins:bhitari-skandagupta",
+  "p": "INSCRIBED_AT",
+  "o": "site:bhitari",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "vv. 8–11",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00036"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 13"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III, no. 28",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-20",
+  "s": "ins:bhitari-skandagupta",
+  "p": "COMMISSIONED_BY",
+  "o": "person:skandagupta",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "vv. 8–11",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00036"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 13"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III, no. 28",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-21",
+  "s": "ins:bhitari-skandagupta",
+  "p": "REFERS_TO",
+  "o": "deity:vishnu",
+  "qualifiers": {
+   "role": "installed image",
+   "note": "\"pratimāṃ tasya śārṅgiṇaḥ … cakāremām\" — an image of Śārṅgin (v. 10)"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "vv. 8–11",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00036"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 13"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III, no. 28",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-22",
+  "s": "ins:bhitari-skandagupta",
+  "p": "REFERS_TO",
+  "o": "pol:huna",
+  "qualifiers": {
+   "note": "\"hūṇair yasya samāgatasya samare\" (v. 8)"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "vv. 8–11",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00036"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 13"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III, no. 28",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-23",
+  "s": "ins:bhitari-skandagupta",
+  "p": "REFERS_TO",
+  "o": "person:kumaragupta-i",
+  "qualifiers": {
+   "note": "called parama-bhāgavata in the genealogy"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "vv. 8–11",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00036"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 13"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III, no. 28",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-24",
+  "s": "person:kumaragupta-i",
+  "p": "PARENT_OF",
+  "o": "person:skandagupta",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "vv. 8–11",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00036"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 13"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III, no. 28",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-25",
+  "s": "person:skandagupta",
+  "p": "MEMBER_OF",
+  "o": "pol:gupta",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "vv. 8–11",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00036"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 13"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III, no. 28",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-26",
+  "s": "person:skandagupta",
+  "p": "DEVOTEE_OF",
+  "o": "deity:vishnu",
+  "qualifiers": {
+   "tradition": "trad:vaishnava",
+   "note": "installs a Viṣṇu image"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "vv. 8–11",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00036"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 13"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III, no. 28",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-27",
+  "s": "ins:junagadh-skandagupta",
+  "p": "INSCRIBED_AT",
+  "o": "site:girnar-junagadh",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00032"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 14"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III, no. 25",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-28",
+  "s": "ins:junagadh-skandagupta",
+  "p": "REFERS_TO",
+  "o": "person:skandagupta",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00032"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 14"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III, no. 25",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-29",
+  "s": "ins:junagadh-skandagupta",
+  "p": "REFERS_TO",
+  "o": "deity:vishnu",
+  "qualifiers": {
+   "role": "invocation",
+   "note": "\"śriyam … yo baler ājahāra … sa jayati … viṣṇuḥ\" (v. 1)"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00032"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 14"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III, no. 25",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-30",
+  "s": "ins:junagadh-skandagupta",
+  "p": "REFERS_TO",
+  "o": "narr:vamana-bali",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00032"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 14"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III, no. 25",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "rationale": "v. 1: Viṣṇu took back Śrī (royal fortune) from Bali for the happiness of the lord of the gods.",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-31",
+  "s": "ins:junagadh-skandagupta",
+  "p": "REFERS_TO",
+  "o": "person:parnadatta",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00032"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 14"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III, no. 25",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-32",
+  "s": "ins:junagadh-skandagupta",
+  "p": "COMMISSIONED_BY",
+  "o": "person:chakrapalita",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00032"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 14"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III, no. 25",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "rationale": "Cakrapālita carried out the repair the record celebrates.",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-33",
+  "s": "person:parnadatta",
+  "p": "PARENT_OF",
+  "o": "person:chakrapalita",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00032"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 14"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III, no. 25",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-34",
+  "s": "person:parnadatta",
+  "p": "SERVES",
+  "o": "person:skandagupta",
+  "qualifiers": {
+   "role": "governor of Surāṣṭra"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00032"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 14"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III, no. 25",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-35",
+  "s": "ins:junagadh-skandagupta",
+  "p": "REFERS_TO",
+  "o": "deity:varuna",
+  "qualifiers": {
+   "note": "simile: as the gods appointed Varuṇa to the west, the king appointed Parṇadatta (v. 14)"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00032"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 14"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III, no. 25",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "low",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-36",
+  "s": "ins:mathura-pilaster-candragupta-ii",
+  "p": "REFERS_TO",
+  "o": "person:chandragupta-ii",
+  "qualifiers": {
+   "note": "regnal year 5; son of Samudragupta"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "lines 1–11",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00008"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III, no. 9",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-37",
+  "s": "person:samudragupta",
+  "p": "PARENT_OF",
+  "o": "person:chandragupta-ii",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "lines 1–11",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00008"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III, no. 9",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-38",
+  "s": "ins:mathura-pilaster-candragupta-ii",
+  "p": "COMMISSIONED_BY",
+  "o": "person:uditacharya",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "lines 1–11",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00008"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III, no. 9",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-39",
+  "s": "person:uditacharya",
+  "p": "MEMBER_OF",
+  "o": "trad:pashupata",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "lines 1–11",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00008"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III, no. 9",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Pashupata_Shaivism"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "rationale": "The record calls its community Māheśvaras and names a teacher line from Kuśika; the label Pāśupata is the scholarly identification.",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-40",
+  "s": "ins:mathura-pilaster-candragupta-ii",
+  "p": "REFERS_TO",
+  "o": "deity:shiva",
+  "qualifiers": {
+   "note": "liṅgas Upamiteśvara and Kapileśvara installed (line 9)"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "lines 1–11",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00008"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III, no. 9",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-41",
+  "s": "ins:mathura-pilaster-candragupta-ii",
+  "p": "FOUND_AT",
+  "o": "place:mathura",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "lines 1–11",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00008"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III, no. 9",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-42",
+  "s": "ins:bilsad-kumaragupta",
+  "p": "INSCRIBED_AT",
+  "o": "site:bilsad",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "lines 5–9",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00019"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 10"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III, no. 15",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-43",
+  "s": "ins:bilsad-kumaragupta",
+  "p": "REFERS_TO",
+  "o": "deity:skanda",
+  "qualifiers": {
+   "role": "temple deity",
+   "note": "\"bhagavataḥ … brahmaṇya-devasya … svāmi-mahāsenasyāyatane\" (lines 7–8)"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "lines 5–9",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00019"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 10"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III, no. 15",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-44",
+  "s": "ins:bilsad-kumaragupta",
+  "p": "REFERS_TO",
+  "o": "person:kumaragupta-i",
+  "qualifiers": {
+   "note": "regnal year 96 of the Gupta era"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "lines 5–9",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00019"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 10"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III, no. 15",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-45",
+  "s": "deity:skanda",
+  "p": "WORSHIPPED_AT",
+  "o": "site:bilsad",
+  "qualifiers": {
+   "note": "as Svāmi-Mahāsena, 415/416 CE"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "lines 5–9",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00019"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 10"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III, no. 15",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-46",
+  "s": "ins:talagunda-pillar",
+  "p": "INSCRIBED_AT",
+  "o": "site:talagunda",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "vv. 3–34",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham01050"
+   },
+   {
+    "source": "src:kielhorn-ei8-talagunda"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-47",
+  "s": "ins:talagunda-pillar",
+  "p": "COMMISSIONED_BY",
+  "o": "person:shantivarman-kadamba",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "vv. 3–34",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham01050"
+   },
+   {
+    "source": "src:kielhorn-ei8-talagunda"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-48",
+  "s": "ins:talagunda-pillar",
+  "p": "COMMISSIONED_BY",
+  "o": "person:kubja-poet",
+  "qualifiers": {
+   "role": "composer and engraver"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "vv. 3–34",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham01050"
+   },
+   {
+    "source": "src:kielhorn-ei8-talagunda"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "rationale": "\"kubjas sva-kāvyam idam aśmatale lilekha\" (v. 34).",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-49",
+  "s": "ins:talagunda-pillar",
+  "p": "REFERS_TO",
+  "o": "person:mayurasharman",
+  "qualifiers": {
+   "role": "dynastic founder"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "vv. 3–34",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham01050"
+   },
+   {
+    "source": "src:kielhorn-ei8-talagunda"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-50",
+  "s": "ins:talagunda-pillar",
+  "p": "REFERS_TO",
+  "o": "pol:pallava",
+  "qualifiers": {
+   "note": "Mayūraśarman studies at the Pallava capital (pallavendra-purī) and quarrels with a Pallava horseman (vv. 11–12)"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "vv. 3–34",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham01050"
+   },
+   {
+    "source": "src:kielhorn-ei8-talagunda"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-51",
+  "s": "ins:talagunda-pillar",
+  "p": "REFERS_TO",
+  "o": "deity:shiva",
+  "qualifiers": {
+   "note": "\"namo bhagavate sthāna-kundūra-vāsine mahādevāya\""
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "vv. 3–34",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham01050"
+   },
+   {
+    "source": "src:kielhorn-ei8-talagunda"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-52",
+  "s": "person:mayurasharman",
+  "p": "MEMBER_OF",
+  "o": "pol:kadamba",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "vv. 3–34",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham01050"
+   },
+   {
+    "source": "src:kielhorn-ei8-talagunda"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-53",
+  "s": "person:shantivarman-kadamba",
+  "p": "MEMBER_OF",
+  "o": "pol:kadamba",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "vv. 3–34",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham01050"
+   },
+   {
+    "source": "src:kielhorn-ei8-talagunda"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-54",
+  "s": "person:mayurasharman",
+  "p": "ADVERSARY_OF",
+  "o": "pol:pallava",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "vv. 3–34",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham01050"
+   },
+   {
+    "source": "src:kielhorn-ei8-talagunda"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "rationale": "The text narrates his armed revolt against the Pallavas after the quarrel.",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-55",
+  "s": "ins:kuram-plates",
+  "p": "COMMISSIONED_BY",
+  "o": "person:parameshvaravarman-i",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSPallava00046"
+   },
+   {
+    "source": "src:sii-1",
+    "locator": "no. 151"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-56",
+  "s": "person:parameshvaravarman-i",
+  "p": "MEMBER_OF",
+  "o": "pol:pallava",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSPallava00046"
+   },
+   {
+    "source": "src:sii-1",
+    "locator": "no. 151"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-57",
+  "s": "ins:kuram-plates",
+  "p": "REFERS_TO_TEXT",
+  "o": "text:mahabharata",
+  "qualifiers": {
+   "note": "provision for Bhārata recitation"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSPallava00046"
+   },
+   {
+    "source": "src:sii-1",
+    "locator": "no. 151"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kuram_copper_plates"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "rationale": "Provision for reciting the Bhārata reported in the secondary literature; not checked against the Tamil portion of the DHARMA text.",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-58",
+  "s": "ins:kuram-plates",
+  "p": "HELD_AT",
+  "o": "inst:government-museum-chennai",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "editorial note: photos by courtesy of Chennai Government Museum",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSPallava00046"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-59",
+  "s": "ins:kasakudi-plates",
+  "p": "COMMISSIONED_BY",
+  "o": "person:nandivarman-ii",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSIIv02p0i0073"
+   },
+   {
+    "source": "src:sii-2",
+    "locator": "no. 73, pp. 342–361"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-60",
+  "s": "ins:kasakudi-plates",
+  "p": "REFERS_TO",
+  "o": "char:ashvatthama",
+  "qualifiers": {
+   "role": "claimed ancestor",
+   "note": "mythic genealogy of the Pallavas"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSIIv02p0i0073"
+   },
+   {
+    "source": "src:sii-2",
+    "locator": "no. 73, pp. 342–361"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kasakudi_plates"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-61",
+  "s": "ins:kasakudi-plates",
+  "p": "REFERS_TO",
+  "o": "char:drona",
+  "qualifiers": {
+   "role": "claimed ancestor"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSIIv02p0i0073"
+   },
+   {
+    "source": "src:sii-2",
+    "locator": "no. 73, pp. 342–361"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kasakudi_plates"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-62",
+  "s": "ins:kasakudi-plates",
+  "p": "REFERS_TO",
+  "o": "char:bharadvaja",
+  "qualifiers": {
+   "role": "claimed ancestor"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSIIv02p0i0073"
+   },
+   {
+    "source": "src:sii-2",
+    "locator": "no. 73, pp. 342–361"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kasakudi_plates"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-63",
+  "s": "ins:kasakudi-plates",
+  "p": "REFERS_TO",
+  "o": "deity:brahma",
+  "qualifiers": {
+   "role": "head of the genealogy"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSIIv02p0i0073"
+   },
+   {
+    "source": "src:sii-2",
+    "locator": "no. 73, pp. 342–361"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kasakudi_plates"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-64",
+  "s": "ins:velurpalaiyam-plates",
+  "p": "REFERS_TO",
+  "o": "char:ashvatthama",
+  "qualifiers": {
+   "note": "Pallava origin from Aśvatthāman; Nāga marriage of Vīrakūrca (editor's note 1)"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSIIv02p0i0098"
+   },
+   {
+    "source": "src:sii-2",
+    "locator": "no. 98, pp. 501–517"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-65",
+  "s": "ins:velurpalaiyam-plates",
+  "p": "REFERS_TO",
+  "o": "pol:pallava",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSIIv02p0i0098"
+   },
+   {
+    "source": "src:sii-2",
+    "locator": "no. 98, pp. 501–517"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-66",
+  "s": "ins:tiruvalangadu-plates",
+  "p": "COMMISSIONED_BY",
+  "o": "person:rajendra-i",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSTamilNadu01005"
+   },
+   {
+    "source": "src:sii-3",
+    "locator": "no. 205"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-67",
+  "s": "person:rajendra-i",
+  "p": "MEMBER_OF",
+  "o": "pol:chola",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSTamilNadu01005"
+   },
+   {
+    "source": "src:sii-3",
+    "locator": "no. 205"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-68",
+  "s": "ins:tiruvalangadu-plates",
+  "p": "REFERS_TO",
+  "o": "char:manu",
+  "qualifiers": {
+   "role": "claimed ancestor",
+   "note": "mythic Cōḻa genealogy"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSTamilNadu01005"
+   },
+   {
+    "source": "src:sii-3",
+    "locator": "no. 205"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tiruvalangadu_plates"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-69",
+  "s": "ins:tiruvalangadu-plates",
+  "p": "REFERS_TO",
+  "o": "char:ikshvaku",
+  "qualifiers": {
+   "role": "claimed ancestor"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSTamilNadu01005"
+   },
+   {
+    "source": "src:sii-3",
+    "locator": "no. 205"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tiruvalangadu_plates"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-70",
+  "s": "ins:tiruvalangadu-plates",
+  "p": "REFERS_TO",
+  "o": "lin:suryavamsha",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSTamilNadu01005"
+   },
+   {
+    "source": "src:sii-3",
+    "locator": "no. 205"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tiruvalangadu_plates"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "rationale": "The genealogy places the Cōḻas in the solar line.",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-71",
+  "s": "ins:anbil-plates",
+  "p": "COMMISSIONED_BY",
+  "o": "person:sundara-chola",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSTamilNadu01003"
+   },
+   {
+    "source": "src:gopinatha-rao-ei15",
+    "locator": "EI XV, pp. 44–72"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-72",
+  "s": "person:sundara-chola",
+  "p": "MEMBER_OF",
+  "o": "pol:chola",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSTamilNadu01003"
+   },
+   {
+    "source": "src:gopinatha-rao-ei15",
+    "locator": "EI XV, pp. 44–72"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-73",
+  "s": "person:sundara-chola",
+  "p": "PARENT_OF",
+  "o": "person:rajaraja-i",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Parantaka_II"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Raja_Raja_I"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-74",
+  "s": "ins:anbil-plates",
+  "p": "REFERS_TO",
+  "o": "lin:suryavamsha",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSTamilNadu01003"
+   },
+   {
+    "source": "src:gopinatha-rao-ei15",
+    "locator": "EI XV, pp. 44–72"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Anbil_plates"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-75",
+  "s": "ins:uttaramerur-sabha",
+  "p": "INSCRIBED_AT",
+  "o": "site:uttaramerur",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Uttaramerur"
+   },
+   {
+    "source": "src:sii-3",
+    "locator": "Uttaramērūr records (assembly of Uttaramērūr-caturvedimaṅgalam), e.g. no. 160"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-76",
+  "s": "ins:uttaramerur-sabha",
+  "p": "REFERS_TO",
+  "o": "person:parantaka-i",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Uttaramerur"
+   },
+   {
+    "source": "src:sii-3",
+    "locator": "Uttaramērūr records (assembly of Uttaramērūr-caturvedimaṅgalam), e.g. no. 160"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-77",
+  "s": "site:uttaramerur",
+  "p": "BUILT_DURING",
+  "o": "pol:pallava",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "Uttiramērūr, time of Kampavarman, year 15",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSPallava00216"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Uttaramerur"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "rationale": "Pallava-period records at the site (Dantivarman, Kampavarman) precede the Cōḻa ones.",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-78",
+  "s": "ins:khajuraho-lakshmana",
+  "p": "INSCRIBED_AT",
+  "o": "temple:lakshmana-khajuraho",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:kielhorn-ei1-khajuraho",
+    "locator": "no. IV (inscription of Yaśovarman, Vikrama 1011)"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Lakshmana_Temple,_Khajuraho"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-79",
+  "s": "ins:khajuraho-lakshmana",
+  "p": "COMMISSIONED_BY",
+  "o": "person:yashovarman-chandela",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:kielhorn-ei1-khajuraho",
+    "locator": "no. IV (inscription of Yaśovarman, Vikrama 1011)"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Lakshmana_Temple,_Khajuraho"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-80",
+  "s": "ins:khajuraho-lakshmana",
+  "p": "REFERS_TO",
+  "o": "deity:vishnu",
+  "qualifiers": {
+   "note": "as Vaikuṇṭha"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:kielhorn-ei1-khajuraho",
+    "locator": "no. IV (inscription of Yaśovarman, Vikrama 1011)"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Lakshmana_Temple,_Khajuraho"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-81",
+  "s": "ins:belur-vishnuvardhana-1117",
+  "p": "INSCRIBED_AT",
+  "o": "temple:chennakeshava-belur",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Chennakeshava_Temple,_Belur"
+   },
+   {
+    "source": "src:rice-ec5",
+    "locator": "Belur taluk inscriptions (vol. V)"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-82",
+  "s": "ins:belur-vishnuvardhana-1117",
+  "p": "COMMISSIONED_BY",
+  "o": "person:vishnuvardhana-hoysala",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Chennakeshava_Temple,_Belur"
+   },
+   {
+    "source": "src:rice-ec5",
+    "locator": "Belur taluk inscriptions (vol. V)"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-83",
+  "s": "ins:belur-vishnuvardhana-1117",
+  "p": "REFERS_TO",
+  "o": "deity:vishnu",
+  "qualifiers": {
+   "note": "as Vijayanārāyaṇa / Keśava"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Chennakeshava_Temple,_Belur"
+   },
+   {
+    "source": "src:rice-ec5",
+    "locator": "Belur taluk inscriptions (vol. V)"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-84",
+  "s": "ins:mahakuta-pillar",
+  "p": "COMMISSIONED_BY",
+  "o": "person:mangalesha",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mahakuta_group_of_temples"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mangalesha"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-85",
+  "s": "ins:mahakuta-pillar",
+  "p": "REFERS_TO",
+  "o": "deity:shiva",
+  "qualifiers": {
+   "note": "as Makuṭeśvaranātha"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mahakuta_group_of_temples"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mangalesha"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-86",
+  "s": "person:mangalesha",
+  "p": "DEVOTEE_OF",
+  "o": "deity:shiva",
+  "qualifiers": {
+   "tradition": "trad:shaiva",
+   "note": "grant to a Śiva temple; contrast his Viṣṇu cave at Bādāmi"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mahakuta_group_of_temples"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mangalesha"
+   }
+  ],
+  "confidence": "low",
+  "status": "reference-checked",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ }
+]

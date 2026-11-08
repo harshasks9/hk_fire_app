@@ -112,10 +112,18 @@ export function checkDataset(ds: Dataset): { issues: Issue[]; entities: Map<stri
 
   // sources
   const sources = new Map<string, Source>()
+  const sourceFile = new Map<string, string>()
   for (const f of ds.sources) {
     for (const s of f.items) {
       if (!s?.id) { issues.push({ severity: 'error', file: f.file, id: '?', message: 'source without id' }); continue }
-      if (sources.has(s.id)) { issues.push({ severity: 'error', file: f.file, id: s.id, message: 'duplicate source id' }); continue }
+      if (sources.has(s.id)) {
+        const first = sourceFile.get(s.id)!
+        const msg = `source id defined twice — in ${first.replace(/.*\/data\//, 'data/')} and ${f.file.replace(/.*\/data\//, 'data/')}; the later definer should delete its copy and cite the existing id`
+        issues.push({ severity: 'error', file: f.file, id: s.id, message: msg })
+        issues.push({ severity: 'error', file: first, id: s.id, message: msg })
+        continue
+      }
+      sourceFile.set(s.id, f.file)
       if (!s.id.startsWith('src:')) issues.push({ severity: 'error', file: f.file, id: s.id, message: 'source id must start with "src:"' })
       if (!SOURCE_TYPES.has(s.type)) issues.push({ severity: 'error', file: f.file, id: s.id, message: `unknown source type "${s.type}"` })
       if (!s.title) issues.push({ severity: 'error', file: f.file, id: s.id, message: 'source without title' })

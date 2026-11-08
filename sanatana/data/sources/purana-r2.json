@@ -1,0 +1,29 @@
+[
+ {
+  "id": "src:hawley-1983",
+  "type": "scholarly-book",
+  "title": "Krishna, the Butter Thief",
+  "author": "John Stratton Hawley",
+  "year": "1983",
+  "publisher": "Princeton University Press",
+  "agent": "purana"
+ },
+ {
+  "id": "src:schweig-2005",
+  "type": "scholarly-book",
+  "title": "Dance of Divine Love: The Rāsa Līlā of Krishna from the Bhāgavata Purāṇa, India's Classic Sacred Love Story",
+  "author": "Graham M. Schweig",
+  "year": "2005",
+  "publisher": "Princeton University Press",
+  "agent": "purana"
+ },
+ {
+  "id": "src:sohnen-schreiner-1989",
+  "type": "scholarly-book",
+  "title": "Brahmapurāṇa: Summary of Contents, with Index of Names and Motifs (Purāṇa Research Publications Tübingen 2)",
+  "author": "Renate Söhnen and Peter Schreiner",
+  "year": "1989",
+  "publisher": "Otto Harrassowitz, Wiesbaden",
+  "agent": "purana"
+ }
+]

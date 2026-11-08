@@ -1,0 +1,5964 @@
+[
+ {
+  "id": "purana:r2-1",
+  "s": "narr:putana-slaying",
+  "p": "NARRATED_IN",
+  "o": "text:harivamsha",
+  "qualifiers": {
+   "note": "Pūtanā as a night-bird (śakunī), told after the cart episode (50.4–19)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 50.20–24",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt",
+    "quote": "pūtanā nāma śakunī"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-2",
+  "s": "narr:putana-slaying",
+  "p": "NARRATED_IN",
+  "o": "text:vishnu-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.5.7–23",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-3",
+  "s": "narr:putana-slaying",
+  "p": "NARRATED_IN",
+  "o": "text:bhagavata-purana",
+  "qualifiers": {
+   "note": "framed as Pūtanā's liberation (pūtanā-mokṣa, 10.6.44)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.6.1–44",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-4",
+  "s": "narr:putana-slaying",
+  "p": "NARRATED_IN",
+  "o": "text:brahma-purana",
+  "qualifiers": {
+   "note": "verbatim parallel of ViP 5.5"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BrP 184.7–21",
+    "edition": "Brahmapurāṇa 1–246, Tübingen Purāṇa Project (P. Schreiner, R. Söhnen-Thieme); GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_brahmapurANa-1-246.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-5",
+  "s": "narr:putana-slaying",
+  "p": "NARRATED_IN",
+  "o": "text:agni-purana",
+  "qualifiers": {
+   "note": "one-line summary in Agni's Harivaṃśa digest"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "AgP 12.14–18",
+    "edition": "Rajendralal Mitra ed. (Bibliotheca Indica 1870–79); GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_agnipurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-6",
+  "s": "char:krishna",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:putana-slaying",
+  "qualifiers": {
+   "text": "text:harivamsha",
+   "role": "infant slayer"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 50.20–24",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-7",
+  "s": "char:putana",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:putana-slaying",
+  "qualifiers": {
+   "text": "text:harivamsha",
+   "role": "would-be killer, slain"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 50.20–24",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-8",
+  "s": "char:krishna",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:putana-slaying",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "infant slayer"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.5.7–11",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-9",
+  "s": "char:putana",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:putana-slaying",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "would-be killer, slain"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.5.7–11",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-10",
+  "s": "char:krishna",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:putana-slaying",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "infant slayer"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.6.1–17",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-11",
+  "s": "char:putana",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:putana-slaying",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "would-be killer, slain"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.6.1–17",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-12",
+  "s": "char:kamsa",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:putana-slaying",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "sender"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.6.2",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt",
+    "quote": "kaṃsena prahitā ghorā pūtanā bāla-ghātinī"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-13",
+  "s": "char:yashoda",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:putana-slaying",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "mother; performs protective rites"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.6.19–29",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-14",
+  "s": "char:krishna",
+  "p": "SLAYS",
+  "o": "char:putana",
+  "qualifiers": {
+   "text": "text:vishnu-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.5.10",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-15",
+  "s": "char:krishna",
+  "p": "SLAYS",
+  "o": "char:putana",
+  "qualifiers": {
+   "text": "text:harivamsha"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 50.23–24",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-16",
+  "s": "narr:putana-slaying",
+  "p": "OCCURS_AT",
+  "o": "place:vrindavan",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "note": "Nanda's settlement (Gokula/Vraja) before the move to Vṛndāvana; the graph has one Vraja place node"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.6.4",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt",
+    "quote": "pūtanā nanda-gokulam"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-17",
+  "s": "narr:shakata-overturned",
+  "p": "NARRATED_IN",
+  "o": "text:harivamsha",
+  "qualifiers": {
+   "note": "told before Pūtanā in the CE"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 50.4–19",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt",
+    "quote": "sa tatraikena pādena śakaṭaṃ paryavartayat"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-18",
+  "s": "narr:shakata-overturned",
+  "p": "NARRATED_IN",
+  "o": "text:vishnu-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.6.1–8",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+    "quote": "tasya pādaprahāreṇa śakaṭaṃ parivartitam"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-19",
+  "s": "narr:shakata-overturned",
+  "p": "NARRATED_IN",
+  "o": "text:bhagavata-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.7.4–17",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-20",
+  "s": "narr:shakata-overturned",
+  "p": "NARRATED_IN",
+  "o": "text:agni-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "AgP 12.17",
+    "edition": "Rajendralal Mitra ed. (Bibliotheca Indica 1870–79); GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_agnipurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-21",
+  "s": "char:krishna",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:shakata-overturned",
+  "qualifiers": {
+   "text": "text:harivamsha",
+   "role": "infant who overturns the cart"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 50.4–19",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-22",
+  "s": "char:krishna",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:shakata-overturned",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "infant who overturns the cart"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.6.1–8",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-23",
+  "s": "char:krishna",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:shakata-overturned",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "infant who overturns the cart"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.7.4–17",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-24",
+  "s": "char:yashoda",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:shakata-overturned",
+  "qualifiers": {
+   "text": "text:harivamsha",
+   "role": "mother"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 50.4–19",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-25",
+  "s": "narr:putana-slaying",
+  "p": "PRECEDES",
+  "o": "narr:shakata-overturned",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "note": "story-world order in ViP and BhP"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.5–5.6",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-26",
+  "s": "narr:shakata-overturned",
+  "p": "PRECEDES",
+  "o": "narr:putana-slaying",
+  "qualifiers": {
+   "text": "text:harivamsha",
+   "note": "the Harivaṃśa reverses the order"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 50.4–24",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-27",
+  "s": "narr:trinavarta-slaying",
+  "p": "NARRATED_IN",
+  "o": "text:bhagavata-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.7.18–33",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt",
+    "quote": "daityo nāmnā tṛṇāvartaḥ kaṃsa-bhṛtyaḥ praṇoditaḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-28",
+  "s": "char:krishna",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:trinavarta-slaying",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "slayer"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.7.26–29",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-29",
+  "s": "char:trinavarta",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:trinavarta-slaying",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "slain"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.7.20–29",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-30",
+  "s": "char:krishna",
+  "p": "SLAYS",
+  "o": "char:trinavarta",
+  "qualifiers": {
+   "text": "text:bhagavata-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.7.26–29; 10.26.6",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-31",
+  "s": "narr:damodara-binding",
+  "p": "NARRATED_IN",
+  "o": "text:harivamsha",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 51.14–36",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt",
+    "quote": "ghoṣe dāmodara iti gopībhiḥ parigīyate"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-32",
+  "s": "narr:damodara-binding",
+  "p": "NARRATED_IN",
+  "o": "text:vishnu-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.6.9–20",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+    "quote": "tataś ca dāmodaratāṃ sa yayau dāmabandhanāt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-33",
+  "s": "narr:damodara-binding",
+  "p": "NARRATED_IN",
+  "o": "text:bhagavata-purana",
+  "qualifiers": {
+   "note": "adds the butter theft (10.8.29), the too-short rope (10.9.15–18) and the cursed yakṣas"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.8.29–31; 10.9.1–23; 10.10.1–43",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-34",
+  "s": "narr:damodara-binding",
+  "p": "NARRATED_IN",
+  "o": "text:agni-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "AgP 12.17",
+    "edition": "Rajendralal Mitra ed. (Bibliotheca Indica 1870–79); GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_agnipurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-35",
+  "s": "char:krishna",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:damodara-binding",
+  "qualifiers": {
+   "text": "text:harivamsha",
+   "role": "child bound to the mortar"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 51.14–36",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-36",
+  "s": "char:yashoda",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:damodara-binding",
+  "qualifiers": {
+   "text": "text:harivamsha",
+   "role": "binds him"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 51.14–36",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-37",
+  "s": "char:krishna",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:damodara-binding",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "child bound to the mortar"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.6.14–20",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-38",
+  "s": "char:yashoda",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:damodara-binding",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "binds him"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.6.14–20",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-39",
+  "s": "char:krishna",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:damodara-binding",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "child bound to the mortar"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.9.1–23",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-40",
+  "s": "char:yashoda",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:damodara-binding",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "binds him"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.9.1–23",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-41",
+  "s": "char:nalakubara-manigriva",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:damodara-binding",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "the twin trees, released"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.10.23–43",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt",
+    "quote": "nalakūvara-maṇigrīvāv āsatur yamalārjunau"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-42",
+  "s": "char:narada",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:damodara-binding",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "curses the yakṣas"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.10.1–22",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-43",
+  "s": "char:narada",
+  "p": "CURSES",
+  "o": "char:nalakubara-manigriva",
+  "qualifiers": {
+   "text": "text:bhagavata-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.10.8–22",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-44",
+  "s": "narr:damodara-binding",
+  "p": "OCCURS_AT",
+  "o": "place:vrindavan",
+  "qualifiers": {
+   "text": "text:harivamsha",
+   "note": "in the cattle-station (ghoṣa/vraja); narrative place"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 51",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-45",
+  "s": "narr:aghasura-slaying",
+  "p": "NARRATED_IN",
+  "o": "text:bhagavata-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.12.13–35",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-46",
+  "s": "char:krishna",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:aghasura-slaying",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "slayer"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.12.27–31",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-47",
+  "s": "char:aghasura",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:aghasura-slaying",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "slain"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.12.13–31",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-48",
+  "s": "char:krishna",
+  "p": "SLAYS",
+  "o": "char:aghasura",
+  "qualifiers": {
+   "text": "text:bhagavata-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.12.31",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-49",
+  "s": "char:putana",
+  "p": "SIBLING_OF",
+  "o": "char:aghasura",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "note": "Agha is 'the younger brother of Bakī (Pūtanā) and Baka'"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.12.14",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt",
+    "quote": "bakī-bakānujaḥ"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-50",
+  "s": "narr:brahma-steals-calves",
+  "p": "NARRATED_IN",
+  "o": "text:bhagavata-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.13.15–64; 10.14.1–40",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt",
+    "quote": "ambhojanma-janis tad-antara-gato"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-51",
+  "s": "char:krishna",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:brahma-steals-calves",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "becomes the boys and calves"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.13.18–19",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-52",
+  "s": "deity:brahma",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:brahma-steals-calves",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "thief, then praiser"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.13.15; 10.14.1–40",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-53",
+  "s": "narr:aghasura-slaying",
+  "p": "PRECEDES",
+  "o": "narr:brahma-steals-calves",
+  "qualifiers": {
+   "text": "text:bhagavata-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.12–13",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-54",
+  "s": "narr:dhenuka-slaying",
+  "p": "NARRATED_IN",
+  "o": "text:harivamsha",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 57.12–24",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-55",
+  "s": "narr:dhenuka-slaying",
+  "p": "NARRATED_IN",
+  "o": "text:vishnu-purana",
+  "qualifiers": {
+   "note": "several verses of the vulgate (5.8.13*12) are starred insertions in Pathak's edition"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.8.1–13",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+    "quote": "tat tu tālavanaṃ nityaṃ dhenuko nāma dānavaḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-56",
+  "s": "narr:dhenuka-slaying",
+  "p": "NARRATED_IN",
+  "o": "text:bhagavata-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.15.20–40",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-57",
+  "s": "narr:dhenuka-slaying",
+  "p": "NARRATED_IN",
+  "o": "text:brahma-purana",
+  "qualifiers": {
+   "note": "parallel of ViP 5.8"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BrP 186.1–14",
+    "edition": "Brahmapurāṇa 1–246, Tübingen Purāṇa Project (P. Schreiner, R. Söhnen-Thieme); GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_brahmapurANa-1-246.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-58",
+  "s": "char:balarama",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:dhenuka-slaying",
+  "qualifiers": {
+   "text": "text:harivamsha",
+   "role": "slayer"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 57.12–24",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-59",
+  "s": "char:dhenuka",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:dhenuka-slaying",
+  "qualifiers": {
+   "text": "text:harivamsha",
+   "role": "slain"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 57.12–24",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-60",
+  "s": "char:krishna",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:dhenuka-slaying",
+  "qualifiers": {
+   "text": "text:harivamsha",
+   "role": "companion"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 57.12–24",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-61",
+  "s": "char:balarama",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:dhenuka-slaying",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "slayer"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.8.4–12",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-62",
+  "s": "char:dhenuka",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:dhenuka-slaying",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "slain"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.8.4–12",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-63",
+  "s": "char:krishna",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:dhenuka-slaying",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "companion"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.8.4–12",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-64",
+  "s": "char:balarama",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:dhenuka-slaying",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "slayer"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.15.27–35",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-65",
+  "s": "char:dhenuka",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:dhenuka-slaying",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "slain"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.15.27–35",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-66",
+  "s": "char:krishna",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:dhenuka-slaying",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "companion"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.15.27–35",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-67",
+  "s": "char:balarama",
+  "p": "SLAYS",
+  "o": "char:dhenuka",
+  "qualifiers": {
+   "text": "text:vishnu-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.8.8–12",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-68",
+  "s": "char:balarama",
+  "p": "SLAYS",
+  "o": "char:dhenuka",
+  "qualifiers": {
+   "text": "text:bhagavata-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.15.32–35",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-69",
+  "s": "narr:dhenuka-slaying",
+  "p": "OCCURS_AT",
+  "o": "place:talavana",
+  "qualifiers": {
+   "text": "text:vishnu-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.8.2",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-70",
+  "s": "narr:vastraharana",
+  "p": "NARRATED_IN",
+  "o": "text:bhagavata-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.22.1–28",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt",
+    "quote": "kātyāyani mahā-māye mahā-yoginy adhīśvari"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-71",
+  "s": "char:krishna",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:vastraharana",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "takes the garments"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.22.9–21",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-72",
+  "s": "char:gopis",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:vastraharana",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "keep the Kātyāyanī vow"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.22.1–7",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-73",
+  "s": "narr:vastraharana",
+  "p": "OCCURS_AT",
+  "o": "place:vrindavan",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "note": "on the Yamunā at Vraja; narrative place"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.22.1–7",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-74",
+  "s": "narr:rasa-lila",
+  "p": "NARRATED_IN",
+  "o": "text:harivamsha",
+  "qualifiers": {
+   "note": "the shortest version; no rāsa terminology in the constituted text"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 63.15–35",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt",
+    "quote": "evaṃ sa kṛṣṇo gopīnāṃ cakravālair alaṃkṛtaḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-75",
+  "s": "narr:rasa-lila",
+  "p": "NARRATED_IN",
+  "o": "text:vishnu-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.13.14–62",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+    "quote": "tataḥ pravavṛte rāsaś caladvalayanisvanaiḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-76",
+  "s": "narr:rasa-lila",
+  "p": "NARRATED_IN",
+  "o": "text:bhagavata-purana",
+  "qualifiers": {
+   "note": "the rāsa-pañcādhyāyī"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.29.1–10.33.39",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt",
+    "quote": "yogeśvareṇa kṛṣṇena tāsāṃ madhye dvayor dvayoḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-77",
+  "s": "narr:rasa-lila",
+  "p": "NARRATED_IN",
+  "o": "text:brahma-purana",
+  "qualifiers": {
+   "note": "parallel of ViP 5.13"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BrP 189.31–39",
+    "edition": "Brahmapurāṇa 1–246, Tübingen Purāṇa Project (P. Schreiner, R. Söhnen-Thieme); GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_brahmapurANa-1-246.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-78",
+  "s": "char:krishna",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:rasa-lila",
+  "qualifiers": {
+   "text": "text:harivamsha",
+   "role": "dancer, beloved"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 63.15–35",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-79",
+  "s": "char:gopis",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:rasa-lila",
+  "qualifiers": {
+   "text": "text:harivamsha",
+   "role": "dancers, lovers"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 63.15–35",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-80",
+  "s": "char:krishna",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:rasa-lila",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "dancer, beloved"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.13.14–62",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-81",
+  "s": "char:gopis",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:rasa-lila",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "dancers, lovers"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.13.14–62",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-82",
+  "s": "char:krishna",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:rasa-lila",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "dancer, beloved"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.29–33",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-83",
+  "s": "char:gopis",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:rasa-lila",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "dancers, lovers"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.29–33",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-84",
+  "s": "narr:rasa-lila",
+  "p": "OCCURS_AT",
+  "o": "place:vrindavan",
+  "qualifiers": {
+   "text": "text:bhagavata-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.29.1; 10.47.43",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-85",
+  "s": "narr:rasa-lila",
+  "p": "CENTRAL_TO",
+  "o": "trad:gaudiya",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:schweig-2005"
+   },
+   {
+    "source": "src:bryant-2007"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-86",
+  "s": "narr:akrura-journey",
+  "p": "NARRATED_IN",
+  "o": "text:harivamsha",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 65.92–70.39",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-87",
+  "s": "narr:akrura-journey",
+  "p": "NARRATED_IN",
+  "o": "text:vishnu-purana",
+  "qualifiers": {
+   "note": "the vision in the water at 5.18.33–46"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.17.1–5.18.58",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+    "quote": "dadhyau brahma paraṃ vipra praviśya yamunājale"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-88",
+  "s": "narr:akrura-journey",
+  "p": "NARRATED_IN",
+  "o": "text:bhagavata-purana",
+  "qualifiers": {
+   "note": "vision at 10.39.40–57; Akrūra's hymn 10.40"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.38.1–10.39.57; 10.40",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt",
+    "quote": "nimajjya tasmin salile japan brahma sanātanam"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-89",
+  "s": "char:akrura",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:akrura-journey",
+  "qualifiers": {
+   "text": "text:harivamsha",
+   "role": "envoy and visionary"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 68–70",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-90",
+  "s": "char:krishna",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:akrura-journey",
+  "qualifiers": {
+   "text": "text:harivamsha",
+   "role": "fetched to Mathurā"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 68–70",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-91",
+  "s": "char:akrura",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:akrura-journey",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "envoy and visionary"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.17–18",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-92",
+  "s": "char:krishna",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:akrura-journey",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "fetched to Mathurā"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.17–18",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-93",
+  "s": "char:akrura",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:akrura-journey",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "envoy and visionary"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.38–39",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-94",
+  "s": "char:krishna",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:akrura-journey",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "fetched to Mathurā"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.38–39",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-95",
+  "s": "char:kamsa",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:akrura-journey",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "sends Akrūra"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.15.9–23",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-96",
+  "s": "char:gopis",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:akrura-journey",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "lament Kṛṣṇa's departure"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.39.13–31",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-97",
+  "s": "char:akrura",
+  "p": "DEVOTEE_OF",
+  "o": "char:krishna",
+  "qualifiers": {
+   "text": "text:bhagavata-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.38.1–23; 10.40.1–30",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-98",
+  "s": "narr:akrura-journey",
+  "p": "PRECEDES",
+  "o": "narr:kamsa-vadha",
+  "qualifiers": {
+   "text": "text:vishnu-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.17–20",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-99",
+  "s": "narr:rasa-lila",
+  "p": "PRECEDES",
+  "o": "narr:akrura-journey",
+  "qualifiers": {
+   "text": "text:vishnu-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.13–17",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-100",
+  "s": "char:chanura",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:kamsa-vadha",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "wrestler slain by Kṛṣṇa"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.20.53–64",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-101",
+  "s": "char:chanura",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:kamsa-vadha",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "wrestler slain by Kṛṣṇa"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.44.1–24",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-102",
+  "s": "char:chanura",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:kamsa-vadha",
+  "qualifiers": {
+   "text": "text:harivamsha",
+   "role": "wrestler slain by Kṛṣṇa"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 75.7–45",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-103",
+  "s": "char:mushtika",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:kamsa-vadha",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "wrestler slain by Balarāma"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.20.53–68",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-104",
+  "s": "char:mushtika",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:kamsa-vadha",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "wrestler slain by Balarāma"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.44.24–28",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-105",
+  "s": "char:mushtika",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:kamsa-vadha",
+  "qualifiers": {
+   "text": "text:harivamsha",
+   "role": "wrestler slain by Balarāma"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 75.7; 76.1–9",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-106",
+  "s": "char:kuvalayapida",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:kamsa-vadha",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "elephant at the gate"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.20.22–30",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-107",
+  "s": "char:kuvalayapida",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:kamsa-vadha",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "elephant at the gate"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.43.1–18",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-108",
+  "s": "char:kuvalayapida",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:kamsa-vadha",
+  "qualifiers": {
+   "text": "text:harivamsha",
+   "role": "elephant at the gate"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 73.1; 74.17–34",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-109",
+  "s": "char:krishna",
+  "p": "SLAYS",
+  "o": "char:chanura",
+  "qualifiers": {
+   "text": "text:vishnu-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.20.62–64",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-110",
+  "s": "char:krishna",
+  "p": "SLAYS",
+  "o": "char:chanura",
+  "qualifiers": {
+   "text": "text:bhagavata-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.44.22–24",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-111",
+  "s": "char:krishna",
+  "p": "SLAYS",
+  "o": "char:chanura",
+  "qualifiers": {
+   "text": "text:harivamsha"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 75.40–44",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-112",
+  "s": "char:balarama",
+  "p": "SLAYS",
+  "o": "char:mushtika",
+  "qualifiers": {
+   "text": "text:vishnu-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.20.65–68",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-113",
+  "s": "char:balarama",
+  "p": "SLAYS",
+  "o": "char:mushtika",
+  "qualifiers": {
+   "text": "text:bhagavata-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.44.24–26",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-114",
+  "s": "char:balarama",
+  "p": "SLAYS",
+  "o": "char:mushtika",
+  "qualifiers": {
+   "text": "text:harivamsha"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 76.1–9",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt",
+    "quote": "jagrāha muṣṭikaṃ raṅge"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-115",
+  "s": "char:krishna",
+  "p": "SLAYS",
+  "o": "char:kuvalayapida",
+  "qualifiers": {
+   "text": "text:vishnu-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.20.30",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-116",
+  "s": "char:krishna",
+  "p": "SLAYS",
+  "o": "char:kuvalayapida",
+  "qualifiers": {
+   "text": "text:bhagavata-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.43.13–14",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-117",
+  "s": "char:chanura",
+  "p": "SERVES",
+  "o": "char:kamsa",
+  "qualifiers": {
+   "text": "text:vishnu-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.15.16",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+    "quote": "cāṇūramuṣṭikau mallau niyuddhakuśalau mama"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-118",
+  "s": "char:mushtika",
+  "p": "SERVES",
+  "o": "char:kamsa",
+  "qualifiers": {
+   "text": "text:vishnu-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.15.16",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-119",
+  "s": "narr:kalayavana-mucukunda",
+  "p": "NARRATED_IN",
+  "o": "text:harivamsha",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 85.15–67",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt",
+    "quote": "kṣaṇena kālayavanaṃ netratejovinirgataḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-120",
+  "s": "narr:kalayavana-mucukunda",
+  "p": "NARRATED_IN",
+  "o": "text:vishnu-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.23.1–46",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+    "quote": "tatkrodhajena maitreya bhasmībhūtaś ca tatkṣaṇāt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-121",
+  "s": "narr:kalayavana-mucukunda",
+  "p": "NARRATED_IN",
+  "o": "text:bhagavata-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.50.43–10.51.63",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt",
+    "quote": "deha-jenāgninā dagdho bhasma-sād abhavat kṣaṇāt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-122",
+  "s": "narr:kalayavana-mucukunda",
+  "p": "NARRATED_IN",
+  "o": "text:brahma-purana",
+  "qualifiers": {
+   "note": "parallel of ViP 5.23"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BrP 196.1–46",
+    "edition": "Brahmapurāṇa 1–246, Tübingen Purāṇa Project (P. Schreiner, R. Söhnen-Thieme); GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_brahmapurANa-1-246.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-123",
+  "s": "char:krishna",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:kalayavana-mucukunda",
+  "qualifiers": {
+   "text": "text:harivamsha",
+   "role": "lures Kālayavana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 85.38–66",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-124",
+  "s": "char:kalayavana",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:kalayavana-mucukunda",
+  "qualifiers": {
+   "text": "text:harivamsha",
+   "role": "burnt"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 85.38–66",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-125",
+  "s": "char:mucukunda",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:kalayavana-mucukunda",
+  "qualifiers": {
+   "text": "text:harivamsha",
+   "role": "burns him with his glance"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 85.38–66",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-126",
+  "s": "char:krishna",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:kalayavana-mucukunda",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "lures Kālayavana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.23.15–46",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-127",
+  "s": "char:kalayavana",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:kalayavana-mucukunda",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "burnt"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.23.15–46",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-128",
+  "s": "char:mucukunda",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:kalayavana-mucukunda",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "burns him with his glance"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.23.15–46",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-129",
+  "s": "char:krishna",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:kalayavana-mucukunda",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "lures Kālayavana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.51.1–63",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-130",
+  "s": "char:kalayavana",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:kalayavana-mucukunda",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "burnt"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.51.1–63",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-131",
+  "s": "char:mucukunda",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:kalayavana-mucukunda",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "burns him with his glance"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.51.1–63",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-132",
+  "s": "char:mucukunda",
+  "p": "SLAYS",
+  "o": "char:kalayavana",
+  "qualifiers": {
+   "text": "text:vishnu-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.23.19–23",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-133",
+  "s": "char:mucukunda",
+  "p": "SLAYS",
+  "o": "char:kalayavana",
+  "qualifiers": {
+   "text": "text:harivamsha"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 85.50–60",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-134",
+  "s": "char:mucukunda",
+  "p": "SLAYS",
+  "o": "char:kalayavana",
+  "qualifiers": {
+   "text": "text:bhagavata-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.51.12",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-135",
+  "s": "char:mandhatri",
+  "p": "PARENT_OF",
+  "o": "char:mucukunda",
+  "qualifiers": {
+   "text": "text:harivamsha"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 85.40",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt",
+    "quote": "māndhātus tu suto rājā mucukundo mahāyaśāḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-136",
+  "s": "char:mandhatri",
+  "p": "PARENT_OF",
+  "o": "char:mucukunda",
+  "qualifiers": {
+   "text": "text:bhagavata-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.38; 10.51.14",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-137",
+  "s": "char:mucukunda",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "text": "text:bhagavata-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.38",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-138",
+  "s": "char:mucukunda",
+  "p": "DEVOTEE_OF",
+  "o": "char:krishna",
+  "qualifiers": {
+   "text": "text:bhagavata-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.51.27–58",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-139",
+  "s": "char:jarasandha",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:kalayavana-mucukunda",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "besieger of Mathurā"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.22.1–5.23.15",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-140",
+  "s": "narr:kalayavana-mucukunda",
+  "p": "OCCURS_AT",
+  "o": "place:mathura",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "note": "the siege of Mathurā; the cave is unnamed in ViP"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.23.15",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-141",
+  "s": "narr:kamsa-vadha",
+  "p": "PRECEDES",
+  "o": "narr:kalayavana-mucukunda",
+  "qualifiers": {
+   "text": "text:vishnu-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.20–23",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-142",
+  "s": "narr:kalayavana-mucukunda",
+  "p": "PRECEDES",
+  "o": "narr:rukmini-abduction",
+  "qualifiers": {
+   "text": "text:vishnu-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.23–26",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-143",
+  "s": "narr:rukmini-abduction",
+  "p": "NARRATED_IN",
+  "o": "text:vishnu-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.26.1–11",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+    "quote": "nirjitya rukmiṇaṃ samyag upayeme sa rukmiṇīm"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-144",
+  "s": "char:krishna",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:rukmini-abduction",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "abductor-groom"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.26.1–11",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-145",
+  "s": "char:rukmini",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:rukmini-abduction",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "bride"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.26.1–11",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-146",
+  "s": "char:rukmini",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:rukmini-abduction",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "bride; writes to Kṛṣṇa"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.52.37–44",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-147",
+  "s": "char:krishna",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:rukmini-abduction",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "abductor-groom"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.53–54",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-148",
+  "s": "narr:syamantaka",
+  "p": "NARRATED_IN",
+  "o": "text:harivamsha",
+  "qualifiers": {
+   "note": "in the genealogical Harivaṃśaparvan"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 28.11–29.40",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt",
+    "quote": "divyaṃ syamantakaṃ nāma samudrād upalabdhavān"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-149",
+  "s": "narr:syamantaka",
+  "p": "NARRATED_IN",
+  "o": "text:vishnu-purana",
+  "qualifiers": {
+   "note": "prose, inside the Yādava genealogy of book 4"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.13.1–57",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-150",
+  "s": "narr:syamantaka",
+  "p": "NARRATED_IN",
+  "o": "text:bhagavata-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.56.1–10.57.42",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-151",
+  "s": "narr:syamantaka",
+  "p": "NARRATED_IN",
+  "o": "text:brahma-purana",
+  "qualifiers": {
+   "note": "close parallel of HV 28–29 but with the jewel from the Sun"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BrP 16.12–17.40",
+    "edition": "Brahmapurāṇa 1–246, Tübingen Purāṇa Project (P. Schreiner, R. Söhnen-Thieme); GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_brahmapurANa-1-246.txt",
+    "quote": "divyaṃ syamantakaṃ nāma sa sūryād upalabdhavān"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-152",
+  "s": "char:krishna",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:syamantaka",
+  "qualifiers": {
+   "text": "text:harivamsha",
+   "role": "accused; recovers the jewel"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 28.11–29.40",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-153",
+  "s": "char:jambavan",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:syamantaka",
+  "qualifiers": {
+   "text": "text:harivamsha",
+   "role": "bear-king; fights Kṛṣṇa"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 28.11–29.40",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-154",
+  "s": "char:satrajit",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:syamantaka",
+  "qualifiers": {
+   "text": "text:harivamsha",
+   "role": "owner of the jewel"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 28.11–29.40",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-155",
+  "s": "char:prasena",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:syamantaka",
+  "qualifiers": {
+   "text": "text:harivamsha",
+   "role": "killed by a lion"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 28.11–29.40",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-156",
+  "s": "char:shatadhanvan",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:syamantaka",
+  "qualifiers": {
+   "text": "text:harivamsha",
+   "role": "kills Satrājit"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 28.11–29.40",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-157",
+  "s": "char:akrura",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:syamantaka",
+  "qualifiers": {
+   "text": "text:harivamsha",
+   "role": "keeper of the jewel"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 28.11–29.40",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-158",
+  "s": "char:jambavati",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:syamantaka",
+  "qualifiers": {
+   "text": "text:harivamsha",
+   "role": "given in marriage"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 28.11–29.40",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-159",
+  "s": "char:krishna",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:syamantaka",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "accused; recovers the jewel"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.13",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-160",
+  "s": "char:jambavan",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:syamantaka",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "bear-king; fights Kṛṣṇa"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.13",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-161",
+  "s": "char:satrajit",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:syamantaka",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "owner of the jewel"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.13",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-162",
+  "s": "char:prasena",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:syamantaka",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "killed by a lion"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.13",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-163",
+  "s": "char:shatadhanvan",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:syamantaka",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "kills Satrājit"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.13",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-164",
+  "s": "char:akrura",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:syamantaka",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "keeper of the jewel"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.13",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-165",
+  "s": "char:jambavati",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:syamantaka",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "given in marriage"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.13",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-166",
+  "s": "char:krishna",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:syamantaka",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "accused; recovers the jewel"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.56–57",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-167",
+  "s": "char:jambavan",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:syamantaka",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "bear-king; fights Kṛṣṇa"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.56–57",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-168",
+  "s": "char:satrajit",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:syamantaka",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "owner of the jewel"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.56–57",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-169",
+  "s": "char:prasena",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:syamantaka",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "killed by a lion"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.56–57",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-170",
+  "s": "char:shatadhanvan",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:syamantaka",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "kills Satrājit"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.56–57",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-171",
+  "s": "char:akrura",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:syamantaka",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "keeper of the jewel"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.56–57",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-172",
+  "s": "char:jambavati",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:syamantaka",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "given in marriage"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.56–57",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-173",
+  "s": "char:krishna",
+  "p": "SPOUSE_OF",
+  "o": "char:jambavati",
+  "qualifiers": {
+   "text": "text:harivamsha"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 28.28",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt",
+    "quote": "lebhe jāmbavatīṃ kanyām ṛkṣarājasya saṃmatām"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-174",
+  "s": "char:krishna",
+  "p": "SPOUSE_OF",
+  "o": "char:jambavati",
+  "qualifiers": {
+   "text": "text:vishnu-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.13.21–24",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-175",
+  "s": "char:krishna",
+  "p": "SPOUSE_OF",
+  "o": "char:jambavati",
+  "qualifiers": {
+   "text": "text:bhagavata-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.56.32",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-176",
+  "s": "char:jambavan",
+  "p": "PARENT_OF",
+  "o": "char:jambavati",
+  "qualifiers": {
+   "text": "text:vishnu-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.13.21",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-177",
+  "s": "char:jambavan",
+  "p": "PARENT_OF",
+  "o": "char:jambavati",
+  "qualifiers": {
+   "text": "text:bhagavata-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.56.32",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-178",
+  "s": "char:jambavati",
+  "p": "PARENT_OF",
+  "o": "char:samba",
+  "qualifiers": {
+   "text": "text:vishnu-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.32.2; 5.35.4",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-179",
+  "s": "char:jambavati",
+  "p": "PARENT_OF",
+  "o": "char:samba",
+  "qualifiers": {
+   "text": "text:bhagavata-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.61.12; 10.68.1",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-180",
+  "s": "char:jambavati",
+  "p": "PARENT_OF",
+  "o": "char:samba",
+  "qualifiers": {
+   "text": "text:harivamsha"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 98.8; 100.1",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-181",
+  "s": "char:satrajit",
+  "p": "PARENT_OF",
+  "o": "char:satyabhama",
+  "qualifiers": {
+   "text": "text:vishnu-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.13.24",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-182",
+  "s": "char:satrajit",
+  "p": "PARENT_OF",
+  "o": "char:satyabhama",
+  "qualifiers": {
+   "text": "text:bhagavata-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.56.44",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-183",
+  "s": "char:krishna",
+  "p": "SPOUSE_OF",
+  "o": "char:satyabhama",
+  "qualifiers": {
+   "text": "text:vishnu-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.13.24",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-184",
+  "s": "char:satrajit",
+  "p": "SIBLING_OF",
+  "o": "char:prasena",
+  "qualifiers": {
+   "text": "text:harivamsha"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 28.11",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-185",
+  "s": "char:shatadhanvan",
+  "p": "SLAYS",
+  "o": "char:satrajit",
+  "qualifiers": {
+   "text": "text:vishnu-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.13.27",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-186",
+  "s": "char:shatadhanvan",
+  "p": "SLAYS",
+  "o": "char:satrajit",
+  "qualifiers": {
+   "text": "text:harivamsha"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 29.3",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-187",
+  "s": "char:krishna",
+  "p": "SLAYS",
+  "o": "char:shatadhanvan",
+  "qualifiers": {
+   "text": "text:vishnu-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.13.34",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-188",
+  "s": "char:krishna",
+  "p": "SLAYS",
+  "o": "char:shatadhanvan",
+  "qualifiers": {
+   "text": "text:bhagavata-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.57.20–22",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-189",
+  "s": "char:jambavan",
+  "p": "DEVOTEE_OF",
+  "o": "char:rama",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "note": "In the Bhāgavata Jāmbavān recognises in Kṛṣṇa his master Rāma; the epic bear-king and the Syamantaka bear are thus one figure for this text"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.56.26–28",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.83.10",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt",
+    "quote": "sītā-patiṃ tri-navāhāny amunābhyayudhyat"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-190",
+  "s": "narr:syamantaka",
+  "p": "OCCURS_AT",
+  "o": "place:dvaraka",
+  "qualifiers": {
+   "text": "text:harivamsha",
+   "note": "'as Dvāravatī was being settled'"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 28.12",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-191",
+  "s": "narr:narakasura-slaying",
+  "p": "NARRATED_IN",
+  "o": "text:harivamsha",
+  "qualifiers": {
+   "note": "Naraka's crimes and death; the Pārijāta episode follows"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 91.1–59",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-192",
+  "s": "narr:narakasura-slaying",
+  "p": "NARRATED_IN",
+  "o": "text:vishnu-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.29.1–35",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+    "quote": "bhaumo 'yaṃ narako nāma prāgjyotiṣapureśvaraḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-193",
+  "s": "narr:narakasura-slaying",
+  "p": "NARRATED_IN",
+  "o": "text:bhagavata-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.59.1–44",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-194",
+  "s": "narr:narakasura-slaying",
+  "p": "NARRATED_IN",
+  "o": "text:brahma-purana",
+  "qualifiers": {
+   "note": "parallel of ViP 5.29"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BrP 202.1–35",
+    "edition": "Brahmapurāṇa 1–246, Tübingen Purāṇa Project (P. Schreiner, R. Söhnen-Thieme); GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_brahmapurANa-1-246.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-195",
+  "s": "char:krishna",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:narakasura-slaying",
+  "qualifiers": {
+   "text": "text:harivamsha",
+   "role": "slayer"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 91",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-196",
+  "s": "char:narakasura",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:narakasura-slaying",
+  "qualifiers": {
+   "text": "text:harivamsha",
+   "role": "slain"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 91",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-197",
+  "s": "char:krishna",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:narakasura-slaying",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "slayer"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.29.1–35",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-198",
+  "s": "char:narakasura",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:narakasura-slaying",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "slain"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.29.1–35",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-199",
+  "s": "char:krishna",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:narakasura-slaying",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "slayer"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.59.1–33",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-200",
+  "s": "char:narakasura",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:narakasura-slaying",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "slain"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.59.1–33",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-201",
+  "s": "char:satyabhama",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:narakasura-slaying",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "accompanies Kṛṣṇa on Garuḍa"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.59.1–6",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-202",
+  "s": "deity:garuda",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:narakasura-slaying",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "Kṛṣṇa's mount"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.29.14–20",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-203",
+  "s": "deity:indra",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:narakasura-slaying",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "complainant"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.29.1–12",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-204",
+  "s": "deity:aditi",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:narakasura-slaying",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "her earrings restored"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.29.11, 5.29.35",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+    "quote": "adityāḥ kuṇḍale dātuṃ jagāma tridivālayam"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-205",
+  "s": "char:krishna",
+  "p": "SLAYS",
+  "o": "char:narakasura",
+  "qualifiers": {
+   "text": "text:vishnu-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.29.21–24",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-206",
+  "s": "char:krishna",
+  "p": "SLAYS",
+  "o": "char:narakasura",
+  "qualifiers": {
+   "text": "text:bhagavata-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.59.21–22",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-207",
+  "s": "char:krishna",
+  "p": "SLAYS",
+  "o": "char:narakasura",
+  "qualifiers": {
+   "text": "text:harivamsha"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 91",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-208",
+  "s": "narr:narakasura-slaying",
+  "p": "OCCURS_AT",
+  "o": "place:pragjyotisha",
+  "qualifiers": {
+   "text": "text:vishnu-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.29.8, 5.29.20",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-209",
+  "s": "place:pragjyotisha",
+  "p": "IDENTIFIED_WITH",
+  "o": "place:kamarupa",
+  "qualifiers": {
+   "tradition": "Kāmarūpa royal and local tradition",
+   "note": "the Varman and later Kāmarūpa dynasties traced descent from Naraka (Bhagadatta)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:sircar-1973"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "article (pointer only)",
+    "url": "https://en.wikipedia.org/wiki/Pragjyotisha_Kingdom"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-210",
+  "s": "claim:naraka-dipavali-link",
+  "p": "CONCERNS",
+  "o": "narr:narakasura-slaying",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hod",
+    "locator": "vol. V, part 1"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "article (pointer only)",
+    "url": "https://en.wikipedia.org/wiki/Naraka_Chaturdashi"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-211",
+  "s": "narr:bana-usha-aniruddha",
+  "p": "NARRATED_IN",
+  "o": "text:harivamsha",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 106.1–113.84",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-212",
+  "s": "narr:bana-usha-aniruddha",
+  "p": "NARRATED_IN",
+  "o": "text:vishnu-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.32.7–5.33.50",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+    "quote": "bāṇasya tanayām ūṣām upayeme dvijottama"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-213",
+  "s": "narr:bana-usha-aniruddha",
+  "p": "NARRATED_IN",
+  "o": "text:bhagavata-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.62.1–10.63.53",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt",
+    "quote": "bāṇasya tanayām ūṣām upayeme yadūttamaḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-214",
+  "s": "narr:bana-usha-aniruddha",
+  "p": "NARRATED_IN",
+  "o": "text:brahma-purana",
+  "qualifiers": {
+   "note": "parallel of ViP 5.32–33"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BrP 205.7–206",
+    "edition": "Brahmapurāṇa 1–246, Tübingen Purāṇa Project (P. Schreiner, R. Söhnen-Thieme); GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_brahmapurANa-1-246.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-215",
+  "s": "char:krishna",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:bana-usha-aniruddha",
+  "qualifiers": {
+   "text": "text:harivamsha",
+   "role": "rescuer; defeats Bāṇa"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 106–113",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-216",
+  "s": "char:banasura",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:bana-usha-aniruddha",
+  "qualifiers": {
+   "text": "text:harivamsha",
+   "role": "captor, defeated"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 106–113",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-217",
+  "s": "char:usha",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:bana-usha-aniruddha",
+  "qualifiers": {
+   "text": "text:harivamsha",
+   "role": "lover"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 106–113",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-218",
+  "s": "char:aniruddha",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:bana-usha-aniruddha",
+  "qualifiers": {
+   "text": "text:harivamsha",
+   "role": "lover, captive"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 106–113",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-219",
+  "s": "deity:shiva",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:bana-usha-aniruddha",
+  "qualifiers": {
+   "text": "text:harivamsha",
+   "role": "Bāṇa's protector"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 106–113",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-220",
+  "s": "char:krishna",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:bana-usha-aniruddha",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "rescuer; defeats Bāṇa"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.32–33",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-221",
+  "s": "char:banasura",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:bana-usha-aniruddha",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "captor, defeated"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.32–33",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-222",
+  "s": "char:usha",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:bana-usha-aniruddha",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "lover"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.32–33",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-223",
+  "s": "char:aniruddha",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:bana-usha-aniruddha",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "lover, captive"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.32–33",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-224",
+  "s": "deity:shiva",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:bana-usha-aniruddha",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "Bāṇa's protector"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.32–33",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-225",
+  "s": "char:krishna",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:bana-usha-aniruddha",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "rescuer; defeats Bāṇa"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.62–63",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-226",
+  "s": "char:banasura",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:bana-usha-aniruddha",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "captor, defeated"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.62–63",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-227",
+  "s": "char:usha",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:bana-usha-aniruddha",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "lover"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.62–63",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-228",
+  "s": "char:aniruddha",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:bana-usha-aniruddha",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "lover, captive"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.62–63",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-229",
+  "s": "deity:shiva",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:bana-usha-aniruddha",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "Bāṇa's protector"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.62–63",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-230",
+  "s": "char:chitralekha",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:bana-usha-aniruddha",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "brings Aniruddha"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.62.14–24",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-231",
+  "s": "char:balarama",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:bana-usha-aniruddha",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "ally"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.63.3–15",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-232",
+  "s": "char:pradyumna",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:bana-usha-aniruddha",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "ally; fights Skanda"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.63.7",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-233",
+  "s": "deity:skanda",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:bana-usha-aniruddha",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "fights for Bāṇa"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.63.6–7",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt",
+    "quote": "bāṇārthe bhagavān rudraḥ sa-sutaḥ pramathair vṛtaḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-234",
+  "s": "char:bali",
+  "p": "PARENT_OF",
+  "o": "char:banasura",
+  "qualifiers": {
+   "text": "text:bhagavata-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.62.2",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt",
+    "quote": "bāṇaḥ putra-śata-jyeṣṭho baler āsīn mahātmanaḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-235",
+  "s": "char:bali",
+  "p": "PARENT_OF",
+  "o": "char:banasura",
+  "qualifiers": {
+   "text": "text:harivamsha"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 105.12",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt",
+    "quote": "baleḥ suto mahāvīryo bāṇo bāhusahasravān"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-236",
+  "s": "char:banasura",
+  "p": "PARENT_OF",
+  "o": "char:usha",
+  "qualifiers": {
+   "text": "text:vishnu-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.32.7",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-237",
+  "s": "char:banasura",
+  "p": "PARENT_OF",
+  "o": "char:usha",
+  "qualifiers": {
+   "text": "text:bhagavata-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.62.1",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-238",
+  "s": "char:pradyumna",
+  "p": "PARENT_OF",
+  "o": "char:aniruddha",
+  "qualifiers": {
+   "text": "text:vishnu-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.32.6",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+    "quote": "pradyumnād aniruddho 'bhūd vajras tasmād ajāyata"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.15.43",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-239",
+  "s": "char:aniruddha",
+  "p": "SPOUSE_OF",
+  "o": "char:usha",
+  "qualifiers": {
+   "text": "text:vishnu-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.32.7",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-240",
+  "s": "char:aniruddha",
+  "p": "SPOUSE_OF",
+  "o": "char:usha",
+  "qualifiers": {
+   "text": "text:bhagavata-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.62.1",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-241",
+  "s": "char:banasura",
+  "p": "DEVOTEE_OF",
+  "o": "deity:shiva",
+  "qualifiers": {
+   "text": "text:bhagavata-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.62.3–8",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-242",
+  "s": "char:banasura",
+  "p": "ADVERSARY_OF",
+  "o": "char:krishna",
+  "qualifiers": {
+   "text": "text:vishnu-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.33",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-243",
+  "s": "narr:bana-usha-aniruddha",
+  "p": "OCCURS_AT",
+  "o": "place:shonitapura",
+  "qualifiers": {
+   "text": "text:bhagavata-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.62.4; 10.63.2",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt",
+    "quote": "śoṇitākhye pure ramye sa rājyam akarot purā"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-244",
+  "s": "narr:bana-usha-aniruddha",
+  "p": "DEPICTED_IN",
+  "o": "temple:angkor-wat",
+  "qualifiers": {
+   "note": "relief of Kṛṣṇa's victory over Bāṇa"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "northern gallery reliefs (pointer)",
+    "url": "https://en.wikipedia.org/wiki/Angkor_Wat"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-245",
+  "s": "narr:sudama-visit",
+  "p": "NARRATED_IN",
+  "o": "text:bhagavata-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.80.6–10.81.41",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt",
+    "quote": "tarpayanty aṅga māṃ viśvam ete pṛthuka-taṇḍulāḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-246",
+  "s": "char:sudama",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:sudama-visit",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "poor friend"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.80.6–45",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-247",
+  "s": "char:krishna",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:sudama-visit",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "host"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.80.18–10.81.12",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-248",
+  "s": "char:rukmini",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:sudama-visit",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "fans the guest"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.80.24–28",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-249",
+  "s": "char:sudama",
+  "p": "DEVOTEE_OF",
+  "o": "char:krishna",
+  "qualifiers": {
+   "text": "text:bhagavata-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.81.33–41",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-250",
+  "s": "narr:sudama-visit",
+  "p": "OCCURS_AT",
+  "o": "place:dvaraka",
+  "qualifiers": {
+   "text": "text:bhagavata-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.80.17–18",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-251",
+  "s": "text:uddhava-gita",
+  "p": "PART_OF",
+  "o": "text:bhagavata-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 11.7–29",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-252",
+  "s": "char:krishna",
+  "p": "TEACHES_IN",
+  "o": "text:uddhava-gita",
+  "qualifiers": {
+   "role": "teacher"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 11.7.1–11.29.40",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-253",
+  "s": "char:krishna",
+  "p": "TEACHER_OF",
+  "o": "char:uddhava",
+  "qualifiers": {
+   "text": "text:bhagavata-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 11.7–29",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-254",
+  "s": "char:uddhava",
+  "p": "APPEARS_IN",
+  "o": "text:uddhava-gita",
+  "qualifiers": {
+   "role": "questioner"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 11.7.13–14",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-255",
+  "s": "char:uddhava",
+  "p": "DEVOTEE_OF",
+  "o": "char:krishna",
+  "qualifiers": {
+   "text": "text:bhagavata-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 11.6.43–50",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt",
+    "quote": "ekāntinaṃ priyaṃ bhṛtyam uddhavaṃ samabhāṣata"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-256",
+  "s": "char:uddhava",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:badari",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "note": "sent by Kṛṣṇa to Badarikāśrama"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 11.29.41",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt",
+    "quote": "gacchoddhava mayādiṣṭo badary-ākhyaṃ mamāśramam"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-257",
+  "s": "char:putana",
+  "p": "APPEARS_IN",
+  "o": "text:bhagavata-purana",
+  "qualifiers": {
+   "role": "antagonist"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.6",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-258",
+  "s": "char:akrura",
+  "p": "APPEARS_IN",
+  "o": "text:bhagavata-purana",
+  "qualifiers": {
+   "role": "envoy"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.38–41",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-259",
+  "s": "char:uddhava",
+  "p": "APPEARS_IN",
+  "o": "text:bhagavata-purana",
+  "qualifiers": {
+   "role": "friend and disciple"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.46–47; 11",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-260",
+  "s": "char:narakasura",
+  "p": "APPEARS_IN",
+  "o": "text:vishnu-purana",
+  "qualifiers": {
+   "role": "antagonist"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.29",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-261",
+  "s": "char:banasura",
+  "p": "APPEARS_IN",
+  "o": "text:harivamsha",
+  "qualifiers": {
+   "role": "antagonist"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 106–113",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-262",
+  "s": "char:gopis",
+  "p": "APPEARS_IN",
+  "o": "text:bhagavata-purana",
+  "qualifiers": {
+   "role": "devotees"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.29–33",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-263",
+  "s": "char:kalayavana",
+  "p": "APPEARS_IN",
+  "o": "text:harivamsha",
+  "qualifiers": {
+   "role": "antagonist"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 85",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-264",
+  "s": "char:mucukunda",
+  "p": "APPEARS_IN",
+  "o": "text:bhagavata-purana",
+  "qualifiers": {
+   "role": "devotee king"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.51",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-265",
+  "s": "text:brahma-purana",
+  "p": "DERIVED_FROM",
+  "o": "text:vishnu-purana",
+  "qualifiers": {
+   "note": "the Kṛṣṇa chapters (BrP 180–212) reproduce ViP book 5 almost verbatim"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:sohnen-schreiner-1989"
+   },
+   {
+    "source": "src:rocher-1986",
+    "locator": "pp. 154–156"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-266",
+  "s": "text:brahma-purana",
+  "p": "DERIVED_FROM",
+  "o": "text:harivamsha",
+  "qualifiers": {
+   "note": "BrP 1–40 (creation and genealogies incl. the Syamantaka story) parallel the Harivaṃśa"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:sohnen-schreiner-1989"
+   },
+   {
+    "source": "src:rocher-1986",
+    "locator": "pp. 154–156"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ }
+]

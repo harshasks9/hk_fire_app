@@ -1,0 +1,1449 @@
+[
+ {
+  "id": "temple:r2-1",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:umananda",
+  "qualifiers": {
+   "note": "as Umānanda"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Umananda_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-2",
+  "s": "temple:umananda",
+  "p": "BUILT_DURING",
+  "o": "pol:ahom",
+  "qualifiers": {
+   "note": "built under Gadādhar Siṃha (r. 1681–1696)"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Umananda_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-3",
+  "s": "temple:umananda",
+  "p": "LOCATED_AT",
+  "o": "place:brahmaputra-river",
+  "qualifiers": {
+   "note": "on a river island"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Umananda_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-4",
+  "s": "temple:umananda",
+  "p": "LOCATED_AT",
+  "o": "place:kamarupa",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Umananda_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-5",
+  "s": "deity:vishnu",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:hayagriva-madhava-hajo",
+  "qualifiers": {
+   "note": "as Mādhava"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hayagriva_Madhava_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-6",
+  "s": "deity:hayagriva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:hayagriva-madhava-hajo",
+  "qualifiers": {
+   "note": "Hayagrīva association of the image"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hayagriva_Madhava_Temple"
+   }
+  ],
+  "confidence": "low",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-7",
+  "s": "temple:hayagriva-madhava-hajo",
+  "p": "BUILT_DURING",
+  "o": "pol:koch",
+  "qualifiers": {
+   "note": "attributed to Raghudeva Nārāyaṇa"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hayagriva_Madhava_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-8",
+  "s": "concept:dashavatara",
+  "p": "DEPICTED_IN",
+  "o": "temple:hayagriva-madhava-hajo",
+  "qualifiers": {
+   "note": "avatāra reliefs on the outer walls"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hayagriva_Madhava_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-9",
+  "s": "temple:hayagriva-madhava-hajo",
+  "p": "LOCATED_AT",
+  "o": "place:kamarupa",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hayagriva_Madhava_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-10",
+  "s": "deity:devi",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:ugratara-guwahati",
+  "qualifiers": {
+   "note": "as Ugratārā"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ugratara_Devalaya"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-11",
+  "s": "temple:ugratara-guwahati",
+  "p": "BUILT_DURING",
+  "o": "pol:ahom",
+  "qualifiers": {
+   "note": "built by Śiva Siṃha (r. 1714–1744)"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ugratara_Devalaya"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-12",
+  "s": "temple:ugratara-guwahati",
+  "p": "ASSOCIATED_WITH",
+  "o": "narr:shakti-pitha-origin",
+  "qualifiers": {
+   "note": "local tradition: the navel of Satī"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ugratara_Devalaya"
+   }
+  ],
+  "confidence": "low",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-13",
+  "s": "temple:ugratara-guwahati",
+  "p": "LOCATED_AT",
+  "o": "place:kamarupa",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ugratara_Devalaya"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-14",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:madan-kamdev",
+  "qualifiers": {
+   "note": "Umā-Maheśvara images"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Madan_Kamdev"
+   }
+  ],
+  "confidence": "low",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-15",
+  "s": "temple:madan-kamdev",
+  "p": "ASSOCIATED_WITH",
+  "o": "text:kalika-purana",
+  "qualifiers": {
+   "note": "Kāma’s revival in Kāmarūpa (tradition)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Madan_Kamdev"
+   }
+  ],
+  "confidence": "low",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-16",
+  "s": "temple:madan-kamdev",
+  "p": "LOCATED_AT",
+  "o": "place:kamarupa",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Madan_Kamdev"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-17",
+  "s": "deity:devi",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:tripura-sundari-udaipur",
+  "qualifiers": {
+   "note": "as Tripurasundarī"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tripura_Sundari_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-18",
+  "s": "temple:tripura-sundari-udaipur",
+  "p": "BUILT_DURING",
+  "o": "pol:manikya-tripura",
+  "qualifiers": {
+   "note": "founding credited to Dhanya Māṇikya"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tripura_Sundari_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-19",
+  "s": "temple:tripura-sundari-udaipur",
+  "p": "MEMBER_OF",
+  "o": "concept:shakti-pitha",
+  "qualifiers": {
+   "note": "right foot of Satī (51-pīṭha lists)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "article states the membership",
+    "url": "https://en.wikipedia.org/wiki/Tripura_Sundari_Temple"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "list article includes this site",
+    "url": "https://en.wikipedia.org/wiki/Shakta_pithas"
+   },
+   {
+    "source": "src:sircar-1973"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-20",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:unakoti",
+  "qualifiers": {
+   "note": "as Unakotīśvara Kāla Bhairava"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Unakoti"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-21",
+  "s": "deity:ganesha",
+  "p": "DEPICTED_IN",
+  "o": "temple:unakoti",
+  "qualifiers": {
+   "note": "colossal relief images"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Unakoti"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-22",
+  "s": "deity:durga",
+  "p": "DEPICTED_IN",
+  "o": "temple:unakoti",
+  "qualifiers": {
+   "note": "female figure on a lion beside the Śiva head (identification)"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Unakoti"
+   }
+  ],
+  "confidence": "low",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-23",
+  "s": "char:krishna",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:govindajee-imphal",
+  "qualifiers": {
+   "note": "as Govindajī with Rādhā"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Shree_Govindajee_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-24",
+  "s": "char:radha",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:govindajee-imphal",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Shree_Govindajee_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-25",
+  "s": "temple:govindajee-imphal",
+  "p": "BUILT_DURING",
+  "o": "pol:manipur-kingdom",
+  "qualifiers": {
+   "note": "Nara Siṃh, Candrakīrti, Churachand Siṃh"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Shree_Govindajee_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-26",
+  "s": "temple:govindajee-imphal",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:gaudiya",
+  "qualifiers": {
+   "note": "centre of Manipuri Gauḍīya Vaiṣṇavism"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Shree_Govindajee_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-27",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:tungnath",
+  "qualifiers": {
+   "note": "worshipped as the arms of the bull-form Śiva"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tungnath"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-28",
+  "s": "temple:tungnath",
+  "p": "MEMBER_OF",
+  "o": "concept:panch-kedar",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "article states the membership",
+    "url": "https://en.wikipedia.org/wiki/Tungnath"
+   },
+   {
+    "source": "src:bhardwaj-1973"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-29",
+  "s": "temple:tungnath",
+  "p": "ASSOCIATED_WITH",
+  "o": "char:yudhishthira",
+  "qualifiers": {
+   "note": "Pāṇḍava foundation legend of the Pañca Kedāra (Garhwali tradition; not in the Mahābhārata)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tungnath"
+   }
+  ],
+  "confidence": "low",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-30",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:rudranath",
+  "qualifiers": {
+   "note": "worshipped as the face of the bull-form Śiva"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Rudranath"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-31",
+  "s": "temple:rudranath",
+  "p": "MEMBER_OF",
+  "o": "concept:panch-kedar",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "article states the membership",
+    "url": "https://en.wikipedia.org/wiki/Rudranath"
+   },
+   {
+    "source": "src:bhardwaj-1973"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-32",
+  "s": "temple:rudranath",
+  "p": "ASSOCIATED_WITH",
+  "o": "char:yudhishthira",
+  "qualifiers": {
+   "note": "Pāṇḍava foundation legend of the Pañca Kedāra (Garhwali tradition; not in the Mahābhārata)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Rudranath"
+   }
+  ],
+  "confidence": "low",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-33",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:madhyamaheshwar",
+  "qualifiers": {
+   "note": "worshipped as the navel of the bull-form Śiva"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Madhyamaheshwar"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-34",
+  "s": "temple:madhyamaheshwar",
+  "p": "MEMBER_OF",
+  "o": "concept:panch-kedar",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "article states the membership",
+    "url": "https://en.wikipedia.org/wiki/Madhyamaheshwar"
+   },
+   {
+    "source": "src:bhardwaj-1973"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-35",
+  "s": "temple:madhyamaheshwar",
+  "p": "ASSOCIATED_WITH",
+  "o": "char:yudhishthira",
+  "qualifiers": {
+   "note": "Pāṇḍava foundation legend of the Pañca Kedāra (Garhwali tradition; not in the Mahābhārata)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Madhyamaheshwar"
+   }
+  ],
+  "confidence": "low",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-36",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:kalpeshwar",
+  "qualifiers": {
+   "note": "worshipped as the matted hair of the bull-form Śiva"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kalpeshwar"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-37",
+  "s": "temple:kalpeshwar",
+  "p": "MEMBER_OF",
+  "o": "concept:panch-kedar",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "article states the membership",
+    "url": "https://en.wikipedia.org/wiki/Kalpeshwar"
+   },
+   {
+    "source": "src:bhardwaj-1973"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-38",
+  "s": "temple:kalpeshwar",
+  "p": "ASSOCIATED_WITH",
+  "o": "char:yudhishthira",
+  "qualifiers": {
+   "note": "Pāṇḍava foundation legend of the Pañca Kedāra (Garhwali tradition; not in the Mahābhārata)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kalpeshwar"
+   }
+  ],
+  "confidence": "low",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-39",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:baijnath-kangra",
+  "qualifiers": {
+   "note": "as Vaidyanātha"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Baijnath_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-40",
+  "s": "char:hidimba",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:hidimba-devi-manali",
+  "qualifiers": {
+   "note": "worshipped as Hiḍimbā Devī"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hidimba_Devi_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-41",
+  "s": "temple:hidimba-devi-manali",
+  "p": "ASSOCIATED_WITH",
+  "o": "narr:hidimba-marriage",
+  "qualifiers": {
+   "note": "local identification with Bhīma’s rākṣasī wife"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hidimba_Devi_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-42",
+  "s": "deity:kali",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:bhimakali-sarahan",
+  "qualifiers": {
+   "note": "as Bhīmakālī"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bhimakali_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-43",
+  "s": "deity:durga",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:bhimakali-sarahan",
+  "qualifiers": {
+   "note": "the reference describes the shrine as dedicated to Durgā"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bhimakali_Temple"
+   }
+  ],
+  "confidence": "low",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-44",
+  "s": "deity:vishnu",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:lakshmi-narayan-chamba",
+  "qualifiers": {
+   "note": "as Lakṣmī-Nārāyaṇa"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Chamba,_Himachal_Pradesh"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-45",
+  "s": "deity:lakshmi",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:lakshmi-narayan-chamba",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Chamba,_Himachal_Pradesh"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-46",
+  "s": "deity:garuda",
+  "p": "DEPICTED_IN",
+  "o": "temple:lakshmi-narayan-chamba",
+  "qualifiers": {
+   "note": "metal Garuḍa on the pillar before the shrine"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Chamba,_Himachal_Pradesh"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-47",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:masrur",
+  "qualifiers": {
+   "note": "principal dedication"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Masrur_Temples"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-48",
+  "s": "deity:vishnu",
+  "p": "DEPICTED_IN",
+  "o": "temple:masrur",
+  "qualifiers": {
+   "note": "images among the reliefs"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Masrur_Temples"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-49",
+  "s": "deity:surya",
+  "p": "DEPICTED_IN",
+  "o": "temple:masrur",
+  "qualifiers": {
+   "note": "Saura imagery reported"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Masrur_Temples"
+   }
+  ],
+  "confidence": "low",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-50",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "place:amarnath-cave",
+  "qualifiers": {
+   "note": "as Amareśvara (ice liṅga)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Amarnath_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-51",
+  "s": "deity:parvati",
+  "p": "WORSHIPPED_AT",
+  "o": "place:amarnath-cave",
+  "qualifiers": {
+   "note": "tradition: Śiva revealed the secret of immortality to Pārvatī here"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Amarnath_Temple"
+   }
+  ],
+  "confidence": "low",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-52",
+  "s": "deity:devi",
+  "p": "WORSHIPPED_AT",
+  "o": "place:vaishno-devi",
+  "qualifiers": {
+   "note": "as Vaiṣṇo Devī (three piṇḍīs)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Vaishno_Devi_Temple"
+   },
+   {
+    "source": "src:erndl-1993"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-53",
+  "s": "deity:kali",
+  "p": "WORSHIPPED_AT",
+  "o": "place:vaishno-devi",
+  "qualifiers": {
+   "note": "as Mahākālī, one of the three piṇḍīs"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Vaishno_Devi_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-54",
+  "s": "deity:lakshmi",
+  "p": "WORSHIPPED_AT",
+  "o": "place:vaishno-devi",
+  "qualifiers": {
+   "note": "as Mahālakṣmī, one of the three piṇḍīs"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Vaishno_Devi_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-55",
+  "s": "deity:sarasvati",
+  "p": "WORSHIPPED_AT",
+  "o": "place:vaishno-devi",
+  "qualifiers": {
+   "note": "as Mahāsarasvatī, one of the three piṇḍīs"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Vaishno_Devi_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-56",
+  "s": "deity:devi",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:kheer-bhawani",
+  "qualifiers": {
+   "note": "as Rājñā / Kṣīra Bhavānī"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kheer_Bhawani_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-57",
+  "s": "deity:vishnu",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:avantiswami",
+  "qualifiers": {
+   "note": "as Avantisvāmin"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Avantiswami_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-58",
+  "s": "temple:avantiswami",
+  "p": "BUILT_DURING",
+  "o": "pol:utpala",
+  "qualifiers": {
+   "note": "built by Avantivarman"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Avantiswami_Temple"
+   },
+   {
+    "source": "src:stein-1900"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-59",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:pandrethan",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Pandrethan_Shiva_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-60",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:shankaracharya-srinagar",
+  "qualifiers": {
+   "note": "as Jyeṣṭheśvara"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Shankaracharya_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-61",
+  "s": "temple:shankaracharya-srinagar",
+  "p": "ASSOCIATED_WITH",
+  "o": "person:shankara",
+  "qualifiers": {
+   "note": "name and tradition of a visit; statue installed 1961"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Shankaracharya_Temple"
+   }
+  ],
+  "confidence": "low",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-62",
+  "s": "deity:devi",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:jwalamukhi",
+  "qualifiers": {
+   "note": "as Jvālā (the flames)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Jawalamukhi"
+   },
+   {
+    "source": "src:erndl-1993"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-63",
+  "s": "temple:jwalamukhi",
+  "p": "MEMBER_OF",
+  "o": "concept:shakti-pitha",
+  "qualifiers": {
+   "note": "tongue of Satī in common lists"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "article states the membership",
+    "url": "https://en.wikipedia.org/wiki/Jawalamukhi"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "list article includes this site",
+    "url": "https://en.wikipedia.org/wiki/Shakta_pithas"
+   },
+   {
+    "source": "src:sircar-1973"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-64",
+  "s": "place:haridwar",
+  "p": "LOCATED_AT",
+  "o": "place:ganga-river",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Haridwar"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-65",
+  "s": "place:haridwar",
+  "p": "MEMBER_OF",
+  "o": "concept:sapta-puri",
+  "qualifiers": {
+   "note": "as Māyā"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "article states the membership",
+    "url": "https://en.wikipedia.org/wiki/Haridwar"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "list article includes this site",
+    "url": "https://en.wikipedia.org/wiki/Sapta_Puri"
+   },
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-66",
+  "s": "place:haridwar",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:kanakhala",
+  "qualifiers": {
+   "note": "Kaṅkhal lies within the city"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Haridwar"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-67",
+  "s": "place:har-ki-pauri",
+  "p": "LOCATED_AT",
+  "o": "place:haridwar",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Har_Ki_Pauri"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-68",
+  "s": "place:har-ki-pauri",
+  "p": "LOCATED_AT",
+  "o": "place:ganga-river",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Har_Ki_Pauri"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-69",
+  "s": "deity:ganga",
+  "p": "WORSHIPPED_AT",
+  "o": "place:har-ki-pauri",
+  "qualifiers": {
+   "note": "evening Gaṅgā āratī"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Har_Ki_Pauri"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-70",
+  "s": "place:har-ki-pauri",
+  "p": "ASSOCIATED_WITH",
+  "o": "deity:vishnu",
+  "qualifiers": {
+   "note": "the Hari-footprint at Brahmakuṇḍ (tradition)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Har_Ki_Pauri"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-71",
+  "s": "place:rishikesh",
+  "p": "LOCATED_AT",
+  "o": "place:ganga-river",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Rishikesh"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:r2-72",
+  "s": "place:rishikesh",
+  "p": "ASSOCIATED_WITH",
+  "o": "concept:chota-char-dham",
+  "qualifiers": {
+   "note": "gateway town for the Garhwal pilgrimage"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Rishikesh"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ }
+]

@@ -1,0 +1,1430 @@
+[
+ {
+  "id": "col:pancha-mahakavya",
+  "type": "collection",
+  "name": "The five great court epics (pañca-mahākāvya)",
+  "iast": "pañca-mahākāvya",
+  "devanagari": "पञ्चमहाकाव्य",
+  "subtype": "canon of court epics",
+  "summary": "The conventional canon of five Sanskrit mahākāvyas — Kālidāsa’s Raghuvaṃśa and Kumārasambhava, Bhāravi’s Kirātārjunīya, Māgha’s Śiśupālavadha and Śrīharṣa’s Naiṣadhīyacarita. Four of the five rework episodes of the epics.",
+  "details": "The grouping is a later pedagogical canon: these five poems, with Mallinātha’s commentaries, became the standard school texts of kāvya. The list is not fixed in any early source, and some lists substitute other poems (e.g. the Bhaṭṭikāvya).",
+  "sources": [
+   {
+    "source": "src:lienhard-1984"
+   },
+   {
+    "source": "src:warder-ikl"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "epic"
+ },
+ {
+  "id": "text:raghuvamsha",
+  "type": "text",
+  "name": "Raghuvaṃśa",
+  "iast": "Raghuvaṃśa",
+  "devanagari": "रघुवंश",
+  "aliases": [
+   "Raghuvamsha",
+   "The Dynasty of Raghu"
+  ],
+  "subtype": "mahākāvya",
+  "summary": "Kālidāsa’s mahākāvya in nineteen cantos on the kings of the solar line, from Dilīpa and Raghu through Aja and Daśaratha to Rāma (cantos 10–15), his descendants and the dissolute Agnivarṇa.",
+  "details": "Cantos 1–2: Dilīpa serves Vasiṣṭha’s cow Nandinī to obtain a son. 3–4: Raghu’s birth and conquest of the quarters. 5–8: Aja wins Indumatī at her svayaṃvara; her sudden death and his lament. 9: Daśaratha, his hunting and the killing of the ascetic’s son. 10–15: the Rāma story, ending with Sītā’s entry into the earth (15.81–84) and Rāma’s departure. 16–19: Kuśa and his successors down to Agnivarṇa.\n\nAt 15.63–64 Kuśa and Lava sing “the Rāmāyaṇa first composed by Prācetasa” — “Rāma’s story, Vālmīki’s work” — so the poem names its Rāma source.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "composition",
+    "label": "c. 4th–5th c. CE (with Kālidāsa’s generally accepted Gupta-period date)",
+    "certainty": "estimated",
+    "basis": "date of Kālidāsa; named in the Aihole inscription of 634/635 CE",
+    "sources": [
+     {
+      "source": "src:keith-1928"
+     },
+     {
+      "source": "src:lienhard-1984"
+     }
+    ],
+    "start": 350,
+    "end": 500,
+    "view": "general scholarly view"
+   }
+  ],
+  "attributes": {
+   "language": "Sanskrit",
+   "cantos": "19",
+   "commentary": "Mallinātha (Sañjīvinī); Vallabhadeva (Kashmir)"
+  },
+  "sources": [
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 1.1",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt",
+    "quote": "vāgarthāv iva saṃpṛktau vāgarthapratipattaye"
+   },
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 15.63–64",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt"
+   },
+   {
+    "source": "src:keith-1928"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:aja",
+  "type": "character",
+  "name": "Aja (father of Daśaratha)",
+  "iast": "Aja",
+  "devanagari": "अज",
+  "roles": [
+   "king"
+  ],
+  "summary": "Son of Raghu and father of Daśaratha. In Kālidāsa’s Raghuvaṃśa he wins the Vidarbha princess Indumatī at her svayaṃvara; her sudden death and his lament (canto 8) are among the most famous passages of Sanskrit poetry.",
+  "details": "In Vālmīki’s Ikṣvāku genealogy (VR (CE) 1.69.30) Aja is the son of Nābhāga and father of Daśaratha; Kālidāsa makes him Raghu’s son. The two genealogies are recorded separately, not harmonised.",
+  "sources": [
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 8.1",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt",
+    "quote": "akarod indumatīm ivāparām"
+   },
+   {
+    "source": "src:gretil-vr-ce",
+    "locator": "VR (CE) 1.69.30",
+    "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt",
+    "quote": "nābhāgasya babhūvāja ajād daśaratho 'bhavat"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:indumati",
+  "type": "character",
+  "name": "Indumatī",
+  "iast": "Indumatī",
+  "devanagari": "इन्दुमती",
+  "roles": [
+   "queen"
+  ],
+  "summary": "Princess of Vidarbha, sister of king Bhoja, who chooses Aja at her svayaṃvara (Raghuvaṃśa 6) and dies when a celestial garland falls on her breast (canto 8).",
+  "sources": [
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 6.70",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt",
+    "quote": "induprabhām indumatīm avekṣya"
+   },
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 8.38",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:sudakshina",
+  "type": "character",
+  "name": "Sudakṣiṇā",
+  "iast": "Sudakṣiṇā",
+  "devanagari": "सुदक्षिणा",
+  "roles": [
+   "queen"
+  ],
+  "summary": "Queen of Dilīpa and mother of Raghu in the Raghuvaṃśa; with Dilīpa she serves the cow Nandinī to obtain a son.",
+  "sources": [
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 3.1",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt",
+    "quote": "nidānam ikṣvākukulasya saṃtateḥ sudakṣiṇā daurhṛdalakṣaṇaṃ dadhau"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:nandini-cow",
+  "type": "character",
+  "name": "Nandinī (Vasiṣṭha’s cow)",
+  "iast": "Nandinī",
+  "devanagari": "नन्दिनी",
+  "roles": [
+   "divine cow"
+  ],
+  "summary": "The wish-granting cow of Vasiṣṭha’s hermitage, daughter of Surabhi, whom Dilīpa tends and protects from a lion in Raghuvaṃśa 1–2.",
+  "details": "Distinct from deity:nandin (Śiva’s bull). Vasiṣṭha’s cow also appears, as Nandinī, in the Mahābhārata’s Vasiṣṭha–Viśvāmitra story; that occurrence has not been linked here.",
+  "sources": [
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 1.82",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt",
+    "quote": "anindyā nandinī nāma dhenur āvavṛte vanāt"
+   },
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 2.69",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt",
+    "quote": "sa nandinīstanyam aninditātmā"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:agnivarna",
+  "type": "character",
+  "name": "Agnivarṇa",
+  "iast": "Agnivarṇa",
+  "devanagari": "अग्निवर्ण",
+  "roles": [
+   "king"
+  ],
+  "summary": "The last king of the Raghuvaṃśa, a pleasure-loving ruler who dies of consumption; his pregnant queen rules as regent at the poem’s end (canto 19).",
+  "sources": [
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 19.1",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt",
+    "quote": "agnivarṇam abhiṣicya rāghavaḥ"
+   },
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 19.57",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt",
+    "quote": "rājñī rājyaṃ vidhivad aśiṣad bhartur avyāhatājñā"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:dilipa-nandini",
+  "type": "narrative",
+  "name": "Dilīpa and the cow Nandinī",
+  "iast": "Dilīpa–Nandinī",
+  "summary": "The childless king Dilīpa and queen Sudakṣiṇā tend Vasiṣṭha’s cow Nandinī; when a lion (Śiva’s servant) seizes her, Dilīpa offers his own body, and the cow grants him a son, Raghu (Raghuvaṃśa 1–2).",
+  "sources": [
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 1.82",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt"
+   },
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 2.69",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:aja-indumati",
+  "type": "narrative",
+  "name": "Aja and Indumatī",
+  "iast": "Aja–Indumatī",
+  "summary": "Aja wins Indumatī at her svayaṃvara among many kings (Raghuvaṃśa 6–7); years later she dies when a celestial garland falls on her, and Aja’s grief (8) leads to his death.",
+  "sources": [
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 6.70",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt"
+   },
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 8.38",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt"
+   },
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 8.43",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:ascetic-boy-killing",
+  "type": "narrative",
+  "name": "Daśaratha kills the ascetic’s son",
+  "summary": "Hunting by night, the young Daśaratha shoots at the sound of a pitcher being filled, thinking it an elephant, and kills the only son of a blind ascetic couple; the dying father curses him to die of grief for a son (later tradition names the boy Śravaṇa).",
+  "details": "In the Vālmīki Rāmāyaṇa (CE 2.57–58) the dying Daśaratha recalls the deed to Kausalyā; the boy is unnamed. Kālidāsa (Raghuvaṃśa 9.72–81) moves it to the hunting canto and places it on the river Tamasā; the name Śravaṇa (Śravaṇa Kumāra) belongs to later retellings.",
+  "sources": [
+   {
+    "source": "src:gretil-vr-ce",
+    "locator": "VR (CE) 2.57.16",
+    "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt",
+    "quote": "athāndhakāre tv aśrauṣaṃ jale kumbhasya paryataḥ"
+   },
+   {
+    "source": "src:gretil-vr-ce",
+    "locator": "VR (CE) 2.58.13–14",
+    "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
+   },
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 9.72–81",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:kumarasambhava",
+  "type": "text",
+  "name": "Kumārasambhava",
+  "iast": "Kumārasambhava",
+  "devanagari": "कुमारसम्भव",
+  "aliases": [
+   "Kumarasambhava",
+   "The Birth of Kumāra"
+  ],
+  "subtype": "mahākāvya",
+  "summary": "Kālidāsa’s mahākāvya on the courtship and marriage of Śiva and Pārvatī — Pārvatī’s birth to Himālaya, the gods’ plight under the demon Tāraka, Kāma’s incineration by Śiva’s third eye, Pārvatī’s penance and the wedding; cantos 9–17 (Kumāra’s birth and Tāraka’s death) are usually held to be a later continuation.",
+  "details": "The GRETIL text has cantos 1–8 (the portion commented on by Mallinātha). Canto 2 (Tāraka’s oppression, Ks 2.1, 2.32); 3 (Kāma reduced to ashes, 3.72); 4 (Rati’s lament); 5 (Pārvatī’s austerities); 6–7 (betrothal and wedding); 8 (the couple’s love). Ānandavardhana and later critics criticised canto 8’s depiction of the divine parents’ love-making.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "composition",
+    "label": "c. 4th–5th c. CE (with Kālidāsa’s generally accepted Gupta-period date)",
+    "certainty": "estimated",
+    "basis": "date of Kālidāsa",
+    "sources": [
+     {
+      "source": "src:keith-1928"
+     }
+    ],
+    "start": 350,
+    "end": 500,
+    "view": "general scholarly view"
+   },
+   {
+    "system": "reception",
+    "event": "earliest-quotation",
+    "label": "by c. 800 CE (Vāmana quotes Kumārasaṃbhava 1.1)",
+    "certainty": "estimated",
+    "basis": "quotation in Vāmana’s Kāvyālaṃkārasūtravṛtti; Vāmana is placed at Jayāpīḍa’s court in Kashmir (late 8th c.)",
+    "sources": [
+     {
+      "source": "src:gretil-vamana-kavyalankarasutra",
+      "locator": "Kāvyālaṃkārasūtravṛtti e-text line tagged kumārasaṃbhava_1.1",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_vAmana-kAvyAlaMkArasUtra.txt"
+     }
+    ],
+    "start": 775,
+    "end": 800,
+    "view": "Vāmana"
+   }
+  ],
+  "attributes": {
+   "language": "Sanskrit",
+   "cantos": "8 (authentic) + 9 later cantos"
+  },
+  "sources": [
+   {
+    "source": "src:gretil-kumarasambhava",
+    "locator": "Kumārasambhava 1.1",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-kumArasaMbhava.txt",
+    "quote": "asty uttarasyāṃ diśi devatātmā himālayo nāma nagādhirājaḥ"
+   },
+   {
+    "source": "src:gretil-kumarasambhava",
+    "locator": "Kumārasambhava 3.72",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-kumArasaMbhava.txt"
+   },
+   {
+    "source": "src:smith-2005-kumarasambhava"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:abhijnanashakuntalam",
+  "type": "text",
+  "name": "Abhijñānaśākuntalam",
+  "iast": "Abhijñānaśākuntalam",
+  "devanagari": "अभिज्ञानशाकुन्तलम्",
+  "aliases": [
+   "Śākuntala",
+   "Shakuntala",
+   "The Recognition of Śakuntalā"
+  ],
+  "subtype": "drama (nāṭaka)",
+  "summary": "Kālidāsa’s seven-act nāṭaka on king Duḥṣanta (Duṣyanta) and Śakuntalā. It reworks the Mahābhārata’s Śakuntalopākhyāna (MBh 1.62–69) by adding the sage Durvāsas’s curse, which makes the king forget her, and the recognition-ring (abhijñāna) whose loss and recovery drive the plot.",
+  "details": "Acts 1–3: the meeting in Kaṇva’s hermitage and the gāndharva union. Act 4: Durvāsas, slighted by the distracted Śakuntalā, curses her to be forgotten until the king sees a token (4.1a); she leaves for the court. Act 5: the king does not recognise her; the ring is missing (5.21a). Act 6: a fisherman finds the ring in a fish, memory returns. Act 7: reunion at Mārīca’s (Kaśyapa’s) hermitage; their son Sarvadamana will be called Bharata (7.33).\n\nThe text circulates in several recensions (Bengali, Devanāgarī, Kashmiri, South Indian); the GRETIL text follows M. R. Kale’s edition.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "composition",
+    "label": "c. 4th–5th c. CE (with Kālidāsa’s generally accepted Gupta-period date)",
+    "certainty": "estimated",
+    "basis": "date of Kālidāsa",
+    "sources": [
+     {
+      "source": "src:keith-1924"
+     }
+    ],
+    "start": 350,
+    "end": 500,
+    "view": "general scholarly view"
+   },
+   {
+    "system": "reception",
+    "event": "european-translation",
+    "label": "1789 (William Jones’s English translation)",
+    "certainty": "secure",
+    "basis": "publication date",
+    "sources": [
+     {
+      "source": "src:keith-1924"
+     }
+    ],
+    "start": 1789,
+    "end": 1789
+   }
+  ],
+  "attributes": {
+   "language": "Sanskrit and Prakrits",
+   "acts": "7"
+  },
+  "sources": [
+   {
+    "source": "src:gretil-abhijnanashakuntala",
+    "locator": "Abhijñānaśākuntala 1.1a",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-abhijJAnazakuntala.txt",
+    "quote": "navenābhijñānaśākuntalākhyena nāṭakenopasthātavyam asmābhiḥ"
+   },
+   {
+    "source": "src:gretil-abhijnanashakuntala",
+    "locator": "Abhijñānaśākuntala 4.1a",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-abhijJAnazakuntala.txt"
+   },
+   {
+    "source": "src:vasudeva-2006-shakuntala"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:durvasas",
+  "type": "character",
+  "name": "Durvāsas",
+  "iast": "Durvāsas",
+  "devanagari": "दुर्वासस्",
+  "roles": [
+   "ṛṣi"
+  ],
+  "summary": "An irascible sage, son of Atri, whose curses and boons drive several stories: in the Mahābhārata he gives Kuntī the mantra by which she summons gods; in Kālidāsa’s Śākuntala his curse makes Duḥṣanta forget Śakuntalā; in Purāṇic tellings his curse on Indra leads to the churning of the ocean.",
+  "details": "Bāṇa’s Harṣacarita (opening prose) calls him “son of Atri, brother of the Moon”. The Purāṇic curse on Indra is recorded by the purana agent at psg:vip-1-9.",
+  "sources": [
+   {
+    "source": "src:gretil-abhijnanashakuntala",
+    "locator": "Abhijñānaśākuntala 4.1a",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-abhijJAnazakuntala.txt",
+    "quote": "eṣa durvāsāḥ sulabhakopo maharṣiḥ"
+   },
+   {
+    "source": "src:gretil-harshacarita",
+    "locator": "Harṣacarita 1 (prose after v. 21)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bANa-harSacarita.txt",
+    "quote": "munir atres tanayas tārā-pater bhratā nāmnā durvāsā"
+   },
+   {
+    "source": "src:mani-1975"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:durvasas-curse-shakuntala",
+  "type": "narrative",
+  "name": "Durvāsas’s curse and Śakuntalā’s ring",
+  "iast": "Durvāsaḥśāpa",
+  "summary": "Kālidāsa’s addition to the Śakuntalā story: lost in thought of the king, Śakuntalā fails to greet Durvāsas, who curses her to be forgotten until her lover sees a token; the king’s signet ring, lost while bathing, is found by a fisherman and restores his memory.",
+  "details": "Neither the curse nor the ring occurs in the Mahābhārata’s Śakuntalopākhyāna, where Duḥṣanta knowingly denies Śakuntalā and accepts her only after a voice from the sky (MBh (CE) 1.68.19; 1.69.28–29, 40–41). See cmp:shakuntala-ring-curse.",
+  "sources": [
+   {
+    "source": "src:gretil-abhijnanashakuntala",
+    "locator": "Abhijñānaśākuntala 4.1a3",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-abhijJAnazakuntala.txt",
+    "quote": "abhijñānābharaṇadarśanena śāpo nivartiṣyata"
+   },
+   {
+    "source": "src:gretil-abhijnanashakuntala",
+    "locator": "Abhijñānaśākuntala 6.1a6",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-abhijJAnazakuntala.txt",
+    "quote": "upapanna khalv asyāṅgulīyakasyāgamaḥ"
+   },
+   {
+    "source": "src:gretil-abhijnanashakuntala",
+    "locator": "Abhijñānaśākuntala 7.31a",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-abhijJAnazakuntala.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:meghaduta",
+  "type": "text",
+  "name": "Meghadūta",
+  "iast": "Meghadūta",
+  "devanagari": "मेघदूत",
+  "aliases": [
+   "Meghaduta",
+   "The Cloud Messenger"
+  ],
+  "subtype": "dūtakāvya (messenger poem)",
+  "summary": "Kālidāsa’s lyric “messenger poem”: an exiled yakṣa at Rāmagiri sends a monsoon cloud with a message to his wife in Alakā. The opening places him among hermitages “whose waters are hallowed by the bathing of Janaka’s daughter”, and the wife is to greet the cloud as Maithilī greeted the son of the Wind.",
+  "details": "The poem is the model for the whole later genre of saṃdeśa/dūta-kāvya. Its Rāmāyaṇa allusions — Sītā’s bathing places at Rāmagiri (v. 1), the hill marked by Raghupati’s footprints (v. 12), and the cloud likened to Hanumān bringing Rāma’s message to Sītā (v. 97) — frame the yakṣa’s separation as a reprise of Rāma’s. Rāmagiri is often identified with Ramtek near Nagpur, an identification argued, not stated, by the text.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "composition",
+    "label": "c. 4th–5th c. CE (with Kālidāsa’s generally accepted Gupta-period date)",
+    "certainty": "estimated",
+    "basis": "date of Kālidāsa",
+    "sources": [
+     {
+      "source": "src:keith-1928"
+     }
+    ],
+    "start": 350,
+    "end": 500,
+    "view": "general scholarly view"
+   }
+  ],
+  "attributes": {
+   "language": "Sanskrit",
+   "metre": "mandākrāntā",
+   "verses": "111 (GRETIL text); recensions vary"
+  },
+  "sources": [
+   {
+    "source": "src:gretil-meghaduta",
+    "locator": "Meghadūta 1",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-meghadUta.txt",
+    "quote": "yakṣaś cakre janakatanayāsnānapuṇyodakeṣu snigdhacchāyātaruṣu vasatiṃ rāmagiryāśrameṣu"
+   },
+   {
+    "source": "src:gretil-meghaduta",
+    "locator": "Meghadūta 97",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-meghadUta.txt",
+    "quote": "ity ākhyāte pavanatanayaṃ maithilīvonmukhī sā"
+   },
+   {
+    "source": "src:mallinson-2006"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:yaksha-meghaduta",
+  "type": "character",
+  "name": "The yakṣa of the Meghadūta",
+  "roles": [
+   "yakṣa"
+  ],
+  "summary": "The unnamed yakṣa, a servant of Kubera exiled for a year for neglecting his duty, who speaks the Meghadūta’s message to the cloud.",
+  "sources": [
+   {
+    "source": "src:gretil-meghaduta",
+    "locator": "Meghadūta 1",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-meghadUta.txt",
+    "quote": "kaś cit kāntāvirahaguruṇā svādhikārapramattaḥ"
+   },
+   {
+    "source": "src:gretil-meghaduta",
+    "locator": "Meghadūta 7",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-meghadUta.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:ayus",
+  "type": "character",
+  "name": "Āyus (son of Purūravas)",
+  "iast": "Āyus",
+  "devanagari": "आयुस्",
+  "roles": [
+   "prince"
+  ],
+  "summary": "Son of Purūravas and Urvaśī; in Kālidāsa’s Vikramorvaśīya the boy, brought up secretly in a hermitage, is revealed to his father in the last act. In the Purāṇic genealogies he continues the Lunar line through his son Nahuṣa.",
+  "sources": [
+   {
+    "source": "src:keith-1924"
+   },
+   {
+    "source": "src:gretil-mbh-ce",
+    "locator": "MBh (CE) 1.70.22",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm",
+    "quote": "ṣaṭ putrā jajñire 'thailād āyur dhīmān"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "epic"
+ },
+ {
+  "id": "person:bhasa",
+  "type": "person",
+  "name": "Bhāsa",
+  "iast": "Bhāsa",
+  "devanagari": "भास",
+  "roles": [
+   "dramatist"
+  ],
+  "summary": "A Sanskrit dramatist praised by Bāṇa (Harṣacarita, introductory verse 15) for plays “begun by the sūtradhāra”. Thirteen anonymous plays found in Kerala and published by T. Gaṇapati Śāstrī from 1912 are attributed to him — an attribution that remains disputed.",
+  "details": "Bhāsa is named as a celebrated predecessor by Kālidāsa (prologue of the Mālavikāgnimitra), by Bāṇa and by later critics, who quote a Svapnavāsavadatta under his name. Nothing reliable is known of his life. Estimates of his floruit range from the 4th c. BCE to the 4th c. CE; if the Trivandrum plays are his, a date in the early centuries CE is commonly proposed.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "floruit",
+    "label": "before Kālidāsa; proposals range from c. 4th c. BCE to c. 4th c. CE",
+    "certainty": "disputed",
+    "basis": "literary references (Kālidāsa, Bāṇa); language and dramaturgy of the attributed plays",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bhāsa"
+     },
+     {
+      "source": "src:pusalker-1940"
+     }
+    ],
+    "start": -400,
+    "end": 400,
+    "view": "range of scholarly proposals"
+   },
+   {
+    "system": "reception",
+    "event": "earliest-dated-reference",
+    "label": "named by Bāṇa, Harṣacarita intro v. 15 (c. 640 CE)",
+    "certainty": "estimated",
+    "basis": "Bāṇa wrote at the court of Harṣa (r. 606–647)",
+    "sources": [
+     {
+      "source": "src:gretil-harshacarita",
+      "locator": "Harṣacarita intro v. 1.15",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bANa-harSacarita.txt"
+     }
+    ],
+    "start": 620,
+    "end": 650,
+    "view": "Bāṇa"
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:gretil-harshacarita",
+    "locator": "Harṣacarita intro v. 1.15",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bANa-harSacarita.txt",
+    "quote": "sūtra-dhāra-kṛtârambhair nāṭakair bahu-bhūmikaiḥ / sa-patākair yaśo lebhe bhāso deva-kulair iva"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bhāsa"
+   },
+   {
+    "source": "src:pusalker-1940"
+   },
+   {
+    "source": "src:tieken-1993"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "col:trivandrum-plays",
+  "type": "collection",
+  "name": "The Trivandrum plays (“Bhāsa-nāṭaka-cakra”)",
+  "aliases": [
+   "Bhāsa plays",
+   "Trivandrum plays"
+  ],
+  "subtype": "corpus of plays",
+  "summary": "Thirteen anonymous Sanskrit plays preserved in Kerala manuscripts and the Kūṭiyāṭṭam performance tradition, published by T. Gaṇapati Śāstrī in the Trivandrum Sanskrit Series (1912–15) as the works of Bhāsa. Seven retell the Mahābhārata or the Kṛṣṇa story, two the Rāmāyaṇa.",
+  "details": "Mahābhārata plays: Dūtavākya, Dūtaghaṭotkaca, Karṇabhāra, Ūrubhaṅga, Madhyamavyāyoga, Pañcarātra; Kṛṣṇa play: Bālacarita; Rāmāyaṇa plays: Pratimānāṭaka, Abhiṣekanāṭaka; Udayana plays: Svapnavāsavadatta, Pratijñāyaugandharāyaṇa; others: Avimāraka, Cārudatta. Shared features — the opening “nāndyante tataḥ praviśati sūtradhāraḥ”, the absence of the author’s name in the prologue, a closing benediction (bharatavākya) for a king called rājasiṃha — underlie the claim of common authorship.",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "publication",
+    "label": "1912–1915 (Trivandrum Sanskrit Series)",
+    "certainty": "secure",
+    "basis": "publication dates of the editio princeps",
+    "sources": [
+     {
+      "source": "src:ganapati-sastri-1912"
+     }
+    ],
+    "start": 1912,
+    "end": 1915
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:ganapati-sastri-1912"
+   },
+   {
+    "source": "src:tieken-1993"
+   },
+   {
+    "source": "src:pusalker-1940"
+   },
+   {
+    "source": "src:bhasa-project-wuerzburg"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "epic"
+ },
+ {
+  "id": "claim:bhasa-trivandrum-authorship",
+  "type": "claim",
+  "name": "The Trivandrum plays are the works of Bhāsa",
+  "summary": "T. Gaṇapati Śāstrī’s thesis (1912) that the thirteen Kerala plays are the lost dramas of Bhāsa praised by Kālidāsa and Bāṇa. Many scholars accept a common origin for the corpus but doubt or deny that it is Bhāsa’s; a widely held alternative treats the plays as Kerala acting versions (perhaps abridged) prepared for Cākyār performance.",
+  "details": "For: the plays open with the sūtradhāra entering after the nāndī, as Bāṇa says of Bhāsa’s plays; a Svapnavāsavadatta is ascribed to Bhāsa by later critics and the Trivandrum play of that name fits several citations; the corpus shares style and conventions. Against: several verses quoted from Bhāsa by later authorities are absent from the Trivandrum texts; the same stage conventions occur in other Kerala manuscripts of plays by known later authors; Tieken (1993) argues the corpus is a Kerala product shaped by Kūṭiyāṭṭam. The dataset therefore links the plays to Bhāsa with ATTRIBUTED_TO, never COMPOSED_BY.",
+  "sources": [
+   {
+    "source": "src:ganapati-sastri-1912"
+   },
+   {
+    "source": "src:tieken-1993"
+   },
+   {
+    "source": "src:pusalker-1940"
+   },
+   {
+    "source": "src:keith-1924"
+   }
+  ],
+  "confidence": "medium",
+  "status": "disputed",
+  "agent": "epic",
+  "openQuestions": [
+   "Does the Kerala transmission preserve abridged stage versions of older plays, or new compositions?",
+   "Which citations of “Bhāsa” in later critics match the Trivandrum texts, and which do not?"
+  ]
+ },
+ {
+  "id": "text:pratimanataka",
+  "type": "text",
+  "name": "Pratimānāṭaka",
+  "iast": "Pratimānāṭaka",
+  "devanagari": "प्रतिमानाटक",
+  "subtype": "drama (nāṭaka)",
+  "summary": "A seven-act Rāma play attributed to Bhāsa, from Rāma’s exile to his coronation after Rāvaṇa’s death. Its eponymous invention is the statue-house (pratimā-gṛha) of the Ikṣvāku kings, where the returning Bharata learns of his father’s death by seeing Daśaratha’s statue.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "composition",
+    "label": "uncertain: early centuries CE if by Bhāsa; Kerala recension before c. 1000 CE on other views",
+    "certainty": "disputed",
+    "basis": "authorship dispute (see claim:bhasa-trivandrum-authorship)",
+    "sources": [
+     {
+      "source": "src:pusalker-1940"
+     },
+     {
+      "source": "src:tieken-1993"
+     }
+    ],
+    "start": 100,
+    "end": 1000,
+    "view": "range of views"
+   }
+  ],
+  "attributes": {
+   "language": "Sanskrit and Prakrits",
+   "extent": "7 acts",
+   "manuscripts": "Kerala (Malayalam-script) manuscripts; Kūṭiyāṭṭam acting tradition"
+  },
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Pratimānāṭaka act 3, seg. 0.21b",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/PN_3.html",
+    "quote": "svargaṃ gatasya bhartur daśarathasya pratimā-gehaṃ draṣṭum"
+   },
+   {
+    "source": "src:haksar-1993"
+   },
+   {
+    "source": "src:ganapati-sastri-1912"
+   },
+   {
+    "source": "src:tieken-1993"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:abhishekanataka",
+  "type": "text",
+  "name": "Abhiṣekanāṭaka",
+  "iast": "Abhiṣekanāṭaka",
+  "devanagari": "अभिषेकनाटक",
+  "subtype": "drama (nāṭaka)",
+  "summary": "A six-act Rāma play attributed to Bhāsa, from the killing of Vālin to Rāma’s consecration (abhiṣeka) after the war.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "composition",
+    "label": "uncertain: early centuries CE if by Bhāsa; Kerala recension before c. 1000 CE on other views",
+    "certainty": "disputed",
+    "basis": "authorship dispute (see claim:bhasa-trivandrum-authorship)",
+    "sources": [
+     {
+      "source": "src:pusalker-1940"
+     },
+     {
+      "source": "src:tieken-1993"
+     }
+    ],
+    "start": 100,
+    "end": 1000,
+    "view": "range of views"
+   }
+  ],
+  "attributes": {
+   "language": "Sanskrit and Prakrits",
+   "extent": "6 acts",
+   "manuscripts": "Kerala (Malayalam-script) manuscripts; Kūṭiyāṭṭam acting tradition"
+  },
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Abhiṣekanāṭaka act 1, seg. 2.2",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/AN_1.html",
+    "quote": "sarva-vānarā^dhipatiṃ hema-mālinaṃ vālinaṃ hantuṃ samudyogaḥ pravartate"
+   },
+   {
+    "source": "src:haksar-1993"
+   },
+   {
+    "source": "src:ganapati-sastri-1912"
+   },
+   {
+    "source": "src:tieken-1993"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:dutavakya",
+  "type": "text",
+  "name": "Dūtavākya",
+  "iast": "Dūtavākya",
+  "devanagari": "दूतवाक्य",
+  "subtype": "drama (vyāyoga (one act))",
+  "summary": "A one-act play attributed to Bhāsa on Kṛṣṇa’s embassy to Duryodhana: Duryodhana insults him and tries to bind him; Kṛṣṇa reveals his cosmic form and summons his personified weapons, led by the discus Sudarśana.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "composition",
+    "label": "uncertain: early centuries CE if by Bhāsa; Kerala recension before c. 1000 CE on other views",
+    "certainty": "disputed",
+    "basis": "authorship dispute (see claim:bhasa-trivandrum-authorship)",
+    "sources": [
+     {
+      "source": "src:pusalker-1940"
+     },
+     {
+      "source": "src:tieken-1993"
+     }
+    ],
+    "start": 100,
+    "end": 1000,
+    "view": "range of views"
+   }
+  ],
+  "attributes": {
+   "language": "Sanskrit and Prakrits",
+   "extent": "1 act",
+   "manuscripts": "Kerala (Malayalam-script) manuscripts; Kūṭiyāṭṭam acting tradition"
+  },
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Dūtavākya, seg. 41.3–41.4",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/DV.html",
+    "quote": "tataḥ praviśati sudarśanaḥ"
+   },
+   {
+    "source": "src:haksar-1993"
+   },
+   {
+    "source": "src:gretil-dutavakya",
+    "locator": "Dūtavākya v. 1",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAsa-dUtavAkya.txt"
+   },
+   {
+    "source": "src:ganapati-sastri-1912"
+   },
+   {
+    "source": "src:tieken-1993"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:dutaghatotkaca",
+  "type": "text",
+  "name": "Dūtaghaṭotkaca",
+  "iast": "Dūtaghaṭotkaca",
+  "devanagari": "दूतघटोत्कच",
+  "subtype": "drama (one-act play)",
+  "summary": "A one-act play attributed to Bhāsa set after Abhimanyu’s death: Ghaṭotkaca comes to the Kauravas as Kṛṣṇa’s envoy with a warning of Arjuna’s vengeance.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "composition",
+    "label": "uncertain: early centuries CE if by Bhāsa; Kerala recension before c. 1000 CE on other views",
+    "certainty": "disputed",
+    "basis": "authorship dispute (see claim:bhasa-trivandrum-authorship)",
+    "sources": [
+     {
+      "source": "src:pusalker-1940"
+     },
+     {
+      "source": "src:tieken-1993"
+     }
+    ],
+    "start": 100,
+    "end": 1000,
+    "view": "range of views"
+   }
+  ],
+  "attributes": {
+   "language": "Sanskrit and Prakrits",
+   "extent": "1 act",
+   "manuscripts": "Kerala (Malayalam-script) manuscripts; Kūṭiyāṭṭam acting tradition"
+  },
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Dūtaghaṭotkaca, seg. 5.1b",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/DGh.html",
+    "quote": "hā abhimanyo"
+   },
+   {
+    "source": "src:haksar-1993"
+   },
+   {
+    "source": "src:ganapati-sastri-1912"
+   },
+   {
+    "source": "src:tieken-1993"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:karnabhara",
+  "type": "text",
+  "name": "Karṇabhāra",
+  "iast": "Karṇabhāra",
+  "devanagari": "कर्णभार",
+  "subtype": "drama (one-act play)",
+  "summary": "A one-act play attributed to Bhāsa: on the battlefield, with Śalya as his charioteer, Karṇa gives his natural armour and earrings to Indra disguised as a brahmin, and is sent the spear Vimalā in return.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "composition",
+    "label": "uncertain: early centuries CE if by Bhāsa; Kerala recension before c. 1000 CE on other views",
+    "certainty": "disputed",
+    "basis": "authorship dispute (see claim:bhasa-trivandrum-authorship)",
+    "sources": [
+     {
+      "source": "src:pusalker-1940"
+     },
+     {
+      "source": "src:tieken-1993"
+     }
+    ],
+    "start": 100,
+    "end": 1000,
+    "view": "range of views"
+   }
+  ],
+  "attributes": {
+   "language": "Sanskrit and Prakrits",
+   "extent": "1 act",
+   "manuscripts": "Kerala (Malayalam-script) manuscripts; Kūṭiyāṭṭam acting tradition"
+  },
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Karṇabhāra, seg. 23.3",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/KBh.html",
+    "quote": "vimalā nāma śaktir iyaṃ gṛhyatām"
+   },
+   {
+    "source": "src:haksar-1993"
+   },
+   {
+    "source": "src:ganapati-sastri-1912"
+   },
+   {
+    "source": "src:tieken-1993"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:urubhanga",
+  "type": "text",
+  "name": "Ūrubhaṅga",
+  "iast": "Ūrubhaṅga",
+  "devanagari": "ऊरुभङ्ग",
+  "subtype": "drama (one-act play)",
+  "summary": "A one-act play attributed to Bhāsa on Duryodhana’s death after Bhīma breaks his thighs. Unusually for Sanskrit drama, the hero dies on stage — repentant, reconciled, forbidding vengeance — while Balarāma rages and Aśvatthāman vows the night massacre.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "composition",
+    "label": "uncertain: early centuries CE if by Bhāsa; Kerala recension before c. 1000 CE on other views",
+    "certainty": "disputed",
+    "basis": "authorship dispute (see claim:bhasa-trivandrum-authorship)",
+    "sources": [
+     {
+      "source": "src:pusalker-1940"
+     },
+     {
+      "source": "src:tieken-1993"
+     }
+    ],
+    "start": 100,
+    "end": 1000,
+    "view": "range of views"
+   }
+  ],
+  "attributes": {
+   "language": "Sanskrit and Prakrits",
+   "extent": "1 act",
+   "manuscripts": "Kerala (Malayalam-script) manuscripts; Kūṭiyāṭṭam acting tradition"
+  },
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Ūrubhaṅga, seg. 65.11",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/UBh.html",
+    "quote": "svargaṃ gataḥ"
+   },
+   {
+    "source": "src:haksar-1993"
+   },
+   {
+    "source": "src:ganapati-sastri-1912"
+   },
+   {
+    "source": "src:tieken-1993"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:madhyamavyayoga",
+  "type": "text",
+  "name": "Madhyamavyāyoga",
+  "iast": "Madhyamavyāyoga",
+  "devanagari": "मध्यमव्यायोग",
+  "subtype": "drama (vyāyoga (one act))",
+  "summary": "A one-act play attributed to Bhāsa: Ghaṭotkaca, sent by Hiḍimbā to find her a human meal, seizes the “middle” son of a brahmin family; Bhīma, the middle Pāṇḍava, offers himself instead, and father and son recognise each other.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "composition",
+    "label": "uncertain: early centuries CE if by Bhāsa; Kerala recension before c. 1000 CE on other views",
+    "certainty": "disputed",
+    "basis": "authorship dispute (see claim:bhasa-trivandrum-authorship)",
+    "sources": [
+     {
+      "source": "src:pusalker-1940"
+     },
+     {
+      "source": "src:tieken-1993"
+     }
+    ],
+    "start": 100,
+    "end": 1000,
+    "view": "range of views"
+   }
+  ],
+  "attributes": {
+   "language": "Sanskrit and Prakrits",
+   "extent": "1 act",
+   "manuscripts": "Kerala (Malayalam-script) manuscripts; Kūṭiyāṭṭam acting tradition"
+  },
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Madhyamavyāyoga, seg. 2.3",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/MV.html",
+    "quote": "pāṇḍava-madhyamasya ātma-jo hiḍimbā-raṇi-sambhūto"
+   },
+   {
+    "source": "src:haksar-1993"
+   },
+   {
+    "source": "src:ganapati-sastri-1912"
+   },
+   {
+    "source": "src:tieken-1993"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:pancharatra-bhasa",
+  "type": "text",
+  "name": "Pañcarātra (Bhāsa)",
+  "iast": "Pañcarātra",
+  "devanagari": "पञ्चरात्र",
+  "subtype": "drama (samavakāra (three acts))",
+  "summary": "A three-act play attributed to Bhāsa: as his sacrificial fee Droṇa asks Duryodhana to give the Pāṇḍavas half the kingdom; Duryodhana agrees if they are found within five nights (pañcarātra), and the Virāṭa cattle-raid reveals them — an invented happy ending to the quarrel.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "composition",
+    "label": "uncertain: early centuries CE if by Bhāsa; Kerala recension before c. 1000 CE on other views",
+    "certainty": "disputed",
+    "basis": "authorship dispute (see claim:bhasa-trivandrum-authorship)",
+    "sources": [
+     {
+      "source": "src:pusalker-1940"
+     },
+     {
+      "source": "src:tieken-1993"
+     }
+    ],
+    "start": 100,
+    "end": 1000,
+    "view": "range of views"
+   }
+  ],
+  "attributes": {
+   "language": "Sanskrit and Prakrits",
+   "extent": "3 acts",
+   "manuscripts": "Kerala (Malayalam-script) manuscripts; Kūṭiyāṭṭam acting tradition"
+  },
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Pañcarātra act 1, v. 1",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/PR_1.html",
+    "quote": "droṇaḥ pṛthivy-arjuna-bhīma-dūto"
+   },
+   {
+    "source": "src:haksar-1993"
+   },
+   {
+    "source": "src:ganapati-sastri-1912"
+   },
+   {
+    "source": "src:tieken-1993"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:balacarita",
+  "type": "text",
+  "name": "Bālacarita",
+  "iast": "Bālacarita",
+  "devanagari": "बालचरित",
+  "subtype": "drama (nāṭaka)",
+  "summary": "A five-act play attributed to Bhāsa on Kṛṣṇa’s childhood, from his birth in Kaṃsa’s prison through the exploits in the cowherd settlement to the killing of Kaṃsa.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "composition",
+    "label": "uncertain: early centuries CE if by Bhāsa; Kerala recension before c. 1000 CE on other views",
+    "certainty": "disputed",
+    "basis": "authorship dispute (see claim:bhasa-trivandrum-authorship)",
+    "sources": [
+     {
+      "source": "src:pusalker-1940"
+     },
+     {
+      "source": "src:tieken-1993"
+     }
+    ],
+    "start": 100,
+    "end": 1000,
+    "view": "range of views"
+   }
+  ],
+  "attributes": {
+   "language": "Sanskrit and Prakrits",
+   "extent": "5 acts",
+   "manuscripts": "Kerala (Malayalam-script) manuscripts; Kūṭiyāṭṭam acting tradition"
+  },
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Bālacarita act 5, v. 6",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/BC_5.html",
+    "quote": "yāvan na kaṃsa-hatakaṃ yudhi pātayitvā"
+   },
+   {
+    "source": "src:haksar-1993"
+   },
+   {
+    "source": "src:ganapati-sastri-1912"
+   },
+   {
+    "source": "src:tieken-1993"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:svapnavasavadatta",
+  "type": "text",
+  "name": "Svapnavāsavadatta",
+  "iast": "Svapnavāsavadatta",
+  "devanagari": "स्वप्नवासवदत्त",
+  "subtype": "drama (nāṭaka)",
+  "summary": "The best-known of the Trivandrum plays, on king Udayana of Vatsa and his queen Vāsavadattā, who is thought dead; a play of this name is ascribed to Bhāsa by later critics, which anchors the attribution of the whole corpus.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "composition",
+    "label": "uncertain: early centuries CE if by Bhāsa; Kerala recension before c. 1000 CE on other views",
+    "certainty": "disputed",
+    "basis": "authorship dispute (see claim:bhasa-trivandrum-authorship)",
+    "sources": [
+     {
+      "source": "src:pusalker-1940"
+     },
+     {
+      "source": "src:tieken-1993"
+     }
+    ],
+    "start": 100,
+    "end": 1000,
+    "view": "range of views"
+   }
+  ],
+  "attributes": {
+   "language": "Sanskrit and Prakrits",
+   "extent": "6 acts",
+   "manuscripts": "Kerala (Malayalam-script) manuscripts; Kūṭiyāṭṭam acting tradition"
+  },
+  "sources": [
+   {
+    "source": "src:gretil-svapnavasavadatta",
+    "locator": "Svapnavāsavadatta prologue",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAsa-svapnavAsavadatta.txt",
+    "quote": "nāndyante tataḥ praviśati sūtradhāraḥ"
+   },
+   {
+    "source": "src:keith-1924"
+   },
+   {
+    "source": "src:ganapati-sastri-1912"
+   },
+   {
+    "source": "src:tieken-1993"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:durjaya-urubhanga",
+  "type": "character",
+  "name": "Durjaya (son of Duryodhana, in the Ūrubhaṅga)",
+  "iast": "Durjaya",
+  "roles": [
+   "prince"
+  ],
+  "summary": "Duryodhana’s young son in Bhāsa’s Ūrubhaṅga, who wants to sit on his dying father’s lap; Duryodhana tells him to serve the Pāṇḍavas, obey Kuntī and honour Draupadī and Subhadrā as mothers.",
+  "details": "The Mahābhārata critical text names Duryodhana’s son Lakṣmaṇa; the name Durjaya and the scene are the play’s. Whether the play means the same son is not stated.",
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Ūrubhaṅga, seg. 41.6–41.9",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/UBh.html",
+    "quote": "tāta ahaṃ durjayaḥ"
+   },
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Ūrubhaṅga, seg. 52.5–52.6",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/UBh.html",
+    "quote": "aham iva pāṇḍavāḥ śuśrūṣayitavyāḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:bharata-statue-house",
+  "type": "narrative",
+  "name": "Bharata in the statue-house (Pratimānāṭaka)",
+  "summary": "Bhāsa’s invention in the Pratimānāṭaka: returning from his uncle’s house, Bharata enters the shrine where statues of the dead Ikṣvāku kings stand, sees a new statue of Daśaratha, and so learns of his father’s death.",
+  "details": "In the Vālmīki Rāmāyaṇa Bharata learns of Daśaratha’s death from Kaikeyī on arriving in Ayodhyā (VR (CE) 2.66). The statue-house has been discussed as evidence for royal portrait statues (cf. the Kuṣāṇa devakula at Māṭ); the play does not establish such a practice.",
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Pratimānāṭaka act 3, seg. 0.21b",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/PN_3.html",
+    "quote": "svargaṃ gatasya bhartur daśarathasya pratimā-gehaṃ draṣṭum"
+   },
+   {
+    "source": "src:keith-1924"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "limits": "A literary invention; it does not document an actual Ikṣvāku or Kosalan statue shrine.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:madhyama-encounter",
+  "type": "narrative",
+  "name": "Bhīma meets Ghaṭotkaca (Madhyamavyāyoga)",
+  "summary": "The plot of the Madhyamavyāyoga: Ghaṭotkaca, hunting a human for his mother Hiḍimbā, demands the “middle” son of a brahmin; Bhīma, the middle Pāṇḍava, goes in his place, fights him, and the two recognise each other as father and son.",
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Madhyamavyāyoga, seg. 2.3",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/MV.html",
+    "quote": "pāṇḍava-madhyamasya ātma-jo"
+   },
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Madhyamavyāyoga, seg. 37.4–37.6",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/MV.html",
+    "quote": "kā nāma bhavato mātā ghaṭotkacaḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "limits": "Not in the Mahābhārata; a dramatist’s invention built on MBh 1.143.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:karna-armour-gift",
+  "type": "narrative",
+  "name": "Karṇa gives away his armour and earrings",
+  "summary": "Indra, disguised as a brahmin, begs Karṇa for the armour and earrings he was born with; Karṇa, warned beforehand by the Sun, cuts them from his body and in the Mahābhārata obtains in exchange Indra’s unfailing spear, good for one kill.",
+  "details": "MBh (CE) 3.284–294 (the Kuṇḍalāharaṇa): Sūrya warns Karṇa in a dream (3.284), Indra comes as a brahmin (3.294), Karṇa bargains for the spear (3.294.20–23) and flays off the armour (3.294.38). The spear is later spent on Ghaṭotkaca (7.154). In Bhāsa’s Karṇabhāra the gift takes place on the battlefield, Karṇa asks nothing, and Indra sends the spear “Vimalā” afterwards through a messenger (see cmp:karna-armour-gift).",
+  "sources": [
+   {
+    "source": "src:gretil-mbh-ce",
+    "locator": "MBh (CE) 3.294.38",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm",
+    "quote": "tataś chittvā kavacaṃ divyam aṅgāt"
+   },
+   {
+    "source": "src:gretil-mbh-ce",
+    "locator": "MBh (CE) 3.294.21",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm",
+    "quote": "śaktiṃ me dehi vāsava amoghāṃ"
+   },
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Karṇabhāra, seg. 23.3",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/KBh.html",
+    "quote": "vimalā nāma śaktir iyaṃ gṛhyatām"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ }
+]

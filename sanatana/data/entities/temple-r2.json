@@ -1,0 +1,3153 @@
+[
+ {
+  "id": "concept:sapta-puri",
+  "type": "concept",
+  "name": "Sapta Purī (the seven liberating cities)",
+  "iast": "Sapta Purī",
+  "devanagari": "सप्तपुरी",
+  "aliases": [
+   "Saptapuri",
+   "Seven Holy Cities",
+   "Mokṣadāyikā purīs"
+  ],
+  "subtype": "pilgrimage network",
+  "summary": "The seven cities — Ayodhyā, Mathurā, Māyā (Haridvāra), Kāśī, Kāñcī, Avantikā (Ujjayinī) and Dvārakā — named in a widely recited Sanskrit verse as the places that grant liberation (mokṣa); a pan-Indian pilgrimage set rather than a single route.",
+  "details": "The list is usually quoted from a verse that runs “ayodhyā mathurā māyā kāśī kāñcī avantikā / purī dvāravatī caiva saptaitā mokṣadāyikāḥ” (recited in later Purāṇic and stotra literature; the earliest textual locus is not verified here). Two of the seven (Kāñcī and Kāśī) are also the seats of major Śaiva and Vaiṣṇava temple clusters; Haridvāra and Ujjayinī are two of the four Kumbha Melā sites.\n\nThe network is recorded here as MEMBER_OF edges from place records. The cities themselves are ancient, but the grouping is a devotional and geographical construct; scholars of sacred geography treat it as one of several overlapping pan-Indian schemes (Char Dhām, the twelve jyotirliṅgas, the Śakti pīṭhas).",
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Sapta_Puri"
+   },
+   {
+    "source": "src:eck-2012"
+   },
+   {
+    "source": "src:bhardwaj-1973"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The verse that defines the seven is widely recited but its earliest textual source is not verified here; membership in the set says nothing about the age of any particular monument in the cities.",
+  "openQuestions": [
+   "Earliest dated text that gives the seven-city verse."
+  ],
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "concept:panch-kedar",
+  "type": "concept",
+  "name": "Pañca Kedāra (five Kedāras of Garhwal)",
+  "iast": "Pañca Kedāra",
+  "devanagari": "पञ्चकेदार",
+  "aliases": [
+   "Panch Kedar",
+   "Panchkedar"
+  ],
+  "subtype": "pilgrimage network",
+  "summary": "Five Śiva shrines in the Garhwal Himalaya — Kedārnāth, Tuṅgnāth, Rudranāth, Madhyamaheśvar and Kalpeśvar — joined by a legend in which Śiva, fleeing the Pāṇḍavas in the form of a bull, reappears in five parts at the five sites.",
+  "details": "In the regional legend the Pāṇḍavas seek Śiva to expiate the killing of kin at Kurukṣetra; Śiva hides as a bull and sinks into the ground at Kedārnāth, leaving the hump there, while the arms appear at Tuṅgnāth, the face at Rudranāth, the navel (or belly) at Madhyamaheśvar and the matted hair at Kalpeśvar. The Pāṇḍava legend is a Garhwali tradition and is not found in the Mahābhārata itself; the shrines are stone temples of the regional Nāgara type whose surviving fabric is generally not securely dated.",
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Panch_Kedar"
+   },
+   {
+    "source": "src:bhardwaj-1973"
+   },
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The grouping and the bull legend are regional tradition (class 6); they do not date the shrines, which have no securely dated foundation inscriptions.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "concept:ashtavinayaka",
+  "type": "concept",
+  "name": "Aṣṭavināyaka (eight Gaṇeśa shrines of Maharashtra)",
+  "iast": "Aṣṭavināyaka",
+  "devanagari": "अष्टविनायक",
+  "aliases": [
+   "Ashtavinayak",
+   "Ashtavinayaka Yatra"
+  ],
+  "subtype": "pilgrimage network",
+  "traditions": [
+   "trad:ganapatya"
+  ],
+  "summary": "A pilgrimage circuit of eight Gaṇeśa temples around Pune in Maharashtra — Morgaon, Siddhatek, Pali, Mahad, Theur, Lenyadri, Ozar and Ranjangaon — each holding a self-manifest (svayambhū) image with its own legend.",
+  "details": "Tradition prescribes a fixed sequence beginning and ending at Morgaon (Mayureśvara), the principal seat of the Gāṇapatya tradition, whose mythology is set out in the Gaṇeśa and Mudgala Purāṇas. The temples in their present form are mostly 17th–18th-century Marāṭhā-period buildings or rebuildings, several of them patronised by the Peśvās and their officials.",
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ashtavinayaka"
+   },
+   {
+    "source": "src:courtright-1985"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The circuit is a devotional grouping whose present form is early modern; the svayambhū images and their legends are temple tradition.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "concept:navagraha-temples",
+  "type": "concept",
+  "name": "Navagraha temples of the Kaveri delta",
+  "iast": "Navagraha",
+  "devanagari": "नवग्रह",
+  "aliases": [
+   "Navagraha Sthalams",
+   "Navagraha temples (Tamil Nadu)"
+  ],
+  "subtype": "pilgrimage network",
+  "summary": "A set of nine temples near Kumbakonam and Mayiladuthurai in Tamil Nadu, each associated in tradition with one of the nine planetary deities (navagraha); eight are Śiva temples with a graha shrine, and only Sūryanār Kōvil is dedicated to the graha (Sūrya) as principal deity.",
+  "details": "Members and their grahas: Sūryanār Kōvil (Sūrya), Tiṅkaḷūr (Candra), Vaitīsvaran Kōvil (Aṅgāraka/Mars), Tiruveṇkāṭu (Budha), Āluṅkuṭi (Guru/Bṛhaspati), Kañcaṉūr (Śukra), Tirunaḷḷāṟu (Śani), Tirunāgeśvaram (Rāhu) and Kīḻapperumpaḷḷam (Ketu). Most are Cōḻa-period Śiva temples that also appear among the Tēvāram shrines; the grouping of the nine as a planetary circuit is a later devotional and astrological practice whose origin is not securely dated.",
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Navagraha_temples"
+   },
+   {
+    "source": "src:michell-1989"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The planetary association is temple tradition; the date at which the nine were grouped as a circuit is not established in the sources consulted.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "pol:ahom",
+  "type": "polity",
+  "name": "Ahom kingdom",
+  "aliases": [
+   "Ahom dynasty"
+  ],
+  "summary": "Kingdom of the Brahmaputra valley (Assam) founded by Tai-speaking Ahoms in the 13th century; its later kings, notably Gadādhar Siṃha and Śiva Siṃha, patronised Śaiva and Śākta temples around Guwahati.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "period of rule",
+    "start": 1228,
+    "end": 1826,
+    "label": "1228–1826 CE",
+    "certainty": "estimated",
+    "basis": "standard dynastic chronology (inscriptions, chronicles)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ahom_kingdom"
+     },
+     {
+      "source": "src:urban-2010"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ahom_kingdom"
+   },
+   {
+    "source": "src:urban-2010"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "pol:manikya-tripura",
+  "type": "polity",
+  "name": "Māṇikya dynasty of Tripura",
+  "iast": "Māṇikya",
+  "summary": "Ruling house of the kingdom of Tripura (Twipra) from the 15th century until 1949; Dhanya Māṇikya is credited with founding the Tripura Sundarī temple at Udaipur.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "period of rule",
+    "start": 1400,
+    "end": 1949,
+    "label": "c. 15th c.–1949 CE",
+    "certainty": "estimated",
+    "basis": "standard dynastic chronology (inscriptions, chronicles)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Manikya_dynasty"
+     },
+     {
+      "source": "src:sircar-1973"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Manikya_dynasty"
+   },
+   {
+    "source": "src:sircar-1973"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "pol:manipur-kingdom",
+  "type": "polity",
+  "name": "Kingdom of Manipur",
+  "summary": "Meitei kingdom of the Manipur valley; from the 18th century its rulers adopted Gauḍīya Vaiṣṇavism and built the royal Govindajī temple at Imphal.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "period of rule",
+    "start": 1110,
+    "end": 1949,
+    "label": "c. 12th c.–1949 CE (standard chronology; earlier dates are traditional)",
+    "certainty": "estimated",
+    "basis": "standard dynastic chronology (inscriptions, chronicles)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Manipur_(princely_state)"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Manipur_(princely_state)"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "pol:utpala",
+  "type": "polity",
+  "name": "Utpala dynasty of Kashmir",
+  "iast": "Utpala",
+  "summary": "Kashmiri dynasty founded by Avantivarman (r. c. 855–883), builder of the Avantisvāmin and Avantīśvara temples at Avantipura; its history is told in Kalhaṇa’s Rājataraṅgiṇī.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "period of rule",
+    "start": 855,
+    "end": 939,
+    "label": "c. 855–939 CE",
+    "certainty": "estimated",
+    "basis": "standard dynastic chronology (inscriptions, chronicles)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Utpala_dynasty"
+     },
+     {
+      "source": "src:stein-1900"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Utpala_dynasty"
+   },
+   {
+    "source": "src:stein-1900"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "pol:gurjara-pratihara",
+  "type": "polity",
+  "name": "Gurjara-Pratīhāra dynasty",
+  "iast": "Gurjara-Pratīhāra",
+  "summary": "North Indian imperial dynasty (c. 8th–11th c.) based at Kanauj, under whose rule many of the early Māru-Gurjara and central Indian Nāgara temples (Osian, Bateshwar) were built.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "period of rule",
+    "start": 730,
+    "end": 1036,
+    "label": "c. 730–1036 CE",
+    "certainty": "estimated",
+    "basis": "standard dynastic chronology (inscriptions, chronicles)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Pratihara_dynasty"
+     },
+     {
+      "source": "src:michell-2000"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Pratihara_dynasty"
+   },
+   {
+    "source": "src:michell-2000"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "pol:kachchhapaghata",
+  "type": "polity",
+  "name": "Kacchapaghāta dynasty",
+  "iast": "Kacchapaghāta",
+  "summary": "Dynasty of the Gwalior region (c. 10th–12th c.); a later inscription at Mitaoli associates the circular Causaṭh Yoginī temple with the Kacchapaghāta king Devapāla.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "period of rule",
+    "start": 950,
+    "end": 1150,
+    "label": "c. 950–1150 CE",
+    "certainty": "estimated",
+    "basis": "standard dynastic chronology (inscriptions, chronicles)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kachchhapaghata_dynasty"
+     },
+     {
+      "source": "src:dehejia-1986"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kachchhapaghata_dynasty"
+   },
+   {
+    "source": "src:dehejia-1986"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "pol:kalachuri-tripuri",
+  "type": "polity",
+  "name": "Kalacuris of Tripurī",
+  "iast": "Kalacuri",
+  "summary": "Dynasty of the upper Narmadā valley (Ḍāhala), with its capital at Tripurī near Jabalpur, c. 7th–13th c.; the Bhedaghat Causaṭh Yoginī temple and the early temples at Amarkantak are attributed to their period.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "period of rule",
+    "start": 675,
+    "end": 1212,
+    "label": "c. 7th c.–1212 CE",
+    "certainty": "estimated",
+    "basis": "standard dynastic chronology (inscriptions, chronicles)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kalachuris_of_Tripuri"
+     },
+     {
+      "source": "src:dehejia-1986"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kalachuris_of_Tripuri"
+   },
+   {
+    "source": "src:dehejia-1986"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "pol:bundela-orchha",
+  "type": "polity",
+  "name": "Bundelā kingdom of Orchha",
+  "aliases": [
+   "Orchha State"
+  ],
+  "summary": "Rajput state of Bundelkhand founded in 1531 with its capital at Orchha; its rulers built the Rām Rājā and Caturbhuj temples.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "period of rule",
+    "start": 1531,
+    "end": 1950,
+    "label": "1531–1950 CE",
+    "certainty": "estimated",
+    "basis": "standard dynastic chronology (inscriptions, chronicles)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Orchha_State"
+     },
+     {
+      "source": "src:michell-1989"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Orchha_State"
+   },
+   {
+    "source": "src:michell-1989"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "pol:maratha",
+  "type": "polity",
+  "name": "Marāṭhā state (Chhatrapatis and Peśvās)",
+  "aliases": [
+   "Maratha Confederacy",
+   "Maratha Empire",
+   "Peshwa period"
+  ],
+  "summary": "The Marāṭhā state founded by Śivājī (crowned 1674), later directed by the Peśvās from Pune until 1818; Marāṭhā rulers, ministers and generals rebuilt or endowed many temples across western and northern India.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "period of rule",
+    "start": 1674,
+    "end": 1818,
+    "label": "1674–1818 CE",
+    "certainty": "estimated",
+    "basis": "standard dynastic chronology (inscriptions, chronicles)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Maratha_Empire"
+     },
+     {
+      "source": "src:feldhaus-2003"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Maratha_Empire"
+   },
+   {
+    "source": "src:feldhaus-2003"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "pol:wodeyar-mysore",
+  "type": "polity",
+  "name": "Kingdom of Mysore (Woḍeyar dynasty)",
+  "aliases": [
+   "Wodeyar dynasty"
+  ],
+  "summary": "South Indian kingdom ruled by the Woḍeyars (with the interregnum of Haidar ʿAlī and Ṭīpū Sulṭān), patrons of the Cāmuṇḍeśvarī temple on Chamundi Hill.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "period of rule",
+    "start": 1399,
+    "end": 1950,
+    "label": "1399–1950 CE",
+    "certainty": "estimated",
+    "basis": "standard dynastic chronology (inscriptions, chronicles)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Mysore"
+     },
+     {
+      "source": "src:michell-1989"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Mysore"
+   },
+   {
+    "source": "src:michell-1989"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "pol:chalukya-kalyani",
+  "type": "polity",
+  "name": "Cāḷukyas of Kalyāṇī (Western Cāḷukyas)",
+  "iast": "Cāḷukya",
+  "aliases": [
+   "Western Chalukyas",
+   "Later Chalukyas"
+  ],
+  "summary": "Deccan dynasty (973–1189) whose ornate temples at Lakkundi, Itagi and elsewhere define the “Kalyāṇī Cāḷukya” or later Cāḷukya style.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "period of rule",
+    "start": 973,
+    "end": 1189,
+    "label": "973–1189 CE",
+    "certainty": "estimated",
+    "basis": "standard dynastic chronology (inscriptions, chronicles)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Western_Chalukya_Empire"
+     },
+     {
+      "source": "src:cousens-1926"
+     },
+     {
+      "source": "src:hardy-1995"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Western_Chalukya_Empire"
+   },
+   {
+    "source": "src:cousens-1926"
+   },
+   {
+    "source": "src:hardy-1995"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "pol:chalukya-vengi",
+  "type": "polity",
+  "name": "Cāḷukyas of Veṅgī (Eastern Cāḷukyas)",
+  "iast": "Cāḷukya",
+  "aliases": [
+   "Eastern Chalukyas"
+  ],
+  "summary": "Dynasty of coastal Andhra (c. 624–1070) to whom the Bhīmeśvara temple at Draksharama is attributed.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "period of rule",
+    "start": 624,
+    "end": 1070,
+    "label": "c. 624–1070 CE",
+    "certainty": "estimated",
+    "basis": "standard dynastic chronology (inscriptions, chronicles)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Eastern_Chalukyas"
+     },
+     {
+      "source": "src:michell-2000"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Eastern_Chalukyas"
+   },
+   {
+    "source": "src:michell-2000"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "pol:mallabhum",
+  "type": "polity",
+  "name": "Malla kings of Mallabhūm (Bishnupur)",
+  "aliases": [
+   "Mallabhum",
+   "Bishnupur Rajas"
+  ],
+  "summary": "Bengal dynasty of Mallabhūm whose 17th-century Vaiṣṇava rulers, converts under Śrīnivāsa Ācārya’s influence, built the brick and laterite temples of Bishnupur.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "period of rule",
+    "start": 1500,
+    "end": 1806,
+    "label": "c. 16th c.–1806 CE (earlier dates are traditional)",
+    "certainty": "estimated",
+    "basis": "standard dynastic chronology (inscriptions, chronicles)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mallabhum_kingdom"
+     },
+     {
+      "source": "src:mccutchion-1972"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mallabhum_kingdom"
+   },
+   {
+    "source": "src:mccutchion-1972"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "pol:mughal",
+  "type": "polity",
+  "name": "Mughal empire",
+  "summary": "Empire of the Timurid Mughals (1526–1857); under Akbar Hindu nobles such as Mān Siṃh of Amber built major temples (Govindadeva at Vrindavan, 1590), while some later rulers ordered temples demolished.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "period of rule",
+    "start": 1526,
+    "end": 1857,
+    "label": "1526–1857 CE",
+    "certainty": "estimated",
+    "basis": "standard dynastic chronology (inscriptions, chronicles)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mughal_Empire"
+     },
+     {
+      "source": "src:asher-1992"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mughal_Empire"
+   },
+   {
+    "source": "src:asher-1992"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "pol:kachwaha-amber",
+  "type": "polity",
+  "name": "Kachvāhā kingdom of Amber (Jaipur)",
+  "aliases": [
+   "Amber State",
+   "Jaipur State",
+   "Kachwaha dynasty"
+  ],
+  "summary": "Rajput kingdom of Amber, later Jaipur; its rulers served the Mughals and patronised Kṛṣṇa temples in Braj and, from 1714–35, rehoused the Govindadeva image at Jaipur.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "period of rule",
+    "start": 1550,
+    "end": 1949,
+    "label": "16th c.–1949 CE (as a Mughal-allied state; earlier origins traditional)",
+    "certainty": "estimated",
+    "basis": "standard dynastic chronology (inscriptions, chronicles)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Amber"
+     },
+     {
+      "source": "src:case-1996"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Amber"
+   },
+   {
+    "source": "src:case-1996"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "pol:shah-nepal",
+  "type": "polity",
+  "name": "Shah dynasty of Nepal",
+  "aliases": [
+   "Gorkha dynasty"
+  ],
+  "summary": "The Gorkha (Shah) dynasty that unified Nepal from 1768 until the abolition of the monarchy in 2008; patrons of Kathmandu valley shrines such as Manakāmanā and Dakṣiṇkālī.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "period of rule",
+    "start": 1768,
+    "end": 2008,
+    "label": "1768–2008 CE",
+    "certainty": "estimated",
+    "basis": "standard dynastic chronology (inscriptions, chronicles)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Shah_dynasty"
+     },
+     {
+      "source": "src:slusser-1982"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Shah_dynasty"
+   },
+   {
+    "source": "src:slusser-1982"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "pol:jaffna-kingdom",
+  "type": "polity",
+  "name": "Jaffna kingdom (Āryacakravarti dynasty)",
+  "aliases": [
+   "Aryacakravarti dynasty"
+  ],
+  "summary": "Tamil kingdom of northern Sri Lanka (c. 13th c.–1619) under the Āryacakravartis; tradition and the Yālppāṇa Vaipava Mālai credit it with the first Nallur Kandaswamy temple.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "period of rule",
+    "start": 1215,
+    "end": 1619,
+    "label": "c. 1215–1619 CE",
+    "certainty": "estimated",
+    "basis": "standard dynastic chronology (inscriptions, chronicles)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jaffna_kingdom"
+     },
+     {
+      "source": "src:pathmanathan-1978"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Jaffna_kingdom"
+   },
+   {
+    "source": "src:pathmanathan-1978"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "pol:chenla",
+  "type": "polity",
+  "name": "Chenla",
+  "aliases": [
+   "Zhenla"
+  ],
+  "summary": "Khmer polity (6th–8th c.) known from Chinese sources and Sanskrit and Khmer inscriptions; Īśānavarman I’s capital Īśānapura is identified with Sambor Prei Kuk.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "period of rule",
+    "start": 550,
+    "end": 800,
+    "label": "c. 550–800 CE",
+    "certainty": "estimated",
+    "basis": "standard dynastic chronology (inscriptions, chronicles)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Chenla"
+     },
+     {
+      "source": "src:coedes-1968"
+     },
+     {
+      "source": "src:jacques-lafond-2007"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Chenla"
+   },
+   {
+    "source": "src:coedes-1968"
+   },
+   {
+    "source": "src:jacques-lafond-2007"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "pol:pagan",
+  "type": "polity",
+  "name": "Pagan kingdom",
+  "aliases": [
+   "Bagan kingdom"
+  ],
+  "summary": "Burmese kingdom centred on Bagan (c. 849–1297); among its thousands of Buddhist monuments the Nathlaung Kyaung is the one surviving Vaiṣṇava temple.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "period of rule",
+    "start": 849,
+    "end": 1297,
+    "label": "c. 849–1297 CE",
+    "certainty": "estimated",
+    "basis": "standard dynastic chronology (inscriptions, chronicles)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Pagan_Kingdom"
+     },
+     {
+      "source": "src:strachan-1989"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Pagan_Kingdom"
+   },
+   {
+    "source": "src:strachan-1989"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "pol:majapahit",
+  "type": "polity",
+  "name": "Majapahit",
+  "summary": "East Javanese kingdom (1293–c. 1527) whose state temple Penataran carries Rāmāyaṇa and Kṛṣṇāyana reliefs.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "period of rule",
+    "start": 1293,
+    "end": 1527,
+    "label": "1293–c. 1527 CE",
+    "certainty": "estimated",
+    "basis": "standard dynastic chronology (inscriptions, chronicles)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Majapahit"
+     },
+     {
+      "source": "src:kinney-2003"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Majapahit"
+   },
+   {
+    "source": "src:kinney-2003"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "pol:irukkuvel",
+  "type": "polity",
+  "name": "Irukkuvēḷ chiefs of Kodumbalur",
+  "iast": "Irukkuvēḷ",
+  "summary": "Tamil chiefly family of Kodumbalur, allies and feudatories of the early Cōḻas, to whom the Mūvarkōvil temples are attributed by inscription.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "period of rule",
+    "start": 850,
+    "end": 1000,
+    "label": "c. 9th–10th c. CE",
+    "certainty": "estimated",
+    "basis": "standard dynastic chronology (inscriptions, chronicles)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Irunk%C5%8Dv%C4%93l"
+     },
+     {
+      "source": "src:barrett-1974"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Irunk%C5%8Dv%C4%93l"
+   },
+   {
+    "source": "src:barrett-1974"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "pol:shailodbhava",
+  "type": "polity",
+  "name": "Śailodbhava dynasty",
+  "iast": "Śailodbhava",
+  "summary": "Dynasty of Koṅgoda in coastal Odisha (c. 6th–8th c.) under whom the earliest surviving Bhubaneswar temples, including Paraśurāmeśvara, were built.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "period of rule",
+    "start": 550,
+    "end": 736,
+    "label": "c. 550–736 CE",
+    "certainty": "estimated",
+    "basis": "standard dynastic chronology (inscriptions, chronicles)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Shailodbhava_dynasty"
+     },
+     {
+      "source": "src:donaldson-1985"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Shailodbhava_dynasty"
+   },
+   {
+    "source": "src:donaldson-1985"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "pol:bhauma-kara",
+  "type": "polity",
+  "name": "Bhauma-Kara dynasty",
+  "iast": "Bhauma-Kara",
+  "summary": "Dynasty of Odisha (c. 8th–10th c.) with Śākta and Buddhist patronage; the Vaitāl Deul at Bhubaneswar is generally placed in their period.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "period of rule",
+    "start": 736,
+    "end": 950,
+    "label": "c. 736–950 CE",
+    "certainty": "estimated",
+    "basis": "standard dynastic chronology (inscriptions, chronicles)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bhauma-Kara_dynasty"
+     },
+     {
+      "source": "src:donaldson-1985"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bhauma-Kara_dynasty"
+   },
+   {
+    "source": "src:donaldson-1985"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "pol:guhila-mewar",
+  "type": "polity",
+  "name": "Guhilas of Mewar",
+  "aliases": [
+   "Kingdom of Mewar",
+   "Sisodia dynasty"
+  ],
+  "summary": "Rajput dynasty of Mewar (Guhilas, later Sisodiyās), whose rulers style themselves the dīvān (regent) of Ekaliṅgajī, the tutelary Śiva of the Eklingji temple.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "period of rule",
+    "start": 734,
+    "end": 1949,
+    "label": "c. 8th c.–1949 CE (early dates traditional)",
+    "certainty": "estimated",
+    "basis": "standard dynastic chronology (inscriptions, chronicles)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Mewar"
+     },
+     {
+      "source": "src:michell-1989"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Mewar"
+   },
+   {
+    "source": "src:michell-1989"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:umananda",
+  "type": "temple",
+  "name": "Umānanda temple, Guwahati",
+  "iast": "Umānanda",
+  "aliases": [
+   "Umananda Devaloi",
+   "Peacock Island temple"
+  ],
+  "subtype": "structural temple",
+  "traditions": [
+   "trad:shaiva"
+  ],
+  "summary": "Śiva temple on Umananda (Peacock) Island in the Brahmaputra at Guwahati, first built in 1694 on the orders of the Ahom king Gadādhar Siṃha; badly damaged in the 1897 Assam earthquake and later rebuilt.",
+  "details": "The island hill is called Bhasmācala in local tradition, which places here Śiva’s burning of Kāma to ashes (bhasma). Contemporary accounts summarised in the sources state that the brick temple was raised in 1694 by the Barphukan Garhganya Handique at the order of Gadādhar Siṃha (r. 1681–1696). The 1897 earthquake wrecked it; the present building is a later reconstruction by a local merchant, whose interior carries Vaiṣṇava inscriptions.",
+  "dates": [
+   {
+    "system": "traditional",
+    "event": "sacred-site legend",
+    "label": "Bhasmācala as the place where Śiva burned Kāma (tradition)",
+    "certainty": "estimated",
+    "basis": "temple tradition (sthala-purāṇa / local narrative); not a historical date",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Umananda_Temple"
+     }
+    ]
+   },
+   {
+    "system": "material",
+    "event": "construction",
+    "start": 1694,
+    "end": 1694,
+    "label": "1694 CE",
+    "certainty": "estimated",
+    "basis": "Ahom royal record as reported in the cited reference; not checked against the buranji edition",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Umananda_Temple"
+     }
+    ]
+   },
+   {
+    "system": "material",
+    "event": "surviving-structure",
+    "start": 1897,
+    "end": 1950,
+    "label": "rebuilt after the 1897 earthquake (exact date not established)",
+    "certainty": "estimated",
+    "basis": "reported destruction in the 1897 Assam earthquake and later reconstruction",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Umananda_Temple"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 26.19639,
+   "lon": 91.74528,
+   "precision": "exact",
+   "label": "Umananda Island, Brahmaputra river, Guwahati, Assam, India",
+   "country": "India"
+  },
+  "attributes": {
+   "principalDeity": "Śiva (Umānanda)",
+   "material": "brick and stone",
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 26 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Umananda_Temple"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Umananda_Temple"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q7881086"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The 1694 date rests on the Ahom record as summarised in a reference work; the standing building is post-1897. The Kāma legend is local tradition and does not date the site.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:hayagriva-madhava-hajo",
+  "type": "temple",
+  "name": "Hayagrīva Mādhava temple, Hajo",
+  "iast": "Hayagrīva Mādhava",
+  "aliases": [
+   "Hajo Hayagriva Madhava Mandir"
+  ],
+  "subtype": "structural temple",
+  "traditions": [
+   "trad:vaishnava"
+  ],
+  "summary": "Viṣṇu temple on Maṇikūṭa hill at Hajo near Guwahati whose present stone building is attributed to the Koch ruler Raghudeva Nārāyaṇa (late 16th c.); it is also revered by some Buddhists as the place of the Buddha’s parinirvāṇa.",
+  "details": "The temple stands on a high plinth with a frieze of elephants and wall reliefs of the ten avatāras and episodes from the epics. The image is worshipped as Mādhava with Hayagrīva associations. Bhutanese and Tibetan Buddhist pilgrims have long identified the site with Kuśinagara, a reattribution recorded in later Buddhist pilgrimage literature; Hajo is accordingly a shared Hindu–Buddhist (and, with the nearby Poa Mecca, Muslim) pilgrimage centre.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "surviving-structure",
+    "start": 1570,
+    "end": 1600,
+    "label": "late 16th c. (Koch period; 1583 often cited)",
+    "certainty": "estimated",
+    "basis": "attribution to the Koch ruler Raghudeva Nārāyaṇa in the reference; the year 1583 is from recall",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hayagriva_Madhava_Temple"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 26.2427,
+   "lon": 91.5265,
+   "precision": "exact",
+   "label": "Maṇikūṭa hill, Hajo, Kamrup district, Assam, India",
+   "country": "India"
+  },
+  "attributes": {
+   "principalDeity": "Viṣṇu as Hayagrīva-Mādhava",
+   "sculpture": "elephant frieze; avatāra and epic reliefs",
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 0 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hayagriva_Madhava_Temple"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Hayagriva_Madhava_Temple"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q6512504"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The Koch attribution dates the present fabric only; the Buddhist identification with the parinirvāṇa site is a later pilgrim tradition, not historical evidence.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:ugratara-guwahati",
+  "type": "temple",
+  "name": "Ugratārā temple, Guwahati",
+  "iast": "Ugratārā",
+  "aliases": [
+   "Ugratara Devalaya",
+   "Ugro Tara temple"
+  ],
+  "subtype": "structural temple",
+  "traditions": [
+   "trad:shakta"
+  ],
+  "summary": "Śākta temple of the goddess Ugratārā at Latasil/Uzan Bazaar in Guwahati, built by the Ahom king Śiva Siṃha in 1725; local tradition links it to the navel of Satī.",
+  "details": "The shrine stands west of the Jor Pukhuri tanks, which Śiva Siṃha had excavated a few years before. The goddess here has been compared with the Buddhist Tārā forms Ekajaṭā and Tīkṣṇakāntā, reflecting the Tantric milieu of Kāmarūpa. The temple was damaged in the 1897 earthquake and repaired.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "construction",
+    "start": 1725,
+    "end": 1725,
+    "label": "1725 CE",
+    "certainty": "estimated",
+    "basis": "attribution to Śiva Siṃha in the cited reference (Ahom period)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ugratara_Devalaya"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 26.18911,
+   "lon": 91.75377,
+   "precision": "exact",
+   "label": "Uzan Bazaar, Guwahati, Assam, India",
+   "country": "India"
+  },
+  "attributes": {
+   "principalDeity": "Ugratārā",
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 3 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ugratara_Devalaya"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Ugratara_Devalaya"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q7877918"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The 1725 construction is reported in a reference work; the Satī-navel tradition is local and is not in the standard pīṭha lists checked.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:madan-kamdev",
+  "type": "temple",
+  "name": "Madan Kāmdev temple ruins",
+  "iast": "Madana Kāmadeva",
+  "aliases": [
+   "Madan Kamdev"
+  ],
+  "subtype": "ruined temple group",
+  "traditions": [
+   "trad:shaiva"
+  ],
+  "summary": "Ruined complex of stone temples at Baihata Chariali near Guwahati, dated on stylistic grounds to about the 10th–12th centuries, with erotic and divine sculpture associated in local tradition with Kāmadeva.",
+  "details": "The site was reported in the 19th century and taken over by the Directorate of Archaeology, Assam, in 1977, which cleared and partly reassembled the ruins. Archaeologists disagree on the date and on which dynasty built the temples; the sculpture (Umā-Maheśvara, Sūrya, Gaṇeśa, vidyādharas) belongs to the early medieval art of Kāmarūpa. The name links the ruins to the Kālikā Purāṇa legend in which Kāma is restored to life in Kāmarūpa.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "construction",
+    "start": 900,
+    "end": 1200,
+    "label": "c. 10th–12th c.",
+    "certainty": "disputed",
+    "basis": "style of sculpture and architecture; archaeologists differ",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Madan_Kamdev"
+     }
+    ]
+   },
+   {
+    "system": "reception",
+    "event": "modern clearance and protection",
+    "start": 1977,
+    "end": 1977,
+    "label": "1977 (Directorate of Archaeology, Assam)",
+    "certainty": "estimated",
+    "basis": "state protection reported in the reference",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Madan_Kamdev"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 26.31972,
+   "lon": 91.74083,
+   "precision": "exact",
+   "label": "Baihata Chariali, Kamrup district, Assam, India",
+   "country": "India"
+  },
+  "attributes": {
+   "protection": "Directorate of Archaeology, Assam",
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 0 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Madan_Kamdev"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Madan_Kamdev"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q6726401"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "Stylistic dating only; neither the builders nor the original dedication are established, and the Kāmadeva name is a later local tradition.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:tripura-sundari-udaipur",
+  "type": "temple",
+  "name": "Tripura Sundarī temple, Udaipur (Tripura)",
+  "iast": "Tripura Sundarī",
+  "aliases": [
+   "Matabari",
+   "Tripureshwari temple",
+   "Kurma Pitha"
+  ],
+  "subtype": "structural temple",
+  "traditions": [
+   "trad:shakta"
+  ],
+  "summary": "Śākta temple on a tortoise-backed hillock at Udaipur, Tripura, founded according to tradition by Mahārāja Dhanya Māṇikya around 1501; counted among the 51 Śakti pīṭhas as the place where Satī’s right foot fell.",
+  "details": "The temple is a single-cell building of the Bengali ek-ratna type with a curved roof. The state of Tripura is popularly said to take its name from the goddess. Animal sacrifice, part of the temple’s worship, was halted for some weeks in 2019 by a court order and then resumed. The adjoining Kalyāṇ Sāgar tank keeps tortoises sacred to the shrine.",
+  "dates": [
+   {
+    "system": "traditional",
+    "event": "founding (tradition)",
+    "label": "revelation to Dhanya Māṇikya in a dream (tradition)",
+    "certainty": "estimated",
+    "basis": "temple tradition (sthala-purāṇa / local narrative); not a historical date",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tripura_Sundari_Temple"
+     }
+    ]
+   },
+   {
+    "system": "material",
+    "event": "construction",
+    "start": 1501,
+    "end": 1501,
+    "label": "c. 1501 CE",
+    "certainty": "estimated",
+    "basis": "founding attributed to Dhanya Māṇikya (r. c. 1490–1515) in the cited reference",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tripura_Sundari_Temple"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 23.50889,
+   "lon": 91.49806,
+   "precision": "approximate",
+   "label": "Udaipur, Gomati district, Tripura, India",
+   "country": "India"
+  },
+  "attributes": {
+   "principalDeity": "Tripurasundarī (with Bhairava as Tripureśa)",
+   "architecture": "Bengali ek-ratna",
+   "coordinateSource": "Wikidata P625 only"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tripura_Sundari_Temple"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q7843873"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The c. 1501 date is the dynastic founding tradition reported in a reference work; the pīṭha identification is devotional tradition and lists differ.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:unakoti",
+  "type": "temple",
+  "name": "Unakoti rock reliefs",
+  "iast": "Ūnakoṭi",
+  "aliases": [
+   "Unakoti",
+   "Subrai Khung"
+  ],
+  "subtype": "rock-cut relief site",
+  "traditions": [
+   "trad:shaiva"
+  ],
+  "summary": "Śaiva rock-cut reliefs and loose images on a forested hill near Kailashahar, Tripura, ascribed on stylistic grounds to the 7th–9th centuries; the central Unakotīśvara Kāla Bhairava head is about 9 m high.",
+  "details": "The name “one less than a crore” comes from a legend in which Śiva, travelling to Kāśī with 99,99,999 gods, cursed them to stone when they overslept. Besides the colossal Śiva head flanked by female figures (one identified as Durgā on a lion), the site has large Gaṇeśa reliefs. The only inscription, on a caturmukha liṅga, is in Bengali characters of the 11th–12th centuries and names one Śrī Jayadeva, probably a pilgrim. The site is protected by the ASI and was placed on India’s UNESCO Tentative List in 2022.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "carving",
+    "start": 600,
+    "end": 900,
+    "label": "c. 7th–9th c.",
+    "certainty": "estimated",
+    "basis": "style of the reliefs",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Unakoti"
+     }
+    ]
+   },
+   {
+    "system": "material",
+    "event": "inscription",
+    "start": 1000,
+    "end": 1200,
+    "label": "11th–12th c. pilgrim record",
+    "certainty": "estimated",
+    "basis": "palaeography of the Bengali-script inscription",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Unakoti"
+     }
+    ]
+   },
+   {
+    "system": "traditional",
+    "event": "origin legend",
+    "label": "the curse of the 99,99,999 gods (tradition)",
+    "certainty": "estimated",
+    "basis": "temple tradition (sthala-purāṇa / local narrative); not a historical date",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Unakoti"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 24.31667,
+   "lon": 92.06667,
+   "precision": "exact",
+   "label": "Unakoti, near Kailashahar, Tripura, India",
+   "country": "India"
+  },
+  "attributes": {
+   "protection": "Archaeological Survey of India",
+   "unesco": "UNESCO Tentative List (2022)",
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 11 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Unakoti"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Unakoti"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q7882256"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "Stylistic dating; the patrons are not named in any inscription (an attribution to a Deva dynasty of Samataṭa is an argument). The legend explains the name, not the carving.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:govindajee-imphal",
+  "type": "temple",
+  "name": "Śrī Govindajī temple, Imphal",
+  "iast": "Śrī Govindajī",
+  "aliases": [
+   "Shree Govindajee Temple"
+  ],
+  "subtype": "structural temple",
+  "traditions": [
+   "trad:vaishnava",
+   "trad:gaudiya"
+  ],
+  "summary": "Royal Gauḍīya Vaiṣṇava temple of Rādhā-Govinda beside the old palace of the Manipur kings at Imphal; first built in 1846, rebuilt after an 1868 earthquake and reconsecrated in 1876, with the images reinstalled in the present temple in 1908.",
+  "details": "Manipuri tradition holds that King Bhāgyacandra (r. 1763–1798) had the image of Govindajī carved after a vision and consecrated it in 1779 in his palace. Mahārāja Nara Siṃh commissioned a temple on 16 January 1846; it was rebuilt to the same design under Candrakīrti and consecrated on 26 April 1876. After the Anglo-Manipur war of 1891 the images were moved and in 1908 were reconsecrated in the present temple by Mahārāja Churachand Siṃh. The temple is the centre of Manipuri Vaiṣṇava ritual, including the rāsa-līlā dance.",
+  "dates": [
+   {
+    "system": "traditional",
+    "event": "image consecration (tradition)",
+    "label": "image carved 1776–79 under Bhāgyacandra after a vision (court tradition)",
+    "certainty": "estimated",
+    "basis": "temple tradition (sthala-purāṇa / local narrative); not a historical date",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Shree_Govindajee_Temple"
+     }
+    ]
+   },
+   {
+    "system": "material",
+    "event": "construction",
+    "start": 1846,
+    "end": 1846,
+    "label": "1846 CE (first temple)",
+    "certainty": "estimated",
+    "basis": "dated commission reported in the cited reference",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Shree_Govindajee_Temple"
+     }
+    ]
+   },
+   {
+    "system": "material",
+    "event": "surviving-structure",
+    "start": 1876,
+    "end": 1908,
+    "label": "1876 rebuilding; present temple in use from 1908",
+    "certainty": "estimated",
+    "basis": "reported consecration dates (26 April 1876; reinstallation 1908)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Shree_Govindajee_Temple"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 24.7978,
+   "lon": 93.94849,
+   "precision": "exact",
+   "label": "Imphal, Manipur, India",
+   "country": "India"
+  },
+  "attributes": {
+   "principalDeity": "Rādhā-Govinda (Govindajī)",
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 1 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Shree_Govindajee_Temple"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Shree_Govindajee_Temple"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q7503489"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The dates come from royal chronicles as summarised in a reference work; the vision narrative is court tradition.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:tungnath",
+  "type": "temple",
+  "name": "Tuṅgnāth temple",
+  "subtype": "structural temple",
+  "traditions": [
+   "trad:shaiva"
+  ],
+  "summary": "The highest of the Pañca Kedāra shrines (c. 3,680 m) below Chandrashila peak in Rudraprayag district, Uttarakhand, where the arms of the bull-form Śiva are worshipped; its priests are local Brahmins of Makkumath.",
+  "dates": [
+   {
+    "system": "traditional",
+    "event": "founding (tradition)",
+    "label": "built by the Pāṇḍavas where Śiva’s arms appeared (tradition)",
+    "certainty": "estimated",
+    "basis": "temple tradition (sthala-purāṇa / local narrative); not a historical date",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tungnath"
+     }
+    ]
+   },
+   {
+    "system": "material",
+    "event": "surviving-structure",
+    "start": 800,
+    "end": 1900,
+    "label": "undated stone shrine of the Garhwal Nāgara type",
+    "certainty": "disputed",
+    "basis": "no dated inscription known to the sources consulted; regional style only",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tungnath"
+     },
+     {
+      "source": "src:bhardwaj-1973"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 30.48944,
+   "lon": 79.21528,
+   "precision": "exact",
+   "label": "Tungnath, Rudraprayag district, Uttarakhand, India",
+   "country": "India"
+  },
+  "attributes": {
+   "elevation": "c. 3,680 m",
+   "principalDeity": "Śiva (as the arms)",
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 1 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tungnath"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Tungnath"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q3630554"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The stone shrine is not securely dated and the Pāṇḍava legend is regional tradition; membership of the Pañca Kedāra does not date the building.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:rudranath",
+  "type": "temple",
+  "name": "Rudranāth temple",
+  "subtype": "structural temple",
+  "traditions": [
+   "trad:shaiva"
+  ],
+  "summary": "Natural-rock Śiva shrine at about 2,290 m in the Garhwal Himalaya, the fourth Pañca Kedāra, where Śiva’s face (mukha) is worshipped.",
+  "dates": [
+   {
+    "system": "traditional",
+    "event": "founding (tradition)",
+    "label": "built by the Pāṇḍavas where Śiva’s face appeared (tradition)",
+    "certainty": "estimated",
+    "basis": "temple tradition (sthala-purāṇa / local narrative); not a historical date",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Rudranath"
+     }
+    ]
+   },
+   {
+    "system": "material",
+    "event": "surviving-structure",
+    "start": 800,
+    "end": 1900,
+    "label": "undated stone shrine of the Garhwal Nāgara type",
+    "certainty": "disputed",
+    "basis": "no dated inscription known to the sources consulted; regional style only",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Rudranath"
+     },
+     {
+      "source": "src:bhardwaj-1973"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 30.53333,
+   "lon": 79.33333,
+   "precision": "exact",
+   "label": "Rudranath, Chamoli district, Uttarakhand, India",
+   "country": "India"
+  },
+  "attributes": {
+   "elevation": "c. 2,290 m (reported)",
+   "principalDeity": "Śiva (as the face)",
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 0 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Rudranath"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Rudranath"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q7377510"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The stone shrine is not securely dated and the Pāṇḍava legend is regional tradition; membership of the Pañca Kedāra does not date the building.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:madhyamaheshwar",
+  "type": "temple",
+  "name": "Madhyamaheśvar temple",
+  "subtype": "structural temple",
+  "traditions": [
+   "trad:shaiva"
+  ],
+  "summary": "Śiva temple at Gaundar in Rudraprayag district, the Pañca Kedāra shrine where the navel or middle (madhya) of the bull-form Śiva is worshipped.",
+  "dates": [
+   {
+    "system": "traditional",
+    "event": "founding (tradition)",
+    "label": "built by the Pāṇḍavas where Śiva’s navel appeared (tradition)",
+    "certainty": "estimated",
+    "basis": "temple tradition (sthala-purāṇa / local narrative); not a historical date",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Madhyamaheshwar"
+     }
+    ]
+   },
+   {
+    "system": "material",
+    "event": "surviving-structure",
+    "start": 800,
+    "end": 1900,
+    "label": "undated stone shrine of the Garhwal Nāgara type",
+    "certainty": "disputed",
+    "basis": "no dated inscription known to the sources consulted; regional style only",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Madhyamaheshwar"
+     },
+     {
+      "source": "src:bhardwaj-1973"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 30.63694,
+   "lon": 79.21611,
+   "precision": "exact",
+   "label": "Gaundar, Rudraprayag district, Uttarakhand, India",
+   "country": "India"
+  },
+  "attributes": {
+   "elevation": "c. 3,490 m (reported)",
+   "principalDeity": "Śiva (as the navel)",
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 1 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Madhyamaheshwar"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Madhyamaheshwar"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q6727628"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The stone shrine is not securely dated and the Pāṇḍava legend is regional tradition; membership of the Pañca Kedāra does not date the building.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:kalpeshwar",
+  "type": "temple",
+  "name": "Kalpeśvar temple",
+  "subtype": "structural temple",
+  "traditions": [
+   "trad:shaiva"
+  ],
+  "summary": "Small rock shrine in the Urgam valley of Chamoli district, the fifth Pañca Kedāra and the only one accessible all year, where Śiva’s matted hair (jaṭā) is worshipped.",
+  "dates": [
+   {
+    "system": "traditional",
+    "event": "founding (tradition)",
+    "label": "built by the Pāṇḍavas where Śiva’s matted hair appeared (tradition)",
+    "certainty": "estimated",
+    "basis": "temple tradition (sthala-purāṇa / local narrative); not a historical date",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kalpeshwar"
+     }
+    ]
+   },
+   {
+    "system": "material",
+    "event": "surviving-structure",
+    "start": 800,
+    "end": 1900,
+    "label": "undated stone shrine of the Garhwal Nāgara type",
+    "certainty": "disputed",
+    "basis": "no dated inscription known to the sources consulted; regional style only",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kalpeshwar"
+     },
+     {
+      "source": "src:bhardwaj-1973"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 30.54881,
+   "lon": 79.44976,
+   "precision": "approximate",
+   "label": "Urgam valley, Chamoli district, Uttarakhand, India",
+   "country": "India"
+  },
+  "attributes": {
+   "elevation": "c. 2,200 m (reported)",
+   "principalDeity": "Śiva (as the matted hair)",
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 differ by 4.1 km; Wikidata value used"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kalpeshwar"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Kalpeshwar"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q6354398"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The stone shrine is not securely dated and the Pāṇḍava legend is regional tradition; membership of the Pañca Kedāra does not date the building.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:baijnath-kangra",
+  "type": "temple",
+  "name": "Vaidyanātha temple, Baijnath (Kangra)",
+  "iast": "Vaidyanātha",
+  "aliases": [
+   "Baijnath Temple"
+  ],
+  "subtype": "structural temple",
+  "traditions": [
+   "trad:shaiva"
+  ],
+  "summary": "Nāgara Śiva temple at Baijnath in the Kangra valley, built in 1204 CE by two merchants, Ahuka and Manyuka, according to its own inscriptions; Śiva is worshipped as Vaidyanātha, “lord of physicians”.",
+  "details": "Two long inscriptions on stone slabs in the hall, in Sanskrit (Śāradā script) and a local language (Ṭākarī), record the building of the temple by the merchants and praise the local ruler. The spire and outer roof were repaired in 1786 under Saṃsār Cand of Kangra, whose family priest supervised the work according to a further inscription. The temple survived the 1905 Kangra earthquake and is protected by the ASI (N-HP-17).",
+  "dates": [
+   {
+    "system": "material",
+    "event": "construction",
+    "start": 1204,
+    "end": 1204,
+    "label": "1204 CE",
+    "certainty": "secure",
+    "basis": "dated foundation inscription (Śaka year) in the temple hall, as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Baijnath_Temple"
+     },
+     {
+      "source": "src:michell-1989"
+     }
+    ]
+   },
+   {
+    "system": "material",
+    "event": "renovation",
+    "start": 1786,
+    "end": 1786,
+    "label": "1786 CE (Saṃsār Cand)",
+    "certainty": "estimated",
+    "basis": "repair inscription as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Baijnath_Temple"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 32.05095,
+   "lon": 76.64552,
+   "precision": "approximate",
+   "label": "Baijnath, Kangra district, Himachal Pradesh, India",
+   "country": "India"
+  },
+  "attributes": {
+   "protection": "ASI monument N-HP-17 (per Wikidata P1371)",
+   "architecture": "Nāgara",
+   "inscriptions": "Śāradā and Ṭākarī praśastis in the maṇḍapa",
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 differ by 30.5 km; Wikidata value used"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Baijnath_Temple"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Baijnath_Temple"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q4843233"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The inscriptions date the present temple; tradition that a Śiva temple stood here earlier is not tested here.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:hidimba-devi-manali",
+  "type": "temple",
+  "name": "Hiḍimbā Devī temple, Manali",
+  "iast": "Hiḍimbā Devī",
+  "aliases": [
+   "Dhungari temple",
+   "Hadimba temple"
+  ],
+  "subtype": "wooden temple",
+  "traditions": [
+   "trad:shakta"
+  ],
+  "summary": "Wooden pagoda-roofed temple at Manali built in 1553 over a rock worshipped as the goddess Hiḍimbā, whom local tradition identifies with the rākṣasī wife of Bhīma in the Mahābhārata.",
+  "details": "The four-tiered roof and carved wooden doorway are typical of Kullu valley temple building. The doorway inscription, as generally reported, names the Kullu ruler Bahādur Siṃh. In Kullu tradition Hiḍimbā is the tutelary goddess of the valley’s former rulers, and the identification with the epic Hiḍimbā is a local devotional reading.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "construction",
+    "start": 1553,
+    "end": 1553,
+    "label": "1553 CE",
+    "certainty": "estimated",
+    "basis": "year given in the cited reference (doorway inscription; patron Bahādur Siṃh from recall)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hidimba_Devi_Temple"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 32.24228,
+   "lon": 77.18737,
+   "precision": "exact",
+   "label": "Dhungiri, Manali, Kullu district, Himachal Pradesh, India",
+   "country": "India"
+  },
+  "attributes": {
+   "architecture": "Kullu wooden pagoda (four tiers)",
+   "protection": "ASI (N-HP-30/31 per Wikidata P1371)",
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 909 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hidimba_Devi_Temple"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Hidimba_Devi_Temple"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q15223867"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The building is dated to 1553; the identification of the goddess with the Mahābhārata’s Hiḍimbā is local tradition (class 6), not evidence about the epic.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:bhimakali-sarahan",
+  "type": "temple",
+  "name": "Bhīmakālī temple, Sarahan",
+  "iast": "Bhīmakālī",
+  "aliases": [
+   "Bhimakali Temple"
+  ],
+  "subtype": "wooden temple",
+  "traditions": [
+   "trad:shakta"
+  ],
+  "summary": "Tower-like wooden-and-stone temple of the goddess Bhīmakālī at Sarahan, the tutelary goddess of the former Bushahr rulers, built in the Himalayan kāṭh-kuṇi technique; it is regarded locally as being as holy as the Śakti pīṭhas.",
+  "details": "Two towers with overhanging galleries rise from a courtyard of the old Bushahr palace complex. Silver-sheathed doors bear an inscription of Rājā Padam Siṃh dated 1927. The date of the original foundation is uncertain (a 13th-century founding is claimed in the reference work, unsupported there by a dated record), and timber temples of this type are repeatedly renewed.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "dated fitting",
+    "start": 1927,
+    "end": 1927,
+    "label": "doors dated 1927 (Padam Siṃh)",
+    "certainty": "estimated",
+    "basis": "door inscription as reported (the reference gives 1827 and 1927 in different places; Padam Siṃh reigned 1914–47)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bhimakali_Temple"
+     }
+    ]
+   },
+   {
+    "system": "material",
+    "event": "surviving-structure",
+    "start": 1200,
+    "end": 1930,
+    "label": "13th c. founding claimed; fabric repeatedly renewed",
+    "certainty": "disputed",
+    "basis": "unsourced claim in the reference; no dated foundation record",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bhimakali_Temple"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 31.51,
+   "lon": 77.795,
+   "precision": "approximate",
+   "label": "Sarahan, Shimla district, Himachal Pradesh, India",
+   "country": "India"
+  },
+  "attributes": {
+   "architecture": "kāṭh-kuṇi (alternating timber and stone courses)",
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 differ by 17.0 km; Wikidata value used"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bhimakali_Temple"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Bhimakali_Temple"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q4901758"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "Neither the founding date nor the age of the present towers is established; “as holy as the 51 pīṭhas” is a local claim, not a listing.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:lakshmi-narayan-chamba",
+  "type": "temple",
+  "name": "Lakṣmī-Nārāyaṇa temple group, Chamba",
+  "iast": "Lakṣmī-Nārāyaṇa",
+  "aliases": [
+   "Laxmi Narayan temple, Chamba"
+  ],
+  "subtype": "temple group",
+  "traditions": [
+   "trad:vaishnava"
+  ],
+  "summary": "Group of stone śikhara temples with wooden canopies in Chamba town, Himachal Pradesh, whose main Viṣṇu temple is attributed to Rājā Sāhila Varman, the 10th-century founder of Chamba; a gilded finial was added in 1678.",
+  "details": "Chamba tradition holds that Sāhila Varman moved his capital from Brahmaur to the lower Ravi valley around 920 and named it after his daughter Campāvatī. The temples of the group range from the 10th to the 19th century; their Nāgara śikharas carry wooden umbrella roofs adapted to snowfall. A metal Garuḍa stands on the pillar before the main shrine, and Rājā Chatar Siṃh added gold-plated pinnacles in 1678.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "construction",
+    "start": 920,
+    "end": 1000,
+    "label": "10th c. (main temple, attributed to Sāhila Varman)",
+    "certainty": "estimated",
+    "basis": "Chamba dynastic tradition and style, as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Chamba,_Himachal_Pradesh"
+     },
+     {
+      "source": "src:goetz-1955"
+     }
+    ]
+   },
+   {
+    "system": "material",
+    "event": "renovation",
+    "start": 1678,
+    "end": 1678,
+    "label": "1678 CE gilded pinnacles (Chatar Siṃh)",
+    "certainty": "estimated",
+    "basis": "reported dated addition",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Chamba,_Himachal_Pradesh"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 32.14824,
+   "lon": 76.41857,
+   "precision": "approximate",
+   "label": "Chamba town, Himachal Pradesh, India (temple complex in the old town)",
+   "country": "India"
+  },
+  "attributes": {
+   "architecture": "Nāgara śikhara with wooden canopies",
+   "coordinateNote": "Wikidata point is for Chamba town, not the temple itself",
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 differ by 53.1 km; Wikipedia value used"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Chamba,_Himachal_Pradesh"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Chamba,_Himachal_Pradesh"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q1949346"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The attribution to Sāhila Varman rests on dynastic tradition and style; the group spans many centuries of building.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:masrur",
+  "type": "temple",
+  "name": "Masrur rock-cut temples",
+  "iast": "Masrūr",
+  "aliases": [
+   "Masroor temples"
+  ],
+  "subtype": "rock-cut monolithic temple",
+  "traditions": [
+   "trad:shaiva"
+  ],
+  "summary": "Monolithic complex of Nāgara temples carved from a sandstone ridge in the Kangra valley in the early 8th century, dedicated chiefly to Śiva with Viṣṇu, Devī and Sūrya imagery; unfinished and earthquake-damaged.",
+  "details": "The fifteen or so shrines are cut from the living rock around a central shrine and face a tank, a rare northern counterpart to the monolithic temples of Ellora and Mamallapuram. Henry Shuttleworth reported the site in 1913 and Harold Hargreaves of the ASI surveyed it in 1915. Michael Meister has read it as a “temple-mountain” embodying the surrounding Dhauladhar range. Much sculpture is lost and the complex was left incomplete.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "construction",
+    "start": 700,
+    "end": 750,
+    "label": "early 8th c.",
+    "certainty": "estimated",
+    "basis": "style (late Gupta classicism; Nāgara śikhara forms)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Masrur_Temples"
+     },
+     {
+      "source": "src:michell-1989"
+     }
+    ]
+   },
+   {
+    "system": "reception",
+    "event": "modern documentation",
+    "start": 1913,
+    "end": 1915,
+    "label": "reported 1913; ASI survey 1915",
+    "certainty": "estimated",
+    "basis": "reported surveys",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Masrur_Temples"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 32.07256,
+   "lon": 76.13708,
+   "precision": "exact",
+   "label": "Masrur, Kangra district, Himachal Pradesh, India",
+   "country": "India"
+  },
+  "attributes": {
+   "protection": "ASI monument N-HP-23 (per Wikidata P1371)",
+   "architecture": "monolithic Nāgara",
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 15 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Masrur_Temples"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Masrur_Temples"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q19893793"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "No inscription names patron or date; the 8th-century date is stylistic.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:amarnath-cave",
+  "type": "place",
+  "name": "Amarnāth cave",
+  "iast": "Amaranātha",
+  "aliases": [
+   "Amarnath Temple",
+   "Amareshvara"
+  ],
+  "subtype": "cave shrine (natural)",
+  "traditions": [
+   "trad:shaiva"
+  ],
+  "summary": "Glacial cave at about 3,888 m in the Lidder–Sind watershed of Kashmir where an ice stalagmite is worshipped as a self-formed liṅga of Śiva (Amareśvara); the summer yātrā is one of the largest Himalayan pilgrimages.",
+  "details": "Kalhaṇa’s Rājataraṅgiṇī (12th c.) and the Nīlamata Purāṇa refer to Amareśvara and its pilgrimage. The reference work reports a tradition that Queen Sūryamatī (11th c.) gave tridents and bāṇa-liṅgas to the shrine; Abu’l Faẓl’s Āʾīn-i Akbarī (16th c.) describes the waxing and waning ice formation, and François Bernier (1663) described the cave. The pilgrimage is administered by a shrine board and opens only in summer.",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "earliest textual attestation",
+    "start": 1148,
+    "end": 1150,
+    "label": "Rājataraṅgiṇī (1148–50) names Amareśvara",
+    "certainty": "estimated",
+    "basis": "reference to the shrine and its pilgrimage in Kalhaṇa’s chronicle, as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Amarnath_Temple"
+     },
+     {
+      "source": "src:stein-1900"
+     }
+    ]
+   },
+   {
+    "system": "reception",
+    "event": "Mughal-period description",
+    "start": 1590,
+    "end": 1600,
+    "label": "Āʾīn-i Akbarī (late 16th c.)",
+    "certainty": "estimated",
+    "basis": "description reported in the reference",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Amarnath_Temple"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 34.2149,
+   "lon": 75.5008,
+   "precision": "approximate",
+   "label": "Amarnath cave, Anantnag district, Jammu and Kashmir, India",
+   "country": "India"
+  },
+  "attributes": {
+   "elevation": "c. 3,888 m",
+   "principalObject": "ice stalagmite worshipped as liṅga",
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 differ by 1.5 km; Wikipedia value used"
+  },
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Amarnath_Temple"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Amarnath_Temple"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q455167"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "A natural cave has no built fabric to date; textual attestations show the pilgrimage existed by the 12th century, not when it began.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:vaishno-devi",
+  "type": "place",
+  "name": "Vaiṣṇo Devī cave shrine",
+  "iast": "Vaiṣṇo Devī",
+  "aliases": [
+   "Vaishno Devi Temple",
+   "Mata Vaishno Devi",
+   "Trikuta Devi"
+  ],
+  "subtype": "cave shrine (natural)",
+  "traditions": [
+   "trad:shakta"
+  ],
+  "summary": "Cave shrine on Trikūṭa mountain above Katra in Jammu, where the goddess Vaiṣṇo Devī is worshipped in three natural rock forms (piṇḍīs) identified with Mahākālī, Mahālakṣmī and Mahāsarasvatī; one of the most visited pilgrimage sites in India.",
+  "details": "Nineteenth-century travellers still called the goddess “Trikūṭā Devī”, and scholars trace the present Vaiṣṇavī identity and the pan-Indian popularity of the pilgrimage to the 19th–20th centuries. Court chronicles of Jammu (Rājdarśanī, 1847) claim royal visits as early as 996 CE, which are traditional. Since 1986 the shrine has been run by the Shri Mata Vaishno Devi Shrine Board.",
+  "dates": [
+   {
+    "system": "traditional",
+    "event": "claimed early visit (tradition)",
+    "label": "royal visit in 996 CE claimed by the Rājdarśanī chronicle (1847)",
+    "certainty": "estimated",
+    "basis": "temple tradition (sthala-purāṇa / local narrative); not a historical date",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vaishno_Devi_Temple"
+     }
+    ]
+   },
+   {
+    "system": "reception",
+    "event": "attested as “Trikuta Devi” by European travellers",
+    "start": 1842,
+    "end": 1859,
+    "label": "1842–1859",
+    "certainty": "estimated",
+    "basis": "travellers’ accounts (Vigne 1842; Temple 1859) reported in the reference",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vaishno_Devi_Temple"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 33.0299,
+   "lon": 74.9482,
+   "precision": "exact",
+   "label": "Trikuta mountain, Katra, Reasi district, Jammu and Kashmir, India",
+   "country": "India"
+  },
+  "attributes": {
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 17 m"
+  },
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Vaishno_Devi_Temple"
+   },
+   {
+    "source": "src:erndl-1993"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Vaishno_Devi_Temple"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q611371"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "A cave shrine has no datable fabric; early-date claims rest on 19th-century court chronicles; the Vaiṣṇavī theology is a later layer.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:kheer-bhawani",
+  "type": "temple",
+  "name": "Kṣīra Bhavānī temple, Tulmul",
+  "iast": "Kṣīra Bhavānī",
+  "aliases": [
+   "Kheer Bhawani",
+   "Ragnya Devi temple",
+   "Tulmul temple"
+  ],
+  "subtype": "structural temple",
+  "traditions": [
+   "trad:shakta"
+  ],
+  "summary": "Spring shrine of the goddess Rājñā (Kṣīra Bhavānī) at Tulmul near Srinagar, whose present marble temple in the spring-fed pool was built under Mahārāja Pratāp Siṃh in the 1910s; its annual Jyeṣṭha aṣṭamī fair is the main festival of Kashmiri Paṇḍits.",
+  "details": "The name refers to the offering of milk-rice (kṣīra) to the goddess. Devotees observe the changing colour of the spring water as an omen; Walter Lawrence recorded a violet tinge in 1886. The fair continued through the disruption of 1990, when most Kashmiri Paṇḍits left the valley, and remains a focus of return pilgrimage.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "construction",
+    "start": 1910,
+    "end": 1919,
+    "label": "1910s (present temple, spring and pool)",
+    "certainty": "estimated",
+    "basis": "construction under Pratāp Siṃh as reported; later renovation under Hari Siṃh",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kheer_Bhawani_Temple"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 34.22111,
+   "lon": 74.73,
+   "precision": "exact",
+   "label": "Tulmulla, Ganderbal district, Jammu and Kashmir, India",
+   "country": "India"
+  },
+  "attributes": {
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 40 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kheer_Bhawani_Temple"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Kheer_Bhawani_Temple"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q6401207"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The present building is early 20th century; the antiquity of the spring cult is not dated by the sources consulted.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:avantiswami",
+  "type": "temple",
+  "name": "Avantisvāmin temple, Avantipura",
+  "iast": "Avantisvāmin",
+  "aliases": [
+   "Avantiswami Temple",
+   "Pandav Lari"
+  ],
+  "subtype": "ruined temple",
+  "traditions": [
+   "trad:vaishnava"
+  ],
+  "summary": "Ruined Viṣṇu temple at Avantipura on the Jhelum, built by King Avantivarman (r. c. 855–883) of the Utpala dynasty, as recorded by Kalhaṇa; with the nearby Avantīśvara Śiva temple it is a key example of Kashmiri stone architecture.",
+  "details": "Kalhaṇa states that Avantivarman built the Viṣṇu temple Avantisvāmin before his accession and the Śiva temple Avantīśvara afterwards. The colonnaded courtyard (peristyle) with trefoil arches, the gateway and the reliefs survive in ruin; the site was excavated in the early 20th century and is protected by the ASI. Locals call it “Pāṇḍav Lari”.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "construction",
+    "start": 855,
+    "end": 883,
+    "label": "c. 855–883 CE (Avantivarman)",
+    "certainty": "estimated",
+    "basis": "Kalhaṇa’s attribution and regnal chronology",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Avantiswami_Temple"
+     },
+     {
+      "source": "src:stein-1900"
+     },
+     {
+      "source": "src:kak-1933"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 33.92326,
+   "lon": 75.01285,
+   "precision": "exact",
+   "label": "Awantipora, Pulwama district, Jammu and Kashmir, India",
+   "country": "India"
+  },
+  "attributes": {
+   "protection": "ASI (N-JK-24/37 per Wikidata P1371)",
+   "architecture": "Kashmiri peristyle temple",
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 6 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Avantiswami_Temple"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Avantiswami_Temple"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q24950973"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "Kalhaṇa’s 12th-century chronicle supplies the attribution; the ruins confirm a large 9th-century temple but the chronicle’s details are not independently dated.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:pandrethan",
+  "type": "temple",
+  "name": "Pandrethan Śiva temple, Srinagar",
+  "iast": "Purāṇādhiṣṭhāna",
+  "aliases": [
+   "Pandrethan Temple"
+  ],
+  "subtype": "structural temple",
+  "traditions": [
+   "trad:shaiva"
+  ],
+  "summary": "Small, well-preserved Kashmiri stone temple of the 8th–9th century standing in a spring-fed tank at Pandrethan, the site of the ancient capital (Purāṇādhiṣṭhāna) east of Srinagar.",
+  "details": "The temple’s pyramidal stone roof and carved ceiling attracted 19th-century visitors and photographers. Its earlier identification with the 10th-century Meruvardhanasvāmin temple named in the Rājataraṅgiṇī has been rejected, as has an identification with an early 12th-century Śiva temple; the date rests on style.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "construction",
+    "start": 700,
+    "end": 899,
+    "label": "8th–9th c.",
+    "certainty": "estimated",
+    "basis": "style; identifications with temples named by Kalhaṇa rejected",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Pandrethan_Shiva_Temple"
+     },
+     {
+      "source": "src:kak-1933"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 34.05639,
+   "lon": 74.86083,
+   "precision": "exact",
+   "label": "Pandrethan, Srinagar, Jammu and Kashmir, India",
+   "country": "India"
+  },
+  "attributes": {
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 0 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Pandrethan_Shiva_Temple"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Pandrethan_Shiva_Temple"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q133289587"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The date is stylistic; earlier textual identifications have been rejected by scholars.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:shankaracharya-srinagar",
+  "type": "temple",
+  "name": "Śaṅkarācārya (Jyeṣṭheśvara) temple, Srinagar",
+  "iast": "Jyeṣṭheśvara",
+  "aliases": [
+   "Shankaracharya Temple",
+   "Takht-i-Sulaiman",
+   "Gopadri"
+  ],
+  "subtype": "structural temple",
+  "traditions": [
+   "trad:shaiva"
+  ],
+  "summary": "Stone Śiva temple on the hill above Srinagar known to Kalhaṇa as Gopādri; its date is disputed between an early medieval core and a later superstructure, and its modern name links it to Ādi Śaṅkara.",
+  "details": "Kalhaṇa says that King Gopāditya granted land at the foot of the hill to Brahmins and built a shrine of Jyeṣṭheśvara on its top. James Fergusson dated the standing building to the 17th–18th century; Aurel Stein accepted that the superstructure is recent but held the base and stairs to be much older. The Dogra ruler Gulāb Siṃh built the stairway from the Durgā Nāg side, and a statue of Śaṅkara was installed in 1961. The temple is an ASI-protected monument.",
+  "dates": [
+   {
+    "system": "traditional",
+    "event": "founding (chronicle tradition)",
+    "label": "built by King Gopāditya (Rājataraṅgiṇī)",
+    "certainty": "estimated",
+    "basis": "temple tradition (sthala-purāṇa / local narrative); not a historical date",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Shankaracharya_Temple"
+     },
+     {
+      "source": "src:stein-1900"
+     }
+    ]
+   },
+   {
+    "system": "material",
+    "event": "surviving-structure",
+    "start": 1600,
+    "end": 1800,
+    "label": "17th–18th c. superstructure",
+    "certainty": "disputed",
+    "basis": "architectural argument",
+    "view": "Fergusson",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Shankaracharya_Temple"
+     }
+    ]
+   },
+   {
+    "system": "material",
+    "event": "surviving-structure",
+    "start": 600,
+    "end": 1000,
+    "label": "early medieval base and stairs",
+    "certainty": "disputed",
+    "basis": "architectural argument",
+    "view": "Stein",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Shankaracharya_Temple"
+     },
+     {
+      "source": "src:stein-1900"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 34.07889,
+   "lon": 74.84361,
+   "precision": "exact",
+   "label": "Shankaracharya Hill (Gopadri), Srinagar, Jammu and Kashmir, India",
+   "country": "India"
+  },
+  "attributes": {
+   "protection": "ASI (N-JK-41/58 per Wikidata P1371)",
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 0 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Shankaracharya_Temple"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Shankaracharya_Temple"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q7488715"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "There is no consensus on the date; the Śaṅkara association is a modern name and tradition.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:jwalamukhi",
+  "type": "temple",
+  "name": "Jvālāmukhī temple",
+  "iast": "Jvālāmukhī",
+  "aliases": [
+   "Jwala Ji",
+   "Jawalamukhi temple"
+  ],
+  "subtype": "structural temple",
+  "traditions": [
+   "trad:shakta"
+  ],
+  "summary": "Śākta temple at Jawalamukhi in the Kangra valley where natural gas flames issuing from the rock are worshipped as the goddess Jvālā; counted among the Śakti pīṭhas (the tongue of Satī in common lists).",
+  "details": "There is no image: the flames themselves are the goddess. Popular tradition credits the Mughal emperor Akbar with testing and then honouring the flames, and the gilded roof to Mahārājā Raṇjīt Siṃh (early 19th c.); both are reported here from recall. The temple is a centre of the northwestern Goddess cult studied by Erndl.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "surviving-structure",
+    "start": 1700,
+    "end": 1850,
+    "label": "present temple largely 18th–19th c.",
+    "certainty": "estimated",
+    "basis": "style and the reported early-19th-c. gilding (recall)",
+    "sources": [
+     {
+      "source": "src:erndl-1993"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 31.87561,
+   "lon": 76.32435,
+   "precision": "approximate",
+   "label": "Jawalamukhi, Kangra district, Himachal Pradesh, India",
+   "country": "India"
+  },
+  "attributes": {
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 431 m"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Jawalamukhi"
+   },
+   {
+    "source": "src:erndl-1993"
+   },
+   {
+    "source": "src:sircar-1973"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Jawalamukhi"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q2286867"
+   }
+  ],
+  "confidence": "low",
+  "status": "recall",
+  "agent": "temple",
+  "limits": "The fabric date and the Akbar and Raṇjīt Siṃh traditions are from recall, not checked; the Wikipedia article consulted is about the town and only confirms the location, the flame and the pīṭha status."
+ },
+ {
+  "id": "place:haridwar",
+  "type": "place",
+  "name": "Haridvāra (Haridwar)",
+  "iast": "Haridvāra",
+  "devanagari": "हरिद्वार",
+  "aliases": [
+   "Haridwar",
+   "Hardwar",
+   "Māyāpurī",
+   "Gangadvara"
+  ],
+  "subtype": "tīrtha city",
+  "summary": "City where the Gaṅgā leaves the Śivālik hills for the plains, one of the Sapta Purī (as Māyā) and one of the four Kumbha Melā sites; its main bathing ghāṭ is Har kī Pauṛī.",
+  "details": "Xuanzang (629–645) describes a city on the Gaṅgā, “Mo-yu-lo”, identified with Māyāpur at the south of the modern town. Kaṅkhal (place:kanakhala), the traditional site of Dakṣa’s sacrifice, lies within the city. Timur sacked the town in January 1399.",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "earliest external attestation (Xuanzang)",
+    "start": 630,
+    "end": 645,
+    "label": "Xuanzang’s account (629–645)",
+    "certainty": "estimated",
+    "basis": "Chinese pilgrim’s record as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Haridwar"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 29.945,
+   "lon": 78.163,
+   "precision": "region",
+   "label": "Haridwar, Uttarakhand, India",
+   "country": "India"
+  },
+  "attributes": {
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 differ by 2.4 km; Wikipedia value used"
+  },
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Haridwar"
+   },
+   {
+    "source": "src:eck-2012"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Haridwar"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q273030"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "Membership of the Sapta Purī and Kumbha site status are religious tradition; the city’s ancient name and identifications rest on texts and travellers, not excavation.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:har-ki-pauri",
+  "type": "place",
+  "name": "Har kī Pauṛī, Haridwar",
+  "iast": "Har kī Pauṛī",
+  "aliases": [
+   "Har Ki Pauri",
+   "Brahmakund"
+  ],
+  "subtype": "ghāṭ (bathing steps)",
+  "summary": "The principal bathing ghāṭ of Haridwar, held to bear the footprint of Viṣṇu (Hari) at the Brahmakuṇḍ, focus of the evening Gaṅgā āratī and the Kumbha Melā baths.",
+  "details": "Tradition attributes the first ghāṭ to King Vikramāditya in memory of his brother Bhartṛhari. In 1819 the ghāṭ was still a narrow passage, and a crush at the Kumbha of that year killed some 430 people; the ghāṭs were enlarged in 1938 and again in 1986, when the clock tower area was also rebuilt.",
+  "dates": [
+   {
+    "system": "traditional",
+    "event": "founding (tradition)",
+    "label": "built by Vikramāditya for Bhartṛhari (tradition)",
+    "certainty": "estimated",
+    "basis": "temple tradition (sthala-purāṇa / local narrative); not a historical date",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Har_Ki_Pauri"
+     }
+    ]
+   },
+   {
+    "system": "material",
+    "event": "surviving-structure",
+    "start": 1938,
+    "end": 1986,
+    "label": "enlarged 1938 and 1986",
+    "certainty": "estimated",
+    "basis": "reported building campaigns",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Har_Ki_Pauri"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 29.95667,
+   "lon": 78.17083,
+   "precision": "exact",
+   "label": "Har Ki Pauri, Haridwar, Uttarakhand, India",
+   "country": "India"
+  },
+  "attributes": {
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 0 m"
+  },
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Har_Ki_Pauri"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Har_Ki_Pauri"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q2721704"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The Vikramāditya foundation is legend; the visible ghāṭs are 20th-century.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:rishikesh",
+  "type": "place",
+  "name": "Ṛṣikeśa (Rishikesh)",
+  "iast": "Ṛṣikeśa",
+  "aliases": [
+   "Rishikesh",
+   "Hrishikesh"
+  ],
+  "subtype": "tīrtha town",
+  "summary": "Pilgrimage town on the Gaṅgā above Haridwar, traditionally where Viṣṇu appeared as Hṛṣīkeśa to the sage Raibhya; a centre of ascetic āśramas and, since the 20th century, of international yoga.",
+  "details": "The Lakṣmaṇ Jhūlā suspension bridge (rebuilt 1927 after an 1889 bridge was washed away in 1924) and the Rām Jhūlā (1986) carry pilgrims across the river; the Bharat Mandir is the town’s principal old temple. Rishikesh is the traditional gateway to the Char Dhām pilgrimage of Garhwal.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "dated bridge",
+    "start": 1927,
+    "end": 1927,
+    "label": "Lakṣmaṇ Jhūlā rebuilt 1927",
+    "certainty": "estimated",
+    "basis": "public-works record as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Rishikesh"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 30.10833,
+   "lon": 78.29722,
+   "precision": "region",
+   "label": "Rishikesh, Dehradun district, Uttarakhand, India",
+   "country": "India"
+  },
+  "attributes": {
+   "coordinateSource": "Wikipedia {{coord}} and Wikidata P625 agree within 964 m"
+  },
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Rishikesh"
+   },
+   {
+    "source": "src:bhardwaj-1973"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "coordinates ({{coord}} template)",
+    "url": "https://en.wikipedia.org/wiki/Rishikesh"
+   },
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q502141"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "temple",
+  "limits": "The Hṛṣīkeśa legend is temple tradition (from recall); the town’s religious buildings are mostly modern.",
+  "lastVerified": "2026-11-08"
+ }
+]

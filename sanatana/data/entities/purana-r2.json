@@ -1,0 +1,1364 @@
+[
+ {
+  "id": "char:putana",
+  "type": "character",
+  "name": "Pūtanā",
+  "iast": "Pūtanā",
+  "devanagari": "पूतना",
+  "roles": [
+   "rākṣasī",
+   "antagonist"
+  ],
+  "summary": "Child-killing female being sent by Kaṃsa to poison the infant Kṛṣṇa with her breast-milk; he sucks out her life. The Harivaṃśa calls her a bird (śakunī) and Kaṃsa's nurse, the Bhāgavata a rākṣasī.",
+  "details": "HV (CE) 50.20–24 describes Pūtanā as a terrifying bird (śakunī) who suckles the child at midnight and is struck down by him; HV 45.6 names her a daughter of Bali. ViP 5.5.7–11 has her offer the poisoned breast at night and fall dead. BhP 10.6 expands the scene (beautiful disguise, her huge corpse, its fragrant smoke on cremation) and makes her death a liberation (pūtanā-mokṣa, 10.6.44). Pūtanā is also the name of a child-afflicting female 'seizer' (graha) in medical and Purāṇic lists (e.g. BhP 10.6.27–28; Agni 298–299).",
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 50.20–24",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.5.7–11",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.6.1–44",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:trinavarta",
+  "type": "character",
+  "name": "Tṛṇāvarta",
+  "iast": "Tṛṇāvarta",
+  "devanagari": "तृणावर्त",
+  "roles": [
+   "daitya",
+   "antagonist"
+  ],
+  "summary": "Whirlwind demon sent by Kaṃsa who carries the infant Kṛṣṇa into the sky and is strangled by him; the episode is found in the Bhāgavata, not in the Harivaṃśa or Viṣṇu Purāṇa.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.7.20–33",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:aghasura",
+  "type": "character",
+  "name": "Aghāsura",
+  "iast": "Aghāsura",
+  "devanagari": "अघासुर",
+  "roles": [
+   "asura",
+   "antagonist"
+  ],
+  "summary": "Serpent demon, younger brother of Pūtanā and Baka in the Bhāgavata, who swallows the cowherd boys and calves; Kṛṣṇa enters his mouth and kills him by expanding.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.12.13–35",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt",
+    "quote": "kaṃsānuśiṣṭaḥ sa bakī-bakānujaḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:dhenuka",
+  "type": "character",
+  "name": "Dhenuka",
+  "iast": "Dhenuka",
+  "devanagari": "धेनुक",
+  "roles": [
+   "daitya",
+   "antagonist"
+  ],
+  "summary": "Donkey-shaped demon guarding the palm grove (Tālavana), killed by Balarāma, who hurls him into the palm trees.",
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 57.12–24",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt",
+    "quote": "dāruṇo dhenuko nāma daityo gardabharūpavān"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.8.1–13",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.15.20–40",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:chanura",
+  "type": "character",
+  "name": "Cāṇūra",
+  "iast": "Cāṇūra",
+  "devanagari": "चाणूर",
+  "roles": [
+   "wrestler",
+   "antagonist"
+  ],
+  "summary": "Kaṃsa's champion wrestler, killed by Kṛṣṇa in the arena at Mathurā.",
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 75.7–45",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.20.53–64",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.44.1–24",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:mushtika",
+  "type": "character",
+  "name": "Muṣṭika",
+  "iast": "Muṣṭika",
+  "devanagari": "मुष्टिक",
+  "roles": [
+   "wrestler",
+   "antagonist"
+  ],
+  "summary": "Kaṃsa's wrestler, set against Balarāma and killed by him in the Mathurā arena.",
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 75.7; 76.1–9",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.20.53, 5.20.65–68",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.44.24–28",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:kuvalayapida",
+  "type": "character",
+  "name": "Kuvalayāpīḍa",
+  "iast": "Kuvalayāpīḍa",
+  "devanagari": "कुवलयापीड",
+  "aliases": [
+   "Utpalāpīḍa (HV 45.5)"
+  ],
+  "roles": [
+   "elephant",
+   "antagonist"
+  ],
+  "summary": "Kaṃsa's war-elephant posted at the gate of the arena to crush Kṛṣṇa and Balarāma; Kṛṣṇa kills it and takes its tusk.",
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 73.1; 74.17–34",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.20.22–30",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.43.1–18",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:akrura",
+  "type": "character",
+  "name": "Akrūra",
+  "iast": "Akrūra",
+  "devanagari": "अक्रूर",
+  "roles": [
+   "Yādava",
+   "devotee"
+  ],
+  "summary": "Yādava elder, son of Śvaphalka, sent by Kaṃsa to bring Kṛṣṇa and Balarāma to Mathurā; on the way he sees them, and Viṣṇu/Śeṣa, in the waters of the Yamunā. In the Syamantaka story he keeps the jewel.",
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 24.8; 65.92–70.39",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.17–19; 4.13.42–56",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.38–39; 10.57",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:kalayavana",
+  "type": "character",
+  "name": "Kālayavana",
+  "iast": "Kālayavana",
+  "devanagari": "कालयवन",
+  "roles": [
+   "king",
+   "antagonist"
+  ],
+  "summary": "'Black Yavana' king who besieges Mathurā; Kṛṣṇa lures him into the cave of the sleeping Mucukunda, whose glance burns him to ashes.",
+  "details": "HV (CE) 85 and ViP 5.23 make him the son of the sage Gārgya by a Yavana queen, born to defeat the Yādavas. The ethnonym yavana (originally 'Ionian', Greek) later covers foreigners generally; no historical individual is implied.",
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 85.15–52",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.23.1–23",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.50.43–10.51.12",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:mucukunda",
+  "type": "character",
+  "name": "Mucukunda",
+  "iast": "Mucukunda",
+  "devanagari": "मुचुकुन्द",
+  "roles": [
+   "king",
+   "devotee"
+  ],
+  "summary": "Ikṣvāku king, son of Māndhātṛ, who after helping the gods sleeps in a cave with the boon that whoever wakes him will be burnt by his glance; he burns Kālayavana and then praises Kṛṣṇa.",
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 85.40–66",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.23.18–46",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.51.14–63; 9.6.38",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:satrajit",
+  "type": "character",
+  "name": "Satrājit",
+  "iast": "Satrājit",
+  "devanagari": "सत्राजित्",
+  "roles": [
+   "Yādava"
+  ],
+  "summary": "Yādava owner of the Syamantaka jewel (given him by the Sun in the Viṣṇu and Bhāgavata Purāṇas), father of Satyabhāmā; later killed by Śatadhanvan for the jewel.",
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 28.11–32; 29.3",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.13.1–27",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.56.1–45; 10.57.1–7",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:prasena",
+  "type": "character",
+  "name": "Prasena",
+  "iast": "Prasena",
+  "devanagari": "प्रसेन",
+  "roles": [
+   "Yādava"
+  ],
+  "summary": "Brother of Satrājit who wears the Syamantaka jewel while hunting and is killed by a lion.",
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 28.11–20",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.13.12",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.56.13–14",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:shatadhanvan",
+  "type": "character",
+  "name": "Śatadhanvan",
+  "iast": "Śatadhanvan",
+  "devanagari": "शतधन्वन्",
+  "roles": [
+   "Yādava"
+  ],
+  "summary": "Yādava who kills Satrājit to take the Syamantaka jewel, leaves it with Akrūra and is killed by Kṛṣṇa.",
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 29.3–20",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.13.25–34",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.57.1–29",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:jambavati",
+  "type": "character",
+  "name": "Jāmbavatī",
+  "iast": "Jāmbavatī",
+  "devanagari": "जाम्बवती",
+  "roles": [
+   "queen"
+  ],
+  "summary": "Daughter of the bear-king Jāmbavān, given to Kṛṣṇa after their fight over the Syamantaka jewel; mother of Sāmba.",
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 28.28; 98.8",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.13.21–24; 5.32.2",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.56.32; 10.83.10",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:narakasura",
+  "type": "character",
+  "name": "Naraka (Narakāsura, Bhauma)",
+  "iast": "Naraka",
+  "devanagari": "नरकासुर",
+  "aliases": [
+   "Narakāsura",
+   "Bhauma",
+   "Bhaumāsura"
+  ],
+  "roles": [
+   "asura",
+   "king",
+   "antagonist"
+  ],
+  "summary": "Asura king of Prāgjyotiṣa, son of the Earth (Bhūmi), who carries off Aditi's earrings and thousands of maidens; Kṛṣṇa kills him and frees the women.",
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 91",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.29.1–35",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+    "quote": "bhaumo 'yaṃ narako nāma prāgjyotiṣapureśvaraḥ"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.59.1–33",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:banasura",
+  "type": "character",
+  "name": "Bāṇa (Bāṇāsura)",
+  "iast": "Bāṇa",
+  "devanagari": "बाणासुर",
+  "aliases": [
+   "Bāṇāsura"
+  ],
+  "roles": [
+   "asura",
+   "king",
+   "devotee of Śiva"
+  ],
+  "summary": "Thousand-armed asura, eldest son of Bali and devotee of Śiva, whose daughter Uṣā loves Aniruddha; in the ensuing war Kṛṣṇa cuts off all but two of his arms and Śiva intercedes for his life.",
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 105.12; 106–113",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.32.7–5.33.46",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.62.1–10.63.53",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:usha",
+  "type": "character",
+  "name": "Uṣā (daughter of Bāṇa)",
+  "iast": "Uṣā / Ūṣā",
+  "devanagari": "उषा",
+  "aliases": [
+   "Ūṣā",
+   "Okhā (Gujarati tradition)"
+  ],
+  "roles": [
+   "princess"
+  ],
+  "summary": "Daughter of the asura Bāṇa who sees Aniruddha in a dream; her friend Citralekhā brings him to her by magic, which leads to the war between Kṛṣṇa and Bāṇa.",
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 106–108",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.32.7–24",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.62.1–35",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:aniruddha",
+  "type": "character",
+  "name": "Aniruddha",
+  "iast": "Aniruddha",
+  "devanagari": "अनिरुद्ध",
+  "roles": [
+   "Yādava prince"
+  ],
+  "summary": "Son of Pradyumna and grandson of Kṛṣṇa, carried to Bāṇa's city by Citralekhā to be with Uṣā; in Pāñcarātra theology also the name of the fourth vyūha.",
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 106–113",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.32.7–5.33.50",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.62–63",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:chitralekha",
+  "type": "character",
+  "name": "Citralekhā",
+  "iast": "Citralekhā",
+  "devanagari": "चित्रलेखा",
+  "roles": [
+   "yoginī",
+   "companion"
+  ],
+  "summary": "Uṣā's companion, daughter of Bāṇa's minister Kumbhāṇḍa, who paints the portraits by which Uṣā recognises Aniruddha and brings him to her.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.62.14–24",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.32.12–22",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:sudama",
+  "type": "character",
+  "name": "Sudāmā (Kucela), Kṛṣṇa's brāhmaṇa friend",
+  "iast": "Sudāmā / Kucela",
+  "devanagari": "सुदामा",
+  "aliases": [
+   "Kucela",
+   "Kuchela",
+   "Sudāmā Vipra"
+  ],
+  "roles": [
+   "brāhmaṇa",
+   "devotee"
+  ],
+  "summary": "Poor brāhmaṇa schoolfellow of Kṛṣṇa who brings him a handful of flattened rice and returns home to find himself made rich. The Bhāgavata leaves him unnamed ('a certain brāhmaṇa', 10.80.6); the names Sudāmā/Kucela belong to later tradition.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.80.6–45; 10.81.1–41",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt",
+    "quote": "kṛṣṇasyāsīt sakhā kaścid brāhmaṇo brahma-vittamaḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "The name 'Sudāmā' (and Kucela, from kucaila 'poorly clad') is not in the Bhāgavata's own narrative; it comes from later retellings and performance traditions.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:uddhava",
+  "type": "character",
+  "name": "Uddhava",
+  "iast": "Uddhava",
+  "devanagari": "उद्धव",
+  "roles": [
+   "Yādava",
+   "disciple",
+   "devotee"
+  ],
+  "summary": "Yādava counsellor and friend of Kṛṣṇa who carries his message to the gopīs and, before the destruction of the Yādavas, receives his final teaching (the Uddhava Gītā, BhP 11).",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.46–47; 11.6.40–50; 11.7–29",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:nalakubara-manigriva",
+  "type": "character",
+  "name": "Nalakūbara and Maṇigrīva",
+  "iast": "Nalakūbara, Maṇigrīva",
+  "roles": [
+   "yakṣa"
+  ],
+  "summary": "Sons of Kubera cursed by Nārada to stand as twin arjuna trees (yamalārjuna) until the child Kṛṣṇa, dragging the mortar to which he is tied, uproots them (Bhāgavata).",
+  "details": "In HV (CE) 51 and ViP 5.6.16–20 the twin trees are simply trees; the Bhāgavata adds their identity as Kubera's sons and Nārada's curse.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.9.23; 10.10.1–43",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:gopis",
+  "type": "character",
+  "name": "The gopīs (cowherd women of Vraja)",
+  "iast": "gopī",
+  "devanagari": "गोपी",
+  "aliases": [
+   "Gopikās",
+   "Vraja women"
+  ],
+  "roles": [
+   "collective",
+   "devotees"
+  ],
+  "summary": "The cowherd women of Vraja who love Kṛṣṇa; their nocturnal dance with him (the rāsa) and their longing in separation are central to Bhāgavata devotion.",
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 63.15–35",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.13.14–62",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.22; 10.29–33; 10.47",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:talavana",
+  "type": "place",
+  "name": "Tālavana (the palm grove)",
+  "iast": "Tālavana",
+  "subtype": "narrative place",
+  "summary": "Palm grove near Vṛndāvana guarded by the donkey-demon Dhenuka (narrative place).",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.8.2",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.15.21–22",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:pragjyotisha",
+  "type": "place",
+  "name": "Prāgjyotiṣa (Naraka's city)",
+  "iast": "Prāgjyotiṣa",
+  "devanagari": "प्राग्ज्योतिष",
+  "subtype": "narrative place",
+  "summary": "City of the asura Naraka in the epic and Purāṇic stories; identified by tradition and by early medieval inscriptions with Kāmarūpa in Assam.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.29.8",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 91",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "The narrative city is not thereby located; its identification with Kāmarūpa/Guwahati is traditional and dynastic (the Varman kings of Kāmarūpa claimed descent from Naraka).",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "place:shonitapura",
+  "type": "place",
+  "name": "Śoṇitapura (Bāṇa's city)",
+  "iast": "Śoṇitapura",
+  "devanagari": "शोणितपुर",
+  "subtype": "narrative place",
+  "summary": "City of the asura Bāṇa where Aniruddha is held captive; later local tradition identifies it with Tezpur in Assam.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.62.4",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt",
+    "quote": "śoṇitākhye pure ramye"
+   },
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 106–113",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "Identification with Tezpur is local tradition; the text's city is not located by it.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:putana-slaying",
+  "type": "narrative",
+  "name": "Kṛṣṇa and Pūtanā",
+  "iast": "Pūtanā-vadha / Pūtanā-mokṣa",
+  "summary": "The infant Kṛṣṇa sucks the life out of Pūtanā, who has come to poison him with her breast. The Harivaṃśa makes her a bird and places the episode after the overturning of the cart; the Viṣṇu and Bhāgavata Purāṇas tell it first.",
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 50.20–24",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.5.7–23",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.6.1–44",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:shakata-overturned",
+  "type": "narrative",
+  "name": "The overturning of the cart (Śakaṭa)",
+  "iast": "Śakaṭa-bhañjana",
+  "summary": "The infant Kṛṣṇa, lying under a cart, kicks it over with his foot. In the Harivaṃśa and Viṣṇu Purāṇa it is simply a cart; the Bhāgavata summary lists it with the demons and later tradition names a cart-demon, Śakaṭāsura.",
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 50.4–19",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.6.1–8",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.7.4–17",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:trinavarta-slaying",
+  "type": "narrative",
+  "name": "Tṛṇāvarta, the whirlwind demon",
+  "iast": "Tṛṇāvarta-vadha",
+  "summary": "Sent by Kaṃsa, the whirlwind demon Tṛṇāvarta carries the infant Kṛṣṇa into the sky; Kṛṣṇa grows heavy, seizes his throat and kills him. A Bhāgavata addition, absent from the Harivaṃśa and Viṣṇu Purāṇa.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.7.18–33",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:damodara-binding",
+  "type": "narrative",
+  "name": "The butter thief bound to the mortar (Dāmodara) and the twin arjuna trees",
+  "iast": "Dāmodara-līlā / Yamalārjuna-bhaṅga",
+  "summary": "Yaśodā ties the mischievous child Kṛṣṇa to a mortar by a rope round his belly (hence Dāmodara, 'rope-belly'); dragging it, he uproots two arjuna trees. The Bhāgavata frames this with his butter-stealing and makes the trees Kubera's cursed sons.",
+  "details": "HV (CE) 51.14–36 explains the name: 'with the rope by which he was bound at the belly in the cattle-station, he is sung by the gopīs as Dāmodara' (51.36). ViP 5.6.14–20 gives the same etymology (5.6.20). BhP 10.8.29 describes him stealing curds and milk 'by thieving devices' (steya-yogaiḥ); 10.9 tells the binding, in which the rope is always two fingers too short until he consents to be bound; 10.10 the liberation of Nalakūbara and Maṇigrīva. The butter-thief (navanīta-cora/mākhan-cor) motif becomes central in later vernacular poetry (Hawley 1983).",
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 51.1–37",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.6.9–20",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.8.29–31; 10.9.1–23; 10.10.1–43",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:hawley-1983"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:aghasura-slaying",
+  "type": "narrative",
+  "name": "Kṛṣṇa kills Aghāsura",
+  "iast": "Agha-vadha",
+  "summary": "The serpent-demon Agha opens his mouth like a cave; the cowherd boys and calves walk in, and Kṛṣṇa enters, swells within his throat and kills him, restoring the boys. Bhāgavata only.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.12.13–35",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:brahma-steals-calves",
+  "type": "narrative",
+  "name": "Brahmā steals the calves and cowherd boys",
+  "iast": "Brahma-vimohana",
+  "summary": "To test Kṛṣṇa, Brahmā hides the calves and cowherd boys for a year; Kṛṣṇa becomes all of them, and Brahmā, seeing every one as four-armed Viṣṇu, praises him (BhP 10.14). Bhāgavata only.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.13.1–64; 10.14.1–61",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:dhenuka-slaying",
+  "type": "narrative",
+  "name": "Balarāma kills Dhenuka in the palm grove",
+  "iast": "Dhenuka-vadha",
+  "summary": "When the boys want the palm fruit of the Tālavana, the donkey-demon Dhenuka attacks Balarāma, who seizes him by the hind legs and dashes him against the palm trees; his kin are also killed.",
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 57.1–26",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.8.1–13",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.15.20–40",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:vastraharana",
+  "type": "narrative",
+  "name": "Kṛṣṇa takes the gopīs' garments",
+  "iast": "Vastra-haraṇa / Cīra-haraṇa",
+  "summary": "Unmarried gopīs keep a month-long vow to Kātyāyanī to win Kṛṣṇa as husband; when they bathe naked in the Yamunā he takes their clothes up a tree and returns them when they come out with joined hands, promising to fulfil their wish. Bhāgavata only.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.22.1–28",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:rasa-lila",
+  "type": "narrative",
+  "name": "The rāsa dance (rāsa-līlā)",
+  "iast": "rāsa-līlā",
+  "devanagari": "रासलीला",
+  "summary": "On autumn nights Kṛṣṇa sports and dances with the cowherd women of Vraja. The Harivaṃśa gives a short erotic description; the Viṣṇu Purāṇa adds his disappearance, the gopīs' search by his footprints and the circular rāsa dance; the Bhāgavata expands it into five chapters (the rāsa-pañcādhyāyī) with the flute, the 'Gopī-gīta' and Kṛṣṇa multiplied between each pair of women.",
+  "details": "Constituted text of HV (CE) 63.15–35 has no disappearance and no explicit rāsa: the girls, 'in rows' and 'in pairs', sing his deeds and imitate him; he is 'adorned with circles (cakravāla) of gopīs' on autumn nights (63.25, 63.35). ViP 5.13.14–62: Kṛṣṇa's song draws the gopīs; he vanishes; they imitate his deeds and trace his footprints and those of a favoured companion (5.13.31–40); he returns and forms the rāsa-maṇḍala holding each gopī by the hand (5.13.47–55). BhP 10.29–33: the flute (10.29), the disappearance (10.29.48), searching and the footprints of a favoured gopī (10.30.24–31), the Gopī-gīta (10.31), the reunion (10.32), and the dance in which Kṛṣṇa stands between every two gopīs (10.33.3), followed by Parīkṣit's question on its propriety (10.33.26–37).",
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 63.15–35",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.13.14–62",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.29–33",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "The narrative is literary-theological; its later identification with particular sites in Vrindavan is traditional.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:akrura-journey",
+  "type": "narrative",
+  "name": "Akrūra's journey to Vraja and the vision in the Yamunā",
+  "iast": "Akrūra-yātrā",
+  "summary": "Kaṃsa sends Akrūra to fetch Kṛṣṇa and Balarāma to Mathurā. Akrūra goes rejoicing, takes them amid the gopīs' grief, and while bathing in the Yamunā sees the two of them — and Viṣṇu on Śeṣa — within the water.",
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 65.92–70.39",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.15.9–5.19.9",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.36.29–10.40.30",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:kalayavana-mucukunda",
+  "type": "narrative",
+  "name": "Kālayavana and Mucukunda",
+  "iast": "Kālayavana-vadha",
+  "summary": "Besieged by Jarāsandha and by the invincible Kālayavana, Kṛṣṇa moves the Yādavas to Dvārakā and lures Kālayavana into a cave where King Mucukunda sleeps; woken by a kick, Mucukunda burns Kālayavana with his glance and recognises Kṛṣṇa.",
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 84.12–85.67",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.23.1–46",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.50.43–10.51.63",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:syamantaka",
+  "type": "narrative",
+  "name": "The Syamantaka jewel",
+  "iast": "Syamantaka-maṇi",
+  "devanagari": "स्यमन्तक",
+  "summary": "A wonder-working jewel passes from Satrājit (or Prasena) to Prasena, who is killed by a lion; the bear-king Jāmbavān kills the lion. Suspected of theft, Kṛṣṇa tracks it to Jāmbavān's cave, fights him, receives the jewel and Jāmbavatī, and returns it; later Śatadhanvan kills Satrājit and the jewel ends with Akrūra.",
+  "details": "The Harivaṃśa and Viṣṇu Purāṇa tell it within the genealogy of the Vṛṣṇis (HV Harivaṃśaparvan 28–29; ViP book 4, in prose); the Bhāgavata moves it into the Kṛṣṇa book. On where the jewel came from and how long Kṛṣṇa fought Jāmbavān, the versions differ (see the comparison table). ViP 4.13.57 and BhP 10.57.42 promise that whoever remembers the story is freed from false accusation.",
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 28.11–29.40",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.13.1–57",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.56.1–10.57.42",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:narakasura-slaying",
+  "type": "narrative",
+  "name": "Kṛṣṇa kills Naraka (Narakāsura)",
+  "iast": "Naraka-vadha",
+  "summary": "Indra complains that Naraka, son of the Earth and lord of Prāgjyotiṣa, has taken Aditi's earrings and thousands of maidens. Kṛṣṇa, riding Garuḍa with Satyabhāmā, kills Muru and Naraka, returns the earrings and marries the freed women.",
+  "details": "ViP 5.29.31 and BhP 10.59.33 number the captive women at 16,100 (ViP) / 16,000 (BhP); Bhūmi (the Earth) intercedes for Naraka's son. Tradition in western and southern India connects the slaying with Naraka Caturdaśī, the day before (or the first day of) Dīpāvalī; that link is festival tradition, not part of these Purāṇic narratives (see claim:naraka-dipavali-link).",
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 91",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.29.1–35",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.59.1–44",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "claim:naraka-dipavali-link",
+  "type": "claim",
+  "name": "Kṛṣṇa's killing of Naraka is commemorated on Naraka Caturdaśī / Dīpāvalī",
+  "summary": "In much of western and southern India the day before (or the first day of) Dīpāvalī is Naraka Caturdaśī, observed as the day Kṛṣṇa (or Satyabhāmā) killed Naraka. The Purāṇic narratives of the slaying do not themselves found the festival; the association is festival tradition with late textual support.",
+  "details": "The Viṣṇu Purāṇa (5.29) and Bhāgavata (10.59) give no festival rubric. Other regional explanations of Dīpāvalī (Rāma's return, Bali's annual visit, Lakṣmī worship) coexist; Kane surveys the medieval nibandha sources for the rites of the day.",
+  "sources": [
+   {
+    "source": "src:kane-hod",
+    "locator": "vol. V, part 1: Dīpāvalī and Narakacaturdaśī"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "article (pointer only)",
+    "url": "https://en.wikipedia.org/wiki/Naraka_Chaturdashi"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "purana",
+  "limits": "Establishes a living traditional association, not a Purāṇic origin for the festival.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:bana-usha-aniruddha",
+  "type": "narrative",
+  "name": "Uṣā, Aniruddha and the war with Bāṇa",
+  "iast": "Bāṇa-yuddha / Uṣā-pariṇaya",
+  "summary": "Bāṇa's daughter Uṣā dreams of a lover; her friend Citralekhā identifies him as Aniruddha and carries him off from Dvārakā. Bāṇa imprisons him; Kṛṣṇa, Balarāma and Pradyumna attack Śoṇitapura, defeat Śiva's fever and Śiva himself, and cut off Bāṇa's arms until Śiva intercedes.",
+  "details": "A rare narrative in which Kṛṣṇa (Viṣṇu) fights Śiva; ViP 5.33 and BhP 10.63 end with Śiva's praise of Kṛṣṇa and the sparing of Bāṇa with four (BhP 10.63.49) or two arms. The Harivaṃśa's account (106–113) is the longest; temple tradition at Angkor depicts Kṛṣṇa's victory over Bāṇa.",
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 106–113",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ViP 5.32.7–5.33.50",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.62.1–10.63.53",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:sudama-visit",
+  "type": "narrative",
+  "name": "Kṛṣṇa's poor brāhmaṇa friend (Sudāmā/Kucela) and the flattened rice",
+  "iast": "Sudāmā-caritra / Kucelopākhyāna",
+  "summary": "A destitute brāhmaṇa, Kṛṣṇa's schoolfellow, visits him in Dvārakā with a handful of flattened rice; Kṛṣṇa eats it with delight and the friend returns to find his hut a palace. Bhāgavata only.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 10.80.1–10.81.41",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:uddhava-gita",
+  "type": "text",
+  "name": "Uddhava Gītā (Haṃsa Gītā), Bhāgavata Purāṇa book 11",
+  "iast": "Uddhavagītā",
+  "devanagari": "उद्धवगीता",
+  "aliases": [
+   "Uddhava-saṃvāda",
+   "Haṃsa Gītā"
+  ],
+  "subtype": "Gītā (dialogue embedded in a Purāṇa)",
+  "summary": "Kṛṣṇa's last and longest teaching, given to Uddhava before the destruction of the Yādavas (BhP 11.6–29): renunciation, the avadhūta's twenty-four teachers, bhakti-yoga, the guṇas and the Haṃsa teaching.",
+  "details": "Uddhava asks to be taken along when Kṛṣṇa leaves the world (11.6.43–49); the teaching runs from 11.7 to 11.29, after which Kṛṣṇa sends him to Badarikāśrama (11.29.41). It includes the story of the avadhūta and his twenty-four gurus (11.7–9) and the Bhikṣu Gītā (11.23). Scholars treat it, with book 10, as part of the Bhāgavata's Advaitic-devotional synthesis (Bryant 2003; Rocher 1986).",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "composition (with the Bhāgavata)",
+    "label": "c. 9th–10th c. CE (with the Bhāgavata)",
+    "certainty": "disputed",
+    "basis": "dated with the whole Bhāgavata; no separate date",
+    "sources": [
+     {
+      "source": "src:rocher-1986"
+     },
+     {
+      "source": "src:bryant-2007"
+     }
+    ],
+    "start": 850,
+    "end": 950,
+    "view": "majority view for the Bhāgavata"
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 11.6.40–11.29.49",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt",
+    "quote": "uddhavaḥ praṇipatyāha tattvaṃ jijñāsur acyutam"
+   },
+   {
+    "source": "src:tagare-bhp",
+    "locator": "vol. 11"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ }
+]

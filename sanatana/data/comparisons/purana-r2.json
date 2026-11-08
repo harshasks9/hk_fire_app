@@ -1,0 +1,201 @@
+[
+ {
+  "id": "cmp:rasa-lila-versions",
+  "title": "The rāsa-līlā in the Harivaṃśa, Viṣṇu Purāṇa and Bhāgavata",
+  "subject": "narr:rasa-lila",
+  "question": "How does each text tell Kṛṣṇa's nocturnal dance with the gopīs?",
+  "rows": [
+   {
+    "text": "text:harivamsha",
+    "locator": "HV (CE) 63.15–35",
+    "statement": "Short erotic description: on autumn nights Kṛṣṇa delights the young cowherd women, who sing his deeds in rows and pairs, imitate him and cling to him; no flute, no disappearance, no search, and the constituted text does not use the word rāsa (63.25, 63.35 'adorned with circles of gopīs').",
+    "sources": [
+     {
+      "source": "src:harivamsha-ce",
+      "locator": "HV (CE) 63.15–35",
+      "edition": "Vaidya CE (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:vishnu-purana",
+    "locator": "ViP 5.13.14–62",
+    "statement": "Kṛṣṇa's song draws the gopīs; he vanishes; they act out his deeds and follow his footprints and those of a favoured gopī; he reappears and forms the rāsa-maṇḍala, holding each gopī by the hand; the chapter closes by declaring him the all-pervading Self.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "ViP 5.13.14–62",
+      "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:bhagavata-purana",
+    "locator": "BhP 10.29–33",
+    "statement": "Five chapters: the flute call, Kṛṣṇa's test of the gopīs, his disappearance at their pride, the search and footprints of one favoured gopī, the Gopī-gīta, the reunion, and the rāsa with Kṛṣṇa multiplied between each pair of women (10.33.3); Parīkṣit asks how the upholder of dharma could do this (10.33.26–37).",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "BhP 10.29.1–10.33.39",
+      "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:brahma-purana",
+    "locator": "BrP 189",
+    "statement": "Reproduces the Viṣṇu Purāṇa account almost verbatim (rāsa-goṣṭhī, rāsa-maṇḍala).",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "BrP 189.31–39",
+      "edition": "Brahmapurāṇa 1–246, Tübingen Purāṇa Project (P. Schreiner, R. Söhnen-Thieme); GRETIL e-text",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_brahmapurANa-1-246.txt"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "note": "The sequence HV → ViP → BhP is generally read as successive elaboration (Hardy 1983; Schweig 2005); the Brahma Purāṇa copies the ViP. The named favourite, Rādhā, is absent from all four.",
+  "agent": "purana"
+ },
+ {
+  "id": "cmp:syamantaka-origin",
+  "title": "Where the Syamantaka jewel came from and how long Kṛṣṇa fought Jāmbavān",
+  "subject": "narr:syamantaka",
+  "question": "Who first obtained the jewel, from where, and how long did the fight with Jāmbavān last?",
+  "rows": [
+   {
+    "text": "text:harivamsha",
+    "locator": "HV (CE) 28.12, 28.26",
+    "statement": "Prasena obtained the jewel 'from the ocean' as Dvāravatī was being founded; the story of the Sun giving it to Satrājit is a star (inserted) passage after 28.12. Kṛṣṇa fought Jāmbavān in the cave 'with his arms alone' for twenty-one days.",
+    "sources": [
+     {
+      "source": "src:harivamsha-ce",
+      "locator": "HV (CE) 28.12–13; 28.26",
+      "edition": "Vaidya CE (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt",
+      "quote": "divyaṃ syamantakaṃ nāma samudrād upalabdhavān"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:vishnu-purana",
+    "locator": "ViP 4.13.1–18",
+    "statement": "The Sun (Vivasvat) takes the jewel from his own neck and gives it to his friend Satrājit; the fight lasts twenty-one days.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "ViP 4.13.6; 4.13.18",
+      "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:brahma-purana",
+    "locator": "BrP 16.12–21",
+    "statement": "Prasena(jit) obtained it 'from the Sun' (sūryād), with the Sun episode in the constituted text.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "BrP 16.12–21",
+      "edition": "Brahmapurāṇa 1–246, Tübingen Purāṇa Project (P. Schreiner, R. Söhnen-Thieme); GRETIL e-text",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_brahmapurANa-1-246.txt",
+      "quote": "divyaṃ syamantakaṃ nāma sa sūryād upalabdhavān"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:bhagavata-purana",
+    "locator": "BhP 10.56.3, 10.56.24; 10.83.10",
+    "statement": "The Sun, pleased with Satrājit, gives him the jewel; Kṛṣṇa and Jāmbavān fight for twenty-eight days (aṣṭā-viṃśa-aham), and Jāmbavān recognises his lord Rāma; in 10.83.10 Jāmbavatī says twenty-seven days.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "BhP 10.56.3; 10.56.24; 10.83.10",
+      "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "note": "The critical Harivaṃśa's 'from the ocean' reading versus the Sun-gift in the Viṣṇu, Brahma and Bhāgavata Purāṇas suggests the solar origin entered with later redaction; the HV vulgate includes it.",
+  "agent": "purana"
+ },
+ {
+  "id": "cmp:krishna-infancy-order",
+  "title": "Order and form of Kṛṣṇa's infant exploits",
+  "subject": "char:krishna",
+  "question": "Which infancy episodes does each text tell, and in what form?",
+  "rows": [
+   {
+    "text": "text:harivamsha",
+    "locator": "HV (CE) 50–51",
+    "statement": "Cart overturned (50.4–19), then Pūtanā as a night-bird (50.20–24); then the binding to the mortar and the twin trees (51). No Tṛṇāvarta, Agha or Brahmā episode.",
+    "sources": [
+     {
+      "source": "src:harivamsha-ce",
+      "locator": "HV (CE) 50–51",
+      "edition": "Vaidya CE (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:vishnu-purana",
+    "locator": "ViP 5.5–6",
+    "statement": "Pūtanā (5.5), then the cart (5.6.1–8), the binding and the trees (5.6.9–20). No Tṛṇāvarta.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "ViP 5.5–6",
+      "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:bhagavata-purana",
+    "locator": "BhP 10.6–14",
+    "statement": "Pūtanā (10.6), the cart and Tṛṇāvarta (10.7), butter-stealing and the universe in Kṛṣṇa's mouth (10.8), the binding (10.9) and the cursed yakṣas (10.10), then Vatsa, Baka (10.11), Agha (10.12) and Brahmā's theft (10.13–14).",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "BhP 10.6–14",
+      "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:agni-purana",
+    "locator": "AgP 12.14–18",
+    "statement": "Lists Pūtanā, the twin arjunas and the cart, then Kāliya, in a brief digest.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "AgP 12.14–18",
+      "edition": "Rajendralal Mitra ed. (Bibliotheca Indica 1870–79); GRETIL e-text",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_agnipurANa.txt"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "agent": "purana"
+ }
+]

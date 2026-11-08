@@ -1,0 +1,365 @@
+[
+ {
+  "agent": "material",
+  "id": "src:gnoli-1956",
+  "type": "epigraphic-corpus",
+  "title": "Nepalese Inscriptions in Gupta Characters, Part I (Serie Orientale Roma X)",
+  "author": "Raniero Gnoli",
+  "year": "1956",
+  "publisher": "IsMEO, Rome",
+  "notes": "Cited from the DHARMA/Siddham bibliography of the Changu Narayan pillar (items 02001–02003)."
+ },
+ {
+  "agent": "material",
+  "id": "src:luders-1912",
+  "type": "epigraphic-corpus",
+  "title": "A List of Brahmi Inscriptions from the Earliest Times to about A.D. 400 with the Exception of those of Asoka (Appendix to Epigraphia Indica vol. X)",
+  "author": "Heinrich Lüders",
+  "year": "1912",
+  "publisher": "Archaeological Survey of India, Calcutta",
+  "notes": "List numbers cited here are those given by Sircar 1965 (archive.org scan)."
+ },
+ {
+  "agent": "material",
+  "id": "src:vogel-1910",
+  "type": "catalogue",
+  "title": "Catalogue of the Archaeological Museum at Mathura",
+  "author": "J. Ph. Vogel",
+  "year": "1910",
+  "publisher": "Government Press, Allahabad",
+  "notes": "Catalogue numbers cited via Sircar 1965."
+ },
+ {
+  "agent": "material",
+  "id": "src:allan-1914",
+  "type": "catalogue",
+  "title": "Catalogue of the Coins of the Gupta Dynasties and of Śaśāṅka, King of Gauḍa (Catalogue of the Indian Coins in the British Museum)",
+  "author": "John Allan",
+  "year": "1914",
+  "publisher": "British Museum, London",
+  "url": "https://archive.org/details/in.ernet.dli.2015.63344",
+  "urlChecked": true,
+  "license": "public domain (1914)"
+ },
+ {
+  "agent": "material",
+  "id": "src:kielhorn-ei8-junagadh",
+  "type": "epigraphic-corpus",
+  "title": "Junagadh Rock Inscription of Rudradaman; the year 72 (Epigraphia Indica vol. VIII)",
+  "author": "F. Kielhorn",
+  "year": "1905–06",
+  "publisher": "Archaeological Survey of India",
+  "notes": "Page reference \"pp. 42ff.\" as given by Sircar 1965, bk. II no. 67."
+ },
+ {
+  "agent": "material",
+  "id": "src:kielhorn-ei8-talagunda",
+  "type": "epigraphic-corpus",
+  "title": "Talgunda Inscription of Kakusthavarman (Epigraphia Indica vol. VIII)",
+  "author": "F. Kielhorn",
+  "year": "1905–06",
+  "publisher": "Archaeological Survey of India",
+  "notes": "Cited as \"Kielhorn 1905–1906\" in the DHARMA edition DHARMA_INSSiddham01050; article title as usually cited (Kielhorn named it after Kākusthavarman, the text's first king), page range not checked."
+ },
+ {
+  "agent": "material",
+  "id": "src:sii-1",
+  "type": "epigraphic-corpus",
+  "title": "South-Indian Inscriptions, Tamil and Sanskrit, vol. I",
+  "author": "E. Hultzsch",
+  "year": "1890",
+  "publisher": "Government Press, Madras",
+  "notes": "Kūram plates = SII I no. 151 (per DHARMA_INSPallava00046)."
+ },
+ {
+  "agent": "material",
+  "id": "src:sii-2",
+  "type": "epigraphic-corpus",
+  "title": "South-Indian Inscriptions, vol. II (parts I–V): Tamil Inscriptions in the Rajarajesvara Temple at Tanjavur and other records",
+  "author": "E. Hultzsch, V. Venkayya and H. Krishna Sastri",
+  "year": "1891–1916",
+  "publisher": "Government Press, Madras",
+  "notes": "Kasakudi plates SII II no. 73 (part III, 1895, pp. 342–361); Velurpalaiyam plates SII II no. 98 (part V, 1916, pp. 501–517) — per DHARMA."
+ },
+ {
+  "agent": "material",
+  "id": "src:sii-3",
+  "type": "epigraphic-corpus",
+  "title": "South-Indian Inscriptions, vol. III: Miscellaneous Inscriptions from the Tamil Country (part III, 1920)",
+  "author": "H. Krishna Sastri",
+  "year": "1920",
+  "publisher": "Government Press, Madras",
+  "notes": "Tiruvālaṅkāṭu plates of Rājendra I = SII III no. 205 (per DHARMA_INSTamilNadu01005)."
+ },
+ {
+  "agent": "material",
+  "id": "src:gopinatha-rao-ei15",
+  "type": "epigraphic-corpus",
+  "title": "Anbil Plates of Sundara-Chola: The Fourth Year (Epigraphia Indica vol. XV, pp. 44–72)",
+  "author": "T. A. Gopinatha Rao",
+  "year": "1919–20",
+  "publisher": "Archaeological Survey of India",
+  "notes": "Per DHARMA_INSTamilNadu01003."
+ },
+ {
+  "agent": "material",
+  "id": "src:kielhorn-ei1-khajuraho",
+  "type": "epigraphic-corpus",
+  "title": "Inscriptions from Khajuraho (Epigraphia Indica vol. I, pp. 121–153)",
+  "author": "F. Kielhorn",
+  "year": "1892",
+  "publisher": "Archaeological Survey of India",
+  "url": "https://archive.org/details/in.ernet.dli.2015.69993",
+  "notes": "Archive.org scan of EI I."
+ },
+ {
+  "agent": "material",
+  "id": "src:vogel-1918",
+  "type": "journal-article",
+  "title": "The Yūpa Inscriptions of King Mūlavarman, from Koetei (East Borneo)",
+  "author": "J. Ph. Vogel",
+  "year": "1918",
+  "publisher": "Bijdragen tot de Taal-, Land- en Volkenkunde 74, pp. 167–232"
+ },
+ {
+  "agent": "material",
+  "id": "src:vogel-1925",
+  "type": "journal-article",
+  "title": "The Earliest Sanskrit Inscriptions of Java",
+  "author": "J. Ph. Vogel",
+  "year": "1925",
+  "publisher": "Publicaties van den Oudheidkundigen Dienst in Nederlandsch-Indië I, Batavia, pp. 15–35",
+  "notes": "Cited from the DHARMA edition of the Tugu inscription."
+ },
+ {
+  "agent": "material",
+  "id": "src:coedes-dupont-1943",
+  "type": "epigraphic-corpus",
+  "title": "Les inscriptions de Sdŏ̀k Kăk Thoṃ, Phnoṃ Sandak et Práḥ Vihār",
+  "author": "George Cœdès and Pierre Dupont",
+  "year": "1943",
+  "publisher": "Bulletin de l'École française d'Extrême-Orient 43, pp. 56–154",
+  "notes": "K. 235 at pp. 76–134 (per DHARMA_INSCIK00235)."
+ },
+ {
+  "agent": "material",
+  "id": "src:coedes-1956-vat-luong-kau",
+  "type": "journal-article",
+  "title": "Études cambodgiennes, XL: Nouvelles données sur les origines du royaume khmèr, la stèle de Vàt Luong Kau près de Vàt Ph'u",
+  "author": "George Cœdès",
+  "year": "1956",
+  "publisher": "BEFEO 48(1), pp. 208–220",
+  "notes": "DOI 10.3406/befeo.1956.1288 (per DHARMA)."
+ },
+ {
+  "agent": "material",
+  "id": "src:finot-1902",
+  "type": "journal-article",
+  "title": "Notes d'épigraphie, I: deux nouvelles inscriptions de Bhadravarman Ier, roi de Champa",
+  "author": "Louis Finot",
+  "year": "1902",
+  "publisher": "BEFEO 2, pp. 185–191",
+  "notes": "DOI 10.3406/befeo.1902.1119 (per DHARMA_INSCIC00072)."
+ },
+ {
+  "agent": "material",
+  "id": "src:de-casparis-1941",
+  "type": "journal-article",
+  "title": "Nogmaals de Sanskrit-inscriptie op de steen van Dinojo",
+  "author": "J. G. de Casparis",
+  "year": "1941",
+  "publisher": "Tijdschrift voor Indische Taal-, Land- en Volkenkunde 81, pp. 499–513",
+  "notes": "Per DHARMA_INSIDENKKanjuruhan."
+ },
+ {
+  "agent": "material",
+  "id": "src:pou-2001",
+  "type": "epigraphic-corpus",
+  "title": "Nouvelles inscriptions du Cambodge, vols II et III",
+  "author": "Saveros Pou",
+  "year": "2001",
+  "publisher": "École française d'Extrême-Orient, Paris"
+ },
+ {
+  "agent": "material",
+  "id": "src:majumdar-1927-champa",
+  "type": "scholarly-book",
+  "title": "Champa (Ancient Indian Colonies in the Far East, vol. I)",
+  "author": "R. C. Majumdar",
+  "year": "1927",
+  "publisher": "Punjab Sanskrit Book Depot, Lahore",
+  "notes": "Bibliographic details from recall."
+ },
+ {
+  "agent": "material",
+  "id": "src:griffiths-2013-satyavarman",
+  "type": "journal-article",
+  "title": "The Problem of the Ancient Name Java and the Role of Satyavarman in Southeast Asian International Relations Around the Turn of the Ninth Century CE",
+  "author": "Arlo Griffiths",
+  "year": "2013",
+  "publisher": "Archipel 85, pp. 43–81",
+  "notes": "Bibliographic details from recall; cited only for the Po Nagar Satyavarman record, status kept at reference-checked."
+ },
+ {
+  "agent": "material",
+  "id": "src:rice-ec5",
+  "type": "epigraphic-corpus",
+  "title": "Epigraphia Carnatica, vol. V: Inscriptions in the Hassan District",
+  "author": "B. Lewis Rice",
+  "year": "1902",
+  "publisher": "Mysore Government Central Press, Bangalore",
+  "url": "https://archive.org/details/epigraphia_carnatica_vol5_mysouoft",
+  "notes": "Archive.org scan located; the Belur record was not looked up in it."
+ },
+ {
+  "agent": "material",
+  "id": "src:met-collection",
+  "type": "catalogue",
+  "title": "The Metropolitan Museum of Art — Collection API (Open Access)",
+  "publisher": "The Metropolitan Museum of Art, New York",
+  "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/",
+  "urlChecked": true,
+  "license": "CC0 for public-domain objects"
+ },
+ {
+  "agent": "material",
+  "id": "src:aic-collection",
+  "type": "catalogue",
+  "title": "Art Institute of Chicago — Public API (collection data)",
+  "publisher": "Art Institute of Chicago",
+  "url": "https://api.artic.edu/api/v1/artworks",
+  "urlChecked": true,
+  "license": "collection data CC0; public-domain images CC0"
+ },
+ {
+  "agent": "material",
+  "id": "src:vam-collection",
+  "type": "catalogue",
+  "title": "Victoria and Albert Museum — Collections API",
+  "publisher": "Victoria and Albert Museum, London",
+  "url": "https://api.vam.ac.uk/v2/",
+  "urlChecked": true
+ },
+ {
+  "agent": "material",
+  "id": "src:asi-2003-ayodhya",
+  "type": "excavation-report",
+  "title": "Ayodhya: 2002–03 (report of the court-ordered excavation at the disputed site)",
+  "author": "Archaeological Survey of India (excavation directed by B. R. Mani, later Hari Manjhi)",
+  "year": "2003",
+  "publisher": "Archaeological Survey of India, New Delhi",
+  "notes": "Submitted to the Allahabad High Court in August 2003; known here through its treatment in the 2019 judgment and published commentary."
+ },
+ {
+  "agent": "material",
+  "id": "src:sc-ayodhya-2019",
+  "type": "primary-text",
+  "title": "M Siddiq (D) Thr Lrs v. Mahant Suresh Das & Ors, Civil Appeal Nos 10866–10867 of 2010, judgment of 9 November 2019",
+  "author": "Supreme Court of India (Constitution Bench)",
+  "year": "2019",
+  "publisher": "Supreme Court of India",
+  "url": "https://main.sci.gov.in/supremecourt/2010/36350/36350_2010_1_1502_18205_Judgement_09-Nov-2019.pdf",
+  "notes": "URL from recall; not fetched."
+ },
+ {
+  "agent": "material",
+  "id": "src:lal-1993-sringaverapura",
+  "type": "excavation-report",
+  "title": "Excavations at Śṛṅgaverapura (1977–86), vol. I (Memoirs of the Archaeological Survey of India 88)",
+  "author": "B. B. Lal",
+  "year": "1993",
+  "publisher": "Archaeological Survey of India, New Delhi"
+ },
+ {
+  "agent": "material",
+  "id": "src:hartel-1993",
+  "type": "excavation-report",
+  "title": "Excavations at Sonkh: 2500 Years of a Town in Mathura District",
+  "author": "Herbert Härtel",
+  "year": "1993",
+  "publisher": "Dietrich Reimer Verlag, Berlin"
+ },
+ {
+  "agent": "material",
+  "id": "src:joshi-1993",
+  "type": "excavation-report",
+  "title": "Excavation at Bhagwanpura 1975–76 and Other Explorations and Excavations 1975–81 in Haryana, Jammu & Kashmir and Punjab (Memoirs of the Archaeological Survey of India 89)",
+  "author": "J. P. Joshi",
+  "year": "1993",
+  "publisher": "Archaeological Survey of India, New Delhi"
+ },
+ {
+  "agent": "material",
+  "id": "src:sharma-1960-kausambi",
+  "type": "excavation-report",
+  "title": "The Excavations at Kauśāmbī (1957–59)",
+  "author": "G. R. Sharma",
+  "year": "1960",
+  "publisher": "Institute of Archaeology, University of Allahabad"
+ },
+ {
+  "agent": "material",
+  "id": "src:malleret-1959",
+  "type": "excavation-report",
+  "title": "L'Archéologie du delta du Mékong (4 vols)",
+  "author": "Louis Malleret",
+  "year": "1959–1963",
+  "publisher": "École française d'Extrême-Orient, Paris"
+ },
+ {
+  "agent": "material",
+  "id": "src:agrawala-1947-ahichchhatra",
+  "type": "journal-article",
+  "title": "Terracotta Figurines of Ahichchhatra, District Bareilly, U.P.",
+  "author": "V. S. Agrawala",
+  "year": "1947–48",
+  "publisher": "Ancient India 4, pp. 104–179",
+  "notes": "Bibliographic details from recall."
+ },
+ {
+  "agent": "material",
+  "id": "src:losty-2008",
+  "type": "scholarly-book",
+  "title": "The Ramayana: Love and Valour in India's Great Epic — The Mewar Ramayana Manuscripts",
+  "author": "J. P. Losty",
+  "year": "2008",
+  "publisher": "British Library, London"
+ },
+ {
+  "agent": "material",
+  "id": "src:seyller-1999",
+  "type": "scholarly-book",
+  "title": "Workshop and Patron in Mughal India: The Freer Rāmāyaṇa and Other Illustrated Manuscripts of ʿAbd al-Raḥīm",
+  "author": "John Seyller",
+  "year": "1999",
+  "publisher": "Artibus Asiae Supplementum 42, Zürich"
+ },
+ {
+  "agent": "material",
+  "id": "src:goswamy-fischer-1992",
+  "type": "scholarly-book",
+  "title": "Pahari Masters: Court Painters of Northern India",
+  "author": "B. N. Goswamy and Eberhard Fischer",
+  "year": "1992",
+  "publisher": "Artibus Asiae Supplementum 38, Zürich"
+ },
+ {
+  "agent": "material",
+  "id": "src:jaffer-ramayana-doha",
+  "type": "catalogue",
+  "title": "Museum of Islamic Art, Doha — collection (Ramayana of Hamida Banu Begum)",
+  "publisher": "Qatar Museums",
+  "url": "https://www.mia.org.qa/",
+  "notes": "Holding institution as given in the scholarly literature; catalogue page not fetched."
+ },
+ {
+  "agent": "material",
+  "id": "src:allan-1936",
+  "type": "catalogue",
+  "title": "Catalogue of the Coins of Ancient India (Catalogue of the Indian Coins in the British Museum)",
+  "author": "John Allan",
+  "year": "1936",
+  "publisher": "British Museum, London",
+  "notes": "Standard catalogue of Yaudheya, Audumbara, Kuṇinda and Ujjayinī coins; cited from recall for type descriptions, so dependent assertions are not marked verified."
+ }
+]

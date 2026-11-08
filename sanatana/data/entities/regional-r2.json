@@ -1,0 +1,1849 @@
+[
+ {
+  "id": "trad:dipavali",
+  "type": "tradition",
+  "name": "Dīpāvalī (Diwali)",
+  "iast": "Dīpāvalī",
+  "devanagari": "दीपावली",
+  "aliases": [
+   "Diwali",
+   "Deepavali",
+   "Dīpālikā",
+   "Divālī",
+   "Tihar (Nepal, related)"
+  ],
+  "subtype": "festival",
+  "traditions": [
+   "trad:vaishnava",
+   "trad:shakta"
+  ],
+  "summary": "The autumn festival of lamps, spread over about five days around the new moon of Āśvina/Kārttika and observed across India and the diaspora. Different regions and communities give it different reasons — Kṛṣṇa’s killing of Narakāsura, Lakṣmī’s worship, Bali’s yearly reign, Rāma’s return to Ayodhyā, Kālī’s worship in Bengal, and Mahāvīra’s nirvāṇa for Jains — which are recorded here as separate, unharmonised associations. Inscribed on UNESCO’s Representative List in 2025.",
+  "details": "Kane (1958) describes Dīpāvalī as not a festival of a single deity but a cluster of about five days with independent items: worship of wealth (13th of the dark half, Dhanteras), Viṣṇu/Kṛṣṇa’s victory over Narakāsura (14th), the worship of Lakṣmī (new moon), Viṣṇu’s victory over Bali and dice-play (Kārttika śukla 1, Balipratipadā), and the exchange of brotherly and sisterly affection (Bhrātṛdvitīyā). He notes older names: Yakṣarātri in Vātsyāyana’s Kāmasūtra, Sukhasuptikā in the Nīlamata Purāṇa (vv. 505–510) and in Hemādri, and Dīpālikā; the Bhaviṣyottara (ch. 140) gives the fullest description of the four days from the 14th. In Bengal the new-moon night is Kālī Pūjā.\n\nUNESCO’s 2025 inscription describes Deepavali as marking the last harvest of the year and the start of a new year and season, and as symbolising the victory of light over darkness and good over evil; the element is tagged with the concepts “epic poetry” and “diaspora”.",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "UNESCO inscription",
+    "start": 2025,
+    "end": 2025,
+    "label": "2025 (20.COM)",
+    "certainty": "secure",
+    "basis": "UNESCO record",
+    "sources": [
+     {
+      "source": "src:unesco-ich",
+      "url": "https://ich.unesco.org/en/RL/deepavali-02312"
+     }
+    ]
+   },
+   {
+    "system": "scholarly-textual",
+    "event": "earliest textual names (Yakṣarātri in the Kāmasūtra; Sukhasuptikā in the Nīlamata)",
+    "start": 200,
+    "end": 800,
+    "label": "early centuries CE onward",
+    "certainty": "estimated",
+    "basis": "literary references collected by Kane; the texts’ own dates are uncertain",
+    "view": "Kane",
+    "sources": [
+     {
+      "source": "src:kane-hds-5-1",
+      "locator": "vol. V pt. 1, p. 195",
+      "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/deepavali-02312"
+   },
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, ch. X, pp. 194–209",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Diwali"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "limits": "The festival’s several explanatory stories belong to different regions and periods; none of them is treated here as the original reason.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:naraka-chaturdashi",
+  "type": "tradition",
+  "name": "Naraka Caturdaśī",
+  "iast": "Naraka-caturdaśī",
+  "aliases": [
+   "Narak Chaturdashi",
+   "Choti Diwali",
+   "Bhūta-caturdaśī"
+  ],
+  "subtype": "festival",
+  "summary": "The 14th of the dark half of Āśvina (Kārttika in the pūrṇimānta reckoning), the day before the Dīpāvalī new moon: a dawn oil-bath, a lamp lit for Naraka, and, in the south and west, the celebration of Kṛṣṇa’s killing of Narakāsura. Kane argues that the day was originally named for propitiating Yama against hell (naraka), and that the Narakāsura legend was attached later.",
+  "details": "Kane: the Bhaviṣyottara prescribes an oil bath at daybreak, whirling apāmārga twigs over the head, tarpaṇa to Yama under seven names, a lamp for Naraka and illuminations in temples and public places; “It appears probable that originally the 14th was called Narakacaturdaśī because Yama was to be propitiated for fear of Hell. Later on the legend about the killing by Kṛṣṇa of Narakāsura, king of Prāgjyotiṣa (Kāmarūpa) … was pressed into service.” In the Deccan people crush a bitter fruit underfoot after the bath, which Kane takes to represent Narakāsura. The Kṛttyatattva calls the day Bhūtacaturdaśī.",
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, ch. X, pp. 196–198",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "limits": "Kane’s reconstruction of the day’s origin is a scholarly interpretation (class 5).",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:lakshmi-puja-dipavali",
+  "type": "tradition",
+  "name": "Lakṣmī Pūjā of Dīpāvalī",
+  "iast": "Lakṣmī-pūjā",
+  "aliases": [
+   "Sukharātri",
+   "Sukhasuptikā",
+   "Chopda Pujan"
+  ],
+  "subtype": "festival",
+  "summary": "The worship of Lakṣmī (with Kubera in some digests) on the new-moon night of Āśvina/Kārttika, the central night of Dīpāvalī in much of north and west India; merchants close their old account books and open new ones. The Bhaviṣyottara (ch. 140) and the Nīlamata Purāṇa (Sukhasuptikā) describe the night with lamps everywhere and the driving out of Alakṣmī (ill luck) at midnight.",
+  "details": "Kane: “There is a popular legend that Brahmā gave to brāhmaṇas rakṣābandhana … as their festival, Dasara to kṣatriyas, Dīvālī to traders and Holikā to śūdras.” The Bhaviṣyottara has the king proclaim “today is the sovereignty of Bali; O people! enjoy yourselves”, and women beat winnowing baskets and drums at midnight to drive out Alakṣmī.",
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, ch. X, pp. 199–201",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:kali-puja",
+  "type": "tradition",
+  "name": "Kālī Pūjā (Bengal)",
+  "iast": "Kālī-pūjā",
+  "aliases": [
+   "Shyama Puja"
+  ],
+  "subtype": "festival",
+  "traditions": [
+   "trad:shakta"
+  ],
+  "summary": "The worship of Kālī on the new-moon night of Kārttika in Bengal, Assam and Odisha — the same night on which much of India worships Lakṣmī for Dīpāvalī. Kane notes that in Bengal Kālī is worshipped on this day; McDermott traces its spread as a large public festival in Bengal from the eighteenth century.",
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 200",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   },
+   {
+    "source": "src:mcdermott-2011"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "limits": "The eighteenth-century spread is a scholarly reconstruction (McDermott 2011), not checked here.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:bali-pratipada",
+  "type": "tradition",
+  "name": "Balipratipadā",
+  "iast": "Bali-pratipadā",
+  "aliases": [
+   "Bali Padyami",
+   "Pāḍvā",
+   "Vīrapratipadā",
+   "Dyūtapratipad"
+  ],
+  "subtype": "festival",
+  "summary": "The first day of the bright half of Kārttika, the day after the Dīpāvalī new moon, on which Bali, the asura king sent to the netherworld by Vāmana, is worshipped and said to reign for a day; it is also the day of dice-play (dyūta-pratipad) and, in the north, of Govardhana Pūjā. The Bhaviṣyottara (140.47–73) prescribes drawing Bali with his queen Vindhyāvalī and worshipping him with the mantra “salutation to you, O king Bali, son of Virocana … the future Indra”.",
+  "details": "Kane connects the day with the Vāmana–Bali story (Brahma Purāṇa 73, Kūrma 1.17, Vāmana ch. 77 etc.) and cites the Mahābhāṣya on Pāṇini 3.1.26, where one who “recites the story of Bali’s imprisonment or represents it on the stage” is said to make Bali bound (Baliṃ bandhayati) — evidence that the story was dramatised long before the festival texts. The Vāmana Purāṇa calls the day Vīrapratipadā; the Purāṇas say Śiva lost to Pārvatī at dice on this day, hence the custom of gambling.",
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, ch. X, pp. 199–204",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:govardhan-puja",
+  "type": "tradition",
+  "name": "Govardhana Pūjā and Annakūṭa",
+  "iast": "Govardhana-pūjā",
+  "aliases": [
+   "Annakut",
+   "Annakūṭa"
+  ],
+  "subtype": "festival",
+  "traditions": [
+   "trad:pushtimarg",
+   "trad:vaishnava"
+  ],
+  "summary": "Worship of Mount Govardhana and the offering of a “mountain of food” (annakūṭa) to Kṛṣṇa on Kārttika śukla 1, the day after the Dīpāvalī new moon, recalling Kṛṣṇa’s turning the cowherds from Indra’s worship to the hill and lifting it against Indra’s storm. Central in Braj and in the Puṣṭimārga temples.",
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 205 (Padma Purāṇa calls it Annakūṭa, per the Smṛtikaustubha); list entry “Govardhanapūjā” citing Harivaṃśa 2.17",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   },
+   {
+    "source": "src:bryant-2007"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:bhai-dooj",
+  "type": "tradition",
+  "name": "Bhrātṛdvitīyā (Bhai Dūj / Yamadvitīyā)",
+  "iast": "Bhrātṛ-dvitīyā",
+  "aliases": [
+   "Bhai Dooj",
+   "Bhaubeej",
+   "Bhai Phonta",
+   "Yamadvitīyā",
+   "Bhai Tika (Nepal)"
+  ],
+  "subtype": "festival",
+  "summary": "The second day of the bright half of Kārttika, closing Dīpāvalī, on which sisters feed and bless their brothers; the Bhaviṣya tells that Yamunā fed her brother Yama on this day, hence the name Yamadvitīyā.",
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, ch. X, pp. 207–209",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:holi",
+  "type": "tradition",
+  "name": "Holī",
+  "iast": "Holī / Holikā",
+  "devanagari": "होली",
+  "aliases": [
+   "Holika",
+   "Holākā",
+   "Phagwah (Caribbean)",
+   "Dol (Bengal, Odisha)",
+   "Phāguā"
+  ],
+  "subtype": "festival",
+  "summary": "The spring festival of the Phālguna full moon: a bonfire (Holikā-dahana) on the full-moon night, followed by the throwing of coloured water and powder. Kane traces the name to Holākā, a usage known to Jaimini’s Mīmāṃsā sūtras (as explained by Śabara) and the Kāṭhaka Gṛhya, and regards it in origin as a spring festival; popular legend explains the bonfire by the burning of Holikā, who tried to kill Prahlāda, while Braj celebrates Rādhā and Kṛṣṇa’s play with colours.",
+  "details": "Kane: “Holī or Holikā is a festival of unmixed gaiety and frolics throughout India … One element, viz. bonfire, is present almost everywhere except in Bengal.” The Kāmasūtra (1.4.42) names Holākā, which the Jayamaṅgalā commentary explains as sprinkling with coloured water from horns on the Phālguna full moon. Hemādri quotes a long Bhaviṣyottara passage (ch. 132) in which Kṛṣṇa tells Yudhiṣṭhira of an ogress Ḍhauṇḍhā (Dhondhā) who troubled children in king Raghu’s realm and was destroyed by boys’ noise and a bonfire with rakṣoghna mantras; the next day the ashes are saluted and Kāma is worshipped. Bengal instead celebrates the Dolayātrā (swing festival of Kṛṣṇa). In the Deccan colour is thrown on the fifth day (Raṅgapañcamī).\n\nKane does not mention the Holikā–Prahlāda story, which is the explanation most widely told today (see char:holika).",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "earliest references (Holākā)",
+    "start": -300,
+    "end": 300,
+    "label": "centuries around the turn of the era (Kane: “at least some centuries before Christ”)",
+    "certainty": "disputed",
+    "basis": "mention of Holākā by Jaimini (as read by Śabara) and in the Kāṭhaka Gṛhya",
+    "view": "Kane",
+    "sources": [
+     {
+      "source": "src:kane-hds-5-1",
+      "locator": "vol. V pt. 1, p. 240",
+      "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, ch. XII, pp. 237–241",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Holi"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "limits": "The antiquity argued by Kane rests on the identification of Holākā with Holī and on disputed dates for the sūtras.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:holika",
+  "type": "character",
+  "name": "Holikā (sister of Hiraṇyakaśipu)",
+  "iast": "Holikā",
+  "devanagari": "होलिका",
+  "subtype": "festival legend figure",
+  "roles": [
+   "asurī",
+   "festival figure"
+  ],
+  "summary": "In the legend most widely told for Holī, the sister of the asura king Hiraṇyakaśipu, immune to fire, who sat in a pyre with the child Prahlāda to burn him; she was consumed and Prahlāda survived. The bonfire on the eve of Holī is called Holikā-dahana after her.",
+  "details": "The Sanskrit vrata literature summarised by Kane explains the Holikā bonfire with a different story — the ogress Ḍhauṇḍhā of the Bhaviṣyottara (char:dhaundha) — and treats Holikā as the name of the festival itself. The textual history of the Holikā–Prahlāda version was not traced in this round.",
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Holika"
+   },
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, ch. XII, pp. 237–241",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "openQuestions": [
+   "Which Purāṇic or vernacular text first tells the Holikā–Prahlāda episode?"
+  ],
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:dhaundha",
+  "type": "character",
+  "name": "Ḍhauṇḍhā (Dhondhā), the ogress of the Bhaviṣyottara",
+  "iast": "Ḍhauṇḍhā",
+  "aliases": [
+   "Dhondha",
+   "Ḍhuṇḍhā"
+  ],
+  "roles": [
+   "rākṣasī"
+  ],
+  "summary": "An ogress, daughter of Mālin, who in the Bhaviṣyottara’s account of Holī troubled children in king Raghu’s realm; protected by Śiva’s boon from gods, men, weapons and weather, she could be overcome only by boisterous boys, and died when they lit a bonfire with rakṣoghna mantras on the Phālguna full moon.",
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, ch. XII, pp. 238–239",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:dol-jatra",
+  "type": "tradition",
+  "name": "Dolayātrā (Dol Pūrṇimā)",
+  "iast": "Dolayātrā",
+  "aliases": [
+   "Dol Jatra",
+   "Dol Purnima",
+   "Dolotsava",
+   "Gaura Pūrṇimā"
+  ],
+  "subtype": "festival",
+  "traditions": [
+   "trad:gaudiya"
+  ],
+  "summary": "The swing festival of Kṛṣṇa on the Phālguna full moon in Bengal and Odisha, Bengal’s form of Holī: an image of Govinda is installed on a swing in a sixteen-pillared pavilion, bathed and swung, with coloured powder (abir). Śūlapāṇi wrote a Dolayātrāviveka on it, recording the tradition that king Indradyumna began the swing festival in Vṛndāvana. Gauḍīya Vaiṣṇavas keep the day as Caitanya’s birthday (Gaura Pūrṇimā).",
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, ch. XII, pp. 239–240",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Dol_Jatra"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:navaratri",
+  "type": "tradition",
+  "name": "Navarātri",
+  "iast": "Navarātra",
+  "devanagari": "नवरात्रि",
+  "aliases": [
+   "Navaratra",
+   "Durgotsava",
+   "Sharad Navaratri",
+   "Golu / Bommai Kolu (Tamil Nadu)"
+  ],
+  "subtype": "festival",
+  "traditions": [
+   "trad:shakta"
+  ],
+  "summary": "The nine nights of the Goddess from the first to the ninth of the bright half of Āśvina (with a spring Navarātri in Caitra), observed across India in regional forms — Durgā Pūjā in Bengal, Garbā and Dāṇḍiyā in Gujarat, Golu doll displays in Tamil Nadu, Dasarā in Mysore — and closing with Vijayadaśamī. The Devī Māhātmya is recited during the nine days.",
+  "details": "Kane: “From the 1st of Āśvina bright half to the 9th is celebrated the Durgāpūjā festival, otherwise called Navarātra, observed all over India in some form or other.” Some works require both an autumn (Śarad) and a spring (Vasanta) Durgotsava. The Kālikā, Devī and Bṛhannandikeśvara Purāṇas and digests such as Śūlapāṇi’s Durgotsavaviveka, Raghunandana’s Durgārcanapaddhati and Vidyāpati’s Durgābhaktitaraṅgiṇī prescribe its rites; the Devī Māhātmya (Mārkaṇḍeya Purāṇa chs. 78–90 or 81–93 by edition) narrates the Goddess’s victories.",
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, ch. IX, pp. 154–187",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   },
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/garba-of-gujarat-01962"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Navaratri"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:durga-puja",
+  "type": "tradition",
+  "name": "Durgā Pūjā (Bengal)",
+  "iast": "Durgā-pūjā",
+  "devanagari": "দুর্গাপূজা",
+  "aliases": [
+   "Durgotsava",
+   "Sharodotsav",
+   "Pujo"
+  ],
+  "subtype": "festival",
+  "traditions": [
+   "trad:shakta"
+  ],
+  "summary": "Bengal’s great autumn festival of the Goddess, worshipped with her children (Lakṣmī, Sarasvatī, Gaṇeśa, Kārttikeya) in clay images made from Gaṅgā clay, from Mahālayā through the 6th–9th days to immersion on Vijayadaśamī; in Kolkata it has become a city-wide public art festival of community pavilions (pandals). “Durga Puja in Kolkata” was inscribed on UNESCO’s Representative List in 2021.",
+  "details": "UNESCO: in the months before the festival artisans sculpt the images “using unfired clay pulled from the Ganga River”; the eyes are painted on Mahālayā; on the tenth day the images are immersed in the river from which the clay came, so that the festival “has also come to signify ‘home-coming’ or a seasonal return to one’s roots”. Kane notes the congregational and social character of the pūjā and the śabarotsava of the tenth day after immersion.\n\nBengali tradition frames the autumn worship as Rāma’s untimely awakening (akāla-bodhana) of the Goddess before his battle with Rāvaṇa — an episode found in Kṛttivāsa’s Bengali Rāmāyaṇa and in late Purāṇic texts, but not in the Devī Māhātmya or in Vālmīki (see cmp:durga-puja-vs-devi-mahatmya).",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "UNESCO inscription (Durga Puja in Kolkata)",
+    "start": 2021,
+    "end": 2021,
+    "label": "2021 (16.COM)",
+    "certainty": "secure",
+    "basis": "UNESCO record",
+    "sources": [
+     {
+      "source": "src:unesco-ich",
+      "url": "https://ich.unesco.org/en/RL/durga-puja-in-kolkata-00703"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/durga-puja-in-kolkata-00703"
+   },
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, ch. IX, pp. 154–187",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   },
+   {
+    "source": "src:mcdermott-2011"
+   },
+   {
+    "source": "src:guha-thakurta-2015"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:vijayadashami",
+  "type": "tradition",
+  "name": "Vijayadaśamī (Dasarā / Dussehra)",
+  "iast": "Vijayā-daśamī",
+  "devanagari": "विजयादशमी",
+  "aliases": [
+   "Dussehra",
+   "Dasara",
+   "Bijoya Dashami",
+   "Dashain (Nepal, related)"
+  ],
+  "subtype": "festival",
+  "summary": "The tenth of the bright half of Āśvina, the day after Navarātri, one of the three most auspicious days of the year: worship of the goddess Aparājitā and of the śamī tree, crossing the village boundary (sīmollaṅghana), worship of weapons and tools, and — in north India — the burning of Rāvaṇa’s effigy at the end of the Rāmlīlā. In Bengal it is the day of Durgā’s immersion (Bijayā).",
+  "details": "Kane: Hemādri and the Nirṇayasindhu quote Kaśyapa that “since Rāma started on his invasion (against Rāvaṇa) on Śravaṇa-nakṣatra, men should celebrate the crossing of the limits of their village on that day”. A late verse addressed to the śamī says it “held (concealed) the arrows of Arjuna and … appealed lovingly to Rāma”, alluding to the Pāṇḍavas’ hiding their weapons in a śamī tree before their year incognito (Virāṭaparvan). “In some parts of Northern India Rāmalīlā celebrations go on for ten days and culminate on the 10th of Āśvina in the burning of a tall hollow paper and wickerwork structure concealing crackers representing Rāvaṇa and his hosts.” Former princely states such as Mysore and Baroda held durbars and processions; Kane inclines to a military origin (the season for campaigns) and cites Raghuvaṃśa 4.24–25 for the autumn lustration of horses (nīrājana).",
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, ch. X, pp. 188–194",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:mysore-dasara",
+  "type": "tradition",
+  "name": "Mysore Dasarā",
+  "iast": "Maisūru Dasarā",
+  "aliases": [
+   "Nadahabba",
+   "Mysuru Dasara"
+  ],
+  "subtype": "festival",
+  "traditions": [
+   "trad:shakta"
+  ],
+  "summary": "The ten-day royal Dasarā of Mysore (Karnataka), centred on the goddess Cāmuṇḍeśvarī of Chamundi Hill, who in local tradition killed Mahiṣāsura there; the Wodeyar kings held a durbar and the procession of the goddess on an elephant (Jambū Savārī) closes the festival on Vijayadaśamī. It continues the royal Mahānavamī of the Vijayanagara court.",
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 193",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mysore_Dasara"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "limits": "The continuity with the Vijayanagara Mahānavamī is a commonly stated tradition, not checked here against the Portuguese accounts.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:maha-shivaratri",
+  "type": "tradition",
+  "name": "Mahāśivarātri",
+  "iast": "Mahāśivarātri",
+  "devanagari": "महाशिवरात्रि",
+  "aliases": [
+   "Shivaratri",
+   "Maha Shivratri"
+  ],
+  "subtype": "festival",
+  "traditions": [
+   "trad:shaiva"
+  ],
+  "summary": "The “great night of Śiva”, the 14th of the dark half of Māgha (Phālguna by the pūrṇimānta reckoning), kept with fasting, worship of the liṅga with bilva leaves and an all-night vigil (jāgaraṇa). The Garuḍa, Skanda, Padma and Agni Purāṇas contain its māhātmya, illustrated by the story of a hunter who, keeping awake in a bilva tree, unknowingly worshipped a liṅga below and won liberation.",
+  "details": "Kane: “The Garuḍapurāṇa I.124, Skanda I.1.33, Padma VI.240, Agni 193 contain the Māhātmya of the Śivarātri on the 14th of the dark half of Māgha.” In the Garuḍa version (which Kane thinks the oldest) the hunter is Sundarasenaka, a niṣāda king on Mount Abu, who goes hunting with his dog; in the Skanda he is a cruel Kirāta named Caṇḍa. The vrata’s three elements are fast, worship and vigil. Major observances are held at Paśupatinātha (Kathmandu), Kāśī and the jyotirliṅga temples, and in Mauritius at Grand Bassin.",
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, ch. XI, pp. 225–236",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:krishna-janmashtami",
+  "type": "tradition",
+  "name": "Kṛṣṇa Janmāṣṭamī",
+  "iast": "Kṛṣṇa-janmāṣṭamī",
+  "devanagari": "कृष्ण जन्माष्टमी",
+  "aliases": [
+   "Janmashtami",
+   "Gokulashtami",
+   "Śrī Jayantī"
+  ],
+  "subtype": "festival",
+  "traditions": [
+   "trad:vaishnava"
+  ],
+  "summary": "The celebration of Kṛṣṇa’s birth on the 8th of the dark half of Bhādrapada (Śrāvaṇa in the pūrṇimānta reckoning), with a fast and a vigil until midnight, the hour at which the Bhāgavata says Kṛṣṇa appeared to Devakī. In Maharashtra the next day’s Gopāḷkālā includes the breaking of pots of curd (Dahi Handi).",
+  "details": "BhP 10.3.8: “niśīthe tama-udbhūte jāyamāne janārdane … āvirāsīd yathā prācyāṃ diśīndur iva puṣkalaḥ” — at midnight, when darkness had arisen, Viṣṇu appeared in Devakī like the full moon in the east. Kane discusses at length the digests’ debates over the tithi, Rohiṇī-nakṣatra and the midnight hour.",
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, ch. VII, pp. 124–143 (Kṛṣṇajanmāṣṭamī section)",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   },
+   {
+    "source": "src:gretil-bhp-etext",
+    "locator": "BhP 10.3.8",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/sa_bhAgavatapurANa.xml"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:rama-navami",
+  "type": "tradition",
+  "name": "Rāma Navamī",
+  "iast": "Rāma-navamī",
+  "devanagari": "राम नवमी",
+  "aliases": [
+   "Ram Navami",
+   "Rāmanavamī-vrata"
+  ],
+  "subtype": "festival",
+  "traditions": [
+   "trad:vaishnava",
+   "trad:ramanandi"
+  ],
+  "summary": "The celebration of Rāma’s birth on the 9th of the bright half of Caitra, with a fast and midday worship. The Rāmcaritmānas dates the birth to “the holy navamī tithi of the month of Madhu (Caitra), bright fortnight, at abhijit (midday)”, and dates its own beginning to a Rāma Navamī; the constituted text of the Vālmīki Rāmāyaṇa Critical Edition narrates the birth without naming a month or tithi.",
+  "details": "RCM Bāla (after dohā 190): “naumī tithi madhu māsa punītā, sukala paccha abhijita haripriītā”. RCM Bāla (before dohā 34) dates the beginning of the poem to Saṃvat 1631, “naumī bhauma bāra madhu māsā” — a Tuesday Rāma Navamī in 1574 CE. In the GRETIL e-text of the Baroda Critical Edition, VR 1.17.6 says only that Kausalyā bore Rāma “endowed with divine marks, half of Viṣṇu”; the familiar statement of the date (Caitra, navamī, Punarvasu) belongs to the vulgate and is not in the constituted text checked. Kane (ch. IV) treats the Rāmanavamī-vrata as obligatory and open even to caṇḍālas.",
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, ch. IV, pp. 81–94",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   },
+   {
+    "source": "src:manas-sanskritdocuments",
+    "locator": "RCM Bālakāṇḍa, caupāī after dohā 190",
+    "url": "https://sanskritdocuments.org/doc_z_otherlang_hindi/manas1_i.html"
+   },
+   {
+    "source": "src:gretil-vr-ce",
+    "locator": "VR (CE) 1.17.6",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/sa_rAmAyaNa.xml"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:ganesha-chaturthi",
+  "type": "tradition",
+  "name": "Gaṇeśa Caturthī",
+  "iast": "Gaṇeśa-caturthī",
+  "devanagari": "गणेश चतुर्थी",
+  "aliases": [
+   "Ganesh Chaturthi",
+   "Vinayaka Chaturthi",
+   "Ganeshotsav"
+  ],
+  "subtype": "festival",
+  "traditions": [
+   "trad:ganapatya"
+  ],
+  "summary": "The festival of Gaṇeśa on the 4th of the bright half of Bhādrapada, when a clay image is installed, worshipped for one to ten days and immersed in water. Kane treats the domestic vrata in ch. VIII of his History; in Maharashtra Bal Gangadhar Tilak promoted a public (sārvajanik) form from 1893, which became a mass civic festival.",
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, ch. VIII, pp. 144–153",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   },
+   {
+    "source": "src:cashman-1975"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ganesh_Chaturthi"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "limits": "Kane’s chapter on the domestic vrata was located in the text but its details were not excerpted here.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:sarvajanik-ganeshotsav",
+  "type": "tradition",
+  "name": "Sārvajanik Gaṇeśotsav (public Gaṇeśa festival)",
+  "aliases": [
+   "Public Ganesh festival"
+  ],
+  "subtype": "festival (public form)",
+  "summary": "The public, neighbourhood-organised form of Gaṇeśa Caturthī with large images in street pavilions and processions to immersion, promoted by Bal Gangadhar Tilak in Pune from 1893 as a vehicle of Hindu mobilisation and nationalist politics; it spread through Maharashtra and to Mumbai, Hyderabad and the diaspora.",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "first public celebrations in Pune",
+    "start": 1893,
+    "end": 1894,
+    "label": "1893–94",
+    "certainty": "estimated",
+    "basis": "historical accounts of Tilak’s campaign",
+    "view": "Cashman",
+    "sources": [
+     {
+      "source": "src:cashman-1975"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ganesh_Chaturthi"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:cashman-1975"
+   },
+   {
+    "source": "src:kaur-2003"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ganesh_Chaturthi"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "limits": "Public Gaṇeśa images in Pune predate 1893 in some accounts; Tilak’s role was promotion and politicisation rather than invention.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:bal-gangadhar-tilak",
+  "type": "person",
+  "name": "Bal Gangadhar Tilak",
+  "aliases": [
+   "Lokamanya Tilak"
+  ],
+  "roles": [
+   "political leader",
+   "scholar"
+  ],
+  "summary": "Marathi nationalist leader, journalist and scholar (1856–1920), editor of Kesari, who from 1893 promoted public Gaṇeśa festivals and from 1895 the Śivājī festival in Maharashtra; also author of The Orion (1893) and The Arctic Home in the Vedas (1903) on Vedic chronology.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "life",
+    "start": 1856,
+    "end": 1920,
+    "label": "1856–1920",
+    "certainty": "secure",
+    "basis": "biographical record",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bal_Gangadhar_Tilak"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:cashman-1975"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bal_Gangadhar_Tilak"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:makar-sankranti",
+  "type": "tradition",
+  "name": "Makara Saṅkrānti",
+  "iast": "Makara-saṅkrānti",
+  "devanagari": "मकर संक्रान्ति",
+  "aliases": [
+   "Sankranti",
+   "Uttarayan",
+   "Maghi",
+   "Khichdi"
+  ],
+  "subtype": "festival",
+  "traditions": [
+   "trad:saura"
+  ],
+  "summary": "The day the sun is reckoned to enter Capricorn (Makara), about 14 January in traditional almanacs, kept with bathing, gifts of sesame and sugarcane and, in Gujarat, kite-flying (Uttarāyaṇ); it corresponds to Pongal in Tamil Nadu and Māgh Bihu in Assam. Kane notes that the traditional date lags the true winter solstice (21 December) by about twenty-three days because of the precession of the equinoxes.",
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, ch. XI, pp. 211–225",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:gangasagar-mela",
+  "type": "tradition",
+  "name": "Gaṅgāsāgar Melā",
+  "iast": "Gaṅgāsāgara-melā",
+  "subtype": "pilgrimage",
+  "summary": "The pilgrimage and bathing fair at the mouth of the Hooghly on Sagar Island (West Bengal) at Makara Saṅkrānti, where tradition places the hermitage of Kapila and the descent of the Gaṅgā that freed the ashes of Sagara’s sons.",
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Gangasagar_Mela"
+   },
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:pongal",
+  "type": "tradition",
+  "name": "Pongal (Tai Pongal)",
+  "iast": "Poṅkal",
+  "scripts": [
+   {
+    "lang": "ta",
+    "script": "Taml",
+    "text": "பொங்கல்"
+   }
+  ],
+  "aliases": [
+   "Thai Pongal",
+   "Thai Pongal",
+   "Makara Sankranti (Tamil Nadu)"
+  ],
+  "subtype": "festival",
+  "summary": "The Tamil harvest festival at the beginning of the month of Tai (mid-January), named after the dish of new rice boiled over in milk and offered to the Sun; it runs over three or four days — Bhōgi, Pongal, Māṭṭu Pongal (for cattle) and Kāṇum Pongal. Kane notes that it corresponds to the Makara Saṅkrānti of northern and western India and lasts three days.",
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 222",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Pongal_(festival)"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:onam",
+  "type": "tradition",
+  "name": "Onam",
+  "iast": "Ōṇam",
+  "scripts": [
+   {
+    "lang": "ml",
+    "script": "Mlym",
+    "text": "ഓണം"
+   }
+  ],
+  "aliases": [
+   "Thiruvonam",
+   "Tiruvōṇam"
+  ],
+  "subtype": "festival",
+  "summary": "The harvest festival of Kerala in the month of Ciṅṅam (August–September), culminating on Tiruvōṇam with floral carpets (pūkkaḷam), the feast (sadya), boat races and the Pulikaḷi; Malayali tradition holds that it welcomes the annual return of the just asura king Mahābali, sent to the netherworld by Vāmana. The earliest Tamil reference, in the Caṅkam poem Maduraikkāñci, instead calls Ōṇam the day of Māyōṉ (Viṣṇu) who overcame the asuras.",
+  "details": "Maduraikkāñci 590–591 (Project Madurai e-text): “kaṇaṅkoḷ avuṇark kaṭanta polantār / māyōṉ mēya ōṇa naṉṉāḷ” — “the good day of Ōṇam that belongs to Māyōṉ of the golden garland, who overcame the crowding asuras”, describing a festival in Pāṇḍya Madurai, not Kerala. Tiruvōṇam (Śravaṇa) is also Viṣṇu’s (Vāmana’s) birth-asterism in Vaiṣṇava tradition. The Kerala story of Mahābali’s welcome is the dominant modern explanation; its literary history is compared with the Purāṇic Bali in cmp:onam-mahabali-vs-puranic-bali.",
+  "sources": [
+   {
+    "source": "src:maduraikkanci-pm",
+    "locator": "Maduraikkāñci, lines 590–591",
+    "url": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0071.html"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Onam"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "limits": "The Maduraikkāñci line attests a festival named Ōṇam in early Tamil Madurai; it does not show that this is the same festival as modern Kerala Onam or date the Mahābali legend.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:maduraikkanci",
+  "type": "text",
+  "name": "Maduraikkāñci",
+  "iast": "Maturaikkāñci",
+  "scripts": [
+   {
+    "lang": "ta",
+    "script": "Taml",
+    "text": "மதுரைக் காஞ்சி"
+   }
+  ],
+  "subtype": "Caṅkam poem (Pattuppāṭṭu)",
+  "summary": "A Caṅkam poem of 782 lines by Māṅkuṭi Marutaṉār, one of the Ten Idylls (Pattuppāṭṭu), addressed to the Pāṇḍya king Neṭuñceḻiyaṉ and describing a day and night in Madurai; it contains the earliest known mention of the Ōṇam festival (lines 590–591).",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "composition",
+    "start": 100,
+    "end": 300,
+    "label": "c. 2nd–3rd c. CE",
+    "certainty": "estimated",
+    "basis": "Caṅkam chronology",
+    "view": "Zvelebil",
+    "sources": [
+     {
+      "source": "src:zvelebil-1974"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:maduraikkanci-pm",
+    "url": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0071.html"
+   },
+   {
+    "source": "src:zvelebil-1974"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:chhath",
+  "type": "tradition",
+  "name": "Chhaṭh Pūjā",
+  "iast": "Chaṭh",
+  "devanagari": "छठ",
+  "aliases": [
+   "Chhath",
+   "Surya Shashthi",
+   "Dala Chhath"
+  ],
+  "subtype": "festival",
+  "traditions": [
+   "trad:saura"
+  ],
+  "summary": "A festival of the Sun (Sūrya) and of the goddess Chhaṭhī Maiyā kept chiefly in Bihar, Jharkhand, eastern Uttar Pradesh and the Nepal Tarai on the 6th of the bright half of Kārttika, six days after Dīpāvalī: after days of fasting, worshippers stand in rivers and ponds to offer arghya to the setting and then the rising sun. It has travelled with Bhojpuri- and Maithili-speaking migrants to Indian cities and the diaspora.",
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Chhath"
+   },
+   {
+    "source": "src:younger-2010"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "deity:chhathi-maiya",
+  "type": "deity",
+  "name": "Chhaṭhī Maiyā",
+  "iast": "Chaṭhī Maiyā",
+  "aliases": [
+   "Chhathi Mata",
+   "Ṣaṣṭhī"
+  ],
+  "roles": [
+   "deity"
+  ],
+  "summary": "The mother goddess worshipped with the Sun at Chhaṭh in Bihar and neighbouring regions, regarded as a protector of children; often identified in modern accounts with Ṣaṣṭhī, the goddess of the sixth day after birth, and sometimes called the Sun’s sister or consort.",
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Chhath"
+   }
+  ],
+  "confidence": "low",
+  "status": "reference-checked",
+  "agent": "regional",
+  "limits": "Identifications vary between local tellings and are not settled by any text checked here.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:ratha-yatra-puri",
+  "type": "tradition",
+  "name": "Ratha Yātrā of Puri",
+  "iast": "Ratha-yātrā",
+  "aliases": [
+   "Rath Yatra",
+   "Car Festival",
+   "Gundicha Yatra"
+  ],
+  "subtype": "festival",
+  "traditions": [
+   "trad:vaishnava"
+  ],
+  "summary": "The chariot festival of Jagannātha at Puri on the second day of the bright half of Āṣāḍha: Jagannātha, Balabhadra and Subhadrā are drawn on three newly built wooden chariots along the Bada Danda to the Guṇḍicā temple and back after nine days. The Gajapati king sweeps the chariots (chera pahanra). Caitanya’s ecstatic dancing before the chariots is a central scene of the Caitanya Caritāmṛta.",
+  "location": {
+   "lat": 19.8048,
+   "lon": 85.8179,
+   "precision": "approximate",
+   "label": "Bada Danda, Puri, Odisha",
+   "country": "India"
+  },
+  "sources": [
+   {
+    "source": "src:eschmann-kulke-tripathi-1978"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ratha_Yatra_(Puri)"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:thaipusam",
+  "type": "tradition",
+  "name": "Thaipusam",
+  "iast": "Taippūcam",
+  "scripts": [
+   {
+    "lang": "ta",
+    "script": "Taml",
+    "text": "தைப்பூசம்"
+   }
+  ],
+  "aliases": [
+   "Thaipoosam",
+   "Taippūcam"
+  ],
+  "subtype": "festival",
+  "summary": "The Tamil festival of Murukaṉ on the Pūcam asterism of the month of Tai (January–February), when devotees carry kāvaṭi burdens, milk pots and lances piercing the body in fulfilment of vows; tradition says it commemorates Pārvatī’s gift of the vēl (lance) to Murukaṉ for his war against the asura Cūrapatmaṉ. It is kept at Paḻaṉi and other Murukaṉ shrines and, on the largest scale, in Malaysia (Batu Caves, since the 1890s), Singapore and Mauritius.",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "first Thaipusam at Batu Caves, Selangor",
+    "start": 1892,
+    "end": 1892,
+    "label": "1892",
+    "certainty": "estimated",
+    "basis": "temple and community histories",
+    "view": "Collins; Batu Caves temple tradition",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Batu_Caves"
+     },
+     {
+      "source": "src:collins-1997"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:collins-1997"
+   },
+   {
+    "source": "src:clothey-1978"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Thaipusam"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:kumbh-mela",
+  "type": "tradition",
+  "name": "Kumbh Melā",
+  "iast": "Kumbha-melā",
+  "devanagari": "कुम्भ मेला",
+  "aliases": [
+   "Kumbh Mela",
+   "Kumbha Mela",
+   "Ardh Kumbh",
+   "Maha Kumbh"
+  ],
+  "subtype": "pilgrimage",
+  "summary": "The “festival of the sacred pitcher”, a mass bathing pilgrimage held in rotation at Prayāga (Allahabad/Prayagraj), Haridwar, Ujjain and Nashik, each roughly every twelve years by an astronomical reckoning, so that one of the four falls about every three years; UNESCO calls it “the largest peaceful congregation of pilgrims on earth”. Its primary bearers are the ascetic akhāṛās and āśramas. Inscribed on UNESCO’s Representative List in 2017.",
+  "details": "UNESCO: devotees believe that bathing in the Gaṅgā frees them from sins; the congregation includes ascetics, sādhus, kalpavāsīs and visitors; the knowledge is transmitted through “ancient religious manuscripts, oral traditions, historical travelogues” and above all the teacher–pupil relationship of the sādhus in the akhāṛās and āśramas.\n\nTradition explains the four sites as the places where drops of amṛta fell from the pitcher (kumbha) carried away after the churning of the ocean. Maclean (2003, 2008) argues that the Allahabad gathering was long known as the annual Māgh Melā and acquired the name and twelve-year “Kumbh” status in the nineteenth century, through the Prayāgvāl priests’ adaptation of Haridwar’s Kumbh under colonial administration — “the modern beginnings of the ancient Kumbh Mela” (see claim:kumbh-mela-antiquity).",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "UNESCO inscription",
+    "start": 2017,
+    "end": 2017,
+    "label": "2017 (12.COM)",
+    "certainty": "secure",
+    "basis": "UNESCO record",
+    "sources": [
+     {
+      "source": "src:unesco-ich",
+      "url": "https://ich.unesco.org/en/RL/kumbh-mela-01258"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/kumbh-mela-01258"
+   },
+   {
+    "source": "src:maclean-2008"
+   },
+   {
+    "source": "src:maclean-2003"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kumbh_Mela"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "limits": "The amṛta-drop explanation is a tradition; the Purāṇic churning narratives do not name the four sites.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "claim:kumbh-mela-antiquity",
+  "type": "claim",
+  "name": "The Kumbh Melā is an ancient institution with a continuous history at its four sites",
+  "subtype": "historical claim",
+  "summary": "The popular and official view presents the Kumbh Melā as of great antiquity, sometimes citing Xuanzang’s seventh-century account of a great gathering at Prayāga; Maclean argues from colonial and pilgrim-priest records that the Allahabad Kumbh in its present form and name is a nineteenth-century development of the annual Māgh Melā.",
+  "details": "Xuanzang describes Harṣa’s quinquennial distribution of wealth at the confluence of the rivers at Prayāga, which is not called a Kumbh and is not on a twelve-year cycle; Haridwar’s Kumbh is attested earlier than Allahabad’s. Maclean’s thesis concerns Allahabad specifically.",
+  "sources": [
+   {
+    "source": "src:maclean-2003"
+   },
+   {
+    "source": "src:maclean-2008"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kumbh_Mela"
+   }
+  ],
+  "confidence": "medium",
+  "status": "disputed",
+  "agent": "regional",
+  "openQuestions": [
+   "When is the word Kumbh first applied to the Prayāga gathering in a dated source?"
+  ]
+ },
+ {
+  "id": "trad:pandharpur-wari",
+  "type": "tradition",
+  "name": "Pandharpur Vārī (Āṣāḍhī pilgrimage)",
+  "iast": "Paṇḍharpūr vārī",
+  "aliases": [
+   "Wari",
+   "Ashadhi Ekadashi Wari",
+   "Palkhi"
+  ],
+  "subtype": "pilgrimage",
+  "traditions": [
+   "trad:varkari"
+  ],
+  "summary": "The annual foot-pilgrimage of the Vārkarīs to Viṭṭhala at Pandharpur for Āṣāḍhī Ekādaśī (June–July): hundreds of thousands walk for about three weeks in organised groups (diṇḍīs) singing abhaṅgas, escorting palanquins (pālkhīs) bearing the sandals (pādukās) of the saints — chiefly Jñāneśvar’s from Āḷandī and Tukārām’s from Dehū. A second, smaller vārī falls on Kārttikī Ekādaśī.",
+  "details": "Irawati Karve’s essay “On the Road” (1962) and D. B. Mokashi’s Pālkhī (trans. 1987) are classic first-hand accounts. A vārkarī is “one who performs the vārī”; the pilgrimage is the defining practice of the tradition.",
+  "sources": [
+   {
+    "source": "src:karve-1962"
+   },
+   {
+    "source": "src:mokashi-1987"
+   },
+   {
+    "source": "src:novetzke-2008"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Pandharpur_Vari"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "deity:ayyappa",
+  "type": "deity",
+  "name": "Ayyappa (Ayyappan, Śāstā)",
+  "iast": "Ayyappaṉ",
+  "scripts": [
+   {
+    "lang": "ml",
+    "script": "Mlym",
+    "text": "അയ്യപ്പൻ"
+   }
+  ],
+  "aliases": [
+   "Ayyappan",
+   "Ayyanar (related Tamil village god)",
+   "Dharma Sastha",
+   "Hariharaputra",
+   "Manikandan"
+  ],
+  "roles": [
+   "deity"
+  ],
+  "summary": "The celibate forest god of Śabarimala in Kerala, worshipped as Dharmaśāstā and as Hariharaputra, the son born of Śiva and Viṣṇu in his female form Mohinī; local tradition also tells of the foundling prince Maṇikaṇṭhan of Pandalam who killed the buffalo-demoness Mahiṣī. His cult draws millions of male pilgrims each season.",
+  "details": "Sekar (1992) distinguishes the older Śāstā/Aiyaṉār cult from the Pandalam Ayyappa legend and the modern pilgrimage cultus; the identification of Ayyappa with the Tamil village guardian Aiyaṉār is a scholarly and devotional association, not an identity.",
+  "sources": [
+   {
+    "source": "src:sekar-1992"
+   },
+   {
+    "source": "src:osella-2003"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ayyappan"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "limits": "The Mohinī–Śiva parentage is a tradition of the cult (later Sanskrit māhātmyas and Malayalam songs), not a Purāṇic narrative of the major Purāṇas checked here.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:sabarimala-pilgrimage",
+  "type": "tradition",
+  "name": "Śabarimala pilgrimage",
+  "iast": "Śabarimala",
+  "subtype": "pilgrimage",
+  "summary": "The season-long pilgrimage (mid-November to January) to the hill shrine of Ayyappa at Śabarimala in the Western Ghats of Kerala. Pilgrims keep a 41-day vow (vratam) of celibacy, vegetarian diet and black or blue dress, address one another as “Ayyappa”, and climb carrying the irumuḍi bundle of offerings; the season culminates at Makaravilakku (Makara Saṅkrānti). Many visit the shrine of Vāvar, a Muslim companion of Ayyappa, at Erumeli on the way.",
+  "details": "Osella and Osella (2003) analyse the pilgrimage as a rite of masculinity in which men temporarily become renouncers. Customary exclusion of women aged about 10–50 from the shrine was set aside by India’s Supreme Court in 2018 (Indian Young Lawyers Association v. State of Kerala), a ruling referred to a larger bench in 2019; the matter remained contested.",
+  "location": {
+   "lat": 9.4346,
+   "lon": 77.0814,
+   "precision": "approximate",
+   "label": "Sabarimala, Pathanamthitta district, Kerala",
+   "country": "India"
+  },
+  "sources": [
+   {
+    "source": "src:sekar-1992"
+   },
+   {
+    "source": "src:osella-2003"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Sabarimala"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "limits": "Legal developments are summarised from reference sources only.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:kanwar-yatra",
+  "type": "tradition",
+  "name": "Kāṁvaṛ (Kāvaḍ) Yātrā",
+  "iast": "Kāṃvaṛ yātrā",
+  "aliases": [
+   "Kanwar Yatra",
+   "Kavad Yatra",
+   "Shravani Mela (Deoghar)"
+  ],
+  "subtype": "pilgrimage",
+  "traditions": [
+   "trad:shaiva"
+  ],
+  "summary": "The pilgrimage of the month of Śrāvaṇa in which devotees of Śiva (kāṁvaṛiyās), dressed in saffron, carry Gaṅgā water in pots slung from a shoulder pole (kāṁvaṛ) — from Haridwar, Gaumukh or Sultanganj — on foot to pour over the liṅgas of their home temples or of Baidyanāth at Deoghar. It has grown since the 1980s into one of the largest annual pilgrimages in north India.",
+  "sources": [
+   {
+    "source": "src:lochtefeld-2010"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kanwar_Yatra"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:garba",
+  "type": "tradition",
+  "name": "Garbā of Gujarat",
+  "iast": "Garbā",
+  "aliases": [
+   "Garba",
+   "Garbo"
+  ],
+  "subtype": "performance tradition",
+  "traditions": [
+   "trad:shakta"
+  ],
+  "summary": "The ritual and devotional circle dance of Gujarat performed during Navarātri around a perforated earthenware pot lit with an oil lamp (garbo) or an image of the mother goddess Ambā, moving counter-clockwise while singing and clapping, slow at first and building to whirling. Inscribed on UNESCO’s Representative List in 2023.",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "UNESCO inscription",
+    "start": 2023,
+    "end": 2023,
+    "label": "2023 (18.COM)",
+    "certainty": "secure",
+    "basis": "UNESCO record",
+    "sources": [
+     {
+      "source": "src:unesco-ich",
+      "url": "https://ich.unesco.org/en/RL/garba-of-gujarat-01962"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/garba-of-gujarat-01962"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:yoga-living-heritage",
+  "type": "tradition",
+  "name": "Yoga (UNESCO living-heritage element)",
+  "aliases": [
+   "Yoga"
+  ],
+  "subtype": "living practice",
+  "summary": "The practice of yoga as a living tradition — postures, meditation, controlled breathing and chanting aimed at self-realisation and liberation — inscribed on UNESCO’s Representative List in 2016 on India’s nomination. UNESCO describes it as traditionally transmitted from guru to disciple and now also through āśramas, schools and media worldwide.",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "UNESCO inscription",
+    "start": 2016,
+    "end": 2016,
+    "label": "2016 (11.COM)",
+    "certainty": "secure",
+    "basis": "UNESCO record",
+    "sources": [
+     {
+      "source": "src:unesco-ich",
+      "url": "https://ich.unesco.org/en/RL/yoga-01163"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/yoga-01163"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "limits": "This record is the heritage element as inscribed; the philosophical school of Yoga and its texts belong to the darśana records.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:mudiyettu",
+  "type": "tradition",
+  "name": "Muṭiyēṯṯu",
+  "iast": "Muṭiyēṯṯu",
+  "scripts": [
+   {
+    "lang": "ml",
+    "script": "Mlym",
+    "text": "മുടിയേറ്റ്"
+   }
+  ],
+  "aliases": [
+   "Mudiyettu"
+  ],
+  "subtype": "ritual theatre",
+  "traditions": [
+   "trad:shakta"
+  ],
+  "summary": "A ritual dance-drama of central Kerala enacting the battle between the goddess Kāḷī (Bhadrakāḷī) and the demon Dārika, performed by the whole village after the summer harvest in the goddess temples (Bhagavati kāvus) along the Chalakudy, Periyar and Moovattupuzha rivers; a great image of Kāḷī (kaḷam) is first drawn on the temple floor in coloured powders. Inscribed on UNESCO’s Representative List in 2010.",
+  "details": "UNESCO: “the divine sage Nārada importunes Śiva to contain the demon Dārika, who is immune to defeat by mortals. Śiva instead commands that Dārika will die at the hand of the goddess Kāḷī.” Each caste has a role in the ritual.",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "UNESCO inscription",
+    "start": 2010,
+    "end": 2010,
+    "label": "2010 (5.COM)",
+    "certainty": "secure",
+    "basis": "UNESCO record",
+    "sources": [
+     {
+      "source": "src:unesco-ich",
+      "url": "https://ich.unesco.org/en/RL/mudiyettu-ritual-theatre-and-dance-drama-of-kerala-00345"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/mudiyettu-ritual-theatre-and-dance-drama-of-kerala-00345"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:darika",
+  "type": "character",
+  "name": "Dārika",
+  "iast": "Dārikaṉ",
+  "roles": [
+   "asura"
+  ],
+  "summary": "An asura of Kerala tradition who, by a boon that no mortal could kill him, oppressed the worlds until Bhadrakāḷī, born from Śiva’s third eye, slew him; the story is enacted in Muṭiyēṯṯu and other Bhagavati rituals of Kerala.",
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/mudiyettu-ritual-theatre-and-dance-drama-of-kerala-00345"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:kali-darika",
+  "type": "narrative",
+  "name": "Kāḷī slays Dārika",
+  "aliases": [
+   "Darika vadham"
+  ],
+  "subtype": "regional goddess myth",
+  "summary": "The Kerala myth of the goddess Bhadrakāḷī’s war against the asura Dārika, whom no mortal could kill; Nārada informs Śiva, who decrees that Dārika shall die by the Goddess. It is the plot of Muṭiyēṯṯu and of songs and rites in the Bhagavati temples of central Kerala.",
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/mudiyettu-ritual-theatre-and-dance-drama-of-kerala-00345"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:ramman",
+  "type": "tradition",
+  "name": "Rammāṇ",
+  "iast": "Rammāṇ",
+  "aliases": [
+   "Ramman"
+  ],
+  "subtype": "ritual theatre / festival",
+  "summary": "A religious festival and masked ritual theatre held each year in late April in the twin villages of Saloor-Dungra (Chamoli, Uttarakhand) in honour of the village tutelary god Bhūmiyāl Devtā, combining recitation of a version of the Rāma story and other legends with songs and masked dances; only the Bhaṇḍārīs may wear the most sacred mask, that of Narasiṃha. Inscribed on UNESCO’s Representative List in 2009.",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "UNESCO inscription",
+    "start": 2009,
+    "end": 2009,
+    "label": "2009 (4.COM)",
+    "certainty": "secure",
+    "basis": "UNESCO record",
+    "sources": [
+     {
+      "source": "src:unesco-ich",
+      "url": "https://ich.unesco.org/en/RL/ramman-religious-festival-and-ritual-theatre-of-the-garhwal-himalayas-india-00281"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/ramman-religious-festival-and-ritual-theatre-of-the-garhwal-himalayas-india-00281"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "deity:bhumiyal-devta",
+  "type": "deity",
+  "name": "Bhūmiyāl Devtā (Saloor-Dungra)",
+  "aliases": [
+   "Bhumiyal Devta"
+  ],
+  "roles": [
+   "village deity"
+  ],
+  "summary": "The tutelary village god of Saloor-Dungra in the Garhwal Himalaya, in whose honour and temple the Rammāṇ festival is held; the family that hosts the god during the year keeps a strict daily routine.",
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/ramman-religious-festival-and-ritual-theatre-of-the-garhwal-himalayas-india-00281"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:chhau",
+  "type": "tradition",
+  "name": "Chhau",
+  "iast": "Chau",
+  "aliases": [
+   "Chhau",
+   "Chho"
+  ],
+  "subtype": "performance tradition",
+  "summary": "A masked and martial dance tradition of eastern India in three styles — Seraikella (Jharkhand), Purulia (West Bengal) and Mayurbhanj (Odisha), the first two masked — enacting episodes from the Mahābhārata and Rāmāyaṇa, local folklore and abstract themes, closely tied to the spring festival Caitra Parva. Inscribed on UNESCO’s Representative List in 2010.",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "UNESCO inscription",
+    "start": 2010,
+    "end": 2010,
+    "label": "2010 (5.COM)",
+    "certainty": "secure",
+    "basis": "UNESCO record",
+    "sources": [
+     {
+      "source": "src:unesco-ich",
+      "url": "https://ich.unesco.org/en/RL/chhau-dance-00337"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/chhau-dance-00337"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:sankirtana-manipur",
+  "type": "tradition",
+  "name": "Saṅkīrtana of Manipur",
+  "iast": "Saṅkīrtana",
+  "aliases": [
+   "Manipuri Sankirtana",
+   "Nata Sankirtana"
+  ],
+  "subtype": "ritual performance",
+  "traditions": [
+   "trad:gaudiya"
+  ],
+  "summary": "The ritual singing, drumming and dancing of the Vaiṣṇavas of the Manipur plains, performed at temples, festivals and life-cycle rites: two drummers and about ten singer-dancers narrate the life and deeds of Kṛṣṇa in a hall or courtyard ringed by seated devotees, and the performance is regarded as a visible manifestation of God. Inscribed on UNESCO’s Representative List in 2013.",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "UNESCO inscription",
+    "start": 2013,
+    "end": 2013,
+    "label": "2013 (8.COM)",
+    "certainty": "secure",
+    "basis": "UNESCO record",
+    "sources": [
+     {
+      "source": "src:unesco-ich",
+      "url": "https://ich.unesco.org/en/RL/sankirtana-ritual-singing-drumming-and-dancing-of-manipur-00843"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/sankirtana-ritual-singing-drumming-and-dancing-of-manipur-00843"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:vedic-chanting",
+  "type": "tradition",
+  "name": "Tradition of Vedic chanting (UNESCO element)",
+  "aliases": [
+   "Vedic chanting",
+   "Veda pāṭha"
+  ],
+  "subtype": "oral tradition",
+  "traditions": [
+   "trad:vedic-srauta"
+  ],
+  "summary": "The oral transmission of the four Vedas by memorised recitation with exact accentuation and the mnemonic recitation patterns (pāṭhas), proclaimed a Masterpiece of the Oral and Intangible Heritage of Humanity in 2003 and inscribed on UNESCO’s Representative List in 2008.",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "UNESCO Masterpiece proclamation",
+    "start": 2003,
+    "end": 2003,
+    "label": "2003 (proclamation)",
+    "certainty": "secure",
+    "basis": "UNESCO record",
+    "sources": [
+     {
+      "source": "src:unesco-ich",
+      "url": "https://ich.unesco.org/en/RL/tradition-of-vedic-chanting-00062"
+     }
+    ]
+   },
+   {
+    "system": "reception",
+    "event": "UNESCO inscription",
+    "start": 2008,
+    "end": 2008,
+    "label": "2008 (3.COM)",
+    "certainty": "secure",
+    "basis": "UNESCO record",
+    "sources": [
+     {
+      "source": "src:unesco-ich",
+      "url": "https://ich.unesco.org/en/RL/tradition-of-vedic-chanting-00062"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/tradition-of-vedic-chanting-00062"
+   },
+   {
+    "source": "src:unesco-ich-vedic-chanting"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "limits": "UNESCO’s summary dates the Vedas to “over 3,500 years ago”; that is the nominating text’s statement, not a dating adopted here.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:sbek-thom",
+  "type": "tradition",
+  "name": "Sbek Thom (Khmer shadow theatre)",
+  "aliases": [
+   "Sbek Thom",
+   "Nang Sbek Thom"
+  ],
+  "subtype": "performance tradition",
+  "traditions": [
+   "trad:buddhist"
+  ],
+  "summary": "Cambodian shadow theatre with two-metre-high, non-articulated puppets cut from a single hide, held up before a fire-lit screen by dancers while two narrators and an orchestra perform scenes of the Reamker, the Khmer Rāmāyaṇa, over several nights with up to 160 puppets. Proclaimed a Masterpiece in 2005 and inscribed in 2008.",
+  "details": "UNESCO: dating from before the Angkorian period, it was considered sacred together with the Royal Ballet and mask theatre; many puppets were destroyed under the Khmer Rouge and the art has been revived since 1979.",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "UNESCO Masterpiece proclamation",
+    "start": 2005,
+    "end": 2005,
+    "label": "2005 (proclamation)",
+    "certainty": "secure",
+    "basis": "UNESCO record",
+    "sources": [
+     {
+      "source": "src:unesco-ich",
+      "url": "https://ich.unesco.org/en/RL/sbek-thom-khmer-shadow-theatre-00108"
+     }
+    ]
+   },
+   {
+    "system": "reception",
+    "event": "UNESCO inscription",
+    "start": 2008,
+    "end": 2008,
+    "label": "2008 (3.COM)",
+    "certainty": "secure",
+    "basis": "UNESCO record",
+    "sources": [
+     {
+      "source": "src:unesco-ich",
+      "url": "https://ich.unesco.org/en/RL/sbek-thom-khmer-shadow-theatre-00108"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/sbek-thom-khmer-shadow-theatre-00108"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "limits": "The pre-Angkorian origin is UNESCO’s (nominating state’s) statement.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:lkhon-khol-wat-svay-andet",
+  "type": "tradition",
+  "name": "Lkhon Khol Wat Svay Andet",
+  "aliases": [
+   "Lkhon Khol"
+  ],
+  "subtype": "ritual theatre",
+  "traditions": [
+   "trad:buddhist"
+  ],
+  "summary": "Khmer masked dance-drama performed by men in the community around the Buddhist monastery of Wat Svay Andet on the Mekong east of Phnom Penh, to propitiate the Neak Ta guardian spirits for the community and its harvest; spirit mediums attend the performance. Inscribed in 2018 on UNESCO’s List of Intangible Cultural Heritage in Need of Urgent Safeguarding.",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "UNESCO inscription (Urgent Safeguarding List)",
+    "start": 2018,
+    "end": 2018,
+    "label": "2018 (13.COM)",
+    "certainty": "secure",
+    "basis": "UNESCO record",
+    "sources": [
+     {
+      "source": "src:unesco-ich",
+      "url": "https://ich.unesco.org/en/USL/lkhon-khol-wat-svay-andet-01374"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/USL/lkhon-khol-wat-svay-andet-01374"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Lkhon_Khol"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "limits": "UNESCO’s summary does not name the repertoire; the Reamker link rests on reference sources.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:balinese-dance",
+  "type": "tradition",
+  "name": "Three genres of traditional dance in Bali",
+  "aliases": [
+   "Balinese dance"
+  ],
+  "subtype": "performance tradition",
+  "traditions": [
+   "trad:agama-hindu-dharma"
+  ],
+  "summary": "Balinese dance in its three genres — sacred (wali), semi-sacred (bebali) and for public enjoyment (balih-balihan) — performed to gamelan by male and female dancers in gold-painted costumes, and transmitted informally to children from an early age. Inscribed on UNESCO’s Representative List in 2015.",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "UNESCO inscription",
+    "start": 2015,
+    "end": 2015,
+    "label": "2015 (10.COM)",
+    "certainty": "secure",
+    "basis": "UNESCO record",
+    "sources": [
+     {
+      "source": "src:unesco-ich",
+      "url": "https://ich.unesco.org/en/RL/three-genres-of-traditional-dance-in-bali-00617"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/three-genres-of-traditional-dance-in-bali-00617"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Balinese_dance"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "limits": "The names of the three genres are from reference sources; UNESCO’s summary gives them as sacred, semi-sacred and for enjoyment.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:geet-gawai",
+  "type": "tradition",
+  "name": "Geet-Gawai (Bhojpuri folk songs in Mauritius)",
+  "aliases": [
+   "Geet Gawai",
+   "Gīt-gavāī"
+  ],
+  "subtype": "ritual / song tradition",
+  "summary": "A pre-wedding ceremony of Bhojpuri-speaking Mauritians of Indian descent, held at the bride’s or groom’s home, combining rituals, prayers, songs honouring Hindu gods and goddesses, the drum (dholak) and dance; it begins with five married women sorting turmeric, rice, grass and money in a cloth. Inscribed on UNESCO’s Representative List in 2016.",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "UNESCO inscription",
+    "start": 2016,
+    "end": 2016,
+    "label": "2016 (11.COM)",
+    "certainty": "secure",
+    "basis": "UNESCO record",
+    "sources": [
+     {
+      "source": "src:unesco-ich",
+      "url": "https://ich.unesco.org/en/RL/bhojpuri-folk-songs-in-mauritius-geet-gawai-01178"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/bhojpuri-folk-songs-in-mauritius-geet-gawai-01178"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ }
+]

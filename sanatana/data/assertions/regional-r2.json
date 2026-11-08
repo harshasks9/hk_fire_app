@@ -1,0 +1,3316 @@
+[
+ {
+  "id": "regional:r2-1",
+  "s": "trad:dipavali",
+  "p": "DOCUMENTED_BY",
+  "o": "inst:unesco",
+  "qualifiers": {
+   "note": "inscribed on the Representative List of the Intangible Cultural Heritage of Humanity, 2025 (20.COM)"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/deepavali-02312"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-2",
+  "s": "deity:lakshmi",
+  "p": "CENTRAL_TO",
+  "o": "trad:dipavali",
+  "qualifiers": {
+   "note": "worship of Lakṣmī on the new-moon night (Sukharātri); prayers for prosperity"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, pp. 199–200",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   },
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/deepavali-02312"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-3",
+  "s": "trad:dipavali",
+  "p": "ASSOCIATED_WITH",
+  "o": "char:krishna",
+  "qualifiers": {
+   "note": "Naraka-caturdaśī: Kṛṣṇa’s killing of Narakāsura (south and west India)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, pp. 196–198",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-4",
+  "s": "trad:dipavali",
+  "p": "ASSOCIATED_WITH",
+  "o": "char:bali",
+  "qualifiers": {
+   "note": "“today is the sovereignty of Bali” (Bhaviṣyottara 140, as summarised by Kane); Balipratipadā"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, pp. 199–204",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-5",
+  "s": "trad:dipavali",
+  "p": "ASSOCIATED_WITH",
+  "o": "narr:rama-coronation",
+  "qualifiers": {
+   "note": "North Indian association: lamps for Rāma’s return and crowning in Ayodhyā"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 207",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Diwali"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "rationale": "Kane (p. 207) lists “the crowning of Rāma and Vikrama in these days of Divālī” among the legends collected by B. A. Gupte; the Sanskrit vrata texts he surveys otherwise give the Naraka, Lakṣmī and Bali reasons, plus a punning Bhaviṣyottara verse comparing the day of lights to the Rāmāyaṇa.",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-6",
+  "s": "trad:dipavali",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:jain",
+  "qualifiers": {
+   "note": "Jains observe the night as Mahāvīra’s nirvāṇa at Pāvā; Jinasena’s Harivaṃśapurāṇa (783 CE) is usually cited as the earliest dated reference to lamps for the occasion (not checked here)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Diwali"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-7",
+  "s": "trad:dipavali",
+  "p": "MENTIONED_IN",
+  "o": "text:bhavishya-purana",
+  "qualifiers": {
+   "note": "the Bhaviṣyottara (usually transmitted as a supplement to the Bhaviṣya Purāṇa) describes the four days from the 14th"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, pp. 196–204: Bhaviṣyottara ch. 140",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "rationale": "Kane summarises Bhaviṣyottara ch. 140 vv. 14–29 and 47–73; the Bhaviṣyottara is treated by many as a separate work appended to the Bhaviṣya.",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-8",
+  "s": "trad:naraka-chaturdashi",
+  "p": "PART_OF",
+  "o": "trad:dipavali",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 195",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-9",
+  "s": "trad:naraka-chaturdashi",
+  "p": "ASSOCIATED_WITH",
+  "o": "char:krishna",
+  "qualifiers": {
+   "note": "Kṛṣṇa beheads Naraka (Bhauma) with the discus: BhP 10.59.21; the Purāṇa does not connect the deed with the festival"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 197",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   },
+   {
+    "source": "src:gretil-bhp-etext",
+    "locator": "BhP 10.59.2–21",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/sa_bhAgavatapurANa.xml"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "rationale": "The killing is narrated in ViP 5.29 and BhP 10.59 (Kane); BhP 10.59.21 checked in the GRETIL e-text. The festival link is tradition (class 6).",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-10",
+  "s": "trad:naraka-chaturdashi",
+  "p": "ASSOCIATED_WITH",
+  "o": "char:satyabhama",
+  "qualifiers": {
+   "note": "regional tellings in which Satyabhāmā takes part in the fight against Naraka (cf. BhP 10.59, where she rides Garuḍa with Kṛṣṇa)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Naraka_Chaturdashi"
+   }
+  ],
+  "confidence": "low",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-11",
+  "s": "deity:yama",
+  "p": "CENTRAL_TO",
+  "o": "trad:naraka-chaturdashi",
+  "qualifiers": {
+   "note": "tarpaṇa to Yama; Kane holds this to be the older layer"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, pp. 196–197",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-12",
+  "s": "trad:naraka-chaturdashi",
+  "p": "MENTIONED_IN",
+  "o": "text:bhavishya-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 196: Bhaviṣyottara 140",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-13",
+  "s": "trad:lakshmi-puja-dipavali",
+  "p": "PART_OF",
+  "o": "trad:dipavali",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 199",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-14",
+  "s": "deity:lakshmi",
+  "p": "CENTRAL_TO",
+  "o": "trad:lakshmi-puja-dipavali",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, pp. 199–201",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-15",
+  "s": "deity:kali",
+  "p": "CENTRAL_TO",
+  "o": "trad:kali-puja",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 200",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   },
+   {
+    "source": "src:mcdermott-2011"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-16",
+  "s": "trad:kali-puja",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:dipavali",
+  "qualifiers": {
+   "note": "Bengal’s form of the Dīpāvalī new-moon night"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 200",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-17",
+  "s": "trad:kali-puja",
+  "p": "ASSOCIATED_WITH",
+  "o": "temple:kalighat",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:mcdermott-2011"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-18",
+  "s": "trad:kali-puja",
+  "p": "ASSOCIATED_WITH",
+  "o": "temple:dakshineswar",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:mcdermott-2011"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-19",
+  "s": "trad:bali-pratipada",
+  "p": "PART_OF",
+  "o": "trad:dipavali",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 195",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-20",
+  "s": "char:bali",
+  "p": "CENTRAL_TO",
+  "o": "trad:bali-pratipada",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, pp. 201–202",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-21",
+  "s": "trad:bali-pratipada",
+  "p": "ASSOCIATED_WITH",
+  "o": "narr:vamana-bali",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, pp. 202–203",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-22",
+  "s": "narr:vamana-bali",
+  "p": "MENTIONED_IN",
+  "o": "text:mahabhashya",
+  "qualifiers": {
+   "note": "“Baliṃ bandhayati” — reciting or staging the binding of Bali"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 203: Mahābhāṣya on Pāṇini 3.1.26",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "rationale": "As cited by Kane; the Mahābhāṣya passage itself was not opened here.",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-23",
+  "s": "trad:govardhan-puja",
+  "p": "ASSOCIATED_WITH",
+  "o": "narr:govardhana",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 205",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   },
+   {
+    "source": "src:bryant-2007"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-24",
+  "s": "trad:govardhan-puja",
+  "p": "PART_OF",
+  "o": "trad:dipavali",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 205",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-25",
+  "s": "char:krishna",
+  "p": "CENTRAL_TO",
+  "o": "trad:govardhan-puja",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:bryant-2007"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-26",
+  "s": "trad:govardhan-puja",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:pushtimarg",
+  "qualifiers": {
+   "note": "Annakūṭa is a major festival of the Puṣṭimārga havelīs"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-27",
+  "s": "trad:bhai-dooj",
+  "p": "PART_OF",
+  "o": "trad:dipavali",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 195",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-28",
+  "s": "deity:yama",
+  "p": "CENTRAL_TO",
+  "o": "trad:bhai-dooj",
+  "qualifiers": {
+   "note": "Yama fed by his sister Yamunā"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 207",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-29",
+  "s": "deity:yamuna",
+  "p": "CENTRAL_TO",
+  "o": "trad:bhai-dooj",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 207",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-30",
+  "s": "trad:holi",
+  "p": "ASSOCIATED_WITH",
+  "o": "char:holika",
+  "qualifiers": {
+   "note": "popular legend: Holikā burned in the fire she meant for Prahlāda; not in Kane’s Sanskrit sources"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Holika"
+   },
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, ch. XII",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-31",
+  "s": "trad:holi",
+  "p": "ASSOCIATED_WITH",
+  "o": "char:prahlada",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Holika_Dahan"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-32",
+  "s": "trad:holi",
+  "p": "ASSOCIATED_WITH",
+  "o": "narr:narasimha-prahlada",
+  "qualifiers": {
+   "note": "the Holikā episode is told as a prelude to Narasiṃha’s killing of Hiraṇyakaśipu"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Holika_Dahan"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-33",
+  "s": "trad:holi",
+  "p": "ASSOCIATED_WITH",
+  "o": "char:dhaundha",
+  "qualifiers": {
+   "note": "Bhaviṣyottara 132: the ogress Ḍhauṇḍhā driven off by children’s bonfire"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, pp. 238–239",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-34",
+  "s": "trad:holi",
+  "p": "ASSOCIATED_WITH",
+  "o": "char:radha",
+  "qualifiers": {
+   "note": "Braj Holī of Rādhā and Kṛṣṇa (Barsana, Nandgaon, Vṛndāvana)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Lathmar_Holi"
+   },
+   {
+    "source": "src:hawley-1984"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-35",
+  "s": "char:krishna",
+  "p": "CENTRAL_TO",
+  "o": "trad:holi",
+  "qualifiers": {
+   "note": "the only religious element Kane notes besides the bonfire pūjā is the worship of Kṛṣṇa in Bengal (Dolayātrā)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 237",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-36",
+  "s": "trad:holi",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:vrindavan",
+  "qualifiers": {
+   "note": "Braj Holī"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Holi"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-37",
+  "s": "trad:holi",
+  "p": "MENTIONED_IN",
+  "o": "text:bhavishya-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 238: Bhaviṣyottara ch. 132, quoted by Hemādri",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-38",
+  "s": "char:holika",
+  "p": "SIBLING_OF",
+  "o": "char:hiranyakashipu",
+  "qualifiers": {
+   "tradition": "popular Holī legend"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Holika"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-39",
+  "s": "char:holika",
+  "p": "ADVERSARY_OF",
+  "o": "char:prahlada",
+  "qualifiers": {
+   "tradition": "popular Holī legend"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Holika"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-40",
+  "s": "char:dhaundha",
+  "p": "APPEARS_IN",
+  "o": "text:bhavishya-purana",
+  "qualifiers": {
+   "role": "antagonist",
+   "note": "Bhaviṣyottara section"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 238: Bhaviṣyottara 132.1–51 as quoted by Hemādri",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-41",
+  "s": "trad:dol-jatra",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:holi",
+  "qualifiers": {
+   "note": "Bengal’s alternative to the Holikā bonfire"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 239",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-42",
+  "s": "char:krishna",
+  "p": "CENTRAL_TO",
+  "o": "trad:dol-jatra",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, pp. 239–240",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-43",
+  "s": "trad:dol-jatra",
+  "p": "ASSOCIATED_WITH",
+  "o": "person:chaitanya",
+  "qualifiers": {
+   "note": "Caitanya’s birth on the Phālguna full moon (Gaura Pūrṇimā), Gauḍīya tradition"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Chaitanya_Mahaprabhu"
+   },
+   {
+    "source": "src:dimock-stewart-1999"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-44",
+  "s": "trad:dol-jatra",
+  "p": "ASSOCIATED_WITH",
+  "o": "temple:jagannath-puri",
+  "qualifiers": {
+   "note": "Dola festival of the Jagannātha cult"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:eschmann-kulke-tripathi-1978"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-45",
+  "s": "deity:durga",
+  "p": "CENTRAL_TO",
+  "o": "trad:navaratri",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 154",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-46",
+  "s": "trad:navaratri",
+  "p": "ASSOCIATED_WITH",
+  "o": "text:devi-mahatmya",
+  "qualifiers": {
+   "note": "recitation of the Devī Māhātmya (Saptaśatī, Caṇḍī) during the festival"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, pp. 155–157",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-47",
+  "s": "trad:navaratri",
+  "p": "ASSOCIATED_WITH",
+  "o": "narr:mahishasura-slaying",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, pp. 155–157, 194",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-48",
+  "s": "trad:navaratri",
+  "p": "MENTIONED_IN",
+  "o": "text:kalika-purana",
+  "qualifiers": {
+   "note": "the Kālikā prescribes the autumn worship of Durgā and lists sacrificial animals"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 156: Kālikā Purāṇa 63.18 and passim",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-49",
+  "s": "trad:navaratri",
+  "p": "MENTIONED_IN",
+  "o": "text:devi-bhagavata-purana",
+  "qualifiers": {
+   "note": "the Devī Bhāgavata also prescribes the autumn Navarātra vrata (locator not checked)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Navaratri"
+   }
+  ],
+  "confidence": "low",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-50",
+  "s": "trad:durga-puja",
+  "p": "DOCUMENTED_BY",
+  "o": "inst:unesco",
+  "qualifiers": {
+   "note": "Durga Puja in Kolkata, Representative List 2021 (16.COM)"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/durga-puja-in-kolkata-00703"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-51",
+  "s": "trad:durga-puja",
+  "p": "PART_OF",
+  "o": "trad:navaratri",
+  "qualifiers": {
+   "note": "Bengal’s form of the autumn Navarātra"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 154",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-52",
+  "s": "deity:durga",
+  "p": "CENTRAL_TO",
+  "o": "trad:durga-puja",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/durga-puja-in-kolkata-00703"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-53",
+  "s": "trad:durga-puja",
+  "p": "ASSOCIATED_WITH",
+  "o": "narr:mahishasura-slaying",
+  "qualifiers": {
+   "note": "the images show Durgā slaying Mahiṣāsura"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:mcdermott-2011"
+   },
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, ch. IX",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-54",
+  "s": "trad:durga-puja",
+  "p": "ASSOCIATED_WITH",
+  "o": "text:krittivasi-ramayana",
+  "qualifiers": {
+   "note": "Rāma’s akāla-bodhana (untimely invocation) of Durgā before the battle, with 108 blue lotuses, as told in Kṛttivāsa’s Rāmāyaṇa"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:mcdermott-2011"
+   },
+   {
+    "source": "src:smith-wl-1988"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Durga_Puja"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-55",
+  "s": "trad:durga-puja",
+  "p": "ASSOCIATED_WITH",
+  "o": "char:rama",
+  "qualifiers": {
+   "note": "akāla-bodhana"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:mcdermott-2011"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Durga_Puja"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-56",
+  "s": "trad:durga-puja",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:ganga-river",
+  "qualifiers": {
+   "note": "clay from and immersion into the Gaṅgā (Hooghly)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/durga-puja-in-kolkata-00703"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-57",
+  "s": "trad:durga-puja",
+  "p": "ASSOCIATED_WITH",
+  "o": "text:kalika-purana",
+  "qualifiers": {
+   "note": "the Kālikā is a principal Purāṇic authority for the Bengal rite"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, pp. 154–187",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-58",
+  "s": "trad:vijayadashami",
+  "p": "ASSOCIATED_WITH",
+  "o": "narr:lanka-war",
+  "qualifiers": {
+   "note": "Rāma set out against Rāvaṇa on this day (Kaśyapa quoted by Hemādri); north Indian effigy-burning"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, pp. 189, 192–193",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-59",
+  "s": "trad:vijayadashami",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:ramlila",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 193",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   },
+   {
+    "source": "src:lutgendorf-1991"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-60",
+  "s": "trad:vijayadashami",
+  "p": "ASSOCIATED_WITH",
+  "o": "lin:pandavas",
+  "qualifiers": {
+   "note": "śamī worship recalls the Pāṇḍavas hiding their weapons in a śamī tree (Virāṭaparvan)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 192, n. 492",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-61",
+  "s": "trad:vijayadashami",
+  "p": "ASSOCIATED_WITH",
+  "o": "narr:mahishasura-slaying",
+  "qualifiers": {
+   "note": "Kane: celebrated immediately after Navarātra, which celebrates the Devī’s victory over Mahiṣāsura"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 194",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-62",
+  "s": "trad:vijayadashami",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:navaratri",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 194",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-63",
+  "s": "trad:vijayadashami",
+  "p": "ASSOCIATED_WITH",
+  "o": "char:ravana",
+  "qualifiers": {
+   "note": "effigies of Rāvaṇa burned (north India)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 193",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-64",
+  "s": "trad:mysore-dasara",
+  "p": "PART_OF",
+  "o": "trad:vijayadashami",
+  "qualifiers": {
+   "note": "Kane names Mysore among the princely states that held Dasarā durbars"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 193",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-65",
+  "s": "deity:chamunda",
+  "p": "CENTRAL_TO",
+  "o": "trad:mysore-dasara",
+  "qualifiers": {
+   "note": "as Cāmuṇḍeśvarī of Chamundi Hill"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mysore_Dasara"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-66",
+  "s": "trad:mysore-dasara",
+  "p": "ASSOCIATED_WITH",
+  "o": "narr:mahishasura-slaying",
+  "qualifiers": {
+   "note": "local tradition places the killing of Mahiṣāsura on Chamundi Hill and derives the name Mysore from Mahiṣa"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mysore_Dasara"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-67",
+  "s": "trad:mysore-dasara",
+  "p": "ASSOCIATED_WITH",
+  "o": "pol:vijayanagara",
+  "qualifiers": {
+   "note": "said to continue the Vijayanagara Mahānavamī"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mysore_Dasara"
+   }
+  ],
+  "confidence": "low",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-68",
+  "s": "deity:shiva",
+  "p": "CENTRAL_TO",
+  "o": "trad:maha-shivaratri",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 225",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-69",
+  "s": "trad:maha-shivaratri",
+  "p": "MENTIONED_IN",
+  "o": "text:garuda-purana",
+  "qualifiers": {
+   "note": "Śivarātri-māhātmya with the hunter Sundarasenaka"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 225: Garuḍa 1.124",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-70",
+  "s": "trad:maha-shivaratri",
+  "p": "MENTIONED_IN",
+  "o": "text:skanda-purana",
+  "qualifiers": {
+   "note": "the Kirāta Caṇḍa version"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 225: Skanda 1.1.33",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-71",
+  "s": "trad:maha-shivaratri",
+  "p": "MENTIONED_IN",
+  "o": "text:padma-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 225: Padma 6.240",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-72",
+  "s": "trad:maha-shivaratri",
+  "p": "MENTIONED_IN",
+  "o": "text:agni-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 225: Agni 193",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-73",
+  "s": "trad:maha-shivaratri",
+  "p": "ASSOCIATED_WITH",
+  "o": "narr:lingodbhava",
+  "qualifiers": {
+   "note": "some traditions hold that the fiery liṅga appeared on this night"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Maha_Shivaratri"
+   }
+  ],
+  "confidence": "low",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-74",
+  "s": "trad:maha-shivaratri",
+  "p": "ASSOCIATED_WITH",
+  "o": "temple:pashupatinath",
+  "qualifiers": {
+   "note": "Michaels (2008) describes the Śivarātri festival at Paśupatinātha, with large numbers of ascetics"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:michaels-2008"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-75",
+  "s": "trad:maha-shivaratri",
+  "p": "ASSOCIATED_WITH",
+  "o": "temple:kashi-vishwanath",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:eck-1982"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-76",
+  "s": "char:krishna",
+  "p": "CENTRAL_TO",
+  "o": "trad:krishna-janmashtami",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, ch. VII",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-77",
+  "s": "trad:krishna-janmashtami",
+  "p": "ASSOCIATED_WITH",
+  "o": "narr:krishna-birth",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, ch. VII",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   },
+   {
+    "source": "src:gretil-bhp-etext",
+    "locator": "BhP 10.3.8",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/sa_bhAgavatapurANa.xml"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-78",
+  "s": "trad:krishna-janmashtami",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:mathura",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Krishna_Janmashtami"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-79",
+  "s": "trad:krishna-janmashtami",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:vrindavan",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Krishna_Janmashtami"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-80",
+  "s": "char:rama",
+  "p": "CENTRAL_TO",
+  "o": "trad:rama-navami",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, ch. IV",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-81",
+  "s": "trad:rama-navami",
+  "p": "ASSOCIATED_WITH",
+  "o": "narr:birth-of-rama",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:manas-sanskritdocuments",
+    "locator": "RCM Bālakāṇḍa, caupāī after dohā 190",
+    "url": "https://sanskritdocuments.org/doc_z_otherlang_hindi/manas1_i.html"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-82",
+  "s": "trad:rama-navami",
+  "p": "MENTIONED_IN",
+  "o": "text:ramcharitmanas",
+  "qualifiers": {
+   "note": "the poem begins on Rāma Navamī (Saṃvat 1631) and places Rāma’s birth on the Caitra navamī"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:manas-sanskritdocuments",
+    "locator": "RCM Bālakāṇḍa, before dohā 34 and after dohā 190",
+    "url": "https://sanskritdocuments.org/doc_z_otherlang_hindi/manas1_i.html"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-83",
+  "s": "trad:rama-navami",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:ayodhya",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Rama_Navami"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-84",
+  "s": "deity:ganesha",
+  "p": "CENTRAL_TO",
+  "o": "trad:ganesha-chaturthi",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, ch. VIII",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-85",
+  "s": "trad:sarvajanik-ganeshotsav",
+  "p": "DERIVED_FROM",
+  "o": "trad:ganesha-chaturthi",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:cashman-1975"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-86",
+  "s": "trad:sarvajanik-ganeshotsav",
+  "p": "ASSOCIATED_WITH",
+  "o": "person:bal-gangadhar-tilak",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:cashman-1975"
+   },
+   {
+    "source": "src:kaur-2003"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "rationale": "Cashman (1975) and Kaur (2003) analyse Tilak’s promotion of the public festival from 1893.",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-87",
+  "s": "deity:ganesha",
+  "p": "CENTRAL_TO",
+  "o": "trad:sarvajanik-ganeshotsav",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kaur-2003"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-88",
+  "s": "deity:surya",
+  "p": "CENTRAL_TO",
+  "o": "trad:makar-sankranti",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, ch. XI",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-89",
+  "s": "trad:gangasagar-mela",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:gangasagara",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Gangasagar_Mela"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-90",
+  "s": "trad:gangasagar-mela",
+  "p": "ASSOCIATED_WITH",
+  "o": "narr:sagara-sons",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Gangasagar_Mela"
+   },
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-91",
+  "s": "trad:gangasagar-mela",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:makar-sankranti",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Gangasagar_Mela"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-92",
+  "s": "trad:gangasagar-mela",
+  "p": "ASSOCIATED_WITH",
+  "o": "char:kapila",
+  "qualifiers": {
+   "note": "Kapila Muni temple on Sagar Island"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Gangasagar_Mela"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-93",
+  "s": "trad:pongal",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:makar-sankranti",
+  "qualifiers": {
+   "note": "“In south India there is a festival called Pongal which corresponds with the Makarasaṅkrānti observed in Northern and Western India” (Kane)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 222",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-94",
+  "s": "deity:surya",
+  "p": "CENTRAL_TO",
+  "o": "trad:pongal",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Pongal_(festival)"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-95",
+  "s": "trad:pongal",
+  "p": "ASSOCIATED_WITH",
+  "o": "deity:indra",
+  "qualifiers": {
+   "note": "Bhōgi, the first day, is associated with Indra in Tamil tradition"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bhogi"
+   }
+  ],
+  "confidence": "low",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-96",
+  "s": "trad:onam",
+  "p": "ASSOCIATED_WITH",
+  "o": "char:bali",
+  "qualifiers": {
+   "note": "Mahābali’s annual visit to his people (Kerala tradition)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Onam"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-97",
+  "s": "trad:onam",
+  "p": "ASSOCIATED_WITH",
+  "o": "narr:vamana-bali",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Onam"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-98",
+  "s": "trad:onam",
+  "p": "MENTIONED_IN",
+  "o": "text:maduraikkanci",
+  "qualifiers": {
+   "note": "“māyōṉ mēya ōṇa naṉṉāḷ” — Ōṇam as the day of Māyōṉ who conquered the asuras"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:maduraikkanci-pm",
+    "locator": "Maduraikkāñci, lines 590–591",
+    "url": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0071.html"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-99",
+  "s": "deity:mayon",
+  "p": "CENTRAL_TO",
+  "o": "trad:onam",
+  "qualifiers": {
+   "tradition": "Caṅkam Madurai (Maduraikkāñci)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:maduraikkanci-pm",
+    "locator": "Maduraikkāñci, lines 590–591",
+    "url": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0071.html"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-100",
+  "s": "deity:vamana",
+  "p": "CENTRAL_TO",
+  "o": "trad:onam",
+  "qualifiers": {
+   "note": "Vāmana is worshipped at Thrikkakara, the temple tradition locates the festival’s centre there"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Onam"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-101",
+  "s": "text:maduraikkanci",
+  "p": "PART_OF",
+  "o": "col:sangam-literature",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:zvelebil-1974"
+   },
+   {
+    "source": "src:maduraikkanci-pm",
+    "url": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0071.html"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-102",
+  "s": "deity:mayon",
+  "p": "MENTIONED_IN",
+  "o": "text:maduraikkanci",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:maduraikkanci-pm",
+    "locator": "line 591",
+    "url": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0071.html"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-103",
+  "s": "deity:surya",
+  "p": "CENTRAL_TO",
+  "o": "trad:chhath",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Chhath"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-104",
+  "s": "deity:chhathi-maiya",
+  "p": "CENTRAL_TO",
+  "o": "trad:chhath",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Chhath"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-105",
+  "s": "deity:jagannatha",
+  "p": "CENTRAL_TO",
+  "o": "trad:ratha-yatra-puri",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:eschmann-kulke-tripathi-1978"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-106",
+  "s": "trad:ratha-yatra-puri",
+  "p": "ASSOCIATED_WITH",
+  "o": "temple:jagannath-puri",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:eschmann-kulke-tripathi-1978"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-107",
+  "s": "trad:ratha-yatra-puri",
+  "p": "ASSOCIATED_WITH",
+  "o": "person:chaitanya",
+  "qualifiers": {
+   "note": "Caitanya’s kīrtana before the chariots (Caitanya Caritāmṛta, Madhya-līlā)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:dimock-stewart-1999"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ratha_Yatra_(Puri)"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-108",
+  "s": "trad:ratha-yatra-puri",
+  "p": "ASSOCIATED_WITH",
+  "o": "text:skanda-purana",
+  "qualifiers": {
+   "note": "the Puruṣottama-kṣetra-māhātmya of the Skanda Purāṇa’s Vaiṣṇava/Utkala section gives the festival’s legends (Indradyumna)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:eschmann-kulke-tripathi-1978"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-109",
+  "s": "deity:murugan",
+  "p": "CENTRAL_TO",
+  "o": "trad:thaipusam",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:collins-1997"
+   },
+   {
+    "source": "src:clothey-1978"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-110",
+  "s": "trad:thaipusam",
+  "p": "ASSOCIATED_WITH",
+  "o": "temple:batu-caves",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:collins-1997"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Batu_Caves"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-111",
+  "s": "trad:thaipusam",
+  "p": "ASSOCIATED_WITH",
+  "o": "temple:palani",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:clothey-1978"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Thaipusam"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-112",
+  "s": "trad:thaipusam",
+  "p": "ASSOCIATED_WITH",
+  "o": "text:kanda-puranam",
+  "qualifiers": {
+   "note": "the vēl given by Pārvatī for the war with Cūrapatmaṉ, narrated in the Kanta Purāṇam"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:clothey-1978"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Thaipusam"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-113",
+  "s": "trad:thaipusam",
+  "p": "ASSOCIATED_WITH",
+  "o": "deity:parvati",
+  "qualifiers": {
+   "note": "giver of the vēl"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Thaipusam"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-114",
+  "s": "trad:kumbh-mela",
+  "p": "DOCUMENTED_BY",
+  "o": "inst:unesco",
+  "qualifiers": {
+   "note": "inscribed on the Representative List of the Intangible Cultural Heritage of Humanity, 2017 (12.COM)"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/kumbh-mela-01258"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-115",
+  "s": "trad:kumbh-mela",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:prayaga",
+  "qualifiers": {
+   "note": "UNESCO lists Allahabad among the four sites"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/kumbh-mela-01258"
+   },
+   {
+    "source": "src:maclean-2008"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-116",
+  "s": "trad:kumbh-mela",
+  "p": "ASSOCIATED_WITH",
+  "o": "narr:samudra-manthana",
+  "qualifiers": {
+   "note": "drops of amṛta from the pitcher fell at the four sites (tradition)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kumbh_Mela"
+   },
+   {
+    "source": "src:maclean-2008"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-117",
+  "s": "trad:kumbh-mela",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:ganga-river",
+  "qualifiers": {
+   "note": "bathing in the Gaṅgā (and at Ujjain in the Śiprā, at Nashik in the Godāvarī)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/kumbh-mela-01258"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-118",
+  "s": "trad:kumbh-mela",
+  "p": "ASSOCIATED_WITH",
+  "o": "temple:mahakaleshwar",
+  "qualifiers": {
+   "note": "Ujjain Kumbh (Siṃhastha)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kumbh_Mela"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-119",
+  "s": "trad:kumbh-mela",
+  "p": "ASSOCIATED_WITH",
+  "o": "temple:trimbakeshwar",
+  "qualifiers": {
+   "note": "the Nashik–Tryambakeśvar Kumbh (Siṃhastha)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kumbh_Mela"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-120",
+  "s": "claim:kumbh-mela-antiquity",
+  "p": "CONCERNS",
+  "o": "trad:kumbh-mela",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:maclean-2003"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-121",
+  "s": "trad:kumbh-mela",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:shaiva",
+  "qualifiers": {
+   "note": "the ascetic akhāṛās (Daśanāmī nāgas and others) are “primary bearers” in UNESCO’s description"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/kumbh-mela-01258"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-122",
+  "s": "trad:pandharpur-wari",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:pandharpur",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:karve-1962"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Pandharpur_Vari"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-123",
+  "s": "deity:vitthala",
+  "p": "CENTRAL_TO",
+  "o": "trad:pandharpur-wari",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:karve-1962"
+   },
+   {
+    "source": "src:mokashi-1987"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-124",
+  "s": "trad:pandharpur-wari",
+  "p": "PART_OF",
+  "o": "trad:varkari",
+  "qualifiers": {
+   "note": "the vārī is the defining practice of the Vārkarīs"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:novetzke-2008"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-125",
+  "s": "trad:pandharpur-wari",
+  "p": "ASSOCIATED_WITH",
+  "o": "person:jnaneshwar",
+  "qualifiers": {
+   "note": "Jñāneśvar’s pālkhī from Āḷandī"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:mokashi-1987"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Pandharpur_Vari"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-126",
+  "s": "trad:pandharpur-wari",
+  "p": "ASSOCIATED_WITH",
+  "o": "person:tukaram",
+  "qualifiers": {
+   "note": "Tukārām’s pālkhī from Dehū"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:mokashi-1987"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Pandharpur_Vari"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-127",
+  "s": "trad:pandharpur-wari",
+  "p": "ASSOCIATED_WITH",
+  "o": "text:tukaram-gatha",
+  "qualifiers": {
+   "note": "abhaṅgas sung on the road"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:karve-1962"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-128",
+  "s": "deity:shiva",
+  "p": "PARENT_OF",
+  "o": "deity:ayyappa",
+  "qualifiers": {
+   "tradition": "Śabarimala Ayyappa tradition",
+   "note": "as Hariharaputra"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:sekar-1992"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ayyappan"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-129",
+  "s": "deity:mohini",
+  "p": "PARENT_OF",
+  "o": "deity:ayyappa",
+  "qualifiers": {
+   "tradition": "Śabarimala Ayyappa tradition",
+   "note": "Viṣṇu as Mohinī"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:sekar-1992"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ayyappan"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-130",
+  "s": "deity:ayyappa",
+  "p": "CENTRAL_TO",
+  "o": "trad:sabarimala-pilgrimage",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:sekar-1992"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Sabarimala"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-131",
+  "s": "trad:sabarimala-pilgrimage",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:makar-sankranti",
+  "qualifiers": {
+   "note": "Makaravilakku at Makara Saṅkrānti"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Sabarimala"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-132",
+  "s": "deity:shiva",
+  "p": "CENTRAL_TO",
+  "o": "trad:kanwar-yatra",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kanwar_Yatra"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-133",
+  "s": "trad:kanwar-yatra",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:ganga-river",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kanwar_Yatra"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-134",
+  "s": "trad:kanwar-yatra",
+  "p": "ASSOCIATED_WITH",
+  "o": "temple:baidyanath-deoghar",
+  "qualifiers": {
+   "note": "Shravani Melā: water carried from Sultanganj to Deoghar"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Shravani_Mela"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-135",
+  "s": "trad:kanwar-yatra",
+  "p": "ASSOCIATED_WITH",
+  "o": "narr:samudra-manthana",
+  "qualifiers": {
+   "note": "a common explanation: Gaṅgā water cools Śiva after he drank the poison of the churning"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kanwar_Yatra"
+   }
+  ],
+  "confidence": "low",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-136",
+  "s": "trad:garba",
+  "p": "DOCUMENTED_BY",
+  "o": "inst:unesco",
+  "qualifiers": {
+   "note": "inscribed on the Representative List of the Intangible Cultural Heritage of Humanity, 2023 (18.COM)"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/garba-of-gujarat-01962"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-137",
+  "s": "trad:garba",
+  "p": "PART_OF",
+  "o": "trad:navaratri",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/garba-of-gujarat-01962"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-138",
+  "s": "deity:durga",
+  "p": "CENTRAL_TO",
+  "o": "trad:garba",
+  "qualifiers": {
+   "note": "the goddess as Ambā / Śakti (UNESCO: “the feminine energy or ‘Shakti’”)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/garba-of-gujarat-01962"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-139",
+  "s": "trad:yoga-living-heritage",
+  "p": "DOCUMENTED_BY",
+  "o": "inst:unesco",
+  "qualifiers": {
+   "note": "inscribed on the Representative List of the Intangible Cultural Heritage of Humanity, 2016 (11.COM)"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/yoga-01163"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-140",
+  "s": "trad:mudiyettu",
+  "p": "DOCUMENTED_BY",
+  "o": "inst:unesco",
+  "qualifiers": {
+   "note": "inscribed on the Representative List of the Intangible Cultural Heritage of Humanity, 2010 (5.COM)"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/mudiyettu-ritual-theatre-and-dance-drama-of-kerala-00345"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-141",
+  "s": "deity:kali",
+  "p": "CENTRAL_TO",
+  "o": "trad:mudiyettu",
+  "qualifiers": {
+   "note": "as Bhadrakāḷī of the Bhagavati kāvus"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/mudiyettu-ritual-theatre-and-dance-drama-of-kerala-00345"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-142",
+  "s": "trad:mudiyettu",
+  "p": "ASSOCIATED_WITH",
+  "o": "narr:kali-darika",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/mudiyettu-ritual-theatre-and-dance-drama-of-kerala-00345"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-143",
+  "s": "deity:kali",
+  "p": "SLAYS",
+  "o": "char:darika",
+  "qualifiers": {
+   "tradition": "Kerala Bhagavati tradition (Muṭiyēṯṯu)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/mudiyettu-ritual-theatre-and-dance-drama-of-kerala-00345"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-144",
+  "s": "deity:kali",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:kali-darika",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/mudiyettu-ritual-theatre-and-dance-drama-of-kerala-00345"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-145",
+  "s": "char:darika",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:kali-darika",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/mudiyettu-ritual-theatre-and-dance-drama-of-kerala-00345"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-146",
+  "s": "deity:shiva",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:kali-darika",
+  "qualifiers": {
+   "note": "decrees Dārika’s death at the Goddess’s hand"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/mudiyettu-ritual-theatre-and-dance-drama-of-kerala-00345"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-147",
+  "s": "char:narada",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:kali-darika",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/mudiyettu-ritual-theatre-and-dance-drama-of-kerala-00345"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-148",
+  "s": "trad:ramman",
+  "p": "DOCUMENTED_BY",
+  "o": "inst:unesco",
+  "qualifiers": {
+   "note": "inscribed on the Representative List of the Intangible Cultural Heritage of Humanity, 2009 (4.COM)"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/ramman-religious-festival-and-ritual-theatre-of-the-garhwal-himalayas-india-00281"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-149",
+  "s": "deity:bhumiyal-devta",
+  "p": "CENTRAL_TO",
+  "o": "trad:ramman",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/ramman-religious-festival-and-ritual-theatre-of-the-garhwal-himalayas-india-00281"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-150",
+  "s": "trad:ramman",
+  "p": "ASSOCIATED_WITH",
+  "o": "char:rama",
+  "qualifiers": {
+   "note": "recitation of a version of the epic of Rāma"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/ramman-religious-festival-and-ritual-theatre-of-the-garhwal-himalayas-india-00281"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-151",
+  "s": "trad:ramman",
+  "p": "ASSOCIATED_WITH",
+  "o": "deity:narasimha",
+  "qualifiers": {
+   "note": "the Narasiṃha mask, worn only by the Bhaṇḍārīs"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/ramman-religious-festival-and-ritual-theatre-of-the-garhwal-himalayas-india-00281"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-152",
+  "s": "trad:chhau",
+  "p": "DOCUMENTED_BY",
+  "o": "inst:unesco",
+  "qualifiers": {
+   "note": "inscribed on the Representative List of the Intangible Cultural Heritage of Humanity, 2010 (5.COM)"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/chhau-dance-00337"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-153",
+  "s": "trad:chhau",
+  "p": "ASSOCIATED_WITH",
+  "o": "text:mahabharata",
+  "qualifiers": {
+   "note": "enacts epic episodes"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/chhau-dance-00337"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-154",
+  "s": "trad:chhau",
+  "p": "ASSOCIATED_WITH",
+  "o": "text:valmiki-ramayana",
+  "qualifiers": {
+   "note": "UNESCO: episodes “from epics including the Mahabharata and Ramayana”; the specific telling followed is not stated"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/chhau-dance-00337"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-155",
+  "s": "trad:sankirtana-manipur",
+  "p": "DOCUMENTED_BY",
+  "o": "inst:unesco",
+  "qualifiers": {
+   "note": "inscribed on the Representative List of the Intangible Cultural Heritage of Humanity, 2013 (8.COM)"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/sankirtana-ritual-singing-drumming-and-dancing-of-manipur-00843"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-156",
+  "s": "char:krishna",
+  "p": "CENTRAL_TO",
+  "o": "trad:sankirtana-manipur",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/sankirtana-ritual-singing-drumming-and-dancing-of-manipur-00843"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-157",
+  "s": "trad:sankirtana-manipur",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:gaudiya",
+  "qualifiers": {
+   "note": "Manipuri Vaiṣṇavism took a Gauḍīya form from the 18th century"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Manipuri_Sankirtana"
+   },
+   {
+    "source": "src:de-1961"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-158",
+  "s": "trad:vedic-chanting",
+  "p": "DOCUMENTED_BY",
+  "o": "inst:unesco",
+  "qualifiers": {
+   "note": "inscribed on the Representative List of the Intangible Cultural Heritage of Humanity, 2008 (3.COM); proclaimed a Masterpiece in 2003"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/tradition-of-vedic-chanting-00062"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-159",
+  "s": "trad:vedic-chanting",
+  "p": "ASSOCIATED_WITH",
+  "o": "text:rigveda",
+  "qualifiers": {
+   "note": "transmitted orally in the chanting traditions"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/tradition-of-vedic-chanting-00062"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-160",
+  "s": "trad:vedic-chanting",
+  "p": "ASSOCIATED_WITH",
+  "o": "text:samaveda",
+  "qualifiers": {
+   "note": "transmitted orally in the chanting traditions"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/tradition-of-vedic-chanting-00062"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-161",
+  "s": "trad:vedic-chanting",
+  "p": "ASSOCIATED_WITH",
+  "o": "text:yajurveda",
+  "qualifiers": {
+   "note": "transmitted orally in the chanting traditions"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/tradition-of-vedic-chanting-00062"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-162",
+  "s": "trad:vedic-chanting",
+  "p": "ASSOCIATED_WITH",
+  "o": "text:atharvaveda",
+  "qualifiers": {
+   "note": "transmitted orally in the chanting traditions"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/tradition-of-vedic-chanting-00062"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-163",
+  "s": "trad:sbek-thom",
+  "p": "DOCUMENTED_BY",
+  "o": "inst:unesco",
+  "qualifiers": {
+   "note": "inscribed on the Representative List of the Intangible Cultural Heritage of Humanity, 2008 (3.COM); proclaimed a Masterpiece in 2005"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/sbek-thom-khmer-shadow-theatre-00108"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-164",
+  "s": "trad:sbek-thom",
+  "p": "ASSOCIATED_WITH",
+  "o": "text:reamker",
+  "qualifiers": {
+   "note": "“Inspired from the Reamker, the Khmer version of the Ramayana”"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/sbek-thom-khmer-shadow-theatre-00108"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-165",
+  "s": "trad:lkhon-khol-wat-svay-andet",
+  "p": "DOCUMENTED_BY",
+  "o": "inst:unesco",
+  "qualifiers": {
+   "note": "List of Intangible Cultural Heritage in Need of Urgent Safeguarding, 2018 (13.COM)"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/USL/lkhon-khol-wat-svay-andet-01374"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-166",
+  "s": "trad:lkhon-khol-wat-svay-andet",
+  "p": "ASSOCIATED_WITH",
+  "o": "text:reamker",
+  "qualifiers": {
+   "note": "Lkhon khol stages episodes of the Reamker"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Lkhon_Khol"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-167",
+  "s": "trad:balinese-dance",
+  "p": "DOCUMENTED_BY",
+  "o": "inst:unesco",
+  "qualifiers": {
+   "note": "inscribed on the Representative List of the Intangible Cultural Heritage of Humanity, 2015 (10.COM)"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/three-genres-of-traditional-dance-in-bali-00617"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-168",
+  "s": "trad:geet-gawai",
+  "p": "DOCUMENTED_BY",
+  "o": "inst:unesco",
+  "qualifiers": {
+   "note": "inscribed on the Representative List of the Intangible Cultural Heritage of Humanity, 2016 (11.COM)"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/bhojpuri-folk-songs-in-mauritius-geet-gawai-01178"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-169",
+  "s": "trad:geet-gawai",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:mauritian-hinduism",
+  "qualifiers": {
+   "note": "a practice of Bhojpuri-speaking Hindu Mauritians"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/bhojpuri-folk-songs-in-mauritius-geet-gawai-01178"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ }
+]

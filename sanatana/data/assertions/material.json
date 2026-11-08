@@ -81,12 +81,19 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Heliodorus_pillar"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, ch. I, no. 2, pp. 88–89 (Besnagar Garuḍa pillar inscription; Lüders List no. 669)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan, OCR read)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Sircar gives the findspot as Besnagar, Bhilsa district."
  },
  {
   "id": "material:5",
@@ -105,12 +112,19 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Antialcidas"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, ch. I, no. 2, pp. 88–89 (Besnagar Garuḍa pillar inscription; Lüders List no. 669)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan, OCR read)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
    }
   ],
-  "confidence": "medium",
-  "status": "reference-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Text and Sanskritised version name mahārāja Aṃtalikita (Antialkidas)."
  },
  {
   "id": "material:6",
@@ -125,12 +139,19 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Heliodorus_pillar"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, ch. I, no. 2, pp. 88–89 (Besnagar Garuḍa pillar inscription; Lüders List no. 669)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan, OCR read)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
    }
   ],
-  "confidence": "medium",
-  "status": "reference-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Names Kāsīputra Bhāgabhadra, regnal year 14."
  },
  {
   "id": "material:7",
@@ -208,12 +229,19 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Heliodorus_pillar"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, ch. I, no. 2, pp. 88–89 (Besnagar Garuḍa pillar inscription; Lüders List no. 669)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan, OCR read)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Sircar's bibliography cites D. R. Bhandarkar, JBBRAS XXII, p. 104."
  },
  {
   "id": "material:11",
@@ -252,12 +280,19 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Heliodorus_pillar"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, ch. I, no. 2, pp. 88–89 (Besnagar Garuḍa pillar inscription; Lüders List no. 669)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan, OCR read)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
    }
   ],
-  "confidence": "medium",
-  "status": "reference-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Heliodorus is a yona-dūta who came from Antialkidas."
  },
  {
   "id": "material:13",
@@ -269,12 +304,19 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Heliodorus_pillar"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, ch. I, no. 2, pp. 88–89 (Besnagar Garuḍa pillar inscription; Lüders List no. 669)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan, OCR read)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Greek envoy (yona-dūta) of an Indo-Greek king; son of Dion, of Takṣaśilā."
  },
  {
   "id": "material:14",
@@ -524,12 +566,19 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Hathibada_Ghosundi_Inscriptions"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, ch. I, no. 3, pp. 90–91 (Ghosuṇḍī stone inscription; Lüders List no. 6)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan, OCR read)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
    }
   ],
-  "confidence": "medium",
-  "status": "reference-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: The king is called bhāgavata in line 1."
  },
  {
   "id": "material:26",
@@ -544,12 +593,19 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Hathibada_Ghosundi_Inscriptions"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, ch. I, no. 3, pp. 90–91 (Ghosuṇḍī stone inscription; Lüders List no. 6)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan, OCR read)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
    }
   ],
-  "confidence": "medium",
-  "status": "reference-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: aśvamedha-yājin in line 2 (restored from the Hāthībāḍā copy)."
  },
  {
   "id": "material:27",
@@ -581,12 +637,19 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Hathibada_Ghosundi_Inscriptions"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, ch. I, no. 3, pp. 90–91 (Ghosuṇḍī stone inscription; Lüders List no. 6)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan, OCR read)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Ghosuṇḍī near Nagari; the enclosure is identified with the Hāthībāḍā at Nagari."
  },
  {
   "id": "material:29",
@@ -645,12 +708,19 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Hathibada_Ghosundi_Inscriptions"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, ch. I, no. 3, pp. 90–91 (Ghosuṇḍī stone inscription; Lüders List no. 6)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan, OCR read)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Sarvatāta, bhāgavata, builds the enclosure for Saṅkarṣaṇa-Vāsudeva."
  },
  {
   "id": "material:32",
@@ -711,12 +781,19 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Naneghat"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, no. 82, pp. 192–197 (Nāṇeghāṭ cave inscription; Lüders List no. 1112)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan, OCR read)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
    }
   ],
-  "confidence": "medium",
-  "status": "reference-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Sanskritised text: dharmāya namaḥ, indrāya namaḥ."
  },
  {
   "id": "material:35",
@@ -731,12 +808,19 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Naneghat"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, no. 82, pp. 192–197 (Nāṇeghāṭ cave inscription; Lüders List no. 1112)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan, OCR read)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Sircar's note: Dharma and Indra are named separately from the Lokapālas Yama and Vāsava."
  },
  {
   "id": "material:36",
@@ -771,12 +855,19 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Naneghat"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, no. 82, pp. 192–197 (Nāṇeghāṭ cave inscription; Lüders List no. 1112)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan, OCR read)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
    }
   ],
-  "confidence": "medium",
-  "status": "reference-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Opening invocation dharmāya namaḥ."
  },
  {
   "id": "material:38",
@@ -791,12 +882,19 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Naneghat"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, no. 82, pp. 192–197 (Nāṇeghāṭ cave inscription; Lüders List no. 1112)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan, OCR read)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Sircar's note on the number of sacrifices and fees."
  },
  {
   "id": "material:39",
@@ -808,12 +906,19 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Naneghat"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, no. 82, pp. 192–197 (Nāṇeghāṭ cave inscription; Lüders List no. 1112)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan, OCR read)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Sircar: the sacrifices show the influence of the Vedic karmakāṇḍa at the Sātavāhana court."
  },
  {
   "id": "material:40",
@@ -845,12 +950,19 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Naneghat"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, no. 82, pp. 192–197 (Nāṇeghāṭ cave inscription; Lüders List no. 1112)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan, OCR read)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Sircar locates it in the cave at the Nāṇeghāṭ pass."
  },
  {
   "id": "material:42",
@@ -865,12 +977,19 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Naneghat"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, no. 82, pp. 192–197 (Nāṇeghāṭ cave inscription; Lüders List no. 1112)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan, OCR read)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Sircar cites G. Bühler, Arch. Surv. West. Ind. V, pp. 60f., 86f."
  },
  {
   "id": "material:43",
@@ -928,12 +1047,19 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Mora_Well_Inscription"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, no. 26A, p. 122 (Mora well inscription of the time of Śoḍāsa)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan, OCR read)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
    }
   ],
-  "confidence": "medium",
-  "status": "reference-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Text names mahākṣatrapa Rājuvula and his son Śoḍāsa (line 1)."
  },
  {
   "id": "material:46",
@@ -945,12 +1071,19 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Mora_Well_Inscription"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, no. 26A, p. 122 (Mora well inscription of the time of Śoḍāsa)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan, OCR read)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: \"From a well at Mora, 7 miles from Mathura\"."
  },
  {
   "id": "material:47",
@@ -965,12 +1098,19 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Mora_Well_Inscription"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, no. 26A, p. 122 (Mora well inscription of the time of Śoḍāsa)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan, OCR read)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Sircar cites Vogel's Catalogue of the Mathurā museum, p. 184, no. Q.1 (catalogued there by 1910; present display not checked)."
  },
  {
   "id": "material:48",
@@ -1111,12 +1251,19 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Mora_Well_Inscription"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, no. 26A, p. 122 (Mora well inscription of the time of Śoḍāsa)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan, OCR read)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Mora is 7 miles (c. 11 km) from Mathurā."
  },
  {
   "id": "material:55",
@@ -1174,12 +1321,19 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Vasu_Doorjamb_Inscription"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, no. 26B, p. 123 (Mathurā stone inscription of the time of Śoḍāsa)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan, OCR read)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Sircar titles it an inscription of the time of Śoḍāsa (Chanda, Mem. ASI 5; Lüders, EI XXIV, p. 208)."
  },
  {
   "id": "material:58",
@@ -1194,12 +1348,19 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Vasu_Doorjamb_Inscription"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, no. 26B, p. 123 (Mathurā stone inscription of the time of Śoḍāsa)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan, OCR read)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Findspot given as Mathurā."
  },
  {
   "id": "material:59",
@@ -3370,12 +3531,22 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Udayagiri_Caves"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Udayagiri Cave 8 inscription, vv. 1–5",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00014"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 6"
    }
   ],
-  "confidence": "medium",
-  "status": "reference-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Vīrasena (Śāba) holds hereditary office in peace and war and came with the king (vv. 3–5); the king is named Candragupta in v. 1."
  },
  {
   "id": "material:164",
@@ -3390,12 +3561,22 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Udayagiri_Caves"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Udayagiri Cave 8 inscription, vv. 1–5",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00014"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 6"
    }
   ],
-  "confidence": "medium",
-  "status": "reference-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: \"bhaktyā bhagavataḥ śambhor guhām etām akārayat\" (v. 5)."
  },
  {
   "id": "material:165",
@@ -3474,12 +3655,22 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Iron_pillar_of_Delhi"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Mehrauli iron pillar inscription, v. 3 (line 6)",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00015"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 32"
    }
   ],
-  "confidence": "medium",
-  "status": "reference-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: \"viṣṇupade girau bhagavato viṣṇor dhvajaḥ sthāpitaḥ\"."
  },
  {
   "id": "material:169",
@@ -3620,12 +3811,22 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Toramana"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Eran Boar Inscription, lines 1–8",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00099"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 36"
    }
   ],
   "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Edition added; the inscription dates the stone temple to the first year of Toramāṇa. Toramāṇa's Hūṇa identity rests on other evidence, so status unchanged."
  },
  {
   "id": "material:176",
@@ -3644,12 +3845,22 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Eran"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Eran Boar Inscription, lines 1–8",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00099"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 36"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: DHARMA/Siddham edition of the inscription on the Varāha; Cunningham 1880 describes the sculpture."
  },
  {
   "id": "material:177",
@@ -3664,12 +3875,22 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Eran_boar_inscription_of_Toramana"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Eran Boar Inscription, lines 1–8",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00099"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 36"
    }
   ],
-  "confidence": "medium",
-  "status": "reference-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: \"bhagavato varāha-mūrter jagat-parāyaṇasya nārāyaṇasya śilā-prāsādaḥ\" (line 7)."
  },
  {
   "id": "material:178",
@@ -3681,12 +3902,22 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Eran_boar_inscription_of_Toramana"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Eran Boar Inscription, lines 1–8",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00099"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 36"
    }
   ],
-  "confidence": "medium",
-  "status": "reference-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: v. 1 praises the god in boar form (varāha-mūrti) who lifted the earth."
  },
  {
   "id": "material:179",
@@ -3705,12 +3936,22 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Toramana"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Eran Boar Inscription, lines 1–8",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00099"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 36"
    }
   ],
-  "confidence": "medium",
-  "status": "reference-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: \"varṣe prathame … mahārājādhirāja-śrī-toramāṇe praśāsati\" (v. 2)."
  },
  {
   "id": "material:180",
@@ -3722,12 +3963,22 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Eran_boar_inscription_of_Toramana"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Eran Boar Inscription, lines 1–8",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00099"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 36"
    }
   ],
-  "confidence": "medium",
-  "status": "reference-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: The stone temple was caused to be built (kāritaḥ) by Dhanyaviṣṇu in his own district of Airikiṇa (line 7)."
  },
  {
   "id": "material:181",
@@ -3762,12 +4013,18 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Toramana"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Kura inscription of Toramāṇa (related record)",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00101"
    }
   ],
   "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Related record added; Hūṇa affiliation is a scholarly inference, status unchanged."
  },
  {
   "id": "material:183",
@@ -3786,12 +4043,22 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Toramana"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Eran Boar Inscription, lines 1–8",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00099"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 36"
    }
   ],
   "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Edition added. The inscription dates by Toramāṇa's reign but does not call Dhanyaviṣṇu his servant; status unchanged."
  },
  {
   "id": "material:184",
@@ -3806,12 +4073,22 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Eran_boar_inscription_of_Toramana"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Eran Boar Inscription, lines 1–8",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00099"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 36"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Dhanyaviṣṇu builds a temple of Nārāyaṇa in boar form for the merit of his parents."
  },
  {
   "id": "material:185",
@@ -3823,12 +4100,22 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Eran"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Eran Pillar Inscription of the time of Budhagupta, lines 1–9",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00045"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 19"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: DHARMA/Siddham edition of the pillar at Eran."
  },
  {
   "id": "material:186",
@@ -3843,12 +4130,22 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Eran"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Eran Pillar Inscription of the time of Budhagupta, lines 1–9",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00045"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 19"
    }
   ],
-  "confidence": "medium",
-  "status": "reference-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: v. 1 invokes the god with Garuḍa on his banner; the pillar is a dhvaja-stambha of Janārdana (line 9)."
  },
  {
   "id": "material:187",
@@ -3860,12 +4157,22 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Eran"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Eran Pillar Inscription of the time of Budhagupta, lines 1–9",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00045"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 19"
    }
   ],
-  "confidence": "medium",
-  "status": "reference-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: \"śate pañca-ṣaṣṭy-adhike varṣāṇāṃ bhūpatau ca budhagupte\" — year 165 (v. 2)."
  },
  {
   "id": "material:188",
@@ -3873,18 +4180,28 @@
   "p": "COMMISSIONED_BY",
   "o": "person:dhanyavishnu",
   "qualifiers": {
-   "note": "with his brother Mātṛviṣṇu, per Fleet's edition (not confirmed on the page checked)"
+   "note": "with his elder brother, mahārāja Mātṛviṣṇu (lines 7–9 of the edition)"
   },
   "evidenceClass": 3,
   "sources": [
    {
     "source": "src:fleet-1888"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Eran Pillar Inscription of the time of Budhagupta, lines 1–9",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00045"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 19"
    }
   ],
-  "confidence": "medium",
-  "status": "recall",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Raised by mahārāja Mātṛviṣṇu and his younger brother Dhanyaviṣṇu for the merit of their parents (lines 7–9). Confirms the round-1 recall."
  },
  {
   "id": "material:189",
@@ -5208,12 +5525,22 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Gangadhar_Stone_Inscription_of_Vi%C5%9Bvavarman"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Gangdhar inscription of Mayūrākṣaka",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00076"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 17"
    }
   ],
-  "confidence": "medium",
-  "status": "reference-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: \"mātṝṇāṃ … ḍākinī-saṃprakīrṇaṃ veśmātyugraṃ nṛpati-sacivo ’kārayat\" (v. 23)."
  },
  {
   "id": "material:252",
@@ -5225,12 +5552,22 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Gangadhar_Stone_Inscription_of_Vi%C5%9Bvavarman"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Gangdhar inscription of Mayūrākṣaka",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00076"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 17"
    }
   ],
-  "confidence": "medium",
-  "status": "reference-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: King Viśvavarman praised in vv. 5–6."
  },
  {
   "id": "material:253",
@@ -5266,12 +5603,22 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Gangadhar_Stone_Inscription_of_Vi%C5%9Bvavarman"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Gangdhar inscription of Mayūrākṣaka",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00076"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 17"
    }
   ],
   "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Edition added; the builder is Mayūrākṣaka, a royal minister (nṛpati-saciva). The edge to the polity is an inference; status unchanged."
  },
  {
   "id": "material:255",
@@ -5806,12 +6153,23 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Mangalesha"
+   },
+   {
+    "source": "src:kielhorn-ei6",
+    "locator": "EI VI, pp. 1–12, vv. 2, 9–11",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSBadamiCalukya00005"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Kielhorn's translation, vv. 2, 9–11",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSBadamiCalukya00005"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Maṅgaleśa is of the Calukya family, younger brother of Kīrtivarman."
  },
  {
   "id": "material:282",
@@ -5823,12 +6181,23 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Mangalesha"
+   },
+   {
+    "source": "src:kielhorn-ei6",
+    "locator": "EI VI, pp. 1–12, vv. 2, 9",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSBadamiCalukya00005"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Kielhorn's translation, vv. 2, 9",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSBadamiCalukya00005"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Kīrtivarman is son of Pulakeśin I in the Calukya line."
  },
  {
   "id": "material:283",
@@ -5840,12 +6209,23 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Aihole_inscription"
+   },
+   {
+    "source": "src:kielhorn-ei6",
+    "locator": "EI VI, pp. 1–12, vv. 2–3, 14–16",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSBadamiCalukya00005"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Kielhorn's translation, vv. 2–3, 14–16",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSBadamiCalukya00005"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Polekeśin/Satyāśraya of the Calukya family."
  },
  {
   "id": "material:284",
@@ -5857,12 +6237,23 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Mangalesha"
+   },
+   {
+    "source": "src:kielhorn-ei6",
+    "locator": "EI VI, pp. 1–12, v. 14",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSBadamiCalukya00005"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Kielhorn's translation, v. 14",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSBadamiCalukya00005"
    }
   ],
-  "confidence": "medium",
-  "status": "reference-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: \"his elder brother's son, named Polekeśin\" — Pulakeśin II is the son of Kīrtivarman, Maṅgaleśa's elder brother."
  },
  {
   "id": "material:285",
@@ -5877,12 +6268,23 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Mangalesha"
+   },
+   {
+    "source": "src:kielhorn-ei6",
+    "locator": "EI VI, pp. 1–12, v. 11",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSBadamiCalukya00005"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Kielhorn's translation, v. 11",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSBadamiCalukya00005"
    }
   ],
-  "confidence": "medium",
-  "status": "reference-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: \"his younger brother Maṅgaleśa became king\"."
  },
  {
   "id": "material:286",
@@ -5901,12 +6303,23 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Aihole_inscription"
+   },
+   {
+    "source": "src:kielhorn-ei6",
+    "locator": "EI VI, pp. 1–12, vv. 14–15",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSBadamiCalukya00005"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Kielhorn's translation, vv. 14–15",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSBadamiCalukya00005"
    }
   ],
-  "confidence": "medium",
-  "status": "reference-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: The uncle was jealous; Maṅgaleśa lost kingdom and life trying to secure it for his own son."
  },
  {
   "id": "material:287",
@@ -6734,12 +7147,23 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Aihole_inscription"
+   },
+   {
+    "source": "src:kielhorn-ei6",
+    "locator": "EI VI, pp. 1–12, vv. 35–36",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSBadamiCalukya00005"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Kielhorn's translation, vv. 35–36",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSBadamiCalukya00005"
    }
   ],
   "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: The text records the building of a stone temple of the Jina by Ravikīrti; its placement on the Meguti wall comes from the site, not the text. Status unchanged."
  },
  {
   "id": "material:330",
@@ -6771,12 +7195,23 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Aihole_inscription"
+   },
+   {
+    "source": "src:kielhorn-ei6",
+    "locator": "EI VI, pp. 1–12, vv. 3, 14–33",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSBadamiCalukya00005"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Kielhorn's translation, vv. 3, 14–33",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSBadamiCalukya00005"
    }
   ],
-  "confidence": "medium",
-  "status": "reference-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Satyāśraya / Polekeśin is the praśasti's subject."
  },
  {
   "id": "material:332",
@@ -6795,12 +7230,23 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Aihole_inscription"
+   },
+   {
+    "source": "src:kielhorn-ei6",
+    "locator": "EI VI, pp. 1–12, vv. 11–15",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSBadamiCalukya00005"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Kielhorn's translation, vv. 11–15",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSBadamiCalukya00005"
    }
   ],
-  "confidence": "medium",
-  "status": "reference-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Maṅgaleśa's reign and fall."
  },
  {
   "id": "material:333",
@@ -6857,12 +7303,23 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Aihole_inscription"
+   },
+   {
+    "source": "src:kielhorn-ei6",
+    "locator": "EI VI, pp. 1–12, vv. 1, 35–37",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSBadamiCalukya00005"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Kielhorn's translation, vv. 1, 35–37",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSBadamiCalukya00005"
    }
   ],
-  "confidence": "medium",
-  "status": "reference-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Opens \"jayati bhagavān jinendro\"; records a stone mansion of Jinendra."
  },
  {
   "id": "material:337",
@@ -6877,12 +7334,18 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Aihole_inscription"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "bibliography: Fleet 1876 (IA 5, pp. 175–177) and 1879 (IA 8, pp. 237–245)",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSBadamiCalukya00005"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: DHARMA bibliography lists Fleet's editions of 1876 and 1879."
  },
  {
   "id": "material:338",
@@ -6940,12 +7403,23 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Aihole_inscription"
+   },
+   {
+    "source": "src:kielhorn-ei6",
+    "locator": "EI VI, pp. 1–12, v. 35",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSBadamiCalukya00005"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Kielhorn's translation, v. 35",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSBadamiCalukya00005"
    }
   ],
-  "confidence": "medium",
-  "status": "reference-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Ravikīrti \"has obtained the highest favour of that Satyāśraya\"."
  },
  {
   "id": "material:341",
@@ -6957,11 +7431,21 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Aihole_inscription"
+   },
+   {
+    "source": "src:kielhorn-ei6",
+    "locator": "EI VI, pp. 1–12, vv. 33–35",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSBadamiCalukya00005"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Kielhorn's translation, vv. 33–35",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSBadamiCalukya00005"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
-  "rationale": "Dated praśasti of 634/635 CE set in its wall.",
+  "status": "verified-online",
+  "rationale": "Dated praśasti of 634/635 CE set in its wall. Round 2: The Jina temple was built in Śaka 556 under Satyāśraya (Pulakeśin II). That this is the Meguti temple is a site identification.",
   "agent": "material",
   "lastVerified": "2026-11-08"
  },
@@ -6975,12 +7459,22 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Changu_Narayan"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Changu Narayana pillar, east shaft, lines 1–6",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham02001"
+   },
+   {
+    "source": "src:gnoli-1956",
+    "locator": "no. 1, pp. 1–4"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: Pillar at Changu Narayan; opens with Saṃvat 386 and a verse to Hari dwelling on the Dolādri."
  },
  {
   "id": "material:343",
@@ -6996,12 +7490,22 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Manadeva"
+   },
+   {
+    "source": "src:dharmalekha",
+    "locator": "Changu Narayana pillar, north shaft, line 3",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham02002"
+   },
+   {
+    "source": "src:gnoli-1956",
+    "locator": "no. 1, pp. 1–4"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "verified-online",
   "agent": "material",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: The text is Mānadeva's eulogy: \"yasyāṃ jāta … śrī-mānadevo nṛpaḥ\" (north shaft) and his campaign (west shaft). Commissioning is inferred from that."
  },
  {
   "id": "material:344",

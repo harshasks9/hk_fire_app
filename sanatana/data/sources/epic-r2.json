@@ -1,0 +1,369 @@
+[
+ {
+  "id": "src:gretil-raghuvamsha",
+  "type": "primary-text",
+  "title": "Kālidāsa: Raghuvaṃśa (electronic text, GRETIL)",
+  "publisher": "GRETIL, SUB Göttingen",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "author": "Kālidāsa",
+  "notes": "Text as in A. Scharpé, Kalidasa Lexicon vol. 1 (Brugge 1964); references Ragh_sarga.verse.",
+  "agent": "epic"
+ },
+ {
+  "id": "src:gretil-kumarasambhava",
+  "type": "primary-text",
+  "title": "Kālidāsa: Kumārasaṃbhava, cantos 1–8 (electronic text, GRETIL)",
+  "publisher": "GRETIL, SUB Göttingen",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-kumArasaMbhava.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "author": "Kālidāsa",
+  "notes": "Data entry Utz Podzeit; references Ks_canto.verse.",
+  "agent": "epic"
+ },
+ {
+  "id": "src:gretil-meghaduta",
+  "type": "primary-text",
+  "title": "Kālidāsa: Meghadūta (electronic text, GRETIL)",
+  "publisher": "GRETIL, SUB Göttingen",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-meghadUta.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "author": "Kālidāsa",
+  "notes": "Data entry Asko Parpola, after S. K. De (ed.), rev. V. Raghavan, New Delhi: Sahitya Akademi 1970; verses numbered continuously (KMgD_1–111).",
+  "agent": "epic"
+ },
+ {
+  "id": "src:gretil-abhijnanashakuntala",
+  "type": "primary-text",
+  "title": "Kālidāsa: Abhijñānaśakuntala (electronic text, GRETIL)",
+  "publisher": "GRETIL, SUB Göttingen",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-abhijJAnazakuntala.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "author": "Kālidāsa",
+  "notes": "Data entry Muneo Tokunaga, after M. R. Kale (ed.), Bombay 1898 (9th ed. 1961); references KSak_act.verse, prose as act.verse+letter.",
+  "agent": "epic"
+ },
+ {
+  "id": "src:gretil-kiratarjuniya",
+  "type": "primary-text",
+  "title": "Bhāravi: Kirātārjunīya (electronic text, GRETIL)",
+  "publisher": "GRETIL, SUB Göttingen",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAravi-kirAtArjunIya.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "author": "Bhāravi",
+  "notes": "Data entry Harunaga Isaacson; the text commented on by Mallinātha; references BhKir_canto.verse.",
+  "agent": "epic"
+ },
+ {
+  "id": "src:gretil-bhattikavya",
+  "type": "primary-text",
+  "title": "Bhaṭṭi: Rāvaṇavadha (Bhaṭṭikāvya) (electronic text, GRETIL)",
+  "publisher": "GRETIL, SUB Göttingen",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhaTTi-rAvaNavadha.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "author": "Bhaṭṭi",
+  "notes": "References Bhk_canto.verse.",
+  "agent": "epic"
+ },
+ {
+  "id": "src:gretil-shishupalavadha",
+  "type": "primary-text",
+  "title": "Māgha: Śiśupālavadha (electronic text, GRETIL)",
+  "publisher": "GRETIL, SUB Göttingen",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mAgha-zizupAlavadha.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "author": "Māgha",
+  "notes": "Data entry Sansknet Project; references mspv_canto.verse.",
+  "agent": "epic"
+ },
+ {
+  "id": "src:gretil-bharatamanjari",
+  "type": "primary-text",
+  "title": "Kṣemendra: Bhāratamañjarī, parvans 6–19 (electronic text, GRETIL)",
+  "publisher": "GRETIL, SUB Göttingen",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kSemendra-bhAratamaJjarI-6-19.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "author": "Kṣemendra",
+  "notes": "Data entry Sansknet Project; covers Bhīṣmaparvan to the Harivaṃśa section only; references bhmj_parvan.verse.",
+  "agent": "epic"
+ },
+ {
+  "id": "src:gretil-venisamhara",
+  "type": "primary-text",
+  "title": "Bhaṭṭa Nārāyaṇa: Veṇīsaṃhāra (electronic text, GRETIL)",
+  "publisher": "GRETIL, SUB Göttingen",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhaTTanArAyaNa-veNIsaMhAra.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "author": "Bhaṭṭa Nārāyaṇa",
+  "notes": "Data entry Yves Codet, after J. Grill (ed.), Leipzig 1871, and later editions; verses numbered act.verse.",
+  "agent": "epic"
+ },
+ {
+  "id": "src:gretil-dutavakya",
+  "type": "primary-text",
+  "title": "Bhāsa (attrib.): Dūtavākya (electronic text, GRETIL)",
+  "publisher": "GRETIL, SUB Göttingen",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAsa-dUtavAkya.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "author": "Bhāsa (attributed)",
+  "notes": "Data entry Yves Codet, after C. R. Devadhar (Delhi 1962) and T. K. Ramachandra Iyer (Palghat 1981).",
+  "agent": "epic"
+ },
+ {
+  "id": "src:gretil-svapnavasavadatta",
+  "type": "primary-text",
+  "title": "Bhāsa (attrib.): Svapnavāsavadatta (electronic text, GRETIL)",
+  "publisher": "GRETIL, SUB Göttingen",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAsa-svapnavAsavadatta.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "author": "Bhāsa (attributed)",
+  "notes": "Data entry Matthias Ahlborn (Bhāsa Project Würzburg).",
+  "agent": "epic"
+ },
+ {
+  "id": "src:gretil-harshacarita",
+  "type": "primary-text",
+  "title": "Bāṇa: Harṣacarita (electronic text, GRETIL)",
+  "publisher": "GRETIL, SUB Göttingen",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bANa-harSacarita.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "author": "Bāṇabhaṭṭa",
+  "notes": "Data entry Jens Thomas and Willem Bollée, after K. P. Parab (ed.), 7th ed., Bombay: Nirnaya-Sagar Press 1946; introductory verses numbered 1.1–1.21.",
+  "agent": "epic"
+ },
+ {
+  "id": "src:gretil-vamana-kavyalankarasutra",
+  "type": "primary-text",
+  "title": "Vāmana: Kāvyālaṃkārasūtra with vṛtti (electronic text, GRETIL)",
+  "publisher": "GRETIL, SUB Göttingen",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_vAmana-kAvyAlaMkArasUtra.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "author": "Vāmana",
+  "notes": "Data entry Masahiro Takano; the e-text tags quoted verses with their source (e.g. uttararāmacarita_1.39, kumārasaṃbhava_1.1).",
+  "agent": "epic"
+ },
+ {
+  "id": "src:bhasa-project-wuerzburg",
+  "type": "primary-text",
+  "title": "Bhāsa Projekt Würzburg: e-texts of the Trivandrum plays with Sanskrit and Prakrit indices",
+  "author": "Matthias Ahlborn",
+  "year": "2004–2007",
+  "publisher": "Lehrstuhl für Indologie, Universität Würzburg",
+  "url": "https://www.bhasa.indologie.uni-wuerzburg.de/",
+  "urlChecked": true,
+  "notes": "Act files (e.g. UBh.html, PN_3.html); locators give the e-text’s verse numbers and prose segment numbers (e.g. “seg. 52.5”). Tags such as [TRV…] cite Trivandrum manuscripts. The home page also lists Kūṭiyāṭṭam performance images of Abhiṣekanāṭaka, Bālacarita, Dūtaghaṭotkaca and Dūtavākya.",
+  "agent": "epic"
+ },
+ {
+  "id": "src:ganapati-sastri-1912",
+  "type": "primary-text",
+  "title": "Editio princeps of the thirteen “Bhāsa” plays (Trivandrum Sanskrit Series)",
+  "author": "T. Gaṇapati Śāstrī (ed.)",
+  "year": "1912–1915",
+  "publisher": "Trivandrum: Travancore Government",
+  "notes": "Gaṇapati Śāstrī published the plays from Kerala manuscripts and attributed them to Bhāsa; individual volume numbers not checked.",
+  "agent": "epic"
+ },
+ {
+  "id": "src:keith-1924",
+  "type": "scholarly-book",
+  "title": "The Sanskrit Drama in its Origin, Development, Theory and Practice",
+  "author": "A. Berriedale Keith",
+  "year": "1924",
+  "publisher": "Oxford: Clarendon Press",
+  "agent": "epic"
+ },
+ {
+  "id": "src:keith-1928",
+  "type": "scholarly-book",
+  "title": "A History of Sanskrit Literature",
+  "author": "A. Berriedale Keith",
+  "year": "1928",
+  "publisher": "Oxford: Clarendon Press",
+  "agent": "epic"
+ },
+ {
+  "id": "src:warder-ikl",
+  "type": "scholarly-book",
+  "title": "Indian Kāvya Literature (8 vols.)",
+  "author": "A. K. Warder",
+  "year": "1972–2011",
+  "publisher": "Delhi: Motilal Banarsidass",
+  "agent": "epic"
+ },
+ {
+  "id": "src:de-dasgupta-1947",
+  "type": "scholarly-book",
+  "title": "A History of Sanskrit Literature: Classical Period, vol. 1",
+  "author": "S. N. Dasgupta and S. K. De",
+  "year": "1947",
+  "publisher": "Calcutta: University of Calcutta",
+  "agent": "epic"
+ },
+ {
+  "id": "src:lienhard-1984",
+  "type": "scholarly-book",
+  "title": "A History of Classical Poetry: Sanskrit – Pali – Prakrit (A History of Indian Literature III.1)",
+  "author": "Siegfried Lienhard",
+  "year": "1984",
+  "publisher": "Wiesbaden: Otto Harrassowitz",
+  "agent": "epic"
+ },
+ {
+  "id": "src:tieken-1993",
+  "type": "journal-article",
+  "title": "The So-called Trivandrum Plays Attributed to Bhāsa",
+  "author": "Herman Tieken",
+  "year": "1993",
+  "publisher": "Wiener Zeitschrift für die Kunde Südasiens 37: 5–44",
+  "agent": "epic"
+ },
+ {
+  "id": "src:pusalker-1940",
+  "type": "scholarly-book",
+  "title": "Bhāsa — A Study",
+  "author": "A. D. Pusalker",
+  "year": "1940",
+  "publisher": "Lahore: Mehar Chand Lachhman Das",
+  "agent": "epic"
+ },
+ {
+  "id": "src:haksar-1993",
+  "type": "translation",
+  "title": "The Shattered Thigh and Other Mahābhārata Plays of Bhāsa",
+  "author": "A. N. D. Haksar (trans.)",
+  "year": "1993",
+  "publisher": "New Delhi: Penguin Books India",
+  "agent": "epic"
+ },
+ {
+  "id": "src:pollock-2007-uttararamacarita",
+  "type": "translation",
+  "title": "Rāma’s Last Act by Bhavabhūti (Clay Sanskrit Library)",
+  "author": "Sheldon Pollock (trans.)",
+  "year": "2007",
+  "publisher": "New York: New York University Press & JJC Foundation",
+  "agent": "epic"
+ },
+ {
+  "id": "src:vasudeva-2006-shakuntala",
+  "type": "translation",
+  "title": "The Recognition of Shakúntala by Kālidāsa (Clay Sanskrit Library)",
+  "author": "Somadeva Vasudeva (trans.)",
+  "year": "2006",
+  "publisher": "New York: New York University Press & JJC Foundation",
+  "agent": "epic"
+ },
+ {
+  "id": "src:torzsok-2006",
+  "type": "translation",
+  "title": "Rama Beyond Price by Murāri (Clay Sanskrit Library)",
+  "author": "Judit Törzsök (trans.)",
+  "year": "2006",
+  "publisher": "New York: New York University Press & JJC Foundation",
+  "agent": "epic"
+ },
+ {
+  "id": "src:handiqui-1956",
+  "type": "translation",
+  "title": "Naiṣadhacarita of Śrīharṣa, translated with critical notes",
+  "author": "K. K. Handiqui",
+  "year": "1956",
+  "publisher": "Poona: Deccan College (first ed. Lahore 1934)",
+  "agent": "epic"
+ },
+ {
+  "id": "src:peterson-2003",
+  "type": "scholarly-book",
+  "title": "Design and Rhetoric in a Sanskrit Court Epic: The Kirātārjunīya of Bhāravi",
+  "author": "Indira Viswanathan Peterson",
+  "year": "2003",
+  "publisher": "Albany: State University of New York Press",
+  "agent": "epic"
+ },
+ {
+  "id": "src:fallon-2009",
+  "type": "translation",
+  "title": "Bhatti’s Poem: The Death of Rávana (Clay Sanskrit Library)",
+  "author": "Oliver Fallon (trans.)",
+  "year": "2009",
+  "publisher": "New York: New York University Press & JJC Foundation",
+  "agent": "epic"
+ },
+ {
+  "id": "src:smith-2005-kumarasambhava",
+  "type": "translation",
+  "title": "The Birth of Kumára by Kālidāsa (Clay Sanskrit Library)",
+  "author": "David Smith (trans.)",
+  "year": "2005",
+  "publisher": "New York: New York University Press & JJC Foundation",
+  "agent": "epic"
+ },
+ {
+  "id": "src:mallinson-2006",
+  "type": "translation",
+  "title": "Messenger Poems by Kālidāsa, Dhoyī and Rūpa Gosvāmin (Clay Sanskrit Library)",
+  "author": "James Mallinson (trans.)",
+  "year": "2006",
+  "publisher": "New York: New York University Press & JJC Foundation",
+  "agent": "epic"
+ },
+ {
+  "id": "src:stein-1900",
+  "type": "translation",
+  "title": "Kalhaṇa’s Rājataraṅgiṇī: A Chronicle of the Kings of Kaśmīr (2 vols.)",
+  "author": "M. A. Stein (trans.)",
+  "year": "1900",
+  "publisher": "Westminster: Archibald Constable",
+  "agent": "epic"
+ },
+ {
+  "id": "src:slaje-1994",
+  "type": "scholarly-book",
+  "title": "Vom Mokṣopāya-Śāstra zum Yogavāsiṣṭha-Mahārāmāyaṇa",
+  "author": "Walter Slaje",
+  "year": "1994",
+  "publisher": "Wien: Verlag der Österreichischen Akademie der Wissenschaften",
+  "agent": "epic"
+ },
+ {
+  "id": "src:raghavan-1961",
+  "type": "scholarly-book",
+  "title": "Some Old Lost Rāma Plays",
+  "author": "V. Raghavan",
+  "year": "1961",
+  "publisher": "Annamalainagar: Annamalai University",
+  "agent": "epic"
+ },
+ {
+  "id": "src:zvelebil-1974",
+  "type": "scholarly-book",
+  "title": "Tamil Literature (A History of Indian Literature X.1)",
+  "author": "Kamil V. Zvelebil",
+  "year": "1974",
+  "publisher": "Wiesbaden: Otto Harrassowitz",
+  "agent": "epic"
+ },
+ {
+  "id": "src:sen-1960",
+  "type": "scholarly-book",
+  "title": "History of Bengali Literature",
+  "author": "Sukumar Sen",
+  "year": "1960",
+  "publisher": "New Delhi: Sahitya Akademi",
+  "agent": "epic"
+ }
+]

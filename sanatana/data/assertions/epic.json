@@ -7817,16 +7817,17 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE), passim (verse-level locator withdrawn)",
+    "locator": "VR (CE) 1.1.8",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "quote": "ikṣvākuvaṃśaprabhavo rāmo nāma janaiḥ śrutaḥ",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "Locator restored in round 2: the cited verse(s) name this person as a member of the lineage or group (quoted), checked against the GRETIL e-text of the critical edition."
  },
  {
   "id": "epic:336",
@@ -7841,16 +7842,24 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE), passim (verse-level locator withdrawn)",
+    "locator": "VR (CE) 1.69.30–31",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "quote": "tasmād daśarathāj jātau bhrātarau rāmalakṣmaṇau",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
+   },
+   {
+    "source": "src:gretil-vr-ce",
+    "locator": "VR (CE) 3.66.10",
+    "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "quote": "ayam ikṣvākudāyādo rāmo nāma janaiḥ śrutaḥ / asyaivāvarajaṃ viddhi bhrātaraṃ māṃ ca lakṣmaṇam",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "Locator restored in round 2: the cited verse(s) name this person as a member of the lineage or group (quoted), checked against the GRETIL e-text of the critical edition."
  },
  {
   "id": "epic:337",
@@ -7865,16 +7874,24 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE), passim (verse-level locator withdrawn)",
+    "locator": "VR (CE) 1.71.6–8",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "quote": "bharatasya kumārasya śatrughnasya ca dhīmataḥ",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
+   },
+   {
+    "source": "src:gretil-vr-ce",
+    "locator": "VR (CE) 1.71.8",
+    "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "quote": "ikṣvākukulam avyagraṃ",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "Locator restored in round 2: the cited verse(s) name this person as a member of the lineage or group (quoted), checked against the GRETIL e-text of the critical edition."
  },
  {
   "id": "epic:338",
@@ -7889,16 +7906,24 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE), passim (verse-level locator withdrawn)",
+    "locator": "VR (CE) 1.71.6–8",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "quote": "bharatasya kumārasya śatrughnasya ca dhīmataḥ",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
+   },
+   {
+    "source": "src:gretil-vr-ce",
+    "locator": "VR (CE) 1.71.7",
+    "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "quote": "putrā daśarathasyeme",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "Locator restored in round 2: the cited verse(s) name this person as a member of the lineage or group (quoted), checked against the GRETIL e-text of the critical edition."
  },
  {
   "id": "epic:339",
@@ -7913,16 +7938,24 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE), passim (verse-level locator withdrawn)",
+    "locator": "VR (CE) 4.61.4",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "quote": "rājā daśaratho nāma kaś cid ikṣvākunandanaḥ",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
+   },
+   {
+    "source": "src:gretil-vr-ce",
+    "locator": "VR (CE) 1.69.30",
+    "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "quote": "ajād daśaratho 'bhavat",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "Locator restored in round 2: the cited verse(s) name this person as a member of the lineage or group (quoted), checked against the GRETIL e-text of the critical edition."
  },
  {
   "id": "epic:340",
@@ -7937,16 +7970,24 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE), passim (verse-level locator withdrawn)",
+    "locator": "VR (CE) 7.88.4",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "quote": "jānāmi cemau putrau me yamajātau kuśīlavau",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
+   },
+   {
+    "source": "src:gretil-vr-ce",
+    "locator": "VR (CE) 7.97.17",
+    "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "quote": "kosaleṣu kuśaṃ vīram uttareṣu tathā lavam",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "VR (CE) 7.88.4 has Rāma acknowledge Kuśa and Lava as his twin sons, and 7.97.17 installs them over Kosala and northern Kosala. No single verse applies an Ikṣvāku epithet to them, so membership rests on their being named Rāma’s sons and successors (Rāma is ikṣvākuvaṃśaprabhava, 1.1.8)."
  },
  {
   "id": "epic:341",
@@ -7961,16 +8002,24 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE), passim (verse-level locator withdrawn)",
+    "locator": "VR (CE) 7.88.4",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "quote": "jānāmi cemau putrau me yamajātau kuśīlavau",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
+   },
+   {
+    "source": "src:gretil-vr-ce",
+    "locator": "VR (CE) 7.97.17",
+    "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "quote": "kosaleṣu kuśaṃ vīram uttareṣu tathā lavam",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "VR (CE) 7.88.4 has Rāma acknowledge Kuśa and Lava as his twin sons, and 7.97.17 installs Kuśa over Kosala. No single verse applies an Ikṣvāku epithet to them, so membership rests on their being named Rāma’s sons and successors (Rāma is ikṣvākuvaṃśaprabhava, 1.1.8)."
  },
  {
   "id": "epic:342",
@@ -7978,28 +8027,31 @@
   "p": "MEMBER_OF",
   "o": "lin:paulastya",
   "qualifiers": {
-   "text": "text:valmiki-ramayana"
+   "text": "text:valmiki-ramayana",
+   "note": "VR (CE) and MBh (CE) 3.258–259 agree on Paulastya membership but differ on parentage details (see cmp:paulastya-genealogy)."
   },
   "evidenceClass": 1,
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE), passim (verse-level locator withdrawn)",
+    "locator": "VR (CE) 1.19.15",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "quote": "paulastyavaṃśaprabhavo rāvaṇo nāma rākṣasaḥ",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 3.259.7",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "kumbhakarṇadaśagrīvau",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "Locator restored in round 2: the cited verse(s) name this person as a member of the lineage or group (quoted), checked against the GRETIL e-text of the critical edition."
  },
  {
   "id": "epic:343",
@@ -8007,28 +8059,31 @@
   "p": "MEMBER_OF",
   "o": "lin:paulastya",
   "qualifiers": {
-   "text": "text:valmiki-ramayana"
+   "text": "text:valmiki-ramayana",
+   "note": "VR (CE) and MBh (CE) 3.258–259 agree on Paulastya membership but differ on parentage details (see cmp:paulastya-genealogy)."
   },
   "evidenceClass": 1,
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE), passim (verse-level locator withdrawn)",
+    "locator": "VR (CE) 7.9.26 (with 7.9.8)",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "quote": "tasya tv anantaraṃ jātaḥ kumbhakarṇo mahābalaḥ",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 3.259.7",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "kumbhakarṇadaśagrīvau",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "VR (CE) 7.9.26 names Kumbhakarṇa as the second son born to Kaikasī by Viśravas, whom 7.9.8 calls paulastya; MBh 3.259.7 also makes him Viśravas’s son, but by Puṣpotkaṭā."
  },
  {
   "id": "epic:344",
@@ -8036,28 +8091,38 @@
   "p": "MEMBER_OF",
   "o": "lin:paulastya",
   "qualifiers": {
-   "text": "text:valmiki-ramayana"
+   "text": "text:valmiki-ramayana",
+   "note": "VR (CE) and MBh (CE) 3.258–259 agree on Paulastya membership but differ on parentage details (see cmp:paulastya-genealogy)."
   },
   "evidenceClass": 1,
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE), passim (verse-level locator withdrawn)",
+    "locator": "VR (CE) 6.61.15–16",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "quote": "paulastyo vākyam abravīt",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
+   },
+   {
+    "source": "src:gretil-vr-ce",
+    "locator": "VR (CE) 7.9.27",
+    "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "quote": "vibhīṣaṇaś ca dharmātmā kaikasyāḥ paścimaḥ sutaḥ",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 3.259.8",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "mālinī janayām āsa putram ekaṃ vibhīṣaṇam",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "VR (CE) 6.61.15–16 calls Vibhīṣaṇa “paulastya” directly; 7.9.27 names him Kaikasī’s youngest son by Viśravas. MBh 3.259.8 gives his mother as Mālinī."
  },
  {
   "id": "epic:345",
@@ -8065,28 +8130,31 @@
   "p": "MEMBER_OF",
   "o": "lin:paulastya",
   "qualifiers": {
-   "text": "text:valmiki-ramayana"
+   "text": "text:valmiki-ramayana",
+   "note": "VR (CE) and MBh (CE) 3.258–259 agree on Paulastya membership but differ on parentage details (see cmp:paulastya-genealogy)."
   },
   "evidenceClass": 1,
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE), passim (verse-level locator withdrawn)",
+    "locator": "VR (CE) 7.9.27 (with 7.9.8)",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "quote": "tataḥ śūrpaṇakhā nāma saṃjajñe vikṛtānanā",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 3.259.8",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "rākāyāṃ mithunaṃ jajñe kharaḥ śūrpaṇakhā tathā",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "VR (CE) 7.9.27 names Śūrpaṇakhā as Kaikasī’s daughter by Viśravas (paulastya, 7.9.8). MBh 3.259.8 makes her Khara’s twin by Rākā."
  },
  {
   "id": "epic:346",
@@ -8094,28 +8162,31 @@
   "p": "MEMBER_OF",
   "o": "lin:paulastya",
   "qualifiers": {
-   "text": "text:valmiki-ramayana"
+   "text": "text:valmiki-ramayana",
+   "note": "VR (CE) and MBh (CE) 3.258–259 agree on Paulastya membership but differ on parentage details (see cmp:paulastya-genealogy)."
   },
   "evidenceClass": 1,
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE), passim (verse-level locator withdrawn)",
+    "locator": "VR (CE) 7.3.7 (with 7.3.1)",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "quote": "tasmād vaiśravaṇo nāma bhaviṣyaty eṣa viśrutaḥ",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 3.258.12",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "pulastyo nāma tasyāsīn mānaso dayitaḥ sutaḥ tasya vaiśravaṇo nāma gavi putro 'bhavat prabhuḥ",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "VR (CE) 7.3.7 names Vaiśravaṇa (Kubera) as the son of Viśravas, son of Pulastya (7.3.1). MBh 3.258.12 differs: Kubera is Pulastya’s own son and Viśravas is generated from half of Pulastya (3.258.14). Both make him a Paulastya."
  },
  {
   "id": "epic:347",
@@ -8123,28 +8194,31 @@
   "p": "MEMBER_OF",
   "o": "lin:paulastya",
   "qualifiers": {
-   "text": "text:valmiki-ramayana"
+   "text": "text:valmiki-ramayana",
+   "note": "VR (CE) and MBh (CE) 3.258–259 agree on Paulastya membership but differ on parentage details (see cmp:paulastya-genealogy)."
   },
   "evidenceClass": 1,
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE), passim (verse-level locator withdrawn)",
+    "locator": "VR (CE) 6.68.3",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "quote": "indrajit tu mahāvīryaḥ paulastyo devakaṇṭakaḥ",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 3.272.2",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "putram indrajitaṃ śūraṃ rāvaṇaḥ pratyabhāṣata",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "Locator restored in round 2: the cited verse(s) name this person as a member of the lineage or group (quoted), checked against the GRETIL e-text of the critical edition."
  },
  {
   "id": "epic:348",
@@ -8152,28 +8226,38 @@
   "p": "MEMBER_OF",
   "o": "lin:paulastya",
   "qualifiers": {
-   "text": "text:valmiki-ramayana"
+   "text": "text:valmiki-ramayana",
+   "note": "VR (CE) and MBh (CE) 3.258–259 agree on Paulastya membership but differ on parentage details (see cmp:paulastya-genealogy)."
   },
   "evidenceClass": 1,
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE), passim (verse-level locator withdrawn)",
+    "locator": "VR (CE) 7.3.1",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "quote": "atha putraḥ pulastyasya viśravā munipuṃgavaḥ",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
+   },
+   {
+    "source": "src:gretil-vr-ce",
+    "locator": "VR (CE) 7.9.8",
+    "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "quote": "gaccha viśravasaṃ putri paulastyaṃ varaya svayam",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 3.259.1",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "pulastyasya tu yaḥ krodhād ardhadeho 'bhavan muniḥ viśravā nāma",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "Locator restored in round 2: the cited verse(s) name this person as a member of the lineage or group (quoted), checked against the GRETIL e-text of the critical edition."
  },
  {
   "id": "epic:349",
@@ -8187,22 +8271,24 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE), passim (verse-level locator withdrawn)",
+    "locator": "VR (CE) 4.14.5",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "quote": "kiṣkindhāṃ vālinaḥ purīm",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    },
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE), passim (verse-level locator withdrawn)",
+    "locator": "VR (CE) 4.12.38",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "quote": "kiṣkindhāṃ vālipālitām",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "Locator restored in round 2: the cited verse(s) name this person as a member of the lineage or group (quoted), checked against the GRETIL e-text of the critical edition."
  },
  {
   "id": "epic:350",
@@ -8216,22 +8302,24 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE), passim (verse-level locator withdrawn)",
+    "locator": "VR (CE) 4.25.16",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "quote": "sugrīvo vānararṣabhaḥ / praviveśa purīṃ ramyāṃ kiṣkindhāṃ vālipālitām",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    },
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE), passim (verse-level locator withdrawn)",
+    "locator": "VR (CE) 6.111.14",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "quote": "sugrīvasya purī ramyā",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "Locator restored in round 2: the cited verse(s) name this person as a member of the lineage or group (quoted), checked against the GRETIL e-text of the critical edition."
  },
  {
   "id": "epic:351",
@@ -8245,22 +8333,24 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE), passim (verse-level locator withdrawn)",
+    "locator": "VR (CE) 5.32.37",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "quote": "ahaṃ sugrīvasacivo hanūmān nāma vānaraḥ",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    },
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE), passim (verse-level locator withdrawn)",
+    "locator": "VR (CE) 4.6.1",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "quote": "sacivo mantrisattamaḥ / hanumān",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "Locator restored in round 2: the cited verse(s) name this person as a member of the lineage or group (quoted), checked against the GRETIL e-text of the critical edition."
  },
  {
   "id": "epic:352",
@@ -8274,22 +8364,24 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE), passim (verse-level locator withdrawn)",
+    "locator": "VR (CE) 4.19.14",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "quote": "aṅgadaś cābhiṣicyatām / padasthaṃ vālinaḥ putraṃ bhajiṣyanti plavaṃgamāḥ",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    },
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE), passim (verse-level locator withdrawn)",
+    "locator": "VR (CE) 6.28.2",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "quote": "aṅgado vāliputraś ca",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "Locator restored in round 2: the cited verse(s) name this person as a member of the lineage or group (quoted), checked against the GRETIL e-text of the critical edition."
  },
  {
   "id": "epic:353",
@@ -8303,22 +8395,24 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE), passim (verse-level locator withdrawn)",
+    "locator": "VR (CE) 4.45.8",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "quote": "tato 'ham āgāṃ kiṣkindhāṃ",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    },
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE), passim (verse-level locator withdrawn)",
+    "locator": "VR (CE) 4.19.3",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "quote": "tārā śuśrāva vālinam",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "VR (CE) 4.45.8 (Sugrīva speaking) names Tārā as part of what he gained in Kiṣkindhā; 4.19.3 names her as Vālin’s wife. She belongs to the vānara court of Kiṣkindhā by marriage."
  },
  {
   "id": "epic:354",
@@ -8332,22 +8426,24 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE), passim (verse-level locator withdrawn)",
+    "locator": "VR (CE) 6.21.28",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "quote": "viśvakarmasuto vīro nalaḥ plavagasattamaḥ",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    },
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE), passim (verse-level locator withdrawn)",
+    "locator": "VR (CE) 4.13.4",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "quote": "nalo nīlaś ca vānaraḥ",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "VR (CE) 6.21.28 names Nala, son of Viśvakarman, among the vānara leaders of Sugrīva’s army, and 4.13.4 has him accompany Sugrīva to Kiṣkindhā. No verse calls him a native of Kiṣkindhā."
  },
  {
   "id": "epic:355",
@@ -8361,22 +8457,24 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE), passim (verse-level locator withdrawn)",
+    "locator": "VR (CE) 4.38.17",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "quote": "pitā hanumataḥ śrīmān kesarī pratyadṛśyata",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    },
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE), passim (verse-level locator withdrawn)",
+    "locator": "VR (CE) 6.18.34",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "quote": "kesarī nāma yūthapaḥ",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    }
   ],
   "confidence": "medium",
-  "status": "source-checked",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "VR (CE) 4.38.17 has Kesarin, “Hanumān’s father”, arrive with thousands of vānaras at Sugrīva’s summons. But 6.18.34 places his home on the golden mountain, so he belongs to Sugrīva’s host as an allied troop leader rather than as a resident of Kiṣkindhā. Confidence is therefore medium."
  },
  {
   "id": "epic:356",
@@ -8390,28 +8488,24 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.97.3",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "śaṃtanor dharmanityasya kauravyasya yaśasvinaḥ",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 9.55.24",
     "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
-   },
-   {
-    "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
-    "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
+    "quote": "kururājasya śaṃtanoḥ",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_09_u.htm"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "Locator restored in round 2: the cited verse(s) name this person as a member of the lineage or group (quoted), checked against the GRETIL e-text of the critical edition."
  },
  {
   "id": "epic:357",
@@ -8425,28 +8519,24 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 3.80.21",
     "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
+    "quote": "bhīṣmaṃ kurukulaśreṣṭhaṃ",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.103.10",
     "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
-   },
-   {
-    "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
-    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "bhīṣmaḥ kurupitāmahaḥ",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "Locator restored in round 2: the cited verse(s) name this person as a member of the lineage or group (quoted), checked against the GRETIL e-text of the critical edition."
  },
  {
   "id": "epic:358",
@@ -8460,28 +8550,24 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.95.12",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "vicitravīryaṃ ca tadā bālam aprāptayauvanam kururājye mahābāhur abhyaṣiñcad",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.184.18",
     "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
-   },
-   {
-    "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
-    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "vicitravīryasya tu kaccid adya; kurupravīrasya",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "Locator restored in round 2: the cited verse(s) name this person as a member of the lineage or group (quoted), checked against the GRETIL e-text of the critical edition."
  },
  {
   "id": "epic:359",
@@ -8495,28 +8581,17 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.95.10",
     "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
-   },
-   {
-    "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
-    "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
-   },
-   {
-    "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
-    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "citrāṅgadaṃ kuruśreṣṭhaṃ",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "Locator restored in round 2: the cited verse(s) name this person as a member of the lineage or group (quoted), checked against the GRETIL e-text of the critical edition."
  },
  {
   "id": "epic:360",
@@ -8530,28 +8605,24 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 2.61.13",
     "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
+    "quote": "bhīṣmaś ca dhṛtarāṣṭraś ca kuruvṛddhatamāv ubhau",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_02_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.192.7",
     "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
-   },
-   {
-    "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
-    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "dhṛtarāṣṭraṃ ca kauravam",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "Locator restored in round 2: the cited verse(s) name this person as a member of the lineage or group (quoted), checked against the GRETIL e-text of the critical edition."
  },
  {
   "id": "epic:361",
@@ -8565,28 +8636,24 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.110.42",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "rājaputras tu kauravyaḥ pāṇḍur",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.133.10",
     "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
-   },
-   {
-    "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
-    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "pāṇḍuś ca kurunandanaḥ",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "Locator restored in round 2: the cited verse(s) name this person as a member of the lineage or group (quoted), checked against the GRETIL e-text of the critical edition."
  },
  {
   "id": "epic:362",
@@ -8600,22 +8667,24 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.90.69 (prose genealogy)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "dharmād yudhiṣṭhiraṃ",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.90.77",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "tatas te pañca pāṇḍavāḥ",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "MBh (CE) 1.90 is the prose genealogy of Pūru’s line. Sentence 69 names Yudhiṣṭhira, Bhīmasena and Arjuna as Kuntī’s sons by Dharma, Māruta and Śakra; sentence 77 calls the five “pāṇḍavāḥ”."
  },
  {
   "id": "epic:363",
@@ -8629,22 +8698,24 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.90.69 (prose genealogy)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "mārutād bhīmasenaṃ",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.90.77",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "tatas te pañca pāṇḍavāḥ",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "Locator restored in round 2: the cited verse(s) name this person as a member of the lineage or group (quoted), checked against the GRETIL e-text of the critical edition."
  },
  {
   "id": "epic:364",
@@ -8658,22 +8729,24 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.90.69 (prose genealogy)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "śakrād arjunam",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.90.77",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "tatas te pañca pāṇḍavāḥ",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "Locator restored in round 2: the cited verse(s) name this person as a member of the lineage or group (quoted), checked against the GRETIL e-text of the critical edition."
  },
  {
   "id": "epic:365",
@@ -8687,22 +8760,24 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.90.72 (prose genealogy)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "mādryām aśvibhyāṃ nakulasahadevāv utpāditau",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.90.77",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "tatas te pañca pāṇḍavāḥ",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "Locator restored in round 2: the cited verse(s) name this person as a member of the lineage or group (quoted), checked against the GRETIL e-text of the critical edition."
  },
  {
   "id": "epic:366",
@@ -8716,22 +8791,24 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.90.72 (prose genealogy)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "mādryām aśvibhyāṃ nakulasahadevāv utpāditau",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.90.77",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "tatas te pañca pāṇḍavāḥ",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "Locator restored in round 2: the cited verse(s) name this person as a member of the lineage or group (quoted), checked against the GRETIL e-text of the critical edition."
  },
  {
   "id": "epic:367",
@@ -8745,22 +8822,24 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.90.85",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "tasyāṃ putram abhimanyuṃ nāma janayām āsa",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.90.89",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "ity ete ekādaśa pāṇḍavānāṃ putrāḥ",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "MBh (CE) 1.90.85 names Abhimanyu as Arjuna’s son by Subhadrā, and 1.90.89 counts him among the eleven sons of the Pāṇḍavas."
  },
  {
   "id": "epic:368",
@@ -8774,22 +8853,24 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.90.92",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "bhavatv ayaṃ parikṣin nāmeti",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.90.96",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "ity eṣa pūror vaṃśas tu pāṇḍavānāṃ ca kīrtitaḥ",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "MBh (CE) 1.90.92 names Parikṣit, born to Abhimanyu and Uttarā, and 1.90.96 closes the account as the lineage “of Pūru and of the Pāṇḍavas”."
  },
  {
   "id": "epic:369",
@@ -8803,22 +8884,24 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.90.93",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "tasyām asya janamejayaḥ",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.90.96",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "ity eṣa pūror vaṃśas tu pāṇḍavānāṃ ca kīrtitaḥ",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "MBh (CE) 1.90.93 names Janamejaya as Parikṣit’s son, and 1.90.96 closes the account as the lineage “of Pūru and of the Pāṇḍavas”."
  },
  {
   "id": "epic:370",
@@ -8832,22 +8915,24 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.108.1–2",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "duryodhano yuyutsuś ca rājan duḥśāsanas tathā",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.90.62",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "duryodhano duḥśāsano vikarṇaś citrasena",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "Locator restored in round 2: the cited verse(s) name this person as a member of the lineage or group (quoted), checked against the GRETIL e-text of the critical edition."
  },
  {
   "id": "epic:371",
@@ -8861,22 +8946,24 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.108.1–2",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "duryodhano yuyutsuś ca rājan duḥśāsanas tathā",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.90.62",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "duryodhano duḥśāsano vikarṇaś citrasena",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "Locator restored in round 2: the cited verse(s) name this person as a member of the lineage or group (quoted), checked against the GRETIL e-text of the critical edition."
  },
  {
   "id": "epic:372",
@@ -8890,22 +8977,24 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.107.37",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "kanyā caikātha duḥśalā",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.108.18",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "duḥśalāṃ samaye rājā sindhurājāya",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "Locator restored in round 2: the cited verse(s) name this person as a member of the lineage or group (quoted), checked against the GRETIL e-text of the critical edition."
  },
  {
   "id": "epic:373",
@@ -8919,22 +9008,31 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.107.36",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "yuyutsuḥ karaṇo nṛpa",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.108.2",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "duryodhano yuyutsuś ca",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
+   },
+   {
+    "source": "src:gretil-mbh-ce",
+    "locator": "MBh (CE) 6.41.95",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "yuyutsuḥ kauravyaḥ parityajya sutāṃs tava",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_06_u.htm"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "MBh (CE) 1.107.36 names Yuyutsu as Dhṛtarāṣṭra’s son by a vaiśyā woman, and 1.108.2 lists him among the sons; at 6.41.95 he leaves the Kauravas for the Pāṇḍava side."
  },
  {
   "id": "epic:374",
@@ -8948,34 +9046,24 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 5.56.2",
     "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
+    "quote": "mukhyam andhakavṛṣṇīnām apaśyaṃ kṛṣṇam āgatam",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_05_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 2.40.14",
     "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
-   },
-   {
-    "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
-    "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
-   },
-   {
-    "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
-    "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_16_u.htm"
+    "quote": "saṃkarṣaṇajanārdanau yādavau",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_02_u.htm"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "Locator restored in round 2: the cited verse(s) name this person as a member of the lineage or group (quoted), checked against the GRETIL e-text of the critical edition."
  },
  {
   "id": "epic:375",
@@ -8989,34 +9077,24 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 2.40.14",
     "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
+    "quote": "saṃkarṣaṇajanārdanau yādavau",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_02_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.183.5",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "yadupravīrāv",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
-   },
-   {
-    "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
-    "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
-   },
-   {
-    "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
-    "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_16_u.htm"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "Locator restored in round 2: the cited verse(s) name this person as a member of the lineage or group (quoted), checked against the GRETIL e-text of the critical edition."
  },
  {
   "id": "epic:376",
@@ -9030,34 +9108,17 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.104.1",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "śūro nāma yaduśreṣṭho vasudevapitābhavat",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
-   },
-   {
-    "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
-    "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
-   },
-   {
-    "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
-    "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
-   },
-   {
-    "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
-    "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_16_u.htm"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "Locator restored in round 2: the cited verse(s) name this person as a member of the lineage or group (quoted), checked against the GRETIL e-text of the critical edition."
  },
  {
   "id": "epic:377",
@@ -9071,34 +9132,24 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.1.103",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "subhadrāṃ; prasahyoḍhāṃ mādhavīm",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.55.33",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "anujāṃ vāsudevasya subhadrāṃ",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
-   },
-   {
-    "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
-    "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
-   },
-   {
-    "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
-    "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_16_u.htm"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "Locator restored in round 2: the cited verse(s) name this person as a member of the lineage or group (quoted), checked against the GRETIL e-text of the critical edition."
  },
  {
   "id": "epic:378",
@@ -9112,34 +9163,24 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 7.85.90",
     "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
+    "quote": "vṛṣṇipravīrāṇāṃ dvāv evātirathau smṛtau pradyumnaś ca",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_07_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 2.4.29",
     "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
-   },
-   {
-    "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
-    "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
-   },
-   {
-    "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
-    "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_16_u.htm"
+    "quote": "kumārā vṛṣṇinandanāḥ raukmiṇeyaś ca sāmbaś ca",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_02_u.htm"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "Locator restored in round 2: the cited verse(s) name this person as a member of the lineage or group (quoted), checked against the GRETIL e-text of the critical edition."
  },
  {
   "id": "epic:379",
@@ -9153,34 +9194,24 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 3.17.18",
     "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
+    "quote": "sāmbo vṛṣṇikulodvahaḥ",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 2.4.29",
     "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
-   },
-   {
-    "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
-    "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
-   },
-   {
-    "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
-    "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_16_u.htm"
+    "quote": "kumārā vṛṣṇinandanāḥ raukmiṇeyaś ca sāmbaś ca",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_02_u.htm"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "Locator restored in round 2: the cited verse(s) name this person as a member of the lineage or group (quoted), checked against the GRETIL e-text of the critical edition."
  },
  {
   "id": "epic:380",
@@ -9194,34 +9225,24 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.61.73",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "sātyakiḥ satyasaṃdhas tu yo 'sau vṛṣṇikulodvahaḥ",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 5.19.1",
     "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
-   },
-   {
-    "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
-    "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
-   },
-   {
-    "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
-    "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_16_u.htm"
+    "quote": "yuyudhānas tato vīraḥ sātvatānāṃ mahārathaḥ",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_05_u.htm"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "Locator restored in round 2: the cited verse(s) name this person as a member of the lineage or group (quoted), checked against the GRETIL e-text of the critical edition."
  },
  {
   "id": "epic:381",
@@ -9235,34 +9256,24 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 5.129.23",
     "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
+    "quote": "kṛtavarmā mahārathaḥ vṛṣṇīnāṃ saṃmato vīro hārdikyaḥ",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_05_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 5.162.24",
     "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
-   },
-   {
-    "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
-    "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
-   },
-   {
-    "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
-    "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_16_u.htm"
+    "quote": "kṛtavarmā tv atiratho bhojaḥ",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_05_u.htm"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "Locator restored in round 2: the cited verse(s) name this person as a member of the lineage or group (quoted), checked against the GRETIL e-text of the critical edition."
  },
  {
   "id": "epic:382",
@@ -9276,34 +9287,24 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.211.8",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "rājā vṛṣṇīnām ugrasenaḥ",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 5.126.38",
     "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
-   },
-   {
-    "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
-    "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
-   },
-   {
-    "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
-    "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_16_u.htm"
+    "quote": "ugrasenaḥ kṛto rājā bhojarājanyavardhanaḥ",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_05_u.htm"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "Locator restored in round 2: the cited verse(s) name this person as a member of the lineage or group (quoted), checked against the GRETIL e-text of the critical edition."
  },
  {
   "id": "epic:383",
@@ -9317,34 +9318,24 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 5.126.37",
     "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
+    "quote": "ugrasenasutaḥ kaṃsaḥ parityaktaḥ sa bāndhavaiḥ",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_05_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 5.126.39",
     "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
-   },
-   {
-    "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
-    "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
-   },
-   {
-    "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
-    "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_16_u.htm"
+    "quote": "kaṃsam ekaṃ parityajya kulārthe sarvayādavāḥ",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_05_u.htm"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "MBh (CE) 5.126.37–39 (Kṛṣṇa in the Kuru assembly): Ugrasena’s son Kaṃsa was abandoned by his kin; “all the Yādavas, abandoning Kaṃsa alone for the family’s sake, prosper.”"
  },
  {
   "id": "epic:384",
@@ -9358,34 +9349,17 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.104.1",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "śūro nāma yaduśreṣṭho vasudevapitābhavat",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
-   },
-   {
-    "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
-    "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
-   },
-   {
-    "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
-    "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
-   },
-   {
-    "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
-    "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_16_u.htm"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "Locator restored in round 2: the cited verse(s) name this person as a member of the lineage or group (quoted), checked against the GRETIL e-text of the critical edition."
  },
  {
   "id": "epic:385",
@@ -9399,34 +9373,24 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 3.287.23",
     "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
+    "quote": "vṛṣṇīnāṃ tvaṃ kule jātā śūrasya dayitā sutā",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.104.1",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "tasya kanyā pṛthā nāma",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
-   },
-   {
-    "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
-    "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
-   },
-   {
-    "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
-    "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_16_u.htm"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "Locator restored in round 2: the cited verse(s) name this person as a member of the lineage or group (quoted), checked against the GRETIL e-text of the critical edition."
  },
  {
   "id": "epic:386",
@@ -9440,22 +9404,24 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.121.10",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "rājā drupado 'bhavat pāñcāleṣu",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.185.16",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "pāñcālarājo drupado",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "Locator restored in round 2: the cited verse(s) name this person as a member of the lineage or group (quoted), checked against the GRETIL e-text of the critical edition."
  },
  {
   "id": "epic:387",
@@ -9469,22 +9435,24 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.155.51",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "dhṛṣṭadyumnaṃ tu pāñcālyam",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 1.184.1",
     "edition": "BORI Critical Edition (GRETIL e-text)",
+    "quote": "dhṛṣṭadyumnas tu pāñcālyaḥ",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "Locator restored in round 2: the cited verse(s) name this person as a member of the lineage or group (quoted), checked against the GRETIL e-text of the critical edition."
  },
  {
   "id": "epic:388",
@@ -9498,22 +9466,24 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 5.168.1",
     "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
+    "quote": "pāñcālarājasya suto rājan parapuraṃjayaḥ śikhaṇḍī",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_05_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 5.169.16",
     "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
+    "quote": "pāñcālyaṃ tu mahābāho nāhaṃ hanyāṃ śikhaṇḍinam",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_05_u.htm"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "Locator restored in round 2: the cited verse(s) name this person as a member of the lineage or group (quoted), checked against the GRETIL e-text of the critical edition."
  },
  {
   "id": "epic:389",
@@ -9527,22 +9497,24 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 4.22.26",
     "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
+    "quote": "pāñcālīṃ tatra draupadīm",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_04_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
+    "locator": "MBh (CE) 2.58.31",
     "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
+    "quote": "paṇasva kṛṣṇāṃ pāñcālīṃ",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_02_u.htm"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
+  "confidence": "high",
+  "status": "verified-online",
   "agent": "epic",
   "lastVerified": "2026-11-08",
-  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
+  "rationale": "Locator restored in round 2: the cited verse(s) name this person as a member of the lineage or group (quoted), checked against the GRETIL e-text of the critical edition."
  },
  {
   "id": "epic:390",

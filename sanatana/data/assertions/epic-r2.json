@@ -1,0 +1,3683 @@
+[
+ {
+  "id": "epic:r2-1",
+  "s": "text:raghuvamsha",
+  "p": "COMPOSED_BY",
+  "o": "person:kalidasa",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:keith-1928"
+   },
+   {
+    "source": "src:lienhard-1984"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "rationale": "Kālidāsa’s authorship of the Raghuvaṃśa is unquestioned in the commentarial tradition and in modern scholarship.",
+  "agent": "epic"
+ },
+ {
+  "id": "epic:r2-2",
+  "s": "text:raghuvamsha",
+  "p": "PART_OF",
+  "o": "col:pancha-mahakavya",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:lienhard-1984"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "epic"
+ },
+ {
+  "id": "epic:r2-3",
+  "s": "text:raghuvamsha",
+  "p": "DERIVED_FROM",
+  "o": "text:valmiki-ramayana",
+  "qualifiers": {
+   "note": "cantos 10–15 retell the Rāma story"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 15.63–64",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt",
+    "quote": "vṛttaṃ rāmasya vālmīkeḥ kṛtis tau kiṃnarasvanau"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "rationale": "Raghuvaṃśa 15.63–64 names Vālmīki’s Rāmāyaṇa (“prācetasopajñaṃ rāmāyaṇam”) as the song of Kuśa and Lava; cantos 10–15 follow Vālmīki’s plot in abridged form.",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-4",
+  "s": "text:raghuvamsha",
+  "p": "REFERS_TO_TEXT",
+  "o": "text:valmiki-ramayana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 15.63",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt",
+    "quote": "atha prācetasopajñaṃ rāmāyaṇam itas tataḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "rationale": "The poem names the Rāmāyaṇa and its author Prācetasa (Vālmīki).",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-5",
+  "s": "char:rama",
+  "p": "APPEARS_IN",
+  "o": "text:raghuvamsha",
+  "qualifiers": {
+   "role": "protagonist of cantos 10–15",
+   "note": "13.1 calls him “Hari named Rāma”"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 13.1",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt",
+    "quote": "rāmābhidhāno harir ity uvāca"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-6",
+  "s": "char:sita",
+  "p": "APPEARS_IN",
+  "o": "text:raghuvamsha",
+  "qualifiers": {
+   "role": "heroine of cantos 10–15"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 15.81",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt",
+    "quote": "viśvaṃbhare devi mām antardhātum arhasi"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-7",
+  "s": "char:dilipa",
+  "p": "APPEARS_IN",
+  "o": "text:raghuvamsha",
+  "qualifiers": {
+   "role": "protagonist of cantos 1–3"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 1.82",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt",
+    "quote": "anindyā nandinī nāma dhenur āvavṛte vanāt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-8",
+  "s": "char:raghu",
+  "p": "APPEARS_IN",
+  "o": "text:raghuvamsha",
+  "qualifiers": {
+   "role": "protagonist of cantos 3–5"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 5.39",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt",
+    "quote": "bhojena dūto raghave visṛṣṭaḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-9",
+  "s": "char:vasishtha",
+  "p": "APPEARS_IN",
+  "o": "text:raghuvamsha",
+  "qualifiers": {
+   "role": "family preceptor"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 2.69",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt",
+    "quote": "vasiṣṭhena kṛtābhyanujñaḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-10",
+  "s": "char:valmiki",
+  "p": "APPEARS_IN",
+  "o": "text:raghuvamsha",
+  "qualifiers": {
+   "role": "sage who shelters the abandoned Sītā"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 14.79",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt",
+    "quote": "vālmīkir ādāya dayārdracetāḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-11",
+  "s": "char:lava",
+  "p": "APPEARS_IN",
+  "o": "text:raghuvamsha",
+  "qualifiers": {
+   "role": "singer of the Rāmāyaṇa"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 15.63",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt",
+    "quote": "maithileyau kuśalavau jagatur gurucoditau"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-12",
+  "s": "char:kusha",
+  "p": "APPEARS_IN",
+  "o": "text:raghuvamsha",
+  "qualifiers": {
+   "role": "protagonist of canto 16"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 16.1",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt",
+    "quote": "cakruḥ kuśaṃ ratnaviśeṣabhājaṃ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-13",
+  "s": "char:dasharatha",
+  "p": "APPEARS_IN",
+  "o": "text:raghuvamsha",
+  "qualifiers": {
+   "role": "protagonist of canto 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 9.1",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt",
+    "quote": "daśarathaḥ praśaśāsa mahāratho"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-14",
+  "s": "char:lakshmana",
+  "p": "APPEARS_IN",
+  "o": "text:raghuvamsha",
+  "qualifiers": {
+   "role": "escorts Sītā to Vālmīki’s hermitage"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 14.58",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt",
+    "quote": "āśvāsya rāmāvarajaḥ satīṃ tām"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-15",
+  "s": "char:vibhishana",
+  "p": "APPEARS_IN",
+  "o": "text:raghuvamsha",
+  "qualifiers": {
+   "role": "ally"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 12.104",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt",
+    "quote": "priyasuhṛdi vibhīṣaṇe saṃgamayya śriyaṃ vairiṇaḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-16",
+  "s": "narr:sita-banishment",
+  "p": "NARRATED_IN",
+  "o": "text:raghuvamsha",
+  "qualifiers": {
+   "note": "14.31–80 (abandonment) and 15.81–84 (entry into the earth), following Vālmīki"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 14.45",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt",
+    "quote": "prāpayya vālmīkipadaṃ tyajainām"
+   },
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 15.81–84",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt",
+    "quote": "sā sītām aṅkam āropya bhartari prahitekṣaṇām"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-17",
+  "s": "narr:lava-kusha-recitation",
+  "p": "NARRATED_IN",
+  "o": "text:raghuvamsha",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 15.63–69",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt",
+    "quote": "geye kena vinītau vāṃ kasya ceyaṃ kaveḥ kṛtiḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-18",
+  "s": "char:aja",
+  "p": "APPEARS_IN",
+  "o": "text:raghuvamsha",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 8.43",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt",
+    "quote": "vilalāpa sa bāṣpagadgadaṃ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-19",
+  "s": "char:indumati",
+  "p": "APPEARS_IN",
+  "o": "text:raghuvamsha",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 8.28",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt",
+    "quote": "kṣitir indumatī ca bhāminī"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-20",
+  "s": "char:sudakshina",
+  "p": "APPEARS_IN",
+  "o": "text:raghuvamsha",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 3.1",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt",
+    "quote": "sudakṣiṇā daurhṛdalakṣaṇaṃ dadhau"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-21",
+  "s": "char:nandini-cow",
+  "p": "APPEARS_IN",
+  "o": "text:raghuvamsha",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 3.40",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt",
+    "quote": "dadṛśe 'tha nandinī"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-22",
+  "s": "char:agnivarna",
+  "p": "APPEARS_IN",
+  "o": "text:raghuvamsha",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 19.1",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt",
+    "quote": "agnivarṇam abhiṣicya"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-23",
+  "s": "char:aja",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Vālmīki: son of Nābhāga; Raghuvaṃśa: son of Raghu"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-vr-ce",
+    "locator": "VR (CE) 1.69.30",
+    "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt",
+    "quote": "ajād daśaratho 'bhavat"
+   },
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 8.1",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-24",
+  "s": "char:aja",
+  "p": "PARENT_OF",
+  "o": "char:dasharatha",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-vr-ce",
+    "locator": "VR (CE) 1.69.30",
+    "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt",
+    "quote": "ajād daśaratho 'bhavat"
+   },
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 9.1",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-25",
+  "s": "char:raghu",
+  "p": "PARENT_OF",
+  "o": "char:aja",
+  "qualifiers": {
+   "text": "text:raghuvamsha"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 5.39",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "rationale": "Raghuvaṃśa cantos 5–8 make Aja Raghu’s son.",
+  "competing": "VR (CE) 1.69.30 makes Aja the son of Nābhāga.",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-26",
+  "s": "char:aja",
+  "p": "SPOUSE_OF",
+  "o": "char:indumati",
+  "qualifiers": {
+   "text": "text:raghuvamsha"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 8.1",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-27",
+  "s": "char:dilipa",
+  "p": "SPOUSE_OF",
+  "o": "char:sudakshina",
+  "qualifiers": {
+   "text": "text:raghuvamsha"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 3.1",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-28",
+  "s": "char:sudakshina",
+  "p": "PARENT_OF",
+  "o": "char:raghu",
+  "qualifiers": {
+   "text": "text:raghuvamsha"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 3.1",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-29",
+  "s": "char:nandini-cow",
+  "p": "BLESSES",
+  "o": "char:dilipa",
+  "qualifiers": {
+   "text": "text:raghuvamsha",
+   "note": "grants him a son (Raghu)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 2.69",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-30",
+  "s": "char:dilipa",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:dilipa-nandini",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 1.82–2.69",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-31",
+  "s": "char:sudakshina",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:dilipa-nandini",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 1.82–2.69",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-32",
+  "s": "char:nandini-cow",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:dilipa-nandini",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 1.82–2.69",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-33",
+  "s": "char:vasishtha",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:dilipa-nandini",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 1.82–2.69",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-34",
+  "s": "narr:dilipa-nandini",
+  "p": "NARRATED_IN",
+  "o": "text:raghuvamsha",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 1.35–2.75",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-35",
+  "s": "char:aja",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:aja-indumati",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 6.70–8.95",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-36",
+  "s": "char:indumati",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:aja-indumati",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 6.70–8.95",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-37",
+  "s": "narr:aja-indumati",
+  "p": "NARRATED_IN",
+  "o": "text:raghuvamsha",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 5.39–8.95",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-38",
+  "s": "char:dasharatha",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:ascetic-boy-killing",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-vr-ce",
+    "locator": "VR (CE) 2.57.8",
+    "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt",
+    "quote": "kumāraḥ śabdavedhīti mayā pāpam idaṃ kṛtam"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-39",
+  "s": "narr:ascetic-boy-killing",
+  "p": "NARRATED_IN",
+  "o": "text:valmiki-ramayana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-vr-ce",
+    "locator": "VR (CE) 2.57–58",
+    "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-40",
+  "s": "narr:ascetic-boy-killing",
+  "p": "NARRATED_IN",
+  "o": "text:raghuvamsha",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-raghuvamsha",
+    "locator": "Raghuvaṃśa 9.73",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt",
+    "quote": "śabdapātinam iṣuṃ visasarja"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-41",
+  "s": "narr:ascetic-boy-killing",
+  "p": "PRECEDES",
+  "o": "narr:dasharatha-death",
+  "qualifiers": {
+   "note": "the curse is fulfilled when Daśaratha dies of grief for Rāma"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-vr-ce",
+    "locator": "VR (CE) 2.57–58",
+    "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-42",
+  "s": "text:kumarasambhava",
+  "p": "COMPOSED_BY",
+  "o": "person:kalidasa",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:keith-1928"
+   },
+   {
+    "source": "src:smith-2005-kumarasambhava"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "rationale": "Cantos 1–8 are accepted as Kālidāsa’s; cantos 9–17 are generally held to be by another hand.",
+  "agent": "epic"
+ },
+ {
+  "id": "epic:r2-43",
+  "s": "text:kumarasambhava",
+  "p": "PART_OF",
+  "o": "col:pancha-mahakavya",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:lienhard-1984"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "epic"
+ },
+ {
+  "id": "epic:r2-44",
+  "s": "deity:shiva",
+  "p": "APPEARS_IN",
+  "o": "text:kumarasambhava",
+  "qualifiers": {
+   "role": "hero"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-kumarasambhava",
+    "locator": "Kumārasambhava 3.72",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-kumArasaMbhava.txt",
+    "quote": "tāvat sa vahnir bhavanetrajanmā bhasmāvaśeṣaṃ madanaṃ cakāra"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-45",
+  "s": "deity:parvati",
+  "p": "APPEARS_IN",
+  "o": "text:kumarasambhava",
+  "qualifiers": {
+   "role": "heroine"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-kumarasambhava",
+    "locator": "Kumārasambhava 5.2",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-kumArasaMbhava.txt",
+    "quote": "iyeṣa sā kartum avandhyarūpatāṃ samādhim āsthāya tapobhir ātmanaḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-46",
+  "s": "char:taraka",
+  "p": "APPEARS_IN",
+  "o": "text:kumarasambhava",
+  "qualifiers": {
+   "role": "antagonist (offstage in cantos 1–8)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-kumarasambhava",
+    "locator": "Kumārasambhava 2.32",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-kumArasaMbhava.txt",
+    "quote": "bhavallabdhavarodīrṇas tārakākhyo mahāsuraḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-47",
+  "s": "deity:indra",
+  "p": "APPEARS_IN",
+  "o": "text:kumarasambhava",
+  "qualifiers": {
+   "role": "leader of the gods"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-kumarasambhava",
+    "locator": "Kumārasambhava 2.1",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-kumArasaMbhava.txt",
+    "quote": "turāsāhaṃ purodhāya dhāma svāyaṃbhuvaṃ yayuḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-48",
+  "s": "deity:brahma",
+  "p": "APPEARS_IN",
+  "o": "text:kumarasambhava",
+  "qualifiers": {
+   "role": "adviser to the gods"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-kumarasambhava",
+    "locator": "Kumārasambhava 2.1",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-kumArasaMbhava.txt",
+    "quote": "dhāma svāyaṃbhuvaṃ yayuḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-49",
+  "s": "narr:birth-of-skanda",
+  "p": "NARRATED_IN",
+  "o": "text:kumarasambhava",
+  "qualifiers": {
+   "note": "only in the continuation cantos 9–17; the authentic cantos 1–8 end before the birth"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:smith-2005-kumarasambhava"
+   },
+   {
+    "source": "src:keith-1928"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "rationale": "The title announces Kumāra’s birth, but the eight cantos generally accepted as Kālidāsa’s stop at the wedding night (Ks 8.91).",
+  "agent": "epic"
+ },
+ {
+  "id": "epic:r2-50",
+  "s": "text:abhijnanashakuntalam",
+  "p": "COMPOSED_BY",
+  "o": "person:kalidasa",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-abhijnanashakuntala",
+    "locator": "Abhijñānaśākuntala 1.1a",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-abhijJAnazakuntala.txt",
+    "quote": "kālidāsagrathitavastunā"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "rationale": "The prologue names the play as “composed by Kālidāsa”.",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-51",
+  "s": "text:abhijnanashakuntalam",
+  "p": "RETELLS",
+  "o": "psg:mbh-shakuntala-upakhyana",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:gretil-mbh-ce",
+    "locator": "MBh (CE) 1.62–69",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
+   },
+   {
+    "source": "src:gretil-abhijnanashakuntala",
+    "locator": "Abhijñānaśākuntala 7.33",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-abhijJAnazakuntala.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "rationale": "The characters, the hermitage union, the rejection at court and the naming of Bharata follow MBh (CE) 1.62–69; the curse and the ring are Kālidāsa’s additions (see cmp:shakuntala-ring-curse).",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-52",
+  "s": "text:abhijnanashakuntalam",
+  "p": "DERIVED_FROM",
+  "o": "text:mahabharata",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:gretil-mbh-ce",
+    "locator": "MBh (CE) 1.62–69",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-53",
+  "s": "narr:shakuntala-dushyanta",
+  "p": "NARRATED_IN",
+  "o": "text:abhijnanashakuntalam",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-abhijnanashakuntala",
+    "locator": "Abhijñānaśākuntala 5.21a6",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-abhijJAnazakuntala.txt",
+    "quote": "aṅgulīyakaśūnyā me 'ṅguliḥ"
+   },
+   {
+    "source": "src:gretil-abhijnanashakuntala",
+    "locator": "Abhijñānaśākuntala 7.33",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-abhijJAnazakuntala.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-54",
+  "s": "char:shakuntala",
+  "p": "APPEARS_IN",
+  "o": "text:abhijnanashakuntalam",
+  "qualifiers": {
+   "role": "heroine"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-abhijnanashakuntala",
+    "locator": "Abhijñānaśākuntala 5.21a",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-abhijJAnazakuntala.txt",
+    "quote": "tad+abhijñānenānena tavāśaṅkām apaneṣyāmi"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-55",
+  "s": "char:dushyanta",
+  "p": "APPEARS_IN",
+  "o": "text:abhijnanashakuntalam",
+  "qualifiers": {
+   "role": "hero"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-abhijnanashakuntala",
+    "locator": "Abhijñānaśākuntala 7.10a",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-abhijJAnazakuntala.txt",
+    "quote": "katamasmin pradeśe mārīcāśramaḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-56",
+  "s": "char:kanva",
+  "p": "APPEARS_IN",
+  "o": "text:abhijnanashakuntalam",
+  "qualifiers": {
+   "role": "foster father"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-abhijnanashakuntala",
+    "locator": "Abhijñānaśākuntala 4.3a",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-abhijJAnazakuntala.txt",
+    "quote": "tātakāśyapasya duṣyantapariṇītām āpannasattvāṃ śakuntalāṃ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-57",
+  "s": "char:bharata-dauhshanti",
+  "p": "APPEARS_IN",
+  "o": "text:abhijnanashakuntalam",
+  "qualifiers": {
+   "role": "the child Sarvadamana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-abhijnanashakuntala",
+    "locator": "Abhijñānaśākuntala 7.33",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-abhijJAnazakuntala.txt",
+    "quote": "bharata il lokasya bharaṇāt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-58",
+  "s": "char:menaka",
+  "p": "APPEARS_IN",
+  "o": "text:abhijnanashakuntalam",
+  "qualifiers": {
+   "role": "mother of Śakuntalā (offstage)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-abhijnanashakuntala",
+    "locator": "Abhijñānaśākuntala 7.31a",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-abhijJAnazakuntala.txt",
+    "quote": "śakuntalām ādāya menakā dākṣāyaṇīm upagatā"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-59",
+  "s": "char:durvasas",
+  "p": "APPEARS_IN",
+  "o": "text:abhijnanashakuntalam",
+  "qualifiers": {
+   "role": "curser (offstage)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-abhijnanashakuntala",
+    "locator": "Abhijñānaśākuntala 4.1a",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-abhijJAnazakuntala.txt",
+    "quote": "eṣa durvāsāḥ sulabhakopo maharṣiḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-60",
+  "s": "char:durvasas",
+  "p": "CURSES",
+  "o": "char:shakuntala",
+  "qualifiers": {
+   "text": "text:abhijnanashakuntalam"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-abhijnanashakuntala",
+    "locator": "Abhijñānaśākuntala 4.1a",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-abhijJAnazakuntala.txt"
+   },
+   {
+    "source": "src:gretil-abhijnanashakuntala",
+    "locator": "Abhijñānaśākuntala 7.31a",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-abhijJAnazakuntala.txt",
+    "quote": "durvāsasaḥ śāpād iyaṃ tapasvinī"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "rationale": "Absent from MBh (CE) 1.62–69.",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-61",
+  "s": "char:durvasas",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:durvasas-curse-shakuntala",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-abhijnanashakuntala",
+    "locator": "Abhijñānaśākuntala 4.1a–7.31a",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-abhijJAnazakuntala.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-62",
+  "s": "char:shakuntala",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:durvasas-curse-shakuntala",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-abhijnanashakuntala",
+    "locator": "Abhijñānaśākuntala 4.1a–7.31a",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-abhijJAnazakuntala.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-63",
+  "s": "char:dushyanta",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:durvasas-curse-shakuntala",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-abhijnanashakuntala",
+    "locator": "Abhijñānaśākuntala 4.1a–7.31a",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-abhijJAnazakuntala.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-64",
+  "s": "narr:durvasas-curse-shakuntala",
+  "p": "NARRATED_IN",
+  "o": "text:abhijnanashakuntalam",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-abhijnanashakuntala",
+    "locator": "Abhijñānaśākuntala 4.1a–7.31a",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-abhijJAnazakuntala.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-65",
+  "s": "narr:durvasas-curse-shakuntala",
+  "p": "PRECEDES",
+  "o": "narr:shakuntala-dushyanta",
+  "qualifiers": {
+   "text": "text:abhijnanashakuntalam",
+   "note": "the curse explains the rejection scene within the larger story"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-abhijnanashakuntala",
+    "locator": "Abhijñānaśākuntala 7.31a",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-abhijJAnazakuntala.txt"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-66",
+  "s": "text:meghaduta",
+  "p": "COMPOSED_BY",
+  "o": "person:kalidasa",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:keith-1928"
+   },
+   {
+    "source": "src:mallinson-2006"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "epic"
+ },
+ {
+  "id": "epic:r2-67",
+  "s": "text:meghaduta",
+  "p": "DERIVED_FROM",
+  "o": "text:valmiki-ramayana",
+  "qualifiers": {
+   "note": "allusion, not retelling"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:gretil-meghaduta",
+    "locator": "Meghadūta 97",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-meghadUta.txt",
+    "quote": "pavanatanayaṃ maithilīvonmukhī sā"
+   },
+   {
+    "source": "src:gretil-meghaduta",
+    "locator": "Meghadūta 12",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-meghadUta.txt",
+    "quote": "vandyaiḥ puṃsāṃ raghupatipadair aṅkitaṃ mekhalāsu"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "rationale": "Not a retelling: the poem alludes to the Rāmāyaṇa (Sītā, Rāma’s footprints, Hanumān as messenger) to model its own separation and message.",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-68",
+  "s": "char:sita",
+  "p": "MENTIONED_IN",
+  "o": "text:meghaduta",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-meghaduta",
+    "locator": "Meghadūta 1",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-meghadUta.txt",
+    "quote": "janakatanayāsnānapuṇyodakeṣu"
+   },
+   {
+    "source": "src:gretil-meghaduta",
+    "locator": "Meghadūta 97",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-meghadUta.txt",
+    "quote": "maithilīvonmukhī"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-69",
+  "s": "char:hanuman",
+  "p": "MENTIONED_IN",
+  "o": "text:meghaduta",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-meghaduta",
+    "locator": "Meghadūta 97",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-meghadUta.txt",
+    "quote": "pavanatanayaṃ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "rationale": "“Son of the Wind” (pavanatanaya) is Hanumān; the verse compares the cloud to him.",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-70",
+  "s": "char:rama",
+  "p": "MENTIONED_IN",
+  "o": "text:meghaduta",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-meghaduta",
+    "locator": "Meghadūta 12",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-meghadUta.txt",
+    "quote": "raghupatipadair aṅkitaṃ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-71",
+  "s": "char:kubera",
+  "p": "MENTIONED_IN",
+  "o": "text:meghaduta",
+  "qualifiers": {
+   "role": "the yakṣa’s master (dhanapati), whose anger exiled him"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-meghaduta",
+    "locator": "Meghadūta 7",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-meghadUta.txt",
+    "quote": "dhanapatikrodhaviśleṣitasya"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-72",
+  "s": "char:yaksha-meghaduta",
+  "p": "APPEARS_IN",
+  "o": "text:meghaduta",
+  "qualifiers": {
+   "role": "speaker"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-meghaduta",
+    "locator": "Meghadūta 1",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-meghadUta.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-73",
+  "s": "char:yaksha-meghaduta",
+  "p": "SERVES",
+  "o": "char:kubera",
+  "qualifiers": {
+   "text": "text:meghaduta"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-meghaduta",
+    "locator": "Meghadūta 3",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-meghadUta.txt",
+    "quote": "anucaro rājarājasya"
+   },
+   {
+    "source": "src:gretil-meghaduta",
+    "locator": "Meghadūta 7",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-meghadUta.txt",
+    "quote": "dhanapatikrodhaviśleṣitasya"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-74",
+  "s": "text:vikramorvashiya",
+  "p": "COMPOSED_BY",
+  "o": "person:kalidasa",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:keith-1924"
+   },
+   {
+    "source": "src:lienhard-1984"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "rationale": "One of Kālidāsa’s three plays; his authorship is not disputed.",
+  "agent": "epic"
+ },
+ {
+  "id": "epic:r2-75",
+  "s": "text:vikramorvashiya",
+  "p": "RETELLS",
+  "o": "narr:pururavas-urvashi",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:keith-1924"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "rationale": "The play dramatises the Purūravas–Urvaśī story known from RV 10.95 and ŚB 11.5.1, ending happily with Indra’s permission for Urvaśī to remain with the king.",
+  "competing": "Kālidāsa’s immediate source is debated: the Matsya Purāṇa (chs. 24) and Viṣṇu Purāṇa versions are candidates, and some scholars think the Purāṇic versions postdate the play.",
+  "agent": "epic"
+ },
+ {
+  "id": "epic:r2-76",
+  "s": "char:pururavas",
+  "p": "APPEARS_IN",
+  "o": "text:vikramorvashiya",
+  "qualifiers": {
+   "role": "hero"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:keith-1924"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "epic"
+ },
+ {
+  "id": "epic:r2-77",
+  "s": "char:urvashi",
+  "p": "APPEARS_IN",
+  "o": "text:vikramorvashiya",
+  "qualifiers": {
+   "role": "heroine"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:keith-1924"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "epic"
+ },
+ {
+  "id": "epic:r2-78",
+  "s": "char:ayus",
+  "p": "APPEARS_IN",
+  "o": "text:vikramorvashiya",
+  "qualifiers": {
+   "role": "son revealed in act 5"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:keith-1924"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "epic"
+ },
+ {
+  "id": "epic:r2-79",
+  "s": "char:pururavas",
+  "p": "PARENT_OF",
+  "o": "char:ayus",
+  "qualifiers": {
+   "text": "text:mahabharata"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-mbh-ce",
+    "locator": "MBh (CE) 1.70.22",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm",
+    "quote": "ṣaṭ putrā jajñire 'thailād āyur dhīmān"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-80",
+  "s": "char:ayus",
+  "p": "PARENT_OF",
+  "o": "char:nahusha",
+  "qualifiers": {
+   "text": "text:mahabharata"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-mbh-ce",
+    "locator": "MBh (CE) 1.70.24",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm",
+    "quote": "āyuṣo nahuṣaḥ putro"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-81",
+  "s": "char:ayus",
+  "p": "MEMBER_OF",
+  "o": "lin:chandravamsha",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-mbh-ce",
+    "locator": "MBh (CE) 1.70.22",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm",
+    "quote": "ṣaṭ putrā jajñire 'thailād āyur dhīmān"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-82",
+  "s": "claim:bhasa-trivandrum-authorship",
+  "p": "CONCERNS",
+  "o": "col:trivandrum-plays",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:ganapati-sastri-1912"
+   },
+   {
+    "source": "src:tieken-1993"
+   },
+   {
+    "source": "src:pusalker-1940"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "epic"
+ },
+ {
+  "id": "epic:r2-83",
+  "s": "claim:bhasa-trivandrum-authorship",
+  "p": "CONCERNS",
+  "o": "person:bhasa",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:ganapati-sastri-1912"
+   },
+   {
+    "source": "src:tieken-1993"
+   },
+   {
+    "source": "src:pusalker-1940"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "epic"
+ },
+ {
+  "id": "epic:r2-84",
+  "s": "text:pratimanataka",
+  "p": "ATTRIBUTED_TO",
+  "o": "person:bhasa",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:ganapati-sastri-1912"
+   },
+   {
+    "source": "src:tieken-1993"
+   },
+   {
+    "source": "src:pusalker-1940"
+   }
+  ],
+  "confidence": "medium",
+  "status": "disputed",
+  "rationale": "Attributed to Bhāsa by Gaṇapati Śāstrī with the rest of the Trivandrum corpus; the plays themselves name no author.",
+  "competing": "Kerala acting versions of uncertain date and authorship (Tieken 1993 and others).",
+  "agent": "epic"
+ },
+ {
+  "id": "epic:r2-85",
+  "s": "text:pratimanataka",
+  "p": "PART_OF",
+  "o": "col:trivandrum-plays",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:ganapati-sastri-1912"
+   },
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-86",
+  "s": "text:abhishekanataka",
+  "p": "ATTRIBUTED_TO",
+  "o": "person:bhasa",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:ganapati-sastri-1912"
+   },
+   {
+    "source": "src:tieken-1993"
+   },
+   {
+    "source": "src:pusalker-1940"
+   }
+  ],
+  "confidence": "medium",
+  "status": "disputed",
+  "rationale": "Attributed to Bhāsa by Gaṇapati Śāstrī with the rest of the Trivandrum corpus; the plays themselves name no author.",
+  "competing": "Kerala acting versions of uncertain date and authorship (Tieken 1993 and others).",
+  "agent": "epic"
+ },
+ {
+  "id": "epic:r2-87",
+  "s": "text:abhishekanataka",
+  "p": "PART_OF",
+  "o": "col:trivandrum-plays",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:ganapati-sastri-1912"
+   },
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-88",
+  "s": "text:dutavakya",
+  "p": "ATTRIBUTED_TO",
+  "o": "person:bhasa",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:ganapati-sastri-1912"
+   },
+   {
+    "source": "src:tieken-1993"
+   },
+   {
+    "source": "src:pusalker-1940"
+   }
+  ],
+  "confidence": "medium",
+  "status": "disputed",
+  "rationale": "Attributed to Bhāsa by Gaṇapati Śāstrī with the rest of the Trivandrum corpus; the plays themselves name no author.",
+  "competing": "Kerala acting versions of uncertain date and authorship (Tieken 1993 and others).",
+  "agent": "epic"
+ },
+ {
+  "id": "epic:r2-89",
+  "s": "text:dutavakya",
+  "p": "PART_OF",
+  "o": "col:trivandrum-plays",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:ganapati-sastri-1912"
+   },
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-90",
+  "s": "text:dutaghatotkaca",
+  "p": "ATTRIBUTED_TO",
+  "o": "person:bhasa",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:ganapati-sastri-1912"
+   },
+   {
+    "source": "src:tieken-1993"
+   },
+   {
+    "source": "src:pusalker-1940"
+   }
+  ],
+  "confidence": "medium",
+  "status": "disputed",
+  "rationale": "Attributed to Bhāsa by Gaṇapati Śāstrī with the rest of the Trivandrum corpus; the plays themselves name no author.",
+  "competing": "Kerala acting versions of uncertain date and authorship (Tieken 1993 and others).",
+  "agent": "epic"
+ },
+ {
+  "id": "epic:r2-91",
+  "s": "text:dutaghatotkaca",
+  "p": "PART_OF",
+  "o": "col:trivandrum-plays",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:ganapati-sastri-1912"
+   },
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-92",
+  "s": "text:karnabhara",
+  "p": "ATTRIBUTED_TO",
+  "o": "person:bhasa",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:ganapati-sastri-1912"
+   },
+   {
+    "source": "src:tieken-1993"
+   },
+   {
+    "source": "src:pusalker-1940"
+   }
+  ],
+  "confidence": "medium",
+  "status": "disputed",
+  "rationale": "Attributed to Bhāsa by Gaṇapati Śāstrī with the rest of the Trivandrum corpus; the plays themselves name no author.",
+  "competing": "Kerala acting versions of uncertain date and authorship (Tieken 1993 and others).",
+  "agent": "epic"
+ },
+ {
+  "id": "epic:r2-93",
+  "s": "text:karnabhara",
+  "p": "PART_OF",
+  "o": "col:trivandrum-plays",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:ganapati-sastri-1912"
+   },
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-94",
+  "s": "text:urubhanga",
+  "p": "ATTRIBUTED_TO",
+  "o": "person:bhasa",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:ganapati-sastri-1912"
+   },
+   {
+    "source": "src:tieken-1993"
+   },
+   {
+    "source": "src:pusalker-1940"
+   }
+  ],
+  "confidence": "medium",
+  "status": "disputed",
+  "rationale": "Attributed to Bhāsa by Gaṇapati Śāstrī with the rest of the Trivandrum corpus; the plays themselves name no author.",
+  "competing": "Kerala acting versions of uncertain date and authorship (Tieken 1993 and others).",
+  "agent": "epic"
+ },
+ {
+  "id": "epic:r2-95",
+  "s": "text:urubhanga",
+  "p": "PART_OF",
+  "o": "col:trivandrum-plays",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:ganapati-sastri-1912"
+   },
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-96",
+  "s": "text:madhyamavyayoga",
+  "p": "ATTRIBUTED_TO",
+  "o": "person:bhasa",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:ganapati-sastri-1912"
+   },
+   {
+    "source": "src:tieken-1993"
+   },
+   {
+    "source": "src:pusalker-1940"
+   }
+  ],
+  "confidence": "medium",
+  "status": "disputed",
+  "rationale": "Attributed to Bhāsa by Gaṇapati Śāstrī with the rest of the Trivandrum corpus; the plays themselves name no author.",
+  "competing": "Kerala acting versions of uncertain date and authorship (Tieken 1993 and others).",
+  "agent": "epic"
+ },
+ {
+  "id": "epic:r2-97",
+  "s": "text:madhyamavyayoga",
+  "p": "PART_OF",
+  "o": "col:trivandrum-plays",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:ganapati-sastri-1912"
+   },
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-98",
+  "s": "text:pancharatra-bhasa",
+  "p": "ATTRIBUTED_TO",
+  "o": "person:bhasa",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:ganapati-sastri-1912"
+   },
+   {
+    "source": "src:tieken-1993"
+   },
+   {
+    "source": "src:pusalker-1940"
+   }
+  ],
+  "confidence": "medium",
+  "status": "disputed",
+  "rationale": "Attributed to Bhāsa by Gaṇapati Śāstrī with the rest of the Trivandrum corpus; the plays themselves name no author.",
+  "competing": "Kerala acting versions of uncertain date and authorship (Tieken 1993 and others).",
+  "agent": "epic"
+ },
+ {
+  "id": "epic:r2-99",
+  "s": "text:pancharatra-bhasa",
+  "p": "PART_OF",
+  "o": "col:trivandrum-plays",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:ganapati-sastri-1912"
+   },
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-100",
+  "s": "text:balacarita",
+  "p": "ATTRIBUTED_TO",
+  "o": "person:bhasa",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:ganapati-sastri-1912"
+   },
+   {
+    "source": "src:tieken-1993"
+   },
+   {
+    "source": "src:pusalker-1940"
+   }
+  ],
+  "confidence": "medium",
+  "status": "disputed",
+  "rationale": "Attributed to Bhāsa by Gaṇapati Śāstrī with the rest of the Trivandrum corpus; the plays themselves name no author.",
+  "competing": "Kerala acting versions of uncertain date and authorship (Tieken 1993 and others).",
+  "agent": "epic"
+ },
+ {
+  "id": "epic:r2-101",
+  "s": "text:balacarita",
+  "p": "PART_OF",
+  "o": "col:trivandrum-plays",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:ganapati-sastri-1912"
+   },
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-102",
+  "s": "text:svapnavasavadatta",
+  "p": "ATTRIBUTED_TO",
+  "o": "person:bhasa",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:ganapati-sastri-1912"
+   },
+   {
+    "source": "src:tieken-1993"
+   },
+   {
+    "source": "src:pusalker-1940"
+   }
+  ],
+  "confidence": "medium",
+  "status": "disputed",
+  "rationale": "Attributed to Bhāsa by Gaṇapati Śāstrī with the rest of the Trivandrum corpus; the plays themselves name no author.",
+  "competing": "Kerala acting versions of uncertain date and authorship (Tieken 1993 and others).",
+  "agent": "epic"
+ },
+ {
+  "id": "epic:r2-103",
+  "s": "text:svapnavasavadatta",
+  "p": "PART_OF",
+  "o": "col:trivandrum-plays",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:ganapati-sastri-1912"
+   },
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-104",
+  "s": "text:urubhanga",
+  "p": "SUPPORTS",
+  "o": "claim:bhasa-trivandrum-authorship",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Ūrubhaṅga, seg. 0.1",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/UBh.html",
+    "quote": "nāndyante tataḥ praviśati sūtradhāraḥ"
+   },
+   {
+    "source": "src:gretil-harshacarita",
+    "locator": "Harṣacarita intro v. 1.15",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bANa-harSacarita.txt",
+    "quote": "sūtra-dhāra-kṛtârambhair"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "rationale": "The plays open with the stage-direction “after the nāndī the sūtradhāra enters”, which Gaṇapati Śāstrī read as the feature Bāṇa ascribes to Bhāsa’s plays (“sūtradhārakṛtārambhair nāṭakaiḥ”, Harṣacarita intro v. 15).",
+  "competing": "The same convention occurs in other Kerala play manuscripts, so it may reflect Kerala stage practice rather than Bhāsa (Tieken 1993).",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-105",
+  "s": "text:svapnavasavadatta",
+  "p": "SUPPORTS",
+  "o": "claim:bhasa-trivandrum-authorship",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:keith-1924"
+   },
+   {
+    "source": "src:pusalker-1940"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "rationale": "Later critics ascribe a Svapnavāsavadatta to Bhāsa, and the Trivandrum play of that name matches several of their descriptions.",
+  "competing": "Some verses quoted from Bhāsa’s Svapnavāsavadatta are not found in the Trivandrum text.",
+  "agent": "epic"
+ },
+ {
+  "id": "epic:r2-106",
+  "s": "text:pratimanataka",
+  "p": "RETELLS",
+  "o": "text:valmiki-ramayana",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Pratimānāṭaka act 3, seg. 0.21b",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/PN_3.html",
+    "quote": "daśarathasya pratimā-gehaṃ"
+   },
+   {
+    "source": "src:keith-1924"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "rationale": "Follows the Rāma story from the exile to the coronation, with major inventions (the statue-house; Kaikeyī’s motive tied to a curse).",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-107",
+  "s": "text:abhishekanataka",
+  "p": "RETELLS",
+  "o": "text:valmiki-ramayana",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Abhiṣekanāṭaka act 1, seg. 2.2",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/AN_1.html"
+   },
+   {
+    "source": "src:keith-1924"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "rationale": "Covers Kiṣkindhā to Yuddha (Vālin’s death to Rāma’s consecration), closely following Vālmīki’s order of events.",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-108",
+  "s": "text:dutavakya",
+  "p": "DERIVED_FROM",
+  "o": "text:mahabharata",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:haksar-1993"
+   },
+   {
+    "source": "src:keith-1924"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "rationale": "Takes its characters and setting from the Mahābhārata; the plot is partly or wholly invented.",
+  "agent": "epic"
+ },
+ {
+  "id": "epic:r2-109",
+  "s": "text:dutaghatotkaca",
+  "p": "DERIVED_FROM",
+  "o": "text:mahabharata",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:haksar-1993"
+   },
+   {
+    "source": "src:keith-1924"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "rationale": "Takes its characters and setting from the Mahābhārata; the plot is partly or wholly invented.",
+  "agent": "epic"
+ },
+ {
+  "id": "epic:r2-110",
+  "s": "text:karnabhara",
+  "p": "DERIVED_FROM",
+  "o": "text:mahabharata",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:haksar-1993"
+   },
+   {
+    "source": "src:keith-1924"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "rationale": "Takes its characters and setting from the Mahābhārata; the plot is partly or wholly invented.",
+  "agent": "epic"
+ },
+ {
+  "id": "epic:r2-111",
+  "s": "text:urubhanga",
+  "p": "DERIVED_FROM",
+  "o": "text:mahabharata",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:haksar-1993"
+   },
+   {
+    "source": "src:keith-1924"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "rationale": "Takes its characters and setting from the Mahābhārata; the plot is partly or wholly invented.",
+  "agent": "epic"
+ },
+ {
+  "id": "epic:r2-112",
+  "s": "text:madhyamavyayoga",
+  "p": "DERIVED_FROM",
+  "o": "text:mahabharata",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:haksar-1993"
+   },
+   {
+    "source": "src:keith-1924"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "rationale": "Takes its characters and setting from the Mahābhārata; the plot is partly or wholly invented.",
+  "agent": "epic"
+ },
+ {
+  "id": "epic:r2-113",
+  "s": "text:pancharatra-bhasa",
+  "p": "DERIVED_FROM",
+  "o": "text:mahabharata",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:haksar-1993"
+   },
+   {
+    "source": "src:keith-1924"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "rationale": "Takes its characters and setting from the Mahābhārata; the plot is partly or wholly invented.",
+  "agent": "epic"
+ },
+ {
+  "id": "epic:r2-114",
+  "s": "text:balacarita",
+  "p": "DERIVED_FROM",
+  "o": "text:harivamsha",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:keith-1924"
+   },
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Bālacarita act 5, v. 6",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/BC_5.html"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "rationale": "The Kṛṣṇa childhood cycle up to Kaṃsa’s death is told in the Harivaṃśa (Viṣṇuparvan); the play’s direct source is not established.",
+  "agent": "epic"
+ },
+ {
+  "id": "epic:r2-115",
+  "s": "text:dutavakya",
+  "p": "RETELLS",
+  "o": "narr:krishna-embassy",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:gretil-dutavakya",
+    "locator": "Dūtavākya v. 1",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAsa-dUtavAkya.txt"
+   },
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Dūtavākya, seg. 41.3",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/DV.html",
+    "quote": "bhoḥ sudarśana itas tāvat"
+   },
+   {
+    "source": "src:gretil-mbh-ce",
+    "locator": "MBh (CE) 5.129.1–12",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_05_u.htm"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "rationale": "The embassy and the revelation of the cosmic form come from MBh 5.129; the personified weapons are the play’s addition.",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-116",
+  "s": "text:urubhanga",
+  "p": "RETELLS",
+  "o": "narr:duryodhana-thighs",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Ūrubhaṅga, v. 24",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/UBh.html",
+    "quote": "gāndhārī-tanayasya pāṇḍu-tanayeno^rvor vimuktā gadā"
+   },
+   {
+    "source": "src:gretil-mbh-ce",
+    "locator": "MBh (CE) 9.57.43",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_09_u.htm",
+    "quote": "ūrubhyāṃ prāhiṇod rājan gadāṃ vegena pāṇḍavaḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-117",
+  "s": "text:karnabhara",
+  "p": "RETELLS",
+  "o": "psg:mbh-karna-kundala-harana",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Karṇabhāra, v. 21",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/KBh.html",
+    "quote": "deyaṃ tathā^pi kavacaṃ saha kuṇḍalābhyāṃ"
+   },
+   {
+    "source": "src:gretil-mbh-ce",
+    "locator": "MBh (CE) 3.294.38",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "rationale": "The gift of armour and earrings to Indra comes from MBh 3.294; the play moves it to the battlefield and changes the terms (see cmp:karna-armour-gift).",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-118",
+  "s": "text:madhyamavyayoga",
+  "p": "DERIVED_FROM",
+  "o": "narr:hidimba-marriage",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Madhyamavyāyoga, seg. 37.6",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/MV.html",
+    "quote": "hiḍimbā nāma rākṣasī"
+   },
+   {
+    "source": "src:gretil-mbh-ce",
+    "locator": "MBh (CE) 1.143",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "rationale": "Presupposes Bhīma’s union with Hiḍimbā and Ghaṭotkaca’s birth (MBh 1.143); the encounter itself is invented.",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-119",
+  "s": "text:dutaghatotkaca",
+  "p": "DERIVED_FROM",
+  "o": "narr:abhimanyu-death",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Dūtaghaṭotkaca, seg. 5.1b",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/DGh.html",
+    "quote": "hā abhimanyo"
+   },
+   {
+    "source": "src:gretil-mbh-ce",
+    "locator": "MBh (CE) 7.48.4–12",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_07_u.htm"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-120",
+  "s": "text:balacarita",
+  "p": "RETELLS",
+  "o": "narr:kamsa-vadha",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Bālacarita act 5, v. 6",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/BC_5.html",
+    "quote": "yāvan na kaṃsa-hatakaṃ yudhi pātayitvā"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-121",
+  "s": "text:balacarita",
+  "p": "RETELLS",
+  "o": "narr:krishna-birth",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:keith-1924"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "rationale": "Act 1 dramatises the birth and the transfer to Vraja.",
+  "agent": "epic"
+ },
+ {
+  "id": "epic:r2-122",
+  "s": "text:abhishekanataka",
+  "p": "RETELLS",
+  "o": "narr:vali-slaying",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Abhiṣekanāṭaka act 1, seg. 2.2",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/AN_1.html",
+    "quote": "vālinaṃ hantuṃ samudyogaḥ pravartate"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-123",
+  "s": "text:abhishekanataka",
+  "p": "RETELLS",
+  "o": "narr:rama-coronation",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Abhiṣekanāṭaka act 6, act 6 (opening)",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/AN_6.html"
+   },
+   {
+    "source": "src:keith-1924"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "epic"
+ },
+ {
+  "id": "epic:r2-124",
+  "s": "text:pratimanataka",
+  "p": "RETELLS",
+  "o": "narr:bharata-paduka",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:keith-1924"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "epic"
+ },
+ {
+  "id": "epic:r2-125",
+  "s": "char:krishna",
+  "p": "APPEARS_IN",
+  "o": "text:dutavakya",
+  "qualifiers": {
+   "role": "envoy (Vāsudeva)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Dūtavākya, seg. 41.2",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/DV.html",
+    "quote": "pāṇḍavānāṃ kāryam eva sādhayāmi"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-126",
+  "s": "char:duryodhana",
+  "p": "APPEARS_IN",
+  "o": "text:dutavakya",
+  "qualifiers": {
+   "role": "antagonist"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Dūtavākya, seg. 41.2",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/DV.html"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-127",
+  "s": "char:ghatotkacha",
+  "p": "APPEARS_IN",
+  "o": "text:dutaghatotkaca",
+  "qualifiers": {
+   "role": "envoy"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Dūtaghaṭotkaca, seg. 5.1b",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/DGh.html"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-128",
+  "s": "char:dhritarashtra",
+  "p": "APPEARS_IN",
+  "o": "text:dutaghatotkaca",
+  "qualifiers": {
+   "role": "king"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Dūtaghaṭotkaca, seg. 18.1",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/DGh.html",
+    "quote": "putra kiṃ bhīṣmasya nipātanam abhimanyoś ca vadhaḥ samaḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-129",
+  "s": "char:duryodhana",
+  "p": "APPEARS_IN",
+  "o": "text:dutaghatotkaca",
+  "qualifiers": {
+   "role": "antagonist"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Dūtaghaṭotkaca, seg. 18.2",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/DGh.html"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-130",
+  "s": "char:karna",
+  "p": "APPEARS_IN",
+  "o": "text:karnabhara",
+  "qualifiers": {
+   "role": "protagonist"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Karṇabhāra, seg. 4.3",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/KBh.html",
+    "quote": "tataḥ praviśati yatho^ktarūpaḥ karṇaḥ śalyaś ca"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-131",
+  "s": "char:shalya",
+  "p": "APPEARS_IN",
+  "o": "text:karnabhara",
+  "qualifiers": {
+   "role": "charioteer"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Karṇabhāra, seg. 4.3",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/KBh.html",
+    "quote": "karṇaḥ śalyaś ca"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-132",
+  "s": "deity:indra",
+  "p": "APPEARS_IN",
+  "o": "text:karnabhara",
+  "qualifiers": {
+   "role": "brahmin-disguised suppliant"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Karṇabhāra, v. 21",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/KBh.html",
+    "quote": "śakraḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-133",
+  "s": "char:duryodhana",
+  "p": "APPEARS_IN",
+  "o": "text:urubhanga",
+  "qualifiers": {
+   "role": "protagonist"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Ūrubhaṅga, seg. 52.5",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/UBh.html",
+    "quote": "aham iva pāṇḍavāḥ śuśrūṣayitavyāḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-134",
+  "s": "char:balarama",
+  "p": "APPEARS_IN",
+  "o": "text:urubhanga",
+  "qualifiers": {
+   "role": "raging partisan of Duryodhana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Ūrubhaṅga, seg. 26.5",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/UBh.html",
+    "quote": "tataḥ praviśati baladevaḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-135",
+  "s": "char:ashvatthama",
+  "p": "APPEARS_IN",
+  "o": "text:urubhanga",
+  "qualifiers": {
+   "role": "avenger"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Ūrubhaṅga, seg. 56.1",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/UBh.html",
+    "quote": "tataḥ praviśaty aśvatthāmā"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-136",
+  "s": "char:gandhari",
+  "p": "APPEARS_IN",
+  "o": "text:urubhanga",
+  "qualifiers": {
+   "role": "mother"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Ūrubhaṅga, seg. 36.1",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/UBh.html",
+    "quote": "tataḥ praviśati dhṛtarāṣtro gāndhārī devyau durjayaś ca"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-137",
+  "s": "char:dhritarashtra",
+  "p": "APPEARS_IN",
+  "o": "text:urubhanga",
+  "qualifiers": {
+   "role": "father"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Ūrubhaṅga, seg. 36.1",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/UBh.html"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-138",
+  "s": "char:bhima",
+  "p": "APPEARS_IN",
+  "o": "text:urubhanga",
+  "qualifiers": {
+   "role": "offstage striker"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Ūrubhaṅga, v. 24",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/UBh.html",
+    "quote": "pāṇḍu-tanayeno^rvor vimuktā gadā"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-139",
+  "s": "char:abhimanyu",
+  "p": "APPEARS_IN",
+  "o": "text:urubhanga",
+  "qualifiers": {
+   "role": "vision"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Ūrubhaṅga, seg. 65.5",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/UBh.html",
+    "quote": "kruddho 'bhibhāṣate mām abhimanyaḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-140",
+  "s": "char:bhima",
+  "p": "APPEARS_IN",
+  "o": "text:madhyamavyayoga",
+  "qualifiers": {
+   "role": "“the middle one”"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Madhyamavyāyoga, seg. 37.3",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/MV.html",
+    "quote": "bhīmasenaḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-141",
+  "s": "char:ghatotkacha",
+  "p": "APPEARS_IN",
+  "o": "text:madhyamavyayoga",
+  "qualifiers": {
+   "role": "abductor"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Madhyamavyāyoga, seg. 37.4",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/MV.html",
+    "quote": "kā nāma bhavato mātā ghaṭotkacaḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-142",
+  "s": "char:hidimba",
+  "p": "APPEARS_IN",
+  "o": "text:madhyamavyayoga",
+  "qualifiers": {
+   "role": "mother (offstage until the end)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Madhyamavyāyoga, seg. 37.6",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/MV.html",
+    "quote": "hiḍimbā nāma rākṣasī"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-143",
+  "s": "char:drona",
+  "p": "APPEARS_IN",
+  "o": "text:pancharatra-bhasa",
+  "qualifiers": {
+   "role": "preceptor"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Pañcarātra act 1, v. 1",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/PR_1.html",
+    "quote": "droṇaḥ pṛthivy-arjuna-bhīma-dūto"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-144",
+  "s": "char:duryodhana",
+  "p": "APPEARS_IN",
+  "o": "text:pancharatra-bhasa",
+  "qualifiers": {
+   "role": "king"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Pañcarātra act 1, seg. 25.8",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/PR_1.html"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-145",
+  "s": "char:shakuni",
+  "p": "APPEARS_IN",
+  "o": "text:pancharatra-bhasa",
+  "qualifiers": {
+   "role": "adviser"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Pañcarātra act 1, seg. 25.10",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/PR_1.html",
+    "quote": "śakuniḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-146",
+  "s": "char:krishna",
+  "p": "APPEARS_IN",
+  "o": "text:balacarita",
+  "qualifiers": {
+   "role": "child hero"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Bālacarita act 5, v. 6",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/BC_5.html"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-147",
+  "s": "char:kamsa",
+  "p": "APPEARS_IN",
+  "o": "text:balacarita",
+  "qualifiers": {
+   "role": "antagonist"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Bālacarita act 5, v. 6",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/BC_5.html",
+    "quote": "kaṃsa-hatakaṃ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-148",
+  "s": "char:balarama",
+  "p": "APPEARS_IN",
+  "o": "text:balacarita",
+  "qualifiers": {
+   "role": "brother"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Bālacarita act 5, v. 7",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/BC_5.html",
+    "quote": "saṅkarṣaṇaḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-149",
+  "s": "char:rama",
+  "p": "APPEARS_IN",
+  "o": "text:abhishekanataka",
+  "qualifiers": {
+   "role": "hero"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Abhiṣekanāṭaka act 1, seg. 2.2",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/AN_1.html"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-150",
+  "s": "char:sugriva",
+  "p": "APPEARS_IN",
+  "o": "text:abhishekanataka",
+  "qualifiers": {
+   "role": "ally"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Abhiṣekanāṭaka act 1, seg. 2.2",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/AN_1.html",
+    "quote": "sugrīvasya ca parasparo^pakāra-kṛta-pratijñayoḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-151",
+  "s": "char:vali",
+  "p": "APPEARS_IN",
+  "o": "text:abhishekanataka",
+  "qualifiers": {
+   "role": "antagonist of act 1"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Abhiṣekanāṭaka act 1, seg. 2.2",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/AN_1.html",
+    "quote": "vālinaṃ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-152",
+  "s": "char:rama",
+  "p": "APPEARS_IN",
+  "o": "text:pratimanataka",
+  "qualifiers": {
+   "role": "hero"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Pratimānāṭaka act 3, seg. 0.21b",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/PN_3.html",
+    "quote": "bhartu-dārakasya rāmasya"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-153",
+  "s": "char:dasharatha",
+  "p": "APPEARS_IN",
+  "o": "text:pratimanataka",
+  "qualifiers": {
+   "role": "statue / deceased king"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Pratimānāṭaka act 3, seg. 0.21b",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/PN_3.html",
+    "quote": "bhartur daśarathasya pratimā-gehaṃ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-154",
+  "s": "char:kausalya",
+  "p": "APPEARS_IN",
+  "o": "text:pratimanataka",
+  "qualifiers": {
+   "role": "queen"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Pratimānāṭaka act 3, seg. 0.21b",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/PN_3.html",
+    "quote": "kausalyā-purogaiḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-155",
+  "s": "char:durjaya-urubhanga",
+  "p": "APPEARS_IN",
+  "o": "text:urubhanga",
+  "qualifiers": {
+   "role": "son"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Ūrubhaṅga, seg. 41.6",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/UBh.html",
+    "quote": "tāta ahaṃ durjayaḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-156",
+  "s": "char:duryodhana",
+  "p": "PARENT_OF",
+  "o": "char:durjaya-urubhanga",
+  "qualifiers": {
+   "text": "text:urubhanga"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Ūrubhaṅga, seg. 41.7",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/UBh.html",
+    "quote": "pautra durjaya pitaram anviccha"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-157",
+  "s": "char:bharata-ramayana",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:bharata-statue-house",
+  "qualifiers": {
+   "text": "text:pratimanataka"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Pratimānāṭaka act 3, seg. 0.21b",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/PN_3.html"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-158",
+  "s": "char:dasharatha",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:bharata-statue-house",
+  "qualifiers": {
+   "text": "text:pratimanataka"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Pratimānāṭaka act 3, seg. 0.21b",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/PN_3.html"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-159",
+  "s": "narr:bharata-statue-house",
+  "p": "NARRATED_IN",
+  "o": "text:pratimanataka",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Pratimānāṭaka act 3, seg. 0.21b",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/PN_3.html"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-160",
+  "s": "narr:bharata-statue-house",
+  "p": "PRECEDES",
+  "o": "narr:bharata-paduka",
+  "qualifiers": {
+   "text": "text:pratimanataka"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:keith-1924"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "epic"
+ },
+ {
+  "id": "epic:r2-161",
+  "s": "narr:dasharatha-death",
+  "p": "PRECEDES",
+  "o": "narr:bharata-statue-house",
+  "qualifiers": {
+   "text": "text:pratimanataka"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Pratimānāṭaka act 3, seg. 0.21b",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/PN_3.html"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-162",
+  "s": "char:bhima",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:madhyama-encounter",
+  "qualifiers": {
+   "text": "text:madhyamavyayoga"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Madhyamavyāyoga, seg. 37.3–37.6",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/MV.html"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-163",
+  "s": "char:ghatotkacha",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:madhyama-encounter",
+  "qualifiers": {
+   "text": "text:madhyamavyayoga"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Madhyamavyāyoga, seg. 37.3–37.6",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/MV.html"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-164",
+  "s": "char:hidimba",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:madhyama-encounter",
+  "qualifiers": {
+   "text": "text:madhyamavyayoga"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Madhyamavyāyoga, seg. 37.3–37.6",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/MV.html"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-165",
+  "s": "narr:madhyama-encounter",
+  "p": "NARRATED_IN",
+  "o": "text:madhyamavyayoga",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Madhyamavyāyoga, seg. 2.3–37.6",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/MV.html"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-166",
+  "s": "char:karna",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:karna-armour-gift",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-mbh-ce",
+    "locator": "MBh (CE) 3.294",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-167",
+  "s": "deity:indra",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:karna-armour-gift",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-mbh-ce",
+    "locator": "MBh (CE) 3.294",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-168",
+  "s": "narr:karna-armour-gift",
+  "p": "NARRATED_IN",
+  "o": "psg:mbh-karna-kundala-harana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-mbh-ce",
+    "locator": "MBh (CE) 3.294.1–38",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-169",
+  "s": "narr:karna-armour-gift",
+  "p": "NARRATED_IN",
+  "o": "text:karnabhara",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "locator": "Karṇabhāra, v. 21–seg. 23.3",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/KBh.html",
+    "quote": "deyaṃ tathā^pi kavacaṃ saha kuṇḍalābhyāṃ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-170",
+  "s": "narr:karna-armour-gift",
+  "p": "PRECEDES",
+  "o": "narr:ghatotkacha-death",
+  "qualifiers": {
+   "text": "text:mahabharata",
+   "note": "the spear obtained here kills Ghaṭotkaca"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-mbh-ce",
+    "locator": "MBh (CE) 3.294.21",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm"
+   },
+   {
+    "source": "src:gretil-mbh-ce",
+    "locator": "MBh (CE) 7.154",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_07_u.htm"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-171",
+  "s": "text:abhishekanataka",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:kutiyattam",
+  "qualifiers": {
+   "note": "performed in the Kūṭiyāṭṭam tradition of Kerala"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/",
+    "locator": "home page: performance images in Kūṭiyāṭṭam style"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-172",
+  "s": "text:balacarita",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:kutiyattam",
+  "qualifiers": {
+   "note": "performed in the Kūṭiyāṭṭam tradition of Kerala"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/",
+    "locator": "home page: performance images in Kūṭiyāṭṭam style"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-173",
+  "s": "text:dutaghatotkaca",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:kutiyattam",
+  "qualifiers": {
+   "note": "performed in the Kūṭiyāṭṭam tradition of Kerala"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/",
+    "locator": "home page: performance images in Kūṭiyāṭṭam style"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "epic:r2-174",
+  "s": "text:dutavakya",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:kutiyattam",
+  "qualifiers": {
+   "note": "performed in the Kūṭiyāṭṭam tradition of Kerala"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:bhasa-project-wuerzburg",
+    "url": "https://www.bhasa.indologie.uni-wuerzburg.de/",
+    "locator": "home page: performance images in Kūṭiyāṭṭam style"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "epic",
+  "lastVerified": "2026-11-08"
+ }
+]

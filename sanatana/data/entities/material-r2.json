@@ -1,0 +1,1934 @@
+[
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "pol:western-kshatrapa",
+  "type": "polity",
+  "name": "Western Kṣatrapas (Kārdamaka line of Caṣṭana)",
+  "aliases": [
+   "Western Satraps",
+   "Kshatrapas of Ujjayinī"
+  ],
+  "summary": "Śaka rulers of western and central India (Gujarat, Malwa) from the 1st to the 4th century CE, whose dated records use the Śaka era. Rudradāman I of this line issued the Junagadh rock inscription of year 72.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "rule",
+    "start": 35,
+    "end": 415,
+    "label": "c. 35–415 CE",
+    "certainty": "estimated",
+    "basis": "dated inscriptions and dated coinage in the Śaka era",
+    "sources": [
+     {
+      "source": "src:sircar-1965",
+      "locator": "bk. II, nos. 61–67 (records of Caṣṭana and Rudradāman)",
+      "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+      "url": "https://archive.org/details/dli.calcutta.11040"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Western_Satraps"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, ch. II, records of the Śaka satraps",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Western_Satraps"
+   }
+  ],
+  "status": "reference-checked",
+  "confidence": "medium"
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "person:rudradaman-i",
+  "type": "person",
+  "name": "Rudradāman I",
+  "iast": "Rudradāman",
+  "roles": [
+   "king"
+  ],
+  "summary": "Mahākṣatrapa of the Western Kṣatrapa (Kārdamaka) line, grandson of Caṣṭana. His Junagadh rock inscription of (Śaka) year 72 = c. 150 CE is the earliest long royal praśasti in Sanskrit.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "floruit",
+    "start": 130,
+    "end": 155,
+    "label": "c. 130–150 CE",
+    "certainty": "estimated",
+    "basis": "dated inscriptions (Andhau year 52, Junagadh year 72) in the Śaka era",
+    "sources": [
+     {
+      "source": "src:sircar-1965",
+      "locator": "bk. II, no. 67, p. 175",
+      "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+      "url": "https://archive.org/details/dli.calcutta.11040"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, no. 67, pp. 175–180",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Rudradaman_I"
+   }
+  ],
+  "status": "verified-online",
+  "confidence": "high"
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "person:ashoka",
+  "type": "person",
+  "name": "Aśoka (Maurya)",
+  "iast": "Aśoka",
+  "aliases": [
+   "Asoka",
+   "Ashoka",
+   "Devānaṃpiya Piyadasi"
+  ],
+  "roles": [
+   "king"
+  ],
+  "summary": "Mauryan emperor (r. c. 268–232 BCE) whose rock edicts at Girnar share a boulder with the inscriptions of Rudradāman and Skandagupta; the Junagadh inscription names him as the king for whom the Yavana Tuṣāspha built conduits on the Sudarśana lake.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "reign",
+    "start": -268,
+    "end": -232,
+    "label": "c. 268–232 BCE",
+    "certainty": "estimated",
+    "basis": "regnal synchronisms in the edicts (Hellenistic kings named in Rock Edict XIII)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ashoka"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, no. 67, line 8 (Aśoka the Maurya)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ashoka"
+   }
+  ],
+  "status": "reference-checked",
+  "confidence": "medium"
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "person:samudragupta",
+  "type": "person",
+  "name": "Samudragupta",
+  "iast": "Samudragupta",
+  "roles": [
+   "king"
+  ],
+  "summary": "Gupta emperor (r. c. 335/350–375 CE), son of Candragupta I and the Licchavi princess Kumāradevī. His conquests are recorded in Hariṣeṇa's praśasti on the Allahabad pillar; his coins include the Garuḍa-standard and aśvamedha types.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "reign",
+    "start": 335,
+    "end": 380,
+    "label": "c. 335/350–375 CE",
+    "certainty": "estimated",
+    "basis": "regnal sequence of the Gupta records; no dated record of his own",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Samudragupta"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "Allahabad praśasti, line 29",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00001"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 1"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Samudragupta"
+   }
+  ],
+  "status": "verified-online",
+  "confidence": "high"
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "person:harishena",
+  "type": "person",
+  "name": "Hariṣeṇa",
+  "iast": "Hariṣeṇa",
+  "roles": [
+   "poet",
+   "minister"
+  ],
+  "summary": "Gupta minister (sāndhivigrahika, kumārāmātya, mahādaṇḍanāyaka), son of Dhruvabhūti, who composed the praśasti of Samudragupta inscribed on the Allahabad pillar.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "floruit",
+    "start": 335,
+    "end": 380,
+    "label": "mid–later 4th century CE",
+    "certainty": "estimated",
+    "basis": "contemporary of Samudragupta",
+    "sources": [
+     {
+      "source": "src:fleet-1888",
+      "locator": "no. 1"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "Allahabad praśasti, line 32",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00001"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 1"
+   }
+  ],
+  "status": "verified-online",
+  "confidence": "high"
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "person:skandagupta",
+  "type": "person",
+  "name": "Skandagupta",
+  "iast": "Skandagupta",
+  "roles": [
+   "king"
+  ],
+  "summary": "Gupta emperor (r. c. 455–467 CE), son of Kumāragupta I. His Bhitari pillar records the installation of an image of Viṣṇu (Śārṅgin) and battles with the Hūṇas; his Junagadh rock inscription records the repair of the Sudarśana lake (Gupta years 136–138).",
+  "dates": [
+   {
+    "system": "material",
+    "event": "reign",
+    "start": 455,
+    "end": 467,
+    "label": "c. 455–467 CE",
+    "certainty": "estimated",
+    "basis": "dated records Gupta years 136–148",
+    "sources": [
+     {
+      "source": "src:dharmalekha",
+      "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00032"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Skandagupta"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00036"
+   },
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00032"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 13"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 14"
+   }
+  ],
+  "status": "verified-online",
+  "confidence": "high"
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "person:parnadatta",
+  "type": "person",
+  "name": "Parṇadatta",
+  "iast": "Parṇadatta",
+  "roles": [
+   "governor"
+  ],
+  "summary": "Governor of Surāṣṭra appointed by Skandagupta, named in the Junagadh rock inscription; father of Cakrapālita.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "floruit",
+    "start": 455,
+    "end": 460,
+    "label": "c. 455–458 CE",
+    "certainty": "secure",
+    "basis": "Gupta years 136–138 in the Junagadh inscription",
+    "sources": [
+     {
+      "source": "src:dharmalekha",
+      "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00032"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "vv. 11–14",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00032"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 14"
+   }
+  ],
+  "status": "verified-online",
+  "confidence": "high"
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "person:chakrapalita",
+  "type": "person",
+  "name": "Cakrapālita",
+  "iast": "Cakrapālita",
+  "roles": [
+   "official"
+  ],
+  "summary": "Son of Parṇadatta and officer at Girinagara (Junagadh) who repaired the Sudarśana lake embankment after it burst in Gupta year 136 and, according to Fleet's reading, built a temple of Viṣṇu (Cakrabhṛt) in year 138.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "floruit",
+    "start": 455,
+    "end": 460,
+    "label": "c. 455–458 CE",
+    "certainty": "secure",
+    "basis": "Gupta years 136–138",
+    "sources": [
+     {
+      "source": "src:dharmalekha",
+      "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00032"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "v. 16",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00032"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 14"
+   }
+  ],
+  "status": "verified-online",
+  "confidence": "high"
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "person:uditacharya",
+  "type": "person",
+  "name": "Uditācārya",
+  "iast": "Ārya Uditācārya",
+  "roles": [
+   "Pāśupata teacher"
+  ],
+  "summary": "Māheśvara (Pāśupata) teacher who in Gupta year 61 (380 CE) installed two liṅgas named after his teachers, Upamiteśvara and Kapileśvara, at Mathurā. The record counts him tenth in descent from Kuśika.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "floruit",
+    "start": 380,
+    "end": 381,
+    "label": "380 CE (Gupta year 61)",
+    "certainty": "secure",
+    "basis": "dated inscription",
+    "sources": [
+     {
+      "source": "src:dharmalekha",
+      "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00008"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "lines 5–10",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00008"
+   }
+  ],
+  "status": "verified-online",
+  "confidence": "high"
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "pol:kadamba",
+  "type": "polity",
+  "name": "Kadamba dynasty (Banavāsi)",
+  "iast": "Kadamba",
+  "summary": "Dynasty of the western Deccan (4th–6th century CE) with its capital at Vaijayantī (Banavāsi); its founding legend, the brahmin Mayūraśarman turning warrior after a quarrel at the Pallava capital, is told in the Tāḷagunda inscription.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "rule",
+    "start": 345,
+    "end": 540,
+    "label": "c. 345–540 CE",
+    "certainty": "estimated",
+    "basis": "regnal sequence of copper-plate grants",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kadamba_dynasty"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham01050"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kadamba_dynasty"
+   }
+  ],
+  "status": "reference-checked",
+  "confidence": "medium"
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "person:mayurasharman",
+  "type": "person",
+  "name": "Mayūraśarman",
+  "iast": "Mayūraśarman",
+  "roles": [
+   "king",
+   "brahmin"
+  ],
+  "summary": "Founder of the Kadamba dynasty as the Tāḷagunda inscription tells it: a brahmin of the Kadamba family who went to the Pallava capital to study, was humiliated in a quarrel with a Pallava horseman and took up arms.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "floruit",
+    "start": 345,
+    "end": 365,
+    "label": "mid-4th century CE",
+    "certainty": "estimated",
+    "basis": "genealogy of the Tāḷagunda inscription counted back from Śāntivarman",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mayurasharma"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "vv. 9–12",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham01050"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mayurasharma"
+   }
+  ],
+  "status": "verified-online",
+  "limits": "Known almost entirely from a dynastic praśasti written about a century later; the story is foundation narrative, not contemporary report.",
+  "confidence": "medium"
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "person:shantivarman-kadamba",
+  "type": "person",
+  "name": "Śāntivarman (Kadamba)",
+  "iast": "Śāntivarman",
+  "roles": [
+   "king"
+  ],
+  "summary": "Kadamba king in whose reign the poet Kubja engraved the Tāḷagunda pillar praśasti; grandson of Kākusthavarman.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "floruit",
+    "start": 450,
+    "end": 475,
+    "label": "mid-5th century CE",
+    "certainty": "estimated",
+    "basis": "Kadamba regnal sequence",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Talagunda"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "v. 34",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham01050"
+   }
+  ],
+  "status": "verified-online",
+  "confidence": "medium"
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "person:kubja-poet",
+  "type": "person",
+  "name": "Kubja (poet of Tāḷagunda)",
+  "iast": "Kubja",
+  "roles": [
+   "poet"
+  ],
+  "summary": "Poet who composed and engraved (\"lilekha\") the Tāḷagunda praśasti of the Kadambas under Śāntivarman.",
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "v. 34",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham01050"
+   }
+  ],
+  "status": "verified-online",
+  "confidence": "medium"
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "person:parameshvaravarman-i",
+  "type": "person",
+  "name": "Parameśvaravarman I (Pallava)",
+  "iast": "Parameśvaravarman",
+  "roles": [
+   "king"
+  ],
+  "summary": "Pallava king (r. c. 670–695 CE) in whose time the Kūram copper plates were issued for a Śiva temple at Kūram; the grant provides for recitation of the Bhārata.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "reign",
+    "start": 670,
+    "end": 695,
+    "label": "c. 670–695 CE",
+    "certainty": "estimated",
+    "basis": "Pallava regnal sequence",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Parameshvaravarman_I"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSPallava00046"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Parameshvaravarman_I"
+   }
+  ],
+  "status": "reference-checked",
+  "confidence": "medium"
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "person:sundara-chola",
+  "type": "person",
+  "name": "Sundara Cōḻa (Parāntaka II)",
+  "iast": "Sundara Cōḻa",
+  "roles": [
+   "king"
+  ],
+  "summary": "Cōḻa king (r. c. 957–970 CE), father of Rājarāja I; the Anbil copper plates were issued in his fourth regnal year.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "reign",
+    "start": 957,
+    "end": 973,
+    "label": "c. 957–970 CE",
+    "certainty": "estimated",
+    "basis": "Cōḻa regnal sequence",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Parantaka_II"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSTamilNadu01003"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Parantaka_II"
+   }
+  ],
+  "status": "reference-checked",
+  "confidence": "medium"
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "site:girnar-junagadh",
+  "type": "site",
+  "name": "Girnar rock (Junagadh) — Aśokan rock with Rudradāman and Skandagupta inscriptions",
+  "aliases": [
+   "Girinagara",
+   "Junagarh rock",
+   "Junagadh Ashokan rock edict"
+  ],
+  "summary": "Granite boulder at the foot of Girnar near Junagadh, Gujarat, carrying Aśoka's fourteen rock edicts, the Sanskrit praśasti of Rudradāman (c. 150 CE) and the record of Skandagupta (455–458 CE), all three linked to the Sudarśana reservoir.",
+  "location": {
+   "lat": 21.5226,
+   "lon": 70.4787,
+   "precision": "approximate",
+   "label": "Junagadh, Gujarat, India",
+   "country": "India"
+  },
+  "dates": [
+   {
+    "system": "material",
+    "event": "earliest-inscription",
+    "start": -260,
+    "end": -250,
+    "label": "mid-3rd century BCE (Aśokan edicts)",
+    "certainty": "estimated",
+    "basis": "Aśokan regnal chronology",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Edicts_of_Ashoka"
+     }
+    ]
+   },
+   {
+    "system": "material",
+    "event": "latest-inscription",
+    "start": 455,
+    "end": 458,
+    "label": "455–458 CE (Skandagupta)",
+    "certainty": "secure",
+    "basis": "dated inscription (Gupta years 136–138)",
+    "sources": [
+     {
+      "source": "src:dharmalekha",
+      "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00032"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, no. 67 (findspot)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Junagadh_rock_inscription_of_Rudradaman"
+   }
+  ],
+  "status": "verified-online",
+  "evidenceClass": 4,
+  "limits": "A rock used for successive royal records; it documents how three dynasties used one public surface over seven centuries, not the history of the lake beyond what the texts claim.",
+  "confidence": "medium"
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "site:bhitari",
+  "type": "site",
+  "name": "Bhitari (Ghazipur district)",
+  "iast": "Bhitarī",
+  "summary": "Village in Ghazipur district, Uttar Pradesh, with Skandagupta's inscribed pillar and Gupta-period brick remains; a seal of Kumāragupta II was also found here.",
+  "location": {
+   "lat": 25.56,
+   "lon": 83.33,
+   "precision": "approximate",
+   "label": "Bhitari, Ghazipur district, Uttar Pradesh, India",
+   "country": "India"
+  },
+  "dates": [
+   {
+    "system": "material",
+    "event": "pillar-inscription",
+    "start": 455,
+    "end": 467,
+    "label": "c. 455–467 CE",
+    "certainty": "estimated",
+    "basis": "reign of Skandagupta",
+    "sources": [
+     {
+      "source": "src:fleet-1888",
+      "locator": "no. 13"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00036"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bhitari"
+   }
+  ],
+  "evidenceClass": 4,
+  "status": "reference-checked",
+  "limits": "The pillar dates the installation it records; the surrounding brick structures are not securely dated by the inscription.",
+  "confidence": "medium"
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "site:bilsad",
+  "type": "site",
+  "name": "Bilsad (Etah district)",
+  "iast": "Bilsaḍ",
+  "summary": "Village in Etah district, Uttar Pradesh, where two inscribed pillars of Gupta year 96 record works at a temple of Svāmi-Mahāsena (Kārttikeya).",
+  "location": {
+   "lat": 27.62,
+   "lon": 78.92,
+   "precision": "region",
+   "label": "Bilsar, Etah district, Uttar Pradesh, India",
+   "country": "India"
+  },
+  "dates": [
+   {
+    "system": "material",
+    "event": "inscription",
+    "start": 415,
+    "end": 416,
+    "label": "415/416 CE (Gupta year 96)",
+    "certainty": "secure",
+    "basis": "dated inscription",
+    "sources": [
+     {
+      "source": "src:dharmalekha",
+      "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00019"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00019"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 10"
+   }
+  ],
+  "evidenceClass": 4,
+  "status": "verified-online",
+  "limits": "Coordinates are approximate (village level). The pillars attest the temple; its structure is not preserved.",
+  "confidence": "medium"
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "site:talagunda",
+  "type": "site",
+  "name": "Tāḷagunda (Sthānakuṇḍūra)",
+  "iast": "Tāḷagunda",
+  "aliases": [
+   "Talagunda",
+   "Sthanakundura"
+  ],
+  "summary": "Village in Shikaripura taluk, Shivamogga district, Karnataka, ancient Sthānakuṇḍūra, with the Praṇaveśvara temple and the 5th-century Kadamba pillar inscription.",
+  "location": {
+   "lat": 14.42,
+   "lon": 75.25,
+   "precision": "approximate",
+   "label": "Talagunda, Shivamogga district, Karnataka, India",
+   "country": "India"
+  },
+  "dates": [
+   {
+    "system": "material",
+    "event": "inscription",
+    "start": 450,
+    "end": 475,
+    "label": "mid-5th century CE",
+    "certainty": "estimated",
+    "basis": "Kadamba regnal sequence; palaeography",
+    "sources": [
+     {
+      "source": "src:dharmalekha",
+      "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham01050"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham01050"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Talagunda"
+   }
+  ],
+  "evidenceClass": 4,
+  "status": "reference-checked",
+  "limits": "Site of a dated-by-reign record; the present temple fabric is later.",
+  "confidence": "medium"
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "site:uttaramerur",
+  "type": "site",
+  "name": "Uttaramērūr",
+  "iast": "Uttaramērūr",
+  "aliases": [
+   "Uttiramerur",
+   "Uttaramallur"
+  ],
+  "summary": "Brahmin village (caturvedimaṅgalam) in Kanchipuram district, Tamil Nadu, whose temple walls carry Pallava and Cōḻa inscriptions, including the assembly (sabhā) regulations of Parāntaka I's 12th and 14th years.",
+  "location": {
+   "lat": 12.6167,
+   "lon": 79.75,
+   "precision": "approximate",
+   "label": "Uttiramerur, Kanchipuram district, Tamil Nadu, India",
+   "country": "India"
+  },
+  "dates": [
+   {
+    "system": "material",
+    "event": "inscriptions",
+    "start": 750,
+    "end": 1250,
+    "label": "c. 8th–13th century CE",
+    "certainty": "estimated",
+    "basis": "dated Pallava and Cōḻa inscriptions",
+    "sources": [
+     {
+      "source": "src:dharmalekha",
+      "url": "https://dharmalekha.info/texts/DHARMA_INSSIIv03p0i0160"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Uttaramerur"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "assembly of Uttaramērūr-caturvedimaṅgalam",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSIIv03p0i0160"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Uttaramerur"
+   }
+  ],
+  "evidenceClass": 4,
+  "status": "reference-checked",
+  "limits": "Documents village self-government in a brahmadeya; it does not show that such rules applied outside Brahmin villages.",
+  "confidence": "medium"
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "ins:junagadh-rudradaman",
+  "type": "inscription",
+  "name": "Junagadh rock inscription of Rudradāman I (year 72)",
+  "iast": "Junāgaḍh",
+  "aliases": [
+   "Girnar inscription of Rudradaman",
+   "Junagarh rock inscription"
+  ],
+  "subtype": "rock inscription (praśasti)",
+  "summary": "Sanskrit prose praśasti cut on the Girnar rock in (Śaka) year 72, c. 150 CE, recording the repair of the Sudarśana lake after a storm. It recalls that the lake was made by Puṣyagupta, provincial governor of Candragupta Maurya, and given conduits by the Yavana Tuṣāspha for Aśoka. It is the earliest long royal record composed in Sanskrit.",
+  "details": "The repair was carried out by the Pahlava minister Suviśākha, son of Kulaipa, without forced labour or extra taxes, the text says. The record praises Rudradāman's learning in grammar, music and logic, and his skill in prose and verse.\n\nKielhorn edited it in Epigraphia Indica VIII; Sircar reprints it with notes.",
+  "attributes": {
+   "language": "Sanskrit (prose)",
+   "script": "Brāhmī",
+   "era": "Śaka (year 72)",
+   "editions": [
+    "Kielhorn, EI VIII, pp. 42ff.",
+    "Sircar 1965, bk. II no. 67",
+    "Lüders List no. 965"
+   ]
+  },
+  "dates": [
+   {
+    "system": "material",
+    "event": "inscription",
+    "start": 150,
+    "end": 151,
+    "label": "(Śaka) year 72, Mārgaśīrṣa = c. 150 CE",
+    "certainty": "secure",
+    "basis": "dated inscription; era identified as the Śaka era of 78 CE",
+    "sources": [
+     {
+      "source": "src:sircar-1965",
+      "locator": "bk. II, no. 67, pp. 175–180 (Junagarh rock inscription of Rudradāman I, year 72; Lüders List no. 965)",
+      "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+      "url": "https://archive.org/details/dli.calcutta.11040"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 21.5226,
+   "lon": 70.4787,
+   "precision": "approximate",
+   "label": "Junagadh, Gujarat, India",
+   "country": "India"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, no. 67, pp. 175–180 (Junagarh rock inscription of Rudradāman I, year 72; Lüders List no. 965)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   },
+   {
+    "source": "src:kielhorn-ei8-junagadh",
+    "locator": "pp. 42ff. (per Sircar)"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Junagadh_rock_inscription_of_Rudradaman"
+   }
+  ],
+  "status": "verified-online",
+  "confidence": "high",
+  "limits": "Establishes royal use of Sanskrit prose by c. 150 CE and a Gujarati tradition about Mauryan waterworks four centuries earlier; the Mauryan statements are the inscription's own historical memory, not contemporary Mauryan evidence."
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "ins:allahabad-pillar-samudragupta",
+  "type": "inscription",
+  "name": "Allahabad pillar praśasti of Samudragupta",
+  "aliases": [
+   "Prayag praśasti",
+   "Allahabad Prasasti"
+  ],
+  "subtype": "pillar inscription (praśasti)",
+  "summary": "Sanskrit praśasti in verse and prose by Hariṣeṇa, cut on an Aśokan pillar now in the Allahabad Fort, listing Samudragupta's conquests in Āryāvarta, the Deccan and the frontiers. It compares the king to Dhanada (Kubera), Varuṇa, Indra and Antaka (Yama) and likens his fame to the Gaṅgā released from Paśupati's matted locks.",
+  "attributes": {
+   "language": "Sanskrit",
+   "script": "Brāhmī (Gupta)",
+   "composer": "Hariṣeṇa",
+   "support": "Aśokan sandstone pillar",
+   "editions": [
+    "Fleet 1888 no. 1",
+    "Bhandarkar et al. 1981 no. 1",
+    "Sircar 1965 bk. III no. 2"
+   ]
+  },
+  "dates": [
+   {
+    "system": "material",
+    "event": "inscription",
+    "start": 350,
+    "end": 380,
+    "label": "c. 350–380 CE",
+    "certainty": "estimated",
+    "basis": "undated; reign of Samudragupta",
+    "sources": [
+     {
+      "source": "src:dharmalekha",
+      "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00001"
+     },
+     {
+      "source": "src:fleet-1888",
+      "locator": "no. 1"
+     },
+     {
+      "source": "src:sircar-1965",
+      "locator": "bk. III, no. 2",
+      "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+      "url": "https://archive.org/details/dli.calcutta.11040"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 25.431,
+   "lon": 81.877,
+   "precision": "approximate",
+   "label": "Allahabad Fort, Prayagraj, Uttar Pradesh, India",
+   "country": "India"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00001"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 1"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III, no. 2",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Allahabad_Pillar"
+   }
+  ],
+  "status": "verified-online",
+  "confidence": "high",
+  "limits": "A court eulogy: it shows how Samudragupta wished his rule to be seen and which kings he claimed to have subdued; the extent of real control is debated. The divine comparisons are poetic conventions, not cult evidence."
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "ins:bhitari-skandagupta",
+  "type": "inscription",
+  "name": "Bhitari pillar inscription of Skandagupta",
+  "subtype": "pillar inscription",
+  "summary": "Sanskrit inscription on a sandstone pillar at Bhitari recording that Skandagupta installed an image of Śārṅgin (Viṣṇu bearing the bow Śārṅga) and granted the village to it. It also alludes to his fight with the Hūṇas and gives the Gupta genealogy, calling Kumāragupta I a parama-bhāgavata.",
+  "attributes": {
+   "language": "Sanskrit",
+   "script": "Brāhmī (Gupta)",
+   "editions": [
+    "Fleet 1888 no. 13",
+    "Bhandarkar et al. 1981 no. 31",
+    "Sircar 1965 bk. III no. 28"
+   ]
+  },
+  "dates": [
+   {
+    "system": "material",
+    "event": "inscription",
+    "start": 455,
+    "end": 467,
+    "label": "c. 455–467 CE",
+    "certainty": "estimated",
+    "basis": "undated; reign of Skandagupta",
+    "sources": [
+     {
+      "source": "src:dharmalekha",
+      "locator": "vv. 8–11",
+      "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00036"
+     },
+     {
+      "source": "src:fleet-1888",
+      "locator": "no. 13"
+     },
+     {
+      "source": "src:sircar-1965",
+      "locator": "bk. III, no. 28",
+      "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+      "url": "https://archive.org/details/dli.calcutta.11040"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 25.56,
+   "lon": 83.33,
+   "precision": "approximate",
+   "label": "Bhitari, Ghazipur district, Uttar Pradesh, India",
+   "country": "India"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "vv. 8–11",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00036"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 13"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III, no. 28",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bhitari_pillar_inscription_of_Skandagupta"
+   }
+  ],
+  "status": "verified-online",
+  "confidence": "high",
+  "limits": "Records the installation of a Viṣṇu image and a royal claim of victory over the Hūṇas; the image itself is not identified among surviving sculptures."
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "ins:junagadh-skandagupta",
+  "type": "inscription",
+  "name": "Junagadh rock inscription of Skandagupta (Gupta years 136–138)",
+  "subtype": "rock inscription",
+  "summary": "Sanskrit verse inscription on the Girnar rock recording that the Sudarśana lake burst in Gupta year 136 (455/456 CE) and was repaired by Cakrapālita, son of the governor Parṇadatta, under Skandagupta. It opens by praising Viṣṇu, who took back Śrī from Bali for the sake of Indra — the Vāmana story.",
+  "attributes": {
+   "language": "Sanskrit",
+   "script": "Brāhmī (Gupta)",
+   "editions": [
+    "Fleet 1888 no. 14",
+    "Bhandarkar et al. 1981 no. 28",
+    "Sircar 1965 bk. III no. 25"
+   ]
+  },
+  "dates": [
+   {
+    "system": "material",
+    "event": "inscription",
+    "start": 455,
+    "end": 458,
+    "label": "Gupta years 136–138 = 455–458 CE",
+    "certainty": "secure",
+    "basis": "dated inscription",
+    "sources": [
+     {
+      "source": "src:dharmalekha",
+      "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00032"
+     },
+     {
+      "source": "src:fleet-1888",
+      "locator": "no. 14"
+     },
+     {
+      "source": "src:sircar-1965",
+      "locator": "bk. III, no. 25",
+      "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+      "url": "https://archive.org/details/dli.calcutta.11040"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 21.5226,
+   "lon": 70.4787,
+   "precision": "approximate",
+   "label": "Junagadh, Gujarat, India",
+   "country": "India"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00032"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 14"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III, no. 25",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Junagadh_rock_inscription_of_Skandagupta"
+   }
+  ],
+  "status": "verified-online",
+  "confidence": "high",
+  "limits": "Shows the Vāmana–Bali story in a dated public text by 455 CE; it does not show which Purāṇic version the poet knew."
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "ins:mathura-pilaster-candragupta-ii",
+  "type": "inscription",
+  "name": "Mathurā pilaster inscription of Candragupta II (Gupta year 61)",
+  "aliases": [
+   "Mathura Lakulisha pilaster inscription",
+   "Mathura pillar inscription of Chandragupta II"
+  ],
+  "subtype": "pilaster inscription",
+  "summary": "Inscription dated Gupta year 61 (380 CE), in the fifth regnal year of Candragupta II, son of Samudragupta. It records that the Māheśvara teacher Uditācārya, tenth in descent from Kuśika, installed liṅgas named Upamiteśvara and Kapileśvara in a shrine of his teachers. The earliest dated epigraphic evidence of the Pāśupata teacher lineage.",
+  "attributes": {
+   "language": "Sanskrit",
+   "script": "Brāhmī (Gupta)",
+   "editions": [
+    "D. R. Bhandarkar, EI XXI (1931–32)",
+    "Bhandarkar et al. 1981 no. 6",
+    "Sircar 1965 bk. III no. 9"
+   ],
+   "repository": "Government Museum, Mathurā (as generally reported; not checked)"
+  },
+  "dates": [
+   {
+    "system": "material",
+    "event": "inscription",
+    "start": 380,
+    "end": 381,
+    "label": "Gupta year 61 = 380 CE",
+    "certainty": "secure",
+    "basis": "dated inscription (also regnal year 5 of Candragupta II)",
+    "sources": [
+     {
+      "source": "src:dharmalekha",
+      "locator": "lines 1–11",
+      "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00008"
+     },
+     {
+      "source": "src:sircar-1965",
+      "locator": "bk. III, no. 9",
+      "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+      "url": "https://archive.org/details/dli.calcutta.11040"
+     }
+    ]
+   }
+  ],
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "lines 1–11",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00008"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III, no. 9",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mathura_pillar_inscription_of_Chandragupta_II"
+   }
+  ],
+  "status": "verified-online",
+  "confidence": "high",
+  "limits": "Dates a Pāśupata teaching line and liṅga installation to 380 CE; the identification of Kuśika with a disciple of Lakulīśa comes from later Pāśupata texts, not from this record."
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "ins:bilsad-kumaragupta",
+  "type": "inscription",
+  "name": "Bilsad pillar inscription of Kumāragupta I (Gupta year 96)",
+  "subtype": "pillar inscription (two copies)",
+  "summary": "Inscription of Gupta year 96 (415/416 CE), in the reign of Kumāragupta I, recording works by Dhruvaśarman at the temple (āyatana) of Svāmi-Mahāsena, called brahmaṇya-deva — the god Kārttikeya/Skanda. One of the earliest dated records of a Skanda temple.",
+  "attributes": {
+   "language": "Sanskrit",
+   "script": "Brāhmī (Gupta)",
+   "editions": [
+    "Fleet 1888 no. 10",
+    "Bhandarkar et al. 1981 no. 16",
+    "Sircar 1965 bk. III no. 15"
+   ]
+  },
+  "dates": [
+   {
+    "system": "material",
+    "event": "inscription",
+    "start": 415,
+    "end": 416,
+    "label": "Gupta year 96 = 415/416 CE",
+    "certainty": "secure",
+    "basis": "dated inscription",
+    "sources": [
+     {
+      "source": "src:dharmalekha",
+      "locator": "lines 5–9",
+      "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00019"
+     },
+     {
+      "source": "src:fleet-1888",
+      "locator": "no. 10"
+     },
+     {
+      "source": "src:sircar-1965",
+      "locator": "bk. III, no. 15",
+      "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+      "url": "https://archive.org/details/dli.calcutta.11040"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 27.62,
+   "lon": 78.92,
+   "precision": "region",
+   "label": "Bilsar, Etah district, Uttar Pradesh, India",
+   "country": "India"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "lines 5–9",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham00019"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "no. 10"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. III, no. 15",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bilsad"
+   }
+  ],
+  "status": "verified-online",
+  "confidence": "high",
+  "limits": "Attests a Mahāsena temple and a donor's works there in 415/416; the temple itself does not survive."
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "ins:talagunda-pillar",
+  "type": "inscription",
+  "name": "Tāḷagunda pillar inscription of the time of Śāntivarman (Kadamba)",
+  "aliases": [
+   "Talagunda inscription",
+   "Talgunda pillar inscription of Kakusthavarman"
+  ],
+  "subtype": "pillar inscription (praśasti)",
+  "summary": "Sanskrit verse praśasti composed and engraved by Kubja under the Kadamba king Śāntivarman, at the Śiva shrine of Sthānakuṇḍūra. It tells how the brahmin Mayūraśarman went with his teacher Vīraśarman to the Pallava capital to study, was angered by a quarrel with a Pallava horseman, and took up the warrior's life in this Kali age.",
+  "attributes": {
+   "language": "Sanskrit (gītikā verse)",
+   "script": "Southern Brāhmī",
+   "composer": "Kubja",
+   "editions": [
+    "Kielhorn, EI VIII",
+    "Gai 1996, pp. 64–68"
+   ]
+  },
+  "dates": [
+   {
+    "system": "material",
+    "event": "inscription",
+    "start": 450,
+    "end": 475,
+    "label": "mid-5th century CE",
+    "certainty": "estimated",
+    "basis": "reign of Śāntivarman; palaeography",
+    "sources": [
+     {
+      "source": "src:dharmalekha",
+      "locator": "vv. 3–34",
+      "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham01050"
+     },
+     {
+      "source": "src:kielhorn-ei8-talagunda"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 14.42,
+   "lon": 75.25,
+   "precision": "approximate",
+   "label": "Talagunda, Shivamogga district, Karnataka, India",
+   "country": "India"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "locator": "vv. 3–34",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSiddham01050"
+   },
+   {
+    "source": "src:kielhorn-ei8-talagunda"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Talagunda_pillar_inscription"
+   }
+  ],
+  "status": "verified-online",
+  "confidence": "high",
+  "limits": "A dynastic foundation story told by the dynasty's own poet about a century after the events; it is evidence of how the Kadambas wished to be remembered (brahmin origin, kṣatriya calling)."
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "ins:kuram-plates",
+  "type": "inscription",
+  "name": "Kūram copper plates of Parameśvaravarman I",
+  "subtype": "copper-plate grant",
+  "summary": "Pallava copper-plate grant of Parameśvaravarman I for a Śiva temple (Vidyāvinīta-Pallava-Parameśvara-gṛha) at Kūram near Kanchipuram. It is often cited because the grant also provides for the recitation (vācana) of the Bhārata at the temple.",
+  "attributes": {
+   "language": "Sanskrit and Tamil",
+   "script": "Pallava Grantha and Tamil",
+   "editions": [
+    "Hultzsch, SII I no. 151",
+    "Hultzsch, EI XVII pp. 340–344 (revised text of two plates)",
+    "Mahalingam 1988 no. 53"
+   ],
+   "repository": "Government Museum, Chennai (photographed there by E. Francis, 2008, per DHARMA)"
+  },
+  "dates": [
+   {
+    "system": "material",
+    "event": "grant",
+    "start": 670,
+    "end": 695,
+    "label": "c. 670–695 CE",
+    "certainty": "estimated",
+    "basis": "reign of Parameśvaravarman I; undated grant",
+    "sources": [
+     {
+      "source": "src:dharmalekha",
+      "url": "https://dharmalekha.info/texts/DHARMA_INSPallava00046"
+     },
+     {
+      "source": "src:sii-1",
+      "locator": "no. 151"
+     }
+    ]
+   }
+  ],
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSPallava00046"
+   },
+   {
+    "source": "src:sii-1",
+    "locator": "no. 151"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kuram_copper_plates"
+   }
+  ],
+  "status": "verified-online",
+  "limits": "Shows institutional recitation of the Mahābhārata in a South Indian temple in the late 7th century; the text recited is not specified beyond \"Bhārata\".",
+  "confidence": "medium"
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "ins:kasakudi-plates",
+  "type": "inscription",
+  "name": "Kasakudi copper plates of Nandivarman II Pallavamalla",
+  "aliases": [
+   "Kāśākkuḍi plates"
+  ],
+  "subtype": "copper-plate grant",
+  "summary": "Pallava copper-plate grant of Nandivarman II Pallavamalla, edited by Hultzsch as SII II no. 73. Its Sanskrit portion traces the Pallava line back through Aśvatthāman, Droṇa and Bharadvāja to Bṛhaspati, Aṅgiras and Brahmā — an epic genealogy claimed by a historical dynasty.",
+  "attributes": {
+   "language": "Sanskrit and Tamil",
+   "script": "Grantha and Tamil",
+   "editions": [
+    "Hultzsch, SII II no. 73 (1895)"
+   ]
+  },
+  "dates": [
+   {
+    "system": "material",
+    "event": "grant",
+    "start": 731,
+    "end": 796,
+    "label": "8th century CE (reign of Nandivarman II, c. 731–796)",
+    "certainty": "estimated",
+    "basis": "regnal year of Nandivarman II",
+    "sources": [
+     {
+      "source": "src:dharmalekha",
+      "url": "https://dharmalekha.info/texts/DHARMA_INSSIIv02p0i0073"
+     },
+     {
+      "source": "src:sii-2",
+      "locator": "no. 73, pp. 342–361"
+     }
+    ]
+   }
+  ],
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSIIv02p0i0073"
+   },
+   {
+    "source": "src:sii-2",
+    "locator": "no. 73, pp. 342–361"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kasakudi_plates"
+   }
+  ],
+  "status": "verified-online",
+  "limits": "The genealogy shows how the Pallavas legitimised themselves through the Mahābhārata's Droṇa line; it is a claim, not evidence of descent.",
+  "confidence": "medium"
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "ins:velurpalaiyam-plates",
+  "type": "inscription",
+  "name": "Velurpalaiyam copper plates of Nandivarman III",
+  "subtype": "copper-plate grant",
+  "summary": "Pallava grant of Nandivarman III (9th century), SII II no. 98. Its genealogy attributes to the ancestor Vīrakūrca a marriage with a Nāga princess; the editor notes that the Rāyakōṭa plates tell the same of Aśvatthāman himself and compares Arjuna's Nāga marriage in the Mahābhārata.",
+  "attributes": {
+   "language": "Sanskrit and Tamil",
+   "editions": [
+    "Krishna Sastri, SII II no. 98 (1916)"
+   ]
+  },
+  "dates": [
+   {
+    "system": "material",
+    "event": "grant",
+    "start": 846,
+    "end": 869,
+    "label": "mid-9th century CE (reign of Nandivarman III)",
+    "certainty": "estimated",
+    "basis": "regnal year of Nandivarman III",
+    "sources": [
+     {
+      "source": "src:dharmalekha",
+      "url": "https://dharmalekha.info/texts/DHARMA_INSSIIv02p0i0098"
+     },
+     {
+      "source": "src:sii-2",
+      "locator": "no. 98, pp. 501–517"
+     }
+    ]
+   }
+  ],
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSSIIv02p0i0098"
+   },
+   {
+    "source": "src:sii-2",
+    "locator": "no. 98, pp. 501–517"
+   }
+  ],
+  "status": "verified-online",
+  "limits": "A dynastic origin story; the editor's 1916 inference that Nāgas were \"indigenous rulers subdued by northern invaders\" is a period interpretation, not established fact.",
+  "confidence": "medium"
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "ins:tiruvalangadu-plates",
+  "type": "inscription",
+  "name": "Tiruvālaṅkāṭu copper plates of Rājendra I (regnal year 6)",
+  "aliases": [
+   "Tiruvalangadu plates"
+  ],
+  "subtype": "copper-plate grant (31 plates)",
+  "summary": "Cōḻa copper-plate charter of Rājendra I, issued in his sixth regnal year (c. 1018 CE). Its long Sanskrit praśasti traces the Cōḻa line back through solar kings — Manu, Ikṣvāku, Śibi and others — to the Sun: a mythic genealogy placed in a royal title deed.",
+  "attributes": {
+   "language": "Sanskrit and Tamil",
+   "script": "Grantha and Tamil",
+   "editions": [
+    "Krishna Sastri, SII III no. 205 (1920)"
+   ],
+   "repository": "Government Museum, Chennai (as generally reported; not checked)"
+  },
+  "dates": [
+   {
+    "system": "material",
+    "event": "grant",
+    "start": 1017,
+    "end": 1019,
+    "label": "regnal year 6 of Rājendra I = c. 1018 CE",
+    "certainty": "estimated",
+    "basis": "regnal year (Rājendra I acceded 1012)",
+    "sources": [
+     {
+      "source": "src:dharmalekha",
+      "url": "https://dharmalekha.info/texts/DHARMA_INSTamilNadu01005"
+     },
+     {
+      "source": "src:sii-3",
+      "locator": "no. 205"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 13.11,
+   "lon": 79.77,
+   "precision": "approximate",
+   "label": "Tiruvalangadu, Tiruvallur district, Tamil Nadu, India",
+   "country": "India"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSTamilNadu01005"
+   },
+   {
+    "source": "src:sii-3",
+    "locator": "no. 205"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tiruvalangadu_plates"
+   }
+  ],
+  "status": "verified-online",
+  "limits": "Evidence of how the Cōḻas placed themselves in the Solar dynasty of the epics and Purāṇas around 1018 CE; not evidence for the earlier names in the list.",
+  "confidence": "medium"
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "ins:anbil-plates",
+  "type": "inscription",
+  "name": "Anbil copper plates of Sundara Cōḻa (regnal year 4)",
+  "aliases": [
+   "Aṉpil plates"
+  ],
+  "subtype": "copper-plate grant",
+  "summary": "Copper-plate grant of the Cōḻa king Sundara Cōḻa (Parāntaka II) of his fourth regnal year (c. 961 CE), edited by T. A. Gopinatha Rao in EI XV. Like the later Tiruvālaṅkāṭu plates, its Sanskrit praśasti gives the Cōḻas a Purāṇic solar ancestry.",
+  "attributes": {
+   "language": "Sanskrit and Tamil",
+   "editions": [
+    "Gopinatha Rao, EI XV, pp. 44–72"
+   ]
+  },
+  "dates": [
+   {
+    "system": "material",
+    "event": "grant",
+    "start": 958,
+    "end": 964,
+    "label": "regnal year 4 of Sundara Cōḻa (c. 961 CE)",
+    "certainty": "estimated",
+    "basis": "regnal year",
+    "sources": [
+     {
+      "source": "src:dharmalekha",
+      "url": "https://dharmalekha.info/texts/DHARMA_INSTamilNadu01003"
+     },
+     {
+      "source": "src:gopinatha-rao-ei15",
+      "locator": "EI XV, pp. 44–72"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 10.86,
+   "lon": 78.88,
+   "precision": "approximate",
+   "label": "Anbil, Tiruchirappalli district, Tamil Nadu, India",
+   "country": "India"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:dharmalekha",
+    "url": "https://dharmalekha.info/texts/DHARMA_INSTamilNadu01003"
+   },
+   {
+    "source": "src:gopinatha-rao-ei15",
+    "locator": "EI XV, pp. 44–72"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Anbil_plates"
+   }
+  ],
+  "status": "verified-online",
+  "limits": "Royal genealogical claim; the earliest names are mythic.",
+  "confidence": "medium"
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "ins:uttaramerur-sabha",
+  "type": "inscription",
+  "name": "Uttaramērūr assembly (sabhā) inscriptions of Parāntaka I (regnal years 12 and 14)",
+  "subtype": "temple-wall inscriptions",
+  "summary": "Tamil inscriptions on the Vaikuṇṭha Perumāḷ temple at Uttaramērūr recording the rules by which the brahmin assembly chose its committees by lot (kuḍavōlai, the \"pot-ticket\" system), with qualifications and disqualifications of members, in the 12th and 14th years of Parāntaka I (c. 919 and 921 CE).",
+  "attributes": {
+   "language": "Tamil",
+   "script": "Tamil",
+   "location": "Vaikuṇṭha Perumāḷ temple, Uttaramērūr"
+  },
+  "dates": [
+   {
+    "system": "material",
+    "event": "inscription",
+    "start": 917,
+    "end": 923,
+    "label": "regnal years 12 and 14 of Parāntaka I (c. 919 and 921 CE)",
+    "certainty": "estimated",
+    "basis": "regnal years",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Uttaramerur"
+     },
+     {
+      "source": "src:sii-3",
+      "locator": "Uttaramērūr records (assembly of Uttaramērūr-caturvedimaṅgalam), e.g. no. 160"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 12.6167,
+   "lon": 79.75,
+   "precision": "approximate",
+   "label": "Uttiramerur, Kanchipuram district, Tamil Nadu, India",
+   "country": "India"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Uttaramerur"
+   },
+   {
+    "source": "src:sii-3",
+    "locator": "Uttaramērūr records (assembly of Uttaramērūr-caturvedimaṅgalam), e.g. no. 160"
+   }
+  ],
+  "status": "reference-checked",
+  "limits": "Rules of one brahmadeya assembly; they describe intended procedure, not how elections actually ran, and do not describe non-Brahmin villages.",
+  "confidence": "medium"
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "ins:khajuraho-lakshmana",
+  "type": "inscription",
+  "name": "Lakṣmaṇa temple inscription of Yaśovarman, Khajuraho (Vikrama 1011)",
+  "subtype": "temple slab inscription",
+  "summary": "Sanskrit inscription on a slab in the porch of the Lakṣmaṇa temple, Khajuraho, dated Vikrama 1011 (953/954 CE). It records that the Candela Yaśovarman built a temple of Vaikuṇṭha (Viṣṇu) whose image had come from the Bhoṭa (Tibetan) region via the Śāhi king of Kīra and the Pratīhāra Herambapāla.",
+  "attributes": {
+   "language": "Sanskrit",
+   "editions": [
+    "Kielhorn, EI I (1892), pp. 122ff."
+   ]
+  },
+  "dates": [
+   {
+    "system": "material",
+    "event": "inscription",
+    "start": 953,
+    "end": 954,
+    "label": "Vikrama 1011 = 953/954 CE",
+    "certainty": "secure",
+    "basis": "dated inscription",
+    "sources": [
+     {
+      "source": "src:kielhorn-ei1-khajuraho",
+      "locator": "no. IV (inscription of Yaśovarman, Vikrama 1011)"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lakshmana_Temple,_Khajuraho"
+     }
+    ]
+   }
+  ],
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:kielhorn-ei1-khajuraho",
+    "locator": "no. IV (inscription of Yaśovarman, Vikrama 1011)"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Lakshmana_Temple,_Khajuraho"
+   }
+  ],
+  "status": "reference-checked",
+  "confidence": "medium",
+  "limits": "Dates the dedication of a Vaikuṇṭha image and gives its claimed provenance; the slab may have been set in the temple when the porch was built, and the story of the image's travels is the record's own.",
+  "openQuestions": [
+   "Kielhorn's exact item number and page in EI I were not checked against the archive.org scan."
+  ]
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "ins:belur-vishnuvardhana-1117",
+  "type": "inscription",
+  "name": "Belur consecration inscription of Viṣṇuvardhana (Śaka 1039 = 1117 CE)",
+  "subtype": "temple inscription",
+  "summary": "Hoysaḷa record at the Cennakeśava temple, Belur, which dates the consecration of the god Vijayanārāyaṇa (Cennakeśava) by Viṣṇuvardhana to 1117 CE. It is the anchor for dating the temple.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "consecration",
+    "start": 1117,
+    "end": 1117,
+    "label": "1117 CE (Śaka 1039)",
+    "certainty": "estimated",
+    "basis": "dated inscription as reported in the secondary literature",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Chennakeshava_Temple,_Belur"
+     },
+     {
+      "source": "src:rice-ec5",
+      "locator": "Belur taluk inscriptions (vol. V)"
+     }
+    ]
+   }
+  ],
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Chennakeshava_Temple,_Belur"
+   },
+   {
+    "source": "src:rice-ec5",
+    "locator": "Belur taluk inscriptions (vol. V)"
+   }
+  ],
+  "status": "reference-checked",
+  "limits": "Dates the consecration; the temple's sculpture continued to be added for decades afterwards.",
+  "openQuestions": [
+   "Exact Epigraphia Carnatica number (vol. V, Belur taluk) not checked."
+  ],
+  "confidence": "medium"
+ },
+ {
+  "agent": "material",
+  "lastVerified": "2026-11-08",
+  "id": "ins:mahakuta-pillar",
+  "type": "inscription",
+  "name": "Mahākūṭa pillar inscription of Maṅgaleśa",
+  "subtype": "pillar inscription",
+  "summary": "Sanskrit inscription on a pillar from the Mahākūṭa temple complex near Bādāmi, recording Maṅgaleśa's grant to the god Makuṭeśvaranātha (Śiva) and the conquests of the early Cālukyas. Usually dated c. 595–602 CE. The pillar was removed to the Bijapur museum.",
+  "attributes": {
+   "language": "Sanskrit",
+   "editions": [
+    "Fleet, Indian Antiquary XIX (1890)"
+   ],
+   "repository": "Archaeological Museum, Bijapur (Vijayapura) — as reported, not checked"
+  },
+  "dates": [
+   {
+    "system": "material",
+    "event": "inscription",
+    "start": 595,
+    "end": 602,
+    "label": "c. 595–602 CE",
+    "certainty": "estimated",
+    "basis": "regnal reference to Maṅgaleśa (as reported)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mahakuta_group_of_temples"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mangalesha"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 15.9333,
+   "lon": 75.7167,
+   "precision": "approximate",
+   "label": "Mahakuta, Bagalkot district, Karnataka, India",
+   "country": "India"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mahakuta_group_of_temples"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mangalesha"
+   }
+  ],
+  "status": "reference-checked",
+  "limits": "Records a royal grant and dynastic claims; it does not date the surviving Mahākūṭa temples, which are mostly 7th–8th century.",
+  "openQuestions": [
+   "Fleet's Indian Antiquary edition not checked; the year of the grant is quoted differently in the literature."
+  ],
+  "confidence": "medium"
+ }
+]
