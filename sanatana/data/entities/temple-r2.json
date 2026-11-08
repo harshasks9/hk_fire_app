@@ -10255,8 +10255,8 @@
     ]
    },
    {
-    "system": "material",
-    "event": "construction",
+    "system": "traditional",
+    "event": "traditional attribution (by name)",
     "start": 850,
     "end": 891,
     "label": "c. 850–891 (Vijayālaya Cōḻa)",
@@ -14755,8 +14755,7 @@
    }
   ],
   "attributes": {
-   "coordinates": "40.25417, -74.57778 (Wikipedia {{coord}} and Wikidata P625 agree within 0 m); not plotted — outside the map range accepted by the dataset validator",
-   "locationLabel": "Robbinsville, New Jersey, United States — United States"
+   "coordinates": "40.25417, -74.57778 (Wikipedia {{coord}} and Wikidata P625 agree within 0 m)"
   },
   "evidenceClass": 4,
   "sources": [
@@ -14779,7 +14778,14 @@
   "status": "reference-checked",
   "agent": "temple",
   "limits": "A modern temple; the labour dispute is recorded from recall without assessment.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "location": {
+   "lat": 40.25417,
+   "lon": -74.57778,
+   "precision": "exact",
+   "label": "Robbinsville, New Jersey, United States",
+   "country": "United States"
+  }
  },
  {
   "id": "temple:sv-temple-pittsburgh",
@@ -14814,8 +14820,7 @@
    }
   ],
   "attributes": {
-   "coordinates": "40.441, -79.80518 (Wikipedia {{coord}} and Wikidata P625 agree within 23 m); not plotted — outside the map range accepted by the dataset validator",
-   "locationLabel": "Penn Hills, Pennsylvania, United States — United States"
+   "coordinates": "40.441, -79.80518 (Wikipedia {{coord}} and Wikidata P625 agree within 23 m)"
   },
   "evidenceClass": 4,
   "sources": [
@@ -14841,7 +14846,14 @@
   "status": "reference-checked",
   "agent": "temple",
   "limits": "A modern temple; “first” claims depend on definitions (the Flushing Gaṇeśa temple was consecrated a month later).",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "location": {
+   "lat": 40.441,
+   "lon": -79.80518,
+   "precision": "exact",
+   "label": "Penn Hills, Pennsylvania, United States",
+   "country": "United States"
+  }
  },
  {
   "id": "temple:ganesh-temple-flushing",
@@ -14876,8 +14888,7 @@
    }
   ],
   "attributes": {
-   "coordinates": "40.75275, -73.81683 (Wikipedia {{coord}} and Wikidata P625 agree within 23 m); not plotted — outside the map range accepted by the dataset validator",
-   "locationLabel": "Flushing, Queens, New York City, United States — United States"
+   "coordinates": "40.75275, -73.81683 (Wikipedia {{coord}} and Wikidata P625 agree within 23 m)"
   },
   "evidenceClass": 4,
   "sources": [
@@ -14903,7 +14914,14 @@
   "status": "reference-checked",
   "agent": "temple",
   "limits": "A modern temple.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "location": {
+   "lat": 40.75275,
+   "lon": -73.81683,
+   "precision": "exact",
+   "label": "Flushing, Queens, New York City, United States",
+   "country": "United States"
+  }
  },
  {
   "id": "temple:ganga-talao",
@@ -15036,8 +15054,7 @@
    }
   ],
   "attributes": {
-   "coordinates": "10.48169, -61.47553 (Wikipedia {{coord}} and Wikidata P625 agree within 1 m); not plotted — outside the map range accepted by the dataset validator",
-   "locationLabel": "Waterloo, Carapichaima, Trinidad and Tobago — Trinidad and Tobago"
+   "coordinates": "10.48169, -61.47553 (Wikipedia {{coord}} and Wikidata P625 agree within 1 m)"
   },
   "evidenceClass": 4,
   "sources": [
@@ -15060,7 +15077,14 @@
   "status": "reference-checked",
   "agent": "temple",
   "limits": "A modern shrine; its significance is as a memorial of indenture.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "location": {
+   "lat": 10.48169,
+   "lon": -61.47553,
+   "precision": "exact",
+   "label": "Waterloo, Carapichaima, Trinidad and Tobago",
+   "country": "Trinidad and Tobago"
+  }
  },
  {
   "id": "temple:baps-abu-dhabi",
@@ -15279,7 +15303,7 @@
   "summary": "Longest river of peninsular India, rising at Brahmagiri near Trimbak (Tryambakeśvara) and flowing east to the Bay of Bengal; called “Dakṣiṇa Gaṅgā”, its banks at Nashik (Pañcavaṭī) are a Kumbha Melā site and the setting of Rāma’s forest exile.",
   "details": "Anne Feldhaus’s study shows how the Godāvarī is imagined in Maharashtra as a goddess and as the Gaṅgā brought south by the sage Gautama. The Puṣkaram festival is held every twelve years at Rajahmundry.",
   "location": {
-   "lat": 17.0,
+   "lat": 17,
    "lon": 81.8,
    "precision": "region",
    "label": "Rajahmundry, Andhra Pradesh, India (representative point)",

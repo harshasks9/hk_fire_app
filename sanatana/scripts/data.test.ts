@@ -35,7 +35,8 @@ test('theological identifications are never bare identity merges', () => {
 test('temple founding legends are not used as material dates', () => {
   for (const e of entities.values()) {
     for (const d of e.dates ?? []) {
-      if (d.system === 'material') assert.ok(!/legend|tradition holds|traditionally/i.test(d.basis ?? ''), `${e.id}: material date based on legend (${d.basis})`)
+      // a material date may mention a legend (to set it aside) but must not rest on one
+      if (d.system === 'material') assert.ok(!/^\s*(legend|tradition holds|temple tradition|local tradition|sthala|according to (the )?(legend|tradition)|traditional attribution)/i.test(d.basis ?? ''), `${e.id}: material date based on legend (${d.basis})`)
     }
   }
 })

@@ -11,6 +11,8 @@ export type Family = 'material' | 'deity' | 'geography' | 'literature' | 'figure
 
 export interface GNode extends Entity {
   family: Family
+  /** precomputed ForceAtlas2 position for the whole-universe view */
+  pos?: [number, number]
   m: {
     degree: number
     betweenness: number

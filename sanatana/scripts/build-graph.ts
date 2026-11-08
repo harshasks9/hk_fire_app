@@ -24,6 +24,7 @@ const require = createRequire(import.meta.url)
 const Graph = require('graphology')
 const betweenness = require('graphology-metrics/centrality/betweenness.js')
 const louvain = require('graphology-communities-louvain')
+const forceAtlas2 = require('graphology-layout-forceatlas2')
 const topojson = require('topojson-client')
 
 const allowErrors = process.argv.includes('--allow-errors')
@@ -147,6 +148,30 @@ let communities: Record<string, number> = {}
 try { communities = g.size > 0 ? louvain(g, { randomWalk: false, rng: mulberry(7) }) : {} } catch { communities = {} }
 function mulberry(a: number) { return () => { a |= 0; a = (a + 0x6d2b79f5) | 0; let t = Math.imul(a ^ (a >>> 15), 1 | a); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296 } }
 
+// ───────────── universe layout, computed once here so the browser never runs it ─────────────
+// ForceAtlas2 on the full graph from seeded starting positions: deterministic across builds.
+const layoutRng = mulberry(42)
+const lg = new Graph({ type: 'undirected', multi: false, allowSelfLoops: false })
+for (const e of entities.values()) if ((e as Entity).summary) lg.addNode(e.id, { x: layoutRng() * 1000, y: layoutRng() * 1000 })
+for (const a of edges) if (lg.hasNode(a.s) && lg.hasNode(a.o) && !lg.hasEdge(a.s, a.o)) lg.addEdge(a.s, a.o)
+forceAtlas2.assign(lg, { iterations: 900, settings: { ...forceAtlas2.inferSettings(lg), barnesHutOptimize: true, linLogMode: true, scalingRatio: 4, gravity: 1, strongGravityMode: true } })
+// normalise: centre on the median, scale so 95% of records fall within a radius tied to the record
+// count (keeps on-screen density readable), and pull far outliers (isolates) onto that rim
+const xs: number[] = [], ys: number[] = []
+lg.forEachNode((_: string, a: { x: number; y: number }) => { xs.push(a.x); ys.push(a.y) })
+const med = (v: number[]) => [...v].sort((a, b) => a - b)[Math.floor(v.length / 2)]
+const cx0 = med(xs), cy0 = med(ys)
+const radii = xs.map((x, i) => Math.hypot(x - cx0, ys[i] - cy0)).sort((a, b) => a - b)
+const r95 = radii[Math.floor(radii.length * 0.95)] || 1
+const target = Math.sqrt(lg.order) * 14
+const pos: Record<string, [number, number]> = {}
+lg.forEachNode((id: string, a: { x: number; y: number }) => {
+  let dx = ((a.x - cx0) / r95) * target, dy = ((a.y - cy0) / r95) * target
+  const r = Math.hypot(dx, dy), cap = target * 1.15
+  if (r > cap) { dx *= cap / r; dy *= cap / r }
+  pos[id] = [Math.round(dx * 10) / 10, Math.round(dy * 10) / 10]
+})
+
 // ───────────── assemble nodes ─────────────
 const nodes = [...entities.values()].map((e) => {
   const { _file, ...rest } = e as Entity & { _file: string }
@@ -154,6 +179,7 @@ const nodes = [...entities.values()].map((e) => {
   return {
     ...rest,
     family: FAMILY[e.type] ?? 'history',
+    pos: pos[e.id],
     m: {
       degree: g.hasNode(e.id) ? g.degree(e.id) : 0,
       betweenness: +(btw[e.id] ?? 0).toFixed(5),

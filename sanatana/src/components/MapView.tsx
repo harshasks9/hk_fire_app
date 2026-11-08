@@ -65,11 +65,12 @@ export function MapView({ points, selected, onSelect, height = 560, dark = false
 
   const projection = useMemo(() => {
     const p = geoConicConformal().parallels([10, 30]).rotate([-82, 0])
-    const fitPts = fitTo === 'points' && points.length
-      ? { type: 'MultiPoint', coordinates: points.map((x) => [x.lon, x.lat]) }
+    const inAsia = points.filter((x) => x.lon >= 40 && x.lon <= 140 && x.lat >= -15 && x.lat <= 50)
+    const fitPts = fitTo === 'points' && inAsia.length
+      ? { type: 'MultiPoint', coordinates: inAsia.map((x) => [x.lon, x.lat]) }
       : { type: 'MultiPoint', coordinates: [[63, 6], [97, 36], [123, -9], [72, -1]] }
-    const lons = points.map((x) => x.lon), lats = points.map((x) => x.lat)
-    const tight = points.length > 0 && Math.max(...lons) - Math.min(...lons) < 1.5 && Math.max(...lats) - Math.min(...lats) < 1.5
+    const lons = inAsia.map((x) => x.lon), lats = inAsia.map((x) => x.lat)
+    const tight = inAsia.length > 0 && Math.max(...lons) - Math.min(...lons) < 1.5 && Math.max(...lats) - Math.min(...lats) < 1.5
     if (fitTo === 'points' && tight) {
       // one place (or several at the same site): centre on it at a regional scale
       const lon = (Math.max(...lons) + Math.min(...lons)) / 2, lat = (Math.max(...lats) + Math.min(...lats)) / 2
@@ -107,7 +108,10 @@ export function MapView({ points, selected, onSelect, height = 560, dark = false
   const ink = dark ? '#ece4d3' : 'var(--ink)'
   const halo = dark ? '#12162b' : 'var(--bg)'
   const z = (fn: (k: number) => number) => () => { if (svg.current && zoomer.current) select(svg.current).transition().duration(300).call(zoomer.current.scaleBy, fn(1)) }
-  const sorted = [...points].sort((a, b) => (a.id === selected ? 1 : 0) - (b.id === selected ? 1 : 0))
+  // the basemap and projection cover South, Southeast and Central Asia; diaspora sites elsewhere are listed, not distorted onto it
+  const onMap = (p: MapPoint) => p.lon >= 40 && p.lon <= 140 && p.lat >= -15 && p.lat <= 50
+  const offMap = points.filter((p) => !onMap(p))
+  const sorted = points.filter(onMap).sort((a, b) => (a.id === selected ? 1 : 0) - (b.id === selected ? 1 : 0))
 
   return (
     <div ref={wrap} className="relative w-full overflow-hidden rounded-xl" style={{ height, background: sea }}>
@@ -154,6 +158,13 @@ export function MapView({ points, selected, onSelect, height = 560, dark = false
         <button className="btn !p-2" aria-label="Zoom out" onClick={z(() => 1 / 1.6)}><Minus size={13} /></button>
         <button className="btn !p-2" aria-label="Reset view" onClick={() => { if (svg.current && zoomer.current) select(svg.current).transition().duration(400).call(zoomer.current.transform, zoomIdentity) }}><Maximize2 size={13} /></button>
       </div>
+      {offMap.length ? (
+        <div className="absolute left-3 bottom-7 max-w-[260px] rounded-lg px-3 py-2 text-[11.5px]" style={{ background: dark ? 'rgba(26,31,58,0.92)' : 'var(--panel)', border: `1px solid ${dark ? 'var(--night-rule)' : 'var(--rule)'}`, color: ink }}>
+          <div className="font-semibold mb-1">Beyond this map ({offMap.length})</div>
+          <ul className="space-y-0.5">{offMap.slice(0, 6).map((p) => <li key={p.id}><button className="text-left hover:underline" onClick={() => onSelect?.(p.id)}>{p.label}</button></li>)}</ul>
+          {offMap.length > 6 ? <div className="opacity-70 mt-0.5">+{offMap.length - 6} more in the list view</div> : null}
+        </div>
+      ) : null}
       {children}
       <div className="absolute left-3 bottom-2 text-[10px] opacity-60" style={{ color: ink }}>Basemap: Natural Earth (public domain). Present-day borders for orientation only.</div>
     </div>

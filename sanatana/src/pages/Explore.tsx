@@ -127,7 +127,9 @@ export default function Explore({ route }: { route: Route }) {
       const fam = FAMILY_BY_ID[n.family]
       const name = n.name.replace(/\s*\((.*)\)\s*$/, '')
       const universe = mode === 'universe'
-      els.push({ group: 'nodes', data: { id, label: !universe || labelled.has(id) ? name : '', full: name, size: universe ? 4 + Math.sqrt(n.m.degree) * 1.7 : 9 + Math.sqrt(n.m.degree) * 3.2, color: fam.dark, shape: fam.shape, fam: n.family } })
+      const el: ElementDefinition = { group: 'nodes', data: { id, label: !universe || labelled.has(id) ? name : '', full: name, size: universe ? 7 + Math.sqrt(n.m.degree) * 2.2 : 9 + Math.sqrt(n.m.degree) * 3.2, color: fam.dark, shape: fam.shape, fam: n.family } }
+      if (universe && n.pos) el.position = { x: n.pos[0], y: n.pos[1] }
+      els.push(el)
     }
     const seen = new Set<string>()
     for (const e of store.edges) {
@@ -213,17 +215,24 @@ export default function Explore({ route }: { route: Route }) {
       cy.layout({ name: 'circle', radius: Math.min(cy.width(), cy.height()) * 0.3, startAngle: -Math.PI / 2, animate: true, animationDuration: 500, fit: false, stop: () => { cy.fit(undefined, 80); cap() } } as never).run()
       return
     }
-    cy.edges().style('opacity', mode === 'universe' ? 0.16 : 0.5)
+    cy.edges().style('opacity', mode === 'universe' ? 0.12 : 0.5)
+    if (mode === 'universe') {
+      // positions were computed at build time (ForceAtlas2): place, fit, done
+      const at = new Map(elements.map((e) => [e.data.id, e.position]))
+      cy.nodes().forEach((node) => { const p = at.get(node.id()); if (p) node.position(p) })
+      cy.layout({ name: 'preset', fit: true, padding: 30 } as never).run()
+      return
+    }
     const layout = cy.layout({
       name: 'fcose',
       quality: 'default',
-      randomize: mode === 'universe',
+      randomize: false,
       animate: n < 400,
       animationDuration: 600,
-      nodeRepulsion: () => (mode === 'universe' ? 14000 : 9000),
-      idealEdgeLength: () => (mode === 'universe' ? 70 : 85),
-      nodeSeparation: mode === 'universe' ? 45 : 60,
-      gravity: mode === 'universe' ? 0.12 : 0.25,
+      nodeRepulsion: () => 9000,
+      idealEdgeLength: () => 85,
+      nodeSeparation: 60,
+      gravity: 0.25,
       gravityRange: 3.8,
       numIter: 2500,
       packComponents: true,

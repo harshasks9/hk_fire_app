@@ -153,7 +153,7 @@ export function checkDataset(ds: Dataset): { issues: Issue[]; entities: Map<stri
     for (const t of e.traditions ?? []) if (!t.startsWith('trad:')) issues.push({ severity: 'error', file, id: e.id, message: `traditions must be tradition ids, got "${t}"` })
     if (e.location) {
       const { lat, lon } = e.location
-      if (typeof lat !== 'number' || typeof lon !== 'number' || lat < -60 || lat > 70 || lon < -30 || lon > 180) {
+      if (typeof lat !== 'number' || typeof lon !== 'number' || lat < -60 || lat > 72 || lon < -180 || lon > 180) {
         issues.push({ severity: 'error', file, id: e.id, message: `implausible coordinates ${lat},${lon}` })
       }
       if (!e.location.label || !e.location.country) issues.push({ severity: 'warn', file, id: e.id, message: 'location without label/country' })
