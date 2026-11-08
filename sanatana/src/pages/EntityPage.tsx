@@ -6,7 +6,7 @@ import { lazy, Suspense, useMemo, useState } from 'react'
 import { Network, MapPin, Clock, AlertTriangle, ExternalLink } from 'lucide-react'
 import { useStore, type GEdge, type GNode } from '../data/store.tsx'
 import { href, entityHref } from '../app/router.ts'
-import { TYPE_LABEL, EVIDENCE } from '../lib/meta.ts'
+import { TYPE_LABEL, EVIDENCE, IN_ARTIFACT } from '../lib/meta.ts'
 import { DateRow, EntityLink, EvidenceBadge, Glyph, Note, Section, SourceList, StatusBadge, ConfidenceDots, TypeTag, Disclosure, Empty } from '../components/ui.tsx'
 import { FamilyTree, kinOf } from '../components/FamilyTree.tsx'
 import { ComparisonTable } from '../components/ComparisonTable.tsx'
@@ -149,7 +149,7 @@ export function EntityPage({ id }: { id: string }) {
                 <a className="btn" href={href('time', { mode: isFigure || n.type === 'narrative' ? 'figure' : n.type === 'text' || n.type === 'collection' ? 'literature' : 'material', subject: n.id })}><Clock size={14} /> Travel through time</a>
               </div>
             </div>
-            {n.image ? (
+            {n.image && !IN_ARTIFACT ? (
               <figure className="md:w-[300px]">
                 <img src={n.image.url} alt={n.name} loading="lazy" className="w-full rounded-xl border hairline object-cover max-h-[320px]" onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }} />
                 <figcaption className="text-[11px] text-ink-3 mt-1.5 leading-snug">{n.image.credit} · {n.image.license} · <a className="link" href={n.image.page} target="_blank" rel="noreferrer">source</a></figcaption>

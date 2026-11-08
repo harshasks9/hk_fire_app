@@ -94,3 +94,6 @@ export const ERAS: { label: string; start: number; end: number }[] = [
   { label: 'Early modern & colonial', start: 1650, end: 1947 },
   { label: 'Modern', start: 1947, end: 2026 },
 ]
+
+/** The claude.ai Artifact build cannot load third-party images or start downloads. */
+export const IN_ARTIFACT = import.meta.env.MODE === 'artifact'

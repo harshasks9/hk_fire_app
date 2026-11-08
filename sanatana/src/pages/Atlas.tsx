@@ -11,7 +11,7 @@ import type { Route } from '../app/router.ts'
 import { href, entityHref, navigate } from '../app/router.ts'
 import { MapView, type MapPoint } from '../components/MapView.tsx'
 import { Glyph, EvidenceBadge } from '../components/ui.tsx'
-import { TYPE_LABEL, materialDate, yearLabel, EVIDENCE } from '../lib/meta.ts'
+import { TYPE_LABEL, materialDate, yearLabel, EVIDENCE, IN_ARTIFACT } from '../lib/meta.ts'
 
 const LAYERS = [
   { id: 'temple', label: 'Temples' },
@@ -168,8 +168,8 @@ function Detail({ n, onClose }: { n: GNode; onClose: () => void }) {
       <div className="flex items-center gap-2 text-[12px] text-night-ink-2"><Glyph family={n.family} size={11} dark />{TYPE_LABEL[n.type]}{n.subtype ? ` · ${n.subtype}` : ''}</div>
       <div className="display text-[1.8rem] leading-tight font-semibold mt-1 pr-8">{n.name}</div>
       {n.location ? <div className="text-[12px] text-night-ink-2">{n.location.label}</div> : null}
-      {n.image ? <img src={n.image.url} alt={n.name} className="mt-3 rounded-lg w-full max-h-48 object-cover" loading="lazy" onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }} /> : null}
-      {n.image ? <div className="text-[10.5px] text-night-ink-2 mt-1">{n.image.credit} · {n.image.license}</div> : null}
+      {n.image && !IN_ARTIFACT ? <img src={n.image.url} alt={n.name} className="mt-3 rounded-lg w-full max-h-48 object-cover" loading="lazy" onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }} /> : null}
+      {n.image && !IN_ARTIFACT ? <div className="text-[10.5px] text-night-ink-2 mt-1">{n.image.credit} · {n.image.license}</div> : null}
       <p className="text-[13.5px] leading-relaxed mt-3">{n.summary}</p>
       {dates.length ? (
         <div className="mt-3 space-y-1.5">

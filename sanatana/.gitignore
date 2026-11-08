@@ -4,3 +4,4 @@ dist-villa
 *.tsbuildinfo
 .vercel
 public/data
+dist-artifact

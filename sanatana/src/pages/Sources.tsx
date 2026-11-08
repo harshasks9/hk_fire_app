@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react'
 import { useStore } from '../data/store.tsx'
 import type { Route } from '../app/router.ts'
 import { navigate } from '../app/router.ts'
-import { EVIDENCE, STATUS, SYSTEM_LABEL, FAMILIES, TYPE_LABEL } from '../lib/meta.ts'
+import { EVIDENCE, STATUS, SYSTEM_LABEL, FAMILIES, TYPE_LABEL, IN_ARTIFACT } from '../lib/meta.ts'
 import { EvidenceBadge, Glyph, Note, StatusBadge } from '../components/ui.tsx'
 import { fold } from '../lib/search.ts'
 import { Download, ExternalLink } from 'lucide-react'
@@ -158,12 +158,13 @@ function Downloads() {
   ]
   return (
     <div className="max-w-3xl">
+      {IN_ARTIFACT ? <div className="mb-4"><Note>This copy of the site cannot start downloads. The files below are in the repository under <code>sanatana/exports/</code>, and the deployed site at <code>/sanatana</code> offers them as downloads.</Note></div> : null}
       <p className="text-ink-2 leading-relaxed">The data is open for reuse with attribution. Images keep their own licences (recorded per image). Quoted translations are public domain or short excerpts.</p>
       <ul className="mt-5 space-y-2">
         {files.map(([f, d]) => (
           <li key={f} className="card p-4 flex items-center gap-4">
             <Download size={16} className="text-gold shrink-0" />
-            <div className="min-w-0"><a className="link font-medium" href={`${import.meta.env.BASE_URL}data/${f}`} download>{f}</a><div className="text-[13px] text-ink-3">{d}</div></div>
+            <div className="min-w-0">{IN_ARTIFACT ? <code className="font-medium">sanatana/exports/{f}</code> : <a className="link font-medium" href={`${import.meta.env.BASE_URL}data/${f}`} download>{f}</a>}<div className="text-[13px] text-ink-3">{d}</div></div>
           </li>
         ))}
       </ul>
