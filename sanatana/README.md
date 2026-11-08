@@ -61,8 +61,17 @@ remain**. Use `npm run graph -- --allow-errors` only for a local preview.
 
 ## Deployment
 
-- **As part of the villa site** (served at `/sanatana`): `npm run publish:villa`, then commit
-  `villa/public/sanatana/`. `villa/next.config.ts` rewrites `/sanatana` to its `index.html`.
+**Live: https://hk.hkfire.app/sanatana/** — public (no access key). It is served by the Vercel
+project that builds the repository root (`meridian`): the root `build.ts` copies the committed
+build in `villa/public/sanatana/` into `dist/sanatana/`, and the root `middleware.ts` leaves
+`/sanatana/` — and every path on `sanatana.hkfire.app`, once that domain is added to the
+project — outside the memos' key gate.
+
+To publish a change: edit, `npm run publish:villa` (validates, typechecks, builds with base
+`/sanatana/` and copies into `villa/public/sanatana/`), commit, push to `main`.
+
+- **As part of the villa site** (served at `/sanatana`): the same `villa/public/sanatana/` build;
+  `villa/next.config.ts` rewrites `/sanatana` to its `index.html`.
 - **Standalone** (Vercel, Netlify, any static host): create a project whose root directory is
   `sanatana/`; `vercel.json` sets `npm run build` and `dist/`. The build uses relative paths and
   hash routing, so it also works from any sub-path or from a plain folder.

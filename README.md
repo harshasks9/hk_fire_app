@@ -4,7 +4,9 @@ Two adversarial investment-committee memoranda on listed alternative asset manag
 **Blue Owl (NYSE: OWL)** and **Patria (NASDAQ: PAX)** — published as plain static pages
 behind a single shared key.
 
-That is the whole site. There is no app around it any more.
+The same deployment also serves **Sanatana**, a public knowledge graph of Hindu literature
+and heritage, at `/sanatana/` (source and README in `sanatana/`). It is outside the key gate
+by design; everything else stays behind it.
 
 ## Running it
 
