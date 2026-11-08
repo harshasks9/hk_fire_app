@@ -18784,5 +18784,3896 @@
   "status": "source-checked",
   "agent": "purana",
   "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-839",
+  "s": "char:vikukshi",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4 and BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.9–13",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.4–11",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-840",
+  "s": "char:puranjaya",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4 and BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.14–19",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.12–19",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-841",
+  "s": "char:anenas-ikshvaku",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4 and BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.20",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.20",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-842",
+  "s": "char:prithu-ikshvaku",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4 and BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.20",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.20",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-843",
+  "s": "char:vishvagashva",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4 and BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.20",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.20",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-844",
+  "s": "char:chandra-ikshvaku",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4 and BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.20",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.20",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-845",
+  "s": "char:yuvanashva-i",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4 and BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.20",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.20",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-846",
+  "s": "char:shravasta",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4 and BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.20",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.21",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-847",
+  "s": "char:brihadashva",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4 and BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.21",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.21",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-848",
+  "s": "char:kuvalayashva",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4 and BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.21–23",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.21–24",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-849",
+  "s": "char:dridhashva",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4 and BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.23–24",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.23–24",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-850",
+  "s": "char:haryashva-i",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4 and BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.24",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.24",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-851",
+  "s": "char:nikumbha-ikshvaku",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4 and BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.24",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.24",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-852",
+  "s": "char:samhitashva",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.24",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-853",
+  "s": "char:bahulashva",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.25",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-854",
+  "s": "char:krishashva",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4 and BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.24",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.25",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-855",
+  "s": "char:prasenajit-ikshvaku",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4 and BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.24",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.25",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-856",
+  "s": "char:yuvanashva-ii",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4 and BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.24–35",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.25–34",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-857",
+  "s": "char:purukutsa",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4 and BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.37; 4.3.4–13",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.38; 9.7.2–4",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-858",
+  "s": "char:ambarisha-mandhatri",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4 and BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.37; 4.3.2",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.38; 9.7.1",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-859",
+  "s": "char:yauvanashva",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4 and BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.2",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.7.1",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-860",
+  "s": "char:harita-angirasa",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4 and BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.3",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.7.1",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-861",
+  "s": "char:trasadasyu-purana",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4 and BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.13",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.7.4",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-862",
+  "s": "char:anaranya",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4 and BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.13–14",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.7.4",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-863",
+  "s": "char:prishadashva",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.13–14",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-864",
+  "s": "char:haryashva-ii",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4 and BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.13–14",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.7.4",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-865",
+  "s": "char:vasumanas",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.13–14",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-866",
+  "s": "char:tridhanvan",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.13–14",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-867",
+  "s": "char:trayyaruna",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.13–14",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-868",
+  "s": "char:aruna-ikshvaku",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.7.4",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-869",
+  "s": "char:tribandhana",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.7.4–5",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-870",
+  "s": "char:harita-rohita",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4 and BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.17",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.8.1",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-871",
+  "s": "char:chanchu",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.17",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-872",
+  "s": "char:champa",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.8.1",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-873",
+  "s": "char:sudeva-ikshvaku",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4 and BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.17",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.8.1",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-874",
+  "s": "char:vijaya-ikshvaku",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4 and BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.17",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.8.1",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-875",
+  "s": "char:ruruka",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.17",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-876",
+  "s": "char:bharuka",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.8.2",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-877",
+  "s": "char:vrika-ikshvaku",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4 and BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.17",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.8.2",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-878",
+  "s": "char:bahu-ikshvaku",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4 and BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.18–24",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.8.2–4",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-879",
+  "s": "char:shruta-ikshvaku",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4 and BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.26",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.16",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-880",
+  "s": "char:nabhaga-shruta",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.26",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-881",
+  "s": "char:ambarisha-ii",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.26",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-882",
+  "s": "char:nabha-ikshvaku",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.16",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-883",
+  "s": "char:sindhudvipa",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4 and BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.26",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.16",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-884",
+  "s": "char:ayutayus",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4 and BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.26",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.16",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-885",
+  "s": "char:rituparna",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4 and BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.26",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.17",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-886",
+  "s": "char:sarvakama",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4 and BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.27",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.17",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-887",
+  "s": "char:sudasa-ikshvaku",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4 and BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.27",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.18",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-888",
+  "s": "char:saudasa",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4 and BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.27–45",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.18–39",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-889",
+  "s": "char:ashmaka",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4 and BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.45",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.40",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-890",
+  "s": "char:mulaka",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4 and BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.46",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.40",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-891",
+  "s": "char:dasharatha-mulaka",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4 and BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.47",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.41",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-892",
+  "s": "char:ilivila",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4 and BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.47",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.41",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-893",
+  "s": "char:vishvasaha",
+  "p": "MEMBER_OF",
+  "o": "lin:suryavamsha",
+  "qualifiers": {
+   "note": "Ikṣvāku (Solar) line as listed in ViP 4 and BhP 9"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.47",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.41",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-894",
+  "s": "char:ikshvaku",
+  "p": "PARENT_OF",
+  "o": "char:vikukshi",
+  "qualifiers": {
+   "note": "ViP and BhP agree"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.9",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.4",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-895",
+  "s": "char:vikukshi",
+  "p": "PARENT_OF",
+  "o": "char:puranjaya",
+  "qualifiers": {
+   "note": "ViP and BhP agree"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.14",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.12",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-896",
+  "s": "char:puranjaya",
+  "p": "PARENT_OF",
+  "o": "char:anenas-ikshvaku",
+  "qualifiers": {
+   "note": "ViP and BhP agree"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.20",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.20",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-897",
+  "s": "char:anenas-ikshvaku",
+  "p": "PARENT_OF",
+  "o": "char:prithu-ikshvaku",
+  "qualifiers": {
+   "note": "ViP and BhP agree"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.20",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.20",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-898",
+  "s": "char:prithu-ikshvaku",
+  "p": "PARENT_OF",
+  "o": "char:vishvagashva",
+  "qualifiers": {
+   "note": "ViP and BhP agree; ViP: Viśvagaśva; BhP: Viśvagandhi"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.20",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.20",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-899",
+  "s": "char:vishvagashva",
+  "p": "PARENT_OF",
+  "o": "char:chandra-ikshvaku",
+  "qualifiers": {
+   "note": "ViP and BhP agree"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.20",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.20",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-900",
+  "s": "char:chandra-ikshvaku",
+  "p": "PARENT_OF",
+  "o": "char:yuvanashva-i",
+  "qualifiers": {
+   "note": "ViP and BhP agree"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.20",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.20",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-901",
+  "s": "char:yuvanashva-i",
+  "p": "PARENT_OF",
+  "o": "char:shravasta",
+  "qualifiers": {
+   "note": "ViP and BhP agree"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.20",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.21",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-902",
+  "s": "char:shravasta",
+  "p": "PARENT_OF",
+  "o": "char:brihadashva",
+  "qualifiers": {
+   "note": "ViP and BhP agree"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.21",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.21",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-903",
+  "s": "char:brihadashva",
+  "p": "PARENT_OF",
+  "o": "char:kuvalayashva",
+  "qualifiers": {
+   "note": "ViP and BhP agree"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.21",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.21",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-904",
+  "s": "char:kuvalayashva",
+  "p": "PARENT_OF",
+  "o": "char:dridhashva",
+  "qualifiers": {
+   "note": "ViP and BhP agree"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.23",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.24",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-905",
+  "s": "char:dridhashva",
+  "p": "PARENT_OF",
+  "o": "char:haryashva-i",
+  "qualifiers": {
+   "note": "ViP and BhP agree"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.24",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.24",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-906",
+  "s": "char:haryashva-i",
+  "p": "PARENT_OF",
+  "o": "char:nikumbha-ikshvaku",
+  "qualifiers": {
+   "note": "ViP and BhP agree"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.24",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.24",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-907",
+  "s": "char:nikumbha-ikshvaku",
+  "p": "PARENT_OF",
+  "o": "char:samhitashva",
+  "qualifiers": {
+   "text": "text:vishnu-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.24",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-908",
+  "s": "char:nikumbha-ikshvaku",
+  "p": "PARENT_OF",
+  "o": "char:bahulashva",
+  "qualifiers": {
+   "text": "text:bhagavata-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.25",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-909",
+  "s": "char:samhitashva",
+  "p": "PARENT_OF",
+  "o": "char:krishashva",
+  "qualifiers": {
+   "text": "text:vishnu-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.24",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-910",
+  "s": "char:bahulashva",
+  "p": "PARENT_OF",
+  "o": "char:krishashva",
+  "qualifiers": {
+   "text": "text:bhagavata-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.25",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-911",
+  "s": "char:krishashva",
+  "p": "PARENT_OF",
+  "o": "char:prasenajit-ikshvaku",
+  "qualifiers": {
+   "note": "ViP and BhP agree; BhP: Senajit"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.24",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.25",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-912",
+  "s": "char:prasenajit-ikshvaku",
+  "p": "PARENT_OF",
+  "o": "char:yuvanashva-ii",
+  "qualifiers": {
+   "note": "ViP and BhP agree"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.24",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.25",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-913",
+  "s": "char:yuvanashva-ii",
+  "p": "PARENT_OF",
+  "o": "char:mandhatri",
+  "qualifiers": {
+   "note": "ViP and BhP agree; born from his father's body after Yuvanāśva drank the consecrated water"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.24–35",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.25–34",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-914",
+  "s": "char:mandhatri",
+  "p": "PARENT_OF",
+  "o": "char:purukutsa",
+  "qualifiers": {
+   "note": "ViP and BhP agree"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.37",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.38",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-915",
+  "s": "char:mandhatri",
+  "p": "PARENT_OF",
+  "o": "char:ambarisha-mandhatri",
+  "qualifiers": {
+   "note": "ViP and BhP agree"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.37",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.38",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-916",
+  "s": "char:ambarisha-mandhatri",
+  "p": "PARENT_OF",
+  "o": "char:yauvanashva",
+  "qualifiers": {
+   "note": "ViP and BhP agree"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.2",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.7.1",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-917",
+  "s": "char:yauvanashva",
+  "p": "PARENT_OF",
+  "o": "char:harita-angirasa",
+  "qualifiers": {
+   "note": "ViP and BhP agree"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.3",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.7.1",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-918",
+  "s": "char:purukutsa",
+  "p": "PARENT_OF",
+  "o": "char:trasadasyu-purana",
+  "qualifiers": {
+   "note": "ViP and BhP agree; by the Narmadā"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.13",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.7.4",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-919",
+  "s": "char:trasadasyu-purana",
+  "p": "PARENT_OF",
+  "o": "char:anaranya",
+  "qualifiers": {
+   "note": "ViP and BhP agree"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.13–14",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.7.4",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-920",
+  "s": "char:anaranya",
+  "p": "PARENT_OF",
+  "o": "char:prishadashva",
+  "qualifiers": {
+   "text": "text:vishnu-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.13–14",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-921",
+  "s": "char:prishadashva",
+  "p": "PARENT_OF",
+  "o": "char:haryashva-ii",
+  "qualifiers": {
+   "text": "text:vishnu-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.13–14",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-922",
+  "s": "char:anaranya",
+  "p": "PARENT_OF",
+  "o": "char:haryashva-ii",
+  "qualifiers": {
+   "text": "text:bhagavata-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.7.4",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-923",
+  "s": "char:haryashva-ii",
+  "p": "PARENT_OF",
+  "o": "char:vasumanas",
+  "qualifiers": {
+   "text": "text:vishnu-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.13–14",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-924",
+  "s": "char:vasumanas",
+  "p": "PARENT_OF",
+  "o": "char:tridhanvan",
+  "qualifiers": {
+   "text": "text:vishnu-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.13–14",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-925",
+  "s": "char:tridhanvan",
+  "p": "PARENT_OF",
+  "o": "char:trayyaruna",
+  "qualifiers": {
+   "text": "text:vishnu-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.13–14",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-926",
+  "s": "char:trayyaruna",
+  "p": "PARENT_OF",
+  "o": "char:trishanku",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "note": "Satyavrata, called Triśaṅku"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.14",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-927",
+  "s": "char:haryashva-ii",
+  "p": "PARENT_OF",
+  "o": "char:aruna-ikshvaku",
+  "qualifiers": {
+   "text": "text:bhagavata-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.7.4",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-928",
+  "s": "char:aruna-ikshvaku",
+  "p": "PARENT_OF",
+  "o": "char:tribandhana",
+  "qualifiers": {
+   "text": "text:bhagavata-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.7.4",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-929",
+  "s": "char:tribandhana",
+  "p": "PARENT_OF",
+  "o": "char:trishanku",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "note": "Satyavrata, called Triśaṅku"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.7.5",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-930",
+  "s": "char:rohita",
+  "p": "PARENT_OF",
+  "o": "char:harita-rohita",
+  "qualifiers": {
+   "note": "ViP and BhP agree"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.17",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.8.1",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-931",
+  "s": "char:harita-rohita",
+  "p": "PARENT_OF",
+  "o": "char:chanchu",
+  "qualifiers": {
+   "text": "text:vishnu-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.17",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-932",
+  "s": "char:chanchu",
+  "p": "PARENT_OF",
+  "o": "char:vijaya-ikshvaku",
+  "qualifiers": {
+   "text": "text:vishnu-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.17",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-933",
+  "s": "char:chanchu",
+  "p": "PARENT_OF",
+  "o": "char:sudeva-ikshvaku",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "note": "Vijaya and Sudeva are brothers in ViP"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.17",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-934",
+  "s": "char:harita-rohita",
+  "p": "PARENT_OF",
+  "o": "char:champa",
+  "qualifiers": {
+   "text": "text:bhagavata-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.8.1",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-935",
+  "s": "char:champa",
+  "p": "PARENT_OF",
+  "o": "char:sudeva-ikshvaku",
+  "qualifiers": {
+   "text": "text:bhagavata-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.8.1",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-936",
+  "s": "char:sudeva-ikshvaku",
+  "p": "PARENT_OF",
+  "o": "char:vijaya-ikshvaku",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "note": "in BhP Vijaya is Sudeva's son"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.8.1",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-937",
+  "s": "char:vijaya-ikshvaku",
+  "p": "PARENT_OF",
+  "o": "char:ruruka",
+  "qualifiers": {
+   "text": "text:vishnu-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.17",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-938",
+  "s": "char:vijaya-ikshvaku",
+  "p": "PARENT_OF",
+  "o": "char:bharuka",
+  "qualifiers": {
+   "text": "text:bhagavata-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.8.2",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-939",
+  "s": "char:ruruka",
+  "p": "PARENT_OF",
+  "o": "char:vrika-ikshvaku",
+  "qualifiers": {
+   "text": "text:vishnu-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.17",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-940",
+  "s": "char:bharuka",
+  "p": "PARENT_OF",
+  "o": "char:vrika-ikshvaku",
+  "qualifiers": {
+   "text": "text:bhagavata-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.8.2",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-941",
+  "s": "char:vrika-ikshvaku",
+  "p": "PARENT_OF",
+  "o": "char:bahu-ikshvaku",
+  "qualifiers": {
+   "note": "ViP and BhP agree"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.18",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.8.2",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-942",
+  "s": "char:bahu-ikshvaku",
+  "p": "PARENT_OF",
+  "o": "char:sagara",
+  "qualifiers": {
+   "note": "ViP and BhP agree; born in Aurva's hermitage with the poison (gara)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.18–24",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.8.3–4",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-943",
+  "s": "char:bhagiratha",
+  "p": "PARENT_OF",
+  "o": "char:shruta-ikshvaku",
+  "qualifiers": {
+   "note": "ViP and BhP agree"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.26",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.16",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-944",
+  "s": "char:shruta-ikshvaku",
+  "p": "PARENT_OF",
+  "o": "char:nabhaga-shruta",
+  "qualifiers": {
+   "text": "text:vishnu-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.26",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-945",
+  "s": "char:nabhaga-shruta",
+  "p": "PARENT_OF",
+  "o": "char:ambarisha-ii",
+  "qualifiers": {
+   "text": "text:vishnu-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.26",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-946",
+  "s": "char:ambarisha-ii",
+  "p": "PARENT_OF",
+  "o": "char:sindhudvipa",
+  "qualifiers": {
+   "text": "text:vishnu-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.26",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-947",
+  "s": "char:shruta-ikshvaku",
+  "p": "PARENT_OF",
+  "o": "char:nabha-ikshvaku",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "note": "'another Nābha'"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.16",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-948",
+  "s": "char:nabha-ikshvaku",
+  "p": "PARENT_OF",
+  "o": "char:sindhudvipa",
+  "qualifiers": {
+   "text": "text:bhagavata-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.16",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-949",
+  "s": "char:sindhudvipa",
+  "p": "PARENT_OF",
+  "o": "char:ayutayus",
+  "qualifiers": {
+   "note": "ViP and BhP agree"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.26",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.16",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-950",
+  "s": "char:ayutayus",
+  "p": "PARENT_OF",
+  "o": "char:rituparna",
+  "qualifiers": {
+   "note": "ViP and BhP agree"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.26",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.17",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-951",
+  "s": "char:rituparna",
+  "p": "PARENT_OF",
+  "o": "char:sarvakama",
+  "qualifiers": {
+   "note": "ViP and BhP agree"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.27",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.17",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-952",
+  "s": "char:sarvakama",
+  "p": "PARENT_OF",
+  "o": "char:sudasa-ikshvaku",
+  "qualifiers": {
+   "note": "ViP and BhP agree"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.27",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.18",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-953",
+  "s": "char:sudasa-ikshvaku",
+  "p": "PARENT_OF",
+  "o": "char:saudasa",
+  "qualifiers": {
+   "note": "ViP and BhP agree"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.27",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.18",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-954",
+  "s": "char:saudasa",
+  "p": "PARENT_OF",
+  "o": "char:ashmaka",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "note": "begotten on Madayantī by Vasiṣṭha at the sonless king's request"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.45",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-955",
+  "s": "char:ashmaka",
+  "p": "PARENT_OF",
+  "o": "char:mulaka",
+  "qualifiers": {
+   "note": "ViP and BhP agree"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.46",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.40",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-956",
+  "s": "char:mulaka",
+  "p": "PARENT_OF",
+  "o": "char:dasharatha-mulaka",
+  "qualifiers": {
+   "note": "ViP and BhP agree"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.47",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.41",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-957",
+  "s": "char:dasharatha-mulaka",
+  "p": "PARENT_OF",
+  "o": "char:ilivila",
+  "qualifiers": {
+   "note": "ViP and BhP agree; BhP: Aiḍaviḍi"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.47",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.41",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-958",
+  "s": "char:ilivila",
+  "p": "PARENT_OF",
+  "o": "char:vishvasaha",
+  "qualifiers": {
+   "note": "ViP and BhP agree"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.47",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.41",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-959",
+  "s": "char:vishvasaha",
+  "p": "PARENT_OF",
+  "o": "char:khatvanga",
+  "qualifiers": {
+   "note": "ViP and BhP agree"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.47",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.41",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-960",
+  "s": "char:mandhatri",
+  "p": "IDENTIFIED_WITH",
+  "o": "char:trasadasyu-purana",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "note": "the Bhāgavata says Indra gave Māndhātṛ the name Trasaddasyu; it also gives the name to Purukutsa's son (9.7.4) — a homonymy, not an identity of persons"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.33",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt",
+    "quote": "trasaddasyur itīndro 'ṅga vidadhe nāma yasya vai"
+   }
+  ],
+  "confidence": "low",
+  "status": "verified-online",
+  "competing": "Read as two persons sharing a name, as the genealogy itself requires",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-961",
+  "s": "char:rituparna",
+  "p": "ALLY_OF",
+  "o": "char:nala",
+  "qualifiers": {
+   "note": "Nala's friend; ViP and BhP agree"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.26",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+    "quote": "ṛtuparṇo nalasahāyo 'kṣahṛdayajño 'bhūt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.17",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt",
+    "quote": "ṛtūparṇo nalasakho"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-962",
+  "s": "char:ravana",
+  "p": "SLAYS",
+  "o": "char:anaranya",
+  "qualifiers": {
+   "text": "text:vishnu-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.13–14",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+    "quote": "tato 'naraṇyas taṃ rāvaṇo digvijaye nijaghāna"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-963",
+  "s": "narr:dhundhumara",
+  "p": "NARRATED_IN",
+  "o": "text:mahabharata",
+  "qualifiers": {
+   "note": "told by Mārkaṇḍeya; Dhundhu is the son of Madhu and Kaiṭabha (3.195.1)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 3.192–195",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b03/b03c195.htm"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-964",
+  "s": "narr:dhundhumara",
+  "p": "NARRATED_IN",
+  "o": "text:vishnu-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.21–23",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-965",
+  "s": "narr:dhundhumara",
+  "p": "NARRATED_IN",
+  "o": "text:bhagavata-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.21–24",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt",
+    "quote": "yaḥ priyārthamutaṅkasya dhundhunāmāsuraṃ balī"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-966",
+  "s": "char:kuvalayashva",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:dhundhumara",
+  "qualifiers": {
+   "text": "text:mahabharata",
+   "role": "slayer"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 3.195",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b03/b03c195.htm"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-967",
+  "s": "char:dhundhu",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:dhundhumara",
+  "qualifiers": {
+   "text": "text:mahabharata",
+   "role": "slain"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 3.195",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b03/b03c195.htm"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-968",
+  "s": "char:kuvalayashva",
+  "p": "SLAYS",
+  "o": "char:dhundhu",
+  "qualifiers": {
+   "text": "text:mahabharata"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 3.195",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b03/b03c195.htm"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-969",
+  "s": "char:kuvalayashva",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:dhundhumara",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "slayer"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.21",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-970",
+  "s": "char:dhundhu",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:dhundhumara",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "slain"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.21",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-971",
+  "s": "char:kuvalayashva",
+  "p": "SLAYS",
+  "o": "char:dhundhu",
+  "qualifiers": {
+   "text": "text:vishnu-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.21",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-972",
+  "s": "char:kuvalayashva",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:dhundhumara",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "slayer"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.22",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-973",
+  "s": "char:dhundhu",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:dhundhumara",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "slain"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.22",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-974",
+  "s": "char:kuvalayashva",
+  "p": "SLAYS",
+  "o": "char:dhundhu",
+  "qualifiers": {
+   "text": "text:bhagavata-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.22",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-975",
+  "s": "char:madhu",
+  "p": "PARENT_OF",
+  "o": "char:dhundhu",
+  "qualifiers": {
+   "text": "text:mahabharata",
+   "note": "son of Madhu and Kaiṭabha"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 3.195.1",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b03/b03c195.htm",
+    "quote": "dhundhur nāma mahātejās tayoḥ putro mahādyutiḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-976",
+  "s": "narr:mandhatri-birth",
+  "p": "NARRATED_IN",
+  "o": "text:vishnu-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.24–35",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-977",
+  "s": "narr:mandhatri-birth",
+  "p": "NARRATED_IN",
+  "o": "text:bhagavata-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.25–34",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt",
+    "quote": "kaṃ dhāsyati kumāro 'yaṃ stanye rorūyate bhṛśam"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-978",
+  "s": "char:yuvanashva-ii",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:mandhatri-birth",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "male mother"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.24–35",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-979",
+  "s": "char:mandhatri",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:mandhatri-birth",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "child"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.24–35",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-980",
+  "s": "deity:indra",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:mandhatri-birth",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "nurses the child with his finger"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.24–35",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-981",
+  "s": "char:yuvanashva-ii",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:mandhatri-birth",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "male mother"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.25–34",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-982",
+  "s": "char:mandhatri",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:mandhatri-birth",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "child"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.25–34",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-983",
+  "s": "deity:indra",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:mandhatri-birth",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "nurses the child with his finger"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.25–34",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-984",
+  "s": "narr:kalmashapada-curse",
+  "p": "NARRATED_IN",
+  "o": "text:vishnu-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.27–45",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+    "quote": "tataḥ sa kalmāṣapādasaṃjñām avāpa"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-985",
+  "s": "narr:kalmashapada-curse",
+  "p": "NARRATED_IN",
+  "o": "text:bhagavata-purana",
+  "qualifiers": {
+   "note": "names the queen Damayantī rather than Madayantī (9.9.18)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.18–39",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-986",
+  "s": "narr:kalmashapada-curse",
+  "p": "NARRATED_IN",
+  "o": "text:mahabharata",
+  "qualifiers": {
+   "note": "in the Mahābhārata the curse comes from Vasiṣṭha's son Śakti, whom the king then eats"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 1.166–173",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b01/b01c166.htm"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-987",
+  "s": "char:saudasa",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:kalmashapada-curse",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "cursed king"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.35–39",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-988",
+  "s": "char:vasishtha",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:kalmashapada-curse",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "guru who curses him"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.35–39",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-989",
+  "s": "char:vasishtha",
+  "p": "CURSES",
+  "o": "char:saudasa",
+  "qualifiers": {
+   "text": "text:vishnu-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.35–39",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-990",
+  "s": "char:saudasa",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:kalmashapada-curse",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "cursed king"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.18–24",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-991",
+  "s": "char:vasishtha",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:kalmashapada-curse",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "guru who curses him"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.18–24",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-992",
+  "s": "char:vasishtha",
+  "p": "CURSES",
+  "o": "char:saudasa",
+  "qualifiers": {
+   "text": "text:bhagavata-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.18–24",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-993",
+  "s": "char:vasishtha",
+  "p": "PARENT_OF",
+  "o": "char:ashmaka",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "note": "begotten on Saudāsa's queen Madayantī at the king's request (niyoga)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.45",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
  }
 ]

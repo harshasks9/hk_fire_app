@@ -5532,5 +5532,1794 @@
   "status": "verified-online",
   "agent": "purana",
   "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:vikukshi",
+  "type": "character",
+  "name": "Vikukṣi (Śaśāda)",
+  "aliases": [
+   "Śaśāda"
+  ],
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Eldest son of Ikṣvāku, expelled for eating a hare meant for the śrāddha offering and hence called Śaśāda ('hare-eater'); succeeds his father.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.9–13",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.4–11",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:puranjaya",
+  "type": "character",
+  "name": "Purañjaya (Kakutstha)",
+  "aliases": [
+   "Kakutstha",
+   "Indravāha"
+  ],
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Son of Vikukṣi who fights the asuras riding on Indra in the form of a bull, standing on its hump (kakud) — hence Kakutstha, eponym of the Kākutsthas.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.14–19",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.12–19",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:anenas-ikshvaku",
+  "type": "character",
+  "name": "Anenas (son of Kakutstha)",
+  "aliases": [
+   "Anenā"
+  ],
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Ikṣvāku king, son of Purañjaya Kakutstha.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.20",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.20",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:prithu-ikshvaku",
+  "type": "character",
+  "name": "Pṛthu (Ikṣvāku king, son of Anenas)",
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Ikṣvāku king, son of Anenas; distinct from Pṛthu Vainya, son of Vena (char:prithu).",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.20",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.20",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:vishvagashva",
+  "type": "character",
+  "name": "Viśvagaśva (Viśvagandhi)",
+  "aliases": [
+   "Viśvagandhi (BhP)"
+  ],
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Son of Pṛthu in the Ikṣvāku line; the Bhāgavata calls him Viśvagandhi.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.20",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.20",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:chandra-ikshvaku",
+  "type": "character",
+  "name": "Cāndra (Candra), Ikṣvāku king",
+  "aliases": [
+   "Candra"
+  ],
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Ikṣvāku king, son of Viśvagaśva/Viśvagandhi.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.20",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.20",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:yuvanashva-i",
+  "type": "character",
+  "name": "Yuvanāśva (I), son of Cāndra",
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Ikṣvāku king, son of Cāndra and father of Śrāvasta.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.20",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.20",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:shravasta",
+  "type": "character",
+  "name": "Śrāvasta",
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Ikṣvāku king who founded the city of Śrāvastī.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.20",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.21",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:brihadashva",
+  "type": "character",
+  "name": "Bṛhadaśva",
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Ikṣvāku king, son of Śrāvasta and father of Kuvalayāśva.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.21",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.21",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:kuvalayashva",
+  "type": "character",
+  "name": "Kuvalayāśva (Dhundhumāra)",
+  "aliases": [
+   "Dhundhumāra"
+  ],
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Ikṣvāku king who, empowered by Viṣṇu's energy and with his 21,000 sons, killed the asura Dhundhu for the sage Uttaṅka and was called Dhundhumāra; all but three of his sons perished in Dhundhu's fiery breath.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.21–23",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.21–24",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:dridhashva",
+  "type": "character",
+  "name": "Dṛḍhāśva",
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "One of the three sons of Kuvalayāśva who survived Dhundhu's fire; continues the line.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.23–24",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.23–24",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:haryashva-i",
+  "type": "character",
+  "name": "Haryaśva (I), son of Dṛḍhāśva",
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Ikṣvāku king, son of Dṛḍhāśva.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.24",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.24",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:nikumbha-ikshvaku",
+  "type": "character",
+  "name": "Nikumbha (Ikṣvāku king)",
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Ikṣvāku king, son of Haryaśva.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.24",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.24",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:samhitashva",
+  "type": "character",
+  "name": "Saṃhitāśva",
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Son of Nikumbha in the Viṣṇu Purāṇa's list; the Bhāgavata names Bahulāśva in this place.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.24",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:bahulashva",
+  "type": "character",
+  "name": "Bahulāśva",
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Son of Nikumbha in the Bhāgavata's list, where the Viṣṇu Purāṇa has Saṃhitāśva.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.25",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:krishashva",
+  "type": "character",
+  "name": "Kṛśāśva (Ikṣvāku king)",
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Ikṣvāku king, father of Prasenajit/Senajit.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.24",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.25",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:prasenajit-ikshvaku",
+  "type": "character",
+  "name": "Prasenajit (Senajit), Ikṣvāku king",
+  "aliases": [
+   "Senajit (BhP)"
+  ],
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Ikṣvāku king, son of Kṛśāśva and father of Yuvanāśva II; the Bhāgavata calls him Senajit.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.24",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.25",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:yuvanashva-ii",
+  "type": "character",
+  "name": "Yuvanāśva (II), father of Māndhātṛ",
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Sonless Ikṣvāku king who drinks by mistake the consecrated water meant for his queen and himself bears Māndhātṛ, who is born from his side and fed on Indra's finger.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.24–35",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.25–34",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:purukutsa",
+  "type": "character",
+  "name": "Purukutsa",
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Son of Māndhātṛ who, taken to the netherworld by the river Narmadā, destroys the Mauneya gandharvas for the nāgas; father of Trasadasyu.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.37; 4.3.4–13",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.38; 9.7.2–4",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:ambarisha-mandhatri",
+  "type": "character",
+  "name": "Ambarīṣa (son of Māndhātṛ)",
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Son of Māndhātṛ, adopted by his grandfather (BhP); ancestor of the Hārīta brāhmaṇas. Distinct from Ambarīṣa son of Nābhāga (char:ambarisha).",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.37; 4.3.2",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.38; 9.7.1",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:yauvanashva",
+  "type": "character",
+  "name": "Yauvanāśva (son of Ambarīṣa)",
+  "aliases": [
+   "Yuvanāśva (III)"
+  ],
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Son of Māndhātṛ's son Ambarīṣa and father of Harīta.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.2",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.7.1",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:harita-angirasa",
+  "type": "character",
+  "name": "Harīta (Hārīta), ancestor of the Hārītas",
+  "aliases": [
+   "Hārīta"
+  ],
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Son of Yauvanāśva from whom the Āṅgirasa Hārītas descend.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.3",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.7.1",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:trasadasyu-purana",
+  "type": "character",
+  "name": "Trasadasyu (son of Purukutsa, Purāṇic genealogy)",
+  "aliases": [
+   "Trasaddasyu"
+  ],
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Son of Purukutsa and the Narmadā in the Purāṇic Ikṣvāku list. The Bhāgavata also gives the name Trasaddasyu to Māndhātṛ himself (9.6.33).",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.13",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.7.4",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:anaranya",
+  "type": "character",
+  "name": "Anaraṇya",
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Ikṣvāku king, son of Trasadasyu, killed by Rāvaṇa on his campaign of conquest (Viṣṇu Purāṇa).",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.13–14",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.7.4",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:prishadashva",
+  "type": "character",
+  "name": "Pṛṣadaśva (son of Anaraṇya)",
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Son of Anaraṇya in the Viṣṇu Purāṇa's list; absent from the Bhāgavata's.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.13–14",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:haryashva-ii",
+  "type": "character",
+  "name": "Haryaśva (II), descendant of Anaraṇya",
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Ikṣvāku king: son of Pṛṣadaśva in the Viṣṇu Purāṇa, son of Anaraṇya in the Bhāgavata.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.13–14",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.7.4",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:vasumanas",
+  "type": "character",
+  "name": "Vasumanas",
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Son of Haryaśva in the Viṣṇu Purāṇa's list; absent from the Bhāgavata's.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.13–14",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:tridhanvan",
+  "type": "character",
+  "name": "Tridhanvan",
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Son of Vasumanas and father of Trayyāruṇa in the Viṣṇu Purāṇa's list.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.13–14",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:trayyaruna",
+  "type": "character",
+  "name": "Trayyāruṇa",
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Father of Satyavrata (Triśaṅku) in the Viṣṇu Purāṇa's list.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.13–14",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:aruna-ikshvaku",
+  "type": "character",
+  "name": "Aruṇa (Ikṣvāku king)",
+  "aliases": [
+   "Prāruṇa"
+  ],
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Son of Haryaśva in the Bhāgavata's list.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.7.4",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:tribandhana",
+  "type": "character",
+  "name": "Tribandhana",
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Son of Aruṇa and father of Satyavrata (Triśaṅku) in the Bhāgavata's list, where the Viṣṇu Purāṇa has Tridhanvan → Trayyāruṇa.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.7.4–5",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:harita-rohita",
+  "type": "character",
+  "name": "Harita (son of Rohita)",
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Ikṣvāku king, son of Rohita/Rohitāśva and grandson of Hariścandra.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.17",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.8.1",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:chanchu",
+  "type": "character",
+  "name": "Cañcu",
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Son of Harita in the Viṣṇu Purāṇa; father of Vijaya and Sudeva.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.17",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:champa",
+  "type": "character",
+  "name": "Campa (founder of Campāpurī)",
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Son of Harita in the Bhāgavata, founder of the city of Campā; father of Sudeva.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.8.1",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:sudeva-ikshvaku",
+  "type": "character",
+  "name": "Sudeva (Ikṣvāku king)",
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Brother of Vijaya and son of Cañcu (ViP), or son of Campa and father of Vijaya (BhP).",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.17",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.8.1",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:vijaya-ikshvaku",
+  "type": "character",
+  "name": "Vijaya (Ikṣvāku king)",
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Son of Cañcu (ViP) or of Sudeva (BhP); father of Ruruka/Bharuka.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.17",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.8.1",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:ruruka",
+  "type": "character",
+  "name": "Ruruka",
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Son of Vijaya in the Viṣṇu Purāṇa; the Bhāgavata names Bharuka.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.17",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:bharuka",
+  "type": "character",
+  "name": "Bharuka",
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Son of Vijaya in the Bhāgavata, where the Viṣṇu Purāṇa names Ruruka.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.8.2",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:vrika-ikshvaku",
+  "type": "character",
+  "name": "Vṛka (Ikṣvāku king)",
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Father of Bāhu/Bāhuka.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.17",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.8.2",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:bahu-ikshvaku",
+  "type": "character",
+  "name": "Bāhu (Bāhuka), father of Sagara",
+  "aliases": [
+   "Bāhuka"
+  ],
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Ikṣvāku king driven from his kingdom by the Haihayas and Tālajaṅghas, who dies near the hermitage of the sage Aurva while his pregnant queen, poisoned by a co-wife, carries Sagara ('born with poison').",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.3.18–24",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.8.2–4",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:shruta-ikshvaku",
+  "type": "character",
+  "name": "Śruta (son of Bhagīratha)",
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Son of Bhagīratha.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.26",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.16",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:nabhaga-shruta",
+  "type": "character",
+  "name": "Nābhāga (son of Śruta)",
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Son of Śruta in the Viṣṇu Purāṇa's list; the Bhāgavata names 'another Nābha'.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.26",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:ambarisha-ii",
+  "type": "character",
+  "name": "Ambarīṣa (son of Nābhāga son of Śruta)",
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Ikṣvāku king in the Viṣṇu Purāṇa's post-Bhagīratha list; not in the Bhāgavata's. Distinct from the devotee Ambarīṣa (char:ambarisha) and Māndhātṛ's son.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.26",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:nabha-ikshvaku",
+  "type": "character",
+  "name": "Nābha (son of Śruta)",
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Son of Śruta in the Bhāgavata ('another Nābha'), where the Viṣṇu Purāṇa has Nābhāga → Ambarīṣa.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.16",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:sindhudvipa",
+  "type": "character",
+  "name": "Sindhudvīpa",
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Ikṣvāku king, father of Ayutāyus.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.26",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.16",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:ayutayus",
+  "type": "character",
+  "name": "Ayutāyus",
+  "aliases": [
+   "Ayutāyu"
+  ],
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Ikṣvāku king, father of Ṛtuparṇa.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.26",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.16",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:rituparna",
+  "type": "character",
+  "name": "Ṛtuparṇa",
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Ikṣvāku king, friend of Nala, who knows the 'heart of dice' and exchanges it for Nala's horse-lore.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.26",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.17",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:sarvakama",
+  "type": "character",
+  "name": "Sarvakāma",
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Son of Ṛtuparṇa.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.27",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.17",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:sudasa-ikshvaku",
+  "type": "character",
+  "name": "Sudāsa (Ikṣvāku king, father of Saudāsa)",
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Son of Sarvakāma and father of Saudāsa Mitrasaha; distinct from the Ṛgvedic Sudās (char:sudas).",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.27",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.18",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:saudasa",
+  "type": "character",
+  "name": "Saudāsa (Mitrasaha, Kalmāṣapāda)",
+  "aliases": [
+   "Mitrasaha",
+   "Kalmāṣapāda",
+   "Kalmāṣāṅghri"
+  ],
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Ikṣvāku king cursed by Vasiṣṭha to become a man-eating rākṣasa for twelve years after being tricked into serving him human flesh; the curse-water burns his feet spotted (kalmāṣa). His son Aśmaka is begotten by Vasiṣṭha.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.27–45",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.18–39",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:ashmaka",
+  "type": "character",
+  "name": "Aśmaka",
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Son of Saudāsa's queen (Madayantī) by Vasiṣṭha, born after seven years when she struck the womb with a stone (aśman).",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.45",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.40",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:mulaka",
+  "type": "character",
+  "name": "Mūlaka (Nārīkavaca)",
+  "aliases": [
+   "Nārīkavaca",
+   "Bālika"
+  ],
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Son of Aśmaka, hidden among women when the earth was emptied of kṣatriyas (by Paraśurāma), hence 'woman-armoured' (Nārīkavaca).",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.46",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.40",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:dasharatha-mulaka",
+  "type": "character",
+  "name": "Daśaratha (son of Mūlaka)",
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Ikṣvāku king, son of Mūlaka; distinct from Daśaratha father of Rāma (char:dasharatha).",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.47",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.41",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:ilivila",
+  "type": "character",
+  "name": "Ilivila (Aiḍaviḍi)",
+  "aliases": [
+   "Aiḍaviḍi (BhP)",
+   "Iḍaviḍa"
+  ],
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Son of Daśaratha son of Mūlaka; the Bhāgavata calls him Aiḍaviḍi.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.47",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.41",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:vishvasaha",
+  "type": "character",
+  "name": "Viśvasaha",
+  "roles": [
+   "king",
+   "Ikṣvāku"
+  ],
+  "summary": "Ikṣvāku king, father of Khaṭvāṅga (Dilīpa).",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.47",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.41",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:pargiter-1922"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:dhundhu",
+  "type": "character",
+  "name": "Dhundhu",
+  "iast": "Dhundhu",
+  "roles": [
+   "asura"
+  ],
+  "summary": "Asura, son of Madhu and Kaiṭabha in the Mahābhārata, who sleeps beneath the sands near the hermitage of Uttaṅka and shakes the earth with his breath; killed by Kuvalayāśva.",
+  "sources": [
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 3.195.1–36",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b03/b03c195.htm"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.21",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.22–23",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:dhundhumara",
+  "type": "narrative",
+  "name": "Kuvalayāśva kills Dhundhu (Dhundhumāra)",
+  "iast": "Dhundhumāra",
+  "summary": "At the request of the sage Uttaṅka, King Kuvalayāśva, empowered by Viṣṇu, digs out the asura Dhundhu from the desert sands with his sons and kills him, though the asura's fiery breath consumes all but three of the sons; the king is thereafter called Dhundhumāra.",
+  "sources": [
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 3.192–195",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b03/b03c192.htm"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.21–23",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.21–24",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:mandhatri-birth",
+  "type": "narrative",
+  "name": "The birth of Māndhātṛ from his father's body",
+  "iast": "Māndhātṛ-janma",
+  "summary": "The sonless King Yuvanāśva, thirsty in the night, drinks the water the sages had consecrated for his queen; he conceives, the child is born from his side, and Indra lets him suck his finger, saying 'He will suck me' (māṃ dhāsyati) — whence the name Māndhātṛ.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.2.24–35",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.6.25–34",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:kalmashapada-curse",
+  "type": "narrative",
+  "name": "Saudāsa becomes the man-eater Kalmāṣapāda",
+  "iast": "Kalmāṣapāda",
+  "summary": "Tricked by a rākṣasa disguised as Vasiṣṭha, King Saudāsa Mitrasaha serves his guru human flesh and is cursed to be a man-eating rākṣasa for twelve years; his curse-water, thrown on his own feet, spots them (Kalmāṣapāda). As a rākṣasa he devours a brāhmaṇa and is cursed by the widow; Vasiṣṭha later begets Aśmaka on his queen.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 4.4.27–45",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.18–39",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 1.166–173",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b01/b01c166.htm"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
  }
 ]

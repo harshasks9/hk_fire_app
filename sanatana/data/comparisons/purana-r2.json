@@ -849,5 +849,80 @@
    }
   ],
   "agent": "purana"
+ },
+ {
+  "id": "cmp:solar-line-ikshvaku-sagara",
+  "title": "Ikṣvāku to Sagara in the Viṣṇu and Bhāgavata Purāṇas",
+  "subject": "lin:suryavamsha",
+  "question": "How does each text give the Solar line between Ikṣvāku and Sagara?",
+  "rows": [
+   {
+    "text": "text:vishnu-purana",
+    "locator": "ViP 4.2.9–4.3.24",
+    "statement": "Ikṣvāku → Vikukṣi (Śaśāda) → Purañjaya (Kakutstha) → Anenas → Pṛthu → Viśvagaśva → Cāndra → Yuvanāśva → Śrāvasta → Bṛhadaśva → Kuvalayāśva (Dhundhumāra) → Dṛḍhāśva → Haryaśva → Nikumbha → Saṃhitāśva → Kṛśāśva → Prasenajit → Yuvanāśva → Māndhātṛ → Purukutsa → Trasadasyu → Anaraṇya → Pṛṣadaśva → Haryaśva → Vasumanas → Tridhanvan → Trayyāruṇa → Satyavrata (Triśaṅku) → Hariścandra → Rohitāśva → Harita → Cañcu → Vijaya (and brother Sudeva) → Ruruka → Vṛka → Bāhu → Sagara.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "ViP 4.2.9–4.3.24",
+      "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:bhagavata-purana",
+    "locator": "BhP 9.6.4–9.8.4",
+    "statement": "Ikṣvāku → Vikukṣi (Śaśāda) → Purañjaya (Indravāha, Kakutstha) → Anenas → Pṛthu → Viśvagandhi → Candra → Yuvanāśva → Śrāvasta → Bṛhadaśva → Kuvalayāśva (Dhundhumāra) → Dṛḍhāśva → Haryaśva → Nikumbha → Bahulāśva → Kṛśāśva → Senajit → Yuvanāśva → Māndhātṛ (also named Trasaddasyu by Indra) → Purukutsa → Trasaddasyu → Anaraṇya → Haryaśva → Aruṇa → Tribandhana → Satyavrata (Triśaṅku) → Hariścandra → Rohita → Harita → Campa → Sudeva → Vijaya → Bharuka → Vṛka → Bāhuka → Sagara.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "BhP 9.6.4–9.8.4",
+      "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "note": "The two lists agree for some twenty generations and then diverge in names (Saṃhitāśva/Bahulāśva, Cañcu/Campa, Ruruka/Bharuka) and in length (ViP has Pṛṣadaśva and Vasumanas, BhP does not). Pargiter (1922) and Thapar (1978) read such lists as reconstructed tradition rather than chronicles.",
+  "agent": "purana"
+ },
+ {
+  "id": "cmp:solar-line-bhagiratha-khatvanga",
+  "title": "Bhagīratha to Khaṭvāṅga in the Viṣṇu and Bhāgavata Purāṇas",
+  "subject": "lin:suryavamsha",
+  "question": "How does each text give the line between Bhagīratha and Khaṭvāṅga (Dilīpa)?",
+  "rows": [
+   {
+    "text": "text:vishnu-purana",
+    "locator": "ViP 4.4.26–47",
+    "statement": "Bhagīratha → Śruta → Nābhāga → Ambarīṣa → Sindhudvīpa → Ayutāyus → Ṛtuparṇa (Nala's friend) → Sarvakāma → Sudāsa → Saudāsa Mitrasaha (Kalmāṣapāda; queen Madayantī) → Aśmaka (by Vasiṣṭha) → Mūlaka (Nārīkavaca) → Daśaratha → Ilivila → Viśvasaha → Khaṭvāṅga (Dilīpa).",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "ViP 4.4.26–47",
+      "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:bhagavata-purana",
+    "locator": "BhP 9.9.16–41",
+    "statement": "Bhagīratha → Śruta → 'another Nābha' → Sindhudvīpa → Ayutāyu → Ṛtuparṇa (Nala's friend) → Sarvakāma → Sudāsa → his son Mitrasaha (Kalmāṣāṅghri; queen named Damayantī) … Aśmaka → Mūlaka (Bālika, Nārīkavaca) → Daśaratha → Aiḍaviḍi → Viśvasaha → Khaṭvāṅga.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "BhP 9.9.16–41",
+      "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "agent": "purana"
  }
 ]
