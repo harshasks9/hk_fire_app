@@ -22,8 +22,8 @@
    },
    {
     "text": "text:kamba-ramayanam",
-    "locator": "Āraṇiya kāṇṭam",
-    "statement": "Rāvaṇa does not touch Sītā: he digs up and lifts the ground on which her hermitage stands and carries her away with it. Commentators connect this to a curse that he would die if he forced an unwilling woman.",
+    "locator": "Kamba Rāmāyaṇam 3.8.74 (verse 3490), Caṭāyu uyir nītta paṭalam",
+    "statement": "Rāvaṇa does not touch Sītā: “the wicked one did not touch the jewelled lady, mindful of Brahmā’s word” (ayaṉ mēl urai, i.e. a curse), and with his pillar-like arms “dug up the ground a yojana below and above” and carried her off with it — the editor’s heading says, together with the leaf hut.",
     "sources": [
      {
       "source": "src:hart-heifetz-1988",
@@ -31,14 +31,19 @@
      },
      {
       "source": "src:richman-1991"
+     },
+     {
+      "source": "src:kamban-pm",
+      "locator": "3.8.74 (verse 3490)",
+      "url": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0455.html"
      }
     ],
-    "status": "recall"
+    "status": "verified-online"
    },
    {
     "text": "text:adhyatma-ramayana",
-    "locator": "Araṇyakāṇḍa (recalled as ch. 7)",
-    "statement": "Before the golden-deer episode Rāma, knowing the future, tells Sītā to enter the fire and leave an illusory Sītā (māyā-Sītā) in her place; it is this double that Rāvaṇa carries off.",
+    "locator": "Araṇyakāṇḍa (commonly cited as sarga 7; not checked in an edition)",
+    "statement": "Before the golden-deer episode Rāma, knowing Rāvaṇa’s intention, tells Sītā to leave her shadow (chāyā) in the hut and to live hidden in the fire for a year; the illusory Sītā (māyā-Sītā) is the one Rāvaṇa carries off. Unlike the Kūrma Purāṇa, where Agni is the saviour, here Rāma himself devises the plan.",
     "sources": [
      {
       "source": "src:doniger-1999"
@@ -51,7 +56,7 @@
       "url": "https://en.wikipedia.org/wiki/Maya_Sita"
      }
     ],
-    "status": "recall"
+    "status": "reference-checked"
    },
    {
     "text": "text:ramcharitmanas",
@@ -148,8 +153,8 @@
    },
    {
     "text": "text:adbhuta-ramayana",
-    "locator": "sargas on Sītā’s birth",
-    "statement": "She is born to Mandodarī (popular accounts of the text add that Mandodarī had drunk a pot of sages’ blood collected by Rāvaṇa) and is found by Janaka in a field being prepared for a sacrifice.",
+    "locator": "sarga 8 (as summarised from Grierson’s and later accounts)",
+    "statement": "Rāvaṇa’s boon includes the condition that he will perish if he approaches his own daughter; his misdeeds lead to Sītā’s birth from his wife Mandodarī, and the sarga ends with Janaka finding her in a field being prepared for a sacrifice.",
     "sources": [
      {
       "source": "src:grierson-1926"
@@ -159,7 +164,7 @@
       "url": "https://en.wikipedia.org/wiki/Adbhuta_Ramayana"
      }
     ],
-    "status": "recall"
+    "status": "reference-checked"
    },
    {
     "text": "text:ramakien",
@@ -178,8 +183,8 @@
    },
    {
     "text": "text:phra-lak-phra-lam",
-    "locator": "character list",
-    "statement": "Nang Sida is the daughter of Thôtsakane (Rāvaṇa) and Nang Chanta, an incarnation of Nang Souxada.",
+    "locator": "character list (Sahai’s analysis as summarised)",
+    "statement": "Nang Sida is the daughter of Thôtsakane (Rāvaṇa) and Nang Chanta, an incarnation of Nang Souxada — Indra’s wife, defiled by Hapmanasouane (Rāvaṇa), who vowed to take revenge in her next life as Sida.",
     "sources": [
      {
       "source": "src:sahai-1996"
@@ -189,7 +194,7 @@
       "url": "https://en.wikipedia.org/wiki/Phra_Lak_Phra_Lam"
      }
     ],
-    "status": "recall"
+    "status": "reference-checked"
    },
    {
     "text": "text:hikayat-seri-rama",
@@ -217,8 +222,8 @@
   "rows": [
    {
     "text": "text:valmiki-ramayana",
-    "locator": "VR Kiṣkindhā- and Sundarakāṇḍas",
-    "statement": "A vānara, son of the Wind god, minister of Sugrīva, eloquent and learned, who leaps the ocean to find Sītā; no wife is mentioned.",
+    "locator": "VR (CE) 4.65.8–28 (Jāmbavān’s account of his birth); Kiṣkindhā- and Sundarakāṇḍas",
+    "statement": "A vānara: Jāmbavān tells how the Wind god (Māruta) embraced Añjanā, wife of the monkey Kesarin, so that Hanumān is “Kesarin’s son by the field, Māruta’s own son” (kṣetraja / aurasa) and his equal in leaping; minister of Sugrīva, eloquent and learned, he leaps the ocean to find Sītā. No wife is mentioned.",
     "sources": [
      {
       "source": "src:goldman-vr",
@@ -226,9 +231,14 @@
      },
      {
       "source": "src:lutgendorf-2007"
+     },
+     {
+      "source": "src:gretil-vr-ce",
+      "locator": "VR (CE) 4.65.8–28",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/sa_rAmAyaNa.xml"
      }
     ],
-    "status": "recall"
+    "status": "verified-online"
    },
    {
     "text": "text:ramcharitmanas",
@@ -284,8 +294,8 @@
    },
    {
     "text": "text:reamker",
-    "locator": "causeway episode",
-    "statement": "The Hanuman–Sovann Maccha romance during the building of the causeway is one of the most loved episodes of Khmer performance.",
+    "locator": "causeway episode (performance tradition)",
+    "statement": "The Hanuman–Sovann Maccha romance during the building of the causeway, in which the mermaid princess steals the stones, falls in love with Hanuman and bears his son Macchanu, is one of the most loved episodes of Khmer performance; the standard written Reamker instead has Rāma compel the ocean god to cooperate.",
     "sources": [
      {
       "source": "src:jacob-1986"
@@ -295,7 +305,7 @@
       "url": "https://en.wikipedia.org/wiki/Reamker"
      }
     ],
-    "status": "recall"
+    "status": "reference-checked"
    }
   ],
   "note": "Lutgendorf (2007) traces how a vānara minister became, in North India, a celibate god and the archetypal devotee, while Jain and Southeast Asian tellings made him a married or amorous hero. None of these is treated here as the “real” Hanumān.",
@@ -309,7 +319,7 @@
   "rows": [
    {
     "text": "text:valmiki-ramayana",
-    "locator": "VR Araṇya- and Yuddhakāṇḍas",
+    "locator": "VR (CE) 3.30.4–6 (Rāvaṇa enthroned); 6.97.2–21 (death)",
     "statement": "A ten-headed rākṣasa king of Laṅkā, son of the sage Viśravas, mighty through ascetic boons, learned yet given to lust and arrogance; he abducts Sītā and is killed by Rāma.",
     "sources": [
      {
@@ -317,14 +327,19 @@
      },
      {
       "source": "src:brockington-1998"
+     },
+     {
+      "source": "src:gretil-vr-ce",
+      "locator": "VR (CE) 3.30.4–6; 6.97.2–21",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/sa_rAmAyaNa.xml"
      }
     ],
-    "status": "recall"
+    "status": "verified-online"
    },
    {
     "text": "text:paumacariya",
-    "locator": "Rāvaṇa episodes and final battle",
-    "statement": "A vidyādhara king of the rākṣasa lineage and a devout Jain, called ten-faced because his face was reflected in a necklace of nine gems; he is killed by Lakṣmaṇa (as Vāsudeva), not by Rāma, and is destined to become a future tīrthaṅkara.",
+    "locator": "Rāvaṇa episodes and final battle (uddesas not checked)",
+    "statement": "Rāvaṇa is a vidyādhara king of the rākṣasa lineage and the eighth Prativāsudeva of Jain universal history; he is killed by Lakṣmaṇa (the Vāsudeva), not by Rāma, goes to hell for his violence, and will become a Tīrthaṅkara in the next ascending half-cycle. (Jain tradition also explains “ten-faced” by the reflection of his face in a necklace of nine gems — not checked here.)",
     "sources": [
      {
       "source": "src:kulkarni-1990"
@@ -337,12 +352,12 @@
       "url": "https://en.wikipedia.org/wiki/Vimalsuri"
      }
     ],
-    "status": "recall"
+    "status": "reference-checked"
    },
    {
     "text": "text:kamba-ramayanam",
-    "locator": "Āraṇiya and Yuttha kāṇṭams",
-    "statement": "A figure of tragic grandeur — majestic, heroic and cultured even in his fatal error — who does not touch Sītā; readers have long seen Kampaṉ’s Rāvaṇa as a tragic hero rather than a mere villain.",
+    "locator": "Kamba Rāmāyaṇam 3.8.74; 6.36.191–196, 243–244",
+    "statement": "A figure of tragic grandeur who, mindful of Brahmā’s word, does not touch Sītā (3.8.74); Rāma kills him with Brahmā’s weapon (6.36.191–196), and his queen Maṇṭōtari, lamenting that she had known Rāma to be Nārāyaṇa, dies embracing his body (6.36.243–244). Readers have long seen Kampaṉ’s Rāvaṇa as a tragic hero rather than a mere villain.",
     "sources": [
      {
       "source": "src:hart-heifetz-1988",
@@ -350,21 +365,31 @@
      },
      {
       "source": "src:richman-1991"
+     },
+     {
+      "source": "src:kamban-pm",
+      "locator": "3.8.74; 6.36.191–196, 243–244",
+      "url": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0561_02.html"
      }
     ],
-    "status": "recall"
+    "status": "verified-online"
    },
    {
     "text": "text:lankavatara-sutra",
-    "locator": "opening chapter",
-    "statement": "Rāvaṇa, lord of Laṅkā, invites the Buddha to his island and questions him on the dharma; he is a pious seeker, and no abduction is narrated.",
+    "locator": "Laṅkāvatāra Sūtra, ch. 1 (Rāvaṇādhyeṣaṇāparivarta)",
+    "statement": "Rāvaṇa, lord of the rākṣasas of Laṅkā, ascends his Puṣpaka chariot, approaches the Buddha, circumambulates him, plays the vīṇā and sings verses (“I am Rāvaṇa, the ten-necked lord of the rākṣasas, come here”), and invites him to Laṅkā to teach; no abduction is narrated.",
     "sources": [
      {
       "source": "src:suzuki-1932",
       "locator": "opening chapter"
+     },
+     {
+      "source": "src:gretil",
+      "locator": "Laṅkāvatārasūtra, parivarta 1 (Vaidya ed. 1963)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_saddharmalaGkAvatArasUtra.txt"
      }
     ],
-    "status": "recall"
+    "status": "verified-online"
    },
    {
     "text": "text:ramakien",
@@ -384,7 +409,7 @@
    {
     "text": "text:phra-lak-phra-lam",
     "locator": "frame and character list",
-    "statement": "Hapmanasouane is Phra Lam’s cousin, and is compared with Devadatta or Māra, the adversaries of the Buddha.",
+    "statement": "Hapmanasouane (Thôtsakane) is Phra Lam’s cousin; as Phra Lam is linked with a previous life of the Buddha, Hapmanasouane is compared with the Buddha’s cousin Devadatta (Phra Thevathat) or with Māra (Phra Man) — learned and powerful, but ruined by greed and desire.",
     "sources": [
      {
       "source": "src:sahai-1996"
@@ -394,7 +419,7 @@
       "url": "https://en.wikipedia.org/wiki/Phra_Lak_Phra_Lam"
      }
     ],
-    "status": "recall"
+    "status": "reference-checked"
    }
   ],
   "agent": "regional"
@@ -407,8 +432,8 @@
   "rows": [
    {
     "text": "text:bhagavata-purana",
-    "locator": "BhP 10.29–33 (rāsa-pañcādhyāyī), esp. 10.30",
-    "statement": "No gopī is named Rādhā. In the rāsa episode Kṛṣṇa disappears with one favoured, unnamed gopī, whom later commentators (e.g. Viśvanātha Cakravartī) identify as Rādhā.",
+    "locator": "BhP 10.30.28 (within the rāsa-pañcādhyāyī, 10.29–33)",
+    "statement": "No gopī is named Rādhā. When Kṛṣṇa vanishes with one favoured gopī, the others say “surely the Lord Hari was worshipped (ārādhitaḥ) by her” (anayārādhito nūnam); later commentators read the verb as a veiled reference to Rādhā.",
     "sources": [
      {
       "source": "src:bryant-2007"
@@ -416,9 +441,15 @@
      {
       "source": "src:wikipedia",
       "url": "https://en.wikipedia.org/wiki/Radha"
+     },
+     {
+      "source": "src:gretil-bhp-etext",
+      "locator": "BhP 10.30.28",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/sa_bhAgavatapurANa.xml",
+      "quote": "anayārādhito nūnaṃ bhagavān harir īśvaraḥ"
      }
     ],
-    "status": "recall"
+    "status": "verified-online"
    },
    {
     "text": "text:gaha-sattasai",
@@ -438,27 +469,37 @@
    {
     "text": "text:silappatikaram",
     "locator": "canto 17 (Āycciyar kuravai)",
-    "statement": "The cowherd girls’ round-dance enacts Kṛṣṇa (Māyavaṉ), Balarāma and Kṛṣṇa’s beloved Piññai — a Tamil cowherd beloved who is not named Rādhā.",
+    "statement": "The cowherd women dance the kuravai that Māyavaṉ danced with his elder brother and with Piññai (piññaiyōṭu āṭiya kuravai) in the cowherds’ settlement — a Tamil beloved of Kṛṣṇa who is not named Rādhā.",
     "sources": [
      {
       "source": "src:parthasarathy-1993"
      },
      {
       "source": "src:hardy-1983"
+     },
+     {
+      "source": "src:cilappatikaram-pm",
+      "locator": "canto 17",
+      "url": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0111_01.html"
      }
     ],
-    "status": "recall"
+    "status": "verified-online"
    },
    {
     "text": "text:tiruppavai",
-    "locator": "Tiruppāvai 18–20 (recalled)",
-    "statement": "Āṇṭāḷ’s girls wake Nappiṉṉai, Kṛṣṇa’s consort, to intercede for them; Rādhā does not appear.",
+    "locator": "Tiruppāvai 18–20 (NDP 491–493)",
+    "statement": "Āṇṭāḷ’s girls wake Nappiṉṉai, “daughter-in-law of Nandagopa”, on whose breast Kṛṣṇa lies, and call her “Nappiṉṉai, lady, Tiru (Śrī)!” to intercede for them; Rādhā does not appear.",
     "sources": [
      {
       "source": "src:venkatesan-2010"
+     },
+     {
+      "source": "src:tiruppavai-pm",
+      "locator": "Tiruppāvai 18–20 (NDP 491–493)",
+      "url": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0005_02.html"
      }
     ],
-    "status": "recall"
+    "status": "verified-online"
    },
    {
     "text": "text:gita-govinda",
@@ -488,14 +529,19 @@
    },
    {
     "text": "text:chaitanya-charitamrita",
-    "locator": "Ādi-līlā 4 (recalled)",
-    "statement": "Rādhā is Kṛṣṇa’s hlādinī-śakti (power of bliss); Caitanya is Kṛṣṇa who has taken on Rādhā’s emotion and golden complexion in order to taste her love.",
+    "locator": "Ādi-līlā 4.55, 4.59–60, 4.99–100, 4.268 (BBT numbering)",
+    "statement": "Rādhā is Kṛṣṇa’s hlādinī-śakti (power of bliss); Rādhā and Kṛṣṇa, one in identity, separated eternally and are reunited in Caitanya, who is Kṛṣṇa with Rādhā’s sentiment and complexion, come to taste her love.",
     "sources": [
      {
       "source": "src:dimock-stewart-1999"
+     },
+     {
+      "source": "src:vedabase-cc",
+      "locator": "Ādi 4.55, 4.59–60, 4.268",
+      "url": "https://vedabase.io/en/library/cc/adi/4/"
      }
     ],
-    "status": "recall"
+    "status": "verified-online"
    },
    {
     "text": "text:kirtana-ghosha",
@@ -524,15 +570,20 @@
   "rows": [
    {
     "text": "text:valmiki-ramayana",
-    "locator": "VR Yuddhakāṇḍa, death of Rāvaṇa",
-    "statement": "Rāma kills Rāvaṇa in single combat with a divine weapon (the Brahmāstra).",
+    "locator": "VR (CE) 6.97.2–21",
+    "statement": "Reminded by Mātali to use Brahmā’s weapon, Rāma fires the Brahmā-made arrow first given him by Agastya; it pierces Rāvaṇa’s heart and he falls from his chariot “like Vṛtra struck by the thunderbolt”.",
     "sources": [
      {
       "source": "src:goldman-vr",
       "locator": "vol. VI (Yuddhakāṇḍa)"
+     },
+     {
+      "source": "src:gretil-vr-ce",
+      "locator": "VR (CE) 6.97.2–21",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/sa_rAmAyaNa.xml"
      }
     ],
-    "status": "recall"
+    "status": "verified-online"
    },
    {
     "text": "text:ramcharitmanas",
@@ -551,6 +602,19 @@
     "status": "source-checked"
    },
    {
+    "text": "text:kamba-ramayanam",
+    "locator": "Kamba Rāmāyaṇam 6.36.191–196 (Irāvaṇaṉ vataip paṭalam)",
+    "statement": "Rāma fits Brahmā’s weapon to his bow and releases it; it enters Rāvaṇa’s breast and drinks his life. Maṇṭōtari then dies embracing the body (6.36.244).",
+    "sources": [
+     {
+      "source": "src:kamban-pm",
+      "locator": "6.36.191–196, 244",
+      "url": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0561_02.html"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
     "text": "text:paumacariya",
     "locator": "final battle",
     "statement": "Lakṣmaṇa kills Rāvaṇa, as in all Jain universal history the Vāsudeva kills the Prativāsudeva; Rāma, a non-violent Baladeva, later becomes a monk and attains liberation.",
@@ -567,8 +631,8 @@
    },
    {
     "text": "text:adbhuta-ramayana",
-    "locator": "sarga 23 (per Wikipedia)",
-    "statement": "After the ten-headed Rāvaṇa is dead, his thousand-headed brother Sahasra-Rāvaṇa strikes Rāma down; Sītā takes the form of Mahākālī and destroys him.",
+    "locator": "sargas 21–23 (as summarised)",
+    "statement": "After the ten-headed Rāvaṇa is dead, his elder brother, the thousand-headed Sahasra-Rāvaṇa of Puṣkara, scatters Rāma’s army and strikes Rāma unconscious; Sītā takes the form of Mahākālī and severs his thousand heads.",
     "sources": [
      {
       "source": "src:grierson-1926"
@@ -578,7 +642,7 @@
       "url": "https://en.wikipedia.org/wiki/Adbhuta_Ramayana"
      }
     ],
-    "status": "recall"
+    "status": "reference-checked"
    },
    {
     "text": "text:vilanka-ramayana",
@@ -645,8 +709,8 @@
    },
    {
     "text": "text:paripatal",
-    "locator": "poems to Cevvēḷ",
-    "statement": "Eight surviving poems praise Cevvēḷ (Murukaṉ) at Tiruparaṅkuṉṟam near Madurai and know the northern myth of his birth.",
+    "locator": "Paripāṭal 5, 8, 9, 14, 17, 18, 19, 21 (the Cevvēḷ poems)",
+    "statement": "Eight of the surviving poems are to Cevvēḷ (Murukaṉ) — beside six to Tirumāl and others to the river Vaiyai — praising him at Tirupparaṅkuṉṟam (“cool Paraṅkuṉṟu”, likened to the Himalaya) near Madurai; poem 5 narrates his birth from Śiva’s seed, the northern myth.",
     "sources": [
      {
       "source": "src:zvelebil-1974"
@@ -654,14 +718,19 @@
      {
       "source": "src:wikipedia",
       "url": "https://en.wikipedia.org/wiki/Paripāṭal"
+     },
+     {
+      "source": "src:paripatal-pm",
+      "locator": "poem headings; poems 5 and 8",
+      "url": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0087.html"
      }
     ],
-    "status": "recall"
+    "status": "verified-online"
    },
    {
     "text": "text:tirumurukarruppatai",
-    "locator": "passim",
-    "statement": "A guide-poem leading the devotee to Murukaṉ at six places; he has six faces and twelve arms, rides the peacock, wields the vēl and is linked to the Kṛttikā mothers — Skanda iconography in a Tamil poem.",
+    "locator": "Tirumurukāṟṟuppaṭai, c. ll. 91–102 (the six faces) and the description of the twelve hands",
+    "statement": "A guide-poem leading the devotee to Murukaṉ’s shrines: each of his six faces has its own function (one radiates light, one grants boons, one guards the brāhmaṇs’ sacrifices …), he has twelve hands, and he is the “lord of six (faces) borne by six (mothers)” — Skanda’s Kṛttikā iconography in a Tamil poem.",
     "sources": [
      {
       "source": "src:zvelebil-1973"
@@ -669,20 +738,30 @@
      {
       "source": "src:wikipedia",
       "url": "https://en.wikipedia.org/wiki/Tirumurukarruppatai"
+     },
+     {
+      "source": "src:tirumurukarruppatai-pm",
+      "locator": "ll. 91–102 and following",
+      "url": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0067.html"
      }
     ],
-    "status": "recall"
+    "status": "verified-online"
    },
    {
     "text": "text:silappatikaram",
-    "locator": "canto 24",
-    "statement": "Hill-dwellers dance the kuṉṟakkuravai for Murukaṉ, who is also linked to possession-dance (veṟiyāṭṭu) of the Vēlaṉ priest.",
+    "locator": "canto 24 (Kuṉṟak kuravai)",
+    "statement": "The hill women dance the kuravai praising the vēl of the god who never leaves Centil, Ceṅkōṭu, Veṇkuṉṟu and Ērakam, the white-bladed spear that once slew Cūr in the sea; he has six faces and twelve hands and was nursed by six mothers in the Saravaṇa pool; the Vēlaṉ priest is called for the possession-dance (veṟiyāṭal).",
     "sources": [
      {
       "source": "src:parthasarathy-1993"
+     },
+     {
+      "source": "src:cilappatikaram-pm",
+      "locator": "canto 24",
+      "url": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0111_02.html"
      }
     ],
-    "status": "recall"
+    "status": "verified-online"
    },
    {
     "text": "text:kanda-puranam",
@@ -697,18 +776,19 @@
    },
    {
     "text": "text:mahabharata",
-    "locator": "MBh Āraṇyakaparvan, Skanda episode",
-    "statement": "In the Sanskrit epic Skanda is born of Agni (and Svāhā) or of Śiva, raised by the Kṛttikās, and made general of the gods; there is no Tamil Vaḷḷi.",
+    "locator": "MBh (CE) 3.213–221 (esp. 3.214.16; 3.218.27, 42; 3.219.11)",
+    "statement": "Skanda is born of Agni’s seed, gathered by Svāhā in the forms of the ṛṣis’ wives (a star passage adds birth from Rudra in the Gaṅgā and among the Kṛttikās); the spilled (skanna) seed gives his name, the Mothers attend him, Indra consecrates him general (senāpati) of the gods, and the Kṛttikās go to heaven — there is no Tamil Vaḷḷi.",
     "sources": [
      {
       "source": "src:mann-2012"
      },
      {
-      "source": "src:mbh-critical-edition",
-      "locator": "Āraṇyakaparvan, Skanda episode (CE adhyāyas not checked)"
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 3.213–221",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm"
      }
     ],
-    "status": "recall"
+    "status": "verified-online"
    }
   ],
   "note": "Read in sequence these rows support the scholarly account of convergence (Zvelebil 1973; Clothey 1978): a Tamil hill god acquires Skanda’s myth and iconography by the late Caṅkam period. The identification is recorded as IDENTIFIED_WITH, not as a merger.",

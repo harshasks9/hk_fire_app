@@ -9749,5 +9749,678 @@
   "rationale": "The catalogue mentions miniatures on the leaf and covers; their subjects were not itemised.",
   "agent": "material",
   "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-471",
+  "s": "art:met-pala-durga",
+  "p": "BUILT_DURING",
+  "o": "pol:pala",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:met-collection",
+    "locator": "accession 91.21 (object 38130)",
+    "url": "https://www.metmuseum.org/art/collection/search/38130"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "rationale": "Museum period attribution (\"Pala period\"); the image is not inscribed.",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-472",
+  "s": "art:cma-pala-vishnu-bronze",
+  "p": "BUILT_DURING",
+  "o": "pol:pala",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:cma-open-access",
+    "locator": "accession 1964.453",
+    "url": "https://clevelandart.org/art/1964.453"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "rationale": "Museum period attribution (\"Pala period, 11th–12th century\").",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-473",
+  "s": "art:cma-pala-ekamukhalinga",
+  "p": "BUILT_DURING",
+  "o": "pol:pala",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:cma-open-access",
+    "locator": "accession 1973.73",
+    "url": "https://clevelandart.org/art/1973.73"
+   }
+  ],
+  "confidence": "low",
+  "status": "verified-online",
+  "rationale": "Museum attribution \"Pala dynasty\", 7th–8th century; the earlier part of that range precedes Pāla rule, so this is an approximate period label.",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-474",
+  "s": "art:cma-kushan-possibly-shiva",
+  "p": "HELD_AT",
+  "o": "inst:cleveland-museum",
+  "qualifiers": {
+   "note": "accession 1986.71"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:cma-open-access",
+    "locator": "accession 1986.71",
+    "url": "https://clevelandart.org/art/1986.71"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-475",
+  "s": "art:cma-kushan-possibly-shiva",
+  "p": "FOUND_AT",
+  "o": "place:mathura",
+  "qualifiers": {
+   "note": "attributed to Mathurā by the museum (findspot not recorded)"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:cma-open-access",
+    "locator": "accession 1986.71",
+    "url": "https://clevelandart.org/art/1986.71"
+   }
+  ],
+  "confidence": "low",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-476",
+  "s": "art:cma-kushan-possibly-shiva",
+  "p": "INTERPRETED_AS",
+  "o": "deity:shiva",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:cma-open-access",
+    "locator": "accession 1986.71",
+    "url": "https://clevelandart.org/art/1986.71"
+   }
+  ],
+  "confidence": "low",
+  "status": "verified-online",
+  "rationale": "Museum: \"could also be recognized as an early form of the Hindu god Shiva\".",
+  "competing": "Museum's first reading: a local fertility divinity.",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-477",
+  "s": "art:vam-mathura-vishnu",
+  "p": "HELD_AT",
+  "o": "inst:vam",
+  "qualifiers": {
+   "note": "accession IM.75-1927"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:vam-collection",
+    "locator": "museum no. IM.75-1927 (O64191)",
+    "url": "https://collections.vam.ac.uk/item/O64191/"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-478",
+  "s": "art:vam-mathura-vishnu",
+  "p": "FOUND_AT",
+  "o": "place:mathura",
+  "qualifiers": {
+   "note": "attributed to Mathurā by the museum (findspot not recorded)"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:vam-collection",
+    "locator": "museum no. IM.75-1927 (O64191)",
+    "url": "https://collections.vam.ac.uk/item/O64191/"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-479",
+  "s": "deity:vishnu",
+  "p": "DEPICTED_IN",
+  "o": "art:vam-mathura-vishnu",
+  "qualifiers": {
+   "note": "standing"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:vam-collection",
+    "locator": "museum no. IM.75-1927 (O64191)",
+    "url": "https://collections.vam.ac.uk/item/O64191/"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-480",
+  "s": "art:cma-mathura-vishnu-head-400s",
+  "p": "HELD_AT",
+  "o": "inst:cleveland-museum",
+  "qualifiers": {
+   "note": "accession 1942.498"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:cma-open-access",
+    "locator": "accession 1942.498",
+    "url": "https://clevelandart.org/art/1942.498"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-481",
+  "s": "art:cma-mathura-vishnu-head-400s",
+  "p": "FOUND_AT",
+  "o": "place:mathura",
+  "qualifiers": {
+   "note": "attributed to Mathurā by the museum (findspot not recorded)"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:cma-open-access",
+    "locator": "accession 1942.498",
+    "url": "https://clevelandart.org/art/1942.498"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-482",
+  "s": "deity:vishnu",
+  "p": "DEPICTED_IN",
+  "o": "art:cma-mathura-vishnu-head-400s",
+  "qualifiers": {
+   "note": "crown with lion-head medallion"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:cma-open-access",
+    "locator": "accession 1942.498",
+    "url": "https://clevelandart.org/art/1942.498"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-483",
+  "s": "art:aic-kushan-yakshi",
+  "p": "HELD_AT",
+  "o": "inst:art-institute-chicago",
+  "qualifiers": {
+   "note": "accession 1995.260"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:aic-collection",
+    "locator": "reference no. 1995.260 (artwork 142506)",
+    "url": "https://www.artic.edu/artworks/142506"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-484",
+  "s": "art:aic-kushan-yakshi",
+  "p": "FOUND_AT",
+  "o": "place:mathura",
+  "qualifiers": {
+   "note": "attributed to Mathurā by the museum (findspot not recorded)"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:aic-collection",
+    "locator": "reference no. 1995.260 (artwork 142506)",
+    "url": "https://www.artic.edu/artworks/142506"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-485",
+  "s": "deity:yakshi",
+  "p": "DEPICTED_IN",
+  "o": "art:aic-kushan-yakshi",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:aic-collection",
+    "locator": "reference no. 1995.260 (artwork 142506)",
+    "url": "https://www.artic.edu/artworks/142506"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-486",
+  "s": "art:met-balarama-or-nagaraja",
+  "p": "HELD_AT",
+  "o": "inst:met-museum",
+  "qualifiers": {
+   "note": "accession 1991.83.2"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:met-collection",
+    "locator": "accession 1991.83.2 (object 38200)",
+    "url": "https://www.metmuseum.org/art/collection/search/38200"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-487",
+  "s": "art:met-balarama-or-nagaraja",
+  "p": "INTERPRETED_AS",
+  "o": "char:balarama",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:met-collection",
+    "locator": "accession 1991.83.2 (object 38200)",
+    "url": "https://www.metmuseum.org/art/collection/search/38200"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "competing": "Alternatively a nāgarāja (serpent king).",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-488",
+  "s": "art:met-balarama-or-nagaraja",
+  "p": "INTERPRETED_AS",
+  "o": "deity:sankarshana",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:met-collection",
+    "locator": "accession 1991.83.2 (object 38200)",
+    "url": "https://www.metmuseum.org/art/collection/search/38200"
+   }
+  ],
+  "confidence": "low",
+  "status": "verified-online",
+  "rationale": "Balarāma's cult name in the early inscriptions is Saṅkarṣaṇa; the museum title says Balarāma.",
+  "competing": "Nāgarāja.",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-489",
+  "s": "site:bharhut",
+  "p": "DOCUMENTED_BY",
+  "o": "person:alexander-cunningham",
+  "qualifiers": {
+   "note": "visited 1873, excavated 1874"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bharhut"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-490",
+  "s": "site:bharhut",
+  "p": "BUILT_DURING",
+  "o": "pol:shunga",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bharhut"
+   },
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, ch. I, no. 1 (Bharhut pillar inscription \"of the time of the Śuṅgas\")",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "medium",
+  "status": "disputed",
+  "rationale": "The Dhanabhūti gateway inscription is dated \"during the rule of the Sugas\", usually read as Śuṅgas.",
+  "competing": "\"Sugas\" has also been read as Sughanas; some scholars date the railing to the 1st century CE.",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-491",
+  "s": "art:bharhut-gaja-lakshmi",
+  "p": "FOUND_AT",
+  "o": "site:bharhut",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bharhut"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-492",
+  "s": "art:bharhut-gaja-lakshmi",
+  "p": "HELD_AT",
+  "o": "inst:indian-museum-kolkata",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bharhut"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "rationale": "The railings were reassembled at the Indian Museum; whether this particular medallion is in Kolkata (some Bharhut pieces are elsewhere) was not checked.",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-493",
+  "s": "art:bharhut-gaja-lakshmi",
+  "p": "INTERPRETED_AS",
+  "o": "deity:lakshmi",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bharhut"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Lakshmi"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "competing": "Read in a Buddhist context as Māyādevī.",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-494",
+  "s": "site:kankali-tila",
+  "p": "LOCATED_AT",
+  "o": "place:mathura",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kankali_Tila"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-495",
+  "s": "art:kankali-tila-sarasvati",
+  "p": "FOUND_AT",
+  "o": "site:kankali-tila",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kankali_Tila"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-496",
+  "s": "art:kankali-tila-sarasvati",
+  "p": "HELD_AT",
+  "o": "inst:state-museum-lucknow",
+  "qualifiers": {
+   "note": "J.24 (reported)"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kankali_Tila"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-497",
+  "s": "deity:jain-sarasvati",
+  "p": "DEPICTED_IN",
+  "o": "art:kankali-tila-sarasvati",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kankali_Tila"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-498",
+  "s": "art:kankali-tila-sarasvati",
+  "p": "BUILT_DURING",
+  "o": "pol:kushan",
+  "qualifiers": {
+   "note": "dated in the Kuṣāṇa era, year 54"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kankali_Tila"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-499",
+  "s": "art:parkham-yaksha",
+  "p": "HELD_AT",
+  "o": "inst:government-museum-mathura",
+  "qualifiers": {
+   "note": "GMM C.1 (accession per Wikipedia)"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, ch. I, no. 7, pp. 92–93 (Parkham image inscription; Lüders List no. 150)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Parkham_Yaksha"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "rationale": "Sircar: \"Parkham, now Mathura Museum\".",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-500",
+  "s": "art:parkham-yaksha",
+  "p": "FOUND_AT",
+  "o": "place:mathura",
+  "qualifiers": {
+   "note": "from Parkham village, Mathurā district"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, ch. I, no. 7, pp. 92–93 (Parkham image inscription; Lüders List no. 150)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-501",
+  "s": "deity:yaksha",
+  "p": "DEPICTED_IN",
+  "o": "art:parkham-yaksha",
+  "qualifiers": {
+   "note": "named Maṇibhadra in the inscription"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, ch. I, no. 7, pp. 92–93 (Parkham image inscription; Lüders List no. 150)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-502",
+  "s": "art:parkham-yaksha",
+  "p": "DOCUMENTED_BY",
+  "o": "person:alexander-cunningham",
+  "qualifiers": {
+   "note": "ASR XX"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, ch. I, no. 7, pp. 92–93 (Parkham image inscription; Lüders List no. 150)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "material:r2-503",
+  "s": "art:parkham-yaksha",
+  "p": "DOCUMENTED_BY",
+  "o": "person:jph-vogel",
+  "qualifiers": {
+   "note": "Catalogue of the Mathura Museum"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:sircar-1965",
+    "locator": "bk. II, ch. I, no. 7, pp. 92–93 (Parkham image inscription; Lüders List no. 150)",
+    "edition": "2nd edn, Calcutta 1965 (archive.org scan)",
+    "url": "https://archive.org/details/dli.calcutta.11040"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "material",
+  "lastVerified": "2026-11-08"
  }
 ]

@@ -3897,7 +3897,7 @@
   "iast": "Advaita Vedānta",
   "devanagari": "अद्वैत वेदान्त",
   "summary": "The non-dualist school of Vedānta, systematised by Gauḍapāda and Śaṅkara, which reads the Upaniṣads, the Bhagavad Gītā and the Brahma Sūtra as teaching that the self (ātman) is identical with brahman and that the world of plurality is not ultimately real.",
-  "details": "Its “great sayings” (mahāvākyas) are drawn from Upaniṣadic passages in this dataset: “prajñānaṃ brahma” (Aitareya 3.3), “ahaṃ brahmāsmi” (BU 1.4.10), “tat tvam asi” (CU 6.8.7) and “ayam ātmā brahma” (Māṇḍūkya 2). The fourfold mahāvākya scheme is a later Advaita systematisation.",
+  "details": "Its “great sayings” (mahāvākyas) are drawn from Upaniṣadic passages in this dataset: “prajñānaṃ brahma” (Aitareya 3.3), “ahaṃ brahmāsmi” (BU 1.4.10), “tat tvam asi” (CU 6.8.7) and “ayam ātmā brahma” (Māṇḍūkya 2). The fourfold mahāvākya scheme is a later Advaita systematisation.\n\nRound 2 links: a school of `trad:vedanta`; its lineage runs Gauḍapāda → Govinda → Śaṅkara → Sureśvara and Padmapāda (traditional), with Maṇḍana Miśra and Vācaspati Miśra (Bhāmatī school), Vidyāraṇya and Madhusūdana Sarasvatī as later authorities. Key concepts: māyā, avidyā, adhyāsa, vivarta, jīvanmukti, the fourfold qualification and the mahāvākyas.",
   "dates": [
    {
     "system": "reception",
@@ -3929,11 +3929,18 @@
    {
     "source": "src:flood-1996",
     "locator": "ch. 10"
+   },
+   {
+    "source": "src:potter-1981"
+   },
+   {
+    "source": "src:comans-2000"
    }
   ],
   "confidence": "high",
   "status": "source-checked",
-  "agent": "vedic"
+  "agent": "vedic",
+  "subtype": "Vedānta school"
  },
  {
   "id": "person:panini",
@@ -5852,10 +5859,11 @@
   ],
   "subtype": "sūtra (Vedānta)",
   "traditions": [
+   "trad:vedanta",
    "trad:advaita-vedanta"
   ],
-  "summary": "Aphorisms attributed to Bādarāyaṇa that systematise the teaching of the Upaniṣads; with the Upaniṣads and the Bhagavad Gītā it is one of the three foundations (prasthānatrayī) on which every Vedānta school, beginning with Śaṅkara, wrote commentaries.",
-  "details": "Created by the vedic agent as a hub for Vedānta reception; its date is uncertain (estimates range from the last centuries BCE to c. 5th c. CE).",
+  "summary": "Aphorisms attributed to Bādarāyaṇa that systematise the teaching of the Upaniṣads in four chapters (adhyāyas) of four quarters (pādas) each; with the Upaniṣads and the Bhagavad Gītā it is one of the three foundations (prasthānatrayī) on whose interpretation every Vedānta school, from Śaṅkara and Bhāskara to Rāmānuja, Madhva, Nimbārka, Vallabha and Baladeva, defines itself.",
+  "details": "The sūtras open “Then, therefore, the desire to know brahman” (athāto brahmajijñāsā, 1.1.1). Book 1 harmonises Upaniṣadic statements about brahman (1.1.4 tat tu samanvayāt); book 2 answers objections and refutes rival systems — Sāṅkhya (2.1.1–3; 2.2.1–10), Vaiśeṣika atomism (2.2.11–17), Buddhist (2.2.18–32) and Jain (2.2.33–36) doctrines, the Pāśupatas and, on Śaṅkara’s reading, the Pāñcarātra (2.2.37–45) — and says creation is “mere play, as in the world” (2.1.33); book 3 treats rebirth and the meditations (vidyās); book 4 the fruits of knowledge and the path of the released. The text names earlier teachers — Jaimini, Āśmarathya, Auḍulomi, Kāśakṛtsna, Bādari, Ātreya — and itself in the third person as Bādarāyaṇa, while the Mīmāṃsā Sūtra (1.1.5) cites Bādarāyaṇa.\n\nThe number of sūtras depends on the commentator: the text extracted from Śaṅkara’s commentary on GRETIL has 555 sūtras (134/157/186/78 by book), the Sansknet sūtra text 545 (the count usually given for Rāmānuja); Madhva’s division differs again. How BS 1.1.1–4 is read by Śaṅkara, Rāmānuja and Madhva is compared in `cmp:brahma-sutra-1-1-1-4`.",
   "dates": [
    {
     "system": "scholarly-textual",
@@ -5875,6 +5883,47 @@
       "source": "src:isaeva-1993"
      }
     ]
+   },
+   {
+    "system": "scholarly-textual",
+    "event": "compilation of the extant text",
+    "start": 400,
+    "end": 450,
+    "label": "c. 400–450 CE (extant form)",
+    "certainty": "disputed",
+    "basis": "layered text; references to Buddhist schools (Vijñānavāda, Śūnyavāda) in 2.2",
+    "view": "Nakamura",
+    "sources": [
+     {
+      "source": "src:nakamura-1983"
+     },
+     {
+      "source": "src:wikipedia",
+      "locator": "Brahma Sutras — dating",
+      "url": "https://en.wikipedia.org/wiki/Brahma_Sutras"
+     }
+    ]
+   },
+   {
+    "system": "scholarly-textual",
+    "event": "initial composition",
+    "start": -500,
+    "end": -200,
+    "label": "c. 5th–2nd c. BCE (earliest layer, some estimates)",
+    "certainty": "disputed",
+    "basis": "relation to the Upaniṣads and the Mīmāṃsā Sūtra",
+    "view": "Lochtefeld; Radhakrishnan; Dasgupta (as reported on Wikipedia)",
+    "sources": [
+     {
+      "source": "src:dasgupta-1922",
+      "locator": "vol. 1"
+     },
+     {
+      "source": "src:wikipedia",
+      "locator": "Brahma Sutras — dating",
+      "url": "https://en.wikipedia.org/wiki/Brahma_Sutras"
+     }
+    ]
    }
   ],
   "sources": [
@@ -5884,11 +5933,39 @@
    },
    {
     "source": "src:isaeva-1993"
+   },
+   {
+    "source": "src:gretil-brahmasutra",
+    "locator": "BS 1.1.1–4.4.22",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bAdarAyaNa-brahmasUtra-alt.txt",
+    "edition": "GRETIL e-text (sūtras extracted from Śaṅkara’s commentary; 555 sūtras)",
+    "quote": "athāto brahmajijñāsā"
+   },
+   {
+    "source": "src:nakamura-1983"
+   },
+   {
+    "source": "src:thibaut-sbe34"
    }
   ],
-  "confidence": "medium",
-  "status": "source-checked",
-  "agent": "vedic"
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "vedic",
+  "attributes": {
+   "adhyayas": "4 (each of 4 pādas)",
+   "sutras": "555 in Śaṅkara’s division; 545 in the Sansknet e-text (GRETIL); varies by commentator",
+   "commentaries": [
+    "text:shankara-brahmasutra-bhashya",
+    "text:bhaskara-brahmasutra-bhashya",
+    "text:shribhashya",
+    "text:madhva-brahmasutra-bhashya",
+    "text:anuvyakhyana",
+    "text:vedanta-parijata-saurabha",
+    "text:anubhashya-vallabha",
+    "text:govinda-bhashya"
+   ]
+  },
+  "lastVerified": "2026-11-08"
  },
  {
   "id": "text:sayana-rigveda-bhashya",

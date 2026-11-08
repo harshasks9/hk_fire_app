@@ -9374,6 +9374,133 @@
   "agent": "vedic"
  },
  {
+  "id": "person:utpaladeva",
+  "type": "person",
+  "name": "Utpaladeva",
+  "iast": "Utpaladeva",
+  "devanagari": "उत्पलदेव",
+  "traditions": [
+   "trad:kashmir-shaivism"
+  ],
+  "roles": [
+   "philosopher",
+   "poet"
+  ],
+  "summary": "Kashmirian Śaiva philosopher and poet, pupil of Somānanda and teacher of Lakṣmaṇagupta (Abhinavagupta’s teacher), who founded the Pratyabhijñā (“Recognition”) philosophy in the Īśvarapratyabhijñākārikā with his own Vṛtti and Vivṛti, and wrote the devotional Śivastotrāvalī.",
+  "details": "The Kārikā opens: “Having somehow attained servitude to Maheśvara and wishing to help people as well, I shall establish the recognition of him, the cause of attaining all fulfilment” (ĪPK 1.1.1). Pratyabhijñā argues, against Buddhist epistemology, that the self is the one Lord whose freedom (svātantrya) appears as the world, so that liberation is a recognition of one’s identity with Śiva. Abhinavagupta commented on the Kārikā (Vimarśinī) and on the Vivṛti (Vivṛtivimarśinī).",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "floruit",
+    "start": 925,
+    "end": 975,
+    "label": "c. 925–975 CE",
+    "certainty": "estimated",
+    "basis": "teacher–pupil chronology from Somānanda to Abhinavagupta (whose works are dated 990/91 and 1014/15)",
+    "view": "Torella; Sanderson",
+    "sources": [
+     {
+      "source": "src:torella-1994",
+      "locator": "Introduction"
+     },
+     {
+      "source": "src:sanderson-1988"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:gretil-ishvarapratyabhijna",
+    "locator": "ĪPK 1.1.1",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_utpaladeva-IzvarapratyabhijJAkArikA-with-vRtti.txt",
+    "edition": "GRETIL e-text (ed. M. K. Shastri, Srinagar 1921 (KSTS 34), revised after R. Torella, Rome 1994)",
+    "quote": "tatpratyabhijñām upapādayāmi"
+   },
+   {
+    "source": "src:torella-1994"
+   },
+   {
+    "source": "src:sanderson-1988"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "vedic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:ishvarapratyabhijna-karika",
+  "type": "text",
+  "name": "Īśvarapratyabhijñākārikā",
+  "iast": "Īśvarapratyabhijñākārikā",
+  "devanagari": "ईश्वरप्रत्यभिज्ञाकारिका",
+  "aliases": [
+   "Pratyabhijñā-kārikā"
+  ],
+  "subtype": "kārikā (root text of Pratyabhijñā)",
+  "traditions": [
+   "trad:kashmir-shaivism"
+  ],
+  "summary": "Utpaladeva’s verses on the “recognition of the Lord”, with his own brief Vṛtti, in four sections (knowledge, action, scripture, summary): the root text of the Pratyabhijñā philosophy of Kashmir Śaivism, critically studied and translated by Raffaele Torella.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "composition",
+    "start": 925,
+    "end": 975,
+    "label": "c. mid-10th c. CE",
+    "certainty": "estimated",
+    "basis": "date of Utpaladeva",
+    "view": "Torella",
+    "sources": [
+     {
+      "source": "src:torella-1994"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:gretil-ishvarapratyabhijna",
+    "locator": "ĪPK 1.1.1",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_utpaladeva-IzvarapratyabhijJAkArikA-with-vRtti.txt",
+    "edition": "GRETIL e-text (ed. M. K. Shastri, Srinagar 1921 (KSTS 34), revised after R. Torella, Rome 1994)",
+    "quote": "kathaṃ cid āsādya maheśvarasya dāsyaṃ janasyāpy upakāram icchan"
+   },
+   {
+    "source": "src:torella-1994"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "vedic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:ishvarapratyabhijna-vimarshini",
+  "type": "text",
+  "name": "Īśvarapratyabhijñāvimarśinī",
+  "iast": "Īśvarapratyabhijñāvimarśinī",
+  "subtype": "commentary",
+  "traditions": [
+   "trad:kashmir-shaivism"
+  ],
+  "summary": "Abhinavagupta’s commentary on Utpaladeva’s Īśvarapratyabhijñākārikā, completed 1014/15 CE according to its colophon as reported by Sanderson; with the longer Vivṛtivimarśinī it is the main exposition of Pratyabhijñā.",
+  "sources": [
+   {
+    "source": "src:sanderson-1988"
+   },
+   {
+    "source": "src:torella-1994",
+    "locator": "Introduction"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "vedic"
+ },
+ {
   "id": "text:natyashastra",
   "type": "text",
   "name": "Nāṭyaśāstra",

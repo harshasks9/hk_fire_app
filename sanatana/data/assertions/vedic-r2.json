@@ -10427,10 +10427,11 @@
   "evidenceClass": 1,
   "sources": [
    {
-    "source": "src:courtright-1985"
+    "source": "src:courtright-1985",
+    "locator": "discussion of the Gaṇapati Atharvaśīrṣa"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "source-checked",
   "agent": "vedic"
  },
@@ -10514,10 +10515,11 @@
   "evidenceClass": 1,
   "sources": [
    {
-    "source": "src:varenne-1960"
+    "source": "src:varenne-1960",
+    "locator": "Mahānārāyaṇa Upaniṣad (Taittirīya Āraṇyaka 10), Nārāyaṇa section"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "source-checked",
   "agent": "vedic"
  },
@@ -11308,6 +11310,129 @@
     "locator": "NŚ 1.12–17",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bharata-nATyazAstra.txt",
     "edition": "GRETIL e-text (input P. Dadegaonkar, S. Krishnapur, H. Bakshi; source edition not stated; bhn_chapter.verse numbering)"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "vedic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "vedic:r2-582",
+  "s": "text:ishvarapratyabhijna-karika",
+  "p": "COMPOSED_BY",
+  "o": "person:utpaladeva",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-ishvarapratyabhijna",
+    "locator": "ĪPK 1.1.1 (author speaks in the first person)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_utpaladeva-IzvarapratyabhijJAkArikA-with-vRtti.txt",
+    "edition": "GRETIL e-text (ed. M. K. Shastri, Srinagar 1921 (KSTS 34), revised after R. Torella, Rome 1994)",
+    "quote": "tatpratyabhijñām upapādayāmi"
+   },
+   {
+    "source": "src:torella-1994"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "vedic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "vedic:r2-583",
+  "s": "text:ishvarapratyabhijna-karika",
+  "p": "CENTRAL_TO",
+  "o": "trad:kashmir-shaivism",
+  "qualifiers": {
+   "note": "root text of the Pratyabhijñā branch"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:torella-1994"
+   },
+   {
+    "source": "src:sanderson-1988"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "vedic"
+ },
+ {
+  "id": "vedic:r2-584",
+  "s": "text:ishvarapratyabhijna-vimarshini",
+  "p": "COMMENTARY_ON",
+  "o": "text:ishvarapratyabhijna-karika",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:torella-1994"
+   },
+   {
+    "source": "src:sanderson-1988"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "vedic"
+ },
+ {
+  "id": "vedic:r2-585",
+  "s": "text:ishvarapratyabhijna-vimarshini",
+  "p": "COMPOSED_BY",
+  "o": "person:abhinavagupta",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:sanderson-1988"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "vedic"
+ },
+ {
+  "id": "vedic:r2-586",
+  "s": "deity:shiva",
+  "p": "APPEARS_IN",
+  "o": "text:ishvarapratyabhijna-karika",
+  "qualifiers": {
+   "role": "Maheśvara, the Lord to be recognised as one’s own self"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-ishvarapratyabhijna",
+    "locator": "ĪPK 1.1.1",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_utpaladeva-IzvarapratyabhijJAkArikA-with-vRtti.txt",
+    "edition": "GRETIL e-text (ed. M. K. Shastri, Srinagar 1921 (KSTS 34), revised after R. Torella, Rome 1994)",
+    "quote": "kathaṃ cid āsādya maheśvarasya dāsyaṃ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "vedic",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "vedic:r2-587",
+  "s": "concept:ishvara",
+  "p": "MENTIONED_IN",
+  "o": "text:ishvarapratyabhijna-karika",
+  "qualifiers": {
+   "note": "the Lord as the agent and knower who is one’s own self"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-ishvarapratyabhijna",
+    "locator": "ĪPK 1.1.1–2",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_utpaladeva-IzvarapratyabhijJAkArikA-with-vRtti.txt",
+    "edition": "GRETIL e-text (ed. M. K. Shastri, Srinagar 1921 (KSTS 34), revised after R. Torella, Rome 1994)",
+    "quote": "kartari jñātari svātmany ādisiddhe maheśvare"
    }
   ],
   "confidence": "high",

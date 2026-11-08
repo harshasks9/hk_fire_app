@@ -1,6 +1,6 @@
 # Archaeology, Inscriptions & Material Evidence — round 2 report (agent `material`)
 
-Files: `data/entities/material-r2.json` (201 entities), `data/assertions/material-r2.json` (470 assertions, `material:r2-1` … `material:r2-470`), `data/sources/material-r2.json` (35 sources). Round-1 files edited: `data/assertions/material.json` (67 assertions touched, 58 raised to `verified-online`) and `data/entities/material.json` (14 entities given edition references).
+Files: `data/entities/material-r2.json` (214 entities), `data/assertions/material-r2.json` (503 assertions, `material:r2-1` … `material:r2-503`), `data/sources/material-r2.json` (35 sources). Round-1 files edited: `data/assertions/material.json` (67 assertions touched, 58 raised to `verified-online`) and `data/entities/material.json` (14 entities given edition references).
 Validator: `npm run validate -- --domain material` → **0 errors · 0 warnings** (2026-11-08). The whole-dataset run shows no errors or warnings in my files (the remaining errors are in another agent's in-progress file).
 
 ---
@@ -25,18 +25,18 @@ Validator: `npm run validate -- --domain material` → **0 errors · 0 warnings*
 
 | Type | New | | Type | New |
 |---|---|---|---|---|
-| artifact | 60 | | institution | 16 |
+| artifact | 68 | | institution | 18 |
 | person | 50 | | manuscript | 12 |
-| inscription | 27 | | polity | 7 |
-| site | 21 | | claim | 5 |
+| inscription | 27 | | polity | 8 |
+| site | 23 | | claim | 5 |
 | | | | text | 3 |
 
 - **Assertions (470):**
-  - By status: verified-online 325 · reference-checked 137 · disputed 8.
-  - By evidence class: class 4: 276 · class 3: 125 · class 5: 46 · class 2: 11 · class 7: 7 · class 6: 3 · class 1: 2.
-  - Top predicates: DEPICTED_IN 94, REFERS_TO 76, DOCUMENTED_BY 64, HELD_AT 63, COMMISSIONED_BY 44, MEMBER_OF 24, PART_OF 14.
-- **Entities by status:** verified-online 101 · reference-checked 94 · disputed 6.
-- **Images:** 39 records carry images, all CC0 from museum open-access programmes (Met, Art Institute of Chicago, Cleveland). Each object was confirmed public-domain in its API record, and every image URL returned `200 image/jpeg` on 2026-11-08. V&A objects carry no image because V&A images are not CC0.
+  - By status: verified-online 348 · reference-checked 146 · disputed 9.
+  - By evidence class: class 4: 301 · class 3: 125 · class 5: 54 · class 2: 11 · class 7: 7 · class 6: 3 · class 1: 2.
+  - Top predicates: DEPICTED_IN 99, REFERS_TO 76, HELD_AT 71, DOCUMENTED_BY 67, COMMISSIONED_BY 44, MEMBER_OF 23, FOUND_AT 19, PART_OF 14.
+- **Entities by status:** verified-online 107 · reference-checked 101 · disputed 6.
+- **Images:** 43 records carry images, all CC0 from museum open-access programmes (Met, Art Institute of Chicago, Cleveland). Each object was confirmed public-domain in its API record, and every image URL returned `200 image/jpeg` on 2026-11-08. V&A objects carry no image because V&A images are not CC0.
 - **Most connected new entities:** `inst:dharma-project` (21), `inst:cleveland-museum` (17), `inst:met-museum` (15), `ins:vat-luang-kau-devanika` (13), `ins:allahabad-pillar-samudragupta` and `ins:sdok-kak-thom` (12 each), `person:samudragupta` and `ins:junagadh-skandagupta` (9 each). The busiest round-1 targets are `deity:shiva` (19) and `deity:vishnu` (18).
 
 ## 3. Evidence ledger
@@ -92,6 +92,12 @@ Validator: `npm run validate -- --domain material` → **0 errors · 0 warnings*
 - **Reused temple-r2 ids, not duplicated:** `pol:mughal`, `pol:guhila-mewar`, `pol:chenla`. Also the sources `src:hultzsch-sii2` and `src:sc-ayodhya-2019`.
 - **Duplicate edges withdrawn:** two of my edges duplicated temple:301 (Śiva at Mỹ Sơn) and temple:321 (Rājendra I ∈ Cōḻa). I removed mine; temple:301 could cite DHARMA_INSCIC00072.
 - **Shared ids I created:** `person:ashoka`, `person:samudragupta`, `person:skandagupta`, `person:chandragupta-i`, `person:akbar`. Three texts are translation records the epic or regional agents may wish to extend: `text:razmnama`, `text:harivamsha-persian`, `text:ramayana-persian-akbar`.
+- **Created for the iconography agent (orchestrator request):**
+  - `pol:pala`.
+  - `art:cma-kushan-possibly-shiva`, `art:vam-mathura-vishnu`, `art:cma-mathura-vishnu-head-400s`, `art:aic-kushan-yakshi`, `art:met-balarama-or-nagaraja`, `art:bharhut-gaja-lakshmi`, `art:kankali-tila-sarasvati`, `art:parkham-yaksha`.
+  - `site:bharhut`, `site:kankali-tila`, `inst:indian-museum-kolkata`, `inst:state-museum-lucknow`.
+  - The earlier earliest-example records: `art:aic-kushan-mahishasuramardini`, `art:aic-kushan-karttikeya`, `art:aic-early-ganesha-mathura`, `art:met-gupta-ekamukhalinga`.
+  - No Kuṣāṇa-period Mathurā liṅga or ekamukhaliṅga with a verifiable accession was found in the Met, AIC, Cleveland or V&A APIs; the Government Museum Mathurā catalogue was unreachable.
 - **Ids I wish existed:**
   - `temple:po-nagar`, `temple:phnom-rung`, `temple:mahakuta`, `place:kanchipuram`, `place:ujjain` (the temple agent is adding some).
   - `char:keshi`, `char:shambara`, `char:shuka`, `deity:bhudevi`, `deity:ardochsho`.
@@ -144,7 +150,7 @@ Validator: `npm run validate -- --domain material` → **0 errors · 0 warnings*
 ## 9. Candidate discoveries
 
 1. **A "new Kurukṣetra" on the Mekong.** In the 5th century King Devānīka founded a tīrtha near Vat Phu named Kurukṣetra. He compared himself to Yudhiṣṭhira and Arjuna and quoted epic-style tīrtha praise. This is among the earliest datable Mahābhārata receptions outside India.
-   - Records: `ins:vat-luang-kau-devanika`, `material:r2-110…r2-121` (REFERS_TO edges).
+   - Records: `ins:vat-luang-kau-devanika`, `material:r2-124…r2-134` (FOUND_AT, COMMISSIONED_BY and REFERS_TO edges).
    - Caveat: palaeographic date; the textual parallel needs a CE locator.
 2. **Skanda had four names before he had one.** Huviṣka's coins (c. 150–190) separate Skanda, Kumāra, Viśākha and Mahāsena. By 415/16 a Gupta-period temple honours "Svāmi-Mahāsena, brahmaṇya-deva", and Kumāragupta (whose own name means Kumāra) issues Peacock coins.
    - Records: `art:huvishka-skanda-coins`, `ins:bilsad-kumaragupta`, `art:kumaragupta-kartikeya-coin` (`material:241`, now verified).
@@ -199,7 +205,7 @@ Validator: `npm run validate -- --domain material` → **0 errors · 0 warnings*
 - Kuṣāṇa: Huviṣka's Skanda group; Vāsudeva I gold (Cleveland 1999.226).
 - Tribal: Yaudheya Kārttikeya; Audumbara Dharaghoṣa/Viśvāmitra; Audumbara Mahādeva.
 
-**Sculpture with accession numbers (29 verified on museum APIs, plus 3 without accessions).**
+**Sculpture with accession numbers (34 verified on museum APIs, plus 6 reference-checked).**
 - *Earliest forms:*
   - Kuṣāṇa: Mahiṣāsuramardinī (AIC 1985.1108); Kārttikeya (AIC 1985.1037); Gaṇeśa (AIC 2021.245).
   - Gupta: ekamukhaliṅga (Met 1987.142.323); terracotta Viṣṇu (Met 1987.142.293); Kṛṣṇa–Keśī (Met 1991.300).
@@ -209,7 +215,11 @@ Validator: `npm run validate -- --domain material` → **0 errors · 0 warnings*
 - *South Indian bronzes:* Somāskanda (Met 1982.220.10; AIC 1966.334); Hanumān (Met 1982.220.9); Kāliyadamana (AIC 1995.62).
 - *Viṣṇu and Śiva:* Varāha (AIC 1997.707); Pāla Viṣṇu (CMA 1964.453); Pāla ekamukhaliṅga (CMA 1973.73); Hoysaḷa Keśava (Met 18.41).
 - *Southeast Asia:* Harihara (Met 1977.241); Cambodian Gaṇeśas (Met 1982.220.7, CMA 1987.147).
-- *Without verified accession numbers:* Phnom Da Viṣṇu; Prasat Andet Harihara; Ahichchhatra Gaṅgā and Yamunā.
+- *Added at the orchestrator's request (earliest examples):*
+  - Verified on museum APIs: Kuṣāṇa "possibly Śiva" terracotta (CMA 1986.71); Mathurā Viṣṇu, 3rd–4th c. (V&A IM.75-1927); Mathurā Viṣṇu head, 5th c. (CMA 1942.498); Kuṣāṇa yakṣī (AIC 1995.260); Balarāma or Nāgarāja (Met 1991.83.2).
+  - Parkham yakṣa / Maṇibhadra (Sircar bk. II no. 7, `verified-online`; GMM C.1 per Wikipedia).
+  - Reference-checked: Bharhut Gaja-Lakṣmī (Indian Museum, Kolkata; Buddhist monument; Lakṣmī or Māyā); Kaṅkālī Ṭīlā Jain Sarasvatī (State Museum Lucknow J.24 as cited; year 54 with two era equations).
+- *Without verified accession numbers:* Phnom Da Viṣṇu; Prasat Andet Harihara; Ahichchhatra Gaṅgā and Yamunā; Bharhut Gaja-Lakṣmī; Kaṅkālī Ṭīlā Sarasvatī.
 
 **Illustrated manuscripts, folios and murals (12 manuscripts, 18 folio/mural records, 3 texts).**
 - Mughal:
@@ -225,12 +235,12 @@ Validator: `npm run validate -- --domain material` → **0 errors · 0 warnings*
 - Schøyen MS 2174 Devīmāhātmya.
 - Translation texts: Razmnāma, Persian Harivaṃśa, Persian Rāmāyaṇa.
 
-**Excavations and sites (21 sites, 5 claims).**
+**Excavations and sites (23 sites, 5 claims).**
 - Findspot and inscription sites: Girnar rock, Bhitari, Bilsad, Tāḷagunda, Uttaramērūr, Muara Kaman, Ciaruteun, Tugu, Gunung Wukir, Dinoyo, Sdok Kak Thom, Vat Luang Kau, Võ Cạnh.
-- Excavations: Sonkh, Śṛṅgaverapura, Bhagwanpura, Ahichchhatra, Kauśāmbī, Bujang Valley, Oc Eo, Ayodhyā 2003.
+- Excavations: Sonkh, Śṛṅgaverapura, Bhagwanpura, Ahichchhatra, Kauśāmbī, Bujang Valley, Oc Eo, Ayodhyā 2003, Bharhut, Kaṅkālī Ṭīlā.
 - Claims: devarāja, Võ Cạnh earliest, Rāmāyaṇa-sites archaeology, Kauśāmbī śyenaciti, Ayodhyā structure.
 
-**People and polities (50 persons, 7 polities).**
+**People and polities (50 persons, 8 polities).**
 - *Rulers and officials:*
   - North India: Rudradāman I, Aśoka, Samudragupta, Hariṣeṇa, Skandagupta, Parṇadatta, Cakrapālita, Candragupta I, Kumāradevī, Naravarman.
   - Deccan and South: Mayūraśarman, Śāntivarman, Parameśvaravarman I, Sundara Cōḻa.
@@ -240,8 +250,8 @@ Validator: `npm run validate -- --domain material` → **0 errors · 0 warnings*
 - *Religious figures:* Uditācārya, Śivakaivalya.
 - *Poets and painters:* Kubja, Sahib Din, Manaku, Banwari Khurd, Kamal.
 - *Epigraphists and archaeologists:* Hultzsch, Krishna Sastri, Gopinatha Rao, Vogel, Cœdès, Finot, Sircar, G. R. Sharma, J. P. Joshi, Härtel, Malleret, Quaritch Wales, K. N. Dikshit, B. R. Mani.
-- *Polities:* Western Kṣatrapas, Kadambas, Kutai, Tārumānagara, Funan, Yaudheyas, Audumbaras.
+- *Polities:* Western Kṣatrapas, Kadambas, Kutai, Tārumānagara, Funan, Yaudheyas, Audumbaras, Pāla dynasty (`pol:pala`, with BUILT_DURING edges from the three Pāla-period museum objects).
 
-**Institutions (16).** Met; Art Institute of Chicago; V&A; Government Museum Chennai; National Museum of Cambodia; Bangkok National Museum; National Museum of Vietnamese History; Museum of Islamic Art Doha; City Palace Museum Jaipur; Freer Gallery; Allahabad Museum; University of Allahabad; Museum für Asiatische Kunst Berlin; EFEO; DHARMA project; Schøyen Collection.
+**Institutions (18).** Indian Museum Kolkata; State Museum Lucknow; Met; Art Institute of Chicago; V&A; Government Museum Chennai; National Museum of Cambodia; Bangkok National Museum; National Museum of Vietnamese History; Museum of Islamic Art Doha; City Palace Museum Jaipur; Freer Gallery; Allahabad Museum; University of Allahabad; Museum für Asiatische Kunst Berlin; EFEO; DHARMA project; Schøyen Collection.
 
 **Sources (35).** Epigraphic corpora and editions (Gnoli, Lüders, Vogel ×3, Allan ×2, Kielhorn ×3, SII I and III, Gopinatha Rao, Cœdès ×2, Finot, de Casparis 1941, Rice EC V), museum APIs (Met, AIC, V&A, Schøyen), excavation reports (ASI 2003, Lal 1993, Härtel, Joshi, Sharma, Malleret, Agrawala), and studies of painting (Losty, Seyller, Goswamy & Fischer, BL blog).

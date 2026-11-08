@@ -693,12 +693,23 @@
   "agent": "vedic"
  },
  {
-  "id": "src:ghosh-1950",
+  "id": "src:gretil-ishvarapratyabhijna",
+  "type": "primary-text",
+  "title": "Utpaladeva: Īśvarapratyabhijñākārikā with his Vṛtti (GRETIL e-text)",
+  "author": "Utpaladeva",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_utpaladeva-IzvarapratyabhijJAkArikA-with-vRtti.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL)",
+  "notes": "GRETIL e-text: ed. M. K. Shastri, Srinagar 1921 (KSTS 34), revised after R. Torella, Rome 1994.",
+  "agent": "vedic"
+ },
+ {
+  "id": "src:torella-1994",
   "type": "translation",
-  "title": "The Nāṭyaśāstra: A Treatise on Hindu Dramaturgy and Histrionics Ascribed to Bharata-Muni, vol. I (chs. 1–27; vol. II, 1961)",
-  "author": "Manomohan Ghosh",
-  "year": "1950",
-  "publisher": "Royal Asiatic Society of Bengal",
+  "title": "The Īśvarapratyabhijñākārikā of Utpaladeva with the Author’s Vṛtti (Serie Orientale Roma 71)",
+  "author": "Raffaele Torella",
+  "year": "1994",
+  "publisher": "Istituto Italiano per il Medio ed Estremo Oriente (Rome)",
   "agent": "vedic"
  },
  {
