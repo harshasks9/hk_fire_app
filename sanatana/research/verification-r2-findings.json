@@ -1,0 +1,227 @@
+[
+ {
+  "target": "epic:r2-440",
+  "file": "data/assertions/epic-r2.json",
+  "severity": "medium",
+  "category": "locator",
+  "issue": "The round-1 bulk-locator defect recurs in round 2. 149 of the epic agent's 153 PARTICIPANT_IN assertions share one 'anchor' locator per narrative, and for about 30 narratives that anchor is a single verse. That verse is then cited, verified-online/high, for every participant, although it names only one or two of them. Examples: MBh (CE) 3.231.6 (names Duryodhana and Citrasena) is cited for Yudhiṣṭhira (r2-440), Arjuna (r2-441), Karṇa (r2-442) and Śakuni (r2-443). VR (CE) 7.82.6 (names only Rāghava) is cited for Bharata, Vasiṣṭha, Vālmīki, Lava and Kuśa (r2-610, 612–615). MBh 7.170.15 (names only Drauṇi) is cited for Kṛṣṇa, Bhīma and Arjuna (r2-493–495). MBh 3.154.59 is cited for Draupadī and Sahadeva (r2-430–431), 14.72.1 for Babhruvāhana and Kṛṣṇa (r2-542–543), 18.3.34 for Duryodhana (r2-574) and 7.51.20 for Droṇa (r2-486). In one case the claim itself is weak: Vidura (r2-552) is cited at 15.45.31 for the forest-fire death, but he died earlier, at 15.33. A name-in-window test over 443 round-2 epic and Purāṇa kinship and participation edges with verse-precise locators flagged 83. The 38 Purāṇa flags are false positives (prose markers, ṃ/ñ spellings). Of the 45 epic flags, about 36 are genuine, all in this pattern. The participations are generally true; the locator does not support the subject.",
+  "evidence": "GRETIL MBh CE mbh_03_u.htm 03,231.003–009; mbh_07 07,170.012–018; mbh_15 15,045.028–034 (Vidura absent; his death is 15.33); GRETIL VR R_7,082.004–008. Script: name stems of the subject within ±3 verses of the cited locator.",
+  "fix": "For each PARTICIPANT_IN, cite a verse in which that participant acts (for example Yudhiṣṭhira's order to rescue Duryodhana in MBh 3.232), or use the narrative's chapter-range locator with status source-checked and confidence medium. Re-scope Vidura (r2-552) to the retirement (15.5–15.33) or drop him from the fire. Add the name-in-window test to the validator as a warning."
+ },
+ {
+  "target": "char:maya-asura",
+  "file": "data/entities/purana-r2.json",
+  "severity": "medium",
+  "category": "identity",
+  "issue": "Duplicate identity across agents. char:maya-asura (purana-r2, 'Maya (the asura architect)', aliases Mayāsura and Maya Dānava) is the same figure as the existing char:maya-danava (epic, 'Maya (dānava architect)'). The purana record's own summary says he builds the Pāṇḍavas' assembly hall in the Mahābhārata, and purana:r2-298 makes char:maya-asura APPEAR_IN the Mahābhārata. Meanwhile epic:775 places char:maya-danava in the Khāṇḍava burning and epic:174 makes him Mandodarī's father. No assertion links the two ids, so the graph splits one figure's Tripura, Sabhā and Rāmāyaṇa roles across two nodes.",
+  "evidence": "data/entities/purana-r2.json char:maya-asura (summary); data/entities/epic.json char:maya-danava; assertions epic:174, epic:775, purana:r2-289–291, purana:r2-298, purana:r2-775.",
+  "fix": "Repoint purana:r2-289–291, r2-298 and r2-775 to char:maya-danava and remove char:maya-asura (moving its aliases and Tripura details to char:maya-danava). If ids must stay stable, add char:maya-asura IDENTIFIED_WITH char:maya-danava (class 5) and mark one as the canonical record."
+ },
+ {
+  "target": "char:vasishtha-cow",
+  "file": "data/entities/purana-r2.json",
+  "severity": "medium",
+  "category": "identity",
+  "issue": "Duplicate identity across agents. char:vasishtha-cow (purana-r2, 'Vasiṣṭha's wish-granting cow (Śabalā / Nandinī)', alias Nandinī, 'the Mahābhārata Nandinī (daughter of Surabhi)') and char:nandini-cow (epic-r2, 'Nandinī (Vasiṣṭha's cow) … daughter of Surabhi', Raghuvaṃśa 1–2) are the same figure under two ids, with no link. The Viśvāmitra feud is on one node and the Dilīpa episode on the other.",
+  "evidence": "data/entities/purana-r2.json char:vasishtha-cow; data/entities/epic-r2.json char:nandini-cow; assertions purana:r2-624, r2-627, r2-629; epic:r2-21, r2-27, r2-30.",
+  "fix": "Merge into one id, keeping Śabalā (Vālmīki) and Nandinī (MBh, Raghuvaṃśa) as text-qualified names; or add IDENTIFIED_WITH (class 5) with a note that the Vālmīki Śabalā and the Raghuvaṃśa/MBh Nandinī are one tradition figure."
+ },
+ {
+  "target": "material:r2-142",
+  "file": "data/assertions/material-r2.json",
+  "severity": "medium",
+  "category": "citation",
+  "issue": "Wikipedia remains the sole support for 159 high-confidence round-2 assertions: regional 55, material 46, iconography 58. This breaches AGENT-CONTRACT §3.2 ('never the only support for a … high-confidence claim'). Statuses are now honest ('reference-checked'; none is 'verified-online'), so this is much smaller than round 1's 347, but the confidence is not. Examples: material:r2-142 (class 3, Po Nagar stele COMMISSIONED_BY Satyavarman, high, Wikipedia only); material:r2-174/175 (Yaudheya coins); regional:r2-94/95 (Onam–Bali); regional:r2-411 (Jñānappāna by Pūntānam); iconography:37 and 41 (Gajāsurasaṃhāra and Tripurāntaka as forms of Śiva). Facts sampled: all correct.",
+  "evidence": "Computed over data/assertions/*-r2.json and iconography.json: assertions whose every SourceRef has a source of type 'reference' and confidence 'high'.",
+  "fix": "Lower these 159 to confidence medium, or add the scholarly source behind the Wikipedia sentence (Rao 1914, Banerjea 1956 and Harle for the iconography forms; Cœdès or Finot for Po Nagar; Allan 1936 for the tribal coins; Zvelebil or Lutgendorf for the regional attributions). The validator could warn when confidence is high and all sources are reference-type."
+ },
+ {
+  "target": "temple:162",
+  "file": "data/assertions/temple.json",
+  "severity": "medium",
+  "category": "citation",
+  "issue": "The temple agent's 107 'upgrades' of round-1 assertions from reference-checked to source-checked were made by appending a scholarly book that was not consulted. Every upgraded rationale reads 'checked from the researcher's knowledge of the works (page numbers not given)'. Without a page and without the book being opened, this is recall plus a bibliography item, not 'checked against a named scholarly source'. It includes class-3 (epigraphic) claims that still cite no epigraphic edition, e.g. temple:148 (Somanathapura temple COMMISSIONED_BY Somanātha Daṇḍanāyaka, + Foekema 1996). In round 2 itself, 24 of the temple agent's 26 class-3 assertions cite no edition or scholarly work. All 10 upgrades I sampled are factually correct (temple:162, 148, 24, 93, 41, 187, 149, 22, 301, 190).",
+  "evidence": "git diff of data/assertions/temple.json between 157471b and HEAD: 107 reference-checked→source-checked, 47 verified-online→reference-checked (the downgrades are honest). Sample of 10 read in full.",
+  "fix": "Revert the 107 to reference-checked (or recall), keeping the added bibliography, until a page has been read. For class-3 claims, add SII/EI/ARE references (most are on DHARMA/Dharmalekha, which the material agent used successfully)."
+ },
+ {
+  "target": "temple:mahaganapati-ranjangaon",
+  "file": "data/entities/temple-r2.json",
+  "severity": "medium",
+  "category": "date",
+  "issue": "Traditional or explicitly unsupported antiquity claims are stored as material-system DateClaims with numeric starts. Because src/lib/meta.ts materialDate() falls back to disputed dates when there is no firm one, they place the temples on the material time machine. temple:mahaganapati-ranjangaon is 'construction 800–999, 9th–10th c. (claimed)', basis 'unsupported statement in the reference', so it is placed at 800 CE. temple:chandranath is 'surviving-structure 1000–1999, undated (11th-c. origin claimed)', basis 'is believed to date back to the 11th century', placed at 1000 CE. temple:dakshinkali is 1600–1999, '17th-c. foundation traditionally claimed', placed at 1600. The four undated Pañca Kedāra shrines (temple:tungnath, rudranath, madhyamaheshwar, kalpeshwar) are 800–1900 'regional style only', so they appear at 800 CE.",
+  "evidence": "data/entities/temple-r2.json, dates of the cited records; src/lib/meta.ts lines 78–82 (read only).",
+  "fix": "Move the 'claimed'/'believed' antiquity to system 'traditional' with no start/end. For undated fabric, give no numeric start or a bound the evidence supports (e.g. 'before 18th-c. records'), so that undated buildings drop out of the 800 CE map. Site team: skip disputed dates whose basis says 'claimed', 'unsupported' or 'tradition'."
+ },
+ {
+  "target": "temple:vighnahar-ozar",
+  "file": "data/entities/temple-r2.json",
+  "severity": "medium",
+  "category": "neutrality",
+  "issue": "Two temple summaries state the sthala-purāṇa legend as fact, without 'tradition holds', and no traditional DateClaim or limits record the legend. temple:vighnahar-ozar: 'Aṣṭavināyaka temple at Ozar … where Gaṇeśa defeated the obstacle-demon Vighnāsura'. temple:chintamani-theur: '… where Gaṇeśa recovered the wish-granting jewel for the sage Kapila'. This breaches contract §3.11. Compare temple:adi-kumbeswarar, which correctly labels its pot legend as the sthala-purāṇa.",
+  "evidence": "data/entities/temple-r2.json temple:vighnahar-ozar and temple:chintamani-theur (summary, limits, dates).",
+  "fix": "Rephrase as 'where, by temple tradition, Gaṇeśa defeated …' and add a traditional DateClaim/limits noting the legend is class 6."
+ },
+ {
+  "target": "disc:onam-mayon",
+  "file": "data/discoveries.json",
+  "severity": "medium",
+  "category": "overclaim",
+  "issue": "The title says 'Ōṇam is the festival of Māyōṉ — not of Mahābali'. Maduraikkāñci 590–591 (verified on Project Madurai) reads 'kaṇaṅkoḷ avuṇark kaṭanta polantār / māyōṉ mēya ōṇa naṉṉāḷ': the Ōṇam of Māyōṉ 'who overcame the crowding asuras'. The line does not exclude Bali, and Viṣṇu–Vāmana's victory over the asura Bali is one natural reading of it. The graph's own trad:onam details also note that Tiruvōṇam is Vāmana's birth-asterism. The body calls the Bali story 'later', while the caveat says it is 'not … a later invention'. The festival described is in Pāṇḍya Madurai, which the body does not mention.",
+  "evidence": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0071.html (lines 590–591); data/entities/regional-r2.json trad:onam details; cmp:onam-mahabali-vs-puranic-bali.",
+  "fix": "Retitle: 'The oldest Tamil reference to Ōṇam makes it Māyōṉ's (Viṣṇu's) festival, in Madurai'. Say that the poem names no Bali but credits Māyōṉ with defeating asuras, which later tradition can read as Vāmana–Bali. Make body and caveat consistent."
+ },
+ {
+  "target": "disc:kalidasa-source",
+  "file": "data/discoveries.json",
+  "severity": "medium",
+  "category": "overclaim",
+  "issue": "The title 'Kālidāsa names his source' and the body claim that at 15.63–64 'the poem names Vālmīki's work as the account it follows' misdescribe the verses. Raghuvaṃśa 15.63–64 (verified in GRETIL) narrate that Kuśa and Lava, urged by their teacher, sang 'the Rāmāyaṇa first composed by Prācetasa'. This is an event inside the story, not the poet's statement of his own source. The inference that cantos 10–15 follow Vālmīki is reasonable, but it is an inference. 'One of the earliest explicit acknowledgements … by a datable author' should also note Aśvaghoṣa's Buddhacarita 1.43 (vālmīkir ādau ca sasarja padyam), which is earlier.",
+  "evidence": "GRETIL sa_kAlidAsa-raghuvaMza.txt Ragh_15.63 'atha prācetasopajñaṃ rāmāyaṇam itas tataḥ / maithileyau kuśalavau jagatur gurucoditau', Ragh_15.64; Ragh_1.4 (kṛtavāgdvāre … pūrvasūribhiḥ).",
+  "fix": "Retitle 'The Raghuvaṃśa names Vālmīki's Rāmāyaṇa'. Say the twins sing it inside the story; cite Raghuvaṃśa 1.4 for the poet's nod to 'earlier poets'; mention Aśvaghoṣa as an earlier witness."
+ },
+ {
+  "target": "disc:varuna-mount",
+  "file": "data/discoveries.json",
+  "severity": "medium",
+  "category": "overclaim",
+  "issue": "The title calls the Bṛhat Saṃhitā and the Agni Purāṇa 'the two oldest image manuals'. That contradicts the graph's own dates. text:agni-purana is dated 'post-7th c.; a version existed by the 11th c.' (Hazra; Rocher), while text:vishnudharmottara-purana (compilation 5th–6th c., Pingree; Citrasūtra 7th c., Kramrisch) and text:matsya-purana (earliest layer c. 250–500) also contain image-prescription chapters. The substance is correct and verified: BS 57.57 'haṃsārūḍhaś ca pāśabhṛd varuṇaḥ'; AP 51.15 'makare varuṇaḥ pāśī'; BS 57.33 and AP 49.16 list the eight-armed Viṣṇu's weapons in the same order.",
+  "evidence": "GRETIL sa_varAhamihira-bRhatsaMhitA.txt 57.33, 57.57; sa_agnipurANa.txt ap_49.016, ap_51.015; data/entities dates of text:agni-purana, text:vishnudharmottara-purana, text:matsya-purana.",
+  "fix": "Retitle 'Two early image manuals disagree on Varuṇa's mount', or add the Viṣṇudharmottara's and the Matsya's prescriptions to cmp:varuna-vahana before making a claim about the oldest."
+ },
+ {
+  "target": "claim:ayodhya-temple-beneath-mosque",
+  "file": "data/entities/material-r2.json",
+  "severity": "medium",
+  "category": "neutrality",
+  "issue": "The contested Ayodhyā excavation is modelled neutrally in its prose, but the two competing evidence edges are unequal. material:r2-298 (excavation SUPPORTS the claim) is confidence medium and cites the ASI report. material:r2-299 (CONTRADICTS) is confidence low and cites only Wikipedia; no critic's publication is in the sources. A reader of the edges sees one side as better attested by construction. The summary of the 2019 judgment (non-Islamic underlying structure; no finding that a temple was demolished; title decided on other evidence) is accurate.",
+  "evidence": "data/assertions/material-r2.json material:r2-298, r2-299; data/entities/material-r2.json claim:ayodhya-temple-beneath-mosque and site:ayodhya-2003-excavation.",
+  "fix": "Give both edges the same confidence (medium) and cite the critics' published work on the CONTRADICTS edge, e.g. D. Mandal & S. Ratnagar, Ayodhya: Archaeology after Excavation (Tulika, 2007), and S. Varma & J. Menon, 'Was there a temple under the Babri Masjid?', Economic and Political Weekly 45.50 (2010). Note the ASI's and the High Court's replies in 'competing'."
+ },
+ {
+  "target": "temple:thousand-pillar-hanamkonda",
+  "file": "data/entities/temple-r2.json",
+  "severity": "low",
+  "category": "date",
+  "issue": "certainty 'secure' is used for dates that the record itself says were not checked. The basis of temple:thousand-pillar-hanamkonda's 1163 CE date reads 'recall of the date; the reference does not quote it'. The same holds for 'as reported' dated-inscription claims taken from Wikipedia: Mahādeva temple, Itagi, 1112; Baijnath, 1204; Brahmeśvara, labelled 'c. 1058' yet secure; Viṭṭhala, Pandharpur, 1189. The dates I could check agree with the standard literature.",
+  "evidence": "data/entities/temple-r2.json dates of these records (basis fields).",
+  "fix": "Use 'estimated' until the inscription edition (EI/SII/ARE/HAS) is cited; reserve 'secure' for readings checked in an edition."
+ },
+ {
+  "target": "art:kankali-tila-sarasvati",
+  "file": "data/entities/material-r2.json",
+  "severity": "low",
+  "category": "date",
+  "issue": "Both epoch equations for 'year 54 of the Kaniṣka era' are marked disputed, so placement takes the minimum: 132 CE on the 78 CE epoch. Yet the record calls the 127 CE epoch 'now widely accepted', and the graph dates Huviṣka, in whose reign year 54 falls, to c. 150–190.",
+  "evidence": "data/entities/material-r2.json art:kankali-tila-sarasvati and person:huvishka dates.",
+  "fix": "Mark the 127 CE equation (c. 181 CE) 'estimated' and the 78 CE one 'disputed' with view 'older equation'."
+ },
+ {
+  "target": "art:vasudeva-i-coin-cma",
+  "file": "data/entities/material-r2.json",
+  "severity": "low",
+  "category": "date",
+  "issue": "The coin's minting date '142–177 (museum dating)' contradicts the graph's own person:vasudeva-i-kushan reign of c. 190–230, so a Vāsudeva I coin is placed before Vāsudeva's reign. The CMA API gives 'c. 142/145+', apparently on an older chronology.",
+  "evidence": "Cleveland Open Access API, 1999.226 creation_date 'c. 142/145+'; data/entities/material-r2.json person:vasudeva-i-kushan.",
+  "fix": "Keep the museum label as a quoted attribute, but date the coin to the reign (c. 190–230, estimated) with a note on the museum's older chronology."
+ },
+ {
+  "target": "temple:rasmancha-bishnupur",
+  "file": "data/entities/temple-r2.json",
+  "severity": "low",
+  "category": "geography",
+  "issue": "temple:rasmancha-bishnupur has exactly the coordinates of temple:jor-bangla-bishnupur (23.07171, 87.32679), both labelled precision 'exact'. OpenStreetMap places Rāsmañca at 23.0682, 87.3221, about 0.6 km away. Of 30 other sampled temple and place coordinates compared with OpenStreetMap, and 40 judged by hand, none is wrong. The four Ellora cave records share one point, but are labelled approximate.",
+  "evidence": "Nominatim: 'Rasmancha Bishnupur' → 23.0682030, 87.3221209; 'Jor Bangla Temple Bishnupur' → 23.0716818, 87.3267767.",
+  "fix": "Set Rāsmañca to c. 23.0682, 87.3221 (exact) or mark it approximate."
+ },
+ {
+  "target": "temple:sv-temple-pittsburgh",
+  "file": "data/entities/temple-r2.json",
+  "severity": "low",
+  "category": "date",
+  "issue": "The secure date label 'begun 1975; consecrated 8 June 1977' has start 1975. The consecration date is right, but published accounts put the groundbreaking in 1976 (dates vary: 30 June or 21 July 1976).",
+  "evidence": "Web search (Wikipedia 'Sri Venkateswara Temple, Pittsburgh'; pluralism.org): consecration 8 June 1977; groundbreaking 1976.",
+  "fix": "Use start 1976 or give the consecration alone as the secure date."
+ },
+ {
+  "target": "disc:holi-two-stories",
+  "file": "data/discoveries.json",
+  "severity": "low",
+  "category": "overclaim",
+  "issue": "'The festival's explanations were plural from the start of the textual record' overstates. The Nārada Purāṇa passage (verified: NārP 1.124.76–81, with Holikā 'prahlādabhayadāyinī' at .80 and 'kāmadāho matāntare' at .81) is late. The earliest references to Holākā that Kane cites (the Pūrvamīmāṃsā Holākādhikaraṇa and the Kāṭhaka Gṛhya) give no origin story at all.",
+  "evidence": "GRETIL sa_nAradapurANa.txt narp_1,124.76–81; Kane HDS V.1 pp. 237–238.",
+  "fix": "Say 'plural as soon as texts explain it'."
+ },
+ {
+  "target": "disc:devi-mahatmya-manuscript",
+  "file": "data/discoveries.json",
+  "severity": "low",
+  "category": "confidence",
+  "issue": "The discovery is marked confidence high, but the material agent's own uncertainty log says the Schøyen MS 2174 date (11th c.) 'is only a private-catalogue claim | comparison with NGMCP holdings' is needed. The comparison with the 608 CE Dadhimatī Mātā verse is otherwise sound, and the caveat is appropriate.",
+  "evidence": "research/agents/material-r2.md §4 (Devīmāhātmya oldest MS row); data/discoveries.json.",
+  "fix": "Lower to medium until the NGMCP or Cambridge holdings are checked."
+ },
+ {
+  "target": "iconography:691",
+  "file": "data/assertions/iconography.json",
+  "severity": "low",
+  "category": "citation",
+  "issue": "The 'earliest dated Gaṅgādhara' (Udayagiri Cave 6, early 5th c.), which disc:gangadhara-udayagiri rests on, is confidence high on Wikipedia plus Williams 1982, which was not opened. Wikipedia does say 'figures of Vishnu and of Shiva Gangadhara' flank the Cave 6 door, but the identification of a weathered relief is an art-historical argument.",
+  "evidence": "https://en.wikipedia.org/wiki/Udayagiri_Caves (Cave 6 section).",
+  "fix": "Lower to medium or cite Williams 1982 or Willis 2009 with a page."
+ },
+ {
+  "target": "material:r2-317",
+  "file": "data/assertions/material-r2.json",
+  "severity": "low",
+  "category": "predicate",
+  "issue": "COMMISSIONED_BY ('was commissioned/patronised by') is used for the painters of Razmnāma and Harivaṃśa folios (material:r2-317 Banwari the Younger, r2-323, r2-351, r2-356). Those are makers, not patrons; the patron is Akbar's atelier. Relatedly, iconography uses MEMBER_OF for 217 temple→architectural-style edges, although the schema glosses MEMBER_OF as character→lineage and person→polity.",
+  "evidence": "data/assertions/material-r2.json; schema/types.ts PREDICATES.",
+  "fix": "Use an artist attribute or ATTRIBUTED_TO with role 'painter'; consider adding a predicate for style membership, or use PART_OF/ASSOCIATED_WITH."
+ },
+ {
+  "target": "text:amritabindu-upanishad",
+  "file": "data/entities/vedic-r2.json",
+  "severity": "low",
+  "category": "identity",
+  "issue": "The title 'Amṛtabindu' is ambiguous. The record's content (six-limbed yoga with dhāraṇā after dhyāna; Deussen's dating) is that of the text usually called the Amṛtanāda Upaniṣad (Deussen's 'Amṛtabindu'). Meanwhile text:brahmabindu-upanishad carries the alias 'Amṛtabindu (in some lists)'. A reader or the find tool can conflate the two.",
+  "evidence": "data/entities/vedic-r2.json both records; Wikipedia article on the Amritanada Upanishad (title shown as 'Amritabindu', noting the alternative titles Brahmabindu and Amritanada).",
+  "fix": "Add alias 'Amṛtanāda Upaniṣad' and a note distinguishing it from the Brahmabindu (= Amṛtabindu in the Muktikā list)."
+ },
+ {
+  "target": "regional:r2-92",
+  "file": "data/assertions/regional-r2.json",
+  "severity": "low",
+  "category": "copyright",
+  "issue": "Short verbatim English quotations from Kane, History of Dharmaśāstra vol. V (1958; in copyright) appear in qualifiers.note: regional:r2-92 (Pongal sentence), r2-4 and r2-493. Contract §3.10 limits quotations to public-domain translations or original-language text. They are short, but outside the rule.",
+  "evidence": "data/assertions/regional-r2.json qualifiers.note of the three assertions.",
+  "fix": "Paraphrase and keep the page locator; quote the Sanskrit that Kane cites where needed."
+ },
+ {
+  "target": "src:gretil-natyashastra",
+  "file": "data/sources/vedic-r2.json",
+  "severity": "low",
+  "category": "citation",
+  "issue": "The URL is marked urlChecked but returns 404. The GRETIL file is sa_bharata-nATyazAstra-1-1618-303335-37.txt. The 10 Nāṭyaśāstra quotations do occur in that file.",
+  "evidence": "curl … plaintext/sa_bharata-nATyazAstra.txt → 404; the GRETIL index lists sa_bharata-nATyazAstra-1-1618-303335-37.txt.",
+  "fix": "Correct the URL."
+ },
+ {
+  "target": "trad:ravidassia",
+  "file": "data/entities/regional-r2.json",
+  "severity": "low",
+  "category": "neutrality",
+  "issue": "The summary describes the community as 'largely of Dalit (camār) background'. The caste name is used as a slur in some contexts, though it is also an identity some members assert. The record is otherwise careful ('this record takes no position').",
+  "evidence": "data/entities/regional-r2.json trad:ravidassia.",
+  "fix": "Prefer 'largely of Dalit background (many identify as Ad-Dharmi or Ravidassia)', and cite Ram 2008 or Juergensmeyer 1982 for self-designations."
+ },
+ {
+  "target": "vedic:r2-357",
+  "file": "data/assertions/vedic-r2.json",
+  "severity": "low",
+  "category": "overclaim",
+  "issue": "'Mahāvākyas DERIVED_FROM Māṇḍūkya 1–12' is over-general. Only one of the four standard mahāvākyas (ayam ātmā brahma, Māṇḍ. 2, also BU 2.5.19) comes from the Māṇḍūkya. The edge's own note says so.",
+  "evidence": "data/assertions/vedic-r2.json vedic:r2-357.",
+  "fix": "Re-target to a concept or passage for 'ayam ātmā brahma', or add parallel edges for CU 6.8.7, BU 1.4.10 and AU 3.3."
+ }
+]

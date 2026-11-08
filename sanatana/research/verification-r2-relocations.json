@@ -1,0 +1,414 @@
+[
+ {
+  "id": "epic:r2-36",
+  "s": "char:dasharatha",
+  "o": "narr:ascetic-boy-killing",
+  "old": "VR (CE) 2.57.8",
+  "new": "VR (CE) 2.57.1",
+  "quote": "pratibuddho muhur tena śokopahatacetanaḥ atha rājā daśarathaḥ sa cintām abhyapadyata"
+ },
+ {
+  "id": "epic:r2-401",
+  "s": "char:kunti",
+  "o": "narr:baka-slaying",
+  "old": "MBh (CE) 1.151.16",
+  "new": "MBh (CE) 1.149.20",
+  "quote": "tataḥ kuntī ca vipraś ca sahitāv anilātmajam tam abrūtāṃ kuruṣveti sa tathety abravīc ca tau",
+  "matched": "kuntī"
+ },
+ {
+  "id": "epic:r2-423",
+  "s": "deity:indra",
+  "o": "narr:arjuna-in-indraloka",
+  "old": "MBh (CE) 3.43.1",
+  "new": "MBh (CE) 3.43.1",
+  "quote": "vaiśaṃpāyana uvāca gateṣu lokapāleṣu pārthaḥ śatrunibarhaṇaḥ cintayām āsa rājendra devarājarathāgamam",
+  "matched": "devarājarathāgamam"
+ },
+ {
+  "id": "epic:r2-424",
+  "s": "char:citrasena-gandharva",
+  "o": "narr:arjuna-in-indraloka",
+  "old": "MBh (CE) 3.43.1",
+  "new": "MBh (CE) 3.45.8",
+  "quote": "sakhāyaṃ pradadau cāsya citrasenaṃ puraṃdaraḥ sa tena saha saṃgamya reme pārtho nirāmayaḥ",
+  "matched": "citrasenaṃ"
+ },
+ {
+  "id": "epic:r2-430",
+  "s": "char:draupadi",
+  "o": "narr:jatasura-slaying",
+  "old": "MBh (CE) 3.154.59",
+  "new": "MBh (CE) 3.154.6",
+  "quote": "gṛhītvā sarvaśastrāṇi draupadīṃ parigṛhya ca prātiṣṭhata sa duṣṭātmā trīn gṛhītvā ca pāṇḍavān"
+ },
+ {
+  "id": "epic:r2-431",
+  "s": "char:sahadeva",
+  "o": "narr:jatasura-slaying",
+  "old": "MBh (CE) 3.154.59",
+  "new": "MBh (CE) 3.154.7",
+  "quote": "sahadevas tu yatnena tato 'pakramya pāṇḍavaḥ ākrandad bhīmasenaṃ vai yena yāto mahābalaḥ"
+ },
+ {
+  "id": "epic:r2-435",
+  "s": "char:bhima",
+  "o": "narr:nahusha-python",
+  "old": "MBh (CE) 3.177.6",
+  "new": "MBh (CE) 3.177.12",
+  "quote": "praśnān uccāritāṃs tu tvaṃ vyāhariṣyasi cen mama atha paścād vimokṣyāmi bhrātaraṃ te vṛkodaram"
+ },
+ {
+  "id": "epic:r2-440",
+  "s": "char:yudhishthira",
+  "o": "narr:ghoshayatra",
+  "old": "MBh (CE) 3.231.6",
+  "new": "MBh (CE) 3.231.13",
+  "quote": "iti duryodhanāmātyāḥ krośanto rājagṛddhinaḥ ārtā dīnasvarāḥ sarve yudhiṣṭhiram upāgaman"
+ },
+ {
+  "id": "epic:r2-442",
+  "s": "char:karna",
+  "o": "narr:ghoshayatra",
+  "old": "MBh (CE) 3.231.6",
+  "new": "MBh (CE) 3.231.1",
+  "quote": "vaiśaṃpāyana uvāca gandharvais tu mahārāja bhagne karṇe mahārathe saṃprādravac camūḥ sarvā dhārtarāṣṭrasya paśyataḥ"
+ },
+ {
+  "id": "epic:r2-443",
+  "s": "char:shakuni",
+  "o": "narr:ghoshayatra",
+  "old": "MBh (CE) 3.231.6",
+  "new": "MBh (CE) 3.230.17",
+  "quote": "atha duryodhano rājā śakuniś cāpi saubalaḥ duḥśāsano vikarṇaś ca ye cānye dhṛtarāṣṭrajāḥ nyahanaṃs tat tadā sainyaṃ rathair garuḍanisvanaiḥ"
+ },
+ {
+  "id": "epic:r2-453",
+  "s": "char:durvasas",
+  "o": "narr:mudgala-gleaner",
+  "old": "MBh (CE) 3.246.1",
+  "new": "MBh (CE) 3.246.11",
+  "quote": "taṃ tu śuśrāva dharmiṣṭhaṃ mudgalaṃ saṃśitavratam durvāsā nṛpa digvāsās tam athābhyājagāma ha"
+ },
+ {
+  "id": "epic:r2-472",
+  "s": "char:krishna",
+  "o": "narr:uttara-abhimanyu-marriage",
+  "old": "MBh (CE) 4.67.7",
+  "new": "MBh (CE) 4.67.15",
+  "quote": "tasmin vasaṃś ca bībhatsur ānināya janārdanam ānartebhyo 'pi dāśārhān abhimanyuṃ ca pāṇḍavaḥ"
+ },
+ {
+  "id": "epic:r2-476",
+  "s": "char:krishna",
+  "o": "narr:vishvarupa-darshana",
+  "old": "MBh (CE) 6.33.9",
+  "new": "MBh (CE) 6.33.35",
+  "quote": "saṃjaya uvāca etac chrutvā vacanaṃ keśavasya; kṛtāñjalir vepamānaḥ kirīṭī namaskṛtvā bhūya evāha kṛṣṇaṃ; sagadgadaṃ bhītabhītaḥ praṇamya"
+ },
+ {
+  "id": "epic:r2-478",
+  "s": "char:sanjaya",
+  "o": "narr:vishvarupa-darshana",
+  "old": "MBh (CE) 6.33.9",
+  "new": "MBh (CE) 6.33.9",
+  "quote": "saṃjaya uvāca evam uktvā tato rājan mahāyogeśvaro hariḥ darśayām āsa pārthāya paramaṃ rūpam aiśvaram",
+  "matched": "saṃjaya"
+ },
+ {
+  "id": "epic:r2-493",
+  "s": "char:krishna",
+  "o": "narr:narayanastra",
+  "old": "MBh (CE) 7.170.15",
+  "new": "MBh (CE) 7.170.27",
+  "quote": "vāsudevo 'pi dharmātmā kariṣyaty ātmanaḥ kṣamam upadeṣṭuṃ samartho 'yaṃ lokasya kim utātmanaḥ",
+  "matched": "vāsudevo"
+ },
+ {
+  "id": "epic:r2-494",
+  "s": "char:bhima",
+  "o": "narr:narayanastra",
+  "old": "MBh (CE) 7.170.15",
+  "new": "MBh (CE) 7.170.44",
+  "quote": "tata utsraṣṭukāmāṃs tān astrāṇy ālakṣya pāṇḍavaḥ bhīmaseno 'bravīd rājann idaṃ saṃharṣayan vacaḥ"
+ },
+ {
+  "id": "epic:r2-495",
+  "s": "char:arjuna",
+  "o": "narr:narayanastra",
+  "old": "MBh (CE) 7.170.15",
+  "new": "MBh (CE) 7.170.30",
+  "quote": "kāmaḥ saṃpadyatām asya bībhatsor āśu māṃ prati kalyāṇavṛtta ācāryo mayā yudhi nipātitaḥ"
+ },
+ {
+  "id": "epic:r2-499",
+  "s": "char:duhshasana",
+  "o": "narr:duhshasana-slaying",
+  "old": "MBh (CE) 8.61.10",
+  "new": "MBh (CE) 8.61.1",
+  "quote": "saṃjaya uvāca tatrākarod duṣkaraṃ rājaputro; duḥśāsanas tumule yudhyamānaḥ ciccheda bhīmasya dhanuḥ kṣureṇa; ṣaḍbhiḥ śaraiḥ sārathim apy avidhyat"
+ },
+ {
+  "id": "epic:r2-506",
+  "s": "char:krishna",
+  "o": "narr:shalya-death",
+  "old": "MBh (CE) 9.16.48",
+  "new": "MBh (CE) 9.16.36",
+  "quote": "govindavākyaṃ tvaritaṃ vicintya; dadhre matiṃ śalyavināśanāya sa dharmarājo nihatāśvasūte; rathe tiṣṭhañ śaktim evābhikāṅkṣan"
+ },
+ {
+  "id": "epic:r2-525",
+  "s": "char:dhritarashtra",
+  "o": "narr:stri-vilapa",
+  "old": "MBh (CE) 11.16.1",
+  "new": "MBh (CE) 11.16.9",
+  "quote": "tato vyāsābhyanujñāto dhṛtarāṣṭro mahīpatiḥ pāṇḍuputrāś ca te sarve yudhiṣṭhirapurogamāḥ"
+ },
+ {
+  "id": "epic:r2-526",
+  "s": "char:kunti",
+  "o": "narr:stri-vilapa",
+  "old": "MBh (CE) 11.16.1",
+  "new": "MBh (CE) 11.15.15",
+  "quote": "tayaiva sahitā cāpi putrair anugatā pṛthā abhyagacchata gāndhārīm ārtām ārtatarā svayam",
+  "matched": "pṛthā",
+  "note": "The verse leads into the lament: Kuntī goes with Draupadī to Gāndhārī."
+ },
+ {
+  "id": "epic:r2-533",
+  "s": "char:parikshit",
+  "o": "narr:parikshit-revival",
+  "old": "MBh (CE) 14.69.3",
+  "new": "MBh (CE) 14.65.8",
+  "quote": "vasatsu vṛṣṇivīreṣu tatrātha janamejaya jajñe tava pitā rājan parikṣit paravīrahā",
+  "matched": "parikṣit"
+ },
+ {
+  "id": "epic:r2-534",
+  "s": "char:uttara",
+  "o": "narr:parikshit-revival",
+  "old": "MBh (CE) 14.69.3",
+  "new": "MBh (CE) 14.69.8",
+  "quote": "utthāya tu yathākālam uttarā yadunandanam abhyavādayata prītā saha putreṇa bhārata tatas tasyai dadau prīto bahuratnaṃ viśeṣataḥ",
+  "matched": "uttarā"
+ },
+ {
+  "id": "epic:r2-542",
+  "s": "char:babhruvahana",
+  "o": "narr:yudhishthira-ashvamedha",
+  "old": "MBh (CE) 14.72.1",
+  "new": "MBh (CE) 14.78.1",
+  "quote": "vaiśaṃpāyana uvāca śrutvā tu nṛpatir vīraṃ pitaraṃ babhruvāhanaḥ niryayau vinayenāryo brāhmaṇārghyapuraḥsaraḥ"
+ },
+ {
+  "id": "epic:r2-543",
+  "s": "char:krishna",
+  "o": "narr:yudhishthira-ashvamedha",
+  "old": "MBh (CE) 14.72.1",
+  "new": "MBh (CE) 14.88.4",
+  "quote": "athābhyagacchad govindo vṛṣṇibhiḥ saha dharmajam baladevaṃ puraskṛtya sarvaprāṇabhṛtāṃ varaḥ"
+ },
+ {
+  "id": "epic:r2-549",
+  "s": "char:dhritarashtra",
+  "o": "narr:dhritarashtra-forest-death",
+  "old": "MBh (CE) 15.45.31",
+  "new": "MBh (CE) 15.45.6",
+  "quote": "yudhiṣṭhira uvāca vadanti puruṣā me 'dya gaṅgātīranivāsinaḥ dhṛtarāṣṭraṃ mahātmānam āsthitaṃ paramaṃ tapaḥ"
+ },
+ {
+  "id": "epic:r2-552",
+  "s": "char:vidura",
+  "o": "narr:dhritarashtra-forest-death",
+  "old": "MBh (CE) 15.45.31",
+  "new": "MBh (CE) 15.33.15",
+  "quote": "ity uktaḥ pratyuvācedaṃ dhṛtarāṣṭro janādhipam kuśalī viduraḥ putra tapo ghoraṃ samāsthitaḥ",
+  "matched": "viduraḥ",
+  "note": "Vidura retires to the forest with Dhṛtarāṣṭra and dies there by yoga (15.33), before the forest fire; he is a participant in the retirement, not in the fire."
+ },
+ {
+  "id": "epic:r2-553",
+  "s": "char:sanjaya",
+  "o": "narr:dhritarashtra-forest-death",
+  "old": "MBh (CE) 15.45.31",
+  "new": "MBh (CE) 15.45.16",
+  "quote": "aniketo 'tha rājā sa babhūva vanagocaraḥ te cāpi sahite devyau saṃjayaś ca tam anvayuḥ",
+  "matched": "saṃjayaś"
+ },
+ {
+  "id": "epic:r2-554",
+  "s": "char:narada",
+  "o": "narr:dhritarashtra-forest-death",
+  "old": "MBh (CE) 15.45.31",
+  "new": "MBh (CE) 15.45.1",
+  "quote": "vaiśaṃpāyana uvāca dvivarṣopanivṛtteṣu pāṇḍaveṣu yadṛcchayā devarṣir nārado rājann ājagāma yudhiṣṭhiram"
+ },
+ {
+  "id": "epic:r2-558",
+  "s": "char:gandhari",
+  "o": "narr:putradarshana",
+  "old": "MBh (CE) 15.40.7",
+  "new": "MBh (CE) 15.40.3",
+  "quote": "gāndhāryā saha nāryas tu sahitāḥ samupāviśan paurajānapadaś cāpi janaḥ sarvo yathāvayaḥ"
+ },
+ {
+  "id": "epic:r2-559",
+  "s": "char:kunti",
+  "o": "narr:putradarshana",
+  "old": "MBh (CE) 15.40.7",
+  "new": "MBh (CE) 15.39.2",
+  "quote": "karṇaṃ drakṣyati kuntī ca saubhadraṃ cāpi yādavī draupadī pañca putrāṃś ca pitṝn bhrātṝṃs tathaiva ca"
+ },
+ {
+  "id": "epic:r2-560",
+  "s": "char:dhritarashtra",
+  "o": "narr:putradarshana",
+  "old": "MBh (CE) 15.40.7",
+  "new": "MBh (CE) 15.40.2",
+  "quote": "dhṛtarāṣṭras tu dharmātmā pāṇḍavaiḥ sahitas tadā śucir ekamanāḥ sārdham ṛṣibhis tair upāviśat"
+ },
+ {
+  "id": "epic:r2-572",
+  "s": "deity:indra",
+  "o": "narr:svargarohana",
+  "old": "MBh (CE) 18.3.34",
+  "new": "MBh (CE) 18.3.1",
+  "quote": "vaiśaṃpāyana uvāca sthite muhūrtaṃ pārthe tu dharmarāje yudhiṣṭhire ājagmus tatra kauravya devāḥ śakrapurogamāḥ",
+  "matched": "śakrapurogamāḥ"
+ },
+ {
+  "id": "epic:r2-573",
+  "s": "deity:dharma",
+  "o": "narr:svargarohana",
+  "old": "MBh (CE) 18.3.34",
+  "new": "MBh (CE) 18.3.2",
+  "quote": "svayaṃ vigrahavān dharmo rājānaṃ prasamīkṣitum tatrājagāma yatrāsau kururājo yudhiṣṭhiraḥ",
+  "matched": "dharmo"
+ },
+ {
+  "id": "epic:r2-574",
+  "s": "char:duryodhana",
+  "o": "narr:svargarohana",
+  "old": "MBh (CE) 18.3.34",
+  "new": "MBh (CE) 18.2.45",
+  "quote": "kiṃ kṛtvā dhṛtarāṣṭrasya putro rājā suyodhanaḥ tathā śriyā yutaḥ pāpaḥ saha sarvaiḥ padānugaiḥ"
+ },
+ {
+  "id": "epic:r2-583",
+  "s": "char:ravana",
+  "o": "narr:ashoka-grove-meeting",
+  "old": "VR (CE) 5.15.3",
+  "new": "VR (CE) 5.16.3",
+  "quote": "atha maṅgalavāditraiḥ śabdaiḥ śrotramanoharaiḥ prābodhyata mahābāhur daśagrīvo mahābalaḥ"
+ },
+ {
+  "id": "epic:r2-584",
+  "s": "char:trijata",
+  "o": "narr:ashoka-grove-meeting",
+  "old": "VR (CE) 5.15.3",
+  "new": "VR (CE) 5.25.4",
+  "quote": "sītāṃ tābhir anāryābhir dṛṣṭvā saṃtarjitāṃ tadā rākṣasī trijaṭāvṛddhā śayānā vākyam abravīt"
+ },
+ {
+  "id": "epic:r2-589",
+  "s": "char:ravana",
+  "o": "narr:lanka-burning",
+  "old": "VR (CE) 5.51.39",
+  "new": "VR (CE) 5.51.1",
+  "quote": "tasya tad vacanaṃ śrutvā daśagrīvo mahābalaḥ deśakālahitaṃ vākyaṃ bhrātur uttamam abravīt"
+ },
+ {
+  "id": "epic:r2-590",
+  "s": "char:vibhishana",
+  "o": "narr:lanka-burning",
+  "old": "VR (CE) 5.51.39",
+  "new": "VR (CE) 5.50.2",
+  "quote": "vadhe tasya samājñapte rāvaṇena durātmanā niveditavato dautyaṃ nānumene vibhīṣaṇaḥ",
+  "matched": "vibhīṣaṇaḥ"
+ },
+ {
+  "id": "epic:r2-597",
+  "s": "char:lakshmana",
+  "o": "narr:herb-mountain",
+  "old": "VR (CE) 6.61.36",
+  "new": "VR (CE) 6.61.28",
+  "quote": "ṛkṣavānaravīrāṇām anīkāni praharṣaya viśalyau kuru cāpy etau sāditau rāmalakṣmaṇau"
+ },
+ {
+  "id": "epic:r2-598",
+  "s": "char:rama",
+  "o": "narr:herb-mountain",
+  "old": "VR (CE) 6.61.36",
+  "new": "VR (CE) 6.61.28",
+  "quote": "ṛkṣavānaravīrāṇām anīkāni praharṣaya viśalyau kuru cāpy etau sāditau rāmalakṣmaṇau",
+  "matched": "rāmalakṣmaṇau"
+ },
+ {
+  "id": "epic:r2-599",
+  "s": "char:vibhishana",
+  "o": "narr:herb-mountain",
+  "old": "VR (CE) 6.61.36",
+  "new": "VR (CE) 6.61.2",
+  "quote": "tato viṣaṇṇaṃ samavekṣya sainyaṃ vibhīṣaṇo buddhimatāṃ variṣṭhaḥ uvāca śākhāmṛgarājavīrān āśvāsayann apratimair vacobhiḥ"
+ },
+ {
+  "id": "epic:r2-603",
+  "s": "char:mandodari",
+  "o": "narr:ravana-slaying",
+  "old": "VR (CE) 6.97.17",
+  "new": "VR (CE) 6.99.2",
+  "quote": "daśagrīvaṃ hataṃ dṛṣṭvā rāmeṇācintyakarmaṇā patiṃ mandodarī tatra kṛpaṇā paryadevayat",
+  "matched": "mandodarī"
+ },
+ {
+  "id": "epic:r2-604",
+  "s": "char:vibhishana",
+  "o": "narr:ravana-slaying",
+  "old": "VR (CE) 6.97.17",
+  "new": "VR (CE) 6.97.32",
+  "quote": "tatas tu sugrīvavibhīṣaṇādayaḥ suhṛdviśeṣāḥ sahalakṣmaṇās tadā sametya hṛṣṭā vijayena rāghavaṃ raṇe 'bhirāmaṃ vidhinābhyapūjayan"
+ },
+ {
+  "id": "epic:r2-610",
+  "s": "char:bharata-ramayana",
+  "o": "narr:rama-ashvamedha",
+  "old": "VR (CE) 7.82.6",
+  "new": "VR (CE) 7.82.16",
+  "quote": "suvarṇakoṭyo bahulā hiraṇyasya śatottarāḥ agrato bharataḥ kṛtvā gacchatv agre mahāmatiḥ",
+  "matched": "bharataḥ"
+ },
+ {
+  "id": "epic:r2-612",
+  "s": "char:vasishtha",
+  "o": "narr:rama-ashvamedha",
+  "old": "VR (CE) 7.82.6",
+  "new": "VR (CE) 7.82.2",
+  "quote": "vasiṣṭhaṃ vāmadevaṃ ca jābālim atha kaśyapam dvijāṃś ca sarvapravarān aśvamedhapuraskṛtān"
+ },
+ {
+  "id": "epic:r2-613",
+  "s": "char:valmiki",
+  "o": "narr:rama-ashvamedha",
+  "old": "VR (CE) 7.82.6",
+  "new": "VR (CE) 7.84.1",
+  "quote": "vartamāne tathābhūte yajñe paramake 'dbhute saśiṣya ājagāmāśu vālmīkir munipuṃgavaḥ"
+ },
+ {
+  "id": "epic:r2-614",
+  "s": "char:lava",
+  "o": "narr:rama-ashvamedha",
+  "old": "VR (CE) 7.82.6",
+  "new": "VR (CE) 7.85.14",
+  "quote": "dīyamānaṃ suvarṇaṃ tan nāgṛhṇītāṃ kuśīlavau ūcatuś ca mahātmānau kim aneneti vismitau",
+  "matched": "kuśīlavau"
+ },
+ {
+  "id": "epic:r2-615",
+  "s": "char:kusha",
+  "o": "narr:rama-ashvamedha",
+  "old": "VR (CE) 7.82.6",
+  "new": "VR (CE) 7.85.14",
+  "quote": "dīyamānaṃ suvarṇaṃ tan nāgṛhṇītāṃ kuśīlavau ūcatuś ca mahātmānau kim aneneti vismitau",
+  "matched": "kuśīlavau"
+ }
+]

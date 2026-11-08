@@ -1036,8 +1036,8 @@
  {
   "id": "disc:legend-vs-fabric",
   "kicker": "Temples",
-  "title": "41 of the 67 temples with founding legends stand in buildings dated after 1500 CE",
-  "body": "Of the 67 temples in the atlas whose tradition gives a founding story, 41 stand in a main building dated after 1500 CE (counting the surviving structure, or the latest construction where a site was rebuilt; renovations do not count) — among them Kāśī Viśvanātha temple (1780), Kālīghāṭ temple (1798), Viṣṇupada temple (1787), Badrīnātha temple (1803). Across all 238 dated temples, 16 have a main building from before 600 CE by this rule, and several of those — Deogarh, Udayagiri, Bhitargaon, Tigawa — are monuments no longer in regular worship.\n\nMany of the places most central to living practice have been rebuilt repeatedly, while some of the oldest fabric survives where worship lapsed. The atlas therefore keeps two dates on every temple: the tradition’s and the building’s.",
+  "title": "43 of the 70 temples with founding legends stand in buildings dated after 1500 CE",
+  "body": "Of the 70 temples in the atlas whose tradition gives a founding story, 43 stand in a main building dated after 1500 CE (counting the surviving structure, or the latest construction where a site was rebuilt; renovations do not count) — among them Kāśī Viśvanātha temple (1780), Kālīghāṭ temple (1798), Viṣṇupada temple (1787), Badrīnātha temple (1803). Across all 238 dated temples, 16 have a main building from before 600 CE by this rule, and several of those — Deogarh, Udayagiri, Bhitargaon, Tigawa — are monuments no longer in regular worship.\n\nMany of the places most central to living practice have been rebuilt repeatedly, while some of the oldest fabric survives where worship lapsed. The atlas therefore keeps two dates on every temple: the tradition’s and the building’s.",
   "entities": [
    "temple:kashi-vishwanath",
    "temple:somnath",
@@ -1248,8 +1248,8 @@
  {
   "id": "disc:onam-mayon",
   "kicker": "Living heritage",
-  "title": "In the oldest Tamil poem that names it, Ōṇam is the festival of Māyōṉ — not of Mahābali",
-  "body": "The Caṅkam poem Maduraikkāñci (lines 590–591) calls Ōṇam the festival of Māyōṉ, the dark god of the Tamil landscapes later identified with Viṣṇu. The story most Keralites tell today — the return of the generous king Mahābali, sent below by Vāmana — is the festival’s later and now dominant tradition.\n\nThe graph keeps both: an early textual attestation of the festival’s god, and the living association with Bali, each with its own evidence class.",
+  "title": "The oldest Tamil reference to Ōṇam makes it Māyōṉ’s festival, in Madurai",
+  "body": "The Caṅkam poem Maduraikkāñci (lines 590–591), describing Pāṇḍya Madurai, calls Ōṇam the festival of Māyōṉ “who overcame the crowding asuras” — the dark god of the Tamil landscapes later identified with Viṣṇu. The poem names no Bali, though a Māyōṉ who defeats asuras can be read as Vāmana overcoming Bali, and Tiruvōṇam is Vāmana’s birth-asterism. The story most Keralites tell today — the yearly return of the generous king Mahābali — is the festival’s dominant living tradition.\n\nThe graph keeps both: the early textual attestation of the festival’s god, and the living association with Bali, each with its own evidence class.",
   "entities": [
    "trad:onam",
    "deity:mayon",
@@ -1263,7 +1263,7 @@
    "regional:r2-95"
   ],
   "confidence": "medium",
-  "caveat": "The date of the Maduraikkāñci is itself disputed, and a single poem does not show what the festival meant everywhere; the Mahābali association is recorded as tradition (class 6), not as a later invention.",
+  "caveat": "The date of the Maduraikkāñci is itself disputed, and a poem about Madurai does not show what the festival meant elsewhere. It neither names nor excludes Bali; the Mahābali association is recorded as tradition (class 6), and nothing here shows it to be a later invention.",
   "sources": [
    {
     "source": "src:maduraikkanci-pm",
@@ -1280,7 +1280,7 @@
   "id": "disc:holi-two-stories",
   "kicker": "Living heritage",
   "title": "One Purāṇic passage already gives Holī two origin stories",
-  "body": "Nārada Purāṇa 1.124 describes the Holī rite and names Holikā, the demoness who tried to burn the child Prahlāda, as the figure whose burning it re-enacts; the same passage also ties the night to Śiva burning Kāma. A Bhaviṣyottara text quoted by the medieval digest-writer Hemādri gives a third figure, the ogress Ḍhauṇḍhā.\n\nThe festival’s explanations were plural from the start of the textual record, and the graph links each one to the passage that gives it.",
+  "body": "Nārada Purāṇa 1.124 describes the Holī rite and names Holikā, the demoness who tried to burn the child Prahlāda, as the figure whose burning it re-enacts; the same passage also ties the night to Śiva burning Kāma. A Bhaviṣyottara text quoted by the medieval digest-writer Hemādri gives a third figure, the ogress Ḍhauṇḍhā.\n\nThe festival’s explanations were plural as soon as texts explain it, and the graph links each one to the passage that gives it.",
   "entities": [
    "trad:holi",
    "narr:holika-burning",
@@ -1298,7 +1298,7 @@
    "regional:r2-36"
   ],
   "confidence": "high",
-  "caveat": "The Nārada Purāṇa is late and layered, so the passage dates the explanation only loosely; it does not date the festival, which may be older than any text that explains it.",
+  "caveat": "The Nārada Purāṇa is late and layered, so the passage dates the explanation only loosely. The earliest references to Holākā that Kane lists (the Pūrvamīmāṃsā’s Holākādhikaraṇa, the Kāṭhaka Gṛhya) give no origin story at all; the festival may be older than any text that explains it.",
   "sources": [
    {
     "source": "src:gretil",
@@ -1329,8 +1329,8 @@
  {
   "id": "disc:kalidasa-source",
   "kicker": "Literary history",
-  "title": "Kālidāsa names his source: the Raghuvaṃśa points to Vālmīki’s Rāmāyaṇa",
-  "body": "Cantos 10–15 of the Raghuvaṃśa retell the Rāma story, and at 15.63–64 the poem names Vālmīki’s work as the account it follows. It is one of the earliest explicit acknowledgements of the Vālmīki Rāmāyaṇa by a datable author.\n\nWith the Aihole inscription of 634 CE, which names Kālidāsa, it brackets the Rāmāyaṇa’s standing as a classic in the mid-first millennium.",
+  "title": "The Raghuvaṃśa names Vālmīki’s Rāmāyaṇa",
+  "body": "Cantos 10–15 of Kālidāsa’s Raghuvaṃśa retell the Rāma story. At 15.63–64, inside the story, Rāma’s sons Kuśa and Lava, urged by their teacher, sing “the Rāmāyaṇa first composed by Prācetasa” — Vālmīki; at 1.4 the poet thanks the “earlier poets” who opened the way. That these cantos follow Vālmīki is an inference from the retelling, but the poem knows his work by name.\n\nWith the Aihole inscription of 634 CE, which names Kālidāsa, it brackets the Rāmāyaṇa’s standing as a classic in the mid-first millennium.",
   "entities": [
    "text:raghuvamsha",
    "text:valmiki-ramayana",
@@ -1343,7 +1343,7 @@
    "material:333"
   ],
   "confidence": "high",
-  "caveat": "Kālidāsa’s own date is disputed (usually c. 4th–5th c. CE); the citation shows the text he knew existed, not which recension it was.",
+  "caveat": "The naming is an event in the narrative, not the poet’s statement of his source, and Aśvaghoṣa’s Buddhacarita (1.43, Vālmīki “first created verse”) is an earlier witness to Vālmīki’s fame. Kālidāsa’s own date is disputed (usually c. 4th–5th c. CE); the verses show the text he knew existed, not which recension it was.",
   "sources": [
    {
     "source": "src:gretil-raghuvamsha",
@@ -1590,7 +1590,7 @@
  {
   "id": "disc:varuna-mount",
   "kicker": "Iconography",
-  "title": "The two oldest image manuals disagree on Varuṇa’s mount",
+  "title": "Two early image manuals disagree on Varuṇa’s mount",
   "body": "Varāhamihira’s Bṛhat Saṃhitā (6th c.) and the Agni Purāṇa’s image chapters agree closely on many prescriptions — the eight-armed Viṣṇu’s weapons almost word for word — but give Varuṇa different mounts: a goose in one, the sea-creature makara in the other.\n\nIconography was prescribed by texts, and the texts themselves varied; the comparison table sets them side by side.",
   "entities": [
    "deity:varuna",
@@ -1601,7 +1601,7 @@
    "iconography:280"
   ],
   "confidence": "medium",
-  "caveat": "Both texts are layered and their image chapters are hard to date; images in stone follow neither text consistently.",
+  "caveat": "Both texts are layered and their image chapters are hard to date; other early prescriptions (the Viṣṇudharmottara, the Matsya Purāṇa) are not compared here, so nothing is claimed about which manual is oldest. Images in stone follow neither text consistently.",
   "sources": [
    {
     "source": "src:ap-gretil",
@@ -1628,8 +1628,8 @@
    "material:r2-468",
    "material:267"
   ],
-  "confidence": "high",
-  "caveat": "A collection catalogue dates the manuscript; older manuscripts may survive in collections not yet catalogued online.",
+  "confidence": "medium",
+  "caveat": "The 11th-century date is the private collection’s own catalogue claim and has not been checked against the Nepalese (NGMCP) or Cambridge holdings; older manuscripts may survive in collections not yet catalogued online.",
   "sources": [
    {
     "source": "src:schoyen-collection",
@@ -1650,7 +1650,7 @@
   "id": "disc:network",
   "kicker": "Network analysis",
   "title": "Rāma and Sītā are attested in more distinct texts in this graph than any deity",
-  "body": "Counting the distinct texts in which a figure is attested — directly, or through the passage a class-1 assertion cites — as on every profile page, Rāma (23), Sītā (22) and Kṛṣṇa (20) lead; Śiva and Viṣṇu are the strongest bridges in the network (highest betweenness), connecting otherwise separate corpora, temples and inscriptions.\n\nNarrative figures travel across languages and religions — Hindu, Jain, Buddhist, Southeast Asian — where a deity’s cult is more often carried by temples and inscriptions than by retellings.",
+  "body": "Counting the distinct texts in which a figure is attested — directly, or through the passage a class-1 assertion cites — as on every profile page, Rāma (39), Sītā (26) and Kṛṣṇa (30) lead; Śiva and Viṣṇu are the strongest bridges in the network (highest betweenness), connecting otherwise separate corpora, temples and inscriptions.\n\nNarrative figures travel across languages and religions — Hindu, Jain, Buddhist, Southeast Asian — where a deity’s cult is more often carried by temples and inscriptions than by retellings.",
   "entities": [
    "char:rama",
    "char:sita",

@@ -341,5 +341,25 @@
   "publisher": "The Schøyen Collection, Oslo and London",
   "url": "https://www.schoyencollection.com/",
   "urlChecked": true
+ },
+ {
+  "agent": "material",
+  "id": "src:mandal-ratnagar-2007",
+  "type": "scholarly-book",
+  "title": "Ayodhya: Archaeology after Excavation",
+  "author": "D. Mandal and Shereen Ratnagar",
+  "year": "2007",
+  "publisher": "Tulika Books, New Delhi",
+  "notes": "Cited as the published critique of the ASI report; not opened for this project. Bibliographic details from the verification report and recall."
+ },
+ {
+  "agent": "material",
+  "id": "src:varma-menon-2010",
+  "type": "journal-article",
+  "title": "Was There a Temple under the Babri Masjid? Reading the Archaeological “Evidence”",
+  "author": "Supriya Varma and Jaya Menon",
+  "year": "2010",
+  "publisher": "Economic and Political Weekly 45.50",
+  "notes": "Written by two archaeologists who observed the 2003 excavation; not opened for this project."
  }
 ]

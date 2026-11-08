@@ -8079,7 +8079,7 @@
    "dānava",
    "architect"
   ],
-  "summary": "Dānava architect who builds the Pāṇḍavas’ assembly hall in gratitude for being spared in the Khāṇḍava fire; in the Rāmāyaṇa’s Uttarakāṇḍa he is the father of Mandodarī.",
+  "summary": "Asura (dānava) master-builder and magician: he builds the three cities of Tripura, which Śiva burns (the Matsya and Śiva Purāṇas let him survive); in the Mahābhārata he builds the Pāṇḍavas’ assembly hall in gratitude for being spared in the Khāṇḍava fire; in the Rāmāyaṇa’s Uttarakāṇḍa he is the father of Mandodarī.",
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
@@ -8096,13 +8096,43 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Mayasura"
+   },
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 8.24.21–23",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b08/b08c024.htm"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 129.2–27; 140.75–78",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 7.10.53–59",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.12",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%A8"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
   "limits": "Treated as one figure because both epics call him a daitya/dānava architect named Maya; that the texts intend the same being is a reasonable but traditional identification.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "aliases": [
+   "Maya (the asura architect)",
+   "Mayāsura",
+   "Maya Dānava"
+  ],
+  "details": "Merged in verification round 2 with the Purāṇa agent’s record char:maya-asura, which described the same figure."
  },
  {
   "id": "char:kaliya",

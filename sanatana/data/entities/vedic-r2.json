@@ -7585,7 +7585,11 @@
   ],
   "confidence": "low",
   "status": "reference-checked",
-  "agent": "vedic"
+  "agent": "vedic",
+  "aliases": [
+   "Amṛtanāda Upaniṣad"
+  ],
+  "details": "The content described here is that of the text usually called the Amṛtanāda Upaniṣad (Deussen’s “Amṛtabindu”); it is distinct from the Brahmabindu, which some lists, including the Muktikā, call Amṛtabindu."
  },
  {
   "id": "text:hamsa-upanishad",

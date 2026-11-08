@@ -1,4 +1,38 @@
 id,type,title,author,year,publisher,url
+src:gretil-raghuvamsha,primary-text,"Kālidāsa: Raghuvaṃśa (electronic text, GRETIL)",Kālidāsa,,"GRETIL, SUB Göttingen",https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt
+src:gretil-kumarasambhava,primary-text,"Kālidāsa: Kumārasaṃbhava, cantos 1–8 (electronic text, GRETIL)",Kālidāsa,,"GRETIL, SUB Göttingen",https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-kumArasaMbhava.txt
+src:gretil-meghaduta,primary-text,"Kālidāsa: Meghadūta (electronic text, GRETIL)",Kālidāsa,,"GRETIL, SUB Göttingen",https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-meghadUta.txt
+src:gretil-abhijnanashakuntala,primary-text,"Kālidāsa: Abhijñānaśakuntala (electronic text, GRETIL)",Kālidāsa,,"GRETIL, SUB Göttingen",https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-abhijJAnazakuntala.txt
+src:gretil-kiratarjuniya,primary-text,"Bhāravi: Kirātārjunīya (electronic text, GRETIL)",Bhāravi,,"GRETIL, SUB Göttingen",https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAravi-kirAtArjunIya.txt
+src:gretil-bhattikavya,primary-text,"Bhaṭṭi: Rāvaṇavadha (Bhaṭṭikāvya) (electronic text, GRETIL)",Bhaṭṭi,,"GRETIL, SUB Göttingen",https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhaTTi-rAvaNavadha.txt
+src:gretil-shishupalavadha,primary-text,"Māgha: Śiśupālavadha (electronic text, GRETIL)",Māgha,,"GRETIL, SUB Göttingen",https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mAgha-zizupAlavadha.txt
+src:gretil-bharatamanjari,primary-text,"Kṣemendra: Bhāratamañjarī, parvans 6–19 (electronic text, GRETIL)",Kṣemendra,,"GRETIL, SUB Göttingen",https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kSemendra-bhAratamaJjarI-6-19.txt
+src:gretil-venisamhara,primary-text,"Bhaṭṭa Nārāyaṇa: Veṇīsaṃhāra (electronic text, GRETIL)",Bhaṭṭa Nārāyaṇa,,"GRETIL, SUB Göttingen",https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhaTTanArAyaNa-veNIsaMhAra.txt
+src:gretil-dutavakya,primary-text,"Bhāsa (attrib.): Dūtavākya (electronic text, GRETIL)",Bhāsa (attributed),,"GRETIL, SUB Göttingen",https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAsa-dUtavAkya.txt
+src:gretil-svapnavasavadatta,primary-text,"Bhāsa (attrib.): Svapnavāsavadatta (electronic text, GRETIL)",Bhāsa (attributed),,"GRETIL, SUB Göttingen",https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAsa-svapnavAsavadatta.txt
+src:gretil-harshacarita,primary-text,"Bāṇa: Harṣacarita (electronic text, GRETIL)",Bāṇabhaṭṭa,,"GRETIL, SUB Göttingen",https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bANa-harSacarita.txt
+src:gretil-vamana-kavyalankarasutra,primary-text,"Vāmana: Kāvyālaṃkārasūtra with vṛtti (electronic text, GRETIL)",Vāmana,,"GRETIL, SUB Göttingen",https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_vAmana-kAvyAlaMkArasUtra.txt
+src:bhasa-project-wuerzburg,primary-text,Bhāsa Projekt Würzburg: e-texts of the Trivandrum plays with Sanskrit and Prakrit indices,Matthias Ahlborn,2004–2007,"Lehrstuhl für Indologie, Universität Würzburg",https://www.bhasa.indologie.uni-wuerzburg.de/
+src:ganapati-sastri-1912,primary-text,Editio princeps of the thirteen “Bhāsa” plays (Trivandrum Sanskrit Series),T. Gaṇapati Śāstrī (ed.),1912–1915,Trivandrum: Travancore Government,
+src:keith-1924,scholarly-book,"The Sanskrit Drama in its Origin, Development, Theory and Practice",A. Berriedale Keith,1924,Oxford: Clarendon Press,
+src:keith-1928,scholarly-book,A History of Sanskrit Literature,A. Berriedale Keith,1928,Oxford: Clarendon Press,
+src:warder-ikl,scholarly-book,Indian Kāvya Literature (8 vols.),A. K. Warder,1972–2011,Delhi: Motilal Banarsidass,
+src:de-dasgupta-1947,scholarly-book,"A History of Sanskrit Literature: Classical Period, vol. 1",S. N. Dasgupta and S. K. De,1947,Calcutta: University of Calcutta,
+src:lienhard-1984,scholarly-book,A History of Classical Poetry: Sanskrit – Pali – Prakrit (A History of Indian Literature III.1),Siegfried Lienhard,1984,Wiesbaden: Otto Harrassowitz,
+src:tieken-1993,journal-article,The So-called Trivandrum Plays Attributed to Bhāsa,Herman Tieken,1993,Wiener Zeitschrift für die Kunde Südasiens 37: 5–44,
+src:pusalker-1940,scholarly-book,Bhāsa — A Study,A. D. Pusalker,1940,Lahore: Mehar Chand Lachhman Das,
+src:haksar-1993,translation,The Shattered Thigh and Other Mahābhārata Plays of Bhāsa,A. N. D. Haksar (trans.),1993,New Delhi: Penguin Books India,
+src:pollock-2007-uttararamacarita,translation,Rāma’s Last Act by Bhavabhūti (Clay Sanskrit Library),Sheldon Pollock (trans.),2007,New York: New York University Press & JJC Foundation,
+src:vasudeva-2006-shakuntala,translation,The Recognition of Shakúntala by Kālidāsa (Clay Sanskrit Library),Somadeva Vasudeva (trans.),2006,New York: New York University Press & JJC Foundation,
+src:torzsok-2006,translation,Rama Beyond Price by Murāri (Clay Sanskrit Library),Judit Törzsök (trans.),2006,New York: New York University Press & JJC Foundation,
+src:handiqui-1956,translation,"Naiṣadhacarita of Śrīharṣa, translated with critical notes",K. K. Handiqui,1956,Poona: Deccan College (first ed. Lahore 1934),
+src:peterson-2003,scholarly-book,Design and Rhetoric in a Sanskrit Court Epic: The Kirātārjunīya of Bhāravi,Indira Viswanathan Peterson,2003,Albany: State University of New York Press,
+src:fallon-2009,translation,Bhatti’s Poem: The Death of Rávana (Clay Sanskrit Library),Oliver Fallon (trans.),2009,New York: New York University Press & JJC Foundation,
+src:smith-2005-kumarasambhava,translation,The Birth of Kumára by Kālidāsa (Clay Sanskrit Library),David Smith (trans.),2005,New York: New York University Press & JJC Foundation,
+src:mallinson-2006,translation,"Messenger Poems by Kālidāsa, Dhoyī and Rūpa Gosvāmin (Clay Sanskrit Library)",James Mallinson (trans.),2006,New York: New York University Press & JJC Foundation,
+src:slaje-1994,scholarly-book,Vom Mokṣopāya-Śāstra zum Yogavāsiṣṭha-Mahārāmāyaṇa,Walter Slaje,1994,Wien: Verlag der Österreichischen Akademie der Wissenschaften,
+src:raghavan-1961,scholarly-book,Some Old Lost Rāma Plays,V. Raghavan,1961,Annamalainagar: Annamalai University,
+src:dundas-2017,translation,The Killing of Shishupala by Magha (Murty Classical Library of India),Paul Dundas (trans.),2017,"Cambridge, Mass.: Harvard University Press",
 src:gretil-mbh-ce,primary-text,"Mahābhārata: constituted text of the Critical Edition with star passages (electronic text, 18 parvan files)","Bhandarkar Oriental Research Institute (e-text); data entry Muneo Tokunaga et al., revised by John Smith",1999 (e-text),"GRETIL, SUB Göttingen",https://gretil.sub.uni-goettingen.de/gretil.html#MBh
 src:gretil-vr-ce,primary-text,Vālmīki: Rāmāyaṇa (electronic text of the Baroda Critical Edition; John Smith’s Rāmāyaṇa page),Data entry Muneo Tokunaga; revision and contribution John Smith; TEI conversion GRETIL,2020 (version),"GRETIL, SUB Göttingen",https://gretil.sub.uni-goettingen.de/gretil/corpustei/sa_rAmAyaNa.xml
 src:gretil-hv-ce,primary-text,Harivaṃśa: constituted text with star passages (electronic text),"Based on the edition of P. L. Vaidya; input by A. Agarwala, J. W. Bass, P. Bisschop, H. Brinkhaus, J. Brockington, A. Couture, J. Fitzgerald et al.",2020 (version),"GRETIL, SUB Göttingen",https://gretil.sub.uni-goettingen.de/gretil/corpustei/sa_harivaMza.xml
@@ -32,6 +66,76 @@ src:gretil-ashtadhyayi-etext,primary-text,"Pāṇini: Aṣṭādhyāyī (electro
 src:gretil-mahabhashya-etext,primary-text,"Patañjali: Vyākaraṇa-Mahābhāṣya (electronic text, GRETIL; references to Kielhorn’s edition)",GRETIL contributors,ongoing,"GRETIL, SUB Göttingen",https://gretil.sub.uni-goettingen.de/gretil/corpustei/sa_pataJjali-vyAkaraNamahAbhASya.xml
 src:raychaudhuri-1920,scholarly-book,Materials for the Study of the Early History of the Vaishnava Sect,Hemchandra Raychaudhuri,1920,University of Calcutta,
 src:sankalia-1973,scholarly-book,Ramayana: Myth or Reality?,H. D. Sankalia,1973,"People’s Publishing House, New Delhi",
+src:bs-gretil,primary-text,Bṛhatsaṃhitā of Varāhamihira (GRETIL e-text),Varāhamihira; e-text by Michio Yano and Mizue Sugita,1998 (version 4.3); TEI 2020,"GRETIL, SUB Göttingen",https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_varAhamihira-bRhatsaMhitA.txt
+src:kern-bs-1870,translation,"The Bṛhat Saṃhitā; or, Complete System of Natural Astrology of Varāha-Mihira (translation)",H. Kern,1870–1875,"Journal of the Royal Asiatic Society, new series, vols. 4–7",
+src:bhat-1981,translation,"Varāhamihira’s Bṛhat Saṁhitā, with English Translation, Exhaustive Notes and Literary Comments (2 vols.)",M. Ramakrishna Bhat,1981–1982 (2nd ed. 1996),"Motilal Banarsidass, Delhi",
+src:shastri-am-1969,scholarly-book,India as Seen in the Bṛhatsaṁhitā of Varāhamihira,Ajay Mitra Shastri,1969,"Motilal Banarsidass, Delhi",
+src:ap-gretil,primary-text,Agnipurāṇa (GRETIL e-text),ed. Rajendralal Mitra; input by Jun Takashima,1870–1879 (edition); 2001 (input),"Asiatic Society of Bengal, Bibliotheca Indica 65 (edition); GRETIL, SUB Göttingen (e-text)",https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_agnipurANa.txt
+src:mkp-gretil,primary-text,"Mārkaṇḍeyapurāṇa, adhyāyas 1–93 (GRETIL e-text; includes the Devīmāhātmya as MkP 81–93)",,,"GRETIL, SUB Göttingen",https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt
+src:todala-gretil,primary-text,Toḍalatantra (GRETIL e-text),ed. Gopinath Kaviraj,1970 (edition),"Varanaseya Sanskrit Vishvavidyalaya, Tantrasaṃgraha vol. 2 (edition); GRETIL (e-text)",https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_toDalatantra.txt
+src:citralakshana-gretil,primary-text,Citralakṣaṇa of Nagnajit (GRETIL e-text),ed. Asoke Chatterjee Sastri,1987 (edition),"Asiatic Society, Calcutta, Bibliotheca Indica 315 (edition); Digital Sanskrit Buddhist Canon / GRETIL (e-text)",https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_nagnajit-citralakSaNam.txt
+src:dagens-1994,translation,"Mayamata: An Indian Treatise on Housing, Architecture and Iconography (Sanskrit text and English translation, 2 vols.)",Bruno Dagens,1994 (first English ed. 1985),"Indira Gandhi National Centre for the Arts and Motilal Banarsidass, New Delhi",https://archive.org/details/GwHQ_mayamata-by-bruno-dagens-vol.-1-motilal-banarasi-das
+src:ganapati-sastri-1919,primary-text,The Mayamata of Mayamuni (Trivandrum Sanskrit Series 65),T. Ganapati Sastri (ed.),1919,"Government Press, Trivandrum",https://archive.org/details/in.ernet.dli.2015.552465
+src:acharya-1933,translation,"Architecture of Mānasāra (Mānasāra Series vols. III–V: text, translation and illustrations)",Prasanna Kumar Acharya,1933–1934,"Oxford University Press, London",https://archive.org/details/in.gov.ignca.22949
+src:ganapati-sastri-1924,primary-text,Samarāṅgaṇa-Sūtradhāra of Mahārājādhirāja Bhojadeva (Gaekwad’s Oriental Series 25 and 32),T. Ganapati Sastri (ed.),1924–1925,"Central Library, Baroda",https://archive.org/details/in.ernet.dli.2015.345259
+src:mankad-1950,primary-text,Aparājitapṛcchā of Bhuvanadeva (Gaekwad’s Oriental Series 115),Popatbhai Ambashankar Mankad (ed.),1950,"Oriental Institute, Baroda",
+src:boner-sarma-1966,translation,Śilpa Prakāśa: Medieval Orissan Sanskrit Text on Temple Architecture by Rāmacandra Kaulācāra,Alice Boner and Sadāśiva Rath Śarmā,1966,"E. J. Brill, Leiden",https://archive.org/details/silpaprakasa0000rama
+src:kramrisch-1946,scholarly-book,The Hindu Temple (2 vols.),Stella Kramrisch,1946,University of Calcutta,https://archive.org/details/mefh_the-hindu-temple-vol-1-by-stella-kramrisch-1946-calcutta-university-of-calcutta
+src:meister-dhaky-1983,scholarly-book,Encyclopaedia of Indian Temple Architecture (multi-volume: South India and North India series),"Michael W. Meister, M. A. Dhaky and Krishna Deva (eds.)",1983–,"American Institute of Indian Studies, New Delhi / University of Pennsylvania Press and Princeton University Press",
+src:dhaky-1977,scholarly-book,The Indian Temple Forms in Karṇāṭa Inscriptions and Architecture,M. A. Dhaky,1977,"Abhinav Publications, New Delhi",
+src:shah-1958,primary-text,"Viṣṇudharmottara-Purāṇa, Third Khaṇḍa (critical edition; Gaekwad’s Oriental Series 130 and 137)",Priyabala Shah (ed.),1958–1961,"Oriental Institute, Baroda",https://archive.org/details/in.ernet.dli.2015.127780
+src:bhattacharyya-1963,scholarly-book,"The Canons of Indian Art, or A Study on Vāstuvidyā",Tarapada Bhattacharyya,1963 (2nd ed.),"Firma K. L. Mukhopadhyay, Calcutta",
+src:kinsley-1997,scholarly-book,Tantric Visions of the Divine Feminine: The Ten Mahāvidyās,David Kinsley,1997,"University of California Press, Berkeley",
+src:bolon-1992,scholarly-book,Forms of the Goddess Lajjā Gaurī in Indian Art,Carol Radcliffe Bolon,1992,"Pennsylvania State University Press, University Park",
+src:getty-1936,scholarly-book,Gaṇeśa: A Monograph on the Elephant-Faced God,Alice Getty,1936,"Clarendon Press, Oxford",
+src:brown-1991,scholarly-book,Ganesh: Studies of an Asian God,Robert L. Brown (ed.),1991,"State University of New York Press, Albany",
+src:harle-1974,scholarly-book,Gupta Sculpture: Indian Sculpture of the Fourth to the Sixth Centuries A.D.,J. C. Harle,1974,"Clarendon Press, Oxford",
+src:sivaramamurti-1974,scholarly-book,"Naṭarāja in Art, Thought and Literature",C. Sivaramamurti,1974,"National Museum, New Delhi",
+src:coomaraswamy-1918,scholarly-book,The Dance of Śiva: Fourteen Indian Essays,Ananda K. Coomaraswamy,1918,"The Sunwise Turn, New York",
+src:ghosh-1950,translation,"The Nāṭyaśāstra ascribed to Bharata-Muni, vol. I (chapters I–XXVII)",Manomohan Ghosh (trans.),1950,"Royal Asiatic Society of Bengal, Calcutta",
+src:sarkar-1978,scholarly-book,An Architectural Survey of Temples of Kerala,H. Sarkar,1978,"Archaeological Survey of India, New Delhi",
+src:jessup-2004,scholarly-book,Art and Architecture of Cambodia,Helen Ibbitson Jessup,2004,"Thames & Hudson, London",
+src:guillon-2001,scholarly-book,"Cham Art: Treasures from the Dà Nẵng Museum, Vietnam",Emmanuel Guillon,2001,"River Books, Bangkok",
+src:pal-1986,catalogue,"Indian Sculpture, vol. 1: Circa 500 B.C.–A.D. 700 (Los Angeles County Museum of Art collection catalogue)",Pratapaditya Pal,1986,Los Angeles County Museum of Art and University of California Press,
+src:lhernault-1978,scholarly-book,L’iconographie de Subrahmaṇya au Tamilnad,Françoise L’Hernault,1978,"Institut français d’indologie, Pondichéry",
+src:jeste-1973,scholarly-book,Arts in the Purāṇas (study),Meena Devadatta Jeste,1973,"thesis, reproduced online by Wisdom Library",https://www.wisdomlib.org/hinduism/essay/arts-in-the-puranas-study/d/doc1460324.html
+src:gnoli-1956,epigraphic-corpus,"Nepalese Inscriptions in Gupta Characters, Part I (Serie Orientale Roma X)",Raniero Gnoli,1956,"IsMEO, Rome",
+src:luders-1912,epigraphic-corpus,A List of Brahmi Inscriptions from the Earliest Times to about A.D. 400 with the Exception of those of Asoka (Appendix to Epigraphia Indica vol. X),Heinrich Lüders,1912,"Archaeological Survey of India, Calcutta",
+src:vogel-1910,catalogue,Catalogue of the Archaeological Museum at Mathura,J. Ph. Vogel,1910,"Government Press, Allahabad",
+src:allan-1914,catalogue,"Catalogue of the Coins of the Gupta Dynasties and of Śaśāṅka, King of Gauḍa (Catalogue of the Indian Coins in the British Museum)",John Allan,1914,"British Museum, London",https://archive.org/details/in.ernet.dli.2015.63344
+src:kielhorn-ei8-junagadh,epigraphic-corpus,Junagadh Rock Inscription of Rudradaman; the year 72 (Epigraphia Indica vol. VIII),F. Kielhorn,1905–06,Archaeological Survey of India,
+src:kielhorn-ei8-talagunda,epigraphic-corpus,Talgunda Inscription of Kakusthavarman (Epigraphia Indica vol. VIII),F. Kielhorn,1905–06,Archaeological Survey of India,
+src:sii-1,epigraphic-corpus,"South-Indian Inscriptions, Tamil and Sanskrit, vol. I",E. Hultzsch,1890,"Government Press, Madras",
+src:sii-3,epigraphic-corpus,"South-Indian Inscriptions, vol. III: Miscellaneous Inscriptions from the Tamil Country (part III, 1920)",H. Krishna Sastri,1920,"Government Press, Madras",
+src:gopinatha-rao-ei15,epigraphic-corpus,"Anbil Plates of Sundara-Chola: The Fourth Year (Epigraphia Indica vol. XV, pp. 44–72)",T. A. Gopinatha Rao,1919–20,Archaeological Survey of India,
+src:kielhorn-ei1-khajuraho,epigraphic-corpus,"Inscriptions from Khajuraho (Epigraphia Indica vol. I, pp. 121–153)",F. Kielhorn,1892,Archaeological Survey of India,https://archive.org/details/in.ernet.dli.2015.69993
+src:vogel-1918,journal-article,"The Yūpa Inscriptions of King Mūlavarman, from Koetei (East Borneo)",J. Ph. Vogel,1918,"Bijdragen tot de Taal-, Land- en Volkenkunde 74, pp. 167–232",
+src:vogel-1925,journal-article,The Earliest Sanskrit Inscriptions of Java,J. Ph. Vogel,1925,"Publicaties van den Oudheidkundigen Dienst in Nederlandsch-Indië I, Batavia, pp. 15–35",
+src:coedes-dupont-1943,epigraphic-corpus,"Les inscriptions de Sdŏ̀k Kăk Thoṃ, Phnoṃ Sandak et Práḥ Vihār",George Cœdès and Pierre Dupont,1943,"Bulletin de l'École française d'Extrême-Orient 43, pp. 56–154",
+src:coedes-1956-vat-luong-kau,journal-article,"Études cambodgiennes, XL: Nouvelles données sur les origines du royaume khmèr, la stèle de Vàt Luong Kau près de Vàt Ph'u",George Cœdès,1956,"BEFEO 48(1), pp. 208–220",
+src:finot-1902,journal-article,"Notes d'épigraphie, I: deux nouvelles inscriptions de Bhadravarman Ier, roi de Champa",Louis Finot,1902,"BEFEO 2, pp. 185–191",
+src:de-casparis-1941,journal-article,Nogmaals de Sanskrit-inscriptie op de steen van Dinojo,J. G. de Casparis,1941,"Tijdschrift voor Indische Taal-, Land- en Volkenkunde 81, pp. 499–513",
+src:majumdar-1927-champa,scholarly-book,"Champa (Ancient Indian Colonies in the Far East, vol. I)",R. C. Majumdar,1927,"Punjab Sanskrit Book Depot, Lahore",
+src:rice-ec5,epigraphic-corpus,"Epigraphia Carnatica, vol. V: Inscriptions in the Hassan District",B. Lewis Rice,1902,"Mysore Government Central Press, Bangalore",https://archive.org/details/epigraphia_carnatica_vol5_mysouoft
+src:met-collection,catalogue,The Metropolitan Museum of Art — Collection API (Open Access),,,"The Metropolitan Museum of Art, New York",https://collectionapi.metmuseum.org/public/collection/v1/objects/
+src:aic-collection,catalogue,Art Institute of Chicago — Public API (collection data),,,Art Institute of Chicago,https://api.artic.edu/api/v1/artworks
+src:vam-collection,catalogue,Victoria and Albert Museum — Collections API,,,"Victoria and Albert Museum, London",https://api.vam.ac.uk/v2/
+src:bl-mewar-ramayana,institutional,Curator's perspective: accessing the Mewar Ramayana (British Library Asian and African studies blog),British Library,2014,"British Library, London",https://britishlibrary.typepad.co.uk/asian-and-african/2014/04/curators-perspective-accessing-the-mewar-ramayana.html
+src:asi-2003-ayodhya,excavation-report,Ayodhya: 2002–03 (report of the court-ordered excavation at the disputed site),"Archaeological Survey of India (excavation directed by B. R. Mani, later Hari Manjhi)",2003,"Archaeological Survey of India, New Delhi",
+src:lal-1993-sringaverapura,excavation-report,"Excavations at Śṛṅgaverapura (1977–86), vol. I (Memoirs of the Archaeological Survey of India 88)",B. B. Lal,1993,"Archaeological Survey of India, New Delhi",
+src:hartel-1993,excavation-report,Excavations at Sonkh: 2500 Years of a Town in Mathura District,Herbert Härtel,1993,"Dietrich Reimer Verlag, Berlin",
+src:joshi-1993,excavation-report,"Excavation at Bhagwanpura 1975–76 and Other Explorations and Excavations 1975–81 in Haryana, Jammu & Kashmir and Punjab (Memoirs of the Archaeological Survey of India 89)",J. P. Joshi,1993,"Archaeological Survey of India, New Delhi",
+src:sharma-1960-kausambi,excavation-report,The Excavations at Kauśāmbī (1957–59),G. R. Sharma,1960,"Institute of Archaeology, University of Allahabad",
+src:malleret-1959,excavation-report,L'Archéologie du delta du Mékong (4 vols),Louis Malleret,1959–1963,"École française d'Extrême-Orient, Paris",
+src:agrawala-1947-ahichchhatra,journal-article,"Terracotta Figurines of Ahichchhatra, District Bareilly, U.P.",V. S. Agrawala,1947–48,"Ancient India 4, pp. 104–179",
+src:losty-2008,scholarly-book,The Ramayana: Love and Valour in India's Great Epic — The Mewar Ramayana Manuscripts,J. P. Losty,2008,"British Library, London",
+src:seyller-1999,scholarly-book,Workshop and Patron in Mughal India: The Freer Rāmāyaṇa and Other Illustrated Manuscripts of ʿAbd al-Raḥīm,John Seyller,1999,"Artibus Asiae Supplementum 42, Zürich",
+src:goswamy-fischer-1992,scholarly-book,Pahari Masters: Court Painters of Northern India,B. N. Goswamy and Eberhard Fischer,1992,"Artibus Asiae Supplementum 38, Zürich",
+src:jaffer-ramayana-doha,catalogue,"Museum of Islamic Art, Doha — collection (Ramayana of Hamida Banu Begum)",,,Qatar Museums,https://www.mia.org.qa/
+src:allan-1936,catalogue,Catalogue of the Coins of Ancient India (Catalogue of the Indian Coins in the British Museum),John Allan,1936,"British Museum, London",
+src:schoyen-collection,catalogue,The Schøyen Collection — online catalogue,,,"The Schøyen Collection, Oslo and London",https://www.schoyencollection.com/
+src:mandal-ratnagar-2007,scholarly-book,Ayodhya: Archaeology after Excavation,D. Mandal and Shereen Ratnagar,2007,"Tulika Books, New Delhi",
+src:varma-menon-2010,journal-article,Was There a Temple under the Babri Masjid? Reading the Archaeological “Evidence”,Supriya Varma and Jaya Menon,2010,Economic and Political Weekly 45.50,
 src:salomon-1998,scholarly-book,"Indian Epigraphy: A Guide to the Study of Inscriptions in Sanskrit, Prakrit, and the Other Indo-Aryan Languages",Richard Salomon,1998,"Oxford University Press, New York",
 src:fleet-1888,epigraphic-corpus,"Corpus Inscriptionum Indicarum, vol. III: Inscriptions of the Early Gupta Kings and their Successors",John Faithfull Fleet,1888,"Superintendent of Government Printing, Calcutta",
 src:luders-janert-1961,epigraphic-corpus,Mathurā Inscriptions: Unpublished Papers,Heinrich Lüders; ed. Klaus Ludwig Janert,1961,"Vandenhoeck & Ruprecht, Göttingen (Abhandlungen der Akademie der Wissenschaften in Göttingen, Phil.-Hist. Kl., 3. Folge, Nr. 47)",
@@ -135,6 +239,24 @@ src:namami,institutional,National Mission for Manuscripts,National Mission for M
 src:museums-of-india,institutional,Museums of India — National Portal and Digital Repository,"Ministry of Culture, Government of India",ongoing,Government of India,https://www.museumsofindia.gov.in/
 src:wikipedia,reference,Wikipedia,Wikipedia contributors,ongoing,Wikimedia Foundation,https://en.wikipedia.org/
 src:wikimedia-commons,reference,Wikimedia Commons,Wikimedia contributors,ongoing,Wikimedia Foundation,https://commons.wikimedia.org/
+src:sa-wikisource,primary-text,Sanskrit Wikisource (विकिस्रोतः): Purāṇa e-texts (Śiva Purāṇa Rudrasaṃhitā and others),Wikisource contributors,ongoing,Wikimedia Foundation,https://sa.wikisource.org/
+src:hawley-1983,scholarly-book,"Krishna, the Butter Thief",John Stratton Hawley,1983,Princeton University Press,
+src:schweig-2005,scholarly-book,"Dance of Divine Love: The Rāsa Līlā of Krishna from the Bhāgavata Purāṇa, India's Classic Sacred Love Story",Graham M. Schweig,2005,Princeton University Press,
+src:thapan-1997,scholarly-book,Understanding Gaṇapati: Insights into the Dynamics of a Cult,Anita Raina Thapan,1997,"Manohar, New Delhi",
+src:winternitz-1898,journal-article,Gaṇeśa in the Mahābhārata,M. Winternitz,1898,"Journal of the Royal Asiatic Society (1898), pp. 380–384",
+src:jaini-1979,scholarly-book,The Jaina Path of Purification,Padmanabh S. Jaini,1979,University of California Press / Motilal Banarsidass,
+src:kirfel-1920,scholarly-book,Die Kosmographie der Inder nach den Quellen dargestellt,Willibald Kirfel,1920,"Kurt Schroeder, Bonn and Leipzig",
+src:gombrich-1975,scholarly-book,"Ancient Indian Cosmology (in C. Blacker and M. Loewe, eds., Ancient Cosmologies, pp. 110–142)",Richard F. Gombrich,1975,"George Allen & Unwin, London",
+src:neuss-2012,scholarly-book,Narmadāparikramā – Circumambulation of the Narmadā River: On the Tradition of a Unique Hindu Pilgrimage,Jürgen Neuss,2012,"Brill, Leiden (Brill's Indological Library 42)",
+src:jacques-1962,primary-text,"Gayā Māhātmya: édition critique, traduction française et introduction",Claude Jacques,1962,"Institut Français d'Indologie, Pondichéry",
+src:stietencron-1966,scholarly-book,Indische Sonnenpriester: Sāmba und die Śākadvīpīya-Brāhmaṇa,Heinrich von Stietencron,1966,"Otto Harrassowitz, Wiesbaden",
+src:sukthankar-1933,primary-text,"Prolegomena to the Ādiparvan (The Mahābhārata: For the First Time Critically Edited, vol. 1)",V. S. Sukthankar,1933,"Bhandarkar Oriental Research Institute, Poona",
+src:sohnen-schreiner-1989,scholarly-book,"Brahmapurāṇa: Summary of Contents, with Index of Names and Motifs (Purāṇa Research Publications Tübingen 2)",Renate Söhnen and Peter Schreiner,1989,"Otto Harrassowitz, Wiesbaden",
+src:rocher-1991-ganesha,scholarly-book,"Gaṇeśa's Rise to Prominence in Sanskrit Literature (in R. L. Brown, ed., Ganesh: Studies of an Asian God, pp. 69–88)",Ludo Rocher,1991,"State University of New York Press, Albany",
+src:krishan-1999,scholarly-book,Gaṇeśa: Unravelling an Enigma,Yuvraj Krishan,1999,"Motilal Banarsidass, Delhi",
+src:parry-1994,scholarly-book,Death in Banaras,Jonathan P. Parry,1994,Cambridge University Press,
+src:bailey-1995,translation,"Gaṇeśapurāṇa, Part I: Upāsanākhaṇḍa. Introduction, Translation, Notes and Index",Gregory Bailey,1995,"Otto Harrassowitz, Wiesbaden",
+src:bakker-1986,scholarly-book,Ayodhyā (Groningen Oriental Studies 1; with a critical edition of the Ayodhyāmāhātmya),Hans Bakker,1986,"Egbert Forsten, Groningen",
 src:pathak-vip-ce,primary-text,The Critical Edition of the Viṣṇupurāṇam,M. M. Pathak (ed.),1997–1999,"Oriental Institute, Vadodara",https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt
 src:hazra-upapuranas,scholarly-book,Studies in the Upapurāṇas (vol. I: Saura and Vaiṣṇava Upapurāṇas; vol. II: Śākta and Non-sectarian Upapurāṇas),R. C. Hazra,1958–1963,"Sanskrit College, Calcutta",
 src:pargiter-1913,scholarly-book,The Purana Text of the Dynasties of the Kali Age,F. E. Pargiter,1913,Oxford University Press,
@@ -174,6 +296,64 @@ src:banerjea-1956,scholarly-book,The Development of Hindu Iconography (2nd ed.),
 src:shukla-sarma-1976,primary-text,Āryabhaṭīya of Āryabhaṭa (critical edition with translation and notes),K. S. Shukla and K. V. Sarma,1976,"Indian National Science Academy, New Delhi",https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_AryabhaTa-AryabhaTIya.txt
 src:jena-1987,primary-text,The Narasiṃha Purāṇam,Siddheswar Jena (ed.),1987,"Nag Publishers, Delhi",https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_narasiMhapurANa.txt
 src:gupta-vamana-1967,primary-text,The Vāmana Purāṇa: Critical Edition,Anand Swarup Gupta (ed.),1967,"All India Kashiraj Trust, Varanasi",https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_vAmanapurANa1-69.txt
+src:kane-hds-5-1,scholarly-book,"History of Dharmaśāstra (Ancient and Mediaeval Religious and Civil Law), vol. V, part 1: Vratas, Utsavas and Kāla",P. V. Kane,1958,"Bhandarkar Oriental Research Institute, Poona",https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw
+src:vaudeville-1974,scholarly-book,"Kabīr, vol. 1",Charlotte Vaudeville,1974,"Clarendon Press, Oxford",
+src:hess-singh-1983,translation,The Bījak of Kabir,Linda Hess and Shukdev Singh (trans.),1983,"North Point Press, San Francisco",
+src:hawley-2005,scholarly-book,"Three Bhakti Voices: Mirabai, Surdas, and Kabir in Their Time and Ours",John Stratton Hawley,2005,"Oxford University Press, New Delhi",
+src:hawley-2015,scholarly-book,A Storm of Songs: India and the Idea of the Bhakti Movement,John Stratton Hawley,2015,"Harvard University Press, Cambridge, Mass.",
+src:callewaert-friedlander-1992,scholarly-book,The Life and Works of Raidās,Winand M. Callewaert and Peter G. Friedlander,1992,"Manohar, New Delhi",
+src:de-1961,scholarly-book,Early History of the Vaiṣṇava Faith and Movement in Bengal (2nd ed.),Sushil Kumar De,1961,"Firma K. L. Mukhopadhyay, Calcutta",
+src:haberman-2003,translation,The Bhaktirasāmṛtasindhu of Rūpa Gosvāmin,David L. Haberman (trans.),2003,"Indira Gandhi National Centre for the Arts and Motilal Banarsidass, New Delhi",
+src:mcdermott-2001,scholarly-book,Singing to the Goddess: Poems to Kālī and Umā from Bengal,Rachel Fell McDermott,2001,"Oxford University Press, New York",
+src:mcdermott-2011,scholarly-book,"Revelry, Rivalry, and Longing for the Goddesses of Bengal: The Fortunes of Hindu Festivals",Rachel Fell McDermott,2011,"Columbia University Press, New York",
+src:guha-thakurta-2015,scholarly-book,In the Name of the Goddess: The Durga Pujas of Contemporary Kolkata,Tapati Guha-Thakurta,2015,"Primus Books, Delhi",
+src:dimock-levertov-1967,translation,In Praise of Krishna: Songs from the Bengali,Edward C. Dimock Jr. and Denise Levertov (trans.),1967,"Doubleday, Garden City, N.Y.",
+src:klaiman-1984,translation,Singing the Glory of Lord Krishna: The Śrīkṛṣṇakīrtana,M. H. Klaiman (trans.),1984,"Scholars Press, Chico, Calif.",
+src:mansinha-1962,scholarly-book,History of Oriya Literature,Mayadhar Mansinha,1962,"Sahitya Akademi, New Delhi",
+src:ranade-1933,scholarly-book,"Indian Mysticism: Mysticism in Maharashtra (History of Indian Philosophy, vol. VII)",R. D. Ranade,1933,"Aryabhushan Press, Poona",
+src:zelliot-berntsen-1988,scholarly-book,The Experience of Hinduism: Essays on Religion in Maharashtra,Eleanor Zelliot and Maxine Berntsen (eds.),1988,"State University of New York Press, Albany",
+src:williams-2001,scholarly-book,An Introduction to Swaminarayan Hinduism,Raymond Brady Williams,2001,Cambridge University Press,
+src:sharma-bnk-1981,scholarly-book,History of the Dvaita School of Vedānta and its Literature,B. N. K. Sharma,1981,"Motilal Banarsidass, Delhi",
+src:narayana-rao-shulman-2005,translation,God on the Hill: Temple Poems from Tirupati (Annamayya),Velcheru Narayana Rao and David Shulman (trans.),2005,"Oxford University Press, New York",
+src:ramanujan-rao-shulman-1994,translation,When God Is a Customer: Telugu Courtesan Songs by Kṣetrayya and Others,"A. K. Ramanujan, Velcheru Narayana Rao and David Shulman (trans.)",1994,"University of California Press, Berkeley",
+src:jackson-1991,scholarly-book,Tyāgarāja: Life and Lyrics,William J. Jackson,1991,"Oxford University Press, Madras",
+src:kunjunni-raja-1958,scholarly-book,The Contribution of Kerala to Sanskrit Literature,K. Kunjunni Raja,1958,University of Madras,
+src:weiss-2019,scholarly-book,The Emergence of Modern Hinduism: Religion on the Margins of Colonialism,Richard S. Weiss,2019,"University of California Press, Oakland",
+src:hutt-1988,scholarly-book,Nepali: A National Language and Its Literature,Michael Hutt,1988,"Sterling Publishers, New Delhi / SOAS, London",
+src:bailly-1987,translation,Shaiva Devotional Songs of Kashmir: A Translation and Study of Utpaladeva’s Shivastotravali,Constantina Rhodes Bailly,1987,"State University of New York Press, Albany",
+src:cashman-1975,scholarly-book,The Myth of the Lokamanya: Tilak and Mass Politics in Maharashtra,Richard I. Cashman,1975,"University of California Press, Berkeley",
+src:kaur-2003,scholarly-book,Performative Politics and the Cultures of Hinduism: Public Uses of Religion in Western India,Raminder Kaur,2003,"Permanent Black, New Delhi",
+src:maclean-2008,scholarly-book,"Pilgrimage and Power: The Kumbh Mela in Allahabad, 1765–1954",Kama Maclean,2008,"Oxford University Press, New York",
+src:sekar-1992,scholarly-book,The Sabarimalai Pilgrimage and Ayyappan Cultus,Radhika Sekar,1992,"Motilal Banarsidass, Delhi",
+src:osella-2003,journal-article,“Ayyappan Saranam”: Masculinity and the Sabarimala Pilgrimage in Kerala,Filippo Osella and Caroline Osella,2003,Journal of the Royal Anthropological Institute 9 (4),
+src:collins-1997,scholarly-book,"Pierced by Murugan’s Lance: Ritual, Power, and Moral Redemption among Malaysian Hindus",Elizabeth Fuller Collins,1997,"Northern Illinois University Press, DeKalb",
+src:karve-1962,journal-article,On the Road: A Maharashtrian Pilgrimage,Irawati Karve,1962,Journal of Asian Studies 22 (1),
+src:mokashi-1987,translation,Palkhi: An Indian Pilgrimage,D. B. Mokashi (trans. Philip C. Engblom),1987,"State University of New York Press, Albany",
+src:lochtefeld-2010,scholarly-book,God’s Gateway: Identity and Meaning in a Hindu Pilgrimage Place,James G. Lochtefeld,2010,"Oxford University Press, New York",
+src:younger-2010,scholarly-book,"New Homelands: Hindu Communities in Mauritius, Guyana, Trinidad, South Africa, Fiji, and East Africa",Paul Younger,2010,"Oxford University Press, New York",
+src:vertovec-1992,scholarly-book,"Hindu Trinidad: Religion, Ethnicity and Socio-Economic Change",Steven Vertovec,1992,"Macmillan, London",
+src:vertovec-2000,scholarly-book,The Hindu Diaspora: Comparative Patterns,Steven Vertovec,2000,"Routledge, London",
+src:kelly-1991,scholarly-book,"A Politics of Virtue: Hinduism, Sexuality, and Countercolonial Discourse in Fiji",John D. Kelly,1991,University of Chicago Press,
+src:eisenlohr-2006,scholarly-book,"Little India: Diaspora, Time, and Ethnolinguistic Belonging in Hindu Mauritius",Patrick Eisenlohr,2006,"University of California Press, Berkeley",
+src:waghorne-2004,scholarly-book,Diaspora of the Gods: Modern Hindu Temples in an Urban Middle-Class World,Joanne Punzo Waghorne,2004,"Oxford University Press, New York",
+src:eck-2001,scholarly-book,A New Religious America: How a “Christian Country” Has Become the World’s Most Religiously Diverse Nation,Diana L. Eck,2001,HarperSanFrancisco,
+src:rochford-1985,scholarly-book,Hare Krishna in America,E. Burke Rochford Jr.,1985,"Rutgers University Press, New Brunswick",
+src:williams-1988,scholarly-book,Religions of Immigrants from India and Pakistan: New Threads in the American Tapestry,Raymond Brady Williams,1988,Cambridge University Press,
+src:robson-2008,translation,Arjunawiwāha: The Marriage of Arjuna of Mpu Kaṇwa,Stuart Robson (ed. and trans.),2008,"KITLV Press, Leiden",https://archive.org/details/oapen-20.500.12657-34659
+src:ramstedt-2004,scholarly-book,"Hinduism in Modern Indonesia: A Minority Religion between Local, National, and Global Interests",Martin Ramstedt (ed.),2004,"RoutledgeCurzon, London",
+src:picard-2011,journal-article,Balinese Religion in Search of Recognition: From Agama Hindu Bali to Agama Hindu (1945–1965),Michel Picard,2011,"Bijdragen tot de Taal-, Land- en Volkenkunde 167 (4)",
+src:francisco-1969,journal-article,Maharadia Lawana,Juan R. Francisco,1969,Asian Studies (University of the Philippines) 7 (2),
+src:maduraikkanci-pm,primary-text,"Maduraikkāñci of Māṅkuṭi Marutaṉār (Pattuppāṭṭu), Unicode e-text",Project Madurai,ongoing,Project Madurai,https://www.projectmadurai.org/pm_etexts/utf8/pmuni0071.html
+src:maclean-2003,journal-article,Making the Colonial State Work for You: The Modern Beginnings of the Ancient Kumbh Mela in Allahabad,Kama Maclean,2003,Journal of Asian Studies 62 (3),
+src:tiruppukal-pm,primary-text,"Tiruppukaḻ of Aruṇakirinātar, parts 1–4 (songs 1–1326), Unicode e-text",Project Madurai (e-text prepared from the Kaumaram.com Mylai text),1999–2004,Project Madurai,https://www.projectmadurai.org/pm_etexts/utf8/pmuni0180.html
+src:zoetmulder-1983,scholarly-book,"Kalangwan: Sastra Jawa Kuno Selayang Pandang (Indonesian translation of Kalangwan, 1974)",P. J. Zoetmulder (trans. Dick Hartoko),1983,"Djambatan, Jakarta",https://archive.org/details/kalangwan-sastra-jawa-kuno-selayang-pandang-1983
+src:kamban-pm,primary-text,"Kamba Rāmāyaṇam (Irāmāvatāram), Unicode e-text by kāṇṭam and paṭalam",Project Madurai,ongoing,Project Madurai,https://www.projectmadurai.org/pm_etexts/utf8/pmuni0455.html
+src:cilappatikaram-pm,primary-text,"Cilappatikāram of Iḷaṅkō Aṭikaḷ, Unicode e-text (Maturaik kāṇṭam and Vañcik kāṇṭam)",Project Madurai,ongoing,Project Madurai,https://www.projectmadurai.org/pm_etexts/utf8/pmuni0111_01.html
+src:tiruppavai-pm,primary-text,"Nālāyira Divya Prabandham: Tiruppāvai of Āṇṭāḷ (verses 474–503 in the 4000 numbering), Unicode e-text",Project Madurai,ongoing,Project Madurai,https://www.projectmadurai.org/pm_etexts/utf8/pmuni0005_02.html
+src:paripatal-pm,primary-text,"Paripāṭal (with Paripāṭal tiraṭṭu), Unicode e-text",Project Madurai,ongoing,Project Madurai,https://www.projectmadurai.org/pm_etexts/utf8/pmuni0087.html
+src:tirumurukarruppatai-pm,primary-text,"Tirumurukāṟṟuppaṭai of Nakkīrar, Unicode e-text",Project Madurai,ongoing,Project Madurai,https://www.projectmadurai.org/pm_etexts/utf8/pmuni0067.html
+src:vedabase-cc,translation,"Śrī Caitanya-caritāmṛta of Kṛṣṇadāsa Kavirāja, with translation and purports (online edition)",A. C. Bhaktivedanta Swami Prabhupāda (trans.),1974–75 (online),Bhaktivedanta Book Trust (vedabase.io),https://vedabase.io/en/library/cc/
+src:shah-1917,translation,"The Bijak of Kabir, translated into English according to his edited Hindi text published in 1911",Ahmad Shah (trans.),"1917 (reprint, Asian Publication Services, New Delhi)","Hamirpur, 1917; reprint New Delhi",https://archive.org/details/dli.bengal.10689.13036
 src:zvelebil-1973,scholarly-book,The Smile of Murugan: On Tamil Literature of South India,Kamil V. Zvelebil,1973,"E. J. Brill, Leiden",
 src:zvelebil-1974,scholarly-book,"Tamil Literature (A History of Indian Literature, vol. X, fasc. 1)",Kamil V. Zvelebil,1974,"Otto Harrassowitz, Wiesbaden",
 src:clothey-1978,scholarly-book,The Many Faces of Murukaṉ: The History and Meaning of a South Indian God,Fred W. Clothey,1978,"Mouton, The Hague",
@@ -255,6 +435,47 @@ src:davis-1991,scholarly-book,Ritual in an Oscillating Universe: Worshipping Śi
 src:sanderson-1988,journal-article,Śaivism and the Tantric Traditions,Alexis Sanderson,1988,"in S. Sutherland et al. (eds.), The World’s Religions, Routledge, London, pp. 660–704",
 src:goudriaan-gupta-1981,scholarly-book,"Hindu Tantric and Śākta Literature (A History of Indian Literature, vol. II, fasc. 2)",Teun Goudriaan and Sanjukta Gupta,1981,"Otto Harrassowitz, Wiesbaden",
 src:dyczkowski-1988,scholarly-book,The Canon of the Śaivāgama and the Kubjikā Tantras of the Western Kaula Tradition,Mark S. G. Dyczkowski,1988,"State University of New York Press, Albany",
+src:bhardwaj-1973,scholarly-book,Hindu Places of Pilgrimage in India: A Study in Cultural Geography,Surinder Mohan Bhardwaj,1973,"University of California Press, Berkeley",
+src:michell-1989,scholarly-book,"The Penguin Guide to the Monuments of India, vol. 1: Buddhist, Jain, Hindu",George Michell,1989,"Viking / Penguin, London",
+src:dehejia-1986,scholarly-book,Yoginī Cult and Temples: A Tantric Tradition,Vidya Dehejia,1986,"National Museum, New Delhi",
+src:mccutchion-1972,scholarly-book,Late Mediaeval Temples of Bengal: Origins and Classification,David J. McCutchion,1972,"The Asiatic Society, Calcutta",
+src:asher-1992,scholarly-book,Architecture of Mughal India (The New Cambridge History of India I.4),Catherine B. Asher,1992,Cambridge University Press,
+src:entwistle-1987,scholarly-book,Braj: Centre of Krishna Pilgrimage,Alan W. Entwistle,1987,"Egbert Forsten, Groningen",
+src:case-1996,scholarly-book,Govindadeva: A Dialogue in Stone,Margaret H. Case (ed.),1996,"Indira Gandhi National Centre for the Arts, New Delhi",
+src:haberman-1994,scholarly-book,Journey Through the Twelve Forests: An Encounter with Krishna,David L. Haberman,1994,"Oxford University Press, New York",
+src:haberman-2006,scholarly-book,River of Love in an Age of Pollution: The Yamuna River of Northern India,David L. Haberman,2006,"University of California Press, Berkeley",
+src:kak-1933,scholarly-book,Ancient Monuments of Kashmir,Ram Chandra Kak,1933,"The India Society, London",
+src:goetz-1955,scholarly-book,The Early Wooden Temples of Chamba,Hermann Goetz,1955,"E. J. Brill, Leiden",
+src:erndl-1993,scholarly-book,"Victory to the Mother: The Hindu Goddess of Northwest India in Myth, Ritual, and Symbol",Kathleen M. Erndl,1993,"Oxford University Press, New York",
+src:mcdaniel-2004,scholarly-book,"Offering Flowers, Feeding Skulls: Popular Goddess Worship in West Bengal",June McDaniel,2004,"Oxford University Press, New York",
+src:van-der-veer-1988,scholarly-book,Gods on Earth: The Management of Religious Experience and Identity in a North Indian Pilgrimage Centre,Peter van der Veer,1988,"Athlone Press, London",
+src:kinney-2003,scholarly-book,Worshiping Siva and Buddha: The Temple Art of East Java,"Ann R. Kinney, with Marijke J. Klokke and Lydia Kieven",2003,"University of Hawai‘i Press, Honolulu",
+src:jacques-lafond-2007,scholarly-book,The Khmer Empire: Cities and Sanctuaries from the 5th to the 13th Century,Claude Jacques and Philippe Lafond,2007,"River Books, Bangkok",
+src:freeman-1996,scholarly-book,A Guide to Khmer Temples in Thailand and Laos,Michael Freeman,1996,"River Books, Bangkok",
+src:siribhadra-moore-1992,scholarly-book,Palaces of the Gods: Khmer Art and Architecture in Thailand,Smitthi Siribhadra and Elizabeth Moore,1992,"River Books, Bangkok",
+src:strachan-1989,scholarly-book,Pagan: Art and Architecture of Old Burma,Paul Strachan,1989,"Kiscadale, Whiting Bay",
+src:hardy-cucarzi-zolese-2009,scholarly-book,Champa and the Archaeology of Mỹ Sơn (Vietnam),"Andrew Hardy, Mauro Cucarzi and Patrizia Zolese (eds)",2009,"NUS Press, Singapore",
+src:barrett-1974,scholarly-book,"Early Cola Architecture and Sculpture, 866–1014 A.D.",Douglas Barrett,1974,"Faber and Faber, London",
+src:balasubrahmanyam-1971,scholarly-book,Early Chola Temples: Parantaka I to Rajaraja I (A.D. 907–985),S. R. Balasubrahmanyam,1971,"Orient Longman, Bombay",
+src:cousens-1926,excavation-report,"The Chalukyan Architecture of the Kanarese Districts (Archaeological Survey of India, New Imperial Series 42)",Henry Cousens,1926,"Government of India, Calcutta",
+src:sc-sabarimala-2018,institutional,"Indian Young Lawyers Association & Ors. v. The State of Kerala & Ors. (Writ Petition (Civil) No. 373 of 2006), judgment of 28 September 2018",Supreme Court of India,2018,Supreme Court of India,
+src:sontheimer-1989,scholarly-book,Pastoral Deities in Western India,Günther-Dietz Sontheimer (trans. Anne Feldhaus),1989,"Oxford University Press, New York",
+src:feldhaus-1995,scholarly-book,Water and Womanhood: Religious Meanings of Rivers in Maharashtra,Anne Feldhaus,1995,"Oxford University Press, New York",
+src:feldhaus-2003,scholarly-book,"Connected Places: Region, Pilgrimage, and Geographical Imagination in India",Anne Feldhaus,2003,"Palgrave Macmillan, New York",
+src:axelrod-fuerch-1996,journal-article,Flight of the Deities: Hindu Resistance in Portuguese Goa,Paul Axelrod and Michelle A. Fuerch,1996,Modern Asian Studies 30 (2): 387–421,
+src:schastok-1985,scholarly-book,The Śāmalājī Sculptures and 6th Century Art in Western India,Sara L. Schastok,1985,"E. J. Brill, Leiden",
+src:ambalal-1987,scholarly-book,Krishna as Shrinathji: Rajasthani Paintings from Nathdvara,Amit Ambalal,1987,"Mapin, Ahmedabad",
+src:peabody-1991,journal-article,In Whose Turban Does the Lord Reside? The Objectification of Charisma and the Fetishism of Objects in the Hindu Kingdom of Kota,Norbert Peabody,1991,Comparative Studies in Society and History 33 (4): 726–754,
+src:kalia-1982,scholarly-book,"Art of Osian Temples: Socio-Economic and Religious Life in India, 8th–12th Centuries A.D.",Asha Kalia,1982,"Abhinav Publications, New Delhi",
+src:williams-rb-2001,scholarly-book,An Introduction to Swaminarayan Hinduism,Raymond Brady Williams,2001,Cambridge University Press,
+src:obeyesekere-1978,journal-article,The Fire-Walkers of Kataragama: The Rise of Bhakti Religiosity in Buddhist Sri Lanka,Gananath Obeyesekere,1978,Journal of Asian Studies 37 (3): 457–476,
+src:pathmanathan-1978,scholarly-book,"The Kingdom of Jaffna, Part 1 (circa A.D. 1250–1450)",S. Pathmanathan,1978,Colombo,
+src:sachau-1910,translation,Alberuni's India (2 vols.),Edward C. Sachau (trans.),1910,"Kegan Paul, Trench, Trübner, London",
+src:gutschow-2011,scholarly-book,Architecture of the Newars: A History of Building Typologies and Details in Nepal (3 vols.),Niels Gutschow,2011,"Serindia, Chicago",
+src:panigrahi-1961,scholarly-book,Archaeological Remains at Bhubaneswar,K. C. Panigrahi,1961,"Orient Longmans, Calcutta",
+src:sivaramamurti-1985,scholarly-book,Vijayanagara Paintings,C. Sivaramamurti,1985,"Publications Division, Government of India, New Delhi",
+src:humes-1996,scholarly-book,"Vindhyavāsinī: Local Goddess yet Great Goddess, in J. S. Hawley and D. M. Wulff (eds), Devī: Goddesses of India",Cynthia Ann Humes,1996,"University of California Press, Berkeley",
+src:lansing-1991,scholarly-book,Priests and Programmers: Technologies of Power in the Engineered Landscape of Bali,J. Stephen Lansing,1991,Princeton University Press,
 src:hardy-2007,scholarly-book,The Temple Architecture of India,Adam Hardy,2007,"John Wiley & Sons, Chichester",
 src:hardy-1995,scholarly-book,"Indian Temple Architecture: Form and Transformation — The Karṇāṭa Drāviḍa Tradition, 7th to 13th Centuries",Adam Hardy,1995,"Indira Gandhi National Centre for the Arts / Abhinav Publications, New Delhi",
 src:huntington-1985,scholarly-book,"The Art of Ancient India: Buddhist, Hindu, Jain",Susan L. Huntington (with John C. Huntington),1985,"Weatherhill, New York and Tokyo",
@@ -299,6 +520,140 @@ src:shiva-purana-tr,translation,"The Śiva Purāṇa (Ancient Indian Tradition a
 src:dbhp-tr,translation,The Śrīmad Devī Bhāgavatam,Swami Vijñanananda (Hari Prasanna Chatterji) (trans.),1921–1923,"Sacred Books of the Hindus 26, Panini Office, Allahabad",https://www.sacred-texts.com/hin/db/index.htm
 src:wikidata,reference,Wikidata,Wikidata contributors,ongoing,Wikimedia Foundation,https://www.wikidata.org/
 src:asi-whs,institutional,World Heritage Sites in India (ASI portal page),Archaeological Survey of India,ongoing,"Ministry of Culture, Government of India",https://asi.nic.in/pages/World-Heritage/HQ
+src:gretil-yogasutra,primary-text,Patañjali: Yogasūtra (GRETIL e-text),Patañjali; input Philipp A. Maas,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_pataJjali-yogasUtra.txt
+src:gretil-yogabhashya,primary-text,Pātañjalayogaśāstra: Yogasūtra with Bhāṣya (GRETIL e-text),Patañjali (sūtra) and the Bhāṣya ascribed to Vyāsa; input Philipp A. Maas,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_pataJjali-yogasUtra-with-bhASya.txt
+src:gretil-samkhyakarika,primary-text,Īśvarakṛṣṇa: Sāṃkhyakārikā (GRETIL e-text),Īśvarakṛṣṇa; input Ferenc Ruzsa,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_IzvarakRSNa-sAMkhyakArikA.txt
+src:gretil-yuktidipika,primary-text,Yuktidīpikā (GRETIL e-text),anonymous; input Dhaval Patel,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_yuktidIpikA.txt
+src:gretil-samkhyasutra,primary-text,Kapila: Sāṃkhyasūtra (GRETIL e-text),ascribed to Kapila; Sansknet project,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kapila-sAMkhyasUtra.txt
+src:gretil-tattvasamasa,primary-text,"Tattvasamāsa (GRETIL e-text, four versions)",ascribed to Kapila,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_tattvasamAsa-4versions.txt
+src:gretil-nyayasutra,primary-text,Gautama (Akṣapāda): Nyāyasūtra (GRETIL e-text),Sansknet project,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_gautama-nyAyasUtra.txt
+src:gretil-nyayabhashya,primary-text,Nyāyasūtra with Vātsyāyana’s Bhāṣya (GRETIL e-text),"Vātsyāyana Pakṣilasvāmin; input Indology Student Team, University of Tokyo",,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_gautama-nyAyasUtra-comm.txt
+src:gretil-vaisheshika-sutra,primary-text,Kaṇāda: Vaiśeṣikasūtra (GRETIL e-text),Kaṇāda; input Nozawa Masanobu,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kaNAda-vaizeSikasUtra.txt
+src:gretil-prashastapada,primary-text,Praśastapāda: Padārthadharmasaṃgraha (GRETIL e-text),Praśastapāda; input Muneo Tokunaga and Muroya,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_prazastapAda-pAdArthadharmasaMgraha.txt
+src:gretil-mimamsa-sutra,primary-text,Jaimini: Mīmāṃsāsūtra (GRETIL e-text),Jaimini; Sansknet project,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_jaimini-mImAMsAsUtra.txt
+src:gretil-shabara,primary-text,Mīmāṃsāsūtra 1–7 with Śabara’s Bhāṣya (GRETIL e-text),Śabarasvāmin; input Andreas Pohlus,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_jaimini-mImAMsAsUtra-1-7-comm.txt
+src:gretil-shlokavarttika,primary-text,"Kumārila Bhaṭṭa: Mīmāṃsāślokavārttika with Sucaritamiśra’s Kāśikā, partial (GRETIL e-text)",Kumārila Bhaṭṭa; Sansknet project,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kumArila-mImAMsazlokavArttika-comm.txt
+src:gretil-prakaranapanchika,primary-text,Śālikanātha Miśra: Prakaraṇapañcikā with commentary (GRETIL e-text),Śālikanātha Miśra; Sansknet project,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_zAlikanAthamizra-prakaraNapaJcikA-comm.txt
+src:gretil-shastradipika,primary-text,Pārthasārathi Miśra: Śāstradīpikā (GRETIL e-text),Pārthasārathi Miśra; Sansknet project,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_pArthasArathimizra-zAstradIpikA.txt
+src:gretil-brahmasutra,primary-text,Bādarāyaṇa: Brahmasūtra (GRETIL e-texts: Sansknet text and the text extracted from Śaṅkara’s commentary),ascribed to Bādarāyaṇa; Sansknet project,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bAdarAyaNa-brahmasUtra-alt.txt
+src:gretil-bs-shankara,primary-text,Śaṅkara: Brahmasūtrabhāṣya (Śārīrakamīmāṃsābhāṣya) (GRETIL e-text),Śaṅkara; Sansknet project,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bAdarAyaNa-brahmasUtra-comm.txt
+src:gretil-bhamati,primary-text,Vācaspati Miśra: Bhāmatī (GRETIL e-text),Vācaspati Miśra; Sansknet project,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_vAcaspatimizra-bhAmati.txt
+src:gretil-brahmasiddhi,primary-text,Maṇḍana Miśra: Brahmasiddhi (GRETIL e-text),Maṇḍana Miśra; input Diwakar Acharya,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mandanamizra-brahmasiddhi.txt
+src:gretil-gaudapada-karika,primary-text,Gauḍapāda: Āgamaśāstra (Māṇḍūkyakārikā) (GRETIL e-text),Gauḍapāda; input Peter Schreiner,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_gauDapAda-AgamazAstra.txt
+src:gretil-vedarthasamgraha,primary-text,Rāmānuja: Vedārthasaṃgraha (GRETIL e-text),Rāmānuja; input Sadanori Ishitobi,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAnuja-vedArthasaMgraha.txt
+src:gretil-ramanuja-gitabhashya,primary-text,Rāmānuja: Bhagavadgītābhāṣya (GRETIL e-text),Rāmānuja; input Sadanori Ishitobi,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAnuja-bhagavadgItAbhASya.txt
+src:gretil-anuvyakhyana,primary-text,Madhva (Ānandatīrtha): Anuvyākhyāna (GRETIL e-text),Madhva; Sansknet project,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mAdhva-anuvyAkhyAna.txt
+src:gretil-mbh-tatparya-nirnaya,primary-text,Madhva (Ānandatīrtha): Mahābhāratatātparyanirṇaya (GRETIL e-text),Madhva; input via Dvaita.net,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mAdhva-mahAbhAratatAtparyanirNaya.txt
+src:gretil-nyayasudha,primary-text,Jayatīrtha: Nyāyasudhā (GRETIL e-text),Jayatīrtha; Sansknet project,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_jayatIrtha-nyAyasudhA.txt
+src:gretil-tarkatandava,primary-text,Vyāsatīrtha: Tarkatāṇḍava with commentary (GRETIL e-text),Vyāsatīrtha,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_vyAsatIrtha-tarkatANDava-comm.txt
+src:gretil-satsandarbha,primary-text,Jīva Gosvāmī: Ṣaṭsandarbha (Bhāgavatasandarbha) with Baladeva’s ṭīkā (GRETIL e-text),Jīva Gosvāmī; Baladeva Vidyābhūṣaṇa (ṭīkā),,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_jiva-gosvami-satsamdarbha.txt
+src:gretil-upadeshasahasri,primary-text,Śaṅkara: Upadeśasāhasrī (GRETIL e-text of Mayeda’s critical edition),Śaṅkara; input Ivan Andrijanić,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_zaMkara-upadezasAhasrI.txt
+src:gretil-vivekachudamani,primary-text,Vivekacūḍāmaṇi ascribed to Śaṅkara (GRETIL e-text),ascribed to Śaṅkara,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_zaMkara-vivekacuDAmaNi.txt
+src:gretil-siddhantabindu,primary-text,Madhusūdana Sarasvatī: Siddhāntabindu (GRETIL e-text),Madhusūdana Sarasvatī; input Takahiro Kato,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_madhusUdanasarasvatI-siddhAntabindu.txt
+src:gretil-nyayakusumanjali,primary-text,Udayana: Nyāyakusumāñjali (GRETIL e-text),Udayana; Sansknet project,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_udayana-nyAyakusumAJjali.txt
+src:gretil-tattvacintamani,primary-text,"Gaṅgeśa: Tattvacintāmaṇi, Śabdakhaṇḍa (GRETIL e-text)",Gaṅgeśa; Sansknet project,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_gAGgeza-tattvacintAmaNizabdakhANDa.txt
+src:gretil-tarkasamgraha,primary-text,Annaṃbhaṭṭa: Tarkasaṃgraha (GRETIL e-text),Annaṃbhaṭṭa; input Takuya Ono,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_annaMbhatta-tarkasaMgraha.txt
+src:gretil-vedanga-jyotisha,primary-text,Lagadha: Ṛgveda-Vedāṅgajyotiṣa (GRETIL e-text),ascribed to Lagadha,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_lagadha-RgvedavedAGgajyotiSa.txt
+src:gretil-apastamba-dharmasutra,primary-text,Āpastamba-Dharmasūtra (GRETIL e-text),input Yasuke Ikari,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_ApastambadharmasUtra.txt
+src:gretil-gautama-dharmasutra,primary-text,Gautama-Dharmasūtra (GRETIL e-text),input Nobuyuki Watase,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_gautama-dharmasUtra.txt
+src:gretil-baudhayana-dharmasutra,primary-text,Baudhāyana-Dharmasūtra (GRETIL e-text),input Masato Fujii and Mieko Kajihara,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_baudhAyanadharmasUtra.txt
+src:gretil-vasishtha-dharmasutra,primary-text,Vāsiṣṭha-Dharmasūtra (GRETIL e-text),input M. Fushimi,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_vAsiSThadharmasUtra.txt
+src:gretil-ashvalayana-grihya,primary-text,Āśvalāyana-Gṛhyasūtra (GRETIL e-text),input Muneo Tokunaga,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_AzvalAyanagRhyasUtra.txt
+src:gretil-ashvalayana-shrauta,primary-text,Āśvalāyana-Śrautasūtra (GRETIL e-text),input Muneo Tokunaga,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_AzvalAyanazrautasUtra.txt
+src:gretil-shankhayana-shrauta,primary-text,Śāṅkhāyana-Śrautasūtra (GRETIL e-text),input Muneo Tokunaga,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_zAGkhAyanazrautasUtra.txt
+src:gretil-apastamba-shulba,primary-text,Āpastamba-Śulbasūtra (GRETIL e-text),Sansknet project,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_ApastambazulbasUtra.txt
+src:gretil-yajnavalkya-smriti,primary-text,Yājñavalkyasmṛti (GRETIL e-text),"input Muneo Tokunaga, checked by Yasuke Ikari",,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_yAjJavalkyasmRti.txt
+src:gretil-mitakshara,primary-text,Vijñāneśvara: Mitākṣarā on the Yājñavalkyasmṛti (GRETIL e-text),"input Donald R. Davis Jr., Amy Hyne-Sutherland, Nikola Rajić",,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_vijJAnezvara-mitAkSarA.txt
+src:gretil-narada-smriti,primary-text,Nāradasmṛti (GRETIL e-text),"input Richard W. Lariviere, ed. Yasuke Ikari",,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_nAradasmRti.txt
+src:gretil-parashara-smriti,primary-text,Parāśarasmṛti (Ācāra and Prāyaścitta) (GRETIL e-text),input Muneo Tokunaga,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_parAzarasmRti-AcAra-prAyazcitta.txt
+src:gretil-vishnu-smriti,primary-text,Viṣṇusmṛti (GRETIL e-text),input I. Shima,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNusmRti.txt
+src:gretil-katyayana-smriti,primary-text,Kātyāyanasmṛti (GRETIL e-text),input Akihiko Akamatsu,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAtyAyanasmRti.txt
+src:gretil-kaivalya,primary-text,Kaivalya-Upaniṣad (GRETIL e-text),original input Anshuman Pandey,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kaivalyopaniSad.txt
+src:gretil-atharvashiras,primary-text,Atharvaśiras-Upaniṣad (GRETIL e-text),input Oliver Hellwig,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_zira-upaniSad.txt
+src:gretil-garbha,primary-text,Garbha-Upaniṣad (GRETIL e-text),input Oliver Hellwig,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_garbhopaniSad.txt
+src:gretil-brahmabindu,primary-text,Brahmabindu-Upaniṣad (GRETIL e-text),input Oliver Hellwig,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_brahmabindUpaniSad.txt
+src:gretil-nadabindu,primary-text,Nādabindu-Upaniṣad (GRETIL e-text),input Oliver Hellwig,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_nAdabindUpaniSad.txt
+src:gretil-shivasamkalpa,primary-text,Śivasaṃkalpa-Upaniṣad (GRETIL e-text),input Maximilian Mehner,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_zivasaMkalpopaniSad.txt
+src:gretil-arthashastra,primary-text,Kauṭilya: Arthaśāstra (GRETIL e-text),ascribed to Kauṭilya,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kauTilya-arthazAstra.txt
+src:gretil-hathayogapradipika,primary-text,Svātmārāma: Haṭhayogapradīpikā (GRETIL e-text),Svātmārāma,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_svAtmArAma-haThayogapradIpikA.txt
+src:gretil-ashtavakragita,primary-text,Aṣṭāvakragītā (GRETIL e-text),anonymous; input John Richards,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_aSTAvakragItA.txt
+src:gretil-yamuna-gitarthasamgraha,primary-text,Yāmuna: Gītārthasaṃgraha (GRETIL e-text),Yāmuna,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_yAmuna-gItArthasaMgraha.txt
+src:gretil-nyayaparishuddhi,primary-text,"Veṅkaṭanātha (Vedānta Deśika): Nyāyapariśuddhi, partial (GRETIL e-text)",Veṅkaṭanātha,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_veGkaTanAtha-nyAyaparizuddhibhUmikA-13-5.txt
+src:gretil-bhaktirasamritasindhu,primary-text,Rūpa Gosvāmī: Bhaktirasāmṛtasindhu (GRETIL e-text),Rūpa Gosvāmī,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rUpagosvAmin-haribhaktirasAmRtasindhu.txt
+src:gretil-rv-padapatha,primary-text,Ṛgveda-Saṃhitā Padapāṭha (GRETIL e-text),ascribed to Śākalya,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_RgvedasaMhitApadapATha.txt
+src:gretil-samkhyasara,primary-text,Vijñānabhikṣu: Sāṃkhyasāra (GRETIL e-text),Vijñānabhikṣu,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_vijJAnabhikSu-sAMkhyasAra.txt
+src:gretil-natyashastra,primary-text,Bharata: Nāṭyaśāstra (GRETIL e-text),ascribed to Bharata,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bharata-nATyazAstra-1-1618-303335-37.txt
+src:gretil-ishvarapratyabhijna,primary-text,Utpaladeva: Īśvarapratyabhijñākārikā with his Vṛtti (GRETIL e-text),Utpaladeva,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_utpaladeva-IzvarapratyabhijJAkArikA-with-vRtti.txt
+src:torella-1994,translation,The Īśvarapratyabhijñākārikā of Utpaladeva with the Author’s Vṛtti (Serie Orientale Roma 71),Raffaele Torella,1994,Istituto Italiano per il Medio ed Estremo Oriente (Rome),
+src:pollock-2016,translation,A Rasa Reader: Classical Indian Aesthetics,Sheldon Pollock,2016,Columbia University Press,
+src:larson-bhattacharya-1987,scholarly-book,"Sāṃkhya: A Dualist Tradition in Indian Philosophy (Encyclopedia of Indian Philosophies, vol. IV)",Gerald James Larson and Ram Shankar Bhattacharya (eds.),1987,Princeton University Press,
+src:larson-bhattacharya-2008,scholarly-book,"Yoga: India’s Philosophy of Meditation (Encyclopedia of Indian Philosophies, vol. XII)",Gerald James Larson and Ram Shankar Bhattacharya (eds.),2008,Motilal Banarsidass,
+src:potter-1977,scholarly-book,"Indian Metaphysics and Epistemology: The Tradition of Nyāya-Vaiśeṣika up to Gaṅgeśa (Encyclopedia of Indian Philosophies, vol. II)",Karl H. Potter (ed.),1977,Princeton University Press,
+src:potter-1981,scholarly-book,"Advaita Vedānta up to Śaṃkara and His Pupils (Encyclopedia of Indian Philosophies, vol. III)",Karl H. Potter (ed.),1981,Princeton University Press,
+src:potter-bhattacharyya-1993,scholarly-book,"Indian Philosophical Analysis: Nyāya-Vaiśeṣika from Gaṅgeśa to Raghunātha Śiromaṇi (Encyclopedia of Indian Philosophies, vol. VI)",Karl H. Potter and Sibajiban Bhattacharyya (eds.),1993,Princeton University Press,
+src:maas-2006,scholarly-book,Samādhipāda: Das erste Kapitel des Pātañjalayogaśāstra zum ersten Mal kritisch ediert,Philipp André Maas,2006,Shaker (Aachen),
+src:maas-2013,journal-article,"A Concise Historiography of Classical Yoga Philosophy (in Eli Franco (ed.), Periodization and Historiography of Indian Philosophy, pp. 53–90)",Philipp A. Maas,2013,"Sammlung de Nobili, Universität Wien",
+src:bronkhorst-1981,journal-article,"Yoga and Seśvara Sāṃkhya (Journal of Indian Philosophy 9, pp. 309–320)",Johannes Bronkhorst,1981,Journal of Indian Philosophy,
+src:bryant-2009,translation,"The Yoga Sūtras of Patañjali: A New Edition, Translation, and Commentary",Edwin F. Bryant,2009,North Point Press,
+src:white-2014,scholarly-book,The Yoga Sutra of Patanjali: A Biography,David Gordon White,2014,Princeton University Press,
+src:woods-1914,translation,The Yoga-System of Patañjali (Harvard Oriental Series 17),James Haughton Woods,1914,Harvard University Press,
+src:mallinson-singleton-2017,scholarly-book,Roots of Yoga,James Mallinson and Mark Singleton,2017,Penguin Classics,
+src:frauwallner-1973,scholarly-book,"History of Indian Philosophy, 2 vols. (trans. V. M. Bedekar from Geschichte der indischen Philosophie, 1953–56)",Erich Frauwallner,1973,Motilal Banarsidass,
+src:dasgupta-1922,scholarly-book,"A History of Indian Philosophy, 5 vols.",Surendranath Dasgupta,1922–1955,Cambridge University Press,
+src:hiriyanna-1932,scholarly-book,Outlines of Indian Philosophy,M. Hiriyanna,1932,George Allen & Unwin,
+src:halbfass-1988,scholarly-book,India and Europe: An Essay in Understanding,Wilhelm Halbfass,1988,State University of New York Press,
+src:nicholson-2010,scholarly-book,Unifying Hinduism: Philosophy and Identity in Indian Intellectual History,Andrew J. Nicholson,2010,Columbia University Press,
+src:king-1999,scholarly-book,Indian Philosophy: An Introduction to Hindu and Buddhist Thought,Richard King,1999,Edinburgh University Press,
+src:matilal-1986,scholarly-book,Perception: An Essay on Classical Indian Theories of Knowledge,Bimal Krishna Matilal,1986,Clarendon Press,
+src:phillips-2012,scholarly-book,Epistemology in Classical India: The Knowledge Sources of the Nyāya School,Stephen H. Phillips,2012,Routledge,
+src:ingalls-1951,scholarly-book,Materials for the Study of Navya-Nyāya Logic (Harvard Oriental Series 40),Daniel H. H. Ingalls,1951,Harvard University Press,
+src:clooney-1990,scholarly-book,Thinking Ritually: Rediscovering the Pūrva Mīmāṃsā of Jaimini,Francis X. Clooney,1990,De Nobili Research Library (Vienna),
+src:jha-1942,scholarly-book,Pūrva-Mīmāṃsā in Its Sources,Ganganatha Jha,1942,Benares Hindu University,
+src:kataoka-2011,scholarly-book,"Kumārila on Truth, Omniscience, and Killing, 2 parts",Kei Kataoka,2011,Austrian Academy of Sciences Press,
+src:thibaut-sbe34,translation,The Vedânta-Sûtras with the Commentary by Śaṅkarâkârya (Sacred Books of the East 34 and 38),George Thibaut,1890–1896,Clarendon Press,https://www.sacred-texts.com/hin/sbe34/index.htm
+src:thibaut-sbe48,translation,The Vedânta-Sûtras with the Commentary of Râmânuja (Sacred Books of the East 48),George Thibaut,1904,Clarendon Press,https://www.sacred-texts.com/hin/sbe48/index.htm
+src:nakamura-1983,scholarly-book,"A History of Early Vedānta Philosophy, Part One",Hajime Nakamura,1983,Motilal Banarsidass,
+src:comans-2000,scholarly-book,"The Method of Early Advaita Vedānta: A Study of Gauḍapāda, Śaṅkara, Sureśvara and Padmapāda",Michael Comans,2000,Motilal Banarsidass,
+src:king-1995,scholarly-book,Early Advaita Vedānta and Buddhism: The Mahāyāna Context of the Gauḍapādīya-kārikā,Richard King,1995,State University of New York Press,
+src:thrasher-1993,scholarly-book,The Advaita Vedānta of Brahma-siddhi,Allen Wright Thrasher,1993,Motilal Banarsidass,
+src:bader-2000,scholarly-book,Conquest of the Four Quarters: Traditional Accounts of the Life of Śaṅkara,Jonathan Bader,2000,Aditya Prakashan,
+src:fort-2007,scholarly-book,Jīvanmukti in Transformation: Embodied Liberation in Advaita and Neo-Vedanta,Andrew O. Fort,2007,State University of New York Press,
+src:rambachan-1991,scholarly-book,Accomplishing the Accomplished: The Vedas as a Source of Valid Knowledge in Śaṅkara,Anantanand Rambachan,1991,University of Hawaii Press,
+src:sharma-bnk-1960,scholarly-book,"History of the Dvaita School of Vedānta and Its Literature, 2 vols.",B. N. Krishnamurti Sharma,1960–1961,Booksellers’ Publishing Co. (Bombay); repr. Motilal Banarsidass,
+src:lipner-1986,scholarly-book,The Face of Truth: A Study of Meaning and Metaphysics in the Vedāntic Theology of Rāmānuja,Julius J. Lipner,1986,Macmillan / State University of New York Press,
+src:van-buitenen-1956,translation,"Rāmānuja’s Vedārthasaṃgraha: Introduction, Critical Edition and Annotated Translation",J. A. B. van Buitenen,1956,Deccan College Postgraduate and Research Institute (Poona),
+src:gupta-2007,scholarly-book,The Chaitanya Vaishnava Vedanta of Jiva Gosvami: When Knowledge Meets Devotion,Ravi M. Gupta,2007,Routledge,
+src:okita-2014,scholarly-book,Hindu Theology in Early Modern South Asia: The Rise of Devotionalism and the Politics of Genealogy,Kiyokazu Okita,2014,Oxford University Press,
+src:stoker-2016,scholarly-book,"Polemics and Patronage in the City of Victory: Vyasatirtha, Hindu Sectarianism, and the Sixteenth-Century Vijayanagara Court",Valerie Stoker,2016,University of California Press,
+src:barz-1976,scholarly-book,The Bhakti Sect of Vallabhācārya,Richard Barz,1976,Thomson Press (Faridabad),
+src:bose-1940,translation,"Vedānta-Pārijāta-Saurabha of Nimbārka and Vedānta-Kaustubha of Śrīnivāsa, 3 vols.",Roma Bose,1940–1943,Royal Asiatic Society of Bengal,
+src:ramnarace-2014,scholarly-book,Rādhā-Kṛṣṇa’s Vedāntic Debut: Chronology and Rationalisation in the Nimbārka Sampradāya (PhD thesis),Vijay Ramnarace,2014,University of Edinburgh,
+src:olivelle-1999,translation,Dharmasūtras: The Law Codes of Ancient India (Oxford World’s Classics),Patrick Olivelle,1999,Oxford University Press,
+src:olivelle-2000,translation,"Dharmasūtras: The Law Codes of Āpastamba, Gautama, Baudhāyana, and Vasiṣṭha (annotated text and translation)",Patrick Olivelle,2000,Motilal Banarsidass,
+src:olivelle-1993,scholarly-book,The Āśrama System: The History and Hermeneutics of a Religious Institution,Patrick Olivelle,1993,Oxford University Press,
+src:olivelle-1992,translation,The Saṃnyāsa Upaniṣads: Hindu Scriptures on Asceticism and Renunciation,Patrick Olivelle,1992,Oxford University Press,
+src:olivelle-2013,translation,"King, Governance, and Law in Ancient India: Kauṭilya’s Arthaśāstra",Patrick Olivelle,2013,Oxford University Press,
+src:lingat-1973,scholarly-book,The Classical Law of India (trans. J. Duncan M. Derrett),Robert Lingat,1973,University of California Press,
+src:lariviere-1989,translation,"The Nāradasmṛti: Critically Edited with an Introduction, Annotated Translation, and Appendices",Richard W. Lariviere,1989,University of Pennsylvania (Studies on South Asia 4–5),
+src:rocher-2002,translation,Jīmūtavāhana’s Dāyabhāga: The Hindu Law of Inheritance in Bengal,Ludo Rocher,2002,Oxford University Press,
+src:davis-2010,scholarly-book,The Spirit of Hindu Law,Donald R. Davis Jr.,2010,Cambridge University Press,
+src:deussen-1897,translation,Sechzig Upanishad’s des Veda,Paul Deussen,1897,F. A. Brockhaus (Leipzig),
+src:sprockhoff-1976,scholarly-book,Saṃnyāsa: Quellenstudien zur Askese im Hinduismus,Joachim Friedrich Sprockhoff,1976,Franz Steiner (Wiesbaden),
+src:bouy-1994,scholarly-book,Les Nātha-yogin et les Upaniṣads,Christian Bouy,1994,De Boccard (Paris),
+src:van-buitenen-1962,scholarly-book,The Maitrāyaṇīya Upaniṣad: A Critical Essay,J. A. B. van Buitenen,1962,Mouton (The Hague),
+src:varenne-1960,translation,"La Mahā Nārāyaṇa Upaniṣad, 2 vols.",Jean Varenne,1960,De Boccard (Paris),
+src:sarma-1985,translation,Vedāṅga Jyotiṣa of Lagadha in its Ṛk and Yajus Recensions (trans. T. S. Kuppanna Sastry; critically edited by K. V. Sarma),T. S. Kuppanna Sastry and K. V. Sarma,1985,Indian National Science Academy,
+src:plofker-2009,scholarly-book,Mathematics in India,Kim Plofker,2009,Princeton University Press,
+src:van-nooten-1993,journal-article,"Binary Numbers in Indian Antiquity (Journal of Indian Philosophy 21, pp. 31–50)",B. van Nooten,1993,Journal of Indian Philosophy,
+src:gonda-1977,scholarly-book,"The Ritual Sūtras (A History of Indian Literature, vol. I, fasc. 2)",Jan Gonda,1977,Otto Harrassowitz,
+src:allen-1953,scholarly-book,Phonetics in Ancient India,W. Sidney Allen,1953,Oxford University Press,
+src:deshpande-1997,translation,Śaunakīyā Caturādhyāyikā: A Prātiśākhya of the Śaunakīya Atharvaveda (Harvard Oriental Series 52),Madhav M. Deshpande,1997,Harvard University Press,
+src:cowell-gough-1882,translation,"The Sarva-darśana-saṃgraha, or Review of the Different Systems of Hindu Philosophy, by Mádhava Áchárya",E. B. Cowell and A. E. Gough,1882,Trübner (London),
+src:bhattacharya-2009,scholarly-book,Studies on the Cārvāka/Lokāyata,Ramkrishna Bhattacharya,2009,Società Editrice Fiorentina,
+src:iyer-1969,scholarly-book,Bhartṛhari: A Study of the Vākyapadīya in the Light of the Ancient Commentaries,K. A. Subramania Iyer,1969,Deccan College (Poona),
+src:matilal-1977,scholarly-book,"Nyāya-Vaiśeṣika (A History of Indian Literature, vol. VI, fasc. 2)",Bimal Krishna Matilal,1977,Otto Harrassowitz,
+src:gupta-sanjukta-2006,scholarly-book,Advaita Vedānta and Vaiṣṇavism: The Philosophy of Madhusūdana Sarasvatī,Sanjukta Gupta,2006,Routledge,
+src:kuppuswami-1937,primary-text,"Brahmasiddhi by Ācārya Maṇḍanamiśra, with Commentary by Śaṅkhapāṇi (Madras Government Oriental Manuscripts Series 4)",S. Kuppuswami Sastri (ed.),1937,"Government Press, Madras",
 src:gretil-rv-aufrecht,primary-text,Ṛgveda-Saṃhitā (GRETIL e-text of Aufrecht’s edition),Theodor Aufrecht (ed.); data entry Barend A. van Nooten and Gary B. Holland,1877 (ed.); e-text 2019,"GRETIL, SUB Göttingen",https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_Rgveda-edAufrecht.txt
 src:gretil-shatapatha,primary-text,"Śatapatha-Brāhmaṇa, Mādhyandina recension (GRETIL e-text, books 1–14)",Data input H. S. Ananthanarayana and W. P. Lehmann,e-text,"GRETIL, SUB Göttingen",https://gretil.sub.uni-goettingen.de/gretil.html
 src:gretil-brihadaranyaka,primary-text,"Bṛhadāraṇyaka-Upaniṣad, Kāṇva recension (GRETIL mūla text)","Sansknet project; checked against V. P. Limaye and R. D. Vadekar, Eighteen Principal Upaniṣads vol. 1 (Poona 1958)",e-text,"GRETIL, SUB Göttingen",https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/1_veda/4_upa/brup___u.htm

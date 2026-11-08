@@ -240,7 +240,7 @@
  {
   "id": "material:r2-11",
   "s": "ins:allahabad-pillar-samudragupta",
-  "p": "COMMISSIONED_BY",
+  "p": "MADE_BY",
   "o": "person:harishena",
   "qualifiers": {
    "role": "composer of the kāvya"
@@ -1266,7 +1266,7 @@
  {
   "id": "material:r2-47",
   "s": "ins:talagunda-pillar",
-  "p": "COMMISSIONED_BY",
+  "p": "MADE_BY",
   "o": "person:kubja-poet",
   "qualifiers": {
    "role": "composer and engraver"
@@ -1854,7 +1854,7 @@
     "url": "https://en.wikipedia.org/wiki/Raja_Raja_I"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -2947,7 +2947,7 @@
     "url": "https://en.wikipedia.org/wiki/Jayavarman_II"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -2992,7 +2992,7 @@
     "url": "https://en.wikipedia.org/wiki/Devaraja"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -3009,7 +3009,7 @@
     "url": "https://en.wikipedia.org/wiki/Devaraja"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -3482,7 +3482,7 @@
     "url": "https://en.wikipedia.org/wiki/Po_Nagar"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -3499,7 +3499,7 @@
     "url": "https://en.wikipedia.org/wiki/Po_Nagar"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -3536,7 +3536,7 @@
     "url": "https://en.wikipedia.org/wiki/V%C3%B5_C%E1%BA%A1nh_inscription"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -3570,7 +3570,7 @@
     "url": "https://en.wikipedia.org/wiki/V%C3%B5_C%E1%BA%A1nh_inscription"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -3967,7 +3967,7 @@
     "url": "https://en.wikipedia.org/wiki/Huvishka"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -4043,7 +4043,7 @@
     "url": "https://en.wikipedia.org/wiki/V%C4%81sudeva_I"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -4078,7 +4078,7 @@
     "url": "https://en.wikipedia.org/wiki/Yaudheya"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -4098,7 +4098,7 @@
     "url": "https://en.wikipedia.org/wiki/Yaudheya"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -4165,7 +4165,7 @@
     "url": "https://en.wikipedia.org/wiki/Audumbaras"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -4205,7 +4205,7 @@
     "url": "https://en.wikipedia.org/wiki/Audumbaras"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -5677,7 +5677,7 @@
     "url": "https://en.wikipedia.org/wiki/Phnom_Da"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -5698,7 +5698,7 @@
     "url": "https://en.wikipedia.org/wiki/National_Museum_of_Cambodia"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -5718,7 +5718,7 @@
     "url": "https://en.wikipedia.org/wiki/Phnom_Da"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -5755,7 +5755,7 @@
     "url": "https://en.wikipedia.org/wiki/Harihara"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -5775,7 +5775,7 @@
     "url": "https://en.wikipedia.org/wiki/Harihara"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -5792,7 +5792,7 @@
     "url": "https://en.wikipedia.org/wiki/Ahichchhatra"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -5829,7 +5829,7 @@
     "url": "https://en.wikipedia.org/wiki/Ahichchhatra"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -5849,7 +5849,7 @@
     "url": "https://en.wikipedia.org/wiki/Ahichchhatra"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -6034,7 +6034,7 @@
     "url": "https://en.wikipedia.org/wiki/B._B._Lal"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -6125,7 +6125,7 @@
     "url": "https://en.wikipedia.org/wiki/Ahichchhatra"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -6192,7 +6192,7 @@
     "url": "https://en.wikipedia.org/wiki/Kausambi"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -6244,7 +6244,7 @@
     "url": "https://en.wikipedia.org/wiki/Allahabad_Museum"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -6261,7 +6261,7 @@
     "url": "https://en.wikipedia.org/wiki/Bujang_Valley"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -6373,7 +6373,7 @@
     "url": "https://en.wikipedia.org/wiki/Ayodhya_dispute"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -6433,7 +6433,7 @@
     "url": "https://en.wikipedia.org/wiki/Ayodhya_dispute"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -6450,7 +6450,7 @@
     "url": "https://en.wikipedia.org/wiki/Ayodhya_dispute"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -6504,12 +6504,18 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Ayodhya_dispute"
+   },
+   {
+    "source": "src:mandal-ratnagar-2007"
+   },
+   {
+    "source": "src:varma-menon-2010"
    }
   ],
-  "confidence": "low",
+  "confidence": "medium",
   "status": "disputed",
   "rationale": "Critics' reading of the same excavation: animal bones and glazed ware were not tabulated; structural interpretation contested (e.g. Aligarh Historians Society).",
-  "competing": "The High Court and the ASI rejected these criticisms.",
+  "competing": "The ASI and the Allahabad High Court (2010) rejected these criticisms; the Supreme Court (2019) accepted that a non-Islamic structure lay beneath the mosque but made no finding that a temple had been demolished.",
   "agent": "material",
   "lastVerified": "2026-11-08"
  },
@@ -6525,7 +6531,7 @@
     "url": "https://en.wikipedia.org/wiki/Akbar"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -6542,7 +6548,7 @@
     "url": "https://en.wikipedia.org/wiki/Hamida_Banu_Begum"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -6559,7 +6565,7 @@
     "url": "https://en.wikipedia.org/wiki/Jagat_Singh_I"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -6598,7 +6604,7 @@
     "url": "https://en.wikipedia.org/wiki/Razmnama"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -6686,7 +6692,7 @@
     "url": "https://en.wikipedia.org/wiki/Razmnama"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -6703,7 +6709,7 @@
     "url": "https://en.wikipedia.org/wiki/Razmnama"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -6720,7 +6726,7 @@
     "url": "https://en.wikipedia.org/wiki/Razmnama"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -6737,7 +6743,7 @@
     "url": "https://en.wikipedia.org/wiki/Razmnama"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -6825,7 +6831,7 @@
  {
   "id": "material:r2-317",
   "s": "art:vam-razmnama-vyasa-shuka",
-  "p": "COMMISSIONED_BY",
+  "p": "MADE_BY",
   "o": "person:banwari-khurd",
   "qualifiers": {
    "role": "painter"
@@ -6942,7 +6948,7 @@
  {
   "id": "material:r2-323",
   "s": "art:vam-razmnama-duryodhana-shalya",
-  "p": "COMMISSIONED_BY",
+  "p": "MADE_BY",
   "o": "person:kamal-mughal-painter",
   "qualifiers": {
    "role": "painter"
@@ -7209,7 +7215,7 @@
     "url": "https://en.wikipedia.org/wiki/Hamida_Banu_Begum"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -7246,7 +7252,7 @@
     "url": "https://en.wikipedia.org/wiki/Hamida_Banu_Begum"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -7328,7 +7334,7 @@
  {
   "id": "material:r2-344",
   "s": "ms:mewar-ramayana",
-  "p": "COMMISSIONED_BY",
+  "p": "MADE_BY",
   "o": "person:sahib-din",
   "qualifiers": {
    "role": "painter (several volumes)"
@@ -7469,7 +7475,7 @@
  {
   "id": "material:r2-351",
   "s": "ms:basohli-gita-govinda-1730",
-  "p": "COMMISSIONED_BY",
+  "p": "MADE_BY",
   "o": "person:manaku",
   "qualifiers": {
    "role": "painter"
@@ -7565,7 +7571,7 @@
  {
   "id": "material:r2-356",
   "s": "art:vam-basohli-gita-govinda",
-  "p": "COMMISSIONED_BY",
+  "p": "MADE_BY",
   "o": "person:manaku",
   "qualifiers": {
    "role": "painter"
@@ -10130,7 +10136,7 @@
     "url": "https://en.wikipedia.org/wiki/Bharhut"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -10172,7 +10178,7 @@
     "url": "https://en.wikipedia.org/wiki/Bharhut"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -10229,7 +10235,7 @@
     "url": "https://en.wikipedia.org/wiki/Kankali_Tila"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -10246,7 +10252,7 @@
     "url": "https://en.wikipedia.org/wiki/Kankali_Tila"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -10283,7 +10289,7 @@
     "url": "https://en.wikipedia.org/wiki/Kankali_Tila"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
@@ -10303,7 +10309,7 @@
     "url": "https://en.wikipedia.org/wiki/Kankali_Tila"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"

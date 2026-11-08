@@ -1731,11 +1731,9 @@
    {
     "system": "material",
     "event": "surviving-structure",
-    "start": 800,
-    "end": 1900,
     "label": "undated stone shrine of the Garhwal Nāgara type",
     "certainty": "disputed",
-    "basis": "no dated inscription known to the sources consulted; regional style only",
+    "basis": "no dated inscription known to the sources consulted; regional style only; no numeric date is given because none is supported by evidence (verification round 2)",
     "sources": [
      {
       "source": "src:wikipedia",
@@ -1819,11 +1817,9 @@
    {
     "system": "material",
     "event": "surviving-structure",
-    "start": 800,
-    "end": 1900,
     "label": "undated stone shrine of the Garhwal Nāgara type",
     "certainty": "disputed",
-    "basis": "no dated inscription known to the sources consulted; regional style only",
+    "basis": "no dated inscription known to the sources consulted; regional style only; no numeric date is given because none is supported by evidence (verification round 2)",
     "sources": [
      {
       "source": "src:wikipedia",
@@ -1896,11 +1892,9 @@
    {
     "system": "material",
     "event": "surviving-structure",
-    "start": 800,
-    "end": 1900,
     "label": "undated stone shrine of the Garhwal Nāgara type",
     "certainty": "disputed",
-    "basis": "no dated inscription known to the sources consulted; regional style only",
+    "basis": "no dated inscription known to the sources consulted; regional style only; no numeric date is given because none is supported by evidence (verification round 2)",
     "sources": [
      {
       "source": "src:wikipedia",
@@ -1973,11 +1967,9 @@
    {
     "system": "material",
     "event": "surviving-structure",
-    "start": 800,
-    "end": 1900,
     "label": "undated stone shrine of the Garhwal Nāgara type",
     "certainty": "disputed",
-    "basis": "no dated inscription known to the sources consulted; regional style only",
+    "basis": "no dated inscription known to the sources consulted; regional style only; no numeric date is given because none is supported by evidence (verification round 2)",
     "sources": [
      {
       "source": "src:wikipedia",
@@ -2045,7 +2037,7 @@
     "start": 1204,
     "end": 1204,
     "label": "1204 CE",
-    "certainty": "secure",
+    "certainty": "estimated",
     "basis": "dated foundation inscription (Śaka year) in the temple hall, as reported",
     "sources": [
      {
@@ -2231,11 +2223,9 @@
    {
     "system": "material",
     "event": "surviving-structure",
-    "start": 1200,
-    "end": 1930,
     "label": "13th c. founding claimed; fabric repeatedly renewed",
     "certainty": "disputed",
-    "basis": "unsourced claim in the reference; no dated foundation record",
+    "basis": "unsourced claim in the reference; no dated foundation record; no numeric date is given because none is supported by evidence (verification round 2)",
     "sources": [
      {
       "source": "src:wikipedia",
@@ -4274,7 +4264,7 @@
     "start": 1189,
     "end": 1189,
     "label": "1189 CE",
-    "certainty": "secure",
+    "certainty": "estimated",
     "basis": "dated inscription in the temple, as reported",
     "sources": [
      {
@@ -5158,7 +5148,7 @@
   "traditions": [
    "trad:ganapatya"
   ],
-  "summary": "One of the larger Aṣṭavināyaka temples, at Theur near Pune, where Gaṇeśa recovered the wish-granting jewel for the sage Kapila; a favoured shrine of the Peśvā Mādhavrāv I, who died there in 1772.",
+  "summary": "One of the larger Aṣṭavināyaka temples, at Theur near Pune, where, by temple tradition, Gaṇeśa recovered the wish-granting jewel for the sage Kapila; a favoured shrine of the Peśvā Mādhavrāv I, who died there in 1772.",
   "dates": [
    {
     "system": "material",
@@ -5168,6 +5158,19 @@
     "label": "18th c. (Peśvā patronage)",
     "certainty": "estimated",
     "basis": "reported Peśvā patronage",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Chintamani_Temple,_Theur"
+     }
+    ]
+   },
+   {
+    "system": "traditional",
+    "event": "sthala-purāṇa",
+    "label": "Gaṇeśa recovers the cintāmaṇi jewel for Kapila (temple tradition)",
+    "certainty": "estimated",
+    "basis": "temple tradition (sthala-purāṇa); not a historical date",
     "sources": [
      {
       "source": "src:wikipedia",
@@ -5210,7 +5213,7 @@
   "confidence": "medium",
   "status": "reference-checked",
   "agent": "temple",
-  "limits": "The 18th-century patronage is reported; the death of Mādhavrāv I at Theur is from recall.",
+  "limits": "The 18th-century patronage is reported; the death of Mādhavrāv I at Theur is from recall. The cintāmaṇi story is the temple’s sthala-purāṇa (class 6).",
   "lastVerified": "2026-11-08"
  },
  {
@@ -5300,7 +5303,7 @@
   "traditions": [
    "trad:ganapatya"
   ],
-  "summary": "Aṣṭavināyaka temple at Ozar on the Kukaḍī river near Junnar, where Gaṇeśa defeated the obstacle-demon Vighnāsura; renovated in 1967.",
+  "summary": "Aṣṭavināyaka temple at Ozar on the Kukaḍī river near Junnar where, by temple tradition, Gaṇeśa defeated the obstacle-demon Vighnāsura; renovated in 1967.",
   "dates": [
    {
     "system": "material",
@@ -5310,6 +5313,19 @@
     "label": "1967 renovation",
     "certainty": "estimated",
     "basis": "as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vigneshwara_Temple,_Ozar"
+     }
+    ]
+   },
+   {
+    "system": "traditional",
+    "event": "sthala-purāṇa",
+    "label": "Gaṇeśa’s victory over Vighnāsura (temple tradition)",
+    "certainty": "estimated",
+    "basis": "temple tradition (sthala-purāṇa); not a historical date",
     "sources": [
      {
       "source": "src:wikipedia",
@@ -5352,7 +5368,7 @@
   "confidence": "medium",
   "status": "reference-checked",
   "agent": "temple",
-  "limits": "The reference gives no construction date for the earlier fabric; only the 1967 renovation is dated.",
+  "limits": "The reference gives no construction date for the earlier fabric; only the 1967 renovation is dated. The Vighnāsura story is the temple’s sthala-purāṇa (class 6).",
   "lastVerified": "2026-11-08"
  },
  {
@@ -5368,11 +5384,9 @@
    {
     "system": "material",
     "event": "construction",
-    "start": 800,
-    "end": 999,
     "label": "9th–10th c. (claimed)",
     "certainty": "disputed",
-    "basis": "unsupported statement in the reference",
+    "basis": "unsupported statement in the reference; no numeric date is given because none is supported by evidence (verification round 2)",
     "sources": [
      {
       "source": "src:wikipedia",
@@ -6123,7 +6137,7 @@
     "start": 1590,
     "end": 1590,
     "label": "1590 CE",
-    "certainty": "secure",
+    "certainty": "estimated",
     "basis": "dated inscription on the temple, as reported",
     "sources": [
      {
@@ -6786,7 +6800,7 @@
     "start": 1058,
     "end": 1058,
     "label": "c. 1058 CE (18th regnal year of Udyotakeśarī)",
-    "certainty": "secure",
+    "certainty": "estimated",
     "basis": "dated inscription preserved in records, as reported",
     "sources": [
      {
@@ -7262,8 +7276,8 @@
    }
   ],
   "location": {
-   "lat": 23.07171,
-   "lon": 87.32679,
+   "lat": 23.0682,
+   "lon": 87.3221,
    "precision": "exact",
    "label": "Bishnupur, Bankura district, West Bengal, India",
    "country": "India"
@@ -7317,7 +7331,7 @@
     "start": 1655,
     "end": 1655,
     "label": "1655 CE (Malla era 961)",
-    "certainty": "secure",
+    "certainty": "estimated",
     "basis": "foundation plaque as reported",
     "sources": [
      {
@@ -7397,7 +7411,7 @@
     "start": 1643,
     "end": 1643,
     "label": "1643 CE",
-    "certainty": "secure",
+    "certainty": "estimated",
     "basis": "foundation plaque as reported",
     "sources": [
      {
@@ -7799,11 +7813,9 @@
    {
     "system": "material",
     "event": "surviving-structure",
-    "start": 1000,
-    "end": 1999,
     "label": "undated (11th-c. origin claimed)",
     "certainty": "disputed",
-    "basis": "the reference states the temple “is believed to date back to the 11th century”",
+    "basis": "the reference states the temple “is believed to date back to the 11th century”; no numeric date is given because none is supported by evidence (verification round 2)",
     "sources": [
      {
       "source": "src:wikipedia",
@@ -8207,11 +8219,9 @@
    {
     "system": "material",
     "event": "construction",
-    "start": 345,
-    "end": 365,
     "label": "4th c. (Kadamba, claimed)",
     "certainty": "disputed",
-    "basis": "unsupported attribution in the reference",
+    "basis": "unsupported attribution in the reference; no numeric date is given because none is supported by evidence (verification round 2)",
     "sources": [
      {
       "source": "src:wikipedia",
@@ -8286,11 +8296,9 @@
    {
     "system": "material",
     "event": "construction",
-    "start": 700,
-    "end": 900,
     "label": "c. 800 (claimed)",
     "certainty": "disputed",
-    "basis": "unsupported statement in the reference",
+    "basis": "unsupported statement in the reference; no numeric date is given because none is supported by evidence (verification round 2)",
     "sources": [
      {
       "source": "src:wikipedia",
@@ -8366,11 +8374,9 @@
    {
     "system": "material",
     "event": "construction",
-    "start": 1100,
-    "end": 1199,
     "label": "12th c. original shrine (claimed)",
     "certainty": "disputed",
-    "basis": "as reported",
+    "basis": "as reported; no numeric date is given because none is supported by evidence (verification round 2)",
     "sources": [
      {
       "source": "src:wikipedia",
@@ -8519,7 +8525,7 @@
     "start": 1112,
     "end": 1112,
     "label": "1112 CE",
-    "certainty": "secure",
+    "certainty": "estimated",
     "basis": "dated inscription in the temple, as reported",
     "sources": [
      {
@@ -8929,7 +8935,7 @@
     "start": 1163,
     "end": 1163,
     "label": "1163 CE",
-    "certainty": "secure",
+    "certainty": "estimated",
     "basis": "Hanamkonda inscription of Rudradeva (recall of the date; the reference does not quote it)",
     "sources": [
      {
@@ -10744,11 +10750,9 @@
    {
     "system": "material",
     "event": "surviving-structure",
-    "start": 900,
-    "end": 1699,
     "label": "Cōḻa foundation with later additions (not dated in the reference)",
     "certainty": "disputed",
-    "basis": "no dates in the reference consulted",
+    "basis": "no dates in the reference consulted; no numeric date is given because none is supported by evidence (verification round 2)",
     "sources": [
      {
       "source": "src:wikipedia",
@@ -10804,11 +10808,9 @@
    {
     "system": "material",
     "event": "surviving-structure",
-    "start": 900,
-    "end": 1699,
     "label": "Cōḻa foundation with later additions (not dated in the reference)",
     "certainty": "disputed",
-    "basis": "no dates in the reference consulted",
+    "basis": "no dates in the reference consulted; no numeric date is given because none is supported by evidence (verification round 2)",
     "sources": [
      {
       "source": "src:wikipedia",
@@ -10864,11 +10866,9 @@
    {
     "system": "material",
     "event": "surviving-structure",
-    "start": 900,
-    "end": 1699,
     "label": "Cōḻa foundation with later additions (not dated in the reference)",
     "certainty": "disputed",
-    "basis": "no dates in the reference consulted",
+    "basis": "no dates in the reference consulted; no numeric date is given because none is supported by evidence (verification round 2)",
     "sources": [
      {
       "source": "src:wikipedia",
@@ -11573,11 +11573,9 @@
    {
     "system": "material",
     "event": "surviving-structure",
-    "start": 1700,
-    "end": 2000,
     "label": "Kerala-style buildings, not dated in the reference",
     "certainty": "disputed",
-    "basis": "no dates in the reference consulted",
+    "basis": "no dates in the reference consulted; no numeric date is given because none is supported by evidence (verification round 2)",
     "sources": [
      {
       "source": "src:wikipedia",
@@ -11651,11 +11649,9 @@
    {
     "system": "material",
     "event": "surviving-structure",
-    "start": 900,
-    "end": 1700,
     "label": "undated (granite structure; not dated in the reference)",
     "certainty": "disputed",
-    "basis": "no dates in the reference consulted",
+    "basis": "no dates in the reference consulted; no numeric date is given because none is supported by evidence (verification round 2)",
     "sources": [
      {
       "source": "src:wikipedia",
@@ -11862,11 +11858,9 @@
    {
     "system": "material",
     "event": "surviving-structure",
-    "start": 1600,
-    "end": 1999,
     "label": "undated (17th-c. foundation traditionally claimed)",
     "certainty": "disputed",
-    "basis": "no dates in the reference consulted",
+    "basis": "no dates in the reference consulted; no numeric date is given because none is supported by evidence (verification round 2)",
     "sources": [
      {
       "source": "src:wikipedia",
@@ -12022,7 +12016,7 @@
     "start": 1702,
     "end": 1702,
     "label": "1702 CE (25 January–26 June)",
-    "certainty": "secure",
+    "certainty": "estimated",
     "basis": "chronicle dates as reported",
     "sources": [
      {
@@ -12722,11 +12716,9 @@
    {
     "system": "material",
     "event": "surviving-structure",
-    "start": 1800,
-    "end": 2020,
     "label": "present building (19th–21st c., not dated in the reference)",
     "certainty": "disputed",
-    "basis": "the 1,500-year claim is not supported by evidence in the reference",
+    "basis": "the 1,500-year claim is not supported by evidence in the reference; no numeric date is given because none is supported by evidence (verification round 2)",
     "sources": [
      {
       "source": "src:wikipedia",
@@ -13193,7 +13185,7 @@
     "start": 921,
     "end": 921,
     "label": "921 CE",
-    "certainty": "secure",
+    "certainty": "estimated",
     "basis": "dated doorjamb inscription, as reported",
     "sources": [
      {
@@ -13261,7 +13253,7 @@
     "start": 881,
     "end": 881,
     "label": "881 CE (Indravarman I)",
-    "certainty": "secure",
+    "certainty": "estimated",
     "basis": "foundation stele, as reported",
     "sources": [
      {
@@ -13880,7 +13872,7 @@
     "start": 1369,
     "end": 1369,
     "label": "1369 CE",
-    "certainty": "secure",
+    "certainty": "estimated",
     "basis": "dated building in the complex, as reported",
     "sources": [
      {
@@ -14801,14 +14793,14 @@
    "trad:srivaishnava"
   ],
   "summary": "Temple of Veṅkaṭeśvara in Penn Hills near Pittsburgh, modelled on Tirumala and consecrated on 8 June 1977 with help from the Tirumala Tirupati Devasthanams and the Andhra Pradesh endowments department — the first Hindu temple in the United States built by Indian immigrants.",
-  "details": "Groundbreaking was on 17 April 1975. Joanne Waghorne’s study of diaspora temples treats such Āgamic temples as transplanting South Indian ritual into a suburban middle-class setting; the temple is a pilgrimage centre for Hindus of the American north-east and mid-west.",
+  "details": "Published accounts differ on the date of the groundbreaking (1975 or 1976). Joanne Waghorne’s study of diaspora temples treats such Āgamic temples as transplanting South Indian ritual into a suburban middle-class setting; the temple is a pilgrimage centre for Hindus of the American north-east and mid-west.",
   "dates": [
    {
     "system": "material",
     "event": "consecration",
-    "start": 1975,
+    "start": 1977,
     "end": 1977,
-    "label": "begun 1975; consecrated 8 June 1977",
+    "label": "consecrated 8 June 1977",
     "certainty": "secure",
     "basis": "documented dates",
     "sources": [

@@ -4271,17 +4271,18 @@
    "repository": "Cleveland Museum of Art",
    "accession": "1999.226",
    "metal": "gold",
-   "attribution": "India, Mathura, Kushan period"
+   "attribution": "India, Mathura, Kushan period",
+   "museum dating": "c. 142/145+ (Cleveland Museum of Art, on an older Kuṣāṇa chronology)"
   },
   "dates": [
    {
     "system": "material",
     "event": "minting",
-    "start": 142,
-    "end": 177,
-    "label": "c. 142/145+ (museum dating)",
+    "start": 190,
+    "end": 230,
+    "label": "reign of Vāsudeva I (c. 190–230)",
     "certainty": "estimated",
-    "basis": "museum attribution (reign of Vāsudeva I)",
+    "basis": "dated to the issuing king’s reign as the graph dates it; the museum’s c. 142/145+ follows an older chronology",
     "sources": [
      {
       "source": "src:cma-open-access",
@@ -9268,7 +9269,7 @@
       "url": "https://en.wikipedia.org/wiki/Kankali_Tila"
      }
     ],
-    "view": "older era equation (78 CE)"
+    "view": "older equation (78 CE epoch)"
    },
    {
     "system": "material",
@@ -9276,7 +9277,7 @@
     "start": 179,
     "end": 183,
     "label": "year 54 = c. 181 CE (if the era began in 127 CE)",
-    "certainty": "disputed",
+    "certainty": "estimated",
     "basis": "dated pedestal inscription with the now widely accepted 127 CE epoch of Kaniṣka",
     "sources": [
      {
@@ -9284,7 +9285,7 @@
       "url": "https://en.wikipedia.org/wiki/Kankali_Tila"
      }
     ],
-    "view": "Kaniṣka era from 127 CE"
+    "view": "now widely accepted equation (127 CE epoch)"
    }
   ],
   "evidenceClass": 4,

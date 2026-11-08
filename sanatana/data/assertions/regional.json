@@ -1378,7 +1378,7 @@
     "url": "https://en.wikipedia.org/wiki/Andhra_Mahabharatam"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "source-checked",
   "agent": "regional"
  },
@@ -1449,7 +1449,7 @@
     "url": "https://en.wikipedia.org/wiki/Kumaravyasa"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "source-checked",
   "agent": "regional"
  },
@@ -2225,7 +2225,7 @@
     "url": "https://en.wikipedia.org/wiki/Ranganatha_Ramayanam"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "source-checked",
   "agent": "regional"
  },
@@ -2325,7 +2325,7 @@
     "url": "https://en.wikipedia.org/wiki/Kakawin_Ramayana"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "source-checked",
   "agent": "regional"
  },
@@ -2832,7 +2832,7 @@
     "locator": "passim"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "source-checked",
   "agent": "regional"
  },
@@ -2852,7 +2852,7 @@
     "locator": "passim"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "source-checked",
   "agent": "regional"
  },
@@ -3534,7 +3534,7 @@
     "locator": "passim"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "source-checked",
   "agent": "regional"
  },
@@ -4565,7 +4565,7 @@
     "locator": "passim"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "source-checked",
   "agent": "regional"
  },
@@ -4718,7 +4718,7 @@
     "locator": "passim"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "source-checked",
   "agent": "regional"
  },
@@ -6607,7 +6607,7 @@
     "url": "https://en.wikipedia.org/wiki/Adikavi_Pampa"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "source-checked",
   "agent": "regional"
  },
@@ -6638,7 +6638,7 @@
     "url": "https://en.wikipedia.org/wiki/Ramakien"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "source-checked",
   "agent": "regional"
  },
@@ -7064,7 +7064,7 @@
     "url": "https://en.wikipedia.org/wiki/Bammera_Potana"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "source-checked",
   "agent": "regional"
  },
@@ -9450,7 +9450,7 @@
     "locator": "war books"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "source-checked",
   "agent": "regional"
  },

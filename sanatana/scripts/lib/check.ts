@@ -90,7 +90,9 @@ function checkDate(d: DateClaim, sourceIds: Set<string>, file: string, id: strin
   if (!CERTAINTY.has(d.certainty)) issues.push({ severity: 'error', file, id, message: `date: unknown certainty "${d.certainty}"` })
   if (!d.label) issues.push({ severity: 'error', file, id, message: 'date: missing label' })
   if (!d.event) issues.push({ severity: 'warn', file, id, message: 'date: missing event (what is dated)' })
-  if (d.system !== 'traditional') {
+  // a disputed claim with no evidence for any range may stay as a label only: it is shown, never placed
+  const unplaced = d.certainty === 'disputed' && d.start === undefined && d.end === undefined
+  if (d.system !== 'traditional' && !unplaced) {
     if (typeof d.start !== 'number' || typeof d.end !== 'number') {
       issues.push({ severity: 'error', file, id, message: `date "${d.label}": non-traditional dates need numeric start and end` })
     } else {
@@ -202,6 +204,9 @@ export function checkDataset(ds: Dataset): { issues: Issue[]; entities: Map<stri
       }
       if ((a.p === 'AVATARA_OF' || a.p === 'IDENTIFIED_WITH' || a.p === 'FORM_OF') && !a.qualifiers?.tradition && !a.qualifiers?.text) {
         issues.push({ severity: 'warn', file, id: a.id, message: `${a.p} should be qualified by tradition or text` })
+      }
+      if (a.confidence === 'high' && (a.sources ?? []).length && a.sources.every((r) => sources.get(r.source)?.type === 'reference')) {
+        issues.push({ severity: 'warn', file, id: a.id, message: 'high confidence resting on a reference work alone — add the scholarly or primary source, or lower the confidence' })
       }
       if (a.confidence === 'high' && a.status === 'recall' && a.evidenceClass === 1) {
         issues.push({ severity: 'warn', file, id: a.id, message: 'high-confidence textual locator from recall — verify online' })

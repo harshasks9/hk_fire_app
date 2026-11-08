@@ -18,13 +18,18 @@ const EgoGraph = lazy(() => import('../components/EgoGraph.tsx'))
 
 type Rel = { edge: GEdge; other: GNode; dir: 'out' | 'in' }
 const TEXTUAL = new Set(['APPEARS_IN', 'MENTIONED_IN', 'NARRATED_IN', 'TEACHES_IN'])
-const GROUPS: { key: string; title: string; preds: string[] }[] = [
+/** MEMBER_OF covers lineages and polities (kinship) but also groups, styles and schools —
+ *  the Mahāvidyās, a Jyotirliṅga, the Nāgara style, the Cōḻa bronzes — which are not kin */
+const KIN_GROUP_TYPES = new Set(['lineage', 'polity', 'institution'])
+const memberObjType = (r: Rel, self: GNode) => (r.dir === 'out' ? r.other.type : self.type)
+const GROUPS: { key: string; title: string; preds: string[]; when?: (r: Rel, self: GNode) => boolean }[] = [
   { key: 'structure', title: 'Place in the literature', preds: ['PART_OF', 'RECENSION_OF', 'RETELLS', 'DERIVED_FROM', 'COMMENTARY_ON', 'TRANSLATION_OF', 'ATTRIBUTED_TO', 'COMPOSED_BY', 'EDITED_BY', 'REFERS_TO_TEXT', 'WITNESS_OF'] },
   { key: 'theology', title: 'Theological identifications', preds: ['AVATARA_OF', 'FORM_OF', 'IDENTIFIED_WITH', 'CENTRAL_TO', 'VAHANA_OF'] },
   { key: 'social', title: 'Teachers, allies & adversaries', preds: ['TEACHER_OF', 'ALLY_OF', 'ADVERSARY_OF', 'DEVOTEE_OF', 'SERVES', 'SLAYS', 'CURSES', 'BLESSES'] },
   { key: 'narratives', title: 'Narratives & sequence', preds: ['PARTICIPANT_IN', 'OCCURS_AT', 'PRECEDES'] },
-  { key: 'material', title: 'Temples, places & material evidence', preds: ['LOCATED_AT', 'ASSOCIATED_WITH', 'WORSHIPPED_AT', 'DEPICTED_IN', 'FOUND_AT', 'HELD_AT', 'INSCRIBED_AT', 'COMMISSIONED_BY', 'BUILT_DURING', 'REFERS_TO', 'INTERPRETED_AS', 'DOCUMENTED_BY', 'RULED_BY'] },
-  { key: 'kin', title: 'Kinship & lineage (all assertions)', preds: ['PARENT_OF', 'SPOUSE_OF', 'SIBLING_OF', 'ADOPTIVE_PARENT_OF', 'MEMBER_OF', 'DESCENDANT_OF'] },
+  { key: 'material', title: 'Temples, places & material evidence', preds: ['LOCATED_AT', 'ASSOCIATED_WITH', 'WORSHIPPED_AT', 'DEPICTED_IN', 'FOUND_AT', 'HELD_AT', 'INSCRIBED_AT', 'COMMISSIONED_BY', 'MADE_BY', 'BUILT_DURING', 'REFERS_TO', 'INTERPRETED_AS', 'DOCUMENTED_BY', 'RULED_BY'] },
+  { key: 'kin', title: 'Kinship & lineage (all assertions)', preds: ['PARENT_OF', 'SPOUSE_OF', 'SIBLING_OF', 'ADOPTIVE_PARENT_OF', 'MEMBER_OF', 'DESCENDANT_OF'], when: (r, self) => r.edge.p !== 'MEMBER_OF' || KIN_GROUP_TYPES.has(memberObjType(r, self)) },
+  { key: 'groups', title: 'Groups, styles & schools', preds: ['MEMBER_OF'], when: (r, self) => !KIN_GROUP_TYPES.has(memberObjType(r, self)) },
   { key: 'argument', title: 'Evidence for and against', preds: ['SUPPORTS', 'CONTRADICTS', 'CONCERNS'] },
 ]
 
@@ -252,7 +257,7 @@ export function EntityPage({ id }: { id: string }) {
 
         <Section id="relations" kicker="Direct textual references and every other connection" title={`All ${rels.length} relationships`}>
           {GROUPS.map((g) => {
-            const xs = rels.filter((r) => g.preds.includes(r.edge.p))
+            const xs = rels.filter((r) => g.preds.includes(r.edge.p) && (!g.when || g.when(r, n)))
             if (!xs.length) return null
             return (
               <div key={g.key} className="mb-7">

@@ -71,7 +71,7 @@ export const PREDICATES = {
   SPOUSE_OF: 'is spouse of',
   SIBLING_OF: 'is sibling of',
   ADOPTIVE_PARENT_OF: 'is adoptive/foster parent of',
-  MEMBER_OF: 'belongs to', // character→lineage, person→polity, temple→tradition is NOT this
+  MEMBER_OF: 'belongs to', // character→lineage, person→polity/tradition; also a group, style or school: deity→group (Mahāvidyās, Navagrahas), temple→architectural style or pilgrimage group (Jyotirliṅgas), artifact→school. A temple's religious tradition is CENTRAL_TO/WORSHIPPED_AT, not this
   DESCENDANT_OF: 'is a descendant of',
 
   // social and narrative relations
@@ -102,7 +102,8 @@ export const PREDICATES = {
   FOUND_AT: 'was found at', // artifact/inscription/manuscript → site/place
   HELD_AT: 'is held at', // artifact/manuscript → institution
   INSCRIBED_AT: 'is inscribed at/on', // inscription → temple/artifact/site
-  COMMISSIONED_BY: 'was commissioned/patronised by', // temple/artifact/inscription → person/polity
+  COMMISSIONED_BY: 'was commissioned/patronised by', // temple/artifact/inscription → person/polity (the patron)
+  MADE_BY: 'was made by', // artifact/manuscript/inscription → person (painter, sculptor, engraver, composer; qualifier.role)
   BUILT_DURING: 'was built during the rule of', // temple → polity
   RULED_BY: 'was ruled by', // polity ↔ person (person MEMBER_OF polity preferred)
   REFERS_TO: 'refers to / invokes', // inscription/coin → deity/character

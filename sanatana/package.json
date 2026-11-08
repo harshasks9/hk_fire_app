@@ -19,6 +19,7 @@
     "seed:sources": "node --experimental-strip-types --disable-warning=ExperimentalWarning scripts/seed-sources.ts",
     "seed:discoveries": "node --experimental-strip-types --disable-warning=ExperimentalWarning scripts/seed-discoveries.ts",
     "apply:verification": "node --experimental-strip-types --disable-warning=ExperimentalWarning scripts/apply-verification.ts",
+    "apply:verification-r2": "node --experimental-strip-types --disable-warning=ExperimentalWarning scripts/apply-verification-r2.ts",
     "find": "node --experimental-strip-types --disable-warning=ExperimentalWarning scripts/find.ts",
     "report:r2": "node --experimental-strip-types --disable-warning=ExperimentalWarning scripts/round2-report.ts"
   },

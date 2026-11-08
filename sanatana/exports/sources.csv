@@ -134,6 +134,8 @@ src:goswamy-fischer-1992,scholarly-book,Pahari Masters: Court Painters of Northe
 src:jaffer-ramayana-doha,catalogue,"Museum of Islamic Art, Doha — collection (Ramayana of Hamida Banu Begum)",,,Qatar Museums,https://www.mia.org.qa/
 src:allan-1936,catalogue,Catalogue of the Coins of Ancient India (Catalogue of the Indian Coins in the British Museum),John Allan,1936,"British Museum, London",
 src:schoyen-collection,catalogue,The Schøyen Collection — online catalogue,,,"The Schøyen Collection, Oslo and London",https://www.schoyencollection.com/
+src:mandal-ratnagar-2007,scholarly-book,Ayodhya: Archaeology after Excavation,D. Mandal and Shereen Ratnagar,2007,"Tulika Books, New Delhi",
+src:varma-menon-2010,journal-article,Was There a Temple under the Babri Masjid? Reading the Archaeological “Evidence”,Supriya Varma and Jaya Menon,2010,Economic and Political Weekly 45.50,
 src:salomon-1998,scholarly-book,"Indian Epigraphy: A Guide to the Study of Inscriptions in Sanskrit, Prakrit, and the Other Indo-Aryan Languages",Richard Salomon,1998,"Oxford University Press, New York",
 src:fleet-1888,epigraphic-corpus,"Corpus Inscriptionum Indicarum, vol. III: Inscriptions of the Early Gupta Kings and their Successors",John Faithfull Fleet,1888,"Superintendent of Government Printing, Calcutta",
 src:luders-janert-1961,epigraphic-corpus,Mathurā Inscriptions: Unpublished Papers,Heinrich Lüders; ed. Klaus Ludwig Janert,1961,"Vandenhoeck & Ruprecht, Göttingen (Abhandlungen der Akademie der Wissenschaften in Göttingen, Phil.-Hist. Kl., 3. Folge, Nr. 47)",
@@ -580,7 +582,7 @@ src:gretil-nyayaparishuddhi,primary-text,"Veṅkaṭanātha (Vedānta Deśika): 
 src:gretil-bhaktirasamritasindhu,primary-text,Rūpa Gosvāmī: Bhaktirasāmṛtasindhu (GRETIL e-text),Rūpa Gosvāmī,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rUpagosvAmin-haribhaktirasAmRtasindhu.txt
 src:gretil-rv-padapatha,primary-text,Ṛgveda-Saṃhitā Padapāṭha (GRETIL e-text),ascribed to Śākalya,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_RgvedasaMhitApadapATha.txt
 src:gretil-samkhyasara,primary-text,Vijñānabhikṣu: Sāṃkhyasāra (GRETIL e-text),Vijñānabhikṣu,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_vijJAnabhikSu-sAMkhyasAra.txt
-src:gretil-natyashastra,primary-text,Bharata: Nāṭyaśāstra (GRETIL e-text),ascribed to Bharata,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bharata-nATyazAstra.txt
+src:gretil-natyashastra,primary-text,Bharata: Nāṭyaśāstra (GRETIL e-text),ascribed to Bharata,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bharata-nATyazAstra-1-1618-303335-37.txt
 src:gretil-ishvarapratyabhijna,primary-text,Utpaladeva: Īśvarapratyabhijñākārikā with his Vṛtti (GRETIL e-text),Utpaladeva,,,https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_utpaladeva-IzvarapratyabhijJAkArikA-with-vRtti.txt
 src:torella-1994,translation,The Īśvarapratyabhijñākārikā of Utpaladeva with the Author’s Vṛtti (Serie Orientale Roma 71),Raffaele Torella,1994,Istituto Italiano per il Medio ed Estremo Oriente (Rome),
 src:pollock-2016,translation,A Rasa Reader: Classical Indian Aesthetics,Sheldon Pollock,2016,Columbia University Press,

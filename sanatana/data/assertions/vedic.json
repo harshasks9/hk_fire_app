@@ -846,7 +846,7 @@
     "url": "https://en.wikipedia.org/wiki/Rigveda"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "source-checked",
   "agent": "vedic"
  },
@@ -946,7 +946,7 @@
     "url": "https://en.wikipedia.org/wiki/Sayana"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "source-checked",
   "competing": "Parts of the commentaries ascribed to Sāyaṇa were written by pupils or with his brother Mādhava.",
   "agent": "vedic"

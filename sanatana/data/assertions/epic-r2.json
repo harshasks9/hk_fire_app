@@ -722,16 +722,17 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE) 2.57.8",
+    "locator": "VR (CE) 2.57.1",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt",
-    "quote": "kumāraḥ śabdavedhīti mayā pāpam idaṃ kṛtam"
+    "quote": "pratibuddho muhur tena śokopahatacetanaḥ atha rājā daśarathaḥ sa cintām abhyapadyata"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (VR (CE) 2.57.8) to a verse in the episode that names the participant (“undefined”)."
  },
  {
   "id": "epic:r2-37",
@@ -8030,16 +8031,17 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.151.16",
+    "locator": "MBh (CE) 1.149.20",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm",
-    "quote": "bakapāṇḍavayor mahat"
+    "quote": "tataḥ kuntī ca vipraś ca sahitāv anilātmajam tam abrūtāṃ kuruṣveti sa tathety abravīc ca tau"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (MBh (CE) 1.151.16) to a verse in the episode that names the participant (“kuntī”)."
  },
  {
   "id": "epic:r2-402",
@@ -8469,13 +8471,14 @@
     "locator": "MBh (CE) 3.43.1",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm",
-    "quote": "gateṣu lokapāleṣu pārthaḥ śatrunibarhaṇaḥ"
+    "quote": "vaiśaṃpāyana uvāca gateṣu lokapāleṣu pārthaḥ śatrunibarhaṇaḥ cintayām āsa rājendra devarājarathāgamam"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (MBh (CE) 3.43.1) to a verse in the episode that names the participant (“devarājarathāgamam”)."
  },
  {
   "id": "epic:r2-424",
@@ -8486,16 +8489,17 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 3.43.1",
+    "locator": "MBh (CE) 3.45.8",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm",
-    "quote": "gateṣu lokapāleṣu pārthaḥ śatrunibarhaṇaḥ"
+    "quote": "sakhāyaṃ pradadau cāsya citrasenaṃ puraṃdaraḥ sa tena saha saṃgamya reme pārtho nirāmayaḥ"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (MBh (CE) 3.43.1) to a verse in the episode that names the participant (“citrasenaṃ”)."
  },
  {
   "id": "epic:r2-425",
@@ -8604,16 +8608,17 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 3.154.59",
+    "locator": "MBh (CE) 3.154.6",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm",
-    "quote": "śiraḥ kāyād apāharat"
+    "quote": "gṛhītvā sarvaśastrāṇi draupadīṃ parigṛhya ca prātiṣṭhata sa duṣṭātmā trīn gṛhītvā ca pāṇḍavān"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (MBh (CE) 3.154.59) to a verse in the episode that names the participant (“undefined”)."
  },
  {
   "id": "epic:r2-431",
@@ -8624,16 +8629,17 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 3.154.59",
+    "locator": "MBh (CE) 3.154.7",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm",
-    "quote": "śiraḥ kāyād apāharat"
+    "quote": "sahadevas tu yatnena tato 'pakramya pāṇḍavaḥ ākrandad bhīmasenaṃ vai yena yāto mahābalaḥ"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (MBh (CE) 3.154.59) to a verse in the episode that names the participant (“undefined”)."
  },
  {
   "id": "epic:r2-432",
@@ -8703,16 +8709,17 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 3.177.6",
+    "locator": "MBh (CE) 3.177.12",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm",
-    "quote": "nahuṣo nāma rājāham āsaṃ pūrvas tavānagha"
+    "quote": "praśnān uccāritāṃs tu tvaṃ vyāhariṣyasi cen mama atha paścād vimokṣyāmi bhrātaraṃ te vṛkodaram"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (MBh (CE) 3.177.6) to a verse in the episode that names the participant (“undefined”)."
  },
  {
   "id": "epic:r2-436",
@@ -8802,16 +8809,17 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 3.231.6",
+    "locator": "MBh (CE) 3.231.13",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm",
-    "quote": "duryodhanaṃ citraseno virathaṃ patitaṃ bhuvi abhidrutya mahābāhur jīvagrāham athāgrahīt"
+    "quote": "iti duryodhanāmātyāḥ krośanto rājagṛddhinaḥ ārtā dīnasvarāḥ sarve yudhiṣṭhiram upāgaman"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (MBh (CE) 3.231.6) to a verse in the episode that names the participant (“undefined”)."
  },
  {
   "id": "epic:r2-441",
@@ -8842,16 +8850,17 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 3.231.6",
+    "locator": "MBh (CE) 3.231.1",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm",
-    "quote": "duryodhanaṃ citraseno virathaṃ patitaṃ bhuvi abhidrutya mahābāhur jīvagrāham athāgrahīt"
+    "quote": "vaiśaṃpāyana uvāca gandharvais tu mahārāja bhagne karṇe mahārathe saṃprādravac camūḥ sarvā dhārtarāṣṭrasya paśyataḥ"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (MBh (CE) 3.231.6) to a verse in the episode that names the participant (“undefined”)."
  },
  {
   "id": "epic:r2-443",
@@ -8862,16 +8871,17 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 3.231.6",
+    "locator": "MBh (CE) 3.230.17",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm",
-    "quote": "duryodhanaṃ citraseno virathaṃ patitaṃ bhuvi abhidrutya mahābāhur jīvagrāham athāgrahīt"
+    "quote": "atha duryodhano rājā śakuniś cāpi saubalaḥ duḥśāsano vikarṇaś ca ye cānye dhṛtarāṣṭrajāḥ nyahanaṃs tat tadā sainyaṃ rathair garuḍanisvanaiḥ"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (MBh (CE) 3.231.6) to a verse in the episode that names the participant (“undefined”)."
  },
  {
   "id": "epic:r2-444",
@@ -9060,16 +9070,17 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 3.246.1",
+    "locator": "MBh (CE) 3.246.11",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm",
-    "quote": "vrīhidroṇaḥ parityaktaḥ"
+    "quote": "taṃ tu śuśrāva dharmiṣṭhaṃ mudgalaṃ saṃśitavratam durvāsā nṛpa digvāsās tam athābhyājagāma ha"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (MBh (CE) 3.246.1) to a verse in the episode that names the participant (“undefined”)."
  },
  {
   "id": "epic:r2-454",
@@ -9430,16 +9441,17 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 4.67.7",
+    "locator": "MBh (CE) 4.67.15",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_04_u.htm",
-    "quote": "snuṣārtham uttarāṃ rājan pratigṛhṇāmi te sutām"
+    "quote": "tasmin vasaṃś ca bībhatsur ānināya janārdanam ānartebhyo 'pi dāśārhān abhimanyuṃ ca pāṇḍavaḥ"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (MBh (CE) 4.67.7) to a verse in the episode that names the participant (“undefined”)."
  },
  {
   "id": "epic:r2-473",
@@ -9514,16 +9526,17 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 6.33.9",
+    "locator": "MBh (CE) 6.33.35",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_06_u.htm",
-    "quote": "darśayām āsa pārthāya paramaṃ rūpam aiśvaram"
+    "quote": "saṃjaya uvāca etac chrutvā vacanaṃ keśavasya; kṛtāñjalir vepamānaḥ kirīṭī namaskṛtvā bhūya evāha kṛṣṇaṃ; sagadgadaṃ bhītabhītaḥ praṇamya"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (MBh (CE) 6.33.9) to a verse in the episode that names the participant (“undefined”)."
  },
  {
   "id": "epic:r2-477",
@@ -9557,13 +9570,14 @@
     "locator": "MBh (CE) 6.33.9",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_06_u.htm",
-    "quote": "darśayām āsa pārthāya paramaṃ rūpam aiśvaram"
+    "quote": "saṃjaya uvāca evam uktvā tato rājan mahāyogeśvaro hariḥ darśayām āsa pārthāya paramaṃ rūpam aiśvaram"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (MBh (CE) 6.33.9) to a verse in the episode that names the participant (“saṃjaya”)."
  },
  {
   "id": "epic:r2-479",
@@ -9846,16 +9860,17 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 7.170.15",
+    "locator": "MBh (CE) 7.170.27",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_07_u.htm",
-    "quote": "prāduścakre tato drauṇir astraṃ nārāyaṇaṃ tadā"
+    "quote": "vāsudevo 'pi dharmātmā kariṣyaty ātmanaḥ kṣamam upadeṣṭuṃ samartho 'yaṃ lokasya kim utātmanaḥ"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (MBh (CE) 7.170.15) to a verse in the episode that names the participant (“vāsudevo”)."
  },
  {
   "id": "epic:r2-494",
@@ -9866,16 +9881,17 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 7.170.15",
+    "locator": "MBh (CE) 7.170.44",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_07_u.htm",
-    "quote": "prāduścakre tato drauṇir astraṃ nārāyaṇaṃ tadā"
+    "quote": "tata utsraṣṭukāmāṃs tān astrāṇy ālakṣya pāṇḍavaḥ bhīmaseno 'bravīd rājann idaṃ saṃharṣayan vacaḥ"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (MBh (CE) 7.170.15) to a verse in the episode that names the participant (“undefined”)."
  },
  {
   "id": "epic:r2-495",
@@ -9886,16 +9902,17 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 7.170.15",
+    "locator": "MBh (CE) 7.170.30",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_07_u.htm",
-    "quote": "prāduścakre tato drauṇir astraṃ nārāyaṇaṃ tadā"
+    "quote": "kāmaḥ saṃpadyatām asya bībhatsor āśu māṃ prati kalyāṇavṛtta ācāryo mayā yudhi nipātitaḥ"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (MBh (CE) 7.170.15) to a verse in the episode that names the participant (“undefined”)."
  },
  {
   "id": "epic:r2-496",
@@ -9964,16 +9981,17 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 8.61.10",
+    "locator": "MBh (CE) 8.61.1",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_08_u.htm",
-    "quote": "dauḥśāsanaṃ tadrudhiraṃ pibantam"
+    "quote": "saṃjaya uvāca tatrākarod duṣkaraṃ rājaputro; duḥśāsanas tumule yudhyamānaḥ ciccheda bhīmasya dhanuḥ kṣureṇa; ṣaḍbhiḥ śaraiḥ sārathim apy avidhyat"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (MBh (CE) 8.61.10) to a verse in the episode that names the participant (“undefined”)."
  },
  {
   "id": "epic:r2-500",
@@ -10101,16 +10119,17 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 9.16.48",
+    "locator": "MBh (CE) 9.16.36",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_09_u.htm",
-    "quote": "tāṃ sarvaśaktyā prahitāṃ sa śaktiṃ; yudhiṣṭhireṇāprativāryavīryām"
+    "quote": "govindavākyaṃ tvaritaṃ vicintya; dadhre matiṃ śalyavināśanāya sa dharmarājo nihatāśvasūte; rathe tiṣṭhañ śaktim evābhikāṅkṣan"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (MBh (CE) 9.16.48) to a verse in the episode that names the participant (“undefined”)."
  },
  {
   "id": "epic:r2-507",
@@ -10473,16 +10492,17 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 11.16.1",
+    "locator": "MBh (CE) 11.16.9",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_11_u.htm",
-    "quote": "evam uktvā tu gāndhārī kurūṇām āvikartanam apaśyat"
+    "quote": "tato vyāsābhyanujñāto dhṛtarāṣṭro mahīpatiḥ pāṇḍuputrāś ca te sarve yudhiṣṭhirapurogamāḥ"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (MBh (CE) 11.16.1) to a verse in the episode that names the participant (“undefined”)."
  },
  {
   "id": "epic:r2-526",
@@ -10493,16 +10513,20 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 11.16.1",
+    "locator": "MBh (CE) 11.15.15",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_11_u.htm",
-    "quote": "evam uktvā tu gāndhārī kurūṇām āvikartanam apaśyat"
+    "quote": "tayaiva sahitā cāpi putrair anugatā pṛthā abhyagacchata gāndhārīm ārtām ārtatarā svayam"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (MBh (CE) 11.16.1) to a verse in the episode that names the participant (“pṛthā”). The verse leads into the lament: Kuntī goes with Draupadī to Gāndhārī.",
+  "qualifiers": {
+   "note": "The verse leads into the lament: Kuntī goes with Draupadī to Gāndhārī."
+  }
  },
  {
   "id": "epic:r2-527",
@@ -10629,16 +10653,17 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 14.69.3",
+    "locator": "MBh (CE) 14.65.8",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_14_u.htm",
-    "quote": "tataḥ prāṇān punar lebhe pitā tava janeśvara"
+    "quote": "vasatsu vṛṣṇivīreṣu tatrātha janamejaya jajñe tava pitā rājan parikṣit paravīrahā"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (MBh (CE) 14.69.3) to a verse in the episode that names the participant (“parikṣit”)."
  },
  {
   "id": "epic:r2-534",
@@ -10649,16 +10674,17 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 14.69.3",
+    "locator": "MBh (CE) 14.69.8",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_14_u.htm",
-    "quote": "tataḥ prāṇān punar lebhe pitā tava janeśvara"
+    "quote": "utthāya tu yathākālam uttarā yadunandanam abhyavādayata prītā saha putreṇa bhārata tatas tasyai dadau prīto bahuratnaṃ viśeṣataḥ"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (MBh (CE) 14.69.3) to a verse in the episode that names the participant (“uttarā”)."
  },
  {
   "id": "epic:r2-535",
@@ -10809,16 +10835,17 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 14.72.1",
+    "locator": "MBh (CE) 14.78.1",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_14_u.htm",
-    "quote": "vidhivad dīkṣayām āsur aśvamedhāya pārthivam"
+    "quote": "vaiśaṃpāyana uvāca śrutvā tu nṛpatir vīraṃ pitaraṃ babhruvāhanaḥ niryayau vinayenāryo brāhmaṇārghyapuraḥsaraḥ"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (MBh (CE) 14.72.1) to a verse in the episode that names the participant (“undefined”)."
  },
  {
   "id": "epic:r2-543",
@@ -10829,16 +10856,17 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 14.72.1",
+    "locator": "MBh (CE) 14.88.4",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_14_u.htm",
-    "quote": "vidhivad dīkṣayām āsur aśvamedhāya pārthivam"
+    "quote": "athābhyagacchad govindo vṛṣṇibhiḥ saha dharmajam baladevaṃ puraskṛtya sarvaprāṇabhṛtāṃ varaḥ"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (MBh (CE) 14.72.1) to a verse in the episode that names the participant (“undefined”)."
  },
  {
   "id": "epic:r2-544",
@@ -10945,16 +10973,17 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 15.45.31",
+    "locator": "MBh (CE) 15.45.6",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_15_u.htm",
-    "quote": "dāvāgninā samāyukte sa ca rājā pitā tava"
+    "quote": "yudhiṣṭhira uvāca vadanti puruṣā me 'dya gaṅgātīranivāsinaḥ dhṛtarāṣṭraṃ mahātmānam āsthitaṃ paramaṃ tapaḥ"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (MBh (CE) 15.45.31) to a verse in the episode that names the participant (“undefined”)."
  },
  {
   "id": "epic:r2-550",
@@ -11005,16 +11034,20 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 15.45.31",
+    "locator": "MBh (CE) 15.33.15",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_15_u.htm",
-    "quote": "dāvāgninā samāyukte sa ca rājā pitā tava"
+    "quote": "ity uktaḥ pratyuvācedaṃ dhṛtarāṣṭro janādhipam kuśalī viduraḥ putra tapo ghoraṃ samāsthitaḥ"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (MBh (CE) 15.45.31) to a verse in the episode that names the participant (“viduraḥ”). Vidura retires to the forest with Dhṛtarāṣṭra and dies there by yoga (15.33), before the forest fire; he is a participant in the retirement, not in the fire.",
+  "qualifiers": {
+   "note": "Vidura retires to the forest with Dhṛtarāṣṭra and dies there by yoga (15.33), before the forest fire; he is a participant in the retirement, not in the fire."
+  }
  },
  {
   "id": "epic:r2-553",
@@ -11025,16 +11058,17 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 15.45.31",
+    "locator": "MBh (CE) 15.45.16",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_15_u.htm",
-    "quote": "dāvāgninā samāyukte sa ca rājā pitā tava"
+    "quote": "aniketo 'tha rājā sa babhūva vanagocaraḥ te cāpi sahite devyau saṃjayaś ca tam anvayuḥ"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (MBh (CE) 15.45.31) to a verse in the episode that names the participant (“saṃjayaś”)."
  },
  {
   "id": "epic:r2-554",
@@ -11045,16 +11079,17 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 15.45.31",
+    "locator": "MBh (CE) 15.45.1",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_15_u.htm",
-    "quote": "dāvāgninā samāyukte sa ca rājā pitā tava"
+    "quote": "vaiśaṃpāyana uvāca dvivarṣopanivṛtteṣu pāṇḍaveṣu yadṛcchayā devarṣir nārado rājann ājagāma yudhiṣṭhiram"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (MBh (CE) 15.45.31) to a verse in the episode that names the participant (“undefined”)."
  },
  {
   "id": "epic:r2-555",
@@ -11123,16 +11158,17 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 15.40.7",
+    "locator": "MBh (CE) 15.40.3",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_15_u.htm",
-    "quote": "sasainyāḥ salilāt tasmāt samuttasthuḥ sahasraśaḥ"
+    "quote": "gāndhāryā saha nāryas tu sahitāḥ samupāviśan paurajānapadaś cāpi janaḥ sarvo yathāvayaḥ"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (MBh (CE) 15.40.7) to a verse in the episode that names the participant (“undefined”)."
  },
  {
   "id": "epic:r2-559",
@@ -11143,16 +11179,17 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 15.40.7",
+    "locator": "MBh (CE) 15.39.2",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_15_u.htm",
-    "quote": "sasainyāḥ salilāt tasmāt samuttasthuḥ sahasraśaḥ"
+    "quote": "karṇaṃ drakṣyati kuntī ca saubhadraṃ cāpi yādavī draupadī pañca putrāṃś ca pitṝn bhrātṝṃs tathaiva ca"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (MBh (CE) 15.40.7) to a verse in the episode that names the participant (“undefined”)."
  },
  {
   "id": "epic:r2-560",
@@ -11163,16 +11200,17 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 15.40.7",
+    "locator": "MBh (CE) 15.40.2",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_15_u.htm",
-    "quote": "sasainyāḥ salilāt tasmāt samuttasthuḥ sahasraśaḥ"
+    "quote": "dhṛtarāṣṭras tu dharmātmā pāṇḍavaiḥ sahitas tadā śucir ekamanāḥ sārdham ṛṣibhis tair upāviśat"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (MBh (CE) 15.40.7) to a verse in the episode that names the participant (“undefined”)."
  },
  {
   "id": "epic:r2-561",
@@ -11398,16 +11436,17 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 18.3.34",
+    "locator": "MBh (CE) 18.3.1",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_18_u.htm",
-    "quote": "māyaiṣā devarājena mahendreṇa prayojitā"
+    "quote": "vaiśaṃpāyana uvāca sthite muhūrtaṃ pārthe tu dharmarāje yudhiṣṭhire ājagmus tatra kauravya devāḥ śakrapurogamāḥ"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (MBh (CE) 18.3.34) to a verse in the episode that names the participant (“śakrapurogamāḥ”)."
  },
  {
   "id": "epic:r2-573",
@@ -11418,16 +11457,17 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 18.3.34",
+    "locator": "MBh (CE) 18.3.2",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_18_u.htm",
-    "quote": "māyaiṣā devarājena mahendreṇa prayojitā"
+    "quote": "svayaṃ vigrahavān dharmo rājānaṃ prasamīkṣitum tatrājagāma yatrāsau kururājo yudhiṣṭhiraḥ"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (MBh (CE) 18.3.34) to a verse in the episode that names the participant (“dharmo”)."
  },
  {
   "id": "epic:r2-574",
@@ -11438,16 +11478,17 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 18.3.34",
+    "locator": "MBh (CE) 18.2.45",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_18_u.htm",
-    "quote": "māyaiṣā devarājena mahendreṇa prayojitā"
+    "quote": "kiṃ kṛtvā dhṛtarāṣṭrasya putro rājā suyodhanaḥ tathā śriyā yutaḥ pāpaḥ saha sarvaiḥ padānugaiḥ"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (MBh (CE) 18.3.34) to a verse in the episode that names the participant (“undefined”)."
  },
  {
   "id": "epic:r2-575",
@@ -11616,16 +11657,17 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE) 5.15.3",
+    "locator": "VR (CE) 5.16.3",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt",
-    "quote": "sa dadarśa tataḥ sītāṃ pūrṇacandranibhānanām"
+    "quote": "atha maṅgalavāditraiḥ śabdaiḥ śrotramanoharaiḥ prābodhyata mahābāhur daśagrīvo mahābalaḥ"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (VR (CE) 5.15.3) to a verse in the episode that names the participant (“undefined”)."
  },
  {
   "id": "epic:r2-584",
@@ -11636,16 +11678,17 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE) 5.15.3",
+    "locator": "VR (CE) 5.25.4",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt",
-    "quote": "sa dadarśa tataḥ sītāṃ pūrṇacandranibhānanām"
+    "quote": "sītāṃ tābhir anāryābhir dṛṣṭvā saṃtarjitāṃ tadā rākṣasī trijaṭāvṛddhā śayānā vākyam abravīt"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (VR (CE) 5.15.3) to a verse in the episode that names the participant (“undefined”)."
  },
  {
   "id": "epic:r2-585",
@@ -11733,16 +11776,17 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE) 5.51.39",
+    "locator": "VR (CE) 5.51.1",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt",
-    "quote": "pradīptalāṅgūlakṛtārcimālī"
+    "quote": "tasya tad vacanaṃ śrutvā daśagrīvo mahābalaḥ deśakālahitaṃ vākyaṃ bhrātur uttamam abravīt"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (VR (CE) 5.51.39) to a verse in the episode that names the participant (“undefined”)."
  },
  {
   "id": "epic:r2-590",
@@ -11753,16 +11797,17 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE) 5.51.39",
+    "locator": "VR (CE) 5.50.2",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt",
-    "quote": "pradīptalāṅgūlakṛtārcimālī"
+    "quote": "vadhe tasya samājñapte rāvaṇena durātmanā niveditavato dautyaṃ nānumene vibhīṣaṇaḥ"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (VR (CE) 5.51.39) to a verse in the episode that names the participant (“vibhīṣaṇaḥ”)."
  },
  {
   "id": "epic:r2-591",
@@ -11889,16 +11934,17 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE) 6.61.36",
+    "locator": "VR (CE) 6.61.28",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt",
-    "quote": "hanūmān dṛśyate vīro dvitīya iva parvataḥ"
+    "quote": "ṛkṣavānaravīrāṇām anīkāni praharṣaya viśalyau kuru cāpy etau sāditau rāmalakṣmaṇau"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (VR (CE) 6.61.36) to a verse in the episode that names the participant (“undefined”)."
  },
  {
   "id": "epic:r2-598",
@@ -11909,16 +11955,17 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE) 6.61.36",
+    "locator": "VR (CE) 6.61.28",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt",
-    "quote": "hanūmān dṛśyate vīro dvitīya iva parvataḥ"
+    "quote": "ṛkṣavānaravīrāṇām anīkāni praharṣaya viśalyau kuru cāpy etau sāditau rāmalakṣmaṇau"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (VR (CE) 6.61.36) to a verse in the episode that names the participant (“rāmalakṣmaṇau”)."
  },
  {
   "id": "epic:r2-599",
@@ -11929,16 +11976,17 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE) 6.61.36",
+    "locator": "VR (CE) 6.61.2",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt",
-    "quote": "hanūmān dṛśyate vīro dvitīya iva parvataḥ"
+    "quote": "tato viṣaṇṇaṃ samavekṣya sainyaṃ vibhīṣaṇo buddhimatāṃ variṣṭhaḥ uvāca śākhāmṛgarājavīrān āśvāsayann apratimair vacobhiḥ"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (VR (CE) 6.61.36) to a verse in the episode that names the participant (“undefined”)."
  },
  {
   "id": "epic:r2-600",
@@ -12008,16 +12056,17 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE) 6.97.17",
+    "locator": "VR (CE) 6.99.2",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt",
-    "quote": "bibheda hṛdayaṃ tasya rāvaṇasya durātmanaḥ"
+    "quote": "daśagrīvaṃ hataṃ dṛṣṭvā rāmeṇācintyakarmaṇā patiṃ mandodarī tatra kṛpaṇā paryadevayat"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (VR (CE) 6.97.17) to a verse in the episode that names the participant (“mandodarī”)."
  },
  {
   "id": "epic:r2-604",
@@ -12028,16 +12077,17 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE) 6.97.17",
+    "locator": "VR (CE) 6.97.32",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt",
-    "quote": "bibheda hṛdayaṃ tasya rāvaṇasya durātmanaḥ"
+    "quote": "tatas tu sugrīvavibhīṣaṇādayaḥ suhṛdviśeṣāḥ sahalakṣmaṇās tadā sametya hṛṣṭā vijayena rāghavaṃ raṇe 'bhirāmaṃ vidhinābhyapūjayan"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (VR (CE) 6.97.17) to a verse in the episode that names the participant (“undefined”)."
  },
  {
   "id": "epic:r2-605",
@@ -12144,16 +12194,17 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE) 7.82.6",
+    "locator": "VR (CE) 7.82.16",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt",
-    "quote": "uvāca dharmasaṃyuktam aśvamedhāśritaṃ vacaḥ"
+    "quote": "suvarṇakoṭyo bahulā hiraṇyasya śatottarāḥ agrato bharataḥ kṛtvā gacchatv agre mahāmatiḥ"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (VR (CE) 7.82.6) to a verse in the episode that names the participant (“bharataḥ”)."
  },
  {
   "id": "epic:r2-611",
@@ -12184,16 +12235,17 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE) 7.82.6",
+    "locator": "VR (CE) 7.82.2",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt",
-    "quote": "uvāca dharmasaṃyuktam aśvamedhāśritaṃ vacaḥ"
+    "quote": "vasiṣṭhaṃ vāmadevaṃ ca jābālim atha kaśyapam dvijāṃś ca sarvapravarān aśvamedhapuraskṛtān"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (VR (CE) 7.82.6) to a verse in the episode that names the participant (“undefined”)."
  },
  {
   "id": "epic:r2-613",
@@ -12204,16 +12256,17 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE) 7.82.6",
+    "locator": "VR (CE) 7.84.1",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt",
-    "quote": "uvāca dharmasaṃyuktam aśvamedhāśritaṃ vacaḥ"
+    "quote": "vartamāne tathābhūte yajñe paramake 'dbhute saśiṣya ājagāmāśu vālmīkir munipuṃgavaḥ"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (VR (CE) 7.82.6) to a verse in the episode that names the participant (“undefined”)."
  },
  {
   "id": "epic:r2-614",
@@ -12224,16 +12277,17 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE) 7.82.6",
+    "locator": "VR (CE) 7.85.14",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt",
-    "quote": "uvāca dharmasaṃyuktam aśvamedhāśritaṃ vacaḥ"
+    "quote": "dīyamānaṃ suvarṇaṃ tan nāgṛhṇītāṃ kuśīlavau ūcatuś ca mahātmānau kim aneneti vismitau"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (VR (CE) 7.82.6) to a verse in the episode that names the participant (“kuśīlavau”)."
  },
  {
   "id": "epic:r2-615",
@@ -12244,16 +12298,17 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE) 7.82.6",
+    "locator": "VR (CE) 7.85.14",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt",
-    "quote": "uvāca dharmasaṃyuktam aśvamedhāśritaṃ vacaḥ"
+    "quote": "dīyamānaṃ suvarṇaṃ tan nāgṛhṇītāṃ kuśīlavau ūcatuś ca mahātmānau kim aneneti vismitau"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Verification round 2: locator re-pointed from the episode's anchor verse (VR (CE) 7.82.6) to a verse in the episode that names the participant (“kuśīlavau”)."
  },
  {
   "id": "epic:r2-616",

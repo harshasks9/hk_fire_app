@@ -1464,52 +1464,6 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "char:maya-asura",
-  "type": "character",
-  "name": "Maya (the asura architect)",
-  "iast": "Maya",
-  "devanagari": "मय",
-  "aliases": [
-   "Mayāsura",
-   "Maya Dānava"
-  ],
-  "roles": [
-   "asura",
-   "architect"
-  ],
-  "summary": "Asura master-builder and magician who builds the three cities of Tripura (and, in the Mahābhārata, the Pāṇḍavas' assembly hall); the Matsya and Śiva Purāṇas let him survive the burning.",
-  "sources": [
-   {
-    "source": "src:mbh-critical-edition",
-    "locator": "MBh (CE) 8.24.21–23",
-    "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b08/b08c024.htm"
-   },
-   {
-    "source": "src:gretil",
-    "locator": "MatsP 129.2–27; 140.75–78",
-    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
-   },
-   {
-    "source": "src:gretil",
-    "locator": "BhP 7.10.53–59",
-    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
-   },
-   {
-    "source": "src:sa-wikisource",
-    "locator": "ŚivP 2.5.12",
-    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
-    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%A8"
-   }
-  ],
-  "confidence": "high",
-  "status": "verified-online",
-  "agent": "purana",
-  "lastVerified": "2026-11-08"
- },
- {
   "id": "narr:tripura-dahana",
   "type": "narrative",
   "name": "Śiva burns the three cities (Tripura)",
@@ -3231,40 +3185,6 @@
   "confidence": "high",
   "status": "verified-online",
   "agent": "purana",
-  "lastVerified": "2026-11-08"
- },
- {
-  "id": "char:vasishtha-cow",
-  "type": "character",
-  "name": "Vasiṣṭha's wish-granting cow (Śabalā / Nandinī)",
-  "iast": "Śabalā / Nandinī",
-  "aliases": [
-   "Kāmadhenu (as type)",
-   "Śabalā",
-   "Nandinī"
-  ],
-  "roles": [
-   "divine cow"
-  ],
-  "summary": "The wish-fulfilling cow of the sage Vasiṣṭha whose seizure by King Viśvāmitra starts their feud; Vālmīki calls her Śabalā, the Mahābhārata Nandinī (daughter of Surabhi); she produces armies that defeat the king.",
-  "sources": [
-   {
-    "source": "src:vr-critical-edition",
-    "locator": "VR (CE) 1.51–53",
-    "edition": "Baroda Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
-   },
-   {
-    "source": "src:mbh-critical-edition",
-    "locator": "MBh (CE) 1.165.9–40",
-    "edition": "BORI Critical Edition (GRETIL e-text)",
-    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b01/b01c165.htm"
-   }
-  ],
-  "confidence": "high",
-  "status": "verified-online",
-  "agent": "purana",
-  "limits": "The texts name the cow differently; Kāmadhenu/Surabhi as the mother of cows is a related but distinct figure in some texts.",
   "lastVerified": "2026-11-08"
  },
  {

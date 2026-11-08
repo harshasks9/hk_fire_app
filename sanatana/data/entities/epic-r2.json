@@ -133,14 +133,14 @@
  {
   "id": "char:nandini-cow",
   "type": "character",
-  "name": "Nandinī (Vasiṣṭha’s cow)",
-  "iast": "Nandinī",
+  "name": "Nandinī / Śabalā (Vasiṣṭha’s cow)",
+  "iast": "Nandinī / Śabalā",
   "devanagari": "नन्दिनी",
   "roles": [
    "divine cow"
   ],
-  "summary": "The wish-granting cow of Vasiṣṭha’s hermitage, daughter of Surabhi, whom Dilīpa tends and protects from a lion in Raghuvaṃśa 1–2.",
-  "details": "Distinct from deity:nandin (Śiva’s bull). Vasiṣṭha’s cow also appears, as Nandinī, in the Mahābhārata’s Vasiṣṭha–Viśvāmitra story; that occurrence has not been linked here.",
+  "summary": "The wish-granting cow of Vasiṣṭha’s hermitage, daughter of Surabhi. Her seizure by King Viśvāmitra starts the sages’ feud — Vālmīki calls her Śabalā, the Mahābhārata Nandinī — and she produces the armies that defeat the king; in Raghuvaṃśa 1–2 King Dilīpa tends her and offers his life to save her from a lion.",
+  "details": "Distinct from deity:nandin (Śiva’s bull). Merged in verification round 2 with the Purāṇa agent’s record char:vasishtha-cow (the Viśvāmitra feud); Vālmīki’s Śabalā and the Mahābhārata/Raghuvaṃśa Nandinī are one tradition figure under text-specific names.",
   "sources": [
    {
     "source": "src:gretil-raghuvamsha",
@@ -153,12 +153,30 @@
     "locator": "Raghuvaṃśa 2.69",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt",
     "quote": "sa nandinīstanyam aninditātmā"
+   },
+   {
+    "source": "src:vr-critical-edition",
+    "locator": "VR (CE) 1.51–53",
+    "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
+   },
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 1.165.9–40",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b01/b01c165.htm"
    }
   ],
   "confidence": "high",
   "status": "verified-online",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "aliases": [
+   "Śabalā",
+   "Vasiṣṭha’s wish-granting cow",
+   "Kāmadhenu (as type)",
+   "Nandinī"
+  ]
  },
  {
   "id": "char:agnivarna",

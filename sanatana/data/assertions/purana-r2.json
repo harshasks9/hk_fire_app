@@ -6461,7 +6461,7 @@
  },
  {
   "id": "purana:r2-289",
-  "s": "char:maya-asura",
+  "s": "char:maya-danava",
   "p": "PARTICIPANT_IN",
   "o": "narr:tripura-dahana",
   "qualifiers": {
@@ -6484,7 +6484,7 @@
  },
  {
   "id": "purana:r2-290",
-  "s": "char:maya-asura",
+  "s": "char:maya-danava",
   "p": "PARTICIPANT_IN",
   "o": "narr:tripura-dahana",
   "qualifiers": {
@@ -6507,7 +6507,7 @@
  },
  {
   "id": "purana:r2-291",
-  "s": "char:maya-asura",
+  "s": "char:maya-danava",
   "p": "PARTICIPANT_IN",
   "o": "narr:tripura-dahana",
   "qualifiers": {
@@ -6671,7 +6671,7 @@
  },
  {
   "id": "purana:r2-298",
-  "s": "char:maya-asura",
+  "s": "char:maya-danava",
   "p": "APPEARS_IN",
   "o": "text:mahabharata",
   "qualifiers": {
@@ -14035,7 +14035,7 @@
  },
  {
   "id": "purana:r2-624",
-  "s": "char:vasishtha-cow",
+  "s": "char:nandini-cow",
   "p": "PARTICIPANT_IN",
   "o": "narr:vishvamitra-vasishtha-cow",
   "qualifiers": {
@@ -14104,7 +14104,7 @@
  },
  {
   "id": "purana:r2-627",
-  "s": "char:vasishtha-cow",
+  "s": "char:nandini-cow",
   "p": "PARTICIPANT_IN",
   "o": "narr:vishvamitra-vasishtha-cow",
   "qualifiers": {
@@ -14149,7 +14149,7 @@
  },
  {
   "id": "purana:r2-629",
-  "s": "char:vasishtha-cow",
+  "s": "char:nandini-cow",
   "p": "SERVES",
   "o": "char:vasishtha",
   "qualifiers": {
@@ -17425,7 +17425,7 @@
  },
  {
   "id": "purana:r2-775",
-  "s": "char:maya-asura",
+  "s": "char:maya-danava",
   "p": "LOCATED_AT",
   "o": "place:talatala",
   "qualifiers": {
