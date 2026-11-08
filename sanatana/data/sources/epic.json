@@ -1,0 +1,334 @@
+[
+ {
+  "id": "src:gretil-mbh-ce",
+  "type": "primary-text",
+  "title": "Mahābhārata: constituted text of the Critical Edition with star passages (electronic text, 18 parvan files)",
+  "author": "Bhandarkar Oriental Research Institute (e-text); data entry Muneo Tokunaga et al., revised by John Smith",
+  "year": "1999 (e-text)",
+  "publisher": "GRETIL, SUB Göttingen",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil.html#MBh",
+  "urlChecked": true,
+  "license": "Electronic text © BORI 1999; reference use",
+  "notes": "Each file states “Electronic text (C) Bhandarkar Oriental Research Institute, Pune, India, 1999 … On the basis of the text entered by Muneo Tokunaga et al., revised by John Smith”. Includes star (*) passages from the apparatus but not the long appendices. Used during this research (2026-11-08) to verify every MBh (CE) adhyāya/verse locator marked verified-online, and to count adhyāyas (1,995) and numbered verses (c. 73,900).",
+  "agent": "epic"
+ },
+ {
+  "id": "src:gretil-vr-ce",
+  "type": "primary-text",
+  "title": "Vālmīki: Rāmāyaṇa (electronic text of the Baroda Critical Edition; John Smith’s Rāmāyaṇa page)",
+  "author": "Data entry Muneo Tokunaga; revision and contribution John Smith; TEI conversion GRETIL",
+  "year": "2020 (version)",
+  "publisher": "GRETIL, SUB Göttingen",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/sa_rAmAyaNa.xml",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL distribution)",
+  "notes": "Kāṇḍa/sarga/verse references R_k,sss.vvv; its sarga totals (76, 111, 71, 66, 66, 116, 100 = 606) are those of the Baroda Critical Edition. Used to verify every VR (CE) locator marked verified-online.",
+  "agent": "epic"
+ },
+ {
+  "id": "src:gretil-hv-ce",
+  "type": "primary-text",
+  "title": "Harivaṃśa: constituted text with star passages (electronic text)",
+  "author": "Based on the edition of P. L. Vaidya; input by A. Agarwala, J. W. Bass, P. Bisschop, H. Brinkhaus, J. Brockington, A. Couture, J. Fitzgerald et al.",
+  "year": "2020 (version)",
+  "publisher": "GRETIL, SUB Göttingen",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/sa_harivaMza.xml",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0 (GRETIL distribution)",
+  "notes": "Source edition: Vaidya, Poona: BORI 1969. 118 adhyāyas; c. 6,070 numbered verses in the constituted text.",
+  "agent": "epic"
+ },
+ {
+  "id": "src:gretil-bhp-etext",
+  "type": "primary-text",
+  "title": "Bhāgavata Purāṇa (electronic text, GRETIL)",
+  "author": "GRETIL contributors",
+  "year": "ongoing",
+  "publisher": "GRETIL, SUB Göttingen",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/sa_bhAgavatapurANa.xml",
+  "urlChecked": true,
+  "notes": "Used only to check BhP 1.3.28, 2.7.26, 10.3.8, 10.25.19 and 10.29.1 for the epic comparisons.",
+  "agent": "epic"
+ },
+ {
+  "id": "src:gretil-vip-pathak",
+  "type": "primary-text",
+  "title": "Viṣṇu Purāṇa: Critical Edition (electronic text, GRETIL)",
+  "author": "M. M. Pathak (ed.); GRETIL e-text",
+  "year": "1997–1999 (edition)",
+  "publisher": "Oriental Institute, Vadodara (edition); GRETIL (e-text)",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/sa_viSNupurANa-crit.xml",
+  "urlChecked": true,
+  "notes": "Used only to check ViP 5.1.60–64 (the two hairs), 5.3, 5.11–12 and 5.20 for the Kṛṣṇa comparison.",
+  "agent": "epic"
+ },
+ {
+  "id": "src:pollock-1984",
+  "type": "journal-article",
+  "title": "The Divine King in the Indian Epic",
+  "author": "Sheldon Pollock",
+  "year": "1984",
+  "publisher": "Journal of the American Oriental Society 104 (3): 505–528",
+  "url": "https://philarchive.org/rec/POLTDK",
+  "urlChecked": true,
+  "notes": "Argues that Rāma’s divinity is integral to the Vālmīki Rāmāyaṇa’s conception of kingship rather than a late accretion confined to Books 1 and 7.",
+  "agent": "epic"
+ },
+ {
+  "id": "src:jacobi-1893",
+  "type": "scholarly-book",
+  "title": "Das Rāmāyaṇa: Geschichte und Inhalt nebst Concordanz der gedruckten Recensionen",
+  "author": "Hermann Jacobi",
+  "year": "1893",
+  "publisher": "Friedrich Cohen, Bonn",
+  "notes": "Classic argument that Books 1 and 7 are later additions to a core of Books 2–6.",
+  "agent": "epic"
+ },
+ {
+  "id": "src:brockington-1984",
+  "type": "scholarly-book",
+  "title": "Righteous Rāma: The Evolution of an Epic",
+  "author": "J. L. Brockington",
+  "year": "1984",
+  "publisher": "Oxford University Press, Delhi",
+  "agent": "epic"
+ },
+ {
+  "id": "src:hopkins-1901",
+  "type": "scholarly-book",
+  "title": "The Great Epic of India: Its Character and Origin",
+  "author": "E. Washburn Hopkins",
+  "year": "1901",
+  "publisher": "Charles Scribner’s Sons, New York",
+  "agent": "epic"
+ },
+ {
+  "id": "src:hopkins-1915",
+  "type": "scholarly-book",
+  "title": "Epic Mythology",
+  "author": "E. Washburn Hopkins",
+  "year": "1915",
+  "publisher": "Karl J. Trübner, Strassburg",
+  "agent": "epic"
+ },
+ {
+  "id": "src:winternitz-1927",
+  "type": "scholarly-book",
+  "title": "A History of Indian Literature, vol. I (trans. S. Ketkar)",
+  "author": "Moriz Winternitz",
+  "year": "1927",
+  "publisher": "University of Calcutta",
+  "agent": "epic"
+ },
+ {
+  "id": "src:van-buitenen-1981",
+  "type": "translation",
+  "title": "The Bhagavadgītā in the Mahābhārata: Text and Translation",
+  "author": "J. A. B. van Buitenen",
+  "year": "1981",
+  "publisher": "University of Chicago Press",
+  "agent": "epic"
+ },
+ {
+  "id": "src:minor-1982",
+  "type": "scholarly-book",
+  "title": "Bhagavad-gītā: An Exegetical Commentary",
+  "author": "Robert N. Minor",
+  "year": "1982",
+  "publisher": "Heritage Publishers, New Delhi",
+  "agent": "epic"
+ },
+ {
+  "id": "src:matchett-2001",
+  "type": "scholarly-book",
+  "title": "Krishna, Lord or Avatara? The Relationship between Krishna and Vishnu",
+  "author": "Freda Matchett",
+  "year": "2001",
+  "publisher": "Curzon Press, Richmond",
+  "notes": "Compares the Harivaṃśa, Viṣṇu Purāṇa and Bhāgavata Purāṇa on whether Kṛṣṇa is a partial descent of Viṣṇu or the supreme Lord himself.",
+  "agent": "epic"
+ },
+ {
+  "id": "src:hiltebeitel-1976",
+  "type": "scholarly-book",
+  "title": "The Ritual of Battle: Krishna in the Mahābhārata",
+  "author": "Alf Hiltebeitel",
+  "year": "1976",
+  "publisher": "Cornell University Press, Ithaca (repr. SUNY Press 1990)",
+  "agent": "epic"
+ },
+ {
+  "id": "src:hiltebeitel-1988",
+  "type": "scholarly-book",
+  "title": "The Cult of Draupadī, vol. 1: Mythologies: From Gingee to Kurukṣetra",
+  "author": "Alf Hiltebeitel",
+  "year": "1988",
+  "publisher": "University of Chicago Press",
+  "agent": "epic"
+ },
+ {
+  "id": "src:sullivan-1990",
+  "type": "scholarly-book",
+  "title": "Kṛṣṇa Dvaipāyana Vyāsa and the Mahābhārata: A New Interpretation",
+  "author": "Bruce M. Sullivan",
+  "year": "1990",
+  "publisher": "E. J. Brill, Leiden",
+  "agent": "epic"
+ },
+ {
+  "id": "src:mcgrath-2004",
+  "type": "scholarly-book",
+  "title": "The Sanskrit Hero: Karṇa in Epic Mahābhārata",
+  "author": "Kevin McGrath",
+  "year": "2004",
+  "publisher": "Brill, Leiden",
+  "agent": "epic"
+ },
+ {
+  "id": "src:sukthankar-1957",
+  "type": "scholarly-book",
+  "title": "On the Meaning of the Mahābhārata",
+  "author": "V. S. Sukthankar",
+  "year": "1957",
+  "publisher": "Asiatic Society of Bombay",
+  "agent": "epic"
+ },
+ {
+  "id": "src:smith-2009",
+  "type": "translation",
+  "title": "The Mahābhārata: An Abridged Translation",
+  "author": "John D. Smith",
+  "year": "2009",
+  "publisher": "Penguin Classics, London",
+  "notes": "Translates selections of the Critical Edition text.",
+  "agent": "epic"
+ },
+ {
+  "id": "src:debroy-2010",
+  "type": "translation",
+  "title": "The Mahabharata (10 vols.)",
+  "author": "Bibek Debroy",
+  "year": "2010–2014",
+  "publisher": "Penguin Books India",
+  "notes": "Complete translation of the Critical Edition, with notes on CE numbering.",
+  "agent": "epic"
+ },
+ {
+  "id": "src:fitzgerald-2004",
+  "type": "translation",
+  "title": "The Mahābhārata, vol. 7: Book 11, The Book of the Women; Book 12, The Book of Peace, Part One",
+  "author": "James L. Fitzgerald",
+  "year": "2004",
+  "publisher": "University of Chicago Press",
+  "agent": "epic"
+ },
+ {
+  "id": "src:sorensen-1904",
+  "type": "reference",
+  "title": "An Index to the Names in the Mahābhārata",
+  "author": "Søren Sørensen",
+  "year": "1904–1925",
+  "publisher": "Williams & Norgate, London",
+  "notes": "Keyed to the Calcutta edition.",
+  "agent": "epic"
+ },
+ {
+  "id": "src:mani-1975",
+  "type": "reference",
+  "title": "Purāṇic Encyclopaedia: A Comprehensive Dictionary with Special Reference to the Epic and Purāṇic Literature",
+  "author": "Vettam Mani",
+  "year": "1975",
+  "publisher": "Motilal Banarsidass, Delhi",
+  "agent": "epic"
+ },
+ {
+  "id": "src:leslie-2003",
+  "type": "scholarly-book",
+  "title": "Authority and Meaning in Indian Religions: Hinduism and the Case of Vālmīki",
+  "author": "Julia Leslie",
+  "year": "2003",
+  "publisher": "Ashgate, Aldershot",
+  "agent": "epic"
+ },
+ {
+  "id": "src:goldman-1977",
+  "type": "scholarly-book",
+  "title": "Gods, Priests, and Warriors: The Bhṛgus of the Mahābhārata",
+  "author": "Robert P. Goldman",
+  "year": "1977",
+  "publisher": "Columbia University Press, New York",
+  "agent": "epic"
+ },
+ {
+  "id": "src:sutherland-1989",
+  "type": "journal-article",
+  "title": "Sītā and Draupadī: Aggressive Behavior and Female Role-Models in the Sanskrit Epics",
+  "author": "Sally J. Sutherland",
+  "year": "1989",
+  "publisher": "Journal of the American Oriental Society 109 (1): 63–79",
+  "agent": "epic"
+ },
+ {
+  "id": "src:brodbeck-2009",
+  "type": "scholarly-book",
+  "title": "The Mahābhārata Patriline: Gender, Culture, and the Royal Hereditary",
+  "author": "Simon Pearse Brodbeck",
+  "year": "2009",
+  "publisher": "Ashgate, Farnham",
+  "agent": "epic"
+ },
+ {
+  "id": "src:gorresio-1843",
+  "type": "primary-text",
+  "title": "Rāmāyaṇa, poema indiano di Valmici (Bengal recension), text and Italian translation, 10 vols.",
+  "author": "Gaspare Gorresio (ed., trans.)",
+  "year": "1843–1867",
+  "publisher": "Stamperia Reale, Paris",
+  "notes": "First printed edition of a northern (north-eastern/Bengal) recension.",
+  "agent": "epic"
+ },
+ {
+  "id": "src:gretil-ashtadhyayi-etext",
+  "type": "primary-text",
+  "title": "Pāṇini: Aṣṭādhyāyī (electronic text, GRETIL)",
+  "author": "GRETIL contributors",
+  "year": "ongoing",
+  "publisher": "GRETIL, SUB Göttingen",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/sa_pANini-aSTAdhyAyI.xml",
+  "urlChecked": true,
+  "notes": "Used to check sūtras 4.3.98 (vāsudeva-arjunābhyāṃ vun) and 6.2.38 (mahān … bhārata …).",
+  "agent": "epic"
+ },
+ {
+  "id": "src:gretil-mahabhashya-etext",
+  "type": "primary-text",
+  "title": "Patañjali: Vyākaraṇa-Mahābhāṣya (electronic text, GRETIL; references to Kielhorn’s edition)",
+  "author": "GRETIL contributors",
+  "year": "ongoing",
+  "publisher": "GRETIL, SUB Göttingen",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/sa_pataJjali-vyAkaraNamahAbhASya.xml",
+  "urlChecked": true,
+  "notes": "Used to check the illustration “kaṃsavadham ācaṣṭe kaṃsaṃ ghātayati … balibandham ācaṣṭe baliṃ bandhayati” on Aṣṭādhyāyī 3.1.26 (Kielhorn ed. vol. II, pp. 34–36).",
+  "agent": "epic"
+ },
+ {
+  "id": "src:raychaudhuri-1920",
+  "type": "scholarly-book",
+  "title": "Materials for the Study of the Early History of the Vaishnava Sect",
+  "author": "Hemchandra Raychaudhuri",
+  "year": "1920",
+  "publisher": "University of Calcutta",
+  "notes": "Shared source: defined here after the material and vedic copies were withdrawn (2026-11-08) to avoid a duplicate id.",
+  "agent": "epic"
+ },
+ {
+  "id": "src:sankalia-1973",
+  "type": "scholarly-book",
+  "title": "Ramayana: Myth or Reality?",
+  "author": "H. D. Sankalia",
+  "year": "1973",
+  "publisher": "People’s Publishing House, New Delhi",
+  "notes": "Archaeologist’s critique of attempts to treat the Rāmāyaṇa geography as historical; discusses proposals locating Laṅkā in central India. Shared source (also cited by the material domain).",
+  "agent": "epic"
+ }
+]

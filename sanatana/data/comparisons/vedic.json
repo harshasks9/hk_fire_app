@@ -1,0 +1,479 @@
+[
+ {
+  "id": "cmp:vedic-creation-accounts",
+  "title": "Vedic accounts of the beginning",
+  "subject": "narr:nasadiya",
+  "question": "What was there in the beginning, and how did the world come forth?",
+  "rows": [
+   {
+    "text": "text:rigveda",
+    "locator": "RV 10.72.2–4",
+    "statement": "In the first age of the gods, being was born from non-being (asataḥ sad ajāyata); the regions were born from the “upward-stretched one”, Dakṣa from Aditi and Aditi from Dakṣa.",
+    "sources": [
+     {
+      "source": "src:gretil-rv-aufrecht",
+      "locator": "RV 10.72.2",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_Rgveda-edAufrecht.txt",
+      "edition": "Aufrecht 1877 (GRETIL)",
+      "quote": "devānām pūrvye yuge ’sataḥ sad ajāyata"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "psg:rv-10-90",
+    "locator": "RV 10.90.1–16",
+    "statement": "The world comes from a sacrifice: the gods sacrifice the thousand-headed Man (Puruṣa), who is “all this, what has been and what will be”; from his parts come the verses, animals, the four social classes, the moon, sun, Indra, Agni and the worlds.",
+    "sources": [
+     {
+      "source": "src:gretil-rv-aufrecht",
+      "locator": "RV 10.90.2; 10.90.12–14",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_Rgveda-edAufrecht.txt",
+      "edition": "Aufrecht 1877 (GRETIL)",
+      "quote": "puruṣa evedaṁ sarvaṁ yad bhūtaṁ yac ca bhavyam"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "psg:rv-10-121",
+    "locator": "RV 10.121.1–10",
+    "statement": "A Golden Embryo (Hiraṇyagarbha) arose in the beginning as the one lord of what exists and upheld earth and sky; the great waters, bearing an embryo, gave birth to Agni; the refrain asks “to which god shall we offer?” and the last verse names Prajāpati.",
+    "sources": [
+     {
+      "source": "src:gretil-rv-aufrecht",
+      "locator": "RV 10.121.1; 10.121.7; 10.121.10",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_Rgveda-edAufrecht.txt",
+      "edition": "Aufrecht 1877 (GRETIL)",
+      "quote": "hiraṇyagarbhaḥ sam avartatāgre"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "psg:rv-10-129",
+    "locator": "RV 10.129.1–7",
+    "statement": "There was neither non-being nor being; the One breathed windlessly by its own power; desire (kāma), the first seed of mind, arose; poets found the bond of being in non-being — and the one who oversees it in the highest heaven perhaps knows, or perhaps does not.",
+    "sources": [
+     {
+      "source": "src:gretil-rv-aufrecht",
+      "locator": "RV 10.129.1; 10.129.4; 10.129.7",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_Rgveda-edAufrecht.txt",
+      "edition": "Aufrecht 1877 (GRETIL)",
+      "quote": "so aṅga veda yadi vā na veda"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "psg:bu-1-4",
+    "locator": "BU 1.4.1–10",
+    "statement": "In the beginning there was only the self (ātman) in the form of a person; seeing nothing else it said “I am”; it was afraid, then desired a second, split itself into husband and wife and, taking pairs of animal forms, produced all creatures; whoever knows “I am brahman” becomes this whole world.",
+    "sources": [
+     {
+      "source": "src:gretil-brihadaranyaka",
+      "locator": "BU 1.4.1–4; 1.4.10",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/1_veda/4_upa/brup___u.htm",
+      "edition": "Kāṇva recension (GRETIL; checked against Limaye & Vadekar 1958)",
+      "quote": "ātmaivedam agra āsīt puruṣavidhaḥ"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:chandogya-upanishad",
+    "locator": "ChU 6.2.1–3",
+    "statement": "In the beginning there was only Being (sat), one without a second; some say non-being came first, but “how could being come from non-being?”; Being thought “let me become many” and emitted heat, which emitted water.",
+    "sources": [
+     {
+      "source": "src:gretil-chandogya",
+      "locator": "ChU 6.2.1–3",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/1_veda/4_upa/chup___u.htm",
+      "quote": "katham asataḥ saj jāyeta"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "note": "Five or six distinct models — emergence from non-being, cosmic sacrifice, a first-born lord, a self-questioning origin beyond knowledge, a self that divides itself, and Being without a second. ChU 6.2 explicitly rejects the “non-being first” view voiced in RV 10.72.2. The rows are not harmonised.",
+  "agent": "vedic"
+ },
+ {
+  "id": "cmp:indra-standing",
+  "title": "The standing of Indra from the Ṛgveda to the Bhāgavata",
+  "subject": "deity:indra",
+  "question": "How powerful and how wise is Indra?",
+  "rows": [
+   {
+    "text": "text:rigveda",
+    "locator": "RV 1.32; 10.86.1",
+    "statement": "Indra is the most-praised god (about a quarter of the hymns), the soma-strengthened slayer of Vṛtra who released the waters; the refrain of RV 10.86 says “Indra is above all”.",
+    "sources": [
+     {
+      "source": "src:gretil-rv-aufrecht",
+      "locator": "RV 1.32.1; 10.86.1",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_Rgveda-edAufrecht.txt",
+      "edition": "Aufrecht 1877 (GRETIL)",
+      "quote": "viśvasmād indra uttaraḥ"
+     },
+     {
+      "source": "src:macdonell-1897",
+      "locator": "§ Indra"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "psg:kena-3-4",
+    "locator": "Kena 3.11–4.3",
+    "statement": "Indra fails to recognise the yakṣa, which vanishes before him; Umā Haimavatī tells him it was brahman. Because he came nearest and first knew it as brahman, Indra is said to surpass the other gods.",
+    "sources": [
+     {
+      "source": "src:sanskritdocuments",
+      "locator": "Kena 3.11–4.3",
+      "url": "https://sanskritdocuments.org/doc_upanishhat/kena.itx",
+      "edition": "kena.itx (Sanskrit Documents)",
+      "quote": "tasmādvā indro ’titarāmivānyāndevān"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "psg:cu-8-7-12",
+    "locator": "ChU 8.7.2–8.12.6",
+    "statement": "Indra, sent by the gods, lives as a student with Prajāpati; after successive wrong answers he stays a total of 101 years before being taught the bodiless self, while the asura Virocana leaves content with the first teaching.",
+    "sources": [
+     {
+      "source": "src:gretil-chandogya",
+      "locator": "ChU 8.11.3",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/1_veda/4_upa/chup___u.htm",
+      "quote": "ekaśataṃ ha vai varṣāṇi maghavān prajāpatau brahmacaryam uvāsa"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:kaushitaki-upanishad",
+    "locator": "KauU 3",
+    "statement": "Indra is a teacher: he tells king Pratardana that he is breath (prāṇa), the self consisting of intelligence.",
+    "sources": [
+     {
+      "source": "src:olivelle-1998",
+      "locator": "KauU 3"
+     }
+    ],
+    "status": "recall"
+   },
+   {
+    "text": "text:bhagavata-purana",
+    "locator": "BhP 10.24–25",
+    "statement": "Kṛṣṇa persuades the cowherds to honour Mount Govardhana instead of holding the customary sacrifice to Indra; the angry Indra sends torrential rain, Kṛṣṇa lifts the mountain to shelter Vraja, and Indra submits to him.",
+    "sources": [
+     {
+      "source": "src:bryant-2007",
+      "locator": "translation of BhP 10"
+     },
+     {
+      "source": "src:tagare-bhp",
+      "locator": "BhP 10.24–25"
+     }
+    ],
+    "status": "recall"
+   }
+  ],
+  "note": "The rows show a shift from supreme warrior to learner and, in Kṛṣṇa devotion, a humbled god; they do not show that Indra’s worship ceased. The Bhāgavata row is from recall (narrative: `narr:govardhana`).",
+  "agent": "vedic"
+ },
+ {
+  "id": "cmp:rudra-to-shiva",
+  "title": "Rudra from the Ṛgveda to the Śvetāśvatara",
+  "subject": "deity:rudra",
+  "question": "Who is Rudra, and how is he addressed?",
+  "rows": [
+   {
+    "text": "psg:rv-2-33",
+    "locator": "RV 2.33.1–15",
+    "statement": "A fierce, tawny, many-formed archer, father of the Maruts, whose wrath is feared and whose remedies heal; from Rudra, “lord of this world”, lordship does not depart.",
+    "sources": [
+     {
+      "source": "src:gretil-rv-aufrecht",
+      "locator": "RV 2.33.9",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_Rgveda-edAufrecht.txt",
+      "edition": "Aufrecht 1877 (GRETIL)",
+      "quote": "īśānād asya bhuvanasya bhūrer na vā u yoṣad rudrād asuryam"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "psg:sb-1-7-3",
+    "locator": "ŚB 1.7.3.1–8",
+    "statement": "When the gods reached heaven by sacrifice, the god who rules over cattle was left behind (hence “Vāstavya”); he claims and receives a share of the offering.",
+    "sources": [
+     {
+      "source": "src:gretil-shatapatha",
+      "locator": "ŚB 1.7.3.1",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/1_veda/2_bra/satapath/sb_01_u.htm",
+      "edition": "Mādhyandina recension (GRETIL)",
+      "quote": "atha yo ’yaṃ devaḥ paśūnāmīṣṭe sa ihāhīyata"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "psg:sb-6-1-3",
+    "locator": "ŚB 6.1.3.7–18",
+    "statement": "A new-born boy, crying, asks Prajāpati for names and receives eight — Rudra, Sarva, Paśupati, Ugra, Aśani, Bhava, Mahān Deva, Īśāna — identified with water, plants, wind, lightning, rain-cloud, moon and sun as forms of Agni.",
+    "sources": [
+     {
+      "source": "src:gretil-shatapatha",
+      "locator": "ŚB 6.1.3.10–17",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/1_veda/2_bra/satapath/sb_06_u.htm",
+      "edition": "Mādhyandina recension (GRETIL)",
+      "quote": "tamabravītpaśupatirasīti"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "psg:ts-4-5",
+    "locator": "TS 4.5.1–11",
+    "statement": "Homage to Rudra’s wrath and arrows and to his innumerable forms — lord of cattle, of paths, of thieves, dweller on mountains — including “homage to the auspicious and the more auspicious” (namaḥ śivāya ca śivatarāya ca).",
+    "sources": [
+     {
+      "source": "src:titus-taittiriya-samhita",
+      "locator": "TS 4.5.8.1",
+      "url": "https://titus.uni-frankfurt.de/texte/etcs/ind/aind/ved/yvs/ts/ts024.htm",
+      "edition": "TITUS, on the basis of Weber 1871–72",
+      "quote": "námaḥ śivā́ya ca śivátarāya ca"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "psg:svu-3-4",
+    "locator": "ŚvU 3.2–4.22",
+    "statement": "There is one Rudra, without a second, who rules these worlds, creates and withdraws all beings; he is the all-pervading Śiva, the Maheśvara whose māyā is nature; knowing him as Śiva one attains peace.",
+    "sources": [
+     {
+      "source": "src:gretil-shvetashvatara",
+      "locator": "ŚvU 3.2; 3.11; 4.10; 4.14",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_zvetAzvataropaniSad.txt",
+      "quote": "eko hi rudro na dvitīyāya tasthe"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "note": "The sequence shows śiva moving from epithet (TS 4.5.8) to the name of the supreme lord (ŚvU). Historians also invoke non-Vedic contributions to Śiva; those are outside these rows.",
+  "agent": "vedic"
+ },
+ {
+  "id": "cmp:vishnu-vedic-profile",
+  "title": "Viṣṇu in Vedic texts",
+  "subject": "deity:vishnu",
+  "question": "What is Viṣṇu’s character and rank in the Vedic corpus?",
+  "rows": [
+   {
+    "text": "psg:rv-1-154",
+    "locator": "RV 1.154.1–6",
+    "statement": "Viṣṇu measured the earthly realms and propped up the upper dwelling in three wide strides; in his highest step is a spring of honey.",
+    "sources": [
+     {
+      "source": "src:gretil-rv-aufrecht",
+      "locator": "RV 1.154.1; 1.154.5",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_Rgveda-edAufrecht.txt",
+      "edition": "Aufrecht 1877 (GRETIL)",
+      "quote": "viṣṇoḥ pade parame madhva utsaḥ"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:rigveda",
+    "locator": "RV 1.22.20; 6.69.5",
+    "statement": "The patrons always see Viṣṇu’s highest step like an eye fixed in heaven; with Indra he strides widely in the exhilaration of soma. He receives only a handful of hymns (about five or six).",
+    "sources": [
+     {
+      "source": "src:gretil-rv-aufrecht",
+      "locator": "RV 1.22.20; 6.69.5",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_Rgveda-edAufrecht.txt",
+      "edition": "Aufrecht 1877 (GRETIL)",
+      "quote": "tad viṣṇoḥ paramam padaṁ sadā paśyanti sūrayaḥ"
+     },
+     {
+      "source": "src:macdonell-1897",
+      "locator": "§ Viṣṇu"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "psg:sb-1-2-5",
+    "locator": "ŚB 1.2.5.1–9",
+    "statement": "Viṣṇu is the sacrifice and a dwarf; the asuras grant the gods as much earth as he lies upon, and through him the gods win the whole earth.",
+    "sources": [
+     {
+      "source": "src:gretil-shatapatha",
+      "locator": "ŚB 1.2.5.5",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/1_veda/2_bra/satapath/sb_01_u.htm",
+      "edition": "Mādhyandina recension (GRETIL)",
+      "quote": "vāmano ha viṣnurāsa"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:shatapatha-brahmana",
+    "locator": "ŚB 1.1.2.13",
+    "statement": "“The sacrifice is Viṣṇu”; the sacrificer’s steps re-enact the strides through earth, air and sky.",
+    "sources": [
+     {
+      "source": "src:gretil-shatapatha",
+      "locator": "ŚB 1.1.2.13",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/1_veda/2_bra/satapath/sb_01_u.htm",
+      "edition": "Mādhyandina recension (GRETIL)",
+      "quote": "yajño vai viṣṇuḥ"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "psg:sb-14-1-1",
+    "locator": "ŚB 14.1.1.5–10",
+    "statement": "Reaching the goal of the gods’ session first, Viṣṇu becomes “the best of the gods”; being the sacrifice and the sun, he cannot contain his glory, and his own bow cuts off his head.",
+    "sources": [
+     {
+      "source": "src:gretil-shatapatha",
+      "locator": "ŚB 14.1.1.5",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/1_veda/2_bra/satapath/sb_14_u.htm",
+      "edition": "Mādhyandina recension (GRETIL)",
+      "quote": "viṣṇurdevānāṃ śreṣṭha iti"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "psg:katha-3-9",
+    "locator": "KaU 3.9",
+    "statement": "The disciplined traveller reaches the end of the road, “that highest step of Viṣṇu”.",
+    "sources": [
+     {
+      "source": "src:gretil-katha",
+      "locator": "KaU 3.9",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kathopaniSad.txt",
+      "edition": "Olivelle 1998 numbering (vallī.verse)",
+      "quote": "tad viṣṇoḥ paramaṃ padam"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "note": "Minor in Ṛgvedic hymn-count, Viṣṇu is identified with the sacrifice and called best of the gods in the Śatapatha, and his “highest step” becomes an Upaniṣadic image of the goal — precursors of, but not yet, the supreme Viṣṇu–Nārāyaṇa of later theism.",
+  "agent": "vedic"
+ },
+ {
+  "id": "cmp:manu-fish-identity",
+  "title": "Who is the fish that saves Manu?",
+  "subject": "narr:manu-fish",
+  "question": "Who or what is the fish in the flood story?",
+  "rows": [
+   {
+    "text": "psg:sb-1-8-1",
+    "locator": "ŚB 1.8.1.1–6",
+    "statement": "An unnamed fish (matsya) that comes into Manu’s hands with the washing water; it asks to be reared, predicts the flood and tows the ship by its horn to the northern mountain. No god is named.",
+    "sources": [
+     {
+      "source": "src:gretil-shatapatha",
+      "locator": "ŚB 1.8.1.1–6",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/1_veda/2_bra/satapath/sb_01_u.htm",
+      "edition": "Mādhyandina recension (GRETIL)",
+      "quote": "tasya śṛṅge nāvaḥ pāśam pratimumoca"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:mahabharata",
+    "locator": "MBh (CE) 3.185",
+    "statement": "The fish finally reveals itself as Brahmā, the lord of creatures (Prajāpati), and charges Manu with creating all beings.",
+    "sources": [
+     {
+      "source": "src:mbh-critical-edition",
+      "locator": "MBh (CE) 3.185 (Matsyopākhyāna)"
+     },
+     {
+      "source": "src:van-buitenen-mbh",
+      "locator": "vol. 2"
+     }
+    ],
+    "status": "recall"
+   },
+   {
+    "text": "text:matsya-purana",
+    "locator": "MtP 1–2",
+    "statement": "The fish is Viṣṇu (Janārdana) in his fish form, who saves king Manu and teaches him; the Purāṇa takes its name from this frame.",
+    "sources": [
+     {
+      "source": "src:rocher-1986",
+      "locator": "s.v. Matsya Purāṇa"
+     }
+    ],
+    "status": "recall"
+   },
+   {
+    "text": "text:bhagavata-purana",
+    "locator": "BhP 8.24",
+    "statement": "Hari takes the fish form to save the royal sage Satyavrata, future Vaivasvata Manu, and to recover the Vedas.",
+    "sources": [
+     {
+      "source": "src:tagare-bhp",
+      "locator": "BhP 8.24"
+     }
+    ],
+    "status": "recall"
+   }
+  ],
+  "note": "Only the Śatapatha row was checked online; the epic and Purāṇic rows are from recall and give coarse locators.",
+  "agent": "vedic"
+ },
+ {
+  "id": "cmp:five-fires-versions",
+  "title": "Two versions of Pravāhaṇa Jaivali’s teaching",
+  "subject": "narr:five-fires",
+  "question": "How do the Bṛhadāraṇyaka and Chāndogya tell the episode and the doctrine?",
+  "rows": [
+   {
+    "text": "psg:bu-6-2",
+    "locator": "BU 6.2.1–16",
+    "statement": "Śvetaketu comes to the assembly (pariṣad) of the Pañcālas and cannot answer the king’s five questions; his father Gautama goes to the king and asks for the teaching, which “never before dwelt in any brahmin” (6.2.8); the five fires are yonder world, rain-cloud, this world, man and woman; knowers go by the path of the gods and do not return, sacrificers go by the path of the fathers and return, and those who know neither path become worms, insects and biting creatures. The king quotes the seer’s verse on the two paths (= RV 10.88.15).",
+    "sources": [
+     {
+      "source": "src:gretil-brihadaranyaka",
+      "locator": "BU 6.2.2; 6.2.8; 6.2.15–16",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/1_veda/4_upa/brup___u.htm",
+      "edition": "Kāṇva recension (GRETIL; checked against Limaye & Vadekar 1958)",
+      "quote": "yatheyaṃ vidyetaḥ pūrvaṃ na kasmiṃś cana brāhmana uvāsa"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "psg:cu-5-3-10",
+    "locator": "ChU 5.3.1–5.10.10",
+    "statement": "Śvetaketu comes to the assembly (samiti) of the Pañcālas; the king says that because this knowledge had never before gone to brahmins, rule in all worlds belonged to the kṣatriya (5.3.7); the five fires are yonder world, rain-cloud, earth, man and woman; those of pleasant conduct quickly reach a pleasant birth (brahmin, kṣatriya, vaiśya), those of foul conduct a foul one (dog, pig, caṇḍāla); a third state is that of tiny creatures who repeatedly “are born and die”.",
+    "sources": [
+     {
+      "source": "src:gretil-chandogya",
+      "locator": "ChU 5.3.7; 5.10.7–8",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/1_veda/4_upa/chup___u.htm",
+      "quote": "tasmād u sarveṣu lokeṣu kṣatrasyaiva praśāsanam abhūd iti"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "note": "The Chāndogya ties rebirth explicitly to conduct (caraṇa) and to social birth; the Bṛhadāraṇyaka emphasises the two paths and quotes the Ṛgveda. Both make a kṣatriya the source of the doctrine.",
+  "agent": "vedic"
+ }
+]

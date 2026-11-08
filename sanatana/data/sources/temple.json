@@ -1,0 +1,424 @@
+[
+ {
+  "id": "src:hardy-2007",
+  "type": "scholarly-book",
+  "title": "The Temple Architecture of India",
+  "author": "Adam Hardy",
+  "year": "2007",
+  "publisher": "John Wiley & Sons, Chichester",
+  "agent": "temple"
+ },
+ {
+  "id": "src:hardy-1995",
+  "type": "scholarly-book",
+  "title": "Indian Temple Architecture: Form and Transformation — The Karṇāṭa Drāviḍa Tradition, 7th to 13th Centuries",
+  "author": "Adam Hardy",
+  "year": "1995",
+  "publisher": "Indira Gandhi National Centre for the Arts / Abhinav Publications, New Delhi",
+  "agent": "temple"
+ },
+ {
+  "id": "src:huntington-1985",
+  "type": "scholarly-book",
+  "title": "The Art of Ancient India: Buddhist, Hindu, Jain",
+  "author": "Susan L. Huntington (with John C. Huntington)",
+  "year": "1985",
+  "publisher": "Weatherhill, New York and Tokyo",
+  "agent": "temple"
+ },
+ {
+  "id": "src:michell-2000",
+  "type": "scholarly-book",
+  "title": "Hindu Art and Architecture",
+  "author": "George Michell",
+  "year": "2000",
+  "publisher": "Thames & Hudson, London",
+  "agent": "temple"
+ },
+ {
+  "id": "src:davis-1997",
+  "type": "scholarly-book",
+  "title": "Lives of Indian Images",
+  "author": "Richard H. Davis",
+  "year": "1997",
+  "publisher": "Princeton University Press",
+  "agent": "temple"
+ },
+ {
+  "id": "src:thapar-2004",
+  "type": "scholarly-book",
+  "title": "Somanatha: The Many Voices of a History",
+  "author": "Romila Thapar",
+  "year": "2004",
+  "publisher": "Viking / Penguin Books India, New Delhi (Verso ed. 2005)",
+  "agent": "temple"
+ },
+ {
+  "id": "src:fritz-michell-1991",
+  "type": "scholarly-book",
+  "title": "City of Victory: Vijayanagara, the Medieval Hindu Capital of Southern India",
+  "author": "John M. Fritz and George Michell",
+  "year": "1991",
+  "publisher": "Aperture, New York",
+  "agent": "temple"
+ },
+ {
+  "id": "src:dallapiccola-1992",
+  "type": "scholarly-book",
+  "title": "The Ramachandra Temple at Vijayanagara",
+  "author": "Anna L. Dallapiccola, John M. Fritz, George Michell and S. Rajasekhara",
+  "year": "1992",
+  "publisher": "Manohar / American Institute of Indian Studies, New Delhi",
+  "agent": "temple"
+ },
+ {
+  "id": "src:jacques-freeman-1997",
+  "type": "scholarly-book",
+  "title": "Angkor: Cities and Temples",
+  "author": "Claude Jacques and Michael Freeman",
+  "year": "1997",
+  "publisher": "River Books, Bangkok",
+  "agent": "temple"
+ },
+ {
+  "id": "src:coedes-1968",
+  "type": "scholarly-book",
+  "title": "The Indianized States of Southeast Asia",
+  "author": "George Cœdès (ed. W. F. Vella, trans. S. B. Cowing)",
+  "year": "1968",
+  "publisher": "East-West Center Press, Honolulu",
+  "agent": "temple"
+ },
+ {
+  "id": "src:mannikka-1996",
+  "type": "scholarly-book",
+  "title": "Angkor Wat: Time, Space, and Kingship",
+  "author": "Eleanor Mannikka",
+  "year": "1996",
+  "publisher": "University of Hawaiʻi Press, Honolulu",
+  "agent": "temple"
+ },
+ {
+  "id": "src:jordaan-1996",
+  "type": "scholarly-book",
+  "title": "In Praise of Prambanan: Dutch Essays on the Loro Jonggrang Temple Complex",
+  "author": "Roy Jordaan (ed.)",
+  "year": "1996",
+  "publisher": "KITLV Press, Leiden",
+  "agent": "temple"
+ },
+ {
+  "id": "src:dumarcay-1986",
+  "type": "scholarly-book",
+  "title": "The Temples of Java",
+  "author": "Jacques Dumarçay (trans. M. Smithies)",
+  "year": "1986",
+  "publisher": "Oxford University Press, Singapore",
+  "agent": "temple"
+ },
+ {
+  "id": "src:guy-2014",
+  "type": "catalogue",
+  "title": "Lost Kingdoms: Hindu-Buddhist Sculpture of Early Southeast Asia",
+  "author": "John Guy (ed.)",
+  "year": "2014",
+  "publisher": "The Metropolitan Museum of Art, New York",
+  "agent": "temple"
+ },
+ {
+  "id": "src:berkson-1983",
+  "type": "scholarly-book",
+  "title": "Elephanta: The Cave of Shiva",
+  "author": "Carmel Berkson, Wendy Doniger O’Flaherty and George Michell",
+  "year": "1983",
+  "publisher": "Princeton University Press",
+  "agent": "temple"
+ },
+ {
+  "id": "src:tartakov-1997",
+  "type": "scholarly-book",
+  "title": "The Durga Temple at Aihole: A Historiographical Study",
+  "author": "Gary Michael Tartakov",
+  "year": "1997",
+  "publisher": "Oxford University Press, Delhi",
+  "agent": "temple"
+ },
+ {
+  "id": "src:desai-2000",
+  "type": "scholarly-book",
+  "title": "Khajuraho (Monumental Legacy)",
+  "author": "Devangana Desai",
+  "year": "2000",
+  "publisher": "Oxford University Press, New Delhi",
+  "agent": "temple"
+ },
+ {
+  "id": "src:kielhorn-1892",
+  "type": "epigraphic-corpus",
+  "title": "Inscriptions from Khajuraho",
+  "author": "F. Kielhorn",
+  "year": "1892",
+  "publisher": "Epigraphia Indica 1: 121–153",
+  "notes": "Edits the Khajuraho inscriptions including the Lakṣmaṇa-temple inscription dated Vikrama 1011 (953/954 CE).",
+  "agent": "temple"
+ },
+ {
+  "id": "src:hultzsch-sii2",
+  "type": "epigraphic-corpus",
+  "title": "South Indian Inscriptions, vol. II: Tamil Inscriptions of Rajaraja, Rajendra-Chola and Others in the Rajarajesvara Temple at Tanjavur",
+  "author": "E. Hultzsch (ed.)",
+  "year": "1891–1913",
+  "publisher": "Archaeological Survey of India (New Imperial Series), Madras",
+  "agent": "temple"
+ },
+ {
+  "id": "src:sastri-1955",
+  "type": "scholarly-book",
+  "title": "The Cōḷas (2nd ed.)",
+  "author": "K. A. Nilakanta Sastri",
+  "year": "1955",
+  "publisher": "University of Madras",
+  "agent": "temple"
+ },
+ {
+  "id": "src:srinivasan-kr-1964",
+  "type": "scholarly-book",
+  "title": "Cave Temples of the Pallavas",
+  "author": "K. R. Srinivasan",
+  "year": "1964",
+  "publisher": "Archaeological Survey of India, New Delhi",
+  "agent": "temple"
+ },
+ {
+  "id": "src:vasudevan-2003",
+  "type": "scholarly-book",
+  "title": "The Royal Temple of Rajaraja: An Architectural Reassessment",
+  "author": "Geeta Vasudevan",
+  "year": "2003",
+  "publisher": "Abhinav Publications, New Delhi",
+  "agent": "temple"
+ },
+ {
+  "id": "src:donaldson-1985",
+  "type": "scholarly-book",
+  "title": "Hindu Temple Art of Orissa (3 vols.)",
+  "author": "Thomas E. Donaldson",
+  "year": "1985–1987",
+  "publisher": "E. J. Brill, Leiden",
+  "agent": "temple"
+ },
+ {
+  "id": "src:eschmann-kulke-tripathi-1978",
+  "type": "scholarly-book",
+  "title": "The Cult of Jagannath and the Regional Tradition of Orissa",
+  "author": "Anncharlott Eschmann, Hermann Kulke and Gaya Charan Tripathi (eds.)",
+  "year": "1978",
+  "publisher": "Manohar, New Delhi",
+  "agent": "temple"
+ },
+ {
+  "id": "src:urban-2010",
+  "type": "scholarly-book",
+  "title": "The Power of Tantra: Religion, Sexuality and the Politics of South Asian Studies",
+  "author": "Hugh B. Urban",
+  "year": "2010",
+  "publisher": "I. B. Tauris, London",
+  "agent": "temple"
+ },
+ {
+  "id": "src:smith-1996",
+  "type": "scholarly-book",
+  "title": "The Dance of Śiva: Religion, Art and Poetry in South India",
+  "author": "David Smith",
+  "year": "1996",
+  "publisher": "Cambridge University Press",
+  "agent": "temple"
+ },
+ {
+  "id": "src:younger-1995",
+  "type": "scholarly-book",
+  "title": "The Home of Dancing Śivaṉ: The Traditions of the Hindu Temple in Citamparam",
+  "author": "Paul Younger",
+  "year": "1995",
+  "publisher": "Oxford University Press, New York",
+  "agent": "temple"
+ },
+ {
+  "id": "src:fuller-1984",
+  "type": "scholarly-book",
+  "title": "Servants of the Goddess: The Priests of a South Indian Temple",
+  "author": "C. J. Fuller",
+  "year": "1984",
+  "publisher": "Cambridge University Press",
+  "agent": "temple"
+ },
+ {
+  "id": "src:ramesan-1981",
+  "type": "scholarly-book",
+  "title": "The Tirumala Temple",
+  "author": "N. Ramesan",
+  "year": "1981",
+  "publisher": "Tirumala Tirupati Devasthanams, Tirupati",
+  "agent": "temple"
+ },
+ {
+  "id": "src:foekema-1996",
+  "type": "scholarly-book",
+  "title": "A Complete Guide to Hoysala Temples",
+  "author": "Gerard Foekema",
+  "year": "1996",
+  "publisher": "Abhinav Publications, New Delhi",
+  "agent": "temple"
+ },
+ {
+  "id": "src:asher-1980",
+  "type": "scholarly-book",
+  "title": "The Art of Eastern India, 300–800",
+  "author": "Frederick M. Asher",
+  "year": "1980",
+  "publisher": "University of Minnesota Press, Minneapolis",
+  "agent": "temple"
+ },
+ {
+  "id": "src:slusser-1982",
+  "type": "scholarly-book",
+  "title": "Nepal Mandala: A Cultural Study of the Kathmandu Valley (2 vols.)",
+  "author": "Mary Shepherd Slusser",
+  "year": "1982",
+  "publisher": "Princeton University Press",
+  "agent": "temple"
+ },
+ {
+  "id": "src:michaels-2008",
+  "type": "scholarly-book",
+  "title": "Śiva in Trouble: Festivals and Rituals at the Paśupatinātha Temple of Deopatan",
+  "author": "Axel Michaels",
+  "year": "2008",
+  "publisher": "Oxford University Press, New York",
+  "agent": "temple"
+ },
+ {
+  "id": "src:stein-1900",
+  "type": "translation",
+  "title": "Kalhaṇa’s Rājataraṅgiṇī: A Chronicle of the Kings of Kaśmīr (2 vols.)",
+  "author": "M. A. Stein (trans.)",
+  "year": "1900",
+  "publisher": "Archibald Constable, Westminster",
+  "license": "public domain",
+  "notes": "Book 4 narrates Lalitāditya Muktāpīḍa, including his temple to Mārtaṇḍa.",
+  "agent": "temple"
+ },
+ {
+  "id": "src:sc-ayodhya-2019",
+  "type": "institutional",
+  "title": "M Siddiq (D) Thr Lrs v. Mahant Suresh Das & Ors (Civil Appeal Nos. 10866–10867 of 2010), judgment of 9 November 2019",
+  "author": "Supreme Court of India",
+  "year": "2019",
+  "publisher": "Supreme Court of India, New Delhi",
+  "agent": "temple"
+ },
+ {
+  "id": "src:srjbtk",
+  "type": "tradition",
+  "title": "Shri Ram Janmbhoomi Teerth Kshetra — official website",
+  "author": "Shri Ram Janmbhoomi Teerth Kshetra",
+  "year": "ongoing",
+  "publisher": "Shri Ram Janmbhoomi Teerth Kshetra, Ayodhya",
+  "url": "https://srjbtkshetra.org/",
+  "urlChecked": false,
+  "notes": "Automated fetch returned HTTP 405 during research.",
+  "agent": "temple"
+ },
+ {
+  "id": "src:somnath-trust",
+  "type": "tradition",
+  "title": "Shree Somnath Trust — official website",
+  "author": "Shree Somnath Trust",
+  "year": "ongoing",
+  "publisher": "Shree Somnath Trust, Prabhas Patan",
+  "url": "https://somnath.org/",
+  "urlChecked": true,
+  "agent": "temple"
+ },
+ {
+  "id": "src:ttd",
+  "type": "tradition",
+  "title": "Tirumala Tirupati Devasthanams — official website",
+  "author": "Tirumala Tirupati Devasthanams",
+  "year": "ongoing",
+  "publisher": "TTD, Tirupati",
+  "url": "https://www.tirumala.org/",
+  "urlChecked": true,
+  "agent": "temple"
+ },
+ {
+  "id": "src:skvt",
+  "type": "tradition",
+  "title": "Shri Kashi Vishwanath Temple Trust — official website",
+  "author": "Shri Kashi Vishwanath Temple Trust",
+  "year": "ongoing",
+  "publisher": "Government of Uttar Pradesh, Varanasi",
+  "url": "https://shrikashivishwanath.org/",
+  "urlChecked": true,
+  "agent": "temple"
+ },
+ {
+  "id": "src:sjta",
+  "type": "tradition",
+  "title": "Shree Jagannatha Temple Administration, Puri — official website",
+  "author": "Shree Jagannatha Temple Administration",
+  "year": "ongoing",
+  "publisher": "Government of Odisha, Puri",
+  "url": "https://www.shreejagannatha.in/",
+  "urlChecked": false,
+  "notes": "Connection reset during automated fetch.",
+  "agent": "temple"
+ },
+ {
+  "id": "src:shiva-purana-tr",
+  "type": "translation",
+  "title": "The Śiva Purāṇa (Ancient Indian Tradition and Mythology, vols. 1–4)",
+  "author": "J. L. Shastri (ed.), translated by a board of scholars",
+  "year": "1969–1970",
+  "publisher": "Motilal Banarsidass, Delhi",
+  "notes": "English translation; the Koṭirudrasaṃhitā contains the account of the twelve jyotirliṅgas.",
+  "agent": "temple"
+ },
+ {
+  "id": "src:dbhp-tr",
+  "type": "translation",
+  "title": "The Śrīmad Devī Bhāgavatam",
+  "author": "Swami Vijñanananda (Hari Prasanna Chatterji) (trans.)",
+  "year": "1921–1923",
+  "publisher": "Sacred Books of the Hindus 26, Panini Office, Allahabad",
+  "url": "https://www.sacred-texts.com/hin/db/index.htm",
+  "urlChecked": false,
+  "license": "public domain",
+  "notes": "Book 7 ch. 30 lists 108 seats of the Goddess (recall). sacred-texts.com returned a Cloudflare challenge during research.",
+  "agent": "temple"
+ },
+ {
+  "id": "src:wikidata",
+  "type": "reference",
+  "title": "Wikidata",
+  "author": "Wikidata contributors",
+  "year": "ongoing",
+  "publisher": "Wikimedia Foundation",
+  "url": "https://www.wikidata.org/",
+  "urlChecked": true,
+  "notes": "Used only for coordinates of monuments that lack an English Wikipedia article (queried via the Wikidata Query Service, P625).",
+  "agent": "temple"
+ },
+ {
+  "id": "src:asi-whs",
+  "type": "institutional",
+  "title": "World Heritage Sites in India (ASI portal page)",
+  "author": "Archaeological Survey of India",
+  "year": "ongoing",
+  "publisher": "Ministry of Culture, Government of India",
+  "url": "https://asi.nic.in/pages/World-Heritage/HQ",
+  "urlChecked": true,
+  "notes": "Lists the ASI-managed World Heritage properties with links to their UNESCO list numbers (e.g. 239 Pattadakal, 240 Khajuraho, 241 Hampi, 243 Ellora, 244 Elephanta, 246 Konark, 249 Mahabalipuram, 250 Great Living Chola Temples, 1570 Ramappa, 1670 Hoysala ensembles). Fetched 2026-11-08.",
+  "agent": "temple"
+ }
+]

@@ -1,0 +1,742 @@
+[
+ {
+  "id": "cmp:avatara-lists",
+  "title": "Lists of Viṣṇu's manifestations, text by text",
+  "subject": "concept:avatara",
+  "question": "Which manifestations of Viṣṇu does each text list, in what number and order?",
+  "rows": [
+   {
+    "text": "text:mahabharata",
+    "locator": "MBh (CE) 12.326.71–94 (Nārāyaṇīya)",
+    "statement": "Foretells Varāha, Narasiṃha, Vāmana, Rāma Bhārgava (Tretā), Rāma Dāśarathi (Tretā–Dvāpara junction) and Kṛṣṇa at Mathurā (Dvāpara–Kali junction), and names Haṃsa and Hayaśiras as past manifestations. The constituted text has no Matsya, Kūrma or Kalki; the familiar ten-list beginning with Haṃsa is a vulgate reading.",
+    "sources": [
+     {
+      "source": "src:mbh-critical-edition",
+      "locator": "MBh (CE) 12.326.71–94",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b12/b12c326.htm"
+     },
+     {
+      "source": "src:hacker-1960"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:harivamsha",
+    "locator": "HV (CE) 31",
+    "statement": "Pauṣkara (lotus), Vārāha, Nārasiṃha, Vāmana, Dattātreya, Jāmadagnya, Rāma Dāśarathi, Kṛṣṇa (Māthura) and the future Kalki Viṣṇuyaśas (31.148); Vedavyāsa and the phrase 'ten manifestations of Vāsudeva' occur only in starred passages.",
+    "sources": [
+     {
+      "source": "src:harivamsha-ce",
+      "locator": "HV (CE) 31.20–148",
+      "edition": "Vaidya CE (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:vishnu-purana",
+    "locator": "ViP (crit.) 1.4.8; 1.9.86; 1.20.32; 4.4.49; 4.24.27",
+    "statement": "Gives no numbered list: Varāha raises the Earth 'as he took fish, tortoise and other forms in earlier kalpas' (1.4.8); Viṣṇu as tortoise (1.9.86) and in woman's form (1.9.107); the man-lion (1.20.32); Viṣṇu born fourfold as Rāma and his brothers (4.4.49); Kṛṣṇa as an aṃśa (4.24.27).",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "ViP (crit.) 1.4.8, 1.9.86, 1.20.32, 4.4.49, 4.24.27",
+      "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:bhagavata-purana",
+    "locator": "BhP 1.3.6–28",
+    "statement": "Twenty-two: the Kumāras, Varāha, Nārada, Nara-Nārāyaṇa, Kapila, Dattātreya, Yajña, Ṛṣabha, Pṛthu, Matsya, Kūrma, Dhanvantari, Mohinī, Narasiṃha, Vāmana, Paraśurāma, Vyāsa, Rāma, Balarāma, Kṛṣṇa, Buddha, Kalki; avatāras are innumerable (1.3.26); these are portions, 'but Kṛṣṇa is Bhagavān himself' (1.3.28).",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "BhP 1.3.6–28",
+      "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:bhagavata-purana",
+    "locator": "BhP 2.7.1–38",
+    "statement": "A second catalogue (Brahmā to Nārada) of about twenty-four, adding Suyajña, Hayaśīrṣa, Hari who saves Gajendra, Haṃsa and Manu, and treating Balarāma and Kṛṣṇa together.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "BhP 2.7.1–38",
+      "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:garuda-purana",
+    "locator": "GarP 1.1.14–33; 1.86.10–11",
+    "statement": "1.1 reproduces the Bhāgavata's twenty-two almost verbatim (Buddha 'jinasuta' for BhP's 'añjanasuta'); 1.86.10–11 gives ten: Matsya, Kūrma, Varāha, Nṛhari, Vāmana, Rāma (Bhārgava), Rāma Dāśarathi, Kṛṣṇa, Buddha, Kalki.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "GarP 1.1.14–33; 1.86.10–11",
+      "edition": "Venkatesvara Press ed. (Bombay); GRETIL e-text",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_garuDapurANa.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:matsya-purana",
+    "locator": "MatsP 47.235–251",
+    "statement": "Because of Bhṛgu's curse Viṣṇu has three divine manifestations (a portion of Nārāyaṇa born of Dharma, Narasiṃha, Vāmana) and seven human ones: Dattātreya, Māndhātṛ, Jāmadagnya, Rāma Dāśarathi, Vedavyāsa, Buddha and Kalki — no Matsya, Kūrma, Varāha or Kṛṣṇa in this count (the fish is Janārdana at 1.28).",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "MatsP 47.235–251; 1.28",
+      "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:agni-purana",
+    "locator": "AgP 2–16; 49.1–9",
+    "statement": "Narrates the avatāras in order (Matsya, Kūrma, Varāha, Narasiṃha, Vāmana, Paraśurāma, Rāma, Kṛṣṇa via the Harivaṃśa, Buddha, Kalki) and calls them the 'ten' (16.12); its iconographic list (49) has Balarāma with plough and pestle in place of Kṛṣṇa.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "AgP 2–16; 16.12; 49.1–9",
+      "edition": "Rajendralal Mitra ed. (Bibliotheca Indica 1870–79); GRETIL e-text",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_agnipurANa.txt"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "note": "The 'standard ten' (with Kṛṣṇa or Balarāma eighth and Buddha ninth) is a later convention; earlier and contemporaneous texts count three, six, nine, ten, twenty-two or 'innumerable'. Rows are not reconciled.",
+  "agent": "purana"
+ },
+ {
+  "id": "cmp:flood-story",
+  "title": "Manu and the fish: the flood story from the Śatapatha to the Bhāgavata",
+  "subject": "narr:matsya-flood",
+  "question": "Who is the fish, who is saved, why, and where does the boat come to rest?",
+  "rows": [
+   {
+    "text": "text:shatapatha-brahmana",
+    "locator": "ŚB 1.8.1.1–10",
+    "statement": "A small fish found in Manu's washing water asks protection and warns of a flood; Manu ties his boat to its horn and is carried to the 'northern mountain'; alone, he sacrifices and from the offering a woman (Iḍā) is born. The fish is not identified with a god.",
+    "sources": [
+     {
+      "source": "src:eggeling-sb",
+      "locator": "ŚB 1.8.1.1–10"
+     }
+    ],
+    "status": "recall"
+   },
+   {
+    "text": "text:mahabharata",
+    "locator": "MBh (CE) 3.185",
+    "statement": "Told by Mārkaṇḍeya: Manu Vaivasvata, performing austerities at Viśālā Badarī, saves a little fish which outgrows jar, pond, Gaṅgā and ocean; with the seven sages and all seeds he is towed to the Himālayan peak Naubandhana; the fish declares 'I am Prajāpati Brahmā' (3.185.48). The tale is called 'the purāṇa named Mātsyaka' (3.185.53).",
+    "sources": [
+     {
+      "source": "src:mbh-critical-edition",
+      "locator": "MBh (CE) 3.185.1–54",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b03/b03c185.htm"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:matsya-purana",
+    "locator": "MatsP 1.10–2.19",
+    "statement": "King Manu, son of Ravi, practises yoga on the Malaya; the fish is recognised as Vāsudeva/Keśava/Janārdana (1.25–28); the flood comes at the end of the Cākṣuṣa manvantara (2.14); a serpent serves as the rope (2.18); the whole Purāṇa is the fish's teaching to Manu.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "MatsP 1.10–2.19",
+      "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:bhagavata-purana",
+    "locator": "BhP 8.24",
+    "statement": "The demon Hayagrīva steals the Vedas from sleeping Brahmā's mouths (8.24.8); Satyavrata, a royal sage devoted to Nārāyaṇa and lord of the Draviḍas, catches the fish in the Kṛtamālā (8.24.12–13); Viṣṇu as the fish teaches him, slays Hayagrīva and recovers the Vedas (8.24.57); Satyavrata becomes Vaivasvata Manu in this kalpa (8.24.58).",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "BhP 8.24.8–58",
+      "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:agni-purana",
+    "locator": "AgP 2.2–15",
+    "statement": "Manu Vaivasvata at the Kṛtamālā; the fish is addressed as Viṣṇu–Nārāyaṇa–Janārdana; a flood after seven days; the boat tied to the golden one-horned fish with a great serpent.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "AgP 2.2–15",
+      "edition": "Rajendralal Mitra ed. (Bibliotheca Indica 1870–79); GRETIL e-text",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_agnipurANa.txt"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "note": "The Purāṇic identification of the fish with Viṣṇu is absent from the Śatapatha and contradicted by the Mahābhārata's Brahmā. The Śatapatha row is from Eggeling's translation (not re-checked online in this session).",
+  "agent": "purana"
+ },
+ {
+  "id": "cmp:shiva-portrayal",
+  "title": "From Rudra to the Liṅgodbhava: portrayals of Śiva",
+  "subject": "deity:shiva",
+  "question": "How is the god Rudra–Śiva characterised and ranked in successive texts?",
+  "rows": [
+   {
+    "text": "text:rigveda",
+    "locator": "RV 2.33",
+    "statement": "Rudra is a fierce archer-god, 'the strongest of the strong', implored to spare offspring and cattle and praised as the best of physicians; a god among many, not supreme.",
+    "sources": [
+     {
+      "source": "src:jamison-brereton-2014",
+      "locator": "RV 2.33"
+     },
+     {
+      "source": "src:griffith-rv",
+      "locator": "RV 2.33"
+     }
+    ],
+    "status": "recall"
+   },
+   {
+    "text": "text:shvetashvatara-upanishad",
+    "locator": "ŚvU 3.2–11; 4.14–22",
+    "statement": "Rudra is the one god who does not tolerate a second (3.2), creator and protector, who generated Hiraṇyagarbha (3.4), whose benign form is 'śivā' (3.5); he is called Śiva, all-pervading (3.11; 4.14). A theistic supreme god.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "ŚvU 3.2–11; 4.14–22",
+      "edition": "Śvetāśvatara Upaniṣad; GRETIL e-text",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_zvetAzvataropaniSad.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:mahabharata",
+    "locator": "MBh (CE), various (e.g. Sauptika and Anuśāsana parvans)",
+    "statement": "Śiva is a mighty, ambivalent god: destroyer of Dakṣa's sacrifice, giver of weapons to Arjuna, praised with a thousand names; Vaiṣṇava passages subordinate him to Nārāyaṇa.",
+    "sources": [
+     {
+      "source": "src:hopkins-1915"
+     },
+     {
+      "source": "src:kramrisch-1981"
+     }
+    ],
+    "status": "source-checked"
+   },
+   {
+    "text": "text:linga-purana",
+    "locator": "LiP 1.17.31–45; 1.76.60–61",
+    "statement": "In the Liṅgodbhava Brahmā (swan) and Viṣṇu (boar) fail to find the ends of the fiery liṅga; Śiva is supreme over both. The text prescribes the image: Candraśekhara within the liṅga, swan above, boar below.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "LiP 1.17.31–45; 1.76.60–61",
+      "edition": "Venkatesvara Press ed. (Bombay 1906); GRETIL e-text",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_liGgapurANa1-108.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:shiva-purana",
+    "locator": "ŚivP 1.5–9; 1.7.19–27",
+    "statement": "The same pillar myth with an added episode: Brahmā claims to have seen the top, citing a falling ketakī flower as witness, and is punished for the lie.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "ŚivP 1.5–9; 1.7.19–27",
+      "edition": "Venkatesvara Press ed. (Bombay c. 1920), books 1 and 7; GRETIL e-text",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_zivapurANabooks-1-and-7.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:skandapurana-early",
+    "locator": "Skandapurāṇa (ed. 1998–), coarse",
+    "statement": "Śiva as the lord of a Pāśupata-coloured universe, his marriage to Pārvatī, the birth of Skanda and the subjugation of Andhaka; the text maps Śaiva holy places such as Vārāṇasī.",
+    "sources": [
+     {
+      "source": "src:bakker-2014"
+     },
+     {
+      "source": "src:skandapurana-vol1"
+     }
+    ],
+    "status": "source-checked"
+   }
+  ],
+  "note": "The rows show a trajectory from a feared Vedic god to a supreme deity; no single line of development is implied.",
+  "agent": "purana"
+ },
+ {
+  "id": "cmp:goddess-texts",
+  "title": "The Goddess from Umā Haimavatī to the Devī Bhāgavata",
+  "subject": "deity:devi",
+  "question": "How does each text present the Goddess?",
+  "rows": [
+   {
+    "text": "text:kena-upanishad",
+    "locator": "Kena Up. 3.12 (= 25 in continuous numbering)",
+    "statement": "A beautiful woman, Umā Haimavatī, appears to Indra and reveals that the mysterious being (yakṣa) was Brahman. She is a revealer of knowledge; her relation to Śiva is not stated.",
+    "sources": [
+     {
+      "source": "src:olivelle-1998",
+      "locator": "Kena Upaniṣad 3.12"
+     }
+    ],
+    "status": "recall"
+   },
+   {
+    "text": "text:harivamsha",
+    "locator": "HV (CE) 47.26–55",
+    "statement": "Viṣṇu sends Nidrā to be born of Yaśodā; she will be Kauśikī, dwell eternally on the Vindhya, slay Śumbha and Niśumbha, love meat-offerings and be worshipped on the ninth day; the Āryā hymn proper stands outside the constituted text (starred/appendix).",
+    "sources": [
+     {
+      "source": "src:harivamsha-ce",
+      "locator": "HV (CE) 47.26–55",
+      "edition": "Vaidya CE (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:devi-mahatmya",
+    "locator": "DM 1–13 (MkP 81–93)",
+    "statement": "A supreme Goddess, formed from all the gods' radiance (DM 2), slays Madhu–Kaiṭabha (through Viṣṇu), Mahiṣa and Śumbha–Niśumbha, emits Kālī/Cāmuṇḍā and the Mothers, is hymned as Nārāyaṇī and promises to return whenever demons arise.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "MkP 81–93",
+      "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+     },
+     {
+      "source": "src:coburn-1984"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:devi-bhagavata-purana",
+    "locator": "DBhP 5; 7.30–40",
+    "statement": "The Goddess is the ground of all being who creates Brahmā, Viṣṇu and Śiva; the DM battles are retold (book 5); the Devī Gītā (7.31–40) gives her Vedāntic teaching to Himālaya.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "DBhP 7.31–40",
+      "edition": "Devīgītā = Devībhāgavata Purāṇa 7.31–40; GRETIL e-text",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_devIgItA.txt"
+     },
+     {
+      "source": "src:brown-1990"
+     }
+    ],
+    "status": "source-checked"
+   }
+  ],
+  "note": "Coburn's phrase 'crystallization' marks the DM as the point where earlier goddesses are understood as one Goddess.",
+  "agent": "purana"
+ },
+ {
+  "id": "cmp:yuga-lengths",
+  "title": "How long are the yugas? Manu, the Mahābhārata, the Purāṇas and Āryabhaṭa",
+  "subject": "concept:yuga",
+  "question": "What durations does each source give for the four yugas, and in what kind of years?",
+  "rows": [
+   {
+    "text": "text:manusmriti",
+    "locator": "Manu 1.67–73, 1.79",
+    "statement": "Kṛta 4,000 years + dawn 400 + dusk 400; Tretā 3,000 + 300 + 300; Dvāpara 2,000 + 200 + 200; Kali 1,000 + 100 + 100; the 12,000 together are 'a yuga of the gods'; a year is a day-night of the gods (1.67); a thousand such yugas are Brahmā's day; a manvantara is 71. Manu does not convert into human years.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "Manu 1.67–73, 1.79",
+      "edition": "GRETIL e-text, text of Kullūka (Shastri 1983) with Medhātithi variants",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_manusmRti.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:mahabharata",
+    "locator": "MBh (CE) 12.224.14–31",
+    "statement": "Verses nearly identical to Manu 1.64–78 give the same 4,000/3,000/2,000/1,000 scheme with dawn and dusk and call the whole 'the twelve thousand known as a yuga' (12.224.28), without stating divine years.",
+    "sources": [
+     {
+      "source": "src:mbh-critical-edition",
+      "locator": "MBh (CE) 12.224.14–31",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b12/b12c224.htm"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:vishnu-purana",
+    "locator": "ViP (crit.) 1.3.8–21; 4.24.32–34",
+    "statement": "The caturyuga is 12,000 divine years (1.3.11); 4, 3, 2, 1 thousand with sandhyās of as many hundreds (1.3.12–13). A manvantara is 852,000 divine years = 306,720,000 human years (1.3.19–21), i.e. 360 human years per divine year (equivalently 4,320,000 human years per caturyuga). ViP 4.24.33 states that Kali lasts 360,000 human years, and 4.24.34 '1,200 divine years'.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "ViP (crit.) 1.3.8–21; 4.24.32–34",
+      "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:bhagavata-purana",
+    "locator": "BhP 3.11.18–24",
+    "statement": "Four yugas of 12,000 divine years; 4, 3, 2, 1 thousand with twice as many hundreds for the junctions; a thousand caturyugas are Brahmā's day; a Manu rules a little over 71.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "BhP 3.11.18–24",
+      "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:aryabhatiya",
+    "locator": "AB 3.7–10; 1.5",
+    "statement": "A divine year is 360 solar years (3.7); a yuga of 12,000 divine years is divided into four equal quarters (yugapāda), not 4:3:2:1; Brahmā's day is 1,008 yugas (3.8); 3,600 years of the Kali had elapsed in Āryabhaṭa's 23rd year (3.10).",
+    "sources": [
+     {
+      "source": "src:shukla-sarma-1976",
+      "locator": "Āryabhaṭīya 3.7–10",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_AryabhaTa-AryabhaTIya.txt"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "note": "Traditional chronology. González-Reimann argues that the divine-year multiplier arose to reconcile the epic 12,000-year cycle with astronomical periods. The arithmetic equivalences (×360) are the editor's, stated as implied by ViP 1.3.19–21.",
+  "agent": "purana"
+ },
+ {
+  "id": "cmp:churning-versions",
+  "title": "The churning of the ocean in four tellings",
+  "subject": "narr:samudra-manthana",
+  "question": "Who supports Mount Mandara, what happens to the poison, what emerges, and how is the nectar kept from the asuras?",
+  "rows": [
+   {
+    "text": "text:mahabharata",
+    "locator": "MBh (CE) 1.15–17",
+    "statement": "Ananta uproots Mandara; the king of tortoises Akūpāra bears it; Vāsuki is the rope; Soma, Śrī, Surā, a white horse, the Kaustubha and Dhanvantari with the nectar emerge; Nārāyaṇa as Mohinī takes the nectar; Rāhu is beheaded; Nara and Nārāyaṇa win the battle. No poison episode in the constituted text.",
+    "sources": [
+     {
+      "source": "src:mbh-critical-edition",
+      "locator": "MBh (CE) 1.15–17",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b01/b01c015.htm"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:valmiki-ramayana",
+    "locator": "VR (CE) 1.44.14–27 (vulgate 1.45)",
+    "statement": "Set in the Kṛta age; Mandara and Vāsuki; Dhanvantari, sixty crores of apsarases, Vāruṇī (taken by Aditi's sons, hence 'suras'), Uccaiḥśravas, the Kaustubha and the nectar; a war in which the sons of Aditi destroy the sons of Diti. No tortoise and no poison in the constituted text.",
+    "sources": [
+     {
+      "source": "src:vr-critical-edition",
+      "locator": "VR (CE) 1.44.14–27",
+      "edition": "Baroda Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:vishnu-purana",
+    "locator": "ViP (crit.) 1.9.1–110",
+    "statement": "Caused by Durvāsas' curse on Indra; Viṣṇu himself as tortoise bears Mandara and in other forms pulls the serpent and presses the summit; Surabhi, Vāruṇī, the Pārijāta, apsarases, the moon (taken by Maheśvara), Dhanvantari and Śrī emerge; the nāgas take the poison; Viṣṇu in a woman's form gives the nectar to the gods.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "ViP (crit.) 1.9.1–110",
+      "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:bhagavata-purana",
+    "locator": "BhP 8.5–12",
+    "statement": "Viṣṇu as tortoise; Śiva drinks the hālāhala out of compassion (8.7.43); Lakṣmī chooses Mukunda (8.8.24); Mohinī distributes the nectar (8.9); Śiva later sees Mohinī and is infatuated (8.12).",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "BhP 8.5–12",
+      "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "note": "Critical-edition texts of the two epics lack episodes (Kūrma as Viṣṇu; Śiva and the poison) that the vulgate texts and the Purāṇas contain.",
+  "agent": "purana"
+ },
+ {
+  "id": "cmp:eighteen-purana-lists",
+  "title": "Who are the eighteen? Purāṇa lists and verse counts",
+  "subject": "col:mahapuranas",
+  "question": "Which Purāṇa stands in the fourth (Śaiva/Vāyu) place, and what extents are given?",
+  "rows": [
+   {
+    "text": "text:vishnu-purana",
+    "locator": "ViP (crit.) 3.6.20–24",
+    "statement": "Brāhma (first), Pādma, Vaiṣṇava, Śaiva, Bhāgavata, Nāradīya, Mārkaṇḍeya, Āgneya, Bhaviṣya, Brahmavaivarta, Laiṅga, Vārāha, Skānda, Vāmana, Kaurma, Mātsya, Gāruḍa, Brahmāṇḍa; 'mahāpurāṇa' only in starred insertion 3.6.23*8.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "ViP (crit.) 3.6.20–24",
+      "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:bhagavata-purana",
+    "locator": "BhP 12.7.23–24; 12.13.4–9",
+    "statement": "Same membership with Śaiva in fourth place; counts: Brāhma 10,000, Pādma 55,000, Vaiṣṇava 23,000, Śaiva 24,000, Bhāgavata 18,000, Nārada 25,000, Mārkaṇḍeya 9,000, Āgneya 15,400, Bhaviṣya 14,500, Brahmavaivarta 18,000, Laiṅga 11,000, Vārāha 24,000, Skānda 81,100, Vāmana 10,000, Kaurma 17,000, Mātsya 14,000, Sauparṇa 19,000, Brahmāṇḍa 12,000 = 400,000.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "BhP 12.7.23–24; 12.13.4–9",
+      "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:matsya-purana",
+    "locator": "MatsP 53.12–58",
+    "statement": "Fourth is the Vāyavīya, 'joined with Rudra's greatness', 24,000 verses; Brāhma 13,000, Āgneya 16,000, Brahmāṇḍa 12,200; describes the Bhāgavata as beginning with the Gāyatrī and including Vṛtra's slaying (53.20–21).",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "MatsP 53.12–58",
+      "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:kurma-purana",
+    "locator": "KūrmaP 1.1.13–15",
+    "statement": "Keeps Śaiva fourth, then after Gāruḍa names the Vāyavīya and 'the eighteenth, called Brahmāṇḍa' (aṣṭādaśaṃ samuddiṣṭaṃ brahmāṇḍam iti saṃjñitam) — either a nineteenth title or an identification of the Vāyavīya with the Brahmāṇḍa.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "KūrmaP 1.1.13–15",
+      "edition": "GRETIL e-text",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kUrmapurANa.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:narada-purana",
+    "locator": "NārP 1.92.26–27",
+    "statement": "Brāhma, Pādma, Vaiṣṇava, Vāyavīya, Bhāgavata, Nāradīya, Mārkaṇḍeya, Āgneya, Bhaviṣya, Brahmavaivarta, Laiṅga …",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "NārP 1.92.26–27",
+      "edition": "GRETIL e-text",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_nAradapurANa.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:shiva-purana",
+    "locator": "ŚivP 7.1.1.43–45",
+    "statement": "Brāhma, Pādma, Vaiṣṇava, Śaiva, Bhāgavata …; the Śaiva is fourth and 'accomplishes all aims'.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "ŚivP 7.1.1.43–45",
+      "edition": "Venkatesvara Press ed. (Bombay c. 1920), books 1 and 7; GRETIL e-text",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_zivapurANabooks-1-and-7.txt"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "note": "The disagreement on the fourth place (Śaiva vs Vāyu) is preserved; Matsya's 24,000 for the Vāyavīya equals BhP's figure for the Śaiva.",
+  "agent": "purana"
+ },
+ {
+  "id": "cmp:solar-line-raghu-aja",
+  "title": "Rāma's ancestors: Raghu, Aja and the Vālmīki genealogy",
+  "subject": "lin:suryavamsha",
+  "question": "Who are the father and grandfather of Daśaratha, and where do Raghu, Nahuṣa and Yayāti stand?",
+  "rows": [
+   {
+    "text": "text:vishnu-purana",
+    "locator": "ViP (crit.) 4.4.47–49",
+    "statement": "… Dilīpa Khaṭvāṅga → Dīrghabāhu → Raghu → Aja → Daśaratha → Rāma, Lakṣmaṇa, Bharata, Śatrughna (Viṣṇu born fourfold). Nahuṣa and Yayāti belong to the Lunar line (4.8–10).",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "ViP (crit.) 4.4.47–49; 4.8–10",
+      "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:bhagavata-purana",
+    "locator": "BhP 9.10.1",
+    "statement": "Khaṭvāṅga → Dīrghabāhu → Raghu ('pṛthuśravāḥ') → Aja → Daśaratha.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "BhP 9.10.1",
+      "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:valmiki-ramayana",
+    "locator": "VR (CE) 1.69.19–30",
+    "statement": "Ikṣvāku → Vikukṣi → Bāṇa → Anaraṇya → Pṛthu → Triśaṅku → Dhundhumāra → Yuvanāśva → Māndhātṛ → Susaṃdhi → Dhruvasaṃdhi → Bharata → Asita → Sagara → Asamañja → Aṃśumat → Dilīpa → Bhagīratha → Kakutstha → Raghu → Kalmāṣapāda → Śaṅkhaṇa → Sudarśana → Agnivarṇa → Śīghraga → Maru → Praśuśruka → Ambarīṣa → Nahuṣa → Yayāti → Nābhāga → Aja → Daśaratha.",
+    "sources": [
+     {
+      "source": "src:vr-critical-edition",
+      "locator": "VR (CE) 1.69.19–30",
+      "edition": "Baroda Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:vishnu-purana",
+    "locator": "ViP (crit.) 3.1.33–34",
+    "statement": "Vaivasvata Manu has nine sons (Ikṣvāku, Nṛga, Dhṛṣṭa, Śaryāti, Nariṣyanta, Nābhāga-Diṣṭa, Karūṣa, Pṛṣadhra, Vasumān).",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "ViP (crit.) 3.1.33–34",
+      "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:bhagavata-purana",
+    "locator": "BhP 8.13.2–3",
+    "statement": "Vaivasvata Manu has ten sons (Ikṣvāku, Nabhaga, Dhṛṣṭa, Śaryāti, Nariṣyanta, Nābhāga, Diṣṭa, Tarūṣa, Pṛṣadhra, Vasumān).",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "BhP 8.13.2–3",
+      "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "note": "Homonymous kings (Nahuṣa, Yayāti, Nābhāga) in Vālmīki's list are kept as separate ids (char:nahusha-vr, char:yayati-vr, char:nabhaga-vr). Pargiter (1922) attempted to harmonise the lists; this table does not.",
+  "agent": "purana"
+ },
+ {
+  "id": "cmp:shakti-pitha-origins",
+  "title": "How did the seats of the Goddess arise?",
+  "subject": "narr:shakti-pitha-origin",
+  "question": "Is Satī's body divided, and how many seats are there?",
+  "rows": [
+   {
+    "text": "text:matsya-purana",
+    "locator": "MatsP 13.12–59",
+    "statement": "No dismemberment: at Dakṣa's sacrifice Satī names 108 tīrthas and the names she bears there (e.g. Viśālākṣī at Vārāṇasī), then burns herself and is reborn as Pārvatī.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "MatsP 13.12–59",
+      "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:kalika-purana",
+    "locator": "KāP ch. 18 (recall)",
+    "statement": "Śiva wanders with Satī's corpse; gods enter it and it falls in pieces; the yoni falls at Kāmarūpa, which becomes the pre-eminent pīṭha (Kāmākhyā).",
+    "sources": [
+     {
+      "source": "src:van-kooij-1972"
+     },
+     {
+      "source": "src:sircar-1973"
+     }
+    ],
+    "status": "recall"
+   },
+   {
+    "text": "text:devi-bhagavata-purana",
+    "locator": "DBhP 7.30 (recall)",
+    "statement": "Viṣṇu cuts the corpse and its parts fall at sacred sites; a list of 108 seats of the Goddess similar to the Matsya's follows.",
+    "sources": [
+     {
+      "source": "src:sircar-1973"
+     },
+     {
+      "source": "src:brown-1990"
+     }
+    ],
+    "status": "recall"
+   }
+  ],
+  "note": "Sircar (1973) traces the growth of pīṭha lists from four to fifty-one and 108; the corpse-dismemberment motif appears to be later than the Matsya's naming of tīrthas.",
+  "agent": "purana"
+ }
+]

@@ -1,0 +1,8286 @@
+[
+ {
+  "id": "temple:1",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:brihadisvara",
+  "qualifiers": {
+   "note": "as Rājarājeśvaram-uṭaiyār / Peruvuṭaiyār; worship continues"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Brihadisvara_Temple,_Thanjavur"
+   },
+   {
+    "source": "src:hultzsch-sii2"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:2",
+  "s": "temple:brihadisvara",
+  "p": "COMMISSIONED_BY",
+  "o": "person:rajaraja-i",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "History",
+    "url": "https://en.wikipedia.org/wiki/Brihadisvara_Temple,_Thanjavur"
+   },
+   {
+    "source": "src:hultzsch-sii2"
+   },
+   {
+    "source": "src:sastri-1955"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:3",
+  "s": "temple:brihadisvara",
+  "p": "BUILT_DURING",
+  "o": "pol:chola",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Brihadisvara_Temple,_Thanjavur"
+   },
+   {
+    "source": "src:dehejia-1990"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:4",
+  "s": "deity:nataraja",
+  "p": "DEPICTED_IN",
+  "o": "temple:brihadisvara",
+  "qualifiers": {
+   "note": "dance poses (karaṇas) carved in the upper vimāna passage and Cōḻa murals"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dehejia-1990"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:5",
+  "s": "person:sundarar",
+  "p": "DEPICTED_IN",
+  "o": "temple:brihadisvara",
+  "qualifiers": {
+   "note": "Cōḻa mural interpreted as Cuntarar’s journey to Kailāsa"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:dehejia-1990"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "rationale": "Identification of the mural scene is a scholarly reading of the painting.",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:6",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:gangaikondacholapuram",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Gangaikonda_Cholapuram"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:7",
+  "s": "temple:gangaikondacholapuram",
+  "p": "COMMISSIONED_BY",
+  "o": "person:rajendra-i",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Gangaikonda_Cholapuram"
+   },
+   {
+    "source": "src:dehejia-1990"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:8",
+  "s": "temple:gangaikondacholapuram",
+  "p": "BUILT_DURING",
+  "o": "pol:chola",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Gangaikonda_Cholapuram"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:9",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:airavatesvara-darasuram",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Airavatesvara_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:10",
+  "s": "temple:airavatesvara-darasuram",
+  "p": "COMMISSIONED_BY",
+  "o": "person:rajaraja-ii",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Airavatesvara_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:11",
+  "s": "temple:airavatesvara-darasuram",
+  "p": "BUILT_DURING",
+  "o": "pol:chola",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Airavatesvara_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:12",
+  "s": "temple:airavatesvara-darasuram",
+  "p": "ASSOCIATED_WITH",
+  "o": "text:periya-puranam",
+  "qualifiers": {
+   "note": "reliefs of Nāyaṉmār lives parallel the hagiographies compiled in the Periya Purāṇam"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:michell-2000"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "rationale": "Parallels between reliefs and the hagiographic text are a scholarly observation; chronology of the reliefs relative to Cēkkiḻār’s text is debated.",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:13",
+  "s": "deity:vishnu",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:chidambaram",
+  "qualifiers": {
+   "note": "as Govindarāja, in a shrine within the complex (also a Divya Deśam, Tillai Tirucitrakūṭam)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:younger-1995"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:14",
+  "s": "temple:chidambaram",
+  "p": "BUILT_DURING",
+  "o": "pol:chola",
+  "qualifiers": {
+   "note": "10th–13th c. Cōḻa patronage; Pāṇḍya and later additions"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "History",
+    "url": "https://en.wikipedia.org/wiki/Thillai_Nataraja_Temple,_Chidambaram"
+   },
+   {
+    "source": "src:sastri-1955"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:15",
+  "s": "temple:chidambaram",
+  "p": "COMMISSIONED_BY",
+  "o": "person:parantaka-i",
+  "qualifiers": {
+   "note": "gilded roof of the dance hall, per Cōḻa copper plates"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "History",
+    "url": "https://en.wikipedia.org/wiki/Thillai_Nataraja_Temple,_Chidambaram"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:16",
+  "s": "person:appar",
+  "p": "DEVOTEE_OF",
+  "o": "deity:nataraja",
+  "qualifiers": {
+   "text": "text:tevaram"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:peterson-1989",
+    "locator": "Tēvāram hymns on Tillai"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:17",
+  "s": "deity:ranganatha",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:srirangam",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ranganathaswamy_Temple,_Srirangam"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:18",
+  "s": "temple:srirangam",
+  "p": "ASSOCIATED_WITH",
+  "o": "char:vibhishana",
+  "qualifiers": {
+   "note": "sthala tradition of the image left on the island"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ranganathaswamy_Temple,_Srirangam"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:19",
+  "s": "temple:srirangam",
+  "p": "ASSOCIATED_WITH",
+  "o": "person:ramanuja",
+  "qualifiers": {
+   "tradition": "trad:srivaishnava",
+   "note": "tradition holds he organised the temple’s worship and died here"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:flood-1996"
+   }
+  ],
+  "confidence": "high",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:20",
+  "s": "temple:srirangam",
+  "p": "ASSOCIATED_WITH",
+  "o": "person:andal",
+  "qualifiers": {
+   "tradition": "trad:srivaishnava",
+   "note": "hagiographic tradition of Āṇṭāḷ’s union with Raṅganātha"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:hardy-1983"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:21",
+  "s": "temple:srirangam",
+  "p": "BUILT_DURING",
+  "o": "pol:chola",
+  "qualifiers": {
+   "note": "one of several patron dynasties (Cōḻa, Pāṇḍya, Hoysaḷa, Vijayanagara, Nāyaka)"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ranganathaswamy_Temple,_Srirangam"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:22",
+  "s": "temple:srirangam",
+  "p": "BUILT_DURING",
+  "o": "pol:vijayanagara",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ranganathaswamy_Temple,_Srirangam"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:23",
+  "s": "deity:minakshi",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:meenakshi",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Meenakshi_Temple"
+   },
+   {
+    "source": "src:fuller-1984"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:24",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:meenakshi",
+  "qualifiers": {
+   "note": "as Sundareśvara / Cokkanātar"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Meenakshi_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:25",
+  "s": "temple:meenakshi",
+  "p": "BUILT_DURING",
+  "o": "pol:madurai-nayaka",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Meenakshi_Temple"
+   },
+   {
+    "source": "src:michell-2000"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:26",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:rameshwaram",
+  "qualifiers": {
+   "note": "as Rāmanātha"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ramanathaswamy_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:27",
+  "s": "temple:rameshwaram",
+  "p": "ASSOCIATED_WITH",
+  "o": "char:rama",
+  "qualifiers": {
+   "note": "Rāma’s worship of the liṅga"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ramanathaswamy_Temple"
+   },
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:28",
+  "s": "temple:rameshwaram",
+  "p": "ASSOCIATED_WITH",
+  "o": "narr:lanka-war",
+  "qualifiers": {
+   "note": "worship placed before or after the war, depending on the version"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:29",
+  "s": "temple:rameshwaram",
+  "p": "ASSOCIATED_WITH",
+  "o": "char:hanuman",
+  "qualifiers": {
+   "note": "Viśvaliṅga brought from Kailāsa"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ramanathaswamy_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:30",
+  "s": "temple:rameshwaram",
+  "p": "LOCATED_AT",
+  "o": "place:rameswaram-island",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ramanathaswamy_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:31",
+  "s": "temple:rameshwaram",
+  "p": "BUILT_DURING",
+  "o": "pol:pandya",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ramanathaswamy_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:32",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:arunachaleswarar",
+  "qualifiers": {
+   "note": "as Aṇṇāmalaiyār"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Annamalaiyar_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:33",
+  "s": "temple:arunachaleswarar",
+  "p": "ASSOCIATED_WITH",
+  "o": "narr:lingodbhava",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Annamalaiyar_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:34",
+  "s": "temple:arunachaleswarar",
+  "p": "BUILT_DURING",
+  "o": "pol:chola",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Annamalaiyar_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:35",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:jambukeswarar",
+  "qualifiers": {
+   "note": "as Jambukeśvara (water liṅga)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Jambukeswarar_Temple,_Thiruvanaikaval"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:36",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:ekambareswarar-kanchi",
+  "qualifiers": {
+   "note": "as Ekāmbaranātha (earth liṅga)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ekambareswarar_Temple_(Kanchipuram)"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:37",
+  "s": "deity:parvati",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:ekambareswarar-kanchi",
+  "qualifiers": {
+   "note": "as Ēlavārkuḻali"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ekambareswarar_Temple_(Kanchipuram)"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:38",
+  "s": "temple:ekambareswarar-kanchi",
+  "p": "BUILT_DURING",
+  "o": "pol:vijayanagara",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ekambareswarar_Temple_(Kanchipuram)"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:39",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:kailasanatha-kanchi",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kailasanathar_Temple,_Kanchipuram"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:40",
+  "s": "temple:kailasanatha-kanchi",
+  "p": "COMMISSIONED_BY",
+  "o": "person:narasimhavarman-ii",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kailasanathar_Temple,_Kanchipuram"
+   },
+   {
+    "source": "src:srinivasan-kr-1964"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:41",
+  "s": "temple:kailasanatha-kanchi",
+  "p": "BUILT_DURING",
+  "o": "pol:pallava",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kailasanathar_Temple,_Kanchipuram"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:42",
+  "s": "narr:lingodbhava",
+  "p": "DEPICTED_IN",
+  "o": "temple:kailasanatha-kanchi",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:harle-1994"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "rationale": "Pallava Liṅgodbhava panels are reported among the cell sculptures; panel-level identification not checked online.",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:43",
+  "s": "deity:vishnu",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:vaikuntha-perumal-kanchi",
+  "qualifiers": {
+   "note": "as Vaikuṇṭhanātha"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tiru_Parameswara_Vinnagaram"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:44",
+  "s": "temple:vaikuntha-perumal-kanchi",
+  "p": "COMMISSIONED_BY",
+  "o": "person:nandivarman-ii",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tiru_Parameswara_Vinnagaram"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:45",
+  "s": "temple:vaikuntha-perumal-kanchi",
+  "p": "BUILT_DURING",
+  "o": "pol:pallava",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tiru_Parameswara_Vinnagaram"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:46",
+  "s": "temple:vaikuntha-perumal-kanchi",
+  "p": "MENTIONED_IN",
+  "o": "text:divya-prabandham",
+  "qualifiers": {
+   "note": "Tirumaṅkai Āḻvār, Periya Tirumoḻi"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tiru_Parameswara_Vinnagaram"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "rationale": "Exact decad/verse locator not verified.",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:47",
+  "s": "deity:vishnu",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:varadaraja-kanchi",
+  "qualifiers": {
+   "note": "as Varadarāja"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Varadharaja_Perumal_Temple,_Kanchipuram"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:48",
+  "s": "temple:varadaraja-kanchi",
+  "p": "BUILT_DURING",
+  "o": "pol:chola",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Varadharaja_Perumal_Temple,_Kanchipuram"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:49",
+  "s": "temple:varadaraja-kanchi",
+  "p": "ASSOCIATED_WITH",
+  "o": "person:ramanuja",
+  "qualifiers": {
+   "tradition": "trad:srivaishnava"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:flood-1996"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:50",
+  "s": "temple:mamallapuram",
+  "p": "COMMISSIONED_BY",
+  "o": "person:narasimhavarman-i",
+  "qualifiers": {
+   "note": "most scholars attribute many monuments to him"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Group_of_Monuments_at_Mahabalipuram"
+   },
+   {
+    "source": "src:srinivasan-kr-1964"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:51",
+  "s": "char:arjuna",
+  "p": "DEPICTED_IN",
+  "o": "temple:mamallapuram",
+  "qualifiers": {
+   "note": "great relief read as Arjuna’s penance"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Group_of_Monuments_at_Mahabalipuram"
+   }
+  ],
+  "confidence": "medium",
+  "status": "disputed",
+  "competing": "Alternative reading: Bhagīratha and the Descent of the Gaṅgā.",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:52",
+  "s": "narr:govardhana",
+  "p": "DEPICTED_IN",
+  "o": "temple:mamallapuram",
+  "qualifiers": {
+   "note": "Kṛṣṇa maṇḍapa relief"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Group_of_Monuments_at_Mahabalipuram"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:53",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:shore-temple",
+  "qualifiers": {
+   "note": "two shrines named in inscriptions"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Shore_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:54",
+  "s": "deity:vishnu",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:shore-temple",
+  "qualifiers": {
+   "note": "reclining Viṣṇu shrine"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Shore_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:55",
+  "s": "temple:shore-temple",
+  "p": "COMMISSIONED_BY",
+  "o": "person:narasimhavarman-ii",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Shore_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:56",
+  "s": "temple:shore-temple",
+  "p": "BUILT_DURING",
+  "o": "pol:pallava",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Shore_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:57",
+  "s": "temple:shore-temple",
+  "p": "LOCATED_AT",
+  "o": "temple:mamallapuram",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Shore_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:58",
+  "s": "temple:pancha-rathas",
+  "p": "COMMISSIONED_BY",
+  "o": "person:narasimhavarman-i",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Pancha_Rathas"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "competing": "Some inscriptions have been read as indicating work under Rājasiṃha.",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:59",
+  "s": "temple:pancha-rathas",
+  "p": "BUILT_DURING",
+  "o": "pol:pallava",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Pancha_Rathas"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:60",
+  "s": "temple:pancha-rathas",
+  "p": "LOCATED_AT",
+  "o": "temple:mamallapuram",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Pancha_Rathas"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:61",
+  "s": "temple:pancha-rathas",
+  "p": "ASSOCIATED_WITH",
+  "o": "lin:pandavas",
+  "qualifiers": {
+   "note": "popular naming only, not original dedication"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Pancha_Rathas"
+   }
+  ],
+  "confidence": "low",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:62",
+  "s": "deity:murugan",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:thiruparankundram",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Subramaniya_Swamy_Temple,_Thiruparankundram"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:63",
+  "s": "temple:thiruparankundram",
+  "p": "BUILT_DURING",
+  "o": "pol:pandya",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Subramaniya_Swamy_Temple,_Thiruparankundram"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:64",
+  "s": "deity:murugan",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:tiruchendur",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Thiruchendur_Murugan_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:65",
+  "s": "deity:murugan",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:palani",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Palani_Murugan_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:66",
+  "s": "deity:murugan",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:swamimalai",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Swamimalai_Murugan_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:67",
+  "s": "temple:swamimalai",
+  "p": "ASSOCIATED_WITH",
+  "o": "concept:om",
+  "qualifiers": {
+   "note": "Murukaṉ teaches Śiva the meaning of Om"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Swamimalai_Murugan_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:68",
+  "s": "deity:murugan",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:tiruttani",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tiruttani_Murugan_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:69",
+  "s": "deity:murugan",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:pazhamudircholai",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Pazhamudircholai"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:70",
+  "s": "char:krishna",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:guruvayur",
+  "qualifiers": {
+   "note": "as Guruvāyūrappaṉ (iconographically four-armed Viṣṇu)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Guruvayur_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:71",
+  "s": "deity:vishnu",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:guruvayur",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Guruvayur_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:72",
+  "s": "deity:vishnu",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:padmanabhaswamy",
+  "qualifiers": {
+   "note": "as Padmanābha"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Padmanabhaswamy_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:73",
+  "s": "temple:padmanabhaswamy",
+  "p": "COMMISSIONED_BY",
+  "o": "person:marthanda-varma",
+  "qualifiers": {
+   "note": "18th-century rebuilding"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Padmanabhaswamy_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:74",
+  "s": "temple:padmanabhaswamy",
+  "p": "BUILT_DURING",
+  "o": "pol:travancore",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Padmanabhaswamy_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:75",
+  "s": "deity:venkateshvara",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:tirumala",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Venkateswara_Temple,_Tirumala"
+   },
+   {
+    "source": "src:ttd"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:76",
+  "s": "temple:tirumala",
+  "p": "COMMISSIONED_BY",
+  "o": "person:krishnadevaraya",
+  "qualifiers": {
+   "note": "donor and patron; not the founder"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "History",
+    "url": "https://en.wikipedia.org/wiki/Venkateswara_Temple,_Tirumala"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:77",
+  "s": "temple:tirumala",
+  "p": "BUILT_DURING",
+  "o": "pol:vijayanagara",
+  "qualifiers": {
+   "note": "major phase of endowment"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Venkateswara_Temple,_Tirumala"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:78",
+  "s": "temple:tirumala",
+  "p": "ASSOCIATED_WITH",
+  "o": "person:ramanuja",
+  "qualifiers": {
+   "tradition": "trad:srivaishnava",
+   "note": "tradition credits him with settling the image’s Vaiṣṇava identity and ritual"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:ramesan-1981"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:79",
+  "s": "temple:tirumala",
+  "p": "MENTIONED_IN",
+  "o": "text:silappatikaram",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "Cilappatikāram canto 11 (Kāṭukāṇ kātai), as quoted on the page",
+    "url": "https://en.wikipedia.org/wiki/Venkateswara_Temple,_Tirumala"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "rationale": "The Cilappatikāram’s Brahmin from Māṅkāṭu describes Viṣṇu at Vēṅkaṭam (and at Araṅkam/Srirangam); canto number from recall, line not verified.",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:80",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:srisailam",
+  "qualifiers": {
+   "note": "as Mallikārjuna"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mallikarjuna_Temple,_Srisailam"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:81",
+  "s": "deity:devi",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:srisailam",
+  "qualifiers": {
+   "note": "as Bhramarāmbā"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mallikarjuna_Temple,_Srisailam"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:82",
+  "s": "temple:srisailam",
+  "p": "BUILT_DURING",
+  "o": "pol:vijayanagara",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mallikarjuna_Temple,_Srisailam"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:83",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:srikalahasti",
+  "qualifiers": {
+   "note": "as Kāḷahastīśvara (air liṅga)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Srikalahasti_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:84",
+  "s": "temple:srikalahasti",
+  "p": "COMMISSIONED_BY",
+  "o": "person:rajendra-i",
+  "qualifiers": {
+   "note": "main structure credited to him"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "History",
+    "url": "https://en.wikipedia.org/wiki/Srikalahasti_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:85",
+  "s": "temple:srikalahasti",
+  "p": "BUILT_DURING",
+  "o": "pol:chola",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Srikalahasti_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:86",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:gudimallam",
+  "qualifiers": {
+   "note": "liṅga in worship"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Gudimallam_Lingam"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:87",
+  "s": "temple:gudimallam",
+  "p": "ASSOCIATED_WITH",
+  "o": "char:parashurama",
+  "qualifiers": {
+   "note": "temple name Paraśurāmeśvara"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Gudimallam_Lingam"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:88",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:alampur-navabrahma",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Alampur_Navabrahma_Temples"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:89",
+  "s": "deity:devi",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:alampur-navabrahma",
+  "qualifiers": {
+   "note": "as Jogulāmbā"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:sircar-1973"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:90",
+  "s": "temple:alampur-navabrahma",
+  "p": "BUILT_DURING",
+  "o": "pol:chalukya-badami",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Alampur_Navabrahma_Temples"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:91",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:ramappa",
+  "qualifiers": {
+   "note": "as Rudreśvara"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ramappa_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:92",
+  "s": "temple:ramappa",
+  "p": "COMMISSIONED_BY",
+  "o": "person:recherla-rudra",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ramappa_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:93",
+  "s": "temple:ramappa",
+  "p": "BUILT_DURING",
+  "o": "pol:kakatiya",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ramappa_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:94",
+  "s": "deity:vishnu",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:badami-caves",
+  "qualifiers": {
+   "note": "Cave 3 dedication"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Badami_cave_temples"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:95",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:badami-caves",
+  "qualifiers": {
+   "note": "Cave 1"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Badami_cave_temples"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:96",
+  "s": "temple:badami-caves",
+  "p": "COMMISSIONED_BY",
+  "o": "person:mangalesha",
+  "qualifiers": {
+   "note": "Cave 3 inscription"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:harle-1994"
+   },
+   {
+    "source": "src:michell-1977"
+   }
+  ],
+  "confidence": "high",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:97",
+  "s": "narr:three-strides",
+  "p": "DEPICTED_IN",
+  "o": "temple:badami-caves",
+  "qualifiers": {
+   "note": "Trivikrama striding form"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:harle-1994"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:98",
+  "s": "deity:varaha",
+  "p": "DEPICTED_IN",
+  "o": "temple:badami-caves",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:harle-1994"
+   }
+  ],
+  "confidence": "high",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:99",
+  "s": "deity:narasimha",
+  "p": "DEPICTED_IN",
+  "o": "temple:badami-caves",
+  "qualifiers": {
+   "note": "Cave 3"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:harle-1994"
+   }
+  ],
+  "confidence": "high",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:100",
+  "s": "temple:meguti-aihole",
+  "p": "COMMISSIONED_BY",
+  "o": "person:ravikirti",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Meguti_Jain_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:101",
+  "s": "temple:durga-aihole",
+  "p": "BUILT_DURING",
+  "o": "pol:chalukya-badami",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Durga_temple,_Aihole"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:102",
+  "s": "narr:mahishasura-slaying",
+  "p": "DEPICTED_IN",
+  "o": "temple:durga-aihole",
+  "qualifiers": {
+   "note": "Mahiṣamardinī niche"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:tartakov-1997"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:103",
+  "s": "deity:narasimha",
+  "p": "DEPICTED_IN",
+  "o": "temple:durga-aihole",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:tartakov-1997"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:104",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:lad-khan-aihole",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Lad_Khan_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:105",
+  "s": "temple:lad-khan-aihole",
+  "p": "BUILT_DURING",
+  "o": "pol:chalukya-badami",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Lad_Khan_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:106",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:virupaksha-pattadakal",
+  "qualifiers": {
+   "note": "as Virūpākṣa; still in worship"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Pattadakal"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:107",
+  "s": "temple:virupaksha-pattadakal",
+  "p": "COMMISSIONED_BY",
+  "o": "person:lokamahadevi",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Pattadakal"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:108",
+  "s": "temple:virupaksha-pattadakal",
+  "p": "BUILT_DURING",
+  "o": "pol:chalukya-badami",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Pattadakal"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:109",
+  "s": "char:rama",
+  "p": "DEPICTED_IN",
+  "o": "temple:virupaksha-pattadakal",
+  "qualifiers": {
+   "note": "Rāmāyaṇa reliefs"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:michell-1977"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:110",
+  "s": "temple:virupaksha-pattadakal",
+  "p": "DERIVED_FROM",
+  "o": "temple:kailasanatha-kanchi",
+  "qualifiers": {
+   "note": "architectural model (style patterned on the Kanchi temple)"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Pattadakal"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "rationale": "Stylistic dependence argued by architectural historians.",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:111",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:papanatha-pattadakal",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "Papanatha temple",
+    "url": "https://en.wikipedia.org/wiki/Pattadakal"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:112",
+  "s": "temple:papanatha-pattadakal",
+  "p": "BUILT_DURING",
+  "o": "pol:chalukya-badami",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Pattadakal"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:113",
+  "s": "char:rama",
+  "p": "DEPICTED_IN",
+  "o": "temple:papanatha-pattadakal",
+  "qualifiers": {
+   "note": "Rāmāyaṇa panels"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "Papanatha temple",
+    "url": "https://en.wikipedia.org/wiki/Pattadakal"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:114",
+  "s": "char:arjuna",
+  "p": "DEPICTED_IN",
+  "o": "temple:papanatha-pattadakal",
+  "qualifiers": {
+   "note": "Kirātārjunīya panels"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "Papanatha temple",
+    "url": "https://en.wikipedia.org/wiki/Pattadakal"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:115",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:kailasa-ellora",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kailasa_temple,_Ellora"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:116",
+  "s": "char:ravana",
+  "p": "DEPICTED_IN",
+  "o": "temple:kailasa-ellora",
+  "qualifiers": {
+   "note": "Rāvaṇa lifting Kailāsa (Rāvaṇānugraha)"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kailasa_temple,_Ellora"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:117",
+  "s": "char:rama",
+  "p": "DEPICTED_IN",
+  "o": "temple:kailasa-ellora",
+  "qualifiers": {
+   "note": "Rāmāyaṇa frieze"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:harle-1994"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:118",
+  "s": "narr:kurukshetra-war",
+  "p": "DEPICTED_IN",
+  "o": "temple:kailasa-ellora",
+  "qualifiers": {
+   "note": "Mahābhārata frieze"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:harle-1994"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:119",
+  "s": "temple:kailasa-ellora",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:kailasa",
+  "qualifiers": {
+   "note": "conceived as a replica of Śiva’s mountain abode"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kailasa_temple,_Ellora"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:120",
+  "s": "temple:ellora-dashavatara",
+  "p": "COMMISSIONED_BY",
+  "o": "person:dantidurga",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "The Dashavatara: Cave 15",
+    "url": "https://en.wikipedia.org/wiki/Ellora_Caves"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:121",
+  "s": "temple:ellora-dashavatara",
+  "p": "BUILT_DURING",
+  "o": "pol:rashtrakuta",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ellora_Caves"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:122",
+  "s": "concept:avatara",
+  "p": "DEPICTED_IN",
+  "o": "temple:ellora-dashavatara",
+  "qualifiers": {
+   "note": "Viṣṇu avatāra panels that gave the cave its name"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:harle-1994"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:123",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:elephanta",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Elephanta_Caves"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:124",
+  "s": "deity:nataraja",
+  "p": "DEPICTED_IN",
+  "o": "temple:elephanta",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:collins-1988"
+   }
+  ],
+  "confidence": "high",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:125",
+  "s": "narr:descent-of-ganga",
+  "p": "DEPICTED_IN",
+  "o": "temple:elephanta",
+  "qualifiers": {
+   "note": "Gaṅgādhara panel"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:collins-1988"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:126",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:virupaksha-hampi",
+  "qualifiers": {
+   "note": "as Virūpākṣa / Pampāpati"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Virupaksha_Temple,_Hampi"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:127",
+  "s": "temple:virupaksha-hampi",
+  "p": "COMMISSIONED_BY",
+  "o": "person:krishnadevaraya",
+  "qualifiers": {
+   "note": "ranga-maṇḍapa, 1510"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Virupaksha_Temple,_Hampi"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:128",
+  "s": "temple:virupaksha-hampi",
+  "p": "BUILT_DURING",
+  "o": "pol:vijayanagara",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Virupaksha_Temple,_Hampi"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:129",
+  "s": "temple:virupaksha-hampi",
+  "p": "LOCATED_AT",
+  "o": "place:hampi",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Virupaksha_Temple,_Hampi"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:130",
+  "s": "char:rama",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:hazara-rama",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dallapiccola-1992"
+   }
+  ],
+  "confidence": "high",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:131",
+  "s": "char:rama",
+  "p": "DEPICTED_IN",
+  "o": "temple:hazara-rama",
+  "qualifiers": {
+   "note": "continuous Rāmāyaṇa frieze"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dallapiccola-1992"
+   }
+  ],
+  "confidence": "high",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:132",
+  "s": "narr:lanka-war",
+  "p": "DEPICTED_IN",
+  "o": "temple:hazara-rama",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dallapiccola-1992"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:133",
+  "s": "narr:abduction-of-sita",
+  "p": "DEPICTED_IN",
+  "o": "temple:hazara-rama",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dallapiccola-1992"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:134",
+  "s": "temple:hazara-rama",
+  "p": "COMMISSIONED_BY",
+  "o": "person:devaraya-i",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:dallapiccola-1992"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:135",
+  "s": "temple:hazara-rama",
+  "p": "LOCATED_AT",
+  "o": "place:hampi",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q68286065"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:136",
+  "s": "deity:vitthala",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:vijaya-vitthala",
+  "qualifiers": {
+   "note": "historic dedication; no worship since 1565"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:fritz-michell-1991"
+   }
+  ],
+  "confidence": "high",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:137",
+  "s": "temple:vijaya-vitthala",
+  "p": "BUILT_DURING",
+  "o": "pol:vijayanagara",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:fritz-michell-1991"
+   }
+  ],
+  "confidence": "high",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:138",
+  "s": "temple:vijaya-vitthala",
+  "p": "COMMISSIONED_BY",
+  "o": "person:krishnadevaraya",
+  "qualifiers": {
+   "note": "expansion"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:fritz-michell-1991"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:139",
+  "s": "temple:vijaya-vitthala",
+  "p": "LOCATED_AT",
+  "o": "place:hampi",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikidata",
+    "locator": "P625 coordinate location",
+    "url": "https://www.wikidata.org/wiki/Q68287239"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:140",
+  "s": "deity:vishnu",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:chennakeshava-belur",
+  "qualifiers": {
+   "note": "as Cennakeśava"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Chennakeshava_Temple,_Belur"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:141",
+  "s": "temple:chennakeshava-belur",
+  "p": "COMMISSIONED_BY",
+  "o": "person:vishnuvardhana-hoysala",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Chennakeshava_Temple,_Belur"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:142",
+  "s": "temple:chennakeshava-belur",
+  "p": "BUILT_DURING",
+  "o": "pol:hoysala",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Chennakeshava_Temple,_Belur"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:143",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:hoysaleswara-halebidu",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hoysaleswara_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:144",
+  "s": "temple:hoysaleswara-halebidu",
+  "p": "COMMISSIONED_BY",
+  "o": "person:ketamalla",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hoysaleswara_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:145",
+  "s": "temple:hoysaleswara-halebidu",
+  "p": "BUILT_DURING",
+  "o": "pol:hoysala",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hoysaleswara_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:146",
+  "s": "char:krishna",
+  "p": "DEPICTED_IN",
+  "o": "temple:hoysaleswara-halebidu",
+  "qualifiers": {
+   "note": "Bhāgavata scenes incl. Govardhana"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:foekema-1996"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:147",
+  "s": "deity:vishnu",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:keshava-somanathapura",
+  "qualifiers": {
+   "note": "as Keśava, Janārdana and Veṇugopāla"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Chennakesava_Temple,_Somanathapura"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:148",
+  "s": "temple:keshava-somanathapura",
+  "p": "COMMISSIONED_BY",
+  "o": "person:somanatha-dandanayaka",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Chennakesava_Temple,_Somanathapura"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:149",
+  "s": "temple:keshava-somanathapura",
+  "p": "BUILT_DURING",
+  "o": "pol:hoysala",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Chennakesava_Temple,_Somanathapura"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:150",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:ambernath",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Shiv_Mandir,_Ambarnath"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:151",
+  "s": "temple:ambernath",
+  "p": "BUILT_DURING",
+  "o": "pol:shilahara",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Shiv_Mandir,_Ambarnath"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:152",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:bhimashankar",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bhimashankar_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:153",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:trimbakeshwar",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Trimbakeshwar_Shiva_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:154",
+  "s": "temple:trimbakeshwar",
+  "p": "COMMISSIONED_BY",
+  "o": "person:balaji-bajirao",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Trimbakeshwar_Shiva_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:155",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:grishneshwar",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Grishneshwar_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:156",
+  "s": "temple:grishneshwar",
+  "p": "COMMISSIONED_BY",
+  "o": "person:ahilyabai-holkar",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Grishneshwar_Temple"
+   }
+  ],
+  "confidence": "low",
+  "status": "disputed",
+  "competing": "Wikipedia credits the 1729 rebuilding to Gautamābāī Holkar.",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:157",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:parli-vaijnath",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Vaijnath_Temple,_Parli"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:158",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:aundha-nagnath",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Aundha_Nagnath_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:159",
+  "s": "temple:aundha-nagnath",
+  "p": "ASSOCIATED_WITH",
+  "o": "char:yudhishthira",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Aundha_Nagnath_Temple"
+   }
+  ],
+  "confidence": "low",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:160",
+  "s": "temple:aundha-nagnath",
+  "p": "COMMISSIONED_BY",
+  "o": "person:ahilyabai-holkar",
+  "qualifiers": {
+   "note": "renovation"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Aundha_Nagnath_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:161",
+  "s": "narr:varaha-earth",
+  "p": "DEPICTED_IN",
+  "o": "temple:udayagiri-caves",
+  "qualifiers": {
+   "note": "Cave 5 Varāha panel"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Udayagiri_Caves"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:162",
+  "s": "deity:varaha",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:udayagiri-caves",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Udayagiri_Caves"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:163",
+  "s": "narr:mahishasura-slaying",
+  "p": "DEPICTED_IN",
+  "o": "temple:udayagiri-caves",
+  "qualifiers": {
+   "note": "early Mahiṣāsuramardinī images"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:williams-1982"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:164",
+  "s": "temple:udayagiri-caves",
+  "p": "COMMISSIONED_BY",
+  "o": "person:chandragupta-ii",
+  "qualifiers": {
+   "note": "excavated in his reign; donors of individual caves include his ministers/feudatories"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Udayagiri_Caves"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:165",
+  "s": "temple:udayagiri-caves",
+  "p": "ASSOCIATED_WITH",
+  "o": "site:besnagar",
+  "qualifiers": {
+   "note": "neighbouring Vidiśā/Besnagar settlement"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:williams-1982"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:166",
+  "s": "deity:vishnu",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:deogarh-dashavatara",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Dashavatara_Temple,_Deogarh"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:167",
+  "s": "deity:narayana",
+  "p": "DEPICTED_IN",
+  "o": "temple:deogarh-dashavatara",
+  "qualifiers": {
+   "note": "Anantaśayana (Viṣṇu on Śeṣa) and Nara-Nārāyaṇa panels"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Dashavatara_Temple,_Deogarh"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:168",
+  "s": "deity:parvati",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:nachna-parvati",
+  "qualifiers": {
+   "note": "current name; original dedication uncertain"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Nachna_Hindu_temples"
+   }
+  ],
+  "confidence": "low",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:169",
+  "s": "temple:nachna-parvati",
+  "p": "BUILT_DURING",
+  "o": "pol:gupta",
+  "qualifiers": {
+   "note": "Gupta-era; local rulers possibly the patrons"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Nachna_Hindu_temples"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:170",
+  "s": "deity:vishnu",
+  "p": "DEPICTED_IN",
+  "o": "temple:bhitargaon",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:williams-1982"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:171",
+  "s": "temple:bhitargaon",
+  "p": "BUILT_DURING",
+  "o": "pol:gupta",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bhitargaon"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:172",
+  "s": "deity:vishnu",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:tigawa",
+  "qualifiers": {
+   "note": "probable original dedication"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tigawa"
+   }
+  ],
+  "confidence": "low",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:173",
+  "s": "temple:tigawa",
+  "p": "BUILT_DURING",
+  "o": "pol:gupta",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tigawa"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:174",
+  "s": "deity:devi",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:mundeshwari",
+  "qualifiers": {
+   "note": "as Muṇḍeśvarī"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mundeshwari_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:175",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:mundeshwari",
+  "qualifiers": {
+   "note": "caturmukha liṅga"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mundeshwari_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:176",
+  "s": "claim:mundeshwari-108-ce",
+  "p": "CONCERNS",
+  "o": "temple:mundeshwari",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mundeshwari_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:177",
+  "s": "deity:vishnu",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:sirpur-lakshmana",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Sirpur_Group_of_Monuments"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:178",
+  "s": "temple:sirpur-lakshmana",
+  "p": "BUILT_DURING",
+  "o": "pol:panduvamshi",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Sirpur_Group_of_Monuments"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:179",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:kandariya-mahadeva",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kandariya_Mahadeva_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:180",
+  "s": "temple:kandariya-mahadeva",
+  "p": "COMMISSIONED_BY",
+  "o": "person:vidyadhara-chandela",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kandariya_Mahadeva_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:181",
+  "s": "deity:vishnu",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:lakshmana-khajuraho",
+  "qualifiers": {
+   "note": "as Vaikuṇṭha"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Lakshmana_Temple,_Khajuraho"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:182",
+  "s": "temple:lakshmana-khajuraho",
+  "p": "COMMISSIONED_BY",
+  "o": "person:yashovarman-chandela",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Lakshmana_Temple,_Khajuraho"
+   },
+   {
+    "source": "src:kielhorn-1892"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:183",
+  "s": "temple:lakshmana-khajuraho",
+  "p": "BUILT_DURING",
+  "o": "pol:chandela",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Lakshmana_Temple,_Khajuraho"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:184",
+  "s": "deity:surya",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:konark",
+  "qualifiers": {
+   "note": "original dedication; not in active worship"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Konark_Sun_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:185",
+  "s": "temple:konark",
+  "p": "COMMISSIONED_BY",
+  "o": "person:narasimhadeva-i",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Konark_Sun_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:186",
+  "s": "deity:jagannatha",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:jagannath-puri",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Jagannath_Temple,_Puri"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:187",
+  "s": "char:balarama",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:jagannath-puri",
+  "qualifiers": {
+   "note": "as Balabhadra"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Jagannath_Temple,_Puri"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:188",
+  "s": "char:subhadra",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:jagannath-puri",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Jagannath_Temple,_Puri"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:189",
+  "s": "temple:jagannath-puri",
+  "p": "COMMISSIONED_BY",
+  "o": "person:anantavarman-chodaganga",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "History",
+    "url": "https://en.wikipedia.org/wiki/Jagannath_Temple,_Puri"
+   },
+   {
+    "source": "src:eschmann-kulke-tripathi-1978"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:190",
+  "s": "temple:jagannath-puri",
+  "p": "BUILT_DURING",
+  "o": "pol:eastern-ganga",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Jagannath_Temple,_Puri"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:191",
+  "s": "temple:jagannath-puri",
+  "p": "ASSOCIATED_WITH",
+  "o": "person:chaitanya",
+  "qualifiers": {
+   "tradition": "trad:gaudiya",
+   "note": "Caitanya resided at Puri 1510–1533"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:eschmann-kulke-tripathi-1978"
+   }
+  ],
+  "confidence": "high",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:192",
+  "s": "temple:jagannath-puri",
+  "p": "ASSOCIATED_WITH",
+  "o": "person:jayadeva",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:eschmann-kulke-tripathi-1978"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:193",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:lingaraja",
+  "qualifiers": {
+   "note": "as Liṅgarāja / Harihara"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Lingaraja_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:194",
+  "s": "deity:vishnu",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:lingaraja",
+  "qualifiers": {
+   "note": "Harihara form"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Lingaraja_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:195",
+  "s": "temple:lingaraja",
+  "p": "BUILT_DURING",
+  "o": "pol:somavamshi",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Lingaraja_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:196",
+  "s": "temple:lingaraja",
+  "p": "BUILT_DURING",
+  "o": "pol:eastern-ganga",
+  "qualifiers": {
+   "note": "later additions"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Lingaraja_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:197",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:mukteshvara-bhubaneswar",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mukteshvara_Temple,_Bhubaneswar"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:198",
+  "s": "temple:mukteshvara-bhubaneswar",
+  "p": "BUILT_DURING",
+  "o": "pol:somavamshi",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mukteshvara_Temple,_Bhubaneswar"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:199",
+  "s": "deity:kali",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:chausath-yogini-hirapur",
+  "qualifiers": {
+   "note": "central Mahāmāyā/Kālī"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Chausath_Yogini_Temple,_Hirapur"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:200",
+  "s": "temple:kamakhya",
+  "p": "COMMISSIONED_BY",
+  "o": "person:chilarai",
+  "qualifiers": {
+   "note": "1565 reconstruction"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "History",
+    "url": "https://en.wikipedia.org/wiki/Kamakhya_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:201",
+  "s": "temple:kamakhya",
+  "p": "COMMISSIONED_BY",
+  "o": "person:naranarayan",
+  "qualifiers": {
+   "note": "reigning king at the 1565 reconstruction"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "History",
+    "url": "https://en.wikipedia.org/wiki/Kamakhya_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:202",
+  "s": "temple:kamakhya",
+  "p": "BUILT_DURING",
+  "o": "pol:koch",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kamakhya_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:203",
+  "s": "temple:kamakhya",
+  "p": "ASSOCIATED_WITH",
+  "o": "char:sati",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kamakhya_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:204",
+  "s": "deity:kali",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:kalighat",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kalighat_Kali_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:205",
+  "s": "temple:kalighat",
+  "p": "ASSOCIATED_WITH",
+  "o": "narr:shakti-pitha-origin",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kalighat_Kali_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:206",
+  "s": "deity:kali",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:dakshineswar",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Dakshineswar_Kali_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:207",
+  "s": "temple:dakshineswar",
+  "p": "COMMISSIONED_BY",
+  "o": "person:rani-rashmoni",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Dakshineswar_Kali_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:208",
+  "s": "deity:vishnu",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:vishnupad-gaya",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Vishnupad_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:209",
+  "s": "temple:vishnupad-gaya",
+  "p": "COMMISSIONED_BY",
+  "o": "person:ahilyabai-holkar",
+  "qualifiers": {
+   "note": "1787 rebuilding"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Vishnupad_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:210",
+  "s": "temple:vishnupad-gaya",
+  "p": "ASSOCIATED_WITH",
+  "o": "text:vayu-purana",
+  "qualifiers": {
+   "note": "Gayā-māhātmya"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:211",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:baidyanath-deoghar",
+  "qualifiers": {
+   "note": "as Vaidyanātha"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Baidyanath_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:212",
+  "s": "temple:baidyanath-deoghar",
+  "p": "ASSOCIATED_WITH",
+  "o": "char:ravana",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Baidyanath_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:213",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:kashi-vishwanath",
+  "qualifiers": {
+   "note": "as Viśvanātha"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kashi_Vishwanath_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:214",
+  "s": "temple:kashi-vishwanath",
+  "p": "LOCATED_AT",
+  "o": "place:kashi",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kashi_Vishwanath_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:215",
+  "s": "temple:kashi-vishwanath",
+  "p": "COMMISSIONED_BY",
+  "o": "person:ahilyabai-holkar",
+  "qualifiers": {
+   "note": "present temple, 1780"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kashi_Vishwanath_Temple"
+   },
+   {
+    "source": "src:eck-1982"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:216",
+  "s": "temple:kashi-vishwanath",
+  "p": "BUILT_DURING",
+  "o": "pol:holkar-indore",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kashi_Vishwanath_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:217",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:somnath",
+  "qualifiers": {
+   "note": "as Somanātha"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Somnath_temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:218",
+  "s": "temple:somnath",
+  "p": "BUILT_DURING",
+  "o": "pol:chaulukya",
+  "qualifiers": {
+   "note": "temple of 1026 stood under Bhīma I"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Somnath_temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:219",
+  "s": "temple:somnath",
+  "p": "ASSOCIATED_WITH",
+  "o": "char:daksha",
+  "qualifiers": {
+   "note": "Moon cursed by Dakṣa"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:thapar-2004"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:220",
+  "s": "temple:somnath",
+  "p": "ASSOCIATED_WITH",
+  "o": "person:ahilyabai-holkar",
+  "qualifiers": {
+   "note": "nearby temple of 1783"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:thapar-2004"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:221",
+  "s": "char:krishna",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:dwarkadhish",
+  "qualifiers": {
+   "note": "as Dvārakādhīśa"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Dwarkadhish_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:222",
+  "s": "temple:dwarkadhish",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:dvaraka",
+  "qualifiers": {
+   "note": "identified by tradition with Kṛṣṇa’s city"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Dwarkadhish_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:223",
+  "s": "temple:dwarkadhish",
+  "p": "ASSOCIATED_WITH",
+  "o": "site:dwarka-offshore",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "competing": "See claim:dwarka-submerged (material agent).",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:224",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:nageshwar-dwarka",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Nageshwar_Jyotirlinga"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:225",
+  "s": "deity:surya",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:modhera",
+  "qualifiers": {
+   "note": "original dedication; not in worship"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Sun_Temple,_Modhera"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:226",
+  "s": "temple:modhera",
+  "p": "COMMISSIONED_BY",
+  "o": "person:bhima-i-chaulukya",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Sun_Temple,_Modhera"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:227",
+  "s": "temple:modhera",
+  "p": "BUILT_DURING",
+  "o": "pol:chaulukya",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Sun_Temple,_Modhera"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:228",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:mahakaleshwar",
+  "qualifiers": {
+   "note": "as Mahākāla"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mahakaleshwar_Jyotirlinga"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:229",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:omkareshwar",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Omkareshwar"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:230",
+  "s": "temple:omkareshwar",
+  "p": "BUILT_DURING",
+  "o": "pol:paramara",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Omkareshwar"
+   }
+  ],
+  "confidence": "low",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:231",
+  "s": "temple:omkareshwar",
+  "p": "BUILT_DURING",
+  "o": "pol:holkar-indore",
+  "qualifiers": {
+   "note": "18th-c. rebuilding"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Omkareshwar"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:232",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:bhojeshwar",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bhojeshwar_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:233",
+  "s": "temple:bhojeshwar",
+  "p": "COMMISSIONED_BY",
+  "o": "person:bhoja-paramara",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bhojeshwar_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:234",
+  "s": "temple:bhojeshwar",
+  "p": "BUILT_DURING",
+  "o": "pol:paramara",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bhojeshwar_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:235",
+  "s": "deity:brahma",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:pushkar-brahma",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Brahma_Temple,_Pushkar"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:236",
+  "s": "temple:pushkar-brahma",
+  "p": "ASSOCIATED_WITH",
+  "o": "text:padma-purana",
+  "qualifiers": {
+   "note": "Brahmā’s sacrifice at Puṣkara (Sṛṣṭi-khaṇḍa)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:237",
+  "s": "char:rama",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:ram-mandir-ayodhya",
+  "qualifiers": {
+   "note": "as Bālak Rām"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ram_Mandir"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:238",
+  "s": "temple:ram-mandir-ayodhya",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:ayodhya",
+  "qualifiers": {
+   "note": "located in present-day Ayodhya, identified by tradition with the epic city"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ram_Mandir"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:239",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:kedarnath",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kedarnath_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:240",
+  "s": "temple:kedarnath",
+  "p": "ASSOCIATED_WITH",
+  "o": "lin:pandavas",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kedarnath_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:241",
+  "s": "temple:kedarnath",
+  "p": "ASSOCIATED_WITH",
+  "o": "person:shankara",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:242",
+  "s": "deity:vishnu",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:badrinath",
+  "qualifiers": {
+   "note": "as Badrīnārāyaṇa"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Badrinath_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:243",
+  "s": "temple:badrinath",
+  "p": "ASSOCIATED_WITH",
+  "o": "person:shankara",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Badrinath_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:244",
+  "s": "deity:narayana",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:badrinath",
+  "qualifiers": {
+   "note": "Nara-Nārāyaṇa tradition of Badarikāśrama"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:245",
+  "s": "deity:ganga",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:gangotri",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Gangotri_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:246",
+  "s": "temple:gangotri",
+  "p": "ASSOCIATED_WITH",
+  "o": "narr:descent-of-ganga",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Gangotri_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:247",
+  "s": "temple:gangotri",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:ganga-river",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Gangotri_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:248",
+  "s": "deity:yamuna",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:yamunotri",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Yamunotri_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:249",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:jageshwar",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Jageshwar"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:250",
+  "s": "deity:surya",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:martand",
+  "qualifiers": {
+   "note": "original dedication; ruined"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Martand_Sun_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:251",
+  "s": "temple:martand",
+  "p": "COMMISSIONED_BY",
+  "o": "person:lalitaditya",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Martand_Sun_Temple"
+   },
+   {
+    "source": "src:stein-1900",
+    "locator": "Rājataraṅgiṇī, Book 4"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:252",
+  "s": "temple:martand",
+  "p": "BUILT_DURING",
+  "o": "pol:karkota",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Martand_Sun_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:253",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:pashupatinath",
+  "qualifiers": {
+   "note": "as Paśupati"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Pashupatinath_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:254",
+  "s": "temple:pashupatinath",
+  "p": "BUILT_DURING",
+  "o": "pol:licchavi-nepal",
+  "qualifiers": {
+   "note": "early cult and chronicle attribution"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Pashupatinath_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:255",
+  "s": "temple:pashupatinath",
+  "p": "BUILT_DURING",
+  "o": "pol:malla-nepal",
+  "qualifiers": {
+   "note": "1692 renovation fell in the Malla period"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:slusser-1982"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:256",
+  "s": "deity:vishnu",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:changu-narayan",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Changu_Narayan"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:257",
+  "s": "temple:changu-narayan",
+  "p": "COMMISSIONED_BY",
+  "o": "person:manadeva",
+  "qualifiers": {
+   "note": "pillar and early shrine"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Changu_Narayan"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:258",
+  "s": "char:sita",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:janaki-mandir",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Janaki_Mandir"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:259",
+  "s": "char:rama",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:janaki-mandir",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Janaki_Mandir"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:260",
+  "s": "temple:janaki-mandir",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:mithila",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Janaki_Mandir"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:261",
+  "s": "temple:janaki-mandir",
+  "p": "ASSOCIATED_WITH",
+  "o": "narr:sita-svayamvara",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Janaki_Mandir"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:262",
+  "s": "temple:janaki-mandir",
+  "p": "COMMISSIONED_BY",
+  "o": "person:vrisha-bhanu",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Janaki_Mandir"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:263",
+  "s": "deity:vishnu",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:muktinath",
+  "qualifiers": {
+   "note": "as Muktinārāyaṇa"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Muktinath"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:264",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:koneswaram",
+  "qualifiers": {
+   "note": "as Kōṇanātha"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Koneswaram_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:265",
+  "s": "temple:koneswaram",
+  "p": "MENTIONED_IN",
+  "o": "text:tevaram",
+  "qualifiers": {
+   "note": "hymns of Campantar and Cuntarar"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Koneswaram_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "rationale": "Hymn-level locator not verified.",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:266",
+  "s": "temple:koneswaram",
+  "p": "ASSOCIATED_WITH",
+  "o": "char:ravana",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Koneswaram_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:267",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:munneswaram",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Munneswaram_temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:268",
+  "s": "temple:munneswaram",
+  "p": "ASSOCIATED_WITH",
+  "o": "char:rama",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Munneswaram_temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:269",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:katas-raj",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Katas_Raj_Temples"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:270",
+  "s": "temple:katas-raj",
+  "p": "ASSOCIATED_WITH",
+  "o": "char:sati",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Katas_Raj_Temples"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:271",
+  "s": "temple:katas-raj",
+  "p": "ASSOCIATED_WITH",
+  "o": "lin:pandavas",
+  "qualifiers": {
+   "note": "Yakṣa-praśna episode"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Katas_Raj_Temples"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:272",
+  "s": "deity:devi",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:hinglaj",
+  "qualifiers": {
+   "note": "as Hiṅgulā"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hinglaj_Mata"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:273",
+  "s": "temple:hinglaj",
+  "p": "ASSOCIATED_WITH",
+  "o": "narr:shakti-pitha-origin",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hinglaj_Mata"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:274",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:prambanan",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Prambanan"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:275",
+  "s": "deity:vishnu",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:prambanan",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Prambanan"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:276",
+  "s": "deity:brahma",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:prambanan",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Prambanan"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:277",
+  "s": "temple:prambanan",
+  "p": "COMMISSIONED_BY",
+  "o": "person:rakai-pikatan",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Prambanan"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:278",
+  "s": "temple:prambanan",
+  "p": "COMMISSIONED_BY",
+  "o": "person:dyah-lokapala",
+  "qualifiers": {
+   "note": "issuer of the Śivagṛha inscription that records the inauguration"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Prambanan"
+   },
+   {
+    "source": "src:de-casparis-1956"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:279",
+  "s": "char:rama",
+  "p": "DEPICTED_IN",
+  "o": "temple:prambanan",
+  "qualifiers": {
+   "note": "Rāmāyaṇa reliefs, Śiva and Brahmā temples"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Prambanan"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:280",
+  "s": "narr:abduction-of-sita",
+  "p": "DEPICTED_IN",
+  "o": "temple:prambanan",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:jordaan-1996"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:281",
+  "s": "narr:setu-bandha",
+  "p": "DEPICTED_IN",
+  "o": "temple:prambanan",
+  "qualifiers": {
+   "note": "monkeys building the causeway"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:jordaan-1996"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:282",
+  "s": "char:krishna",
+  "p": "DEPICTED_IN",
+  "o": "temple:prambanan",
+  "qualifiers": {
+   "note": "Kṛṣṇāyana reliefs, Viṣṇu temple"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Prambanan"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:283",
+  "s": "temple:prambanan",
+  "p": "ASSOCIATED_WITH",
+  "o": "text:kakawin-ramayana",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:jordaan-1996"
+   }
+  ],
+  "confidence": "low",
+  "status": "disputed",
+  "competing": "Scholars disagree whether the reliefs follow the Old Javanese Kakawin Rāmāyaṇa, an oral tradition, or another version; see claim:prambanan-follows-kakawin (regional agent).",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:284",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:dieng-arjuna",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:dumarcay-1986"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:285",
+  "s": "temple:dieng-arjuna",
+  "p": "ASSOCIATED_WITH",
+  "o": "char:arjuna",
+  "qualifiers": {
+   "note": "later popular naming only"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Dieng_temples"
+   }
+  ],
+  "confidence": "low",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:286",
+  "s": "deity:vishnu",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:angkor-wat",
+  "qualifiers": {
+   "note": "original dedication"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Angkor_Wat"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:287",
+  "s": "temple:angkor-wat",
+  "p": "COMMISSIONED_BY",
+  "o": "person:suryavarman-ii",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Angkor_Wat"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:288",
+  "s": "narr:kurukshetra-war",
+  "p": "DEPICTED_IN",
+  "o": "temple:angkor-wat",
+  "qualifiers": {
+   "note": "western gallery, southern half"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Angkor_Wat"
+   },
+   {
+    "source": "src:jacques-freeman-1997"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:289",
+  "s": "narr:lanka-war",
+  "p": "DEPICTED_IN",
+  "o": "temple:angkor-wat",
+  "qualifiers": {
+   "note": "western gallery, northern half"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Angkor_Wat"
+   },
+   {
+    "source": "src:jacques-freeman-1997"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:290",
+  "s": "char:krishna",
+  "p": "DEPICTED_IN",
+  "o": "temple:angkor-wat",
+  "qualifiers": {
+   "note": "Kṛṣṇa’s victory over Bāṇa (northern gallery)"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Angkor_Wat"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:291",
+  "s": "temple:angkor-wat",
+  "p": "ASSOCIATED_WITH",
+  "o": "text:reamker",
+  "qualifiers": {
+   "note": "Khmer Rāmāyaṇa tradition"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:richman-1991"
+   }
+  ],
+  "confidence": "low",
+  "status": "recall",
+  "competing": "The reliefs predate surviving Reamker texts; the relation is one of shared tradition, not textual dependence.",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:292",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:banteay-srei",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Banteay_Srei"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:293",
+  "s": "temple:banteay-srei",
+  "p": "COMMISSIONED_BY",
+  "o": "person:yajnavaraha",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Banteay_Srei"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:294",
+  "s": "temple:banteay-srei",
+  "p": "BUILT_DURING",
+  "o": "pol:khmer",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Banteay_Srei"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:295",
+  "s": "char:ravana",
+  "p": "DEPICTED_IN",
+  "o": "temple:banteay-srei",
+  "qualifiers": {
+   "note": "pediment of Rāvaṇa shaking Kailāsa"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:jacques-freeman-1997"
+   }
+  ],
+  "confidence": "high",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:296",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:preah-vihear",
+  "qualifiers": {
+   "note": "as Śikhareśvara"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:jacques-freeman-1997"
+   }
+  ],
+  "confidence": "high",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:297",
+  "s": "temple:preah-vihear",
+  "p": "BUILT_DURING",
+  "o": "pol:khmer",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Preah_Vihear_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:298",
+  "s": "temple:preah-vihear",
+  "p": "COMMISSIONED_BY",
+  "o": "person:suryavarman-ii",
+  "qualifiers": {
+   "note": "with Sūryavarman I"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Preah_Vihear_Temple"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:299",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:wat-phou",
+  "qualifiers": {
+   "note": "Bhadreśvara (recall)"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:coedes-1968"
+   }
+  ],
+  "confidence": "high",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:300",
+  "s": "temple:wat-phou",
+  "p": "BUILT_DURING",
+  "o": "pol:khmer",
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Vat_Phou"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:301",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:my-son",
+  "qualifiers": {
+   "note": "as Bhadreśvara"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/M%E1%BB%B9_S%C6%A1n_archaeological_site"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:302",
+  "s": "temple:my-son",
+  "p": "BUILT_DURING",
+  "o": "pol:champa",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/M%E1%BB%B9_S%C6%A1n_archaeological_site"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:303",
+  "s": "deity:shiva",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:pura-besakih",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Besakih_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:304",
+  "s": "deity:murugan",
+  "p": "WORSHIPPED_AT",
+  "o": "temple:batu-caves",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Batu_Caves"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:305",
+  "s": "deity:nataraja",
+  "p": "FORM_OF",
+  "o": "deity:shiva",
+  "qualifiers": {
+   "tradition": "trad:shaiva"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:smith-1996"
+   },
+   {
+    "source": "src:kramrisch-1981"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:306",
+  "s": "deity:nataraja",
+  "p": "CENTRAL_TO",
+  "o": "trad:shaiva-siddhanta",
+  "qualifiers": {
+   "note": "dance as pañcakṛtya in Siddhānta theology; above all the Chidambaram cult"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:smith-1996"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:307",
+  "s": "deity:nataraja",
+  "p": "DEPICTED_IN",
+  "o": "temple:badami-caves",
+  "qualifiers": {
+   "note": "eighteen-armed dancing Śiva, Cave 1"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:harle-1994"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:308",
+  "s": "deity:jagannatha",
+  "p": "FORM_OF",
+  "o": "deity:vishnu",
+  "qualifiers": {
+   "tradition": "trad:vaishnava"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:eschmann-kulke-tripathi-1978"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:309",
+  "s": "deity:jagannatha",
+  "p": "IDENTIFIED_WITH",
+  "o": "char:krishna",
+  "qualifiers": {
+   "tradition": "trad:gaudiya"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:eschmann-kulke-tripathi-1978"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:310",
+  "s": "claim:jagannatha-tribal-origin",
+  "p": "CONCERNS",
+  "o": "deity:jagannatha",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:eschmann-kulke-tripathi-1978"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:311",
+  "s": "deity:venkateshvara",
+  "p": "FORM_OF",
+  "o": "deity:vishnu",
+  "qualifiers": {
+   "tradition": "trad:srivaishnava"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:ramesan-1981"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:312",
+  "s": "deity:minakshi",
+  "p": "FORM_OF",
+  "o": "deity:parvati",
+  "qualifiers": {
+   "tradition": "trad:shaiva"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:fuller-1984"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:313",
+  "s": "deity:minakshi",
+  "p": "SPOUSE_OF",
+  "o": "deity:shiva",
+  "qualifiers": {
+   "tradition": "Madurai temple tradition",
+   "note": "as Sundareśvara"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:fuller-1984"
+   },
+   {
+    "source": "src:shulman-1980"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:314",
+  "s": "deity:ranganatha",
+  "p": "FORM_OF",
+  "o": "deity:vishnu",
+  "qualifiers": {
+   "tradition": "trad:srivaishnava"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:hardy-1983"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:315",
+  "s": "place:hampi",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:kishkindha",
+  "qualifiers": {
+   "note": "local identification of the Hampi–Anegundi area with Kiṣkindhā"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hampi"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:316",
+  "s": "place:hampi",
+  "p": "ASSOCIATED_WITH",
+  "o": "char:hanuman",
+  "qualifiers": {
+   "note": "Añjanādri birthplace claim, contested by other sites"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:lutgendorf-2007"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:317",
+  "s": "place:hampi",
+  "p": "ASSOCIATED_WITH",
+  "o": "char:sugriva",
+  "qualifiers": {
+   "note": "Kiṣkindhā / Ṛṣyamūka traditions"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:fritz-michell-1991"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:318",
+  "s": "place:adams-bridge",
+  "p": "ASSOCIATED_WITH",
+  "o": "char:rama",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Adam%27s_Bridge"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:319",
+  "s": "place:rameswaram-island",
+  "p": "ASSOCIATED_WITH",
+  "o": "char:rama",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Pamban_Island"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:320",
+  "s": "person:rajaraja-i",
+  "p": "MEMBER_OF",
+  "o": "pol:chola",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:sastri-1955"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Rajaraja_I"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:321",
+  "s": "person:rajendra-i",
+  "p": "MEMBER_OF",
+  "o": "pol:chola",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:sastri-1955"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Rajendra_I"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:322",
+  "s": "person:rajaraja-i",
+  "p": "PARENT_OF",
+  "o": "person:rajendra-i",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:sastri-1955"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:323",
+  "s": "person:rajaraja-ii",
+  "p": "MEMBER_OF",
+  "o": "pol:chola",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:sastri-1955"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Rajaraja_II"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:324",
+  "s": "person:parantaka-i",
+  "p": "MEMBER_OF",
+  "o": "pol:chola",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:sastri-1955"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Thillai_Nataraja_Temple,_Chidambaram"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:325",
+  "s": "person:narasimhavarman-ii",
+  "p": "MEMBER_OF",
+  "o": "pol:pallava",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:srinivasan-kr-1964"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kailasanathar_Temple,_Kanchipuram"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:326",
+  "s": "person:nandivarman-ii",
+  "p": "MEMBER_OF",
+  "o": "pol:pallava",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:srinivasan-kr-1964"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tiru_Parameswara_Vinnagaram"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:327",
+  "s": "person:vikramaditya-ii",
+  "p": "MEMBER_OF",
+  "o": "pol:chalukya-badami",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:singh-2008"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Pattadakal"
+   }
+  ],
+  "confidence": "high",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:328",
+  "s": "person:lokamahadevi",
+  "p": "MEMBER_OF",
+  "o": "pol:chalukya-badami",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Pattadakal"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:329",
+  "s": "person:lokamahadevi",
+  "p": "SPOUSE_OF",
+  "o": "person:vikramaditya-ii",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Pattadakal"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:330",
+  "s": "person:dantidurga",
+  "p": "MEMBER_OF",
+  "o": "pol:rashtrakuta",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ellora_Caves"
+   },
+   {
+    "source": "src:singh-2008"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:331",
+  "s": "person:yashovarman-chandela",
+  "p": "MEMBER_OF",
+  "o": "pol:chandela",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Yashovarman_(Chandela_dynasty)"
+   },
+   {
+    "source": "src:kielhorn-1892"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:332",
+  "s": "person:vidyadhara-chandela",
+  "p": "MEMBER_OF",
+  "o": "pol:chandela",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kandariya_Mahadeva_Temple"
+   },
+   {
+    "source": "src:desai-2000"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:333",
+  "s": "person:narasimhadeva-i",
+  "p": "MEMBER_OF",
+  "o": "pol:eastern-ganga",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Konark_Sun_Temple"
+   },
+   {
+    "source": "src:donaldson-1985"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:334",
+  "s": "person:anantavarman-chodaganga",
+  "p": "MEMBER_OF",
+  "o": "pol:eastern-ganga",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Jagannath_Temple,_Puri"
+   },
+   {
+    "source": "src:eschmann-kulke-tripathi-1978"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:335",
+  "s": "person:ahilyabai-holkar",
+  "p": "MEMBER_OF",
+  "o": "pol:holkar-indore",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kashi_Vishwanath_Temple"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Vishnupad_Temple"
+   },
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:336",
+  "s": "person:naranarayan",
+  "p": "MEMBER_OF",
+  "o": "pol:koch",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kamakhya_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:337",
+  "s": "person:chilarai",
+  "p": "MEMBER_OF",
+  "o": "pol:koch",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kamakhya_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:338",
+  "s": "person:chilarai",
+  "p": "SIBLING_OF",
+  "o": "person:naranarayan",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kamakhya_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:339",
+  "s": "person:lalitaditya",
+  "p": "MEMBER_OF",
+  "o": "pol:karkota",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:stein-1900"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Martand_Sun_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:340",
+  "s": "person:bhima-i-chaulukya",
+  "p": "MEMBER_OF",
+  "o": "pol:chaulukya",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Sun_Temple,_Modhera"
+   },
+   {
+    "source": "src:thapar-2004"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:341",
+  "s": "person:bhoja-paramara",
+  "p": "MEMBER_OF",
+  "o": "pol:paramara",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bhojeshwar_Temple"
+   },
+   {
+    "source": "src:pollock-2006"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:342",
+  "s": "person:suryavarman-ii",
+  "p": "MEMBER_OF",
+  "o": "pol:khmer",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Angkor_Wat"
+   },
+   {
+    "source": "src:coedes-1968"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:343",
+  "s": "person:yajnavaraha",
+  "p": "MEMBER_OF",
+  "o": "pol:khmer",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Banteay_Srei"
+   },
+   {
+    "source": "src:coedes-1968"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:344",
+  "s": "person:rakai-pikatan",
+  "p": "MEMBER_OF",
+  "o": "pol:medang",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Prambanan"
+   },
+   {
+    "source": "src:jordaan-1996"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:345",
+  "s": "person:vishnuvardhana-hoysala",
+  "p": "MEMBER_OF",
+  "o": "pol:hoysala",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Chennakeshava_Temple,_Belur"
+   },
+   {
+    "source": "src:foekema-1996"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:346",
+  "s": "person:ketamalla",
+  "p": "MEMBER_OF",
+  "o": "pol:hoysala",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hoysaleswara_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:347",
+  "s": "person:somanatha-dandanayaka",
+  "p": "MEMBER_OF",
+  "o": "pol:hoysala",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Chennakesava_Temple,_Somanathapura"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:348",
+  "s": "person:recherla-rudra",
+  "p": "MEMBER_OF",
+  "o": "pol:kakatiya",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ramappa_Temple"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:349",
+  "s": "person:krishnadevaraya",
+  "p": "MEMBER_OF",
+  "o": "pol:vijayanagara",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Venkateswara_Temple,_Tirumala"
+   },
+   {
+    "source": "src:fritz-michell-1991"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:350",
+  "s": "person:devaraya-i",
+  "p": "MEMBER_OF",
+  "o": "pol:vijayanagara",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:dallapiccola-1992"
+   },
+   {
+    "source": "src:fritz-michell-1991"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:351",
+  "s": "person:marthanda-varma",
+  "p": "MEMBER_OF",
+  "o": "pol:travancore",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Padmanabhaswamy_Temple"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Marthanda_Varma"
+   }
+  ],
+  "confidence": "high",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:352",
+  "s": "concept:jyotirlinga",
+  "p": "MENTIONED_IN",
+  "o": "text:shiva-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:shiva-purana-tr",
+    "locator": "Śiva Purāṇa, Koṭirudrasaṃhitā, ch. 1"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "rationale": "Chapter-level locator from recall; verse numbers not given.",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:353",
+  "s": "concept:jyotirlinga",
+  "p": "ASSOCIATED_WITH",
+  "o": "narr:lingodbhava",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:eck-2012"
+   },
+   {
+    "source": "src:kramrisch-1981"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:354",
+  "s": "concept:jyotirlinga",
+  "p": "ASSOCIATED_WITH",
+  "o": "person:shankara",
+  "qualifiers": {
+   "note": "Dvādaśa-jyotirliṅga-stotra attributed to Śaṅkara"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "low",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:355",
+  "s": "concept:shakti-pitha",
+  "p": "ASSOCIATED_WITH",
+  "o": "narr:shakti-pitha-origin",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:sircar-1973"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:356",
+  "s": "concept:shakti-pitha",
+  "p": "ASSOCIATED_WITH",
+  "o": "char:sati",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:sircar-1973"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:357",
+  "s": "concept:shakti-pitha",
+  "p": "MENTIONED_IN",
+  "o": "text:devi-bhagavata-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:dbhp-tr",
+    "locator": "DBhP 7.30 (108 seats, beginning with Vārāṇasī Viśālākṣī)"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "rationale": "Book/chapter from recall and secondary sources; online text blocked during research.",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:358",
+  "s": "concept:divya-desam",
+  "p": "DERIVED_FROM",
+  "o": "text:divya-prabandham",
+  "qualifiers": {
+   "note": "membership defined by the Āḻvārs’ hymns"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:hardy-1983"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:359",
+  "s": "concept:divya-desam",
+  "p": "CENTRAL_TO",
+  "o": "trad:srivaishnava",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:hardy-1983"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:360",
+  "s": "concept:padal-petra-sthalam",
+  "p": "DERIVED_FROM",
+  "o": "text:tevaram",
+  "qualifiers": {
+   "note": "membership defined by the Tēvāram hymns"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:peterson-1989"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:361",
+  "s": "concept:padal-petra-sthalam",
+  "p": "CENTRAL_TO",
+  "o": "trad:shaiva-siddhanta",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:peterson-1989"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:362",
+  "s": "concept:padal-petra-sthalam",
+  "p": "ASSOCIATED_WITH",
+  "o": "person:appar",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:peterson-1989"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:363",
+  "s": "concept:padal-petra-sthalam",
+  "p": "ASSOCIATED_WITH",
+  "o": "person:sambandar",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:peterson-1989"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:364",
+  "s": "concept:padal-petra-sthalam",
+  "p": "ASSOCIATED_WITH",
+  "o": "person:sundarar",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:peterson-1989"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:365",
+  "s": "concept:char-dham",
+  "p": "ASSOCIATED_WITH",
+  "o": "person:shankara",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:366",
+  "s": "concept:arupadai-veedu",
+  "p": "CENTRAL_TO",
+  "o": "trad:shaiva",
+  "qualifiers": {
+   "note": "Tamil Murukaṉ worship within the broader Śaiva fold"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:clothey-1978"
+   }
+  ],
+  "confidence": "low",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:367",
+  "s": "concept:arupadai-veedu",
+  "p": "DERIVED_FROM",
+  "o": "text:tirumurukarruppatai",
+  "qualifiers": {
+   "note": "the six abodes are traditionally read from the poem"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:clothey-1978"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:368",
+  "s": "concept:arupadai-veedu",
+  "p": "ASSOCIATED_WITH",
+  "o": "person:nakkirar",
+  "qualifiers": {
+   "note": "author to whom the Tirumurukāṟṟuppaṭai is attributed"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:clothey-1978"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:369",
+  "s": "concept:arupadai-veedu",
+  "p": "ASSOCIATED_WITH",
+  "o": "deity:murugan",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:clothey-1978"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:370",
+  "s": "claim:jyotirlinga-site-identifications",
+  "p": "CONCERNS",
+  "o": "concept:jyotirlinga",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Jyotirlinga"
+   },
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:371",
+  "s": "claim:jyotirlinga-site-identifications",
+  "p": "CONCERNS",
+  "o": "temple:baidyanath-deoghar",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:372",
+  "s": "claim:jyotirlinga-site-identifications",
+  "p": "CONCERNS",
+  "o": "temple:parli-vaijnath",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:373",
+  "s": "claim:jyotirlinga-site-identifications",
+  "p": "CONCERNS",
+  "o": "temple:nageshwar-dwarka",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:374",
+  "s": "claim:jyotirlinga-site-identifications",
+  "p": "CONCERNS",
+  "o": "temple:aundha-nagnath",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:375",
+  "s": "claim:jyotirlinga-site-identifications",
+  "p": "CONCERNS",
+  "o": "temple:jageshwar",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:376",
+  "s": "claim:jyotirlinga-site-identifications",
+  "p": "CONCERNS",
+  "o": "temple:bhimashankar",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:377",
+  "s": "claim:jyotirlinga-site-identifications",
+  "p": "CONCERNS",
+  "o": "temple:omkareshwar",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:378",
+  "s": "temple:somnath",
+  "p": "MEMBER_OF",
+  "o": "concept:jyotirlinga",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (jyotirling)",
+    "url": "https://en.wikipedia.org/wiki/Somnath_temple"
+   },
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:379",
+  "s": "temple:srisailam",
+  "p": "MEMBER_OF",
+  "o": "concept:jyotirlinga",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (jyotirling)",
+    "url": "https://en.wikipedia.org/wiki/Mallikarjuna_Temple,_Srisailam"
+   },
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:380",
+  "s": "temple:mahakaleshwar",
+  "p": "MEMBER_OF",
+  "o": "concept:jyotirlinga",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (jyotirling)",
+    "url": "https://en.wikipedia.org/wiki/Mahakaleshwar_Jyotirlinga"
+   },
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:381",
+  "s": "temple:omkareshwar",
+  "p": "MEMBER_OF",
+  "o": "concept:jyotirlinga",
+  "qualifiers": {
+   "note": "shared in tradition with Amaleśvara"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (jyotirling)",
+    "url": "https://en.wikipedia.org/wiki/Omkareshwar"
+   },
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:382",
+  "s": "temple:kedarnath",
+  "p": "MEMBER_OF",
+  "o": "concept:jyotirlinga",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (jyotirling)",
+    "url": "https://en.wikipedia.org/wiki/Kedarnath_Temple"
+   },
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:383",
+  "s": "temple:bhimashankar",
+  "p": "MEMBER_OF",
+  "o": "concept:jyotirlinga",
+  "qualifiers": {
+   "note": "Pune-district claimant"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (jyotirling)",
+    "url": "https://en.wikipedia.org/wiki/Bhimashankar_Temple"
+   },
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "competing": "Sites in Assam (Ḍākinī) and Odisha are also claimed.",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:384",
+  "s": "temple:kashi-vishwanath",
+  "p": "MEMBER_OF",
+  "o": "concept:jyotirlinga",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (jyotirling)",
+    "url": "https://en.wikipedia.org/wiki/Kashi_Vishwanath_Temple"
+   },
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:385",
+  "s": "temple:trimbakeshwar",
+  "p": "MEMBER_OF",
+  "o": "concept:jyotirlinga",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (jyotirling)",
+    "url": "https://en.wikipedia.org/wiki/Trimbakeshwar_Shiva_Temple"
+   },
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:386",
+  "s": "temple:baidyanath-deoghar",
+  "p": "MEMBER_OF",
+  "o": "concept:jyotirlinga",
+  "qualifiers": {
+   "note": "Vaidyanātha claimant (majority view)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (jyotirling)",
+    "url": "https://en.wikipedia.org/wiki/Baidyanath_Temple"
+   },
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "competing": "Parli Vaijnath and Baijnath (Himachal) are rival claimants.",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:387",
+  "s": "temple:parli-vaijnath",
+  "p": "MEMBER_OF",
+  "o": "concept:jyotirlinga",
+  "qualifiers": {
+   "note": "Vaidyanātha claimant"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (jyotirling)",
+    "url": "https://en.wikipedia.org/wiki/Vaijnath_Temple,_Parli"
+   },
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "low",
+  "status": "disputed",
+  "competing": "Deoghar is the more widely accepted claimant.",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:388",
+  "s": "temple:nageshwar-dwarka",
+  "p": "MEMBER_OF",
+  "o": "concept:jyotirlinga",
+  "qualifiers": {
+   "note": "Nāgeśa claimant"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (jyotirling)",
+    "url": "https://en.wikipedia.org/wiki/Nageshwar_Jyotirlinga"
+   },
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "low",
+  "status": "disputed",
+  "competing": "Rival claimants: Aundha Nagnath, Jageshwar.",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:389",
+  "s": "temple:aundha-nagnath",
+  "p": "MEMBER_OF",
+  "o": "concept:jyotirlinga",
+  "qualifiers": {
+   "note": "Nāgeśa claimant"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (jyotirling)",
+    "url": "https://en.wikipedia.org/wiki/Aundha_Nagnath_Temple"
+   },
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "low",
+  "status": "disputed",
+  "competing": "Rival claimants: Dwarka, Jageshwar.",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:390",
+  "s": "temple:jageshwar",
+  "p": "MEMBER_OF",
+  "o": "concept:jyotirlinga",
+  "qualifiers": {
+   "note": "Nāgeśa claimant"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (jyotirling)",
+    "url": "https://en.wikipedia.org/wiki/Jageshwar"
+   },
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "low",
+  "status": "disputed",
+  "competing": "Rival claimants: Dwarka, Aundha.",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:391",
+  "s": "temple:rameshwaram",
+  "p": "MEMBER_OF",
+  "o": "concept:jyotirlinga",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (jyotirling)",
+    "url": "https://en.wikipedia.org/wiki/Ramanathaswamy_Temple"
+   },
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:392",
+  "s": "temple:grishneshwar",
+  "p": "MEMBER_OF",
+  "o": "concept:jyotirlinga",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (jyotirling)",
+    "url": "https://en.wikipedia.org/wiki/Grishneshwar_Temple"
+   },
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:393",
+  "s": "temple:kamakhya",
+  "p": "MEMBER_OF",
+  "o": "concept:shakti-pitha",
+  "qualifiers": {
+   "note": "in all major lists; one of the four primary pīṭhas"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (shakti ?p[ie]e?tha)",
+    "url": "https://en.wikipedia.org/wiki/Kamakhya_Temple"
+   },
+   {
+    "source": "src:sircar-1973"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:394",
+  "s": "temple:kalighat",
+  "p": "MEMBER_OF",
+  "o": "concept:shakti-pitha",
+  "qualifiers": {
+   "note": "51-pīṭha list (toes of the right foot)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (shakti ?p[ie]e?tha)",
+    "url": "https://en.wikipedia.org/wiki/Kalighat_Kali_Temple"
+   },
+   {
+    "source": "src:sircar-1973"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:395",
+  "s": "temple:hinglaj",
+  "p": "MEMBER_OF",
+  "o": "concept:shakti-pitha",
+  "qualifiers": {
+   "note": "51-pīṭha list (part of the head)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (shakti ?p[ie]e?tha)",
+    "url": "https://en.wikipedia.org/wiki/Hinglaj_Mata"
+   },
+   {
+    "source": "src:sircar-1973"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:396",
+  "s": "temple:srisailam",
+  "p": "MEMBER_OF",
+  "o": "concept:shakti-pitha",
+  "qualifiers": {
+   "note": "Bhramarāmbā in the eighteen-pīṭha list"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (shakti ?p[ie]e?tha)",
+    "url": "https://en.wikipedia.org/wiki/Mallikarjuna_Temple,_Srisailam"
+   },
+   {
+    "source": "src:sircar-1973"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:397",
+  "s": "temple:alampur-navabrahma",
+  "p": "MEMBER_OF",
+  "o": "concept:shakti-pitha",
+  "qualifiers": {
+   "note": "Jogulāmbā (separate shrine at Alampur) in the eighteen-pīṭha list"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:sircar-1973"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:398",
+  "s": "temple:jagannath-puri",
+  "p": "MEMBER_OF",
+  "o": "concept:shakti-pitha",
+  "qualifiers": {
+   "note": "Vimalā shrine within the complex (eighteen- and 51-pīṭha lists)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (shakti ?p[ie]e?tha)",
+    "url": "https://en.wikipedia.org/wiki/Jagannath_Temple,_Puri"
+   },
+   {
+    "source": "src:sircar-1973"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:399",
+  "s": "temple:koneswaram",
+  "p": "MEMBER_OF",
+  "o": "concept:shakti-pitha",
+  "qualifiers": {
+   "note": "“Laṅkā Śāṅkarī” of the eighteen-pīṭha list, placed at Trincomalee by tradition"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (shakti ?p[ie]e?tha)",
+    "url": "https://en.wikipedia.org/wiki/Koneswaram_Temple"
+   },
+   {
+    "source": "src:sircar-1973"
+   }
+  ],
+  "confidence": "low",
+  "status": "disputed",
+  "competing": "The location of Śāṅkarī is disputed; the epic Laṅkā is not assumed to be Sri Lanka.",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:400",
+  "s": "temple:baidyanath-deoghar",
+  "p": "MEMBER_OF",
+  "o": "concept:shakti-pitha",
+  "qualifiers": {
+   "note": "claimed as the heart-pīṭha"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (shakti ?p[ie]e?tha)",
+    "url": "https://en.wikipedia.org/wiki/Baidyanath_Temple"
+   },
+   {
+    "source": "src:sircar-1973"
+   }
+  ],
+  "confidence": "low",
+  "status": "disputed",
+  "competing": "Claim not found in all lists.",
+  "agent": "temple"
+ },
+ {
+  "id": "temple:401",
+  "s": "temple:srirangam",
+  "p": "MEMBER_OF",
+  "o": "concept:divya-desam",
+  "qualifiers": {
+   "note": "first of the 108"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (divya ?desam)",
+    "url": "https://en.wikipedia.org/wiki/Ranganathaswamy_Temple,_Srirangam"
+   },
+   {
+    "source": "src:hardy-1983"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:402",
+  "s": "temple:tirumala",
+  "p": "MEMBER_OF",
+  "o": "concept:divya-desam",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (divya ?desam)",
+    "url": "https://en.wikipedia.org/wiki/Venkateswara_Temple,_Tirumala"
+   },
+   {
+    "source": "src:hardy-1983"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:403",
+  "s": "temple:varadaraja-kanchi",
+  "p": "MEMBER_OF",
+  "o": "concept:divya-desam",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (divya ?desam)",
+    "url": "https://en.wikipedia.org/wiki/Varadharaja_Perumal_Temple,_Kanchipuram"
+   },
+   {
+    "source": "src:hardy-1983"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:404",
+  "s": "temple:vaikuntha-perumal-kanchi",
+  "p": "MEMBER_OF",
+  "o": "concept:divya-desam",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (divya ?desam)",
+    "url": "https://en.wikipedia.org/wiki/Tiru_Parameswara_Vinnagaram"
+   },
+   {
+    "source": "src:hardy-1983"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:405",
+  "s": "temple:padmanabhaswamy",
+  "p": "MEMBER_OF",
+  "o": "concept:divya-desam",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (divya ?desam)",
+    "url": "https://en.wikipedia.org/wiki/Padmanabhaswamy_Temple"
+   },
+   {
+    "source": "src:hardy-1983"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:406",
+  "s": "temple:badrinath",
+  "p": "MEMBER_OF",
+  "o": "concept:divya-desam",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (divya ?desam)",
+    "url": "https://en.wikipedia.org/wiki/Badrinath_Temple"
+   },
+   {
+    "source": "src:hardy-1983"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:407",
+  "s": "temple:muktinath",
+  "p": "MEMBER_OF",
+  "o": "concept:divya-desam",
+  "qualifiers": {
+   "note": "as Sāḷagrāmam; the only Divya Deśam outside India"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (divya ?desam)",
+    "url": "https://en.wikipedia.org/wiki/Muktinath"
+   },
+   {
+    "source": "src:hardy-1983"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:408",
+  "s": "temple:dwarkadhish",
+  "p": "MEMBER_OF",
+  "o": "concept:divya-desam",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (divya ?desam)",
+    "url": "https://en.wikipedia.org/wiki/Dwarkadhish_Temple"
+   },
+   {
+    "source": "src:hardy-1983"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:409",
+  "s": "temple:chidambaram",
+  "p": "MEMBER_OF",
+  "o": "concept:divya-desam",
+  "qualifiers": {
+   "note": "Govindarāja shrine (Tillai Tirucitrakūṭam)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (divya ?desam)",
+    "url": "https://en.wikipedia.org/wiki/Thillai_Nataraja_Temple,_Chidambaram"
+   },
+   {
+    "source": "src:hardy-1983"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:410",
+  "s": "temple:chidambaram",
+  "p": "MEMBER_OF",
+  "o": "concept:padal-petra-sthalam",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (pa+dal petra)",
+    "url": "https://en.wikipedia.org/wiki/Thillai_Nataraja_Temple,_Chidambaram"
+   },
+   {
+    "source": "src:peterson-1989"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:411",
+  "s": "temple:ekambareswarar-kanchi",
+  "p": "MEMBER_OF",
+  "o": "concept:padal-petra-sthalam",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (pa+dal petra)",
+    "url": "https://en.wikipedia.org/wiki/Ekambareswarar_Temple_(Kanchipuram)"
+   },
+   {
+    "source": "src:peterson-1989"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:412",
+  "s": "temple:jambukeswarar",
+  "p": "MEMBER_OF",
+  "o": "concept:padal-petra-sthalam",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (pa+dal petra)",
+    "url": "https://en.wikipedia.org/wiki/Jambukeswarar_Temple,_Thiruvanaikaval"
+   },
+   {
+    "source": "src:peterson-1989"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:413",
+  "s": "temple:arunachaleswarar",
+  "p": "MEMBER_OF",
+  "o": "concept:padal-petra-sthalam",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (pa+dal petra)",
+    "url": "https://en.wikipedia.org/wiki/Annamalaiyar_Temple"
+   },
+   {
+    "source": "src:peterson-1989"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:414",
+  "s": "temple:srikalahasti",
+  "p": "MEMBER_OF",
+  "o": "concept:padal-petra-sthalam",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (pa+dal petra)",
+    "url": "https://en.wikipedia.org/wiki/Srikalahasti_Temple"
+   },
+   {
+    "source": "src:peterson-1989"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:415",
+  "s": "temple:rameshwaram",
+  "p": "MEMBER_OF",
+  "o": "concept:padal-petra-sthalam",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (pa+dal petra)",
+    "url": "https://en.wikipedia.org/wiki/Ramanathaswamy_Temple"
+   },
+   {
+    "source": "src:peterson-1989"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:416",
+  "s": "temple:meenakshi",
+  "p": "MEMBER_OF",
+  "o": "concept:padal-petra-sthalam",
+  "qualifiers": {
+   "note": "as Tiru Ālavāy"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (pa+dal petra)",
+    "url": "https://en.wikipedia.org/wiki/Meenakshi_Temple"
+   },
+   {
+    "source": "src:peterson-1989"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:417",
+  "s": "temple:koneswaram",
+  "p": "MEMBER_OF",
+  "o": "concept:padal-petra-sthalam",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (pa+dal petra)",
+    "url": "https://en.wikipedia.org/wiki/Koneswaram_Temple"
+   },
+   {
+    "source": "src:peterson-1989"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:418",
+  "s": "temple:srisailam",
+  "p": "MEMBER_OF",
+  "o": "concept:padal-petra-sthalam",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (pa+dal petra)",
+    "url": "https://en.wikipedia.org/wiki/Mallikarjuna_Temple,_Srisailam"
+   },
+   {
+    "source": "src:peterson-1989"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:419",
+  "s": "temple:kedarnath",
+  "p": "MEMBER_OF",
+  "o": "concept:padal-petra-sthalam",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (pa+dal petra)",
+    "url": "https://en.wikipedia.org/wiki/Kedarnath_Temple"
+   },
+   {
+    "source": "src:peterson-1989"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:420",
+  "s": "temple:thiruparankundram",
+  "p": "MEMBER_OF",
+  "o": "concept:padal-petra-sthalam",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (pa+dal petra)",
+    "url": "https://en.wikipedia.org/wiki/Subramaniya_Swamy_Temple,_Thiruparankundram"
+   },
+   {
+    "source": "src:peterson-1989"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:421",
+  "s": "temple:badrinath",
+  "p": "MEMBER_OF",
+  "o": "concept:char-dham",
+  "qualifiers": {
+   "note": "north"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (char dham)",
+    "url": "https://en.wikipedia.org/wiki/Badrinath_Temple"
+   },
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:422",
+  "s": "temple:dwarkadhish",
+  "p": "MEMBER_OF",
+  "o": "concept:char-dham",
+  "qualifiers": {
+   "note": "west"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (char dham)",
+    "url": "https://en.wikipedia.org/wiki/Dwarkadhish_Temple"
+   },
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:423",
+  "s": "temple:jagannath-puri",
+  "p": "MEMBER_OF",
+  "o": "concept:char-dham",
+  "qualifiers": {
+   "note": "east"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (char dham)",
+    "url": "https://en.wikipedia.org/wiki/Jagannath_Temple,_Puri"
+   },
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:424",
+  "s": "temple:rameshwaram",
+  "p": "MEMBER_OF",
+  "o": "concept:char-dham",
+  "qualifiers": {
+   "note": "south"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (char dham)",
+    "url": "https://en.wikipedia.org/wiki/Ramanathaswamy_Temple"
+   },
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:425",
+  "s": "temple:yamunotri",
+  "p": "MEMBER_OF",
+  "o": "concept:chota-char-dham",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (chota char dham)",
+    "url": "https://en.wikipedia.org/wiki/Yamunotri_Temple"
+   },
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:426",
+  "s": "temple:gangotri",
+  "p": "MEMBER_OF",
+  "o": "concept:chota-char-dham",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (chota char dham)",
+    "url": "https://en.wikipedia.org/wiki/Gangotri_Temple"
+   },
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:427",
+  "s": "temple:kedarnath",
+  "p": "MEMBER_OF",
+  "o": "concept:chota-char-dham",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (chota char dham)",
+    "url": "https://en.wikipedia.org/wiki/Kedarnath_Temple"
+   },
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:428",
+  "s": "temple:badrinath",
+  "p": "MEMBER_OF",
+  "o": "concept:chota-char-dham",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (chota char dham)",
+    "url": "https://en.wikipedia.org/wiki/Badrinath_Temple"
+   },
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:429",
+  "s": "temple:ekambareswarar-kanchi",
+  "p": "MEMBER_OF",
+  "o": "concept:pancha-bhuta-sthalam",
+  "qualifiers": {
+   "note": "earth (pṛthvī)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (pancha ?bh(o)",
+    "url": "https://en.wikipedia.org/wiki/Ekambareswarar_Temple_(Kanchipuram)"
+   },
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "competing": "Some versions name Tiruvarur as the earth shrine.",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:430",
+  "s": "temple:jambukeswarar",
+  "p": "MEMBER_OF",
+  "o": "concept:pancha-bhuta-sthalam",
+  "qualifiers": {
+   "note": "water (jala)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (pancha ?bh(o)",
+    "url": "https://en.wikipedia.org/wiki/Jambukeswarar_Temple,_Thiruvanaikaval"
+   },
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:431",
+  "s": "temple:arunachaleswarar",
+  "p": "MEMBER_OF",
+  "o": "concept:pancha-bhuta-sthalam",
+  "qualifiers": {
+   "note": "fire (agni)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (pancha ?bh(o)",
+    "url": "https://en.wikipedia.org/wiki/Annamalaiyar_Temple"
+   },
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:432",
+  "s": "temple:srikalahasti",
+  "p": "MEMBER_OF",
+  "o": "concept:pancha-bhuta-sthalam",
+  "qualifiers": {
+   "note": "air (vāyu)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (pancha ?bh(o)",
+    "url": "https://en.wikipedia.org/wiki/Srikalahasti_Temple"
+   },
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:433",
+  "s": "temple:chidambaram",
+  "p": "MEMBER_OF",
+  "o": "concept:pancha-bhuta-sthalam",
+  "qualifiers": {
+   "note": "space (ākāśa)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (pancha ?bh(o)",
+    "url": "https://en.wikipedia.org/wiki/Thillai_Nataraja_Temple,_Chidambaram"
+   },
+   {
+    "source": "src:eck-2012"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:434",
+  "s": "temple:thiruparankundram",
+  "p": "MEMBER_OF",
+  "o": "concept:arupadai-veedu",
+  "qualifiers": {
+   "note": "first abode"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (arupadai)",
+    "url": "https://en.wikipedia.org/wiki/Subramaniya_Swamy_Temple,_Thiruparankundram"
+   },
+   {
+    "source": "src:clothey-1978"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:435",
+  "s": "temple:tiruchendur",
+  "p": "MEMBER_OF",
+  "o": "concept:arupadai-veedu",
+  "qualifiers": {
+   "note": "second abode"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (arupadai)",
+    "url": "https://en.wikipedia.org/wiki/Thiruchendur_Murugan_Temple"
+   },
+   {
+    "source": "src:clothey-1978"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:436",
+  "s": "temple:palani",
+  "p": "MEMBER_OF",
+  "o": "concept:arupadai-veedu",
+  "qualifiers": {
+   "note": "third abode"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (arupadai)",
+    "url": "https://en.wikipedia.org/wiki/Palani_Murugan_Temple"
+   },
+   {
+    "source": "src:clothey-1978"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:437",
+  "s": "temple:swamimalai",
+  "p": "MEMBER_OF",
+  "o": "concept:arupadai-veedu",
+  "qualifiers": {
+   "note": "fourth abode"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (arupadai)",
+    "url": "https://en.wikipedia.org/wiki/Swamimalai_Murugan_Temple"
+   },
+   {
+    "source": "src:clothey-1978"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:438",
+  "s": "temple:tiruttani",
+  "p": "MEMBER_OF",
+  "o": "concept:arupadai-veedu",
+  "qualifiers": {
+   "note": "fifth abode (kuṉṟutōṟāṭal, traditional identification)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (arupadai)",
+    "url": "https://en.wikipedia.org/wiki/Tiruttani_Murugan_Temple"
+   },
+   {
+    "source": "src:clothey-1978"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "competing": "The poem names no single hill for the fifth abode.",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "temple:439",
+  "s": "temple:pazhamudircholai",
+  "p": "MEMBER_OF",
+  "o": "concept:arupadai-veedu",
+  "qualifiers": {
+   "note": "sixth abode (traditional identification)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "states membership (arupadai)",
+    "url": "https://en.wikipedia.org/wiki/Pazhamudircholai"
+   },
+   {
+    "source": "src:clothey-1978"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "competing": "The ancient Paḻamutircōlai has also been located elsewhere.",
+  "agent": "temple",
+  "lastVerified": "2026-11-08"
+ }
+]

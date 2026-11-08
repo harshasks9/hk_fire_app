@@ -1,0 +1,536 @@
+[
+ {
+  "id": "sac:padma-kalpa",
+  "name": "Pādma mahākalpa (past)",
+  "iast": "Pādma mahākalpa",
+  "kind": "kalpa",
+  "order": 1,
+  "description": "Traditional chronology: the great kalpa called Pādma that closed the first half (parārdha) of Brahmā's hundred-year life, according to the Viṣṇu Purāṇa.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP (crit.) 1.3.26–27",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+    "quote": "ekam asya vyatītaṃ tu parārdhaṃ brahmaṇo 'nagha / tasyānte 'bhūn mahākalpaḥ pādma ity abhiviśrutaḥ"
+   }
+  ],
+  "note": "Brahmā's full life (para) is a hundred of his years (ViP 1.3.5). Traditional reckoning as stated in the cited texts; it is not a historical or scientific chronology and is not drawn on the same axis as scholarly dates."
+ },
+ {
+  "id": "sac:varaha-kalpa",
+  "name": "Vārāha kalpa (current day of Brahmā)",
+  "iast": "Vārāha kalpa",
+  "kind": "kalpa",
+  "humanYears": 4320000000,
+  "divineYears": 12000000,
+  "order": 2,
+  "description": "Traditional chronology: the present day of Brahmā, the first kalpa of the second parārdha, named after the Boar (ViP 1.3.28); a day of Brahmā is a thousand caturyugas (Manu 1.72; ViP 1.3.15; BhP 3.11.22), followed by a night of equal length.",
+  "narratives": [
+   "narr:varaha-earth"
+  ],
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP (crit.) 1.3.15, 1.3.28",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+    "quote": "vārāha iti kalpo 'yaṃ prathamaḥ parikīrtitaḥ"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "Manu 1.72",
+    "edition": "GRETIL e-text, text of Kullūka (Shastri 1983) with Medhātithi variants",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_manusmRti.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 3.11.22",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "note": "Human-year figure computed as 1,000 × 4,320,000 using the 360:1 ratio implied by ViP 1.3.19–21; Manu gives only divine yugas. Āryabhaṭa instead makes a day of Brahmā 1,008 yugas (AB 3.8). Traditional reckoning as stated in the cited texts; it is not a historical or scientific chronology and is not drawn on the same axis as scholarly dates."
+ },
+ {
+  "id": "sac:manvantara-svayambhuva",
+  "name": "Svāyambhuva manvantara (1st)",
+  "iast": "Svāyambhuva manvantara",
+  "kind": "manvantara",
+  "humanYears": 306720000,
+  "divineYears": 852000,
+  "order": 3,
+  "description": "Traditional chronology: the first of the fourteen manvantaras of the present kalpa, under Svāyambhuva Manu (ViP 3.1.6), in which Dhruva, son of Uttānapāda, lived (ViP 1.11).",
+  "narratives": [
+   "narr:dhruva",
+   "char:dhruva",
+   "char:uttanapada"
+  ],
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP (crit.) 3.1.6, 3.1.8; 1.11",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 1.3.12",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "note": "Each manvantara is 'a little over seventy-one' caturyugas (ViP 1.3.18; BhP 3.11.24); ViP 1.3.19–21 gives 852,000 divine and 306,720,000 human years 'without the excess'. Traditional reckoning as stated in the cited texts; it is not a historical or scientific chronology and is not drawn on the same axis as scholarly dates."
+ },
+ {
+  "id": "sac:manvantara-chakshusha",
+  "name": "Cākṣuṣa manvantara (6th)",
+  "iast": "Cākṣuṣa manvantara",
+  "kind": "manvantara",
+  "humanYears": 306720000,
+  "divineYears": 852000,
+  "order": 4,
+  "description": "Traditional chronology: the sixth manvantara, at whose end the deluge of the Matsya story occurs according to the Matsya Purāṇa (2.14) and the Bhāgavata (1.3.15); the Bhāgavata also places the churning of the ocean in this period (recall).",
+  "narratives": [
+   "narr:matsya-flood"
+  ],
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 2.14",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt",
+    "quote": "evam ekārṇave jāte cākṣuṣāntarasaṃkṣaye"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 1.3.15",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt",
+    "quote": "rūpaṃ sa jagṛhe mātsyaṃ cākṣuṣodadhisamplave"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ViP (crit.) 3.1.6",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "note": "The Bhāgavata (8.24.58) instead says Satyavrata became Vaivasvata Manu 'in this kalpa', placing the Matsya episode at a kalpa's end; the texts are not harmonised here. Traditional reckoning as stated in the cited texts; it is not a historical or scientific chronology and is not drawn on the same axis as scholarly dates."
+ },
+ {
+  "id": "sac:manvantara-vaivasvata",
+  "name": "Vaivasvata manvantara (7th, current)",
+  "iast": "Vaivasvata manvantara",
+  "kind": "manvantara",
+  "humanYears": 306720000,
+  "divineYears": 852000,
+  "order": 5,
+  "description": "Traditional chronology: the present, seventh manvantara of Vaivasvata (Śrāddhadeva) Manu, son of Vivasvat, with Purandara as Indra and the seven sages Vasiṣṭha, Kaśyapa, Atri, Jamadagni, Gautama, Viśvāmitra and Bharadvāja (ViP 3.1.30–32; BhP 8.13.1–5); Vāmana is born in it (BhP 8.13.6).",
+  "narratives": [
+   "narr:vamana-bali",
+   "lin:suryavamsha",
+   "lin:chandravamsha",
+   "char:manu"
+  ],
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP (crit.) 3.1.7, 3.1.30–34",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+    "quote": "vaivasvato 'yaṃ yasyaitat saptamaṃ vartate 'ntaram"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 8.13.1–6",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt",
+    "quote": "manur vivasvataḥ putraḥ śrāddhadeva iti śrutaḥ / saptamo vartamāno yaḥ"
+   }
+  ],
+  "note": "Traditional reckoning as stated in the cited texts; it is not a historical or scientific chronology and is not drawn on the same axis as scholarly dates."
+ },
+ {
+  "id": "sac:manvantara-savarni",
+  "name": "Sāvarṇika manvantara (8th, future)",
+  "iast": "Sāvarṇika manvantara",
+  "kind": "manvantara",
+  "humanYears": 306720000,
+  "divineYears": 852000,
+  "order": 6,
+  "description": "Traditional chronology: the coming eighth manvantara, whose Manu Sāvarṇi will be King Suratha by the Goddess's boon; the Devī Māhātmya is framed as 'in the Sāvarṇika manvantara' (MkP colophons) and the Viṣṇu Purāṇa describes the future manvantaras (3.2).",
+  "narratives": [
+   "char:suratha"
+  ],
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 81–93 (colophons); 93",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ViP (crit.) 3.2",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "note": "Traditional reckoning as stated in the cited texts; it is not a historical or scientific chronology and is not drawn on the same axis as scholarly dates."
+ },
+ {
+  "id": "sac:mahayuga",
+  "name": "Mahāyuga (caturyuga)",
+  "iast": "Mahāyuga / Caturyuga",
+  "kind": "mahayuga",
+  "humanYears": 4320000,
+  "divineYears": 12000,
+  "order": 7,
+  "description": "Traditional chronology: the cycle of Kṛta, Tretā, Dvāpara and Kali, totalling 12,000 divine years (Manu 1.71; ViP 1.3.11; BhP 3.11.18); computed as 4,320,000 human years where one divine year = 360 human years.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "Manu 1.68–73, 1.79",
+    "edition": "GRETIL e-text, text of Kullūka (Shastri 1983) with Medhātithi variants",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_manusmRti.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ViP (crit.) 1.3.11–28",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 3.11.18–20",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "note": "Manu 1.71 calls the 12,000 'a yuga of the gods' without a human-year conversion; MBh (CE) 12.224.28 repeats the 12,000 without stating divine years. Traditional reckoning as stated in the cited texts; it is not a historical or scientific chronology and is not drawn on the same axis as scholarly dates."
+ },
+ {
+  "id": "sac:mahayuga-28-vaivasvata",
+  "name": "Twenty-eighth mahāyuga of the Vaivasvata manvantara (current)",
+  "kind": "mahayuga",
+  "humanYears": 4320000,
+  "divineYears": 12000,
+  "order": 8,
+  "description": "Traditional chronology: the present caturyuga, the twenty-eighth of the seventh manvantara: the Matsya places Vedavyāsa's birth in the twenty-eighth Dvāpara (47.245), and the Viṣṇu Purāṇa lists twenty-eight Vyāsas of successive Dvāparas (3.3, recall).",
+  "narratives": [
+   "char:vyasa"
+  ],
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 47.245",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt",
+    "quote": "aṣṭame dvāpare viṣṇur aṣṭāviṃśe parāśarāt / vedavyāsas tadā jajñe"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ViP (crit.) 3.3.9 (coarse)",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "note": "Traditional reckoning as stated in the cited texts; it is not a historical or scientific chronology and is not drawn on the same axis as scholarly dates."
+ },
+ {
+  "id": "sac:krita-yuga",
+  "name": "Kṛta (Satya) yuga",
+  "iast": "Kṛtayuga",
+  "kind": "yuga",
+  "humanYears": 1728000,
+  "divineYears": 4800,
+  "order": 9,
+  "description": "Traditional chronology: the first and best age, dharma standing on four feet: 4,000 divine years with dawn and dusk of 400 each = 4,800 (Manu 1.69; ViP 1.3.12–13), i.e. 1,728,000 human years at 360:1. The Rāmāyaṇa sets the churning of the ocean 'formerly in the Kṛta age' (VR CE 1.44.14); tradition places Narasiṃha's killing of Hiraṇyakaśipu in this age (the Matsya's '4th yuga' wording at 47.237 is ambiguous).",
+  "narratives": [
+   "narr:samudra-manthana",
+   "narr:narasimha-prahlada"
+  ],
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "Manu 1.69",
+    "edition": "GRETIL e-text, text of Kullūka (Shastri 1983) with Medhātithi variants",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_manusmRti.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ViP (crit.) 1.3.12–13",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:vr-critical-edition",
+    "locator": "VR (CE) 1.44.14",
+    "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt",
+    "quote": "pūrvaṃ kṛtayuge rāma diteḥ putrā mahābalāḥ"
+   },
+   {
+    "source": "src:soifer-1991"
+   }
+  ],
+  "note": "The placement of Narasiṃha in Kṛta is traditional (class 6); texts differ. Traditional reckoning as stated in the cited texts; it is not a historical or scientific chronology and is not drawn on the same axis as scholarly dates."
+ },
+ {
+  "id": "sac:treta-yuga",
+  "name": "Tretā yuga",
+  "iast": "Tretāyuga",
+  "kind": "yuga",
+  "humanYears": 1296000,
+  "divineYears": 3600,
+  "order": 10,
+  "description": "Traditional chronology: the second age: 3,000 divine years with junctions of 300 each = 3,600 (1,296,000 human years). The Nārāyaṇīya places Rāma Bhārgava in Tretā (MBh CE 12.326.77); the Matsya places Vāmana in the seventh Tretā (47.239) and Dattātreya, Māndhātṛ and Jāmadagnya in particular Tretās (47.241–243).",
+  "narratives": [
+   "char:parashurama",
+   "narr:vamana-bali",
+   "deity:dattatreya",
+   "char:mandhatri"
+  ],
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "Manu 1.70",
+    "edition": "GRETIL e-text, text of Kullūka (Shastri 1983) with Medhātithi variants",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_manusmRti.txt"
+   },
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 12.326.77",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b12/b12c326.htm",
+    "quote": "tretāyuge bhaviṣyāmi rāmo bhṛgukulodvahaḥ"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 47.239–243",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+   }
+  ],
+  "note": "Traditional reckoning as stated in the cited texts; it is not a historical or scientific chronology and is not drawn on the same axis as scholarly dates."
+ },
+ {
+  "id": "sac:treta-dvapara-sandhi",
+  "name": "Junction of Tretā and Dvāpara (Rāma)",
+  "kind": "narrative-sequence",
+  "order": 11,
+  "description": "Traditional chronology: the Nārāyaṇīya foretells that 'at the junction of Tretā and Dvāpara' Viṣṇu will be Rāma Dāśarathi and slay Rāvaṇa (MBh CE 12.326.78–81); the Matsya places Rāma in the twenty-fourth yuga (47.244).",
+  "narratives": [
+   "char:rama",
+   "narr:lanka-war"
+  ],
+  "sources": [
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 12.326.78",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b12/b12c326.htm",
+    "quote": "saṃdhau tu samanuprāpte tretāyāṃ dvāparasya ca / rāmo dāśarathir bhūtvā bhaviṣyāmi jagatpatiḥ"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 47.244",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+   }
+  ],
+  "note": "Traditional reckoning as stated in the cited texts; it is not a historical or scientific chronology and is not drawn on the same axis as scholarly dates."
+ },
+ {
+  "id": "sac:dvapara-yuga",
+  "name": "Dvāpara yuga",
+  "iast": "Dvāparayuga",
+  "kind": "yuga",
+  "humanYears": 864000,
+  "divineYears": 2400,
+  "order": 12,
+  "description": "Traditional chronology: the third age: 2,000 divine years with junctions of 200 each = 2,400 (864,000 human years); in each Dvāpara a Vyāsa divides the Veda (ViP 3.3, recall; MatsP 47.245).",
+  "narratives": [
+   "char:vyasa"
+  ],
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "Manu 1.70",
+    "edition": "GRETIL e-text, text of Kullūka (Shastri 1983) with Medhātithi variants",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_manusmRti.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ViP (crit.) 1.3.12–13",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 47.245",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+   }
+  ],
+  "note": "Traditional reckoning as stated in the cited texts; it is not a historical or scientific chronology and is not drawn on the same axis as scholarly dates."
+ },
+ {
+  "id": "sac:dvapara-kali-sandhi",
+  "name": "Junction of Dvāpara and Kali (Kṛṣṇa and the Kurukṣetra war)",
+  "kind": "narrative-sequence",
+  "order": 13,
+  "description": "Traditional chronology: the Nārāyaṇīya foretells Kṛṣṇa's birth at Mathurā 'at the final junction of Dvāpara and Kali' (MBh CE 12.326.82); the Kurukṣetra war and the Yādava destruction belong to this junction in tradition, and Kali begins on the day Kṛṣṇa leaves the earth (ViP 4.24.27, 4.24.32; 5.38.8).",
+  "narratives": [
+   "char:krishna",
+   "narr:kurukshetra-war",
+   "narr:destruction-of-yadavas"
+  ],
+  "sources": [
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 12.326.82",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b12/b12c326.htm",
+    "quote": "dvāparasya kaleś caiva saṃdhau paryavasānike / prādurbhāvaḥ kaṃsahetor mathurāyāṃ bhaviṣyati"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ViP (crit.) 4.24.27, 4.24.32; 5.38.8",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "note": "Tradition equates this junction with the Kali epoch of 3102 BCE (see sac:kali-yuga). Traditional reckoning as stated in the cited texts; it is not a historical or scientific chronology and is not drawn on the same axis as scholarly dates."
+ },
+ {
+  "id": "sac:kali-yuga",
+  "name": "Kali yuga (current)",
+  "iast": "Kaliyuga",
+  "kind": "yuga",
+  "humanYears": 432000,
+  "divineYears": 1200,
+  "order": 14,
+  "description": "Traditional chronology: the fourth and present age: 1,000 divine years with junctions of 100 each = 1,200 (432,000 human years at 360:1); ViP 4.24.33 gives 360,000 human years and 4.24.34 '1,200 divine years'. It begins when Kṛṣṇa departs (ViP 4.24.32; 5.38.8). Indian astronomy from Āryabhaṭa (499 CE: Kali 3600 in his 23rd year, AB 3.10) fixes its epoch at 3102 BCE, and the Aihole inscription of 634/635 CE counts 3,735 years since the Bhārata war.",
+  "narratives": [
+   "narr:kalki-advent",
+   "claim:kali-epoch-3102"
+  ],
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "Manu 1.70",
+    "edition": "GRETIL e-text, text of Kullūka (Shastri 1983) with Medhātithi variants",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_manusmRti.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ViP (crit.) 4.24.26–34",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+    "quote": "trīṇi lakṣāṇi varṣāṇāṃ dvija mānuṣasaṃkhyayā / ṣaṣṭiṃ caiva sahasrāṇi bhaviṣyaty eṣa vai kaliḥ"
+   },
+   {
+    "source": "src:shukla-sarma-1976",
+    "locator": "Āryabhaṭīya 3.10",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_AryabhaTa-AryabhaTIya.txt"
+   },
+   {
+    "source": "src:kielhorn-1901",
+    "locator": "EI VI, vv. 33–34"
+   },
+   {
+    "source": "src:fleet-1911"
+   }
+  ],
+  "note": "The 3102 BCE epoch is an astronomical-traditional computation (Fleet 1911; Pingree 1981); it is not evidence for the date of any narrated event. The 360,000 of ViP 4.24.33 is recorded as the e-text reads. Traditional reckoning as stated in the cited texts; it is not a historical or scientific chronology and is not drawn on the same axis as scholarly dates."
+ },
+ {
+  "id": "sac:kali-end-kalki",
+  "name": "End of Kali and advent of Kalki",
+  "kind": "narrative-sequence",
+  "order": 15,
+  "description": "Traditional chronology: at the junction closing the Kali age Kalki is born at Śambhala to Viṣṇuyaśas and restores the Kṛta age (BhP 1.3.25, 12.2.16–20; MatsP 47.247–251; AgP 16.7–10).",
+  "narratives": [
+   "narr:kalki-advent",
+   "char:kalki"
+  ],
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 1.3.25; 12.2.18",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt",
+    "quote": "athāsau yugasandhyāyāṃ dasyuprāyeṣu rājasu / janitā viṣṇuyaśaso nāmnā kalkir jagatpatiḥ"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 47.247–251",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "AgP 16.7–10",
+    "edition": "Rajendralal Mitra ed. (Bibliotheca Indica 1870–79); GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_agnipurANa.txt"
+   }
+  ],
+  "note": "Traditional reckoning as stated in the cited texts; it is not a historical or scientific chronology and is not drawn on the same axis as scholarly dates."
+ },
+ {
+  "id": "sac:aryabhata-yuga",
+  "name": "Āryabhaṭa's mahāyuga of equal quarters (alternative system)",
+  "kind": "mahayuga",
+  "humanYears": 4320000,
+  "divineYears": 12000,
+  "order": 16,
+  "description": "Traditional chronology: in the Āryabhaṭīya a mahāyuga of 12,000 divine years (4,320,000 years) is divided into four equal yugapādas of 1,080,000 years, unlike the 4:3:2:1 Purāṇic proportions; a divine year is 360 solar years (AB 3.7–8).",
+  "sources": [
+   {
+    "source": "src:shukla-sarma-1976",
+    "locator": "Āryabhaṭīya 3.7–10",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_AryabhaTa-AryabhaTIya.txt"
+   },
+   {
+    "source": "src:pingree-1981"
+   }
+  ],
+  "note": "An astronomical reworking of the traditional scheme. Traditional reckoning as stated in the cited texts; it is not a historical or scientific chronology and is not drawn on the same axis as scholarly dates."
+ },
+ {
+  "id": "sac:pralaya-naimittika",
+  "name": "Night of Brahmā (naimittika pralaya)",
+  "kind": "kalpa",
+  "humanYears": 4320000000,
+  "divineYears": 12000000,
+  "order": 17,
+  "description": "Traditional chronology: at the end of each day of Brahmā the three worlds are burned and flooded; Brahmā-Nārāyaṇa sleeps on the serpent for a night as long as the day (ViP 1.3.22–25; Manu 1.72–73; BhP 12.7.17).",
+  "narratives": [
+   "concept:pralaya",
+   "narr:madhu-kaitabha"
+  ],
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP (crit.) 1.3.22–25",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "Manu 1.72–73",
+    "edition": "GRETIL e-text, text of Kullūka (Shastri 1983) with Medhātithi variants",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_manusmRti.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 12.7.17",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "note": "The Devī Māhātmya's Madhu–Kaiṭabha episode is set during Viṣṇu's cosmic sleep. Traditional reckoning as stated in the cited texts; it is not a historical or scientific chronology and is not drawn on the same axis as scholarly dates."
+ }
+]

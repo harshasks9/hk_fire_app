@@ -1,0 +1,395 @@
+[
+ {
+  "id": "src:pathak-vip-ce",
+  "type": "primary-text",
+  "title": "The Critical Edition of the Viṣṇupurāṇam",
+  "author": "M. M. Pathak (ed.)",
+  "year": "1997–1999",
+  "publisher": "Oriental Institute, Vadodara",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+  "urlChecked": true,
+  "notes": "GRETIL e-text input by Peter Schreiner. Locators 'ViP (crit.) aṃśa.adhyāya.verse'; starred numbers (e.g. 3.6.23*8) are insertions relegated from the constituted text.",
+  "agent": "purana"
+ },
+ {
+  "id": "src:hazra-upapuranas",
+  "type": "scholarly-book",
+  "title": "Studies in the Upapurāṇas (vol. I: Saura and Vaiṣṇava Upapurāṇas; vol. II: Śākta and Non-sectarian Upapurāṇas)",
+  "author": "R. C. Hazra",
+  "year": "1958–1963",
+  "publisher": "Sanskrit College, Calcutta",
+  "agent": "purana"
+ },
+ {
+  "id": "src:pargiter-1913",
+  "type": "scholarly-book",
+  "title": "The Purana Text of the Dynasties of the Kali Age",
+  "author": "F. E. Pargiter",
+  "year": "1913",
+  "publisher": "Oxford University Press",
+  "license": "public domain",
+  "agent": "purana"
+ },
+ {
+  "id": "src:pargiter-1922",
+  "type": "scholarly-book",
+  "title": "Ancient Indian Historical Tradition",
+  "author": "F. E. Pargiter",
+  "year": "1922",
+  "publisher": "Oxford University Press",
+  "license": "public domain",
+  "notes": "Reconstructs Solar and Lunar genealogies from the Purāṇas; its historicist method is widely disputed.",
+  "agent": "purana"
+ },
+ {
+  "id": "src:pargiter-1904",
+  "type": "translation",
+  "title": "The Mārkaṇḍeya Purāṇa, translated with notes",
+  "author": "F. E. Pargiter",
+  "year": "1888–1904",
+  "publisher": "Asiatic Society (Bibliotheca Indica), Calcutta",
+  "license": "public domain",
+  "notes": "Pargiter's chapter numbering of the Devī Māhātmya (81–93) follows the Calcutta text.",
+  "agent": "purana"
+ },
+ {
+  "id": "src:buhler-1886",
+  "type": "translation",
+  "title": "The Laws of Manu (Sacred Books of the East 25)",
+  "author": "Georg Bühler",
+  "year": "1886",
+  "publisher": "Clarendon Press, Oxford",
+  "license": "public domain",
+  "agent": "purana"
+ },
+ {
+  "id": "src:olivelle-2005",
+  "type": "translation",
+  "title": "Manu's Code of Law: A Critical Edition and Translation of the Mānava-Dharmaśāstra",
+  "author": "Patrick Olivelle",
+  "year": "2005",
+  "publisher": "Oxford University Press",
+  "agent": "purana"
+ },
+ {
+  "id": "src:doniger-1975",
+  "type": "translation",
+  "title": "Hindu Myths: A Sourcebook Translated from the Sanskrit",
+  "author": "Wendy Doniger O'Flaherty",
+  "year": "1975",
+  "publisher": "Penguin",
+  "notes": "Includes an approximate chronology of the Purāṇas often cited in secondary literature.",
+  "agent": "purana"
+ },
+ {
+  "id": "src:brown-1990",
+  "type": "scholarly-book",
+  "title": "The Triumph of the Goddess: The Canonical Models and Theological Visions of the Devī-Bhāgavata Purāṇa",
+  "author": "C. Mackenzie Brown",
+  "year": "1990",
+  "publisher": "State University of New York Press",
+  "agent": "purana"
+ },
+ {
+  "id": "src:brown-1998",
+  "type": "translation",
+  "title": "The Devī Gītā: The Song of the Goddess. A Translation, Annotation, and Commentary",
+  "author": "C. Mackenzie Brown",
+  "year": "1998",
+  "publisher": "State University of New York Press",
+  "agent": "purana"
+ },
+ {
+  "id": "src:coburn-1991",
+  "type": "translation",
+  "title": "Encountering the Goddess: A Translation of the Devī-Māhātmya and a Study of Its Interpretation",
+  "author": "Thomas B. Coburn",
+  "year": "1991",
+  "publisher": "State University of New York Press",
+  "agent": "purana"
+ },
+ {
+  "id": "src:kinsley-1986",
+  "type": "scholarly-book",
+  "title": "Hindu Goddesses: Visions of the Divine Feminine in the Hindu Religious Tradition",
+  "author": "David Kinsley",
+  "year": "1986",
+  "publisher": "University of California Press",
+  "agent": "purana"
+ },
+ {
+  "id": "src:pintchman-1994",
+  "type": "scholarly-book",
+  "title": "The Rise of the Goddess in the Hindu Tradition",
+  "author": "Tracy Pintchman",
+  "year": "1994",
+  "publisher": "State University of New York Press",
+  "agent": "purana"
+ },
+ {
+  "id": "src:van-kooij-1972",
+  "type": "scholarly-book",
+  "title": "Worship of the Goddess according to the Kālikāpurāṇa, Part I",
+  "author": "K. R. van Kooij",
+  "year": "1972",
+  "publisher": "E. J. Brill, Leiden",
+  "agent": "purana"
+ },
+ {
+  "id": "src:kramrisch-1928",
+  "type": "translation",
+  "title": "The Vishnudharmottara (Part III): A Treatise on Indian Painting and Image-Making (2nd ed.)",
+  "author": "Stella Kramrisch",
+  "year": "1928",
+  "publisher": "Calcutta University Press",
+  "agent": "purana"
+ },
+ {
+  "id": "src:soifer-1991",
+  "type": "scholarly-book",
+  "title": "The Myths of Narasiṃha and Vāmana: Two Avatars in Cosmological Perspective",
+  "author": "Deborah A. Soifer",
+  "year": "1991",
+  "publisher": "State University of New York Press",
+  "agent": "purana"
+ },
+ {
+  "id": "src:courtright-1985",
+  "type": "scholarly-book",
+  "title": "Gaṇeśa: Lord of Obstacles, Lord of Beginnings",
+  "author": "Paul B. Courtright",
+  "year": "1985",
+  "publisher": "Oxford University Press",
+  "agent": "purana"
+ },
+ {
+  "id": "src:mann-2012",
+  "type": "scholarly-book",
+  "title": "The Rise of Mahāsena: The Transformation of Skanda-Kārttikeya in North India from the Kuṣāṇa to Gupta Empires",
+  "author": "Richard D. Mann",
+  "year": "2012",
+  "publisher": "Brill",
+  "agent": "purana"
+ },
+ {
+  "id": "src:gonzalez-reimann-2002",
+  "type": "scholarly-book",
+  "title": "The Mahābhārata and the Yugas: India's Great Epic Poem and the Hindu System of World Ages",
+  "author": "Luis González-Reimann",
+  "year": "2002",
+  "publisher": "Peter Lang",
+  "agent": "purana"
+ },
+ {
+  "id": "src:pingree-1981",
+  "type": "scholarly-book",
+  "title": "Jyotiḥśāstra: Astral and Mathematical Literature (A History of Indian Literature, vol. VI, fasc. 4)",
+  "author": "David Pingree",
+  "year": "1981",
+  "publisher": "Otto Harrassowitz",
+  "agent": "purana"
+ },
+ {
+  "id": "src:fleet-1911",
+  "type": "journal-article",
+  "title": "The Kaliyuga Era of B.C. 3102",
+  "author": "J. F. Fleet",
+  "year": "1911",
+  "publisher": "Journal of the Royal Asiatic Society",
+  "agent": "purana"
+ },
+ {
+  "id": "src:kielhorn-1901",
+  "type": "epigraphic-corpus",
+  "title": "Aihole Inscription of Pulikesin II; Saka-Samvat 556 (Epigraphia Indica vol. VI)",
+  "author": "F. Kielhorn",
+  "year": "1900–1901",
+  "publisher": "Archaeological Survey of India",
+  "notes": "Revised edition of the Meguti (Aihole) inscription; date verses 33–34 (3735 years after the Bhārata war / Śaka 556).",
+  "agent": "purana"
+ },
+ {
+  "id": "src:hacker-1960",
+  "type": "journal-article",
+  "title": "Zur Entwicklung der Avatāralehre",
+  "author": "Paul Hacker",
+  "year": "1960",
+  "publisher": "Wiener Zeitschrift für die Kunde Süd- und Ostasiens 4",
+  "agent": "purana"
+ },
+ {
+  "id": "src:bhandarkar-1913",
+  "type": "scholarly-book",
+  "title": "Vaiṣṇavism, Śaivism and Minor Religious Systems",
+  "author": "R. G. Bhandarkar",
+  "year": "1913",
+  "publisher": "Karl J. Trübner, Strassburg",
+  "license": "public domain",
+  "agent": "purana"
+ },
+ {
+  "id": "src:bisschop-2006",
+  "type": "scholarly-book",
+  "title": "Early Śaivism and the Skandapurāṇa: Sects and Centres",
+  "author": "Peter C. Bisschop",
+  "year": "2006",
+  "publisher": "Egbert Forsten, Groningen",
+  "agent": "purana"
+ },
+ {
+  "id": "src:leiden-skandapurana",
+  "type": "institutional",
+  "title": "The Skandapurāṇa Project (research project page)",
+  "author": "Leiden University",
+  "year": "ongoing",
+  "publisher": "Leiden University",
+  "url": "https://universiteitleiden.nl/en/research/research-projects/humanities/the-skandapurāṇa-project",
+  "urlChecked": true,
+  "notes": "States that the text is transmitted in Nepalese palm-leaf manuscripts 'including the oldest known dated Purāṇa manuscript (810 CE)', that the project began at Groningen in the early 1990s (Bakker, Isaacson, Adriaensen), and lists vols. I (1998), IIA (2005), IIB, III, IV (2018), V (2021).",
+  "agent": "purana"
+ },
+ {
+  "id": "src:bryant-2003",
+  "type": "translation",
+  "title": "Krishna: The Beautiful Legend of God (Śrīmad Bhāgavata Purāṇa Book X)",
+  "author": "Edwin F. Bryant",
+  "year": "2003",
+  "publisher": "Penguin",
+  "agent": "purana"
+ },
+ {
+  "id": "src:van-buitenen-1966",
+  "type": "journal-article",
+  "title": "On the Archaism of the Bhāgavata Purāṇa",
+  "author": "J. A. B. van Buitenen",
+  "year": "1966",
+  "publisher": "in M. Singer (ed.), Krishna: Myths, Rites and Attitudes (East-West Center Press)",
+  "agent": "purana"
+ },
+ {
+  "id": "src:lorenzen-1972",
+  "type": "scholarly-book",
+  "title": "The Kāpālikas and Kālāmukhas: Two Lost Śaivite Sects",
+  "author": "David N. Lorenzen",
+  "year": "1972",
+  "publisher": "University of California Press",
+  "agent": "purana"
+ },
+ {
+  "id": "src:eck-1982",
+  "type": "scholarly-book",
+  "title": "Banaras: City of Light",
+  "author": "Diana L. Eck",
+  "year": "1982",
+  "publisher": "Alfred A. Knopf",
+  "agent": "purana"
+ },
+ {
+  "id": "src:eck-2012",
+  "type": "scholarly-book",
+  "title": "India: A Sacred Geography",
+  "author": "Diana L. Eck",
+  "year": "2012",
+  "publisher": "Harmony Books",
+  "agent": "purana"
+ },
+ {
+  "id": "src:sircar-1973",
+  "type": "scholarly-book",
+  "title": "The Śākta Pīṭhas (2nd ed.)",
+  "author": "D. C. Sircar",
+  "year": "1973",
+  "publisher": "Motilal Banarsidass",
+  "notes": "First published in JRASB (Letters) 14, 1948.",
+  "agent": "purana"
+ },
+ {
+  "id": "src:bailey-1983",
+  "type": "scholarly-book",
+  "title": "The Mythology of Brahmā",
+  "author": "Greg Bailey",
+  "year": "1983",
+  "publisher": "Oxford University Press, Delhi",
+  "agent": "purana"
+ },
+ {
+  "id": "src:doniger-1973",
+  "type": "scholarly-book",
+  "title": "Asceticism and Eroticism in the Mythology of Śiva",
+  "author": "Wendy Doniger O'Flaherty",
+  "year": "1973",
+  "publisher": "Oxford University Press",
+  "agent": "purana"
+ },
+ {
+  "id": "src:gonda-1954",
+  "type": "scholarly-book",
+  "title": "Aspects of Early Viṣṇuism",
+  "author": "J. Gonda",
+  "year": "1954",
+  "publisher": "N. V. A. Oosthoek, Utrecht",
+  "agent": "purana"
+ },
+ {
+  "id": "src:rao-1914",
+  "type": "scholarly-book",
+  "title": "Elements of Hindu Iconography (2 vols. in 4 parts)",
+  "author": "T. A. Gopinatha Rao",
+  "year": "1914–1916",
+  "publisher": "Law Printing House, Madras",
+  "license": "public domain",
+  "agent": "purana"
+ },
+ {
+  "id": "src:banerjea-1956",
+  "type": "scholarly-book",
+  "title": "The Development of Hindu Iconography (2nd ed.)",
+  "author": "J. N. Banerjea",
+  "year": "1956",
+  "publisher": "University of Calcutta",
+  "agent": "purana"
+ },
+ {
+  "id": "src:clothey-1978",
+  "type": "scholarly-book",
+  "title": "The Many Faces of Murukan: The History and Meaning of a South Indian God",
+  "author": "Fred W. Clothey",
+  "year": "1978",
+  "publisher": "Mouton",
+  "agent": "purana"
+ },
+ {
+  "id": "src:shukla-sarma-1976",
+  "type": "primary-text",
+  "title": "Āryabhaṭīya of Āryabhaṭa (critical edition with translation and notes)",
+  "author": "K. S. Shukla and K. V. Sarma",
+  "year": "1976",
+  "publisher": "Indian National Science Academy, New Delhi",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_AryabhaTa-AryabhaTIya.txt",
+  "urlChecked": true,
+  "notes": "GRETIL e-text based on Shukla's edition.",
+  "agent": "purana"
+ },
+ {
+  "id": "src:jena-1987",
+  "type": "primary-text",
+  "title": "The Narasiṃha Purāṇam",
+  "author": "Siddheswar Jena (ed.)",
+  "year": "1987",
+  "publisher": "Nag Publishers, Delhi",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_narasiMhapurANa.txt",
+  "urlChecked": true,
+  "agent": "purana"
+ },
+ {
+  "id": "src:gupta-vamana-1967",
+  "type": "primary-text",
+  "title": "The Vāmana Purāṇa: Critical Edition",
+  "author": "Anand Swarup Gupta (ed.)",
+  "year": "1967",
+  "publisher": "All India Kashiraj Trust, Varanasi",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_vAmanapurANa1-69.txt",
+  "urlChecked": true,
+  "agent": "purana"
+ }
+]

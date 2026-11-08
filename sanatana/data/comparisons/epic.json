@@ -1,0 +1,833 @@
+[
+ {
+  "id": "cmp:krishna-portrayal",
+  "title": "Kṛṣṇa across the Mahābhārata, Gītā, Harivaṃśa, Viṣṇu Purāṇa and Bhāgavata Purāṇa",
+  "subject": "char:krishna",
+  "question": "How is Kṛṣṇa presented — hero, partial descent, or the supreme Lord himself — and how much of his cowherd childhood is told?",
+  "rows": [
+   {
+    "text": "text:mahabharata",
+    "locator": "MBh (CE) 1.61.90; 1.189.31; 2.38.4–9; 5.129; 16.5.19–20",
+    "statement": "A Vṛṣṇi prince, ally and charioteer of the Pāṇḍavas, called a portion (aṃśa) of Nārāyaṇa (1.61.90) and born from Nārāyaṇa’s black hair (1.189.31). He reveals a cosmic form at the Kaurava court (5.129) and dies from a hunter’s arrow (16.5). His childhood exploits (Pūtanā, Govardhana) are only alluded to, in Śiśupāla’s mocking speech (2.38.4–9).",
+    "sources": [
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 1.61.90",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
+     },
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 1.189.31",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
+     },
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 2.38.4–9",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_02_u.htm"
+     },
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 5.129.1–12",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_05_u.htm"
+     },
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 16.5.19–20",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_16_u.htm"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:bhagavad-gita",
+    "locator": "MBh (CE) 6.26.7–8 (BhG 4.7–8); 6.33 (BhG 11)",
+    "statement": "Kṛṣṇa speaks as the Lord who “whenever dharma declines” takes birth age after age to protect the good (6.26.7–8) and shows Arjuna his universal form (6.33). No childhood narrative.",
+    "sources": [
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 6.26.7–8",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "quote": "yadā yadā hi dharmasya glānir bhavati bhārata",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_06_u.htm"
+     },
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 6.33.5–16",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_06_u.htm"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:harivamsha",
+    "locator": "HV (CE) 46–48; 55–56; 61–63; 76; 85–86",
+    "statement": "Viṣṇu resolves to descend; Kṛṣṇa is born to Devakī as Yaśodā bears a daughter (48.11), grows up in Vraja, subdues Kāliya (55–56), lifts Govardhana (61–62), sports at night with the cowherd women (63.24–35), kills Kaṃsa (76) and founds Dvārakā (85–86): the first connected childhood narrative.",
+    "sources": [
+     {
+      "source": "src:gretil-hv-ce",
+      "locator": "HV (CE) 48.11",
+      "edition": "Vaidya Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+     },
+     {
+      "source": "src:gretil-hv-ce",
+      "locator": "HV (CE) 55–56",
+      "edition": "Vaidya Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+     },
+     {
+      "source": "src:gretil-hv-ce",
+      "locator": "HV (CE) 61.29–58",
+      "edition": "Vaidya Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+     },
+     {
+      "source": "src:gretil-hv-ce",
+      "locator": "HV (CE) 63.24–35",
+      "edition": "Vaidya Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+     },
+     {
+      "source": "src:gretil-hv-ce",
+      "locator": "HV (CE) 76.35–37",
+      "edition": "Vaidya Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+     },
+     {
+      "source": "src:gretil-hv-ce",
+      "locator": "HV (CE) 85.35–36",
+      "edition": "Vaidya Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+     },
+     {
+      "source": "src:matchett-2001"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:vishnu-purana",
+    "locator": "ViP 5.1.60–64; 5.3; 5.11; 5.13.15–48; 5.20",
+    "statement": "Viṣṇu plucks a white and a black hair, which become Balarāma and Kṛṣṇa (5.1.60–64: “this eighth embryo will be my hair”); the life of Kṛṣṇa follows the Harivaṃśa closely — birth (5.3), Govardhana (5.11), the night with the gopīs (5.13.15–48), Kaṃsa’s death (5.20).",
+    "sources": [
+     {
+      "source": "src:gretil-vip-pathak",
+      "locator": "ViP 5.1.60–64",
+      "edition": "Pathak Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+     },
+     {
+      "source": "src:gretil-vip-pathak",
+      "locator": "ViP 5.3.1–2",
+      "edition": "Pathak Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+     },
+     {
+      "source": "src:gretil-vip-pathak",
+      "locator": "ViP 5.13.15–48",
+      "edition": "Pathak Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+     },
+     {
+      "source": "src:gretil-vip-pathak",
+      "locator": "ViP 5.20.73",
+      "edition": "Pathak Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+     },
+     {
+      "source": "src:wilson-vp",
+      "locator": "Book V"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:bhagavata-purana",
+    "locator": "BhP 1.3.28; 2.7.26; 10.3.8; 10.25.19; 10.29.1–10.33",
+    "statement": "After listing the descents, it declares “these are portions and parts of the Puruṣa, but Kṛṣṇa is the Lord himself” (1.3.28), though 2.7.26 still speaks of him appearing with a portion as “white-and-black-haired”. Book 10 greatly expands the childhood, culminating in the rāsa with the gopīs (10.29–33).",
+    "sources": [
+     {
+      "source": "src:gretil-bhp-etext",
+      "locator": "BhP 1.3.28",
+      "quote": "ete cāṃśakalāḥ puṃsaḥ kṛṣṇas tu bhagavān svayam",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+     },
+     {
+      "source": "src:gretil-bhp-etext",
+      "locator": "BhP 2.7.26",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+     },
+     {
+      "source": "src:gretil-bhp-etext",
+      "locator": "BhP 10.3.8",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+     },
+     {
+      "source": "src:gretil-bhp-etext",
+      "locator": "BhP 10.25.19",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+     },
+     {
+      "source": "src:gretil-bhp-etext",
+      "locator": "BhP 10.29.1",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+     },
+     {
+      "source": "src:bryant-2007"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "agent": "epic",
+  "note": "The “hair” motif (MBh 1.189.31; ViP 5.1.60; BhP 2.7.26) and the Bhāgavata’s “bhagavān svayam” (1.3.28) are the textual poles of the later debate on whether Kṛṣṇa is an avatāra of Viṣṇu or their source (Gauḍīya view). See Matchett 2001."
+ },
+ {
+  "id": "cmp:rama-story-vr-vs-ramopakhyana",
+  "title": "The Rāma story in Vālmīki and in the Mahābhārata’s Rāmopākhyāna",
+  "subject": "char:rama",
+  "question": "Which parts of the Rāma story does each version tell, and how do they differ?",
+  "rows": [
+   {
+    "text": "text:valmiki-ramayana",
+    "locator": "VR (CE) 1–7",
+    "statement": "Seven books: frame with Vālmīki, Nārada and the krauñca (1.1–4); births as portions of Viṣṇu (1.17); Viśvāmitra, Tāṭakā, Ahalyā, the bow and the four weddings (1.24–72); Paraśurāma (1.73–75); exile (Book 2); abduction (3.40–49); vānara alliance and Vālin (Book 4); Hanumān in Laṅkā (Book 5); war, fire ordeal and Brahmā’s hymn (6.103–106); consecration (6.116); Rāvaṇa’s back-story, Hanumān’s childhood, banishment, Śambūka, the twins and Sītā’s return to the earth (Book 7).",
+    "sources": [
+     {
+      "source": "src:gretil-vr-ce",
+      "locator": "VR (CE) 1.1–7.100",
+      "edition": "Baroda Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
+     },
+     {
+      "source": "src:goldman-vr",
+      "locator": "vols. 1–7"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:ramopakhyana",
+    "locator": "MBh (CE) 3.257–275",
+    "statement": "Told by Mārkaṇḍeya to console Yudhiṣṭhira. Opens with Rāvaṇa’s Paulastya genealogy and boon (3.258–259); Brahmā says Viṣṇu has descended and has the gods beget monkey allies, and sends the gandharvī Dundubhī as Mantharā (3.260). Omits the Viśvāmitra episodes, Ahalyā, the bow contest and the marriages (Sītā is simply Janaka’s daughter made by Tvaṣṭṛ, 3.258.9); compresses the exile; Lakṣmaṇa kills Kumbhakarṇa (3.271.16) and Indrajit (3.273); after Rāvaṇa’s death Sītā is vindicated by divine testimony without a fire-entry (3.275.10–36). No Uttarakāṇḍa material: no banishment, no twins.",
+    "sources": [
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 3.257–275",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm"
+     },
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 3.258.9",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm"
+     },
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 3.260.5–15",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm"
+     },
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 3.271.16",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm"
+     },
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 3.275.10–36",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "agent": "epic",
+  "note": "Whether the Rāmopākhyāna abridges Vālmīki (majority view) or preserves an older/independent telling is unresolved; see assertion text:ramopakhyana DERIVED_FROM text:valmiki-ramayana."
+ },
+ {
+  "id": "cmp:sita-birth",
+  "title": "Sītā’s birth",
+  "subject": "char:sita",
+  "question": "How was Sītā born and whose daughter is she?",
+  "rows": [
+   {
+    "text": "text:valmiki-ramayana",
+    "locator": "VR (CE) 1.65.14, 27",
+    "statement": "Janaka found her rising from the furrow as he ploughed a field and named her Sītā; she is “not born of a womb” (ayonijā).",
+    "sources": [
+     {
+      "source": "src:gretil-vr-ce",
+      "locator": "VR (CE) 1.65.14",
+      "edition": "Baroda Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
+     },
+     {
+      "source": "src:gretil-vr-ce",
+      "locator": "VR (CE) 1.65.27",
+      "edition": "Baroda Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:valmiki-ramayana",
+    "locator": "VR (CE) 7.17.31",
+    "statement": "The Uttarakāṇḍa adds that she is the ascetic Vedavatī, reborn in the Tretā age to destroy Rāvaṇa.",
+    "sources": [
+     {
+      "source": "src:gretil-vr-ce",
+      "locator": "VR (CE) 7.17.31",
+      "edition": "Baroda Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:ramopakhyana",
+    "locator": "MBh (CE) 3.258.9",
+    "statement": "“Janaka was king of Videha; Sītā was his daughter (ātmajā), whom Tvaṣṭṛ himself fashioned to be Rāma’s beloved queen.” No furrow-birth.",
+    "sources": [
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 3.258.9",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:paumacariya",
+    "locator": "Paümacariya (Vimalasūri), coarse",
+    "statement": "In the Jain telling Sītā is born to Janaka and his queen as twin of Bhāmaṇḍala (recall; not checked against the text).",
+    "sources": [
+     {
+      "source": "src:richman-1991"
+     },
+     {
+      "source": "src:ramanujan-1991"
+     }
+    ],
+    "status": "recall"
+   }
+  ],
+  "agent": "epic"
+ },
+ {
+  "id": "cmp:sita-ordeal-banishment",
+  "title": "Sītā’s ordeal and banishment",
+  "subject": "char:sita",
+  "question": "After Rāvaṇa’s death, how is Sītā’s fidelity tested, and is she later banished?",
+  "rows": [
+   {
+    "text": "text:valmiki-ramayana",
+    "locator": "VR (CE) 6.103–106",
+    "statement": "Rāma publicly repudiates her; she has Lakṣmaṇa build a pyre and enters the fire calling Agni to witness (6.104.18–26); Brahmā hymns Rāma as Nārāyaṇa and Sītā as Lakṣmī (6.105); Agni returns her unharmed (6.106.1–3) and Rāma accepts her.",
+    "sources": [
+     {
+      "source": "src:gretil-vr-ce",
+      "locator": "VR (CE) 6.104.18–26",
+      "edition": "Baroda Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
+     },
+     {
+      "source": "src:gretil-vr-ce",
+      "locator": "VR (CE) 6.105.12–25",
+      "edition": "Baroda Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
+     },
+     {
+      "source": "src:gretil-vr-ce",
+      "locator": "VR (CE) 6.106.1–3",
+      "edition": "Baroda Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:valmiki-ramayana",
+    "locator": "VR (CE) 7.42–47; 7.58; 7.88",
+    "statement": "Uttarakāṇḍa: because of citizens’ gossip (7.44), Rāma has Lakṣmaṇa leave the pregnant Sītā near Vālmīki’s hermitage (7.46–47); she bears Lava and Kuśa (7.58); asked for a fresh oath at the horse sacrifice, she calls on the earth goddess Mādhavī, who takes her down on a throne (7.88.10–14).",
+    "sources": [
+     {
+      "source": "src:gretil-vr-ce",
+      "locator": "VR (CE) 7.44.3–13",
+      "edition": "Baroda Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
+     },
+     {
+      "source": "src:gretil-vr-ce",
+      "locator": "VR (CE) 7.46–47",
+      "edition": "Baroda Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
+     },
+     {
+      "source": "src:gretil-vr-ce",
+      "locator": "VR (CE) 7.58.1",
+      "edition": "Baroda Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
+     },
+     {
+      "source": "src:gretil-vr-ce",
+      "locator": "VR (CE) 7.88.10–14",
+      "edition": "Baroda Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:ramopakhyana",
+    "locator": "MBh (CE) 3.275.10–36",
+    "statement": "Rāma tells Sītā to go, unwilling to take back a woman who lived in another’s house; she swears by the elements; Vāyu, Agni and Varuṇa declare her innocent, Brahmā reveals that Nalakūbara’s curse had protected her, and Daśaratha appears. No fire-entry; no banishment.",
+    "sources": [
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 3.275.10–36",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:adhyatma-ramayana",
+    "locator": "Adhyātma Rāmāyaṇa, Araṇya- and Yuddhakāṇḍa (coarse)",
+    "statement": "The real Sītā is placed in Agni’s keeping before the abduction and a “shadow” (māyā) Sītā is carried off; the fire ordeal restores the real Sītā (recall; a motif taken up by Tulsīdās).",
+    "sources": [
+     {
+      "source": "src:richman-1991"
+     },
+     {
+      "source": "src:lutgendorf-1991"
+     }
+    ],
+    "status": "recall"
+   },
+   {
+    "text": "text:kamba-ramayanam",
+    "locator": "Irāmāvatāram, Yuttha Kāṇṭam (coarse)",
+    "statement": "Kampaṉ’s poem ends with the coronation; the Uttarakāṇḍa banishment is not part of his work (later supplements exist) (recall).",
+    "sources": [
+     {
+      "source": "src:richman-1991"
+     }
+    ],
+    "status": "recall"
+   }
+  ],
+  "agent": "epic",
+  "note": "Unreconciled: the fire-entry is Vālmīki-specific among the Sanskrit epic tellings; the banishment is confined to the Uttarakāṇḍa."
+ },
+ {
+  "id": "cmp:kumbhakarna-slayer",
+  "title": "Who kills Kumbhakarṇa?",
+  "subject": "char:kumbhakarna",
+  "question": "Who kills Rāvaṇa’s brother Kumbhakarṇa?",
+  "rows": [
+   {
+    "text": "text:valmiki-ramayana",
+    "locator": "VR (CE) 6.55.128–129",
+    "statement": "Rāma kills him (“having killed Kumbhakarṇa … Bharata’s elder brother rejoiced”).",
+    "sources": [
+     {
+      "source": "src:gretil-vr-ce",
+      "locator": "VR (CE) 6.55.128–129",
+      "edition": "Baroda Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:ramopakhyana",
+    "locator": "MBh (CE) 3.271.10–16",
+    "statement": "Lakṣmaṇa burns him with the Brahmā weapon (“taṃ brahmāstreṇa saumitrir dadāha”).",
+    "sources": [
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 3.271.16",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "agent": "epic"
+ },
+ {
+  "id": "cmp:karna-parentage",
+  "title": "Karṇa’s parentage and status across the parvans",
+  "subject": "char:karna",
+  "question": "How do different parts of the Mahābhārata tell of Karṇa’s birth and social status?",
+  "rows": [
+   {
+    "text": "psg:mbh-adiparvan",
+    "locator": "MBh (CE) 1.61.89; 1.104.8–14",
+    "statement": "The aṃśāvataraṇa makes him “a portion of Divākara” (1.61.89). The maiden Kuntī invokes the Sun with Durvāsas’s mantra, bears a son with armour and earrings, abandons him, and “the husband of Rādhā” takes him up (1.104.8–14).",
+    "sources": [
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 1.61.89",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
+     },
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 1.104.8–14",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "psg:mbh-adiparvan",
+    "locator": "MBh (CE) 1.126.30–35; 1.127.5–7",
+    "statement": "At the tournament Kṛpa asks his mother, father and lineage; Duryodhana makes him king of Aṅga; when Adhiratha arrives Bhīma calls him a sūta’s son unfit for Aṅga; Kuntī secretly recognises him (1.127.22).",
+    "sources": [
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 1.126.30–35",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
+     },
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 1.127.5–7",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
+     },
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 1.127.22",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "psg:mbh-karna-kundala-harana",
+    "locator": "MBh (CE) 3.284–294",
+    "statement": "A long retelling: Sūrya warns him in a dream; Kuntī’s boon from Durvāsas; the basket set adrift on the Aśvanadī that drifts to the Carmaṇvatī, Yamunā and Gaṅgā (3.292.6–26); the childless Rādhā and Adhiratha adopt him (3.293); he gives Indra his armour and earrings for the spear (3.294).",
+    "sources": [
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 3.292.6–26",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm"
+     },
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 3.293.2–9",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm"
+     },
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 3.294.20–21",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "psg:mbh-udyogaparvan",
+    "locator": "MBh (CE) 5.138.8–27; 5.142–144",
+    "statement": "Kṛṣṇa tells him that a kānīna son belongs to the mother’s husband, so “by dharma you are Pāṇḍu’s son” and the eldest Pāṇḍava, and offers him the throne (5.138.8–9, 11–27); Kuntī asks him to join his brothers and he promises to spare all but Arjuna (5.142–144).",
+    "sources": [
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 5.138.8–9",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_05_u.htm"
+     },
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 5.138.11–27",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_05_u.htm"
+     },
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 5.142–144",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_05_u.htm"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "psg:mbh-striparvan",
+    "locator": "MBh (CE) 11.27",
+    "statement": "After the war Kuntī reveals that Karṇa was her son; the Pāṇḍavas mourn him.",
+    "sources": [
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 11.27.12–19",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_11_u.htm"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "psg:mbh-shantiparvan",
+    "locator": "MBh (CE) 12.1–6",
+    "statement": "Yudhiṣṭhira grieves for his “elder brother Karṇa” (12.1.37); Nārada tells how Karṇa, posing as a Bhārgava brahmin, studied under Rāma Jāmadagnya and was cursed by him and by a brahmin (12.2–3); Yudhiṣṭhira curses all women never to keep a secret (12.6.10).",
+    "sources": [
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 12.1.37",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_12_u.htm"
+     },
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 12.2.14–16",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_12_u.htm"
+     },
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 12.6.10",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_12_u.htm"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "psg:mbh-ashramavasikaparvan",
+    "locator": "MBh (CE) 15.38.14",
+    "statement": "Kuntī confesses to Vyāsa that she cast the secretly born child into the water.",
+    "sources": [
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 15.38.14",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_15_u.htm"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "agent": "epic",
+  "note": "Unreconciled: “sūtaputra” status (Ādi) versus legal Pāṇḍava status argued by Kṛṣṇa (Udyoga); McGrath (2004) discusses Karṇa as the epic’s alternative hero."
+ },
+ {
+  "id": "cmp:draupadi-polyandry",
+  "title": "Draupadī’s five husbands: the justifications in the Ādiparvan",
+  "subject": "char:draupadi",
+  "question": "What reasons does the Mahābhārata itself give for Draupadī’s marriage to all five Pāṇḍavas?",
+  "rows": [
+   {
+    "text": "psg:mbh-adiparvan",
+    "locator": "MBh (CE) 1.182.2–4",
+    "statement": "Kuntī, not seeing what her sons have brought, tells them to “enjoy it together”, and her word must be kept.",
+    "sources": [
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 1.182.2–4",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "psg:mbh-adiparvan",
+    "locator": "MBh (CE) 1.188.7–12",
+    "statement": "Objection within the text: Drupada calls it adharma, contrary to world and Veda; Dhṛṣṭadyumna cannot decide because of the subtlety of dharma.",
+    "sources": [
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 1.188.7–12",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "psg:mbh-adiparvan",
+    "locator": "MBh (CE) 1.188.13–16",
+    "statement": "Yudhiṣṭhira cites the Purāṇic precedent of Jaṭilā Gautamī, wife of seven sages, and the authority of the mother’s (guru’s) word. (A second precedent, Vārkṣī wife of the ten Pracetas, appears only in star passage *1910 after 1.188.14, not in the constituted text.)",
+    "sources": [
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 1.188.13–16",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
+     },
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 1.188.14 *1910",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "psg:mbh-panchendra-upakhyana",
+    "locator": "MBh (CE) 1.189.1–40",
+    "statement": "Vyāsa privately tells Drupada that the Pāṇḍavas are five former Indras condemned by Śiva to human birth, and Draupadī is Śrī destined to be their common wife; he grants Drupada divine sight to see them.",
+    "sources": [
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 1.189.1–40",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "psg:mbh-panchendra-upakhyana",
+    "locator": "MBh (CE) 1.189.41–49; cf. 1.157.6–16",
+    "statement": "A sage’s daughter, unable to find a husband, asked Śiva five times for a husband and was granted five in her next birth — told again by Vyāsa to the Pāṇḍavas at Ekacakrā (1.157.6–16).",
+    "sources": [
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 1.189.41–49",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
+     },
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 1.157.6–16",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "psg:mbh-amshavatarana",
+    "locator": "MBh (CE) 1.61.95–97",
+    "statement": "The catalogue of incarnations says a part of Śrī was born in Drupada’s line from the altar, to captivate five men.",
+    "sources": [
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 1.61.95–97",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "agent": "epic",
+  "note": "Five distinct justifications (maternal command, precedent, divine plan, karmic boon, incarnation) stand side by side without harmonisation; Hiltebeitel (2001) reads them as a deliberate layering."
+ },
+ {
+  "id": "cmp:vidura-origin",
+  "title": "Vidura’s origin: internal variation",
+  "subject": "char:vidura",
+  "question": "Whose incarnation or son is Vidura?",
+  "rows": [
+   {
+    "text": "psg:mbh-adiparvan",
+    "locator": "MBh (CE) 1.100.25–28",
+    "statement": "Son of Vyāsa by a servant woman, “Dharma in the form of Vidura, through the curse of that great-souled one”.",
+    "sources": [
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 1.100.25–28",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "psg:mbh-adiparvan",
+    "locator": "MBh (CE) 1.101.2–21",
+    "statement": "Explains the curse: Aṇī-Māṇḍavya, impaled though innocent, curses Dharma to be born of a śūdra woman.",
+    "sources": [
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 1.101.2–21",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "psg:mbh-amshavatarana",
+    "locator": "MBh (CE) 1.61.79",
+    "statement": "The aṃśāvataraṇa says: “know Vidura, best of the wise, born in this world as … the son of Atri”, without mention of Dharma.",
+    "sources": [
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 1.61.79",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "agent": "epic"
+ },
+ {
+  "id": "cmp:draupadi-garment",
+  "title": "Who restores Draupadī’s garment?",
+  "subject": "narr:draupadi-humiliation",
+  "question": "When Duḥśāsana pulls at Draupadī’s garment in the assembly hall, what makes it endless?",
+  "rows": [
+   {
+    "text": "psg:mbh-sabhaparvan",
+    "locator": "MBh (CE) 2.61.40–41 (constituted text)",
+    "statement": "No agent is named: as he pulled, “another garment of the same kind appeared, many times over” (tadrūpam aparaṃ vastraṃ prādurāsīd anekaśaḥ).",
+    "sources": [
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 2.61.41",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "quote": "tadrūpam aparaṃ vastraṃ prādurāsīd anekaśaḥ",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_02_u.htm"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "psg:mbh-sabhaparvan",
+    "locator": "MBh (CE) apparatus, star passages *542–*547 after 2.61.40",
+    "statement": "Many manuscripts insert Draupadī’s prayer to Kṛṣṇa — “govinda dvārakāvāsin kṛṣṇa gopījanapriya …” — so that Kṛṣṇa (or Dharma) supplies the garments; the vulgate (Ganguli’s Sabhā Parva) follows this.",
+    "sources": [
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 2.61.40 *542–*547",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_02_u.htm"
+     },
+     {
+      "source": "src:ganguli-mbh",
+      "locator": "Sabhā Parva, Dyūta sub-parvan (vulgate; section number not checked)",
+      "edition": "Vulgate (Ganguli translation numbering)"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "agent": "epic",
+  "note": "A clear case where the Critical Edition’s constituted text and the popular/vulgate tradition differ on a famous detail."
+ }
+]
