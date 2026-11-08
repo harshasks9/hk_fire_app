@@ -514,8 +514,8 @@
    },
    {
     "text": "text:brahmavaivarta-purana",
-    "locator": "Kṛṣṇajanma-khaṇḍa and Prakṛti-khaṇḍa",
-    "statement": "Rādhā is the supreme goddess, mūlaprakṛti and Kṛṣṇa’s eternal śakti in Goloka; the text also narrates her marriage to Kṛṣṇa performed by Brahmā.",
+    "locator": "Brahma-khaṇḍa, Prakṛti-khaṇḍa and Kṛṣṇajanma-khaṇḍa (chapters not checked)",
+    "statement": "Rādhā is the main goddess, inseparable from Kṛṣṇa and dwelling with him in Goloka, the personification of mūlaprakṛti; in the Prakṛti-khaṇḍa she heads the five forms of Prakṛti (Rādhā, Durgā, Lakṣmī, Sarasvatī, Sāvitrī), and “every insult to a woman is an offence against Rādhā”. (Popular summaries add that Brahmā performs her marriage to Kṛṣṇa — not checked here.)",
     "sources": [
      {
       "source": "src:brown-1974"
@@ -525,7 +525,7 @@
       "url": "https://en.wikipedia.org/wiki/Brahma_Vaivarta_Purana"
      }
     ],
-    "status": "recall"
+    "status": "reference-checked"
    },
    {
     "text": "text:chaitanya-charitamrita",

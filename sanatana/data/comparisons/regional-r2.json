@@ -82,22 +82,9 @@
      }
     ],
     "status": "verified-online"
-   },
-   {
-    "text": "text:krittivasi-ramayana",
-    "locator": "—",
-    "statement": "(No Dīpāvalī reason.) Bengal keeps the new-moon night as Kālī Pūjā; Kane notes that in Bengal Kālī is worshipped on this day.",
-    "sources": [
-     {
-      "source": "src:kane-hds-5-1",
-      "locator": "vol. V pt. 1, p. 200",
-      "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
-     }
-    ],
-    "status": "reference-checked"
    }
   ],
-  "note": "Kane (1958, p. 207) also records B. A. Gupte’s list of legends attached to the days of Dīvālī — the killing of Narakāsura, Bali’s loss of his empire, and the crowning of Rāma and of Vikrama — and the Jain observance of Mahāvīra’s nirvāṇa is kept on the same night (Jinasena’s Harivaṃśapurāṇa of 783 CE is usually cited; not checked here). The Nīlamata Purāṇa (vv. 505–510) calls the new-moon night Sukhasuptikā. The rows show that the north Indian “return of Rāma” explanation is not found in the Rāma texts checked, while the Naraka, Lakṣmī and Bali reasons are found together in the Sanskrit festival literature. The Kṛttivāsa row is a placeholder for Bengal and is not a statement about that text.",
+  "note": "Kane (1958, p. 207) also records B. A. Gupte’s list of legends attached to the days of Dīvālī — the killing of Narakāsura, Bali’s loss of his empire, and the crowning of Rāma and of Vikrama — and the Jain observance of Mahāvīra’s nirvāṇa is kept on the same night (Jinasena’s Harivaṃśapurāṇa of 783 CE is usually cited; not checked here). The Nīlamata Purāṇa (vv. 505–510) calls the new-moon night Sukhasuptikā. The rows show that the north Indian “return of Rāma” explanation is not found in the Rāma texts checked, while the Naraka, Lakṣmī and Bali reasons are found together in the Sanskrit festival literature. In Bengal the same new-moon night is Kālī Pūjā (Kane, p. 200).",
   "agent": "regional"
  },
  {
@@ -281,16 +268,16 @@
    },
    {
     "text": "text:kalika-purana",
-    "locator": "chapters on the Durgā-pūjā (not checked)",
-    "statement": "The Kālikā prescribes the great autumn worship of Durgā and its animal sacrifices; Kane’s summary of the Purāṇic material connects the autumn worship with the gods’ aid to Rāma, Rāvaṇa being killed on a day of the bright half of Āśvina.",
+    "locator": "Kālikā 63.18 (as cited by Kane)",
+    "statement": "The Kālikā prescribes the great autumn festival of Durgā — whoever neglects it out of laziness or hatred has all his desires frustrated by the angry Goddess (63.18) — and lists the animals fit for sacrifice to Durgā; it is a principal Purāṇic authority for the Bengal rite. Whether it ties the autumn worship to Rāma was not checked.",
     "sources": [
      {
       "source": "src:kane-hds-5-1",
-      "locator": "vol. V pt. 1, ch. IX, pp. 156–161",
+      "locator": "vol. V pt. 1, pp. 156, 164 (Kālikā 63.18 and the list of sacrificial animals)",
       "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
      }
     ],
-    "status": "reference-checked"
+    "status": "verified-online"
    },
    {
     "text": "text:valmiki-ramayana",

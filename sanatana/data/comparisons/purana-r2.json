@@ -130,7 +130,7 @@
     "status": "verified-online"
    }
   ],
-  "note": "The critical Harivaṃśa's 'from the ocean' reading versus the Sun-gift in the Viṣṇu, Brahma and Bhāgavata Purāṇas suggests the solar origin entered with later redaction; the HV vulgate includes it.",
+  "note": "The critical Harivaṃśa's 'from the ocean' reading versus the Sun-gift in the Viṣṇu, Brahma and Bhāgavata Purāṇas suggests the solar origin entered the story in later redaction; part of the Harivaṃśa manuscript tradition carries the Sun episode as an inserted passage.",
   "agent": "purana"
  },
  {
@@ -221,13 +221,14 @@
    {
     "text": "text:matsya-purana",
     "locator": "MatsP 129–140",
-    "statement": "Maya is the protagonist, builder and war-leader; Keśava in bull form drinks the nectar pond (136.63–65) and Śiva's arrow burns the cities; Maya's house survives in the ocean (140.75–78).",
+    "statement": "Maya is the protagonist, builder and war-leader; Keśava in bull form drinks the nectar pond (136.63–65); Nandin kills Vidyunmālin (140.38); Śiva's arrow burns the cities; Maya's house survives in the ocean (140.75–78).",
     "sources": [
      {
       "source": "src:gretil",
       "locator": "MatsP 129–140",
       "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
-      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt",
+      "quote": "nandinā sādite daitye vidyunmālau hate mayaḥ"
      }
     ],
     "status": "verified-online"
@@ -275,7 +276,7 @@
     "status": "verified-online"
    }
   ],
-  "note": "The motif of Viṣṇu destroying the demons' religion appears in several Purāṇas in Buddhist or Jain dress (cf. the 'māyāmoha' of ViP 3.17–18); it reflects sectarian polemic, not a historical event.",
+  "note": "The motif of Viṣṇu destroying the demons' religion appears in several Purāṇas in Buddhist or Jain dress (cf. the 'Māyāmoha' whom Viṣṇu sends to the daityas in ViP 3.17.41–3.18.32, who preaches an 'Arhat' doctrine and appears red-robed); it reflects sectarian polemic, not a historical event.",
   "agent": "purana"
  },
  {
@@ -848,6 +849,46 @@
     "status": "verified-online"
    }
   ],
+  "agent": "purana"
+ },
+ {
+  "id": "cmp:lunar-line-puru-dushyanta",
+  "title": "Pūru to Duṣyanta in the Viṣṇu and Bhāgavata Purāṇas",
+  "subject": "lin:paurava",
+  "question": "How does each text give the Paurava line from Pūru to Duṣyanta, father of Bharata?",
+  "rows": [
+   {
+    "text": "text:vishnu-purana",
+    "locator": "ViP 4.19.1",
+    "statement": "Pūru → Janamejaya → Pracinvān → Pravīra → Manasyu → Abhayada → Sudyu → Bahugava → Saṃyāti → Ahaṃyāti → Raudrāśva (ten sons, Ṛteyu and others) → Ṛteyu → Rantināra → Sumati, Apratiratha, Dhruva; Apratiratha → Kaṇva → Medhātithi (ancestor of the Kaṇvāyana brāhmaṇas); Apratiratha's other son Ailīna → Duṣyanta and three brothers; Duṣyanta → Bharata.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "ViP 4.19.1–2",
+      "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+      "quote": "duṣyantāc cakravartī bharato 'bhavat"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:bhagavata-purana",
+    "locator": "BhP 9.20.2–7",
+    "statement": "Pūru → Janamejaya → Pracinvān → Pravīra → Manusyu → Cārupada → Sudyu → Bahugava → Saṃyāti → Ahaṃyāti → Raudrāśva (ten sons by the apsaras Ghṛtācī) → Ṛteyu → Rantināva → Sumati, Dhruva, Apratiratha; Apratiratha → Kaṇva → Medhātithi; Sumati → Rebhi → Duṣmanta.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "BhP 9.20.2–7",
+      "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt",
+      "quote": "putro 'bhūt sumate rebhir duṣmantas tatsuto mataḥ"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "note": "The texts diverge on Manasyu's son (Abhayada / Cārupada) and on Duṣyanta's father (Ailīna son of Apratiratha / Rebhi son of Sumati). The Mahābhārata's Ādiparvan genealogies (1.89–90) differ again; individual Paurava kings between Pūru and Duṣyanta are not yet separate records in the graph.",
   "agent": "purana"
  },
  {

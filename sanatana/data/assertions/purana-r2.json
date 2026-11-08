@@ -19011,7 +19011,7 @@
  },
  {
   "id": "purana:r2-847",
-  "s": "char:brihadashva",
+  "s": "char:brihadashva-ikshvaku",
   "p": "MEMBER_OF",
   "o": "lin:suryavamsha",
   "qualifiers": {
@@ -20463,7 +20463,7 @@
   "id": "purana:r2-902",
   "s": "char:shravasta",
   "p": "PARENT_OF",
-  "o": "char:brihadashva",
+  "o": "char:brihadashva-ikshvaku",
   "qualifiers": {
    "note": "ViP and BhP agree"
   },
@@ -20489,7 +20489,7 @@
  },
  {
   "id": "purana:r2-903",
-  "s": "char:brihadashva",
+  "s": "char:brihadashva-ikshvaku",
   "p": "PARENT_OF",
   "o": "char:kuvalayashva",
   "qualifiers": {

@@ -1209,13 +1209,24 @@
     "source": "src:wikidata",
     "locator": "P625 coordinate location",
     "url": "https://www.wikidata.org/wiki/Q7881086"
+   },
+   {
+    "source": "src:wikimedia-commons",
+    "locator": "image licence checked on the file page",
+    "url": "https://commons.wikimedia.org/wiki/File:Umananda_Temple_in_Peacock_Island,_Guwahati_01.jpg"
    }
   ],
   "confidence": "medium",
   "status": "reference-checked",
   "agent": "temple",
   "limits": "The 1694 date rests on the Ahom record as summarised in a reference work; the standing building is post-1897. The Kāma legend is local tradition and does not date the site.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Umananda_Temple_in_Peacock_Island%2C_Guwahati_01.jpg/960px-Umananda_Temple_in_Peacock_Island%2C_Guwahati_01.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Umananda_Temple_in_Peacock_Island,_Guwahati_01.jpg",
+   "credit": "Pinakpani (Wikimedia Commons)",
+   "license": "CC BY 4.0"
+  }
  },
  {
   "id": "temple:hayagriva-madhava-hajo",
@@ -1763,13 +1774,24 @@
     "source": "src:wikidata",
     "locator": "P625 coordinate location",
     "url": "https://www.wikidata.org/wiki/Q3630554"
+   },
+   {
+    "source": "src:wikimedia-commons",
+    "locator": "image licence checked on the file page",
+    "url": "https://commons.wikimedia.org/wiki/File:Tungnath_temple.jpg"
    }
   ],
   "confidence": "medium",
   "status": "reference-checked",
   "agent": "temple",
   "limits": "The stone shrine is not securely dated and the Pāṇḍava legend is regional tradition; membership of the Pañca Kedāra does not date the building.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Tungnath_temple.jpg/960px-Tungnath_temple.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Tungnath_temple.jpg",
+   "credit": "Varun Shiv Kapur (Wikimedia Commons)",
+   "license": "CC BY 2.0"
+  }
  },
  {
   "id": "temple:rudranath",
@@ -2079,13 +2101,24 @@
     "source": "src:wikidata",
     "locator": "P625 coordinate location",
     "url": "https://www.wikidata.org/wiki/Q4843233"
+   },
+   {
+    "source": "src:wikimedia-commons",
+    "locator": "image licence checked on the file page",
+    "url": "https://commons.wikimedia.org/wiki/File:BaijNath.jpg"
    }
   ],
   "confidence": "medium",
   "status": "reference-checked",
   "agent": "temple",
   "limits": "The inscriptions date the present temple; tradition that a Śiva temple stood here earlier is not tested here.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/BaijNath.jpg/960px-BaijNath.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:BaijNath.jpg",
+   "credit": "Pdhang (Wikimedia Commons)",
+   "license": "CC BY-SA 3.0"
+  }
  },
  {
   "id": "temple:hidimba-devi-manali",
@@ -2146,13 +2179,24 @@
     "source": "src:wikidata",
     "locator": "P625 coordinate location",
     "url": "https://www.wikidata.org/wiki/Q15223867"
+   },
+   {
+    "source": "src:wikimedia-commons",
+    "locator": "image licence checked on the file page",
+    "url": "https://commons.wikimedia.org/wiki/File:Hidimba_Temple_Manali.jpg"
    }
   ],
   "confidence": "medium",
   "status": "reference-checked",
   "agent": "temple",
   "limits": "The building is dated to 1553; the identification of the goddess with the Mahābhārata’s Hiḍimbā is local tradition (class 6), not evidence about the epic.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Hidimba_Temple_Manali.jpg/960px-Hidimba_Temple_Manali.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Hidimba_Temple_Manali.jpg",
+   "credit": "Kondephy (Wikimedia Commons)",
+   "license": "CC BY-SA 3.0"
+  }
  },
  {
   "id": "temple:bhimakali-sarahan",
@@ -2394,13 +2438,24 @@
     "source": "src:wikidata",
     "locator": "P625 coordinate location",
     "url": "https://www.wikidata.org/wiki/Q19893793"
+   },
+   {
+    "source": "src:wikimedia-commons",
+    "locator": "image licence checked on the file page",
+    "url": "https://commons.wikimedia.org/wiki/File:Masrur_rockcut_temple.jpg"
    }
   ],
   "confidence": "medium",
   "status": "reference-checked",
   "agent": "temple",
   "limits": "No inscription names patron or date; the 8th-century date is stylistic.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Masrur_rockcut_temple.jpg/960px-Masrur_rockcut_temple.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Masrur_rockcut_temple.jpg",
+   "credit": "Akashdeep83 (Wikimedia Commons)",
+   "license": "CC BY-SA 3.0"
+  }
  },
  {
   "id": "place:amarnath-cave",
@@ -2868,13 +2923,24 @@
     "source": "src:wikidata",
     "locator": "P625 coordinate location",
     "url": "https://www.wikidata.org/wiki/Q7488715"
+   },
+   {
+    "source": "src:wikimedia-commons",
+    "locator": "image licence checked on the file page",
+    "url": "https://commons.wikimedia.org/wiki/File:The_Ancient_Shankaracharya_Temple_(Srinagar,_Jammu_and_Kashmir).jpg"
    }
   ],
   "confidence": "medium",
   "status": "reference-checked",
   "agent": "temple",
   "limits": "There is no consensus on the date; the Śaṅkara association is a modern name and tradition.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/The_Ancient_Shankaracharya_Temple_%28Srinagar%2C_Jammu_and_Kashmir%29.jpg/960px-The_Ancient_Shankaracharya_Temple_%28Srinagar%2C_Jammu_and_Kashmir%29.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:The_Ancient_Shankaracharya_Temple_(Srinagar,_Jammu_and_Kashmir).jpg",
+   "credit": "Divya Gupta (Wikimedia Commons)",
+   "license": "CC BY-SA 3.0"
+  }
  },
  {
   "id": "temple:jwalamukhi",
@@ -3264,13 +3330,24 @@
     "source": "src:wikidata",
     "locator": "P625 coordinate location",
     "url": "https://www.wikidata.org/wiki/Q7293002"
+   },
+   {
+    "source": "src:wikimedia-commons",
+    "locator": "image licence checked on the file page",
+    "url": "https://commons.wikimedia.org/wiki/File:Rani_ki_vav_02.jpg"
    }
   ],
   "confidence": "medium",
   "status": "verified-online",
   "agent": "temple",
   "limits": "The queen’s patronage is known from a 14th-century chronicle, not a foundation inscription, and the construction date is disputed; the sculptures attest Vaiṣṇava iconography in 11th-century Gujarat, not any narrative event.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Rani_ki_vav_02.jpg/960px-Rani_ki_vav_02.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Rani_ki_vav_02.jpg",
+   "credit": "Bernard Gagnon (Wikimedia Commons)",
+   "license": "CC BY-SA 3.0"
+  }
  },
  {
   "id": "temple:ambaji",
@@ -3714,13 +3791,24 @@
     "source": "src:wikidata",
     "locator": "P625 coordinate location",
     "url": "https://www.wikidata.org/wiki/Q7504030"
+   },
+   {
+    "source": "src:wikimedia-commons",
+    "locator": "image licence checked on the file page",
+    "url": "https://commons.wikimedia.org/wiki/File:Gateway_To_Temple,_Nathdwara.jpg"
    }
   ],
   "confidence": "medium",
   "status": "reference-checked",
   "agent": "temple",
   "limits": "The 1672 installation is well documented in reference works; the emergence of the image is sectarian tradition.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "image": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Gateway_To_Temple%2C_Nathdwara.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Gateway_To_Temple,_Nathdwara.jpg",
+   "credit": "Papertree (en.wikipedia) (Wikimedia Commons)",
+   "license": "Public domain"
+  }
  },
  {
   "id": "temple:osian-harihara",
@@ -3970,13 +4058,24 @@
     "source": "src:wikidata",
     "locator": "P625 coordinate location",
     "url": "https://www.wikidata.org/wiki/Q12419620"
+   },
+   {
+    "source": "src:wikimedia-commons",
+    "locator": "image licence checked on the file page",
+    "url": "https://commons.wikimedia.org/wiki/File:Kiradu_ke_Mandir_-_Barmer_-_Rajasthan_-_011.jpg"
    }
   ],
   "confidence": "medium",
   "status": "reference-checked",
   "agent": "temple",
   "limits": "The inscriptions show activity at the site in 1153–1178, not necessarily the construction date of each temple.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Kiradu_ke_Mandir_-_Barmer_-_Rajasthan_-_011.jpg/960px-Kiradu_ke_Mandir_-_Barmer_-_Rajasthan_-_011.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Kiradu_ke_Mandir_-_Barmer_-_Rajasthan_-_011.jpg",
+   "credit": "Akshita raina (Wikimedia Commons)",
+   "license": "CC BY-SA 4.0"
+  }
  },
  {
   "id": "temple:galtaji",
@@ -4252,13 +4351,24 @@
     "source": "src:wikidata",
     "locator": "P625 coordinate location",
     "url": "https://www.wikidata.org/wiki/Q7275290"
+   },
+   {
+    "source": "src:wikimedia-commons",
+    "locator": "image licence checked on the file page",
+    "url": "https://commons.wikimedia.org/wiki/File:Vithoba_Pandharpur_temple_chief_gate.jpg"
    }
   ],
   "confidence": "medium",
   "status": "reference-checked",
   "agent": "temple",
   "limits": "Inscriptions date the shrine’s stages from 1189; the Hoysaḷa foundation story is popular tradition and conflicts with the epigraphy.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "image": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Vithoba_Pandharpur_temple_chief_gate.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Vithoba_Pandharpur_temple_chief_gate.jpg",
+   "credit": "Redtigerxyz (Wikimedia Commons)",
+   "license": "CC BY-SA 3.0"
+  }
  },
  {
   "id": "temple:khandoba-jejuri",
@@ -4807,13 +4917,24 @@
     "source": "src:wikidata",
     "locator": "P625 coordinate location",
     "url": "https://www.wikidata.org/wiki/Q6912006"
+   },
+   {
+    "source": "src:wikimedia-commons",
+    "locator": "image licence checked on the file page",
+    "url": "https://commons.wikimedia.org/wiki/File:Morgaon.jpg"
    }
   ],
   "confidence": "medium",
   "status": "reference-checked",
   "agent": "temple",
   "limits": "Building dates are from reference works; the svayambhū image and its legend are temple tradition.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Morgaon.jpg/960px-Morgaon.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Morgaon.jpg",
+   "credit": "Redtigerxyz (Wikimedia Commons)",
+   "license": "CC BY-SA 3.0"
+  }
  },
  {
   "id": "temple:siddhivinayak-siddhatek",
@@ -5551,13 +5672,24 @@
     "source": "src:wikidata",
     "locator": "P625 coordinate location",
     "url": "https://www.wikidata.org/wiki/Q4868834"
+   },
+   {
+    "source": "src:wikimedia-commons",
+    "locator": "image licence checked on the file page",
+    "url": "https://commons.wikimedia.org/wiki/File:Ruins_is_the_new_beautiful.jpg"
    }
   ],
   "confidence": "medium",
   "status": "reference-checked",
   "agent": "temple",
   "limits": "Much of what stands is modern reassembly; individual temple dates are stylistic.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Ruins_is_the_new_beautiful.jpg/960px-Ruins_is_the_new_beautiful.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Ruins_is_the_new_beautiful.jpg",
+   "credit": "Shivaligupta (Wikimedia Commons)",
+   "license": "CC BY-SA 4.0"
+  }
  },
  {
   "id": "temple:chausath-yogini-mitaoli",
@@ -5636,13 +5768,24 @@
     "source": "src:wikidata",
     "locator": "P625 coordinate location",
     "url": "https://www.wikidata.org/wiki/Q20751086"
+   },
+   {
+    "source": "src:wikimedia-commons",
+    "locator": "image licence checked on the file page",
+    "url": "https://commons.wikimedia.org/wiki/File:0121621_Chausath_Yogini_and_Shiva_Temple,_Mitaoli_Madhya_Pradesh.jpg"
    }
   ],
   "confidence": "medium",
   "status": "reference-checked",
   "agent": "temple",
   "limits": "The 1323 inscription and the 11th-century stylistic date are hard to reconcile; the Parliament-House connection is popular speculation.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/0121621_Chausath_Yogini_and_Shiva_Temple%2C_Mitaoli_Madhya_Pradesh.jpg/960px-0121621_Chausath_Yogini_and_Shiva_Temple%2C_Mitaoli_Madhya_Pradesh.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:0121621_Chausath_Yogini_and_Shiva_Temple,_Mitaoli_Madhya_Pradesh.jpg",
+   "credit": "Ms Sarah Welch (Wikimedia Commons)",
+   "license": "CC0"
+  }
  },
  {
   "id": "temple:chausath-yogini-bhedaghat",
@@ -5722,13 +5865,24 @@
     "source": "src:wikidata",
     "locator": "P625 coordinate location",
     "url": "https://www.wikidata.org/wiki/Q17883316"
+   },
+   {
+    "source": "src:wikimedia-commons",
+    "locator": "image licence checked on the file page",
+    "url": "https://commons.wikimedia.org/wiki/File:Chausath_Yogini_temple_Bhedaghat.jpg"
    }
   ],
   "confidence": "medium",
   "status": "reference-checked",
   "agent": "temple",
   "limits": "The attribution to Yuvarāja II is a scholarly inference.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Chausath_Yogini_temple_Bhedaghat.jpg/960px-Chausath_Yogini_temple_Bhedaghat.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Chausath_Yogini_temple_Bhedaghat.jpg",
+   "credit": "Dinesh Sharma (Wikimedia Commons)",
+   "license": "CC BY-SA 3.0"
+  }
  },
  {
   "id": "place:amarkantak",
@@ -6592,13 +6746,24 @@
     "source": "src:wikidata",
     "locator": "P625 coordinate location",
     "url": "https://www.wikidata.org/wiki/Q4848728"
+   },
+   {
+    "source": "src:wikimedia-commons",
+    "locator": "image licence checked on the file page",
+    "url": "https://commons.wikimedia.org/wiki/File:Baitala_Deula_Bhubaneswar_36.jpg"
    }
   ],
   "confidence": "medium",
   "status": "reference-checked",
   "agent": "temple",
   "limits": "Stylistic date; the dynastic attribution is inferred.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Baitala_Deula_Bhubaneswar_36.jpg/960px-Baitala_Deula_Bhubaneswar_36.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Baitala_Deula_Bhubaneswar_36.jpg",
+   "credit": "Prateek Pattanaik (Wikimedia Commons)",
+   "license": "CC BY-SA 4.0"
+  }
  },
  {
   "id": "temple:brahmeswara-bhubaneswar",
@@ -6661,13 +6826,24 @@
     "source": "src:wikidata",
     "locator": "P625 coordinate location",
     "url": "https://www.wikidata.org/wiki/Q4955611"
+   },
+   {
+    "source": "src:wikimedia-commons",
+    "locator": "image licence checked on the file page",
+    "url": "https://commons.wikimedia.org/wiki/File:Brahmeswara_temple_Bhubaneswar_(1).jpg"
    }
   ],
   "confidence": "medium",
   "status": "reference-checked",
   "agent": "temple",
   "limits": "The inscription is known only from records; its exact reading has not been checked here.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Brahmeswara_temple_Bhubaneswar_%281%29.jpg/960px-Brahmeswara_temple_Bhubaneswar_%281%29.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Brahmeswara_temple_Bhubaneswar_(1).jpg",
+   "credit": "Ssriram mt (Wikimedia Commons)",
+   "license": "CC BY-SA 4.0"
+  }
  },
  {
   "id": "temple:rajarani",
@@ -6762,13 +6938,24 @@
     "source": "src:wikidata",
     "locator": "P625 coordinate location",
     "url": "https://www.wikidata.org/wiki/Q6507638"
+   },
+   {
+    "source": "src:wikimedia-commons",
+    "locator": "image licence checked on the file page",
+    "url": "https://commons.wikimedia.org/wiki/File:RajaRani-Bhubaneswar-Odisha-Dsc001.jpg"
    }
   ],
   "confidence": "medium",
   "status": "reference-checked",
   "agent": "temple",
   "limits": "The original dedication (Indreśvara, Śiva) is inferred.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/RajaRani-Bhubaneswar-Odisha-Dsc001.jpg/960px-RajaRani-Bhubaneswar-Odisha-Dsc001.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:RajaRani-Bhubaneswar-Odisha-Dsc001.jpg",
+   "credit": "Chowbeypiali (Wikimedia Commons)",
+   "license": "CC BY-SA 4.0"
+  }
  },
  {
   "id": "temple:ananta-vasudeva",
@@ -7170,13 +7357,24 @@
     "source": "src:wikidata",
     "locator": "P625 coordinate location",
     "url": "https://www.wikidata.org/wiki/Q56153798"
+   },
+   {
+    "source": "src:wikimedia-commons",
+    "locator": "image licence checked on the file page",
+    "url": "https://commons.wikimedia.org/wiki/File:Jod_Bangla_Terracotta_Temple,_Bishnupur,_West_Bengal.jpg"
    }
   ],
   "confidence": "medium",
   "status": "reference-checked",
   "agent": "temple",
   "limits": "Dated by its plaque; the terracottas show narrative imagery, not events.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Jod_Bangla_Terracotta_Temple%2C_Bishnupur%2C_West_Bengal.jpg/960px-Jod_Bangla_Terracotta_Temple%2C_Bishnupur%2C_West_Bengal.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Jod_Bangla_Terracotta_Temple,_Bishnupur,_West_Bengal.jpg",
+   "credit": "Shatarupa Dutta (Wikimedia Commons)",
+   "license": "CC BY-SA 4.0"
+  }
  },
  {
   "id": "temple:shyamrai-bishnupur",
@@ -7240,13 +7438,24 @@
     "source": "src:wikidata",
     "locator": "P625 coordinate location",
     "url": "https://www.wikidata.org/wiki/Q16346744"
+   },
+   {
+    "source": "src:wikimedia-commons",
+    "locator": "image licence checked on the file page",
+    "url": "https://commons.wikimedia.org/wiki/File:Shyam_Rai_Temple,_Bankura.JPG"
    }
   ],
   "confidence": "medium",
   "status": "reference-checked",
   "agent": "temple",
   "limits": "Dated by its plaque.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Shyam_Rai_Temple%2C_Bankura.JPG/960px-Shyam_Rai_Temple%2C_Bankura.JPG",
+   "page": "https://commons.wikimedia.org/wiki/File:Shyam_Rai_Temple,_Bankura.JPG",
+   "credit": "Dr. Indranil Banerjee (Wikimedia Commons)",
+   "license": "CC BY-SA 3.0"
+  }
  },
  {
   "id": "temple:tarapith",
@@ -8349,13 +8558,24 @@
     "source": "src:wikidata",
     "locator": "P625 coordinate location",
     "url": "https://www.wikidata.org/wiki/Q6732769"
+   },
+   {
+    "source": "src:wikimedia-commons",
+    "locator": "image licence checked on the file page",
+    "url": "https://commons.wikimedia.org/wiki/File:Rear_view_showing_lateral_entrances_of_the_Mahadeva_Temple_at_Itagi_in_the_Koppal_district.JPG"
    }
   ],
   "confidence": "medium",
   "status": "reference-checked",
   "agent": "temple",
   "limits": "The inscription dates the building; its reading has not been checked against the edition.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Rear_view_showing_lateral_entrances_of_the_Mahadeva_Temple_at_Itagi_in_the_Koppal_district.JPG/960px-Rear_view_showing_lateral_entrances_of_the_Mahadeva_Temple_at_Itagi_in_the_Koppal_district.JPG",
+   "page": "https://commons.wikimedia.org/wiki/File:Rear_view_showing_lateral_entrances_of_the_Mahadeva_Temple_at_Itagi_in_the_Koppal_district.JPG",
+   "credit": "Dineshkannambadi (Wikimedia Commons)",
+   "license": "CC BY-SA 4.0"
+  }
  },
  {
   "id": "temple:lakshmi-devi-doddagaddavalli",
@@ -8489,13 +8709,24 @@
     "source": "src:wikidata",
     "locator": "P625 coordinate location",
     "url": "https://www.wikidata.org/wiki/Q7918143"
+   },
+   {
+    "source": "src:wikimedia-commons",
+    "locator": "image licence checked on the file page",
+    "url": "https://commons.wikimedia.org/wiki/File:Veerabhadra_Temple_Tower.JPG"
    }
   ],
   "confidence": "medium",
   "status": "reference-checked",
   "agent": "temple",
   "limits": "The murals depict narrative scenes; the Jaṭāyu etymology is folk tradition.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Veerabhadra_Temple_Tower.JPG/960px-Veerabhadra_Temple_Tower.JPG",
+   "page": "https://commons.wikimedia.org/wiki/File:Veerabhadra_Temple_Tower.JPG",
+   "credit": "Magentic Manifestations (Wikimedia Commons)",
+   "license": "CC BY-SA 3.0"
+  }
  },
  {
   "id": "temple:simhachalam",
@@ -8738,13 +8969,24 @@
     "source": "src:wikidata",
     "locator": "P625 coordinate location",
     "url": "https://www.wikidata.org/wiki/Q7797068"
+   },
+   {
+    "source": "src:wikimedia-commons",
+    "locator": "image licence checked on the file page",
+    "url": "https://commons.wikimedia.org/wiki/File:Thousand_Pillar_Temple-Warangal.jpg"
    }
   ],
   "confidence": "medium",
   "status": "reference-checked",
   "agent": "temple",
   "limits": "The 1163 date is from the scholarly literature (recall); the reference gives no year.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Thousand_Pillar_Temple-Warangal.jpg/960px-Thousand_Pillar_Temple-Warangal.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Thousand_Pillar_Temple-Warangal.jpg",
+   "credit": "Gopal Veeranala (Wikimedia Commons)",
+   "license": "CC BY-SA 3.0"
+  }
  },
  {
   "id": "temple:draksharama",
@@ -9203,13 +9445,24 @@
     "source": "src:wikidata",
     "locator": "P625 coordinate location",
     "url": "https://www.wikidata.org/wiki/Q7423098"
+   },
+   {
+    "source": "src:wikimedia-commons",
+    "locator": "image licence checked on the file page",
+    "url": "https://commons.wikimedia.org/wiki/File:Gopuras_in_Kumbakonam_-_India.JPG"
    }
   ],
   "confidence": "medium",
   "status": "reference-checked",
   "agent": "temple",
   "limits": "Building phases are given only in general terms in the reference.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Gopuras_in_Kumbakonam_-_India.JPG/960px-Gopuras_in_Kumbakonam_-_India.JPG",
+   "page": "https://commons.wikimedia.org/wiki/File:Gopuras_in_Kumbakonam_-_India.JPG",
+   "credit": "Adam Jones (Wikimedia Commons)",
+   "license": "CC BY-SA 3.0"
+  }
  },
  {
   "id": "temple:adi-kumbeswarar",
@@ -10044,13 +10297,24 @@
     "source": "src:wikidata",
     "locator": "P625 coordinate location",
     "url": "https://www.wikidata.org/wiki/Q7929272"
+   },
+   {
+    "source": "src:wikimedia-commons",
+    "locator": "image licence checked on the file page",
+    "url": "https://commons.wikimedia.org/wiki/File:Vijayalayacholisvaram_And_The_Group_Of_Sub-Shrines.jpg"
    }
   ],
   "confidence": "medium",
   "status": "reference-checked",
   "agent": "temple",
   "limits": "The name reflects a later attribution; the inscription points to Muttaraiyar patronage under Pallava suzerainty.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Vijayalayacholisvaram_And_The_Group_Of_Sub-Shrines.jpg/960px-Vijayalayacholisvaram_And_The_Group_Of_Sub-Shrines.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Vijayalayacholisvaram_And_The_Group_Of_Sub-Shrines.jpg",
+   "credit": "RameshM (Wikimedia Commons)",
+   "license": "CC BY-SA 4.0"
+  }
  },
  {
   "id": "temple:moovar-koil",
@@ -10117,13 +10381,24 @@
     "source": "src:wikidata",
     "locator": "P625 coordinate location",
     "url": "https://www.wikidata.org/wiki/Q12062031"
+   },
+   {
+    "source": "src:wikimedia-commons",
+    "locator": "image licence checked on the file page",
+    "url": "https://commons.wikimedia.org/wiki/File:Moovar_koil.jpg"
    }
   ],
   "confidence": "medium",
   "status": "source-checked",
   "agent": "temple",
   "limits": "The date of Būti Vikramakesarī is debated within the 9th–10th century.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Moovar_koil.jpg/960px-Moovar_koil.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Moovar_koil.jpg",
+   "credit": "Sakthibalan (Wikimedia Commons)",
+   "license": "CC BY-SA 4.0"
+  }
  },
  {
   "id": "temple:suryanar-kovil",
@@ -11481,13 +11756,24 @@
     "source": "src:wikidata",
     "locator": "P625 coordinate location",
     "url": "https://www.wikidata.org/wiki/Q1001415"
+   },
+   {
+    "source": "src:wikimedia-commons",
+    "locator": "image licence checked on the file page",
+    "url": "https://commons.wikimedia.org/wiki/File:Budhanilkantha_Temple_Entrance.jpg"
    }
   ],
   "confidence": "medium",
   "status": "reference-checked",
   "agent": "temple",
   "limits": "The date is for the sculpture, not the modern enclosure; the royal taboo is tradition.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Budhanilkantha_Temple_Entrance.jpg/960px-Budhanilkantha_Temple_Entrance.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Budhanilkantha_Temple_Entrance.jpg",
+   "credit": "Bharatahs (Wikimedia Commons)",
+   "license": "CC BY-SA 4.0"
+  }
  },
  {
   "id": "temple:guhyeshwari",
@@ -11779,13 +12065,24 @@
     "source": "src:wikidata",
     "locator": "P625 coordinate location",
     "url": "https://www.wikidata.org/wiki/Q1513892"
+   },
+   {
+    "source": "src:wikimedia-commons",
+    "locator": "image licence checked on the file page",
+    "url": "https://commons.wikimedia.org/wiki/File:Nyatapol_by_GP15.JPG"
    }
   ],
   "confidence": "medium",
   "status": "reference-checked",
   "agent": "temple",
   "limits": "The dating rests on chronicle evidence, since the temple’s own inscription is lost.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Nyatapol_by_GP15.JPG/960px-Nyatapol_by_GP15.JPG",
+   "page": "https://commons.wikimedia.org/wiki/File:Nyatapol_by_GP15.JPG",
+   "credit": "Ganesh Paudel (Wikimedia Commons)",
+   "license": "CC BY-SA 3.0"
+  }
  },
  {
   "id": "temple:krishna-mandir-patan",
@@ -12540,13 +12837,24 @@
     "source": "src:wikidata",
     "locator": "P625 coordinate location",
     "url": "https://www.wikidata.org/wiki/Q578075"
+   },
+   {
+    "source": "src:wikimedia-commons",
+    "locator": "image licence checked on the file page",
+    "url": "https://commons.wikimedia.org/wiki/File:Phnom_Bakheng.jpg"
    }
   ],
   "confidence": "medium",
   "status": "source-checked",
   "agent": "temple",
   "limits": "The identification with Yaśodharagiri rests on a later inscription interpreted by scholars.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Phnom_Bakheng.jpg/960px-Phnom_Bakheng.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Phnom_Bakheng.jpg",
+   "credit": "Helt (Wikimedia Commons)",
+   "license": "CC BY-SA 3.0"
+  }
  },
  {
   "id": "temple:baphuon",
@@ -12640,13 +12948,24 @@
     "source": "src:wikidata",
     "locator": "P625 coordinate location",
     "url": "https://www.wikidata.org/wiki/Q790118"
+   },
+   {
+    "source": "src:wikimedia-commons",
+    "locator": "image licence checked on the file page",
+    "url": "https://commons.wikimedia.org/wiki/File:BaphuonEasternFacade2011.jpg"
    }
   ],
   "confidence": "medium",
   "status": "reference-checked",
   "agent": "temple",
   "limits": "The patron is disputed; the reliefs attest epic narratives in 11th-century Cambodia.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/BaphuonEasternFacade2011.jpg/960px-BaphuonEasternFacade2011.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:BaphuonEasternFacade2011.jpg",
+   "credit": "Jean-Pierre Dalbéra from Paris, France (Wikimedia Commons)",
+   "license": "CC BY 2.0"
+  }
  },
  {
   "id": "temple:prasat-thom-koh-ker",
@@ -12730,13 +13049,24 @@
     "source": "src:wikidata",
     "locator": "P625 coordinate location",
     "url": "https://www.wikidata.org/wiki/Q1778458"
+   },
+   {
+    "source": "src:wikimedia-commons",
+    "locator": "image licence checked on the file page",
+    "url": "https://commons.wikimedia.org/wiki/File:Prasat_Thom_1.jpg"
    }
   ],
   "confidence": "medium",
   "status": "reference-checked",
   "agent": "temple",
   "limits": "Coordinates are for the Koh Ker site; the UNESCO page itself could not be fetched (blocked).",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "image": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Prasat_Thom_1.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Prasat_Thom_1.jpg",
+   "credit": "Du Hangst from Osimo, Italia (Wikimedia Commons)",
+   "license": "CC BY 2.0"
+  }
  },
  {
   "id": "temple:sambor-prei-kuk",
@@ -12823,13 +13153,24 @@
     "source": "src:wikidata",
     "locator": "P625 coordinate location",
     "url": "https://www.wikidata.org/wiki/Q1818746"
+   },
+   {
+    "source": "src:wikimedia-commons",
+    "locator": "image licence checked on the file page",
+    "url": "https://commons.wikimedia.org/wiki/File:600_CE_Ashram_Maha_Rishi_Hindu_temple,_N17_Kuk_Vihear_Prasat_Asram_Maha_Rusei,_Sambour_Kuk_Cambodia_01.jpg"
    }
   ],
   "confidence": "medium",
   "status": "reference-checked",
   "agent": "temple",
   "limits": "The identification with Īśānapura is the standard scholarly view; the UNESCO page could not be fetched.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/600_CE_Ashram_Maha_Rishi_Hindu_temple%2C_N17_Kuk_Vihear_Prasat_Asram_Maha_Rusei%2C_Sambour_Kuk_Cambodia_01.jpg/960px-600_CE_Ashram_Maha_Rishi_Hindu_temple%2C_N17_Kuk_Vihear_Prasat_Asram_Maha_Rusei%2C_Sambour_Kuk_Cambodia_01.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:600_CE_Ashram_Maha_Rishi_Hindu_temple,_N17_Kuk_Vihear_Prasat_Asram_Maha_Rusei,_Sambour_Kuk_Cambodia_01.jpg",
+   "credit": "Ms Sarah Welch (Wikimedia Commons)",
+   "license": "CC0"
+  }
  },
  {
   "id": "temple:prasat-kravan",
@@ -12974,13 +13315,24 @@
     "source": "src:wikidata",
     "locator": "P625 coordinate location",
     "url": "https://www.wikidata.org/wiki/Q788982"
+   },
+   {
+    "source": "src:wikimedia-commons",
+    "locator": "image licence checked on the file page",
+    "url": "https://commons.wikimedia.org/wiki/File:Bakong_Wiki.jpg"
    }
   ],
   "confidence": "medium",
   "status": "reference-checked",
   "agent": "temple",
   "limits": "The date rests on the foundation inscription as summarised; the tower is a later replacement.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "image": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Bakong_Wiki.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Bakong_Wiki.jpg",
+   "credit": "Culexx (Wikimedia Commons)",
+   "license": "CC BY-SA 3.0"
+  }
  },
  {
   "id": "place:kbal-spean",
@@ -13159,13 +13511,24 @@
     "source": "src:wikidata",
     "locator": "P625 coordinate location",
     "url": "https://www.wikidata.org/wiki/Q2084809"
+   },
+   {
+    "source": "src:wikimedia-commons",
+    "locator": "image licence checked on the file page",
+    "url": "https://commons.wikimedia.org/wiki/File:Place_PhnomrungPrasat.jpg"
    }
   ],
   "confidence": "medium",
   "status": "reference-checked",
   "agent": "temple",
   "limits": "The return of the lintel is a modern heritage event; the attribution of the main phase to Narendrāditya is from recall.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Place_PhnomrungPrasat.jpg/960px-Place_PhnomrungPrasat.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Place_PhnomrungPrasat.jpg",
+   "credit": "Thanyakij (th.wikipedia) (Wikimedia Commons)",
+   "license": "Public domain"
+  }
  },
  {
   "id": "temple:phimai",
@@ -13362,13 +13725,24 @@
     "source": "src:wikidata",
     "locator": "P625 coordinate location",
     "url": "https://www.wikidata.org/wiki/Q3336294"
+   },
+   {
+    "source": "src:wikimedia-commons",
+    "locator": "image licence checked on the file page",
+    "url": "https://commons.wikimedia.org/wiki/File:Nathlaung_Kyaung_Hindu_Temple_in_Bagan_Myanmar_(Burma).jpg"
    }
   ],
   "confidence": "medium",
   "status": "reference-checked",
   "agent": "temple",
   "limits": "The date is approximate; the Berlin image is from recall.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Nathlaung_Kyaung_Hindu_Temple_in_Bagan_Myanmar_%28Burma%29.jpg/960px-Nathlaung_Kyaung_Hindu_Temple_in_Bagan_Myanmar_%28Burma%29.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Nathlaung_Kyaung_Hindu_Temple_in_Bagan_Myanmar_(Burma).jpg",
+   "credit": "amanderson2 (Wikimedia Commons)",
+   "license": "CC BY 2.0"
+  }
  },
  {
   "id": "temple:po-nagar",
@@ -13446,13 +13820,24 @@
     "source": "src:wikidata",
     "locator": "P625 coordinate location",
     "url": "https://www.wikidata.org/wiki/Q600269"
+   },
+   {
+    "source": "src:wikimedia-commons",
+    "locator": "image licence checked on the file page",
+    "url": "https://commons.wikimedia.org/wiki/File:04052023_Ponagar_Hindu_temples_complex,_Nha_Trang_Vietnam_-_240.jpg"
    }
   ],
   "confidence": "medium",
   "status": "reference-checked",
   "agent": "temple",
   "limits": "The inscriptions date gifts and restorations; the towers are later than the foundation.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/04052023_Ponagar_Hindu_temples_complex%2C_Nha_Trang_Vietnam_-_240.jpg/960px-04052023_Ponagar_Hindu_temples_complex%2C_Nha_Trang_Vietnam_-_240.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:04052023_Ponagar_Hindu_temples_complex,_Nha_Trang_Vietnam_-_240.jpg",
+   "credit": "Ms Sarah Welch (Wikimedia Commons)",
+   "license": "CC0"
+  }
  },
  {
   "id": "temple:penataran",
@@ -13534,13 +13919,24 @@
     "source": "src:wikidata",
     "locator": "P625 coordinate location",
     "url": "https://www.wikidata.org/wiki/Q2491478"
+   },
+   {
+    "source": "src:wikimedia-commons",
+    "locator": "image licence checked on the file page",
+    "url": "https://commons.wikimedia.org/wiki/File:Candi_Panataran_34200113.jpg"
    }
   ],
   "confidence": "medium",
   "status": "source-checked",
   "agent": "temple",
   "limits": "The reliefs illustrate Old Javanese literary versions of the epics, not Vālmīki directly.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "image": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Candi_Panataran_34200113.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Candi_Panataran_34200113.jpg",
+   "credit": "ESCapade (Wikimedia Commons)",
+   "license": "CC BY-SA 3.0"
+  }
  },
  {
   "id": "temple:gedong-songo",
@@ -13683,13 +14079,24 @@
     "source": "src:wikidata",
     "locator": "P625 coordinate location",
     "url": "https://www.wikidata.org/wiki/Q3101506"
+   },
+   {
+    "source": "src:wikimedia-commons",
+    "locator": "image licence checked on the file page",
+    "url": "https://commons.wikimedia.org/wiki/File:Candi_Sukuh_2007.JPG"
    }
   ],
   "confidence": "medium",
   "status": "reference-checked",
   "agent": "temple",
   "limits": "The chronogram reading dates the gate; other parts may differ.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Candi_Sukuh_2007.JPG/960px-Candi_Sukuh_2007.JPG",
+   "page": "https://commons.wikimedia.org/wiki/File:Candi_Sukuh_2007.JPG",
+   "credit": "Anton Leddin (Wikimedia Commons)",
+   "license": "CC BY-SA 3.0"
+  }
  },
  {
   "id": "temple:tanah-lot",
@@ -13761,13 +14168,24 @@
     "source": "src:wikidata",
     "locator": "P625 coordinate location",
     "url": "https://www.wikidata.org/wiki/Q515253"
+   },
+   {
+    "source": "src:wikimedia-commons",
+    "locator": "image licence checked on the file page",
+    "url": "https://commons.wikimedia.org/wiki/File:Bali_-_Pura_Tanah_Lot,_20220827_1005_1141.jpg"
    }
   ],
   "confidence": "medium",
   "status": "reference-checked",
   "agent": "temple",
   "limits": "The Nirārtha foundation is tradition; the shrines are periodically renewed.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Bali_-_Pura_Tanah_Lot%2C_20220827_1005_1141.jpg/960px-Bali_-_Pura_Tanah_Lot%2C_20220827_1005_1141.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Bali_-_Pura_Tanah_Lot,_20220827_1005_1141.jpg",
+   "credit": "Jakub Hałun (Wikimedia Commons)",
+   "license": "CC BY-SA 4.0"
+  }
  },
  {
   "id": "temple:ulun-danu-bratan",
@@ -14138,13 +14556,24 @@
     "source": "src:wikidata",
     "locator": "P625 coordinate location",
     "url": "https://www.wikidata.org/wiki/Q2428845"
+   },
+   {
+    "source": "src:wikimedia-commons",
+    "locator": "image licence checked on the file page",
+    "url": "https://commons.wikimedia.org/wiki/File:00_1545_Sri_Mariamman_temple_in_Singapore.jpg"
    }
   ],
   "confidence": "medium",
   "status": "reference-checked",
   "agent": "temple",
   "limits": "The surviving-structure dates are partly from recall.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/00_1545_Sri_Mariamman_temple_in_Singapore.jpg/960px-00_1545_Sri_Mariamman_temple_in_Singapore.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:00_1545_Sri_Mariamman_temple_in_Singapore.jpg",
+   "credit": "W. Bulach (Wikimedia Commons)",
+   "license": "CC BY-SA 4.0"
+  }
  },
  {
   "id": "temple:baps-neasden",
@@ -14209,13 +14638,24 @@
     "source": "src:wikidata",
     "locator": "P625 coordinate location",
     "url": "https://www.wikidata.org/wiki/Q1402606"
+   },
+   {
+    "source": "src:wikimedia-commons",
+    "locator": "image licence checked on the file page",
+    "url": "https://commons.wikimedia.org/wiki/File:London_Temple.jpg"
    }
   ],
   "confidence": "medium",
   "status": "reference-checked",
   "agent": "temple",
   "limits": "A modern diaspora temple; its significance is institutional and communal.",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/London_Temple.jpg/960px-London_Temple.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:London_Temple.jpg",
+   "credit": "Sharf Tonse (Flickr; uploaded by Nikkul) (Wikimedia Commons)",
+   "license": "CC BY-SA 2.0"
+  }
  },
  {
   "id": "temple:akshardham-delhi",

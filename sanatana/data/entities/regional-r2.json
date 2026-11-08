@@ -251,7 +251,7 @@
   ],
   "subtype": "festival",
   "summary": "The spring festival of the Phālguna full moon: a bonfire (Holikā-dahana) on the full-moon night, followed by the throwing of coloured water and powder. Kane traces the name to Holākā, a usage known to Jaimini’s Mīmāṃsā sūtras (as explained by Śabara) and the Kāṭhaka Gṛhya, and regards it in origin as a spring festival; popular legend explains the bonfire by the burning of Holikā, who tried to kill Prahlāda, while Braj celebrates Rādhā and Kṛṣṇa’s play with colours.",
-  "details": "Kane: “Holī or Holikā is a festival of unmixed gaiety and frolics throughout India … One element, viz. bonfire, is present almost everywhere except in Bengal.” The Kāmasūtra (1.4.42) names Holākā, which the Jayamaṅgalā commentary explains as sprinkling with coloured water from horns on the Phālguna full moon. Hemādri quotes a long Bhaviṣyottara passage (ch. 132) in which Kṛṣṇa tells Yudhiṣṭhira of an ogress Ḍhauṇḍhā (Dhondhā) who troubled children in king Raghu’s realm and was destroyed by boys’ noise and a bonfire with rakṣoghna mantras; the next day the ashes are saluted and Kāma is worshipped. Bengal instead celebrates the Dolayātrā (swing festival of Kṛṣṇa). In the Deccan colour is thrown on the fifth day (Raṅgapañcamī).\n\nKane does not mention the Holikā–Prahlāda story, which is the explanation most widely told today (see char:holika).",
+  "details": "Kane: “Holī or Holikā is a festival of unmixed gaiety and frolics throughout India … One element, viz. bonfire, is present almost everywhere except in Bengal.” The Kāmasūtra (1.4.42) names Holākā, which the Jayamaṅgalā commentary explains as sprinkling with coloured water from horns on the Phālguna full moon. Hemādri quotes a long Bhaviṣyottara passage (ch. 132) in which Kṛṣṇa tells Yudhiṣṭhira of an ogress Ḍhauṇḍhā (Dhondhā) who troubled children in king Raghu’s realm and was destroyed by boys’ noise and a bonfire with rakṣoghna mantras; the next day the ashes are saluted and Kāma is worshipped. Bengal instead celebrates the Dolayātrā (swing festival of Kṛṣṇa). In the Deccan colour is thrown on the fifth day (Raṅgapañcamī). In South India the bonfire night is Kāma-dahanam, recalling Śiva’s burning of Kāma (reference sources).\n\nKane does not mention the Holikā–Prahlāda story, which is the explanation most widely told today (see char:holika).",
   "dates": [
    {
     "system": "scholarly-textual",
@@ -709,10 +709,9 @@
    }
   ],
   "confidence": "high",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "regional",
-  "limits": "Public Gaṇeśa images in Pune predate 1893 in some accounts; Tilak’s role was promotion and politicisation rather than invention.",
-  "lastVerified": "2026-11-08"
+  "limits": "Public Gaṇeśa images in Pune predate 1893 in some accounts; Tilak’s role was promotion and politicisation rather than invention."
  },
  {
   "id": "person:bal-gangadhar-tilak",
@@ -973,10 +972,9 @@
    }
   ],
   "confidence": "low",
-  "status": "reference-checked",
+  "status": "recall",
   "agent": "regional",
-  "limits": "Identifications vary between local tellings and are not settled by any text checked here.",
-  "lastVerified": "2026-11-08"
+  "limits": "Identifications vary between local tellings and are not settled by any text checked here."
  },
  {
   "id": "trad:ratha-yatra-puri",
@@ -1084,7 +1082,7 @@
   ],
   "subtype": "pilgrimage",
   "summary": "The “festival of the sacred pitcher”, a mass bathing pilgrimage held in rotation at Prayāga (Allahabad/Prayagraj), Haridwar, Ujjain and Nashik, each roughly every twelve years by an astronomical reckoning, so that one of the four falls about every three years; UNESCO calls it “the largest peaceful congregation of pilgrims on earth”. Its primary bearers are the ascetic akhāṛās and āśramas. Inscribed on UNESCO’s Representative List in 2017.",
-  "details": "UNESCO: devotees believe that bathing in the Gaṅgā frees them from sins; the congregation includes ascetics, sādhus, kalpavāsīs and visitors; the knowledge is transmitted through “ancient religious manuscripts, oral traditions, historical travelogues” and above all the teacher–pupil relationship of the sādhus in the akhāṛās and āśramas.\n\nTradition explains the four sites as the places where drops of amṛta fell from the pitcher (kumbha) carried away after the churning of the ocean. Maclean (2003, 2008) argues that the Allahabad gathering was long known as the annual Māgh Melā and acquired the name and twelve-year “Kumbh” status in the nineteenth century, through the Prayāgvāl priests’ adaptation of Haridwar’s Kumbh under colonial administration — “the modern beginnings of the ancient Kumbh Mela” (see claim:kumbh-mela-antiquity).",
+  "details": "UNESCO: devotees believe that bathing in the Gaṅgā frees them from sins; the congregation includes ascetics, sādhus, kalpavāsīs and visitors; the knowledge is transmitted through “ancient religious manuscripts, oral traditions, historical travelogues” and above all the teacher–pupil relationship of the sādhus in the akhāṛās and āśramas.\n\nTradition, often described as Purāṇic, explains the four sites as the places where drops of amṛta fell from the pitcher (kumbha) carried away after the churning of the ocean; the textual basis of that explanation was not traced in this round. Maclean (2003, 2008) argues that the Allahabad gathering was long known as the annual Māgh Melā and acquired the name and twelve-year “Kumbh” status in the nineteenth century, through the Prayāgvāl priests’ adaptation of Haridwar’s Kumbh under colonial administration — “the modern beginnings of the ancient Kumbh Mela” (see claim:kumbh-mela-antiquity).",
   "dates": [
    {
     "system": "reception",
@@ -1121,7 +1119,7 @@
   "confidence": "high",
   "status": "verified-online",
   "agent": "regional",
-  "limits": "The amṛta-drop explanation is a tradition; the Purāṇic churning narratives do not name the four sites.",
+  "limits": "The amṛta-drop explanation is recorded as tradition (class 6); its earliest textual source was not identified here.",
   "lastVerified": "2026-11-08"
  },
  {
@@ -1256,10 +1254,9 @@
    }
   ],
   "confidence": "high",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "regional",
-  "limits": "Legal developments are summarised from reference sources only.",
-  "lastVerified": "2026-11-08"
+  "limits": "Legal developments are summarised from reference sources only."
  },
  {
   "id": "trad:kanwar-yatra",
@@ -6214,53 +6211,6 @@
   "openQuestions": [
    "A canto-by-canto comparison with the Adhyātma would settle the source question."
   ],
-  "lastVerified": "2026-11-08"
- },
- {
-  "id": "person:utpaladeva",
-  "type": "person",
-  "name": "Utpaladeva",
-  "iast": "Utpaladeva",
-  "traditions": [
-   "trad:kashmir-shaivism"
-  ],
-  "roles": [
-   "philosopher",
-   "poet"
-  ],
-  "summary": "Kashmiri Śaiva philosopher and poet (c. 900–950), pupil of Somānanda and grand-teacher of Abhinavagupta, who systematised the Pratyabhijñā (“Recognition”) school in the Īśvarapratyabhijñākārikā and poured its theology into the devotional hymns of the Śivastotrāvalī.",
-  "dates": [
-   {
-    "system": "scholarly-textual",
-    "event": "life",
-    "start": 900,
-    "end": 950,
-    "label": "c. 900–950",
-    "certainty": "estimated",
-    "basis": "teacher–pupil chronology of the Kashmir Śaiva lineage",
-    "sources": [
-     {
-      "source": "src:wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Utpaladeva"
-     },
-     {
-      "source": "src:bailly-1987"
-     }
-    ]
-   }
-  ],
-  "sources": [
-   {
-    "source": "src:bailly-1987"
-   },
-   {
-    "source": "src:wikipedia",
-    "url": "https://en.wikipedia.org/wiki/Utpaladeva"
-   }
-  ],
-  "confidence": "high",
-  "status": "reference-checked",
-  "agent": "regional",
   "lastVerified": "2026-11-08"
  },
  {

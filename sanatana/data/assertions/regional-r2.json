@@ -422,28 +422,6 @@
  },
  {
   "id": "regional:r2-22",
-  "s": "narr:vamana-bali",
-  "p": "MENTIONED_IN",
-  "o": "text:mahabhashya",
-  "qualifiers": {
-   "note": "“Baliṃ bandhayati” — reciting or staging the binding of Bali"
-  },
-  "evidenceClass": 1,
-  "sources": [
-   {
-    "source": "src:kane-hds-5-1",
-    "locator": "vol. V pt. 1, p. 203: Mahābhāṣya on Pāṇini 3.1.26",
-    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
-   }
-  ],
-  "confidence": "medium",
-  "status": "verified-online",
-  "rationale": "As cited by Kane; the Mahābhāṣya passage itself was not opened here.",
-  "agent": "regional",
-  "lastVerified": "2026-11-08"
- },
- {
-  "id": "regional:r2-23",
   "s": "trad:govardhan-puja",
   "p": "ASSOCIATED_WITH",
   "o": "narr:govardhana",
@@ -464,7 +442,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-24",
+  "id": "regional:r2-23",
   "s": "trad:govardhan-puja",
   "p": "PART_OF",
   "o": "trad:dipavali",
@@ -482,7 +460,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-25",
+  "id": "regional:r2-24",
   "s": "char:krishna",
   "p": "CENTRAL_TO",
   "o": "trad:govardhan-puja",
@@ -497,7 +475,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-26",
+  "id": "regional:r2-25",
   "s": "trad:govardhan-puja",
   "p": "ASSOCIATED_WITH",
   "o": "trad:pushtimarg",
@@ -515,7 +493,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-27",
+  "id": "regional:r2-26",
   "s": "trad:bhai-dooj",
   "p": "PART_OF",
   "o": "trad:dipavali",
@@ -533,7 +511,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-28",
+  "id": "regional:r2-27",
   "s": "deity:yama",
   "p": "CENTRAL_TO",
   "o": "trad:bhai-dooj",
@@ -554,7 +532,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-29",
+  "id": "regional:r2-28",
   "s": "deity:yamuna",
   "p": "CENTRAL_TO",
   "o": "trad:bhai-dooj",
@@ -572,7 +550,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-30",
+  "id": "regional:r2-29",
   "s": "trad:holi",
   "p": "ASSOCIATED_WITH",
   "o": "char:holika",
@@ -597,7 +575,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-31",
+  "id": "regional:r2-30",
   "s": "trad:holi",
   "p": "ASSOCIATED_WITH",
   "o": "char:prahlada",
@@ -614,7 +592,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-32",
+  "id": "regional:r2-31",
   "s": "trad:holi",
   "p": "ASSOCIATED_WITH",
   "o": "narr:narasimha-prahlada",
@@ -634,7 +612,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-33",
+  "id": "regional:r2-32",
   "s": "trad:holi",
   "p": "ASSOCIATED_WITH",
   "o": "char:dhaundha",
@@ -655,7 +633,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-34",
+  "id": "regional:r2-33",
   "s": "trad:holi",
   "p": "ASSOCIATED_WITH",
   "o": "char:radha",
@@ -678,7 +656,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-35",
+  "id": "regional:r2-34",
   "s": "char:krishna",
   "p": "CENTRAL_TO",
   "o": "trad:holi",
@@ -699,7 +677,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-36",
+  "id": "regional:r2-35",
   "s": "trad:holi",
   "p": "ASSOCIATED_WITH",
   "o": "place:vrindavan",
@@ -719,7 +697,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-37",
+  "id": "regional:r2-36",
   "s": "trad:holi",
   "p": "MENTIONED_IN",
   "o": "text:bhavishya-purana",
@@ -737,7 +715,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-38",
+  "id": "regional:r2-37",
   "s": "char:holika",
   "p": "SIBLING_OF",
   "o": "char:hiranyakashipu",
@@ -757,7 +735,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-39",
+  "id": "regional:r2-38",
   "s": "char:holika",
   "p": "ADVERSARY_OF",
   "o": "char:prahlada",
@@ -777,7 +755,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-40",
+  "id": "regional:r2-39",
   "s": "char:dhaundha",
   "p": "APPEARS_IN",
   "o": "text:bhavishya-purana",
@@ -799,7 +777,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-41",
+  "id": "regional:r2-40",
   "s": "trad:dol-jatra",
   "p": "ASSOCIATED_WITH",
   "o": "trad:holi",
@@ -820,7 +798,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-42",
+  "id": "regional:r2-41",
   "s": "char:krishna",
   "p": "CENTRAL_TO",
   "o": "trad:dol-jatra",
@@ -838,7 +816,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-43",
+  "id": "regional:r2-42",
   "s": "trad:dol-jatra",
   "p": "ASSOCIATED_WITH",
   "o": "person:chaitanya",
@@ -861,7 +839,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-44",
+  "id": "regional:r2-43",
   "s": "trad:dol-jatra",
   "p": "ASSOCIATED_WITH",
   "o": "temple:jagannath-puri",
@@ -879,7 +857,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-45",
+  "id": "regional:r2-44",
   "s": "deity:durga",
   "p": "CENTRAL_TO",
   "o": "trad:navaratri",
@@ -897,7 +875,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-46",
+  "id": "regional:r2-45",
   "s": "trad:navaratri",
   "p": "ASSOCIATED_WITH",
   "o": "text:devi-mahatmya",
@@ -918,7 +896,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-47",
+  "id": "regional:r2-46",
   "s": "trad:navaratri",
   "p": "ASSOCIATED_WITH",
   "o": "narr:mahishasura-slaying",
@@ -936,7 +914,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-48",
+  "id": "regional:r2-47",
   "s": "trad:navaratri",
   "p": "MENTIONED_IN",
   "o": "text:kalika-purana",
@@ -957,7 +935,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-49",
+  "id": "regional:r2-48",
   "s": "trad:navaratri",
   "p": "ASSOCIATED_WITH",
   "o": "text:devi-bhagavata-purana",
@@ -977,7 +955,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-50",
+  "id": "regional:r2-49",
   "s": "trad:durga-puja",
   "p": "DOCUMENTED_BY",
   "o": "inst:unesco",
@@ -997,7 +975,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-51",
+  "id": "regional:r2-50",
   "s": "trad:durga-puja",
   "p": "PART_OF",
   "o": "trad:navaratri",
@@ -1018,7 +996,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-52",
+  "id": "regional:r2-51",
   "s": "deity:durga",
   "p": "CENTRAL_TO",
   "o": "trad:durga-puja",
@@ -1035,7 +1013,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-53",
+  "id": "regional:r2-52",
   "s": "trad:durga-puja",
   "p": "ASSOCIATED_WITH",
   "o": "narr:mahishasura-slaying",
@@ -1059,7 +1037,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-54",
+  "id": "regional:r2-53",
   "s": "trad:durga-puja",
   "p": "ASSOCIATED_WITH",
   "o": "text:krittivasi-ramayana",
@@ -1085,7 +1063,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-55",
+  "id": "regional:r2-54",
   "s": "trad:durga-puja",
   "p": "ASSOCIATED_WITH",
   "o": "char:rama",
@@ -1108,7 +1086,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-56",
+  "id": "regional:r2-55",
   "s": "trad:durga-puja",
   "p": "ASSOCIATED_WITH",
   "o": "place:ganga-river",
@@ -1128,7 +1106,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-57",
+  "id": "regional:r2-56",
   "s": "trad:durga-puja",
   "p": "ASSOCIATED_WITH",
   "o": "text:kalika-purana",
@@ -1149,7 +1127,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-58",
+  "id": "regional:r2-57",
   "s": "trad:vijayadashami",
   "p": "ASSOCIATED_WITH",
   "o": "narr:lanka-war",
@@ -1170,7 +1148,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-59",
+  "id": "regional:r2-58",
   "s": "trad:vijayadashami",
   "p": "ASSOCIATED_WITH",
   "o": "trad:ramlila",
@@ -1191,7 +1169,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-60",
+  "id": "regional:r2-59",
   "s": "trad:vijayadashami",
   "p": "ASSOCIATED_WITH",
   "o": "lin:pandavas",
@@ -1212,7 +1190,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-61",
+  "id": "regional:r2-60",
   "s": "trad:vijayadashami",
   "p": "ASSOCIATED_WITH",
   "o": "narr:mahishasura-slaying",
@@ -1233,7 +1211,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-62",
+  "id": "regional:r2-61",
   "s": "trad:vijayadashami",
   "p": "ASSOCIATED_WITH",
   "o": "trad:navaratri",
@@ -1251,7 +1229,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-63",
+  "id": "regional:r2-62",
   "s": "trad:vijayadashami",
   "p": "ASSOCIATED_WITH",
   "o": "char:ravana",
@@ -1272,7 +1250,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-64",
+  "id": "regional:r2-63",
   "s": "trad:mysore-dasara",
   "p": "PART_OF",
   "o": "trad:vijayadashami",
@@ -1293,7 +1271,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-65",
+  "id": "regional:r2-64",
   "s": "deity:chamunda",
   "p": "CENTRAL_TO",
   "o": "trad:mysore-dasara",
@@ -1313,7 +1291,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-66",
+  "id": "regional:r2-65",
   "s": "trad:mysore-dasara",
   "p": "ASSOCIATED_WITH",
   "o": "narr:mahishasura-slaying",
@@ -1333,7 +1311,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-67",
+  "id": "regional:r2-66",
   "s": "trad:mysore-dasara",
   "p": "ASSOCIATED_WITH",
   "o": "pol:vijayanagara",
@@ -1348,12 +1326,11 @@
    }
   ],
   "confidence": "low",
-  "status": "reference-checked",
-  "agent": "regional",
-  "lastVerified": "2026-11-08"
+  "status": "recall",
+  "agent": "regional"
  },
  {
-  "id": "regional:r2-68",
+  "id": "regional:r2-67",
   "s": "deity:shiva",
   "p": "CENTRAL_TO",
   "o": "trad:maha-shivaratri",
@@ -1371,7 +1348,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-69",
+  "id": "regional:r2-68",
   "s": "trad:maha-shivaratri",
   "p": "MENTIONED_IN",
   "o": "text:garuda-purana",
@@ -1392,7 +1369,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-70",
+  "id": "regional:r2-69",
   "s": "trad:maha-shivaratri",
   "p": "MENTIONED_IN",
   "o": "text:skanda-purana",
@@ -1413,7 +1390,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-71",
+  "id": "regional:r2-70",
   "s": "trad:maha-shivaratri",
   "p": "MENTIONED_IN",
   "o": "text:padma-purana",
@@ -1431,7 +1408,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-72",
+  "id": "regional:r2-71",
   "s": "trad:maha-shivaratri",
   "p": "MENTIONED_IN",
   "o": "text:agni-purana",
@@ -1449,7 +1426,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-73",
+  "id": "regional:r2-72",
   "s": "trad:maha-shivaratri",
   "p": "ASSOCIATED_WITH",
   "o": "narr:lingodbhava",
@@ -1469,7 +1446,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-74",
+  "id": "regional:r2-73",
   "s": "trad:maha-shivaratri",
   "p": "ASSOCIATED_WITH",
   "o": "temple:pashupatinath",
@@ -1487,7 +1464,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-75",
+  "id": "regional:r2-74",
   "s": "trad:maha-shivaratri",
   "p": "ASSOCIATED_WITH",
   "o": "temple:kashi-vishwanath",
@@ -1502,7 +1479,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-76",
+  "id": "regional:r2-75",
   "s": "char:krishna",
   "p": "CENTRAL_TO",
   "o": "trad:krishna-janmashtami",
@@ -1520,7 +1497,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-77",
+  "id": "regional:r2-76",
   "s": "trad:krishna-janmashtami",
   "p": "ASSOCIATED_WITH",
   "o": "narr:krishna-birth",
@@ -1543,7 +1520,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-78",
+  "id": "regional:r2-77",
   "s": "trad:krishna-janmashtami",
   "p": "ASSOCIATED_WITH",
   "o": "place:mathura",
@@ -1560,7 +1537,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-79",
+  "id": "regional:r2-78",
   "s": "trad:krishna-janmashtami",
   "p": "ASSOCIATED_WITH",
   "o": "place:vrindavan",
@@ -1577,7 +1554,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-80",
+  "id": "regional:r2-79",
   "s": "char:rama",
   "p": "CENTRAL_TO",
   "o": "trad:rama-navami",
@@ -1595,7 +1572,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-81",
+  "id": "regional:r2-80",
   "s": "trad:rama-navami",
   "p": "ASSOCIATED_WITH",
   "o": "narr:birth-of-rama",
@@ -1613,7 +1590,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-82",
+  "id": "regional:r2-81",
   "s": "trad:rama-navami",
   "p": "MENTIONED_IN",
   "o": "text:ramcharitmanas",
@@ -1634,7 +1611,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-83",
+  "id": "regional:r2-82",
   "s": "trad:rama-navami",
   "p": "ASSOCIATED_WITH",
   "o": "place:ayodhya",
@@ -1651,7 +1628,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-84",
+  "id": "regional:r2-83",
   "s": "deity:ganesha",
   "p": "CENTRAL_TO",
   "o": "trad:ganesha-chaturthi",
@@ -1669,7 +1646,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-85",
+  "id": "regional:r2-84",
   "s": "trad:sarvajanik-ganeshotsav",
   "p": "DERIVED_FROM",
   "o": "trad:ganesha-chaturthi",
@@ -1684,7 +1661,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-86",
+  "id": "regional:r2-85",
   "s": "trad:sarvajanik-ganeshotsav",
   "p": "ASSOCIATED_WITH",
   "o": "person:bal-gangadhar-tilak",
@@ -1703,7 +1680,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-87",
+  "id": "regional:r2-86",
   "s": "deity:ganesha",
   "p": "CENTRAL_TO",
   "o": "trad:sarvajanik-ganeshotsav",
@@ -1718,7 +1695,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-88",
+  "id": "regional:r2-87",
   "s": "deity:surya",
   "p": "CENTRAL_TO",
   "o": "trad:makar-sankranti",
@@ -1736,7 +1713,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-89",
+  "id": "regional:r2-88",
   "s": "trad:gangasagar-mela",
   "p": "ASSOCIATED_WITH",
   "o": "place:gangasagara",
@@ -1753,7 +1730,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-90",
+  "id": "regional:r2-89",
   "s": "trad:gangasagar-mela",
   "p": "ASSOCIATED_WITH",
   "o": "narr:sagara-sons",
@@ -1773,7 +1750,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-91",
+  "id": "regional:r2-90",
   "s": "trad:gangasagar-mela",
   "p": "ASSOCIATED_WITH",
   "o": "trad:makar-sankranti",
@@ -1790,7 +1767,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-92",
+  "id": "regional:r2-91",
   "s": "trad:gangasagar-mela",
   "p": "ASSOCIATED_WITH",
   "o": "char:kapila",
@@ -1810,7 +1787,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-93",
+  "id": "regional:r2-92",
   "s": "trad:pongal",
   "p": "ASSOCIATED_WITH",
   "o": "trad:makar-sankranti",
@@ -1831,7 +1808,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-94",
+  "id": "regional:r2-93",
   "s": "deity:surya",
   "p": "CENTRAL_TO",
   "o": "trad:pongal",
@@ -1848,27 +1825,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-95",
-  "s": "trad:pongal",
-  "p": "ASSOCIATED_WITH",
-  "o": "deity:indra",
-  "qualifiers": {
-   "note": "Bhōgi, the first day, is associated with Indra in Tamil tradition"
-  },
-  "evidenceClass": 6,
-  "sources": [
-   {
-    "source": "src:wikipedia",
-    "url": "https://en.wikipedia.org/wiki/Bhogi"
-   }
-  ],
-  "confidence": "low",
-  "status": "reference-checked",
-  "agent": "regional",
-  "lastVerified": "2026-11-08"
- },
- {
-  "id": "regional:r2-96",
+  "id": "regional:r2-94",
   "s": "trad:onam",
   "p": "ASSOCIATED_WITH",
   "o": "char:bali",
@@ -1888,7 +1845,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-97",
+  "id": "regional:r2-95",
   "s": "trad:onam",
   "p": "ASSOCIATED_WITH",
   "o": "narr:vamana-bali",
@@ -1905,7 +1862,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-98",
+  "id": "regional:r2-96",
   "s": "trad:onam",
   "p": "MENTIONED_IN",
   "o": "text:maduraikkanci",
@@ -1926,7 +1883,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-99",
+  "id": "regional:r2-97",
   "s": "deity:mayon",
   "p": "CENTRAL_TO",
   "o": "trad:onam",
@@ -1947,7 +1904,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-100",
+  "id": "regional:r2-98",
   "s": "deity:vamana",
   "p": "CENTRAL_TO",
   "o": "trad:onam",
@@ -1967,7 +1924,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-101",
+  "id": "regional:r2-99",
   "s": "text:maduraikkanci",
   "p": "PART_OF",
   "o": "col:sangam-literature",
@@ -1987,7 +1944,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-102",
+  "id": "regional:r2-100",
   "s": "deity:mayon",
   "p": "MENTIONED_IN",
   "o": "text:maduraikkanci",
@@ -2005,7 +1962,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-103",
+  "id": "regional:r2-101",
   "s": "deity:surya",
   "p": "CENTRAL_TO",
   "o": "trad:chhath",
@@ -2022,7 +1979,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-104",
+  "id": "regional:r2-102",
   "s": "deity:chhathi-maiya",
   "p": "CENTRAL_TO",
   "o": "trad:chhath",
@@ -2039,7 +1996,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-105",
+  "id": "regional:r2-103",
   "s": "deity:jagannatha",
   "p": "CENTRAL_TO",
   "o": "trad:ratha-yatra-puri",
@@ -2054,7 +2011,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-106",
+  "id": "regional:r2-104",
   "s": "trad:ratha-yatra-puri",
   "p": "ASSOCIATED_WITH",
   "o": "temple:jagannath-puri",
@@ -2069,7 +2026,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-107",
+  "id": "regional:r2-105",
   "s": "trad:ratha-yatra-puri",
   "p": "ASSOCIATED_WITH",
   "o": "person:chaitanya",
@@ -2092,7 +2049,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-108",
+  "id": "regional:r2-106",
   "s": "trad:ratha-yatra-puri",
   "p": "ASSOCIATED_WITH",
   "o": "text:skanda-purana",
@@ -2110,7 +2067,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-109",
+  "id": "regional:r2-107",
   "s": "deity:murugan",
   "p": "CENTRAL_TO",
   "o": "trad:thaipusam",
@@ -2128,7 +2085,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-110",
+  "id": "regional:r2-108",
   "s": "trad:thaipusam",
   "p": "ASSOCIATED_WITH",
   "o": "temple:batu-caves",
@@ -2147,7 +2104,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-111",
+  "id": "regional:r2-109",
   "s": "trad:thaipusam",
   "p": "ASSOCIATED_WITH",
   "o": "temple:palani",
@@ -2166,7 +2123,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-112",
+  "id": "regional:r2-110",
   "s": "trad:thaipusam",
   "p": "ASSOCIATED_WITH",
   "o": "text:kanda-puranam",
@@ -2189,7 +2146,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-113",
+  "id": "regional:r2-111",
   "s": "trad:thaipusam",
   "p": "ASSOCIATED_WITH",
   "o": "deity:parvati",
@@ -2209,7 +2166,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-114",
+  "id": "regional:r2-112",
   "s": "trad:kumbh-mela",
   "p": "DOCUMENTED_BY",
   "o": "inst:unesco",
@@ -2229,7 +2186,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-115",
+  "id": "regional:r2-113",
   "s": "trad:kumbh-mela",
   "p": "ASSOCIATED_WITH",
   "o": "place:prayaga",
@@ -2252,7 +2209,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-116",
+  "id": "regional:r2-114",
   "s": "trad:kumbh-mela",
   "p": "ASSOCIATED_WITH",
   "o": "narr:samudra-manthana",
@@ -2275,7 +2232,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-117",
+  "id": "regional:r2-115",
   "s": "trad:kumbh-mela",
   "p": "ASSOCIATED_WITH",
   "o": "place:ganga-river",
@@ -2295,7 +2252,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-118",
+  "id": "regional:r2-116",
   "s": "trad:kumbh-mela",
   "p": "ASSOCIATED_WITH",
   "o": "temple:mahakaleshwar",
@@ -2315,7 +2272,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-119",
+  "id": "regional:r2-117",
   "s": "trad:kumbh-mela",
   "p": "ASSOCIATED_WITH",
   "o": "temple:trimbakeshwar",
@@ -2335,7 +2292,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-120",
+  "id": "regional:r2-118",
   "s": "claim:kumbh-mela-antiquity",
   "p": "CONCERNS",
   "o": "trad:kumbh-mela",
@@ -2350,7 +2307,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-121",
+  "id": "regional:r2-119",
   "s": "trad:kumbh-mela",
   "p": "ASSOCIATED_WITH",
   "o": "trad:shaiva",
@@ -2370,7 +2327,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-122",
+  "id": "regional:r2-120",
   "s": "trad:pandharpur-wari",
   "p": "ASSOCIATED_WITH",
   "o": "place:pandharpur",
@@ -2390,7 +2347,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-123",
+  "id": "regional:r2-121",
   "s": "deity:vitthala",
   "p": "CENTRAL_TO",
   "o": "trad:pandharpur-wari",
@@ -2408,7 +2365,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-124",
+  "id": "regional:r2-122",
   "s": "trad:pandharpur-wari",
   "p": "PART_OF",
   "o": "trad:varkari",
@@ -2426,7 +2383,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-125",
+  "id": "regional:r2-123",
   "s": "trad:pandharpur-wari",
   "p": "ASSOCIATED_WITH",
   "o": "person:jnaneshwar",
@@ -2449,7 +2406,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-126",
+  "id": "regional:r2-124",
   "s": "trad:pandharpur-wari",
   "p": "ASSOCIATED_WITH",
   "o": "person:tukaram",
@@ -2472,7 +2429,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-127",
+  "id": "regional:r2-125",
   "s": "trad:pandharpur-wari",
   "p": "ASSOCIATED_WITH",
   "o": "text:tukaram-gatha",
@@ -2490,7 +2447,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-128",
+  "id": "regional:r2-126",
   "s": "deity:shiva",
   "p": "PARENT_OF",
   "o": "deity:ayyappa",
@@ -2514,7 +2471,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-129",
+  "id": "regional:r2-127",
   "s": "deity:mohini",
   "p": "PARENT_OF",
   "o": "deity:ayyappa",
@@ -2538,7 +2495,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-130",
+  "id": "regional:r2-128",
   "s": "deity:ayyappa",
   "p": "CENTRAL_TO",
   "o": "trad:sabarimala-pilgrimage",
@@ -2558,7 +2515,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-131",
+  "id": "regional:r2-129",
   "s": "trad:sabarimala-pilgrimage",
   "p": "ASSOCIATED_WITH",
   "o": "trad:makar-sankranti",
@@ -2578,7 +2535,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-132",
+  "id": "regional:r2-130",
   "s": "deity:shiva",
   "p": "CENTRAL_TO",
   "o": "trad:kanwar-yatra",
@@ -2595,7 +2552,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-133",
+  "id": "regional:r2-131",
   "s": "trad:kanwar-yatra",
   "p": "ASSOCIATED_WITH",
   "o": "place:ganga-river",
@@ -2612,7 +2569,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-134",
+  "id": "regional:r2-132",
   "s": "trad:kanwar-yatra",
   "p": "ASSOCIATED_WITH",
   "o": "temple:baidyanath-deoghar",
@@ -2632,7 +2589,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-135",
+  "id": "regional:r2-133",
   "s": "trad:kanwar-yatra",
   "p": "ASSOCIATED_WITH",
   "o": "narr:samudra-manthana",
@@ -2652,7 +2609,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-136",
+  "id": "regional:r2-134",
   "s": "trad:garba",
   "p": "DOCUMENTED_BY",
   "o": "inst:unesco",
@@ -2672,7 +2629,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-137",
+  "id": "regional:r2-135",
   "s": "trad:garba",
   "p": "PART_OF",
   "o": "trad:navaratri",
@@ -2689,7 +2646,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-138",
+  "id": "regional:r2-136",
   "s": "deity:durga",
   "p": "CENTRAL_TO",
   "o": "trad:garba",
@@ -2709,7 +2666,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-139",
+  "id": "regional:r2-137",
   "s": "trad:yoga-living-heritage",
   "p": "DOCUMENTED_BY",
   "o": "inst:unesco",
@@ -2729,7 +2686,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-140",
+  "id": "regional:r2-138",
   "s": "trad:mudiyettu",
   "p": "DOCUMENTED_BY",
   "o": "inst:unesco",
@@ -2749,7 +2706,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-141",
+  "id": "regional:r2-139",
   "s": "deity:kali",
   "p": "CENTRAL_TO",
   "o": "trad:mudiyettu",
@@ -2769,7 +2726,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-142",
+  "id": "regional:r2-140",
   "s": "trad:mudiyettu",
   "p": "ASSOCIATED_WITH",
   "o": "narr:kali-darika",
@@ -2786,7 +2743,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-143",
+  "id": "regional:r2-141",
   "s": "deity:kali",
   "p": "SLAYS",
   "o": "char:darika",
@@ -2806,7 +2763,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-144",
+  "id": "regional:r2-142",
   "s": "deity:kali",
   "p": "PARTICIPANT_IN",
   "o": "narr:kali-darika",
@@ -2823,7 +2780,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-145",
+  "id": "regional:r2-143",
   "s": "char:darika",
   "p": "PARTICIPANT_IN",
   "o": "narr:kali-darika",
@@ -2840,7 +2797,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-146",
+  "id": "regional:r2-144",
   "s": "deity:shiva",
   "p": "PARTICIPANT_IN",
   "o": "narr:kali-darika",
@@ -2860,7 +2817,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-147",
+  "id": "regional:r2-145",
   "s": "char:narada",
   "p": "PARTICIPANT_IN",
   "o": "narr:kali-darika",
@@ -2877,7 +2834,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-148",
+  "id": "regional:r2-146",
   "s": "trad:ramman",
   "p": "DOCUMENTED_BY",
   "o": "inst:unesco",
@@ -2897,7 +2854,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-149",
+  "id": "regional:r2-147",
   "s": "deity:bhumiyal-devta",
   "p": "CENTRAL_TO",
   "o": "trad:ramman",
@@ -2914,7 +2871,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-150",
+  "id": "regional:r2-148",
   "s": "trad:ramman",
   "p": "ASSOCIATED_WITH",
   "o": "char:rama",
@@ -2934,7 +2891,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-151",
+  "id": "regional:r2-149",
   "s": "trad:ramman",
   "p": "ASSOCIATED_WITH",
   "o": "deity:narasimha",
@@ -2954,7 +2911,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-152",
+  "id": "regional:r2-150",
   "s": "trad:chhau",
   "p": "DOCUMENTED_BY",
   "o": "inst:unesco",
@@ -2974,7 +2931,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-153",
+  "id": "regional:r2-151",
   "s": "trad:chhau",
   "p": "ASSOCIATED_WITH",
   "o": "text:mahabharata",
@@ -2994,7 +2951,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-154",
+  "id": "regional:r2-152",
   "s": "trad:chhau",
   "p": "ASSOCIATED_WITH",
   "o": "text:valmiki-ramayana",
@@ -3014,7 +2971,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-155",
+  "id": "regional:r2-153",
   "s": "trad:sankirtana-manipur",
   "p": "DOCUMENTED_BY",
   "o": "inst:unesco",
@@ -3034,7 +2991,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-156",
+  "id": "regional:r2-154",
   "s": "char:krishna",
   "p": "CENTRAL_TO",
   "o": "trad:sankirtana-manipur",
@@ -3051,7 +3008,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-157",
+  "id": "regional:r2-155",
   "s": "trad:sankirtana-manipur",
   "p": "ASSOCIATED_WITH",
   "o": "trad:gaudiya",
@@ -3074,7 +3031,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-158",
+  "id": "regional:r2-156",
   "s": "trad:vedic-chanting",
   "p": "DOCUMENTED_BY",
   "o": "inst:unesco",
@@ -3094,7 +3051,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-159",
+  "id": "regional:r2-157",
   "s": "trad:vedic-chanting",
   "p": "ASSOCIATED_WITH",
   "o": "text:rigveda",
@@ -3114,7 +3071,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-160",
+  "id": "regional:r2-158",
   "s": "trad:vedic-chanting",
   "p": "ASSOCIATED_WITH",
   "o": "text:samaveda",
@@ -3134,7 +3091,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-161",
+  "id": "regional:r2-159",
   "s": "trad:vedic-chanting",
   "p": "ASSOCIATED_WITH",
   "o": "text:yajurveda",
@@ -3154,7 +3111,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-162",
+  "id": "regional:r2-160",
   "s": "trad:vedic-chanting",
   "p": "ASSOCIATED_WITH",
   "o": "text:atharvaveda",
@@ -3174,7 +3131,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-163",
+  "id": "regional:r2-161",
   "s": "trad:sbek-thom",
   "p": "DOCUMENTED_BY",
   "o": "inst:unesco",
@@ -3194,7 +3151,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-164",
+  "id": "regional:r2-162",
   "s": "trad:sbek-thom",
   "p": "ASSOCIATED_WITH",
   "o": "text:reamker",
@@ -3214,7 +3171,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-165",
+  "id": "regional:r2-163",
   "s": "trad:lkhon-khol-wat-svay-andet",
   "p": "DOCUMENTED_BY",
   "o": "inst:unesco",
@@ -3234,7 +3191,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-166",
+  "id": "regional:r2-164",
   "s": "trad:lkhon-khol-wat-svay-andet",
   "p": "ASSOCIATED_WITH",
   "o": "text:reamker",
@@ -3254,7 +3211,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-167",
+  "id": "regional:r2-165",
   "s": "trad:balinese-dance",
   "p": "DOCUMENTED_BY",
   "o": "inst:unesco",
@@ -3274,7 +3231,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-168",
+  "id": "regional:r2-166",
   "s": "trad:geet-gawai",
   "p": "DOCUMENTED_BY",
   "o": "inst:unesco",
@@ -3294,7 +3251,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-169",
+  "id": "regional:r2-167",
   "s": "trad:geet-gawai",
   "p": "ASSOCIATED_WITH",
   "o": "trad:mauritian-hinduism",
@@ -3314,7 +3271,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-170",
+  "id": "regional:r2-168",
   "s": "trad:sant",
   "p": "ASSOCIATED_WITH",
   "o": "trad:vaishnava",
@@ -3332,7 +3289,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-171",
+  "id": "regional:r2-169",
   "s": "person:ramananda",
   "p": "CENTRAL_TO",
   "o": "trad:ramanandi",
@@ -3352,7 +3309,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-172",
+  "id": "regional:r2-170",
   "s": "person:ramananda",
   "p": "TEACHER_OF",
   "o": "person:kabir",
@@ -3375,7 +3332,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-173",
+  "id": "regional:r2-171",
   "s": "person:kabir",
   "p": "ASSOCIATED_WITH",
   "o": "place:kashi",
@@ -3398,7 +3355,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-174",
+  "id": "regional:r2-172",
   "s": "person:kabir",
   "p": "CENTRAL_TO",
   "o": "trad:kabir-panth",
@@ -3415,7 +3372,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-175",
+  "id": "regional:r2-173",
   "s": "trad:kabir-panth",
   "p": "PART_OF",
   "o": "trad:sant",
@@ -3430,7 +3387,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-176",
+  "id": "regional:r2-174",
   "s": "text:bijak",
   "p": "ATTRIBUTED_TO",
   "o": "person:kabir",
@@ -3450,7 +3407,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-177",
+  "id": "regional:r2-175",
   "s": "text:bijak",
   "p": "CENTRAL_TO",
   "o": "trad:kabir-panth",
@@ -3470,7 +3427,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-178",
+  "id": "regional:r2-176",
   "s": "text:bijak",
   "p": "PART_OF",
   "o": "col:bhakti-literature",
@@ -3485,7 +3442,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-179",
+  "id": "regional:r2-177",
   "s": "text:kabir-granthavali",
   "p": "ATTRIBUTED_TO",
   "o": "person:kabir",
@@ -3500,7 +3457,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-180",
+  "id": "regional:r2-178",
   "s": "person:ramananda",
   "p": "TEACHER_OF",
   "o": "person:ravidas",
@@ -3519,7 +3476,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-181",
+  "id": "regional:r2-179",
   "s": "person:ravidas",
   "p": "ASSOCIATED_WITH",
   "o": "place:kashi",
@@ -3534,7 +3491,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-182",
+  "id": "regional:r2-180",
   "s": "text:ravidas-padas",
   "p": "ATTRIBUTED_TO",
   "o": "person:ravidas",
@@ -3549,7 +3506,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-183",
+  "id": "regional:r2-181",
   "s": "person:ravidas",
   "p": "CENTRAL_TO",
   "o": "trad:ravidassia",
@@ -3566,7 +3523,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-184",
+  "id": "regional:r2-182",
   "s": "person:mirabai",
   "p": "DEVOTEE_OF",
   "o": "char:krishna",
@@ -3584,7 +3541,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-185",
+  "id": "regional:r2-183",
   "s": "person:ravidas",
   "p": "TEACHER_OF",
   "o": "person:mirabai",
@@ -3604,7 +3561,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-186",
+  "id": "regional:r2-184",
   "s": "person:mirabai",
   "p": "ASSOCIATED_WITH",
   "o": "temple:dwarkadhish",
@@ -3624,7 +3581,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-187",
+  "id": "regional:r2-185",
   "s": "person:mirabai",
   "p": "ASSOCIATED_WITH",
   "o": "place:vrindavan",
@@ -3641,7 +3598,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-188",
+  "id": "regional:r2-186",
   "s": "text:mira-padavali",
   "p": "ATTRIBUTED_TO",
   "o": "person:mirabai",
@@ -3656,7 +3613,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-189",
+  "id": "regional:r2-187",
   "s": "char:krishna",
   "p": "APPEARS_IN",
   "o": "text:mira-padavali",
@@ -3674,7 +3631,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-190",
+  "id": "regional:r2-188",
   "s": "text:bhaktamal",
   "p": "COMPOSED_BY",
   "o": "person:nabhadas",
@@ -3689,7 +3646,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-191",
+  "id": "regional:r2-189",
   "s": "text:bhaktamal",
   "p": "PART_OF",
   "o": "col:bhakti-literature",
@@ -3704,8 +3661,54 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-192",
+  "id": "regional:r2-190",
   "s": "person:kabir",
+  "p": "MENTIONED_IN",
+  "o": "text:bhaktamal",
+  "qualifiers": {
+   "note": "given a stanza in Nābhādās’s garland (stanza numbers not checked)"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:hawley-2015"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bhaktamal"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-191",
+  "s": "person:ravidas",
+  "p": "MENTIONED_IN",
+  "o": "text:bhaktamal",
+  "qualifiers": {
+   "note": "given a stanza in Nābhādās’s garland (stanza numbers not checked)"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:hawley-2015"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bhaktamal"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-192",
+  "s": "person:mirabai",
   "p": "MENTIONED_IN",
   "o": "text:bhaktamal",
   "qualifiers": {
@@ -3728,7 +3731,7 @@
  },
  {
   "id": "regional:r2-193",
-  "s": "person:ravidas",
+  "s": "person:surdas",
   "p": "MENTIONED_IN",
   "o": "text:bhaktamal",
   "qualifiers": {
@@ -3751,52 +3754,6 @@
  },
  {
   "id": "regional:r2-194",
-  "s": "person:mirabai",
-  "p": "MENTIONED_IN",
-  "o": "text:bhaktamal",
-  "qualifiers": {
-   "note": "given a stanza in Nābhādās’s garland (stanza numbers not checked)"
-  },
-  "evidenceClass": 5,
-  "sources": [
-   {
-    "source": "src:hawley-2015"
-   },
-   {
-    "source": "src:wikipedia",
-    "url": "https://en.wikipedia.org/wiki/Bhaktamal"
-   }
-  ],
-  "confidence": "medium",
-  "status": "reference-checked",
-  "agent": "regional",
-  "lastVerified": "2026-11-08"
- },
- {
-  "id": "regional:r2-195",
-  "s": "person:surdas",
-  "p": "MENTIONED_IN",
-  "o": "text:bhaktamal",
-  "qualifiers": {
-   "note": "given a stanza in Nābhādās’s garland (stanza numbers not checked)"
-  },
-  "evidenceClass": 5,
-  "sources": [
-   {
-    "source": "src:hawley-2015"
-   },
-   {
-    "source": "src:wikipedia",
-    "url": "https://en.wikipedia.org/wiki/Bhaktamal"
-   }
-  ],
-  "confidence": "medium",
-  "status": "reference-checked",
-  "agent": "regional",
-  "lastVerified": "2026-11-08"
- },
- {
-  "id": "regional:r2-196",
   "s": "person:tulsidas",
   "p": "MENTIONED_IN",
   "o": "text:bhaktamal",
@@ -3819,7 +3776,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-197",
+  "id": "regional:r2-195",
   "s": "person:namdev",
   "p": "MENTIONED_IN",
   "o": "text:bhaktamal",
@@ -3842,7 +3799,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-198",
+  "id": "regional:r2-196",
   "s": "person:ramananda",
   "p": "MENTIONED_IN",
   "o": "text:bhaktamal",
@@ -3865,7 +3822,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-199",
+  "id": "regional:r2-197",
   "s": "text:bhaktirasabodhini",
   "p": "COMMENTARY_ON",
   "o": "text:bhaktamal",
@@ -3880,7 +3837,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-200",
+  "id": "regional:r2-198",
   "s": "text:bhaktirasabodhini",
   "p": "COMPOSED_BY",
   "o": "person:priyadas",
@@ -3895,8 +3852,43 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-201",
+  "id": "regional:r2-199",
   "s": "text:vinaya-patrika",
+  "p": "ATTRIBUTED_TO",
+  "o": "person:tulsidas",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:mcgregor-1984"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tulsidas"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-200",
+  "s": "text:vinaya-patrika",
+  "p": "PART_OF",
+  "o": "col:bhakti-literature",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:mcgregor-1984"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-201",
+  "s": "text:kavitavali",
   "p": "ATTRIBUTED_TO",
   "o": "person:tulsidas",
   "evidenceClass": 6,
@@ -3916,7 +3908,7 @@
  },
  {
   "id": "regional:r2-202",
-  "s": "text:vinaya-patrika",
+  "s": "text:kavitavali",
   "p": "PART_OF",
   "o": "col:bhakti-literature",
   "evidenceClass": 5,
@@ -3931,7 +3923,7 @@
  },
  {
   "id": "regional:r2-203",
-  "s": "text:kavitavali",
+  "s": "text:gitavali",
   "p": "ATTRIBUTED_TO",
   "o": "person:tulsidas",
   "evidenceClass": 6,
@@ -3951,7 +3943,7 @@
  },
  {
   "id": "regional:r2-204",
-  "s": "text:kavitavali",
+  "s": "text:gitavali",
   "p": "PART_OF",
   "o": "col:bhakti-literature",
   "evidenceClass": 5,
@@ -3966,7 +3958,7 @@
  },
  {
   "id": "regional:r2-205",
-  "s": "text:gitavali",
+  "s": "text:hanuman-bahuk",
   "p": "ATTRIBUTED_TO",
   "o": "person:tulsidas",
   "evidenceClass": 6,
@@ -3986,7 +3978,7 @@
  },
  {
   "id": "regional:r2-206",
-  "s": "text:gitavali",
+  "s": "text:hanuman-bahuk",
   "p": "PART_OF",
   "o": "col:bhakti-literature",
   "evidenceClass": 5,
@@ -4001,41 +3993,6 @@
  },
  {
   "id": "regional:r2-207",
-  "s": "text:hanuman-bahuk",
-  "p": "ATTRIBUTED_TO",
-  "o": "person:tulsidas",
-  "evidenceClass": 6,
-  "sources": [
-   {
-    "source": "src:mcgregor-1984"
-   },
-   {
-    "source": "src:wikipedia",
-    "url": "https://en.wikipedia.org/wiki/Tulsidas"
-   }
-  ],
-  "confidence": "high",
-  "status": "reference-checked",
-  "agent": "regional",
-  "lastVerified": "2026-11-08"
- },
- {
-  "id": "regional:r2-208",
-  "s": "text:hanuman-bahuk",
-  "p": "PART_OF",
-  "o": "col:bhakti-literature",
-  "evidenceClass": 5,
-  "sources": [
-   {
-    "source": "src:mcgregor-1984"
-   }
-  ],
-  "confidence": "high",
-  "status": "source-checked",
-  "agent": "regional"
- },
- {
-  "id": "regional:r2-209",
   "s": "char:rama",
   "p": "APPEARS_IN",
   "o": "text:vinaya-patrika",
@@ -4055,7 +4012,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-210",
+  "id": "regional:r2-208",
   "s": "char:hanuman",
   "p": "APPEARS_IN",
   "o": "text:hanuman-bahuk",
@@ -4075,7 +4032,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-211",
+  "id": "regional:r2-209",
   "s": "text:kavitavali",
   "p": "RETELLS",
   "o": "text:valmiki-ramayana",
@@ -4093,7 +4050,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-212",
+  "id": "regional:r2-210",
   "s": "text:gitavali",
   "p": "RETELLS",
   "o": "text:valmiki-ramayana",
@@ -4111,7 +4068,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-213",
+  "id": "regional:r2-211",
   "s": "text:hanuman-chalisa",
   "p": "CENTRAL_TO",
   "o": "trad:vaishnava",
@@ -4131,7 +4088,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-214",
+  "id": "regional:r2-212",
   "s": "person:vallabha",
   "p": "CENTRAL_TO",
   "o": "trad:pushtimarg",
@@ -4149,7 +4106,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-215",
+  "id": "regional:r2-213",
   "s": "person:vallabha",
   "p": "PARENT_OF",
   "o": "person:vitthalanatha",
@@ -4166,7 +4123,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-216",
+  "id": "regional:r2-214",
   "s": "trad:ashtachap",
   "p": "PART_OF",
   "o": "trad:pushtimarg",
@@ -4181,7 +4138,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-217",
+  "id": "regional:r2-215",
   "s": "person:vitthalanatha",
   "p": "CENTRAL_TO",
   "o": "trad:ashtachap",
@@ -4201,7 +4158,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-218",
+  "id": "regional:r2-216",
   "s": "person:surdas",
   "p": "MEMBER_OF",
   "o": "trad:ashtachap",
@@ -4224,7 +4181,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-219",
+  "id": "regional:r2-217",
   "s": "trad:ashtachap",
   "p": "ASSOCIATED_WITH",
   "o": "temple:shrinathji-nathdwara",
@@ -4244,7 +4201,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-220",
+  "id": "regional:r2-218",
   "s": "person:kumbhandas",
   "p": "MEMBER_OF",
   "o": "trad:ashtachap",
@@ -4264,7 +4221,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-221",
+  "id": "regional:r2-219",
   "s": "person:vallabha",
   "p": "TEACHER_OF",
   "o": "person:kumbhandas",
@@ -4282,7 +4239,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-222",
+  "id": "regional:r2-220",
   "s": "person:kumbhandas",
   "p": "DEVOTEE_OF",
   "o": "char:krishna",
@@ -4300,7 +4257,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-223",
+  "id": "regional:r2-221",
   "s": "person:paramananddas",
   "p": "MEMBER_OF",
   "o": "trad:ashtachap",
@@ -4320,7 +4277,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-224",
+  "id": "regional:r2-222",
   "s": "person:vallabha",
   "p": "TEACHER_OF",
   "o": "person:paramananddas",
@@ -4338,7 +4295,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-225",
+  "id": "regional:r2-223",
   "s": "person:paramananddas",
   "p": "DEVOTEE_OF",
   "o": "char:krishna",
@@ -4356,7 +4313,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-226",
+  "id": "regional:r2-224",
   "s": "person:krishnadas-ashtachap",
   "p": "MEMBER_OF",
   "o": "trad:ashtachap",
@@ -4376,7 +4333,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-227",
+  "id": "regional:r2-225",
   "s": "person:vallabha",
   "p": "TEACHER_OF",
   "o": "person:krishnadas-ashtachap",
@@ -4394,7 +4351,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-228",
+  "id": "regional:r2-226",
   "s": "person:krishnadas-ashtachap",
   "p": "DEVOTEE_OF",
   "o": "char:krishna",
@@ -4412,7 +4369,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-229",
+  "id": "regional:r2-227",
   "s": "person:nanddas",
   "p": "MEMBER_OF",
   "o": "trad:ashtachap",
@@ -4432,7 +4389,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-230",
+  "id": "regional:r2-228",
   "s": "person:vitthalanatha",
   "p": "TEACHER_OF",
   "o": "person:nanddas",
@@ -4450,7 +4407,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-231",
+  "id": "regional:r2-229",
   "s": "person:nanddas",
   "p": "DEVOTEE_OF",
   "o": "char:krishna",
@@ -4468,7 +4425,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-232",
+  "id": "regional:r2-230",
   "s": "person:chitswami",
   "p": "MEMBER_OF",
   "o": "trad:ashtachap",
@@ -4488,7 +4445,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-233",
+  "id": "regional:r2-231",
   "s": "person:vitthalanatha",
   "p": "TEACHER_OF",
   "o": "person:chitswami",
@@ -4506,7 +4463,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-234",
+  "id": "regional:r2-232",
   "s": "person:chitswami",
   "p": "DEVOTEE_OF",
   "o": "char:krishna",
@@ -4524,7 +4481,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-235",
+  "id": "regional:r2-233",
   "s": "person:govindswami",
   "p": "MEMBER_OF",
   "o": "trad:ashtachap",
@@ -4544,7 +4501,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-236",
+  "id": "regional:r2-234",
   "s": "person:vitthalanatha",
   "p": "TEACHER_OF",
   "o": "person:govindswami",
@@ -4562,7 +4519,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-237",
+  "id": "regional:r2-235",
   "s": "person:govindswami",
   "p": "DEVOTEE_OF",
   "o": "char:krishna",
@@ -4580,7 +4537,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-238",
+  "id": "regional:r2-236",
   "s": "person:chaturbhujdas",
   "p": "MEMBER_OF",
   "o": "trad:ashtachap",
@@ -4600,7 +4557,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-239",
+  "id": "regional:r2-237",
   "s": "person:vitthalanatha",
   "p": "TEACHER_OF",
   "o": "person:chaturbhujdas",
@@ -4618,7 +4575,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-240",
+  "id": "regional:r2-238",
   "s": "person:chaturbhujdas",
   "p": "DEVOTEE_OF",
   "o": "char:krishna",
@@ -4636,7 +4593,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-241",
+  "id": "regional:r2-239",
   "s": "person:kumbhandas",
   "p": "PARENT_OF",
   "o": "person:chaturbhujdas",
@@ -4654,7 +4611,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-242",
+  "id": "regional:r2-240",
   "s": "person:surdas",
   "p": "APPEARS_IN",
   "o": "text:caurasi-vaishnavan-ki-varta",
@@ -4675,7 +4632,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-243",
+  "id": "regional:r2-241",
   "s": "person:kumbhandas",
   "p": "APPEARS_IN",
   "o": "text:caurasi-vaishnavan-ki-varta",
@@ -4696,7 +4653,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-244",
+  "id": "regional:r2-242",
   "s": "person:paramananddas",
   "p": "APPEARS_IN",
   "o": "text:caurasi-vaishnavan-ki-varta",
@@ -4717,7 +4674,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-245",
+  "id": "regional:r2-243",
   "s": "person:krishnadas-ashtachap",
   "p": "APPEARS_IN",
   "o": "text:caurasi-vaishnavan-ki-varta",
@@ -4738,7 +4695,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-246",
+  "id": "regional:r2-244",
   "s": "text:caurasi-vaishnavan-ki-varta",
   "p": "CENTRAL_TO",
   "o": "trad:pushtimarg",
@@ -4753,10 +4710,45 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-247",
+  "id": "regional:r2-245",
   "s": "person:rupa-goswami",
   "p": "DEVOTEE_OF",
   "o": "char:krishna",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:de-1961"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-246",
+  "s": "person:rupa-goswami",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:vrindavan",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:de-1961"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Six_Goswamis_of_Vrindavan"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-247",
+  "s": "person:rupa-goswami",
+  "p": "CENTRAL_TO",
+  "o": "trad:gaudiya",
   "evidenceClass": 6,
   "sources": [
    {
@@ -4769,7 +4761,22 @@
  },
  {
   "id": "regional:r2-248",
-  "s": "person:rupa-goswami",
+  "s": "person:sanatana-goswami",
+  "p": "DEVOTEE_OF",
+  "o": "char:krishna",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:de-1961"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-249",
+  "s": "person:sanatana-goswami",
   "p": "ASSOCIATED_WITH",
   "o": "place:vrindavan",
   "evidenceClass": 6,
@@ -4788,25 +4795,10 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-249",
-  "s": "person:rupa-goswami",
-  "p": "CENTRAL_TO",
-  "o": "trad:gaudiya",
-  "evidenceClass": 6,
-  "sources": [
-   {
-    "source": "src:de-1961"
-   }
-  ],
-  "confidence": "high",
-  "status": "source-checked",
-  "agent": "regional"
- },
- {
   "id": "regional:r2-250",
   "s": "person:sanatana-goswami",
-  "p": "DEVOTEE_OF",
-  "o": "char:krishna",
+  "p": "CENTRAL_TO",
+  "o": "trad:gaudiya",
   "evidenceClass": 6,
   "sources": [
    {
@@ -4819,7 +4811,22 @@
  },
  {
   "id": "regional:r2-251",
-  "s": "person:sanatana-goswami",
+  "s": "person:jiva-goswami",
+  "p": "DEVOTEE_OF",
+  "o": "char:krishna",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:de-1961"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-252",
+  "s": "person:jiva-goswami",
   "p": "ASSOCIATED_WITH",
   "o": "place:vrindavan",
   "evidenceClass": 6,
@@ -4838,25 +4845,10 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-252",
-  "s": "person:sanatana-goswami",
-  "p": "CENTRAL_TO",
-  "o": "trad:gaudiya",
-  "evidenceClass": 6,
-  "sources": [
-   {
-    "source": "src:de-1961"
-   }
-  ],
-  "confidence": "high",
-  "status": "source-checked",
-  "agent": "regional"
- },
- {
   "id": "regional:r2-253",
   "s": "person:jiva-goswami",
-  "p": "DEVOTEE_OF",
-  "o": "char:krishna",
+  "p": "CENTRAL_TO",
+  "o": "trad:gaudiya",
   "evidenceClass": 6,
   "sources": [
    {
@@ -4869,7 +4861,22 @@
  },
  {
   "id": "regional:r2-254",
-  "s": "person:jiva-goswami",
+  "s": "person:gopala-bhatta-goswami",
+  "p": "DEVOTEE_OF",
+  "o": "char:krishna",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:de-1961"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-255",
+  "s": "person:gopala-bhatta-goswami",
   "p": "ASSOCIATED_WITH",
   "o": "place:vrindavan",
   "evidenceClass": 6,
@@ -4888,25 +4895,10 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-255",
-  "s": "person:jiva-goswami",
-  "p": "CENTRAL_TO",
-  "o": "trad:gaudiya",
-  "evidenceClass": 6,
-  "sources": [
-   {
-    "source": "src:de-1961"
-   }
-  ],
-  "confidence": "high",
-  "status": "source-checked",
-  "agent": "regional"
- },
- {
   "id": "regional:r2-256",
   "s": "person:gopala-bhatta-goswami",
-  "p": "DEVOTEE_OF",
-  "o": "char:krishna",
+  "p": "CENTRAL_TO",
+  "o": "trad:gaudiya",
   "evidenceClass": 6,
   "sources": [
    {
@@ -4919,7 +4911,22 @@
  },
  {
   "id": "regional:r2-257",
-  "s": "person:gopala-bhatta-goswami",
+  "s": "person:raghunatha-bhatta-goswami",
+  "p": "DEVOTEE_OF",
+  "o": "char:krishna",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:de-1961"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-258",
+  "s": "person:raghunatha-bhatta-goswami",
   "p": "ASSOCIATED_WITH",
   "o": "place:vrindavan",
   "evidenceClass": 6,
@@ -4938,25 +4945,10 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-258",
-  "s": "person:gopala-bhatta-goswami",
-  "p": "CENTRAL_TO",
-  "o": "trad:gaudiya",
-  "evidenceClass": 6,
-  "sources": [
-   {
-    "source": "src:de-1961"
-   }
-  ],
-  "confidence": "high",
-  "status": "source-checked",
-  "agent": "regional"
- },
- {
   "id": "regional:r2-259",
   "s": "person:raghunatha-bhatta-goswami",
-  "p": "DEVOTEE_OF",
-  "o": "char:krishna",
+  "p": "CENTRAL_TO",
+  "o": "trad:gaudiya",
   "evidenceClass": 6,
   "sources": [
    {
@@ -4969,41 +4961,6 @@
  },
  {
   "id": "regional:r2-260",
-  "s": "person:raghunatha-bhatta-goswami",
-  "p": "ASSOCIATED_WITH",
-  "o": "place:vrindavan",
-  "evidenceClass": 6,
-  "sources": [
-   {
-    "source": "src:de-1961"
-   },
-   {
-    "source": "src:wikipedia",
-    "url": "https://en.wikipedia.org/wiki/Six_Goswamis_of_Vrindavan"
-   }
-  ],
-  "confidence": "high",
-  "status": "reference-checked",
-  "agent": "regional",
-  "lastVerified": "2026-11-08"
- },
- {
-  "id": "regional:r2-261",
-  "s": "person:raghunatha-bhatta-goswami",
-  "p": "CENTRAL_TO",
-  "o": "trad:gaudiya",
-  "evidenceClass": 6,
-  "sources": [
-   {
-    "source": "src:de-1961"
-   }
-  ],
-  "confidence": "high",
-  "status": "source-checked",
-  "agent": "regional"
- },
- {
-  "id": "regional:r2-262",
   "s": "person:raghunatha-dasa-goswami",
   "p": "DEVOTEE_OF",
   "o": "char:krishna",
@@ -5018,7 +4975,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-263",
+  "id": "regional:r2-261",
   "s": "person:raghunatha-dasa-goswami",
   "p": "ASSOCIATED_WITH",
   "o": "place:vrindavan",
@@ -5038,7 +4995,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-264",
+  "id": "regional:r2-262",
   "s": "person:raghunatha-dasa-goswami",
   "p": "CENTRAL_TO",
   "o": "trad:gaudiya",
@@ -5053,7 +5010,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-265",
+  "id": "regional:r2-263",
   "s": "person:sanatana-goswami",
   "p": "SIBLING_OF",
   "o": "person:rupa-goswami",
@@ -5073,7 +5030,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-266",
+  "id": "regional:r2-264",
   "s": "person:chaitanya",
   "p": "TEACHER_OF",
   "o": "person:rupa-goswami",
@@ -5095,7 +5052,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-267",
+  "id": "regional:r2-265",
   "s": "person:chaitanya",
   "p": "TEACHER_OF",
   "o": "person:sanatana-goswami",
@@ -5117,7 +5074,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-268",
+  "id": "regional:r2-266",
   "s": "person:rupa-goswami",
   "p": "TEACHER_OF",
   "o": "person:jiva-goswami",
@@ -5140,7 +5097,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-269",
+  "id": "regional:r2-267",
   "s": "person:rupa-goswami",
   "p": "TEACHER_OF",
   "o": "person:krishnadasa-kaviraja",
@@ -5159,7 +5116,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-270",
+  "id": "regional:r2-268",
   "s": "person:raghunatha-dasa-goswami",
   "p": "TEACHER_OF",
   "o": "person:krishnadasa-kaviraja",
@@ -5177,7 +5134,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-271",
+  "id": "regional:r2-269",
   "s": "col:six-goswamis-corpus",
   "p": "PART_OF",
   "o": "col:bhakti-literature",
@@ -5192,7 +5149,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-272",
+  "id": "regional:r2-270",
   "s": "text:bhaktirasamrtasindhu",
   "p": "COMPOSED_BY",
   "o": "person:rupa-goswami",
@@ -5213,7 +5170,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-273",
+  "id": "regional:r2-271",
   "s": "text:bhaktirasamrtasindhu",
   "p": "PART_OF",
   "o": "col:six-goswamis-corpus",
@@ -5228,7 +5185,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-274",
+  "id": "regional:r2-272",
   "s": "text:bhaktirasamrtasindhu",
   "p": "CENTRAL_TO",
   "o": "trad:gaudiya",
@@ -5243,7 +5200,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-275",
+  "id": "regional:r2-273",
   "s": "text:bhaktirasamrtasindhu",
   "p": "ASSOCIATED_WITH",
   "o": "place:vrindavan",
@@ -5264,7 +5221,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-276",
+  "id": "regional:r2-274",
   "s": "text:ujjvalanilamani",
   "p": "ATTRIBUTED_TO",
   "o": "person:rupa-goswami",
@@ -5279,7 +5236,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-277",
+  "id": "regional:r2-275",
   "s": "char:radha",
   "p": "APPEARS_IN",
   "o": "text:ujjvalanilamani",
@@ -5300,7 +5257,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-278",
+  "id": "regional:r2-276",
   "s": "text:ujjvalanilamani",
   "p": "PART_OF",
   "o": "col:six-goswamis-corpus",
@@ -5315,7 +5272,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-279",
+  "id": "regional:r2-277",
   "s": "text:haribhaktivilasa",
   "p": "ATTRIBUTED_TO",
   "o": "person:gopala-bhatta-goswami",
@@ -5331,7 +5288,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-280",
+  "id": "regional:r2-278",
   "s": "text:haribhaktivilasa",
   "p": "PART_OF",
   "o": "col:six-goswamis-corpus",
@@ -5346,7 +5303,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-281",
+  "id": "regional:r2-279",
   "s": "text:sat-sandarbha",
   "p": "COMPOSED_BY",
   "o": "person:jiva-goswami",
@@ -5361,7 +5318,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-282",
+  "id": "regional:r2-280",
   "s": "text:sat-sandarbha",
   "p": "COMMENTARY_ON",
   "o": "text:bhagavata-purana",
@@ -5379,7 +5336,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-283",
+  "id": "regional:r2-281",
   "s": "text:sat-sandarbha",
   "p": "PART_OF",
   "o": "col:six-goswamis-corpus",
@@ -5394,7 +5351,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-284",
+  "id": "regional:r2-282",
   "s": "text:chaitanya-bhagavata",
   "p": "COMPOSED_BY",
   "o": "person:vrindavana-dasa",
@@ -5409,7 +5366,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-285",
+  "id": "regional:r2-283",
   "s": "person:chaitanya",
   "p": "APPEARS_IN",
   "o": "text:chaitanya-bhagavata",
@@ -5427,7 +5384,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-286",
+  "id": "regional:r2-284",
   "s": "text:chaitanya-charitamrita",
   "p": "DERIVED_FROM",
   "o": "text:chaitanya-bhagavata",
@@ -5445,7 +5402,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-287",
+  "id": "regional:r2-285",
   "s": "text:shikshashtaka",
   "p": "ATTRIBUTED_TO",
   "o": "person:chaitanya",
@@ -5462,7 +5419,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-288",
+  "id": "regional:r2-286",
   "s": "text:shikshashtaka",
   "p": "PART_OF",
   "o": "text:chaitanya-charitamrita",
@@ -5485,7 +5442,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-289",
+  "id": "regional:r2-287",
   "s": "col:shakta-padavali",
   "p": "PART_OF",
   "o": "col:bhakti-literature",
@@ -5500,7 +5457,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-290",
+  "id": "regional:r2-288",
   "s": "deity:kali",
   "p": "APPEARS_IN",
   "o": "col:shakta-padavali",
@@ -5518,7 +5475,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-291",
+  "id": "regional:r2-289",
   "s": "col:shakta-padavali",
   "p": "ASSOCIATED_WITH",
   "o": "trad:durga-puja",
@@ -5536,7 +5493,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-292",
+  "id": "regional:r2-290",
   "s": "person:ramprasad-sen",
   "p": "DEVOTEE_OF",
   "o": "deity:kali",
@@ -5551,7 +5508,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-293",
+  "id": "regional:r2-291",
   "s": "person:kamalakanta-bhattacharya",
   "p": "DEVOTEE_OF",
   "o": "deity:kali",
@@ -5566,7 +5523,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-294",
+  "id": "regional:r2-292",
   "s": "col:shakta-padavali",
   "p": "ATTRIBUTED_TO",
   "o": "person:ramprasad-sen",
@@ -5584,7 +5541,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-295",
+  "id": "regional:r2-293",
   "s": "col:shakta-padavali",
   "p": "ATTRIBUTED_TO",
   "o": "person:kamalakanta-bhattacharya",
@@ -5602,7 +5559,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-296",
+  "id": "regional:r2-294",
   "s": "person:baru-chandidas",
   "p": "DEVOTEE_OF",
   "o": "char:krishna",
@@ -5617,7 +5574,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-297",
+  "id": "regional:r2-295",
   "s": "text:srikrishnakirtan",
   "p": "ATTRIBUTED_TO",
   "o": "person:baru-chandidas",
@@ -5632,7 +5589,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-298",
+  "id": "regional:r2-296",
   "s": "char:radha",
   "p": "APPEARS_IN",
   "o": "text:srikrishnakirtan",
@@ -5650,7 +5607,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-299",
+  "id": "regional:r2-297",
   "s": "char:krishna",
   "p": "APPEARS_IN",
   "o": "text:srikrishnakirtan",
@@ -5668,7 +5625,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-300",
+  "id": "regional:r2-298",
   "s": "text:srikrishnakirtan",
   "p": "DERIVED_FROM",
   "o": "text:gita-govinda",
@@ -5686,7 +5643,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-301",
+  "id": "regional:r2-299",
   "s": "person:vidyapati",
   "p": "DEVOTEE_OF",
   "o": "deity:shiva",
@@ -5703,7 +5660,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-302",
+  "id": "regional:r2-300",
   "s": "person:vidyapati",
   "p": "DEVOTEE_OF",
   "o": "char:krishna",
@@ -5718,7 +5675,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-303",
+  "id": "regional:r2-301",
   "s": "person:vidyapati",
   "p": "ASSOCIATED_WITH",
   "o": "place:mithila",
@@ -5738,7 +5695,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-304",
+  "id": "regional:r2-302",
   "s": "text:vidyapati-padavali",
   "p": "ATTRIBUTED_TO",
   "o": "person:vidyapati",
@@ -5755,7 +5712,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-305",
+  "id": "regional:r2-303",
   "s": "char:radha",
   "p": "APPEARS_IN",
   "o": "text:vidyapati-padavali",
@@ -5773,7 +5730,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-306",
+  "id": "regional:r2-304",
   "s": "text:durgabhaktitarangini",
   "p": "COMPOSED_BY",
   "o": "person:vidyapati",
@@ -5791,7 +5748,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-307",
+  "id": "regional:r2-305",
   "s": "text:durgabhaktitarangini",
   "p": "ASSOCIATED_WITH",
   "o": "trad:navaratri",
@@ -5809,7 +5766,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-308",
+  "id": "regional:r2-306",
   "s": "text:naam-ghosha",
   "p": "COMPOSED_BY",
   "o": "person:madhavdev",
@@ -5829,7 +5786,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-309",
+  "id": "regional:r2-307",
   "s": "text:naam-ghosha",
   "p": "CENTRAL_TO",
   "o": "trad:ekasarana",
@@ -5844,7 +5801,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-310",
+  "id": "regional:r2-308",
   "s": "col:borgeet",
   "p": "ATTRIBUTED_TO",
   "o": "person:sankardev",
@@ -5861,7 +5818,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-311",
+  "id": "regional:r2-309",
   "s": "col:borgeet",
   "p": "ATTRIBUTED_TO",
   "o": "person:madhavdev",
@@ -5878,7 +5835,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-312",
+  "id": "regional:r2-310",
   "s": "person:sankardev",
   "p": "CENTRAL_TO",
   "o": "trad:ankiya-naat",
@@ -5898,7 +5855,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-313",
+  "id": "regional:r2-311",
   "s": "char:krishna",
   "p": "CENTRAL_TO",
   "o": "trad:ankiya-naat",
@@ -5915,7 +5872,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-314",
+  "id": "regional:r2-312",
   "s": "trad:sattriya",
   "p": "DERIVED_FROM",
   "o": "trad:ankiya-naat",
@@ -5932,7 +5889,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-315",
+  "id": "regional:r2-313",
   "s": "trad:sattra",
   "p": "PART_OF",
   "o": "trad:ekasarana",
@@ -5947,7 +5904,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-316",
+  "id": "regional:r2-314",
   "s": "trad:sattriya",
   "p": "ASSOCIATED_WITH",
   "o": "trad:sattra",
@@ -5964,7 +5921,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-317",
+  "id": "regional:r2-315",
   "s": "deity:jagannatha",
   "p": "CENTRAL_TO",
   "o": "trad:panchasakha",
@@ -5979,7 +5936,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-318",
+  "id": "regional:r2-316",
   "s": "person:jagannatha-dasa",
   "p": "MEMBER_OF",
   "o": "trad:panchasakha",
@@ -5996,8 +5953,43 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-319",
+  "id": "regional:r2-317",
   "s": "person:balarama-dasa",
+  "p": "MEMBER_OF",
+  "o": "trad:panchasakha",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Balarama_Dasa"
+   },
+   {
+    "source": "src:mansinha-1962"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-318",
+  "s": "person:balarama-dasa",
+  "p": "DEVOTEE_OF",
+  "o": "deity:jagannatha",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:mansinha-1962"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-319",
+  "s": "person:achyutananda-dasa",
   "p": "MEMBER_OF",
   "o": "trad:panchasakha",
   "evidenceClass": 5,
@@ -6017,7 +6009,7 @@
  },
  {
   "id": "regional:r2-320",
-  "s": "person:balarama-dasa",
+  "s": "person:achyutananda-dasa",
   "p": "DEVOTEE_OF",
   "o": "deity:jagannatha",
   "evidenceClass": 6,
@@ -6032,7 +6024,7 @@
  },
  {
   "id": "regional:r2-321",
-  "s": "person:achyutananda-dasa",
+  "s": "person:jasobanta-dasa",
   "p": "MEMBER_OF",
   "o": "trad:panchasakha",
   "evidenceClass": 5,
@@ -6052,7 +6044,7 @@
  },
  {
   "id": "regional:r2-322",
-  "s": "person:achyutananda-dasa",
+  "s": "person:jasobanta-dasa",
   "p": "DEVOTEE_OF",
   "o": "deity:jagannatha",
   "evidenceClass": 6,
@@ -6067,7 +6059,7 @@
  },
  {
   "id": "regional:r2-323",
-  "s": "person:jasobanta-dasa",
+  "s": "person:ananta-dasa",
   "p": "MEMBER_OF",
   "o": "trad:panchasakha",
   "evidenceClass": 5,
@@ -6087,7 +6079,7 @@
  },
  {
   "id": "regional:r2-324",
-  "s": "person:jasobanta-dasa",
+  "s": "person:ananta-dasa",
   "p": "DEVOTEE_OF",
   "o": "deity:jagannatha",
   "evidenceClass": 6,
@@ -6102,41 +6094,6 @@
  },
  {
   "id": "regional:r2-325",
-  "s": "person:ananta-dasa",
-  "p": "MEMBER_OF",
-  "o": "trad:panchasakha",
-  "evidenceClass": 5,
-  "sources": [
-   {
-    "source": "src:wikipedia",
-    "url": "https://en.wikipedia.org/wiki/Balarama_Dasa"
-   },
-   {
-    "source": "src:mansinha-1962"
-   }
-  ],
-  "confidence": "high",
-  "status": "reference-checked",
-  "agent": "regional",
-  "lastVerified": "2026-11-08"
- },
- {
-  "id": "regional:r2-326",
-  "s": "person:ananta-dasa",
-  "p": "DEVOTEE_OF",
-  "o": "deity:jagannatha",
-  "evidenceClass": 6,
-  "sources": [
-   {
-    "source": "src:mansinha-1962"
-   }
-  ],
-  "confidence": "medium",
-  "status": "source-checked",
-  "agent": "regional"
- },
- {
-  "id": "regional:r2-327",
   "s": "text:jagamohana-ramayana",
   "p": "COMPOSED_BY",
   "o": "person:balarama-dasa",
@@ -6156,7 +6113,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-328",
+  "id": "regional:r2-326",
   "s": "text:jagamohana-ramayana",
   "p": "RETELLS",
   "o": "text:valmiki-ramayana",
@@ -6174,7 +6131,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-329",
+  "id": "regional:r2-327",
   "s": "text:jagamohana-ramayana",
   "p": "PART_OF",
   "o": "col:regional-retellings",
@@ -6189,7 +6146,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-330",
+  "id": "regional:r2-328",
   "s": "char:rama",
   "p": "APPEARS_IN",
   "o": "text:jagamohana-ramayana",
@@ -6207,7 +6164,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-331",
+  "id": "regional:r2-329",
   "s": "person:janabai",
   "p": "DEVOTEE_OF",
   "o": "deity:vitthala",
@@ -6224,7 +6181,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-332",
+  "id": "regional:r2-330",
   "s": "person:janabai",
   "p": "ASSOCIATED_WITH",
   "o": "place:pandharpur",
@@ -6241,7 +6198,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-333",
+  "id": "regional:r2-331",
   "s": "person:namdev",
   "p": "TEACHER_OF",
   "o": "person:janabai",
@@ -6265,7 +6222,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-334",
+  "id": "regional:r2-332",
   "s": "person:muktabai",
   "p": "SIBLING_OF",
   "o": "person:jnaneshwar",
@@ -6285,7 +6242,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-335",
+  "id": "regional:r2-333",
   "s": "person:muktabai",
   "p": "DEVOTEE_OF",
   "o": "deity:vitthala",
@@ -6300,7 +6257,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-336",
+  "id": "regional:r2-334",
   "s": "person:chokhamela",
   "p": "DEVOTEE_OF",
   "o": "deity:vitthala",
@@ -6315,7 +6272,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-337",
+  "id": "regional:r2-335",
   "s": "person:chokhamela",
   "p": "ASSOCIATED_WITH",
   "o": "place:pandharpur",
@@ -6327,15 +6284,17 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Chokhamela"
+   },
+   {
+    "source": "src:zelliot-berntsen-1988"
    }
   ],
   "confidence": "high",
-  "status": "reference-checked",
-  "agent": "regional",
-  "lastVerified": "2026-11-08"
+  "status": "source-checked",
+  "agent": "regional"
  },
  {
-  "id": "regional:r2-338",
+  "id": "regional:r2-336",
   "s": "person:chokhamela",
   "p": "ASSOCIATED_WITH",
   "o": "temple:vitthala-pandharpur",
@@ -6353,7 +6312,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-339",
+  "id": "regional:r2-337",
   "s": "person:tukaram",
   "p": "TEACHER_OF",
   "o": "person:bahinabai",
@@ -6374,7 +6333,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-340",
+  "id": "regional:r2-338",
   "s": "person:bahinabai",
   "p": "DEVOTEE_OF",
   "o": "deity:vitthala",
@@ -6391,7 +6350,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-341",
+  "id": "regional:r2-339",
   "s": "person:samarth-ramdas",
   "p": "DEVOTEE_OF",
   "o": "char:rama",
@@ -6408,7 +6367,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-342",
+  "id": "regional:r2-340",
   "s": "person:samarth-ramdas",
   "p": "DEVOTEE_OF",
   "o": "char:hanuman",
@@ -6425,7 +6384,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-343",
+  "id": "regional:r2-341",
   "s": "text:dasbodh",
   "p": "COMPOSED_BY",
   "o": "person:samarth-ramdas",
@@ -6442,7 +6401,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-344",
+  "id": "regional:r2-342",
   "s": "text:manache-shlok",
   "p": "ATTRIBUTED_TO",
   "o": "person:samarth-ramdas",
@@ -6457,7 +6416,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-345",
+  "id": "regional:r2-343",
   "s": "text:vaishnava-jana-to",
   "p": "ATTRIBUTED_TO",
   "o": "person:narsinh-mehta",
@@ -6474,7 +6433,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-346",
+  "id": "regional:r2-344",
   "s": "person:premanand-bhatt",
   "p": "ASSOCIATED_WITH",
   "o": "person:narsinh-mehta",
@@ -6494,7 +6453,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-347",
+  "id": "regional:r2-345",
   "s": "person:swaminarayan",
   "p": "CENTRAL_TO",
   "o": "trad:swaminarayan-sampradaya",
@@ -6509,7 +6468,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-348",
+  "id": "regional:r2-346",
   "s": "trad:swaminarayan-sampradaya",
   "p": "ASSOCIATED_WITH",
   "o": "trad:srivaishnava",
@@ -6529,7 +6488,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-349",
+  "id": "regional:r2-347",
   "s": "text:vachanamrut",
   "p": "ATTRIBUTED_TO",
   "o": "person:swaminarayan",
@@ -6549,7 +6508,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-350",
+  "id": "regional:r2-348",
   "s": "text:vachanamrut",
   "p": "CENTRAL_TO",
   "o": "trad:swaminarayan-sampradaya",
@@ -6564,7 +6523,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-351",
+  "id": "regional:r2-349",
   "s": "text:shikshapatri",
   "p": "COMPOSED_BY",
   "o": "person:swaminarayan",
@@ -6584,7 +6543,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-352",
+  "id": "regional:r2-350",
   "s": "trad:baps",
   "p": "PART_OF",
   "o": "trad:swaminarayan-sampradaya",
@@ -6599,7 +6558,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-353",
+  "id": "regional:r2-351",
   "s": "person:shastriji-maharaj",
   "p": "CENTRAL_TO",
   "o": "trad:baps",
@@ -6619,7 +6578,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-354",
+  "id": "regional:r2-352",
   "s": "person:vyasatirtha",
   "p": "CENTRAL_TO",
   "o": "trad:haridasa",
@@ -6634,7 +6593,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-355",
+  "id": "regional:r2-353",
   "s": "person:vyasatirtha",
   "p": "ASSOCIATED_WITH",
   "o": "pol:vijayanagara",
@@ -6654,7 +6613,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-356",
+  "id": "regional:r2-354",
   "s": "person:vyasatirtha",
   "p": "TEACHER_OF",
   "o": "person:purandara-dasa",
@@ -6677,7 +6636,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-357",
+  "id": "regional:r2-355",
   "s": "person:purandara-dasa",
   "p": "DEVOTEE_OF",
   "o": "deity:vitthala",
@@ -6697,7 +6656,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-358",
+  "id": "regional:r2-356",
   "s": "person:purandara-dasa",
   "p": "MEMBER_OF",
   "o": "trad:haridasa",
@@ -6714,7 +6673,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-359",
+  "id": "regional:r2-357",
   "s": "person:purandara-dasa",
   "p": "ASSOCIATED_WITH",
   "o": "place:hampi",
@@ -6728,13 +6687,12 @@
     "url": "https://en.wikipedia.org/wiki/Purandara_Dasa"
    }
   ],
-  "confidence": "medium",
-  "status": "reference-checked",
-  "agent": "regional",
-  "lastVerified": "2026-11-08"
+  "confidence": "low",
+  "status": "recall",
+  "agent": "regional"
  },
  {
-  "id": "regional:r2-360",
+  "id": "regional:r2-358",
   "s": "person:vyasatirtha",
   "p": "TEACHER_OF",
   "o": "person:kanaka-dasa",
@@ -6757,7 +6715,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-361",
+  "id": "regional:r2-359",
   "s": "person:kanaka-dasa",
   "p": "MEMBER_OF",
   "o": "trad:haridasa",
@@ -6774,7 +6732,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-362",
+  "id": "regional:r2-360",
   "s": "person:kanaka-dasa",
   "p": "DEVOTEE_OF",
   "o": "char:krishna",
@@ -6794,7 +6752,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-363",
+  "id": "regional:r2-361",
   "s": "text:mohanatarangini",
   "p": "ATTRIBUTED_TO",
   "o": "person:kanaka-dasa",
@@ -6811,7 +6769,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-364",
+  "id": "regional:r2-362",
   "s": "text:ramadhanya-charite",
   "p": "ATTRIBUTED_TO",
   "o": "person:kanaka-dasa",
@@ -6828,7 +6786,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-365",
+  "id": "regional:r2-363",
   "s": "char:rama",
   "p": "APPEARS_IN",
   "o": "text:ramadhanya-charite",
@@ -6848,7 +6806,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-366",
+  "id": "regional:r2-364",
   "s": "person:annamacharya",
   "p": "DEVOTEE_OF",
   "o": "deity:venkateshvara",
@@ -6863,7 +6821,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-367",
+  "id": "regional:r2-365",
   "s": "person:annamacharya",
   "p": "ASSOCIATED_WITH",
   "o": "temple:tirumala",
@@ -6883,7 +6841,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-368",
+  "id": "regional:r2-366",
   "s": "text:annamacharya-sankirtanas",
   "p": "COMPOSED_BY",
   "o": "person:annamacharya",
@@ -6898,7 +6856,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-369",
+  "id": "regional:r2-367",
   "s": "deity:venkateshvara",
   "p": "APPEARS_IN",
   "o": "text:annamacharya-sankirtanas",
@@ -6916,7 +6874,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-370",
+  "id": "regional:r2-368",
   "s": "person:tyagaraja",
   "p": "MEMBER_OF",
   "o": "trad:carnatic-music",
@@ -6934,7 +6892,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-371",
+  "id": "regional:r2-369",
   "s": "person:tyagaraja",
   "p": "DEVOTEE_OF",
   "o": "char:rama",
@@ -6954,7 +6912,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-372",
+  "id": "regional:r2-370",
   "s": "person:muthuswami-dikshitar",
   "p": "MEMBER_OF",
   "o": "trad:carnatic-music",
@@ -6972,7 +6930,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-373",
+  "id": "regional:r2-371",
   "s": "person:muthuswami-dikshitar",
   "p": "DEVOTEE_OF",
   "o": "deity:skanda",
@@ -6995,7 +6953,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-374",
+  "id": "regional:r2-372",
   "s": "person:syama-sastri",
   "p": "MEMBER_OF",
   "o": "trad:carnatic-music",
@@ -7013,7 +6971,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-375",
+  "id": "regional:r2-373",
   "s": "person:syama-sastri",
   "p": "DEVOTEE_OF",
   "o": "deity:devi",
@@ -7036,7 +6994,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-376",
+  "id": "regional:r2-374",
   "s": "person:muthuswami-dikshitar",
   "p": "ASSOCIATED_WITH",
   "o": "temple:tiruttani",
@@ -7050,13 +7008,12 @@
     "url": "https://en.wikipedia.org/wiki/Muthuswami_Dikshitar"
    }
   ],
-  "confidence": "medium",
-  "status": "reference-checked",
-  "agent": "regional",
-  "lastVerified": "2026-11-08"
+  "confidence": "low",
+  "status": "recall",
+  "agent": "regional"
  },
  {
-  "id": "regional:r2-377",
+  "id": "regional:r2-375",
   "s": "text:pancharatna-kritis",
   "p": "COMPOSED_BY",
   "o": "person:tyagaraja",
@@ -7071,7 +7028,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-378",
+  "id": "regional:r2-376",
   "s": "person:tyagaraja",
   "p": "CENTRAL_TO",
   "o": "trad:tyagaraja-aradhana",
@@ -7088,7 +7045,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-379",
+  "id": "regional:r2-377",
   "s": "trad:tyagaraja-aradhana",
   "p": "ASSOCIATED_WITH",
   "o": "text:pancharatna-kritis",
@@ -7105,7 +7062,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-380",
+  "id": "regional:r2-378",
   "s": "person:bhadrachala-ramadasu",
   "p": "DEVOTEE_OF",
   "o": "char:rama",
@@ -7122,7 +7079,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-381",
+  "id": "regional:r2-379",
   "s": "text:dasarathi-satakam",
   "p": "ATTRIBUTED_TO",
   "o": "person:bhadrachala-ramadasu",
@@ -7139,7 +7096,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-382",
+  "id": "regional:r2-380",
   "s": "person:kshetrayya",
   "p": "DEVOTEE_OF",
   "o": "char:krishna",
@@ -7157,7 +7114,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-383",
+  "id": "regional:r2-381",
   "s": "text:kshetrayya-padams",
   "p": "ATTRIBUTED_TO",
   "o": "person:kshetrayya",
@@ -7172,7 +7129,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-384",
+  "id": "regional:r2-382",
   "s": "person:akka-mahadevi",
   "p": "DEVOTEE_OF",
   "o": "deity:shiva",
@@ -7190,7 +7147,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-385",
+  "id": "regional:r2-383",
   "s": "person:akka-mahadevi",
   "p": "CENTRAL_TO",
   "o": "trad:virashaiva",
@@ -7205,7 +7162,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-386",
+  "id": "regional:r2-384",
   "s": "person:allama-prabhu",
   "p": "DEVOTEE_OF",
   "o": "deity:shiva",
@@ -7223,7 +7180,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-387",
+  "id": "regional:r2-385",
   "s": "person:allama-prabhu",
   "p": "CENTRAL_TO",
   "o": "trad:virashaiva",
@@ -7238,7 +7195,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-388",
+  "id": "regional:r2-386",
   "s": "person:akka-mahadevi",
   "p": "ASSOCIATED_WITH",
   "o": "temple:srisailam",
@@ -7256,12 +7213,11 @@
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
-  "agent": "regional",
-  "lastVerified": "2026-11-08"
+  "status": "source-checked",
+  "agent": "regional"
  },
  {
-  "id": "regional:r2-389",
+  "id": "regional:r2-387",
   "s": "person:allama-prabhu",
   "p": "ALLY_OF",
   "o": "person:basava",
@@ -7279,7 +7235,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-390",
+  "id": "regional:r2-388",
   "s": "person:akka-mahadevi",
   "p": "ALLY_OF",
   "o": "person:basava",
@@ -7297,7 +7253,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-391",
+  "id": "regional:r2-389",
   "s": "text:akka-mahadevi-vacanas",
   "p": "ATTRIBUTED_TO",
   "o": "person:akka-mahadevi",
@@ -7312,7 +7268,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-392",
+  "id": "regional:r2-390",
   "s": "text:allama-vacanas",
   "p": "ATTRIBUTED_TO",
   "o": "person:allama-prabhu",
@@ -7327,7 +7283,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-393",
+  "id": "regional:r2-391",
   "s": "text:sunya-sampadane",
   "p": "DERIVED_FROM",
   "o": "text:akka-mahadevi-vacanas",
@@ -7342,7 +7298,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-394",
+  "id": "regional:r2-392",
   "s": "text:sunya-sampadane",
   "p": "DERIVED_FROM",
   "o": "text:allama-vacanas",
@@ -7357,7 +7313,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-395",
+  "id": "regional:r2-393",
   "s": "text:sunya-sampadane",
   "p": "DERIVED_FROM",
   "o": "text:basava-vacanas",
@@ -7372,7 +7328,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-396",
+  "id": "regional:r2-394",
   "s": "person:allama-prabhu",
   "p": "APPEARS_IN",
   "o": "text:sunya-sampadane",
@@ -7390,7 +7346,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-397",
+  "id": "regional:r2-395",
   "s": "person:arunagirinathar",
   "p": "DEVOTEE_OF",
   "o": "deity:murugan",
@@ -7405,7 +7361,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-398",
+  "id": "regional:r2-396",
   "s": "person:arunagirinathar",
   "p": "ASSOCIATED_WITH",
   "o": "temple:arunachaleswarar",
@@ -7425,7 +7381,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-399",
+  "id": "regional:r2-397",
   "s": "text:tiruppukal",
   "p": "COMPOSED_BY",
   "o": "person:arunagirinathar",
@@ -7445,7 +7401,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-400",
+  "id": "regional:r2-398",
   "s": "deity:murugan",
   "p": "APPEARS_IN",
   "o": "text:tiruppukal",
@@ -7466,7 +7422,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-401",
+  "id": "regional:r2-399",
   "s": "temple:thiruparankundram",
   "p": "MENTIONED_IN",
   "o": "text:tiruppukal",
@@ -7484,7 +7440,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-402",
+  "id": "regional:r2-400",
   "s": "temple:tiruchendur",
   "p": "MENTIONED_IN",
   "o": "text:tiruppukal",
@@ -7502,7 +7458,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-403",
+  "id": "regional:r2-401",
   "s": "temple:palani",
   "p": "MENTIONED_IN",
   "o": "text:tiruppukal",
@@ -7520,7 +7476,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-404",
+  "id": "regional:r2-402",
   "s": "temple:tiruttani",
   "p": "MENTIONED_IN",
   "o": "text:tiruppukal",
@@ -7538,7 +7494,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-405",
+  "id": "regional:r2-403",
   "s": "text:tiruppukal",
   "p": "PART_OF",
   "o": "col:bhakti-literature",
@@ -7553,7 +7509,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-406",
+  "id": "regional:r2-404",
   "s": "text:narayaniyam",
   "p": "COMPOSED_BY",
   "o": "person:narayana-bhattathiri",
@@ -7573,7 +7529,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-407",
+  "id": "regional:r2-405",
   "s": "text:narayaniyam",
   "p": "DERIVED_FROM",
   "o": "text:bhagavata-purana",
@@ -7596,7 +7552,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-408",
+  "id": "regional:r2-406",
   "s": "text:narayaniyam",
   "p": "ASSOCIATED_WITH",
   "o": "temple:guruvayur",
@@ -7617,7 +7573,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-409",
+  "id": "regional:r2-407",
   "s": "char:krishna",
   "p": "APPEARS_IN",
   "o": "text:narayaniyam",
@@ -7638,7 +7594,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-410",
+  "id": "regional:r2-408",
   "s": "person:poonthanam",
   "p": "ASSOCIATED_WITH",
   "o": "temple:guruvayur",
@@ -7655,7 +7611,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-411",
+  "id": "regional:r2-409",
   "s": "person:poonthanam",
   "p": "DEVOTEE_OF",
   "o": "char:krishna",
@@ -7675,7 +7631,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-412",
+  "id": "regional:r2-410",
   "s": "person:narayana-bhattathiri",
   "p": "ASSOCIATED_WITH",
   "o": "person:poonthanam",
@@ -7695,7 +7651,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-413",
+  "id": "regional:r2-411",
   "s": "text:jnanappana",
   "p": "COMPOSED_BY",
   "o": "person:poonthanam",
@@ -7712,7 +7668,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-414",
+  "id": "regional:r2-412",
   "s": "person:ramalinga-swamigal",
   "p": "CENTRAL_TO",
   "o": "trad:samarasa-sanmarga",
@@ -7727,7 +7683,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-415",
+  "id": "regional:r2-413",
   "s": "text:tiruvarutpa",
   "p": "COMPOSED_BY",
   "o": "person:ramalinga-swamigal",
@@ -7742,7 +7698,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-416",
+  "id": "regional:r2-414",
   "s": "trad:samarasa-sanmarga",
   "p": "ADVERSARY_OF",
   "o": "trad:shaiva-siddhanta",
@@ -7760,7 +7716,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-417",
+  "id": "regional:r2-415",
   "s": "text:bhanubhakta-ramayana",
   "p": "COMPOSED_BY",
   "o": "person:bhanubhakta",
@@ -7777,7 +7733,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-418",
+  "id": "regional:r2-416",
   "s": "text:bhanubhakta-ramayana",
   "p": "DERIVED_FROM",
   "o": "text:adhyatma-ramayana",
@@ -7793,7 +7749,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-419",
+  "id": "regional:r2-417",
   "s": "text:bhanubhakta-ramayana",
   "p": "PART_OF",
   "o": "col:regional-retellings",
@@ -7808,7 +7764,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-420",
+  "id": "regional:r2-418",
   "s": "char:rama",
   "p": "APPEARS_IN",
   "o": "text:bhanubhakta-ramayana",
@@ -7826,7 +7782,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-421",
+  "id": "regional:r2-419",
   "s": "text:shivastotravali",
   "p": "COMPOSED_BY",
   "o": "person:utpaladeva",
@@ -7841,7 +7797,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-422",
+  "id": "regional:r2-420",
   "s": "deity:shiva",
   "p": "APPEARS_IN",
   "o": "text:shivastotravali",
@@ -7859,7 +7815,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-423",
+  "id": "regional:r2-421",
   "s": "person:utpaladeva",
   "p": "DEVOTEE_OF",
   "o": "deity:shiva",
@@ -7874,7 +7830,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-424",
+  "id": "regional:r2-422",
   "s": "person:utpaladeva",
   "p": "CENTRAL_TO",
   "o": "trad:kashmir-shaivism",
@@ -7897,7 +7853,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-425",
+  "id": "regional:r2-423",
   "s": "person:rupa-bhawani",
   "p": "DEVOTEE_OF",
   "o": "deity:shiva",
@@ -7914,7 +7870,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-426",
+  "id": "regional:r2-424",
   "s": "person:rupa-bhawani",
   "p": "ASSOCIATED_WITH",
   "o": "person:lal-ded",
@@ -7934,7 +7890,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-427",
+  "id": "regional:r2-425",
   "s": "col:old-javanese-kakawin",
   "p": "PART_OF",
   "o": "col:southeast-asian",
@@ -7949,7 +7905,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-428",
+  "id": "regional:r2-426",
   "s": "text:kakawin-ramayana",
   "p": "PART_OF",
   "o": "col:old-javanese-kakawin",
@@ -7967,7 +7923,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-429",
+  "id": "regional:r2-427",
   "s": "text:arjunawiwaha",
   "p": "COMPOSED_BY",
   "o": "person:mpu-kanwa",
@@ -7985,7 +7941,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-430",
+  "id": "regional:r2-428",
   "s": "text:arjunawiwaha",
   "p": "COMMISSIONED_BY",
   "o": "person:airlangga",
@@ -8006,7 +7962,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-431",
+  "id": "regional:r2-429",
   "s": "text:arjunawiwaha",
   "p": "RETELLS",
   "o": "text:mahabharata",
@@ -8024,7 +7980,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-432",
+  "id": "regional:r2-430",
   "s": "text:arjunawiwaha",
   "p": "PART_OF",
   "o": "col:old-javanese-kakawin",
@@ -8042,7 +7998,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-433",
+  "id": "regional:r2-431",
   "s": "char:arjuna",
   "p": "APPEARS_IN",
   "o": "text:arjunawiwaha",
@@ -8063,7 +8019,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-434",
+  "id": "regional:r2-432",
   "s": "narr:kirata-arjuna",
   "p": "NARRATED_IN",
   "o": "text:arjunawiwaha",
@@ -8081,7 +8037,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-435",
+  "id": "regional:r2-433",
   "s": "deity:indra",
   "p": "APPEARS_IN",
   "o": "text:arjunawiwaha",
@@ -8102,7 +8058,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-436",
+  "id": "regional:r2-434",
   "s": "trad:wayang",
   "p": "ASSOCIATED_WITH",
   "o": "text:arjunawiwaha",
@@ -8125,7 +8081,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-437",
+  "id": "regional:r2-435",
   "s": "text:bharatayuddha",
   "p": "COMPOSED_BY",
   "o": "person:mpu-sedah",
@@ -8146,7 +8102,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-438",
+  "id": "regional:r2-436",
   "s": "text:bharatayuddha",
   "p": "COMPOSED_BY",
   "o": "person:mpu-panuluh",
@@ -8167,7 +8123,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-439",
+  "id": "regional:r2-437",
   "s": "text:bharatayuddha",
   "p": "COMMISSIONED_BY",
   "o": "person:jayabhaya",
@@ -8185,7 +8141,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-440",
+  "id": "regional:r2-438",
   "s": "text:bharatayuddha",
   "p": "RETELLS",
   "o": "text:mahabharata",
@@ -8209,7 +8165,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-441",
+  "id": "regional:r2-439",
   "s": "narr:kurukshetra-war",
   "p": "NARRATED_IN",
   "o": "text:bharatayuddha",
@@ -8227,7 +8183,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-442",
+  "id": "regional:r2-440",
   "s": "text:bharatayuddha",
   "p": "PART_OF",
   "o": "col:old-javanese-kakawin",
@@ -8242,7 +8198,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-443",
+  "id": "regional:r2-441",
   "s": "trad:wayang",
   "p": "ASSOCIATED_WITH",
   "o": "text:bharatayuddha",
@@ -8260,8 +8216,41 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-444",
+  "id": "regional:r2-442",
   "s": "text:hariwangsa-kakawin",
+  "p": "COMPOSED_BY",
+  "o": "person:mpu-panuluh",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:zoetmulder-1983",
+    "locator": "chapters on the work",
+    "url": "https://archive.org/details/kalangwan-sastra-jawa-kuno-selayang-pandang-1983"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-443",
+  "s": "text:hariwangsa-kakawin",
+  "p": "PART_OF",
+  "o": "col:old-javanese-kakawin",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:zoetmulder-1974"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-444",
+  "s": "text:ghatotkacasraya",
   "p": "COMPOSED_BY",
   "o": "person:mpu-panuluh",
   "evidenceClass": 5,
@@ -8279,7 +8268,7 @@
  },
  {
   "id": "regional:r2-445",
-  "s": "text:hariwangsa-kakawin",
+  "s": "text:ghatotkacasraya",
   "p": "PART_OF",
   "o": "col:old-javanese-kakawin",
   "evidenceClass": 5,
@@ -8294,39 +8283,6 @@
  },
  {
   "id": "regional:r2-446",
-  "s": "text:ghatotkacasraya",
-  "p": "COMPOSED_BY",
-  "o": "person:mpu-panuluh",
-  "evidenceClass": 5,
-  "sources": [
-   {
-    "source": "src:zoetmulder-1983",
-    "locator": "chapters on the work",
-    "url": "https://archive.org/details/kalangwan-sastra-jawa-kuno-selayang-pandang-1983"
-   }
-  ],
-  "confidence": "medium",
-  "status": "reference-checked",
-  "agent": "regional",
-  "lastVerified": "2026-11-08"
- },
- {
-  "id": "regional:r2-447",
-  "s": "text:ghatotkacasraya",
-  "p": "PART_OF",
-  "o": "col:old-javanese-kakawin",
-  "evidenceClass": 5,
-  "sources": [
-   {
-    "source": "src:zoetmulder-1974"
-   }
-  ],
-  "confidence": "high",
-  "status": "source-checked",
-  "agent": "regional"
- },
- {
-  "id": "regional:r2-448",
   "s": "text:krsnayana-kakawin",
   "p": "COMPOSED_BY",
   "o": "person:mpu-triguna",
@@ -8344,7 +8300,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-449",
+  "id": "regional:r2-447",
   "s": "text:krsnayana-kakawin",
   "p": "PART_OF",
   "o": "col:old-javanese-kakawin",
@@ -8359,7 +8315,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-450",
+  "id": "regional:r2-448",
   "s": "char:krishna",
   "p": "APPEARS_IN",
   "o": "text:krsnayana-kakawin",
@@ -8377,7 +8333,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-451",
+  "id": "regional:r2-449",
   "s": "narr:rukmini-abduction",
   "p": "NARRATED_IN",
   "o": "text:krsnayana-kakawin",
@@ -8392,7 +8348,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-452",
+  "id": "regional:r2-450",
   "s": "narr:rukmini-abduction",
   "p": "NARRATED_IN",
   "o": "text:hariwangsa-kakawin",
@@ -8407,7 +8363,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-453",
+  "id": "regional:r2-451",
   "s": "char:ghatotkacha",
   "p": "APPEARS_IN",
   "o": "text:ghatotkacasraya",
@@ -8425,7 +8381,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-454",
+  "id": "regional:r2-452",
   "s": "char:abhimanyu",
   "p": "APPEARS_IN",
   "o": "text:ghatotkacasraya",
@@ -8440,7 +8396,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-455",
+  "id": "regional:r2-453",
   "s": "text:hariwangsa-kakawin",
   "p": "DERIVED_FROM",
   "o": "text:harivamsha",
@@ -8455,7 +8411,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-456",
+  "id": "regional:r2-454",
   "s": "text:wirataparwa-old-javanese",
   "p": "TRANSLATION_OF",
   "o": "text:mahabharata",
@@ -8476,7 +8432,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-457",
+  "id": "regional:r2-455",
   "s": "text:wirataparwa-old-javanese",
   "p": "PART_OF",
   "o": "col:old-javanese-kakawin",
@@ -8491,7 +8447,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-458",
+  "id": "regional:r2-456",
   "s": "trad:agama-hindu-dharma",
   "p": "ASSOCIATED_WITH",
   "o": "temple:pura-besakih",
@@ -8514,7 +8470,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-459",
+  "id": "regional:r2-457",
   "s": "trad:balinese-dance",
   "p": "PART_OF",
   "o": "trad:agama-hindu-dharma",
@@ -8534,7 +8490,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-460",
+  "id": "regional:r2-458",
   "s": "col:old-javanese-kakawin",
   "p": "ASSOCIATED_WITH",
   "o": "trad:agama-hindu-dharma",
@@ -8552,7 +8508,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-461",
+  "id": "regional:r2-459",
   "s": "inst:parisada-hindu-dharma",
   "p": "CENTRAL_TO",
   "o": "trad:agama-hindu-dharma",
@@ -8567,7 +8523,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-462",
+  "id": "regional:r2-460",
   "s": "text:maharadia-lawana",
   "p": "DERIVED_FROM",
   "o": "text:hikayat-seri-rama",
@@ -8590,7 +8546,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-463",
+  "id": "regional:r2-461",
   "s": "text:maharadia-lawana",
   "p": "PART_OF",
   "o": "col:southeast-asian",
@@ -8605,7 +8561,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-464",
+  "id": "regional:r2-462",
   "s": "char:ravana",
   "p": "APPEARS_IN",
   "o": "text:maharadia-lawana",
@@ -8628,7 +8584,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-465",
+  "id": "regional:r2-463",
   "s": "trad:grand-bassin-pilgrimage",
   "p": "PART_OF",
   "o": "trad:mauritian-hinduism",
@@ -8645,7 +8601,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-466",
+  "id": "regional:r2-464",
   "s": "trad:grand-bassin-pilgrimage",
   "p": "ASSOCIATED_WITH",
   "o": "trad:maha-shivaratri",
@@ -8665,7 +8621,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-467",
+  "id": "regional:r2-465",
   "s": "deity:shiva",
   "p": "CENTRAL_TO",
   "o": "trad:grand-bassin-pilgrimage",
@@ -8682,7 +8638,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-468",
+  "id": "regional:r2-466",
   "s": "trad:grand-bassin-pilgrimage",
   "p": "ASSOCIATED_WITH",
   "o": "place:ganga-river",
@@ -8700,7 +8656,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-469",
+  "id": "regional:r2-467",
   "s": "trad:grand-bassin-pilgrimage",
   "p": "ASSOCIATED_WITH",
   "o": "trad:kanwar-yatra",
@@ -8718,7 +8674,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-470",
+  "id": "regional:r2-468",
   "s": "trad:thaipusam",
   "p": "ASSOCIATED_WITH",
   "o": "trad:mauritian-hinduism",
@@ -8736,7 +8692,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-471",
+  "id": "regional:r2-469",
   "s": "trad:geet-gawai",
   "p": "PART_OF",
   "o": "trad:mauritian-hinduism",
@@ -8753,7 +8709,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-472",
+  "id": "regional:r2-470",
   "s": "text:ramcharitmanas",
   "p": "CENTRAL_TO",
   "o": "trad:indo-caribbean-hinduism",
@@ -8771,7 +8727,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-473",
+  "id": "regional:r2-471",
   "s": "inst:sanatan-dharma-maha-sabha",
   "p": "CENTRAL_TO",
   "o": "trad:indo-caribbean-hinduism",
@@ -8786,7 +8742,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-474",
+  "id": "regional:r2-472",
   "s": "trad:trinidad-ramleela",
   "p": "DERIVED_FROM",
   "o": "trad:ramlila",
@@ -8801,7 +8757,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-475",
+  "id": "regional:r2-473",
   "s": "trad:trinidad-ramleela",
   "p": "PART_OF",
   "o": "trad:indo-caribbean-hinduism",
@@ -8816,7 +8772,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-476",
+  "id": "regional:r2-474",
   "s": "trad:trinidad-ramleela",
   "p": "ASSOCIATED_WITH",
   "o": "text:ramcharitmanas",
@@ -8831,7 +8787,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-477",
+  "id": "regional:r2-475",
   "s": "trad:phagwah",
   "p": "DERIVED_FROM",
   "o": "trad:holi",
@@ -8846,7 +8802,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-478",
+  "id": "regional:r2-476",
   "s": "trad:phagwah",
   "p": "PART_OF",
   "o": "trad:indo-caribbean-hinduism",
@@ -8861,7 +8817,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-479",
+  "id": "regional:r2-477",
   "s": "text:ramcharitmanas",
   "p": "CENTRAL_TO",
   "o": "trad:indo-fijian-hinduism",
@@ -8882,7 +8838,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-480",
+  "id": "regional:r2-478",
   "s": "trad:thaipusam",
   "p": "ASSOCIATED_WITH",
   "o": "trad:malaysian-hinduism",
@@ -8897,7 +8853,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-481",
+  "id": "regional:r2-479",
   "s": "temple:batu-caves",
   "p": "ASSOCIATED_WITH",
   "o": "trad:malaysian-hinduism",
@@ -8914,7 +8870,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-482",
+  "id": "regional:r2-480",
   "s": "trad:baps",
   "p": "ASSOCIATED_WITH",
   "o": "trad:british-hindu-temple-movement",
@@ -8932,7 +8888,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-483",
+  "id": "regional:r2-481",
   "s": "deity:venkateshvara",
   "p": "CENTRAL_TO",
   "o": "trad:american-hindu-temple-movement",
@@ -8950,7 +8906,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-484",
+  "id": "regional:r2-482",
   "s": "deity:ganesha",
   "p": "CENTRAL_TO",
   "o": "trad:american-hindu-temple-movement",
@@ -8970,7 +8926,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-485",
+  "id": "regional:r2-483",
   "s": "trad:iskcon",
   "p": "DERIVED_FROM",
   "o": "trad:gaudiya",
@@ -8985,7 +8941,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-486",
+  "id": "regional:r2-484",
   "s": "char:krishna",
   "p": "CENTRAL_TO",
   "o": "trad:iskcon",
@@ -9000,7 +8956,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-487",
+  "id": "regional:r2-485",
   "s": "person:chaitanya",
   "p": "CENTRAL_TO",
   "o": "trad:iskcon",
@@ -9015,7 +8971,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-488",
+  "id": "regional:r2-486",
   "s": "trad:iskcon",
   "p": "ASSOCIATED_WITH",
   "o": "trad:ratha-yatra-puri",
@@ -9035,7 +8991,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-489",
+  "id": "regional:r2-487",
   "s": "trad:iskcon",
   "p": "ASSOCIATED_WITH",
   "o": "text:bhagavata-purana",
@@ -9053,7 +9009,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-490",
+  "id": "regional:r2-488",
   "s": "person:bhaktivedanta-swami",
   "p": "CENTRAL_TO",
   "o": "trad:iskcon",
@@ -9071,7 +9027,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-491",
+  "id": "regional:r2-489",
   "s": "person:bhaktivedanta-swami",
   "p": "DEVOTEE_OF",
   "o": "char:krishna",
@@ -9086,7 +9042,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-492",
+  "id": "regional:r2-490",
   "s": "trad:dipavali",
   "p": "ASSOCIATED_WITH",
   "o": "trad:indo-caribbean-hinduism",
@@ -9104,7 +9060,7 @@
   "agent": "regional"
  },
  {
-  "id": "regional:r2-493",
+  "id": "regional:r2-491",
   "s": "trad:dipavali",
   "p": "ASSOCIATED_WITH",
   "o": "trad:malaysian-hinduism",
@@ -9124,7 +9080,7 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "regional:r2-494",
+  "id": "regional:r2-492",
   "s": "trad:chhath",
   "p": "ASSOCIATED_WITH",
   "o": "trad:mauritian-hinduism",
@@ -9140,5 +9096,412 @@
   "confidence": "low",
   "status": "source-checked",
   "agent": "regional"
+ },
+ {
+  "id": "regional:r2-493",
+  "s": "trad:naraka-chaturdashi",
+  "p": "ASSOCIATED_WITH",
+  "o": "narr:narakasura-slaying",
+  "qualifiers": {
+   "note": "Kane: the legend of Kṛṣṇa’s killing of Narakāsura “was pressed into service” for the 14th"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 197",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-494",
+  "s": "trad:naraka-chaturdashi",
+  "p": "ASSOCIATED_WITH",
+  "o": "char:narakasura",
+  "qualifiers": {
+   "note": "a lamp lit for Naraka; in the Deccan a bitter fruit crushed underfoot to represent him"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 197",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-495",
+  "s": "claim:naraka-dipavali-link",
+  "p": "CONCERNS",
+  "o": "trad:naraka-chaturdashi",
+  "qualifiers": {
+   "note": "Kane holds that the day was first named for propitiating Yama against hell; the Naraka legend was attached later"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 197",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-496",
+  "s": "trad:kumbh-mela",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:haridwar",
+  "qualifiers": {
+   "note": "one of the four Kumbh sites named by UNESCO"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/kumbh-mela-01258"
+   },
+   {
+    "source": "src:maclean-2008"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-497",
+  "s": "trad:kumbh-mela",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:ujjain",
+  "qualifiers": {
+   "note": "Ujjain Kumbh (Siṃhastha) on the Śiprā"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/kumbh-mela-01258"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-498",
+  "s": "trad:kumbh-mela",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:godavari-river",
+  "qualifiers": {
+   "note": "the Nashik–Tryambakeśvar Kumbh on the Godāvarī"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kumbh_Mela"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-499",
+  "s": "trad:kumbh-mela",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:kshipra-river",
+  "qualifiers": {
+   "note": "bathing in the Śiprā at Ujjain"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kumbh_Mela"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-500",
+  "s": "trad:kanwar-yatra",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:haridwar",
+  "qualifiers": {
+   "note": "principal source of the Gaṅgā water carried"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:lochtefeld-2010"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kanwar_Yatra"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-501",
+  "s": "trad:govardhan-puja",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:govardhan-hill",
+  "qualifiers": {
+   "note": "Kane: those near Govardhana go to the hill and worship it"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 205",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-502",
+  "s": "trad:ashtachap",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:govardhan-hill",
+  "qualifiers": {
+   "note": "the Śrīnāthjī temple on Govardhana where the Aṣṭachāp sang"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Aṣṭachāp"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-503",
+  "s": "trad:ratha-yatra-puri",
+  "p": "ASSOCIATED_WITH",
+  "o": "text:purushottama-kshetra-mahatmya",
+  "qualifiers": {
+   "note": "the Skanda Purāṇa’s Puruṣottama-kṣetra-māhātmya tells the Jagannātha legends, including the car festival"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:eschmann-kulke-tripathi-1978"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-504",
+  "s": "trad:pandharpur-wari",
+  "p": "ASSOCIATED_WITH",
+  "o": "temple:vitthala-pandharpur",
+  "qualifiers": {
+   "note": "goal of the Āṣāḍhī vārī"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:karve-1962"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Pandharpur_Vari"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-505",
+  "s": "trad:tyagaraja-aradhana",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:kaveri-river",
+  "qualifiers": {
+   "note": "held at Tyāgarāja’s samādhi on the Kāvēri bank at Tiruvaiyaru"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tyagaraja_Aradhana"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-506",
+  "s": "trad:haridasa",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:dvaita",
+  "qualifiers": {
+   "note": "the Haridāsas are devotional singers of the Mādhva (Dvaita) tradition"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:sharma-bnk-1981"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-507",
+  "s": "trad:pushtimarg",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:shuddhadvaita",
+  "qualifiers": {
+   "note": "Vallabha’s Śuddhādvaita is the theology of the Puṣṭimārga"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-508",
+  "s": "trad:gaudiya",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:achintya-bhedabheda",
+  "qualifiers": {
+   "note": "Acintya-bhedābheda is the Gauḍīya theology systematised by Jīva Gosvāmī"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:de-1961"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-509",
+  "s": "person:jiva-goswami",
+  "p": "CENTRAL_TO",
+  "o": "col:six-goswamis-corpus",
+  "qualifiers": {
+   "note": "its chief systematiser"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:de-1961"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-510",
+  "s": "text:villi-bharatam",
+  "p": "PART_OF",
+  "o": "col:regional-retellings",
+  "qualifiers": {
+   "note": "Tamil Mahābhārata of Villiputtūrar"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:zvelebil-1974"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-511",
+  "s": "text:kashidasi-mahabharata",
+  "p": "PART_OF",
+  "o": "col:regional-retellings",
+  "qualifiers": {
+   "note": "Bengali Mahābhārata of Kāśīrām Dās"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:sen-1960"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-512",
+  "s": "trad:holi",
+  "p": "ASSOCIATED_WITH",
+  "o": "deity:kamadeva",
+  "qualifiers": {
+   "note": "South Indian Kāma-dahanam; the Bhaviṣyottara also prescribes worship of Kāma on the day after the bonfire (Kane)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Holika_Dahan"
+   },
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 239",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
  }
 ]

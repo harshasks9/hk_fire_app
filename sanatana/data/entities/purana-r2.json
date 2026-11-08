@@ -5798,14 +5798,14 @@
   "lastVerified": "2026-11-08"
  },
  {
-  "id": "char:brihadashva",
+  "id": "char:brihadashva-ikshvaku",
   "type": "character",
-  "name": "Bṛhadaśva",
+  "name": "Bṛhadaśva (Ikṣvāku king)",
   "roles": [
    "king",
    "Ikṣvāku"
   ],
-  "summary": "Ikṣvāku king, son of Śrāvasta and father of Kuvalayāśva.",
+  "summary": "Ikṣvāku king, son of Śrāvasta and father of Kuvalayāśva; distinct from the sage Bṛhadaśva who tells Yudhiṣṭhira the Nala story.",
   "sources": [
    {
     "source": "src:gretil",
@@ -6746,7 +6746,7 @@
    "king",
    "Ikṣvāku"
   ],
-  "summary": "Son of Bhagīratha.",
+  "summary": "Ikṣvāku king, son of Bhagīratha (who brought down the Gaṅgā), in both the Viṣṇu and Bhāgavata lists.",
   "sources": [
    {
     "source": "src:gretil",
@@ -6948,7 +6948,7 @@
    "king",
    "Ikṣvāku"
   ],
-  "summary": "Son of Ṛtuparṇa.",
+  "summary": "Ikṣvāku king, son of Ṛtuparṇa and father of Sudāsa.",
   "sources": [
    {
     "source": "src:gretil",
