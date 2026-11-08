@@ -10408,16 +10408,16 @@
   "traditions": [
    "trad:shaiva"
   ],
-  "summary": "Temple of the Sun near Aduthurai, built under Kulottuṅga I (1060–1118) as the Kulottuṅgacōḻa-Mārttāṇḍālaya according to its inscription; the only Navagraha temple whose principal deity is the graha himself, with Uṣā and Pratyuṣā.",
+  "summary": "Temple of the Sun near Aduthurai, built under Kulottuṅga I (r. c. 1070–1120) as the Kulottuṅgacōḻa-Mārttāṇḍālaya according to its inscription; the only Navagraha temple whose principal deity is the graha himself, with Uṣā and Pratyuṣā.",
   "dates": [
    {
     "system": "material",
     "event": "construction",
     "start": 1070,
-    "end": 1118,
-    "label": "reign of Kulottuṅga I (1070–1118)",
+    "end": 1120,
+    "label": "reign of Kulottuṅga I (c. 1070–1120)",
     "certainty": "estimated",
-    "basis": "inscription naming the temple Kulottuṅgacōḻa-Mārttāṇḍālaya, as reported",
+    "basis": "inscription naming the temple Kulottuṅgacōḻa-Mārttāṇḍālaya, as reported (the reference gives the reign as 1060–1118)",
     "sources": [
      {
       "source": "src:wikipedia",
