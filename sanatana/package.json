@@ -16,7 +16,8 @@
     "test": "node --experimental-strip-types --disable-warning=ExperimentalWarning --test scripts/*.test.ts",
     "publish:villa": "npm run build && node --experimental-strip-types --disable-warning=ExperimentalWarning scripts/publish-villa.ts",
     "seed:core": "node --experimental-strip-types --disable-warning=ExperimentalWarning scripts/seed-core.ts",
-    "seed:sources": "node --experimental-strip-types --disable-warning=ExperimentalWarning scripts/seed-sources.ts"
+    "seed:sources": "node --experimental-strip-types --disable-warning=ExperimentalWarning scripts/seed-sources.ts",
+    "seed:discoveries": "node --experimental-strip-types --disable-warning=ExperimentalWarning scripts/seed-discoveries.ts"
   },
   "dependencies": {
     "cytoscape": "^3.34.4",

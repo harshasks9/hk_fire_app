@@ -18,6 +18,7 @@ import { loadDataset, ROOT } from './lib/load.ts'
 import { checkDataset } from './lib/check.ts'
 import { PREDICATES, EVIDENCE_CLASSES, AGENTS } from '../schema/types.ts'
 import type { Entity, Assertion, DateClaim } from '../schema/types.ts'
+import { textFromLocator, NARRATIVE_ROLE_PREDICATES } from '../src/lib/locators.ts'
 
 const require = createRequire(import.meta.url)
 const Graph = require('graphology')
@@ -80,10 +81,16 @@ function firstDate(e: Entity | undefined, system: DateClaim['system']): DateClai
   const ds = (e?.dates ?? []).filter((d) => d.system === system && typeof d.start === 'number')
   return ds.sort((a, b) => a.start! - b.start!)[0]
 }
+/** The most conservative recorded scholarly view of a text's date: the claim with the latest start.
+ *  Using the earliest view would let a single minority estimate set a figure's "earliest attestation". */
+function conservativeDate(e: Entity | undefined): DateClaim | undefined {
+  const ds = (e?.dates ?? []).filter((d) => d.system === 'scholarly-textual' && typeof d.start === 'number')
+  return ds.sort((a, b) => b.start! - a.start!)[0]
+}
 function effectiveTextDate(id: string): DateClaim | undefined {
   // a passage inherits the date of its text
   const e = entities.get(id)
-  return firstDate(e, 'scholarly-textual') ?? (textOf(id) ? firstDate(entities.get(textOf(id)!), 'scholarly-textual') : undefined)
+  return conservativeDate(e) ?? (textOf(id) ? conservativeDate(entities.get(textOf(id)!)) : undefined)
 }
 
 // ───────────── per-node literary and material reach ─────────────
@@ -92,20 +99,33 @@ const MATERIAL_P = new Set(['DEPICTED_IN', 'REFERS_TO', 'INTERPRETED_AS', 'WORSH
 interface Reach { texts: Set<string>; corpora: Set<string>; earliestText?: { year: number; label: string; via: string }; earliestMaterial?: { year: number; label: string; via: string } }
 const reach = new Map<string, Reach>()
 const R = (id: string) => reach.get(id) ?? reach.set(id, { texts: new Set(), corpora: new Set() }).get(id)!
+const FIGURE_TYPES = new Set(['character', 'deity', 'narrative', 'concept', 'lineage'])
+/** textual attestations: direct (APPEARS_IN …) or derived from a class-1 role assertion's cited passage */
+function textualHits(a: Assertion): { who: string; text: string; via: string }[] {
+  if (TEXTUAL_P.has(a.p)) return [{ who: a.s, text: a.o, via: a.o }]
+  if (a.evidenceClass === 1 && NARRATIVE_ROLE_PREDICATES.has(a.p)) {
+    const t = textFromLocator(a.sources.find((r) => r.locator)?.locator)
+    if (t && entities.has(t)) return [a.s, a.o].filter((x) => FIGURE_TYPES.has(entities.get(x)?.type ?? '')).map((who) => ({ who, text: t, via: t }))
+  }
+  return []
+}
 for (const a of edges) {
-  if (TEXTUAL_P.has(a.p)) {
-    const r = R(a.s)
-    const t = textOf(a.o) ?? a.o
-    r.texts.add(t)
-    for (const c of collectionsOf(a.o)) r.corpora.add(c)
-    const d = effectiveTextDate(a.o)
+  for (const h of textualHits(a)) { const r = R(h.who); r.texts.add(textOf(h.via) ?? h.via); for (const c of collectionsOf(h.via)) r.corpora.add(c) }
+}
+for (const a of edges) {
+  // disputed links never set an "earliest attestation"
+  const weak = a.evidenceClass === 7 || a.status === 'disputed' || a.status === 'unresolved'
+  if (!weak) for (const h of textualHits(a)) {
+    const r = R(h.who)
+    const t = textOf(h.via) ?? h.via
+    const d = effectiveTextDate(h.via)
     if (d && (r.earliestText === undefined || d.start! < r.earliestText.year)) r.earliestText = { year: d.start!, label: d.label, via: t }
   }
   // material: subject is the figure/narrative; object is the artefact/temple — except REFERS_TO / INTERPRETED_AS, where the artefact is the subject
   let figure: string | undefined, object: string | undefined
   if (a.p === 'DEPICTED_IN' || a.p === 'WORSHIPPED_AT') { figure = a.s; object = a.o }
   if (a.p === 'REFERS_TO' || a.p === 'INTERPRETED_AS') { figure = a.o; object = a.s }
-  if (figure && object && MATERIAL_P.has(a.p)) {
+  if (figure && object && MATERIAL_P.has(a.p) && !weak) {
     const d = firstDate(entities.get(object), 'material')
     const r = R(figure)
     if (d && (r.earliestMaterial === undefined || d.start! < r.earliestMaterial.year)) r.earliestMaterial = { year: d.start!, label: d.label, via: object }

@@ -11,6 +11,7 @@
  * an identification is itself an interpretive assertion.
  */
 import type { Store, GNode, GEdge } from '../data/store.tsx'
+import { textFromLocator, NARRATIVE_ROLE_PREDICATES } from './locators.ts'
 
 export type Lane = 'text' | 'reception' | 'material' | 'tradition'
 export interface Attestation {
@@ -79,6 +80,14 @@ export function gatherAttestations(store: Store, id: string, includeIdentified =
         const text = store.textOf(x.other.id) ?? x.other
         const d = store.dateOf(x.other.id, 'scholarly-textual')
         if (d) push({ key: `t:${text.id}:${fig.id}`, lane: textLane(store, text.id), node: text, start: d.start!, end: d.end ?? d.start!, label: d.label, certainty: d.certainty, edge: e, via, relation: `${store.meta.predicates[e.p]}${e.sources[0]?.locator ? ` · ${e.sources[0].locator}` : ''}` })
+      }
+      // textual, derived from the passage a class-1 role assertion cites (never through a narrative)
+      if (e.evidenceClass === 1 && NARRATIVE_ROLE_PREDICATES.has(e.p)) {
+        const loc = e.sources.find((r) => r.locator)?.locator
+        const tid = textFromLocator(loc)
+        const text = tid ? store.byId.get(tid) : undefined
+        const d = tid ? store.dateOf(tid, 'scholarly-textual') : undefined
+        if (text && d) push({ key: `t:${text.id}:${fig.id}`, lane: textLane(store, text.id), node: text, start: d.start!, end: d.end ?? d.start!, label: d.label, certainty: d.certainty, edge: e, via, relation: `${store.meta.predicates[e.p]} ${x.other.name}${loc ? ` · ${loc}` : ''}` })
       }
       // material
       let obj: GNode | undefined
