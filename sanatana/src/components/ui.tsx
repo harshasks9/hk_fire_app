@@ -82,7 +82,7 @@ export function StatusBadge({ status }: { status: string }) {
   const s = STATUS[status]
   if (!s) return null
   const tone = status === 'verified-online' || status === 'source-checked' ? 'var(--f-history)' : status === 'disputed' || status === 'unresolved' ? 'var(--ev-7)' : 'var(--ink-3)'
-  const mark = status === 'verified-online' ? '✓' : status === 'source-checked' ? '✓' : status === 'disputed' ? '⇄' : status === 'unresolved' ? '?' : '…'
+  const mark = status === 'verified-online' ? '✓' : status === 'source-checked' ? '✓' : status === 'reference-checked' ? '◦' : status === 'disputed' ? '⇄' : status === 'unresolved' ? '?' : '…'
   return (
     <span className="inline-flex items-center gap-1 text-[11px] font-medium" style={{ color: tone }} title={s.blurb}>
       <span aria-hidden="true">{mark}</span>

@@ -157,8 +157,8 @@ export function EntityPage({ id }: { id: string }) {
             ) : null}
           </div>
           <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            {n.m.earliestText ? <Fact label="Earliest dated text attesting it (in graph)" value={n.m.earliestText.label} sub={store.byId.get(n.m.earliestText.via)?.name} subId={n.m.earliestText.via} /> : null}
-            {n.m.earliestMaterial ? <Fact label="Earliest dated object or structure" value={n.m.earliestMaterial.label} sub={store.byId.get(n.m.earliestMaterial.via)?.name} subId={n.m.earliestMaterial.via} /> : null}
+            {n.m.earliestText ? <Fact label="Earliest dated text attesting it (conservative view)" value={n.m.earliestText.label} sub={store.byId.get(n.m.earliestText.via)?.name} subId={n.m.earliestText.via} /> : null}
+            {n.m.earliestMaterial ? <Fact label="Earliest dated object or structure" value={n.m.earliestMaterial.label} sub={store.byId.get(n.m.earliestMaterial.via)?.name} subId={n.m.earliestMaterial.via} flag={[n.m.earliestMaterial.ec === 5 ? 'linked by scholarly identification (class 5)' : n.m.earliestMaterial.ec === 6 ? 'linked by tradition (class 6)' : '', n.m.earliestMaterial.disputed ? 'date disputed' : ''].filter(Boolean).join(' · ')} /> : null}
             {n.location ? <Fact label="Location" value={n.location.label} sub={`${n.location.lat.toFixed(3)}, ${n.location.lon.toFixed(3)} · ${n.location.precision}`} /> : null}
             {n.evidenceClass ? <Fact label="Kind of evidence this item is" value={EVIDENCE[n.evidenceClass].label} /> : null}
             <Fact label="Connections" value={`${n.m.degree}`} sub={n.m.texts ? `in ${n.m.texts} text${n.m.texts > 1 ? 's' : ''} across ${n.m.corpora.length} corpus${n.m.corpora.length === 1 ? '' : 'es'}` : undefined} />
@@ -295,12 +295,13 @@ export function EntityPage({ id }: { id: string }) {
   )
 }
 
-function Fact({ label, value, sub, subId }: { label: string; value: string; sub?: string; subId?: string }) {
+function Fact({ label, value, sub, subId, flag }: { label: string; value: string; sub?: string; subId?: string; flag?: string }) {
   return (
     <div className="card p-3.5">
       <div className="eyebrow">{label}</div>
       <div className="display text-xl font-semibold mt-1 leading-snug">{value}</div>
       {sub ? <div className="text-xs text-ink-3 mt-0.5">{subId ? <a className="link" href={entityHref(subId)}>{sub}</a> : sub}</div> : null}
+      {flag ? <div className="text-[11px] mt-1 font-medium" style={{ color: 'var(--saffron)' }}>{flag}</div> : null}
     </div>
   )
 }

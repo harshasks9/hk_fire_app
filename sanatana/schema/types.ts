@@ -140,11 +140,13 @@ export type Confidence = 'high' | 'medium' | 'low'
  *  verified-online  — the locator/fact was checked against an accessible primary or
  *                     authoritative online source during research (URL recorded)
  *  source-checked   — checked against a named scholarly source, not online
+ *  reference-checked — checked only against a reference work (e.g. Wikipedia); awaiting a
+ *                     primary or scholarly source
  *  recall           — supplied from expert recall; plausible, awaiting a check
  *  unresolved       — could not be verified; shown with a warning
  *  disputed         — the fact itself is contested; competing views recorded
  */
-export type VerificationStatus = 'verified-online' | 'source-checked' | 'recall' | 'unresolved' | 'disputed'
+export type VerificationStatus = 'verified-online' | 'source-checked' | 'reference-checked' | 'recall' | 'unresolved' | 'disputed'
 
 export interface SourceRef {
   /** id in the source registry (data/sources/*.json) */

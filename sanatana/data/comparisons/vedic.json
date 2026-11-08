@@ -395,7 +395,7 @@
    },
    {
     "text": "text:mahabharata",
-    "locator": "MBh (CE) 3.185",
+    "locator": "MBh (CE) 3.185.48",
     "statement": "The fish finally reveals itself as Brahmā, the lord of creatures (Prajāpati), and charges Manu with creating all beings.",
     "sources": [
      {
@@ -407,11 +407,11 @@
       "locator": "vol. 2"
      }
     ],
-    "status": "recall"
+    "status": "verified-online"
    },
    {
     "text": "text:matsya-purana",
-    "locator": "MtP 1–2",
+    "locator": "MatsP 1.11–28",
     "statement": "The fish is Viṣṇu (Janārdana) in his fish form, who saves king Manu and teaches him; the Purāṇa takes its name from this frame.",
     "sources": [
      {
@@ -419,11 +419,11 @@
       "locator": "s.v. Matsya Purāṇa"
      }
     ],
-    "status": "recall"
+    "status": "verified-online"
    },
    {
     "text": "text:bhagavata-purana",
-    "locator": "BhP 8.24",
+    "locator": "BhP 8.24.10–13, 57–58",
     "statement": "Hari takes the fish form to save the royal sage Satyavrata, future Vaivasvata Manu, and to recover the Vedas.",
     "sources": [
      {
@@ -431,7 +431,7 @@
       "locator": "BhP 8.24"
      }
     ],
-    "status": "recall"
+    "status": "verified-online"
    }
   ],
   "note": "Only the Śatapatha row was checked online; the epic and Purāṇic rows are from recall and give coarse locators.",

@@ -7,7 +7,7 @@
  *
  *   npm run seed:discoveries   → data/discoveries.json  (then npm run validate)
  */
-import { writeFileSync } from 'node:fs'
+import { writeFileSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { loadDataset } from './lib/load.ts'
 import { checkDataset } from './lib/check.ts'
@@ -19,33 +19,42 @@ const A = new Map(assertions.map((a) => [a.id, a]))
 
 // ── computed figures ──
 const temples = [...entities.values()].filter((e) => e.type === 'temple')
-const mat = (e: (typeof temples)[number]) => Math.min(...(e.dates ?? []).filter((d) => d.system === 'material' && typeof d.start === 'number').map((d) => d.start!))
+/** Surviving fabric: a 'surviving-structure' date if there is one; otherwise the latest
+ *  construction/rebuilding (earlier buildings on the site may not survive); otherwise the
+ *  earliest non-disputed material date. Renovations, gifts and inscriptions do not count. */
+const mat = (e: (typeof temples)[number]): number => {
+  const ds = (e.dates ?? []).filter((d) => d.system === 'material' && typeof d.start === 'number' && d.certainty !== 'disputed')
+  const surv = ds.filter((d) => d.event === 'surviving-structure')
+  if (surv.length) return Math.min(...surv.map((d) => d.start!))
+  const built = ds.filter((d) => /^(construction|reconstruction|rebuild)/i.test(d.event))
+  if (built.length) return Math.max(...built.map((d) => d.start!))
+  return ds.length ? Math.min(...ds.map((d) => d.start!)) : NaN
+}
 const withLegend = temples.filter((t) => (t.dates ?? []).some((d) => d.system === 'traditional') && Number.isFinite(mat(t)))
 const legendLate = withLegend.filter((t) => mat(t) >= 1500)
 const datedTemples = temples.filter((t) => Number.isFinite(mat(t)))
 const pre600 = datedTemples.filter((t) => mat(t) < 600)
-const texts = (id: string) => {
-  const set = new Set<string>()
-  for (const a of assertions) if (a.s === id && ['APPEARS_IN', 'MENTIONED_IN', 'NARRATED_IN', 'TEACHES_IN'].includes(a.p)) set.add(a.o)
-  return set.size
-}
+// the same count the entity pages show (compiled metrics), so the numbers agree everywhere
+let compiled: Map<string, number> = new Map()
+try { compiled = new Map((JSON.parse(readFileSync(join(import.meta.dirname, '..', 'public', 'data', 'graph.json'), 'utf8')).nodes as { id: string; m: { texts: number } }[]).map((n) => [n.id, n.m.texts])) } catch { /* graph not compiled yet */ }
+const texts = (id: string) => compiled.get(id) ?? 0
 
 type D = Omit<Discovery, 'sources'> & { extraSources?: SourceRef[] }
 const D: D[] = [
   {
     id: 'disc:vasudeva-before-the-epic',
     kicker: 'Earliest attestations',
-    title: 'Vāsudeva and Saṅkarṣaṇa were worshipped from Bactria to the Deccan before the epics reached their final form',
+    title: 'Vāsudeva and Saṅkarṣaṇa were honoured by patrons from the Indo-Greek world to the Deccan before the epics reached their final form',
     body: 'Four independent kinds of evidence cluster within roughly a century and a half: coins of the Greco-Bactrian king Agathocles found at Aï Khanoum (c. 190–180 BCE) showing two deities with a plough and a wheel; the Besnagar pillar on which Heliodorus, envoy of an Indo-Greek king, calls himself a Bhāgavata and Vāsudeva the “god of gods”; the Hāthībāḍā–Ghosuṇḍī inscriptions in Rajasthan naming Saṅkarṣaṇa and Vāsudeva together; and the Nāṇeghāṭ inscription of the Sātavāhana queen Nāganikā invoking them in the western Deccan.\n\nThe patrons were a Greek king, a Greek envoy, a local ruler and a Deccan queen. Whatever the date of the Mahābhārata’s final redaction, devotion to these two figures was already geographically and socially wide.',
     entities: ['art:agathocles-coins', 'ins:heliodorus', 'ins:hathibada-ghosundi', 'ins:nanaghat', 'deity:vasudeva', 'deity:sankarshana', 'char:krishna', 'char:balarama'],
     assertions: ['material:60', 'material:63', 'material:64', 'material:1', 'material:11', 'material:22', 'material:23', 'material:32', 'material:33'],
     confidence: 'high',
-    caveat: 'The inscriptions name Vāsudeva and Saṅkarṣaṇa, not “Kṛṣṇa”; identifying the coin figures and the inscriptional gods with the epic Kṛṣṇa and Balarāma is scholarly interpretation (class 5). None of this dates the Kṛṣṇa narratives or proves any event in them.',
+    caveat: 'The inscriptions name Vāsudeva and Saṅkarṣaṇa, not “Kṛṣṇa”. The coin figures are identified with them by interpretation (class 5), and coins found at Aï Khanoum do not by themselves show worship there. Identifying the inscriptional gods with the epic Kṛṣṇa and Balarāma is also scholarly interpretation. None of this dates the Kṛṣṇa narratives or proves any event in them.',
   },
   {
     id: 'disc:grammarians',
     kicker: 'Earliest attestations',
-    title: 'Two grammarians are among the earliest witnesses that Kṛṣṇa’s and Bali’s stories were told and performed',
+    title: 'A grammarian attests devotion to Vāsudeva and Arjuna, and a later one the staging of Kṛṣṇa’s and Bali’s stories',
     body: 'Pāṇini’s rule 4.3.98 (vāsudevārjunābhyāṃ vun) forms words for devotees of Vāsudeva and of Arjuna — evidence that both were objects of bhakti when the rule was framed, usually dated c. 5th–4th c. BCE. Two centuries or so later, Patañjali’s Mahābhāṣya on 3.1.26 describes performers who “have Kaṃsa killed” and “have Bali bound” before the audience’s eyes, and on 2.2.24 and 2.2.34 alludes to Kṛṣṇa with Saṅkarṣaṇa and to a prāsāda of Rāma and Keśava.\n\nRead alongside the Ṛgveda’s three strides of Viṣṇu (1.154) and the Śatapatha’s dwarf who wins the earth (ŚB 1.2.5, with no Bali), the grammarians supply a textual stage of the Vāmana–Bali story between the Veda and the Purāṇas.',
     entities: ['text:ashtadhyayi', 'text:mahabhashya', 'deity:vasudeva', 'char:arjuna', 'narr:kamsa-vadha', 'narr:vamana-bali', 'char:bali', 'char:krishna', 'deity:sankarshana'],
     assertions: ['epic:104', 'epic:105', 'epic:106', 'vedic:343', 'vedic:414', 'vedic:342', 'vedic:415', 'vedic:416'],
@@ -85,8 +94,8 @@ const D: D[] = [
   {
     id: 'disc:oesho',
     kicker: 'Contested identities',
-    title: 'The Kuṣāṇa “Śiva” on coins is labelled with an Iranian name',
-    body: 'Gold coins of Wima Kadphises and Kaniṣka show a deity with a bull and Śaiva-looking attributes, but the Bactrian legend reads ΟΗϷΟ (Oesho), which many numismatists derive from the name of the Iranian wind god Vāyu (Vēš). The graph keeps Oesho as its own record with two disputed IDENTIFIED_WITH assertions — to Śiva and to Vāyu — and the evidence for and against.\n\nThe case shows why identity must be an assertion rather than a merge: the same image can belong to two traditions at once, or be a deliberate synthesis.',
+    title: 'From Kaniṣka onward, the Kuṣāṇa “Śiva” on coins is labelled with an Iranian name',
+    body: 'Gold coins of Kaniṣka I and his successors label a trident-bearing, bull-associated deity ΟΗϷΟ (Oesho) in Bactrian — a name many numismatists derive from the Iranian wind god Vāyu (Vēš). Wima Kadphises’ earlier coins show a similar deity with no name label, and a Kharoṣṭhī legend calling the king a devotee of Maheśvara. The graph keeps Oesho as its own record with two disputed IDENTIFIED_WITH assertions — to Śiva and to Vāyu — and the evidence for and against.\n\nThe case shows why identity must be an assertion rather than a merge: the same image can belong to two traditions at once, or be a deliberate synthesis.',
     entities: ['deity:oesho', 'art:kushan-oesho-coins', 'art:wima-kadphises-coin', 'claim:oesho-shiva-identity', 'deity:shiva'],
     assertions: ['material:133', 'material:136', 'material:137', 'material:138', 'material:139'],
     confidence: 'medium',
@@ -96,7 +105,7 @@ const D: D[] = [
     id: 'disc:proto-shiva',
     kicker: 'Archaeological interpretation',
     title: 'The most-cited “earliest image of Śiva” is the least secure item in the graph',
-    body: 'The Mohenjo-daro seal that John Marshall in 1931 called “proto-Śiva” is the oldest object in the dataset associated with Śiva — c. 2350–2000 BCE. It is also modelled as a disputed claim: Doris Srinivasan’s iconological assessment and later work argue that the horned, seated figure does not support the identification, and the Indus script remains undeciphered.\n\nFor this reason the atlas never lets a disputed link set an “earliest attestation”: Śiva’s earliest dated material record in the computed profile is the Gudimallam liṅga, itself carrying a range of dates.',
+    body: 'The Mohenjo-daro seal that John Marshall in 1931 called “proto-Śiva” is the oldest object in the dataset associated with Śiva — c. 2350–2000 BCE. It is also modelled as a disputed claim: Doris Srinivasan’s iconological assessment and later work argue that the horned, seated figure does not support the identification, and the Indus script remains undeciphered.\n\nThe atlas therefore does not use the disputed seal identification for Śiva’s “earliest attestation”: his earliest dated material record in the profile is the Gudimallam liṅga, whose dates (from the 3rd c. BCE to the 3rd c. CE) are themselves disputed; the majority view places it in the 2nd–1st c. BCE.',
     entities: ['art:pashupati-seal', 'claim:proto-shiva', 'deity:shiva', 'deity:rudra', 'person:john-marshall', 'art:gudimallam-linga'],
     assertions: ['material:91', 'material:92', 'material:105', 'material:106'],
     confidence: 'high',
@@ -106,9 +115,9 @@ const D: D[] = [
     id: 'disc:flood-fish-brahma',
     kicker: 'Versions compared',
     title: 'In the Mahābhārata the fish that saves Manu is Brahmā, not Viṣṇu',
-    body: 'The flood story runs from the Śatapatha Brāhmaṇa (1.8.1, where an unnamed fish saves Manu) to the Purāṇas. In the critical Mahābhārata (3.185.48) the fish reveals itself as Prajāpati Brahmā. Only in the Matsya and Bhāgavata Purāṇas does it become Viṣṇu’s first avatāra, and the Bhāgavata adds the demon Hayagrīva who steals the Veda.\n\nThe theological identity of the rescuer changed as the story moved between bodies of literature; the graph keeps each version separate and joins them with a DERIVED_FROM assertion rather than a merge.',
+    body: 'The flood story runs from the Śatapatha Brāhmaṇa (1.8.1, where an unnamed fish saves Manu) to the Purāṇas. In the critical Mahābhārata (3.185.48) the fish reveals itself as Prajāpati Brahmā. In the Purāṇas — the Matsya (1–2), the Agni (2) and the Bhāgavata (8.24) — the fish is Viṣṇu, and in ten-avatāra lists such as Agni Purāṇa 49 it stands first; the Bhāgavata adds the demon Hayagrīva who steals the Veda.\n\nThe theological identity of the rescuer changed as the story moved between bodies of literature; the graph keeps each version separate and joins them with a DERIVED_FROM assertion rather than a merge.',
     entities: ['narr:manu-fish', 'narr:matsya-flood', 'deity:matsya', 'deity:brahma', 'deity:vishnu', 'char:manu', 'text:shatapatha-brahmana', 'text:mahabharata', 'text:bhagavata-purana'],
-    assertions: ['purana:227', 'purana:534'],
+    assertions: ['purana:227', 'purana:534', 'purana:179', 'purana:190', 'purana:155'],
     confidence: 'high',
     caveat: 'A later Vaiṣṇava reading may preserve older oral tradition; textual sequence is not proof of origin.',
   },
@@ -116,7 +125,7 @@ const D: D[] = [
     id: 'disc:avatara-lists',
     kicker: 'Versions compared',
     title: 'There is no single early list of Viṣṇu’s ten avatāras',
-    body: 'The constituted text of the Mahābhārata’s Nārāyaṇīya lists Varāha, Narasiṃha, Vāmana, Paraśurāma, Rāma and others — but no Fish, no Tortoise and no Kalki. The Agni Purāṇa’s ten include Balarāma rather than Kṛṣṇa; the Bhāgavata counts twenty-two; the Matsya includes figures such as Māndhātṛ and Vyāsa.\n\nThe familiar ten is a convention that crystallised late. Every AVATARA_OF edge in the graph is qualified by the text that makes it, so the lists can be compared rather than flattened.',
+    body: 'The constituted text of the Mahābhārata’s Nārāyaṇīya lists Varāha, Narasiṃha, Vāmana, Paraśurāma, Rāma and others — but no Fish, no Tortoise and no Kalki. The Agni Purāṇa’s iconographic list of ten (AgP 49) includes Balarāma rather than Kṛṣṇa; the Bhāgavata counts twenty-two; the Matsya includes figures such as Māndhātṛ and Vyāsa.\n\nThe familiar ten is a convention that crystallised late. Every AVATARA_OF edge in the graph is qualified by the text that makes it, so the lists can be compared rather than flattened.',
     entities: ['concept:avatara', 'deity:vishnu', 'deity:matsya', 'deity:kurma', 'char:kalki', 'char:balarama', 'text:mahabharata', 'text:agni-purana', 'text:bhagavata-purana'],
     assertions: ['purana:200', 'purana:201', 'purana:202', 'purana:203', 'purana:204', 'purana:205', 'purana:186'],
     confidence: 'high',
@@ -196,7 +205,7 @@ const D: D[] = [
     id: 'disc:sita-parentage',
     kicker: 'Many Rāmāyaṇas',
     title: 'Whose daughter is Sītā? The answer depends on the tradition',
-    body: 'In Vālmīki she is found in a furrow and raised by Janaka. In the Buddhist Dasaratha Jātaka she is Rāma’s sister and becomes his queen. In Vimalasūri’s Jain Paumacariya she is Janaka’s natural daughter with a twin brother, Bhāmaṇḍala. In Guṇabhadra’s Jain telling, the Adbhuta Rāmāyaṇa, the Thai Ramakien and the Lao Phra Lak Phra Lam she is born to Rāvaṇa’s household and set adrift because of an omen.\n\nThe graph records each parentage as a separate kinship assertion qualified by its text, so the genealogy view shows all of them at once.',
+    body: 'In Vālmīki she is found in a furrow and raised by Janaka. In the Buddhist Dasaratha Jātaka she is Rāma’s sister and becomes his queen. In Vimalasūri’s Jain Paumacariya she is Janaka’s natural daughter with a twin brother, Bhāmaṇḍala. In several tellings — Guṇabhadra’s Jain Uttarapurāṇa, the Adbhuta Rāmāyaṇa, the Thai Ramakien and the Lao Phra Lak Phra Lam — she is born in Rāvaṇa’s household (to Mandodarī or to Rāvaṇa); in some, such as the Ramakien, an omen leads to her being set adrift, in others she is buried or abandoned and found by Janaka.\n\nThe graph records each parentage as a separate kinship assertion qualified by its text, so the genealogy view shows all of them at once.',
     entities: ['char:sita', 'char:janaka', 'char:ravana', 'text:valmiki-ramayana', 'text:dasaratha-jataka', 'text:paumacariya', 'text:adbhuta-ramayana', 'text:ramakien'],
     assertions: ['regional:265', 'regional:267', 'regional:268', 'regional:270', 'regional:272', 'regional:274', 'regional:276'],
     confidence: 'medium',
@@ -225,8 +234,8 @@ const D: D[] = [
   {
     id: 'disc:jnaneshwari-edition',
     kicker: 'Manuscripts & editions',
-    title: 'A 16th-century poet produced a critical edition of a Marathi classic',
-    body: 'The Jñāneśvarī carries its own dated colophon (Śaka 1212, 1290 CE, under the Yādava king Rāmacandra) and a second note, dated 1584, in which Eknāth says he restored the text because variant readings had corrupted it.\n\nThe problem of textual corruption — and an attempt to solve it — appears in a vernacular tradition three centuries before modern critical editions.',
+    title: 'A 16th-century poet produced a corrected edition of a Marathi classic',
+    body: 'The Jñāneśvarī carries its own dated colophon (Śaka 1212, 1290 CE, under the Yādava king Rāmacandra) and a second note, dated 1584, in which Eknāth says he restored the text because variant readings had corrupted it.\n\nThe problem of textual corruption — and a deliberate attempt to correct it — appears in a vernacular tradition centuries before modern critical editions.',
     entities: ['text:jnaneshwari', 'person:jnaneshwar', 'person:eknath'],
     assertions: ['regional:64', 'regional:123'],
     confidence: 'high',
@@ -235,8 +244,8 @@ const D: D[] = [
   {
     id: 'disc:mayon-ceyon',
     kicker: 'Regional traditions',
-    title: 'The oldest Tamil grammar names Māyōṉ and Cēyōṉ as lords of landscapes — their equation with Viṣṇu and Skanda is a later gloss',
-    body: 'The Tolkāppiyam names Māyōṉ (“the dark one”) and Cēyōṉ (“the red one”) as presiding over the forest and mountain landscapes of love poetry. The commentator Nacciṉārkkiṉiyar glosses them as Viṣṇu and Murukaṉ, and Murukaṉ’s identification with the Sanskrit Skanda is a further convergence.\n\nThe graph keeps Murukaṉ and Skanda as two records joined by an assertion qualified by tradition — the convergence is part of the history, not an assumption.',
+    title: 'The oldest Tamil grammar names Māyōṉ and Cēyōṉ as lords of landscapes without myth; other Caṅkam poems already give them Viṣṇu’s and Skanda’s stories, and the medieval commentator glosses them so',
+    body: 'The Tolkāppiyam names Māyōṉ (“the dark one”) and Cēyōṉ (“the red one”) as presiding over the forest and mountain landscapes of love poetry. Other Caṅkam poems, such as the Paripāṭal hymns to Tirumāl, already attach Viṣṇu–Kṛṣṇa mythology to Māyōṉ; the medieval commentator Nacciṉārkkiṉiyar glosses the pair as Viṣṇu and Murukaṉ; and Murukaṉ’s identification with the Sanskrit Skanda is a further convergence.\n\nThe graph keeps Murukaṉ and Skanda as two records joined by an assertion qualified by tradition — the convergence is part of the history, not an assumption.',
     entities: ['deity:mayon', 'deity:murugan', 'deity:skanda', 'deity:vishnu', 'char:krishna', 'text:tolkappiyam'],
     assertions: ['regional:243', 'regional:244', 'regional:298', 'regional:300', 'regional:301'],
     confidence: 'medium',
@@ -245,8 +254,8 @@ const D: D[] = [
   {
     id: 'disc:legend-vs-fabric',
     kicker: 'Temples',
-    title: `${legendLate.length} of the ${withLegend.length} temples with founding legends have no surviving fabric older than 1500 CE`,
-    body: `Of the ${withLegend.length} temples in the atlas whose tradition gives a founding story, ${legendLate.length} have no surviving fabric dated before 1500 CE — among them ${['temple:kashi-vishwanath', 'temple:kalighat', 'temple:vishnupad-gaya', 'temple:badrinath'].filter((id) => legendLate.some((t) => t.id === id)).map((id) => `${entities.get(id)!.name.split(',')[0]} (${mat(entities.get(id)!)})`).join(', ')}. Across all ${datedTemples.length} dated temples, ${pre600.length} have a surviving phase from before 600 CE, and several of those — Deogarh, Udayagiri, Bhitargaon, Tigawa — are monuments no longer in regular worship.\n\nMany of the places most central to living practice have been rebuilt repeatedly, while some of the oldest fabric survives where worship lapsed. The atlas therefore keeps two dates on every temple: the tradition’s and the building’s.`,
+    title: `${legendLate.length} of the ${withLegend.length} temples with founding legends stand in buildings dated after 1500 CE`,
+    body: `Of the ${withLegend.length} temples in the atlas whose tradition gives a founding story, ${legendLate.length} stand in a main building dated after 1500 CE (counting the surviving structure, or the latest construction where a site was rebuilt; renovations do not count) — among them ${['temple:kashi-vishwanath', 'temple:kalighat', 'temple:vishnupad-gaya', 'temple:badrinath'].filter((id) => legendLate.some((t) => t.id === id)).map((id) => `${entities.get(id)!.name.split(',')[0]} (${mat(entities.get(id)!)})`).join(', ')}. Across all ${datedTemples.length} dated temples, ${pre600.length} have a main building from before 600 CE by this rule, and several of those — Deogarh, Udayagiri, Bhitargaon, Tigawa — are monuments no longer in regular worship.\n\nMany of the places most central to living practice have been rebuilt repeatedly, while some of the oldest fabric survives where worship lapsed. The atlas therefore keeps two dates on every temple: the tradition’s and the building’s.`,
     entities: ['temple:kashi-vishwanath', 'temple:somnath', 'temple:kalighat', 'temple:deogarh-dashavatara', 'temple:udayagiri-caves', 'temple:badami-caves'],
     assertions: ['temple:215', 'temple:209'],
     confidence: 'medium',
@@ -255,8 +264,8 @@ const D: D[] = [
   {
     id: 'disc:ahilyabai',
     kicker: 'Temples',
-    title: 'One 18th-century queen stands behind the present fabric of several “ancient” shrines',
-    body: 'Ahilyābāī Holkar of Indore built the present Kāśī Viśvanātha temple (1780) and the Viṣṇupada at Gaya (1787), renovated Aundha Nāganātha, built a separate Somanātha temple (1783), and is credited — disputedly — with rebuilding Grishneshwar.\n\nFour of these are counted among the twelve jyotirliṅgas; the buildings pilgrims enter are largely hers.',
+    title: 'One 18th-century queen stands behind the present fabric of several ancient shrines',
+    body: 'Ahilyābāī Holkar of Indore built the present Kāśī Viśvanātha temple (1780) and the Viṣṇupada at Gaya (1787), a separate Somanātha temple beside the old site (1783), and renovated Aundha Nāganātha; a role at Grishneshwar is disputed.\n\nAt Kāśī and Gaya the buildings pilgrims enter today are hers; at Somnath the main temple is the one completed in 1951.',
     entities: ['person:ahilyabai-holkar', 'temple:kashi-vishwanath', 'temple:vishnupad-gaya', 'temple:aundha-nagnath', 'temple:somnath', 'temple:grishneshwar'],
     assertions: ['temple:215', 'temple:209', 'temple:160', 'temple:156', 'temple:220'],
     confidence: 'high',
@@ -296,17 +305,17 @@ const D: D[] = [
     id: 'disc:angkor-prambanan',
     kicker: 'Southeast Asia',
     title: 'The epics were carved in stone in Java and Cambodia as monumental programmes',
-    body: 'Prambanan’s Rāmāyaṇa and Kṛṣṇa reliefs belong to a temple tied to the Śivagṛha inscription of 856 CE — the same period as the Old Javanese Kakawin Rāmāyaṇa (c. 856–930). Angkor Wat, built under Sūryavarman II (c. 1113–1150), carries the churning of the ocean, the Kurukṣetra battle and the war in Laṅkā in its galleries.\n\nThe largest surviving narrative programmes of these stories in stone stand outside South Asia.',
+    body: 'Prambanan’s Rāmāyaṇa and Kṛṣṇa reliefs belong to a temple tied to the Śivagṛha inscription of 856 CE — the same period as the Old Javanese Kakawin Rāmāyaṇa (c. 856–930). Angkor Wat, built under Sūryavarman II (c. 1113–1150), carries the churning of the ocean, the Kurukṣetra battle and the war in Laṅkā in its galleries.\n\nSome of the most extensive surviving narrative programmes of these stories in stone stand outside South Asia.',
     entities: ['temple:prambanan', 'temple:angkor-wat', 'ins:shivagrha', 'text:kakawin-ramayana', 'narr:samudra-manthana', 'narr:kurukshetra-war', 'narr:lanka-war'],
     assertions: ['temple:279', 'temple:282', 'purana:395', 'temple:288', 'temple:289', 'temple:290'],
     confidence: 'high',
-    caveat: 'The link between Prambanan and the Śivagṛha inscription is an argument (de Casparis), since the inscription was found apart from the temple; “largest” is a statement about what survives.',
+    caveat: 'The link between Prambanan and the Śivagṛha inscription is an argument (de Casparis), since the inscription was found apart from the temple; the comparison of scale is a statement about what survives, not a measurement made here.',
   },
   {
     id: 'disc:network',
     kicker: 'Network analysis',
     title: `Rāma and Sītā are attested in more distinct texts in this graph than any deity`,
-    body: `Counting distinct texts in which a figure is directly attested, Rāma (${texts('char:rama')}), Sītā (${texts('char:sita')}) and Kṛṣṇa (${texts('char:krishna')}) lead; Śiva and Viṣṇu are the strongest bridges in the network (highest betweenness), connecting otherwise separate corpora, temples and inscriptions.\n\nNarrative figures travel across languages and religions — Hindu, Jain, Buddhist, Southeast Asian — where a deity’s cult is more often carried by temples and inscriptions than by retellings.`,
+    body: `Counting the distinct texts in which a figure is attested — directly, or through the passage a class-1 assertion cites — as on every profile page, Rāma (${texts('char:rama')}), Sītā (${texts('char:sita')}) and Kṛṣṇa (${texts('char:krishna')}) lead; Śiva and Viṣṇu are the strongest bridges in the network (highest betweenness), connecting otherwise separate corpora, temples and inscriptions.\n\nNarrative figures travel across languages and religions — Hindu, Jain, Buddhist, Southeast Asian — where a deity’s cult is more often carried by temples and inscriptions than by retellings.`,
     entities: ['char:rama', 'char:sita', 'char:krishna', 'deity:shiva', 'deity:vishnu'],
     assertions: [],
     confidence: 'low',

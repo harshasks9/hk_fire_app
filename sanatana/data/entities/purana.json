@@ -2559,8 +2559,8 @@
     "system": "scholarly-textual",
     "event": "composition",
     "label": "499 CE",
-    "certainty": "secure",
-    "basis": "internal statement of the author's age at Kali 3600 (3.10)",
+    "certainty": "estimated",
+    "basis": "author states his age (23) at Kali 3600 = 499 CE (3.10); the composition date is inferred from it",
     "sources": [
      {
       "source": "src:shukla-sarma-1976",
@@ -2783,7 +2783,7 @@
    "destroyer",
    "yogin"
   ],
-  "summary": "The great god of Śaiva traditions, continuous with the Vedic Rudra; in the Purāṇas he is the ascetic and householder of Kailāsa, destroyer of Tripura and of Dakṣa's sacrifice, and, in the Liṅgodbhava, the infinite pillar of fire beyond Brahmā and Viṣṇu.",
+  "summary": "The great god of Śaiva traditions, identified, from the Śvetāśvatara Upaniṣad onward, with the Vedic Rudra; in the Purāṇas he is the ascetic and householder of Kailāsa, destroyer of Tripura and of Dakṣa's sacrifice, and, in the Liṅgodbhava, the infinite pillar of fire beyond Brahmā and Viṣṇu.",
   "details": "The Śvetāśvatara Upaniṣad already calls Rudra the one god who does not tolerate a second (3.2) and names him Śiva (3.11). The Purāṇas elaborate his family (Pārvatī, Skanda, Gaṇeśa), his forms (Naṭarāja, Bhairava, Ardhanārīśvara, Dakṣiṇāmūrti) and his worship in the liṅga.",
   "attributes": {
    "iconography": "matted locks (jaṭā) with crescent moon and Gaṅgā, third eye, blue throat (nīlakaṇṭha), serpents, ash-smeared body, tiger or elephant skin; often worshipped aniconically as liṅga",

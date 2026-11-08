@@ -1,0 +1,43 @@
+[
+ {
+  "id": "ins:rajarajeshvaram-inscriptions",
+  "type": "inscription",
+  "name": "Tamil inscriptions of the Rājarājeśvaram, Thanjavur",
+  "subtype": "temple inscriptions (corpus)",
+  "summary": "The long Tamil inscriptions on the walls and base of the Bṛhadīśvara (Rājarājeśvaram) temple, recording Rājarāja I’s and his successors’ gifts, the temple’s endowments, staff and bronzes; edited by E. Hultzsch in South Indian Inscriptions vol. II.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "inscription",
+    "label": "early 11th century CE (reigns of Rājarāja I and Rājendra I)",
+    "start": 1003,
+    "end": 1044,
+    "certainty": "estimated",
+    "basis": "regnal years stated in the inscriptions",
+    "sources": [
+     {
+      "source": "src:hultzsch-sii2"
+     }
+    ]
+   }
+  ],
+  "location": {
+   "lat": 10.7828,
+   "lon": 79.1318,
+   "precision": "exact",
+   "label": "Bṛhadīśvara temple, Thanjavur, Tamil Nadu, India",
+   "country": "India"
+  },
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:hultzsch-sii2"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "orchestrator",
+  "lastVerified": "2026-11-08",
+  "limits": "The inscriptions document royal gifts, endowments and the temple’s establishment in the early 11th century; they do not date earlier worship at Thanjavur."
+ }
+]

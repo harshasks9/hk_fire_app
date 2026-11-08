@@ -34,6 +34,7 @@ export const EVIDENCE: Record<number, { short: string; label: string; blurb: str
 export const STATUS: Record<string, { label: string; blurb: string }> = {
   'verified-online': { label: 'Verified online', blurb: 'Checked during research against an accessible authoritative source (link recorded).' },
   'source-checked': { label: 'Source-checked', blurb: 'Checked against a named scholarly source.' },
+  'reference-checked': { label: 'Reference-checked', blurb: 'Checked only against a reference work such as Wikipedia; awaiting a primary or scholarly source.' },
   recall: { label: 'Awaiting check', blurb: 'Supplied from expert recall; plausible but not yet checked against a source.' },
   unresolved: { label: 'Unresolved', blurb: 'Could not be verified. Shown so the gap is visible.' },
   disputed: { label: 'Disputed', blurb: 'The point itself is contested; competing views are recorded.' },
@@ -72,8 +73,12 @@ export function earliestYear(n: GNode): number | undefined {
   return ys.length ? Math.min(...ys) : undefined
 }
 
+/** The date that places a record in material time: the earliest material date, preferring
+ *  non-disputed claims. Destructions and cult attestations live in the reception system. */
 export function materialDate(n: GNode): DateClaim | undefined {
-  return (n.dates ?? []).filter((d) => d.system === 'material' && typeof d.start === 'number').sort((a, b) => a.start! - b.start!)[0]
+  const ds = (n.dates ?? []).filter((d) => d.system === 'material' && typeof d.start === 'number')
+  const firm = ds.filter((d) => d.certainty !== 'disputed')
+  return (firm.length ? firm : ds).sort((a, b) => a.start! - b.start!)[0]
 }
 
 export const ERAS: { label: string; start: number; end: number }[] = [

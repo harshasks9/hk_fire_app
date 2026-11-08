@@ -1175,7 +1175,7 @@
     "start": -200,
     "end": -1,
     "label": "2nd–1st century BCE",
-    "certainty": "disputed",
+    "certainty": "estimated",
     "basis": "stylistic comparison (Bharhut, Sanchi)",
     "sources": [
      {
@@ -1186,7 +1186,7 @@
       "source": "src:harle-1994"
      }
     ],
-    "view": "Harle; Blurton"
+    "view": "Harle; Blurton (majority)"
    },
    {
     "system": "material",
@@ -4688,14 +4688,14 @@
     "start": -300,
     "end": 1500,
     "label": "historical period (anchor typology)",
-    "certainty": "disputed",
+    "certainty": "estimated",
     "basis": "typology of stone anchors",
     "sources": [
      {
       "source": "src:gaur-2004"
      }
     ],
-    "view": "Gaur, Sundaresh & Tripati 2004"
+    "view": "Gaur, Sundaresh & Tripati 2004 (majority)"
    }
   ],
   "location": {
@@ -5061,8 +5061,8 @@
     "url": "https://en.wikipedia.org/wiki/Spitzer_Manuscript"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "material",
   "limits": "A Buddhist site; the Sanskrit manuscripts found there attest learned culture along the Silk Road, not Hindu worship at the site.",
   "lastVerified": "2026-11-08"
@@ -5164,7 +5164,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "material",
   "limits": "The Sun temple of the inscription has not been identified with a surviving structure in the sources checked.",
   "lastVerified": "2026-11-08"
@@ -6093,8 +6093,8 @@
     "url": "https://en.wikipedia.org/wiki/Eran_boar_inscription_of_Toramana"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
  },
@@ -6288,8 +6288,8 @@
     "url": "https://en.wikipedia.org/wiki/Badami_cave_temples"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
  },
@@ -6332,8 +6332,8 @@
     "url": "https://en.wikipedia.org/wiki/Aihole_inscription"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
  },
@@ -6547,8 +6547,8 @@
     "url": "https://en.wikipedia.org/wiki/Changu_Narayan"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
  },
@@ -7180,8 +7180,8 @@
     "url": "https://en.wikipedia.org/wiki/Gudimallam_Lingam"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
  },
@@ -8050,9 +8050,9 @@
  {
   "id": "inst:unesco",
   "type": "institution",
-  "name": "UNESCO World Heritage Centre",
+  "name": "UNESCO",
   "subtype": "intergovernmental heritage body",
-  "summary": "The UNESCO body that maintains the World Heritage List (Mohenjo-daro 1980; Elephanta 1987; Mamallapuram, Ellora, Prambanan and others). UNESCO's separate Memory of the World Register includes the BORI Rigveda manuscripts (2007).",
+  "summary": "UNESCO, whose World Heritage Centre maintains the World Heritage List (Mohenjo-daro 1980; Elephanta 1987; Mamallapuram, Ellora, Prambanan and others), whose Living Heritage Entity maintains the Intangible Cultural Heritage lists (Vedic chanting, Rāmlīlā, Kūṭiyāṭṭam, Royal Ballet of Cambodia), and whose Memory of the World Register includes the BORI Rigveda manuscripts (2007).",
   "attributes": {
    "established": "World Heritage Centre 1992 (Convention 1972)"
   },
@@ -8203,8 +8203,8 @@
     "url": "https://en.wikipedia.org/wiki/Spitzer_Manuscript"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
  },
@@ -8223,8 +8223,8 @@
     "url": "https://en.wikipedia.org/wiki/Spitzer_Manuscript"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
  },
@@ -8250,8 +8250,8 @@
     "url": "https://en.wikipedia.org/wiki/Vasu_Doorjamb_Inscription"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
  },
@@ -8270,8 +8270,8 @@
     "url": "https://en.wikipedia.org/wiki/Hathibada_Ghosundi_Inscriptions"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
  },
@@ -8293,8 +8293,8 @@
     "url": "https://en.wikipedia.org/wiki/Shivagrha_inscription"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "material",
   "lastVerified": "2026-11-08"
  },

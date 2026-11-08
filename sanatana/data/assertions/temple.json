@@ -115,8 +115,8 @@
     "url": "https://en.wikipedia.org/wiki/Gangaikonda_Cholapuram"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -152,8 +152,8 @@
     "url": "https://en.wikipedia.org/wiki/Gangaikonda_Cholapuram"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -169,8 +169,8 @@
     "url": "https://en.wikipedia.org/wiki/Airavatesvara_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -186,8 +186,8 @@
     "url": "https://en.wikipedia.org/wiki/Airavatesvara_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -203,8 +203,8 @@
     "url": "https://en.wikipedia.org/wiki/Airavatesvara_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -286,7 +286,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -321,8 +321,8 @@
     "url": "https://en.wikipedia.org/wiki/Ranganathaswamy_Temple,_Srirangam"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -342,7 +342,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -361,7 +361,7 @@
     "source": "src:flood-1996"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "recall",
   "agent": "temple"
  },
@@ -400,7 +400,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -417,7 +417,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -456,8 +456,8 @@
     "url": "https://en.wikipedia.org/wiki/Meenakshi_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -496,8 +496,8 @@
     "url": "https://en.wikipedia.org/wiki/Ramanathaswamy_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -558,7 +558,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -574,8 +574,8 @@
     "url": "https://en.wikipedia.org/wiki/Ramanathaswamy_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -592,7 +592,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -611,8 +611,8 @@
     "url": "https://en.wikipedia.org/wiki/Annamalaiyar_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -628,8 +628,8 @@
     "url": "https://en.wikipedia.org/wiki/Annamalaiyar_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -646,7 +646,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -665,8 +665,8 @@
     "url": "https://en.wikipedia.org/wiki/Jambukeswarar_Temple,_Thiruvanaikaval"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -685,8 +685,8 @@
     "url": "https://en.wikipedia.org/wiki/Ekambareswarar_Temple_(Kanchipuram)"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -706,7 +706,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -723,7 +723,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -739,8 +739,8 @@
     "url": "https://en.wikipedia.org/wiki/Kailasanathar_Temple,_Kanchipuram"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -776,8 +776,8 @@
     "url": "https://en.wikipedia.org/wiki/Kailasanathar_Temple,_Kanchipuram"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -812,8 +812,8 @@
     "url": "https://en.wikipedia.org/wiki/Tiru_Parameswara_Vinnagaram"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -829,8 +829,8 @@
     "url": "https://en.wikipedia.org/wiki/Tiru_Parameswara_Vinnagaram"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -846,8 +846,8 @@
     "url": "https://en.wikipedia.org/wiki/Tiru_Parameswara_Vinnagaram"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -867,7 +867,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "rationale": "Exact decad/verse locator not verified.",
   "agent": "temple",
   "lastVerified": "2026-11-08"
@@ -887,8 +887,8 @@
     "url": "https://en.wikipedia.org/wiki/Varadharaja_Perumal_Temple,_Kanchipuram"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -905,7 +905,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -985,8 +985,8 @@
     "url": "https://en.wikipedia.org/wiki/Group_of_Monuments_at_Mahabalipuram"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -1005,8 +1005,8 @@
     "url": "https://en.wikipedia.org/wiki/Shore_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -1025,8 +1025,8 @@
     "url": "https://en.wikipedia.org/wiki/Shore_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -1042,8 +1042,8 @@
     "url": "https://en.wikipedia.org/wiki/Shore_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -1059,8 +1059,8 @@
     "url": "https://en.wikipedia.org/wiki/Shore_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -1076,8 +1076,8 @@
     "url": "https://en.wikipedia.org/wiki/Shore_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -1094,7 +1094,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "competing": "Some inscriptions have been read as indicating work under Rājasiṃha.",
   "agent": "temple",
   "lastVerified": "2026-11-08"
@@ -1111,8 +1111,8 @@
     "url": "https://en.wikipedia.org/wiki/Pancha_Rathas"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -1128,8 +1128,8 @@
     "url": "https://en.wikipedia.org/wiki/Pancha_Rathas"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -1149,7 +1149,7 @@
    }
   ],
   "confidence": "low",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -1165,8 +1165,8 @@
     "url": "https://en.wikipedia.org/wiki/Subramaniya_Swamy_Temple,_Thiruparankundram"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -1183,7 +1183,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -1199,8 +1199,8 @@
     "url": "https://en.wikipedia.org/wiki/Thiruchendur_Murugan_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -1216,8 +1216,8 @@
     "url": "https://en.wikipedia.org/wiki/Palani_Murugan_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -1233,8 +1233,8 @@
     "url": "https://en.wikipedia.org/wiki/Swamimalai_Murugan_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -1254,7 +1254,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -1270,8 +1270,8 @@
     "url": "https://en.wikipedia.org/wiki/Tiruttani_Murugan_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -1287,8 +1287,8 @@
     "url": "https://en.wikipedia.org/wiki/Pazhamudircholai"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -1307,8 +1307,8 @@
     "url": "https://en.wikipedia.org/wiki/Guruvayur_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -1324,8 +1324,8 @@
     "url": "https://en.wikipedia.org/wiki/Guruvayur_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -1344,8 +1344,8 @@
     "url": "https://en.wikipedia.org/wiki/Padmanabhaswamy_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -1420,8 +1420,8 @@
     "url": "https://en.wikipedia.org/wiki/Venkateswara_Temple,_Tirumala"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -1441,7 +1441,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -1497,8 +1497,8 @@
     "url": "https://en.wikipedia.org/wiki/Mallikarjuna_Temple,_Srisailam"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -1517,8 +1517,8 @@
     "url": "https://en.wikipedia.org/wiki/Mallikarjuna_Temple,_Srisailam"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -1535,7 +1535,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -1554,8 +1554,8 @@
     "url": "https://en.wikipedia.org/wiki/Srikalahasti_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -1576,7 +1576,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -1593,7 +1593,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -1612,8 +1612,8 @@
     "url": "https://en.wikipedia.org/wiki/Gudimallam_Lingam"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -1633,7 +1633,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -1649,8 +1649,8 @@
     "url": "https://en.wikipedia.org/wiki/Alampur_Navabrahma_Temples"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -1684,8 +1684,8 @@
     "url": "https://en.wikipedia.org/wiki/Alampur_Navabrahma_Temples"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -1704,8 +1704,8 @@
     "url": "https://en.wikipedia.org/wiki/Ramappa_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -1721,8 +1721,8 @@
     "url": "https://en.wikipedia.org/wiki/Ramappa_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -1738,8 +1738,8 @@
     "url": "https://en.wikipedia.org/wiki/Ramappa_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -1758,8 +1758,8 @@
     "url": "https://en.wikipedia.org/wiki/Badami_cave_temples"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -1778,8 +1778,8 @@
     "url": "https://en.wikipedia.org/wiki/Badami_cave_temples"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -1800,7 +1800,7 @@
     "source": "src:michell-1977"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "recall",
   "agent": "temple"
  },
@@ -1833,7 +1833,7 @@
     "source": "src:harle-1994"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "recall",
   "agent": "temple"
  },
@@ -1851,7 +1851,7 @@
     "source": "src:harle-1994"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "recall",
   "agent": "temple"
  },
@@ -1867,8 +1867,8 @@
     "url": "https://en.wikipedia.org/wiki/Meguti_Jain_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -1884,8 +1884,8 @@
     "url": "https://en.wikipedia.org/wiki/Durga_temple,_Aihole"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -1935,7 +1935,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -1951,8 +1951,8 @@
     "url": "https://en.wikipedia.org/wiki/Lad_Khan_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -1971,8 +1971,8 @@
     "url": "https://en.wikipedia.org/wiki/Pattadakal"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -1988,8 +1988,8 @@
     "url": "https://en.wikipedia.org/wiki/Pattadakal"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -2005,8 +2005,8 @@
     "url": "https://en.wikipedia.org/wiki/Pattadakal"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -2044,7 +2044,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "rationale": "Stylistic dependence argued by architectural historians.",
   "agent": "temple",
   "lastVerified": "2026-11-08"
@@ -2062,8 +2062,8 @@
     "url": "https://en.wikipedia.org/wiki/Pattadakal"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -2079,8 +2079,8 @@
     "url": "https://en.wikipedia.org/wiki/Pattadakal"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -2100,8 +2100,8 @@
     "url": "https://en.wikipedia.org/wiki/Pattadakal"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -2122,7 +2122,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -2138,8 +2138,8 @@
     "url": "https://en.wikipedia.org/wiki/Kailasa_temple,_Ellora"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -2158,8 +2158,8 @@
     "url": "https://en.wikipedia.org/wiki/Kailasa_temple,_Ellora"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -2214,8 +2214,8 @@
     "url": "https://en.wikipedia.org/wiki/Kailasa_temple,_Ellora"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -2233,7 +2233,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -2249,8 +2249,8 @@
     "url": "https://en.wikipedia.org/wiki/Ellora_Caves"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -2284,8 +2284,8 @@
     "url": "https://en.wikipedia.org/wiki/Elephanta_Caves"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -2300,7 +2300,7 @@
     "source": "src:collins-1988"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "recall",
   "agent": "temple"
  },
@@ -2337,8 +2337,8 @@
     "url": "https://en.wikipedia.org/wiki/Virupaksha_Temple,_Hampi"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -2357,8 +2357,8 @@
     "url": "https://en.wikipedia.org/wiki/Virupaksha_Temple,_Hampi"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -2374,8 +2374,8 @@
     "url": "https://en.wikipedia.org/wiki/Virupaksha_Temple,_Hampi"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -2391,8 +2391,8 @@
     "url": "https://en.wikipedia.org/wiki/Virupaksha_Temple,_Hampi"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -2407,7 +2407,7 @@
     "source": "src:dallapiccola-1992"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "recall",
   "agent": "temple"
  },
@@ -2425,7 +2425,7 @@
     "source": "src:dallapiccola-1992"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "recall",
   "agent": "temple"
  },
@@ -2487,8 +2487,8 @@
     "url": "https://www.wikidata.org/wiki/Q68286065"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -2506,7 +2506,7 @@
     "source": "src:fritz-michell-1991"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "recall",
   "agent": "temple"
  },
@@ -2521,7 +2521,7 @@
     "source": "src:fritz-michell-1991"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "recall",
   "agent": "temple"
  },
@@ -2556,8 +2556,8 @@
     "url": "https://www.wikidata.org/wiki/Q68287239"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -2576,8 +2576,8 @@
     "url": "https://en.wikipedia.org/wiki/Chennakeshava_Temple,_Belur"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -2593,8 +2593,8 @@
     "url": "https://en.wikipedia.org/wiki/Chennakeshava_Temple,_Belur"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -2610,8 +2610,8 @@
     "url": "https://en.wikipedia.org/wiki/Chennakeshava_Temple,_Belur"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -2627,8 +2627,8 @@
     "url": "https://en.wikipedia.org/wiki/Hoysaleswara_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -2644,8 +2644,8 @@
     "url": "https://en.wikipedia.org/wiki/Hoysaleswara_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -2661,8 +2661,8 @@
     "url": "https://en.wikipedia.org/wiki/Hoysaleswara_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -2699,8 +2699,8 @@
     "url": "https://en.wikipedia.org/wiki/Chennakesava_Temple,_Somanathapura"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -2716,8 +2716,8 @@
     "url": "https://en.wikipedia.org/wiki/Chennakesava_Temple,_Somanathapura"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -2733,8 +2733,8 @@
     "url": "https://en.wikipedia.org/wiki/Chennakesava_Temple,_Somanathapura"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -2750,8 +2750,8 @@
     "url": "https://en.wikipedia.org/wiki/Shiv_Mandir,_Ambarnath"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -2768,7 +2768,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -2784,8 +2784,8 @@
     "url": "https://en.wikipedia.org/wiki/Bhimashankar_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -2801,8 +2801,8 @@
     "url": "https://en.wikipedia.org/wiki/Trimbakeshwar_Shiva_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -2818,8 +2818,8 @@
     "url": "https://en.wikipedia.org/wiki/Trimbakeshwar_Shiva_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -2835,8 +2835,8 @@
     "url": "https://en.wikipedia.org/wiki/Grishneshwar_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -2869,8 +2869,8 @@
     "url": "https://en.wikipedia.org/wiki/Vaijnath_Temple,_Parli"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -2886,8 +2886,8 @@
     "url": "https://en.wikipedia.org/wiki/Aundha_Nagnath_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -2904,7 +2904,7 @@
    }
   ],
   "confidence": "low",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -2924,7 +2924,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -2943,8 +2943,8 @@
     "url": "https://en.wikipedia.org/wiki/Udayagiri_Caves"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -2960,8 +2960,8 @@
     "url": "https://en.wikipedia.org/wiki/Udayagiri_Caves"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -2999,7 +2999,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3033,8 +3033,8 @@
     "url": "https://en.wikipedia.org/wiki/Dashavatara_Temple,_Deogarh"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3053,8 +3053,8 @@
     "url": "https://en.wikipedia.org/wiki/Dashavatara_Temple,_Deogarh"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3074,7 +3074,7 @@
    }
   ],
   "confidence": "low",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3094,7 +3094,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3125,8 +3125,8 @@
     "url": "https://en.wikipedia.org/wiki/Bhitargaon"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3146,7 +3146,7 @@
    }
   ],
   "confidence": "low",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3163,7 +3163,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3182,8 +3182,8 @@
     "url": "https://en.wikipedia.org/wiki/Mundeshwari_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3202,8 +3202,8 @@
     "url": "https://en.wikipedia.org/wiki/Mundeshwari_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3219,8 +3219,8 @@
     "url": "https://en.wikipedia.org/wiki/Mundeshwari_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3237,7 +3237,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3269,8 +3269,8 @@
     "url": "https://en.wikipedia.org/wiki/Kandariya_Mahadeva_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3287,7 +3287,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3306,8 +3306,8 @@
     "url": "https://en.wikipedia.org/wiki/Lakshmana_Temple,_Khajuraho"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3343,8 +3343,8 @@
     "url": "https://en.wikipedia.org/wiki/Lakshmana_Temple,_Khajuraho"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3363,8 +3363,8 @@
     "url": "https://en.wikipedia.org/wiki/Konark_Sun_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3380,8 +3380,8 @@
     "url": "https://en.wikipedia.org/wiki/Konark_Sun_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3397,8 +3397,8 @@
     "url": "https://en.wikipedia.org/wiki/Jagannath_Temple,_Puri"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3417,8 +3417,8 @@
     "url": "https://en.wikipedia.org/wiki/Jagannath_Temple,_Puri"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3434,8 +3434,8 @@
     "url": "https://en.wikipedia.org/wiki/Jagannath_Temple,_Puri"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3472,8 +3472,8 @@
     "url": "https://en.wikipedia.org/wiki/Jagannath_Temple,_Puri"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3492,7 +3492,7 @@
     "source": "src:eschmann-kulke-tripathi-1978"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "recall",
   "agent": "temple"
  },
@@ -3526,8 +3526,8 @@
     "url": "https://en.wikipedia.org/wiki/Lingaraja_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3547,7 +3547,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3564,7 +3564,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3584,7 +3584,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3600,8 +3600,8 @@
     "url": "https://en.wikipedia.org/wiki/Mukteshvara_Temple,_Bhubaneswar"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3618,7 +3618,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3638,7 +3638,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3658,8 +3658,8 @@
     "url": "https://en.wikipedia.org/wiki/Kamakhya_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3679,8 +3679,8 @@
     "url": "https://en.wikipedia.org/wiki/Kamakhya_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3696,8 +3696,8 @@
     "url": "https://en.wikipedia.org/wiki/Kamakhya_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3713,8 +3713,8 @@
     "url": "https://en.wikipedia.org/wiki/Kamakhya_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3730,8 +3730,8 @@
     "url": "https://en.wikipedia.org/wiki/Kalighat_Kali_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3747,8 +3747,8 @@
     "url": "https://en.wikipedia.org/wiki/Kalighat_Kali_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3764,8 +3764,8 @@
     "url": "https://en.wikipedia.org/wiki/Dakshineswar_Kali_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3781,8 +3781,8 @@
     "url": "https://en.wikipedia.org/wiki/Dakshineswar_Kali_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3798,8 +3798,8 @@
     "url": "https://en.wikipedia.org/wiki/Vishnupad_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3818,8 +3818,8 @@
     "url": "https://en.wikipedia.org/wiki/Vishnupad_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3856,8 +3856,8 @@
     "url": "https://en.wikipedia.org/wiki/Baidyanath_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3874,7 +3874,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3893,8 +3893,8 @@
     "url": "https://en.wikipedia.org/wiki/Kashi_Vishwanath_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3910,8 +3910,8 @@
     "url": "https://en.wikipedia.org/wiki/Kashi_Vishwanath_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3950,8 +3950,8 @@
     "url": "https://en.wikipedia.org/wiki/Kashi_Vishwanath_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3970,8 +3970,8 @@
     "url": "https://en.wikipedia.org/wiki/Somnath_temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -3991,7 +3991,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4046,8 +4046,8 @@
     "url": "https://en.wikipedia.org/wiki/Dwarkadhish_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4066,8 +4066,8 @@
     "url": "https://en.wikipedia.org/wiki/Dwarkadhish_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4099,8 +4099,8 @@
     "url": "https://en.wikipedia.org/wiki/Nageshwar_Jyotirlinga"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4119,8 +4119,8 @@
     "url": "https://en.wikipedia.org/wiki/Sun_Temple,_Modhera"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4136,8 +4136,8 @@
     "url": "https://en.wikipedia.org/wiki/Sun_Temple,_Modhera"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4153,8 +4153,8 @@
     "url": "https://en.wikipedia.org/wiki/Sun_Temple,_Modhera"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4173,8 +4173,8 @@
     "url": "https://en.wikipedia.org/wiki/Mahakaleshwar_Jyotirlinga"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4190,8 +4190,8 @@
     "url": "https://en.wikipedia.org/wiki/Omkareshwar"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4208,7 +4208,7 @@
    }
   ],
   "confidence": "low",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4228,7 +4228,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4244,8 +4244,8 @@
     "url": "https://en.wikipedia.org/wiki/Bhojeshwar_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4262,7 +4262,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4278,8 +4278,8 @@
     "url": "https://en.wikipedia.org/wiki/Bhojeshwar_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4295,8 +4295,8 @@
     "url": "https://en.wikipedia.org/wiki/Brahma_Temple,_Pushkar"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4333,8 +4333,8 @@
     "url": "https://en.wikipedia.org/wiki/Ram_Mandir"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4353,8 +4353,8 @@
     "url": "https://en.wikipedia.org/wiki/Ram_Mandir"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4370,8 +4370,8 @@
     "url": "https://en.wikipedia.org/wiki/Kedarnath_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4388,7 +4388,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4422,8 +4422,8 @@
     "url": "https://en.wikipedia.org/wiki/Badrinath_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4439,8 +4439,8 @@
     "url": "https://en.wikipedia.org/wiki/Badrinath_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4474,8 +4474,8 @@
     "url": "https://en.wikipedia.org/wiki/Gangotri_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4491,8 +4491,8 @@
     "url": "https://en.wikipedia.org/wiki/Gangotri_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4508,8 +4508,8 @@
     "url": "https://en.wikipedia.org/wiki/Gangotri_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4525,8 +4525,8 @@
     "url": "https://en.wikipedia.org/wiki/Yamunotri_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4542,8 +4542,8 @@
     "url": "https://en.wikipedia.org/wiki/Jageshwar"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4562,8 +4562,8 @@
     "url": "https://en.wikipedia.org/wiki/Martand_Sun_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4600,8 +4600,8 @@
     "url": "https://en.wikipedia.org/wiki/Martand_Sun_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4620,8 +4620,8 @@
     "url": "https://en.wikipedia.org/wiki/Pashupatinath_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4641,7 +4641,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4675,8 +4675,8 @@
     "url": "https://en.wikipedia.org/wiki/Changu_Narayan"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4696,7 +4696,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4712,8 +4712,8 @@
     "url": "https://en.wikipedia.org/wiki/Janaki_Mandir"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4729,8 +4729,8 @@
     "url": "https://en.wikipedia.org/wiki/Janaki_Mandir"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4746,8 +4746,8 @@
     "url": "https://en.wikipedia.org/wiki/Janaki_Mandir"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4779,8 +4779,8 @@
     "url": "https://en.wikipedia.org/wiki/Janaki_Mandir"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4799,8 +4799,8 @@
     "url": "https://en.wikipedia.org/wiki/Muktinath"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4819,8 +4819,8 @@
     "url": "https://en.wikipedia.org/wiki/Koneswaram_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4841,7 +4841,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "rationale": "Patikam-level locator (Tirumuṟai volume and decad) not verified.",
   "agent": "temple",
   "lastVerified": "2026-11-08"
@@ -4874,8 +4874,8 @@
     "url": "https://en.wikipedia.org/wiki/Munneswaram_temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4892,7 +4892,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4908,8 +4908,8 @@
     "url": "https://en.wikipedia.org/wiki/Katas_Raj_Temples"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4926,7 +4926,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4946,7 +4946,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4965,8 +4965,8 @@
     "url": "https://en.wikipedia.org/wiki/Hinglaj_Mata"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4982,8 +4982,8 @@
     "url": "https://en.wikipedia.org/wiki/Hinglaj_Mata"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -4999,8 +4999,8 @@
     "url": "https://en.wikipedia.org/wiki/Prambanan"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -5016,8 +5016,8 @@
     "url": "https://en.wikipedia.org/wiki/Prambanan"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -5033,8 +5033,8 @@
     "url": "https://en.wikipedia.org/wiki/Prambanan"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -5051,7 +5051,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -5093,8 +5093,8 @@
     "url": "https://en.wikipedia.org/wiki/Prambanan"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -5146,8 +5146,8 @@
     "url": "https://en.wikipedia.org/wiki/Prambanan"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -5198,7 +5198,7 @@
    }
   ],
   "confidence": "low",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -5217,8 +5217,8 @@
     "url": "https://en.wikipedia.org/wiki/Angkor_Wat"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -5234,8 +5234,8 @@
     "url": "https://en.wikipedia.org/wiki/Angkor_Wat"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -5300,8 +5300,8 @@
     "url": "https://en.wikipedia.org/wiki/Angkor_Wat"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -5336,8 +5336,8 @@
     "url": "https://en.wikipedia.org/wiki/Banteay_Srei"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -5353,8 +5353,8 @@
     "url": "https://en.wikipedia.org/wiki/Banteay_Srei"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -5370,8 +5370,8 @@
     "url": "https://en.wikipedia.org/wiki/Banteay_Srei"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -5389,7 +5389,7 @@
     "source": "src:jacques-freeman-1997"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "recall",
   "agent": "temple"
  },
@@ -5407,7 +5407,7 @@
     "source": "src:jacques-freeman-1997"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "recall",
   "agent": "temple"
  },
@@ -5423,8 +5423,8 @@
     "url": "https://en.wikipedia.org/wiki/Preah_Vihear_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -5444,7 +5444,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -5462,7 +5462,7 @@
     "source": "src:coedes-1968"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "recall",
   "agent": "temple"
  },
@@ -5478,8 +5478,8 @@
     "url": "https://en.wikipedia.org/wiki/Vat_Phou"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -5498,8 +5498,8 @@
     "url": "https://en.wikipedia.org/wiki/M%E1%BB%B9_S%C6%A1n_archaeological_site"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -5515,8 +5515,8 @@
     "url": "https://en.wikipedia.org/wiki/M%E1%BB%B9_S%C6%A1n_archaeological_site"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -5532,7 +5532,7 @@
     "url": "https://en.wikipedia.org/wiki/Besakih_Temple"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "recall",
   "agent": "temple"
  },
@@ -5548,8 +5548,8 @@
     "url": "https://en.wikipedia.org/wiki/Batu_Caves"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -5760,8 +5760,8 @@
     "url": "https://en.wikipedia.org/wiki/Hampi"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -5813,8 +5813,8 @@
     "url": "https://en.wikipedia.org/wiki/Adam%27s_Bridge"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -5830,8 +5830,8 @@
     "url": "https://en.wikipedia.org/wiki/Pamban_Island"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -5986,7 +5986,7 @@
     "url": "https://en.wikipedia.org/wiki/Pattadakal"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "recall",
   "agent": "temple"
  },
@@ -6002,8 +6002,8 @@
     "url": "https://en.wikipedia.org/wiki/Pattadakal"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -6019,8 +6019,8 @@
     "url": "https://en.wikipedia.org/wiki/Pattadakal"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -6160,8 +6160,8 @@
     "url": "https://en.wikipedia.org/wiki/Kamakhya_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -6177,8 +6177,8 @@
     "url": "https://en.wikipedia.org/wiki/Kamakhya_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -6194,8 +6194,8 @@
     "url": "https://en.wikipedia.org/wiki/Kamakhya_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -6351,8 +6351,8 @@
     "url": "https://en.wikipedia.org/wiki/Hoysaleswara_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -6368,8 +6368,8 @@
     "url": "https://en.wikipedia.org/wiki/Chennakesava_Temple,_Somanathapura"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -6385,8 +6385,8 @@
     "url": "https://en.wikipedia.org/wiki/Ramappa_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "lastVerified": "2026-11-08"
  },
@@ -6444,7 +6444,7 @@
     "url": "https://en.wikipedia.org/wiki/Marthanda_Varma"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "recall",
   "agent": "temple"
  },

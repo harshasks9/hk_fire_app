@@ -77,9 +77,13 @@ function textOf(id: string, seen = new Set<string>()): string | undefined {
 }
 
 // ───────────── dates ─────────────
+/** Earliest numeric date of a system — preferring claims that are not disputed, so a minority
+ *  reading (Muṇḍeśvarī "108 CE", Doniger's Gudimallam) never places a record when a
+ *  non-disputed date exists. */
 function firstDate(e: Entity | undefined, system: DateClaim['system']): DateClaim | undefined {
   const ds = (e?.dates ?? []).filter((d) => d.system === system && typeof d.start === 'number')
-  return ds.sort((a, b) => a.start! - b.start!)[0]
+  const firm = ds.filter((d) => d.certainty !== 'disputed')
+  return (firm.length ? firm : ds).sort((a, b) => a.start! - b.start!)[0]
 }
 /** The most conservative recorded scholarly view of a text's date: the claim with the latest start.
  *  Using the earliest view would let a single minority estimate set a figure's "earliest attestation". */
@@ -96,7 +100,7 @@ function effectiveTextDate(id: string): DateClaim | undefined {
 // ───────────── per-node literary and material reach ─────────────
 const TEXTUAL_P = new Set(['APPEARS_IN', 'MENTIONED_IN', 'NARRATED_IN', 'TEACHES_IN'])
 const MATERIAL_P = new Set(['DEPICTED_IN', 'REFERS_TO', 'INTERPRETED_AS', 'WORSHIPPED_AT'])
-interface Reach { texts: Set<string>; corpora: Set<string>; earliestText?: { year: number; label: string; via: string }; earliestMaterial?: { year: number; label: string; via: string } }
+interface Reach { texts: Set<string>; corpora: Set<string>; earliestText?: { year: number; label: string; via: string }; earliestMaterial?: { year: number; label: string; via: string; ec: number; disputed: boolean } }
 const reach = new Map<string, Reach>()
 const R = (id: string) => reach.get(id) ?? reach.set(id, { texts: new Set(), corpora: new Set() }).get(id)!
 const FIGURE_TYPES = new Set(['character', 'deity', 'narrative', 'concept', 'lineage'])
@@ -128,7 +132,7 @@ for (const a of edges) {
   if (figure && object && MATERIAL_P.has(a.p) && !weak) {
     const d = firstDate(entities.get(object), 'material')
     const r = R(figure)
-    if (d && (r.earliestMaterial === undefined || d.start! < r.earliestMaterial.year)) r.earliestMaterial = { year: d.start!, label: d.label, via: object }
+    if (d && (r.earliestMaterial === undefined || d.start! < r.earliestMaterial.year)) r.earliestMaterial = { year: d.start!, label: d.label, via: object, ec: a.evidenceClass, disputed: d.certainty === 'disputed' }
   }
 }
 // text nodes reach their own corpora

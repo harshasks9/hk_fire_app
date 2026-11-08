@@ -2668,7 +2668,7 @@
     "url": "https://en.wikipedia.org/wiki/Dnyaneshwari"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "recall",
   "agent": "epic"
  },
@@ -5045,7 +5045,7 @@
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.108.2",
+    "locator": "MBh (CE) 1.108.18",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    }
@@ -5073,7 +5073,7 @@
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.108.2",
+    "locator": "MBh (CE) 1.108.18",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    }
@@ -7817,16 +7817,16 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE) 1.1.8",
+    "locator": "VR (CE), passim (verse-level locator withdrawn)",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
-    "quote": "ikṣvākuvaṃśaprabhavo rāmo nāma janaiḥ śrutaḥ",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:336",
@@ -7841,16 +7841,16 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE) 1.1.8",
+    "locator": "VR (CE), passim (verse-level locator withdrawn)",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
-    "quote": "ikṣvākuvaṃśaprabhavo rāmo nāma janaiḥ śrutaḥ",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:337",
@@ -7865,16 +7865,16 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE) 1.1.8",
+    "locator": "VR (CE), passim (verse-level locator withdrawn)",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
-    "quote": "ikṣvākuvaṃśaprabhavo rāmo nāma janaiḥ śrutaḥ",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:338",
@@ -7889,16 +7889,16 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE) 1.1.8",
+    "locator": "VR (CE), passim (verse-level locator withdrawn)",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
-    "quote": "ikṣvākuvaṃśaprabhavo rāmo nāma janaiḥ śrutaḥ",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:339",
@@ -7913,16 +7913,16 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE) 1.1.8",
+    "locator": "VR (CE), passim (verse-level locator withdrawn)",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
-    "quote": "ikṣvākuvaṃśaprabhavo rāmo nāma janaiḥ śrutaḥ",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:340",
@@ -7937,16 +7937,16 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE) 1.1.8",
+    "locator": "VR (CE), passim (verse-level locator withdrawn)",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
-    "quote": "ikṣvākuvaṃśaprabhavo rāmo nāma janaiḥ śrutaḥ",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:341",
@@ -7961,16 +7961,16 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE) 1.1.8",
+    "locator": "VR (CE), passim (verse-level locator withdrawn)",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
-    "quote": "ikṣvākuvaṃśaprabhavo rāmo nāma janaiḥ śrutaḥ",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:342",
@@ -7984,21 +7984,22 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE) 7.9.3–27",
+    "locator": "VR (CE), passim (verse-level locator withdrawn)",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 3.259.1",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:343",
@@ -8012,21 +8013,22 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE) 7.9.3–27",
+    "locator": "VR (CE), passim (verse-level locator withdrawn)",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 3.259.1",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:344",
@@ -8040,21 +8042,22 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE) 7.9.3–27",
+    "locator": "VR (CE), passim (verse-level locator withdrawn)",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 3.259.1",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:345",
@@ -8068,21 +8071,22 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE) 7.9.3–27",
+    "locator": "VR (CE), passim (verse-level locator withdrawn)",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 3.259.1",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:346",
@@ -8096,21 +8100,22 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE) 7.9.3–27",
+    "locator": "VR (CE), passim (verse-level locator withdrawn)",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 3.259.1",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:347",
@@ -8124,21 +8129,22 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE) 7.9.3–27",
+    "locator": "VR (CE), passim (verse-level locator withdrawn)",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 3.259.1",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:348",
@@ -8152,21 +8158,22 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE) 7.9.3–27",
+    "locator": "VR (CE), passim (verse-level locator withdrawn)",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 3.259.1",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:349",
@@ -8180,21 +8187,22 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE) 4.25.32",
+    "locator": "VR (CE), passim (verse-level locator withdrawn)",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    },
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE) 4.65.8",
+    "locator": "VR (CE), passim (verse-level locator withdrawn)",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:350",
@@ -8208,21 +8216,22 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE) 4.25.32",
+    "locator": "VR (CE), passim (verse-level locator withdrawn)",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    },
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE) 4.65.8",
+    "locator": "VR (CE), passim (verse-level locator withdrawn)",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:351",
@@ -8236,21 +8245,22 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE) 4.25.32",
+    "locator": "VR (CE), passim (verse-level locator withdrawn)",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    },
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE) 4.65.8",
+    "locator": "VR (CE), passim (verse-level locator withdrawn)",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:352",
@@ -8264,21 +8274,22 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE) 4.25.32",
+    "locator": "VR (CE), passim (verse-level locator withdrawn)",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    },
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE) 4.65.8",
+    "locator": "VR (CE), passim (verse-level locator withdrawn)",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:353",
@@ -8292,21 +8303,22 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE) 4.25.32",
+    "locator": "VR (CE), passim (verse-level locator withdrawn)",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    },
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE) 4.65.8",
+    "locator": "VR (CE), passim (verse-level locator withdrawn)",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:354",
@@ -8320,21 +8332,22 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE) 4.25.32",
+    "locator": "VR (CE), passim (verse-level locator withdrawn)",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    },
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE) 4.65.8",
+    "locator": "VR (CE), passim (verse-level locator withdrawn)",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:355",
@@ -8348,21 +8361,22 @@
   "sources": [
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE) 4.25.32",
+    "locator": "VR (CE), passim (verse-level locator withdrawn)",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    },
    {
     "source": "src:gretil-vr-ce",
-    "locator": "VR (CE) 4.65.8",
+    "locator": "VR (CE), passim (verse-level locator withdrawn)",
     "edition": "Baroda Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:356",
@@ -8376,27 +8390,28 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.61.69",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.95.2–5",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.100",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:357",
@@ -8410,27 +8425,28 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.61.69",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.95.2–5",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.100",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:358",
@@ -8444,27 +8460,28 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.61.69",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.95.2–5",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.100",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:359",
@@ -8478,27 +8495,28 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.61.69",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.95.2–5",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.100",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:360",
@@ -8512,27 +8530,28 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.61.69",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.95.2–5",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.100",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:361",
@@ -8546,27 +8565,28 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.61.69",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.95.2–5",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.100",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:362",
@@ -8580,21 +8600,22 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.114–115",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.1.8",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:363",
@@ -8608,21 +8629,22 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.114–115",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.1.8",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:364",
@@ -8636,21 +8658,22 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.114–115",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.1.8",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:365",
@@ -8664,21 +8687,22 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.114–115",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.1.8",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:366",
@@ -8692,21 +8716,22 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.114–115",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.1.8",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:367",
@@ -8720,21 +8745,22 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.114–115",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.1.8",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:368",
@@ -8748,21 +8774,22 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.114–115",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.1.8",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:369",
@@ -8776,21 +8803,22 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.114–115",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.1.8",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:370",
@@ -8804,21 +8832,22 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.107.36–37",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.108.2",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:371",
@@ -8832,21 +8861,22 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.107.36–37",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.108.2",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:372",
@@ -8860,21 +8890,22 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.107.36–37",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.108.2",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:373",
@@ -8888,21 +8919,22 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.107.36–37",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.108.2",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:374",
@@ -8916,33 +8948,34 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.104.1",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.211.8",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.61.73",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 16.4",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_16_u.htm"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:375",
@@ -8956,33 +8989,34 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.104.1",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.211.8",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.61.73",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 16.4",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_16_u.htm"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:376",
@@ -8996,33 +9030,34 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.104.1",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.211.8",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.61.73",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 16.4",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_16_u.htm"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:377",
@@ -9036,33 +9071,34 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.104.1",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.211.8",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.61.73",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 16.4",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_16_u.htm"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:378",
@@ -9076,33 +9112,34 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.104.1",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.211.8",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.61.73",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 16.4",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_16_u.htm"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:379",
@@ -9116,33 +9153,34 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.104.1",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.211.8",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.61.73",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 16.4",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_16_u.htm"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:380",
@@ -9156,33 +9194,34 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.104.1",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.211.8",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.61.73",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 16.4",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_16_u.htm"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:381",
@@ -9196,33 +9235,34 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.104.1",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.211.8",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.61.73",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 16.4",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_16_u.htm"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:382",
@@ -9236,33 +9276,34 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.104.1",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.211.8",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.61.73",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 16.4",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_16_u.htm"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:383",
@@ -9276,33 +9317,34 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.104.1",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.211.8",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.61.73",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 16.4",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_16_u.htm"
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:384",
@@ -9316,33 +9358,34 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.104.1",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.211.8",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.61.73",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 16.4",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_16_u.htm"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:385",
@@ -9356,33 +9399,34 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.104.1",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.211.8",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.61.73",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 16.4",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_16_u.htm"
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:386",
@@ -9396,21 +9440,22 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.155.49–51",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.128.15",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:387",
@@ -9424,21 +9469,22 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.155.49–51",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.128.15",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:388",
@@ -9452,21 +9498,22 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.155.49–51",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.128.15",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:389",
@@ -9480,21 +9527,22 @@
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.155.49–51",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    },
    {
     "source": "src:gretil-mbh-ce",
-    "locator": "MBh (CE) 1.128.15",
+    "locator": "MBh (CE), passim (verse-level locator withdrawn)",
     "edition": "BORI Critical Edition (GRETIL e-text)",
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "source-checked",
   "agent": "epic",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Membership is attested across the text; the verse originally cited did not name this member (independent verification), so the verse-level locator was withdrawn rather than replaced unchecked."
  },
  {
   "id": "epic:390",
@@ -10128,9 +10176,9 @@
   "o": "deity:vasudeva",
   "qualifiers": {
    "text": "text:mahabharata",
-   "note": "The epic routinely calls Kṛṣṇa “Vāsudeva”"
+   "note": "The Mahābhārata names Kṛṣṇa “Vāsudeva” (a textual fact); identifying him with the deity of the early inscriptions is a scholarly inference."
   },
-  "evidenceClass": 1,
+  "evidenceClass": 5,
   "sources": [
    {
     "source": "src:gretil-mbh-ce",
@@ -10151,9 +10199,9 @@
     "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_06_u.htm"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "verified-online",
-  "rationale": "Name usage in the text.",
+  "rationale": "Re-scoped after verification: the naming is textual, the identification with the inscriptional deity is interpretation.",
   "agent": "epic",
   "lastVerified": "2026-11-08"
  },

@@ -2562,7 +2562,7 @@
    "messenger",
    "devotee"
   ],
-  "summary": "Vānara minister of Sugrīva, son of the wind god Vāyu and Añjanā (wife of the vānara Kesarin), who leaps the ocean to find Sītā in Laṅkā and becomes Rāma’s foremost devotee and messenger.",
+  "summary": "Vānara minister of Sugrīva, son of the wind god Vāyu and Añjanā (wife of the vānara Kesarin), who leaps the ocean to find Sītā in Laṅkā and becomes Rāma’s loyal servant and messenger; later devotional traditions make him the model devotee (bhakta).",
   "details": "Parentage: Jāmbavān tells Hanumān that the apsaras Puñjikasthalā, known as Añjanā, wife of the vānara Kesarin, was embraced by Māruta (Vāyu); “you are Kesarin’s son by his field (kṣetraja) and Māruta’s own (aurasa) son” (VR (CE) 4.65.8–28). The Uttarakāṇḍa retells his childhood: he leaps for the sun thinking it a fruit, is struck by Indra’s thunderbolt, and Vāyu’s withdrawal forces the gods to grant him boons (7.35–36).\n\nKey acts: approaches Rāma and Lakṣmaṇa for Sugrīva (4.2–3); leaps the ocean (5.1); finds Sītā and gives her Rāma’s ring (5.34.2); his tail is set alight and he burns Laṅkā (5.51–52); in the war he fetches healing herbs (Yuddhakāṇḍa; locator not checked here).\n\nIn the Mahābhārata he meets his half-brother Bhīma (both sons of Vāyu) in the Āraṇyakaparvan (MBh (CE) 3.146–150; “hanūmān vāyutanayo vāyuputram abhāṣata”, 3.147.4). His later cult as a deity in his own right — devotional texts such as the Hanumān Cālīsā and countless shrines — is documented by Lutgendorf (2007).",
   "attributes": {
    "divine father": "Vāyu (Māruta)",
@@ -10383,10 +10383,10 @@
   "devanagari": "लङ्का",
   "summary": "Rāvaṇa’s island fortress-city beyond the southern ocean, earlier the seat of Kubera; widely identified in tradition with the island of Sri Lanka, though some scholars have proposed locations in central India.",
   "location": {
-   "lat": 7.0,
-   "lon": 81.0,
+   "lat": 7,
+   "lon": 81,
    "precision": "region",
-   "label": "Sri Lanka (traditional identification of the narrative Laṅkā)",
+   "label": "Traditional identification with Sri Lanka (disputed) — the literary Laṅkā is not a surveyed place",
    "country": "Sri Lanka"
   },
   "sources": [

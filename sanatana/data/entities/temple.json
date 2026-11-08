@@ -2143,7 +2143,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "limits": "Evidence is largely early-modern; the foundation by Bṛhaspati and Vāyu is tradition.",
   "lastVerified": "2026-11-08"
@@ -2219,7 +2219,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "limits": "Dates the 18th-century rebuilding; the treasure is evidence of royal and devotional donation over centuries, not of the temple’s antiquity as such.",
   "openQuestions": [
@@ -2263,7 +2263,7 @@
    },
    {
     "system": "material",
-    "event": "construction",
+    "event": "earliest dated gift (inscription)",
     "start": 966,
     "end": 966,
     "label": "966 CE gift of a silver image by the Pallava queen Sāmavai (earliest dated gift commonly cited)",
@@ -2284,7 +2284,7 @@
     "start": 1509,
     "end": 1529,
     "label": "Vijayanagara grants and portrait statues of Kṛṣṇadevarāya (installed 2 Jan. 1517)",
-    "certainty": "secure",
+    "certainty": "estimated",
     "basis": "inscriptions and dated portrait installation",
     "sources": [
      {
@@ -4903,9 +4903,9 @@
     "start": 570,
     "end": 636,
     "label": "c. 570–636 CE (palaeography; or Harṣa year 30 = 636)",
-    "certainty": "disputed",
+    "certainty": "estimated",
     "basis": "palaeography of the inscription",
-    "view": "Neuss; historians of architecture",
+    "view": "Neuss; historians of architecture (palaeography)",
     "sources": [
      {
       "source": "src:wikipedia",
@@ -5881,8 +5881,8 @@
     "url": "https://en.wikipedia.org/wiki/Dakshineswar_Kali_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "limits": "A documented 19th-century foundation; included as a modern reference point for Bengal Śākta temple building.",
   "lastVerified": "2026-11-08"
@@ -6209,8 +6209,8 @@
     ]
    },
    {
-    "system": "material",
-    "event": "destruction",
+    "system": "reception",
+    "event": "recorded destruction (an event, not surviving fabric)",
     "start": 1026,
     "end": 1026,
     "label": "January 1026 CE: raid of Mahmud of Ghazni",
@@ -6565,8 +6565,8 @@
     ]
    },
    {
-    "system": "material",
-    "event": "destruction",
+    "system": "reception",
+    "event": "recorded destruction (an event, not surviving fabric)",
     "start": 1234,
     "end": 1235,
     "label": "1234–35 CE destruction during Iltutmish’s raid",
@@ -6867,7 +6867,7 @@
    "trad:vaishnava"
   ],
   "summary": "Temple of Rāma in Ayodhya, Uttar Pradesh, built in the Nāgara (Māru-Gurjara) style after the Supreme Court of India’s judgment of 9 November 2019 and consecrated (prāṇa-pratiṣṭhā) on 22 January 2024; many Hindus regard the site as Rāma’s birthplace (Rāma Janmabhūmi).",
-  "details": "The site was previously occupied by the Babri Masjid, a mosque built around 1528–29 by a general of the Mughal emperor Babur and demolished on 6 December 1992. In its 2019 judgment the Supreme Court awarded the disputed land for the construction of a temple by a trust and directed that alternative land be allotted for a mosque (at Dhannipur). Construction under the Shri Ram Janmbhoomi Teerth Kshetra trust began after a bhūmi-pūjana in August 2020. The principal image consecrated in 2024 is the child Rāma (Bālak Rām); the earlier Rām Lallā Virājmān image (installed in 1949) is retained in the temple.",
+  "details": "The site was previously occupied by the Babri Masjid, a mosque built around 1528–29 by a general of the Mughal emperor Babur and demolished on 6 December 1992. In its 2019 judgment the Supreme Court awarded the disputed land for the construction of a temple by a trust and directed that alternative land be allotted for a mosque (at Dhannipur). Construction under the Shri Ram Janmbhoomi Teerth Kshetra trust began after a bhūmi-pūjana in August 2020. The principal image consecrated in 2024 is the child Rāma (Bālak Rām); the earlier Rām Lallā Virājmān image is retained in the temple.\n\nImages had been placed inside the mosque on the night of 22–23 December 1949. In its judgment of 9 November 2019 the Supreme Court held both that placement and the 1992 demolition to be illegal — describing the demolition as an egregious violation of the rule of law — decided the title dispute on the evidence of possession, and directed that five acres be allotted for a mosque.",
   "dates": [
    {
     "system": "traditional",
@@ -6948,6 +6948,9 @@
     "source": "src:wikipedia",
     "locator": "coordinates (infobox / title coordinates)",
     "url": "https://en.wikipedia.org/wiki/Ram_Mandir"
+   },
+   {
+    "source": "src:sc-ayodhya-2019"
    }
   ],
   "confidence": "high",
@@ -7329,7 +7332,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "limits": "The jyotirliṅga claim competes with Dwarka and Aundha.",
   "lastVerified": "2026-11-08"
@@ -7369,8 +7372,8 @@
     ]
    },
    {
-    "system": "material",
-    "event": "destruction",
+    "system": "reception",
+    "event": "recorded destruction (an event, not surviving fabric)",
     "start": 1389,
     "end": 1413,
     "label": "destroyed under Sultan Sikandar (r. 1389–1413)",
@@ -7454,8 +7457,8 @@
     ]
    },
    {
-    "system": "material",
-    "event": "surviving-structure",
+    "system": "reception",
+    "event": "earliest inscriptional attestation of the cult",
     "start": 400,
     "end": 750,
     "label": "cult attested from the Licchavi period (5th–8th c. inscriptions)",
@@ -7550,12 +7553,12 @@
   "dates": [
    {
     "system": "material",
-    "event": "construction",
+    "event": "earliest dated object on site (Mānadeva pillar inscription)",
     "start": 464,
     "end": 464,
     "label": "464 CE (Saṃvat 386): pillar inscription of Mānadeva",
-    "certainty": "secure",
-    "basis": "dated inscription",
+    "certainty": "estimated",
+    "basis": "dated pillar inscription (Saṃvat 386); dates the pillar and attests the shrine, not the present fabric",
     "sources": [
      {
       "source": "src:wikipedia",
@@ -7595,6 +7598,25 @@
       "url": "https://en.wikipedia.org/wiki/Changu_Narayan"
      }
     ]
+   },
+   {
+    "system": "material",
+    "event": "earliest dated object on site (Mānadeva pillar inscription)",
+    "start": 495,
+    "end": 496,
+    "label": "495/496 CE (alternative reading of the era)",
+    "certainty": "disputed",
+    "basis": "dated pillar inscription (Saṃvat 386); dates the pillar and attests the shrine, not the present fabric",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Changu_Narayan"
+     },
+     {
+      "source": "src:slusser-1982"
+     }
+    ],
+    "view": "alternative era reading"
    }
   ],
   "location": {
@@ -7710,8 +7732,8 @@
     "url": "https://en.wikipedia.org/wiki/Janaki_Mandir"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "limits": "A modern building; the identification of Janakpur with the epic Mithilā is tradition.",
   "lastVerified": "2026-11-08"
@@ -7776,7 +7798,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "limits": "Shared Hindu and Buddhist sanctity is documented in practice; the shrine’s fabric is early 19th century.",
   "lastVerified": "2026-11-08"
@@ -7812,8 +7834,8 @@
     ]
    },
    {
-    "system": "material",
-    "event": "destruction",
+    "system": "reception",
+    "event": "recorded destruction (an event, not surviving fabric)",
     "start": 1622,
     "end": 1624,
     "label": "1622–1624 CE destruction by the Portuguese",
@@ -7956,7 +7978,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "limits": "The Rāma association is tradition; the present fabric is post-1753.",
   "lastVerified": "2026-11-08"
@@ -8045,7 +8067,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "limits": "Dating of individual temples was not verified; associations with Satī and the Mahābhārata are tradition.",
   "lastVerified": "2026-11-08"
@@ -8167,8 +8189,8 @@
     "start": 856,
     "end": 856,
     "label": "12 November 856 CE (Śivagṛha inscription)",
-    "certainty": "secure",
-    "basis": "dated inscription identified with the compound",
+    "certainty": "estimated",
+    "basis": "dated Śivagṛha inscription, identified with the compound by argument",
     "sources": [
      {
       "source": "src:de-casparis-1956"
@@ -8177,7 +8199,8 @@
       "source": "src:wikipedia",
       "url": "https://en.wikipedia.org/wiki/Prambanan"
      }
-    ]
+    ],
+    "view": "de Casparis 1956"
    },
    {
     "system": "material",
@@ -8303,7 +8326,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "limits": "The Pāṇḍava names are modern and do not indicate original dedications or any link with the Mahābhārata.",
   "lastVerified": "2026-11-08"
@@ -8651,13 +8674,31 @@
   "details": "The first sanctuary is associated with the 4th-century king Bhadravarman. Many towers were destroyed by US bombing in a single week during the Vietnam War. The valley lies in former Quảng Nam province, which was merged into Đà Nẵng city in Vietnam’s 2025 administrative reorganisation.",
   "dates": [
    {
-    "system": "material",
-    "event": "construction",
+    "system": "reception",
+    "event": "foundation (attested by inscriptions)",
     "start": 350,
     "end": 1300,
     "label": "4th–13th c. CE",
     "certainty": "estimated",
     "basis": "Cham inscriptions and style",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/M%E1%BB%B9_S%C6%A1n_archaeological_site"
+     },
+     {
+      "source": "src:guy-2014"
+     }
+    ]
+   },
+   {
+    "system": "material",
+    "event": "surviving-structure",
+    "label": "7th–13th c. CE (standing brick temples)",
+    "start": 600,
+    "end": 1299,
+    "certainty": "estimated",
+    "basis": "architectural style and inscriptions of the standing buildings",
     "sources": [
      {
       "source": "src:wikipedia",
@@ -8763,7 +8804,7 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
   "limits": "The terraced sanctuary may be older; the buildings themselves are frequently renewed.",
   "lastVerified": "2026-11-08"
@@ -8836,8 +8877,8 @@
     "url": "https://www.wikidata.org/wiki/Q687629"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "agent": "temple",
   "limits": "A diaspora foundation of the colonial period; it shows the reach of Murukaṉ worship, not an ancient sanctuary.",
   "lastVerified": "2026-11-08"
@@ -9644,7 +9685,7 @@
     "url": "https://en.wikipedia.org/wiki/Pattadakal"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "recall",
   "limits": "Regnal dates are approximate and follow standard chronologies; this record exists to anchor temple patronage.",
   "agent": "temple"
@@ -9682,8 +9723,8 @@
     "url": "https://en.wikipedia.org/wiki/Pattadakal"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "limits": "Regnal dates are approximate and follow standard chronologies; this record exists to anchor temple patronage.",
   "agent": "temple",
   "lastVerified": "2026-11-08"
@@ -10006,8 +10047,8 @@
     "url": "https://en.wikipedia.org/wiki/Kamakhya_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "limits": "Regnal dates are approximate and follow standard chronologies; this record exists to anchor temple patronage.",
   "aliases": [
    "Nara Narayan"
@@ -10048,8 +10089,8 @@
     "url": "https://en.wikipedia.org/wiki/Kamakhya_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "limits": "Regnal dates are approximate and follow standard chronologies; this record exists to anchor temple patronage.",
   "aliases": [
    "Shukladhwaj"
@@ -10402,8 +10443,8 @@
     "url": "https://en.wikipedia.org/wiki/Hoysaleswara_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "limits": "Regnal dates are approximate and follow standard chronologies; this record exists to anchor temple patronage.",
   "agent": "temple",
   "lastVerified": "2026-11-08"
@@ -10441,8 +10482,8 @@
     "url": "https://en.wikipedia.org/wiki/Chennakesava_Temple,_Somanathapura"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "limits": "Regnal dates are approximate and follow standard chronologies; this record exists to anchor temple patronage.",
   "agent": "temple",
   "lastVerified": "2026-11-08"
@@ -10480,8 +10521,8 @@
     "url": "https://en.wikipedia.org/wiki/Ramappa_Temple"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "limits": "Regnal dates are approximate and follow standard chronologies; this record exists to anchor temple patronage.",
   "agent": "temple",
   "lastVerified": "2026-11-08"
@@ -10652,7 +10693,7 @@
     "url": "https://en.wikipedia.org/wiki/Marthanda_Varma"
    }
   ],
-  "confidence": "high",
+  "confidence": "medium",
   "status": "recall",
   "limits": "Regnal dates are approximate and follow standard chronologies; this record exists to anchor temple patronage.",
   "agent": "temple"
@@ -10690,8 +10731,8 @@
     "url": "https://en.wikipedia.org/wiki/Janaki_Mandir"
    }
   ],
-  "confidence": "high",
-  "status": "verified-online",
+  "confidence": "medium",
+  "status": "reference-checked",
   "limits": "Regnal dates are approximate and follow standard chronologies; this record exists to anchor temple patronage.",
   "aliases": [
    "Vrisha Bhanu"
@@ -11391,7 +11432,7 @@
    "Tevara Sthalams"
   ],
   "subtype": "pilgrimage network",
-  "summary": "The 276 Śiva temples praised in the Tēvāram hymns of the three Nāyaṉmār Appar, Campantar (Sambandar) and Cuntarar (Sundarar), 7th–9th c.; most are in the Kāvēri delta, with a few in Sri Lanka, northern India and the Himalaya.",
+  "summary": "The Śiva temples (275 or 276, depending on the list) praised in the Tēvāram hymns of the three Nāyaṉmār Appar, Campantar (Sambandar) and Cuntarar (Sundarar), 7th–9th c.; most are in the Kāvēri delta, with a few in Sri Lanka, northern India and the Himalaya.",
   "details": "Being “sung” in the Tēvāram is a defining mark of antiquity and sanctity in Tamil Śaiva tradition. The Sri Lankan members are Kōṇēsvaram (Trincomalee) and Kētīsvaram (Mannar); northern members include Kedarnath and Mount Kailāsa. Temples founded after the hymns (such as Thanjavur’s Bṛhadīśvara) are not on the list.",
   "sources": [
    {

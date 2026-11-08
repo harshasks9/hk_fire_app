@@ -26,6 +26,8 @@ export interface Attestation {
   via?: GNode // identified figure this came through
   relation: string
   traditional?: boolean
+  /** the link rests on a disputed claim (class 7 or status disputed): drawn, never counted */
+  disputed?: boolean
 }
 
 const TEXTUAL = new Set(['APPEARS_IN', 'MENTIONED_IN', 'NARRATED_IN', 'TEACHES_IN'])
@@ -69,7 +71,15 @@ export function gatherAttestations(store: Store, id: string, includeIdentified =
   const circle = includeIdentified ? identityCircle(store, id) : [{ node: subject }]
   const items: Attestation[] = []
   const seen = new Set<string>()
-  const push = (a: Attestation) => { if (seen.has(a.key)) return; seen.add(a.key); items.push(a) }
+  // one entry per text / object: the figure itself is visited first, so a direct attestation
+  // wins over the same text reached through an identified figure
+  const push = (a: Attestation) => {
+    const k = a.key.split(':').slice(0, 3).join(':')
+    if (seen.has(k)) return
+    seen.add(k)
+    a.disputed = a.edge.evidenceClass === 7 || a.edge.status === 'disputed'
+    items.push(a)
+  }
 
   for (const { node: fig, edge: viaEdge } of circle) {
     const via = viaEdge ? fig : undefined
@@ -79,7 +89,7 @@ export function gatherAttestations(store: Store, id: string, includeIdentified =
       if (x.dir === 'out' && TEXTUAL.has(e.p)) {
         const text = store.textOf(x.other.id) ?? x.other
         const d = store.dateOf(x.other.id, 'scholarly-textual')
-        if (d) push({ key: `t:${text.id}:${fig.id}`, lane: textLane(store, text.id), node: text, start: d.start!, end: d.end ?? d.start!, label: d.label, certainty: d.certainty, edge: e, via, relation: `${store.meta.predicates[e.p]}${e.sources[0]?.locator ? ` · ${e.sources[0].locator}` : ''}` })
+        if (d) push({ key: `t:${text.id}`, lane: textLane(store, text.id), node: text, start: d.start!, end: d.end ?? d.start!, label: d.label, certainty: d.certainty, edge: e, via, relation: `${store.meta.predicates[e.p]}${e.sources[0]?.locator ? ` · ${e.sources[0].locator}` : ''}` })
       }
       // textual, derived from the passage a class-1 role assertion cites (never through a narrative)
       if (e.evidenceClass === 1 && NARRATIVE_ROLE_PREDICATES.has(e.p)) {
@@ -87,7 +97,7 @@ export function gatherAttestations(store: Store, id: string, includeIdentified =
         const tid = textFromLocator(loc)
         const text = tid ? store.byId.get(tid) : undefined
         const d = tid ? store.dateOf(tid, 'scholarly-textual') : undefined
-        if (text && d) push({ key: `t:${text.id}:${fig.id}`, lane: textLane(store, text.id), node: text, start: d.start!, end: d.end ?? d.start!, label: d.label, certainty: d.certainty, edge: e, via, relation: `${store.meta.predicates[e.p]} ${x.other.name}${loc ? ` · ${loc}` : ''}` })
+        if (text && d) push({ key: `t:${text.id}`, lane: textLane(store, text.id), node: text, start: d.start!, end: d.end ?? d.start!, label: d.label, certainty: d.certainty, edge: e, via, relation: `${store.meta.predicates[e.p]} ${x.other.name}${loc ? ` · ${loc}` : ''}` })
       }
       // material
       let obj: GNode | undefined
@@ -96,7 +106,7 @@ export function gatherAttestations(store: Store, id: string, includeIdentified =
       if (x.dir === 'out' && e.p === 'ASSOCIATED_WITH') obj = x.other
       if (obj && ['temple', 'artifact', 'inscription', 'manuscript', 'site'].includes(obj.type)) {
         const d = store.dateOf(obj.id, 'material')
-        if (d) push({ key: `m:${obj.id}:${fig.id}:${e.p}`, lane: e.p === 'ASSOCIATED_WITH' ? 'tradition' : 'material', node: obj, start: d.start!, end: d.end ?? d.start!, label: d.label, certainty: d.certainty, edge: e, via, relation: store.meta.predicates[e.p], traditional: e.p === 'ASSOCIATED_WITH' })
+        if (d) push({ key: `m:${obj.id}`, lane: e.p === 'ASSOCIATED_WITH' ? 'tradition' : 'material', node: obj, start: d.start!, end: d.end ?? d.start!, label: d.label, certainty: d.certainty, edge: e, via, relation: store.meta.predicates[e.p], traditional: e.p === 'ASSOCIATED_WITH' })
       }
     }
   }

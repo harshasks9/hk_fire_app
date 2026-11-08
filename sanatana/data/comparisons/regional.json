@@ -1,717 +1,717 @@
 [
-  {
-    "id": "cmp:sita-abduction-handling",
-    "title": "How Sītā is abducted",
-    "subject": "narr:abduction-of-sita",
-    "question": "What exactly does Rāvaṇa take, and does he touch Sītā?",
-    "rows": [
-      {
-        "text": "text:valmiki-ramayana",
-        "locator": "VR Araṇyakāṇḍa, abduction sargas (exact CE sarga not checked)",
-        "statement": "Rāvaṇa approaches in the guise of a mendicant, reveals himself and seizes Sītā bodily — the description has him grasp her by the hair and the thighs — and carries her off through the sky in his chariot.",
-        "sources": [
-          {
-            "source": "src:goldman-vr",
-            "locator": "vol. III (Araṇyakāṇḍa), abduction sargas"
-          },
-          {
-            "source": "src:ramanujan-1991"
-          }
-        ],
-        "status": "recall"
-      },
-      {
-        "text": "text:kamba-ramayanam",
-        "locator": "Āraṇiya kāṇṭam",
-        "statement": "Rāvaṇa does not touch Sītā: he digs up and lifts the ground on which her hermitage stands and carries her away with it. Commentators connect this to a curse that he would die if he forced an unwilling woman.",
-        "sources": [
-          {
-            "source": "src:hart-heifetz-1988",
-            "locator": "Āraṇiya kāṇṭam and Introduction"
-          },
-          {
-            "source": "src:richman-1991"
-          }
-        ],
-        "status": "recall"
-      },
-      {
-        "text": "text:adhyatma-ramayana",
-        "locator": "Araṇyakāṇḍa (recalled as ch. 7)",
-        "statement": "Before the golden-deer episode Rāma, knowing the future, tells Sītā to enter the fire and leave an illusory Sītā (māyā-Sītā) in her place; it is this double that Rāvaṇa carries off.",
-        "sources": [
-          {
-            "source": "src:doniger-1999"
-          },
-          {
-            "source": "src:rocher-1986"
-          },
-          {
-            "source": "src:wikipedia",
-            "url": "https://en.wikipedia.org/wiki/Maya_Sita"
-          }
-        ],
-        "status": "recall"
-      },
-      {
-        "text": "text:ramcharitmanas",
-        "locator": "RCM Araṇyakāṇḍa, caupāīs before dohā 24 (common numbering)",
-        "statement": "While Lakṣmaṇa is away, Rāma tells Sītā to dwell in the fire until he has destroyed the rākṣasas; she enters the fire, leaving her own reflection (nija pratibimba), “of the same character, form and modesty.” Not even Lakṣmaṇa knows. Rāvaṇa abducts the reflection.",
-        "sources": [
-          {
-            "source": "src:manas-sanskritdocuments",
-            "locator": "Araṇyakāṇḍa, caupāīs before dohā 24",
-            "url": "https://sanskritdocuments.org/doc_z_otherlang_hindi/manas3_i.html"
-          },
-          {
-            "source": "src:lutgendorf-1991"
-          }
-        ],
-        "status": "verified-online"
-      },
-      {
-        "text": "text:paumacariya",
-        "locator": "abduction episode (uddesa not checked)",
-        "statement": "Rāvaṇa, a vidyādhara king, carries Sītā off to Laṅkā but does not force her; Jain tellings attribute his restraint to a vow taken before a Jain monk not to take a woman against her will.",
-        "sources": [
-          {
-            "source": "src:kulkarni-1990"
-          },
-          {
-            "source": "src:ramanujan-1991"
-          }
-        ],
-        "status": "recall"
-      }
+ {
+  "id": "cmp:sita-abduction-handling",
+  "title": "How Sītā is abducted",
+  "subject": "narr:abduction-of-sita",
+  "question": "What exactly does Rāvaṇa take, and does he touch Sītā?",
+  "rows": [
+   {
+    "text": "text:valmiki-ramayana",
+    "locator": "VR (CE) 3.47.16",
+    "statement": "Rāvaṇa approaches in the guise of a mendicant, reveals himself and seizes Sītā bodily — the description has him grasp her by the hair and the thighs — and carries her off through the sky in his chariot.",
+    "sources": [
+     {
+      "source": "src:goldman-vr",
+      "locator": "vol. III (Araṇyakāṇḍa), abduction sargas"
+     },
+     {
+      "source": "src:ramanujan-1991"
+     }
     ],
-    "note": "Ramanujan (1991) and the essays in Richman (1991) use divergences like these to argue for many “tellings” rather than one original with deviations. The rows are not ranked; they show how each telling protects (or does not protect) Sītā’s inviolability by different means.",
-    "agent": "regional"
-  },
-  {
-    "id": "cmp:sita-parentage",
-    "title": "Who are Sītā’s parents?",
-    "subject": "char:sita",
-    "question": "How is Sītā born, and whose daughter (or sister) is she?",
-    "rows": [
-      {
-        "text": "text:valmiki-ramayana",
-        "locator": "VR Bālakāṇḍa (Janaka’s account to Viśvāmitra; exact CE sarga not checked)",
-        "statement": "Janaka of Mithilā finds her in a furrow while ploughing the sacrificial ground; she is not born of a womb (ayonijā) and he raises her as his daughter.",
-        "sources": [
-          {
-            "source": "src:goldman-vr",
-            "locator": "vol. I (Bālakāṇḍa), Janaka’s account"
-          },
-          {
-            "source": "src:brockington-1998"
-          }
-        ],
-        "status": "recall"
-      },
-      {
-        "text": "text:dasaratha-jataka",
-        "locator": "Jātaka 461",
-        "statement": "She is the daughter of King Dasaratha of Bārāṇasī and his chief queen, sister of Rāma-paṇḍita and Lakkhaṇa; on their return from the Himalaya she is made queen consort. In the closing identification she is the mother of Rāhula in the Buddha’s last life.",
-        "sources": [
-          {
-            "source": "src:fausboll-1871",
-            "url": "https://ancient-buddhist-texts.net/English-Texts/Jataka/461.htm"
-          },
-          {
-            "source": "src:cowell-jataka",
-            "locator": "vol. IV, no. 461"
-          }
-        ],
-        "status": "verified-online"
-      },
-      {
-        "text": "text:paumacariya",
-        "locator": "birth of Sītā and Bhāmaṇḍala",
-        "statement": "She is the daughter of Janaka and Videhā, born as a twin with Bhāmaṇḍala, who is carried off at birth and raised among the vidyādharas.",
-        "sources": [
-          {
-            "source": "src:kulkarni-1990"
-          }
-        ],
-        "status": "recall"
-      },
-      {
-        "text": "text:uttarapurana-gunabhadra",
-        "locator": "Rāma narrative of the Uttarapurāṇa",
-        "statement": "She is born to Rāvaṇa’s queen Mandodarī; because she is foretold to cause Rāvaṇa’s ruin she is abandoned in a casket and found in Janaka’s realm, where she is raised.",
-        "sources": [
-          {
-            "source": "src:kulkarni-1990"
-          }
-        ],
-        "status": "recall"
-      },
-      {
-        "text": "text:adbhuta-ramayana",
-        "locator": "sargas on Sītā’s birth",
-        "statement": "She is born to Mandodarī (popular accounts of the text add that Mandodarī had drunk a pot of sages’ blood collected by Rāvaṇa) and is found by Janaka in a field being prepared for a sacrifice.",
-        "sources": [
-          {
-            "source": "src:grierson-1926"
-          },
-          {
-            "source": "src:wikipedia",
-            "url": "https://en.wikipedia.org/wiki/Adbhuta_Ramayana"
-          }
-        ],
-        "status": "recall"
-      },
-      {
-        "text": "text:ramakien",
-        "locator": "birth of Sida",
-        "statement": "Nang Sida is born as Thotsakan’s daughter; because of an ill omen she is set adrift and is found and raised by King Chanok (Janaka). She is an incarnation of Laksami.",
-        "sources": [
-          {
-            "source": "src:olsson-1968"
-          },
-          {
-            "source": "src:wikipedia",
-            "url": "https://en.wikipedia.org/wiki/Ramakien"
-          }
-        ],
-        "status": "recall"
-      },
-      {
-        "text": "text:phra-lak-phra-lam",
-        "locator": "character list",
-        "statement": "Nang Sida is the daughter of Thôtsakane (Rāvaṇa) and Nang Chanta, an incarnation of Nang Souxada.",
-        "sources": [
-          {
-            "source": "src:sahai-1996"
-          },
-          {
-            "source": "src:wikipedia",
-            "url": "https://en.wikipedia.org/wiki/Phra_Lak_Phra_Lam"
-          }
-        ],
-        "status": "recall"
-      },
-      {
-        "text": "text:hikayat-seri-rama",
-        "statement": "Siti Dewi is presented in the summaries consulted as the adoptive daughter of Maharisi Kali; the details of her birth in the Laud-based text were not checked.",
-        "sources": [
-          {
-            "source": "src:ikram-1980"
-          },
-          {
-            "source": "src:wikipedia",
-            "url": "https://en.wikipedia.org/wiki/Hikayat_Seri_Rama"
-          }
-        ],
-        "status": "unresolved"
-      }
+    "status": "verified-online"
+   },
+   {
+    "text": "text:kamba-ramayanam",
+    "locator": "Āraṇiya kāṇṭam",
+    "statement": "Rāvaṇa does not touch Sītā: he digs up and lifts the ground on which her hermitage stands and carries her away with it. Commentators connect this to a curse that he would die if he forced an unwilling woman.",
+    "sources": [
+     {
+      "source": "src:hart-heifetz-1988",
+      "locator": "Āraṇiya kāṇṭam and Introduction"
+     },
+     {
+      "source": "src:richman-1991"
+     }
     ],
-    "note": "Two clusters stand out: tellings in which Sītā is found in the earth (Vālmīki and many Hindu tellings) and tellings in which she is Rāvaṇa’s own daughter (Guṇabhadra’s Jain line, the Adbhuta, Thai and Lao tellings), with the Buddhist jātaka making her Rāma’s sister. The table does not decide which is earlier.",
-    "agent": "regional"
-  },
-  {
-    "id": "cmp:hanuman-character",
-    "title": "Hanumān’s character",
-    "subject": "char:hanuman",
-    "question": "Who is Hanumān — what kind of being, what kind of devotee, and does he marry?",
-    "rows": [
-      {
-        "text": "text:valmiki-ramayana",
-        "locator": "VR Kiṣkindhā- and Sundarakāṇḍas",
-        "statement": "A vānara, son of the Wind god, minister of Sugrīva, eloquent and learned, who leaps the ocean to find Sītā; no wife is mentioned.",
-        "sources": [
-          {
-            "source": "src:goldman-vr",
-            "locator": "vols. IV–V (Kiṣkindhā, Sundara)"
-          },
-          {
-            "source": "src:lutgendorf-2007"
-          }
-        ],
-        "status": "recall"
-      },
-      {
-        "text": "text:ramcharitmanas",
-        "locator": "RCM Sundarakāṇḍa passim; Uttarakāṇḍa before dohā 120(ka) for “rāma te adhika rāma kara dāsā”",
-        "statement": "The paradigmatic servant-devotee (dāsa) of Rāma. The Mānas also states in Kākabhuśuṇḍi’s discourse that “Rāma’s servant is greater than Rāma” — a general claim about devotees that later Hanumān devotion applied to him.",
-        "sources": [
-          {
-            "source": "src:manas-sanskritdocuments",
-            "locator": "Uttarakāṇḍa, caupāīs before dohā 120(ka)",
-            "url": "https://sanskritdocuments.org/doc_z_otherlang_hindi/manas7_i.html"
-          },
-          {
-            "source": "src:lutgendorf-2007"
-          }
-        ],
-        "status": "verified-online"
-      },
-      {
-        "text": "text:paumacariya",
-        "locator": "Hanumat episodes (uddesas not checked)",
-        "statement": "A vidyādhara prince — son of Pavanañjaya and Añjanā — not an animal; the monkey is his clan’s banner emblem. He marries (several wives in the Jain tradition) and at the end renounces the world as a Jain monk.",
-        "sources": [
-          {
-            "source": "src:kulkarni-1990"
-          },
-          {
-            "source": "src:lutgendorf-2007"
-          },
-          {
-            "source": "src:wikipedia",
-            "url": "https://en.wikipedia.org/wiki/Hanuman"
-          }
-        ],
-        "status": "recall"
-      },
-      {
-        "text": "text:ramakien",
-        "locator": "causeway episode and later episodes",
-        "statement": "A brilliant white monkey warrior with a frankly amorous nature: he falls in love with the mermaid Suvannamaccha (Thotsakan’s daughter), fathering Macchanu, and in one episode takes Thotsakan’s form to sleep with his queen.",
-        "sources": [
-          {
-            "source": "src:olsson-1968"
-          },
-          {
-            "source": "src:lutgendorf-2007"
-          },
-          {
-            "source": "src:wikipedia",
-            "url": "https://en.wikipedia.org/wiki/Suvannamaccha"
-          }
-        ],
-        "status": "recall"
-      },
-      {
-        "text": "text:reamker",
-        "locator": "causeway episode",
-        "statement": "The Hanuman–Sovann Maccha romance during the building of the causeway is one of the most loved episodes of Khmer performance.",
-        "sources": [
-          {
-            "source": "src:jacob-1986"
-          },
-          {
-            "source": "src:wikipedia",
-            "url": "https://en.wikipedia.org/wiki/Reamker"
-          }
-        ],
-        "status": "recall"
-      }
+    "status": "recall"
+   },
+   {
+    "text": "text:adhyatma-ramayana",
+    "locator": "Araṇyakāṇḍa (recalled as ch. 7)",
+    "statement": "Before the golden-deer episode Rāma, knowing the future, tells Sītā to enter the fire and leave an illusory Sītā (māyā-Sītā) in her place; it is this double that Rāvaṇa carries off.",
+    "sources": [
+     {
+      "source": "src:doniger-1999"
+     },
+     {
+      "source": "src:rocher-1986"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Maya_Sita"
+     }
     ],
-    "note": "Lutgendorf (2007) traces how a vānara minister became, in North India, a celibate god and the archetypal devotee, while Jain and Southeast Asian tellings made him a married or amorous hero. None of these is treated here as the “real” Hanumān.",
-    "agent": "regional"
-  },
-  {
-    "id": "cmp:ravana-portrayal",
-    "title": "Rāvaṇa’s portrayal",
-    "subject": "char:ravana",
-    "question": "What kind of being is Rāvaṇa, how is he judged, and who kills him?",
-    "rows": [
-      {
-        "text": "text:valmiki-ramayana",
-        "locator": "VR Araṇya- and Yuddhakāṇḍas",
-        "statement": "A ten-headed rākṣasa king of Laṅkā, son of the sage Viśravas, mighty through ascetic boons, learned yet given to lust and arrogance; he abducts Sītā and is killed by Rāma.",
-        "sources": [
-          {
-            "source": "src:goldman-vr"
-          },
-          {
-            "source": "src:brockington-1998"
-          }
-        ],
-        "status": "recall"
-      },
-      {
-        "text": "text:paumacariya",
-        "locator": "Rāvaṇa episodes and final battle",
-        "statement": "A vidyādhara king of the rākṣasa lineage and a devout Jain, called ten-faced because his face was reflected in a necklace of nine gems; he is killed by Lakṣmaṇa (as Vāsudeva), not by Rāma, and is destined to become a future tīrthaṅkara.",
-        "sources": [
-          {
-            "source": "src:kulkarni-1990"
-          },
-          {
-            "source": "src:ramanujan-1991"
-          },
-          {
-            "source": "src:wikipedia",
-            "url": "https://en.wikipedia.org/wiki/Vimalsuri"
-          }
-        ],
-        "status": "recall"
-      },
-      {
-        "text": "text:kamba-ramayanam",
-        "locator": "Āraṇiya and Yuttha kāṇṭams",
-        "statement": "A figure of tragic grandeur — majestic, heroic and cultured even in his fatal error — who does not touch Sītā; readers have long seen Kampaṉ’s Rāvaṇa as a tragic hero rather than a mere villain.",
-        "sources": [
-          {
-            "source": "src:hart-heifetz-1988",
-            "locator": "Introduction"
-          },
-          {
-            "source": "src:richman-1991"
-          }
-        ],
-        "status": "recall"
-      },
-      {
-        "text": "text:lankavatara-sutra",
-        "locator": "opening chapter",
-        "statement": "Rāvaṇa, lord of Laṅkā, invites the Buddha to his island and questions him on the dharma; he is a pious seeker, and no abduction is narrated.",
-        "sources": [
-          {
-            "source": "src:suzuki-1932",
-            "locator": "opening chapter"
-          }
-        ],
-        "status": "recall"
-      },
-      {
-        "text": "text:ramakien",
-        "locator": "death of Thotsakan",
-        "statement": "Thotsakan, the ten-faced king of Laṅkā, is Sida’s father; he keeps his heart outside his body, and dies when Hanuman crushes it as Phra Ram’s arrows strike.",
-        "sources": [
-          {
-            "source": "src:olsson-1968"
-          },
-          {
-            "source": "src:wikipedia",
-            "url": "https://en.wikipedia.org/wiki/Ramakien"
-          }
-        ],
-        "status": "recall"
-      },
-      {
-        "text": "text:phra-lak-phra-lam",
-        "locator": "frame and character list",
-        "statement": "Hapmanasouane is Phra Lam’s cousin, and is compared with Devadatta or Māra, the adversaries of the Buddha.",
-        "sources": [
-          {
-            "source": "src:sahai-1996"
-          },
-          {
-            "source": "src:wikipedia",
-            "url": "https://en.wikipedia.org/wiki/Phra_Lak_Phra_Lam"
-          }
-        ],
-        "status": "recall"
-      }
+    "status": "recall"
+   },
+   {
+    "text": "text:ramcharitmanas",
+    "locator": "RCM Araṇyakāṇḍa, caupāīs before dohā 24 (common numbering)",
+    "statement": "While Lakṣmaṇa is away, Rāma tells Sītā to dwell in the fire until he has destroyed the rākṣasas; she enters the fire, leaving her own reflection (nija pratibimba), “of the same character, form and modesty.” Not even Lakṣmaṇa knows. Rāvaṇa abducts the reflection.",
+    "sources": [
+     {
+      "source": "src:manas-sanskritdocuments",
+      "locator": "Araṇyakāṇḍa, caupāīs before dohā 24",
+      "url": "https://sanskritdocuments.org/doc_z_otherlang_hindi/manas3_i.html"
+     },
+     {
+      "source": "src:lutgendorf-1991"
+     }
     ],
-    "agent": "regional"
-  },
-  {
-    "id": "cmp:krishna-radha",
-    "title": "Kṛṣṇa and Rādhā",
-    "subject": "char:radha",
-    "question": "Is Rādhā named, and what is her relation to Kṛṣṇa?",
-    "rows": [
-      {
-        "text": "text:bhagavata-purana",
-        "locator": "BhP 10.29–33 (rāsa-pañcādhyāyī), esp. 10.30",
-        "statement": "No gopī is named Rādhā. In the rāsa episode Kṛṣṇa disappears with one favoured, unnamed gopī, whom later commentators (e.g. Viśvanātha Cakravartī) identify as Rādhā.",
-        "sources": [
-          {
-            "source": "src:bryant-2007"
-          },
-          {
-            "source": "src:wikipedia",
-            "url": "https://en.wikipedia.org/wiki/Radha"
-          }
-        ],
-        "status": "recall"
-      },
-      {
-        "text": "text:gaha-sattasai",
-        "locator": "one verse (often cited as 1.89, Weber — unverified)",
-        "statement": "A single Prakrit verse speaks of Kṛṣṇa and Rādhā (Rāhiā) as lovers — the earliest known literary mention, in an anthology whose date is disputed (before 640 CE).",
-        "sources": [
-          {
-            "source": "src:khoroche-tieken-2009"
-          },
-          {
-            "source": "src:wikipedia",
-            "url": "https://en.wikipedia.org/wiki/Gaha_Sattasai"
-          }
-        ],
-        "status": "recall"
-      },
-      {
-        "text": "text:silappatikaram",
-        "locator": "canto 17 (Āycciyar kuravai)",
-        "statement": "The cowherd girls’ round-dance enacts Kṛṣṇa (Māyavaṉ), Balarāma and Kṛṣṇa’s beloved Piññai — a Tamil cowherd beloved who is not named Rādhā.",
-        "sources": [
-          {
-            "source": "src:parthasarathy-1993"
-          },
-          {
-            "source": "src:hardy-1983"
-          }
-        ],
-        "status": "recall"
-      },
-      {
-        "text": "text:tiruppavai",
-        "locator": "Tiruppāvai 18–20 (recalled)",
-        "statement": "Āṇṭāḷ’s girls wake Nappiṉṉai, Kṛṣṇa’s consort, to intercede for them; Rādhā does not appear.",
-        "sources": [
-          {
-            "source": "src:venkatesan-2010"
-          }
-        ],
-        "status": "recall"
-      },
-      {
-        "text": "text:gita-govinda",
-        "locator": "sargas 1–12",
-        "statement": "Rādhā is the heroine: the poem follows her longing, jealousy, the messages of her friend and her reunion with Kṛṣṇa, who is her lover, not her husband.",
-        "sources": [
-          {
-            "source": "src:miller-1977"
-          }
-        ],
-        "status": "source-checked"
-      },
-      {
-        "text": "text:brahmavaivarta-purana",
-        "locator": "Kṛṣṇajanma-khaṇḍa and Prakṛti-khaṇḍa",
-        "statement": "Rādhā is the supreme goddess, mūlaprakṛti and Kṛṣṇa’s eternal śakti in Goloka; the text also narrates her marriage to Kṛṣṇa performed by Brahmā.",
-        "sources": [
-          {
-            "source": "src:brown-1974"
-          },
-          {
-            "source": "src:wikipedia",
-            "url": "https://en.wikipedia.org/wiki/Brahma_Vaivarta_Purana"
-          }
-        ],
-        "status": "recall"
-      },
-      {
-        "text": "text:chaitanya-charitamrita",
-        "locator": "Ādi-līlā 4 (recalled)",
-        "statement": "Rādhā is Kṛṣṇa’s hlādinī-śakti (power of bliss); Caitanya is Kṛṣṇa who has taken on Rādhā’s emotion and golden complexion in order to taste her love.",
-        "sources": [
-          {
-            "source": "src:dimock-stewart-1999"
-          }
-        ],
-        "status": "recall"
-      },
-      {
-        "text": "text:kirtana-ghosha",
-        "locator": "passim",
-        "statement": "Śaṅkaradeva’s Ekaśaraṇa devotion centres on Kṛṣṇa alone; Rādhā is not worshipped alongside him in this tradition.",
-        "sources": [
-          {
-            "source": "src:neog-1965"
-          },
-          {
-            "source": "src:wikipedia",
-            "url": "https://en.wikipedia.org/wiki/Srimanta_Sankardev"
-          }
-        ],
-        "status": "recall"
-      }
+    "status": "verified-online"
+   },
+   {
+    "text": "text:paumacariya",
+    "locator": "abduction episode (uddesa not checked)",
+    "statement": "Rāvaṇa, a vidyādhara king, carries Sītā off to Laṅkā but does not force her; Jain tellings attribute his restraint to a vow taken before a Jain monk not to take a woman against her will.",
+    "sources": [
+     {
+      "source": "src:kulkarni-1990"
+     },
+     {
+      "source": "src:ramanujan-1991"
+     }
     ],
-    "note": "The table shows Rādhā absent (Bhāgavata), marginal (Gāhā Sattasaī), central as beloved (Gītagovinda), supreme goddess (Brahmavaivarta) and theological principle (Caitanya Caritāmṛta), alongside Tamil tellings with a different beloved (Piññai / Nappiṉṉai) and an Assamese tradition that deliberately leaves her out.",
-    "agent": "regional"
-  },
-  {
-    "id": "cmp:who-kills-ravana",
-    "title": "Who kills Rāvaṇa?",
-    "subject": "narr:lanka-war",
-    "question": "Who defeats the king of Laṅkā (or his double), and how?",
-    "rows": [
-      {
-        "text": "text:valmiki-ramayana",
-        "locator": "VR Yuddhakāṇḍa, death of Rāvaṇa",
-        "statement": "Rāma kills Rāvaṇa in single combat with a divine weapon (the Brahmāstra).",
-        "sources": [
-          {
-            "source": "src:goldman-vr",
-            "locator": "vol. VI (Yuddhakāṇḍa)"
-          }
-        ],
-        "status": "recall"
-      },
-      {
-        "text": "text:ramcharitmanas",
-        "locator": "RCM Laṅkākāṇḍa",
-        "statement": "Rāma kills Rāvaṇa; the poem makes the battle a display of Rāma’s divine līlā.",
-        "sources": [
-          {
-            "source": "src:manas-sanskritdocuments",
-            "locator": "Laṅkākāṇḍa",
-            "url": "https://sanskritdocuments.org/doc_z_otherlang_hindi/manas6_i.html"
-          },
-          {
-            "source": "src:lutgendorf-1991"
-          }
-        ],
-        "status": "source-checked"
-      },
-      {
-        "text": "text:paumacariya",
-        "locator": "final battle",
-        "statement": "Lakṣmaṇa kills Rāvaṇa, as in all Jain universal history the Vāsudeva kills the Prativāsudeva; Rāma, a non-violent Baladeva, later becomes a monk and attains liberation.",
-        "sources": [
-          {
-            "source": "src:kulkarni-1990"
-          },
-          {
-            "source": "src:wikipedia",
-            "url": "https://en.wikipedia.org/wiki/Vimalsuri"
-          }
-        ],
-        "status": "source-checked"
-      },
-      {
-        "text": "text:adbhuta-ramayana",
-        "locator": "sarga 23 (per Wikipedia)",
-        "statement": "After the ten-headed Rāvaṇa is dead, his thousand-headed brother Sahasra-Rāvaṇa strikes Rāma down; Sītā takes the form of Mahākālī and destroys him.",
-        "sources": [
-          {
-            "source": "src:grierson-1926"
-          },
-          {
-            "source": "src:wikipedia",
-            "url": "https://en.wikipedia.org/wiki/Adbhuta_Ramayana"
-          }
-        ],
-        "status": "recall"
-      },
-      {
-        "text": "text:vilanka-ramayana",
-        "statement": "Śāraḷā Dāsa narrates a further war against a thousand-headed Rāvaṇa of Vilaṅkā; who strikes the final blow was not checked.",
-        "sources": [
-          {
-            "source": "src:smith-wl-1988"
-          },
-          {
-            "source": "src:wikipedia",
-            "url": "https://en.wikipedia.org/wiki/Sarala_Das"
-          }
-        ],
-        "status": "unresolved"
-      },
-      {
-        "text": "text:ramakien",
-        "locator": "death of Thotsakan",
-        "statement": "Phra Ram’s arrows cannot kill Thotsakan until Hanuman obtains and crushes the heart that Thotsakan has kept outside his body.",
-        "sources": [
-          {
-            "source": "src:olsson-1968"
-          },
-          {
-            "source": "src:wikipedia",
-            "url": "https://en.wikipedia.org/wiki/Ramakien"
-          }
-        ],
-        "status": "recall"
-      },
-      {
-        "text": "text:dasaratha-jataka",
-        "locator": "Jātaka 461",
-        "statement": "There is no Rāvaṇa and no war: the story ends with the return from exile and Rāma-paṇḍita’s long reign.",
-        "sources": [
-          {
-            "source": "src:fausboll-1871",
-            "url": "https://ancient-buddhist-texts.net/English-Texts/Jataka/461.htm"
-          }
-        ],
-        "status": "verified-online"
-      }
+    "status": "recall"
+   }
+  ],
+  "note": "Ramanujan (1991) and the essays in Richman (1991) use divergences like these to argue for many “tellings” rather than one original with deviations. The rows are not ranked; they show how each telling protects (or does not protect) Sītā’s inviolability by different means.",
+  "agent": "regional"
+ },
+ {
+  "id": "cmp:sita-parentage",
+  "title": "Who are Sītā’s parents?",
+  "subject": "char:sita",
+  "question": "How is Sītā born, and whose daughter (or sister) is she?",
+  "rows": [
+   {
+    "text": "text:valmiki-ramayana",
+    "locator": "VR (CE) 1.65.14",
+    "statement": "Janaka of Mithilā finds her in a furrow while ploughing the sacrificial ground; she is not born of a womb (ayonijā) and he raises her as his daughter.",
+    "sources": [
+     {
+      "source": "src:goldman-vr",
+      "locator": "vol. I (Bālakāṇḍa), Janaka’s account"
+     },
+     {
+      "source": "src:brockington-1998"
+     }
     ],
-    "agent": "regional"
-  },
-  {
-    "id": "cmp:murugan-skanda",
-    "title": "Murukaṉ and Skanda across texts",
-    "subject": "deity:murugan",
-    "question": "How is the Tamil god Murukaṉ presented, and when does he carry Skanda’s attributes?",
-    "rows": [
-      {
-        "text": "text:tolkappiyam",
-        "locator": "Tol. Poruḷ., Akattiṇaiyiyal 5",
-        "statement": "Cēyōṉ, “the red one,” presides over the hill (kuṟiñci) landscape, one of four deities assigned to landscapes; no mythology is given. The commentator Nacciṉārkkiṉiyar glosses him as “red Murukaṉ.”",
-        "sources": [
-          {
-            "source": "src:tolkappiyam-pm",
-            "locator": "Poruḷatikāram, Akattiṇaiyiyal 5",
-            "url": "https://projectmadurai.org/pm_etexts/utf8/pmuni0500_01.html"
-          }
-        ],
-        "status": "verified-online"
-      },
-      {
-        "text": "text:paripatal",
-        "locator": "poems to Cevvēḷ",
-        "statement": "Eight surviving poems praise Cevvēḷ (Murukaṉ) at Tiruparaṅkuṉṟam near Madurai and know the northern myth of his birth.",
-        "sources": [
-          {
-            "source": "src:zvelebil-1974"
-          },
-          {
-            "source": "src:wikipedia",
-            "url": "https://en.wikipedia.org/wiki/Paripāṭal"
-          }
-        ],
-        "status": "recall"
-      },
-      {
-        "text": "text:tirumurukarruppatai",
-        "locator": "passim",
-        "statement": "A guide-poem leading the devotee to Murukaṉ at six places; he has six faces and twelve arms, rides the peacock, wields the vēl and is linked to the Kṛttikā mothers — Skanda iconography in a Tamil poem.",
-        "sources": [
-          {
-            "source": "src:zvelebil-1973"
-          },
-          {
-            "source": "src:wikipedia",
-            "url": "https://en.wikipedia.org/wiki/Tirumurukarruppatai"
-          }
-        ],
-        "status": "recall"
-      },
-      {
-        "text": "text:silappatikaram",
-        "locator": "canto 24",
-        "statement": "Hill-dwellers dance the kuṉṟakkuravai for Murukaṉ, who is also linked to possession-dance (veṟiyāṭṭu) of the Vēlaṉ priest.",
-        "sources": [
-          {
-            "source": "src:parthasarathy-1993"
-          }
-        ],
-        "status": "recall"
-      },
-      {
-        "text": "text:kanda-puranam",
-        "locator": "passim",
-        "statement": "A full Tamil Skanda Purāṇa: birth from Śiva’s fiery seed, the war against Cūrapatmaṉ, and marriages to Teyvāṉai (Indra’s daughter) and the Tamil hunter girl Vaḷḷi.",
-        "sources": [
-          {
-            "source": "src:clothey-1978"
-          }
-        ],
-        "status": "source-checked"
-      },
-      {
-        "text": "text:mahabharata",
-        "locator": "MBh Āraṇyakaparvan, Skanda episode",
-        "statement": "In the Sanskrit epic Skanda is born of Agni (and Svāhā) or of Śiva, raised by the Kṛttikās, and made general of the gods; there is no Tamil Vaḷḷi.",
-        "sources": [
-          {
-            "source": "src:mann-2012"
-          },
-          {
-            "source": "src:mbh-critical-edition",
-            "locator": "Āraṇyakaparvan, Skanda episode (CE adhyāyas not checked)"
-          }
-        ],
-        "status": "recall"
-      }
+    "status": "verified-online"
+   },
+   {
+    "text": "text:dasaratha-jataka",
+    "locator": "Jātaka 461",
+    "statement": "She is the daughter of King Dasaratha of Bārāṇasī and his chief queen, sister of Rāma-paṇḍita and Lakkhaṇa; on their return from the Himalaya she is made queen consort. In the closing identification she is the mother of Rāhula in the Buddha’s last life.",
+    "sources": [
+     {
+      "source": "src:fausboll-1871",
+      "url": "https://ancient-buddhist-texts.net/English-Texts/Jataka/461.htm"
+     },
+     {
+      "source": "src:cowell-jataka",
+      "locator": "vol. IV, no. 461"
+     }
     ],
-    "note": "Read in sequence these rows support the scholarly account of convergence (Zvelebil 1973; Clothey 1978): a Tamil hill god acquires Skanda’s myth and iconography by the late Caṅkam period. The identification is recorded as IDENTIFIED_WITH, not as a merger.",
-    "agent": "regional"
-  }
+    "status": "verified-online"
+   },
+   {
+    "text": "text:paumacariya",
+    "locator": "birth of Sītā and Bhāmaṇḍala",
+    "statement": "She is the daughter of Janaka and Videhā, born as a twin with Bhāmaṇḍala, who is carried off at birth and raised among the vidyādharas.",
+    "sources": [
+     {
+      "source": "src:kulkarni-1990"
+     }
+    ],
+    "status": "recall"
+   },
+   {
+    "text": "text:uttarapurana-gunabhadra",
+    "locator": "Rāma narrative of the Uttarapurāṇa",
+    "statement": "She is born to Rāvaṇa’s queen Mandodarī; because she is foretold to cause Rāvaṇa’s ruin she is abandoned in a casket and found in Janaka’s realm, where she is raised.",
+    "sources": [
+     {
+      "source": "src:kulkarni-1990"
+     }
+    ],
+    "status": "recall"
+   },
+   {
+    "text": "text:adbhuta-ramayana",
+    "locator": "sargas on Sītā’s birth",
+    "statement": "She is born to Mandodarī (popular accounts of the text add that Mandodarī had drunk a pot of sages’ blood collected by Rāvaṇa) and is found by Janaka in a field being prepared for a sacrifice.",
+    "sources": [
+     {
+      "source": "src:grierson-1926"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Adbhuta_Ramayana"
+     }
+    ],
+    "status": "recall"
+   },
+   {
+    "text": "text:ramakien",
+    "locator": "birth of Sida",
+    "statement": "Nang Sida is born as Thotsakan’s daughter; because of an ill omen she is set adrift and is found and raised by King Chanok (Janaka). She is an incarnation of Laksami.",
+    "sources": [
+     {
+      "source": "src:olsson-1968"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ramakien"
+     }
+    ],
+    "status": "recall"
+   },
+   {
+    "text": "text:phra-lak-phra-lam",
+    "locator": "character list",
+    "statement": "Nang Sida is the daughter of Thôtsakane (Rāvaṇa) and Nang Chanta, an incarnation of Nang Souxada.",
+    "sources": [
+     {
+      "source": "src:sahai-1996"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Phra_Lak_Phra_Lam"
+     }
+    ],
+    "status": "recall"
+   },
+   {
+    "text": "text:hikayat-seri-rama",
+    "statement": "Siti Dewi is presented in the summaries consulted as the adoptive daughter of Maharisi Kali; the details of her birth in the Laud-based text were not checked.",
+    "sources": [
+     {
+      "source": "src:ikram-1980"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hikayat_Seri_Rama"
+     }
+    ],
+    "status": "unresolved"
+   }
+  ],
+  "note": "Two clusters stand out: tellings in which Sītā is found in the earth (Vālmīki and many Hindu tellings) and tellings in which she is Rāvaṇa’s own daughter (Guṇabhadra’s Jain line, the Adbhuta, Thai and Lao tellings), with the Buddhist jātaka making her Rāma’s sister. The table does not decide which is earlier.",
+  "agent": "regional"
+ },
+ {
+  "id": "cmp:hanuman-character",
+  "title": "Hanumān’s character",
+  "subject": "char:hanuman",
+  "question": "Who is Hanumān — what kind of being, what kind of devotee, and does he marry?",
+  "rows": [
+   {
+    "text": "text:valmiki-ramayana",
+    "locator": "VR Kiṣkindhā- and Sundarakāṇḍas",
+    "statement": "A vānara, son of the Wind god, minister of Sugrīva, eloquent and learned, who leaps the ocean to find Sītā; no wife is mentioned.",
+    "sources": [
+     {
+      "source": "src:goldman-vr",
+      "locator": "vols. IV–V (Kiṣkindhā, Sundara)"
+     },
+     {
+      "source": "src:lutgendorf-2007"
+     }
+    ],
+    "status": "recall"
+   },
+   {
+    "text": "text:ramcharitmanas",
+    "locator": "RCM Sundarakāṇḍa passim; Uttarakāṇḍa before dohā 120(ka) for “rāma te adhika rāma kara dāsā”",
+    "statement": "The paradigmatic servant-devotee (dāsa) of Rāma. The Mānas also states in Kākabhuśuṇḍi’s discourse that “Rāma’s servant is greater than Rāma” — a general claim about devotees that later Hanumān devotion applied to him.",
+    "sources": [
+     {
+      "source": "src:manas-sanskritdocuments",
+      "locator": "Uttarakāṇḍa, caupāīs before dohā 120(ka)",
+      "url": "https://sanskritdocuments.org/doc_z_otherlang_hindi/manas7_i.html"
+     },
+     {
+      "source": "src:lutgendorf-2007"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:paumacariya",
+    "locator": "Hanumat episodes (uddesas not checked)",
+    "statement": "A vidyādhara prince — son of Pavanañjaya and Añjanā — not an animal; the monkey is his clan’s banner emblem. He marries (several wives in the Jain tradition) and at the end renounces the world as a Jain monk.",
+    "sources": [
+     {
+      "source": "src:kulkarni-1990"
+     },
+     {
+      "source": "src:lutgendorf-2007"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hanuman"
+     }
+    ],
+    "status": "recall"
+   },
+   {
+    "text": "text:ramakien",
+    "locator": "causeway episode and later episodes",
+    "statement": "A brilliant white monkey warrior with a frankly amorous nature: he falls in love with the mermaid Suvannamaccha (Thotsakan’s daughter), fathering Macchanu, and in one episode takes Thotsakan’s form to sleep with his queen.",
+    "sources": [
+     {
+      "source": "src:olsson-1968"
+     },
+     {
+      "source": "src:lutgendorf-2007"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Suvannamaccha"
+     }
+    ],
+    "status": "recall"
+   },
+   {
+    "text": "text:reamker",
+    "locator": "causeway episode",
+    "statement": "The Hanuman–Sovann Maccha romance during the building of the causeway is one of the most loved episodes of Khmer performance.",
+    "sources": [
+     {
+      "source": "src:jacob-1986"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Reamker"
+     }
+    ],
+    "status": "recall"
+   }
+  ],
+  "note": "Lutgendorf (2007) traces how a vānara minister became, in North India, a celibate god and the archetypal devotee, while Jain and Southeast Asian tellings made him a married or amorous hero. None of these is treated here as the “real” Hanumān.",
+  "agent": "regional"
+ },
+ {
+  "id": "cmp:ravana-portrayal",
+  "title": "Rāvaṇa’s portrayal",
+  "subject": "char:ravana",
+  "question": "What kind of being is Rāvaṇa, how is he judged, and who kills him?",
+  "rows": [
+   {
+    "text": "text:valmiki-ramayana",
+    "locator": "VR Araṇya- and Yuddhakāṇḍas",
+    "statement": "A ten-headed rākṣasa king of Laṅkā, son of the sage Viśravas, mighty through ascetic boons, learned yet given to lust and arrogance; he abducts Sītā and is killed by Rāma.",
+    "sources": [
+     {
+      "source": "src:goldman-vr"
+     },
+     {
+      "source": "src:brockington-1998"
+     }
+    ],
+    "status": "recall"
+   },
+   {
+    "text": "text:paumacariya",
+    "locator": "Rāvaṇa episodes and final battle",
+    "statement": "A vidyādhara king of the rākṣasa lineage and a devout Jain, called ten-faced because his face was reflected in a necklace of nine gems; he is killed by Lakṣmaṇa (as Vāsudeva), not by Rāma, and is destined to become a future tīrthaṅkara.",
+    "sources": [
+     {
+      "source": "src:kulkarni-1990"
+     },
+     {
+      "source": "src:ramanujan-1991"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vimalsuri"
+     }
+    ],
+    "status": "recall"
+   },
+   {
+    "text": "text:kamba-ramayanam",
+    "locator": "Āraṇiya and Yuttha kāṇṭams",
+    "statement": "A figure of tragic grandeur — majestic, heroic and cultured even in his fatal error — who does not touch Sītā; readers have long seen Kampaṉ’s Rāvaṇa as a tragic hero rather than a mere villain.",
+    "sources": [
+     {
+      "source": "src:hart-heifetz-1988",
+      "locator": "Introduction"
+     },
+     {
+      "source": "src:richman-1991"
+     }
+    ],
+    "status": "recall"
+   },
+   {
+    "text": "text:lankavatara-sutra",
+    "locator": "opening chapter",
+    "statement": "Rāvaṇa, lord of Laṅkā, invites the Buddha to his island and questions him on the dharma; he is a pious seeker, and no abduction is narrated.",
+    "sources": [
+     {
+      "source": "src:suzuki-1932",
+      "locator": "opening chapter"
+     }
+    ],
+    "status": "recall"
+   },
+   {
+    "text": "text:ramakien",
+    "locator": "death of Thotsakan",
+    "statement": "Thotsakan, the ten-faced king of Laṅkā, is Sida’s father; he keeps his heart outside his body, and dies when Hanuman crushes it as Phra Ram’s arrows strike.",
+    "sources": [
+     {
+      "source": "src:olsson-1968"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ramakien"
+     }
+    ],
+    "status": "recall"
+   },
+   {
+    "text": "text:phra-lak-phra-lam",
+    "locator": "frame and character list",
+    "statement": "Hapmanasouane is Phra Lam’s cousin, and is compared with Devadatta or Māra, the adversaries of the Buddha.",
+    "sources": [
+     {
+      "source": "src:sahai-1996"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Phra_Lak_Phra_Lam"
+     }
+    ],
+    "status": "recall"
+   }
+  ],
+  "agent": "regional"
+ },
+ {
+  "id": "cmp:krishna-radha",
+  "title": "Kṛṣṇa and Rādhā",
+  "subject": "char:radha",
+  "question": "Is Rādhā named, and what is her relation to Kṛṣṇa?",
+  "rows": [
+   {
+    "text": "text:bhagavata-purana",
+    "locator": "BhP 10.29–33 (rāsa-pañcādhyāyī), esp. 10.30",
+    "statement": "No gopī is named Rādhā. In the rāsa episode Kṛṣṇa disappears with one favoured, unnamed gopī, whom later commentators (e.g. Viśvanātha Cakravartī) identify as Rādhā.",
+    "sources": [
+     {
+      "source": "src:bryant-2007"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Radha"
+     }
+    ],
+    "status": "recall"
+   },
+   {
+    "text": "text:gaha-sattasai",
+    "locator": "one verse (often cited as 1.89, Weber — unverified)",
+    "statement": "A single Prakrit verse speaks of Kṛṣṇa and Rādhā (Rāhiā) as lovers — the earliest known literary mention, in an anthology whose date is disputed (before 640 CE).",
+    "sources": [
+     {
+      "source": "src:khoroche-tieken-2009"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gaha_Sattasai"
+     }
+    ],
+    "status": "recall"
+   },
+   {
+    "text": "text:silappatikaram",
+    "locator": "canto 17 (Āycciyar kuravai)",
+    "statement": "The cowherd girls’ round-dance enacts Kṛṣṇa (Māyavaṉ), Balarāma and Kṛṣṇa’s beloved Piññai — a Tamil cowherd beloved who is not named Rādhā.",
+    "sources": [
+     {
+      "source": "src:parthasarathy-1993"
+     },
+     {
+      "source": "src:hardy-1983"
+     }
+    ],
+    "status": "recall"
+   },
+   {
+    "text": "text:tiruppavai",
+    "locator": "Tiruppāvai 18–20 (recalled)",
+    "statement": "Āṇṭāḷ’s girls wake Nappiṉṉai, Kṛṣṇa’s consort, to intercede for them; Rādhā does not appear.",
+    "sources": [
+     {
+      "source": "src:venkatesan-2010"
+     }
+    ],
+    "status": "recall"
+   },
+   {
+    "text": "text:gita-govinda",
+    "locator": "sargas 1–12",
+    "statement": "Rādhā is the heroine: the poem follows her longing, jealousy, the messages of her friend and her reunion with Kṛṣṇa, who is her lover, not her husband.",
+    "sources": [
+     {
+      "source": "src:miller-1977"
+     }
+    ],
+    "status": "source-checked"
+   },
+   {
+    "text": "text:brahmavaivarta-purana",
+    "locator": "Kṛṣṇajanma-khaṇḍa and Prakṛti-khaṇḍa",
+    "statement": "Rādhā is the supreme goddess, mūlaprakṛti and Kṛṣṇa’s eternal śakti in Goloka; the text also narrates her marriage to Kṛṣṇa performed by Brahmā.",
+    "sources": [
+     {
+      "source": "src:brown-1974"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Brahma_Vaivarta_Purana"
+     }
+    ],
+    "status": "recall"
+   },
+   {
+    "text": "text:chaitanya-charitamrita",
+    "locator": "Ādi-līlā 4 (recalled)",
+    "statement": "Rādhā is Kṛṣṇa’s hlādinī-śakti (power of bliss); Caitanya is Kṛṣṇa who has taken on Rādhā’s emotion and golden complexion in order to taste her love.",
+    "sources": [
+     {
+      "source": "src:dimock-stewart-1999"
+     }
+    ],
+    "status": "recall"
+   },
+   {
+    "text": "text:kirtana-ghosha",
+    "locator": "passim",
+    "statement": "Śaṅkaradeva’s Ekaśaraṇa devotion centres on Kṛṣṇa alone; Rādhā is not worshipped alongside him in this tradition.",
+    "sources": [
+     {
+      "source": "src:neog-1965"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Srimanta_Sankardev"
+     }
+    ],
+    "status": "recall"
+   }
+  ],
+  "note": "The table shows Rādhā absent (Bhāgavata), marginal (Gāhā Sattasaī), central as beloved (Gītagovinda), supreme goddess (Brahmavaivarta) and theological principle (Caitanya Caritāmṛta), alongside Tamil tellings with a different beloved (Piññai / Nappiṉṉai) and an Assamese tradition that deliberately leaves her out.",
+  "agent": "regional"
+ },
+ {
+  "id": "cmp:who-kills-ravana",
+  "title": "Who kills Rāvaṇa?",
+  "subject": "narr:lanka-war",
+  "question": "Who defeats the king of Laṅkā (or his double), and how?",
+  "rows": [
+   {
+    "text": "text:valmiki-ramayana",
+    "locator": "VR Yuddhakāṇḍa, death of Rāvaṇa",
+    "statement": "Rāma kills Rāvaṇa in single combat with a divine weapon (the Brahmāstra).",
+    "sources": [
+     {
+      "source": "src:goldman-vr",
+      "locator": "vol. VI (Yuddhakāṇḍa)"
+     }
+    ],
+    "status": "recall"
+   },
+   {
+    "text": "text:ramcharitmanas",
+    "locator": "RCM Laṅkākāṇḍa",
+    "statement": "Rāma kills Rāvaṇa; the poem makes the battle a display of Rāma’s divine līlā.",
+    "sources": [
+     {
+      "source": "src:manas-sanskritdocuments",
+      "locator": "Laṅkākāṇḍa",
+      "url": "https://sanskritdocuments.org/doc_z_otherlang_hindi/manas6_i.html"
+     },
+     {
+      "source": "src:lutgendorf-1991"
+     }
+    ],
+    "status": "source-checked"
+   },
+   {
+    "text": "text:paumacariya",
+    "locator": "final battle",
+    "statement": "Lakṣmaṇa kills Rāvaṇa, as in all Jain universal history the Vāsudeva kills the Prativāsudeva; Rāma, a non-violent Baladeva, later becomes a monk and attains liberation.",
+    "sources": [
+     {
+      "source": "src:kulkarni-1990"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vimalsuri"
+     }
+    ],
+    "status": "source-checked"
+   },
+   {
+    "text": "text:adbhuta-ramayana",
+    "locator": "sarga 23 (per Wikipedia)",
+    "statement": "After the ten-headed Rāvaṇa is dead, his thousand-headed brother Sahasra-Rāvaṇa strikes Rāma down; Sītā takes the form of Mahākālī and destroys him.",
+    "sources": [
+     {
+      "source": "src:grierson-1926"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Adbhuta_Ramayana"
+     }
+    ],
+    "status": "recall"
+   },
+   {
+    "text": "text:vilanka-ramayana",
+    "statement": "Śāraḷā Dāsa narrates a further war against a thousand-headed Rāvaṇa of Vilaṅkā; who strikes the final blow was not checked.",
+    "sources": [
+     {
+      "source": "src:smith-wl-1988"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sarala_Das"
+     }
+    ],
+    "status": "unresolved"
+   },
+   {
+    "text": "text:ramakien",
+    "locator": "death of Thotsakan",
+    "statement": "Phra Ram’s arrows cannot kill Thotsakan until Hanuman obtains and crushes the heart that Thotsakan has kept outside his body.",
+    "sources": [
+     {
+      "source": "src:olsson-1968"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ramakien"
+     }
+    ],
+    "status": "recall"
+   },
+   {
+    "text": "text:dasaratha-jataka",
+    "locator": "Jātaka 461",
+    "statement": "There is no Rāvaṇa and no war: the story ends with the return from exile and Rāma-paṇḍita’s long reign.",
+    "sources": [
+     {
+      "source": "src:fausboll-1871",
+      "url": "https://ancient-buddhist-texts.net/English-Texts/Jataka/461.htm"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "agent": "regional"
+ },
+ {
+  "id": "cmp:murugan-skanda",
+  "title": "Murukaṉ and Skanda across texts",
+  "subject": "deity:murugan",
+  "question": "How is the Tamil god Murukaṉ presented, and when does he carry Skanda’s attributes?",
+  "rows": [
+   {
+    "text": "text:tolkappiyam",
+    "locator": "Tol. Poruḷ., Akattiṇaiyiyal 5",
+    "statement": "Cēyōṉ, “the red one,” presides over the hill (kuṟiñci) landscape, one of four deities assigned to landscapes; no mythology is given. The commentator Nacciṉārkkiṉiyar glosses him as “red Murukaṉ.”",
+    "sources": [
+     {
+      "source": "src:tolkappiyam-pm",
+      "locator": "Poruḷatikāram, Akattiṇaiyiyal 5",
+      "url": "https://projectmadurai.org/pm_etexts/utf8/pmuni0500_01.html"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:paripatal",
+    "locator": "poems to Cevvēḷ",
+    "statement": "Eight surviving poems praise Cevvēḷ (Murukaṉ) at Tiruparaṅkuṉṟam near Madurai and know the northern myth of his birth.",
+    "sources": [
+     {
+      "source": "src:zvelebil-1974"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Paripāṭal"
+     }
+    ],
+    "status": "recall"
+   },
+   {
+    "text": "text:tirumurukarruppatai",
+    "locator": "passim",
+    "statement": "A guide-poem leading the devotee to Murukaṉ at six places; he has six faces and twelve arms, rides the peacock, wields the vēl and is linked to the Kṛttikā mothers — Skanda iconography in a Tamil poem.",
+    "sources": [
+     {
+      "source": "src:zvelebil-1973"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tirumurukarruppatai"
+     }
+    ],
+    "status": "recall"
+   },
+   {
+    "text": "text:silappatikaram",
+    "locator": "canto 24",
+    "statement": "Hill-dwellers dance the kuṉṟakkuravai for Murukaṉ, who is also linked to possession-dance (veṟiyāṭṭu) of the Vēlaṉ priest.",
+    "sources": [
+     {
+      "source": "src:parthasarathy-1993"
+     }
+    ],
+    "status": "recall"
+   },
+   {
+    "text": "text:kanda-puranam",
+    "locator": "passim",
+    "statement": "A full Tamil Skanda Purāṇa: birth from Śiva’s fiery seed, the war against Cūrapatmaṉ, and marriages to Teyvāṉai (Indra’s daughter) and the Tamil hunter girl Vaḷḷi.",
+    "sources": [
+     {
+      "source": "src:clothey-1978"
+     }
+    ],
+    "status": "source-checked"
+   },
+   {
+    "text": "text:mahabharata",
+    "locator": "MBh Āraṇyakaparvan, Skanda episode",
+    "statement": "In the Sanskrit epic Skanda is born of Agni (and Svāhā) or of Śiva, raised by the Kṛttikās, and made general of the gods; there is no Tamil Vaḷḷi.",
+    "sources": [
+     {
+      "source": "src:mann-2012"
+     },
+     {
+      "source": "src:mbh-critical-edition",
+      "locator": "Āraṇyakaparvan, Skanda episode (CE adhyāyas not checked)"
+     }
+    ],
+    "status": "recall"
+   }
+  ],
+  "note": "Read in sequence these rows support the scholarly account of convergence (Zvelebil 1973; Clothey 1978): a Tamil hill god acquires Skanda’s myth and iconography by the late Caṅkam period. The identification is recorded as IDENTIFIED_WITH, not as a merger.",
+  "agent": "regional"
+ }
 ]

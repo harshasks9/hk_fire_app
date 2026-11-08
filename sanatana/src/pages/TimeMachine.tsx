@@ -189,8 +189,9 @@ function Figure({ subject }: { subject?: string }) {
   if (!id) return null
   const n = store.byId.get(id)!
   const by = items.filter((i) => i.start <= clock.year)
-  const textual = by.filter((i) => i.lane === 'text' || i.lane === 'reception')
-  const material = by.filter((i) => i.lane === 'material')
+  const textual = by.filter((i) => !i.disputed && (i.lane === 'text' || i.lane === 'reception'))
+  const material = by.filter((i) => !i.disputed && i.lane === 'material')
+  const contested = by.filter((i) => i.disputed)
   return (
     <div className="space-y-4">
       <div className="flex flex-wrap items-center gap-2">
@@ -216,6 +217,10 @@ function Figure({ subject }: { subject?: string }) {
           <ul className="mt-1 space-y-0.5">{textual.map((i) => <li key={i.key} className="text-[12.5px]"><a className="hover:underline" href={entityHref(i.node.id)}>{i.node.name}</a> <span className="text-night-ink-2">{i.label}{i.via ? ` · via ${i.via.name}` : ''}</span></li>)}</ul>
           <div className="mt-4"><span className="display text-3xl font-semibold">{material.length}</span> dated physical representations or references</div>
           <ul className="mt-1 space-y-0.5">{material.map((i) => <li key={i.key} className="text-[12.5px]"><a className="hover:underline" href={entityHref(i.node.id)}>{i.node.name}</a> <span className="text-night-ink-2">{i.label}{i.via ? ` · via ${i.via.name}` : ''}</span></li>)}</ul>
+          {contested.length ? (
+            <div className="mt-4"><div className="text-[12px] text-night-ink-2">Not counted — linked only by a disputed identification:</div>
+              <ul className="mt-1 space-y-0.5">{contested.map((i) => <li key={i.key} className="text-[12.5px] opacity-80"><a className="hover:underline" href={entityHref(i.node.id)}>{i.node.name}</a> <span className="text-night-ink-2">{i.label}</span></li>)}</ul></div>
+          ) : null}
           <p className="text-[11.5px] text-night-ink-2 mt-4 leading-relaxed">A textual date is an estimate of composition, not of the oldest copy; a material date establishes that a representation existed then — not that narrated events occurred, and not that the tradition began then.</p>
         </div>
       </div>
@@ -275,7 +280,7 @@ function Material({ subject }: { subject?: string }) {
             ) : null}
             <div className="eyebrow !text-night-ink-2">Appearing in the century to {yearLabel(clock.year)}</div>
             {century.length ? <ul className="mt-2 space-y-1">{century.map((n) => <li key={n.id}><button className="text-left hover:underline" onClick={() => setSel(n.id)}><Glyph family={n.family} size={9} dark /> {n.name}</button> <span className="text-night-ink-2 text-[12px]">{materialDate(n)!.label}</span></li>)}</ul> : <p className="text-night-ink-2 mt-2">No dated record in the dataset begins in this century. Play or drag the slider.</p>}
-            <p className="text-[11.5px] text-night-ink-2 mt-4 leading-relaxed">Points appear at the earliest material date of the surviving structure or object — not the date a tradition assigns to its founding, which may be far earlier.</p>
+            <p className="text-[11.5px] text-night-ink-2 mt-4 leading-relaxed">Points appear at the earliest dated material phase of a structure or object — a surviving building, a documented earlier building, or an inscription on site — never at the date a tradition assigns to its founding, nor at a recorded destruction. Disputed dates are used only when no other date exists.</p>
           </div>
         )}
       </div>

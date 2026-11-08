@@ -18,7 +18,7 @@ export interface GNode extends Entity {
     texts: number
     corpora: string[]
     earliestText?: { year: number; label: string; via: string }
-    earliestMaterial?: { year: number; label: string; via: string }
+    earliestMaterial?: { year: number; label: string; via: string; ec?: number; disputed?: boolean }
   }
 }
 export type GEdge = Assertion
@@ -100,7 +100,11 @@ function index(data: GraphData): Store {
   /** For texts the default is the most conservative recorded scholarly view (latest start), so a
    *  single early minority estimate never sets a text's displayed date; `earliest` is explicit. */
   const dateOf = (id: string, system: DateClaim['system'] = 'scholarly-textual', mode: 'conservative' | 'earliest' = system === 'scholarly-textual' ? 'conservative' : 'earliest') => {
-    const pick = (n?: GNode) => (n?.dates ?? []).filter((d) => d.system === system && typeof d.start === 'number').sort((a, b) => (mode === 'earliest' ? a.start! - b.start! : b.start! - a.start!))[0]
+    const pick = (n?: GNode) => {
+      const ds = (n?.dates ?? []).filter((d) => d.system === system && typeof d.start === 'number')
+      const firm = ds.filter((d) => d.certainty !== 'disputed')
+      return (firm.length ? firm : ds).sort((a, b) => (mode === 'earliest' ? a.start! - b.start! : b.start! - a.start!))[0]
+    }
     const n = byId.get(id)
     return pick(n) ?? (n?.type === 'passage' ? pick(textOf(id)) : undefined)
   }

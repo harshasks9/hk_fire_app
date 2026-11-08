@@ -18,7 +18,7 @@ export interface Issue {
   message: string
 }
 
-const STATUSES = new Set(['verified-online', 'source-checked', 'recall', 'unresolved', 'disputed'])
+const STATUSES = new Set(['verified-online', 'source-checked', 'reference-checked', 'recall', 'unresolved', 'disputed'])
 const CONFIDENCES = new Set(['high', 'medium', 'low'])
 const SYSTEMS = new Set(['scholarly-textual', 'material', 'reception', 'traditional'])
 const CERTAINTY = new Set(['secure', 'estimated', 'disputed'])

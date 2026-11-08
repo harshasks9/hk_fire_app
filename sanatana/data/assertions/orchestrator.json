@@ -1,0 +1,182 @@
+[
+ {
+  "id": "orchestrator:1",
+  "s": "deity:shiva",
+  "p": "APPEARS_IN",
+  "o": "text:shvetashvatara-upanishad",
+  "qualifiers": {
+   "role": "the one supreme lord, Rudra–Śiva",
+   "note": "derived from vedic:215"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-shvetashvatara",
+    "locator": "ŚvU 3.11; 4.10; 4.14",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_zvetAzvataropaniSad.txt",
+    "quote": "sarvavyāpī sa bhagavāṃs tasmāt sarvagataḥ śivaḥ"
+   },
+   {
+    "source": "src:chakravarti-1986"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "orchestrator",
+  "rationale": "The Upaniṣad applies śiva and maheśvara to the supreme Rudra (ŚvU 3.11; 4.10; 4.14), as verified for vedic:215.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "orchestrator:2",
+  "s": "deity:shiva",
+  "p": "APPEARS_IN",
+  "o": "text:mahabharata",
+  "qualifiers": {
+   "role": "Kirāta episode and elsewhere",
+   "note": "derived from epic:810"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil-mbh-ce",
+    "locator": "MBh (CE) 3.40–41",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "orchestrator",
+  "rationale": "Passage verified for epic:810 (MBh (CE) 3.40–41).",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "orchestrator:3",
+  "s": "deity:shiva",
+  "p": "APPEARS_IN",
+  "o": "text:linga-purana",
+  "qualifiers": {
+   "role": "the Liṅgodbhava",
+   "note": "derived from purana:490"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "LiP 1.17.37–45",
+    "edition": "Venkatesvara Press ed. (Bombay 1906); GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_liGgapurANa1-108.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "orchestrator",
+  "rationale": "Passage verified for purana:490 (LiP 1.17.37–45).",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "orchestrator:4",
+  "s": "deity:shiva",
+  "p": "APPEARS_IN",
+  "o": "text:bhagavata-purana",
+  "qualifiers": {
+   "role": "Dakṣa’s sacrifice",
+   "note": "derived from purana:430"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 4.2–7",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "orchestrator",
+  "rationale": "Passage verified for purana:430 (BhP 4.2–7).",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "orchestrator:5",
+  "s": "char:ila",
+  "p": "IDENTIFIED_WITH",
+  "o": "char:ida",
+  "qualifiers": {
+   "tradition": "Purāṇic genealogy and modern scholarship"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP (crit.) 4.1.10–13",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+    "quote": "tatrāpahute hotur apacārād ilā nāma kanyā babhūva"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.1",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "orchestrator",
+  "rationale": "Both records discuss the equivalence of the Purāṇic Ilā with the Śatapatha’s Iḍā; recorded as an assertion, not a merge.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "orchestrator:6",
+  "s": "ins:rajarajeshvaram-inscriptions",
+  "p": "INSCRIBED_AT",
+  "o": "temple:brihadisvara",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:hultzsch-sii2"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "orchestrator",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "orchestrator:7",
+  "s": "ins:rajarajeshvaram-inscriptions",
+  "p": "REFERS_TO",
+  "o": "person:rajaraja-i",
+  "evidenceClass": 3,
+  "sources": [
+   {
+    "source": "src:hultzsch-sii2"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "orchestrator",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "orchestrator:8",
+  "s": "ins:rajarajeshvaram-inscriptions",
+  "p": "DOCUMENTED_BY",
+  "o": "inst:asi",
+  "qualifiers": {
+   "note": "published in South Indian Inscriptions vol. II (Archaeological Survey of India)"
+  },
+  "evidenceClass": 4,
+  "sources": [
+   {
+    "source": "src:hultzsch-sii2"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "orchestrator",
+  "lastVerified": "2026-11-08"
+ }
+]

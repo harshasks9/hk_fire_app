@@ -70,9 +70,9 @@ export function AttestationChart({ id, includeIdentified = true, cursor, dark = 
               return (
                 <a key={it.key} href={entityHref(it.node.id)} onMouseEnter={() => setHover(it)} onMouseLeave={() => setHover(null)} onFocus={() => setHover(it)} onBlur={() => setHover(null)}>
                   <rect x={x0} y={l.top + r * ROW} width={x1 - x0} height={ROW - 4} rx={3}
-                    fill={color(it)} fillOpacity={later ? 0.12 : it.certainty === 'disputed' ? 0.35 : 0.85}
-                    stroke={color(it)} strokeDasharray={it.certainty === 'disputed' || it.traditional ? '3 2' : undefined} strokeWidth={1} />
-                  <title>{`${it.node.name} — ${it.label} (${it.certainty})`}</title>
+                    fill={color(it)} fillOpacity={later ? 0.12 : it.disputed ? 0.08 : it.certainty === 'disputed' ? 0.35 : 0.85}
+                    stroke={color(it)} strokeDasharray={it.certainty === 'disputed' || it.traditional || it.disputed ? '3 2' : undefined} strokeWidth={1} />
+                  <title>{`${it.node.name} — ${it.label} (${it.certainty})${it.disputed ? ' — disputed identification, not counted' : ''}`}</title>
                 </a>
               )
             })}
@@ -94,7 +94,7 @@ export function AttestationChart({ id, includeIdentified = true, cursor, dark = 
       ) : null}
       <div className="flex flex-wrap gap-x-4 gap-y-1 text-[11px] mt-1" style={{ color: ink3 }}>
         <span>Bars span the full scholarly or material date range.</span>
-        <span>Dashed: disputed date, or a traditional association.</span>
+        <span>Dashed: disputed date, traditional association, or (hollow) a disputed identification that is shown but not counted.</span>
         {cursor !== undefined && cursor !== null ? <span>Faded: begins after the cursor.</span> : null}
       </div>
     </div>

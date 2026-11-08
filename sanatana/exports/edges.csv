@@ -120,7 +120,7 @@ text:ramakien,RETELLS,text:valmiki-ramayana,epic:118,5,medium,source-checked,,,,
 text:reamker,RETELLS,text:valmiki-ramayana,epic:119,5,medium,source-checked,,,,src:richman-1991; src:ramanujan-1991,Ramanujan (1991) stresses that many tellings draw on a shared pool of Rāma tradition rather than on Vālmīki alone.,epic
 text:paumacariya,RETELLS,text:valmiki-ramayana,epic:120,5,medium,source-checked,,,,src:richman-1991; src:ramanujan-1991,It is a deliberate counter-version rather than a retelling in the narrow sense.,epic
 text:dasaratha-jataka,DERIVED_FROM,text:valmiki-ramayana,epic:121,7,low,disputed,,,,src:richman-1991; src:brockington-1998,"Some (Weber) argued the Jātaka preserves an older form on which Vālmīki drew; most now see independent use of a common Rāma story, with the Jātaka prose comparatively late.",epic
-text:jnaneshwari,COMMENTARY_ON,text:bhagavad-gita,epic:122,5,high,recall,,,,src:wikipedia,,epic
+text:jnaneshwari,COMMENTARY_ON,text:bhagavad-gita,epic:122,5,medium,recall,,,,src:wikipedia,,epic
 text:vishnu-purana,DERIVED_FROM,text:harivamsha,epic:123,5,medium,recall,,,,src:matchett-2001; src:hazra-1940,Some argue both depend on a common source; the direction of dependence is not settled for every episode.,epic
 text:bhagavata-purana,DERIVED_FROM,text:harivamsha,epic:124,5,medium,recall,,,,src:matchett-2001; src:hardy-1983,Hardy (1983) emphasises the Bhāgavata’s debt to South Indian Āḻvār devotion as well as to the Sanskrit Kṛṣṇa narratives.,epic
 char:dasharatha,PARENT_OF,char:rama,epic:125,1,high,verified-online,,text:valmiki-ramayana,,src:gretil-vr-ce @ VR (CE) 1.17.6,,epic
@@ -221,8 +221,8 @@ char:dhritarashtra,PARENT_OF,char:duryodhana,epic:219,1,high,verified-online,,te
 char:gandhari,PARENT_OF,char:duryodhana,epic:220,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.107.37; src:gretil-mbh-ce @ MBh (CE) 1.108.2,,epic
 char:dhritarashtra,PARENT_OF,char:duhshasana,epic:221,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.107.37; src:gretil-mbh-ce @ MBh (CE) 1.108.2,,epic
 char:gandhari,PARENT_OF,char:duhshasana,epic:222,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.107.37; src:gretil-mbh-ce @ MBh (CE) 1.108.2,,epic
-char:dhritarashtra,PARENT_OF,char:duhshala,epic:223,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.107.37; src:gretil-mbh-ce @ MBh (CE) 1.108.2,,epic
-char:gandhari,PARENT_OF,char:duhshala,epic:224,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.107.37; src:gretil-mbh-ce @ MBh (CE) 1.108.2,,epic
+char:dhritarashtra,PARENT_OF,char:duhshala,epic:223,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.107.37; src:gretil-mbh-ce @ MBh (CE) 1.108.18,,epic
+char:gandhari,PARENT_OF,char:duhshala,epic:224,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.107.37; src:gretil-mbh-ce @ MBh (CE) 1.108.18,,epic
 char:dhritarashtra,PARENT_OF,char:yuyutsu,epic:225,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.107.36,,epic
 char:duryodhana,SIBLING_OF,char:duhshasana,epic:226,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.108.2,,epic
 char:duryodhana,SIBLING_OF,char:duhshala,epic:227,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.107.37,,epic
@@ -333,61 +333,61 @@ char:nala,SPOUSE_OF,char:damayanti,epic:331,1,high,verified-online,,text:mahabha
 char:savitri,SPOUSE_OF,char:satyavan,epic:332,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 3.278.10,,epic
 char:ashvapati,PARENT_OF,char:savitri,epic:333,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 3.277.14; src:gretil-mbh-ce @ MBh (CE) 3.278.5,,epic
 char:dyumatsena,PARENT_OF,char:satyavan,epic:334,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 3.278.7,,epic
-char:rama,MEMBER_OF,lin:suryavamsha,epic:335,1,high,verified-online,,text:valmiki-ramayana,,src:gretil-vr-ce @ VR (CE) 1.1.8,,epic
-char:lakshmana,MEMBER_OF,lin:suryavamsha,epic:336,1,high,verified-online,,text:valmiki-ramayana,,src:gretil-vr-ce @ VR (CE) 1.1.8,,epic
-char:bharata-ramayana,MEMBER_OF,lin:suryavamsha,epic:337,1,high,verified-online,,text:valmiki-ramayana,,src:gretil-vr-ce @ VR (CE) 1.1.8,,epic
-char:shatrughna,MEMBER_OF,lin:suryavamsha,epic:338,1,high,verified-online,,text:valmiki-ramayana,,src:gretil-vr-ce @ VR (CE) 1.1.8,,epic
-char:dasharatha,MEMBER_OF,lin:suryavamsha,epic:339,1,high,verified-online,,text:valmiki-ramayana,,src:gretil-vr-ce @ VR (CE) 1.1.8,,epic
-char:lava,MEMBER_OF,lin:suryavamsha,epic:340,1,high,verified-online,,text:valmiki-ramayana,,src:gretil-vr-ce @ VR (CE) 1.1.8,,epic
-char:kusha,MEMBER_OF,lin:suryavamsha,epic:341,1,high,verified-online,,text:valmiki-ramayana,,src:gretil-vr-ce @ VR (CE) 1.1.8,,epic
-char:ravana,MEMBER_OF,lin:paulastya,epic:342,1,high,verified-online,,text:valmiki-ramayana,,src:gretil-vr-ce @ VR (CE) 7.9.3–27; src:gretil-mbh-ce @ MBh (CE) 3.259.1,,epic
-char:kumbhakarna,MEMBER_OF,lin:paulastya,epic:343,1,high,verified-online,,text:valmiki-ramayana,,src:gretil-vr-ce @ VR (CE) 7.9.3–27; src:gretil-mbh-ce @ MBh (CE) 3.259.1,,epic
-char:vibhishana,MEMBER_OF,lin:paulastya,epic:344,1,high,verified-online,,text:valmiki-ramayana,,src:gretil-vr-ce @ VR (CE) 7.9.3–27; src:gretil-mbh-ce @ MBh (CE) 3.259.1,,epic
-char:shurpanakha,MEMBER_OF,lin:paulastya,epic:345,1,high,verified-online,,text:valmiki-ramayana,,src:gretil-vr-ce @ VR (CE) 7.9.3–27; src:gretil-mbh-ce @ MBh (CE) 3.259.1,,epic
-char:kubera,MEMBER_OF,lin:paulastya,epic:346,1,high,verified-online,,text:valmiki-ramayana,,src:gretil-vr-ce @ VR (CE) 7.9.3–27; src:gretil-mbh-ce @ MBh (CE) 3.259.1,,epic
-char:indrajit,MEMBER_OF,lin:paulastya,epic:347,1,high,verified-online,,text:valmiki-ramayana,,src:gretil-vr-ce @ VR (CE) 7.9.3–27; src:gretil-mbh-ce @ MBh (CE) 3.259.1,,epic
-char:vishravas,MEMBER_OF,lin:paulastya,epic:348,1,high,verified-online,,text:valmiki-ramayana,,src:gretil-vr-ce @ VR (CE) 7.9.3–27; src:gretil-mbh-ce @ MBh (CE) 3.259.1,,epic
-char:vali,MEMBER_OF,lin:vanara-kishkindha,epic:349,1,high,verified-online,,text:valmiki-ramayana,,src:gretil-vr-ce @ VR (CE) 4.25.32; src:gretil-vr-ce @ VR (CE) 4.65.8,,epic
-char:sugriva,MEMBER_OF,lin:vanara-kishkindha,epic:350,1,high,verified-online,,text:valmiki-ramayana,,src:gretil-vr-ce @ VR (CE) 4.25.32; src:gretil-vr-ce @ VR (CE) 4.65.8,,epic
-char:hanuman,MEMBER_OF,lin:vanara-kishkindha,epic:351,1,high,verified-online,,text:valmiki-ramayana,,src:gretil-vr-ce @ VR (CE) 4.25.32; src:gretil-vr-ce @ VR (CE) 4.65.8,,epic
-char:angada,MEMBER_OF,lin:vanara-kishkindha,epic:352,1,high,verified-online,,text:valmiki-ramayana,,src:gretil-vr-ce @ VR (CE) 4.25.32; src:gretil-vr-ce @ VR (CE) 4.65.8,,epic
-char:tara,MEMBER_OF,lin:vanara-kishkindha,epic:353,1,high,verified-online,,text:valmiki-ramayana,,src:gretil-vr-ce @ VR (CE) 4.25.32; src:gretil-vr-ce @ VR (CE) 4.65.8,,epic
-char:nala-vanara,MEMBER_OF,lin:vanara-kishkindha,epic:354,1,high,verified-online,,text:valmiki-ramayana,,src:gretil-vr-ce @ VR (CE) 4.25.32; src:gretil-vr-ce @ VR (CE) 4.65.8,,epic
-char:kesari,MEMBER_OF,lin:vanara-kishkindha,epic:355,1,high,verified-online,,text:valmiki-ramayana,,src:gretil-vr-ce @ VR (CE) 4.25.32; src:gretil-vr-ce @ VR (CE) 4.65.8,,epic
-char:shantanu,MEMBER_OF,lin:kuru,epic:356,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.61.69; src:gretil-mbh-ce @ MBh (CE) 1.95.2–5; src:gretil-mbh-ce @ MBh (CE) 1.100,,epic
-char:bhishma,MEMBER_OF,lin:kuru,epic:357,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.61.69; src:gretil-mbh-ce @ MBh (CE) 1.95.2–5; src:gretil-mbh-ce @ MBh (CE) 1.100,,epic
-char:vichitravirya,MEMBER_OF,lin:kuru,epic:358,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.61.69; src:gretil-mbh-ce @ MBh (CE) 1.95.2–5; src:gretil-mbh-ce @ MBh (CE) 1.100,,epic
-char:chitrangada-kuru,MEMBER_OF,lin:kuru,epic:359,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.61.69; src:gretil-mbh-ce @ MBh (CE) 1.95.2–5; src:gretil-mbh-ce @ MBh (CE) 1.100,,epic
-char:dhritarashtra,MEMBER_OF,lin:kuru,epic:360,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.61.69; src:gretil-mbh-ce @ MBh (CE) 1.95.2–5; src:gretil-mbh-ce @ MBh (CE) 1.100,,epic
-char:pandu,MEMBER_OF,lin:kuru,epic:361,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.61.69; src:gretil-mbh-ce @ MBh (CE) 1.95.2–5; src:gretil-mbh-ce @ MBh (CE) 1.100,,epic
-char:yudhishthira,MEMBER_OF,lin:pandavas,epic:362,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.114–115; src:gretil-mbh-ce @ MBh (CE) 1.1.8,,epic
-char:bhima,MEMBER_OF,lin:pandavas,epic:363,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.114–115; src:gretil-mbh-ce @ MBh (CE) 1.1.8,,epic
-char:arjuna,MEMBER_OF,lin:pandavas,epic:364,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.114–115; src:gretil-mbh-ce @ MBh (CE) 1.1.8,,epic
-char:nakula,MEMBER_OF,lin:pandavas,epic:365,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.114–115; src:gretil-mbh-ce @ MBh (CE) 1.1.8,,epic
-char:sahadeva,MEMBER_OF,lin:pandavas,epic:366,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.114–115; src:gretil-mbh-ce @ MBh (CE) 1.1.8,,epic
-char:abhimanyu,MEMBER_OF,lin:pandavas,epic:367,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.114–115; src:gretil-mbh-ce @ MBh (CE) 1.1.8,,epic
-char:parikshit,MEMBER_OF,lin:pandavas,epic:368,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.114–115; src:gretil-mbh-ce @ MBh (CE) 1.1.8,,epic
-char:janamejaya,MEMBER_OF,lin:pandavas,epic:369,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.114–115; src:gretil-mbh-ce @ MBh (CE) 1.1.8,,epic
-char:duryodhana,MEMBER_OF,lin:kauravas,epic:370,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.107.36–37; src:gretil-mbh-ce @ MBh (CE) 1.108.2,,epic
-char:duhshasana,MEMBER_OF,lin:kauravas,epic:371,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.107.36–37; src:gretil-mbh-ce @ MBh (CE) 1.108.2,,epic
-char:duhshala,MEMBER_OF,lin:kauravas,epic:372,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.107.36–37; src:gretil-mbh-ce @ MBh (CE) 1.108.2,,epic
-char:yuyutsu,MEMBER_OF,lin:kauravas,epic:373,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.107.36–37; src:gretil-mbh-ce @ MBh (CE) 1.108.2,,epic
-char:krishna,MEMBER_OF,lin:yadava,epic:374,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.104.1; src:gretil-mbh-ce @ MBh (CE) 1.211.8; src:gretil-mbh-ce @ MBh (CE) 1.61.73; src:gretil-mbh-ce @ MBh (CE) 16.4,,epic
-char:balarama,MEMBER_OF,lin:yadava,epic:375,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.104.1; src:gretil-mbh-ce @ MBh (CE) 1.211.8; src:gretil-mbh-ce @ MBh (CE) 1.61.73; src:gretil-mbh-ce @ MBh (CE) 16.4,,epic
-char:vasudeva-father,MEMBER_OF,lin:yadava,epic:376,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.104.1; src:gretil-mbh-ce @ MBh (CE) 1.211.8; src:gretil-mbh-ce @ MBh (CE) 1.61.73; src:gretil-mbh-ce @ MBh (CE) 16.4,,epic
-char:subhadra,MEMBER_OF,lin:yadava,epic:377,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.104.1; src:gretil-mbh-ce @ MBh (CE) 1.211.8; src:gretil-mbh-ce @ MBh (CE) 1.61.73; src:gretil-mbh-ce @ MBh (CE) 16.4,,epic
-char:pradyumna,MEMBER_OF,lin:yadava,epic:378,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.104.1; src:gretil-mbh-ce @ MBh (CE) 1.211.8; src:gretil-mbh-ce @ MBh (CE) 1.61.73; src:gretil-mbh-ce @ MBh (CE) 16.4,,epic
-char:samba,MEMBER_OF,lin:yadava,epic:379,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.104.1; src:gretil-mbh-ce @ MBh (CE) 1.211.8; src:gretil-mbh-ce @ MBh (CE) 1.61.73; src:gretil-mbh-ce @ MBh (CE) 16.4,,epic
-char:satyaki,MEMBER_OF,lin:yadava,epic:380,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.104.1; src:gretil-mbh-ce @ MBh (CE) 1.211.8; src:gretil-mbh-ce @ MBh (CE) 1.61.73; src:gretil-mbh-ce @ MBh (CE) 16.4,,epic
-char:kritavarman,MEMBER_OF,lin:yadava,epic:381,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.104.1; src:gretil-mbh-ce @ MBh (CE) 1.211.8; src:gretil-mbh-ce @ MBh (CE) 1.61.73; src:gretil-mbh-ce @ MBh (CE) 16.4,,epic
-char:ugrasena,MEMBER_OF,lin:yadava,epic:382,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.104.1; src:gretil-mbh-ce @ MBh (CE) 1.211.8; src:gretil-mbh-ce @ MBh (CE) 1.61.73; src:gretil-mbh-ce @ MBh (CE) 16.4,,epic
-char:kamsa,MEMBER_OF,lin:yadava,epic:383,1,medium,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.104.1; src:gretil-mbh-ce @ MBh (CE) 1.211.8; src:gretil-mbh-ce @ MBh (CE) 1.61.73; src:gretil-mbh-ce @ MBh (CE) 16.4,,epic
-char:shura-yadava,MEMBER_OF,lin:yadava,epic:384,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.104.1; src:gretil-mbh-ce @ MBh (CE) 1.211.8; src:gretil-mbh-ce @ MBh (CE) 1.61.73; src:gretil-mbh-ce @ MBh (CE) 16.4,,epic
-char:kunti,MEMBER_OF,lin:yadava,epic:385,1,medium,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.104.1; src:gretil-mbh-ce @ MBh (CE) 1.211.8; src:gretil-mbh-ce @ MBh (CE) 1.61.73; src:gretil-mbh-ce @ MBh (CE) 16.4,,epic
-char:drupada,MEMBER_OF,lin:pancala,epic:386,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.155.49–51; src:gretil-mbh-ce @ MBh (CE) 1.128.15,,epic
-char:dhrishtadyumna,MEMBER_OF,lin:pancala,epic:387,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.155.49–51; src:gretil-mbh-ce @ MBh (CE) 1.128.15,,epic
-char:shikhandi,MEMBER_OF,lin:pancala,epic:388,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.155.49–51; src:gretil-mbh-ce @ MBh (CE) 1.128.15,,epic
-char:draupadi,MEMBER_OF,lin:pancala,epic:389,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.155.49–51; src:gretil-mbh-ce @ MBh (CE) 1.128.15,,epic
+char:rama,MEMBER_OF,lin:suryavamsha,epic:335,1,medium,source-checked,,text:valmiki-ramayana,,"src:gretil-vr-ce @ VR (CE), passim (verse-level locator withdrawn)",,epic
+char:lakshmana,MEMBER_OF,lin:suryavamsha,epic:336,1,medium,source-checked,,text:valmiki-ramayana,,"src:gretil-vr-ce @ VR (CE), passim (verse-level locator withdrawn)",,epic
+char:bharata-ramayana,MEMBER_OF,lin:suryavamsha,epic:337,1,medium,source-checked,,text:valmiki-ramayana,,"src:gretil-vr-ce @ VR (CE), passim (verse-level locator withdrawn)",,epic
+char:shatrughna,MEMBER_OF,lin:suryavamsha,epic:338,1,medium,source-checked,,text:valmiki-ramayana,,"src:gretil-vr-ce @ VR (CE), passim (verse-level locator withdrawn)",,epic
+char:dasharatha,MEMBER_OF,lin:suryavamsha,epic:339,1,medium,source-checked,,text:valmiki-ramayana,,"src:gretil-vr-ce @ VR (CE), passim (verse-level locator withdrawn)",,epic
+char:lava,MEMBER_OF,lin:suryavamsha,epic:340,1,medium,source-checked,,text:valmiki-ramayana,,"src:gretil-vr-ce @ VR (CE), passim (verse-level locator withdrawn)",,epic
+char:kusha,MEMBER_OF,lin:suryavamsha,epic:341,1,medium,source-checked,,text:valmiki-ramayana,,"src:gretil-vr-ce @ VR (CE), passim (verse-level locator withdrawn)",,epic
+char:ravana,MEMBER_OF,lin:paulastya,epic:342,1,medium,source-checked,,text:valmiki-ramayana,,"src:gretil-vr-ce @ VR (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn)",,epic
+char:kumbhakarna,MEMBER_OF,lin:paulastya,epic:343,1,medium,source-checked,,text:valmiki-ramayana,,"src:gretil-vr-ce @ VR (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn)",,epic
+char:vibhishana,MEMBER_OF,lin:paulastya,epic:344,1,medium,source-checked,,text:valmiki-ramayana,,"src:gretil-vr-ce @ VR (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn)",,epic
+char:shurpanakha,MEMBER_OF,lin:paulastya,epic:345,1,medium,source-checked,,text:valmiki-ramayana,,"src:gretil-vr-ce @ VR (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn)",,epic
+char:kubera,MEMBER_OF,lin:paulastya,epic:346,1,medium,source-checked,,text:valmiki-ramayana,,"src:gretil-vr-ce @ VR (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn)",,epic
+char:indrajit,MEMBER_OF,lin:paulastya,epic:347,1,medium,source-checked,,text:valmiki-ramayana,,"src:gretil-vr-ce @ VR (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn)",,epic
+char:vishravas,MEMBER_OF,lin:paulastya,epic:348,1,medium,source-checked,,text:valmiki-ramayana,,"src:gretil-vr-ce @ VR (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn)",,epic
+char:vali,MEMBER_OF,lin:vanara-kishkindha,epic:349,1,medium,source-checked,,text:valmiki-ramayana,,"src:gretil-vr-ce @ VR (CE), passim (verse-level locator withdrawn); src:gretil-vr-ce @ VR (CE), passim (verse-level locator withdrawn)",,epic
+char:sugriva,MEMBER_OF,lin:vanara-kishkindha,epic:350,1,medium,source-checked,,text:valmiki-ramayana,,"src:gretil-vr-ce @ VR (CE), passim (verse-level locator withdrawn); src:gretil-vr-ce @ VR (CE), passim (verse-level locator withdrawn)",,epic
+char:hanuman,MEMBER_OF,lin:vanara-kishkindha,epic:351,1,medium,source-checked,,text:valmiki-ramayana,,"src:gretil-vr-ce @ VR (CE), passim (verse-level locator withdrawn); src:gretil-vr-ce @ VR (CE), passim (verse-level locator withdrawn)",,epic
+char:angada,MEMBER_OF,lin:vanara-kishkindha,epic:352,1,medium,source-checked,,text:valmiki-ramayana,,"src:gretil-vr-ce @ VR (CE), passim (verse-level locator withdrawn); src:gretil-vr-ce @ VR (CE), passim (verse-level locator withdrawn)",,epic
+char:tara,MEMBER_OF,lin:vanara-kishkindha,epic:353,1,medium,source-checked,,text:valmiki-ramayana,,"src:gretil-vr-ce @ VR (CE), passim (verse-level locator withdrawn); src:gretil-vr-ce @ VR (CE), passim (verse-level locator withdrawn)",,epic
+char:nala-vanara,MEMBER_OF,lin:vanara-kishkindha,epic:354,1,medium,source-checked,,text:valmiki-ramayana,,"src:gretil-vr-ce @ VR (CE), passim (verse-level locator withdrawn); src:gretil-vr-ce @ VR (CE), passim (verse-level locator withdrawn)",,epic
+char:kesari,MEMBER_OF,lin:vanara-kishkindha,epic:355,1,medium,source-checked,,text:valmiki-ramayana,,"src:gretil-vr-ce @ VR (CE), passim (verse-level locator withdrawn); src:gretil-vr-ce @ VR (CE), passim (verse-level locator withdrawn)",,epic
+char:shantanu,MEMBER_OF,lin:kuru,epic:356,1,medium,source-checked,,text:mahabharata,,"src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn)",,epic
+char:bhishma,MEMBER_OF,lin:kuru,epic:357,1,medium,source-checked,,text:mahabharata,,"src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn)",,epic
+char:vichitravirya,MEMBER_OF,lin:kuru,epic:358,1,medium,source-checked,,text:mahabharata,,"src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn)",,epic
+char:chitrangada-kuru,MEMBER_OF,lin:kuru,epic:359,1,medium,source-checked,,text:mahabharata,,"src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn)",,epic
+char:dhritarashtra,MEMBER_OF,lin:kuru,epic:360,1,medium,source-checked,,text:mahabharata,,"src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn)",,epic
+char:pandu,MEMBER_OF,lin:kuru,epic:361,1,medium,source-checked,,text:mahabharata,,"src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn)",,epic
+char:yudhishthira,MEMBER_OF,lin:pandavas,epic:362,1,medium,source-checked,,text:mahabharata,,"src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn)",,epic
+char:bhima,MEMBER_OF,lin:pandavas,epic:363,1,medium,source-checked,,text:mahabharata,,"src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn)",,epic
+char:arjuna,MEMBER_OF,lin:pandavas,epic:364,1,medium,source-checked,,text:mahabharata,,"src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn)",,epic
+char:nakula,MEMBER_OF,lin:pandavas,epic:365,1,medium,source-checked,,text:mahabharata,,"src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn)",,epic
+char:sahadeva,MEMBER_OF,lin:pandavas,epic:366,1,medium,source-checked,,text:mahabharata,,"src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn)",,epic
+char:abhimanyu,MEMBER_OF,lin:pandavas,epic:367,1,medium,source-checked,,text:mahabharata,,"src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn)",,epic
+char:parikshit,MEMBER_OF,lin:pandavas,epic:368,1,medium,source-checked,,text:mahabharata,,"src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn)",,epic
+char:janamejaya,MEMBER_OF,lin:pandavas,epic:369,1,medium,source-checked,,text:mahabharata,,"src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn)",,epic
+char:duryodhana,MEMBER_OF,lin:kauravas,epic:370,1,medium,source-checked,,text:mahabharata,,"src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn)",,epic
+char:duhshasana,MEMBER_OF,lin:kauravas,epic:371,1,medium,source-checked,,text:mahabharata,,"src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn)",,epic
+char:duhshala,MEMBER_OF,lin:kauravas,epic:372,1,medium,source-checked,,text:mahabharata,,"src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn)",,epic
+char:yuyutsu,MEMBER_OF,lin:kauravas,epic:373,1,medium,source-checked,,text:mahabharata,,"src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn)",,epic
+char:krishna,MEMBER_OF,lin:yadava,epic:374,1,medium,source-checked,,text:mahabharata,,"src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn)",,epic
+char:balarama,MEMBER_OF,lin:yadava,epic:375,1,medium,source-checked,,text:mahabharata,,"src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn)",,epic
+char:vasudeva-father,MEMBER_OF,lin:yadava,epic:376,1,medium,source-checked,,text:mahabharata,,"src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn)",,epic
+char:subhadra,MEMBER_OF,lin:yadava,epic:377,1,medium,source-checked,,text:mahabharata,,"src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn)",,epic
+char:pradyumna,MEMBER_OF,lin:yadava,epic:378,1,medium,source-checked,,text:mahabharata,,"src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn)",,epic
+char:samba,MEMBER_OF,lin:yadava,epic:379,1,medium,source-checked,,text:mahabharata,,"src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn)",,epic
+char:satyaki,MEMBER_OF,lin:yadava,epic:380,1,medium,source-checked,,text:mahabharata,,"src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn)",,epic
+char:kritavarman,MEMBER_OF,lin:yadava,epic:381,1,medium,source-checked,,text:mahabharata,,"src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn)",,epic
+char:ugrasena,MEMBER_OF,lin:yadava,epic:382,1,medium,source-checked,,text:mahabharata,,"src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn)",,epic
+char:kamsa,MEMBER_OF,lin:yadava,epic:383,1,medium,source-checked,,text:mahabharata,,"src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn)",,epic
+char:shura-yadava,MEMBER_OF,lin:yadava,epic:384,1,medium,source-checked,,text:mahabharata,,"src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn)",,epic
+char:kunti,MEMBER_OF,lin:yadava,epic:385,1,medium,source-checked,,text:mahabharata,,"src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn)",,epic
+char:drupada,MEMBER_OF,lin:pancala,epic:386,1,medium,source-checked,,text:mahabharata,,"src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn)",,epic
+char:dhrishtadyumna,MEMBER_OF,lin:pancala,epic:387,1,medium,source-checked,,text:mahabharata,,"src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn)",,epic
+char:shikhandi,MEMBER_OF,lin:pancala,epic:388,1,medium,source-checked,,text:mahabharata,,"src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn)",,epic
+char:draupadi,MEMBER_OF,lin:pancala,epic:389,1,medium,source-checked,,text:mahabharata,,"src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn); src:gretil-mbh-ce @ MBh (CE), passim (verse-level locator withdrawn)",,epic
 char:bharata-dauhshanti,MEMBER_OF,lin:bharata-dynasty,epic:390,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.62.3; src:gretil-mbh-ce @ MBh (CE) 1.70.1,,epic
 char:dushyanta,MEMBER_OF,lin:bharata-dynasty,epic:391,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.62.3; src:gretil-mbh-ce @ MBh (CE) 1.70.1,,epic
 lin:pandavas,DESCENDANT_OF,lin:kuru,epic:392,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.114–115; src:gretil-mbh-ce @ MBh (CE) 1.70.1,,epic
@@ -411,7 +411,7 @@ char:krishna,AVATARA_OF,deity:vishnu,epic:409,1,high,source-checked,,text:hariva
 char:krishna,AVATARA_OF,deity:vishnu,epic:410,1,high,verified-online,,text:vishnu-purana,,src:gretil-vip-pathak @ ViP 5.1.60–64; src:matchett-2001,,epic
 char:krishna,AVATARA_OF,deity:vishnu,epic:411,1,medium,disputed,,text:bhagavata-purana,,src:gretil-bhp-etext @ BhP 1.3.28; src:gretil-bhp-etext @ BhP 2.7.26; src:bryant-2007,Gauḍīya Vaiṣṇavas (following Jīva Gosvāmī) read 1.3.28 as the governing statement: Kṛṣṇa is not an avatāra but the source (avatārin) of all avatāras including Viṣṇu; other Vaiṣṇava schools read Kṛṣṇa as a full (pūrṇa) avatāra of Viṣṇu–Nārāyaṇa.,epic
 deity:vishnu,FORM_OF,char:krishna,epic:412,6,high,source-checked,trad:gaudiya,,,src:gretil-bhp-etext @ BhP 1.3.28; src:bryant-2007; src:matchett-2001,,epic
-char:krishna,IDENTIFIED_WITH,deity:vasudeva,epic:413,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.61.90; src:gretil-mbh-ce @ MBh (CE) 5.129.1–12; src:gretil-mbh-ce @ MBh (CE) 6.23–40,,epic
+char:krishna,IDENTIFIED_WITH,deity:vasudeva,epic:413,5,medium,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 1.61.90; src:gretil-mbh-ce @ MBh (CE) 5.129.1–12; src:gretil-mbh-ce @ MBh (CE) 6.23–40,,epic
 char:krishna,IDENTIFIED_WITH,deity:vasudeva,epic:414,5,medium,source-checked,scholarly reconstruction (Bhandarkar; Raychaudhuri; Jaiswal; Bryant),,,src:bhandarkar-1913; src:raychaudhuri-1920; src:jaiswal-1981; src:bryant-2007,Others caution that the “fusion” model may overstate the separateness of these figures; Hiltebeitel reads the epic Kṛṣṇa as an integrated literary-theological creation.,epic
 char:krishna,IDENTIFIED_WITH,char:krishna-devakiputra,epic:415,7,low,disputed,some scholars (e.g. Raychaudhuri 1920),,,src:raychaudhuri-1920; src:bryant-2007,Many scholars think the shared name and mother’s name insufficient to identify him with the epic Kṛṣṇa; see claim:krishna-devakiputra-identity.,epic
 char:balarama,IDENTIFIED_WITH,deity:sankarshana,epic:416,1,high,verified-online,,text:mahabharata,,src:gretil-mbh-ce @ MBh (CE) 5.129.7,,epic
@@ -1146,76 +1146,76 @@ place:kishkindha,ASSOCIATED_WITH,place:hampi,epic:1144,6,medium,source-checked,l
 ins:heliodorus,REFERS_TO,deity:vasudeva,material:1,3,high,verified-online,,,dedicatee,src:wikipedia; src:salomon-1998; src:sircar-1965,,material
 ins:heliodorus,REFERS_TO,trad:bhagavata,material:2,3,high,verified-online,,,,src:wikipedia; src:jaiswal-1981,,material
 ins:heliodorus,COMMISSIONED_BY,person:heliodorus,material:3,3,high,verified-online,,,,src:wikipedia; src:salomon-1998,,material
-ins:heliodorus,INSCRIBED_AT,site:besnagar,material:4,3,high,verified-online,,,,src:wikipedia,,material
-ins:heliodorus,REFERS_TO,person:antialkidas,material:5,3,high,verified-online,,,,src:wikipedia; src:wikipedia,,material
-ins:heliodorus,REFERS_TO,person:bhagabhadra,material:6,3,high,verified-online,,,,src:wikipedia,,material
+ins:heliodorus,INSCRIBED_AT,site:besnagar,material:4,3,medium,reference-checked,,,,src:wikipedia,,material
+ins:heliodorus,REFERS_TO,person:antialkidas,material:5,3,medium,reference-checked,,,,src:wikipedia; src:wikipedia,,material
+ins:heliodorus,REFERS_TO,person:bhagabhadra,material:6,3,medium,reference-checked,,,,src:wikipedia,,material
 ins:heliodorus,DOCUMENTED_BY,person:alexander-cunningham,material:7,4,high,verified-online,,,,src:wikipedia; src:cunningham-1880,,material
-ins:heliodorus,DOCUMENTED_BY,person:john-marshall,material:8,4,high,verified-online,,,,src:wikipedia,,material
-ins:heliodorus,DOCUMENTED_BY,person:vs-sukthankar,material:9,5,medium,verified-online,,,,src:wikipedia,,material
-ins:heliodorus,DOCUMENTED_BY,person:dr-bhandarkar,material:10,4,high,verified-online,,,,src:wikipedia,,material
+ins:heliodorus,DOCUMENTED_BY,person:john-marshall,material:8,4,medium,reference-checked,,,,src:wikipedia,,material
+ins:heliodorus,DOCUMENTED_BY,person:vs-sukthankar,material:9,5,medium,reference-checked,,,,src:wikipedia,,material
+ins:heliodorus,DOCUMENTED_BY,person:dr-bhandarkar,material:10,4,medium,reference-checked,,,,src:wikipedia,,material
 person:heliodorus,DEVOTEE_OF,deity:vasudeva,material:11,3,high,verified-online,trad:bhagavata,,,src:wikipedia; src:jaiswal-1981,,material
-person:heliodorus,SERVES,person:antialkidas,material:12,3,high,verified-online,,,envoy (yonadūta),src:wikipedia,,material
-person:heliodorus,MEMBER_OF,pol:indo-greek,material:13,3,high,verified-online,,,,src:wikipedia,,material
+person:heliodorus,SERVES,person:antialkidas,material:12,3,medium,reference-checked,,,envoy (yonadūta),src:wikipedia,,material
+person:heliodorus,MEMBER_OF,pol:indo-greek,material:13,3,medium,reference-checked,,,,src:wikipedia,,material
 person:antialkidas,MEMBER_OF,pol:indo-greek,material:14,4,high,verified-online,,,,src:wikipedia; src:bopearachchi-1991,,material
 person:bhagabhadra,MEMBER_OF,pol:shunga,material:15,5,low,disputed,,,,src:wikipedia; src:salomon-1998,Later scholars (Irwin; evidence from Sonkh) regard him as a local ruler of Vidiśā.,material
-site:besnagar,DOCUMENTED_BY,person:alexander-cunningham,material:16,4,high,verified-online,,,,src:wikipedia,,material
-site:besnagar,DOCUMENTED_BY,person:dr-bhandarkar,material:17,4,high,verified-online,,,,src:wikipedia,,material
-site:besnagar,DOCUMENTED_BY,inst:asi,material:18,4,high,verified-online,,,,src:wikipedia; src:wikipedia,,material
-claim:heliodorus-mbh-parallel,CONCERNS,ins:heliodorus,material:19,5,high,verified-online,,,,src:wikipedia,,material
+site:besnagar,DOCUMENTED_BY,person:alexander-cunningham,material:16,4,medium,reference-checked,,,,src:wikipedia,,material
+site:besnagar,DOCUMENTED_BY,person:dr-bhandarkar,material:17,4,medium,reference-checked,,,,src:wikipedia,,material
+site:besnagar,DOCUMENTED_BY,inst:asi,material:18,4,medium,reference-checked,,,,src:wikipedia; src:wikipedia,,material
+claim:heliodorus-mbh-parallel,CONCERNS,ins:heliodorus,material:19,5,medium,reference-checked,,,,src:wikipedia,,material
 claim:heliodorus-mbh-parallel,CONCERNS,text:mahabharata,material:20,5,medium,recall,,,,src:wikipedia; src:wikipedia,,material
 ins:heliodorus,SUPPORTS,claim:megasthenes-herakles,material:21,5,low,source-checked,,,,src:wikipedia; src:bryant-2007,,material
 ins:hathibada-ghosundi,REFERS_TO,deity:sankarshana,material:22,3,high,verified-online,,,,src:wikipedia; src:bhandarkar-ei22,,material
 ins:hathibada-ghosundi,REFERS_TO,deity:vasudeva,material:23,3,high,verified-online,,,,src:wikipedia; src:bhandarkar-ei22,,material
 ins:hathibada-ghosundi,REFERS_TO,deity:narayana,material:24,3,medium,verified-online,,,,src:wikipedia; src:jaiswal-1981,The name may designate the enclosure rather than identify the pair with Nārāyaṇa.,material
-ins:hathibada-ghosundi,REFERS_TO,trad:bhagavata,material:25,3,high,verified-online,,,,src:wikipedia,,material
-ins:hathibada-ghosundi,REFERS_TO,concept:yajna,material:26,3,high,verified-online,,,,src:wikipedia,,material
+ins:hathibada-ghosundi,REFERS_TO,trad:bhagavata,material:25,3,medium,reference-checked,,,,src:wikipedia,,material
+ins:hathibada-ghosundi,REFERS_TO,concept:yajna,material:26,3,medium,reference-checked,,,,src:wikipedia,,material
 ins:hathibada-ghosundi,COMMISSIONED_BY,person:sarvatata,material:27,3,high,verified-online,,,,src:wikipedia; src:bhandarkar-ei22,,material
-ins:hathibada-ghosundi,FOUND_AT,site:nagari,material:28,4,high,verified-online,,,,src:wikipedia,,material
-ins:hathibada-ghosundi,HELD_AT,inst:government-museum-udaipur,material:29,4,medium,verified-online,,,,src:wikipedia,,material
+ins:hathibada-ghosundi,FOUND_AT,site:nagari,material:28,4,medium,reference-checked,,,,src:wikipedia,,material
+ins:hathibada-ghosundi,HELD_AT,inst:government-museum-udaipur,material:29,4,medium,reference-checked,,,,src:wikipedia,,material
 ins:hathibada-ghosundi,DOCUMENTED_BY,person:dr-bhandarkar,material:30,4,high,verified-online,,,,src:wikipedia; src:bhandarkar-ei22,,material
-person:sarvatata,DEVOTEE_OF,deity:vasudeva,material:31,3,medium,verified-online,trad:bhagavata,,,src:wikipedia,,material
+person:sarvatata,DEVOTEE_OF,deity:vasudeva,material:31,3,medium,reference-checked,trad:bhagavata,,,src:wikipedia,,material
 ins:nanaghat,REFERS_TO,deity:sankarshana,material:32,3,high,verified-online,,,invoked deity,src:wikipedia; src:sircar-1965,,material
 ins:nanaghat,REFERS_TO,deity:vasudeva,material:33,3,high,verified-online,,,invoked deity,src:wikipedia; src:sircar-1965,,material
-ins:nanaghat,REFERS_TO,deity:indra,material:34,3,high,verified-online,,,invoked deity,src:wikipedia,,material
-ins:nanaghat,REFERS_TO,deity:yama,material:35,3,high,verified-online,,,invoked as a Lokapāla,src:wikipedia,,material
-ins:nanaghat,REFERS_TO,deity:varuna,material:36,3,high,verified-online,,,invoked as a Lokapāla,src:wikipedia,,material
-ins:nanaghat,REFERS_TO,concept:dharma,material:37,3,high,verified-online,,,invoked first (Dharma personified),src:wikipedia,,material
-ins:nanaghat,REFERS_TO,concept:yajna,material:38,3,high,verified-online,,,,src:wikipedia,,material
-ins:nanaghat,REFERS_TO,trad:vedic-srauta,material:39,3,high,verified-online,,,,src:wikipedia,,material
+ins:nanaghat,REFERS_TO,deity:indra,material:34,3,medium,reference-checked,,,invoked deity,src:wikipedia,,material
+ins:nanaghat,REFERS_TO,deity:yama,material:35,3,medium,reference-checked,,,invoked as a Lokapāla,src:wikipedia,,material
+ins:nanaghat,REFERS_TO,deity:varuna,material:36,3,medium,reference-checked,,,invoked as a Lokapāla,src:wikipedia,,material
+ins:nanaghat,REFERS_TO,concept:dharma,material:37,3,medium,reference-checked,,,invoked first (Dharma personified),src:wikipedia,,material
+ins:nanaghat,REFERS_TO,concept:yajna,material:38,3,medium,reference-checked,,,,src:wikipedia,,material
+ins:nanaghat,REFERS_TO,trad:vedic-srauta,material:39,3,medium,reference-checked,,,,src:wikipedia,,material
 ins:nanaghat,COMMISSIONED_BY,person:naganika,material:40,3,high,verified-online,,,,src:wikipedia; src:sircar-1965,,material
-ins:nanaghat,INSCRIBED_AT,site:naneghat,material:41,3,high,verified-online,,,,src:wikipedia,,material
-ins:nanaghat,DOCUMENTED_BY,person:georg-buhler,material:42,4,high,verified-online,,,,src:wikipedia,,material
+ins:nanaghat,INSCRIBED_AT,site:naneghat,material:41,3,medium,reference-checked,,,,src:wikipedia,,material
+ins:nanaghat,DOCUMENTED_BY,person:georg-buhler,material:42,4,medium,reference-checked,,,,src:wikipedia,,material
 person:naganika,MEMBER_OF,pol:satavahana,material:43,3,high,verified-online,,,,src:wikipedia; src:singh-2008,,material
 ins:mora-well,REFERS_TO,lin:yadava,material:44,3,high,verified-online,,,,src:wikipedia; src:quintanilla-2007,,material
-ins:mora-well,REFERS_TO,person:shodasa,material:45,3,medium,verified-online,,,,src:wikipedia,,material
-ins:mora-well,FOUND_AT,site:mora,material:46,4,high,verified-online,,,,src:wikipedia,,material
-ins:mora-well,HELD_AT,inst:government-museum-mathura,material:47,4,high,verified-online,,,,src:wikipedia,,material
+ins:mora-well,REFERS_TO,person:shodasa,material:45,3,medium,reference-checked,,,,src:wikipedia,,material
+ins:mora-well,FOUND_AT,site:mora,material:46,4,medium,reference-checked,,,,src:wikipedia,,material
+ins:mora-well,HELD_AT,inst:government-museum-mathura,material:47,4,medium,reference-checked,,,,src:wikipedia,,material
 ins:mora-well,INTERPRETED_AS,deity:vasudeva,material:48,5,medium,source-checked,,,,src:wikipedia; src:srinivasan-1979; src:singh-2004,The inscription itself names none of the five.,material
 ins:mora-well,INTERPRETED_AS,deity:sankarshana,material:49,5,medium,source-checked,,,,src:wikipedia; src:srinivasan-1979,The inscription itself names none of the five.,material
 ins:mora-well,INTERPRETED_AS,char:pradyumna,material:50,5,medium,source-checked,,,,src:wikipedia; src:srinivasan-1979,Identification of all five rests on the Vāyu Purāṇa list.,material
-art:mora-vrishni-torso,FOUND_AT,site:mora,material:51,4,high,verified-online,,,,src:wikipedia,,material
-art:mora-vrishni-torso,HELD_AT,inst:government-museum-mathura,material:52,4,high,verified-online,,,,src:wikipedia,,material
+art:mora-vrishni-torso,FOUND_AT,site:mora,material:51,4,medium,reference-checked,,,,src:wikipedia,,material
+art:mora-vrishni-torso,HELD_AT,inst:government-museum-mathura,material:52,4,medium,reference-checked,,,,src:wikipedia,,material
 lin:yadava,DEPICTED_IN,art:mora-vrishni-torso,material:53,5,low,verified-online,,,,src:wikipedia; src:quintanilla-2007,,material
-site:mora,LOCATED_AT,place:mathura,material:54,4,high,verified-online,,,,src:wikipedia,,material
+site:mora,LOCATED_AT,place:mathura,material:54,4,medium,reference-checked,,,,src:wikipedia,,material
 person:shodasa,MEMBER_OF,pol:northern-satraps,material:55,3,high,verified-online,,,,src:wikipedia; src:quintanilla-2007,,material
 ins:vasu-doorjamb,REFERS_TO,deity:vasudeva,material:56,3,high,verified-online,,,,src:wikipedia; src:quintanilla-2007; src:salomon-1998,,material
-ins:vasu-doorjamb,REFERS_TO,person:shodasa,material:57,3,high,verified-online,,,,src:wikipedia,,material
-ins:vasu-doorjamb,FOUND_AT,place:mathura,material:58,4,high,verified-online,,,,src:wikipedia,,material
-ins:vasu-doorjamb,HELD_AT,inst:government-museum-mathura,material:59,4,high,verified-online,,,,src:wikipedia,,material
+ins:vasu-doorjamb,REFERS_TO,person:shodasa,material:57,3,medium,reference-checked,,,,src:wikipedia,,material
+ins:vasu-doorjamb,FOUND_AT,place:mathura,material:58,4,medium,reference-checked,,,,src:wikipedia,,material
+ins:vasu-doorjamb,HELD_AT,inst:government-museum-mathura,material:59,4,medium,reference-checked,,,,src:wikipedia,,material
 art:agathocles-coins,FOUND_AT,site:ai-khanoum,material:60,4,high,verified-online,,,,src:wikipedia; src:wikipedia; src:audouin-bernard-1974,,material
-art:agathocles-coins,COMMISSIONED_BY,person:agathocles,material:61,4,high,verified-online,,,,src:wikipedia,,material
-art:agathocles-coins,REFERS_TO,person:agathocles,material:62,3,high,verified-online,,,,src:wikipedia,,material
+art:agathocles-coins,COMMISSIONED_BY,person:agathocles,material:61,4,medium,reference-checked,,,,src:wikipedia,,material
+art:agathocles-coins,REFERS_TO,person:agathocles,material:62,3,medium,reference-checked,,,,src:wikipedia,,material
 art:agathocles-coins,INTERPRETED_AS,deity:sankarshana,material:63,5,high,verified-online,,,,src:wikipedia; src:wikipedia; src:srinivasan-1997; src:bryant-2007,Coins carry no divine names.,material
 art:agathocles-coins,INTERPRETED_AS,deity:vasudeva,material:64,5,high,verified-online,,,,src:wikipedia; src:wikipedia; src:srinivasan-1997; src:bryant-2007,Coins carry no divine names.,material
 char:balarama,DEPICTED_IN,art:agathocles-coins,material:65,5,medium,source-checked,,,,src:wikipedia; src:bryant-2007,,material
-char:krishna,DEPICTED_IN,art:agathocles-coins,material:66,5,medium,source-checked,,,,src:wikipedia; src:wikipedia,,material
-person:agathocles,MEMBER_OF,pol:indo-greek,material:67,4,high,verified-online,,,,src:wikipedia,,material
-site:ai-khanoum,DOCUMENTED_BY,inst:dafa,material:68,4,high,verified-online,,,,src:wikipedia,,material
-site:ai-khanoum,DOCUMENTED_BY,person:paul-bernard,material:69,4,high,verified-online,,,,src:wikipedia,,material
+char:krishna,DEPICTED_IN,art:agathocles-coins,material:66,5,medium,source-checked,,,,src:wikipedia; src:wikipedia; src:audouin-bernard-1974; src:srinivasan-1997,,material
+person:agathocles,MEMBER_OF,pol:indo-greek,material:67,4,medium,reference-checked,,,,src:wikipedia,,material
+site:ai-khanoum,DOCUMENTED_BY,inst:dafa,material:68,4,medium,reference-checked,,,,src:wikipedia,,material
+site:ai-khanoum,DOCUMENTED_BY,person:paul-bernard,material:69,4,medium,reference-checked,,,,src:wikipedia,,material
 art:agathocles-coins,SUPPORTS,claim:megasthenes-herakles,material:70,5,low,source-checked,,,,src:wikipedia; src:bryant-2007,,material
-claim:megasthenes-herakles,CONCERNS,char:krishna,material:71,5,high,verified-online,,,,src:wikipedia; src:wikipedia,,material
+claim:megasthenes-herakles,CONCERNS,char:krishna,material:71,5,medium,reference-checked,,,,src:wikipedia; src:wikipedia,,material
 claim:megasthenes-herakles,CONCERNS,deity:vasudeva,material:72,5,medium,source-checked,,,,src:bryant-2007; src:jaiswal-1981,,material
-claim:megasthenes-herakles,CONCERNS,person:megasthenes,material:73,5,high,verified-online,,,,src:wikipedia,,material
+claim:megasthenes-herakles,CONCERNS,person:megasthenes,material:73,5,medium,reference-checked,,,,src:wikipedia,,material
 claim:megasthenes-herakles,CONCERNS,text:megasthenes-indica,material:74,5,high,verified-online,,,,"src:wikipedia; src:robson-arrian-1933 @ Arrian, Indica ch. 8",,material
 claim:megasthenes-herakles,CONCERNS,place:mathura,material:75,5,high,verified-online,,,,src:wikipedia; src:bryant-2007,,material
 claim:megasthenes-herakles,CONCERNS,char:balarama,material:76,5,low,recall,,,,src:jaiswal-1981,,material
@@ -1223,7 +1223,7 @@ text:megasthenes-indica,SUPPORTS,claim:megasthenes-herakles,material:77,5,medium
 text:megasthenes-indica,CONTRADICTS,claim:megasthenes-herakles,material:78,5,low,source-checked,,,,src:dahlquist-1962; src:wikipedia,,material
 text:megasthenes-indica,ATTRIBUTED_TO,person:megasthenes,material:79,1,high,verified-online,,,,"src:robson-arrian-1933 @ Arrian, Indica ch. 8 (Megasthenes cited as source); src:wikipedia; src:mccrindle-1877",,material
 person:chandragupta-maurya,MEMBER_OF,pol:maurya,material:80,4,high,source-checked,,,,src:singh-2008,,material
-claim:megasthenes-herakles,CONCERNS,person:chandragupta-maurya,material:81,5,medium,verified-online,,,,src:wikipedia,,material
+claim:megasthenes-herakles,CONCERNS,person:chandragupta-maurya,material:81,5,medium,reference-checked,,,,src:wikipedia,,material
 text:ashtadhyayi,SUPPORTS,claim:megasthenes-herakles,material:83,5,low,source-checked,,,,src:gretil-ashtadhyayi @ P. 4.3.98; src:jaiswal-1981 @ Aṣṭādhyāyī 4.3.98; src:bryant-2007,Pāṇini's date and whether this Vāsudeva is the deity are both debated.,material
 claim:krishna-devakiputra-identity,CONCERNS,char:krishna-devakiputra,material:85,5,high,source-checked,,,,src:olivelle-1998 @ CU 3.17.6,,material
 claim:krishna-devakiputra-identity,CONCERNS,char:krishna,material:86,5,high,source-checked,,,,src:wikipedia; src:bryant-2007,,material
@@ -1232,16 +1232,16 @@ claim:krishna-devakiputra-identity,CONCERNS,char:ghora-angirasa,material:88,5,hi
 text:chandogya-upanishad,SUPPORTS,claim:krishna-devakiputra-identity,material:89,1,medium,source-checked,,,,src:olivelle-1998 @ CU 3.17.6; src:raychaudhuri-1920; src:wikipedia,,material
 text:chandogya-upanishad,CONTRADICTS,claim:krishna-devakiputra-identity,material:90,5,low,source-checked,,,,src:wikipedia; src:bryant-2007,,material
 claim:proto-shiva,CONCERNS,art:pashupati-seal,material:91,7,high,verified-online,,,,src:wikipedia; src:marshall-1931,,material
-claim:proto-shiva,CONCERNS,deity:shiva,material:92,7,high,verified-online,,,,src:wikipedia,,material
+claim:proto-shiva,CONCERNS,deity:shiva,material:92,7,medium,reference-checked,,,,src:wikipedia,,material
 claim:proto-shiva,CONCERNS,deity:rudra,material:93,7,medium,source-checked,,,,src:kramrisch-1981; src:possehl-2002,,material
 claim:proto-shiva,CONCERNS,trad:pashupata,material:94,7,low,source-checked,,,,src:wikipedia,,material
 claim:proto-shiva,CONCERNS,person:john-marshall,material:95,5,high,verified-online,,,,src:wikipedia; src:marshall-1931,,material
 claim:proto-shiva,CONCERNS,person:doris-srinivasan,material:96,5,high,verified-online,,,,src:wikipedia; src:srinivasan-1975,,material
 art:pashupati-seal,FOUND_AT,site:mohenjo-daro,material:97,4,high,verified-online,,,,src:wikipedia; src:mackay-1938,,material
-art:pashupati-seal,HELD_AT,inst:national-museum-delhi,material:98,4,high,verified-online,,,,src:wikipedia,,material
+art:pashupati-seal,HELD_AT,inst:national-museum-delhi,material:98,4,medium,reference-checked,,,,src:wikipedia,,material
 art:pashupati-seal,DOCUMENTED_BY,person:ernest-mackay,material:99,4,high,verified-online,,,,src:wikipedia; src:mackay-1938,,material
 art:pashupati-seal,DOCUMENTED_BY,person:john-marshall,material:100,4,high,verified-online,,,,src:wikipedia; src:marshall-1931,,material
-art:pashupati-seal,DOCUMENTED_BY,inst:asi,material:101,4,high,verified-online,,,,src:wikipedia,,material
+art:pashupati-seal,DOCUMENTED_BY,inst:asi,material:101,4,medium,reference-checked,,,,src:wikipedia,,material
 art:pashupati-seal,INTERPRETED_AS,deity:shiva,material:102,7,low,disputed,,,,src:marshall-1931; src:wikipedia,Buffalo-man (Srinivasan); female deity (Sullivan); proto-Mahiṣa (Hiltebeitel); others.,material
 art:pashupati-seal,INTERPRETED_AS,char:mahishasura,material:103,7,low,disputed,,,,src:hiltebeitel-1978; src:wikipedia,Proto-Śiva and other readings.,material
 art:pashupati-seal,INTERPRETED_AS,deity:indra,material:104,7,low,disputed,,,,src:wikipedia,,material
@@ -1249,49 +1249,49 @@ art:pashupati-seal,SUPPORTS,claim:proto-shiva,material:105,7,low,disputed,,,,src
 art:pashupati-seal,CONTRADICTS,claim:proto-shiva,material:106,5,medium,source-checked,,,,src:srinivasan-1975; src:srinivasan-1997; src:sullivan-1964; src:wikipedia,,material
 site:mohenjo-daro,DOCUMENTED_BY,person:john-marshall,material:107,4,high,verified-online,,,,src:wikipedia; src:marshall-1931,,material
 site:mohenjo-daro,DOCUMENTED_BY,person:ernest-mackay,material:108,4,high,verified-online,,,,src:wikipedia; src:mackay-1938,,material
-site:mohenjo-daro,DOCUMENTED_BY,inst:asi,material:109,4,high,verified-online,,,,src:wikipedia,,material
+site:mohenjo-daro,DOCUMENTED_BY,inst:asi,material:109,4,medium,reference-checked,,,,src:wikipedia,,material
 site:mohenjo-daro,DOCUMENTED_BY,inst:unesco,material:110,4,high,verified-online,,,,src:wikipedia; src:unesco-whc,,material
-art:gudimallam-linga,LOCATED_AT,temple:gudimallam,material:111,4,high,verified-online,,,,src:wikipedia,,material
+art:gudimallam-linga,LOCATED_AT,temple:gudimallam,material:111,4,medium,reference-checked,,,,src:wikipedia,,material
 art:gudimallam-linga,INTERPRETED_AS,deity:shiva,material:112,5,high,verified-online,,,,src:wikipedia; src:harle-1994; src:kramrisch-1981,Some read the figure as a yakṣa-like guardian or Agni; the dwarf is read as Apasmāra or a yakṣa.,material
-art:gudimallam-linga,DOCUMENTED_BY,person:ik-sarma,material:113,4,high,verified-online,,,,src:wikipedia,,material
-art:gudimallam-linga,DOCUMENTED_BY,inst:asi,material:114,4,high,verified-online,,,,src:wikipedia,,material
+art:gudimallam-linga,DOCUMENTED_BY,person:ik-sarma,material:113,4,medium,reference-checked,,,,src:wikipedia,,material
+art:gudimallam-linga,DOCUMENTED_BY,inst:asi,material:114,4,medium,reference-checked,,,,src:wikipedia,,material
 deity:shiva,DEPICTED_IN,art:gudimallam-linga,material:115,5,high,verified-online,,,,src:wikipedia; src:harle-1994,,material
-claim:gudimallam-early-date,CONCERNS,art:gudimallam-linga,material:116,5,high,verified-online,,,,src:wikipedia,,material
-claim:gudimallam-early-date,CONCERNS,deity:shiva,material:117,5,medium,verified-online,,,,src:wikipedia,,material
+claim:gudimallam-early-date,CONCERNS,art:gudimallam-linga,material:116,5,medium,reference-checked,,,,src:wikipedia,,material
+claim:gudimallam-early-date,CONCERNS,deity:shiva,material:117,5,medium,reference-checked,,,,src:wikipedia,,material
 art:gudimallam-linga,SUPPORTS,claim:gudimallam-early-date,material:118,5,medium,verified-online,,,,src:wikipedia; src:harle-1994,,material
-art:gudimallam-linga,CONTRADICTS,claim:gudimallam-early-date,material:119,5,low,verified-online,,,,src:wikipedia,,material
-temple:gudimallam,DOCUMENTED_BY,inst:asi,material:120,4,high,verified-online,,,,src:wikipedia,,material
-art:wima-kadphises-coin,COMMISSIONED_BY,person:wima-kadphises,material:121,4,high,verified-online,,,,src:wikipedia,,material
+art:gudimallam-linga,CONTRADICTS,claim:gudimallam-early-date,material:119,5,low,reference-checked,,,,src:wikipedia,,material
+temple:gudimallam,DOCUMENTED_BY,inst:asi,material:120,4,medium,reference-checked,,,,src:wikipedia,,material
+art:wima-kadphises-coin,COMMISSIONED_BY,person:wima-kadphises,material:121,4,medium,reference-checked,,,,src:wikipedia,,material
 art:wima-kadphises-coin,INTERPRETED_AS,deity:shiva,material:122,5,medium,verified-online,,,,src:wikipedia; src:rosenfield-1967,Some read the coin deity as Oesho/Vāyu with borrowed Śaiva traits.,material
-art:wima-kadphises-coin,INTERPRETED_AS,deity:oesho,material:123,5,medium,verified-online,,,,src:wikipedia,,material
-art:wima-kadphises-coin,REFERS_TO,deity:shiva,material:124,3,medium,verified-online,,,,src:wikipedia,May be a royal epithet ('great lord') rather than a sectarian label.,material
-art:wima-kadphises-coin,REFERS_TO,person:wima-kadphises,material:125,3,high,verified-online,,,,src:wikipedia,,material
-art:wima-kadphises-coin,SUPPORTS,claim:oesho-shiva-identity,material:126,5,medium,verified-online,,,,src:wikipedia; src:wikipedia,,material
+art:wima-kadphises-coin,INTERPRETED_AS,deity:oesho,material:123,5,medium,reference-checked,,,,src:wikipedia,,material
+art:wima-kadphises-coin,REFERS_TO,deity:shiva,material:124,3,medium,reference-checked,,,,src:wikipedia,May be a royal epithet ('great lord') rather than a sectarian label.,material
+art:wima-kadphises-coin,REFERS_TO,person:wima-kadphises,material:125,3,medium,reference-checked,,,,src:wikipedia,,material
+art:wima-kadphises-coin,SUPPORTS,claim:oesho-shiva-identity,material:126,5,medium,reference-checked,,,,src:wikipedia; src:wikipedia,,material
 person:wima-kadphises,MEMBER_OF,pol:kushan,material:127,3,high,verified-online,,,,src:wikipedia; src:sims-williams-cribb-1996,,material
 person:wima-kadphises,PARENT_OF,person:kanishka-i,material:128,3,high,verified-online,,,,src:wikipedia; src:wikipedia; src:sims-williams-cribb-1996,,material
 person:wima-kadphises,DEVOTEE_OF,deity:shiva,material:129,5,medium,source-checked,trad:shaiva,,,src:wikipedia,Epithet mahiśvara ambiguous.,material
-person:kanishka-i,MEMBER_OF,pol:kushan,material:130,3,high,verified-online,,,,src:wikipedia,,material
-art:kushan-oesho-coins,COMMISSIONED_BY,person:kanishka-i,material:131,4,high,verified-online,,,,src:wikipedia; src:wikipedia,,material
-art:kushan-oesho-coins,COMMISSIONED_BY,pol:kushan,material:132,4,high,verified-online,,,,src:wikipedia,,material
-art:kushan-oesho-coins,REFERS_TO,deity:oesho,material:133,3,high,verified-online,,,,src:wikipedia; src:wikipedia,,material
+person:kanishka-i,MEMBER_OF,pol:kushan,material:130,3,medium,reference-checked,,,,src:wikipedia,,material
+art:kushan-oesho-coins,COMMISSIONED_BY,person:kanishka-i,material:131,4,medium,reference-checked,,,,src:wikipedia; src:wikipedia,,material
+art:kushan-oesho-coins,COMMISSIONED_BY,pol:kushan,material:132,4,medium,reference-checked,,,,src:wikipedia,,material
+art:kushan-oesho-coins,REFERS_TO,deity:oesho,material:133,3,medium,reference-checked,,,,src:wikipedia; src:wikipedia,,material
 art:kushan-oesho-coins,INTERPRETED_AS,deity:shiva,material:134,5,medium,disputed,,,,src:wikipedia; src:rosenfield-1967,Vāyu (Tanabe; Humbach).,material
 art:kushan-oesho-coins,INTERPRETED_AS,deity:vayu,material:135,5,medium,disputed,,,,src:wikipedia,Śiva (traditional numismatic view).,material
-art:kushan-oesho-coins,SUPPORTS,claim:oesho-shiva-identity,material:136,5,medium,verified-online,,,,src:wikipedia,,material
+art:kushan-oesho-coins,SUPPORTS,claim:oesho-shiva-identity,material:136,5,medium,reference-checked,,,,src:wikipedia,,material
 art:kushan-oesho-coins,CONTRADICTS,claim:oesho-shiva-identity,material:137,5,medium,verified-online,,,,src:wikipedia; src:wikipedia; src:sims-williams-cribb-1996,,material
 deity:oesho,IDENTIFIED_WITH,deity:shiva,material:138,5,medium,disputed,modern numismatic scholarship (traditional view),,,src:wikipedia; src:rosenfield-1967,Vāyu.,material
 deity:oesho,IDENTIFIED_WITH,deity:vayu,material:139,5,medium,disputed,modern scholarship (Iranian reading: Tanabe 1997; Humbach),,,src:wikipedia,Śiva.,material
-claim:oesho-shiva-identity,CONCERNS,deity:oesho,material:140,5,high,verified-online,,,,src:wikipedia,,material
-claim:oesho-shiva-identity,CONCERNS,deity:shiva,material:141,5,high,verified-online,,,,src:wikipedia,,material
-claim:oesho-shiva-identity,CONCERNS,deity:vayu,material:142,5,high,verified-online,,,,src:wikipedia,,material
-claim:oesho-shiva-identity,CONCERNS,pol:kushan,material:143,5,medium,verified-online,,,,src:wikipedia,,material
-art:udayagiri-varaha,LOCATED_AT,temple:udayagiri-caves,material:144,4,high,verified-online,,,,src:wikipedia,,material
+claim:oesho-shiva-identity,CONCERNS,deity:oesho,material:140,5,medium,reference-checked,,,,src:wikipedia,,material
+claim:oesho-shiva-identity,CONCERNS,deity:shiva,material:141,5,medium,reference-checked,,,,src:wikipedia,,material
+claim:oesho-shiva-identity,CONCERNS,deity:vayu,material:142,5,medium,reference-checked,,,,src:wikipedia,,material
+claim:oesho-shiva-identity,CONCERNS,pol:kushan,material:143,5,medium,reference-checked,,,,src:wikipedia,,material
+art:udayagiri-varaha,LOCATED_AT,temple:udayagiri-caves,material:144,4,medium,reference-checked,,,,src:wikipedia,,material
 deity:varaha,DEPICTED_IN,art:udayagiri-varaha,material:145,4,high,verified-online,,,,src:wikipedia; src:williams-1982,,material
 narr:varaha-earth,DEPICTED_IN,art:udayagiri-varaha,material:146,4,high,verified-online,,,,src:wikipedia; src:williams-1982,,material
-deity:vishnu,DEPICTED_IN,art:udayagiri-varaha,material:147,4,high,verified-online,,,,src:wikipedia,,material
-deity:brahma,DEPICTED_IN,art:udayagiri-varaha,material:148,5,medium,verified-online,,,,src:wikipedia,,material
-deity:shiva,DEPICTED_IN,art:udayagiri-varaha,material:149,5,medium,verified-online,,,,src:wikipedia,,material
-char:narada,DEPICTED_IN,art:udayagiri-varaha,material:150,5,medium,verified-online,,,,src:wikipedia,,material
-art:udayagiri-varaha,INTERPRETED_AS,person:chandragupta-ii,material:151,5,low,verified-online,,,,src:wikipedia,Also read as a nāga or a devotee.,material
+deity:vishnu,DEPICTED_IN,art:udayagiri-varaha,material:147,4,medium,reference-checked,,,,src:wikipedia,,material
+deity:brahma,DEPICTED_IN,art:udayagiri-varaha,material:148,5,medium,reference-checked,,,,src:wikipedia,,material
+deity:shiva,DEPICTED_IN,art:udayagiri-varaha,material:149,5,medium,reference-checked,,,,src:wikipedia,,material
+char:narada,DEPICTED_IN,art:udayagiri-varaha,material:150,5,medium,reference-checked,,,,src:wikipedia,,material
+art:udayagiri-varaha,INTERPRETED_AS,person:chandragupta-ii,material:151,5,low,reference-checked,,,,src:wikipedia,Also read as a nāga or a devotee.,material
 art:udayagiri-varaha,BUILT_DURING,pol:gupta,material:152,5,high,verified-online,,,,src:wikipedia; src:williams-1982,,material
 art:udayagiri-varaha,DOCUMENTED_BY,person:alexander-cunningham,material:153,4,high,verified-online,,,,src:wikipedia; src:cunningham-1880,,material
 ins:udayagiri-cave6,INSCRIBED_AT,temple:udayagiri-caves,material:154,3,high,verified-online,,,,src:dharmalekha; src:wikipedia,,material
@@ -1303,51 +1303,51 @@ ins:udayagiri-cave8,INSCRIBED_AT,temple:udayagiri-caves,material:159,3,high,veri
 ins:udayagiri-cave8,REFERS_TO,deity:shiva,material:160,3,high,verified-online,,,,src:wikipedia; src:dharmalekha,,material
 ins:udayagiri-cave8,REFERS_TO,person:chandragupta-ii,material:161,3,high,verified-online,,,,src:wikipedia; src:dharmalekha,,material
 ins:udayagiri-cave8,COMMISSIONED_BY,person:virasena,material:162,3,high,verified-online,,,,src:wikipedia; src:dharmalekha,,material
-person:virasena,SERVES,person:chandragupta-ii,material:163,3,high,verified-online,,,minister,src:wikipedia,,material
-person:virasena,DEVOTEE_OF,deity:shiva,material:164,3,high,verified-online,trad:shaiva,,,src:wikipedia,,material
+person:virasena,SERVES,person:chandragupta-ii,material:163,3,medium,reference-checked,,,minister,src:wikipedia,,material
+person:virasena,DEVOTEE_OF,deity:shiva,material:164,3,medium,reference-checked,trad:shaiva,,,src:wikipedia,,material
 person:chandragupta-ii,MEMBER_OF,pol:gupta,material:165,3,high,source-checked,,,,src:singh-2008; src:dharmalekha,,material
-person:chandragupta-ii,PARENT_OF,person:kumaragupta-i,material:166,3,high,verified-online,,,,src:wikipedia,,material
+person:chandragupta-ii,PARENT_OF,person:kumaragupta-i,material:166,3,medium,reference-checked,,,,src:wikipedia,,material
 person:chandragupta-ii,DEVOTEE_OF,deity:vishnu,material:167,3,medium,source-checked,trad:bhagavata,,,src:williams-1982; src:willis-2009; src:wikipedia,,material
-ins:delhi-iron-pillar,REFERS_TO,deity:vishnu,material:168,3,high,verified-online,,,,src:wikipedia,,material
-ins:delhi-iron-pillar,REFERS_TO,person:chandragupta-ii,material:169,5,medium,verified-online,,,,src:wikipedia,Other Candras have been proposed.,material
+ins:delhi-iron-pillar,REFERS_TO,deity:vishnu,material:168,3,medium,reference-checked,,,,src:wikipedia,,material
+ins:delhi-iron-pillar,REFERS_TO,person:chandragupta-ii,material:169,5,medium,reference-checked,,,,src:wikipedia,Other Candras have been proposed.,material
 ins:delhi-iron-pillar,ASSOCIATED_WITH,temple:udayagiri-caves,material:170,5,low,disputed,,,,src:wikipedia; src:willis-2009,Mathurā (Fleet 1898); Vidiśā (Flood 2009).,material
-art:eran-varaha,LOCATED_AT,site:eran,material:171,4,high,verified-online,,,,src:wikipedia,,material
+art:eran-varaha,LOCATED_AT,site:eran,material:171,4,medium,reference-checked,,,,src:wikipedia,,material
 deity:varaha,DEPICTED_IN,art:eran-varaha,material:172,4,high,verified-online,,,,src:wikipedia; src:williams-1982,,material
-narr:varaha-earth,DEPICTED_IN,art:eran-varaha,material:173,4,medium,verified-online,,,,src:wikipedia,,material
+narr:varaha-earth,DEPICTED_IN,art:eran-varaha,material:173,4,medium,reference-checked,,,,src:wikipedia,,material
 art:eran-varaha,COMMISSIONED_BY,person:dhanyavishnu,material:174,3,high,verified-online,,,,src:wikipedia; src:fleet-1888,,material
-art:eran-varaha,BUILT_DURING,pol:huna,material:175,3,high,verified-online,,,,src:wikipedia; src:wikipedia,,material
-ins:eran-toramana,INSCRIBED_AT,art:eran-varaha,material:176,3,high,verified-online,,,,src:wikipedia; src:wikipedia,,material
-ins:eran-toramana,REFERS_TO,deity:narayana,material:177,3,high,verified-online,,,,src:wikipedia,,material
-ins:eran-toramana,REFERS_TO,deity:varaha,material:178,3,high,verified-online,,,,src:wikipedia,,material
-ins:eran-toramana,REFERS_TO,person:toramana,material:179,3,high,verified-online,,,,src:wikipedia; src:wikipedia,,material
-ins:eran-toramana,COMMISSIONED_BY,person:dhanyavishnu,material:180,3,high,verified-online,,,,src:wikipedia,,material
+art:eran-varaha,BUILT_DURING,pol:huna,material:175,3,medium,reference-checked,,,,src:wikipedia; src:wikipedia,,material
+ins:eran-toramana,INSCRIBED_AT,art:eran-varaha,material:176,3,medium,reference-checked,,,,src:wikipedia; src:wikipedia,,material
+ins:eran-toramana,REFERS_TO,deity:narayana,material:177,3,medium,reference-checked,,,,src:wikipedia,,material
+ins:eran-toramana,REFERS_TO,deity:varaha,material:178,3,medium,reference-checked,,,,src:wikipedia,,material
+ins:eran-toramana,REFERS_TO,person:toramana,material:179,3,medium,reference-checked,,,,src:wikipedia; src:wikipedia,,material
+ins:eran-toramana,COMMISSIONED_BY,person:dhanyavishnu,material:180,3,medium,reference-checked,,,,src:wikipedia,,material
 ins:eran-toramana,DOCUMENTED_BY,person:jf-fleet,material:181,4,high,verified-online,,,,src:wikipedia; src:fleet-1888,,material
-person:toramana,MEMBER_OF,pol:huna,material:182,3,high,verified-online,,,,src:wikipedia,,material
-person:dhanyavishnu,SERVES,person:toramana,material:183,3,medium,verified-online,,,,src:wikipedia; src:wikipedia,,material
-person:dhanyavishnu,DEVOTEE_OF,deity:narayana,material:184,3,high,verified-online,trad:vaishnava,,,src:wikipedia,,material
-ins:eran-budhagupta,INSCRIBED_AT,site:eran,material:185,3,high,verified-online,,,,src:wikipedia,,material
-ins:eran-budhagupta,REFERS_TO,deity:vishnu,material:186,3,high,verified-online,,,,src:wikipedia,,material
-ins:eran-budhagupta,REFERS_TO,person:budhagupta,material:187,3,high,verified-online,,,,src:wikipedia,,material
+person:toramana,MEMBER_OF,pol:huna,material:182,3,medium,reference-checked,,,,src:wikipedia,,material
+person:dhanyavishnu,SERVES,person:toramana,material:183,3,medium,reference-checked,,,,src:wikipedia; src:wikipedia,,material
+person:dhanyavishnu,DEVOTEE_OF,deity:narayana,material:184,3,medium,reference-checked,trad:vaishnava,,,src:wikipedia,,material
+ins:eran-budhagupta,INSCRIBED_AT,site:eran,material:185,3,medium,reference-checked,,,,src:wikipedia,,material
+ins:eran-budhagupta,REFERS_TO,deity:vishnu,material:186,3,medium,reference-checked,,,,src:wikipedia,,material
+ins:eran-budhagupta,REFERS_TO,person:budhagupta,material:187,3,medium,reference-checked,,,,src:wikipedia,,material
 ins:eran-budhagupta,COMMISSIONED_BY,person:dhanyavishnu,material:188,3,medium,recall,,,,src:fleet-1888,,material
 person:budhagupta,MEMBER_OF,pol:gupta,material:189,3,high,verified-online,,,,src:wikipedia; src:singh-2008,,material
 site:eran,DOCUMENTED_BY,person:alexander-cunningham,material:190,4,high,verified-online,,,,src:wikipedia; src:cunningham-1880,,material
-art:deogarh-gajendra-moksha,LOCATED_AT,temple:deogarh-dashavatara,material:191,4,high,verified-online,,,,src:wikipedia,,material
+art:deogarh-gajendra-moksha,LOCATED_AT,temple:deogarh-dashavatara,material:191,4,medium,reference-checked,,,,src:wikipedia,,material
 art:deogarh-gajendra-moksha,BUILT_DURING,pol:gupta,material:192,5,medium,verified-online,,,,src:wikipedia; src:williams-1982,,material
-art:deogarh-nara-narayana,LOCATED_AT,temple:deogarh-dashavatara,material:193,4,high,verified-online,,,,src:wikipedia,,material
+art:deogarh-nara-narayana,LOCATED_AT,temple:deogarh-dashavatara,material:193,4,medium,reference-checked,,,,src:wikipedia,,material
 art:deogarh-nara-narayana,BUILT_DURING,pol:gupta,material:194,5,medium,verified-online,,,,src:wikipedia; src:williams-1982,,material
-art:deogarh-anantashayin,LOCATED_AT,temple:deogarh-dashavatara,material:195,4,high,verified-online,,,,src:wikipedia,,material
+art:deogarh-anantashayin,LOCATED_AT,temple:deogarh-dashavatara,material:195,4,medium,reference-checked,,,,src:wikipedia,,material
 art:deogarh-anantashayin,BUILT_DURING,pol:gupta,material:196,5,medium,verified-online,,,,src:wikipedia; src:williams-1982,,material
-art:deogarh-plinth-panels,LOCATED_AT,temple:deogarh-dashavatara,material:197,4,high,verified-online,,,,src:wikipedia,,material
+art:deogarh-plinth-panels,LOCATED_AT,temple:deogarh-dashavatara,material:197,4,medium,reference-checked,,,,src:wikipedia,,material
 art:deogarh-plinth-panels,BUILT_DURING,pol:gupta,material:198,5,medium,verified-online,,,,src:wikipedia; src:williams-1982,,material
-art:deogarh-plinth-panels,HELD_AT,inst:national-museum-delhi,material:199,4,high,verified-online,,,,src:wikipedia,,material
+art:deogarh-plinth-panels,HELD_AT,inst:national-museum-delhi,material:199,4,medium,reference-checked,,,,src:wikipedia,,material
 narr:gajendra-moksha,DEPICTED_IN,art:deogarh-gajendra-moksha,material:200,4,high,verified-online,,,,src:wikipedia; src:vats-1952,,material
-char:gajendra,DEPICTED_IN,art:deogarh-gajendra-moksha,material:201,4,high,verified-online,,,,src:wikipedia,,material
-deity:vishnu,DEPICTED_IN,art:deogarh-gajendra-moksha,material:202,4,high,verified-online,,,,src:wikipedia,,material
+char:gajendra,DEPICTED_IN,art:deogarh-gajendra-moksha,material:201,4,medium,reference-checked,,,,src:wikipedia,,material
+deity:vishnu,DEPICTED_IN,art:deogarh-gajendra-moksha,material:202,4,medium,reference-checked,,,,src:wikipedia,,material
 deity:narayana,DEPICTED_IN,art:deogarh-nara-narayana,material:203,4,high,verified-online,,,,src:wikipedia; src:vats-1952,,material
-deity:brahma,DEPICTED_IN,art:deogarh-nara-narayana,material:204,4,high,verified-online,,,,src:wikipedia,,material
-deity:vishnu,DEPICTED_IN,art:deogarh-anantashayin,material:205,4,high,verified-online,,,,src:wikipedia,,material
-deity:lakshmi,DEPICTED_IN,art:deogarh-anantashayin,material:206,4,high,verified-online,,,,src:wikipedia,,material
-deity:brahma,DEPICTED_IN,art:deogarh-anantashayin,material:207,4,high,verified-online,,,,src:wikipedia,,material
+deity:brahma,DEPICTED_IN,art:deogarh-nara-narayana,material:204,4,medium,reference-checked,,,,src:wikipedia,,material
+deity:vishnu,DEPICTED_IN,art:deogarh-anantashayin,material:205,4,medium,reference-checked,,,,src:wikipedia,,material
+deity:lakshmi,DEPICTED_IN,art:deogarh-anantashayin,material:206,4,medium,reference-checked,,,,src:wikipedia,,material
+deity:brahma,DEPICTED_IN,art:deogarh-anantashayin,material:207,4,medium,reference-checked,,,,src:wikipedia,,material
 art:deogarh-anantashayin,INTERPRETED_AS,lin:pandavas,material:208,5,medium,disputed,,,,src:wikipedia; src:wikimedia-commons,Personified weapons (āyudhapuruṣas) confronting Madhu and Kaiṭabha.,material
 char:ahalya,DEPICTED_IN,art:deogarh-plinth-panels,material:209,4,high,verified-online,,,,src:wikipedia; src:vats-1952,,material
 narr:rama-exile,DEPICTED_IN,art:deogarh-plinth-panels,material:210,4,high,verified-online,,,,src:wikipedia; src:vats-1952,,material
@@ -1363,10 +1363,10 @@ char:balarama,DEPICTED_IN,art:deogarh-plinth-panels,material:219,4,medium,verifi
 narr:kamsa-vadha,DEPICTED_IN,art:deogarh-plinth-panels,material:220,4,medium,verified-online,,,,src:wikipedia; src:vats-1952,,material
 narr:vamana-bali,DEPICTED_IN,art:deogarh-plinth-panels,material:221,4,high,verified-online,,,,src:wikipedia; src:vats-1952,,material
 narr:narasimha-prahlada,DEPICTED_IN,art:deogarh-plinth-panels,material:222,4,high,verified-online,,,,src:wikipedia; src:vats-1952,,material
-art:deogarh-plinth-panels,DOCUMENTED_BY,inst:asi,material:223,4,high,verified-online,,,,src:wikipedia,,material
+art:deogarh-plinth-panels,DOCUMENTED_BY,inst:asi,material:223,4,medium,reference-checked,,,,src:wikipedia,,material
 temple:deogarh-dashavatara,DOCUMENTED_BY,person:alexander-cunningham,material:224,4,high,verified-online,,,,src:wikipedia; src:cunningham-1880,,material
 temple:deogarh-dashavatara,BUILT_DURING,pol:gupta,material:225,5,medium,verified-online,,,,src:wikipedia; src:williams-1982,,material
-art:nachna-ramayana-panels,LOCATED_AT,temple:nachna-parvati,material:226,4,medium,verified-online,,,,src:wikipedia,,material
+art:nachna-ramayana-panels,LOCATED_AT,temple:nachna-parvati,material:226,4,medium,reference-checked,,,,src:wikipedia,,material
 char:ravana,DEPICTED_IN,art:nachna-ramayana-panels,material:227,4,high,verified-online,,,,src:wikipedia; src:williams-1982,,material
 char:sita,DEPICTED_IN,art:nachna-ramayana-panels,material:228,4,high,verified-online,,,,src:wikipedia; src:williams-1982,,material
 char:lakshmana,DEPICTED_IN,art:nachna-ramayana-panels,material:229,4,high,verified-online,,,,src:wikipedia; src:williams-1982,,material
@@ -1375,29 +1375,29 @@ char:vali,DEPICTED_IN,art:nachna-ramayana-panels,material:231,4,high,verified-on
 char:hanuman,DEPICTED_IN,art:nachna-ramayana-panels,material:232,4,high,verified-online,,,,src:wikipedia; src:williams-1982,,material
 narr:abduction-of-sita,DEPICTED_IN,art:nachna-ramayana-panels,material:233,4,high,verified-online,,,,src:wikipedia; src:williams-1982,,material
 art:nachna-ramayana-panels,BUILT_DURING,pol:gupta,material:234,5,medium,verified-online,,,,src:wikipedia; src:williams-1982,,material
-temple:nachna-parvati,DOCUMENTED_BY,person:alexander-cunningham,material:235,4,high,verified-online,,,,src:wikipedia,,material
+temple:nachna-parvati,DOCUMENTED_BY,person:alexander-cunningham,material:235,4,medium,reference-checked,,,,src:wikipedia,,material
 art:gupta-archer-coin,COMMISSIONED_BY,person:chandragupta-ii,material:236,4,high,verified-online,,,,src:cma-open-access @ Accession no. 1977.62,,material
 art:gupta-archer-coin,HELD_AT,inst:cleveland-museum,material:237,4,high,verified-online,,,,src:cma-open-access @ Accession no. 1977.62,,material
 deity:lakshmi,DEPICTED_IN,art:gupta-archer-coin,material:238,4,high,verified-online,,,,src:cma-open-access @ Accession no. 1977.62,,material
 art:gupta-archer-coin,BUILT_DURING,pol:gupta,material:239,4,high,verified-online,,,,src:cma-open-access @ Accession no. 1977.62,,material
-art:kumaragupta-kartikeya-coin,COMMISSIONED_BY,person:kumaragupta-i,material:240,4,high,verified-online,,,,src:wikipedia,,material
-deity:skanda,DEPICTED_IN,art:kumaragupta-kartikeya-coin,material:241,4,high,verified-online,,,,src:wikipedia,,material
-art:kumaragupta-kartikeya-coin,REFERS_TO,person:kumaragupta-i,material:242,3,medium,verified-online,,,,src:wikipedia,,material
-person:kumaragupta-i,MEMBER_OF,pol:gupta,material:243,3,high,verified-online,,,,src:wikipedia,,material
+art:kumaragupta-kartikeya-coin,COMMISSIONED_BY,person:kumaragupta-i,material:240,4,medium,reference-checked,,,,src:wikipedia,,material
+deity:skanda,DEPICTED_IN,art:kumaragupta-kartikeya-coin,material:241,4,medium,reference-checked,,,,src:wikipedia,,material
+art:kumaragupta-kartikeya-coin,REFERS_TO,person:kumaragupta-i,material:242,3,medium,reference-checked,,,,src:wikipedia,,material
+person:kumaragupta-i,MEMBER_OF,pol:gupta,material:243,3,medium,reference-checked,,,,src:wikipedia,,material
 person:kumaragupta-i,DEVOTEE_OF,deity:skanda,material:244,5,low,source-checked,,,,src:wikipedia; src:williams-1982,The type may express royal ideology rather than personal devotion.,material
-art:govardhanadhara-bkb,HELD_AT,inst:bharat-kala-bhavan,material:245,4,high,verified-online,,,,src:wikipedia; src:wikimedia-commons,,material
-art:govardhanadhara-bkb,FOUND_AT,place:kashi,material:246,4,medium,verified-online,,,,src:wikipedia,,material
-narr:govardhana,DEPICTED_IN,art:govardhanadhara-bkb,material:247,4,high,verified-online,,,,src:wikipedia,,material
-char:krishna,DEPICTED_IN,art:govardhanadhara-bkb,material:248,4,high,verified-online,,,,src:wikipedia,,material
-art:govardhanadhara-bkb,BUILT_DURING,pol:gupta,material:249,5,medium,verified-online,,,,src:wikipedia,,material
+art:govardhanadhara-bkb,HELD_AT,inst:bharat-kala-bhavan,material:245,4,medium,reference-checked,,,,src:wikipedia; src:wikimedia-commons,,material
+art:govardhanadhara-bkb,FOUND_AT,place:kashi,material:246,4,medium,reference-checked,,,,src:wikipedia,,material
+narr:govardhana,DEPICTED_IN,art:govardhanadhara-bkb,material:247,4,medium,reference-checked,,,,src:wikipedia,,material
+char:krishna,DEPICTED_IN,art:govardhanadhara-bkb,material:248,4,medium,reference-checked,,,,src:wikipedia,,material
+art:govardhanadhara-bkb,BUILT_DURING,pol:gupta,material:249,5,medium,reference-checked,,,,src:wikipedia,,material
 ins:gangdhar,REFERS_TO,deity:vishnu,material:250,3,high,verified-online,,,,src:wikipedia; src:fleet-1888,,material
-ins:gangdhar,REFERS_TO,deity:matrikas,material:251,3,high,verified-online,,,,src:wikipedia,,material
-ins:gangdhar,REFERS_TO,person:vishvavarman,material:252,3,high,verified-online,,,,src:wikipedia,,material
+ins:gangdhar,REFERS_TO,deity:matrikas,material:251,3,medium,reference-checked,,,,src:wikipedia,,material
+ins:gangdhar,REFERS_TO,person:vishvavarman,material:252,3,medium,reference-checked,,,,src:wikipedia,,material
 ins:gangdhar,FOUND_AT,site:gangdhar,material:253,4,high,verified-online,,,,src:wikipedia; src:siddham,,material
-ins:gangdhar,COMMISSIONED_BY,pol:aulikara,material:254,3,medium,verified-online,,,,src:wikipedia,,material
+ins:gangdhar,COMMISSIONED_BY,pol:aulikara,material:254,3,medium,reference-checked,,,,src:wikipedia,,material
 ins:gangdhar,DOCUMENTED_BY,person:jf-fleet,material:255,4,high,verified-online,,,,src:wikipedia; src:fleet-1888,,material
 ins:gangdhar,REFERS_TO,trad:shakta,material:256,5,low,disputed,,,,src:wikipedia,"Willis: the word is tāntra, not tantra.",material
-person:vishvavarman,MEMBER_OF,pol:aulikara,material:257,3,high,verified-online,,,,src:wikipedia,,material
+person:vishvavarman,MEMBER_OF,pol:aulikara,material:257,3,medium,reference-checked,,,,src:wikipedia,,material
 ins:mandasor-silk-weavers,REFERS_TO,deity:surya,material:258,3,high,source-checked,,,,src:wikipedia; src:fleet-1888,,material
 ins:mandasor-silk-weavers,REFERS_TO,trad:saura,material:259,3,high,source-checked,,,,src:wikipedia; src:fleet-1888,,material
 ins:mandasor-silk-weavers,REFERS_TO,person:kumaragupta-i,material:260,3,medium,source-checked,,,,src:wikipedia; src:fleet-1888,R. C. Majumdar identified this Kumāragupta as Kumāragupta II.,material
@@ -1411,88 +1411,88 @@ ins:dadhimati-mata,REFERS_TO_TEXT,text:devi-mahatmya,material:267,3,high,verifie
 ins:dadhimati-mata,REFERS_TO,deity:devi,material:268,3,high,verified-online,,,,src:ram-karna-ei11; src:wikipedia,,material
 ins:dadhimati-mata,FOUND_AT,site:goth-manglod,material:269,4,high,verified-online,,,,src:ram-karna-ei11,,material
 ins:dadhimati-mata,REFERS_TO,trad:shakta,material:270,3,medium,verified-online,,,,src:ram-karna-ei11,,material
-art:badami-nataraja,LOCATED_AT,temple:badami-caves,material:271,4,high,verified-online,,,,src:wikipedia,,material
-deity:shiva,DEPICTED_IN,art:badami-nataraja,material:272,4,high,verified-online,,,,src:wikipedia,,material
-deity:nataraja,DEPICTED_IN,art:badami-nataraja,material:273,5,medium,verified-online,,,,src:wikipedia,,material
-deity:ganesha,DEPICTED_IN,art:badami-nataraja,material:274,4,high,verified-online,,,,src:wikipedia,,material
-art:badami-nataraja,BUILT_DURING,pol:chalukya-badami,material:275,5,high,verified-online,,,,src:wikipedia,,material
-ins:badami-cave3,INSCRIBED_AT,temple:badami-caves,material:276,3,high,verified-online,,,,src:wikipedia; src:wikipedia,,material
-ins:badami-cave3,REFERS_TO,deity:vishnu,material:277,3,high,verified-online,,,,src:wikipedia,,material
-ins:badami-cave3,REFERS_TO,person:kirtivarman-i,material:278,3,high,verified-online,,,,src:wikipedia,,material
-ins:badami-cave3,COMMISSIONED_BY,person:mangalesha,material:279,3,high,verified-online,,,,src:wikipedia; src:wikipedia,,material
-temple:badami-caves,BUILT_DURING,pol:chalukya-badami,material:280,3,high,verified-online,,,,src:wikipedia; src:wikipedia,,material
-person:mangalesha,MEMBER_OF,pol:chalukya-badami,material:281,3,high,verified-online,,,,src:wikipedia,,material
-person:kirtivarman-i,MEMBER_OF,pol:chalukya-badami,material:282,3,high,verified-online,,,,src:wikipedia,,material
-person:pulakeshin-ii,MEMBER_OF,pol:chalukya-badami,material:283,3,high,verified-online,,,,src:wikipedia,,material
-person:kirtivarman-i,PARENT_OF,person:pulakeshin-ii,material:284,3,high,verified-online,,,,src:wikipedia,,material
-person:mangalesha,SIBLING_OF,person:kirtivarman-i,material:285,3,medium,verified-online,,,,src:wikipedia,,material
-person:mangalesha,ADVERSARY_OF,person:pulakeshin-ii,material:286,3,high,verified-online,,,,src:wikipedia; src:wikipedia,,material
-person:mangalesha,DEVOTEE_OF,deity:vishnu,material:287,3,medium,verified-online,trad:vaishnava,,,src:wikipedia,,material
-art:elephanta-sadashiva,LOCATED_AT,temple:elephanta,material:288,4,high,verified-online,,,,src:wikipedia,,material
+art:badami-nataraja,LOCATED_AT,temple:badami-caves,material:271,4,medium,reference-checked,,,,src:wikipedia,,material
+deity:shiva,DEPICTED_IN,art:badami-nataraja,material:272,4,medium,reference-checked,,,,src:wikipedia,,material
+deity:nataraja,DEPICTED_IN,art:badami-nataraja,material:273,5,medium,reference-checked,,,,src:wikipedia,,material
+deity:ganesha,DEPICTED_IN,art:badami-nataraja,material:274,4,medium,reference-checked,,,,src:wikipedia,,material
+art:badami-nataraja,BUILT_DURING,pol:chalukya-badami,material:275,5,medium,reference-checked,,,,src:wikipedia,,material
+ins:badami-cave3,INSCRIBED_AT,temple:badami-caves,material:276,3,medium,reference-checked,,,,src:wikipedia; src:wikipedia,,material
+ins:badami-cave3,REFERS_TO,deity:vishnu,material:277,3,medium,reference-checked,,,,src:wikipedia,,material
+ins:badami-cave3,REFERS_TO,person:kirtivarman-i,material:278,3,medium,reference-checked,,,,src:wikipedia,,material
+ins:badami-cave3,COMMISSIONED_BY,person:mangalesha,material:279,3,medium,reference-checked,,,,src:wikipedia; src:wikipedia,,material
+temple:badami-caves,BUILT_DURING,pol:chalukya-badami,material:280,3,medium,reference-checked,,,,src:wikipedia; src:wikipedia,,material
+person:mangalesha,MEMBER_OF,pol:chalukya-badami,material:281,3,medium,reference-checked,,,,src:wikipedia,,material
+person:kirtivarman-i,MEMBER_OF,pol:chalukya-badami,material:282,3,medium,reference-checked,,,,src:wikipedia,,material
+person:pulakeshin-ii,MEMBER_OF,pol:chalukya-badami,material:283,3,medium,reference-checked,,,,src:wikipedia,,material
+person:kirtivarman-i,PARENT_OF,person:pulakeshin-ii,material:284,3,medium,reference-checked,,,,src:wikipedia,,material
+person:mangalesha,SIBLING_OF,person:kirtivarman-i,material:285,3,medium,reference-checked,,,,src:wikipedia,,material
+person:mangalesha,ADVERSARY_OF,person:pulakeshin-ii,material:286,3,medium,reference-checked,,,,src:wikipedia; src:wikipedia,,material
+person:mangalesha,DEVOTEE_OF,deity:vishnu,material:287,3,medium,reference-checked,trad:vaishnava,,,src:wikipedia,,material
+art:elephanta-sadashiva,LOCATED_AT,temple:elephanta,material:288,4,medium,reference-checked,,,,src:wikipedia,,material
 art:elephanta-sadashiva,INTERPRETED_AS,deity:shiva,material:289,5,high,verified-online,,,,src:wikipedia; src:collins-1988,"Older reading: Trimūrti of Brahmā, Viṣṇu and Śiva.",material
-art:elephanta-sadashiva,INTERPRETED_AS,deity:parvati,material:290,5,medium,verified-online,,,,src:wikipedia,Also read as Brahmā in older literature.,material
-art:elephanta-sadashiva,INTERPRETED_AS,deity:brahma,material:291,5,low,verified-online,,,,src:wikipedia,Umā/Vāmadeva (modern).,material
-art:elephanta-sadashiva,BUILT_DURING,pol:early-kalachuri,material:292,5,medium,verified-online,,,,src:wikipedia,Older proposals 5th–9th century; Rāṣṭrakūṭa attribution discredited.,material
-temple:elephanta,BUILT_DURING,pol:early-kalachuri,material:293,5,medium,verified-online,,,,src:wikipedia,,material
+art:elephanta-sadashiva,INTERPRETED_AS,deity:parvati,material:290,5,medium,reference-checked,,,,src:wikipedia,Also read as Brahmā in older literature.,material
+art:elephanta-sadashiva,INTERPRETED_AS,deity:brahma,material:291,5,low,reference-checked,,,,src:wikipedia,Umā/Vāmadeva (modern).,material
+art:elephanta-sadashiva,BUILT_DURING,pol:early-kalachuri,material:292,5,medium,reference-checked,,,,src:wikipedia,Older proposals 5th–9th century; Rāṣṭrakūṭa attribution discredited.,material
+temple:elephanta,BUILT_DURING,pol:early-kalachuri,material:293,5,medium,reference-checked,,,,src:wikipedia,,material
 temple:elephanta,DOCUMENTED_BY,inst:unesco,material:294,4,high,verified-online,,,,src:wikipedia; src:unesco-whc,,material
-char:ravana,DEPICTED_IN,temple:elephanta,material:295,4,high,verified-online,,,,src:wikipedia,,material
-art:mamallapuram-mahishasuramardini,LOCATED_AT,temple:mamallapuram,material:296,4,high,verified-online,,,,src:wikipedia,,material
-deity:durga,DEPICTED_IN,art:mamallapuram-mahishasuramardini,material:297,4,high,verified-online,,,,src:wikipedia,,material
-char:mahishasura,DEPICTED_IN,art:mamallapuram-mahishasuramardini,material:298,4,high,verified-online,,,,src:wikipedia,,material
-narr:mahishasura-slaying,DEPICTED_IN,art:mamallapuram-mahishasuramardini,material:299,4,high,verified-online,,,,src:wikipedia,,material
-deity:vishnu,DEPICTED_IN,art:mamallapuram-mahishasuramardini,material:300,4,high,verified-online,,,,src:wikipedia,,material
-art:mamallapuram-mahishasuramardini,BUILT_DURING,pol:pallava,material:301,5,high,verified-online,,,,src:wikipedia,,material
-art:mamallapuram-great-relief,LOCATED_AT,temple:mamallapuram,material:302,4,high,verified-online,,,,src:wikipedia,,material
+char:ravana,DEPICTED_IN,temple:elephanta,material:295,4,medium,reference-checked,,,,src:wikipedia,,material
+art:mamallapuram-mahishasuramardini,LOCATED_AT,temple:mamallapuram,material:296,4,medium,reference-checked,,,,src:wikipedia,,material
+deity:durga,DEPICTED_IN,art:mamallapuram-mahishasuramardini,material:297,4,medium,reference-checked,,,,src:wikipedia,,material
+char:mahishasura,DEPICTED_IN,art:mamallapuram-mahishasuramardini,material:298,4,medium,reference-checked,,,,src:wikipedia,,material
+narr:mahishasura-slaying,DEPICTED_IN,art:mamallapuram-mahishasuramardini,material:299,4,medium,reference-checked,,,,src:wikipedia,,material
+deity:vishnu,DEPICTED_IN,art:mamallapuram-mahishasuramardini,material:300,4,medium,reference-checked,,,,src:wikipedia,,material
+art:mamallapuram-mahishasuramardini,BUILT_DURING,pol:pallava,material:301,5,medium,reference-checked,,,,src:wikipedia,,material
+art:mamallapuram-great-relief,LOCATED_AT,temple:mamallapuram,material:302,4,medium,reference-checked,,,,src:wikipedia,,material
 art:mamallapuram-great-relief,INTERPRETED_AS,char:arjuna,material:303,5,medium,disputed,,,,src:wikipedia; src:kaimal-1994,Bhagīratha's penance (Descent of the Gaṅgā); deliberate double reading (Kaimal).,material
 art:mamallapuram-great-relief,INTERPRETED_AS,char:bhagiratha,material:304,5,medium,disputed,,,,src:wikipedia; src:kaimal-1994,Arjuna's penance.,material
 narr:descent-of-ganga,DEPICTED_IN,art:mamallapuram-great-relief,material:305,5,medium,disputed,,,,src:wikipedia; src:kaimal-1994,"If the ascetic is Arjuna, the cleft may still evoke the Gaṅgā.",material
-deity:shiva,DEPICTED_IN,art:mamallapuram-great-relief,material:306,4,high,verified-online,,,,src:wikipedia,,material
+deity:shiva,DEPICTED_IN,art:mamallapuram-great-relief,material:306,4,medium,reference-checked,,,,src:wikipedia,,material
 deity:ganga,DEPICTED_IN,art:mamallapuram-great-relief,material:307,5,medium,disputed,,,,src:wikipedia,,material
-art:mamallapuram-great-relief,BUILT_DURING,pol:pallava,material:308,5,high,verified-online,,,,src:wikipedia,,material
+art:mamallapuram-great-relief,BUILT_DURING,pol:pallava,material:308,5,medium,reference-checked,,,,src:wikipedia,,material
 art:mamallapuram-great-relief,COMMISSIONED_BY,person:narasimhavarman-i,material:309,5,low,disputed,,,,src:wikipedia,Other Pallava kings (e.g. a later attribution) are proposed in the literature.,material
-claim:mamallapuram-relief-identity,CONCERNS,art:mamallapuram-great-relief,material:310,5,high,verified-online,,,,src:wikipedia,,material
-claim:mamallapuram-relief-identity,CONCERNS,narr:descent-of-ganga,material:311,5,high,verified-online,,,,src:wikipedia,,material
-claim:mamallapuram-relief-identity,CONCERNS,char:arjuna,material:312,5,high,verified-online,,,,src:wikipedia,,material
-claim:mamallapuram-relief-identity,CONCERNS,char:bhagiratha,material:313,5,high,verified-online,,,,src:wikipedia,,material
+claim:mamallapuram-relief-identity,CONCERNS,art:mamallapuram-great-relief,material:310,5,medium,reference-checked,,,,src:wikipedia,,material
+claim:mamallapuram-relief-identity,CONCERNS,narr:descent-of-ganga,material:311,5,medium,reference-checked,,,,src:wikipedia,,material
+claim:mamallapuram-relief-identity,CONCERNS,char:arjuna,material:312,5,medium,reference-checked,,,,src:wikipedia,,material
+claim:mamallapuram-relief-identity,CONCERNS,char:bhagiratha,material:313,5,medium,reference-checked,,,,src:wikipedia,,material
 claim:mamallapuram-relief-identity,CONCERNS,person:bharavi,material:314,5,low,source-checked,,,,src:kaimal-1994,,material
 art:mamallapuram-great-relief,SUPPORTS,claim:mamallapuram-relief-identity,material:315,5,medium,verified-online,,,,src:wikipedia; src:kaimal-1994,,material
 art:mamallapuram-great-relief,CONTRADICTS,claim:mamallapuram-relief-identity,material:316,5,medium,verified-online,,,,src:wikipedia; src:kaimal-1994,,material
 person:narasimhavarman-i,MEMBER_OF,pol:pallava,material:317,3,high,verified-online,,,,src:wikipedia; src:singh-2008,,material
 person:narasimhavarman-i,ADVERSARY_OF,person:pulakeshin-ii,material:318,3,high,source-checked,,,,src:wikipedia; src:singh-2008,,material
-temple:mamallapuram,BUILT_DURING,pol:pallava,material:319,5,high,verified-online,,,,src:wikipedia; src:wikipedia,,material
-art:ellora-ravananugraha,LOCATED_AT,temple:kailasa-ellora,material:320,4,high,verified-online,,,,src:wikipedia,,material
-char:ravana,DEPICTED_IN,art:ellora-ravananugraha,material:321,4,high,verified-online,,,,src:wikipedia,,material
-deity:shiva,DEPICTED_IN,art:ellora-ravananugraha,material:322,4,high,verified-online,,,,src:wikipedia,,material
-deity:parvati,DEPICTED_IN,art:ellora-ravananugraha,material:323,4,high,verified-online,,,,src:wikipedia,,material
-place:kailasa,DEPICTED_IN,art:ellora-ravananugraha,material:324,4,high,verified-online,,,,src:wikipedia,,material
+temple:mamallapuram,BUILT_DURING,pol:pallava,material:319,5,medium,reference-checked,,,,src:wikipedia; src:wikipedia,,material
+art:ellora-ravananugraha,LOCATED_AT,temple:kailasa-ellora,material:320,4,medium,reference-checked,,,,src:wikipedia,,material
+char:ravana,DEPICTED_IN,art:ellora-ravananugraha,material:321,4,medium,reference-checked,,,,src:wikipedia,,material
+deity:shiva,DEPICTED_IN,art:ellora-ravananugraha,material:322,4,medium,reference-checked,,,,src:wikipedia,,material
+deity:parvati,DEPICTED_IN,art:ellora-ravananugraha,material:323,4,medium,reference-checked,,,,src:wikipedia,,material
+place:kailasa,DEPICTED_IN,art:ellora-ravananugraha,material:324,4,medium,reference-checked,,,,src:wikipedia,,material
 art:ellora-ravananugraha,BUILT_DURING,pol:rashtrakuta,material:325,5,high,verified-online,,,,src:wikipedia; src:dhavalikar-2003,Panel possibly 3–4 decades later than the shrine (Dhavalikar) or as late as Kṛṣṇa III (Goetz).,material
-temple:kailasa-ellora,BUILT_DURING,pol:rashtrakuta,material:326,3,high,verified-online,,,,src:wikipedia,,material
-temple:kailasa-ellora,COMMISSIONED_BY,person:krishna-i-rashtrakuta,material:327,3,medium,verified-online,,,,src:wikipedia,Attribution not completely certain: the plates are not physically connected to the temple; Goetz proposed a start under Dantidurga.,material
-person:krishna-i-rashtrakuta,MEMBER_OF,pol:rashtrakuta,material:328,3,high,verified-online,,,,src:wikipedia,,material
-ins:aihole-ravikirti,INSCRIBED_AT,temple:meguti-aihole,material:329,3,high,verified-online,,,,src:wikipedia,,material
+temple:kailasa-ellora,BUILT_DURING,pol:rashtrakuta,material:326,3,medium,reference-checked,,,,src:wikipedia,,material
+temple:kailasa-ellora,COMMISSIONED_BY,person:krishna-i-rashtrakuta,material:327,3,medium,reference-checked,,,,src:wikipedia,Attribution not completely certain: the plates are not physically connected to the temple; Goetz proposed a start under Dantidurga.,material
+person:krishna-i-rashtrakuta,MEMBER_OF,pol:rashtrakuta,material:328,3,medium,reference-checked,,,,src:wikipedia,,material
+ins:aihole-ravikirti,INSCRIBED_AT,temple:meguti-aihole,material:329,3,medium,reference-checked,,,,src:wikipedia,,material
 ins:aihole-ravikirti,COMPOSED_BY,person:ravikirti,material:330,3,high,verified-online,,,,src:wikipedia; src:kielhorn-ei6,,material
-ins:aihole-ravikirti,REFERS_TO,person:pulakeshin-ii,material:331,3,high,verified-online,,,,src:wikipedia,,material
-ins:aihole-ravikirti,REFERS_TO,person:mangalesha,material:332,3,high,verified-online,,,,src:wikipedia; src:wikipedia,,material
+ins:aihole-ravikirti,REFERS_TO,person:pulakeshin-ii,material:331,3,medium,reference-checked,,,,src:wikipedia,,material
+ins:aihole-ravikirti,REFERS_TO,person:mangalesha,material:332,3,medium,reference-checked,,,,src:wikipedia; src:wikipedia,,material
 ins:aihole-ravikirti,REFERS_TO,person:kalidasa,material:333,3,high,verified-online,,,,src:wikipedia; src:kielhorn-ei6,,material
 ins:aihole-ravikirti,REFERS_TO,person:bharavi,material:334,3,high,verified-online,,,,src:wikipedia; src:kielhorn-ei6,,material
-ins:aihole-ravikirti,REFERS_TO,trad:jain,material:336,3,high,verified-online,,,,src:wikipedia,,material
-ins:aihole-ravikirti,DOCUMENTED_BY,person:jf-fleet,material:337,4,high,verified-online,,,,src:wikipedia,,material
+ins:aihole-ravikirti,REFERS_TO,trad:jain,material:336,3,medium,reference-checked,,,,src:wikipedia,,material
+ins:aihole-ravikirti,DOCUMENTED_BY,person:jf-fleet,material:337,4,medium,reference-checked,,,,src:wikipedia,,material
 ins:aihole-ravikirti,DOCUMENTED_BY,person:franz-kielhorn,material:338,4,high,verified-online,,,,src:wikipedia; src:kielhorn-ei6,,material
-ins:aihole-ravikirti,COMMISSIONED_BY,person:pulakeshin-ii,material:339,5,medium,verified-online,,,,src:wikipedia,,material
-person:ravikirti,SERVES,person:pulakeshin-ii,material:340,3,high,verified-online,,,court poet,src:wikipedia,,material
-temple:meguti-aihole,BUILT_DURING,pol:chalukya-badami,material:341,3,high,verified-online,,,,src:wikipedia,,material
-ins:changu-narayan-manadeva,INSCRIBED_AT,temple:changu-narayan,material:342,3,high,verified-online,,,,src:wikipedia,,material
-ins:changu-narayan-manadeva,COMMISSIONED_BY,person:manadeva,material:343,3,high,verified-online,,,,src:wikipedia; src:wikipedia,,material
+ins:aihole-ravikirti,COMMISSIONED_BY,person:pulakeshin-ii,material:339,5,medium,reference-checked,,,,src:wikipedia,,material
+person:ravikirti,SERVES,person:pulakeshin-ii,material:340,3,medium,reference-checked,,,court poet,src:wikipedia,,material
+temple:meguti-aihole,BUILT_DURING,pol:chalukya-badami,material:341,3,medium,reference-checked,,,,src:wikipedia,,material
+ins:changu-narayan-manadeva,INSCRIBED_AT,temple:changu-narayan,material:342,3,medium,reference-checked,,,,src:wikipedia,,material
+ins:changu-narayan-manadeva,COMMISSIONED_BY,person:manadeva,material:343,3,medium,reference-checked,,,,src:wikipedia; src:wikipedia,,material
 ins:changu-narayan-manadeva,DOCUMENTED_BY,person:georg-buhler,material:344,4,high,verified-online,,,,src:wikipedia; src:indraji-buhler-1885,,material
-person:manadeva,MEMBER_OF,pol:licchavi-nepal,material:345,3,high,verified-online,,,,src:wikipedia,,material
-temple:changu-narayan,BUILT_DURING,pol:licchavi-nepal,material:346,3,medium,verified-online,,,,src:wikipedia; src:wikipedia,The surviving temple fabric is much later (rebuilt; restored after 2015).,material
+person:manadeva,MEMBER_OF,pol:licchavi-nepal,material:345,3,medium,reference-checked,,,,src:wikipedia,,material
+temple:changu-narayan,BUILT_DURING,pol:licchavi-nepal,material:346,3,medium,reference-checked,,,,src:wikipedia; src:wikipedia,The surviving temple fabric is much later (rebuilt; restored after 2015).,material
 ins:shivagrha,REFERS_TO,deity:shiva,material:347,3,high,verified-online,,,,src:wikipedia; src:de-casparis-1956,,material
 ins:shivagrha,REFERS_TO,temple:prambanan,material:348,5,high,verified-online,,,,src:wikipedia; src:de-casparis-1956,,material
-ins:shivagrha,FOUND_AT,temple:prambanan,material:349,4,medium,verified-online,,,,src:wikipedia,,material
-ins:shivagrha,HELD_AT,inst:national-museum-indonesia,material:350,4,high,verified-online,,,,src:wikipedia,,material
-ins:shivagrha,COMMISSIONED_BY,person:dyah-lokapala,material:351,3,high,verified-online,,,,src:wikipedia,,material
+ins:shivagrha,FOUND_AT,temple:prambanan,material:349,4,medium,reference-checked,,,,src:wikipedia,,material
+ins:shivagrha,HELD_AT,inst:national-museum-indonesia,material:350,4,medium,reference-checked,,,,src:wikipedia,,material
+ins:shivagrha,COMMISSIONED_BY,person:dyah-lokapala,material:351,3,medium,reference-checked,,,,src:wikipedia,,material
 ins:shivagrha,DOCUMENTED_BY,person:jg-de-casparis,material:352,4,high,verified-online,,,,src:wikipedia; src:de-casparis-1956,,material
-person:dyah-lokapala,MEMBER_OF,pol:medang,material:353,3,high,verified-online,,,,src:wikipedia,,material
+person:dyah-lokapala,MEMBER_OF,pol:medang,material:353,3,medium,reference-checked,,,,src:wikipedia,,material
 temple:prambanan,BUILT_DURING,pol:medang,material:354,5,high,verified-online,,,,src:wikipedia; src:de-casparis-1956,,material
 art:chola-nataraja,HELD_AT,inst:cleveland-museum,material:355,4,high,verified-online,,,,src:cma-open-access @ Accession no. 1930.331,,material
 deity:nataraja,DEPICTED_IN,art:chola-nataraja,material:356,4,high,verified-online,,,,src:cma-open-access @ Accession no. 1930.331; src:dehejia-1990,,material
@@ -1511,14 +1511,14 @@ art:phnom-da-krishna,HELD_AT,inst:cleveland-museum,material:368,4,high,verified-
 art:phnom-da-krishna,FOUND_AT,site:phnom-da,material:369,4,high,verified-online,,,,src:cma-open-access @ Accession no. 1973.106; src:wikipedia,,material
 narr:govardhana,DEPICTED_IN,art:phnom-da-krishna,material:370,4,high,verified-online,,,,src:cma-open-access @ Accession no. 1973.106,,material
 char:krishna,DEPICTED_IN,art:phnom-da-krishna,material:371,4,high,verified-online,,,,src:cma-open-access @ Accession no. 1973.106,,material
-ms:spitzer,REFERS_TO_TEXT,text:manusmriti,material:373,2,medium,verified-online,,,,src:wikipedia,,material
-ms:spitzer,FOUND_AT,site:kizil-caves,material:374,4,high,verified-online,,,,src:wikipedia; src:wikipedia,,material
-ms:spitzer,HELD_AT,inst:berlin-state-library,material:375,2,high,verified-online,,,,src:wikipedia,,material
-ms:spitzer,HELD_AT,inst:british-library,material:376,2,medium,verified-online,,,,src:wikipedia,,material
+ms:spitzer,REFERS_TO_TEXT,text:manusmriti,material:373,2,medium,reference-checked,,,,src:wikipedia,,material
+ms:spitzer,FOUND_AT,site:kizil-caves,material:374,4,medium,reference-checked,,,,src:wikipedia; src:wikipedia,,material
+ms:spitzer,HELD_AT,inst:berlin-state-library,material:375,2,medium,reference-checked,,,,src:wikipedia,,material
+ms:spitzer,HELD_AT,inst:british-library,material:376,2,medium,reference-checked,,,,src:wikipedia,,material
 ms:spitzer,DOCUMENTED_BY,person:dieter-schlingloff,material:377,4,high,verified-online,,,,src:wikipedia; src:schlingloff-1969,,material
 ms:spitzer,DOCUMENTED_BY,person:eli-franco,material:378,4,high,verified-online,,,,src:wikipedia; src:franco-2004,,material
 ms:skandapurana-810,WITNESS_OF,text:skandapurana-early,material:379,2,high,verified-online,,,,src:wikipedia; src:skandapurana-vol1,,material
-ms:skandapurana-810,HELD_AT,inst:national-archives-nepal,material:380,2,high,verified-online,,,,src:wikipedia,,material
+ms:skandapurana-810,HELD_AT,inst:national-archives-nepal,material:380,2,medium,reference-checked,,,,src:wikipedia,,material
 ms:skandapurana-810,DOCUMENTED_BY,inst:ngmcp,material:381,4,high,verified-online,,,,src:wikipedia; src:ngmcp,,material
 ms:rigveda-bori,WITNESS_OF,text:rigveda,material:382,2,high,verified-online,,,,src:unesco-mow-rigveda,,material
 ms:rigveda-bori,HELD_AT,inst:bori,material:383,2,high,verified-online,,,,src:unesco-mow-rigveda,,material
@@ -1538,56 +1538,56 @@ text:mahabharata,EDITED_BY,person:vs-sukthankar,material:396,1,high,source-check
 person:vs-sukthankar,MEMBER_OF,inst:bori,material:397,4,high,source-checked,,,,src:mbh-critical-edition,,material
 site:hastinapura-excavation,ASSOCIATED_WITH,place:hastinapura,material:398,6,high,verified-online,,,,src:wikipedia; src:lal-1955,,material
 site:hastinapura-excavation,DOCUMENTED_BY,person:bb-lal,material:399,4,high,verified-online,,,,src:wikipedia; src:lal-1955,,material
-site:hastinapura-excavation,DOCUMENTED_BY,inst:asi,material:400,4,high,verified-online,,,,src:wikipedia,,material
+site:hastinapura-excavation,DOCUMENTED_BY,inst:asi,material:400,4,medium,reference-checked,,,,src:wikipedia,,material
 person:bb-lal,MEMBER_OF,inst:asi,material:401,4,high,source-checked,,,,src:wikipedia,,material
 claim:pgw-mahabharata,CONCERNS,text:mahabharata,material:402,7,high,verified-online,,,,src:wikipedia; src:lal-1981,,material
 claim:pgw-mahabharata,CONCERNS,narr:kurukshetra-war,material:403,7,medium,source-checked,,,,src:lal-1981,,material
-claim:pgw-mahabharata,CONCERNS,place:hastinapura,material:404,7,high,verified-online,,,,src:wikipedia,,material
-claim:pgw-mahabharata,CONCERNS,place:indraprastha,material:405,7,high,verified-online,,,,src:wikipedia,,material
+claim:pgw-mahabharata,CONCERNS,place:hastinapura,material:404,7,medium,reference-checked,,,,src:wikipedia,,material
+claim:pgw-mahabharata,CONCERNS,place:indraprastha,material:405,7,medium,reference-checked,,,,src:wikipedia,,material
 claim:pgw-mahabharata,CONCERNS,place:kurukshetra,material:406,7,medium,source-checked,,,,src:lal-1981,,material
-claim:pgw-mahabharata,CONCERNS,site:hastinapura-excavation,material:407,7,high,verified-online,,,,src:wikipedia,,material
+claim:pgw-mahabharata,CONCERNS,site:hastinapura-excavation,material:407,7,medium,reference-checked,,,,src:wikipedia,,material
 claim:pgw-mahabharata,CONCERNS,person:bb-lal,material:408,5,high,verified-online,,,,src:wikipedia; src:lal-1981,,material
 site:hastinapura-excavation,SUPPORTS,claim:pgw-mahabharata,material:409,5,low,verified-online,,,,src:wikipedia; src:lal-1955,,material
-site:purana-qila,SUPPORTS,claim:pgw-mahabharata,material:410,5,low,verified-online,,,,src:wikipedia,,material
+site:purana-qila,SUPPORTS,claim:pgw-mahabharata,material:410,5,low,reference-checked,,,,src:wikipedia,,material
 site:hastinapura-excavation,CONTRADICTS,claim:pgw-mahabharata,material:411,5,medium,verified-online,,,,src:wikipedia; src:wikipedia; src:singh-2008,,material
-claim:hastinapura-flood-nichakshu,CONCERNS,site:hastinapura-excavation,material:412,7,high,verified-online,,,,src:wikipedia,,material
-claim:hastinapura-flood-nichakshu,CONCERNS,place:hastinapura,material:413,7,high,verified-online,,,,src:wikipedia,,material
+claim:hastinapura-flood-nichakshu,CONCERNS,site:hastinapura-excavation,material:412,7,medium,reference-checked,,,,src:wikipedia,,material
+claim:hastinapura-flood-nichakshu,CONCERNS,place:hastinapura,material:413,7,medium,reference-checked,,,,src:wikipedia,,material
 claim:hastinapura-flood-nichakshu,CONCERNS,char:parikshit,material:414,7,low,recall,,,,src:wikipedia; src:wilson-vp @ ViP book 4,,material
 claim:hastinapura-flood-nichakshu,CONCERNS,text:vishnu-purana,material:415,7,medium,recall,,,,src:wilson-vp @ ViP book 4,,material
 site:hastinapura-excavation,SUPPORTS,claim:hastinapura-flood-nichakshu,material:416,4,low,verified-online,,,,src:wikipedia; src:lal-1955,,material
-site:hastinapura-excavation,CONTRADICTS,claim:hastinapura-flood-nichakshu,material:417,5,low,verified-online,,,,src:wikipedia,,material
-claim:purana-qila-indraprastha,CONCERNS,site:purana-qila,material:418,7,high,verified-online,,,,src:wikipedia,,material
-claim:purana-qila-indraprastha,CONCERNS,place:indraprastha,material:419,7,high,verified-online,,,,src:wikipedia,,material
-claim:purana-qila-indraprastha,CONCERNS,lin:pandavas,material:420,7,medium,verified-online,,,,src:wikipedia,,material
-site:purana-qila,SUPPORTS,claim:purana-qila-indraprastha,material:421,5,low,verified-online,,,,src:wikipedia,,material
-site:purana-qila,CONTRADICTS,claim:purana-qila-indraprastha,material:422,5,medium,verified-online,,,,src:wikipedia,,material
-site:purana-qila,ASSOCIATED_WITH,place:indraprastha,material:423,6,medium,verified-online,,,,src:wikipedia,,material
-site:purana-qila,DOCUMENTED_BY,person:bb-lal,material:424,4,high,verified-online,,,,src:wikipedia,,material
-site:purana-qila,DOCUMENTED_BY,inst:asi,material:425,4,high,verified-online,,,,src:wikipedia,,material
-site:purana-qila,DOCUMENTED_BY,person:alexander-cunningham,material:426,5,medium,verified-online,,,,src:wikipedia,,material
+site:hastinapura-excavation,CONTRADICTS,claim:hastinapura-flood-nichakshu,material:417,5,low,reference-checked,,,,src:wikipedia,,material
+claim:purana-qila-indraprastha,CONCERNS,site:purana-qila,material:418,7,medium,reference-checked,,,,src:wikipedia,,material
+claim:purana-qila-indraprastha,CONCERNS,place:indraprastha,material:419,7,medium,reference-checked,,,,src:wikipedia,,material
+claim:purana-qila-indraprastha,CONCERNS,lin:pandavas,material:420,7,medium,reference-checked,,,,src:wikipedia,,material
+site:purana-qila,SUPPORTS,claim:purana-qila-indraprastha,material:421,5,low,reference-checked,,,,src:wikipedia,,material
+site:purana-qila,CONTRADICTS,claim:purana-qila-indraprastha,material:422,5,medium,reference-checked,,,,src:wikipedia,,material
+site:purana-qila,ASSOCIATED_WITH,place:indraprastha,material:423,6,medium,reference-checked,,,,src:wikipedia,,material
+site:purana-qila,DOCUMENTED_BY,person:bb-lal,material:424,4,medium,reference-checked,,,,src:wikipedia,,material
+site:purana-qila,DOCUMENTED_BY,inst:asi,material:425,4,medium,reference-checked,,,,src:wikipedia,,material
+site:purana-qila,DOCUMENTED_BY,person:alexander-cunningham,material:426,5,medium,reference-checked,,,,src:wikipedia,,material
 site:dwarka-offshore,ASSOCIATED_WITH,place:dvaraka,material:427,6,medium,source-checked,,,,src:wikipedia; src:rao-1999,,material
 site:dwarka-offshore,DOCUMENTED_BY,person:sr-rao,material:428,4,high,verified-online,,,,src:wikipedia; src:rao-1999,,material
 site:dwarka-offshore,DOCUMENTED_BY,inst:nio,material:429,4,high,source-checked,,,,src:gaur-2004; src:wikipedia,,material
-site:dwarka-offshore,DOCUMENTED_BY,person:hd-sankalia,material:430,4,medium,verified-online,,,,src:wikipedia,,material
-site:dwarka-offshore,DOCUMENTED_BY,inst:asi,material:431,4,medium,verified-online,,,,src:wikipedia,,material
+site:dwarka-offshore,DOCUMENTED_BY,person:hd-sankalia,material:430,4,medium,reference-checked,,,,src:wikipedia,,material
+site:dwarka-offshore,DOCUMENTED_BY,inst:asi,material:431,4,medium,reference-checked,,,,src:wikipedia,,material
 person:sr-rao,MEMBER_OF,inst:nio,material:432,4,high,source-checked,,,,src:wikipedia; src:rao-1999,,material
-claim:dwarka-submerged,CONCERNS,site:dwarka-offshore,material:433,7,high,verified-online,,,,src:wikipedia; src:wikipedia,,material
-claim:dwarka-submerged,CONCERNS,place:dvaraka,material:434,7,high,verified-online,,,,src:wikipedia,,material
-claim:dwarka-submerged,CONCERNS,char:krishna,material:435,7,high,verified-online,,,,src:wikipedia,,material
+claim:dwarka-submerged,CONCERNS,site:dwarka-offshore,material:433,7,medium,reference-checked,,,,src:wikipedia; src:wikipedia,,material
+claim:dwarka-submerged,CONCERNS,place:dvaraka,material:434,7,medium,reference-checked,,,,src:wikipedia,,material
+claim:dwarka-submerged,CONCERNS,char:krishna,material:435,7,medium,reference-checked,,,,src:wikipedia,,material
 claim:dwarka-submerged,CONCERNS,narr:destruction-of-yadavas,material:436,7,medium,source-checked,,,,src:rao-1999,,material
-claim:dwarka-submerged,CONCERNS,temple:dwarkadhish,material:437,7,low,verified-online,,,,src:wikipedia,,material
-claim:dwarka-submerged,CONCERNS,person:sr-rao,material:438,5,high,verified-online,,,,src:wikipedia,,material
+claim:dwarka-submerged,CONCERNS,temple:dwarkadhish,material:437,7,low,reference-checked,,,,src:wikipedia,,material
+claim:dwarka-submerged,CONCERNS,person:sr-rao,material:438,5,medium,reference-checked,,,,src:wikipedia,,material
 site:dwarka-offshore,SUPPORTS,claim:dwarka-submerged,material:439,5,low,verified-online,,,,src:wikipedia; src:rao-1999,,material
 site:dwarka-offshore,CONTRADICTS,claim:dwarka-submerged,material:440,5,medium,source-checked,,,,src:gaur-2004; src:wikipedia,,material
-claim:rama-setu-built,CONCERNS,place:adams-bridge,material:441,7,high,verified-online,,,,src:wikipedia,,material
-claim:rama-setu-built,CONCERNS,narr:setu-bandha,material:442,7,high,verified-online,,,,src:wikipedia,,material
+claim:rama-setu-built,CONCERNS,place:adams-bridge,material:441,7,medium,reference-checked,,,,src:wikipedia,,material
+claim:rama-setu-built,CONCERNS,narr:setu-bandha,material:442,7,medium,reference-checked,,,,src:wikipedia,,material
 claim:rama-setu-built,CONCERNS,text:valmiki-ramayana,material:443,7,high,source-checked,,,,src:wikipedia; src:goldman-vr,,material
-claim:rama-setu-built,CONCERNS,char:rama,material:444,7,high,verified-online,,,,src:wikipedia,,material
+claim:rama-setu-built,CONCERNS,char:rama,material:444,7,medium,reference-checked,,,,src:wikipedia,,material
 claim:rama-setu-built,CONCERNS,place:lanka-narrative,material:445,7,medium,source-checked,,,,src:wikipedia; src:sankalia-1973,,material
-claim:rama-setu-built,CONCERNS,place:rameswaram-island,material:446,7,high,verified-online,,,,src:wikipedia,,material
+claim:rama-setu-built,CONCERNS,place:rameswaram-island,material:446,7,medium,reference-checked,,,,src:wikipedia,,material
 claim:rama-setu-built,CONCERNS,inst:asi,material:447,5,medium,source-checked,,,,src:wikipedia; src:scroll-2022-ram-setu,,material
 place:adams-bridge,SUPPORTS,claim:rama-setu-built,material:448,7,low,disputed,,,,src:wikipedia; src:scroll-2022-ram-setu,,material
-place:adams-bridge,CONTRADICTS,claim:rama-setu-built,material:449,5,high,verified-online,,,,src:wikipedia; src:scroll-2022-ram-setu,,material
+place:adams-bridge,CONTRADICTS,claim:rama-setu-built,material:449,5,medium,reference-checked,,,,src:wikipedia; src:scroll-2022-ram-setu,,material
 deity:sankarshana,IDENTIFIED_WITH,char:balarama,material:450,5,high,source-checked,trad:bhagavata,,,src:jaiswal-1981; src:srinivasan-1979; src:wikipedia,,material
 deity:sankarshana,FORM_OF,deity:vasudeva,material:451,5,medium,source-checked,trad:pancharatra,,,src:srinivasan-1979; src:jaiswal-1981,,material
 deity:vasudeva,CENTRAL_TO,trad:bhagavata,material:452,3,high,verified-online,,,,src:wikipedia; src:wikipedia; src:jaiswal-1981,,material
@@ -1597,6 +1597,14 @@ temple:angkor-wat,BUILT_DURING,pol:khmer,material:455,5,high,source-checked,,,,s
 temple:kandariya-mahadeva,BUILT_DURING,pol:chandela,material:456,5,high,source-checked,,,,src:singh-2008; src:unesco-whc,,material
 temple:konark,BUILT_DURING,pol:eastern-ganga,material:457,5,high,source-checked,,,,src:singh-2008; src:unesco-whc,,material
 temple:hazara-rama,BUILT_DURING,pol:vijayanagara,material:458,5,high,source-checked,,,,src:singh-2008; src:unesco-whc,,material
+deity:shiva,APPEARS_IN,text:shvetashvatara-upanishad,orchestrator:1,1,high,verified-online,,,"the one supreme lord, Rudra–Śiva",src:gretil-shvetashvatara @ ŚvU 3.11; 4.10; 4.14; src:chakravarti-1986,,orchestrator
+deity:shiva,APPEARS_IN,text:mahabharata,orchestrator:2,1,high,verified-online,,,Kirāta episode and elsewhere,src:gretil-mbh-ce @ MBh (CE) 3.40–41,,orchestrator
+deity:shiva,APPEARS_IN,text:linga-purana,orchestrator:3,1,high,verified-online,,,the Liṅgodbhava,src:gretil @ LiP 1.17.37–45,,orchestrator
+deity:shiva,APPEARS_IN,text:bhagavata-purana,orchestrator:4,1,high,verified-online,,,Dakṣa’s sacrifice,src:gretil @ BhP 4.2–7,,orchestrator
+char:ila,IDENTIFIED_WITH,char:ida,orchestrator:5,5,medium,source-checked,Purāṇic genealogy and modern scholarship,,,src:gretil @ ViP (crit.) 4.1.10–13; src:gretil @ BhP 9.1,,orchestrator
+ins:rajarajeshvaram-inscriptions,INSCRIBED_AT,temple:brihadisvara,orchestrator:6,3,high,source-checked,,,,src:hultzsch-sii2,,orchestrator
+ins:rajarajeshvaram-inscriptions,REFERS_TO,person:rajaraja-i,orchestrator:7,3,high,source-checked,,,,src:hultzsch-sii2,,orchestrator
+ins:rajarajeshvaram-inscriptions,DOCUMENTED_BY,inst:asi,orchestrator:8,4,high,source-checked,,,,src:hultzsch-sii2,,orchestrator
 text:brahma-purana,PART_OF,col:mahapuranas,purana:1,1,high,verified-online,,text:vishnu-purana,,src:gretil @ ViP (crit.) 3.6.21–23; src:gretil @ BhP 12.7.23–24,,purana
 text:padma-purana,PART_OF,col:mahapuranas,purana:2,1,high,verified-online,,text:vishnu-purana,,src:gretil @ ViP (crit.) 3.6.21–23; src:gretil @ BhP 12.7.23–24,,purana
 text:vishnu-purana,PART_OF,col:mahapuranas,purana:3,1,high,verified-online,,text:vishnu-purana,,src:gretil @ ViP (crit.) 3.6.21–23; src:gretil @ BhP 12.7.23–24,,purana
@@ -2493,10 +2501,10 @@ deity:nataraja,APPEARS_IN,text:tiruvacakam,regional:261,1,high,source-checked,,,
 deity:vishnu,APPEARS_IN,text:divya-prabandham,regional:262,1,high,source-checked,,,hymn-addressee,src:carman-narayanan-1989 @ passim; src:narayanan-1994,,regional
 deity:vishnu,APPEARS_IN,text:tiruvaymoli,regional:263,1,high,source-checked,,,hymn-addressee,src:carman-narayanan-1989 @ passim; src:narayanan-1994,,regional
 deity:vitthala,APPEARS_IN,text:tukaram-gatha,regional:264,1,high,source-checked,,,hymn-addressee,src:chitre-1991 @ passim,,regional
-char:sita,SIBLING_OF,char:rama,regional:265,1,high,verified-online,,text:dasaratha-jataka,,src:fausboll-1871 @ Jātaka no. 461,,regional
+char:sita,SIBLING_OF,char:rama,regional:265,1,high,verified-online,,text:dasaratha-jataka,,"src:fausboll-1871 @ Jātaka no. 461; src:cowell-jataka @ vol. IV, no. 461",,regional
 char:sita,SIBLING_OF,char:lakshmana,regional:266,1,high,verified-online,,text:dasaratha-jataka,,src:fausboll-1871 @ Jātaka no. 461,,regional
 char:dasharatha,PARENT_OF,char:sita,regional:267,1,high,verified-online,,text:dasaratha-jataka,,src:fausboll-1871 @ Jātaka no. 461,,regional
-char:sita,SPOUSE_OF,char:rama,regional:268,1,high,verified-online,,text:dasaratha-jataka,,src:fausboll-1871 @ Jātaka no. 461,,regional
+char:sita,SPOUSE_OF,char:rama,regional:268,1,high,verified-online,,text:dasaratha-jataka,,"src:fausboll-1871 @ Jātaka no. 461; src:cowell-jataka @ vol. IV, no. 461",,regional
 char:thotsakan,PARENT_OF,char:sita,regional:269,1,high,source-checked,,text:ramakien,,src:olsson-1968 @ Sida’s birth; src:wikipedia,,regional
 char:janaka,ADOPTIVE_PARENT_OF,char:sita,regional:270,1,high,source-checked,,text:ramakien,,src:olsson-1968 @ Sida’s birth; src:wikipedia,,regional
 char:ravana,PARENT_OF,char:sita,regional:271,1,medium,recall,,text:uttarapurana-gunabhadra,,src:kulkarni-1990 @ Guṇabhadra’s Rāma narrative,,regional
@@ -2729,305 +2737,305 @@ temple:brihadisvara,COMMISSIONED_BY,person:rajaraja-i,temple:2,3,high,verified-o
 temple:brihadisvara,BUILT_DURING,pol:chola,temple:3,3,high,verified-online,,,,src:wikipedia; src:dehejia-1990,,temple
 deity:nataraja,DEPICTED_IN,temple:brihadisvara,temple:4,4,medium,recall,,,,src:dehejia-1990,,temple
 person:sundarar,DEPICTED_IN,temple:brihadisvara,temple:5,5,medium,recall,,,,src:dehejia-1990,,temple
-deity:shiva,WORSHIPPED_AT,temple:gangaikondacholapuram,temple:6,4,high,verified-online,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:gangaikondacholapuram,temple:6,4,medium,reference-checked,,,,src:wikipedia,,temple
 temple:gangaikondacholapuram,COMMISSIONED_BY,person:rajendra-i,temple:7,5,high,verified-online,,,,src:wikipedia; src:dehejia-1990,,temple
-temple:gangaikondacholapuram,BUILT_DURING,pol:chola,temple:8,5,high,verified-online,,,,src:wikipedia,,temple
-deity:shiva,WORSHIPPED_AT,temple:airavatesvara-darasuram,temple:9,4,high,verified-online,,,,src:wikipedia,,temple
-temple:airavatesvara-darasuram,COMMISSIONED_BY,person:rajaraja-ii,temple:10,5,high,verified-online,,,,src:wikipedia,,temple
-temple:airavatesvara-darasuram,BUILT_DURING,pol:chola,temple:11,5,high,verified-online,,,,src:wikipedia,,temple
+temple:gangaikondacholapuram,BUILT_DURING,pol:chola,temple:8,5,medium,reference-checked,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:airavatesvara-darasuram,temple:9,4,medium,reference-checked,,,,src:wikipedia,,temple
+temple:airavatesvara-darasuram,COMMISSIONED_BY,person:rajaraja-ii,temple:10,5,medium,reference-checked,,,,src:wikipedia,,temple
+temple:airavatesvara-darasuram,BUILT_DURING,pol:chola,temple:11,5,medium,reference-checked,,,,src:wikipedia,,temple
 temple:airavatesvara-darasuram,ASSOCIATED_WITH,text:periya-puranam,temple:12,5,medium,recall,,,,src:michell-2000,,temple
 deity:vishnu,WORSHIPPED_AT,temple:chidambaram,temple:13,6,medium,recall,,,,src:younger-1995,,temple
 temple:chidambaram,BUILT_DURING,pol:chola,temple:14,3,high,verified-online,,,,src:wikipedia @ History; src:sastri-1955,,temple
-temple:chidambaram,COMMISSIONED_BY,person:parantaka-i,temple:15,3,medium,verified-online,,,,src:wikipedia @ History,,temple
+temple:chidambaram,COMMISSIONED_BY,person:parantaka-i,temple:15,3,medium,reference-checked,,,,src:wikipedia @ History,,temple
 person:appar,DEVOTEE_OF,deity:nataraja,temple:16,1,medium,recall,,text:tevaram,,src:peterson-1989 @ Tēvāram hymns on Tillai,,temple
-deity:ranganatha,WORSHIPPED_AT,temple:srirangam,temple:17,6,high,verified-online,,,,src:wikipedia,,temple
-temple:srirangam,ASSOCIATED_WITH,char:vibhishana,temple:18,6,medium,verified-online,,,,src:wikipedia,,temple
-temple:srirangam,ASSOCIATED_WITH,person:ramanuja,temple:19,6,high,recall,trad:srivaishnava,,,src:flood-1996,,temple
+deity:ranganatha,WORSHIPPED_AT,temple:srirangam,temple:17,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:srirangam,ASSOCIATED_WITH,char:vibhishana,temple:18,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:srirangam,ASSOCIATED_WITH,person:ramanuja,temple:19,6,medium,recall,trad:srivaishnava,,,src:flood-1996,,temple
 temple:srirangam,ASSOCIATED_WITH,person:andal,temple:20,6,medium,recall,trad:srivaishnava,,,src:hardy-1983,,temple
-temple:srirangam,BUILT_DURING,pol:chola,temple:21,3,medium,verified-online,,,,src:wikipedia,,temple
-temple:srirangam,BUILT_DURING,pol:vijayanagara,temple:22,3,medium,verified-online,,,,src:wikipedia,,temple
+temple:srirangam,BUILT_DURING,pol:chola,temple:21,3,medium,reference-checked,,,,src:wikipedia,,temple
+temple:srirangam,BUILT_DURING,pol:vijayanagara,temple:22,3,medium,reference-checked,,,,src:wikipedia,,temple
 deity:minakshi,WORSHIPPED_AT,temple:meenakshi,temple:23,6,high,verified-online,,,,src:wikipedia; src:fuller-1984,,temple
-deity:shiva,WORSHIPPED_AT,temple:meenakshi,temple:24,6,high,verified-online,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:meenakshi,temple:24,6,medium,reference-checked,,,,src:wikipedia,,temple
 temple:meenakshi,BUILT_DURING,pol:madurai-nayaka,temple:25,4,high,verified-online,,,,src:wikipedia; src:michell-2000,,temple
-deity:shiva,WORSHIPPED_AT,temple:rameshwaram,temple:26,6,high,verified-online,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:rameshwaram,temple:26,6,medium,reference-checked,,,,src:wikipedia,,temple
 temple:rameshwaram,ASSOCIATED_WITH,char:rama,temple:27,6,high,verified-online,,,,src:wikipedia; src:eck-2012,,temple
 temple:rameshwaram,ASSOCIATED_WITH,narr:lanka-war,temple:28,6,medium,recall,,,,src:eck-2012,,temple
-temple:rameshwaram,ASSOCIATED_WITH,char:hanuman,temple:29,6,medium,verified-online,,,,src:wikipedia,,temple
-temple:rameshwaram,LOCATED_AT,place:rameswaram-island,temple:30,4,high,verified-online,,,,src:wikipedia,,temple
-temple:rameshwaram,BUILT_DURING,pol:pandya,temple:31,5,medium,verified-online,,,,src:wikipedia,,temple
-deity:shiva,WORSHIPPED_AT,temple:arunachaleswarar,temple:32,6,high,verified-online,,,,src:wikipedia,,temple
-temple:arunachaleswarar,ASSOCIATED_WITH,narr:lingodbhava,temple:33,6,high,verified-online,,,,src:wikipedia,,temple
-temple:arunachaleswarar,BUILT_DURING,pol:chola,temple:34,5,medium,verified-online,,,,src:wikipedia,,temple
-deity:shiva,WORSHIPPED_AT,temple:jambukeswarar,temple:35,6,high,verified-online,,,,src:wikipedia,,temple
-deity:shiva,WORSHIPPED_AT,temple:ekambareswarar-kanchi,temple:36,6,high,verified-online,,,,src:wikipedia,,temple
-deity:parvati,WORSHIPPED_AT,temple:ekambareswarar-kanchi,temple:37,6,medium,verified-online,,,,src:wikipedia,,temple
-temple:ekambareswarar-kanchi,BUILT_DURING,pol:vijayanagara,temple:38,5,medium,verified-online,,,,src:wikipedia,,temple
-deity:shiva,WORSHIPPED_AT,temple:kailasanatha-kanchi,temple:39,4,high,verified-online,,,,src:wikipedia,,temple
+temple:rameshwaram,ASSOCIATED_WITH,char:hanuman,temple:29,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:rameshwaram,LOCATED_AT,place:rameswaram-island,temple:30,4,medium,reference-checked,,,,src:wikipedia,,temple
+temple:rameshwaram,BUILT_DURING,pol:pandya,temple:31,5,medium,reference-checked,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:arunachaleswarar,temple:32,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:arunachaleswarar,ASSOCIATED_WITH,narr:lingodbhava,temple:33,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:arunachaleswarar,BUILT_DURING,pol:chola,temple:34,5,medium,reference-checked,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:jambukeswarar,temple:35,6,medium,reference-checked,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:ekambareswarar-kanchi,temple:36,6,medium,reference-checked,,,,src:wikipedia,,temple
+deity:parvati,WORSHIPPED_AT,temple:ekambareswarar-kanchi,temple:37,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:ekambareswarar-kanchi,BUILT_DURING,pol:vijayanagara,temple:38,5,medium,reference-checked,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:kailasanatha-kanchi,temple:39,4,medium,reference-checked,,,,src:wikipedia,,temple
 temple:kailasanatha-kanchi,COMMISSIONED_BY,person:narasimhavarman-ii,temple:40,3,high,verified-online,,,,src:wikipedia; src:srinivasan-kr-1964,,temple
-temple:kailasanatha-kanchi,BUILT_DURING,pol:pallava,temple:41,3,high,verified-online,,,,src:wikipedia,,temple
+temple:kailasanatha-kanchi,BUILT_DURING,pol:pallava,temple:41,3,medium,reference-checked,,,,src:wikipedia,,temple
 narr:lingodbhava,DEPICTED_IN,temple:kailasanatha-kanchi,temple:42,4,medium,recall,,,,src:harle-1994,,temple
-deity:vishnu,WORSHIPPED_AT,temple:vaikuntha-perumal-kanchi,temple:43,6,high,verified-online,,,,src:wikipedia,,temple
-temple:vaikuntha-perumal-kanchi,COMMISSIONED_BY,person:nandivarman-ii,temple:44,5,high,verified-online,,,,src:wikipedia,,temple
-temple:vaikuntha-perumal-kanchi,BUILT_DURING,pol:pallava,temple:45,5,high,verified-online,,,,src:wikipedia,,temple
-temple:vaikuntha-perumal-kanchi,MENTIONED_IN,text:divya-prabandham,temple:46,5,medium,verified-online,,,,src:wikipedia,,temple
-deity:vishnu,WORSHIPPED_AT,temple:varadaraja-kanchi,temple:47,6,high,verified-online,,,,src:wikipedia,,temple
-temple:varadaraja-kanchi,BUILT_DURING,pol:chola,temple:48,3,medium,verified-online,,,,src:wikipedia,,temple
+deity:vishnu,WORSHIPPED_AT,temple:vaikuntha-perumal-kanchi,temple:43,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:vaikuntha-perumal-kanchi,COMMISSIONED_BY,person:nandivarman-ii,temple:44,5,medium,reference-checked,,,,src:wikipedia,,temple
+temple:vaikuntha-perumal-kanchi,BUILT_DURING,pol:pallava,temple:45,5,medium,reference-checked,,,,src:wikipedia,,temple
+temple:vaikuntha-perumal-kanchi,MENTIONED_IN,text:divya-prabandham,temple:46,5,medium,reference-checked,,,,src:wikipedia,,temple
+deity:vishnu,WORSHIPPED_AT,temple:varadaraja-kanchi,temple:47,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:varadaraja-kanchi,BUILT_DURING,pol:chola,temple:48,3,medium,reference-checked,,,,src:wikipedia,,temple
 temple:varadaraja-kanchi,ASSOCIATED_WITH,person:ramanuja,temple:49,6,medium,recall,trad:srivaishnava,,,src:flood-1996,,temple
 temple:mamallapuram,COMMISSIONED_BY,person:narasimhavarman-i,temple:50,5,high,verified-online,,,,src:wikipedia; src:srinivasan-kr-1964,,temple
 char:arjuna,DEPICTED_IN,temple:mamallapuram,temple:51,5,medium,disputed,,,,src:wikipedia,Alternative reading: Bhagīratha and the Descent of the Gaṅgā.,temple
-narr:govardhana,DEPICTED_IN,temple:mamallapuram,temple:52,4,high,verified-online,,,,src:wikipedia,,temple
-deity:shiva,WORSHIPPED_AT,temple:shore-temple,temple:53,3,high,verified-online,,,,src:wikipedia,,temple
-deity:vishnu,WORSHIPPED_AT,temple:shore-temple,temple:54,3,high,verified-online,,,,src:wikipedia,,temple
-temple:shore-temple,COMMISSIONED_BY,person:narasimhavarman-ii,temple:55,3,high,verified-online,,,,src:wikipedia,,temple
-temple:shore-temple,BUILT_DURING,pol:pallava,temple:56,3,high,verified-online,,,,src:wikipedia,,temple
-temple:shore-temple,LOCATED_AT,temple:mamallapuram,temple:57,4,high,verified-online,,,,src:wikipedia,,temple
-temple:pancha-rathas,COMMISSIONED_BY,person:narasimhavarman-i,temple:58,5,medium,verified-online,,,,src:wikipedia,Some inscriptions have been read as indicating work under Rājasiṃha.,temple
-temple:pancha-rathas,BUILT_DURING,pol:pallava,temple:59,3,high,verified-online,,,,src:wikipedia,,temple
-temple:pancha-rathas,LOCATED_AT,temple:mamallapuram,temple:60,4,high,verified-online,,,,src:wikipedia,,temple
-temple:pancha-rathas,ASSOCIATED_WITH,lin:pandavas,temple:61,6,low,verified-online,,,,src:wikipedia,,temple
-deity:murugan,WORSHIPPED_AT,temple:thiruparankundram,temple:62,6,high,verified-online,,,,src:wikipedia,,temple
-temple:thiruparankundram,BUILT_DURING,pol:pandya,temple:63,5,medium,verified-online,,,,src:wikipedia,,temple
-deity:murugan,WORSHIPPED_AT,temple:tiruchendur,temple:64,6,high,verified-online,,,,src:wikipedia,,temple
-deity:murugan,WORSHIPPED_AT,temple:palani,temple:65,6,high,verified-online,,,,src:wikipedia,,temple
-deity:murugan,WORSHIPPED_AT,temple:swamimalai,temple:66,6,high,verified-online,,,,src:wikipedia,,temple
-temple:swamimalai,ASSOCIATED_WITH,concept:om,temple:67,6,medium,verified-online,,,,src:wikipedia,,temple
-deity:murugan,WORSHIPPED_AT,temple:tiruttani,temple:68,6,high,verified-online,,,,src:wikipedia,,temple
-deity:murugan,WORSHIPPED_AT,temple:pazhamudircholai,temple:69,6,high,verified-online,,,,src:wikipedia,,temple
-char:krishna,WORSHIPPED_AT,temple:guruvayur,temple:70,6,high,verified-online,,,,src:wikipedia,,temple
-deity:vishnu,WORSHIPPED_AT,temple:guruvayur,temple:71,6,high,verified-online,,,,src:wikipedia,,temple
-deity:vishnu,WORSHIPPED_AT,temple:padmanabhaswamy,temple:72,6,high,verified-online,,,,src:wikipedia,,temple
+narr:govardhana,DEPICTED_IN,temple:mamallapuram,temple:52,4,medium,reference-checked,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:shore-temple,temple:53,3,medium,reference-checked,,,,src:wikipedia,,temple
+deity:vishnu,WORSHIPPED_AT,temple:shore-temple,temple:54,3,medium,reference-checked,,,,src:wikipedia,,temple
+temple:shore-temple,COMMISSIONED_BY,person:narasimhavarman-ii,temple:55,3,medium,reference-checked,,,,src:wikipedia,,temple
+temple:shore-temple,BUILT_DURING,pol:pallava,temple:56,3,medium,reference-checked,,,,src:wikipedia,,temple
+temple:shore-temple,LOCATED_AT,temple:mamallapuram,temple:57,4,medium,reference-checked,,,,src:wikipedia,,temple
+temple:pancha-rathas,COMMISSIONED_BY,person:narasimhavarman-i,temple:58,5,medium,reference-checked,,,,src:wikipedia,Some inscriptions have been read as indicating work under Rājasiṃha.,temple
+temple:pancha-rathas,BUILT_DURING,pol:pallava,temple:59,3,medium,reference-checked,,,,src:wikipedia,,temple
+temple:pancha-rathas,LOCATED_AT,temple:mamallapuram,temple:60,4,medium,reference-checked,,,,src:wikipedia,,temple
+temple:pancha-rathas,ASSOCIATED_WITH,lin:pandavas,temple:61,6,low,reference-checked,,,,src:wikipedia,,temple
+deity:murugan,WORSHIPPED_AT,temple:thiruparankundram,temple:62,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:thiruparankundram,BUILT_DURING,pol:pandya,temple:63,5,medium,reference-checked,,,,src:wikipedia,,temple
+deity:murugan,WORSHIPPED_AT,temple:tiruchendur,temple:64,6,medium,reference-checked,,,,src:wikipedia,,temple
+deity:murugan,WORSHIPPED_AT,temple:palani,temple:65,6,medium,reference-checked,,,,src:wikipedia,,temple
+deity:murugan,WORSHIPPED_AT,temple:swamimalai,temple:66,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:swamimalai,ASSOCIATED_WITH,concept:om,temple:67,6,medium,reference-checked,,,,src:wikipedia,,temple
+deity:murugan,WORSHIPPED_AT,temple:tiruttani,temple:68,6,medium,reference-checked,,,,src:wikipedia,,temple
+deity:murugan,WORSHIPPED_AT,temple:pazhamudircholai,temple:69,6,medium,reference-checked,,,,src:wikipedia,,temple
+char:krishna,WORSHIPPED_AT,temple:guruvayur,temple:70,6,medium,reference-checked,,,,src:wikipedia,,temple
+deity:vishnu,WORSHIPPED_AT,temple:guruvayur,temple:71,6,medium,reference-checked,,,,src:wikipedia,,temple
+deity:vishnu,WORSHIPPED_AT,temple:padmanabhaswamy,temple:72,6,medium,reference-checked,,,,src:wikipedia,,temple
 temple:padmanabhaswamy,COMMISSIONED_BY,person:marthanda-varma,temple:73,5,medium,recall,,,,src:wikipedia,,temple
 temple:padmanabhaswamy,BUILT_DURING,pol:travancore,temple:74,5,medium,recall,,,,src:wikipedia,,temple
 deity:venkateshvara,WORSHIPPED_AT,temple:tirumala,temple:75,6,high,verified-online,,,,src:wikipedia; src:ttd,,temple
-temple:tirumala,COMMISSIONED_BY,person:krishnadevaraya,temple:76,3,high,verified-online,,,,src:wikipedia @ History,,temple
-temple:tirumala,BUILT_DURING,pol:vijayanagara,temple:77,3,medium,verified-online,,,,src:wikipedia,,temple
+temple:tirumala,COMMISSIONED_BY,person:krishnadevaraya,temple:76,3,medium,reference-checked,,,,src:wikipedia @ History,,temple
+temple:tirumala,BUILT_DURING,pol:vijayanagara,temple:77,3,medium,reference-checked,,,,src:wikipedia,,temple
 temple:tirumala,ASSOCIATED_WITH,person:ramanuja,temple:78,6,medium,recall,trad:srivaishnava,,,src:ramesan-1981,,temple
 temple:tirumala,MENTIONED_IN,text:silappatikaram,temple:79,1,medium,recall,,,,"src:wikipedia @ Cilappatikāram canto 11 (Kāṭukāṇ kātai), as quoted on the page",,temple
-deity:shiva,WORSHIPPED_AT,temple:srisailam,temple:80,6,high,verified-online,,,,src:wikipedia,,temple
-deity:devi,WORSHIPPED_AT,temple:srisailam,temple:81,6,high,verified-online,,,,src:wikipedia,,temple
-temple:srisailam,BUILT_DURING,pol:vijayanagara,temple:82,5,medium,verified-online,,,,src:wikipedia,,temple
-deity:shiva,WORSHIPPED_AT,temple:srikalahasti,temple:83,6,high,verified-online,,,,src:wikipedia,,temple
-temple:srikalahasti,COMMISSIONED_BY,person:rajendra-i,temple:84,5,medium,verified-online,,,,src:wikipedia @ History,,temple
-temple:srikalahasti,BUILT_DURING,pol:chola,temple:85,5,medium,verified-online,,,,src:wikipedia,,temple
-deity:shiva,WORSHIPPED_AT,temple:gudimallam,temple:86,6,high,verified-online,,,,src:wikipedia,,temple
-temple:gudimallam,ASSOCIATED_WITH,char:parashurama,temple:87,6,medium,verified-online,,,,src:wikipedia,,temple
-deity:shiva,WORSHIPPED_AT,temple:alampur-navabrahma,temple:88,4,high,verified-online,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:srisailam,temple:80,6,medium,reference-checked,,,,src:wikipedia,,temple
+deity:devi,WORSHIPPED_AT,temple:srisailam,temple:81,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:srisailam,BUILT_DURING,pol:vijayanagara,temple:82,5,medium,reference-checked,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:srikalahasti,temple:83,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:srikalahasti,COMMISSIONED_BY,person:rajendra-i,temple:84,5,medium,reference-checked,,,,src:wikipedia @ History,,temple
+temple:srikalahasti,BUILT_DURING,pol:chola,temple:85,5,medium,reference-checked,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:gudimallam,temple:86,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:gudimallam,ASSOCIATED_WITH,char:parashurama,temple:87,6,medium,reference-checked,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:alampur-navabrahma,temple:88,4,medium,reference-checked,,,,src:wikipedia,,temple
 deity:devi,WORSHIPPED_AT,temple:alampur-navabrahma,temple:89,6,medium,recall,,,,src:sircar-1973,,temple
-temple:alampur-navabrahma,BUILT_DURING,pol:chalukya-badami,temple:90,5,high,verified-online,,,,src:wikipedia,,temple
-deity:shiva,WORSHIPPED_AT,temple:ramappa,temple:91,3,high,verified-online,,,,src:wikipedia,,temple
-temple:ramappa,COMMISSIONED_BY,person:recherla-rudra,temple:92,3,high,verified-online,,,,src:wikipedia,,temple
-temple:ramappa,BUILT_DURING,pol:kakatiya,temple:93,3,high,verified-online,,,,src:wikipedia,,temple
-deity:vishnu,WORSHIPPED_AT,temple:badami-caves,temple:94,3,high,verified-online,,,,src:wikipedia,,temple
-deity:shiva,WORSHIPPED_AT,temple:badami-caves,temple:95,4,high,verified-online,,,,src:wikipedia,,temple
-temple:badami-caves,COMMISSIONED_BY,person:mangalesha,temple:96,3,high,recall,,,,src:harle-1994; src:michell-1977,,temple
+temple:alampur-navabrahma,BUILT_DURING,pol:chalukya-badami,temple:90,5,medium,reference-checked,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:ramappa,temple:91,3,medium,reference-checked,,,,src:wikipedia,,temple
+temple:ramappa,COMMISSIONED_BY,person:recherla-rudra,temple:92,3,medium,reference-checked,,,,src:wikipedia,,temple
+temple:ramappa,BUILT_DURING,pol:kakatiya,temple:93,3,medium,reference-checked,,,,src:wikipedia,,temple
+deity:vishnu,WORSHIPPED_AT,temple:badami-caves,temple:94,3,medium,reference-checked,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:badami-caves,temple:95,4,medium,reference-checked,,,,src:wikipedia,,temple
+temple:badami-caves,COMMISSIONED_BY,person:mangalesha,temple:96,3,medium,recall,,,,src:harle-1994; src:michell-1977,,temple
 narr:three-strides,DEPICTED_IN,temple:badami-caves,temple:97,4,medium,recall,,,,src:harle-1994,,temple
-deity:varaha,DEPICTED_IN,temple:badami-caves,temple:98,4,high,recall,,,,src:harle-1994,,temple
-deity:narasimha,DEPICTED_IN,temple:badami-caves,temple:99,4,high,recall,,,,src:harle-1994,,temple
-temple:meguti-aihole,COMMISSIONED_BY,person:ravikirti,temple:100,3,high,verified-online,,,,src:wikipedia,,temple
-temple:durga-aihole,BUILT_DURING,pol:chalukya-badami,temple:101,5,high,verified-online,,,,src:wikipedia,,temple
+deity:varaha,DEPICTED_IN,temple:badami-caves,temple:98,4,medium,recall,,,,src:harle-1994,,temple
+deity:narasimha,DEPICTED_IN,temple:badami-caves,temple:99,4,medium,recall,,,,src:harle-1994,,temple
+temple:meguti-aihole,COMMISSIONED_BY,person:ravikirti,temple:100,3,medium,reference-checked,,,,src:wikipedia,,temple
+temple:durga-aihole,BUILT_DURING,pol:chalukya-badami,temple:101,5,medium,reference-checked,,,,src:wikipedia,,temple
 narr:mahishasura-slaying,DEPICTED_IN,temple:durga-aihole,temple:102,4,medium,recall,,,,src:tartakov-1997,,temple
 deity:narasimha,DEPICTED_IN,temple:durga-aihole,temple:103,4,medium,recall,,,,src:tartakov-1997,,temple
-deity:shiva,WORSHIPPED_AT,temple:lad-khan-aihole,temple:104,4,medium,verified-online,,,,src:wikipedia,,temple
-temple:lad-khan-aihole,BUILT_DURING,pol:chalukya-badami,temple:105,5,high,verified-online,,,,src:wikipedia,,temple
-deity:shiva,WORSHIPPED_AT,temple:virupaksha-pattadakal,temple:106,6,high,verified-online,,,,src:wikipedia,,temple
-temple:virupaksha-pattadakal,COMMISSIONED_BY,person:lokamahadevi,temple:107,3,high,verified-online,,,,src:wikipedia,,temple
-temple:virupaksha-pattadakal,BUILT_DURING,pol:chalukya-badami,temple:108,3,high,verified-online,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:lad-khan-aihole,temple:104,4,medium,reference-checked,,,,src:wikipedia,,temple
+temple:lad-khan-aihole,BUILT_DURING,pol:chalukya-badami,temple:105,5,medium,reference-checked,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:virupaksha-pattadakal,temple:106,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:virupaksha-pattadakal,COMMISSIONED_BY,person:lokamahadevi,temple:107,3,medium,reference-checked,,,,src:wikipedia,,temple
+temple:virupaksha-pattadakal,BUILT_DURING,pol:chalukya-badami,temple:108,3,medium,reference-checked,,,,src:wikipedia,,temple
 char:rama,DEPICTED_IN,temple:virupaksha-pattadakal,temple:109,4,medium,recall,,,,src:michell-1977,,temple
-temple:virupaksha-pattadakal,DERIVED_FROM,temple:kailasanatha-kanchi,temple:110,5,medium,verified-online,,,,src:wikipedia,,temple
-deity:shiva,WORSHIPPED_AT,temple:papanatha-pattadakal,temple:111,4,high,verified-online,,,,src:wikipedia @ Papanatha temple,,temple
-temple:papanatha-pattadakal,BUILT_DURING,pol:chalukya-badami,temple:112,5,high,verified-online,,,,src:wikipedia,,temple
-char:rama,DEPICTED_IN,temple:papanatha-pattadakal,temple:113,4,high,verified-online,,,,src:wikipedia @ Papanatha temple,,temple
-char:arjuna,DEPICTED_IN,temple:papanatha-pattadakal,temple:114,4,medium,verified-online,,,,src:wikipedia @ Papanatha temple,,temple
-deity:shiva,WORSHIPPED_AT,temple:kailasa-ellora,temple:115,4,high,verified-online,,,,src:wikipedia,,temple
-char:ravana,DEPICTED_IN,temple:kailasa-ellora,temple:116,4,high,verified-online,,,,src:wikipedia,,temple
+temple:virupaksha-pattadakal,DERIVED_FROM,temple:kailasanatha-kanchi,temple:110,5,medium,reference-checked,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:papanatha-pattadakal,temple:111,4,medium,reference-checked,,,,src:wikipedia @ Papanatha temple,,temple
+temple:papanatha-pattadakal,BUILT_DURING,pol:chalukya-badami,temple:112,5,medium,reference-checked,,,,src:wikipedia,,temple
+char:rama,DEPICTED_IN,temple:papanatha-pattadakal,temple:113,4,medium,reference-checked,,,,src:wikipedia @ Papanatha temple,,temple
+char:arjuna,DEPICTED_IN,temple:papanatha-pattadakal,temple:114,4,medium,reference-checked,,,,src:wikipedia @ Papanatha temple,,temple
+deity:shiva,WORSHIPPED_AT,temple:kailasa-ellora,temple:115,4,medium,reference-checked,,,,src:wikipedia,,temple
+char:ravana,DEPICTED_IN,temple:kailasa-ellora,temple:116,4,medium,reference-checked,,,,src:wikipedia,,temple
 char:rama,DEPICTED_IN,temple:kailasa-ellora,temple:117,4,medium,recall,,,,src:harle-1994,,temple
 narr:kurukshetra-war,DEPICTED_IN,temple:kailasa-ellora,temple:118,4,medium,recall,,,,src:harle-1994,,temple
-temple:kailasa-ellora,ASSOCIATED_WITH,place:kailasa,temple:119,5,high,verified-online,,,,src:wikipedia,,temple
-temple:ellora-dashavatara,COMMISSIONED_BY,person:dantidurga,temple:120,3,medium,verified-online,,,,src:wikipedia @ The Dashavatara: Cave 15,,temple
-temple:ellora-dashavatara,BUILT_DURING,pol:rashtrakuta,temple:121,3,high,verified-online,,,,src:wikipedia,,temple
+temple:kailasa-ellora,ASSOCIATED_WITH,place:kailasa,temple:119,5,medium,reference-checked,,,,src:wikipedia,,temple
+temple:ellora-dashavatara,COMMISSIONED_BY,person:dantidurga,temple:120,3,medium,reference-checked,,,,src:wikipedia @ The Dashavatara: Cave 15,,temple
+temple:ellora-dashavatara,BUILT_DURING,pol:rashtrakuta,temple:121,3,medium,reference-checked,,,,src:wikipedia,,temple
 concept:avatara,DEPICTED_IN,temple:ellora-dashavatara,temple:122,4,medium,recall,,,,src:harle-1994,,temple
-deity:shiva,WORSHIPPED_AT,temple:elephanta,temple:123,4,high,verified-online,,,,src:wikipedia,,temple
-deity:nataraja,DEPICTED_IN,temple:elephanta,temple:124,4,high,recall,,,,src:collins-1988,,temple
+deity:shiva,WORSHIPPED_AT,temple:elephanta,temple:123,4,medium,reference-checked,,,,src:wikipedia,,temple
+deity:nataraja,DEPICTED_IN,temple:elephanta,temple:124,4,medium,recall,,,,src:collins-1988,,temple
 narr:descent-of-ganga,DEPICTED_IN,temple:elephanta,temple:125,4,medium,recall,,,,src:collins-1988,,temple
-deity:shiva,WORSHIPPED_AT,temple:virupaksha-hampi,temple:126,6,high,verified-online,,,,src:wikipedia,,temple
-temple:virupaksha-hampi,COMMISSIONED_BY,person:krishnadevaraya,temple:127,3,high,verified-online,,,,src:wikipedia,,temple
-temple:virupaksha-hampi,BUILT_DURING,pol:vijayanagara,temple:128,3,high,verified-online,,,,src:wikipedia,,temple
-temple:virupaksha-hampi,LOCATED_AT,place:hampi,temple:129,4,high,verified-online,,,,src:wikipedia,,temple
-char:rama,WORSHIPPED_AT,temple:hazara-rama,temple:130,4,high,recall,,,,src:dallapiccola-1992,,temple
-char:rama,DEPICTED_IN,temple:hazara-rama,temple:131,4,high,recall,,,,src:dallapiccola-1992,,temple
+deity:shiva,WORSHIPPED_AT,temple:virupaksha-hampi,temple:126,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:virupaksha-hampi,COMMISSIONED_BY,person:krishnadevaraya,temple:127,3,medium,reference-checked,,,,src:wikipedia,,temple
+temple:virupaksha-hampi,BUILT_DURING,pol:vijayanagara,temple:128,3,medium,reference-checked,,,,src:wikipedia,,temple
+temple:virupaksha-hampi,LOCATED_AT,place:hampi,temple:129,4,medium,reference-checked,,,,src:wikipedia,,temple
+char:rama,WORSHIPPED_AT,temple:hazara-rama,temple:130,4,medium,recall,,,,src:dallapiccola-1992,,temple
+char:rama,DEPICTED_IN,temple:hazara-rama,temple:131,4,medium,recall,,,,src:dallapiccola-1992,,temple
 narr:lanka-war,DEPICTED_IN,temple:hazara-rama,temple:132,4,medium,recall,,,,src:dallapiccola-1992,,temple
 narr:abduction-of-sita,DEPICTED_IN,temple:hazara-rama,temple:133,4,medium,recall,,,,src:dallapiccola-1992,,temple
 temple:hazara-rama,COMMISSIONED_BY,person:devaraya-i,temple:134,5,medium,recall,,,,src:dallapiccola-1992,,temple
-temple:hazara-rama,LOCATED_AT,place:hampi,temple:135,4,high,verified-online,,,,src:wikidata @ P625 coordinate location,,temple
-deity:vitthala,WORSHIPPED_AT,temple:vijaya-vitthala,temple:136,4,high,recall,,,,src:fritz-michell-1991,,temple
-temple:vijaya-vitthala,BUILT_DURING,pol:vijayanagara,temple:137,4,high,recall,,,,src:fritz-michell-1991,,temple
+temple:hazara-rama,LOCATED_AT,place:hampi,temple:135,4,medium,reference-checked,,,,src:wikidata @ P625 coordinate location,,temple
+deity:vitthala,WORSHIPPED_AT,temple:vijaya-vitthala,temple:136,4,medium,recall,,,,src:fritz-michell-1991,,temple
+temple:vijaya-vitthala,BUILT_DURING,pol:vijayanagara,temple:137,4,medium,recall,,,,src:fritz-michell-1991,,temple
 temple:vijaya-vitthala,COMMISSIONED_BY,person:krishnadevaraya,temple:138,5,medium,recall,,,,src:fritz-michell-1991,,temple
-temple:vijaya-vitthala,LOCATED_AT,place:hampi,temple:139,4,high,verified-online,,,,src:wikidata @ P625 coordinate location,,temple
-deity:vishnu,WORSHIPPED_AT,temple:chennakeshava-belur,temple:140,6,high,verified-online,,,,src:wikipedia,,temple
-temple:chennakeshava-belur,COMMISSIONED_BY,person:vishnuvardhana-hoysala,temple:141,3,high,verified-online,,,,src:wikipedia,,temple
-temple:chennakeshava-belur,BUILT_DURING,pol:hoysala,temple:142,3,high,verified-online,,,,src:wikipedia,,temple
-deity:shiva,WORSHIPPED_AT,temple:hoysaleswara-halebidu,temple:143,4,high,verified-online,,,,src:wikipedia,,temple
-temple:hoysaleswara-halebidu,COMMISSIONED_BY,person:ketamalla,temple:144,3,high,verified-online,,,,src:wikipedia,,temple
-temple:hoysaleswara-halebidu,BUILT_DURING,pol:hoysala,temple:145,3,high,verified-online,,,,src:wikipedia,,temple
+temple:vijaya-vitthala,LOCATED_AT,place:hampi,temple:139,4,medium,reference-checked,,,,src:wikidata @ P625 coordinate location,,temple
+deity:vishnu,WORSHIPPED_AT,temple:chennakeshava-belur,temple:140,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:chennakeshava-belur,COMMISSIONED_BY,person:vishnuvardhana-hoysala,temple:141,3,medium,reference-checked,,,,src:wikipedia,,temple
+temple:chennakeshava-belur,BUILT_DURING,pol:hoysala,temple:142,3,medium,reference-checked,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:hoysaleswara-halebidu,temple:143,4,medium,reference-checked,,,,src:wikipedia,,temple
+temple:hoysaleswara-halebidu,COMMISSIONED_BY,person:ketamalla,temple:144,3,medium,reference-checked,,,,src:wikipedia,,temple
+temple:hoysaleswara-halebidu,BUILT_DURING,pol:hoysala,temple:145,3,medium,reference-checked,,,,src:wikipedia,,temple
 char:krishna,DEPICTED_IN,temple:hoysaleswara-halebidu,temple:146,4,medium,recall,,,,src:foekema-1996,,temple
-deity:vishnu,WORSHIPPED_AT,temple:keshava-somanathapura,temple:147,4,high,verified-online,,,,src:wikipedia,,temple
-temple:keshava-somanathapura,COMMISSIONED_BY,person:somanatha-dandanayaka,temple:148,3,high,verified-online,,,,src:wikipedia,,temple
-temple:keshava-somanathapura,BUILT_DURING,pol:hoysala,temple:149,3,high,verified-online,,,,src:wikipedia,,temple
-deity:shiva,WORSHIPPED_AT,temple:ambernath,temple:150,6,high,verified-online,,,,src:wikipedia,,temple
-temple:ambernath,BUILT_DURING,pol:shilahara,temple:151,3,medium,verified-online,,,,src:wikipedia,,temple
-deity:shiva,WORSHIPPED_AT,temple:bhimashankar,temple:152,6,high,verified-online,,,,src:wikipedia,,temple
-deity:shiva,WORSHIPPED_AT,temple:trimbakeshwar,temple:153,6,high,verified-online,,,,src:wikipedia,,temple
-temple:trimbakeshwar,COMMISSIONED_BY,person:balaji-bajirao,temple:154,5,high,verified-online,,,,src:wikipedia,,temple
-deity:shiva,WORSHIPPED_AT,temple:grishneshwar,temple:155,6,high,verified-online,,,,src:wikipedia,,temple
+deity:vishnu,WORSHIPPED_AT,temple:keshava-somanathapura,temple:147,4,medium,reference-checked,,,,src:wikipedia,,temple
+temple:keshava-somanathapura,COMMISSIONED_BY,person:somanatha-dandanayaka,temple:148,3,medium,reference-checked,,,,src:wikipedia,,temple
+temple:keshava-somanathapura,BUILT_DURING,pol:hoysala,temple:149,3,medium,reference-checked,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:ambernath,temple:150,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:ambernath,BUILT_DURING,pol:shilahara,temple:151,3,medium,reference-checked,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:bhimashankar,temple:152,6,medium,reference-checked,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:trimbakeshwar,temple:153,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:trimbakeshwar,COMMISSIONED_BY,person:balaji-bajirao,temple:154,5,medium,reference-checked,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:grishneshwar,temple:155,6,medium,reference-checked,,,,src:wikipedia,,temple
 temple:grishneshwar,COMMISSIONED_BY,person:ahilyabai-holkar,temple:156,5,low,disputed,,,,src:wikipedia,Wikipedia credits the 1729 rebuilding to Gautamābāī Holkar.,temple
-deity:shiva,WORSHIPPED_AT,temple:parli-vaijnath,temple:157,6,high,verified-online,,,,src:wikipedia,,temple
-deity:shiva,WORSHIPPED_AT,temple:aundha-nagnath,temple:158,6,high,verified-online,,,,src:wikipedia,,temple
-temple:aundha-nagnath,ASSOCIATED_WITH,char:yudhishthira,temple:159,6,low,verified-online,,,,src:wikipedia,,temple
-temple:aundha-nagnath,COMMISSIONED_BY,person:ahilyabai-holkar,temple:160,5,medium,verified-online,,,,src:wikipedia,,temple
-narr:varaha-earth,DEPICTED_IN,temple:udayagiri-caves,temple:161,4,high,verified-online,,,,src:wikipedia,,temple
-deity:varaha,WORSHIPPED_AT,temple:udayagiri-caves,temple:162,4,high,verified-online,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:parli-vaijnath,temple:157,6,medium,reference-checked,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:aundha-nagnath,temple:158,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:aundha-nagnath,ASSOCIATED_WITH,char:yudhishthira,temple:159,6,low,reference-checked,,,,src:wikipedia,,temple
+temple:aundha-nagnath,COMMISSIONED_BY,person:ahilyabai-holkar,temple:160,5,medium,reference-checked,,,,src:wikipedia,,temple
+narr:varaha-earth,DEPICTED_IN,temple:udayagiri-caves,temple:161,4,medium,reference-checked,,,,src:wikipedia,,temple
+deity:varaha,WORSHIPPED_AT,temple:udayagiri-caves,temple:162,4,medium,reference-checked,,,,src:wikipedia,,temple
 narr:mahishasura-slaying,DEPICTED_IN,temple:udayagiri-caves,temple:163,4,medium,recall,,,,src:williams-1982,,temple
-temple:udayagiri-caves,COMMISSIONED_BY,person:chandragupta-ii,temple:164,3,medium,verified-online,,,,src:wikipedia,,temple
+temple:udayagiri-caves,COMMISSIONED_BY,person:chandragupta-ii,temple:164,3,medium,reference-checked,,,,src:wikipedia,,temple
 temple:udayagiri-caves,ASSOCIATED_WITH,site:besnagar,temple:165,5,medium,recall,,,,src:williams-1982,,temple
-deity:vishnu,WORSHIPPED_AT,temple:deogarh-dashavatara,temple:166,4,high,verified-online,,,,src:wikipedia,,temple
-deity:narayana,DEPICTED_IN,temple:deogarh-dashavatara,temple:167,4,high,verified-online,,,,src:wikipedia,,temple
-deity:parvati,WORSHIPPED_AT,temple:nachna-parvati,temple:168,6,low,verified-online,,,,src:wikipedia,,temple
-temple:nachna-parvati,BUILT_DURING,pol:gupta,temple:169,5,medium,verified-online,,,,src:wikipedia,,temple
+deity:vishnu,WORSHIPPED_AT,temple:deogarh-dashavatara,temple:166,4,medium,reference-checked,,,,src:wikipedia,,temple
+deity:narayana,DEPICTED_IN,temple:deogarh-dashavatara,temple:167,4,medium,reference-checked,,,,src:wikipedia,,temple
+deity:parvati,WORSHIPPED_AT,temple:nachna-parvati,temple:168,6,low,reference-checked,,,,src:wikipedia,,temple
+temple:nachna-parvati,BUILT_DURING,pol:gupta,temple:169,5,medium,reference-checked,,,,src:wikipedia,,temple
 deity:vishnu,DEPICTED_IN,temple:bhitargaon,temple:170,4,medium,recall,,,,src:williams-1982,,temple
-temple:bhitargaon,BUILT_DURING,pol:gupta,temple:171,5,high,verified-online,,,,src:wikipedia,,temple
-deity:vishnu,WORSHIPPED_AT,temple:tigawa,temple:172,4,low,verified-online,,,,src:wikipedia,,temple
-temple:tigawa,BUILT_DURING,pol:gupta,temple:173,5,medium,verified-online,,,,src:wikipedia,,temple
-deity:devi,WORSHIPPED_AT,temple:mundeshwari,temple:174,6,high,verified-online,,,,src:wikipedia,,temple
-deity:shiva,WORSHIPPED_AT,temple:mundeshwari,temple:175,6,high,verified-online,,,,src:wikipedia,,temple
-claim:mundeshwari-108-ce,CONCERNS,temple:mundeshwari,temple:176,5,high,verified-online,,,,src:wikipedia,,temple
-deity:vishnu,WORSHIPPED_AT,temple:sirpur-lakshmana,temple:177,4,medium,verified-online,,,,src:wikipedia,,temple
+temple:bhitargaon,BUILT_DURING,pol:gupta,temple:171,5,medium,reference-checked,,,,src:wikipedia,,temple
+deity:vishnu,WORSHIPPED_AT,temple:tigawa,temple:172,4,low,reference-checked,,,,src:wikipedia,,temple
+temple:tigawa,BUILT_DURING,pol:gupta,temple:173,5,medium,reference-checked,,,,src:wikipedia,,temple
+deity:devi,WORSHIPPED_AT,temple:mundeshwari,temple:174,6,medium,reference-checked,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:mundeshwari,temple:175,6,medium,reference-checked,,,,src:wikipedia,,temple
+claim:mundeshwari-108-ce,CONCERNS,temple:mundeshwari,temple:176,5,medium,reference-checked,,,,src:wikipedia,,temple
+deity:vishnu,WORSHIPPED_AT,temple:sirpur-lakshmana,temple:177,4,medium,reference-checked,,,,src:wikipedia,,temple
 temple:sirpur-lakshmana,BUILT_DURING,pol:panduvamshi,temple:178,5,medium,recall,,,,src:wikipedia,,temple
-deity:shiva,WORSHIPPED_AT,temple:kandariya-mahadeva,temple:179,4,high,verified-online,,,,src:wikipedia,,temple
-temple:kandariya-mahadeva,COMMISSIONED_BY,person:vidyadhara-chandela,temple:180,5,medium,verified-online,,,,src:wikipedia,,temple
-deity:vishnu,WORSHIPPED_AT,temple:lakshmana-khajuraho,temple:181,3,high,verified-online,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:kandariya-mahadeva,temple:179,4,medium,reference-checked,,,,src:wikipedia,,temple
+temple:kandariya-mahadeva,COMMISSIONED_BY,person:vidyadhara-chandela,temple:180,5,medium,reference-checked,,,,src:wikipedia,,temple
+deity:vishnu,WORSHIPPED_AT,temple:lakshmana-khajuraho,temple:181,3,medium,reference-checked,,,,src:wikipedia,,temple
 temple:lakshmana-khajuraho,COMMISSIONED_BY,person:yashovarman-chandela,temple:182,3,high,verified-online,,,,src:wikipedia; src:kielhorn-1892,,temple
-temple:lakshmana-khajuraho,BUILT_DURING,pol:chandela,temple:183,3,high,verified-online,,,,src:wikipedia,,temple
-deity:surya,WORSHIPPED_AT,temple:konark,temple:184,4,high,verified-online,,,,src:wikipedia,,temple
-temple:konark,COMMISSIONED_BY,person:narasimhadeva-i,temple:185,5,high,verified-online,,,,src:wikipedia,,temple
-deity:jagannatha,WORSHIPPED_AT,temple:jagannath-puri,temple:186,6,high,verified-online,,,,src:wikipedia,,temple
-char:balarama,WORSHIPPED_AT,temple:jagannath-puri,temple:187,6,high,verified-online,,,,src:wikipedia,,temple
-char:subhadra,WORSHIPPED_AT,temple:jagannath-puri,temple:188,6,high,verified-online,,,,src:wikipedia,,temple
+temple:lakshmana-khajuraho,BUILT_DURING,pol:chandela,temple:183,3,medium,reference-checked,,,,src:wikipedia,,temple
+deity:surya,WORSHIPPED_AT,temple:konark,temple:184,4,medium,reference-checked,,,,src:wikipedia,,temple
+temple:konark,COMMISSIONED_BY,person:narasimhadeva-i,temple:185,5,medium,reference-checked,,,,src:wikipedia,,temple
+deity:jagannatha,WORSHIPPED_AT,temple:jagannath-puri,temple:186,6,medium,reference-checked,,,,src:wikipedia,,temple
+char:balarama,WORSHIPPED_AT,temple:jagannath-puri,temple:187,6,medium,reference-checked,,,,src:wikipedia,,temple
+char:subhadra,WORSHIPPED_AT,temple:jagannath-puri,temple:188,6,medium,reference-checked,,,,src:wikipedia,,temple
 temple:jagannath-puri,COMMISSIONED_BY,person:anantavarman-chodaganga,temple:189,3,high,verified-online,,,,src:wikipedia @ History; src:eschmann-kulke-tripathi-1978,,temple
-temple:jagannath-puri,BUILT_DURING,pol:eastern-ganga,temple:190,3,high,verified-online,,,,src:wikipedia,,temple
-temple:jagannath-puri,ASSOCIATED_WITH,person:chaitanya,temple:191,5,high,recall,trad:gaudiya,,,src:eschmann-kulke-tripathi-1978,,temple
+temple:jagannath-puri,BUILT_DURING,pol:eastern-ganga,temple:190,3,medium,reference-checked,,,,src:wikipedia,,temple
+temple:jagannath-puri,ASSOCIATED_WITH,person:chaitanya,temple:191,5,medium,recall,trad:gaudiya,,,src:eschmann-kulke-tripathi-1978,,temple
 temple:jagannath-puri,ASSOCIATED_WITH,person:jayadeva,temple:192,6,medium,recall,,,,src:eschmann-kulke-tripathi-1978,,temple
-deity:shiva,WORSHIPPED_AT,temple:lingaraja,temple:193,6,high,verified-online,,,,src:wikipedia,,temple
-deity:vishnu,WORSHIPPED_AT,temple:lingaraja,temple:194,6,medium,verified-online,,,,src:wikipedia,,temple
-temple:lingaraja,BUILT_DURING,pol:somavamshi,temple:195,5,medium,verified-online,,,,src:wikipedia,,temple
-temple:lingaraja,BUILT_DURING,pol:eastern-ganga,temple:196,5,medium,verified-online,,,,src:wikipedia,,temple
-deity:shiva,WORSHIPPED_AT,temple:mukteshvara-bhubaneswar,temple:197,6,high,verified-online,,,,src:wikipedia,,temple
-temple:mukteshvara-bhubaneswar,BUILT_DURING,pol:somavamshi,temple:198,5,medium,verified-online,,,,src:wikipedia,,temple
-deity:kali,WORSHIPPED_AT,temple:chausath-yogini-hirapur,temple:199,6,medium,verified-online,,,,src:wikipedia,,temple
-temple:kamakhya,COMMISSIONED_BY,person:chilarai,temple:200,3,high,verified-online,,,,src:wikipedia @ History,,temple
-temple:kamakhya,COMMISSIONED_BY,person:naranarayan,temple:201,3,high,verified-online,,,,src:wikipedia @ History,,temple
-temple:kamakhya,BUILT_DURING,pol:koch,temple:202,3,high,verified-online,,,,src:wikipedia,,temple
-temple:kamakhya,ASSOCIATED_WITH,char:sati,temple:203,6,high,verified-online,,,,src:wikipedia,,temple
-deity:kali,WORSHIPPED_AT,temple:kalighat,temple:204,6,high,verified-online,,,,src:wikipedia,,temple
-temple:kalighat,ASSOCIATED_WITH,narr:shakti-pitha-origin,temple:205,6,high,verified-online,,,,src:wikipedia,,temple
-deity:kali,WORSHIPPED_AT,temple:dakshineswar,temple:206,6,high,verified-online,,,,src:wikipedia,,temple
-temple:dakshineswar,COMMISSIONED_BY,person:rani-rashmoni,temple:207,4,high,verified-online,,,,src:wikipedia,,temple
-deity:vishnu,WORSHIPPED_AT,temple:vishnupad-gaya,temple:208,6,high,verified-online,,,,src:wikipedia,,temple
-temple:vishnupad-gaya,COMMISSIONED_BY,person:ahilyabai-holkar,temple:209,4,high,verified-online,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:lingaraja,temple:193,6,medium,reference-checked,,,,src:wikipedia,,temple
+deity:vishnu,WORSHIPPED_AT,temple:lingaraja,temple:194,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:lingaraja,BUILT_DURING,pol:somavamshi,temple:195,5,medium,reference-checked,,,,src:wikipedia,,temple
+temple:lingaraja,BUILT_DURING,pol:eastern-ganga,temple:196,5,medium,reference-checked,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:mukteshvara-bhubaneswar,temple:197,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:mukteshvara-bhubaneswar,BUILT_DURING,pol:somavamshi,temple:198,5,medium,reference-checked,,,,src:wikipedia,,temple
+deity:kali,WORSHIPPED_AT,temple:chausath-yogini-hirapur,temple:199,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:kamakhya,COMMISSIONED_BY,person:chilarai,temple:200,3,medium,reference-checked,,,,src:wikipedia @ History,,temple
+temple:kamakhya,COMMISSIONED_BY,person:naranarayan,temple:201,3,medium,reference-checked,,,,src:wikipedia @ History,,temple
+temple:kamakhya,BUILT_DURING,pol:koch,temple:202,3,medium,reference-checked,,,,src:wikipedia,,temple
+temple:kamakhya,ASSOCIATED_WITH,char:sati,temple:203,6,medium,reference-checked,,,,src:wikipedia,,temple
+deity:kali,WORSHIPPED_AT,temple:kalighat,temple:204,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:kalighat,ASSOCIATED_WITH,narr:shakti-pitha-origin,temple:205,6,medium,reference-checked,,,,src:wikipedia,,temple
+deity:kali,WORSHIPPED_AT,temple:dakshineswar,temple:206,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:dakshineswar,COMMISSIONED_BY,person:rani-rashmoni,temple:207,4,medium,reference-checked,,,,src:wikipedia,,temple
+deity:vishnu,WORSHIPPED_AT,temple:vishnupad-gaya,temple:208,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:vishnupad-gaya,COMMISSIONED_BY,person:ahilyabai-holkar,temple:209,4,medium,reference-checked,,,,src:wikipedia,,temple
 temple:vishnupad-gaya,ASSOCIATED_WITH,text:vayu-purana,temple:210,6,medium,recall,,,,src:eck-2012,,temple
-deity:shiva,WORSHIPPED_AT,temple:baidyanath-deoghar,temple:211,6,high,verified-online,,,,src:wikipedia,,temple
-temple:baidyanath-deoghar,ASSOCIATED_WITH,char:ravana,temple:212,6,medium,verified-online,,,,src:wikipedia,,temple
-deity:shiva,WORSHIPPED_AT,temple:kashi-vishwanath,temple:213,6,high,verified-online,,,,src:wikipedia,,temple
-temple:kashi-vishwanath,LOCATED_AT,place:kashi,temple:214,4,high,verified-online,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:baidyanath-deoghar,temple:211,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:baidyanath-deoghar,ASSOCIATED_WITH,char:ravana,temple:212,6,medium,reference-checked,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:kashi-vishwanath,temple:213,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:kashi-vishwanath,LOCATED_AT,place:kashi,temple:214,4,medium,reference-checked,,,,src:wikipedia,,temple
 temple:kashi-vishwanath,COMMISSIONED_BY,person:ahilyabai-holkar,temple:215,4,high,verified-online,,,,src:wikipedia; src:eck-1982,,temple
-temple:kashi-vishwanath,BUILT_DURING,pol:holkar-indore,temple:216,4,high,verified-online,,,,src:wikipedia,,temple
-deity:shiva,WORSHIPPED_AT,temple:somnath,temple:217,6,high,verified-online,,,,src:wikipedia,,temple
-temple:somnath,BUILT_DURING,pol:chaulukya,temple:218,5,medium,verified-online,,,,src:wikipedia,,temple
+temple:kashi-vishwanath,BUILT_DURING,pol:holkar-indore,temple:216,4,medium,reference-checked,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:somnath,temple:217,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:somnath,BUILT_DURING,pol:chaulukya,temple:218,5,medium,reference-checked,,,,src:wikipedia,,temple
 temple:somnath,ASSOCIATED_WITH,char:daksha,temple:219,6,medium,recall,,,,src:thapar-2004,,temple
 temple:somnath,ASSOCIATED_WITH,person:ahilyabai-holkar,temple:220,5,medium,recall,,,,src:thapar-2004,,temple
-char:krishna,WORSHIPPED_AT,temple:dwarkadhish,temple:221,6,high,verified-online,,,,src:wikipedia,,temple
-temple:dwarkadhish,ASSOCIATED_WITH,place:dvaraka,temple:222,6,high,verified-online,,,,src:wikipedia,,temple
+char:krishna,WORSHIPPED_AT,temple:dwarkadhish,temple:221,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:dwarkadhish,ASSOCIATED_WITH,place:dvaraka,temple:222,6,medium,reference-checked,,,,src:wikipedia,,temple
 temple:dwarkadhish,ASSOCIATED_WITH,site:dwarka-offshore,temple:223,5,medium,recall,,,,src:eck-2012,See claim:dwarka-submerged (material agent).,temple
-deity:shiva,WORSHIPPED_AT,temple:nageshwar-dwarka,temple:224,6,high,verified-online,,,,src:wikipedia,,temple
-deity:surya,WORSHIPPED_AT,temple:modhera,temple:225,4,high,verified-online,,,,src:wikipedia,,temple
-temple:modhera,COMMISSIONED_BY,person:bhima-i-chaulukya,temple:226,5,high,verified-online,,,,src:wikipedia,,temple
-temple:modhera,BUILT_DURING,pol:chaulukya,temple:227,5,high,verified-online,,,,src:wikipedia,,temple
-deity:shiva,WORSHIPPED_AT,temple:mahakaleshwar,temple:228,6,high,verified-online,,,,src:wikipedia,,temple
-deity:shiva,WORSHIPPED_AT,temple:omkareshwar,temple:229,6,high,verified-online,,,,src:wikipedia,,temple
-temple:omkareshwar,BUILT_DURING,pol:paramara,temple:230,5,low,verified-online,,,,src:wikipedia,,temple
-temple:omkareshwar,BUILT_DURING,pol:holkar-indore,temple:231,5,medium,verified-online,,,,src:wikipedia,,temple
-deity:shiva,WORSHIPPED_AT,temple:bhojeshwar,temple:232,6,high,verified-online,,,,src:wikipedia,,temple
-temple:bhojeshwar,COMMISSIONED_BY,person:bhoja-paramara,temple:233,5,medium,verified-online,,,,src:wikipedia,,temple
-temple:bhojeshwar,BUILT_DURING,pol:paramara,temple:234,5,high,verified-online,,,,src:wikipedia,,temple
-deity:brahma,WORSHIPPED_AT,temple:pushkar-brahma,temple:235,6,high,verified-online,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:nageshwar-dwarka,temple:224,6,medium,reference-checked,,,,src:wikipedia,,temple
+deity:surya,WORSHIPPED_AT,temple:modhera,temple:225,4,medium,reference-checked,,,,src:wikipedia,,temple
+temple:modhera,COMMISSIONED_BY,person:bhima-i-chaulukya,temple:226,5,medium,reference-checked,,,,src:wikipedia,,temple
+temple:modhera,BUILT_DURING,pol:chaulukya,temple:227,5,medium,reference-checked,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:mahakaleshwar,temple:228,6,medium,reference-checked,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:omkareshwar,temple:229,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:omkareshwar,BUILT_DURING,pol:paramara,temple:230,5,low,reference-checked,,,,src:wikipedia,,temple
+temple:omkareshwar,BUILT_DURING,pol:holkar-indore,temple:231,5,medium,reference-checked,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:bhojeshwar,temple:232,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:bhojeshwar,COMMISSIONED_BY,person:bhoja-paramara,temple:233,5,medium,reference-checked,,,,src:wikipedia,,temple
+temple:bhojeshwar,BUILT_DURING,pol:paramara,temple:234,5,medium,reference-checked,,,,src:wikipedia,,temple
+deity:brahma,WORSHIPPED_AT,temple:pushkar-brahma,temple:235,6,medium,reference-checked,,,,src:wikipedia,,temple
 temple:pushkar-brahma,ASSOCIATED_WITH,text:padma-purana,temple:236,6,medium,recall,,,,src:eck-2012,,temple
-char:rama,WORSHIPPED_AT,temple:ram-mandir-ayodhya,temple:237,6,high,verified-online,,,,src:wikipedia,,temple
-temple:ram-mandir-ayodhya,ASSOCIATED_WITH,place:ayodhya,temple:238,6,high,verified-online,,,,src:wikipedia,,temple
-deity:shiva,WORSHIPPED_AT,temple:kedarnath,temple:239,6,high,verified-online,,,,src:wikipedia,,temple
-temple:kedarnath,ASSOCIATED_WITH,lin:pandavas,temple:240,6,medium,verified-online,,,,src:wikipedia,,temple
+char:rama,WORSHIPPED_AT,temple:ram-mandir-ayodhya,temple:237,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:ram-mandir-ayodhya,ASSOCIATED_WITH,place:ayodhya,temple:238,6,medium,reference-checked,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:kedarnath,temple:239,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:kedarnath,ASSOCIATED_WITH,lin:pandavas,temple:240,6,medium,reference-checked,,,,src:wikipedia,,temple
 temple:kedarnath,ASSOCIATED_WITH,person:shankara,temple:241,6,medium,recall,,,,src:eck-2012,,temple
-deity:vishnu,WORSHIPPED_AT,temple:badrinath,temple:242,6,high,verified-online,,,,src:wikipedia,,temple
-temple:badrinath,ASSOCIATED_WITH,person:shankara,temple:243,6,high,verified-online,,,,src:wikipedia,,temple
+deity:vishnu,WORSHIPPED_AT,temple:badrinath,temple:242,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:badrinath,ASSOCIATED_WITH,person:shankara,temple:243,6,medium,reference-checked,,,,src:wikipedia,,temple
 deity:narayana,WORSHIPPED_AT,temple:badrinath,temple:244,6,medium,recall,,,,src:eck-2012,,temple
-deity:ganga,WORSHIPPED_AT,temple:gangotri,temple:245,6,high,verified-online,,,,src:wikipedia,,temple
-temple:gangotri,ASSOCIATED_WITH,narr:descent-of-ganga,temple:246,6,high,verified-online,,,,src:wikipedia,,temple
-temple:gangotri,ASSOCIATED_WITH,place:ganga-river,temple:247,6,high,verified-online,,,,src:wikipedia,,temple
-deity:yamuna,WORSHIPPED_AT,temple:yamunotri,temple:248,6,high,verified-online,,,,src:wikipedia,,temple
-deity:shiva,WORSHIPPED_AT,temple:jageshwar,temple:249,6,high,verified-online,,,,src:wikipedia,,temple
-deity:surya,WORSHIPPED_AT,temple:martand,temple:250,4,high,verified-online,,,,src:wikipedia,,temple
+deity:ganga,WORSHIPPED_AT,temple:gangotri,temple:245,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:gangotri,ASSOCIATED_WITH,narr:descent-of-ganga,temple:246,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:gangotri,ASSOCIATED_WITH,place:ganga-river,temple:247,6,medium,reference-checked,,,,src:wikipedia,,temple
+deity:yamuna,WORSHIPPED_AT,temple:yamunotri,temple:248,6,medium,reference-checked,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:jageshwar,temple:249,6,medium,reference-checked,,,,src:wikipedia,,temple
+deity:surya,WORSHIPPED_AT,temple:martand,temple:250,4,medium,reference-checked,,,,src:wikipedia,,temple
 temple:martand,COMMISSIONED_BY,person:lalitaditya,temple:251,5,high,verified-online,,,,"src:wikipedia; src:stein-1900 @ Rājataraṅgiṇī, Book 4",,temple
-temple:martand,BUILT_DURING,pol:karkota,temple:252,5,high,verified-online,,,,src:wikipedia,,temple
-deity:shiva,WORSHIPPED_AT,temple:pashupatinath,temple:253,6,high,verified-online,,,,src:wikipedia,,temple
-temple:pashupatinath,BUILT_DURING,pol:licchavi-nepal,temple:254,5,medium,verified-online,,,,src:wikipedia,,temple
+temple:martand,BUILT_DURING,pol:karkota,temple:252,5,medium,reference-checked,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:pashupatinath,temple:253,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:pashupatinath,BUILT_DURING,pol:licchavi-nepal,temple:254,5,medium,reference-checked,,,,src:wikipedia,,temple
 temple:pashupatinath,BUILT_DURING,pol:malla-nepal,temple:255,5,medium,recall,,,,src:slusser-1982,,temple
-deity:vishnu,WORSHIPPED_AT,temple:changu-narayan,temple:256,6,high,verified-online,,,,src:wikipedia,,temple
-temple:changu-narayan,COMMISSIONED_BY,person:manadeva,temple:257,3,medium,verified-online,,,,src:wikipedia,,temple
-char:sita,WORSHIPPED_AT,temple:janaki-mandir,temple:258,6,high,verified-online,,,,src:wikipedia,,temple
-char:rama,WORSHIPPED_AT,temple:janaki-mandir,temple:259,6,high,verified-online,,,,src:wikipedia,,temple
-temple:janaki-mandir,ASSOCIATED_WITH,place:mithila,temple:260,6,high,verified-online,,,,src:wikipedia,,temple
+deity:vishnu,WORSHIPPED_AT,temple:changu-narayan,temple:256,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:changu-narayan,COMMISSIONED_BY,person:manadeva,temple:257,3,medium,reference-checked,,,,src:wikipedia,,temple
+char:sita,WORSHIPPED_AT,temple:janaki-mandir,temple:258,6,medium,reference-checked,,,,src:wikipedia,,temple
+char:rama,WORSHIPPED_AT,temple:janaki-mandir,temple:259,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:janaki-mandir,ASSOCIATED_WITH,place:mithila,temple:260,6,medium,reference-checked,,,,src:wikipedia,,temple
 temple:janaki-mandir,ASSOCIATED_WITH,narr:sita-svayamvara,temple:261,6,medium,recall,,,,src:wikipedia,,temple
-temple:janaki-mandir,COMMISSIONED_BY,person:vrisha-bhanu,temple:262,4,high,verified-online,,,,src:wikipedia,,temple
-deity:vishnu,WORSHIPPED_AT,temple:muktinath,temple:263,6,high,verified-online,,,,src:wikipedia,,temple
-deity:shiva,WORSHIPPED_AT,temple:koneswaram,temple:264,6,high,verified-online,,,,src:wikipedia,,temple
-temple:koneswaram,MENTIONED_IN,text:tevaram,temple:265,1,medium,verified-online,,,,src:wikipedia @ Tēvāram patikams of Campantar and Cuntarar on Tirukkōṇamalai (as stated on the page),,temple
+temple:janaki-mandir,COMMISSIONED_BY,person:vrisha-bhanu,temple:262,4,medium,reference-checked,,,,src:wikipedia,,temple
+deity:vishnu,WORSHIPPED_AT,temple:muktinath,temple:263,6,medium,reference-checked,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:koneswaram,temple:264,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:koneswaram,MENTIONED_IN,text:tevaram,temple:265,1,medium,reference-checked,,,,src:wikipedia @ Tēvāram patikams of Campantar and Cuntarar on Tirukkōṇamalai (as stated on the page),,temple
 temple:koneswaram,ASSOCIATED_WITH,char:ravana,temple:266,6,medium,recall,,,,src:wikipedia,,temple
-deity:shiva,WORSHIPPED_AT,temple:munneswaram,temple:267,6,high,verified-online,,,,src:wikipedia,,temple
-temple:munneswaram,ASSOCIATED_WITH,char:rama,temple:268,6,medium,verified-online,,,,src:wikipedia,,temple
-deity:shiva,WORSHIPPED_AT,temple:katas-raj,temple:269,6,high,verified-online,,,,src:wikipedia,,temple
-temple:katas-raj,ASSOCIATED_WITH,char:sati,temple:270,6,medium,verified-online,,,,src:wikipedia,,temple
-temple:katas-raj,ASSOCIATED_WITH,lin:pandavas,temple:271,6,medium,verified-online,,,,src:wikipedia,,temple
-deity:devi,WORSHIPPED_AT,temple:hinglaj,temple:272,6,high,verified-online,,,,src:wikipedia,,temple
-temple:hinglaj,ASSOCIATED_WITH,narr:shakti-pitha-origin,temple:273,6,high,verified-online,,,,src:wikipedia,,temple
-deity:shiva,WORSHIPPED_AT,temple:prambanan,temple:274,4,high,verified-online,,,,src:wikipedia,,temple
-deity:vishnu,WORSHIPPED_AT,temple:prambanan,temple:275,4,high,verified-online,,,,src:wikipedia,,temple
-deity:brahma,WORSHIPPED_AT,temple:prambanan,temple:276,4,high,verified-online,,,,src:wikipedia,,temple
-temple:prambanan,COMMISSIONED_BY,person:rakai-pikatan,temple:277,4,medium,verified-online,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:munneswaram,temple:267,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:munneswaram,ASSOCIATED_WITH,char:rama,temple:268,6,medium,reference-checked,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:katas-raj,temple:269,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:katas-raj,ASSOCIATED_WITH,char:sati,temple:270,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:katas-raj,ASSOCIATED_WITH,lin:pandavas,temple:271,6,medium,reference-checked,,,,src:wikipedia,,temple
+deity:devi,WORSHIPPED_AT,temple:hinglaj,temple:272,6,medium,reference-checked,,,,src:wikipedia,,temple
+temple:hinglaj,ASSOCIATED_WITH,narr:shakti-pitha-origin,temple:273,6,medium,reference-checked,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:prambanan,temple:274,4,medium,reference-checked,,,,src:wikipedia,,temple
+deity:vishnu,WORSHIPPED_AT,temple:prambanan,temple:275,4,medium,reference-checked,,,,src:wikipedia,,temple
+deity:brahma,WORSHIPPED_AT,temple:prambanan,temple:276,4,medium,reference-checked,,,,src:wikipedia,,temple
+temple:prambanan,COMMISSIONED_BY,person:rakai-pikatan,temple:277,4,medium,reference-checked,,,,src:wikipedia,,temple
 temple:prambanan,COMMISSIONED_BY,person:dyah-lokapala,temple:278,5,medium,verified-online,,,,src:wikipedia; src:de-casparis-1956,,temple
-char:rama,DEPICTED_IN,temple:prambanan,temple:279,4,high,verified-online,,,,src:wikipedia,,temple
+char:rama,DEPICTED_IN,temple:prambanan,temple:279,4,medium,reference-checked,,,,src:wikipedia,,temple
 narr:abduction-of-sita,DEPICTED_IN,temple:prambanan,temple:280,4,medium,recall,,,,src:jordaan-1996,,temple
 narr:setu-bandha,DEPICTED_IN,temple:prambanan,temple:281,4,medium,recall,,,,src:jordaan-1996,,temple
-char:krishna,DEPICTED_IN,temple:prambanan,temple:282,4,high,verified-online,,,,src:wikipedia,,temple
+char:krishna,DEPICTED_IN,temple:prambanan,temple:282,4,medium,reference-checked,,,,src:wikipedia,,temple
 temple:prambanan,ASSOCIATED_WITH,text:kakawin-ramayana,temple:283,5,low,disputed,,,,src:jordaan-1996,"Scholars disagree whether the reliefs follow the Old Javanese Kakawin Rāmāyaṇa, an oral tradition, or another version; see claim:prambanan-follows-kakawin (regional agent).",temple
 deity:shiva,WORSHIPPED_AT,temple:dieng-arjuna,temple:284,4,medium,recall,,,,src:dumarcay-1986,,temple
-temple:dieng-arjuna,ASSOCIATED_WITH,char:arjuna,temple:285,6,low,verified-online,,,,src:wikipedia,,temple
-deity:vishnu,WORSHIPPED_AT,temple:angkor-wat,temple:286,4,high,verified-online,,,,src:wikipedia,,temple
-temple:angkor-wat,COMMISSIONED_BY,person:suryavarman-ii,temple:287,4,high,verified-online,,,,src:wikipedia,,temple
+temple:dieng-arjuna,ASSOCIATED_WITH,char:arjuna,temple:285,6,low,reference-checked,,,,src:wikipedia,,temple
+deity:vishnu,WORSHIPPED_AT,temple:angkor-wat,temple:286,4,medium,reference-checked,,,,src:wikipedia,,temple
+temple:angkor-wat,COMMISSIONED_BY,person:suryavarman-ii,temple:287,4,medium,reference-checked,,,,src:wikipedia,,temple
 narr:kurukshetra-war,DEPICTED_IN,temple:angkor-wat,temple:288,4,high,verified-online,,,,src:wikipedia; src:jacques-freeman-1997,,temple
 narr:lanka-war,DEPICTED_IN,temple:angkor-wat,temple:289,4,high,verified-online,,,,src:wikipedia; src:jacques-freeman-1997,,temple
-char:krishna,DEPICTED_IN,temple:angkor-wat,temple:290,4,high,verified-online,,,,src:wikipedia,,temple
+char:krishna,DEPICTED_IN,temple:angkor-wat,temple:290,4,medium,reference-checked,,,,src:wikipedia,,temple
 temple:angkor-wat,ASSOCIATED_WITH,text:reamker,temple:291,5,low,recall,,,,src:richman-1991,"The reliefs predate surviving Reamker texts; the relation is one of shared tradition, not textual dependence.",temple
-deity:shiva,WORSHIPPED_AT,temple:banteay-srei,temple:292,3,high,verified-online,,,,src:wikipedia,,temple
-temple:banteay-srei,COMMISSIONED_BY,person:yajnavaraha,temple:293,3,high,verified-online,,,,src:wikipedia,,temple
-temple:banteay-srei,BUILT_DURING,pol:khmer,temple:294,3,high,verified-online,,,,src:wikipedia,,temple
-char:ravana,DEPICTED_IN,temple:banteay-srei,temple:295,4,high,recall,,,,src:jacques-freeman-1997,,temple
-deity:shiva,WORSHIPPED_AT,temple:preah-vihear,temple:296,4,high,recall,,,,src:jacques-freeman-1997,,temple
-temple:preah-vihear,BUILT_DURING,pol:khmer,temple:297,4,high,verified-online,,,,src:wikipedia,,temple
-temple:preah-vihear,COMMISSIONED_BY,person:suryavarman-ii,temple:298,5,medium,verified-online,,,,src:wikipedia,,temple
-deity:shiva,WORSHIPPED_AT,temple:wat-phou,temple:299,4,high,recall,,,,src:coedes-1968,,temple
-temple:wat-phou,BUILT_DURING,pol:khmer,temple:300,4,high,verified-online,,,,src:wikipedia,,temple
-deity:shiva,WORSHIPPED_AT,temple:my-son,temple:301,3,high,verified-online,,,,src:wikipedia,,temple
-temple:my-son,BUILT_DURING,pol:champa,temple:302,3,high,verified-online,,,,src:wikipedia,,temple
-deity:shiva,WORSHIPPED_AT,temple:pura-besakih,temple:303,6,high,recall,,,,src:wikipedia,,temple
-deity:murugan,WORSHIPPED_AT,temple:batu-caves,temple:304,6,high,verified-online,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:banteay-srei,temple:292,3,medium,reference-checked,,,,src:wikipedia,,temple
+temple:banteay-srei,COMMISSIONED_BY,person:yajnavaraha,temple:293,3,medium,reference-checked,,,,src:wikipedia,,temple
+temple:banteay-srei,BUILT_DURING,pol:khmer,temple:294,3,medium,reference-checked,,,,src:wikipedia,,temple
+char:ravana,DEPICTED_IN,temple:banteay-srei,temple:295,4,medium,recall,,,,src:jacques-freeman-1997,,temple
+deity:shiva,WORSHIPPED_AT,temple:preah-vihear,temple:296,4,medium,recall,,,,src:jacques-freeman-1997,,temple
+temple:preah-vihear,BUILT_DURING,pol:khmer,temple:297,4,medium,reference-checked,,,,src:wikipedia,,temple
+temple:preah-vihear,COMMISSIONED_BY,person:suryavarman-ii,temple:298,5,medium,reference-checked,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:wat-phou,temple:299,4,medium,recall,,,,src:coedes-1968,,temple
+temple:wat-phou,BUILT_DURING,pol:khmer,temple:300,4,medium,reference-checked,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:my-son,temple:301,3,medium,reference-checked,,,,src:wikipedia,,temple
+temple:my-son,BUILT_DURING,pol:champa,temple:302,3,medium,reference-checked,,,,src:wikipedia,,temple
+deity:shiva,WORSHIPPED_AT,temple:pura-besakih,temple:303,6,medium,recall,,,,src:wikipedia,,temple
+deity:murugan,WORSHIPPED_AT,temple:batu-caves,temple:304,6,medium,reference-checked,,,,src:wikipedia,,temple
 deity:nataraja,FORM_OF,deity:shiva,temple:305,6,high,source-checked,trad:shaiva,,,src:smith-1996; src:kramrisch-1981,,temple
 deity:nataraja,CENTRAL_TO,trad:shaiva-siddhanta,temple:306,5,medium,recall,,,,src:smith-1996,,temple
 deity:nataraja,DEPICTED_IN,temple:badami-caves,temple:307,4,medium,recall,,,,src:harle-1994,,temple
@@ -3038,11 +3046,11 @@ deity:venkateshvara,FORM_OF,deity:vishnu,temple:311,6,high,source-checked,trad:s
 deity:minakshi,FORM_OF,deity:parvati,temple:312,6,high,source-checked,trad:shaiva,,,src:fuller-1984,,temple
 deity:minakshi,SPOUSE_OF,deity:shiva,temple:313,6,high,source-checked,Madurai temple tradition,,,src:fuller-1984; src:shulman-1980,,temple
 deity:ranganatha,FORM_OF,deity:vishnu,temple:314,6,high,source-checked,trad:srivaishnava,,,src:hardy-1983,,temple
-place:hampi,ASSOCIATED_WITH,place:kishkindha,temple:315,6,high,verified-online,,,,src:wikipedia,,temple
+place:hampi,ASSOCIATED_WITH,place:kishkindha,temple:315,6,medium,reference-checked,,,,src:wikipedia,,temple
 place:hampi,ASSOCIATED_WITH,char:hanuman,temple:316,6,medium,recall,,,,src:lutgendorf-2007,,temple
 place:hampi,ASSOCIATED_WITH,char:sugriva,temple:317,6,medium,recall,,,,src:fritz-michell-1991,,temple
-place:adams-bridge,ASSOCIATED_WITH,char:rama,temple:318,6,high,verified-online,,,,src:wikipedia,,temple
-place:rameswaram-island,ASSOCIATED_WITH,char:rama,temple:319,6,high,verified-online,,,,src:wikipedia,,temple
+place:adams-bridge,ASSOCIATED_WITH,char:rama,temple:318,6,medium,reference-checked,,,,src:wikipedia,,temple
+place:rameswaram-island,ASSOCIATED_WITH,char:rama,temple:319,6,medium,reference-checked,,,,src:wikipedia,,temple
 person:rajaraja-i,MEMBER_OF,pol:chola,temple:320,3,high,verified-online,,,,src:sastri-1955; src:wikipedia,,temple
 person:rajendra-i,MEMBER_OF,pol:chola,temple:321,3,high,source-checked,,,,src:sastri-1955; src:wikipedia,,temple
 person:rajaraja-i,PARENT_OF,person:rajendra-i,temple:322,3,high,source-checked,,,,src:sastri-1955,,temple
@@ -3050,18 +3058,18 @@ person:rajaraja-ii,MEMBER_OF,pol:chola,temple:323,3,high,source-checked,,,,src:s
 person:parantaka-i,MEMBER_OF,pol:chola,temple:324,3,high,source-checked,,,,src:sastri-1955; src:wikipedia,,temple
 person:narasimhavarman-ii,MEMBER_OF,pol:pallava,temple:325,3,high,source-checked,,,,src:srinivasan-kr-1964; src:wikipedia,,temple
 person:nandivarman-ii,MEMBER_OF,pol:pallava,temple:326,3,high,source-checked,,,,src:srinivasan-kr-1964; src:wikipedia,,temple
-person:vikramaditya-ii,MEMBER_OF,pol:chalukya-badami,temple:327,5,high,recall,,,,src:singh-2008; src:wikipedia,,temple
-person:lokamahadevi,MEMBER_OF,pol:chalukya-badami,temple:328,3,high,verified-online,,,,src:wikipedia,,temple
-person:lokamahadevi,SPOUSE_OF,person:vikramaditya-ii,temple:329,3,high,verified-online,,,,src:wikipedia,,temple
+person:vikramaditya-ii,MEMBER_OF,pol:chalukya-badami,temple:327,5,medium,recall,,,,src:singh-2008; src:wikipedia,,temple
+person:lokamahadevi,MEMBER_OF,pol:chalukya-badami,temple:328,3,medium,reference-checked,,,,src:wikipedia,,temple
+person:lokamahadevi,SPOUSE_OF,person:vikramaditya-ii,temple:329,3,medium,reference-checked,,,,src:wikipedia,,temple
 person:dantidurga,MEMBER_OF,pol:rashtrakuta,temple:330,3,high,source-checked,,,,src:wikipedia; src:singh-2008,,temple
 person:yashovarman-chandela,MEMBER_OF,pol:chandela,temple:331,3,high,source-checked,,,,src:wikipedia; src:kielhorn-1892,,temple
 person:vidyadhara-chandela,MEMBER_OF,pol:chandela,temple:332,3,high,source-checked,,,,src:wikipedia; src:desai-2000,,temple
 person:narasimhadeva-i,MEMBER_OF,pol:eastern-ganga,temple:333,3,high,source-checked,,,,src:wikipedia; src:donaldson-1985,,temple
 person:anantavarman-chodaganga,MEMBER_OF,pol:eastern-ganga,temple:334,3,high,verified-online,,,,src:wikipedia; src:eschmann-kulke-tripathi-1978,,temple
 person:ahilyabai-holkar,MEMBER_OF,pol:holkar-indore,temple:335,3,high,verified-online,,,,src:wikipedia; src:wikipedia; src:eck-2012,,temple
-person:naranarayan,MEMBER_OF,pol:koch,temple:336,3,high,verified-online,,,,src:wikipedia,,temple
-person:chilarai,MEMBER_OF,pol:koch,temple:337,3,high,verified-online,,,,src:wikipedia,,temple
-person:chilarai,SIBLING_OF,person:naranarayan,temple:338,3,high,verified-online,,,,src:wikipedia,,temple
+person:naranarayan,MEMBER_OF,pol:koch,temple:336,3,medium,reference-checked,,,,src:wikipedia,,temple
+person:chilarai,MEMBER_OF,pol:koch,temple:337,3,medium,reference-checked,,,,src:wikipedia,,temple
+person:chilarai,SIBLING_OF,person:naranarayan,temple:338,3,medium,reference-checked,,,,src:wikipedia,,temple
 person:lalitaditya,MEMBER_OF,pol:karkota,temple:339,3,high,source-checked,,,,src:stein-1900; src:wikipedia,,temple
 person:bhima-i-chaulukya,MEMBER_OF,pol:chaulukya,temple:340,3,high,source-checked,,,,src:wikipedia; src:thapar-2004,,temple
 person:bhoja-paramara,MEMBER_OF,pol:paramara,temple:341,3,high,source-checked,,,,src:wikipedia; src:pollock-2006,,temple
@@ -3069,12 +3077,12 @@ person:suryavarman-ii,MEMBER_OF,pol:khmer,temple:342,3,high,verified-online,,,,s
 person:yajnavaraha,MEMBER_OF,pol:khmer,temple:343,3,high,verified-online,,,,src:wikipedia; src:coedes-1968,,temple
 person:rakai-pikatan,MEMBER_OF,pol:medang,temple:344,3,medium,verified-online,,,,src:wikipedia; src:jordaan-1996,,temple
 person:vishnuvardhana-hoysala,MEMBER_OF,pol:hoysala,temple:345,3,high,source-checked,,,,src:wikipedia; src:foekema-1996,,temple
-person:ketamalla,MEMBER_OF,pol:hoysala,temple:346,3,high,verified-online,,,,src:wikipedia,,temple
-person:somanatha-dandanayaka,MEMBER_OF,pol:hoysala,temple:347,3,high,verified-online,,,,src:wikipedia,,temple
-person:recherla-rudra,MEMBER_OF,pol:kakatiya,temple:348,3,high,verified-online,,,,src:wikipedia,,temple
+person:ketamalla,MEMBER_OF,pol:hoysala,temple:346,3,medium,reference-checked,,,,src:wikipedia,,temple
+person:somanatha-dandanayaka,MEMBER_OF,pol:hoysala,temple:347,3,medium,reference-checked,,,,src:wikipedia,,temple
+person:recherla-rudra,MEMBER_OF,pol:kakatiya,temple:348,3,medium,reference-checked,,,,src:wikipedia,,temple
 person:krishnadevaraya,MEMBER_OF,pol:vijayanagara,temple:349,3,high,source-checked,,,,src:wikipedia; src:fritz-michell-1991,,temple
 person:devaraya-i,MEMBER_OF,pol:vijayanagara,temple:350,5,medium,recall,,,,src:dallapiccola-1992; src:fritz-michell-1991,,temple
-person:marthanda-varma,MEMBER_OF,pol:travancore,temple:351,5,high,recall,,,,src:wikipedia; src:wikipedia,,temple
+person:marthanda-varma,MEMBER_OF,pol:travancore,temple:351,5,medium,recall,,,,src:wikipedia; src:wikipedia,,temple
 concept:jyotirlinga,MENTIONED_IN,text:shiva-purana,temple:352,1,medium,recall,,,,"src:shiva-purana-tr @ Śiva Purāṇa, Koṭirudrasaṃhitā, ch. 1",,temple
 concept:jyotirlinga,ASSOCIATED_WITH,narr:lingodbhava,temple:353,6,medium,recall,,,,src:eck-2012; src:kramrisch-1981,,temple
 concept:jyotirlinga,ASSOCIATED_WITH,person:shankara,temple:354,6,low,recall,,,,src:eck-2012,,temple
@@ -3467,7 +3475,7 @@ char:urvashi,APPEARS_IN,psg:rv-10-95,vedic:301,1,high,verified-online,,,speaker,
 char:urvashi,APPEARS_IN,psg:sb-11-5-1,vedic:302,1,high,verified-online,,,protagonist,src:gretil-shatapatha @ ŚB 11.5.1.1,,vedic
 char:urvashi,APPEARS_IN,psg:rv-7-33,vedic:303,1,high,verified-online,,,mother (by mind) of Vasiṣṭha,src:gretil-rv-aufrecht @ RV 7.33.11–12,,vedic
 char:pururavas,SPOUSE_OF,char:urvashi,vedic:304,1,high,verified-online,,text:shatapatha-brahmana,,src:gretil-shatapatha @ ŚB 11.5.1.1; src:gretil-rv-aufrecht @ RV 10.95.1,,vedic
-char:ida,PARENT_OF,char:pururavas,vedic:305,1,high,verified-online,,text:rigveda,,src:gretil-rv-aufrecht @ RV 10.95.18; src:gretil-shatapatha @ ŚB 11.5.1.1,,vedic
+char:ida,PARENT_OF,char:pururavas,vedic:305,5,medium,verified-online,,text:rigveda,,src:gretil-rv-aufrecht @ RV 10.95.18; src:gretil-shatapatha @ ŚB 11.5.1.1,,vedic
 char:manu,PARENT_OF,char:ida,vedic:306,1,high,verified-online,,text:shatapatha-brahmana,,src:gretil-shatapatha @ ŚB 1.8.1.8–9,,vedic
 char:ida,APPEARS_IN,psg:sb-1-8-1,vedic:307,1,high,verified-online,,,born of the offering,src:gretil-shatapatha @ ŚB 1.8.1.7–11,,vedic
 char:vritra,APPEARS_IN,psg:rv-1-32,vedic:308,1,high,verified-online,,,antagonist,src:gretil-rv-aufrecht @ RV 1.32.5–11,,vedic
