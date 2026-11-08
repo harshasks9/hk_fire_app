@@ -45,6 +45,15 @@
   "agent": "temple"
  },
  {
+  "id": "src:entwistle-1987",
+  "type": "scholarly-book",
+  "title": "Braj: Centre of Krishna Pilgrimage",
+  "author": "Alan W. Entwistle",
+  "year": "1987",
+  "publisher": "Egbert Forsten, Groningen",
+  "agent": "temple"
+ },
+ {
   "id": "src:case-1996",
   "type": "scholarly-book",
   "title": "Govindadeva: A Dialogue in Stone",
@@ -78,6 +87,24 @@
   "author": "Kathleen M. Erndl",
   "year": "1993",
   "publisher": "Oxford University Press, New York",
+  "agent": "temple"
+ },
+ {
+  "id": "src:mcdaniel-2004",
+  "type": "scholarly-book",
+  "title": "Offering Flowers, Feeding Skulls: Popular Goddess Worship in West Bengal",
+  "author": "June McDaniel",
+  "year": "2004",
+  "publisher": "Oxford University Press, New York",
+  "agent": "temple"
+ },
+ {
+  "id": "src:van-der-veer-1988",
+  "type": "scholarly-book",
+  "title": "Gods on Earth: The Management of Religious Experience and Identity in a North Indian Pilgrimage Centre",
+  "author": "Peter van der Veer",
+  "year": "1988",
+  "publisher": "Athlone Press, London",
   "agent": "temple"
  },
  {
@@ -117,12 +144,39 @@
   "agent": "temple"
  },
  {
+  "id": "src:balasubrahmanyam-1971",
+  "type": "scholarly-book",
+  "title": "Early Chola Temples: Parantaka I to Rajaraja I (A.D. 907–985)",
+  "author": "S. R. Balasubrahmanyam",
+  "year": "1971",
+  "publisher": "Orient Longman, Bombay",
+  "agent": "temple"
+ },
+ {
   "id": "src:cousens-1926",
   "type": "excavation-report",
   "title": "The Chalukyan Architecture of the Kanarese Districts (Archaeological Survey of India, New Imperial Series 42)",
   "author": "Henry Cousens",
   "year": "1926",
   "publisher": "Government of India, Calcutta",
+  "agent": "temple"
+ },
+ {
+  "id": "src:sc-sabarimala-2018",
+  "type": "institutional",
+  "title": "Indian Young Lawyers Association & Ors. v. The State of Kerala & Ors. (Writ Petition (Civil) No. 373 of 2006), judgment of 28 September 2018",
+  "author": "Supreme Court of India",
+  "year": "2018",
+  "publisher": "Supreme Court of India",
+  "agent": "temple"
+ },
+ {
+  "id": "src:sontheimer-1989",
+  "type": "scholarly-book",
+  "title": "Pastoral Deities in Western India",
+  "author": "Günther-Dietz Sontheimer (trans. Anne Feldhaus)",
+  "year": "1989",
+  "publisher": "Oxford University Press, New York",
   "agent": "temple"
  },
  {
@@ -135,12 +189,84 @@
   "agent": "temple"
  },
  {
+  "id": "src:axelrod-fuerch-1996",
+  "type": "journal-article",
+  "title": "Flight of the Deities: Hindu Resistance in Portuguese Goa",
+  "author": "Paul Axelrod and Michelle A. Fuerch",
+  "year": "1996",
+  "publisher": "Modern Asian Studies 30 (2): 387–421",
+  "agent": "temple"
+ },
+ {
+  "id": "src:schastok-1985",
+  "type": "scholarly-book",
+  "title": "The Śāmalājī Sculptures and 6th Century Art in Western India",
+  "author": "Sara L. Schastok",
+  "year": "1985",
+  "publisher": "E. J. Brill, Leiden",
+  "agent": "temple"
+ },
+ {
+  "id": "src:ambalal-1987",
+  "type": "scholarly-book",
+  "title": "Krishna as Shrinathji: Rajasthani Paintings from Nathdvara",
+  "author": "Amit Ambalal",
+  "year": "1987",
+  "publisher": "Mapin, Ahmedabad",
+  "agent": "temple"
+ },
+ {
+  "id": "src:peabody-1991",
+  "type": "journal-article",
+  "title": "In Whose Turban Does the Lord Reside? The Objectification of Charisma and the Fetishism of Objects in the Hindu Kingdom of Kota",
+  "author": "Norbert Peabody",
+  "year": "1991",
+  "publisher": "Comparative Studies in Society and History 33 (4): 726–754",
+  "agent": "temple"
+ },
+ {
+  "id": "src:kalia-1982",
+  "type": "scholarly-book",
+  "title": "Art of Osian Temples: Socio-Economic and Religious Life in India, 8th–12th Centuries A.D.",
+  "author": "Asha Kalia",
+  "year": "1982",
+  "publisher": "Abhinav Publications, New Delhi",
+  "agent": "temple"
+ },
+ {
   "id": "src:pathmanathan-1978",
   "type": "scholarly-book",
   "title": "The Kingdom of Jaffna, Part 1 (circa A.D. 1250–1450)",
   "author": "S. Pathmanathan",
   "year": "1978",
   "publisher": "Colombo",
+  "agent": "temple"
+ },
+ {
+  "id": "src:panigrahi-1961",
+  "type": "scholarly-book",
+  "title": "Archaeological Remains at Bhubaneswar",
+  "author": "K. C. Panigrahi",
+  "year": "1961",
+  "publisher": "Orient Longmans, Calcutta",
+  "agent": "temple"
+ },
+ {
+  "id": "src:sivaramamurti-1985",
+  "type": "scholarly-book",
+  "title": "Vijayanagara Paintings",
+  "author": "C. Sivaramamurti",
+  "year": "1985",
+  "publisher": "Publications Division, Government of India, New Delhi",
+  "agent": "temple"
+ },
+ {
+  "id": "src:humes-1996",
+  "type": "scholarly-book",
+  "title": "Vindhyavāsinī: Local Goddess yet Great Goddess, in J. S. Hawley and D. M. Wulff (eds), Devī: Goddesses of India",
+  "author": "Cynthia Ann Humes",
+  "year": "1996",
+  "publisher": "University of California Press, Berkeley",
   "agent": "temple"
  }
 ]

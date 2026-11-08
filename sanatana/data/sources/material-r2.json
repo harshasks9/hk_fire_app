@@ -73,16 +73,6 @@
  },
  {
   "agent": "material",
-  "id": "src:sii-2",
-  "type": "epigraphic-corpus",
-  "title": "South-Indian Inscriptions, vol. II (parts I–V): Tamil Inscriptions in the Rajarajesvara Temple at Tanjavur and other records",
-  "author": "E. Hultzsch, V. Venkayya and H. Krishna Sastri",
-  "year": "1891–1916",
-  "publisher": "Government Press, Madras",
-  "notes": "Kasakudi plates SII II no. 73 (part III, 1895, pp. 342–361); Velurpalaiyam plates SII II no. 98 (part V, 1916, pp. 501–517) — per DHARMA."
- },
- {
-  "agent": "material",
   "id": "src:sii-3",
   "type": "epigraphic-corpus",
   "title": "South-Indian Inscriptions, vol. III: Miscellaneous Inscriptions from the Tamil Country (part III, 1920)",
@@ -242,6 +232,17 @@
  },
  {
   "agent": "material",
+  "id": "src:bl-mewar-ramayana",
+  "type": "institutional",
+  "title": "Curator's perspective: accessing the Mewar Ramayana (British Library Asian and African studies blog)",
+  "author": "British Library",
+  "year": "2014",
+  "publisher": "British Library, London",
+  "url": "https://britishlibrary.typepad.co.uk/asian-and-african/2014/04/curators-perspective-accessing-the-mewar-ramayana.html",
+  "notes": "Located by web search (snippet read: patron, 1649–53, Sahib Din and Manohar, Add MS 15295–15297, digitisation with CSMVS); full page not fetched."
+ },
+ {
+  "agent": "material",
   "id": "src:asi-2003-ayodhya",
   "type": "excavation-report",
   "title": "Ayodhya: 2002–03 (report of the court-ordered excavation at the disputed site)",
@@ -249,17 +250,6 @@
   "year": "2003",
   "publisher": "Archaeological Survey of India, New Delhi",
   "notes": "Submitted to the Allahabad High Court in August 2003; known here through its treatment in the 2019 judgment and published commentary."
- },
- {
-  "agent": "material",
-  "id": "src:sc-ayodhya-2019",
-  "type": "primary-text",
-  "title": "M Siddiq (D) Thr Lrs v. Mahant Suresh Das & Ors, Civil Appeal Nos 10866–10867 of 2010, judgment of 9 November 2019",
-  "author": "Supreme Court of India (Constitution Bench)",
-  "year": "2019",
-  "publisher": "Supreme Court of India",
-  "url": "https://main.sci.gov.in/supremecourt/2010/36350/36350_2010_1_1502_18205_Judgement_09-Nov-2019.pdf",
-  "notes": "URL from recall; not fetched."
  },
  {
   "agent": "material",

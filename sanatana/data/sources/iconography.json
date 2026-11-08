@@ -1,0 +1,339 @@
+[
+ {
+  "id": "src:bs-gretil",
+  "type": "primary-text",
+  "title": "Bṛhatsaṃhitā of Varāhamihira (GRETIL e-text)",
+  "author": "Varāhamihira; e-text by Michio Yano and Mizue Sugita",
+  "year": "1998 (version 4.3); TEI 2020",
+  "publisher": "GRETIL, SUB Göttingen",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_varAhamihira-bRhatsaMhitA.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0",
+  "notes": "Based on the edition of A. V. Tripathi (Sarasvati Bhavan Granthamala), with variants from H. Kern’s text and Utpala’s commentary. Chapter numbers in this edition run one lower than Kern’s and Bhat’s from ch. 36 on: 52 vāstuvidyā, 55 prāsādalakṣaṇa, 57 pratimālakṣaṇa and 59 pratimāpratiṣṭhāpana correspond to Kern/Bhat 53, 56, 58 and 60 (the e-text itself marks Kern’s 58.58).",
+  "agent": "iconography"
+ },
+ {
+  "id": "src:kern-bs-1870",
+  "type": "translation",
+  "title": "The Bṛhat Saṃhitā; or, Complete System of Natural Astrology of Varāha-Mihira (translation)",
+  "author": "H. Kern",
+  "year": "1870–1875",
+  "publisher": "Journal of the Royal Asiatic Society, new series, vols. 4–7",
+  "license": "public domain",
+  "notes": "Kern also edited the Sanskrit text (Bibliotheca Indica, Calcutta 1865), archived at https://archive.org/details/wg1077",
+  "agent": "iconography"
+ },
+ {
+  "id": "src:bhat-1981",
+  "type": "translation",
+  "title": "Varāhamihira’s Bṛhat Saṁhitā, with English Translation, Exhaustive Notes and Literary Comments (2 vols.)",
+  "author": "M. Ramakrishna Bhat",
+  "year": "1981–1982 (2nd ed. 1996)",
+  "publisher": "Motilal Banarsidass, Delhi",
+  "agent": "iconography"
+ },
+ {
+  "id": "src:shastri-am-1969",
+  "type": "scholarly-book",
+  "title": "India as Seen in the Bṛhatsaṁhitā of Varāhamihira",
+  "author": "Ajay Mitra Shastri",
+  "year": "1969",
+  "publisher": "Motilal Banarsidass, Delhi",
+  "agent": "iconography"
+ },
+ {
+  "id": "src:ap-gretil",
+  "type": "primary-text",
+  "title": "Agnipurāṇa (GRETIL e-text)",
+  "author": "ed. Rajendralal Mitra; input by Jun Takashima",
+  "year": "1870–1879 (edition); 2001 (input)",
+  "publisher": "Asiatic Society of Bengal, Bibliotheca Indica 65 (edition); GRETIL, SUB Göttingen (e-text)",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_agnipurANa.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0",
+  "notes": "Chapters 42–55 deal with temples and images (prāsāda-, pratimā-, piṇḍikā- and liṅga-lakṣaṇa); ch. 48 is the caturviṃśatimūrti-stotra.",
+  "agent": "iconography"
+ },
+ {
+  "id": "src:mkp-gretil",
+  "type": "primary-text",
+  "title": "Mārkaṇḍeyapurāṇa, adhyāyas 1–93 (GRETIL e-text; includes the Devīmāhātmya as MkP 81–93)",
+  "publisher": "GRETIL, SUB Göttingen",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0",
+  "notes": "GRETIL numbers the Devīmāhātmya as Mārkaṇḍeya chapters 81–93, so MkP 88.12–20 = DM 8.12–20 and MkP 87.26 = DM 7.25/27 depending on edition.",
+  "agent": "iconography"
+ },
+ {
+  "id": "src:todala-gretil",
+  "type": "primary-text",
+  "title": "Toḍalatantra (GRETIL e-text)",
+  "author": "ed. Gopinath Kaviraj",
+  "year": "1970 (edition)",
+  "publisher": "Varanaseya Sanskrit Vishvavidyalaya, Tantrasaṃgraha vol. 2 (edition); GRETIL (e-text)",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_toDalatantra.txt",
+  "urlChecked": true,
+  "license": "CC BY-NC-SA 4.0",
+  "agent": "iconography"
+ },
+ {
+  "id": "src:citralakshana-gretil",
+  "type": "primary-text",
+  "title": "Citralakṣaṇa of Nagnajit (GRETIL e-text)",
+  "author": "ed. Asoke Chatterjee Sastri",
+  "year": "1987 (edition)",
+  "publisher": "Asiatic Society, Calcutta, Bibliotheca Indica 315 (edition); Digital Sanskrit Buddhist Canon / GRETIL (e-text)",
+  "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_nagnajit-citralakSaNam.txt",
+  "urlChecked": true,
+  "notes": "Sanskrit text reconstructed from the Tibetan translation preserved in the Tanjur, with Tibetan and English versions.",
+  "agent": "iconography"
+ },
+ {
+  "id": "src:dagens-1994",
+  "type": "translation",
+  "title": "Mayamata: An Indian Treatise on Housing, Architecture and Iconography (Sanskrit text and English translation, 2 vols.)",
+  "author": "Bruno Dagens",
+  "year": "1994 (first English ed. 1985)",
+  "publisher": "Indira Gandhi National Centre for the Arts and Motilal Banarsidass, New Delhi",
+  "url": "https://archive.org/details/GwHQ_mayamata-by-bruno-dagens-vol.-1-motilal-banarasi-das",
+  "urlChecked": true,
+  "notes": "Archive.org scan located; its OCR text layer is unusable, so locators from this work are given at chapter level from recall.",
+  "agent": "iconography"
+ },
+ {
+  "id": "src:ganapati-sastri-1919",
+  "type": "primary-text",
+  "title": "The Mayamata of Mayamuni (Trivandrum Sanskrit Series 65)",
+  "author": "T. Ganapati Sastri (ed.)",
+  "year": "1919",
+  "publisher": "Government Press, Trivandrum",
+  "url": "https://archive.org/details/in.ernet.dli.2015.552465",
+  "urlChecked": true,
+  "license": "public domain",
+  "agent": "iconography"
+ },
+ {
+  "id": "src:acharya-1933",
+  "type": "translation",
+  "title": "Architecture of Mānasāra (Mānasāra Series vols. III–V: text, translation and illustrations)",
+  "author": "Prasanna Kumar Acharya",
+  "year": "1933–1934",
+  "publisher": "Oxford University Press, London",
+  "url": "https://archive.org/details/in.gov.ignca.22949",
+  "urlChecked": true,
+  "agent": "iconography"
+ },
+ {
+  "id": "src:ganapati-sastri-1924",
+  "type": "primary-text",
+  "title": "Samarāṅgaṇa-Sūtradhāra of Mahārājādhirāja Bhojadeva (Gaekwad’s Oriental Series 25 and 32)",
+  "author": "T. Ganapati Sastri (ed.)",
+  "year": "1924–1925",
+  "publisher": "Central Library, Baroda",
+  "url": "https://archive.org/details/in.ernet.dli.2015.345259",
+  "urlChecked": true,
+  "license": "public domain",
+  "agent": "iconography"
+ },
+ {
+  "id": "src:mankad-1950",
+  "type": "primary-text",
+  "title": "Aparājitapṛcchā of Bhuvanadeva (Gaekwad’s Oriental Series 115)",
+  "author": "Popatbhai Ambashankar Mankad (ed.)",
+  "year": "1950",
+  "publisher": "Oriental Institute, Baroda",
+  "notes": "Existence and editor confirmed via the Wikipedia article (pointer only).",
+  "agent": "iconography"
+ },
+ {
+  "id": "src:boner-sarma-1966",
+  "type": "translation",
+  "title": "Śilpa Prakāśa: Medieval Orissan Sanskrit Text on Temple Architecture by Rāmacandra Kaulācāra",
+  "author": "Alice Boner and Sadāśiva Rath Śarmā",
+  "year": "1966",
+  "publisher": "E. J. Brill, Leiden",
+  "url": "https://archive.org/details/silpaprakasa0000rama",
+  "urlChecked": true,
+  "agent": "iconography"
+ },
+ {
+  "id": "src:kramrisch-1946",
+  "type": "scholarly-book",
+  "title": "The Hindu Temple (2 vols.)",
+  "author": "Stella Kramrisch",
+  "year": "1946",
+  "publisher": "University of Calcutta",
+  "url": "https://archive.org/details/mefh_the-hindu-temple-vol-1-by-stella-kramrisch-1946-calcutta-university-of-calcutta",
+  "urlChecked": true,
+  "agent": "iconography"
+ },
+ {
+  "id": "src:meister-dhaky-1983",
+  "type": "scholarly-book",
+  "title": "Encyclopaedia of Indian Temple Architecture (multi-volume: South India and North India series)",
+  "author": "Michael W. Meister, M. A. Dhaky and Krishna Deva (eds.)",
+  "year": "1983–",
+  "publisher": "American Institute of Indian Studies, New Delhi / University of Pennsylvania Press and Princeton University Press",
+  "agent": "iconography"
+ },
+ {
+  "id": "src:dhaky-1977",
+  "type": "scholarly-book",
+  "title": "The Indian Temple Forms in Karṇāṭa Inscriptions and Architecture",
+  "author": "M. A. Dhaky",
+  "year": "1977",
+  "publisher": "Abhinav Publications, New Delhi",
+  "agent": "iconography"
+ },
+ {
+  "id": "src:shah-1958",
+  "type": "primary-text",
+  "title": "Viṣṇudharmottara-Purāṇa, Third Khaṇḍa (critical edition; Gaekwad’s Oriental Series 130 and 137)",
+  "author": "Priyabala Shah (ed.)",
+  "year": "1958–1961",
+  "publisher": "Oriental Institute, Baroda",
+  "url": "https://archive.org/details/in.ernet.dli.2015.127780",
+  "urlChecked": true,
+  "agent": "iconography"
+ },
+ {
+  "id": "src:bhattacharyya-1963",
+  "type": "scholarly-book",
+  "title": "The Canons of Indian Art, or A Study on Vāstuvidyā",
+  "author": "Tarapada Bhattacharyya",
+  "year": "1963 (2nd ed.)",
+  "publisher": "Firma K. L. Mukhopadhyay, Calcutta",
+  "agent": "iconography"
+ },
+ {
+  "id": "src:kinsley-1997",
+  "type": "scholarly-book",
+  "title": "Tantric Visions of the Divine Feminine: The Ten Mahāvidyās",
+  "author": "David Kinsley",
+  "year": "1997",
+  "publisher": "University of California Press, Berkeley",
+  "agent": "iconography"
+ },
+ {
+  "id": "src:bolon-1992",
+  "type": "scholarly-book",
+  "title": "Forms of the Goddess Lajjā Gaurī in Indian Art",
+  "author": "Carol Radcliffe Bolon",
+  "year": "1992",
+  "publisher": "Pennsylvania State University Press, University Park",
+  "agent": "iconography"
+ },
+ {
+  "id": "src:getty-1936",
+  "type": "scholarly-book",
+  "title": "Gaṇeśa: A Monograph on the Elephant-Faced God",
+  "author": "Alice Getty",
+  "year": "1936",
+  "publisher": "Clarendon Press, Oxford",
+  "agent": "iconography"
+ },
+ {
+  "id": "src:brown-1991",
+  "type": "scholarly-book",
+  "title": "Ganesh: Studies of an Asian God",
+  "author": "Robert L. Brown (ed.)",
+  "year": "1991",
+  "publisher": "State University of New York Press, Albany",
+  "agent": "iconography"
+ },
+ {
+  "id": "src:harle-1974",
+  "type": "scholarly-book",
+  "title": "Gupta Sculpture: Indian Sculpture of the Fourth to the Sixth Centuries A.D.",
+  "author": "J. C. Harle",
+  "year": "1974",
+  "publisher": "Clarendon Press, Oxford",
+  "agent": "iconography"
+ },
+ {
+  "id": "src:sivaramamurti-1974",
+  "type": "scholarly-book",
+  "title": "Naṭarāja in Art, Thought and Literature",
+  "author": "C. Sivaramamurti",
+  "year": "1974",
+  "publisher": "National Museum, New Delhi",
+  "agent": "iconography"
+ },
+ {
+  "id": "src:coomaraswamy-1918",
+  "type": "scholarly-book",
+  "title": "The Dance of Śiva: Fourteen Indian Essays",
+  "author": "Ananda K. Coomaraswamy",
+  "year": "1918",
+  "publisher": "The Sunwise Turn, New York",
+  "license": "public domain",
+  "agent": "iconography"
+ },
+ {
+  "id": "src:ghosh-1950",
+  "type": "translation",
+  "title": "The Nāṭyaśāstra ascribed to Bharata-Muni, vol. I (chapters I–XXVII)",
+  "author": "Manomohan Ghosh (trans.)",
+  "year": "1950",
+  "publisher": "Royal Asiatic Society of Bengal, Calcutta",
+  "agent": "iconography"
+ },
+ {
+  "id": "src:sarkar-1978",
+  "type": "scholarly-book",
+  "title": "An Architectural Survey of Temples of Kerala",
+  "author": "H. Sarkar",
+  "year": "1978",
+  "publisher": "Archaeological Survey of India, New Delhi",
+  "agent": "iconography"
+ },
+ {
+  "id": "src:jessup-2004",
+  "type": "scholarly-book",
+  "title": "Art and Architecture of Cambodia",
+  "author": "Helen Ibbitson Jessup",
+  "year": "2004",
+  "publisher": "Thames & Hudson, London",
+  "agent": "iconography"
+ },
+ {
+  "id": "src:guillon-2001",
+  "type": "scholarly-book",
+  "title": "Cham Art: Treasures from the Dà Nẵng Museum, Vietnam",
+  "author": "Emmanuel Guillon",
+  "year": "2001",
+  "publisher": "River Books, Bangkok",
+  "agent": "iconography"
+ },
+ {
+  "id": "src:pal-1986",
+  "type": "catalogue",
+  "title": "Indian Sculpture, vol. 1: Circa 500 B.C.–A.D. 700 (Los Angeles County Museum of Art collection catalogue)",
+  "author": "Pratapaditya Pal",
+  "year": "1986",
+  "publisher": "Los Angeles County Museum of Art and University of California Press",
+  "agent": "iconography"
+ },
+ {
+  "id": "src:lhernault-1978",
+  "type": "scholarly-book",
+  "title": "L’iconographie de Subrahmaṇya au Tamilnad",
+  "author": "Françoise L’Hernault",
+  "year": "1978",
+  "publisher": "Institut français d’indologie, Pondichéry",
+  "agent": "iconography"
+ },
+ {
+  "id": "src:jeste-1973",
+  "type": "scholarly-book",
+  "title": "Arts in the Purāṇas (study)",
+  "author": "Meena Devadatta Jeste",
+  "year": "1973",
+  "publisher": "thesis, reproduced online by Wisdom Library",
+  "url": "https://www.wisdomlib.org/hinduism/essay/arts-in-the-puranas-study/d/doc1460324.html",
+  "urlChecked": true,
+  "notes": "Secondary outline used to locate the Matsya Purāṇa image chapters; not an edition.",
+  "agent": "iconography"
+ }
+]

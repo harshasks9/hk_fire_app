@@ -1,0 +1,502 @@
+[
+ {
+  "id": "cmp:ganesha-gupta-pala-chola",
+  "title": "Gaṇeśa in Gupta, Pāla and Cōḻa art (with the textual prescriptions)",
+  "subject": "deity:ganesha",
+  "question": "How is Gaṇeśa represented — arms, attributes, mount, posture and setting — in the Gupta, Pāla and Cōḻa traditions, and what do the texts prescribe?",
+  "rows": [
+   {
+    "text": "concept:gupta-sculpture",
+    "statement": "Earliest securely datable images (4th–6th c.): two-armed, pot-bellied, without a mount; often holding his broken tusk and a bowl of sweets that the trunk reaches into; appears as an attendant figure (e.g. beside the Mothers) rather than as a main temple icon.",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "locator": "Iconography",
+      "url": "https://en.wikipedia.org/wiki/Ganesha"
+     },
+     {
+      "source": "src:brown-1991"
+     },
+     {
+      "source": "src:getty-1936"
+     }
+    ],
+    "status": "reference-checked"
+   },
+   {
+    "text": "concept:pala-sena-sculpture",
+    "statement": "Eastern Indian steles (8th–12th c.): usually four-armed or more, often dancing (Nṛtta-Gaṇapati) on a lotus base with the rat below, framed by a carved back-slab with flying attendants; attributes include tusk, rosary, axe and sweets.",
+    "sources": [
+     {
+      "source": "src:asher-1980"
+     },
+     {
+      "source": "src:getty-1936"
+     }
+    ],
+    "status": "recall"
+   },
+   {
+    "text": "concept:chola-bronze",
+    "statement": "Tamil images (10th–13th c.) in bronze and stone: four-armed, seated or standing, goad and noose in the rear hands, tusk and modaka in the front; placed in the south niche of the main vimāna beside Dakṣiṇāmūrti in the Cōḻa programme.",
+    "sources": [
+     {
+      "source": "src:dehejia-1990"
+     },
+     {
+      "source": "src:harle-1994"
+     }
+    ],
+    "status": "recall"
+   },
+   {
+    "text": "psg:ap-50-devi-images",
+    "locator": "AP 50.23cd–26",
+    "statement": "Prescribes a human-bodied, big-bellied, elephant-faced Vināyaka with a sacred thread and a long trunk, holding his own tusk and an axe on one side and a laḍḍuka and a lotus on the other; gives the trunk 36 aṅgulas.",
+    "sources": [
+     {
+      "source": "src:ap-gretil",
+      "locator": "AP 50.23cd–26 (Mitra ed., GRETIL)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_agnipurANa.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:brihat-samhita",
+    "locator": "Kern 58.58 (bracketed in GRETIL)",
+    "statement": "Only Kern’s text has a verse on Gaṇeśa (58.58): lord of the pramathas, elephant-faced, pendulous belly, holding an axe, single-tusked, carrying a radish; Tripathi’s text and Utpala lack it.",
+    "sources": [
+     {
+      "source": "src:bs-gretil",
+      "locator": "BS bracketed k.58.58 (Tripathi/GRETIL numbering)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_varAhamihira-bRhatsaMhitA.txt"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "note": "Rows are period styles, not single objects; each statement summarises typical features. The Pāla and Cōḻa rows are from recall and should be checked against specific museum objects.",
+  "agent": "iconography"
+ },
+ {
+  "id": "cmp:nataraja-badami-vs-chola",
+  "title": "Dancing Śiva at Bādāmi Cave 1 and in Cōḻa bronzes",
+  "subject": "deity:nataraja",
+  "question": "How does the earliest dated dancing Śiva of the Deccan differ from the classic Cōḻa Naṭarāja?",
+  "rows": [
+   {
+    "text": "art:badami-nataraja",
+    "statement": "Late 6th-century rock-cut relief on the façade of Cave 1: Śiva dances with eighteen arms fanned out like a wheel, several holding a drum, trident, serpent and other attributes, many simply in dance gestures; Nandin and Gaṇeśa accompany him. There is no ring of fire and no dwarf under his foot.",
+    "sources": [
+     {
+      "source": "src:michell-2000"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Badami_cave_temples"
+     }
+    ],
+    "status": "reference-checked"
+   },
+   {
+    "text": "temple:elephanta",
+    "statement": "Mid-6th-century Naṭarāja panel in Cave 1: an eight-armed dancing Śiva surrounded by gods, part of a programme of Śaiva panels.",
+    "sources": [
+     {
+      "source": "src:collins-1988"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Elephanta_Caves"
+     }
+    ],
+    "status": "reference-checked"
+   },
+   {
+    "text": "art:chola-nataraja",
+    "statement": "11th-century bronze: four arms — upper right drum, upper left fire, lower right abhaya, lower left across the body in the elephant-trunk gesture pointing to the raised left foot; right foot on the dwarf Apasmāra; flying locks with the tiny Gaṅgā; encircled by a flaming arch (prabhāmaṇḍala/tiruvāci). This ānanda-tāṇḍava type is associated with Chidambaram.",
+    "sources": [
+     {
+      "source": "src:dehejia-1990"
+     },
+     {
+      "source": "src:smith-1996"
+     },
+     {
+      "source": "src:cma-open-access"
+     }
+    ],
+    "status": "source-checked"
+   },
+   {
+    "text": "temple:brihadisvara",
+    "statement": "c. 1010: Śiva is carved dancing the karaṇas of the Nāṭyaśāstra in the upper passage of the vimāna, a different, textual approach to the dancing god from the single cult bronze.",
+    "sources": [
+     {
+      "source": "src:vasudevan-2003"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Karana_(dance)"
+     }
+    ],
+    "status": "reference-checked"
+   }
+  ],
+  "note": "The Bādāmi relief is a many-armed tāṇḍava; the Cōḻa four-armed form is not derived from it in a straight line.",
+  "agent": "iconography"
+ },
+ {
+  "id": "cmp:mahishasuramardini-across-periods",
+  "title": "Mahiṣāsuramardinī: Kuṣāṇa, Gupta, Pallava, Pāla and the Agni Purāṇa",
+  "subject": "deity:mahishasuramardini",
+  "question": "How are the Goddess and the buffalo demon shown at different periods, and how does that compare with the textual prescription?",
+  "rows": [
+   {
+    "text": "concept:mathura-school-sculpture",
+    "statement": "Kuṣāṇa Mathurā (1st–2nd c.): a small four- or six-armed goddess, standing, pressing down or lifting an entirely animal buffalo with her hands; no lion and no battle.",
+    "sources": [
+     {
+      "source": "src:harle-1974"
+     },
+     {
+      "source": "src:srinivasan-1997"
+     },
+     {
+      "source": "src:banerjea-1956"
+     }
+    ],
+    "status": "source-checked"
+   },
+   {
+    "text": "temple:udayagiri-caves",
+    "statement": "Early 5th c.: the Goddess, with more arms and weapons, stands over the animal buffalo, piercing it with a trident; still a static cult image.",
+    "sources": [
+     {
+      "source": "src:williams-1982"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Udayagiri_Caves"
+     }
+    ],
+    "status": "reference-checked"
+   },
+   {
+    "text": "art:mamallapuram-mahishasuramardini",
+    "statement": "Mid–late 7th c.: a narrative battle relief: the eight-armed Goddess rides her lion with an army of gaṇas against a buffalo-headed warrior who retreats with his troops.",
+    "sources": [
+     {
+      "source": "src:srinivasan-kr-1964"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mahishasuramardini_Mandapa"
+     }
+    ],
+    "status": "reference-checked"
+   },
+   {
+    "text": "concept:pala-sena-sculpture",
+    "statement": "Eastern India (9th–12th c.): ten- or more-armed Goddess on the lion; the demon in human form emerges from the neck of the decapitated buffalo and is held by his hair or the noose.",
+    "sources": [
+     {
+      "source": "src:asher-1980"
+     },
+     {
+      "source": "src:banerjea-1956"
+     }
+    ],
+    "status": "recall"
+   },
+   {
+    "text": "psg:ap-50-devi-images",
+    "locator": "AP 50.1–6",
+    "statement": "Caṇḍī has twenty arms (or ten); a man springs, weapon raised, from the buffalo’s neck, bound by the noose and attacked by the lion — the composition of the later images.",
+    "sources": [
+     {
+      "source": "src:ap-gretil",
+      "locator": "AP 50.1–6 (Mitra ed., GRETIL)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_agnipurANa.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:devi-mahatmya",
+    "locator": "DM 3",
+    "statement": "The narrative: Mahiṣa changes form — buffalo, lion, man, elephant — and is killed as he half-emerges from the buffalo’s mouth, pinned under the Goddess’s foot and beheaded.",
+    "sources": [
+     {
+      "source": "src:mkp-gretil",
+      "locator": "DM 3 (MkP 83)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+     },
+     {
+      "source": "src:coburn-1984"
+     }
+    ],
+    "status": "source-checked"
+   }
+  ],
+  "note": "The “emerging man” motif appears in images only after the narrative of the Devī Māhātmya was in circulation; the Kuṣāṇa images predate the surviving text.",
+  "agent": "iconography"
+ },
+ {
+  "id": "cmp:vishnu-image-texts",
+  "title": "The image of Viṣṇu in the Bṛhat Saṃhitā, the Agni Purāṇa, the Viṣṇudharmottara and the Mayamata",
+  "subject": "deity:vishnu",
+  "question": "What arms, attributes and proportions do the treatises prescribe for an image of Viṣṇu?",
+  "rows": [
+   {
+    "text": "psg:bs-57-pratimalakshana",
+    "locator": "BS 57.31–35",
+    "statement": "Viṣṇu may have eight, four or two arms; dark as the flax flower, in yellow garments, with Śrīvatsa and Kaustubha, crown and earrings. Eight-armed: right hands sword, mace, arrow and a peace-giving hand; left hands bow, shield, discus and conch. Four-armed: right peace-giving and mace; left conch and discus. Two-armed: right peace-giving, left conch. The image is twice the height of its pedestal, which is a third of the door height less an eighth.",
+    "sources": [
+     {
+      "source": "src:bs-gretil",
+      "locator": "BS 57.3, 57.31–35 (Tripathi/GRETIL numbering)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_varAhamihira-bRhatsaMhitA.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "psg:ap-49-avatara-images",
+    "locator": "AP 49.16–17",
+    "statement": "The eight-armed Viṣṇu sits on Tārkṣya (Garuḍa): right hands sword, mace, arrow and varada; left hands bow, shield, discus and conch — the Bṛhat Saṃhitā’s list, but with a boon-giving instead of a peace-giving hand and with Garuḍa as mount.",
+    "sources": [
+     {
+      "source": "src:ap-gretil",
+      "locator": "AP 49.16–17 (Mitra ed., GRETIL)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_agnipurANa.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "psg:ap-48-caturvimshati",
+    "locator": "AP 48.1–14",
+    "statement": "The four-armed standing Viṣṇu takes twenty-four names according to the order of lotus, conch, discus and mace in the four hands (Keśava: lotus, conch, discus, mace).",
+    "sources": [
+     {
+      "source": "src:ap-gretil",
+      "locator": "AP 48.1–14 (Mitra ed., GRETIL)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_agnipurANa.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "psg:vdp-3-pratimalakshana",
+    "statement": "The Viṣṇudharmottara gives Viṣṇu (as Vāsudeva) four arms with personified mace and discus beneath the lower hands and treats the four faces of the Vaikuṇṭha form theologically.",
+    "sources": [
+     {
+      "source": "src:kramrisch-1928"
+     },
+     {
+      "source": "src:shah-1958"
+     }
+    ],
+    "status": "recall"
+   },
+   {
+    "text": "text:mayamata",
+    "statement": "Southern practice: standing Viṣṇu with discus and conch in the rear hands, the front hands in abhaya/varada or resting on hip or thigh; the principal image measured on the large ten-tāla canon (uttama daśatāla).",
+    "sources": [
+     {
+      "source": "src:dagens-1994"
+     }
+    ],
+    "status": "recall"
+   }
+  ],
+  "note": "The two verified Sanskrit prescriptions (BS and AP) agree almost word for word on the eight-armed Viṣṇu; the Mayamata and Viṣṇudharmottara rows are from recall and need chapter-level checking.",
+  "agent": "iconography"
+ },
+ {
+  "id": "cmp:varuna-vahana",
+  "title": "The mount of Varuṇa: goose or makara?",
+  "subject": "deity:varuna",
+  "question": "On what animal does Varuṇa ride?",
+  "rows": [
+   {
+    "text": "psg:bs-57-pratimalakshana",
+    "locator": "BS 57.57",
+    "statement": "Varuṇa rides a goose (haṃsa) and holds a noose.",
+    "sources": [
+     {
+      "source": "src:bs-gretil",
+      "locator": "BS 57.57 (Tripathi/GRETIL numbering)",
+      "quote": "haṃsārūḍhaś ca pāśabhṛd varuṇaḥ",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_varAhamihira-bRhatsaMhitA.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "psg:ap-51-surya-grahas",
+    "locator": "AP 51.15",
+    "statement": "Varuṇa rides a makara and holds a noose.",
+    "sources": [
+     {
+      "source": "src:ap-gretil",
+      "locator": "AP 51.15 (Mitra ed., GRETIL)",
+      "quote": "makare varuṇaḥ pāśī",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_agnipurANa.txt"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "note": "Medieval temple images generally follow the makara tradition.",
+  "agent": "iconography"
+ },
+ {
+  "id": "cmp:surya-image",
+  "title": "The image of Sūrya: texts and early images",
+  "subject": "deity:surya",
+  "question": "How is the Sun god to be dressed and equipped?",
+  "rows": [
+   {
+    "text": "psg:bs-57-pratimalakshana",
+    "locator": "BS 57.46–48",
+    "statement": "Northern dress, covered from the feet to the chest; crown, earrings, long necklace, girdle, coat (kañcuka), jewelled halo; a lotus in each hand; nose, forehead, shanks, thighs, cheeks and chest prominent.",
+    "sources": [
+     {
+      "source": "src:bs-gretil",
+      "locator": "BS 57.46–48 (Tripathi/GRETIL numbering)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_varAhamihira-bRhatsaMhitA.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "psg:ap-51-surya-grahas",
+    "locator": "AP 51.1–3",
+    "statement": "On a one-wheeled chariot with seven horses, holding two lotuses; Daṇḍin and Piṅgala at the door; alternatively a single Sūrya on horseback.",
+    "sources": [
+     {
+      "source": "src:ap-gretil",
+      "locator": "AP 51.1–3 (Mitra ed., GRETIL)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_agnipurANa.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "concept:mathura-school-sculpture",
+    "statement": "Kuṣāṇa Mathurā Sūryas (2nd c.): seated in a chariot drawn by two or four horses, wearing a tunic and boots, holding a lotus bud and a short sword.",
+    "sources": [
+     {
+      "source": "src:rosenfield-1967"
+     },
+     {
+      "source": "src:banerjea-1956"
+     }
+    ],
+    "status": "recall"
+   },
+   {
+    "text": "temple:konark",
+    "statement": "13th c.: the whole temple is Sūrya’s chariot with 24 wheels and seven horses; standing booted Sūrya images in the niches.",
+    "sources": [
+     {
+      "source": "src:donaldson-1985"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Konark_Sun_Temple"
+     }
+    ],
+    "status": "reference-checked"
+   }
+  ],
+  "agent": "iconography"
+ },
+ {
+  "id": "cmp:linga-proportions",
+  "title": "The divisions of the liṅga",
+  "subject": "deity:linga",
+  "question": "How is the liṅga divided and proportioned?",
+  "rows": [
+   {
+    "text": "psg:bs-57-pratimalakshana",
+    "locator": "BS 57.53–55",
+    "statement": "Divide the length in three: square at the base, octagonal in the middle, round above; the square part is set in the ground, the middle in the pedestal; a thin, over-long liṅga ruins the land.",
+    "sources": [
+     {
+      "source": "src:bs-gretil",
+      "locator": "BS 57.53–55 (Tripathi/GRETIL numbering)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_varAhamihira-bRhatsaMhitA.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "psg:ap-53-55-linga",
+    "locator": "AP 53–54",
+    "statement": "The three parts are assigned to Brahmā, Viṣṇu and Śiva; the octagonal part is Viṣṇu’s. Liṅgas are ranked by material, from salt, ghee and cloth through clay, wood and stone to pearl, metals and gems.",
+    "sources": [
+     {
+      "source": "src:ap-gretil",
+      "locator": "AP 53.1–4; 54.1–5 (Mitra ed., GRETIL)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_agnipurANa.txt"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "agent": "iconography"
+ },
+ {
+  "id": "cmp:matrika-lists",
+  "title": "Who are the Mothers? Bṛhat Saṃhitā, Devī Māhātmya and Agni Purāṇa",
+  "subject": "deity:matrikas",
+  "question": "Which Mothers are named, and how are they distinguished?",
+  "rows": [
+   {
+    "text": "psg:bs-57-pratimalakshana",
+    "locator": "BS 57.56",
+    "statement": "Gives no list: the band of Mothers is to be made with the marks of the gods whose names they bear.",
+    "sources": [
+     {
+      "source": "src:bs-gretil",
+      "locator": "BS 57.56 (Tripathi/GRETIL numbering)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_varAhamihira-bRhatsaMhitA.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:devi-mahatmya",
+    "locator": "DM 8.12–20",
+    "statement": "Seven śaktis come out of the gods with their forms, ornaments and mounts: Brahmāṇī (swan-car, rosary, water-pot), Māheśvarī (bull, trident), Kaumārī (peacock, spear), Vaiṣṇavī (Garuḍa, conch, discus, mace, bow, sword), Vārāhī (boar form), Nārasiṃhī (lion form) and Aindrī (elephant, thunderbolt); Śivadūtī and Cāmuṇḍā fight beside them.",
+    "sources": [
+     {
+      "source": "src:mkp-gretil",
+      "locator": "DM 8.12–20 (MkP 88.12–20)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "psg:ap-50-devi-images",
+    "locator": "AP 50.18–23",
+    "statement": "Seven Mothers: four-faced Brāhmī on a swan with rosary; white Śāṅkarī on a bull; red, two-armed Kaumārī on a peacock with a spear; Vaiṣṇavī (called Lakṣmī) with discus, conch, mace and lotus; Vārāhī on a buffalo; thousand-eyed Aindrī with thunderbolt; and emaciated Cāmuṇḍā on a corpse. Nārasiṃhī is absent.",
+    "sources": [
+     {
+      "source": "src:ap-gretil",
+      "locator": "AP 50.18–23 (Mitra ed., GRETIL)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_agnipurANa.txt"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "note": "The Agni Purāṇa list matches the usual sculptural Saptamātṛkā row (ending with Cāmuṇḍā); the Devī Māhātmya’s seven include Nārasiṃhī instead.",
+  "agent": "iconography"
+ }
+]

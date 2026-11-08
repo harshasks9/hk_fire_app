@@ -1360,5 +1360,1225 @@
   "status": "verified-online",
   "agent": "purana",
   "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:tarakaksha",
+  "type": "character",
+  "name": "Tārakākṣa",
+  "iast": "Tārakākṣa",
+  "aliases": [
+   "Tārākṣa"
+  ],
+  "roles": [
+   "asura",
+   "king"
+  ],
+  "summary": "Eldest of the three asura sons of Tāraka who rule the three cities (Tripura); his is the city of gold.",
+  "sources": [
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 8.24.4–18",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b08/b08c024.htm"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 129.5",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+   },
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.1",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A6%E0%A5%A7"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:kamalaksha",
+  "type": "character",
+  "name": "Kamalākṣa",
+  "iast": "Kamalākṣa",
+  "roles": [
+   "asura",
+   "king"
+  ],
+  "summary": "Second son of Tāraka, lord of the silver city of Tripura.",
+  "sources": [
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 8.24.4, 8.24.18",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b08/b08c024.htm"
+   },
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.1",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A6%E0%A5%A7"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:vidyunmalin",
+  "type": "character",
+  "name": "Vidyunmālin",
+  "iast": "Vidyunmālin",
+  "roles": [
+   "asura",
+   "king"
+  ],
+  "summary": "Third son of Tāraka, lord of the iron city of Tripura.",
+  "sources": [
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 8.24.4, 8.24.18",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b08/b08c024.htm"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 129.5",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+   },
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.1",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A6%E0%A5%A7"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:maya-asura",
+  "type": "character",
+  "name": "Maya (the asura architect)",
+  "iast": "Maya",
+  "devanagari": "मय",
+  "aliases": [
+   "Mayāsura",
+   "Maya Dānava"
+  ],
+  "roles": [
+   "asura",
+   "architect"
+  ],
+  "summary": "Asura master-builder and magician who builds the three cities of Tripura (and, in the Mahābhārata, the Pāṇḍavas' assembly hall); the Matsya and Śiva Purāṇas let him survive the burning.",
+  "sources": [
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 8.24.21–23",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b08/b08c024.htm"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 129.2–27; 140.75–78",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 7.10.53–59",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.12",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%A8"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:tripura-dahana",
+  "type": "narrative",
+  "name": "Śiva burns the three cities (Tripura)",
+  "iast": "Tripura-dahana",
+  "devanagari": "त्रिपुरदहन",
+  "aliases": [
+   "Tripurāntaka",
+   "Tripuravijaya"
+  ],
+  "summary": "Three asura brothers obtain three flying cities of gold, silver and iron, built by Maya, that can be destroyed only when they align, by a single arrow. The gods build Śiva a chariot of the cosmos; with Viṣṇu as (part of) the arrow he burns the cities in one shot. Later versions add Viṣṇu's subversion of the asuras' piety and his drinking of their reviving nectar.",
+  "details": "The oldest full narrative is in the Karṇaparvan, where Duryodhana tells it to persuade Śalya to be Karṇa's charioteer, as Brahmā was Śiva's (MBh CE 8.24). The Purāṇic versions elaborate in different directions: the Matsya (129–140) makes Maya the hero of a long war; the Liṅga (1.71–72) and Śiva (2.5.1–12) say Viṣṇu first destroyed the asuras' dharma — in the Śiva Purāṇa by creating a shaven-headed teacher of a 'Jina' doctrine (2.5.4–5); the Bhāgavata (7.10.53–70) and Matsya (136.63–65) make Viṣṇu drink the nectar pond that revived the dead asuras (as a cow in BhP, as a bull in Matsya).",
+  "sources": [
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 8.24.3–124",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b08/b08c024.htm"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 129–140",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "LiP 1.71–72",
+    "edition": "Venkatesvara Press ed. (Bombay 1906), rev. O. Hellwig after Calcutta 1960; GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_liGgapurANa1-108.txt"
+   },
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.1–12",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A6%E0%A5%A7"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BhP 7.10.53–70",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:bhringi",
+  "type": "character",
+  "name": "Bhṛṅgin (Bhṛṅgi)",
+  "iast": "Bhṛṅgin",
+  "devanagari": "भृङ्गी",
+  "aliases": [
+   "Bhṛṅgi",
+   "Bhṛṅgiriṭi"
+  ],
+  "roles": [
+   "gaṇa",
+   "devotee"
+  ],
+  "summary": "Emaciated, three-legged gaṇa and devotee of Śiva; in the Vāmana and other Purāṇas the asura Andhaka, impaled on Śiva's trident and purified, becomes Bhṛṅgin.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "VāmP 44.95",
+    "edition": "A. S. Gupta ed. (All India Kashiraj Trust 1967); GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_vAmanapurANa1-69.txt",
+    "quote": "bhṛṅgitvamīśena kṛtaṃ svabhaktyā"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:andhaka-slaying",
+  "type": "narrative",
+  "name": "Śiva subdues Andhaka",
+  "iast": "Andhakāsura-vadha / Andhakānugraha",
+  "summary": "Andhaka, a blind son born to Śiva and Pārvatī (from her sweat when she covers Śiva's eyes, in the Śiva Purāṇa) and adopted by the asura Hiraṇyākṣa, grows into a tyrant who desires Pārvatī. Śiva impales him on his trident; purified, he praises Śiva and becomes a gaṇa (Bhṛṅgin).",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "KūrmP 1.15.125–237",
+    "edition": "GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kUrmapurANa.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "LiP 1.93.1–25",
+    "edition": "Venkatesvara Press ed. (Bombay 1906), rev. O. Hellwig after Calcutta 1960; GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_liGgapurANa1-108.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "VāmP 43–44",
+    "edition": "A. S. Gupta ed. (All India Kashiraj Trust 1967); GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_vAmanapurANa1-69.txt"
+   },
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.42–49",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%AA%E0%A5%A8"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:jalandhara",
+  "type": "character",
+  "name": "Jalandhara",
+  "iast": "Jalandhara",
+  "devanagari": "जलन्धर",
+  "roles": [
+   "asura",
+   "king"
+  ],
+  "summary": "Asura born from the ocean (from the fire of Śiva's third eye, in the Śiva Purāṇa) who conquers the gods and covets Pārvatī; Śiva kills him with a discus drawn with his toe in the water.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "LiP 1.97.1–42",
+    "edition": "Venkatesvara Press ed. (Bombay 1906), rev. O. Hellwig after Calcutta 1960; GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_liGgapurANa1-108.txt",
+    "quote": "jalandhara iti khyāto jalamaṇḍalasaṃbhavaḥ"
+   },
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.14–24",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%AA"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:vrinda",
+  "type": "character",
+  "name": "Vṛndā (wife of Jalandhara)",
+  "iast": "Vṛndā",
+  "devanagari": "वृन्दा",
+  "roles": [
+   "pativratā"
+  ],
+  "summary": "Chaste wife of Jalandhara, daughter of Kālanemi, whose fidelity protects her husband; Viṣṇu deceives her by taking Jalandhara's form, she curses him and enters the fire. Later tradition links her with the tulasī plant.",
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.23.1–40",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A8%E0%A5%A9"
+   },
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.14",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%AA"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "The Śiva Purāṇa tells a separate Tulasī story (wife of Śaṅkhacūḍa, 2.5.28–41); the identification of Vṛndā with Tulasī belongs to other texts and to practice (Tulasī-vivāha).",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:jalandhara-slaying",
+  "type": "narrative",
+  "name": "Śiva kills Jalandhara",
+  "iast": "Jalandhara-vadha",
+  "summary": "The ocean-born asura Jalandhara defeats the gods and even Viṣṇu, then demands Pārvatī. While Viṣṇu breaks the chastity of his wife Vṛndā by impersonating Jalandhara, Śiva kills him with the discus Sudarśana, which he draws in the water with his toe; in the Liṅga Purāṇa Viṣṇu later obtains that discus from Śiva by worshipping him with a thousand names.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "LiP 1.97–98",
+    "edition": "Venkatesvara Press ed. (Bombay 1906), rev. O. Hellwig after Calcutta 1960; GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_liGgapurANa1-108.txt"
+   },
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.13–26",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%AA"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:shankhachuda",
+  "type": "character",
+  "name": "Śaṅkhacūḍa",
+  "iast": "Śaṅkhacūḍa",
+  "devanagari": "शङ्खचूड",
+  "roles": [
+   "dānava",
+   "king"
+  ],
+  "summary": "Dānava son of Dambha, protected by an amulet of Viṣṇu and by his wife Tulasī's chastity; Śiva kills him after Viṣṇu, disguised, obtains the amulet and violates Tulasī's vow.",
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.27–40",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A8%E0%A5%AD"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:tulasi",
+  "type": "character",
+  "name": "Tulasī (wife of Śaṅkhacūḍa)",
+  "iast": "Tulasī",
+  "devanagari": "तुलसी",
+  "roles": [
+   "pativratā"
+  ],
+  "summary": "Wife of the dānava Śaṅkhacūḍa who, deceived by Viṣṇu in her husband's form, curses him to become a stone (the śālagrāma) and herself becomes the Gaṇḍakī river and the tulasī plant (Śiva Purāṇa).",
+  "details": "The Śiva Purāṇa (Rudrasaṃhitā 2.5.27–41) and the Brahmavaivarta Purāṇa (Prakṛtikhaṇḍa) tell the story; it underlies the ritual marriage of the tulasī plant with Viṣṇu as śālagrāma (Tulasī-vivāha) on Prabodhinī Ekādaśī.",
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.41.1–60",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%AA%E0%A5%A7"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "The Brahmavaivarta locus was not checked; the festival link is tradition.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:shankhachuda-tulasi",
+  "type": "narrative",
+  "name": "Śaṅkhacūḍa, Tulasī and the origin of the śālagrāma",
+  "iast": "Śaṅkhacūḍa-vadha",
+  "summary": "The dānava Śaṅkhacūḍa, invincible while he wears Viṣṇu's amulet and his wife Tulasī remains chaste, is killed by Śiva after Viṣṇu, disguised, takes the amulet and Tulasī's chastity. Tulasī curses Viṣṇu to become stone; she becomes the Gaṇḍakī river, whose stones are the śālagrāmas.",
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.27–41",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A8%E0%A5%AD"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:gajasura",
+  "type": "character",
+  "name": "Gajāsura (son of Mahiṣa)",
+  "iast": "Gajāsura",
+  "roles": [
+   "asura"
+  ],
+  "summary": "Elephant-asura, son of Mahiṣāsura, whom Śiva kills at Kāśī and whose hide he wears (hence Kṛttivāsas); the Kṛttivāseśvara liṅga marks the spot.",
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.57.1–7",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%AB%E0%A5%AD",
+    "quote": "mahiṣāsuraputro'sau gajāsura udāradhīḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:gajasura-krittivasa",
+  "type": "narrative",
+  "name": "Śiva kills Gajāsura and wears his hide (Kṛttivāsas)",
+  "iast": "Gajāsura-vadha",
+  "summary": "Śiva kills the elephant-asura Gajāsura, son of Mahiṣa, at Kāśī, wears his hide and establishes the Kṛttivāseśvara liṅga there.",
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.57",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%AB%E0%A5%AD"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "deity:kamadeva",
+  "type": "deity",
+  "name": "Kāma (Kāmadeva)",
+  "iast": "Kāma / Kāmadeva",
+  "devanagari": "कामदेव",
+  "aliases": [
+   "Madana",
+   "Manmatha",
+   "Kandarpa",
+   "Smara",
+   "Anaṅga",
+   "Manobhava",
+   "Jhaṣaketu"
+  ],
+  "roles": [
+   "deity"
+  ],
+  "summary": "God of desire, armed with a flowered bow and arrows, who is sent by the gods to rouse Śiva's love for Pārvatī and is burnt to ashes by the fire of Śiva's third eye, becoming 'bodiless' (Anaṅga).",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 154.208–271",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+   },
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.3.17–19",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A9_%28%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%A4%E0%A5%80%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%AD"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "VāmP 6.24",
+    "edition": "A. S. Gupta ed. (All India Kashiraj Trust 1967); GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_vAmanapurANa1-69.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "deity:rati",
+  "type": "deity",
+  "name": "Rati",
+  "iast": "Rati",
+  "devanagari": "रति",
+  "roles": [
+   "deity"
+  ],
+  "summary": "Wife of Kāma, personifying sexual delight, whose lament over his ashes and prayer to Śiva lead to the promise of his restoration.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 154.255–282",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+   },
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.3.19.20–27",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A9_%28%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%A4%E0%A5%80%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%AF"
+   },
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.3.51.1–14",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A9_%28%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%A4%E0%A5%80%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%AB%E0%A5%A7"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:kama-dahana",
+  "type": "narrative",
+  "name": "Śiva burns Kāma",
+  "iast": "Kāma-dahana",
+  "devanagari": "कामदहन",
+  "summary": "Sent by Indra to make the ascetic Śiva fall in love with Pārvatī (so that a son can be born to kill Tāraka), Kāma shoots his flower-arrow; Śiva's third eye blazes and reduces him to ashes. Rati laments; Kāma lives on bodiless (Anaṅga) and is later restored.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 154.208–282",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+   },
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.3.17–20",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A9_%28%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%A4%E0%A5%80%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%AD"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "VāmP 6.24–107",
+    "edition": "A. S. Gupta ed. (All India Kashiraj Trust 1967); GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_vAmanapurANa1-69.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:himavat",
+  "type": "character",
+  "name": "Himavat (Himavān), king of mountains",
+  "iast": "Himavat",
+  "devanagari": "हिमवत्",
+  "aliases": [
+   "Himavān",
+   "Himālaya",
+   "Girirāja",
+   "Śaileśa"
+  ],
+  "roles": [
+   "mountain-king"
+  ],
+  "summary": "The personified Himālaya, king of mountains, husband of Menā and father of Pārvatī (Umā, Haimavatī) in the Purāṇas.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 154.62–124",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+   },
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.3.1–7",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A9_%28%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%A4%E0%A5%80%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A6%E0%A5%A7"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "char:mena",
+  "type": "character",
+  "name": "Menā (wife of Himavat)",
+  "iast": "Menā",
+  "devanagari": "मेना",
+  "aliases": [
+   "Menakā (in some texts)"
+  ],
+  "roles": [
+   "queen"
+  ],
+  "summary": "Wife of the mountain-king Himavat and mother of Pārvatī; the Śiva Purāṇa makes her a mind-born daughter of the Pitṛs and dwells on her horror at Śiva's appearance as bridegroom.",
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.3.2; 2.3.43–44",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A9_%28%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%A4%E0%A5%80%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A6%E0%A5%A8"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "Distinct from the apsaras Menakā (char:menaka), Śakuntalā's mother, though some texts use the same name.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:parvati-tapas-marriage",
+  "type": "narrative",
+  "name": "Pārvatī's austerities and her marriage to Śiva",
+  "iast": "Pārvatī-pariṇaya / Śiva-vivāha",
+  "summary": "After Kāma is burnt, Pārvatī wins Śiva by fierce austerities; Śiva, disguised as a brahmacārin, tests her resolve by reviling himself, then reveals himself. The Seven Sages negotiate with Himavat and the wedding is celebrated in the mountain's palace.",
+  "details": "The Matsya (154) and the Śiva Purāṇa (Pārvatīkhaṇḍa 2.3.22–54) give full versions; Kālidāsa's Kumārasambhava (cantos 5–7) is the classic kāvya. The sequel — the birth of Skanda to kill Tāraka — is narr:birth-of-skanda.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 154.283–490",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+   },
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.3.22–54",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A9_%28%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%A4%E0%A5%80%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A8%E0%A5%A8"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:ardhanarishvara-origin",
+  "type": "narrative",
+  "name": "The origin of Ardhanārīśvara (Śiva as half-woman)",
+  "iast": "Ardhanārīśvara",
+  "devanagari": "अर्धनारीश्वर",
+  "summary": "Two Purāṇic patterns: Rudra is born from Brahmā's anger with a body half male and half female and is told to divide himself (Viṣṇu, Mārkaṇḍeya, Kūrma); or Śiva appears to Brahmā, who cannot make creation multiply, as the androgynous Ardhanārīśvara and separates the Goddess from his body so that sexual creation can begin (Śiva Purāṇa, Liṅga).",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 1.7.10–13",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "ŚivP 7.1.15–16",
+    "edition": "Venkatesvara Press ed. (Bombay), books 1 and 7; GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_zivapurANabooks-1-and-7.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "LiP 1.41.10–43",
+    "edition": "Venkatesvara Press ed. (Bombay 1906), rev. O. Hellwig after Calcutta 1960; GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_liGgapurANa1-108.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:nilakantha",
+  "type": "narrative",
+  "name": "Śiva drinks the poison of the churning (Nīlakaṇṭha)",
+  "iast": "Nīlakaṇṭha / Viṣapāna",
+  "summary": "The deadly poison (hālāhala/kālakūṭa) that rises first from the churned ocean threatens the worlds; at the gods' plea Śiva drinks it and holds it in his throat, which turns blue. The episode is absent from the constituted texts of both epic critical editions.",
+  "details": "In the Mahābhārata critical edition the poison and Śiva's blue throat appear only in passages relegated to the apparatus (App. I after 1.16.15 and 1.16.27; star passages *268 and *274), i.e. in some manuscripts but not the constituted text; Vālmīki's critical text (1.44) also lacks it. In the Viṣṇu Purāṇa (1.9.95) the nāgas take the poison. The Bhāgavata (8.7.19–46) and Brahmāṇḍa (1.25) tell the full story.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 8.7.18–46",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "BndP 1.25.40–91",
+    "edition": "Venkatesvara Press ed.; GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_brahmANDapurANa.txt"
+   },
+   {
+    "source": "src:gretil",
+    "locator": "LiP 1.86.4–9",
+    "edition": "Venkatesvara Press ed. (Bombay 1906), rev. O. Hellwig after Calcutta 1960; GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_liGgapurANa1-108.txt"
+   },
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 1.16 apparatus: App. I passages after 1.16.15 and 1.16.27; *268, *274",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b01/b01c016.htm"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "The CE's exclusion reflects manuscript distribution; it does not by itself date the motif.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:chanda-munda-slaying",
+  "type": "narrative",
+  "name": "Kālī kills Caṇḍa and Muṇḍa (Cāmuṇḍā)",
+  "iast": "Caṇḍa-Muṇḍa-vadha",
+  "summary": "Sent by Śumbha to seize the Goddess, the generals Caṇḍa and Muṇḍa provoke her anger; Kālī springs from her brow, devours their army and beheads both, and the Goddess names her Cāmuṇḍā (Devī Māhātmya 7).",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 87.1–26 (DM 7)",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:raktabija-slaying",
+  "type": "narrative",
+  "name": "The slaying of Raktabīja and the battle of the Mothers",
+  "iast": "Raktabīja-vadha",
+  "summary": "Every drop of the asura Raktabīja's blood produces a new Raktabīja; the Mothers (Mātṛkās) — the śaktis of Brahmā, Śiva, Skanda, Viṣṇu, Varāha, Narasiṃha and Indra — join the fight, and Kālī/Cāmuṇḍā drinks his blood so that Caṇḍikā can kill him (Devī Māhātmya 8).",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 88.1–60 (DM 8)",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "deity:brahmani",
+  "type": "deity",
+  "name": "Brāhmī (Brahmāṇī)",
+  "iast": "Brāhmī",
+  "subtype": "Mātṛkā",
+  "roles": [
+   "goddess",
+   "Mother (Mātṛkā)"
+  ],
+  "summary": "Brahmā's śakti among the Mothers, riding a haṃsa with rosary and water-pot (Devī Māhātmya 8); one of the Saptamātṛkās of later iconography.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 88.14 (DM 8)",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt",
+    "quote": "brahmāṇī"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "deity:maheshvari",
+  "type": "deity",
+  "name": "Māheśvarī",
+  "iast": "Māheśvarī",
+  "subtype": "Mātṛkā",
+  "roles": [
+   "goddess",
+   "Mother (Mātṛkā)"
+  ],
+  "summary": "Śiva's śakti among the Mothers, riding a bull and holding the trident (Devī Māhātmya 8); one of the Saptamātṛkās of later iconography.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 88.15 (DM 8)",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt",
+    "quote": "māheśvarī vṛṣārūḍhā triśūlavaradhīriṇī"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "deity:kaumari",
+  "type": "deity",
+  "name": "Kaumārī",
+  "iast": "Kaumārī",
+  "subtype": "Mātṛkā",
+  "roles": [
+   "goddess",
+   "Mother (Mātṛkā)"
+  ],
+  "summary": "Skanda's (Kumāra's) śakti among the Mothers, holding the spear and riding a peacock (Devī Māhātmya 8); one of the Saptamātṛkās of later iconography.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 88.16 (DM 8)",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt",
+    "quote": "kaumārī śaktihastā ca mayūravaravāhanā"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "deity:vaishnavi",
+  "type": "deity",
+  "name": "Vaiṣṇavī",
+  "iast": "Vaiṣṇavī",
+  "subtype": "Mātṛkā",
+  "roles": [
+   "goddess",
+   "Mother (Mātṛkā)"
+  ],
+  "summary": "Viṣṇu's śakti among the Mothers, on Garuḍa with conch, discus, mace, bow and sword (Devī Māhātmya 8); one of the Saptamātṛkās of later iconography.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 88.17 (DM 8)",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "deity:varahi",
+  "type": "deity",
+  "name": "Vārāhī",
+  "iast": "Vārāhī",
+  "subtype": "Mātṛkā",
+  "roles": [
+   "goddess",
+   "Mother (Mātṛkā)"
+  ],
+  "summary": "The śakti of Viṣṇu's boar form among the Mothers, boar-faced (Devī Māhātmya 8); one of the Saptamātṛkās of later iconography.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 88.18 (DM 8)",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt",
+    "quote": "śaktiḥ sāpyāyau tatra vārāhīṃ bibhratī tanum"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "deity:narasimhi",
+  "type": "deity",
+  "name": "Nārasiṃhī",
+  "iast": "Nārasiṃhī",
+  "subtype": "Mātṛkā",
+  "roles": [
+   "goddess",
+   "Mother (Mātṛkā)"
+  ],
+  "summary": "The śakti of Narasiṃha among the Mothers, in man-lion form (Devī Māhātmya 8); one of the Saptamātṛkās of later iconography.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 88.19 (DM 8)",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt",
+    "quote": "nārasiṃhī nṛsiṃhasya bibhratī sadṛśaṃ vapuḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "deity:aindri",
+  "type": "deity",
+  "name": "Aindrī (Indrāṇī)",
+  "iast": "Aindrī",
+  "subtype": "Mātṛkā",
+  "roles": [
+   "goddess",
+   "Mother (Mātṛkā)"
+  ],
+  "summary": "Indra's śakti among the Mothers, thunderbolt in hand, on the elephant (Devī Māhātmya 8); one of the Saptamātṛkās of later iconography.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 88.20 (DM 8)",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt",
+    "quote": "vajrahastā tathaivaindrī gajarājopari sthitā"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "deity:shivaduti",
+  "type": "deity",
+  "name": "Śivadūtī",
+  "iast": "Śivadūtī",
+  "roles": [
+   "goddess"
+  ],
+  "summary": "Fierce form of the Goddess in Devī Māhātmya 8 who sends Śiva as her messenger to the asuras and is therefore called Śivadūtī.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 88.21–27 (DM 8)",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt",
+    "quote": "śivadūtīti loke 'smiṃmastataḥ sā khyātimāgatā"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:ganesha-birth-shiva-purana",
+  "type": "narrative",
+  "name": "Gaṇeśa's birth from Pārvatī and his beheading by Śiva (Śiva Purāṇa)",
+  "iast": "Gaṇeśotpatti (Śivapurāṇa)",
+  "summary": "Wanting a door-keeper loyal only to her, Pārvatī fashions a son from the dirt of her body; he bars Śiva from her bath, defeats Śiva's gaṇas and the gods, and Śiva cuts off his head with his trident. To appease the furious Goddess and her Mothers, the gods fit him with an elephant's head, revive him and make him lord of the gaṇas, to be worshipped first.",
+  "details": "The Śiva Purāṇa itself notes that 'because of differences between kalpas' Gaṇeśa's birth is told otherwise — 'his head, cut off by Śani's glance, was joined to an elephant's' — and announces the Śvetakalpa version (2.4.13.5–6). Gaṇeśa is born on the fourth of the dark half of Bhādrapada (2.4.18.35–37), the basis given for his vrata.",
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.4.13–18",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AA_%28%E0%A4%95%E0%A5%81%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%A9"
+   },
+   {
+    "source": "src:courtright-1985",
+    "locator": "ch. 2 (birth stories)"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:ganesha-birth-shani",
+  "type": "narrative",
+  "name": "Śani's glance beheads the infant Gaṇeśa (Brahmavaivarta Purāṇa)",
+  "iast": "Gaṇeśotpatti (Brahmavaivartapurāṇa)",
+  "summary": "Śani (Saturn), whose glance destroys, reluctantly looks at Pārvatī's newborn son at her insistence; the child's head falls off. Viṣṇu flies on Garuḍa, cuts the head from a sleeping elephant with his discus and joins it to the child.",
+  "details": "Gaṇapatikhaṇḍa 11 explains Śani's downcast gaze; ch. 12 tells the beheading (12.5–6) and the elephant head brought by Viṣṇu (12.11–18); Pārvatī curses Śani to limp (12.57). The Śiva Purāṇa knows this version and attributes the difference to another kalpa (ŚivP 2.4.13.5).",
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "BVP 3.12.1–20",
+    "edition": "Brahmavaivarta Purāṇa (vulgate), Gaṇapatikhaṇḍa; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%AC%E0%A5%8D%E0%A4%B0%E0%A4%B9%E0%A5%8D%E0%A4%AE%E0%A4%B5%E0%A5%88%E0%A4%B5%E0%A4%B0%E0%A5%8D%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A9_%28%E0%A4%97%E0%A4%A3%E0%A4%AA%E0%A4%A4%E0%A4%BF%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%A8"
+   },
+   {
+    "source": "src:courtright-1985",
+    "locator": "ch. 2 (birth stories)"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:ganesha-birth-matsya",
+  "type": "narrative",
+  "name": "Pārvatī's elephant-headed child from bath-unguent (Matsya Purāṇa)",
+  "iast": "Gaṇeśotpatti (Matsyapurāṇa)",
+  "summary": "Pārvatī shapes a figure with an elephant's head from the unguent rubbed off her body and throws it into the Gaṅgā; it grows huge, the Gaṅgā calls him her son, and the gods worship him as Gāṅgeya, while Brahmā gives him lordship over the Vināyakas.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 154.501–505",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+   },
+   {
+    "source": "src:courtright-1985",
+    "locator": "ch. 2 (birth stories)"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:ganesha-birth-linga",
+  "type": "narrative",
+  "name": "Śiva becomes the elephant-faced obstacle-maker at the gods' request (Liṅga Purāṇa)",
+  "iast": "Vināyakotpatti (Liṅgapurāṇa)",
+  "summary": "Because the asuras prosper through their rites, the gods ask Śiva for a maker of obstacles; Śiva himself takes the form of the elephant-faced Gaṇeśvara, born from Ambikā, and is charged to obstruct the dharma of the daityas and protect the devout.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "LiP 1.104–105",
+    "edition": "Venkatesvara Press ed. (Bombay 1906), rev. O. Hellwig after Calcutta 1960; GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_liGgapurANa1-108.txt"
+   },
+   {
+    "source": "src:courtright-1985",
+    "locator": "ch. 2 (birth stories)"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:ganesha-birth-varaha",
+  "type": "narrative",
+  "name": "Gaṇeśa born from Śiva's laughter and cursed with an elephant head (Varāha Purāṇa)",
+  "iast": "Gaṇapatijanma (Varāhapurāṇa)",
+  "summary": "When the gods ask Śiva for a remover of obstacles to the wicked, a radiant youth springs from Śiva's laughter; when Umā gazes at his beauty, the angry Śiva curses him to have an elephant's face and a pot belly — and from Śiva's sweat many elephant-headed Vināyakas arise.",
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "VarP 23.1–21",
+    "edition": "Varāha Purāṇa (vulgate); Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B5%E0%A4%B0%E0%A4%BE%E0%A4%B9%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A8%E0%A5%A9"
+   },
+   {
+    "source": "src:courtright-1985",
+    "locator": "ch. 2 (birth stories)"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "deity:siddhi",
+  "type": "deity",
+  "name": "Siddhi (consort of Gaṇeśa)",
+  "iast": "Siddhi",
+  "roles": [
+   "goddess",
+   "consort"
+  ],
+  "summary": "With Buddhi, one of the two daughters of Prajāpati Viśvarūpa married to Gaṇeśa in the Śiva Purāṇa; personifies accomplishment.",
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.4.20.1–7",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AA_%28%E0%A4%95%E0%A5%81%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A8%E0%A5%A6",
+    "quote": "siddhibuddhiriti khyāte śubhe sarvāṃgaśobhane"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "deity:buddhi",
+  "type": "deity",
+  "name": "Buddhi (consort of Gaṇeśa)",
+  "iast": "Buddhi",
+  "roles": [
+   "goddess",
+   "consort"
+  ],
+  "summary": "With Siddhi, Gaṇeśa's wife in the Śiva Purāṇa; personifies intelligence. Their sons are Kṣema and Lābha.",
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.4.20.1–7",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AA_%28%E0%A4%95%E0%A5%81%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A8%E0%A5%A6"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:ganesha-race",
+  "type": "narrative",
+  "name": "Gaṇeśa and Skanda race around the world",
+  "iast": "Pṛthvī-pradakṣiṇā",
+  "summary": "Śiva and Pārvatī promise to marry first whichever son circles the earth first. Skanda sets off; Gaṇeśa bathes, seats his parents, worships and circumambulates them seven times, declaring that this equals circling the earth. He is married to Siddhi and Buddhi; Skanda returns, feels cheated and withdraws to Mount Krauñca.",
+  "details": "Popular versions make the prize a fruit (mango) — notably in the Tamil Palani tradition of Murukaṉ — rather than precedence in marriage; the Śiva Purāṇa version is about marriage.",
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.4.19.14–55; 2.4.20",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AA_%28%E0%A4%95%E0%A5%81%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%AF"
+   },
+   {
+    "source": "src:courtright-1985",
+    "locator": "ch. 2 (birth stories)"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "limits": "The fruit version is regional tradition and is not attested here.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "narr:ganesha-scribe",
+  "type": "narrative",
+  "name": "Gaṇeśa writes down the Mahābhārata at Vyāsa's dictation",
+  "iast": "Gaṇeśa-lekhaka",
+  "summary": "In the frame found in many manuscripts and the vulgate (Bombay ed. 1.1.75–79), Brahmā advises Vyāsa to take Gaṇeśa as scribe; Gaṇeśa agrees on condition that the dictation never pauses, and Vyāsa composes knotty verses to gain time. The critical edition excludes the passage from the constituted text.",
+  "details": "The CE (Sukthankar, Ādiparvan 1933) prints the Gaṇeśa passage only in its critical notes/appendix (vol. 1 part 2, p. 884); Krishan reports it in 37 of the 59 Ādiparvan manuscripts collated. Winternitz (1898) had already argued it was an interpolation. A check of the constituted text of MBh (CE) book 1 on GRETIL finds no Gaṇeśa/Vināyaka at all.",
+  "sources": [
+   {
+    "source": "src:sukthankar-1933"
+   },
+   {
+    "source": "src:winternitz-1898"
+   },
+   {
+    "source": "src:rocher-1991-ganesha",
+    "locator": "pp. 71–72"
+   },
+   {
+    "source": "src:krishan-1999",
+    "locator": "p. 31 n. 4"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "section 'Puranic period' / epic (pointer)",
+    "url": "https://en.wikipedia.org/wiki/Ganesha"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "purana",
+  "limits": "The interpolation verdict concerns the passage's manuscript support; the frame is popular and widely illustrated, and some manuscripts carry it.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "claim:ganesha-scribe-interpolation",
+  "type": "claim",
+  "name": "The Gaṇeśa-as-scribe frame is a late interpolation in the Mahābhārata",
+  "summary": "The story of Gaṇeśa writing the Mahābhārata at Vyāsa's dictation is absent from the constituted text of the Critical Edition and is regarded as a late insertion, though it occurs in a majority of the Ādiparvan manuscripts collated.",
+  "details": "Verified online: the GRETIL text of MBh (CE) book 1, including its star passages, contains no gaṇeśa/vināyaka in this role; the CE's own placement of the passage (critical notes, vol. 1 pt 2 p. 884) is known from Rocher and Krishan via a reference pointer.",
+  "sources": [
+   {
+    "source": "src:sukthankar-1933"
+   },
+   {
+    "source": "src:winternitz-1898"
+   },
+   {
+    "source": "src:rocher-1991-ganesha",
+    "locator": "pp. 71–72"
+   },
+   {
+    "source": "src:krishan-1999",
+    "locator": "p. 31 n. 4"
+   },
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 1.1 (constituted text checked: no Gaṇeśa)",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b01/b01c001.htm"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
  }
 ]

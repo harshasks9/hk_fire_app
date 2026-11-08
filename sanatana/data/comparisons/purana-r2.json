@@ -197,5 +197,404 @@
    }
   ],
   "agent": "purana"
+ },
+ {
+  "id": "cmp:tripura-versions",
+  "title": "The burning of Tripura in the Mahābhārata, Matsya, Liṅga, Śiva and Bhāgavata",
+  "subject": "narr:tripura-dahana",
+  "question": "Who builds and defends the three cities, and what part does Viṣṇu play in their destruction?",
+  "rows": [
+   {
+    "text": "text:mahabharata",
+    "locator": "MBh (CE) 8.24",
+    "statement": "The three sons of Tāraka receive from Brahmā cities of gold, silver and iron, built by Maya; Hari, son of Tārakākṣa, makes a pool that revives the dead. The gods build a chariot of the cosmos with Brahmā as charioteer; Viṣṇu, Soma and Agni form the arrow, and Śiva burns the cities with one shot. Told by Duryodhana as a model for Śalya's charioteership.",
+    "sources": [
+     {
+      "source": "src:mbh-critical-edition",
+      "locator": "MBh (CE) 8.24.3–124",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b08/b08c024.htm"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:matsya-purana",
+    "locator": "MatsP 129–140",
+    "statement": "Maya is the protagonist, builder and war-leader; Keśava in bull form drinks the nectar pond (136.63–65) and Śiva's arrow burns the cities; Maya's house survives in the ocean (140.75–78).",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "MatsP 129–140",
+      "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:linga-purana",
+    "locator": "LiP 1.71–72",
+    "statement": "The asuras are pious Śiva-worshippers; Viṣṇu by his māyā creates an obstacle to their dharma (1.71.71–74) so that Śiva may destroy them.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "LiP 1.71–72",
+      "edition": "Venkatesvara Press ed. (Bombay 1906), rev. O. Hellwig after Calcutta 1960; GRETIL e-text",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_liGgapurANa1-108.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:shiva-purana",
+    "locator": "ŚivP 2.5.1–12",
+    "statement": "Viṣṇu creates a shaven-headed teacher who converts the Tripura asuras to a 'Jina'/Arhat doctrine (2.5.4–5); Śiva first worships Gaṇeśa (2.5.10.7–14), then burns the cities; Maya, a devotee, is spared and given Vitala (2.5.12).",
+    "sources": [
+     {
+      "source": "src:sa-wikisource",
+      "locator": "ŚivP 2.5.1–12",
+      "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+      "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A6%E0%A5%A7"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:bhagavata-purana",
+    "locator": "BhP 7.10.53–70",
+    "statement": "Told within the Prahlāda book: Maya's reviving well; Viṣṇu as a cow, with Brahmā as the calf, drinks it dry; Śiva burns the cities.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "BhP 7.10.53–70",
+      "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "note": "The motif of Viṣṇu destroying the demons' religion appears in several Purāṇas in Buddhist or Jain dress (cf. the 'māyāmoha' of ViP 3.17–18); it reflects sectarian polemic, not a historical event.",
+  "agent": "purana"
+ },
+ {
+  "id": "cmp:madhu-kaitabha-slayer",
+  "title": "Who kills Madhu and Kaiṭabha, and how?",
+  "subject": "narr:madhu-kaitabha",
+  "question": "Which deity kills the two demons born during Viṣṇu's cosmic sleep, and what is the decisive device?",
+  "rows": [
+   {
+    "text": "text:mahabharata",
+    "locator": "MBh (CE) 3.194.8–30",
+    "statement": "Viṣṇu (Nārāyaṇa) alone; the demons grant him a boon and ask to die where there is no covering; he beheads them with the discus on his bare thighs.",
+    "sources": [
+     {
+      "source": "src:mbh-critical-edition",
+      "locator": "MBh (CE) 3.194.8–30",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b03/b03c194.htm"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "psg:mbh-narayaniya",
+    "locator": "MBh (CE) 12.335.24–64",
+    "statement": "The demons steal the Vedas from Brahmā; Viṣṇu as Hayaśiras (horse-head) recovers them; the demons then fight Nārāyaṇa, who kills them.",
+    "sources": [
+     {
+      "source": "src:mbh-critical-edition",
+      "locator": "MBh (CE) 12.335.24–64",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b12/b12c335.htm"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:harivamsha",
+    "locator": "HV (CE) 42.18–33",
+    "statement": "Viṣṇu kills them on the single ocean; their fat (medas) forms the earth, hence 'Medinī'.",
+    "sources": [
+     {
+      "source": "src:harivamsha-ce",
+      "locator": "HV (CE) 42.18–33",
+      "edition": "Vaidya CE (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:devi-mahatmya",
+    "locator": "MkP 81 (DM 1)",
+    "statement": "Brahmā praises the Goddess as Yoganidrā; she leaves Viṣṇu's eyes, he wakes and kills the demons — the Goddess is the enabling power and the first carita's true subject.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "MkP 81.60–75",
+      "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:bhagavata-purana",
+    "locator": "BhP 7.9.37",
+    "statement": "Prahlāda's hymn: in the form of Hayaśiras Viṣṇu killed the Veda-stealing Madhu and Kaiṭabha.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "BhP 7.9.37",
+      "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "agent": "purana"
+ },
+ {
+  "id": "cmp:ardhanarishvara-origin",
+  "title": "How the androgynous Śiva (Ardhanārīśvara) originates",
+  "subject": "narr:ardhanarishvara-origin",
+  "question": "Why and how does Śiva appear as half-man, half-woman?",
+  "rows": [
+   {
+    "text": "text:vishnu-purana",
+    "locator": "ViP 1.7.10–13",
+    "statement": "Rudra springs from Brahmā's angry brow with a body half woman, half man; told to divide himself, he separates the female and male and multiplies each.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "ViP 1.7.10–13",
+      "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:markandeya-purana",
+    "locator": "MkP 50.10",
+    "statement": "Same account of Rudra born half-woman from Brahmā.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "MkP 50.10",
+      "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:kurma-purana",
+    "locator": "KūrmP 1.11.3",
+    "statement": "Same pattern: Rudra appears as ardhanārīnaravapu at creation.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "KūrmP 1.11.3",
+      "edition": "GRETIL e-text",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kUrmapurANa.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:linga-purana",
+    "locator": "LiP 1.41.10–43",
+    "statement": "Mahādeva, born as Brahmā's son, becomes Ardhanārīśvara, bright as the rising sun, and the female half is given to creation.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "LiP 1.41.10–43",
+      "edition": "Venkatesvara Press ed. (Bombay 1906), rev. O. Hellwig after Calcutta 1960; GRETIL e-text",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_liGgapurANa1-108.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:shiva-purana",
+    "locator": "ŚivP 7.1.15–16",
+    "statement": "Brahmā cannot make creation increase because no women exist; he worships Śiva, who appears as Ardhanārīśvara and separates the Goddess from his body; Brahmā asks her to be born as Dakṣa's daughter.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "ŚivP 7.1.15.1–9; 7.1.16.6–24",
+      "edition": "Venkatesvara Press ed. (Bombay), books 1 and 7; GRETIL e-text",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_zivapurANabooks-1-and-7.txt"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "note": "The androgyne appears in sculpture from the Kuṣāṇa period at Mathurā; the textual aetiologies are later and differ on whether the androgyne is a birth-form of Rudra or a theophany of the supreme Śiva.",
+  "agent": "purana"
+ },
+ {
+  "id": "cmp:nilakantha-poison",
+  "title": "Who takes the poison of the churning?",
+  "subject": "narr:nilakantha",
+  "question": "What happens to the poison that rises from the churned ocean?",
+  "rows": [
+   {
+    "text": "text:mahabharata",
+    "locator": "MBh (CE) 1.15–17",
+    "statement": "Constituted text: no poison episode. Passages in the critical apparatus (App. I after 1.16.15 and 1.16.27; *268, *274) have Rudra drink the hālāhala and become Nīlakaṇṭha.",
+    "sources": [
+     {
+      "source": "src:mbh-critical-edition",
+      "locator": "MBh (CE) 1.16 with apparatus",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b01/b01c016.htm"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:valmiki-ramayana",
+    "locator": "VR (CE) 1.44",
+    "statement": "No poison episode in the constituted text.",
+    "sources": [
+     {
+      "source": "src:vr-critical-edition",
+      "locator": "VR (CE) 1.44.14–27",
+      "edition": "Baroda Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:vishnu-purana",
+    "locator": "ViP 1.9.95",
+    "statement": "The nāgas take the poison.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "ViP 1.9.95",
+      "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+      "quote": "jagṛhuś ca viṣaṃ nāgāḥ kṣīrodābdhisamutthitam"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:bhagavata-purana",
+    "locator": "BhP 8.7.18–46",
+    "statement": "The hālāhala rises first; at the Prajāpatis' plea Śiva, with Pārvatī's assent, drinks it from his palm and it turns his throat blue, 'an ornament of the good'.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "BhP 8.7.18–46",
+      "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:brahmanda-purana",
+    "locator": "BndP 1.25.40–91",
+    "statement": "Śiva tells Pārvatī how he drank the kālakūṭa at Brahmā's request and holds it in his throat.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "BndP 1.25.40–91",
+      "edition": "Venkatesvara Press ed.; GRETIL e-text",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_brahmANDapurANa.txt"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "agent": "purana"
+ },
+ {
+  "id": "cmp:ganesha-birth",
+  "title": "Gaṇeśa's birth and elephant head across the Purāṇas",
+  "subject": "deity:ganesha",
+  "question": "Who produces Gaṇeśa, and how does he come to have an elephant's head?",
+  "rows": [
+   {
+    "text": "text:matsya-purana",
+    "locator": "MatsP 154.501–505",
+    "statement": "Pārvatī shapes an elephant-headed figure from her bath-unguent and throws it into the Gaṅgā; it comes alive as the Gaṅgā's son Gāṅgeya; Brahmā makes him lord of the Vināyakas. No beheading.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "MatsP 154.501–505",
+      "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:linga-purana",
+    "locator": "LiP 1.104–105",
+    "statement": "At the gods' request Śiva himself takes the form of an elephant-faced Gaṇeśvara, born of Ambikā, to obstruct the asuras' rites. No beheading.",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "LiP 1.104–105",
+      "edition": "Venkatesvara Press ed. (Bombay 1906), rev. O. Hellwig after Calcutta 1960; GRETIL e-text",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_liGgapurANa1-108.txt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:varaha-purana",
+    "locator": "VarP 23.1–21",
+    "statement": "A radiant youth springs from Śiva's laughter; jealous when Umā admires him, Śiva curses him to be elephant-faced and pot-bellied; Vināyakas arise from Śiva's sweat.",
+    "sources": [
+     {
+      "source": "src:sa-wikisource",
+      "locator": "VarP 23.1–21",
+      "edition": "Varāha Purāṇa (vulgate); Sanskrit Wikisource e-text",
+      "url": "https://sa.wikisource.org/wiki/%E0%A4%B5%E0%A4%B0%E0%A4%BE%E0%A4%B9%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A8%E0%A5%A9"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:shiva-purana",
+    "locator": "ŚivP 2.4.13–18",
+    "statement": "Pārvatī makes a door-keeper son from her body's dirt; Śiva beheads him with the trident after a battle; an elephant head (the first one found facing north) is fitted and he is revived and made first-worshipped lord of the gaṇas. The text cites the Śani version as belonging to another kalpa.",
+    "sources": [
+     {
+      "source": "src:sa-wikisource",
+      "locator": "ŚivP 2.4.13–18",
+      "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+      "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AA_%28%E0%A4%95%E0%A5%81%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%A9"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:brahmavaivarta-purana",
+    "locator": "BVP 3.11–12",
+    "statement": "The infant's head falls when Śani looks at him; Viṣṇu cuts the head from a sleeping elephant with his discus and fits it.",
+    "sources": [
+     {
+      "source": "src:sa-wikisource",
+      "locator": "BVP 3.12.1–20",
+      "edition": "Brahmavaivarta Purāṇa (vulgate), Gaṇapatikhaṇḍa; Sanskrit Wikisource e-text",
+      "url": "https://sa.wikisource.org/wiki/%E0%A4%AC%E0%A5%8D%E0%A4%B0%E0%A4%B9%E0%A5%8D%E0%A4%AE%E0%A4%B5%E0%A5%88%E0%A4%B5%E0%A4%B0%E0%A5%8D%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A9_%28%E0%A4%97%E0%A4%A3%E0%A4%AA%E0%A4%A4%E0%A4%BF%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%A8"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "note": "Courtright (1985) reads the beheading-and-restoration plot as the dominant later form; the Matsya and Liṅga versions without a beheading are generally considered earlier, but none of these chapters is securely dated.",
+  "agent": "purana"
  }
 ]

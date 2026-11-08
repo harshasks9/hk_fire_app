@@ -728,7 +728,7 @@
   "summary": "Marathi nationalist leader, journalist and scholar (1856–1920), editor of Kesari, who from 1893 promoted public Gaṇeśa festivals and from 1895 the Śivājī festival in Maharashtra; also author of The Orion (1893) and The Arctic Home in the Vedas (1903) on Vedic chronology.",
   "dates": [
    {
-    "system": "material",
+    "system": "scholarly-textual",
     "event": "life",
     "start": 1856,
     "end": 1920,
@@ -1845,5 +1845,5233 @@
   "status": "verified-online",
   "agent": "regional",
   "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:sant",
+  "type": "tradition",
+  "name": "Sant tradition (nirguṇa bhakti)",
+  "aliases": [
+   "Sant Mat",
+   "nirguṇa bhakti",
+   "Sant movement"
+  ],
+  "subtype": "devotional tradition",
+  "summary": "The loose lineage of north and west Indian poet-saints — Nāmdev, Kabīr, Raidās, Dādū and others — who addressed a formless (nirguṇa) Lord, usually named Rām or Hari, through the divine Name and the true guru, and criticised caste, image-worship and ritual. Scholars treat “sant” as a family resemblance rather than an organised sect; Kabīr Panth, Dādū Panth and the Sikh Gurus draw on it.",
+  "details": "Schomer and McLeod (1987) frame the Sants as a tradition defined by shared teaching and mutual citation rather than by institutions. Songs of Kabīr, Nāmdev and Raidās were collected both in the Sikh Ādi Granth (compiled 1604) and in the Dādūpanthī Pañcvāṇī anthologies of Rajasthan; those collections are referenced here, not modelled.",
+  "sources": [
+   {
+    "source": "src:schomer-mcleod-1987"
+   },
+   {
+    "source": "src:vaudeville-1974"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Sant_Mat"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "limits": "The sant/saguṇa–nirguṇa division is partly a modern scholarly classification (Hawley 2015).",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:ramananda",
+  "type": "person",
+  "name": "Rāmānanda",
+  "traditions": [
+   "trad:ramanandi"
+  ],
+  "roles": [
+   "ācārya",
+   "founder (traditional)"
+  ],
+  "summary": "North Indian Vaiṣṇava teacher (14th–15th c.), traditionally of Vārāṇasī, revered as founder of the Rāmānandī order; hagiography from the Bhaktamāl onward makes Kabīr, Raidās and others his disciples, which historians treat as a later construction of lineage.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1300,
+    "end": 1470,
+    "label": "14th–15th c. (disputed)",
+    "certainty": "disputed",
+    "basis": "hagiography; no contemporary record",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ramananda"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:schomer-mcleod-1987"
+   },
+   {
+    "source": "src:lutgendorf-1991"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ramananda"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:kabir",
+  "type": "person",
+  "name": "Kabīr",
+  "iast": "Kabīr",
+  "devanagari": "कबीर",
+  "aliases": [
+   "Kabir Das",
+   "Sant Kabir"
+  ],
+  "traditions": [
+   "trad:sant",
+   "trad:kabir-panth"
+  ],
+  "roles": [
+   "poet-saint"
+  ],
+  "summary": "Weaver-poet of Vārāṇasī (15th c.), raised in a Muslim julāhā family, the most quoted of the north Indian Sants: his sākhīs, padas and ramainīs address a formless Rām, mock both brāhmaṇ and mullā, and insist on the Name and the true guru. Verses in his name are preserved in three main collections — the eastern Bījak, the Rajasthani (Dādūpanthī) Kabīr Granthāvalī and the Sikh Ādi Granth.",
+  "details": "Vaudeville (1974) doubted the traditional association with Rāmānanda and saw Kabīr as heir to the Nāth yogis as much as to Vaiṣṇava bhakti. Kabīr’s Rām is not Daśaratha’s son: in the Bījak he repeatedly says the true Rām is unborn and not the king of Ayodhyā (see cmp:kabir-rama-vs-tulsidas-rama). The Sikh scripture includes a large number of verses in his name (reference only).",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1398,
+    "end": 1518,
+    "label": "traditionally 1398–1518; scholars place his activity in the 15th c. (c. 1440–1518 on some views)",
+    "certainty": "disputed",
+    "basis": "hagiography (120-year traditional life) vs. Vaudeville’s and others’ estimates",
+    "view": "traditional / Vaudeville",
+    "sources": [
+     {
+      "source": "src:vaudeville-1974"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kabir"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:vaudeville-1974"
+   },
+   {
+    "source": "src:hess-singh-1983"
+   },
+   {
+    "source": "src:hawley-2005"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kabir"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "limits": "Very little of the corpus can be shown to go back to Kabīr himself; the three recensions overlap only partly.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:kabir-panth",
+  "type": "tradition",
+  "name": "Kabīr Panth",
+  "aliases": [
+   "Kabirpanth"
+  ],
+  "subtype": "sant order",
+  "summary": "The religious community of Kabīr’s followers, organised in monastic and householder branches (notably the Kabīr Chaurā at Vārāṇasī and the Dharamdāsī branch of central India), which treats Kabīr as the true guru and the Bījak (or the Kabīr Sāgar) as scripture.",
+  "sources": [
+   {
+    "source": "src:schomer-mcleod-1987"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kabir_panth"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:bijak",
+  "type": "text",
+  "name": "Bījak",
+  "iast": "Bījak",
+  "devanagari": "बीजक",
+  "subtype": "song corpus",
+  "traditions": [
+   "trad:kabir-panth"
+  ],
+  "summary": "The “Seed” or “Account”: the collection of Kabīr’s ramainīs, śabdas and sākhīs canonical in the Kabīr Panth, representing the eastern (Bhojpuri-coloured) transmission of his poetry.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "compilation",
+    "start": 1500,
+    "end": 1700,
+    "label": "16th–17th c. (compilation)",
+    "certainty": "estimated",
+    "basis": "manuscript tradition; Kabīr Panth transmission",
+    "view": "Hess & Singh",
+    "sources": [
+     {
+      "source": "src:hess-singh-1983"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:hess-singh-1983"
+   },
+   {
+    "source": "src:vaudeville-1974"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bijak"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "limits": "Attribution of individual verses to Kabīr is uncertain.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:kabir-granthavali",
+  "type": "text",
+  "name": "Kabīr Granthāvalī (Rajasthani recension)",
+  "subtype": "song corpus",
+  "traditions": [
+   "trad:sant"
+  ],
+  "summary": "The western collection of Kabīr’s verses transmitted in Dādūpanthī manuscripts of Rajasthan and edited in the twentieth century; with the Bījak and the Sikh Ādi Granth one of the three main recensions of Kabīr.",
+  "sources": [
+   {
+    "source": "src:vaudeville-1974"
+   },
+   {
+    "source": "src:hawley-2005"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "regional"
+ },
+ {
+  "id": "person:ravidas",
+  "type": "person",
+  "name": "Raidās (Ravidās)",
+  "iast": "Raidās / Ravidās",
+  "devanagari": "रैदास",
+  "aliases": [
+   "Ravidas",
+   "Ruidas",
+   "Rohidas",
+   "Guru Ravidass"
+  ],
+  "traditions": [
+   "trad:sant",
+   "trad:ravidassia"
+  ],
+  "roles": [
+   "poet-saint"
+  ],
+  "summary": "Leatherworker (camār) poet-saint of Vārāṇasī (15th–16th c.) whose songs to a formless Lord reject caste hierarchy; preserved in the Sikh Ādi Granth and the Dādūpanthī Pañcvāṇī, he is revered as guru by the Ravidassia community and, in Rajasthani legend, as Mīrābāī’s guru.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1433,
+    "end": 1530,
+    "label": "15th–16th c. (birth sometimes given as 1433)",
+    "certainty": "disputed",
+    "basis": "hagiography; scholarly estimates vary",
+    "view": "various",
+    "sources": [
+     {
+      "source": "src:callewaert-friedlander-1992"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ravidas"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:callewaert-friedlander-1992"
+   },
+   {
+    "source": "src:hawley-juergensmeyer-1988"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ravidas"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:ravidas-padas",
+  "type": "text",
+  "name": "Padas of Raidās",
+  "subtype": "song corpus",
+  "traditions": [
+   "trad:sant"
+  ],
+  "summary": "The songs attributed to Raidās, transmitted in the Sikh Ādi Granth (about forty śabads), in the Dādūpanthī Pañcvāṇī of Rajasthan and in later collections; edited and translated by Callewaert and Friedlander (1992).",
+  "sources": [
+   {
+    "source": "src:callewaert-friedlander-1992"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "regional"
+ },
+ {
+  "id": "trad:ravidassia",
+  "type": "tradition",
+  "name": "Ravidassia (Ravidās Panth)",
+  "aliases": [
+   "Ravidas Panth",
+   "Ravidassia religion"
+  ],
+  "subtype": "religious community",
+  "summary": "The community of followers of Guru Ravidās, largely of Dalit (camār) background in Punjab and its diaspora; historically close to Sikh practice, its leading centre, Dera Sachkhand Ballan, proclaimed it a distinct religion in 2010 with the Amritbāṇī of Ravidās as scripture.",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "proclamation as a distinct religion (Dera Sachkhand Ballan)",
+    "start": 2010,
+    "end": 2010,
+    "label": "2010",
+    "certainty": "secure",
+    "basis": "public declaration",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ravidassia"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ravidassia"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "limits": "Members differ on the relation of the community to Sikhism and Hinduism; this record takes no position.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:mirabai",
+  "type": "person",
+  "name": "Mīrābāī",
+  "iast": "Mīrābāī",
+  "devanagari": "मीराबाई",
+  "aliases": [
+   "Meera",
+   "Mira",
+   "Meerabai"
+  ],
+  "traditions": [
+   "trad:vaishnava"
+  ],
+  "roles": [
+   "poet-saint"
+  ],
+  "summary": "Rajput princess-poet of Merta and Mewar (16th c.), devotee of Kṛṣṇa as Giridhar Gopāl, whose legend of defiance of her in-laws and of caste and gender norms is told across north India; the earliest datable reference to her is a stanza in Nābhādās’s Bhaktamāl (c. 1600). Hundreds of songs bear her name, nearly all of uncertain authorship.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1498,
+    "end": 1547,
+    "label": "c. 1498–1547 (traditional; married 1516 into the Mewar house)",
+    "certainty": "disputed",
+    "basis": "Rajput genealogies and hagiography",
+    "view": "traditional",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mirabai"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:hawley-2005"
+   },
+   {
+    "source": "src:hawley-juergensmeyer-1988"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mirabai"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "limits": "Hawley (2005) shows that few if any of the poems in her name can be traced to early manuscripts.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:mira-padavali",
+  "type": "text",
+  "name": "Padāvalī of Mīrābāī",
+  "subtype": "song corpus",
+  "traditions": [
+   "trad:vaishnava"
+  ],
+  "summary": "The large and open corpus of songs (padas) in Rajasthani, Braj and Gujarati attributed to Mīrābāī, addressed to Kṛṣṇa as lover and husband; very few are found in early dated manuscripts.",
+  "sources": [
+   {
+    "source": "src:hawley-2005"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mirabai"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:nabhadas",
+  "type": "person",
+  "name": "Nābhādās",
+  "iast": "Nābhādās",
+  "aliases": [
+   "Nabhaji",
+   "Narayan Dass"
+  ],
+  "traditions": [
+   "trad:ramanandi"
+  ],
+  "roles": [
+   "hagiographer",
+   "poet"
+  ],
+  "summary": "Rāmānandī poet of Galtā near Jaipur (late 16th–early 17th c.), author of the Bhaktamāl, the “Garland of Devotees”, the first comprehensive hagiographical anthology of north Indian bhakti.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1550,
+    "end": 1630,
+    "label": "fl. c. 1600",
+    "certainty": "estimated",
+    "basis": "date of the Bhaktamāl",
+    "sources": [
+     {
+      "source": "src:hawley-2015"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:hawley-2015"
+   },
+   {
+    "source": "src:mcgregor-1984"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Nabha_Dass"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:bhaktamal",
+  "type": "text",
+  "name": "Bhaktamāl",
+  "iast": "Bhaktamāla",
+  "devanagari": "भक्तमाल",
+  "subtype": "hagiography",
+  "traditions": [
+   "trad:ramanandi"
+  ],
+  "summary": "Nābhādās’s Braj Bhāṣā “Garland of Devotees” (c. 1600), some two hundred short chappay stanzas on devotees from the mythic past to his contemporaries — Kabīr, Raidās, Mīrā, Sūrdās, Tulsīdās and many others — and the earliest datable reference for several of them. Priyādās’s commentary (1712) expanded it into narrative hagiography.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "composition",
+    "start": 1585,
+    "end": 1610,
+    "label": "c. 1600 (some say 1585)",
+    "certainty": "estimated",
+    "basis": "internal references to contemporaries; Hawley",
+    "view": "Hawley; reference works",
+    "sources": [
+     {
+      "source": "src:hawley-2015"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bhaktamal"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:hawley-2015"
+   },
+   {
+    "source": "src:mcgregor-1984"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bhaktamal"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:priyadas",
+  "type": "person",
+  "name": "Priyādās",
+  "roles": [
+   "hagiographer"
+  ],
+  "summary": "Gauḍīya-influenced poet of Vṛndāvan who completed in 1712 the Bhaktirasabodhinī, a verse commentary on the Bhaktamāl that turned its terse stanzas into the miracle-rich stories of the saints known today.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1680,
+    "end": 1730,
+    "label": "fl. 1712",
+    "certainty": "estimated",
+    "basis": "date of his commentary",
+    "sources": [
+     {
+      "source": "src:hawley-2015"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:hawley-2015"
+   },
+   {
+    "source": "src:mcgregor-1984"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "regional"
+ },
+ {
+  "id": "text:bhaktirasabodhini",
+  "type": "text",
+  "name": "Bhaktirasabodhinī",
+  "subtype": "commentary / hagiography",
+  "summary": "Priyādās’s Braj commentary (1712) on Nābhādās’s Bhaktamāl, the main source of the popular stories of Kabīr, Mīrā, Tulsīdās and others.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "completion",
+    "start": 1712,
+    "end": 1712,
+    "label": "1712",
+    "certainty": "estimated",
+    "basis": "colophon date as reported in secondary literature",
+    "sources": [
+     {
+      "source": "src:hawley-2015"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:hawley-2015"
+   },
+   {
+    "source": "src:mcgregor-1984"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "regional"
+ },
+ {
+  "id": "person:dadu-dayal",
+  "type": "person",
+  "name": "Dādū Dayāl",
+  "aliases": [
+   "Dadu"
+  ],
+  "traditions": [
+   "trad:sant"
+  ],
+  "roles": [
+   "poet-saint"
+  ],
+  "summary": "Sant poet of Rajasthan (1544–1603), a cotton-carder by tradition, whose followers founded the Dādū Panth; the Dādūpanthīs compiled the Pañcvāṇī anthologies preserving the songs of Kabīr, Nāmdev, Raidās and Hardās with Dādū’s own.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1544,
+    "end": 1603,
+    "label": "1544–1603",
+    "certainty": "estimated",
+    "basis": "sect records",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Dadu_Dayal"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:schomer-mcleod-1987"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Dadu_Dayal"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:vinaya-patrika",
+  "type": "text",
+  "name": "Vinaya Patrikā",
+  "subtype": "devotional poem",
+  "traditions": [
+   "trad:ramanandi",
+   "trad:vaishnava"
+  ],
+  "summary": "Tulsīdās’s “Petition of Humility”, 279 Braj Bhāṣā hymns framed as a petition to Rāma’s court, addressed first to Gaṇeśa, Śiva, Hanumān and other deities and then to Rāma; valued for its personal devotion and its theology of the Name.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "composition",
+    "start": 1574,
+    "end": 1623,
+    "label": "late 16th–early 17th c.",
+    "certainty": "estimated",
+    "basis": "life of Tulsīdās (1574 is the Mānas’s self-dated start)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tulsidas"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:lutgendorf-1991"
+   },
+   {
+    "source": "src:mcgregor-1984"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tulsidas"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:kavitavali",
+  "type": "text",
+  "name": "Kavitāvalī",
+  "subtype": "devotional poem",
+  "traditions": [
+   "trad:ramanandi",
+   "trad:vaishnava"
+  ],
+  "summary": "Tulsīdās’s Braj collection of kavitt, savaiyā and other stanzas retelling the Rāma story in seven kāṇḍas, with a long Uttarakāṇḍa of personal and social verses on Kali-age Banaras and the power of Rāma’s name.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "composition",
+    "start": 1574,
+    "end": 1623,
+    "label": "late 16th–early 17th c.",
+    "certainty": "estimated",
+    "basis": "life of Tulsīdās (1574 is the Mānas’s self-dated start)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tulsidas"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:lutgendorf-1991"
+   },
+   {
+    "source": "src:mcgregor-1984"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tulsidas"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:gitavali",
+  "type": "text",
+  "name": "Gītāvalī",
+  "subtype": "devotional poem",
+  "traditions": [
+   "trad:ramanandi",
+   "trad:vaishnava"
+  ],
+  "summary": "Tulsīdās’s Braj Rāmāyaṇa in songs: 328 padas in seven kāṇḍas set to rāgas, elaborating some episodes and abridging others.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "composition",
+    "start": 1574,
+    "end": 1623,
+    "label": "late 16th–early 17th c.",
+    "certainty": "estimated",
+    "basis": "life of Tulsīdās (1574 is the Mānas’s self-dated start)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tulsidas"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:lutgendorf-1991"
+   },
+   {
+    "source": "src:mcgregor-1984"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tulsidas"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:hanuman-bahuk",
+  "type": "text",
+  "name": "Hanumān Bāhuk",
+  "subtype": "devotional poem",
+  "traditions": [
+   "trad:ramanandi",
+   "trad:vaishnava"
+  ],
+  "summary": "A Braj prayer of 44 stanzas to Hanumān, traditionally composed by Tulsīdās in old age when he suffered acute pain in his arm (c. 1607).",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "composition",
+    "start": 1600,
+    "end": 1623,
+    "label": "early 17th c. (traditionally c. 1607)",
+    "certainty": "estimated",
+    "basis": "life of Tulsīdās (1574 is the Mānas’s self-dated start)",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tulsidas"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:lutgendorf-1991"
+   },
+   {
+    "source": "src:mcgregor-1984"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tulsidas"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:vallabha",
+  "type": "person",
+  "name": "Vallabha (Vallabhācārya)",
+  "iast": "Vallabhācārya",
+  "aliases": [
+   "Vallabhacharya",
+   "Vallabha Dīkṣita",
+   "Mahāprabhujī"
+  ],
+  "traditions": [
+   "trad:pushtimarg"
+  ],
+  "roles": [
+   "ācārya",
+   "founder"
+  ],
+  "summary": "Telugu brāhmaṇ teacher (1478–1530) who founded the Puṣṭimārga (“path of grace”) devoted to the child Kṛṣṇa as Śrīnāthjī of Govardhana, and taught Śuddhādvaita (“pure non-dualism”) in his commentaries on the Brahmasūtra (Aṇubhāṣya) and the Bhāgavata (Subodhinī).",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1478,
+    "end": 1530,
+    "label": "1478–1530",
+    "certainty": "estimated",
+    "basis": "sect chronology",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vallabha"
+     },
+     {
+      "source": "src:barz-1976"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Vallabha"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:vitthalanatha",
+  "type": "person",
+  "name": "Viṭṭhalnāth (Gusāiṃjī)",
+  "iast": "Viṭṭhalanātha",
+  "aliases": [
+   "Gusaiji",
+   "Vitthalnath"
+  ],
+  "traditions": [
+   "trad:pushtimarg"
+  ],
+  "roles": [
+   "ācārya"
+  ],
+  "summary": "Younger son and successor of Vallabha (1515–1586) who organised the Puṣṭimārga’s temple liturgy of eight daily darśans and, by tradition in 1565, named eight poets — the Aṣṭachāp — whose songs were to be sung in it.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1515,
+    "end": 1586,
+    "label": "1515–1586",
+    "certainty": "estimated",
+    "basis": "sect chronology",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vitthalanatha"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Vitthalanatha"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:ashtachap",
+  "type": "tradition",
+  "name": "Aṣṭachāp (the “eight seals”)",
+  "iast": "Aṣṭachāp",
+  "aliases": [
+   "Ashtachhap",
+   "Ashtachap"
+  ],
+  "subtype": "poetic circle",
+  "traditions": [
+   "trad:pushtimarg"
+  ],
+  "summary": "The eight poet-singers recognised by Viṭṭhalnāth as the authorised singers of the Puṣṭimārga liturgy at the Śrīnāthjī temple on Govardhana: Sūrdās, Kumbhandās, Paramānanddās and Kṛṣṇadās (counted as Vallabha’s disciples) and Nanddās, Chītasvāmī, Govindasvāmī and Caturbhujdās (Viṭṭhalnāth’s). Their padas form the core of havelī saṅgīt.",
+  "dates": [
+   {
+    "system": "traditional",
+    "event": "constitution by Viṭṭhalnāth",
+    "start": 1565,
+    "end": 1565,
+    "label": "1565 (traditional)",
+    "certainty": "estimated",
+    "basis": "sect tradition",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Aṣṭachāp"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   },
+   {
+    "source": "src:mcgregor-1984"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Aṣṭachāp"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "limits": "The grouping and the poets’ biographies come from the sect’s Vārtā literature (17th c.); Hawley questions Sūrdās’s membership (claim:surdas-disciple-of-vallabha).",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:kumbhandas",
+  "type": "person",
+  "name": "Kumbhandās",
+  "traditions": [
+   "trad:pushtimarg"
+  ],
+  "roles": [
+   "poet-saint"
+  ],
+  "summary": "Farmer-poet of Jamunavato near Govardhana, the earliest of Vallabha’s disciples among the Aṣṭachāp; Puṣṭimārga hagiography tells that he refused the emperor’s summons to Fatehpur Sikri.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1480,
+    "end": 1600,
+    "label": "16th c.",
+    "certainty": "estimated",
+    "basis": "sect hagiography (Vārtā literature)",
+    "sources": [
+     {
+      "source": "src:mcgregor-1984"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   },
+   {
+    "source": "src:mcgregor-1984"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Aṣṭachāp"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "regional"
+ },
+ {
+  "id": "person:paramananddas",
+  "type": "person",
+  "name": "Paramānanddās",
+  "traditions": [
+   "trad:pushtimarg"
+  ],
+  "roles": [
+   "poet-saint"
+  ],
+  "summary": "Aṣṭachāp poet from Kannauj, a disciple of Vallabha, whose Braj padas on Kṛṣṇa’s childhood are collected as the Paramānandsāgar.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1480,
+    "end": 1600,
+    "label": "16th c.",
+    "certainty": "estimated",
+    "basis": "sect hagiography (Vārtā literature)",
+    "sources": [
+     {
+      "source": "src:mcgregor-1984"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   },
+   {
+    "source": "src:mcgregor-1984"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Aṣṭachāp"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "regional"
+ },
+ {
+  "id": "person:krishnadas-ashtachap",
+  "type": "person",
+  "name": "Kṛṣṇadās (Aṣṭachāp)",
+  "traditions": [
+   "trad:pushtimarg"
+  ],
+  "roles": [
+   "poet-saint"
+  ],
+  "summary": "Aṣṭachāp poet of Gujarati origin and long-time manager (adhikārī) of the Śrīnāthjī temple under Vallabha and Viṭṭhalnāth.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1480,
+    "end": 1600,
+    "label": "16th c.",
+    "certainty": "estimated",
+    "basis": "sect hagiography (Vārtā literature)",
+    "sources": [
+     {
+      "source": "src:mcgregor-1984"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   },
+   {
+    "source": "src:mcgregor-1984"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Aṣṭachāp"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "regional"
+ },
+ {
+  "id": "person:nanddas",
+  "type": "person",
+  "name": "Nanddās",
+  "traditions": [
+   "trad:pushtimarg"
+  ],
+  "roles": [
+   "poet-saint"
+  ],
+  "summary": "Aṣṭachāp poet, disciple of Viṭṭhalnāth, celebrated for the refined Braj of his Rāspañcādhyāyī and Bhramargīt, which recast Bhāgavata episodes.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1480,
+    "end": 1600,
+    "label": "16th c.",
+    "certainty": "estimated",
+    "basis": "sect hagiography (Vārtā literature)",
+    "sources": [
+     {
+      "source": "src:mcgregor-1984"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   },
+   {
+    "source": "src:mcgregor-1984"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Aṣṭachāp"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "regional"
+ },
+ {
+  "id": "person:chitswami",
+  "type": "person",
+  "name": "Chītasvāmī",
+  "traditions": [
+   "trad:pushtimarg"
+  ],
+  "roles": [
+   "poet-saint"
+  ],
+  "summary": "Aṣṭachāp poet, a Mathurā Caube priest who became Viṭṭhalnāth’s disciple.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1480,
+    "end": 1600,
+    "label": "16th c.",
+    "certainty": "estimated",
+    "basis": "sect hagiography (Vārtā literature)",
+    "sources": [
+     {
+      "source": "src:mcgregor-1984"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   },
+   {
+    "source": "src:mcgregor-1984"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Aṣṭachāp"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "regional"
+ },
+ {
+  "id": "person:govindswami",
+  "type": "person",
+  "name": "Govindasvāmī",
+  "traditions": [
+   "trad:pushtimarg"
+  ],
+  "roles": [
+   "poet-saint"
+  ],
+  "summary": "Aṣṭachāp poet and musician, a disciple of Viṭṭhalnāth, who lived near Govardhana.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1480,
+    "end": 1600,
+    "label": "16th c.",
+    "certainty": "estimated",
+    "basis": "sect hagiography (Vārtā literature)",
+    "sources": [
+     {
+      "source": "src:mcgregor-1984"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   },
+   {
+    "source": "src:mcgregor-1984"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Aṣṭachāp"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "regional"
+ },
+ {
+  "id": "person:chaturbhujdas",
+  "type": "person",
+  "name": "Caturbhujdās",
+  "traditions": [
+   "trad:pushtimarg"
+  ],
+  "roles": [
+   "poet-saint"
+  ],
+  "summary": "Aṣṭachāp poet, son of Kumbhandās and a disciple of Viṭṭhalnāth.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1480,
+    "end": 1600,
+    "label": "16th c.",
+    "certainty": "estimated",
+    "basis": "sect hagiography (Vārtā literature)",
+    "sources": [
+     {
+      "source": "src:mcgregor-1984"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   },
+   {
+    "source": "src:mcgregor-1984"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Aṣṭachāp"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "regional"
+ },
+ {
+  "id": "text:caurasi-vaishnavan-ki-varta",
+  "type": "text",
+  "name": "Caurāsī Vaiṣṇavan kī Vārtā",
+  "subtype": "sectarian hagiography",
+  "traditions": [
+   "trad:pushtimarg"
+  ],
+  "summary": "The Braj prose “Accounts of Eighty-four Vaiṣṇavas”, Puṣṭimārga hagiographies of Vallabha’s disciples (including Sūrdās and the other early Aṣṭachāp poets), attributed to Gokulnāth and transmitted with Harirāy’s commentary (17th c.).",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "composition and redaction",
+    "start": 1600,
+    "end": 1700,
+    "label": "17th c.",
+    "certainty": "estimated",
+    "basis": "attribution to Gokulnāth and Harirāy",
+    "sources": [
+     {
+      "source": "src:hawley-1984"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Harirāy"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   },
+   {
+    "source": "src:hawley-1984"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Harirāy"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:rupa-goswami",
+  "type": "person",
+  "name": "Rūpa Gosvāmī",
+  "traditions": [
+   "trad:gaudiya"
+  ],
+  "roles": [
+   "theologian",
+   "poet"
+  ],
+  "summary": "Senior of the Six Gosvāmīs of Vṛndāvan (1489–1564), a former minister of the Bengal sultanate who met Caitanya at Prayāga; in the Bhaktirasāmṛtasindhu and Ujjvalanīlamaṇi he recast Sanskrit aesthetic theory (rasa) as a theology of devotion, and wrote the Kṛṣṇa dramas Vidagdhamādhava and Lalitamādhava.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1489,
+    "end": 1564,
+    "label": "1489–1564",
+    "certainty": "estimated",
+    "basis": "Gauḍīya hagiography and chronology",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Six_Goswamis_of_Vrindavan"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:de-1961"
+   },
+   {
+    "source": "src:haberman-2003"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Six_Goswamis_of_Vrindavan"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:sanatana-goswami",
+  "type": "person",
+  "name": "Sanātana Gosvāmī",
+  "traditions": [
+   "trad:gaudiya"
+  ],
+  "roles": [
+   "theologian",
+   "poet"
+  ],
+  "summary": "Elder brother of Rūpa and one of the Six Gosvāmīs (1488–1558), instructed by Caitanya at Vārāṇasī according to the Caitanya Caritāmṛta; author of the Bṛhadbhāgavatāmṛta and a commentary on the Bhāgavata’s tenth book, and traditionally of the ritual code Haribhaktivilāsa.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1488,
+    "end": 1558,
+    "label": "1488–1558",
+    "certainty": "estimated",
+    "basis": "Gauḍīya hagiography and chronology",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Six_Goswamis_of_Vrindavan"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:de-1961"
+   },
+   {
+    "source": "src:haberman-2003"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Six_Goswamis_of_Vrindavan"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:jiva-goswami",
+  "type": "person",
+  "name": "Jīva Gosvāmī",
+  "traditions": [
+   "trad:gaudiya"
+  ],
+  "roles": [
+   "theologian",
+   "poet"
+  ],
+  "summary": "Nephew of Rūpa and Sanātana and the systematic theologian of the Gauḍīya school (c. 1513–c. 1598), author of the six Sandarbhas, which ground Caitanya’s teaching in the Bhāgavata, and founder of the Rādhā-Dāmodara temple in Vṛndāvan.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1513,
+    "end": 1598,
+    "label": "1513–1598",
+    "certainty": "estimated",
+    "basis": "Gauḍīya hagiography and chronology",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Six_Goswamis_of_Vrindavan"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:de-1961"
+   },
+   {
+    "source": "src:haberman-2003"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Six_Goswamis_of_Vrindavan"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:gopala-bhatta-goswami",
+  "type": "person",
+  "name": "Gopāla Bhaṭṭa Gosvāmī",
+  "traditions": [
+   "trad:gaudiya"
+  ],
+  "roles": [
+   "theologian",
+   "poet"
+  ],
+  "summary": "One of the Six Gosvāmīs (1503–1578), from a Śrīvaiṣṇava family of Śrīraṅgam, traditionally co-author of the Haribhaktivilāsa and founder of the Rādhāramaṇa temple in Vṛndāvan.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1503,
+    "end": 1578,
+    "label": "1503–1578",
+    "certainty": "estimated",
+    "basis": "Gauḍīya hagiography and chronology",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Six_Goswamis_of_Vrindavan"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:de-1961"
+   },
+   {
+    "source": "src:haberman-2003"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Six_Goswamis_of_Vrindavan"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:raghunatha-bhatta-goswami",
+  "type": "person",
+  "name": "Raghunātha Bhaṭṭa Gosvāmī",
+  "traditions": [
+   "trad:gaudiya"
+  ],
+  "roles": [
+   "theologian",
+   "poet"
+  ],
+  "summary": "One of the Six Gosvāmīs (1505–1579), remembered as a reciter of the Bhāgavata in Vṛndāvan.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1505,
+    "end": 1579,
+    "label": "1505–1579",
+    "certainty": "estimated",
+    "basis": "Gauḍīya hagiography and chronology",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Six_Goswamis_of_Vrindavan"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:de-1961"
+   },
+   {
+    "source": "src:haberman-2003"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Six_Goswamis_of_Vrindavan"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:raghunatha-dasa-goswami",
+  "type": "person",
+  "name": "Raghunātha Dāsa Gosvāmī",
+  "traditions": [
+   "trad:gaudiya"
+  ],
+  "roles": [
+   "theologian",
+   "poet"
+  ],
+  "summary": "One of the Six Gosvāmīs, a renunciant son of a wealthy Bengali family who lived for years at Rādhākuṇḍa; his memories of Caitanya’s last years at Puri are a main source for Kṛṣṇadāsa Kavirāja’s Caitanya Caritāmṛta.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1495,
+    "end": 1590,
+    "label": "16th c.",
+    "certainty": "estimated",
+    "basis": "Gauḍīya hagiography and chronology",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Six_Goswamis_of_Vrindavan"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:de-1961"
+   },
+   {
+    "source": "src:haberman-2003"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Six_Goswamis_of_Vrindavan"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "col:six-goswamis-corpus",
+  "type": "collection",
+  "name": "Works of the Six Gosvāmīs of Vṛndāvan",
+  "subtype": "theological corpus",
+  "traditions": [
+   "trad:gaudiya"
+  ],
+  "summary": "The Sanskrit theological, ritual, aesthetic and dramatic works of Rūpa, Sanātana, Jīva and their colleagues (16th c.) that define Gauḍīya Vaiṣṇava doctrine and practice.",
+  "sources": [
+   {
+    "source": "src:de-1961"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Six_Goswamis_of_Vrindavan"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:bhaktirasamrtasindhu",
+  "type": "text",
+  "name": "Bhaktirasāmṛtasindhu",
+  "iast": "Bhaktirasāmṛtasindhu",
+  "subtype": "theology / aesthetics",
+  "traditions": [
+   "trad:gaudiya"
+  ],
+  "summary": "Rūpa Gosvāmī’s Sanskrit “Ocean of the Nectar of Devotional Rasa”, which classifies devotion (bhakti) and its emotions with the categories of Sanskrit poetics, making bhakti itself the supreme rasa. Its closing verse says it was completed while the author dwelt in Gokula, in a Śaka year given by a word-numeral.",
+  "details": "GRETIL e-text (Gaudiya Grantha Mandir, based on the 1984 reprint of Haridās Dās’s edition), closing verse: “rāmāṅga-śatru-gaṇite śāke gokulam adhiṣṭhitenāyam / bhakti-rasāmṛta-sindhur viṭaṅkitaḥ kṣudra-rūpeṇa”. The commonly cited date 1541 depends on reading the third word-numeral as śakra (= 14).",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "completion",
+    "start": 1541,
+    "end": 1541,
+    "label": "1541 CE (Śaka 1463)",
+    "certainty": "estimated",
+    "basis": "colophon chronogram as read by Haberman (“rāmāṅga-śakra” = 1463); the GRETIL e-text reads “rāmāṅga-śatru”",
+    "view": "Haberman",
+    "sources": [
+     {
+      "source": "src:haberman-2003"
+     },
+     {
+      "source": "src:gretil",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rUpagosvAmin-haribhaktirasAmRtasindhu.txt"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "Bhaktirasāmṛtasindhu, final verse",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rUpagosvAmin-haribhaktirasAmRtasindhu.txt"
+   },
+   {
+    "source": "src:haberman-2003"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "openQuestions": [
+   "Which manuscripts read śakra and which śatru in the colophon?"
+  ],
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:ujjvalanilamani",
+  "type": "text",
+  "name": "Ujjvalanīlamaṇi",
+  "iast": "Ujjvalanīlamaṇi",
+  "subtype": "theology / aesthetics",
+  "traditions": [
+   "trad:gaudiya"
+  ],
+  "summary": "Rūpa Gosvāmī’s Sanskrit treatise on the erotic mode of devotion (madhura-rasa), a sequel to the Bhaktirasāmṛtasindhu, which classifies Kṛṣṇa’s beloveds and makes Rādhā, with Candrāvalī, the chief of his eternal beloveds in Vraja.",
+  "details": "GRETIL e-text: “rādhā-candrāvalī-mukhyāḥ proktāḥ nitya-priyā vraje” and “rādhāyām eva kṛṣṇasya suprasiddhānukūlatā”.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "Ujjvalanīlamaṇi (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rUpagosvAmin-ujjvalanIlamaNi.txt"
+   },
+   {
+    "source": "src:de-1961"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:haribhaktivilasa",
+  "type": "text",
+  "name": "Haribhaktivilāsa",
+  "subtype": "ritual digest",
+  "traditions": [
+   "trad:gaudiya"
+  ],
+  "summary": "The Gauḍīya Vaiṣṇava ritual digest (16th c.) on initiation, daily worship, festivals and conduct, attributed to Gopāla Bhaṭṭa Gosvāmī with a commentary ascribed to Sanātana.",
+  "sources": [
+   {
+    "source": "src:de-1961"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "regional"
+ },
+ {
+  "id": "text:sat-sandarbha",
+  "type": "text",
+  "name": "Ṣaṭ Sandarbha",
+  "iast": "Ṣaṭ-sandarbha",
+  "subtype": "theology",
+  "traditions": [
+   "trad:gaudiya"
+  ],
+  "summary": "Jīva Gosvāmī’s six “Treatises” (Tattva-, Bhagavat-, Paramātma-, Kṛṣṇa-, Bhakti- and Prīti-sandarbha), a systematic theology of the Gauḍīya school built on the Bhāgavata Purāṇa.",
+  "sources": [
+   {
+    "source": "src:de-1961"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Jiva_Goswami"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:vrindavana-dasa",
+  "type": "person",
+  "name": "Vṛndāvana Dāsa Ṭhākura",
+  "traditions": [
+   "trad:gaudiya"
+  ],
+  "roles": [
+   "hagiographer"
+  ],
+  "summary": "Bengali poet (1507–1589), disciple of Nityānanda, whose Caitanya Bhāgavata is the first full-length Bengali biography of Caitanya.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1507,
+    "end": 1589,
+    "label": "1507–1589",
+    "certainty": "estimated",
+    "basis": "Gauḍīya chronology",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Chaitanya_Bhagavata"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:de-1961"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Chaitanya_Bhagavata"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:chaitanya-bhagavata",
+  "type": "text",
+  "name": "Caitanya Bhāgavata",
+  "iast": "Caitanya-bhāgavata",
+  "subtype": "hagiography",
+  "traditions": [
+   "trad:gaudiya"
+  ],
+  "summary": "Vṛndāvana Dāsa’s Bengali verse biography of Caitanya (16th c.), the earliest full-length life in Bengali, concentrating on his youth in Navadvīpa and his early ministry; it presents him as Kṛṣṇa (and Rādhā) descended.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "composition",
+    "start": 1540,
+    "end": 1575,
+    "label": "mid-16th c.",
+    "certainty": "estimated",
+    "basis": "internal references; De",
+    "sources": [
+     {
+      "source": "src:de-1961"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:de-1961"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Chaitanya_Bhagavata"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:shikshashtaka",
+  "type": "text",
+  "name": "Śikṣāṣṭaka",
+  "iast": "Śikṣāṣṭaka",
+  "subtype": "hymn",
+  "traditions": [
+   "trad:gaudiya"
+  ],
+  "summary": "Eight Sanskrit verses of instruction on the chanting of Kṛṣṇa’s names, humility and longing, attributed to Caitanya and quoted in the last chapter of the Caitanya Caritāmṛta; the only verses Gauḍīyas ascribe to him directly.",
+  "sources": [
+   {
+    "source": "src:dimock-stewart-1999"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Shikshashtakam"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "col:shakta-padavali",
+  "type": "collection",
+  "name": "Śākta Padāvalī (Bengali songs to the Goddess)",
+  "aliases": [
+   "Shyama Sangeet",
+   "Śyāmā-saṅgīt",
+   "Shaktagiti"
+  ],
+  "subtype": "song literature",
+  "traditions": [
+   "trad:shakta"
+  ],
+  "summary": "The Bengali song literature to Kālī and Umā from the eighteenth century onward — Śyāmā-saṅgīt to Kālī and the Āgamanī–Bijayā songs of Umā’s homecoming at Durgā Pūjā — initiated by Rāmprasād Sen and Kamalākānta Bhaṭṭācārya.",
+  "sources": [
+   {
+    "source": "src:mcdermott-2001"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Shyama_Sangeet"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:ramprasad-sen",
+  "type": "person",
+  "name": "Rāmprasād Sen",
+  "iast": "Rāmaprasāda Sena",
+  "aliases": [
+   "Ramprasad",
+   "Kaviranjan"
+  ],
+  "traditions": [
+   "trad:shakta"
+  ],
+  "roles": [
+   "poet-saint"
+  ],
+  "summary": "Bengali Śākta poet of Halisahar (c. 1718/1723–c. 1775) whose intimate, often reproachful songs to Kālī as mother (Rāmprasādī) created the genre of Śyāmā-saṅgīt; patronised by Rājā Kṛṣṇacandra of Nadia, who gave him the title Kavirañjana.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1718,
+    "end": 1775,
+    "label": "c. 1718/1723 – c. 1775",
+    "certainty": "estimated",
+    "basis": "legends and biographies",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ramprasad_Sen"
+     },
+     {
+      "source": "src:mcdermott-2001"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:mcdermott-2001"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ramprasad_Sen"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:kamalakanta-bhattacharya",
+  "type": "person",
+  "name": "Kamalākānta Bhaṭṭācārya",
+  "aliases": [
+   "Sadhaka Kamalakanta"
+  ],
+  "traditions": [
+   "trad:shakta"
+  ],
+  "roles": [
+   "poet-saint"
+  ],
+  "summary": "Bengali Śākta poet and tantric practitioner (1769–1821), court poet of the Mahārājā of Burdwan, who after Rāmprasād shaped the Śākta padāvalī, including the Āgamanī songs of Umā’s homecoming.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1769,
+    "end": 1821,
+    "label": "1769–1821",
+    "certainty": "estimated",
+    "basis": "biographies",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kamalakanta_Bhattacharya"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:mcdermott-2001"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kamalakanta_Bhattacharya"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:baru-chandidas",
+  "type": "person",
+  "name": "Baḍu Caṇḍīdās",
+  "iast": "Baḍu Caṇḍīdāsa",
+  "aliases": [
+   "Chandidas",
+   "Boru Chandidas"
+  ],
+  "traditions": [
+   "trad:vaishnava"
+  ],
+  "roles": [
+   "poet-saint"
+  ],
+  "summary": "Bengali poet to whom the Śrīkṛṣṇakīrtan is ascribed (late 14th–15th c.?). Songs signed “Caṇḍīdās” — with the epithets Baḍu, Dvija and Dīna — appear to belong to more than one poet, a puzzle known as the Caṇḍīdās problem.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1350,
+    "end": 1500,
+    "label": "14th–15th c. (disputed)",
+    "certainty": "disputed",
+    "basis": "language of the Śrīkṛṣṇakīrtan; disputed identity",
+    "sources": [
+     {
+      "source": "src:sen-1960"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Chandidas"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:klaiman-1984"
+   },
+   {
+    "source": "src:sen-1960"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Chandidas"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:srikrishnakirtan",
+  "type": "text",
+  "name": "Śrīkṛṣṇakīrtan",
+  "iast": "Śrīkṛṣṇakīrtana",
+  "subtype": "narrative song-cycle",
+  "traditions": [
+   "trad:vaishnava"
+  ],
+  "summary": "A Bengali dramatic song-cycle of the love of Rādhā and Kṛṣṇa ascribed to Baḍu Caṇḍīdās, known from a single incomplete manuscript found in the early twentieth century in a cowshed in Bankura district and published by the Bangiya Sahitya Parishad; among the earliest monuments of Middle Bengali.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "composition",
+    "start": 1350,
+    "end": 1500,
+    "label": "later 14th–15th c. (pre-Caitanya; disputed)",
+    "certainty": "disputed",
+    "basis": "language; palaeography of the unique manuscript",
+    "sources": [
+     {
+      "source": "src:klaiman-1984"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Shreekrishna_Kirtana"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:klaiman-1984"
+   },
+   {
+    "source": "src:sen-1960"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Shreekrishna_Kirtana"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "limits": "The date and the relationship of this Caṇḍīdās to the lyric Caṇḍīdās poems are unsettled.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:vidyapati",
+  "type": "person",
+  "name": "Vidyāpati",
+  "iast": "Vidyāpati",
+  "aliases": [
+   "Maithil Kavi Kokil"
+  ],
+  "traditions": [
+   "trad:smarta",
+   "trad:vaishnava",
+   "trad:shaiva"
+  ],
+  "roles": [
+   "poet-saint"
+  ],
+  "summary": "Maithili and Sanskrit poet, scholar and courtier of the Oinwāra kings of Mithilā (c. 1352–1448), whose Maithili songs of Rādhā and Kṛṣṇa were taken up by Bengali Vaiṣṇavas (and imitated in Brajabuli), while his songs to Śiva (nacārī) and his Sanskrit works on Durgā worship show a Smārta devotion to several deities.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1352,
+    "end": 1448,
+    "label": "c. 1352–1448",
+    "certainty": "estimated",
+    "basis": "court records and colophons as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vidyapati"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:dimock-levertov-1967"
+   },
+   {
+    "source": "src:sen-1960"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Vidyapati"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:vidyapati-padavali",
+  "type": "text",
+  "name": "Padāvalī of Vidyāpati",
+  "subtype": "song corpus",
+  "summary": "The Maithili love-songs (padas) of Rādhā and Kṛṣṇa and songs to Śiva and the Goddess attributed to Vidyāpati, transmitted in Mithilā, Nepal and Bengal; Caitanya is said to have delighted in them.",
+  "sources": [
+   {
+    "source": "src:dimock-levertov-1967"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Vidyapati"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:durgabhaktitarangini",
+  "type": "text",
+  "name": "Durgābhaktitaraṅgiṇī",
+  "iast": "Durgābhaktitaraṅgiṇī",
+  "subtype": "ritual digest",
+  "traditions": [
+   "trad:shakta"
+  ],
+  "summary": "Vidyāpati’s Sanskrit manual of the autumn worship of Durgā, cited by Kane among the special treatises on the Durgotsava/Navarātra.",
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 155",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:naam-ghosha",
+  "type": "text",
+  "name": "Nām Ghoṣā",
+  "iast": "Nāma-ghoṣā",
+  "subtype": "devotional verse",
+  "traditions": [
+   "trad:ekasarana"
+  ],
+  "summary": "Mādhavadeva’s Assamese “Proclamation of the Name”, about a thousand verses in praise of the Name of Kṛṣṇa (Rāma/Hari), with Śaṅkaradeva’s Kīrtana Ghoṣā a principal scripture of the Ekaśaraṇa sattras and nāmghars.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "composition",
+    "start": 1568,
+    "end": 1596,
+    "label": "late 16th c.",
+    "certainty": "estimated",
+    "basis": "life of Mādhavadeva",
+    "sources": [
+     {
+      "source": "src:neog-1965"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:neog-1965"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Madhavdev"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "col:borgeet",
+  "type": "collection",
+  "name": "Bargīt",
+  "iast": "Baragīta",
+  "aliases": [
+   "Borgeet",
+   "Borgeets"
+  ],
+  "subtype": "song corpus",
+  "traditions": [
+   "trad:ekasarana"
+  ],
+  "summary": "The “great songs” of Śaṅkaradeva and Mādhavadeva (15th–16th c.) in Brajāvalī, set to rāgas but not necessarily to tāla, sung to open services in the sattras and nāmghars of the Ekaśaraṇa Dharma.",
+  "sources": [
+   {
+    "source": "src:neog-1965"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Borgeet"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:ankiya-naat",
+  "type": "tradition",
+  "name": "Aṅkīyā Nāṭ and Bhāonā",
+  "aliases": [
+   "Ankia Naat",
+   "Bhaona",
+   "Ankiya Nat"
+  ],
+  "subtype": "performance tradition",
+  "traditions": [
+   "trad:ekasarana"
+  ],
+  "summary": "The one-act devotional plays in Brajāvalī created by Śaṅkaradeva in the early sixteenth century, mostly on Kṛṣṇa and Rāma, and their performance (bhāonā) in the nāmghars and sattras of Assam, directed and narrated by a sūtradhāra.",
+  "sources": [
+   {
+    "source": "src:neog-1965"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ankia_Naat"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bhaona"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:sattriya",
+  "type": "tradition",
+  "name": "Sattriya",
+  "aliases": [
+   "Sattriya Nritya"
+  ],
+  "subtype": "performance tradition",
+  "traditions": [
+   "trad:ekasarana"
+  ],
+  "summary": "The dance tradition of the Ekaśaraṇa sattras, created within the bhāonā performances of Śaṅkaradeva’s plays and maintained by celibate monks; recognised among India’s classical dances by the Sangeet Natak Akademi in 2000.",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "recognition as a classical dance (Sangeet Natak Akademi)",
+    "start": 2000,
+    "end": 2000,
+    "label": "15 November 2000",
+    "certainty": "secure",
+    "basis": "institutional decision as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sattriya"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Sattriya"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:sattra",
+  "type": "tradition",
+  "name": "Sattra (Vaiṣṇava monasteries of Assam)",
+  "aliases": [
+   "Satra",
+   "Xatra"
+  ],
+  "subtype": "monastic institution",
+  "traditions": [
+   "trad:ekasarana"
+  ],
+  "summary": "The monastic and congregational institutions of the Ekaśaraṇa Dharma — chiefly on Majuli and in upper Assam — that preserve its scriptures, Bargīt, plays and dance under a sattrādhikār.",
+  "sources": [
+   {
+    "source": "src:neog-1965"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Sattriya"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:panchasakha",
+  "type": "tradition",
+  "name": "Pañcasakhā (the “five friends” of Odia literature)",
+  "aliases": [
+   "Panchasakha",
+   "Pañcasakhā"
+  ],
+  "subtype": "poetic circle",
+  "traditions": [
+   "trad:vaishnava"
+  ],
+  "summary": "The five sixteenth-century Odia poet-saints — Balarāma Dāsa, Jagannātha Dāsa, Acyutānanda Dāsa, Yaśovanta Dāsa and Ananta Dāsa — who rendered Sanskrit scriptures into Odia and joined Jagannātha devotion with a meditative, nirguṇa-leaning Vaiṣṇavism, sometimes called Utkalīya Vaiṣṇavism.",
+  "sources": [
+   {
+    "source": "src:mansinha-1962"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Balarama_Dasa"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Achyutananda_Dasa"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:balarama-dasa",
+  "type": "person",
+  "name": "Balarāma Dāsa",
+  "traditions": [
+   "trad:vaishnava"
+  ],
+  "roles": [
+   "poet-saint"
+  ],
+  "summary": "Eldest of the Odia Pañcasakhā, author of the Jagamohana (Dāṇḍi) Rāmāyaṇa, the Lakṣmī Purāṇa and the Bhakti-tattva of the “Bata Abakasha”; tradition calls him Krupāsiddha.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1474,
+    "end": 1522,
+    "label": "c. 1474–1522",
+    "certainty": "estimated",
+    "basis": "literary history",
+    "sources": [
+     {
+      "source": "src:mansinha-1962"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Balarama_Dasa"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:mansinha-1962"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Balarama_Dasa"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:achyutananda-dasa",
+  "type": "person",
+  "name": "Acyutānanda Dāsa",
+  "traditions": [
+   "trad:vaishnava"
+  ],
+  "roles": [
+   "poet-saint"
+  ],
+  "summary": "Odia Pañcasakhā poet and saint, prolific author of Mālikās (prophetic verses), genealogical and devotional works, and a figure of popular prophecy in Odisha.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1480,
+    "end": 1580,
+    "label": "16th c.",
+    "certainty": "estimated",
+    "basis": "literary history",
+    "sources": [
+     {
+      "source": "src:mansinha-1962"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Balarama_Dasa"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:mansinha-1962"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Balarama_Dasa"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:jasobanta-dasa",
+  "type": "person",
+  "name": "Yaśovanta Dāsa",
+  "traditions": [
+   "trad:vaishnava"
+  ],
+  "roles": [
+   "poet-saint"
+  ],
+  "summary": "Odia Pañcasakhā poet, remembered for devotional and yogic songs (the Prema Bhakti Brahma Gītā and Mālikās are attributed to him).",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1480,
+    "end": 1580,
+    "label": "16th c.",
+    "certainty": "estimated",
+    "basis": "literary history",
+    "sources": [
+     {
+      "source": "src:mansinha-1962"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Balarama_Dasa"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:mansinha-1962"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Balarama_Dasa"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "regional"
+ },
+ {
+  "id": "person:ananta-dasa",
+  "type": "person",
+  "name": "Ananta Dāsa",
+  "traditions": [
+   "trad:vaishnava"
+  ],
+  "roles": [
+   "poet-saint"
+  ],
+  "summary": "Odia Pañcasakhā poet, author by tradition of the Hetu-udaya Bhāgavata and devotional songs.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1480,
+    "end": 1580,
+    "label": "16th c.",
+    "certainty": "estimated",
+    "basis": "literary history",
+    "sources": [
+     {
+      "source": "src:mansinha-1962"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Balarama_Dasa"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:mansinha-1962"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Balarama_Dasa"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "regional"
+ },
+ {
+  "id": "text:jagamohana-ramayana",
+  "type": "text",
+  "name": "Jagamohana Rāmāyaṇa (Dāṇḍi Rāmāyaṇa)",
+  "iast": "Jagamohana Rāmāyaṇa",
+  "aliases": [
+   "Dandi Ramayana"
+  ],
+  "subtype": "vernacular Rāmāyaṇa",
+  "traditions": [
+   "trad:vaishnava"
+  ],
+  "summary": "Balarāma Dāsa’s Odia Rāmāyaṇa (early 16th c.), in the popular dāṇḍi metre, a free retelling rather than a translation of Vālmīki, long recited in Odisha’s village prayer-houses.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "composition",
+    "start": 1500,
+    "end": 1522,
+    "label": "early 16th c.",
+    "certainty": "estimated",
+    "basis": "life of Balarāma Dāsa",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jagamohana_Ramayana"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:smith-wl-1988"
+   },
+   {
+    "source": "src:mansinha-1962"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Jagamohana_Ramayana"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:janabai",
+  "type": "person",
+  "name": "Janābāī",
+  "iast": "Janābāī",
+  "traditions": [
+   "trad:varkari"
+  ],
+  "roles": [
+   "poet-saint"
+  ],
+  "summary": "Marathi Vārkarī poet-saint (d. 1350 by tradition), a low-caste orphan who served as a maid in Nāmdev’s household at Pandharpur; her abhaṅgas address Viṭṭhal with startling intimacy as mother, friend and helper in her chores.",
+  "dates": [
+   {
+    "system": "traditional",
+    "event": "life",
+    "start": 1258,
+    "end": 1350,
+    "label": "traditionally c. 1258/1270–1350",
+    "certainty": "estimated",
+    "basis": "hagiography",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Janabai"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:novetzke-2008"
+   },
+   {
+    "source": "src:zelliot-berntsen-1988"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Janabai"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:muktabai",
+  "type": "person",
+  "name": "Muktābāī",
+  "iast": "Muktābāī",
+  "traditions": [
+   "trad:varkari"
+  ],
+  "roles": [
+   "poet-saint"
+  ],
+  "summary": "Younger sister of Jñāneśvar (13th c.) and Vārkarī poet of about forty abhaṅgas, remembered in tradition as the teacher of the yogī Cāṅgdev.",
+  "dates": [
+   {
+    "system": "traditional",
+    "event": "life",
+    "start": 1279,
+    "end": 1297,
+    "label": "late 13th c. (traditional)",
+    "certainty": "estimated",
+    "basis": "hagiography",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Muktabai"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:ranade-1933"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Muktabai"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:chokhamela",
+  "type": "person",
+  "name": "Cokhāmeḷā",
+  "iast": "Cokhāmeḷā",
+  "traditions": [
+   "trad:varkari"
+  ],
+  "roles": [
+   "poet-saint"
+  ],
+  "summary": "Vārkarī poet-saint of the Mahār (untouchable) caste (13th–14th c.), of Mangalvedhe, a companion of Nāmdev; barred from the Viṭṭhal temple, he sang of the god outside it, and his samādhi lies at the foot of the temple steps in Pandharpur. He is a key figure for modern Dalit memory.",
+  "dates": [
+   {
+    "system": "traditional",
+    "event": "life",
+    "start": 1270,
+    "end": 1340,
+    "label": "13th–14th c.",
+    "certainty": "estimated",
+    "basis": "hagiography",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Chokhamela"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:zelliot-berntsen-1988"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Chokhamela"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:bahinabai",
+  "type": "person",
+  "name": "Bahiṇābāī",
+  "iast": "Bahiṇābāī",
+  "traditions": [
+   "trad:varkari"
+  ],
+  "roles": [
+   "poet-saint"
+  ],
+  "summary": "Marathi Vārkarī poet-saint (1628–1700), a brāhmaṇ woman who took Tukārām as her guru in a vision and whose autobiography in abhaṅgas (Ātmanivedana) records the conflict of devotion with her married life.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1628,
+    "end": 1700,
+    "label": "1628–1700",
+    "certainty": "estimated",
+    "basis": "her autobiographical verses",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bahinabai"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:zelliot-berntsen-1988"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bahinabai"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:samarth-ramdas",
+  "type": "person",
+  "name": "Samarth Rāmdās",
+  "iast": "Rāmadāsa",
+  "aliases": [
+   "Ramdas Swami",
+   "Samarth"
+  ],
+  "traditions": [
+   "trad:vaishnava"
+  ],
+  "roles": [
+   "poet-saint"
+  ],
+  "summary": "Marathi saint (c. 1608–1682), devotee of Rāma and Hanumān, founder of the Rāmdāsī order and of Hanumān shrines across Maharashtra, author of the Dāsbodh and the Manāce Ślok; later tradition makes him guru to the Maratha king Śivājī.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1608,
+    "end": 1682,
+    "label": "c. 1608–1682",
+    "certainty": "estimated",
+    "basis": "hagiography and sect records",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Samarth_Ramdas"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:ranade-1933"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Samarth_Ramdas"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:dasbodh",
+  "type": "text",
+  "name": "Dāsbodh",
+  "iast": "Dāsabodha",
+  "subtype": "devotional-didactic poem",
+  "traditions": [
+   "trad:vaishnava"
+  ],
+  "summary": "Rāmdās’s Marathi “Advice to the Servant” (1654), 7,751 ovīs in twenty chapters of ten sub-chapters each, a dialogue of guru and disciple on devotion, knowledge and worldly conduct, dictated to his disciple Kalyāṇ Svāmī.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "composition",
+    "start": 1654,
+    "end": 1654,
+    "label": "1654",
+    "certainty": "estimated",
+    "basis": "tradition and literary history",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Dasbodh"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:ranade-1933"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Dasbodh"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:manache-shlok",
+  "type": "text",
+  "name": "Manāce Ślok",
+  "iast": "Manāce śloka",
+  "subtype": "didactic poem",
+  "summary": "Rāmdās’s 205 Marathi verses “to the mind”, a widely memorised didactic poem urging the mind toward Rāma.",
+  "sources": [
+   {
+    "source": "src:ranade-1933"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "regional"
+ },
+ {
+  "id": "text:vaishnava-jana-to",
+  "type": "text",
+  "name": "Vaiṣṇava jana to",
+  "iast": "Vaiṣṇava jana to",
+  "subtype": "devotional song",
+  "traditions": [
+   "trad:vaishnava"
+  ],
+  "summary": "Narsinh Mehtā’s Gujarati pad defining the true devotee of Viṣṇu by ethical conduct — feeling others’ pain, humility, freedom from greed — rather than caste or ritual; it was sung daily in Gandhi’s āśrams.",
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Vaishnava_Jana_To"
+   },
+   {
+    "source": "src:hawley-juergensmeyer-1988"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:premanand-bhatt",
+  "type": "person",
+  "name": "Premānand Bhaṭṭ",
+  "iast": "Premānanda",
+  "traditions": [
+   "trad:vaishnava"
+  ],
+  "roles": [
+   "poet",
+   "storyteller"
+  ],
+  "summary": "Gujarati poet and professional storyteller (māṇbhaṭ, 1636–1714) of Vadodara, master of the ākhyāna — sung narratives of Purāṇic and bhakti stories such as Okhāharaṇ, Nalākhyān and Sudāmā-caritra, and of Narsinh Mehtā’s life.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1636,
+    "end": 1714,
+    "label": "1636–1714",
+    "certainty": "estimated",
+    "basis": "literary history",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Premanand_Bhatt"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Premanand_Bhatt"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:swaminarayan",
+  "type": "person",
+  "name": "Swaminarayan (Sahajānand Svāmī)",
+  "iast": "Svāminārāyaṇa / Sahajānanda Svāmī",
+  "aliases": [
+   "Sahajanand Swami",
+   "Ghanshyam"
+  ],
+  "traditions": [
+   "trad:swaminarayan-sampradaya"
+  ],
+  "roles": [
+   "founder",
+   "ascetic"
+  ],
+  "summary": "Ascetic and religious founder (1781–1830), born Ghanaśyām Pāṇḍe near Ayodhyā, who after years of wandering was initiated by Rāmānand Svāmī in Gujarat in 1800 and succeeded him in 1802; his followers worship him as the supreme manifestation of God (Puruṣottama), and the Swaminarayan Sampradāya grew from his reforms.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1781,
+    "end": 1830,
+    "label": "1781–1830",
+    "certainty": "secure",
+    "basis": "sect records and colonial documents",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Swaminarayan"
+     },
+     {
+      "source": "src:williams-2001"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:williams-2001"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Swaminarayan"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:swaminarayan-sampradaya",
+  "type": "tradition",
+  "name": "Swaminarayan Sampradāya",
+  "aliases": [
+   "Swaminarayan Hinduism"
+  ],
+  "subtype": "Vaiṣṇava sampradāya",
+  "traditions": [
+   "trad:vaishnava"
+  ],
+  "summary": "A Vaiṣṇava tradition founded in Gujarat in the early nineteenth century around Sahajānand Svāmī (Swaminarayan), rooted in Rāmānuja’s Viśiṣṭādvaita, organised around the dioceses of Ahmedabad and Vadtal and temples built in his lifetime, and spread by Gujarati migrants to East Africa, Britain and North America.",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "succession of Sahajānand Svāmī to Rāmānand Svāmī’s fellowship",
+    "start": 1802,
+    "end": 1802,
+    "label": "1802",
+    "certainty": "estimated",
+    "basis": "sect history",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Swaminarayan"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:williams-2001"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Swaminarayan_Sampradaya"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:vachanamrut",
+  "type": "text",
+  "name": "Vacanāmṛt",
+  "iast": "Vacanāmṛta",
+  "subtype": "discourses (scripture)",
+  "traditions": [
+   "trad:swaminarayan-sampradaya"
+  ],
+  "summary": "The 273 Gujarati discourses of Swaminarayan delivered between 1819 and 1829, compiled by five senior disciples and approved by him; the principal theological scripture of the Swaminarayan Sampradāya.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "delivery of the discourses",
+    "start": 1819,
+    "end": 1829,
+    "label": "1819–1829",
+    "certainty": "estimated",
+    "basis": "dated discourses",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vachanamrut"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:williams-2001"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Vachanamrut"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:shikshapatri",
+  "type": "text",
+  "name": "Śikṣāpatrī",
+  "iast": "Śikṣāpatrī",
+  "subtype": "code of conduct",
+  "traditions": [
+   "trad:swaminarayan-sampradaya"
+  ],
+  "summary": "Swaminarayan’s code of conduct in 212 Sanskrit verses (1826) for his followers; on 26 February 1830 at Rajkot he presented a copy to Sir John Malcolm, Governor of Bombay, which is now in the Bodleian Library, Oxford.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "composition",
+    "start": 1826,
+    "end": 1826,
+    "label": "1826",
+    "certainty": "estimated",
+    "basis": "sect tradition",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Shikshapatri"
+     }
+    ]
+   },
+   {
+    "system": "material",
+    "event": "copy presented to Sir John Malcolm (now Bodleian Library)",
+    "start": 1830,
+    "end": 1830,
+    "label": "26 February 1830",
+    "certainty": "estimated",
+    "basis": "presentation copy as reported",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Shikshapatri"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:williams-2001"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Shikshapatri"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "limits": "The Bodleian copy was not checked in the library’s catalogue here.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:baps",
+  "type": "tradition",
+  "name": "BAPS (Bochasanwasi Akshar Purushottam Swaminarayan Sanstha)",
+  "aliases": [
+   "BAPS Swaminarayan Sanstha"
+  ],
+  "subtype": "Swaminarayan denomination",
+  "traditions": [
+   "trad:swaminarayan-sampradaya"
+  ],
+  "summary": "A Swaminarayan denomination formed in 1905 by Shastri Yagnapurushdas (Shastriji Maharaj), teaching that Swaminarayan (Puruṣottama) remains present through a succession of gurus who embody Akṣara, beginning with Guṇātītānand Svāmī; known worldwide for its large stone mandirs, including Neasden (London) and Robbinsville (New Jersey).",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "formation",
+    "start": 1905,
+    "end": 1905,
+    "label": "1905",
+    "certainty": "estimated",
+    "basis": "denominational history",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/BAPS"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:williams-2001"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/BAPS"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:shastriji-maharaj",
+  "type": "person",
+  "name": "Shastriji Maharaj (Shastri Yagnapurushdas)",
+  "traditions": [
+   "trad:baps"
+  ],
+  "roles": [
+   "founder",
+   "monk"
+  ],
+  "summary": "Swaminarayan monk and scholar (1865–1951) who in 1905 left the Vadtal diocese to found BAPS around the Akṣara–Puruṣottama doctrine.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1865,
+    "end": 1951,
+    "label": "1865–1951",
+    "certainty": "secure",
+    "basis": "biographical record",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Shastriji_Maharaj"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Shastriji_Maharaj"
+   },
+   {
+    "source": "src:williams-2001"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:haridasa",
+  "type": "tradition",
+  "name": "Haridāsa (Dāsa Kūṭa)",
+  "aliases": [
+   "Haridasa movement",
+   "Dasa Kuta",
+   "Dāsa sāhitya"
+  ],
+  "subtype": "devotional movement",
+  "traditions": [
+   "trad:vaishnava"
+  ],
+  "summary": "The movement of Kannada devotional singers — “servants of Hari” — within the Mādhva (Dvaita) tradition, from Śrīpādarāja and Vyāsatīrtha to Purandaradāsa and Kanakadāsa and later Vijayadāsa, whose simple Kannada songs (kīrtanas, ugābhogas, suḷādis) carried Dvaita devotion to the people and shaped Carnatic music.",
+  "sources": [
+   {
+    "source": "src:sharma-bnk-1981"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Haridasa"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:vyasatirtha",
+  "type": "person",
+  "name": "Vyāsatīrtha",
+  "iast": "Vyāsatīrtha",
+  "aliases": [
+   "Vyasaraja",
+   "Chandrikacharya"
+  ],
+  "traditions": [
+   "trad:haridasa"
+  ],
+  "roles": [
+   "philosopher",
+   "pontiff",
+   "poet"
+  ],
+  "summary": "Mādhva (Dvaita) philosopher and pontiff (1447–1539), rājaguru of the Vijayanagara court under Kṛṣṇadevarāya, author of the polemical Nyāyāmṛta, Tarkatāṇḍava and Tātparyacandrikā, and patron and teacher of the Haridāsas Purandaradāsa and Kanakadāsa.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1447,
+    "end": 1539,
+    "label": "1447–1539",
+    "certainty": "estimated",
+    "basis": "Mādhva records",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vyasatirtha"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:sharma-bnk-1981"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Vyasatirtha"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:purandara-dasa",
+  "type": "person",
+  "name": "Purandaradāsa",
+  "iast": "Purandaradāsa",
+  "aliases": [
+   "Purandara Dasa",
+   "Srinivasa Nayaka"
+  ],
+  "traditions": [
+   "trad:haridasa"
+  ],
+  "roles": [
+   "poet-saint",
+   "composer"
+  ],
+  "summary": "Kannada Haridāsa poet-composer (c. 1484–1564), a wealthy merchant who became a disciple of Vyāsatīrtha; his songs signed “Purandara Viṭhala” and his graded exercises made him the “grandfather” (pitāmaha) of Carnatic music.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1470,
+    "end": 1564,
+    "label": "c. 1470/1484–1564",
+    "certainty": "estimated",
+    "basis": "Haridāsa tradition",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Purandara_Dasa"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:sharma-bnk-1981"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Purandara_Dasa"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:kanaka-dasa",
+  "type": "person",
+  "name": "Kanakadāsa",
+  "iast": "Kanakadāsa",
+  "aliases": [
+   "Kanaka Dasa",
+   "Thimmappa Nayaka"
+  ],
+  "traditions": [
+   "trad:haridasa"
+  ],
+  "roles": [
+   "poet-saint"
+  ],
+  "summary": "Kannada Haridāsa poet (1509–1609 or 1606), of the Kuruba (shepherd) community, disciple of Vyāsatīrtha; Udupi tradition says Kṛṣṇa turned to face him through a window in the temple wall (Kanakana kiṇḍi) when he was barred from entering. Author of the Mohanataraṅgiṇi and the allegory Rāmadhānya Caritre.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1509,
+    "end": 1609,
+    "label": "1509–1606/1609",
+    "certainty": "estimated",
+    "basis": "Haridāsa tradition",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kanaka_Dasa"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:sharma-bnk-1981"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kanaka_Dasa"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:mohanatarangini",
+  "type": "text",
+  "name": "Mohanataraṅgiṇi",
+  "iast": "Mohanataraṅgiṇī",
+  "subtype": "narrative poem",
+  "summary": "Kanakadāsa’s Kannada narrative poem (in sāṅgatya metre) on Kṛṣṇa’s life at Dvārakā, including the love of Uṣā and Aniruddha.",
+  "sources": [
+   {
+    "source": "src:sharma-bnk-1981"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kanaka_Dasa"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "regional"
+ },
+ {
+  "id": "text:ramadhanya-charite",
+  "type": "text",
+  "name": "Rāmadhānya Caritre",
+  "subtype": "allegorical poem",
+  "summary": "Kanakadāsa’s Kannada allegory in which ragi (finger millet), the grain of the poor, wins a debate with rice before Rāma and earns the name rāmadhānya — read as a protest against caste privilege.",
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kanaka_Dasa"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:annamacharya",
+  "type": "person",
+  "name": "Annamācārya (Annamayya)",
+  "iast": "Tāḷḷapāka Annamācārya",
+  "aliases": [
+   "Annamayya",
+   "Annamacharya"
+  ],
+  "traditions": [
+   "trad:vaishnava"
+  ],
+  "roles": [
+   "poet-saint",
+   "composer"
+  ],
+  "summary": "Telugu composer of Tāḷḷapāka (1408–1503) who sang to Veṅkaṭeśvara of Tirumala; family tradition credits him with some 32,000 saṅkīrtanas, of which about 14,900 survive engraved on copper plates kept at Tirumala, the earliest large body of songs in the kīrtana form.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1408,
+    "end": 1503,
+    "label": "1408–1503",
+    "certainty": "estimated",
+    "basis": "family copper-plate tradition and biography by his grandson",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Annamacharya"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:narayana-rao-shulman-2005"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Annamacharya"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:annamacharya-sankirtanas",
+  "type": "text",
+  "name": "Saṅkīrtanas of Annamācārya",
+  "subtype": "song corpus",
+  "summary": "The Telugu (and some Sanskrit) songs of Annamācārya on Veṅkaṭeśvara, in devotional (adhyātma) and erotic (śṛṅgāra) modes, preserved on the Tāḷḷapāka copper plates at Tirumala; translated in part by Narayana Rao and Shulman (2005).",
+  "attributes": {
+   "material": "engraved copper plates (Tirumala)",
+   "extant": "c. 14,900 songs (as reported)"
+  },
+  "sources": [
+   {
+    "source": "src:narayana-rao-shulman-2005"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Annamacharya"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:carnatic-music",
+  "type": "tradition",
+  "name": "Carnatic music",
+  "aliases": [
+   "Karnatak music"
+  ],
+  "subtype": "music tradition",
+  "summary": "The classical music tradition of south India, built on rāga and tāla and on a repertoire of devotional song (kṛti, kīrtana, padam, varṇam) — from the Haridāsas and Annamācārya to the eighteenth–nineteenth-century “Trinity” of Tyāgarāja, Muttusvāmi Dīkṣitar and Śyāma Śāstri.",
+  "sources": [
+   {
+    "source": "src:jackson-1991"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tyagaraja"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:tyagaraja",
+  "type": "person",
+  "name": "Tyāgarāja",
+  "traditions": [
+   "trad:carnatic-music"
+  ],
+  "roles": [
+   "composer",
+   "poet-saint"
+  ],
+  "summary": "Telugu composer of Tiruvaiyaru in the Thanjavur country (1767–1847), the most celebrated of the Carnatic “Trinity”, whose hundreds of kṛtis — among them the five Pañcaratna kṛtis — are songs of devotion to Rāma; he is said to have refused royal patronage.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1767,
+    "end": 1847,
+    "label": "1767–1847",
+    "certainty": "secure",
+    "basis": "biographical tradition and records",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tyagaraja"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:jackson-1991"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tyagaraja"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:muthuswami-dikshitar",
+  "type": "person",
+  "name": "Muttusvāmi Dīkṣitar",
+  "traditions": [
+   "trad:carnatic-music"
+  ],
+  "roles": [
+   "composer",
+   "poet-saint"
+  ],
+  "summary": "Sanskrit-language composer of the Carnatic “Trinity” (1775/76–1835), signing as “Guruguha”; his some 500 kṛtis describe the deities, temples and tantric worship of dozens of shrines, including the Kamalāmbā Navāvaraṇa kṛtis of Tiruvārūr.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1775,
+    "end": 1835,
+    "label": "1775/1776–1835",
+    "certainty": "estimated",
+    "basis": "biographical tradition and records",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tyagaraja"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:jackson-1991"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Muthuswami_Dikshitar"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:syama-sastri",
+  "type": "person",
+  "name": "Śyāma Śāstri",
+  "traditions": [
+   "trad:carnatic-music"
+  ],
+  "roles": [
+   "composer",
+   "poet-saint"
+  ],
+  "summary": "Eldest of the Carnatic “Trinity” (1762–1827), a priest of the goddess Kāmākṣī (Bangāru Kāmākṣī) at Thanjavur, whose compositions are almost all addressed to the Goddess.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1762,
+    "end": 1827,
+    "label": "1762–1827",
+    "certainty": "estimated",
+    "basis": "biographical tradition and records",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tyagaraja"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:jackson-1991"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Syama_Sastri"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:pancharatna-kritis",
+  "type": "text",
+  "name": "Pañcaratna kṛtis",
+  "iast": "Pañcaratna-kṛti",
+  "subtype": "song set",
+  "traditions": [
+   "trad:carnatic-music"
+  ],
+  "summary": "Five Telugu kṛtis of Tyāgarāja in the rāgas Nāṭa, Gauḷa, Ārabhi, Varāḷi and Śrī, sung together by assembled musicians at his annual ārādhanā at Tiruvaiyaru.",
+  "sources": [
+   {
+    "source": "src:jackson-1991"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tyagaraja_Aradhana"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:tyagaraja-aradhana",
+  "type": "tradition",
+  "name": "Tyāgarāja Ārādhanā",
+  "aliases": [
+   "Thyagaraja Aradhana"
+  ],
+  "subtype": "festival (music)",
+  "traditions": [
+   "trad:carnatic-music"
+  ],
+  "summary": "The annual music festival at Tyāgarāja’s samādhi on the Kāvēri at Tiruvaiyaru on the anniversary of his death (Puṣya bahuḷa pañcamī), culminating in the collective singing of the Pañcaratna kṛtis.",
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tyagaraja_Aradhana"
+   },
+   {
+    "source": "src:jackson-1991"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:bhadrachala-ramadasu",
+  "type": "person",
+  "name": "Bhadrācala Rāmadāsu (Kañcarla Gopanna)",
+  "iast": "Kañcarla Gopanna",
+  "aliases": [
+   "Bhakta Ramadasu",
+   "Kancherla Gopanna"
+  ],
+  "traditions": [
+   "trad:vaishnava",
+   "trad:carnatic-music"
+  ],
+  "roles": [
+   "poet-saint"
+  ],
+  "summary": "Telugu devotee-composer (c. 1620–1688), revenue official under the Qutb Shāhī sultans of Golconda, who by tradition spent government money rebuilding the Rāma temple at Bhadrācalam, was imprisoned for twelve years and released when Rāma and Lakṣmaṇa repaid the sum; author of kīrtanas and the Dāśarathi Śatakam.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1620,
+    "end": 1688,
+    "label": "c. 1620–1688",
+    "certainty": "estimated",
+    "basis": "biographies",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kancherla_Gopanna"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kancherla_Gopanna"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:dasarathi-satakam",
+  "type": "text",
+  "name": "Dāśarathi Śatakam",
+  "subtype": "śatakam",
+  "summary": "A Telugu śatakam of about a hundred verses addressed to Rāma, son of Daśaratha, attributed to Kañcarla Gopanna (Bhadrācala Rāmadāsu).",
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kancherla_Gopanna"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:kshetrayya",
+  "type": "person",
+  "name": "Kṣetrayya",
+  "iast": "Kṣetrayya",
+  "aliases": [
+   "Kshetrayya",
+   "Varadayya"
+  ],
+  "traditions": [
+   "trad:vaishnava"
+  ],
+  "roles": [
+   "poet-saint"
+  ],
+  "summary": "Telugu composer of padams (c. 1600–1680) from Muvva in the Krishna delta, whose love songs to Muvva Gopāla (Kṛṣṇa), voiced mostly by courtesans and women, became central to the repertoire of dance (devadāsī and later Bharatanāṭyam).",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1600,
+    "end": 1680,
+    "label": "c. 1600–1680",
+    "certainty": "estimated",
+    "basis": "literary history",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kshetrayya"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:ramanujan-rao-shulman-1994"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kshetrayya"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:kshetrayya-padams",
+  "type": "text",
+  "name": "Padams of Kṣetrayya",
+  "subtype": "song corpus",
+  "summary": "Several hundred surviving Telugu padams (of thousands attributed) signed with the mudrā “Muvva Gopāla”, translated in part in When God Is a Customer (1994).",
+  "sources": [
+   {
+    "source": "src:ramanujan-rao-shulman-1994"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "regional"
+ },
+ {
+  "id": "person:akka-mahadevi",
+  "type": "person",
+  "name": "Akka Mahādēvi",
+  "traditions": [
+   "trad:virashaiva"
+  ],
+  "roles": [
+   "poet-saint"
+  ],
+  "summary": "Kannada Vīraśaiva poet-saint of the twelfth century from Uḍutaḍi, who renounced marriage (and, in legend, clothing) for her divine husband Śiva as Cennamallikārjuna, “the lord white as jasmine”, and joined the gathering of Basava and Allama at Kalyāṇa before ending her life on Śrīśaila; some 430 vacanas are attributed to her.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1100,
+    "end": 1200,
+    "label": "12th c.",
+    "certainty": "estimated",
+    "basis": "literary history; hagiography (Śūnya Sampādane)",
+    "sources": [
+     {
+      "source": "src:ramanujan-1973"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:ramanujan-1973"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Akka_Mahadevi"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:allama-prabhu",
+  "type": "person",
+  "name": "Allama Prabhu",
+  "traditions": [
+   "trad:virashaiva"
+  ],
+  "roles": [
+   "poet-saint"
+  ],
+  "summary": "Kannada Vīraśaiva mystic poet of the twelfth century, presiding figure of the Anubhava Maṇṭapa of Kalyāṇa in tradition, whose enigmatic vacanas to Guhēśvara (“lord of the caves”) criticise ritual and teach the unity of self and Śiva.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1100,
+    "end": 1200,
+    "label": "12th c.",
+    "certainty": "estimated",
+    "basis": "literary history; hagiography (Śūnya Sampādane)",
+    "sources": [
+     {
+      "source": "src:ramanujan-1973"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:ramanujan-1973"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Allama_Prabhu"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:akka-mahadevi-vacanas",
+  "type": "text",
+  "name": "Vacanas of Akka Mahādēvi",
+  "subtype": "vacana corpus",
+  "traditions": [
+   "trad:virashaiva"
+  ],
+  "summary": "The Kannada free-verse sayings (vacanas) signed “Cennamallikārjuna”, about 430 attributed to Akka Mahādēvi.",
+  "sources": [
+   {
+    "source": "src:ramanujan-1973"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Akka_Mahadevi"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:allama-vacanas",
+  "type": "text",
+  "name": "Vacanas of Allama Prabhu",
+  "subtype": "vacana corpus",
+  "traditions": [
+   "trad:virashaiva"
+  ],
+  "summary": "The Kannada vacanas signed “Guhēśvara” attributed to Allama Prabhu, admired for paradox and riddling imagery.",
+  "sources": [
+   {
+    "source": "src:ramanujan-1973"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "regional"
+ },
+ {
+  "id": "text:sunya-sampadane",
+  "type": "text",
+  "name": "Śūnya Sampādane",
+  "iast": "Śūnyasampādane",
+  "subtype": "anthology / hagiography",
+  "traditions": [
+   "trad:virashaiva"
+  ],
+  "summary": "A fifteenth-century Kannada anthology that arranges the vacanas of Allama, Basava, Akka Mahādēvi and others as dialogues in the Anubhava Maṇṭapa around Allama, the “attainment of the void”; compiled in several redactions in the Vijayanagara period.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "compilation (several redactions)",
+    "start": 1400,
+    "end": 1550,
+    "label": "15th–16th c.",
+    "certainty": "estimated",
+    "basis": "literary history",
+    "sources": [
+     {
+      "source": "src:ramanujan-1973"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:ramanujan-1973"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "regional"
+ },
+ {
+  "id": "person:arunagirinathar",
+  "type": "person",
+  "name": "Aruṇakirinātar",
+  "iast": "Aruṇakirinātar",
+  "scripts": [
+   {
+    "lang": "ta",
+    "script": "Taml",
+    "text": "அருணகிரிநாதர்"
+   }
+  ],
+  "aliases": [
+   "Arunagirinathar"
+  ],
+  "traditions": [
+   "trad:shaiva"
+  ],
+  "roles": [
+   "poet-saint"
+  ],
+  "summary": "Tamil Śaiva poet of Tiruvaṇṇāmalai (c. 1370–1450 on Zvelebil’s dating), author of the Tiruppukaḻ, rhythmically intricate songs to Murukaṉ at his shrines, and of the Kantar Anupūti and Kantar Alaṅkāram.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1370,
+    "end": 1450,
+    "label": "c. 1370–1450",
+    "certainty": "estimated",
+    "basis": "literary history",
+    "view": "Zvelebil",
+    "sources": [
+     {
+      "source": "src:zvelebil-1974"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Arunagirinathar"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:zvelebil-1974"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Arunagirinathar"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:tiruppukal",
+  "type": "text",
+  "name": "Tiruppukaḻ",
+  "iast": "Tiruppukaḻ",
+  "scripts": [
+   {
+    "lang": "ta",
+    "script": "Taml",
+    "text": "திருப்புகழ்"
+   }
+  ],
+  "subtype": "hymn corpus",
+  "traditions": [
+   "trad:shaiva"
+  ],
+  "summary": "Aruṇakirinātar’s “Holy Praise”, some 1,300 surviving Tamil songs to Murukaṉ in elaborate rhythmic patterns (cantam), arranged by the shrines they praise; the Project Madurai edition numbers the songs 1–1326.",
+  "details": "The Project Madurai part 1 (songs 1–330) opens with a song to Vināyaka (“kaittala niṟaikaṉi”) and contains songs headed for Tirupparaṅkuṉṟam, Tiruccentūr, Paḻani and Tiruttaṇikai among other shrines (checked 2026-11-08).",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "composition",
+    "start": 1370,
+    "end": 1450,
+    "label": "c. 14th–15th c.",
+    "certainty": "estimated",
+    "basis": "date of the poet",
+    "sources": [
+     {
+      "source": "src:zvelebil-1974"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:tiruppukal-pm",
+    "url": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0180.html"
+   },
+   {
+    "source": "src:zvelebil-1974"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Thiruppugazh"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:narayana-bhattathiri",
+  "type": "person",
+  "name": "Mēlputtūr Nārāyaṇa Bhaṭṭatiri",
+  "iast": "Mēlputtūr Nārāyaṇa Bhaṭṭatiri",
+  "aliases": [
+   "Melpathur Narayana Bhattathiri",
+   "Bhattathiri"
+  ],
+  "traditions": [
+   "trad:vaishnava"
+  ],
+  "roles": [
+   "poet",
+   "grammarian"
+  ],
+  "summary": "Kerala Sanskrit poet and grammarian (1560–1646/1666), author of the Prakriyāsarvasva on Pāṇinian grammar and of the Nārāyaṇīyam, a condensation of the Bhāgavata Purāṇa in a thousand verses addressed to Kṛṣṇa of Guruvāyūr.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1560,
+    "end": 1666,
+    "label": "1560–1646/1666",
+    "certainty": "disputed",
+    "basis": "biographical tradition",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Melpathur_Narayana_Bhattathiri"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:kunjunni-raja-1958"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Melpathur_Narayana_Bhattathiri"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:narayaniyam",
+  "type": "text",
+  "name": "Nārāyaṇīyam",
+  "iast": "Nārāyaṇīyam",
+  "devanagari": "नारायणीयम्",
+  "subtype": "devotional poem (stotra-kāvya)",
+  "traditions": [
+   "trad:vaishnava"
+  ],
+  "summary": "A Sanskrit devotional poem of 100 cantos (daśakas), 1,034 verses, condensing the Bhāgavata Purāṇa and addressed throughout to Kṛṣṇa of Guruvāyūr (“pavanapurapate”). Its last verse ends with the phrase “āyurārogyasaukhyam”, which as a kali-day chronogram gives a date in 1586 CE.",
+  "details": "GRETIL e-text, Nār. 100.10: “nityaṃ cittasthitaṃ me pavanapurapate kṛṣṇa kāruṇyasindho”; 100.11 ends “… idam iha kurutām āyurārogyasaukhyam”. The decoding of the chronogram is traditional; the arithmetic is shown in the date basis. Wikipedia notes that the earliest manuscripts are much later than the poem.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "completion (chronogram)",
+    "start": 1586,
+    "end": 1586,
+    "label": "1586 CE (kali-day 1,712,210)",
+    "certainty": "estimated",
+    "basis": "kaṭapayādi reading of “āyurārogyasaukhyam” (y=1, r=2, r=2, g(y)=1, s=7, kh(y)=1, read right to left) = 1,712,210 days of the Kali age",
+    "view": "tradition; Kunjunni Raja",
+    "sources": [
+     {
+      "source": "src:gretil",
+      "locator": "Nār. 100.11",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_nArAyaNabhaTTa-nArAyaNIya.txt"
+     },
+     {
+      "source": "src:kunjunni-raja-1958"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "Nār. 100.10–11",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_nArAyaNabhaTTa-nArAyaNIya.txt"
+   },
+   {
+    "source": "src:kunjunni-raja-1958"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Narayaniyam"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "limits": "The 1586 date depends on accepting the final phrase as an intended chronogram.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:poonthanam",
+  "type": "person",
+  "name": "Pūntānam Nampūtiri",
+  "iast": "Pūntānam",
+  "aliases": [
+   "Poonthanam"
+  ],
+  "traditions": [
+   "trad:vaishnava"
+  ],
+  "roles": [
+   "poet-saint"
+  ],
+  "summary": "Malayalam devotional poet (1547–1640) of Keezhattoor, devotee of Guruvāyūrappan, author of the Jñānappāna; Guruvāyūr legend contrasts his simple bhakti, which the god preferred, with Bhaṭṭatiri’s learned Sanskrit.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1547,
+    "end": 1640,
+    "label": "1547–1640",
+    "certainty": "estimated",
+    "basis": "biographical tradition",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Poonthanam_Nambudiri"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Poonthanam_Nambudiri"
+   },
+   {
+    "source": "src:kunjunni-raja-1958"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:jnanappana",
+  "type": "text",
+  "name": "Jñānappāna",
+  "iast": "Jñānappāna",
+  "subtype": "devotional poem",
+  "summary": "Pūntānam’s Malayalam “Song of Divine Wisdom” (16th c.), a meditation in simple verse on the transience of life and devotion to Kṛṣṇa of Guruvāyūr.",
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Jnanappana"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:ramalinga-swamigal",
+  "type": "person",
+  "name": "Rāmaliṅga Swāmigaḷ (Vaḷḷalār)",
+  "iast": "Irāmaliṅka Aṭikaḷ",
+  "scripts": [
+   {
+    "lang": "ta",
+    "script": "Taml",
+    "text": "இராமலிங்க அடிகள்"
+   }
+  ],
+  "aliases": [
+   "Vallalar",
+   "Ramalinga Adigal"
+  ],
+  "traditions": [
+   "trad:samarasa-sanmarga"
+  ],
+  "roles": [
+   "poet-saint"
+  ],
+  "summary": "Tamil saint and poet (1823–1874) of Marutūr near Chidambaram, who preached compassion to all living beings (jīvakāruṇyam), founded the Samaraca Cutta Caṉmārka Caṅkam (1865), a free kitchen at Vadalur (1867) and the Sathya Gnana Sabai (1872) to a formless “Arutperuñjōti” (Grace-Light); his collected hymns, the Tiruvaruṭpā, provoked the “Aruṭpā–Maruṭpā” controversy with Śaiva Siddhāntins.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1823,
+    "end": 1874,
+    "label": "1823–1874",
+    "certainty": "secure",
+    "basis": "biographical record",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vallalar"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:weiss-2019"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Vallalar"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:samarasa-sanmarga",
+  "type": "tradition",
+  "name": "Samaraca Cutta Caṉmārkam (Vaḷḷalār’s path)",
+  "aliases": [
+   "Samarasa Suddha Sanmarga Sathya Sangam",
+   "Vallalar movement"
+  ],
+  "subtype": "reform movement",
+  "summary": "The universalist movement founded by Rāmaliṅga Swāmigaḷ in 1865, centred on the worship of God as light and on feeding the hungry, with its Sathya Gnana Sabai at Vadalur (1872).",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "foundation of the Caṅkam",
+    "start": 1865,
+    "end": 1865,
+    "label": "1865",
+    "certainty": "estimated",
+    "basis": "movement history",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vallalar"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:weiss-2019"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Vallalar"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:tiruvarutpa",
+  "type": "text",
+  "name": "Tiruvaruṭpā",
+  "iast": "Tiruvaruṭpā",
+  "subtype": "hymn corpus",
+  "traditions": [
+   "trad:samarasa-sanmarga"
+  ],
+  "summary": "The collected Tamil hymns of Rāmaliṅga Swāmigaḷ, arranged in six tirumuṟais, the first parts published in his lifetime (1867); their claim to scriptural status was attacked by Āṟumuka Nāvalar in the “Aruṭpā–Maruṭpā” dispute.",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "first publication (tirumuṟais 1–4)",
+    "start": 1867,
+    "end": 1867,
+    "label": "1867",
+    "certainty": "estimated",
+    "basis": "publication history as reported",
+    "sources": [
+     {
+      "source": "src:weiss-2019"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:weiss-2019"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Vallalar"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:bhanubhakta",
+  "type": "person",
+  "name": "Bhānubhakta Ācārya",
+  "iast": "Bhānubhakta Ācārya",
+  "devanagari": "भानुभक्त आचार्य",
+  "aliases": [
+   "Adikavi Bhanubhakta"
+  ],
+  "traditions": [
+   "trad:vaishnava"
+  ],
+  "roles": [
+   "poet"
+  ],
+  "summary": "Nepali poet (1814–1868) honoured as Ādikavi, the first poet of Nepali, for his Nepali Rāmāyaṇa; also known for verse letters and satire written while imprisoned. His birthday (Bhānu Jayantī) is a cultural holiday in Nepal and among Nepali speakers in India.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1814,
+    "end": 1868,
+    "label": "1814–1868 (VS 1871–1925)",
+    "certainty": "secure",
+    "basis": "biographical record",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bhanubhakta_Acharya"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:hutt-1988"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bhanubhakta_Acharya"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:bhanubhakta-ramayana",
+  "type": "text",
+  "name": "Bhānubhakta Rāmāyaṇa",
+  "iast": "Bhānubhakta Rāmāyaṇa",
+  "devanagari": "भानुभक्त रामायण",
+  "subtype": "vernacular Rāmāyaṇa",
+  "traditions": [
+   "trad:vaishnava"
+  ],
+  "summary": "Bhānubhakta’s Nepali Rāmāyaṇa in seven kāṇḍas, circulated orally and in manuscript and published complete in 1887 by Motirām Bhaṭṭa; regarded as the first Nepali epic and a foundation of the literary language. Hutt treats it as based on the Sanskrit Adhyātma Rāmāyaṇa.",
+  "details": "Wikipedia’s article calls it a translation of the Vālmīki Rāmāyaṇa; Hutt (1988) and older Nepali scholarship identify the Adhyātma Rāmāyaṇa as its source. Both views are recorded.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "composition",
+    "start": 1841,
+    "end": 1853,
+    "label": "mid-19th c.",
+    "certainty": "estimated",
+    "basis": "life of the poet",
+    "sources": [
+     {
+      "source": "src:hutt-1988"
+     }
+    ]
+   },
+   {
+    "system": "reception",
+    "event": "publication in complete form (Motirām Bhaṭṭa)",
+    "start": 1887,
+    "end": 1887,
+    "label": "1887",
+    "certainty": "estimated",
+    "basis": "publication history",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bhanubhakta_Ramayana"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:hutt-1988"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bhanubhakta_Ramayana"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "openQuestions": [
+   "A canto-by-canto comparison with the Adhyātma would settle the source question."
+  ],
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:utpaladeva",
+  "type": "person",
+  "name": "Utpaladeva",
+  "iast": "Utpaladeva",
+  "traditions": [
+   "trad:kashmir-shaivism"
+  ],
+  "roles": [
+   "philosopher",
+   "poet"
+  ],
+  "summary": "Kashmiri Śaiva philosopher and poet (c. 900–950), pupil of Somānanda and grand-teacher of Abhinavagupta, who systematised the Pratyabhijñā (“Recognition”) school in the Īśvarapratyabhijñākārikā and poured its theology into the devotional hymns of the Śivastotrāvalī.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 900,
+    "end": 950,
+    "label": "c. 900–950",
+    "certainty": "estimated",
+    "basis": "teacher–pupil chronology of the Kashmir Śaiva lineage",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Utpaladeva"
+     },
+     {
+      "source": "src:bailly-1987"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:bailly-1987"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Utpaladeva"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:shivastotravali",
+  "type": "text",
+  "name": "Śivastotrāvalī",
+  "iast": "Śivastotrāvalī",
+  "subtype": "hymn collection",
+  "traditions": [
+   "trad:kashmir-shaivism"
+  ],
+  "summary": "Utpaladeva’s “Garland of Hymns to Śiva”, twenty Sanskrit stotras of personal devotion grounded in Pratyabhijñā non-dualism, collected after him with a commentary by Kṣemarāja; still recited by Kashmiri Paṇḍits.",
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "Śivastotrāvalī (GRETIL e-text based on Bailly’s edition)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_utpaladeva-zivastotrAvali.txt"
+   },
+   {
+    "source": "src:bailly-1987"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:rupa-bhawani",
+  "type": "person",
+  "name": "Rūpa Bhavānī",
+  "iast": "Rūpa Bhavānī",
+  "aliases": [
+   "Rupa Bhawani",
+   "Alakheshwari"
+  ],
+  "traditions": [
+   "trad:kashmir-shaivism"
+  ],
+  "roles": [
+   "poet-saint"
+  ],
+  "summary": "Kashmiri Paṇḍit woman mystic and poet (c. 1621–1721), whose Kashmiri vākhs in the line of Lal Ded express Śaiva yogic experience; she is commemorated by Kashmiri Paṇḍits on her birth anniversary (Sahib Saptami).",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "life",
+    "start": 1621,
+    "end": 1721,
+    "label": "c. 1621–1721",
+    "certainty": "estimated",
+    "basis": "community tradition",
+    "sources": [
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Rupa_Bhawani"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Rupa_Bhawani"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "col:old-javanese-kakawin",
+  "type": "collection",
+  "name": "Old Javanese kakawin and parwa literature",
+  "aliases": [
+   "Kakawin",
+   "Parwa"
+  ],
+  "subtype": "literary corpus",
+  "summary": "The court literature of Java and Bali in Old Javanese: prose renderings of Mahābhārata books (parwa, from the late 10th c.) and long poems in Sanskrit metres (kakawin) retelling epic and Purāṇic stories — Rāmāyaṇa, Arjunawiwāha, Kṛṣṇāyana, Bhāratayuddha, Hariwangsa and others — preserved mainly in Balinese palm-leaf manuscripts.",
+  "sources": [
+   {
+    "source": "src:zoetmulder-1974"
+   },
+   {
+    "source": "src:zoetmulder-1983",
+    "locator": "chapter list",
+    "url": "https://archive.org/details/kalangwan-sastra-jawa-kuno-selayang-pandang-1983"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:airlangga",
+  "type": "person",
+  "name": "Airlangga",
+  "iast": "Airlaṅga",
+  "aliases": [
+   "Erlangga"
+  ],
+  "roles": [
+   "king"
+  ],
+  "summary": "King in East Java (r. 1019–1042), of Balinese birth, who restored the kingdom after the fall of Dharmawangsa Teguh’s court (c. 1016) and is named in the Arjunawiwāha as the poet Mpu Kanwa’s king; his Pucangan inscription of 1041 recounts his career.",
+  "dates": [
+   {
+    "system": "material",
+    "event": "reign",
+    "start": 1019,
+    "end": 1042,
+    "label": "1019–1042",
+    "certainty": "estimated",
+    "basis": "inscriptions (consecration 1019; Pucangan 1041)",
+    "view": "Robson",
+    "sources": [
+     {
+      "source": "src:robson-2008",
+      "locator": "Introduction",
+      "url": "https://archive.org/details/oapen-20.500.12657-34659"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:robson-2008",
+    "locator": "Introduction, pp. 1–5",
+    "url": "https://archive.org/details/oapen-20.500.12657-34659"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:mpu-kanwa",
+  "type": "person",
+  "name": "Mpu Kanwa",
+  "iast": "Mpu Kaṇwa",
+  "roles": [
+   "poet"
+  ],
+  "summary": "Old Javanese poet of King Airlangga’s court (early 11th c.), known only from his Arjunawiwāha, in whose last stanza (36.2) he names himself, the work and the king.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "floruit",
+    "start": 1019,
+    "end": 1042,
+    "label": "reign of Airlangga (1019–1042)",
+    "certainty": "estimated",
+    "basis": "canto 36.2",
+    "sources": [
+     {
+      "source": "src:robson-2008",
+      "locator": "Introduction",
+      "url": "https://archive.org/details/oapen-20.500.12657-34659"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:robson-2008",
+    "locator": "Introduction, p. 1 (on canto 36.2)",
+    "url": "https://archive.org/details/oapen-20.500.12657-34659"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:arjunawiwaha",
+  "type": "text",
+  "name": "Arjunawiwāha (Kakawin)",
+  "iast": "Arjunawiwāha",
+  "aliases": [
+   "Arjuna Wiwaha",
+   "Arjunavivāha"
+  ],
+  "subtype": "kakawin",
+  "summary": "Mpu Kanwa’s Old Javanese kakawin “Arjuna’s Wedding” (11th c.), the oldest dated kakawin after the Rāmāyaṇa: Arjuna’s ascetic penance, his resistance to the nymphs sent to test him, the fight with Śiva as a hunter over the boar Muka, and his victory for Indra over the demon Niwātakawaca, rewarded with marriage to the nymphs. It retells the Mahābhārata’s Āraṇyakaparvan episodes and remained a favourite of Javanese and Balinese wayang.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "composition",
+    "start": 1019,
+    "end": 1042,
+    "label": "during Airlangga’s reign (1019–1042), perhaps c. 1030",
+    "certainty": "estimated",
+    "basis": "canto 36.2 names King Airlangga",
+    "view": "Robson",
+    "sources": [
+     {
+      "source": "src:robson-2008",
+      "locator": "Introduction",
+      "url": "https://archive.org/details/oapen-20.500.12657-34659"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:robson-2008",
+    "locator": "Introduction and synopsis",
+    "url": "https://archive.org/details/oapen-20.500.12657-34659"
+   },
+   {
+    "source": "src:zoetmulder-1983",
+    "locator": "ch. VII, p. 298 ff.",
+    "url": "https://archive.org/details/kalangwan-sastra-jawa-kuno-selayang-pandang-1983"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:jayabhaya",
+  "type": "person",
+  "name": "Jayabhaya (king of Kaḍiri)",
+  "iast": "Jayabhaya",
+  "aliases": [
+   "Jayabaya",
+   "Śrī Warmeśwara"
+  ],
+  "roles": [
+   "king"
+  ],
+  "summary": "King of Kaḍiri (Daha) in East Java (r. c. 1130/1135–1157), known from inscriptions of 1135, 1136 and 1144 under the consecration name Śrī Warmeśwara, patron of the Bhāratayuddha; later Javanese tradition made him a prophet-king (the Jangka Jayabaya prophecies).",
+  "dates": [
+   {
+    "system": "material",
+    "event": "reign",
+    "start": 1130,
+    "end": 1157,
+    "label": "c. 1130/1135 – 1157",
+    "certainty": "estimated",
+    "basis": "inscriptions of 1135, 1136, 1144 and the Bhāratayuddha chronogram",
+    "view": "Zoetmulder",
+    "sources": [
+     {
+      "source": "src:zoetmulder-1983",
+      "locator": "p. 341",
+      "url": "https://archive.org/details/kalangwan-sastra-jawa-kuno-selayang-pandang-1983"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:zoetmulder-1983",
+    "locator": "pp. 340–341",
+    "url": "https://archive.org/details/kalangwan-sastra-jawa-kuno-selayang-pandang-1983"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:mpu-sedah",
+  "type": "person",
+  "name": "Mpu Sedah",
+  "iast": "Mpu Sĕḍah",
+  "roles": [
+   "poet"
+  ],
+  "summary": "Old Javanese court poet of King Jayabhaya of Kaḍiri, who began the Bhāratayuddha in 1157; Javanese legend that he was put to death for modelling Śalya’s queen on the king’s consort is dismissed by Zoetmulder as having no basis in the text.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "floruit",
+    "start": 1157,
+    "end": 1157,
+    "label": "1157",
+    "certainty": "secure",
+    "basis": "chronogram in the Bhāratayuddha prologue",
+    "sources": [
+     {
+      "source": "src:zoetmulder-1983",
+      "locator": "p. 341",
+      "url": "https://archive.org/details/kalangwan-sastra-jawa-kuno-selayang-pandang-1983"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:zoetmulder-1983",
+    "locator": "pp. 339–341",
+    "url": "https://archive.org/details/kalangwan-sastra-jawa-kuno-selayang-pandang-1983"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:mpu-panuluh",
+  "type": "person",
+  "name": "Mpu Panuluh",
+  "iast": "Mpu Panuluh",
+  "roles": [
+   "poet"
+  ],
+  "summary": "Old Javanese court poet who completed the Bhāratayuddha begun by Mpu Sedah and wrote the kakawins Hariwangsa and Ghaṭotkacāśraya (12th c.).",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "floruit",
+    "start": 1150,
+    "end": 1190,
+    "label": "mid-to-late 12th c.",
+    "certainty": "estimated",
+    "basis": "Bhāratayuddha (1157) and later works",
+    "sources": [
+     {
+      "source": "src:zoetmulder-1983",
+      "locator": "pp. 339–341",
+      "url": "https://archive.org/details/kalangwan-sastra-jawa-kuno-selayang-pandang-1983"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:zoetmulder-1983",
+    "locator": "pp. 339–341 and chapters on Hariwangsa and Ghaṭotkacāśraya",
+    "url": "https://archive.org/details/kalangwan-sastra-jawa-kuno-selayang-pandang-1983"
+   },
+   {
+    "source": "src:zoetmulder-1974"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:bharatayuddha",
+  "type": "text",
+  "name": "Bhāratayuddha (Kakawin)",
+  "iast": "Bhāratayuddha",
+  "aliases": [
+   "Kakawin Bharatayuddha",
+   "Bratayuda"
+  ],
+  "subtype": "kakawin",
+  "summary": "The Old Javanese kakawin of the Mahābhārata war, begun by Mpu Sedah and completed by Mpu Panuluh for King Jayabhaya of Kaḍiri; a chronogram in its prologue (“sang akuda suddha candrama”) gives Śaka 1079, 1157 CE — the paraphrase even yields the day, 6 September 1157. It became the basis of the Javanese and Balinese tradition of the great war.",
+  "details": "Zoetmulder (Kalangwan, Indonesian ed. 1983, p. 340): Mpu Sedah composed a chronogram for the king “drawn by horses (the sun) and the pure moon” — sang akuda suddha candrama — yielding Śaka 1079 = 1157 CE; the epilogue tells that Mpu Panuluh was charged with writing the last part.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "composition (chronogram)",
+    "start": 1157,
+    "end": 1157,
+    "label": "1157 CE (Śaka 1079), 6 September",
+    "certainty": "secure",
+    "basis": "chronogram in the prologue, read by Zoetmulder",
+    "view": "Zoetmulder",
+    "sources": [
+     {
+      "source": "src:zoetmulder-1983",
+      "locator": "p. 341",
+      "url": "https://archive.org/details/kalangwan-sastra-jawa-kuno-selayang-pandang-1983"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:zoetmulder-1983",
+    "locator": "pp. 339–341",
+    "url": "https://archive.org/details/kalangwan-sastra-jawa-kuno-selayang-pandang-1983"
+   },
+   {
+    "source": "src:zoetmulder-1974"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:hariwangsa-kakawin",
+  "type": "text",
+  "name": "Hariwangsa (Kakawin)",
+  "subtype": "kakawin",
+  "summary": "Mpu Panuluh’s Old Javanese kakawin (12th c.) on Kṛṣṇa’s abduction of Rukmiṇī and the war with Jarāsandha, drawing on the Harivaṃśa tradition; edited by A. Teeuw (1950).",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "composition",
+    "start": 1100,
+    "end": 1200,
+    "label": "12th c.",
+    "certainty": "estimated",
+    "basis": "court and poet as identified by Zoetmulder",
+    "sources": [
+     {
+      "source": "src:zoetmulder-1974"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:zoetmulder-1983",
+    "locator": "chapter list and chapters on the work",
+    "url": "https://archive.org/details/kalangwan-sastra-jawa-kuno-selayang-pandang-1983"
+   },
+   {
+    "source": "src:zoetmulder-1974"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:ghatotkacasraya",
+  "type": "text",
+  "name": "Ghaṭotkacāśraya (Kakawin)",
+  "subtype": "kakawin",
+  "summary": "Mpu Panuluh’s Old Javanese kakawin (12th c.) on Ghaṭotkaca’s help to Abhimanyu in winning his bride — an episode not found in the Sanskrit Mahābhārata.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "composition",
+    "start": 1100,
+    "end": 1200,
+    "label": "12th c.",
+    "certainty": "estimated",
+    "basis": "court and poet as identified by Zoetmulder",
+    "sources": [
+     {
+      "source": "src:zoetmulder-1974"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:zoetmulder-1983",
+    "locator": "chapter list and chapters on the work",
+    "url": "https://archive.org/details/kalangwan-sastra-jawa-kuno-selayang-pandang-1983"
+   },
+   {
+    "source": "src:zoetmulder-1974"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:krsnayana-kakawin",
+  "type": "text",
+  "name": "Kṛṣṇāyana (Kakawin)",
+  "subtype": "kakawin",
+  "summary": "Mpu Triguṇa’s Old Javanese kakawin on Kṛṣṇa’s abduction of Rukmiṇī, written at the court of King Warsajaya (early 12th c.).",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "composition",
+    "start": 1100,
+    "end": 1200,
+    "label": "12th c.",
+    "certainty": "estimated",
+    "basis": "court and poet as identified by Zoetmulder",
+    "sources": [
+     {
+      "source": "src:zoetmulder-1974"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:zoetmulder-1983",
+    "locator": "chapter list and chapters on the work",
+    "url": "https://archive.org/details/kalangwan-sastra-jawa-kuno-selayang-pandang-1983"
+   },
+   {
+    "source": "src:zoetmulder-1974"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "person:mpu-triguna",
+  "type": "person",
+  "name": "Mpu Triguṇa",
+  "roles": [
+   "poet"
+  ],
+  "summary": "Old Javanese poet of King Warsajaya’s court (early 12th c.), author of the Kṛṣṇāyana kakawin.",
+  "dates": [
+   {
+    "system": "scholarly-textual",
+    "event": "floruit",
+    "start": 1100,
+    "end": 1130,
+    "label": "early 12th c.",
+    "certainty": "estimated",
+    "basis": "reign of Warsajaya",
+    "sources": [
+     {
+      "source": "src:zoetmulder-1974"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:zoetmulder-1983",
+    "locator": "chapter “Mpu Dharmaja, Mpu Monaguna dan Mpu Triguna”",
+    "url": "https://archive.org/details/kalangwan-sastra-jawa-kuno-selayang-pandang-1983"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "text:wirataparwa-old-javanese",
+  "type": "text",
+  "name": "Wirāṭaparwa (Old Javanese prose)",
+  "iast": "Wirāṭaparwa",
+  "subtype": "parwa (prose rendering)",
+  "summary": "The Old Javanese prose rendering of the Mahābhārata’s Virāṭaparvan, made at the court of King Dharmawangsa Teguh; its epilogue records that it was recited before the king over a month, which Zoetmulder computes as 14 October–12 November 996 CE — one of the earliest dated works of Old Javanese literature.",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "first recitation before the king (epilogue)",
+    "start": 996,
+    "end": 996,
+    "label": "14 October – 12 November 996",
+    "certainty": "estimated",
+    "basis": "dates in the epilogue converted by Zoetmulder (who allows that the epilogue may have been added by another hand)",
+    "view": "Zoetmulder",
+    "sources": [
+     {
+      "source": "src:zoetmulder-1983",
+      "locator": "pp. 109–110",
+      "url": "https://archive.org/details/kalangwan-sastra-jawa-kuno-selayang-pandang-1983"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:zoetmulder-1983",
+    "locator": "pp. 109–110",
+    "url": "https://archive.org/details/kalangwan-sastra-jawa-kuno-selayang-pandang-1983"
+   },
+   {
+    "source": "src:zoetmulder-1974"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "trad:agama-hindu-dharma",
+  "type": "tradition",
+  "name": "Agama Hindu Dharma (Balinese Hinduism)",
+  "aliases": [
+   "Agama Hindu",
+   "Balinese Hinduism",
+   "Agama Tirtha"
+  ],
+  "subtype": "religion",
+  "traditions": [
+   "trad:shaiva"
+  ],
+  "summary": "The Hindu religion of Bali (and of Hindu communities elsewhere in Indonesia), joining temple-centred Śaiva and Buddhist priestly ritual inherited from Java with local ancestor and village temple cults. Under Indonesia’s state requirement of monotheism, Balinese reformers recast it around Sang Hyang Widhi Wasa as one supreme God and secured its recognition by the Ministry of Religion around 1958–59; the Parisada Hindu Dharma was founded as its council in 1959, and “Agama Hindu Bali” became the national “Agama Hindu” in the 1960s.",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "recognition by Indonesia’s Ministry of Religion",
+    "start": 1958,
+    "end": 1962,
+    "label": "c. 1958–1962",
+    "certainty": "estimated",
+    "basis": "Picard’s history of the recognition campaign",
+    "view": "Picard",
+    "sources": [
+     {
+      "source": "src:picard-2011"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Balinese_Hinduism"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:picard-2011"
+   },
+   {
+    "source": "src:ramstedt-2004"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Balinese_Hinduism"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "limits": "The dates of recognition and renaming are summarised from Picard’s title and reference works; the ministerial decrees were not consulted.",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "inst:parisada-hindu-dharma",
+  "type": "institution",
+  "name": "Parisada Hindu Dharma Indonesia",
+  "aliases": [
+   "PHDI",
+   "Parisada Dharma Hindu Bali"
+  ],
+  "subtype": "religious council",
+  "summary": "The council of Indonesian Hindus, founded in Bali in 1959 as Parisada Dharma Hindu Bali and later renamed for the whole country, which standardises doctrine and represents Hinduism to the state.",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "foundation",
+    "start": 1959,
+    "end": 1959,
+    "label": "1959",
+    "certainty": "estimated",
+    "basis": "institutional history",
+    "sources": [
+     {
+      "source": "src:ramstedt-2004"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:picard-2011"
+   },
+   {
+    "source": "src:ramstedt-2004"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "regional"
+ },
+ {
+  "id": "text:maharadia-lawana",
+  "type": "text",
+  "name": "Maharadia Lawana (Maranao)",
+  "iast": "Maharadia Lawana",
+  "subtype": "folk epic (Maranao)",
+  "summary": "A Maranao story from Mindanao (Philippines) in which the hero is Maharadia Lawana — Rāvaṇa — a prince banished for mischief who wins immortality, abducts the wife of Radia Mangandiri (Rāma), and is defeated with the help of Mangandiri’s brother Laksamana, who in this telling is born a monkey; recorded and published by Juan R. Francisco in 1969 as a localised, Islamised descendant of the Rāma story.",
+  "dates": [
+   {
+    "system": "reception",
+    "event": "recording and publication by Francisco",
+    "start": 1968,
+    "end": 1969,
+    "label": "collected 1968, published 1969",
+    "certainty": "estimated",
+    "basis": "publication history",
+    "sources": [
+     {
+      "source": "src:francisco-1969"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "source": "src:francisco-1969"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Maharadia_Lawana"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "regional",
+  "limits": "Plot details are from secondary summaries and await a check of Francisco’s text; the route of transmission (via Malay Hikayat Seri Rama) is a scholarly inference."
  }
 ]

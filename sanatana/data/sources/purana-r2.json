@@ -1,5 +1,18 @@
 [
  {
+  "id": "src:sa-wikisource",
+  "type": "primary-text",
+  "title": "Sanskrit Wikisource (विकिस्रोतः): Purāṇa e-texts (Śiva Purāṇa Rudrasaṃhitā and others)",
+  "author": "Wikisource contributors",
+  "year": "ongoing",
+  "publisher": "Wikimedia Foundation",
+  "url": "https://sa.wikisource.org/",
+  "urlChecked": true,
+  "license": "public-domain texts; transcription CC BY-SA",
+  "notes": "Transcriptions of printed vulgate editions (edition usually not stated on the page). Used for chapter and verse checks where GRETIL has no e-text; locators follow the page's own verse numbers.",
+  "agent": "purana"
+ },
+ {
   "id": "src:hawley-1983",
   "type": "scholarly-book",
   "title": "Krishna, the Butter Thief",
@@ -18,12 +31,48 @@
   "agent": "purana"
  },
  {
+  "id": "src:winternitz-1898",
+  "type": "journal-article",
+  "title": "Gaṇeśa in the Mahābhārata",
+  "author": "M. Winternitz",
+  "year": "1898",
+  "publisher": "Journal of the Royal Asiatic Society (1898), pp. 380–384",
+  "agent": "purana"
+ },
+ {
+  "id": "src:sukthankar-1933",
+  "type": "primary-text",
+  "title": "Prolegomena to the Ādiparvan (The Mahābhārata: For the First Time Critically Edited, vol. 1)",
+  "author": "V. S. Sukthankar",
+  "year": "1933",
+  "publisher": "Bhandarkar Oriental Research Institute, Poona",
+  "agent": "purana"
+ },
+ {
   "id": "src:sohnen-schreiner-1989",
   "type": "scholarly-book",
   "title": "Brahmapurāṇa: Summary of Contents, with Index of Names and Motifs (Purāṇa Research Publications Tübingen 2)",
   "author": "Renate Söhnen and Peter Schreiner",
   "year": "1989",
   "publisher": "Otto Harrassowitz, Wiesbaden",
+  "agent": "purana"
+ },
+ {
+  "id": "src:rocher-1991-ganesha",
+  "type": "scholarly-book",
+  "title": "Gaṇeśa's Rise to Prominence in Sanskrit Literature (in R. L. Brown, ed., Ganesh: Studies of an Asian God, pp. 69–88)",
+  "author": "Ludo Rocher",
+  "year": "1991",
+  "publisher": "State University of New York Press, Albany",
+  "agent": "purana"
+ },
+ {
+  "id": "src:krishan-1999",
+  "type": "scholarly-book",
+  "title": "Gaṇeśa: Unravelling an Enigma",
+  "author": "Yuvraj Krishan",
+  "year": "1999",
+  "publisher": "Motilal Banarsidass, Delhi",
   "agent": "purana"
  }
 ]

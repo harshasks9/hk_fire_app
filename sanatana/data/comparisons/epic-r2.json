@@ -1,1 +1,460 @@
-[]
+[
+ {
+  "id": "cmp:sita-fate-uttararamacarita",
+  "title": "Sītā’s fate after the banishment: Vālmīki, Kālidāsa, Bhavabhūti",
+  "subject": "narr:sita-banishment",
+  "question": "What finally becomes of Sītā after Rāma banishes her?",
+  "rows": [
+   {
+    "text": "text:valmiki-ramayana",
+    "locator": "VR (CE) 7.88.10–14",
+    "statement": "At Rāma’s horse sacrifice Sītā swears that she has never thought of anyone but Rāma and asks the goddess Earth (Mādhavī) to open for her; the Earth rises on a throne, takes her in her arms and she enters the netherworld. There is no reunion.",
+    "sources": [
+     {
+      "source": "src:gretil-vr-ce",
+      "locator": "VR (CE) 7.88.10",
+      "edition": "Baroda Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt",
+      "quote": "tathā me mādhavī devī vivaraṃ dātum arhati"
+     },
+     {
+      "source": "src:gretil-vr-ce",
+      "locator": "VR (CE) 7.88.14",
+      "edition": "Baroda Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt",
+      "quote": "praviśantīṃ rasātalam"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:raghuvamsha",
+    "locator": "Raghuvaṃśa 15.81–85",
+    "statement": "Kālidāsa follows Vālmīki: Sītā calls on the Earth, the Earth appears seated on a throne raised by serpents’ hoods and carries her down; Vasiṣṭha calms Rāma’s anger.",
+    "sources": [
+     {
+      "source": "src:gretil-raghuvamsha",
+      "locator": "Raghuvaṃśa 15.81–85",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-raghuvaMza.txt",
+      "quote": "sā sītām aṅkam āropya bhartari prahitekṣaṇām"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:uttararamacarita",
+    "locator": "act 7",
+    "statement": "Bhavabhūti reverses the ending: in act 7 a play staged by Vālmīki shows Sītā rescued by Gaṅgā and the Earth; the real Sītā is then restored to Rāma before the people, who accept her, and the family is reunited with Lava and Kuśa.",
+    "sources": [
+     {
+      "source": "src:pollock-2007-uttararamacarita"
+     },
+     {
+      "source": "src:wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Uttararamacarita"
+     }
+    ],
+    "status": "reference-checked"
+   },
+   {
+    "text": "text:kundamala",
+    "locator": "act 6",
+    "statement": "The Kundamālā also ends with Sītā’s vindication and reunion with Rāma rather than her disappearance into the earth.",
+    "sources": [
+     {
+      "source": "src:raghavan-1961"
+     }
+    ],
+    "status": "recall"
+   }
+  ],
+  "note": "Kālidāsa keeps Vālmīki’s tragic close; the dramatists, bound by the convention that a nāṭaka should end happily, substitute reunion. VR (CE) 7.89.4 adds that Rāma took no other wife and used a golden image of Sītā at his sacrifices.",
+  "agent": "epic"
+ },
+ {
+  "id": "cmp:shakuntala-ring-curse",
+  "title": "Why Duḥṣanta rejects Śakuntalā: Mahābhārata vs Kālidāsa",
+  "subject": "narr:shakuntala-dushyanta",
+  "question": "Why does the king reject Śakuntalā at court, and how is she finally recognised?",
+  "rows": [
+   {
+    "text": "text:mahabharata",
+    "locator": "MBh (CE) 1.68.19; 1.69.28–41",
+    "statement": "The king remembers her but denies it (“I do not remember any bond with you”); after a long exchange a bodiless voice from the sky declares the boy his son, and Duḥṣanta explains that he had feigned ignorance so that the people would not doubt the child’s legitimacy. There is no curse and no ring.",
+    "sources": [
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 1.68.19",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm",
+      "quote": "na smarāmi tvayā saha"
+     },
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 1.69.28–29",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm",
+      "quote": "bhastrā mātā pituḥ putro"
+     },
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 1.69.36",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_01_u.htm",
+      "quote": "bhaved dhi śaṅkā lokasya naivaṃ śuddho bhaved ayam"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:abhijnanashakuntalam",
+    "locator": "acts 4–7",
+    "statement": "The sage Durvāsas, slighted by the distracted Śakuntalā, curses her to be forgotten until the king sees a token; the signet ring slips from her finger, so the cursed king genuinely does not know her. A fisherman finds the ring, memory returns, and Mārīca explains the curse at the reunion.",
+    "sources": [
+     {
+      "source": "src:gretil-abhijnanashakuntala",
+      "locator": "Abhijñānaśākuntala 4.1a",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-abhijJAnazakuntala.txt",
+      "quote": "eṣa durvāsāḥ sulabhakopo maharṣiḥ"
+     },
+     {
+      "source": "src:gretil-abhijnanashakuntala",
+      "locator": "Abhijñānaśākuntala 5.21a6",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-abhijJAnazakuntala.txt",
+      "quote": "aṅgulīyakaśūnyā me 'ṅguliḥ"
+     },
+     {
+      "source": "src:gretil-abhijnanashakuntala",
+      "locator": "Abhijñānaśākuntala 7.31a",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kAlidAsa-abhijJAnazakuntala.txt",
+      "quote": "durvāsasaḥ śāpād iyaṃ tapasvinī"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "note": "Kālidāsa’s two additions — the curse and the recognition-token that gives the play its title — exonerate the king, whom the epic shows knowingly denying his wife for reasons of state.",
+  "agent": "epic"
+ },
+ {
+  "id": "cmp:duryodhana-death-urubhanga",
+  "title": "The death of Duryodhana: Mahābhārata, Bhāsa, Bhaṭṭa Nārāyaṇa",
+  "subject": "narr:duryodhana-thighs",
+  "question": "How and in what spirit does Duryodhana die after Bhīma breaks his thighs?",
+  "rows": [
+   {
+    "text": "text:mahabharata",
+    "locator": "MBh (CE) 9.57–59; 10.9.53–55",
+    "statement": "Bhīma, prompted by Kṛṣṇa and Arjuna, strikes Duryodhana’s thighs against the rules of mace fighting; Balarāma protests. Duryodhana lies dying through the night; when Aśvatthāman reports the slaughter of the sleeping Pāṇḍava camp he exults that this was more than Bhīṣma or Karṇa did for him, feels equal to Indra, and dies.",
+    "sources": [
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 9.57.43",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_09_u.htm",
+      "quote": "ūrubhyāṃ prāhiṇod rājan gadāṃ vegena pāṇḍavaḥ"
+     },
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 9.59.4",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_09_u.htm",
+      "quote": "dhig dhig bhīmety uvāca ha"
+     },
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 10.9.54",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_10_u.htm",
+      "quote": "manye maghavatā samam ātmānam adya vai"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:urubhanga",
+    "locator": "Würzburg e-text v. 24–66",
+    "statement": "Duryodhana dies on stage before the night raid: he restrains the furious Baladeva, tells his son Durjaya to serve the Pāṇḍavas, obey Kuntī and honour Draupadī and Subhadrā as mothers, sees Śantanu, Karṇa, his brothers, Abhimanyu and the apsarases, and departs in a celestial chariot; Aśvatthāman then leaves to attack the camp.",
+    "sources": [
+     {
+      "source": "src:bhasa-project-wuerzburg",
+      "locator": "Ūrubhaṅga, seg. 52.5–52.6",
+      "url": "https://www.bhasa.indologie.uni-wuerzburg.de/UBh.html",
+      "quote": "aham iva pāṇḍavāḥ śuśrūṣayitavyāḥ"
+     },
+     {
+      "source": "src:bhasa-project-wuerzburg",
+      "locator": "Ūrubhaṅga, seg. 65.3–65.11",
+      "url": "https://www.bhasa.indologie.uni-wuerzburg.de/UBh.html",
+      "quote": "eṣa sahasra-haṃsa-prayukto māṃ netuṃ vīra-vāhī vimānaḥ"
+     },
+     {
+      "source": "src:bhasa-project-wuerzburg",
+      "locator": "Ūrubhaṅga, v. 66",
+      "url": "https://www.bhasa.indologie.uni-wuerzburg.de/UBh.html",
+      "quote": "yāto 'dya sauptikavadhodyatabāṇapāṇiḥ"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:venisamhara",
+    "locator": "act 6",
+    "statement": "Duryodhana is killed off stage; Bhīma enters with hands smeared with his blood and binds Draupadī’s braid, fulfilling his vow, and Yudhiṣṭhira is consecrated.",
+    "sources": [
+     {
+      "source": "src:gretil-venisamhara",
+      "locator": "Veṇīsaṃhāra 6.40",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhaTTanArAyaNa-veNIsaMhAra.txt",
+      "quote": "madgadācūrṇitoro-"
+     },
+     {
+      "source": "src:gretil-venisamhara",
+      "locator": "Veṇīsaṃhāra 6.42",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhaTTanArAyaNa-veNIsaMhAra.txt",
+      "quote": "so 'yaṃ baddhaḥ"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "note": "The Ūrubhaṅga is the classic exception to the rule that a hero may not die on the Sanskrit stage; its repentant, reconciling Duryodhana inverts the epic’s exultant one. The order of events also changes: in the epic he outlives the night raid, in the play he dies before it.",
+  "agent": "epic"
+ },
+ {
+  "id": "cmp:kiratarjuniya-vs-mbh",
+  "title": "Arjuna and Śiva the hunter: Mahābhārata 3.38–41 vs Bhāravi’s Kirātārjunīya",
+  "subject": "narr:kirata-arjuna",
+  "question": "How does Arjuna come to fight Śiva and obtain the Pāśupata weapon?",
+  "rows": [
+   {
+    "text": "text:mahabharata",
+    "locator": "MBh (CE) 3.38.30–3.42",
+    "statement": "Sent by Yudhiṣṭhira, Arjuna reaches Indrakīla, where Indra, disguised as an ascetic, tests him and promises weapons once he has seen Śiva. Śiva comes as a kirāta with Umā, his goblins and women; Arjuna and the hunter shoot the boar-demon Mūka together, quarrel and fight until Śiva crushes Arjuna senseless, then reveals himself and gives the Pāśupata (brahmaśiras) weapon; the world-guardians add theirs.",
+    "sources": [
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 3.38.36",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm",
+      "quote": "śakro 'ham arisūdana"
+     },
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 3.40.7",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm",
+      "quote": "mūkaṃ nāma diteḥ putraṃ"
+     },
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 3.40.51",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm",
+      "quote": "tataḥ papāta saṃmūḍhas tataḥ prīto 'bhavad bhavaḥ"
+     },
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 3.41.13",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm",
+      "quote": "dadāni te 'straṃ dayitam ahaṃ pāśupataṃ mahat"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:kiratarjuniya",
+    "locator": "cantos 1–18",
+    "statement": "Bhāravi adds the political frame — the spy’s report and the speeches of Draupadī and Bhīma urging war, and Vyāsa’s counsel (cantos 1–3) — and long descriptive cantos. Celestial nymphs try to seduce the ascetic (7–10); Indra’s visit comes after this, not on arrival (11). Śiva leads a whole kirāta army of his gaṇas (12), the boar is an unnamed demon (12.37), and the fight becomes a battle of armies and magical weapons (14–17) ending in wrestling (18) before Śiva grants the weapon (18.44).",
+    "sources": [
+     {
+      "source": "src:gretil-kiratarjuniya",
+      "locator": "Kirātārjunīya 1.27",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAravi-kirAtArjunIya.txt",
+      "quote": "udājahāra drupadātmajā giraḥ"
+     },
+     {
+      "source": "src:gretil-kiratarjuniya",
+      "locator": "Kirātārjunīya 11.1",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAravi-kirAtArjunIya.txt",
+      "quote": "pratītaḥ pākaśāsanaḥ"
+     },
+     {
+      "source": "src:gretil-kiratarjuniya",
+      "locator": "Kirātārjunīya 12.42",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAravi-kirAtArjunIya.txt",
+      "quote": "kirātapṛtanāpatiḥ śivaḥ"
+     },
+     {
+      "source": "src:gretil-kiratarjuniya",
+      "locator": "Kirātārjunīya 18.44",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAravi-kirAtArjunIya.txt",
+      "quote": "raudram astraṃ dadhānaṃ"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "note": "The epic’s two chapters become eighteen cantos; the expansion is mainly rhetorical and descriptive, but the sequence (Indra’s test) and the scale of Śiva’s following also change.",
+  "agent": "epic"
+ },
+ {
+  "id": "cmp:paulastya-genealogy",
+  "title": "The family of Viśravas: Vālmīki vs the Mahābhārata",
+  "subject": "lin:paulastya",
+  "question": "Who is Kubera’s father, and who are the mothers of Rāvaṇa and his siblings?",
+  "rows": [
+   {
+    "text": "text:valmiki-ramayana",
+    "locator": "VR (CE) 7.3; 7.9",
+    "statement": "Viśravas is Pulastya’s son; Kubera (Vaiśravaṇa) is Viśravas’s son by Bharadvāja’s daughter. Rāvaṇa, Kumbhakarṇa, Śūrpaṇakhā and Vibhīṣaṇa are all children of Viśravas by Kaikasī, daughter of the rākṣasa Sumālin.",
+    "sources": [
+     {
+      "source": "src:gretil-vr-ce",
+      "locator": "VR (CE) 7.3.1",
+      "edition": "Baroda Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt",
+      "quote": "atha putraḥ pulastyasya viśravā munipuṃgavaḥ"
+     },
+     {
+      "source": "src:gretil-vr-ce",
+      "locator": "VR (CE) 7.3.7",
+      "edition": "Baroda Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"
+     },
+     {
+      "source": "src:gretil-vr-ce",
+      "locator": "VR (CE) 7.9.26–27",
+      "edition": "Baroda Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt",
+      "quote": "tataḥ śūrpaṇakhā nāma saṃjajñe vikṛtānanā"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:mahabharata",
+    "locator": "MBh (CE) 3.258.11–3.259.8",
+    "statement": "Kubera (Vaiśravaṇa) is Pulastya’s own son; Viśravas is produced from half of Pulastya’s body out of anger at Kubera. Kubera gives his father three rākṣasīs: Puṣpotkaṭā bears Rāvaṇa and Kumbhakarṇa, Mālinī bears Vibhīṣaṇa, Rākā bears the twins Khara and Śūrpaṇakhā.",
+    "sources": [
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 3.258.12",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm",
+      "quote": "tasya vaiśravaṇo nāma gavi putro 'bhavat prabhuḥ"
+     },
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 3.259.7",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm",
+      "quote": "kumbhakarṇadaśagrīvau"
+     },
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 3.259.8",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm",
+      "quote": "mālinī janayām āsa putram ekaṃ vibhīṣaṇam"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "note": "Both texts make all of them Paulastyas (see the restored MEMBER_OF assertions epic:342–348), but they disagree on Kubera’s generation and on the mothers.",
+  "agent": "epic"
+ },
+ {
+  "id": "cmp:karna-armour-gift",
+  "title": "Karṇa’s gift of his armour: Mahābhārata vs Bhāsa’s Karṇabhāra",
+  "subject": "narr:karna-armour-gift",
+  "question": "When and on what terms does Karṇa give his armour and earrings to Indra?",
+  "rows": [
+   {
+    "text": "text:mahabharata",
+    "locator": "MBh (CE) 3.284–294",
+    "statement": "During the Pāṇḍavas’ exile, warned in a dream by the Sun, Karṇa nonetheless gives Indra (disguised as a brahmin) his armour and earrings, but first bargains for Indra’s unfailing spear, usable once; he flays them from his body.",
+    "sources": [
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 3.294.21",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm",
+      "quote": "śaktiṃ me dehi vāsava amoghāṃ"
+     },
+     {
+      "source": "src:gretil-mbh-ce",
+      "locator": "MBh (CE) 3.294.38",
+      "edition": "BORI Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_03_u.htm",
+      "quote": "tataś chittvā kavacaṃ divyam aṅgāt"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:karnabhara",
+    "locator": "Würzburg e-text v. 21–seg. 23.5",
+    "statement": "On the battlefield, about to fight with Śalya as his charioteer, Karṇa gives the brahmin-disguised Indra his armour and earrings unasked for anything; afterwards a divine messenger brings the spear Vimalā from the remorseful Indra, which Karṇa at first refuses.",
+    "sources": [
+     {
+      "source": "src:bhasa-project-wuerzburg",
+      "locator": "Karṇabhāra, v. 21",
+      "url": "https://www.bhasa.indologie.uni-wuerzburg.de/KBh.html",
+      "quote": "deyaṃ tathā^pi kavacaṃ saha kuṇḍalābhyāṃ"
+     },
+     {
+      "source": "src:bhasa-project-wuerzburg",
+      "locator": "Karṇabhāra, seg. 23.2–23.4",
+      "url": "https://www.bhasa.indologie.uni-wuerzburg.de/KBh.html",
+      "quote": "vimalā nāma śaktir iyaṃ gṛhyatām"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "note": "Bhāsa moves the episode from the exile to the eve of Karṇa’s last battle and removes the bargain, turning it into pure generosity.",
+  "agent": "epic"
+ },
+ {
+  "id": "cmp:bharata-learns-father-death",
+  "title": "How Bharata learns of Daśaratha’s death: Vālmīki vs Bhāsa",
+  "subject": "char:bharata-ramayana",
+  "question": "How does Bharata learn that his father has died?",
+  "rows": [
+   {
+    "text": "text:valmiki-ramayana",
+    "locator": "VR (CE) 2.66.14–29",
+    "statement": "Summoned home from his uncle’s, Bharata finds the palace empty; Kaikeyī tells him that his father “has gone the way of all beings”, and that Rāma is exiled.",
+    "sources": [
+     {
+      "source": "src:gretil-vr-ce",
+      "locator": "VR (CE) 2.66.14",
+      "edition": "Baroda Critical Edition (GRETIL e-text)",
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt",
+      "quote": "yā gatiḥ sarvabhūtānāṃ tāṃ gatiṃ te pitā gataḥ"
+     }
+    ],
+    "status": "verified-online"
+   },
+   {
+    "text": "text:pratimanataka",
+    "locator": "act 3",
+    "statement": "Returning, Bharata stops at the statue-house of the dead Ikṣvāku kings outside Ayodhyā and, seeing a new statue of Daśaratha among them, realises that his father is dead.",
+    "sources": [
+     {
+      "source": "src:bhasa-project-wuerzburg",
+      "locator": "Pratimānāṭaka act 3, seg. 0.21b",
+      "url": "https://www.bhasa.indologie.uni-wuerzburg.de/PN_3.html",
+      "quote": "svargaṃ gatasya bhartur daśarathasya pratimā-gehaṃ"
+     }
+    ],
+    "status": "verified-online"
+   }
+  ],
+  "note": "The statue-house scene is the invention that gives the Pratimānāṭaka its name.",
+  "agent": "epic"
+ }
+]

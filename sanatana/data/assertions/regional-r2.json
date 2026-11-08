@@ -959,12 +959,12 @@
  {
   "id": "regional:r2-49",
   "s": "trad:navaratri",
-  "p": "MENTIONED_IN",
+  "p": "ASSOCIATED_WITH",
   "o": "text:devi-bhagavata-purana",
   "qualifiers": {
    "note": "the Devī Bhāgavata also prescribes the autumn Navarātra vrata (locator not checked)"
   },
-  "evidenceClass": 1,
+  "evidenceClass": 6,
   "sources": [
    {
     "source": "src:wikipedia",
@@ -3312,5 +3312,5345 @@
   "status": "verified-online",
   "agent": "regional",
   "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-170",
+  "s": "trad:sant",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:vaishnava",
+  "qualifiers": {
+   "note": "the Sants share the names Rām/Hari with Vaiṣṇava bhakti but reject avatāra-centred image worship"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:schomer-mcleod-1987"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-171",
+  "s": "person:ramananda",
+  "p": "CENTRAL_TO",
+  "o": "trad:ramanandi",
+  "qualifiers": {
+   "note": "traditional founder"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ramananda"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-172",
+  "s": "person:ramananda",
+  "p": "TEACHER_OF",
+  "o": "person:kabir",
+  "qualifiers": {
+   "tradition": "Rāmānandī and Kabīr Panth hagiography"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:vaudeville-1974"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kabir"
+   }
+  ],
+  "confidence": "low",
+  "status": "disputed",
+  "competing": "Vaudeville and others doubt any historical discipleship; the link is first asserted in sixteenth–seventeenth-century hagiography.",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-173",
+  "s": "person:kabir",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:kashi",
+  "qualifiers": {
+   "note": "lived as a weaver in Vārāṇasī; tradition places his death at Magahar"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:vaudeville-1974"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kabir"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-174",
+  "s": "person:kabir",
+  "p": "CENTRAL_TO",
+  "o": "trad:kabir-panth",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kabir_panth"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-175",
+  "s": "trad:kabir-panth",
+  "p": "PART_OF",
+  "o": "trad:sant",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:schomer-mcleod-1987"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-176",
+  "s": "text:bijak",
+  "p": "ATTRIBUTED_TO",
+  "o": "person:kabir",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:hess-singh-1983"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bijak"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-177",
+  "s": "text:bijak",
+  "p": "CENTRAL_TO",
+  "o": "trad:kabir-panth",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kabir_panth"
+   },
+   {
+    "source": "src:hess-singh-1983"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-178",
+  "s": "text:bijak",
+  "p": "PART_OF",
+  "o": "col:bhakti-literature",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:hess-singh-1983"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-179",
+  "s": "text:kabir-granthavali",
+  "p": "ATTRIBUTED_TO",
+  "o": "person:kabir",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:vaudeville-1974"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-180",
+  "s": "person:ramananda",
+  "p": "TEACHER_OF",
+  "o": "person:ravidas",
+  "qualifiers": {
+   "tradition": "Rāmānandī hagiography (Bhaktamāl)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ravidas"
+   }
+  ],
+  "confidence": "low",
+  "status": "disputed",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-181",
+  "s": "person:ravidas",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:kashi",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:callewaert-friedlander-1992"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-182",
+  "s": "text:ravidas-padas",
+  "p": "ATTRIBUTED_TO",
+  "o": "person:ravidas",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:callewaert-friedlander-1992"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-183",
+  "s": "person:ravidas",
+  "p": "CENTRAL_TO",
+  "o": "trad:ravidassia",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ravidassia"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-184",
+  "s": "person:mirabai",
+  "p": "DEVOTEE_OF",
+  "o": "char:krishna",
+  "qualifiers": {
+   "note": "as Giridhar Gopāl, her bridegroom"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:hawley-2005"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-185",
+  "s": "person:ravidas",
+  "p": "TEACHER_OF",
+  "o": "person:mirabai",
+  "qualifiers": {
+   "tradition": "Rajasthani and Ravidassia tradition"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mirabai"
+   }
+  ],
+  "confidence": "low",
+  "status": "disputed",
+  "competing": "Chronologically doubtful; Mīrā’s songs naming Raidās as guru are of uncertain authorship.",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-186",
+  "s": "person:mirabai",
+  "p": "ASSOCIATED_WITH",
+  "o": "temple:dwarkadhish",
+  "qualifiers": {
+   "note": "legend that she merged into the image of Kṛṣṇa at Dvārakā"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mirabai"
+   }
+  ],
+  "confidence": "low",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-187",
+  "s": "person:mirabai",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:vrindavan",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mirabai"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-188",
+  "s": "text:mira-padavali",
+  "p": "ATTRIBUTED_TO",
+  "o": "person:mirabai",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:hawley-2005"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-189",
+  "s": "char:krishna",
+  "p": "APPEARS_IN",
+  "o": "text:mira-padavali",
+  "qualifiers": {
+   "role": "beloved / addressee"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:hawley-2005"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-190",
+  "s": "text:bhaktamal",
+  "p": "COMPOSED_BY",
+  "o": "person:nabhadas",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:hawley-2015"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-191",
+  "s": "text:bhaktamal",
+  "p": "PART_OF",
+  "o": "col:bhakti-literature",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:hawley-2015"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-192",
+  "s": "person:kabir",
+  "p": "MENTIONED_IN",
+  "o": "text:bhaktamal",
+  "qualifiers": {
+   "note": "given a stanza in Nābhādās’s garland (stanza numbers not checked)"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:hawley-2015"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bhaktamal"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-193",
+  "s": "person:ravidas",
+  "p": "MENTIONED_IN",
+  "o": "text:bhaktamal",
+  "qualifiers": {
+   "note": "given a stanza in Nābhādās’s garland (stanza numbers not checked)"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:hawley-2015"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bhaktamal"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-194",
+  "s": "person:mirabai",
+  "p": "MENTIONED_IN",
+  "o": "text:bhaktamal",
+  "qualifiers": {
+   "note": "given a stanza in Nābhādās’s garland (stanza numbers not checked)"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:hawley-2015"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bhaktamal"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-195",
+  "s": "person:surdas",
+  "p": "MENTIONED_IN",
+  "o": "text:bhaktamal",
+  "qualifiers": {
+   "note": "given a stanza in Nābhādās’s garland (stanza numbers not checked)"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:hawley-2015"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bhaktamal"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-196",
+  "s": "person:tulsidas",
+  "p": "MENTIONED_IN",
+  "o": "text:bhaktamal",
+  "qualifiers": {
+   "note": "given a stanza in Nābhādās’s garland (stanza numbers not checked)"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:hawley-2015"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bhaktamal"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-197",
+  "s": "person:namdev",
+  "p": "MENTIONED_IN",
+  "o": "text:bhaktamal",
+  "qualifiers": {
+   "note": "given a stanza in Nābhādās’s garland (stanza numbers not checked)"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:hawley-2015"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bhaktamal"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-198",
+  "s": "person:ramananda",
+  "p": "MENTIONED_IN",
+  "o": "text:bhaktamal",
+  "qualifiers": {
+   "note": "given a stanza in Nābhādās’s garland (stanza numbers not checked)"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:hawley-2015"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bhaktamal"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-199",
+  "s": "text:bhaktirasabodhini",
+  "p": "COMMENTARY_ON",
+  "o": "text:bhaktamal",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:hawley-2015"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-200",
+  "s": "text:bhaktirasabodhini",
+  "p": "COMPOSED_BY",
+  "o": "person:priyadas",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:hawley-2015"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-201",
+  "s": "text:vinaya-patrika",
+  "p": "ATTRIBUTED_TO",
+  "o": "person:tulsidas",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:mcgregor-1984"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tulsidas"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-202",
+  "s": "text:vinaya-patrika",
+  "p": "PART_OF",
+  "o": "col:bhakti-literature",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:mcgregor-1984"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-203",
+  "s": "text:kavitavali",
+  "p": "ATTRIBUTED_TO",
+  "o": "person:tulsidas",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:mcgregor-1984"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tulsidas"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-204",
+  "s": "text:kavitavali",
+  "p": "PART_OF",
+  "o": "col:bhakti-literature",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:mcgregor-1984"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-205",
+  "s": "text:gitavali",
+  "p": "ATTRIBUTED_TO",
+  "o": "person:tulsidas",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:mcgregor-1984"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tulsidas"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-206",
+  "s": "text:gitavali",
+  "p": "PART_OF",
+  "o": "col:bhakti-literature",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:mcgregor-1984"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-207",
+  "s": "text:hanuman-bahuk",
+  "p": "ATTRIBUTED_TO",
+  "o": "person:tulsidas",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:mcgregor-1984"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tulsidas"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-208",
+  "s": "text:hanuman-bahuk",
+  "p": "PART_OF",
+  "o": "col:bhakti-literature",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:mcgregor-1984"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-209",
+  "s": "char:rama",
+  "p": "APPEARS_IN",
+  "o": "text:vinaya-patrika",
+  "qualifiers": {
+   "role": "addressee"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Vinaya_Patrika"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-210",
+  "s": "char:hanuman",
+  "p": "APPEARS_IN",
+  "o": "text:hanuman-bahuk",
+  "qualifiers": {
+   "role": "addressee"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tulsidas"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-211",
+  "s": "text:kavitavali",
+  "p": "RETELLS",
+  "o": "text:valmiki-ramayana",
+  "qualifiers": {
+   "note": "a Rāma-story in seven kāṇḍas; dependence on the Mānas tradition rather than directly on Vālmīki"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:mcgregor-1984"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-212",
+  "s": "text:gitavali",
+  "p": "RETELLS",
+  "o": "text:valmiki-ramayana",
+  "qualifiers": {
+   "note": "a Rāma-story in seven kāṇḍas; dependence on the Mānas tradition rather than directly on Vālmīki"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:mcgregor-1984"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-213",
+  "s": "text:hanuman-chalisa",
+  "p": "CENTRAL_TO",
+  "o": "trad:vaishnava",
+  "qualifiers": {
+   "note": "among the most recited Hindu hymns; attribution to Tulsīdās rests on the signature and tradition (see regional:106, disputed)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Hanuman_Chalisa"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-214",
+  "s": "person:vallabha",
+  "p": "CENTRAL_TO",
+  "o": "trad:pushtimarg",
+  "qualifiers": {
+   "note": "founder"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-215",
+  "s": "person:vallabha",
+  "p": "PARENT_OF",
+  "o": "person:vitthalanatha",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Vitthalanatha"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-216",
+  "s": "trad:ashtachap",
+  "p": "PART_OF",
+  "o": "trad:pushtimarg",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-217",
+  "s": "person:vitthalanatha",
+  "p": "CENTRAL_TO",
+  "o": "trad:ashtachap",
+  "qualifiers": {
+   "note": "constituted the group"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Aṣṭachāp"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-218",
+  "s": "person:surdas",
+  "p": "MEMBER_OF",
+  "o": "trad:ashtachap",
+  "qualifiers": {
+   "tradition": "trad:pushtimarg"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Surdas"
+   }
+  ],
+  "confidence": "medium",
+  "status": "disputed",
+  "competing": "Hawley argues that the early Sūrsāgar shows no sectarian affiliation.",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-219",
+  "s": "trad:ashtachap",
+  "p": "ASSOCIATED_WITH",
+  "o": "temple:shrinathji-nathdwara",
+  "qualifiers": {
+   "note": "the Śrīnāthjī image, worshipped on Govardhana in the Aṣṭachāp’s time, moved to Nathdwara in 1672"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Aṣṭachāp"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-220",
+  "s": "person:kumbhandas",
+  "p": "MEMBER_OF",
+  "o": "trad:ashtachap",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Aṣṭachāp"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-221",
+  "s": "person:vallabha",
+  "p": "TEACHER_OF",
+  "o": "person:kumbhandas",
+  "qualifiers": {
+   "tradition": "trad:pushtimarg"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-222",
+  "s": "person:kumbhandas",
+  "p": "DEVOTEE_OF",
+  "o": "char:krishna",
+  "qualifiers": {
+   "note": "as Śrīnāthjī"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-223",
+  "s": "person:paramananddas",
+  "p": "MEMBER_OF",
+  "o": "trad:ashtachap",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Aṣṭachāp"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-224",
+  "s": "person:vallabha",
+  "p": "TEACHER_OF",
+  "o": "person:paramananddas",
+  "qualifiers": {
+   "tradition": "trad:pushtimarg"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-225",
+  "s": "person:paramananddas",
+  "p": "DEVOTEE_OF",
+  "o": "char:krishna",
+  "qualifiers": {
+   "note": "as Śrīnāthjī"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-226",
+  "s": "person:krishnadas-ashtachap",
+  "p": "MEMBER_OF",
+  "o": "trad:ashtachap",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Aṣṭachāp"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-227",
+  "s": "person:vallabha",
+  "p": "TEACHER_OF",
+  "o": "person:krishnadas-ashtachap",
+  "qualifiers": {
+   "tradition": "trad:pushtimarg"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-228",
+  "s": "person:krishnadas-ashtachap",
+  "p": "DEVOTEE_OF",
+  "o": "char:krishna",
+  "qualifiers": {
+   "note": "as Śrīnāthjī"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-229",
+  "s": "person:nanddas",
+  "p": "MEMBER_OF",
+  "o": "trad:ashtachap",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Aṣṭachāp"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-230",
+  "s": "person:vitthalanatha",
+  "p": "TEACHER_OF",
+  "o": "person:nanddas",
+  "qualifiers": {
+   "tradition": "trad:pushtimarg"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-231",
+  "s": "person:nanddas",
+  "p": "DEVOTEE_OF",
+  "o": "char:krishna",
+  "qualifiers": {
+   "note": "as Śrīnāthjī"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-232",
+  "s": "person:chitswami",
+  "p": "MEMBER_OF",
+  "o": "trad:ashtachap",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Aṣṭachāp"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-233",
+  "s": "person:vitthalanatha",
+  "p": "TEACHER_OF",
+  "o": "person:chitswami",
+  "qualifiers": {
+   "tradition": "trad:pushtimarg"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-234",
+  "s": "person:chitswami",
+  "p": "DEVOTEE_OF",
+  "o": "char:krishna",
+  "qualifiers": {
+   "note": "as Śrīnāthjī"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-235",
+  "s": "person:govindswami",
+  "p": "MEMBER_OF",
+  "o": "trad:ashtachap",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Aṣṭachāp"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-236",
+  "s": "person:vitthalanatha",
+  "p": "TEACHER_OF",
+  "o": "person:govindswami",
+  "qualifiers": {
+   "tradition": "trad:pushtimarg"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-237",
+  "s": "person:govindswami",
+  "p": "DEVOTEE_OF",
+  "o": "char:krishna",
+  "qualifiers": {
+   "note": "as Śrīnāthjī"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-238",
+  "s": "person:chaturbhujdas",
+  "p": "MEMBER_OF",
+  "o": "trad:ashtachap",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Aṣṭachāp"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-239",
+  "s": "person:vitthalanatha",
+  "p": "TEACHER_OF",
+  "o": "person:chaturbhujdas",
+  "qualifiers": {
+   "tradition": "trad:pushtimarg"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-240",
+  "s": "person:chaturbhujdas",
+  "p": "DEVOTEE_OF",
+  "o": "char:krishna",
+  "qualifiers": {
+   "note": "as Śrīnāthjī"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-241",
+  "s": "person:kumbhandas",
+  "p": "PARENT_OF",
+  "o": "person:chaturbhujdas",
+  "qualifiers": {
+   "tradition": "trad:pushtimarg"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-242",
+  "s": "person:surdas",
+  "p": "APPEARS_IN",
+  "o": "text:caurasi-vaishnavan-ki-varta",
+  "qualifiers": {
+   "role": "subject of a vārtā"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   },
+   {
+    "source": "src:hawley-1984"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-243",
+  "s": "person:kumbhandas",
+  "p": "APPEARS_IN",
+  "o": "text:caurasi-vaishnavan-ki-varta",
+  "qualifiers": {
+   "role": "subject of a vārtā"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   },
+   {
+    "source": "src:hawley-1984"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-244",
+  "s": "person:paramananddas",
+  "p": "APPEARS_IN",
+  "o": "text:caurasi-vaishnavan-ki-varta",
+  "qualifiers": {
+   "role": "subject of a vārtā"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   },
+   {
+    "source": "src:hawley-1984"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-245",
+  "s": "person:krishnadas-ashtachap",
+  "p": "APPEARS_IN",
+  "o": "text:caurasi-vaishnavan-ki-varta",
+  "qualifiers": {
+   "role": "subject of a vārtā"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   },
+   {
+    "source": "src:hawley-1984"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-246",
+  "s": "text:caurasi-vaishnavan-ki-varta",
+  "p": "CENTRAL_TO",
+  "o": "trad:pushtimarg",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:barz-1976"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-247",
+  "s": "person:rupa-goswami",
+  "p": "DEVOTEE_OF",
+  "o": "char:krishna",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:de-1961"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-248",
+  "s": "person:rupa-goswami",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:vrindavan",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:de-1961"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Six_Goswamis_of_Vrindavan"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-249",
+  "s": "person:rupa-goswami",
+  "p": "CENTRAL_TO",
+  "o": "trad:gaudiya",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:de-1961"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-250",
+  "s": "person:sanatana-goswami",
+  "p": "DEVOTEE_OF",
+  "o": "char:krishna",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:de-1961"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-251",
+  "s": "person:sanatana-goswami",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:vrindavan",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:de-1961"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Six_Goswamis_of_Vrindavan"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-252",
+  "s": "person:sanatana-goswami",
+  "p": "CENTRAL_TO",
+  "o": "trad:gaudiya",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:de-1961"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-253",
+  "s": "person:jiva-goswami",
+  "p": "DEVOTEE_OF",
+  "o": "char:krishna",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:de-1961"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-254",
+  "s": "person:jiva-goswami",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:vrindavan",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:de-1961"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Six_Goswamis_of_Vrindavan"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-255",
+  "s": "person:jiva-goswami",
+  "p": "CENTRAL_TO",
+  "o": "trad:gaudiya",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:de-1961"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-256",
+  "s": "person:gopala-bhatta-goswami",
+  "p": "DEVOTEE_OF",
+  "o": "char:krishna",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:de-1961"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-257",
+  "s": "person:gopala-bhatta-goswami",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:vrindavan",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:de-1961"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Six_Goswamis_of_Vrindavan"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-258",
+  "s": "person:gopala-bhatta-goswami",
+  "p": "CENTRAL_TO",
+  "o": "trad:gaudiya",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:de-1961"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-259",
+  "s": "person:raghunatha-bhatta-goswami",
+  "p": "DEVOTEE_OF",
+  "o": "char:krishna",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:de-1961"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-260",
+  "s": "person:raghunatha-bhatta-goswami",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:vrindavan",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:de-1961"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Six_Goswamis_of_Vrindavan"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-261",
+  "s": "person:raghunatha-bhatta-goswami",
+  "p": "CENTRAL_TO",
+  "o": "trad:gaudiya",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:de-1961"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-262",
+  "s": "person:raghunatha-dasa-goswami",
+  "p": "DEVOTEE_OF",
+  "o": "char:krishna",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:de-1961"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-263",
+  "s": "person:raghunatha-dasa-goswami",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:vrindavan",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:de-1961"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Six_Goswamis_of_Vrindavan"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-264",
+  "s": "person:raghunatha-dasa-goswami",
+  "p": "CENTRAL_TO",
+  "o": "trad:gaudiya",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:de-1961"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-265",
+  "s": "person:sanatana-goswami",
+  "p": "SIBLING_OF",
+  "o": "person:rupa-goswami",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:de-1961"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Sanatana_Goswami"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-266",
+  "s": "person:chaitanya",
+  "p": "TEACHER_OF",
+  "o": "person:rupa-goswami",
+  "qualifiers": {
+   "tradition": "trad:gaudiya",
+   "note": "instruction at Prayāga (Caitanya Caritāmṛta, Madhya-līlā)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:dimock-stewart-1999"
+   },
+   {
+    "source": "src:de-1961"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-267",
+  "s": "person:chaitanya",
+  "p": "TEACHER_OF",
+  "o": "person:sanatana-goswami",
+  "qualifiers": {
+   "tradition": "trad:gaudiya",
+   "note": "instruction at Vārāṇasī (Caitanya Caritāmṛta, Madhya-līlā)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:dimock-stewart-1999"
+   },
+   {
+    "source": "src:de-1961"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-268",
+  "s": "person:rupa-goswami",
+  "p": "TEACHER_OF",
+  "o": "person:jiva-goswami",
+  "qualifiers": {
+   "tradition": "trad:gaudiya"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:de-1961"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Jiva_Goswami"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-269",
+  "s": "person:rupa-goswami",
+  "p": "TEACHER_OF",
+  "o": "person:krishnadasa-kaviraja",
+  "qualifiers": {
+   "tradition": "trad:gaudiya",
+   "note": "the Caritāmṛta’s chapter colophons invoke the feet of Rūpa and Raghunātha"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:dimock-stewart-1999"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-270",
+  "s": "person:raghunatha-dasa-goswami",
+  "p": "TEACHER_OF",
+  "o": "person:krishnadasa-kaviraja",
+  "qualifiers": {
+   "tradition": "trad:gaudiya"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:dimock-stewart-1999"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-271",
+  "s": "col:six-goswamis-corpus",
+  "p": "PART_OF",
+  "o": "col:bhakti-literature",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:de-1961"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-272",
+  "s": "text:bhaktirasamrtasindhu",
+  "p": "COMPOSED_BY",
+  "o": "person:rupa-goswami",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "closing verse (“kṣudra-rūpeṇa”, a self-reference by Rūpa)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rUpagosvAmin-haribhaktirasAmRtasindhu.txt"
+   },
+   {
+    "source": "src:haberman-2003"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-273",
+  "s": "text:bhaktirasamrtasindhu",
+  "p": "PART_OF",
+  "o": "col:six-goswamis-corpus",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:haberman-2003"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-274",
+  "s": "text:bhaktirasamrtasindhu",
+  "p": "CENTRAL_TO",
+  "o": "trad:gaudiya",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:haberman-2003"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-275",
+  "s": "text:bhaktirasamrtasindhu",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:vrindavan",
+  "qualifiers": {
+   "note": "composed while dwelling in Gokula (Braj)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "closing verse: “gokulam adhiṣṭhitena”",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rUpagosvAmin-haribhaktirasAmRtasindhu.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-276",
+  "s": "text:ujjvalanilamani",
+  "p": "ATTRIBUTED_TO",
+  "o": "person:rupa-goswami",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:de-1961"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-277",
+  "s": "char:radha",
+  "p": "APPEARS_IN",
+  "o": "text:ujjvalanilamani",
+  "qualifiers": {
+   "role": "chief of Kṛṣṇa’s eternal beloveds"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "“rādhā-candrāvalī-mukhyāḥ … nitya-priyā vraje”",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rUpagosvAmin-ujjvalanIlamaNi.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-278",
+  "s": "text:ujjvalanilamani",
+  "p": "PART_OF",
+  "o": "col:six-goswamis-corpus",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:de-1961"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-279",
+  "s": "text:haribhaktivilasa",
+  "p": "ATTRIBUTED_TO",
+  "o": "person:gopala-bhatta-goswami",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:de-1961"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "competing": "Some attribute it substantially to Sanātana.",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-280",
+  "s": "text:haribhaktivilasa",
+  "p": "PART_OF",
+  "o": "col:six-goswamis-corpus",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:de-1961"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-281",
+  "s": "text:sat-sandarbha",
+  "p": "COMPOSED_BY",
+  "o": "person:jiva-goswami",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:de-1961"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-282",
+  "s": "text:sat-sandarbha",
+  "p": "COMMENTARY_ON",
+  "o": "text:bhagavata-purana",
+  "qualifiers": {
+   "note": "a systematic exposition grounded in the Bhāgavata rather than a running commentary"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:de-1961"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-283",
+  "s": "text:sat-sandarbha",
+  "p": "PART_OF",
+  "o": "col:six-goswamis-corpus",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:de-1961"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-284",
+  "s": "text:chaitanya-bhagavata",
+  "p": "COMPOSED_BY",
+  "o": "person:vrindavana-dasa",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:de-1961"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-285",
+  "s": "person:chaitanya",
+  "p": "APPEARS_IN",
+  "o": "text:chaitanya-bhagavata",
+  "qualifiers": {
+   "role": "protagonist"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:de-1961"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-286",
+  "s": "text:chaitanya-charitamrita",
+  "p": "DERIVED_FROM",
+  "o": "text:chaitanya-bhagavata",
+  "qualifiers": {
+   "note": "Kṛṣṇadāsa defers to Vṛndāvana Dāsa for the early life and concentrates on the later years"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:dimock-stewart-1999"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-287",
+  "s": "text:shikshashtaka",
+  "p": "ATTRIBUTED_TO",
+  "o": "person:chaitanya",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Shikshashtakam"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-288",
+  "s": "text:shikshashtaka",
+  "p": "PART_OF",
+  "o": "text:chaitanya-charitamrita",
+  "qualifiers": {
+   "note": "quoted in Antya-līlā 20"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:dimock-stewart-1999"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Shikshashtakam"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-289",
+  "s": "col:shakta-padavali",
+  "p": "PART_OF",
+  "o": "col:bhakti-literature",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:mcdermott-2001"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-290",
+  "s": "deity:kali",
+  "p": "APPEARS_IN",
+  "o": "col:shakta-padavali",
+  "qualifiers": {
+   "role": "addressee (mother)"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:mcdermott-2001"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-291",
+  "s": "col:shakta-padavali",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:durga-puja",
+  "qualifiers": {
+   "note": "Āgamanī and Bijayā songs of Umā’s coming home and leaving"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:mcdermott-2001"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-292",
+  "s": "person:ramprasad-sen",
+  "p": "DEVOTEE_OF",
+  "o": "deity:kali",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:mcdermott-2001"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-293",
+  "s": "person:kamalakanta-bhattacharya",
+  "p": "DEVOTEE_OF",
+  "o": "deity:kali",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:mcdermott-2001"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-294",
+  "s": "col:shakta-padavali",
+  "p": "ATTRIBUTED_TO",
+  "o": "person:ramprasad-sen",
+  "qualifiers": {
+   "note": "a principal poet of the corpus"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:mcdermott-2001"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-295",
+  "s": "col:shakta-padavali",
+  "p": "ATTRIBUTED_TO",
+  "o": "person:kamalakanta-bhattacharya",
+  "qualifiers": {
+   "note": "a principal poet of the corpus"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:mcdermott-2001"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-296",
+  "s": "person:baru-chandidas",
+  "p": "DEVOTEE_OF",
+  "o": "char:krishna",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:klaiman-1984"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-297",
+  "s": "text:srikrishnakirtan",
+  "p": "ATTRIBUTED_TO",
+  "o": "person:baru-chandidas",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:klaiman-1984"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-298",
+  "s": "char:radha",
+  "p": "APPEARS_IN",
+  "o": "text:srikrishnakirtan",
+  "qualifiers": {
+   "role": "heroine"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:klaiman-1984"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-299",
+  "s": "char:krishna",
+  "p": "APPEARS_IN",
+  "o": "text:srikrishnakirtan",
+  "qualifiers": {
+   "role": "hero"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:klaiman-1984"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-300",
+  "s": "text:srikrishnakirtan",
+  "p": "DERIVED_FROM",
+  "o": "text:gita-govinda",
+  "qualifiers": {
+   "note": "draws on the Gītagovinda’s Rādhā–Kṛṣṇa erotics alongside folk motifs (the dāna-khaṇḍa toll episode)"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:klaiman-1984"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-301",
+  "s": "person:vidyapati",
+  "p": "DEVOTEE_OF",
+  "o": "deity:shiva",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Vidyapati"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-302",
+  "s": "person:vidyapati",
+  "p": "DEVOTEE_OF",
+  "o": "char:krishna",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:dimock-levertov-1967"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-303",
+  "s": "person:vidyapati",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:mithila",
+  "qualifiers": {
+   "note": "poet of the Maithili court"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Vidyapati"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-304",
+  "s": "text:vidyapati-padavali",
+  "p": "ATTRIBUTED_TO",
+  "o": "person:vidyapati",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Vidyapati"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-305",
+  "s": "char:radha",
+  "p": "APPEARS_IN",
+  "o": "text:vidyapati-padavali",
+  "qualifiers": {
+   "role": "heroine"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:dimock-levertov-1967"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-306",
+  "s": "text:durgabhaktitarangini",
+  "p": "COMPOSED_BY",
+  "o": "person:vidyapati",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 155",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-307",
+  "s": "text:durgabhaktitarangini",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:navaratri",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:kane-hds-5-1",
+    "locator": "vol. V pt. 1, p. 155",
+    "url": "https://archive.org/details/KhistoryOfDharmasastraancientAndMediaevalReligiousAndCivilLaw"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-308",
+  "s": "text:naam-ghosha",
+  "p": "COMPOSED_BY",
+  "o": "person:madhavdev",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:neog-1965"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Madhavdev"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-309",
+  "s": "text:naam-ghosha",
+  "p": "CENTRAL_TO",
+  "o": "trad:ekasarana",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:neog-1965"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-310",
+  "s": "col:borgeet",
+  "p": "ATTRIBUTED_TO",
+  "o": "person:sankardev",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Borgeet"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-311",
+  "s": "col:borgeet",
+  "p": "ATTRIBUTED_TO",
+  "o": "person:madhavdev",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Borgeet"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-312",
+  "s": "person:sankardev",
+  "p": "CENTRAL_TO",
+  "o": "trad:ankiya-naat",
+  "qualifiers": {
+   "note": "the form is attributed to him"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ankia_Naat"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-313",
+  "s": "char:krishna",
+  "p": "CENTRAL_TO",
+  "o": "trad:ankiya-naat",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ankia_Naat"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-314",
+  "s": "trad:sattriya",
+  "p": "DERIVED_FROM",
+  "o": "trad:ankiya-naat",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Sattriya"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-315",
+  "s": "trad:sattra",
+  "p": "PART_OF",
+  "o": "trad:ekasarana",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:neog-1965"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-316",
+  "s": "trad:sattriya",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:sattra",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Sattriya"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-317",
+  "s": "deity:jagannatha",
+  "p": "CENTRAL_TO",
+  "o": "trad:panchasakha",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:mansinha-1962"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-318",
+  "s": "person:jagannatha-dasa",
+  "p": "MEMBER_OF",
+  "o": "trad:panchasakha",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Jagannatha_Dasa_(Odia_poet)"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-319",
+  "s": "person:balarama-dasa",
+  "p": "MEMBER_OF",
+  "o": "trad:panchasakha",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Balarama_Dasa"
+   },
+   {
+    "source": "src:mansinha-1962"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-320",
+  "s": "person:balarama-dasa",
+  "p": "DEVOTEE_OF",
+  "o": "deity:jagannatha",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:mansinha-1962"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-321",
+  "s": "person:achyutananda-dasa",
+  "p": "MEMBER_OF",
+  "o": "trad:panchasakha",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Balarama_Dasa"
+   },
+   {
+    "source": "src:mansinha-1962"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-322",
+  "s": "person:achyutananda-dasa",
+  "p": "DEVOTEE_OF",
+  "o": "deity:jagannatha",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:mansinha-1962"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-323",
+  "s": "person:jasobanta-dasa",
+  "p": "MEMBER_OF",
+  "o": "trad:panchasakha",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Balarama_Dasa"
+   },
+   {
+    "source": "src:mansinha-1962"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-324",
+  "s": "person:jasobanta-dasa",
+  "p": "DEVOTEE_OF",
+  "o": "deity:jagannatha",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:mansinha-1962"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-325",
+  "s": "person:ananta-dasa",
+  "p": "MEMBER_OF",
+  "o": "trad:panchasakha",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Balarama_Dasa"
+   },
+   {
+    "source": "src:mansinha-1962"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-326",
+  "s": "person:ananta-dasa",
+  "p": "DEVOTEE_OF",
+  "o": "deity:jagannatha",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:mansinha-1962"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-327",
+  "s": "text:jagamohana-ramayana",
+  "p": "COMPOSED_BY",
+  "o": "person:balarama-dasa",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Jagamohana_Ramayana"
+   },
+   {
+    "source": "src:smith-wl-1988"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-328",
+  "s": "text:jagamohana-ramayana",
+  "p": "RETELLS",
+  "o": "text:valmiki-ramayana",
+  "qualifiers": {
+   "note": "a free retelling with local episodes"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:smith-wl-1988"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-329",
+  "s": "text:jagamohana-ramayana",
+  "p": "PART_OF",
+  "o": "col:regional-retellings",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:smith-wl-1988"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-330",
+  "s": "char:rama",
+  "p": "APPEARS_IN",
+  "o": "text:jagamohana-ramayana",
+  "qualifiers": {
+   "role": "protagonist"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:smith-wl-1988"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-331",
+  "s": "person:janabai",
+  "p": "DEVOTEE_OF",
+  "o": "deity:vitthala",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Janabai"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-332",
+  "s": "person:janabai",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:pandharpur",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Janabai"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-333",
+  "s": "person:namdev",
+  "p": "TEACHER_OF",
+  "o": "person:janabai",
+  "qualifiers": {
+   "tradition": "trad:varkari",
+   "note": "she lived in his household and calls herself “Nāmā’s Janī”"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:novetzke-2008"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Janabai"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-334",
+  "s": "person:muktabai",
+  "p": "SIBLING_OF",
+  "o": "person:jnaneshwar",
+  "qualifiers": {
+   "tradition": "trad:varkari"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Muktabai"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-335",
+  "s": "person:muktabai",
+  "p": "DEVOTEE_OF",
+  "o": "deity:vitthala",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:ranade-1933"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-336",
+  "s": "person:chokhamela",
+  "p": "DEVOTEE_OF",
+  "o": "deity:vitthala",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:zelliot-berntsen-1988"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-337",
+  "s": "person:chokhamela",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:pandharpur",
+  "qualifiers": {
+   "note": "samādhi at the steps of the Viṭṭhal temple"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Chokhamela"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-338",
+  "s": "person:chokhamela",
+  "p": "ASSOCIATED_WITH",
+  "o": "temple:vitthala-pandharpur",
+  "qualifiers": {
+   "note": "samādhi at the temple steps"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:zelliot-berntsen-1988"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-339",
+  "s": "person:tukaram",
+  "p": "TEACHER_OF",
+  "o": "person:bahinabai",
+  "qualifiers": {
+   "tradition": "trad:varkari",
+   "note": "by her own account, through a vision"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bahinabai"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-340",
+  "s": "person:bahinabai",
+  "p": "DEVOTEE_OF",
+  "o": "deity:vitthala",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bahinabai"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-341",
+  "s": "person:samarth-ramdas",
+  "p": "DEVOTEE_OF",
+  "o": "char:rama",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Samarth_Ramdas"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-342",
+  "s": "person:samarth-ramdas",
+  "p": "DEVOTEE_OF",
+  "o": "char:hanuman",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Samarth_Ramdas"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-343",
+  "s": "text:dasbodh",
+  "p": "COMPOSED_BY",
+  "o": "person:samarth-ramdas",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Dasbodh"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-344",
+  "s": "text:manache-shlok",
+  "p": "ATTRIBUTED_TO",
+  "o": "person:samarth-ramdas",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:ranade-1933"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-345",
+  "s": "text:vaishnava-jana-to",
+  "p": "ATTRIBUTED_TO",
+  "o": "person:narsinh-mehta",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Vaishnava_Jana_To"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-346",
+  "s": "person:premanand-bhatt",
+  "p": "ASSOCIATED_WITH",
+  "o": "person:narsinh-mehta",
+  "qualifiers": {
+   "note": "composed ākhyānas on episodes of Narsinh’s life"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Premanand_Bhatt"
+   }
+  ],
+  "confidence": "low",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-347",
+  "s": "person:swaminarayan",
+  "p": "CENTRAL_TO",
+  "o": "trad:swaminarayan-sampradaya",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:williams-2001"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-348",
+  "s": "trad:swaminarayan-sampradaya",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:srivaishnava",
+  "qualifiers": {
+   "note": "its theology is rooted in Rāmānuja’s Viśiṣṭādvaita"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Swaminarayan_Sampradaya"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-349",
+  "s": "text:vachanamrut",
+  "p": "ATTRIBUTED_TO",
+  "o": "person:swaminarayan",
+  "qualifiers": {
+   "note": "discourses compiled by disciples"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Vachanamrut"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-350",
+  "s": "text:vachanamrut",
+  "p": "CENTRAL_TO",
+  "o": "trad:swaminarayan-sampradaya",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:williams-2001"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-351",
+  "s": "text:shikshapatri",
+  "p": "COMPOSED_BY",
+  "o": "person:swaminarayan",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Shikshapatri"
+   },
+   {
+    "source": "src:williams-2001"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-352",
+  "s": "trad:baps",
+  "p": "PART_OF",
+  "o": "trad:swaminarayan-sampradaya",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:williams-2001"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-353",
+  "s": "person:shastriji-maharaj",
+  "p": "CENTRAL_TO",
+  "o": "trad:baps",
+  "qualifiers": {
+   "note": "founder"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/BAPS"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-354",
+  "s": "person:vyasatirtha",
+  "p": "CENTRAL_TO",
+  "o": "trad:haridasa",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:sharma-bnk-1981"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-355",
+  "s": "person:vyasatirtha",
+  "p": "ASSOCIATED_WITH",
+  "o": "pol:vijayanagara",
+  "qualifiers": {
+   "note": "rājaguru of the Vijayanagara court"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Vyasatirtha"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-356",
+  "s": "person:vyasatirtha",
+  "p": "TEACHER_OF",
+  "o": "person:purandara-dasa",
+  "qualifiers": {
+   "tradition": "trad:haridasa"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:sharma-bnk-1981"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Purandara_Dasa"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-357",
+  "s": "person:purandara-dasa",
+  "p": "DEVOTEE_OF",
+  "o": "deity:vitthala",
+  "qualifiers": {
+   "note": "signature (mudrā) “Purandara Viṭhala”"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Purandara_Dasa"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-358",
+  "s": "person:purandara-dasa",
+  "p": "MEMBER_OF",
+  "o": "trad:haridasa",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Purandara_Dasa"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-359",
+  "s": "person:purandara-dasa",
+  "p": "ASSOCIATED_WITH",
+  "o": "place:hampi",
+  "qualifiers": {
+   "note": "lived at Vijayanagara (Hampi) in tradition; a maṇṭapa there bears his name"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Purandara_Dasa"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-360",
+  "s": "person:vyasatirtha",
+  "p": "TEACHER_OF",
+  "o": "person:kanaka-dasa",
+  "qualifiers": {
+   "tradition": "trad:haridasa"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kanaka_Dasa"
+   },
+   {
+    "source": "src:sharma-bnk-1981"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-361",
+  "s": "person:kanaka-dasa",
+  "p": "MEMBER_OF",
+  "o": "trad:haridasa",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kanaka_Dasa"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-362",
+  "s": "person:kanaka-dasa",
+  "p": "DEVOTEE_OF",
+  "o": "char:krishna",
+  "qualifiers": {
+   "note": "Udupi Kṛṣṇa; signature “Kāginele Ādikeśava”"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kanaka_Dasa"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-363",
+  "s": "text:mohanatarangini",
+  "p": "ATTRIBUTED_TO",
+  "o": "person:kanaka-dasa",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kanaka_Dasa"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-364",
+  "s": "text:ramadhanya-charite",
+  "p": "ATTRIBUTED_TO",
+  "o": "person:kanaka-dasa",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kanaka_Dasa"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-365",
+  "s": "char:rama",
+  "p": "APPEARS_IN",
+  "o": "text:ramadhanya-charite",
+  "qualifiers": {
+   "role": "judge"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kanaka_Dasa"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-366",
+  "s": "person:annamacharya",
+  "p": "DEVOTEE_OF",
+  "o": "deity:venkateshvara",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:narayana-rao-shulman-2005"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-367",
+  "s": "person:annamacharya",
+  "p": "ASSOCIATED_WITH",
+  "o": "temple:tirumala",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:narayana-rao-shulman-2005"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Annamacharya"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-368",
+  "s": "text:annamacharya-sankirtanas",
+  "p": "COMPOSED_BY",
+  "o": "person:annamacharya",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:narayana-rao-shulman-2005"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-369",
+  "s": "deity:venkateshvara",
+  "p": "APPEARS_IN",
+  "o": "text:annamacharya-sankirtanas",
+  "qualifiers": {
+   "role": "addressee"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:narayana-rao-shulman-2005"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-370",
+  "s": "person:tyagaraja",
+  "p": "MEMBER_OF",
+  "o": "trad:carnatic-music",
+  "qualifiers": {
+   "note": "one of the “Trinity”"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:jackson-1991"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-371",
+  "s": "person:tyagaraja",
+  "p": "DEVOTEE_OF",
+  "o": "char:rama",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:jackson-1991"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tyagaraja"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-372",
+  "s": "person:muthuswami-dikshitar",
+  "p": "MEMBER_OF",
+  "o": "trad:carnatic-music",
+  "qualifiers": {
+   "note": "one of the “Trinity”"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:jackson-1991"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-373",
+  "s": "person:muthuswami-dikshitar",
+  "p": "DEVOTEE_OF",
+  "o": "deity:skanda",
+  "qualifiers": {
+   "note": "signature Guruguha (Murukaṉ/Skanda); he also composed widely to the Goddess and Śiva"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:jackson-1991"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tyagaraja"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-374",
+  "s": "person:syama-sastri",
+  "p": "MEMBER_OF",
+  "o": "trad:carnatic-music",
+  "qualifiers": {
+   "note": "one of the “Trinity”"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:jackson-1991"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-375",
+  "s": "person:syama-sastri",
+  "p": "DEVOTEE_OF",
+  "o": "deity:devi",
+  "qualifiers": {
+   "note": "as Kāmākṣī"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:jackson-1991"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tyagaraja"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-376",
+  "s": "person:muthuswami-dikshitar",
+  "p": "ASSOCIATED_WITH",
+  "o": "temple:tiruttani",
+  "qualifiers": {
+   "note": "tradition places his first kṛti, to Murukaṉ, at Tiruttaṇi"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Muthuswami_Dikshitar"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-377",
+  "s": "text:pancharatna-kritis",
+  "p": "COMPOSED_BY",
+  "o": "person:tyagaraja",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:jackson-1991"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-378",
+  "s": "person:tyagaraja",
+  "p": "CENTRAL_TO",
+  "o": "trad:tyagaraja-aradhana",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tyagaraja_Aradhana"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-379",
+  "s": "trad:tyagaraja-aradhana",
+  "p": "ASSOCIATED_WITH",
+  "o": "text:pancharatna-kritis",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tyagaraja_Aradhana"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-380",
+  "s": "person:bhadrachala-ramadasu",
+  "p": "DEVOTEE_OF",
+  "o": "char:rama",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kancherla_Gopanna"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-381",
+  "s": "text:dasarathi-satakam",
+  "p": "ATTRIBUTED_TO",
+  "o": "person:bhadrachala-ramadasu",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kancherla_Gopanna"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-382",
+  "s": "person:kshetrayya",
+  "p": "DEVOTEE_OF",
+  "o": "char:krishna",
+  "qualifiers": {
+   "note": "as Muvva Gopāla; the padams are erotic rather than overtly devotional in voice"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:ramanujan-rao-shulman-1994"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-383",
+  "s": "text:kshetrayya-padams",
+  "p": "ATTRIBUTED_TO",
+  "o": "person:kshetrayya",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:ramanujan-rao-shulman-1994"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-384",
+  "s": "person:akka-mahadevi",
+  "p": "DEVOTEE_OF",
+  "o": "deity:shiva",
+  "qualifiers": {
+   "note": "as Cennamallikārjuna, her husband"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:ramanujan-1973"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-385",
+  "s": "person:akka-mahadevi",
+  "p": "CENTRAL_TO",
+  "o": "trad:virashaiva",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:ramanujan-1973"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-386",
+  "s": "person:allama-prabhu",
+  "p": "DEVOTEE_OF",
+  "o": "deity:shiva",
+  "qualifiers": {
+   "note": "as Guhēśvara"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:ramanujan-1973"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-387",
+  "s": "person:allama-prabhu",
+  "p": "CENTRAL_TO",
+  "o": "trad:virashaiva",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:ramanujan-1973"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-388",
+  "s": "person:akka-mahadevi",
+  "p": "ASSOCIATED_WITH",
+  "o": "temple:srisailam",
+  "qualifiers": {
+   "note": "her last days at Śrīśaila (Kadalī) in tradition"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:ramanujan-1973"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Akka_Mahadevi"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-389",
+  "s": "person:allama-prabhu",
+  "p": "ALLY_OF",
+  "o": "person:basava",
+  "qualifiers": {
+   "tradition": "trad:virashaiva"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:ramanujan-1973"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-390",
+  "s": "person:akka-mahadevi",
+  "p": "ALLY_OF",
+  "o": "person:basava",
+  "qualifiers": {
+   "tradition": "trad:virashaiva"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:ramanujan-1973"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-391",
+  "s": "text:akka-mahadevi-vacanas",
+  "p": "ATTRIBUTED_TO",
+  "o": "person:akka-mahadevi",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:ramanujan-1973"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-392",
+  "s": "text:allama-vacanas",
+  "p": "ATTRIBUTED_TO",
+  "o": "person:allama-prabhu",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:ramanujan-1973"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-393",
+  "s": "text:sunya-sampadane",
+  "p": "DERIVED_FROM",
+  "o": "text:akka-mahadevi-vacanas",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:ramanujan-1973"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-394",
+  "s": "text:sunya-sampadane",
+  "p": "DERIVED_FROM",
+  "o": "text:allama-vacanas",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:ramanujan-1973"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-395",
+  "s": "text:sunya-sampadane",
+  "p": "DERIVED_FROM",
+  "o": "text:basava-vacanas",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:ramanujan-1973"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-396",
+  "s": "person:allama-prabhu",
+  "p": "APPEARS_IN",
+  "o": "text:sunya-sampadane",
+  "qualifiers": {
+   "role": "central figure"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:ramanujan-1973"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-397",
+  "s": "person:arunagirinathar",
+  "p": "DEVOTEE_OF",
+  "o": "deity:murugan",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:zvelebil-1974"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-398",
+  "s": "person:arunagirinathar",
+  "p": "ASSOCIATED_WITH",
+  "o": "temple:arunachaleswarar",
+  "qualifiers": {
+   "note": "native of Tiruvaṇṇāmalai"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Arunagirinathar"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-399",
+  "s": "text:tiruppukal",
+  "p": "COMPOSED_BY",
+  "o": "person:arunagirinathar",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:zvelebil-1974"
+   },
+   {
+    "source": "src:tiruppukal-pm",
+    "url": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0180.html"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-400",
+  "s": "deity:murugan",
+  "p": "APPEARS_IN",
+  "o": "text:tiruppukal",
+  "qualifiers": {
+   "role": "addressee"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:tiruppukal-pm",
+    "locator": "part 1, songs 1–330 (shrine sections)",
+    "url": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0180.html"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-401",
+  "s": "temple:thiruparankundram",
+  "p": "MENTIONED_IN",
+  "o": "text:tiruppukal",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:tiruppukal-pm",
+    "locator": "part 1 (songs 1–330), songs headed Tirupparaṅkuṉṟam",
+    "url": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0180.html"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-402",
+  "s": "temple:tiruchendur",
+  "p": "MENTIONED_IN",
+  "o": "text:tiruppukal",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:tiruppukal-pm",
+    "locator": "part 1 (songs 1–330), songs headed Tiruccentūr",
+    "url": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0180.html"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-403",
+  "s": "temple:palani",
+  "p": "MENTIONED_IN",
+  "o": "text:tiruppukal",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:tiruppukal-pm",
+    "locator": "part 1 (songs 1–330), songs headed Paḻani",
+    "url": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0180.html"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-404",
+  "s": "temple:tiruttani",
+  "p": "MENTIONED_IN",
+  "o": "text:tiruppukal",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:tiruppukal-pm",
+    "locator": "part 1 (songs 1–330), songs headed Tiruttaṇikai",
+    "url": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0180.html"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-405",
+  "s": "text:tiruppukal",
+  "p": "PART_OF",
+  "o": "col:bhakti-literature",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:zvelebil-1974"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-406",
+  "s": "text:narayaniyam",
+  "p": "COMPOSED_BY",
+  "o": "person:narayana-bhattathiri",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:kunjunni-raja-1958"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Narayaniyam"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-407",
+  "s": "text:narayaniyam",
+  "p": "DERIVED_FROM",
+  "o": "text:bhagavata-purana",
+  "qualifiers": {
+   "note": "a condensation of the Bhāgavata"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:kunjunni-raja-1958"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Narayaniyam"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-408",
+  "s": "text:narayaniyam",
+  "p": "ASSOCIATED_WITH",
+  "o": "temple:guruvayur",
+  "qualifiers": {
+   "note": "addressed to the lord of Pavanapura (Guruvāyūr)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "Nār. 100.10 (“pavanapurapate”)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_nArAyaNabhaTTa-nArAyaNIya.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-409",
+  "s": "char:krishna",
+  "p": "APPEARS_IN",
+  "o": "text:narayaniyam",
+  "qualifiers": {
+   "role": "addressee (as Guruvāyūrappan)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "Nār. 100.10",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_nArAyaNabhaTTa-nArAyaNIya.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-410",
+  "s": "person:poonthanam",
+  "p": "ASSOCIATED_WITH",
+  "o": "temple:guruvayur",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Poonthanam_Nambudiri"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-411",
+  "s": "person:poonthanam",
+  "p": "DEVOTEE_OF",
+  "o": "char:krishna",
+  "qualifiers": {
+   "note": "as Guruvāyūrappan"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Poonthanam_Nambudiri"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-412",
+  "s": "person:narayana-bhattathiri",
+  "p": "ASSOCIATED_WITH",
+  "o": "person:poonthanam",
+  "qualifiers": {
+   "note": "Guruvāyūr legend of the god preferring Pūntānam’s bhakti to Bhaṭṭatiri’s vibhakti (grammar)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Poonthanam_Nambudiri"
+   }
+  ],
+  "confidence": "low",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-413",
+  "s": "text:jnanappana",
+  "p": "COMPOSED_BY",
+  "o": "person:poonthanam",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Jnanappana"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-414",
+  "s": "person:ramalinga-swamigal",
+  "p": "CENTRAL_TO",
+  "o": "trad:samarasa-sanmarga",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:weiss-2019"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-415",
+  "s": "text:tiruvarutpa",
+  "p": "COMPOSED_BY",
+  "o": "person:ramalinga-swamigal",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:weiss-2019"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-416",
+  "s": "trad:samarasa-sanmarga",
+  "p": "ADVERSARY_OF",
+  "o": "trad:shaiva-siddhanta",
+  "qualifiers": {
+   "note": "the nineteenth-century Aruṭpā–Maruṭpā controversy with Jaffna Śaiva Siddhāntins led by Āṟumuka Nāvalar"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:weiss-2019"
+   }
+  ],
+  "confidence": "low",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-417",
+  "s": "text:bhanubhakta-ramayana",
+  "p": "COMPOSED_BY",
+  "o": "person:bhanubhakta",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bhanubhakta_Ramayana"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-418",
+  "s": "text:bhanubhakta-ramayana",
+  "p": "DERIVED_FROM",
+  "o": "text:adhyatma-ramayana",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:hutt-1988"
+   }
+  ],
+  "confidence": "medium",
+  "status": "disputed",
+  "competing": "Wikipedia describes it as a translation of Vālmīki’s Rāmāyaṇa.",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-419",
+  "s": "text:bhanubhakta-ramayana",
+  "p": "PART_OF",
+  "o": "col:regional-retellings",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:hutt-1988"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-420",
+  "s": "char:rama",
+  "p": "APPEARS_IN",
+  "o": "text:bhanubhakta-ramayana",
+  "qualifiers": {
+   "role": "protagonist"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:hutt-1988"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-421",
+  "s": "text:shivastotravali",
+  "p": "COMPOSED_BY",
+  "o": "person:utpaladeva",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:bailly-1987"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-422",
+  "s": "deity:shiva",
+  "p": "APPEARS_IN",
+  "o": "text:shivastotravali",
+  "qualifiers": {
+   "role": "addressee"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:bailly-1987"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-423",
+  "s": "person:utpaladeva",
+  "p": "DEVOTEE_OF",
+  "o": "deity:shiva",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:bailly-1987"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-424",
+  "s": "person:utpaladeva",
+  "p": "CENTRAL_TO",
+  "o": "trad:kashmir-shaivism",
+  "qualifiers": {
+   "note": "systematiser of the Pratyabhijñā school"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:bailly-1987"
+   },
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Utpaladeva"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-425",
+  "s": "person:rupa-bhawani",
+  "p": "DEVOTEE_OF",
+  "o": "deity:shiva",
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Rupa_Bhawani"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-426",
+  "s": "person:rupa-bhawani",
+  "p": "ASSOCIATED_WITH",
+  "o": "person:lal-ded",
+  "qualifiers": {
+   "note": "regarded as continuing Lal Ded’s vākh tradition"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Rupa_Bhawani"
+   }
+  ],
+  "confidence": "low",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-427",
+  "s": "col:old-javanese-kakawin",
+  "p": "PART_OF",
+  "o": "col:southeast-asian",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:zoetmulder-1974"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-428",
+  "s": "text:kakawin-ramayana",
+  "p": "PART_OF",
+  "o": "col:old-javanese-kakawin",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:zoetmulder-1974"
+   },
+   {
+    "source": "src:robson-2015"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-429",
+  "s": "text:arjunawiwaha",
+  "p": "COMPOSED_BY",
+  "o": "person:mpu-kanwa",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:robson-2008",
+    "locator": "canto 36.2, as discussed in the Introduction",
+    "url": "https://archive.org/details/oapen-20.500.12657-34659"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-430",
+  "s": "text:arjunawiwaha",
+  "p": "COMMISSIONED_BY",
+  "o": "person:airlangga",
+  "qualifiers": {
+   "note": "the king is probably the poet’s sponsor (Robson)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:robson-2008",
+    "locator": "canto 36.2: written under Śrī Airlangga, “sang panikĕlan tanah”",
+    "url": "https://archive.org/details/oapen-20.500.12657-34659"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-431",
+  "s": "text:arjunawiwaha",
+  "p": "RETELLS",
+  "o": "text:mahabharata",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:robson-2008",
+    "locator": "Introduction (Nivātakavaca and Kirāta episodes of the Āraṇyakaparvan)",
+    "url": "https://archive.org/details/oapen-20.500.12657-34659"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-432",
+  "s": "text:arjunawiwaha",
+  "p": "PART_OF",
+  "o": "col:old-javanese-kakawin",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:zoetmulder-1983",
+    "locator": "ch. VII",
+    "url": "https://archive.org/details/kalangwan-sastra-jawa-kuno-selayang-pandang-1983"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-433",
+  "s": "char:arjuna",
+  "p": "APPEARS_IN",
+  "o": "text:arjunawiwaha",
+  "qualifiers": {
+   "role": "protagonist"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:robson-2008",
+    "locator": "synopsis",
+    "url": "https://archive.org/details/oapen-20.500.12657-34659"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-434",
+  "s": "narr:kirata-arjuna",
+  "p": "NARRATED_IN",
+  "o": "text:arjunawiwaha",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:robson-2008",
+    "locator": "synopsis (the boar Muka killed by Arjuna and the kirāta)",
+    "url": "https://archive.org/details/oapen-20.500.12657-34659"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-435",
+  "s": "deity:indra",
+  "p": "APPEARS_IN",
+  "o": "text:arjunawiwaha",
+  "qualifiers": {
+   "role": "seeks Arjuna’s help against Niwātakawaca"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:robson-2008",
+    "locator": "synopsis",
+    "url": "https://archive.org/details/oapen-20.500.12657-34659"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-436",
+  "s": "trad:wayang",
+  "p": "ASSOCIATED_WITH",
+  "o": "text:arjunawiwaha",
+  "qualifiers": {
+   "note": "the Arjuna Wiwaha (Mintaraga) story is a classic wayang play"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:robson-2008",
+    "locator": "Introduction",
+    "url": "https://archive.org/details/oapen-20.500.12657-34659"
+   },
+   {
+    "source": "src:zoetmulder-1974"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-437",
+  "s": "text:bharatayuddha",
+  "p": "COMPOSED_BY",
+  "o": "person:mpu-sedah",
+  "qualifiers": {
+   "note": "first part"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:zoetmulder-1983",
+    "locator": "pp. 339–340 (prologue)",
+    "url": "https://archive.org/details/kalangwan-sastra-jawa-kuno-selayang-pandang-1983"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-438",
+  "s": "text:bharatayuddha",
+  "p": "COMPOSED_BY",
+  "o": "person:mpu-panuluh",
+  "qualifiers": {
+   "note": "completion"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:zoetmulder-1983",
+    "locator": "p. 340 (epilogue)",
+    "url": "https://archive.org/details/kalangwan-sastra-jawa-kuno-selayang-pandang-1983"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-439",
+  "s": "text:bharatayuddha",
+  "p": "COMMISSIONED_BY",
+  "o": "person:jayabhaya",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:zoetmulder-1983",
+    "locator": "pp. 339–341",
+    "url": "https://archive.org/details/kalangwan-sastra-jawa-kuno-selayang-pandang-1983"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-440",
+  "s": "text:bharatayuddha",
+  "p": "RETELLS",
+  "o": "text:mahabharata",
+  "qualifiers": {
+   "note": "the war books, freely recast"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:zoetmulder-1983",
+    "locator": "ch. on Bhāratayuddha",
+    "url": "https://archive.org/details/kalangwan-sastra-jawa-kuno-selayang-pandang-1983"
+   },
+   {
+    "source": "src:zoetmulder-1974"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-441",
+  "s": "narr:kurukshetra-war",
+  "p": "NARRATED_IN",
+  "o": "text:bharatayuddha",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:zoetmulder-1983",
+    "locator": "ch. on Bhāratayuddha",
+    "url": "https://archive.org/details/kalangwan-sastra-jawa-kuno-selayang-pandang-1983"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-442",
+  "s": "text:bharatayuddha",
+  "p": "PART_OF",
+  "o": "col:old-javanese-kakawin",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:zoetmulder-1974"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-443",
+  "s": "trad:wayang",
+  "p": "ASSOCIATED_WITH",
+  "o": "text:bharatayuddha",
+  "qualifiers": {
+   "note": "the Bratayuda cycle of wayang"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:zoetmulder-1974"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-444",
+  "s": "text:hariwangsa-kakawin",
+  "p": "COMPOSED_BY",
+  "o": "person:mpu-panuluh",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:zoetmulder-1983",
+    "locator": "chapters on the work",
+    "url": "https://archive.org/details/kalangwan-sastra-jawa-kuno-selayang-pandang-1983"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-445",
+  "s": "text:hariwangsa-kakawin",
+  "p": "PART_OF",
+  "o": "col:old-javanese-kakawin",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:zoetmulder-1974"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-446",
+  "s": "text:ghatotkacasraya",
+  "p": "COMPOSED_BY",
+  "o": "person:mpu-panuluh",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:zoetmulder-1983",
+    "locator": "chapters on the work",
+    "url": "https://archive.org/details/kalangwan-sastra-jawa-kuno-selayang-pandang-1983"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-447",
+  "s": "text:ghatotkacasraya",
+  "p": "PART_OF",
+  "o": "col:old-javanese-kakawin",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:zoetmulder-1974"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-448",
+  "s": "text:krsnayana-kakawin",
+  "p": "COMPOSED_BY",
+  "o": "person:mpu-triguna",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:zoetmulder-1983",
+    "locator": "chapters on the work",
+    "url": "https://archive.org/details/kalangwan-sastra-jawa-kuno-selayang-pandang-1983"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-449",
+  "s": "text:krsnayana-kakawin",
+  "p": "PART_OF",
+  "o": "col:old-javanese-kakawin",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:zoetmulder-1974"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-450",
+  "s": "char:krishna",
+  "p": "APPEARS_IN",
+  "o": "text:krsnayana-kakawin",
+  "qualifiers": {
+   "role": "protagonist"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:zoetmulder-1974"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-451",
+  "s": "narr:rukmini-abduction",
+  "p": "NARRATED_IN",
+  "o": "text:krsnayana-kakawin",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:zoetmulder-1974"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-452",
+  "s": "narr:rukmini-abduction",
+  "p": "NARRATED_IN",
+  "o": "text:hariwangsa-kakawin",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:zoetmulder-1974"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-453",
+  "s": "char:ghatotkacha",
+  "p": "APPEARS_IN",
+  "o": "text:ghatotkacasraya",
+  "qualifiers": {
+   "role": "protagonist"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:zoetmulder-1974"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-454",
+  "s": "char:abhimanyu",
+  "p": "APPEARS_IN",
+  "o": "text:ghatotkacasraya",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:zoetmulder-1974"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-455",
+  "s": "text:hariwangsa-kakawin",
+  "p": "DERIVED_FROM",
+  "o": "text:harivamsha",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:zoetmulder-1974"
+   }
+  ],
+  "confidence": "medium",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-456",
+  "s": "text:wirataparwa-old-javanese",
+  "p": "TRANSLATION_OF",
+  "o": "text:mahabharata",
+  "qualifiers": {
+   "note": "a prose rendering of the Virāṭaparvan, with Sanskrit verse quotations"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:zoetmulder-1983",
+    "locator": "pp. 84–110",
+    "url": "https://archive.org/details/kalangwan-sastra-jawa-kuno-selayang-pandang-1983"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-457",
+  "s": "text:wirataparwa-old-javanese",
+  "p": "PART_OF",
+  "o": "col:old-javanese-kakawin",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:zoetmulder-1974"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-458",
+  "s": "trad:agama-hindu-dharma",
+  "p": "ASSOCIATED_WITH",
+  "o": "temple:pura-besakih",
+  "qualifiers": {
+   "note": "the “mother temple” of Balinese Hinduism"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Besakih_Temple"
+   },
+   {
+    "source": "src:ramstedt-2004"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-459",
+  "s": "trad:balinese-dance",
+  "p": "PART_OF",
+  "o": "trad:agama-hindu-dharma",
+  "qualifiers": {
+   "note": "sacred and semi-sacred temple dances"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:unesco-ich",
+    "url": "https://ich.unesco.org/en/RL/three-genres-of-traditional-dance-in-bali-00617"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "regional",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "regional:r2-460",
+  "s": "col:old-javanese-kakawin",
+  "p": "ASSOCIATED_WITH",
+  "o": "trad:agama-hindu-dharma",
+  "qualifiers": {
+   "note": "the kakawin corpus survives chiefly in Balinese manuscripts and recitation (mabasan)"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:zoetmulder-1974"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-461",
+  "s": "inst:parisada-hindu-dharma",
+  "p": "CENTRAL_TO",
+  "o": "trad:agama-hindu-dharma",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:picard-2011"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-462",
+  "s": "text:maharadia-lawana",
+  "p": "DERIVED_FROM",
+  "o": "text:hikayat-seri-rama",
+  "qualifiers": {
+   "note": "Francisco and others derive it through Malay tradition"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:francisco-1969"
+   }
+  ],
+  "confidence": "low",
+  "status": "recall",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-463",
+  "s": "text:maharadia-lawana",
+  "p": "PART_OF",
+  "o": "col:southeast-asian",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:francisco-1969"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-464",
+  "s": "char:ravana",
+  "p": "APPEARS_IN",
+  "o": "text:maharadia-lawana",
+  "qualifiers": {
+   "role": "protagonist (as Maharadia Lawana)"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:francisco-1969"
+   }
+  ],
+  "confidence": "high",
+  "status": "source-checked",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-465",
+  "s": "char:rama",
+  "p": "APPEARS_IN",
+  "o": "text:maharadia-lawana",
+  "qualifiers": {
+   "role": "as Radia Mangandiri"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:francisco-1969"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "regional"
+ },
+ {
+  "id": "regional:r2-466",
+  "s": "char:lakshmana",
+  "p": "APPEARS_IN",
+  "o": "text:maharadia-lawana",
+  "qualifiers": {
+   "role": "as Laksamana, born a monkey"
+  },
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:francisco-1969"
+   }
+  ],
+  "confidence": "medium",
+  "status": "recall",
+  "agent": "regional"
  }
 ]

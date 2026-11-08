@@ -5960,5 +5960,5425 @@
   "status": "source-checked",
   "agent": "purana",
   "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-267",
+  "s": "narr:tripura-dahana",
+  "p": "NARRATED_IN",
+  "o": "text:mahabharata",
+  "qualifiers": {
+   "note": "told by Duryodhana to Śalya"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 8.24.3–124",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b08/b08c024.htm",
+    "quote": "evaṃ tat tripuraṃ dagdhaṃ dānavāś cāpy aśeṣataḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-268",
+  "s": "narr:tripura-dahana",
+  "p": "NARRATED_IN",
+  "o": "text:matsya-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 129.1–140.86",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt",
+    "quote": "tripuraṃ tadyathā durgaṃ mayamāyāvinirmitam"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-269",
+  "s": "narr:tripura-dahana",
+  "p": "NARRATED_IN",
+  "o": "text:linga-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "LiP 1.71.1–1.72.180",
+    "edition": "Venkatesvara Press ed. (Bombay 1906), rev. O. Hellwig after Calcutta 1960; GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_liGgapurANa1-108.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-270",
+  "s": "narr:tripura-dahana",
+  "p": "NARRATED_IN",
+  "o": "text:shiva-purana",
+  "qualifiers": {
+   "note": "adds the deluding 'Jina' teacher (2.5.4–5) and Śiva's worship of Gaṇeśa before the shot (2.5.10.7–14)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.1–12 (Rudrasaṃhitā, Yuddhakhaṇḍa)",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A6%E0%A5%A7"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-271",
+  "s": "narr:tripura-dahana",
+  "p": "NARRATED_IN",
+  "o": "text:bhagavata-purana",
+  "qualifiers": {
+   "note": "Viṣṇu as a cow, Brahmā as the calf, drink the reviving well"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 7.10.53–70",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt",
+    "quote": "vatsaścāsīt tadā brahmā svayaṃ viṣṇurayaṃ hi gauḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-272",
+  "s": "deity:shiva",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:tripura-dahana",
+  "qualifiers": {
+   "text": "text:mahabharata",
+   "role": "archer who burns the cities"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 8.24.115–121",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b08/b08c024.htm"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-273",
+  "s": "deity:shiva",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:tripura-dahana",
+  "qualifiers": {
+   "text": "text:matsya-purana",
+   "role": "archer who burns the cities"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 140",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-274",
+  "s": "deity:shiva",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:tripura-dahana",
+  "qualifiers": {
+   "text": "text:linga-purana",
+   "role": "archer who burns the cities"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "LiP 1.72",
+    "edition": "Venkatesvara Press ed. (Bombay 1906), rev. O. Hellwig after Calcutta 1960; GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_liGgapurANa1-108.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-275",
+  "s": "deity:shiva",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:tripura-dahana",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "role": "archer who burns the cities"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.10.2–22",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%A6"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-276",
+  "s": "deity:shiva",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:tripura-dahana",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "archer who burns the cities"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 7.10.66–68",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-277",
+  "s": "char:tarakaksha",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:tripura-dahana",
+  "qualifiers": {
+   "text": "text:mahabharata",
+   "role": "lord of one of the three cities"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 8.24.4–19",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b08/b08c024.htm"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-278",
+  "s": "char:tarakaksha",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:tripura-dahana",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "role": "lord of one of the three cities"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.1",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A6%E0%A5%A7"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-279",
+  "s": "char:taraka",
+  "p": "PARENT_OF",
+  "o": "char:tarakaksha",
+  "qualifiers": {
+   "text": "text:mahabharata"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 8.24.4",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b08/b08c024.htm",
+    "quote": "tārakasya sutās trayaḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-280",
+  "s": "char:taraka",
+  "p": "PARENT_OF",
+  "o": "char:tarakaksha",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "note": "the Śiva Purāṇa makes them sons of the Tāraka slain by Skanda"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.1",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A6%E0%A5%A7"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-281",
+  "s": "char:kamalaksha",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:tripura-dahana",
+  "qualifiers": {
+   "text": "text:mahabharata",
+   "role": "lord of one of the three cities"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 8.24.4–19",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b08/b08c024.htm"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-282",
+  "s": "char:kamalaksha",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:tripura-dahana",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "role": "lord of one of the three cities"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.1",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A6%E0%A5%A7"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-283",
+  "s": "char:taraka",
+  "p": "PARENT_OF",
+  "o": "char:kamalaksha",
+  "qualifiers": {
+   "text": "text:mahabharata"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 8.24.4",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b08/b08c024.htm",
+    "quote": "tārakasya sutās trayaḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-284",
+  "s": "char:taraka",
+  "p": "PARENT_OF",
+  "o": "char:kamalaksha",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "note": "the Śiva Purāṇa makes them sons of the Tāraka slain by Skanda"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.1",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A6%E0%A5%A7"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-285",
+  "s": "char:vidyunmalin",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:tripura-dahana",
+  "qualifiers": {
+   "text": "text:mahabharata",
+   "role": "lord of one of the three cities"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 8.24.4–19",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b08/b08c024.htm"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-286",
+  "s": "char:vidyunmalin",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:tripura-dahana",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "role": "lord of one of the three cities"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.1",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A6%E0%A5%A7"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-287",
+  "s": "char:taraka",
+  "p": "PARENT_OF",
+  "o": "char:vidyunmalin",
+  "qualifiers": {
+   "text": "text:mahabharata"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 8.24.4",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b08/b08c024.htm",
+    "quote": "tārakasya sutās trayaḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-288",
+  "s": "char:taraka",
+  "p": "PARENT_OF",
+  "o": "char:vidyunmalin",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "note": "the Śiva Purāṇa makes them sons of the Tāraka slain by Skanda"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.1",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A6%E0%A5%A7"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-289",
+  "s": "char:maya-asura",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:tripura-dahana",
+  "qualifiers": {
+   "text": "text:mahabharata",
+   "role": "builder of the cities"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 8.24.21–23",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b08/b08c024.htm"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-290",
+  "s": "char:maya-asura",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:tripura-dahana",
+  "qualifiers": {
+   "text": "text:matsya-purana",
+   "role": "builder and war-leader; survives"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 129.2–27; 140.75–78",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-291",
+  "s": "char:maya-asura",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:tripura-dahana",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "builder; creates the reviving well"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 7.10.53–59",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-292",
+  "s": "deity:vishnu",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:tripura-dahana",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "as a cow drinks the nectar well"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 7.10.62",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-293",
+  "s": "deity:vishnu",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:tripura-dahana",
+  "qualifiers": {
+   "text": "text:matsya-purana",
+   "role": "as a bull drinks the nectar pond; enters the arrow"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 136.63–65",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt",
+    "quote": "vāpīṃ pītvāsurendrāṇāṃ pītavāsā janārdanaḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-294",
+  "s": "deity:vishnu",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:tripura-dahana",
+  "qualifiers": {
+   "text": "text:linga-purana",
+   "role": "subverts the asuras' dharma by māyā"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "LiP 1.71.71–74",
+    "edition": "Venkatesvara Press ed. (Bombay 1906), rev. O. Hellwig after Calcutta 1960; GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_liGgapurANa1-108.txt",
+    "quote": "māyī māyāmayaṃ teṣāṃ dharmavighnārthamacyutaḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-295",
+  "s": "deity:vishnu",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:tripura-dahana",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "role": "creates the deluding teacher"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.4.7–19",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A6%E0%A5%AA"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-296",
+  "s": "deity:brahma",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:tripura-dahana",
+  "qualifiers": {
+   "text": "text:mahabharata",
+   "role": "Śiva's charioteer"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 8.24",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b08/b08c024.htm"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-297",
+  "s": "deity:ganesha",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:tripura-dahana",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "role": "worshipped by Śiva before the shot"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.10.7–14",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%A6",
+    "quote": "etacchrutvā tu vacanaṃ gajavaktramapūjayat"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-298",
+  "s": "char:maya-asura",
+  "p": "APPEARS_IN",
+  "o": "text:mahabharata",
+  "qualifiers": {
+   "role": "architect of Tripura (also of the Pāṇḍavas' hall)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 8.24.21",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b08/b08c024.htm"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-299",
+  "s": "narr:andhaka-slaying",
+  "p": "NARRATED_IN",
+  "o": "text:kurma-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "KūrmP 1.15.125–237",
+    "edition": "GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kUrmapurANa.txt",
+    "quote": "śūlenorasi taṃ daityamājaghāna vṛṣadhvajaḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-300",
+  "s": "narr:andhaka-slaying",
+  "p": "NARRATED_IN",
+  "o": "text:linga-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "LiP 1.93.1–25",
+    "edition": "Venkatesvara Press ed. (Bombay 1906), rev. O. Hellwig after Calcutta 1960; GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_liGgapurANa1-108.txt",
+    "quote": "śūlena śūlinā protaṃ dagdhakalmaṣakañcukam"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-301",
+  "s": "narr:andhaka-slaying",
+  "p": "NARRATED_IN",
+  "o": "text:vamana-purana",
+  "qualifiers": {
+   "note": "ends with Andhaka made Bhṛṅgin (44.95)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "VāmP 43–44",
+    "edition": "A. S. Gupta ed. (All India Kashiraj Trust 1967); GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_vAmanapurANa1-69.txt",
+    "quote": "bhṛṅgitvamīśena kṛtaṃ svabhaktyā"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-302",
+  "s": "narr:andhaka-slaying",
+  "p": "NARRATED_IN",
+  "o": "text:shiva-purana",
+  "qualifiers": {
+   "note": "Andhaka born from Pārvatī's sweat when she playfully covers Śiva's eyes (2.5.42.13–16)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.42–49",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%AA%E0%A5%A8"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-303",
+  "s": "deity:shiva",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:andhaka-slaying",
+  "qualifiers": {
+   "text": "text:kurma-purana",
+   "role": "impales and redeems Andhaka"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "KūrmP 1.15.125–128",
+    "edition": "GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kUrmapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-304",
+  "s": "char:andhaka",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:andhaka-slaying",
+  "qualifiers": {
+   "text": "text:kurma-purana",
+   "role": "impaled, made a gaṇa"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "KūrmP 1.15.125–128",
+    "edition": "GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kUrmapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-305",
+  "s": "deity:shiva",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:andhaka-slaying",
+  "qualifiers": {
+   "text": "text:linga-purana",
+   "role": "impales and redeems Andhaka"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "LiP 1.93.9–15",
+    "edition": "Venkatesvara Press ed. (Bombay 1906), rev. O. Hellwig after Calcutta 1960; GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_liGgapurANa1-108.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-306",
+  "s": "char:andhaka",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:andhaka-slaying",
+  "qualifiers": {
+   "text": "text:linga-purana",
+   "role": "impaled, made a gaṇa"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "LiP 1.93.9–15",
+    "edition": "Venkatesvara Press ed. (Bombay 1906), rev. O. Hellwig after Calcutta 1960; GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_liGgapurANa1-108.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-307",
+  "s": "deity:shiva",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:andhaka-slaying",
+  "qualifiers": {
+   "text": "text:vamana-purana",
+   "role": "impales and redeems Andhaka"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "VāmP 44.24–30",
+    "edition": "A. S. Gupta ed. (All India Kashiraj Trust 1967); GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_vAmanapurANa1-69.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-308",
+  "s": "char:andhaka",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:andhaka-slaying",
+  "qualifiers": {
+   "text": "text:vamana-purana",
+   "role": "impaled, made a gaṇa"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "VāmP 44.24–30",
+    "edition": "A. S. Gupta ed. (All India Kashiraj Trust 1967); GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_vAmanapurANa1-69.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-309",
+  "s": "deity:shiva",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:andhaka-slaying",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "role": "impales and redeems Andhaka"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.49",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%AA%E0%A5%AF"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-310",
+  "s": "char:andhaka",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:andhaka-slaying",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "role": "impaled, made a gaṇa"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.49",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%AA%E0%A5%AF"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-311",
+  "s": "deity:parvati",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:andhaka-slaying",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "role": "mother; object of his desire"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.42.13–16",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%AA%E0%A5%A8"
+   },
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.49.34–37",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%AA%E0%A5%AF",
+    "quote": "paśyeyaṃ pārvatīṃ nityaṃ mātaraṃ gurugauravāt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-312",
+  "s": "char:shukra",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:andhaka-slaying",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "role": "revives the asuras; swallowed by Śiva"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.47–48",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%AA%E0%A5%AD"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-313",
+  "s": "deity:shiva",
+  "p": "PARENT_OF",
+  "o": "char:andhaka",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "note": "born of Pārvatī's sweat when Śiva's eyes were covered"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.42.13–20",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%AA%E0%A5%A8"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-314",
+  "s": "char:hiranyaksha",
+  "p": "ADOPTIVE_PARENT_OF",
+  "o": "char:andhaka",
+  "qualifiers": {
+   "text": "text:shiva-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.42 (index: putrārthaṃ tapasyate hiraṇyākṣāya śivadvārā tasya dānam)",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%AA%E0%A5%A8"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-315",
+  "s": "char:andhaka",
+  "p": "IDENTIFIED_WITH",
+  "o": "char:bhringi",
+  "qualifiers": {
+   "text": "text:vamana-purana",
+   "note": "Andhaka becomes Bhṛṅgin"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "VāmP 44.95",
+    "edition": "A. S. Gupta ed. (All India Kashiraj Trust 1967); GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_vAmanapurANa1-69.txt"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-316",
+  "s": "deity:shiva",
+  "p": "BLESSES",
+  "o": "char:andhaka",
+  "qualifiers": {
+   "text": "text:shiva-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.49 (gāṇapatya granted)",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%AA%E0%A5%AF"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-317",
+  "s": "char:bhringi",
+  "p": "DEVOTEE_OF",
+  "o": "deity:shiva",
+  "qualifiers": {
+   "text": "text:vamana-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "VāmP 44.95",
+    "edition": "A. S. Gupta ed. (All India Kashiraj Trust 1967); GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_vAmanapurANa1-69.txt"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-318",
+  "s": "narr:jalandhara-slaying",
+  "p": "NARRATED_IN",
+  "o": "text:linga-purana",
+  "qualifiers": {
+   "note": "Viṣṇu receives Sudarśana by the thousand names in 1.98"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "LiP 1.97.1–42",
+    "edition": "Venkatesvara Press ed. (Bombay 1906), rev. O. Hellwig after Calcutta 1960; GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_liGgapurANa1-108.txt",
+    "quote": "yaḥ paṭhecchṛṇuyādvāpi jalandharavimardanam"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-319",
+  "s": "narr:jalandhara-slaying",
+  "p": "NARRATED_IN",
+  "o": "text:shiva-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.13–26",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%AA"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-320",
+  "s": "deity:shiva",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:jalandhara-slaying",
+  "qualifiers": {
+   "text": "text:linga-purana",
+   "role": "slayer"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "LiP 1.97",
+    "edition": "Venkatesvara Press ed. (Bombay 1906), rev. O. Hellwig after Calcutta 1960; GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_liGgapurANa1-108.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-321",
+  "s": "char:jalandhara",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:jalandhara-slaying",
+  "qualifiers": {
+   "text": "text:linga-purana",
+   "role": "slain"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "LiP 1.97",
+    "edition": "Venkatesvara Press ed. (Bombay 1906), rev. O. Hellwig after Calcutta 1960; GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_liGgapurANa1-108.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-322",
+  "s": "deity:shiva",
+  "p": "SLAYS",
+  "o": "char:jalandhara",
+  "qualifiers": {
+   "text": "text:linga-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "LiP 1.97",
+    "edition": "Venkatesvara Press ed. (Bombay 1906), rev. O. Hellwig after Calcutta 1960; GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_liGgapurANa1-108.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-323",
+  "s": "deity:shiva",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:jalandhara-slaying",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "role": "slayer"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.24.28",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A8%E0%A5%AA",
+    "quote": "pādena nirmitaṃ cakraṃ jalaṃdhara mahāmbhasi"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-324",
+  "s": "char:jalandhara",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:jalandhara-slaying",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "role": "slain"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.24.28",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A8%E0%A5%AA",
+    "quote": "pādena nirmitaṃ cakraṃ jalaṃdhara mahāmbhasi"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-325",
+  "s": "deity:shiva",
+  "p": "SLAYS",
+  "o": "char:jalandhara",
+  "qualifiers": {
+   "text": "text:shiva-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.24.28",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A8%E0%A5%AA",
+    "quote": "pādena nirmitaṃ cakraṃ jalaṃdhara mahāmbhasi"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-326",
+  "s": "deity:vishnu",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:jalandhara-slaying",
+  "qualifiers": {
+   "text": "text:linga-purana",
+   "role": "defeated by Jalandhara; later receives the discus"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "LiP 1.97.6; 1.98.1–25",
+    "edition": "Venkatesvara Press ed. (Bombay 1906), rev. O. Hellwig after Calcutta 1960; GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_liGgapurANa1-108.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-327",
+  "s": "deity:vishnu",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:jalandhara-slaying",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "role": "impersonates Jalandhara to Vṛndā"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.23",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A8%E0%A5%A9"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-328",
+  "s": "char:vrinda",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:jalandhara-slaying",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "role": "deceived wife; curses Viṣṇu"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.23.2–40",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A8%E0%A5%A9"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-329",
+  "s": "deity:parvati",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:jalandhara-slaying",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "role": "coveted by Jalandhara"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.18–22",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A8%E0%A5%A8"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-330",
+  "s": "char:jalandhara",
+  "p": "SPOUSE_OF",
+  "o": "char:vrinda",
+  "qualifiers": {
+   "text": "text:shiva-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.14",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%AA"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-331",
+  "s": "char:vrinda",
+  "p": "CURSES",
+  "o": "deity:vishnu",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "note": "that his own wife will be carried off in another birth"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.23",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A8%E0%A5%A9"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-332",
+  "s": "deity:shiva",
+  "p": "BLESSES",
+  "o": "deity:vishnu",
+  "qualifiers": {
+   "text": "text:linga-purana",
+   "note": "gives Viṣṇu the Sudarśana discus after the thousand-name worship"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "LiP 1.98.1–25",
+    "edition": "Venkatesvara Press ed. (Bombay 1906), rev. O. Hellwig after Calcutta 1960; GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_liGgapurANa1-108.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-333",
+  "s": "narr:shankhachuda-tulasi",
+  "p": "NARRATED_IN",
+  "o": "text:shiva-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.27–41",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%AA%E0%A5%A7",
+    "quote": "tulasyāḥ kena yatnena"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-334",
+  "s": "deity:shiva",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:shankhachuda-tulasi",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "role": "slayer"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.40",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%AA%E0%A5%A6"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-335",
+  "s": "char:shankhachuda",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:shankhachuda-tulasi",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "role": "slain"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.40",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%AA%E0%A5%A6"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-336",
+  "s": "char:tulasi",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:shankhachuda-tulasi",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "role": "deceived wife; curses Viṣṇu"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.41.5–20",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%AA%E0%A5%A7"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-337",
+  "s": "deity:vishnu",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:shankhachuda-tulasi",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "role": "disguised as Śaṅkhacūḍa"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.41.5",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%AA%E0%A5%A7",
+    "quote": "jagāma śaṃkhacūḍasya rūpeṇa tulasīgṛham"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-338",
+  "s": "deity:brahma",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:shankhachuda-tulasi",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "role": "arranges the marriage"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.28",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A8%E0%A5%AE"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-339",
+  "s": "deity:shiva",
+  "p": "SLAYS",
+  "o": "char:shankhachuda",
+  "qualifiers": {
+   "text": "text:shiva-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.40",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%AA%E0%A5%A6"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-340",
+  "s": "char:shankhachuda",
+  "p": "SPOUSE_OF",
+  "o": "char:tulasi",
+  "qualifiers": {
+   "text": "text:shiva-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.28",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A8%E0%A5%AE"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-341",
+  "s": "char:tulasi",
+  "p": "CURSES",
+  "o": "deity:vishnu",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "note": "to become a stone (the śālagrāma)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.41 (index: tvaṃ śilā bhaveti viṣṇave tulasīśāpaḥ)",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%AA%E0%A5%A7"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-342",
+  "s": "char:vrinda",
+  "p": "IDENTIFIED_WITH",
+  "o": "char:tulasi",
+  "qualifiers": {
+   "tradition": "popular Vaiṣṇava tradition (Tulasī-vivāha)",
+   "note": "Popular tradition and some Purāṇas (Padma) identify Jalandhara's Vṛndā with Tulasī; the Śiva Purāṇa keeps them as two women"
+  },
+  "evidenceClass": 6,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "article (pointer only)",
+    "url": "https://en.wikipedia.org/wiki/Vrinda_(goddess)"
+   }
+  ],
+  "confidence": "low",
+  "status": "reference-checked",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-343",
+  "s": "narr:gajasura-krittivasa",
+  "p": "NARRATED_IN",
+  "o": "text:shiva-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.57",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%AB%E0%A5%AD",
+    "quote": "yathā'vadhīttriśūlena dānavendraṃ gajāsuram"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-344",
+  "s": "deity:shiva",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:gajasura-krittivasa",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "role": "slayer"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.57.1",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%AB%E0%A5%AD"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-345",
+  "s": "char:gajasura",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:gajasura-krittivasa",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "role": "slain"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.57.1",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%AB%E0%A5%AD"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-346",
+  "s": "deity:shiva",
+  "p": "SLAYS",
+  "o": "char:gajasura",
+  "qualifiers": {
+   "text": "text:shiva-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.57.1",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%AB%E0%A5%AD"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-347",
+  "s": "char:mahishasura",
+  "p": "PARENT_OF",
+  "o": "char:gajasura",
+  "qualifiers": {
+   "text": "text:shiva-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.57.3–7",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%AB%E0%A5%AD"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-348",
+  "s": "narr:gajasura-krittivasa",
+  "p": "OCCURS_AT",
+  "o": "place:kashi",
+  "qualifiers": {
+   "text": "text:shiva-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.57 (index: kṛttivāseśvaraliṃgasthāpanam)",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%AB%E0%A5%AD"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-349",
+  "s": "deity:kamadeva",
+  "p": "SPOUSE_OF",
+  "o": "deity:rati",
+  "qualifiers": {
+   "text": "text:matsya-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 154.208",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt",
+    "quote": "upatasthe ratiyutaḥ savilāso jhaṣadhvajaḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-350",
+  "s": "narr:kama-dahana",
+  "p": "NARRATED_IN",
+  "o": "text:matsya-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 154.208–282",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt",
+    "quote": "gamito bhasmasāttūrṇaṃ kandarpaḥ kāmidarpakaḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-351",
+  "s": "narr:kama-dahana",
+  "p": "NARRATED_IN",
+  "o": "text:shiva-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.3.17–20",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A9_%28%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%A4%E0%A5%80%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%AF",
+    "quote": "bhasmasātkṛtavānsādho madanaṃ tāvadeva hi"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-352",
+  "s": "narr:kama-dahana",
+  "p": "NARRATED_IN",
+  "o": "text:vamana-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "VāmP 6.24; 6.107",
+    "edition": "A. S. Gupta ed. (All India Kashiraj Trust 1967); GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_vAmanapurANa1-69.txt",
+    "quote": "evaṃ purā devavareṇa śaṃbhunā kāmastu dagdhaḥ saśaraḥ sacāpaḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-353",
+  "s": "narr:kama-dahana",
+  "p": "NARRATED_IN",
+  "o": "text:kumarasambhava",
+  "qualifiers": {
+   "note": "Kālidāsa's kāvya retelling (canto 3)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "Kumārasambhava, canto 3 (pointer)",
+    "url": "https://en.wikipedia.org/wiki/Kumarasambhava"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-354",
+  "s": "deity:shiva",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:kama-dahana",
+  "qualifiers": {
+   "text": "text:matsya-purana",
+   "role": "burns Kāma with his third eye"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 154.247–254",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-355",
+  "s": "deity:kamadeva",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:kama-dahana",
+  "qualifiers": {
+   "text": "text:matsya-purana",
+   "role": "burnt to ashes"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 154.247–254",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-356",
+  "s": "deity:shiva",
+  "p": "SLAYS",
+  "o": "deity:kamadeva",
+  "qualifiers": {
+   "text": "text:matsya-purana",
+   "note": "reduces to ashes; Kāma survives bodiless"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 154.247–254",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-357",
+  "s": "deity:shiva",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:kama-dahana",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "role": "burns Kāma with his third eye"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.3.19.15–17",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A9_%28%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%A4%E0%A5%80%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%AF"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-358",
+  "s": "deity:kamadeva",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:kama-dahana",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "role": "burnt to ashes"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.3.19.15–17",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A9_%28%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%A4%E0%A5%80%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%AF"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-359",
+  "s": "deity:shiva",
+  "p": "SLAYS",
+  "o": "deity:kamadeva",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "note": "reduces to ashes; Kāma survives bodiless"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.3.19.15–17",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A9_%28%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%A4%E0%A5%80%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%AF"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-360",
+  "s": "deity:shiva",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:kama-dahana",
+  "qualifiers": {
+   "text": "text:vamana-purana",
+   "role": "burns Kāma with his third eye"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "VāmP 6.24",
+    "edition": "A. S. Gupta ed. (All India Kashiraj Trust 1967); GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_vAmanapurANa1-69.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-361",
+  "s": "deity:kamadeva",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:kama-dahana",
+  "qualifiers": {
+   "text": "text:vamana-purana",
+   "role": "burnt to ashes"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "VāmP 6.24",
+    "edition": "A. S. Gupta ed. (All India Kashiraj Trust 1967); GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_vAmanapurANa1-69.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-362",
+  "s": "deity:shiva",
+  "p": "SLAYS",
+  "o": "deity:kamadeva",
+  "qualifiers": {
+   "text": "text:vamana-purana",
+   "note": "reduces to ashes; Kāma survives bodiless"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "VāmP 6.24",
+    "edition": "A. S. Gupta ed. (All India Kashiraj Trust 1967); GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_vAmanapurANa1-69.txt"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-363",
+  "s": "deity:rati",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:kama-dahana",
+  "qualifiers": {
+   "text": "text:matsya-purana",
+   "role": "laments"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 154.255–282",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-364",
+  "s": "deity:rati",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:kama-dahana",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "role": "laments; later prays for his revival"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.3.19.20–27",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A9_%28%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%A4%E0%A5%80%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%AF"
+   },
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.3.51.1–14",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A9_%28%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%A4%E0%A5%80%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%AB%E0%A5%A7"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-365",
+  "s": "deity:indra",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:kama-dahana",
+  "qualifiers": {
+   "text": "text:matsya-purana",
+   "role": "sends Kāma"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 154.208–218",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-366",
+  "s": "deity:parvati",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:kama-dahana",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "role": "the one Śiva is to love"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.3.18",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A9_%28%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%A4%E0%A5%80%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%AE"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-367",
+  "s": "char:himavat",
+  "p": "PARENT_OF",
+  "o": "deity:parvati",
+  "qualifiers": {
+   "text": "text:shiva-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.3.6–7",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A9_%28%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%A4%E0%A5%80%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A6%E0%A5%AC"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-368",
+  "s": "char:himavat",
+  "p": "PARENT_OF",
+  "o": "deity:parvati",
+  "qualifiers": {
+   "text": "text:matsya-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 154.62–75",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-369",
+  "s": "char:mena",
+  "p": "PARENT_OF",
+  "o": "deity:parvati",
+  "qualifiers": {
+   "text": "text:shiva-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.3.5–6",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A9_%28%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%A4%E0%A5%80%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A6%E0%A5%AC"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-370",
+  "s": "char:himavat",
+  "p": "SPOUSE_OF",
+  "o": "char:mena",
+  "qualifiers": {
+   "text": "text:shiva-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.3.1–2",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A9_%28%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%A4%E0%A5%80%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A6%E0%A5%A7"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-371",
+  "s": "narr:parvati-tapas-marriage",
+  "p": "NARRATED_IN",
+  "o": "text:matsya-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 154.283–490",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt",
+    "quote": "śarvasya pāṇigrahaṇam agnisākṣikamakṣatam"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-372",
+  "s": "narr:parvati-tapas-marriage",
+  "p": "NARRATED_IN",
+  "o": "text:shiva-purana",
+  "qualifiers": {
+   "note": "tapas 2.3.22–23; Śiva's test 2.3.26–28; kanyādāna 2.3.48.37"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.3.22–54",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A9_%28%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%A4%E0%A5%80%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%AA%E0%A5%AE",
+    "quote": "svakanyādānamakarocchivāya vidhinoditaḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-373",
+  "s": "narr:parvati-tapas-marriage",
+  "p": "NARRATED_IN",
+  "o": "text:kumarasambhava",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:wikipedia",
+    "locator": "Kumārasambhava, cantos 5–7 (pointer)",
+    "url": "https://en.wikipedia.org/wiki/Kumarasambhava"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-374",
+  "s": "deity:parvati",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:parvati-tapas-marriage",
+  "qualifiers": {
+   "text": "text:matsya-purana",
+   "role": "ascetic bride"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 154.283–490",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-375",
+  "s": "deity:shiva",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:parvati-tapas-marriage",
+  "qualifiers": {
+   "text": "text:matsya-purana",
+   "role": "groom; tests her"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 154.283–490",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-376",
+  "s": "char:himavat",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:parvati-tapas-marriage",
+  "qualifiers": {
+   "text": "text:matsya-purana",
+   "role": "father of the bride"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 154.283–490",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-377",
+  "s": "deity:parvati",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:parvati-tapas-marriage",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "role": "ascetic bride"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.3.22–49",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A9_%28%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%A4%E0%A5%80%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A8%E0%A5%A8"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-378",
+  "s": "deity:shiva",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:parvati-tapas-marriage",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "role": "groom; tests her"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.3.22–49",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A9_%28%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%A4%E0%A5%80%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A8%E0%A5%A8"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-379",
+  "s": "char:himavat",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:parvati-tapas-marriage",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "role": "father of the bride"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.3.22–49",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A9_%28%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%A4%E0%A5%80%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A8%E0%A5%A8"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-380",
+  "s": "char:mena",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:parvati-tapas-marriage",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "role": "mother of the bride; resists the match"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.3.32; 2.3.43–44",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A9_%28%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%A4%E0%A5%80%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%AA%E0%A5%A9"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-381",
+  "s": "char:narada",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:parvati-tapas-marriage",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "role": "foretells and instructs"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.3.8; 2.3.21",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A9_%28%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%A4%E0%A5%80%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A6%E0%A5%AE"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-382",
+  "s": "deity:shiva",
+  "p": "SPOUSE_OF",
+  "o": "deity:parvati",
+  "qualifiers": {
+   "text": "text:matsya-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 154.484",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-383",
+  "s": "deity:shiva",
+  "p": "SPOUSE_OF",
+  "o": "deity:parvati",
+  "qualifiers": {
+   "text": "text:shiva-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.3.48.37",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A9_%28%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%A4%E0%A5%80%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%AA%E0%A5%AE"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-384",
+  "s": "narr:kama-dahana",
+  "p": "PRECEDES",
+  "o": "narr:parvati-tapas-marriage",
+  "qualifiers": {
+   "text": "text:matsya-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 154",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-385",
+  "s": "narr:kama-dahana",
+  "p": "PRECEDES",
+  "o": "narr:parvati-tapas-marriage",
+  "qualifiers": {
+   "text": "text:shiva-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.3.19–22",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A9_%28%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%A4%E0%A5%80%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%AF"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-386",
+  "s": "narr:parvati-tapas-marriage",
+  "p": "PRECEDES",
+  "o": "narr:birth-of-skanda",
+  "qualifiers": {
+   "text": "text:shiva-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.4.1–2",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AA_%28%E0%A4%95%E0%A5%81%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A6%E0%A5%A7"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-387",
+  "s": "narr:parvati-tapas-marriage",
+  "p": "OCCURS_AT",
+  "o": "place:kailasa",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "note": "the wedding is at Himavat's city; the couple then go to Kailāsa"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.3.54 (the couple go to Kailāsa)",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A9_%28%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%A4%E0%A5%80%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%AB%E0%A5%AA"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-388",
+  "s": "narr:ardhanarishvara-origin",
+  "p": "NARRATED_IN",
+  "o": "text:vishnu-purana",
+  "qualifiers": {
+   "note": "Rudra, born from Brahmā's brow, divides himself into male and female"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 1.7.10–13",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt",
+    "quote": "ardhanārīnaravapuḥ pracaṇḍo 'tiśarīravān"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-389",
+  "s": "narr:ardhanarishvara-origin",
+  "p": "NARRATED_IN",
+  "o": "text:markandeya-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 50.10",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt",
+    "quote": "ardhanārīnaravapuḥ puruṣo 'tiśarīravān"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-390",
+  "s": "narr:ardhanarishvara-origin",
+  "p": "NARRATED_IN",
+  "o": "text:kurma-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "KūrmP 1.11.3",
+    "edition": "GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_kUrmapurANa.txt",
+    "quote": "ardhanārīnaravapuḥ duṣprekṣyo 'tibhayaṅkaraḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-391",
+  "s": "narr:ardhanarishvara-origin",
+  "p": "NARRATED_IN",
+  "o": "text:shiva-purana",
+  "qualifiers": {
+   "note": "the Goddess separated from Śiva is asked to be born as Dakṣa's daughter (7.1.16.21–24)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ŚivP 7.1.15.1–9; 7.1.16.6–24",
+    "edition": "Venkatesvara Press ed. (Bombay), books 1 and 7; GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_zivapurANabooks-1-and-7.txt",
+    "quote": "ardhanārīśvaro bhūtvā yayau devassvayaṃ haraḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-392",
+  "s": "narr:ardhanarishvara-origin",
+  "p": "NARRATED_IN",
+  "o": "text:linga-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "LiP 1.41.10–43",
+    "edition": "Venkatesvara Press ed. (Bombay 1906), rev. O. Hellwig after Calcutta 1960; GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_liGgapurANa1-108.txt",
+    "quote": "ardhanārīśvaro bhūtvā bālārkasadṛśadyutiḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-393",
+  "s": "deity:shiva",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:ardhanarishvara-origin",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "the androgynous form"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 1.7.10–12",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-394",
+  "s": "deity:brahma",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:ardhanarishvara-origin",
+  "qualifiers": {
+   "text": "text:vishnu-purana",
+   "role": "creator who needs the female principle"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ViP 1.7.10–12",
+    "edition": "Critical edition, M. M. Pathak (Vadodara 1997–99); GRETIL e-text by P. Schreiner",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_viSNupurANa-crit.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-395",
+  "s": "deity:shiva",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:ardhanarishvara-origin",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "role": "the androgynous form"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ŚivP 7.1.15.9",
+    "edition": "Venkatesvara Press ed. (Bombay), books 1 and 7; GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_zivapurANabooks-1-and-7.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-396",
+  "s": "deity:brahma",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:ardhanarishvara-origin",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "role": "creator who needs the female principle"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ŚivP 7.1.15.9",
+    "edition": "Venkatesvara Press ed. (Bombay), books 1 and 7; GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_zivapurANabooks-1-and-7.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-397",
+  "s": "deity:shiva",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:ardhanarishvara-origin",
+  "qualifiers": {
+   "text": "text:linga-purana",
+   "role": "the androgynous form"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "LiP 1.41.43",
+    "edition": "Venkatesvara Press ed. (Bombay 1906), rev. O. Hellwig after Calcutta 1960; GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_liGgapurANa1-108.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-398",
+  "s": "deity:brahma",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:ardhanarishvara-origin",
+  "qualifiers": {
+   "text": "text:linga-purana",
+   "role": "creator who needs the female principle"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "LiP 1.41.43",
+    "edition": "Venkatesvara Press ed. (Bombay 1906), rev. O. Hellwig after Calcutta 1960; GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_liGgapurANa1-108.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-399",
+  "s": "deity:devi",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:ardhanarishvara-origin",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "role": "separated from Śiva's body"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "ŚivP 7.1.16.6",
+    "edition": "Venkatesvara Press ed. (Bombay), books 1 and 7; GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_zivapurANabooks-1-and-7.txt",
+    "quote": "sasarja vapuṣo bhāgāddevīṃ devavaro haraḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-400",
+  "s": "narr:nilakantha",
+  "p": "NARRATED_IN",
+  "o": "text:bhagavata-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 8.7.18–46",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt",
+    "quote": "yac cakāra gale nīlaṃ tac ca sādhorvibhūṣaṇam"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-401",
+  "s": "narr:nilakantha",
+  "p": "NARRATED_IN",
+  "o": "text:brahmanda-purana",
+  "qualifiers": {
+   "note": "Śiva explains his blue throat to Pārvatī"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BndP 1.25.40–91",
+    "edition": "Venkatesvara Press ed.; GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_brahmANDapurANa.txt",
+    "quote": "tatkālakūṭaṃ viṣamugravegaṃ kaṇṭhe dhṛtaṃ parvatarājaputri"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-402",
+  "s": "narr:nilakantha",
+  "p": "NARRATED_IN",
+  "o": "text:linga-purana",
+  "qualifiers": {
+   "note": "allusive: the gods praise Nīlakaṇṭha for withdrawing the kālakūṭa"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "LiP 1.86.4–9",
+    "edition": "Venkatesvara Press ed. (Bombay 1906), rev. O. Hellwig after Calcutta 1960; GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_liGgapurANa1-108.txt"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-403",
+  "s": "narr:nilakantha",
+  "p": "NARRATED_IN",
+  "o": "text:mahabharata",
+  "qualifiers": {
+   "note": "only in the critical apparatus (excluded passages), not in the constituted text"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 1.16, App. I passages after 1.16.15d and 1.16.27d; *0268, *0274",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b01/b01c016.htm",
+    "quote": "kaṇṭhe hālāhalaṃ ghoraṃ nīlakaṇṭhas tataḥ smṛtaḥ"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-404",
+  "s": "deity:shiva",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:nilakantha",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "drinks the poison"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 8.7.42–44",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-405",
+  "s": "deity:shiva",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:nilakantha",
+  "qualifiers": {
+   "text": "text:brahmanda-purana",
+   "role": "drinks the poison"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BndP 1.25.45–91",
+    "edition": "Venkatesvara Press ed.; GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_brahmANDapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-406",
+  "s": "deity:parvati",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:nilakantha",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "approves"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 8.7.40–42",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-407",
+  "s": "deity:parvati",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:nilakantha",
+  "qualifiers": {
+   "text": "text:brahmanda-purana",
+   "role": "asks about the blue throat"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BndP 1.25.40–43",
+    "edition": "Venkatesvara Press ed.; GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_brahmANDapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-408",
+  "s": "narr:samudra-manthana",
+  "p": "PRECEDES",
+  "o": "narr:nilakantha",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "note": "the poison is the first product of the churning"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 8.7",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-409",
+  "s": "narr:chanda-munda-slaying",
+  "p": "NARRATED_IN",
+  "o": "text:devi-mahatmya",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 87.1–26 (DM 7)",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt",
+    "quote": "cāmuṇḍeti tato loke khyātā devi bhaviṣyasi"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-410",
+  "s": "narr:chanda-munda-slaying",
+  "p": "NARRATED_IN",
+  "o": "psg:dm-7",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 87.1–26",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-411",
+  "s": "deity:kali",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:chanda-munda-slaying",
+  "qualifiers": {
+   "text": "text:devi-mahatmya",
+   "role": "slayer"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 87.5–22",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-412",
+  "s": "char:chanda",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:chanda-munda-slaying",
+  "qualifiers": {
+   "text": "text:devi-mahatmya",
+   "role": "slain"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 87.15–21",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-413",
+  "s": "char:munda",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:chanda-munda-slaying",
+  "qualifiers": {
+   "text": "text:devi-mahatmya",
+   "role": "slain"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 87.16–22",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-414",
+  "s": "deity:kali",
+  "p": "IDENTIFIED_WITH",
+  "o": "deity:chamunda",
+  "qualifiers": {
+   "text": "text:devi-mahatmya",
+   "note": "named Cāmuṇḍā for killing Caṇḍa and Muṇḍa"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 87.26",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-415",
+  "s": "narr:chanda-munda-slaying",
+  "p": "PRECEDES",
+  "o": "narr:raktabija-slaying",
+  "qualifiers": {
+   "text": "text:devi-mahatmya"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 87–88",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-416",
+  "s": "narr:raktabija-slaying",
+  "p": "NARRATED_IN",
+  "o": "text:devi-mahatmya",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 88.39–60 (DM 8)",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt",
+    "quote": "mukhena kālī jagṛhe raktabījasya soṇitam"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-417",
+  "s": "narr:raktabija-slaying",
+  "p": "NARRATED_IN",
+  "o": "psg:dm-5-10",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 88",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-418",
+  "s": "char:raktabija",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:raktabija-slaying",
+  "qualifiers": {
+   "text": "text:devi-mahatmya",
+   "role": "slain"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 88.39–60",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-419",
+  "s": "deity:kali",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:raktabija-slaying",
+  "qualifiers": {
+   "text": "text:devi-mahatmya",
+   "role": "drinks his blood"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 88.52–58",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-420",
+  "s": "deity:kaushiki",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:raktabija-slaying",
+  "qualifiers": {
+   "text": "text:devi-mahatmya",
+   "role": "slayer (Caṇḍikā)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 88.58–60",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-421",
+  "s": "deity:matrikas",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:raktabija-slaying",
+  "qualifiers": {
+   "text": "text:devi-mahatmya",
+   "role": "the Mothers fight"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 88.12–48",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-422",
+  "s": "narr:raktabija-slaying",
+  "p": "PRECEDES",
+  "o": "narr:shumbha-nishumbha",
+  "qualifiers": {
+   "text": "text:devi-mahatmya",
+   "note": "sub-episode within the Śumbha–Niśumbha cycle"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 88–90",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-423",
+  "s": "deity:brahmani",
+  "p": "FORM_OF",
+  "o": "deity:matrikas",
+  "qualifiers": {
+   "text": "text:devi-mahatmya",
+   "note": "one of the Mothers (śaktis of the gods)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 88.12–20",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-424",
+  "s": "deity:brahmani",
+  "p": "FORM_OF",
+  "o": "deity:brahma",
+  "qualifiers": {
+   "text": "text:devi-mahatmya",
+   "note": "the god's śakti, with his form, weapons and mount (88.12–13)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 88.14",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-425",
+  "s": "deity:brahmani",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:raktabija-slaying",
+  "qualifiers": {
+   "text": "text:devi-mahatmya",
+   "role": "Mother in the battle"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 88.31–48",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-426",
+  "s": "deity:maheshvari",
+  "p": "FORM_OF",
+  "o": "deity:matrikas",
+  "qualifiers": {
+   "text": "text:devi-mahatmya",
+   "note": "one of the Mothers (śaktis of the gods)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 88.12–20",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-427",
+  "s": "deity:maheshvari",
+  "p": "FORM_OF",
+  "o": "deity:shiva",
+  "qualifiers": {
+   "text": "text:devi-mahatmya",
+   "note": "the god's śakti, with his form, weapons and mount (88.12–13)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 88.15",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-428",
+  "s": "deity:maheshvari",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:raktabija-slaying",
+  "qualifiers": {
+   "text": "text:devi-mahatmya",
+   "role": "Mother in the battle"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 88.31–48",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-429",
+  "s": "deity:kaumari",
+  "p": "FORM_OF",
+  "o": "deity:matrikas",
+  "qualifiers": {
+   "text": "text:devi-mahatmya",
+   "note": "one of the Mothers (śaktis of the gods)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 88.12–20",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-430",
+  "s": "deity:kaumari",
+  "p": "FORM_OF",
+  "o": "deity:skanda",
+  "qualifiers": {
+   "text": "text:devi-mahatmya",
+   "note": "the god's śakti, with his form, weapons and mount (88.12–13)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 88.16",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-431",
+  "s": "deity:kaumari",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:raktabija-slaying",
+  "qualifiers": {
+   "text": "text:devi-mahatmya",
+   "role": "Mother in the battle"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 88.31–48",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-432",
+  "s": "deity:vaishnavi",
+  "p": "FORM_OF",
+  "o": "deity:matrikas",
+  "qualifiers": {
+   "text": "text:devi-mahatmya",
+   "note": "one of the Mothers (śaktis of the gods)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 88.12–20",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-433",
+  "s": "deity:vaishnavi",
+  "p": "FORM_OF",
+  "o": "deity:vishnu",
+  "qualifiers": {
+   "text": "text:devi-mahatmya",
+   "note": "the god's śakti, with his form, weapons and mount (88.12–13)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 88.17",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-434",
+  "s": "deity:vaishnavi",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:raktabija-slaying",
+  "qualifiers": {
+   "text": "text:devi-mahatmya",
+   "role": "Mother in the battle"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 88.31–48",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-435",
+  "s": "deity:varahi",
+  "p": "FORM_OF",
+  "o": "deity:matrikas",
+  "qualifiers": {
+   "text": "text:devi-mahatmya",
+   "note": "one of the Mothers (śaktis of the gods)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 88.12–20",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-436",
+  "s": "deity:varahi",
+  "p": "FORM_OF",
+  "o": "deity:varaha",
+  "qualifiers": {
+   "text": "text:devi-mahatmya",
+   "note": "the god's śakti, with his form, weapons and mount (88.12–13)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 88.18",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-437",
+  "s": "deity:varahi",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:raktabija-slaying",
+  "qualifiers": {
+   "text": "text:devi-mahatmya",
+   "role": "Mother in the battle"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 88.31–48",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-438",
+  "s": "deity:narasimhi",
+  "p": "FORM_OF",
+  "o": "deity:matrikas",
+  "qualifiers": {
+   "text": "text:devi-mahatmya",
+   "note": "one of the Mothers (śaktis of the gods)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 88.12–20",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-439",
+  "s": "deity:narasimhi",
+  "p": "FORM_OF",
+  "o": "deity:narasimha",
+  "qualifiers": {
+   "text": "text:devi-mahatmya",
+   "note": "the god's śakti, with his form, weapons and mount (88.12–13)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 88.19",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-440",
+  "s": "deity:narasimhi",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:raktabija-slaying",
+  "qualifiers": {
+   "text": "text:devi-mahatmya",
+   "role": "Mother in the battle"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 88.31–48",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-441",
+  "s": "deity:aindri",
+  "p": "FORM_OF",
+  "o": "deity:matrikas",
+  "qualifiers": {
+   "text": "text:devi-mahatmya",
+   "note": "one of the Mothers (śaktis of the gods)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 88.12–20",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-442",
+  "s": "deity:aindri",
+  "p": "FORM_OF",
+  "o": "deity:indra",
+  "qualifiers": {
+   "text": "text:devi-mahatmya",
+   "note": "the god's śakti, with his form, weapons and mount (88.12–13)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 88.20",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-443",
+  "s": "deity:aindri",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:raktabija-slaying",
+  "qualifiers": {
+   "text": "text:devi-mahatmya",
+   "role": "Mother in the battle"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 88.31–48",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-444",
+  "s": "deity:shivaduti",
+  "p": "FORM_OF",
+  "o": "deity:devi",
+  "qualifiers": {
+   "text": "text:devi-mahatmya"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 88.21–27",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-445",
+  "s": "deity:shivaduti",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:raktabija-slaying",
+  "qualifiers": {
+   "text": "text:devi-mahatmya",
+   "role": "messenger-sender; fights"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MkP 88.27–37",
+    "edition": "GRETIL e-text (SANSKNET); Devī Māhātmya = MkP 81–93 in this edition",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_mArkaNDeyapurANa1-93.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-446",
+  "s": "narr:bana-usha-aniruddha",
+  "p": "NARRATED_IN",
+  "o": "text:shiva-purana",
+  "qualifiers": {
+   "note": "Śaiva version: Bāṇa's devotion, defeat, dance before Śiva and grant of gaṇa-status (2.5.56)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.51–56",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%AB%E0%A5%A7"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-447",
+  "s": "deity:shiva",
+  "p": "BLESSES",
+  "o": "char:banasura",
+  "qualifiers": {
+   "text": "text:shiva-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.5.56 (index: tasmai gāṇapatyapradānam)",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AB_%28%E0%A4%AF%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%AB%E0%A5%AC"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-448",
+  "s": "deity:shiva",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:descent-of-ganga",
+  "qualifiers": {
+   "text": "text:valmiki-ramayana",
+   "role": "receives Gaṅgā on his head"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:vr-critical-edition",
+    "locator": "VR (CE) 1.42.3–5",
+    "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt",
+    "quote": "śirasā dhārayiṣyāmi śailarājasutām aham"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-449",
+  "s": "deity:shiva",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:descent-of-ganga",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "bears the force of her fall"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 9.9.7–9",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt",
+    "quote": "dhārayiṣyati te vegaṃ rudrastv ātmā śarīriṇām"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-450",
+  "s": "deity:ganga",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:descent-of-ganga",
+  "qualifiers": {
+   "text": "text:valmiki-ramayana",
+   "role": "held in Śiva's matted locks"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:vr-critical-edition",
+    "locator": "VR (CE) 1.42.5",
+    "edition": "Baroda Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt",
+    "quote": "naiva sā nirgamaṃ lebhe jaṭāmaṇḍalamohitā"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-451",
+  "s": "narr:madhu-kaitabha",
+  "p": "NARRATED_IN",
+  "o": "text:mahabharata",
+  "qualifiers": {
+   "note": "Viṣṇu beheads them on his bare thighs with the discus (3.194.30)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 3.194.8–30",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b03/b03c194.htm",
+    "quote": "svakāv anāvṛtāv ūrū dṛṣṭvā devavaras tadā"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-452",
+  "s": "narr:madhu-kaitabha",
+  "p": "NARRATED_IN",
+  "o": "text:harivamsha",
+  "qualifiers": {
+   "note": "their fat (medas) becomes the earth Medinī"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 42.18–33",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-453",
+  "s": "narr:madhu-kaitabha",
+  "p": "NARRATED_IN",
+  "o": "psg:mbh-narayaniya",
+  "qualifiers": {
+   "note": "they steal the Vedas; Hayaśiras recovers them and Nārāyaṇa kills the demons"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 12.335.24–64",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b12/b12c335.htm"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-454",
+  "s": "narr:madhu-kaitabha",
+  "p": "NARRATED_IN",
+  "o": "text:bhagavata-purana",
+  "qualifiers": {
+   "note": "allusion in Prahlāda's hymn: Hayaśiras kills Madhu and Kaiṭabha who stole the Vedas"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 7.9.37",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-455",
+  "s": "deity:vishnu",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:madhu-kaitabha",
+  "qualifiers": {
+   "text": "text:mahabharata",
+   "role": "slays them on his thighs"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 3.194.30",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b03/b03c194.htm"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-456",
+  "s": "deity:hayagriva",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:madhu-kaitabha",
+  "qualifiers": {
+   "text": "text:mahabharata",
+   "role": "recovers the Vedas"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 12.335.24–55",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b12/b12c335.htm"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-457",
+  "s": "deity:hayagriva",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:madhu-kaitabha",
+  "qualifiers": {
+   "text": "text:bhagavata-purana",
+   "role": "slays them"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "BhP 7.9.37",
+    "edition": "GRETIL e-text (U. Stiehl), vulgate numbering",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhAgavatapurANa.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-458",
+  "s": "deity:vishnu",
+  "p": "SLAYS",
+  "o": "char:madhu",
+  "qualifiers": {
+   "text": "text:mahabharata"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 3.194.30",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b03/b03c194.htm"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-459",
+  "s": "deity:vishnu",
+  "p": "SLAYS",
+  "o": "char:kaitabha",
+  "qualifiers": {
+   "text": "text:mahabharata"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:mbh-critical-edition",
+    "locator": "MBh (CE) 3.194.30",
+    "edition": "BORI Critical Edition (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/sas/b03/b03c194.htm"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-460",
+  "s": "deity:vishnu",
+  "p": "SLAYS",
+  "o": "char:madhu",
+  "qualifiers": {
+   "text": "text:harivamsha"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:harivamsha-ce",
+    "locator": "HV (CE) 42.23–30",
+    "edition": "Vaidya CE (GRETIL e-text)",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_harivaMza.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-461",
+  "s": "narr:ganesha-birth-shiva-purana",
+  "p": "NARRATED_IN",
+  "o": "text:shiva-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.4.13.18–2.4.18.37",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AA_%28%E0%A4%95%E0%A5%81%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%A9",
+    "quote": "vicārya ca sā devī vapuṣo malasaṃbhavam / puruṣaṃ nirmamau"
+   },
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.4.16.34",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AA_%28%E0%A4%95%E0%A5%81%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%AC",
+    "quote": "āgatya ca triśūlena tacchiro nirakṛṃtata"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-462",
+  "s": "deity:parvati",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:ganesha-birth-shiva-purana",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "role": "creates him from her body"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.4.13.18–26",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AA_%28%E0%A4%95%E0%A5%81%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%A9"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-463",
+  "s": "deity:ganesha",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:ganesha-birth-shiva-purana",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "role": "door-keeper; beheaded and revived"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.4.13–18",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AA_%28%E0%A4%95%E0%A5%81%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%A9"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-464",
+  "s": "deity:shiva",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:ganesha-birth-shiva-purana",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "role": "beheads him with the trident"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.4.16.34",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AA_%28%E0%A4%95%E0%A5%81%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%AC"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-465",
+  "s": "deity:nandin",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:ganesha-birth-shiva-purana",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "role": "Śiva's gaṇa repulsed"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.4.13.11–15",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AA_%28%E0%A4%95%E0%A5%81%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%A9"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-466",
+  "s": "deity:vishnu",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:ganesha-birth-shiva-purana",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "role": "fights Gaṇeśa"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.4.16",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AA_%28%E0%A4%95%E0%A5%81%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%AC"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-467",
+  "s": "deity:parvati",
+  "p": "PARENT_OF",
+  "o": "deity:ganesha",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "note": "fashioned from the dirt of her body"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.4.13.20–25",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AA_%28%E0%A4%95%E0%A5%81%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%A9",
+    "quote": "matputrastvaṃ madīyosi"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-468",
+  "s": "deity:shiva",
+  "p": "SLAYS",
+  "o": "deity:ganesha",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "note": "beheads him; revived with an elephant head (2.4.17–18)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.4.16.34",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AA_%28%E0%A4%95%E0%A5%81%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%AC"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-469",
+  "s": "deity:shiva",
+  "p": "BLESSES",
+  "o": "deity:ganesha",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "note": "first worship and leadership of the gaṇas"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.4.18.29–37",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AA_%28%E0%A4%95%E0%A5%81%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%AE",
+    "quote": "mama sarvagaṇādhyakṣaḥ saṃpūjyastvaṃ bhavādhunā"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-470",
+  "s": "narr:ganesha-birth-shani",
+  "p": "NARRATED_IN",
+  "o": "text:brahmavaivarta-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "BVP 3.12.1–20",
+    "edition": "Brahmavaivarta Purāṇa (vulgate), Gaṇapatikhaṇḍa; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%AC%E0%A5%8D%E0%A4%B0%E0%A4%B9%E0%A5%8D%E0%A4%AE%E0%A4%B5%E0%A5%88%E0%A4%B5%E0%A4%B0%E0%A5%8D%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A9_%28%E0%A4%97%E0%A4%A3%E0%A4%AA%E0%A4%A4%E0%A4%BF%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%A8",
+    "quote": "śaneśca dṛṣṭimātreṇa cicchide mastakaṃ mune"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-471",
+  "s": "deity:ganesha",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:ganesha-birth-shani",
+  "qualifiers": {
+   "text": "text:brahmavaivarta-purana",
+   "role": "infant beheaded by a glance"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "BVP 3.12.5–6",
+    "edition": "Brahmavaivarta Purāṇa (vulgate), Gaṇapatikhaṇḍa; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%AC%E0%A5%8D%E0%A4%B0%E0%A4%B9%E0%A5%8D%E0%A4%AE%E0%A4%B5%E0%A5%88%E0%A4%B5%E0%A4%B0%E0%A5%8D%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A9_%28%E0%A4%97%E0%A4%A3%E0%A4%AA%E0%A4%A4%E0%A4%BF%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%A8"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-472",
+  "s": "deity:parvati",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:ganesha-birth-shani",
+  "qualifiers": {
+   "text": "text:brahmavaivarta-purana",
+   "role": "mother; curses Śani"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "BVP 3.12.1–6; 3.12.55–57",
+    "edition": "Brahmavaivarta Purāṇa (vulgate), Gaṇapatikhaṇḍa; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%AC%E0%A5%8D%E0%A4%B0%E0%A4%B9%E0%A5%8D%E0%A4%AE%E0%A4%B5%E0%A5%88%E0%A4%B5%E0%A4%B0%E0%A5%8D%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A9_%28%E0%A4%97%E0%A4%A3%E0%A4%AA%E0%A4%A4%E0%A4%BF%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%A8"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-473",
+  "s": "deity:vishnu",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:ganesha-birth-shani",
+  "qualifiers": {
+   "text": "text:brahmavaivarta-purana",
+   "role": "brings the elephant head"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "BVP 3.12.11–18",
+    "edition": "Brahmavaivarta Purāṇa (vulgate), Gaṇapatikhaṇḍa; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%AC%E0%A5%8D%E0%A4%B0%E0%A4%B9%E0%A5%8D%E0%A4%AE%E0%A4%B5%E0%A5%88%E0%A4%B5%E0%A4%B0%E0%A5%8D%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A9_%28%E0%A4%97%E0%A4%A3%E0%A4%AA%E0%A4%A4%E0%A4%BF%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%A8",
+    "quote": "muṇḍātuṇḍaṃ pṛthakkṛtya yuyuje'nyagajasya ca"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-474",
+  "s": "deity:garuda",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:ganesha-birth-shani",
+  "qualifiers": {
+   "text": "text:brahmavaivarta-purana",
+   "role": "Viṣṇu's mount"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "BVP 3.12.15",
+    "edition": "Brahmavaivarta Purāṇa (vulgate), Gaṇapatikhaṇḍa; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%AC%E0%A5%8D%E0%A4%B0%E0%A4%B9%E0%A5%8D%E0%A4%AE%E0%A4%B5%E0%A5%88%E0%A4%B5%E0%A4%B0%E0%A5%8D%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%A9_%28%E0%A4%97%E0%A4%A3%E0%A4%AA%E0%A4%A4%E0%A4%BF%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%A8"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-475",
+  "s": "narr:ganesha-birth-matsya",
+  "p": "NARRATED_IN",
+  "o": "text:matsya-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 154.501–505",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt",
+    "quote": "tadudvartanakaṃ gṛhya naraṃ cakre gajānanam"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-476",
+  "s": "deity:parvati",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:ganesha-birth-matsya",
+  "qualifiers": {
+   "text": "text:matsya-purana",
+   "role": "makes the figure"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 154.502",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-477",
+  "s": "deity:ganesha",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:ganesha-birth-matsya",
+  "qualifiers": {
+   "text": "text:matsya-purana",
+   "role": "elephant-headed from the start"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 154.502–505",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-478",
+  "s": "deity:ganga",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:ganesha-birth-matsya",
+  "qualifiers": {
+   "text": "text:matsya-purana",
+   "role": "claims him as son (Gāṅgeya)"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 154.505",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt",
+    "quote": "gāṅgeya iti devaistu pūjito 'bhūdgajānanaḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-479",
+  "s": "deity:brahma",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:ganesha-birth-matsya",
+  "qualifiers": {
+   "text": "text:matsya-purana",
+   "role": "grants lordship of the Vināyakas"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 154.505",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt",
+    "quote": "vināyakādhipatyaṃ ca dadāvasya pitāmahaḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-480",
+  "s": "deity:parvati",
+  "p": "PARENT_OF",
+  "o": "deity:ganesha",
+  "qualifiers": {
+   "text": "text:matsya-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "MatsP 154.502",
+    "edition": "Calcutta: Caukhamba Vidyabhavan 1954; GRETIL e-text (O. Hellwig), adhy. 1–176",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_matsyapurANa1-176.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-481",
+  "s": "narr:ganesha-birth-linga",
+  "p": "NARRATED_IN",
+  "o": "text:linga-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "LiP 1.104.1–1.105.29",
+    "edition": "Venkatesvara Press ed. (Bombay 1906), rev. O. Hellwig after Calcutta 1960; GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_liGgapurANa1-108.txt",
+    "quote": "kathaṃ vināyako jāto gajavaktro gaṇeśvaraḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-482",
+  "s": "deity:shiva",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:ganesha-birth-linga",
+  "qualifiers": {
+   "text": "text:linga-purana",
+   "role": "takes the form of Gaṇeśvara"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "LiP 1.105.7",
+    "edition": "Venkatesvara Press ed. (Bombay 1906), rev. O. Hellwig after Calcutta 1960; GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_liGgapurANa1-108.txt",
+    "quote": "gaṇeśvaraṃ sureśvaraṃ vapurdadhāra saḥ śivaḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-483",
+  "s": "deity:ganesha",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:ganesha-birth-linga",
+  "qualifiers": {
+   "text": "text:linga-purana",
+   "role": "obstacle-maker for the daityas"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "LiP 1.105.13–29",
+    "edition": "Venkatesvara Press ed. (Bombay 1906), rev. O. Hellwig after Calcutta 1960; GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_liGgapurANa1-108.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-484",
+  "s": "deity:parvati",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:ganesha-birth-linga",
+  "qualifiers": {
+   "text": "text:linga-purana",
+   "role": "Ambikā, who bears him"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "LiP 1.105.9",
+    "edition": "Venkatesvara Press ed. (Bombay 1906), rev. O. Hellwig after Calcutta 1960; GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_liGgapurANa1-108.txt"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-485",
+  "s": "deity:ganesha",
+  "p": "FORM_OF",
+  "o": "deity:shiva",
+  "qualifiers": {
+   "text": "text:linga-purana",
+   "note": "Śiva himself assumes the body of Gaṇeśvara"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:gretil",
+    "locator": "LiP 1.105.7",
+    "edition": "Venkatesvara Press ed. (Bombay 1906), rev. O. Hellwig after Calcutta 1960; GRETIL e-text",
+    "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_liGgapurANa1-108.txt"
+   }
+  ],
+  "confidence": "medium",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-486",
+  "s": "narr:ganesha-birth-varaha",
+  "p": "NARRATED_IN",
+  "o": "text:varaha-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "VarP 23.1–21",
+    "edition": "Varāha Purāṇa (vulgate); Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B5%E0%A4%B0%E0%A4%BE%E0%A4%B9%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A8%E0%A5%A9",
+    "quote": "kumāra gajavaktrastvaṃ pralambajaṭharastathā"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-487",
+  "s": "deity:shiva",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:ganesha-birth-varaha",
+  "qualifiers": {
+   "text": "text:varaha-purana",
+   "role": "father by laughter; curses him"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "VarP 23.10–17",
+    "edition": "Varāha Purāṇa (vulgate); Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B5%E0%A4%B0%E0%A4%BE%E0%A4%B9%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A8%E0%A5%A9"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-488",
+  "s": "deity:ganesha",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:ganesha-birth-varaha",
+  "qualifiers": {
+   "text": "text:varaha-purana",
+   "role": "cursed youth"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "VarP 23.13–17",
+    "edition": "Varāha Purāṇa (vulgate); Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B5%E0%A4%B0%E0%A4%BE%E0%A4%B9%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A8%E0%A5%A9"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-489",
+  "s": "deity:parvati",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:ganesha-birth-varaha",
+  "qualifiers": {
+   "text": "text:varaha-purana",
+   "role": "Umā, whose gaze provokes the curse"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "VarP 23.15",
+    "edition": "Varāha Purāṇa (vulgate); Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B5%E0%A4%B0%E0%A4%BE%E0%A4%B9%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A8%E0%A5%A9"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-490",
+  "s": "deity:shiva",
+  "p": "PARENT_OF",
+  "o": "deity:ganesha",
+  "qualifiers": {
+   "text": "text:varaha-purana",
+   "note": "born from Śiva's laughter"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "VarP 23.13",
+    "edition": "Varāha Purāṇa (vulgate); Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B5%E0%A4%B0%E0%A4%BE%E0%A4%B9%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A8%E0%A5%A9",
+    "quote": "mūrttimānatitejasvī hasataḥ parameṣṭhinaḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-491",
+  "s": "deity:shiva",
+  "p": "CURSES",
+  "o": "deity:ganesha",
+  "qualifiers": {
+   "text": "text:varaha-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "VarP 23.16–17",
+    "edition": "Varāha Purāṇa (vulgate); Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B5%E0%A4%B0%E0%A4%BE%E0%A4%B9%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A8%E0%A5%A9"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-492",
+  "s": "deity:ganesha",
+  "p": "SPOUSE_OF",
+  "o": "deity:siddhi",
+  "qualifiers": {
+   "text": "text:shiva-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.4.20.2–3",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AA_%28%E0%A4%95%E0%A5%81%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A8%E0%A5%A6"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-493",
+  "s": "deity:ganesha",
+  "p": "SPOUSE_OF",
+  "o": "deity:buddhi",
+  "qualifiers": {
+   "text": "text:shiva-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.4.20.2–3",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AA_%28%E0%A4%95%E0%A5%81%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A8%E0%A5%A6"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-494",
+  "s": "narr:ganesha-race",
+  "p": "NARRATED_IN",
+  "o": "text:shiva-purana",
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.4.19.14–55; 2.4.20.1–12",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AA_%28%E0%A4%95%E0%A5%81%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%AF",
+    "quote": "yaścaiva pṛthivīṃ sarvāṃ krāṃtvā pūrvamupāvrajet / tasyaiva prathamaṃ kāryo vivāhaḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-495",
+  "s": "deity:ganesha",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:ganesha-race",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "role": "circles his parents and wins"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.4.19.20–27",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AA_%28%E0%A4%95%E0%A5%81%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%AF",
+    "quote": "evaṃ ca kṛtavān sapta praṇāmāstu tathaiva saḥ"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-496",
+  "s": "deity:skanda",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:ganesha-race",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "role": "circles the earth; withdraws to Krauñca"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.4.19.19",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AA_%28%E0%A4%95%E0%A5%81%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%AF"
+   },
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.4.20.9–12",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AA_%28%E0%A4%95%E0%A5%81%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A8%E0%A5%A6"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-497",
+  "s": "deity:shiva",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:ganesha-race",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "role": "sets the contest"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.4.19.15–18",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AA_%28%E0%A4%95%E0%A5%81%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%AF"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-498",
+  "s": "deity:parvati",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:ganesha-race",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "role": "sets the contest"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.4.19.15–18",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AA_%28%E0%A4%95%E0%A5%81%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%AF"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-499",
+  "s": "narr:ganesha-birth-shiva-purana",
+  "p": "PRECEDES",
+  "o": "narr:ganesha-race",
+  "qualifiers": {
+   "text": "text:shiva-purana"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.4.18–19",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AA_%28%E0%A4%95%E0%A5%81%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%AE"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-500",
+  "s": "deity:shiva",
+  "p": "PARENT_OF",
+  "o": "deity:ganesha",
+  "qualifiers": {
+   "text": "text:shiva-purana",
+   "note": "Śiva and Pārvatī address both Gaṇeśa and Skanda as their sons"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:sa-wikisource",
+    "locator": "ŚivP 2.4.19.15–16",
+    "edition": "Śiva Purāṇa (vulgate), Rudrasaṃhitā; Sanskrit Wikisource e-text",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%AE%E0%A5%8D/%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE_%E0%A5%A8_%28%E0%A4%B0%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A4%BE%29/%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83_%E0%A5%AA_%28%E0%A4%95%E0%A5%81%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A4%96%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%83%29/%E0%A4%85%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%83_%E0%A5%A7%E0%A5%AF"
+   }
+  ],
+  "confidence": "high",
+  "status": "verified-online",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-501",
+  "s": "narr:ganesha-scribe",
+  "p": "NARRATED_IN",
+  "o": "text:mahabharata",
+  "qualifiers": {
+   "note": "vulgate (Bombay) 1.1.75–79 only; excluded from the constituted text of the CE"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:rocher-1991-ganesha",
+    "locator": "pp. 71–72"
+   },
+   {
+    "source": "src:krishan-1999",
+    "locator": "p. 31 n. 4"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "article (pointer only)",
+    "url": "https://en.wikipedia.org/wiki/Ganesha"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-502",
+  "s": "deity:ganesha",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:ganesha-scribe",
+  "qualifiers": {
+   "text": "text:mahabharata",
+   "role": "scribe",
+   "note": "vulgate only"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:rocher-1991-ganesha",
+    "locator": "pp. 71–72"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "article (pointer only)",
+    "url": "https://en.wikipedia.org/wiki/Ganesha"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-503",
+  "s": "char:vyasa",
+  "p": "PARTICIPANT_IN",
+  "o": "narr:ganesha-scribe",
+  "qualifiers": {
+   "text": "text:mahabharata",
+   "role": "dictates",
+   "note": "vulgate only"
+  },
+  "evidenceClass": 1,
+  "sources": [
+   {
+    "source": "src:rocher-1991-ganesha",
+    "locator": "pp. 71–72"
+   },
+   {
+    "source": "src:wikipedia",
+    "locator": "article (pointer only)",
+    "url": "https://en.wikipedia.org/wiki/Ganesha"
+   }
+  ],
+  "confidence": "medium",
+  "status": "reference-checked",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-504",
+  "s": "claim:ganesha-scribe-interpolation",
+  "p": "CONCERNS",
+  "o": "narr:ganesha-scribe",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:rocher-1991-ganesha",
+    "locator": "pp. 71–72"
+   },
+   {
+    "source": "src:winternitz-1898"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
+ },
+ {
+  "id": "purana:r2-505",
+  "s": "claim:ganesha-scribe-interpolation",
+  "p": "CONCERNS",
+  "o": "text:mahabharata",
+  "evidenceClass": 5,
+  "sources": [
+   {
+    "source": "src:sukthankar-1933"
+   }
+  ],
+  "confidence": "high",
+  "status": "reference-checked",
+  "agent": "purana",
+  "lastVerified": "2026-11-08"
  }
 ]

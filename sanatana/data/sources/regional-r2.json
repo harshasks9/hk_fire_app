@@ -57,15 +57,6 @@
   "agent": "regional"
  },
  {
-  "id": "src:mcgregor-1984",
-  "type": "scholarly-book",
-  "title": "Hindi Literature from its Beginnings to the Nineteenth Century (A History of Indian Literature, vol. VIII, fasc. 6)",
-  "author": "R. S. McGregor",
-  "year": "1984",
-  "publisher": "Otto Harrassowitz, Wiesbaden",
-  "agent": "regional"
- },
- {
   "id": "src:barz-1976",
   "type": "scholarly-book",
   "title": "The Bhakti Sect of Vallabhācārya",
@@ -273,15 +264,6 @@
   "agent": "regional"
  },
  {
-  "id": "src:eschmann-kulke-tripathi-1978",
-  "type": "scholarly-book",
-  "title": "The Cult of Jagannath and the Regionalization of Orissa",
-  "author": "Anncharlott Eschmann, Hermann Kulke and Gaya Charan Tripathi (eds.)",
-  "year": "1978",
-  "publisher": "Manohar, New Delhi",
-  "agent": "regional"
- },
- {
   "id": "src:sekar-1992",
   "type": "scholarly-book",
   "title": "The Sabarimalai Pilgrimage and Ayyappan Cultus",
@@ -423,6 +405,10 @@
   "author": "Stuart Robson (ed. and trans.)",
   "year": "2008",
   "publisher": "KITLV Press, Leiden",
+  "url": "https://archive.org/details/oapen-20.500.12657-34659",
+  "urlChecked": true,
+  "license": "open access (OAPEN)",
+  "notes": "Introduction read on 2026-11-08 (Canto 36.2 names Mpu Kanwa, the work and King Airlangga, r. 1019–42).",
   "agent": "regional"
  },
  {
@@ -471,6 +457,30 @@
   "author": "Kama Maclean",
   "year": "2003",
   "publisher": "Journal of Asian Studies 62 (3)",
+  "agent": "regional"
+ },
+ {
+  "id": "src:tiruppukal-pm",
+  "type": "primary-text",
+  "title": "Tiruppukaḻ of Aruṇakirinātar, parts 1–4 (songs 1–1326), Unicode e-text",
+  "author": "Project Madurai (e-text prepared from the Kaumaram.com Mylai text)",
+  "year": "1999–2004",
+  "publisher": "Project Madurai",
+  "url": "https://www.projectmadurai.org/pm_etexts/utf8/pmuni0180.html",
+  "urlChecked": true,
+  "notes": "Part 1 (songs 1–330) checked on 2026-11-08 for its shrine sections.",
+  "agent": "regional"
+ },
+ {
+  "id": "src:zoetmulder-1983",
+  "type": "scholarly-book",
+  "title": "Kalangwan: Sastra Jawa Kuno Selayang Pandang (Indonesian translation of Kalangwan, 1974)",
+  "author": "P. J. Zoetmulder (trans. Dick Hartoko)",
+  "year": "1983",
+  "publisher": "Djambatan, Jakarta",
+  "url": "https://archive.org/details/kalangwan-sastra-jawa-kuno-selayang-pandang-1983",
+  "urlChecked": true,
+  "notes": "archive.org full text read on 2026-11-08 for the Wirāṭaparwa epilogue (pp. 109–110), the Bhāratayuddha chronogram and patron (pp. 339–341) and the chapter list.",
   "agent": "regional"
  }
 ]

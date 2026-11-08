@@ -322,15 +322,6 @@
   "agent": "epic"
  },
  {
-  "id": "src:stein-1900",
-  "type": "translation",
-  "title": "Kalhaṇa’s Rājataraṅgiṇī: A Chronicle of the Kings of Kaśmīr (2 vols.)",
-  "author": "M. A. Stein (trans.)",
-  "year": "1900",
-  "publisher": "Westminster: Archibald Constable",
-  "agent": "epic"
- },
- {
   "id": "src:slaje-1994",
   "type": "scholarly-book",
   "title": "Vom Mokṣopāya-Śāstra zum Yogavāsiṣṭha-Mahārāmāyaṇa",
@@ -349,21 +340,12 @@
   "agent": "epic"
  },
  {
-  "id": "src:zvelebil-1974",
-  "type": "scholarly-book",
-  "title": "Tamil Literature (A History of Indian Literature X.1)",
-  "author": "Kamil V. Zvelebil",
-  "year": "1974",
-  "publisher": "Wiesbaden: Otto Harrassowitz",
-  "agent": "epic"
- },
- {
-  "id": "src:sen-1960",
-  "type": "scholarly-book",
-  "title": "History of Bengali Literature",
-  "author": "Sukumar Sen",
-  "year": "1960",
-  "publisher": "New Delhi: Sahitya Akademi",
+  "id": "src:dundas-2017",
+  "type": "translation",
+  "title": "The Killing of Shishupala by Magha (Murty Classical Library of India)",
+  "author": "Paul Dundas (trans.)",
+  "year": "2017",
+  "publisher": "Cambridge, Mass.: Harvard University Press",
   "agent": "epic"
  }
 ]
