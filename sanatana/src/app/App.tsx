@@ -10,6 +10,7 @@ import { Texts } from '../pages/Texts.tsx'
 import { Discoveries } from '../pages/Discoveries.tsx'
 import { Sources } from '../pages/Sources.tsx'
 import { Compare } from '../pages/Compare.tsx'
+import { IndexAZ } from '../pages/IndexAZ.tsx'
 
 const Explore = lazy(() => import('../pages/Explore.tsx'))
 const Atlas = lazy(() => import('../pages/Atlas.tsx'))
@@ -23,6 +24,7 @@ const NAV = [
   { path: 'texts', label: 'Texts' },
   { path: 'narratives', label: 'Narratives' },
   { path: 'compare', label: 'Compare' },
+  { path: 'index', label: 'A–Z' },
   { path: 'discoveries', label: 'Discoveries' },
   { path: 'sources', label: 'Sources' },
 ]
@@ -78,6 +80,7 @@ export function App() {
     case 'discoveries': body = <Discoveries route={route} />; break
     case 'sources': body = <Sources route={route} />; break
     case 'compare': body = <Compare id={route.path[1]} />; break
+    case 'index': body = <IndexAZ route={route} />; break
     default: body = <div className="max-w-3xl mx-auto px-4 py-24 text-center"><p className="display text-4xl">Not found</p><a className="link" href="#/">Return to the beginning</a></div>
   }
 
