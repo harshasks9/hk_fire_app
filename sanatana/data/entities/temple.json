@@ -7329,10 +7329,13 @@
     "source": "src:wikipedia",
     "locator": "coordinates (infobox / title coordinates)",
     "url": "https://en.wikipedia.org/wiki/Jageshwar"
+   },
+   {
+    "source": "src:michell-1989"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
   "limits": "The jyotirliṅga claim competes with Dwarka and Aundha.",
   "lastVerified": "2026-11-08"
@@ -8323,10 +8326,13 @@
     "source": "src:wikidata",
     "locator": "P625 coordinate location",
     "url": "https://www.wikidata.org/wiki/Q11157349"
+   },
+   {
+    "source": "src:dumarcay-1986"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
   "limits": "The Pāṇḍava names are modern and do not indicate original dedications or any link with the Mahābhārata.",
   "lastVerified": "2026-11-08"

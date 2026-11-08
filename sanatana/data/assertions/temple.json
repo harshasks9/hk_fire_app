@@ -113,12 +113,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Gangaikonda_Cholapuram"
+   },
+   {
+    "source": "src:dehejia-1990"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:7",
@@ -150,12 +154,19 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Gangaikonda_Cholapuram"
+   },
+   {
+    "source": "src:dehejia-1990"
+   },
+   {
+    "source": "src:sastri-1955"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:9",
@@ -167,12 +178,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Airavatesvara_Temple"
+   },
+   {
+    "source": "src:dehejia-1990"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:10",
@@ -184,12 +199,19 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Airavatesvara_Temple"
+   },
+   {
+    "source": "src:dehejia-1990"
+   },
+   {
+    "source": "src:sastri-1955"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:11",
@@ -201,12 +223,19 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Airavatesvara_Temple"
+   },
+   {
+    "source": "src:dehejia-1990"
+   },
+   {
+    "source": "src:sastri-1955"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:12",
@@ -283,12 +312,19 @@
     "source": "src:wikipedia",
     "locator": "History",
     "url": "https://en.wikipedia.org/wiki/Thillai_Nataraja_Temple,_Chidambaram"
+   },
+   {
+    "source": "src:younger-1995"
+   },
+   {
+    "source": "src:smith-1996"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:16",
@@ -397,12 +433,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Ranganathaswamy_Temple,_Srirangam"
+   },
+   {
+    "source": "src:michell-2000"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:22",
@@ -414,12 +454,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Ranganathaswamy_Temple,_Srirangam"
+   },
+   {
+    "source": "src:michell-2000"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:23",
@@ -454,12 +498,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Meenakshi_Temple"
+   },
+   {
+    "source": "src:fuller-1984"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:25",
@@ -720,12 +768,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Ekambareswarar_Temple_(Kanchipuram)"
+   },
+   {
+    "source": "src:michell-2000"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:39",
@@ -737,12 +789,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Kailasanathar_Temple,_Kanchipuram"
+   },
+   {
+    "source": "src:harle-1994"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:40",
@@ -774,12 +830,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Kailasanathar_Temple,_Kanchipuram"
+   },
+   {
+    "source": "src:harle-1994"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:42",
@@ -810,12 +870,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Tiru_Parameswara_Vinnagaram"
+   },
+   {
+    "source": "src:harle-1994"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:44",
@@ -827,12 +891,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Tiru_Parameswara_Vinnagaram"
+   },
+   {
+    "source": "src:harle-1994"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:45",
@@ -844,12 +912,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Tiru_Parameswara_Vinnagaram"
+   },
+   {
+    "source": "src:harle-1994"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:46",
@@ -1003,12 +1075,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Shore_Temple"
+   },
+   {
+    "source": "src:harle-1994"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:54",
@@ -1023,12 +1099,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Shore_Temple"
+   },
+   {
+    "source": "src:harle-1994"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:55",
@@ -1040,12 +1120,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Shore_Temple"
+   },
+   {
+    "source": "src:harle-1994"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:56",
@@ -1057,12 +1141,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Shore_Temple"
+   },
+   {
+    "source": "src:harle-1994"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:57",
@@ -1091,13 +1179,17 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Pancha_Rathas"
+   },
+   {
+    "source": "src:harle-1994"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "competing": "Some inscriptions have been read as indicating work under Rājasiṃha.",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:59",
@@ -1109,12 +1201,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Pancha_Rathas"
+   },
+   {
+    "source": "src:harle-1994"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:60",
@@ -1163,12 +1259,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Subramaniya_Swamy_Temple,_Thiruparankundram"
+   },
+   {
+    "source": "src:clothey-1978"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:63",
@@ -1197,12 +1297,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Thiruchendur_Murugan_Temple"
+   },
+   {
+    "source": "src:clothey-1978"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:65",
@@ -1214,12 +1318,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Palani_Murugan_Temple"
+   },
+   {
+    "source": "src:clothey-1978"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:66",
@@ -1231,12 +1339,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Swamimalai_Murugan_Temple"
+   },
+   {
+    "source": "src:clothey-1978"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:67",
@@ -1268,12 +1380,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Tiruttani_Murugan_Temple"
+   },
+   {
+    "source": "src:clothey-1978"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:69",
@@ -1285,12 +1401,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Pazhamudircholai"
+   },
+   {
+    "source": "src:clothey-1978"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:70",
@@ -1418,12 +1538,16 @@
     "source": "src:wikipedia",
     "locator": "History",
     "url": "https://en.wikipedia.org/wiki/Venkateswara_Temple,_Tirumala"
+   },
+   {
+    "source": "src:ramesan-1981"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:77",
@@ -1438,12 +1562,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Venkateswara_Temple,_Tirumala"
+   },
+   {
+    "source": "src:ramesan-1981"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:78",
@@ -1682,12 +1810,19 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Alampur_Navabrahma_Temples"
+   },
+   {
+    "source": "src:hardy-2007"
+   },
+   {
+    "source": "src:michell-2000"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:91",
@@ -1736,12 +1871,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Ramappa_Temple"
+   },
+   {
+    "source": "src:michell-2000"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:94",
@@ -1865,12 +2004,20 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Meguti_Jain_Temple"
+   },
+   {
+    "source": "src:kielhorn-ei6",
+    "locator": "EI 6 (Aihole inscription of Pulakeśin II, Śaka 556)"
+   },
+   {
+    "source": "src:sircar-1965"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:101",
@@ -1882,12 +2029,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Durga_temple,_Aihole"
+   },
+   {
+    "source": "src:tartakov-1997"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:102",
@@ -1932,12 +2083,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Lad_Khan_Temple"
+   },
+   {
+    "source": "src:hardy-1995"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:105",
@@ -1949,12 +2104,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Lad_Khan_Temple"
+   },
+   {
+    "source": "src:hardy-1995"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:106",
@@ -1969,12 +2128,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Pattadakal"
+   },
+   {
+    "source": "src:hardy-1995"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:107",
@@ -1986,12 +2149,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Pattadakal"
+   },
+   {
+    "source": "src:hardy-1995"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:108",
@@ -2003,12 +2170,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Pattadakal"
+   },
+   {
+    "source": "src:hardy-1995"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:109",
@@ -2077,12 +2248,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Pattadakal"
+   },
+   {
+    "source": "src:hardy-1995"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:113",
@@ -2136,12 +2311,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Kailasa_temple,_Ellora"
+   },
+   {
+    "source": "src:dhavalikar-2003"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:116",
@@ -2230,12 +2409,16 @@
     "source": "src:wikipedia",
     "locator": "The Dashavatara: Cave 15",
     "url": "https://en.wikipedia.org/wiki/Ellora_Caves"
+   },
+   {
+    "source": "src:dhavalikar-2003"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:121",
@@ -2247,12 +2430,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Ellora_Caves"
+   },
+   {
+    "source": "src:dhavalikar-2003"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:122",
@@ -2282,12 +2469,19 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Elephanta_Caves"
+   },
+   {
+    "source": "src:berkson-1983"
+   },
+   {
+    "source": "src:collins-1988"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:124",
@@ -2335,12 +2529,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Virupaksha_Temple,_Hampi"
+   },
+   {
+    "source": "src:fritz-michell-1991"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:127",
@@ -2355,12 +2553,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Virupaksha_Temple,_Hampi"
+   },
+   {
+    "source": "src:fritz-michell-1991"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:128",
@@ -2372,12 +2574,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Virupaksha_Temple,_Hampi"
+   },
+   {
+    "source": "src:fritz-michell-1991"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:129",
@@ -2574,12 +2780,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Chennakeshava_Temple,_Belur"
+   },
+   {
+    "source": "src:foekema-1996"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:141",
@@ -2591,12 +2801,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Chennakeshava_Temple,_Belur"
+   },
+   {
+    "source": "src:foekema-1996"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:142",
@@ -2608,12 +2822,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Chennakeshava_Temple,_Belur"
+   },
+   {
+    "source": "src:foekema-1996"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:143",
@@ -2625,12 +2843,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Hoysaleswara_Temple"
+   },
+   {
+    "source": "src:foekema-1996"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:144",
@@ -2642,12 +2864,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Hoysaleswara_Temple"
+   },
+   {
+    "source": "src:foekema-1996"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:145",
@@ -2659,12 +2885,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Hoysaleswara_Temple"
+   },
+   {
+    "source": "src:foekema-1996"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:146",
@@ -2697,12 +2927,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Chennakesava_Temple,_Somanathapura"
+   },
+   {
+    "source": "src:foekema-1996"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:148",
@@ -2714,12 +2948,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Chennakesava_Temple,_Somanathapura"
+   },
+   {
+    "source": "src:foekema-1996"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:149",
@@ -2731,12 +2969,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Chennakesava_Temple,_Somanathapura"
+   },
+   {
+    "source": "src:foekema-1996"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:150",
@@ -2958,12 +3200,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Udayagiri_Caves"
+   },
+   {
+    "source": "src:williams-1982"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:163",
@@ -2996,12 +3242,20 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Udayagiri_Caves"
+   },
+   {
+    "source": "src:fleet-1888",
+    "locator": "CII III (Udayagiri cave inscriptions of Candragupta II)"
+   },
+   {
+    "source": "src:williams-1982"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:165",
@@ -3031,12 +3285,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Dashavatara_Temple,_Deogarh"
+   },
+   {
+    "source": "src:williams-1982"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:167",
@@ -3071,12 +3329,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Nachna_Hindu_temples"
+   },
+   {
+    "source": "src:williams-1982"
    }
   ],
   "confidence": "low",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:169",
@@ -3091,12 +3353,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Nachna_Hindu_temples"
+   },
+   {
+    "source": "src:williams-1982"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:170",
@@ -3123,12 +3389,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Bhitargaon"
+   },
+   {
+    "source": "src:williams-1982"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:172",
@@ -3143,12 +3413,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Tigawa"
+   },
+   {
+    "source": "src:williams-1982"
    }
   ],
   "confidence": "low",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:173",
@@ -3160,12 +3434,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Tigawa"
+   },
+   {
+    "source": "src:williams-1982"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:174",
@@ -3267,12 +3545,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Kandariya_Mahadeva_Temple"
+   },
+   {
+    "source": "src:desai-2000"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:180",
@@ -3284,12 +3566,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Kandariya_Mahadeva_Temple"
+   },
+   {
+    "source": "src:desai-2000"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:181",
@@ -3304,12 +3590,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Lakshmana_Temple,_Khajuraho"
+   },
+   {
+    "source": "src:desai-2000"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:182",
@@ -3341,12 +3631,20 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Lakshmana_Temple,_Khajuraho"
+   },
+   {
+    "source": "src:kielhorn-1892",
+    "locator": "EI 1 (Lakṣmaṇa temple inscription)"
+   },
+   {
+    "source": "src:desai-2000"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:184",
@@ -3361,12 +3659,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Konark_Sun_Temple"
+   },
+   {
+    "source": "src:donaldson-1985"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:185",
@@ -3378,12 +3680,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Konark_Sun_Temple"
+   },
+   {
+    "source": "src:donaldson-1985"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:186",
@@ -3395,12 +3701,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Jagannath_Temple,_Puri"
+   },
+   {
+    "source": "src:eschmann-kulke-tripathi-1978"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:187",
@@ -3415,12 +3725,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Jagannath_Temple,_Puri"
+   },
+   {
+    "source": "src:eschmann-kulke-tripathi-1978"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:188",
@@ -3432,12 +3746,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Jagannath_Temple,_Puri"
+   },
+   {
+    "source": "src:eschmann-kulke-tripathi-1978"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:189",
@@ -3470,12 +3788,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Jagannath_Temple,_Puri"
+   },
+   {
+    "source": "src:eschmann-kulke-tripathi-1978"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:191",
@@ -3524,12 +3846,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Lingaraja_Temple"
+   },
+   {
+    "source": "src:donaldson-1985"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:194",
@@ -3561,12 +3887,19 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Lingaraja_Temple"
+   },
+   {
+    "source": "src:donaldson-1985"
+   },
+   {
+    "source": "src:panigrahi-1961"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:196",
@@ -3581,12 +3914,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Lingaraja_Temple"
+   },
+   {
+    "source": "src:donaldson-1985"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:197",
@@ -3598,12 +3935,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Mukteshvara_Temple,_Bhubaneswar"
+   },
+   {
+    "source": "src:donaldson-1985"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:198",
@@ -3615,12 +3956,19 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Mukteshvara_Temple,_Bhubaneswar"
+   },
+   {
+    "source": "src:donaldson-1985"
+   },
+   {
+    "source": "src:panigrahi-1961"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:199",
@@ -3656,12 +4004,16 @@
     "source": "src:wikipedia",
     "locator": "History",
     "url": "https://en.wikipedia.org/wiki/Kamakhya_Temple"
+   },
+   {
+    "source": "src:urban-2010"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:201",
@@ -3677,12 +4029,16 @@
     "source": "src:wikipedia",
     "locator": "History",
     "url": "https://en.wikipedia.org/wiki/Kamakhya_Temple"
+   },
+   {
+    "source": "src:urban-2010"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:202",
@@ -3694,12 +4050,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Kamakhya_Temple"
+   },
+   {
+    "source": "src:urban-2010"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:203",
@@ -3891,12 +4251,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Kashi_Vishwanath_Temple"
+   },
+   {
+    "source": "src:eck-1982"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:214",
@@ -3948,12 +4312,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Kashi_Vishwanath_Temple"
+   },
+   {
+    "source": "src:eck-1982"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:217",
@@ -3968,12 +4336,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Somnath_temple"
+   },
+   {
+    "source": "src:thapar-2004"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:218",
@@ -3988,12 +4360,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Somnath_temple"
+   },
+   {
+    "source": "src:thapar-2004"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:219",
@@ -4259,12 +4635,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Bhojeshwar_Temple"
+   },
+   {
+    "source": "src:hardy-2007"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:234",
@@ -4276,12 +4656,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Bhojeshwar_Temple"
+   },
+   {
+    "source": "src:hardy-2007"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:235",
@@ -4540,12 +4924,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Jageshwar"
+   },
+   {
+    "source": "src:michell-1989"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:250",
@@ -4560,12 +4948,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Martand_Sun_Temple"
+   },
+   {
+    "source": "src:stein-1900"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:251",
@@ -4598,12 +4990,17 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Martand_Sun_Temple"
+   },
+   {
+    "source": "src:stein-1900",
+    "locator": "Rājataraṅgiṇī, book 4 (Lalitāditya)"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:253",
@@ -4618,12 +5015,19 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Pashupatinath_Temple"
+   },
+   {
+    "source": "src:michaels-2008"
+   },
+   {
+    "source": "src:slusser-1982"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:254",
@@ -4638,12 +5042,19 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Pashupatinath_Temple"
+   },
+   {
+    "source": "src:slusser-1982"
+   },
+   {
+    "source": "src:michaels-2008"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:255",
@@ -4673,12 +5084,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Changu_Narayan"
+   },
+   {
+    "source": "src:slusser-1982"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:257",
@@ -4693,12 +5108,20 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Changu_Narayan"
+   },
+   {
+    "source": "src:slusser-1982"
+   },
+   {
+    "source": "src:indraji-buhler-1885",
+    "locator": "Changu Narayan pillar inscription of Mānadeva"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:258",
@@ -4997,12 +5420,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Prambanan"
+   },
+   {
+    "source": "src:jordaan-1996"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:275",
@@ -5014,12 +5441,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Prambanan"
+   },
+   {
+    "source": "src:jordaan-1996"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:276",
@@ -5031,12 +5462,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Prambanan"
+   },
+   {
+    "source": "src:jordaan-1996"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:277",
@@ -5048,12 +5483,19 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Prambanan"
+   },
+   {
+    "source": "src:de-casparis-1956"
+   },
+   {
+    "source": "src:jordaan-1996"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:278",
@@ -5215,12 +5657,19 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Angkor_Wat"
+   },
+   {
+    "source": "src:mannikka-1996"
+   },
+   {
+    "source": "src:jacques-freeman-1997"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:287",
@@ -5232,12 +5681,22 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Angkor_Wat"
+   },
+   {
+    "source": "src:jacques-freeman-1997"
+   },
+   {
+    "source": "src:coedes-1968"
+   },
+   {
+    "source": "src:mannikka-1996"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:288",
@@ -5334,12 +5793,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Banteay_Srei"
+   },
+   {
+    "source": "src:jacques-freeman-1997"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:293",
@@ -5351,12 +5814,19 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Banteay_Srei"
+   },
+   {
+    "source": "src:jacques-freeman-1997"
+   },
+   {
+    "source": "src:coedes-1968"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:294",
@@ -5368,12 +5838,19 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Banteay_Srei"
+   },
+   {
+    "source": "src:jacques-freeman-1997"
+   },
+   {
+    "source": "src:coedes-1968"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:295",
@@ -5421,12 +5898,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Preah_Vihear_Temple"
+   },
+   {
+    "source": "src:jacques-freeman-1997"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:298",
@@ -5441,12 +5922,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/Preah_Vihear_Temple"
+   },
+   {
+    "source": "src:jacques-freeman-1997"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:299",
@@ -5496,12 +5981,16 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/M%E1%BB%B9_S%C6%A1n_archaeological_site"
+   },
+   {
+    "source": "src:guy-2014"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:302",
@@ -5513,12 +6002,19 @@
    {
     "source": "src:wikipedia",
     "url": "https://en.wikipedia.org/wiki/M%E1%BB%B9_S%C6%A1n_archaeological_site"
+   },
+   {
+    "source": "src:guy-2014"
+   },
+   {
+    "source": "src:hardy-cucarzi-zolese-2009"
    }
   ],
   "confidence": "medium",
-  "status": "reference-checked",
+  "status": "source-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: scholarly source(s) added that treat this attribution; checked from the researcher’s knowledge of the works (page numbers not given)."
  },
  {
   "id": "temple:303",
@@ -6144,9 +6640,10 @@
    }
   ],
   "confidence": "high",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:336",
@@ -6898,9 +7395,10 @@
    }
   ],
   "confidence": "high",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:379",
@@ -6919,9 +7417,10 @@
    }
   ],
   "confidence": "high",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:380",
@@ -6940,9 +7439,10 @@
    }
   ],
   "confidence": "high",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:381",
@@ -6964,9 +7464,10 @@
    }
   ],
   "confidence": "high",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:382",
@@ -6985,9 +7486,10 @@
    }
   ],
   "confidence": "high",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:383",
@@ -7009,10 +7511,11 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "competing": "Sites in Assam (Ḍākinī) and Odisha are also claimed.",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:384",
@@ -7031,9 +7534,10 @@
    }
   ],
   "confidence": "high",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:385",
@@ -7052,9 +7556,10 @@
    }
   ],
   "confidence": "high",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:386",
@@ -7076,10 +7581,11 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "competing": "Parli Vaijnath and Baijnath (Himachal) are rival claimants.",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:387",
@@ -7194,9 +7700,10 @@
    }
   ],
   "confidence": "high",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:392",
@@ -7215,9 +7722,10 @@
    }
   ],
   "confidence": "high",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:393",
@@ -7239,9 +7747,10 @@
    }
   ],
   "confidence": "high",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:394",
@@ -7263,9 +7772,10 @@
    }
   ],
   "confidence": "high",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:395",
@@ -7287,9 +7797,10 @@
    }
   ],
   "confidence": "high",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:396",
@@ -7311,9 +7822,10 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:397",
@@ -7353,9 +7865,10 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:399",
@@ -7620,9 +8133,10 @@
    }
   ],
   "confidence": "high",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:411",
@@ -7641,9 +8155,10 @@
    }
   ],
   "confidence": "high",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:412",
@@ -7662,9 +8177,10 @@
    }
   ],
   "confidence": "high",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:413",
@@ -7683,9 +8199,10 @@
    }
   ],
   "confidence": "high",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:414",
@@ -7704,9 +8221,10 @@
    }
   ],
   "confidence": "high",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:415",
@@ -7725,9 +8243,10 @@
    }
   ],
   "confidence": "high",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:416",
@@ -7749,9 +8268,10 @@
    }
   ],
   "confidence": "high",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:417",
@@ -7770,9 +8290,10 @@
    }
   ],
   "confidence": "high",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:418",
@@ -7791,9 +8312,10 @@
    }
   ],
   "confidence": "high",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:419",
@@ -7812,9 +8334,10 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:420",
@@ -7833,9 +8356,10 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:421",
@@ -7857,9 +8381,10 @@
    }
   ],
   "confidence": "high",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:422",
@@ -7881,9 +8406,10 @@
    }
   ],
   "confidence": "high",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:423",
@@ -7905,9 +8431,10 @@
    }
   ],
   "confidence": "high",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:424",
@@ -7929,9 +8456,10 @@
    }
   ],
   "confidence": "high",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:425",
@@ -7950,9 +8478,10 @@
    }
   ],
   "confidence": "high",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:426",
@@ -7971,9 +8500,10 @@
    }
   ],
   "confidence": "high",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:427",
@@ -7992,9 +8522,10 @@
    }
   ],
   "confidence": "high",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:428",
@@ -8013,9 +8544,10 @@
    }
   ],
   "confidence": "high",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:429",
@@ -8037,10 +8569,11 @@
    }
   ],
   "confidence": "high",
-  "status": "verified-online",
+  "status": "reference-checked",
   "competing": "Some versions name Tiruvarur as the earth shrine.",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:430",
@@ -8062,9 +8595,10 @@
    }
   ],
   "confidence": "high",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:431",
@@ -8086,9 +8620,10 @@
    }
   ],
   "confidence": "high",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:432",
@@ -8110,9 +8645,10 @@
    }
   ],
   "confidence": "high",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:433",
@@ -8134,9 +8670,10 @@
    }
   ],
   "confidence": "high",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:434",
@@ -8158,9 +8695,10 @@
    }
   ],
   "confidence": "high",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:435",
@@ -8182,9 +8720,10 @@
    }
   ],
   "confidence": "high",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:436",
@@ -8206,9 +8745,10 @@
    }
   ],
   "confidence": "high",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:437",
@@ -8230,9 +8770,10 @@
    }
   ],
   "confidence": "high",
-  "status": "verified-online",
+  "status": "reference-checked",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:438",
@@ -8254,10 +8795,11 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "competing": "The poem names no single hill for the fifth abode.",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  },
  {
   "id": "temple:439",
@@ -8279,9 +8821,10 @@
    }
   ],
   "confidence": "medium",
-  "status": "verified-online",
+  "status": "reference-checked",
   "competing": "The ancient Paḻamutircōlai has also been located elsewhere.",
   "agent": "temple",
-  "lastVerified": "2026-11-08"
+  "lastVerified": "2026-11-08",
+  "rationale": "Round 2: status corrected from verified-online — the membership was confirmed against Wikipedia article text (a reference work); the network-level scholarly source is cited for the list, not checked for this member."
  }
 ]
